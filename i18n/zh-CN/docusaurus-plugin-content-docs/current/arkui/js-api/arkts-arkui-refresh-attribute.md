@@ -1,8 +1,6 @@
 # Refresh属性/事件
 
-除支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持以下属性：
-
-除支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持以下事件：
+除支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持以下属性： 除支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持以下事件：
 
 **继承/实现关系：** RefreshAttribute extends [CommonMethod<RefreshAttribute>](CommonMethod<RefreshAttribute>)
 
@@ -38,9 +36,7 @@ maxPullDownDistance(distance: Optional<number>)
 maxPullDownDistance(distance: number | Resource | undefined)
 ```
 
-设置最大下拉距离，支持Resource资源类型。
-
-未通过该接口设置时，设置最大下拉距离为undefined。
+设置最大下拉距离，支持Resource资源类型。 未通过该接口设置时，设置最大下拉距离为undefined。
 
 **起始版本：** 26.0.0
 
@@ -62,11 +58,7 @@ maxPullDownDistance(distance: number | Resource | undefined)
 onOffsetChange(callback: Callback<number>)
 ```
 
-下拉距离发生变化时触发回调。
-
-> **说明：**
->
-> 从API version 20开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+下拉距离发生变化时触发回调。 > **说明：** > > 从API version 20开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 12
 
@@ -216,11 +208,7 @@ refreshOffset(value: number)
 refreshOffset(value: number | Resource)
 ```
 
-设置触发刷新的下拉偏移量，当下拉距离小于该属性设置值时离手不会触发刷新，支持Resource资源类型。
-
-未通过该接口设置时，当未设置[promptText](../../../../reference/apis-arkui/arkui-ts/ts-container-refresh.md#refreshoptions对象说明)参数时，默
-认偏移量为64vp；设置了[promptText](../../../../reference/apis-arkui/arkui-ts/ts-container-refresh.md#refreshoptions对象说明)参数时，默认
-偏移量为96vp。
+设置触发刷新的下拉偏移量，当下拉距离小于该属性设置值时离手不会触发刷新，支持Resource资源类型。 未通过该接口设置时，当未设置[promptText](../../../../reference/apis-arkui/arkui-ts/ts-container-refresh.md#refreshoptions对象说明)参数时，默 认偏移量为64vp；设置了[promptText](../../../../reference/apis-arkui/arkui-ts/ts-container-refresh.md#refreshoptions对象说明)参数时，默认 偏移量为96vp。
 
 **起始版本：** 26.0.0
 

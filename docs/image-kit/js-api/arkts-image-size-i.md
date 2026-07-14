@@ -1,7 +1,6 @@
 # Size
 
-Describes the size of an image.
-It inherits from [lang.ISendable](../../../../arkts-utils/arkts-sendable.md#isendable).
+Describes the size of an image. It inherits from [lang.ISendable](../../../../arkts-utils/arkts-sendable.md#isendable).
 
 **Inheritance/Implementation:** Size extends [lang.ISendable](../../apis-arkts/arkts-apis/arkts-arkts-isendable-i.md)
 

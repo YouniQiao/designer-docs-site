@@ -6,9 +6,7 @@
 function isInSandbox(): Promise<boolean>
 ```
 
-查询当前应用是否运行在DLP沙箱环境。使用Promise异步回调。
-
-该接口用于判断当前应用是否处于DLP沙箱环境，以便决定是否执行沙箱相关的操作或调用沙箱专用接口。
+查询当前应用是否运行在DLP沙箱环境。使用Promise异步回调。 该接口用于判断当前应用是否处于DLP沙箱环境，以便决定是否执行沙箱相关的操作或调用沙箱专用接口。
 
 **起始版本：** 10
 
@@ -47,9 +45,7 @@ dlpPermission.isInSandbox().then((isInSandbox) => { // 是否在沙箱内。
 function isInSandbox(callback: AsyncCallback<boolean>): void
 ```
 
-查询当前应用是否运行在DLP沙箱环境。使用callback异步回调。
-
-该接口用于判断当前应用是否处于DLP沙箱环境，以便决定是否执行沙箱相关的操作或调用沙箱专用接口。
+查询当前应用是否运行在DLP沙箱环境。使用callback异步回调。 该接口用于判断当前应用是否处于DLP沙箱环境，以便决定是否执行沙箱相关的操作或调用沙箱专用接口。
 
 **起始版本：** 10
 

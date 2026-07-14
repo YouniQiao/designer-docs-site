@@ -1,13 +1,6 @@
 # NativeMediaPlayerSurfaceInfo
 
-[应用接管网页媒体播放功能](../../../../reference/apis-arkweb/arkts-basic-components-web-attributes.md#enablenativemediaplayer12)中
-用于同层渲染的 surface 信息。
-
-> **说明：**
->
-> - 本Class首批接口从API version 12开始支持。
->
-> - 示例效果请以真机运行为准。
+[应用接管网页媒体播放功能](../../../../reference/apis-arkweb/arkts-basic-components-web-attributes.md#enablenativemediaplayer12)中 用于同层渲染的 surface 信息。 > **说明：** > > - 本Class首批接口从API version 12开始支持。 > > - 示例效果请以真机运行为准。
 
 **起始版本：** 12
 
@@ -19,9 +12,7 @@
 id: string
 ```
 
-surface的id，用于同层渲染的NativeImage的surfaceId。
-
-详见[NativeEmbedDataInfo](../arkts-components/arkts-arkweb-nativeembeddatainfo-i.md)。
+surface的id，用于同层渲染的NativeImage的surfaceId。 详见[NativeEmbedDataInfo](../arkts-components/arkts-arkweb-nativeembeddatainfo-i.md)。
 
 **类型：** string
 

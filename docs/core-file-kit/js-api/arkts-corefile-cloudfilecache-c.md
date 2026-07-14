@@ -192,9 +192,7 @@ try {
 off(event: 'batchDownload', callback?: Callback<MultiDownloadProgress>): void
 ```
 
-Removes the listener added via the
-[on](arkts-corefile-cloudfilecache-c.md#on-2) API
-for file batch downloads.
+Removes the listener added via the [on](arkts-corefile-cloudfilecache-c.md#on-2) API for file batch downloads.
 
 **Since:** 20
 
@@ -396,8 +394,7 @@ fileCache.start(uri).then(() => {
 start(uri: string, callback: AsyncCallback<void>): void
 ```
 
-Starts downloading a file from the Drive Kit to the local device. This API uses an asynchronous callback to
-return the result.
+Starts downloading a file from the Drive Kit to the local device. This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -446,9 +443,7 @@ fileCache.start(uri, (err: BusinessError) => {
 startBatch(uris: Array<string>, fileType?: DownloadFileType): Promise<number>
 ```
 
-Starts the batch download of a file from the Drive Kit. This API uses a promise to return the result.
-
-Different batch download tasks can be distinguished by the task ID returned.
+Starts the batch download of a file from the Drive Kit. This API uses a promise to return the result. Different batch download tasks can be distinguished by the task ID returned.
 
 **Since:** 20
 
@@ -507,10 +502,7 @@ fileCache.startBatch(uriList, cloudSync.DownloadFileType.CONTENT).then((download
 stop(uri: string, needClean?: boolean): Promise<void>
 ```
 
-Stops downloading a file from the Drive Kit to the local device. This API uses a promise to return the result.
-
-When **stop()** is called, the current file download process terminates, and downloaded files are retained by
-default. You can call **start()** to resume the download.
+Stops downloading a file from the Drive Kit to the local device. This API uses a promise to return the result. When **stop()** is called, the current file download process terminates, and downloaded files are retained by default. You can call **start()** to resume the download.
 
 **Since:** 12
 
@@ -562,11 +554,7 @@ fileCache.stop(uri, true).then(() => {
 stop(uri: string, callback: AsyncCallback<void>): void
 ```
 
-Stops downloading a file from the Drive Kit to the local device. This API uses an asynchronous callback to return
-the result.
-
-When **stop()** is called, the current file download process terminates, and downloaded files are retained. You
-can call **start()** to resume the download.
+Stops downloading a file from the Drive Kit to the local device. This API uses an asynchronous callback to return the result. When **stop()** is called, the current file download process terminates, and downloaded files are retained. You can call **start()** to resume the download.
 
 **Since:** 11
 
@@ -614,11 +602,7 @@ fileCache.stop(uri, (err: BusinessError) => {
 stopBatch(downloadId: number, needClean?: boolean): Promise<void>
 ```
 
-Stops the batch download task enabled by [startBatch](arkts-corefile-cloudfilecache-c.md#startbatch-1) of a file from
-the Drive Kit. This API uses a promise to return the result.
-
-When **stopBatch()** is called, the batch download terminates. The **needClean** parameter determines whether to
-delete incompletely downloaded files.
+Stops the batch download task enabled by [startBatch](arkts-corefile-cloudfilecache-c.md#startbatch-1) of a file from the Drive Kit. This API uses a promise to return the result. When **stopBatch()** is called, the batch download terminates. The **needClean** parameter determines whether to delete incompletely downloaded files.
 
 **Since:** 20
 

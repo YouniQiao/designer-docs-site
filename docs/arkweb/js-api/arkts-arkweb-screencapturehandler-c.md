@@ -1,17 +1,6 @@
 # ScreenCaptureHandler
 
-Implements the **ScreenCaptureHandler** object for accepting or rejecting a screen capture request.
-For details about the sample code,
-see [onScreenCaptureRequest](./arkts-basic-components-web-events.md#onscreencapturerequest10).
-
-> **NOTE**
->
-> - The initial APIs of this component are supported since API version 8.
-> Updates will be marked with a superscript to indicate their earliest API version.
->
-> - The initial APIs of this class are supported since API version 10.
->
-> - The sample effect is subject to the actual device.
+Implements the **ScreenCaptureHandler** object for accepting or rejecting a screen capture request. For details about the sample code, see [onScreenCaptureRequest](./arkts-basic-components-web-events.md#onscreencapturerequest10). > **NOTE** > > - The initial APIs of this component are supported since API version 8. > Updates will be marked with a superscript to indicate their earliest API version. > > - The initial APIs of this class are supported since API version 10. > > - The sample effect is subject to the actual device.
 
 **Since:** 10
 

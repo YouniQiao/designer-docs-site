@@ -12,17 +12,7 @@ import { accessibility } from '@kit.AccessibilityKit';
 function onAnimationReduceStateChange(callback: Callback<boolean>): void
 ```
 
-Subscribes to the state changes in animation reduction mode. This API uses an asynchronous callback to return the
-result.
-
-> **NOTE**
->
-> - The callback parameter for registering a listener must use a named function instead of an anonymous function.
-> Otherwise, a new underlying object is created each time the function is called, causing memory leakage.
->
-> - After calling this method, you must use
-> [accessibility.offAnimationReduceStateChange](arkts-accessibility-offanimationreducestatechange-f.md#offanimationreducestatechange-1)
-> to cancel the listener before the object's lifecycle ends. Otherwise, a crash may occur.
+Subscribes to the state changes in animation reduction mode. This API uses an asynchronous callback to return the result. > **NOTE** > > - The callback parameter for registering a listener must use a named function instead of an anonymous function. > Otherwise, a new underlying object is created each time the function is called, causing memory leakage. > > - After calling this method, you must use > [accessibility.offAnimationReduceStateChange](arkts-accessibility-offanimationreducestatechange-f.md#offanimationreducestatechange-1) > to cancel the listener before the object's lifecycle ends. Otherwise, a crash may occur.
 
 **Since:** 23
 

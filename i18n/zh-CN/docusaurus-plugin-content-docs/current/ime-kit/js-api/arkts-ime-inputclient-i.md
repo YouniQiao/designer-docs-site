@@ -1,47 +1,6 @@
 # InputClient
 
-InputClient是输入法客户端对象，代表当前绑定到输入法应用的编辑框客户端。InputClient实例通过InputMethodAbility的
-[on('inputStart')](arkts-ime-inputmethodability-i.md#on-1)
-事件回调获取，每个绑定事件对应一个InputClient实例，输入法应用通过该实例与编辑框进行文本交互。
-**核心功能概述：**
-
-- **文本获取**：通过
-[getForward](arkts-ime-inputclient-i.md#getforward-1)/
-[getForwardSync](arkts-ime-inputclient-i.md#getforwardsync-1)获取光标前的文本，通过
-[getBackward](arkts-ime-inputclient-i.md#getbackward-1)/
-[getBackwardSync](arkts-ime-inputclient-i.md#getbackwardsync-1)获取光标后的文本，用于分析已输入内容并提供智能补全。
-- **文本编辑**：通过
-[insertText](arkts-ime-inputclient-i.md#inserttext-1)/
-[insertTextSync](arkts-ime-inputclient-i.md#inserttextsync-1)插入文本，通过
-[deleteForward](arkts-ime-inputclient-i.md#deleteforward-1)/
-[deleteForwardSync](arkts-ime-inputclient-i.md#deleteforwardsync-1)删除光标前的文本，通过
-[deleteBackward](arkts-ime-inputclient-i.md#deletebackward-1)
-/[deleteBackwardSync](arkts-ime-inputclient-i.md#deletebackwardsync-1)删除光标后的文本。
-- **功能键与光标**：通过
-[sendKeyFunction](arkts-ime-inputclient-i.md#sendkeyfunction-1)
-发送功能键（如回车键），通过
-[moveCursor](arkts-ime-inputclient-i.md#movecursor-1)/
-[moveCursorSync](arkts-ime-inputclient-i.md#movecursorsync-1)移动光标。
-- **选区操作**：通过
-[selectByRange](arkts-ime-inputclient-i.md#selectbyrange-1)/
-[selectByRangeSync](arkts-ime-inputclient-i.md#selectbyrangesync-1)按范围选中文本，通过
-[selectByMovement](arkts-ime-inputclient-i.md#selectbymovement-1)
-/[selectByMovementSync](arkts-ime-inputclient-i.md#selectbymovementsync-1)按方向选中文本。
-- **编辑框属性**：通过
-[getEditorAttribute](arkts-ime-inputclient-i.md#geteditorattribute-1)
-/[getEditorAttributeSync](arkts-ime-inputclient-i.md#geteditorattributesync-1)获取编辑框属性信息（输入类型、回车键类型等），据此调整键
-盘布局。
-- **文本预览**：通过[setPreviewText](arkts-ime-inputclient-i.md#setpreviewtext-1)/
-[setPreviewTextSync](arkts-ime-inputclient-i.md#setpreviewtextsync-1)设置预览文本，通过
-[finishTextPreview](arkts-ime-inputclient-i.md#finishtextpreview-1)/
-[finishTextPreviewSync](arkts-ime-inputclient-i.md#finishtextpreviewsync-1)结束文本预览。
-- **私有通信**：通过[sendPrivateCommand](arkts-ime-inputclient-i.md#sendprivatecommand-1)向应用发送私有命令，通过
-[sendMessage](arkts-ime-inputclient-i.md#sendmessage-1)/
-[recvMessage](arkts-ime-inputclient-i.md#recvmessage-1)进行消息通信。
-
-下列API均需使用
-[on('inputStart')](arkts-ime-inputmethodability-i.md#on-1)
-获取到InputClient实例后，通过实例调用。
+InputClient是输入法客户端对象，代表当前绑定到输入法应用的编辑框客户端。InputClient实例通过InputMethodAbility的 [on('inputStart')](arkts-ime-inputmethodability-i.md#on-1) 事件回调获取，每个绑定事件对应一个InputClient实例，输入法应用通过该实例与编辑框进行文本交互。 **核心功能概述：** - **文本获取**：通过 [getForward](arkts-ime-inputclient-i.md#getforward-1)/ [getForwardSync](arkts-ime-inputclient-i.md#getforwardsync-1)获取光标前的文本，通过 [getBackward](arkts-ime-inputclient-i.md#getbackward-1)/ [getBackwardSync](arkts-ime-inputclient-i.md#getbackwardsync-1)获取光标后的文本，用于分析已输入内容并提供智能补全。 - **文本编辑**：通过 [insertText](arkts-ime-inputclient-i.md#inserttext-1)/ [insertTextSync](arkts-ime-inputclient-i.md#inserttextsync-1)插入文本，通过 [deleteForward](arkts-ime-inputclient-i.md#deleteforward-1)/ [deleteForwardSync](arkts-ime-inputclient-i.md#deleteforwardsync-1)删除光标前的文本，通过 [deleteBackward](arkts-ime-inputclient-i.md#deletebackward-1) /[deleteBackwardSync](arkts-ime-inputclient-i.md#deletebackwardsync-1)删除光标后的文本。 - **功能键与光标**：通过 [sendKeyFunction](arkts-ime-inputclient-i.md#sendkeyfunction-1) 发送功能键（如回车键），通过 [moveCursor](arkts-ime-inputclient-i.md#movecursor-1)/ [moveCursorSync](arkts-ime-inputclient-i.md#movecursorsync-1)移动光标。 - **选区操作**：通过 [selectByRange](arkts-ime-inputclient-i.md#selectbyrange-1)/ [selectByRangeSync](arkts-ime-inputclient-i.md#selectbyrangesync-1)按范围选中文本，通过 [selectByMovement](arkts-ime-inputclient-i.md#selectbymovement-1) /[selectByMovementSync](arkts-ime-inputclient-i.md#selectbymovementsync-1)按方向选中文本。 - **编辑框属性**：通过 [getEditorAttribute](arkts-ime-inputclient-i.md#geteditorattribute-1) /[getEditorAttributeSync](arkts-ime-inputclient-i.md#geteditorattributesync-1)获取编辑框属性信息（输入类型、回车键类型等），据此调整键 盘布局。 - **文本预览**：通过[setPreviewText](arkts-ime-inputclient-i.md#setpreviewtext-1)/ [setPreviewTextSync](arkts-ime-inputclient-i.md#setpreviewtextsync-1)设置预览文本，通过 [finishTextPreview](arkts-ime-inputclient-i.md#finishtextpreview-1)/ [finishTextPreviewSync](arkts-ime-inputclient-i.md#finishtextpreviewsync-1)结束文本预览。 - **私有通信**：通过[sendPrivateCommand](arkts-ime-inputclient-i.md#sendprivatecommand-1)向应用发送私有命令，通过 [sendMessage](arkts-ime-inputclient-i.md#sendmessage-1)/ [recvMessage](arkts-ime-inputclient-i.md#recvmessage-1)进行消息通信。 下列API均需使用 [on('inputStart')](arkts-ime-inputmethodability-i.md#on-1) 获取到InputClient实例后，通过实例调用。
 
 **起始版本：** 9
 
@@ -53,11 +12,7 @@ InputClient是输入法客户端对象，代表当前绑定到输入法应用的
 deleteBackward(length: number, callback: AsyncCallback<boolean>): void
 ```
 
-删除光标后固定长度的文本。使用callback异步回调。
-
-**使用场景：** 实现删除键功能、删除光标后的字符、快速修正输入、实现自定义删除逻辑等。
-
-**使用后效果：** 成功时返回true，编辑框中光标后指定长度的文本被删除。
+删除光标后固定长度的文本。使用callback异步回调。 **使用场景：** 实现删除键功能、删除光标后的字符、快速修正输入、实现自定义删除逻辑等。 **使用后效果：** 成功时返回true，编辑框中光标后指定长度的文本被删除。
 
 **起始版本：** 9
 
@@ -188,11 +143,7 @@ inputClient.deleteBackwardSync(length);
 deleteForward(length: number, callback: AsyncCallback<boolean>): void
 ```
 
-删除光标前固定长度的文本。使用callback异步回调。
-
-**使用场景：** 实现退格键功能、逐字删除输入、删除错误的输入、实现自定义删除逻辑等。
-
-**使用后效果：** 成功时返回true，编辑框中光标前指定长度的文本被删除。
+删除光标前固定长度的文本。使用callback异步回调。 **使用场景：** 实现退格键功能、逐字删除输入、删除错误的输入、实现自定义删除逻辑等。 **使用后效果：** 成功时返回true，编辑框中光标前指定长度的文本被删除。
 
 **起始版本：** 9
 
@@ -589,11 +540,7 @@ inputClient.getCallingWindowInfo().then((windowInfo: inputMethodEngine.WindowInf
 getEditorAttribute(callback: AsyncCallback<EditorAttribute>): void
 ```
 
-获取编辑框属性值。使用callback异步回调。
-
-**使用场景：** 根据编辑框类型调整输入法界面、根据编辑框配置提供不同的输入建议、实现特定输入逻辑、适配不同类型的输入框等。
-
-**使用后效果：** 返回编辑框属性信息（包括inputPattern输入类型和enterKeyType回车键类型），输入法应用据此调整键盘布局。
+获取编辑框属性值。使用callback异步回调。 **使用场景：** 根据编辑框类型调整输入法界面、根据编辑框配置提供不同的输入建议、实现特定输入逻辑、适配不同类型的输入框等。 **使用后效果：** 返回编辑框属性信息（包括inputPattern输入类型和enterKeyType回车键类型），输入法应用据此调整键盘布局。
 
 **起始版本：** 9
 
@@ -688,9 +635,7 @@ console.info(`editorAttribute.enterKeyType:  ${editorAttribute.enterKeyType}`);
 getForward(length: number, callback: AsyncCallback<string>): void
 ```
 
-获取光标前固定长度的文本。使用callback异步回调。
-**使用场景：** 分析已输入文本内容以提供智能补全建议、检查文本格式、实现文本预测功能、实现文本语义分析等。
-**使用后效果：** 成功时返回光标前指定长度的文本字符串，输入法应用可据此更新候选词或输入建议。
+获取光标前固定长度的文本。使用callback异步回调。 **使用场景：** 分析已输入文本内容以提供智能补全建议、检查文本格式、实现文本预测功能、实现文本语义分析等。 **使用后效果：** 成功时返回光标前指定长度的文本字符串，输入法应用可据此更新候选词或输入建议。
 
 **起始版本：** 9
 
@@ -931,11 +876,7 @@ console.info(`Succeeded in getTextIndexAtCursorSync, index: ${index}`);
 insertText(text: string, callback: AsyncCallback<boolean>): void
 ```
 
-插入文本。使用callback异步回调。
-
-**使用场景：** 插入候选词、插入特殊符号、实现文本自动补全、快速插入常用短语等。
-
-**使用后效果：** 成功时返回true，文本已插入到编辑框光标位置。
+插入文本。使用callback异步回调。 **使用场景：** 插入候选词、插入特殊符号、实现文本自动补全、快速插入常用短语等。 **使用后效果：** 成功时返回true，文本已插入到编辑框光标位置。
 
 **起始版本：** 9
 
@@ -1064,13 +1005,7 @@ inputClient.insertTextSync('test');
 moveCursor(direction: number, callback: AsyncCallback<void>): void
 ```
 
-移动光标。使用callback异步回调。
-
-**使用场景：** 实现光标移动到特定位置、实现上下左右移动光标功能、实现快速定位、实现自定义光标控制等。
-
-**使用后效果：** 成功时编辑框中的光标按指定方向移动一步。direction取值参见
-[光标常量](../../../../reference/apis-ime-kit/js-apis-inputmethodengine.md#工具不太能识别具体链接到的是哪个常量。让人工处理。咨询黄山）)，1为上移，2为下移，3为
-左移，4为右移。
+移动光标。使用callback异步回调。 **使用场景：** 实现光标移动到特定位置、实现上下左右移动光标功能、实现快速定位、实现自定义光标控制等。 **使用后效果：** 成功时编辑框中的光标按指定方向移动一步。direction取值参见
 
 **起始版本：** 9
 

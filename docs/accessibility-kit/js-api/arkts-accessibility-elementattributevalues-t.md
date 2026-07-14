@@ -4,8 +4,7 @@
 export type ElementAttributeValues = _ElementAttributeValues
 ```
 
-Provides attribute names and value types of a node element. For details, see
-[ElementAttributeValues](arkts-accessibility-elementattributevalues-i.md).
+Provides attribute names and value types of a node element. For details, see [ElementAttributeValues](arkts-accessibility-elementattributevalues-i.md).
 
 **Since:** 10
 

@@ -1,7 +1,6 @@
 # Image
 
-Represents the image data. It is a child class of [File](arkts-arkdata-file-c.md) and is used to describe
-images.
+Represents the image data. It is a child class of [File](arkts-arkdata-file-c.md) and is used to describe images.
 
 **Inheritance/Implementation:** Image extends [File](arkts-arkdata-file-c.md)
 

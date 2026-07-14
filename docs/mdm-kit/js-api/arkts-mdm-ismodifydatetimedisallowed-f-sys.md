@@ -12,8 +12,7 @@ import { dateTimeManager } from '@kit.MDMKit';
 function isModifyDateTimeDisallowed(admin: Want, callback: AsyncCallback<boolean>): void
 ```
 
-Queries whether the system time of a device can be modified. This API uses an asynchronous callback to return the
-result.
+Queries whether the system time of a device can be modified. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 

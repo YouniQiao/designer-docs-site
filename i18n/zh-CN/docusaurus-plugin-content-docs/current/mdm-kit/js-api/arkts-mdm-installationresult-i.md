@@ -1,10 +1,6 @@
 # InstallationResult
 
-应用安装结果。
-
-该对象目前在
-[EnterpriseAdminExtensionAbility.onMarketAppInstallResult](arkts-mdm-enterpriseadminextensionability-c.md#onmarketappinstallresult-1)
-作为回调入参使用。
+应用安装结果。 该对象目前在 [EnterpriseAdminExtensionAbility.onMarketAppInstallResult](arkts-mdm-enterpriseadminextensionability-c.md#onmarketappinstallresult-1) 作为回调入参使用。
 
 **起始版本：** 22
 

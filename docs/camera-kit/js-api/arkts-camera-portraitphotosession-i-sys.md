@@ -1,10 +1,6 @@
 # PortraitPhotoSession (System API)
 
-PortraitPhotoSession extends Session, Flash, AutoExposure, Focus, Zoom, Beauty, ColorEffect, ColorManagement,
-Portrait, Aperture
-Implements a portrait photo session, which sets the parameters of the portrait photo mode and saves all
-[CameraInput](arkts-camera-camerainput-i.md) and [CameraOutput](arkts-camera-cameraoutput-i.md)
-instances required to run the camera. It inherits from [Session](arkts-camera-session-i.md).
+PortraitPhotoSession extends Session, Flash, AutoExposure, Focus, Zoom, Beauty, ColorEffect, ColorManagement, Portrait, Aperture Implements a portrait photo session, which sets the parameters of the portrait photo mode and saves all [CameraInput](arkts-camera-camerainput-i.md) and [CameraOutput](arkts-camera-cameraoutput-i.md) instances required to run the camera. It inherits from [Session](arkts-camera-session-i.md).
 
 **Inheritance/Implementation:** PortraitPhotoSession extends [Session](arkts-camera-session-i.md), [Flash](arkts-camera-flash-i.md), [AutoExposure](arkts-camera-autoexposure-i.md), [Focus](arkts-camera-focus-i.md), [Zoom](arkts-camera-zoom-i.md), [Beauty](arkts-camera-beauty-i-sys.md), [ColorEffect](arkts-camera-coloreffect-i-sys.md), [ColorManagement](arkts-camera-colormanagement-i.md), [Portrait](arkts-camera-portrait-i-sys.md), [Aperture](arkts-camera-aperture-i-sys.md)
 

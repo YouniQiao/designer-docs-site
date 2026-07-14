@@ -12,8 +12,7 @@ import { sensor } from '@kit.SensorServiceKit';
 function getSingleSensor(type: SensorId, callback: AsyncCallback<Sensor>): void
 ```
 
-Obtains information about the sensor of a specific type. This API uses an asynchronous callback to return the
-result.
+Obtains information about the sensor of a specific type. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 

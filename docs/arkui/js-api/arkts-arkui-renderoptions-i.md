@@ -12,9 +12,7 @@ Provides optional parameters for creating a BuilderNode.
 selfIdealSize?: Size
 ```
 
-Ideal size of the node.
-
-Default value: **{ width: 0, height: 0 }**.
+Ideal size of the node. Default value: **{ width: 0, height: 0 }**.
 
 **Type:** Size
 
@@ -32,12 +30,7 @@ Default value: **{ width: 0, height: 0 }**.
 surfaceId?: string
 ```
 
-Surface ID of the texture receiver. Typically, the texture receiver is
-[OH_NativeImage](../../../../reference/apis-arkgraphics2d/capi-oh-nativeimage-oh-nativeimage.md).
-
-This parameter is effective only when **type** is set to **NodeRenderType.RENDER_TYPE_TEXTURE**.
-
-Default value: **""**.
+Surface ID of the texture receiver. Typically, the texture receiver is [OH_NativeImage](../../../../reference/apis-arkgraphics2d/capi-oh-nativeimage-oh-nativeimage.md). This parameter is effective only when **type** is set to **NodeRenderType.RENDER_TYPE_TEXTURE**. Default value: **""**.
 
 **Type:** string
 
@@ -55,9 +48,7 @@ Default value: **""**.
 type?: NodeRenderType
 ```
 
-Rendering type of the node.
-
-Default value: **NodeRenderType.RENDER_TYPE_DISPLAY**.
+Rendering type of the node. Default value: **NodeRenderType.RENDER_TYPE_DISPLAY**.
 
 **Type:** NodeRenderType
 

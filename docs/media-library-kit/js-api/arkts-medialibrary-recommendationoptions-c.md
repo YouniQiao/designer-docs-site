@@ -1,7 +1,6 @@
 # RecommendationOptions
 
-Defines the image recommendation options.
-The image recommendation feature depends on the image data analysis capability, which varies with devices.
+Defines the image recommendation options. The image recommendation feature depends on the image data analysis capability, which varies with devices.
 
 **Since:** 11
 
@@ -35,8 +34,7 @@ Type of the recommended image.
 textContextInfo?: TextContextInfo
 ```
 
-Text based on which images are recommended.
-If both recommendationType and textContextInfo are set, textContextInfo takes precedence over recommendationType.
+Text based on which images are recommended. If both **recommendationType** and **textContextInfo** are set, **textContextInfo** takes precedence over **recommendationType**.
 
 **Type:** TextContextInfo
 

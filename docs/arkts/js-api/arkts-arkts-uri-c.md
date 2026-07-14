@@ -18,8 +18,7 @@ import { uri } from '@kit.ArkTS';
 addEncodedSegment(pathSegment: string): URI
 ```
 
-Appends an encoded field to the path component of this URI to create a new URI and returns the new URI,
-while keeping the existing URI unchanged.
+Appends an encoded field to the path component of this URI to create a new URI and returns the new URI, while keeping the existing URI unchanged.
 
 **Since:** 12
 
@@ -90,8 +89,7 @@ console.info(newRoute.toString()); // https://www.test.com?param1=hello%20world
 addSegment(pathSegment: string): URI
 ```
 
-Encodes a given field, appends it to the path component of this URI to create a new URI, and returns the new URI,
-while keeping the existing URI unchanged.
+Encodes a given field, appends it to the path component of this URI to create a new URI, and returns the new URI, while keeping the existing URI unchanged.
 
 **Since:** 12
 
@@ -126,8 +124,7 @@ console.info(newRoute.toString()); // http://www.test.com/my%20image.jpg
 checkHierarchical(): boolean
 ```
 
-Checks whether this URI is a hierarchical URI. The URI that starts with a slash (/) in scheme-specific-part is a
-hierarchical URI. Relative URIs are also hierarchical.
+Checks whether this URI is a hierarchical URI. The URI that starts with a slash (/) in scheme-specific-part is a hierarchical URI. Relative URIs are also hierarchical.
 
 **Since:** 12
 
@@ -522,9 +519,7 @@ console.info(paramNames.toString()); // param1,param2
 getQueryValue(key: string): string
 ```
 
-Obtains the first value of a given key from the query component of this URI. If the query component contains
-encoded content,
-this API decodes the key before obtaining the value.
+Obtains the first value of a given key from the query component of this URI. If the query component contains encoded content, this API decodes the key before obtaining the value.
 
 **Since:** 12
 
@@ -768,8 +763,7 @@ Gets/Sets the encoded query component from this URI.
 encodedSSP: string
 ```
 
-Gets/Sets the scheme-specific part of this URI, i.e. everything between the scheme separator ':' and
-the fragment separator '#'.
+Gets/Sets the scheme-specific part of this URI, i.e. everything between the scheme separator ':' and the fragment separator '#'.
 
 **Type:** string
 

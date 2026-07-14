@@ -12,8 +12,7 @@ import { print } from '@kit.BasicServicesKit';
 function cancelPrintJob(jobId: string, callback: AsyncCallback<void>): void
 ```
 
-Cancels the specified print job, which is on the print queue of the printer. This API uses an asynchronous callback
-to return the result.
+Cancels the specified print job, which is on the print queue of the printer. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -62,8 +61,7 @@ print.cancelPrintJob(jobId, (err: BusinessError) => {
 function cancelPrintJob(jobId: string): Promise<void>
 ```
 
-Cancels the specified print job, which is on the print queue of the printer. This API uses a promise to return the
-result.
+Cancels the specified print job, which is on the print queue of the printer. This API uses a promise to return the result.
 
 **Since:** 10
 

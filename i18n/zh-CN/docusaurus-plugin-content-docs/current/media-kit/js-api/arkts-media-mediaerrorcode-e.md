@@ -1,9 +1,6 @@
 # MediaErrorCode
 
-媒体服务错误类型枚举。
-
-> **说明：**
-> > 从API version 8开始支持，从API version 11开始废弃，建议使用[AVErrorCode](arkts-media-averrorcode-e.md)替代。
+媒体服务错误类型枚举。 > **说明：** > > 从API version 8开始支持，从API version 11开始废弃，建议使用[AVErrorCode](arkts-media-averrorcode-e.md)替代。
 
 **起始版本：** 8
 

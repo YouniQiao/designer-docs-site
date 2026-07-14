@@ -1,7 +1,6 @@
 # AudioPersonalizedSpatialEnabledChangeForAnyDevice（系统接口）
 
-通知监听器开启个性化空间
-任何设备的状态变化。
+通知监听器开启个性化空间 任何设备的状态变化。
 
 **起始版本：** 26.0.0
 

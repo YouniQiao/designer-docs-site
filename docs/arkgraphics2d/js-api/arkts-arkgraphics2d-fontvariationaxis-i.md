@@ -34,9 +34,7 @@ Default value of the font variable axis.
 flags: number
 ```
 
-Flag of the font variable axis, which is used to indicate whether a variable axis should be hidden from users.
-The value can be **0** or **1**. The value **0** indicates that the axis is visible to users, and the value **1**
-indicates that the axis should be hidden.
+Flag of the font variable axis, which is used to indicate whether a variable axis should be hidden from users. The value can be **0** or **1**. The value **0** indicates that the axis is visible to users, and the value **1** indicates that the axis should be hidden.
 
 **Type:** number
 

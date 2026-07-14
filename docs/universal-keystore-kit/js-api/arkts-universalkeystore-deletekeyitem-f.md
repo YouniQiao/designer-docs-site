@@ -12,7 +12,7 @@ import { huks } from '@kit.UniversalKeystoreKit';
 function deleteKeyItem(keyAlias: string, options: HuksOptions, callback: AsyncCallback<void>): void
 ```
 
-Deletes a key. This API uses an asynchronous callback to return the result.
+Deletes a key. This API uses an asynchronous callback to return the result. > **NOTE** > Deleting SE security level keys defined in [HuksKeySecurityLevel](arkts-universalkeystore-hukskeysecuritylevel-e.md) > requires the ohos.permission.ACCESS_SE_KEY permission.
 
 **Since:** 9
 
@@ -32,6 +32,7 @@ Deletes a key. This API uses an asynchronous callback to return the result.
 
 | Error Code ID | Error Message |
 | --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | The application permissions are insufficient, possibly becausethe ohos.permission.ACCESS_SE_KEY permission is missing.<br>**Applicable version:** 26.0.0 and later |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified.2. Incorrect parameter types.3. Parameter verification failed. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | api is not supported |
 | [12000004](../errorcode-huks.md#12000004-file-error) | operating file failed |
@@ -145,7 +146,7 @@ export default {
 function deleteKeyItem(keyAlias: string, options: HuksOptions): Promise<void>
 ```
 
-Deletes a key. This API uses a promise to return the result.
+Deletes a key. This API uses a promise to return the result. > **NOTE** > > Deleting SE security level keys defined in [HuksKeySecurityLevel](arkts-universalkeystore-hukskeysecuritylevel-e.md) > requires the ohos.permission.ACCESS_SE_KEY permission.
 
 **Since:** 9
 
@@ -170,6 +171,7 @@ Deletes a key. This API uses a promise to return the result.
 
 | Error Code ID | Error Message |
 | --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | The application permissions are insufficient, possibly becausethe ohos.permission.ACCESS_SE_KEY permission is missing.<br>**Applicable version:** 26.0.0 and later |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified.2. Incorrect parameter types.3. Parameter verification failed. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | api is not supported |
 | [12000004](../errorcode-huks.md#12000004-file-error) | operating file failed |

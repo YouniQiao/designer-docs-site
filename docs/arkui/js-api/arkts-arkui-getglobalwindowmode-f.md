@@ -12,8 +12,7 @@ import { window } from '@kit.ArkUI';
 function getGlobalWindowMode(displayId?: number): Promise<number>
 ```
 
-Obtains the window mode of the window that is in the foreground lifecycle on the specified screen. This API uses a
-promise to return the result.
+Obtains the window mode of the window that is in the foreground lifecycle on the specified screen. This API uses a promise to return the result.
 
 **Since:** 20
 

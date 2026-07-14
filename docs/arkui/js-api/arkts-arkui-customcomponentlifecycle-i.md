@@ -62,8 +62,7 @@ getCurrentState(): CustomComponentLifecycleState
 removeObserver(observer: CustomComponentLifecycleObserver): void
 ```
 
-Removes a listener for the lifecycle of a custom component. After the listener is removed,
-the lifecycle callback in the listener is not triggered even if the component status changes.
+Removes a listener for the lifecycle of a custom component. After the listener is removed, the lifecycle callback in the listener is not triggered even if the component status changes.
 
 **Since:** 23
 

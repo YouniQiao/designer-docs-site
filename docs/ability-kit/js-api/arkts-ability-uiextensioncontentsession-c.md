@@ -1,7 +1,6 @@
 # UIExtensionContentSession
 
-UIExtensionContentSession is the UI operation class for the UIExtensionAbility. It provides control over page loading
-and allows configuration of the window privacy mode of the host application.
+UIExtensionContentSession is the UI operation class for the UIExtensionAbility. It provides control over page loading and allows configuration of the window privacy mode of the host application.
 
 **Since:** 10
 
@@ -86,11 +85,7 @@ struct Extension {
 loadContent(path: string, storage?: LocalStorage): void
 ```
 
-Loads a page for the [UIExtensionAbility](arkts-ability-uiextensionability-c.md), with
-state properties passed to the page through [LocalStorage](../../../../ui/state-management/arkts-localstorage.md).
-This API is used to load a page in the
-[onSessionCreate](arkts-ability-uiextensionability-c.md#onsessioncreate-1) lifecycle of the
-UIExtensionAbility.
+Loads a page for the [UIExtensionAbility](arkts-ability-uiextensionability-c.md), with state properties passed to the page through [LocalStorage](../../../../ui/state-management/arkts-localstorage.md). This API is used to load a page in the [onSessionCreate](arkts-ability-uiextensionability-c.md#onsessioncreate-1) lifecycle of the UIExtensionAbility.
 
 **Since:** 10
 
@@ -145,12 +140,7 @@ export default class ShareExtAbility extends ShareExtensionAbility {
 loadContentByName(name: string, storage?: LocalStorage): void
 ```
 
-Loads a [named route](../../../../ui/arkts-routing.md#named-route) page for a
-[UIExtensionAbility](arkts-ability-uiextensionability-c.md), with state properties passed
-to the page through [LocalStorage](../../../../ui/state-management/arkts-localstorage.md). This API is used to load a
-named route page in the
-[onSessionCreate](arkts-ability-uiextensionability-c.md#onsessioncreate-1) lifecycle of the
-UIExtensionAbility.
+Loads a [named route](../../../../ui/arkts-routing.md#named-route) page for a [UIExtensionAbility](arkts-ability-uiextensionability-c.md), with state properties passed to the page through [LocalStorage](../../../../ui/state-management/arkts-localstorage.md). This API is used to load a named route page in the [onSessionCreate](arkts-ability-uiextensionability-c.md#onsessioncreate-1) lifecycle of the UIExtensionAbility.
 
 **Since:** 18
 
@@ -237,8 +227,7 @@ struct UIExtensionPage {
 setWindowPrivacyMode(isPrivacyMode: boolean): Promise<void>
 ```
 
-Enables or disables the window privacy mode of the host application. A window in privacy mode cannot be captured or
-recorded. This API uses a promise to return the result.
+Enables or disables the window privacy mode of the host application. A window in privacy mode cannot be captured or recorded. This API uses a promise to return the result.
 
 **Since:** 10
 
@@ -305,8 +294,7 @@ export default class ShareExtAbility extends ShareExtensionAbility {
 setWindowPrivacyMode(isPrivacyMode: boolean, callback: AsyncCallback<void>): void
 ```
 
-Enables or disables the window privacy mode of the host application. A window in privacy mode cannot be captured or
-recorded. This API uses an asynchronous callback to return the result.
+Enables or disables the window privacy mode of the host application. A window in privacy mode cannot be captured or recorded. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -369,10 +357,7 @@ startAbilityByType(type: string, wantParam: Record<string, Object>,
     abilityStartCallback: AbilityStartCallback, callback: AsyncCallback<void>): void
 ```
 
-Implicitly starts a given type of UIExtensionAbility. This API uses an asynchronous callback to return the result.
-It can be called only by applications running in the foreground.
-If the target ability is visible, you can start the target ability; If the target ability is invisible,
-you need to apply for permission:ohos.permission.START_INVISIBLE_ABILITY to start target invisible ability.
+Implicitly starts a given type of UIExtensionAbility. This API uses an asynchronous callback to return the result. It can be called only by applications running in the foreground. If the target ability is visible, you can start the target ability; If the target ability is invisible, you need to apply for permission:ohos.permission.START_INVISIBLE_ABILITY to start target invisible ability.
 
 **Since:** 11
 
@@ -445,8 +430,7 @@ startAbilityByType(type: string, wantParam: Record<string, Object>,
     abilityStartCallback: AbilityStartCallback): Promise<void>
 ```
 
-Implicitly starts a given type of UIExtensionAbility. This API uses a promise to return the result. It can be
-called only by applications running in the foreground.
+Implicitly starts a given type of UIExtensionAbility. This API uses a promise to return the result. It can be called only by applications running in the foreground.
 
 **Since:** 11
 
@@ -523,8 +507,7 @@ export default class ShareExtAbility extends ShareExtensionAbility {
 terminateSelf(callback: AsyncCallback<void>): void
 ```
 
-Destroys this UIExtensionAbility and closes the corresponding window of the host application. This API uses an
-asynchronous callback to return the result.
+Destroys this UIExtensionAbility and closes the corresponding window of the host application. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -585,8 +568,7 @@ struct Index {
 terminateSelf(): Promise<void>
 ```
 
-Destroys this UIExtensionAbility and closes the corresponding window of the host application. This API uses a
-promise to return the result.
+Destroys this UIExtensionAbility and closes the corresponding window of the host application. This API uses a promise to return the result.
 
 **Since:** 10
 
@@ -641,8 +623,7 @@ struct Index {
 terminateSelfWithResult(parameter: AbilityResult, callback: AsyncCallback<void>): void
 ```
 
-Destroys this UIExtensionAbility, closes the corresponding window of the host application, and returns the result
-to the host application. This API uses an asynchronous callback to return the result.
+Destroys this UIExtensionAbility, closes the corresponding window of the host application, and returns the result to the host application. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -714,8 +695,7 @@ struct Index {
 terminateSelfWithResult(parameter: AbilityResult): Promise<void>
 ```
 
-Destroys this UIExtensionAbility, closes the corresponding window of the host application, and returns the result
-to the host application. This API uses a promise to return the result.
+Destroys this UIExtensionAbility, closes the corresponding window of the host application, and returns the result to the host application. This API uses a promise to return the result.
 
 **Since:** 10
 

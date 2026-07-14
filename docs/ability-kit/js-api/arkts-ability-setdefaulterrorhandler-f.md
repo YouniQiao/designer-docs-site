@@ -12,14 +12,7 @@ import { errorManager } from '@kit.AbilityKit';
 function setDefaultErrorHandler(defaultHandler?: ErrorHandler) : ErrorHandler
 ```
 
-Returns the previously registered handler when a JavaScript crash exception occurs. It can only be used in the main
-thread.
-
-If an invalid parameter is passed or the API is called from a child thread, an error code is thrown and
-**undefined** is returned. You are advised to handle it with try-catch logic.
-
-If the API parameter is empty, subsequently registered handlers are not able to establish a connection with
-previously registered handlers, thereby breaking the chain call mechanism.
+Returns the previously registered handler when a JavaScript crash exception occurs. It can only be used in the main thread. If an invalid parameter is passed or the API is called from a child thread, an error code is thrown and **undefined** is returned. You are advised to handle it with try-catch logic. If the API parameter is empty, subsequently registered handlers are not able to establish a connection with previously registered handlers, thereby breaking the chain call mechanism.
 
 **Since:** 21
 

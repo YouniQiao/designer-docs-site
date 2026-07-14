@@ -1,8 +1,8 @@
 # GridObjectSortComponentOptions
 
-GridObjectSortComponentOptions of GridObjectSortComponent.
+Provides configuration options for the **GridObjectSortComponent** component.
 
-**Since:** 12
+**Since:** 11
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -18,11 +18,11 @@ import { GridObjectSortComponentType, GridObjectSortComponentOptions, GridObject
 addAreaTitle?: ResourceStr
 ```
 
-Add Zone Title, second subtitle of the GridObjectSortComponent.
+Second subtitle of the display area. Default value: **Tap to add**
 
 **Type:** ResourceStr
 
-**Since:** 12
+**Since:** 11
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -36,11 +36,11 @@ Add Zone Title, second subtitle of the GridObjectSortComponent.
 editTitle?: ResourceStr
 ```
 
-The title displayed in the GridObjectSortComponent edit state.
+Title displayed in the editing state. Default value: **Edit**
 
 **Type:** ResourceStr
 
-**Since:** 12
+**Since:** 11
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -54,11 +54,11 @@ The title displayed in the GridObjectSortComponent edit state.
 imageSize?: number | Resource
 ```
 
-The size of the GridObjectSortComponent image.
+Image size, in vp. The value must be greater than or equal to 0. Default value: **56vp**.
 
 **Type:** number | Resource
 
-**Since:** 12
+**Since:** 11
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -72,11 +72,11 @@ The size of the GridObjectSortComponent image.
 normalTitle?: ResourceStr
 ```
 
-The title displayed in the unedited state of the GridObjectSortComponent.
+Title displayed in the non-editing state. Default value: **Channel**
 
 **Type:** ResourceStr
 
-**Since:** 12
+**Since:** 11
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -90,11 +90,11 @@ The title displayed in the unedited state of the GridObjectSortComponent.
 showAreaTitle?: ResourceStr
 ```
 
-Display Area Title, First subtitle of the GridObjectSortComponent.
+First subtitle of the display area. Default value: **Drag to sort**
 
 **Type:** ResourceStr
 
-**Since:** 12
+**Since:** 11
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -108,13 +108,13 @@ Display Area Title, First subtitle of the GridObjectSortComponent.
 type?: GridObjectSortComponentType
 ```
 
-Configuration GridObjectSortComponent type.
+Component display type: text only or image with text Default value: **GridObjectSortComponentType.TEXT**
 
 **Type:** GridObjectSortComponentType
 
 **Default:** GridObjectSortComponentType.TEXT
 
-**Since:** 12
+**Since:** 11
 
 **Model restriction:** This API can be used only in the stage model.
 

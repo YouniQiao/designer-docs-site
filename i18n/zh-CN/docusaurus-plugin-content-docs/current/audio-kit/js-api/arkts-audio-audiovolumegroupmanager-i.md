@@ -1,14 +1,6 @@
 # AudioVolumeGroupManager
 
-管理音频组音量。
-
-在使用AudioVolumeGroupManager的接口之前，需先通过
-[getVolumeGroupManager](arkts-audio-audiovolumemanager-i.md#getvolumegroupmanager-1)
-获取AudioVolumeGroupManager实例。
-
-> **说明：**
->
-> - 本Interface首批接口从API version 9开始支持。
+管理音频组音量。 在使用AudioVolumeGroupManager的接口之前，需先通过 [getVolumeGroupManager](arkts-audio-audiovolumemanager-i.md#getvolumegroupmanager-1) 获取AudioVolumeGroupManager实例。 > **说明：** > > - 本Interface首批接口从API version 9开始支持。
 
 **起始版本：** 9
 
@@ -739,9 +731,7 @@ on(type: 'ringerModeChange', callback: Callback<AudioRingMode>): void
 on(type: 'micStateChange', callback: Callback<MicStateChangeEvent>): void
 ```
 
-监听系统麦克风状态更改事件（当检测到系统麦克风状态发生改变时触发）。使用callback异步回调。
-
-目前此订阅接口在单进程多AudioManager实例的使用场景下，仅最后一个实例的订阅生效，其他实例的订阅会被覆盖（即使最后一个实例没有进行订阅）。因此，推荐使用单一AudioManager实例进行开发。
+监听系统麦克风状态更改事件（当检测到系统麦克风状态发生改变时触发）。使用callback异步回调。 目前此订阅接口在单进程多AudioManager实例的使用场景下，仅最后一个实例的订阅生效，其他实例的订阅会被覆盖（即使最后一个实例没有进行订阅）。因此，推荐使用单一AudioManager实例进行开发。
 
 **起始版本：** 9
 
@@ -767,11 +757,7 @@ on(type: 'micStateChange', callback: Callback<MicStateChangeEvent>): void
 setMicrophoneMute(mute: boolean, callback: AsyncCallback<void>): void
 ```
 
-设置麦克风静音状态。使用callback异步回调。
-
-> **说明：**
->
-> 从API version 9开始支持，从API version 11开始废弃。
+设置麦克风静音状态。使用callback异步回调。 > **说明：** > > 从API version 9开始支持，从API version 11开始废弃。
 
 **起始版本：** 9
 
@@ -794,11 +780,7 @@ setMicrophoneMute(mute: boolean, callback: AsyncCallback<void>): void
 setMicrophoneMute(mute: boolean): Promise<void>
 ```
 
-设置麦克风静音状态。使用Promise异步回调。
-
-> **说明：**
->
-> 从API version 9开始支持，从API version 11开始废弃。
+设置麦克风静音状态。使用Promise异步回调。 > **说明：** > > 从API version 9开始支持，从API version 11开始废弃。
 
 **起始版本：** 9
 

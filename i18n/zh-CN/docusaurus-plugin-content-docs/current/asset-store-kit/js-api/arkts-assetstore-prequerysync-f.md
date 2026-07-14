@@ -6,8 +6,7 @@
 function preQuerySync(query: AssetMap): Uint8Array
 ```
 
-查询的预处理，用于需要用户认证的关键资产。在用户认证成功后，应当随后调用[asset.querySync](arkts-assetstore-querysync-f.md#querysync-1)、
-[asset.postQuerySync](arkts-assetstore-postquerysync-f.md#postquerysync-1)。使用同步方式返回结果。
+查询的预处理，用于需要用户认证的关键资产。在用户认证成功后，应当随后调用[asset.querySync](arkts-assetstore-querysync-f.md#querysync-1)、 [asset.postQuerySync](arkts-assetstore-postquerysync-f.md#postquerysync-1)。使用同步方式返回结果。
 
 **起始版本：** 12
 

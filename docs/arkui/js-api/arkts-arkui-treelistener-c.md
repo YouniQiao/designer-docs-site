@@ -41,8 +41,7 @@ Destroy event.
 on(type: TreeListenType, callback: (callbackParam: CallbackParam) => void): void
 ```
 
-Event registration and processing.
-The event will not be destroyed after being processed.
+Event registration and processing. The event will not be destroyed after being processed.
 
 **Since:** 22
 
@@ -65,8 +64,7 @@ The event will not be destroyed after being processed.
 once(type: TreeListenType, callback: (callbackParam: CallbackParam) => void): void
 ```
 
-Event registration and processing.
-After the event is processed once, it will be destroyed.
+Event registration and processing. After the event is processed once, it will be destroyed.
 
 **Since:** 22
 

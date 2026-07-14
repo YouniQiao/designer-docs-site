@@ -12,8 +12,7 @@ import { formProvider } from '@kit.FormKit';
 function isRequestPublishFormSupported(callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether a widget can be added to the widget host. This API uses an asynchronous callback to return the
-result.
+Checks whether a widget can be added to the widget host. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 

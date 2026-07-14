@@ -1,10 +1,6 @@
 # @ohos.distributedsched.abilityConnectionManager
 
-The **abilityConnectionManager** module provides APIs for cross-device connection management. After successful
-networking between devices (login with the same account and enabling of Bluetooth on the devices), a system
-application and a third-party application can start a [UIAbility](../../apis-ability-kit/arkts-apis/arkts-app-ability-uiability.md) of the same
-application across these devices to establish a Bluetooth connection. This way, data (specifically, text) can be
-transmitted across the devices over the connection.
+The **abilityConnectionManager** module provides APIs for cross-device connection management. After successful networking between devices (login with the same account and enabling of Bluetooth on the devices), a system application and a third-party application can start a [UIAbility](../../apis-ability-kit/arkts-apis/arkts-app-ability-uiability.md) of the same application across these devices to establish a Bluetooth connection. This way, data (specifically, text) can be transmitted across the devices over the connection.
 
 **Since:** 18
 
@@ -23,7 +19,7 @@ import { abilityConnectionManager } from '@kit.DistributedServiceKit';
 | Name | Description |
 | --- | --- |
 | [acceptConnect](arkts-distributedservice-acceptconnect-f.md#acceptconnect-1) | Accepts the UIAbility connection after a collaboration session is set up and the session ID is obtained. |
-| [connect](arkts-distributedservice-connect-f.md#connect-1) | Sets up a UIAbility connection after a collaboration session is created and the session ID is obtained. This APIuses a promise to return the result. |
+| [connect](arkts-distributedservice-connect-f.md#connect-1) | Sets up a UIAbility connection after a collaboration session is created and the session ID is obtained. This API uses a promise to return the result. |
 | [createAbilityConnectionSession](arkts-distributedservice-createabilityconnectionsession-f.md#createabilityconnectionsession-1) | Creates a collaboration session between applications. |
 | [destroyAbilityConnectionSession](arkts-distributedservice-destroyabilityconnectionsession-f.md#destroyabilityconnectionsession-1) | Destroys a collaboration session between applications. |
 | [disconnect](arkts-distributedservice-disconnect-f.md#disconnect-1) | Disconnects the UIAbility connection to end the collaboration session. |
@@ -37,7 +33,7 @@ import { abilityConnectionManager } from '@kit.DistributedServiceKit';
 | [on](arkts-distributedservice-on-f.md#on-3) | Enables listening for **receiveMessage** events. |
 | [on](arkts-distributedservice-on-f.md#on-4) | Enables listening for **receiveData** events. |
 | [reject](arkts-distributedservice-reject-f.md#reject-1) | Rejects a connection request in a cross-device collaboration session. After a connection request sent from the peer application is rejected, a rejection reason is returned. |
-| [sendData](arkts-distributedservice-senddata-f.md#senddata-1) | Sends [ArrayBuffer](../../../../arkts-utils/arraybuffer-object.md) byte streams from one device to another after aconnection is successfully established. |
+| [sendData](arkts-distributedservice-senddata-f.md#senddata-1) | Sends [ArrayBuffer](../../../../arkts-utils/arraybuffer-object.md) byte streams from one device to another after a connection is successfully established. |
 | [sendMessage](arkts-distributedservice-sendmessage-f.md#sendmessage-1) | Sends text messages after a collaboration session is set up. |
 
 <!--Del-->

@@ -1,23 +1,6 @@
 # AudioLoopback
 
-This interface provides APIs for audio monitoring.
-
-Before calling any API in AudioLoopback, you must use
-[audio.createAudioLoopback](arkts-audio-createaudioloopback-f.md#createaudioloopback-1) to
-create an AudioLoopback instance.
-
-When audio loopback is enabled, the system creates a low-latency renderer and capturer to implement low-latency in-
-ear monitoring. The audio captured is routed back to the renderer through an internal path. The renderer follows
-the audio focus strategy for [STREAM_USAGE_MUSIC](arkts-audio-streamusage-e.md), whereas the
-capturer follows the strategy for [SOURCE_TYPE_MIC](arkts-audio-sourcetype-e.md).
-
-The system automatically chooses the input and output devices. If these devices do not support low latency, audio
-loopback does not work. If another audio stream takes over the audio focus or if the input or output device changes
-to the one that does not support low latency, the system disables audio loopback automatically.
-
-> **NOTE**
->
-> - The initial APIs of this interface are supported since API version 20.
+This interface provides APIs for audio monitoring. Before calling any API in AudioLoopback, you must use [audio.createAudioLoopback](arkts-audio-createaudioloopback-f.md#createaudioloopback-1) to create an AudioLoopback instance. When audio loopback is enabled, the system creates a low-latency renderer and capturer to implement low-latency in- ear monitoring. The audio captured is routed back to the renderer through an internal path. The renderer follows the audio focus strategy for [STREAM_USAGE_MUSIC](arkts-audio-streamusage-e.md), whereas the capturer follows the strategy for [SOURCE_TYPE_MIC](arkts-audio-sourcetype-e.md). The system automatically chooses the input and output devices. If these devices do not support low latency, audio loopback does not work. If another audio stream takes over the audio focus or if the input or output device changes to the one that does not support low latency, the system disables audio loopback automatically. > **NOTE** > > - The initial APIs of this interface are supported since API version 20.
 
 **Since:** 20
 
@@ -35,11 +18,7 @@ import { audio } from '@kit.AudioKit';
 enable(enable: boolean): Promise<boolean>
 ```
 
-Enable or disable audio loopback.
-When audio loopback is enabled, the system automatically creates fast playback and recording streams
-to implement low-latency in-ear monitoring. When audio loopback is disabled, the audio stream is destroyed.
-If enabling audio loopback fails, you can use {@link AudioLoopback#getStatus} to query the cause. After audio
-loopback is enabled, you can subscribe to the statusChange event to listen for audio loopback status changes.
+Enable or disable audio loopback. When audio loopback is enabled, the system automatically creates fast playback and recording streams to implement low-latency in-ear monitoring. When audio loopback is disabled, the audio stream is destroyed. If enabling audio loopback fails, you can use {@link AudioLoopback#getStatus} to query the cause. After audio loopback is enabled, you can subscribe to the statusChange event to listen for audio loopback status changes.
 
 **Since:** 20
 
@@ -72,9 +51,7 @@ loopback is enabled, you can subscribe to the statusChange event to listen for a
 getEqualizerPreset(): AudioLoopbackEqualizerPreset
 ```
 
-Gets the current equalizer preset.
-The default equalizer preset of audio loopback is {@link AudioLoopbackEqualizerPreset#FULL} if
-users do not modify the preset.
+Gets the current equalizer preset. The default equalizer preset of audio loopback is {@link AudioLoopbackEqualizerPreset#FULL} if users do not modify the preset.
 
 **Since:** 21
 
@@ -112,9 +89,7 @@ Gets the preferred audio device pair in current device connection situation.
 getReverbPreset(): AudioLoopbackReverbPreset
 ```
 
-Get the current reverberation.
-The default reverberation preset of audio loopback is {@link AudioLoopbackReverbPreset#THEATER} if
-users do not modify the preset.
+Get the current reverberation. The default reverberation preset of audio loopback is {@link AudioLoopbackReverbPreset#THEATER} if users do not modify the preset.
 
 **Since:** 21
 
@@ -215,8 +190,7 @@ Unsubscribes from the audio loopback status event. This API uses an asynchronous
 on(type: 'statusChange', callback: Callback<AudioLoopbackStatus>): void
 ```
 
-Subscribes to the audio loopback status change event, which is triggered when the status of the audio loopback is
-changed. This API uses an asynchronous callback to return the result.
+Subscribes to the audio loopback status change event, which is triggered when the status of the audio loopback is changed. This API uses an asynchronous callback to return the result.
 
 **Since:** 20
 

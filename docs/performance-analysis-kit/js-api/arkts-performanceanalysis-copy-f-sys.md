@@ -12,8 +12,7 @@ import { logLibrary } from '@kit.PerformanceAnalysisKit';
 function copy(logType: string, logName: string, dest: string): Promise<void>
 ```
 
-Copies log files of the specified type to the target application directory. This API uses a promise to return the
-result.
+Copies log files of the specified type to the target application directory. This API uses a promise to return the result.
 
 **Since:** 10
 
@@ -79,8 +78,7 @@ try {
 function copy(logType: string, logName: string, dest: string, callback: AsyncCallback<void>): void
 ```
 
-Copies log files of the specified type to the target application directory. This API uses an asynchronous callback
-to return the result.
+Copies log files of the specified type to the target application directory. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 

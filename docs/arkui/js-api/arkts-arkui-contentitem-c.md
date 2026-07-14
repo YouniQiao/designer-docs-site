@@ -1,8 +1,8 @@
 # ContentItem
 
-Declare ContentItem
+Defines elements for the left and center areas of the **ComposeListItem** component.
 
-**Since:** 20
+**Since:** 10
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -18,15 +18,15 @@ import { OperateCheck, OperateIcon, ComposeListItem, OperateItem, IconType, Cont
 description?: ResourceStr
 ```
 
-Sets the description.
+Description of the element in the center. If this parameter is not set or is set to **undefined**, the description is not displayed. **Text processing rules**: Text will wrap to a new line when it exceeds the length limit.
 
 **Type:** ResourceStr
 
-**Since:** 20
+**Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -36,15 +36,15 @@ Sets the description.
 icon?: ResourceStr
 ```
 
-Sets the icon.
+Icon resource of the element on the left. If this parameter is not set or is set to **undefined**, the icon is not displayed.
 
 **Type:** ResourceStr
 
-**Since:** 20
+**Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -54,15 +54,15 @@ Sets the icon.
 iconStyle?: IconType
 ```
 
-The type of icon.
+Icon style of the element on the left. If this parameter is not set or is set to **undefined**, the icon is not displayed.
 
 **Type:** IconType
 
-**Since:** 20
+**Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -72,15 +72,15 @@ The type of icon.
 primaryText?: ResourceStr
 ```
 
-Sets the primaryText.
+Primary text of the element in the center. If this parameter is not set or is set to **undefined**, the primary text is not displayed. **Text processing rules**: Text will wrap to a new line when it exceeds the length limit.
 
 **Type:** ResourceStr
 
-**Since:** 20
+**Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -90,15 +90,15 @@ Sets the primaryText.
 secondaryText?: ResourceStr
 ```
 
-Sets the secondaryText.
+Secondary text of the element in the center. If this parameter is not set or is set to **undefined**, the secondary text is not displayed. **Text processing rules**: Text will wrap to a new line when it exceeds the length limit.
 
 **Type:** ResourceStr
 
-**Since:** 20
+**Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -108,15 +108,15 @@ Sets the secondaryText.
 symbolStyle?: SymbolGlyphModifier
 ```
 
-Sets the symbol.
+Symbol icon resource of the element on the left, which has higher priority than **icon**. If both **icon** and this parameter are set, only the symbol icon is displayed. If this parameter is not set or is set to **undefined**, the symbol icon is not displayed.
 
 **Type:** SymbolGlyphModifier
 
-**Since:** 20
+**Since:** 18
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** This API can be used in atomic services since API version 18.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

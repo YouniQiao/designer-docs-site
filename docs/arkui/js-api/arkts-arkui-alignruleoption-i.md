@@ -12,8 +12,7 @@ Defines the align rule options of relative container.
 bias?: Bias
 ```
 
-Offset of the component under the anchor constraints.
-The value is the ratio of the distance to the left/upper anchor to the total distance between anchors.
+Offset of the component under the anchor constraints. The value is the ratio of the distance to the left/upper anchor to the total distance between anchors.
 
 **Type:** Bias
 
@@ -35,8 +34,7 @@ The value is the ratio of the distance to the left/upper anchor to the total dis
 bottom?: VerticalAlignParam
 ```
 
-Top alignment.
-In versions earlier than API version 23, the input parameter type is { anchor: string, align: VerticalAlign }.
+Top alignment. In versions earlier than API version 23, the input parameter type is { anchor: string, align: VerticalAlign }.
 
 **Type:** VerticalAlignParam
 
@@ -54,8 +52,7 @@ In versions earlier than API version 23, the input parameter type is { anchor: s
 center?: VerticalAlignParam
 ```
 
-Center alignment in the vertical direction.
-In versions earlier than API version 23, the input parameter type is { anchor: string, align: VerticalAlign }.
+Center alignment in the vertical direction. In versions earlier than API version 23, the input parameter type is { anchor: string, align: VerticalAlign }.
 
 **Type:** VerticalAlignParam
 
@@ -73,8 +70,7 @@ In versions earlier than API version 23, the input parameter type is { anchor: s
 left?: HorizontalAlignParam
 ```
 
-Left alignment.
-In versions earlier than API version 23, the input parameter type is { anchor: string, align: HorizontalAlign }.
+Left alignment. In versions earlier than API version 23, the input parameter type is { anchor: string, align: HorizontalAlign }.
 
 **Type:** HorizontalAlignParam
 
@@ -92,8 +88,7 @@ In versions earlier than API version 23, the input parameter type is { anchor: s
 middle?: HorizontalAlignParam
 ```
 
-Center alignment in the horizontal direction.
-In versions earlier than API version 23, the input parameter type is { anchor: string, align: HorizontalAlign }.
+Center alignment in the horizontal direction. In versions earlier than API version 23, the input parameter type is { anchor: string, align: HorizontalAlign }.
 
 **Type:** HorizontalAlignParam
 
@@ -111,8 +106,7 @@ In versions earlier than API version 23, the input parameter type is { anchor: s
 right?: HorizontalAlignParam
 ```
 
-Right alignment.
-In versions earlier than API version 23, the input parameter type is { anchor: string, align:HorizontalAlign }.
+Right alignment. In versions earlier than API version 23, the input parameter type is { anchor: string, align:HorizontalAlign }.
 
 **Type:** HorizontalAlignParam
 
@@ -130,8 +124,7 @@ In versions earlier than API version 23, the input parameter type is { anchor: s
 top?: VerticalAlignParam
 ```
 
-Top alignment.
-In versions earlier than API version 23, the input parameter type is { anchor: string, align: VerticalAlign }.
+Top alignment. In versions earlier than API version 23, the input parameter type is { anchor: string, align: VerticalAlign }.
 
 **Type:** VerticalAlignParam
 

@@ -18,8 +18,7 @@ import { HoverModeStatus, ExtraRegionPosition, OnHoverStatusChangeHandler, Expan
 verticalSplitRatio?: number
 ```
 
-Height ratio between the primary and extra regions.
-The value range is all integers. Default value: {@link.PresetSplitRatio}.LAYOUT_1V1.
+Height ratio between the primary and extra regions. The value range is all integers. Default value: {@link.PresetSplitRatio}.LAYOUT_1V1.
 
 **Type:** number
 

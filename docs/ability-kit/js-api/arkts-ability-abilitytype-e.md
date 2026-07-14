@@ -12,8 +12,7 @@ Enumerates the types of ability components.
 PAGE = 1
 ```
 
-Ability that has the UI. FA developed using the Page template to provide the capability of interacting with
-users.
+Ability that has the UI. FA developed using the Page template to provide the capability of interacting with users.
 
 **Since:** 9
 
@@ -27,8 +26,7 @@ users.
 SERVICE = 2
 ```
 
-Ability of the background service type, without the UI. PA developed using the Service template to provide the
-capability of running tasks in the background.
+Ability of the background service type, without the UI. PA developed using the Service template to provide the capability of running tasks in the background.
 
 **Since:** 9
 

@@ -1,7 +1,6 @@
 # LongPressGestureEvent
 
-Inherits from [BaseGestureEvent](arkts-arkui-basegestureevent-i.md). This object can be passed as the **event** parameter of
-[onGestureJudgeBegin](arkts-arkui-commonmethod-c.md#ongesturejudgebegin-1).
+Inherits from [BaseGestureEvent](arkts-arkui-basegestureevent-i.md). This object can be passed as the **event** parameter of [onGestureJudgeBegin](arkts-arkui-commonmethod-c.md#ongesturejudgebegin-1).
 
 **Inheritance/Implementation:** LongPressGestureEvent extends [BaseGestureEvent](arkts-arkui-basegestureevent-i.md)
 
@@ -15,8 +14,7 @@ Inherits from [BaseGestureEvent](arkts-arkui-basegestureevent-i.md). This object
 repeat: boolean
 ```
 
-Whether the event is a repeated trigger event. **true**: The event is repeated. **false**: The event is not
-repeated.
+Whether the event is a repeated trigger event. **true**: The event is repeated. **false**: The event is not repeated.
 
 **Type:** boolean
 

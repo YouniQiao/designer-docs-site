@@ -1,8 +1,6 @@
 # CalendarPicker properties/events
 
-In addition to the [universal attributes](./common), the following attributes are supported.
-
-In addition to the [universal events](./common), the following events are supported.
+In addition to the [universal attributes](./common), the following attributes are supported. In addition to the [universal events](./common), the following events are supported.
 
 **Inheritance/Implementation:** CalendarPickerAttribute extends [CommonMethod<CalendarPickerAttribute>](CommonMethod<CalendarPickerAttribute>)
 
@@ -39,9 +37,7 @@ Sets how the picker is aligned with the entry component.
 edgeAlign(alignType: Optional<CalendarAlign>, offset?: Offset)
 ```
 
-Sets how the picker is aligned with the entry component. Compared with
-[edgeAlign](CalendarPickerAttribute#edgeAlign(alignType: CalendarAlign, offset?: Offset)), this API supports
-the **undefined** type for the **alignType** parameter.
+Sets how the picker is aligned with the entry component. Compared with [edgeAlign](CalendarPickerAttribute#edgeAlign(alignType: CalendarAlign, offset?: Offset)), this API supports the **undefined** type for the **alignType** parameter.
 
 **Since:** 18
 
@@ -108,13 +104,7 @@ Triggered when a date is selected. This event cannot be triggered by two-way bou
 onChange(callback: Optional<Callback<Date>>)
 ```
 
-Triggered when a date is selected. This event cannot be triggered by two-way bound state variables. Compared with
-[onChange](CalendarPickerAttribute#onChange(callback: Callback<Date>)), this API supports the **undefined**
-type for the **callback** parameter.
-
-> **NOTE**
->
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
+Triggered when a date is selected. This event cannot be triggered by two-way bound state variables. Compared with [onChange](CalendarPickerAttribute#onChange(callback: Callback<Date>)), this API supports the **undefined** type for the **callback** parameter. > **NOTE** > > This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
 
 **Since:** 18
 
@@ -158,9 +148,7 @@ Sets the font color, font size, and font weight in the entry area.
 textStyle(style: Optional<PickerTextStyle>)
 ```
 
-Sets the font color, font size, and font weight in the entry area. Compared with
-[textStyle](CalendarPickerAttribute#textStyle(value: PickerTextStyle)), this API supports the **undefined**
-type for the **style** parameter.
+Sets the font color, font size, and font weight in the entry area. Compared with [textStyle](CalendarPickerAttribute#textStyle(value: PickerTextStyle)), this API supports the **undefined** type for the **style** parameter.
 
 **Since:** 18
 

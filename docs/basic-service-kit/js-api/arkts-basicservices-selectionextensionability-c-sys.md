@@ -1,10 +1,6 @@
 # SelectionExtensionAbility (System API)
 
-This module provides ExtensionAbility for word selection, allowing users to search or translate text selected using a
-mouse or touchpad.
-
-> **NOTE**
-> - This module is supported only on PCs/2-in-1 devices.
+This module provides ExtensionAbility for word selection, allowing users to search or translate text selected using a mouse or touchpad. > **NOTE** > - This module is supported only on PCs/2-in-1 devices.
 
 **Since:** 24
 
@@ -24,8 +20,7 @@ import { SelectionExtensionAbility } from '@kit.BasicServicesKit';
 onConnect(want: Want): rpc.RemoteObject
 ```
 
-Called when the SelectionExtensionAbility instance is created. You can execute initialization logic (such as
-defining variables, loading resources, and listening for word selection events) within this callback.
+Called when the SelectionExtensionAbility instance is created. You can execute initialization logic (such as defining variables, loading resources, and listening for word selection events) within this callback.
 
 **Since:** 24
 
@@ -80,14 +75,7 @@ class ServiceExtAbility extends SelectionExtensionAbility {
 onDisconnect(): void
 ```
 
-Called when the **SelectionExtensionAbility** instance is destroyed (for example, when the user disables the word
-selection function or switches the word selection application). You can clear resources and save data during this
-lifecycle. This API returns the result synchronously or uses a promise to return the result.
-After the **onDisconnect()** lifecycle callback is executed, the application may exit. Consequently, the
-asynchronous function (for example, asynchronously writing data to the database) in **onDisconnect()** may fail to
-be executed. Using a Promise for asynchronous callback is recommended to prevent such issues.
-The callback is invoked only when the SelectionExtensionAbility exits gracefully. It is not invoked in cases of
-abnormal exits (for example, process termination due to low memory conditions).
+Called when the **SelectionExtensionAbility** instance is destroyed (for example, when the user disables the word selection function or switches the word selection application). You can clear resources and save data during this lifecycle. This API returns the result synchronously or uses a promise to return the result. After the **onDisconnect()** lifecycle callback is executed, the application may exit. Consequently, the asynchronous function (for example, asynchronously writing data to the database) in **onDisconnect()** may fail to be executed. Using a Promise for asynchronous callback is recommended to prevent such issues. The callback is invoked only when the SelectionExtensionAbility exits gracefully. It is not invoked in cases of abnormal exits (for example, process termination due to low memory conditions).
 
 **Since:** 24
 
@@ -119,8 +107,7 @@ class ServiceExtAbility extends SelectionExtensionAbility {
 context: SelectionExtensionContext
 ```
 
-Context of the SelectionExtensionAbility. This context is inherited from
-[ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md).
+Context of the SelectionExtensionAbility. This context is inherited from [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md).
 
 **Type:** SelectionExtensionContext
 

@@ -1,8 +1,6 @@
 # AudioHapticPlayer
 
-音振播放器，提供音振协同播放功能。在调用AudioHapticPlayer的接口前，需要先通过
-[createPlayer](arkts-audio-audiohapticmanager-i.md#createplayer-1)创建
-实例。
+音振播放器，提供音振协同播放功能。在调用AudioHapticPlayer的接口前，需要先通过 [createPlayer](arkts-audio-audiohapticmanager-i.md#createplayer-1)创建 实例。
 
 **起始版本：** 11
 
@@ -311,11 +309,7 @@ audioHapticPlayerInstance.release().then(() => {
 setLoop(loop: boolean): Promise<void>
 ```
 
-设置音振播放器循环播放。使用Promise异步回调。
-
-> **注意：**
->
-> 该方法需在音振播放器销毁前调用。
+设置音振播放器循环播放。使用Promise异步回调。 > **注意：** > > 该方法需在音振播放器销毁前调用。
 
 **起始版本：** 20
 
@@ -358,11 +352,7 @@ audioHapticPlayerInstance.setLoop(true).then(() => {
 setVolume(volume: number): Promise<void>
 ```
 
-设置音振播放器的音量。使用Promise异步回调。
-
-> **注意：**
->
-> 该方法需在音振播放器释放前调用。
+设置音振播放器的音量。使用Promise异步回调。 > **注意：** > > 该方法需在音振播放器释放前调用。
 
 **起始版本：** 20
 

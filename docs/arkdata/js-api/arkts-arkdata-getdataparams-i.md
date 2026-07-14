@@ -1,10 +1,6 @@
 # GetDataParams
 
-Represents the parameters for obtaining data from UDMF, including the destination directory, option for resolving
-file conflicts, and progress indicator type.
-
-For details, see
-[Obtaining Data Asynchronously Through Drag-and-Drop].
+Represents the parameters for obtaining data from UDMF, including the destination directory, option for resolving file conflicts, and progress indicator type. For details, see [Obtaining Data Asynchronously Through Drag-and-Drop].
 
 **Since:** 15
 

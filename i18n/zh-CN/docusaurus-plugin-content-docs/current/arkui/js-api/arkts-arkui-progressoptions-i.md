@@ -12,11 +12,7 @@
 style?: ProgressStyle
 ```
 
-指定进度条样式。
-
-该参数从API version8开始废弃，建议使用type替代。
-
-默认值：ProgressStyle.Linear
+指定进度条样式。 该参数从API version8开始废弃，建议使用type替代。 默认值：ProgressStyle.Linear
 
 **类型：** ProgressStyle
 
@@ -34,9 +30,7 @@ style?: ProgressStyle
 total?: number
 ```
 
-指定进度总长。设置小于等于0的数值时置为100。
-
-默认值：100
+指定进度总长。设置小于等于0的数值时置为100。 默认值：100
 
 **类型：** number
 
@@ -54,12 +48,7 @@ total?: number
 type?: Type
 ```
 
-指定进度条类型。
-
-默认值：ProgressType.Linear
-
-**说明：** 不同的type需分别对应相应的[style](ProgressAttribute#style)属性设置，详细映射关系参考
-[ProgressStyleMap](arkts-arkui-progressstylemap-i.md)。
+指定进度条类型。 默认值：ProgressType.Linear **说明：** 不同的type需分别对应相应的[style](ProgressAttribute#style)属性设置，详细映射关系参考 [ProgressStyleMap](arkts-arkui-progressstylemap-i.md)。
 
 **类型：** Type
 
@@ -77,11 +66,7 @@ type?: Type
 value: number
 ```
 
-指定当前进度值。设置小于0的数值时置为0，设置大于total的数值时置为total。
-
-默认值：0
-
-取值范围：[0, total]
+指定当前进度值。设置小于0的数值时置为0，设置大于total的数值时置为total。 默认值：0 取值范围：[0, total]
 
 **类型：** number
 

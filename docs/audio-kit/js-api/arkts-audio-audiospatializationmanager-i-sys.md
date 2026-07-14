@@ -945,8 +945,7 @@ Unsubscribes from the spatial audio source type change events.
 on(type: 'spatializationEnabledChange', callback: Callback<boolean>): void
 ```
 
-Subscribes to the spatialization enable state change events. When the spatialization enable state changes,
-registered clients will receive the callback.
+Subscribes to the spatialization enable state change events. When the spatialization enable state changes, registered clients will receive the callback.
 
 **Since:** 11
 
@@ -990,8 +989,7 @@ audioSpatializationManager.on('spatializationEnabledChange', (isSpatializationEn
 on(type: 'spatializationEnabledChangeForAnyDevice', callback: Callback<AudioSpatialEnabledStateForDevice>): void
 ```
 
-Subscribes to the spatialization enable state change events by the specified device.
-When the spatialization enable state changes, registered clients will receive the callback.
+Subscribes to the spatialization enable state change events by the specified device. When the spatialization enable state changes, registered clients will receive the callback.
 
 **Since:** 12
 
@@ -1032,8 +1030,7 @@ audioSpatializationManager.on('spatializationEnabledChangeForAnyDevice', (audioS
 on(type: 'headTrackingEnabledChange', callback: Callback<boolean>): void
 ```
 
-Subscribes to the head tracking enable state change events. When the head tracking enable state changes,
-registered clients will receive the callback.
+Subscribes to the head tracking enable state change events. When the head tracking enable state changes, registered clients will receive the callback.
 
 **Since:** 11
 
@@ -1077,8 +1074,7 @@ audioSpatializationManager.on('headTrackingEnabledChange', (isHeadTrackingEnable
 on(type: 'headTrackingEnabledChangeForAnyDevice', callback: Callback<AudioSpatialEnabledStateForDevice>): void
 ```
 
-Subscribes to the head tracking enable state change events by the specified device.
-When the head tracking enable state changes, registered clients will receive the callback.
+Subscribes to the head tracking enable state change events by the specified device. When the head tracking enable state changes, registered clients will receive the callback.
 
 **Since:** 12
 
@@ -1119,8 +1115,7 @@ audioSpatializationManager.on('headTrackingEnabledChangeForAnyDevice', (audioSpa
 onAdaptiveSpatialRenderingEnabledChangeForAnyDevice(callback: Callback<AudioSpatialEnabledStateForDevice>): void
 ```
 
-Subscribes to the adaptive spatial rendering enable state change events by the specified device.
-When the adaptive spatial rendering enable state changes, registered clients will receive the callback.
+Subscribes to the adaptive spatial rendering enable state change events by the specified device. When the adaptive spatial rendering enable state changes, registered clients will receive the callback.
 
 **Since:** 24
 
@@ -1148,8 +1143,7 @@ onPersonalizedSpatializationEnabledChangeForAnyDevice(
         callback: Callback<AudioPersonalizedSpatialEnabledChangeForAnyDevice>): void
 ```
 
-Subscribes to the personalized spatialization enable state change events by the specified device.
-When the state changes, registered clients will receive the callback.
+Subscribes to the personalized spatialization enable state change events by the specified device. When the state changes, registered clients will receive the callback.
 
 **Since:** 26.0.0
 
@@ -1177,8 +1171,7 @@ When the state changes, registered clients will receive the callback.
 onSpatialAudioSourceTypeChange(callback: Callback<SpatialAudioSourceType>): void
 ```
 
-Subscribes to the spatial audio source type change events. When the current spatial audio source type changes,
-registered clients will receive callbacks.
+Subscribes to the spatial audio source type change events. When the current spatial audio source type changes, registered clients will receive callbacks.
 
 **Since:** 24
 
@@ -1207,9 +1200,7 @@ registered clients will receive callbacks.
 setAdaptiveSpatialRenderingEnabled(deviceDescriptor: AudioDeviceDescriptor, enabled: boolean): Promise<void>
 ```
 
-Sets the adaptive spatial rendering enabled or disabled by the specified device.
-This method uses a promise to return the result.
-When the adaptive spatial rendering is enabled, spatial audio rendering will not take effect on stereo audio.
+Sets the adaptive spatial rendering enabled or disabled by the specified device. This method uses a promise to return the result. When the adaptive spatial rendering is enabled, spatial audio rendering will not take effect on stereo audio.
 
 **Since:** 24
 
@@ -1357,8 +1348,7 @@ audioSpatializationManager.setHeadTrackingEnabled(enable).then(() => {
 setHeadTrackingEnabled(deviceDescriptor: AudioDeviceDescriptor, enabled: boolean): Promise<void>
 ```
 
-Sets the head tracking enabled or disabled by the specified device.
-This method uses a promise to return the result.
+Sets the head tracking enabled or disabled by the specified device. This method uses a promise to return the result.
 
 **Since:** 12
 
@@ -1575,8 +1565,7 @@ audioSpatializationManager.setSpatializationEnabled(enable).then(() => {
 setSpatializationEnabled(deviceDescriptor: AudioDeviceDescriptor, enabled: boolean): Promise<void>
 ```
 
-Sets the spatialization enabled or disabled by the specified device.
-This method uses a promise to return the result.
+Sets the spatialization enabled or disabled by the specified device. This method uses a promise to return the result.
 
 **Since:** 12
 

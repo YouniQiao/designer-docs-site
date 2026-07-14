@@ -12,11 +12,7 @@ import { huks } from '@kit.UniversalKeystoreKit';
 function generateKeyItem(keyAlias: string, options: HuksOptions, callback: AsyncCallback<void>): void
 ```
 
-Generates a key. This API uses an asynchronous callback to return the result.
-
-Based on the principle that the key cannot be transferred out of
-[Trusted Execution Environment (TEE)](../../../../security/UniversalKeystoreKit/huks-concepts.md#tee), the key
-material content is not returned through this API and is only used to indicate whether the call is successful.
+Generates a key. This API uses an asynchronous callback to return the result. Based on the principle that the key cannot be transferred out of [Trusted Execution Environment (TEE)](../../../../security/UniversalKeystoreKit/huks-concepts.md#tee), the key material content is not returned through this API and is only used to indicate whether the call is successful. > **NOTE** > > Generating SE security level keys defined in [HuksKeySecurityLevel](arkts-universalkeystore-hukskeysecuritylevel-e.md) > requires the ohos.permission.ACCESS_SE_KEY permission.
 
 **Since:** 9
 
@@ -29,13 +25,14 @@ material content is not returned through this API and is only used to indicate w
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | keyAlias | string | Yes | Alias of the key. The value can contain up to 128 bytes and should not includesensitive data such as personal information. |
-| options | HuksOptions | Yes | Tags required for generating the key. The algorithm, key purpose, and key lengthare mandatory. |
+| options | HuksOptions | Yes | Tags required for generating the key. The algorithm, key purpose, and key lengthare mandatory. When specifying the SE security level defined in[HuksKeySecurityLevel](arkts-universalkeystore-hukskeysecuritylevel-e.md), the ohos.permission.ACCESS_SE_KEY permissionis required. |
 | callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | The application permissions are insufficient, possibly becausethe ohos.permission.ACCESS_SE_KEY permission is missing.<br>**Applicable version:** 26.0.0 and later |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified.2. Incorrect parameter types.3. Parameter verification failed. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | api is not supported |
 | [12000001](../errorcode-huks.md#12000001-feature-not-supported) | algorithm mode is not supported |
@@ -190,11 +187,7 @@ export default {
 function generateKeyItem(keyAlias: string, options: HuksOptions): Promise<void>
 ```
 
-Generates a key. This API uses a promise to return the result.
-
-Based on the principle that the key cannot be transferred out of
-[Trusted Execution Environment (TEE)](../../../../security/UniversalKeystoreKit/huks-concepts.md#tee), the key
-material content is not returned through this API and is only used to indicate whether the call is successful.
+Generates a key. This API uses a promise to return the result. > **NOTE** > > Generating SE security level keys defined in [HuksKeySecurityLevel](arkts-universalkeystore-hukskeysecuritylevel-e.md) > requires the ohos.permission.ACCESS_SE_KEY permission. Based on the principle that the key cannot be transferred out of [Trusted Execution Environment (TEE)](../../../../security/UniversalKeystoreKit/huks-concepts.md#tee), the key material content is not returned through this API and is only used to indicate whether the call is successful.
 
 **Since:** 9
 
@@ -207,7 +200,7 @@ material content is not returned through this API and is only used to indicate w
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | keyAlias | string | Yes | Alias of the key. The value can contain up to 128 bytes and should not includesensitive data such as personal information. |
-| options | HuksOptions | Yes | Tags required for generating the key. The algorithm, key purpose, and key lengthare mandatory. |
+| options | HuksOptions | Yes | Tags required for generating the key. The algorithm, key purpose, and key lengthare mandatory. When specifying the SE security level defined in[HuksKeySecurityLevel](arkts-universalkeystore-hukskeysecuritylevel-e.md), the ohos.permission.ACCESS_SE_KEY permissionis required. |
 
 **Return value:**
 
@@ -219,6 +212,7 @@ material content is not returned through this API and is only used to indicate w
 
 | Error Code ID | Error Message |
 | --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | The application permissions are insufficient, possibly becausethe ohos.permission.ACCESS_SE_KEY permission is missing.<br>**Applicable version:** 26.0.0 and later |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified.2. Incorrect parameter types.3. Parameter verification failed. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | api is not supported |
 | [12000001](../errorcode-huks.md#12000001-feature-not-supported) | algorithm mode is not supported |

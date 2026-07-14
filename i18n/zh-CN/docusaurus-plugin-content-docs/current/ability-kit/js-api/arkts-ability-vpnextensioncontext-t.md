@@ -4,9 +4,7 @@
 export type VpnExtensionContext = _VpnExtensionContext.default
 ```
 
-The context of vpn extension. It allows access to
-vpnExtension-specific resources.
-The class of auto startup info.
+The context of vpn extension. It allows access to vpnExtension-specific resources. The class of auto startup info.
 
 **起始版本：** 11
 

@@ -1,6 +1,6 @@
 # SlotType
 
-Enumerates the notification slot types.
+Enumerates the notification slot types. Different types correspond to different [SlotLevel](arkts-notification-slotlevel-e.md) values, determining the reminder behavior of the notification.
 
 **Since:** 9
 
@@ -12,7 +12,7 @@ Enumerates the notification slot types.
 UNKNOWN_TYPE = 0
 ```
 
-Unknown type. This type corresponds to [SlotLevel](arkts-notification-slotlevel-e.md) being **LEVEL_MIN**.
+Unknown type. This type corresponds to the [SlotLevel](arkts-notification-slotlevel-e.md) of **LEVEL_MIN**.
 
 **Since:** 9
 
@@ -26,8 +26,7 @@ Unknown type. This type corresponds to [SlotLevel](arkts-notification-slotlevel-
 SOCIAL_COMMUNICATION = 1
 ```
 
-Notification slot for social communication. This type corresponds to
-[SlotLevel](arkts-notification-slotlevel-e.md) being **LEVEL_HIGH**.
+Social communication. This type corresponds to the [SlotLevel](arkts-notification-slotlevel-e.md) of **LEVEL_HIGH**.
 
 **Since:** 9
 
@@ -41,8 +40,7 @@ Notification slot for social communication. This type corresponds to
 SERVICE_INFORMATION = 2
 ```
 
-Notification slot for service information. This type corresponds to
-[SlotLevel](arkts-notification-slotlevel-e.md) being **LEVEL_HIGH**.
+Service information. This type corresponds to the [SlotLevel](arkts-notification-slotlevel-e.md) of **LEVEL_HIGH**.
 
 **Since:** 9
 
@@ -56,8 +54,7 @@ Notification slot for service information. This type corresponds to
 CONTENT_INFORMATION = 3
 ```
 
-Notification slot for content consultation. This type corresponds to
-[SlotLevel](arkts-notification-slotlevel-e.md) being **LEVEL_MIN**.
+Content information. This type corresponds to the [SlotLevel](arkts-notification-slotlevel-e.md) of **LEVEL_MIN**.
 
 **Since:** 9
 
@@ -71,10 +68,7 @@ Notification slot for content consultation. This type corresponds to
 LIVE_VIEW = 4
 ```
 
-Live view. A third-party application cannot directly create a notification of this slot type. After the system
-proxy creates a system live view, the third-party application publishes a notification with the same ID to update
-the specified content. This type corresponds to [SlotLevel](arkts-notification-slotlevel-e.md) being
-**LEVEL_DEFAULT**.
+Live view. A third-party application cannot directly create a notification of this type. Instead, after the system proxy creates a notification, the third-party application can release the notification with the same ID to update the specified content. This type corresponds to the [SlotLevel](arkts-notification-slotlevel-e.md) of **LEVEL_DEFAULT**.
 
 **Since:** 11
 
@@ -88,9 +82,7 @@ the specified content. This type corresponds to [SlotLevel](arkts-notification-s
 CUSTOMER_SERVICE = 5
 ```
 
-Notification slot for customer service message. This type is used for messages between users and customer service
-providers. The messages must be initiated by users. This type corresponds to
-[SlotLevel](arkts-notification-slotlevel-e.md) being **LEVEL_DEFAULT**.
+Customer service message. This type is used for messages between users and customer service providers. The messages must be initiated by users. This type corresponds to the [SlotLevel](arkts-notification-slotlevel-e.md) of **LEVEL_DEFAULT**.
 
 **Since:** 11
 
@@ -104,8 +96,7 @@ providers. The messages must be initiated by users. This type corresponds to
 OTHER_TYPES = 0xFFFF
 ```
 
-Notification slot for other purposes. This type corresponds to [SlotLevel](arkts-notification-slotlevel-e.md)
-being **LEVEL_MIN**.
+Other types. This type corresponds to the [SlotLevel](arkts-notification-slotlevel-e.md) of **LEVEL_MIN**.
 
 **Since:** 9
 

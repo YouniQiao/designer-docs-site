@@ -12,11 +12,7 @@
 hapticFeedbackMode? : HapticFeedbackMode
 ```
 
-菜单弹出时振动效果，当ImageSpan或BuilderSpan绑定预览菜单时生效。
-
-默认值：HapticFeedbackMode.DISABLED，菜单弹出时不振动。
-
-**说明：** 仅当应用具备ohos.permission.VIBRATE权限，且用户启用了触感反馈时才会生效。
+菜单弹出时振动效果，当ImageSpan或BuilderSpan绑定预览菜单时生效。 默认值：HapticFeedbackMode.DISABLED，菜单弹出时不振动。 **说明：** 仅当应用具备ohos.permission.VIBRATE权限，且用户启用了触感反馈时才会生效。
 
 **类型：** HapticFeedbackMode
 

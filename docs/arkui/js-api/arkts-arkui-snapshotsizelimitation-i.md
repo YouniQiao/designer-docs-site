@@ -18,11 +18,7 @@ import { componentSnapshot } from '@kit.ArkUI';
 maxHeight: number
 ```
 
-Maximum height of a component screenshot.
-
-Value range: (-∞, +∞)
-
-Unit: px.
+Maximum height of a component screenshot. Value range: (-∞, +∞) Unit: px.
 
 **Type:** number
 
@@ -40,11 +36,7 @@ Unit: px.
 maxWidth: number
 ```
 
-Maximum width of a component screenshot.
-
-Value range: (-∞, +∞)
-
-Unit: px.
+Maximum width of a component screenshot. Value range: (-∞, +∞) Unit: px.
 
 **Type:** number
 

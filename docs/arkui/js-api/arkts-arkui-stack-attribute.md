@@ -1,8 +1,6 @@
 # Stack properties/events
 
-In addition to the [universal attributes](arkts-arkui-commonmethod-c.md), the following attributes are supported.
-
-The [universal events](arkts-arkui-commonmethod-c.md) are supported.
+In addition to the [universal attributes](arkts-arkui-commonmethod-c.md), the following attributes are supported. The [universal events](arkts-arkui-commonmethod-c.md) are supported.
 
 **Inheritance/Implementation:** StackAttribute extends [CommonMethod<StackAttribute>](CommonMethod<StackAttribute>)
 
@@ -16,9 +14,7 @@ The [universal events](arkts-arkui-commonmethod-c.md) are supported.
 alignContent(value: Alignment)
 ```
 
-Sets the alignment of child components in the container. When both this attribute and the
-[align](arkts-arkui-commonmethod-c.md#align-1) attribute are set, whichever is set last takes effect. When this attribute and
-the constructor input parameters are set simultaneously, the attribute setting prevails.
+Sets the alignment of child components in the container. When both this attribute and the [align](arkts-arkui-commonmethod-c.md#align-1) attribute are set, whichever is set last takes effect. When this attribute and the constructor input parameters are set simultaneously, the attribute setting prevails.
 
 **Since:** 7
 

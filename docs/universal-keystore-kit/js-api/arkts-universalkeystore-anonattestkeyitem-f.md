@@ -12,13 +12,7 @@ import { huks } from '@kit.UniversalKeystoreKit';
 function anonAttestKeyItem(keyAlias: string, options: HuksOptions, callback: AsyncCallback<HuksReturnResult>): void
 ```
 
-Attests an anonymous key. This API uses an asynchronous callback to return the result.
-
-This operation requires Internet access and takes time. If error code 12000012 is returned, the network is
-abnormal. If the device is not connected to the network, display a message, indicating that the network is not
-connected. If the network is connected, the failure may be caused by network jitter. Try again later.
-
-<!--RP1--><!--RP1End-->
+Attests an anonymous key. This API uses an asynchronous callback to return the result. This operation requires Internet access and takes time. If error code 12000012 is returned, the network is abnormal. If the device is not connected to the network, display a message, indicating that the network is not connected. If the network is connected, the failure may be caused by network jitter. Try again later. > **NOTE** > > Attesting SE security level keys that defined in [HuksKeySecurityLevel](arkts-universalkeystore-hukskeysecuritylevel-e.md) > requires the ohos.permission.ACCESS_SE_KEY permission. <!--RP1--><!--RP1End-->
 
 **Since:** 11
 
@@ -38,6 +32,7 @@ connected. If the network is connected, the failure may be caused by network jit
 
 | Error Code ID | Error Message |
 | --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | The application permissions are insufficient, possibly becausethe ohos.permission.ACCESS_SE_KEY permission is missing.<br>**Applicable version:** 26.0.0 and later |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified.2. Incorrect parameter types.3. Parameter verification failed. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | api is not supported |
 | [12000001](../errorcode-huks.md#12000001-feature-not-supported) | algorithm mode is not supported |
@@ -151,13 +146,7 @@ async function generateKeyThenAttestKey(): Promise<void> {
 function anonAttestKeyItem(keyAlias: string, options: HuksOptions): Promise<HuksReturnResult>
 ```
 
-Attests an anonymous key. This API uses a promise to return the result.
-
-This operation requires Internet access and takes time. If error code 12000012 is returned, the network is
-abnormal. If the device is not connected to the network, display a message, indicating that the network is not
-connected. If the network is connected, the failure may be caused by network jitter. Try again later.
-
-<!--RP1--><!--RP1End-->
+Attests an anonymous key. This API uses a promise to return the result. This operation requires Internet access and takes time. If error code 12000012 is returned, the network is abnormal. If the device is not connected to the network, display a message, indicating that the network is not connected. If the network is connected, the failure may be caused by network jitter. Try again later. > **NOTE** > > Attesting SE security level keys that defined in [HuksKeySecurityLevel](arkts-universalkeystore-hukskeysecuritylevel-e.md) > requires the ohos.permission.ACCESS_SE_KEY permission. <!--RP1--><!--RP1End-->
 
 **Since:** 11
 
@@ -182,6 +171,7 @@ connected. If the network is connected, the failure may be caused by network jit
 
 | Error Code ID | Error Message |
 | --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | The application permissions are insufficient, possibly becausethe ohos.permission.ACCESS_SE_KEY permission is missing.<br>**Applicable version:** 26.0.0 and later |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified.2. Incorrect parameter types.3. Parameter verification failed. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | api is not supported |
 | [12000001](../errorcode-huks.md#12000001-feature-not-supported) | algorithm mode is not supported |

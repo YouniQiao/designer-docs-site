@@ -34,8 +34,7 @@ Number of ads requested. If not set, the business logic prevails.
 adHeight?: number
 ```
 
-Expected creative height when requesting an ad,
-in vp (mandatory for banner ads). If not set, the business logic prevails.
+Expected creative height when requesting an ad, in vp (mandatory for banner ads). If not set, the business logic prevails.
 
 **Type:** number
 
@@ -51,9 +50,7 @@ in vp (mandatory for banner ads). If not set, the business logic prevails.
 adId: string
 ```
 
-Ad slot ID.
-
-Note: The getAdRequestBody API can omit this parameter.
+Ad slot ID. Note: The getAdRequestBody API can omit this parameter.
 
 **Type:** string
 
@@ -69,9 +66,7 @@ Note: The getAdRequestBody API can omit this parameter.
 adSearchKeyword?: string
 ```
 
-Ad keyword. Defaults to "" if not set.
-
-Note: Not supported for use currently.
+Ad keyword. Defaults to "" if not set. Note: Not supported for use currently.
 
 **Type:** string
 
@@ -87,16 +82,7 @@ Note: Not supported for use currently.
 adType?: number
 ```
 
-Requested ad type.
-
-- 1: Splash ad.
-- 3: Native ad.
-- 7: Rewarded ad.
-- 8: Banner ad.
-- 12: Interstitial ad
-- 60: Roll ad.
-
-If not set, the default is the native ad type.
+Requested ad type. - 1: Splash ad. - 3: Native ad. - 7: Rewarded ad. - 8: Banner ad. - 12: Interstitial ad - 60: Roll ad. If not set, the default is the native ad type.
 
 **Type:** number
 
@@ -112,8 +98,7 @@ If not set, the default is the native ad type.
 adWidth?: number
 ```
 
-Expected creative width when requesting an ad, in vp (mandatory for banner ads).
-If not set, the business logic prevails.
+Expected creative width when requesting an ad, in vp (mandatory for banner ads). If not set, the business logic prevails.
 
 **Type:** number
 
@@ -129,9 +114,7 @@ If not set, the business logic prevails.
 [key: string]: number | boolean | string | undefined
 ```
 
-Custom parameter.
-
-<!--RP2--><!--RP2End-->
+Custom parameter. <!--RP2--><!--RP2End-->
 
 **Type:** number | boolean | string | undefined
 

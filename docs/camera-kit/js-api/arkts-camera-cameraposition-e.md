@@ -54,9 +54,7 @@ Front camera.
 CAMERA_POSITION_FOLD_INNER = 3
 ```
 
-Folded camera.
-
-This API is supported since API version 11 and deprecated since API version 12.
+Folded camera. This API is supported since API version 11 and deprecated since API version 12.
 
 **Since:** 11
 

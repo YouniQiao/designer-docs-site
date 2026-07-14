@@ -12,10 +12,7 @@ import { wifiManager } from '@kit.ConnectivityKit';
 function addCandidateConfig(config: WifiDeviceConfig): Promise<number>
 ```
 
-Add a specified candidate hotspot configuration and returns the networkId.
-This method adds one configuration at a time. After this configuration is added,
-your device will determine whether to connect to the hotspot.
-The app must be in the foreground.
+Add a specified candidate hotspot configuration and returns the networkId. This method adds one configuration at a time. After this configuration is added, your device will determine whether to connect to the hotspot. The app must be in the foreground.
 
 **Since:** 12
 
@@ -75,10 +72,7 @@ The app must be in the foreground.
 function addCandidateConfig(config: WifiDeviceConfig, callback: AsyncCallback<number>): void
 ```
 
-Add a specified candidate hotspot configuration and returns the networkId.
-This method adds one configuration at a time. After this configuration is added,
-your device will determine whether to connect to the hotspot.
-The app must be in the foreground.
+Add a specified candidate hotspot configuration and returns the networkId. This method adds one configuration at a time. After this configuration is added, your device will determine whether to connect to the hotspot. The app must be in the foreground.
 
 **Since:** 12
 

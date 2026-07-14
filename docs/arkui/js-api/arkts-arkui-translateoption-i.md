@@ -18,13 +18,7 @@ import { matrix4 } from '@kit.ArkUI';
 x?: number
 ```
 
-Translation distance along the x-axis.
-
-Unit: px
-
-Default value: **0**
-
-Value range: (-∞, +∞)
+Translation distance along the x-axis. Unit: px Default value: **0** Value range: (-∞, +∞)
 
 **Type:** number
 
@@ -40,13 +34,7 @@ Value range: (-∞, +∞)
 y?: number
 ```
 
-Translation distance along the y-axis.
-
-Unit: px
-
-Default value: **0**
-
-Value range: (-∞, +∞)
+Translation distance along the y-axis. Unit: px Default value: **0** Value range: (-∞, +∞)
 
 **Type:** number
 
@@ -62,13 +50,7 @@ Value range: (-∞, +∞)
 z?: number
 ```
 
-Translation distance along the z-axis.
-
-Unit: px
-
-Default value: **0**
-
-Value range: (-∞, +∞)
+Translation distance along the z-axis. Unit: px Default value: **0** Value range: (-∞, +∞)
 
 **Type:** number
 

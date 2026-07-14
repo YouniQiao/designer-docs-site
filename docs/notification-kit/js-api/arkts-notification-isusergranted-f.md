@@ -12,8 +12,7 @@ import { notificationExtensionSubscription } from '@kit.NotificationKit';
 function isUserGranted(): Promise<boolean>
 ```
 
-Checks whether the **Allow access to notifications on this device** switch is toggled on. This API uses a promise
-to return the result.
+Checks whether the **Allow access to notifications on this device** switch is toggled on. This API uses a promise to return the result.
 
 **Since:** 22
 

@@ -1,7 +1,6 @@
 # Component3D
 
-定义Component3D. 
-
+定义Component3D.
 
 ## Component3D
 

@@ -12,8 +12,7 @@ Radio button information.
 group: string
 ```
 
-Name of the group to which the radio button belongs. Only one radio button in a given group can be selected at a
-time.
+Name of the group to which the radio button belongs. Only one radio button in a given group can be selected at a time.
 
 **Type:** string
 
@@ -31,9 +30,7 @@ time.
 indicatorBuilder?: CustomBuilder
 ```
 
-Custom component to indicate that the radio button is selected. This custom component is center aligned with the
-radio button. If this parameter is set to **undefined**, the value of **RadioIndicatorType.TICK** is used as the
-indicator type.
+Custom component to indicate that the radio button is selected. This custom component is center aligned with the radio button. If this parameter is set to **undefined**, the value of **RadioIndicatorType.TICK** is used as the indicator type.
 
 **Type:** CustomBuilder
 

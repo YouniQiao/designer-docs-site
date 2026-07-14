@@ -12,9 +12,7 @@ import { certificateManagerDialog } from '@kit.DeviceCertificateKit';
 function openCertificateManagerDialog(context: common.Context, pageType: CertificateDialogPageType): Promise<void>
 ```
 
-Opens the certificate management dialog box and displays the page of the specified type. After the interface is
-invoked successfully, you can view, install, and uninstall the certificate in the dialog box that is displayed.
-This API uses a promise to return the result.
+Opens the certificate management dialog box and displays the page of the specified type. After the interface is invoked successfully, you can view, install, and uninstall the certificate in the dialog box that is displayed. This API uses a promise to return the result.
 
 **Since:** 13
 

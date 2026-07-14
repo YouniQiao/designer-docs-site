@@ -1,12 +1,6 @@
 # LongPressGestureInterface
 
-**LongPressGesture** is used to trigger a long press gesture. This gesture requires one or more fingers to be held
-down for a specified duration, which is 500 ms by default and can be adjusted using the **duration** parameter.
-
-> **NOTE**
->
-> Since API version 18, on some devices, the system's two-finger long press gesture may take precedence, causing
-> the application's two-finger long press gesture to be ineffective.
+**LongPressGesture** is used to trigger a long press gesture. This gesture requires one or more fingers to be held down for a specified duration, which is 500 ms by default and can be adjusted using the **duration** parameter. > **NOTE** > > Since API version 18, on some devices, the system's two-finger long press gesture may take precedence, causing > the application's two-finger long press gesture to be ineffective.
 
 **Inheritance/Implementation:** LongPressGestureInterface extends [GestureInterface<LongPressGestureInterface>](GestureInterface<LongPressGestureInterface>)
 
@@ -20,17 +14,7 @@ down for a specified duration, which is 500 ms by default and can be adjusted us
 (value?: { fingers?: number; repeat?: boolean; duration?: number }): LongPressGestureInterface
 ```
 
-Creates a long press gesture. Inherits from [GestureInterface<T>](arkts-arkui-gestureinterface-i.md).
-
-In components that support drag actions by default, such as **Text**, **TextInput**, **TextArea**, **HyperLink**,
-**Image**, and **RichEditor**, the long press gesture may conflict with the drag action. If this occurs, the event
-priority is determined as follows:
-
-If the long press duration is less than 500 milliseconds, the system prioritizes the long press event over the
-drag event.
-
-If the long press duration reaches or exceeds 500 milliseconds, the system prioritizes the drag event over the
-long press event.
+Creates a long press gesture. Inherits from [GestureInterface<T>](arkts-arkui-gestureinterface-i.md). In components that support drag actions by default, such as **Text**, **TextInput**, **TextArea**, **HyperLink**, **Image**, and **RichEditor**, the long press gesture may conflict with the drag action. If this occurs, the event priority is determined as follows: If the long press duration is less than 500 milliseconds, the system prioritizes the long press event over the drag event. If the long press duration reaches or exceeds 500 milliseconds, the system prioritizes the drag event over the long press event.
 
 **Since:** 7
 
@@ -56,19 +40,7 @@ long press event.
 (options?: LongPressGestureHandlerOptions): LongPressGestureInterface
 ```
 
-Creates a long press gesture. Compared with [LongPressGesture](LongPressGestureInterface(value?: { fingers?: number; repeat?: boolean; duration?: number ))},
-this API adds the **isFingerCountLimited** parameter to **options**, which determines whether to enforce the exact
-number of fingers touching the screen.
-
-In components that support drag actions by default, such as **Text**, **TextInput**, **TextArea**, **HyperLink**,
-**Image**, and **RichEditor**, the long press gesture may conflict with the drag action. If this occurs, the event
-priority is determined as follows:
-
-If the long press duration is less than 500 milliseconds, the system prioritizes the long press event over the
-drag event.
-
-If the long press duration reaches or exceeds 500 milliseconds, the system prioritizes the drag event over the
-long press event.
+Creates a long press gesture. Compared with [LongPressGesture](LongPressGestureInterface(value?: { fingers?: number; repeat?: boolean; duration?: number ))}, this API adds the **isFingerCountLimited** parameter to **options**, which determines whether to enforce the exact number of fingers touching the screen. In components that support drag actions by default, such as **Text**, **TextInput**, **TextArea**, **HyperLink**, **Image**, and **RichEditor**, the long press gesture may conflict with the drag action. If this occurs, the event priority is determined as follows: If the long press duration is less than 500 milliseconds, the system prioritizes the long press event over the drag event. If the long press duration reaches or exceeds 500 milliseconds, the system prioritizes the drag event over the long press event.
 
 **Since:** 15
 
@@ -122,8 +94,7 @@ Registers the callback for successful long press gesture recognition.
 onActionCancel(event: () => void): LongPressGestureInterface
 ```
 
-Registers the callback for long press gesture cancellation. This callback is triggered when a touch cancellation
-event occurs after successful long press gesture recognition. No gesture event information is returned.
+Registers the callback for long press gesture cancellation. This callback is triggered when a touch cancellation event occurs after successful long press gesture recognition. No gesture event information is returned.
 
 **Since:** 7
 
@@ -149,8 +120,7 @@ event occurs after successful long press gesture recognition. No gesture event i
 onActionCancel(event: Callback<GestureEvent>): LongPressGestureInterface
 ```
 
-Registers the callback for long press gesture cancellation. This callback is triggered when a touch cancellation
-event occurs after successful long press gesture recognition. Gesture event information is returned.
+Registers the callback for long press gesture cancellation. This callback is triggered when a touch cancellation event occurs after successful long press gesture recognition. Gesture event information is returned.
 
 **Since:** 18
 
@@ -178,8 +148,7 @@ event occurs after successful long press gesture recognition. Gesture event info
 onActionEnd(event: (event: GestureEvent) => void): LongPressGestureInterface
 ```
 
-Registers the callback for long press gesture completion. This callback is triggered when all fingers are lifted
-after successful recognition.
+Registers the callback for long press gesture completion. This callback is triggered when all fingers are lifted after successful recognition.
 
 **Since:** 7
 

@@ -28,8 +28,7 @@ align?: TextAlign
 autoSpace?: boolean
 ```
 
-设置文本排版时是否使能自动间距。true表示使能自动间距，则会在文本排版时自动调整CJK（中文字符、日文字符、韩文字符）与西文（拉丁字母、西里尔字母、希腊字母）、CJK与数字、CJK与版权符号、版权符号与数字、版权符号与西文之
-间的间距。false表示不使能自动间距，默认值为false。
+设置文本排版时是否使能自动间距。true表示使能自动间距，则会在文本排版时自动调整CJK（中文字符、日文字符、韩文字符）与西文（拉丁字母、西里尔字母、希腊字母）、CJK与数字、CJK与版权符号、版权符号与数字、版权符号与西文之 间的间距。false表示不使能自动间距，默认值为false。
 
 **类型：** boolean
 
@@ -61,27 +60,7 @@ breakStrategy?: BreakStrategy
 compressHeadPunctuation?: boolean
 ```
 
-设置文本排版时是否使能行首标点压缩。true表示使能行首标点压缩，false表示不使能行首标点压缩，默认值为false。
-
-**说明：**
-
-1. 需要字体文件支持[FontFeature](arkts-arkgraphics2d-fontfeature-i.md)中的"ss08"特性，否则无法压缩。
-2. 在行首标点压缩范围内的标点才在本特性作用范围内。
-行首压缩的标点范围:
-| 标点 | Unicode码位 | Unicode名称 |
-|---------|---------|-------------|
-| 「 | U+300C | LEFT CORNER BRACKET |
-| 『 | U+300E | LEFT WHITE CORNER BRACKET |
-| " | U+201C | LEFT DOUBLE QUOTATION MARK |
-| ' | U+2018 | LEFT SINGLE QUOTATION MARK |
-| （ | U+FF08 | FULLWIDTH LEFT PARENTHESIS |
-| 《 | U+300A | LEFT DOUBLE ANGLE BRACKET |
-| 〈 | U+3008 | LEFT ANGLE BRACKET |
-| 【 | U+3010 | LEFT BLACK LENTICULAR BRACKET |
-| 〖 | U+3016 | LEFT WHITE LENTICULAR BRACKET |
-| 〔 | U+3014 | LEFT TORTOISE SHELL BRACKET |
-| ［ | U+FF3B | FULLWIDTH LEFT SQUARE BRACKET |
-| ｛ | U+FF5B | FULLWIDTH LEFT CURLY BRACKET |
+设置文本排版时是否使能行首标点压缩。true表示使能行首标点压缩，false表示不使能行首标点压缩，默认值为false。 **说明：** 1. 需要字体文件支持[FontFeature](arkts-arkgraphics2d-fontfeature-i.md)中的"ss08"特性，否则无法压缩。 2. 在行首标点压缩范围内的标点才在本特性作用范围内。 行首压缩的标点范围: | 标点 | Unicode码位 | Unicode名称 | |---------|---------|-------------| | 「 | U+300C | LEFT CORNER BRACKET | | 『 | U+300E | LEFT WHITE CORNER BRACKET | | " | U+201C | LEFT DOUBLE QUOTATION MARK | | ' | U+2018 | LEFT SINGLE QUOTATION MARK | | （ | U+FF08 | FULLWIDTH LEFT PARENTHESIS | | 《 | U+300A | LEFT DOUBLE ANGLE BRACKET | | 〈 | U+3008 | LEFT ANGLE BRACKET | | 【 | U+3010 | LEFT BLACK LENTICULAR BRACKET | | 〖 | U+3016 | LEFT WHITE LENTICULAR BRACKET | | 〔 | U+3014 | LEFT TORTOISE SHELL BRACKET | | ［ | U+FF3B | FULLWIDTH LEFT SQUARE BRACKET | | ｛ | U+FF5B | FULLWIDTH LEFT CURLY BRACKET |
 
 **类型：** boolean
 
@@ -165,8 +144,7 @@ includeFontPadding?: boolean
 lineSpacing?: number
 ```
 
-行间距，单位为物理像素px，默认值为0。lineSpacing不受[TextStyle](arkts-arkgraphics2d-textstyle-i.md)中lineHeightMaximum和lineHeightMinimum限制。尾行默认保留行间
-距，可通过设置[TextStyle](arkts-arkgraphics2d-textstyle-i.md).textHeightBehavior为DISABLE_ALL或DISABLE_LAST_ASCENT禁用尾行行间距。
+行间距，单位为物理像素px，默认值为0。lineSpacing不受[TextStyle](arkts-arkgraphics2d-textstyle-i.md)中lineHeightMaximum和lineHeightMinimum限制。尾行默认保留行间 距，可通过设置[TextStyle](arkts-arkgraphics2d-textstyle-i.md).textHeightBehavior为DISABLE_ALL或DISABLE_LAST_ASCENT禁用尾行行间距。
 
 **类型：** number
 
@@ -198,9 +176,7 @@ maxLines?: number
 orphanCharOptimization?: boolean
 ```
 
-设置文本排版时是否使能孤字优化。孤字优化通过更高效地处理孤立字符（段落尾行首字符）来改善文本布局。使能后，它会调整换行点以尽可能避免孤立字符。孤字优化特性需在[wordBreak](arkts-arkgraphics2d-wordbreak-e.md)为
-非BREAK_ALL并且待排版文本首个[TextStyle](arkts-arkgraphics2d-textstyle-i.md)的[locale](arkts-arkgraphics2d-textstyle-i.md)为“zh-Hans”或“zh-Hant”时生效。true表示
-使能孤字优化，false表示不使能孤字优化，默认值为false。
+设置文本排版时是否使能孤字优化。孤字优化通过更高效地处理孤立字符（段落尾行首字符）来改善文本布局。使能后，它会调整换行点以尽可能避免孤立字符。孤字优化特性需在[wordBreak](arkts-arkgraphics2d-wordbreak-e.md)为 非BREAK_ALL并且待排版文本首个[TextStyle](arkts-arkgraphics2d-textstyle-i.md)的[locale](arkts-arkgraphics2d-textstyle-i.md)为“zh-Hans”或“zh-Hant”时生效。true表示 使能孤字优化，false表示不使能孤字优化，默认值为false。
 
 **类型：** boolean
 
@@ -252,8 +228,7 @@ strutStyle?: StrutStyle
 tab?: TextTab
 ```
 
-表示段落中文本制表符后的文本对齐方式及位置，默认将制表符替换为一个空格。此参数与文本对齐方式（align属性）或省略号样式（[TextStyle](arkts-arkgraphics2d-textstyle-i.md)中的ellipsis属性）共同配置时
-无效。
+表示段落中文本制表符后的文本对齐方式及位置，默认将制表符替换为一个空格。此参数与文本对齐方式（align属性）或省略号样式（[TextStyle](arkts-arkgraphics2d-textstyle-i.md)中的ellipsis属性）共同配置时 无效。
 
 **类型：** TextTab
 
@@ -351,8 +326,7 @@ trailingSpaceOptimized?: boolean
 verticalAlign?: TextVerticalAlign
 ```
 
-文本垂直对齐方式，开启行高缩放（即设置[TextStyle](arkts-arkgraphics2d-textstyle-i.md)的heightScale）或行内不同字号（即设置[TextStyle](arkts-arkgraphics2d-textstyle-i.md)的
-fontSize）文本混排时生效。若行内有上下标文本（即设置[TextStyle](arkts-arkgraphics2d-textstyle-i.md)的badgeType属性文本），上下标文本将与普通文本一样参与垂直对齐。
+文本垂直对齐方式，开启行高缩放（即设置[TextStyle](arkts-arkgraphics2d-textstyle-i.md)的heightScale）或行内不同字号（即设置[TextStyle](arkts-arkgraphics2d-textstyle-i.md)的 fontSize）文本混排时生效。若行内有上下标文本（即设置[TextStyle](arkts-arkgraphics2d-textstyle-i.md)的badgeType属性文本），上下标文本将与普通文本一样参与垂直对齐。
 
 **类型：** TextVerticalAlign
 

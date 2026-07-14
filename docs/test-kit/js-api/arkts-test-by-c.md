@@ -1,19 +1,6 @@
 # By
 
-The UiTest framework provides a wide range of UI component feature description APIs in the **By** class to filter and
-match components.
-
-The APIs provided by the **By** class exhibit the following features:
-
-1. Allow one or more attributes as the match conditions.
-For example, you can specify both the **text** and **id** attributes to find the target component.
-2. Provide multiple match patterns for component attributes.
-3. Support absolute positioning and relative positioning for components.
-APIs such as [By.isBefore<sup>(deprecated)</sup>](arkts-test-by-c.md#isbefore-1) and [By.isAfter<sup>(deprecated)</sup>](arkts-test-by-c.md#isafter-1)
-can be used to specify the features of adjacent components to assist positioning.
-
-All APIs provided in the **By** class are synchronous. You are advised to use the static constructor **BY** to create
-a **By** object in chain mode.
+The UiTest framework provides a wide range of UI component feature description APIs in the **By** class to filter and match components. The APIs provided by the **By** class exhibit the following features: 1. Allow one or more attributes as the match conditions. For example, you can specify both the **text** and **id** attributes to find the target component. 2. Provide multiple match patterns for component attributes. 3. Support absolute positioning and relative positioning for components. APIs such as [By.isBefore<sup>(deprecated)</sup>](arkts-test-by-c.md#isbefore-1) and [By.isAfter<sup>(deprecated)</sup>](arkts-test-by-c.md#isafter-1) can be used to specify the features of adjacent components to assist positioning. All APIs provided in the **By** class are synchronous. You are advised to use the static constructor **BY** to create a **By** object in chain mode.
 
 **Since:** 8
 

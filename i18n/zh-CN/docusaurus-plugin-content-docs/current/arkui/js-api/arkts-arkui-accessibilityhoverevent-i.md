@@ -68,11 +68,7 @@ globalDisplayX?: number
 globalDisplayY?: number
 ```
 
-鼠标位置在[全局坐标系](../../../../windowmanager/window-terminology.md#全局坐标系)中的Y坐标。
-
-单位：vp
-
-取值范围：[0, +∞)
+鼠标位置在[全局坐标系](../../../../windowmanager/window-terminology.md#全局坐标系)中的Y坐标。 单位：vp 取值范围：[0, +∞)
 
 **类型：** number
 

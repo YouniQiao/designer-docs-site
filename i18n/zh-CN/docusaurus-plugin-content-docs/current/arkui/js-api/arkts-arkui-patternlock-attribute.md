@@ -1,8 +1,6 @@
 # PatternLock属性/事件
 
-除支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持以下属性。
-
-除支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持以下事件。
+除支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持以下属性。 除支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持以下事件。
 
 **继承/实现关系：** PatternLockAttribute extends [CommonMethod<PatternLockAttribute>](CommonMethod<PatternLockAttribute>)
 
@@ -78,11 +76,7 @@ autoReset(value: boolean)
 backgroundColor(value: ResourceColor)
 ```
 
-设置背景颜色。
-
-> **说明：**
->
-> 从API version 20开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+设置背景颜色。 > **说明：** > > 从API version 20开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 9
 
@@ -122,13 +116,7 @@ circleRadius(value: Length)
 onDotConnect(callback: import('../api/@ohos.base').Callback<number>)
 ```
 
-密码输入选中宫格圆点时触发该回调。
-
-回调参数为选中宫格圆点顺序的数字，数字为选中宫格圆点的索引值（第一行圆点从左往右依次为0、1、2，第二行圆点从左往右依次为3、4、5，第三行圆点从左往右依次为6、7、8）。
-
-> **说明：**
->
-> 从API version 20开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+密码输入选中宫格圆点时触发该回调。 回调参数为选中宫格圆点顺序的数字，数字为选中宫格圆点的索引值（第一行圆点从左往右依次为0、1、2，第二行圆点从左往右依次为3、4、5，第三行圆点从左往右依次为6、7、8）。 > **说明：** > > 从API version 20开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 11
 
@@ -250,11 +238,7 @@ selectedColor(value: ResourceColor)
 sideLength(value: Length)
 ```
 
-设置组件的宽度和高度（宽高相同）。当设置为0或负数时，组件不显示。
-
-> **说明：**
->
-> PatternLock组件设置了通用属性宽高比[aspectRatio](arkts-arkui-commonmethod-c.md#aspectratio-1)，且不等于1时（组件尺寸被设定为长方形），九宫格依然绘制为正方形（超出组件范围）。
+设置组件的宽度和高度（宽高相同）。当设置为0或负数时，组件不显示。 > **说明：** > > PatternLock组件设置了通用属性宽高比[aspectRatio](arkts-arkui-commonmethod-c.md#aspectratio-1)，且不等于1时（组件尺寸被设定为长方形），九宫格依然绘制为正方形（超出组件范围）。
 
 **起始版本：** 9
 

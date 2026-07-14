@@ -20,11 +20,7 @@ import { DistributedExtensionContext } from '@kit.DistributedServiceKit';
 connectServiceExtensionAbility(want: Want, options: ConnectOptions): number
 ```
 
-Connects to a remote Service extension ability.
-
-This method connects to a Service extension ability on a remote device.
-You must implement the {@link ConnectOptions} interface to obtain the proxy of the target
-service extension when connected.
+Connects to a remote Service extension ability. This method connects to a Service extension ability on a remote device. You must implement the {@link ConnectOptions} interface to obtain the proxy of the target service extension when connected.
 
 **Since:** 26.0.0
 

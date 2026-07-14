@@ -1,6 +1,6 @@
 # ImageVideoKey (System API)
 
-Describes Image, Video TYPE FetchOptions's predicate
+Defines the key information about an image or video file.
 
 **Since:** 9
 
@@ -18,7 +18,7 @@ Describes Image, Video TYPE FetchOptions's predicate
 URI
 ```
 
-File uri, read only
+URI of the file.
 
 **Since:** 9
 
@@ -36,7 +36,7 @@ File uri, read only
 FILE_TYPE
 ```
 
-File type of the Asset, read only
+Type of the file.
 
 **Since:** 9
 
@@ -54,7 +54,7 @@ File type of the Asset, read only
 DISPLAY_NAME
 ```
 
-File name
+File name displayed.
 
 **Since:** 9
 
@@ -72,7 +72,7 @@ File name
 DATE_ADDED
 ```
 
-Date of the file creation, read only
+Date when the file was added. The value is the number of seconds elapsed since the Epoch time (00:00:00 UTC on January 1, 1970).
 
 **Since:** 9
 
@@ -90,7 +90,7 @@ Date of the file creation, read only
 DATE_MODIFIED
 ```
 
-Modify date of the file, read only
+Date when the file content (not the file name) was last modified. The value is the number of seconds elapsed since the Epoch time (00:00:00 UTC on January 1, 1970).
 
 **Since:** 9
 
@@ -108,7 +108,7 @@ Modify date of the file, read only
 TITLE
 ```
 
-Title of the file, read only
+Title of the file.
 
 **Since:** 9
 
@@ -126,7 +126,7 @@ Title of the file, read only
 DURATION
 ```
 
-Duration of the audio and video file, read only
+Duration, in ms.
 
 **Since:** 9
 
@@ -144,7 +144,7 @@ Duration of the audio and video file, read only
 WIDTH
 ```
 
-Width of the image file, read only
+Image width, in pixels.
 
 **Since:** 9
 
@@ -162,7 +162,7 @@ Width of the image file, read only
 HEIGHT
 ```
 
-Height of the image file, read only
+Image height, in pixels.
 
 **Since:** 9
 
@@ -180,7 +180,7 @@ Height of the image file, read only
 DATE_TAKEN
 ```
 
-Date taken of the file, read only
+Date when the file (photo) was taken. The value is the number of seconds elapsed since the Epoch time (00:00:00 UTC on January 1, 1970).
 
 **Since:** 9
 
@@ -198,7 +198,7 @@ Date taken of the file, read only
 ORIENTATION
 ```
 
-Orientation of the image file, read only
+Orientation of the image file.
 
 **Since:** 9
 
@@ -216,7 +216,7 @@ Orientation of the image file, read only
 FAVORITE
 ```
 
-Favorite state of the file, read only
+Whether the file is added to favorites.
 
 **Since:** 9
 
@@ -234,13 +234,13 @@ Favorite state of the file, read only
 POSITION
 ```
 
-File position, read only
+File location type.
 
 **Since:** 10
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [POSITION](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photokeys-e.md#position)
+**Substitutes:** [POSITION](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photokeys-e-sys.md#position)
 
 **System capability:** SystemCapability.FileManagement.UserFileManager.Core
 
@@ -252,7 +252,7 @@ File position, read only
 DATE_TRASHED
 ```
 
-Trashed date of the file, read only
+Date when the file was deleted. The value is the number of seconds elapsed since the Epoch time (00:00:00 UTC on January 1, 1970).
 
 **Since:** 10
 
@@ -270,7 +270,7 @@ Trashed date of the file, read only
 HIDDEN
 ```
 
-Hidden state of the file, read only
+Whether the file is hidden.
 
 **Since:** 10
 
@@ -288,7 +288,7 @@ Hidden state of the file, read only
 USER_COMMENT
 ```
 
-User comment info
+User comment information.
 
 **Since:** 10
 
@@ -306,7 +306,7 @@ User comment info
 CAMERA_SHOT_KEY
 ```
 
-Camera shot key
+Key for the Ultra Snapshot feature. This parameter is available only for the system camera, and the key value is defined by the system camera.
 
 **Since:** 10
 

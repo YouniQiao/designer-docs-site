@@ -10,8 +10,7 @@ function construct<A extends readonly any[], R>(
     ): R
 ```
 
-Constructs the target with the elements of specified array as the arguments
-and the specified constructor as the `new.target` value.
+Constructs the target with the elements of specified array as the arguments and the specified constructor as the `new.target` value.
 
 **Parameters:**
 

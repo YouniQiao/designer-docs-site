@@ -12,9 +12,7 @@ Describes the command for drawing a path.
 commands: string
 ```
 
-Commands for drawing a path. For details about how to convert pixel units, see [Pixel Units](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md).
-
-Unit: px
+Commands for drawing a path. For details about how to convert pixel units, see [Pixel Units](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md). Unit: px
 
 **Type:** string
 

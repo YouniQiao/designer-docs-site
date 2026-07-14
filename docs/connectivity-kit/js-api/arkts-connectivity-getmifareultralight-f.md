@@ -12,9 +12,7 @@ import { tag } from '@kit.ConnectivityKit';
 function getMifareUltralight(tagInfo: TagInfo): MifareUltralightTag
 ```
 
-Obtains an {@link MifareUltralightTag} object based on the tag information.
-During tag reading, if the tag supports the MIFARE Ultralight technology,
-an {@link MifareUltralightTag} object will be created based on the tag information.
+Obtains an {@link MifareUltralightTag} object based on the tag information. During tag reading, if the tag supports the MIFARE Ultralight technology, an {@link MifareUltralightTag} object will be created based on the tag information.
 
 **Since:** 12
 

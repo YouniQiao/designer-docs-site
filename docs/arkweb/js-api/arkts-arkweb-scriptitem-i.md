@@ -28,15 +28,7 @@ Sets the JavaScript to be injected.
 scriptRules: Array<string>
 ```
 
-Sets the rules of the JavaScript.
-1. To allow URLs from all sources, use the wildcard (*).
-2. If exact match is required, specify the exact URL, for example, **https://www.example.com**.
-3. For fuzzy match, you can use a wildcard (*) in the website URL, for example, **https://*.example.com**.
-Websites such as "x,*.y.com" and "* foobar.com" are not allowed.
-4. If the source is an IP address, follow rule 2.
-5. For protocols other than HTTP/HTTPS (custom protocols), exact match and fuzzy match are not supported,
-and the protocol must end with **://**, for example, **resource://**.
-6. If one of the preceding rules is not met in **scriptRules**, the **scriptRules** does not take effect.
+Sets the rules of the JavaScript. 1. To allow URLs from all sources, use the wildcard (*). 2. If exact match is required, specify the exact URL, for example, **https://www.example.com**. 3. For fuzzy match, you can use a wildcard (*) in the website URL, for example, **https://*.example.com**. Websites such as "x,*.y.com" and "* foobar.com" are not allowed. 4. If the source is an IP address, follow rule 2. 5. For protocols other than HTTP/HTTPS (custom protocols), exact match and fuzzy match are not supported, and the protocol must end with **://**, for example, **resource://**. 6. If one of the preceding rules is not met in **scriptRules**, the **scriptRules** does not take effect.
 
 **Type:** Array<string>
 

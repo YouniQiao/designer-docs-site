@@ -12,15 +12,7 @@
 applyContent(): WrappedBuilder<[T]>
 ```
 
-定制内容区的Builder。
-
-**T参数支持范围:**
-
-ButtonConfiguration、CheckBoxConfiguration、DataPanelConfiguration、TextClockConfiguration、ToggleConfiguration、GaugeConfiguration、LoadingProgressConfiguration、RadioConfiguration、ProgressConfiguration、RatingConfiguration、SliderConfiguration
-
-**属性支持范围:**
-
-支持通用属性enabled，contentModifier。
+定制内容区的Builder。 **T参数支持范围:** ButtonConfiguration、CheckBoxConfiguration、DataPanelConfiguration、TextClockConfiguration、ToggleConfiguration、GaugeConfiguration、LoadingProgressConfiguration、RadioConfiguration、ProgressConfiguration、RatingConfiguration、SliderConfiguration **属性支持范围:** 支持通用属性enabled，contentModifier。
 
 **起始版本：** 12
 

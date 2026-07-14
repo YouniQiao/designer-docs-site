@@ -20,10 +20,7 @@ import { distributedDeviceManager } from '@kit.DistributedServiceKit';
 onlineStatus : number
 ```
 
-Device online status.
-
-- **0**: The device is offline.
-- **1**: The device is online.
+Device online status. - **0**: The device is offline. - **1**: The device is online.
 
 **Type:** number
 

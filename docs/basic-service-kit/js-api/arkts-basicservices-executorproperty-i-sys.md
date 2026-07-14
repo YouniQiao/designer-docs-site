@@ -36,8 +36,7 @@ Authentication credential subtype.
 credentialLength?: number
 ```
 
-Credential length, which is **undefined** by default. When credentials with indefinite-length attributes such as
-biometric information are queried, **undefined** is returned.
+Credential length, which is **undefined** by default. When credentials with indefinite-length attributes such as biometric information are queried, **undefined** is returned.
 
 **Type:** number
 

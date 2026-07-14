@@ -12,9 +12,7 @@ import { adminManager } from '@kit.MDMKit';
 function enableDeviceAdmin(admin: Want): Promise<void>
 ```
 
-Allows a [super device administrator application](../../../../mdm/mdm-kit-term.md#sda) to enable other
-[device administrator applications](../../../../mdm/mdm-kit-term.md#da). This API uses a promise to return the
-result. This API can be called only by super device administrator applications.
+Allows a [super device administrator application](../../../../mdm/mdm-kit-term.md#sda) to enable other [device administrator applications](../../../../mdm/mdm-kit-term.md#da). This API uses a promise to return the result. This API can be called only by super device administrator applications.
 
 **Since:** 23
 

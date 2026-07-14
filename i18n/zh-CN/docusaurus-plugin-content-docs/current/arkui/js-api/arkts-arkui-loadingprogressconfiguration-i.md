@@ -14,9 +14,7 @@
 enableLoading: boolean
 ```
 
-LoadingProgress动画是否显示。
-
-默认值：true，true表示显示LoadingProgress动画，false表示不显示LoadingProgress动画。
+LoadingProgress动画是否显示。 默认值：true，true表示显示LoadingProgress动画，false表示不显示LoadingProgress动画。
 
 **类型：** boolean
 

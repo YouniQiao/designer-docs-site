@@ -54,11 +54,7 @@ Name of the system font.
 italic: boolean
 ```
 
-Whether the system font is italic.
-
-Default value: **false**
-
-**true**: The system font is italic. **false**: The system font is not italic.
+Whether the system font is italic. Default value: **false** **true**: The system font is italic. **false**: The system font is not italic.
 
 **Type:** boolean
 
@@ -76,11 +72,7 @@ Default value: **false**
 monoSpace: boolean
 ```
 
-Whether the system font is monospaced.
-
-Default value: **false**
-
-**true**: The system font is monospaced. **false**: The system font is not monospaced.
+Whether the system font is monospaced. Default value: **false** **true**: The system font is monospaced. **false**: The system font is not monospaced.
 
 **Type:** boolean
 
@@ -152,11 +144,7 @@ Subfamily of the system font.
 symbolic: boolean
 ```
 
-Whether the system font supports symbols.
-
-Default value: **false**
-
-**true**: The system font supports symbols. **false**: The system font does not support symbols.
+Whether the system font supports symbols. Default value: **false** **true**: The system font supports symbols. **false**: The system font does not support symbols.
 
 **Type:** boolean
 
@@ -174,12 +162,7 @@ Default value: **false**
 weight: number
 ```
 
-Weight of the system font.
-
-Value range: [100, 900], with intervals of 100, corresponding to the values in the
-[FontWeight](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-fontweight-e.md) enum
-
-Default value: **100**
+Weight of the system font. Value range: [100, 900], with intervals of 100, corresponding to the values in the [FontWeight](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-fontweight-e.md) enum Default value: **100**
 
 **Type:** number
 
@@ -197,10 +180,7 @@ Default value: **100**
 width: number
 ```
 
-Width of the system font.
-
-Value range: [1, 9], with intervals of 1, corresponding to the values in the
-[FontWidth](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-fontwidth-e.md) enum
+Width of the system font. Value range: [1, 9], with intervals of 1, corresponding to the values in the [FontWidth](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-fontwidth-e.md) enum
 
 **Type:** number
 

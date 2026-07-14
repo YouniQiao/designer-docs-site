@@ -12,8 +12,7 @@ import { continuationManager } from '@kit.AbilityKit';
 function startContinuationDeviceManager(token: number, callback: AsyncCallback<void>): void
 ```
 
-Starts the device selection module to show the list of available devices on the network. This API does not involve
-any filter parameters and uses an asynchronous callback to return the result.
+Starts the device selection module to show the list of available devices on the network. This API does not involve any filter parameters and uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -74,8 +73,7 @@ function startContinuationDeviceManager(
   ): void
 ```
 
-Starts the device selection module to show the list of available devices on the network. This API uses an
-asynchronous callback to return the result.
+Starts the device selection module to show the list of available devices on the network. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -138,8 +136,7 @@ try {
 function startContinuationDeviceManager(token: number, options?: ContinuationExtraParams): Promise<void>
 ```
 
-Starts the device selection module to show the list of available devices on the network. This API uses a promise to
-return the result.
+Starts the device selection module to show the list of available devices on the network. This API uses a promise to return the result.
 
 **Since:** 9
 

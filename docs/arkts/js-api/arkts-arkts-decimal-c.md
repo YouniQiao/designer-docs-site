@@ -129,8 +129,7 @@ Return a new Decimal whose value is the arccosine in radians of `n`.
 acosh(): Decimal
 ```
 
-Return a new Decimal whose value is the inverse of the hyperbolic cosine in radians of the
-value of this Decimal.
+Return a new Decimal whose value is the inverse of the hyperbolic cosine in radians of the value of this Decimal.
 
 **Since:** 12
 
@@ -156,8 +155,7 @@ value of this Decimal.
 static acosh(n: Value): Decimal
 ```
 
-Return a new Decimal whose value is the inverse of the hyperbolic cosine of `n`, rounded to
-`precision` significant digits using rounding mode `rounding`.
+Return a new Decimal whose value is the inverse of the hyperbolic cosine of `n`, rounded to `precision` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -190,8 +188,7 @@ Return a new Decimal whose value is the inverse of the hyperbolic cosine of `n`,
 add(n: Value): Decimal
 ```
 
-Return a new Decimal whose value is the value of this Decimal plus `n`, rounded to `precision`
-significant digits using rounding mode `rounding`.
+Return a new Decimal whose value is the value of this Decimal plus `n`, rounded to `precision` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -223,8 +220,7 @@ significant digits using rounding mode `rounding`.
 static add(x: Value, y: Value): Decimal
 ```
 
-Return a new Decimal whose value is the sum of `x` and `y`, rounded to `precision` significant
-digits using rounding mode `rounding`.
+Return a new Decimal whose value is the sum of `x` and `y`, rounded to `precision` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -257,8 +253,7 @@ digits using rounding mode `rounding`.
 asin(): Decimal
 ```
 
-Return a new Decimal whose value is the arcsine (inverse sine) in radians of the value of this
-Decimal.
+Return a new Decimal whose value is the arcsine (inverse sine) in radians of the value of this Decimal.
 
 **Since:** 12
 
@@ -284,8 +279,7 @@ Decimal.
 static asin(n: Value): Decimal
 ```
 
-Return a new Decimal whose value is the arcsine in radians of `n`, rounded to `precision`
-significant digits using rounding mode `rounding`.
+Return a new Decimal whose value is the arcsine in radians of `n`, rounded to `precision` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -318,8 +312,7 @@ significant digits using rounding mode `rounding`.
 asinh(): Decimal
 ```
 
-Return a new Decimal whose value is the inverse of the hyperbolic sine in radians of the value
-of this Decimal.
+Return a new Decimal whose value is the inverse of the hyperbolic sine in radians of the value of this Decimal.
 
 **Since:** 12
 
@@ -345,8 +338,7 @@ of this Decimal.
 static asinh(n: Value): Decimal
 ```
 
-Return a new Decimal whose value is the inverse of the hyperbolic sine of `n`, rounded to
-`precision` significant digits using rounding mode `rounding`.
+Return a new Decimal whose value is the inverse of the hyperbolic sine of `n`, rounded to `precision` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -405,8 +397,7 @@ Return a new Decimal whose value is the arctangent (inverse tangent) in radians 
 static atan(n: Value): Decimal
 ```
 
-Return a new Decimal whose value is the arctangent in radians of `n`, rounded to `precision`
-significant digits using rounding mode `rounding`.
+Return a new Decimal whose value is the arctangent in radians of `n`, rounded to `precision` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -439,8 +430,7 @@ significant digits using rounding mode `rounding`.
 static atan2(y: Value, x: Value): Decimal
 ```
 
-Return a new Decimal whose value is the arctangent in radians of `y/x` in the range -pi to pi
-(inclusive), rounded to `precision` significant digits using rounding mode `rounding`.
+Return a new Decimal whose value is the arctangent in radians of `y/x` in the range -pi to pi (inclusive), rounded to `precision` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -474,8 +464,7 @@ Return a new Decimal whose value is the arctangent in radians of `y/x` in the ra
 atanh(): Decimal
 ```
 
-Return a new Decimal whose value is the inverse of the hyperbolic tangent in radians of the
-value of this Decimal.
+Return a new Decimal whose value is the inverse of the hyperbolic tangent in radians of the value of this Decimal.
 
 **Since:** 12
 
@@ -501,8 +490,7 @@ value of this Decimal.
 static atanh(n: Value): Decimal
 ```
 
-Return a new Decimal whose value is the inverse of the hyperbolic tangent of `n`, rounded to
-`precision` significant digits using rounding mode `rounding`.
+Return a new Decimal whose value is the inverse of the hyperbolic tangent of `n`, rounded to `precision` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -535,8 +523,7 @@ Return a new Decimal whose value is the inverse of the hyperbolic tangent of `n`
 cbrt(): Decimal
 ```
 
-Return a new Decimal whose value is the cube root of the value of this Decimal, rounded to
-`precision` significant digits using rounding mode `rounding`.
+Return a new Decimal whose value is the cube root of the value of this Decimal, rounded to `precision` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -556,8 +543,7 @@ Return a new Decimal whose value is the cube root of the value of this Decimal, 
 static cbrt(n: Value): Decimal
 ```
 
-Return a new Decimal whose value is the cube root of `n`, rounded to `precision` significant
-digits using rounding mode `rounding`.
+Return a new Decimal whose value is the cube root of `n`, rounded to `precision` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -589,8 +575,7 @@ digits using rounding mode `rounding`.
 ceil(): Decimal
 ```
 
-Return a new Decimal whose value is the value of this Decimal rounded to a whole number in the
-direction of positive Infinity.
+Return a new Decimal whose value is the value of this Decimal rounded to a whole number in the direction of positive Infinity.
 
 **Since:** 12
 
@@ -642,8 +627,7 @@ Return a new Decimal whose value is `n` rounded to an integer using `ROUND_CEIL`
 clamp(min: Value, max: Value): Decimal
 ```
 
-Return a new Decimal whose value is the value of this Decimal clamped to the range
-delineated by `min` and `max`.
+Return a new Decimal whose value is the value of this Decimal clamped to the range delineated by `min` and `max`.
 
 **Since:** 12
 
@@ -712,11 +696,7 @@ Return a new Decimal whose value is `n` clamped to the range delineated by `min`
 comparedTo(n: Value): number
 ```
 
-Return
-1 if the value of this Decimal is greater than the value of `n`,
--1 if the value of this Decimal is less than the value of `n`,
-0 if they have the same value,
-NaN if the value of either Decimal is NaN.
+Return 1 if the value of this Decimal is greater than the value of `n`, -1 if the value of this Decimal is less than the value of `n`, 0 if they have the same value, NaN if the value of either Decimal is NaN.
 
 **Since:** 12
 
@@ -794,8 +774,7 @@ Return a new Decimal whose value is the cosine of the value in radians of this D
 static cos(n: Value): Decimal
 ```
 
-Return a new Decimal whose value is the cosine of `n`, rounded to `precision` significant
-digits using rounding mode `rounding`
+Return a new Decimal whose value is the cosine of `n`, rounded to `precision` significant digits using rounding mode `rounding`
 
 **Since:** 12
 
@@ -827,8 +806,7 @@ digits using rounding mode `rounding`
 cosh(): Decimal
 ```
 
-Return a new Decimal whose value is the hyperbolic cosine of the value in radians of this
-Decimal.
+Return a new Decimal whose value is the hyperbolic cosine of the value in radians of this Decimal.
 
 **Since:** 12
 
@@ -848,8 +826,7 @@ Decimal.
 static cosh(n: Value): Decimal
 ```
 
-Return a new Decimal whose value is the hyperbolic cosine of `n`, rounded to precision
-significant digits using rounding mode `rounding`.
+Return a new Decimal whose value is the hyperbolic cosine of `n`, rounded to precision significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -901,8 +878,7 @@ Return the number of decimal places of the value of this Decimal.
 div(n: Value): Decimal
 ```
 
-Return a new Decimal whose value is the value of this Decimal divided by `n`, rounded to
-`precision` significant digits using rounding mode `rounding`.
+Return a new Decimal whose value is the value of this Decimal divided by `n`, rounded to `precision` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -934,8 +910,7 @@ Return a new Decimal whose value is the value of this Decimal divided by `n`, ro
 static div(x: Value, y: Value): Decimal
 ```
 
-Return a new Decimal whose value is `x` divided by `y`, rounded to `precision` significant
-digits using rounding mode `rounding`.
+Return a new Decimal whose value is `x` divided by `y`, rounded to `precision` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -968,8 +943,7 @@ digits using rounding mode `rounding`.
 dividedToIntegerBy(n: Value): Decimal
 ```
 
-Return a new Decimal whose value is the integer part of dividing the value of this Decimal
-by the value of `n`, rounded to `precision` significant digits using rounding mode `rounding`.
+Return a new Decimal whose value is the integer part of dividing the value of this Decimal by the value of `n`, rounded to `precision` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -1033,9 +1007,7 @@ Return true if the value of this Decimal is equal to the value of `n`, otherwise
 exp(): Decimal
 ```
 
-Return a new Decimal whose value is the natural exponential of the value of this Decimal,
-i.e. the base e raised to the power the value of this Decimal, rounded to `precision`
-significant digits using rounding mode `rounding`.
+Return a new Decimal whose value is the natural exponential of the value of this Decimal, i.e. the base e raised to the power the value of this Decimal, rounded to `precision` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -1061,8 +1033,7 @@ significant digits using rounding mode `rounding`.
 static exp(n: Value): Decimal
 ```
 
-Return a new Decimal whose value is the natural exponential of `n`, rounded to `precision`
-significant digits using rounding mode `rounding`.
+Return a new Decimal whose value is the natural exponential of `n`, rounded to `precision` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -1095,8 +1066,7 @@ significant digits using rounding mode `rounding`.
 floor(): Decimal
 ```
 
-Return a new Decimal whose value is the value of this Decimal rounded to a whole number in the
-direction of negative Infinity.
+Return a new Decimal whose value is the value of this Decimal rounded to a whole number in the direction of negative Infinity.
 
 **Since:** 12
 
@@ -1180,8 +1150,7 @@ Return true if the value of this Decimal is greater than the value of `n`, other
 greaterThanOrEqualTo(n: Value): boolean
 ```
 
-Return true if the value of this Decimal is greater than or equal to the value of `n`,
-otherwise return false.
+Return true if the value of this Decimal is greater than or equal to the value of `n`, otherwise return false.
 
 **Since:** 12
 
@@ -1213,8 +1182,7 @@ otherwise return false.
 static hypot(...n: Value[]): Decimal
 ```
 
-Return a new Decimal whose value is the square root of the sum of the squares of the arguments,
-rounded to `precision` significant digits using rounding mode `rounding`.
+Return a new Decimal whose value is the square root of the sum of the squares of the arguments, rounded to `precision` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -1430,8 +1398,7 @@ Return true if the value of this Decimal is less than or equal to `n`, otherwise
 ln(): Decimal
 ```
 
-Return a new Decimal whose value is the natural logarithm of the value of this Decimal,
-rounded to `precision` significant digits using rounding mode `rounding`.
+Return a new Decimal whose value is the natural logarithm of the value of this Decimal, rounded to `precision` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -1457,8 +1424,7 @@ rounded to `precision` significant digits using rounding mode `rounding`.
 static ln(n: Value): Decimal
 ```
 
-Return a new Decimal whose value is the natural logarithm of `n`, rounded to `precision`
-significant digits using rounding mode `rounding`.
+Return a new Decimal whose value is the natural logarithm of `n`, rounded to `precision` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -1491,8 +1457,7 @@ significant digits using rounding mode `rounding`.
 log(n: Value): Decimal
 ```
 
-Return the logarithm of the value of this Decimal to the specified base, rounded to `precision`
-significant digits using rounding mode `rounding`.
+Return the logarithm of the value of this Decimal to the specified base, rounded to `precision` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -1525,8 +1490,7 @@ significant digits using rounding mode `rounding`.
 static log(n: Value, base: Value): Decimal
 ```
 
-Return a new Decimal whose value is the log of `n` to the base `base`, rounded to `precision`
-significant digits using rounding mode `rounding`.
+Return a new Decimal whose value is the log of `n` to the base `base`, rounded to `precision` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -1560,8 +1524,7 @@ significant digits using rounding mode `rounding`.
 static log10(n: Value): Decimal
 ```
 
-Return a new Decimal whose value is the base 10 logarithm of `n`, rounded to `precision`
-significant digits using rounding mode `rounding`.
+Return a new Decimal whose value is the base 10 logarithm of `n`, rounded to `precision` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -1594,8 +1557,7 @@ significant digits using rounding mode `rounding`.
 static log2(n: Value): Decimal
 ```
 
-Return a new Decimal whose value is the base 2 logarithm of `n`, rounded to `precision`
-significant digits using rounding mode `rounding`.
+Return a new Decimal whose value is the base 2 logarithm of `n`, rounded to `precision` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -1692,8 +1654,7 @@ Return a new Decimal whose value is the minimum of the arguments.
 mod(n: Value): Decimal
 ```
 
-Return a new Decimal whose value is the value of this Decimal modulo `n`, rounded to
-`precision` significant digits using rounding mode `rounding`.
+Return a new Decimal whose value is the value of this Decimal modulo `n`, rounded to `precision` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -1725,8 +1686,7 @@ Return a new Decimal whose value is the value of this Decimal modulo `n`, rounde
 static mod(x: Value, y: Value): Decimal
 ```
 
-Return a new Decimal whose value is `x` modulo `y`, rounded to `precision` significant digits
-using rounding mode `rounding`.
+Return a new Decimal whose value is `x` modulo `y`, rounded to `precision` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -1759,8 +1719,7 @@ using rounding mode `rounding`.
 mul(n: Value): Decimal
 ```
 
-Return a new Decimal whose value is this Decimal times `n`, rounded to `precision` significant
-digits using rounding mode `rounding`.
+Return a new Decimal whose value is this Decimal times `n`, rounded to `precision` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -1792,8 +1751,7 @@ digits using rounding mode `rounding`.
 static mul(x: Value, y: Value): Decimal
 ```
 
-Return a new Decimal whose value is `x` multiplied by `y`, rounded to `precision` significant
-digits using rounding mode `rounding`.
+Return a new Decimal whose value is `x` multiplied by `y`, rounded to `precision` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -1846,8 +1804,7 @@ Return a new Decimal whose value is the value of this Decimal negated, i.e. as i
 pow(n: Value): Decimal
 ```
 
-Return a new Decimal whose value is the value of this Decimal raised to the power `n`, rounded
-to `precision` significant digits using rounding mode `rounding`.
+Return a new Decimal whose value is the value of this Decimal raised to the power `n`, rounded to `precision` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -1880,8 +1837,7 @@ to `precision` significant digits using rounding mode `rounding`.
 static pow(base: Value, exponent: Value): Decimal
 ```
 
-Return a new Decimal whose value is `base` raised to the power `exponent`, rounded to precision
-significant digits using rounding mode `rounding`.
+Return a new Decimal whose value is `base` raised to the power `exponent`, rounded to precision significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -1935,8 +1891,7 @@ Return the number of significant digits of the value of this Decimal.
 precision(includeZeros: boolean | number): number
 ```
 
-Return the number of significant digits of the value of this Decimal, whether to count
-integer-part trailing zeros.
+Return the number of significant digits of the value of this Decimal, whether to count integer-part trailing zeros.
 
 **Since:** 12
 
@@ -1994,8 +1949,7 @@ Returns a new Decimal with a random value equal to or greater than 0 and less th
 static random(significantDigits: number): Decimal
 ```
 
-Returns a new Decimal with a random value equal to or greater than 0 and less than 1, and with
-`significantDigits` significant digits (or less if trailing zeros are produced).
+Returns a new Decimal with a random value equal to or greater than 0 and less than 1, and with `significantDigits` significant digits (or less if trailing zeros are produced).
 
 **Since:** 12
 
@@ -2088,12 +2042,7 @@ Configures the 'global' settings for this particular Decimal constructor.
 static sign(n: Value): number
 ```
 
-Return the sign of the passed value to the method.
-1 if x > 0,
--1 if x < 0,
-0 if x is 0,
--0 if x is -0,
-NaN otherwise
+Return the sign of the passed value to the method. 1 if x > 0, -1 if x < 0, 0 if x is 0, -0 if x is -0, NaN otherwise
 
 **Since:** 12
 
@@ -2146,8 +2095,7 @@ Return a new Decimal whose value is the sine of the value in radians of this Dec
 static sin(n: Value): Decimal
 ```
 
-Return a new Decimal whose value is the sine of `n`, rounded to `precision` significant digits
-using rounding mode `rounding`.
+Return a new Decimal whose value is the sine of `n`, rounded to `precision` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -2199,8 +2147,7 @@ Return a new Decimal whose value is the hyperbolic sine of the value in radians 
 static sinh(n: Value): Decimal
 ```
 
-Return a new Decimal whose value is the hyperbolic sine of `n`, rounded to `precision`
-significant digits using rounding mode `rounding`.
+Return a new Decimal whose value is the hyperbolic sine of `n`, rounded to `precision` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -2232,8 +2179,7 @@ significant digits using rounding mode `rounding`.
 sqrt(): Decimal
 ```
 
-Return a new Decimal whose value is the square root of this Decimal, rounded to `precision`
-significant digits using rounding mode `rounding`.
+Return a new Decimal whose value is the square root of this Decimal, rounded to `precision` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -2253,8 +2199,7 @@ significant digits using rounding mode `rounding`.
 static sqrt(n: Value): Decimal
 ```
 
-Return a new Decimal whose value is the square root of `n`, rounded to `precision` significant
-digits using rounding mode `rounding`.
+Return a new Decimal whose value is the square root of `n`, rounded to `precision` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -2286,8 +2231,7 @@ digits using rounding mode `rounding`.
 sub(n: Value): Decimal
 ```
 
-Return a new Decimal whose value is the value of this Decimal minus `n`, rounded to `precision`
-significant digits using rounding mode `rounding`.
+Return a new Decimal whose value is the value of this Decimal minus `n`, rounded to `precision` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -2319,8 +2263,7 @@ significant digits using rounding mode `rounding`.
 static sub(x: Value, y: Value): Decimal
 ```
 
-Return a new Decimal whose value is `x` minus `y`, rounded to `precision` significant digits
-using rounding mode `rounding`.
+Return a new Decimal whose value is `x` minus `y`, rounded to `precision` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -2353,10 +2296,7 @@ using rounding mode `rounding`.
 static sum(...n: Value[]): Decimal
 ```
 
-Return a new Decimal whose value is the sum of the arguments, rounded to `precision`
-significant digits using rounding mode `rounding`.
-
-Only the result is rounded, not the intermediate calculations.
+Return a new Decimal whose value is the sum of the arguments, rounded to `precision` significant digits using rounding mode `rounding`. Only the result is rounded, not the intermediate calculations.
 
 **Since:** 12
 
@@ -2408,8 +2348,7 @@ Return a new Decimal whose value is the tangent of the value in radians of this 
 static tan(n: Value): Decimal
 ```
 
-Return a new Decimal whose value is the tangent of `n`, rounded to `precision` significant
-digits using rounding mode `rounding`.
+Return a new Decimal whose value is the tangent of `n`, rounded to `precision` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -2461,8 +2400,7 @@ Return a new Decimal whose value is the hyperbolic tangent of the value in radia
 static tanh(n: Value): Decimal
 ```
 
-Return a new Decimal whose value is the hyperbolic tangent of `n`, rounded to `precision`
-significant digits using rounding mode `rounding`.
+Return a new Decimal whose value is the hyperbolic tangent of `n`, rounded to `precision` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -2514,8 +2452,7 @@ Return a string representing the value of this Decimal in base 2.
 toBinary(significantDigits: number): string
 ```
 
-Return a string representing the value of this Decimal in base 2, round to `significantDigits`
-significant digits.
+Return a string representing the value of this Decimal in base 2, round to `significantDigits` significant digits.
 
 **Since:** 12
 
@@ -2547,8 +2484,7 @@ significant digits.
 toBinary(significantDigits: number, rounding: Rounding): string
 ```
 
-Return a string representing the value of this Decimal in base 2, round to `significantDigits`
-significant digits using rounding mode `rounding`.
+Return a string representing the value of this Decimal in base 2, round to `significantDigits` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -2601,8 +2537,7 @@ Return a new Decimal whose value is the value of this Decimal.
 toDecimalPlaces(decimalPlaces: number): Decimal
 ```
 
-Return a new Decimal whose value is the value of this Decimal rounded to a maximum of `decimalPlaces`
-decimal places.
+Return a new Decimal whose value is the value of this Decimal rounded to a maximum of `decimalPlaces` decimal places.
 
 **Since:** 12
 
@@ -2634,8 +2569,7 @@ decimal places.
 toDecimalPlaces(decimalPlaces: number, rounding: Rounding): Decimal
 ```
 
-Return a new Decimal whose value is the value of this Decimal rounded to a maximum of `decimalPlaces`
-decimal places using rounding mode `rounding`.
+Return a new Decimal whose value is the value of this Decimal rounded to a maximum of `decimalPlaces` decimal places using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -2688,8 +2622,7 @@ Return a string representing the value of this Decimal in exponential notation.
 toExponential(decimalPlaces: number): string
 ```
 
-Return a string representing the value of this Decimal in exponential notation rounded to
-`decimalPlaces` fixed decimal places.
+Return a string representing the value of this Decimal in exponential notation rounded to `decimalPlaces` fixed decimal places.
 
 **Since:** 12
 
@@ -2721,8 +2654,7 @@ Return a string representing the value of this Decimal in exponential notation r
 toExponential(decimalPlaces: number, rounding: Rounding): string
 ```
 
-Return a string representing the value of this Decimal in exponential notation rounded to
-`decimalPlaces` fixed decimal places using rounding mode `rounding`.
+Return a string representing the value of this Decimal in exponential notation rounded to `decimalPlaces` fixed decimal places using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -2775,8 +2707,7 @@ Return a string representing the value of this Decimal in normal (fixed-point).
 toFixed(decimalPlaces: number): string
 ```
 
-Return a string representing the value of this Decimal in normal (fixed-point) notation to
-`decimalPlaces` fixed decimal places.
+Return a string representing the value of this Decimal in normal (fixed-point) notation to `decimalPlaces` fixed decimal places.
 
 **Since:** 12
 
@@ -2809,8 +2740,7 @@ Return a string representing the value of this Decimal in normal (fixed-point) n
 toFixed(decimalPlaces: number, rounding: Rounding): string
 ```
 
-Return a string representing the value of this Decimal in normal (fixed-point) notation to
-`decimalPlaces` fixed decimal places and rounded using rounding mode `rounding`.
+Return a string representing the value of this Decimal in normal (fixed-point) notation to `decimalPlaces` fixed decimal places and rounded using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -2843,8 +2773,7 @@ Return a string representing the value of this Decimal in normal (fixed-point) n
 toFraction(): Decimal[]
 ```
 
-Return an array representing the value of this Decimal as a simple fraction with an integer
-numerator and an integer denominator.
+Return an array representing the value of this Decimal as a simple fraction with an integer numerator and an integer denominator.
 
 **Since:** 12
 
@@ -2864,9 +2793,7 @@ numerator and an integer denominator.
 toFraction(maxDenominator: Value): Decimal[]
 ```
 
-Return an array representing the value of this Decimal as a simple fraction with an integer
-numerator and an integer denominator. The denominator will be a positive non-zero value
-less than or equal to `max_denominator`.
+Return an array representing the value of this Decimal as a simple fraction with an integer numerator and an integer denominator. The denominator will be a positive non-zero value less than or equal to `max_denominator`.
 
 **Since:** 12
 
@@ -2950,8 +2877,7 @@ Return a string representing the value of this Decimal in base 16, round to `sig
 toHexadecimal(significantDigits: number, rounding: Rounding): string
 ```
 
-Return a string representing the value of this Decimal in base 16, round to `significantDigits` significant
-digits using rounding mode `rounding`.
+Return a string representing the value of this Decimal in base 16, round to `significantDigits` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -3016,8 +2942,7 @@ Returns a new Decimal whose value is the nearest multiple of `n`.
 toNearest(n: Value, rounding: Rounding): Decimal
 ```
 
-Returns a new Decimal whose value is the nearest multiple of `n` in the direction of rounding
-mode `rounding`, to the value of this Decimal.
+Returns a new Decimal whose value is the nearest multiple of `n` in the direction of rounding mode `rounding`, to the value of this Decimal.
 
 **Since:** 12
 
@@ -3123,8 +3048,7 @@ Return a string representing the value of this Decimal in base 8, round to `sign
 toOctal(significantDigits: number, rounding: Rounding): string
 ```
 
-Return a string representing the value of this Decimal in base 8, round to `significantDigits` significant
-digits using rounding mode `rounding`.
+Return a string representing the value of this Decimal in base 8, round to `significantDigits` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -3209,8 +3133,7 @@ Return a string representing the value of this Decimal rounded to `significantDi
 toPrecision(significantDigits: number, rounding: Rounding): string
 ```
 
-Return a string representing the value of this Decimal rounded to `significantDigits` significant digits
-using rounding mode `rounding`.
+Return a string representing the value of this Decimal rounded to `significantDigits` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -3263,8 +3186,7 @@ Return a new Decimal whose value is the value of this Decimal.
 toSignificantDigits(significantDigits: number): Decimal
 ```
 
-Return a new Decimal whose value is the value of this Decimal rounded to a maximum of `significantDigits`
-significant digits.
+Return a new Decimal whose value is the value of this Decimal rounded to a maximum of `significantDigits` significant digits.
 
 **Since:** 12
 
@@ -3296,8 +3218,7 @@ significant digits.
 toSignificantDigits(significantDigits: number, rounding: Rounding): Decimal
 ```
 
-Return a new Decimal whose value is the value of this Decimal rounded to a maximum of `significantDigits`
-significant digits using rounding mode `rounding`.
+Return a new Decimal whose value is the value of this Decimal rounded to a maximum of `significantDigits` significant digits using rounding mode `rounding`.
 
 **Since:** 12
 
@@ -3330,9 +3251,7 @@ significant digits using rounding mode `rounding`.
 toString(): string
 ```
 
-Return a string representing the value of this Decimal.
-Return exponential notation if this Decimal has a positive exponent equal to or greater than
-`toExpPos`, or a negative exponent equal to or less than `toExpNeg`.
+Return a string representing the value of this Decimal. Return exponential notation if this Decimal has a positive exponent equal to or greater than `toExpPos`, or a negative exponent equal to or less than `toExpNeg`.
 
 **Since:** 12
 
@@ -3404,8 +3323,7 @@ Return a new Decimal whose value is `n` truncated to an integer.
 valueOf(): string
 ```
 
-Return a string representing the value of this Decimal.
-Unlike `toString`, negative zero will include the minus sign.
+Return a string representing the value of this Decimal. Unlike `toString`, negative zero will include the minus sign.
 
 **Since:** 12
 

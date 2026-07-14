@@ -1,9 +1,6 @@
 # UploadRequestOptions
 
-> **NOTE**
->
-> This API has been supported since API version 3 and deprecated since API version 9. You are advised to use
-> [UploadConfig](arkts-basicservices-config-i.md) instead.
+> **NOTE** > > This API has been supported since API version 3 and deprecated since API version 9. You are advised to use > [UploadConfig](arkts-basicservices-config-i.md) instead.
 
 **Since:** 3
 

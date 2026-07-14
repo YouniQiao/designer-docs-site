@@ -24,12 +24,7 @@ The value in the column is null.
 INTEGER = 1
 ```
 
-64-bit integer.
-
-The column can hold 8-bit (including Boolean values), 16-bit, 32-bit, and 64-bit integers. If the 64-bit integer
-is greater than 2^53 or less than -2^53, use
-[getString](arkts-arkdata-resultset-i.md#getstring-1) to convert the 64-bit integer
-to a string.
+64-bit integer. The column can hold 8-bit (including Boolean values), 16-bit, 32-bit, and 64-bit integers. If the 64-bit integer is greater than 2^53 or less than -2^53, use [getString](arkts-arkdata-resultset-i.md#getstring-1) to convert the 64-bit integer to a string.
 
 **Since:** 18
 

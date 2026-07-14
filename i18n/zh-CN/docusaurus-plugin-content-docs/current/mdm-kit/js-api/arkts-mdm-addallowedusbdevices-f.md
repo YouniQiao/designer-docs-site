@@ -6,13 +6,7 @@
 function addAllowedUsbDevices(admin: Want, usbDeviceIds: Array<UsbDeviceId>): void
 ```
 
-添加USB设备可用名单。
-
-以下情况下，调用本接口会报策略冲突：
-
-1. 已经通过[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)接口禁用了设备USB或者USB转串口能力。
-2. 已经通过[setUsbStorageDeviceAccessPolicy](arkts-mdm-setusbstoragedeviceaccesspolicy-f.md#setusbstoragedeviceaccesspolicy-1)接口设置了USB存储设备访问策略为禁用。
-3. 已经通过[addDisallowedUsbDevices](arkts-mdm-adddisallowedusbdevices-f.md#adddisallowedusbdevices-1)接口添加了禁止使用的USB设备类型。
+添加USB设备可用名单。 以下情况下，调用本接口会报策略冲突： 1. 已经通过[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)接口禁用了设备USB或者USB转串口能力。 2. 已经通过[setUsbStorageDeviceAccessPolicy](arkts-mdm-setusbstoragedeviceaccesspolicy-f.md#setusbstoragedeviceaccesspolicy-1)接口设置了USB存储设备访问策略为禁用。 3. 已经通过[addDisallowedUsbDevices](arkts-mdm-adddisallowedusbdevices-f.md#adddisallowedusbdevices-1)接口添加了禁止使用的USB设备类型。
 
 **起始版本：** 12
 

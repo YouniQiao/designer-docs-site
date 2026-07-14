@@ -1,28 +1,6 @@
 # Verify
 
-Provides APIs for signature verification. Before using any API of the **Verify** class, you must create a
-**Verify** instance by using [createVerify(algName: string): Verify](arkts-cryptoarchitecture-createverify-f.md#createverify-1). Invoke
-**init()**, **update()**, and **verify()** in this class in sequence to complete the signature verification. For
-details about the sample code, see
-[Signing and Signature Verification with an RSA Key Pair (PKCS1 Mode)](../../../../security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1.md)
-.
-
-The **Verify** class does not support repeated initialization. When a new key is used for signature verification,
-you must create a new **Verify** instance and call **init()** for initialization.
-
-The signature verification mode is determined in **createVerify()**, and the key is set by **init()**.
-
-If the signed message is short, you can call **verify()** to pass in the signed message and signature (
-**signatureData**) for signature verification after **init()**. That is, you do not need to use **update()**.
-
-If the signed message is too long, you can call **update()** multiple times to pass in the signed message by
-segment, and then call **verify()** to verify the full text of the message. In versions earlier than API version 10
-, the input parameter **data** of **verify()** supports only **DataBlob**. Since API version 10, **data** also
-supports **null**. After all the data is passed in by using **update()**, **verify()** can be called to verify the
-signature data.
-
-If the DSA algorithm is used for signature verification and the digest algorithm is **NoHash**, **update()** is not
-supported. If **update()** is called in this case, **ERR_CRYPTO_OPERATION** will be returned.
+Provides APIs for signature verification. Before using any API of the **Verify** class, you must create a **Verify** instance by using [createVerify(algName: string): Verify](arkts-cryptoarchitecture-createverify-f.md#createverify-1). Invoke **init()**, **update()**, and **verify()** in this class in sequence to complete the signature verification. For details about the sample code, see [Signing and Signature Verification with an RSA Key Pair (PKCS1 Mode)](../../../../security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1.md) . The **Verify** class does not support repeated initialization. When a new key is used for signature verification, you must create a new **Verify** instance and call **init()** for initialization. The signature verification mode is determined in **createVerify()**, and the key is set by **init()**. If the signed message is short, you can call **verify()** to pass in the signed message and signature ( **signatureData**) for signature verification after **init()**. That is, you do not need to use **update()**. If the signed message is too long, you can call **update()** multiple times to pass in the signed message by segment, and then call **verify()** to verify the full text of the message. In versions earlier than API version 10 , the input parameter **data** of **verify()** supports only **DataBlob**. Since API version 10, **data** also supports **null**. After all the data is passed in by using **update()**, **verify()** can be called to verify the signature data. If the DSA algorithm is used for signature verification and the digest algorithm is **NoHash**, **update()** is not supported. If **update()** is called in this case, **ERR_CRYPTO_OPERATION** will be returned.
 
 **Since:** 9
 
@@ -94,9 +72,7 @@ function testGetVerifySpec() {
 init(pubKey: PubKey, callback: AsyncCallback<void>): void
 ```
 
-Initializes the **Verify** object using a public key. This API uses an asynchronous callback to return the
-result. **init**, **update**, and **verify** must be used together. **init** and **verify** are mandatory, and
-**update** is optional.
+Initializes the **Verify** object using a public key. This API uses an asynchronous callback to return the result. **init**, **update**, and **verify** must be used together. **init** and **verify** are mandatory, and **update** is optional.
 
 **Since:** 9
 
@@ -129,9 +105,7 @@ result. **init**, **update**, and **verify** must be used together. **init** and
 init(pubKey: PubKey): Promise<void>
 ```
 
-Initializes the **Verify** object using a public key. This API uses a promise to return the result. **init**,
-**update**, and **verify** must be used together. **init** and **verify** are mandatory, and **update** is
-optional.
+Initializes the **Verify** object using a public key. This API uses a promise to return the result. **init**, **update**, and **verify** must be used together. **init** and **verify** are mandatory, and **update** is optional.
 
 **Since:** 9
 
@@ -169,14 +143,7 @@ optional.
 initSync(pubKey: PubKey): void
 ```
 
-Initializes the **Verify** instance with a public key. This API returns the result synchronously. **initSync**,
-**updateSync**, and **verifySync** must be used together. **initSync** and **verifySync** are mandatory, and
-**updateSync** is optional.
-
-<br><br>**NOTE**
-<br>It is recommended to prioritize the use of asynchronous API, {@link init}. Synchronous API may
-take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore,
-it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
+Initializes the **Verify** instance with a public key. This API returns the result synchronously. **initSync**, **updateSync**, and **verifySync** must be used together. **initSync** and **verifySync** are mandatory, and **updateSync** is optional. <br><br>**NOTE** <br>It is recommended to prioritize the use of asynchronous API, {@link init}. Synchronous API may take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore, it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
 
 **Since:** 12
 
@@ -206,11 +173,7 @@ it is advised to invoke synchronous API within a child thread to avoid blocking 
 recover(signatureData: DataBlob): Promise<DataBlob | null>
 ```
 
-Recovers the original data from a signature. This API uses a promise to return the result.
-
-> **NOTE**
->
-> - Currently, only RSA is supported.
+Recovers the original data from a signature. This API uses a promise to return the result. > **NOTE** > > - Currently, only RSA is supported.
 
 **Since:** 12
 
@@ -325,16 +288,7 @@ async function recoverByPromise() {
 recoverSync(signatureData: DataBlob): DataBlob | null
 ```
 
-Recovers the original data from a signature. This API returns the result synchronously.
-
-> **NOTE**
->
-> - Currently, only RSA is supported.
-
-<br><br>**NOTE**
-<br>It is recommended to prioritize the use of asynchronous API, {@link recover}. Synchronous API may
-take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore,
-it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
+Recovers the original data from a signature. This API returns the result synchronously. > **NOTE** > > - Currently, only RSA is supported. <br><br>**NOTE** <br>It is recommended to prioritize the use of asynchronous API, {@link recover}. Synchronous API may take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore, it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
 
 **Since:** 12
 
@@ -370,12 +324,7 @@ it is advised to invoke synchronous API within a child thread to avoid blocking 
 setVerifySpec(itemType: SignSpecItem, itemValue: number): void
 ```
 
-Sets signature verification specifications. You can use this API to set signature verification parameters that
-cannot be set by [createVerify](arkts-cryptoarchitecture-createverify-f.md#createverify-1).
-
-Currently, only RSA and SM2 are supported. Since API version 11, SM2 signature verification parameters can be set.
-
-The parameters for signature verification must be the same as those for signing.
+Sets signature verification specifications. You can use this API to set signature verification parameters that cannot be set by [createVerify](arkts-cryptoarchitecture-createverify-f.md#createverify-1). Currently, only RSA and SM2 are supported. Since API version 11, SM2 signature verification parameters can be set. The parameters for signature verification must be the same as those for signing.
 
 **Since:** 10
 
@@ -421,11 +370,7 @@ function testSetVerifySpec() {
 setVerifySpec(itemType: SignSpecItem, itemValue: number | Uint8Array): void
 ```
 
-Sets the specified parameter for the Verify object.
-
-Currently, only PSS_SALT_LEN in RSA and USER_ID in SM2 are supported.
-
-The parameters for signature verification must be the same as those for signing.
+Sets the specified parameter for the Verify object. Currently, only PSS_SALT_LEN in RSA and USER_ID in SM2 are supported. The parameters for signature verification must be the same as those for signing.
 
 **Since:** 11
 
@@ -460,12 +405,7 @@ The parameters for signature verification must be the same as those for signing.
 setVerifySpec(itemType: SignSpecItem, itemValue: number | Uint8Array | boolean): void
 ```
 
-Sets the specified parameter for the Verify object.
-
-Currently, only PSS_SALT_LEN in RSA, USER_ID in SM2, and ML_DSA_DETERMINISTIC, ML_DSA_MU and ML_DSA_CONTEXT in
-ML-DSA are supported.
-
-The parameters for signature verification must be the same as those for signing.
+Sets the specified parameter for the Verify object. Currently, only PSS_SALT_LEN in RSA, USER_ID in SM2, and ML_DSA_DETERMINISTIC, ML_DSA_MU and ML_DSA_CONTEXT in ML-DSA are supported. The parameters for signature verification must be the same as those for signing.
 
 **Since:** 26.0.0
 
@@ -511,31 +451,7 @@ function testSetVerifySpec() {
 update(data: DataBlob, callback: AsyncCallback<void>): void
 ```
 
-Updates the data for signature verification. This API uses an asynchronous callback to return the result.
-
-This API can be called only after the [Verify](arkts-cryptoarchitecture-verify-i.md) instance is initialized using
-[init](arkts-cryptoarchitecture-verify-i.md#init-1) or [initSync](arkts-cryptoarchitecture-verify-i.md#initsync-1).
-
-> **NOTE**
->
-> You can call **update** multiple times or do not use **update** (call
-> [verify](arkts-cryptoarchitecture-verify-i.md#verify-2)
-> after [init](arkts-cryptoarchitecture-verify-i.md#init-1)), depending on
-> the data volume.
->
-> The amount of the data to be passed in by **update()** (one-time or accumulative) is not limited. If there is a
-> large amount of data, you are advised to call **update()** multiple times to pass in the data by segment. This
-> prevents too much memory from being requested at a time.
->
-> For details about the sample code for calling **update()** multiple times in signature verification, see
-> [Signing and Signature Verification by Segment with an RSA Key Pair (PKCS1 Mode)](../../../../security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1-by-segment.md)
-> . The operations of other algorithms are similar.
->
-> **OnlyVerify** cannot be used with **update()**. If **OnlyVerify** is specified, use **verify()** to pass in
-> data.
->
-> If the DSA algorithm is used for signature verification and the digest algorithm is **NoHash**, **update()** is
-> not supported. If **update()** is called in this case, **ERR_CRYPTO_OPERATION** will be returned.
+Updates the data for signature verification. This API uses an asynchronous callback to return the result. This API can be called only after the [Verify](arkts-cryptoarchitecture-verify-i.md) instance is initialized using [init](arkts-cryptoarchitecture-verify-i.md#init-1) or [initSync](arkts-cryptoarchitecture-verify-i.md#initsync-1). > **NOTE** > > You can call **update** multiple times or do not use **update** (call > [verify](arkts-cryptoarchitecture-verify-i.md#verify-2) > after [init](arkts-cryptoarchitecture-verify-i.md#init-1)), depending on > the data volume. > > The amount of the data to be passed in by **update()** (one-time or accumulative) is not limited. If there is a > large amount of data, you are advised to call **update()** multiple times to pass in the data by segment. This > prevents too much memory from being requested at a time. > > For details about the sample code for calling **update()** multiple times in signature verification, see > [Signing and Signature Verification by Segment with an RSA Key Pair (PKCS1 Mode)](../../../../security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1-by-segment.md) > . The operations of other algorithms are similar. > > **OnlyVerify** cannot be used with **update()**. If **OnlyVerify** is specified, use **verify()** to pass in > data. > > If the DSA algorithm is used for signature verification and the digest algorithm is **NoHash**, **update()** is > not supported. If **update()** is called in this case, **ERR_CRYPTO_OPERATION** will be returned.
 
 **Since:** 9
 
@@ -568,30 +484,7 @@ This API can be called only after the [Verify](arkts-cryptoarchitecture-verify-i
 update(data: DataBlob): Promise<void>
 ```
 
-Updates the data for signature verification. This API uses a promise to return the result.
-
-This API can be called only after the [Verify](arkts-cryptoarchitecture-verify-i.md) instance is initialized using
-[init()](arkts-cryptoarchitecture-verify-i.md#init-1).
-
-> **NOTE**
->
-> You can call **update** multiple times or do not use **update** (call
-> [verify](arkts-cryptoarchitecture-verify-i.md#verify-4) after
-> [init](arkts-cryptoarchitecture-verify-i.md#init-1)), depending on the data volume.
-
-> The amount of the data to be passed in by **update()** (one-time or accumulative) is not limited. If there is a
-> large amount of data, you are advised to call **update()** multiple times to pass in the data by segment. This
-> prevents too much memory from being requested at a time.
-
-> For details about the sample code for calling **update()** multiple times in signature verification, see
-> [Signing and Signature Verification by Segment with an RSA Key Pair (PKCS1 Mode)](../../../../security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1-by-segment.md)
-> . The operations of other algorithms are similar.
-
-> **OnlyVerify** cannot be used with **update()**. If **OnlyVerify** is specified, use **verify()** to pass in
-> data.
-
-> If the DSA algorithm is used for signature verification and the digest algorithm is **NoHash**, **update()** is
-> not supported. If **update()** is called in this case, **ERR_CRYPTO_OPERATION** will be returned.
+Updates the data for signature verification. This API uses a promise to return the result. This API can be called only after the [Verify](arkts-cryptoarchitecture-verify-i.md) instance is initialized using [init()](arkts-cryptoarchitecture-verify-i.md#init-1). > **NOTE** > > You can call **update** multiple times or do not use **update** (call > [verify](arkts-cryptoarchitecture-verify-i.md#verify-4) after > [init](arkts-cryptoarchitecture-verify-i.md#init-1)), depending on the data volume. > The amount of the data to be passed in by **update()** (one-time or accumulative) is not limited. If there is a > large amount of data, you are advised to call **update()** multiple times to pass in the data by segment. This > prevents too much memory from being requested at a time. > For details about the sample code for calling **update()** multiple times in signature verification, see > [Signing and Signature Verification by Segment with an RSA Key Pair (PKCS1 Mode)](../../../../security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1-by-segment.md) > . The operations of other algorithms are similar. > **OnlyVerify** cannot be used with **update()**. If **OnlyVerify** is specified, use **verify()** to pass in > data. > If the DSA algorithm is used for signature verification and the digest algorithm is **NoHash**, **update()** is > not supported. If **update()** is called in this case, **ERR_CRYPTO_OPERATION** will be returned.
 
 **Since:** 9
 
@@ -629,35 +522,7 @@ This API can be called only after the [Verify](arkts-cryptoarchitecture-verify-i
 updateSync(data: DataBlob): void
 ```
 
-Updates the data for signature verification. This API returns the result synchronously.
-
-This API can be called only after the [Verify](arkts-cryptoarchitecture-verify-i.md) instance is initialized by using
-[initSync()](arkts-cryptoarchitecture-verify-i.md#initsync-1).
-
-> **NOTE**
->
-> You can call **updateSync** multiple times or do not use **updateSync** (call
-> [verifySync](arkts-cryptoarchitecture-verify-i.md#verifysync-1) after [initSync](arkts-cryptoarchitecture-verify-i.md#initsync-1)),
-> depending on the data volume.
-
-> The amount of the data to be passed in by **updateSync** (one-time or accumulative) is not limited. If there is
-> a large amount of data, you are advised to call **updateSync** multiple times to pass in the data by segment.
-> This prevents too much memory from being requested at a time.
-
-> For details about the sample code for calling **updateSync** multiple times in signature verification, see
-> [Signing and Signature Verification by Segment with an RSA Key Pair (PKCS1 Mode)](../../../../security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1-by-segment.md)
-> . The operations of other algorithms are similar.
-
-> **OnlyVerify** cannot be used with **updateSync()**. If **OnlyVerify** is specified, use **verifySync()** to pass
-> in data.
-
-> If the DSA algorithm is used for signature verification and the digest algorithm is **NoHash**, **updateSync**
-> is not supported. If **updateSync** is called in this case, **ERR_CRYPTO_OPERATION** will be returned.
-
-<br><br>**NOTE**
-<br>It is recommended to prioritize the use of asynchronous API, {@link update}. Synchronous API may
-take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore,
-it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
+Updates the data for signature verification. This API returns the result synchronously. This API can be called only after the [Verify](arkts-cryptoarchitecture-verify-i.md) instance is initialized by using [initSync()](arkts-cryptoarchitecture-verify-i.md#initsync-1). > **NOTE** > > You can call **updateSync** multiple times or do not use **updateSync** (call > [verifySync](arkts-cryptoarchitecture-verify-i.md#verifysync-1) after [initSync](arkts-cryptoarchitecture-verify-i.md#initsync-1)), > depending on the data volume. > The amount of the data to be passed in by **updateSync** (one-time or accumulative) is not limited. If there is > a large amount of data, you are advised to call **updateSync** multiple times to pass in the data by segment. > This prevents too much memory from being requested at a time. > For details about the sample code for calling **updateSync** multiple times in signature verification, see > [Signing and Signature Verification by Segment with an RSA Key Pair (PKCS1 Mode)](../../../../security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1-by-segment.md) > . The operations of other algorithms are similar. > **OnlyVerify** cannot be used with **updateSync()**. If **OnlyVerify** is specified, use **verifySync()** to pass > in data. > If the DSA algorithm is used for signature verification and the digest algorithm is **NoHash**, **updateSync** > is not supported. If **updateSync** is called in this case, **ERR_CRYPTO_OPERATION** will be returned. <br><br>**NOTE** <br>It is recommended to prioritize the use of asynchronous API, {@link update}. Synchronous API may take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore, it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
 
 **Since:** 12
 
@@ -833,12 +698,7 @@ Verifies the signature of the data. This API uses a promise to return the result
 verifySync(data: DataBlob | null, signatureData: DataBlob): boolean
 ```
 
-Verifies the signature. This API returns the verification result synchronously.
-
-<br><br>**NOTE**
-<br>It is recommended to prioritize the use of asynchronous API, {@link verify}. Synchronous API may
-take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore,
-it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
+Verifies the signature. This API returns the verification result synchronously. <br><br>**NOTE** <br>It is recommended to prioritize the use of asynchronous API, {@link verify}. Synchronous API may take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore, it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
 
 **Since:** 12
 

@@ -1,7 +1,6 @@
 # Stack
 
-Stack is implemented based on the array data structure.
-It follows the principle Last In First Out (LIFO) and supports data insertion and removal at one end.
+Stack is implemented based on the array data structure. It follows the principle Last In First Out (LIFO) and supports data insertion and removal at one end.
 
 **Since:** 8
 

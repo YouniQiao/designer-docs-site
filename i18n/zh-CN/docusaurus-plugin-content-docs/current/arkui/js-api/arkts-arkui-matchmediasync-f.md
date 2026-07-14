@@ -6,17 +6,7 @@
 function matchMediaSync(condition: string): MediaQueryListener
 ```
 
-设置媒体查询的查询条件，并返回对应的监听句柄。
-
-> **说明：**
->
-> -matchMediaSync需先通过[UIContext](arkts-arkui-uicontext.md)中的
-> [getMediaQuery](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getmediaquery)方法获取
-> [MediaQuery](arkts-arkui-uicontext.md)对象，然后通过该对象进行调用。
->
-> - 从API version 10开始，可以通过使用[UIContext](arkts-arkui-uicontext.md)中的
-> [getMediaQuery](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getmediaquery)方法获取当前UI上下文关联的
-> [MediaQuery](arkts-arkui-uicontext.md)对象。
+设置媒体查询的查询条件，并返回对应的监听句柄。 > **说明：** > > -matchMediaSync需先通过[UIContext](arkts-arkui-uicontext.md)中的 > [getMediaQuery](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getmediaquery)方法获取 > [MediaQuery](arkts-arkui-uicontext.md)对象，然后通过该对象进行调用。 > > - 从API version 10开始，可以通过使用[UIContext](arkts-arkui-uicontext.md)中的 > [getMediaQuery](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getmediaquery)方法获取当前UI上下文关联的 > [MediaQuery](arkts-arkui-uicontext.md)对象。
 
 **起始版本：** 7
 

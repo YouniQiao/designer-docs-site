@@ -12,13 +12,7 @@ Sets parameters of the selected item indicator style.
 backgroundColor?: ResourceColor
 ```
 
-Background color of the selected item.
-
-Default value: 'sys.color.comp_background_tertiary'
-
-**NOTE**
-
-This parameter takes effect only when **type** is set to **PickerIndicatorType.BACKGROUND**.
+Background color of the selected item. Default value: 'sys.color.comp_background_tertiary' **NOTE** This parameter takes effect only when **type** is set to **PickerIndicatorType.BACKGROUND**.
 
 **Type:** ResourceColor
 
@@ -38,22 +32,7 @@ This parameter takes effect only when **type** is set to **PickerIndicatorType.B
 borderRadius?: LengthMetrics | BorderRadiuses | LocalizedBorderRadiuses
 ```
 
-Background border radius of the selected item.
-
-Value range: no more than half of the smaller value between the width and height of the selected item. If the value
-Default value: { value:12, unit:LengthUnit.vp }, meaning 12 vp for all corners
-
-is less than 0, the default value is used. If the value is greater than the maximum value, the maximum value is
-used.
-
-NOTE
-
-1. This parameter takes effect only when **type** is set to **PickerIndicatorType.BACKGROUND**.
-2. [LengthMetrics](../arkts-apis/arkts-arkui-lengthmetrics-c.md): Sets the size and unit of the four corner radii
-in a unified manner.
-3. [BorderRadiuses](../arkts-apis/arkts-arkui-borderradiuses-t.md): Sets the size (unit: vp) of the four corner radii individually.
-4. [LocalizedBorderRadiuses](arkts-arkui-localizedborderradiuses-i.md): Sets the size and unit of the four corner radii
-individually.
+Background border radius of the selected item. Value range: no more than half of the smaller value between the width and height of the selected item. If the value Default value: { value:12, unit:LengthUnit.vp }, meaning 12 vp for all corners is less than 0, the default value is used. If the value is greater than the maximum value, the maximum value is used. NOTE 1. This parameter takes effect only when **type** is set to **PickerIndicatorType.BACKGROUND**. 2. [LengthMetrics](../arkts-apis/arkts-arkui-lengthmetrics-c.md): Sets the size and unit of the four corner radii in a unified manner. 3. [BorderRadiuses](../arkts-apis/arkts-arkui-borderradiuses-t.md): Sets the size (unit: vp) of the four corner radii individually. 4. [LocalizedBorderRadiuses](arkts-arkui-localizedborderradiuses-i.md): Sets the size and unit of the four corner radii individually.
 
 **Type:** LengthMetrics | BorderRadiuses | LocalizedBorderRadiuses
 
@@ -73,13 +52,7 @@ individually.
 dividerColor?: ResourceColor
 ```
 
-Color of the divider.
-
-Default value: 'sys.color.comp_divider'
-
-**NOTE**
-
-This parameter takes effect only when **type** is set to **PickerIndicatorType.DIVIDER**.
+Color of the divider. Default value: 'sys.color.comp_divider' **NOTE** This parameter takes effect only when **type** is set to **PickerIndicatorType.DIVIDER**.
 
 **Type:** ResourceColor
 
@@ -99,19 +72,7 @@ This parameter takes effect only when **type** is set to **PickerIndicatorType.D
 endMargin?: LengthMetrics
 ```
 
-Distance between the divider and the end edge of the **UIPickerComponent** container.
-
-Default value: 0
-
-Unit: same as that of **LengthMetrics**
-
-Value range: The sum of **startMargin** and **endMargin** must not exceed the width of the **UIPickerComponent**
-container. If the value is less than 0 or the sum of **startMargin** and **endMargin** exceeds the width of the
-**UIPickerComponent** container, the default value is used. Percentages are not supported.
-
-**NOTE**
-
-This parameter takes effect only when **type** is set to **PickerIndicatorType.DIVIDER**.
+Distance between the divider and the end edge of the **UIPickerComponent** container. Default value: 0 Unit: same as that of **LengthMetrics** Value range: The sum of **startMargin** and **endMargin** must not exceed the width of the **UIPickerComponent** container. If the value is less than 0 or the sum of **startMargin** and **endMargin** exceeds the width of the **UIPickerComponent** container, the default value is used. Percentages are not supported. **NOTE** This parameter takes effect only when **type** is set to **PickerIndicatorType.DIVIDER**.
 
 **Type:** LengthMetrics
 
@@ -131,19 +92,7 @@ This parameter takes effect only when **type** is set to **PickerIndicatorType.D
 startMargin?: LengthMetrics
 ```
 
-Distance between the divider and the start edge of the **UIPickerComponent** container.
-
-Default value: 0
-
-Unit: same as that of **LengthMetrics**
-
-Value range: The sum of **startMargin** and **endMargin** must not exceed the width of the **UIPickerComponent**
-container. If the value is less than 0 or the sum of **startMargin** and **endMargin** exceeds the width of the
-**UIPickerComponent** container, the default value is used. Percentages are not supported.
-
-NOTE
-
-This parameter takes effect only when **type** is set to **PickerIndicatorType.DIVIDER**.
+Distance between the divider and the start edge of the **UIPickerComponent** container. Default value: 0 Unit: same as that of **LengthMetrics** Value range: The sum of **startMargin** and **endMargin** must not exceed the width of the **UIPickerComponent** container. If the value is less than 0 or the sum of **startMargin** and **endMargin** exceeds the width of the **UIPickerComponent** container, the default value is used. Percentages are not supported. NOTE This parameter takes effect only when **type** is set to **PickerIndicatorType.DIVIDER**.
 
 **Type:** LengthMetrics
 
@@ -163,21 +112,7 @@ This parameter takes effect only when **type** is set to **PickerIndicatorType.D
 strokeWidth?: LengthMetrics
 ```
 
-Stroke width of the divider.
-
-Default value: 2.0px.
-
-Unit: same as that of **LengthMetrics**
-
-Value range: [0, half the height of the selected item (that is, 20 vp)]. If the value of **strokeWidth** is less
-than 0 or greater than half the height of the selected item, the default value is used. Percentages are not
-supported.
-
-NOTE
-
-1. This parameter takes effect only when **type** is set to **PickerIndicatorType.DIVIDER**.
-2. If this parameter is set in **LengthMetrics.resource** mode, the value of a non-length attribute will be treated
-as 0 vp.
+Stroke width of the divider. Default value: 2.0px. Unit: same as that of **LengthMetrics** Value range: [0, half the height of the selected item (that is, 20 vp)]. If the value of **strokeWidth** is less than 0 or greater than half the height of the selected item, the default value is used. Percentages are not supported. NOTE 1. This parameter takes effect only when **type** is set to **PickerIndicatorType.DIVIDER**. 2. If this parameter is set in **LengthMetrics.resource** mode, the value of a non-length attribute will be treated as 0 vp.
 
 **Type:** LengthMetrics
 
@@ -197,12 +132,7 @@ as 0 vp.
 type: PickerIndicatorType
 ```
 
-Type of the selected item indicator.
-
-Default value: PickerIndicatorType.BACKGROUND
-
-If the value of **type** is a decimal number, the integer after rounding down is used. If the value of **type** is
-not within the value range of **PickerIndicatorType**, the default value is used.
+Type of the selected item indicator. Default value: PickerIndicatorType.BACKGROUND If the value of **type** is a decimal number, the integer after rounding down is used. If the value of **type** is not within the value range of **PickerIndicatorType**, the default value is used.
 
 **Type:** PickerIndicatorType
 

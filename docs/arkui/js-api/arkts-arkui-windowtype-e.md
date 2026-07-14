@@ -72,9 +72,7 @@ Modal window.
 TYPE_MAIN = 32
 ```
 
-Main window of an application.
-
-This window type cannot be used during window creation.
+Main window of an application. This window type cannot be used during window creation.
 
 **Since:** 18
 

@@ -12,11 +12,7 @@ import { nfcController } from '@kit.ConnectivityKit';
 function getNfcState(): NfcState
 ```
 
-Obtains the NFC status.
-<p>The NFC status can be any of the following: <ul><li>{@link #STATE_OFF}: Indicates that NFC
-is disabled. <li>{@link #STATE_TURNING_ON}: Indicates that NFC is being enabled.
-<li>{@link #STATE_ON}: Indicates that NFC is enabled. <li>{@link #STATE_TURNING_OFF}: Indicates
-that NFC is being disabled.</ul>
+Obtains the NFC status. <p>The NFC status can be any of the following: <ul><li>{@link #STATE_OFF}: Indicates that NFC is disabled. <li>{@link #STATE_TURNING_ON}: Indicates that NFC is being enabled. <li>{@link #STATE_ON}: Indicates that NFC is enabled. <li>{@link #STATE_TURNING_OFF}: Indicates that NFC is being disabled.</ul>
 
 **Since:** 12
 

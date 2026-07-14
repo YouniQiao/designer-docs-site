@@ -1,8 +1,6 @@
 # InputClient
 
-You must first use [on('inputStart')](inputMethodEngine.InputMethodAbility. on(type: 'inputStart', callback:
-(kbController: KeyboardController, inputClient: InputClient) => void): void;) to obtain a
-**InputClient** instance, and then use this instance to call the following APIs.
+You must first use [on('inputStart')](inputMethodEngine.InputMethodAbility. on(type: 'inputStart', callback: (kbController: KeyboardController, inputClient: InputClient) => void): void;) to obtain a **InputClient** instance, and then use this instance to call the following APIs.
 
 **Since:** 9
 
@@ -282,11 +280,7 @@ inputClient.deleteForwardSync(length);
 finishTextPreview(): Promise<void>
 ```
 
-Finishes the text preview. This API uses a promise to return the result.
-
-> **NOTE**
->
-> If there is preview text in the current text box, calling this API will display the preview text on the screen.
+Finishes the text preview. This API uses a promise to return the result. > **NOTE** > > If there is preview text in the current text box, calling this API will display the preview text on the screen.
 
 **Since:** 12
 
@@ -324,11 +318,7 @@ inputClient.finishTextPreview().then(() => {
 finishTextPreviewSync(): void
 ```
 
-Finishes the text preview.
-
-> **NOTE**
->
-> If there is preview text in the current text box, calling this API will display the preview text on the screen.
+Finishes the text preview. > **NOTE** > > If there is preview text in the current text box, calling this API will display the preview text on the screen.
 
 **Since:** 12
 
@@ -516,13 +506,7 @@ console.info(`Succeeded in getting backward, text: ${text}`);
 getCallingWindowInfo(): Promise<WindowInfo>
 ```
 
-Obtains information about the application window, in which the input box that starts an input method is located.
-This API uses a promise to return the result.
-
-> **NOTE**
->
-> This API applies only to the input method applications that use [Panel](arkts-ime-panel-i.md) as the
-> soft keyboard window.
+Obtains information about the application window, in which the input box that starts an input method is located. This API uses a promise to return the result. > **NOTE** > > This API applies only to the input method applications that use [Panel](arkts-ime-panel-i.md) as the > soft keyboard window.
 
 **Since:** 12
 
@@ -803,8 +787,7 @@ console.info(`Succeeded in getting forward, text: ${text}`);
 getTextIndexAtCursor(callback: AsyncCallback<number>): void
 ```
 
-Obtains the index of the text where the cursor is located. This API uses an asynchronous callback to return the
-result.
+Obtains the index of the text where the cursor is located. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -1161,8 +1144,7 @@ inputClient.moveCursorSync(inputMethodEngine.Direction.CURSOR_UP);
 off(type: 'attachOptionsDidChange', callback?: Callback<AttachOptions>): void
 ```
 
-Unsubscribes from the event indicating that additional options for binding an input method are changed. This API
-uses an asynchronous callback to return the result.
+Unsubscribes from the event indicating that additional options for binding an input method are changed. This API uses an asynchronous callback to return the result.
 
 **Since:** 19
 
@@ -1196,8 +1178,7 @@ console.info(`attachOptionsDidChange unsubscribed from attachOptionsDidChange`);
 on(type: 'attachOptionsDidChange', callback: Callback<AttachOptions>): void
 ```
 
-Subscribes to the event indicating that the additional options for binding an input method are changed. This API
-uses an asynchronous callback to return the result.
+Subscribes to the event indicating that the additional options for binding an input method are changed. This API uses an asynchronous callback to return the result.
 
 **Since:** 19
 
@@ -1237,17 +1218,7 @@ console.info(`attachOptionsDidChange unsubscribed from attachOptionsDidChange`);
 recvMessage(msgHandler?: MessageHandler): void
 ```
 
-Registers or unregisters MessageHandler.
-
-> **NOTE**
->
-> The [MessageHandler](arkts-ime-messagehandler-i.md) object is globally unique. After multiple
-> registrations, only the last registered object is valid and retained, and the
-> [onTerminated](arkts-ime-messagehandler-i.md#onterminated-1) callback of the penultimate registered
-> object is triggered.
->
-> If no parameter is set, unregister [MessageHandler](arkts-ime-messagehandler-i.md). Its
-> [onTerminated](arkts-ime-messagehandler-i.md#onterminated-1) callback will be triggered.
+Registers or unregisters MessageHandler. > **NOTE** > > The [MessageHandler](arkts-ime-messagehandler-i.md) object is globally unique. After multiple > registrations, only the last registered object is valid and retained, and the > [onTerminated](arkts-ime-messagehandler-i.md#onterminated-1) callback of the penultimate registered > object is triggered. > > If no parameter is set, unregister [MessageHandler](arkts-ime-messagehandler-i.md). Its > [onTerminated](arkts-ime-messagehandler-i.md#onterminated-1) callback will be triggered.
 
 **Since:** 15
 
@@ -1532,19 +1503,7 @@ inputClient.selectByRangeSync(range);
 sendExtendAction(action: ExtendAction, callback: AsyncCallback<void>): void
 ```
 
-Sends an extended edit action. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> The input method applications call this API to send extended edit actions to the edit box. The edit box listens
-> for the corresponding event using
-> [on('handleExtendAction')](@ohos.inputMethod:inputMethod.InputMethodController.on(type: 'handleExtendAction',
-callback: (action: ExtendAction) => void): void) for further processing.
->
-> When the edit box responds to the **PASTE** command of [ExtendAction](arkts-ime-extendaction-e.md),
-> the edit box application needs to apply for the
-> [ohos.permission.READ_PASTEBOARD](../../../../security/AccessToken/restricted-permissions.md#ohospermissionread_pasteboard)
-> permission.
+Sends an extended edit action. This API uses an asynchronous callback to return the result. > **NOTE** > > The input method applications call this API to send extended edit actions to the edit box. The edit box listens > for the corresponding event using > [on('handleExtendAction')](@ohos.inputMethod:inputMethod.InputMethodController.on(type: 'handleExtendAction', callback: (action: ExtendAction) => void): void) for further processing. > > When the edit box responds to the **PASTE** command of [ExtendAction](arkts-ime-extendaction-e.md), > the edit box application needs to apply for the > [ohos.permission.READ_PASTEBOARD](../../../../security/AccessToken/restricted-permissions.md#ohospermissionread_pasteboard) > permission.
 
 **Since:** 10
 
@@ -1586,20 +1545,7 @@ inputClient.sendExtendAction(inputMethodEngine.ExtendAction.COPY, (err: Business
 sendExtendAction(action: ExtendAction): Promise<void>
 ```
 
-Sends an extended edit action. This API uses a promise to return the result.
-
-> **NOTE**
->
-> The input method applications call this API to send extended edit actions to the edit box. The edit box listens
-> for the corresponding event using
-> [on('handleExtendAction')](@ohos.inputMethod:inputMethod.InputMethodController.on(type: 'handleExtendAction',
-callback: (action: ExtendAction) => void): void;) for
-> further processing.
->
-> When the edit box responds to the **PASTE** command of [ExtendAction](arkts-ime-extendaction-e.md),
-> the edit box application needs to apply for the
-> [ohos.permission.READ_PASTEBOARD](../../../../security/AccessToken/restricted-permissions.md#ohospermissionread_pasteboard)
-> permission.
+Sends an extended edit action. This API uses a promise to return the result. > **NOTE** > > The input method applications call this API to send extended edit actions to the edit box. The edit box listens > for the corresponding event using > [on('handleExtendAction')](@ohos.inputMethod:inputMethod.InputMethodController.on(type: 'handleExtendAction', callback: (action: ExtendAction) => void): void;) for > further processing. > > When the edit box responds to the **PASTE** command of [ExtendAction](arkts-ime-extendaction-e.md), > the edit box application needs to apply for the > [ohos.permission.READ_PASTEBOARD](../../../../security/AccessToken/restricted-permissions.md#ohospermissionread_pasteboard) > permission.
 
 **Since:** 10
 
@@ -1740,15 +1686,7 @@ inputClient.sendKeyFunction(action).then((result: boolean) => {
 sendMessage(msgId: string, msgParam?: ArrayBuffer): Promise<void>
 ```
 
-Sends the custom communication to the edit box application attached to the input method application. This API
-uses a promise to return the result.
-
-> **NOTE**
->
-> This API can be called only when the edit box is attached to the input method and enter the edit mode, and the
-> input method application is in full experience mode.
->
-> The maximum length of **msgId** is 256 B, and the maximum length of **msgParam** is 128 KB.
+Sends the custom communication to the edit box application attached to the input method application. This API uses a promise to return the result. > **NOTE** > > This API can be called only when the edit box is attached to the input method and enter the edit mode, and the > input method application is in full experience mode. > > The maximum length of **msgId** is 256 B, and the maximum length of **msgParam** is 128 KB.
 
 **Since:** 15
 
@@ -1799,16 +1737,7 @@ inputClient.sendMessage(msgId, msgParam).then(() => {
 sendPrivateCommand(commandData: Record<string, CommandDataType>): Promise<void>
 ```
 
-Sends private data to the system component that needs to communicate with the input method application. This API
-uses a promise to return the result.
-
-> **NOTE**
->
-> - The private data channel allows communication between the system preset input method application and specific
-> system components (such as a text box or a home screen application). It is usually used to implement custom
-> input on a specific device.
->
-> - The total size of the private data is 32 KB, and the maximum number of private data records is 5.
+Sends private data to the system component that needs to communicate with the input method application. This API uses a promise to return the result. > **NOTE** > > - The private data channel allows communication between the system preset input method application and specific > system components (such as a text box or a home screen application). It is usually used to implement custom > input on a specific device. > > - The total size of the private data is 32 KB, and the maximum number of private data records is 5.
 
 **Since:** 12
 

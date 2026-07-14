@@ -16,10 +16,7 @@
 action: string
 ```
 
-加解密操作类型，可选项有：
-
-1. encrypt 加密；
-2. decrypt 解密。
+加解密操作类型，可选项有： 1. encrypt 加密； 2. decrypt 解密。
 
 **类型：** string
 

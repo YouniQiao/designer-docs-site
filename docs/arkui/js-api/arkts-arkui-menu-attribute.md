@@ -58,9 +58,7 @@ Sets the font color of all text within the menu.
 fontSize(value: Length)
 ```
 
-Sets the size of all text within the menu.
-
-> **NOTE**
+Sets the size of all text within the menu. > **NOTE**
 
 **Since:** 9
 
@@ -82,10 +80,7 @@ Sets the size of all text within the menu.
 menuItemDivider(options: DividerStyleOptions | undefined)
 ```
 
-Sets the style of the menu item divider. If this attribute is not set, the divider will not be displayed.
-
-If the sum of **startMargin** and **endMargin** exceeds the component width, both **startMargin** and
-**endMargin** will be set to **0**.
+Sets the style of the menu item divider. If this attribute is not set, the divider will not be displayed. If the sum of **startMargin** and **endMargin** exceeds the component width, both **startMargin** and **endMargin** will be set to **0**.
 
 **Since:** 12
 
@@ -107,8 +102,7 @@ If the sum of **startMargin** and **endMargin** exceeds the component width, bot
 menuItemGroupDivider(options: DividerStyleOptions | undefined)
 ```
 
-Sets the style of the top and bottom dividers for the menu item group. If this attribute is not set, the dividers
-will be displayed by default.
+Sets the style of the top and bottom dividers for the menu item group. If this attribute is not set, the dividers will be displayed by default.
 
 **Since:** 12
 

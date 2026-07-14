@@ -20,8 +20,7 @@ import { mechanicManager } from '@kit.MechanicKit';
 negativePitchMax: number
 ```
 
-Maximum pitch rotation angles in the negative direction, ranging from -2*Math.PI to 0, measured in radians.
-If the value is less than or equal to -2*Math.PI, there is no restriction.
+Maximum pitch rotation angles in the negative direction, ranging from -2*Math.PI to 0, measured in radians. If the value is less than or equal to -2*Math.PI, there is no restriction.
 
 **Type:** number
 
@@ -37,8 +36,7 @@ If the value is less than or equal to -2*Math.PI, there is no restriction.
 negativeRollMax: number
 ```
 
-Maximum roll rotation angles in the negative direction, ranging from -2*Math.PI to 0, measured in radians.
-If the value is less than or equal to -2*Math.PI, there is no restriction.
+Maximum roll rotation angles in the negative direction, ranging from -2*Math.PI to 0, measured in radians. If the value is less than or equal to -2*Math.PI, there is no restriction.
 
 **Type:** number
 
@@ -54,8 +52,7 @@ If the value is less than or equal to -2*Math.PI, there is no restriction.
 negativeYawMax: number
 ```
 
-Maximum yaw rotation angles in the negative direction, ranging from -2*Math.PI to 0, measured in radians.
-If the value is less than or equal to -2*Math.PI, there is no restriction.
+Maximum yaw rotation angles in the negative direction, ranging from -2*Math.PI to 0, measured in radians. If the value is less than or equal to -2*Math.PI, there is no restriction.
 
 **Type:** number
 
@@ -71,8 +68,7 @@ If the value is less than or equal to -2*Math.PI, there is no restriction.
 positivePitchMax: number
 ```
 
-Maximum pitch rotation angles in the positive direction, ranging from 0 to 2*Math.PI, measured in radians.
-If the value is greater than or equal to 2*Math.PI, there is no restriction.
+Maximum pitch rotation angles in the positive direction, ranging from 0 to 2*Math.PI, measured in radians. If the value is greater than or equal to 2*Math.PI, there is no restriction.
 
 **Type:** number
 
@@ -88,8 +84,7 @@ If the value is greater than or equal to 2*Math.PI, there is no restriction.
 positiveRollMax: number
 ```
 
-Maximum roll rotation angles in the positive direction, ranging from 0 to 2*Math.PI, measured in radians.
-If the value is greater than or equal to 2*Math.PI, there is no restriction.
+Maximum roll rotation angles in the positive direction, ranging from 0 to 2*Math.PI, measured in radians. If the value is greater than or equal to 2*Math.PI, there is no restriction.
 
 **Type:** number
 
@@ -105,8 +100,7 @@ If the value is greater than or equal to 2*Math.PI, there is no restriction.
 positiveYawMax: number
 ```
 
-Maximum yaw rotation angles in the positive direction, ranging from 0 to 2*Math.PI, measured in radians.
-If the value is greater than or equal to 2*Math.PI, there is no restriction.
+Maximum yaw rotation angles in the positive direction, ranging from 0 to 2*Math.PI, measured in radians. If the value is greater than or equal to 2*Math.PI, there is no restriction.
 
 **Type:** number
 

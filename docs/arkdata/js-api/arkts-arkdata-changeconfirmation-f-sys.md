@@ -12,8 +12,7 @@ import { cloudData } from '@kit.ArkData';
 function changeConfirmation(sharingResource: string, state: State, callback: AsyncCallback<Result<void>>): void
 ```
 
-Changes the invitation confirmation state based on the shared resource ID.
-This API uses an asynchronous callback to return the result.
+Changes the invitation confirmation state based on the shared resource ID. This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -50,7 +49,6 @@ cloudData.sharing.changeConfirmation('sharing_resource_test', cloudData.sharing.
   console.info(`change confirmation succeeded, result: ${result}`);
 }))
 
-
 ```
 
 
@@ -60,8 +58,7 @@ cloudData.sharing.changeConfirmation('sharing_resource_test', cloudData.sharing.
 function changeConfirmation(sharingResource: string, state: State): Promise<Result<void>>
 ```
 
-Changes the invitation confirmation state based on the shared resource ID.
-This API uses a promise to return the result.
+Changes the invitation confirmation state based on the shared resource ID. This API uses a promise to return the result.
 
 **Since:** 11
 
@@ -100,7 +97,6 @@ cloudData.sharing.changeConfirmation('sharing_resource_test', cloudData.sharing.
 }).catch((err: BusinessError) => {
   console.error(`change confirmation failed, code is ${err.code},message is ${err.message}`);
 })
-
 
 ```
 

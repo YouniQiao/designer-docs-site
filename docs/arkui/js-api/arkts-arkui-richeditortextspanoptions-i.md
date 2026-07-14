@@ -30,11 +30,7 @@ Behavior-triggered callback. If this parameter is left empty, only the default s
 offset?: number
 ```
 
-Position of the text span to be added. If this parameter is omitted, the paragraph is added to the end of all
-content.
-
-If the value specified is less than 0, the paragraph is placed at the beginning of all content. If the value is
-greater than the length of all content, the paragraph is placed at the end of all content.
+Position of the text span to be added. If this parameter is omitted, the paragraph is added to the end of all content. If the value specified is less than 0, the paragraph is placed at the beginning of all content. If the value is greater than the length of all content, the paragraph is placed at the end of all content.
 
 **Type:** number
 
@@ -88,9 +84,7 @@ Style of the text span to be added. If this parameter is left empty, the default
 urlStyle?: RichEditorUrlStyle
 ```
 
-URL information.
-
-Default value: **undefined**
+URL information. Default value: **undefined**
 
 **Type:** RichEditorUrlStyle
 

@@ -14,17 +14,7 @@ Inherits from [MultiShadowOptions](arkts-arkui-multishadowoptions-i.md) and has 
 colors?: Array<ResourceColor | LinearGradient>
 ```
 
-Array of shadow colors for data segments.
-
-Default value: same as the value of **valueColors**
-
-**NOTE**
-
-If the number of the set shadow colors is less than that of the data segments, the number of the displayed shadow
-colors is the same as the former.
-
-If the number of the set shadow colors is greater than that of the data segments, the number of the displayed
-shadow colors is the same as the latter.
+Array of shadow colors for data segments. Default value: same as the value of **valueColors** **NOTE** If the number of the set shadow colors is less than that of the data segments, the number of the displayed shadow colors is the same as the former. If the number of the set shadow colors is greater than that of the data segments, the number of the displayed shadow colors is the same as the latter.
 
 **Type:** Array<ResourceColor | LinearGradient>
 

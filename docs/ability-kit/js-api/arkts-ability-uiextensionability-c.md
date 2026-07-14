@@ -1,19 +1,6 @@
 # UIExtensionAbility
 
-UIExtensionAbility is an ExtensionAbility component with a User Interface (UI). It inherits from
-[ExtensionAbility](arkts-ability-extensionability-c.md) and provides basic lifecycle
-capabilities such as component creation, destruction, and foreground/background switching. Unlike the UIAbility, the
-UIExtensionAbility does not appear as a separate mission in the mission view. The foreground/background state and
-visibility of the UIExtensionAbility follow those of its host window.
-You cannot directly inherit from the UIExtensionAbility. However, you can choose other components that inherit from
-UIExtensionAbility based on specific service scenarios. For example, when handling data shared from other
-applications, you can use the
-[ShareExtensionAbility](arkts-ability-shareextensionability-c.md); when providing
-widget editing functionality, you can use the
-[FormEditExtensionAbility](../../apis-form-kit/arkts-apis/arkts-form-formeditextensionability-c.md).
-For details about the inheritance relationship of each ability, see
-[Inheritance Relationship](../../../../reference/apis-ability-kit/js-apis-app-ability-ability.md#ability-inheritance-relationship)
-.
+UIExtensionAbility is an ExtensionAbility component with a User Interface (UI). It inherits from [ExtensionAbility](arkts-ability-extensionability-c.md) and provides basic lifecycle capabilities such as component creation, destruction, and foreground/background switching. Unlike the UIAbility, the UIExtensionAbility does not appear as a separate mission in the mission view. The foreground/background state and visibility of the UIExtensionAbility follow those of its host window. You cannot directly inherit from the UIExtensionAbility. However, you can choose other components that inherit from UIExtensionAbility based on specific service scenarios. For example, when handling data shared from other applications, you can use the [ShareExtensionAbility](arkts-ability-shareextensionability-c.md); when providing widget editing functionality, you can use the [FormEditExtensionAbility](../../apis-form-kit/arkts-apis/arkts-form-formeditextensionability-c.md). For details about the inheritance relationship of each ability, see [Inheritance Relationship](../../../../reference/apis-ability-kit/js-apis-app-ability-ability.md#ability-inheritance-relationship) .
 
 **Inheritance/Implementation:** UIExtensionAbility extends [ExtensionAbility](arkts-ability-extensionability-c.md)
 
@@ -33,8 +20,7 @@ import { UIExtensionAbility } from '@kit.AbilityKit';
 onBackground(): void
 ```
 
-Called when a UIExtensionAbility transitions from the foreground to the background. You can release resources when
-the UI is no longer invisible within this callback.
+Called when a UIExtensionAbility transitions from the foreground to the background. You can release resources when the UI is no longer invisible within this callback.
 
 **Since:** 10
 
@@ -64,8 +50,7 @@ export default class ShareExtAbility extends ShareExtensionAbility {
 onCreate(launchParam: AbilityConstant.LaunchParam): void
 ```
 
-Called when a UIExtensionAbility instance is created. You can execute initialization logic (such as defining
-variables and loading resources) within this callback.
+Called when a UIExtensionAbility instance is created. You can execute initialization logic (such as defining variables and loading resources) within this callback.
 
 **Since:** 10
 
@@ -101,11 +86,7 @@ export default class ShareExtAbility extends ShareExtensionAbility {
 onDestroy(): void | Promise<void>
 ```
 
-Called when a UIExtensionAbility is destroyed. You can clear resources and save data during this lifecycle. This
-API returns the result synchronously or uses a promise to return the result.
-After the **onDestroy()** lifecycle callback is executed, the application may exit. Consequently, the asynchronous
-function (for example, asynchronously writing data to the database) in **onDestroy()** may fail to be executed.
-Using a Promise for asynchronous callback is recommended to prevent such issues.
+Called when a UIExtensionAbility is destroyed. You can clear resources and save data during this lifecycle. This API returns the result synchronously or uses a promise to return the result. After the **onDestroy()** lifecycle callback is executed, the application may exit. Consequently, the asynchronous function (for example, asynchronously writing data to the database) in **onDestroy()** may fail to be executed. Using a Promise for asynchronous callback is recommended to prevent such issues.
 
 **Since:** 10
 
@@ -165,8 +146,7 @@ export default class ShareExtAbility extends ShareExtensionAbility {
 onForeground(): void
 ```
 
-Called when a UIExtensionAbility is initially launched into the foreground or transitions from the background to
-the foreground. You can apply for resources when the UI becomes visible within this callback.
+Called when a UIExtensionAbility is initially launched into the foreground or transitions from the background to the foreground. You can apply for resources when the UI becomes visible within this callback.
 
 **Since:** 10
 
@@ -196,8 +176,7 @@ export default class ShareExtAbility extends ShareExtensionAbility {
 onSessionCreate(want: Want, session: UIExtensionContentSession): void
 ```
 
-Called when a [UIExtensionContentSession](arkts-app-ability-uiextensioncontentsession.md) instance is created.
-You can load a page through the UIExtensionContentSession instance within this callback.
+Called when a [UIExtensionContentSession](arkts-app-ability-uiextensioncontentsession.md) instance is created. You can load a page through the UIExtensionContentSession instance within this callback.
 
 **Since:** 10
 
@@ -242,8 +221,7 @@ export default class ShareExtAbility extends ShareExtensionAbility {
 onSessionDestroy(session: UIExtensionContentSession): void
 ```
 
-Called when a UIExtensionContentSession is destroyed. It informs applications that the UIExtensionContentSession
-instance is no longer available for use.
+Called when a UIExtensionContentSession is destroyed. It informs applications that the UIExtensionContentSession instance is no longer available for use.
 
 **Since:** 10
 

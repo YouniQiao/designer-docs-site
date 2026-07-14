@@ -6,10 +6,7 @@
 function cancelApplicationAutoStartup(info: AutoStartupInfo, callback: AsyncCallback<void>): void
 ```
 
-取消应用组件开机自启动。使用callback异步回调。
-从API version 21开始，该接口仅在Phone、2in1、Tablet和Wearable设备中正常调用，在其他设备上返回16000050错误码。
-从API version 18开始，该接口仅在2in1和Wearable设备中可正常调用，在其他设备上返回16000050错误码。
-对于API version 18之前版本，该接口仅在2in1设备中可正常调用，在其他设备上返回16000050错误码。
+取消应用组件开机自启动。使用callback异步回调。 从API version 21开始，该接口仅在Phone、2in1、Tablet和Wearable设备中正常调用，在其他设备上返回16000050错误码。 从API version 18开始，该接口仅在2in1和Wearable设备中可正常调用，在其他设备上返回16000050错误码。 对于API version 18之前版本，该接口仅在2in1设备中可正常调用，在其他设备上返回16000050错误码。
 
 **起始版本：** 11
 
@@ -46,10 +43,7 @@ function cancelApplicationAutoStartup(info: AutoStartupInfo, callback: AsyncCall
 function cancelApplicationAutoStartup(info: AutoStartupInfo): Promise<void>
 ```
 
-取消应用组件开机自启动。使用Promise异步回调。
-从API version 21开始，该接口仅在Phone、2in1、Tablet和Wearable设备中正常调用，在其他设备上返回16000050错误码。
-从API version 18开始，该接口仅在2in1和Wearable设备中可正常调用，在其他设备上返回16000050错误码。
-对于API version 18之前版本，该接口仅在2in1设备中可正常调用，在其他设备上返回16000050错误码。
+取消应用组件开机自启动。使用Promise异步回调。 从API version 21开始，该接口仅在Phone、2in1、Tablet和Wearable设备中正常调用，在其他设备上返回16000050错误码。 从API version 18开始，该接口仅在2in1和Wearable设备中可正常调用，在其他设备上返回16000050错误码。 对于API version 18之前版本，该接口仅在2in1设备中可正常调用，在其他设备上返回16000050错误码。
 
 **起始版本：** 11
 

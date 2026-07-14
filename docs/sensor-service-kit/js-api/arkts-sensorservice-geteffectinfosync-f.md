@@ -12,8 +12,7 @@ import { vibrator } from '@kit.SensorServiceKit';
 function getEffectInfoSync(effectId: string, param?: VibratorInfoParam): EffectInfo
 ```
 
-Obtains the preset vibration effect based on the device ID and vibrator ID to determine whether the preset
-vibration effect is supported.
+Obtains the preset vibration effect based on the device ID and vibrator ID to determine whether the preset vibration effect is supported.
 
 **Since:** 19
 

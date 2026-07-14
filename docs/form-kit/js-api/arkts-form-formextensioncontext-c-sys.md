@@ -1,13 +1,6 @@
 # FormExtensionContext
 
-The FormExtensionContext module, inherited from
-[ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md), provides the context environment for the
-[FormExtensionAbility](arkts-app-form-formextensionability.md).
-You can use the APIs of this module to start a FormExtensionAbility.
-
-> **NOTE**
-
-> - The APIs of this module can be used only in the stage model.
+The FormExtensionContext module, inherited from [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md), provides the context environment for the [FormExtensionAbility](arkts-app-form-formextensionability.md). You can use the APIs of this module to start a FormExtensionAbility. > **NOTE** > - The APIs of this module can be used only in the stage model.
 
 **Inheritance/Implementation:** FormExtensionContext extends [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md)
 
@@ -67,9 +60,7 @@ Connects this ability to a ServiceExtensionAbility.
 disconnectServiceExtensionAbility(connection: number, callback: AsyncCallback<void>): void
 ```
 
-Disconnects this ability from a **ServiceExtensionAbility** and after the successful disconnection, sets the
-**remote** object returned upon the connection to void. This API uses an asynchronous callback to return the
-result.
+Disconnects this ability from a **ServiceExtensionAbility** and after the successful disconnection, sets the **remote** object returned upon the connection to void. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -100,8 +91,7 @@ result.
 disconnectServiceExtensionAbility(connection: number): Promise<void>
 ```
 
-Disconnects this ability from a ServiceExtensionAbility and after the successful disconnection, sets the remote
-object returned upon the connection to void. This API uses a promise to return the result.
+Disconnects this ability from a ServiceExtensionAbility and after the successful disconnection, sets the remote object returned upon the connection to void. This API uses a promise to return the result.
 
 **Since:** 10
 

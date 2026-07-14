@@ -30,10 +30,7 @@ deviceIdList?: Array<string>
 isCloud : boolean
 ```
 
-表示是否需要实时从云端获取设备列表。
-
-- false：表示从设备获取。
-- true：表示从云端获取。
+表示是否需要实时从云端获取设备列表。 - false：表示从设备获取。 - true：表示从云端获取。
 
 **类型：** boolean
 

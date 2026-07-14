@@ -36,9 +36,7 @@ Permission usage status.
 callingTokenId?: number
 ```
 
-Identity of the caller application. This field is invalid when **activeStatus** is **INACTIVE**.
-
-Default value: **0**.
+Identity of the caller application. This field is invalid when **activeStatus** is **INACTIVE**. Default value: **0**.
 
 **Type:** number
 
@@ -70,10 +68,7 @@ ID of the device where the permission usage status change occurred.
 enhancedIdentity?: string
 ```
 
-Extension identity, used to identify additional identity information of the caller. This field is returned
-when it is necessary to distinguish permission usage records from different call sources within the same
-application.
-The maximum length is 48. Default value: Empty string.
+Extension identity, used to identify additional identity information of the caller. This field is returned when it is necessary to distinguish permission usage records from different call sources within the same application. The maximum length is 48. Default value: Empty string.
 
 **Type:** string
 
@@ -123,9 +118,7 @@ Token ID of the application whose permission usage changes are subscribed to.
 usedType?: PermissionUsedType
 ```
 
-Sensitive permission usage type. This value is invalid when activeStatus is INACTIVE.
-
-Default value: NORMAL_TYPE.
+Sensitive permission usage type. This value is invalid when activeStatus is INACTIVE. Default value: NORMAL_TYPE.
 
 **Type:** PermissionUsedType
 

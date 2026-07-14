@@ -6,8 +6,7 @@
 function queryAtomicServiceStartupRule(context: Context, appId: string): Promise<AtomicServiceStartupRule>
 ```
 
-查询嵌入式拉起[EmbeddableUIAbility](arkts-ability-embeddableuiability-c.md)的规则。使用Promise异步回调。
-该接口仅在Phone和Tablet设备中可正常调用，在其他设备中返回801错误码。
+查询嵌入式拉起[EmbeddableUIAbility](arkts-ability-embeddableuiability-c.md)的规则。使用Promise异步回调。 该接口仅在Phone和Tablet设备中可正常调用，在其他设备中返回801错误码。
 
 **起始版本：** 18
 

@@ -4,9 +4,7 @@
 type PrinterInfoQueryCallback = (printerInfo: PrinterInformation, ppdInfo: PpdInfo[]) => void
 ```
 
-Defines the callback type used in registering to listen for printerInfoQuery event.
-The value of printerInfo indicates the printer info.
-The value of ppdInfo indicates all the printer ppd info.
+Defines the callback type used in registering to listen for printerInfoQuery event. The value of printerInfo indicates the printer info. The value of ppdInfo indicates all the printer ppd info.
 
 **Since:** 24
 

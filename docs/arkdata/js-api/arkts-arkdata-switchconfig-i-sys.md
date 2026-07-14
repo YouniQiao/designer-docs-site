@@ -20,8 +20,7 @@ import { cloudData } from '@kit.ArkData';
 dbInfo: Record<string, DBSwitchInfo>
 ```
 
-Switch configuration information of a database. The key is the database name, and the value is the configuration
-information of the database.
+Switch configuration information of a database. The key is the database name, and the value is the configuration information of the database.
 
 **Type:** Record<string, DBSwitchInfo>
 

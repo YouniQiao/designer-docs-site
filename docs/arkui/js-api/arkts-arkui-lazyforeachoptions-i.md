@@ -12,8 +12,7 @@ Defines the options for LazyForEach.
 customComponentFreezeMode?: LazyForEachCustomComponentFreezeMode
 ```
 
-Freeze mode for cached custom nodes that have been removed from the
-component tree. Default value: LazyForEachCustomComponentFreezeMode.AUTO.
+Freeze mode for cached custom nodes that have been removed from the component tree. Default value: LazyForEachCustomComponentFreezeMode.AUTO.
 
 **Type:** LazyForEachCustomComponentFreezeMode
 
@@ -51,8 +50,7 @@ Memory optimization strategy for LazyForEach.
 releaseStrategy?: LazyForEachReleaseStrategy
 ```
 
-Resource release strategy for LazyForEach discarded nodes.
-Default value: LazyForEachReleaseStrategy.BATCH.
+Resource release strategy for LazyForEach discarded nodes. Default value: LazyForEachReleaseStrategy.BATCH.
 
 **Type:** LazyForEachReleaseStrategy
 

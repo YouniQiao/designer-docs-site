@@ -14,8 +14,7 @@
 borderWidth: EdgeWidth
 ```
 
-父组件（自定义组件）边框宽度。
-单位为： vp。
+父组件（自定义组件）边框宽度。 单位为： vp。
 
 **类型：** EdgeWidth
 
@@ -33,8 +32,7 @@ borderWidth: EdgeWidth
 margin: Margin
 ```
 
-父组件（自定义组件）margin信息。
-单位为： vp。
+父组件（自定义组件）margin信息。 单位为： vp。
 
 **类型：** Margin
 
@@ -52,8 +50,7 @@ margin: Margin
 padding: Padding
 ```
 
-父组件（自定义组件）padding信息。
-单位为： vp。
+父组件（自定义组件）padding信息。 单位为： vp。
 
 **类型：** Padding
 

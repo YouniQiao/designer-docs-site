@@ -6,9 +6,7 @@
 function acquireShareData(missionId: number, callback: AsyncCallback<Record<string, Object>>): void
 ```
 
-系统弹框通过该接口发起原子化服务分享，触发目标UIAbility的
-[onShare](arkts-ability-uiability-c.md#onshare-1)回调并返回分享数据。使用
-callback异步回调。
+系统弹框通过该接口发起原子化服务分享，触发目标UIAbility的 [onShare](arkts-ability-uiability-c.md#onshare-1)回调并返回分享数据。使用 callback异步回调。
 
 **起始版本：** 10
 
@@ -38,9 +36,7 @@ callback异步回调。
 function acquireShareData(missionId: number): Promise<Record<string, Object>>
 ```
 
-系统弹框通过该接口发起原子化服务分享，触发目标UIAbility的
-[onShare](arkts-ability-uiability-c.md#onshare-1)回调并返回分享数据。使用
-Promise异步回调。
+系统弹框通过该接口发起原子化服务分享，触发目标UIAbility的 [onShare](arkts-ability-uiability-c.md#onshare-1)回调并返回分享数据。使用 Promise异步回调。
 
 **起始版本：** 10
 

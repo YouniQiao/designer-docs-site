@@ -22,8 +22,7 @@ import { OnBodyStateResponse, subscribeAccelerometerOptions, ProximityResponse, 
 value: boolean
 ```
 
-Boolean value indicating whether the device is worn. The value **true** indicates that the device is worn, and the
-value **false** indicates the opposite.
+Boolean value indicating whether the device is worn. The value **true** indicates that the device is worn, and the value **false** indicates the opposite.
 
 **Type:** boolean
 

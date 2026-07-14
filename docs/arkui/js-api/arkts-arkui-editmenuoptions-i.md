@@ -12,8 +12,7 @@ EditMenuOptions
 onCreateMenu(menuItems: Array<TextMenuItem>): Array<TextMenuItem>
 ```
 
-Triggered when the menu is being created. Menu data can be configured within this callback. Both the input
-parameter and return value contain only level-1 menu items; level-2 menu items are not included.
+Triggered when the menu is being created. Menu data can be configured within this callback. Both the input parameter and return value contain only level-1 menu items; level-2 menu items are not included.
 
 **Since:** 12
 
@@ -70,8 +69,7 @@ Triggered when the specified menu item is clicked.
 onPrepareMenu?: OnPrepareMenuCallback
 ```
 
-Callback invoked before the menu is displayed after the text selection area changes. Menu data can be configured
-within this callback.
+Callback invoked before the menu is displayed after the text selection area changes. Menu data can be configured within this callback.
 
 **Type:** OnPrepareMenuCallback
 

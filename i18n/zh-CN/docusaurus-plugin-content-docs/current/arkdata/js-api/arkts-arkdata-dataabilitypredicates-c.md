@@ -69,9 +69,7 @@ dataAbilityPredicates.equalTo("NAME", "lisi")
 beginsWith(field: string, value: string): DataAbilityPredicates
 ```
 
-配置谓词以匹配数据类型为string且值以指定字符串开头的字段。
-
-此方法类似于SQL语句的“value%”。
+配置谓词以匹配数据类型为string且值以指定字符串开头的字段。 此方法类似于SQL语句的“value%”。
 
 **起始版本：** 7
 
@@ -223,9 +221,7 @@ dataAbilityPredicates.equalTo("NAME", "lisi")
 endsWith(field: string, value: string): DataAbilityPredicates
 ```
 
-配置谓词以匹配数据类型为string且值以指定字符串结尾的字段。
-
-此方法类似于SQL语句的“%value”。
+配置谓词以匹配数据类型为string且值以指定字符串结尾的字段。 此方法类似于SQL语句的“%value”。
 
 **起始版本：** 7
 
@@ -257,9 +253,7 @@ dataAbilityPredicates.endsWith("NAME", "se")
 equalTo(field: string, value: ValueType): DataAbilityPredicates
 ```
 
-配置谓词以匹配数据，数据的指定字段数据类型为ValueType且值等于指定值。
-
-此方法类似于SQL语句的“=”。
+配置谓词以匹配数据，数据的指定字段数据类型为ValueType且值等于指定值。 此方法类似于SQL语句的“=”。
 
 **起始版本：** 7
 
@@ -315,10 +309,10 @@ glob(field: string, value: string): DataAbilityPredicates
 ```TypeScript
 dataAbilityPredicates.glob("NAME", "?h*g")
 
-// 仅可匹配到"name"字段值为“Lisa” 
+// 仅可匹配到"NAME"字段值为"Lisa"
 dataAbilityPredicates.glob("NAME", "Lisa")
 
-// 仅可以匹配到"name"字段值为“lisa” 
+// 仅可以匹配到"NAME"字段值为"lisa"
 dataAbilityPredicates.glob("NAME", "lisa")
 
 ```
@@ -652,9 +646,7 @@ dataAbilityPredicates.lessThanOrEqualTo("AGE", 20)
 like(field: string, value: string): DataAbilityPredicates
 ```
 
-配置谓词以匹配数据类型为string且值类似于指定字符串的字段。
-
-此方法类似于SQL语句“like”。
+配置谓词以匹配数据类型为string且值类似于指定字符串的字段。 此方法类似于SQL语句“like”。
 
 **起始版本：** 7
 
@@ -750,9 +742,7 @@ dataAbilityPredicates.notBetween("AGE", 10, 50)
 notEqualTo(field: string, value: ValueType): DataAbilityPredicates
 ```
 
-配置谓词以匹配数据，数据的指定字段数据类型为ValueType且不等于指定值。
-
-此方法类似于SQL语句的“!=”。
+配置谓词以匹配数据，数据的指定字段数据类型为ValueType且不等于指定值。 此方法类似于SQL语句的“!=”。
 
 **起始版本：** 7
 
@@ -816,8 +806,7 @@ dataAbilityPredicates.notIn("NAME", ["Lisa", "Rose"])
 offsetAs(rowOffset: number): DataAbilityPredicates
 ```
 
-设置谓词查询结果的起始位置。需要同步调用[limitAs](arkts-arkdata-dataabilitypredicates-c.md#limitas-1)接口指定查询数量，否则无查询结果。查询指定偏移位置后的所有行时，
-[limitAs](arkts-arkdata-dataabilitypredicates-c.md#limitas-1)接口需传入参数-1。
+设置谓词查询结果的起始位置。需要同步调用[limitAs](arkts-arkdata-dataabilitypredicates-c.md#limitas-1)接口指定查询数量，否则无查询结果。查询指定偏移位置后的所有行时， [limitAs](arkts-arkdata-dataabilitypredicates-c.md#limitas-1)接口需传入参数-1。
 
 **起始版本：** 7
 
@@ -849,9 +838,7 @@ dataAbilityPredicates.equalTo("NAME", "Rose").offsetAs(3).limitAs(3)
 or(): DataAbilityPredicates
 ```
 
-将或条件添加到谓词中。
-
-此方法类似于SQL语句“or”。
+将或条件添加到谓词中。 此方法类似于SQL语句“or”。
 
 **起始版本：** 7
 
@@ -899,7 +886,7 @@ orderByAsc(field: string): DataAbilityPredicates
 **示例：**
 
 ```TypeScript
-// 先按“name”字段排序，相同时按“AGE”字段排序，其次按“SALARY”排序
+// 先按"NAME"字段排序，相同时按"AGE"字段排序，其次按"SALARY"排序
 dataAbilityPredicates.orderByAsc("NAME").orderByAsc("AGE").orderByAsc("SALARY")
 
 ```
@@ -931,7 +918,7 @@ orderByDesc(field: string): DataAbilityPredicates
 **示例：**
 
 ```TypeScript
-// 优先按“AGE”排序，相同时按“SALARY”排序
+// 优先按"AGE"排序，相同时按"SALARY"排序
 dataAbilityPredicates.orderByDesc("AGE").orderByDesc("SALARY")
 
 ```

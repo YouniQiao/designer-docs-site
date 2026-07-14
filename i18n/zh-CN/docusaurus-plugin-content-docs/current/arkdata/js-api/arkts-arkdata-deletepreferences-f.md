@@ -6,9 +6,7 @@
 function deletePreferences(context: Context, options: Options): Promise<void>
 ```
 
-从缓存中删除指定的Preferences实例，若Preferences实例有对应的持久化文件，则同时删除其持久化文件。使用Promise异步回调。
-
-调用该接口后，不建议再使用旧的Preferences实例进行数据操作，否则会导致数据一致性问题。
+从缓存中删除指定的Preferences实例，若Preferences实例有对应的持久化文件，则同时删除其持久化文件。使用Promise异步回调。 调用该接口后，不建议再使用旧的Preferences实例进行数据操作，否则会导致数据一致性问题。
 
 **起始版本：** 12
 

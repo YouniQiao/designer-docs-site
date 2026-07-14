@@ -1,8 +1,6 @@
 # CloudService (System API)
 
-Provides APIs for interacting with the cloud sync service.
-You need to inherit this class and implement APIs of this class.
-The system calls these APIs to connect to the cloud and use the cloud sync service.
+Provides APIs for interacting with the cloud sync service. You need to inherit this class and implement APIs of this class. The system calls these APIs to connect to the cloud and use the cloud sync service.
 
 **Since:** 11
 
@@ -22,9 +20,7 @@ import { cloudExtension } from '@kit.ArkData';
 connectAssetLoader(bundleName: string, database: Database): Promise<rpc.RemoteObject>
 ```
 
-Connects to an asset loader by obtaining a RemoteObject instance of AssetLoader,
-which is created by using createAssetLoaderStub. This API uses a promise to return the result.
-You can use this API to connect to the asset loader.
+Connects to an asset loader by obtaining a RemoteObject instance of AssetLoader, which is created by using createAssetLoaderStub. This API uses a promise to return the result. You can use this API to connect to the asset loader.
 
 **Since:** 11
 
@@ -45,14 +41,33 @@ You can use this API to connect to the asset loader.
 | --- | --- |
 | Promise&lt;rpc.RemoteObject&gt; | Promise used to return the RemoteObject instance of AssetLoader. |
 
+**Example**
+
+```TypeScript
+import { rpc } from '@kit.IPCKit';
+
+class MyAssetLoader implements cloudExtension.AssetLoader {
+  // ...
+}
+
+class MyCloudService implements cloudExtension.CloudService {
+  constructor() {}
+  async connectAssetLoader(bundleName: string, database: cloudExtension.Database): Promise<rpc.RemoteObject> {
+    // ...
+    console.info(`connect asset loader, bundle: ${bundleName}`);
+    return cloudExtension.createAssetLoaderStub(new MyAssetLoader());
+  }
+}
+
+```
+
 ## connectDB
 
 ```TypeScript
 connectDB(bundleName: string, database: Database): Promise<rpc.RemoteObject>
 ```
 
-Connects to a cloud database by obtaining a RemoteObject instance of CloudDB,
-which is created by using createCloudDBStub. This API uses a promise to return the result.
+Connects to a cloud database by obtaining a RemoteObject instance of CloudDB, which is created by using createCloudDBStub. This API uses a promise to return the result.
 
 **Since:** 11
 
@@ -73,14 +88,33 @@ which is created by using createCloudDBStub. This API uses a promise to return t
 | --- | --- |
 | Promise&lt;rpc.RemoteObject&gt; | Promise used to return the RemoteObject instance of CloudDB. |
 
+**Example**
+
+```TypeScript
+import { rpc } from '@kit.IPCKit';
+
+class MyCloudDB implements cloudExtension.CloudDB {
+  // ...
+}
+
+class MyCloudService implements cloudExtension.CloudService {
+  constructor() {}
+    // ...
+  async connectDB(bundleName: string, database: cloudExtension.Database): Promise<rpc.RemoteObject> {
+    console.info(`connect DB, bundleName: ${bundleName}`);
+    return cloudExtension.createCloudDBStub(new MyCloudDB());
+  }
+}
+
+```
+
 ## connectShareCenter
 
 ```TypeScript
 connectShareCenter(userId: number, bundleName: string): Promise<rpc.RemoteObject>
 ```
 
-Connects to ShareCenter by obtaining a RemoteObject instance of ShareCenter,
-which is created by using createShareServiceStub. This API uses a promise to return the result.
+Connects to ShareCenter by obtaining a RemoteObject instance of ShareCenter, which is created by using createShareServiceStub. This API uses a promise to return the result.
 
 **Since:** 11
 
@@ -239,8 +273,8 @@ Obtains the server information. This API uses a promise to return the result.
 ```TypeScript
 import { rpc } from '@kit.IPCKit';
 
-let test_space: number = 100;
-let test_userId: number = 1;
+let testSpace: number = 100;
+let testUserId: number = 1;
 
 class MyCloudService implements cloudExtension.CloudService {
   constructor() {}
@@ -251,9 +285,9 @@ class MyCloudService implements cloudExtension.CloudService {
     return {
       enableCloud: true,
       id: "test_id",
-      totalSpace: test_space,
-      remainingSpace: test_space,
-      user: test_userId,
+      totalSpace: testSpace,
+      remainingSpace: testSpace,
+      user: testUserId,
     };
   }
 }
@@ -293,20 +327,19 @@ Subscribes to data. This API uses a promise to return the result.
 **Example**
 
 ```TypeScript
-let test_time: number = 10;
+let testTime: number = 10;
 class MyCloudService implements cloudExtension.CloudService {
   constructor() {
   }
   // ...
   async subscribe(subInfo: Record<string, Array<cloudExtension.Database>>, expirationTime: number): Promise<cloudExtension.Result<cloudExtension.SubscribeInfo>> {
-    console.info
-    (`subscribe expirationTime: ${expirationTime}`);
+    console.info(`subscribe expirationTime: ${expirationTime}`);
     // ...
     return {
       code: cloudExtension.ErrorCode.SUCCESS,
       description: "subscribe success",
       value: {
-        expirationTime: test_time,
+        expirationTime: testTime,
         subscribe: {}
       }
     };
@@ -340,4 +373,20 @@ Unsubscribes from data changes in the cloud. This API uses a promise to return t
 | Type | Description |
 | --- | --- |
 | Promise&lt;number&gt; | Promise used to return the result. |
+
+**Example**
+
+```TypeScript
+class MyCloudService implements cloudExtension.CloudService {
+  constructor() {
+  }
+  // ...
+  async unsubscribe(unsubscribeInfo: Record<string, Array<string>>): Promise<number> {
+    console.info(`unsubscribe`);
+    // ...
+    return cloudExtension.ErrorCode.SUCCESS;
+  }
+}
+
+```
 

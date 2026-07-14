@@ -13,8 +13,7 @@ function getAngleModify(currentRotationMatrix: Array<number>, preRotationMatrix:
     callback: AsyncCallback<Array<number>>): void
 ```
 
-Obtains the angle change between two rotation matrices. This API uses an asynchronous callback to return the
-result.
+Obtains the angle change between two rotation matrices. This API uses an asynchronous callback to return the result.
 
 **Since:** 8
 

@@ -1,7 +1,6 @@
 # SubscribedAbstractProperty（系统接口）
 
-SubscribedAbstractProperty是[AppStorage](../../../../ui/state-management/arkts-appstorage.md)/
-[LocalStorage](../../../../ui/state-management/arkts-localstorage.md)中同步的属性。
+SubscribedAbstractProperty是[AppStorage](../../../../ui/state-management/arkts-appstorage.md)/ [LocalStorage](../../../../ui/state-management/arkts-localstorage.md)中同步的属性。
 
 **起始版本：** 9
 

@@ -405,8 +405,7 @@ struct Index {
 function off(type: 'rotate', fingers: number, receiver?: Callback<Rotate>): void
 ```
 
-Disables listening for rotation events of the touchpad. This API uses an asynchronous callback to return the
-result.
+Disables listening for rotation events of the touchpad. This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -799,8 +798,7 @@ struct Index {
 function off(type: 'fingerprint', receiver?: Callback<FingerprintEvent>): void
 ```
 
-Disables listening for fingerprint gesture input events. This API uses an asynchronous callback to return the
-result.
+Disables listening for fingerprint gesture input events. This API uses an asynchronous callback to return the result.
 
 **Since:** 12
 
@@ -1186,9 +1184,7 @@ struct Index {
 function off(type: 'keyPressed', receiver?: Callback<KeyEvent>): void
 ```
 
-Cancels listening for the press and release events of the specified key, which can be the **META_LEFT**,
-**META_RIGHT**, power, or volume key. This API must be used together with **inputMonitor.on ('keyPressed')**. This
-API uses an asynchronous callback to return the result.
+Cancels listening for the press and release events of the specified key, which can be the **META_LEFT**, **META_RIGHT**, power, or volume key. This API must be used together with **inputMonitor.on ('keyPressed')**. This API uses an asynchronous callback to return the result.
 
 **Since:** 15
 

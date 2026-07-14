@@ -12,11 +12,7 @@ import { dlpPermission } from '@kit.DataProtectionKit';
 function off(type: 'openDLPFile', listener?: Callback<AccessedDLPFileInfo>): void
 ```
 
-Unsubscribes from the DLP file open event. This API can be called only in non-DLP sandbox applications. After the
-API is successfully called, the application will no longer receive notifications for the DLP file open event.
-
-This API is usually called to release resources when the page is destroyed or the subscription is no longer
-needed.
+Unsubscribes from the DLP file open event. This API can be called only in non-DLP sandbox applications. After the API is successfully called, the application will no longer receive notifications for the DLP file open event. This API is usually called to release resources when the page is destroyed or the subscription is no longer needed.
 
 **Since:** 10
 

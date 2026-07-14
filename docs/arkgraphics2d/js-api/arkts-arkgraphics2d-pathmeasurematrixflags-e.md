@@ -1,7 +1,6 @@
 # PathMeasureMatrixFlags
 
-Enumerates the dimensions of matrix information in path measurement. It is often used in animation scenarios where
-objects move along a path.
+Enumerates the dimensions of matrix information in path measurement. It is often used in animation scenarios where objects move along a path.
 
 **Since:** 12
 

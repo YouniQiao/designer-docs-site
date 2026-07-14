@@ -22,8 +22,7 @@ import { url } from '@kit.ArkTS';
 [Symbol.iterator](): IterableIterator<[string, string]>
 ```
 
-Returns an iterator allowing to go through all key/value
-pairs contained in this object.
+Returns an iterator allowing to go through all key/value pairs contained in this object.
 
 **Since:** 7
 
@@ -90,12 +89,7 @@ paramsObject.append('fod', '3');
 constructor(init?: string[][] | Record<string, string> | string | URLSearchParams)
 ```
 
-A parameterized constructor used to create an URLSearchParams instance.
-As the input parameter of the constructor function, init supports four types.
-The input parameter is a character string two-dimensional array.
-The input parameter is the object list.
-The input parameter is a character string.
-The input parameter is the URLSearchParams object.
+A parameterized constructor used to create an URLSearchParams instance. As the input parameter of the constructor function, init supports four types. The input parameter is a character string two-dimensional array. The input parameter is the object list. The input parameter is a character string. The input parameter is the URLSearchParams object.
 
 **Since:** 7
 
@@ -159,8 +153,7 @@ paramsObject.delete('fod');
 entries(): IterableIterator<[string, string]>
 ```
 
-Returns an ES6 iterator. Each item of the iterator is a JavaScript Array.
-The first item of Array is name, and the second item of Array is value.
+Returns an ES6 iterator. Each item of the iterator is a JavaScript Array. The first item of Array is name, and the second item of Array is value.
 
 **Since:** 7
 
@@ -376,10 +369,7 @@ for (let key of keys) {
 set(name: string, value: string): void
 ```
 
-Sets the value associated with a given search parameter to the
-given value. If there were several matching values, this method
-deletes the others. If the search parameter doesn't exist, this
-method creates it.
+Sets the value associated with a given search parameter to the given value. If there were several matching values, this method deletes the others. If the search parameter doesn't exist, this method creates it.
 
 **Since:** 7
 

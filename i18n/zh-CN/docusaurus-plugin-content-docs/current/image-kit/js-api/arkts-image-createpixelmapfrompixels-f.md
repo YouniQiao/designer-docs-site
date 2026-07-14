@@ -6,11 +6,7 @@
 function createPixelMapFromPixels(pixels: ArrayBuffer, param: InitializationOptions): Promise<PixelMap>
 ```
 
-Creates a PixelMap from existing pixel data. The pixel data will be copied and converted to the specified
-pixel format to initialize the PixelMap.
-
-The following pixel formats are not supported for PixelMap creation:
-RGBA_1010102, YCBCR_P010, YCRCB_P010, ASTC_4x4.
+Creates a PixelMap from existing pixel data. The pixel data will be copied and converted to the specified pixel format to initialize the PixelMap. The following pixel formats are not supported for PixelMap creation: RGBA_1010102, YCBCR_P010, YCRCB_P010, ASTC_4x4.
 
 **起始版本：** 26.0.0
 
@@ -49,12 +45,12 @@ RGBA_1010102, YCBCR_P010, YCRCB_P010, ASTC_4x4.
 ```TypeScript
 import { BusinessError } from '@kit.BasicServicesKit';
 
-function DemoCreatePixelMapFromPixels() {
+function createPixelMapFromPixels() {
   const size: image.Size = {
     width: 6,
     height: 4
   };
-  const pixels = new ArrayBuffer(size.width * size.height * 4); // 4为RGBA类型像素格式的单位像素字节数。
+  const pixels = new ArrayBuffer(size.width * size.height * 4); // 4为RGBA类型像素格式的每像素字节数。
   const pixelsArr = new Uint8Array(pixels);
   for (let i = 0; i < pixelsArr.length; i += 4) {
     // RGBA_8888格式下，下列数组索引依次为：R通道、G通道、B通道、A通道。
@@ -66,15 +62,15 @@ function DemoCreatePixelMapFromPixels() {
   const config: image.InitializationOptions = {
     size,
     srcPixelFormat: image.PixelMapFormat.RGBA_8888, // 缓冲区内的源像素数据的像素格式。
-    pixelFormat: image.PixelMapFormat.RGBA_8888, // 新创建的PixelMap的像素格式。
+    pixelFormat: image.PixelMapFormat.BGRA_8888, // 新创建的PixelMap的像素格式。
     editable: true
   };
 
   image.createPixelMapFromPixels(pixels, config)
     .then((pixelMap: image.PixelMap) => {
-      console.info('Succeeded in creating PixelMap.');
-    }).catch((error: BusinessError) => {
-      console.error(`Failed to create PixelMap. Code is ${error.code}, message is ${error.message}`);
+      console.info('Succeeded in creating the PixelMap.');
+    }).catch((err: BusinessError) => {
+      console.error(`Failed to create the PixelMap. Code: ${err.code}, message: ${err.message}`);
     });
 }
 

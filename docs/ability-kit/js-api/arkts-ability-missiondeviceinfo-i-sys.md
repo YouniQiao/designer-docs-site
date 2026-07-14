@@ -1,7 +1,6 @@
 # MissionDeviceInfo (System API)
 
-The module defines the parameters required for registering a listener. It can be used as an input parameter in
-[registerMissionListener](arkts-ability-registermissionlistener-f-sys.md#registermissionlistener-2)
+The module defines the parameters required for registering a listener. It can be used as an input parameter in [registerMissionListener](arkts-ability-registermissionlistener-f-sys.md#registermissionlistener-2)
 
 **Since:** 9
 

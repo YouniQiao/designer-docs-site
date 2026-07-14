@@ -121,8 +121,7 @@ let fontCollection = text.FontCollection.getLocalInstance();
 loadFont(name: string, path: string | Resource): Promise<void>
 ```
 
-加载自定义字体。使用Promise异步回调。其中参数name对应的值需要在[TextStyle](arkts-arkgraphics2d-textstyle-i.md)中的fontFamilies属性配置，才能显示自定义字体效果，支持的字体文件格式包含：
-ttf、otf。
+加载自定义字体。使用Promise异步回调。其中参数name对应的值需要在[TextStyle](arkts-arkgraphics2d-textstyle-i.md)中的fontFamilies属性配置，才能显示自定义字体效果，支持的字体文件格式包含： ttf、otf。
 
 **起始版本：** 18
 
@@ -245,8 +244,7 @@ struct RenderTest {
 loadFontSyncWithCheck(name: string, path: string | Resource, index?: number): void
 ```
 
-同步接口，加载自定义字体。其中参数name对应的值需要在[TextStyle](arkts-arkgraphics2d-textstyle-i.md)中的fontFamilies属性配置，才能显示自定义字体效果。支持的字体文件格式包含：ttf、otf、
-ttc。
+同步接口，加载自定义字体。其中参数name对应的值需要在[TextStyle](arkts-arkgraphics2d-textstyle-i.md)中的fontFamilies属性配置，才能显示自定义字体效果。支持的字体文件格式包含：ttf、otf、 ttc。
 
 **起始版本：** 23
 
@@ -322,8 +320,7 @@ struct Index {
 loadFontWithCheck(name: string, path: string | Resource, index?: number): Promise<void>
 ```
 
-加载自定义字体，使用Promise异步回调。其中参数name对应的值需要在[TextStyle](arkts-arkgraphics2d-textstyle-i.md)中的fontFamilies属性配置，才能显示自定义字体效果，支持的字体文件格式包含：
-ttf、otf、ttc。
+加载自定义字体，使用Promise异步回调。其中参数name对应的值需要在[TextStyle](arkts-arkgraphics2d-textstyle-i.md)中的fontFamilies属性配置，才能显示自定义字体效果，支持的字体文件格式包含： ttf、otf、ttc。
 
 **起始版本：** 23
 
@@ -453,15 +450,7 @@ struct Index {
 unloadFont(name: string): Promise<void>
 ```
 
-卸载指定的自定义字体。使用Promise异步回调。
-
-使用此接口卸载字体别名所对应的自定义字体后，对应的自定义字体将不再可用。
-
-所有使用该字体别名的排版对象都应该被销毁重建。
-
-- 卸载不存在的字体别名不会产生任何效果且不会抛出错误。
-- 此操作仅影响后续字体使用。
-- 卸载正在使用的字体可能导致文本渲染异常（如乱码或字形缺失）。
+卸载指定的自定义字体。使用Promise异步回调。 使用此接口卸载字体别名所对应的自定义字体后，对应的自定义字体将不再可用。 所有使用该字体别名的排版对象都应该被销毁重建。 - 卸载不存在的字体别名不会产生任何效果且不会抛出错误。 - 此操作仅影响后续字体使用。 - 卸载正在使用的字体可能导致文本渲染异常（如乱码或字形缺失）。
 
 **起始版本：** 20
 
@@ -522,15 +511,7 @@ struct UnloadFontTest {
 unloadFontSync(name: string): void
 ```
 
-卸载指定的自定义字体，此接口为同步接口。
-
-使用此接口卸载字体别名所对应的自定义字体后，对应的自定义字体将不再可用。
-
-所有使用该字体别名的排版对象都应该被销毁重建。
-
-- 卸载不存在的字体别名不会产生任何效果且不会抛出错误。
-- 此操作仅影响后续字体使用。
-- 卸载正在使用的字体可能导致文本渲染异常（如乱码或字形缺失）。
+卸载指定的自定义字体，此接口为同步接口。 使用此接口卸载字体别名所对应的自定义字体后，对应的自定义字体将不再可用。 所有使用该字体别名的排版对象都应该被销毁重建。 - 卸载不存在的字体别名不会产生任何效果且不会抛出错误。 - 此操作仅影响后续字体使用。 - 卸载正在使用的字体可能导致文本渲染异常（如乱码或字形缺失）。
 
 **起始版本：** 20
 

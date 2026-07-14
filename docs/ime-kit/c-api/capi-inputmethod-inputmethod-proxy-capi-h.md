@@ -75,7 +75,7 @@ ShowTextInput.
 | Parameter | Description |
 | -- | -- |
 | [InputMethod_InputMethodProxy](capi-inputmethod-inputmethod-inputmethodproxy.md) *inputMethodProxy | Represents a pointer to an [InputMethod_InputMethodProxy](capi-inputmethod-inputmethod-inputmethodproxy.md) instance.The inputMethodProxy is obtained from {@link OH_InputMethodController_Attach}. |
-| [InputMethod_AttachOptions](capi-inputmethod-inputmethod-attachoptions.md) *options | Represents a pointer to an [InputMethod_AttachOptions](capi-inputmethod-inputmethod-attachoptions.md) instance which will be get value from.{@link ShowKeyboard} - property is always true,can not be changed,so no need to focus on[InputMethod_RequestKeyboardReason](capi-inputmethod-types-capi-h.md#inputmethod_requestkeyboardreason) - property is the requestKeyboardReason for show keyboard |
+| InputMethod_AttachOptions *options | Represents a pointer to an [InputMethod_AttachOptions](capi-inputmethod-inputmethod-attachoptions.md) instance which will be get value from.{@link ShowKeyboard} - property is always true,can not be changed,so no need to focus on[InputMethod_RequestKeyboardReason](capi-inputmethod-types-capi-h.md#inputmethod_requestkeyboardreason) - property is the requestKeyboardReason for show keyboard |
 
 **Returns**:
 
@@ -203,7 +203,7 @@ Send private command.
 | Parameter | Description |
 | -- | -- |
 | [InputMethod_InputMethodProxy](capi-inputmethod-inputmethod-inputmethodproxy.md) *inputMethodProxy | Represents a pointer to an [InputMethod_InputMethodProxy](capi-inputmethod-inputmethod-inputmethodproxy.md) instance.The inputMethodProxy is obtained from {@link OH_InputMethodController_Attach}. |
-| InputMethod_PrivateCommand *privateCommand[] | The private commands, which is defined in [InputMethod_PrivateCommand](capi-inputmethod-inputmethod-privatecommand.md). Max size 32KB. |
+| [InputMethod_PrivateCommand](capi-inputmethod-inputmethod-privatecommand.md) *privateCommand[] | The private commands, which is defined in [InputMethod_PrivateCommand](capi-inputmethod-inputmethod-privatecommand.md). Max size 32KB. |
 | size_t size | The size of privateCommand. Max is 5. |
 
 **Returns**:

@@ -12,10 +12,7 @@ import { asset } from '@kit.AssetStoreKit';
 function batchAdd(attributesArray: Array<AssetMap>): Promise<BatchResult>
 ```
 
-Adds assets in batches based on an attributes array.
-To set {@link Tag.IS_PERSISTENT}, the application must have the ohos.permission.STORE_PERSISTENT_DATA permission.
-
-Only assets with the same {@link Tag.GROUP_ID} and {@link Tag.REQUIRE_ATTR_ENCRYPTED} can be added in batches.
+Adds assets in batches based on an attributes array. To set {@link Tag.IS_PERSISTENT}, the application must have the ohos.permission.STORE_PERSISTENT_DATA permission. Only assets with the same {@link Tag.GROUP_ID} and {@link Tag.REQUIRE_ATTR_ENCRYPTED} can be added in batches.
 
 **Since:** 26.0.0
 

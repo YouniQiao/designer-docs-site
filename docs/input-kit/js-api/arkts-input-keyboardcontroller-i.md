@@ -1,12 +1,6 @@
 # KeyboardController
 
-Provides the capability of simulating key operations. The simulated key operation sequence must meet the following
-requirements:
-
-1. A key can only be pressed when it is in the released state, or when it is the most recently pressed key and
-has not been released.
-2. A key can only be released after it has been pressed.
-3. A maximum of five keys can be pressed and held simultaneously.
+Provides the capability of simulating key operations. The simulated key operation sequence must meet the following requirements: 1. A key can only be pressed when it is in the released state, or when it is the most recently pressed key and has not been released. 2. A key can only be released after it has been pressed. 3. A maximum of five keys can be pressed and held simultaneously.
 
 **Since:** 26.0.0
 

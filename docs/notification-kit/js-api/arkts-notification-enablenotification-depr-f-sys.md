@@ -6,8 +6,7 @@
 function enableNotification(bundle: BundleOption, enable: boolean, callback: AsyncCallback<void>): void
 ```
 
-Sets whether to enable notification for a specified application.
-This API uses an asynchronous callback to return the result.
+Sets whether to enable notification for a specified application. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 

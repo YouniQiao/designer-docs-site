@@ -12,8 +12,7 @@ import { adminManager } from '@kit.MDMKit';
 function getEnterpriseInfo(admin: Want, callback: AsyncCallback<EnterpriseInfo>): void
 ```
 
-Obtains the enterprise information of the device administrator application. This API uses an asynchronous callback
-to return the result.
+Obtains the enterprise information of the device administrator application. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -67,8 +66,7 @@ adminManager.getEnterpriseInfo(wantTemp, (err, result) => {
 function getEnterpriseInfo(admin: Want): Promise<EnterpriseInfo>
 ```
 
-Obtains the enterprise information of the device administrator application. This API uses a promise to return the
-result.
+Obtains the enterprise information of the device administrator application. This API uses a promise to return the result.
 
 **Since:** 9
 

@@ -1,8 +1,6 @@
 # ContactSyncProgress
 
-联系人同步进度的信息。
-
-包含同步ID、当前批次和总批次。
+联系人同步进度的信息。 包含同步ID、当前批次和总批次。
 
 **起始版本：** 26.0.0
 
@@ -14,9 +12,7 @@
 currentBatch: number
 ```
 
-表示要同步的当前联系人批次的标识符。
-
-值的范围是从1到totalBatches。
+表示要同步的当前联系人批次的标识符。 值的范围是从1到totalBatches。
 
 **类型：** number
 
@@ -34,9 +30,7 @@ currentBatch: number
 syncId: number
 ```
 
-表示用于同步所有联系人的同步标识符。
-
-该值应从0开始。
+表示用于同步所有联系人的同步标识符。 该值应从0开始。
 
 **类型：** number
 

@@ -6,15 +6,7 @@
 function getTask(taskId: number, taskName?: string): Task | undefined
 ```
 
-通过taskId或taskId与taskName获取对应的Task实例。
-
-> **说明**
->
-> - 如果传入的taskId查询不到对应的Task实例，则会返回**undefined**。
->
-> - 如果传入的taskId能够查询到对应的Task实例，但是调用**getTask**方法的线程和创建Task实例的线程不一致，则会返回**undefined**。
->
-> - 如果同时传入taskId和taskName，通过taskId查询到的Task实例的name和传入的taskName不一致，则会返回**undefined**。
+通过taskId或taskId与taskName获取对应的Task实例。 > **说明** > > - 如果传入的taskId查询不到对应的Task实例，则会返回**undefined**。 > > - 如果传入的taskId能够查询到对应的Task实例，但是调用**getTask**方法的线程和创建Task实例的线程不一致，则会返回**undefined**。 > > - 如果同时传入taskId和taskName，通过taskId查询到的Task实例的name和传入的taskName不一致，则会返回**undefined**。
 
 **起始版本：** 22
 

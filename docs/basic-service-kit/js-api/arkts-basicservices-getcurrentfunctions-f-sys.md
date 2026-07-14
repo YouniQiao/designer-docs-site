@@ -12,8 +12,7 @@ import { usbManager } from '@kit.BasicServicesKit';
 function getCurrentFunctions(): FunctionType
 ```
 
-Obtains the numeric mask combination for the USB function list in Device mode. When the developer mode is disabled,
-**undefined** may be returned if no device is connected. Check whether the return value of the API is empty.
+Obtains the numeric mask combination for the USB function list in Device mode. When the developer mode is disabled, **undefined** may be returned if no device is connected. Check whether the return value of the API is empty.
 
 **Since:** 9
 

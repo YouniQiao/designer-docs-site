@@ -4,8 +4,7 @@
 type DaltonizationColorFilter = 'Normal' | 'Protanomaly' | 'Deuteranomaly' | 'Tritanomaly'
 ```
 
-颜色滤镜功能开启时（[daltonizationState](arkts-accessibility-config-con-sys.md#daltonizationstate)设置为true)，颜色滤镜的配置(即设置的DaltonizationColorFilter的值)生效；颜色滤镜功能关闭
-时（[daltonizationState](arkts-accessibility-config-con-sys.md#daltonizationstate)设置为false)，显示为正常类型。
+颜色滤镜功能开启时（[daltonizationState](arkts-accessibility-config-con-sys.md#daltonizationstate)设置为true)，颜色滤镜的配置(即设置的DaltonizationColorFilter的值)生效；颜色滤镜功能关闭 时（[daltonizationState](arkts-accessibility-config-con-sys.md#daltonizationstate)设置为false)，显示为正常类型。
 
 **起始版本：** 9
 

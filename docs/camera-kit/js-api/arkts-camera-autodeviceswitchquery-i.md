@@ -1,10 +1,6 @@
 # AutoDeviceSwitchQuery
 
-**AutoDeviceSwitchQuery** is used to check whether a device supports automatic camera switch.
-[Automatic Camera Switching](../../../../media/camera/camera-auto-switch.md) is supported only on foldable devices.
-
-For details about how to enable this capability, see
-[enableAutoDeviceSwitch](arkts-camera-autodeviceswitch-i.md#enableautodeviceswitch-1).
+**AutoDeviceSwitchQuery** is used to check whether a device supports automatic camera switch. [Automatic Camera Switching](../../../../media/camera/camera-auto-switch.md) is supported only on foldable devices. For details about how to enable this capability, see [enableAutoDeviceSwitch](arkts-camera-autodeviceswitch-i.md#enableautodeviceswitch-1).
 
 **Since:** 13
 

@@ -1,12 +1,6 @@
 # SlowMotionVideoSession (System API)
 
-SlowMotionVideoSession extends Session, Flash, AutoExposure, Focus, Zoom, ColorEffect
-Implements a slow-motion video session, which sets the parameters of the slow-motion video mode and saves all
-[CameraInput](arkts-camera-camerainput-i.md) and [CameraOutput](arkts-camera-cameraoutput-i.md)
-instances required to run the camera. It inherits from [Session](arkts-camera-session-i.md).
-
-> **NOTE**
-> > In slow-motion video mode, only preview streams and video streams can be added.
+SlowMotionVideoSession extends Session, Flash, AutoExposure, Focus, Zoom, ColorEffect Implements a slow-motion video session, which sets the parameters of the slow-motion video mode and saves all [CameraInput](arkts-camera-camerainput-i.md) and [CameraOutput](arkts-camera-cameraoutput-i.md) instances required to run the camera. It inherits from [Session](arkts-camera-session-i.md). > **NOTE** > > In slow-motion video mode, only preview streams and video streams can be added.
 
 **Inheritance/Implementation:** SlowMotionVideoSession extends [Session](arkts-camera-session-i.md), [Flash](arkts-camera-flash-i.md), [AutoExposure](arkts-camera-autoexposure-i.md), [Focus](arkts-camera-focus-i.md), [Zoom](arkts-camera-zoom-i.md), [ColorEffect](arkts-camera-coloreffect-i-sys.md)
 
@@ -28,11 +22,7 @@ import { camera } from '@kit.CameraKit';
 isSlowMotionDetectionSupported(): boolean
 ```
 
-Checks whether the device supports slow-motion detection.
-
-> **NOTE**
-> > This API must be called after [commitConfig](arkts-camera-session-i.md#commitconfig-2) is
-> called.
+Checks whether the device supports slow-motion detection. > **NOTE** > > This API must be called after [commitConfig](arkts-camera-session-i.md#commitconfig-2) is > called.
 
 **Since:** 12
 
@@ -222,8 +212,7 @@ function unregisterSlowMotionStatus(slowMotionVideoSession: camera.SlowMotionVid
 on(type: 'error', callback: ErrorCallback): void
 ```
 
-Subscribes to HighResolutionPhotoSession error events. This API uses an asynchronous callback to return the
-result.
+Subscribes to HighResolutionPhotoSession error events. This API uses an asynchronous callback to return the result.
 
 **Since:** 12
 
@@ -403,14 +392,7 @@ function registerSlowMotionStatus(slowMotionVideoSession: camera.SlowMotionVideo
 setSlowMotionDetectionArea(area: Rect): void
 ```
 
-Sets an area for slow-motion detection.
-
-> **NOTE**
-> > Before the setting, call
-> [isSlowMotionDetectionSupported](arkts-camera-slowmotionvideosession-i-sys.md#isslowmotiondetectionsupported-1) to check
-> whether the device supports slow-motion detection.
-> This API must be called after [commitConfig](arkts-camera-session-i.md#commitconfig-2) is
-> called.
+Sets an area for slow-motion detection. > **NOTE** > > Before the setting, call > [isSlowMotionDetectionSupported](arkts-camera-slowmotionvideosession-i-sys.md#isslowmotiondetectionsupported-1) to check > whether the device supports slow-motion detection. > This API must be called after [commitConfig](arkts-camera-session-i.md#commitconfig-2) is > called.
 
 **Since:** 12
 

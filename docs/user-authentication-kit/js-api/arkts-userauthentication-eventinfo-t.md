@@ -4,9 +4,7 @@
 type EventInfo = AuthResultInfo | TipInfo
 ```
 
-Enumerates the authentication event information types.
-
-It consists of the fields in **Type** in the following table.
+Enumerates the authentication event information types. It consists of the fields in **Type** in the following table.
 
 **Since:** 9
 

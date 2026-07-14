@@ -18,8 +18,7 @@ import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventList
 done: boolean
 ```
 
-Whether the iteration is complete. The value **true** means the iteration is complete; the value **false** means
-the opposite.
+Whether the iteration is complete. The value **true** means the iteration is complete; the value **false** means the opposite.
 
 **Type:** boolean
 

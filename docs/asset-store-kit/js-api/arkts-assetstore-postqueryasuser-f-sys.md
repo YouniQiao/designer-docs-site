@@ -12,10 +12,7 @@ import { asset } from '@kit.AssetStoreKit';
 function postQueryAsUser(userId:number, handle: AssetMap): Promise<void>
 ```
 
-Performs postprocessing for the asset query in the specified user space. This API is used when user authentication
-is required for the access to an asset. This API must be used with
-[asset.preQueryAsUser](arkts-assetstore-prequeryasuser-f-sys.md#prequeryasuser-1) together.
-This API uses a promise to return the result.
+Performs postprocessing for the asset query in the specified user space. This API is used when user authentication is required for the access to an asset. This API must be used with [asset.preQueryAsUser](arkts-assetstore-prequeryasuser-f-sys.md#prequeryasuser-1) together. This API uses a promise to return the result.
 
 **Since:** 12
 

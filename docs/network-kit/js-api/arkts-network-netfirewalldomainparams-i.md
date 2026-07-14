@@ -18,8 +18,7 @@ import { netFirewall } from '@kit.NetworkKit';
 domain: string
 ```
 
-Domain: when isWildcard is false, the complete domain that needs to be determined;
-When isWildcard is true, fuzzy domain only support domains like *.openharmony.cn; *.com.
+Domain: when isWildcard is false, the complete domain that needs to be determined; When isWildcard is true, fuzzy domain only support domains like *.openharmony.cn; *.com.
 
 **Type:** string
 

@@ -12,9 +12,7 @@ import { bluetoothManager } from '@kit.MDMKit';
 function addDisallowedBluetoothProtocols(admin: Want, accountId: number,  protocols: Array<Protocol>): void
 ```
 
-Adds disallowed Bluetooth protocols. Specified users cannot use the disallowed Bluetooth protocols to send files to
-other devices. This API is used to disable the GATT or SPP protocol, which does not take effect for system services
-and system applications.
+Adds disallowed Bluetooth protocols. Specified users cannot use the disallowed Bluetooth protocols to send files to other devices. This API is used to disable the GATT or SPP protocol, which does not take effect for system services and system applications.
 
 **Since:** 20
 

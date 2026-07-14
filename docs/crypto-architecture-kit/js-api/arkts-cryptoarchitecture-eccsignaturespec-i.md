@@ -1,10 +1,6 @@
 # EccSignatureSpec
 
-Represents the ECC/SM2 signature data that contains (r, s).
-
-> **NOTE**
->
-> **r** and **s** are each 256 bits long.
+Represents the ECC/SM2 signature data that contains (r, s). > **NOTE** > > **r** and **s** are each 256 bits long.
 
 **Since:** 20
 
@@ -22,8 +18,7 @@ import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 r: bigint
 ```
 
-Randomized value derived from the elliptic curve calculation using the ephemeral private key during signature
-generation.
+Randomized value derived from the elliptic curve calculation using the ephemeral private key during signature generation.
 
 **Type:** bigint
 

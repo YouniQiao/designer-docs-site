@@ -164,10 +164,7 @@ Internal product model. This parameter is left unspecified by default.
 isLocalDevice: boolean
 ```
 
-Whether the device is a local device.
-
-- **false**: non-local device.
-- **true**: local device.
+Whether the device is a local device. - **false**: non-local device. - **true**: local device.
 
 **Type:** boolean
 

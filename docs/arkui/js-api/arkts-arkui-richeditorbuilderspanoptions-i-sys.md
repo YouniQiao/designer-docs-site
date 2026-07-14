@@ -12,8 +12,7 @@ Sets the offset and style of the builder.
 dragBackgroundColor? : ColorMetrics
 ```
 
-Background color of the builder when it is dragged independently. If no valid value is specified, the default color
-is used.
+Background color of the builder when it is dragged independently. If no valid value is specified, the default color is used.
 
 **Type:** ColorMetrics
 
@@ -31,10 +30,7 @@ is used.
 isDragShadowNeeded?: boolean
 ```
 
-Whether to apply a shadow when the builder is dragged independently. If no valid value is specified, a shadow is
-applied. The value **true** means to apply a shadow, and **false** means the opposite.
-
-Default value: **true**
+Whether to apply a shadow when the builder is dragged independently. If no valid value is specified, a shadow is applied. The value **true** means to apply a shadow, and **false** means the opposite. Default value: **true**
 
 **Type:** boolean
 

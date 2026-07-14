@@ -12,8 +12,7 @@ import { appRecovery } from '@kit.AbilityKit';
 function enableAppRecovery(restart?: RestartFlag, saveOccasion?: SaveOccasionFlag, saveMode?: SaveModeFlag) : void
 ```
 
-Enables application recovery. After this API is called, the first ability that is displayed when the application is
-started from the initiator can be restored.
+Enables application recovery. After this API is called, the first ability that is displayed when the application is started from the initiator can be restored.
 
 **Since:** 9
 

@@ -1,7 +1,6 @@
 # GeneralCallbacks (System API)
 
-General callbacks for both backup and restore procedure.
-The backup service will notify the client by these callbacks.
+General callbacks for both backup and restore procedure. The backup service will notify the client by these callbacks.
 
 **Since:** 10
 
@@ -21,8 +20,7 @@ import { backup } from '@kit.CoreFileKit';
 onProcess(bundleName: string, process: string): void
 ```
 
-Callback called when the backup_sa service return result information.
-The first return string parameter indicates the result of the bundle.
+Callback called when the backup_sa service return result information. The first return string parameter indicates the result of the bundle.
 
 **Since:** 12
 
@@ -60,9 +58,7 @@ The first return string parameter indicates the result of the bundle.
 onResultReport(bundleName: string, result: string): void
 ```
 
-Callback called when the backup service return result information.
-The first return string parameter indicates the bundleName that triggers the callback.
-The second return string parameter indicates the result of the bundle.
+Callback called when the backup service return result information. The first return string parameter indicates the bundleName that triggers the callback. The second return string parameter indicates the result of the bundle.
 
 **Since:** 12
 
@@ -129,8 +125,7 @@ Callback called when the backup service dies unexpectedly.
 onBackupSizeReport?: OnBackupSizeReport
 ```
 
-Callback called when the backup_sa service return result information.
-The first return string parameter indicates the result of the scanned bundle datasize.
+Callback called when the backup_sa service return result information. The first return string parameter indicates the result of the scanned bundle datasize.
 
 **Type:** OnBackupSizeReport
 
@@ -146,10 +141,7 @@ The first return string parameter indicates the result of the scanned bundle dat
 onBundleBegin: AsyncCallback<string, void | string>
 ```
 
-Callback called when a backup/restore procedure for an bundle is started.
-The first return string parameter indicates the name of the bundle.
-The second return string parameter indicates that when BusinessError errors occur,
-the callback data is the name of the bundle.
+Callback called when a backup/restore procedure for an bundle is started. The first return string parameter indicates the name of the bundle. The second return string parameter indicates that when BusinessError errors occur, the callback data is the name of the bundle.
 
 **Type:** AsyncCallback<string, void | string>
 
@@ -165,10 +157,7 @@ the callback data is the name of the bundle.
 onBundleEnd: AsyncCallback<string, void | string>
 ```
 
-Callback called when a backup/restore procedure for an bundle ends successfully or gets aborted unexpectedly.
-The first return string parameter indicates the name of the bundle.
-The second return string parameter indicates that when BusinessError errors occur,
-the callback data is the name of the bundle.
+Callback called when a backup/restore procedure for an bundle ends successfully or gets aborted unexpectedly. The first return string parameter indicates the name of the bundle. The second return string parameter indicates that when BusinessError errors occur, the callback data is the name of the bundle.
 
 **Type:** AsyncCallback<string, void | string>
 
@@ -184,9 +173,7 @@ the callback data is the name of the bundle.
 onFileReady: AsyncCallback<File>
 ```
 
-Callback called when the backup service tries to send files to the client.
-The File argument indicates a file to send to the client.
-The returned file is owned by the backup service and will be cleaned by the service once the file is closed.
+Callback called when the backup service tries to send files to the client. The File argument indicates a file to send to the client. The returned file is owned by the backup service and will be cleaned by the service once the file is closed.
 
 **Type:** AsyncCallback<File>
 
@@ -202,9 +189,7 @@ The returned file is owned by the backup service and will be cleaned by the serv
 onFileReadyBatch?: OnFileReadyBatch
 ```
 
-Callback called when the backup service tries to send files to the client.
-The File argument indicates a file to send to the client.
-The returned file is owned by the backup service and will be cleaned by the service once the file is closed.
+Callback called when the backup service tries to send files to the client. The File argument indicates a file to send to the client. The returned file is owned by the backup service and will be cleaned by the service once the file is closed.
 
 **Type:** OnFileReadyBatch
 
@@ -222,10 +207,7 @@ The returned file is owned by the backup service and will be cleaned by the serv
 onMigrateResult?: AsyncCallback<string, void | string>
 ```
 
-Callback called when the migrate result is reported.
-The first return string parameter indicates the name of the bundle.
-The second return string parameter indicates that when BusinessError errors occur,
-the callback data is the name of the bundle.
+Callback called when the migrate result is reported. The first return string parameter indicates the name of the bundle. The second return string parameter indicates that when BusinessError errors occur, the callback data is the name of the bundle.
 
 **Type:** AsyncCallback<string, void | string>
 

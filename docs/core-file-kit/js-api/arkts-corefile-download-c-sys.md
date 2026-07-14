@@ -1,7 +1,6 @@
 # Download (System API)
 
-Provides APIs for downloading image files to **Gallery**. Before using the APIs of **Download**, you need to create
-a **Download** instance.
+Provides APIs for downloading image files to **Gallery**. Before using the APIs of **Download**, you need to create a **Download** instance.
 
 **Since:** 10
 
@@ -285,12 +284,7 @@ download.start(uri, (err: BusinessError) => {
 stop(uri: string): Promise<void>
 ```
 
-Stops downloading a cloud file. This API uses a promise to return the result.
-
-> **NOTE**
->
-> Calling **stop** will terminate the download of the current file and clear the cache file. You can use
-> **start** to start the download again.
+Stops downloading a cloud file. This API uses a promise to return the result. > **NOTE** > > Calling **stop** will terminate the download of the current file and clear the cache file. You can use > **start** to start the download again.
 
 **Since:** 10
 
@@ -342,12 +336,7 @@ download.stop(uri).then(() => {
 stop(uri: string, callback: AsyncCallback<void>): void
 ```
 
-Stops downloading a cloud file. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> Calling **stop** will terminate the download of the current file and clear the cache file. You can use
-> **start** to start the download again.
+Stops downloading a cloud file. This API uses an asynchronous callback to return the result. > **NOTE** > > Calling **stop** will terminate the download of the current file and clear the cache file. You can use > **start** to start the download again.
 
 **Since:** 10
 

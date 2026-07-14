@@ -1,7 +1,6 @@
 # ScrollActionProposal
 
-智慧手势滚动动作处理，默认方向为向前滚动，包括向右和向下。当通过[registerMonitor](arkts-arkui-smartgesturecontroller-c.md#registermonitor-1)接口动态自定义智慧手势行为时，设置返回值
-[GestureHandlingResolution](arkts-arkui-gesturehandlingresolution-c.md)的selectedProposal为该类型对象，会触发目标组件的滚动操作。
+智慧手势滚动动作处理，默认方向为向前滚动，包括向右和向下。当通过[registerMonitor](arkts-arkui-smartgesturecontroller-c.md#registermonitor-1)接口动态自定义智慧手势行为时，设置返回值 [GestureHandlingResolution](arkts-arkui-gesturehandlingresolution-c.md)的selectedProposal为该类型对象，会触发目标组件的滚动操作。
 
 **继承/实现关系：** ScrollActionProposal extends [TargetedGestureProposal](arkts-arkui-targetedgestureproposal-c.md)
 
@@ -38,11 +37,7 @@ constructor(node: FrameNode, distance: number)
 distance?: number
 ```
 
-智慧手势滚动距离。
-
-取值范围：[0, +∞)，小于0时按0处理。
-
-单位为vp。
+智慧手势滚动距离。 取值范围：[0, +∞)，小于0时按0处理。 单位为vp。
 
 **类型：** number
 

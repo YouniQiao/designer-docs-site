@@ -1,9 +1,6 @@
 # AccessibilityElement
 
-无障碍节点元素。在调用 **AccessibilityElement** 的 API 之前，应该调用
-[AccessibilityExtensionContext.getAccessibilityFocusedElement()](arkts-accessibility-accessibilityextensioncontext-c-sys.md#getaccessibilityfocusedelement-1)
-或 [AccessibilityExtensionContext.getRootInActiveWindow()](arkts-accessibility-accessibilityextensioncontext-c-sys.md#getrootinactivewindow-1)
-来获取一个 **AccessibilityElement** 实例。
+无障碍节点元素。在调用 **AccessibilityElement** 的 API 之前，应该调用 [AccessibilityExtensionContext.getAccessibilityFocusedElement()](arkts-accessibility-accessibilityextensioncontext-c-sys.md#getaccessibilityfocusedelement-1) 或 [AccessibilityExtensionContext.getRootInActiveWindow()](arkts-accessibility-accessibilityextensioncontext-c-sys.md#getrootinactivewindow-1) 来获取一个 **AccessibilityElement** 实例。
 
 **起始版本：** 9
 

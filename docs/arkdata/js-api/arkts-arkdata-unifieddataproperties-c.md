@@ -1,7 +1,6 @@
 # UnifiedDataProperties
 
-Defines the properties of the data records in the unified data object, including the timestamp, tag, pasting range,
-and additional data.
+Defines the properties of the data records in the unified data object, including the timestamp, tag, pasting range, and additional data.
 
 **Since:** 12
 
@@ -37,8 +36,7 @@ Object of the dictionary type used to set other properties. The default value is
 getDelayData?: GetDelayData
 ```
 
-Callback for obtaining the deferred data. Currently, it can be used only in the pasteboard application of the
-same device. The default value is **undefined**.
+Callback for obtaining the deferred data. Currently, it can be used only in the pasteboard application of the same device. The default value is **undefined**.
 
 **Type:** GetDelayData
 
@@ -56,8 +54,7 @@ same device. The default value is **undefined**.
 shareOptions?: ShareOptions
 ```
 
-Range, in which [UnifiedData](arkts-arkdata-unifieddataproperties-c.md) can be used. The default value is
-**CROSS_APP**.
+Range, in which [UnifiedData](arkts-arkdata-unifieddataproperties-c.md) can be used. The default value is **CROSS_APP**.
 
 **Type:** ShareOptions
 
@@ -93,8 +90,7 @@ Customized tag. The default value is an empty string.
 readonly timestamp?: Date
 ```
 
-Timestamp when [UnifiedData](arkts-arkdata-unifieddataproperties-c.md) is generated. The default value is
-January 1, 1970 (UTC).
+Timestamp when [UnifiedData](arkts-arkdata-unifieddataproperties-c.md) is generated. The default value is January 1, 1970 (UTC).
 
 **Type:** Date
 

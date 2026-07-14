@@ -68,8 +68,7 @@ When set to Enter, slides in from the bottom. When set to Exit, slides out to th
 START = 5
 ```
 
-Left-to-right scripts: When set to Enter, slides in from the left; when set to Exit, slides out to the left. Right-
-to-left scripts: When set to Enter, slides in from the right; when set to Exit, slides out to the right.
+Left-to-right scripts: When set to Enter, slides in from the left; when set to Exit, slides out to the left. Right- to-left scripts: When set to Enter, slides in from the right; when set to Exit, slides out to the right.
 
 **Since:** 12
 
@@ -85,8 +84,7 @@ to-left scripts: When set to Enter, slides in from the right; when set to Exit, 
 END = 6
 ```
 
-Left-to-right scripts: When set to Enter, slides in from the right; when set to Exit, slides out to the right.
-Right-to-left scripts: When set to Enter, slides in from the left; when set to Exit, slides out to the left.
+Left-to-right scripts: When set to Enter, slides in from the right; when set to Exit, slides out to the right. Right-to-left scripts: When set to Enter, slides in from the left; when set to Exit, slides out to the left.
 
 **Since:** 12
 

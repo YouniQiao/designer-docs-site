@@ -12,11 +12,7 @@ CounterOptions定义Counter类型及样式。
 dateOptions?: DateStyleOptions
 ```
 
-日期型内联型Counter的样式。
-
-默认值：显示0001/01/01的日期型内联型Counter。
-
-值为undefined时，按默认值处理。
+日期型内联型Counter的样式。 默认值：显示0001/01/01的日期型内联型Counter。 值为undefined时，按默认值处理。
 
 **类型：** DateStyleOptions
 
@@ -34,11 +30,7 @@ dateOptions?: DateStyleOptions
 direction?: Direction
 ```
 
-布局方向。
-
-默认值：Direction.Auto
-
-值为undefined时，按默认值处理。
+布局方向。 默认值：Direction.Auto 值为undefined时，按默认值处理。
 
 **类型：** Direction
 
@@ -56,11 +48,7 @@ direction?: Direction
 inlineOptions?: InlineStyleOptions
 ```
 
-普通数字内联调节型Counter的样式。
-
-默认值：显示计数器为0的普通数字内联调节型Counter。
-
-值为undefined时，按默认值处理。
+普通数字内联调节型Counter的样式。 默认值：显示计数器为0的普通数字内联调节型Counter。 值为undefined时，按默认值处理。
 
 **类型：** InlineStyleOptions
 
@@ -78,11 +66,7 @@ inlineOptions?: InlineStyleOptions
 numberOptions?: NumberStyleOptions
 ```
 
-列表型和紧凑型Counter的样式。
-
-默认值：显示计数器为0的列表型或紧凑型Counter。
-
-值为undefined时，按默认值处理。
+列表型和紧凑型Counter的样式。 默认值：显示计数器为0的列表型或紧凑型Counter。 值为undefined时，按默认值处理。
 
 **类型：** NumberStyleOptions
 

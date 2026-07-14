@@ -14,8 +14,7 @@
 appIndex: number
 ```
 
-应用分身ID。
-取值范围为全体整数。
+应用分身ID。 取值范围为全体整数。
 
 **类型：** number
 
@@ -69,8 +68,7 @@ bundleName: string
 userId: number
 ```
 
-用户ID。
-取值范围为全体整数。
+用户ID。 取值范围为全体整数。
 
 **类型：** number
 

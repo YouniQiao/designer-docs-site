@@ -1,8 +1,6 @@
 # ContainerReaderInterface
 
-Defines the ContainerReader Component.
-Used for reading and analyzing container layout information based on size breakpoints in dynamic scenarios.
-Provides container dimension analysis and breakpoint detection capabilities.
+Defines the ContainerReader Component. Used for reading and analyzing container layout information based on size breakpoints in dynamic scenarios. Provides container dimension analysis and breakpoint detection capabilities.
 
 **Since:** 26.0.0
 
@@ -20,8 +18,7 @@ import { BreakpointOptions, ContainerReader, ContainerReaderAttribute } from '@k
 (value: ContainerReaderInfo): ContainerReaderAttribute
 ```
 
-Sets the container reading configuration for ContainerReader component.
-Configures the size parameters and breakpoint rules for container layout analysis.
+Sets the container reading configuration for ContainerReader component. Configures the size parameters and breakpoint rules for container layout analysis.
 
 **Since:** 26.0.0
 

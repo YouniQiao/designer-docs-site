@@ -12,11 +12,7 @@
 max?: number
 ```
 
-- max大于0时，表示数据的最大值。
-
-- max小于等于0时，max等于value数组各项的和，按比例显示。
-
-默认值：100
+- max大于0时，表示数据的最大值。 - max小于等于0时，max等于value数组各项的和，按比例显示。 默认值：100
 
 **类型：** number
 
@@ -34,9 +30,7 @@ max?: number
 type?: DataPanelType
 ```
 
-数据面板的类型（不支持动态修改）。
-
-默认值：DataPanelType.Circle
+数据面板的类型（不支持动态修改）。 默认值：DataPanelType.Circle
 
 **类型：** DataPanelType
 

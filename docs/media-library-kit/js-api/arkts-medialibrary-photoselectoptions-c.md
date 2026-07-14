@@ -1,10 +1,10 @@
 # PhotoSelectOptions
 
-PhotoSelectOptions extends base class BaseSelectOptions
+Defines additional options for selecting media assets from Gallery. It inherits from **BaseSelectOptions**. It is used to start the picker of the corresponding user ID space.
 
 **Inheritance/Implementation:** PhotoSelectOptions extends [BaseSelectOptions](arkts-medialibrary-baseselectoptions-c.md)
 
-**Since:** 12
+**Since:** 10
 
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -20,7 +20,7 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 completeButtonText?: CompleteButtonText
 ```
 
-Complete button text
+Text displayed on the complete button. The complete button is located in the lower-right corner of the page. It is used by users to signify that they have finished selecting images.
 
 **Type:** CompleteButtonText
 
@@ -36,7 +36,7 @@ Complete button text
 contextRecoveryInfo?: ContextRecoveryInfo
 ```
 
-Context recovery information for restoring the last selection session.
+Information for restoring the PhotoPicker's state from the last exit. When the selection process is complete, the PhotoPicker returns **contextRecoveryInfo** to the application. The application can then use the information to restore the PhotoPicker's state and the last viewed grid interface the next time it starts the PhotoPicker.
 
 **Type:** ContextRecoveryInfo
 
@@ -52,7 +52,7 @@ Context recovery information for restoring the last selection session.
 isDestroyedWithNavigation?: boolean
 ```
 
-Support destruction with navigation.
+Whether destruction with [Navigation](Navigation) is supported. **true** if supported, **false** otherwise. The default value is **false**.
 
 **Type:** boolean
 
@@ -70,7 +70,7 @@ Support destruction with navigation.
 isEditSupported?: boolean
 ```
 
-Support editing photos.
+Whether the image can be edited. **true** if editable, **false** otherwise.
 
 **Type:** boolean
 
@@ -86,7 +86,7 @@ Support editing photos.
 isOriginalSupported?: boolean
 ```
 
-Support select original photo or not
+Whether to display the button for selecting the original image. **true** to display, **false** otherwise. The default value is **false**.
 
 **Type:** boolean
 
@@ -102,7 +102,7 @@ Support select original photo or not
 isReturnToPhotoBrowserEnabled?: boolean
 ```
 
-In single selection mode, supports returning to the photo browser page after taking and confirming a photo.
+Whether to automatically switch to the full image preview mode after a photo is taken in single-selection mode. **true** means to switch, and **false** means the opposite. The default value is **false**. Note: This parameter takes effect only when [SingleSelectionMode](arkts-medialibrary-singleselectionmode-e.md) is set to **BROWSER_MODE** or **BROWSER_AND_SELECT_MODE** and [BaseSelectOptions.isPreviewForSingleSelectionSupported](arkts-medialibrary-baseselectoptions-c.md) is set to **true**.
 
 **Type:** boolean
 
@@ -156,7 +156,7 @@ Support selection order adjustment.
 maxPhotoSelectNumber?: number
 ```
 
-Support setting the max photo select number.
+Maximum number of photos that can be selected. A maximum of 500 photos can be selected. The default value is **500**.
 
 **Type:** number
 
@@ -174,7 +174,7 @@ Support setting the max photo select number.
 maxVideoSelectNumber?: number
 ```
 
-Support setting the max video select number.
+Maximum number of videos that can be selected. A maximum of 500 videos can be selected. The default value is **500**.
 
 **Type:** number
 
@@ -192,7 +192,7 @@ Support setting the max video select number.
 subWindowName?: string
 ```
 
-SubWindow name
+Name of the child window.
 
 **Type:** string
 

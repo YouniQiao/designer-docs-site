@@ -1,8 +1,6 @@
 # AtManager
 
-Program access control management class, providing capabilities such as permission verification, runtime
-permission dialog box request, settings page authorization guidance, global switch request, and permission
-status monitoring. Obtain an instance through [createAtManager](arkts-ability-createatmanager-f.md#createatmanager-1).
+Program access control management class, providing capabilities such as permission verification, runtime permission dialog box request, settings page authorization guidance, global switch request, and permission status monitoring. Obtain an instance through [createAtManager](arkts-ability-createatmanager-f.md#createatmanager-1).
 
 **Since:** 8
 
@@ -20,13 +18,7 @@ import { Context, Permissions, PermissionRequestResult } from '@kit.AbilityKit';
 checkAccessToken(tokenID: number, permissionName: Permissions): Promise<GrantStatus>
 ```
 
-Verifies whether an app has been granted the specified permission. After the call is successful, the
-authorization status of the current permission is returned. The developer can decide accordingly whether to
-directly execute subsequent services, continue to initiate a permission request, or guide the user to go to
-system settings to modify the authorization status. This API uses a promise to return the result.
-
-Applicable to scenarios where a pre-permission check is performed before an app accesses protected resources
-such as the camera, microphone, or location.
+Verifies whether an app has been granted the specified permission. After the call is successful, the authorization status of the current permission is returned. The developer can decide accordingly whether to directly execute subsequent services, continue to initiate a permission request, or guide the user to go to system settings to modify the authorization status. This API uses a promise to return the result. Applicable to scenarios where a pre-permission check is performed before an app accesses protected resources such as the camera, microphone, or location.
 
 **Since:** 9
 
@@ -83,17 +75,7 @@ atManager.checkAccessToken(tokenID, permissionName).then((data: abilityAccessCtr
 checkAccessTokenSync(tokenID: number, permissionName: Permissions): GrantStatus
 ```
 
-Verifies whether an app has been granted the specified permission, and synchronously returns the authorization
-status of the permission. The developer can decide accordingly whether to directly execute subsequent service
-processes, continue to initiate a permission request, or guide the user to go to the settings page to modify the
-authorization status.
-
-Compared with [checkAccessToken](arkts-ability-atmanager-i.md#checkaccesstoken-1), this API returns the
-authorization status synchronously, making it suitable for permission verification scenarios that do not require
-asynchronous processing.
-
-Applicable to scenarios where a pre-permission check is performed before an app accesses protected resources
-such as the camera, microphone, or location.
+Verifies whether an app has been granted the specified permission, and synchronously returns the authorization status of the permission. The developer can decide accordingly whether to directly execute subsequent service processes, continue to initiate a permission request, or guide the user to go to the settings page to modify the authorization status. Compared with [checkAccessToken](arkts-ability-atmanager-i.md#checkaccesstoken-1), this API returns the authorization status synchronously, making it suitable for permission verification scenarios that do not require asynchronous processing. Applicable to scenarios where a pre-permission check is performed before an app accesses protected resources such as the camera, microphone, or location.
 
 **Since:** 10
 
@@ -146,13 +128,7 @@ console.info(`Result: ${data}`);
 getSelfPermissionStatus(permissionName: Permissions): PermissionStatus
 ```
 
-Queries the permission status of the current app and returns the result synchronously. After the call is
-successful, the status of the current permission is returned. Unlike
-[checkAccessToken](arkts-ability-atmanager-i.md#checkaccesstoken-1), this API does not require passing in the
-app identity and is only used to query the permission status of the current app itself.
-
-Applicable to scenarios such as before determining whether to request a permission, confirming the authorization
-result after a permission request, or re-querying after monitoring a permission status change.
+Queries the permission status of the current app and returns the result synchronously. After the call is successful, the status of the current permission is returned. Unlike [checkAccessToken](arkts-ability-atmanager-i.md#checkaccesstoken-1), this API does not require passing in the app identity and is only used to query the permission status of the current app itself. Applicable to scenarios such as before determining whether to request a permission, confirming the authorization result after a permission request, or re-querying after monitoring a permission status change.
 
 **Since:** 20
 
@@ -208,18 +184,7 @@ off(
     ): void
 ```
 
-Unsubscribes from permission status change events for the specified permission list of itself. After the
-unsubscription is successful, status change notifications for the specified permission list will no longer be
-received.
-
-This API can be called to unsubscribe in scenarios such as when there is no need to continue monitoring
-permission changes, when the app exits, or when switching pages.
-
-When the callback parameter is not passed in, all callback functions associated with the permissionList will be
-deleted in batch.
-
-This API is usually used in conjunction with [on](abilityAccessCtrl.AtManager.on)
-to cancel the monitoring relationship created through on.
+Unsubscribes from permission status change events for the specified permission list of itself. After the unsubscription is successful, status change notifications for the specified permission list will no longer be received. This API can be called to unsubscribe in scenarios such as when there is no need to continue monitoring permission changes, when the app exits, or when switching pages. When the callback parameter is not passed in, all callback functions associated with the permissionList will be deleted in batch. This API is usually used in conjunction with [on](abilityAccessCtrl.AtManager.on) to cancel the monitoring relationship created through on.
 
 **Since:** 18
 
@@ -273,25 +238,7 @@ on(
     ): void
 ```
 
-Subscribes to permission authorization status change events for a specified permission list of this app,
-using an asynchronous callback. It can be used in scenarios such as updating the UI or service logic
-in real time based on permission status, and monitoring user authorization behavior.
-When monitoring is no longer needed, call [off](abilityAccessCtrl.AtManager.off) to unsubscribe.
-
-- When this subscription API is called for multiple times, if the subscribed permission lists are the same but
-the callbacks are different, the subscription is successful.
-- When this subscription API is called for multiple times, if the subscribed permission lists contain the same
-subset and the callbacks are the same, the subscription fails.
-
-There are two possible scenarios when the permission status changes from "authorized" to "unauthorized":
-
-- User actively revokes: The system will terminate the corresponding app process.
-- System actively reclaims: The app process will not be terminated. A typical scenario is the one-time
-authorization of a security component, which is automatically reclaimed by the system after the authorization
-period ends.
-
-This API is usually used in conjunction with [off](abilityAccessCtrl.AtManager.off).
-When monitoring is no longer needed, call off to unsubscribe.
+Subscribes to permission authorization status change events for a specified permission list of this app, using an asynchronous callback. It can be used in scenarios such as updating the UI or service logic in real time based on permission status, and monitoring user authorization behavior. When monitoring is no longer needed, call [off](abilityAccessCtrl.AtManager.off) to unsubscribe. - When this subscription API is called for multiple times, if the subscribed permission lists are the same but the callbacks are different, the subscription is successful. - When this subscription API is called for multiple times, if the subscribed permission lists contain the same subset and the callbacks are the same, the subscription fails. There are two possible scenarios when the permission status changes from "authorized" to "unauthorized": - User actively revokes: The system will terminate the corresponding app process. - System actively reclaims: The app process will not be terminated. A typical scenario is the one-time authorization of a security component, which is automatically reclaimed by the system after the authorization period ends. This API is usually used in conjunction with [off](abilityAccessCtrl.AtManager.off). When monitoring is no longer needed, call off to unsubscribe.
 
 **Since:** 18
 
@@ -346,18 +293,7 @@ try {
 openPermissionOnSetting(context: Context, permission: Permissions): Promise<SelectedResult>
 ```
 
-Used by [UIAbility](arkts-ability-uiability-c.md)/
-[UIExtensionAbility](arkts-ability-uiextensionability-c.md) to bring up the permission
-settings page. After the call is successful, the permission settings page will be opened. After the user operates
-on the page, the user's selection result on the settings page will be returned. This API uses a promise to return
-the result.
-
-Applicable to scenarios where
-[manual_settings](../../../../security/AccessToken/app-permission-mgmt-overview.md#manual_settings-manual-authorization)
-type permissions cannot be applied for through the normal authorization dialog box and the user must be
-guided to enter system settings to complete authorization. manual_settings type permissions are permissions that
-can only be manually enabled by the user in system settings and cannot be directly applied for through the normal
-authorization dialog box.
+Used by [UIAbility](arkts-ability-uiability-c.md)/ [UIExtensionAbility](arkts-ability-uiextensionability-c.md) to bring up the permission settings page. After the call is successful, the permission settings page will be opened. After the user operates on the page, the user's selection result on the settings page will be returned. This API uses a promise to return the result. Applicable to scenarios where [manual_settings](../../../../security/AccessToken/app-permission-mgmt-overview.md#manual_settings-manual-authorization) type permissions cannot be applied for through the normal authorization dialog box and the user must be guided to enter system settings to complete authorization. manual_settings type permissions are permissions that can only be manually enabled by the user in system settings and cannot be directly applied for through the normal authorization dialog box.
 
 **Since:** 22
 
@@ -413,24 +349,7 @@ atManager.openPermissionOnSetting(context, 'ohos.permission.HOOK_KEY_EVENT').the
 requestGlobalSwitch(context: Context, type: SwitchType): Promise<boolean>
 ```
 
-Used by UIAbility/UIExtensionAbility to bring up the global switch settings dialog box. After the call is
-successful, if the global switch is off, the global switch settings interface will pop up for the user to
-operate. If the global switch is already on, the dialog box will not be brought up and **true** will be returned.
-This API uses a promise to return the result.
-
-Applicable to scenarios that depend on system-level global switches (such as camera, microphone, and location)
-being turned on.
-
-When an app needs to use functions such as the camera, microphone, or location that require global switch
-control, if the corresponding global switch is turned off, the app can bring up this dialog box to request the
-user to turn on the corresponding function. If the current global switch status is on, the dialog box will not
-be brought up.
-
-<!--RP5-->
-
-![requestGlobalSwitch](../../../../reference/apis-ability-kit/figures/requestGlobalSwitch.png)
-
-<!--RP5End-->
+Used by UIAbility/UIExtensionAbility to bring up the global switch settings dialog box. After the call is successful, if the global switch is off, the global switch settings interface will pop up for the user to operate. If the global switch is already on, the dialog box will not be brought up and **true** will be returned. This API uses a promise to return the result. Applicable to scenarios that depend on system-level global switches (such as camera, microphone, and location) being turned on. When an app needs to use functions such as the camera, microphone, or location that require global switch control, if the corresponding global switch is turned off, the app can bring up this dialog box to request the user to turn on the corresponding function. If the current global switch status is on, the dialog box will not be brought up. <!--RP5--> ![requestGlobalSwitch](../../../../reference/apis-ability-kit/figures/requestGlobalSwitch.png) <!--RP5End-->
 
 **Since:** 12
 
@@ -468,24 +387,7 @@ be brought up.
 requestPermissionOnSetting(context: Context, permissionList: Array<Permissions>): Promise<Array<GrantStatus>>
 ```
 
-Used by [UIAbility](arkts-ability-uiability-c.md)/
-[UIExtensionAbility](arkts-ability-uiextensionability-c.md) to bring up the permission
-settings dialog box for a second time, and returns an array of authorization statuses.
-This API uses a promise to return the result.
-
-Applicable to scenarios where the user has already denied the permission grant in the first dialog box and needs
-to continue applying for the permission through the settings page.
-
-Before calling this API, the app needs to call
-[requestPermissionsFromUser](arkts-ability-atmanager-i.md#requestpermissionsfromuser-1) first.
-If the user has already authorized in the first dialog box, calling this API will not bring up the
-authorization dialog box.
-
-<!--RP4-->
-
-![requestPermissionOnSetting](../../../../reference/apis-ability-kit/figures/requestPermissionOnSetting.png)
-
-<!--RP4End-->
+Used by [UIAbility](arkts-ability-uiability-c.md)/ [UIExtensionAbility](arkts-ability-uiextensionability-c.md) to bring up the permission settings dialog box for a second time, and returns an array of authorization statuses. This API uses a promise to return the result. Applicable to scenarios where the user has already denied the permission grant in the first dialog box and needs to continue applying for the permission through the settings page. Before calling this API, the app needs to call [requestPermissionsFromUser](arkts-ability-atmanager-i.md#requestpermissionsfromuser-1) first. If the user has already authorized in the first dialog box, calling this API will not bring up the authorization dialog box. <!--RP4--> ![requestPermissionOnSetting](../../../../reference/apis-ability-kit/figures/requestPermissionOnSetting.png) <!--RP4End-->
 
 **Since:** 12
 
@@ -525,25 +427,7 @@ authorization dialog box.
 requestPermissionsFromUser(context: Context, permissionList: Array<Permissions>, requestCallback: AsyncCallback<PermissionRequestResult>) : void
 ```
 
-Used by <!--RP1-->[UIAbility](arkts-ability-uiability-c.md)<!--RP1End--> to bring up a dialog box
-to request [user authorization](../../../../security/AccessToken/request-user-authorization.md), and returns the
-authorization result of the permissions requested this time. This API uses an asynchronous callback to return
-the result.
-
-Applicable to scenarios where an app proactively applies for
-[user_grant](../../../../security/AccessToken/app-permission-mgmt-overview.md#user_grant-user-authorization)
-permissions from the user before accessing protected resources for the first time.
-
-If the user denies authorization, the authorization dialog box cannot be brought up again through this API.
-The developer can guide the user to go to the system settings interface for manual authorization, or call
-[requestPermissionOnSetting](arkts-ability-atmanager-i.md#requestpermissiononsetting-1) to bring up the
-permission settings dialog box to guide the user to complete authorization.
-
-<!--RP3-->
-
-![requestPermissionsFromUser](../../../../reference/apis-ability-kit/figures/requestPermissionsFromUser.png)
-
-<!--RP3End-->
+Used by <!--RP1-->[UIAbility](arkts-ability-uiability-c.md)<!--RP1End--> to bring up a dialog box to request [user authorization](../../../../security/AccessToken/request-user-authorization.md), and returns the authorization result of the permissions requested this time. This API uses an asynchronous callback to return the result. Applicable to scenarios where an app proactively applies for [user_grant](../../../../security/AccessToken/app-permission-mgmt-overview.md#user_grant-user-authorization) permissions from the user before accessing protected resources for the first time. If the user denies authorization, the authorization dialog box cannot be brought up again through this API. The developer can guide the user to go to the system settings interface for manual authorization, or call [requestPermissionOnSetting](arkts-ability-atmanager-i.md#requestpermissiononsetting-1) to bring up the permission settings dialog box to guide the user to complete authorization. <!--RP3--> ![requestPermissionsFromUser](../../../../reference/apis-ability-kit/figures/requestPermissionsFromUser.png) <!--RP3End-->
 
 **Since:** 9
 
@@ -602,17 +486,7 @@ atManager.requestPermissionsFromUser(context, ['ohos.permission.CAMERA'], (err: 
 requestPermissionsFromUser(context: Context, permissionList: Array<Permissions>) : Promise<PermissionRequestResult>
 ```
 
-Used by <!--RP1-->[UIAbility](arkts-ability-uiability-c.md)<!--RP1End--> to bring up a dialog box
-to request [user authorization](../../../../security/AccessToken/request-user-authorization.md), and returns the
-authorization result of the permissions requested this time. This API uses a promise to return the result.
-
-Applicable to scenarios where an app proactively applies for user_grant permissions from the user before
-accessing protected resources for the first time.
-
-If the user denies authorization, the authorization dialog box cannot be brought up again through this API.
-The developer can guide the user to go to the system settings interface for manual authorization, or call
-[requestPermissionOnSetting](arkts-ability-atmanager-i.md#requestpermissiononsetting-1) to bring up the
-permission settings dialog box to guide the user to complete authorization.
+Used by <!--RP1-->[UIAbility](arkts-ability-uiability-c.md)<!--RP1End--> to bring up a dialog box to request [user authorization](../../../../security/AccessToken/request-user-authorization.md), and returns the authorization result of the permissions requested this time. This API uses a promise to return the result. Applicable to scenarios where an app proactively applies for user_grant permissions from the user before accessing protected resources for the first time. If the user denies authorization, the authorization dialog box cannot be brought up again through this API. The developer can guide the user to go to the system settings interface for manual authorization, or call [requestPermissionOnSetting](arkts-ability-atmanager-i.md#requestpermissiononsetting-1) to bring up the permission settings dialog box to guide the user to complete authorization.
 
 **Since:** 9
 
@@ -674,15 +548,7 @@ atManager.requestPermissionsFromUser(context, ['ohos.permission.CAMERA']).then((
 verifyAccessToken(tokenID: number, permissionName: Permissions): Promise<GrantStatus>
 ```
 
-Verifies whether an app has been granted the specified permission. After the call is successful, the
-authorization status of the current permission is returned. The developer can decide accordingly whether to
-directly execute subsequent services, continue to initiate a permission request, or guide the user to go to
-system settings to modify the authorization status. This API uses a promise to return the result.
-
-Applicable to scenarios where a pre-permission check is performed before an app accesses protected resources.
-
-> **NOTE**
-> You are advised to use [checkAccessToken](arkts-ability-atmanager-i.md#checkaccesstoken-1).
+Verifies whether an app has been granted the specified permission. After the call is successful, the authorization status of the current permission is returned. The developer can decide accordingly whether to directly execute subsequent services, continue to initiate a permission request, or guide the user to go to system settings to modify the authorization status. This API uses a promise to return the result. Applicable to scenarios where a pre-permission check is performed before an app accesses protected resources. > **NOTE** > You are advised to use [checkAccessToken](arkts-ability-atmanager-i.md#checkaccesstoken-1).
 
 **Since:** 9
 
@@ -730,13 +596,7 @@ atManager.verifyAccessToken(tokenID, permissionName).then((data: abilityAccessCt
 verifyAccessToken(tokenID: number, permissionName: string): Promise<GrantStatus>
 ```
 
-Verifies whether an app has been granted the specified permission. After the call is successful, the
-authorization status of the current permission is returned, and the developer can decide on subsequent
-operations accordingly. This API uses a promise to return the result.
-
-> **NOTE**
-> This API is supported since API version 8 and deprecated since API version 9. It is recommended to use
-> [checkAccessToken](arkts-ability-atmanager-i.md#checkaccesstoken-1) instead.
+Verifies whether an app has been granted the specified permission. After the call is successful, the authorization status of the current permission is returned, and the developer can decide on subsequent operations accordingly. This API uses a promise to return the result. > **NOTE** > This API is supported since API version 8 and deprecated since API version 9. It is recommended to use > [checkAccessToken](arkts-ability-atmanager-i.md#checkaccesstoken-1) instead.
 
 **Since:** 8
 
@@ -788,15 +648,7 @@ atManager.verifyAccessToken(tokenID, permissionName).then((data: abilityAccessCt
 verifyAccessTokenSync(tokenID: number, permissionName: Permissions): GrantStatus
 ```
 
-Verifies whether an app has been granted the specified permission, and synchronously returns the authorization
-status of the permission. The developer can decide accordingly whether to directly execute subsequent service
-processes, continue to initiate a permission request, or guide the user to go to system settings to modify the
-authorization status.
-
-Applicable to scenarios where a pre-permission check is performed before an app accesses protected resources
-such as the camera, microphone, or location.
-
-It is recommended to use [checkAccessTokenSync](arkts-ability-atmanager-i.md#checkaccesstokensync-1) instead.
+Verifies whether an app has been granted the specified permission, and synchronously returns the authorization status of the permission. The developer can decide accordingly whether to directly execute subsequent service processes, continue to initiate a permission request, or guide the user to go to system settings to modify the authorization status. Applicable to scenarios where a pre-permission check is performed before an app accesses protected resources such as the camera, microphone, or location. It is recommended to use [checkAccessTokenSync](arkts-ability-atmanager-i.md#checkaccesstokensync-1) instead.
 
 **Since:** 9
 

@@ -1,7 +1,6 @@
 # @ohos.account.distributedAccount
 
-The **distributedAccount** module provides APIs for managing distributed accounts, including querying and updating
-account login states.
+The **distributedAccount** module provides APIs for managing distributed accounts, including querying and updating account login states.
 
 **Since:** 7
 
@@ -25,7 +24,7 @@ import { distributedAccount } from '@kit.BasicServicesKit';
 
 | Name | Description |
 | --- | --- |
-| [DistributedAccountAbility](arkts-basicservices-distributedaccountability-i.md) | Provides APIs for querying and updating the login state of a distributed account. You must obtain a**DistributedAccountAbility** instance first. |
+| [DistributedAccountAbility](arkts-basicservices-distributedaccountability-i.md) | Provides APIs for querying and updating the login state of a distributed account. You must obtain a **DistributedAccountAbility** instance first. |
 | [DistributedInfo](arkts-basicservices-distributedinfo-i.md) | Represents the distributed information about an OS account. |
 
 <!--Del-->
@@ -33,7 +32,7 @@ import { distributedAccount } from '@kit.BasicServicesKit';
 
 | Name | Description |
 | --- | --- |
-| [DistributedAccountAbility](arkts-basicservices-distributedaccountability-i-sys.md) | Provides APIs for querying and updating the login state of a distributed account. You must obtain a**DistributedAccountAbility** instance first. |
+| [DistributedAccountAbility](arkts-basicservices-distributedaccountability-i-sys.md) | Provides APIs for querying and updating the login state of a distributed account. You must obtain a **DistributedAccountAbility** instance first. |
 <!--DelEnd-->
 
 ### Enums

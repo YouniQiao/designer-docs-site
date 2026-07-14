@@ -1,7 +1,6 @@
 # DeviceNodeInfo (System API)
 
-Represents the device node information, including the networkId, device name, device type, nearby status
-and udid.
+Represents the device node information, including the networkId, device name, device type, nearby status and udid.
 
 **Since:** 26.1.0
 
@@ -39,8 +38,7 @@ Name of the device.
 deviceTypeId: number
 ```
 
-Device type identifier. This numeric value represents the category of the device (e.g., phone, tablet, TV,
-wearable, etc.).
+Device type identifier. This numeric value represents the category of the device (e.g., phone, tablet, TV, wearable, etc.).
 
 **Type:** number
 
@@ -76,8 +74,7 @@ Indicates whether the device is nearby.
 networkId: string
 ```
 
-NetworkId of the device. This ID uniquely identifies a device within the distributed network and is used
-for device addressing when sending messages.
+NetworkId of the device. This ID uniquely identifies a device within the distributed network and is used for device addressing when sending messages.
 
 **Type:** string
 
@@ -95,8 +92,7 @@ for device addressing when sending messages.
 udid: string
 ```
 
-UDID of the device. This ID uniquely identifies a device and is used for device addressing when sending
-messages.
+UDID of the device. This ID uniquely identifies a device and is used for device addressing when sending messages.
 
 **Type:** string
 

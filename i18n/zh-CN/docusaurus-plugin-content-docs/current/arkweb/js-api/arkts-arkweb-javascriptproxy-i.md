@@ -92,8 +92,7 @@ object: object
 permission?: string
 ```
 
-permission configuration defining web page URLs that can access JavaScriptProxy methods.
-The configuration can be defined at two levels, object level and method level.
+permission configuration defining web page URLs that can access JavaScriptProxy methods. The configuration can be defined at two levels, object level and method level.
 
 **类型：** string
 

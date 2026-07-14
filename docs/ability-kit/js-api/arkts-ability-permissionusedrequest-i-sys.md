@@ -20,8 +20,7 @@ import { privacyManager } from '@kit.AbilityKit';
 beginTime?: number
 ```
 
-Start time of the query.
-Unit: milliseconds. Default value: **0**, indicating no limit on the start time.
+Start time of the query. Unit: milliseconds. Default value: **0**, indicating no limit on the start time.
 
 **Type:** number
 
@@ -39,9 +38,7 @@ Unit: milliseconds. Default value: **0**, indicating no limit on the start time.
 bundleName?: string
 ```
 
-Bundle name of the target application.
-
-Default value: queries all applications.
+Bundle name of the target application. Default value: queries all applications.
 
 **Type:** string
 
@@ -57,9 +54,7 @@ Default value: queries all applications.
 deviceId?: string
 ```
 
-ID of the device where the target application is located.
-
-Default value: local device ID.
+ID of the device where the target application is located. Default value: local device ID.
 
 **Type:** string
 
@@ -75,8 +70,7 @@ Default value: local device ID.
 endTime?: number
 ```
 
-End time of the query. It must not be earlier than beginTime; otherwise, error code 12100001 is returned.
-Unit: milliseconds. Default value: **0**, indicating no limit on the end time.
+End time of the query. It must not be earlier than beginTime; otherwise, error code 12100001 is returned. Unit: milliseconds. Default value: **0**, indicating no limit on the end time.
 
 **Type:** number
 
@@ -94,8 +88,7 @@ Unit: milliseconds. Default value: **0**, indicating no limit on the end time.
 flag: PermissionUsageFlag
 ```
 
-Used to specify the query mode. When set to **FLAG_PERMISSION_USAGE_SUMMARY**, summary information is returned;
-when set to **FLAG_PERMISSION_USAGE_DETAIL**, detailed records are returned.
+Used to specify the query mode. When set to **FLAG_PERMISSION_USAGE_SUMMARY**, summary information is returned; when set to **FLAG_PERMISSION_USAGE_DETAIL**, detailed records are returned.
 
 **Type:** PermissionUsageFlag
 
@@ -111,10 +104,7 @@ when set to **FLAG_PERMISSION_USAGE_DETAIL**, detailed records are returned.
 isRemote?: boolean
 ```
 
-Used to specify whether to query remote devices. The value **false** means to query the permission usage records
-of the local device, and **true** means to query the records of remote devices.
-
-Default value: **false**.
+Used to specify whether to query remote devices. The value **false** means to query the permission usage records of the local device, and **true** means to query the records of remote devices. Default value: **false**.
 
 **Type:** boolean
 
@@ -132,8 +122,7 @@ Default value: **false**.
 permissionNames?: Array<Permissions>
 ```
 
-Set of permissions to query.
-Default value: Empty string. Means querying usage records of all permissions.
+Set of permissions to query. Default value: Empty string. Means querying usage records of all permissions.
 
 **Type:** Array<Permissions>
 
@@ -149,10 +138,7 @@ Default value: Empty string. Means querying usage records of all permissions.
 tokenId?: number
 ```
 
-Identity identifier of the target application. It can be obtained through the
-[accessTokenId](arkts-ability-applicationinfo-i.md#accesstokenid) field of ApplicationInfo.
-
-Default value: **0**, queries all applications.
+Identity identifier of the target application. It can be obtained through the [accessTokenId](arkts-ability-applicationinfo-i.md#accesstokenid) field of ApplicationInfo. Default value: **0**, queries all applications.
 
 **Type:** number
 

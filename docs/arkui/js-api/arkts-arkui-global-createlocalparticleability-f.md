@@ -6,8 +6,7 @@
 export declare function createLocalParticleAbility(name?: string): any
 ```
 
-Get the java interface instance. The java instance needs to register, otherwise it cannot be obtained.
-After obtaining the instance, you can call the function with the same name on the Java side.
+Get the java interface instance. The java instance needs to register, otherwise it cannot be obtained. After obtaining the instance, you can call the function with the same name on the Java side.
 
 **Since:** 5
 

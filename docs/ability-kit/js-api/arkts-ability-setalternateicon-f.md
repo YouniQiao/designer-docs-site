@@ -12,8 +12,7 @@ import { bundleManager } from '@kit.AbilityKit';
 function setAlternateIcon(alternateIconName: string): Promise<void>
 ```
 
-Sets the alternate icon of the caller based on the given alternate icon name.
-This API uses a promise to return the result.
+Sets the alternate icon of the caller based on the given alternate icon name. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 

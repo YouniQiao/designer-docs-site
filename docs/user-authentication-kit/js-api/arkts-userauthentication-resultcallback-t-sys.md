@@ -4,8 +4,7 @@
 type ResultCallback = (challenge: Uint8Array, result: UserAuthResult) => void
 ```
 
-Called to return the authentication result. If the authentication is successful,
-UserAuthResult contains the token information.
+Called to return the authentication result. If the authentication is successful, UserAuthResult contains the token information.
 
 **Since:** 26.0.0
 

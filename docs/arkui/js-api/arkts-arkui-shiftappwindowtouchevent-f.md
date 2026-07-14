@@ -12,13 +12,7 @@ import { window } from '@kit.ArkUI';
 function shiftAppWindowTouchEvent(sourceWindowId: number, targetWindowId: number, fingerId: number): Promise<void>
 ```
 
-Transfers a touchscreen input event from one window to another within the same application. This API takes effect
-only for the main window and its child windows. This API uses a promise to return the result.
-
-To transfer touchscreen input events, the source window must call this API within the callback of the
-[onTouch](onTouch) event (the event type must
-be **TouchType.Down**). After a successful call, the system sends a **TouchType.Up** event to the source window and
-a **TouchType.Down** event to the target window.
+Transfers a touchscreen input event from one window to another within the same application. This API takes effect only for the main window and its child windows. This API uses a promise to return the result. To transfer touchscreen input events, the source window must call this API within the callback of the [onTouch](onTouch) event (the event type must be **TouchType.Down**). After a successful call, the system sends a **TouchType.Up** event to the source window and a **TouchType.Down** event to the target window.
 
 **Since:** 20
 

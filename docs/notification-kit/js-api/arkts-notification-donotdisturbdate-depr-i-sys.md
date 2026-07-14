@@ -1,8 +1,6 @@
 # DoNotDisturbDate (System API)
 
-> **NOTE**<br>
-> This API is supported since API version 8 and deprecated since API version 9. You are advised to use
-> [notificationManager.DoNotDisturbDate](arkts-notification-donotdisturbdate-i-sys.md) instead.
+> **NOTE**<br> > This API is supported since API version 8 and deprecated since API version 9. You are advised to use > [notificationManager.DoNotDisturbDate](arkts-notification-donotdisturbdate-i-sys.md) instead.
 
 **Since:** 8
 

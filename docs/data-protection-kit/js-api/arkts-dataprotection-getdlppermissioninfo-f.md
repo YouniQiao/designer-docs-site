@@ -12,12 +12,7 @@ import { dlpPermission } from '@kit.DataProtectionKit';
 function getDLPPermissionInfo(): Promise<DLPPermissionInfo>
 ```
 
-Queries the permission information of the current DLP sandbox, including permissions on the file and operations
-that can be performed (such as viewing, editing, and copying). This API can be called only in DLP sandbox
-applications. This API uses a promise to return the result.
-
-When processing files in the DLP sandbox, the system determines the operations that can be performed for the
-current user to prevent calling unauthorized capabilities.
+Queries the permission information of the current DLP sandbox, including permissions on the file and operations that can be performed (such as viewing, editing, and copying). This API can be called only in DLP sandbox applications. This API uses a promise to return the result. When processing files in the DLP sandbox, the system determines the operations that can be performed for the current user to prevent calling unauthorized capabilities.
 
 **Since:** 10
 
@@ -61,12 +56,7 @@ dlpPermission.isInSandbox().then(async (inSandbox) => { // Check whether the app
 function getDLPPermissionInfo(callback: AsyncCallback<DLPPermissionInfo>): void
 ```
 
-Obtains the permission information of this DLP file. The returned permission information includes permissions on
-the file and operations that can be performed (such as viewing, editing, and copying). This API uses an
-asynchronous callback to return the result.
-
-When processing files in the DLP sandbox, the system determines the operations that can be performed for the
-current user to prevent calling unauthorized capabilities.
+Obtains the permission information of this DLP file. The returned permission information includes permissions on the file and operations that can be performed (such as viewing, editing, and copying). This API uses an asynchronous callback to return the result. When processing files in the DLP sandbox, the system determines the operations that can be performed for the current user to prevent calling unauthorized capabilities.
 
 **Since:** 10
 

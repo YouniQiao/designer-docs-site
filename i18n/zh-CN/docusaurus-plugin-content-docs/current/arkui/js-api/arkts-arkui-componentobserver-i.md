@@ -1,6 +1,6 @@
 # ComponentObserver
 
-The ComponentObserver is used to listen for layout and draw events.
+ComponentObserver用于监听布局和绘制事件。
 
 **起始版本：** 10
 
@@ -12,8 +12,7 @@ The ComponentObserver is used to listen for layout and draw events.
 off(type: 'layout', callback?: () => void): void
 ```
 
-Deregisters a callback with the corresponding query condition by using the handle.
-This callback is not triggered when the component layout complete.
+使用句柄注销具有相应查询条件的回调。 当组件布局完成时不再触发此回调。
 
 **起始版本：** 10
 
@@ -27,8 +26,8 @@ This callback is not triggered when the component layout complete.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'layout' | 是 | type of the listened event.<br>**起始版本：** 12 |
-| callback | () =&gt; void | 否 | callback of the listened event.<br>**起始版本：** 12 |
+| type | 'layout' | 是 | 监听事件的类型。<br>**起始版本：** 12 |
+| callback | () =&gt; void | 否 | 监听事件的回调。<br>**起始版本：** 12 |
 
 ## off('draw')
 
@@ -36,8 +35,7 @@ This callback is not triggered when the component layout complete.
 off(type: 'draw', callback?: () => void): void
 ```
 
-Deregisters a callback with the corresponding query condition by using the handle.
-This callback is not triggered when the component draw complete.
+使用句柄注销具有相应查询条件的回调。 当组件绘制完成时不再触发此回调。
 
 **起始版本：** 10
 
@@ -51,8 +49,8 @@ This callback is not triggered when the component draw complete.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'draw' | 是 | type of the listened event.<br>**起始版本：** 12 |
-| callback | () =&gt; void | 否 | callback of the listened event.<br>**起始版本：** 12 |
+| type | 'draw' | 是 | 监听事件的类型。<br>**起始版本：** 12 |
+| callback | () =&gt; void | 否 | 监听事件的回调。<br>**起始版本：** 12 |
 
 ## off('drawChildren')
 
@@ -60,8 +58,7 @@ This callback is not triggered when the component draw complete.
 off(type: 'drawChildren', callback?: Callback<void>): void
 ```
 
-使用句柄注销具有相应查询条件的回调。
-当组件的子级绘制完成时，不会触发此回调。
+使用句柄注销具有相应查询条件的回调。 当组件的子级绘制完成时，不会触发此回调。
 
 **起始版本：** 20
 
@@ -159,7 +156,7 @@ offLayoutChildren(callback?: Callback<void>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | Callback&lt;void&gt; | 否 | callback of the listened event. |
+| callback | Callback&lt;void&gt; | 否 | 监听事件的回调。 |
 
 **示例：**
 
@@ -237,8 +234,7 @@ struct ImageExample {
 on(type: 'layout', callback: () => void): void
 ```
 
-Registers a callback with the corresponding query condition by using the handle.
-This callback is triggered when the component layout complete.
+使用句柄注册具有相应查询条件的回调。 当组件布局完成时会触发此回调。
 
 **起始版本：** 10
 
@@ -252,8 +248,8 @@ This callback is triggered when the component layout complete.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'layout' | 是 | type of the listened event.<br>**起始版本：** 12 |
-| callback | () =&gt; void | 是 | callback of the listened event.<br>**起始版本：** 12 |
+| type | 'layout' | 是 | 监听事件的类型。<br>**起始版本：** 12 |
+| callback | () =&gt; void | 是 | 监听事件的回调。<br>**起始版本：** 12 |
 
 ## on('draw')
 
@@ -261,8 +257,7 @@ This callback is triggered when the component layout complete.
 on(type: 'draw', callback: () => void): void
 ```
 
-Registers a callback with the corresponding query condition by using the handle.
-This callback is triggered when the component draw complete.
+使用句柄注册具有相应查询条件的回调。 当组件绘制完成时会触发此回调。
 
 **起始版本：** 10
 
@@ -276,8 +271,8 @@ This callback is triggered when the component draw complete.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'draw' | 是 | type of the listened event.<br>**起始版本：** 12 |
-| callback | () =&gt; void | 是 | callback of the listened event.<br>**起始版本：** 12 |
+| type | 'draw' | 是 | 监听事件的类型。<br>**起始版本：** 12 |
+| callback | () =&gt; void | 是 | 监听事件的回调。<br>**起始版本：** 12 |
 
 ## on('drawChildren')
 
@@ -285,8 +280,7 @@ This callback is triggered when the component draw complete.
 on(type: 'drawChildren', callback: Callback<void>): void
 ```
 
-使用句柄注册具有相应查询条件的回调。
-当组件的子级绘制完成时，会触发此回调。
+使用句柄注册具有相应查询条件的回调。 当组件的子级绘制完成时，会触发此回调。
 
 **起始版本：** 20
 

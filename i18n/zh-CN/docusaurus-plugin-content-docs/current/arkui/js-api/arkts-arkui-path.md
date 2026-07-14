@@ -1,12 +1,6 @@
 # Path
 
-路径绘制组件，根据绘制路径生成封闭的自定义形状。
-
-> **说明：**
->
-> 该组件从API version 20开始支持使用[AttributeUpdater]{@link AttributeUpdater}类的
-> [updateConstructorParams](docroot://reference/apis-arkui/js-apis-arkui-AttributeUpdater.md#属性)接口更新构造参数。
-
+路径绘制组件，根据绘制路径生成封闭的自定义形状。 > **说明：** > > 该组件从API version 20开始支持使用[AttributeUpdater]{@link AttributeUpdater}类的 > [updateConstructorParams](docroot://reference/apis-arkui/js-apis-arkui-AttributeUpdater.md#属性)接口更新构造参数。
 
 ## Path
 
@@ -14,8 +8,7 @@
 Path(options?: PathOptions)
 ```
 
-Use new to create Path.
-Annonymous Object Rectification.
+Use new to create Path. Annonymous Object Rectification.
 
 **起始版本：** 7
 

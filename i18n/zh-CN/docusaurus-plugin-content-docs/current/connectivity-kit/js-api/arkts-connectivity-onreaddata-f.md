@@ -6,9 +6,7 @@
 function onReadData(callback: Callback<DataParams>): void
 ```
 
-订阅从端口读取数据事件。
-
-只有授予了ohos.permission.NEARLINK_ACCESS权限的应用程序才能访问此事件。
+订阅从端口读取数据事件。 只有授予了ohos.permission.NEARLINK_ACCESS权限的应用程序才能访问此事件。
 
 **起始版本：** 26.0.0
 

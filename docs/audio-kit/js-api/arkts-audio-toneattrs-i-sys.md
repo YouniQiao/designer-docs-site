@@ -119,8 +119,7 @@ toneAttrs.getFileName();
 getMediaType(): MediaType
 ```
 
-Gets media type. This function returns {@link MediaType#AUDIO} if the media type has not been changed
-by {@link setMediaType}.
+Gets media type. This function returns {@link MediaType#AUDIO} if the media type has not been changed by {@link setMediaType}.
 
 **Since:** 20
 

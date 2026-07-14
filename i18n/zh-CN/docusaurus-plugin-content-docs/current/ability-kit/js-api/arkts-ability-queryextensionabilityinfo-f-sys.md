@@ -7,9 +7,7 @@ function queryExtensionAbilityInfo(want: Want, extensionAbilityType: ExtensionAb
       extensionAbilityFlags: number, callback: AsyncCallback<Array<ExtensionAbilityInfo>>): void
 ```
 
-根据给定的want、extensionAbilityType和extensionAbilityFlags获取一个或多个ExtensionAbilityInfo。使用callback异步回调。
-
-获取调用方自身的信息时不需要权限。
+根据给定的want、extensionAbilityType和extensionAbilityFlags获取一个或多个ExtensionAbilityInfo。使用callback异步回调。 获取调用方自身的信息时不需要权限。
 
 **起始版本：** 9
 
@@ -76,9 +74,7 @@ try {
 function queryExtensionAbilityInfo(want: Want, extensionAbilityType: ExtensionAbilityType, extensionAbilityFlags: number, userId: number, callback: AsyncCallback<Array<ExtensionAbilityInfo>>): void
 ```
 
-根据给定的want、extensionAbilityType、extensionAbilityFlags和userId获取一个或多个ExtensionAbilityInfo。使用callback异步回调。
-
-获取调用方自身的信息时不需要权限。
+根据给定的want、extensionAbilityType、extensionAbilityFlags和userId获取一个或多个ExtensionAbilityInfo。使用callback异步回调。 获取调用方自身的信息时不需要权限。
 
 **起始版本：** 9
 
@@ -148,9 +144,7 @@ try {
 function queryExtensionAbilityInfo(want: Want, extensionAbilityType: ExtensionAbilityType, extensionAbilityFlags: number, userId?: number): Promise<Array<ExtensionAbilityInfo>>
 ```
 
-根据给定的want、extensionAbilityType、extensionAbilityFlags和userId获取ExtensionAbilityInfo。使用Promise异步回调。
-
-获取调用方自身的信息时不需要权限。
+根据给定的want、extensionAbilityType、extensionAbilityFlags和userId获取ExtensionAbilityInfo。使用Promise异步回调。 获取调用方自身的信息时不需要权限。
 
 **起始版本：** 9
 

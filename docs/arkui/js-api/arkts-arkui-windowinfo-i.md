@@ -36,9 +36,7 @@ Indicates the ID of the display where the window is located.
 globalDisplayRect?: Rect
 ```
 
-Window size in the global coordinate system. In extended screen scenarios, the top-left corner of the primary
-screen is used as the coordinate origin. In virtual screen scenarios, the top-left corner of the virtual screen
-is used as the coordinate origin. The default value is [0, 0, 0, 0].
+Window size in the global coordinate system. In extended screen scenarios, the top-left corner of the primary screen is used as the coordinate origin. In virtual screen scenarios, the top-left corner of the virtual screen is used as the coordinate origin. The default value is [0, 0, 0, 0].
 
 **Type:** Rect
 

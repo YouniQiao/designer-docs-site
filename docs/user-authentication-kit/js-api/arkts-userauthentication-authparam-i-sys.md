@@ -1,9 +1,6 @@
 # AuthParam
 
-Defines the user authentication parameters. This API is used to configure user authentication parameters, including
-the challenge value, authentication type list, authentication trust level, and authentication result reuse
-configuration. By properly configuring these parameters, you can meet authentication requirements in different
-service scenarios.
+Defines the user authentication parameters. This API is used to configure user authentication parameters, including the challenge value, authentication type list, authentication trust level, and authentication result reuse configuration. By properly configuring these parameters, you can meet authentication requirements in different service scenarios.
 
 **Since:** 10
 
@@ -21,9 +18,7 @@ import { userAuth } from '@kit.UserAuthenticationKit';
 credentialIdList?: Uint8Array[]
 ```
 
-List of credential IDs. If the credential ID list is not empty, the specified credential IDs are authenticated,
-instead of all credentials of the user. This is applicable to scenarios where precise control over authentication
-credentials is required.
+List of credential IDs. If the credential ID list is not empty, the specified credential IDs are authenticated, instead of all credentials of the user. This is applicable to scenarios where precise control over authentication credentials is required.
 
 **Type:** Uint8Array[]
 
@@ -41,8 +36,7 @@ credentials is required.
 userId?: number
 ```
 
-Target user ID to be authenticated. The value is a non-negative integer, which specifies the user to be
-authenticated. The default value is the ID of the current user.
+Target user ID to be authenticated. The value is a non-negative integer, which specifies the user to be authenticated. The default value is the ID of the current user.
 
 **Type:** number
 

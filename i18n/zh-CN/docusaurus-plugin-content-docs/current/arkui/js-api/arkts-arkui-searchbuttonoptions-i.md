@@ -12,11 +12,7 @@
 autoDisable?: Boolean
 ```
 
-Search无文本内容时按钮置灰且不可点击。
-
-默认值：false
-
-true表示开启按钮置灰功能，false表示不开启。
+Search无文本内容时按钮置灰且不可点击。 默认值：false true表示开启按钮置灰功能，false表示不开启。
 
 **类型：** Boolean
 

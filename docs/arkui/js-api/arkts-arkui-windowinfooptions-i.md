@@ -18,9 +18,7 @@ import { window } from '@kit.ArkUI';
 excludeSystemWindows?: boolean
 ```
 
-Whether the result excludes system windows.
-If true, the result list does not include system windows;
-if false, the result list includes system windows.
+Whether the result excludes system windows. If true, the result list does not include system windows; if false, the result list includes system windows.
 
 **Type:** boolean
 
@@ -40,8 +38,7 @@ if false, the result list includes system windows.
 foregroundAboveWindow?: number
 ```
 
-Only include windows with a higher z-order than the specified window ID.
-When this field is set to the default value 0, this field is not used as a filter criterion.
+Only include windows with a higher z-order than the specified window ID. When this field is set to the default value 0, this field is not used as a filter criterion.
 
 **Type:** number
 
@@ -61,8 +58,7 @@ When this field is set to the default value 0, this field is not used as a filte
 foregroundBelowWindow?: number
 ```
 
-Only include windows with a lower z-order than the specified window ID.
-When this field is set to the default value 0, this field is not used as a filter criterion.
+Only include windows with a lower z-order than the specified window ID. When this field is set to the default value 0, this field is not used as a filter criterion.
 
 **Type:** number
 

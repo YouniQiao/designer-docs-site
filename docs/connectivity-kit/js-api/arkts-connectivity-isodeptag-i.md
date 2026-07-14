@@ -14,8 +14,7 @@ Provides methods for accessing IsoDep tag.
 getHiLayerResponse(): number[]
 ```
 
-Gets IsoDep HiLayer Response bytes of the tag, which is based on NfcB RF technology.
-It could be null if not based on NfcB.
+Gets IsoDep HiLayer Response bytes of the tag, which is based on NfcB RF technology. It could be null if not based on NfcB.
 
 **Since:** 12
 
@@ -35,8 +34,7 @@ It could be null if not based on NfcB.
 getHistoricalBytes(): number[]
 ```
 
-Gets IsoDep Historical bytes of the tag, which is based on NfcA RF technology.
-It could be null if not based on NfcA.
+Gets IsoDep Historical bytes of the tag, which is based on NfcA RF technology. It could be null if not based on NfcA.
 
 **Since:** 12
 

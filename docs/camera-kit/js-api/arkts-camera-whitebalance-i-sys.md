@@ -1,8 +1,6 @@
 # WhiteBalance (System API)
 
-**WhiteBalance** inherits from [WhiteBalanceQuery](arkts-camera-whitebalancequery-i.md).
-It provides APIs to process white balance, including obtaining and setting the white balance mode and white balance
-value.
+**WhiteBalance** inherits from [WhiteBalanceQuery](arkts-camera-whitebalancequery-i.md). It provides APIs to process white balance, including obtaining and setting the white balance mode and white balance value.
 
 **Inheritance/Implementation:** WhiteBalance extends [WhiteBalanceQuery](arkts-camera-whitebalancequery-i.md)
 
@@ -82,10 +80,7 @@ Obtains the white balance mode in use.
 setWhiteBalance(whiteBalance: number): void
 ```
 
-Sets a white balance value.
-Before the setting, run
-[getWhiteBalanceRange](arkts-camera-whitebalancequery-i-sys.md#getwhitebalancerange-1) to check the
-white balance value range supported by the device.
+Sets a white balance value. Before the setting, run [getWhiteBalanceRange](arkts-camera-whitebalancequery-i-sys.md#getwhitebalancerange-1) to check the white balance value range supported by the device.
 
 **Since:** 20
 
@@ -115,9 +110,7 @@ white balance value range supported by the device.
 setWhiteBalanceMode(mode: WhiteBalanceMode): void
 ```
 
-Sets a white balance mode. Before the setting, run
-[isWhiteBalanceModeSupported](arkts-camera-whitebalancequery-i-sys.md#iswhitebalancemodesupported-1)
-to check whether the device supports the specified white balance mode.
+Sets a white balance mode. Before the setting, run [isWhiteBalanceModeSupported](arkts-camera-whitebalancequery-i-sys.md#iswhitebalancemodesupported-1) to check whether the device supports the specified white balance mode.
 
 **Since:** 20
 

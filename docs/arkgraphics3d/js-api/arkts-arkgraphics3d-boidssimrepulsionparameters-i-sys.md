@@ -14,8 +14,7 @@ Boids simulation repulsion field parameters.
 accelerationMag?: number
 ```
 
-Magnitude of repulsion acceleration applied away from the entity. Range: [0, +inf). Default: 0.0
-If a value exceeding the valid range is assigned, it will be clamped.
+Magnitude of repulsion acceleration applied away from the entity. Range: [0, +inf). Default: 0.0 If a value exceeding the valid range is assigned, it will be clamped.
 
 **Type:** number
 
@@ -33,9 +32,7 @@ If a value exceeding the valid range is assigned, it will be clamped.
 radius?: number
 ```
 
-Radius of influence. Boids strictly within this distance from the entity are pushed away
-(force is zero at the boundary). Range: [0, +inf). Default: 0.0
-If a value exceeding the valid range is assigned, it will be clamped.
+Radius of influence. Boids strictly within this distance from the entity are pushed away (force is zero at the boundary). Range: [0, +inf). Default: 0.0 If a value exceeding the valid range is assigned, it will be clamped.
 
 **Type:** number
 

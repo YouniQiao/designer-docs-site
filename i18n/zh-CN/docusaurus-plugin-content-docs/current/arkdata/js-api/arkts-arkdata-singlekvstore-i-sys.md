@@ -1,10 +1,6 @@
 # SingleKVStore
 
-SingleKVStore数据库实例，提供增加数据、删除数据和订阅数据变更、订阅数据端端同步完成的方法。
-
-在调用SingleKVStore的方法前，需要先通过
-[getKVStore](arkts-arkdata-kvmanager-i.md#getkvstore-1)
-构建一个SingleKVStore实例。
+SingleKVStore数据库实例，提供增加数据、删除数据和订阅数据变更、订阅数据端端同步完成的方法。 在调用SingleKVStore的方法前，需要先通过 [getKVStore](arkts-arkdata-kvmanager-i.md#getkvstore-1) 构建一个SingleKVStore实例。
 
 **起始版本：** 9
 

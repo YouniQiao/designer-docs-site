@@ -12,7 +12,7 @@ import { CompletionHandlerForAbilityStartCallback, AbilityStartFailureCode } fro
 
 | Name | Description |
 | --- | --- |
-| [CompletionHandlerForAbilityStartCallback](arkts-ability-completionhandlerforabilitystartcallback-c.md) | CompletionHandlerForAbilityStartCallback provides two callback functions, **onRequestSuccess** and**onRequestFailure**, which are invoked when launching the specified ability succeeds or fails, respectively. |
+| [CompletionHandlerForAbilityStartCallback](arkts-ability-completionhandlerforabilitystartcallback-c.md) | CompletionHandlerForAbilityStartCallback provides two callback functions, **onRequestSuccess** and **onRequestFailure**, which are invoked when launching the specified ability succeeds or fails, respectively. |
 
 ### Enums
 

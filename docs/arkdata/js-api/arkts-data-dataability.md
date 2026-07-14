@@ -1,7 +1,6 @@
 # @ohos.data.dataAbility
 
-The **DataAbility** module provides APIs to create predicates for querying data from relational database (RDB)
-stores.
+The **DataAbility** module provides APIs to create predicates for querying data from relational database (RDB) stores.
 
 **Since:** 7
 

@@ -16,8 +16,7 @@ Enumerates flags for using a WantAgent.
 ONE_TIME_FLAG = 0
 ```
 
-Indicates that the WantAgent can be used only once.
-This flag is valid only when OperationType is set to START_ABILITY, START_SERVICE, or SEND_COMMON_EVENT.
+Indicates that the WantAgent can be used only once. This flag is valid only when OperationType is set to START_ABILITY, START_SERVICE, or SEND_COMMON_EVENT.
 
 **Since:** 7
 
@@ -35,8 +34,7 @@ This flag is valid only when OperationType is set to START_ABILITY, START_SERVIC
 NO_BUILD_FLAG
 ```
 
-Indicates that null is returned if the WantAgent does not exist.
-This flag is valid only when OperationType is set to START_ABILITY, START_SERVICE, or SEND_COMMON_EVENT.
+Indicates that null is returned if the WantAgent does not exist. This flag is valid only when OperationType is set to START_ABILITY, START_SERVICE, or SEND_COMMON_EVENT.
 
 **Since:** 7
 
@@ -54,8 +52,7 @@ This flag is valid only when OperationType is set to START_ABILITY, START_SERVIC
 CANCEL_PRESENT_FLAG
 ```
 
-Indicates that the existing WantAgent should be canceled before a new object is generated.
-This flag is valid only when OperationType is set to START_ABILITY, START_SERVICE, or SEND_COMMON_EVENT.
+Indicates that the existing WantAgent should be canceled before a new object is generated. This flag is valid only when OperationType is set to START_ABILITY, START_SERVICE, or SEND_COMMON_EVENT.
 
 **Since:** 7
 
@@ -73,8 +70,7 @@ This flag is valid only when OperationType is set to START_ABILITY, START_SERVIC
 UPDATE_PRESENT_FLAG
 ```
 
-Indicates that the system only replaces the extra data of the existing WantAgent with that of the new object.
-This flag is valid only when OperationType is set to START_ABILITY, START_SERVICE, or SEND_COMMON_EVENT.
+Indicates that the system only replaces the extra data of the existing WantAgent with that of the new object. This flag is valid only when OperationType is set to START_ABILITY, START_SERVICE, or SEND_COMMON_EVENT.
 
 **Since:** 7
 

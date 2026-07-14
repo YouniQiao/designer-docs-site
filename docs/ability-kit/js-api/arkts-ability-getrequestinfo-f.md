@@ -12,13 +12,7 @@ import { dialogRequest } from '@kit.AbilityKit';
 function getRequestInfo(want: Want): RequestInfo
 ```
 
-> **NOTE**
->
-> This API can be used by a ServiceExtensionAbility. If the ServiceExtensionAbility implements modal dialog boxes,
-> the request information can be obtained from Want. If this API is used in other scenarios, no return value is
-> obtained.
-
-Obtains the request information from Want.
+> **NOTE** > > This API can be used by a ServiceExtensionAbility. If the ServiceExtensionAbility implements modal dialog boxes, > the request information can be obtained from Want. If this API is used in other scenarios, no return value is > obtained. Obtains the request information from Want.
 
 **Since:** 9
 

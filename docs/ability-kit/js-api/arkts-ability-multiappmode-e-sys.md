@@ -30,9 +30,7 @@ The application does not support the multi-app mode.
 MULTI_INSTANCE = 1
 ```
 
-The application supports the multi-instance mode.
-
-Note: This property is valid only for 2-in-1 devices.
+The application supports the multi-instance mode. Note: This property is valid only for 2-in-1 devices.
 
 **Since:** 14
 

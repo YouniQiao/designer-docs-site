@@ -1,10 +1,6 @@
 # WindowStage
 
-Implements a window manager, which manages each basic window unit, that is, [Window](arkts-window.md) instance.
-
-Before calling any of the following APIs, you must use
-[onWindowStageCreate()](../../apis-ability-kit/arkts-apis/arkts-ability-uiability-c.md#onwindowstagecreate-1) to create a WindowStage
-instance.
+Implements a window manager, which manages each basic window unit, that is, [Window](arkts-window.md) instance. Before calling any of the following APIs, you must use [onWindowStageCreate()](../../apis-ability-kit/arkts-apis/arkts-ability-uiability-c.md#onwindowstagecreate-1) to create a WindowStage instance.
 
 **Since:** 9
 
@@ -22,12 +18,7 @@ import { window } from '@kit.ArkUI';
 disableWindowDecor(): void
 ```
 
-Disables window decorators.
-
-When window decorators are disabled and the main window transitions into full-screen mode, hovering the cursor
-over the hot zone of the top window's title bar will cause a floating title bar to appear. To prevent the
-floating title bar from appearing, call
-[setTitleAndDockHoverShown()](arkts-arkui-window-i.md#settitleanddockhovershown-1).
+Disables window decorators. When window decorators are disabled and the main window transitions into full-screen mode, hovering the cursor over the hot zone of the top window's title bar will cause a floating title bar to appear. To prevent the floating title bar from appearing, call [setTitleAndDockHoverShown()](arkts-arkui-window-i.md#settitleanddockhovershown-1).
 
 **Since:** 9
 
@@ -68,9 +59,7 @@ export default class EntryAbility extends UIAbility {
 removeImageForRecent(): Promise<void>
 ```
 
-Removes the image that the application has set to be displayed in the multitasking view and on dock hover. The
-change will be effective the next time you check the application widget in the multitasking view. This API
-uses a promise to return the result.
+Removes the image that the application has set to be displayed in the multitasking view and on dock hover. The change will be effective the next time you check the application widget in the multitasking view. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 
@@ -105,15 +94,7 @@ uses a promise to return the result.
 setImageForRecent(imageResource: number | image.PixelMap, value: ImageFit): Promise<void>
 ```
 
-Sets the image displayed in the multitasking view and on dock hover. This API uses a promise to return the result.
-
-> **NOTE**
->
-> Before calling this API, you are advised to complete page loading via
-> [loadContent](arkts-arkui-window-i.md#loadcontent-1) or
-> [setUIContent](arkts-arkui-window-i.md#setuicontent-2). If this API is called before the application
-> completes page loading, the intended functionality does not take effect. As a result, only the application's
-> launch page is displayed in the multitasking view.
+Sets the image displayed in the multitasking view and on dock hover. This API uses a promise to return the result. > **NOTE** > > Before calling this API, you are advised to complete page loading via > [loadContent](arkts-arkui-window-i.md#loadcontent-1) or > [setUIContent](arkts-arkui-window-i.md#setuicontent-2). If this API is called before the application > completes page loading, the intended functionality does not take effect. As a result, only the application's > launch page is displayed in the multitasking view.
 
 **Since:** 26.0.0
 

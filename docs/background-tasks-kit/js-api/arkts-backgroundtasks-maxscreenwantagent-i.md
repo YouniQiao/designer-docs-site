@@ -1,7 +1,6 @@
 # MaxScreenWantAgent
 
-Describes the information about the ability that is started automatically and displayed in full-screen mode when a
-reminder is displayed in the notification center. This API is reserved.
+Describes the information about the ability that is started automatically and displayed in full-screen mode when a reminder is displayed in the notification center. This API is reserved.
 
 **Since:** 9
 

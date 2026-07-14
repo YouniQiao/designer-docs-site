@@ -48,9 +48,7 @@ Scale mode of the image.
 size?: [Dimension, Dimension]
 ```
 
-Width and height of the image, in px. Default value: varies by the value of **objectFit**. If the value of
-**objectFit** is **Cover**, the image height is the component height minus the top and bottom paddings, and the
-image width is the component width minus the left and right paddings.
+Width and height of the image, in px. Default value: varies by the value of **objectFit**. If the value of **objectFit** is **Cover**, the image height is the component height minus the top and bottom paddings, and the image width is the component width minus the left and right paddings.
 
 **Type:** [Dimension, Dimension]
 

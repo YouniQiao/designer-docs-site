@@ -18,8 +18,7 @@ import { camera } from '@kit.CameraKit';
 release(): Promise<void>
 ```
 
-Releases output resources. This API uses a promise to return the result.
-Model constraint: This API can be used only in the stage model.
+Releases output resources. This API uses a promise to return the result. Model constraint: This API can be used only in the stage model.
 
 **Since:** 23
 

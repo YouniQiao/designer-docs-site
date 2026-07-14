@@ -44,8 +44,7 @@ Controller.
 methodList: Array<string>
 ```
 
-The method of the application side JavaScript object participating
-in the registration.
+The method of the application side JavaScript object participating in the registration.
 
 **Type:** Array<string>
 
@@ -61,8 +60,7 @@ in the registration.
 name: string
 ```
 
-The name of the registered object, which is consistent with the
-object name called in the window.
+The name of the registered object, which is consistent with the object name called in the window.
 
 **Type:** string
 
@@ -94,8 +92,7 @@ Objects participating in registration.
 permission?: string
 ```
 
-permission configuration defining web page URLs that can access JavaScriptProxy methods.
-The configuration can be defined at two levels, object level and method level.
+permission configuration defining web page URLs that can access JavaScriptProxy methods. The configuration can be defined at two levels, object level and method level.
 
 **Type:** string
 

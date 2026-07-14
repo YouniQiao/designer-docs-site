@@ -16,8 +16,7 @@ function enableAbilityWithCallback(
   ): Promise<void>
 ```
 
-Enables the auxiliary extension ability and specifies [ConnectCallback](arkts-accessibility-connectcallback-i-sys.md) to be invoked when
-the state of an auxiliary extension ability changes. This API uses a promise to return the result.
+Enables the auxiliary extension ability and specifies [ConnectCallback](arkts-accessibility-connectcallback-i-sys.md) to be invoked when the state of an auxiliary extension ability changes. This API uses a promise to return the result.
 
 **Since:** 23
 

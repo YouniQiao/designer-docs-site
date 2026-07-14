@@ -72,8 +72,7 @@ bundleManager.getInstalledBundleList(wantTemp, accountId).then((result) => {
 function getInstalledBundleList(admin: Want, accountId: number, bundleInfoGetFlag: number): Promise<Array<BundleInfo>>
 ```
 
-Obtains the list of applications installed by a specified user based on the specified **bundleInfoGetFlag**. This
-API uses a promise to return the result.
+Obtains the list of applications installed by a specified user based on the specified **bundleInfoGetFlag**. This API uses a promise to return the result.
 
 **Since:** 23
 

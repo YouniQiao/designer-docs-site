@@ -12,8 +12,7 @@ The enum of material type.
 UNLIT_SHADOW_ALPHA = 100
 ```
 
-Only render the shadows received on the material surface,
-the material is transparent.
+Only render the shadows received on the material surface, the material is transparent.
 
 **Since:** 23
 

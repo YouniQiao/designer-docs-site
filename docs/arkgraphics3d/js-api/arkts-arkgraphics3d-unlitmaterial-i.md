@@ -14,8 +14,7 @@ Unlit material resource
 baseColor: MaterialProperty
 ```
 
-Base color factor of unlit material.
-Value of factor.xyzw defines rgba color.
+Base color factor of unlit material. Value of factor.xyzw defines rgba color.
 
 **Type:** MaterialProperty
 

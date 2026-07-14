@@ -1,8 +1,6 @@
 # KeyboardController
 
-下列API均需使用
-[on('inputStart')](arkts-ime-inputmethodability-i.md#on-1)
-获取到KeyboardController实例后，通过实例调用。
+下列API均需使用 [on('inputStart')](arkts-ime-inputmethodability-i.md#on-1) 获取到KeyboardController实例后，通过实例调用。
 
 **起始版本：** 8
 

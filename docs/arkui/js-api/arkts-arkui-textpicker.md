@@ -1,21 +1,6 @@
 # TextPicker
 
-**TextPicker** is a component that allows users to select text, images, or hybrid content through scrolling. It
-supports three usage modes: single-column picker, multi-column independent picker, and multi-column cascading picker.
-
-
-> **NOTE**
-
-> - Avoid changing the attribute data during the animation process of this component.
->
-> - The maximum number of rows that can be displayed varies by screen orientation: In portrait mode, the default
-> number of rows is 5. In landscape mode, the number of rows depends on the system configuration. If no system
-> configuration is set, the default is 3 rows. To check the specific system configuration value for landscape mode,
-> use **$r('sys.float.ohos_id_picker_show_count_landscape')**.
->
-> - Multi-column independent pickers and multi-column cascading pickers are collectively referred to as multi-column
-> pickers in this document.
-
+**TextPicker** is a component that allows users to select text, images, or hybrid content through scrolling. It supports three usage modes: single-column picker, multi-column independent picker, and multi-column cascading picker. > **NOTE** > - Avoid changing the attribute data during the animation process of this component. > > - The maximum number of rows that can be displayed varies by screen orientation: In portrait mode, the default > number of rows is 5. In landscape mode, the number of rows depends on the system configuration. If no system > configuration is set, the default is 3 rows. To check the specific system configuration value for landscape mode, > use **$r('sys.float.ohos_id_picker_show_count_landscape')**. > > - Multi-column independent pickers and multi-column cascading pickers are collectively referred to as multi-column > pickers in this document.
 
 ## TextPicker
 

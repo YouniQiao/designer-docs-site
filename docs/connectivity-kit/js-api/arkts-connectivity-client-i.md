@@ -1,11 +1,16 @@
 # Client
 
-Manages SSAP client. Before calling a SSAP client method,
-you must use {@link createClient} to create a ssap client instance.
+Manages SSAP client. Before calling a SSAP client method, you must use {@link createClient} to create a ssap client instance.
 
 **Since:** 26.0.0
 
 **System capability:** SystemCapability.Communication.NearLink.Base
+
+## Modules to Import
+
+```TypeScript
+import { ssap } from '@kit.ConnectivityKit';
+```
 
 ## close
 
@@ -187,11 +192,7 @@ Unsubscribe property value changed event.
 onConnectionStateChange(callback: Callback<ConnectionChangeState>): void
 ```
 
-Subscribes to client connection state changed events.
-
-This event is accessible only to applications that granted the ohos.permission.NEARLINK_ACCESS permission.
-If the application is granted the ohos.permission.GET_NEARLINK_PEER_MAC permission,
-the callback returns the real device address; otherwise, a random device address is returned.
+Subscribes to client connection state changed events. This event is accessible only to applications that granted the ohos.permission.NEARLINK_ACCESS permission. If the application is granted the ohos.permission.GET_NEARLINK_PEER_MAC permission, the callback returns the real device address; otherwise, a random device address is returned.
 
 **Since:** 26.0.0
 
@@ -211,9 +212,7 @@ the callback returns the real device address; otherwise, a random device address
 onMtuChange(callback: Callback<number>): void
 ```
 
-Subscribes to MTU changed events.
-
-This event is accessible only to applications that granted the ohos.permission.NEARLINK_ACCESS permission.
+Subscribes to MTU changed events. This event is accessible only to applications that granted the ohos.permission.NEARLINK_ACCESS permission.
 
 **Since:** 26.0.0
 
@@ -233,9 +232,7 @@ This event is accessible only to applications that granted the ohos.permission.N
 onPropertyChange(callback: Callback<Property>): void
 ```
 
-Subscribe property value changed event.
-
-This event is accessible only to applications that granted the ohos.permission.NEARLINK_ACCESS permission.
+Subscribe property value changed event. This event is accessible only to applications that granted the ohos.permission.NEARLINK_ACCESS permission.
 
 **Since:** 26.0.0
 
@@ -293,8 +290,7 @@ Reads the property of a server.
 requestMtuSize(mtu: number): Promise<void>
 ```
 
-Negotiate the MTU size with server.
-The negotiation result needs to be obtained by subscribing to MTU event.
+Negotiate the MTU size with server. The negotiation result needs to be obtained by subscribing to MTU event.
 
 **Since:** 26.0.0
 

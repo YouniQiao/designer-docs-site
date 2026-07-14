@@ -12,9 +12,7 @@ import { notificationManager } from '@kit.NotificationKit';
 function on(type: 'checkNotification', callback: (checkInfo: NotificationCheckInfo) => NotificationCheckResult): void
 ```
 
-注册通知监听回调。通知服务将通知信息回调给校验程序，校验程序返回校验结果决定该通知是否发布，如营销类通知发布频率控制等。
-
-系统中每个[SlotType](arkts-notification-slottype-e.md)只允许存在一个注册者。
+注册通知监听回调。通知服务将通知信息回调给校验程序，校验程序返回校验结果决定该通知是否发布，如营销类通知发布频率控制等。 系统中每个SlotType只允许存在一个注册者。
 
 **起始版本：** 10
 
@@ -70,9 +68,7 @@ function on(type: 'checkNotification', checkRequest: NotificationCheckRequest,
     callback: (checkInfo: NotificationCheckInfo) => Promise<NotificationCheckResult>): void
 ```
 
-注册通知监听回调。通知服务将通知信息回调给校验程序，校验程序返回校验结果决定该通知是否发布，如营销类通知发布频率控制等。使用Promise异步回调。
-
-系统中每个[SlotType](arkts-notification-slottype-e.md)只允许存在一个注册者。
+注册通知监听回调。通知服务将通知信息回调给校验程序，校验程序返回校验结果决定该通知是否发布，如营销类通知发布频率控制等。使用Promise异步回调。 系统中每个SlotType只允许存在一个注册者。
 
 **起始版本：** 11
 

@@ -46,8 +46,7 @@ Task name of the main window.
 showing: boolean
 ```
 
-Foreground/Background status of the main window. **true** if the main window is in the foreground, **false**
-otherwise.
+Foreground/Background status of the main window. **true** if the main window is in the foreground, **false** otherwise.
 
 **Type:** boolean
 

@@ -12,15 +12,7 @@
 position?: BadgePosition | Position
 ```
 
-设置提示点显示位置。
-
-默认值：BadgePosition.RightTop
-
-**说明：**
-
-Position作为入参，不支持设置百分比；设置为非法值时，默认(0,0)处理。(0,0)为组件左上角位置。
-
-BadgePosition作为入参时，会跟随[Direction](arkts-arkui-direction-e.md)属性控制镜像显示。
+设置提示点显示位置。 默认值：BadgePosition.RightTop **说明：** Position作为入参，不支持设置百分比；设置为非法值时，默认(0,0)处理。(0,0)为组件左上角位置。 BadgePosition作为入参时，会跟随[Direction](arkts-arkui-direction-e.md)属性控制镜像显示。
 
 **类型：** BadgePosition | Position
 

@@ -12,9 +12,7 @@ import { backgroundProcessManager } from '@kit.BackgroundTasksKit';
 function setProcessPriority(pid: number, priority: ProcessPriority): Promise<void>
 ```
 
-Sets the child process priority. After a child process is suppressed, the CPU resources that can be obtained will
-be limited. If the scheduling policy of the main process changes, for example, from the background to the
-foreground, the child process changes with the main process. To suppress the child process, call this API again.
+Sets the child process priority. After a child process is suppressed, the CPU resources that can be obtained will be limited. If the scheduling policy of the main process changes, for example, from the background to the foreground, the child process changes with the main process. To suppress the child process, call this API again.
 
 **Since:** 17
 

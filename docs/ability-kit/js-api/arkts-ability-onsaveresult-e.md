@@ -1,9 +1,6 @@
 # OnSaveResult
 
-Enumerates the result types for the operation of saving application data. You can use it in
-[onSaveState()](arkts-ability-uiability-c.md#onsavestate-1)
-of the UIAbility to complete
-[UIAbility backup and restore](../../../../application-models/ability-recover-guideline.md).
+Enumerates the result types for the operation of saving application data. You can use it in [onSaveState()](arkts-ability-uiability-c.md#onsavestate-1) of the UIAbility to complete [UIAbility backup and restore](../../../../application-models/ability-recover-guideline.md).
 
 **Since:** 9
 

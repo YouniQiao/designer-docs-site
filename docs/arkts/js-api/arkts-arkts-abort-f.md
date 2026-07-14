@@ -12,8 +12,7 @@ import { process } from '@kit.ArkTS';
 function abort(): void
 ```
 
-Aborts a process and generates a core file. This method will cause a process to exit immediately. Exercise
-caution when using this method.
+Aborts a process and generates a core file. This method will cause a process to exit immediately. Exercise caution when using this method.
 
 **Since:** 7
 

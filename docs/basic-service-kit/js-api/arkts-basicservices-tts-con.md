@@ -6,9 +6,7 @@
 const DEFAULT_TTS_PITCH: string
 ```
 
-Indicates the default pitch of the text-to-speech (TTS) engine.
-
-<p>100 = 1x. If the value is set to {@code 200}, the frequency is twice the normal sound frequency.
+Indicates the default pitch of the text-to-speech (TTS) engine. <p>100 = 1x. If the value is set to {@code 200}, the frequency is twice the normal sound frequency.
 
 **Since:** 7
 
@@ -50,8 +48,7 @@ Indicates the default TTS engine.
 const ENABLED_TTS_PLUGINS: string
 ```
 
-Indicates the list of activated plug-in packages used for TTS. Multiple plug-in packages are separated by
-spaces.
+Indicates the list of activated plug-in packages used for TTS. Multiple plug-in packages are separated by spaces.
 
 **Since:** 7
 

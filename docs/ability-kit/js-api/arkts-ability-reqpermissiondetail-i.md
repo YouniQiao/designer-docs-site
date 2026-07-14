@@ -1,11 +1,6 @@
 # ReqPermissionDetail
 
-Provides the detailed information of the permissions to request from the system.
-
-> **NOTE**
->
-> - If multiple packages of an application have requested the same permission but with different reasons, the system
-> returns only one reason based on a descending priority order: entry HAP > feature HAP > in-app HSP.
+Provides the detailed information of the permissions to request from the system. > **NOTE** > > - If multiple packages of an application have requested the same permission but with different reasons, the system > returns only one reason based on a descending priority order: entry HAP > feature HAP > in-app HSP.
 
 **Since:** 9
 

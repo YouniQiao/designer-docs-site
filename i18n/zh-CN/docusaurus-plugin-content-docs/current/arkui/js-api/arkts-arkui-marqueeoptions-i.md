@@ -1,10 +1,6 @@
 # MarqueeOptions
 
-Marquee初始化参数。
-
-> **说明：**
->
-> 为规范匿名对象的定义，API 18版本修改了此处的元素定义。其中，保留了历史匿名对象的起始版本信息，会出现外层元素@since版本号高于内层元素版本号的情况，但这不影响接口的使用。
+Marquee初始化参数。 > **说明：** > > 为规范匿名对象的定义，API 18版本修改了此处的元素定义。其中，保留了历史匿名对象的起始版本信息，会出现外层元素@since版本号高于内层元素版本号的情况，但这不影响接口的使用。
 
 **起始版本：** 18
 
@@ -76,9 +72,7 @@ Set the number of times the scroll is repeated, infinite loop if it is less than
 spacing?: LengthMetrics
 ```
 
-两轮跑马灯的间距。
-
-默认值为跑马灯宽度。
+两轮跑马灯的间距。 默认值为跑马灯宽度。
 
 **类型：** LengthMetrics
 

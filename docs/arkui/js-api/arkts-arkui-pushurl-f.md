@@ -12,14 +12,7 @@ import { router } from '@kit.ArkUI';
 function pushUrl(options: RouterOptions, callback: AsyncCallback<void>): void
 ```
 
-Navigates to a specified page in the application.
-
-> **NOTE**
->
-> - Since API version 10, you can use the
-> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in
-> [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated
-> with the current UI context.
+Navigates to a specified page in the application. > **NOTE** > > - Since API version 10, you can use the > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in > [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated > with the current UI context.
 
 **Since:** 9
 
@@ -50,6 +43,8 @@ Navigates to a specified page in the application.
 **Example**
 
 ```TypeScript
+import { router } from '@kit.ArkUI';
+
 class innerParams {
   data3: number[];
 
@@ -73,7 +68,7 @@ router.pushUrl({
   params: new RouterParams('message', [123, 456, 789])
 }, (err) => {
   if (err) {
-    console.error(`pushUrl failed, code is ${err.code}, message is ${err.message}`);
+    console.error(`pushUrl failed. Code: ${err.code}, message: ${err.message}`);
     return;
   }
   console.info('pushUrl success');
@@ -88,14 +83,7 @@ router.pushUrl({
 function pushUrl(options: RouterOptions): Promise<void>
 ```
 
-Navigates to a specified page in the application.
-
-> **NOTE**
->
-> - Since API version 10, you can use the
-> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in
-> [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated
-> with the current UI context.
+Navigates to a specified page in the application. > **NOTE** > > - Since API version 10, you can use the > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in > [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated > with the current UI context.
 
 **Since:** 9
 
@@ -131,6 +119,8 @@ Navigates to a specified page in the application.
 **Example**
 
 ```TypeScript
+import { router } from '@kit.ArkUI';
+
 import { BusinessError } from '@kit.BasicServicesKit';
 
 class innerParams {
@@ -158,8 +148,8 @@ router.pushUrl({
   .then(() => {
     console.info(`pushUrl finish`);
   })
-  .catch((err: ESObject) => {
-    console.error(`pushUrl failed, code is ${(err as BusinessError).code}, message is ${(err as BusinessError).message}`);
+  .catch((err: BusinessError) => {
+    console.error(`pushUrl failed. Code: ${err.code}, message: ${err.message}`);
   })
 
 ```
@@ -171,14 +161,7 @@ router.pushUrl({
 function pushUrl(options: RouterOptions, mode: RouterMode, callback: AsyncCallback<void>): void
 ```
 
-Navigates to a specified page in the application.
-
-> **NOTE**
->
-> - Since API version 10, you can use the
-> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in
-> [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated
-> with the current UI context.
+Navigates to a specified page in the application. > **NOTE** > > - Since API version 10, you can use the > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in > [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated > with the current UI context.
 
 **Since:** 9
 
@@ -210,6 +193,8 @@ Navigates to a specified page in the application.
 **Example**
 
 ```TypeScript
+import { router } from '@kit.ArkUI';
+
 class innerParams {
   data3: number[];
 
@@ -233,7 +218,7 @@ router.pushUrl({
   params: new RouterParams('message', [123, 456, 789])
 }, router.RouterMode.Standard, (err) => {
   if (err) {
-    console.error(`pushUrl failed, code is ${err.code}, message is ${err.message}`);
+    console.error(`pushUrl failed. Code: ${err.code}, message: ${err.message}`);
     return;
   }
   console.info('pushUrl success');
@@ -248,14 +233,7 @@ router.pushUrl({
 function pushUrl(options: RouterOptions, mode: RouterMode): Promise<void>
 ```
 
-Navigates to a specified page in the application.
-
-> **NOTE**
->
-> - Since API version 10, you can use the
-> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in
-> [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated
-> with the current UI context.
+Navigates to a specified page in the application. > **NOTE** > > - Since API version 10, you can use the > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in > [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated > with the current UI context.
 
 **Since:** 9
 
@@ -292,6 +270,8 @@ Navigates to a specified page in the application.
 **Example**
 
 ```TypeScript
+import { router } from '@kit.ArkUI';
+
 import { BusinessError } from '@kit.BasicServicesKit';
 
 class innerParams {
@@ -319,8 +299,8 @@ router.pushUrl({
   .then(() => {
     console.info(`pushUrl finish`);
   })
-  .catch((err: ESObject) => {
-    console.error(`pushUrl failed, code is ${(err as BusinessError).code}, message is ${(err as BusinessError).message}`);
+  .catch((err: BusinessError) => {
+    console.error(`pushUrl failed. Code: ${err.code}, message: ${err.message}`);
   })
 
 ```

@@ -12,12 +12,7 @@ import { formProvider } from '@kit.FormKit';
 function reloadForms(context: UIAbilityContext, moduleName: string, abilityName: string, formName: string): Promise<number>
 ```
 
-Reloads widgets. For widgets with the same **moduleName**, **abilityName**, and **formName** of the current
-application, each widget has a different widget ID after being added to the home screen for multiple times. Widget
-providers can use this API to batch update widgets that have different IDs but share the same **moduleName**,
-**abilityName**, and **formName**. Invoked in the main process of the application, this API notifies the
-FormExtension process to perform batch updates. It can only be called within a
-[UIAbility](../../apis-ability-kit/arkts-apis/arkts-app-ability-uiability.md) and uses a promise to return the result.
+Reloads widgets. For widgets with the same **moduleName**, **abilityName**, and **formName** of the current application, each widget has a different widget ID after being added to the home screen for multiple times. Widget providers can use this API to batch update widgets that have different IDs but share the same **moduleName**, **abilityName**, and **formName**. Invoked in the main process of the application, this API notifies the FormExtension process to perform batch updates. It can only be called within a [UIAbility](../../apis-ability-kit/arkts-apis/arkts-app-ability-uiability.md) and uses a promise to return the result.
 
 **Since:** 22
 

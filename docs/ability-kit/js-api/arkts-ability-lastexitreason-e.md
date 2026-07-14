@@ -1,8 +1,6 @@
 # LastExitReason
 
-Enumerates the reasons for the last exit of the ability. You can use it together with the value of
-**launchParam.lastExitReason** in [onCreate()](arkts-ability-uiability-c.md#oncreate-1) of the
-UIAbility to complete different operations.
+Enumerates the reasons for the last exit of the ability. You can use it together with the value of **launchParam.lastExitReason** in [onCreate()](arkts-ability-uiability-c.md#oncreate-1) of the UIAbility to complete different operations.
 
 **Since:** 9
 
@@ -48,11 +46,7 @@ The ability does not respond.
 NORMAL = 2
 ```
 
-The ability exits normally because the user closes the application.
-
-Note: If the application process is forcibly terminated using methods not provided by Ability Kit, such as
-calling [process.exit()](../apis-arkts/js-apis-process.md#processexitdeprecated) or using the kernel **kill**
-command, the reason for the last exit is also reported as **NORMAL**.
+The ability exits normally because the user closes the application. Note: If the application process is forcibly terminated using methods not provided by Ability Kit, such as calling [process.exit()](../apis-arkts/js-apis-process.md#processexitdeprecated) or using the kernel **kill** command, the reason for the last exit is also reported as **NORMAL**.
 
 **Since:** 9
 
@@ -84,8 +78,7 @@ The ability exits due to [process crash](../../../../dfx/cppcrash-guidelines.md)
 JS_ERROR = 4
 ```
 
-The ability exits due to a JS_ERROR fault triggered when an application has a JS syntax error that is not
-captured by developers.
+The ability exits due to a JS_ERROR fault triggered when an application has a JS syntax error that is not captured by developers.
 
 **Since:** 10
 
@@ -117,9 +110,7 @@ The ability exits due to [application freeze](../../../../dfx/appfreeze-guidelin
 PERFORMANCE_CONTROL = 6
 ```
 
-The ability exits due to system performance problems, for example, insufficient device memory.
-
-Note: This API will be deprecated. You are advised to use **RESOURCE_CONTROL** instead.
+The ability exits due to system performance problems, for example, insufficient device memory. Note: This API will be deprecated. You are advised to use **RESOURCE_CONTROL** instead.
 
 **Since:** 10
 
@@ -135,16 +126,7 @@ Note: This API will be deprecated. You are advised to use **RESOURCE_CONTROL** i
 RESOURCE_CONTROL = 7
 ```
 
-The ability exits due to improper use of system resources. The specific error cause can be obtained through
-[LaunchParam.lastExitMessage](arkts-ability-launchparam-i.md). The possible causes are as follows:
-
-- **CPU Highload**: The CPU load is high.
-- **CPU_EXT Highload**: A fast CPU load detection is carried out.
-- **IO Manage Control**: An I/O management and control operation is carried out.
-- **App Memory Deterioration**: The application memory usage exceeds the threshold.
-- **Temperature Control**: The temperature is too high or too low.
-- **Memory Pressure**: The system is low on memory, triggering process termination in ascending order of
-priority.
+The ability exits due to improper use of system resources. The specific error cause can be obtained through [LaunchParam.lastExitMessage](arkts-ability-launchparam-i.md). The possible causes are as follows: - **CPU Highload**: The CPU load is high. - **CPU_EXT Highload**: A fast CPU load detection is carried out. - **IO Manage Control**: An I/O management and control operation is carried out. - **App Memory Deterioration**: The application memory usage exceeds the threshold. - **Temperature Control**: The temperature is too high or too low. - **Memory Pressure**: The system is low on memory, triggering process termination in ascending order of priority.
 
 **Since:** 10
 

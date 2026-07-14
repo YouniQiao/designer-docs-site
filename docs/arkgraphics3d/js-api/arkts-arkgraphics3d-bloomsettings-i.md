@@ -12,9 +12,7 @@ Defines bloom parameters.
 scaleFactor?: number
 ```
 
-Scaling factor. Controls the amount of scaling and bloom spread.
-Reduces the downscale and upscale steps.
-Values 0 - 1. Value of 0.5 halves the scale steps.
+Scaling factor. Controls the amount of scaling and bloom spread. Reduces the downscale and upscale steps. Values 0 - 1. Value of 0.5 halves the scale steps.
 
 **Type:** number
 

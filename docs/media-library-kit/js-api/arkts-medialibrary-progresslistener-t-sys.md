@@ -4,9 +4,7 @@
 type ProgressListener = (progress: Progress) => void
 ```
 
-Indicates the type of the progress of batch operation.
-
-Progress callback, which can be the size or numberof files.
+Indicates the type of the progress of batch operation. Progress callback, which can be the size or numberof files.
 
 **Since:** 26.0.0
 

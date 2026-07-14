@@ -1,8 +1,8 @@
 # OperateCheck
 
-Declare type OperateCheck
+Defines the type where the element on the right of the **ComposeListItem** component is **Switch**, **CheckBox**, or **Radio**.
 
-**Since:** 20
+**Since:** 10
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -18,15 +18,15 @@ import { OperateCheck, OperateIcon, ComposeListItem, OperateItem, IconType, Cont
 accessibilityDescription?: ResourceStr
 ```
 
-The accessibilityDescription of the checkbox/switch/radio.
+Accessible description of the switch, check box, or radio button on the right. You can provide comprehensive text explanations to help users understand the operation they are about to perform and its potential consequences, especially when these cannot be inferred from the component's attributes and accessibility text alone. If a component contains both text information and the accessible description, the text is announced first and then the accessible description, when the component is selected. By default, the announcement rules for the basic components **Switch**, **CheckBox**, and **Radio** are applied.
 
 **Type:** ResourceStr
 
-**Since:** 20
+**Since:** 18
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** This API can be used in atomic services since API version 18.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -36,17 +36,17 @@ The accessibilityDescription of the checkbox/switch/radio.
 accessibilityLevel?: string
 ```
 
-The accessibilityLevel of the checkbox/switch/radio.
+Accessibility level of the switch, check box, or radio button on the right. It determines whether the component can be recognized by accessibility services. The options are as follows: **"auto"**: It is treated as "no" by the system. **"yes"**: The component can be recognized by accessibility services. **"no"**: The component cannot be recognized by accessibility services. **"no-hide-descendants"**: Neither the component nor its child components can be recognized by accessibility services. Default value: **"auto"**
 
 **Type:** string
 
 **Default:** "auto"
 
-**Since:** 20
+**Since:** 18
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** This API can be used in atomic services since API version 18.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -56,15 +56,15 @@ The accessibilityLevel of the checkbox/switch/radio.
 accessibilityText?: ResourceStr
 ```
 
-The accessibilityText of the checkbox/switch/radio.
+Accessibility text, that is, accessible label name, of the switch, check box, or radio button on the right. If a component does not contain text information, it will not be announced by the screen reader when selected. In this case, the screen reader user cannot know which component is selected. To solve this problem, you can set accessibility text for components without text information. When such a component is selected, the screen reader announces the specified accessibility text, informing the user which component is selected. Default value: **""**
 
 **Type:** ResourceStr
 
-**Since:** 20
+**Since:** 18
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** This API can be used in atomic services since API version 18.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -74,15 +74,15 @@ The accessibilityText of the checkbox/switch/radio.
 isCheck?: boolean
 ```
 
-Whether is checked by default.
+Whether the switch, check box, or radio button on the right is selected. Default value: **false**. **true**: selected. **false**: not selected.
 
 **Type:** boolean
 
-**Since:** 20
+**Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -92,15 +92,15 @@ Whether is checked by default.
 onChange?: (value: boolean) => void
 ```
 
-Callback function when operate the checkbox/switch/radio.
+Callback invoked when the selected state of the switch, check box, or radio button on the right is changed. **true**: from not selected to selected. **false**: from selected to not selected.
 
 **Type:** (value: boolean) => void
 
-**Since:** 20
+**Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

@@ -1,7 +1,6 @@
 # ServiceExtensionAbility (System API)
 
-The ServiceExtensionAbility module provides extended capabilities for background services, including lifecycle
-callbacks for creating, destroying, connecting, and disconnecting background services.
+The ServiceExtensionAbility module provides extended capabilities for background services, including lifecycle callbacks for creating, destroying, connecting, and disconnecting background services.
 
 **Since:** 9
 
@@ -56,8 +55,7 @@ class ServiceExt extends ServiceExtensionAbility {
 onConnect(want: Want): rpc.RemoteObject | Promise<rpc.RemoteObject>
 ```
 
-Called following **onCreate()** when a ServiceExtensionAbility is started by calling **connectAbility()**. A
-RemoteObject is returned for communication between the server and client.
+Called following **onCreate()** when a ServiceExtensionAbility is started by calling **connectAbility()**. A RemoteObject is returned for communication between the server and client.
 
 **Since:** 9
 
@@ -198,8 +196,7 @@ class ServiceExt extends ServiceExtensionAbility {
 onDisconnect(want: Want): void | Promise<void>
 ```
 
-Called when a client is disconnected from this ServiceExtensionAbility.
-This API returns the result synchronously or uses a promise to return the result.
+Called when a client is disconnected from this ServiceExtensionAbility. This API returns the result synchronously or uses a promise to return the result.
 
 **Since:** 9
 
@@ -292,8 +289,7 @@ class ServiceExt extends ServiceExtensionAbility {
 onReconnect(want: Want): void
 ```
 
-Called when a new client attempts to connect to this ServiceExtensionAbility after all previous clients are
-disconnected. This capability is reserved.
+Called when a new client attempts to connect to this ServiceExtensionAbility after all previous clients are disconnected. This capability is reserved.
 
 **Since:** 9
 
@@ -328,9 +324,7 @@ class ServiceExt extends ServiceExtensionAbility {
 onRequest(want: Want, startId: number): void
 ```
 
-Called following **onCreate()** when a ServiceExtensionAbility is started by calling **startAbility()** or
-**startServiceExtensionAbility()**. The value of **startId** is incremented for each ServiceExtensionAbility that
-is started.
+Called following **onCreate()** when a ServiceExtensionAbility is started by calling **startAbility()** or **startServiceExtensionAbility()**. The value of **startId** is incremented for each ServiceExtensionAbility that is started.
 
 **Since:** 9
 

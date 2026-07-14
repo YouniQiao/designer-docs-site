@@ -12,8 +12,7 @@ import { serialManager } from '@kit.BasicServicesKit';
 function cancelSerialRight(portId: number): void
 ```
 
-Cancels the permission to access the serial port device when the application is running. This API is used to close
-the enabled serial port device.
+Cancels the permission to access the serial port device when the application is running. This API is used to close the enabled serial port device.
 
 **Since:** 19
 
@@ -57,7 +56,7 @@ function cancelSerialRight() {
   if (!serialManager.hasSerialRight(portId)) {
     serialManager.requestSerialRight(portId).then(result => {
       if (!result) {
-        // If the application does not have the access permission and is not granted by the user, the application exits.
+        // If the application does not have the access permission and the user does not grant the permission, the application exits.
         console.error('user is not granted the operation permission');
         return;
       } else {

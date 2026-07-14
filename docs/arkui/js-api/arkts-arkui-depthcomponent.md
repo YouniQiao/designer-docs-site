@@ -2,7 +2,6 @@
 
 DepthComponentInterface
 
-
 ## DepthComponent
 
 ```TypeScript

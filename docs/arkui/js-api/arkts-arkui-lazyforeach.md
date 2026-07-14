@@ -1,15 +1,6 @@
 # LazyForEach
 
-> **NOTE**
-
-For details about the development, see
-[LazyForEach: Lazy Data Loading](docroot://ui/rendering-control/arkts-rendering-control-lazyforeach.md).
-
-In scenarios involving a large number of child components, LazyForEach, when combined with techniques such as cached
-list items, dynamic preloading, and component reuse, can significantly improve scrolling frame rates while reducing
-memory usage. For best practices, see
-[Optimizing Frame Loss for Long List Loading](https://developer.huawei.com/consumer/en/doc/best-practices/bpta-best-practices-long-list).
-
+> **NOTE** For details about the development, see [LazyForEach: Lazy Data Loading](docroot://ui/rendering-control/arkts-rendering-control-lazyforeach.md). In scenarios involving a large number of child components, LazyForEach, when combined with techniques such as cached list items, dynamic preloading, and component reuse, can significantly improve scrolling frame rates while reducing memory usage. For best practices, see [Optimizing Frame Loss for Long List Loading](https://developer.huawei.com/consumer/en/doc/best-practices/bpta-best-practices-long-list).
 
 ## LazyForEach
 
@@ -21,10 +12,7 @@ LazyForEach(
   )
 ```
 
-**LazyForEach** iterates over provided data sources and creates corresponding components during each iteration.
-When **LazyForEach** is used in a scrolling container, the framework creates components as required within the
-visible area of the scrolling container. When a component is out of the visible area, the framework destroys and
-reclaims the component to reduce memory usage.
+**LazyForEach** iterates over provided data sources and creates corresponding components during each iteration. When **LazyForEach** is used in a scrolling container, the framework creates components as required within the visible area of the scrolling container. When a component is out of the visible area, the framework destroys and reclaims the component to reduce memory usage.
 
 **Since:** 7
 

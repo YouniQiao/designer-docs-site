@@ -28,8 +28,7 @@ handler: ControllerHandler
 isAlert: boolean
 ```
 
-Whether to open the target URL in a new window. The value **true** means to open the target URL in a new window,
-and **false** means to open the target URL in a new tab.
+Whether to open the target URL in a new window. The value **true** means to open the target URL in a new window, and **false** means to open the target URL in a new tab.
 
 **Type:** boolean
 
@@ -45,8 +44,7 @@ and **false** means to open the target URL in a new tab.
 isUserTrigger: boolean
 ```
 
-Whether the creation is triggered by the user. The value **true** means that the creation is triggered by the user,
-and **false** means the opposite.
+Whether the creation is triggered by the user. The value **true** means that the creation is triggered by the user, and **false** means the opposite.
 
 **Type:** boolean
 

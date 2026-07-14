@@ -22,10 +22,7 @@ import { CipherAesOptions, CipherResponse, CipherRsaOptions } from '@kit.CryptoA
 action: string
 ```
 
-Action to perform. The options are as follows:
-
-1. **encrypt**: Encrypts data.
-2. **decrypt**: Decrypts data.
+Action to perform. The options are as follows: 1. **encrypt**: Encrypts data. 2. **decrypt**: Decrypts data.
 
 **Type:** string
 
@@ -79,8 +76,7 @@ Called when data fails to be encrypted or decrypted.
 iv?: string
 ```
 
-Initialization vector (IV) for AES-based encryption and decryption. The value is a string encoded in Base64. The
-default value is the key value.
+Initialization vector (IV) for AES-based encryption and decryption. The value is a string encoded in Base64. The default value is the key value.
 
 **Type:** string
 
@@ -116,8 +112,7 @@ Length of the IV, in bytes. This field is reserved. The default value is **16**,
 ivOffset?: string
 ```
 
-Offset of the IV for AES-based encryption and decryption. The default value is **0**, which is the only value
-supported.
+Offset of the IV for AES-based encryption and decryption. The default value is **0**, which is the only value supported.
 
 **Type:** string
 
@@ -171,10 +166,7 @@ Called when data is encrypted or decrypted successfully.
 text: string
 ```
 
-Text to be encrypted or decrypted.
-
-The text to be encrypted must be common text. The text to be decrypted must be a binary value encoded in Base64.
-The default format is used for Base64 encoding.
+Text to be encrypted or decrypted. The text to be encrypted must be common text. The text to be decrypted must be a binary value encoded in Base64. The default format is used for Base64 encoding.
 
 **Type:** string
 

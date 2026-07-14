@@ -1,7 +1,6 @@
 # Entity
 
-Enumerates the entity constants of the Want object. **entity** specifies additional information of the target
-ability.
+Enumerates the entity constants of the Want object. **entity** specifies additional information of the target ability.
 
 **Since:** 6
 

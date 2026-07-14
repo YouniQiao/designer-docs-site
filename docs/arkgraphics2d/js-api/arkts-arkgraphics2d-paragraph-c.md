@@ -1,9 +1,6 @@
 # Paragraph
 
-Implements a carrier that stores the text content and style. You can perform operations such as layout and drawing.
-
-Before calling any of the following APIs, you must use [build()](arkts-arkgraphics2d-paragraphbuilder-c.md#build-1) of the
-[ParagraphBuilder](arkts-arkgraphics2d-paragraphbuilder-c.md) class to create a **Paragraph** object.
+Implements a carrier that stores the text content and style. You can perform operations such as layout and drawing. Before calling any of the following APIs, you must use [build()](arkts-arkgraphics2d-paragraphbuilder-c.md#build-1) of the [ParagraphBuilder](arkts-arkgraphics2d-paragraphbuilder-c.md) class to create a **Paragraph** object.
 
 **Since:** 12
 
@@ -614,8 +611,7 @@ let longestLine = paragraph.getLongestLine();
 getLongestLineWithIndent(): number
 ```
 
-Obtains the width of the longest line, including its indentation, in the text. You are advised to round up the
-return value. If the text content is empty, **0** is returned.
+Obtains the width of the longest line, including its indentation, in the text. You are advised to round up the return value. If the text content is empty, **0** is returned.
 
 **Since:** 13
 
@@ -866,8 +862,7 @@ let placeholderRects = paragraph.getRectsForPlaceholders();
 getRectsForRange(range: Range, widthStyle: RectWidthStyle, heightStyle: RectHeightStyle): Array<TextBox>
 ```
 
-Obtains the rectangles occupied by the characters in the range of the text under the given rectangle width and
-height.
+Obtains the rectangles occupied by the characters in the range of the text under the given rectangle width and height.
 
 **Since:** 12
 
@@ -988,9 +983,7 @@ let lines = paragraph.getTextLines();
 getVisibleTextRanges(): Array<Range>
 ```
 
-Obtains the range of text that is visible on the screen in a paragraph. Excludes text that is not displayed due
-to truncation by the maximum line count (the maxLines attribute of [ParagraphStyle](arkts-arkgraphics2d-paragraphstyle-i.md))
-or replacement in ellipsis mode ([EllipsisMode](arkts-arkgraphics2d-ellipsismode-e.md)).
+Obtains the range of text that is visible on the screen in a paragraph. Excludes text that is not displayed due to truncation by the maximum line count (the maxLines attribute of [ParagraphStyle](arkts-arkgraphics2d-paragraphstyle-i.md)) or replacement in ellipsis mode ([EllipsisMode](arkts-arkgraphics2d-ellipsismode-e.md)).
 
 **Since:** 26.0.0
 
@@ -1293,8 +1286,7 @@ paragraph.paintOnPath(canvas, path, 0, 0);
 updateColor(color: common2D.Color): void
 ```
 
-Updates the color of the entire text span. This API call also updates the decoration color if it hasn't been set
-yet.
+Updates the color of the entire text span. This API call also updates the decoration color if it hasn't been set yet.
 
 **Since:** 20
 

@@ -24,8 +24,7 @@ Metric event indicating playback stalling.
 AV_METRICS_EVENT_LIP_ASYNC = 2
 ```
 
-It is reported when the video sending and rendering time deviation is greater than expected,
-for example, video frame alignment or display in advance.
+It is reported when the video sending and rendering time deviation is greater than expected, for example, video frame alignment or display in advance.
 
 **Since:** 26.0.0
 
@@ -39,8 +38,7 @@ for example, video frame alignment or display in advance.
 AV_METRICS_EVENT_LOADINGRATE_CHANGE = 3
 ```
 
-Load rate change event. This event is triggered when the difference
-between the data loading rate and the previous data loading rate is greater than 10%.
+Load rate change event. This event is triggered when the difference between the data loading rate and the previous data loading rate is greater than 10%.
 
 **Since:** 26.0.0
 
@@ -54,8 +52,7 @@ between the data loading rate and the previous data loading rate is greater than
 AV_METRICS_EVENT_LOADING_ERROR = 4
 ```
 
-Data loading failure event, which carries the error information returned during data loading,
-such as connection timeout, access error, and server rejection.
+Data loading failure event, which carries the error information returned during data loading, such as connection timeout, access error, and server rejection.
 
 **Since:** 26.0.0
 
@@ -83,8 +80,7 @@ Reported when the played media content changes, for example, advertisement inser
 AV_METRICS_EVENT_CONTENT_DISCONTINUITY = 6
 ```
 
-Content discontinuity event.
-This event is triggered when audio and video parameter changes are detected.
+Content discontinuity event. This event is triggered when audio and video parameter changes are detected.
 
 **Since:** 26.0.0
 

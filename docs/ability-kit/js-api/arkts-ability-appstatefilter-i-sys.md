@@ -1,8 +1,6 @@
 # AppStateFilter (System API)
 
-Describes the filter for application lifecycle change events. It can be used as a parameter of
-[on](arkts-ability-on-f-sys.md#on-3) to
-filter application lifecycle change events you want to listen for.
+Describes the filter for application lifecycle change events. It can be used as a parameter of [on](arkts-ability-on-f-sys.md#on-3) to filter application lifecycle change events you want to listen for.
 
 **Since:** 21
 
@@ -22,13 +20,7 @@ import { appManager } from '@kit.AbilityKit';
 abilityStateTypes?: number
 ```
 
-Type of ability state to filter. The options are as follows:
-
-- **0**: Do not listen for any ability state.
-- A bitwise OR combination of the enumerated values of [FilterAbilityStateType](#filterabilitystatetype21), for
-example, "appManager.FilterAbilityStateType.CREATE | appManager.FilterAbilityStateType.FOREGROUND" listens for
-both the creating and foreground states of ability components.
-- If this parameter is not set, all ability state types are listened for by default.
+Type of ability state to filter. The options are as follows: - **0**: Do not listen for any ability state. - A bitwise OR combination of the enumerated values of [FilterAbilityStateType](#filterabilitystatetype21), for example, "appManager.FilterAbilityStateType.CREATE | appManager.FilterAbilityStateType.FOREGROUND" listens for both the creating and foreground states of ability components. - If this parameter is not set, all ability state types are listened for by default.
 
 **Type:** number
 
@@ -44,13 +36,7 @@ both the creating and foreground states of ability components.
 appStateTypes?: number
 ```
 
-Type of application state to filter. The options are as follows:
-
-- **0**: Do not listen for any application state.
-- A bitwise OR combination of the enumerated values of [FilterAppStateType](#filterappstatetype21), for example,
-"appManager.FilterAppStateType.CREATE | appManager.FilterAppStateType.FOREGROUND" listens for both the creating
-and foreground states of applications.
-- If this parameter is not set, all application state types are listened for by default.
+Type of application state to filter. The options are as follows: - **0**: Do not listen for any application state. - A bitwise OR combination of the enumerated values of [FilterAppStateType](#filterappstatetype21), for example, "appManager.FilterAppStateType.CREATE | appManager.FilterAppStateType.FOREGROUND" listens for both the creating and foreground states of applications. - If this parameter is not set, all application state types are listened for by default.
 
 **Type:** number
 
@@ -66,13 +52,7 @@ and foreground states of applications.
 bundleTypes?: number
 ```
 
-Type of application to filter. The options are as follows:
-
-- **0**: Do not listen for any application type.
-- A bitwise OR combination of the enumerated values of [FilterBundleType](#filterbundletype21), for example, "
-appManager.FilterBundleType.APP | appManager.FilterBundleType.ATOMIC_SERVICE" listens for lifecycle change events
-for both applications and atomic services.
-- If this parameter is not set, all application types are listened for by default.
+Type of application to filter. The options are as follows: - **0**: Do not listen for any application type. - A bitwise OR combination of the enumerated values of [FilterBundleType](#filterbundletype21), for example, " appManager.FilterBundleType.APP | appManager.FilterBundleType.ATOMIC_SERVICE" listens for lifecycle change events for both applications and atomic services. - If this parameter is not set, all application types are listened for by default.
 
 **Type:** number
 
@@ -88,18 +68,7 @@ for both applications and atomic services.
 callbacks?: number
 ```
 
-Callback to filter. The options are as follows:
-
-- **0**: Do not listen for any callback.
-- A bitwise OR combination of the enumerated values of [FilterCallback](#filtercallback21), for example, "
-appManager.FilterCallback.ON_ABILITY_STATE_CHANGED | appManager.FilterCallback.ON_PROCESS_STATE_CHANGED" listens
-for both
-[ApplicationStateObserver.onAbilityStateChanged](js-apis-inner-application-applicationStateObserver.md#applicationstateobserveronabilitystatechanged)
-and
-[ApplicationStateObserver.onProcessStateChanged](js-apis-inner-application-applicationStateObserver.md#applicationstateobserveronprocessstatechanged)
-.
-- If this parameter is not set, all callbacks enumerated in [FilterCallback](#filtercallback21) are listened for
-by default.
+Callback to filter. The options are as follows: - **0**: Do not listen for any callback. - A bitwise OR combination of the enumerated values of [FilterCallback](#filtercallback21), for example, " appManager.FilterCallback.ON_ABILITY_STATE_CHANGED | appManager.FilterCallback.ON_PROCESS_STATE_CHANGED" listens for both [ApplicationStateObserver.onAbilityStateChanged](js-apis-inner-application-applicationStateObserver.md#applicationstateobserveronabilitystatechanged) and [ApplicationStateObserver.onProcessStateChanged](js-apis-inner-application-applicationStateObserver.md#applicationstateobserveronprocessstatechanged) . - If this parameter is not set, all callbacks enumerated in [FilterCallback](#filtercallback21) are listened for by default.
 
 **Type:** number
 
@@ -115,13 +84,7 @@ by default.
 processStateTypes?: number
 ```
 
-Type of process state to filter. The options are as follows:
-
-- **0**: Do not listen for any process state.
-- A bitwise OR combination of the enumerated values of [FilterProcessStateType](#filterprocessstatetype21), for
-example, "appManager.FilterProcessStateType.CREATE | appManager.FilterProcessStateType.FOREGROUND" listens for
-both the creating and foreground states of processes.
-- If this parameter is not set, all process state types are listened for by default.
+Type of process state to filter. The options are as follows: - **0**: Do not listen for any process state. - A bitwise OR combination of the enumerated values of [FilterProcessStateType](#filterprocessstatetype21), for example, "appManager.FilterProcessStateType.CREATE | appManager.FilterProcessStateType.FOREGROUND" listens for both the creating and foreground states of processes. - If this parameter is not set, all process state types are listened for by default.
 
 **Type:** number
 

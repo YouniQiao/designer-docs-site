@@ -12,9 +12,7 @@ import { taskpool } from '@kit.ArkTS';
 function executePeriodically(period: number, task: Task, priority?: Priority): void
 ```
 
-Executes a task periodically. In this execution mode, you can set the task priority and call **cancel()** to cancel
-the execution. A periodic task cannot be a task in a task group, serial queue, or asynchronous queue. It cannot
-call **execute()** again or have a dependency relationship.
+Executes a task periodically. In this execution mode, you can set the task priority and call **cancel()** to cancel the execution. A periodic task cannot be a task in a task group, serial queue, or asynchronous queue. It cannot call **execute()** again or have a dependency relationship.
 
 **Since:** 12
 
@@ -89,9 +87,7 @@ taskpoolTest();
 function executePeriodically<A extends Array<Object>, R>(period: number, task: GenericsTask<A, R>, priority?: Priority): void
 ```
 
-Executes a generic task periodically, without verifying the parameter type and return value type of the task.
-The verification of the **executePeriodically** task works in conjunction with **new GenericsTask**, requiring that
-the parameter and return value types match those specified in **new GenericsTask**.
+Executes a generic task periodically, without verifying the parameter type and return value type of the task. The verification of the **executePeriodically** task works in conjunction with **new GenericsTask**, requiring that the parameter and return value types match those specified in **new GenericsTask**.
 
 **Since:** 13
 

@@ -4,8 +4,7 @@
 declare type ShouldRecognizerParallelWithCallback = (current: GestureRecognizer, others: Array<GestureRecognizer>) => GestureRecognizer
 ```
 
-Represents the callback used to set the parallel relationship between gestures of the current component and gestures
-of other components in the response chain.
+Represents the callback used to set the parallel relationship between gestures of the current component and gestures of other components in the response chain.
 
 **Since:** 26.0.0
 

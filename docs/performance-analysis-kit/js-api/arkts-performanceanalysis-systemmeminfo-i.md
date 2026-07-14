@@ -18,8 +18,7 @@ import { hidebug } from '@kit.PerformanceAnalysisKit';
 availableMem: bigint
 ```
 
-Available memory of the system, in KB. The value of this parameter is obtained by reading the value of
-**MemAvailable** in the **\/proc/meminfo** node.
+Available memory of the system, in KB. The value of this parameter is obtained by reading the value of **MemAvailable** in the **\/proc/meminfo** node.
 
 **Type:** bigint
 
@@ -33,8 +32,7 @@ Available memory of the system, in KB. The value of this parameter is obtained b
 freeMem: bigint
 ```
 
-Free memory of the system, in KB. The value of this parameter is obtained by reading the value of **MemFree** in
-the **\/proc/meminfo** node.
+Free memory of the system, in KB. The value of this parameter is obtained by reading the value of **MemFree** in the **\/proc/meminfo** node.
 
 **Type:** bigint
 
@@ -48,8 +46,7 @@ the **\/proc/meminfo** node.
 totalMem: bigint
 ```
 
-Total memory of the system, in KB. The value of this parameter is obtained by reading the value of **MemTotal**
-in the **\/proc/meminfo** node.
+Total memory of the system, in KB. The value of this parameter is obtained by reading the value of **MemTotal** in the **\/proc/meminfo** node.
 
 **Type:** bigint
 

@@ -1,8 +1,6 @@
 # TimePicker属性/事件
 
-除支持[通用属性](./common)外，还支持以下属性：
-
-除支持[通用事件](./common)外，还支持以下事件：
+除支持[通用属性](./common)外，还支持以下属性： 除支持[通用事件](./common)外，还支持以下事件：
 
 **继承/实现关系：** TimePickerAttribute extends [CommonMethod<TimePickerAttribute>](CommonMethod<TimePickerAttribute>)
 
@@ -38,8 +36,7 @@ dateTimeOptions(value: DateTimeOptions)
 dateTimeOptions(timeFormat: Optional<DateTimeOptions>)
 ```
 
-设置时分秒是否显示前导0。与[dateTimeOptions<sup>12+</sup>](TimePickerAttribute#dateTimeOptions(value:
-DateTimeOptions))相比，timeFormat参数新增了对undefined类型的支持。
+设置时分秒是否显示前导0。与[dateTimeOptions<sup>12+</sup>](TimePickerAttribute#dateTimeOptions(value: DateTimeOptions))相比，timeFormat参数新增了对undefined类型的支持。
 
 **起始版本：** 18
 
@@ -105,9 +102,7 @@ disappearTextStyle(value: PickerTextStyle)
 disappearTextStyle(style: Optional<PickerTextStyle>)
 ```
 
-设置边缘项（以选中项为基准向上或向下的第二项）的文本颜色、字号、字体粗细。与
-[disappearTextStyle<sup>10+</sup>](TimePickerAttribute#disappearTextStyle(value: PickerTextStyle))相比，
-style参数新增了对undefined类型的支持。
+设置边缘项（以选中项为基准向上或向下的第二项）的文本颜色、字号、字体粗细。与 [disappearTextStyle<sup>10+</sup>](TimePickerAttribute#disappearTextStyle(value: PickerTextStyle))相比， style参数新增了对undefined类型的支持。
 
 **起始版本：** 18
 
@@ -129,8 +124,7 @@ style参数新增了对undefined类型的支持。
 enableCascade(enabled: boolean)
 ```
 
-设置上午和下午的标识是否根据小时数自动切换，仅在[useMilitaryTime](TimePickerAttribute#useMilitaryTime(value:
-boolean))设置为false时生效。
+设置上午和下午的标识是否根据小时数自动切换，仅在[useMilitaryTime](TimePickerAttribute#useMilitaryTime(value: boolean))设置为false时生效。
 
 **起始版本：** 18
 
@@ -152,13 +146,7 @@ boolean))设置为false时生效。
 enableHapticFeedback(enable: boolean)
 ```
 
-设置是否支持触控反馈。
-
-开启触控反馈时，需要在工程的src/main/module.json5文件的"module"内配置requestPermissions字段开启振动权限。
-
-> **说明：**
->
-> 从API version 18开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+设置是否支持触控反馈。 开启触控反馈时，需要在工程的src/main/module.json5文件的"module"内配置requestPermissions字段开启振动权限。 > **说明：** > > 从API version 18开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 12
 
@@ -180,10 +168,7 @@ enableHapticFeedback(enable: boolean)
 enableHapticFeedback(enable: Optional<boolean>)
 ```
 
-设置是否支持触控反馈。与[enableHapticFeedback<sup>12+</sup>](TimePickerAttribute#enableHapticFeedback(enable:
-boolean))相比，enable参数新增了对undefined类型的支持。
-
-开启触控反馈时，需要在工程的src/main/module.json5文件的"module"内配置requestPermissions字段开启振动权限。
+设置是否支持触控反馈。与[enableHapticFeedback<sup>12+</sup>](TimePickerAttribute#enableHapticFeedback(enable: boolean))相比，enable参数新增了对undefined类型的支持。 开启触控反馈时，需要在工程的src/main/module.json5文件的"module"内配置requestPermissions字段开启振动权限。
 
 **起始版本：** 18
 
@@ -227,8 +212,7 @@ loop(value: boolean)
 loop(isLoop: Optional<boolean>)
 ```
 
-设置是否启用循环模式。与[loop<sup>11+</sup>](TimePickerAttribute#loop(value: boolean))相比，
-isLoop参数新增了对undefined类型的支持。
+设置是否启用循环模式。与[loop<sup>11+</sup>](TimePickerAttribute#loop(value: boolean))相比， isLoop参数新增了对undefined类型的支持。
 
 **起始版本：** 18
 
@@ -250,10 +234,7 @@ isLoop参数新增了对undefined类型的支持。
 onChange(callback: (value: TimePickerResult) => void)
 ```
 
-滑动TimePicker后，时间选项归位至选中项位置时，触发该回调。不能通过双向绑定的状态变量触发。
-
-回调会在滑动动画结束后触发，如果需要快速获取索引值变化，
-建议使用[onEnterSelectedArea](TimePickerAttribute#onEnterSelectedArea)接口。
+滑动TimePicker后，时间选项归位至选中项位置时，触发该回调。不能通过双向绑定的状态变量触发。 回调会在滑动动画结束后触发，如果需要快速获取索引值变化， 建议使用[onEnterSelectedArea](TimePickerAttribute#onEnterSelectedArea)接口。
 
 **起始版本：** 8
 
@@ -273,12 +254,7 @@ onChange(callback: (value: TimePickerResult) => void)
 onChange(callback: Optional<OnTimePickerChangeCallback>)
 ```
 
-滑动TimePicker后，时间选项归位至选中项位置时，触发该回调。不能通过双向绑定的状态变量触发。与
-[onChange](TimePickerAttribute#onChange(callback: Optional<OnTimePickerChangeCallback>))相比，
-callback参数新增了对undefined类型的支持。
-
-回调会在滑动动画结束后触发，如果需要快速获取索引值变化，
-建议使用[onEnterSelectedArea](TimePickerAttribute#onEnterSelectedArea)接口。
+滑动TimePicker后，时间选项归位至选中项位置时，触发该回调。不能通过双向绑定的状态变量触发。与 [onChange](TimePickerAttribute#onChange(callback: Optional<OnTimePickerChangeCallback>))相比， callback参数新增了对undefined类型的支持。 回调会在滑动动画结束后触发，如果需要快速获取索引值变化， 建议使用[onEnterSelectedArea](TimePickerAttribute#onEnterSelectedArea)接口。
 
 **起始版本：** 18
 
@@ -300,18 +276,7 @@ callback参数新增了对undefined类型的支持。
 onEnterSelectedArea(callback: Callback<TimePickerResult>)
 ```
 
-滑动TimePicker过程中，选项进入分割线区域内，触发该回调。
-
-与[onChange](TimePickerAttribute#onChange(callback: Optional<OnTimePickerChangeCallback>))事件的差别在于，
-该事件的触发时机早于[onChange](TimePickerAttribute#onChange(callback: Optional<OnTimePickerChangeCallback>))事件，
-当当前滑动列滑动距离超过选中项高度的一半时，选项此时已经进入分割线区域内，会触发该事件。
-当[enableCascade](TimePickerAttribute#enableCascade)设置为true时，由于上午/下午列与小时列存在联动关系，不建议使用该回调。
-该回调标识的是滑动过程中选项进入分割线区域内的节点，而联动变化的选项并不涉及滑动，因此，回调的返回值中，仅当前滑动列的值会正常变化，
-其余未滑动列的值保持不变。
-
-> **说明：**
->
-> 该接口不支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+滑动TimePicker过程中，选项进入分割线区域内，触发该回调。 与[onChange](TimePickerAttribute#onChange(callback: Optional<OnTimePickerChangeCallback>))事件的差别在于， 该事件的触发时机早于[onChange](TimePickerAttribute#onChange(callback: Optional<OnTimePickerChangeCallback>))事件， 当当前滑动列滑动距离超过选中项高度的一半时，选项此时已经进入分割线区域内，会触发该事件。 当[enableCascade](TimePickerAttribute#enableCascade)设置为true时，由于上午/下午列与小时列存在联动关系，不建议使用该回调。 该回调标识的是滑动过程中选项进入分割线区域内的节点，而联动变化的选项并不涉及滑动，因此，回调的返回值中，仅当前滑动列的值会正常变化， 其余未滑动列的值保持不变。 > **说明：** > > 该接口不支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 18
 
@@ -355,9 +320,7 @@ selectedTextStyle(value: PickerTextStyle)
 selectedTextStyle(style: Optional<PickerTextStyle>)
 ```
 
-设置选中项的文本颜色、字号及字体粗细。与
-[selectedTextStyle<sup>10+</sup>](TimePickerAttribute#selectedTextStyle(value: PickerTextStyle))相比，
-style参数新增了对undefined类型的支持。
+设置选中项的文本颜色、字号及字体粗细。与 [selectedTextStyle<sup>10+</sup>](TimePickerAttribute#selectedTextStyle(value: PickerTextStyle))相比， style参数新增了对undefined类型的支持。
 
 **起始版本：** 18
 
@@ -401,9 +364,7 @@ textStyle(value: PickerTextStyle)
 textStyle(style: Optional<PickerTextStyle>)
 ```
 
-设置待选项（以选中项为基准向上或向下的第一项）的文本颜色、字号、字体粗细。与
-[textStyle<sup>10+</sup>](TimePickerAttribute#textStyle(value: PickerTextStyle))相比，
-style参数新增了对undefined类型的支持。
+设置待选项（以选中项为基准向上或向下的第一项）的文本颜色、字号、字体粗细。与 [textStyle<sup>10+</sup>](TimePickerAttribute#textStyle(value: PickerTextStyle))相比， style参数新增了对undefined类型的支持。
 
 **起始版本：** 18
 
@@ -445,8 +406,7 @@ useMilitaryTime(value: boolean)
 useMilitaryTime(isMilitaryTime: Optional<boolean>)
 ```
 
-设置展示时间是否为24小时制，未通过该接口设置时，默认跟随系统设置展示。与[useMilitaryTime]
-{@link TimePickerAttribute#useMilitaryTime(value: boolean)}相比，isMilitaryTime参数新增了对undefined类型的支持。
+设置展示时间是否为24小时制，未通过该接口设置时，默认跟随系统设置展示。与[useMilitaryTime] {@link TimePickerAttribute#useMilitaryTime(value: boolean)}相比，isMilitaryTime参数新增了对undefined类型的支持。
 
 **起始版本：** 18
 

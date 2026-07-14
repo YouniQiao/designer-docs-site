@@ -20,8 +20,7 @@ import { installer } from '@kit.AbilityKit';
 addExtResource(bundleName: string, filePaths: Array<string>): Promise<void>
 ```
 
-Adds extended resources based on the specified bundle name and HSP file path. This API uses a promise to return
-the result.
+Adds extended resources based on the specified bundle name and HSP file path. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -304,13 +303,7 @@ try {
 install(hapFilePaths: Array<string>, installParam: InstallParam, callback: AsyncCallback<void>): void
 ```
 
-Installs an application. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> To install applications of different distribution types, the appropriate permissions must be requested. For
-> details on distribution types, see the **appDistributionType** field in
-> [ApplicationInfo](arkts-ability-applicationinfo-i.md).
+Installs an application. This API uses an asynchronous callback to return the result. > **NOTE** > > To install applications of different distribution types, the appropriate permissions must be requested. For > details on distribution types, see the **appDistributionType** field in > [ApplicationInfo](arkts-ability-applicationinfo-i.md).
 
 **Since:** 9
 
@@ -403,13 +396,7 @@ try {
 install(hapFilePaths: Array<string>, callback: AsyncCallback<void>): void
 ```
 
-Installs an application. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> To install applications of different distribution types, the appropriate permissions must be requested. For
-> details on distribution types, see the **appDistributionType** field in
-> [ApplicationInfo](arkts-ability-applicationinfo-i.md).
+Installs an application. This API uses an asynchronous callback to return the result. > **NOTE** > > To install applications of different distribution types, the appropriate permissions must be requested. For > details on distribution types, see the **appDistributionType** field in > [ApplicationInfo](arkts-ability-applicationinfo-i.md).
 
 **Since:** 9
 
@@ -495,13 +482,7 @@ try {
 install(hapFilePaths: Array<string>, installParam?: InstallParam): Promise<void>
 ```
 
-Installs an application. This API uses a promise to return the result.
-
-> **NOTE**
->
-> To install applications of different distribution types, the appropriate permissions must be requested. For
-> details on distribution types, see the **appDistributionType** field in
-> [ApplicationInfo](arkts-ability-applicationinfo-i.md).
+Installs an application. This API uses a promise to return the result. > **NOTE** > > To install applications of different distribution types, the appropriate permissions must be requested. For > details on distribution types, see the **appDistributionType** field in > [ApplicationInfo](arkts-ability-applicationinfo-i.md).
 
 **Since:** 9
 
@@ -681,13 +662,7 @@ try {
 installPreexistingApp(bundleName: string, userId?: number): Promise<void>
 ```
 
-Installs an application. This API uses a promise to return the result.
-
-> **NOTE**
->
-> This API does not support the installation of applications whose
-> [distribution type of the application signing certificate](arkts-ability-applicationinfo-i.md)
-> is set to **enterprise**, **enterprise_mdm**, or **enterprise_normal**.
+Installs an application. This API uses a promise to return the result. > **NOTE** > > This API does not support the installation of applications whose > [distribution type of the application signing certificate](arkts-ability-applicationinfo-i.md) > is set to **enterprise**, **enterprise_mdm**, or **enterprise_normal**.
 
 **Since:** 12
 
@@ -755,8 +730,7 @@ try {
 recover(bundleName: string, installParam: InstallParam, callback: AsyncCallback<void>): void
 ```
 
-Rolls back an application to the initial installation state. This API uses an asynchronous callback to return the
-result.
+Rolls back an application to the initial installation state. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -824,8 +798,7 @@ try {
 recover(bundleName: string, callback: AsyncCallback<void>): void
 ```
 
-Rolls back an application to the initial installation state. This API uses an asynchronous callback to return the
-result.
+Rolls back an application to the initial installation state. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -958,8 +931,7 @@ try {
 removeExtResource(bundleName: string, moduleNames: Array<string>): Promise<void>
 ```
 
-Removes extended resources based on the specified bundle name and module names. This API uses a promise to return
-the result.
+Removes extended resources based on the specified bundle name and module names. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -1367,10 +1339,7 @@ try {
 uninstallNewPreinstalledApps(bundleNames: Array<string>): Promise<void>
 ```
 
-Uninstall new preinstalled applications.
-Only supports uninstalling pre installed applications added during device OTA upgrade. Asynchronous execution of
-application uninstallation tasks, the interface return value only indicates successful interface invocation
-and does not return uninstallation results.
+Uninstall new preinstalled applications. Only supports uninstalling pre installed applications added during device OTA upgrade. Asynchronous execution of application uninstallation tasks, the interface return value only indicates successful interface invocation and does not return uninstallation results.
 
 **Since:** 24
 
@@ -1477,8 +1446,7 @@ try {
 uninstallUpdates(bundleName: string, installParam?: InstallParam): Promise<void>
 ```
 
-Uninstalls and updates a preinstalled application and restores it to the initial installation status. This API
-uses a promise to return the result.
+Uninstalls and updates a preinstalled application and restores it to the initial installation status. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -1551,9 +1519,7 @@ try {
 updateBundleForSelf(hapFilePaths: Array<string>, installParam: InstallParam, callback: AsyncCallback<void>): void
 ```
 
-Updates the current bundle. This API can be called only by enterprise MDM applications on enterprise devices, and
-the HAPs in **hapFilePaths** must belong to the current application. This API uses an asynchronous callback to
-return the result.
+Updates the current bundle. This API can be called only by enterprise MDM applications on enterprise devices, and the HAPs in **hapFilePaths** must belong to the current application. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -1635,9 +1601,7 @@ try {
 updateBundleForSelf(hapFilePaths: Array<string>, callback: AsyncCallback<void>): void
 ```
 
-Updates the current bundle. This API can be called only by enterprise MDM applications on enterprise devices, and
-the HAPs in **hapFilePaths** must belong to the current application. This API uses an asynchronous callback to
-return the result.
+Updates the current bundle. This API can be called only by enterprise MDM applications on enterprise devices, and the HAPs in **hapFilePaths** must belong to the current application. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -1712,9 +1676,7 @@ try {
 updateBundleForSelf(hapFilePaths: Array<string>, installParam?: InstallParam): Promise<void>
 ```
 
-Updates the current bundle. This API can be called only by enterprise MDM applications on enterprise devices, and
-the HAPs in **hapFilePaths** must belong to the current application. This API uses a promise to return the
-result.
+Updates the current bundle. This API can be called only by enterprise MDM applications on enterprise devices, and the HAPs in **hapFilePaths** must belong to the current application. This API uses a promise to return the result.
 
 **Since:** 10
 

@@ -10,12 +10,10 @@ import { geoLocationManager } from '@kit.LocationKit';
 
 ```TypeScript
 function startBluetoothSearch(
-      request: BluetoothSearchRequest, callback: Callback<BluetoothScanResult>): void
+      request: BluetoothSearchRequestParams, callback: Callback<BluetoothScanResult>): void
 ```
 
-Starts Bluetooth scanning and matches the device ID list in the input parameter
-with the Bluetooth scanning result. If the matching is successful, the Bluetooth
-device information is returned through the callback.
+Starts Bluetooth scanning and matches the device ID list in the input parameter with the Bluetooth scanning result. If the matching is successful, the Bluetooth device information is returned through the callback.
 
 **Since:** 26.0.0
 
@@ -31,7 +29,7 @@ device information is returned through the callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| request | BluetoothSearchRequest | Yes | Indicates the configuration parametersfor the Bluetooth search function. |
+| request | BluetoothSearchRequestParams | Yes | Indicates the configuration parametersfor the Bluetooth search function. |
 | callback | Callback&lt;BluetoothScanResult&gt; | Yes | Callback used to return ${BluetoothScanResult}. |
 
 **Error codes:**

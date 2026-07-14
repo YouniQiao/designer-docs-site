@@ -19,7 +19,7 @@
 | [MetallicRoughnessMaterial](arkts-arkgraphics3d-metallicroughnessmaterial-i.md) | Physically-based metallic roughness material resource. |
 | [Morpher](arkts-arkgraphics3d-morpher-i.md) | Defines Morpher interface for specifying morph targets for Node's geometry. |
 | [OcclusionMaterial](arkts-arkgraphics3d-occlusionmaterial-i.md) | Occlusion material resource |
-| [RenderSort](arkts-arkgraphics3d-rendersort-i.md) | Render sort Layer. Within a render slot a layer can define a sort layer order.There are 0-63 values available (0 first, 63 last). Default id value is 32.1. Typical use case is to set render sort layer to objects which render with depth test without depth write.2. Typical use case is to always render character and/or camera object first to cull large parts of the view.3. Sort e.g. plane layers. |
+| [RenderSort](arkts-arkgraphics3d-rendersort-i.md) | Render sort Layer. Within a render slot a layer can define a sort layer order. There are 0-63 values available (0 first, 63 last). Default id value is 32. 1. Typical use case is to set render sort layer to objects which render with depth test without depth write. 2. Typical use case is to always render character and/or camera object first to cull large parts of the view. 3. Sort e.g. plane layers. |
 | [Sampler](arkts-arkgraphics3d-sampler-i.md) | Sampler interface |
 | [SceneResource](arkts-arkgraphics3d-sceneresource-i.md) | Define scene resource extended by other 3d resource. |
 | [Shader](arkts-arkgraphics3d-shader-i.md) | Shader resource. |

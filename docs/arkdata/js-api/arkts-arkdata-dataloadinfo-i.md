@@ -1,9 +1,6 @@
 # DataLoadInfo
 
-Defines type and quantity of the data to load.
-
-- Used by the **data sender** to define the data range that can be provided. This field is mandatory.
-- Used by the **data receiver** to define the expected data type and quantity. This field is optional.
+Defines type and quantity of the data to load. - Used by the **data sender** to define the data range that can be provided. This field is mandatory. - Used by the **data receiver** to define the expected data type and quantity. This field is optional.
 
 **Since:** 20
 
@@ -39,8 +36,7 @@ Indicates the maximum number of data records to be loaded.
 types?: Set<string>
 ```
 
-Represents the data type or supported types to load.
-<br>This parameter is mandatory when used by the data provider.
+Represents the data type or supported types to load. <br>This parameter is mandatory when used by the data provider.
 
 **Type:** Set<string>
 

@@ -44,8 +44,7 @@ bundleName: string
 index: number
 ```
 
-应用在快捷栏中的位置索引。
-取值范围为全体整数。
+应用在快捷栏中的位置索引。 取值范围为全体整数。
 
 **类型：** number
 

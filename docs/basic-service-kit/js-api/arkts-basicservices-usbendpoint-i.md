@@ -1,13 +1,6 @@
 # USBEndpoint
 
-Represents the USB endpoint from which data is sent or received. You can obtain the USB endpoint through
-[USBInterface](arkts-basicservices-usbinterface-i.md).
-
-> **NOTE**
->
-> The host controller schedules the endpoint based on the endpoint type.
->
-> The transmission characteristics are determined by the type during protocol layer packaging.
+Represents the USB endpoint from which data is sent or received. You can obtain the USB endpoint through [USBInterface](arkts-basicservices-usbinterface-i.md). > **NOTE** > > The host controller schedules the endpoint based on the endpoint type. > > The transmission characteristics are determined by the type during protocol layer packaging.
 
 **Since:** 9
 

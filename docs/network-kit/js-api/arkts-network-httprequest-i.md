@@ -1,7 +1,6 @@
 # HttpRequest
 
-<p>Defines an HTTP request task. Before invoking APIs provided by HttpRequest,
-you must call createHttp() to create an HttpRequestTask object.</p>
+<p>Defines an HTTP request task. Before invoking APIs provided by HttpRequest, you must call createHttp() to create an HttpRequestTask object.</p>
 
 **Since:** 11
 
@@ -704,13 +703,13 @@ httpRequest.once("headersReceive", (header: Object) => {
 request(url: string, callback: AsyncCallback<HttpResponse>): void
 ```
 
-Initiates an HTTP request to a given URL.
+Initiates an HTTP request to a given URL. This API uses an asynchronous callback to return the result. > **NOTE** > > (1) This API can receive only data whose size is less than 5 MB. If the data size exceeds 5 MB, you need to set > **maxLimit** to a larger value in [HttpRequestOptions](arkts-network-httprequestoptions-i.md) or call > [requestInStream](arkts-network-httprequest-i.md#requestinstream-1) to > initiate a streaming request. Since API version 23, this API can receive a maximum of 50 MB data. In versions > earlier than API version 23, this API can receive a maximum of 5 MB data, and any data exceeding this threshold > will fail to be received. > (2) If you need to pass in cookies, add them to the **options** parameter. > (3) If the URL contains non-English characters, call **encodeURL(url)** to encode the URL before initiating an > HTTP request.
 
-**Since:** 18
+**Since:** 6
 
 **Required permissions:** ohos.permission.INTERNET
 
-**Atomic service API:** This API can be used in atomic services since API version 18.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.Communication.NetStack
 
@@ -719,7 +718,7 @@ Initiates an HTTP request to a given URL.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | url | string | Yes | URL for initiating an HTTP request. |
-| callback | AsyncCallback&lt;HttpResponse&gt; | Yes | the callback of request. |
+| callback | AsyncCallback&lt;HttpResponse&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -755,9 +754,10 @@ Initiates an HTTP request to a given URL.
 | [2300077](../errorcode-net-http.md#2300077-no-ssl-ca-certificate-or-access-permission) | The SSL CA certificate does not exist or is inaccessible. |
 | [2300078](../errorcode-net-http.md#2300078-url-requested-file-not-found) | Remote file not found. |
 | [2300094](../errorcode-net-http.md#2300094-identity-verification-failed) | Authentication error. |
-| [2300997](../errorcode-net-http.md#2300997-plaintext-http-access-intercepted) | Cleartext traffic not permitted. |
-| [2300998](../errorcode-net-http.md#2300998-domain-access-denied) | It is not allowed to access this domain. |
 | [2300999](../errorcode-net-http.md#2300999-internal-error) | Internal error. |
+| [2300998](../errorcode-net-http.md#2300998-domain-access-denied) | It is not allowed to access this domain.<br>**Applicable version:** 12 and later |
+| [2300997](../errorcode-net-http.md#2300997-plaintext-http-access-intercepted) | Cleartext traffic not permitted.<br>**Applicable version:** 18 and later |
+| 2300996 | The request was intercepted by the HTTP globalinterceptor.<br>**Applicable version:** 26.0.0 dynamic&static and later |
 
 **Example**
 
@@ -803,13 +803,13 @@ httpRequest.request("EXAMPLE_URL", (err: Error, data: http.HttpResponse) => {
 request(url: string, options: HttpRequestOptions, callback: AsyncCallback<HttpResponse>): void
 ```
 
-Initiates an HTTP request to a given URL.
+Initiates an HTTP request containing specified options to a given URL. This API uses an asynchronous callback to return the result. > **NOTE** > > (1) This API can receive only data whose size is less than 5 MB. If the data size exceeds 5 MB, you need to set > **maxLimit** to a larger value in [HttpRequestOptions](arkts-network-httprequestoptions-i.md) or call > [requestInStream](arkts-network-httprequest-i.md#requestinstream-1) to > initiate a streaming request. Since API version 23, this API can receive a maximum of 50 MB data. In versions > earlier than API version 23, this API can receive a maximum of 5 MB data, and any data exceeding this threshold > will fail to be received. > (2) If you need to pass in cookies, add them to the **options** parameter. > (3) If the URL contains non-English characters, call **encodeURL(url)** to encode the URL before initiating an > HTTP request.
 
-**Since:** 18
+**Since:** 6
 
 **Required permissions:** ohos.permission.INTERNET
 
-**Atomic service API:** This API can be used in atomic services since API version 18.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.Communication.NetStack
 
@@ -818,8 +818,8 @@ Initiates an HTTP request to a given URL.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | url | string | Yes | URL for initiating an HTTP request. |
-| options | HttpRequestOptions | Yes | Optional parameters {@link HttpRequestOptions}. |
-| callback | AsyncCallback&lt;HttpResponse&gt; | Yes | the callback of request. |
+| options | HttpRequestOptions | Yes | Request options. For details, see[HttpRequestOptions](arkts-network-httprequestoptions-i.md). |
+| callback | AsyncCallback&lt;HttpResponse&gt; | Yes | Callback used to return the result. If the operation issuccessful, the callback content is an [HttpResponse](arkts-network-httpresponse-i.md) object; otherwise, thecallback content is undefined. |
 
 **Error codes:**
 
@@ -855,9 +855,10 @@ Initiates an HTTP request to a given URL.
 | [2300077](../errorcode-net-http.md#2300077-no-ssl-ca-certificate-or-access-permission) | The SSL CA certificate does not exist or is inaccessible. |
 | [2300078](../errorcode-net-http.md#2300078-url-requested-file-not-found) | Remote file not found. |
 | [2300094](../errorcode-net-http.md#2300094-identity-verification-failed) | Authentication error. |
-| [2300997](../errorcode-net-http.md#2300997-plaintext-http-access-intercepted) | Cleartext traffic not permitted. |
-| [2300998](../errorcode-net-http.md#2300998-domain-access-denied) | It is not allowed to access this domain. |
 | [2300999](../errorcode-net-http.md#2300999-internal-error) | Internal error. |
+| [2300998](../errorcode-net-http.md#2300998-domain-access-denied) | It is not allowed to access this domain.<br>**Applicable version:** 12 and later |
+| [2300997](../errorcode-net-http.md#2300997-plaintext-http-access-intercepted) | Cleartext traffic not permitted.<br>**Applicable version:** 18 and later |
+| 2300996 | The request was intercepted by the HTTP globalinterceptor.<br>**Applicable version:** 26.0.0 dynamic&static and later |
 
 **Example**
 
@@ -953,13 +954,13 @@ httpRequest.request("EXAMPLE_URL", options, (err: Error, data: http.HttpResponse
 request(url: string, options?: HttpRequestOptions): Promise<HttpResponse>
 ```
 
-Initiates an HTTP request to a given URL.
+Initiates an HTTP request containing specified options to a given URL. This API uses a promise to return the result. > **NOTE** > > (1) This API can receive only data whose size is less than 5 MB. If the data size exceeds 5 MB, you need to set > **maxLimit** to a larger value in [HttpRequestOptions](arkts-network-httprequestoptions-i.md) or call > [requestInStream](arkts-network-httprequest-i.md#requestinstream-1) to > initiate a streaming request. Since API version 23, this API can receive a maximum of 50 MB data. In versions > earlier than API version 23, this API can receive a maximum of 5 MB data, and any data exceeding this threshold > will fail to be received. > (2) If you need to pass in cookies, add them to the **options** parameter. > (3) If the URL contains non-English characters, call **encodeURL(url)** to encode the URL before initiating an > HTTP request.
 
-**Since:** 18
+**Since:** 6
 
 **Required permissions:** ohos.permission.INTERNET
 
-**Atomic service API:** This API can be used in atomic services since API version 18.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.Communication.NetStack
 
@@ -968,13 +969,13 @@ Initiates an HTTP request to a given URL.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | url | string | Yes | URL for initiating an HTTP request. |
-| options | HttpRequestOptions | No | Optional parameters {@link HttpRequestOptions}. |
+| options | HttpRequestOptions | No | Request options. For details, see[HttpRequestOptions](arkts-network-httprequestoptions-i.md). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;HttpResponse&gt; | The promise returned by the function. |
+| Promise&lt;HttpResponse&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -1010,9 +1011,10 @@ Initiates an HTTP request to a given URL.
 | [2300077](../errorcode-net-http.md#2300077-no-ssl-ca-certificate-or-access-permission) | The SSL CA certificate does not exist or is inaccessible. |
 | [2300078](../errorcode-net-http.md#2300078-url-requested-file-not-found) | Remote file not found. |
 | [2300094](../errorcode-net-http.md#2300094-identity-verification-failed) | Authentication error. |
-| [2300997](../errorcode-net-http.md#2300997-plaintext-http-access-intercepted) | Cleartext traffic not permitted. |
-| [2300998](../errorcode-net-http.md#2300998-domain-access-denied) | It is not allowed to access this domain. |
 | [2300999](../errorcode-net-http.md#2300999-internal-error) | Internal error. |
+| [2300998](../errorcode-net-http.md#2300998-domain-access-denied) | It is not allowed to access this domain.<br>**Applicable version:** 12 and later |
+| [2300997](../errorcode-net-http.md#2300997-plaintext-http-access-intercepted) | Cleartext traffic not permitted.<br>**Applicable version:** 18 and later |
+| 2300996 | The request was intercepted by the HTTP globalinterceptor.<br>**Applicable version:** 26.0.0 dynamic&static and later |
 
 **Example**
 
@@ -1086,13 +1088,13 @@ promise.then((data:http.HttpResponse) => {
 requestInStream(url: string, callback: AsyncCallback<number>): void
 ```
 
-Initiates an HTTP request to a given URL, applicable to scenarios where http response supports streaming.
+Initiates an HTTP request containing specified options to a given URL. This API uses an asynchronous callback to return the result, which is a streaming response.
 
-**Since:** 18
+**Since:** 10
 
 **Required permissions:** ohos.permission.INTERNET
 
-**Atomic service API:** This API can be used in atomic services since API version 18.
+**Atomic service API:** This API can be used in atomic services since API version 15.
 
 **System capability:** SystemCapability.Communication.NetStack
 
@@ -1101,7 +1103,7 @@ Initiates an HTTP request to a given URL, applicable to scenarios where http res
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | url | string | Yes | URL for initiating an HTTP request. |
-| callback | AsyncCallback&lt;number&gt; | Yes | Returns the callback of requestInStream {@link ResponseCode},should use on_headersReceive and on_dataReceive to get http response. |
+| callback | AsyncCallback&lt;number&gt; | Yes | Callback used to return the result. If the request is successful,**err** is **undefined**, and the HTTP result code is returned. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1137,9 +1139,10 @@ Initiates an HTTP request to a given URL, applicable to scenarios where http res
 | [2300077](../errorcode-net-http.md#2300077-no-ssl-ca-certificate-or-access-permission) | The SSL CA certificate does not exist or is inaccessible. |
 | [2300078](../errorcode-net-http.md#2300078-url-requested-file-not-found) | Remote file not found. |
 | [2300094](../errorcode-net-http.md#2300094-identity-verification-failed) | Authentication error. |
-| [2300997](../errorcode-net-http.md#2300997-plaintext-http-access-intercepted) | Cleartext traffic not permitted. |
-| [2300998](../errorcode-net-http.md#2300998-domain-access-denied) | It is not allowed to access this domain. |
-| [2300999](../errorcode-net-http.md#2300999-internal-error) | Internal error. |
+| [2300999](../errorcode-net-http.md#2300999-internal-error) | Unknown error. |
+| [2300998](../errorcode-net-http.md#2300998-domain-access-denied) | It is not allowed to access this domain.<br>**Applicable version:** 12 and later |
+| [2300997](../errorcode-net-http.md#2300997-plaintext-http-access-intercepted) | Cleartext traffic not permitted.<br>**Applicable version:** 18 and later |
+| 2300996 | The request was intercepted by the HTTP globalinterceptor.<br>**Applicable version:** 26.0.0 dynamic, 26.1.0 static and later |
 
 **Example**
 
@@ -1179,13 +1182,13 @@ httpRequest.requestInStream("EXAMPLE_URL", (err: BusinessError, data: number) =>
 requestInStream(url: string, options: HttpRequestOptions, callback: AsyncCallback<number>): void
 ```
 
-Initiates an HTTP request to a given URL, applicable to scenarios where http response supports streaming.
+Initiates an HTTP request containing specified options to a given URL. This API uses an asynchronous callback to return the result, which is a streaming response.
 
-**Since:** 18
+**Since:** 10
 
 **Required permissions:** ohos.permission.INTERNET
 
-**Atomic service API:** This API can be used in atomic services since API version 18.
+**Atomic service API:** This API can be used in atomic services since API version 15.
 
 **System capability:** SystemCapability.Communication.NetStack
 
@@ -1194,8 +1197,8 @@ Initiates an HTTP request to a given URL, applicable to scenarios where http res
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | url | string | Yes | URL for initiating an HTTP request. |
-| options | HttpRequestOptions | Yes | Optional parameters {@link HttpRequestOptions}. |
-| callback | AsyncCallback&lt;number&gt; | Yes | the callback of requestInStream. |
+| options | HttpRequestOptions | Yes | Request options. For details, see[HttpRequestOptions](arkts-network-httprequestoptions-i.md). |
+| callback | AsyncCallback&lt;number&gt; | Yes | Callback used to return the result. If the request is successful,**err** is **undefined**, and the [HTTP result code](arkts-network-responsecode-e.md) is returned. Otherwise, **err**is an error object. |
 
 **Error codes:**
 
@@ -1231,9 +1234,10 @@ Initiates an HTTP request to a given URL, applicable to scenarios where http res
 | [2300077](../errorcode-net-http.md#2300077-no-ssl-ca-certificate-or-access-permission) | The SSL CA certificate does not exist or is inaccessible. |
 | [2300078](../errorcode-net-http.md#2300078-url-requested-file-not-found) | Remote file not found. |
 | [2300094](../errorcode-net-http.md#2300094-identity-verification-failed) | Authentication error. |
-| [2300997](../errorcode-net-http.md#2300997-plaintext-http-access-intercepted) | Cleartext traffic not permitted. |
-| [2300998](../errorcode-net-http.md#2300998-domain-access-denied) | It is not allowed to access this domain. |
-| [2300999](../errorcode-net-http.md#2300999-internal-error) | Internal error. |
+| [2300999](../errorcode-net-http.md#2300999-internal-error) | Unknown error. |
+| [2300998](../errorcode-net-http.md#2300998-domain-access-denied) | It is not allowed to access this domain.<br>**Applicable version:** 12 and later |
+| [2300997](../errorcode-net-http.md#2300997-plaintext-http-access-intercepted) | Cleartext traffic not permitted.<br>**Applicable version:** 18 and later |
+| 2300996 | The request was intercepted by the HTTP globalinterceptor.<br>**Applicable version:** 26.0.0 dynamic, 26.1.0 static and later |
 
 **Example**
 
@@ -1317,13 +1321,13 @@ httpRequest.requestInStream("EXAMPLE_URL", options, (err: BusinessError<void> , 
 requestInStream(url: string, options?: HttpRequestOptions): Promise<number>
 ```
 
-Initiates an HTTP request to a given URL, applicable to scenarios where http response supports streaming.
+Initiates an HTTP request containing specified options to a given URL. This API uses a promise to return the result, which is a streaming response.
 
-**Since:** 18
+**Since:** 10
 
 **Required permissions:** ohos.permission.INTERNET
 
-**Atomic service API:** This API can be used in atomic services since API version 18.
+**Atomic service API:** This API can be used in atomic services since API version 15.
 
 **System capability:** SystemCapability.Communication.NetStack
 
@@ -1332,13 +1336,13 @@ Initiates an HTTP request to a given URL, applicable to scenarios where http res
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | url | string | Yes | URL for initiating an HTTP request. |
-| options | HttpRequestOptions | No | Optional parameters {@link HttpRequestOptions}. |
+| options | HttpRequestOptions | No | Request options. For details, see[HttpRequestOptions](arkts-network-httprequestoptions-i.md). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;number&gt; | the promise returned by the function. |
+| Promise&lt;number&gt; | Promise used to return the [result](arkts-network-responsecode-e.md). |
 
 **Error codes:**
 
@@ -1374,9 +1378,10 @@ Initiates an HTTP request to a given URL, applicable to scenarios where http res
 | [2300077](../errorcode-net-http.md#2300077-no-ssl-ca-certificate-or-access-permission) | The SSL CA certificate does not exist or is inaccessible. |
 | [2300078](../errorcode-net-http.md#2300078-url-requested-file-not-found) | Remote file not found. |
 | [2300094](../errorcode-net-http.md#2300094-identity-verification-failed) | Authentication error. |
-| [2300997](../errorcode-net-http.md#2300997-plaintext-http-access-intercepted) | Cleartext traffic not permitted. |
-| [2300998](../errorcode-net-http.md#2300998-domain-access-denied) | It is not allowed to access this domain. |
-| [2300999](../errorcode-net-http.md#2300999-internal-error) | Internal error. |
+| [2300999](../errorcode-net-http.md#2300999-internal-error) | Unknown error. |
+| [2300998](../errorcode-net-http.md#2300998-domain-access-denied) | It is not allowed to access this domain.<br>**Applicable version:** 12 and later |
+| [2300997](../errorcode-net-http.md#2300997-plaintext-http-access-intercepted) | Cleartext traffic not permitted.<br>**Applicable version:** 18 and later |
+| 2300996 | The request was intercepted by the HTTP globalinterceptor.<br>**Applicable version:** 26.0.0 dynamic, 26.1.0 static and later |
 
 **Example**
 
@@ -1438,7 +1443,7 @@ promise.then((data: number) => {
 requestSync(url: string, options?: HttpRequestOptions): HttpResponse
 ```
 
-Initiates an HTTP request to a given URL.
+Initiates an HTTP network request based on the URL and related configuration options (optional). This API returns the response synchronously. > **NOTE** > > (1) This API can receive data of up to 50 MB. To receive more than 50 MB of data, set the **maxLimit** > parameter in [HttpRequestOptions](arkts-network-httprequestoptions-i.md). > (2) If you need to pass in cookies, add them to the **options** parameter. > (3) If the URL contains non-English characters, call **encodeURL(url)** to encode the URL before initiating an > HTTP request. > (4) This API is synchronous and blocks the current thread until an HTTP response or error code is returned. **Required permission**: ohos.permission.INTERNET
 
 **Since:** 26.0.0
 
@@ -1453,13 +1458,13 @@ Initiates an HTTP request to a given URL.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | url | string | Yes | URL for initiating an HTTP request. |
-| options | HttpRequestOptions | No | Optional parameters {@link HttpRequestOptions}. |
+| options | HttpRequestOptions | No | Request options. For details, see[HttpRequestOptions](arkts-network-httprequestoptions-i.md). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| HttpResponse | The returned by the function. |
+| HttpResponse | HTTP request response result that is returned synchronously. |
 
 **Error codes:**
 
@@ -1494,6 +1499,7 @@ Initiates an HTTP request to a given URL.
 | [2300077](../errorcode-net-http.md#2300077-no-ssl-ca-certificate-or-access-permission) | The SSL CA certificate does not exist or is inaccessible. |
 | [2300078](../errorcode-net-http.md#2300078-url-requested-file-not-found) | Remote file not found. |
 | [2300094](../errorcode-net-http.md#2300094-identity-verification-failed) | Authentication error. |
+| 2300996 | The request was intercepted by the HTTP global interceptor. |
 | [2300997](../errorcode-net-http.md#2300997-plaintext-http-access-intercepted) | Cleartext traffic not permitted. |
 | [2300998](../errorcode-net-http.md#2300998-domain-access-denied) | It is not allowed to access this domain. |
 | [2300999](../errorcode-net-http.md#2300999-internal-error) | Internal error. |

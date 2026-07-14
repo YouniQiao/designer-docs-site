@@ -1,17 +1,6 @@
 # AppServiceExtensionContext
 
-The AppServiceExtensionContext module provides the context environment for the
-[AppServiceExtensionAbility](../../../../reference/apis-ability-kit/js-apis-app-ability-appServiceExtensionAbility.md).
-It inherits from [ExtensionContext](arkts-ability-extensioncontext-c.md).
-
-AppServiceExtensionContext provides APIs to connect to and disconnect from a ServiceExtensionAbility (an
-ExtensionAbility for system application background services), as well as to terminate an AppServiceExtensionAbility.
-Note that a ServiceExtensionAbility can only be developed by system applications and supports connections from third-
-party applications.
-
-> **NOTE**
->
-> - The APIs of this module must be used in the main thread, but not in child threads such as Worker and TaskPool.
+The AppServiceExtensionContext module provides the context environment for the [AppServiceExtensionAbility](../../../../reference/apis-ability-kit/js-apis-app-ability-appServiceExtensionAbility.md). It inherits from [ExtensionContext](arkts-ability-extensioncontext-c.md). AppServiceExtensionContext provides APIs to connect to and disconnect from a ServiceExtensionAbility (an ExtensionAbility for system application background services), as well as to terminate an AppServiceExtensionAbility. Note that a ServiceExtensionAbility can only be developed by system applications and supports connections from third- party applications. > **NOTE** > > - The APIs of this module must be used in the main thread, but not in child threads such as Worker and TaskPool.
 
 **Inheritance/Implementation:** AppServiceExtensionContext extends [ExtensionContext](arkts-ability-extensioncontext-c.md)
 
@@ -25,9 +14,7 @@ party applications.
 connectServiceExtensionAbility(want: Want, callback: ConnectOptions): number
 ```
 
-Connects this AppServiceExtensionAbility to a ServiceExtensionAbility. It enables communication with the
-ServiceExtensionAbility via a proxy, allowing access to the capabilities exposed by the ServiceExtensionAbility.
-This API can be called only by the main thread.
+Connects this AppServiceExtensionAbility to a ServiceExtensionAbility. It enables communication with the ServiceExtensionAbility via a proxy, allowing access to the capabilities exposed by the ServiceExtensionAbility. This API can be called only by the main thread.
 
 **Since:** 20
 
@@ -67,8 +54,7 @@ This API can be called only by the main thread.
 disconnectServiceExtensionAbility(connection: number): Promise<void>
 ```
 
-Disconnects this AppServiceExtensionAbility from a ServiceExtensionAbility. This API can be called only by the main
-thread. It uses a promise to return the result.
+Disconnects this AppServiceExtensionAbility from a ServiceExtensionAbility. This API can be called only by the main thread. It uses a promise to return the result.
 
 **Since:** 20
 
@@ -155,8 +141,7 @@ Starts the UIAbility. This API can be called only by the main thread. It uses a 
 terminateSelf(): Promise<void>
 ```
 
-Terminates this AppServiceExtensionAbility. This API can be called only by the main thread. It uses a promise to
-return the result.
+Terminates this AppServiceExtensionAbility. This API can be called only by the main thread. It uses a promise to return the result.
 
 **Since:** 20
 

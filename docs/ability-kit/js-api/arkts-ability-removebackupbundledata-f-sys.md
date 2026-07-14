@@ -12,8 +12,7 @@ import { bundleManager } from '@kit.AbilityKit';
 function removeBackupBundleData(bundleName: string, userId: number, appIndex: number): Promise<void>
 ```
 
-Removes the backup data for a specified application under a given user. This API uses a promise to return the
-result.
+Removes the backup data for a specified application under a given user. This API uses a promise to return the result.
 
 **Since:** 21
 

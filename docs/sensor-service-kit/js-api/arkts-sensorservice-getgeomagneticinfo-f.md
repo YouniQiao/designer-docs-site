@@ -12,8 +12,7 @@ import { sensor } from '@kit.SensorServiceKit';
 function getGeomagneticInfo(locationOptions: LocationOptions, timeMillis: number, callback: AsyncCallback<GeomagneticResponse>): void
 ```
 
-Obtains the geomagnetic field of a geographic location at a certain time. This API uses an asynchronous callback to
-return the result.
+Obtains the geomagnetic field of a geographic location at a certain time. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -70,8 +69,7 @@ try {
 function getGeomagneticInfo(locationOptions: LocationOptions, timeMillis: number): Promise<GeomagneticResponse>
 ```
 
-Obtains the geomagnetic field of a geographic location at a certain time. This API uses a promise to return the
-result.
+Obtains the geomagnetic field of a geographic location at a certain time. This API uses a promise to return the result.
 
 **Since:** 9
 

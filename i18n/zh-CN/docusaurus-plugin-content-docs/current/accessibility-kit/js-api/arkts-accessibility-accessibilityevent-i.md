@@ -27,17 +27,7 @@ eventType: accessibility.EventType | accessibility.WindowUpdateType |
         TouchGuideType | GestureType | PageUpdateType
 ```
 
-具体事件类型。
-
-EventType：无障碍事件类型；
-
-WindowUpdateType：窗口变化类型；
-
-TouchGuideType：触摸浏览事件类型；
-
-GestureType：手势事件类型；
-
-PageUpdateType：页面刷新类型。
+具体事件类型。 EventType：无障碍事件类型； WindowUpdateType：窗口变化类型； TouchGuideType：触摸浏览事件类型； GestureType：手势事件类型； PageUpdateType：页面刷新类型。
 
 **类型：** accessibility.EventType | accessibility.WindowUpdateType | TouchGuideType | GestureType | PageUpdateType
 

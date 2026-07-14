@@ -1,7 +1,6 @@
 # SyncFolderAccessor (System API)
 
-A sync root management class that enables the File Manager to access the sync root information registered by third-
-party cloud disks.
+A sync root management class that enables the File Manager to access the sync root information registered by third- party cloud disks.
 
 **Since:** 21
 

@@ -1,8 +1,6 @@
 # @ohos.app.ability.continueManager
 
-The continueManager module provides capabilities for managing cross-device application migration. For example, it
-allows you to obtain the result of quickly launching the target application during the cross-device migration
-process.
+The continueManager module provides capabilities for managing cross-device application migration. For example, it allows you to obtain the result of quickly launching the target application during the cross-device migration process.
 
 **Since:** 18
 
@@ -20,8 +18,8 @@ import { continueManager } from '@kit.AbilityKit';
 
 | Name | Description |
 | --- | --- |
-| [off](arkts-ability-off-f.md#off-1) | Unregisters the callback used to obtain the quick start result when an application is launched quickly. This APIuses an asynchronous callback to return the result. |
-| [on](arkts-ability-on-f.md#on-1) | Registers a callback to obtain the quick start result when an application is launched quickly. This API uses anasynchronous callback to return the result. |
+| [off](arkts-ability-off-f.md#off-1) | Unregisters the callback used to obtain the quick start result when an application is launched quickly. This API uses an asynchronous callback to return the result. |
+| [on](arkts-ability-on-f.md#on-1) | Registers a callback to obtain the quick start result when an application is launched quickly. This API uses an asynchronous callback to return the result. |
 
 ### Interfaces
 

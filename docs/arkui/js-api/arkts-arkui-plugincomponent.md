@@ -2,15 +2,13 @@
 
 Provides plugin component.
 
-
 ## PluginComponent
 
 ```TypeScript
 PluginComponent(options: PluginComponentOptions)
 ```
 
-Called when setting the plugin.
-AnonyMous Object Rectification
+Called when setting the plugin. AnonyMous Object Rectification
 
 **Since:** 18
 

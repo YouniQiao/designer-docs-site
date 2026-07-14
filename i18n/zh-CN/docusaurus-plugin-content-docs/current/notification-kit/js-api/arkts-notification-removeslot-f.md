@@ -12,7 +12,7 @@ import { notificationManager } from '@kit.NotificationKit';
 function removeSlot(slotType: SlotType, callback: AsyncCallback<void>): void
 ```
 
-删除当前应用指定类型的通知渠道。使用callback异步回调。
+删除当前应用指定类型的通知渠道。使用callback异步回调。 删除后，对应类型的通知渠道及其配置将被永久移除，后续发布该类型通知时系统将自动创建默认渠道。 已通过该渠道发布的通知不受影响，仍可在通知中心查看。 适用于需要重新配置渠道时先删除再创建的场景。
 
 **起始版本：** 9
 
@@ -22,7 +22,7 @@ function removeSlot(slotType: SlotType, callback: AsyncCallback<void>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| slotType | SlotType | 是 | 通知渠道类型，例如社交通信、服务提醒、内容咨询等类型。 |
+| slotType | SlotType | 是 | 通知渠道类型，例如社交通讯、服务提醒、内容咨询等类型。需传入已创建的渠道类型，否则删除操作无效。 |
 | callback | AsyncCallback&lt;void&gt; | 是 | 回调函数。当删除指定类型的通知渠道成功，err为undefined，否则为错误对象。 |
 
 **错误码：**
@@ -59,7 +59,7 @@ notificationManager.removeSlot(slotType, removeSlotCallback);
 function removeSlot(slotType: SlotType): Promise<void>
 ```
 
-删除当前应用指定类型的通知渠道。使用Promise异步回调。
+删除当前应用指定类型的通知渠道。使用Promise异步回调。 删除后，对应类型的通知渠道及其配置将被永久移除，后续发布该类型通知时系统将自动创建默认渠道。 已通过该渠道发布的通知不受影响，仍可在通知中心查看。 适用于需要重新配置渠道时先删除再创建的场景。
 
 **起始版本：** 9
 
@@ -69,7 +69,7 @@ function removeSlot(slotType: SlotType): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| slotType | SlotType | 是 | 通知渠道类型，例如社交通信、服务提醒、内容咨询等类型。 |
+| slotType | SlotType | 是 | 通知渠道类型，例如社交通讯、服务提醒、内容咨询等类型。需传入已创建的渠道类型，否则删除操作无效。 |
 
 **返回值：**
 

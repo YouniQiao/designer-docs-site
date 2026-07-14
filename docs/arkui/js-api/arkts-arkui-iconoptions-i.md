@@ -18,9 +18,7 @@ import { ChipItemLabelOptions, ChipGroupSpaceOptions, SymbolItemOptions, SuffixI
 size?: SizeOptions
 ```
 
-Icon size. This parameter cannot be set in percentage.
-
-Default value: **undefined**
+Icon size. This parameter cannot be set in percentage. Default value: **undefined**
 
 **Type:** SizeOptions
 
@@ -38,8 +36,7 @@ Default value: **undefined**
 src: ResourceStr
 ```
 
-Icon source, which can be a specific image resource or an image address reference. For details, see
-[Image](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-image.md#image-1).
+Icon source, which can be a specific image resource or an image address reference. For details, see [Image](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-image.md#image-1).
 
 **Type:** ResourceStr
 

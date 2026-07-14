@@ -14,9 +14,7 @@ This interface is used to set the options for UIExtensionComponentAttribute duri
 areaChangePlaceholder?: Record<string, ComponentContent>
 ```
 
-Set Areachange placeholder.
-If the Areachange placeholder ComponentContent is set, the placeholder node is displayed until
-the UIExtensionComponent size change is complete.
+Set Areachange placeholder. If the Areachange placeholder ComponentContent is set, the placeholder node is displayed until the UIExtensionComponent size change is complete.
 
 **Type:** Record<string, ComponentContent>
 
@@ -54,8 +52,7 @@ Set UIExtensionComponent Content Dpi Follow Strategy.
 isTransferringCaller?: boolean
 ```
 
-Set whether the current capability is used as a Caller.<br/>
-If set to true, as a Caller, the current token of UIExtensionComponent is set to rootToken.
+Set whether the current capability is used as a Caller.<br/> If set to true, as a Caller, the current token of UIExtensionComponent is set to rootToken.
 
 **Type:** boolean
 
@@ -75,8 +72,7 @@ If set to true, as a Caller, the current token of UIExtensionComponent is set to
 placeholder?: ComponentContent
 ```
 
-Set placeholder.
-If set placeholder ComponentContent, show placeholder node when connection is not established.
+Set placeholder. If set placeholder ComponentContent, show placeholder node when connection is not established.
 
 **Type:** ComponentContent
 

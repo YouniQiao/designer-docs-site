@@ -12,8 +12,7 @@ import { wifiManager } from '@kit.ConnectivityKit';
 function getSupportedFeatures(): number
 ```
 
-Obtain the features supported by the device.
-To check whether this device supports a specified feature.
+Obtain the features supported by the device. To check whether this device supports a specified feature.
 
 **Since:** 9
 

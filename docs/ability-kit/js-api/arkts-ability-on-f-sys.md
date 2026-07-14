@@ -14,21 +14,7 @@ function on(type: 'activeStateChange',
     callback: Callback<ActiveChangeResponse>): void
 ```
 
-Subscribes to permission usage status change events for a specified permission list. Permission usage status
-changes are triggered by calls to [startUsingPermission](arkts-ability-startusingpermission-f-sys.md#startusingpermission-1) and
-[stopUsingPermission](arkts-ability-stopusingpermission-f-sys.md#stopusingpermission-1). After a successful subscription, when the
-permission usage status changes, the callback function is triggered, returning an
-[ActiveChangeResponse](arkts-ability-activechangeresponse-i-sys.md) object containing details of the permission
-usage status change. This API uses an asynchronous callback to return the result.
-
-Multiple callback functions are allowed to be subscribed for the same permissionList.
-
-> **NOTE**
-> It is not allowed to subscribe the same callback function using two permissionLists that have an intersection.
-> That is, if two permissionLists contain the same permission name, the same callback function cannot be used for
-subscription.
-> This API is typically used in conjunction with [off](privacyManager.off).
-> When listening is no longer needed, off should be called to unsubscribe.
+Subscribes to permission usage status change events for a specified permission list. Permission usage status changes are triggered by calls to [startUsingPermission](arkts-ability-startusingpermission-f-sys.md#startusingpermission-1) and [stopUsingPermission](arkts-ability-stopusingpermission-f-sys.md#stopusingpermission-1). After a successful subscription, when the permission usage status changes, the callback function is triggered, returning an [ActiveChangeResponse](arkts-ability-activechangeresponse-i-sys.md) object containing details of the permission usage status change. This API uses an asynchronous callback to return the result. Multiple callback functions are allowed to be subscribed for the same permissionList. > **NOTE** > It is not allowed to subscribe the same callback function using two permissionLists that have an intersection. > That is, if two permissionLists contain the same permission name, the same callback function cannot be used for subscription. > This API is typically used in conjunction with [off](privacyManager.off). > When listening is no longer needed, off should be called to unsubscribe.
 
 **Since:** 9
 

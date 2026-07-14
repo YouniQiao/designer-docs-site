@@ -36,9 +36,7 @@ Gets the coordinates of the top-left corner of the current component based on it
 displayX: number
 ```
 
-X coordinate of the click position in the coordinate system of the current application screen.
-
-Unit: vp
+X coordinate of the click position in the coordinate system of the current application screen. Unit: vp
 
 **Type:** number
 
@@ -56,9 +54,7 @@ Unit: vp
 displayY: number
 ```
 
-Y coordinate of the click position in the coordinate system of the current application screen.
-
-Unit: vp
+Y coordinate of the click position in the coordinate system of the current application screen. Unit: vp
 
 **Type:** number
 
@@ -76,12 +72,7 @@ Unit: vp
 globalDisplayX?: number
 ```
 
-X coordinate of the click position in the
-[global coordinate system](../../../../windowmanager/window-terminology.md#global-coordinate-system).
-
-Unit: vp
-
-Value range: (-∞, +∞).
+X coordinate of the click position in the [global coordinate system](../../../../windowmanager/window-terminology.md#global-coordinate-system). Unit: vp Value range: (-∞, +∞).
 
 **Type:** number
 
@@ -99,12 +90,7 @@ Value range: (-∞, +∞).
 globalDisplayY?: number
 ```
 
-Y coordinate of the click position in the
-[global coordinate system](../../../../windowmanager/window-terminology.md#global-coordinate-system).
-
-Unit: vp
-
-Value range: (-∞, +∞).
+Y coordinate of the click position in the [global coordinate system](../../../../windowmanager/window-terminology.md#global-coordinate-system). Unit: vp Value range: (-∞, +∞).
 
 **Type:** number
 
@@ -140,11 +126,7 @@ Whether the event is triggered by a left-hand or right-hand tap.
 preventDefault: () => void
 ```
 
-Blocks the default event.
-
-Note: This API is only supported by the following components: **RichEditor** and **Hyperlink**. An exception is
-thrown when this API is used with unsupported components. Currently, asynchronous calls and Modifier APIs are not
-supported.
+Blocks the default event. Note: This API is only supported by the following components: **RichEditor** and **Hyperlink**. An exception is thrown when this API is used with unsupported components. Currently, asynchronous calls and Modifier APIs are not supported.
 
 **Type:** () => void
 
@@ -162,12 +144,7 @@ supported.
 screenX: number
 ```
 
-X coordinate of the click position in the coordinate system of the current application window.
-
-Unit: vp
-
-Note: This API is supported since API version 7 and deprecated since API version 10. You are advised to use
-**windowX** instead.
+X coordinate of the click position in the coordinate system of the current application window. Unit: vp Note: This API is supported since API version 7 and deprecated since API version 10. You are advised to use **windowX** instead.
 
 **Type:** number
 
@@ -185,12 +162,7 @@ Note: This API is supported since API version 7 and deprecated since API version
 screenY: number
 ```
 
-Y coordinate of the click position in the coordinate system of the current application window.
-
-Unit: vp
-
-Note: This API is supported since API version 7 and deprecated since API version 10. You are advised to use
-**windowY** instead.
+Y coordinate of the click position in the coordinate system of the current application window. Unit: vp Note: This API is supported since API version 7 and deprecated since API version 10. You are advised to use **windowY** instead.
 
 **Type:** number
 
@@ -208,10 +180,7 @@ Note: This API is supported since API version 7 and deprecated since API version
 windowX: number
 ```
 
-X coordinate of the click position in the coordinate system of the current application window. After
-distanceThreshold is set for **onClick**, the click position is the lift-off point.
-
-Unit: vp
+X coordinate of the click position in the coordinate system of the current application window. After distanceThreshold is set for **onClick**, the click position is the lift-off point. Unit: vp
 
 **Type:** number
 
@@ -229,10 +198,7 @@ Unit: vp
 windowY: number
 ```
 
-Y coordinate of the click position in the coordinate system of the current application window. After
-distanceThreshold is set for **onClick**, the click position is the lift-off point.
-
-Unit: vp
+Y coordinate of the click position in the coordinate system of the current application window. After distanceThreshold is set for **onClick**, the click position is the lift-off point. Unit: vp
 
 **Type:** number
 
@@ -250,13 +216,7 @@ Unit: vp
 x: number
 ```
 
-X coordinate of the click position in the
-[component coordinate system](../../../../ui/arkui-glossary.md#component-coordinate-system) based on the clicked
-element. After [distanceThreshold](arkts-arkui-commonmethod-c.md#onclick-2)
-is set for **onClick**, the click position is the lift-off point. If the event is triggered by a keyboard or gamepad
-device, the click position is the center of the clicked element.
-
-Unit: vp
+X coordinate of the click position in the [component coordinate system](../../../../ui/arkui-glossary.md#component-coordinate-system) based on the clicked element. After [distanceThreshold](arkts-arkui-commonmethod-c.md#onclick-2) is set for **onClick**, the click position is the lift-off point. If the event is triggered by a keyboard or gamepad device, the click position is the center of the clicked element. Unit: vp
 
 **Type:** number
 
@@ -274,12 +234,7 @@ Unit: vp
 y: number
 ```
 
-Y coordinate of the click position in the
-[component coordinate system](../../../../ui/arkui-glossary.md#component-coordinate-system) based on the clicked
-element. After distanceThreshold is set for **onClick**, the click position is the lift-off point. If the event is
-triggered by a keyboard or gamepad device, the click position is the center of the clicked element.
-
-Unit: vp
+Y coordinate of the click position in the [component coordinate system](../../../../ui/arkui-glossary.md#component-coordinate-system) based on the clicked element. After distanceThreshold is set for **onClick**, the click position is the lift-off point. If the event is triggered by a keyboard or gamepad device, the click position is the center of the clicked element. Unit: vp
 
 **Type:** number
 

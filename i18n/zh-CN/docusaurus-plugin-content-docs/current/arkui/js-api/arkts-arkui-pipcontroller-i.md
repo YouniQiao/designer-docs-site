@@ -1,9 +1,6 @@
 # PiPController
 
-画中画控制器实例。用于启动、停止画中画以及更新回调注册等。
-
-下列API示例中都需先使用[PiPWindow.create()](arkts-arkui-create-f.md#create-1)方法获取到PiPController实例，再通过此实例调用对应方
-法。
+画中画控制器实例。用于启动、停止画中画以及更新回调注册等。 下列API示例中都需先使用[PiPWindow.create()](arkts-arkui-create-f.md#create-1)方法获取到PiPController实例，再通过此实例调用对应方 法。
 
 **起始版本：** 11
 
@@ -34,7 +31,7 @@ getPiPSettingSwitch(): Promise<boolean>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported. Failed to call the API due to limited devicecapabilities. |
-| [1300014](../errorcode-window.md#1300014-画中画内部错误) | PiP internal error. |
+| [1300014](../errorcode-window.md#1300014-画中画内部错误) | PiP internal error. Possible cause:The PiP controller has been destroyed. |
 
 **示例：**
 
@@ -81,7 +78,7 @@ getPiPWindowInfo(): Promise<PiPWindowInfo>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported. Failed to call the API due to limited devicecapabilities. |
-| [1300014](../errorcode-window.md#1300014-画中画内部错误) | PiP internal error. |
+| [1300014](../errorcode-window.md#1300014-画中画内部错误) | PiP internal error. Possible causes:<br>1.The PiP controller has been destroyed.<br>2.The PiP window is not created or has been destroyed. |
 
 **示例：**
 
@@ -127,7 +124,7 @@ isPiPActive(): Promise<boolean>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [1300014](../errorcode-window.md#1300014-画中画内部错误) | PiP internal error. |
+| [1300014](../errorcode-window.md#1300014-画中画内部错误) | PiP internal error. Possible causes:<br>1.The PiP controller has been destroyed.<br>2.The PiP window is not created or has been destroyed. |
 
 **示例：**
 
@@ -183,9 +180,7 @@ this.pipController.off('stateChange');
 off(type: 'controlPanelActionEvent'): void
 ```
 
-关闭画中画控制面板控件动作事件的监听。推荐使用
-[off('controlEvent')](arkts-arkui-pipcontroller-i.md#off-3)
-来关闭画中画控制面板控件动作事件的监听。
+关闭画中画控制面板控件动作事件的监听。推荐使用 [off('controlEvent')](arkts-arkui-pipcontroller-i.md#off-3) 来关闭画中画控制面板控件动作事件的监听。
 
 **起始版本：** 11
 
@@ -382,9 +377,7 @@ this.pipController.on('stateChange', (state: PiPWindow.PiPState, reason: string)
 on(type: 'controlPanelActionEvent', callback: ControlPanelActionEventCallback): void
 ```
 
-开启画中画控制面板控件动作事件的监听，建议在不需要使用时关闭监听，否则可能存在内存泄漏。推荐使用
-[on('controlEvent')](arkts-arkui-pipcontroller-i.md#on-3)
-来开启画中画控制面板控件动作事件的监听。
+开启画中画控制面板控件动作事件的监听，建议在不需要使用时关闭监听，否则可能存在内存泄漏。推荐使用 [on('controlEvent')](arkts-arkui-pipcontroller-i.md#on-3) 来开启画中画控制面板控件动作事件的监听。
 
 **起始版本：** 11
 
@@ -566,9 +559,7 @@ this.pipController.on('activeStatusChange', callback);
 setAutoStartEnabled(enable: boolean): void
 ```
 
-设置是否在返回桌面时自动启动画中画，默认不自动拉起。
-
-在使用XComponent方案实现画中画功能并结合Navigation进行路由管理时，首次调用setAutoStartEnabled(true)方法，系统会缓存当前应用传入的NavigationId的栈顶信息。
+设置是否在返回桌面时自动启动画中画，默认不自动拉起。 在使用XComponent方案实现画中画功能并结合Navigation进行路由管理时，首次调用setAutoStartEnabled(true)方法，系统会缓存当前应用传入的NavigationId的栈顶信息。
 
 **起始版本：** 11
 
@@ -644,9 +635,9 @@ startPiP(): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [1300012](../errorcode-window.md#1300012-画中画窗口状态异常) | The PiP window state is abnormal. |
-| [1300013](../errorcode-window.md#1300013-创建画中画窗口失败) | Failed to create the PiP window. |
-| [1300014](../errorcode-window.md#1300014-画中画内部错误) | PiP internal error. |
+| [1300012](../errorcode-window.md#1300012-画中画窗口状态异常) | The PiP window state is abnormal. Possible causes:<br>1.The PiP controller has been destroyed.<br>2.The PiP window is not created or has been destroyed. |
+| [1300013](../errorcode-window.md#1300013-创建画中画窗口失败) | Failed to create the PiP window. Possible causes:<br>1.PiP configuration parameters are invalid, such as pipOption or context is null.<br>2.The XComponentController or main window is null.<br>3.The main window is not shown (non-auto-start scenario).<br>4.Navigation component operation failed. |
+| [1300014](../errorcode-window.md#1300014-画中画内部错误) | PiP internal error. Possible cause:Internal error, failed to show the PiP window. such as insufficient resources or abnormal window service. |
 | [1300015](../errorcode-window.md#1300015-重复操作画中画) | Repeated PiP operation. |
 | [1300034](../errorcode-window.md#1300034-闪控窗与其他悬浮窗口操作冲突) | This operation conflicts with other floating windows. Possible cause:App has already started float view.<br>**适用版本：** 26.0.0+ |
 
@@ -687,8 +678,8 @@ stopPiP(): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [1300011](../errorcode-window.md#1300011-销毁画中画窗口失败) | Failed to destroy the PiP window. |
-| [1300012](../errorcode-window.md#1300012-画中画窗口状态异常) | The PiP window state is abnormal. |
+| [1300011](../errorcode-window.md#1300011-销毁画中画窗口失败) | Failed to destroy the PiP window. Possible cause:Internal error, the window type is not a PiP window. |
+| [1300012](../errorcode-window.md#1300012-画中画窗口状态异常) | The PiP window state is abnormal. Possible cause:The PiP window is not created or has been destroyed. |
 | [1300015](../errorcode-window.md#1300015-重复操作画中画) | Repeated PiP operation. |
 
 **示例：**
@@ -734,7 +725,7 @@ updateContentNode(contentNode: typeNode.XComponent): Promise<void>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported. Failed to call the API due to limited devicecapabilities. |
-| [1300014](../errorcode-window.md#1300014-画中画内部错误) | PiP internal error. |
+| [1300014](../errorcode-window.md#1300014-画中画内部错误) | PiP internal error. Possible cause:The PiP controller has been destroyed. |
 
 **示例：**
 

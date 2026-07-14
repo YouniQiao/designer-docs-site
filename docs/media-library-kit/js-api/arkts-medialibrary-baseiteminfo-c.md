@@ -34,8 +34,7 @@ Duration. if the itemType is CAMERA, it will be null; if photos, return -1
 dynamicRangeType?: photoAccessHelper.DynamicRangeType
 ```
 
-DynamicRangeType. Dynamic range type of media files.
-For movingPhoto, this specifically refers to the dynamic range type of the cover image.
+DynamicRangeType. Dynamic range type of media files. For movingPhoto, this specifically refers to the dynamic range type of the cover image.
 
 **Type:** photoAccessHelper.DynamicRangeType
 

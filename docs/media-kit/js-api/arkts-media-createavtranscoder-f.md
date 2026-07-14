@@ -12,11 +12,7 @@ import { media } from '@kit.MediaKit';
 function createAVTranscoder(): Promise<AVTranscoder>
 ```
 
-Creates an AVTranscoder instance. This API uses a promise to return the result.
-
-> **NOTE**
->
-> A maximum of 2 AVTranscoder instances can be created.
+Creates an AVTranscoder instance. This API uses a promise to return the result. > **NOTE** > > A maximum of 2 AVTranscoder instances can be created.
 
 **Since:** 12
 

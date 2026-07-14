@@ -18,8 +18,7 @@ import { backgroundTaskManager } from '@kit.BackgroundTasksKit';
 remainingQuota: number
 ```
 
-Remaining quota of the application on the current day, in ms.
-<br>Unit:ms
+Remaining quota of the application on the current day, in ms. <br>Unit:ms
 
 **Type:** number
 

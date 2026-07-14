@@ -18,11 +18,7 @@ import { cert } from '@kit.DeviceCertificateKit';
 getCertIssuer(): DataBlob
 ```
 
-Obtains the issuer name of the revoked certificate.
-
-> **NOTE**
->
-> The obtained issuer name of this revoked certificate contains a string terminator.
+Obtains the issuer name of the revoked certificate. > **NOTE** > > The obtained issuer name of this revoked certificate contains a string terminator.
 
 **Since:** 11
 
@@ -115,8 +111,7 @@ Obtains the distinguished name (DN) of the issuer of the revoked certificate.
 getEncoded(callback: AsyncCallback<EncodingBlob>): void
 ```
 
-Obtains the serialized data of this revoked certificate entry. This API uses an asynchronous callback to return the
-result.
+Obtains the serialized data of this revoked certificate entry. This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 

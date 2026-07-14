@@ -2,7 +2,6 @@
 
 Provides an interface for drawing rectangles.
 
-
 ## Rect
 
 ```TypeScript
@@ -11,8 +10,7 @@ Rect(
   )
 ```
 
-Use new function to create Rect.
-Anonymous Object Rectification.
+Use new function to create Rect. Anonymous Object Rectification.
 
 **Since:** 7
 

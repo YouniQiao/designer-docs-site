@@ -124,8 +124,7 @@ Sets the font weight. If the value is too large, the text may be clipped dependi
 marqueeUpdateStrategy(value: MarqueeUpdateStrategy)
 ```
 
-Sets the scrolling strategy for the marquee after its attributes are updated. (This attribute takes effect when the
-marquee is in the playing state and the text content width exceeds the width of the marquee component.)
+Sets the scrolling strategy for the marquee after its attributes are updated. (This attribute takes effect when the marquee is in the playing state and the text content width exceeds the width of the marquee component.)
 
 **Since:** 12
 
@@ -147,8 +146,7 @@ marquee is in the playing state and the text content width exceeds the width of 
 onBounce(event: () => void)
 ```
 
-Triggered when the marquee has reached the end. This event will be triggered for multiple times if the **loop**
-attribute is not set to **1**.
+Triggered when the marquee has reached the end. This event will be triggered for multiple times if the **loop** attribute is not set to **1**.
 
 **Since:** 8
 
@@ -214,11 +212,7 @@ Triggered when the marquee text changes or starts scrolling.
 onStop(event: Callback<void> | undefined)
 ```
 
-Called when scrolling is stoped.
-
-<p><strong>NOTE</strong>:
-<br>If event is set to undefined, the current event will be unbound.
-</p>
+Called when scrolling is stoped. <p><strong>NOTE</strong>: <br>If event is set to undefined, the current event will be unbound. </p>
 
 **Since:** 26.0.0
 

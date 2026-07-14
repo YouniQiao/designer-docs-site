@@ -75,8 +75,7 @@ raycast(viewPosition: Vec2, params: RaycastParameters): Promise<RaycastResult[]>
 clearColor: Color | null
 ```
 
-背景清除颜色（环境背景会覆盖此颜色,
-需要BACKGROUND_NONE才能实际生效).
+背景清除颜色（环境背景会覆盖此颜色, 需要BACKGROUND_NONE才能实际生效).
 
 **类型：** Color | null
 
@@ -190,8 +189,7 @@ postProcess: PostProcessSettings | null
 renderingPipeline?: RenderingPipelineType
 ```
 
-控制渲染管线.
-请注意，如果选择了FORWARD_LIGHTWEIGHT管线，某些功能将不可用.
+控制渲染管线. 请注意，如果选择了FORWARD_LIGHTWEIGHT管线，某些功能将不可用.
 
 **类型：** RenderingPipelineType
 

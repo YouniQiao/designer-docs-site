@@ -1,12 +1,6 @@
 # AudioVolumeManager
 
-音量管理。
-
-在使用AudioVolumeManager的接口之前，需先通过[getVolumeManager](arkts-audio-audiomanager-i.md#getvolumemanager-1)获取AudioVolumeManager实例。
-
-> **说明：**
->
-> - 本Interface首批接口从API version 9开始支持。
+音量管理。 在使用AudioVolumeManager的接口之前，需先通过[getVolumeManager](arkts-audio-audiomanager-i.md#getvolumemanager-1)获取AudioVolumeManager实例。 > **说明：** > > - 本Interface首批接口从API version 9开始支持。
 
 **起始版本：** 9
 

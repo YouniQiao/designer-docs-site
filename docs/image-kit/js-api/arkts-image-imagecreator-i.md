@@ -1,15 +1,6 @@
 # ImageCreator
 
-The ImageCreator class provides APIs for applications to request an image data area and compile image data.
-
-Before calling any APIs in ImageCreator, you must use
-[image.createImageCreator](arkts-image-createimagecreator-f.md#createimagecreator-2)
-to create an ImageCreator instance. ImageCreator does not support multiple threads.
-
-Images occupy a large amount of memory. When you finish using an ImageCreator instance, call
-[release](arkts-image-imagecreator-i.md#release-1) to free the memory promptly. Before
-releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the
-instance is no longer needed.
+The ImageCreator class provides APIs for applications to request an image data area and compile image data. Before calling any APIs in ImageCreator, you must use [image.createImageCreator](arkts-image-createimagecreator-f.md#createimagecreator-2) to create an ImageCreator instance. ImageCreator does not support multiple threads. Images occupy a large amount of memory. When you finish using an ImageCreator instance, call [release](arkts-image-imagecreator-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
 
 **Since:** 9
 
@@ -27,8 +18,7 @@ import { image } from '@kit.ImageKit';
 dequeueImage(callback: AsyncCallback<Image>): void
 ```
 
-Obtains an image buffer from the idle queue and writes image data into it. This API uses an asynchronous callback
-to return the result.
+Obtains an image buffer from the idle queue and writes image data into it. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -46,8 +36,7 @@ to return the result.
 dequeueImage(): Promise<Image>
 ```
 
-Obtains an image buffer from the idle queue and writes image data into it. This API uses a promise to return the
-result.
+Obtains an image buffer from the idle queue and writes image data into it. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -65,8 +54,7 @@ result.
 off(type: 'imageRelease', callback?: AsyncCallback<void>): void
 ```
 
-Unregisters the callback function that is triggered when the buffer is released. This API uses an asynchronous
-callback to return the result.
+Unregisters the callback function that is triggered when the buffer is released. This API uses an asynchronous callback to return the result.
 
 **Since:** 13
 
@@ -147,13 +135,7 @@ Places the drawn image in the queue. This API uses a promise to return the resul
 release(callback: AsyncCallback<void>): void
 ```
 
-Releases this ImageCreator instance. This API uses an asynchronous callback to return the result.
-
-Images occupy a large amount of memory. When you finish using an ImageCreator instance, call this API to free the
-memory promptly.
-
-Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished
-and the instance is no longer needed.
+Releases this ImageCreator instance. This API uses an asynchronous callback to return the result. Images occupy a large amount of memory. When you finish using an ImageCreator instance, call this API to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
 
 **Since:** 9
 
@@ -171,13 +153,7 @@ and the instance is no longer needed.
 release(): Promise<void>
 ```
 
-Releases this ImageCreator instance. This API uses a promise to return the result.
-
-Images occupy a large amount of memory. When you finish using an ImageCreator instance, call this API to free the
-memory promptly.
-
-Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished
-and the instance is no longer needed.
+Releases this ImageCreator instance. This API uses a promise to return the result. Images occupy a large amount of memory. When you finish using an ImageCreator instance, call this API to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
 
 **Since:** 9
 
@@ -195,8 +171,7 @@ and the instance is no longer needed.
 readonly capacity: number
 ```
 
-Maximum number of images that can be accessed at the same time. This parameter is used only as an expected value.
-The actual capacity is determined by the device hardware.
+Maximum number of images that can be accessed at the same time. This parameter is used only as an expected value. The actual capacity is determined by the device hardware.
 
 **Type:** number
 

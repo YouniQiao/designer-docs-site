@@ -1,6 +1,6 @@
 # EnabledNotificationCallbackData (System API)
 
-Defines a callback function to listen for the enabling state changes of the application badge.
+Returns the changes of the application badge enabling state.
 
 **Since:** 8
 
@@ -30,9 +30,7 @@ Bundle name of the application.
 readonly enable: boolean
 ```
 
-Whether the application notification is enabled.
-- **true**: enabled.
-- **false**: disabled.
+Whether the application notification is enabled. - **true**: enabled. - **false**: disabled.
 
 **Type:** boolean
 

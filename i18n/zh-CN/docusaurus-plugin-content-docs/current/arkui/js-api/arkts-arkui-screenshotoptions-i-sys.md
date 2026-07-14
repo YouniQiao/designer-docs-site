@@ -62,9 +62,7 @@ isCaptureFullOfScreen?: boolean
 isNotificationNeeded?: boolean
 ```
 
-表示截取图像之后是否发送截屏通知，true表示发送截屏通知，false表示不发送截屏通知，默认值为true。截屏通知可以通过
-[captureStatusChange](arkts-arkui-on-f.md#on-7)接口
-监听。
+表示截取图像之后是否发送截屏通知，true表示发送截屏通知，false表示不发送截屏通知，默认值为true。截屏通知可以通过 [captureStatusChange](arkts-arkui-on-f.md#on-7)接口 监听。
 
 **类型：** boolean
 

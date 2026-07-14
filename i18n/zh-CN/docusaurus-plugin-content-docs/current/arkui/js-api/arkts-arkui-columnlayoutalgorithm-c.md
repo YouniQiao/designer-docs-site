@@ -1,11 +1,6 @@
 # ColumnLayoutAlgorithm
 
-垂直方向线性布局算法类。
-
-> **说明：**
->
-> ColumnLayoutAlgorithm类对象可以赋值给LayoutAlgorithm类型变量，作为[DynamicLayout](arkts-arkui-components-arkdynamiclayout.md)组件
-> 的入参指定布局算法。
+垂直方向线性布局算法类。 > **说明：** > > ColumnLayoutAlgorithm类对象可以赋值给LayoutAlgorithm类型变量，作为[DynamicLayout](arkts-arkui-components-arkdynamiclayout.md)组件 > 的入参指定布局算法。
 
 **继承/实现关系：** ColumnLayoutAlgorithm implements [LayoutAlgorithm](arkts-arkui-layoutalgorithm-i.md)
 
@@ -43,13 +38,7 @@ constructor(option?: ColumnLayoutAlgorithmOptions)
 @Trace public alignItems?: HorizontalAlign
 ```
 
-所有子组件在水平方向上的对齐格式。
-
-默认值：HorizontalAlign.Center
-
-非法值：按默认值处理。
-
-装饰器类型：@Trace
+所有子组件在水平方向上的对齐格式。 默认值：HorizontalAlign.Center 非法值：按默认值处理。 装饰器类型：@Trace
 
 **类型：** HorizontalAlign
 
@@ -69,14 +58,7 @@ constructor(option?: ColumnLayoutAlgorithmOptions)
 @Trace public isReverse?: boolean
 ```
 
-子组件在水平方向上的排列是否反转。取值为true表示子组件在水平方向上反转排列，由于水平方向受通用属性[direction](../arkts-components/arkts-arkui-commonmethod-c.md#direction-1)影响，如果
-[direction](../arkts-components/arkts-arkui-commonmethod-c.md#direction-1)属性生效，再做一次反转。取值为false表示子组件在水平方向上正序排列。
-
-默认值：false
-
-非法值：按默认值处理。
-
-装饰器类型：@Trace
+子组件在水平方向上的排列是否反转。取值为true表示子组件在水平方向上反转排列，由于水平方向受通用属性[direction](../arkts-components/arkts-arkui-commonmethod-c.md#direction-1)影响，如果 [direction](../arkts-components/arkts-arkui-commonmethod-c.md#direction-1)属性生效，再做一次反转。取值为false表示子组件在水平方向上正序排列。 默认值：false 非法值：按默认值处理。 装饰器类型：@Trace
 
 **类型：** boolean
 
@@ -96,13 +78,7 @@ constructor(option?: ColumnLayoutAlgorithmOptions)
 @Trace public justifyContent?: FlexAlign
 ```
 
-所有子组件在垂直方向上的对齐格式。
-
-默认值：FlexAlign.Start
-
-非法值：按默认值处理。
-
-装饰器类型：@Trace
+所有子组件在垂直方向上的对齐格式。 默认值：FlexAlign.Start 非法值：按默认值处理。 装饰器类型：@Trace
 
 **类型：** FlexAlign
 
@@ -122,13 +98,7 @@ constructor(option?: ColumnLayoutAlgorithmOptions)
 @Trace public space?: LengthMetrics
 ```
 
-纵向布局元素垂直方向间距。
-
-默认值：LengthMetrics.vp(0)
-
-非法值：按默认值处理。
-
-装饰器类型：@Trace
+纵向布局元素垂直方向间距。 默认值：LengthMetrics.vp(0) 非法值：按默认值处理。 装饰器类型：@Trace
 
 **类型：** LengthMetrics
 

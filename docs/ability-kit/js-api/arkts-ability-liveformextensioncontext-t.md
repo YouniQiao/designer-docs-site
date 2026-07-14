@@ -4,8 +4,7 @@
 export type LiveFormExtensionContext = _LiveFormExtensionContext.default
 ```
 
-The context of live form extension. It allows access to
-liveFormExtension-specific resources.
+The context of live form extension. It allows access to liveFormExtension-specific resources.
 
 **Since:** 22
 

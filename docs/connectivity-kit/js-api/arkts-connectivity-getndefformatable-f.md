@@ -12,9 +12,7 @@ import { tag } from '@kit.ConnectivityKit';
 function getNdefFormatable(tagInfo: TagInfo): NdefFormatableTag
 ```
 
-Obtains an {@link NdefFormatableTag} object based on the tag information.
-During tag reading, if the tag supports the NDEF Formatable technology,
-an {@link NdefFormatableTag} object will be created based on the tag information.
+Obtains an {@link NdefFormatableTag} object based on the tag information. During tag reading, if the tag supports the NDEF Formatable technology, an {@link NdefFormatableTag} object will be created based on the tag information.
 
 **Since:** 12
 

@@ -12,8 +12,7 @@
 INITIALIZED = 0x00
 ```
 
-表示通过配置信息（[Config](arkts-basicservices-config-i.md)）创建的任务已初始
-化。
+表示通过配置信息（[Config](arkts-basicservices-config-i.md)）创建的任务已初始 化。
 
 **起始版本：** 10
 

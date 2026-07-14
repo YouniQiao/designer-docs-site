@@ -12,10 +12,7 @@ import { sms } from '@kit.TelephonyKit';
 function createMessage(pdu: Array<number>, specification: string, callback: AsyncCallback<ShortMessage>): void
 ```
 
-Creates an SMS message instance based on the protocol data unit (PDU) and the specified SMS protocol.
-
-<p>After receiving the original PDU data, the system creates an SMS message instance according to the specified
-SMS protocol.
+Creates an SMS message instance based on the protocol data unit (PDU) and the specified SMS protocol. <p>After receiving the original PDU data, the system creates an SMS message instance according to the specified SMS protocol.
 
 **Since:** 6
 
@@ -61,10 +58,7 @@ sms.createMessage(pdu, specification, (err: BusinessError, data: sms.ShortMessag
 function createMessage(pdu: Array<number>, specification: string): Promise<ShortMessage>
 ```
 
-Creates an SMS message instance based on the protocol data unit (PDU) and the specified SMS protocol.
-
-<p>After receiving the original PDU data, the system creates an SMS message instance according to the specified
-SMS protocol.
+Creates an SMS message instance based on the protocol data unit (PDU) and the specified SMS protocol. <p>After receiving the original PDU data, the system creates an SMS message instance according to the specified SMS protocol.
 
 **Since:** 6
 

@@ -6,8 +6,7 @@
 function getActiveNotificationCount(callback: AsyncCallback<number>): void
 ```
 
-Obtains the number of active notifications of this application. This API uses an asynchronous callback to return
-the result.
+Obtains the number of active notifications of this application. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 

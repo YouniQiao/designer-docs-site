@@ -32,9 +32,7 @@ Country or region. Example: CN.
 dir: "ltr" | "rtl"
 ```
 
-Text layout direction. Available values are as follows:
-ltr: The text direction is from left to right.
-rtl: The text direction is from right to left.
+Text layout direction. Available values are as follows: ltr: The text direction is from left to right. rtl: The text direction is from right to left.
 
 **Type:** "ltr" | "rtl"
 

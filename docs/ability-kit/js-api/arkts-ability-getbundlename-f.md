@@ -12,8 +12,7 @@ import { WantAgent } from '@kit.AbilityKit';
 function getBundleName(agent: WantAgent, callback: AsyncCallback<string>): void
 ```
 
-Obtains the bundle name of a WantAgent object.
-This API uses an asynchronous callback to return the result.
+Obtains the bundle name of a WantAgent object. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -110,8 +109,7 @@ try {
 function getBundleName(agent: WantAgent): Promise<string>
 ```
 
-Obtains the bundle name of a WantAgent object.
-This API uses a promise to return the result.
+Obtains the bundle name of a WantAgent object. This API uses a promise to return the result.
 
 **Since:** 9
 

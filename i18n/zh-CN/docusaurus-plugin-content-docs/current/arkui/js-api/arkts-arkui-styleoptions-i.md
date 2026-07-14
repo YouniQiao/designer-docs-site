@@ -12,9 +12,7 @@ StyleOptions
 length?: number
 ```
 
-设置属性字符串样式的长度。
-
-当length的值小于0或超出字符串长度与start的差值时，按字符串长度与start的差值处理。
+设置属性字符串样式的长度。 当length的值小于0或超出字符串长度与start的差值时，按字符串长度与start的差值处理。
 
 **类型：** number
 
@@ -32,9 +30,7 @@ length?: number
 start?: number
 ```
 
-设置属性字符串样式的开始位置。
-
-当start的值小于0或超出字符串长度时，按0处理。
+设置属性字符串样式的开始位置。 当start的值小于0或超出字符串长度时，按0处理。
 
 **类型：** number
 

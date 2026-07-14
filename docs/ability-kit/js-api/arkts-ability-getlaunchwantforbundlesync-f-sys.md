@@ -12,8 +12,7 @@ import { bundleManager } from '@kit.AbilityKit';
 function getLaunchWantForBundleSync(bundleName: string, userId?: number): Want
 ```
 
-Obtains the Want used to launch the bundle based on the given bundle name and user ID. This API returns the result
-synchronously.
+Obtains the Want used to launch the bundle based on the given bundle name and user ID. This API returns the result synchronously.
 
 **Since:** 24
 

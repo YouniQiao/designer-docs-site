@@ -1,11 +1,6 @@
 # AVRecorderConfig
 
-Describes the audio and video recording parameters.
-
-The **audioSourceType** and **videoSourceType** parameters are used to distinguish audio-only recording,
-video-only recording, and audio and video recording. For audio-only recording, set only **audioSourceType**.
-For video-only recording, set only **videoSourceType**. For audio and video recording, set both **audioSourceType**
-and **videoSourceType**.
+Describes the audio and video recording parameters. The **audioSourceType** and **videoSourceType** parameters are used to distinguish audio-only recording, video-only recording, and audio and video recording. For audio-only recording, set only **audioSourceType**. For video-only recording, set only **videoSourceType**. For audio and video recording, set both **audioSourceType** and **videoSourceType**.
 
 **Since:** 9
 
@@ -23,8 +18,7 @@ import { media } from '@kit.MediaKit';
 audioSourceType?: AudioSourceType
 ```
 
-Type of the audio source to record. This parameter is mandatory for audio recording.<br>**Atomic service API**:
-This API can be used in atomic services since API version 12.
+Type of the audio source to record. This parameter is mandatory for audio recording.<br>**Atomic service API**: This API can be used in atomic services since API version 12.
 
 **Type:** AudioSourceType
 
@@ -54,9 +48,7 @@ Mode for creating the file, which is used together with on('photoAssetAvailable'
 location?: Location
 ```
 
-Geographical location of the recorded video. By default, the geographical location information is not recorded.
-<br>This API is supported since API version 6 and deprecated since API version 12. You are advised to use
-**AVMetadata.location** instead. If both parameters are set, **AVMetadata.location** is used.
+Geographical location of the recorded video. By default, the geographical location information is not recorded. <br>This API is supported since API version 6 and deprecated since API version 12. You are advised to use **AVMetadata.location** instead. If both parameters are set, **AVMetadata.location** is used.
 
 **Type:** Location
 
@@ -74,10 +66,7 @@ Geographical location of the recorded video. By default, the geographical locati
 maxDuration?: number
 ```
 
-Maximum recording duration, in seconds. The value range is [1, 2^31-1]. If an invalid value is provided,
-it is reset to the maximum allowed duration. Once the recording reaches the specified duration,
-it stops automatically and notifies via the **stateChange** callback that the recording has stopped:
-AVRecorderState = 'stopped', StateChangeReason = BACKGROUND.
+Maximum recording duration, in seconds. The value range is [1, 2^31-1]. If an invalid value is provided, it is reset to the maximum allowed duration. Once the recording reaches the specified duration, it stops automatically and notifies via the **stateChange** callback that the recording has stopped: AVRecorderState = 'stopped', StateChangeReason = BACKGROUND.
 
 **Type:** number
 
@@ -105,8 +94,7 @@ Metadata. For details, see @AVMetadata.
 profile: AVRecorderProfile
 ```
 
-Recording profile. This parameter is mandatory.<br>**Atomic service API**: This API can be used in atomic
-services since API version 12.
+Recording profile. This parameter is mandatory.<br>**Atomic service API**: This API can be used in atomic services since API version 12.
 
 **Type:** AVRecorderProfile
 
@@ -122,9 +110,7 @@ services since API version 12.
 rotation?: number
 ```
 
-Rotation angle of the recorded video, in degrees. The value can be 0 (default), 90, 180, or 270 for MP4 videos.
-<br>This API is supported since API version 6 and deprecated since API version 12. You are advised to use.
-**AVMetadata.videoOrientation** instead. If both parameters are set, **AVMetadata.videoOrientation** is used.
+Rotation angle of the recorded video, in degrees. The value can be 0 (default), 90, 180, or 270 for MP4 videos. <br>This API is supported since API version 6 and deprecated since API version 12. You are advised to use. **AVMetadata.videoOrientation** instead. If both parameters are set, **AVMetadata.videoOrientation** is used.
 
 **Type:** number
 
@@ -142,8 +128,7 @@ Rotation angle of the recorded video, in degrees. The value can be 0 (default), 
 url: string
 ```
 
-Recording output URL: fd://xx (fd number).<br>This parameter is mandatory.<br>**Atomic service API**:
-This API can be used in atomic services since API version 12.
+Recording output URL: fd://xx (fd number).<br>This parameter is mandatory.<br>**Atomic service API**: This API can be used in atomic services since API version 12.
 
 **Type:** string
 

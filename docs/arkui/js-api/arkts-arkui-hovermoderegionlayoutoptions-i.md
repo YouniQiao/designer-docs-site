@@ -1,13 +1,6 @@
 # HoverModeRegionLayoutOptions
 
-Layout information for the semi-folded state.
-
-> **NOTE**
->
-> 1. In semi-folded state, the device contains an avoidance area, and layout calculations must account for
-> the impact of this avoidance area on the overall layout.
-> 2. In semi-folded mode, the upper screen is dedicated to content display, and the lower screen is
-> reserved for interaction.
+Layout information for the semi-folded state. > **NOTE** > > 1. In semi-folded state, the device contains an avoidance area, and layout calculations must account for > the impact of this avoidance area on the overall layout. > 2. In semi-folded mode, the upper screen is dedicated to content display, and the lower screen is > reserved for interaction.
 
 **Since:** 12
 
@@ -25,10 +18,7 @@ import { HoverModeStatus, ExtraRegionPosition, OnHoverStatusChangeHandler, Expan
 extraRegionPosition?: ExtraRegionPosition
 ```
 
-Position information of the extra region. This setting takes effect only when **showExtraRegion**
-is set to **true**.
-
-Default value: **ExtraRegionPosition.top**.
+Position information of the extra region. This setting takes effect only when **showExtraRegion** is set to **true**. Default value: **ExtraRegionPosition.top**.
 
 **Type:** ExtraRegionPosition
 
@@ -46,9 +36,7 @@ Default value: **ExtraRegionPosition.top**.
 horizontalSplitRatio?: number
 ```
 
-Width ratio between the primary and extra regions. This setting takes effect only when **extra**
-is effective.
-The value range is all integers. Default value: {@link.PresetSplitRatio}.LAYOUT_3V2.
+Width ratio between the primary and extra regions. This setting takes effect only when **extra** is effective. The value range is all integers. Default value: {@link.PresetSplitRatio}.LAYOUT_3V2.
 
 **Type:** number
 
@@ -66,10 +54,7 @@ The value range is all integers. Default value: {@link.PresetSplitRatio}.LAYOUT_
 showExtraRegion?: boolean
 ```
 
-Whether to display the extra region in the half-folded state. The value **true** means to display
-the extra region in the half-folded state, and **false** means the opposite.
-
-Default value: **false**.
+Whether to display the extra region in the half-folded state. The value **true** means to display the extra region in the half-folded state, and **false** means the opposite. Default value: **false**.
 
 **Type:** boolean
 

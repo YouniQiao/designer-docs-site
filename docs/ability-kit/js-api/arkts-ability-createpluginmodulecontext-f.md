@@ -12,8 +12,7 @@ import { application } from '@kit.AbilityKit';
 export function createPluginModuleContext(context: Context, pluginBundleName: string, pluginModuleName: string): Promise<Context>
 ```
 
-Creates the context of a plugin under the current application based on the context, plugin bundle name, and plugin
-module name, so as to obtain the basic information about the plugin. This API uses a promise to return the result.
+Creates the context of a plugin under the current application based on the context, plugin bundle name, and plugin module name, so as to obtain the basic information about the plugin. This API uses a promise to return the result.
 
 **Since:** 19
 

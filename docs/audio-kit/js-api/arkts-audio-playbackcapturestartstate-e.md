@@ -1,7 +1,6 @@
 # PlaybackCaptureStartState
 
-Defines the playback capture start state, which is returned asynchronously
-after calling {@link AudioCapturer.requestPlaybackCaptureStart} function.
+Defines the playback capture start state, which is returned asynchronously after calling {@link AudioCapturer.requestPlaybackCaptureStart} function.
 
 **Since:** 26.0.0
 
@@ -27,8 +26,7 @@ Start playback capture success state.
 STATE_FAILED = 1
 ```
 
-Start playback capture failed state, because the request for interrupt is denied
-or meet system internal error.
+Start playback capture failed state, because the request for interrupt is denied or meet system internal error.
 
 **Since:** 26.0.0
 

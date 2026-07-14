@@ -1,7 +1,6 @@
 # AppServiceExtensionAbility
 
-The AppServiceExtensionAbility module provides extended capabilities for background services, including lifecycle
-callbacks for creating, destroying, connecting, and disconnecting background services.
+The AppServiceExtensionAbility module provides extended capabilities for background services, including lifecycle callbacks for creating, destroying, connecting, and disconnecting background services.
 
 **Inheritance/Implementation:** AppServiceExtensionAbility extends [ExtensionAbility](arkts-ability-extensionability-c.md)
 
@@ -21,9 +20,7 @@ import { AppServiceExtensionAbility } from '@kit.AbilityKit';
 onConnect(want: Want): rpc.RemoteObject
 ```
 
-Called when an AppServiceExtensionAbility instance is connected by calling
-[connectAppServiceExtensionAbility()](arkts-ability-uiabilitycontext-c.md#connectappserviceextensionability-1)
-.
+Called when an AppServiceExtensionAbility instance is connected by calling [connectAppServiceExtensionAbility()](arkts-ability-uiabilitycontext-c.md#connectappserviceextensionability-1) .
 
 **Since:** 20
 
@@ -76,13 +73,7 @@ export default class AppServiceExtAbility extends AppServiceExtensionAbility {
 onCreate(want: Want): void
 ```
 
-Called when an AppServiceExtensionAbility instance is created.
-Applications can perform initialization operations, such as registering common event listeners, in this callback.
-
-> **NOTE**
->
-> If an AppServiceExtensionAbility instance has already been created, the **onCreate()** callback is not invoked
-> again when the instance is started or connected.
+Called when an AppServiceExtensionAbility instance is created. Applications can perform initialization operations, such as registering common event listeners, in this callback. > **NOTE** > > If an AppServiceExtensionAbility instance has already been created, the **onCreate()** callback is not invoked > again when the instance is started or connected.
 
 **Since:** 20
 
@@ -118,8 +109,7 @@ export default class AppServiceExtAbility extends AppServiceExtensionAbility {
 onDestroy(): void
 ```
 
-Called when an AppServiceExtensionAbility instance is destroyed. Applications can perform resource cleanup
-operations, such as unregistering listeners, in this callback.
+Called when an AppServiceExtensionAbility instance is destroyed. Applications can perform resource cleanup operations, such as unregistering listeners, in this callback.
 
 **Since:** 20
 
@@ -185,9 +175,7 @@ export default class AppServiceExtAbility extends AppServiceExtensionAbility {
 onRequest(want: Want, startId: number): void
 ```
 
-Called each time an AppServiceExtensionAbility instance is started by calling
-[startAppServiceExtensionAbility()](arkts-ability-uiabilitycontext-c.md#startappserviceextensionability-1)
-.
+Called each time an AppServiceExtensionAbility instance is started by calling [startAppServiceExtensionAbility()](arkts-ability-uiabilitycontext-c.md#startappserviceextensionability-1) .
 
 **Since:** 20
 
@@ -224,8 +212,7 @@ export default class AppServiceExtAbility extends AppServiceExtensionAbility {
 context: AppServiceExtensionContext
 ```
 
-Context environment for an AppServiceExtensionAbility. This context inherits from
-[ExtensionContext](arkts-ability-extensioncontext-c.md).
+Context environment for an AppServiceExtensionAbility. This context inherits from [ExtensionContext](arkts-ability-extensioncontext-c.md).
 
 **Type:** AppServiceExtensionContext
 

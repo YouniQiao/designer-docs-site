@@ -162,8 +162,7 @@ Ability name.
 readonly needHide: boolean
 ```
 
-Whether the auxiliary application is hidden in the list of installed extended services. The value **true** means
-the auxiliary application is hidden, and the value **false** means the opposite.
+Whether the auxiliary application is hidden in the list of installed extended services. The value **true** means the auxiliary application is hidden, and the value **false** means the opposite.
 
 **Type:** boolean
 

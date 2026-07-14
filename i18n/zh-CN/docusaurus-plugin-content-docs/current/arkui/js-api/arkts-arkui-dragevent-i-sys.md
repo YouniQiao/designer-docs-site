@@ -42,13 +42,7 @@ enableInternalDropAnimation(configuration: string): void
 executeFollowHandMorphDropAnimation(onAnimationFinished: Callback<void>, animationOption?: string): void
 ```
 
-设置一个跟手变形落位动效执行完成后的回调，该回调由系统在拖拽框架动效结束后触发。使用callback异步回调。
-
-> **说明：**
->
-> 1. 该接口仅在[dragAnimationType](arkts-arkui-dragevent-i-sys.md#draganimationtype)设置为DragAnimationType.FOLLOW_HAND_MORPH时生效。
->
-> 2. 不要在回调中实现与动效无关的逻辑，避免影响执行效率。
+设置一个跟手变形落位动效执行完成后的回调，该回调由系统在拖拽框架动效结束后触发。使用callback异步回调。 > **说明：** > > 1. 该接口仅在[dragAnimationType](arkts-arkui-dragevent-i-sys.md#draganimationtype)设置为DragAnimationType.FOLLOW_HAND_MORPH时生效。 > > 2. 不要在回调中实现与动效无关的逻辑，避免影响执行效率。
 
 **起始版本：** 26.0.0
 
@@ -71,15 +65,7 @@ executeFollowHandMorphDropAnimation(onAnimationFinished: Callback<void>, animati
 dragAnimationType?: DragAnimationType
 ```
 
-设置拖拽动画类型。该属性仅支持在[onDragStart](arkts-arkui-commonmethod-c.md#ondragstart-1)阶段设置，可在[onDragStart](arkts-arkui-commonmethod-c.md#ondragstart-1)、
-[onDragEnter](arkts-arkui-commonmethod-c.md#ondragenter-1)、[onDragMove](arkts-arkui-commonmethod-c.md#ondragmove-1)、
-[onDragLeave](arkts-arkui-commonmethod-c.md#ondragleave-1)、
-[onDrop](arkts-arkui-commonmethod-c.md#ondrop-1)、
-[onDragEnd](arkts-arkui-commonmethod-c.md#ondragend-1)回调中获取。
-
-默认值为DEFAULT
-
-**系统接口：** 此接口为系统接口。
+设置拖拽动画类型。该属性仅支持在[onDragStart](arkts-arkui-commonmethod-c.md#ondragstart-1)阶段设置，可在[onDragStart](arkts-arkui-commonmethod-c.md#ondragstart-1)、 [onDragEnter](arkts-arkui-commonmethod-c.md#ondragenter-1)、[onDragMove](arkts-arkui-commonmethod-c.md#ondragmove-1)、 [onDragLeave](arkts-arkui-commonmethod-c.md#ondragleave-1)、 [onDrop](arkts-arkui-commonmethod-c.md#ondrop-1)、 [onDragEnd](arkts-arkui-commonmethod-c.md#ondragend-1)回调中获取。 默认值为DEFAULT **系统接口：** 此接口为系统接口。
 
 **类型：** DragAnimationType
 

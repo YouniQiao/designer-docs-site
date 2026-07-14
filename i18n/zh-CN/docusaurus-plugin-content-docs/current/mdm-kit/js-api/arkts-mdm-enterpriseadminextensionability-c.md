@@ -1,12 +1,6 @@
 # EnterpriseAdminExtensionAbility
 
-本模块提供[企业设备管理扩展能力](../../../../mdm/mdm-kit-term.md#企业设备管理扩展能力)。
-
-设备管理应用需要存在一个EnterpriseAdminExtensionAbility并重写相关接口，以此具备模块提供的各项能力，比如接收由系统发送的该应用被激活或者解除激活的通知。
-
-> **说明：**
->
-> 本模块接口仅可在Stage模型下使用。
+本模块提供[企业设备管理扩展能力](../../../../mdm/mdm-kit-term.md#企业设备管理扩展能力)。 设备管理应用需要存在一个EnterpriseAdminExtensionAbility并重写相关接口，以此具备模块提供的各项能力，比如接收由系统发送的该应用被激活或者解除激活的通知。 > **说明：** > > 本模块接口仅可在Stage模型下使用。
 
 **起始版本：** 12
 
@@ -18,9 +12,7 @@
 onAccountAdded(accountId: number): void
 ```
 
-系统账号新增事件回调。通过接口
-[adminManager.subscribeManagedEventSync](arkts-mdm-subscribemanagedeventsync-f.md#subscribemanagedeventsync-1)
-注册MANAGED_EVENT_ACCOUNT_ADDED事件才能收到此回调。企业设备管理场景下，设备管理应用订阅系统账号新增事件，系统账号新增事件通知设备管理应用，设备管理应用可以在此回调函数中进行事件上报，通知企业管理员。
+系统账号新增事件回调。通过接口 [adminManager.subscribeManagedEventSync](arkts-mdm-subscribemanagedeventsync-f.md#subscribemanagedeventsync-1) 注册MANAGED_EVENT_ACCOUNT_ADDED事件才能收到此回调。企业设备管理场景下，设备管理应用订阅系统账号新增事件，系统账号新增事件通知设备管理应用，设备管理应用可以在此回调函数中进行事件上报，通知企业管理员。
 
 **起始版本：** 18
 
@@ -37,7 +29,22 @@ onAccountAdded(accountId: number): void
 **示例：**
 
 ```TypeScript
-import { EnterpriseAdminExtensionAbility } from '@kit.MDMKit';
+import { EnterpriseAdminExtensionAbility, adminManager } from '@kit.MDMKit';
+import { Want } from '@kit.AbilityKit';
+
+let wantTemp: Want = {
+  // 需根据实际情况进行替换
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility'
+};
+
+let events: Array<adminManager.ManagedEvent> = [adminManager.ManagedEvent.MANAGED_EVENT_ACCOUNT_ADDED];
+try {
+  adminManager.subscribeManagedEventSync(wantTemp, events);
+  console.info('Succeeded in subscribing managed event.');
+} catch (err) {
+  console.error(`Failed to subscribe managed event. Code: ${err.code}, message: ${err.message}`);
+}
 
 export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbility {
   onAccountAdded(accountId: number) {
@@ -53,9 +60,7 @@ export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbil
 onAccountRemoved(accountId: number): void
 ```
 
-系统账号删除事件回调。通过接口
-[adminManager.subscribeManagedEventSync](arkts-mdm-subscribemanagedeventsync-f.md#subscribemanagedeventsync-1)
-注册MANAGED_EVENT_ACCOUNT_REMOVED事件才能收到此回调。企业设备管理场景下，设备管理应用订阅系统账号删除事件，系统账号删除事件通知设备管理应用，设备管理应用可以在此回调函数中进行事件上报，通知企业管理员。
+系统账号删除事件回调。通过接口 [adminManager.subscribeManagedEventSync](arkts-mdm-subscribemanagedeventsync-f.md#subscribemanagedeventsync-1) 注册MANAGED_EVENT_ACCOUNT_REMOVED事件才能收到此回调。企业设备管理场景下，设备管理应用订阅系统账号删除事件，系统账号删除事件通知设备管理应用，设备管理应用可以在此回调函数中进行事件上报，通知企业管理员。
 
 **起始版本：** 18
 
@@ -72,7 +77,22 @@ onAccountRemoved(accountId: number): void
 **示例：**
 
 ```TypeScript
-import { EnterpriseAdminExtensionAbility } from '@kit.MDMKit';
+import { EnterpriseAdminExtensionAbility, adminManager } from '@kit.MDMKit';
+import { Want } from '@kit.AbilityKit';
+
+let wantTemp: Want = {
+  // 需根据实际情况进行替换
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility'
+};
+
+let events: Array<adminManager.ManagedEvent> = [adminManager.ManagedEvent.MANAGED_EVENT_ACCOUNT_REMOVED];
+try {
+  adminManager.subscribeManagedEventSync(wantTemp, events);
+  console.info('Succeeded in subscribing managed event.');
+} catch (err) {
+  console.error(`Failed to subscribe managed event. Code: ${err.code}, message: ${err.message}`);
+}
 
 export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbility {
   onAccountRemoved(accountId: number) {
@@ -88,10 +108,7 @@ export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbil
 onAccountSwitched(accountId: number): void
 ```
 
-系统账号切换事件回调。通过接口
-[adminManager.subscribeManagedEventSync](arkts-mdm-subscribemanagedeventsync-f.md#subscribemanagedeventsync-1)
-注册MANAGED_EVENT_ACCOUNT_SWITCHED事件才能收到此回调。企业设备管理场景下，设备管理应用订阅系统账号切换事件，系统账号切换事件通知设备管理应用，设备管理应用可以在此回调函数中进行事件上报，通知企业管理员
-。
+系统账号切换事件回调。通过接口 [adminManager.subscribeManagedEventSync](arkts-mdm-subscribemanagedeventsync-f.md#subscribemanagedeventsync-1) 注册MANAGED_EVENT_ACCOUNT_SWITCHED事件才能收到此回调。企业设备管理场景下，设备管理应用订阅系统账号切换事件，系统账号切换事件通知设备管理应用，设备管理应用可以在此回调函数中进行事件上报，通知企业管理员 。
 
 **起始版本：** 18
 
@@ -108,7 +125,22 @@ onAccountSwitched(accountId: number): void
 **示例：**
 
 ```TypeScript
-import { EnterpriseAdminExtensionAbility } from '@kit.MDMKit';
+import { EnterpriseAdminExtensionAbility, adminManager } from '@kit.MDMKit';
+import { Want } from '@kit.AbilityKit';
+
+let wantTemp: Want = {
+  // 需根据实际情况进行替换
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility'
+};
+
+let events: Array<adminManager.ManagedEvent> = [adminManager.ManagedEvent.MANAGED_EVENT_ACCOUNT_SWITCHED];
+try {
+  adminManager.subscribeManagedEventSync(wantTemp, events);
+  console.info('Succeeded in subscribing managed event.');
+} catch (err) {
+  console.error(`Failed to subscribe managed event. Code: ${err.code}, message: ${err.message}`);
+}
 
 export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbility {
   onAccountSwitched(accountId: number) {
@@ -139,6 +171,7 @@ import { EnterpriseAdminExtensionAbility } from '@kit.MDMKit';
 
 export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbility {
   onAdminDisabled() {
+    console.info(`Succeeded in calling onAdminDisabled callback.`);
   }
 }
 
@@ -165,6 +198,7 @@ import { EnterpriseAdminExtensionAbility } from '@kit.MDMKit';
 
 export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbility {
   onAdminEnabled() {
+    console.info(`Succeeded in calling onAdminEnabled callback.`);
   }
 }
 
@@ -193,7 +227,22 @@ onAdminPolicyChanged(event: common.PolicyChangedEvent): void
 **示例：**
 
 ```TypeScript
-import { EnterpriseAdminExtensionAbility, common } from '@kit.MDMKit';
+import { EnterpriseAdminExtensionAbility, adminManager, common } from '@kit.MDMKit';
+import { Want } from '@kit.AbilityKit';
+
+let wantTemp: Want = {
+  // 需根据实际情况进行替换
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility'
+};
+
+let events: Array<adminManager.ManagedEvent> = [adminManager.ManagedEvent.MANAGED_EVENT_POLICIES_CHANGED];
+try {
+  adminManager.subscribeManagedEventSync(wantTemp, events);
+  console.info('Succeeded in subscribing managed event.');
+} catch (err) {
+  console.error(`Failed to subscribe managed event. Code: ${err.code}, message: ${err.message}`);
+}
 
 export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbility {
   onAdminPolicyChanged(event: common.PolicyChangedEvent) {
@@ -210,9 +259,7 @@ export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbil
 onAppStart(bundleName: string): void
 ```
 
-应用启动事件回调。通过接口
-[adminManager.subscribeManagedEventSync](arkts-mdm-subscribemanagedeventsync-f.md#subscribemanagedeventsync-1)
-注册MANAGED_EVENT_APP_START事件才能收到此回调。企业设备管理场景下，设备管理应用订阅应用启动事件，端侧应用启动事件通知设备管理应用，设备管理应用可以在此回调函数中进行事件上报，通知企业管理员。
+应用启动事件回调。通过接口 [adminManager.subscribeManagedEventSync](arkts-mdm-subscribemanagedeventsync-f.md#subscribemanagedeventsync-1) 注册MANAGED_EVENT_APP_START事件才能收到此回调。企业设备管理场景下，设备管理应用订阅应用启动事件，端侧应用启动事件通知设备管理应用，设备管理应用可以在此回调函数中进行事件上报，通知企业管理员。
 
 **起始版本：** 12
 
@@ -229,7 +276,22 @@ onAppStart(bundleName: string): void
 **示例：**
 
 ```TypeScript
-import { EnterpriseAdminExtensionAbility } from '@kit.MDMKit';
+import { EnterpriseAdminExtensionAbility, adminManager } from '@kit.MDMKit';
+import { Want } from '@kit.AbilityKit';
+
+let wantTemp: Want = {
+  // 需根据实际情况进行替换
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility'
+};
+
+let events: Array<adminManager.ManagedEvent> = [adminManager.ManagedEvent.MANAGED_EVENT_APP_START];
+try {
+  adminManager.subscribeManagedEventSync(wantTemp, events);
+  console.info('Succeeded in subscribing managed event.');
+} catch (err) {
+  console.error(`Failed to subscribe managed event. Code: ${err.code}, message: ${err.message}`);
+}
 
 export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbility {
   onAppStart(bundleName: string) {
@@ -245,9 +307,7 @@ export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbil
 onAppStop(bundleName: string): void
 ```
 
-应用停止事件回调。通过接口
-[adminManager.subscribeManagedEventSync](arkts-mdm-subscribemanagedeventsync-f.md#subscribemanagedeventsync-1)
-注册MANAGED_EVENT_APP_STOP事件才能收到此回调。企业设备管理场景下，设备管理应用订阅应用停止事件，端侧应用停止事件通知设备管理应用，设备管理应用可以在此回调函数中进行事件上报，通知企业管理员。
+应用停止事件回调。通过接口 [adminManager.subscribeManagedEventSync](arkts-mdm-subscribemanagedeventsync-f.md#subscribemanagedeventsync-1) 注册MANAGED_EVENT_APP_STOP事件才能收到此回调。企业设备管理场景下，设备管理应用订阅应用停止事件，端侧应用停止事件通知设备管理应用，设备管理应用可以在此回调函数中进行事件上报，通知企业管理员。
 
 **起始版本：** 12
 
@@ -264,7 +324,22 @@ onAppStop(bundleName: string): void
 **示例：**
 
 ```TypeScript
-import { EnterpriseAdminExtensionAbility } from '@kit.MDMKit';
+import { EnterpriseAdminExtensionAbility, adminManager } from '@kit.MDMKit';
+import { Want } from '@kit.AbilityKit';
+
+let wantTemp: Want = {
+  // 需根据实际情况进行替换
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility'
+};
+
+let events: Array<adminManager.ManagedEvent> = [adminManager.ManagedEvent.MANAGED_EVENT_APP_STOP];
+try {
+  adminManager.subscribeManagedEventSync(wantTemp, events);
+  console.info('Succeeded in subscribing managed event.');
+} catch (err) {
+  console.error(`Failed to subscribe managed event. Code: ${err.code}, message: ${err.message}`);
+}
 
 export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbility {
   onAppStop(bundleName: string) {
@@ -280,9 +355,7 @@ export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbil
 onBundleAdded(bundleName: string): void
 ```
 
-应用安装事件回调，回调中包含应用包名。通过接口
-[adminManager.subscribeManagedEventSync](arkts-mdm-subscribemanagedeventsync-f.md#subscribemanagedeventsync-1)
-注册MANAGED_EVENT_BUNDLE_ADDED事件才能收到此回调。企业设备管理场景下，设备管理应用订阅应用安装事件，端侧应用安装事件通知设备管理应用，设备管理应用可以在此回调函数中进行事件上报，通知企业管理员。
+应用安装事件回调，回调中包含应用包名。通过接口 [adminManager.subscribeManagedEventSync](arkts-mdm-subscribemanagedeventsync-f.md#subscribemanagedeventsync-1) 注册MANAGED_EVENT_BUNDLE_ADDED事件才能收到此回调。企业设备管理场景下，设备管理应用订阅应用安装事件，端侧应用安装事件通知设备管理应用，设备管理应用可以在此回调函数中进行事件上报，通知企业管理员。
 
 **起始版本：** 12
 
@@ -299,7 +372,22 @@ onBundleAdded(bundleName: string): void
 **示例：**
 
 ```TypeScript
-import { EnterpriseAdminExtensionAbility } from '@kit.MDMKit';
+import { EnterpriseAdminExtensionAbility, adminManager } from '@kit.MDMKit';
+import { Want } from '@kit.AbilityKit';
+
+let wantTemp: Want = {
+  // 需根据实际情况进行替换
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility'
+};
+
+let events: Array<adminManager.ManagedEvent> = [adminManager.ManagedEvent.MANAGED_EVENT_BUNDLE_ADDED];
+try {
+  adminManager.subscribeManagedEventSync(wantTemp, events);
+  console.info('Succeeded in subscribing managed event.');
+} catch (err) {
+  console.error(`Failed to subscribe managed event. Code: ${err.code}, message: ${err.message}`);
+}
 
 export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbility {
   onBundleAdded(bundleName: string) {
@@ -315,9 +403,7 @@ export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbil
 onBundleAdded(bundleName: string, accountId: number): void
 ```
 
-应用安装事件回调，回调中包含应用包名和账号ID。通过接口
-[adminManager.subscribeManagedEventSync](arkts-mdm-subscribemanagedeventsync-f.md#subscribemanagedeventsync-1)
-注册MANAGED_EVENT_BUNDLE_ADDED事件才能收到此回调。企业设备管理场景下，设备管理应用订阅应用安装事件，端侧应用安装事件通知设备管理应用，设备管理应用可以在此回调函数中进行事件上报，通知企业管理员。
+应用安装事件回调，回调中包含应用包名和账号ID。通过接口 [adminManager.subscribeManagedEventSync](arkts-mdm-subscribemanagedeventsync-f.md#subscribemanagedeventsync-1) 注册MANAGED_EVENT_BUNDLE_ADDED事件才能收到此回调。企业设备管理场景下，设备管理应用订阅应用安装事件，端侧应用安装事件通知设备管理应用，设备管理应用可以在此回调函数中进行事件上报，通知企业管理员。
 
 **起始版本：** 14
 
@@ -335,7 +421,22 @@ onBundleAdded(bundleName: string, accountId: number): void
 **示例：**
 
 ```TypeScript
-import { EnterpriseAdminExtensionAbility } from '@kit.MDMKit';
+import { EnterpriseAdminExtensionAbility, adminManager } from '@kit.MDMKit';
+import { Want } from '@kit.AbilityKit';
+
+let wantTemp: Want = {
+  // 需根据实际情况进行替换
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility'
+};
+
+let events: Array<adminManager.ManagedEvent> = [adminManager.ManagedEvent.MANAGED_EVENT_BUNDLE_ADDED];
+try {
+  adminManager.subscribeManagedEventSync(wantTemp, events);
+  console.info('Succeeded in subscribing managed event.');
+} catch (err) {
+  console.error(`Failed to subscribe managed event. Code: ${err.code}, message: ${err.message}`);
+}
 
 export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbility {
   // 由于存在同名回调方法onBundleAdded(bundleName: string)，该回调方法无accountId参数，因此在实际调用时accountId必须为可选参数，写法请参考示例代码。如果删除accountId后的问号"?"，编译会报错。
@@ -352,9 +453,7 @@ export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbil
 onBundleRemoved(bundleName: string): void
 ```
 
-应用卸载事件回调，回调中包含应用包名。通过接口
-[adminManager.subscribeManagedEventSync](arkts-mdm-subscribemanagedeventsync-f.md#subscribemanagedeventsync-1)
-注册MANAGED_EVENT_BUNDLE_REMOVED事件才能收到此回调。企业设备管理场景下，设备管理应用订阅应用卸载事件，端侧应用卸载事件通知设备管理应用，设备管理应用可以在此回调函数中进行事件上报，通知企业管理员。
+应用卸载事件回调，回调中包含应用包名。通过接口 [adminManager.subscribeManagedEventSync](arkts-mdm-subscribemanagedeventsync-f.md#subscribemanagedeventsync-1) 注册MANAGED_EVENT_BUNDLE_REMOVED事件才能收到此回调。企业设备管理场景下，设备管理应用订阅应用卸载事件，端侧应用卸载事件通知设备管理应用，设备管理应用可以在此回调函数中进行事件上报，通知企业管理员。
 
 **起始版本：** 12
 
@@ -371,7 +470,22 @@ onBundleRemoved(bundleName: string): void
 **示例：**
 
 ```TypeScript
-import { EnterpriseAdminExtensionAbility } from '@kit.MDMKit';
+import { EnterpriseAdminExtensionAbility, adminManager } from '@kit.MDMKit';
+import { Want } from '@kit.AbilityKit';
+
+let wantTemp: Want = {
+  // 需根据实际情况进行替换
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility'
+};
+
+let events: Array<adminManager.ManagedEvent> = [adminManager.ManagedEvent.MANAGED_EVENT_BUNDLE_REMOVED];
+try {
+  adminManager.subscribeManagedEventSync(wantTemp, events);
+  console.info('Succeeded in subscribing managed event.');
+} catch (err) {
+  console.error(`Failed to subscribe managed event. Code: ${err.code}, message: ${err.message}`);
+}
 
 export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbility {
   onBundleRemoved(bundleName: string) {
@@ -387,9 +501,7 @@ export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbil
 onBundleRemoved(bundleName: string, accountId: number): void
 ```
 
-应用卸载事件回调，回调中包含应用包名和账号ID。通过接口
-[adminManager.subscribeManagedEventSync](arkts-mdm-subscribemanagedeventsync-f.md#subscribemanagedeventsync-1)
-注册MANAGED_EVENT_BUNDLE_REMOVED事件才能收到此回调。企业设备管理场景下，设备管理应用订阅应用卸载事件，端侧应用卸载事件通知设备管理应用，设备管理应用可以在此回调函数中进行事件上报，通知企业管理员。
+应用卸载事件回调，回调中包含应用包名和账号ID。通过接口 [adminManager.subscribeManagedEventSync](arkts-mdm-subscribemanagedeventsync-f.md#subscribemanagedeventsync-1) 注册MANAGED_EVENT_BUNDLE_REMOVED事件才能收到此回调。企业设备管理场景下，设备管理应用订阅应用卸载事件，端侧应用卸载事件通知设备管理应用，设备管理应用可以在此回调函数中进行事件上报，通知企业管理员。
 
 **起始版本：** 14
 
@@ -407,7 +519,22 @@ onBundleRemoved(bundleName: string, accountId: number): void
 **示例：**
 
 ```TypeScript
-import { EnterpriseAdminExtensionAbility } from '@kit.MDMKit';
+import { EnterpriseAdminExtensionAbility, adminManager } from '@kit.MDMKit';
+import { Want } from '@kit.AbilityKit';
+
+let wantTemp: Want = {
+  // 需根据实际情况进行替换
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility'
+};
+
+let events: Array<adminManager.ManagedEvent> = [adminManager.ManagedEvent.MANAGED_EVENT_BUNDLE_REMOVED];
+try {
+  adminManager.subscribeManagedEventSync(wantTemp, events);
+  console.info('Succeeded in subscribing managed event.');
+} catch (err) {
+  console.error(`Failed to subscribe managed event. Code: ${err.code}, message: ${err.message}`);
+}
 
 export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbility {
   // 由于存在同名回调方法onBundleRemoved(bundleName: string)，该回调方法无accountId参数，因此在实际调用时accountId必须为可选参数，写法请参考示例代码。如果删除accountId后的问号"?"，编译会报错。
@@ -424,10 +551,7 @@ export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbil
 onBundleUpdated(bundleName: string, accountId: number): void
 ```
 
-应用更新事件回调，回调中包含应用包名和用户ID。通过接口
-[adminManager.subscribeManagedEventSync](arkts-mdm-subscribemanagedeventsync-f.md#subscribemanagedeventsync-1)
-注册MANAGED_EVENT_BUNDLE_UPDATED事件才能收到此回调。企业设备管理场景下，设备管理应用可订阅所有用户下的应用更新事件，应用更新事件触发时会通知当前用户下的设备管理应用，设备管理应用可以在此回调函数中进行事
-件上报，通知主用户下的企业管理员。
+应用更新事件回调，回调中包含应用包名和用户ID。通过接口 [adminManager.subscribeManagedEventSync](arkts-mdm-subscribemanagedeventsync-f.md#subscribemanagedeventsync-1) 注册MANAGED_EVENT_BUNDLE_UPDATED事件才能收到此回调。企业设备管理场景下，设备管理应用可订阅所有用户下的应用更新事件，应用更新事件触发时会通知当前用户下的设备管理应用，设备管理应用可以在此回调函数中进行事 件上报，通知主用户下的企业管理员。
 
 **起始版本：** 26.0.0
 
@@ -445,7 +569,22 @@ onBundleUpdated(bundleName: string, accountId: number): void
 **示例：**
 
 ```TypeScript
-import { EnterpriseAdminExtensionAbility } from '@kit.MDMKit';
+import { EnterpriseAdminExtensionAbility, adminManager } from '@kit.MDMKit';
+import { Want } from '@kit.AbilityKit';
+
+let wantTemp: Want = {
+  // 需根据实际情况进行替换
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility'
+};
+
+let events: Array<adminManager.ManagedEvent> = [adminManager.ManagedEvent.MANAGED_EVENT_BUNDLE_UPDATED];
+try {
+  adminManager.subscribeManagedEventSync(wantTemp, events);
+  console.info('Succeeded in subscribing managed event.');
+} catch (err) {
+  console.error(`Failed to subscribe managed event. Code: ${err.code}, message: ${err.message}`);
+}
 
 export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbility {
   onBundleUpdated(bundleName: string, accountId: number) {
@@ -461,8 +600,7 @@ export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbil
 onDeviceAdminDisabled(bundleName: string): void
 ```
 
-仅超级设备管理应用在普通设备管理应用被解除激活时会触发此回调。企业管理员或者员工解除激活普通设备管理应用，系统通知超级设备管理应用已解除激活admin权限。超级设备管理应用可在此回调函数中通知企业管理员设备已脱管。不需要注册，解除
-激活后默认触发该回调。
+仅超级设备管理应用在普通设备管理应用被解除激活时会触发此回调。企业管理员或者员工解除激活普通设备管理应用，系统通知超级设备管理应用已解除激活admin权限。超级设备管理应用可在此回调函数中通知企业管理员设备已脱管。不需要注册，解除 激活后默认触发该回调。
 
 **起始版本：** 23
 
@@ -494,8 +632,7 @@ export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbil
 onDeviceAdminEnabled(bundleName: string): void
 ```
 
-仅超级设备管理应用在普通设备管理应用被激活时会触发此回调。企业管理员或者员工部署并激活普通设备管理应用，系统通知超级设备管理应用已激活admin权限。超级设备管理应用可在此回调函数中进行初始化策略设置。不需要注册，激活后默认触发该
-回调。
+仅超级设备管理应用在普通设备管理应用被激活时会触发此回调。企业管理员或者员工部署并激活普通设备管理应用，系统通知超级设备管理应用已激活admin权限。超级设备管理应用可在此回调函数中进行初始化策略设置。不需要注册，激活后默认触发该 回调。
 
 **起始版本：** 23
 
@@ -527,10 +664,7 @@ export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbil
 onDeviceBootCompleted(): void
 ```
 
-设备开机完成事件回调。通过接口
-[adminManager.subscribeManagedEventSync](arkts-mdm-subscribemanagedeventsync-f.md#subscribemanagedeventsync-1)
-注册MANAGED_EVENT_BOOT_COMPLETED事件才能收到此回调。企业设备管理场景下，设备管理应用订阅设备启动完成事件，端侧系统在设备开机完成后会通知设备管理应用，设备管理应用可以在此回调函数中进行事件上报，通知企业
-管理员。
+设备开机完成事件回调。通过接口 [adminManager.subscribeManagedEventSync](arkts-mdm-subscribemanagedeventsync-f.md#subscribemanagedeventsync-1) 注册MANAGED_EVENT_BOOT_COMPLETED事件才能收到此回调。企业设备管理场景下，设备管理应用订阅设备启动完成事件，端侧系统在设备开机完成后会通知设备管理应用，设备管理应用可以在此回调函数中进行事件上报，通知企业 管理员。
 
 **起始版本：** 24
 
@@ -541,7 +675,22 @@ onDeviceBootCompleted(): void
 **示例：**
 
 ```TypeScript
-import { EnterpriseAdminExtensionAbility } from '@kit.MDMKit';
+import { EnterpriseAdminExtensionAbility, adminManager } from '@kit.MDMKit';
+import { Want } from '@kit.AbilityKit';
+
+let wantTemp: Want = {
+  // 需根据实际情况进行替换
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility'
+};
+
+let events: Array<adminManager.ManagedEvent> = [adminManager.ManagedEvent.MANAGED_EVENT_BOOT_COMPLETED];
+try {
+  adminManager.subscribeManagedEventSync(wantTemp, events);
+  console.info('Succeeded in subscribing managed event.');
+} catch (err) {
+  console.error(`Failed to subscribe managed event. Code: ${err.code}, message: ${err.message}`);
+}
 
 export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbility {
   onDeviceBootCompleted() {
@@ -677,9 +826,7 @@ export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbil
 onKioskModeEntering(bundleName: string, accountId: number): void
 ```
 
-应用进入Kiosk模式回调，回调中包含应用包名和用户ID。
-
-Kiosk模式为系统层面提供的一种应用运行模式，该模式下会将设备锁定在单个应用或者一组应用运行，同时对锁屏状态、状态栏、手势操作和关键功能进行控制，防止用户在设备上启动其它应用或执行其它操作。
+应用进入Kiosk模式回调，回调中包含应用包名和用户ID。 Kiosk模式为系统层面提供的一种应用运行模式，该模式下会将设备锁定在单个应用或者一组应用运行，同时对锁屏状态、状态栏、手势操作和关键功能进行控制，防止用户在设备上启动其它应用或执行其它操作。
 
 **起始版本：** 20
 
@@ -810,8 +957,7 @@ export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbil
 onMarketAppInstallResult(bundleName: string, result: common.InstallationResult): void
 ```
 
-安装应用市场应用接口[bundleManager.installMarketApps](arkts-mdm-installmarketapps-f.md#installmarketapps-1)安装
-结果回调，回调中包含应用包名和安装结果。
+安装应用市场应用接口[bundleManager.installMarketApps](arkts-mdm-installmarketapps-f.md#installmarketapps-1)安装 结果回调，回调中包含应用包名和安装结果。
 
 **起始版本：** 22
 
@@ -872,10 +1018,7 @@ export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbil
 onStartupGuideCompleted(scene: common.StartupScene): void
 ```
 
-开机向导完成事件回调。通过接口
-[adminManager.subscribeManagedEventSync](arkts-mdm-subscribemanagedeventsync-f.md#subscribemanagedeventsync-1)
-注册MANAGED_EVENT_STARTUP_GUIDE_COMPLETED事件才能收到此回调。企业设备管理场景下，设备管理应用订阅开机向导完成事件，端侧系统在首次切换子用户完成（仅限PC）、OTA升级完成、首次开机完成开机向导
-时会通知设备管理应用，设备管理应用可以在此回调函数中进行事件上报，通知企业管理员。
+开机向导完成事件回调。通过接口 [adminManager.subscribeManagedEventSync](arkts-mdm-subscribemanagedeventsync-f.md#subscribemanagedeventsync-1) 注册MANAGED_EVENT_STARTUP_GUIDE_COMPLETED事件才能收到此回调。企业设备管理场景下，设备管理应用订阅开机向导完成事件，端侧系统在首次切换子用户完成（仅限PC）、OTA升级完成、首次开机完成开机向导 时会通知设备管理应用，设备管理应用可以在此回调函数中进行事件上报，通知企业管理员。
 
 **起始版本：** 24
 
@@ -892,7 +1035,22 @@ onStartupGuideCompleted(scene: common.StartupScene): void
 **示例：**
 
 ```TypeScript
-import { EnterpriseAdminExtensionAbility, common } from '@kit.MDMKit';
+import { EnterpriseAdminExtensionAbility, adminManager, common } from '@kit.MDMKit';
+import { Want } from '@kit.AbilityKit';
+
+let wantTemp: Want = {
+  // 需根据实际情况进行替换
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility'
+};
+
+let events: Array<adminManager.ManagedEvent> = [adminManager.ManagedEvent.MANAGED_EVENT_STARTUP_GUIDE_COMPLETED];
+try {
+  adminManager.subscribeManagedEventSync(wantTemp, events);
+  console.info('Succeeded in subscribing managed event.');
+} catch (err) {
+  console.error(`Failed to subscribe managed event. Code: ${err.code}, message: ${err.message}`);
+}
 
 export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbility {
   onStartupGuideCompleted(scene: common.StartupScene) {
@@ -914,9 +1072,7 @@ export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbil
 onSystemUpdate(systemUpdateInfo: systemManager.SystemUpdateInfo): void
 ```
 
-系统更新事件回调。通过接口
-[adminManager.subscribeManagedEventSync](arkts-mdm-subscribemanagedeventsync-f.md#subscribemanagedeventsync-1)
-注册MANAGED_EVENT_SYSTEM_UPDATE事件才能收到此回调。企业设备管理场景下，设备管理应用订阅系统更新事件，端侧系统更新事件通知设备管理应用，设备管理应用可以在此回调函数中进行事件上报，通知企业管理员。
+系统更新事件回调。通过接口 [adminManager.subscribeManagedEventSync](arkts-mdm-subscribemanagedeventsync-f.md#subscribemanagedeventsync-1) 注册MANAGED_EVENT_SYSTEM_UPDATE事件才能收到此回调。企业设备管理场景下，设备管理应用订阅系统更新事件，端侧系统更新事件通知设备管理应用，设备管理应用可以在此回调函数中进行事件上报，通知企业管理员。
 
 **起始版本：** 12
 
@@ -933,8 +1089,22 @@ onSystemUpdate(systemUpdateInfo: systemManager.SystemUpdateInfo): void
 **示例：**
 
 ```TypeScript
-import { EnterpriseAdminExtensionAbility } from '@kit.MDMKit';
-import { systemManager } from '@kit.MDMKit';
+import { EnterpriseAdminExtensionAbility, adminManager, systemManager } from '@kit.MDMKit';
+import { Want } from '@kit.AbilityKit';
+
+let wantTemp: Want = {
+  // 需根据实际情况进行替换
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility'
+};
+
+let events: Array<adminManager.ManagedEvent> = [adminManager.ManagedEvent.MANAGED_EVENT_SYSTEM_UPDATE];
+try {
+  adminManager.subscribeManagedEventSync(wantTemp, events);
+  console.info('Succeeded in subscribing managed event.');
+} catch (err) {
+  console.error(`Failed to subscribe managed event. Code: ${err.code}, message: ${err.message}`);
+}
 
 export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbility {
   onSystemUpdate(systemUpdateInfo: systemManager.SystemUpdateInfo) {

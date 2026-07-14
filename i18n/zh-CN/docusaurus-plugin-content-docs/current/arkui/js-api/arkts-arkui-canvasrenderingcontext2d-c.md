@@ -1,20 +1,6 @@
 # CanvasRenderingContext2D
 
-CanvasRenderingContext2D对象与Canvas组件绑定后，可在Canvas组件上绘制，绘制对象可以是形状、文本、图片等。
-
-> **说明：**
->
-> * 建议使用时将CanvasRenderingContext2D对象与Canvas组件封装到同一个自定义组件中，保证两者一一对应且生命周期保持一致。
->
-> * 本文绘制接口在调用时会存入被关联的Canvas组件的指令队列中。仅当当前帧进入渲染阶段且关联的Canvas组件处于可见状态时，
-> 这些指令才会从队列中被提取并执行。因此，在Canvas组件不可见的情况下，应尽量避免频繁调用绘制接口，
-> 以防止指令在队列中堆积，从而避免内存占用过大的问题。
->
-> * beginPath、moveTo、lineTo、closePath、bezierCurveTo、quadraticCurveTo、arc、arcTo、ellipse、rect和
-> roundRect接口只能对CanvasRenderingContext2D中的路径生效，无法对OffscreenCanvasRenderingContext2D和
-> Path2D对象中设置的路径生效。
->
-> * Canvas组件的宽或高超过8000px时使用CPU渲染，会导致性能明显下降。
+CanvasRenderingContext2D对象与Canvas组件绑定后，可在Canvas组件上绘制，绘制对象可以是形状、文本、图片等。 > **说明：** > > * 建议使用时将CanvasRenderingContext2D对象与Canvas组件封装到同一个自定义组件中，保证两者一一对应且生命周期保持一致。 > > * 本文绘制接口在调用时会存入被关联的Canvas组件的指令队列中。仅当当前帧进入渲染阶段且关联的Canvas组件处于可见状态时， > 这些指令才会从队列中被提取并执行。因此，在Canvas组件不可见的情况下，应尽量避免频繁调用绘制接口， > 以防止指令在队列中堆积，从而避免内存占用过大的问题。 > > * beginPath、moveTo、lineTo、closePath、bezierCurveTo、quadraticCurveTo、arc、arcTo、ellipse、rect和 > roundRect接口只能对CanvasRenderingContext2D中的路径生效，无法对OffscreenCanvasRenderingContext2D和 > Path2D对象中设置的路径生效。 > > * Canvas组件的宽或高超过8000px时使用CPU渲染，会导致性能明显下降。
 
 **继承/实现关系：** CanvasRenderingContext2D extends [CanvasRenderer](arkts-arkui-canvasrenderer-c.md)
 
@@ -75,16 +61,7 @@ constructor(settings?: RenderingContextSettings, unit?: LengthMetricsUnit)
 static getContext2DFromDrawingContext(drawingContext: DrawingRenderingContext, options?: RenderingContextOptions): CanvasRenderingContext2D
 ```
 
-从一个DrawingRenderingContext对象中获取一个CanvasRenderingContext2D对象，
-该CanvasRenderingContext2D对象与入参的DrawingRenderingContext对象绑定了相同的Canvas组件。
-
-> **说明：**
->
-> - 从该接口获取的CanvasRenderingContext2D对象不允许作为参数创建
-> [Canvas](../../../../reference/apis-arkui/arkui-ts/ts-components-canvas-canvas.md)
-> 组件，否则会导致应用崩溃。
->
-> - 当入参的DrawingRenderingContext对象未绑定Canvas组件时，将返回错误码。
+从一个DrawingRenderingContext对象中获取一个CanvasRenderingContext2D对象， 该CanvasRenderingContext2D对象与入参的DrawingRenderingContext对象绑定了相同的Canvas组件。 > **说明：** > > - 从该接口获取的CanvasRenderingContext2D对象不允许作为参数创建 > [Canvas](../../../../reference/apis-arkui/arkui-ts/ts-components-canvas-canvas.md) > 组件，否则会导致应用崩溃。 > > - 当入参的DrawingRenderingContext对象未绑定Canvas组件时，将返回错误码。
 
 **起始版本：** 23
 
@@ -177,19 +154,7 @@ off(type: 'onDetach', callback?: Callback<void>): void
 on(type: 'onAttach', callback: Callback<void>): void
 ```
 
-订阅CanvasRenderingContext2D与Canvas组件发生绑定的场景。
-
-> **说明：**
->
-> CanvasRenderingContext2D对象在同一时间只能与一个Canvas组件绑定。
-> 当CanvasRenderingContext2D对象和Canvas组件发生绑定时，会触发'onAttach'回调，
-> 表示可以获取到[canvas](#canvas13)。
-> 避免在'onAttach'中执行绘制方法，应保证Canvas组件已经
-> [onReady](../../../../reference/apis-arkui/arkui-ts/ts-components-canvas-canvas.md)
-> 再进行绘制。
-> 触发'onAttach'回调的一般场景：
-> 1、Canvas组件创建时绑定CanvasRenderingContext2D对象；
-> 2、CanvasRenderingContext2D对象新绑定一个Canvas组件时。
+订阅CanvasRenderingContext2D与Canvas组件发生绑定的场景。 > **说明：** > > CanvasRenderingContext2D对象在同一时间只能与一个Canvas组件绑定。 > 当CanvasRenderingContext2D对象和Canvas组件发生绑定时，会触发'onAttach'回调， > 表示可以获取到[canvas](#canvas13)。 > 避免在'onAttach'中执行绘制方法，应保证Canvas组件已经 > [onReady](../../../../reference/apis-arkui/arkui-ts/ts-components-canvas-canvas.md) > 再进行绘制。 > 触发'onAttach'回调的一般场景： > 1、Canvas组件创建时绑定CanvasRenderingContext2D对象； > 2、CanvasRenderingContext2D对象新绑定一个Canvas组件时。
 
 **起始版本：** 13
 
@@ -218,15 +183,7 @@ on(type: 'onAttach', callback: Callback<void>): void
 on(type: 'onDetach', callback: Callback<void>): void
 ```
 
-订阅CanvasRenderingContext2D与Canvas组件解除绑定的场景。
-
-> **说明：**
->
-> 当CanvasRenderingContext2D对象和Canvas组件解除绑定时，会触发'onDetach'回调，
-> 表示应停止绘制行为。
-> 触发'onDetach'回调的一般场景：
-> 1、Canvas组件销毁时解除绑定CanvasRenderingContext2D对象；
-> 2、CanvasRenderingContext2D对象新绑定一个Canvas组件，会先解除已有的绑定。
+订阅CanvasRenderingContext2D与Canvas组件解除绑定的场景。 > **说明：** > > 当CanvasRenderingContext2D对象和Canvas组件解除绑定时，会触发'onDetach'回调， > 表示应停止绘制行为。 > 触发'onDetach'回调的一般场景： > 1、Canvas组件销毁时解除绑定CanvasRenderingContext2D对象； > 2、CanvasRenderingContext2D对象新绑定一个Canvas组件，会先解除已有的绑定。
 
 **起始版本：** 13
 
@@ -255,18 +212,7 @@ on(type: 'onDetach', callback: Callback<void>): void
 startImageAnalyzer(config: ImageAnalyzerConfig): Promise<void>
 ```
 
-配置并启动AI分析功能，使用Promise异步回调。使用前需先设置
-[enableAnalyzer](../../../../reference/apis-arkui/arkui-ts/ts-components-canvas-canvas.md#enableanalyzer12)
-为true，启用图像AI分析能力。
-该方法调用时，将截取调用时刻的画面帧进行分析，使用时需注意启动分析的时机，
-避免出现画面和分析内容不一致的情况。
-未执行完重复调用该方法会触发错误回调。
-
-> **说明：**
->
-> 分析类型不支持动态修改。
-> 当检测到画面有变化时，分析结果将自动销毁，可重新调用本接口启动分析。
-> 该特性依赖设备能力，不支持该能力的情况下，将返回错误码。
+配置并启动AI分析功能，使用Promise异步回调。使用前需先设置 [enableAnalyzer](../../../../reference/apis-arkui/arkui-ts/ts-components-canvas-canvas.md#enableanalyzer12) 为true，启用图像AI分析能力。 该方法调用时，将截取调用时刻的画面帧进行分析，使用时需注意启动分析的时机， 避免出现画面和分析内容不一致的情况。 未执行完重复调用该方法会触发错误回调。 > **说明：** > > 分析类型不支持动态修改。 > 当检测到画面有变化时，分析结果将自动销毁，可重新调用本接口启动分析。 > 该特性依赖设备能力，不支持该能力的情况下，将返回错误码。
 
 **起始版本：** 12
 
@@ -302,12 +248,7 @@ startImageAnalyzer(config: ImageAnalyzerConfig): Promise<void>
 stopImageAnalyzer(): void
 ```
 
-停止AI分析功能，AI分析展示的内容将被销毁。
-
-> **说明：**
->
-> 在startImageAnalyzer方法未返回结果时调用本方法，会触发其错误回调。
-> 该特性依赖设备能力。
+停止AI分析功能，AI分析展示的内容将被销毁。 > **说明：** > > 在startImageAnalyzer方法未返回结果时调用本方法，会触发其错误回调。 > 该特性依赖设备能力。
 
 **起始版本：** 12
 
@@ -352,8 +293,7 @@ toDataURL(type?: string, quality?: any): string
 readonly canvas: FrameNode
 ```
 
-获取和CanvasRenderingContext2D关联的Canvas组件的FrameNode实例。可用于监听关联Canvas组件的可见状态。
-<br>默认值：null。
+获取和CanvasRenderingContext2D关联的Canvas组件的FrameNode实例。可用于监听关联Canvas组件的可见状态。 <br>默认值：null。
 
 **类型：** FrameNode
 
@@ -371,9 +311,7 @@ readonly canvas: FrameNode
 readonly height: number
 ```
 
-组件高度。
-
-默认单位为vp。
+组件高度。 默认单位为vp。
 
 **类型：** number
 
@@ -391,9 +329,7 @@ readonly height: number
 readonly width: number
 ```
 
-组件宽度。
-
-默认单位为vp。
+组件宽度。 默认单位为vp。
 
 **类型：** number
 

@@ -1,9 +1,6 @@
 # FormIntentDecoratorInfo
 
-Inherits from [IntentDecoratorInfo](arkts-ability-intentdecoratorinfo-i.md) and is used to describe the parameters supported by
-the
-[@InsightIntentForm](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentform)
-decorator.
+Inherits from [IntentDecoratorInfo](arkts-ability-intentdecoratorinfo-i.md) and is used to describe the parameters supported by the [@InsightIntentForm](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentform) decorator.
 
 **Inheritance/Implementation:** FormIntentDecoratorInfo extends [IntentDecoratorInfo](arkts-ability-intentdecoratorinfo-i.md)
 

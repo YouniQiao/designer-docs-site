@@ -1,7 +1,6 @@
 # HitTestValue
 
-提供点击区域的元素信息。示例代码参考
-[getLastHitTest](arkts-arkweb-webviewcontroller-c.md#getlasthittest-1).
+提供点击区域的元素信息。示例代码参考 [getLastHitTest](arkts-arkweb-webviewcontroller-c.md#getlasthittest-1).
 
 **起始版本：** 9
 

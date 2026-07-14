@@ -14,9 +14,7 @@
 finalKey: number
 ```
 
-最终按键，此项必填，最终按键触发上报回调函数。
-
-如组合按键Ctrl+Alt+A中，A称为最终按键。
+最终按键，此项必填，最终按键触发上报回调函数。 如组合按键Ctrl+Alt+A中，A称为最终按键。
 
 **类型：** number
 
@@ -32,12 +30,7 @@ finalKey: number
 finalKeyDownDuration: number
 ```
 
-最终按键保持按下持续时间，单位为微秒（μs）。
-
-当finalKeyDownDuration为0时，立即触发回调函数。
-
-当finalKeyDownDuration大于0时，isFinalKeyDown为true，则最终按键按下超过设置时长后触发回调函数；isFinalKeyDown为false，则最终按键按下到抬起时间小于设置时长时触发回调函
-数。
+最终按键保持按下持续时间，单位为微秒（μs）。 当finalKeyDownDuration为0时，立即触发回调函数。 当finalKeyDownDuration大于0时，isFinalKeyDown为true，则最终按键按下超过设置时长后触发回调函数；isFinalKeyDown为false，则最终按键按下到抬起时间小于设置时长时触发回调函 数。
 
 **类型：** number
 
@@ -53,9 +46,7 @@ finalKeyDownDuration: number
 isFinalKeyDown: boolean
 ```
 
-最终按键状态。
-
-true表示按键按下，false表示按键抬起。
+最终按键状态。 true表示按键按下，false表示按键抬起。
 
 **类型：** boolean
 
@@ -87,9 +78,7 @@ isRepeat?: boolean
 preKeys: Array<number>
 ```
 
-前置按键集合，数量范围[0, 4]，前置按键无顺序要求。
-
-如组合按键Ctrl+Alt+A中，Ctrl+Alt称为前置按键。
+前置按键集合，数量范围[0, 4]，前置按键无顺序要求。 如组合按键Ctrl+Alt+A中，Ctrl+Alt称为前置按键。
 
 **类型：** Array<number>
 
@@ -105,10 +94,7 @@ preKeys: Array<number>
 triggerType?: KeyCommandTriggerType
 ```
 
-触发模式。取值为PRESSED(1)、REPEAT_PRESSED(2)或ALL_RELEASED(3)。启用命令触发模式。一旦设置此值，isFinalKeyDown和isRepeat将被忽略。对于
-[inputConsumer.on('key')](arkts-input-on-f-sys.md#on-1)
-接口该参数是可选参数，对于
-[inputConsumer.onKey](arkts-input-onkey-f-sys.md#onkey-2)接口该参数是必填参数。
+触发模式。取值为PRESSED(1)、REPEAT_PRESSED(2)或ALL_RELEASED(3)。启用命令触发模式。一旦设置此值，isFinalKeyDown和isRepeat将被忽略。对于 [inputConsumer.on('key')](arkts-input-on-f-sys.md#on-1) 接口该参数是可选参数，对于 [inputConsumer.onKey](arkts-input-onkey-f-sys.md#onkey-2)接口该参数是必填参数。
 
 **类型：** KeyCommandTriggerType
 

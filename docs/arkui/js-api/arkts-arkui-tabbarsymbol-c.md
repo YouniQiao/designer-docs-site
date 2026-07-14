@@ -12,15 +12,7 @@ Represents a tab bar symbol style object.
 normal: SymbolGlyphModifier
 ```
 
-Symbol icon in the normal style.
-
-Default value:
-
-**fontColor**: **#66182431**
-
-**renderingStrategy**: **SymbolRenderingStrategy.MULTIPLE_OPACITY**
-
-**fontSize**: **24vp**
+Symbol icon in the normal style. Default value: **fontColor**: **#66182431** **renderingStrategy**: **SymbolRenderingStrategy.MULTIPLE_OPACITY** **fontSize**: **24vp**
 
 **Type:** SymbolGlyphModifier
 
@@ -38,15 +30,7 @@ Default value:
 selected?: SymbolGlyphModifier
 ```
 
-Symbol icon in the selected style.
-
-Default value:
-
-**fontColor**: **#ff007dff**
-
-**renderingStrategy**: **SymbolRenderingStrategy.MULTIPLE_OPACITY**
-
-**fontSize**: **24vp**
+Symbol icon in the selected style. Default value: **fontColor**: **#ff007dff** **renderingStrategy**: **SymbolRenderingStrategy.MULTIPLE_OPACITY** **fontSize**: **24vp**
 
 **Type:** SymbolGlyphModifier
 

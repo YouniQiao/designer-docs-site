@@ -1,12 +1,6 @@
 # BitVector
 
-A linear data structure that is implemented on arrays. A bit vector stores bit values and provides bit-level
-storage and processing.
-
-> **NOTE**
->
-> - This module can be imported only to ArkTS files (with the file name extension .ets).
-> **Decorator**: \@Sendable
+A linear data structure that is implemented on arrays. A bit vector stores bit values and provides bit-level storage and processing. > **NOTE** > > - This module can be imported only to ArkTS files (with the file name extension .ets). > **Decorator**: \@Sendable
 
 **Since:** 12
 
@@ -200,8 +194,7 @@ Obtains bit values within a given range of this bit vector.
 getIndexOf(element: number, fromIndex: number, toIndex: number): number
 ```
 
-Returns the index of the first occurrence of a bit value in this bit vector. If the bit value is not found,
-**-1** is returned.
+Returns the index of the first occurrence of a bit value in this bit vector. If the bit value is not found, **-1** is returned.
 
 **Since:** 12
 
@@ -237,8 +230,7 @@ Returns the index of the first occurrence of a bit value in this bit vector. If 
 getLastIndexOf(element: number, fromIndex: number, toIndex: number): number
 ```
 
-Returns the index of the last occurrence of a bit value in this bit vector. If the bit value is not found, **-1**
-is returned.
+Returns the index of the last occurrence of a bit value in this bit vector. If the bit value is not found, **-1** is returned.
 
 **Since:** 12
 
@@ -370,11 +362,7 @@ Adds an element at the end of this bit vector.
 resize(size: number): void
 ```
 
-Resizes this bit vector.
-If **size** is greater than the length of the existing bit vector, the bit vector is extended, and elements of
-the extra part are set to 0.
-If **size** is less than or equal to the length of the existing bit vector, the bit vector is shrunk according to
-the size.
+Resizes this bit vector. If **size** is greater than the length of the existing bit vector, the bit vector is extended, and elements of the extra part are set to 0. If **size** is less than or equal to the length of the existing bit vector, the bit vector is shrunk according to the size.
 
 **Since:** 12
 

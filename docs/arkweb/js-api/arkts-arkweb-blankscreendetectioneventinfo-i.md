@@ -12,9 +12,7 @@ Defines the event information when a blank screen is detected.
 blankScreenDetails?: BlankScreenDetails
 ```
 
-Details of the blank screen issue detected.
-For example, if a near-blank screen issue is detected, the details contain the number of points that match the
-blank screen issue. Otherwise, this attribute does not exist.
+Details of the blank screen issue detected. For example, if a near-blank screen issue is detected, the details contain the number of points that match the blank screen issue. Otherwise, this attribute does not exist.
 
 **Type:** BlankScreenDetails
 

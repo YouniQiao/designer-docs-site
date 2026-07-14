@@ -18,8 +18,7 @@ import { media } from '@kit.MediaKit';
 addAdsMediaSource(src: MediaSource, start: number): Promise<string>
 ```
 
-Add an advertisement film source to the advertisement controller,
-The insertion time (relative to the playback progress of the main media asset) can be specified.
+Add an advertisement film source to the advertisement controller, The insertion time (relative to the playback progress of the main media asset) can be specified.
 
 **Since:** 26.0.0
 

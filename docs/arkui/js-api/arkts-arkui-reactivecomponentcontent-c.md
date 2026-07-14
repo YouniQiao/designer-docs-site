@@ -1,12 +1,6 @@
 # ReactiveComponentContent
 
-ReactiveComponentContent is inherited from
-[Content](../../../../reference/apis-arkui/js-apis-arkui-Content.md#content-1) and is a container component used to
-dynamically bear and reuse UI content. It uses the @Builder function to build the UI and uses
-[ReactiveBuilderNode](arkts-arkui-reactivebuildernode-c.md) to generate and manage the component tree. The core
-value of this component is to provide complete lifecycle management for dynamic content so that it can be integrated
-into the ArkUI component reuse system. This component is especially suitable for scenarios that require high-
-performance rendering, such as long lists.
+ReactiveComponentContent is inherited from [Content](../../../../reference/apis-arkui/js-apis-arkui-Content.md#content-1) and is a container component used to dynamically bear and reuse UI content. It uses the @Builder function to build the UI and uses [ReactiveBuilderNode](arkts-arkui-reactivebuildernode-c.md) to generate and manage the component tree. The core value of this component is to provide complete lifecycle management for dynamic content so that it can be integrated into the ArkUI component reuse system. This component is especially suitable for scenarios that require high- performance rendering, such as long lists.
 
 **Inheritance/Implementation:** ReactiveComponentContent extends [Content](arkts-arkui-content-c.md)
 
@@ -45,17 +39,7 @@ Constructor of ReactiveComponentContent.
 dispose(): void
 ```
 
-Immediately releases the reference relationship between this **ReactiveComponentContent** object and its
-[entity node](../../../../ui/arkts-user-defined-node.md#basic-concepts). For details about the scenarios involving
-**ReactiveComponentContent** unbinding, see
-[Canceling the Reference to the Entity Node](../../../../ui/arkts-user-defined-arktsNode-builderNode.md#canceling-the-reference-to-the-entity-node).
-
-> **NOTE**
->
-> After calling **dispose**, the **ReactiveComponentContent** object cancels its reference to the backend entity
-> node. If the frontend object **ReactiveComponentContent** cannot be released, memory leaks may occur. To avoid
-> this, be sure to call **dispose** on the **ReactiveComponentContent** object when you no longer need it. This
-> reduces the complexity of reference relationships and lowers the risk of memory leaks.
+Immediately releases the reference relationship between this **ReactiveComponentContent** object and its [entity node](../../../../ui/arkts-user-defined-node.md#basic-concepts). For details about the scenarios involving **ReactiveComponentContent** unbinding, see [Canceling the Reference to the Entity Node](../../../../ui/arkts-user-defined-arktsNode-builderNode.md#canceling-the-reference-to-the-entity-node). > **NOTE** > > After calling **dispose**, the **ReactiveComponentContent** object cancels its reference to the backend entity > node. If the frontend object **ReactiveComponentContent** cannot be released, memory leaks may occur. To avoid > this, be sure to call **dispose** on the **ReactiveComponentContent** object when you no longer need it. This > reduces the complexity of reference relationships and lowers the risk of memory leaks.
 
 **Since:** 22
 
@@ -71,11 +55,7 @@ Immediately releases the reference relationship between this **ReactiveComponent
 flushState(): void
 ```
 
-Updates **ReactiveComponentContent**. If the bound parameters used in the **builder** function encapsulated by the
-[WrappedBuilder](../../../../ui/state-management/arkts-wrapBuilder.md) object in **ReactiveComponentContent** are
-class instances decorated by the V1 decorator (such as @Observed), you need to manually call this API to update
-data after the data of this class changes. If the bound parameters are class instances decorated by the V2
-decorator (such as @ObservedV2), the data can be automatically updated without manual calling.
+Updates **ReactiveComponentContent**. If the bound parameters used in the **builder** function encapsulated by the [WrappedBuilder](../../../../ui/state-management/arkts-wrapBuilder.md) object in **ReactiveComponentContent** are class instances decorated by the V1 decorator (such as @Observed), you need to manually call this API to update data after the data of this class changes. If the bound parameters are class instances decorated by the V2 decorator (such as @ObservedV2), the data can be automatically updated without manual calling.
 
 **Since:** 22
 
@@ -91,17 +71,7 @@ decorator (such as @ObservedV2), the data can be automatically updated without m
 inheritFreezeOptions(enabled: boolean): void
 ```
 
-Checks whether this **ReactiveComponentContent** object inherits the [freeze policy](../arkts-components/arkts-arkui-componentoptions-i.md) from
-its parent component's custom components. When inheritance is disabled (set to **false**), the
-**ReactiveComponentContent** object's freeze policy is set to **false**, which means its associated node remains
-unfrozen even in an inactive state.
-
-> **NOTE**
->
-> When **inheritFreezeOptions** is set to **true** for a **ReactiveComponentContent** object, and its parent
-> component is a custom component, **BuilderNode**, **ComponentContent**, **ReactiveBuilderNode**, or
-> **ReactiveComponentContent**, it will inherit the parent component's freeze policy. If the child component is a
-> custom component, its freeze policy is not transferred to the child component.
+Checks whether this **ReactiveComponentContent** object inherits the [freeze policy](../arkts-components/arkts-arkui-componentoptions-i.md) from its parent component's custom components. When inheritance is disabled (set to **false**), the **ReactiveComponentContent** object's freeze policy is set to **false**, which means its associated node remains unfrozen even in an inactive state. > **NOTE** > > When **inheritFreezeOptions** is set to **true** for a **ReactiveComponentContent** object, and its parent > component is a custom component, **BuilderNode**, **ComponentContent**, **ReactiveBuilderNode**, or > **ReactiveComponentContent**, it will inherit the parent component's freeze policy. If the child component is a > custom component, its freeze policy is not transferred to the child component.
 
 **Since:** 22
 
@@ -123,11 +93,7 @@ unfrozen even in an inactive state.
 isDisposed(): boolean
 ```
 
-Checks whether this **ReactiveComponentContent** object has released its reference to its backend entity node.
-Frontend nodes maintain references to corresponding backend entity nodes. After a node calls the **dispose** API to
-release this reference, subsequent API calls may cause crashes or return default values. This API facilitates
-validation of node validity prior to operations, thereby mitigating risks in scenarios where calls after disposal
-are required.
+Checks whether this **ReactiveComponentContent** object has released its reference to its backend entity node. Frontend nodes maintain references to corresponding backend entity nodes. After a node calls the **dispose** API to release this reference, subsequent API calls may cause crashes or return default values. This API facilitates validation of node validity prior to operations, thereby mitigating risks in scenarios where calls after disposal are required.
 
 **Since:** 22
 
@@ -149,8 +115,7 @@ are required.
 isTransferred(): boolean
 ```
 
-Returns a flag indicating whether the current ReactiveComponentContent was obtained through dynamic-static
-conversion, includes conversions in both directions: dynamic-to-static and static-to-dynamic.
+Returns a flag indicating whether the current ReactiveComponentContent was obtained through dynamic-static conversion, includes conversions in both directions: dynamic-to-static and static-to-dynamic.
 
 **Since:** 24
 
@@ -172,15 +137,7 @@ conversion, includes conversions in both directions: dynamic-to-static and stati
 recycle(): void
 ```
 
-Recycles the custom component in ReactiveComponentContent. Component recycling is part of the component reuse
-mechanism. For details, see
-[@Reusable Decorator: Reusing V1 Components](../../../../ui/state-management/arkts-reusable.md). Since API version 26
-.0.0, custom components in **ReactiveComponentContent** support V2 component reuse. For details, see
-[@ReusableV2 Decorator: Reusing Components](../../../../ui/state-management/arkts-new-reusableV2.md).
-
-**ReactiveComponentContent** completes the reuse event transfer between internal and external custom components
-through [reuse](arkts-arkui-componentcontent-c.md#reuse-1) and **recycle**. For specific usage scenarios, see
-[Implementing Node Reuse with the BuilderNode reuse and recycle APIs](../../../../ui/arkts-user-defined-arktsNode-builderNode.md#implementing-node-reuse-with-the-buildernode-reuse-and-recycle-apis).
+Recycles the custom component in ReactiveComponentContent. Component recycling is part of the component reuse mechanism. For details, see [@Reusable Decorator: Reusing V1 Components](../../../../ui/state-management/arkts-reusable.md). Since API version 26 .0.0, custom components in **ReactiveComponentContent** support V2 component reuse. For details, see [@ReusableV2 Decorator: Reusing Components](../../../../ui/state-management/arkts-new-reusableV2.md). **ReactiveComponentContent** completes the reuse event transfer between internal and external custom components through [reuse](arkts-arkui-componentcontent-c.md#reuse-1) and **recycle**. For specific usage scenarios, see [Implementing Node Reuse with the BuilderNode reuse and recycle APIs](../../../../ui/arkts-user-defined-arktsNode-builderNode.md#implementing-node-reuse-with-the-buildernode-reuse-and-recycle-apis).
 
 **Since:** 22
 
@@ -196,16 +153,7 @@ through [reuse](arkts-arkui-componentcontent-c.md#reuse-1) and **recycle**. For 
 reuse(param?: Object): void
 ```
 
-Triggers component reuse for custom components under this **ReactiveComponentContent**. For details about component
-reuse, see [@Reusable Decorator: Reusing V1 Components](../../../../ui/state-management/arkts-reusable.md). For
-details about the scenarios involving **ReactiveComponentContent** unbinding, see
-[Canceling the Reference to the Entity Node](../../../../ui/arkts-user-defined-arktsNode-builderNode.md#canceling-the-reference-to-the-entity-node).
-Since API version 26.0.0, custom components in **ReactiveComponentContent** support V2 component reuse. For
-details, see [@ReusableV2 Decorator: Reusing Components](../../../../ui/state-management/arkts-new-reusableV2.md).
-
-**ReactiveComponentContent** completes the reuse event transfer between internal and external custom components
-through **reuse** and [recycle](arkts-arkui-componentcontent-c.md#recycle-1). For specific usage scenarios, see
-[Implementing Node Reuse with the BuilderNode reuse and recycle APIs](../../../../ui/arkts-user-defined-arktsNode-builderNode.md#implementing-node-reuse-with-the-buildernode-reuse-and-recycle-apis).
+Triggers component reuse for custom components under this **ReactiveComponentContent**. For details about component reuse, see [@Reusable Decorator: Reusing V1 Components](../../../../ui/state-management/arkts-reusable.md). For details about the scenarios involving **ReactiveComponentContent** unbinding, see [Canceling the Reference to the Entity Node](../../../../ui/arkts-user-defined-arktsNode-builderNode.md#canceling-the-reference-to-the-entity-node). Since API version 26.0.0, custom components in **ReactiveComponentContent** support V2 component reuse. For details, see [@ReusableV2 Decorator: Reusing Components](../../../../ui/state-management/arkts-new-reusableV2.md). **ReactiveComponentContent** completes the reuse event transfer between internal and external custom components through **reuse** and [recycle](arkts-arkui-componentcontent-c.md#recycle-1). For specific usage scenarios, see [Implementing Node Reuse with the BuilderNode reuse and recycle APIs](../../../../ui/arkts-user-defined-arktsNode-builderNode.md#implementing-node-reuse-with-the-buildernode-reuse-and-recycle-apis).
 
 **Since:** 22
 
@@ -227,10 +175,7 @@ through **reuse** and [recycle](arkts-arkui-componentcontent-c.md#recycle-1). Fo
 updateConfiguration(): void
 ```
 
-Updates the configuration of the entire node by passing in a
-[system environment change](../../apis-ability-kit/arkts-apis/arkts-ability-configuration-i.md) event. This event can be used to
-notify the object of the update. Whether the system environment used by the object is updated depends on the
-current system environment change of the application.
+Updates the configuration of the entire node by passing in a [system environment change](../../apis-ability-kit/arkts-apis/arkts-ability-configuration-i.md) event. This event can be used to notify the object of the update. Whether the system environment used by the object is updated depends on the current system environment change of the application.
 
 **Since:** 22
 

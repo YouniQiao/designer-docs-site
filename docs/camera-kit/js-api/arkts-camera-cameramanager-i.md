@@ -1,7 +1,6 @@
 # CameraManager
 
-Implements camera management. Before calling any API in CameraManager, you must use
-[getCameraManager](arkts-camera-getcameramanager-f.md#getcameramanager-1) to obtain a CameraManager instance.
+Implements camera management. Before calling any API in CameraManager, you must use [getCameraManager](arkts-camera-getcameramanager-f.md#getcameramanager-1) to obtain a CameraManager instance.
 
 **Since:** 10
 
@@ -19,11 +18,7 @@ import { camera } from '@kit.CameraKit';
 createCameraInput(camera: CameraDevice): CameraInput
 ```
 
-Creates a **CameraInput** instance with the specified **CameraDevice** instance. This API returns the result
-synchronously.
-Before calling this API, call [getSupportedCameras](arkts-camera-cameramanager-i.md#getsupportedcameras-1) to obtain the
-list of supported camera devices, select the camera device that meets the requirements based on the actual usage
-scenario, and then create the **CameraInput** instance.
+Creates a **CameraInput** instance with the specified **CameraDevice** instance. This API returns the result synchronously. Before calling this API, call [getSupportedCameras](arkts-camera-cameramanager-i.md#getsupportedcameras-1) to obtain the list of supported camera devices, select the camera device that meets the requirements based on the actual usage scenario, and then create the **CameraInput** instance.
 
 **Since:** 10
 
@@ -59,10 +54,7 @@ scenario, and then create the **CameraInput** instance.
 createCameraInput(position: CameraPosition, type: CameraType): CameraInput
 ```
 
-Creates a **CameraInput** instance with the specified camera position and type. This API returns the result
-synchronously.
-Before calling this API, specify the camera position and type based on the usage scenario. For example, open the
-front camera for the selfie feature
+Creates a **CameraInput** instance with the specified camera position and type. This API returns the result synchronously. Before calling this API, specify the camera position and type based on the usage scenario. For example, open the front camera for the selfie feature
 
 **Since:** 10
 
@@ -160,11 +152,7 @@ Creates a **MetadataOutput** instance. This API returns the result synchronously
 createPhotoOutput(profile: Profile, surfaceId: string): PhotoOutput
 ```
 
-Creates a **PhotoOutput** instance. This API returns the result synchronously.
-
-> **NOTE**
->
-> - This API can only be used to create a **PhotoOutput** object in JPEG format.
+Creates a **PhotoOutput** instance. This API returns the result synchronously. > **NOTE** > > - This API can only be used to create a **PhotoOutput** object in JPEG format.
 
 **Since:** 10
 
@@ -266,8 +254,7 @@ Creates a **PreviewOutput** instance. This API returns the result synchronously.
 createPreviewOutput(surfaceId: string): PreviewOutput
 ```
 
-Creates a **PreviewOutput** instance without configuration. This API returns the result synchronously. It must be
-used with [preconfig](arkts-camera-photosession-i.md#preconfig-1).
+Creates a **PreviewOutput** instance without configuration. This API returns the result synchronously. It must be used with [preconfig](arkts-camera-photosession-i.md#preconfig-1).
 
 **Since:** 12
 
@@ -333,14 +320,7 @@ Creates a **Session** instance with a given scene mode. This API returns the res
 createVideoOutput(profile: VideoProfile, surfaceId: string): VideoOutput
 ```
 
-Creates a **VideoOutput** instance. This API returns the result synchronously.
-In video recording mode, if SDR or HDR VIVID is enabled, the camera format and color space must be configured
-according to the relationships specified in the table below. Configurations that do not match the table will
-cause issues such as preview exceptions.
-| SDR/HDR Photo Capture | CameraFormat | ColorSpace |
-|--------------------|--------------------------|------------------|
-| SDR | CAMERA_FORMAT_YUV_420_SP | BT709_LIMIT |
-| HDR_VIVID | CAMERA_FORMAT_YCRCB_P010<br>CAMERA_FORMAT_YCBCR_P010 | BT2020_HLG_LIMIT<br>BT2020_HLG_FULL |
+Creates a **VideoOutput** instance. This API returns the result synchronously. In video recording mode, if SDR or HDR VIVID is enabled, the camera format and color space must be configured according to the relationships specified in the table below. Configurations that do not match the table will cause issues such as preview exceptions. | SDR/HDR Photo Capture | CameraFormat | ColorSpace | |--------------------|--------------------------|------------------| | SDR | CAMERA_FORMAT_YUV_420_SP | BT709_LIMIT | | HDR_VIVID | CAMERA_FORMAT_YCRCB_P010<br>CAMERA_FORMAT_YCBCR_P010 | BT2020_HLG_LIMIT<br>BT2020_HLG_FULL |
 
 **Since:** 10
 
@@ -374,8 +354,7 @@ cause issues such as preview exceptions.
 createVideoOutput(surfaceId: string): VideoOutput
 ```
 
-Creates a **VideoOutput** instance without configuration. This API returns the result synchronously. It must be
-used with [preconfig](arkts-camera-videosession-i.md#preconfig-1).
+Creates a **VideoOutput** instance without configuration. This API returns the result synchronously. It must be used with [preconfig](arkts-camera-videosession-i.md#preconfig-1).
 
 **Since:** 12
 
@@ -408,8 +387,7 @@ used with [preconfig](arkts-camera-videosession-i.md#preconfig-1).
 getCameraConcurrentInfos(cameras: Array<CameraDevice>): Array<CameraConcurrentInfo>
 ```
 
-Obtains the concurrency information of the specified cameras. If the return value is an empty array, concurrency
-is not supported.
+Obtains the concurrency information of the specified cameras. If the return value is an empty array, concurrency is not supported.
 
 **Since:** 18
 
@@ -441,10 +419,7 @@ is not supported.
 getCameraDevice(position: CameraPosition, type: CameraType): CameraDevice
 ```
 
-Obtains the specified camera based on the camera position and type.
-Obtains the camera lens of the specified [CameraPosition](arkts-camera-cameraposition-e.md)
-and [CameraType](arkts-camera-cameratype-e.md). If the returned result is undefined, the
-camera lens is not found on the current device.
+Obtains the specified camera based on the camera position and type. Obtains the camera lens of the specified [CameraPosition](arkts-camera-cameraposition-e.md) and [CameraType](arkts-camera-cameratype-e.md). If the returned result is undefined, the camera lens is not found on the current device.
 
 **Since:** 18
 
@@ -477,8 +452,7 @@ camera lens is not found on the current device.
 getCameraDevices(position: CameraPosition, types: Array<CameraType>, connectType: ConnectionType): Array<CameraDevice>
 ```
 
-Obtains the list of cameras that meet the search criteria based on the camera position, camera types, and
-connection type.
+Obtains the list of cameras that meet the search criteria based on the camera position, camera types, and connection type.
 
 **Since:** 23
 
@@ -532,13 +506,7 @@ Obtains the supported camera devices. This API returns the result synchronously.
 getSupportedFullOutputCapability(camera: CameraDevice, mode: SceneMode): CameraOutputCapability
 ```
 
-Obtains the complete output capabilities supported by a specified camera in a specified mode, including YUV, HEIF
-, and HDR.
-
-> **NOTE**
->
-> Before using YUV, HEIF, or HDR, you need to explicitly call this method to ensure that the complete output
-> capabilities are obtained.
+Obtains the complete output capabilities supported by a specified camera in a specified mode, including YUV, HEIF , and HDR. > **NOTE** > > Before using YUV, HEIF, or HDR, you need to explicitly call this method to ensure that the complete output > capabilities are obtained.
 
 **Since:** 23
 
@@ -595,8 +563,7 @@ Obtains the output capability supported by a camera device. This API returns the
 getSupportedOutputCapability(camera: CameraDevice, mode: SceneMode): CameraOutputCapability
 ```
 
-Obtains the output capability supported by a camera device in a given scene mode. This API returns the result
-synchronously.
+Obtains the output capability supported by a camera device in a given scene mode. This API returns the result synchronously.
 
 **Since:** 11
 
@@ -798,11 +765,7 @@ Unsubscribes from flashlight status change events. This API uses an asynchronous
 on(type: 'cameraStatus', callback: AsyncCallback<CameraStatusInfo>): void
 ```
 
-Subscribes to camera status events. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
+Subscribes to camera status events. This API uses an asynchronous callback to return the result. > **NOTE** > > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
 
 **Since:** 10
 
@@ -823,12 +786,7 @@ Subscribes to camera status events. This API uses an asynchronous callback to re
 on(type: 'foldStatusChange', callback: AsyncCallback<FoldStatusInfo>): void
 ```
 
-Subscribes to fold status change events of the foldable device. This API uses an asynchronous callback to return
-the result.
-
-> **NOTE**
->
-> Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
+Subscribes to fold status change events of the foldable device. This API uses an asynchronous callback to return the result. > **NOTE** > > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
 
 **Since:** 12
 
@@ -849,11 +807,7 @@ the result.
 on(type: 'torchStatusChange', callback: AsyncCallback<TorchStatusInfo>): void
 ```
 
-Subscribes to flashlight status change events. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
+Subscribes to flashlight status change events. This API uses an asynchronous callback to return the result. > **NOTE** > > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
 
 **Since:** 11
 

@@ -1,14 +1,6 @@
 # SelectionExtensionContext (System API)
 
-**SelectionExtensionContext** is the context of
-[SelectionExtensionAbility](arkts-basicservices-selectionextensionability-c-sys.md), which is
-inherited from [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md).
-When a **SelectionExtensionAbility** component is instantiated, the system automatically creates the corresponding
-**SelectionExtensionContext**. You can use **SelectionExtensionContext** to start other abilities in the same
-application.
-
-> **NOTE**
-> - This module is supported only on PCs/2-in-1 devices.
+**SelectionExtensionContext** is the context of [SelectionExtensionAbility](arkts-basicservices-selectionextensionability-c-sys.md), which is inherited from [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md). When a **SelectionExtensionAbility** component is instantiated, the system automatically creates the corresponding **SelectionExtensionContext**. You can use **SelectionExtensionContext** to start other abilities in the same application. > **NOTE** > - This module is supported only on PCs/2-in-1 devices.
 
 **Inheritance/Implementation:** SelectionExtensionContext extends [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md)
 

@@ -22,9 +22,7 @@ import { picker } from '@kit.CoreFileKit';
 MIMEType?: PhotoViewMIMETypes
 ```
 
-Media file types to select. If this parameter is not specified, **IMAGE_VIDEO_TYPE** is used by default.
-
-**Note**: This API is supported since API version 9 and deprecated since API version 18.
+Media file types to select. If this parameter is not specified, **IMAGE_VIDEO_TYPE** is used by default. **Note**: This API is supported since API version 9 and deprecated since API version 18.
 
 **Type:** PhotoViewMIMETypes
 
@@ -44,8 +42,7 @@ Media file types to select. If this parameter is not specified, **IMAGE_VIDEO_TY
 maxSelectNumber?: number
 ```
 
-Maximum number of media files that can be selected. The default value is **50**,
-and the maximum value is **500**.
+Maximum number of media files that can be selected. The default value is **50**, and the maximum value is **500**.
 
 **Type:** number
 

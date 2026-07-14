@@ -12,11 +12,7 @@ import { applicationManager } from '@kit.MDMKit';
 function addDisallowedRunningBundles(admin: Want, appIds: Array<string>, callback: AsyncCallback<void>): void
 ```
 
-Adds the applications that are not allowed to run under the current user. This API uses an asynchronous callback to
-return the result. From API version 21, if the allowed application list
-[addallowedRunningBundles](arkts-mdm-addallowedrunningbundles-f.md#addallowedrunningbundles-1)
-is not empty, the prohibited application list cannot be added using this API. Otherwise, the error code 9200010 is
-reported.
+Adds the applications that are not allowed to run under the current user. This API uses an asynchronous callback to return the result. From API version 21, if the allowed application list [addallowedRunningBundles](arkts-mdm-addallowedrunningbundles-f.md#addallowedrunningbundles-1) is not empty, the prohibited application list cannot be added using this API. Otherwise, the error code 9200010 is reported.
 
 **Since:** 10
 
@@ -82,11 +78,7 @@ applicationManager.addDisallowedRunningBundles(wantTemp, appIds, (err) => {
 function addDisallowedRunningBundles(admin: Want, appIds: Array<string>, userId: number, callback: AsyncCallback<void>): void
 ```
 
-Adds the applications that are not allowed to run under a specified user (specified by **userId**). This API uses
-an asynchronous callback to return the result. From API version 21, if the allowed application list
-[addallowedRunningBundles](arkts-mdm-addallowedrunningbundles-f.md#addallowedrunningbundles-1)
-is not empty, the prohibited application list cannot be added using this API. Otherwise, the error code 9200010 is
-reported.
+Adds the applications that are not allowed to run under a specified user (specified by **userId**). This API uses an asynchronous callback to return the result. From API version 21, if the allowed application list [addallowedRunningBundles](arkts-mdm-addallowedrunningbundles-f.md#addallowedrunningbundles-1) is not empty, the prohibited application list cannot be added using this API. Otherwise, the error code 9200010 is reported.
 
 **Since:** 10
 
@@ -153,11 +145,7 @@ applicationManager.addDisallowedRunningBundles(wantTemp, appIds, 100, (err) => {
 function addDisallowedRunningBundles(admin: Want, appIds: Array<string>, userId?: number): Promise<void>
 ```
 
-Adds the applications that are not allowed to run by the current or specified user. This API uses a promise to
-return the result. From API version 21, if the allowed application list
-[addallowedRunningBundles](arkts-mdm-addallowedrunningbundles-f.md#addallowedrunningbundles-1)
-is not empty, the prohibited application list cannot be added using this API. Otherwise, the error code 9200010 is
-reported.
+Adds the applications that are not allowed to run by the current or specified user. This API uses a promise to return the result. From API version 21, if the allowed application list [addallowedRunningBundles](arkts-mdm-addallowedrunningbundles-f.md#addallowedrunningbundles-1) is not empty, the prohibited application list cannot be added using this API. Otherwise, the error code 9200010 is reported.
 
 **Since:** 10
 

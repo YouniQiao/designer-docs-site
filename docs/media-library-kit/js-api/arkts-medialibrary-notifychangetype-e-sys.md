@@ -1,6 +1,6 @@
 # NotifyChangeType
 
-Enumerates the types of media asset and album changes.
+Enumerates the types of changes that trigger the media asset or album change events.
 
 **Since:** 20
 
@@ -12,7 +12,7 @@ Enumerates the types of media asset and album changes.
 NOTIFY_CHANGE_YUV_READY = 3
 ```
 
-Data(YUV buffer of the photo asset) is ready.
+A high-quality image is ready in deferred photo delivery scenarios. Image quality metrics such as sharpness and color accuracy can be checked in the [OnDataPrepared](arkts-medialibrary-quickimagedatahandler-i.md#ondataprepared-1) callback.
 
 **Since:** 23
 
@@ -26,7 +26,7 @@ Data(YUV buffer of the photo asset) is ready.
 NOTIFY_CHANGE_ADD_ANALYSIS = 4
 ```
 
-Media assets added to analysis album.
+A media asset (image or video) is created in the smart analysis album.
 
 **Since:** 23
 
@@ -42,7 +42,7 @@ Media assets added to analysis album.
 NOTIFY_CHANGE_REMOVE_ANALYSIS = 5
 ```
 
-Media assets removed from analysis album.
+A media asset (image or video) is deleted from the smart analysis album.
 
 **Since:** 23
 

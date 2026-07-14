@@ -11,15 +11,7 @@ function bulkTransfer(
   ): Promise<number>
 ```
 
-批量传输。使用Promise异步回调。
-
-> **说明：**
->
-> 单次批量传输的传输数据总量（包括pipe、endpoint、buffer、timeout）请控制在200KB以下，数据总量过大会导致传输失败返回-1。
->
-> 在调用接口前需要通过
-> [usbManager.claimInterface](arkts-basicservices-claiminterface-f.md#claiminterface-1)
-> claim通信接口。
+批量传输。使用Promise异步回调。 > **说明：** > > 单次批量传输的传输数据总量（包括pipe、endpoint、buffer、timeout）请控制在200KB以下，数据总量过大会导致传输失败返回-1。 > > 在调用接口前需要通过 > [usbManager.claimInterface](arkts-basicservices-claiminterface-f.md#claiminterface-1) > claim通信接口。
 
 **起始版本：** 9
 
@@ -55,7 +47,7 @@ function bulkTransfer(
 // usbManager.getDevices 接口返回数据集合，取其中一个设备对象，并获取权限。
 // 把获取到的设备对象作为参数传入usbManager.connectDevice;当usbManager.connectDevice接口成功返回之后；
 // 才可以调用第三个接口usbManager.claimInterface.当usbManager.claimInterface 调用成功以后,再调用该接口。
-function bulkTransfer() {
+async function bulkTransfer() {
   let devicesList: Array<usbManager.USBDevice> = usbManager.getDevices();
   if (!devicesList || devicesList.length == 0) {
     console.info(`device list is empty`);
@@ -63,7 +55,7 @@ function bulkTransfer() {
   }
 
   let device: usbManager.USBDevice = devicesList?.[0];
-  usbManager.requestRight(device.name);
+  await usbManager.requestRight(device.name);
   if (!usbManager.hasRight(device.name)) {
     console.error(`request right fail`);
     return;
@@ -77,8 +69,11 @@ function bulkTransfer() {
       let buffer =  new Uint8Array(128);
       usbManager.bulkTransfer(devicepipe, endpoint, buffer).then((ret: number) => {
         console.info(`bulkTransfer = ${ret}`);
+        if (i === device.configs?.[0]?.interfaces.length - 1) {
+          usbManager.closePipe(devicepipe);
+        }
       }).catch((error: BusinessError) => {
-        console.error(`bulkTransfer failed : ${error}`);
+        console.error(`Failed to transfer. Code: ${error.code}, message: ${error.message}`);
       });
     }
   }

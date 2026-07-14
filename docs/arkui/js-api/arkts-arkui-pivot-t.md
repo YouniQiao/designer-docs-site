@@ -4,9 +4,7 @@
 export type Pivot = Vector2
 ```
 
-Sets the pivot of the component. As the rotation or scaling center of the component, the pivot affects the rotation
-and scaling effects. X and Y coordinates of the pivot is a floating point number in the range [0.0, 1.0], and the
-default value is **0.5**.
+Sets the pivot of the component. As the rotation or scaling center of the component, the pivot affects the rotation and scaling effects. X and Y coordinates of the pivot is a floating point number in the range [0.0, 1.0], and the default value is **0.5**.
 
 **Since:** 11
 

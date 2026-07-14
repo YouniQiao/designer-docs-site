@@ -12,11 +12,7 @@ import { dlpPermission } from '@kit.DataProtectionKit';
 function setRetentionState(docUris: Array<string>): Promise<void>
 ```
 
-Sets the retention state for sandbox applications. By default, when a DLP file is opened, the system
-automatically creates a sandbox environment. After the file is closed, the sandbox is automatically destroyed.
-After the retention state is set, the sandbox environment is retained even if the DLP file is closed, allowing
-the system to quickly reopen the same DLP file. This is applicable to scenarios where the same DLP file needs to
-be frequently operated, improving the file opening efficiency. This API uses a promise to return the result.
+Sets the retention state for sandbox applications. By default, when a DLP file is opened, the system automatically creates a sandbox environment. After the file is closed, the sandbox is automatically destroyed. After the retention state is set, the sandbox environment is retained even if the DLP file is closed, allowing the system to quickly reopen the same DLP file. This is applicable to scenarios where the same DLP file needs to be frequently operated, improving the file opening efficiency. This API uses a promise to return the result.
 
 **Since:** 10
 
@@ -26,7 +22,7 @@ be frequently operated, improving the file opening efficiency. This API uses a p
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| docUris | Array&lt;string&gt; | Yes | URIs of the files to be set with the retention state. The length of the arrayis not limited. Each string contains a maximum of 4095 bytes. If the string is out of range, error code19100001 is thrown. |
+| docUris | Array&lt;string&gt; | Yes | URIs of the files to be set with the retention state. The length of the arrayis not limited. Each string contains a maximum of 4095 bytes. If the string is out of range, error code401 is thrown. |
 
 **Return value:**
 
@@ -66,11 +62,7 @@ dlpPermission.isInSandbox().then(async (inSandbox) => {
 function setRetentionState(docUris: Array<string>, callback: AsyncCallback<void>): void
 ```
 
-Sets the retention state for sandbox applications. By default, when a DLP file is opened, the system
-automatically creates a sandbox environment. After the file is closed, the sandbox is automatically destroyed.
-After the retention state is set, the sandbox environment is retained even if the DLP file is closed, allowing
-the system to quickly reopen the same DLP file. This is applicable to scenarios where the same DLP file needs to
-be frequently operated, improving the file opening efficiency.
+Sets the retention state for sandbox applications. By default, when a DLP file is opened, the system automatically creates a sandbox environment. After the file is closed, the sandbox is automatically destroyed. After the retention state is set, the sandbox environment is retained even if the DLP file is closed, allowing the system to quickly reopen the same DLP file. This is applicable to scenarios where the same DLP file needs to be frequently operated, improving the file opening efficiency.
 
 **Since:** 10
 
@@ -80,7 +72,7 @@ be frequently operated, improving the file opening efficiency.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| docUris | Array&lt;string&gt; | Yes | URIs of the files to be set with the retention state. The length of the arrayis not limited. Each string contains a maximum of 4095 bytes. If the string is out of range, error code19100001 is thrown. |
+| docUris | Array&lt;string&gt; | Yes | URIs of the files to be set with the retention state. The length of the arrayis not limited. Each string contains a maximum of 4095 bytes. If the string is out of range, error code401 is thrown. |
 | callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**

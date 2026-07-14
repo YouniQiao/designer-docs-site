@@ -12,15 +12,7 @@ Describes the configuration options for child components to be preloaded.
 independent?: boolean
 ```
 
-Whether to calculate [cachedCount](SwiperAttribute#cachedCount(count: number, options: CachedCountOptions))
-by group.
-
-**true**: **cachedCount** is calculated based on the actual number of child components, not by group.
-
-**false**: If **displayCount.swipeByGroup=true**, **cachedCount** is calculated by group. Otherwise, it is
-calculated based on the actual number of child components.
-
-Default value: **false**.
+Whether to calculate [cachedCount](SwiperAttribute#cachedCount(count: number, options: CachedCountOptions)) by group. **true**: **cachedCount** is calculated based on the actual number of child components, not by group. **false**: If **displayCount.swipeByGroup=true**, **cachedCount** is calculated by group. Otherwise, it is calculated based on the actual number of child components. Default value: **false**.
 
 **Type:** boolean
 
@@ -42,13 +34,7 @@ Default value: **false**.
 isShown?: boolean
 ```
 
-Whether to draw nodes within the preloading range.
-
-**true**: yes.
-
-**false**: no.
-
-Default value: **false**.
+Whether to draw nodes within the preloading range. **true**: yes. **false**: no. Default value: **false**.
 
 **Type:** boolean
 

@@ -12,8 +12,7 @@ import { bluetoothManager } from '@kit.ConnectivityKit';
 function getConnectedBLEDevices(): Array<string>
 ```
 
-Obtains the list of devices in the connected status.
-On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
+Obtains the list of devices in the connected status. On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
 
 **Since:** 9
 

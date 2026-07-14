@@ -13,8 +13,7 @@ function getMainWindowSnapshot(windowId: Array<number>, config: WindowSnapshotCo
     Promise<Array<image.PixelMap | undefined>>
 ```
 
-Obtains the screenshots of one or more main windows specified by **windowId**. This API uses a promise to return
-the result.
+Obtains the screenshots of one or more main windows specified by **windowId**. This API uses a promise to return the result.
 
 **Since:** 21
 

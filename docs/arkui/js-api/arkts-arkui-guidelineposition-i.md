@@ -12,8 +12,7 @@ Defines the position of a guideline.
 end? : Dimension
 ```
 
-Distance between the guideline and the right or bottom of the container.
-Unit: vp.
+Distance between the guideline and the right or bottom of the container. Unit: vp.
 
 **Type:** Dimension
 
@@ -31,8 +30,7 @@ Unit: vp.
 start? : Dimension
 ```
 
-Distance between the guideline and the left or top of the container.
-Unit: vp.
+Distance between the guideline and the left or top of the container. Unit: vp.
 
 **Type:** Dimension
 

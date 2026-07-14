@@ -30,9 +30,7 @@ constraint: string
 isEnabled: boolean
 ```
 
-发生变更的约束的使能状态。默认：false。
-
-true表示目标约束已使能；false表示目标约束未使能。
+发生变更的约束的使能状态。默认：false。 true表示目标约束已使能；false表示目标约束未使能。
 
 **类型：** boolean
 

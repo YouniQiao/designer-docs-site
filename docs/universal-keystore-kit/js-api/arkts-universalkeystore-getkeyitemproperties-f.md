@@ -16,7 +16,7 @@ function getKeyItemProperties(
   ): void
 ```
 
-Obtains key properties. This API uses an asynchronous callback to return the result.
+Obtains key properties. This API uses an asynchronous callback to return the result. > **NOTE** > > Getting properties of SE security level keys defined in [HuksKeySecurityLevel](arkts-universalkeystore-hukskeysecuritylevel-e.md) > requires the ohos.permission.ACCESS_SE_KEY permission.
 
 **Since:** 9
 
@@ -38,6 +38,7 @@ Obtains key properties. This API uses an asynchronous callback to return the res
 
 | Error Code ID | Error Message |
 | --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | The application permissions are insufficient, possibly becausethe ohos.permission.ACCESS_SE_KEY permission is missing.<br>**Applicable version:** 26.0.0 and later |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified.2. Incorrect parameter types.3. Parameter verification failed. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | api is not supported |
 | [12000001](../errorcode-huks.md#12000001-feature-not-supported) | algorithm mode is not supported |
@@ -80,7 +81,7 @@ huks.getKeyItemProperties(keyAlias, emptyOptions, (error, data) => {
 function getKeyItemProperties(keyAlias: string, options: HuksOptions): Promise<HuksReturnResult>
 ```
 
-Obtains key properties. This API uses a promise to return the result.
+Obtains key properties. This API uses a promise to return the result. > **NOTE** > > Getting properties of SE security level keys defined in [HuksKeySecurityLevel](arkts-universalkeystore-hukskeysecuritylevel-e.md) > requires the ohos.permission.ACCESS_SE_KEY permission.
 
 **Since:** 9
 
@@ -105,6 +106,7 @@ Obtains key properties. This API uses a promise to return the result.
 
 | Error Code ID | Error Message |
 | --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | The application permissions are insufficient, possibly becausethe ohos.permission.ACCESS_SE_KEY permission is missing.<br>**Applicable version:** 26.0.0 and later |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified.2. Incorrect parameter types.3. Parameter verification failed. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | api is not supported |
 | [12000001](../errorcode-huks.md#12000001-feature-not-supported) | algorithm mode is not supported |

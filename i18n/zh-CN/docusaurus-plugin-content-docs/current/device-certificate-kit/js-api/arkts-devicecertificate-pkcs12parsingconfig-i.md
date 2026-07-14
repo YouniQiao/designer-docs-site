@@ -48,9 +48,7 @@ needsOtherCerts?: boolean
 needsPrivateKey?: boolean
 ```
 
-表示是否获取私钥。默认为true。
-
-true为获取，返回PKCS8编码的私钥数据；false为不获取。
+表示是否获取私钥。默认为true。 true为获取，返回PKCS8编码的私钥数据；false为不获取。
 
 **类型：** boolean
 
@@ -84,11 +82,7 @@ password: string
 privateKeyFormat?: EncodingBaseFormat
 ```
 
-表示获取私钥的格式，当前支持PEM和DER格式。参数缺省时，默认为PEM格式。
-
-> **说明：**
->
-> 当needsPrivateKey值为true时，该参数生效。
+表示获取私钥的格式，当前支持PEM和DER格式。参数缺省时，默认为PEM格式。 > **说明：** > > 当needsPrivateKey值为true时，该参数生效。
 
 **类型：** EncodingBaseFormat
 

@@ -1,7 +1,6 @@
 # InputEventInterceptResult
 
-Input event interception result interface, used by the listener callback
-[InputEventListener](arkts-arkui-inputeventlistener-t.md) to return the interception decision.
+Input event interception result interface, used by the listener callback [InputEventListener](arkts-arkui-inputeventlistener-t.md) to return the interception decision.
 
 **Since:** 26.0.0
 
@@ -13,11 +12,7 @@ Input event interception result interface, used by the listener callback
 action: InputEventInterceptAction
 ```
 
-Input event interception action.
-
-**CONTINUE**: The event is allowed to continue being passed to the UI framework.
-
-**BLOCK**: The event is blocked from being passed to the UI framework.
+Input event interception action. **CONTINUE**: The event is allowed to continue being passed to the UI framework. **BLOCK**: The event is blocked from being passed to the UI framework.
 
 **Type:** InputEventInterceptAction
 

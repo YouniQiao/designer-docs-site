@@ -6,9 +6,7 @@
 function debug(domain: number, tag: string, format: string, ...args: any[]): void
 ```
 
-打印DEBUG级别的日志。
-
-DEBUG级别的日志在正式发布版本中默认不被打印，只有在调试版本或打开调试开关的情况下才会打印。
+打印DEBUG级别的日志。 DEBUG级别的日志在正式发布版本中默认不被打印，只有在调试版本或打开调试开关的情况下才会打印。
 
 **起始版本：** 7
 

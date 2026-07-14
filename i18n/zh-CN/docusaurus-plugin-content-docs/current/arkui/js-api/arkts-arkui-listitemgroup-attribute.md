@@ -14,11 +14,7 @@
 childrenMainSize(value: ChildrenMainSize)
 ```
 
-设置ListItemGroup组件的子组件在主轴方向的大小信息。
-
-> **说明：**
->
-> - 必须同时给所在的List组件设置childrenMainSize属性才可以正常生效。
+设置ListItemGroup组件的子组件在主轴方向的大小信息。 > **说明：** > > - 必须同时给所在的List组件设置childrenMainSize属性才可以正常生效。
 
 **起始版本：** 12
 
@@ -42,11 +38,7 @@ divider(
   )
 ```
 
-设置ListItem分割线样式，默认无分割线。
-
-strokeWidth，startMargin和endMargin不支持设置百分比。
-
-ListItem设置[多态样式](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)时，被按压的子组件上下的分割线不绘制。
+设置ListItem分割线样式，默认无分割线。 strokeWidth，startMargin和endMargin不支持设置百分比。 ListItem设置[多态样式](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)时，被按压的子组件上下的分割线不绘制。
 
 **起始版本：** 9
 

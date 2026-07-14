@@ -12,8 +12,7 @@ import { notificationManager } from '@kit.NotificationKit';
 function isNotificationEnabled(bundle: BundleOption, callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether notification is enabled for the specified application. This API uses an asynchronous callback to
-return the result.
+Checks whether notification is enabled for the specified application. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -127,8 +126,7 @@ notificationManager.isNotificationEnabled(bundle).then((data: boolean) => {
 function isNotificationEnabled(callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether notification is enabled for the specified application. This API uses an asynchronous callback to
-return the result.
+Queries the notification authorization status of the current application. This API uses an asynchronous callback to return the result. This API is used to check whether the current application is allowed to send notifications before publishing, preventing publish failures when notification authorization is disabled.
 
 **Since:** 11
 
@@ -182,7 +180,7 @@ notificationManager.isNotificationEnabled(isNotificationEnabledCallback);
 function isNotificationEnabled(): Promise<boolean>
 ```
 
-Checks whether notification is enabled for the specified application. This API uses a promise to return the result.
+Queries the notification authorization status of the current application. This API uses a promise to return the result. This API is used to check whether the current application is allowed to send notifications before publishing, preventing publish failures when notification authorization is disabled.
 
 **Since:** 11
 
@@ -231,8 +229,7 @@ notificationManager.isNotificationEnabled().then((data: boolean) => {
 function isNotificationEnabled(userId: number, callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether notification is enabled for a specified user. This API uses an asynchronous callback to return the
-result.
+Checks whether notification is enabled for a specified user. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 

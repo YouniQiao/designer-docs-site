@@ -12,9 +12,7 @@
 height: number
 ```
 
-矩形的高度。
-
-单位：px。
+矩形的高度。 单位：px。
 
 **类型：** number
 
@@ -28,9 +26,7 @@ height: number
 width: number
 ```
 
-矩形的宽度。
-
-单位：px。
+矩形的宽度。 单位：px。
 
 **类型：** number
 
@@ -44,9 +40,7 @@ width: number
 x: number
 ```
 
-矩形区域左上角x坐标。
-
-单位：px。
+矩形区域左上角x坐标。 单位：px。
 
 **类型：** number
 
@@ -60,9 +54,7 @@ x: number
 y: number
 ```
 
-矩形区域左上角y坐标。
-
-单位：px。
+矩形区域左上角y坐标。 单位：px。
 
 **类型：** number
 

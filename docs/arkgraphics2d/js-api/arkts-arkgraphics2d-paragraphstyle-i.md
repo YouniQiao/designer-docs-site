@@ -18,8 +18,7 @@ import { text } from '@kit.ArkGraphics2D';
 align?: TextAlign
 ```
 
-Text alignment mode. The default value is **START**. This parameter is invalid when the **tab** parameter is
-configured.
+Text alignment mode. The default value is **START**. This parameter is invalid when the **tab** parameter is configured.
 
 **Type:** TextAlign
 
@@ -35,11 +34,7 @@ configured.
 autoSpace?: boolean
 ```
 
-Sets whether to enable automatic spacing during text typography. **true** indicates that the automatic spacing
-feature is enabled. In this case, automatic spacing applies between CJK (Chinese, Japanese, and Korean) and
-Western characters (Latin, Cyrillic, and Greek), between CJK and digits, between CJK and copyright symbols,
-between copyright symbols and digits, and between copyright symbols and Western characters. **false** (default)
-indicates that the automatic spacing feature is disabled.
+Sets whether to enable automatic spacing during text typography. **true** indicates that the automatic spacing feature is enabled. In this case, automatic spacing applies between CJK (Chinese, Japanese, and Korean) and Western characters (Latin, Cyrillic, and Greek), between CJK and digits, between CJK and copyright symbols, between copyright symbols and digits, and between copyright symbols and Western characters. **false** (default) indicates that the automatic spacing feature is disabled.
 
 **Type:** boolean
 
@@ -71,31 +66,7 @@ Text break strategy. The default value is **GREEDY**.
 compressHeadPunctuation?: boolean
 ```
 
-Sets whether to use punctuation compression at the beginning of a line in text layout. **true** means yes;
-**false** otherwise. The default value is **false**.
-
-**NOTE**
-
-1. The font file must support the ss08 feature in [FontFeature](arkts-arkgraphics2d-fontfeature-i.md).
-Otherwise, compression cannot be performed.
-2. Only the punctuations within the punctuation compression range at the beginning of a line
-are in the scope of this feature.
-
-Punctuation range at the beginning of a line.
-| Punctuation| Unicode Code Point| Unicode Name|
-|---------|---------|-------------|
-| 「| U+300C | LEFT CORNER BRACKET |
-| 『| U+300E | LEFT WHITE CORNER BRACKET |
-| " | U+201C | LEFT DOUBLE QUOTATION MARK |
-| ' | U+2018 | LEFT SINGLE QUOTATION MARK |
-| （| U+FF08 | FULLWIDTH LEFT PARENTHESIS |
-| 《| U+300A | LEFT DOUBLE ANGLE BRACKET |
-| 〈| U+3008 | LEFT ANGLE BRACKET |
-| 【| U+3010 | LEFT BLACK LENTICULAR BRACKET |
-| 〖| U+3016 | LEFT WHITE LENTICULAR BRACKET |
-| 〔| U+3014 | LEFT TORTOISE SHELL BRACKET |
-| ［| U+FF3B | FULLWIDTH LEFT SQUARE BRACKET |
-| ｛| U+FF5B | FULLWIDTH LEFT CURLY BRACKET |
+Sets whether to use punctuation compression at the beginning of a line in text layout. **true** means yes; **false** otherwise. The default value is **false**. **NOTE** 1. The font file must support the ss08 feature in [FontFeature](arkts-arkgraphics2d-fontfeature-i.md). Otherwise, compression cannot be performed. 2. Only the punctuations within the punctuation compression range at the beginning of a line are in the scope of this feature. Punctuation range at the beginning of a line. | Punctuation| Unicode Code Point| Unicode Name| |---------|---------|-------------| | 「| U+300C | LEFT CORNER BRACKET | | 『| U+300E | LEFT WHITE CORNER BRACKET | | " | U+201C | LEFT DOUBLE QUOTATION MARK | | ' | U+2018 | LEFT SINGLE QUOTATION MARK | | （| U+FF08 | FULLWIDTH LEFT PARENTHESIS | | 《| U+300A | LEFT DOUBLE ANGLE BRACKET | | 〈| U+3008 | LEFT ANGLE BRACKET | | 【| U+3010 | LEFT BLACK LENTICULAR BRACKET | | 〖| U+3016 | LEFT WHITE LENTICULAR BRACKET | | 〔| U+3014 | LEFT TORTOISE SHELL BRACKET | | ［| U+FF3B | FULLWIDTH LEFT SQUARE BRACKET | | ｛| U+FF5B | FULLWIDTH LEFT CURLY BRACKET |
 
 **Type:** boolean
 
@@ -111,9 +82,7 @@ Punctuation range at the beginning of a line.
 fallbackLineSpacing?: boolean
 ```
 
-Sets whether to enable line height rollback during text layout. If the set line height is less than the actual
-line height, the line height is rolled back to the actual line height. **true** means yes; **false** otherwise.
-The default value is **false**.
+Sets whether to enable line height rollback during text layout. If the set line height is less than the actual line height, the line height is rolled back to the actual line height. **true** means yes; **false** otherwise. The default value is **false**.
 
 **Type:** boolean
 
@@ -129,8 +98,7 @@ The default value is **false**.
 firstLineHeadIndent?: number
 ```
 
-Sets the first-line indent of a paragraph. The indent value must be greater than or equal to 0. The default value
-is **0**.
+Sets the first-line indent of a paragraph. The indent value must be greater than or equal to 0. The default value is **0**.
 
 **Type:** number
 
@@ -148,9 +116,7 @@ is **0**.
 headIndents?: Array<number>
 ```
 
-Sets the line-start indent array. Each element in the array represents the indent value of a single line. If the
-actual number of text lines exceeds the length of the indent array, the last value of the array is applied to the
-extra lines. All indent values must be greater than or equal to 0. By default, the array is empty.
+Sets the line-start indent array. Each element in the array represents the indent value of a single line. If the actual number of text lines exceeds the length of the indent array, the last value of the array is applied to the extra lines. All indent values must be greater than or equal to 0. By default, the array is empty.
 
 **Type:** Array<number>
 
@@ -168,8 +134,7 @@ extra lines. All indent values must be greater than or equal to 0. By default, t
 includeFontPadding?: boolean
 ```
 
-Sets whether to use padding at the beginning and end of a line in text layout. **true** means yes; **false**
-otherwise. The default value is **false**.
+Sets whether to use padding at the beginning and end of a line in text layout. **true** means yes; **false** otherwise. The default value is **false**.
 
 **Type:** boolean
 
@@ -185,10 +150,7 @@ otherwise. The default value is **false**.
 lineSpacing?: number
 ```
 
-Line spacing, in physical pixels (px). The default value is **0**. **lineSpacing** is not restricted by
-**lineHeightMaximum** and **lineHeightMinimum** in [TextStyle](arkts-arkgraphics2d-textstyle-i.md). By default, the line
-spacing is reserved for the last line. You can set [TextStyle](arkts-arkgraphics2d-textstyle-i.md).textHeightBehavior to
-**DISABLE_ALL** or **DISABLE_LAST_ASCENT** to disable the line spacing for the last line.
+Line spacing, in physical pixels (px). The default value is **0**. **lineSpacing** is not restricted by **lineHeightMaximum** and **lineHeightMinimum** in [TextStyle](arkts-arkgraphics2d-textstyle-i.md). By default, the line spacing is reserved for the last line. You can set [TextStyle](arkts-arkgraphics2d-textstyle-i.md).textHeightBehavior to **DISABLE_ALL** or **DISABLE_LAST_ASCENT** to disable the line spacing for the last line.
 
 **Type:** number
 
@@ -220,12 +182,7 @@ Maximum number of lines. The value is an integer. The default value is **1e9**.
 orphanCharOptimization?: boolean
 ```
 
-Sets whether to enable orphan optimization during text typesetting. Orphan optimization improves text layout by
-more efficiently handling orphan characters (the first character in the last line of a paragraph). When enabled,
-it adjusts line break positions to avoid orphan characters as much as possible. Orphan optimization takes effect
-only when [wordBreak](arkts-arkgraphics2d-wordbreak-e.md) is not BREAK_ALL and the [locale](arkts-arkgraphics2d-textstyle-i.md) of the first
-[TextStyle](arkts-arkgraphics2d-textstyle-i.md) of the text to be typeset is "zh-Hans" or "zh-Hant". **true** means that orphan
-optimization is enabled, and **false** means the opposite. The default value is **false**.
+Sets whether to enable orphan optimization during text typesetting. Orphan optimization improves text layout by more efficiently handling orphan characters (the first character in the last line of a paragraph). When enabled, it adjusts line break positions to avoid orphan characters as much as possible. Orphan optimization takes effect only when [wordBreak](arkts-arkgraphics2d-wordbreak-e.md) is not BREAK_ALL and the [locale](arkts-arkgraphics2d-textstyle-i.md) of the first [TextStyle](arkts-arkgraphics2d-textstyle-i.md) of the text to be typeset is "zh-Hans" or "zh-Hant". **true** means that orphan optimization is enabled, and **false** means the opposite. The default value is **false**.
 
 **Type:** boolean
 
@@ -277,9 +234,7 @@ Strut style. The default value is the initial **StrutStyle** object.
 tab?: TextTab
 ```
 
-Alignment mode and position of the text after the tab character in a paragraph. By default, the tab character is
-replaced with a space. This parameter is invalid when it is used together with the **align** parameter or the
-**ellipsis** parameter in [TextStyle](arkts-arkgraphics2d-textstyle-i.md).
+Alignment mode and position of the text after the tab character in a paragraph. By default, the tab character is replaced with a space. This parameter is invalid when it is used together with the **align** parameter or the **ellipsis** parameter in [TextStyle](arkts-arkgraphics2d-textstyle-i.md).
 
 **Type:** TextTab
 
@@ -295,9 +250,7 @@ replaced with a space. This parameter is invalid when it is used together with t
 tailIndents?: Array<number>
 ```
 
-Sets the end-of-line indent array. Each element in the array represents the indent value of a single line. If the
-actual number of text lines exceeds the length of the indent array, the last value of the array is applied to the
-extra lines. All indent values must be greater than or equal to 0. By default, the array is empty.
+Sets the end-of-line indent array. Each element in the array represents the indent value of a single line. If the actual number of text lines exceeds the length of the indent array, the last value of the array is applied to the extra lines. All indent values must be greater than or equal to 0. By default, the array is empty.
 
 **Type:** Array<number>
 
@@ -363,9 +316,7 @@ Text style applied to the paragraph. The default value is the initial text style
 trailingSpaceOptimized?: boolean
 ```
 
-Whether to consider the alignment impact of trailing spaces during text layout. The value **true** indicates that
-the alignment impact of trailing spaces is ignored, and the value **false** indicates that the alignment impact
-of trailing spaces is considered. The default value is **false**.
+Whether to consider the alignment impact of trailing spaces during text layout. The value **true** indicates that the alignment impact of trailing spaces is ignored, and the value **false** indicates that the alignment impact of trailing spaces is considered. The default value is **false**.
 
 **Type:** boolean
 
@@ -381,11 +332,7 @@ of trailing spaces is considered. The default value is **false**.
 verticalAlign?: TextVerticalAlign
 ```
 
-Vertical alignment of text. This parameter takes effect when line height scaling (that is, **heightScale** of
-[TextStyle](arkts-arkgraphics2d-textstyle-i.md)) is enabled or different font sizes (that is, **fontSize** of
-[TextStyle](arkts-arkgraphics2d-textstyle-i.md)) are set for text in a line. If superscript and subscript text (that is,
-**badgeType** of [TextStyle](arkts-arkgraphics2d-textstyle-i.md)) is set in a line, the superscript and subscript text will
-participate in vertical alignment as common text.
+Vertical alignment of text. This parameter takes effect when line height scaling (that is, **heightScale** of [TextStyle](arkts-arkgraphics2d-textstyle-i.md)) is enabled or different font sizes (that is, **fontSize** of [TextStyle](arkts-arkgraphics2d-textstyle-i.md)) are set for text in a line. If superscript and subscript text (that is, **badgeType** of [TextStyle](arkts-arkgraphics2d-textstyle-i.md)) is set in a line, the superscript and subscript text will participate in vertical alignment as common text.
 
 **Type:** TextVerticalAlign
 

@@ -12,5 +12,5 @@ import { ExtensionAbility } from '@kit.AbilityKit';
 
 | Name | Description |
 | --- | --- |
-| [ExtensionAbility](arkts-ability-extensionability-c.md) | ExtensionAbility is the base class for scenario-specific ExtensionAbilities. It inherits from[Ability](arkts-ability-ability-c.md), with no property or method added. You cannot directly inheritfrom ExtensionAbility. For details about the inheritance relationship of each ability, see[Inheritance Relationship](../../../../reference/apis-ability-kit/js-apis-app-ability-ability.md#ability-inheritance-relationship). |
+| [ExtensionAbility](arkts-ability-extensionability-c.md) | ExtensionAbility is the base class for scenario-specific ExtensionAbilities. It inherits from [Ability](arkts-ability-ability-c.md), with no property or method added. You cannot directly inherit from ExtensionAbility. For details about the inheritance relationship of each ability, see [Inheritance Relationship](../../../../reference/apis-ability-kit/js-apis-app-ability-ability.md#ability-inheritance-relationship) . |
 

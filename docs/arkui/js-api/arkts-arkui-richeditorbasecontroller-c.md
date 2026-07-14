@@ -30,10 +30,7 @@ Closes the custom or default context menu on selection.
 deleteBackward(): void
 ```
 
-The capability of deleting characters is provided. If no content is selected, the character before the caret is
-deleted. If some content is selected, the selected content is deleted.
-
-This API cannot be used in the pre-screen display scenario.
+The capability of deleting characters is provided. If no content is selected, the character before the caret is deleted. If some content is selected, the selected content is deleted. This API cannot be used in the pre-screen display scenario.
 
 **Since:** 23
 
@@ -49,9 +46,7 @@ This API cannot be used in the pre-screen display scenario.
 getCaretOffset(): number
 ```
 
-Obtains the current caret position.
-
-If the caret position cannot be obtained (for example, the controller is not bound to a component), -1 is returned.
+Obtains the current caret position. If the caret position cannot be obtained (for example, the controller is not bound to a component), -1 is returned.
 
 **Since:** 10
 
@@ -73,8 +68,7 @@ If the caret position cannot be obtained (for example, the controller is not bou
 getCaretRect(): RectResult | undefined
 ```
 
-Obtains the relative position of the caret in the **RichEditor** component. If the caret is not blinking, the API
-returns **undefined**.
+Obtains the relative position of the caret in the **RichEditor** component. If the caret is not blinking, the API returns **undefined**.
 
 **Since:** 18
 
@@ -232,24 +226,7 @@ Sets the cursor offset.
 setSelection(selectionStart: number, selectionEnd: number, options?: SelectionOptions): void
 ```
 
-Sets the range of content selection. The selected content is highlighted.
-
-If both selectionStart and selectionEnd are set to -1, all the content is selected. If both selectionStart and
-selectionEnd are set to 0, the selected content can be cleared.
-
-If this API is called when the text box is not focused, the selected effect is not displayed.
-
-Since API version 12, on 2-in-1 devices, regardless of the value of **options**, calling the **setSelection** API
-will not display the menu. In addition, if there is already a menu present within the component, calling the
-**setSelection** API will close the menu.
-
-On non-2-in-1 devices, when **options** is set to **MenuPolicy.DEFAULT**, the following rules apply:
-
-1. If the component has a selection handle menu, calling the API will not close the menu,
-and the menu position will be adjusted.
-2. If the component has a menu without a selection handle, calling the API will not close the menu,
-and the menu position will remain unchanged.
-3. If there is no menu within the component, calling the API will not display the menu.
+Sets the range of content selection. The selected content is highlighted. If both selectionStart and selectionEnd are set to -1, all the content is selected. If both selectionStart and selectionEnd are set to 0, the selected content can be cleared. If this API is called when the text box is not focused, the selected effect is not displayed. Since API version 12, on 2-in-1 devices, regardless of the value of **options**, calling the **setSelection** API will not display the menu. In addition, if there is already a menu present within the component, calling the **setSelection** API will close the menu. On non-2-in-1 devices, when **options** is set to **MenuPolicy.DEFAULT**, the following rules apply: 1. If the component has a selection handle menu, calling the API will not close the menu, and the menu position will be adjusted. 2. If the component has a menu without a selection handle, calling the API will not close the menu, and the menu position will remain unchanged. 3. If there is no menu within the component, calling the API will not display the menu.
 
 **Since:** 11
 
@@ -295,8 +272,7 @@ Set the styledString placeholder.
 setTypingParagraphStyle(style: RichEditorParagraphStyle): void
 ```
 
-Sets the preset paragraph style. The input text takes effect only when the component content is empty or a line
-break is added at the end of the component.
+Sets the preset paragraph style. The input text takes effect only when the component content is empty or a line break is added at the end of the component.
 
 **Since:** 20
 

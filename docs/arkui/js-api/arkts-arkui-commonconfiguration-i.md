@@ -30,9 +30,7 @@ Content modifier that sends the component information required by users to the c
 enabled: boolean
 ```
 
-Whether to enable the content modifier and respond to operations such as **triggerChange**. The value **true**
-means to enable the content modifier and respond to operations such as **triggerChange**, and **false** means the
-opposite.
+Whether to enable the content modifier and respond to operations such as **triggerChange**. The value **true** means to enable the content modifier and respond to operations such as **triggerChange**, and **false** means the opposite.
 
 **Type:** boolean
 

@@ -44,9 +44,7 @@ Authorization fails.
 CANCELED_BY_USER = 2
 ```
 
-Authorization is canceled by the user through a dialog box after the **SaveButton** component is clicked. This
-value is returned in the callback result only when [userCancelEvent](SaveButtonAttribute#userCancelEvent) is
-triggered with its parameter set to **true**.
+Authorization is canceled by the user through a dialog box after the **SaveButton** component is clicked. This value is returned in the callback result only when [userCancelEvent](SaveButtonAttribute#userCancelEvent) is triggered with its parameter set to **true**.
 
 **Since:** 21
 

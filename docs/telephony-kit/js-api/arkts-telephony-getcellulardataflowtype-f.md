@@ -12,9 +12,7 @@ import { data } from '@kit.TelephonyKit';
 function getCellularDataFlowType(callback: AsyncCallback<DataFlowType>): void
 ```
 
-Indicates that there is no uplink or downlink data.
-
-<p>It is a return value of service state query of cellular data services.
+Indicates that there is no uplink or downlink data. <p>It is a return value of service state query of cellular data services.
 
 **Since:** 22
 
@@ -57,9 +55,7 @@ data.getCellularDataFlowType((err: BusinessError, contextData: data.DataFlowType
 function getCellularDataFlowType(): Promise<DataFlowType>
 ```
 
-Indicates that there is no uplink or downlink data.
-
-<p>It is a return value of service state query of cellular data services.
+Indicates that there is no uplink or downlink data. <p>It is a return value of service state query of cellular data services.
 
 **Since:** 22
 

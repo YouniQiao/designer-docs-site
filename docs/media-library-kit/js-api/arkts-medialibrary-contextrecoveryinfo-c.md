@@ -1,7 +1,6 @@
 # ContextRecoveryInfo
 
-Context information of the exit status of PhotoPicker,
-which can be used for on-site recovery of PhotoPicker next time.
+Describes the information about the context of exiting the PhotoPicker. It can be used during the subsequent launch of the PhotoPicker to restore the state from the previous exit.
 
 **Since:** 21
 
@@ -19,8 +18,7 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 albumUri: string
 ```
 
-The album URI from which the user exited during the last selection.
-The default value is empty string.
+URI of the album in the media library when the user selects an image and exits. - If the user selects from all images, **albumUri** is a fixed **"allPhotos"** string. - If the user exits after selecting from search results, text recommendations, or avatar recommendations, the next restoration is not supported, and the returned **albumUri** is an empty string. The default value is an empty string.
 
 **Type:** string
 
@@ -36,8 +34,7 @@ The default value is empty string.
 displayName: string
 ```
 
-Filename of the first fully visible photo in the last selection interface.
-The default value is empty string.
+File name of the top-left image in the grid interface when the user last selected an image. The default value is an empty string.
 
 **Type:** string
 
@@ -53,9 +50,7 @@ The default value is empty string.
 fileSize?: number
 ```
 
-size of the first fully visible photo in the last selection interface.
-the default value is 0.
-Unit: Byte, The value must be an integer greater than or equal to 0.
+File size of the top-left image in the grid interface when the user last selected an image. The default value is **0**. Unit: Byte, The value must be an integer greater than or equal to 0.
 
 **Type:** number
 
@@ -73,8 +68,7 @@ Unit: Byte, The value must be an integer greater than or equal to 0.
 gridLevel?: GridLevel
 ```
 
-Enum value of the grid level by the user during the last selection.
-This information is only included when gridPinchModeType is configured as FULL_FUNCTION_GRID.
+Level of the grid when the user exits last time.
 
 **Type:** GridLevel
 
@@ -92,8 +86,7 @@ This information is only included when gridPinchModeType is configured as FULL_F
 recommendationType: number
 ```
 
-Enum value of the recommendation content set by the user during the last selection (see `RecommendationType`).
-The default value is 0.
+Enumerated value of the recommended content set by the user during the last selection. For details, see [RecommendationType](arkts-medialibrary-recommendationtype-e.md). If no recommendation was set during the last selection, the default value is **0**.
 
 **Type:** number
 
@@ -109,8 +102,7 @@ The default value is 0.
 selectedRecommendationType: number
 ```
 
-Enum value of the recommendation content selected by the user during the last selection (see `RecommendationType`).
-The default value is 0.
+Enumerated value of the recommended content selected by the user during the last selection. For details, see [RecommendationType](arkts-medialibrary-recommendationtype-e.md). If no recommendation was selected during the last selection or **All** was selected, the default value is **0**.
 
 **Type:** number
 
@@ -126,8 +118,7 @@ The default value is 0.
 sortRule?: string
 ```
 
-the sort rule by the user during the last selection.
-The default value is empty string.
+Sorting rule of the grid interface when the user last selected an image. The default value is an empty string.
 
 **Type:** string
 
@@ -145,9 +136,7 @@ The default value is empty string.
 time: number
 ```
 
-Timestamp of the first fully visible photo in the last selection interface.
-The default value is 0.
-Unit: ms, The value must be greater than or equal to 0.
+Time of the top-left image in the grid interface when the user last selected an image. - For albums sorted by capture time, the capture time is returned. - For albums sorted by save time, the save time is returned. The default value is **0**. Unit: ms, The value must be greater than or equal to 0.
 
 **Type:** number
 
@@ -163,7 +152,7 @@ Unit: ms, The value must be greater than or equal to 0.
 version: number
 ```
 
-Context data version number for validating compatibility of context recovery.
+Version number of the state data, used to verify the compatibility of the state information data with the state recovery capability. The version number must be greater than or equal to 1.0.
 
 **Type:** number
 

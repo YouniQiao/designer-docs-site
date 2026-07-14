@@ -12,8 +12,7 @@ import { connection } from '@kit.NetworkKit';
 function getNetExtAttribute(netHandle: NetHandle): Promise<string>
 ```
 
-Get the network extended attribute for a {@link NetHandle} object.
-To invoke this method, you must have the {@code ohos.permission.GET_NETWORK_INFO} permission.
+Get the network extended attribute for a {@link NetHandle} object. To invoke this method, you must have the {@code ohos.permission.GET_NETWORK_INFO} permission.
 
 **Since:** 20
 

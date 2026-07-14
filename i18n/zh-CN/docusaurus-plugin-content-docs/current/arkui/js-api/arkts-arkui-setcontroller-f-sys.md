@@ -6,9 +6,7 @@
 function setController(controller: WindowAnimationController): void
 ```
 
-设置窗口动画控制器。窗口动画控制器的说明请参考[WindowAnimationController](arkts-arkui-windowanimationcontroller-i-sys.md)。
-
-在使用windowAnimationManager的其他接口前，需要预先调用本接口设置窗口动画控制器。
+设置窗口动画控制器。窗口动画控制器的说明请参考[WindowAnimationController](arkts-arkui-windowanimationcontroller-i-sys.md)。 在使用windowAnimationManager的其他接口前，需要预先调用本接口设置窗口动画控制器。
 
 **起始版本：** 9
 

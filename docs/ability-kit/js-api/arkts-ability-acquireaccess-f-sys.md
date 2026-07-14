@@ -12,14 +12,7 @@ import { screenLockFileManager } from '@kit.AbilityKit';
 function acquireAccess(dataType: DataType): AccessStatus
 ```
 
-Requests the permission to access a specified type of sensitive data under the lock screen synchronously. After the
-request is successful, the reference count of the sensitive data key increases, preventing the key from being
-destroyed after the screen has been locked for the system-configured duration threshold. This method must be used
-in pair with [releaseAccess](arkts-ability-releaseaccess-f.md#releaseaccess-1).
-
-Before calling this API, ensure that the app has enabled the sensitive data protection under lock screen feature
-and that the key state queried through the [queryAppKeyState](arkts-ability-queryappkeystate-f.md#queryappkeystate-1) API is
-KEY_EXIST.
+Requests the permission to access a specified type of sensitive data under the lock screen synchronously. After the request is successful, the reference count of the sensitive data key increases, preventing the key from being destroyed after the screen has been locked for the system-configured duration threshold. This method must be used in pair with [releaseAccess](arkts-ability-releaseaccess-f.md#releaseaccess-1). Before calling this API, ensure that the app has enabled the sensitive data protection under lock screen feature and that the key state queried through the [queryAppKeyState](arkts-ability-queryappkeystate-f.md#queryappkeystate-1) API is KEY_EXIST.
 
 **Since:** 12
 

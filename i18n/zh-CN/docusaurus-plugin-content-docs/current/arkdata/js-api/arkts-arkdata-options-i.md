@@ -1,46 +1,62 @@
 # Options
 
-Preferences实例配置选项。
+UDMF提供的数据操作接口包含三个可选参数：intention、key和visibility。如果接口不需要这些参数，可以不填，具体要求请参阅该接口的参数说明。
 
-**起始版本：** 12
+**起始版本：** 10
 
-**系统能力：** SystemCapability.DistributedDataManager.Preferences.Core
+**系统能力：** SystemCapability.DistributedDataManager.UDMF.Core
 
-## dataGroupId
+## intention
 
 ```TypeScript
-dataGroupId?: string | null
+intention?: Intention
 ```
 
-应用组ID，<!--RP1-->暂不支持指定dataGroupId在对应共享沙箱路径下创建Preferences实例。<!--RP1End-->
+表示数据操作相关的数据通路类型，取值为[Intention](arkts-arkdata-intention-e.md)枚举类型，包括DATA_HUB、DRAG等。不填写时默认无值，具体是否必填请参阅具体接口的参数 说明。
 
-为可选参数。指定在此dataGroupId对应的沙箱路径下创建Preferences实例。当此参数不填时，默认在本应用沙箱目录下创建Preferences实例。
+**类型：** Intention
 
-**模型约束：** 此属性仅在Stage模型下可用。
-
-**类型：** string | null
-
-**起始版本：** 12
+**起始版本：** 10
 
 **模型约束：** 此接口仅可在Stage模型下使用。
 
-**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
+**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
 
-**系统能力：** SystemCapability.DistributedDataManager.Preferences.Core
+**系统能力：** SystemCapability.DistributedDataManager.UDMF.Core
 
-## name
+## key
 
 ```TypeScript
-name: string
+key?: string
 ```
 
-Preferences实例的名称。名称长度需大于零且小于等于255字节，名称中不能包含'/'且不能以'/'结尾。
+UDMF中数据对象的唯一标识符，可通过[insertData](arkts-arkdata-insertdata-f.md#insertdata-1)接口的返回值获取。不填写时默认无值，具体是否必填请参阅具体接口的参数说明。 由udmf:/、intention、bundleName和groupId四部分组成，以'/'连接，比如：udmf://DataHub/com.ohos.test/0123456789。 其中udmf:/固定，DataHub为对应枚举的取值，com.ohos.test为包名，0123456789为随机生成的groupId。
 
 **类型：** string
 
-**起始版本：** 12
+**起始版本：** 10
 
-**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
+**模型约束：** 此接口仅可在Stage模型下使用。
 
-**系统能力：** SystemCapability.DistributedDataManager.Preferences.Core
+**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+
+**系统能力：** SystemCapability.DistributedDataManager.UDMF.Core
+
+## visibility
+
+```TypeScript
+visibility?: Visibility
+```
+
+表示数据的可见性等级，仅公共数据通路可使用，取值为[Visibility](arkts-arkdata-visibility-e.md)枚举类型。只在写入数据的时候填写才生效，若不填写默认是 Visibility.ALL。
+
+**类型：** Visibility
+
+**起始版本：** 20
+
+**模型约束：** 此接口仅可在Stage模型下使用。
+
+**元服务API：** 从API版本20开始，该接口支持在元服务API中使用。
+
+**系统能力：** SystemCapability.DistributedDataManager.UDMF.Core
 

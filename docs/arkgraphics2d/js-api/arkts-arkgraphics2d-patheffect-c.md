@@ -1,15 +1,6 @@
 # PathEffect
 
-Implements a path effect.
-
-> **NOTE**
->
-> - The initial APIs of this class are supported since API version 12.
->
-> - This module uses the physical pixel unit, px.
->
-> - The module operates under a single-threaded model. The caller needs to manage thread safety and context state
-> transitions.
+Implements a path effect. > **NOTE** > > - The initial APIs of this class are supported since API version 12. > > - This module uses the physical pixel unit, px. > > - The module operates under a single-threaded model. The caller needs to manage thread safety and context state > transitions.
 
 **Since:** 12
 
@@ -52,8 +43,7 @@ Creates a path effect by sequentially applying the inner effect and then the out
 static createCornerPathEffect(radius: number): PathEffect
 ```
 
-Creates a path effect that transforms the sharp angle between line segments into a rounded corner with the
-specified radius.
+Creates a path effect that transforms the sharp angle between line segments into a rounded corner with the specified radius.
 
 **Since:** 12
 
@@ -173,8 +163,7 @@ Creates a dashed path effect based on the shape described by a path.
 static createSumPathEffect(firstPathEffect: PathEffect, secondPathEffect: PathEffect): PathEffect
 ```
 
-Creates an overlay path effect based on two distinct path effects. Different from **createComposePathEffect**,
-this API applies each effect separately and then displays them as a simple overlay.
+Creates an overlay path effect based on two distinct path effects. Different from **createComposePathEffect**, this API applies each effect separately and then displays them as a simple overlay.
 
 **Since:** 18
 

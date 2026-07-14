@@ -6,7 +6,7 @@
 function deleteKeyItem(keyAlias: string, options: HuksOptions, callback: AsyncCallback<void>): void
 ```
 
-删除密钥。使用callback异步回调。
+删除密钥。使用callback异步回调。 > **说明：** > 删除[HuksKeySecurityLevel](arkts-universalkeystore-hukskeysecuritylevel-e.md)中定义的SE安全级别密钥需要ohos.permission.ACCESS_SE_KEY权限。
 
 **起始版本：** 9
 
@@ -26,6 +26,7 @@ function deleteKeyItem(keyAlias: string, options: HuksOptions, callback: AsyncCa
 
 | 错误码ID | 错误信息 |
 | --- | --- |
+| [201](../../errorcode-universal.md#201-权限校验失败) | The application permissions are insufficient, possibly becausethe ohos.permission.ACCESS_SE_KEY permission is missing.<br>**适用版本：** 26.0.0+ |
 | [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified.2. Incorrect parameter types.3. Parameter verification failed. |
 | [801](../../errorcode-universal.md#801-该设备不支持此api) | api is not supported |
 | [12000004](../errorcode-huks.md#12000004-文件错误) | operating file failed |
@@ -141,7 +142,7 @@ export default {
 function deleteKeyItem(keyAlias: string, options: HuksOptions): Promise<void>
 ```
 
-删除密钥。使用Promise异步回调。
+删除密钥。使用Promise异步回调。 > **说明：** > > 删除[HuksKeySecurityLevel](arkts-universalkeystore-hukskeysecuritylevel-e.md)中定义的SE安全级别密钥需要ohos.permission.ACCESS_SE_KEY权限。
 
 **起始版本：** 9
 
@@ -166,6 +167,7 @@ function deleteKeyItem(keyAlias: string, options: HuksOptions): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
+| [201](../../errorcode-universal.md#201-权限校验失败) | The application permissions are insufficient, possibly becausethe ohos.permission.ACCESS_SE_KEY permission is missing.<br>**适用版本：** 26.0.0+ |
 | [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified.2. Incorrect parameter types.3. Parameter verification failed. |
 | [801](../../errorcode-universal.md#801-该设备不支持此api) | api is not supported |
 | [12000004](../errorcode-huks.md#12000004-文件错误) | operating file failed |

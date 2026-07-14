@@ -7,8 +7,7 @@ type Action = 'accessibilityFocus' | 'clearAccessibilityFocus' | 'focus' | 'clea
   'back' | 'recentTask' | 'notificationCenter' | 'controlCenter' | 'common' | 'injectAction' | 'executeCustomAction'
 ```
 
-Target actions supported by the application. The target actions for which parameters need to be set have been
-specified in the description of the following table.
+Target actions supported by the application. The target actions for which parameters need to be set have been specified in the description of the following table.
 
 **Since:** 7
 

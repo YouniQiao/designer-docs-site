@@ -1,10 +1,6 @@
 # @ohos.deviceStatus.dragInteraction
 
-The **dragInteraction** module provides the APIs to enable and disable listening for dragging status changes.
-
-> **NOTE**
->
-> - The APIs provided by this module are system APIs.
+The **dragInteraction** module provides the APIs to enable and disable listening for dragging status changes. > **NOTE** > > - The APIs provided by this module are system APIs.
 
 **Since:** 10
 

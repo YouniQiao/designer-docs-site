@@ -1,13 +1,6 @@
 # SideBarContainer
 
-The **SideBarContainer** component contains a sidebar and content area as its child components. The sidebar is the
-first child component and can be shown or hidden as needed. The content area is the second child component.
-
-> **NOTE**
-
-> The APIs of this module are supported since API version 8. Updates will be marked with a superscript to indicate
-> their
-
+The **SideBarContainer** component contains a sidebar and content area as its child components. The sidebar is the first child component and can be shown or hidden as needed. The content area is the second child component. > **NOTE** > The APIs of this module are supported since API version 8. Updates will be marked with a superscript to indicate > their
 
 ## SideBarContainer
 

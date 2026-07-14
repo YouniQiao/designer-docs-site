@@ -12,12 +12,7 @@ import { deviceStatus } from '@kit.MultimodalAwarenessKit';
 function getDeviceRotationRadian(): Promise<DeviceRotationRadian>
 ```
 
-Obtains the device posture data.
-
-The posture data contains the rotation angles of the x, y, and z axes, that is, the Euler angles of the three axes.
-The definitions of the three axes are the same as those of the device sensor, and the right-handed coordinate
-system is used. Posture rotation angles are calculated under the z-x-y intrinsic rotation order, and derived by
-converting quaternions obtained via sensor fusion.
+Obtains the device posture data. The posture data contains the rotation angles of the x, y, and z axes, that is, the Euler angles of the three axes. The definitions of the three axes are the same as those of the device sensor, and the right-handed coordinate system is used. Posture rotation angles are calculated under the z-x-y intrinsic rotation order, and derived by converting quaternions obtained via sensor fusion.
 
 **Since:** 20
 

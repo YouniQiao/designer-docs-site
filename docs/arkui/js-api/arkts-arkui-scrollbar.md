@@ -1,21 +1,6 @@
 # ScrollBar
 
-The **ScrollBar** component is designed to be used together with scrollable components such as
-[ArcList]{@link @ohos.arkui.ArcList}, [List]{@link list}, [Grid]{@link grid}, [Scroll]{@link scroll}, and
-[WaterFlow]{@link water_flow}.
-
-> **NOTE**
->
-> - This component is supported since API version 8. Updates will be marked with a superscript to indicate their
-> earliest API version.
->
-> - If the size of the main axis direction is not set for **ScrollBar**, the **maxSize** value in the
-> [layout constraints]{@link FrameNode:LayoutConstraint} of the parent component is used. If the parent component of
-> the **ScrollBar** component contains a scrollable component, such as [ArcList]{@link @ohos.arkui.ArcList},
-> [List]{@link list}, [Grid]{@link grid}, [Scroll]{@link scroll}, or [WaterFlow]{@link water_flow}, you are advised
-> to set the size in the main axis direction of the **ScrollBar**; otherwise, the size in the main axis direction of
-> **ScrollBar** may become infinite.
-
+The **ScrollBar** component is designed to be used together with scrollable components such as [ArcList]{@link @ohos.arkui.ArcList}, [List]{@link list}, [Grid]{@link grid}, [Scroll]{@link scroll}, and [WaterFlow]{@link water_flow}. > **NOTE** > > - This component is supported since API version 8. Updates will be marked with a superscript to indicate their > earliest API version. > > - If the size of the main axis direction is not set for **ScrollBar**, the **maxSize** value in the > [layout constraints]{@link FrameNode:LayoutConstraint} of the parent component is used. If the parent component of > the **ScrollBar** component contains a scrollable component, such as [ArcList]{@link @ohos.arkui.ArcList}, > [List]{@link list}, [Grid]{@link grid}, [Scroll]{@link scroll}, or [WaterFlow]{@link water_flow}, you are advised > to set the size in the main axis direction of the **ScrollBar**; otherwise, the size in the main axis direction of > **ScrollBar** may become infinite.
 
 ## ScrollBar
 

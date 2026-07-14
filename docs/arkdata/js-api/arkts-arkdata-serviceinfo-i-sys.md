@@ -20,8 +20,7 @@ import { cloudExtension } from '@kit.ArkData';
 enableCloud: boolean
 ```
 
-Whether the cloud service is enabled. The value true means that the cloud service is enabled,
-and the value false means the opposite.
+Whether the cloud service is enabled. The value true means that the cloud service is enabled, and the value false means the opposite.
 
 **Type:** boolean
 

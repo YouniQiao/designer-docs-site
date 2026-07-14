@@ -4,10 +4,7 @@
 type DaltonizationColorFilter = 'Normal' | 'Protanomaly' | 'Deuteranomaly' | 'Tritanomaly'
 ```
 
-Enumerates the daltonization filters.
-The configuration of **DaltonizationColorFilter** takes effect only when
-[daltonizationState](arkts-accessibility-config-con-sys.md#daltonizationstate) is set to **true**; the normal type is used when
-[daltonizationState](arkts-accessibility-config-con-sys.md#daltonizationstate) is set to **false**.
+Enumerates the daltonization filters. The configuration of **DaltonizationColorFilter** takes effect only when [daltonizationState](arkts-accessibility-config-con-sys.md#daltonizationstate) is set to **true**; the normal type is used when [daltonizationState](arkts-accessibility-config-con-sys.md#daltonizationstate) is set to **false**.
 
 **Since:** 9
 

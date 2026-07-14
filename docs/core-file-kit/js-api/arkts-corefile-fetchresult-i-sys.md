@@ -1,6 +1,6 @@
 # FetchResult (System API)
 
-Implements file retrieval.
+Provides APIs to manage the file retrieval result.
 
 **Since:** 9
 
@@ -24,7 +24,7 @@ import { userFileManager } from '@kit.CoreFileKit';
 close(): void
 ```
 
-Releases the FetchResult instance and invalidates it. Other methods cannot be called.
+Releases and invalidates the **FetchFileResult** instance. After this instance is released, the APIs in this instance cannot be invoked.
 
 **Since:** 9
 
@@ -67,8 +67,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 getAllObject(callback: AsyncCallback<Array<T>>): void
 ```
 
-Obtains all T in the file retrieval result.
-This method uses a callback to return the result. After this method is called,
+Obtains all the file assets in the result set. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -84,7 +83,7 @@ This method uses a callback to return the result. After this method is called,
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;Array&lt;T&gt;&gt; | Yes | Callback used to return a T array. |
+| callback | AsyncCallback&lt;Array&lt;T&gt;&gt; | Yes | Callback used to return an array of all file assets in the resultset. |
 
 **Example**
 
@@ -118,8 +117,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 getAllObject(): Promise<Array<T>>
 ```
 
-Obtains all T in the file retrieval result.
-This method uses a promise to return the result. that store the selected media resources.
+Obtains all the file assets in the result set. This API uses a promise to return the result.
 
 **Since:** 10
 
@@ -135,7 +133,7 @@ This method uses a promise to return the result. that store the selected media r
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Array&lt;T&gt;&gt; | A Promise instance used to return a T array. |
+| Promise&lt;Array&lt;T&gt;&gt; | Promise that returns an array of all file assets in the result set. |
 
 **Example**
 
@@ -164,7 +162,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 getCount(): number
 ```
 
-Obtains the total number of files in the file retrieval result.
+Obtains the total number of files in the result set.
 
 **Since:** 9
 
@@ -180,7 +178,7 @@ Obtains the total number of files in the file retrieval result.
 
 | Type | Description |
 | --- | --- |
-| number | Total number of files. |
+| number | Returns the total number of files obtained. |
 
 **Example**
 
@@ -209,7 +207,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 getFirstObject(callback: AsyncCallback<T>): void
 ```
 
-Obtains the first FileAsset in the file retrieval result. This method uses a callback to return the file.
+Obtains the first file asset in the result set. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -225,7 +223,7 @@ Obtains the first FileAsset in the file retrieval result. This method uses a cal
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;T&gt; | Yes | Callback used to return the file in the format of a FileAsset instance. |
+| callback | AsyncCallback&lt;T&gt; | Yes | Callback used to return the first file asset obtained. |
 
 **Example**
 
@@ -259,7 +257,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 getFirstObject(): Promise<T>
 ```
 
-Obtains the first T in the file retrieval result. This method uses a promise to return the file.
+Obtains the first file asset in the result set. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -275,7 +273,7 @@ Obtains the first T in the file retrieval result. This method uses a promise to 
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;T&gt; | A Promise instance used to return the file in the format of a T instance. |
+| Promise&lt;T&gt; | Promise that returns the first object in the result set. |
 
 **Example**
 
@@ -304,7 +302,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 getLastObject(callback: AsyncCallback<T>): void
 ```
 
-Obtains the last T in the file retrieval result. This method uses a callback to return the file.
+Obtains the last file asset in the result set. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -320,7 +318,7 @@ Obtains the last T in the file retrieval result. This method uses a callback to 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;T&gt; | Yes | Callback used to return the file in the format of a T instance. |
+| callback | AsyncCallback&lt;T&gt; | Yes | Callback used to return the last file asset obtained. |
 
 **Example**
 
@@ -354,7 +352,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 getLastObject(): Promise<T>
 ```
 
-Obtains the last T in the file retrieval result. This method uses a promise to return the file.
+Obtains the last file asset in the result set. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -370,7 +368,7 @@ Obtains the last T in the file retrieval result. This method uses a promise to r
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;T&gt; | A Promise instance used to return the file in the format of a T instance. |
+| Promise&lt;T&gt; | Promise that returns the last object in the result set. |
 
 **Example**
 
@@ -399,10 +397,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 getNextObject(callback: AsyncCallback<T>): void
 ```
 
-Obtains the next T in the file retrieval result.
-This method uses a callback to return the file.
-Before calling this method, you must use isAfterLast() to check whether the result set points to the last row.
-This method returns the next file only when False is returned for isAfterLast().
+Obtains the next file asset in the result set. This API uses an asynchronous callback to return the result. Before using this API, you must use [isAfterLast()](arkts-corefile-fetchresult-i-sys.md#isafterlast-1) to check whether the current position is the end of the result set.
 
 **Since:** 9
 
@@ -418,7 +413,7 @@ This method returns the next file only when False is returned for isAfterLast().
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;T&gt; | Yes | Callback used to return the file in the format of a T instance. |
+| callback | AsyncCallback&lt;T&gt; | Yes | Callback used to return the next file asset. |
 
 **Example**
 
@@ -455,10 +450,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 getNextObject(): Promise<T>
 ```
 
-Obtains the next T in the file retrieval result.
-This method uses a promise to return the file.
-Before calling this method, you must use isAfterLast() to check whether the result set points to the last row.
-This method returns the next file only when False is returned for isAfterLast().
+Obtains the next file asset in the result set. This API uses a promise to return the result. Before using this API, you must use [isAfterLast()](arkts-corefile-fetchresult-i-sys.md#isafterlast-1) to check whether the current position is the end of the result set.
 
 **Since:** 9
 
@@ -474,7 +466,7 @@ This method returns the next file only when False is returned for isAfterLast().
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;T&gt; | A Promise instance used to return the file in the format of a T instance. |
+| Promise&lt;T&gt; | Promise that returns the next object in the result set. |
 
 **Example**
 
@@ -506,8 +498,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 getPositionObject(index: number, callback: AsyncCallback<T>): void
 ```
 
-Obtains the T with the specified index in the file retrieval result.
-This method uses a callback to return the file.
+Obtains a file asset with the specified index in the result set. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -523,8 +514,8 @@ This method uses a callback to return the file.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| index | number | Yes | Index of the file to obtain. |
-| callback | AsyncCallback&lt;T&gt; | Yes | Callback used to return the file in the format of a T instance. |
+| index | number | Yes | Index of the file asset to obtain. The value starts from **0**. |
+| callback | AsyncCallback&lt;T&gt; | Yes | Callback used to return the file asset obtained. |
 
 **Error codes:**
 
@@ -564,8 +555,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 getPositionObject(index: number): Promise<T>
 ```
 
-Obtains the T with the specified index in the file retrieval result.
-This method uses a promise to return the file.
+Obtains a file asset with the specified index in the result set. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -581,13 +571,13 @@ This method uses a promise to return the file.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| index | number | Yes | Index of the file to obtain. |
+| index | number | Yes | Index of the file asset to obtain. The value starts from **0**. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;T&gt; | A Promise instance used to return the file in the format of a T instance. |
+| Promise&lt;T&gt; | Promise that returns the file asset obtained. |
 
 **Error codes:**
 
@@ -626,7 +616,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 isAfterLast(): boolean
 ```
 
-Checks whether the result set points to the last row.
+Checks whether the cursor is in the last row of the result set.
 
 **Since:** 9
 
@@ -642,7 +632,7 @@ Checks whether the result set points to the last row.
 
 | Type | Description |
 | --- | --- |
-| boolean | Whether the file is the last one.You need to check whether the file is the last one before calling getNextObject,which returns the next file only when False is returned for this method. |
+| boolean | Returns **true** if the cursor is in the last row of the result set; returns **false**otherwise. |
 
 **Example**
 

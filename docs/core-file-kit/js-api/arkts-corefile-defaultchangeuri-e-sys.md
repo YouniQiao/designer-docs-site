@@ -1,6 +1,6 @@
 # DefaultChangeUri (System API)
 
-DefaultChangeUri subtype
+Enumerates the **DefaultChangeUri** subtypes.
 
 **Since:** 10
 
@@ -18,7 +18,7 @@ DefaultChangeUri subtype
 DEFAULT_PHOTO_URI
 ```
 
-Uri for default PhotoAsset, use with forDescendant{true}, will recieve all PhotoAsset's change notifications
+Default **PhotoAsset** URI. The **PhotoAsset** change notifications are received based on this parameter and **forSubUri{true}**.
 
 **Since:** 10
 
@@ -36,7 +36,7 @@ Uri for default PhotoAsset, use with forDescendant{true}, will recieve all Photo
 DEFAULT_ALBUM_URI
 ```
 
-Uri for default Album, use with forDescendant{true}, will recieve all Album's change notifications
+Default album URI. Album change notifications are received based on this parameter and **forSubUri{true}**.
 
 **Since:** 10
 
@@ -54,13 +54,11 @@ Uri for default Album, use with forDescendant{true}, will recieve all Album's ch
 DEFAULT_AUDIO_URI
 ```
 
-Uri for default AudioAsset, use with forDescendant{true}, will recieve all AudioAsset's change notifications
+Default **AudioAsset** URI. The **AudioAsset** change notifications are received based on this parameter and **forSubUri{true}**.
 
 **Since:** 10
 
 **Deprecated since:** 26.0.0
-
-**Substitutes:** [AudioViewPicker](arkts-corefile-audioviewpicker-c.md)
 
 **System capability:** SystemCapability.FileManagement.UserFileManager.Core
 

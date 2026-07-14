@@ -1,7 +1,6 @@
 # ContextMenuEditStateFlags
 
-Enumerates the context menu edit state flags. This enum can be used in bitwise OR mode. For example, to support
-**CAN_CUT**, **CAN_COPY**, and **CAN_SELECT_ALL** at the same time, use **CAN_CUT | CAN_COPY | CAN_SELECT_ALL**.
+Enumerates the context menu edit state flags. This enum can be used in bitwise OR mode. For example, to support **CAN_CUT**, **CAN_COPY**, and **CAN_SELECT_ALL** at the same time, use **CAN_CUT | CAN_COPY | CAN_SELECT_ALL**.
 
 **Since:** 9
 

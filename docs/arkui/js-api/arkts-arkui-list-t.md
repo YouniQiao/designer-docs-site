@@ -4,8 +4,7 @@
 type List = TypedFrameNode<ListInterface, ListAttribute>
 ```
 
-Represents a FrameNode of the **List** type. This type of node only allows child components of the
-[ListItem](arkts-arkui-listitem-t.md) and [ListItemGroup](arkts-arkui-listitemgroup-t.md) types.
+Represents a FrameNode of the **List** type. This type of node only allows child components of the [ListItem](arkts-arkui-listitem-t.md) and [ListItemGroup](arkts-arkui-listitemgroup-t.md) types.
 
 **Since:** 12
 

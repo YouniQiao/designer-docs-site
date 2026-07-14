@@ -30,8 +30,7 @@ Authorization status.
 flag?: number
 ```
 
-Authorization flag.
-Value range: (-∞,+∞).
+Authorization flag. Value range: (-∞,+∞).
 
 **Type:** number
 

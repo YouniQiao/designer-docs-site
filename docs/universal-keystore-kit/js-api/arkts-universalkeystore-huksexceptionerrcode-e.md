@@ -1,9 +1,6 @@
 # HuksExceptionErrCode
 
-Enumerates error codes and error details.
-
-For details about the error codes, see [Universal Error Codes](../../../../reference/errorcode-universal.md) and
-[HUKS Error Codes](../../../../reference/apis-universal-keystore-kit/errorcode-huks.md).
+Enumerates error codes and error details. For details about the error codes, see [Universal Error Codes](../../../../reference/errorcode-universal.md) and [HUKS Error Codes](../../../../reference/apis-universal-keystore-kit/errorcode-huks.md).
 
 **Since:** 9
 
@@ -41,8 +38,7 @@ The caller is not a system application and cannot call the system API.
 HUKS_ERR_CODE_ILLEGAL_ARGUMENT = 401
 ```
 
-Invalid parameters are detected. Possible causes: 1. Mandatory parameters are left unspecified.2. Incorrect
-parameter types.3. Parameter verification failed.
+Invalid parameters are detected. Possible causes: 1. Mandatory parameters are left unspecified.2. Incorrect parameter types.3. Parameter verification failed.
 
 **Since:** 9
 

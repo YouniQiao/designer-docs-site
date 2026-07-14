@@ -12,10 +12,7 @@ Used to mix colors.
 static createHDRColor(colorSpace: ColorSpace, red: number, green: number, blue: number, alpha?: number): ColorMetrics
 ```
 
-Create ColorMetrics class using HDR color with default exposure.
-Create an HDR color value with default exposure (0.0 for logarithmic, 1.0 for linear).
-When no exposure value is specified, RGB channel values can exceed 1.0 to achieve HDR brightness.
-This matches iOS UIColor behavior where RGB values > 1.0 enable HDR rendering.
+Create ColorMetrics class using HDR color with default exposure. Create an HDR color value with default exposure (0.0 for logarithmic, 1.0 for linear). When no exposure value is specified, RGB channel values can exceed 1.0 to achieve HDR brightness. This matches iOS UIColor behavior where RGB values > 1.0 enable HDR rendering.
 
 **Since:** 26.0.0
 
@@ -48,10 +45,7 @@ static createHDRColorWithLinearExposure(linearExposure: number, colorSpace: Colo
     red: number, green: number, blue: number, alpha?: number): ColorMetrics
 ```
 
-Create ColorMetrics class using HDR color with linear exposure.
-Create an HDR color value with specified linear exposure.
-The exposure value controls the brightness of the color in a linear color space.
-When using linear exposure, RGB channel values are typically in the range [0, 1].
+Create ColorMetrics class using HDR color with linear exposure. Create an HDR color value with specified linear exposure. The exposure value controls the brightness of the color in a linear color space. When using linear exposure, RGB channel values are typically in the range [0, 1].
 
 **Since:** 26.0.0
 
@@ -85,10 +79,7 @@ static createHDRColorWithLogExposure(exposure: number, colorSpace: ColorSpace,
     red: number, green: number, blue: number, alpha?: number): ColorMetrics
 ```
 
-Create ColorMetrics class using HDR color with linear exposure.
-Create an HDR color value with specified logarithmic exposure (stops).
-The exposure value controls the brightness in a logarithmic (perceptual) color space.
-When using logarithmic exposure, RGB channel values are typically in the range [0, 1].
+Create ColorMetrics class using HDR color with linear exposure. Create an HDR color value with specified logarithmic exposure (stops). The exposure value controls the brightness in a logarithmic (perceptual) color space. When using logarithmic exposure, RGB channel values are typically in the range [0, 1].
 
 **Since:** 26.0.0
 
@@ -121,10 +112,7 @@ When using logarithmic exposure, RGB channel values are typically in the range [
 getBlueValue(): number
 ```
 
-Get blue value.
-Returns blue channel value as a floating-point number.
-For SDR colors, value is in range [0, 1].
-For HDR colors, value can be greater than 1.0 to represent extended brightness.
+Get blue value. Returns blue channel value as a floating-point number. For SDR colors, value is in range [0, 1]. For HDR colors, value can be greater than 1.0 to represent extended brightness.
 
 **Since:** 26.0.0
 
@@ -146,8 +134,7 @@ For HDR colors, value can be greater than 1.0 to represent extended brightness.
 getColorSpace(): ColorSpace
 ```
 
-Get color space of the ColorMetrics.
-Returns the color space used when creating this color.
+Get color space of the ColorMetrics. Returns the color space used when creating this color.
 
 **Since:** 26.0.0
 
@@ -169,10 +156,7 @@ Returns the color space used when creating this color.
 getGreenValue(): number
 ```
 
-Get green value.
-Returns green channel value as a floating-point number.
-For SDR colors, value is in range [0, 1].
-For HDR colors, value can be greater than 1.0 to represent extended brightness.
+Get green value. Returns green channel value as a floating-point number. For SDR colors, value is in range [0, 1]. For HDR colors, value can be greater than 1.0 to represent extended brightness.
 
 **Since:** 26.0.0
 
@@ -194,10 +178,7 @@ For HDR colors, value can be greater than 1.0 to represent extended brightness.
 getRedValue(): number
 ```
 
-Get red value.
-Returns red channel value as a floating-point number.
-For SDR colors, value is in range [0, 1].
-For HDR colors, value can be greater than 1.0 to represent extended brightness.
+Get red value. Returns red channel value as a floating-point number. For SDR colors, value is in range [0, 1]. For HDR colors, value can be greater than 1.0 to represent extended brightness.
 
 **Since:** 26.0.0
 
@@ -219,8 +200,7 @@ For HDR colors, value can be greater than 1.0 to represent extended brightness.
 isHDR(): boolean
 ```
 
-Check if ColorMetrics represents an HDR color.
-Returns true if color was created using createHDRColorWithXx or has RGB values > 1.0.
+Check if ColorMetrics represents an HDR color. Returns true if color was created using createHDRColorWithXx or has RGB values > 1.0.
 
 **Since:** 26.0.0
 

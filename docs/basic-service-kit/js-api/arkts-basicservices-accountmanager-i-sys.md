@@ -143,10 +143,7 @@ try {
 activateOsAccount(localId: number, displayId: number): Promise<void>
 ```
 
-Activates (Starts on the foreground or switches to) the target OS account on the specified logical display.
-This API uses a promise to return the result.
-Currently, cross-logical-display activation is not supported. That is, you cannot activate an OS account that
-is already running on the foreground of another logical display on the specified logical display.
+Activates (Starts on the foreground or switches to) the target OS account on the specified logical display. This API uses a promise to return the result. Currently, cross-logical-display activation is not supported. That is, you cannot activate an OS account that is already running on the foreground of another logical display on the specified logical display.
 
 **Since:** 23
 
@@ -415,8 +412,7 @@ createOsAccountForDomain(
     ): void
 ```
 
-Creates an OS account and associates it with the specified domain account. This API uses an asynchronous
-callback to return the result.
+Creates an OS account and associates it with the specified domain account. This API uses an asynchronous callback to return the result.
 
 **Since:** 8
 
@@ -480,8 +476,7 @@ try {
 createOsAccountForDomain(type: OsAccountType, domainInfo: DomainAccountInfo, options?: CreateOsAccountForDomainOptions): Promise<OsAccountInfo>
 ```
 
-Creates an OS account and associates it with the specified domain account. This API uses a promise to return
-the result.
+Creates an OS account and associates it with the specified domain account. This API uses a promise to return the result.
 
 **Since:** 8
 
@@ -834,8 +829,7 @@ try {
 getForegroundOsAccountDisplayId(localId: number): Promise<number>
 ```
 
-Obtains the logical display ID of the specified foreground OS account. This API uses a promise to return the
-result.
+Obtains the logical display ID of the specified foreground OS account. This API uses a promise to return the result.
 
 **Since:** 23
 
@@ -892,8 +886,7 @@ try {
 getForegroundOsAccountLocalId(displayId: number): Promise<number>
 ```
 
-Obtains the ID of the foreground OS account running on a specified logical display. This API uses a promise
-to return the result.
+Obtains the ID of the foreground OS account running on a specified logical display. This API uses a promise to return the result.
 
 **Since:** 23
 
@@ -950,8 +943,7 @@ try {
 getOsAccountConstraintSourceTypes(localId: number, constraint: string, callback: AsyncCallback<Array<ConstraintSourceTypeInfo>>): void
 ```
 
-Obtains the constraint source information of an OS account. This API uses an asynchronous callback to return
-the result.
+Obtains the constraint source information of an OS account. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -1245,8 +1237,7 @@ try {
 isMainOsAccount(callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether the current process belongs to the main OS account. This API uses an asynchronous callback to
-return the result.
+Checks whether the current process belongs to the main OS account. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -1298,8 +1289,7 @@ try {
 isMainOsAccount(): Promise<boolean>
 ```
 
-Checks whether the current process belongs to the main OS account. This API uses a promise to return the
-result.
+Checks whether the current process belongs to the main OS account. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -1528,8 +1518,7 @@ try {
 off(type: 'activate' | 'activating', name: string, callback?: Callback<number>): void
 ```
 
-Unsubscribes from the OS account activation states, including the states of the account being activated and
-the account with activation completed. This API uses an asynchronous callback to return the result.
+Unsubscribes from the OS account activation states, including the states of the account being activated and the account with activation completed. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 
@@ -1583,8 +1572,7 @@ try {
 off(type: 'activate' | 'activating', name: string, callback?: Callback<number>): void
 ```
 
-Unsubscribes from the OS account activation states, including the states of the account being activated and
-the account with activation completed. This API uses an asynchronous callback to return the result.
+Unsubscribes from the OS account activation states, including the states of the account being activated and the account with activation completed. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 
@@ -1638,8 +1626,7 @@ try {
 off(type: 'switching', callback?: Callback<OsAccountSwitchEventData>): void
 ```
 
-Unsubscribes from the switchover between a foreground OS account and a background OS account in progress.
-This API uses an asynchronous callback to return the result.
+Unsubscribes from the switchover between a foreground OS account and a background OS account in progress. This API uses an asynchronous callback to return the result.
 
 **Since:** 12
 
@@ -1688,8 +1675,7 @@ try {
 off(type: 'switched', callback?: Callback<OsAccountSwitchEventData>): void
 ```
 
-Unsubscribes from the end of a switchover between a foreground OS account and a background OS account.
-This API uses an asynchronous callback to return the result.
+Unsubscribes from the end of a switchover between a foreground OS account and a background OS account. This API uses an asynchronous callback to return the result.
 
 **Since:** 12
 
@@ -1738,8 +1724,7 @@ try {
 offConstraintChanged(callback?: Callback<ConstraintChangeInfo>): void
 ```
 
-Unsubscribes from constraint change events associated with the specified callback. If no callback is specified,
-this API unsubscribes from all subscription records.
+Unsubscribes from constraint change events associated with the specified callback. If no callback is specified, this API unsubscribes from all subscription records.
 
 **Since:** 23
 
@@ -1793,8 +1778,7 @@ try {
 on(type: 'activate' | 'activating', name: string, callback: Callback<number>): void
 ```
 
-Subscribes to the OS account activation states, including the states of the account being activated and the
-account with activation completed. This API uses an asynchronous callback to return the result.
+Subscribes to the OS account activation states, including the states of the account being activated and the account with activation completed. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 
@@ -1848,8 +1832,7 @@ try {
 on(type: 'activate' | 'activating', name: string, callback: Callback<number>): void
 ```
 
-Subscribes to the OS account activation states, including the states of the account being activated and the
-account with activation completed. This API uses an asynchronous callback to return the result.
+Subscribes to the OS account activation states, including the states of the account being activated and the account with activation completed. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 
@@ -1903,8 +1886,7 @@ try {
 on(type: 'switching', callback: Callback<OsAccountSwitchEventData>): void
 ```
 
-Subscribes to the switchover between a foreground OS account and a background OS account in progress.
-This API uses an asynchronous callback to return the result.
+Subscribes to the switchover between a foreground OS account and a background OS account in progress. This API uses an asynchronous callback to return the result.
 
 **Since:** 12
 
@@ -1958,8 +1940,7 @@ try {
 on(type: 'switched', callback: Callback<OsAccountSwitchEventData>): void
 ```
 
-Subscribes to the end of a switchover between a foreground OS account and a background OS account. This
-API uses an asynchronous callback to return the result.
+Subscribes to the end of a switchover between a foreground OS account and a background OS account. This API uses an asynchronous callback to return the result.
 
 **Since:** 12
 
@@ -2013,8 +1994,7 @@ try {
 onConstraintChanged(constraints: string[], callback: Callback<ConstraintChangeInfo>): void
 ```
 
-Subscribes to one or more constraint change events of the OS account to which the caller belongs. This API
-uses an asynchronous callback to return the result.
+Subscribes to one or more constraint change events of the OS account to which the caller belongs. This API uses an asynchronous callback to return the result.
 
 **Since:** 23
 
@@ -2063,8 +2043,7 @@ try {
 queryAllCreatedOsAccounts(callback: AsyncCallback<Array<OsAccountInfo>>): void
 ```
 
-Queries information about all the OS accounts created. This API uses an asynchronous callback to return the
-result.
+Queries information about all the OS accounts created. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 
@@ -2165,8 +2144,7 @@ try {
 queryMaxLoggedInOsAccountNumber(): Promise<number>
 ```
 
-Queries the maximum number of OS accounts allowed to log in to the system. This API uses a promise to return
-the result.
+Queries the maximum number of OS accounts allowed to log in to the system. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -2212,8 +2190,7 @@ try {
 queryMaxOsAccountNumber(callback: AsyncCallback<number>): void
 ```
 
-Queries the maximum number of OS accounts that can be created. This API uses an asynchronous callback to
-return the result.
+Queries the maximum number of OS accounts that can be created. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 
@@ -2308,8 +2285,7 @@ try {
 queryOsAccount(): Promise<OsAccountInfo>
 ```
 
-Obtains information about the OS account to which the current process belongs. This API uses a promise to
-return the result.
+Obtains information about the OS account to which the current process belongs. This API uses a promise to return the result.
 
 **Since:** 11
 
@@ -2358,8 +2334,7 @@ try {
 queryOsAccountById(localId: number, callback: AsyncCallback<OsAccountInfo>): void
 ```
 
-Queries information about the OS account of the given ID. This API uses an asynchronous callback to return
-the result.
+Queries information about the OS account of the given ID. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 

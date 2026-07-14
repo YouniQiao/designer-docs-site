@@ -1,6 +1,6 @@
 # DefaultChangeUri
 
-Enumeration uris for registerChange.
+Enumerates the **DefaultChangeUri** subtypes.
 
 **Since:** 10
 
@@ -12,7 +12,7 @@ Enumeration uris for registerChange.
 DEFAULT_PHOTO_URI = 'file://media/Photo'
 ```
 
-Uri for default PhotoAsset, use with forDescendant{true}, will receive all PhotoAsset's change notifications
+Default **PhotoAsset** URI, which must be used with **forChildUris{true}** to subscribe to change notifications of all photo assets.
 
 **Since:** 10
 
@@ -24,7 +24,7 @@ Uri for default PhotoAsset, use with forDescendant{true}, will receive all Photo
 DEFAULT_ALBUM_URI = 'file://media/PhotoAlbum'
 ```
 
-Uri for default Album, use with forDescendant{true}, will receive all Album's change notifications
+Default album URI, which must be used with **forChildUris{true}** to subscribe to change notifications of all albums.
 
 **Since:** 10
 

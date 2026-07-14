@@ -1,16 +1,6 @@
 # Array
 
-A linear data structure that is implemented on arrays and can be passed between ArkTS concurrent instances.
-Pass-by-reference is recommended for better transfer performance.
-
-> **NOTE**
->
-> - This module can be imported only to ArkTS files (with the file name extension .ets).
-> This section uses the following to identify the use of generics:
-
-- T: type, which can be any of the
-[sendable data types](../../../../arkts-utils/arkts-sendable.md#sendable-data-types).
-**Decorator**: \@Sendable
+A linear data structure that is implemented on arrays and can be passed between ArkTS concurrent instances. Pass-by-reference is recommended for better transfer performance. > **NOTE** > > - This module can be imported only to ArkTS files (with the file name extension .ets). > This section uses the following to identify the use of generics: - T: type, which can be any of the [sendable data types](../../../../arkts-utils/arkts-sendable.md#sendable-data-types). **Decorator**: \@Sendable
 
 **Inheritance/Implementation:** Array implements [ConcatArray<T>](ConcatArray<T>)
 
@@ -421,8 +411,7 @@ Returns a new array containing all elements that pass a test provided by a callb
 find(predicate: (value: T, index: number, obj: Array<T>) => boolean): T | undefined
 ```
 
-Returns the value of the first element that passes a test provided by a callback function. If none of the
-elements pass the test, **undefined** is returned.
+Returns the value of the first element that passes a test provided by a callback function. If none of the elements pass the test, **undefined** is returned.
 
 **Since:** 12
 
@@ -455,8 +444,7 @@ elements pass the test, **undefined** is returned.
 findIndex(predicate: (value: T, index: number, obj: Array<T>) => boolean): number
 ```
 
-Returns the index of the first element that passes a test provided by a callback function. If none of the
-elements pass the test, **-1** is returned.
+Returns the index of the first element that passes a test provided by a callback function. If none of the elements pass the test, **-1** is returned.
 
 **Since:** 12
 
@@ -607,8 +595,7 @@ Creates an ArkTS array from an array-like object, and uses a custom function to 
 static from<U, T>(arrayLike: ArrayLike<U> | Iterable<U>, mapFn: ArrayFromMapFn<U, T>): Array<T>
 ```
 
-Creates an ArkTS array from an array-like object, and uses a custom function to process each array element. The
-type of the elements in the array-like object can be different from that of the array elements.
+Creates an ArkTS array from an array-like object, and uses a custom function to process each array element. The type of the elements in the array-like object can be different from that of the array elements.
 
 **Since:** 18
 
@@ -669,8 +656,7 @@ Checks whether this ArkTS array contains an element and returns a Boolean value.
 indexOf(searchElement: T, fromIndex?: number): number
 ```
 
-Returns the index of the first occurrence of a value in this ArkTS Array. If the value is not found, **-1** is
-returned.
+Returns the index of the first occurrence of a value in this ArkTS Array. If the value is not found, **-1** is returned.
 
 **Since:** 12
 
@@ -824,8 +810,7 @@ Obtains the index of the last occurrence of the specified value in this ArkTS ar
 map<U>(callbackFn: (value: T, index: number, array: Array<T>) => U): Array<U>
 ```
 
-Calls a callback function for each element in this ArkTS Array and returns a new array that contains the result
-of the callback function.
+Calls a callback function for each element in this ArkTS Array and returns a new array that contains the result of the callback function.
 
 **Since:** 12
 
@@ -884,8 +869,7 @@ Creates an ArkTS array with a variable number of parameters.
 pop(): T | undefined
 ```
 
-Removes the last element from this ArkTS array and returns that element. If the array is empty, **undefined** is
-returned and the array does not change.
+Removes the last element from this ArkTS array and returns that element. If the array is empty, **undefined** is returned and the array does not change.
 
 **Since:** 12
 
@@ -945,8 +929,7 @@ Adds elements to the end of this ArkTS array and returns the new length of the a
 reduce(callbackFn: (previousValue: T, currentValue: T, currentIndex: number, array: Array<T>) => T): T
 ```
 
-Calls a callback function for each element in this ArkTS array, uses the previous return value of the function as
-an accumulated value, and returns the final result.
+Calls a callback function for each element in this ArkTS array, uses the previous return value of the function as an accumulated value, and returns the final result.
 
 **Since:** 12
 
@@ -982,8 +965,7 @@ reduce<U>(
     ): U
 ```
 
-Similar to the previous API, this API takes an initial value as the second parameter to initialize the
-accumulator before the array traversal starts.
+Similar to the previous API, this API takes an initial value as the second parameter to initialize the accumulator before the array traversal starts.
 
 **Since:** 12
 
@@ -1017,10 +999,7 @@ accumulator before the array traversal starts.
 reduceRight<U = T>(callbackFn: ArrayReduceCallback<U, T, Array<T>>, initialValue: U): U
 ```
 
-This API is similar to the
-[reduceRight](arkts-arkts-array-c.md#reduceright-2) API, but it
-takes an initial value as the second parameter to initialize the accumulator before the array traversal starts
-from right to left.
+This API is similar to the [reduceRight](arkts-arkts-array-c.md#reduceright-2) API, but it takes an initial value as the second parameter to initialize the accumulator before the array traversal starts from right to left.
 
 **Since:** 18
 
@@ -1054,8 +1033,7 @@ from right to left.
 reduceRight(callbackFn: ArrayReduceCallback<T, T, Array<T>>): T
 ```
 
-Goes through each element in this ArkTS array from right to left, uses a callback function to combine them into a
-single value, and returns that final value.
+Goes through each element in this ArkTS array from right to left, uses a callback function to combine them into a single value, and returns that final value.
 
 **Since:** 18
 
@@ -1115,8 +1093,7 @@ Reverses elements in this ArkTS array and returns a reference to the same array.
 shift(): T | undefined
 ```
 
-Removes the first element from this ArkTS array and returns that element. If the array is empty, **undefined** is
-returned and the array does not change.
+Removes the first element from this ArkTS array and returns that element. If the array is empty, **undefined** is returned and the array does not change.
 
 **Since:** 12
 
@@ -1338,8 +1315,7 @@ Removes elements from a specified position in an array, and inserts new elements
 toLocaleString(): string
 ```
 
-Generates a string that matches the cultural conversions of the current system locale. Each element converts
-itself to a string via its **toLocaleString** API, and these strings are then joined in sequence with commas (,).
+Generates a string that matches the cultural conversions of the current system locale. Each element converts itself to a string via its **toLocaleString** API, and these strings are then joined in sequence with commas (,).
 
 **Since:** 18
 

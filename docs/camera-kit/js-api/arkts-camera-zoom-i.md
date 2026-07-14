@@ -1,8 +1,6 @@
 # Zoom
 
-Zoom extend [ZoomQuery](arkts-camera-zoomquery-i.md)
-Provides APIs to process the zoom effect of a camera device, including obtaining the current zoom ratio, setting a
-zoom ratio, setting a zoom ratio in a smooth manner, and preparing or unpreparing for zooming.
+Zoom extend [ZoomQuery](arkts-camera-zoomquery-i.md) Provides APIs to process the zoom effect of a camera device, including obtaining the current zoom ratio, setting a zoom ratio, setting a zoom ratio in a smooth manner, and preparing or unpreparing for zooming.
 
 **Inheritance/Implementation:** Zoom extends [ZoomQuery](arkts-camera-zoomquery-i.md)
 

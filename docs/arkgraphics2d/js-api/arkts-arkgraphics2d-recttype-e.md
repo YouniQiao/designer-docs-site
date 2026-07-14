@@ -1,7 +1,6 @@
 # RectType
 
-Enumerates the types of rectangles used to fill the lattices. Used only in
-[Lattice](arkts-graphics-drawing.md).
+Enumerates the types of rectangles used to fill the lattices. Used only in [Lattice](arkts-graphics-drawing.md).
 
 **Since:** 12
 

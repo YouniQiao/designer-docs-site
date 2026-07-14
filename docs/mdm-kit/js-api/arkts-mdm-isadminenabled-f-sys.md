@@ -12,8 +12,7 @@ import { adminManager } from '@kit.MDMKit';
 function isAdminEnabled(admin: Want, callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether a device administrator application of the current user is enabled. This API uses an asynchronous
-callback to return the result.
+Checks whether a device administrator application of the current user is enabled. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -66,8 +65,7 @@ adminManager.isAdminEnabled(wantTemp, (err, result) => {
 function isAdminEnabled(admin: Want, userId: number, callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether a device administrator application of the specified user is enabled. This API uses an asynchronous
-callback to return the result.
+Checks whether a device administrator application of the specified user is enabled. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -122,8 +120,7 @@ adminManager.isAdminEnabled(wantTemp, 100, (err, result) => {
 function isAdminEnabled(admin: Want, userId?: number): Promise<boolean>
 ```
 
-Checks whether a device administrator application of the current or specified user is enabled. This API uses a
-promise to return the result.
+Checks whether a device administrator application of the current or specified user is enabled. This API uses a promise to return the result.
 
 **Since:** 9
 

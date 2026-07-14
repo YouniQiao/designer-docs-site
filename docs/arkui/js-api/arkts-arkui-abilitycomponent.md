@@ -2,15 +2,13 @@
 
 Provide an interface for the ability component.
 
-
 ## AbilityComponent
 
 ```TypeScript
 AbilityComponent(value: { want: import('../api/@ohos.app.ability.Want').default })
 ```
 
-Construct the ability component.
-Called when the ability component is used.
+Construct the ability component. Called when the ability component is used.
 
 **Since:** 9
 

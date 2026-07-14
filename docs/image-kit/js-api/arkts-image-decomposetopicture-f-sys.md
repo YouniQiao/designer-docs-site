@@ -12,8 +12,7 @@ import { image } from '@kit.ImageKit';
 function decomposeToPicture(hdrPixelMap : PixelMap, options?: HdrDecomposeOptions): Promise<Picture | undefined>
 ```
 
-Decomposes an HDR Pixelmap object to a Picture object which contains an SDR PixelMap and a gainmap. This API uses
-a promise to return the result.
+Decomposes an HDR Pixelmap object to a Picture object which contains an SDR PixelMap and a gainmap. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 

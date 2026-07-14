@@ -2,7 +2,6 @@
 
 Defines the Interface of NodeContainer. To display the node build by an associated NodeController.
 
-
 ## NodeContainer
 
 ```TypeScript

@@ -1,6 +1,6 @@
 # PeerInfo (System API)
 
-Peer devices' information
+Defines information about a registered device.
 
 **Since:** 9
 
@@ -22,7 +22,7 @@ import { userFileManager } from '@kit.CoreFileKit';
 readonly deviceName: string
 ```
 
-Peer device name
+Name of the registered device.
 
 **Type:** string
 
@@ -40,7 +40,7 @@ Peer device name
 readonly isOnline: boolean
 ```
 
-Peer device online status
+Whether the registered device is online. The value **true** means the registered device is online; the value **false** means the opposite.
 
 **Type:** boolean
 
@@ -58,7 +58,7 @@ Peer device online status
 readonly networkId: string
 ```
 
-Peer device network id
+Network ID of the registered device.
 
 **Type:** string
 

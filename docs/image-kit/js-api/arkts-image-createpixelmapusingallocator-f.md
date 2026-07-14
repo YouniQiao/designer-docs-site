@@ -13,10 +13,7 @@ function createPixelMapUsingAllocator(colors: ArrayBuffer, param: Initialization
     allocatorType?: AllocatorType): Promise<PixelMap>
 ```
 
-Create pixelmap by data buffer based on opts, the memory type used by the PixelMap can be specified
-by allocatorType. By default, the system selects the memory type based on the image type, image size,
-platform capability, etc. When processing the PixelMap returned by this interface, please always
-consider the impact of stride.
+Create pixelmap by data buffer based on opts, the memory type used by the PixelMap can be specified by allocatorType. By default, the system selects the memory type based on the image type, image size, platform capability, etc. When processing the PixelMap returned by this interface, please always consider the impact of stride.
 
 **Since:** 20
 

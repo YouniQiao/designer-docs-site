@@ -1,7 +1,6 @@
 # AutoCapitalizationMode
 
-Enumerates automatic capitalization modes. This only provides API capabilities; the specific implementation depends
-on the input method application.
+Enumerates automatic capitalization modes. This only provides API capabilities; the specific implementation depends on the input method application.
 
 **Since:** 20
 
@@ -29,8 +28,7 @@ Default state; automatic capitalization is disabled.
 WORDS = 1
 ```
 
-Automatic capitalization is applied per word: The first character of each word is capitalized, others are
-lowercase.
+Automatic capitalization is applied per word: The first character of each word is capitalized, others are lowercase.
 
 **Since:** 20
 
@@ -46,8 +44,7 @@ lowercase.
 SENTENCES = 2
 ```
 
-Automatic capitalization is applied per sentence: The first character of each sentence is capitalized, others are
-lowercase.
+Automatic capitalization is applied per sentence: The first character of each sentence is capitalized, others are lowercase.
 
 **Since:** 20
 

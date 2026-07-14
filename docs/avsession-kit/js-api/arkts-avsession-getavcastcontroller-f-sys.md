@@ -12,8 +12,7 @@ import { avSession } from '@kit.AVSessionKit';
 function getAVCastController(sessionId: string, callback: AsyncCallback<AVCastController>): void
 ```
 
-Register a callback to retrieve an avsession cast controller.
-This function can be used at both side to get the same controller to do the playback control.
+Register a callback to retrieve an avsession cast controller. This function can be used at both side to get the same controller to do the playback control.
 
 **Since:** 10
 
@@ -80,8 +79,7 @@ struct Index {
 function getAVCastController(sessionId: string): Promise<AVCastController>
 ```
 
-Get the current session's remote controller client.
-If the avsession is not under casting state, the controller will return null.
+Get the current session's remote controller client. If the avsession is not under casting state, the controller will return null.
 
 **Since:** 10
 

@@ -138,10 +138,7 @@ Sets the indicator style of the selected subtab. It takes effect only in the hor
 indicator(value: IndicatorStyle | DrawableTabBarIndicator): SubTabBarStyle
 ```
 
-Sets the indicator style of the selected subtab. Compared with
-[indicator](arkts-arkui-subtabbarstyle-c.md#indicator-1), the image format is added. For details about
-the display effect of the image, see [ImageFit.Cover](arkts-arkui-imagefit-e.md). It takes effect only in the horizontal
-layout.
+Sets the indicator style of the selected subtab. Compared with [indicator](arkts-arkui-subtabbarstyle-c.md#indicator-1), the image format is added. For details about the display effect of the image, see [ImageFit.Cover](arkts-arkui-imagefit-e.md). It takes effect only in the horizontal layout.
 
 **Since:** 22
 
@@ -225,8 +222,7 @@ Static constructor used to create a **SubTabBarStyle** instance.
 static of(content: ResourceStr | ComponentContent): SubTabBarStyle
 ```
 
-Static constructor used to create a **SubTabBarStyle** instance. You can set custom content with
-**ComponentContent**.
+Static constructor used to create a **SubTabBarStyle** instance. You can set custom content with **ComponentContent**.
 
 **Since:** 12
 
@@ -254,8 +250,7 @@ Static constructor used to create a **SubTabBarStyle** instance. You can set cus
 padding(value: Padding | Dimension): SubTabBarStyle
 ```
 
-Sets the padding of the subtab. It cannot be set in percentage. When the parameter is of the Dimension type, the
-value applies to all sides.
+Sets the padding of the subtab. It cannot be set in percentage. When the parameter is of the Dimension type, the value applies to all sides.
 
 **Since:** 10
 

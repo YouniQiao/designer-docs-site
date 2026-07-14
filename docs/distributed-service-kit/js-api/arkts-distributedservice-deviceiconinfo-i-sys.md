@@ -84,10 +84,7 @@ Product ID.
 specName: string
 ```
 
-Image specification name. Value:
-
-- **lg**: large image (size: 1016064 pixels)
-- **sm**: small image (size: 65536 pixels)
+Image specification name. Value: - **lg**: large image (size: 1016064 pixels) - **sm**: small image (size: 65536 pixels)
 
 **Type:** string
 

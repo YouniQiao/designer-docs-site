@@ -6,15 +6,19 @@ Describes the parameters for connection.
 
 **System capability:** SystemCapability.Communication.NearLink.Base
 
+## Modules to Import
+
+```TypeScript
+import { dataTransfer } from '@kit.ConnectivityKit';
+```
+
 ## address
 
 ```TypeScript
 address: string
 ```
 
-Indicates the connected device address.
-The length must be 17, The value consists of hexadecimal digits and colons (:),
-for example, 11:22:33:AA:BB:FF.
+Indicates the connected device address. The length must be 17, The value consists of hexadecimal digits and colons (:), for example, 11:22:33:AA:BB:FF.
 
 **Type:** string
 
@@ -30,8 +34,7 @@ for example, 11:22:33:AA:BB:FF.
 transferMode?: TransferMode
 ```
 
-Data transfer mode. The basic transfer mode is used by default
-Default value: BASIC.
+Data transfer mode. The basic transfer mode is used by default Default value: BASIC.
 
 **Type:** TransferMode
 
@@ -47,10 +50,7 @@ Default value: BASIC.
 uuid: string
 ```
 
-Indicates the service UUID.
-The length must be 36, The value consists of 36 hexadecimal digits and hyphens (-),
-for example, FFFFFFFF-1234-5678-ABCD-000000001234, indicating a 128-bit identifier.
-<br>NearLink standard UUIDs are not allowed.
+Indicates the service UUID. The length must be 36, The value consists of 36 hexadecimal digits and hyphens (-), for example, FFFFFFFF-1234-5678-ABCD-000000001234, indicating a 128-bit identifier. <br>NearLink standard UUIDs are not allowed.
 
 **Type:** string
 

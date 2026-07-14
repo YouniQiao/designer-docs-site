@@ -1,8 +1,6 @@
 # @ohos.reminderAgent
 
-本模块提供后台代理提醒的能力。
-
-开发应用时，开发者可以调用相关接口创建定时提醒，包括倒计时、日历、闹钟这三类提醒类型。使用后台代理提醒能力后，应用被冻结或退出后，计时和弹出提醒的功能将被后台系统服务代理。
+本模块提供后台代理提醒的能力。 开发应用时，开发者可以调用相关接口创建定时提醒，包括倒计时、日历、闹钟这三类提醒类型。使用后台代理提醒能力后，应用被冻结或退出后，计时和弹出提醒的功能将被后台系统服务代理。
 
 **起始版本：** 7
 
@@ -26,8 +24,8 @@
 | [cancelReminder](arkts-backgroundtasks-cancelreminder-f.md#cancelreminder-2) | 取消指定id的提醒，使用Promise方式实现异步调用。 |
 | [getValidReminders](arkts-backgroundtasks-getvalidreminders-f.md#getvalidreminders-1) | 获取当前应用已设置的所有有效（未过期）的提醒，使用回调的方式实现异步调用。 |
 | [getValidReminders](arkts-backgroundtasks-getvalidreminders-f.md#getvalidreminders-2) | 获取当前应用已设置的所有有效（未过期）的提醒，使用Promise方式实现异步调用。 |
-| [publishReminder](arkts-backgroundtasks-publishreminder-f.md#publishreminder-1) | 发布一个后台代理提醒，使用回调的方式实现异步调用，该方法需要申请通知弹窗权限[Notification.requestEnableNotification](../../apis-notification-kit/arkts-apis/arkts-notification-requestenablenotification-depr-f.md#requestenablenotification-1)后才能调用。 |
-| [publishReminder](arkts-backgroundtasks-publishreminder-f.md#publishreminder-2) | 发布一个后台代理提醒，使用Promise方式实现异步调用，该方法需要申请通知弹窗权限[Notification.requestEnableNotification](../../apis-notification-kit/arkts-apis/arkts-notification-requestenablenotification-depr-f.md#requestenablenotification-1)后才能调用。 |
+| [publishReminder](arkts-backgroundtasks-publishreminder-f.md#publishreminder-1) | 发布一个后台代理提醒，使用回调的方式实现异步调用，该方法需要申请通知弹窗权限 [Notification.requestEnableNotification](../../apis-notification-kit/arkts-apis/arkts-notification-requestenablenotification-depr-f.md#requestenablenotification-1) 后才能调用。 |
+| [publishReminder](arkts-backgroundtasks-publishreminder-f.md#publishreminder-2) | 发布一个后台代理提醒，使用Promise方式实现异步调用，该方法需要申请通知弹窗权限 [Notification.requestEnableNotification](../../apis-notification-kit/arkts-apis/arkts-notification-requestenablenotification-depr-f.md#requestenablenotification-1) 后才能调用。 |
 | [removeNotificationSlot](arkts-backgroundtasks-removenotificationslot-f.md#removenotificationslot-1) | 删除目标NotificationSlot，使用callback方式实现异步调用。 |
 | [removeNotificationSlot](arkts-backgroundtasks-removenotificationslot-f.md#removenotificationslot-2) | 删除目标NotificationSlot，使用Promise方式实现异步调用。 |
 

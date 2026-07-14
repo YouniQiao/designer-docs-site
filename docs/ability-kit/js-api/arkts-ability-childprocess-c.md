@@ -1,8 +1,6 @@
 # ChildProcess
 
-ChildProcess is the base class for you to customize child processes. When starting a child process through
-[childProcessManager](arkts-app-ability-childprocessmanager.md), you must inherit this class
-and override the entrypoint method.
+ChildProcess is the base class for you to customize child processes. When starting a child process through [childProcessManager](arkts-app-ability-childprocessmanager.md), you must inherit this class and override the entrypoint method.
 
 **Since:** 11
 
@@ -20,8 +18,7 @@ import { ChildProcess } from '@kit.AbilityKit';
 onStart(args?: ChildProcessArgs): void
 ```
 
-Entrypoint method of the child process. This callback is triggered when the child process is started through
-[childProcessManager](arkts-app-ability-childprocessmanager.md).
+Entrypoint method of the child process. This callback is triggered when the child process is started through [childProcessManager](arkts-app-ability-childprocessmanager.md).
 
 **Since:** 11
 

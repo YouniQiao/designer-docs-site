@@ -16,9 +16,7 @@ function addDisallowedRunningBundlesSync(
   ): void
 ```
 
-Adds the applications that are not allowed to run by the current or specified user. From API version 21, if the
-allowed application list [addallowedRunningBundles](arkts-mdm-addallowedrunningbundles-f.md#addallowedrunningbundles-1) is not empty
-, the prohibited application list cannot be added using this API. Otherwise, the error code 9200010 is reported.
+Adds the applications that are not allowed to run by the current or specified user. From API version 21, if the allowed application list [addallowedRunningBundles](arkts-mdm-addallowedrunningbundles-f.md#addallowedrunningbundles-1) is not empty , the prohibited application list cannot be added using this API. Otherwise, the error code 9200010 is reported.
 
 **Since:** 12
 

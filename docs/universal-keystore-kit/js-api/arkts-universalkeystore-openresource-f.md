@@ -12,8 +12,7 @@ import { huksExternalCrypto } from '@kit.UniversalKeystoreKit';
 function openResource(resourceId: string, params?: HuksExternalCryptoParam[]): Promise<void>
 ```
 
-Open resource by specific resource ID.
-NOTE: The opened resource must be closed using closeResource.
+Open resource by specific resource ID. NOTE: The opened resource must be closed using closeResource.
 
 **Since:** 26.0.0
 

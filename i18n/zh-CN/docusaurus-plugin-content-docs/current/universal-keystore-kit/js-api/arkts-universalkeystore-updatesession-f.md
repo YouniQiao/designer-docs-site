@@ -6,9 +6,7 @@
 function updateSession(handle: number, options: HuksOptions, callback: AsyncCallback<HuksReturnResult>): void
 ```
 
-updateSession操作密钥接口。使用callback异步回调。
-
-huks.initSession、huks.updateSession、huks.finishSession为三段式接口，需要一起使用。
+updateSession操作密钥接口。使用callback异步回调。 huks.initSession、huks.updateSession、huks.finishSession为三段式接口，需要一起使用。
 
 **起始版本：** 9
 
@@ -61,8 +59,7 @@ function updateSession(
   ): void
 ```
 
-Updates the key operation by segment. This API uses an asynchronous callback to return the result.
-huks.initSession, huks.updateSession, and huks.finishSession must be used together.
+Updates the key operation by segment. This API uses an asynchronous callback to return the result. huks.initSession, huks.updateSession, and huks.finishSession must be used together.
 
 **起始版本：** 9
 
@@ -107,9 +104,7 @@ huks.initSession, huks.updateSession, and huks.finishSession must be used togeth
 function updateSession(handle: number, options: HuksOptions, token?: Uint8Array): Promise<HuksReturnResult>
 ```
 
-updateSession操作密钥接口。使用Promise异步回调。
-
-huks.initSession、huks.updateSession、huks.finishSession为三段式接口，需要一起使用。
+updateSession操作密钥接口。使用Promise异步回调。 huks.initSession、huks.updateSession、huks.finishSession为三段式接口，需要一起使用。
 
 **起始版本：** 9
 

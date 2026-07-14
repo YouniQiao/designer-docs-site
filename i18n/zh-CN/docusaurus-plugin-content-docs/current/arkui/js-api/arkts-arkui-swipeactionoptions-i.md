@@ -1,10 +1,6 @@
 # SwipeActionOptions
 
-start和end对应的@builder函数中顶层必须是单个组件，否则会引发未定义行为。
-如果@builder函数中顶层是if/else、ForEach等语句，那么需要保证if/else、ForEach等语句必须能生成单个组件。
-
-滑动手势只在listItem区域上，如果子组件划出ListItem区域外，在ListItem以外部分不会响应划动手势。
-所以在多列模式下，建议不要将划出组件设置太宽。
+start和end对应的@builder函数中顶层必须是单个组件，否则会引发未定义行为。 如果@builder函数中顶层是if/else、ForEach等语句，那么需要保证if/else、ForEach等语句必须能生成单个组件。 滑动手势只在listItem区域上，如果子组件划出ListItem区域外，在ListItem以外部分不会响应划动手势。 所以在多列模式下，建议不要将划出组件设置太宽。
 
 **起始版本：** 9
 

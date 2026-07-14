@@ -1,11 +1,6 @@
 # HoverModeRegionLayoutOptions
 
-悬停态布局信息。
-
-> **说明：**
->
-> 1.在悬停状态下，设备存在避让区域，布局计算时需考虑该区域的影响。
-> > 2.在悬停模式下，屏幕上半部分为显示区域，下半部分为操作区域。
+悬停态布局信息。 > **说明：** > > 1.在悬停状态下，设备存在避让区域，布局计算时需考虑该区域的影响。 > > 2.在悬停模式下，屏幕上半部分为显示区域，下半部分为操作区域。
 
 **起始版本：** 12
 
@@ -17,9 +12,7 @@
 extraRegionPosition?: ExtraRegionPosition
 ```
 
-扩展区域的位置信息，当且仅当showExtraRegion设置为true时此字段才生效。
-
-默认值：ExtraRegionPosition.top
+扩展区域的位置信息，当且仅当showExtraRegion设置为true时此字段才生效。 默认值：ExtraRegionPosition.top
 
 **类型：** ExtraRegionPosition
 
@@ -37,9 +30,7 @@ extraRegionPosition?: ExtraRegionPosition
 horizontalSplitRatio?: number
 ```
 
-主要区域与扩展区域之间的宽度比例。此字段在extra有效时生效。
-
-默认值：[PresetSplitRatio](arkts-na-presetsplitratio-e.md).LAYOUT_3V2
+主要区域与扩展区域之间的宽度比例。此字段在extra有效时生效。 默认值：[PresetSplitRatio](arkts-na-presetsplitratio-e.md).LAYOUT_3V2
 
 **类型：** number
 
@@ -57,9 +48,7 @@ horizontalSplitRatio?: number
 showExtraRegion?: boolean
 ```
 
-可折叠屏幕在半折叠状态下是否显示扩展区域。设置为true时表示显示扩展区域，设置为false时表示不显示扩展区域。
-
-默认值：false
+可折叠屏幕在半折叠状态下是否显示扩展区域。设置为true时表示显示扩展区域，设置为false时表示不显示扩展区域。 默认值：false
 
 **类型：** boolean
 

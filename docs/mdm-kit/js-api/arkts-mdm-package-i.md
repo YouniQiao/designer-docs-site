@@ -18,8 +18,7 @@ import { systemManager } from '@kit.MDMKit';
 fd?: number
 ```
 
-File descriptor (FD) of the system update package. Currently, you cannot pass in **path** only. The **fd**
-parameter must also be passed in.
+File descriptor (FD) of the system update package. Currently, you cannot pass in **path** only. The **fd** parameter must also be passed in.
 
 **Type:** number
 

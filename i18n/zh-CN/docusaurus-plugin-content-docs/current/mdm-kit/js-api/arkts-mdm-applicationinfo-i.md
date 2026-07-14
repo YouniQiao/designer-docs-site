@@ -12,8 +12,7 @@
 readonly accessTokenId: number
 ```
 
-应用程序的accessTokenId，应用的身份标识，在程序访问控制校验接口
-[checkAccessToken](../../../../reference/apis-ability-kit/js-apis-abilityAccessCtrl.md#checkaccesstoken9)中使用。
+应用程序的accessTokenId，应用的身份标识，在程序访问控制校验接口 [checkAccessToken](../../../../reference/apis-ability-kit/js-apis-abilityAccessCtrl.md#checkaccesstoken9)中使用。
 
 **类型：** number
 
@@ -125,8 +124,7 @@ readonly debug: boolean
 readonly description: string
 ```
 
-标识应用的描述信息，对应[app.json5](../../../../quick-start/app-configuration-file.md)中配置的description字段。关于description的详细信息详见本表中
-的descriptionResource字段说明。
+标识应用的描述信息，对应[app.json5](../../../../quick-start/app-configuration-file.md)中配置的description字段。关于description的详细信息详见本表中 的descriptionResource字段说明。
 
 **类型：** string
 
@@ -190,8 +188,7 @@ readonly enabled: boolean
 readonly icon: string
 ```
 
-应用程序的图标，对应[app.json5](../../../../quick-start/app-configuration-file.md)中配置的icon字段。关于icon的详细信息详见本表中的iconResource字段说
-明。
+应用程序的图标，对应[app.json5](../../../../quick-start/app-configuration-file.md)中配置的icon字段。关于icon的详细信息详见本表中的iconResource字段说 明。
 
 **类型：** string
 
@@ -255,13 +252,7 @@ readonly iconResource: Resource
 readonly installSource: string
 ```
 
-应用程序的安装来源，支持的取值如下：
-
-- pre-installed表示应用为第一次开机时安装的预置应用。
-- ota表示应用为系统升级时新增的预置应用。
-- recovery表示卸载后再恢复的预置应用。
-- bundleName表示应用由此包名对应的应用安装。
-- unknown表示应用安装来源未知。
+应用程序的安装来源，支持的取值如下： - pre-installed表示应用为第一次开机时安装的预置应用。 - ota表示应用为系统升级时新增的预置应用。 - recovery表示卸载后再恢复的预置应用。 - bundleName表示应用由此包名对应的应用安装。 - unknown表示应用安装来源未知。
 
 **类型：** string
 
@@ -373,8 +364,7 @@ readonly process: string
 readonly releaseType: string
 ```
 
-标识应用打包时使用的SDK的发布类型。当前SDK的发布类型可能为Canary、Beta、Release，其中Canary和Beta可能通过序号进一步细分，例如Canary1、Canary2、Beta1、Beta2等。开发者可通
-过对比应用打包依赖的SDK发布类型和OS的发布类型（[deviceInfo.distributionOSReleaseType](../../apis-basic-service-kit/arkts-apis/arkts-deviceinfo.md)）来判断兼容性。
+标识应用打包时使用的SDK的发布类型。当前SDK的发布类型可能为Canary、Beta、Release，其中Canary和Beta可能通过序号进一步细分，例如Canary1、Canary2、Beta1、Beta2等。开发者可通 过对比应用打包依赖的SDK发布类型和OS的发布类型（[deviceInfo.distributionOSReleaseType](../../apis-basic-service-kit/arkts-apis/arkts-deviceinfo.md)）来判断兼容性。
 
 **类型：** string
 

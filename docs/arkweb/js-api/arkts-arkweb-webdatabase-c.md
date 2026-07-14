@@ -1,12 +1,6 @@
 # WebDataBase
 
-Implements a **WebDataBase** object.
-
-> **NOTE**
->
-> - The sample effect is subject to the actual device.
->
-> - You must load the **Web** component before calling the APIs in **WebDataBase**.
+Implements a **WebDataBase** object. > **NOTE** > > - The sample effect is subject to the actual device. > > - You must load the **Web** component before calling the APIs in **WebDataBase**.
 
 **Since:** 9
 

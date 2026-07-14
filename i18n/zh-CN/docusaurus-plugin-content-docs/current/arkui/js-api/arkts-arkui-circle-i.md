@@ -48,9 +48,7 @@ centerY: number
 radius: number
 ```
 
-圆形的半径，单位为px。
-
-取值范围：[0, +∞)
+圆形的半径，单位为px。 取值范围：[0, +∞)
 
 **类型：** number
 

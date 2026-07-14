@@ -1,7 +1,6 @@
 # RadioConfiguration
 
-You need a custom class to implement the **ContentModifier** API. Inherits from
-[CommonConfiguration](arkts-arkui-commonconfiguration-i.md).
+You need a custom class to implement the **ContentModifier** API. Inherits from [CommonConfiguration](arkts-arkui-commonconfiguration-i.md).
 
 **Inheritance/Implementation:** RadioConfiguration extends [CommonConfiguration<RadioConfiguration>](CommonConfiguration<RadioConfiguration>)
 
@@ -15,11 +14,7 @@ You need a custom class to implement the **ContentModifier** API. Inherits from
 checked: boolean
 ```
 
-Whether the radio button is selected.
-
-Default value: **false**
-
-**true**: The radio button is selected. **false**: The radio button is not selected.
+Whether the radio button is selected. Default value: **false** **true**: The radio button is selected. **false**: The radio button is not selected.
 
 **Type:** boolean
 
@@ -37,10 +32,7 @@ Default value: **false**
 triggerChange: Callback<boolean>
 ```
 
-Changes the selected state of the radio button.
-
-The value **true** means that the radio button changes from unselected to selected, and **false** means that the
-radio button changes from selected to unselected.
+Changes the selected state of the radio button. The value **true** means that the radio button changes from unselected to selected, and **false** means that the radio button changes from selected to unselected.
 
 **Type:** Callback<boolean>
 

@@ -52,8 +52,7 @@ Name of the column, in which the field is located.
 nullable: boolean
 ```
 
-Whether the current column can be null.
-The value true means the current column can be null; the value false means the opposite.
+Whether the current column can be null. The value true means the current column can be null; the value false means the opposite.
 
 **Type:** boolean
 
@@ -69,8 +68,7 @@ The value true means the current column can be null; the value false means the o
 primary: boolean
 ```
 
-Whether the current column is the primary key.
-The value true means the current column is the primary key; the value false means the opposite.
+Whether the current column is the primary key. The value true means the current column is the primary key; the value false means the opposite.
 
 **Type:** boolean
 

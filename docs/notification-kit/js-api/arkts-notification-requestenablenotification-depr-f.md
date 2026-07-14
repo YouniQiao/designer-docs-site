@@ -6,8 +6,7 @@
 function requestEnableNotification(callback: AsyncCallback<void>): void
 ```
 
-Requests notification to be enabled for this application. This API uses an asynchronous callback to return the
-result.
+Requests notification to be enabled for this application. This API uses an asynchronous callback to return the result.
 
 **Since:** 8
 

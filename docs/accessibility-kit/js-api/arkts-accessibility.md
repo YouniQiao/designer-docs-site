@@ -21,7 +21,7 @@ import { accessibility } from '@kit.AccessibilityKit';
 
 | Name | Description |
 | --- | --- |
-| [AccessibilityAction](arkts-accessibility-accessibilityaction-e-sys.md) | Enumerates executable actions for accessibility node elements.Accessibility node elements are UI components that support accessibility actions, such as buttons, text boxes, and soon. |
+| [AccessibilityAction](arkts-accessibility-accessibilityaction-e-sys.md) | Enumerates executable actions for accessibility node elements. Accessibility node elements are UI components that support accessibility actions, such as buttons, text boxes, and so on. |
 | [AccessibilityEventType](arkts-accessibility-accessibilityeventtype-e-sys.md) | Enumerates accessibility event types. |
 | [AccessibilityFocusScene](arkts-accessibility-accessibilityfocusscene-e-sys.md) | Enumeration of scenes of accessibility focus. |
 | [AccessibilitySourceType](arkts-accessibility-accessibilitysourcetype-e-sys.md) | Accessibility Element Source Type Enumeration |

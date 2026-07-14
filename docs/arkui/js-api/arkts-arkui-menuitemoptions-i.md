@@ -44,8 +44,7 @@ Content of the menu item.
 endIcon?: ResourceStr
 ```
 
-End icon of the menu item. Symbol icons are not supported. If the symbol icon is used, **symbolEndIcon** must be
-used.
+End icon of the menu item. Symbol icons are not supported. If the symbol icon is used, **symbolEndIcon** must be used.
 
 **Type:** ResourceStr
 
@@ -77,8 +76,7 @@ Label information at the end of the menu item, such as shortcut keys like Ctrl+C
 startIcon?: ResourceStr
 ```
 
-Start icon of the menu item. Symbol icons are not supported. If a symbol icon is used, **symbolStartIcon** must be
-used.
+Start icon of the menu item. Symbol icons are not supported. If a symbol icon is used, **symbolStartIcon** must be used.
 
 **Type:** ResourceStr
 
@@ -94,8 +92,7 @@ used.
 symbolEndIcon?: SymbolGlyphModifier
 ```
 
-Symbol icon at the end of a menu item. When this parameter is set, the icon set through **endIcon** is not
-displayed.
+Symbol icon at the end of a menu item. When this parameter is set, the icon set through **endIcon** is not displayed.
 
 **Type:** SymbolGlyphModifier
 
@@ -113,8 +110,7 @@ displayed.
 symbolStartIcon?: SymbolGlyphModifier
 ```
 
-Symbol icon at the start of a menu item. When this parameter is set, the icon set through **startIcon** is not
-displayed.
+Symbol icon at the start of a menu item. When this parameter is set, the icon set through **startIcon** is not displayed.
 
 **Type:** SymbolGlyphModifier
 

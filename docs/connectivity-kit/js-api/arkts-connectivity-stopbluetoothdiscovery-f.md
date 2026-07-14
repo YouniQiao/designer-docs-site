@@ -12,9 +12,7 @@ import { bluetoothManager } from '@kit.ConnectivityKit';
 function stopBluetoothDiscovery(): void
 ```
 
-Stops Bluetooth device scanning.
-On API 10 and above, the permission required by this interface is changed from DISCOVER_BLUETOOTH to
-ACCESS_BLUETOOTH.
+Stops Bluetooth device scanning. On API 10 and above, the permission required by this interface is changed from DISCOVER_BLUETOOTH to ACCESS_BLUETOOTH.
 
 **Since:** 9
 

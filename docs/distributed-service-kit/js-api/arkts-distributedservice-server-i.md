@@ -1,7 +1,6 @@
 # Server
 
-Represents a **Server** object, which provides methods for starting, stopping, and closing the server, and
-registering or unregistering event callbacks.
+Represents a **Server** object, which provides methods for starting, stopping, and closing the server, and registering or unregistering event callbacks.
 
 **Since:** 20
 
@@ -19,8 +18,7 @@ import { linkEnhance } from '@kit.DistributedServiceKit';
 close(): void
 ```
 
-Destroys the **Server** object to release related resources. To interact with the peer device again, create a new
-**Server** object.
+Destroys the **Server** object to release related resources. To interact with the peer device again, create a new **Server** object.
 
 **Since:** 20
 
@@ -64,8 +62,7 @@ try {
 off(type: 'connectionAccepted', callback?: Callback<Connection>): void
 ```
 
-Unregisters the callback listener for **connectionAccepted** events. This API uses an asynchronous callback to
-return the result.
+Unregisters the callback listener for **connectionAccepted** events. This API uses an asynchronous callback to return the result.
 
 **Since:** 20
 
@@ -123,8 +120,7 @@ try {
 off(type: 'serverStopped', callback?: Callback<number>): void
 ```
 
-Unregisters the callback listener for **serverStopped** events. This API uses an asynchronous callback to return
-the result.
+Unregisters the callback listener for **serverStopped** events. This API uses an asynchronous callback to return the result.
 
 **Since:** 20
 
@@ -182,8 +178,7 @@ try {
 on(type: 'connectionAccepted', callback: Callback<Connection>): void
 ```
 
-Registers a callback listener for **connectionAccepted** events. This API uses an asynchronous callback to return
-the result.
+Registers a callback listener for **connectionAccepted** events. This API uses an asynchronous callback to return the result.
 
 **Since:** 20
 
@@ -241,8 +236,7 @@ try {
 on(type: 'serverStopped', callback: Callback<number>): void
 ```
 
-Registers a callback listener for **serverStopped** events. This API uses an asynchronous callback to return the
-result.
+Registers a callback listener for **serverStopped** events. This API uses an asynchronous callback to return the result.
 
 **Since:** 20
 

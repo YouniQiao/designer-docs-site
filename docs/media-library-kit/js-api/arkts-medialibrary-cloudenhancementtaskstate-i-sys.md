@@ -1,7 +1,6 @@
 # CloudEnhancementTaskState (System API)
 
-Represents the cloud enhancement task information,
-which includes the cloud enhancement task state and other information related to certain states.
+Represents the cloud enhancement task information, which includes the cloud enhancement task state and other information related to certain states.
 
 **Since:** 13
 
@@ -21,7 +20,7 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 readonly expectedDuration?: number
 ```
 
-Indicates the expected duration of cloud enhancement queue time.
+Queuing time. This parameter is mandatory when **taskStage** is **CloudEnhancementTaskStage.TASK_STAGE_EXECUTING**.
 
 **Type:** number
 
@@ -37,7 +36,7 @@ Indicates the expected duration of cloud enhancement queue time.
 readonly statusCode?: number
 ```
 
-Status code when failed in cloud enhancement.
+Status code. This parameter is mandatory when **taskStage** is **CloudEnhancementTaskStage.TASK_STAGE_FAILED**.
 
 **Type:** number
 
@@ -53,7 +52,7 @@ Status code when failed in cloud enhancement.
 readonly taskStage: CloudEnhancementTaskStage
 ```
 
-Indicates the cloud enhancement task stage.
+Cloud enhancement task state.
 
 **Type:** CloudEnhancementTaskStage
 
@@ -69,7 +68,7 @@ Indicates the cloud enhancement task stage.
 readonly totalFileSize?: number
 ```
 
-Indicates the total file size.
+Total file size. This parameter is mandatory when **taskStage** is **CloudEnhancementTaskStage.TASK_STAGE_UPLOADING** or **CloudEnhancementTaskStage.TASK_STAGE_DOWNLOADING**.
 
 **Type:** number
 
@@ -85,7 +84,7 @@ Indicates the total file size.
 readonly transferredFileSize?: number
 ```
 
-Indicates the transferred file size.
+Size of the file transferred. This parameter is mandatory when **taskStage** is **CloudEnhancementTaskStage.TASK_STAGE_UPLOADING** or **CloudEnhancementTaskStage.TASK_STAGE_DOWNLOADING**.
 
 **Type:** number
 

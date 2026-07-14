@@ -76,9 +76,7 @@ Ring style with scales, which is similar to the clock scale style.
 Capsule
 ```
 
-Capsule style. At both ends, the progress indicator works in the same manner as the eclipse style. In the middle
-part of the capsule, the progress indicator works in the same manner as the linear style. When the height is
-greater than the width, the progress indicator adapts to vertical display.
+Capsule style. At both ends, the progress indicator works in the same manner as the eclipse style. In the middle part of the capsule, the progress indicator works in the same manner as the linear style. When the height is greater than the width, the progress indicator adapts to vertical display.
 
 **Since:** 8
 

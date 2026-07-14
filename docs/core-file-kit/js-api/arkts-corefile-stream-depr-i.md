@@ -1,7 +1,6 @@
 # Stream
 
-Provides a stream for file operations. Before calling any API of the **Stream** class, use **createStream()** to
-create a **Stream** instance synchronously or asynchronously.
+Provides a stream for file operations. Before calling any API of the **Stream** class, use **createStream()** to create a **Stream** instance synchronously or asynchronously.
 
 **Since:** 6
 

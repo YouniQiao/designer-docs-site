@@ -2,7 +2,6 @@
 
 Defines the FormLink interface.
 
-
 ## FormLink
 
 ```TypeScript

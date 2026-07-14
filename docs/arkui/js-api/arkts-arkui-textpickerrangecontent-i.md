@@ -30,11 +30,7 @@ Image resource. If the value is a string, such as **"/common/hello.png"**, it re
 text?: string | Resource
 ```
 
-Text information.
-
-An empty character string is used by default.
-
-Note: Text truncation occurs when content exceeds column width.
+Text information. An empty character string is used by default. Note: Text truncation occurs when content exceeds column width.
 
 **Type:** string | Resource
 

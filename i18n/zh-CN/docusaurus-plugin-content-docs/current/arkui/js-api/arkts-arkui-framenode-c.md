@@ -92,8 +92,7 @@ adoptChild(child: FrameNode): void
 appendChild(node: FrameNode): void
 ```
 
-在FrameNode最后一个子节点后添加新的子节点。当前FrameNode如果不可修改，抛出异常信息。[typeNode](arkts-arkui-typenode-n.md)在appendChild时会校验子组件类型或个数，不满足时抛出异常信息，限制
-情况请查看[typeNode](arkts-arkui-typenode-n.md)描述。
+在FrameNode最后一个子节点后添加新的子节点。当前FrameNode如果不可修改，抛出异常信息。[typeNode](arkts-arkui-typenode-n.md)在appendChild时会校验子组件类型或个数，不满足时抛出异常信息，限制 情况请查看[typeNode](arkts-arkui-typenode-n.md)描述。
 
 **起始版本：** 12
 
@@ -360,15 +359,7 @@ static createFrameNodes(uiContext: UIContext, count: number): FrameNode[]
 dispose(): void
 ```
 
-立即解除当前FrameNode对象对实体FrameNode节点的引用关系。
-
-> **说明：**
->
-> - FrameNode对象调用dispose后，由于不对应任何实体FrameNode节点，在调用部分查询接口([getMeasuredSize](arkts-arkui-framenode-c.md#getmeasuredsize-1)、
-> [getLayoutPosition](arkts-arkui-framenode-c.md#getlayoutposition-1))的时候会导致应用出现jscrash。
->
-> - 通过[getUniqueId](arkts-arkui-framenode-c.md#getuniqueid-1)可以判断当前FrameNode是否对应一个实体FrameNode节点。当UniqueId大于0时表示该对象对应一个实体
-> FrameNode节点。
+立即解除当前FrameNode对象对实体FrameNode节点的引用关系。 > **说明：** > > - FrameNode对象调用dispose后，由于不对应任何实体FrameNode节点，在调用部分查询接口([getMeasuredSize](arkts-arkui-framenode-c.md#getmeasuredsize-1)、 > [getLayoutPosition](arkts-arkui-framenode-c.md#getlayoutposition-1))的时候会导致应用出现jscrash。 > > - 通过[getUniqueId](arkts-arkui-framenode-c.md#getuniqueid-1)可以判断当前FrameNode是否对应一个实体FrameNode节点。当UniqueId大于0时表示该对象对应一个实体 > FrameNode节点。
 
 **起始版本：** 12
 
@@ -701,11 +692,7 @@ getId(): string
 getInspectorInfo(): Object
 ```
 
-获取节点的结构信息，该信息和DevEco Studio内置<!--RP1-->ArkUI Inspector<!--RP1End-->工具里面的一致。
-
-> **说明：**
->
-> getInspectorInfo接口用于获取所有节点的信息，作为调试接口使用，频繁调用会导致性能下降。
+获取节点的结构信息，该信息和DevEco Studio内置<!--RP1-->ArkUI Inspector<!--RP1End-->工具里面的一致。 > **说明：** > > getInspectorInfo接口用于获取所有节点的信息，作为调试接口使用，频繁调用会导致性能下降。
 
 **起始版本：** 12
 
@@ -959,8 +946,7 @@ getPositionToParent(): Position
 getPositionToParentWithTransform(): Position
 ```
 
-获取FrameNode相对于父组件带有绘制属性的位置偏移，单位为VP，绘制属性比如[transform](../arkts-components/arkts-arkui-commonmethod-c.md#transform-1),
-[translate](../arkts-components/arkts-arkui-commonmethod-c.md#translate-1)等，返回的坐标是组件布局时左上角变换后的坐标。
+获取FrameNode相对于父组件带有绘制属性的位置偏移，单位为VP，绘制属性比如[transform](../arkts-components/arkts-arkui-commonmethod-c.md#transform-1), [translate](../arkts-components/arkts-arkui-commonmethod-c.md#translate-1)等，返回的坐标是组件布局时左上角变换后的坐标。
 
 **起始版本：** 12
 
@@ -1004,8 +990,7 @@ getPositionToScreen(): Position
 getPositionToScreenWithTransform(): Position
 ```
 
-获取FrameNode相对于屏幕带有绘制属性的位置偏移，单位为VP，绘制属性比如[transform](../arkts-components/arkts-arkui-commonmethod-c.md#transform-1),
-[translate](../arkts-components/arkts-arkui-commonmethod-c.md#translate-1)等，返回的坐标是组件布局时左上角变换后的坐标。
+获取FrameNode相对于屏幕带有绘制属性的位置偏移，单位为VP，绘制属性比如[transform](../arkts-components/arkts-arkui-commonmethod-c.md#transform-1), [translate](../arkts-components/arkts-arkui-commonmethod-c.md#translate-1)等，返回的坐标是组件布局时左上角变换后的坐标。
 
 **起始版本：** 12
 
@@ -1049,8 +1034,7 @@ getPositionToWindow(): Position
 getPositionToWindowWithTransform(): Position
 ```
 
-获取FrameNode相对于窗口带有绘制属性的位置偏移，单位为VP，绘制属性比如[transform](../arkts-components/arkts-arkui-commonmethod-c.md#transform-1),
-[translate](../arkts-components/arkts-arkui-commonmethod-c.md#translate-1)等，返回的坐标是组件布局时左上角变换后的坐标。
+获取FrameNode相对于窗口带有绘制属性的位置偏移，单位为VP，绘制属性比如[transform](../arkts-components/arkts-arkui-commonmethod-c.md#transform-1), [translate](../arkts-components/arkts-arkui-commonmethod-c.md#translate-1)等，返回的坐标是组件布局时左上角变换后的坐标。
 
 **起始版本：** 12
 
@@ -1272,11 +1256,7 @@ invalidate(): void
 invalidateAttributes(): void
 ```
 
-在当前帧触发节点属性更新。
-
-当前节点的属性在构建阶段后被修改，这些改动不会立即生效，而是延迟到下一帧统一处理。
-
-此功能强制当前帧内即时节点更新，确保同步应用渲染效果。
+在当前帧触发节点属性更新。 当前节点的属性在构建阶段后被修改，这些改动不会立即生效，而是延迟到下一帧统一处理。 此功能强制当前帧内即时节点更新，确保同步应用渲染效果。
 
 **起始版本：** 21
 
@@ -1336,8 +1316,7 @@ isClipToFrame(): boolean
 isDisposed(): boolean
 ```
 
-查询当前FrameNode对象是否已解除与后端实体节点的引用关系。前端节点均绑定有相应的后端实体节点，当节点调用dispose接口解除绑定后，再次调用接口可能会出现crash、返回默认值的情况。由于业务需求，可能存在节点在
-dispose后仍被调用接口的情况。为此，提供此接口以供开发者在操作节点前检查其有效性，避免潜在风险。
+查询当前FrameNode对象是否已解除与后端实体节点的引用关系。前端节点均绑定有相应的后端实体节点，当节点调用dispose接口解除绑定后，再次调用接口可能会出现crash、返回默认值的情况。由于业务需求，可能存在节点在 dispose后仍被调用接口的情况。为此，提供此接口以供开发者在操作节点前检查其有效性，避免潜在风险。
 
 **起始版本：** 20
 
@@ -1453,11 +1432,7 @@ isTransferred(): boolean
 isVisible(): boolean
 ```
 
-获取节点是否可见。
-
-> **说明：**
->
-> 根据组件设置的visibility属性值判断该节点是否可见。
+获取节点是否可见。 > **说明：** > > 根据组件设置的visibility属性值判断该节点是否可见。
 
 **起始版本：** 12
 
@@ -1523,16 +1498,7 @@ measure(constraint: LayoutConstraint): void
 moveTo(targetParent: FrameNode, index?: number): void
 ```
 
-将当前FrameNode移动到目标FrameNode的指定位置。当前FrameNode如果不可修改，抛出异常信息。targetParent为[typeNode](arkts-arkui-typenode-n.md)时会校验子组件类型或个数，不满足时抛出
-异常信息，限制情况请查看[typeNode](arkts-arkui-typenode-n.md)描述。
-
-> **说明：**
->
-> 当前仅支持以下类型的[TypedFrameNode](arkts-arkui-typedframenode-i.md)进行移动操作：[Stack](arkts-arkui-stack-t.md)、
-> [XComponent](arkts-arkui-xcomponent-t.md)。对于其他类型的节点，移动操作不会生效。
->
-> 当前仅支持根节点为以下类型组件的[BuilderNode](arkts-arkui-buildernode-c.md)进行移动操作：[Stack](../arkts-components/arkts-arkui-stack.md)、
-> [XComponent](xcomponent)、[EmbeddedComponent](embedded_component)。对于其他类型的组件，移动操作不会生效。
+将当前FrameNode移动到目标FrameNode的指定位置。当前FrameNode如果不可修改，抛出异常信息。targetParent为[typeNode](arkts-arkui-typenode-n.md)时会校验子组件类型或个数，不满足时抛出 异常信息，限制情况请查看[typeNode](arkts-arkui-typenode-n.md)描述。 > **说明：** > > 当前仅支持以下类型的[TypedFrameNode](arkts-arkui-typedframenode-i.md)进行移动操作：[Stack](arkts-arkui-stack-t.md)、 > [XComponent](arkts-arkui-xcomponent-t.md)。对于其他类型的节点，移动操作不会生效。 > > 当前仅支持根节点为以下类型组件的[BuilderNode](arkts-arkui-buildernode-c.md)进行移动操作：[Stack](../arkts-components/arkts-arkui-stack.md)、 > [XComponent](../arkts-components/arkts-arkui-xcomponent.md)、[EmbeddedComponent](../arkts-components/arkts-arkui-embeddedcomponent.md)。对于其他类型的组件，移动操作不会生效。
 
 **起始版本：** 18
 
@@ -1562,10 +1528,7 @@ moveTo(targetParent: FrameNode, index?: number): void
 onDraw?(context: DrawContext): void
 ```
 
-FrameNode的自绘制方法，该方法会重写默认绘制方法，在FrameNode进行内容绘制时被调用。
-
-该接口的[DrawContext](arkts-arkui-drawcontext-c.md)中的Canvas是用于记录指令的临时Canvas，并非节点的真实Canvas。使用请参见
-[调整自定义绘制Canvas的变换矩阵](../../../../ui/arkts-user-defined-arktsNode-frameNode.md#调整自定义绘制canvas的变换矩阵)。
+FrameNode的自绘制方法，该方法会重写默认绘制方法，在FrameNode进行内容绘制时被调用。 该接口的[DrawContext](arkts-arkui-drawcontext-c.md)中的Canvas是用于记录指令的临时Canvas，并非节点的真实Canvas。使用请参见 [调整自定义绘制Canvas的变换矩阵](../../../../ui/arkts-user-defined-arktsNode-frameNode.md#调整自定义绘制canvas的变换矩阵)。
 
 **起始版本：** 12
 
@@ -1741,21 +1704,7 @@ reuse(): void
 setCrossLanguageOptions(options: CrossLanguageOptions): void
 ```
 
-设置当前FrameNode的跨ArkTS语言访问选项。例如ArkTS语言创建的节点，设置该节点是否可通过非ArkTS语言进行属性设置，从API版本26.0.0开始支持设置是否可通过非ArkTS语言进行组件树操作。当前
-FrameNode如果不可修改或不可设置跨ArkTS语言访问选项，抛出异常信息。
-
-> **说明：**
->
-> 当前仅支持[Scroll](arkts-arkui-scroll-t.md), [Swiper](arkts-arkui-swiper-t.md)，[List](arkts-arkui-list-t.md)，
-> [ListItem](arkts-arkui-listitem-t.md)，[ListItemGroup](arkts-arkui-listitemgroup-t.md)，
-> [WaterFlow](arkts-arkui-waterflow-t.md)，[FlowItem](arkts-arkui-flowitem-t.md)，[Grid](arkts-arkui-grid-t.md)，
-> [GridItem](arkts-arkui-griditem-t.md)，[TextInput](arkts-arkui-textinput-t.md)，[TextArea](arkts-arkui-textarea-t.md)，
-> [Column](arkts-arkui-column-t.md)，[Row](arkts-arkui-row-t.md)，[Stack](arkts-arkui-stack-t.md)，
-> [Flex](arkts-arkui-flex-t.md)，[RelativeContainer](arkts-arkui-relativecontainer-t.md)，
-> [Progress](arkts-arkui-progress-t.md)，[LoadingProgress](arkts-arkui-loadingprogress-t.md)，
-> [Image](arkts-arkui-image-t.md)，[Button](arkts-arkui-button-t.md)，[CheckBox](arkts-arkui-checkbox-t.md)，
-> [Radio](arkts-arkui-radio-t.md)，[Slider](arkts-arkui-slider-t.md)，[Toggle](arkts-arkui-toggle-t.md)，
-> [XComponent](arkts-arkui-xcomponent-t.md)类型的[TypedFrameNode](arkts-arkui-typedframenode-i.md)设置跨ArkTS语言访问选项。
+设置当前FrameNode的跨ArkTS语言访问选项。例如ArkTS语言创建的节点，设置该节点是否可通过非ArkTS语言进行属性设置，从API版本26.0.0开始支持设置是否可通过非ArkTS语言进行组件树操作。当前 FrameNode如果不可修改或不可设置跨ArkTS语言访问选项，抛出异常信息。 > **说明：** > > 当前仅支持[Scroll](arkts-arkui-scroll-t.md), [Swiper](arkts-arkui-swiper-t.md)，[List](arkts-arkui-list-t.md)， > [ListItem](arkts-arkui-listitem-t.md)，[ListItemGroup](arkts-arkui-listitemgroup-t.md)， > [WaterFlow](arkts-arkui-waterflow-t.md)，[FlowItem](arkts-arkui-flowitem-t.md)，[Grid](arkts-arkui-grid-t.md)， > [GridItem](arkts-arkui-griditem-t.md)，[TextInput](arkts-arkui-textinput-t.md)，[TextArea](arkts-arkui-textarea-t.md)， > [Column](arkts-arkui-column-t.md)，[Row](arkts-arkui-row-t.md)，[Stack](arkts-arkui-stack-t.md)， > [Flex](arkts-arkui-flex-t.md)，[RelativeContainer](arkts-arkui-relativecontainer-t.md)， > [Progress](arkts-arkui-progress-t.md)，[LoadingProgress](arkts-arkui-loadingprogress-t.md)， > [Image](arkts-arkui-image-t.md)，[Button](arkts-arkui-button-t.md)，[CheckBox](arkts-arkui-checkbox-t.md)， > [Radio](arkts-arkui-radio-t.md)，[Slider](arkts-arkui-slider-t.md)，[Toggle](arkts-arkui-toggle-t.md)， > [XComponent](arkts-arkui-xcomponent-t.md)类型的[TypedFrameNode](arkts-arkui-typedframenode-i.md)设置跨ArkTS语言访问选项。
 
 **起始版本：** 15
 
@@ -1843,16 +1792,7 @@ setNeedsLayout(): void
 get commonAttribute(): CommonAttribute
 ```
 
-获取FrameNode中持有的CommonAttribute接口，用于设置[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)和[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)。
-
-仅可以修改自定义节点的属性。
-
-> **说明：**
->
-> FrameNode的效果参考对齐方式为顶部起始端的[Stack](../arkts-components/arkts-arkui-stack.md)容器组件。
->
-> FrameNode的属性支持情况参考
-> [属性或事件对attributemodifier的支持情况](../../../../ui/arkts-user-defined-extension-attributeModifier.md#属性或事件对attributemodifier的支持情况)。
+获取FrameNode中持有的CommonAttribute接口，用于设置[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)和[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)。 仅可以修改自定义节点的属性。 > **说明：** > > FrameNode的效果参考对齐方式为顶部起始端的[Stack](../arkts-components/arkts-arkui-stack.md)容器组件。 > > FrameNode的属性支持情况参考 > [属性或事件对attributemodifier的支持情况](../../../../ui/arkts-user-defined-extension-attributeModifier.md#属性或事件对attributemodifier的支持情况)。
 
 **类型：** CommonAttribute
 
@@ -1870,9 +1810,7 @@ get commonAttribute(): CommonAttribute
 get commonEvent(): UICommonEvent
 ```
 
-获取FrameNode中持有的UICommonEvent对象，用于设置基础事件。设置的基础事件与声明式定义的事件平行，参与事件竞争；设置的基础事件不覆盖原有的声明式事件。同时设置两个事件回调的时候，优先回调声明式事件。
-
-LazyForEach场景下，由于存在节点的销毁重建，对于重建的节点需要重新设置事件回调才能保证监听事件正常响应。
+获取FrameNode中持有的UICommonEvent对象，用于设置基础事件。设置的基础事件与声明式定义的事件平行，参与事件竞争；设置的基础事件不覆盖原有的声明式事件。同时设置两个事件回调的时候，优先回调声明式事件。 LazyForEach场景下，由于存在节点的销毁重建，对于重建的节点需要重新设置事件回调才能保证监听事件正常响应。
 
 **类型：** UICommonEvent
 
@@ -1890,8 +1828,7 @@ LazyForEach场景下，由于存在节点的销毁重建，对于重建的节点
 get gestureEvent(): UIGestureEvent
 ```
 
-获取FrameNode中持有的UIGestureEvent对象，用于设置组件绑定的手势事件。通过gestureEvent接口设置的手势不会覆盖通过[绑定手势事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)绑定的手势，两者同时设置了手势时，优先回
-调绑定手势事件设置的手势事件。
+获取FrameNode中持有的UIGestureEvent对象，用于设置组件绑定的手势事件。通过gestureEvent接口设置的手势不会覆盖通过[绑定手势事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)绑定的手势，两者同时设置了手势时，优先回 调绑定手势事件设置的手势事件。
 
 **类型：** UIGestureEvent
 

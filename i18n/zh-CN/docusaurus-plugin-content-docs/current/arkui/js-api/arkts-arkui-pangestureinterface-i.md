@@ -40,8 +40,7 @@
 (options?: PanGestureHandlerOptions): PanGestureInterface
 ```
 
-创建滑动手势对象。与[PanGesture](PanGestureInterface(value?: { fingers?: number; direction?: PanDirection; distance?: number ) | PanGestureOptions)}
-相比，options参数新增了对isFingerCountLimited和distanceMap参数，分别表示是否检查触摸屏幕的手指数量以及指定不同输入源触发滑动手势事件的最小滑动距离。
+创建滑动手势对象。与[PanGesture](PanGestureInterface(value?: { fingers?: number; direction?: PanDirection; distance?: number ) | PanGestureOptions)} 相比，options参数新增了对isFingerCountLimited和distanceMap参数，分别表示是否检查触摸屏幕的手指数量以及指定不同输入源触发滑动手势事件的最小滑动距离。
 
 **起始版本：** 15
 

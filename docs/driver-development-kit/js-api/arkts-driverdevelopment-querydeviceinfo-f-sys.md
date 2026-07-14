@@ -12,8 +12,7 @@ import { deviceManager } from '@kit.DriverDevelopmentKit';
 function queryDeviceInfo(deviceId?: number): Array<Readonly<DeviceInfo>>
 ```
 
-Obtains the list of detailed information about peripherals. If the device has no peripheral device connected, an
-empty list is returned.
+Obtains the list of detailed information about peripherals. If the device has no peripheral device connected, an empty list is returned.
 
 **Since:** 12
 

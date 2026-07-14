@@ -12,10 +12,7 @@ Sets the system focus box style for the component.
 margin?: LengthMetrics
 ```
 
-Distance of the focus box from the component's edge.
-
-A positive number indicates the outside, and a negative number indicates the inside. The value cannot be in
-percentage.
+Distance of the focus box from the component's edge. A positive number indicates the outside, and a negative number indicates the inside. The value cannot be in percentage.
 
 **Type:** LengthMetrics
 
@@ -51,9 +48,7 @@ Stroke color of the focus box.
 strokeWidth?: LengthMetrics
 ```
 
-Stroke width of the focus box.
-
-Negative numbers and percentages are not supported.
+Stroke width of the focus box. Negative numbers and percentages are not supported.
 
 **Type:** LengthMetrics
 

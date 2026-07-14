@@ -1,7 +1,6 @@
 # MediaSourceLoadingRequest
 
-The MediaSourceLoadingRequest class defines a loading request object. Applications use this object to obtain the
-location of the requested resource and to interact with the player for data exchange.
+The MediaSourceLoadingRequest class defines a loading request object. Applications use this object to obtain the location of the requested resource and to interact with the player for data exchange.
 
 **Since:** 18
 
@@ -19,9 +18,7 @@ import { media } from '@kit.MediaKit';
 finishLoading(uuid: number, state: LoadingRequestError): void
 ```
 
-Notifies the player of the current request status. After pushing all the data for a single resource, the
-application should send the **LOADING_ERROR_SUCCESS** state to notify the player that the resource push is
-complete.
+Notifies the player of the current request status. After pushing all the data for a single resource, the application should send the **LOADING_ERROR_SUCCESS** state to notify the player that the resource push is complete.
 
 **Since:** 18
 
@@ -70,8 +67,7 @@ Sends data to the player.
 respondHeader(uuid: number, header?: Record<string, string>, redirectUrl?: string): void
 ```
 
-Sends response header information to the player. This API must be called before the first call to
-[respondData](arkts-media-mediasourceloadingrequest-i.md#responddata-1).
+Sends response header information to the player. This API must be called before the first call to [respondData](arkts-media-mediasourceloadingrequest-i.md#responddata-1).
 
 **Since:** 18
 
@@ -93,8 +89,7 @@ Sends response header information to the player. This API must be called before 
 header?: Record<string, string>
 ```
 
-HTTP request header. If the header exists, the application should set the header information in the HTTP request
-when downloading data.
+HTTP request header. If the header exists, the application should set the header information in the HTTP request when downloading data.
 
 **Type:** Record<string, string>
 

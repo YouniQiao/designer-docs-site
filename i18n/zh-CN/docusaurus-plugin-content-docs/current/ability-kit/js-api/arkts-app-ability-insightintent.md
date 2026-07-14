@@ -19,7 +19,7 @@
 | 名称 | 说明 |
 | --- | --- |
 | [ExecuteResult](arkts-ability-executeresult-i.md) | 意图执行的返回结果。 |
-| [IntentEntity](arkts-ability-intententity-i.md) | 意图实体结构体定义，用于定义意图执行过程中涉及的关键信息对象，包括意图参数和意图执行结果等。开发者通过继承该类来定义意图实体，继承类需使用[@InsightIntentEntity](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintententity)装饰。 |
+| [IntentEntity](arkts-ability-intententity-i.md) | 意图实体结构体定义，用于定义意图执行过程中涉及的关键信息对象，包括意图参数和意图执行结果等。 开发者通过继承该类来定义意图实体，继承类需使用 [@InsightIntentEntity](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintententity) 装饰。 |
 | [IntentResult](arkts-ability-intentresult-i.md) | 意图执行的返回结果，支持[泛型类型](../../../../quick-start/introduction-to-arkts.md#泛型类和接口)。 |
 | [QueryEntityParam](arkts-ability-queryentityparam-i.md) | 查询实体的参数。 |
 

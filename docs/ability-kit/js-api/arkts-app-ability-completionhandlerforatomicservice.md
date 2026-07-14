@@ -12,7 +12,7 @@ import { FailureCode } from '@kit.AbilityKit';
 
 | Name | Description |
 | --- | --- |
-| [CompletionHandlerForAtomicService](arkts-ability-completionhandlerforatomicservice-c.md) | CompletionHandlerForAtomicService provides two callback functions,[onAtomicServiceRequestSuccess](arkts-ability-completionhandlerforatomicservice-c.md#onatomicservicerequestsuccess-1)and[onAtomicServiceRequestFailure](arkts-ability-completionhandlerforatomicservice-c.md#onatomicservicerequestfailure-1), to handle the results of successful and failed atomic service launch requests, respectively. |
+| [CompletionHandlerForAtomicService](arkts-ability-completionhandlerforatomicservice-c.md) | CompletionHandlerForAtomicService provides two callback functions, [onAtomicServiceRequestSuccess](arkts-ability-completionhandlerforatomicservice-c.md#onatomicservicerequestsuccess-1) and [onAtomicServiceRequestFailure](arkts-ability-completionhandlerforatomicservice-c.md#onatomicservicerequestfailure-1) , to handle the results of successful and failed atomic service launch requests, respectively. |
 
 ### Enums
 

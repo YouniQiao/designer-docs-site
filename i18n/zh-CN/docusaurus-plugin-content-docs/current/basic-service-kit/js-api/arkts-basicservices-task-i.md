@@ -1,13 +1,6 @@
 # Task
 
-上传或下载任务。使用该方法前需要先获取Task对象，promise形式通过
-[request.agent.create](arkts-basicservices-create-f.md#create-2)获取，
-callback形式通过
-[request.agent.create](arkts-basicservices-create-f.md#create-1)获取。
-
-> **说明：**
->
-> Task对象及其挂载回调函数会在调用remove方法后释放并被系统自动回收。
+上传或下载任务。使用该方法前需要先获取Task对象，promise形式通过 [request.agent.create](arkts-basicservices-create-f.md#create-2)获取， callback形式通过 [request.agent.create](arkts-basicservices-create-f.md#create-1)获取。 > **说明：** > > Task对象及其挂载回调函数会在调用remove方法后释放并被系统自动回收。
 
 **起始版本：** 10
 
@@ -19,11 +12,7 @@ callback形式通过
 off(event: 'progress', callback?: (progress: Progress) => void): void
 ```
 
-取消订阅任务进度事件。
-
-> **说明：**
->
-> 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
+取消订阅任务进度事件。 > **说明：** > > 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
 
 **起始版本：** 10
 
@@ -51,11 +40,7 @@ off(event: 'progress', callback?: (progress: Progress) => void): void
 off(event: 'completed', callback?: (progress: Progress) => void): void
 ```
 
-取消订阅任务完成事件。
-
-> **说明：**
->
-> 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
+取消订阅任务完成事件。 > **说明：** > > 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
 
 **起始版本：** 10
 
@@ -83,11 +68,7 @@ off(event: 'completed', callback?: (progress: Progress) => void): void
 off(event: 'failed', callback?: (progress: Progress) => void): void
 ```
 
-取消订阅任务失败事件。
-
-> **说明：**
->
-> 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
+取消订阅任务失败事件。 > **说明：** > > 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
 
 **起始版本：** 10
 
@@ -115,11 +96,7 @@ off(event: 'failed', callback?: (progress: Progress) => void): void
 off(event: 'pause', callback?: (progress: Progress) => void): void
 ```
 
-取消订阅任务暂停事件。
-
-> **说明：**
->
-> 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
+取消订阅任务暂停事件。 > **说明：** > > 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
 
 **起始版本：** 11
 
@@ -144,11 +121,7 @@ off(event: 'pause', callback?: (progress: Progress) => void): void
 off(event: 'resume', callback?: (progress: Progress) => void): void
 ```
 
-取消订阅任务恢复事件。
-
-> **说明：**
->
-> 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
+取消订阅任务恢复事件。 > **说明：** > > 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
 
 **起始版本：** 11
 
@@ -173,11 +146,7 @@ off(event: 'resume', callback?: (progress: Progress) => void): void
 off(event: 'remove', callback?: (progress: Progress) => void): void
 ```
 
-取消订阅任务移除事件。
-
-> **说明：**
->
-> 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
+取消订阅任务移除事件。 > **说明：** > > 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
 
 **起始版本：** 11
 
@@ -202,11 +171,7 @@ off(event: 'remove', callback?: (progress: Progress) => void): void
 off(event: 'response', callback?: Callback<HttpResponse>): void
 ```
 
-取消订阅任务响应事件。
-
-> **说明：**
->
-> 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
+取消订阅任务响应事件。 > **说明：** > > 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
 
 **起始版本：** 12
 
@@ -233,11 +198,7 @@ off(event: 'response', callback?: Callback<HttpResponse>): void
 off(event: 'faultOccur', callback?: Callback<Faults>): void
 ```
 
-取消订阅任务失败原因相关的事件。
-
-> **说明：**
->
-> 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
+取消订阅任务失败原因相关的事件。 > **说明：** > > 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
 
 **起始版本：** 20
 
@@ -262,11 +223,7 @@ off(event: 'faultOccur', callback?: Callback<Faults>): void
 off(event: 'wait', callback?: Callback<WaitingReason>): void
 ```
 
-取消订阅任务等待原因相关的事件。
-
-> **说明：**
->
-> 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
+取消订阅任务等待原因相关的事件。 > **说明：** > > 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
 
 **起始版本：** 20
 
@@ -291,11 +248,7 @@ off(event: 'wait', callback?: Callback<WaitingReason>): void
 on(event: 'progress', callback: (progress: Progress) => void): void
 ```
 
-订阅任务进度的事件，使用callback异步回调。
-
-> **说明：**
->
-> 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
+订阅任务进度的事件，使用callback异步回调。 > **说明：** > > 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
 
 **起始版本：** 10
 
@@ -323,11 +276,7 @@ on(event: 'progress', callback: (progress: Progress) => void): void
 on(event: 'completed', callback: (progress: Progress) => void): void
 ```
 
-订阅任务完成事件，使用callback异步回调。
-
-> **说明：**
->
-> 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
+订阅任务完成事件，使用callback异步回调。 > **说明：** > > 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
 
 **起始版本：** 10
 
@@ -355,13 +304,7 @@ on(event: 'completed', callback: (progress: Progress) => void): void
 on(event: 'failed', callback: (progress: Progress) => void): void
 ```
 
-订阅任务失败事件，使用callback异步回调。可通过调用
-[request.agent.show](arkts-basicservices-show-f.md#show-2)查看错误原因
-。
-
-> **说明：**
->
-> 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
+订阅任务失败事件，使用callback异步回调。可通过调用 [request.agent.show](arkts-basicservices-show-f.md#show-2)查看错误原因 。 > **说明：** > > 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
 
 **起始版本：** 10
 
@@ -389,11 +332,7 @@ on(event: 'failed', callback: (progress: Progress) => void): void
 on(event: 'pause', callback: (progress: Progress) => void): void
 ```
 
-订阅任务暂停事件，使用callback异步回调。
-
-> **说明：**
->
-> 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
+订阅任务暂停事件，使用callback异步回调。 > **说明：** > > 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
 
 **起始版本：** 11
 
@@ -418,11 +357,7 @@ on(event: 'pause', callback: (progress: Progress) => void): void
 on(event: 'resume', callback: (progress: Progress) => void): void
 ```
 
-订阅任务恢复事件，使用callback异步回调。
-
-> **说明：**
->
-> 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
+订阅任务恢复事件，使用callback异步回调。 > **说明：** > > 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
 
 **起始版本：** 11
 
@@ -447,11 +382,7 @@ on(event: 'resume', callback: (progress: Progress) => void): void
 on(event: 'remove', callback: (progress: Progress) => void): void
 ```
 
-订阅任务移除事件，使用callback异步回调。
-
-> **说明：**
->
-> 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
+订阅任务移除事件，使用callback异步回调。 > **说明：** > > 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
 
 **起始版本：** 11
 
@@ -476,11 +407,7 @@ on(event: 'remove', callback: (progress: Progress) => void): void
 on(event: 'response', callback: Callback<HttpResponse>): void
 ```
 
-订阅任务响应头，使用callback异步回调。
-
-> **说明：**
->
-> 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
+订阅任务响应头，使用callback异步回调。 > **说明：** > > 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
 
 **起始版本：** 12
 
@@ -507,11 +434,7 @@ on(event: 'response', callback: Callback<HttpResponse>): void
 on(event: 'faultOccur', callback: Callback<Faults>): void
 ```
 
-订阅任务失败原因，使用callback形式返回结果。
-
-> **说明：**
->
-> 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
+订阅任务失败原因，使用callback形式返回结果。 > **说明：** > > 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
 
 **起始版本：** 20
 
@@ -536,11 +459,7 @@ on(event: 'faultOccur', callback: Callback<Faults>): void
 on(event: 'wait', callback: Callback<WaitingReason>): void
 ```
 
-订阅任务等待原因，使用callback形式返回结果。
-
-> **说明：**
->
-> 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
+订阅任务等待原因，使用callback形式返回结果。 > **说明：** > > 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
 
 **起始版本：** 20
 
@@ -565,8 +484,7 @@ on(event: 'wait', callback: Callback<WaitingReason>): void
 pause(callback: AsyncCallback<void>): void
 ```
 
-暂停任务，可以暂停正在等待/正在运行/正在重试的任务，已暂停的任务可被
-[resume](arkts-basicservices-task-i.md#resume-1)恢复。使用callback异步回调。
+暂停任务，可以暂停正在等待/正在运行/正在重试的任务，已暂停的任务可被 [resume](arkts-basicservices-task-i.md#resume-1)恢复。使用callback异步回调。
 
 **起始版本：** 10
 
@@ -592,8 +510,7 @@ pause(callback: AsyncCallback<void>): void
 pause(): Promise<void>
 ```
 
-暂停任务，可以暂停正在等待/正在运行/正在重试的任务，已暂停的任务可被
-[resume](arkts-basicservices-task-i.md#resume-1)恢复。使用Promise异步回调。
+暂停任务，可以暂停正在等待/正在运行/正在重试的任务，已暂停的任务可被 [resume](arkts-basicservices-task-i.md#resume-1)恢复。使用Promise异步回调。
 
 **起始版本：** 10
 
@@ -708,16 +625,7 @@ setMaxSpeed(speed: number): Promise<void>
 start(callback: AsyncCallback<void>): void
 ```
 
-启动一个任务。使用callback异步回调。
-
-以下状态的任务可以被启动：
-
-1. 刚被request.agent.create接口创建的任务。
-2. 使用request.agent.create接口创建的已经失败或者停止的下载任务。
-
-> **说明：**
->
-> 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
+启动一个任务。使用callback异步回调。 以下状态的任务可以被启动： 1. 刚被request.agent.create接口创建的任务。 2. 使用request.agent.create接口创建的已经失败或者停止的下载任务。 > **说明：** > > 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
 
 **起始版本：** 10
 
@@ -747,16 +655,7 @@ start(callback: AsyncCallback<void>): void
 start(): Promise<void>
 ```
 
-启动一个任务。使用Promise异步回调。
-
-以下状态的任务可以被启动：
-
-1. 刚被request.agent.create接口创建的任务。
-2. 使用request.agent.create接口创建的已经失败或者停止的下载任务。
-
-> **说明：**
->
-> 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
+启动一个任务。使用Promise异步回调。 以下状态的任务可以被启动： 1. 刚被request.agent.create接口创建的任务。 2. 使用request.agent.create接口创建的已经失败或者停止的下载任务。 > **说明：** > > 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
 
 **起始版本：** 10
 
@@ -786,8 +685,7 @@ start(): Promise<void>
 stop(callback: AsyncCallback<void>): void
 ```
 
-停止任务，可以停止正在运行/正在等待/正在重试的任务，已停止的任务可被
-[start](arkts-basicservices-task-i.md#start-1)恢复。使用callback异步回调。
+停止任务，可以停止正在运行/正在等待/正在重试的任务，已停止的任务可被 [start](arkts-basicservices-task-i.md#start-1)恢复。使用callback异步回调。
 
 **起始版本：** 10
 
@@ -814,8 +712,7 @@ stop(callback: AsyncCallback<void>): void
 stop(): Promise<void>
 ```
 
-停止任务，可以停止正在运行/正在等待/正在重试的任务，已停止的任务可被
-[start](arkts-basicservices-task-i.md#start-1)恢复。使用Promise异步回调。
+停止任务，可以停止正在运行/正在等待/正在重试的任务，已停止的任务可被 [start](arkts-basicservices-task-i.md#start-1)恢复。使用Promise异步回调。
 
 **起始版本：** 10
 

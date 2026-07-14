@@ -2,7 +2,6 @@
 
 Defines the GridContainer component.
 
-
 ## GridContainer
 
 ```TypeScript

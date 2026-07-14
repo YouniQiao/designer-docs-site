@@ -1,12 +1,6 @@
 # NativeMediaPlayerSurfaceInfo
 
-Implements a **NativeMediaPlayerSurfaceInfo** object to provide the surface information used for same-layer
-rendering [when the application takes over the media playback of the web page]
-(../../../../reference/apis-arkweb/arkts-basic-components-web-attributes.md#enablenativemediaplayer12).
-
-> **NOTE**
->
-> - The sample effect is subject to the actual device.
+Implements a **NativeMediaPlayerSurfaceInfo** object to provide the surface information used for same-layer rendering [when the application takes over the media playback of the web page] (../../../../reference/apis-arkweb/arkts-basic-components-web-attributes.md#enablenativemediaplayer12). > **NOTE** > > - The sample effect is subject to the actual device.
 
 **Since:** 12
 
@@ -24,8 +18,7 @@ import { webview } from '@kit.ArkWeb';
 id: string
 ```
 
-Surface ID, which is the **psurfaceid** of the native image used for rendering at the same layer.
-For details, see [NativeEmbedDataInfo](./arkts-basic-components-web-i.md#nativeembeddatainfo11).
+Surface ID, which is the **psurfaceid** of the native image used for rendering at the same layer. For details, see [NativeEmbedDataInfo](./arkts-basic-components-web-i.md#nativeembeddatainfo11).
 
 **Type:** string
 

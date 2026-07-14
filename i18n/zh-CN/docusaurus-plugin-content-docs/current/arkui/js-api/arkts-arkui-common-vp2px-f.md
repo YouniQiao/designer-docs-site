@@ -6,9 +6,7 @@
 declare function vp2px(value: number): number
 ```
 
-Converts a value in vp units to a value in px.
-By default, the virtual pixel ratio of the screen where the current UI instance is located is used for conversion.
-If no UI instance is available, the virtual pixel ratio of the default screen is used instead.
+Converts a value in vp units to a value in px. By default, the virtual pixel ratio of the screen where the current UI instance is located is used for conversion. If no UI instance is available, the virtual pixel ratio of the default screen is used instead.
 
 **起始版本：** 11
 

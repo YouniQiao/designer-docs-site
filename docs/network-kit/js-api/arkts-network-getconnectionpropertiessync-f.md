@@ -12,8 +12,7 @@ import { connection } from '@kit.NetworkKit';
 function getConnectionPropertiesSync(netHandle: NetHandle): ConnectionProperties
 ```
 
-Queries the connection properties of a network.
-This method requires the {@code ohos.permission.GET_NETWORK_INFO} permission.
+Queries the connection properties of a network. This method requires the {@code ohos.permission.GET_NETWORK_INFO} permission.
 
 **Since:** 10
 

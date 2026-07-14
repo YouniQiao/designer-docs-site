@@ -1,8 +1,6 @@
 # ExifMetadata
 
-ExifMetadata implements Metadata
-
-Exif（Exchangeable image file format）元数据。
+ExifMetadata implements Metadata Exif（Exchangeable image file format）元数据。
 
 **继承/实现关系：** ExifMetadata implements [Metadata](arkts-image-metadata-i.md)
 
@@ -96,9 +94,7 @@ getBlob(): Promise<ArrayBuffer>
 getProperties(key: Array<string>): Promise<Record<string, string | null>>
 ```
 
-获取图像的元数据属性值。使用Promise异步回调。
-
-要查询的属性的具体信息请参考[PropertyKey](arkts-image-propertykey-e.md)。
+获取图像的元数据属性值。使用Promise异步回调。 要查询的属性的具体信息请参考[PropertyKey](arkts-image-propertykey-e.md)。
 
 **起始版本：** 23
 
@@ -162,9 +158,7 @@ setBlob(blob: ArrayBuffer): Promise<void>
 setProperties(records: Record<string, string | null>): Promise<void>
 ```
 
-批量设置图片元数据中的指定属性的值。使用Promise异步回调。
-
-要查询的属性的具体信息请参考[PropertyKey](arkts-image-propertykey-e.md)。
+批量设置图片元数据中的指定属性的值。使用Promise异步回调。 要查询的属性的具体信息请参考[PropertyKey](arkts-image-propertykey-e.md)。
 
 **起始版本：** 23
 
@@ -436,9 +430,7 @@ customRendered?: number
 dateTime?: string
 ```
 
-图像创建的日期和时间。
-
-在本标准中，指文件更改的日期和时间。格式为：“YYYY:MM:DD HH:MM:SS”，时间以24小时格式显示。例如：“2025:12:15 18:44:59”。
+图像创建的日期和时间。 在本标准中，指文件更改的日期和时间。格式为：“YYYY:MM:DD HH:MM:SS”，时间以24小时格式显示。例如：“2025:12:15 18:44:59”。
 
 **类型：** string
 
@@ -454,9 +446,7 @@ dateTime?: string
 dateTimeDigitized?: string
 ```
 
-将图像作为数字数据存储的日期和时间。
-
-例如，如果DSC捕获了图像，并同时记录了文件，则DateTimeOriginal和DateTimeDigitized将具有相同的内容。格式为“YYYY:MM:DD HH:MM:SS”，时间以24小时格式显示。
+将图像作为数字数据存储的日期和时间。 例如，如果DSC捕获了图像，并同时记录了文件，则DateTimeOriginal和DateTimeDigitized将具有相同的内容。格式为“YYYY:MM:DD HH:MM:SS”，时间以24小时格式显示。
 
 **类型：** string
 
@@ -472,9 +462,7 @@ dateTimeDigitized?: string
 dateTimeOriginal?: string
 ```
 
-生成原始图像数据的日期和时间。
-
-对于DSC（Digital Still Camera 数码静态相机），会记录拍摄照片的日期和时间。格式为“YYYY:MM:DD HH:MM:SS”，时间以24小时格式显示。
+生成原始图像数据的日期和时间。 对于DSC（Digital Still Camera 数码静态相机），会记录拍摄照片的日期和时间。格式为“YYYY:MM:DD HH:MM:SS”，时间以24小时格式显示。
 
 **类型：** string
 
@@ -1082,11 +1070,7 @@ gpsImgDirectionRef?: string
 gpsLatitude?: number[]
 ```
 
-GPS纬度。
-
-纬度用三个RATIONAL（分数形式存储的数值）值表示，分别是度、分和秒，格式为dd/1、mm/1、ss/1。
-
-当使用度数和分钟时，分钟分数最多保留两位小数，格式为dd/1，mmmm/100,0/1。
+GPS纬度。 纬度用三个RATIONAL（分数形式存储的数值）值表示，分别是度、分和秒，格式为dd/1、mm/1、ss/1。 当使用度数和分钟时，分钟分数最多保留两位小数，格式为dd/1，mmmm/100,0/1。
 
 **类型：** number[]
 
@@ -1118,11 +1102,7 @@ GPS纬度参考。例如，N表示北纬，S表示南纬。
 gpsLongitude?: number[]
 ```
 
-GPS经度。
-
-经度用三个RATIONAL（分数形式存储的数值）值表示，分别是度、分和秒，格式为dd/1、mm/1、ss/1。
-
-当使用度数和分钟时，分钟分数最多保留两位小数，格式为dd/1，mmmm/100，0/1。
+GPS经度。 经度用三个RATIONAL（分数形式存储的数值）值表示，分别是度、分和秒，格式为dd/1、mm/1、ss/1。 当使用度数和分钟时，分钟分数最多保留两位小数，格式为dd/1，mmmm/100，0/1。
 
 **类型：** number[]
 
@@ -1922,11 +1902,7 @@ rowsPerStrip?: number
 samplesPerPixel?: number
 ```
 
-记录每个像素的颜色分量数量，适用于RGB（红绿蓝，Red Green Blue）和YCbCr（亮度-蓝色色差-红色色差，Luma-Chrominance）色彩模型。
-
-由于这两种模型都是三分量模型（一个亮度分量加两个色度分量，或三个颜色通道），因此该标签的标准值为3。
-
-对于JPEG压缩图像，此标签将会被对应的JPEG标记替换。
+记录每个像素的颜色分量数量，适用于RGB（红绿蓝，Red Green Blue）和YCbCr（亮度-蓝色色差-红色色差，Luma-Chrominance）色彩模型。 由于这两种模型都是三分量模型（一个亮度分量加两个色度分量，或三个颜色通道），因此该标签的标准值为3。 对于JPEG压缩图像，此标签将会被对应的JPEG标记替换。
 
 **类型：** number
 
@@ -2166,11 +2142,7 @@ stripByteCounts?: number[]
 stripOffsets?: number[]
 ```
 
-图像数据的分块存储偏移量，单位为字节（Byte）。
-
-为提高大图像访问效率，原始像素数据被分割为多个连续区块（称为条带）。
-
-此标签按顺序存储每个条带在文件中的起始位置偏移量。
+图像数据的分块存储偏移量，单位为字节（Byte）。 为提高大图像访问效率，原始像素数据被分割为多个连续区块（称为条带）。 此标签按顺序存储每个条带在文件中的起始位置偏移量。
 
 **类型：** number[]
 

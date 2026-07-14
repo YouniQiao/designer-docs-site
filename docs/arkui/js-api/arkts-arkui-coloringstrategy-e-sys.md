@@ -12,8 +12,7 @@ Enumerates the coloring strategies.
 CONTRAST = 'contrast'
 ```
 
-Extract the average color from the component background and convert to a contrasting black or white color.
-Child components can use this color through Color('foreground').
+Extract the average color from the component background and convert to a contrasting black or white color. Child components can use this color through Color('foreground').
 
 **Since:** 23
 

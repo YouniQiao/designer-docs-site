@@ -12,8 +12,7 @@ import { wifiManager } from '@kit.MDMKit';
 function setWifiProfile(admin: Want, profile: WifiProfile, callback: AsyncCallback<void>): void
 ```
 
-Configures Wi-Fi for the current device to connect to a specified network. This API uses an asynchronous callback
-to return the result.
+Configures Wi-Fi for the current device to connect to a specified network. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -82,8 +81,7 @@ wifiManager.setWifiProfile(wantTemp, profile, (err) => {
 function setWifiProfile(admin: Want, profile: WifiProfile): Promise<void>
 ```
 
-Configures Wi-Fi for the current device to connect to a specified network. This API uses a promise to return the
-result.
+Configures Wi-Fi for the current device to connect to a specified network. This API uses a promise to return the result.
 
 **Since:** 10
 

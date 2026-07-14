@@ -4,8 +4,7 @@
 export type ExtensionContext = _ExtensionContext.default
 ```
 
-Defines the context environment for the
-[ExtensionAbility](arkts-ability-extensionability-c.md). It inherits from Context.
+Defines the context environment for the [ExtensionAbility](arkts-ability-extensionability-c.md). It inherits from Context.
 
 **Since:** 9
 

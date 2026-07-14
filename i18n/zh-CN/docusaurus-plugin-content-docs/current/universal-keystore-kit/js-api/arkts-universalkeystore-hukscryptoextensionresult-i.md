@@ -26,8 +26,7 @@ authState?: number
 certs?: Array<HuksCryptoExtensionCertInfo>
 ```
 
-/**
-证书。
+/** 证书。
 
 **类型：** Array<HuksCryptoExtensionCertInfo>
 
@@ -99,11 +98,7 @@ property?: Array<huksExternalCrypto.HuksExternalCryptoParam>
 resourceId?: string
 ```
 
-返回的资源ID。
-
-26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
+返回的资源ID。 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。
 
 **类型：** string
 

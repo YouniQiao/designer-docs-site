@@ -30,8 +30,7 @@ The callback is invoked when the entire animation is removed once it has finishe
 LOGICALLY = 1
 ```
 
-The callback is invoked when the animation logically enters the falling state, though it may still be in its long
-tail state.
+The callback is invoked when the animation logically enters the falling state, though it may still be in its long tail state.
 
 **Since:** 11
 

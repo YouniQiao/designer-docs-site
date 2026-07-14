@@ -6,9 +6,7 @@
 function getDowngradeDownloadTaskState(bundleNames: Array<string>): Promise<Array<DownloadProgress>>
 ```
 
-查询接入云盘的应用的全量下载任务状态。使用Promise异步回调。
-
-由于返回的DownloadProgress对象中不包含包名信息，因此在批量查询多个应用时，调用方需自行记录应用包名。
+查询接入云盘的应用的全量下载任务状态。使用Promise异步回调。 由于返回的DownloadProgress对象中不包含包名信息，因此在批量查询多个应用时，调用方需自行记录应用包名。
 
 **起始版本：** 26.0.0
 

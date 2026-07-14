@@ -1,6 +1,6 @@
 # FileSizeFilter
 
-Media file size filtering configuration.
+Describes the configuration for file size filtering.
 
 **Since:** 19
 
@@ -18,7 +18,7 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 extraFileSize?: number
 ```
 
-Specifing the upper limit of file size to be filtered.
+Maximum file size in **FilterOperator.BETWEEN** mode. The default value is **-1**. The unit is bytes.
 
 **Type:** number
 
@@ -34,7 +34,7 @@ Specifing the upper limit of file size to be filtered.
 fileSize: number
 ```
 
-Specifing the size of files to be filtered.
+File size used for filtering. The unit is bytes.
 
 **Type:** number
 
@@ -50,7 +50,7 @@ Specifing the size of files to be filtered.
 filterOperator: FilterOperator
 ```
 
-Specifing filter operator.
+Filter operator. For example, files can be filtered based on being greater than or less than a certain file size.
 
 **Type:** FilterOperator
 

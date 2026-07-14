@@ -1,12 +1,6 @@
 # PolylineOptions
 
-Describes the options of the polyline.
-
-> **NOTE**
->
-> To standardize anonymous object definitions, the element definitions here have been revised in API version 18.
-> While historical version information is preserved for anonymous objects, there may be cases where the outer
-> element's @since version number is higher than inner elements'. This does not affect interface usability.
+Describes the options of the polyline. > **NOTE** > > To standardize anonymous object definitions, the element definitions here have been revised in API version 18. > While historical version information is preserved for anonymous objects, there may be cases where the outer > element's @since version number is higher than inner elements'. This does not affect interface usability.
 
 **Since:** 18
 
@@ -18,9 +12,7 @@ Describes the options of the polyline.
 height?: Length
 ```
 
-Height.
-Unit: vp, The value must be greater than or equal to 0, The **undefined**, **null**, **NaN**, and
-**Infinity** values are invalid and treated as the default value. Default value: **0**.
+Height. Unit: vp, The value must be greater than or equal to 0, The **undefined**, **null**, **NaN**, and **Infinity** values are invalid and treated as the default value. Default value: **0**.
 
 **Type:** Length
 
@@ -38,9 +30,7 @@ Unit: vp, The value must be greater than or equal to 0, The **undefined**, **nul
 width?: Length
 ```
 
-Width.
-Unit: vp, The value must be greater than or equal to 0, The **undefined**, **null**, **NaN**, and **Infinity**
-values are invalid and treated as the default value. Default value: **0**.
+Width. Unit: vp, The value must be greater than or equal to 0, The **undefined**, **null**, **NaN**, and **Infinity** values are invalid and treated as the default value. Default value: **0**.
 
 **Type:** Length
 

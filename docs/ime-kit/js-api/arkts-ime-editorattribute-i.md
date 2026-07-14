@@ -1,8 +1,6 @@
 # EditorAttribute
 
-In the following API examples, you must first use
-[getKeyboardDelegate](arkts-ime-getkeyboarddelegate-f.md#getkeyboarddelegate-1) to obtain a **KeyboardDelegate** instance, and
-then call the APIs using the obtained instance.
+In the following API examples, you must first use [getKeyboardDelegate](arkts-ime-getkeyboarddelegate-f.md#getkeyboarddelegate-1) to obtain a **KeyboardDelegate** instance, and then call the APIs using the obtained instance.
 
 **Since:** 8
 
@@ -34,8 +32,7 @@ Ability name set for the edit box.
 readonly bundleName?: string
 ```
 
-Name of the application package to which the edit box belongs. The value may be **""**. Handle this scenario when
-using the attribute.
+Name of the application package to which the edit box belongs. The value may be **""**. Handle this scenario when using the attribute.
 
 **Type:** string
 
@@ -49,8 +46,7 @@ using the attribute.
 readonly capitalizeMode?: CapitalizeMode
 ```
 
-Whether to capitalize the first letter in the edit box. If it is not set or is set to an invalid value, the first
-letter is not capitalized by default.
+Whether to capitalize the first letter in the edit box. If it is not set or is set to an invalid value, the first letter is not capitalized by default.
 
 **Type:** CapitalizeMode
 
@@ -80,8 +76,7 @@ Whether the editor supports consuming key events.
 readonly displayId?: number
 ```
 
-Screen ID of the window corresponding to the edit box. If window ID is not set, the screen ID of the focused
-window is used.
+Screen ID of the window corresponding to the edit box. If window ID is not set, the screen ID of the focused window is used.
 
 **Type:** number
 
@@ -95,8 +90,7 @@ window is used.
 readonly enterKeyType: number
 ```
 
-Function attributes of the edit box. For details, see
-[function key definitions in constants](../../../../reference/apis-ime-kit/js-apis-inputmethodengine.md#Constants).
+Function attributes of the edit box. For details, see [function key definitions in constants](../../../../reference/apis-ime-kit/js-apis-inputmethodengine.md#Constants).
 
 **Type:** number
 
@@ -124,8 +118,7 @@ Extra information about the input method.
 readonly gradientMode?: GradientMode
 ```
 
-Gradient mode. If this attribute is not specified or is set to an invalid value, the gradient mode is not used by
-default.
+Gradient mode. If this attribute is not specified or is set to an invalid value, the gradient mode is not used by default.
 
 **Type:** GradientMode
 
@@ -153,8 +146,7 @@ Immersive mode of the input method.
 readonly inputPattern: number
 ```
 
-Text attribute of the edit box. For details, see
-[edit box definitions in constants](../../../../reference/apis-ime-kit/js-apis-inputmethodengine.md#Constants).
+Text attribute of the edit box. For details, see [edit box definitions in constants](../../../../reference/apis-ime-kit/js-apis-inputmethodengine.md#Constants).
 
 **Type:** number
 
@@ -168,10 +160,7 @@ Text attribute of the edit box. For details, see
 isTextPreviewSupported: boolean
 ```
 
-Whether text preview is supported.
-
-- **true**: Supported.
-- **false**: Unsupported.
+Whether text preview is supported. - **true**: Supported. - **false**: Unsupported.
 
 **Type:** boolean
 

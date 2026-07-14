@@ -18,9 +18,7 @@ import { request } from '@kit.BasicServicesKit';
 disable?: boolean
 ```
 
-Disables the notification.
-If the value is false, a notification will be displayed, otherwise nothing will be displayed.
-If not specified, the value is false.
+Disables the notification. If the value is false, a notification will be displayed, otherwise nothing will be displayed. If not specified, the value is false.
 
 **Type:** boolean
 

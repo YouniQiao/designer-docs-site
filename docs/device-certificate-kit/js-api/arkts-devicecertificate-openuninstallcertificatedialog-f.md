@@ -12,8 +12,7 @@ import { certificateManagerDialog } from '@kit.DeviceCertificateKit';
 function openUninstallCertificateDialog(context: common.Context, certType: CertificateType, certUri: string): Promise<void>
 ```
 
-Open the Certificate Management Uninstall Certificate dialog. The corresponding page is displayed. Use Promise
-asynchronous callbacks.
+Open the Certificate Management Uninstall Certificate dialog. The corresponding page is displayed. Use Promise asynchronous callbacks.
 
 **Since:** 18
 

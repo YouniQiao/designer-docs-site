@@ -1,10 +1,6 @@
 # SegmentButtonOptions
 
-> **NOTE**
->
-> The component does not support custom font type settings.
-
-Provides initial data and custom properties for the **SegmentButton** component.
+> **NOTE** > > The component does not support custom font type settings. Provides initial data and custom properties for the **SegmentButton** component.
 
 **Since:** 11
 
@@ -100,9 +96,7 @@ Creates a SegmentButtonOptions class to define tabs.
 backgroundBlurStyle: BlurStyle
 ```
 
-Background blur style of the component.
-
-If the value is **undefined**, it defaults to **BlurStyle.NONE**.
+Background blur style of the component. If the value is **undefined**, it defaults to **BlurStyle.NONE**.
 
 **Type:** BlurStyle
 
@@ -120,21 +114,7 @@ If the value is **undefined**, it defaults to **BlurStyle.NONE**.
 backgroundBorderRadius?: LengthMetrics
 ```
 
-Container border radius.
-
-**NOTE**
-
-This attribute takes effect only when **borderRadiusMode** is set to **BorderRadiusMode.CUSTOM**.
-
-For capsule-style multi-selection segmented buttons (with **type** being **"capsule"** and **multiply** being
-**true**), this attribute does not take effect and **itemBorderRadius** must be used to set the border radius.
-
-The maximum value for the border radius is half of the component's width or height, and percentage values are not
-supported.
-
-Default value: **$r('sys.float.segmentbutton_container_shape')**
-
-If the value is **undefined**, the default value is used.
+Container border radius. **NOTE** This attribute takes effect only when **borderRadiusMode** is set to **BorderRadiusMode.CUSTOM**. For capsule-style multi-selection segmented buttons (with **type** being **"capsule"** and **multiply** being **true**), this attribute does not take effect and **itemBorderRadius** must be used to set the border radius. The maximum value for the border radius is half of the component's width or height, and percentage values are not supported. Default value: **$r('sys.float.segmentbutton_container_shape')** If the value is **undefined**, the default value is used.
 
 **Type:** LengthMetrics
 
@@ -152,9 +132,7 @@ If the value is **undefined**, the default value is used.
 backgroundColor: ResourceColor
 ```
 
-Background color of the component.
-
-If the value is **undefined**, the background color is $r('sys.color.ohos_id_color_button_normal').
+Background color of the component. If the value is **undefined**, the background color is $r('sys.color.ohos_id_color_button_normal').
 
 **Type:** ResourceColor
 
@@ -172,11 +150,7 @@ If the value is **undefined**, the background color is $r('sys.color.ohos_id_col
 borderRadiusMode?: BorderRadiusMode
 ```
 
-Border radius mode, used to control the border radius calculation method.
-
-Default value: **BorderRadiusMode.DEFAULT**
-
-If the value is **undefined**, the default value is used.
+Border radius mode, used to control the border radius calculation method. Default value: **BorderRadiusMode.DEFAULT** If the value is **undefined**, the default value is used.
 
 **Type:** BorderRadiusMode
 
@@ -196,15 +170,7 @@ If the value is **undefined**, the default value is used.
 buttonPadding: Padding | Dimension
 ```
 
-Button padding of the component.
-
-When the value is **undefined**, the button padding settings are as follows:
-
-Icon button and text button: **{ top: 4, right: 8, bottom: 4, left: 8 }**.
-
-Icon + text button: **{ top: 6, right: 8, bottom: 6, left: 8 }**.
-
-Unit: vp
+Button padding of the component. When the value is **undefined**, the button padding settings are as follows: Icon button and text button: **{ top: 4, right: 8, bottom: 4, left: 8 }**. Icon + text button: **{ top: 6, right: 8, bottom: 6, left: 8 }**. Unit: vp
 
 **Type:** Padding | Dimension
 
@@ -240,11 +206,7 @@ Button information of the component, including the icon and text.
 direction?: Direction
 ```
 
-Layout direction of the component.
-
-Default value: **Direction.Auto**
-
-If the value is **undefined**, the default value is used.
+Layout direction of the component. Default value: **Direction.Auto** If the value is **undefined**, the default value is used.
 
 **Type:** Direction
 
@@ -262,9 +224,7 @@ If the value is **undefined**, the default value is used.
 fontColor: ResourceColor
 ```
 
-Text color of the unselected button.
-
-If the value is **undefined**, the color is $r('sys.color.ohos_id_color_text_secondary').
+Text color of the unselected button. If the value is **undefined**, the color is $r('sys.color.ohos_id_color_text_secondary').
 
 **Type:** ResourceColor
 
@@ -282,9 +242,7 @@ If the value is **undefined**, the color is $r('sys.color.ohos_id_color_text_sec
 fontSize: DimensionNoPercentage
 ```
 
-Font size of the unselected button. The value cannot be set in percentage.
-
-If the value is **undefined**, the font size is $r('sys.float.ohos_id_text_size_body2').
+Font size of the unselected button. The value cannot be set in percentage. If the value is **undefined**, the font size is $r('sys.float.ohos_id_text_size_body2').
 
 **Type:** DimensionNoPercentage
 
@@ -302,9 +260,7 @@ If the value is **undefined**, the font size is $r('sys.float.ohos_id_text_size_
 fontWeight: FontWeight
 ```
 
-Font weight of the unselected button.
-
-If the value is **undefined**, the font weight is **FontWeight.Regular**.
+Font weight of the unselected button. If the value is **undefined**, the font weight is **FontWeight.Regular**.
 
 **Type:** FontWeight
 
@@ -322,15 +278,7 @@ If the value is **undefined**, the font weight is **FontWeight.Regular**.
 imageSize: SizeOptions
 ```
 
-Image size of the component.
-
-When the value is **undefined**, the image size is { width: 24, height: 24 }.
-
-Unit: vp
-
-**NOTE**
-
-The **imageSize** property takes effect only for icon-only and icon-with-text buttons.
+Image size of the component. When the value is **undefined**, the image size is { width: 24, height: 24 }. Unit: vp **NOTE** The **imageSize** property takes effect only for icon-only and icon-with-text buttons.
 
 **Type:** SizeOptions
 
@@ -348,21 +296,7 @@ The **imageSize** property takes effect only for icon-only and icon-with-text bu
 itemBorderRadius?: LengthMetrics
 ```
 
-Individual button border radius.
-
-**NOTE**
-
-This attribute takes effect only when **borderRadiusMode** is set to **BorderRadiusMode.CUSTOM**.
-
-For capsule-style multi-selection segmented buttons (with **type** being **"capsule"** and **multiply** being
-**true**), this attribute only affects end items.
-
-The maximum value for the border radius is half of the component's width or height, and percentage values are not
-supported.
-
-Default value: **$r('sys.float.segmentbutton_selected_background_shape')**
-
-If the value is **undefined**, the default value is used.
+Individual button border radius. **NOTE** This attribute takes effect only when **borderRadiusMode** is set to **BorderRadiusMode.CUSTOM**. For capsule-style multi-selection segmented buttons (with **type** being **"capsule"** and **multiply** being **true**), this attribute only affects end items. The maximum value for the border radius is half of the component's width or height, and percentage values are not supported. Default value: **$r('sys.float.segmentbutton_selected_background_shape')** If the value is **undefined**, the default value is used.
 
 **Type:** LengthMetrics
 
@@ -380,18 +314,7 @@ If the value is **undefined**, the default value is used.
 localizedButtonPadding?: LocalizedPadding
 ```
 
-Button padding of the component.
-
-Default value:
-
-Icon button and text button:
-**{ top: LengthMetrics.vp(4), end: LengthMetrics.vp(8), bottom: LengthMetrics.vp(4), start: LengthMetrics.vp(8) }**.
-
-Icon + text button:
-**{ top: LengthMetrics.vp(6), end: LengthMetrics.vp(8), bottom: LengthMetrics.vp(6), start: LengthMetrics.vp(8) **}
-.
-
-If the value is **undefined**, the default value is used.
+Button padding of the component. Default value: Icon button and text button: **{ top: LengthMetrics.vp(4), end: LengthMetrics.vp(8), bottom: LengthMetrics.vp(4), start: LengthMetrics.vp(8) }**. Icon + text button: **{ top: LengthMetrics.vp(6), end: LengthMetrics.vp(8), bottom: LengthMetrics.vp(6), start: LengthMetrics.vp(8) **} . If the value is **undefined**, the default value is used.
 
 **Type:** LocalizedPadding
 
@@ -409,11 +332,7 @@ If the value is **undefined**, the default value is used.
 localizedTextPadding?: LocalizedPadding
 ```
 
-Text padding.
-
-Default value: **0**
-
-If the value is **undefined**, the default value is used.
+Text padding. Default value: **0** If the value is **undefined**, the default value is used.
 
 **Type:** LocalizedPadding
 
@@ -431,14 +350,7 @@ If the value is **undefined**, the default value is used.
 multiply: boolean
 ```
 
-Whether multiple items can be selected.
-
-**true**: Multiple items can be selected.
-
-**false**: Multiple items cannot be selected. For the **SegmentButton** component consisting of tab-style buttons,
-only one item can be selected. In this case, setting **multiply** to **true** does not take effect.
-
-If the value is **undefined**, the component does not support selection of multiple items.
+Whether multiple items can be selected. **true**: Multiple items can be selected. **false**: Multiple items cannot be selected. For the **SegmentButton** component consisting of tab-style buttons, only one item can be selected. In this case, setting **multiply** to **true** does not take effect. If the value is **undefined**, the component does not support selection of multiple items.
 
 **Type:** boolean
 
@@ -456,12 +368,7 @@ If the value is **undefined**, the component does not support selection of multi
 selectedBackgroundColor: ResourceColor
 ```
 
-Background color of the selected button.
-
-When the value is **undefined** and **type** is **"tab"**, the background color is
-**$r('sys.color.segment_button_checked_foreground_color')**.
-
-When **type** is **"capsule"**, the background color is **$r('sys.color.ohos_id_color_emphasize')**.
+Background color of the selected button. When the value is **undefined** and **type** is **"tab"**, the background color is **$r('sys.color.segment_button_checked_foreground_color')**. When **type** is **"capsule"**, the background color is **$r('sys.color.ohos_id_color_emphasize')**.
 
 **Type:** ResourceColor
 
@@ -479,12 +386,7 @@ When **type** is **"capsule"**, the background color is **$r('sys.color.ohos_id_
 selectedFontColor: ResourceColor
 ```
 
-Text color of the selected button.
-
-If the value is **undefined**, the color is $r('sys.color.ohos_id_color_text_primary') when type is set to
-**"tab"**.
-
-When type is set to **"capsule"**, the color is $r('sys.color.ohos_id_color_foreground_contrary').
+Text color of the selected button. If the value is **undefined**, the color is $r('sys.color.ohos_id_color_text_primary') when type is set to **"tab"**. When type is set to **"capsule"**, the color is $r('sys.color.ohos_id_color_foreground_contrary').
 
 **Type:** ResourceColor
 
@@ -502,9 +404,7 @@ When type is set to **"capsule"**, the color is $r('sys.color.ohos_id_color_fore
 selectedFontSize: DimensionNoPercentage
 ```
 
-Font size of the selected button. The value cannot be set in percentage.
-
-If the value is **undefined**, the font size is $r('sys.float.ohos_id_text_size_body2').
+Font size of the selected button. The value cannot be set in percentage. If the value is **undefined**, the font size is $r('sys.float.ohos_id_text_size_body2').
 
 **Type:** DimensionNoPercentage
 
@@ -522,9 +422,7 @@ If the value is **undefined**, the font size is $r('sys.float.ohos_id_text_size_
 selectedFontWeight: FontWeight
 ```
 
-Font weight of the selected button.
-
-If the value is **undefined**, the font weight is **FontWeight.Medium**.
+Font weight of the selected button. If the value is **undefined**, the font weight is **FontWeight.Medium**.
 
 **Type:** FontWeight
 
@@ -542,11 +440,7 @@ If the value is **undefined**, the font weight is **FontWeight.Medium**.
 textPadding: Padding | Dimension
 ```
 
-Text padding of the component.
-
-When the value is **undefined**, the text padding is 0.
-
-Unit: vp
+Text padding of the component. When the value is **undefined**, the text padding is 0. Unit: vp
 
 **Type:** Padding | Dimension
 
@@ -564,13 +458,7 @@ Unit: vp
 type: "tab" | "capsule"
 ```
 
-Type of the **SegmentButton** component.
-
-**NOTE**
-
-**"tab"**: tab-style segmented buttons, designed for page or content section switching.
-
-**"capsule"**: capsule-style segmented buttons, suitable for single or multiple selection scenarios.
+Type of the **SegmentButton** component. **NOTE** **"tab"**: tab-style segmented buttons, designed for page or content section switching. **"capsule"**: capsule-style segmented buttons, suitable for single or multiple selection scenarios.
 
 **Type:** "tab" | "capsule"
 

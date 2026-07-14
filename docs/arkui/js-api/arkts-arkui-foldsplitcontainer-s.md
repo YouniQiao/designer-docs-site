@@ -1,17 +1,6 @@
 # FoldSplitContainer
 
-**FoldSplitContainer** is a layout container designed to manage regions for two-panel and three-panel
-arrangements on a foldable device across various states, including the expanded state, the semi-folded state,
-and the folded state.
-
-> **NOTE**
->
-> By default, a two-panel layout is used when the window width is less than or equal to 600 vp.
-> When the window width exceeds 600 vp, an extended area is supported alongside the top-bottom split layout.
-> A semi-folded state layout can be triggered when the window width is greater than 600 vp and the device
-> is in a horizontal, half-folded posture. In the semi-folded layout, visual avoidance for the screen
-> crease area is applied, and the extended area cannot span across the crease. The extended area can also
-> be configured not to display in the semi-folded state.
+**FoldSplitContainer** is a layout container designed to manage regions for two-panel and three-panel arrangements on a foldable device across various states, including the expanded state, the semi-folded state, and the folded state. > **NOTE** > > By default, a two-panel layout is used when the window width is less than or equal to 600 vp. > When the window width exceeds 600 vp, an extended area is supported alongside the top-bottom split layout. > A semi-folded state layout can be triggered when the window width is greater than 600 vp and the device > is in a horizontal, half-folded posture. In the semi-folded layout, visual avoidance for the screen > crease area is applied, and the extended area cannot span across the crease. The extended area can also > be configured not to display in the semi-folded state.
 
 **Since:** 12
 
@@ -69,8 +58,7 @@ Layout information for the expanded state.
 extra?: Callback<void>
 ```
 
-Callback function for the extra region. If this parameter is not provided,
-there is no corresponding region.
+Callback function for the extra region. If this parameter is not provided, there is no corresponding region.
 
 **Type:** Callback<void>
 

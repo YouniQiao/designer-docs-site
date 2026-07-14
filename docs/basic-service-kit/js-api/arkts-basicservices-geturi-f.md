@@ -12,8 +12,7 @@ import { settings } from '@kit.BasicServicesKit';
 function getURI(name: string, callback: AsyncCallback<object>): void
 ```
 
-Constructs a URI for a specific name-value pair for monitoring data of the ability that uses the Data
-template.
+Constructs a URI for a specific name-value pair for monitoring data of the ability that uses the Data template.
 
 **Since:** 7
 
@@ -44,8 +43,7 @@ settings.getURI(settings.display.SCREEN_BRIGHTNESS_STATUS, (uri:string) => {
 function getURI(name: string): Promise<object>
 ```
 
-Constructs a URI for a specific name-value pair for monitoring data of the ability that uses the Data
-template.
+Constructs a URI for a specific name-value pair for monitoring data of the ability that uses the Data template.
 
 **Since:** 7
 

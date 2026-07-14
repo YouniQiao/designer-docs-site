@@ -34,8 +34,7 @@ Number of affected rows.
 readonly resultSet: LiteResultSet
 ```
 
-Result set of the affected data. Defaults to 1,024 rows of data, with a maximum supported limit of 32,766 rows
-supported; excess rows will be discarded.
+Result set of the affected data. Defaults to 1,024 rows of data, with a maximum supported limit of 32,766 rows supported; excess rows will be discarded.
 
 **Type:** LiteResultSet
 

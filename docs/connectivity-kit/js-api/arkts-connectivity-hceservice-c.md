@@ -1,8 +1,6 @@
 # HceService
 
-A class for NFC host application.
-<p>The NFC host application use this class, then Nfc service can access the application
-installation information and connect to services of the application.
+A class for NFC host application. <p>The NFC host application use this class, then Nfc service can access the application installation information and connect to services of the application.
 
 **Since:** 12
 
@@ -117,8 +115,7 @@ register HCE event to receive the APDU data.
 sendResponse(responseApdu: number[]): void
 ```
 
-Sends a response APDU to the remote device.
-<p>This method is used by a host application when swiping card.
+Sends a response APDU to the remote device. <p>This method is used by a host application when swiping card.
 
 **Since:** 8
 

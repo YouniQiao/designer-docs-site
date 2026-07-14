@@ -1,6 +1,6 @@
 # AudioKey (System API)
 
-Describes AUDIO TYPE FetchOptions's predicate
+Defines the key information about an audio file.
 
 **Since:** 9
 
@@ -18,7 +18,7 @@ Describes AUDIO TYPE FetchOptions's predicate
 URI
 ```
 
-File uri, read only
+URI of the file.
 
 **Since:** 9
 
@@ -36,7 +36,7 @@ File uri, read only
 DISPLAY_NAME
 ```
 
-File name
+File name displayed.
 
 **Since:** 9
 
@@ -54,7 +54,7 @@ File name
 DATE_ADDED
 ```
 
-Date of the file creation, read only
+Date when the file was added. The value is the number of seconds elapsed since the Epoch time (00:00:00 UTC on January 1, 1970).
 
 **Since:** 9
 
@@ -72,7 +72,7 @@ Date of the file creation, read only
 DATE_MODIFIED
 ```
 
-Modify date of the file, read only
+Date when the file content (not the file name) was last modified. The value is the number of seconds elapsed since the Epoch time (00:00:00 UTC on January 1, 1970).
 
 **Since:** 9
 
@@ -90,7 +90,7 @@ Modify date of the file, read only
 TITLE
 ```
 
-Title of the file, read only
+Title of the file.
 
 **Since:** 9
 
@@ -108,7 +108,7 @@ Title of the file, read only
 ARTIST
 ```
 
-Artist of the audio file, read only
+Author of the file.
 
 **Since:** 9
 
@@ -126,7 +126,7 @@ Artist of the audio file, read only
 AUDIOALBUM
 ```
 
-Audio album of the audio file, read only
+Audio album.
 
 **Since:** 9
 
@@ -144,7 +144,7 @@ Audio album of the audio file, read only
 DURATION
 ```
 
-Duration of the audio file, read only
+Duration, in ms.
 
 **Since:** 9
 
@@ -162,7 +162,7 @@ Duration of the audio file, read only
 FAVORITE
 ```
 
-Favorite state of the file, read only
+Whether the file is added to favorites.
 
 **Since:** 9
 

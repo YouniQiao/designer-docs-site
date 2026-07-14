@@ -60,8 +60,7 @@ Obtains the bundle name of the application to which this form belongs.
 readonly dimension: number
 ```
 
-Obtains the grid style of this form.
-The value must be a positive integer, refer to {@link formInfo.FormDimension}.
+Obtains the grid style of this form. The value must be a positive integer, refer to {@link formInfo.FormDimension}.
 
 **Type:** number
 
@@ -161,7 +160,7 @@ Obtains the name of this form.
 
 **Default:** -
 
-**Since:** 10
+**Since:** 20
 
 **Atomic service API:** This API can be used in atomic services since API version 20.
 

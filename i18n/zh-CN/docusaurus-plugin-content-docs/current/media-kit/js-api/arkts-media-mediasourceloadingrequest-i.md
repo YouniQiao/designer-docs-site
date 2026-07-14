@@ -1,10 +1,6 @@
 # MediaSourceLoadingRequest
 
-用于定义加载请求的对象。应用程序通过该对象来获取请求的资源位置，通过该对象和播放器进行数据交互。
-
-> **说明：**
->
-> - 本Interface首批接口从API version 18开始支持。
+用于定义加载请求的对象。应用程序通过该对象来获取请求的资源位置，通过该对象和播放器进行数据交互。 > **说明：** > > - 本Interface首批接口从API version 18开始支持。
 
 **起始版本：** 18
 
@@ -65,9 +61,7 @@ respondData(uuid: number, offset: number, buffer: ArrayBuffer): number
 respondHeader(uuid: number, header?: Record<string, string>, redirectUrl?: string): void
 ```
 
-用于应用程序向播放器发送响应头信息，应在第一次调用
-[respondData](media.MediaSourceLoadingRequest.respondData(uuid: number, offset: number, buffer: ArrayBuffer))
-方法之前调用。
+用于应用程序向播放器发送响应头信息，应在第一次调用 [respondData](media.MediaSourceLoadingRequest.respondData(uuid: number, offset: number, buffer: ArrayBuffer)) 方法之前调用。
 
 **起始版本：** 18
 

@@ -1,16 +1,6 @@
 # Array
 
-一种线性数据结构，底层基于数组实现，可以在ArkTS上并发实例间传递。
-推荐使用引用传递以提升传递性能。
-
-> **说明**
->
-> - 本模块仅支持在ArkTS文件（文件后缀为.ets）中导入使用。
-> 本节使用以下标识来表示泛型的使用：
-
-- T：Type，支持
-[Sendable支持的数据类型](../../../../arkts-utils/arkts-sendable.md#sendable支持的数据类型)。
-**装饰器**：\@Sendable
+一种线性数据结构，底层基于数组实现，可以在ArkTS上并发实例间传递。 推荐使用引用传递以提升传递性能。 > **说明** > > - 本模块仅支持在ArkTS文件（文件后缀为.ets）中导入使用。 > 本节使用以下标识来表示泛型的使用： - T：Type，支持 [Sendable支持的数据类型](../../../../arkts-utils/arkts-sendable.md#sendable支持的数据类型)。 **装饰器**：\@Sendable
 
 **继承/实现关系：** Array implements [ConcatArray<T>](ConcatArray<T>)
 
@@ -599,8 +589,7 @@ static from<T>(arrayLike: ArrayLike<T> | Iterable<T>, mapFn: ArrayFromMapFn<T, T
 static from<U, T>(arrayLike: ArrayLike<U> | Iterable<U>, mapFn: ArrayFromMapFn<U, T>): Array<T>
 ```
 
-从一个实现了ArrayLike接口的对象创建一个新的ArkTS Array，并使用自定义函数处理每个数组元素。
-ArrayLike接口对象的元素类型可以和数组元素的类型不一样。
+从一个实现了ArrayLike接口的对象创建一个新的ArkTS Array，并使用自定义函数处理每个数组元素。 ArrayLike接口对象的元素类型可以和数组元素的类型不一样。
 
 **起始版本：** 18
 
@@ -815,8 +804,7 @@ lastIndexOf(searchElement: T, fromIndex?: number): number
 map<U>(callbackFn: (value: T, index: number, array: Array<T>) => U): Array<U>
 ```
 
-对ArkTS Array中的每个元素执行提供的回调函数，并返回一个新的Array，该Array包含
-回调函数的结果。
+对ArkTS Array中的每个元素执行提供的回调函数，并返回一个新的Array，该Array包含 回调函数的结果。
 
 **起始版本：** 12
 
@@ -875,8 +863,7 @@ static of<T>(...items: T[]): Array<T>
 pop(): T | undefined
 ```
 
-从ArkTS Array中移除并返回最后一个元素。如果Array为空，则返回**undefined**，
-且Array不发生变化。
+从ArkTS Array中移除并返回最后一个元素。如果Array为空，则返回**undefined**， 且Array不发生变化。
 
 **起始版本：** 12
 
@@ -936,8 +923,7 @@ push(...items: T[]): number
 reduce(callbackFn: (previousValue: T, currentValue: T, currentIndex: number, array: Array<T>) => T): T
 ```
 
-对ArkTS Array中的每个元素执行回调函数，将上一次的返回值作为累加值，
-并返回最终的结果。
+对ArkTS Array中的每个元素执行回调函数，将上一次的返回值作为累加值， 并返回最终的结果。
 
 **起始版本：** 12
 
@@ -973,8 +959,7 @@ reduce<U>(
     ): U
 ```
 
-与前一个API类似，此API接受一个初始值作为第二个参数，用于在Array遍历开始前
-初始化累加器。
+与前一个API类似，此API接受一个初始值作为第二个参数，用于在Array遍历开始前 初始化累加器。
 
 **起始版本：** 12
 
@@ -1008,9 +993,7 @@ reduce<U>(
 reduceRight<U = T>(callbackFn: ArrayReduceCallback<U, T, Array<T>>, initialValue: U): U
 ```
 
-此API与
-[reduceRight](arkts-arkts-array-c.md#reduceright-2)方法类似，
-但它接受一个初始值作为第二个参数，用于在Array从右到左顺序遍历开始前初始化累加器。
+此API与 [reduceRight](arkts-arkts-array-c.md#reduceright-2)方法类似， 但它接受一个初始值作为第二个参数，用于在Array从右到左顺序遍历开始前初始化累加器。
 
 **起始版本：** 18
 
@@ -1044,8 +1027,7 @@ reduceRight<U = T>(callbackFn: ArrayReduceCallback<U, T, Array<T>>, initialValue
 reduceRight(callbackFn: ArrayReduceCallback<T, T, Array<T>>): T
 ```
 
-对ArkTS Array中的每个元素按照从右到左顺序执行回调函数，将其结果作为累加值，
-并返回最终的值。
+对ArkTS Array中的每个元素按照从右到左顺序执行回调函数，将其结果作为累加值， 并返回最终的值。
 
 **起始版本：** 18
 
@@ -1105,8 +1087,7 @@ reverse(): Array<T>
 shift(): T | undefined
 ```
 
-从ArkTS Array中移除并返回第一个元素。如果Array为空，则返回**undefined**，
-且Array不发生变化。
+从ArkTS Array中移除并返回第一个元素。如果Array为空，则返回**undefined**， 且Array不发生变化。
 
 **起始版本：** 12
 
@@ -1328,8 +1309,7 @@ splice(start: number, deleteCount: number, ...items: T[]): Array<T>
 toLocaleString(): string
 ```
 
-根据当前应用所在的系统地区获取符合当前文化习惯的字符串表示形式。让每个元素通过自身的
-**toLocaleString**方法转换为字符串，然后使用逗号（,）将这些字符串按顺序拼接。
+根据当前应用所在的系统地区获取符合当前文化习惯的字符串表示形式。让每个元素通过自身的 **toLocaleString**方法转换为字符串，然后使用逗号（,）将这些字符串按顺序拼接。
 
 **起始版本：** 18
 

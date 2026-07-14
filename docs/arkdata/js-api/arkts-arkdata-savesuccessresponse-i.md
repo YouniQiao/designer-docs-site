@@ -1,7 +1,6 @@
 # SaveSuccessResponse
 
-Represents the information returned by the callback of save.
-.
+Represents the information returned by the callback of save. .
 
 **Since:** 9
 

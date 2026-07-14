@@ -1,19 +1,6 @@
 # NotificationMultiLineContent
 
-Describes the multi-line text notification. This API is inherited from
-[NotificationBasicContent](arkts-notification-notificationbasiccontent-i.md).
-
-> **NOTE**
->
-> - When the multi-line text notification and another notification form a group notification, the group notification
-> is displayed as a [normal text notification](arkts-notification-notificationbasiccontent-i.md) by default. After the group
-> notification is expanded, the value of **longTitle** is used as the title, and the value of **lines** is used as
-> the multi-line text content.
-
-When the multi-line text notification is displayed independently, the value of **longTitle** is used as the title,
-and the value of **lines** is used as the multi-line text content.
-
-> - The display effect depends on the device capability and notification center UI style.
+Describes the multi-line text notification. This API is inherited from NotificationBasicContent. > **NOTE** > > - When this notification type forms a group notification with other notifications, its display effect defaults > to the collapsed state, and the displayed title and body are the **title** and **text** inherited from > NotificationBasicContent. When this notification type is displayed alone and does not form a group notification > with other notifications, its display effect defaults to the expanded state, where the displayed title is the > expanded title **longTitle**, and the multi-line text content **lines** is displayed as the body. > > - When a user taps a group notification to view the notification details, the display effect of this > notification changes to the expanded state. > > - The actual display effect depends on the device capabilities and the notification center UI style.
 
 **Inheritance/Implementation:** NotificationMultiLineContent extends [NotificationBasicContent](arkts-notification-notificationbasiccontent-i.md)
 
@@ -27,10 +14,7 @@ and the value of **lines** is used as the multi-line text content.
 lineWantAgents?: Array<WantAgent>
 ```
 
-**wantAgent**s triggered when a line of text in the multi-line text is tapped. The text in different lines
-corresponds to different **wantAgent**s. The maximum number of lines configured for this field is equal to the
-value of [lines](arkts-notification-notificationmultilinecontent-i.md). This parameter is left
-empty by default.
+**wantAgent**s triggered when a line of text in the multi-line text is tapped. The text in different lines corresponds to different **wantAgent**s. The maximum number of lines configured for this field is equal to the value of lines. This parameter is left empty by default.
 
 **Type:** Array<WantAgent>
 

@@ -12,9 +12,7 @@ Define IMonitor interface
 value<T>(path?: string): IMonitorValue<T> | undefined
 ```
 
-Return the pair of the value before the most recent change and current value for given path.
-If path does not exist, return undefined; If path is not specified, return the value pair
-corresponding to the first path in dirty.
+Return the pair of the value before the most recent change and current value for given path. If path does not exist, return undefined; If path is not specified, return the value pair corresponding to the first path in dirty.
 
 **Since:** 23
 

@@ -1,7 +1,6 @@
 # TransitionController (System API)
 
-Implements the transition animation controller. Before calling any API, you must create a system window. For
-details, see the sample code.
+Implements the transition animation controller. Before calling any API, you must create a system window. For details, see the sample code.
 
 **Since:** 9
 

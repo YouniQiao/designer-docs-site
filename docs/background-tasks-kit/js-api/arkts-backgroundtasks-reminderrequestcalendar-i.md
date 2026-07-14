@@ -1,8 +1,6 @@
 # ReminderRequestCalendar
 
-ReminderRequestCalendar extends ReminderRequest
-
-Defines a reminder for a calendar event.
+ReminderRequestCalendar extends ReminderRequest Defines a reminder for a calendar event.
 
 **Inheritance/Implementation:** ReminderRequestCalendar extends [ReminderRequest](arkts-backgroundtasks-reminderrequest-i.md)
 
@@ -36,8 +34,7 @@ Reminder time.
 daysOfWeek?: Array<number>
 ```
 
-Days of a week when the reminder repeats. The value ranges from 1 to 7, corresponding to the data from Monday to
-Sunday. This parameter is left empty by default.
+Days of a week when the reminder repeats. The value ranges from 1 to 7, corresponding to the data from Monday to Sunday. This parameter is left empty by default.
 
 **Type:** Array<number>
 
@@ -65,8 +62,7 @@ End time of the reminder.
 repeatDays?: Array<number>
 ```
 
-Day in which the reminder repeats. The value range is [1, 31]. This parameter is left empty by default. This
-parameter must be used together with **repeatMonths**.
+Day in which the reminder repeats. The value range is [1, 31]. This parameter is left empty by default. This parameter must be used together with **repeatMonths**.
 
 **Type:** Array<number>
 
@@ -80,8 +76,7 @@ parameter must be used together with **repeatMonths**.
 repeatMonths?: Array<number>
 ```
 
-Month in which the reminder repeats. The value range is [1, 12]. This parameter is left empty by default. This
-parameter must be used together with **repeatDays**.
+Month in which the reminder repeats. The value range is [1, 12]. This parameter is left empty by default. This parameter must be used together with **repeatDays**.
 
 **Type:** Array<number>
 

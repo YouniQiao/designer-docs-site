@@ -1,9 +1,6 @@
 # PostMessageOptions
 
-Defines the object for which the ownership is to be transferred during data transfer. The object must be an
-ArrayBuffer instance.
-After the ownership is transferred, the object becomes unavailable in the sender and can be used only in the
-receiver.
+Defines the object for which the ownership is to be transferred during data transfer. The object must be an ArrayBuffer instance. After the ownership is transferred, the object becomes unavailable in the sender and can be used only in the receiver.
 
 **Since:** 7
 

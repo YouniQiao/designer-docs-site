@@ -12,15 +12,7 @@ import { networkManager } from '@kit.MDMKit';
 function removeFirewallRule(admin: Want, firewallRule?: FirewallRule): void
 ```
 
-Removes a firewall rule.
-
-In API version 21 and earlier versions, only IPv4 is supported. IPv4 and IPv6 are supported since API version 22.
-
-[LogType](arkts-mdm-logtype-e.md) is supported since API version 23.
-
-If there is no rule with [Action](arkts-mdm-action-e.md) being **ALLOW** after the rule is removed, the
-**DENY** rules that are added by default with [addFirewallRule](arkts-mdm-addfirewallrule-f.md#addfirewallrule-1) will be
-removed.
+Removes a firewall rule. In API version 21 and earlier versions, only IPv4 is supported. IPv4 and IPv6 are supported since API version 22. [LogType](arkts-mdm-logtype-e.md) is supported since API version 23. If there is no rule with [Action](arkts-mdm-action-e.md) being **ALLOW** after the rule is removed, the **DENY** rules that are added by default with [addFirewallRule](arkts-mdm-addfirewallrule-f.md#addfirewallrule-1) will be removed.
 
 **Since:** 12
 

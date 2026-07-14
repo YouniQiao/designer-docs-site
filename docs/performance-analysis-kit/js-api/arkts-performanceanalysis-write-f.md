@@ -12,10 +12,7 @@ import { hiAppEvent } from '@kit.PerformanceAnalysisKit';
 function write(info: AppEventInfo): Promise<void>
 ```
 
-Writes events of the **AppEventInfo** type. This API uses a promise to return the result. The event object written
-by calling this API is a custom object. To avoid conflicts with system events, you are not advised to write it to
-system events (system event name constants defined in [Event](arkts-performanceanalysis-event-n.md#event)). The events written by this
-API can be subscribed to through ([addWatcher](arkts-performanceanalysis-addwatcher-f.md#addwatcher-1)).
+Writes events of the **AppEventInfo** type. This API uses a promise to return the result. The event object written by calling this API is a custom object. To avoid conflicts with system events, you are not advised to write it to system events (system event name constants defined in [Event](arkts-performanceanalysis-event-n.md#event)). The events written by this API can be subscribed to through ([addWatcher](arkts-performanceanalysis-addwatcher-f.md#addwatcher-1)).
 
 **Since:** 9
 
@@ -80,10 +77,7 @@ hiAppEvent.write({
 function write(info: AppEventInfo, callback: AsyncCallback<void>): void
 ```
 
-Writes events of the **AppEventInfo** type. This API uses an asynchronous callback to return the result. The event
-object written by calling this API is a custom object. To avoid conflicts with system events, you are not advised
-to write it to system events (system event name constants defined in [Event](arkts-performanceanalysis-event-n.md#event)). The events
-written by this API can be subscribed to through ([addWatcher](arkts-performanceanalysis-addwatcher-f.md#addwatcher-1)).
+Writes events of the **AppEventInfo** type. This API uses an asynchronous callback to return the result. The event object written by calling this API is a custom object. To avoid conflicts with system events, you are not advised to write it to system events (system event name constants defined in [Event](arkts-performanceanalysis-event-n.md#event)). The events written by this API can be subscribed to through ([addWatcher](arkts-performanceanalysis-addwatcher-f.md#addwatcher-1)).
 
 **Since:** 9
 

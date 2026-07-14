@@ -20,18 +20,18 @@ import { wallpaper } from '@kit.BasicServicesKit';
 | --- | --- |
 | [getColors](arkts-basicservices-getcolors-f.md#getcolors-1) | Obtains the wallpaper colors for the wallpaper of the specified type. Returns rgbaColor type of array callback function. |
 | [getColors](arkts-basicservices-getcolors-f.md#getcolors-2) | Obtains the wallpaper colors for the wallpaper of the specified type. Returns rgbaColor type of array callback function. |
-| [getFile](arkts-basicservices-getfile-f.md#getfile-1) | Obtains a file of the wallpaper of the specified type. Returns the file descriptor.When usage is complete, the caller needs to close the file descriptor in time. |
-| [getFile](arkts-basicservices-getfile-f.md#getfile-2) | Obtains a file of the wallpaper of the specified type. Returns the file descriptor.When usage is complete, the caller needs to close the file descriptor in time. |
-| [getId](arkts-basicservices-getid-f.md#getid-1) | Obtains the ID of the wallpaper of the specified type. Returns an integer greater than or equal to {@code 0} representing the wallpaper ID.if the specified type of wallpaper has been set; returns {@code -1} otherwise. The return value is an integer ranging from -1 to 2^31 - 1. |
-| [getId](arkts-basicservices-getid-f.md#getid-2) | Obtains the ID of the wallpaper of the specified type. Returns an integer greater than or equal to {@code 0} representing the wallpaper ID.if the specified type of wallpaper has been set; returns {@code -1} otherwise. The return value is an integer ranging from -1 to 2^31 - 1. |
+| [getFile](arkts-basicservices-getfile-f.md#getfile-1) | Obtains a file of the wallpaper of the specified type. Returns the file descriptor. When usage is complete, the caller needs to close the file descriptor in time. |
+| [getFile](arkts-basicservices-getfile-f.md#getfile-2) | Obtains a file of the wallpaper of the specified type. Returns the file descriptor. When usage is complete, the caller needs to close the file descriptor in time. |
+| [getId](arkts-basicservices-getid-f.md#getid-1) | Obtains the ID of the wallpaper of the specified type. Returns an integer greater than or equal to {@code 0} representing the wallpaper ID. if the specified type of wallpaper has been set; returns {@code -1} otherwise. The return value is an integer ranging from -1 to 2^31 - 1. |
+| [getId](arkts-basicservices-getid-f.md#getid-2) | Obtains the ID of the wallpaper of the specified type. Returns an integer greater than or equal to {@code 0} representing the wallpaper ID. if the specified type of wallpaper has been set; returns {@code -1} otherwise. The return value is an integer ranging from -1 to 2^31 - 1. |
 | [getMinHeight](arkts-basicservices-getminheight-f.md#getminheight-1) | Obtains the minimum height of the wallpaper. in pixels. returns 0 if no wallpaper has been set. |
 | [getMinHeight](arkts-basicservices-getminheight-f.md#getminheight-2) | Obtains the minimum height of the wallpaper. in pixels. returns 0 if no wallpaper has been set. |
 | [getMinWidth](arkts-basicservices-getminwidth-f.md#getminwidth-1) | Obtains the minimum width of the wallpaper. in pixels. returns 0 if no wallpaper has been set. |
 | [getMinWidth](arkts-basicservices-getminwidth-f.md#getminwidth-2) | Obtains the minimum width of the wallpaper. in pixels. returns 0 if no wallpaper has been set. |
-| [isChangePermitted](arkts-basicservices-ischangepermitted-f.md#ischangepermitted-1) | Checks whether to allow the application to change the wallpaper for the current user.Returns true if the application is allowed to set a wallpaper for the current user. returns false otherwise. |
-| [isChangePermitted](arkts-basicservices-ischangepermitted-f.md#ischangepermitted-2) | Checks whether to allow the application to change the wallpaper for the current user.Returns true if the application is allowed to set a wallpaper for the current user. returns false otherwise. |
-| [isOperationAllowed](arkts-basicservices-isoperationallowed-f.md#isoperationallowed-1) | Checks whether a user is allowed to set wallpapers.Returns true if a user is allowed to set wallpapers. returns false otherwise. |
-| [isOperationAllowed](arkts-basicservices-isoperationallowed-f.md#isoperationallowed-2) | Checks whether a user is allowed to set wallpapers.Returns true if a user is allowed to set wallpapers. returns false otherwise. |
+| [isChangePermitted](arkts-basicservices-ischangepermitted-f.md#ischangepermitted-1) | Checks whether to allow the application to change the wallpaper for the current user. Returns true if the application is allowed to set a wallpaper for the current user. returns false otherwise. |
+| [isChangePermitted](arkts-basicservices-ischangepermitted-f.md#ischangepermitted-2) | Checks whether to allow the application to change the wallpaper for the current user. Returns true if the application is allowed to set a wallpaper for the current user. returns false otherwise. |
+| [isOperationAllowed](arkts-basicservices-isoperationallowed-f.md#isoperationallowed-1) | Checks whether a user is allowed to set wallpapers. Returns true if a user is allowed to set wallpapers. returns false otherwise. |
+| [isOperationAllowed](arkts-basicservices-isoperationallowed-f.md#isoperationallowed-2) | Checks whether a user is allowed to set wallpapers. Returns true if a user is allowed to set wallpapers. returns false otherwise. |
 | [off](arkts-basicservices-off-f.md#off-1) | Unregisters a listener for wallpaper color changes. |
 | [on](arkts-basicservices-on-f.md#on-1) | Registers a listener for wallpaper color changes to receive notifications about the changes. |
 | [reset](arkts-basicservices-reset-f.md#reset-1) | Removes a wallpaper of the specified type and restores the default one. |
@@ -45,13 +45,13 @@ import { wallpaper } from '@kit.BasicServicesKit';
 | Name | Description |
 | --- | --- |
 | [getColorsSync](arkts-basicservices-getcolorssync-f-sys.md#getcolorssync-1) | Obtains the wallpaper colors for the wallpaper of the specified type. Returns rgbaColor type of array callback function. |
-| [getImage](arkts-basicservices-getimage-f-sys.md#getimage-1) | Obtains the default pixel map of a wallpaper of the specified type. Returns the default pixel map.Only the static wallpaper set by using setImage can be obtained. |
-| [getImage](arkts-basicservices-getimage-f-sys.md#getimage-2) | Obtains the default pixel map of a wallpaper of the specified type. Returns the default pixel map.Only the static wallpaper set by using setImage can be obtained. |
+| [getImage](arkts-basicservices-getimage-f-sys.md#getimage-1) | Obtains the default pixel map of a wallpaper of the specified type. Returns the default pixel map. Only the static wallpaper set by using setImage can be obtained. |
+| [getImage](arkts-basicservices-getimage-f-sys.md#getimage-2) | Obtains the default pixel map of a wallpaper of the specified type. Returns the default pixel map. Only the static wallpaper set by using setImage can be obtained. |
 | [getMinHeightSync](arkts-basicservices-getminheightsync-f-sys.md#getminheightsync-1) | Obtains the minimum height of the wallpaper. in pixels. returns 0 if no wallpaper has been set. |
 | [getMinWidthSync](arkts-basicservices-getminwidthsync-f-sys.md#getminwidthsync-1) | Obtains the minimum width of the wallpaper. in pixels. returns 0 if no wallpaper has been set. |
 | [getPixelMap](arkts-basicservices-getpixelmap-f-sys.md#getpixelmap-1) | Obtains the default pixel map of a wallpaper of the specified type. Returns the default pixel map. |
 | [getPixelMap](arkts-basicservices-getpixelmap-f-sys.md#getpixelmap-2) | Obtains the default pixel map of a wallpaper of the specified type. Returns the default pixel map. |
-| [getWallpaperByState](arkts-basicservices-getwallpaperbystate-f-sys.md#getwallpaperbystate-1) | Obtains the default pixel map of a wallpaper of the specified device type. Returns the default pixel map.Only the static wallpaper set by using setAllWallpapers can be obtained. |
+| [getWallpaperByState](arkts-basicservices-getwallpaperbystate-f-sys.md#getwallpaperbystate-1) | Obtains the default pixel map of a wallpaper of the specified device type. Returns the default pixel map. Only the static wallpaper set by using setAllWallpapers can be obtained. |
 | [off](arkts-basicservices-off-f-sys.md#off-2) | Unregisters a listener for wallpaper changes. |
 | [on](arkts-basicservices-on-f-sys.md#on-2) | Registers a listener for wallpaper changes to receive notifications about the changes. |
 | [restore](arkts-basicservices-restore-f-sys.md#restore-1) | Removes a wallpaper of the specified type and restores the default one. |

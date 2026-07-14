@@ -6,9 +6,7 @@
 function getShortcutInfoByAppIndex(bundleName: string, appIndex: number): Array<ShortcutInfo>
 ```
 
-查询当前用户下指定分身应用的快捷方式信息[ShortcutInfo](arkts-ability-shortcutinfo-i.md)。
-
-调用方获取自己的信息时不需要权限。
+查询当前用户下指定分身应用的快捷方式信息[ShortcutInfo](arkts-ability-shortcutinfo-i.md)。 调用方获取自己的信息时不需要权限。
 
 **起始版本：** 20
 

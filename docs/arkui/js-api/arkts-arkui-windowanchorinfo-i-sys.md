@@ -1,7 +1,6 @@
 # WindowAnchorInfo (System API)
 
-Describes the anchor point information used to maintain the relative position between the level-1 child window and
-the main window.
+Describes the anchor point information used to maintain the relative position between the level-1 child window and the main window.
 
 **Since:** 24
 
@@ -39,8 +38,7 @@ Type of the anchor point used to maintain the relative position.
 offsetX?: number
 ```
 
-X-axis offset between the anchor points of the child window and the main window, in px. The value must be an
-integer. Floating-point numbers are rounded down. The default value is **0**.
+X-axis offset between the anchor points of the child window and the main window, in px. The value must be an integer. Floating-point numbers are rounded down. The default value is **0**.
 
 **Type:** number
 
@@ -60,8 +58,7 @@ integer. Floating-point numbers are rounded down. The default value is **0**.
 offsetY?: number
 ```
 
-Y-axis offset between the anchor points of the child window and the main window, in px. The value must be an
-integer. Floating-point numbers are rounded down. The default value is **0**.
+Y-axis offset between the anchor points of the child window and the main window, in px. The value must be an integer. Floating-point numbers are rounded down. The default value is **0**.
 
 **Type:** number
 

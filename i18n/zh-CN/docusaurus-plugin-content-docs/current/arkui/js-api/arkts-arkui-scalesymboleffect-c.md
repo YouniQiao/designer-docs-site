@@ -39,9 +39,7 @@ ScaleSymbolEffect的构造函数，缩放动效。
 direction?: EffectDirection
 ```
 
-动效方向。
-
-默认值：EffectDirection.DOWN
+动效方向。 默认值：EffectDirection.DOWN
 
 **类型：** EffectDirection
 
@@ -61,9 +59,7 @@ direction?: EffectDirection
 scope?: EffectScope
 ```
 
-动效范围。
-
-默认值：EffectScope.LAYER
+动效范围。 默认值：EffectScope.LAYER
 
 **类型：** EffectScope
 

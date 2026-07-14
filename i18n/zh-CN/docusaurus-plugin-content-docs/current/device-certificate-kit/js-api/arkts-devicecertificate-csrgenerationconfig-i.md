@@ -1,16 +1,6 @@
 # CsrGenerationConfig
 
-用于生成CSR的配置参数，包含主体名称、扩展、摘要算法、输出格式等。
-
-> **说明：**
->
-> - subject是X509定义的Name类型的对象。
->
-> - mdName是摘要算法名，当前支持SHA1、SHA256、SHA384、SHA512。
->
-> - attributes是可选参数，指定**PKCS #9**中规定的扩展类型跟扩展值生成CSR。例如challengePassword。
->
-> - outFormat指定输出CSR的格式，若不指定默认为PEM格式。
+用于生成CSR的配置参数，包含主体名称、扩展、摘要算法、输出格式等。 > **说明：** > > - subject是X509定义的Name类型的对象。 > > - mdName是摘要算法名，当前支持SHA1、SHA256、SHA384、SHA512。 > > - attributes是可选参数，指定**PKCS #9**中规定的扩展类型跟扩展值生成CSR。例如challengePassword。 > > - outFormat指定输出CSR的格式，若不指定默认为PEM格式。
 
 **起始版本：** 18
 

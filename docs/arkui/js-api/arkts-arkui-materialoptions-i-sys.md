@@ -20,9 +20,7 @@ import { uiMaterial } from '@kit.ArkUI';
 type?: MaterialType
 ```
 
-Material type.
-
-Default value: **MaterialType.NONE**.
+Material type. Default value: **MaterialType.NONE**.
 
 **Type:** MaterialType
 

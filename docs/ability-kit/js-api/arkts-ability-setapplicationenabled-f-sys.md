@@ -75,8 +75,7 @@ try {
 function setApplicationEnabled(bundleName: string, appIndex: number, isEnabled: boolean, killProcess: boolean): Promise<void>
 ```
 
-Sets the enabled or disabled state of a specified application or application clone, and controls whether
-to exit the application process when the application is disabled. This API uses a promise to return the result.
+Sets the enabled or disabled state of a specified application or application clone, and controls whether to exit the application process when the application is disabled. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 

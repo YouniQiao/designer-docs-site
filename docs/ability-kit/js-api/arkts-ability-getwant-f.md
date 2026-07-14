@@ -12,8 +12,7 @@ import { featureAbility } from '@kit.AbilityKit';
 function getWant(callback: AsyncCallback<Want>): void
 ```
 
-Obtains the Want corresponding to the ability to start. This API uses an asynchronous callback to return the
-result.
+Obtains the Want corresponding to the ability to start. This API uses an asynchronous callback to return the result.
 
 **Since:** 6
 

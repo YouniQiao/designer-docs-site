@@ -98,9 +98,7 @@ Sets the header of the lazy grid layout.
 onVisibleIndexesChange(callback: OnVisibleIndexesChangeCallback | undefined): T
 ```
 
-Sets a callback for **onVisibleIndexesChange**. This callback is triggered when the index of a child component in
-the visible area of **LazyVGridLayout** changes. It returns the start and end indexes of the child components in
-the visible area. This API uses an asynchronous callback to return the result.
+Sets a callback for **onVisibleIndexesChange**. This callback is triggered when the index of a child component in the visible area of **LazyVGridLayout** changes. It returns the start and end indexes of the child components in the visible area. This API uses an asynchronous callback to return the result.
 
 **Since:** 26.0.0
 

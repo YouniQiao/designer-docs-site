@@ -1,12 +1,6 @@
 # BlendMode
 
-Blend mode.
-
-> **NOTE**
->
-> In the **blendMode** enums, **s** indicates the source pixel, **d** indicates the target pixel, **sa** indicates
-> the opacity of the source pixel, **da** indicates the opacity of the target pixel, **r** indicates the pixel after
-> blending, and **ra** indicates the opacity of the pixel after blending.
+Blend mode. > **NOTE** > > In the **blendMode** enums, **s** indicates the source pixel, **d** indicates the target pixel, **sa** indicates > the opacity of the source pixel, **da** indicates the opacity of the target pixel, **r** indicates the pixel after > blending, and **ra** indicates the opacity of the pixel after blending.
 
 **Since:** 11
 
@@ -198,8 +192,7 @@ r = d * (1 - sa): Only the part of the target pixels that do not overlap with th
 SRC_ATOP = 10
 ```
 
-r = s * da + d * (1 - sa): The part of the source pixels that overlap with the target pixels is displayed and the
-part of the target pixels that do not overlap with the source pixels are displayed.
+r = s * da + d * (1 - sa): The part of the source pixels that overlap with the target pixels is displayed and the part of the target pixels that do not overlap with the source pixels are displayed.
 
 **Since:** 11
 
@@ -217,8 +210,7 @@ part of the target pixels that do not overlap with the source pixels are display
 DST_ATOP = 11
 ```
 
-r = d * sa + s * (1 - da): The part of the target pixels that overlap with the source pixels and the part of the
-source pixels that do not overlap with the target pixels are displayed.
+r = d * sa + s * (1 - da): The part of the target pixels that overlap with the source pixels and the part of the source pixels that do not overlap with the target pixels are displayed.
 
 **Since:** 11
 
@@ -236,8 +228,7 @@ source pixels that do not overlap with the target pixels are displayed.
 XOR = 12
 ```
 
-r = s * (1 - da) + d * (1 - sa). The pixel is not displayed where the source pixel overlaps the target pixel, and
-the source pixel and target pixel are displayed where the source pixel does not overlap the target pixel.
+r = s * (1 - da) + d * (1 - sa). The pixel is not displayed where the source pixel overlaps the target pixel, and the source pixel and target pixel are displayed where the source pixel does not overlap the target pixel.
 
 **Since:** 11
 
@@ -291,8 +282,7 @@ r = s * d: New pixels resulting from multiplying the source pixels with the targ
 SCREEN = 15
 ```
 
-r = s + d - s * d: Pixels are blended by adding the source pixels to the target pixels and subtracting the product
-of their multiplication.
+r = s + d - s * d: Pixels are blended by adding the source pixels to the target pixels and subtracting the product of their multiplication.
 
 **Since:** 11
 
@@ -436,8 +426,7 @@ The LIGHTEN or DARKEN mode is used, depending on the source pixels.
 DIFFERENCE = 23
 ```
 
-rc = s + d - 2 * (min(s * da, d * sa)), ra = kSrcOver: The final pixel is the result of subtracting the darker of
-the two pixels (source and target) from the lighter one.
+rc = s + d - 2 * (min(s * da, d * sa)), ra = kSrcOver: The final pixel is the result of subtracting the darker of the two pixels (source and target) from the lighter one.
 
 **Since:** 11
 
@@ -473,8 +462,7 @@ rc = s + d - two(s * d), ra = kSrcOver: The final pixel is similar to **DIFFEREN
 MULTIPLY = 25
 ```
 
-r = s * (1 - da) + d * (1 - sa) + s * d: The final pixel is the result of multiplying the source pixel by the
-target pixel.
+r = s * (1 - da) + d * (1 - sa) + s * d: The final pixel is the result of multiplying the source pixel by the target pixel.
 
 **Since:** 11
 
@@ -492,8 +480,7 @@ target pixel.
 HUE = 26
 ```
 
-The resultant image is created with the luminance and saturation of the source image and the hue of the target
-image.
+The resultant image is created with the luminance and saturation of the source image and the hue of the target image.
 
 **Since:** 11
 
@@ -511,8 +498,7 @@ image.
 SATURATION = 27
 ```
 
-The resultant image is created with the luminance and hue of the target image and the saturation of the source
-image.
+The resultant image is created with the luminance and hue of the target image and the saturation of the source image.
 
 **Since:** 11
 
@@ -530,8 +516,7 @@ image.
 COLOR = 28
 ```
 
-The resultant image is created with the saturation and hue of the source image and the luminance of the target
-image.
+The resultant image is created with the saturation and hue of the source image and the luminance of the target image.
 
 **Since:** 11
 
@@ -549,8 +534,7 @@ image.
 LUMINOSITY = 29
 ```
 
-The resultant image is created with the saturation and hue of the target image and the luminance of the source
-image.
+The resultant image is created with the saturation and hue of the target image and the luminance of the source image.
 
 **Since:** 11
 

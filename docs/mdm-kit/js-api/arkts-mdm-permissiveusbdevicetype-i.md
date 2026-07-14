@@ -18,8 +18,7 @@ import { usbManager } from '@kit.MDMKit';
 baseClass: number
 ```
 
-The base class in USB class code information.
-The value must be an integer within [0,255].
+The base class in USB class code information. The value must be an integer within [0,255].
 
 **Type:** number
 
@@ -51,8 +50,7 @@ The descriptor that the class code is used in.
 protocol?: number
 ```
 
-The protocol in USB class code information.
-The value must be an integer within [0,255].
+The protocol in USB class code information. The value must be an integer within [0,255].
 
 **Type:** number
 
@@ -68,8 +66,7 @@ The value must be an integer within [0,255].
 subClass?: number
 ```
 
-The subclass in USB class code information.
-The value must be an integer within [0,255].
+The subclass in USB class code information. The value must be an integer within [0,255].
 
 **Type:** number
 

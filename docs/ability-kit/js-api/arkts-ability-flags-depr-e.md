@@ -162,9 +162,7 @@ Indicates that the specific ability will be installed in the background if it ha
 FLAG_ABILITY_CLEAR_MISSION = 0x00008000
 ```
 
-Clears other operation missions. This flag can be set for the Want passed in
-[startAbility](arkts-ability-startability-f.md#startability-1)
-. It must be used together with **FLAG_ABILITY_NEW_MISSION**.
+Clears other operation missions. This flag can be set for the Want passed in [startAbility](arkts-ability-startability-f.md#startability-1) . It must be used together with **FLAG_ABILITY_NEW_MISSION**.
 
 **Since:** 6
 
@@ -192,8 +190,7 @@ Creates a mission on the history mission stack.
 FLAG_ABILITY_MISSION_TOP = 0x20000000
 ```
 
-Reuses an ability instance if it is on the top of an existing mission stack; creates an ability instance
-otherwise.
+Reuses an ability instance if it is on the top of an existing mission stack; creates an ability instance otherwise.
 
 **Since:** 6
 

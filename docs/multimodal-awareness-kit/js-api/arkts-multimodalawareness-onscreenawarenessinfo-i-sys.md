@@ -74,8 +74,7 @@ Application bundle name.
 collectStrategy?: number
 ```
 
-Page collection policy, which is the bitwise OR operation combination of
-<br> [CollectStrategy](onScreen. CollectStrategy).
+Page collection policy, which is the bitwise OR operation combination of <br> [CollectStrategy](onScreen. CollectStrategy).
 
 **Type:** number
 

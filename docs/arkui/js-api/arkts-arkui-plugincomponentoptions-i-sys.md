@@ -1,7 +1,6 @@
 # PluginComponentOptions (System API)
 
-Define options used to construct a plugin component.
-AnonyMous Object Rectification
+Define options used to construct a plugin component. AnonyMous Object Rectification
 
 **Since:** 18
 
@@ -15,8 +14,7 @@ AnonyMous Object Rectification
 data: any
 ```
 
-Plugin component data.
-AnonyMous Object Rectification
+Plugin component data. AnonyMous Object Rectification
 
 **Type:** any
 
@@ -32,8 +30,7 @@ AnonyMous Object Rectification
 template: PluginComponentTemplate
 ```
 
-Plugin component template.
-AnonyMous Object Rectification
+Plugin component template. AnonyMous Object Rectification
 
 **Type:** PluginComponentTemplate
 

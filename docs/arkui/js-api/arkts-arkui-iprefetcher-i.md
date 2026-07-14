@@ -40,8 +40,7 @@ Sets the prefetching-capable data source to bind to the **Prefetcher**.
 visibleAreaChanged(minVisible: number, maxVisible: number): void
 ```
 
-Called when the boundaries of the visible area change. This API works with the **List**, **Grid**, **WaterFlow**,
-and **Swiper** components.
+Called when the boundaries of the visible area change. This API works with the **List**, **Grid**, **WaterFlow**, and **Swiper** components.
 
 **Since:** 12
 

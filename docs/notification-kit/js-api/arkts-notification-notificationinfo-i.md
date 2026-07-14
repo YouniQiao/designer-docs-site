@@ -1,8 +1,6 @@
 # NotificationInfo
 
-The **NotificationInfo** module describes the notification information delivered to the
-[onReceiveMessage](arkts-notification-notificationsubscriberextensionability-c.md#onreceivemessage-1)
-callback of ExtensionAbility for notification subscriptions.
+The **NotificationInfo** module describes the notification information delivered to the onReceiveMessage callback of ExtensionAbility for notification subscriptions.
 
 **Since:** 22
 
@@ -56,7 +54,7 @@ Name of the bundle that creates the notification.
 readonly content: NotificationExtensionContent
 ```
 
-Notification content.
+Notification content, which includes the title and body of the notification.
 
 **Type:** NotificationExtensionContent
 
@@ -70,7 +68,7 @@ Notification content.
 readonly deliveryTime?: number
 ```
 
-Timestamp (in milliseconds) when the notification is published.
+Timestamp when the notification is published. Data format: timestamp. Unit: millisecond.
 
 **Type:** number
 
@@ -84,7 +82,7 @@ Timestamp (in milliseconds) when the notification is published.
 readonly groupName?: string
 ```
 
-Notification group name, which is left empty by default.
+Name of the notification group.
 
 **Type:** string
 
@@ -112,7 +110,7 @@ Unique identifier of the notification.
 readonly notificationSlotType: notificationManager.SlotType
 ```
 
-Notification slot type.
+Notification slot type, which identifies the channel category to which the notification belongs (such as social communication, service reminder, etc.). Different slot types correspond to different reminder methods.
 
 **Type:** notificationManager.SlotType
 

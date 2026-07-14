@@ -533,8 +533,7 @@ systemSoundManagerInstance.getDefaultSystemToneAttrs(context, type).then((value:
 getHapticsAttrsSyncedWithTone(context: BaseContext, toneUri: string): Promise<ToneHapticsAttrs>
 ```
 
-Get attributes of haptics which is synchronized with one tone. If no haptics is found, then the attributes in
-the returned ToneHapticsAttrs is empty.
+Get attributes of haptics which is synchronized with one tone. If no haptics is found, then the attributes in the returned ToneHapticsAttrs is empty.
 
 **Since:** 14
 
@@ -590,12 +589,7 @@ systemSoundManagerInstance.getHapticsAttrsSyncedWithTone(context, toneUri).then(
 getMockHapticRingtonePlayer(context: BaseContext, hapticUri: string): Promise<RingtonePlayer | null>
 ```
 
-Obtains a mock haptic ringtone player for playing vibration files and their corresponding mock haptic
-sound files. This API uses a promise to return the result.
-Before calling this interface, ensure that the incoming hapticUri actually exists in the system.
-Otherwise, exceptions and errors will occur, such as failure to play the matched haptic sound file.
-After obtaining the instance through this interface, actively call {@link RingtonePlayer#release} method
-of the ringtone player to release player resources when the service is terminated.
+Obtains a mock haptic ringtone player for playing vibration files and their corresponding mock haptic sound files. This API uses a promise to return the result. Before calling this interface, ensure that the incoming hapticUri actually exists in the system. Otherwise, exceptions and errors will occur, such as failure to play the matched haptic sound file. After obtaining the instance through this interface, actively call {@link RingtonePlayer#release} method of the ringtone player to release player resources when the service is terminated.
 
 **Since:** 26.0.0
 
@@ -632,12 +626,7 @@ of the ringtone player to release player resources when the service is terminate
 getMockHapticRingtonePlayer(context: BaseContext, type: RingtoneType, ringtoneUri: string): Promise<RingtonePlayer | null>
 ```
 
-Obtains a mock haptic ringtone player for playing vibration files and their corresponding mock haptic
-sound files. This API uses a promise to return the result.
-Before calling this interface, ensure that the incoming ringtoneUri actually exists in the system.
-Otherwise, exceptions and errors will occur, such as failure to play the matched haptic sound file.
-After obtaining the instance through this interface, actively call {@link RingtonePlayer#release} method
-of the ringtone player to release player resources when the service is terminated.
+Obtains a mock haptic ringtone player for playing vibration files and their corresponding mock haptic sound files. This API uses a promise to return the result. Before calling this interface, ensure that the incoming ringtoneUri actually exists in the system. Otherwise, exceptions and errors will occur, such as failure to play the matched haptic sound file. After obtaining the instance through this interface, actively call {@link RingtonePlayer#release} method of the ringtone player to release player resources when the service is terminated.
 
 **Since:** 26.0.0
 

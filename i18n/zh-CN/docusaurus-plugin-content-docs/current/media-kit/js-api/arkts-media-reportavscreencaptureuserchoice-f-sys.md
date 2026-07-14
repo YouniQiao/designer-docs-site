@@ -6,10 +6,7 @@
 function reportAVScreenCaptureUserChoice(sessionId: number, choice: string): Promise<void>
 ```
 
-Reports the user selection result in the screen capture privacy dialog box to the AVScreenCapture server to
-determine whether to start screen capture. Screen capture starts only when the user touches a button to
-continue the operation.
-This API is called by the system application that creates the dialog box.
+Reports the user selection result in the screen capture privacy dialog box to the AVScreenCapture server to determine whether to start screen capture. Screen capture starts only when the user touches a button to continue the operation. This API is called by the system application that creates the dialog box.
 
 **起始版本：** 12
 

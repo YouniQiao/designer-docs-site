@@ -64,8 +64,7 @@ Copies a file. This API uses a promise to return the result.
 declare function copyFile(src: string | number, dest: string | number, callback: AsyncCallback<void>): void
 ```
 
-Copies a file. This API overwrites the file with the same name in the destination directory and truncates the part
-that is not overwritten. This API uses an asynchronous callback to return the result.
+Copies a file. This API overwrites the file with the same name in the destination directory and truncates the part that is not overwritten. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 

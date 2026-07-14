@@ -20,9 +20,7 @@ import { cloudSyncManager } from '@kit.CoreFileKit';
 failedCount: number
 ```
 
-failed count in TransferProgress.
-The value should be an integer.
-<br>Unit:Pcs.
+failed count in TransferProgress. The value should be an integer. <br>Unit:Pcs.
 
 **Type:** number
 
@@ -76,9 +74,7 @@ Describes the state type of transfer stop reason.
 successfulCount: number
 ```
 
-successful count in TransferProgress.
-The value should be an integer.
-<br>Unit:Pcs.
+successful count in TransferProgress. The value should be an integer. <br>Unit:Pcs.
 
 **Type:** number
 
@@ -96,9 +92,7 @@ The value should be an integer.
 totalCount: number
 ```
 
-total count in TransferProgress.
-The value should be an integer.
-<br>Unit:Pcs.
+total count in TransferProgress. The value should be an integer. <br>Unit:Pcs.
 
 **Type:** number
 
@@ -116,8 +110,7 @@ The value should be an integer.
 totalSize: number
 ```
 
-Total size in TransferProgress.
-<br>Unit:Byte.
+Total size in TransferProgress. <br>Unit:Byte.
 
 **Type:** number
 
@@ -135,8 +128,7 @@ Total size in TransferProgress.
 transferredSize: number
 ```
 
-transferred size in TransferProgress.
-<br>Unit:Byte.
+transferred size in TransferProgress. <br>Unit:Byte.
 
 **Type:** number
 

@@ -18,8 +18,7 @@ import { call } from '@kit.TelephonyKit';
 isCustomAccessibility?: boolean
 ```
 
-Whether the third-party app supports custom accessibility features.
-Default value: false.
+Whether the third-party app supports custom accessibility features. Default value: false.
 
 **Type:** boolean
 
@@ -35,8 +34,7 @@ Default value: false.
 isHideDialScreen?: boolean
 ```
 
-Whether to hide the dialer screen after call ends.
-Default value: false.
+Whether to hide the dialer screen after call ends. Default value: false.
 
 **Type:** boolean
 

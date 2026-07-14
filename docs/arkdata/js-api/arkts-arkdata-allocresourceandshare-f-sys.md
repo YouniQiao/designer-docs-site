@@ -17,9 +17,7 @@ function allocResourceAndShare(
     ): Promise<relationalStore.ResultSet>
 ```
 
-Allocates a shared resource ID based on the data that matches the specified predicates.
-This API uses a promise to return the result set of the data to share,
-which also includes the column names if they are specified.
+Allocates a shared resource ID based on the data that matches the specified predicates. This API uses a promise to return the result set of the data to share, which also includes the column names if they are specified.
 
 **Since:** 11
 
@@ -85,7 +83,6 @@ cloudData.sharing.allocResourceAndShare('storeName', predicates, participants, [
   console.error(`alloc resource and share failed, code is ${err.code},message is ${err.message}`);
 })
 
-
 ```
 
 
@@ -100,8 +97,7 @@ function allocResourceAndShare(
     ): void
 ```
 
-Allocates a shared resource ID based on the data that matches the specified predicates.
-This API uses an asynchronous callback to return the result.
+Allocates a shared resource ID based on the data that matches the specified predicates. This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -163,7 +159,6 @@ cloudData.sharing.allocResourceAndShare('storeName', predicates, participants, (
   sharingResource = res;
 })
 
-
 ```
 
 
@@ -179,9 +174,7 @@ function allocResourceAndShare(
     ): void
 ```
 
-Allocates a shared resource ID based on the data that matches the specified predicates.
-This API uses an asynchronous callback to return the result set of the data to share,
-which includes the shared resource ID and column names.
+Allocates a shared resource ID based on the data that matches the specified predicates. This API uses an asynchronous callback to return the result set of the data to share, which includes the shared resource ID and column names.
 
 **Since:** 11
 
@@ -243,7 +236,6 @@ cloudData.sharing.allocResourceAndShare('storeName', predicates, participants, [
   console.info(`sharing resource: ${res}`);
   sharingResource = res;
 })
-
 
 ```
 

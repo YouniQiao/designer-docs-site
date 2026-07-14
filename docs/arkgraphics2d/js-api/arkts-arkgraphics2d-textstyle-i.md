@@ -34,9 +34,7 @@ Rectangle style.
 badgeType?: TextBadgeType
 ```
 
-Sets whether to use superscript or subscript in text layout. **TEXT_SUPERSCRIPT** indicates that superscript is
-enabled, and **TEXT_SUBSCRIPT** indicates that subscript is enabled. The default value is **TEXT_BADGE_NONE**,
-indicating that neither superscript nor subscript is enabled.
+Sets whether to use superscript or subscript in text layout. **TEXT_SUPERSCRIPT** indicates that superscript is enabled, and **TEXT_SUBSCRIPT** indicates that subscript is enabled. The default value is **TEXT_BADGE_NONE**, indicating that neither superscript nor subscript is enabled.
 
 **Type:** TextBadgeType
 
@@ -264,9 +262,7 @@ Array of font variations.
 fontWeight?: FontWeight
 ```
 
-Font weight. The default value is **W400**. Currently, only the default system font supports font weight
-adjustment. For other fonts, if the weight is less than semi-bold (W600), there is no variation in stroke
-thickness. If the weight is greater than or equal to semi-bold, it might result in a fake bold effect.
+Font weight. The default value is **W400**. Currently, only the default system font supports font weight adjustment. For other fonts, if the weight is less than semi-bold (W600), there is no variation in stroke thickness. If the weight is greater than or equal to semi-bold, it might result in a fake bold effect.
 
 **Type:** FontWeight
 
@@ -298,9 +294,7 @@ Font width. The default value is **NORMAL**.
 halfLeading?: boolean
 ```
 
-Whether half leading is enabled. Half leading is the leading split in half and applied equally to the top and
-bottom edges. The value **true** means that half leading is enabled, and **false** means the opposite. The
-default value is **false**.
+Whether half leading is enabled. Half leading is the leading split in half and applied equally to the top and bottom edges. The value **true** means that half leading is enabled, and **false** means the opposite. The default value is **false**.
 
 **Type:** boolean
 
@@ -316,9 +310,7 @@ default value is **false**.
 heightOnly?: boolean
 ```
 
-How the height of the text box is set. The value **true** means that the height of the text box is set based on
-the font size and the value of **heightScale**, and **false** means that the height is set based on the line
-height and line spacing. The default value is **false**.
+How the height of the text box is set. The value **true** means that the height of the text box is set based on the font size and the value of **heightScale**, and **false** means that the height is set based on the line height and line spacing. The default value is **false**.
 
 **Type:** boolean
 
@@ -334,8 +326,7 @@ height and line spacing. The default value is **false**.
 heightScale?: number
 ```
 
-Scale factor of the line height. The value is a floating point number. The default value is **1.0**. This
-parameter is valid only when **heightOnly** is set to **true**.
+Scale factor of the line height. The value is a floating point number. The default value is **1.0**. This parameter is valid only when **heightOnly** is set to **true**.
 
 **Type:** number
 
@@ -351,8 +342,7 @@ parameter is valid only when **heightOnly** is set to **true**.
 letterSpacing?: number
 ```
 
-Character spacing, a floating-point value in physical pixels (px) with a default value of **0.0**. A positive
-value widens the character gap, while a negative value narrows it.
+Character spacing, a floating-point value in physical pixels (px) with a default value of **0.0**. A positive value widens the character gap, while a negative value narrows it.
 
 **Type:** number
 
@@ -368,9 +358,7 @@ value widens the character gap, while a negative value narrows it.
 lineHeightMaximum?: number
 ```
 
-Maximum line height, in physical pixels (px). If the line height is scaled, the maximum line height takes effect
-when [TextStyle](arkts-arkgraphics2d-textstyle-i.md).heightScale is greater than 0. The value is a positive floating point
-number. The default value is **Number.MAX_VALUE**.
+Maximum line height, in physical pixels (px). If the line height is scaled, the maximum line height takes effect when [TextStyle](arkts-arkgraphics2d-textstyle-i.md).heightScale is greater than 0. The value is a positive floating point number. The default value is **Number.MAX_VALUE**.
 
 **Type:** number
 
@@ -386,9 +374,7 @@ number. The default value is **Number.MAX_VALUE**.
 lineHeightMinimum?: number
 ```
 
-Minimum line height, in physical pixels (px). If the line height is scaled, the minimum line height takes effect
-when [TextStyle](arkts-arkgraphics2d-textstyle-i.md).heightScale is greater than 0. The value is a non-negative floating point
-number. The default value is **0**.
+Minimum line height, in physical pixels (px). If the line height is scaled, the minimum line height takes effect when [TextStyle](arkts-arkgraphics2d-textstyle-i.md).heightScale is greater than 0. The value is a non-negative floating point number. The default value is **0**.
 
 **Type:** number
 
@@ -420,11 +406,7 @@ Scaling base style of the line height. The default value is **FONT_SIZE**.
 locale?: string
 ```
 
-Language type. For example, **'en-Latn'** indicates English (Latin script), **'zh-Hans'** indicates Simplified
-Chinese, and **'zh-Hant'** indicates Traditional Chinese. Supports two-segment language tags in the language-
-script format, where language complies with the ISO 639-1 standard and script complies with the ISO 15924
-standard. If the locale is not specified, set to an empty string, or set to **undefined**, the default locale is
-**'zh-Hans'**.
+Language type. For example, **'en-Latn'** indicates English (Latin script), **'zh-Hans'** indicates Simplified Chinese, and **'zh-Hant'** indicates Traditional Chinese. Supports two-segment language tags in the language- script format, where language complies with the ISO 639-1 standard and script complies with the ISO 15924 standard. If the locale is not specified, set to an empty string, or set to **undefined**, the default locale is **'zh-Hans'**.
 
 **Type:** string
 

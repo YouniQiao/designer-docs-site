@@ -32,8 +32,7 @@ End position to read the data, in bytes. This parameter is optional. The default
 start?: number
 ```
 
-Start position to read the data, in bytes. This parameter is optional. By default, data is read from the current
-position.
+Start position to read the data, in bytes. This parameter is optional. By default, data is read from the current position.
 
 **Type:** number
 

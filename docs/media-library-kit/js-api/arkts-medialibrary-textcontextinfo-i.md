@@ -18,8 +18,7 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 text?: string
 ```
 
-Text based on which images are recommended.
-The text cannot exceed 250 characters. The default value is an empty string.
+Text based on which images are recommended. The text cannot exceed 250 characters. The default value is an empty string.
 
 **Type:** string
 

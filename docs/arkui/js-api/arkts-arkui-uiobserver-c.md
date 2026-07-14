@@ -1,17 +1,6 @@
 # UIObserver
 
-Provides APIs for listening for UI component behavior changes.
-
-> **NOTE**
->
-> - The initial APIs of this class are supported since API version 11.
->
-> - In the following API examples, you must first use [getUIObserver()](arkts-arkui-uicontext-c.md#getuiobserver-1) in
-> **UIContext** to obtain a **UIObserver** instance, and then call the APIs using the obtained instance.
->
-> - UIObserver can only listen for relevant information within the current process and does not support obtaining
-> information in cross-process scenarios<!--Del--> such as [UIExtensionComponent](../arkts-components/arkts-arkui-uiextensioncomponent.md)<!--
-> DelEnd-->.
+Provides APIs for listening for UI component behavior changes. > **NOTE** > > - The initial APIs of this class are supported since API version 11. > > - In the following API examples, you must first use [getUIObserver()](arkts-arkui-uicontext-c.md#getuiobserver-1) in > **UIContext** to obtain a **UIObserver** instance, and then call the APIs using the obtained instance. > > - UIObserver can only listen for relevant information within the current process and does not support obtaining > information in cross-process scenarios<!--Del--> such as [UIExtensionComponent](../arkts-components/arkts-arkui-uiextensioncomponent.md)<!-- > DelEnd-->.
 
 **Since:** 11
 
@@ -410,9 +399,7 @@ Removes a callback function to be called after tapGesture is called.
 off(type: 'beforePanStart', callback?: PanListenerCallback): void
 ```
 
-Unregisters the listener for pan gesture [onActionStart](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionstart-1) pre-execution
-events, canceling callbacks registered via
-[on('beforePanStart')](arkts-arkui-uiobserver-c.md#on-16).
+Unregisters the listener for pan gesture [onActionStart](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionstart-1) pre-execution events, canceling callbacks registered via [on('beforePanStart')](arkts-arkui-uiobserver-c.md#on-16).
 
 **Since:** 19
 
@@ -435,9 +422,7 @@ events, canceling callbacks registered via
 off(type: 'beforePanEnd', callback?: PanListenerCallback): void
 ```
 
-Unregisters the listener for pan gesture [onActionEnd](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionend-1) pre-execution events,
-canceling callbacks registered via
-[on('beforePanEnd')](arkts-arkui-uiobserver-c.md#on-17).
+Unregisters the listener for pan gesture [onActionEnd](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionend-1) pre-execution events, canceling callbacks registered via [on('beforePanEnd')](arkts-arkui-uiobserver-c.md#on-17).
 
 **Since:** 19
 
@@ -460,9 +445,7 @@ canceling callbacks registered via
 off(type: 'afterPanStart', callback?: PanListenerCallback): void
 ```
 
-Unregisters the listener for pan gesture [onActionStart](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionstart-1) post-execution
-events, canceling callbacks registered via
-[on('afterPanStart')](arkts-arkui-uiobserver-c.md#on-18).
+Unregisters the listener for pan gesture [onActionStart](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionstart-1) post-execution events, canceling callbacks registered via [on('afterPanStart')](arkts-arkui-uiobserver-c.md#on-18).
 
 **Since:** 19
 
@@ -485,9 +468,7 @@ events, canceling callbacks registered via
 off(type: 'afterPanEnd', callback?: PanListenerCallback): void
 ```
 
-Unregisters the listener for pan gesture [onActionEnd](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionend-1) post-execution
-events, canceling callbacks registered via
-[on('afterPanEnd')](arkts-arkui-uiobserver-c.md#on-19).
+Unregisters the listener for pan gesture [onActionEnd](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionend-1) post-execution events, canceling callbacks registered via [on('afterPanEnd')](arkts-arkui-uiobserver-c.md#on-19).
 
 **Since:** 19
 
@@ -604,8 +585,7 @@ Removes a callback function that was previously registered with `on()`.
 off(type: 'windowSizeLayoutBreakpointChange', callback?: Callback<observer.WindowSizeLayoutBreakpointInfo>): void
 ```
 
-Unregisters previously registered window size layout breakpoint change listeners. If no callback is specified, all
-listeners for the current UI context are removed. This API uses an asynchronous callback to return the result.
+Unregisters previously registered window size layout breakpoint change listeners. If no callback is specified, all listeners for the current UI context are removed. This API uses an asynchronous callback to return the result.
 
 **Since:** 22
 
@@ -699,8 +679,7 @@ Removes a callback function that was previously registered with `on()`.
 offNavDestinationSizeChange(callback?: Callback<observer.NavDestinationInfo>): void
 ```
 
-Removes the listener callback registered using the **onNavDestinationSizeChange** API. This API uses an
-asynchronous callback to return the result.
+Removes the listener callback registered using the **onNavDestinationSizeChange** API. This API uses an asynchronous callback to return the result.
 
 **Since:** 23
 
@@ -745,8 +724,7 @@ Removes a callback function that was previously registered with 'onNavDestinatio
 offRouterPageSizeChange(callback?: Callback<observer.RouterPageInfo>): void
 ```
 
-Removes the listener callback registered using the **onRouterPageSizeChange** API. This API uses an asynchronous
-callback to return the result.
+Removes the listener callback registered using the **onRouterPageSizeChange** API. This API uses an asynchronous callback to return the result.
 
 **Since:** 23
 
@@ -1169,9 +1147,7 @@ Registers a callback function to be called after tapGesture is called.
 on(type: 'beforePanStart', callback: PanListenerCallback): void
 ```
 
-Listens for pan gesture [onActionStart](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionstart-1) pre-execution events, executing
-the callback before the actual [onActionStart](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionstart-1) event. It works for finger
-swiping, mouse dragging, mouse wheel scrolling, and touchpad movements, but not for screen reader touch mode.
+Listens for pan gesture [onActionStart](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionstart-1) pre-execution events, executing the callback before the actual [onActionStart](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionstart-1) event. It works for finger swiping, mouse dragging, mouse wheel scrolling, and touchpad movements, but not for screen reader touch mode.
 
 **Since:** 19
 
@@ -1194,9 +1170,7 @@ swiping, mouse dragging, mouse wheel scrolling, and touchpad movements, but not 
 on(type: 'beforePanEnd', callback: PanListenerCallback): void
 ```
 
-Listens for pan gesture [onActionEnd](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionend-1) pre-execution events, executing the
-callback before the actual [onActionEnd](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionend-1) event. It works for finger swiping,
-mouse dragging, mouse wheel scrolling, and touchpad movements, but not for screen reader touch mode.
+Listens for pan gesture [onActionEnd](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionend-1) pre-execution events, executing the callback before the actual [onActionEnd](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionend-1) event. It works for finger swiping, mouse dragging, mouse wheel scrolling, and touchpad movements, but not for screen reader touch mode.
 
 **Since:** 19
 
@@ -1219,9 +1193,7 @@ mouse dragging, mouse wheel scrolling, and touchpad movements, but not for scree
 on(type: 'afterPanStart', callback: PanListenerCallback): void
 ```
 
-Listens for pan gesture [onActionStart](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionstart-1) post-execution events, executing
-the callback after the actual [onActionStart](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionstart-1) event. It works for finger
-swiping, mouse dragging, mouse wheel scrolling, and touchpad movements, but not for screen reader touch mode.
+Listens for pan gesture [onActionStart](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionstart-1) post-execution events, executing the callback after the actual [onActionStart](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionstart-1) event. It works for finger swiping, mouse dragging, mouse wheel scrolling, and touchpad movements, but not for screen reader touch mode.
 
 **Since:** 19
 
@@ -1244,9 +1216,7 @@ swiping, mouse dragging, mouse wheel scrolling, and touchpad movements, but not 
 on(type: 'afterPanEnd', callback: PanListenerCallback): void
 ```
 
-Listens for pan gesture [onActionEnd](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionend-1) post-execution events, executing the
-callback after the actual [onActionEnd](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionend-1) event. It works for finger swiping,
-mouse dragging, mouse wheel scrolling, and touchpad movements, but not for screen reader touch mode.
+Listens for pan gesture [onActionEnd](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionend-1) post-execution events, executing the callback after the actual [onActionEnd](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionend-1) event. It works for finger swiping, mouse dragging, mouse wheel scrolling, and touchpad movements, but not for screen reader touch mode.
 
 **Since:** 19
 
@@ -1316,8 +1286,7 @@ Registers a callback function to be called when the tabContent is showed or hidd
 on(type: 'tabChange', config: observer.ObserverOptions, callback: Callback<observer.TabContentInfo>): void
 ```
 
-Registers a callback function to be called when the tabContent is showed or hidden.
-Include the cases when the first tab content shows and when the tab changes current index.
+Registers a callback function to be called when the tabContent is showed or hidden. Include the cases when the first tab content shows and when the tab changes current index.
 
 **Since:** 22
 
@@ -1341,8 +1310,7 @@ Include the cases when the first tab content shows and when the tab changes curr
 on(type: 'tabChange', callback: Callback<observer.TabContentInfo>): void
 ```
 
-Registers a callback function to be called when the tabContent is showed or hidden.
-Include the cases when the first tab content shows and when the tab changes current index.
+Registers a callback function to be called when the tabContent is showed or hidden. Include the cases when the first tab content shows and when the tab changes current index.
 
 **Since:** 22
 
@@ -1365,8 +1333,7 @@ Include the cases when the first tab content shows and when the tab changes curr
 on(type: 'windowSizeLayoutBreakpointChange', callback: Callback<observer.WindowSizeLayoutBreakpointInfo>): void
 ```
 
-Registers a callback for window size layout breakpoint changes. This enables adaptive UI layout adjustments based
-on window size variations. This API uses an asynchronous callback to return the result.
+Registers a callback for window size layout breakpoint changes. This enables adaptive UI layout adjustments based on window size variations. This API uses an asynchronous callback to return the result.
 
 **Since:** 22
 
@@ -1389,17 +1356,7 @@ on window size variations. This API uses an asynchronous callback to return the 
 on(type: 'nodeRenderState', nodeIdentity: NodeIdentity, callback: NodeRenderStateChangeCallback): void
 ```
 
-Registers a callback to be invoked when the rendering state of a specific node changes. This callback is executed
-immediately once upon successful registration.
-
-Be mindful of node quantity limitations. For performance reasons, registering too many nodes within a single UI
-instance will throw an exception.
-
-Typically, a **RENDER_OUT** notification is received when a component moves off-screen. However, in certain
-scenarios, a **RENDER_OUT** notification might not be triggered even if a component has moved off-screen. For
-example, components with caching capabilities like [Swiper](../arkts-components/arkts-arkui-swiper.md) will not trigger **RENDER_OUT**
-notifications even when the **isShown** parameter in the
-[cachedCount](SwiperAttribute#cachedCount(count: number, isShown: boolean)) attribute is set to **true**.
+Registers a callback to be invoked when the rendering state of a specific node changes. This callback is executed immediately once upon successful registration. Be mindful of node quantity limitations. For performance reasons, registering too many nodes within a single UI instance will throw an exception. Typically, a **RENDER_OUT** notification is received when a component moves off-screen. However, in certain scenarios, a **RENDER_OUT** notification might not be triggered even if a component has moved off-screen. For example, components with caching capabilities like [Swiper](../arkts-components/arkts-arkui-swiper.md) will not trigger **RENDER_OUT** notifications even when the **isShown** parameter in the [cachedCount](SwiperAttribute#cachedCount(count: number, isShown: boolean)) attribute is set to **true**.
 
 **Since:** 20
 
@@ -1476,8 +1433,7 @@ Registers a callback function to be called when text field's content is changed.
 onNavDestinationSizeChange(callback: Callback<observer.NavDestinationInfo>): void
 ```
 
-Registers a callback that is triggered when the size of the visible navigation destination changes. This API uses
-an asynchronous callback to return the result.
+Registers a callback that is triggered when the size of the visible navigation destination changes. This API uses an asynchronous callback to return the result.
 
 **Since:** 23
 
@@ -1499,8 +1455,7 @@ an asynchronous callback to return the result.
 onNavDestinationSizeChangeByUniqueId(navigationUniqueId: number, callback: Callback<observer.NavDestinationInfo>): void
 ```
 
-Removes the listener callback registered using the **onNavDestinationSizeChangeByUniqueId** API. This API uses an
-asynchronous callback to return the result.
+Removes the listener callback registered using the **onNavDestinationSizeChangeByUniqueId** API. This API uses an asynchronous callback to return the result.
 
 **Since:** 23
 
@@ -1523,8 +1478,7 @@ asynchronous callback to return the result.
 onRouterPageSizeChange(callback: Callback<observer.RouterPageInfo>): void
 ```
 
-Registers a callback that is triggered when the size of the visible router page changes. This API uses an
-asynchronous callback to return the result.
+Registers a callback that is triggered when the size of the visible router page changes. This API uses an asynchronous callback to return the result.
 
 **Since:** 23
 
@@ -1546,8 +1500,7 @@ asynchronous callback to return the result.
 onSwiperContentUpdate(callback: Callback<SwiperContentInfo>): void
 ```
 
-Listens for content switching events of the **Swiper** component. This API uses an asynchronous callback to return
-the result.
+Listens for content switching events of the **Swiper** component. This API uses an asynchronous callback to return the result.
 
 **Since:** 22
 
@@ -1569,8 +1522,7 @@ the result.
 onSwiperContentUpdate(config: observer.ObserverOptions, callback: Callback<SwiperContentInfo>): void
 ```
 
-Listens for content switching events of a specific **Swiper** component identified by its ID. This API uses an
-asynchronous callback to return the result.
+Listens for content switching events of a specific **Swiper** component identified by its ID. This API uses an asynchronous callback to return the result.
 
 **Since:** 22
 

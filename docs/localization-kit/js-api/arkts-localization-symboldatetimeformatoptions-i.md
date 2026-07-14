@@ -1,7 +1,6 @@
 # SymbolDateTimeFormatOptions
 
-Represents optional configuration items for the SymbolDateTimeFormat object.
-Define the symbol element and value that need to be replaced.
+Represents optional configuration items for the SymbolDateTimeFormat object. Define the symbol element and value that need to be replaced.
 
 **Inheritance/Implementation:** SymbolDateTimeFormatOptions extends [Intl.DateTimeFormatOptions](../../apis-na/arkts-apis/arkts-na-datetimeformatoptions-i.md)
 
@@ -21,8 +20,7 @@ import { i18n } from '@kit.LocalizationKit';
 amPMSymbol?: string[] | undefined
 ```
 
-AM and PM symbol of date time period part, such as "PM" of "2:23 PM". The parameter array
-must be greater than 2, If greater than 2, the first two will be selected.
+AM and PM symbol of date time period part, such as "PM" of "2:23 PM". The parameter array must be greater than 2, If greater than 2, the first two will be selected.
 
 **Type:** string[] | undefined
 

@@ -1,6 +1,6 @@
 # EnabledPriorityNotificationByBundleCallbackData (System API)
 
-Describes the switch state to Restrict notification capability.
+Returns the notification priority switch state.
 
 **Since:** 23
 
@@ -30,11 +30,7 @@ Bundle name of the application.
 readonly enableStatus: notificationManager.PriorityEnableStatus
 ```
 
-Whether the priority notification for an application is enabled.
-- **DISABLE**: The priority notification is disabled.
-- **ENABLE_BY_INTELLIGENT**: The priority notification can be enabled through intelligent recognition,
-user keyword matching, or application rule matching.
-- **ENABLE**: The priority notification is enabled for all applications.
+Whether the priority notification for an application is enabled. - **DISABLE**: The priority notification is disabled. - **ENABLE_BY_INTELLIGENT**: The priority notification can be enabled through intelligent recognition, user keyword matching, or application rule matching. - **ENABLE**: The priority notification is enabled for all applications.
 
 **Type:** notificationManager.PriorityEnableStatus
 

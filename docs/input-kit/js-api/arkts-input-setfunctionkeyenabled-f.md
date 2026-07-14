@@ -12,8 +12,7 @@ import { inputDevice } from '@kit.InputKit';
 function setFunctionKeyEnabled(functionKey: FunctionKey, enabled: boolean): Promise<void>
 ```
 
-Specifies whether to enable a function key (for example, **CapsLock**). This API uses a promise to return the
-result.
+Specifies whether to enable a function key (for example, **CapsLock**). This API uses a promise to return the result.
 
 **Since:** 15
 

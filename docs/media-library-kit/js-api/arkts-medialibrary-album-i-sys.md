@@ -1,6 +1,6 @@
 # Album
 
-Defines the album.
+Provides APIs to manage albums.
 
 **Inheritance/Implementation:** Album extends [AbsAlbum](arkts-medialibrary-absalbum-i.md)
 
@@ -20,7 +20,7 @@ import { sendablePhotoAccessHelper } from '@kit.MediaLibraryKit';
 getFaceId(): Promise<string>
 ```
 
-Obtains the face identifier on the cover of a portrait album or group photo album.
+Obtains the face identifier on the cover of a portrait album or group photo album. This API uses a promise to return the result.
 
 **Since:** 13
 
@@ -34,7 +34,7 @@ Obtains the face identifier on the cover of a portrait album or group photo albu
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;string&gt; | Returns tag_id if portrait album, Returns group_tag if group photo album,<br>Returns empty if not found. |
+| Promise&lt;string&gt; | Promise used to return **tag_id** of the portrait album, **group_tag** of the groupphoto album, or an empty string if no face identifier is found. |
 
 **Error codes:**
 

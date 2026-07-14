@@ -1,7 +1,6 @@
 # @ohos.file.cloudSyncManager
 
-The **cloudSyncManager** module provides APIs for managing device-cloud sync for applications. You can use the APIs
-to manage the full download state, the reason why the full download stops, and number of local and cloud files.
+The **cloudSyncManager** module provides APIs for managing device-cloud sync for applications. You can use the APIs to manage the full download state, the reason why the full download stops, and number of local and cloud files.
 
 **Since:** 10
 
@@ -21,19 +20,19 @@ import { cloudSyncManager } from '@kit.CoreFileKit';
 | Name | Description |
 | --- | --- |
 | [changeAppCloudSwitch](arkts-corefile-changeappcloudswitch-f-sys.md#changeappcloudswitch-1) | Changes the device-cloud file sync switch for an application. This API uses a promise to return the result. |
-| [changeAppCloudSwitch](arkts-corefile-changeappcloudswitch-f-sys.md#changeappcloudswitch-2) | Changes the device-cloud file sync switch for an application. This API uses an asynchronous callback to return theresult. |
+| [changeAppCloudSwitch](arkts-corefile-changeappcloudswitch-f-sys.md#changeappcloudswitch-2) | Changes the device-cloud file sync switch for an application. This API uses an asynchronous callback to return the result. |
 | [clean](arkts-corefile-clean-f-sys.md#clean-1) | Callback used to clear the cloud data locally. This API uses a promise to return the result. |
 | [clean](arkts-corefile-clean-f-sys.md#clean-2) | Callback used to clear the cloud data locally. This API uses an asynchronous callback to return the result. |
 | [disableCloud](arkts-corefile-disablecloud-f-sys.md#disablecloud-1) | Disables device-cloud sync. This API uses a promise to return the result. |
 | [disableCloud](arkts-corefile-disablecloud-f-sys.md#disablecloud-2) | Disables device-cloud sync. This API uses an asynchronous callback to return the result. |
 | [enableCloud](arkts-corefile-enablecloud-f-sys.md#enablecloud-1) | Enables device-cloud sync. This API uses a promise to return the result. |
 | [enableCloud](arkts-corefile-enablecloud-f-sys.md#enablecloud-2) | Enables device-cloud sync. This API uses an asynchronous callback to return the result. |
-| [getBundlesLocalFilePresentStatus](arkts-corefile-getbundleslocalfilepresentstatus-f-sys.md#getbundleslocalfilepresentstatus-1) | Obtains the existence status of local files for multiple applications and checks whether there are files thathave not been uploaded to the cloud in the cloud storage space. This API uses a promise to return the result. |
+| [getBundlesLocalFilePresentStatus](arkts-corefile-getbundleslocalfilepresentstatus-f-sys.md#getbundleslocalfilepresentstatus-1) | Obtains the existence status of local files for multiple applications and checks whether there are files that have not been uploaded to the cloud in the cloud storage space. This API uses a promise to return the result. |
 | [getDowngradeDownloadTaskState](arkts-corefile-getdowngradedownloadtaskstate-f-sys.md#getdowngradedownloadtaskstate-1) | Supports querying the execution status of full data download tasks for integrated cloud drive applications. |
-| [notifyDataChange](arkts-corefile-notifydatachange-f-sys.md#notifydatachange-1) | Notifies the device-cloud service that the cloud data of a specific application under a specified account has beenchanged. This API uses a promise to return the result. |
-| [notifyDataChange](arkts-corefile-notifydatachange-f-sys.md#notifydatachange-2) | Notifies the device-cloud service that the cloud data of a specific application under a specified account has beenchanged. This API uses an asynchronous callback to return the result. |
-| [notifyDataChange](arkts-corefile-notifydatachange-f-sys.md#notifydatachange-3) | Notifies the device-cloud service of the cloud data change information of a specified user. This API uses a promiseto return the result. |
-| [notifyDataChange](arkts-corefile-notifydatachange-f-sys.md#notifydatachange-4) | Notifies the device-cloud service of the cloud data change information of a specified user. This API uses anasynchronous callback to return the result. |
+| [notifyDataChange](arkts-corefile-notifydatachange-f-sys.md#notifydatachange-1) | Notifies the device-cloud service that the cloud data of a specific application under a specified account has been changed. This API uses a promise to return the result. |
+| [notifyDataChange](arkts-corefile-notifydatachange-f-sys.md#notifydatachange-2) | Notifies the device-cloud service that the cloud data of a specific application under a specified account has been changed. This API uses an asynchronous callback to return the result. |
+| [notifyDataChange](arkts-corefile-notifydatachange-f-sys.md#notifydatachange-3) | Notifies the device-cloud service of the cloud data change information of a specified user. This API uses a promise to return the result. |
+| [notifyDataChange](arkts-corefile-notifydatachange-f-sys.md#notifydatachange-4) | Notifies the device-cloud service of the cloud data change information of a specified user. This API uses an asynchronous callback to return the result. |
 <!--DelEnd-->
 
 ### Classes
@@ -47,7 +46,7 @@ import { cloudSyncManager } from '@kit.CoreFileKit';
 
 | Name | Description |
 | --- | --- |
-| [DowngradeDownload](arkts-corefile-downgradedownload-c-sys.md) | Full download: provides the capability of downloading cloud data for applications.It supports the full download of cloud application files. |
+| [DowngradeDownload](arkts-corefile-downgradedownload-c-sys.md) | Full download: provides the capability of downloading cloud data for applications. It supports the full download of cloud application files. |
 <!--DelEnd-->
 
 ### Interfaces
@@ -62,7 +61,7 @@ import { cloudSyncManager } from '@kit.CoreFileKit';
 | Name | Description |
 | --- | --- |
 | [ExtraData](arkts-corefile-extradata-i-sys.md) | Represents the cloud data change information. |
-| [LocalFilePresentStatus](arkts-corefile-localfilepresentstatus-i-sys.md) | Specifies a result object that contains the application bundle name and the status information about whether thereare files that have not been uploaded to the cloud in the cloud storage space. |
+| [LocalFilePresentStatus](arkts-corefile-localfilepresentstatus-i-sys.md) | Specifies a result object that contains the application bundle name and the status information about whether there are files that have not been uploaded to the cloud in the cloud storage space. |
 | [TransferProgress](arkts-corefile-transferprogress-i-sys.md) | Defines the TransferProgress data structure. |
 <!--DelEnd-->
 

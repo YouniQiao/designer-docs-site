@@ -1,11 +1,6 @@
 # Int8Array
 
-一种线性数据结构，底层基于[ArkTS ArrayBuffer](arkts-collections.md)实现。
-
-> **说明**
->
-> - 此模块仅支持在ArkTS文件（文件后缀为.ets）中导入使用。
-> **装饰器类型**：\@Sendable
+一种线性数据结构，底层基于[ArkTS ArrayBuffer](arkts-collections.md)实现。 > **说明** > > - 此模块仅支持在ArkTS文件（文件后缀为.ets）中导入使用。 > **装饰器类型**：\@Sendable
 
 **起始版本：** 12
 
@@ -19,9 +14,7 @@
 [Symbol.iterator](): IterableIterator<number>
 ```
 
-返回一个迭代器，迭代器的每一项都是一个数字对象。
-说明：
-本接口不支持在.ets文件中使用。
+返回一个迭代器，迭代器的每一项都是一个数字对象。 说明： 本接口不支持在.ets文件中使用。
 
 **起始版本：** 12
 

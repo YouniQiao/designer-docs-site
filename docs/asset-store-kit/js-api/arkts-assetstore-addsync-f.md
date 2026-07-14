@@ -12,9 +12,7 @@ import { asset } from '@kit.AssetStoreKit';
 function addSync(attributes: AssetMap): void
 ```
 
-Adds an asset. This API returns the result synchronously.
-
-To set {@link Tag.IS_PERSISTENT}, the application must have the ohos.permission.STORE_PERSISTENT_DATA permission.
+Adds an asset. This API returns the result synchronously. To set {@link Tag.IS_PERSISTENT}, the application must have the ohos.permission.STORE_PERSISTENT_DATA permission.
 
 **Since:** 12
 

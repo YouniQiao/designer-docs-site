@@ -22,9 +22,7 @@ import { camera } from '@kit.CameraKit';
 enableSceneFeature(type: SceneFeatureType, enabled: boolean): void
 ```
 
-Enables or disables a scene feature. This API must be called after
-[SceneFeatureDetectionResult](arkts-camera-scenefeaturedetectionresult-i-sys.md) of the corresponding scene feature is
-received.
+Enables or disables a scene feature. This API must be called after [SceneFeatureDetectionResult](arkts-camera-scenefeaturedetectionresult-i-sys.md) of the corresponding scene feature is received.
 
 **Since:** 12
 

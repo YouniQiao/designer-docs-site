@@ -136,8 +136,7 @@ Device startup is complete.
 MANAGED_EVENT_BUNDLE_UPDATED = 10
 ```
 
-Application update events.
-**Since**: 26.0.0
+Application update events. **Since**: 26.0.0
 
 **Since:** 26.0.0
 

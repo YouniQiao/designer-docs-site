@@ -12,8 +12,7 @@ import { bluetoothManager } from '@kit.ConnectivityKit';
 function setBluetoothScanMode(mode: ScanMode, duration: number): void
 ```
 
-Sets the Bluetooth scan mode for a device.
-On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
+Sets the Bluetooth scan mode for a device. On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
 
 **Since:** 9
 

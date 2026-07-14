@@ -1,7 +1,6 @@
 # DisplayOrientation
 
-Enumerates the display orientations of the ability. It is applicable only to
-[PageAbility](../../../../application-models/pageability-overview.md) in the FA model.
+Enumerates the display orientations of the ability. It is applicable only to [PageAbility](../../../../application-models/pageability-overview.md) in the FA model.
 
 **Since:** 9
 

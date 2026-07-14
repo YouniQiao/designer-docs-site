@@ -54,9 +54,7 @@ id: number
 isLocal?: boolean
 ```
 
-输入设备是否为本地设备。
-
-true表示是本地设备，false表示是非本地设备。
+输入设备是否为本地设备。 true表示是本地设备，false表示是非本地设备。
 
 **类型：** boolean
 
@@ -70,9 +68,7 @@ true表示是本地设备，false表示是非本地设备。
 isVirtual?: boolean
 ```
 
-输入设备是否为虚拟设备。
-
-true表示是虚拟设备，false表示是非虚拟设备。
+输入设备是否为虚拟设备。 true表示是虚拟设备，false表示是非虚拟设备。
 
 **类型：** boolean
 

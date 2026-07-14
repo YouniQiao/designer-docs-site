@@ -6,9 +6,7 @@
 const audioBalance: Config<number>
 ```
 
-Audio balance for the left and right audio channels. The value ranges from -1.0 to 1.0.
-
-Default value: **0.0**
+Audio balance for the left and right audio channels. The value ranges from -1.0 to 1.0. Default value: **0.0**
 
 **Since:** 10
 
@@ -22,10 +20,7 @@ Default value: **0.0**
 const audioMono: Config<boolean>
 ```
 
-Whether to enable mono audio. The value **true** indicates that mono audio is enabled, and **false** indicates the
-opposite.
-
-Default value: **false**
+Whether to enable mono audio. The value **true** indicates that mono audio is enabled, and **false** indicates the opposite. Default value: **false**
 
 **Since:** 10
 
@@ -53,10 +48,7 @@ Length of time required for a click.
 const daltonizationState: Config<boolean>
 ```
 
-Whether to enable daltonization. It must be used with **daltonizationColorFilter**. The value **true** indicates
-that daltonization is enabled, and **false** indicates the opposite.
-
-Default value: **false**
+Whether to enable daltonization. It must be used with **daltonizationColorFilter**. The value **true** indicates that daltonization is enabled, and **false** indicates the opposite. Default value: **false**
 
 **Since:** 11
 
@@ -70,10 +62,7 @@ Default value: **false**
 const ignoreRepeatClick: Config<boolean>
 ```
 
-Whether to ignore repeated clicks. This parameter must be used together with **repeatClickInterval**. The value
-**true** indicates that the feature of ignoring repeated clicks is enabled, and **false** indicates the opposite.
-
-Default value: **false**
+Whether to ignore repeated clicks. This parameter must be used together with **repeatClickInterval**. The value **true** indicates that the feature of ignoring repeated clicks is enabled, and **false** indicates the opposite. Default value: **false**
 
 **Since:** 11
 

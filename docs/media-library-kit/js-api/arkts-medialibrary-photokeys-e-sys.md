@@ -1,10 +1,26 @@
 # PhotoKeys
 
-Enumeration of photo asset members
+Defines the key information about an image or video file.
 
-**Since:** 20
+**Since:** 10
 
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
+
+## POSITION
+
+```TypeScript
+POSITION = 'position'
+```
+
+File location type.
+
+**Since:** 16
+
+**Atomic service API:** This API can be used in atomic services since API version 20.
+
+**System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
+
+**System API:** This is a system API.
 
 ## DATE_TRASHED
 
@@ -12,7 +28,7 @@ Enumeration of photo asset members
 DATE_TRASHED = 'date_trashed'
 ```
 
-Trashed date of the asset, read only
+Date when the file was deleted. The value is the number of seconds elapsed since the Epoch time.
 
 **Since:** 10
 
@@ -26,7 +42,7 @@ Trashed date of the asset, read only
 HIDDEN = 'hidden'
 ```
 
-Hidden state of the asset, read only
+Whether the file is hidden.
 
 **Since:** 10
 
@@ -40,7 +56,7 @@ Hidden state of the asset, read only
 USER_COMMENT = 'user_comment'
 ```
 
-User comment info
+User comment information.
 
 **Since:** 10
 
@@ -54,7 +70,7 @@ User comment info
 CAMERA_SHOT_KEY = 'camera_shot_key'
 ```
 
-Camera shot key
+Key for the Ultra Snapshot feature, which allows the camera to take photos or record videos with the screen off. (This parameter is available only for the system camera, and the key value is defined by the system camera.)
 
 **Since:** 10
 
@@ -68,7 +84,7 @@ Camera shot key
 DATE_YEAR = 'date_year'
 ```
 
-The year of the file created, read only
+Year when the file was created.
 
 **Since:** 11
 
@@ -82,7 +98,7 @@ The year of the file created, read only
 DATE_MONTH = 'date_month'
 ```
 
-The month of the file created, read only
+Month when the file was created.
 
 **Since:** 11
 
@@ -96,7 +112,7 @@ The month of the file created, read only
 DATE_DAY = 'date_day'
 ```
 
-The day of the file created, read only
+Date when the file was created.
 
 **Since:** 11
 
@@ -110,7 +126,7 @@ The day of the file created, read only
 PENDING = 'pending'
 ```
 
-Pending state of the asset, true means asset is pending, read only
+Pending state.
 
 **Since:** 11
 
@@ -124,7 +140,7 @@ Pending state of the asset, true means asset is pending, read only
 DATE_TRASHED_MS = 'date_trashed_ms'
 ```
 
-Trashed time of the asset in milliseconds, read only
+Date when the file was deleted. The value is the number of milliseconds elapsed since the Epoch time. **NOTE**: The photos queried cannot be sorted based on this field.
 
 **Since:** 12
 
@@ -138,7 +154,7 @@ Trashed time of the asset in milliseconds, read only
 MOVING_PHOTO_EFFECT_MODE = 'moving_photo_effect_mode'
 ```
 
-Effect mode of moving photo, read only
+Effect of the moving photo.
 
 **Since:** 12
 
@@ -152,7 +168,7 @@ Effect mode of moving photo, read only
 THUMBNAIL_READY = 'thumbnail_ready'
 ```
 
-Thumbnail of photo asset has been ready, read only
+Whether a thumbnail is generated.
 
 **Since:** 13
 
@@ -166,7 +182,7 @@ Thumbnail of photo asset has been ready, read only
 CE_AVAILABLE = 'ce_available'
 ```
 
-Cloud enhancement status of the asset, read only
+Cloud enhancement identifier.
 
 **Since:** 13
 
@@ -180,7 +196,7 @@ Cloud enhancement status of the asset, read only
 SUPPORTED_WATERMARK_TYPE = 'supported_watermark_type'
 ```
 
-watermark type of the asset, read only
+Watermark type to set.
 
 **Since:** 14
 
@@ -194,7 +210,7 @@ watermark type of the asset, read only
 THUMBNAIL_VISIBLE = 'thumbnail_visible'
 ```
 
-visibility of thumbnails
+Whether the thumbnail of the media asset is visible.
 
 **Since:** 14
 
@@ -208,9 +224,23 @@ visibility of thumbnails
 IS_CE_AUTO = 'is_auto'
 ```
 
-Whether the photo supports auto cloud enhancement task, read only
+Whether automatic cloud enhancement is supported.
 
 **Since:** 18
+
+**System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
+
+**System API:** This is a system API.
+
+## OWNER_ALBUM_ID
+
+```TypeScript
+OWNER_ALBUM_ID = 'owner_album_id'
+```
+
+ID of the album to which the photo belongs.
+
+**Since:** 22
 
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -222,7 +252,7 @@ Whether the photo supports auto cloud enhancement task, read only
 IS_RECENT_SHOW = 'is_recent_show'
 ```
 
-Recentshow state of the asset, read only
+Whether the asset is displayed in the **Recent** list.
 
 **Since:** 18
 
@@ -236,7 +266,7 @@ Recentshow state of the asset, read only
 SUM_SIZE = 'sum(size)'
 ```
 
-total size of assets, read only
+Total size of files. When **SUM_SIZE** is filled in **fetchColumns**, only the first asset is obtained, and the property includes the total size of all assets.
 
 **Since:** 19
 
@@ -250,7 +280,7 @@ total size of assets, read only
 EXIF_ROTATE = 'exif_rotate'
 ```
 
-orientation in exif
+Rotational angle of the file.
 
 **Since:** 21
 
@@ -264,7 +294,7 @@ orientation in exif
 HAS_APPLINK = 'has_applink'
 ```
 
-AppLink state of assets, read only
+Whether to enable or disable the app link association.
 
 **Since:** 21
 
@@ -278,7 +308,7 @@ AppLink state of assets, read only
 APPLINK = 'applink'
 ```
 
-AppLink info of assets, read only
+Information about the app link association.
 
 **Since:** 21
 
@@ -292,7 +322,7 @@ AppLink info of assets, read only
 HDR_MODE = 'hdr_mode'
 ```
 
-HDR mode of the asset, read only
+HDR mode of the file.
 
 **Since:** 22
 
@@ -306,7 +336,7 @@ HDR mode of the asset, read only
 CLOUD_ID = 'cloud_id'
 ```
 
-The unique key when an asset is on the cloud, read only
+Unique ID of the file on the cloud.
 
 **Since:** 22
 
@@ -320,7 +350,7 @@ The unique key when an asset is on the cloud, read only
 EXIST_COMPATIBLE_DUPLICATE = 'exist_compatible_duplicate'
 ```
 
-Compatible duplicate of asset exists, read only
+Whether a JPEG-compatible copy exists.
 
 **Since:** 22
 
@@ -334,7 +364,7 @@ Compatible duplicate of asset exists, read only
 COMPOSITE_DISPLAY_STATUS = 'composite_display_status'
 ```
 
-Composite display status of assets, read only
+Display status of the composite image asset.
 
 **Since:** 23
 
@@ -348,7 +378,7 @@ Composite display status of assets, read only
 VIDEO_MODE = 'video_mode'
 ```
 
-Video mode, read only
+Log mode of a video file.
 
 **Since:** 22
 
@@ -390,7 +420,7 @@ Storage path of fusion assets, read only
 EDIT_DATA_EXIST = 'edit_data_exist'
 ```
 
-Edit data of asset exists, read only
+Edit data for the asset already exists.
 
 **Since:** 22
 
@@ -404,7 +434,7 @@ Edit data of asset exists, read only
 PACKAGE_NAME = 'package_name'
 ```
 
-Package name.
+Package name of a file.
 
 **Since:** 23
 
@@ -420,7 +450,7 @@ Package name.
 PHOTO_RISK_STATUS = 'photo_risk_status'
 ```
 
-Risk status of a photo.
+Image risk control
 
 **Since:** 23
 
@@ -436,7 +466,7 @@ Risk status of a photo.
 DATE_ADDED_YEAR = 'date_added_year'
 ```
 
-Year of date_added time.
+Year when an asset is added.
 
 **Since:** 24
 
@@ -452,7 +482,7 @@ Year of date_added time.
 DATE_ADDED_MONTH = 'date_added_month'
 ```
 
-Month of date_added time.
+Month when an asset is added.
 
 **Since:** 24
 
@@ -468,9 +498,57 @@ Month of date_added time.
 DATE_ADDED_DAY = 'date_added_day'
 ```
 
-Day of date_added time.
+Date when an asset is added.
 
 **Since:** 24
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
+
+**System API:** This is a system API.
+
+## LIVEPHOTO_4D_STATUS
+
+```TypeScript
+LIVEPHOTO_4D_STATUS = 'livephoto_4d_status'
+```
+
+4d livephoto status.
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
+
+**System API:** This is a system API.
+
+## UNIQUE_ID
+
+```TypeScript
+UNIQUE_ID = 'unique_id'
+```
+
+Unique id of asset.
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
+
+**System API:** This is a system API.
+
+## HIDDEN_TIME
+
+```TypeScript
+HIDDEN_TIME = 'hidden_time'
+```
+
+hidden time of asset.
+
+**Since:** 26.0.0
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -501,22 +579,6 @@ LCD_FILE_SIZE = 'lcd_file_size'
 ```
 
 Size of lcd file, read only
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
-
-**System API:** This is a system API.
-
-## HIDDEN_TIME
-
-```TypeScript
-HIDDEN_TIME = 'hidden_time'
-```
-
-Hidden time of asset.
 
 **Since:** 26.0.0
 

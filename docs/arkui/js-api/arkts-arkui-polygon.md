@@ -2,15 +2,13 @@
 
 Provides the polygon drawing interface.
 
-
 ## Polygon
 
 ```TypeScript
 Polygon(options?: PolygonOptions)
 ```
 
-Uses new to create Polygon.
-Anonymous Object Rectification.
+Uses new to create Polygon. Anonymous Object Rectification.
 
 **Since:** 7
 

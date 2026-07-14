@@ -6,9 +6,7 @@
 function getDLPGatheringPolicy(): Promise<GatheringPolicyType>
 ```
 
-查询DLP沙箱聚合策略。使用Promise异步回调。
-
-应用需要获取当前系统的DLP沙箱聚合策略配置时使用此接口。
+查询DLP沙箱聚合策略。使用Promise异步回调。 应用需要获取当前系统的DLP沙箱聚合策略配置时使用此接口。
 
 **起始版本：** 10
 
@@ -53,9 +51,7 @@ dlpPermission.getDLPGatheringPolicy().then((gatheringPolicy: dlpPermission.Gathe
 function getDLPGatheringPolicy(callback: AsyncCallback<GatheringPolicyType>): void
 ```
 
-查询DLP沙箱聚合策略。使用callback异步回调。
-
-应用需要获取当前系统的DLP沙箱聚合策略配置时使用此接口。
+查询DLP沙箱聚合策略。使用callback异步回调。 应用需要获取当前系统的DLP沙箱聚合策略配置时使用此接口。
 
 **起始版本：** 10
 

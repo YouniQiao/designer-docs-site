@@ -1,6 +1,6 @@
 # AlbumChangeInfos
 
-Defines the album change infos.
+Describes the notification information about the change of an album.
 
 **Since:** 20
 
@@ -18,7 +18,7 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 albumChangeDatas: AlbumChangeData[] | null
 ```
 
-Data about album changes.
+Array of changed albums. If all albums need to be queried again, **albumChangeDatas** is null.
 
 **Type:** AlbumChangeData[] | null
 
@@ -32,8 +32,7 @@ Data about album changes.
 isForRecheck: boolean
 ```
 
-Whether the application needs to requery. This flag helps address abnormal scenarios like abnormal
-service restarts by enabling the application to refresh the page correctly through proactive querying.
+Whether the application should query all media assets again. **true** if the application should query all assets again, **false** otherwise. **NOTE** In scenarios involving bulk asset operations or abnormal notifications, **isForRecheck** will be **true**. In this case, the application should query all assets again.
 
 **Type:** boolean
 
@@ -47,7 +46,7 @@ service restarts by enabling the application to refresh the page correctly throu
 type: NotifyChangeType
 ```
 
-Notification type of album changes.
+Type of the album change.
 
 **Type:** NotifyChangeType
 

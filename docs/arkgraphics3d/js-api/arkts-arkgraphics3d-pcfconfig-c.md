@@ -14,8 +14,7 @@ param config for pcf soft shadow
 set shadowSampleCount(value: number | undefined)
 ```
 
-Set the sample count number from shadow map used to render a shadow pixel.
-Values outside the range are ignored and the previous value is retained.
+Set the sample count number from shadow map used to render a shadow pixel. Values outside the range are ignored and the previous value is retained.
 
 **Type:** number
 

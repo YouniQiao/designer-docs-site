@@ -18,8 +18,7 @@ import { font } from '@kit.ArkUI';
 fallback: Array<UIFontFallbackInfo>
 ```
 
-Fallback fonts for the font family. If **fontSetName** is **""**, it indicates that the fonts can be used as
-fallback fonts for all font families.
+Fallback fonts for the font family. If **fontSetName** is **""**, it indicates that the fonts can be used as fallback fonts for all font families.
 
 **Type:** Array<UIFontFallbackInfo>
 

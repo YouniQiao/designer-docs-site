@@ -43,14 +43,16 @@ function getDisallowedBluetoothProtocols(admin: Want, accountId: number): Array<
 import { Want } from '@kit.AbilityKit';
 import { bluetoothManager } from '@kit.MDMKit';
 
+// 创建企业设备管理扩展组件
 let wantTemp: Want = {
   // 需根据实际情况进行替换
   bundleName: 'com.example.myapplication',
   abilityName: 'EnterpriseAdminAbility'
 };
-// 需根据实际情况进行替换
+// 定义用户ID（需根据实际情况进行替换）
 let accountId: number = 100;
 try {
+  // 获取指定用户的蓝牙协议禁用名单
   let result: Array<bluetoothManager.Protocol> = bluetoothManager.getDisallowedBluetoothProtocols(wantTemp, accountId);
   console.info(`Succeeded in getting disallowed bluetooth protocols. Result: ${JSON.stringify(result)}`);
 } catch (err) {
@@ -66,10 +68,7 @@ try {
 function getDisallowedBluetoothProtocols(admin: Want | null, accountId: number, policy: TransferPolicy): Array<Protocol>
 ```
 
-获取指定用户指定传输策略下已禁用的蓝牙协议列表。
-
-> **说明：**
->
+获取指定用户指定传输策略下已禁用的蓝牙协议列表。 > **说明：** >
 
 **起始版本：** 26.0.0
 
@@ -108,15 +107,18 @@ function getDisallowedBluetoothProtocols(admin: Want | null, accountId: number, 
 import { Want } from '@kit.AbilityKit';
 import { bluetoothManager } from '@kit.MDMKit';
 
+// 创建企业设备管理扩展组件
 let wantTemp: Want = {
   // 需根据实际情况进行替换
   bundleName: 'com.example.myapplication',
   abilityName: 'EnterpriseAdminAbility'
 };
 
+// 定义用户ID
 let accountId: number = 100;
 
 try {
+  // 获取指定用户指定传输策略下已禁用的蓝牙协议列表
   let result: Array<bluetoothManager.Protocol> = bluetoothManager.getDisallowedBluetoothProtocols(wantTemp, accountId, bluetoothManager.TransferPolicy.RECEIVE_SEND);
   console.info(`Succeeded in getting disallowed bluetooth protocols, result : ${JSON.stringify(result)}`);
 } catch (err) {

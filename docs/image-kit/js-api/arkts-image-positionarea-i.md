@@ -54,9 +54,7 @@ Pixels of the image. Only pixel data in BGRA_8888 format is supported.
 region: Region
 ```
 
-Region to read or write. The width of the region to write plus the X coordinate cannot be greater than the width
-of the original image. The height of the region to write plus the Y coordinate cannot be greater than the height
-of the original image.
+Region to read or write. The width of the region to write plus the X coordinate cannot be greater than the width of the original image. The height of the region to write plus the Y coordinate cannot be greater than the height of the original image.
 
 **Type:** Region
 
@@ -74,8 +72,7 @@ of the original image.
 stride: number
 ```
 
-Number of bytes from one row of pixels in memory to the next row of pixels in memory. The value of **stride**
-must be greater than or equal to the value of **region.size.width** multiplied by 4.
+Number of bytes from one row of pixels in memory to the next row of pixels in memory. The value of **stride** must be greater than or equal to the value of **region.size.width** multiplied by 4.
 
 **Type:** number
 

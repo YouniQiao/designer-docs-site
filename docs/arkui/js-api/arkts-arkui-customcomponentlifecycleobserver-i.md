@@ -1,7 +1,6 @@
 # CustomComponentLifecycleObserver
 
-Observes lifecycle status changes of a custom component,
-and triggers the lifecycle callback in the listener when detecting lifecycle status changes.
+Observes lifecycle status changes of a custom component, and triggers the lifecycle callback in the listener when detecting lifecycle status changes.
 
 **Since:** 23
 
@@ -19,10 +18,7 @@ import { Binding, ComponentReuse, CustomComponentLifecycleState, ComponentInacti
 aboutToAppear?(): void
 ```
 
-Called after a new instance of the custom component is created and before its **build()** function is executed.
-You can modify the status variables in this phase.
-Its function is similar to that of [aboutToAppear](../arkts-components/arkts-arkui-basecustomcomponent-c.md#abouttoappear-1),
-but it is triggered under the constraints of the custom component state machine.
+Called after a new instance of the custom component is created and before its **build()** function is executed. You can modify the status variables in this phase. Its function is similar to that of [aboutToAppear](../arkts-components/arkts-arkui-basecustomcomponent-c.md#abouttoappear-1), but it is triggered under the constraints of the custom component state machine.
 
 **Since:** 23
 
@@ -38,10 +34,7 @@ but it is triggered under the constraints of the custom component state machine.
 aboutToDisappear?(): void
 ```
 
-Called before the custom component is destroyed. You are advised not to change state variables
-in the **aboutToDisappear** function. Modifying the **@Link** decorated variable may lead to unstable
-application behavior. This function is similar to the earlier **aboutToDisappear** function, which is triggered
-under the constraints of the custom component state machine. Therefore, this function is added for compatibility.
+Called before the custom component is destroyed. You are advised not to change state variables in the **aboutToDisappear** function. Modifying the **@Link** decorated variable may lead to unstable application behavior. This function is similar to the earlier **aboutToDisappear** function, which is triggered under the constraints of the custom component state machine. Therefore, this function is added for compatibility.
 
 **Since:** 23
 
@@ -57,10 +50,7 @@ under the constraints of the custom component state machine. Therefore, this fun
 aboutToRecycle?(): void
 ```
 
-Called after necessary component recycling operations defined in the application are performed.
-Then, the component is frozen to prevent UI updates when the component is in the recycling pool.
-At last, the **aboutToRecycle** function recursively traverses all child components,
-and the **aboutToRecycle** function in each recycled child component will be called.
+Called after necessary component recycling operations defined in the application are performed. Then, the component is frozen to prevent UI updates when the component is in the recycling pool. At last, the **aboutToRecycle** function recursively traverses all child components, and the **aboutToRecycle** function in each recycled child component will be called.
 
 **Since:** 23
 
@@ -76,9 +66,7 @@ and the **aboutToRecycle** function in each recycled child component will be cal
 aboutToReuse?(params?: Record<string, Object | undefined | null>): void
 ```
 
-Called when a reusable custom component is re-added to the node tree from the cache to receive the component
-constructors. The value of **params** is not **undefined** in the reuse callback of the V1 component. The value
-of **params** is **undefined** in the reuse callback of the V2 component.
+Called when a reusable custom component is re-added to the node tree from the cache to receive the component constructors. The value of **params** is not **undefined** in the reuse callback of the V1 component. The value of **params** is **undefined** in the reuse callback of the V2 component.
 
 **Since:** 23
 
@@ -100,8 +88,7 @@ of **params** is **undefined** in the reuse callback of the V2 component.
 onDidBuild?(): void
 ```
 
-Called after a new instance of the custom component is created and its **build()** function is executed.
-You can use this callback for actions that do not affect the UI, such as event data reporting.
+Called after a new instance of the custom component is created and its **build()** function is executed. You can use this callback for actions that do not affect the UI, such as event data reporting.
 
 **Since:** 23
 

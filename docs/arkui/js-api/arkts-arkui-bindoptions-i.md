@@ -12,8 +12,7 @@ Overlay module options
 backgroundColor?: ResourceColor
 ```
 
-Background color of the sheet.
-<br>Default value: **Color.White**.
+Background color of the sheet. <br>Default value: **Color.White**.
 
 **Type:** ResourceColor
 

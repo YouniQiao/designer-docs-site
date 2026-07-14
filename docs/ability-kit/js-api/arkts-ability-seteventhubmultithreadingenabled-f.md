@@ -12,13 +12,7 @@ import { sendableContextManager } from '@kit.AbilityKit';
 function setEventHubMultithreadingEnabled(context: common.Context, enabled: boolean): void
 ```
 
-Enables the cross-thread data transfer feature of [EventHub](arkts-ability-eventhub-c.md) in
-[Context](arkts-ability-context-depr-i.md).
-
-> **NOTE**
->
-> - When multiple Context objects communicate, you need to call this API to set each Context object to support
-> EventHub cross-thread data transfer.
+Enables the cross-thread data transfer feature of [EventHub](arkts-ability-eventhub-c.md) in [Context](arkts-ability-context-depr-i.md). > **NOTE** > > - When multiple Context objects communicate, you need to call this API to set each Context object to support > EventHub cross-thread data transfer.
 
 **Since:** 20
 

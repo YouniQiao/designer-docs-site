@@ -1,8 +1,6 @@
 # ReminderRequestAlarm
 
-ReminderRequestAlarm extends ReminderRequest
-
-Defines a reminder for an alarm.
+ReminderRequestAlarm extends ReminderRequest Defines a reminder for an alarm.
 
 **Inheritance/Implementation:** ReminderRequestAlarm extends [ReminderRequest](arkts-backgroundtasks-reminderrequest-i.md)
 
@@ -22,8 +20,7 @@ import { reminderAgentManager } from '@kit.BackgroundTasksKit';
 daysOfWeek?: Array<number>
 ```
 
-Days of a week when the reminder repeats. The value ranges from 1 to 7, corresponding to the data from Monday to
-Sunday. This parameter is left empty by default.
+Days of a week when the reminder repeats. The value ranges from 1 to 7, corresponding to the data from Monday to Sunday. This parameter is left empty by default.
 
 **Type:** Array<number>
 

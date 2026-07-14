@@ -1,10 +1,6 @@
 # EntityInfo (System API)
 
-EntityInfo inherits from
-[IntentEntityDecoratorInfo](arkts-ability-intententitydecoratorinfo-i.md) and is used
-to describe the information about the intent entity defined by the
-[@InsightIntentEntity](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintententity)
-decorator.
+EntityInfo inherits from [IntentEntityDecoratorInfo](arkts-ability-intententitydecoratorinfo-i.md) and is used to describe the information about the intent entity defined by the [@InsightIntentEntity](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintententity) decorator.
 
 **Since:** 20
 
@@ -24,9 +20,7 @@ import { insightIntentDriver } from '@kit.AbilityKit';
 readonly className: string
 ```
 
-Class name decorated by
-[@InsightIntentEntity](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintententity)
-.
+Class name decorated by [@InsightIntentEntity](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintententity) .
 
 **Type:** string
 
@@ -116,9 +110,7 @@ Data format of intent entity parameters.
 readonly parentClassName: string
 ```
 
-Parent class name decorated by
-[@InsightIntentEntity](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintententity)
-.
+Parent class name decorated by [@InsightIntentEntity](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintententity) .
 
 **Type:** string
 

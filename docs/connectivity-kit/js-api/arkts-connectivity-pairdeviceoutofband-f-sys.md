@@ -13,10 +13,7 @@ function pairDeviceOutOfBand(transport: BluetoothTransport, p192Data: OobData | 
     p256Data: OobData | null): Promise<void>
 ```
 
-Starts pairing with a remote Bluetooth device using the Out Of Band mechanism.
-This function is asynchronous, and the pairing status is obtained by listening to the bondStateChange event.
-If both p192Data and p256Data are null, the function call will fail.
-If both p192Data and p256Data are used simultaneously, p256Data takes effect.
+Starts pairing with a remote Bluetooth device using the Out Of Band mechanism. This function is asynchronous, and the pairing status is obtained by listening to the bondStateChange event. If both p192Data and p256Data are null, the function call will fail. If both p192Data and p256Data are used simultaneously, p256Data takes effect.
 
 **Since:** 23
 

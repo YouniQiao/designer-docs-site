@@ -1,7 +1,6 @@
 # PersistenceV2
 
-Inherits from [AppStorageV2](arkts-arkui-appstoragev2-c.md). For details, see
-[PersistenceV2: Persisting Application State](../../../../ui/state-management/arkts-new-persistencev2.md).
+Inherits from [AppStorageV2](arkts-arkui-appstoragev2-c.md). For details, see [PersistenceV2: Persisting Application State](../../../../ui/state-management/arkts-new-persistencev2.md).
 
 **Inheritance/Implementation:** PersistenceV2 extends [AppStorageV2](arkts-arkui-appstoragev2-c.md)
 
@@ -23,13 +22,7 @@ static globalConnect<T extends object>(
   ): T | undefined
 ```
 
-Stores key-value pair data on the application disk. If the given key already exists in
-[PersistenceV2](../../../../ui/state-management/arkts-new-persistencev2.md), the corresponding value is returned.
-Otherwise, a default value is constructed using the default value constructor and returned. If **globalConnect** is
-used for an [\@ObservedV2](../../../../ui/state-management/arkts-new-observedV2-and-trace.md) decorated object,
-changes to the object's [\@Trace](../../../../ui/state-management/arkts-new-observedV2-and-trace.md) properties will
-trigger automatic refresh of the associated object, while changes to non-@Trace properties will not. If necessary,
-the [PersistenceV2.save](arkts-arkui-persistencev2-c.md#save-1) API can be called to store the data manually.
+Stores key-value pair data on the application disk. If the given key already exists in [PersistenceV2](../../../../ui/state-management/arkts-new-persistencev2.md), the corresponding value is returned. Otherwise, a default value is constructed using the default value constructor and returned. If **globalConnect** is used for an [\@ObservedV2](../../../../ui/state-management/arkts-new-observedV2-and-trace.md) decorated object, changes to the object's [\@Trace](../../../../ui/state-management/arkts-new-observedV2-and-trace.md) properties will trigger automatic refresh of the associated object, while changes to non-@Trace properties will not. If necessary, the [PersistenceV2.save](arkts-arkui-persistencev2-c.md#save-1) API can be called to store the data manually.
 
 **Since:** 18
 
@@ -59,11 +52,7 @@ static globalConnect<T extends CollectionType<S>, S extends object>(
   ): T | undefined
 ```
 
-Stores key-value pair data on the application disk. Supports the persistence of the following collection types:
-[Array, Map, Set, Date, collections.Array, collections.Map, and collections.Set](../../../../ui/state-management/arkts-new-persistencev2.md#types-supported-by-globalconnect).
-Note that when persisting data of the **Array\<ClassA>** type, you need to call
-[makeObserved](arkts-arkui-uiutils-c.md#makeobserved-1) to make the returned object observed. Multi-level nested sets are not
-supported. For example, **Array<Array\<ClassA>>** persistence is not supported.
+Stores key-value pair data on the application disk. Supports the persistence of the following collection types: [Array, Map, Set, Date, collections.Array, collections.Map, and collections.Set](../../../../ui/state-management/arkts-new-persistencev2.md#types-supported-by-globalconnect). Note that when persisting data of the **Array\<ClassA>** type, you need to call [makeObserved](arkts-arkui-uiutils-c.md#makeobserved-1) to make the returned object observed. Multi-level nested sets are not supported. For example, **Array<Array\<ClassA>>** persistence is not supported.
 
 **Since:** 23
 

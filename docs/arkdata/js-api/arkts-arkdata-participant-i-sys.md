@@ -20,8 +20,7 @@ import { cloudData } from '@kit.ArkData';
 attachInfo?: string
 ```
 
-Additional information, such as the verification code used for participant identity verification.
-The default value is an empty string.
+Additional information, such as the verification code used for participant identity verification. The default value is an empty string.
 
 **Type:** string
 

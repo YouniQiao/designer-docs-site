@@ -12,12 +12,7 @@ import { formProvider } from '@kit.FormKit';
 function requestOverflow(formId: string, overflowInfo: formInfo.OverflowInfo): Promise<void>
 ```
 
-Requests an animation. This API takes effect only for
-[scene-based widgets](../../../../form/arkts-ui-widget-configuration.md#sceneanimationparams-field). This API uses a
-promise to return the result.
-
-> **NOTE**
->
+Requests an animation. This API takes effect only for [scene-based widgets](../../../../form/arkts-ui-widget-configuration.md#sceneanimationparams-field). This API uses a promise to return the result. > **NOTE** >
 
 **Since:** 20
 

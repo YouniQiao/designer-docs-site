@@ -7,9 +7,7 @@ function getTargetOverlayModuleInfosByBundleName(targetBundleName: string,
       callback: AsyncCallback<Array<OverlayModuleInfo>>): void
 ```
 
-获取指定应用中所有module关联的所有OverlayModuleInfo信息。使用callback异步回调。
-
-指定应用是调用方自身时不需要权限。
+获取指定应用中所有module关联的所有OverlayModuleInfo信息。使用callback异步回调。 指定应用是调用方自身时不需要权限。
 
 **起始版本：** 10
 
@@ -69,9 +67,7 @@ try {
 function getTargetOverlayModuleInfosByBundleName(targetBundleName: string, moduleName: string, callback: AsyncCallback<Array<OverlayModuleInfo>>): void
 ```
 
-获取指定应用中指定module关联的所有OverlayModuleInfo信息。使用callback异步回调。
-
-指定应用是调用方自身时不需要权限。
+获取指定应用中指定module关联的所有OverlayModuleInfo信息。使用callback异步回调。 指定应用是调用方自身时不需要权限。
 
 **起始版本：** 10
 
@@ -135,9 +131,7 @@ try {
 function getTargetOverlayModuleInfosByBundleName(targetBundleName: string, moduleName?: string): Promise<Array<OverlayModuleInfo>>
 ```
 
-获取指定应用中指定module关联的所有OverlayModuleInfo信息。使用promise异步回调。
-
-指定应用是调用方自身时不需要权限。
+获取指定应用中指定module关联的所有OverlayModuleInfo信息。使用promise异步回调。 指定应用是调用方自身时不需要权限。
 
 **起始版本：** 10
 

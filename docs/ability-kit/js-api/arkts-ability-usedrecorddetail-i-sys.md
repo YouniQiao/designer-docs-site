@@ -20,8 +20,7 @@ import { privacyManager } from '@kit.AbilityKit';
 accessDuration: number
 ```
 
-Access duration.
-Unit: milliseconds.
+Access duration. Unit: milliseconds.
 
 **Type:** number
 
@@ -37,10 +36,7 @@ Unit: milliseconds.
 count?: number
 ```
 
-Number of accesses. In accessRecords, it indicates the number of successful accesses; in rejectRecords, it
-indicates the number of failures or rejections.
-
-Default value: 0.
+Number of accesses. In accessRecords, it indicates the number of successful accesses; in rejectRecords, it indicates the number of failures or rejections. Default value: 0.
 
 **Type:** number
 
@@ -56,12 +52,7 @@ Default value: 0.
 lockScreenStatus?: number
 ```
 
-Lock screen status at the time of access.
-
-- 1: Indicates permission usage in a non-lock-screen scenario.
-- 2: Indicates permission usage in a lock-screen scenario.
-
-Default value: 1.
+Lock screen status at the time of access. - 1: Indicates permission usage in a non-lock-screen scenario. - 2: Indicates permission usage in a lock-screen scenario. Default value: 1.
 
 **Type:** number
 
@@ -93,8 +84,7 @@ Access status. 0 indicates stopped usage, 1 indicates foreground usage, and 2 in
 timestamp: number
 ```
 
-Access timestamp.
-Unit: milliseconds.
+Access timestamp. Unit: milliseconds.
 
 **Type:** number
 
@@ -110,9 +100,7 @@ Unit: milliseconds.
 usedType?: PermissionUsedType
 ```
 
-Sensitive permission access method.
-
-Default value: NORMAL_TYPE.
+Sensitive permission access method. Default value: NORMAL_TYPE.
 
 **Type:** PermissionUsedType
 

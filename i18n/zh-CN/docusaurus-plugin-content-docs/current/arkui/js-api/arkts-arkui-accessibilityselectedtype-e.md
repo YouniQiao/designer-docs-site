@@ -44,8 +44,7 @@ CHECKED = 1
 SELECTED = 2
 ```
 
-单选型。组件通过 [accessibilitySelected](../arkts-components/arkts-arkui-commonmethod-c.md#accessibilityselected-1) 属性向无障碍服务报告选中状态。适用于表示当前选中项的场景，如导航栏标签、单选列表
-项等。
+单选型。组件通过 [accessibilitySelected](../arkts-components/arkts-arkui-commonmethod-c.md#accessibilityselected-1) 属性向无障碍服务报告选中状态。适用于表示当前选中项的场景，如导航栏标签、单选列表 项等。
 
 **起始版本：** 14
 

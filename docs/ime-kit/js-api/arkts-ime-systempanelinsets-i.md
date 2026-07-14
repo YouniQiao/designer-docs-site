@@ -18,8 +18,7 @@ import { inputMethodEngine } from '@kit.IMEKit';
 readonly bottom: number
 ```
 
-Distance between the bottom border of the keyboard area and the bottom border of the system panel area, in px.
-The value is an integer.
+Distance between the bottom border of the keyboard area and the bottom border of the system panel area, in px. The value is an integer.
 
 **Type:** number
 
@@ -33,8 +32,7 @@ The value is an integer.
 readonly left: number
 ```
 
-Distance between the left border of the keyboard area and the left border of the system panel area, in px. The
-value is an integer.
+Distance between the left border of the keyboard area and the left border of the system panel area, in px. The value is an integer.
 
 **Type:** number
 
@@ -48,8 +46,7 @@ value is an integer.
 readonly right: number
 ```
 
-Distance between the right border of the keyboard area and the right border of the system panel area, in px. The
-value is an integer.
+Distance between the right border of the keyboard area and the right border of the system panel area, in px. The value is an integer.
 
 **Type:** number
 

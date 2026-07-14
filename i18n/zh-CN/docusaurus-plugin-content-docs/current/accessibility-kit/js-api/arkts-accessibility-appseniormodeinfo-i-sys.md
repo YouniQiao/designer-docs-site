@@ -14,8 +14,7 @@ Indicates the senior mode information of an application.
 appIndex?: number
 ```
 
-Indicates the index of clone app.
-The value must be an integer greater than or equal to 0. Default value: 0.
+Indicates the index of clone app. The value must be an integer greater than or equal to 0. Default value: 0.
 
 **类型：** number
 

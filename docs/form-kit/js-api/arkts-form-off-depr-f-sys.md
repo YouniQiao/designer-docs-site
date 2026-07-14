@@ -6,12 +6,7 @@
 function off(type: 'formUninstall', callback?: Callback<string>): void
 ```
 
-Unsubscribes from widget uninstall events. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> Widget uninstall is different from widget removal. When an application is uninstalled, the corresponding widget
-> is automatically uninstalled.
+Unsubscribes from widget uninstall events. This API uses an asynchronous callback to return the result. > **NOTE** > > Widget uninstall is different from widget removal. When an application is uninstalled, the corresponding widget > is automatically uninstalled.
 
 **Since:** 8
 

@@ -1,7 +1,6 @@
 # PhotoOutput
 
-Implements output information used in a photo session. It inherits from
-[CameraOutput](arkts-camera-cameraoutput-i.md).
+Implements output information used in a photo session. It inherits from [CameraOutput](arkts-camera-cameraoutput-i.md).
 
 **Inheritance/Implementation:** PhotoOutput extends [CameraOutput](arkts-camera-cameraoutput-i.md)
 
@@ -21,10 +20,7 @@ import { camera } from '@kit.CameraKit';
 burstCapture(setting: PhotoCaptureSetting): Promise<void>
 ```
 
-Starts the burst mode, in which users can capture a series of photos in quick succession. This API is generally
-used in photo mode. After the burst mode starts, the bottom layer continues displaying photos. You can call
-[confirmCapture](arkts-camera-photooutput-i-sys.md#confirmcapture-1) to cancel the burst mode. This API uses a promise to
-return the result.
+Starts the burst mode, in which users can capture a series of photos in quick succession. This API is generally used in photo mode. After the burst mode starts, the bottom layer continues displaying photos. You can call [confirmCapture](arkts-camera-photooutput-i-sys.md#confirmcapture-1) to cancel the burst mode. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -85,10 +81,7 @@ function burstCapture(photoOutput: camera.PhotoOutput): void {
 confirmCapture(): void
 ```
 
-Confirms photo capture. This API is generally used in night photo mode when users need to stop the exposure
-countdown and take a photo in advance.
-This API is used to end the burst mode, which is started by calling
-[burstCapture](arkts-camera-photooutput-i-sys.md#burstcapture-1).
+Confirms photo capture. This API is generally used in night photo mode when users need to stop the exposure countdown and take a photo in advance. This API is used to end the burst mode, which is started by calling [burstCapture](arkts-camera-photooutput-i-sys.md#burstcapture-1).
 
 **Since:** 11
 
@@ -192,9 +185,7 @@ Enable auto cloud image enhancement
 enableAutoHighQualityPhoto(enabled: boolean): void
 ```
 
-Enables automatic high quality for photos. Before using this API, call
-[isAutoHighQualityPhotoSupported](arkts-camera-photooutput-i-sys.md#isautohighqualityphotosupported-1) to check whether
-automatic high quality is supported.
+Enables automatic high quality for photos. Before using this API, call [isAutoHighQualityPhotoSupported](arkts-camera-photooutput-i-sys.md#isautohighqualityphotosupported-1) to check whether automatic high quality is supported.
 
 **Since:** 13
 
@@ -314,10 +305,7 @@ Enable original image generation.
 enableQuickThumbnail(enabled: boolean): void
 ```
 
-Enables or disables the quick thumbnail feature.
-This API takes effect after [addOutput](arkts-camera-session-i.md#addoutput-1) and
-[addInput](arkts-camera-session-i.md#addinput-1) and before
-[commitConfig](arkts-camera-session-i.md#commitconfig-2).
+Enables or disables the quick thumbnail feature. This API takes effect after [addOutput](arkts-camera-session-i.md#addoutput-1) and [addInput](arkts-camera-session-i.md#addinput-1) and before [commitConfig](arkts-camera-session-i.md#commitconfig-2).
 
 **Since:** 10
 
@@ -653,10 +641,7 @@ Confirm if original image generation supported.
 isQuickThumbnailSupported(): boolean
 ```
 
-Checks whether the quick thumbnail feature is supported.
-This API takes effect after [addOutput](arkts-camera-session-i.md#addoutput-1) and
-[addInput](arkts-camera-session-i.md#addinput-1) and before
-[commitConfig](arkts-camera-session-i.md#commitconfig-2).
+Checks whether the quick thumbnail feature is supported. This API takes effect after [addOutput](arkts-camera-session-i.md#addoutput-1) and [addInput](arkts-camera-session-i.md#addinput-1) and before [commitConfig](arkts-camera-session-i.md#commitconfig-2).
 
 **Since:** 10
 
@@ -826,8 +811,7 @@ function unregisterQuickThumbnail(photoOutput: camera.PhotoOutput): void {
 off(type: 'offlineDeliveryFinished', callback?: AsyncCallback<void>): void
 ```
 
-Unsubscribes offline Delivery finished events.
-This method is valid only after enableOffline() is called.
+Unsubscribes offline Delivery finished events. This method is valid only after enableOffline() is called.
 
 **Since:** 18
 
@@ -854,8 +838,7 @@ This method is valid only after enableOffline() is called.
 on(type: 'deferredPhotoProxyAvailable', callback: AsyncCallback<DeferredPhotoProxy>): void
 ```
 
-Subscribes to events indicating available thumbnail proxies. This API uses an asynchronous callback to return the
-result.
+Subscribes to events indicating available thumbnail proxies. This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -904,8 +887,7 @@ function registerPhotoOutputDeferredPhotoProxyAvailable(photoOutput: camera.Phot
 on(type: 'quickThumbnail', callback: AsyncCallback<image.PixelMap>): void
 ```
 
-Subscribes to quick thumbnail output events. This API uses an asynchronous callback to return the result.
-The listening takes effect after **enableQuickThumbnail(true)** is called.
+Subscribes to quick thumbnail output events. This API uses an asynchronous callback to return the result. The listening takes effect after **enableQuickThumbnail(true)** is called.
 
 **Since:** 10
 
@@ -974,8 +956,7 @@ async function registerQuickThumbnail(context: common.BaseContext, mode: camera.
 on(type: 'offlineDeliveryFinished', callback: AsyncCallback<void>): void
 ```
 
-Subscribes offline Delivery finished events.
-This method is valid only after enableOffline() is called.
+Subscribes offline Delivery finished events. This method is valid only after enableOffline() is called.
 
 **Since:** 18
 

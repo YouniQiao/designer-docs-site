@@ -12,8 +12,7 @@ Describes the identity information of an application clone.
 readonly appIndex: number
 ```
 
-Clone index information of the app package. The value is an integer ranging from [0-5],
-where 0 indicates the main app and 1-5 indicate clone apps.
+Clone index information of the app package. The value is an integer ranging from [0-5], where 0 indicates the main app and 1-5 indicate clone apps.
 
 **Type:** number
 

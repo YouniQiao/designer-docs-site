@@ -12,8 +12,7 @@ import { bundle } from '@kit.AbilityKit';
 function isAbilityEnabled(info: AbilityInfo, callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether the ability that matches a given AbilityInfo object is enabled. This API uses an asynchronous
-callback to return the result.
+Checks whether the ability that matches a given AbilityInfo object is enabled. This API uses an asynchronous callback to return the result.
 
 **Since:** 8
 
@@ -35,8 +34,7 @@ callback to return the result.
 function isAbilityEnabled(info: AbilityInfo): Promise<boolean>
 ```
 
-Checks whether the ability that matches a given AbilityInfo object is enabled. This API uses a promise to return
-the result.
+Checks whether the ability that matches a given AbilityInfo object is enabled. This API uses a promise to return the result.
 
 **Since:** 8
 

@@ -28,8 +28,7 @@ certData: Uint8Array
 certFormat? : CertFileFormat
 ```
 
-表示证书文件格式。
-默认值：PEM_DER。
+表示证书文件格式。 默认值：PEM_DER。
 
 **类型：** CertFileFormat
 
@@ -45,8 +44,7 @@ certFormat? : CertFileFormat
 certScope? : CertScope
 ```
 
-表示用户CA证书的存储位置。
-默认值：CURRENT_USER。
+表示用户CA证书的存储位置。 默认值：CURRENT_USER。
 
 **类型：** CertScope
 

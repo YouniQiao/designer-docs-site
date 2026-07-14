@@ -12,16 +12,7 @@ import { wifiManager } from '@kit.MDMKit';
 function turnOnWifi(admin: Want, isForce: boolean): void
 ```
 
-Enables Wi-Fi.
-
-In the following scenario, attempting to enable Wi-Fi using this API will fail, and a message indicating that the
-system function is disabled will be returned:
-
-?Wi-Fi has been disabled using the
-[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)
-API. In this case, you must call
-[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)
-to enable Wi-Fi.
+Enables Wi-Fi. In the following scenario, attempting to enable Wi-Fi using this API will fail, and a message indicating that the system function is disabled will be returned: ?Wi-Fi has been disabled using the [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1) API. In this case, you must call [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1) to enable Wi-Fi.
 
 **Since:** 20
 

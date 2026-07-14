@@ -6,13 +6,7 @@
 function addOutgoingCallPolicyNumbers(admin: Want, policy: adminManager.Policy, numbers: Array<string>): void
 ```
 
-添加通话呼出的允许或禁用名单，如果不添加名单，任意号码都可以呼出，添加后只有名单内的号码允许或禁止呼出。
-
-以下情况下，通过本接口添加通话呼出的允许或禁用名单，会报策略冲突：
-
-1. 已经通过[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)接口禁用了设备通话能力，再通过本接口添加通话呼出的禁用或允许名单，返回203错误码。通过[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)接口解除禁用设备通话能力后，可解除冲突。
-2. 已经通过本接口设置了通话呼出的禁用名单，再通过本接口添加通话呼出允许名单，返回9200010错误码。通过[removeOutgoingCallPolicyNumbers](arkts-mdm-removeoutgoingcallpolicynumbers-f.md#removeoutgoingcallpolicynumbers-1)接口将之前设置的通话呼出禁用名单移除后，可解除冲突。
-3. 已经通过本接口设置了通话呼出的允许名单，再通过本接口添加通话呼出禁用名单，返回9200010错误码。通过[removeOutgoingCallPolicyNumbers](arkts-mdm-removeoutgoingcallpolicynumbers-f.md#removeoutgoingcallpolicynumbers-1)接口将之前设置的通话呼出允许名单移除后，可解除冲突。
+添加通话呼出的允许或禁用名单，如果不添加名单，任意号码都可以呼出，添加后只有名单内的号码允许或禁止呼出。 以下情况下，通过本接口添加通话呼出的允许或禁用名单，会报策略冲突： 1. 已经通过[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)接口禁用了设备通话能力，再通过本接口添加通话呼出的禁用或允许名单，返回203错误码。通过[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)接口解除禁用设备通话能力后，可解除冲突。 2. 已经通过本接口设置了通话呼出的禁用名单，再通过本接口添加通话呼出允许名单，返回9200010错误码。通过[removeOutgoingCallPolicyNumbers](arkts-mdm-removeoutgoingcallpolicynumbers-f.md#removeoutgoingcallpolicynumbers-1)接口将之前设置的通话呼出禁用名单移除后，可解除冲突。 3. 已经通过本接口设置了通话呼出的允许名单，再通过本接口添加通话呼出禁用名单，返回9200010错误码。通过[removeOutgoingCallPolicyNumbers](arkts-mdm-removeoutgoingcallpolicynumbers-f.md#removeoutgoingcallpolicynumbers-1)接口将之前设置的通话呼出允许名单移除后，可解除冲突。
 
 **起始版本：** 20
 
@@ -55,11 +49,14 @@ let wantTemp: Want = {
   abilityName: 'EnterpriseAdminAbility'
 };
 try {
+  // 设置策略类型为禁用名单
   let policy: adminManager.Policy = adminManager.Policy.BLOCK_LIST;
+  // 设置要添加到禁用名单的通话号码
   let numbers: Array<string> = [
     // 需根据实际情况进行替换
     "13112345678"
   ];
+  // 添加通话呼出禁用名单
   telephonyManager.addOutgoingCallPolicyNumbers(wantTemp, policy, numbers);
   console.info('Succeeded in adding outgoing call policy.');
 } catch (err) {

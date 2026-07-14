@@ -1,7 +1,6 @@
 # Task
 
-Enumerates tasks, which can be executed for multiple times, placed in a task group, serial queue, or asynchronous
-queue for execution, or added with dependencies for execution.
+Enumerates tasks, which can be executed for multiple times, placed in a task group, serial queue, or asynchronous queue for execution, or added with dependencies for execution.
 
 **Since:** 9
 
@@ -19,10 +18,7 @@ import { taskpool } from '@kit.ArkTS';
 addDependency(...tasks: Task[]): void
 ```
 
-Adds dependent tasks for this task. Before using this API, you must create a **Task** instance. The task and its
-dependent tasks cannot be a task in a task group, serial queue, or asynchronous queue, a task that has been
-executed, or a periodic task. A task with a dependency relationship (a task that depends on another task or a
-task that is depended on) cannot be executed multiple times.
+Adds dependent tasks for this task. Before using this API, you must create a **Task** instance. The task and its dependent tasks cannot be a task in a task group, serial queue, or asynchronous queue, a task that has been executed, or a periodic task. A task with a dependency relationship (a task that depends on another task or a task that is depended on) cannot be executed multiple times.
 
 **Since:** 11
 
@@ -287,8 +283,7 @@ taskpoolCancel();
 onEnqueued(callback: CallbackFunction): void
 ```
 
-Register a callback function and call it when a task is enqueued.
-The registration must be carried out before the task is executed. Otherwise, an exception is thrown.
+Register a callback function and call it when a task is enqueued. The registration must be carried out before the task is executed. Otherwise, an exception is thrown.
 
 **Since:** 12
 
@@ -338,8 +333,7 @@ taskpool.execute(task).then(() => {
 onExecutionFailed(callback: CallbackFunctionWithError): void
 ```
 
-Register a callback function and call it when a task fails to be executed(Periodic tasks are not supported).
-The registration must be carried out before the task is executed. Otherwise, an exception is thrown.
+Register a callback function and call it when a task fails to be executed(Periodic tasks are not supported). The registration must be carried out before the task is executed. Otherwise, an exception is thrown.
 
 **Since:** 12
 
@@ -395,8 +389,7 @@ taskpool.execute(task2).then(() => {
 onExecutionSucceeded(callback: CallbackFunction): void
 ```
 
-Register a callback function and call it when a task is executed successfully.
-The registration must be carried out before the task is executed. Otherwise, an exception is thrown.
+Register a callback function and call it when a task is executed successfully. The registration must be carried out before the task is executed. Otherwise, an exception is thrown.
 
 **Since:** 12
 
@@ -446,10 +439,7 @@ taskpool.execute(task).then(() => {
 onReceiveData(callback?: Function): void
 ```
 
-Registers a callback for a task to receive and process data from the worker thread. Before using this API, you
-must create a Task instance.
-NOTE:
-If multiple callbacks are registered for the same task, only the last registration takes effect.
+Registers a callback for a task to receive and process data from the worker thread. Before using this API, you must create a Task instance. NOTE: If multiple callbacks are registered for the same task, only the last registration takes effect.
 
 **Since:** 11
 
@@ -497,8 +487,7 @@ testFunc();
 onStartExecution(callback: CallbackFunction): void
 ```
 
-Register a callback function and call it when the execution of a task starts.
-The registration must be carried out before the task is executed. Otherwise, an exception is thrown.
+Register a callback function and call it when the execution of a task starts. The registration must be carried out before the task is executed. Otherwise, an exception is thrown.
 
 **Since:** 12
 
@@ -614,21 +603,7 @@ taskpool.execute(task3).then(() => {
 static sendData(...args: Object[]): void
 ```
 
-Sends data to the host thread and triggers the registered callback. Before calling this method, you need to
-construct a **Task** object.
-
-> **NOTE**
->
-> - The API should be called in the TaskPool thread.
->
-> - Do not use this API in a callback function. Otherwise, messages may fail to be passed to the host thread.
->
-> - Do not use this API in an asynchronous function. Otherwise, messages may fail to be passed to the host
-> thread. If this API is used in an asynchronous function, use **await** to ensure that the asynchronous function
-> is executed synchronously in the task.
->
-> - Before calling this API, ensure that the callback function for processing data has been registered in the
-> host thread.
+Sends data to the host thread and triggers the registered callback. Before calling this method, you need to construct a **Task** object. > **NOTE** > > - The API should be called in the TaskPool thread. > > - Do not use this API in a callback function. Otherwise, messages may fail to be passed to the host thread. > > - Do not use this API in an asynchronous function. Otherwise, messages may fail to be passed to the host > thread. If this API is used in an asynchronous function, use **await** to ensure that the asynchronous function > is executed synchronously in the task. > > - Before calling this API, ensure that the callback function for processing data has been registered in the > host thread.
 
 **Since:** 11
 
@@ -716,13 +691,7 @@ taskpoolTest();
 setCloneList(cloneList: Object[] | ArrayBuffer[]): void
 ```
 
-Sets the task clone list. Before using this method, you need to construct a **Task** object.
-
-> **NOTE**
->
-> This API must be used together with the
-> [@Sendable decorator](../../../../arkts-utils/arkts-sendable.md#sendable-decorator). Otherwise, an exception is
-> thrown. You are advised to use this decorator to avoid exceptions.
+Sets the task clone list. Before using this method, you need to construct a **Task** object. > **NOTE** > > This API must be used together with the > [@Sendable decorator](../../../../arkts-utils/arkts-sendable.md#sendable-decorator). Otherwise, an exception is > thrown. You are advised to use this decorator to avoid exceptions.
 
 **Since:** 11
 
@@ -879,15 +848,7 @@ struct Index {
 setTransferList(transfer?: ArrayBuffer[]): void
 ```
 
-Sets the task transfer list. Before using this API, you must create a **Task** instance. If this API is not
-called, the ArrayBuffer in the data is transferred by default.
-
-> **NOTE**
->
-> This API is used to set the task transfer list in the form of **ArrayBuffer** in the task pool. The
-> **ArrayBuffer** instance does not copy the content in the task to the worker thread during transfer. Instead,
-> it transfers the buffer control right to the worker thread. After the transfer, the **ArrayBuffer** instance
-> becomes invalid. An empty **ArrayBuffer** will not be transferred.
+Sets the task transfer list. Before using this API, you must create a **Task** instance. If this API is not called, the ArrayBuffer in the data is transferred by default. > **NOTE** > > This API is used to set the task transfer list in the form of **ArrayBuffer** in the task pool. The > **ArrayBuffer** instance does not copy the content in the task to the worker thread during transfer. Instead, > it transfers the buffer control right to the worker thread. After the transfer, the **ArrayBuffer** instance > becomes invalid. An empty **ArrayBuffer** will not be transferred.
 
 **Since:** 10
 
@@ -949,9 +910,7 @@ console.info("testTransfer view3 byteLength: " + view1.byteLength);
 arguments?: Object[]
 ```
 
-Arguments of the function. For details about the supported parameter types, see
-[Sequenceable Data Types](../../../../reference/apis-arkts/js-apis-taskpool.md#sequenceable-data-types).<br>
-This API can be used in atomic services since API version 11.
+Arguments of the function. For details about the supported parameter types, see [Sequenceable Data Types](../../../../reference/apis-arkts/js-apis-taskpool.md#sequenceable-data-types).<br> This API can be used in atomic services since API version 11.
 
 **Type:** Object[]
 
@@ -967,8 +926,7 @@ This API can be used in atomic services since API version 11.
 cpuDuration: number
 ```
 
-CPU time of the task. in ms. You are advised not to change the value.<br>
-This API can be used in atomic services since API version 11.
+CPU time of the task. in ms. You are advised not to change the value.<br> This API can be used in atomic services since API version 11.
 
 **Type:** number
 
@@ -986,9 +944,7 @@ This API can be used in atomic services since API version 11.
 function: Function
 ```
 
-Function to be passed in during task creation. For details about the supported return value types of the function
-, see [Sequenceable Data Types](../../../../reference/apis-arkts/js-apis-taskpool.md#sequenceable-data-types).<br>
-This API can be used in atomic services since API version 11.
+Function to be passed in during task creation. For details about the supported return value types of the function , see [Sequenceable Data Types](../../../../reference/apis-arkts/js-apis-taskpool.md#sequenceable-data-types).<br> This API can be used in atomic services since API version 11.
 
 **Type:** Function
 
@@ -1004,8 +960,7 @@ This API can be used in atomic services since API version 11.
 ioDuration: number
 ```
 
-Asynchronous I/O time of the task. in ms. You are advised not to change the value.<br>
-This API can be used in atomic services since API version 11.
+Asynchronous I/O time of the task. in ms. You are advised not to change the value.<br> This API can be used in atomic services since API version 11.
 
 **Type:** number
 
@@ -1023,8 +978,7 @@ This API can be used in atomic services since API version 11.
 name: string
 ```
 
-Name of the task specified when the task is created. You are advised not to change the value.<br>
-This API can be used in atomic services since API version 11.
+Name of the task specified when the task is created. You are advised not to change the value.<br> This API can be used in atomic services since API version 11.
 
 **Type:** string
 
@@ -1040,8 +994,7 @@ This API can be used in atomic services since API version 11.
 taskId: number
 ```
 
-Task ID, which is globally unique by default. You are advised not to change the value.<br>
-This API can be used in atomic services since API version 18.
+Task ID, which is globally unique by default. You are advised not to change the value.<br> This API can be used in atomic services since API version 18.
 
 **Type:** number
 
@@ -1059,8 +1012,7 @@ This API can be used in atomic services since API version 18.
 totalDuration: number
 ```
 
-Total execution time of the task. in ms. You are advised not to change the value.<br>
-This API can be used in atomic services since API version 11.
+Total execution time of the task. in ms. You are advised not to change the value.<br> This API can be used in atomic services since API version 11.
 
 **Type:** number
 

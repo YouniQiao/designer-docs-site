@@ -104,8 +104,7 @@ In the sample code provided in this topic, this.context is used to obtain UIAbil
 function queryMyCard(attrs: ContactAttributes, callback: AsyncCallback<Contact>): void
 ```
 
-Queries my card. (The contact attribute list can be imported.) This API uses an asynchronous callback to return the
-result.
+Queries my card. (The contact attribute list can be imported.) This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 
@@ -150,8 +149,7 @@ contact.queryMyCard({
 function queryMyCard(context: Context, attrs: ContactAttributes, callback: AsyncCallback<Contact>): void
 ```
 
-Queries my card. (The contact attribute list can be imported.) This API uses an asynchronous callback to return the
-result.
+Queries my card. (The contact attribute list can be imported.) This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 

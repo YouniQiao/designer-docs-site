@@ -12,8 +12,7 @@ import { notificationManager } from '@kit.NotificationKit';
 function disableNotificationFeature(disabled:boolean, bundleList: Array<string>): Promise<void>
 ```
 
-Disables the application from publishing notifications by adding the application bundle name to the permission
-control list. This function can be disabled as required.
+Disables the application from publishing notifications by adding the application bundle name to the permission control list. This function can be disabled as required.
 
 **Since:** 18
 
@@ -74,8 +73,7 @@ try {
 function disableNotificationFeature(disabled: boolean, bundleList: Array<string>, userId: number): Promise<void>
 ```
 
-Disables the application from publishing notifications by adding the application bundle name to the permission
-control list. This API uses a promise to return the result.
+Disables the application from publishing notifications by adding the application bundle name to the permission control list. This API uses a promise to return the result.
 
 **Since:** 20
 

@@ -6,8 +6,7 @@
 function isNotificationEnabled(bundle: BundleOption, callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether notification is enabled for a specified application.
-This API uses an asynchronous callback to return the result.
+Checks whether notification is enabled for a specified application. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 
@@ -68,8 +67,7 @@ Checks whether notification is enabled for a specified application. This API use
 function isNotificationEnabled(callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether notification is enabled for this application.
-This API uses an asynchronous callback to return the result.
+Checks whether notification is enabled for this application. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 
@@ -123,8 +121,7 @@ Checks whether notification is enabled for this application. This API uses a pro
 function isNotificationEnabled(userId: number, callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether notification is enabled for a specified user.
-This API uses an asynchronous callback to return the result.
+Checks whether notification is enabled for a specified user. This API uses an asynchronous callback to return the result.
 
 **Since:** 8
 

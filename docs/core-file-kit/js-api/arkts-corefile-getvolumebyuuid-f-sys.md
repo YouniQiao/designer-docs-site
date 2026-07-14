@@ -47,8 +47,7 @@ Obtains information about a volume based on the UUID. This API uses an asynchron
 function getVolumeByUuid(uuid: string): Promise<Volume>
 ```
 
-Obtains information about a volume based on the universally unique identifier (UUID). This API uses a promise to
-return the result.
+Obtains information about a volume based on the universally unique identifier (UUID). This API uses a promise to return the result.
 
 **Since:** 9
 

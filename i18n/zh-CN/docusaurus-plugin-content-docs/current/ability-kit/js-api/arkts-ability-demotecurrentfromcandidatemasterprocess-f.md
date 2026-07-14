@@ -6,8 +6,7 @@
 export function demoteCurrentFromCandidateMasterProcess(): Promise<void>
 ```
 
-撤销当前进程的备选主控进程资格。使用Promise异步回调。
-该接口在PC/2in1、Tablet中可正常调用，在其他设备类型中返回801错误码。
+撤销当前进程的备选主控进程资格。使用Promise异步回调。 该接口在PC/2in1、Tablet中可正常调用，在其他设备类型中返回801错误码。
 
 **起始版本：** 20
 

@@ -12,9 +12,7 @@ Describes the object returned after the callback is triggered when an image is s
 componentHeight: number
 ```
 
-Height of the component.
-
-Unit: [px](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
+Height of the component. Unit: [px](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
 
 **Type:** number
 
@@ -32,9 +30,7 @@ Unit: [px](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
 componentWidth: number
 ```
 
-Width of the component.
-
-Unit: [px](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
+Width of the component. Unit: [px](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
 
 **Type:** number
 
@@ -52,13 +48,7 @@ Unit: [px](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
 contentHeight: number
 ```
 
-Actual rendered height of the image.
-
-Unit: [px](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
-
-**NOTE**
-
-This parameter is valid only when the return value of **loadingStatus** is **1**.
+Actual rendered height of the image. Unit: [px](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) **NOTE** This parameter is valid only when the return value of **loadingStatus** is **1**.
 
 **Type:** number
 
@@ -76,13 +66,7 @@ This parameter is valid only when the return value of **loadingStatus** is **1**
 contentOffsetX: number
 ```
 
-Offset of the rendered content relative to the component on the x-axis.
-
-Unit: [px](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
-
-**NOTE**
-
-This parameter is valid only when the return value of **loadingStatus** is **1**.
+Offset of the rendered content relative to the component on the x-axis. Unit: [px](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) **NOTE** This parameter is valid only when the return value of **loadingStatus** is **1**.
 
 **Type:** number
 
@@ -100,13 +84,7 @@ This parameter is valid only when the return value of **loadingStatus** is **1**
 contentOffsetY: number
 ```
 
-Offset of the rendered content relative to the component on the y-axis
-
-Unit: [px](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
-
-**NOTE**
-
-This parameter is valid only when the return value of **loadingStatus** is **1**.
+Offset of the rendered content relative to the component on the y-axis Unit: [px](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) **NOTE** This parameter is valid only when the return value of **loadingStatus** is **1**.
 
 **Type:** number
 
@@ -124,13 +102,7 @@ This parameter is valid only when the return value of **loadingStatus** is **1**
 contentWidth: number
 ```
 
-Actual rendered width of the image.
-
-Unit: [px](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
-
-**NOTE**
-
-This parameter is valid only when the return value of **loadingStatus** is **1**.
+Actual rendered width of the image. Unit: [px](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) **NOTE** This parameter is valid only when the return value of **loadingStatus** is **1**.
 
 **Type:** number
 
@@ -148,9 +120,7 @@ This parameter is valid only when the return value of **loadingStatus** is **1**
 height: number
 ```
 
-Height of the image.
-
-Unit: [px](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
+Height of the image. Unit: [px](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
 
 **Type:** number
 
@@ -168,12 +138,7 @@ Unit: [px](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
 loadingStatus: number
 ```
 
-Loading status of the image.
-
-**NOTE**
-
-If the return value is **0**, the image is successfully loaded. If the return value is **1**, the image is
-successfully decoded.
+Loading status of the image. **NOTE** If the return value is **0**, the image is successfully loaded. If the return value is **1**, the image is successfully decoded.
 
 **Type:** number
 
@@ -191,9 +156,7 @@ successfully decoded.
 width: number
 ```
 
-Width of the image.
-
-Unit: [px](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
+Width of the image. Unit: [px](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
 
 **Type:** number
 

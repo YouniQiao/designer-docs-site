@@ -18,8 +18,7 @@ import { hiRetrieval } from '@kit.PerformanceAnalysisKit';
 deviceModel: string
 ```
 
-Custom device model set by developers. No restrictions on format or character types,
-maximum length is 128 characters and excess characters will be truncated.
+Custom device model set by developers. No restrictions on format or character types, maximum length is 128 characters and excess characters will be truncated.
 
 **Type:** string
 
@@ -35,8 +34,7 @@ maximum length is 128 characters and excess characters will be truncated.
 deviceType: string
 ```
 
-Custom device type set by developers. No restrictions on format or character types,
-maximum length is 128 characters and excess characters will be truncated.
+Custom device type set by developers. No restrictions on format or character types, maximum length is 128 characters and excess characters will be truncated.
 
 **Type:** string
 
@@ -52,8 +50,7 @@ maximum length is 128 characters and excess characters will be truncated.
 userType: string
 ```
 
-Custom user type set by developers. No restrictions on format or character types,
-maximum length is 128 characters and excess characters will be truncated.
+Custom user type set by developers. No restrictions on format or character types, maximum length is 128 characters and excess characters will be truncated.
 
 **Type:** string
 

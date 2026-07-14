@@ -1,7 +1,6 @@
 # TemplateProperty
 
-Provides parameter configuration required for switching the float view template and modifying the size of the
-window.
+Provides parameter configuration required for switching the float view template and modifying the size of the window.
 
 **Since:** 26.0.0
 

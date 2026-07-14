@@ -50,10 +50,7 @@ Result code. The value **0** means that the processing is successful, and **-1**
 resultUri: string
 ```
 
-URI of the result. If **saveUri** is empty, **resultUri** is a public media path. If **saveUri** is not empty and
-the application has the write permission on the URI, the value of **resultUri** is the same as that of
-**saveUri**. If **saveUri** is not empty and the application does not have the write permission on the URI,
-**resultUri** cannot be obtained.
+URI of the result. If **saveUri** is empty, **resultUri** is a public media path. If **saveUri** is not empty and the application has the write permission on the URI, the value of **resultUri** is the same as that of **saveUri**. If **saveUri** is not empty and the application does not have the write permission on the URI, **resultUri** cannot be obtained.
 
 **Type:** string
 

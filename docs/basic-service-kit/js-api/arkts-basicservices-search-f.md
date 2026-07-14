@@ -12,10 +12,7 @@ import { request } from '@kit.BasicServicesKit';
 function search(callback: AsyncCallback<Array<string>>): void
 ```
 
-Searches for task IDs based on
-[Filter](arkts-basicservices-filter-i.md). The IDs of all
-tasks from the invoking time to 24 hours ago are searched. This API uses an asynchronous callback to return the
-result.
+Searches for task IDs based on [Filter](arkts-basicservices-filter-i.md). The IDs of all tasks from the invoking time to 24 hours ago are searched. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -41,9 +38,7 @@ result.
 function search(filter: Filter, callback: AsyncCallback<Array<string>>): void
 ```
 
-Searches for task IDs based on
-[Filter](arkts-basicservices-filter-i.md). This API uses an
-asynchronous callback to return the result.
+Searches for task IDs based on [Filter](arkts-basicservices-filter-i.md). This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -70,9 +65,7 @@ asynchronous callback to return the result.
 function search(filter?: Filter): Promise<Array<string>>
 ```
 
-Searches for task IDs based on
-[Filter](arkts-basicservices-filter-i.md). This API uses a
-promise to return the result.
+Searches for task IDs based on [Filter](arkts-basicservices-filter-i.md). This API uses a promise to return the result.
 
 **Since:** 10
 

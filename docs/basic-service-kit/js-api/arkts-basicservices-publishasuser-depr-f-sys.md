@@ -32,19 +32,19 @@ Publishes a common event to a specific user. This API uses an asynchronous callb
 import Base from '@ohos.base';
 
 // Callback for common event publication
-function publishCB(err:Base.BusinessError) {
+let publishCallBack = (err:Base.BusinessError) => {
     if (err.code) {
-        console.error(`publishAsUser failed, code is ${err.code}`);
+        console.error(`Failed to publishAsUser. Code: ${err.code}, message: ${err.message}`);
     } else {
-        console.info("publishAsUser");
+        console.info('publishAsUser');
     }
 }
 
 // Specify the user to whom the common event will be published.
-let userId = 100;
+const userId = 100;
 
 // Publish a common event.
-commonEvent.publishAsUser("event", userId, publishCB);
+commonEvent.publishAsUser('event', userId, publishCallBack);
 
 ```
 
@@ -60,8 +60,7 @@ function publishAsUser(
   ): void
 ```
 
-Publishes a common event with given properties to a specific user. This API uses an asynchronous callback to return
-the result.
+Publishes a common event with given properties to a specific user. This API uses an asynchronous callback to return the result.
 
 **Since:** 8
 
@@ -90,16 +89,16 @@ import CommonEventManager from '@ohos.commonEventManager';
 
 // Information of a common event.
 let options:CommonEventManager.CommonEventPublishData = {
-    code: 0,             // Initial code of the common event.
-    data: "initial data",// Initial data of the common event.
-}
+    code: 0,              // Initial code of the common event.
+    data: 'initial data', // Initial data of the common event.
+};
 
 // Callback for common event publication
-function publishCB(err:Base.BusinessError) {
+let publishCallBack = (err:Base.BusinessError) => {
     if (err.code) {
-        console.error(`publishAsUser failed, code is ${err.code}`);
+        console.error(`Failed to publishAsUser. Code: ${err.code}, message: ${err.message}`);
     } else {
-        console.info("publishAsUser");
+        console.info('publishAsUser');
     }
 }
 
@@ -107,7 +106,7 @@ function publishCB(err:Base.BusinessError) {
 let userId = 100;
 
 // Publish a common event.
-commonEvent.publishAsUser("event", userId, options, publishCB);
+commonEvent.publishAsUser('event', userId, options, publishCallBack);
 
 ```
 

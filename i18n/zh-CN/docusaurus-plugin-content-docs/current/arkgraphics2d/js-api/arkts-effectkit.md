@@ -1,13 +1,6 @@
 # @ohos.effectKit
 
-图像效果模块提供了处理图像的基础能力，包括亮度调节、模糊化、灰度调节和智能取色等。effectKit用于离线处理图像（如pixelmap、png、jpeg）以获得视觉效果，而uiEffect则实时接入渲染服务，针对屏幕帧缓存进行处理以
-获得动态视觉效果。
-
-该模块提供以下图像效果相关的常用功能：
-
-- [Filter](arkts-arkgraphics2d-filter-i.md)：效果类，用于添加指定效果到图像源。
-- [Color](arkts-arkgraphics2d-color-i.md)：颜色类，用于保存取色的结果。
-- [ColorPicker](arkts-arkgraphics2d-colorpicker-i.md)：智能取色器。
+图像效果模块提供了处理图像的基础能力，包括亮度调节、模糊化、灰度调节和智能取色等。effectKit用于离线处理图像（如pixelmap、png、jpeg）以获得视觉效果，而uiEffect则实时接入渲染服务，针对屏幕帧缓存进行处理以 获得动态视觉效果。 该模块提供以下图像效果相关的常用功能： - [Filter](arkts-arkgraphics2d-filter-i.md)：效果类，用于添加指定效果到图像源。 - [Color](arkts-arkgraphics2d-color-i.md)：颜色类，用于保存取色的结果。 - [ColorPicker](arkts-arkgraphics2d-colorpicker-i.md)：智能取色器。
 
 **起始版本：** 9
 
@@ -30,7 +23,7 @@
 | 名称 | 说明 |
 | --- | --- |
 | [Color](arkts-arkgraphics2d-color-i.md) | 颜色类，用于保存取色的结果。 |
-| [ColorPicker](arkts-arkgraphics2d-colorpicker-i.md) | 取色类，用于从一张图像数据中获取它的主要颜色。在调用ColorPicker的方法前，需要先通过[createColorPicker](arkts-arkgraphics2d-createcolorpicker-f.md#createcolorpicker-1)创建一个ColorPicker实例。 |
+| [ColorPicker](arkts-arkgraphics2d-colorpicker-i.md) | 取色类，用于从一张图像数据中获取它的主要颜色。在调用ColorPicker的方法前，需要先通过 [createColorPicker](arkts-arkgraphics2d-createcolorpicker-f.md#createcolorpicker-1)创建一个ColorPicker实例。 |
 | [Filter](arkts-arkgraphics2d-filter-i.md) | 图像效果类，用于将指定的效果添加到输入图像中。在调用Filter的方法前，需要先通过[createEffect](arkts-arkgraphics2d-createeffect-f.md#createeffect-1)创建一个Filter实例。 |
 
 <!--Del-->
@@ -38,7 +31,7 @@
 
 | 名称 | 说明 |
 | --- | --- |
-| [ColorPicker](arkts-arkgraphics2d-colorpicker-i-sys.md) | 取色类，用于从一张图像数据中获取它的主要颜色。在调用ColorPicker的方法前，需要先通过[createColorPicker](arkts-arkgraphics2d-createcolorpicker-f.md#createcolorpicker-1)创建一个ColorPicker实例。 |
+| [ColorPicker](arkts-arkgraphics2d-colorpicker-i-sys.md) | 取色类，用于从一张图像数据中获取它的主要颜色。在调用ColorPicker的方法前，需要先通过 [createColorPicker](arkts-arkgraphics2d-createcolorpicker-f.md#createcolorpicker-1)创建一个ColorPicker实例。 |
 | [Filter](arkts-arkgraphics2d-filter-i-sys.md) | 图像效果类，用于将指定的效果添加到输入图像中。在调用Filter的方法前，需要先通过[createEffect](arkts-arkgraphics2d-createeffect-f.md#createeffect-1)创建一个Filter实例。 |
 <!--DelEnd-->
 

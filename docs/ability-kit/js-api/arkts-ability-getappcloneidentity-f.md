@@ -12,8 +12,7 @@ import { bundleManager } from '@kit.AbilityKit';
 function getAppCloneIdentity(uid: number): Promise<AppCloneIdentity>
 ```
 
-Obtains the bundle name and clone index of a cloned application based on the given UID. This API uses a promise to
-return the result.
+Obtains the bundle name and clone index of a cloned application based on the given UID. This API uses a promise to return the result.
 
 **Since:** 14
 

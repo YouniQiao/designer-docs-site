@@ -9,7 +9,7 @@ Interpolation effect of the image.
 ## None
 
 ```TypeScript
-None = 0
+None
 ```
 
 Nearest neighbor interpolation.
@@ -25,7 +25,7 @@ Nearest neighbor interpolation.
 ## Low
 
 ```TypeScript
-Low = 1
+Low
 ```
 
 Bilinear interpolation.
@@ -41,7 +41,7 @@ Bilinear interpolation.
 ## Medium
 
 ```TypeScript
-Medium = 2
+Medium
 ```
 
 MipMap interpolation.
@@ -57,11 +57,10 @@ MipMap interpolation.
 ## High
 
 ```TypeScript
-High = 3
+High
 ```
 
-Cubic interpolation. This mode produces scaled images of the highest possible quality, but may require more image
-rendering time.
+Cubic interpolation. This mode produces scaled images of the highest possible quality, but may require more image rendering time.
 
 **Since:** 7
 

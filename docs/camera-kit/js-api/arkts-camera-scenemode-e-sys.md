@@ -12,8 +12,7 @@ Enumerates the camera scene modes.
 PORTRAIT_PHOTO = 3
 ```
 
-Portrait photo mode.
-This is a system API.
+Portrait photo mode. This is a system API.
 
 **Since:** 11
 
@@ -27,8 +26,7 @@ This is a system API.
 NIGHT_PHOTO = 4
 ```
 
-Night photo mode.
-This is a system API.
+Night photo mode. This is a system API.
 
 **Since:** 11
 
@@ -42,8 +40,7 @@ This is a system API.
 PROFESSIONAL_PHOTO = 5
 ```
 
-Professional photo mode.
-This is a system API.
+Professional photo mode. This is a system API.
 
 **Since:** 12
 
@@ -57,8 +54,7 @@ This is a system API.
 PROFESSIONAL_VIDEO = 6
 ```
 
-Professional video mode.
-This is a system API.
+Professional video mode. This is a system API.
 
 **Since:** 12
 
@@ -72,8 +68,7 @@ This is a system API.
 SLOW_MOTION_VIDEO = 7
 ```
 
-Slow-motion video mode.
-This is a system API.
+Slow-motion video mode. This is a system API.
 
 **Since:** 12
 
@@ -87,8 +82,7 @@ This is a system API.
 MACRO_PHOTO = 8
 ```
 
-Macro photo mode.
-This is a system API.
+Macro photo mode. This is a system API.
 
 **Since:** 12
 
@@ -102,8 +96,7 @@ This is a system API.
 MACRO_VIDEO = 9
 ```
 
-Macro video mode.
-This is a system API.
+Macro video mode. This is a system API.
 
 **Since:** 12
 
@@ -117,8 +110,7 @@ This is a system API.
 LIGHT_PAINTING_PHOTO = 10
 ```
 
-Light painting mode.
-This is a system API.
+Light painting mode. This is a system API.
 
 **Since:** 12
 
@@ -132,8 +124,7 @@ This is a system API.
 HIGH_RESOLUTION_PHOTO = 11
 ```
 
-High-resolution photo mode.
-This is a system API.
+High-resolution photo mode. This is a system API.
 
 **Since:** 12
 
@@ -147,8 +138,7 @@ This is a system API.
 QUICK_SHOT_PHOTO = 13
 ```
 
-Quick snap mode.
-This is a system API.
+Quick snap mode. This is a system API.
 
 **Since:** 12
 
@@ -162,8 +152,7 @@ This is a system API.
 APERTURE_VIDEO = 14
 ```
 
-Large aperture video mode.
-This is a system API.
+Large aperture video mode. This is a system API.
 
 **Since:** 12
 
@@ -177,8 +166,7 @@ This is a system API.
 PANORAMA_PHOTO = 15
 ```
 
-Panoramic photo mode.
-This is a system API.
+Panoramic photo mode. This is a system API.
 
 **Since:** 12
 
@@ -192,8 +180,7 @@ This is a system API.
 TIME_LAPSE_PHOTO = 16
 ```
 
-Time-lapse photo mode.
-This is a system API.
+Time-lapse photo mode. This is a system API.
 
 **Since:** 12
 
@@ -207,8 +194,7 @@ This is a system API.
 FLUORESCENCE_PHOTO = 17
 ```
 
-Fluorescence photo mode.
-This is a system API.
+Fluorescence photo mode. This is a system API.
 
 **Since:** 13
 

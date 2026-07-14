@@ -2,7 +2,6 @@
 
 Create DistortionComponent.
 
-
 ## DistortionComponent
 
 ```TypeScript

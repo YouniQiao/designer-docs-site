@@ -12,8 +12,7 @@ import { accessibility } from '@kit.AccessibilityKit';
 function isOpenAccessibility(callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether an accessibility application is enabled. This API uses an asynchronous callback to return the
-result.
+Checks whether an accessibility application is enabled. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 

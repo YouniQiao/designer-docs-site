@@ -1,7 +1,6 @@
 # @ohos.telephony.observer
 
-Monitors telephony state updates of a device, including updates of the network state,
-signal strength, call state, the data link connection state and others.
+Monitors telephony state updates of a device, including updates of the network state, signal strength, call state, the data link connection state and others.
 
 **Since:** 6
 
@@ -36,14 +35,14 @@ import { observer } from '@kit.TelephonyKit';
 | [on](arkts-telephony-on-f.md#on-4) | Callback when the signal strength corresponding to a monitored {@code slotId} is updated. |
 | [on](arkts-telephony-on-f.md#on-7) | Callback when the cellular data link connection state corresponding to the default sim card is updated. |
 | [on](arkts-telephony-on-f.md#on-8) | Callback when the cellular data link connection state corresponding to the monitored {@code slotId} is updated. |
-| [on](arkts-telephony-on-f.md#on-9) | Callback when the uplink and downlink data flow state of cellular data servicescorresponding to the default sim card is updated. |
-| [on](arkts-telephony-on-f.md#on-10) | Callback when the uplink and downlink data flow state of cellular data servicescorresponding to the monitored {@code slotId} is updated. |
+| [on](arkts-telephony-on-f.md#on-9) | Callback when the uplink and downlink data flow state of cellular data services corresponding to the default sim card is updated. |
+| [on](arkts-telephony-on-f.md#on-10) | Callback when the uplink and downlink data flow state of cellular data services corresponding to the monitored {@code slotId} is updated. |
 | [on](arkts-telephony-on-f.md#on-11) | Callback when the call state corresponding to the default sim card is updated. |
 | [on](arkts-telephony-on-f.md#on-12) | Callback when the call state corresponding to the monitored {@code slotId} is updated. |
 | [on](arkts-telephony-on-f.md#on-13) | Callback when the telCall state corresponding to the monitored {@code slotId} is updated. |
 | [on](arkts-telephony-on-f.md#on-14) | Callback when the sim state corresponding to the default sim card is updated. |
 | [on](arkts-telephony-on-f.md#on-15) | Callback when the sim state corresponding to the monitored {@code slotId} is updated. |
-| [on](arkts-telephony-on-f.md#on-16) | Receives an ICC account change. This callback is invoked when the ICC account updatesand the observer is added to monitor the updates. |
+| [on](arkts-telephony-on-f.md#on-16) | Receives an ICC account change. This callback is invoked when the ICC account updates and the observer is added to monitor the updates. |
 | [onCCallStateChange](arkts-telephony-onccallstatechange-f.md#onccallstatechange-1) | Called when the carrier call state changes. |
 | [onCommunicationStateChange](arkts-telephony-oncommunicationstatechange-f.md#oncommunicationstatechange-1) | This API uses an asynchronous callback to return the result. |
 | [onGetSimActiveState](arkts-telephony-ongetsimactivestate-f.md#ongetsimactivestate-1) | Subscribe to sim active state change events using a callback-based approach as an asynchronous method. |

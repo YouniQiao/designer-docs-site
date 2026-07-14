@@ -12,9 +12,7 @@
 completedBatches: Array<number>
 ```
 
-表示已成功同步的联系人的批处理标识符数组。
-
-值的范围是从1到totalBatches。
+表示已成功同步的联系人的批处理标识符数组。 值的范围是从1到totalBatches。
 
 **类型：** Array<number>
 

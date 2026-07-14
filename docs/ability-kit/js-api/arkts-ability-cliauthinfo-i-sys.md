@@ -20,10 +20,7 @@ import { Context, Permissions, PermissionRequestResult } from '@kit.AbilityKit';
 authorizationResults: Array<boolean>
 ```
 
-List of authorization results, and the array length must be equal to permissionNames.length. The value **true**
-indicates that the authorization is successful and the CLI command can obtain the corresponding permission. The
-value **false** indicates that the authorization is denied and the CLI command cannot obtain the corresponding
-permission.
+List of authorization results, and the array length must be equal to permissionNames.length. The value **true** indicates that the authorization is successful and the CLI command can obtain the corresponding permission. The value **false** indicates that the authorization is denied and the CLI command cannot obtain the corresponding permission.
 
 **Type:** Array<boolean>
 

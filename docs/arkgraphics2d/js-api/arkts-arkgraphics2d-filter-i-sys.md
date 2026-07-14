@@ -74,8 +74,7 @@ struct BezierWarpExample {
 blurBubblesRise(param: BlurBubblesRiseEffectParam): Filter
 ```
 
-Applies blur bubbles rise effect to simulate rising bubbles with blur.
-This effect creates a dreamy, bubbly distortion similar to rising bubbles in liquid.
+Applies blur bubbles rise effect to simulate rising bubbles with blur. This effect creates a dreamy, bubbly distortion similar to rising bubbles in liquid.
 
 **Since:** 26.0.0
 
@@ -558,8 +557,7 @@ filter.hdrBrightnessRatio(2.0)
 heatDistortion(param: HeatDistortionEffectParam): Filter
 ```
 
-Applies heat distortion effect to simulate hot air distortion.
-This effect creates a wavy distortion similar to heat shimmer or hot air rising.
+Applies heat distortion effect to simulate hot air distortion. This effect creates a wavy distortion similar to heat shimmer or hot air rising.
 
 **Since:** 26.0.0
 
@@ -738,8 +736,7 @@ filter.pixelStretch([0.2, 0.2, 0.2, 0.2], uiEffect.TileMode.CLAMP)
 radiusGradientBlur(radius: number, gradientParam: LinearGradientBlurOptions): Filter
 ```
 
-Adds the content radius gradient blurring effect for the current component.
-The input parameter is the blurring radius.
+Adds the content radius gradient blurring effect for the current component. The input parameter is the blurring radius.
 
 **Since:** 19
 

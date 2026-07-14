@@ -1,8 +1,6 @@
 # AtomicServiceOptions
 
-**AtomicServiceOptions** is used as an input parameter of
-[openAtomicService()](arkts-ability-uiabilitycontext-c.md#openatomicservice-1) to carry arguments. It
-inherits from [StartOptions](arkts-ability-startoptions-c.md).
+**AtomicServiceOptions** is used as an input parameter of [openAtomicService()](arkts-ability-uiabilitycontext-c.md#openatomicservice-1) to carry arguments. It inherits from [StartOptions](arkts-ability-startoptions-c.md).
 
 **Inheritance/Implementation:** AtomicServiceOptions extends [StartOptions](arkts-ability-startoptions-c.md)
 
@@ -40,8 +38,7 @@ Operation class for receiving the result of opening an atomic service.
 flags?: number
 ```
 
-Mode in which the system processes the startup. For example, **wantConstant.Flags.FLAG_INSTALL_ON_DEMAND**
-indicates that the installation-free capability is used.
+Mode in which the system processes the startup. For example, **wantConstant.Flags.FLAG_INSTALL_ON_DEMAND** indicates that the installation-free capability is used.
 
 **Type:** number
 

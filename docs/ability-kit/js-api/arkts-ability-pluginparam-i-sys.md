@@ -36,9 +36,7 @@ Extension parameters for installing or uninstalling the plugin. The default valu
 userId?: number
 ```
 
-ID of the user for whom the plugin is to be installed or uninstalled. You can obtain the user ID by calling
-[getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-accountmanager-i.md#getosaccountlocalid-1)
-. The default value is the user ID of the caller.
+ID of the user for whom the plugin is to be installed or uninstalled. You can obtain the user ID by calling [getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-accountmanager-i.md#getosaccountlocalid-1) . The default value is the user ID of the caller.
 
 **Type:** number
 

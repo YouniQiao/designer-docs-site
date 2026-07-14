@@ -6,11 +6,7 @@
 function removeIncomingCallPolicyNumbers(admin: Want, policy: adminManager.Policy, numbers: Array<string>): void
 ```
 
-移除通话呼入的允许或禁用名单，若在该名单尚未设置时进行移除，则会移除失败。
-
-以下情况下，通过本接口移除通话呼入的允许或禁用名单，会报策略冲突：
-
-1. 已经通过[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)接口禁用了设备通话能力，再通过本接口移除通话呼入的禁用或允许名单，返回203错误码。通过[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)接口解除禁用设备通话能力后，可解除冲突。
+移除通话呼入的允许或禁用名单，若在该名单尚未设置时进行移除，则会移除失败。 以下情况下，通过本接口移除通话呼入的允许或禁用名单，会报策略冲突： 1. 已经通过[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)接口禁用了设备通话能力，再通过本接口移除通话呼入的禁用或允许名单，返回203错误码。通过[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)接口解除禁用设备通话能力后，可解除冲突。
 
 **起始版本：** 20
 
@@ -52,11 +48,14 @@ let wantTemp: Want = {
   abilityName: 'EnterpriseAdminAbility'
 };
 try {
+  // 设置策略类型为禁用名单
   let policy: adminManager.Policy = adminManager.Policy.BLOCK_LIST;
+  // 设置要从禁用名单中移除的通话号码
   let numbers: Array<string> = [
     // 需根据实际情况进行替换
     "13112345678"
   ];
+  // 移除通话呼入禁用名单中的指定号码
   telephonyManager.removeIncomingCallPolicyNumbers(wantTemp, policy, numbers);
   console.info('Succeeded in removing incoming call policy.');
 } catch (err) {

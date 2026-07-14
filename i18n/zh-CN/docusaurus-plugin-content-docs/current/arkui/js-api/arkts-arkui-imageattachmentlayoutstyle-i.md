@@ -12,11 +12,7 @@
 borderRadius?: LengthMetrics | BorderRadiuses
 ```
 
-设置圆角。
-
-默认值：0
-
-单位：[vp](../../../../reference/apis-arkui/arkui-ts/ts-pixel-units.md#基本像素单位)
+设置圆角。 默认值：0 单位：[vp](../../../../reference/apis-arkui/arkui-ts/ts-pixel-units.md#基本像素单位)
 
 **类型：** LengthMetrics | BorderRadiuses
 
@@ -34,11 +30,7 @@ borderRadius?: LengthMetrics | BorderRadiuses
 margin?: LengthMetrics | Margin
 ```
 
-设置图片外边距。
-
-默认值：0
-
-单位：[vp](../../../../reference/apis-arkui/arkui-ts/ts-pixel-units.md#基本像素单位)
+设置图片外边距。 默认值：0 单位：[vp](../../../../reference/apis-arkui/arkui-ts/ts-pixel-units.md#基本像素单位)
 
 **类型：** LengthMetrics | Margin
 
@@ -56,11 +48,7 @@ margin?: LengthMetrics | Margin
 padding?: LengthMetrics | Padding
 ```
 
-设置图片内边距。
-
-默认值：0
-
-单位：[vp](../../../../reference/apis-arkui/arkui-ts/ts-pixel-units.md#基本像素单位)
+设置图片内边距。 默认值：0 单位：[vp](../../../../reference/apis-arkui/arkui-ts/ts-pixel-units.md#基本像素单位)
 
 **类型：** LengthMetrics | Padding
 

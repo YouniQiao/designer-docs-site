@@ -12,8 +12,7 @@ import { adminManager } from '@kit.MDMKit';
 function disableSuperAdmin(bundleName: String, callback: AsyncCallback<void>): void
 ```
 
-Disables a super device administrator application based on **bundleName**. This API uses an asynchronous callback
-to return the result.
+Disables a super device administrator application based on **bundleName**. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -67,8 +66,7 @@ adminManager.disableSuperAdmin(bundleName, (err) => {
 function disableSuperAdmin(bundleName: String): Promise<void>
 ```
 
-Disables a super device administrator application based on **bundleName**. This API uses a promise to return the
-result.
+Disables a super device administrator application based on **bundleName**. This API uses a promise to return the result.
 
 **Since:** 9
 

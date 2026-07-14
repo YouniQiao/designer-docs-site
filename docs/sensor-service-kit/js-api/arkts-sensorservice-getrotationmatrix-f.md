@@ -120,8 +120,7 @@ try {
 function getRotationMatrix(gravity: Array<number>, geomagnetic: Array<number>, callback: AsyncCallback<RotationMatrixResponse>): void
 ```
 
-Obtains the rotation matrix based on a gravity vector and geomagnetic vector. This API uses an asynchronous
-callback to return the result.
+Obtains the rotation matrix based on a gravity vector and geomagnetic vector. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -173,8 +172,7 @@ try {
 function getRotationMatrix(gravity: Array<number>, geomagnetic: Array<number>): Promise<RotationMatrixResponse>
 ```
 
-Obtains the rotation matrix based on a gravity vector and geomagnetic vector. This API uses a promise to return the
-result.
+Obtains the rotation matrix based on a gravity vector and geomagnetic vector. This API uses a promise to return the result.
 
 **Since:** 9
 

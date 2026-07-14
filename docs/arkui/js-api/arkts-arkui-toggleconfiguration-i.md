@@ -1,7 +1,6 @@
 # ToggleConfiguration
 
-You need a custom class to implement the **ContentModifier** API. This API inherits from
-[CommonConfiguration](arkts-arkui-commonconfiguration-i.md).
+You need a custom class to implement the **ContentModifier** API. This API inherits from [CommonConfiguration](arkts-arkui-commonconfiguration-i.md).
 
 **Inheritance/Implementation:** ToggleConfiguration extends [CommonConfiguration<ToggleConfiguration>](CommonConfiguration<ToggleConfiguration>)
 
@@ -15,11 +14,7 @@ You need a custom class to implement the **ContentModifier** API. This API inher
 enabled: boolean
 ```
 
-Whether the toggle is enabled for state switching.
-
-**true**: The state can be changed. **false**: The state cannot be changed.
-
-Default value: **true**
+Whether the toggle is enabled for state switching. **true**: The state can be changed. **false**: The state cannot be changed. Default value: **true**
 
 **Type:** boolean
 
@@ -37,11 +32,7 @@ Default value: **true**
 isOn: boolean
 ```
 
-Whether the toggle is turned on.
-
-**true**: The toggle is turned on. **false**: The toggle is turned off.
-
-Default value: **false**
+Whether the toggle is turned on. **true**: The toggle is turned on. **false**: The toggle is turned off. Default value: **false**
 
 **Type:** boolean
 
@@ -59,9 +50,7 @@ Default value: **false**
 triggerChange: Callback<boolean>
 ```
 
-Callback invoked when the toggle's state changes.
-
-**true**: The toggle is turned on. **false**: The toggle is turned off.
+Callback invoked when the toggle's state changes. **true**: The toggle is turned on. **false**: The toggle is turned off.
 
 **Type:** Callback<boolean>
 

@@ -12,8 +12,7 @@ import { certificateManager } from '@kit.DeviceCertificateKit';
 function setCertificateStatus(certUri: string, certType: CertType, enabled: boolean) : Promise<void>
 ```
 
-Sets the status of a CA certificate. Currently, only the status of a user's CA certificate can be set. This API is
-called only by the certificate management application. This API uses a promise to return the result.
+Sets the status of a CA certificate. Currently, only the status of a user's CA certificate can be set. This API is called only by the certificate management application. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 

@@ -12,8 +12,7 @@ import { wifiManager } from '@kit.ConnectivityKit';
 function getLinkedInfoSync(): WifiLinkedInfo
 ```
 
-Obtain connection information about the Wi-Fi connection.this apireturns the result syncchronously.
-If does't have the permission of ohos.permission.GET_WIFI_PEERS_MAC, return random bssid.
+Obtain connection information about the Wi-Fi connection.this apireturns the result syncchronously. If does't have the permission of ohos.permission.GET_WIFI_PEERS_MAC, return random bssid.
 
 **Since:** 18
 

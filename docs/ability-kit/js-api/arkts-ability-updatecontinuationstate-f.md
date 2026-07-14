@@ -17,8 +17,7 @@ function updateContinuationState(
   ): void
 ```
 
-Instructs the device selection module to update the device connection state. This API uses an asynchronous callback
-to return the result.
+Instructs the device selection module to update the device connection state. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -78,8 +77,7 @@ try {
 function updateContinuationState(token: number, deviceId: string, status: DeviceConnectState): Promise<void>
 ```
 
-Instructs the device selection module to update the device connection state. This API uses a promise to return the
-result.
+Instructs the device selection module to update the device connection state. This API uses a promise to return the result.
 
 **Since:** 9
 

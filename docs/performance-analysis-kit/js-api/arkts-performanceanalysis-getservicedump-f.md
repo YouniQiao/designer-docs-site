@@ -12,9 +12,7 @@ import { hidebug } from '@kit.PerformanceAnalysisKit';
 function getServiceDump(serviceid : number, fd : number, args : Array<string>) : void
 ```
 
-Obtains system service information.
-It need dump permission.
-This API can be called only by system application.
+Obtains system service information. It need dump permission. This API can be called only by system application.
 
 **Since:** 9
 

@@ -6,9 +6,7 @@
 function queryAbilityInfoSync(want: Want, abilityFlags: number, userId?: number): Array<AbilityInfo>
 ```
 
-以同步方法根据给定的want、abilityFlags和userId获取一个或多个AbilityInfo。
-
-获取调用方自身的信息时不需要权限。
+以同步方法根据给定的want、abilityFlags和userId获取一个或多个AbilityInfo。 获取调用方自身的信息时不需要权限。
 
 **起始版本：** 10
 

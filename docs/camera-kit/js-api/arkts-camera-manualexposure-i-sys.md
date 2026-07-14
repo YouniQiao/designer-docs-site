@@ -1,7 +1,6 @@
 # ManualExposure (System API)
 
-ManualExposure extends [ManualExposureQuery](arkts-camera-manualexposurequery-i.md)
-Provides APIs to obtain and set the exposure duration.
+ManualExposure extends [ManualExposureQuery](arkts-camera-manualexposurequery-i.md) Provides APIs to obtain and set the exposure duration.
 
 **Inheritance/Implementation:** ManualExposure extends [ManualExposureQuery](arkts-camera-manualexposurequery-i.md)
 
@@ -65,9 +64,7 @@ function getExposure(nightPhotoSession: camera.NightPhotoSession): number | unde
 setExposure(exposure: number): void
 ```
 
-Sets the manual exposure duration. Before using this API, call
-[getSupportedExposureRange](arkts-camera-manualexposurequery-i-sys.md#getsupportedexposurerange-1) to obtain the supported
-manual exposure durations, in ms.
+Sets the manual exposure duration. Before using this API, call [getSupportedExposureRange](arkts-camera-manualexposurequery-i-sys.md#getsupportedexposurerange-1) to obtain the supported manual exposure durations, in ms.
 
 **Since:** 11
 

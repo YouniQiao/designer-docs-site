@@ -12,9 +12,7 @@ import { abilityManager } from '@kit.AbilityKit';
 function onPreloadedUIExtensionAbilityLoaded(callback: PreloadedUIExtensionAbilityLoadedFn): void
 ```
 
-Subscribes to loaded events of a preloaded
-[UIExtensionAbility](arkts-ability-uiextensionability-c.md) instance in the current
-process.
+Subscribes to loaded events of a preloaded [UIExtensionAbility](arkts-ability-uiextensionability-c.md) instance in the current process.
 
 **Since:** 23
 

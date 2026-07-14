@@ -1,10 +1,6 @@
 # PersistentStorage
 
-PersistentStorage具体UI使用说明，详见[PersistentStorage(持久化存储UI状态)](../../../../ui/state-management/arkts-persiststorage.md)
-
-> **说明：**
-
-> 从API version 12开始，PersistentStorage支持null、undefined。
+PersistentStorage具体UI使用说明，详见[PersistentStorage(持久化存储UI状态)](../../../../ui/state-management/arkts-persiststorage.md) > **说明：** > 从API version 12开始，PersistentStorage支持null、undefined。
 
 **起始版本：** 7
 
@@ -16,9 +12,7 @@ PersistentStorage具体UI使用说明，详见[PersistentStorage(持久化存储
 static DeleteProp(key: string): void
 ```
 
-[PersistProp](arkts-arkui-persistentstorage-c.md#persistprop-1)的逆向操作。将key对应的属性从
-[PersistentStorage](../../../../ui/state-management/arkts-persiststorage.md)中删除，后续
-[AppStorage](../../../../ui/state-management/arkts-appstorage.md)的操作，对PersistentStorage不会再有影响。
+[PersistProp](arkts-arkui-persistentstorage-c.md#persistprop-1)的逆向操作。将key对应的属性从 [PersistentStorage](../../../../ui/state-management/arkts-persiststorage.md)中删除，后续 [AppStorage](../../../../ui/state-management/arkts-appstorage.md)的操作，对PersistentStorage不会再有影响。
 
 **起始版本：** 7
 
@@ -62,17 +56,7 @@ static Keys(): Array<string>
 static PersistProp<T>(key: string, defaultValue: T): void
 ```
 
-将[AppStorage](../../../../ui/state-management/arkts-appstorage.md)中key对应的属性持久化到文件中。该接口的调用通常在访问AppStorage之前。
-
-确定属性的类型和值的顺序如下：
-
-1. 如果[PersistentStorage](../../../../ui/state-management/arkts-persiststorage.md)文件中存在key对应的属性，在AppStorage中创建对应的propName，并用在PersistentStorage中找到的key的属性初始化。
-
-2. 如果PersistentStorage文件中没有查询到key对应的属性，则在AppStorage中查找key对应的属性。如果找到key对应的属性，则将该属性持久化。
-
-3. 如果AppStorage也没查找到key对应的属性，则在AppStorage中创建key对应的属性。用defaultValue初始化其值，并将该属性持久化。
-
-根据上述的初始化流程，如果AppStorage中有该属性，则会使用其值，覆盖掉PersistentStorage文件中的值。由于AppStorage是内存内数据，该行为会导致数据丧失持久化能力。
+将[AppStorage](../../../../ui/state-management/arkts-appstorage.md)中key对应的属性持久化到文件中。该接口的调用通常在访问AppStorage之前。 确定属性的类型和值的顺序如下： 1. 如果[PersistentStorage](../../../../ui/state-management/arkts-persiststorage.md)文件中存在key对应的属性，在AppStorage中创建对应的propName，并用在PersistentStorage中找到的key的属性初始化。 2. 如果PersistentStorage文件中没有查询到key对应的属性，则在AppStorage中查找key对应的属性。如果找到key对应的属性，则将该属性持久化。 3. 如果AppStorage也没查找到key对应的属性，则在AppStorage中创建key对应的属性。用defaultValue初始化其值，并将该属性持久化。 根据上述的初始化流程，如果AppStorage中有该属性，则会使用其值，覆盖掉PersistentStorage文件中的值。由于AppStorage是内存内数据，该行为会导致数据丧失持久化能力。
 
 **起始版本：** 7
 
@@ -122,10 +106,7 @@ static PersistProps(
 static deleteProp(key: string): void
 ```
 
-[persistProp](arkts-arkui-persistentstorage-c.md#persistprop-1)的逆向操作。将key对应的属性从PersistentStorage中删除，后续
-[AppStorage](../../../../ui/state-management/arkts-appstorage.md)的操作，对
-[PersistentStorage](../../../../ui/state-management/arkts-persiststorage.md)不会再有影响。该操作会将对应的key从持久化文件中删除，如果希望再次持久化，可以再
-次调用[persistProp](arkts-arkui-persistentstorage-c.md#persistprop-1)接口。
+[persistProp](arkts-arkui-persistentstorage-c.md#persistprop-1)的逆向操作。将key对应的属性从PersistentStorage中删除，后续 [AppStorage](../../../../ui/state-management/arkts-appstorage.md)的操作，对 [PersistentStorage](../../../../ui/state-management/arkts-persiststorage.md)不会再有影响。该操作会将对应的key从持久化文件中删除，如果希望再次持久化，可以再 次调用[persistProp](arkts-arkui-persistentstorage-c.md#persistprop-1)接口。
 
 **起始版本：** 10
 
@@ -165,17 +146,7 @@ static keys(): Array<string>
 static persistProp<T>(key: string, defaultValue: T): void
 ```
 
-将[AppStorage](../../../../ui/state-management/arkts-appstorage.md)中key对应的属性持久化到文件中。该接口的调用通常在访问AppStorage之前。
-
-确定属性的类型和值的顺序如下：
-
-1. 如果[PersistentStorage](../../../../ui/state-management/arkts-persiststorage.md)文件中存在key对应的属性，在AppStorage中创建对应的propName，并用在PersistentStorage中找到的key的属性初始化。
-
-2. 如果PersistentStorage文件中没有查询到key对应的属性，则在AppStorage中查找key对应的属性。如果找到key对应的属性，则将该属性持久化。
-
-3. 如果AppStorage中也没查找到key对应的属性，则在AppStorage中创建key对应的属性。用defaultValue初始化其值，并将该属性持久化。
-
-根据上述的初始化流程，如果AppStorage中有该属性，则会使用其值，覆盖掉PersistentStorage文件中的值。由于AppStorage是内存内数据，该行为会导致数据丧失持久化能力。
+将[AppStorage](../../../../ui/state-management/arkts-appstorage.md)中key对应的属性持久化到文件中。该接口的调用通常在访问AppStorage之前。 确定属性的类型和值的顺序如下： 1. 如果[PersistentStorage](../../../../ui/state-management/arkts-persiststorage.md)文件中存在key对应的属性，在AppStorage中创建对应的propName，并用在PersistentStorage中找到的key的属性初始化。 2. 如果PersistentStorage文件中没有查询到key对应的属性，则在AppStorage中查找key对应的属性。如果找到key对应的属性，则将该属性持久化。 3. 如果AppStorage中也没查找到key对应的属性，则在AppStorage中创建key对应的属性。用defaultValue初始化其值，并将该属性持久化。 根据上述的初始化流程，如果AppStorage中有该属性，则会使用其值，覆盖掉PersistentStorage文件中的值。由于AppStorage是内存内数据，该行为会导致数据丧失持久化能力。
 
 **起始版本：** 10
 

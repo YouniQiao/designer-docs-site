@@ -26,8 +26,7 @@ The player has not started downloading data.
 IDLE = 1
 ```
 
-The player's network activity is idle. This could mean that the download of a media segment is complete, and the
-player is waiting to start downloading the next segment.
+The player's network activity is idle. This could mean that the download of a media segment is complete, and the player is waiting to start downloading the next segment.
 
 **Since:** 12
 

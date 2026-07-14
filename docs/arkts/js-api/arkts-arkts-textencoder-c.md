@@ -1,8 +1,6 @@
 # TextEncoder
 
-Provides APIs to encode strings into byte arrays. Multiple encoding formats are supported.
-When **TextEncoder** is used for encoding, the number of bytes occupied by a character varies according to the
-encoding format. You must explicitly specify the encoding format to obtain the required encoding result.
+Provides APIs to encode strings into byte arrays. Multiple encoding formats are supported. When **TextEncoder** is used for encoding, the number of bytes occupied by a character varies according to the encoding format. You must explicitly specify the encoding format to obtain the required encoding result.
 
 **Since:** 7
 
@@ -260,11 +258,7 @@ console.info("result.written = " + result.written);
 readonly encoding = 'utf-8'
 ```
 
-Encoding format.<br>The following formats are supported: utf-8, gb2312, gb18030, ibm866, iso-8859-1, iso-8859-2,
-iso-8859-3, iso-8859-4, iso-8859-5, iso-8859-6, iso-8859-7, iso-8859-8, iso-8859-8-i, iso-8859-10, iso-8859-13,
-iso-8859-14, iso-8859-15, koi8-r, koi8-u, macintosh, windows-874, windows-1250, windows-1251, windows-1252,
-windows-1253, windows-1254, windows-1255, windows-1256, windows-1257, windows-1258, gbk, big5, euc-jp, iso-2022-
-jp, shift_jis, euc-kr, x-mac-cyrillic, utf-16be, and utf-16le.<br>The default value is **'utf-8'**.
+Encoding format.<br>The following formats are supported: utf-8, gb2312, gb18030, ibm866, iso-8859-1, iso-8859-2, iso-8859-3, iso-8859-4, iso-8859-5, iso-8859-6, iso-8859-7, iso-8859-8, iso-8859-8-i, iso-8859-10, iso-8859-13, iso-8859-14, iso-8859-15, koi8-r, koi8-u, macintosh, windows-874, windows-1250, windows-1251, windows-1252, windows-1253, windows-1254, windows-1255, windows-1256, windows-1257, windows-1258, gbk, big5, euc-jp, iso-2022- jp, shift_jis, euc-kr, x-mac-cyrillic, utf-16be, and utf-16le.<br>The default value is **'utf-8'**.
 
 **Type:** 'utf-8'
 

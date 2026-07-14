@@ -12,7 +12,7 @@ import { notificationManager } from '@kit.NotificationKit';
 function isSmartReminderEnabled(deviceType: string): Promise<boolean>
 ```
 
-Obtains a smart reminder for cross-device collaboration. This API uses a promise to return the result.
+Obtains a smart reminder for cross-device collaboration. This API uses a promise to return the result. This API can be properly called on devices other than wearables and TVs. If it is called on wearables and TVs, error code 801 is returned.
 
 **Since:** 12
 

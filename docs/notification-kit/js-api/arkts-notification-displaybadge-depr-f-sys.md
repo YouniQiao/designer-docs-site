@@ -6,8 +6,7 @@
 function displayBadge(bundle: BundleOption, enable: boolean, callback: AsyncCallback<void>): void
 ```
 
-Sets whether to enable the notification badge for a specified application.
-This API uses an asynchronous callback to return the result.
+Sets whether to enable the notification badge for a specified application. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 
@@ -36,8 +35,7 @@ This API uses an asynchronous callback to return the result.
 function displayBadge(bundle: BundleOption, enable: boolean): Promise<void>
 ```
 
-Sets whether to enable the notification badge for a specified application.
-This API uses a promise to return the result.
+Sets whether to enable the notification badge for a specified application. This API uses a promise to return the result.
 
 **Since:** 7
 

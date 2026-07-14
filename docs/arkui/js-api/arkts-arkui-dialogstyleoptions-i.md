@@ -40,9 +40,7 @@ The arrangement of buttons.
 buttons?: Array<DialogButton>
 ```
 
-Array of buttons in the dialog box.
-When provided, the dialog displays as an alert-style dialog with buttons.
-When used together with sheets, buttons are displayed below the sheet list.
+Array of buttons in the dialog box. When provided, the dialog displays as an alert-style dialog with buttons. When used together with sheets, buttons are displayed below the sheet list.
 
 **Type:** Array<DialogButton>
 
@@ -60,8 +58,7 @@ When used together with sheets, buttons are displayed below the sheet list.
 gridCount?: number
 ```
 
-Grid count of dialog.
-The value should be an integer.
+Grid count of dialog. The value should be an integer.
 
 **Type:** number
 
@@ -97,8 +94,7 @@ Message content and text style of the dialog box.
 sheets?: Array<DialogSheet>
 ```
 
-Array of sheet items for action-sheet style.
-When provided, the dialog displays sheet items for user selection.
+Array of sheet items for action-sheet style. When provided, the dialog displays sheet items for user selection.
 
 **Type:** Array<DialogSheet>
 

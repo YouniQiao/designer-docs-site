@@ -4,8 +4,7 @@
 type SourceType = 'keyboard' | 'mouse' | 'touchpad' | 'touchscreen' | 'joystick' | 'trackball'
 ```
 
-Input sources supported by the input device, including the keyboard, mouse, touchscreen, trackball, touchpad, and
-joystick.
+Input sources supported by the input device, including the keyboard, mouse, touchscreen, trackball, touchpad, and joystick.
 
 **Since:** 9
 

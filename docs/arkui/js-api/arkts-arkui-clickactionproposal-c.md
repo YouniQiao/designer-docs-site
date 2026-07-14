@@ -1,16 +1,6 @@
 # ClickActionProposal
 
-Smart gesture click action handling. When dynamically customizing smart gesture behavior through the
-[registerMonitor](arkts-arkui-smartgesturecontroller-c.md#registermonitor-1) API, setting the return value
-[GestureHandlingResolution](arkts-arkui-gesturehandlingresolution-c.md)'s **selectedProposal** to an object of this type
-triggers a click operation on the target component.
-
-> **NOTE**
->
-> - This action handling follows the "select first, then click" processing semantics.
->
-> - If the target node is not yet selected, this handling first establishes the selected state without immediately
-> triggering the click.
+Smart gesture click action handling. When dynamically customizing smart gesture behavior through the [registerMonitor](arkts-arkui-smartgesturecontroller-c.md#registermonitor-1) API, setting the return value [GestureHandlingResolution](arkts-arkui-gesturehandlingresolution-c.md)'s **selectedProposal** to an object of this type triggers a click operation on the target component. > **NOTE** > > - This action handling follows the "select first, then click" processing semantics. > > - If the target node is not yet selected, this handling first establishes the selected state without immediately > triggering the click.
 
 **Inheritance/Implementation:** ClickActionProposal extends [TargetedGestureProposal](arkts-arkui-targetedgestureproposal-c.md)
 

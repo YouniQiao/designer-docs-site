@@ -12,9 +12,7 @@ import { conversation } from '@kit.DistributedServiceKit';
 function unregisterConversationListener(bundleName: string, abilityName: string): void
 ```
 
-Unregisters the conversation listener for the specified bundle and ability. After calling this API, the
-application will no longer receive messages. If no listener was previously registered for the given bundle
-and ability, this API returns success without any effect.
+Unregisters the conversation listener for the specified bundle and ability. After calling this API, the application will no longer receive messages. If no listener was previously registered for the given bundle and ability, this API returns success without any effect.
 
 **Since:** 26.1.0
 

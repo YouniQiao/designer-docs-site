@@ -12,11 +12,11 @@
 
 | 名称 | 说明 |
 | --- | --- |
-| [bindDevice](arkts-driverdevelopment-binddevice-f.md#binddevice-1) | 根据queryDevices()返回的设备信息绑定设备。需要调用[deviceManager.queryDevices()](arkts-driverdevelopment-querydevices-f.md#querydevices-1)获取设备信息以及device。 |
-| [bindDevice](arkts-driverdevelopment-binddevice-f.md#binddevice-2) | 根据queryDevices()返回的设备信息绑定设备。需要调用[deviceManager.queryDevices](arkts-driverdevelopment-querydevices-f.md#querydevices-1)获取设备信息以及device。 |
-| [bindDeviceDriver](arkts-driverdevelopment-binddevicedriver-f.md#binddevicedriver-1) | 根据queryDevices()返回的设备信息绑定设备。需要调用[deviceManager.queryDevices()](arkts-driverdevelopment-querydevices-f.md#querydevices-1)获取设备信息以及device。 |
-| [bindDeviceDriver](arkts-driverdevelopment-binddevicedriver-f.md#binddevicedriver-2) | 根据queryDevices()返回的设备信息绑定设备。需要调用[deviceManager.queryDevices](arkts-driverdevelopment-querydevices-f.md#querydevices-1)获取设备信息以及device。 |
-| [bindDriverWithDeviceId](arkts-driverdevelopment-binddriverwithdeviceid-f.md#binddriverwithdeviceid-1) | 根据queryDevices()返回的设备信息绑定设备。使用Promise异步回调。需要调用[deviceManager.queryDevices](arkts-driverdevelopment-querydevices-f.md#querydevices-1)获取设备信息列表。 |
+| [bindDevice](arkts-driverdevelopment-binddevice-f.md#binddevice-1) | 根据queryDevices()返回的设备信息绑定设备。 需要调用[deviceManager.queryDevices()](arkts-driverdevelopment-querydevices-f.md#querydevices-1)获取设备信息以及device。 |
+| [bindDevice](arkts-driverdevelopment-binddevice-f.md#binddevice-2) | 根据queryDevices()返回的设备信息绑定设备。 需要调用[deviceManager.queryDevices](arkts-driverdevelopment-querydevices-f.md#querydevices-1)获取设备信息以及device。 |
+| [bindDeviceDriver](arkts-driverdevelopment-binddevicedriver-f.md#binddevicedriver-1) | 根据queryDevices()返回的设备信息绑定设备。 需要调用[deviceManager.queryDevices()](arkts-driverdevelopment-querydevices-f.md#querydevices-1)获取设备信息以及device。 |
+| [bindDeviceDriver](arkts-driverdevelopment-binddevicedriver-f.md#binddevicedriver-2) | 根据queryDevices()返回的设备信息绑定设备。 需要调用[deviceManager.queryDevices](arkts-driverdevelopment-querydevices-f.md#querydevices-1)获取设备信息以及device。 |
+| [bindDriverWithDeviceId](arkts-driverdevelopment-binddriverwithdeviceid-f.md#binddriverwithdeviceid-1) | 根据queryDevices()返回的设备信息绑定设备。使用Promise异步回调。 需要调用[deviceManager.queryDevices](arkts-driverdevelopment-querydevices-f.md#querydevices-1)获取设备信息列表。 |
 | [queryDevices](arkts-driverdevelopment-querydevices-f.md#querydevices-1) | 获取接入主设备的外部设备列表。如果没有设备接入，那么将会返回一个空的列表。 |
 | [unbindDevice](arkts-driverdevelopment-unbinddevice-f.md#unbinddevice-1) | 解除设备绑定。 |
 | [unbindDevice](arkts-driverdevelopment-unbinddevice-f.md#unbinddevice-2) | 解除设备绑定。 |

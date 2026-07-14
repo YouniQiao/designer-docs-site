@@ -6,9 +6,7 @@
 function enableSelfDeviceAdmin(admin: Want, credential: string): Promise<void>
 ```
 
-在企业设备中，MDM应用没有预置激活的场景下，MDM应用可以通过该接口实现自激活。该接口仅支持激活MDM应用自身，不支持激活其他MDM应用；支持的激活类型包括超级设备管理应用和普通设备管理应用。
-
-<!--RP1--><!--RP1End-->
+在企业设备中，MDM应用没有预置激活的场景下，MDM应用可以通过该接口实现自激活。该接口仅支持激活MDM应用自身，不支持激活其他MDM应用；支持的激活类型包括超级设备管理应用和普通设备管理应用。 <!--RP1--><!--RP1End-->
 
 **起始版本：** 26.0.0
 
@@ -42,29 +40,4 @@ function enableSelfDeviceAdmin(admin: Want, credential: string): Promise<void>
 | [9200018](../errorcode-enterpriseDeviceManager.md#9200018-该设备非企业设备) | This device is not an enterprise device. |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission verification failed.The application does not have the permission required to call the API. |
 | [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported.Failed to call the API due to limited device capabilities. |
-
-**示例：**
-
-```TypeScript
-import { Want } from '@kit.AbilityKit';
-import { adminManager } from '@kit.MDMKit';
-import { BusinessError } from '@kit.BasicServicesKit';
-
-let wantTemp: Want = {
-  // 需根据实际情况进行替换
-  bundleName: 'com.example.myapplication',
-  abilityName: 'EnterpriseAdminAbility'
-};
-
-// 需根据实际情况进行替换
-let credential: string = '{"enterpriseId": "123456", "appIdentifier": "123456", "type": "SDA", "sign": "", "certs": []}';
-
-try {
-  adminManager.enableSelfDeviceAdmin(wantTemp, credential);
-  console.info(`succeed in enable self device admin.`);
-} catch (err) {
-  console.error(`Failed to enable self device admin. Code: ${err.code}, message: ${err.message}`);
-}
-
-```
 

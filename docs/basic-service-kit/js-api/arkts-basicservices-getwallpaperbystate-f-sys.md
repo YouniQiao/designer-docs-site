@@ -12,8 +12,7 @@ import { wallpaper } from '@kit.BasicServicesKit';
 function getWallpaperByState(wallpaperType: WallpaperType, foldState: FoldState, rotateState: RotateState): Promise<image.PixelMap>
 ```
 
-Obtains the default pixel map of a wallpaper of the specified device type. Returns the default pixel map.
-Only the static wallpaper set by using setAllWallpapers can be obtained.
+Obtains the default pixel map of a wallpaper of the specified device type. Returns the default pixel map. Only the static wallpaper set by using setAllWallpapers can be obtained.
 
 **Since:** 14
 

@@ -1,8 +1,6 @@
 # ArcSwiperAttribute
 
-In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following attributes are supported.
-
-In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following events are supported.
+In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following attributes are supported. In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following events are supported.
 
 **Inheritance/Implementation:** ArcSwiperAttribute extends [CommonMethod<ArcSwiperAttribute>](CommonMethod<ArcSwiperAttribute>)
 
@@ -22,14 +20,7 @@ import { ArcSwiperAttribute, ArcSwiper, ArcDirection, ArcSwiperController, ArcDo
 customContentTransition(transition: Optional<SwiperContentAnimatedTransition>): ArcSwiperAttribute
 ```
 
-Defines a custom page transition animation. During finger-following swipes and post-release transition animations,
-this triggers a frame-by-frame callback for all pages in the viewport, allowing you to customize animations by
-modifying properties like opacity, scale, and translation.
-
-During finger-following swipes and post-release transition animations, the
-[SwiperContentTransitionProxy](arkts-arkui-swipercontenttransitionproxy-i.md) callback is invoked for all pages in the
-viewport on a frame-by-frame basis. For example, when there are two pages whose subscripts are 0 and 1 in the
-viewport, two callbacks whose indexes are 0 and 1 are invoked in each frame.
+Defines a custom page transition animation. During finger-following swipes and post-release transition animations, this triggers a frame-by-frame callback for all pages in the viewport, allowing you to customize animations by modifying properties like opacity, scale, and translation. During finger-following swipes and post-release transition animations, the [SwiperContentTransitionProxy](arkts-arkui-swipercontenttransitionproxy-i.md) callback is invoked for all pages in the viewport on a frame-by-frame basis. For example, when there are two pages whose subscripts are 0 and 1 in the viewport, two callbacks whose indexes are 0 and 1 are invoked in each frame.
 
 **Since:** 18
 
@@ -159,8 +150,7 @@ Sets the duration of the animation for child component switching.
 effectMode(edgeEffect: Optional<EdgeEffect>): ArcSwiperAttribute
 ```
 
-Sets the effect used when the scroll boundary is reached. For details about the supported effects, see
-[EdgeEffect](../arkts-components/arkts-arkui-edgeeffect-e.md). The setting does not take effect when configured using the controller API.
+Sets the effect used when the scroll boundary is reached. For details about the supported effects, see [EdgeEffect](../arkts-components/arkts-arkui-edgeeffect-e.md). The setting does not take effect when configured using the controller API.
 
 **Since:** 18
 
@@ -186,8 +176,7 @@ Sets the effect used when the scroll boundary is reached. For details about the 
 index(index: Optional<number>): ArcSwiperAttribute
 ```
 
-Sets the index of the child component currently displayed in the container. If the value is less than 0 or greater
-than or equal to the number of child components, the default value **0** is used.
+Sets the index of the child component currently displayed in the container. If the value is less than 0 or greater than or equal to the number of child components, the default value **0** is used.
 
 **Since:** 18
 
@@ -239,12 +228,7 @@ Sets the style of the arc dot navigation indicator.
 onAnimationEnd(handler: Optional<AnimationEndHandler>): ArcSwiperAttribute
 ```
 
-Triggered when the page transition animation ends.
-
-This event is triggered when the page transition animation of the **ArcSwiper** component ends, whether it is
-caused by gesture interruption or by calling **finishAnimation** through
-[SwiperController](../arkts-components/arkts-arkui-swipercontroller-c.md). The **index** parameter indicates the index after the animation ends.
-When the **ArcSwiper** component contains multiple columns, the index is of the leftmost element.
+Triggered when the page transition animation ends. This event is triggered when the page transition animation of the **ArcSwiper** component ends, whether it is caused by gesture interruption or by calling **finishAnimation** through [SwiperController](../arkts-components/arkts-arkui-swipercontroller-c.md). The **index** parameter indicates the index after the animation ends. When the **ArcSwiper** component contains multiple columns, the index is of the leftmost element.
 
 **Since:** 18
 
@@ -296,12 +280,7 @@ Triggered when the page transition animation starts.
 onChange(handler: Optional<IndexChangedHandler>): ArcSwiperAttribute
 ```
 
-Triggered when the index of the currently displayed child component changes. The return value is the index of the
-currently displayed child component.
-
-When the **ArcSwiper** component is used together with
-[LazyForEach](../../../../ui/rendering-control/arkts-rendering-control-lazyforeach.md), the subpage UI update cannot
-be triggered in the **onChange** event.
+Triggered when the index of the currently displayed child component changes. The return value is the index of the currently displayed child component. When the **ArcSwiper** component is used together with [LazyForEach](../../../../ui/rendering-control/arkts-rendering-control-lazyforeach.md), the subpage UI update cannot be triggered in the **onChange** event.
 
 **Since:** 18
 

@@ -1,18 +1,6 @@
 # Tabs
 
-The **Tabs** component is a container component that allows users to switch between content views through tabs. Each
-tab page corresponds to a content view.
-
-> **NOTE**
->
-> -
->
-> - Since API version 11, this component supports the safe area avoidance feature. The default value of the
-> [expandSafeArea]{@link CommonMethod#expandSafeArea} attribute is
-> **expandSafeArea([SafeAreaType.SYSTEM], [SafeAreaEdge.BOTTOM])**. You can override the default behavior by
-> rewriting this attribute. For versions earlier than API version 11, you need to manually implement safe area
-> avoidance together with the **expandSafeArea** attribute.
-
+The **Tabs** component is a container component that allows users to switch between content views through tabs. Each tab page corresponds to a content view. > **NOTE** > > - > > - Since API version 11, this component supports the safe area avoidance feature. The default value of the > [expandSafeArea]{@link CommonMethod#expandSafeArea} attribute is > **expandSafeArea([SafeAreaType.SYSTEM], [SafeAreaEdge.BOTTOM])**. You can override the default behavior by > rewriting this attribute. For versions earlier than API version 11, you need to manually implement safe area > avoidance together with the **expandSafeArea** attribute.
 
 ## Tabs
 

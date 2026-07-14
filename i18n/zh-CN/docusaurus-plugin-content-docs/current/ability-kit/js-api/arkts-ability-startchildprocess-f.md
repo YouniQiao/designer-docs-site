@@ -6,15 +6,7 @@
 function startChildProcess(srcEntry: string, startMode: StartMode): Promise<number>
 ```
 
-启动[ArkTS子进程](../../../../application-models/ability-terminology.md#arkts子进程)。使用Promise异步回调。
-该接口在Tablet、PC/2in1中可正常调用，在其他设备类型中返回16000061错误码。
-
-> **说明：**
->
-> 调用该接口创建子进程成功会返回子进程pid，然后执行子进程的[ChildProcess.onStart](arkts-ability-childprocess-c.md#onstart-1)函数
-> ，[ChildProcess.onStart](arkts-ability-childprocess-c.md#onstart-1)函数执行完后子进程会自动销毁。
->
-> 调用该接口创建的子进程不支持异步ArkTS API调用，仅支持同步ArkTS API调用。
+启动[ArkTS子进程](../../../../application-models/ability-terminology.md#arkts子进程)。使用Promise异步回调。 该接口在Tablet、PC/2in1中可正常调用，在其他设备类型中返回16000061错误码。 > **说明：** > > 调用该接口创建子进程成功会返回子进程pid，然后执行子进程的[ChildProcess.onStart](arkts-ability-childprocess-c.md#onstart-1)函数 > ，[ChildProcess.onStart](arkts-ability-childprocess-c.md#onstart-1)函数执行完后子进程会自动销毁。 > > 调用该接口创建的子进程不支持异步ArkTS API调用，仅支持同步ArkTS API调用。
 
 **起始版本：** 11
 
@@ -74,7 +66,7 @@ try {
     }, (err: BusinessError) => {
       console.error(`startChildProcess error, errorCode: ${err.code}`);
     })
-} catch (err) {
+} catch (err: BusinessError) {
   console.error(`startChildProcess error, errorCode: ${(err as BusinessError).code}, errorMsg: ${(err as BusinessError).message}.`);
 }
 
@@ -87,15 +79,7 @@ try {
 function startChildProcess(srcEntry: string, startMode: StartMode, callback: AsyncCallback<number>): void
 ```
 
-启动[ArkTS子进程](../../../../application-models/ability-terminology.md#arkts子进程)。使用callback异步回调。
-该接口在Tablet、PC/2in1中可正常调用，在其他设备类型中返回16000061错误码。
-
-> **说明：**
->
-> 调用该接口创建子进程成功会返回子进程pid，然后执行子进程的[ChildProcess.onStart](arkts-ability-childprocess-c.md#onstart-1)函数
-> ，[ChildProcess.onStart](arkts-ability-childprocess-c.md#onstart-1)函数执行完后子进程会自动销毁。
->
-> 调用该接口创建的子进程不支持异步ArkTS API调用，仅支持同步ArkTS API调用。
+启动[ArkTS子进程](../../../../application-models/ability-terminology.md#arkts子进程)。使用callback异步回调。 该接口在Tablet、PC/2in1中可正常调用，在其他设备类型中返回16000061错误码。 > **说明：** > > 调用该接口创建子进程成功会返回子进程pid，然后执行子进程的[ChildProcess.onStart](arkts-ability-childprocess-c.md#onstart-1)函数 > ，[ChildProcess.onStart](arkts-ability-childprocess-c.md#onstart-1)函数执行完后子进程会自动销毁。 > > 调用该接口创建的子进程不支持异步ArkTS API调用，仅支持同步ArkTS API调用。
 
 **起始版本：** 11
 
@@ -151,7 +135,7 @@ try {
       console.error(`startChildProcess error, errorCode: ${err.code}`);
     }
   });
-} catch (err) {
+} catch (err: BusinessError) {
   console.error(`startChildProcess error, errorCode: ${(err as BusinessError).code}, errorMsg: ${(err as BusinessError).message}.`);
 }
 

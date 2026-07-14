@@ -124,8 +124,7 @@ Sets the nested scroll options.
 onControllerAttached?: Callback<void>
 ```
 
-Triggered when The controller is bound to the web component, this controller must be a WebviewController.
-This callback can not use the interface about manipulating web pages.
+Triggered when The controller is bound to the web component, this controller must be a WebviewController. This callback can not use the interface about manipulating web pages.
 
 **Type:** Callback<void>
 

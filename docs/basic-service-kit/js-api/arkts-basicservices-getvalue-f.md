@@ -184,8 +184,7 @@ settings.getValue(context, settings.display.SCREEN_BRIGHTNESS_STATUS).then((valu
 function getValue(context: Context, name: string, domainName: string): Promise<string>
 ```
 
-Get value from settingsdata
-[USER_SECURE] domain need ohos.permission.MANAGE_SECURE_SETTINGS permission.
+Get value from settingsdata [USER_SECURE] domain need ohos.permission.MANAGE_SECURE_SETTINGS permission.
 
 **Since:** 11
 

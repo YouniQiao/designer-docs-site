@@ -383,8 +383,7 @@ avSession.on('deviceLogEvent', (eventCode: avSession.DeviceLogEventCode) => {
 function on(type: 'deviceStateChanged', callback: Callback<DeviceState>): void
 ```
 
-Registers a system callback for the device connection phase.
-The callback includes information such as error codes, connection status, radar errors, and user behavior codes.
+Registers a system callback for the device connection phase. The callback includes information such as error codes, connection status, radar errors, and user behavior codes.
 
 **Since:** 20
 

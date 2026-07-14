@@ -1,13 +1,6 @@
 # BundleResourceInfo (System API)
 
-The module provides resource information of an application, such as the icon and label. The information can be
-obtained by calling
-[getBundleResourceInfo](./../@ohos.bundle.bundleResourceManager:bundleResourceManager.bundleResourceManager.getBundleResourceInfo(bundleName: string, resourceFlags?: int))
-.
-
-> **NOTE**
->
-> The APIs provided by this module are system APIs.
+The module provides resource information of an application, such as the icon and label. The information can be obtained by calling [getBundleResourceInfo](./../@ohos.bundle.bundleResourceManager:bundleResourceManager.bundleResourceManager.getBundleResourceInfo(bundleName: string, resourceFlags?: int)) . > **NOTE** > > The APIs provided by this module are system APIs.
 
 **Since:** 11
 

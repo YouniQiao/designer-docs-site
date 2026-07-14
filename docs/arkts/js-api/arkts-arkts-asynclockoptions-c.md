@@ -64,8 +64,7 @@ The object used to abort the async operation. If signal.aborted is true, the cal
 timeout: number
 ```
 
-Lock operation timeout in milliseconds. If it is greater than zero, lockAsync will reject the resulting promise
-when the timeout is exceeded.
+Lock operation timeout in milliseconds. If it is greater than zero, lockAsync will reject the resulting promise when the timeout is exceeded.
 
 **Type:** number
 

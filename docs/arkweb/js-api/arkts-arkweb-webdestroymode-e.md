@@ -1,7 +1,6 @@
 # WebDestroyMode
 
-Enumerates the destroy modes of the **Web** component. When the Web component is destroyed, the destroy mode
-affects the resource release time of the Web kernel, such as the JavaScript running context and rendering context.
+Enumerates the destroy modes of the **Web** component. When the Web component is destroyed, the destroy mode affects the resource release time of the Web kernel, such as the JavaScript running context and rendering context.
 
 **Since:** 20
 
@@ -25,8 +24,7 @@ Normal mode. The system determines the destroy time of **Web** component resourc
 FAST_MODE = 1
 ```
 
-Quick mode. When the **Web** component is destroyed, the related internal resources are
-destroyed immediately.
+Quick mode. When the **Web** component is destroyed, the related internal resources are destroyed immediately.
 
 **Since:** 20
 

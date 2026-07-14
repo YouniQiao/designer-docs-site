@@ -4,8 +4,7 @@
 declare type CanvasFillRule = "evenodd" | "nonzero"
 ```
 
-Defines the fill pattern algorithm used to determine whether a point is inside or outside a path. The value type is a
-union of the types listed in the table below.
+Defines the fill pattern algorithm used to determine whether a point is inside or outside a path. The value type is a union of the types listed in the table below.
 
 **Since:** 8
 

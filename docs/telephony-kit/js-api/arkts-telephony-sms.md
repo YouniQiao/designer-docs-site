@@ -18,16 +18,16 @@ import { sms } from '@kit.TelephonyKit';
 
 | Name | Description |
 | --- | --- |
-| [createMessage](arkts-telephony-createmessage-f.md#createmessage-1) | Creates an SMS message instance based on the protocol data unit (PDU) and the specified SMS protocol.&lt;p&gt;After receiving the original PDU data, the system creates an SMS message instance according to the specifiedSMS protocol. |
-| [createMessage](arkts-telephony-createmessage-f.md#createmessage-2) | Creates an SMS message instance based on the protocol data unit (PDU) and the specified SMS protocol.&lt;p&gt;After receiving the original PDU data, the system creates an SMS message instance according to the specifiedSMS protocol. |
+| [createMessage](arkts-telephony-createmessage-f.md#createmessage-1) | Creates an SMS message instance based on the protocol data unit (PDU) and the specified SMS protocol. &lt;p&gt;After receiving the original PDU data, the system creates an SMS message instance according to the specified SMS protocol. |
+| [createMessage](arkts-telephony-createmessage-f.md#createmessage-2) | Creates an SMS message instance based on the protocol data unit (PDU) and the specified SMS protocol. &lt;p&gt;After receiving the original PDU data, the system creates an SMS message instance according to the specified SMS protocol. |
 | [getDefaultSmsSimId](arkts-telephony-getdefaultsmssimid-f.md#getdefaultsmssimid-1) | Obtains the default SIM ID for sending SMS messages. |
 | [getDefaultSmsSimId](arkts-telephony-getdefaultsmssimid-f.md#getdefaultsmssimid-2) | Obtains the default SIM ID for sending SMS messages. |
 | [getDefaultSmsSlotId](arkts-telephony-getdefaultsmsslotid-f.md#getdefaultsmsslotid-1) | Obtains the default SIM card for sending SMS messages. |
 | [getDefaultSmsSlotId](arkts-telephony-getdefaultsmsslotid-f.md#getdefaultsmsslotid-2) | Obtains the default SIM card for sending SMS messages. |
 | [hasSmsCapability](arkts-telephony-hassmscapability-f.md#hassmscapability-1) | Returns whether a device is capable of sending and receiving SMS messages. |
-| [sendMessage](arkts-telephony-sendmessage-f.md#sendmessage-1) | Sends a text or data SMS message.&lt;p&gt;This method checks whether the length of an SMS message exceeds the maximum length. If themaximum length is exceeded, the SMS message is split into multiple parts and sent separately. |
-| [sendShortMessage](arkts-telephony-sendshortmessage-f.md#sendshortmessage-1) | Sends a text or data SMS message.&lt;p&gt;This method checks whether the length of an SMS message exceeds the maximum length. If themaximum length is exceeded, the SMS message is split into multiple parts and sent separately. |
-| [sendShortMessage](arkts-telephony-sendshortmessage-f.md#sendshortmessage-2) | Sends a text or data SMS message.&lt;p&gt;This method checks whether the length of an SMS message exceeds the maximum length. If themaximum length is exceeded, the SMS message is split into multiple parts and sent separately. |
+| [sendMessage](arkts-telephony-sendmessage-f.md#sendmessage-1) | Sends a text or data SMS message. &lt;p&gt;This method checks whether the length of an SMS message exceeds the maximum length. If the maximum length is exceeded, the SMS message is split into multiple parts and sent separately. |
+| [sendShortMessage](arkts-telephony-sendshortmessage-f.md#sendshortmessage-1) | Sends a text or data SMS message. &lt;p&gt;This method checks whether the length of an SMS message exceeds the maximum length. If the maximum length is exceeded, the SMS message is split into multiple parts and sent separately. |
+| [sendShortMessage](arkts-telephony-sendshortmessage-f.md#sendshortmessage-2) | Sends a text or data SMS message. &lt;p&gt;This method checks whether the length of an SMS message exceeds the maximum length. If the maximum length is exceeded, the SMS message is split into multiple parts and sent separately. |
 
 <!--Del-->
 ### Functions（系统接口）
@@ -60,12 +60,12 @@ import { sms } from '@kit.TelephonyKit';
 | [setCBConfig](arkts-telephony-setcbconfig-f-sys.md#setcbconfig-1) | Turn on or off Cell BroadCast. |
 | [setCBConfig](arkts-telephony-setcbconfig-f-sys.md#setcbconfig-2) | Turn on or off Cell BroadCast. |
 | [setCBConfigList](arkts-telephony-setcbconfiglist-f-sys.md#setcbconfiglist-1) | Turn on Cell BroadCast by list. |
-| [setDefaultSmsSlotId](arkts-telephony-setdefaultsmsslotid-f-sys.md#setdefaultsmsslotid-1) | Sets the default SIM card for sending SMS messages. You can obtain the default SIM card byusing {@code getDefaultSmsSlotId}. |
-| [setDefaultSmsSlotId](arkts-telephony-setdefaultsmsslotid-f-sys.md#setdefaultsmsslotid-2) | Sets the default SIM card for sending SMS messages. You can obtain the default SIM card byusing {@code getDefaultSmsSlotId}. |
+| [setDefaultSmsSlotId](arkts-telephony-setdefaultsmsslotid-f-sys.md#setdefaultsmsslotid-1) | Sets the default SIM card for sending SMS messages. You can obtain the default SIM card by using {@code getDefaultSmsSlotId}. |
+| [setDefaultSmsSlotId](arkts-telephony-setdefaultsmsslotid-f-sys.md#setdefaultsmsslotid-2) | Sets the default SIM card for sending SMS messages. You can obtain the default SIM card by using {@code getDefaultSmsSlotId}. |
 | [setSmscAddr](arkts-telephony-setsmscaddr-f-sys.md#setsmscaddr-1) | Sets the address for the Short Message Service Center (SMSC) based on a specified slot ID. |
 | [setSmscAddr](arkts-telephony-setsmscaddr-f-sys.md#setsmscaddr-2) | Sets the address for the Short Message Service Center (SMSC) based on a specified slot ID. |
-| [splitMessage](arkts-telephony-splitmessage-f-sys.md#splitmessage-1) | Splits a long SMS message into multiple fragments.&lt;p&gt;If the length of an SMS message exceeds the maximum length allowed (140 bytes),the SMS message is split into multiple segments for processing. |
-| [splitMessage](arkts-telephony-splitmessage-f-sys.md#splitmessage-2) | Splits a long SMS message into multiple fragments.&lt;p&gt;If the length of an SMS message exceeds the maximum length allowed (140 bytes),the SMS message is split into multiple segments for processing. |
+| [splitMessage](arkts-telephony-splitmessage-f-sys.md#splitmessage-1) | Splits a long SMS message into multiple fragments. &lt;p&gt;If the length of an SMS message exceeds the maximum length allowed (140 bytes), the SMS message is split into multiple segments for processing. |
+| [splitMessage](arkts-telephony-splitmessage-f-sys.md#splitmessage-2) | Splits a long SMS message into multiple fragments. &lt;p&gt;If the length of an SMS message exceeds the maximum length allowed (140 bytes), the SMS message is split into multiple segments for processing. |
 | [updateSimMessage](arkts-telephony-updatesimmessage-f-sys.md#updatesimmessage-1) | Update a SIM SMS of SIM card. |
 | [updateSimMessage](arkts-telephony-updatesimmessage-f-sys.md#updatesimmessage-2) | Update a SIM SMS of SIM card. |
 <!--DelEnd-->

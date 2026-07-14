@@ -6,11 +6,7 @@
 function resetUsbDevice(pipe: USBDevicePipe): boolean
 ```
 
-重置USB外设。
-
-> **说明：**
->
-> 本接口调用后会重置此前设置的配置和替换接口，请在调用之前确认相关业务已结束。
+重置USB外设。 > **说明：** > > 本接口调用后会重置此前设置的配置和替换接口，请在调用之前确认相关业务已结束。
 
 **起始版本：** 20
 
@@ -42,20 +38,20 @@ function resetUsbDevice(pipe: USBDevicePipe): boolean
 **示例：**
 
 ```TypeScript
-function resetUsbDevice() {
+async function resetUsbDevice() {
   let devicesList: Array<usbManager.USBDevice> = usbManager.getDevices();
   if (!devicesList || devicesList.length == 0) {
     console.error(`device list is empty`);
     return;
   }
 
-  usbManager.requestRight(devicesList?.[0]?.name);
+  await usbManager.requestRight(devicesList?.[0]?.name);
   let devicepipe: usbManager.USBDevicePipe = usbManager.connectDevice(devicesList?.[0]);
   try {
     let ret: boolean = usbManager.resetUsbDevice(devicepipe);
     console.info(`resetUsbDevice  = ${ret}`);
-  } catch (err) {
-    console.error(`resetUsbDevice failed: ` + err);
+  } catch (err: BusinessError) {
+    console.error(`Failed to reset USB device. Code: ${err.code}, message: ${err.message}`);
   }
   usbManager.closePipe(devicepipe);
 }

@@ -12,8 +12,7 @@ import { networkManager } from '@kit.MDMKit';
 function getIpAddress(admin: Want, networkInterface: string, callback: AsyncCallback<string>): void
 ```
 
-Obtains the device IP address based on the network interface. This API uses an asynchronous callback to return the
-result.
+Obtains the device IP address based on the network interface. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 

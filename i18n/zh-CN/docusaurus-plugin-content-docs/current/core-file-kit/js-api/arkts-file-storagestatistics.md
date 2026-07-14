@@ -45,7 +45,7 @@
 | [getUserStorageStats](arkts-corefile-getuserstoragestats-f-sys.md#getuserstoragestats-3) | 异步获取指定用户各类别存储空间大小（单位为Byte），以Promise方式返回。 |
 | [getUserStorageStats](arkts-corefile-getuserstoragestats-f-sys.md#getuserstoragestats-4) | 异步获取指定用户各类别存储空间大小（单位为Byte），以callback方式返回。 |
 | [listUserdataDirInfo](arkts-corefile-listuserdatadirinfo-f-sys.md#listuserdatadirinfo-1) | 查询用户设备中/data目录下的空间占用详情，使用Promise异步回调。 |
-| [setExtBundleStats](arkts-corefile-setextbundlestats-f-sys.md#setextbundlestats-1) | 系统应用或系统服务上报自身的空间占用信息。使用Promise异步回调。&gt; **说明**：&gt;&gt; 入参stats中的flag为false时，businessName必须为某个应用的包名。 |
+| [setExtBundleStats](arkts-corefile-setextbundlestats-f-sys.md#setextbundlestats-1) | 系统应用或系统服务上报自身的空间占用信息。使用Promise异步回调。 &gt; **说明**： &gt; &gt; 入参stats中的flag为false时，businessName必须为某个应用的包名。 |
 <!--DelEnd-->
 
 ### 接口

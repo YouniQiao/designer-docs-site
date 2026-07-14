@@ -18,10 +18,7 @@ import { TreeListenerManagerV2, NodeParamV2, CallbackParamV2, TreeControllerV2, 
 addNode(nodeParam?: NodeParamV2): TreeControllerV2
 ```
 
-Initialize the interface of the tree view. This interface is used to generate ListNodeDataSource data.
-addNode is only designed for initialization. It can only be invoked during initialization.
-A maximum of 50 directory levels can be added.
-For details, see the comment description of NodeParam.
+Initialize the interface of the tree view. This interface is used to generate ListNodeDataSource data. addNode is only designed for initialization. It can only be invoked during initialization. A maximum of 50 directory levels can be added. For details, see the comment description of NodeParam.
 
 **Since:** 26.0.0
 
@@ -49,9 +46,7 @@ For details, see the comment description of NodeParam.
 buildDone(): void
 ```
 
-After the initialization is complete by calling the addNode interface,
-call this interface to complete initialization.
-This interface must be called when you finish initializing the ListTreeViewV2 by addNode.
+After the initialization is complete by calling the addNode interface, call this interface to complete initialization. This interface must be called when you finish initializing the ListTreeViewV2 by addNode.
 
 **Since:** 26.0.0
 
@@ -67,8 +62,7 @@ This interface must be called when you finish initializing the ListTreeViewV2 by
 modifyNode(): void
 ```
 
-Modify the node name.
-Register an ON_ITEM_MODIFY callback to obtain the ID, parent node ID, and node name of the modified node.
+Modify the node name. Register an ON_ITEM_MODIFY callback to obtain the ID, parent node ID, and node name of the modified node.
 
 **Since:** 26.0.0
 
@@ -108,9 +102,7 @@ This interface is called when a secondaryTitle needs to be updated
 removeNode(): void
 ```
 
-Delete a node.
-Register an ON_ITEM_DELETE callback through the ListTreeListenerV2 mechanism
-to obtain the IDs of all deleted nodes.
+Delete a node. Register an ON_ITEM_DELETE callback through the ListTreeListenerV2 mechanism to obtain the IDs of all deleted nodes.
 
 **Since:** 26.0.0
 

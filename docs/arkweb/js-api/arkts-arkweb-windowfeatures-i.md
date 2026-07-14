@@ -1,7 +1,6 @@
 # WindowFeatures
 
-Represents the feature information of the new window requested to be created by the web page, including the size and
-location.
+Represents the feature information of the new window requested to be created by the web page, including the size and location.
 
 **Since:** 23
 

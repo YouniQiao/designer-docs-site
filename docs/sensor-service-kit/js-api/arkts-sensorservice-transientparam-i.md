@@ -18,8 +18,7 @@ import { vibrator } from '@kit.SensorServiceKit';
 frequency?: number
 ```
 
-Vibration frequency. This parameter is optional. The value range is [0,100]. If this parameter is left empty, the
-default value is **50**.
+Vibration frequency. This parameter is optional. The value range is [0,100]. If this parameter is left empty, the default value is **50**.
 
 **Type:** number
 
@@ -33,8 +32,7 @@ default value is **50**.
 index?: number
 ```
 
-Channel number. This parameter is optional. The value range is [0,2]. If this parameter is left empty, the
-default value is **0**.
+Channel number. This parameter is optional. The value range is [0,2]. If this parameter is left empty, the default value is **0**.
 
 **Type:** number
 
@@ -48,8 +46,7 @@ default value is **0**.
 intensity?: number
 ```
 
-Vibration intensity. This parameter is optional. The value range is [0,100]. If this parameter is left empty, the
-default value is **100**.
+Vibration intensity. This parameter is optional. The value range is [0,100]. If this parameter is left empty, the default value is **100**.
 
 **Type:** number
 

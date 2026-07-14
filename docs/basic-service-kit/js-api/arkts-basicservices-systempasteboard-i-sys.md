@@ -1,8 +1,6 @@
 # SystemPasteboard
 
-Provides **SystemPasteboard** APIs.
-Before calling any **SystemPasteboard** API, you must obtain a **SystemPasteboard** object using
-[getSystemPasteboard](arkts-basicservices-getsystempasteboard-f.md#getsystempasteboard-1).
+Provides **SystemPasteboard** APIs. Before calling any **SystemPasteboard** API, you must obtain a **SystemPasteboard** object using [getSystemPasteboard](arkts-basicservices-getsystempasteboard-f.md#getsystempasteboard-1).
 
 **Since:** 6
 

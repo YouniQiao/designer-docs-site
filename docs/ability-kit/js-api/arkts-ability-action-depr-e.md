@@ -350,8 +350,7 @@ Action of selecting a file.
 PARAMS_STREAM = 'ability.params.stream'
 ```
 
-URI of the data stream associated with the target when the data is sent. The value must be an array of the string
-type.
+URI of the data stream associated with the target when the data is sent. The value must be an array of the string type.
 
 **Since:** 7
 

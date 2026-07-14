@@ -1,7 +1,6 @@
 # Aspect
 
-Provides APIs that support Aspect Oriented Programming (AOP). These APIs can be used to perform instrumentation or
-replacement on class methods.
+Provides APIs that support Aspect Oriented Programming (AOP). These APIs can be used to perform instrumentation or replacement on class methods.
 
 **Since:** 11
 
@@ -19,8 +18,7 @@ import { util } from '@kit.ArkTS';
 static addAfter(targetClass: Object, methodName: string, isStatic: boolean, after: Function): void
 ```
 
-Inserts a function after a method of a class object. The final return value is the return value of the function
-inserted.
+Inserts a function after a method of a class object. The final return value is the return value of the function inserted.
 
 **Since:** 11
 
@@ -100,8 +98,7 @@ util.Aspect.addAfter(AroundTest, 'foo', false, () => {
 static addBefore(targetClass: Object, methodName: string, isStatic: boolean, before: Function): void
 ```
 
-Inserts a function before a method of a class object. The inserted function is executed in prior to the original
-method of the class object.
+Inserts a function before a method of a class object. The inserted function is executed in prior to the original method of the class object.
 
 **Since:** 11
 
@@ -190,8 +187,7 @@ console.info('MyClass.data is ' + MyClass.data);
 static replace(targetClass: Object, methodName: string, isStatic: boolean, instead: Function) : void
 ```
 
-Replaces a method of a class object with another function. After the replacement, only the new function logic is
-executed. The final return value is the return value of the new function.
+Replaces a method of a class object with another function. After the replacement, only the new function logic is executed. The final return value is the return value of the new function.
 
 **Since:** 11
 

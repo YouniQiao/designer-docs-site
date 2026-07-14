@@ -58,8 +58,7 @@ Sets the emitter parameters.
 rippleFields(fields: Array<RippleFieldOptions> | undefined)
 ```
 
-Sets the particle wave field. The wave field applies a force that changes according to the waveform to particles
-within the affected range, producing an effect similar to the spreading of ripples.
+Sets the particle wave field. The wave field applies a force that changes according to the waveform to particles within the affected range, producing an effect similar to the spreading of ripples.
 
 **Since:** 22
 
@@ -81,8 +80,7 @@ within the affected range, producing an effect similar to the spreading of rippl
 velocityFields(fields: Array<VelocityFieldOptions> | undefined)
 ```
 
-Sets the particle velocity field. The velocity field applies a force to particles within the affected range, so
-that the particles move at the velocity specified by the velocity field in addition to their original velocity.
+Sets the particle velocity field. The velocity field applies a force to particles within the affected range, so that the particles move at the velocity specified by the velocity field in addition to their original velocity.
 
 **Since:** 22
 

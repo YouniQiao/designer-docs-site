@@ -1,7 +1,6 @@
 # AudioViewPicker
 
-Provides APIs for selecting and saving audio clips. Before using the APIs of **AudioViewPicker**, you need to
-create an **AudioViewPicker** instance.
+Provides APIs for selecting and saving audio clips. Before using the APIs of **AudioViewPicker**, you need to create an **AudioViewPicker** instance.
 
 **Since:** 9
 
@@ -19,8 +18,7 @@ import { picker } from '@kit.CoreFileKit';
 constructor()
 ```
 
-A constructor used to create an **AudioViewPicker** instance. This constructor is not recommended due to the
-potential risk of operation failure.
+A constructor used to create an **AudioViewPicker** instance. This constructor is not recommended due to the potential risk of operation failure.
 
 **Since:** 12
 
@@ -41,9 +39,7 @@ let audioPicker = new picker.AudioViewPicker(); // Construction without paramete
 constructor(context: Context)
 ```
 
-A constructor used to create an **AudioViewPicker** instance. This constructor is recommended. For details about
-how to obtain the context, see
-[getHostContext](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#gethostcontext12).
+A constructor used to create an **AudioViewPicker** instance. This constructor is recommended. For details about how to obtain the context, see [getHostContext](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#gethostcontext12).
 
 **Since:** 12
 
@@ -92,8 +88,7 @@ struct Index {
 save(option?: AudioSaveOptions): Promise<Array<string>>
 ```
 
-Starts an **audioPicker** page (currently, a **documentPicker** page is displayed) for the user to save one or
-more audio clips. This API uses a promise to return the result.
+Starts an **audioPicker** page (currently, a **documentPicker** page is displayed) for the user to save one or more audio clips. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -143,8 +138,7 @@ async function example16(context: common.UIAbilityContext) { // Ensure that cont
 save(option: AudioSaveOptions, callback: AsyncCallback<Array<string>>): void
 ```
 
-Starts an **audioPicker** page (currently, a **documentPicker** page is displayed) for the user to save one or
-more audio clips. This API uses an asynchronous callback to return the result.
+Starts an **audioPicker** page (currently, a **documentPicker** page is displayed) for the user to save one or more audio clips. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -189,8 +183,7 @@ async function example17(context: common.UIAbilityContext) { // Ensure that cont
 save(callback: AsyncCallback<Array<string>>): void
 ```
 
-Starts an **audioPicker** page (currently, a **documentPicker** page is displayed) for the user to save one or
-more audio clips. This API uses an asynchronous callback to return the result.
+Starts an **audioPicker** page (currently, a **documentPicker** page is displayed) for the user to save one or more audio clips. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -232,8 +225,7 @@ async function example18(context: common.UIAbilityContext) { // Ensure that cont
 select(option?: AudioSelectOptions): Promise<Array<string>>
 ```
 
-Starts an **audioPicker** page for the user to select one or more audio clips. This API uses a promise to return
-the result.
+Starts an **audioPicker** page for the user to select one or more audio clips. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -282,8 +274,7 @@ async function example13(context: common.UIAbilityContext) { // Ensure that cont
 select(option: AudioSelectOptions, callback: AsyncCallback<Array<string>>): void
 ```
 
-Starts an **audioPicker** page for the user to select one or more audio clips. This API uses an asynchronous
-callback to return the result.
+Starts an **audioPicker** page for the user to select one or more audio clips. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -327,9 +318,7 @@ async function example14(context: common.UIAbilityContext) { // Ensure that cont
 select(callback: AsyncCallback<Array<string>>): void
 ```
 
-Starts an **audioPicker** page for the user to select one or more audio clips. This API uses an asynchronous
-callback to return the result.
-**System capability**: SystemCapability.FileManagement.UserFileService
+Starts an **audioPicker** page for the user to select one or more audio clips. This API uses an asynchronous callback to return the result. **System capability**: SystemCapability.FileManagement.UserFileService
 
 **Since:** 9
 

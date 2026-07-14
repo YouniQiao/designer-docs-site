@@ -12,9 +12,7 @@ import { abilityManager } from '@kit.AbilityKit';
 function offPreloadedUIExtensionAbilityDestroyed(callback?: PreloadedUIExtensionAbilityDestroyedFn): void
 ```
 
-Unsubscribes from loaded events of a preloaded
-[UIExtensionAbility](arkts-ability-uiextensionability-c.md) instance in the current
-process.
+Unsubscribes from loaded events of a preloaded [UIExtensionAbility](arkts-ability-uiextensionability-c.md) instance in the current process.
 
 **Since:** 23
 

@@ -12,9 +12,7 @@
 colorMode?: ColorModeOptions
 ```
 
-指定截图使用的色彩空间。
-
-默认值：{colorSpace: SRGB, isAuto: false}
+指定截图使用的色彩空间。 默认值：{colorSpace: SRGB, isAuto: false}
 
 **类型：** ColorModeOptions
 
@@ -32,9 +30,7 @@ colorMode?: ColorModeOptions
 dynamicRangeMode?: DynamicRangeModeOptions
 ```
 
-指定截图使用的动态范围模式。
-
-默认值：{dynamicRangeMode: STANDARD, isAuto: false}
+指定截图使用的动态范围模式。 默认值：{dynamicRangeMode: STANDARD, isAuto: false}
 
 **类型：** DynamicRangeModeOptions
 
@@ -70,15 +66,7 @@ region?: SnapshotRegionType
 scale?: number
 ```
 
-指定截图时图形侧绘制pixelmap的缩放比例，比例过大时截图时间会变长，或者截图可能会失败。
-
-取值范围：[0, +∞)，当小于等于0时按默认情况处理。
-
-默认值：1
-
-**说明：**
-
-请不要截取过大尺寸的图片，截图不建议超过屏幕尺寸的大小。当要截取的图片目标长宽超过底层限制时，截图会返回失败，不同设备的底层限制不同。
+指定截图时图形侧绘制pixelmap的缩放比例，比例过大时截图时间会变长，或者截图可能会失败。 取值范围：[0, +∞)，当小于等于0时按默认情况处理。 默认值：1 **说明：** 请不要截取过大尺寸的图片，截图不建议超过屏幕尺寸的大小。当要截取的图片目标长宽超过底层限制时，截图会返回失败，不同设备的底层限制不同。
 
 **类型：** number
 
@@ -96,10 +84,7 @@ scale?: number
 waitUntilRenderFinished?: boolean
 ```
 
-设置是否强制系统在截图前等待所有绘制指令执行完毕。true表示强制系统在截图前等待所有绘制指令执行完毕，false表示不强制系统在截图前等待所有绘制指令执行完毕。该选项可尽可能确保截图内容是最新的状态，应尽量开启。需要注意的
-是，开启后接口可能需要更长的时间返回，具体的时间依赖页面当时时刻需要重绘区域的大小。
-
-默认值：false
+设置是否强制系统在截图前等待所有绘制指令执行完毕。true表示强制系统在截图前等待所有绘制指令执行完毕，false表示不强制系统在截图前等待所有绘制指令执行完毕。该选项可尽可能确保截图内容是最新的状态，应尽量开启。需要注意的 是，开启后接口可能需要更长的时间返回，具体的时间依赖页面当时时刻需要重绘区域的大小。 默认值：false
 
 **类型：** boolean
 

@@ -12,9 +12,7 @@ Describes the auto-fill attribute.
 minSize: VP
 ```
 
-Minimum width of the element.
-
-Default value: **0**
+Minimum width of the element. Default value: **0**
 
 **Type:** VP
 

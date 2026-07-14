@@ -12,8 +12,7 @@ import { securityLabel } from '@kit.CoreFileKit';
 function setSecurityLabelSync(path: string, type: DataLevel): void
 ```
 
-Sets the data security level for a file or directory in synchronous mode. The level can only be adjusted from low
-to high, or set to the same level.
+Sets the data security level for a file or directory in synchronous mode. The level can only be adjusted from low to high, or set to the same level.
 
 **Since:** 9
 

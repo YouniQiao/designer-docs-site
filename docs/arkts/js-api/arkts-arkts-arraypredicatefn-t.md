@@ -5,8 +5,7 @@ type ArrayPredicateFn<ElementType, ArrayType> =
     (value: ElementType, index: number, array: ArrayType) => boolean
 ```
 
-Defines the ArkTS Array reduction function, which is used by the 'some' and 'every'
-APIs of the Array class to determine whether array elements meet certain test conditions.
+Defines the ArkTS Array reduction function, which is used by the 'some' and 'every' APIs of the Array class to determine whether array elements meet certain test conditions.
 
 **Since:** 18
 

@@ -15,11 +15,7 @@ declare function listFile(
 ): Promise<string[]>
 ```
 
-Lists the names of all files and directories in the current path. Filtering is supported. This API uses a promise to
-return the result.
-
-You can configure the **recursion** parameter in **options** to recursively list the relative paths of all files. The
-relative path starts with a slash (/).
+Lists the names of all files and directories in the current path. Filtering is supported. This API uses a promise to return the result. You can configure the **recursion** parameter in **options** to recursively list the relative paths of all files. The relative path starts with a slash (/).
 
 **Since:** 9
 
@@ -57,11 +53,7 @@ relative path starts with a slash (/).
 declare function listFile(path: string, callback: AsyncCallback<string[]>): void
 ```
 
-Lists the names of all files and directories in the current path. Filtering is supported. This API uses an
-asynchronous callback to return the result.
-
-You can configure the **recursion** parameter in **options** to recursively list the relative paths of all files. The
-relative path starts with a slash (/).
+Lists the names of all files and directories in the current path. Filtering is supported. This API uses an asynchronous callback to return the result. You can configure the **recursion** parameter in **options** to recursively list the relative paths of all files. The relative path starts with a slash (/).
 
 **Since:** 9
 
@@ -97,11 +89,7 @@ declare function listFile(
 ): void
 ```
 
-Lists the names of all files and directories in the current path. Filtering is supported. This API uses an
-asynchronous callback to return the result.
-
-You can configure the **recursion** parameter in **options** to recursively list the relative paths of all files. The
-relative path starts with a slash (/).
+Lists the names of all files and directories in the current path. Filtering is supported. This API uses an asynchronous callback to return the result. You can configure the **recursion** parameter in **options** to recursively list the relative paths of all files. The relative path starts with a slash (/).
 
 **Since:** 9
 

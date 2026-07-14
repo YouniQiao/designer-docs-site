@@ -12,9 +12,7 @@ import { inputMethodEngine } from '@kit.IMEKit';
 function getInputMethodEngine(): InputMethodEngine
 ```
 
-Obtains an [InputMethodEngine](arkts-ime-inputmethodengine-i.md) instance for the input method.
-
-The input method can use the obtained instance to subscribe to a soft keyboard display/hide request event.
+Obtains an [InputMethodEngine](arkts-ime-inputmethodengine-i.md) instance for the input method. The input method can use the obtained instance to subscribe to a soft keyboard display/hide request event.
 
 **Since:** 8
 

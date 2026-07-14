@@ -1,10 +1,6 @@
 # IconCommonOptions
 
-Defines the common icon options of the chip.
-
-> **NOTE**
->
-> **fillColor** and **activatedFillColor** take effect only when the icon format is SVG.
+Defines the common icon options of the chip. > **NOTE** > > **fillColor** and **activatedFillColor** take effect only when the icon format is SVG.
 
 **Since:** 11
 
@@ -22,11 +18,7 @@ import { SuffixIconOptions, CloseOptions, ChipSymbolGlyphOptions, Chip, Accessib
 activatedFillColor?: ResourceColor
 ```
 
-Icon fill color when the chip is activated.
-
-Default value: **$r('sys.color.chip_active_icon_color')**
-
-If the value is **undefined**, the default value is used.
+Icon fill color when the chip is activated. Default value: **$r('sys.color.chip_active_icon_color')** If the value is **undefined**, the default value is used.
 
 **Type:** ResourceColor
 
@@ -44,11 +36,7 @@ If the value is **undefined**, the default value is used.
 fillColor?: ResourceColor
 ```
 
-Icon fill color.
-
-Default value: **$r('sys.color.chip_usually_icon_color')**
-
-If the value is **undefined**, the default value is used.
+Icon fill color. Default value: **$r('sys.color.chip_usually_icon_color')** If the value is **undefined**, the default value is used.
 
 **Type:** ResourceColor
 
@@ -66,18 +54,7 @@ If the value is **undefined**, the default value is used.
 size?: SizeOptions
 ```
 
-Icon size. This parameter cannot be set in percentage.
-
-Default value:
-
-- When **ChipSize.SMALL** is used:
-**{width: $r('sys.float.chip_small_icon_size'), height: $r('sys.float.chip_small_icon_size')}**.
-- When **ChipSize.NORMAL** is used:
-**{width: $r('sys.float.chip_normal_icon_size'), height: $r('sys.float.chip_normal_icon_size')}**.
-
-Unit: vp.
-
-If the value is **undefined**, the default value is used.
+Icon size. This parameter cannot be set in percentage. Default value: - When **ChipSize.SMALL** is used: **{width: $r('sys.float.chip_small_icon_size'), height: $r('sys.float.chip_small_icon_size')}**. - When **ChipSize.NORMAL** is used: **{width: $r('sys.float.chip_normal_icon_size'), height: $r('sys.float.chip_normal_icon_size')}**. Unit: vp. If the value is **undefined**, the default value is used.
 
 **Type:** SizeOptions
 

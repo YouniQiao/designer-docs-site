@@ -82,8 +82,7 @@ The WantAgent object is immutable.
 REPLACE_ELEMENT
 ```
 
-The element property in the current Want can be replaced by the element property in the Want passed in
-WantAgent.trigger().This processing is not supported yet.
+The element property in the current Want can be replaced by the element property in the Want passed in WantAgent.trigger().This processing is not supported yet.
 
 **Since:** 9
 
@@ -97,8 +96,7 @@ WantAgent.trigger().This processing is not supported yet.
 REPLACE_ACTION
 ```
 
-The action property in the current Want can be replaced by the action property in the Want passed in
-WantAgent.trigger().This processing is not supported yet.
+The action property in the current Want can be replaced by the action property in the Want passed in WantAgent.trigger().This processing is not supported yet.
 
 **Since:** 9
 
@@ -112,8 +110,7 @@ WantAgent.trigger().This processing is not supported yet.
 REPLACE_URI
 ```
 
-The uri property in the current Want can be replaced by the uri property in the Want passed in
-WantAgent.trigger().This processing is not supported yet.
+The uri property in the current Want can be replaced by the uri property in the Want passed in WantAgent.trigger().This processing is not supported yet.
 
 **Since:** 9
 
@@ -127,8 +124,7 @@ WantAgent.trigger().This processing is not supported yet.
 REPLACE_ENTITIES
 ```
 
-The <code>entities</code> property in the current Want can be replaced by the <code>entities</code> property in
-the Want passed in WantAgent.trigger().This processing is not supported yet.
+The <code>entities</code> property in the current Want can be replaced by the <code>entities</code> property in the Want passed in WantAgent.trigger().This processing is not supported yet.
 
 **Since:** 9
 
@@ -142,8 +138,7 @@ the Want passed in WantAgent.trigger().This processing is not supported yet.
 REPLACE_BUNDLE
 ```
 
-The <code>bundleName</code> property in the current Want can be replaced by the <code>bundleName</code> property
-in the Want passed in WantAgent.trigger().This processing is not supported yet.
+The <code>bundleName</code> property in the current Want can be replaced by the <code>bundleName</code> property in the Want passed in WantAgent.trigger().This processing is not supported yet.
 
 **Since:** 9
 

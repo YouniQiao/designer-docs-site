@@ -18,9 +18,7 @@ import { util } from '@kit.ArkTS';
 localHeapThreshold?: number
 ```
 
-This number is on a scale of 70 to 95, representing the percentage threshold of the local heap memory
-at which the callback is triggered after a GC. Values outside this range are automatically clamped to the valid range.
-If not set, the callback will not be triggered by local heap memory pressure.
+This number is on a scale of 70 to 95, representing the percentage threshold of the local heap memory at which the callback is triggered after a GC. Values outside this range are automatically clamped to the valid range. If not set, the callback will not be triggered by local heap memory pressure.
 
 **Type:** number
 
@@ -36,9 +34,7 @@ If not set, the callback will not be triggered by local heap memory pressure.
 processHeapThreshold?: number
 ```
 
-This number is on a scale of 70 to 95, representing the percentage threshold of the process's total heap memory
-at which the callback is triggered after a GC. Values outside this range are automatically clamped to the valid range.
-If not set, the callback will not be triggered by process heap memory pressure.
+This number is on a scale of 70 to 95, representing the percentage threshold of the process's total heap memory at which the callback is triggered after a GC. Values outside this range are automatically clamped to the valid range. If not set, the callback will not be triggered by process heap memory pressure.
 
 **Type:** number
 
@@ -54,9 +50,7 @@ If not set, the callback will not be triggered by process heap memory pressure.
 sharedHeapThreshold?: number
 ```
 
-This number is on a scale of 70 to 95, representing the percentage threshold of the shared heap memory
-at which the callback is triggered after a GC. Values outside this range are automatically clamped to the valid range.
-If not set, the callback will not be triggered by shared heap memory pressure.
+This number is on a scale of 70 to 95, representing the percentage threshold of the shared heap memory at which the callback is triggered after a GC. Values outside this range are automatically clamped to the valid range. If not set, the callback will not be triggered by shared heap memory pressure.
 
 **Type:** number
 

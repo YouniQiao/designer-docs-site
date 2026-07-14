@@ -12,9 +12,7 @@ import { sendablePreferences } from '@kit.ArkData';
 function deletePreferences(context: Context, options: Options): Promise<void>
 ```
 
-Deletes a specified **Preferences** instance from the cache. If the **Preferences** instance has a corresponding
-persistent file, the persistent file is also deleted. This API uses a promise to return the result.
-Avoid using a deleted **Preferences** instance to perform data operations, which may cause data inconsistency.
+Deletes a specified **Preferences** instance from the cache. If the **Preferences** instance has a corresponding persistent file, the persistent file is also deleted. This API uses a promise to return the result. Avoid using a deleted **Preferences** instance to perform data operations, which may cause data inconsistency.
 
 **Since:** 12
 

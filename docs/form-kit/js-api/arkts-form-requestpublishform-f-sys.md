@@ -16,8 +16,7 @@ function requestPublishForm(
   ): void
 ```
 
-Requests to publish a widget to the widget host (usually the home screen). This API uses an asynchronous callback
-to return the result.
+Requests to publish a widget to the widget host (usually the home screen). This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -50,8 +49,7 @@ to return the result.
 function requestPublishForm(want: Want, callback: AsyncCallback<string>): void
 ```
 
-Requests to publish a widget to the widget host (usually the home screen). This API uses an asynchronous callback
-to return the result.
+Requests to publish a widget to the widget host (usually the home screen). This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -83,8 +81,7 @@ to return the result.
 function requestPublishForm(want: Want, formBindingData?: formBindingData.FormBindingData): Promise<string>
 ```
 
-Requests to publish a widget to the widget host (usually the home screen). This API uses a promise to return the
-result.
+Requests to publish a widget to the widget host (usually the home screen). This API uses a promise to return the result.
 
 **Since:** 9
 

@@ -1,7 +1,6 @@
 # PictureDrawableDescriptor
 
-支持通过传入Picture对象创建PictureDrawableDescriptor对象。
-继承自[DrawableDescriptor](arkts-arkui-drawabledescriptorloadedresult-i.md)。
+支持通过传入Picture对象创建PictureDrawableDescriptor对象。 继承自[DrawableDescriptor](arkts-arkui-drawabledescriptorloadedresult-i.md)。
 
 **继承/实现关系：** PictureDrawableDescriptor extends [DrawableDescriptor](arkts-arkui-drawabledescriptor-c.md)
 

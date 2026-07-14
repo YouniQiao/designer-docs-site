@@ -1,25 +1,6 @@
 # NavPathStack
 
-A navigation controller that manages all child pages in the **Navigation** component with a stack data structure and
-provides stack operation methods for controlling page transitions.
-
-Starting from API version 12, **NavPathStack** is inheritable. Objects of a derived class can replace those of the
-base class. For details, see
-[Example 10](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-navigation.md#example-10-defining-a-derived-class-of-navpathstack).
-
-> **NOTE**
->
-> 1. When multiple navigation controller operations are triggered in succession, the intermediate states are
-> bypassed, and only the final result of the operations is rendered.
-
-> For example, if a Page1 is popped and then immediately pushed back, the system considers that the states before and
-> after these operations are identical, leading to no actual change in the stack. To ensure that a new instance of
-> Page1 is pushed onto the stack despite the consecutive operations, use the **NEW_INSTANCE** mode.
->
-> 2. Avoid relying on lifecycle event listeners as a means to manage the navigation controller.
->
-> 3. When the application is in the background, calling stack operation APIs of **NavPathStack** will trigger a
-> refresh upon the application's return to the foreground.
+A navigation controller that manages all child pages in the **Navigation** component with a stack data structure and provides stack operation methods for controlling page transitions. Starting from API version 12, **NavPathStack** is inheritable. Objects of a derived class can replace those of the base class. For details, see [Example 10](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-navigation.md#example-10-defining-a-derived-class-of-navpathstack). > **NOTE** > > 1. When multiple navigation controller operations are triggered in succession, the intermediate states are > bypassed, and only the final result of the operations is rendered. > For example, if a Page1 is popped and then immediately pushed back, the system considers that the states before and > after these operations are identical, leading to no actual change in the stack. To ensure that a new instance of > Page1 is pushed onto the stack despite the consecutive operations, use the **NEW_INSTANCE** mode. > > 2. Avoid relying on lifecycle event listeners as a means to manage the navigation controller. > > 3. When the application is in the background, calling stack operation APIs of **NavPathStack** will trigger a > refresh upon the application's return to the foreground.
 
 **Since:** 10
 
@@ -169,8 +150,7 @@ Obtains the parameter information of the navigation destination page specified b
 getParamByName(name: string): Array<unknown>
 ```
 
-Obtains the parameter information of all **NavDestination** pages with the specified name, and sorts the
-information in ascending order by page index.
+Obtains the parameter information of all **NavDestination** pages with the specified name, and sorts the information in ascending order by page index.
 
 **Since:** 10
 
@@ -198,10 +178,7 @@ information in ascending order by page index.
 getParent(): NavPathStack | null
 ```
 
-Obtains the parent navigation path stack.
-
-When a **Navigation** component is nested (directly or indirectly) inside another **Navigation** component, the
-**NavPathStack** of the inner component can obtain the **NavPathStack** of the outer component.
+Obtains the parent navigation path stack. When a **Navigation** component is nested (directly or indirectly) inside another **Navigation** component, the **NavPathStack** of the inner component can obtain the **NavPathStack** of the outer component.
 
 **Since:** 11
 
@@ -268,8 +245,7 @@ Moves to the top of the routing stack the navigation destination page specified 
 moveToTop(name: string, animated?: boolean): number
 ```
 
-Moves the first navigation destination page that matches **name** from the bottom of the routing stack to the top
-of the stack.
+Moves the first navigation destination page that matches **name** from the bottom of the routing stack to the top of the stack.
 
 **Since:** 10
 
@@ -298,29 +274,7 @@ of the stack.
 pop(animated?: boolean): NavPathInfo | undefined
 ```
 
-Pops the top element out of the routing stack.
-
-> **NOTE**
->
-> When multiple navigation controller methods are called consecutively, any pages popped during the sequence are
-> cached. If a page with the same name is later pushed, the system reuses the cached instance instead of
-> instantiating a new page.
-
-> Example:
-
-> pathStack: NavPathStack = new NavPathStack()
-
-> //The initial page stack is [A].
-
-> pathStack.pop()
-
-> pathStack.pushPath(A)
-
-> pathStack.pushPath(B)
-
-> // The page stack after the operation is [A B].
-
-> In this case, page A is reused, and the new creation process is not performed.
+Pops the top element out of the routing stack. > **NOTE** > > When multiple navigation controller methods are called consecutively, any pages popped during the sequence are > cached. If a page with the same name is later pushed, the system reuses the cached instance instead of > instantiating a new page. > Example: > pathStack: NavPathStack = new NavPathStack() > //The initial page stack is [A]. > pathStack.pop() > pathStack.pushPath(A) > pathStack.pushPath(B) > // The page stack after the operation is [A B]. > In this case, page A is reused, and the new creation process is not performed.
 
 **Since:** 10
 
@@ -348,30 +302,7 @@ Pops the top element out of the routing stack.
 pop(result: Object, animated?: boolean): NavPathInfo | undefined
 ```
 
-Pops the top element out of the routing stack and invokes the **onPop** callback to pass the page processing
-result.
-
-> **NOTE**
->
-> When multiple navigation controller methods are called consecutively, any pages popped during the sequence are
-> cached. If a page with the same name is later pushed, the system reuses the cached instance instead of
-> instantiating a new page.
-
-> Example:
-
-> pathStack: NavPathStack = new NavPathStack()
-
-> //The initial page stack is [A].
-
-> pathStack.pop()
-
-> pathStack.pushPath(A)
-
-> pathStack.pushPath(B)
-
-> // The page stack after the operation is [A B].
-
-> In this case, page A is reused, and the new creation process is not performed.
+Pops the top element out of the routing stack and invokes the **onPop** callback to pass the page processing result. > **NOTE** > > When multiple navigation controller methods are called consecutively, any pages popped during the sequence are > cached. If a page with the same name is later pushed, the system reuses the cached instance instead of > instantiating a new page. > Example: > pathStack: NavPathStack = new NavPathStack() > //The initial page stack is [A]. > pathStack.pop() > pathStack.pushPath(A) > pathStack.pushPath(B) > // The page stack after the operation is [A B]. > In this case, page A is reused, and the new creation process is not performed.
 
 **Since:** 11
 
@@ -423,8 +354,7 @@ Returns the routing stack to the page specified by **index**.
 popToIndex(index: number, result: Object, animated?: boolean): void
 ```
 
-Returns the routing stack to the page specified by **index** and invokes the **onPop** callback to pass the page
-processing result.
+Returns the routing stack to the page specified by **index** and invokes the **onPop** callback to pass the page processing result.
 
 **Since:** 11
 
@@ -448,8 +378,7 @@ processing result.
 popToName(name: string, animated?: boolean): number
 ```
 
-Pops pages until the first navigation destination page that matches **name** from the bottom of the routing stack
-is at the top of the stack.
+Pops pages until the first navigation destination page that matches **name** from the bottom of the routing stack is at the top of the stack.
 
 **Since:** 10
 
@@ -478,8 +407,7 @@ is at the top of the stack.
 popToName(name: string, result: Object, animated?: boolean): number
 ```
 
-Pops pages until the first navigation destination page that matches **name** from the bottom of the routing stack
-is at the top of the stack. This API uses the **onPop** callback to pass in the page processing result.
+Pops pages until the first navigation destination page that matches **name** from the bottom of the routing stack is at the top of the stack. This API uses the **onPop** callback to pass in the page processing result.
 
 **Since:** 11
 
@@ -509,14 +437,7 @@ is at the top of the stack. This API uses the **onPop** callback to pass in the 
 pushDestination(info: NavPathInfo, animated?: boolean): Promise<void>
 ```
 
-Pushes the navigation destination page specified by **info** onto the routing stack. This API uses a promise to
-return the result.
-
-> **NOTE**
->
-> You are not advised to use stack operations in [aboutToAppear](arkts-arkui-basecustomcomponent-c.md#abouttoappear-1), as the
-> page has not yet finished building at this stage, which may lead to issues such as white screens or navigation
-> failures.
+Pushes the navigation destination page specified by **info** onto the routing stack. This API uses a promise to return the result. > **NOTE** > > You are not advised to use stack operations in [aboutToAppear](arkts-arkui-basecustomcomponent-c.md#abouttoappear-1), as the > page has not yet finished building at this stage, which may lead to issues such as white screens or navigation > failures.
 
 **Since:** 11
 
@@ -554,15 +475,7 @@ return the result.
 pushDestination(info: NavPathInfo, options?: NavigationOptions): Promise<void>
 ```
 
-Pushes the navigation destination page specified by **info** onto the routing stack. This API uses a promise to
-return the result. Depending on the [LaunchMode](arkts-arkui-launchmode-e.md) specified in the **options** parameter,
-different behaviors will be implemented.
-
-> **NOTE**
->
-> You are not advised to use stack operations in [aboutToAppear](arkts-arkui-basecustomcomponent-c.md#abouttoappear-1), as the
-> page has not yet finished building at this stage, which may lead to issues such as white screens or navigation
-> failures.
+Pushes the navigation destination page specified by **info** onto the routing stack. This API uses a promise to return the result. Depending on the [LaunchMode](arkts-arkui-launchmode-e.md) specified in the **options** parameter, different behaviors will be implemented. > **NOTE** > > You are not advised to use stack operations in [aboutToAppear](arkts-arkui-basecustomcomponent-c.md#abouttoappear-1), as the > page has not yet finished building at this stage, which may lead to issues such as white screens or navigation > failures.
 
 **Since:** 12
 
@@ -600,14 +513,7 @@ different behaviors will be implemented.
 pushDestinationByName(name: string, param: Object, animated?: boolean): Promise<void>
 ```
 
-Pushes the navigation destination page specified by **name**, with the data specified by **param**, to the routing
-stack. This API uses a promise to return the result.
-
-> **NOTE**
->
-> You are not advised to use stack operations in [aboutToAppear](arkts-arkui-basecustomcomponent-c.md#abouttoappear-1), as the
-> page has not yet finished building at this stage, which may lead to issues such as white screens or navigation
-> failures.
+Pushes the navigation destination page specified by **name**, with the data specified by **param**, to the routing stack. This API uses a promise to return the result. > **NOTE** > > You are not advised to use stack operations in [aboutToAppear](arkts-arkui-basecustomcomponent-c.md#abouttoappear-1), as the > page has not yet finished building at this stage, which may lead to issues such as white screens or navigation > failures.
 
 **Since:** 11
 
@@ -646,15 +552,7 @@ stack. This API uses a promise to return the result.
 pushDestinationByName(name: string, param: Object, onPop: import('../api/@ohos.base').Callback<PopInfo>, animated?: boolean): Promise<void>
 ```
 
-Pushes the navigation destination page specified by **name**, with the data specified by **param**, to the routing
-stack. This API uses the **onPop** callback to handle the result returned when the page is popped out of the stack.
-It uses a promise to return the result.
-
-> **NOTE**
->
-> You are not advised to use stack operations in [aboutToAppear](arkts-arkui-basecustomcomponent-c.md#abouttoappear-1), as the
-> page has not yet finished building at this stage, which may lead to issues such as white screens or navigation
-> failures.
+Pushes the navigation destination page specified by **name**, with the data specified by **param**, to the routing stack. This API uses the **onPop** callback to handle the result returned when the page is popped out of the stack. It uses a promise to return the result. > **NOTE** > > You are not advised to use stack operations in [aboutToAppear](arkts-arkui-basecustomcomponent-c.md#abouttoappear-1), as the > page has not yet finished building at this stage, which may lead to issues such as white screens or navigation > failures.
 
 **Since:** 11
 
@@ -717,8 +615,7 @@ Pushes the navigation destination page specified by **info** onto the routing st
 pushPath(info: NavPathInfo, options?: NavigationOptions): void
 ```
 
-Pushes the navigation destination page specified by **info** onto the routing stack. Depending on the
-[LaunchMode](arkts-arkui-launchmode-e.md) specified in the **options** parameter, different behaviors will be implemented.
+Pushes the navigation destination page specified by **info** onto the routing stack. Depending on the [LaunchMode](arkts-arkui-launchmode-e.md) specified in the **options** parameter, different behaviors will be implemented.
 
 **Since:** 12
 
@@ -741,8 +638,7 @@ Pushes the navigation destination page specified by **info** onto the routing st
 pushPathByName(name: string, param: unknown, animated?: boolean): void
 ```
 
-Pushes the navigation destination page specified by **name**, with the data specified by **param**, to the routing
-stack.
+Pushes the navigation destination page specified by **name**, with the data specified by **param**, to the routing stack.
 
 **Since:** 10
 
@@ -766,9 +662,7 @@ stack.
 pushPathByName(name: string, param: Object, onPop: import('../api/@ohos.base').Callback<PopInfo>, animated?: boolean): void
 ```
 
-Pushes the navigation destination page specified by **name**, with the data specified by **param**, to the routing
-stack. This API uses the **onPop** callback to receive the result returned when the page is popped out of the
-stack.
+Pushes the navigation destination page specified by **name**, with the data specified by **param**, to the routing stack. This API uses the **onPop** callback to receive the result returned when the page is popped out of the stack.
 
 **Since:** 11
 
@@ -849,9 +743,7 @@ Removes the navigation destination page specified by **name** from the routing s
 removeByNavDestinationId(navDestinationId: string): boolean
 ```
 
-Removes the navigation destination page specified by **navDestinationId** from the routing stack.
-**navDestinationId** can be obtained from the [onReady](NavDestinationAttribute#onReady) callback of
-**NavDestination** or from [NavDestinationInfo](../arkts-apis/arkts-arkui-navdestinationinfo-i.md).
+Removes the navigation destination page specified by **navDestinationId** from the routing stack. **navDestinationId** can be obtained from the [onReady](NavDestinationAttribute#onReady) callback of **NavDestination** or from [NavDestinationInfo](../arkts-apis/arkts-arkui-navdestinationinfo-i.md).
 
 **Since:** 12
 
@@ -879,8 +771,7 @@ Removes the navigation destination page specified by **navDestinationId** from t
 replaceDestination(info: NavPathInfo, options?: NavigationOptions): Promise<void>
 ```
 
-Performs a replacement operation on the routing stack. This API uses a promise to return the result. Its behavior
-varies depending on the value of [LaunchMode](arkts-arkui-launchmode-e.md) specified in **options**.
+Performs a replacement operation on the routing stack. This API uses a promise to return the result. Its behavior varies depending on the value of [LaunchMode](arkts-arkui-launchmode-e.md) specified in **options**.
 
 **Since:** 18
 
@@ -941,8 +832,7 @@ Replaces the top of the routing stack with the navigation destination page speci
 replacePath(info: NavPathInfo, options?: NavigationOptions): void
 ```
 
-Replaces the top page on the routing stack. Depending on the [LaunchMode](arkts-arkui-launchmode-e.md) specified in the
-**options** parameter, different behaviors will be implemented.
+Replaces the top page on the routing stack. Depending on the [LaunchMode](arkts-arkui-launchmode-e.md) specified in the **options** parameter, different behaviors will be implemented.
 
 **Since:** 12
 
@@ -1011,24 +901,7 @@ Sets the interception callback for navigation page redirection.
 setPathStack(pathStack: Array<NavPathInfo>, animated?: boolean): void
 ```
 
-Updates the array of route page information in this routing stack to the specified content and performs route
-transitions.
-
-> **NOTE**
->
-> 1. You can add or remove pages in batches based on the existing stack. Among the pages added in batches, only the
-> visible pages will trigger creation; other pages, although added to the stack, will not be created immediately.
-> They will only be created when they become visible.
->
-> 2. For routing stacks updated through the batch push functionality, the lifecycle events of each page are
-> triggered from the top to the bottom of the stack. This differs from the triggering order of other push APIs,
-> which are triggered from the bottom to the top of the stack.
->
-> 3. You can operate existing pages using **navDestinationId** (unique ID) in [NavPathInfo](arkts-arkui-navpathinfo-c.md).
-> This ID is system-generated and globally unique (it can be obtained using the
-> [getPathStack](arkts-arkui-navpathstack-c.md#getpathstack-1) API and should not be manually reassigned). If the specified ID
-> does not exist in the current routing stack, it indicates a new page. If it exists and the corresponding name is
-> the same, it indicates reuse of an existing page.
+Updates the array of route page information in this routing stack to the specified content and performs route transitions. > **NOTE** > > 1. You can add or remove pages in batches based on the existing stack. Among the pages added in batches, only the > visible pages will trigger creation; other pages, although added to the stack, will not be created immediately. > They will only be created when they become visible. > > 2. For routing stacks updated through the batch push functionality, the lifecycle events of each page are > triggered from the top to the bottom of the stack. This differs from the triggering order of other push APIs, > which are triggered from the bottom to the top of the stack. > > 3. You can operate existing pages using **navDestinationId** (unique ID) in [NavPathInfo](arkts-arkui-navpathinfo-c.md). > This ID is system-generated and globally unique (it can be obtained using the > [getPathStack](arkts-arkui-navpathstack-c.md#getpathstack-1) API and should not be manually reassigned). If the specified ID > does not exist in the current routing stack, it indicates a new page. If it exists and the corresponding name is > the same, it indicates reuse of an existing page.
 
 **Since:** 19
 

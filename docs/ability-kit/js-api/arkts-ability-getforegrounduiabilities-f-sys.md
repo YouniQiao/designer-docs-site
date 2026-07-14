@@ -12,8 +12,7 @@ import { abilityManager } from '@kit.AbilityKit';
 function getForegroundUIAbilities(callback: AsyncCallback<Array<AbilityStateData>>): void
 ```
 
-Obtains the information about the UIAbility components of an application that is running in the foreground. This
-API uses an asynchronous callback to return the result.
+Obtains the information about the UIAbility components of an application that is running in the foreground. This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -61,8 +60,7 @@ abilityManager.getForegroundUIAbilities((err: BusinessError, data: Array<ability
 function getForegroundUIAbilities(): Promise<Array<AbilityStateData>>
 ```
 
-Obtains the information about the UIAbility components of an application that is running in the foreground. This
-API uses a promise to return the result.
+Obtains the information about the UIAbility components of an application that is running in the foreground. This API uses a promise to return the result.
 
 **Since:** 11
 

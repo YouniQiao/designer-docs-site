@@ -1,17 +1,6 @@
 # AVRecorder
 
-音视频录制管理类，用于音视频媒体录制。在调用AVRecorder的方法前，需要先调用
-[createAVRecorder](arkts-media-createavrecorder-f.md#createavrecorder-1)接口构建一个
-AVRecorder实例。
-
-音视频录制demo可参考：[音频录制开发指导](../../../../media/media/using-avrecorder-for-recording.md)、
-[视频录制开发指导](../../../../media/media/video-recording.md)。
-
-> **说明：**
->
-> - 本Interface首批接口从API version 9开始支持。
->
-> - 相机视频录制功能需配合相机模块使用，相机模块接口的使用详情请参考[相机管理](@ohos.multimedia.camera:camera)。
+音视频录制管理类，用于音视频媒体录制。在调用AVRecorder的方法前，需要先调用 [createAVRecorder](arkts-media-createavrecorder-f.md#createavrecorder-1)接口构建一个 AVRecorder实例。 音视频录制demo可参考：[音频录制开发指导](../../../../media/media/using-avrecorder-for-recording.md)、 [视频录制开发指导](../../../../media/media/video-recording.md)。 > **说明：** > > - 本Interface首批API从API version 9开始支持。 > > - 相机视频录制功能需配合相机模块使用，相机模块接口的使用详情请参考[相机管理](@ohos.multimedia.camera:camera)。
 
 **起始版本：** 9
 
@@ -23,7 +12,7 @@ AVRecorder实例。
 getInputMetaSurface(type: MetaSourceType): Promise<string>
 ```
 
-Get input meta surface for specified meta source type. it must be called between prepare completed and start.
+获取指定元数据源类型的输入元数据surface。必须在prepare完成后和start之前调用。
 
 **起始版本：** 12
 
@@ -35,13 +24,13 @@ Get input meta surface for specified meta source type. it must be called between
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | MetaSourceType | 是 | Meta source type. |
+| type | MetaSourceType | 是 | 元数据源类型。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;string&gt; | A Promise instance used to return the input surface id in string. |
+| Promise&lt;string&gt; | Promise对象，返回输入surface id字符串。 |
 
 **错误码：**
 
@@ -59,9 +48,7 @@ Get input meta surface for specified meta source type. it must be called between
 isWatermarkSupported(): Promise<boolean>
 ```
 
-Checks whether the device supports the hardware digital watermark. This API uses a promise to return the result.
-
-This API can be called after the prepare(), start(), or paused() event is triggered.
+查询设备是否支持硬件数字水印。使用Promise异步回调。 可以在prepare()、start()或pause()事件触发后调用。
 
 **起始版本：** 13
 
@@ -73,7 +60,7 @@ This API can be called after the prepare(), start(), or paused() event is trigge
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;boolean&gt; | Promise used to return the check result. The value **true** means thatthe device supports the hardware digital watermark, and **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise对象，返回查询结果。true表示设备支持硬件数字水印，false表示不支持。 |
 
 **示例：**
 
@@ -94,12 +81,7 @@ avRecorder.isWatermarkSupported().then((isWatermarkSupported: boolean) => {
 setMetadata(metadata: Record<string, string>): void
 ```
 
-设置录制的元数据信息。如果这些信息的键相同，会覆盖config.metadata.customInfo（参考
-[prepare()](media.AVRecorder.prepare(config: AVRecorderConfig))和
-[AVRecorderConfig](@ohos.multimedia.media:media.AVRecorderConfig)）中的值。
-
-该方法只能在[prepare()](media.AVRecorder.prepare(config: AVRecorderConfig))事件成功触发后，且必须在
-[stop()](media.AVRecorder.stop(callback: AsyncCallback<void>))之前调用。
+设置录制的元数据信息。如果这些信息的键相同，会覆盖config.metadata.customInfo（参考 [prepare()](media.AVRecorder.prepare(config: AVRecorderConfig))和 [AVRecorderConfig](@ohos.multimedia.media:media.AVRecorderConfig)）中的值。 该方法只能在[prepare()](media.AVRecorder.prepare(config: AVRecorderConfig))事件成功触发后，且必须在 [stop()](media.AVRecorder.stop(callback: AsyncCallback<void>))之前调用。
 
 **起始版本：** 26.0.0
 
@@ -128,10 +110,7 @@ setMetadata(metadata: Record<string, string>): void
 setWatermark(watermark: image.PixelMap, config: WatermarkConfig): Promise<void>
 ```
 
-Sets a watermark for the AVRecorder. This API uses a promise to return the result.
-
-This API can be called only after the prepare() event is triggered and before
-the start() event is triggered.
+为AVRecorder设置水印。使用Promise异步回调。 只能在prepare()事件触发后且start()事件触发前调用。
 
 **起始版本：** 13
 
@@ -143,14 +122,14 @@ the start() event is triggered.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| watermark | image.PixelMap | 是 | : Watermark image. |
-| config | WatermarkConfig | 是 | : Configures of the watermark. |
+| watermark | image.PixelMap | 是 | 水印图片。 |
+| config | WatermarkConfig | 是 | 水印配置。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise对象，无返回结果。 |
 
 **错误码：**
 

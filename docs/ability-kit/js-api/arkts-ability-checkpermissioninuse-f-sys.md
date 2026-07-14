@@ -12,11 +12,7 @@ import { privacyManager } from '@kit.AbilityKit';
 function checkPermissionInUse(permissionName: Permissions): boolean
 ```
 
-Queries whether a specified sensitive permission is currently being used. It can be used in scenarios such as
-displaying the real-time permission usage status on the permission management interface. The judgment is based on
-whether there is currently an active call that has been marked as started by
-[startUsingPermission](arkts-ability-startusingpermission-f-sys.md#startusingpermission-1) and has not yet been marked as stopped by
-[stopUsingPermission](arkts-ability-stopusingpermission-f-sys.md#stopusingpermission-1).
+Queries whether a specified sensitive permission is currently being used. It can be used in scenarios such as displaying the real-time permission usage status on the permission management interface. The judgment is based on whether there is currently an active call that has been marked as started by [startUsingPermission](arkts-ability-startusingpermission-f-sys.md#startusingpermission-1) and has not yet been marked as stopped by [stopUsingPermission](arkts-ability-stopusingpermission-f-sys.md#stopusingpermission-1).
 
 **Since:** 26.0.0
 

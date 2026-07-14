@@ -6,8 +6,7 @@
 function startScan(filters: ScanFilters[] | null, options?: ScanOptions): Promise<void>
 ```
 
-开始使用过滤器扫描指定的NearLink设备。
-如果不想使用过滤器，可以将过滤器参数设置为{@code null}。
+开始使用过滤器扫描指定的NearLink设备。 如果不想使用过滤器，可以将过滤器参数设置为{@code null}。
 
 **起始版本：** 26.0.0
 

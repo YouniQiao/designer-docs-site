@@ -12,7 +12,7 @@ Enumeration type of single selection mode
 BROWSER_MODE = 0
 ```
 
-browser mode
+Mode for previewing large images.
 
 **Since:** 18
 
@@ -26,7 +26,7 @@ browser mode
 SELECT_MODE = 1
 ```
 
-select directly mode
+Mode for direct selection.
 
 **Since:** 18
 
@@ -40,7 +40,7 @@ select directly mode
 BROWSER_AND_SELECT_MODE = 2
 ```
 
-browser and select mode
+Compatibility mode. Tapping the bottom-right area enables direct selection, whereas tapping elsewhere switches to large image preview mode.
 
 **Since:** 18
 

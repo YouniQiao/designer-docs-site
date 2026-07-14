@@ -26,8 +26,7 @@ build(): void
 adRenderer?: () => void
 ```
 
-应用自渲染广告样式。应用自渲染广告样式为受限使用能力，具体请前往
-[流量变现官网客服支持](https://developer.huawei.com/consumer/cn/doc/monetize/kefuzhichi-0000001104461922)进行咨询。
+应用自渲染广告样式。应用自渲染广告样式为受限使用能力，具体请前往 [流量变现官网客服支持](https://developer.huawei.com/consumer/cn/doc/monetize/kefuzhichi-0000001104461922)进行咨询。
 
 **类型：** () => void
 
@@ -45,9 +44,7 @@ adRenderer?: () => void
 ads: advertising.Advertisement[]
 ```
 
-广告对象数组。
-
-说明：非贴片广告类型，组件只展示数组第一个数据。
+广告对象数组。 说明：非贴片广告类型，组件只展示数组第一个数据。
 
 **类型：** advertising.Advertisement[]
 
@@ -95,9 +92,7 @@ interactionListener: advertising.AdInteractionListener
 rollPlayState?: number
 ```
 
-用于对外提供贴片广告播放状态，设置1为播放，2为暂停，默认值为2，其他值为非法值，不改变之前的播放状态。
-在贴片广告所在页面需要通过@State关联属性，使用方法参考
-[示例代码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-publisher-service-roll#展示广告)。
+用于对外提供贴片广告播放状态，设置1为播放，2为暂停，默认值为2，其他值为非法值，不改变之前的播放状态。 在贴片广告所在页面需要通过@State关联属性，使用方法参考 [示例代码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-publisher-service-roll#展示广告)。
 
 **类型：** number
 

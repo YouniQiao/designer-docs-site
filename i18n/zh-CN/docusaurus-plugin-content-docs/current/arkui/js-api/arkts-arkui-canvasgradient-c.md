@@ -35,18 +35,7 @@ addColorStop(offset: number, color: string): void
 addColorStop(offset: number, color: string | ColorMetrics): void
 ```
 
-设置渐变断点值，包括偏移和颜色。支持设置rgb或者argb格式颜色。支持通过传入
-[ColorMetrics](../../../../reference/apis-arkui/js-apis-arkui-graphics.md#colormetrics12)
-类型设置P3色域颜色值，可在支持高色域的设备上获得更丰富的色彩表现。
-
-> **说明：**
->
-> 仅[CanvasRenderingContext2D](../../../../reference/apis-arkui/arkui-ts/ts-canvasrenderingcontext2d.md)
-> 对象的[fillStyle](../../../../reference/apis-arkui/arkui-ts/ts-canvasrenderingcontext2d.md#fillstyle)
-> 和[strokeStyle](../../../../reference/apis-arkui/arkui-ts/ts-canvasrenderingcontext2d.md#strokestyle)
-> 属性支持设置P3广色域的CanvasGradient对象，且需要将Canvas组件所在窗口的色域模式通过
-> [setWindowColorSpace](../../../../reference/apis-arkui/arkts-apis-window-Window.md#setwindowcolorspace9)
-> 方法设置为广色域模式WIDE_GAMUT。
+设置渐变断点值，包括偏移和颜色。支持设置rgb或者argb格式颜色。支持通过传入 [ColorMetrics](../../../../reference/apis-arkui/js-apis-arkui-graphics.md#colormetrics12) 类型设置P3色域颜色值，可在支持高色域的设备上获得更丰富的色彩表现。 > **说明：** > > 仅[CanvasRenderingContext2D](../../../../reference/apis-arkui/arkui-ts/ts-canvasrenderingcontext2d.md) > 对象的[fillStyle](../../../../reference/apis-arkui/arkui-ts/ts-canvasrenderingcontext2d.md#fillstyle) > 和[strokeStyle](../../../../reference/apis-arkui/arkui-ts/ts-canvasrenderingcontext2d.md#strokestyle) > 属性支持设置P3广色域的CanvasGradient对象，且需要将Canvas组件所在窗口的色域模式通过 > [setWindowColorSpace](../../../../reference/apis-arkui/arkts-apis-window-Window.md#setwindowcolorspace9) > 方法设置为广色域模式WIDE_GAMUT。
 
 **起始版本：** 20
 

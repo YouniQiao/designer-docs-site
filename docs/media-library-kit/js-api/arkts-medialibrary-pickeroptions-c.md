@@ -20,8 +20,7 @@ import { MaxCountType, PreselectedInfo, BaseItemInfo, ItemInfo, AnimatorParams, 
 appAlbumFilters?: Array<string>
 ```
 
-Only display album contents corresponding to the specified applications.
-Use the bundle name to identify the application.
+Only display album contents corresponding to the specified applications. Use the bundle name to identify the application.
 
 **Type:** Array<string>
 
@@ -73,8 +72,7 @@ Support setting background opacity.
 badgeConfig?: BadgeConfig
 ```
 
-Support to config special badge display.
-The picker component supports only one type of badge
+Support to config special badge display. The picker component supports only one type of badge
 
 **Type:** BadgeConfig
 
@@ -388,8 +386,7 @@ Support to set a serial number to distinguish different picker components. Defau
 preselectedInfos?: Array<PreselectedInfo>
 ```
 
-Support automatically selecting the user-selected image/video on the PhotoPickerComponent
-at the specified picker index.
+Support automatically selecting the user-selected image/video on the PhotoPickerComponent at the specified picker index.
 
 **Type:** Array<PreselectedInfo>
 

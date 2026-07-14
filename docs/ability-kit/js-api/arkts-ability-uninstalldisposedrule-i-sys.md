@@ -20,8 +20,7 @@ import { appControl } from '@kit.AbilityKit';
 priority: number
 ```
 
-Priority of the disposed rule, which is used to sort the query results of the rule list. The value is an integer.
-A smaller value indicates a higher priority.
+Priority of the disposed rule, which is used to sort the query results of the rule list. The value is an integer. A smaller value indicates a higher priority.
 
 **Type:** number
 

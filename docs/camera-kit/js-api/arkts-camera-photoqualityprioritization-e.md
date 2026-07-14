@@ -12,8 +12,7 @@ Enumerates the photo quality prioritization strategies.
 HIGH_QUALITY = 0
 ```
 
-Focuses on image quality, which may increase the time required for capturing photos to ensure high-quality
-output.
+Focuses on image quality, which may increase the time required for capturing photos to ensure high-quality output.
 
 **Since:** 21
 

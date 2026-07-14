@@ -1,31 +1,6 @@
 # SoundPool
 
-Implements a sound pool that provides APIs for loading, unloading, playing, and stopping playing system sounds,
-setting the volume, and setting the number of loops. Before using these APIs, you must call
-[media.createSoundPool](../../../../reference/apis-media-kit/arkts-apis-media-f.md)
-to create a SoundPool instance.
-
-> **NOTE**
->
-> - When using the SoundPool instance, you are advised to register the following callbacks to proactively obtain
-> status changes:
-> > - [on('loadComplete')](arkts-media-soundpool-i.md#on-1): listens for the
-> event indicating that the resource loading is finished. You are advised to listen for this callback to ensure that
-> the audio is played after being loaded.
-> > -
-> [on('playFinishedWithStreamId')](arkts-media-soundpool-i.md#on-2):
-> listens for the event indicating that the playback is finished and returns the stream ID of the audio that finishes
-> playing.
-> > - [on('playFinished')](arkts-media-soundpool-i.md#on-2): listens
-> for the event indicating that the playback is finished.
-> > - [on('error')](arkts-media-soundpool-i.md#on-4): listens for error events.
-> > - [on('errorOccurred')](arkts-media-soundpool-i.md#on-5): listens for
-> error events and returns [errorInfo](arkts-media-errorinfo-i.md).
->
-> - Currently, SoundPool does not support audio focus policies such as background playback and audio interruption, or
-> skipping the silent frames at the beginning and end of an audio file. For details about low-latency playback using
-> SoundPool, see
-> [Using SoundPool to Play Short Sounds (ArkTS)](../../../../media/media/using-soundpool-for-playback.md).
+Implements a sound pool that provides APIs for loading, unloading, playing, and stopping playing system sounds, setting the volume, and setting the number of loops. Before using these APIs, you must call [media.createSoundPool](../../../../reference/apis-media-kit/arkts-apis-media-f.md) to create a SoundPool instance. > **NOTE** > > - When using the SoundPool instance, you are advised to register the following callbacks to proactively obtain > status changes: > > - [on('loadComplete')](arkts-media-soundpool-i.md#on-1): listens for the > event indicating that the resource loading is finished. You are advised to listen for this callback to ensure that > the audio is played after being loaded. > > - > [on('playFinishedWithStreamId')](arkts-media-soundpool-i.md#on-2): > listens for the event indicating that the playback is finished and returns the stream ID of the audio that finishes > playing. > > - [on('playFinished')](arkts-media-soundpool-i.md#on-2): listens > for the event indicating that the playback is finished. > > - [on('error')](arkts-media-soundpool-i.md#on-4): listens for error events. > > - [on('errorOccurred')](arkts-media-soundpool-i.md#on-5): listens for > error events and returns [errorInfo](arkts-media-errorinfo-i.md). > > - Currently, SoundPool does not support audio focus policies such as background playback and audio interruption, or > skipping the silent frames at the beginning and end of an audio file. For details about low-latency playback using > SoundPool, see > [Using SoundPool to Play Short Sounds (ArkTS)](../../../../media/media/using-soundpool-for-playback.md).
 
 **Since:** 10
 
@@ -37,25 +12,7 @@ to create a SoundPool instance.
 load(uri: string, callback: AsyncCallback<number>): void
 ```
 
-Loads a sound. This API uses an asynchronous callback to return the result.
-
-This API uses an asynchronous callback to obtain the resource ID. The input parameter URL is a string starting with
-**fd://**, which is generated based on the file descriptor (FD) obtained.
-
-This API cannot be used to load resources in the **rawfile** directory. Instead, use
-[load(fd: number, offset: number, length: number, callback: AsyncCallback\<number>): void](arkts-media-soundpool-i.md#load-3)
-or
-[load(fd: number, offset: number, length: number): Promise\<number>](arkts-media-soundpool-i.md#load-4)
-.
-
-> **NOTE**
->
-> - After the resource handle (in the form of an FD) or path description (in the form of a URI) is transferred to
-> the player, do not use the resource handle or path description in read or write operations, including but not
-> limited to transferring it to multiple players.
->
-> - Competition occurs when multiple players use the same resource handle or path description to read and write
-> files at the same time, resulting in playback errors.
+Loads a sound. This API uses an asynchronous callback to return the result. This API uses an asynchronous callback to obtain the resource ID. The input parameter URL is a string starting with **fd://**, which is generated based on the file descriptor (FD) obtained. This API cannot be used to load resources in the **rawfile** directory. Instead, use [load(fd: number, offset: number, length: number, callback: AsyncCallback\<number>): void](arkts-media-soundpool-i.md#load-3) or [load(fd: number, offset: number, length: number): Promise\<number>](arkts-media-soundpool-i.md#load-4) . > **NOTE** > > - After the resource handle (in the form of an FD) or path description (in the form of a URI) is transferred to > the player, do not use the resource handle or path description in read or write operations, including but not > limited to transferring it to multiple players. > > - Competition occurs when multiple players use the same resource handle or path description to read and write > files at the same time, resulting in playback errors.
 
 **Since:** 10
 
@@ -82,25 +39,7 @@ or
 load(uri: string): Promise<number>
 ```
 
-Loads a sound. This API uses a promise to return the result.
-
-This API uses a promise to obtain the resource ID. The input parameter URL is a string starting with **fd://**,
-which is generated based on the file descriptor (FD) obtained.
-
-This API cannot be used to load resources in the **rawfile** directory. Instead, use
-[load(fd: number, offset: number, length: number, callback: AsyncCallback\<number>): void](arkts-media-soundpool-i.md#load-3)
-or
-[load(fd: number, offset: number, length: number): Promise\<number>](arkts-media-soundpool-i.md#load-4)
-.
-
-> **NOTE**
->
-> - After the resource handle (in the form of an FD) or path description (in the form of a URI) is transferred to
-> the player, do not use the resource handle or path description in read or write operations, including but not
-> limited to transferring it to multiple players.
->
-> - Competition occurs when multiple players use the same resource handle or path description to read and write
-> files at the same time, resulting in playback errors.
+Loads a sound. This API uses a promise to return the result. This API uses a promise to obtain the resource ID. The input parameter URL is a string starting with **fd://**, which is generated based on the file descriptor (FD) obtained. This API cannot be used to load resources in the **rawfile** directory. Instead, use [load(fd: number, offset: number, length: number, callback: AsyncCallback\<number>): void](arkts-media-soundpool-i.md#load-3) or [load(fd: number, offset: number, length: number): Promise\<number>](arkts-media-soundpool-i.md#load-4) . > **NOTE** > > - After the resource handle (in the form of an FD) or path description (in the form of a URI) is transferred to > the player, do not use the resource handle or path description in read or write operations, including but not > limited to transferring it to multiple players. > > - Competition occurs when multiple players use the same resource handle or path description to read and write > files at the same time, resulting in playback errors.
 
 **Since:** 10
 
@@ -132,19 +71,7 @@ or
 load(fd: number, offset: number, length: number, callback: AsyncCallback<number>): void
 ```
 
-Loads a sound. This API uses an asynchronous callback to return the result.
-
-This API uses an asynchronous callback to obtain the resource ID. For the input parameter, resource information can
-be passed in manually or acquired automatically by reading the application's built-in resources.
-
-> **NOTE**
->
-> - After the resource handle (in the form of an FD) or path description (in the form of a URI) is transferred to
-> the player, do not use the resource handle or path description in read or write operations, including but not
-> limited to transferring it to multiple players.
->
-> - Competition occurs when multiple players use the same resource handle or path description to read and write
-> files at the same time, resulting in playback errors.
+Loads a sound. This API uses an asynchronous callback to return the result. This API uses an asynchronous callback to obtain the resource ID. For the input parameter, resource information can be passed in manually or acquired automatically by reading the application's built-in resources. > **NOTE** > > - After the resource handle (in the form of an FD) or path description (in the form of a URI) is transferred to > the player, do not use the resource handle or path description in read or write operations, including but not > limited to transferring it to multiple players. > > - Competition occurs when multiple players use the same resource handle or path description to read and write > files at the same time, resulting in playback errors.
 
 **Since:** 10
 
@@ -173,19 +100,7 @@ be passed in manually or acquired automatically by reading the application's bui
 load(fd: number, offset: number, length: number): Promise<number>
 ```
 
-Loads a sound. This API uses a promise to return the result.
-
-This API uses a promise to obtain the resource ID. For the input parameter, resource information can be passed in
-manually or acquired automatically by reading the application's built-in resources.
-
-> **NOTE**
->
-> - After the resource handle (in the form of an FD) or path description (in the form of a URI) is transferred to
-> the player, do not use the resource handle or path description in read or write operations, including but not
-> limited to transferring it to multiple players.
->
-> - Competition occurs when multiple players use the same resource handle or path description to read and write
-> files at the same time, resulting in playback errors.
+Loads a sound. This API uses a promise to return the result. This API uses a promise to obtain the resource ID. For the input parameter, resource information can be passed in manually or acquired automatically by reading the application's built-in resources. > **NOTE** > > - After the resource handle (in the form of an FD) or path description (in the form of a URI) is transferred to > the player, do not use the resource handle or path description in read or write operations, including but not > limited to transferring it to multiple players. > > - Competition occurs when multiple players use the same resource handle or path description to read and write > files at the same time, resulting in playback errors.
 
 **Since:** 10
 
@@ -310,8 +225,7 @@ Unsubscribes from error events of a SoundPool instance.
 on(type: 'loadComplete', callback: Callback<number>): void
 ```
 
-Subscribes to events indicating that a sound finishes loading. This API uses an asynchronous callback to return the
-result.
+Subscribes to events indicating that a sound finishes loading. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -330,17 +244,7 @@ result.
 on(type: 'playFinishedWithStreamId', callback: Callback<number>): void
 ```
 
-Subscribes to events indicating the completion of audio playback and returns the stream ID of the audio that
-finishes playing. This API uses an asynchronous callback to return the result.
-
-When only [on('playFinished')](arkts-media-soundpool-i.md#on-2) or
-[on('playFinishedWithStreamId')](arkts-media-soundpool-i.md#on-2) is
-subscribed to, the registered callback is triggered when the audio playback is complete.
-
-When both [on('playFinished')](arkts-media-soundpool-i.md#on-2) and
-[on('playFinishedWithStreamId')](arkts-media-soundpool-i.md#on-2) are
-subscribed to, the 'playFinishedWithStreamId' callback is triggered, but the 'playFinished' callback is not
-triggered, when the audio playback is complete.
+Subscribes to events indicating the completion of audio playback and returns the stream ID of the audio that finishes playing. This API uses an asynchronous callback to return the result. When only [on('playFinished')](arkts-media-soundpool-i.md#on-2) or [on('playFinishedWithStreamId')](arkts-media-soundpool-i.md#on-2) is subscribed to, the registered callback is triggered when the audio playback is complete. When both [on('playFinished')](arkts-media-soundpool-i.md#on-2) and [on('playFinishedWithStreamId')](arkts-media-soundpool-i.md#on-2) are subscribed to, the 'playFinishedWithStreamId' callback is triggered, but the 'playFinished' callback is not triggered, when the audio playback is complete.
 
 **Since:** 18
 
@@ -359,8 +263,7 @@ triggered, when the audio playback is complete.
 on(type: 'playFinished', callback: Callback<void>): void
 ```
 
-Subscribes to events indicating that a sound finishes playing. This API uses an asynchronous callback to return the
-result.
+Subscribes to events indicating that a sound finishes playing. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -379,9 +282,7 @@ result.
 on(type: 'error', callback: ErrorCallback): void
 ```
 
-Subscribes to error events of a
-[SoundPool](../../../../reference/apis-media-kit/js-apis-inner-multimedia-soundPool.md#soundpool) instance. This
-event is used only for error prompt. This API uses an asynchronous callback to return the result.
+Subscribes to error events of a [SoundPool](../../../../reference/apis-media-kit/js-apis-inner-multimedia-soundPool.md#soundpool) instance. This event is used only for error prompt. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -400,10 +301,7 @@ event is used only for error prompt. This API uses an asynchronous callback to r
 on(type: 'errorOccurred', callback: Callback<ErrorInfo>): void
 ```
 
-Subscribes to error events of a
-[SoundPool](../../../../reference/apis-media-kit/js-apis-inner-multimedia-soundPool.md#soundpool) instance and
-returns [ErrorInfo](arkts-media-errorinfo-i.md) that contains the error code, error stage, resource ID, and audio stream ID.
-This API uses an asynchronous callback to return the result.
+Subscribes to error events of a [SoundPool](../../../../reference/apis-media-kit/js-apis-inner-multimedia-soundPool.md#soundpool) instance and returns [ErrorInfo](arkts-media-errorinfo-i.md) that contains the error code, error stage, resource ID, and audio stream ID. This API uses an asynchronous callback to return the result.
 
 **Since:** 20
 
@@ -450,8 +348,7 @@ Plays a sound and obtains the stream ID. This API uses an asynchronous callback 
 play(soundID: number, callback: AsyncCallback<number>): void
 ```
 
-Plays a sound using default parameters and obtains the stream ID. This API uses an asynchronous callback to return
-the result.
+Plays a sound using default parameters and obtains the stream ID. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -559,12 +456,7 @@ Releases a **SoundPool** instance. This API uses a promise to return the result.
 setInterruptMode(interruptMode: media.SoundInterruptMode): void
 ```
 
-Sets the interruption mode of the audio files with the same ID during playback. After the **SoundPool** is created,
-this API is valid only when the **Play** function of the **SoundPool** is called for the first time. You can set
-the interruption mode for multiple times. If the interruption mode is not set, the
-[SAME_SOUND_INTERRUPT](../../../../reference/apis-media-kit/arkts-apis-media-e.md) mode is used by default. That is
-, if the former audio file is not completely played, the latter audio file with the same ID interrupts the former
-audio file.
+Sets the interruption mode of the audio files with the same ID during playback. After the **SoundPool** is created, this API is valid only when the **Play** function of the **SoundPool** is called for the first time. You can set the interruption mode for multiple times. If the interruption mode is not set, the [SAME_SOUND_INTERRUPT](../../../../reference/apis-media-kit/arkts-apis-media-e.md) mode is used by default. That is , if the former audio file is not completely played, the latter audio file with the same ID interrupts the former audio file.
 
 **Since:** 23
 

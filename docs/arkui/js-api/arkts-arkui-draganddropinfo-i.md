@@ -18,8 +18,7 @@ import { dragController } from '@kit.ArkUI';
 event: DragEvent
 ```
 
-Drag event corresponding to the current state. The drag event initiated by **dragController** only supports the
-APIs for obtaining the result and behavior, and is used exclusively for the dragging end state.
+Drag event corresponding to the current state. The drag event initiated by **dragController** only supports the APIs for obtaining the result and behavior, and is used exclusively for the dragging end state.
 
 **Type:** DragEvent
 

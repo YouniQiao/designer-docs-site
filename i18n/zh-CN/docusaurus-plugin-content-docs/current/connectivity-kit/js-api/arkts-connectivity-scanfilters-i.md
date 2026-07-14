@@ -12,8 +12,7 @@
 address?: string
 ```
 
-设备地址。
-长度必须为17，由16进制数字和冒号组成，形如 "11:22:33:AA:BB:FF"。
+设备地址。 长度必须为17，由16进制数字和冒号组成，形如 "11:22:33:AA:BB:FF"。
 
 **类型：** string
 
@@ -77,8 +76,7 @@ manufacturerDataMask?: ArrayBuffer
 manufacturerId?: number
 ```
 
-厂商ID。
-取值范围为全体整数。
+厂商ID。 取值范围为全体整数。
 
 **类型：** number
 
@@ -94,8 +92,7 @@ manufacturerId?: number
 rssi?: number
 ```
 
-接收信号强度指示。
-单位为： 分贝毫瓦，取值应为[-128,127]内的整数。
+接收信号强度指示。 单位为： 分贝毫瓦，取值应为[-128,127]内的整数。
 
 **类型：** number
 

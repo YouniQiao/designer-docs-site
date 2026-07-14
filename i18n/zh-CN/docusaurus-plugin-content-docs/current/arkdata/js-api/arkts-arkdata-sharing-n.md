@@ -15,9 +15,9 @@
 
 | 名称 | 说明 |
 | --- | --- |
-| [allocResourceAndShare](arkts-arkdata-allocresourceandshare-f-sys.md#allocresourceandshare-1) | 根据谓词条件匹配的数据申请共享资源标识并发起共享，返回已共享资源的结果集。如果指定了列字段，则返回的结果集中同时包含对应列的字段值，使用Promise异步回调。 |
+| [allocResourceAndShare](arkts-arkdata-allocresourceandshare-f-sys.md#allocresourceandshare-1) | 根据谓词条件匹配的数据申请共享资源标识并发起共享，返回已共享资源的结果集。 如果指定了列字段，则返回的结果集中同时包含对应列的字段值，使用Promise异步回调。 |
 | [allocResourceAndShare](arkts-arkdata-allocresourceandshare-f-sys.md#allocresourceandshare-2) | 根据谓词条件匹配的数据申请共享资源标识并发起共享，返回已共享资源的结果集，使用callback异步回调。 |
-| [allocResourceAndShare](arkts-arkdata-allocresourceandshare-f-sys.md#allocresourceandshare-3) | 根据谓词条件匹配的数据申请共享资源标识并发起共享，返回已共享资源的结果集并根据指定的列字段，返回的结果集中同时包含对应列的字段值，使用callback异步回调。 |
+| [allocResourceAndShare](arkts-arkdata-allocresourceandshare-f-sys.md#allocresourceandshare-3) | 根据谓词条件匹配的数据申请共享资源标识并发起共享，返回已共享资源的结果集 并根据指定的列字段，返回的结果集中同时包含对应列的字段值，使用callback异步回调。 |
 | [share](arkts-arkdata-share-f-sys.md#share-1) | 根据指定的共享资源标识和共享参与者发起共享邀请，使用callback异步回调。 |
 | [share](arkts-arkdata-share-f-sys.md#share-2) | 根据指定的共享资源标识和共享参与者发起共享邀请，使用Promise异步回调。 |
 | [unshare](arkts-arkdata-unshare-f-sys.md#unshare-1) | 根据指定的共享资源标识和共享参与者发起共享邀请，使用callback异步回调。 |

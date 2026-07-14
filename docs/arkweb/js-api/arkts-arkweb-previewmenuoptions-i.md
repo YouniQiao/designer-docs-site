@@ -12,9 +12,7 @@ Represents the options of the preview menu.
 hapticFeedbackMode?: HapticFeedbackMode
 ```
 
-Vibration effect when the menu is displayed. The **ohos.permission.VIBRATE** permission is required.
-
-Default value: **HapticFeedbackMode.DISABLED**, indicating no vibration when the menu is displayed.
+Vibration effect when the menu is displayed. The **ohos.permission.VIBRATE** permission is required. Default value: **HapticFeedbackMode.DISABLED**, indicating no vibration when the menu is displayed.
 
 **Type:** HapticFeedbackMode
 

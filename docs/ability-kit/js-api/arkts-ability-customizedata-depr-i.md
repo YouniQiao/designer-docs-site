@@ -1,11 +1,6 @@
 # CustomizeData
 
-The CustomizeData module provides custom metadata.
-
-> **NOTE**
->
-> The APIs of this module have been deprecated since API version 9. You are advised to use
-> [Metadata](arkts-ability-metadata-i.md) instead.
+The CustomizeData module provides custom metadata. > **NOTE** > > The APIs of this module have been deprecated since API version 9. You are advised to use > [Metadata](arkts-ability-metadata-i.md) instead.
 
 **Since:** 7
 

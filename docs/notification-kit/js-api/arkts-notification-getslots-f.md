@@ -12,7 +12,7 @@ import { notificationManager } from '@kit.NotificationKit';
 function getSlots(callback: AsyncCallback<Array<NotificationSlot>>): void
 ```
 
-Obtains all notification slots of this application. This API uses an asynchronous callback to return the result.
+Obtains all notification slots of this application. This API uses an asynchronous callback to return the result. This API is used to batch query the configuration information of all notification slots created by the current application, including settings such as the type, reminder method, and level of each slot. This is suitable for scenarios where all slot configurations need to be viewed.
 
 **Since:** 9
 
@@ -22,7 +22,7 @@ Obtains all notification slots of this application. This API uses an asynchronou
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;Array&lt;NotificationSlot&gt;&gt; | Yes | Callback used to return the result. If the operationis successful, **err** is **undefined** and **data** is the obtained **NotificationSlot** array; otherwise,**err** is an error object. |
+| callback | AsyncCallback&lt;Array&lt;NotificationSlot&gt;&gt; | Yes | Callback used to return the result. Ifthe notification slots are obtained successfully, **err** is **undefined** and **data** is theobtained **NotificationSlot** array. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -57,7 +57,7 @@ notificationManager.getSlots(getSlotsCallback);
 function getSlots(): Promise<Array<NotificationSlot>>
 ```
 
-Obtains all notification slots of this application. This API uses a promise to return the result.
+Obtains all notification slots of this application. This API uses a promise to return the result. This API is used to batch query the configuration information of all notification slots created by the current application, including settings such as the type, reminder method, and level of each slot. This is suitable for scenarios where all slot configurations need to be viewed.
 
 **Since:** 9
 

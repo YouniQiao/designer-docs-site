@@ -32,8 +32,7 @@ Time when the file was last opened. The value must be greater than or equal to 0
 uri: string
 ```
 
-URI of the DLP file. The value contains a maximum of 4095 bytes. If the value is out of range, error code
-19100001 is thrown.
+URI of the DLP file. The value contains a maximum of 4095 bytes. If the value is out of range, error code 19100001 is thrown.
 
 **Type:** string
 

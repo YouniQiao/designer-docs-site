@@ -1,7 +1,6 @@
 # RelativeTimeFormatInputOptions
 
-Defines the configuration options for a **RelativeTimeFormat** object.
-Since API version 9, the attributes in **RelativeTimeFormatInputOptions** are optional.
+Defines the configuration options for a **RelativeTimeFormat** object. Since API version 9, the attributes in **RelativeTimeFormatInputOptions** are optional.
 
 **Since:** 8
 
@@ -23,9 +22,7 @@ import { intl } from '@kit.LocalizationKit';
 localeMatcher?: string
 ```
 
-Locale matching algorithm. The value can be **lookup** or **best fit**.
-
-The default value is **best fit**.
+Locale matching algorithm. The value can be **lookup** or **best fit**. The default value is **best fit**.
 
 **Type:** string
 
@@ -45,13 +42,7 @@ The default value is **best fit**.
 numeric?: string
 ```
 
-Format of the output result. It determines whether numeric values are used to represent relative dates or times
-in the formatting result. The value can be **always** or **auto**.
-
-The default value is **always**.
-
-For details about their display effects, see
-[Table 23](../../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
+Format of the output result. It determines whether numeric values are used to represent relative dates or times in the formatting result. The value can be **always** or **auto**. The default value is **always**. For details about their display effects, see [Table 23](../../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
 
 **Type:** string
 
@@ -71,9 +62,7 @@ For details about their display effects, see
 style?: string
 ```
 
-Length of an internationalized message. The value can be **long**, **short**, or **narrow**.
-
-The default value is **long**.
+Length of an internationalized message. The value can be **long**, **short**, or **narrow**. The default value is **long**.
 
 **Type:** string
 

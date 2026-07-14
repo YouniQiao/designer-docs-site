@@ -2,7 +2,6 @@
 
 Instance of MediaCachedImage component.
 
-
 ## MediaCachedImage
 
 ```TypeScript

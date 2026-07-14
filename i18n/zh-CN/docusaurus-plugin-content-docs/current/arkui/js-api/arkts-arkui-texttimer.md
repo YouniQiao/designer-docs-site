@@ -1,9 +1,6 @@
 # TextTimer
 
-通过文本显示计时信息并控制其计时器状态的组件。
-
-组件不可见（非锁屏状态和应用后台状态）时，UI时间变动将停止（即该组件此时不会绘制），[onTimer]{@link TextTimerAttribute#onTimer}仍然会正常触发。
-
+通过文本显示计时信息并控制其计时器状态的组件。 组件不可见（非锁屏状态和应用后台状态）时，UI时间变动将停止（即该组件此时不会绘制），[onTimer]{@link TextTimerAttribute#onTimer}仍然会正常触发。
 
 ## TextTimer
 

@@ -12,9 +12,7 @@ import { formHost } from '@kit.FormKit';
 function updateFormLockedState(formId: string, isLocked: boolean): Promise<void>
 ```
 
-Notifies the update of the widget lock state. This API uses a promise to return the result.
-If an application is locked, its widget will also be locked and masked in a locked style. To use the widget, you
-need to enter the password set for the widget.
+Notifies the update of the widget lock state. This API uses a promise to return the result. If an application is locked, its widget will also be locked and masked in a locked style. To use the widget, you need to enter the password set for the widget.
 
 **Since:** 22
 

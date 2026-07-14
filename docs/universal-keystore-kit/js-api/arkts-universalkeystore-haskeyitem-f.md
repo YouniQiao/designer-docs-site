@@ -12,9 +12,7 @@ import { huks } from '@kit.UniversalKeystoreKit';
 function hasKeyItem(keyAlias: string, options: HuksOptions, callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether a key exists. This API uses an asynchronous callback to return the result.
-
-If the key does not exist, **false** is returned through the callback.
+Checks whether a key exists. This API uses an asynchronous callback to return the result. If the key does not exist, **false** is returned through the callback.
 
 **Since:** 11
 
@@ -75,9 +73,7 @@ huks.hasKeyItem(keyAlias, emptyOptions, (error, data) => {
 function hasKeyItem(keyAlias: string, options: HuksOptions): Promise<boolean>
 ```
 
-Checks whether a key exists. This API uses a promise to return the result.
-
-If the key does not exist, **false** is returned through the promise.
+Checks whether a key exists. This API uses a promise to return the result. If the key does not exist, **false** is returned through the promise.
 
 **Since:** 11
 

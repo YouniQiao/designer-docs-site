@@ -1,7 +1,6 @@
 # GallerySync (System API)
 
-Provides APIs to implement device-cloud sync of media assets in **Gallery**. Before using the APIs of
-**GallerySync**, you need to create a **GallerySync** instance.
+Provides APIs to implement device-cloud sync of media assets in **Gallery**. Before using the APIs of **GallerySync**, you need to create a **GallerySync** instance.
 
 **Since:** 10
 
@@ -278,12 +277,7 @@ gallerySync.start((err: BusinessError) => {
 stop(): Promise<void>
 ```
 
-Stops device-cloud sync. This API uses a promise to return the result.
-
-> **NOTE**
->
-> Calling **stop** will stop the sync process. To resume the sync, call
-> [start](arkts-corefile-gallerysync-c-sys.md#start-1).
+Stops device-cloud sync. This API uses a promise to return the result. > **NOTE** > > Calling **stop** will stop the sync process. To resume the sync, call > [start](arkts-corefile-gallerysync-c-sys.md#start-1).
 
 **Since:** 10
 
@@ -328,12 +322,7 @@ gallerySync.stop().then(() => {
 stop(callback: AsyncCallback<void>): void
 ```
 
-Stops device-cloud sync. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> Calling **stop** will stop the sync process. To resume the sync, call
-> [start](arkts-corefile-gallerysync-c-sys.md#start-1).
+Stops device-cloud sync. This API uses an asynchronous callback to return the result. > **NOTE** > > Calling **stop** will stop the sync process. To resume the sync, call > [start](arkts-corefile-gallerysync-c-sys.md#start-1).
 
 **Since:** 10
 

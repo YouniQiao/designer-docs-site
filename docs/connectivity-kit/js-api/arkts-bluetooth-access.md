@@ -18,7 +18,7 @@ import { access } from '@kit.ConnectivityKit';
 
 | Name | Description |
 | --- | --- |
-| [addPersistentDeviceId](arkts-connectivity-addpersistentdeviceid-f.md#addpersistentdeviceid-1) | Add a persistent random device address. Once the randomized address is successfully added,the application can save it for an extended period of time. |
+| [addPersistentDeviceId](arkts-connectivity-addpersistentdeviceid-f.md#addpersistentdeviceid-1) | Add a persistent random device address. Once the randomized address is successfully added, the application can save it for an extended period of time. |
 | [convertUuid](arkts-connectivity-convertuuid-f.md#convertuuid-1) | Convert 2-byte and 4-byte UUID strings to the 16-byte UUID string standard used in Bluetooth. |
 | [deletePersistentDeviceId](arkts-connectivity-deletepersistentdeviceid-f.md#deletepersistentdeviceid-1) | Delete a persistent random device address. |
 | [disableBluetooth](arkts-connectivity-disablebluetooth-f.md#disablebluetooth-1) | Disables Bluetooth on a device. |

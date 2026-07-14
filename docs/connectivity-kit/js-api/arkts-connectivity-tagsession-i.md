@@ -1,8 +1,6 @@
 # TagSession
 
-Controls tag read and write.
-<p>Classes for different types of tags inherit from this abstract class to control connections to
-tags, read data from tags, and write data to tags.
+Controls tag read and write. <p>Classes for different types of tags inherit from this abstract class to control connections to tags, read data from tags, and write data to tags.
 
 **Since:** 12
 
@@ -38,8 +36,7 @@ Connects to a tag. Must be called before data is read from or written to the tag
 connectTag(): boolean
 ```
 
-Connects to a tag.
-<p>This method must be called before data is read from or written to the tag.
+Connects to a tag. <p>This method must be called before data is read from or written to the tag.
 
 **Since:** 7
 
@@ -340,8 +337,7 @@ Writes data to a tag.
 setSendDataTimeout(timeout: number): boolean
 ```
 
-Sets the timeout duration (ms) for sending data to a tag.
-<p>If data is not sent to the tag within the duration, data sending fails.
+Sets the timeout duration (ms) for sending data to a tag. <p>If data is not sent to the tag within the duration, data sending fails.
 
 **Since:** 7
 

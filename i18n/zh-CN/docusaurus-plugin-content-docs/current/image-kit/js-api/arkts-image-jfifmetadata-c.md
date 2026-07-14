@@ -12,8 +12,7 @@ JFIF metadata.
 readonly densityUnit?: number
 ```
 
-JFIF density unit.
-The value should be an integer.
+JFIF density unit. The value should be an integer.
 
 **类型：** number
 
@@ -61,8 +60,7 @@ JFIF version.
 readonly xDensity?: number
 ```
 
-JFIF x density.
-The value should be an integer.
+JFIF x density. The value should be an integer.
 
 **类型：** number
 
@@ -78,8 +76,7 @@ The value should be an integer.
 readonly yDensity?: number
 ```
 
-JFIF y density.
-The value should be an integer.
+JFIF y density. The value should be an integer.
 
 **类型：** number
 

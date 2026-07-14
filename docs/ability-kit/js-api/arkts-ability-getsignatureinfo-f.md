@@ -12,8 +12,7 @@ import { bundleManager } from '@kit.AbilityKit';
 function getSignatureInfo(uid: number): SignatureInfo
 ```
 
-Obtains the [signature information](bundleManager/BundleInfo:SignatureInfo) of an application based on the
-given UID.
+Obtains the [signature information](bundleManager/BundleInfo:SignatureInfo) of an application based on the given UID.
 
 **Since:** 18
 

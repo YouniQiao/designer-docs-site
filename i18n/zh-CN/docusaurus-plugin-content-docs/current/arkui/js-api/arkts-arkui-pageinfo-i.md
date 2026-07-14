@@ -1,10 +1,6 @@
 # PageInfo
 
-Defines the PageInfo type.
-The value of routerPageInfo indicates the information of the router page, or undefined if the
-frameNode does not have router page information. And the value of navDestinationInfo indicates
-the information of the navDestination, or undefined if the frameNode does not have navDestination
-information.
+Defines the PageInfo type. The value of routerPageInfo indicates the information of the router page, or undefined if the frameNode does not have router page information. And the value of navDestinationInfo indicates the information of the navDestination, or undefined if the frameNode does not have navDestination information.
 
 **起始版本：** 12
 

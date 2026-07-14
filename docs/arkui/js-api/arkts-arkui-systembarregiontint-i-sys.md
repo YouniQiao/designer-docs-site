@@ -20,8 +20,7 @@ import { window } from '@kit.ArkUI';
 backgroundColor?: string
 ```
 
-Background color of the system bar. The value is a hexadecimal RGB or ARGB color code and is case insensitive,
-for example, **'#00FF00'** or **'#FF00FF00'**. The default value is **'0x66000000'**.
+Background color of the system bar. The value is a hexadecimal RGB or ARGB color code and is case insensitive, for example, **'#00FF00'** or **'#FF00FF00'**. The default value is **'0x66000000'**.
 
 **Type:** string
 

@@ -1,7 +1,6 @@
 # AudioRecordingManager
 
-Provides recording strategy management, including collaborative recording
-and recording control capabilities.
+Provides recording strategy management, including collaborative recording and recording control capabilities.
 
 **Since:** 26.0.0
 

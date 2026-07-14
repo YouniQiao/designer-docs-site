@@ -6,6 +6,12 @@ Describes the service data.
 
 **System capability:** SystemCapability.Communication.NearLink.Base
 
+## Modules to Import
+
+```TypeScript
+import { advertising } from '@kit.ConnectivityKit';
+```
+
 ## serviceData
 
 ```TypeScript
@@ -28,9 +34,7 @@ Indicates the service data.
 serviceUuid: string
 ```
 
-Indicates the service UUID.
-The length must be 36, The value consists of 36 hexadecimal digits and hyphens (-),
-for example, FFFFFFFF-1234-5678-ABCD-000000001234, indicating a 128-bit identifier.
+Indicates the service UUID. The length must be 36, The value consists of 36 hexadecimal digits and hyphens (-), for example, FFFFFFFF-1234-5678-ABCD-000000001234, indicating a 128-bit identifier.
 
 **Type:** string
 

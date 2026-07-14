@@ -18,10 +18,7 @@ import { taskpool } from '@kit.ArkTS';
 duration?: number
 ```
 
-Duration that the task has been executed, in ms. The default value is **0**. If the return value is **0**, the
-task is not running. If the return value is empty, no task is running. You are advised not to change the value.<
-br>
-This API can be used in atomic services since API version 11.
+Duration that the task has been executed, in ms. The default value is **0**. If the return value is **0**, the task is not running. If the return value is empty, no task is running. You are advised not to change the value.< br> This API can be used in atomic services since API version 11.
 
 **Type:** number
 
@@ -37,8 +34,7 @@ This API can be used in atomic services since API version 11.
 name: string
 ```
 
-Task name. You are advised not to change the value.<br>
-This API can be used in atomic services since API version 12.
+Task name. You are advised not to change the value.<br> This API can be used in atomic services since API version 12.
 
 **Type:** string
 
@@ -54,8 +50,7 @@ This API can be used in atomic services since API version 12.
 state: State
 ```
 
-Task state. You are advised not to change the value.<br>
-This API can be used in atomic services since API version 11.
+Task state. You are advised not to change the value.<br> This API can be used in atomic services since API version 11.
 
 **Type:** State
 
@@ -73,8 +68,7 @@ This API can be used in atomic services since API version 11.
 taskId: number
 ```
 
-Task ID, which is globally unique by default. You are advised not to change the value.<br>
-This API can be used in atomic services since API version 11.
+Task ID, which is globally unique by default. You are advised not to change the value.<br> This API can be used in atomic services since API version 11.
 
 **Type:** number
 

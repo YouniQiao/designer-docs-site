@@ -12,8 +12,7 @@ import { connection } from '@kit.NetworkKit';
 function setNetExtAttribute(netHandle: NetHandle, netExtAttribute: string): Promise<void>
 ```
 
-Set the network extended attribute for a {@link NetHandle} object.
-To invoke this method, you must have the {@code ohos.permission.SET_NET_EXT_ATTRIBUTE} permission.
+Set the network extended attribute for a {@link NetHandle} object. To invoke this method, you must have the {@code ohos.permission.SET_NET_EXT_ATTRIBUTE} permission.
 
 **Since:** 20
 

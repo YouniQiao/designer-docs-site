@@ -20,8 +20,7 @@ import { geoLocationManager } from '@kit.LocationKit';
 arfcn?: number[]
 ```
 
-Indicates absolute radio frequency channel number (ARFCN).
-Querying Cell Information by Specified ARFCN.
+Indicates absolute radio frequency channel number (ARFCN). Querying Cell Information by Specified ARFCN.
 
 **Type:** number[]
 
@@ -73,8 +72,7 @@ Indicates PLMN number of the SIM card.
 scanInterval?: number
 ```
 
-Indicates the interval between scans. The unit is millisecond.
-This parameter needs to be set only when scanning information is continuously monitored.
+Indicates the interval between scans. The unit is millisecond. This parameter needs to be set only when scanning information is continuously monitored.
 
 **Type:** number
 
@@ -90,8 +88,7 @@ This parameter needs to be set only when scanning information is continuously mo
 scanTimeout?: number
 ```
 
-Indicates the timeout period of a single scan. The unit is millisecond. The default value is 10000.
-This parameter needs to be set only when getLocatingRequiredData is used.
+Indicates the timeout period of a single scan. The unit is millisecond. The default value is 10000. This parameter needs to be set only when getLocatingRequiredData is used.
 
 **Type:** number
 
@@ -107,7 +104,7 @@ This parameter needs to be set only when getLocatingRequiredData is used.
 slotId?: number
 ```
 
-Indicates SIM card slot number.
+Indicates SIM card slot number. The value should be an integer.
 
 **Type:** number
 

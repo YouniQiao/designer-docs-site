@@ -12,13 +12,7 @@
 height?: number | string
 ```
 
-形状的高度。
-
-类型为number时取值范围是[0, +∞)，string时是[Length](../arkts-components/arkts-arkui-length-t.md)。
-
-单位：vp
-
-取值为异常值时按照0vp处理。
+形状的高度。 类型为number时取值范围是[0, +∞)，string时是[Length](../arkts-components/arkts-arkui-length-t.md)。 单位：vp 取值为异常值时按照0vp处理。
 
 **类型：** number | string
 
@@ -38,13 +32,7 @@ height?: number | string
 width?: number | string
 ```
 
-形状的宽度。
-
-类型为number时取值范围是[0, +∞)，string时是[Length](../arkts-components/arkts-arkui-length-t.md)。
-
-单位：vp
-
-取值为异常值时按照0vp处理。
+形状的宽度。 类型为number时取值范围是[0, +∞)，string时是[Length](../arkts-components/arkts-arkui-length-t.md)。 单位：vp 取值为异常值时按照0vp处理。
 
 **类型：** number | string
 

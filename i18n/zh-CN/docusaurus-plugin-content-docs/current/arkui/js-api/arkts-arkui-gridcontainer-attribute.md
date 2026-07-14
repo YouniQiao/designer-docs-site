@@ -1,8 +1,6 @@
 # GridContainer属性/事件
 
-支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)和Column组件的[属性方法](../../../../reference/apis-arkui/arkui-ts/ts-container-column.md#属性)。
-
-支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)。
+支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)和Column组件的[属性方法](../../../../reference/apis-arkui/arkui-ts/ts-container-column.md#属性)。 支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)。
 
 **继承/实现关系：** GridContainerAttribute extends [ColumnAttribute](arkts-arkui-column-attribute.md)
 

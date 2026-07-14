@@ -1,7 +1,6 @@
 # AtManager
 
-程序访问控制管理类，提供权限校验、运行时权限弹窗申请、设置页授权引导、全局开关请求和权限状态监听等能力。通过[createAtManager](arkts-ability-createatmanager-f.md#createatmanager-1)
-获取实例。
+程序访问控制管理类，提供权限校验、运行时权限弹窗申请、设置页授权引导、全局开关请求和权限状态监听等能力。通过[createAtManager](arkts-ability-createatmanager-f.md#createatmanager-1) 获取实例。
 
 **起始版本：** 8
 
@@ -429,9 +428,7 @@ promise.then((data: number) => {
 grantPermission(tokenID: number, permissionName: Permissions, permissionFlags: number): Promise<void>
 ```
 
-授予应用权限。调用成功后，指定应用获得该权限，可以访问相应的受保护资源。与
-[grantUserGrantedPermission](arkts-ability-atmanager-i-sys.md#grantusergrantedpermission-1)仅支持user_grant类型权限不同,
-该接口同时支持user_grant和manual_settings类型的权限授予。使用Promise异步回调。
+授予应用权限。调用成功后，指定应用获得该权限，可以访问相应的受保护资源。与 [grantUserGrantedPermission](arkts-ability-atmanager-i-sys.md#grantusergrantedpermission-1)仅支持user_grant类型权限不同, 该接口同时支持user_grant和manual_settings类型的权限授予。使用Promise异步回调。
 
 **起始版本：** 21
 
@@ -491,10 +488,7 @@ atManager.grantPermission(tokenID, 'ohos.permission.READ_AUDIO', permissionFlags
 grantUserGrantedPermission(tokenID: number, permissionName: Permissions, permissionFlags: number): Promise<void>
 ```
 
-授予应用user_grant权限。调用成功后，应用获得该user_grant权限，可以访问相应的受保护资源。使用Promise异步回调。
-
-本接口仅支持授予user_grant类型的权限。若需要授予user_grant或manual_settings类型权限，建议使用
-[grantPermission](arkts-ability-atmanager-i-sys.md#grantpermission-1)。
+授予应用user_grant权限。调用成功后，应用获得该user_grant权限，可以访问相应的受保护资源。使用Promise异步回调。 本接口仅支持授予user_grant类型的权限。若需要授予user_grant或manual_settings类型权限，建议使用 [grantPermission](arkts-ability-atmanager-i-sys.md#grantpermission-1)。
 
 **起始版本：** 8
 
@@ -621,12 +615,7 @@ off(
     ): void
 ```
 
-取消订阅指定tokenID列表与权限列表的权限状态变更事件。使用callback异步回调。
-
-取消订阅时，若不传入callback，则批量取消与tokenIDList和permissionList完全匹配的所有监听回调。
-
-> **说明**
-> 该接口通常与[on](abilityAccessCtrl.AtManager.on)配套使用，用于取消通过on创建的监听关系。
+取消订阅指定tokenID列表与权限列表的权限状态变更事件。使用callback异步回调。 取消订阅时，若不传入callback，则批量取消与tokenIDList和permissionList完全匹配的所有监听回调。 > **说明** > 该接口通常与[on](abilityAccessCtrl.AtManager.on)配套使用，用于取消通过on创建的监听关系。
 
 **起始版本：** 9
 
@@ -685,13 +674,7 @@ on(
     ): void
 ```
 
-订阅指定tokenID列表与权限列表的权限状态变更事件。使用callback异步回调。
-
-允许指定tokenID列表与权限列表订阅多个callback。
-
-> **说明**
-> 若新的订阅与已有订阅在tokenID列表和权限列表上存在交集，不允许使用相同的callback进行订阅。
-> 该接口通常与[off](abilityAccessCtrl.AtManager.of)配套使用，当不再需要监听时应调用off取消订阅。
+订阅指定tokenID列表与权限列表的权限状态变更事件。使用callback异步回调。 允许指定tokenID列表与权限列表订阅多个callback。 > **说明** > 若新的订阅与已有订阅在tokenID列表和权限列表上存在交集，不允许使用相同的callback进行订阅。 > 该接口通常与[off](abilityAccessCtrl.AtManager.of)配套使用，当不再需要监听时应调用off取消订阅。
 
 **起始版本：** 9
 
@@ -922,12 +905,7 @@ requestPermissionsFromUserWithWindowId(
         permissionList: Array<Permissions>) : Promise<PermissionRequestResult>
 ```
 
-基于窗口ID弹出弹窗请求用户授权，调用成功后，返回本次权限申请结果对象，开发者可根据权限申请结果继续窗口级授权后的业务流程。使用Promise异步回调。
-
-适用于系统应用需要将权限申请弹窗明确附着到指定窗口的场景。
-
-如果用户拒绝授权，将无法再次拉起弹窗，可通过以下方式重新获取权限：1. 在系统设置界面中手动授权；2. 调用
-[requestPermissionOnSetting](arkts-ability-atmanager-i.md#requestpermissiononsetting-1)，拉起权限设置弹窗引导用户授权。
+基于窗口ID弹出弹窗请求用户授权，调用成功后，返回本次权限申请结果对象，开发者可根据权限申请结果继续窗口级授权后的业务流程。使用Promise异步回调。 适用于系统应用需要将权限申请弹窗明确附着到指定窗口的场景。 如果用户拒绝授权，将无法再次拉起弹窗，可通过以下方式重新获取权限：1. 在系统设置界面中手动授权；2. 调用 [requestPermissionOnSetting](arkts-ability-atmanager-i.md#requestpermissiononsetting-1)，拉起权限设置弹窗引导用户授权。
 
 **起始版本：** 23
 
@@ -994,9 +972,7 @@ revokePermission(
       killProcess?: boolean): Promise<void>
 ```
 
-撤销应用权限。调用成功后，应用失去该权限，无法访问相应的受保护资源。根据killProcess参数的值决定是否终止应用进程。使用Promise异步回调。
-
-当killProcess参数为true且权限状态从“已授权”变为“未授权”时，应用进程会被终止。
+撤销应用权限。调用成功后，应用失去该权限，无法访问相应的受保护资源。根据killProcess参数的值决定是否终止应用进程。使用Promise异步回调。 当killProcess参数为true且权限状态从“已授权”变为“未授权”时，应用进程会被终止。
 
 **起始版本：** 21
 
@@ -1064,12 +1040,7 @@ atManager.revokePermission(tokenID, 'ohos.permission.READ_AUDIO', permissionFlag
 revokeUserGrantedPermission(tokenID: number, permissionName: Permissions, permissionFlags: number): Promise<void>
 ```
 
-撤销应用user_grant权限。调用成功后，应用失去该user_grant权限，无法访问相应的受保护资源。使用Promise异步回调。
-
-本接口仅支持撤销user_grant类型的权限，且不支持控制是否终止应用进程。若需要撤销user_grant或manual_settings类型权限，或需要控制撤销权限后是否终止应用进程，建议使用
-[revokePermission](arkts-ability-atmanager-i-sys.md#revokepermission-1)。
-
-当权限状态从“已授权”变为“未授权”时，应用进程会被终止。
+撤销应用user_grant权限。调用成功后，应用失去该user_grant权限，无法访问相应的受保护资源。使用Promise异步回调。 本接口仅支持撤销user_grant类型的权限，且不支持控制是否终止应用进程。若需要撤销user_grant或manual_settings类型权限，或需要控制撤销权限后是否终止应用进程，建议使用 [revokePermission](arkts-ability-atmanager-i-sys.md#revokepermission-1)。 当权限状态从“已授权”变为“未授权”时，应用进程会被终止。
 
 **起始版本：** 8
 
@@ -1191,8 +1162,7 @@ atManager.revokeUserGrantedPermission(tokenID, 'ohos.permission.READ_AUDIO', per
 setPermissionRequestToggleStatus(permissionName: Permissions, status: PermissionRequestToggleStatus): Promise<void>
 ```
 
-设置当前用户指定权限的弹窗开关状态。调用成功后，该权限的弹窗开关状态将被设置为指定值。当状态为CLOSED时，应用请求该权限时不会弹出权限弹窗；当状态为OPEN时，应用请求该权限时会正常弹出权限弹窗。使用Promise异步回
-调。
+设置当前用户指定权限的弹窗开关状态。调用成功后，该权限的弹窗开关状态将被设置为指定值。当状态为CLOSED时，应用请求该权限时不会弹出权限弹窗；当状态为OPEN时，应用请求该权限时会正常弹出权限弹窗。使用Promise异步回 调。
 
 **起始版本：** 12
 

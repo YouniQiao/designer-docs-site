@@ -13,14 +13,7 @@ function executeDrag(custom: CustomBuilder | DragItemInfo, dragInfo: DragInfo,
     callback: AsyncCallback<DragEventParam>): void
 ```
 
-Initiates a drag action, with the object to be dragged and the drag information passed in. This API uses an
-asynchronous callback to return the result.
-
-> **NOTE**
->
-> Since API version 11, you can use the [getDragController](arkts-arkui-uicontext-c.md#getdragcontroller-1) API in
-> [UIContext](arkts-arkui-uicontext.md) to obtain the [DragController](arkts-arkui-dragcontroller-c.md) object
-> associated with the current UI context.
+Initiates a drag action, with the object to be dragged and the drag information passed in. This API uses an asynchronous callback to return the result. > **NOTE** > > Since API version 11, you can use the [getDragController](arkts-arkui-uicontext-c.md#getdragcontroller-1) API in > [UIContext](arkts-arkui-uicontext.md) to obtain the [DragController](arkts-arkui-dragcontroller-c.md) object > associated with the current UI context.
 
 **Since:** 10
 
@@ -138,14 +131,7 @@ struct DragControllerPage {
 function executeDrag(custom: CustomBuilder | DragItemInfo, dragInfo: DragInfo): Promise<DragEventParam>
 ```
 
-Initiates a drag action, with the object to be dragged and the drag information passed in. This API uses a promise
-to return the result.
-
-> **NOTE**
->
-> Since API version 11, you can use the [getDragController](arkts-arkui-uicontext-c.md#getdragcontroller-1) API in
-> [UIContext](arkts-arkui-uicontext.md) to obtain the [DragController](arkts-arkui-dragcontroller-c.md) object
-> associated with the current UI context.
+Initiates a drag action, with the object to be dragged and the drag information passed in. This API uses a promise to return the result. > **NOTE** > > Since API version 11, you can use the [getDragController](arkts-arkui-uicontext-c.md#getdragcontroller-1) API in > [UIContext](arkts-arkui-uicontext.md) to obtain the [DragController](arkts-arkui-dragcontroller-c.md) object > associated with the current UI context.
 
 **Since:** 10
 

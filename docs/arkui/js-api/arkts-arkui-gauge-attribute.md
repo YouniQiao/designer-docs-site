@@ -1,10 +1,6 @@
 # Gauge properties/events
 
-In addition to the
-[universal attributes](../../../../reference/apis-arkui/arkui-ts/ts-component-general-attributes.md), the following
-attributes are supported.
-
-The [universal events](../../../../reference/apis-arkui/arkui-ts/ts-component-general-events.md) are supported.
+In addition to the [universal attributes](../../../../reference/apis-arkui/arkui-ts/ts-component-general-attributes.md), the following attributes are supported. The [universal events](../../../../reference/apis-arkui/arkui-ts/ts-component-general-events.md) are supported.
 
 **Inheritance/Implementation:** GaugeAttribute extends [CommonMethod<GaugeAttribute>](CommonMethod<GaugeAttribute>)
 
@@ -18,20 +14,7 @@ The [universal events](../../../../reference/apis-arkui/arkui-ts/ts-component-ge
 colors(colors: ResourceColor | LinearGradient | Array<[ResourceColor | LinearGradient, number]>)
 ```
 
-Sets the colors of the gauge.
-
-Since API version 11, this API follows the following rules:
-
-If the data type is [ResourceColor](arkts-arkui-resourcecolor-t.md), the ring is of the monochrome type.
-
-If the data type is [LinearGradient](arkts-arkui-lineargradient-i.md), the ring is of the gradient type.
-
-If the data type is Array, the ring is of the gradient type. The first parameter indicates the color value. If it
-is set to a non-color value, the color of 0xFFE84026 is used. The second parameter indicates the color weight. If
-it is set to a negative number or a non-numeric value, the color weight is 0.
-
-A ring of the gradient type contains a maximum of nine color segments. If there are more than nine segments, the
-excess is not displayed.
+Sets the colors of the gauge. Since API version 11, this API follows the following rules: If the data type is [ResourceColor](arkts-arkui-resourcecolor-t.md), the ring is of the monochrome type. If the data type is [LinearGradient](arkts-arkui-lineargradient-i.md), the ring is of the gradient type. If the data type is Array, the ring is of the gradient type. The first parameter indicates the color value. If it is set to a non-color value, the color of 0xFFE84026 is used. The second parameter indicates the color weight. If it is set to a negative number or a non-numeric value, the color weight is 0. A ring of the gradient type contains a maximum of nine color segments. If there are more than nine segments, the excess is not displayed.
 
 **Since:** 8
 
@@ -99,9 +82,7 @@ Sets the description of the gauge.
 endAngle(angle: number)
 ```
 
-Sets the end angle of the gauge. Ensure an appropriate difference between the start angle and end angle. If this
-difference is too small, the drawn chart may be abnormal. You are advised to use a monochrome ring to set the
-**value** attribute of the **Gauge**. You can also use **setTimeout** to delay value loading.
+Sets the end angle of the gauge. Ensure an appropriate difference between the start angle and end angle. If this difference is too small, the drawn chart may be abnormal. You are advised to use a monochrome ring to set the **value** attribute of the **Gauge**. You can also use **setTimeout** to delay value loading.
 
 **Since:** 8
 
@@ -147,11 +128,7 @@ Sets the indicator style of the gauge.
 privacySensitive(isPrivacySensitiveMode: Optional<boolean>)
 ```
 
-Sets whether to enable privacy mode.
-
-> **NOTE**
->
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
+Sets whether to enable privacy mode. > **NOTE** > > This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
 
 **Since:** 12
 

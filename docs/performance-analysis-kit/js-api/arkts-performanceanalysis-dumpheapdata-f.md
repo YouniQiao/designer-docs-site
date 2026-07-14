@@ -12,10 +12,7 @@ import { hidebug } from '@kit.PerformanceAnalysisKit';
 function dumpHeapData(filename: string): void
 ```
 
-Exports the VM heap data and generates a filename.heapsnapshot file.
-The input parameter is a user-defined file name, excluding the file suffix.
-The generated file is in the files folder under the application directory.
-Such as "/data/accounts/account_0/appdata/[package name]/files/xxx.heapsnapshot".
+Exports the VM heap data and generates a filename.heapsnapshot file. The input parameter is a user-defined file name, excluding the file suffix. The generated file is in the files folder under the application directory. Such as "/data/accounts/account_0/appdata/[package name]/files/xxx.heapsnapshot".
 
 **Since:** 8
 

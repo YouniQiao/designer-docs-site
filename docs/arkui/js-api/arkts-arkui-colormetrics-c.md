@@ -12,9 +12,7 @@ Used to mix colors.
 autoRefresh?(value: boolean): ColorMetrics
 ```
 
-Sets automatic refresh for the ColorMetrics object.
-When enabled, the color values of objects created with ColorMetrics.resourceColor() are automatically updated
-when the system configuration changes.
+Sets automatic refresh for the ColorMetrics object. When enabled, the color values of objects created with ColorMetrics.resourceColor() are automatically updated when the system configuration changes.
 
 **Since:** 26.0.0
 
@@ -76,8 +74,7 @@ Blends a specified color (**overlayColor**) with the current color and returns t
 static colorWithSpace(colorSpace: ColorSpace, red: number, green: number, blue: number, alpha?: number): ColorMetrics
 ```
 
-Creates a **ColorMetrics** instance using specified [ColorSpace](../arkts-components/arkts-arkui-colorspace-e.md) and RGBA values. Only certain
-attributes support color configuration in the display-p3 color space.
+Creates a **ColorMetrics** instance using specified [ColorSpace](../arkts-components/arkts-arkui-colorspace-e.md) and RGBA values. Only certain attributes support color configuration in the display-p3 color space.
 
 **Since:** 20
 

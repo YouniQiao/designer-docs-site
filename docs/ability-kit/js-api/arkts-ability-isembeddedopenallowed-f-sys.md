@@ -12,8 +12,7 @@ import { abilityManager } from '@kit.AbilityKit';
 function isEmbeddedOpenAllowed(context: Context, appId: string): Promise<boolean>
 ```
 
-Checks whether the [EmbeddableUIAbility](arkts-ability-embeddableuiability-c.md) can be
-started in embedded mode. This API uses a promise to return the result.
+Checks whether the [EmbeddableUIAbility](arkts-ability-embeddableuiability-c.md) can be started in embedded mode. This API uses a promise to return the result.
 
 **Since:** 12
 

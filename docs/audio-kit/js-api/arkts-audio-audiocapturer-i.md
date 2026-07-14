@@ -1,14 +1,6 @@
 # AudioCapturer
 
-This interface provides APIs for audio capture.
-
-Before calling any API in AudioCapturer, you must use
-[createAudioCapturer](arkts-audio-createaudiocapturer-f.md#createaudiocapturer-1)
-to create an AudioCapturer instance.
-
-> **NOTE**
->
-> - The initial APIs of this interface are supported since API version 8.
+This interface provides APIs for audio capture. Before calling any API in AudioCapturer, you must use [createAudioCapturer](arkts-audio-createaudiocapturer-f.md#createaudiocapturer-1) to create an AudioCapturer instance. > **NOTE** > > - The initial APIs of this interface are supported since API version 8.
 
 **Since:** 8
 
@@ -80,8 +72,7 @@ Obtains the stream ID of this audio capturer. This API returns the result synchr
 getAudioTime(callback: AsyncCallback<number>): void
 ```
 
-Obtains the timestamp of the current recording position, measured in nanoseconds from the Unix epoch (January 1,
-1970). This API uses an asynchronous callback to return the result.
+Obtains the timestamp of the current recording position, measured in nanoseconds from the Unix epoch (January 1, 1970). This API uses an asynchronous callback to return the result.
 
 **Since:** 8
 
@@ -99,8 +90,7 @@ Obtains the timestamp of the current recording position, measured in nanoseconds
 getAudioTime(): Promise<number>
 ```
 
-Obtains the timestamp of the current recording position, measured in nanoseconds from the Unix epoch (January 1,
-1970). This API uses a promise to return the result.
+Obtains the timestamp of the current recording position, measured in nanoseconds from the Unix epoch (January 1, 1970). This API uses a promise to return the result.
 
 **Since:** 8
 
@@ -118,8 +108,7 @@ Obtains the timestamp of the current recording position, measured in nanoseconds
 getAudioTimeSync(): number
 ```
 
-Obtains the timestamp of the current recording position, measured in nanoseconds from the Unix epoch (January 1,
-1970). This API returns the result synchronously.
+Obtains the timestamp of the current recording position, measured in nanoseconds from the Unix epoch (January 1, 1970). This API returns the result synchronously.
 
 **Since:** 10
 
@@ -137,10 +126,7 @@ Obtains the timestamp of the current recording position, measured in nanoseconds
 getAudioTimestampInfo(): Promise<AudioTimestampInfo>
 ```
 
-Obtains the timestamp and position information of an input audio stream.
-
-This API obtains the actual recording position (specified by **framePos**) of the audio channel and the timestamp
-when recording to that position (specified by **timestamp**, in nanoseconds).
+Obtains the timestamp and position information of an input audio stream. This API obtains the actual recording position (specified by **framePos**) of the audio channel and the timestamp when recording to that position (specified by **timestamp**, in nanoseconds).
 
 **Since:** 19
 
@@ -164,8 +150,7 @@ when recording to that position (specified by **timestamp**, in nanoseconds).
 getAudioTimestampInfoSync(): AudioTimestampInfo
 ```
 
-Obtains the timestamp and position information of an input audio stream. This API returns the result
-synchronously.
+Obtains the timestamp and position information of an input audio stream. This API returns the result synchronously.
 
 **Since:** 19
 
@@ -189,8 +174,7 @@ synchronously.
 getBufferSize(callback: AsyncCallback<number>): void
 ```
 
-Obtains a reasonable minimum buffer size in bytes for capturing. This API uses an asynchronous callback to return
-the result.
+Obtains a reasonable minimum buffer size in bytes for capturing. This API uses an asynchronous callback to return the result.
 
 **Since:** 8
 
@@ -334,9 +318,7 @@ Obtains the information of the current input devices. This API returns the resul
 getNoiseReductionMode(): NoiseReductionMode
 ```
 
-Gets the noise reduction mode for current audio capturer.
-The mode will only consider the default and setted status, audio input device and stream concurrency will
-not be considered.
+Gets the noise reduction mode for current audio capturer. The mode will only consider the default and setted status, audio input device and stream concurrency will not be considered.
 
 **Since:** 26.0.0
 
@@ -356,8 +338,7 @@ not be considered.
 getOverflowCount(): Promise<number>
 ```
 
-Obtains the number of overflow audio frames in the audio stream that is being captured. This API uses a promise
-to return the result.
+Obtains the number of overflow audio frames in the audio stream that is being captured. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -375,8 +356,7 @@ to return the result.
 getOverflowCountSync(): number
 ```
 
-Obtains the number of overflow audio frames in the audio stream that is being captured. This API returns the
-result synchronously.
+Obtains the number of overflow audio frames in the audio stream that is being captured. This API returns the result synchronously.
 
 **Since:** 12
 
@@ -394,8 +374,7 @@ result synchronously.
 getStreamInfo(callback: AsyncCallback<AudioStreamInfo>): void
 ```
 
-Obtains the stream information of this audio capturer. This API uses an asynchronous callback to return the
-result.
+Obtains the stream information of this audio capturer. This API uses an asynchronous callback to return the result.
 
 **Since:** 8
 
@@ -449,11 +428,7 @@ Obtains the stream information of this audio capturer. This API returns the resu
 getSupportedNoiseReductionModes(): Array<NoiseReductionMode>
 ```
 
-Gets all the supported noise reduction modes for current device platform.
-Currently the noise reduction effect is only supported when using
-{@link SourceType#SOURCE_TYPE_VOICE_MESSAGE}, other supported usage may be extened later.
-The supported modes will only consider the audio format and device platform,
-audio input device and stream concurrency will not be considered.
+Gets all the supported noise reduction modes for current device platform. Currently the noise reduction effect is only supported when using {@link SourceType#SOURCE_TYPE_VOICE_MESSAGE}, other supported usage may be extened later. The supported modes will only consider the audio format and device platform, audio input device and stream concurrency will not be considered.
 
 **Since:** 26.0.0
 
@@ -517,8 +492,7 @@ Unsubscribes from the period reached event. This API uses an asynchronous callba
 off(type: 'stateChange', callback?: Callback<AudioState>): void
 ```
 
-Unsubscribes from the audio capturer state change event. This API uses an asynchronous callback to return the
-result.
+Unsubscribes from the audio capturer state change event. This API uses an asynchronous callback to return the result.
 
 **Since:** 18
 
@@ -568,8 +542,7 @@ Unsubscribes from the audio interruption event.
 off(type: 'inputDeviceChange', callback?: Callback<AudioDeviceDescriptors>): void
 ```
 
-Unsubscribes from the audio input device change event. This API uses an asynchronous callback to return the
-result.
+Unsubscribes from the audio input device change event. This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -595,8 +568,7 @@ result.
 off(type: 'audioCapturerChange', callback?: Callback<AudioCapturerChangeInfo>): void
 ```
 
-Unsubscribes from the audio capturer configuration change event. This API uses an asynchronous callback to return
-the result.
+Unsubscribes from the audio capturer configuration change event. This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -648,11 +620,7 @@ Unsubscribes from the audio data read event. This API uses an asynchronous callb
 on(type: 'markReach', frame: number, callback: Callback<number>): void
 ```
 
-Subscribes to the mark reached event, which is triggered (only once) when the number of frames captured reaches
-the value of the **frame** parameter. This API uses an asynchronous callback to return the result.
-
-For example, if **frame** is set to **100**, the callback is invoked when the number of captured frames reaches
-the 100th frame.
+Subscribes to the mark reached event, which is triggered (only once) when the number of frames captured reaches the value of the **frame** parameter. This API uses an asynchronous callback to return the result. For example, if **frame** is set to **100**, the callback is invoked when the number of captured frames reaches the 100th frame.
 
 **Since:** 8
 
@@ -672,12 +640,7 @@ the 100th frame.
 on(type: 'periodReach', frame: number, callback: Callback<number>): void
 ```
 
-Subscribes to the period reached event, which is triggered each time the number of frames captured reaches the
-value of the **frame** parameter. In other words, the information is reported periodically. This API uses an
-asynchronous callback to return the result.
-
-For example, if **frame** is set to **10**, the callback is invoked each time 10 frames are captured, for example
-, when the number of frames captured reaches the 10th frame, 20th frame, and 30th frame.
+Subscribes to the period reached event, which is triggered each time the number of frames captured reaches the value of the **frame** parameter. In other words, the information is reported periodically. This API uses an asynchronous callback to return the result. For example, if **frame** is set to **10**, the callback is invoked each time 10 frames are captured, for example , when the number of frames captured reaches the 10th frame, 20th frame, and 30th frame.
 
 **Since:** 8
 
@@ -697,8 +660,7 @@ For example, if **frame** is set to **10**, the callback is invoked each time 10
 on(type: 'stateChange', callback: Callback<AudioState>): void
 ```
 
-Subscribes to the audio capturer state change event, which is triggered when the state of the audio capturer is
-changed. This API uses an asynchronous callback to return the result.
+Subscribes to the audio capturer state change event, which is triggered when the state of the audio capturer is changed. This API uses an asynchronous callback to return the result.
 
 **Since:** 8
 
@@ -717,17 +679,7 @@ changed. This API uses an asynchronous callback to return the result.
 on(type: 'audioInterrupt', callback: Callback<InterruptEvent>): void
 ```
 
-Subscribes to the audio interruption event, which is triggered when the audio focus is changed. This API uses an
-asynchronous callback to return the result.
-
-The AudioCapturer instance proactively gains the focus when the **start** event occurs and releases the focus
-when the **pause** or **stop** event occurs. Therefore, you do not need to request to gain or release the focus.
-
-After this API is called, an [InterruptEvent](arkts-audio-interruptevent-i.md) is received when
-the AudioCapturer instance fails to obtain the focus or an audio interruption event occurs (for example, the
-audio stream is interrupted by others). It is recommended that the application perform further processing based
-on the **InterruptEvent** information. For details, see
-[Introduction to Audio Focus](../../../../media/audio/audio-playback-concurrency.md).
+Subscribes to the audio interruption event, which is triggered when the audio focus is changed. This API uses an asynchronous callback to return the result. The AudioCapturer instance proactively gains the focus when the **start** event occurs and releases the focus when the **pause** or **stop** event occurs. Therefore, you do not need to request to gain or release the focus. After this API is called, an [InterruptEvent](arkts-audio-interruptevent-i.md) is received when the AudioCapturer instance fails to obtain the focus or an audio interruption event occurs (for example, the audio stream is interrupted by others). It is recommended that the application perform further processing based on the **InterruptEvent** information. For details, see [Introduction to Audio Focus](../../../../media/audio/audio-playback-concurrency.md).
 
 **Since:** 10
 
@@ -753,8 +705,7 @@ on the **InterruptEvent** information. For details, see
 on(type: 'inputDeviceChange', callback: Callback<AudioDeviceDescriptors>): void
 ```
 
-Subscribes to the audio input device change event, which is triggered when an audio input device is changed. This
-API uses an asynchronous callback to return the result.
+Subscribes to the audio input device change event, which is triggered when an audio input device is changed. This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -780,10 +731,7 @@ API uses an asynchronous callback to return the result.
 on(type: 'audioCapturerChange', callback: Callback<AudioCapturerChangeInfo>): void
 ```
 
-Subscribes to the audio capturer configuration change event, which is triggered when the audio recording stream
-status or device is changed. This API uses an asynchronous callback to return the result. The subscription is
-implemented asynchronously and the callback, which is triggered when the audio capturer configuration changes,
-may fail to reflect the actual condition.
+Subscribes to the audio capturer configuration change event, which is triggered when the audio recording stream status or device is changed. This API uses an asynchronous callback to return the result. The subscription is implemented asynchronously and the callback, which is triggered when the audio capturer configuration changes, may fail to reflect the actual condition.
 
 **Since:** 11
 
@@ -809,13 +757,7 @@ may fail to reflect the actual condition.
 on(type: 'readData', callback: Callback<ArrayBuffer>): void
 ```
 
-Subscribes to the audio data read event, which is triggered when audio stream data needs to be read. This API
-uses an asynchronous callback to return the result.
-
-The callback function is used only to read audio data. Do not call AudioCapturer APIs in it.
-
-To eliminate power-on noise caused by the microphone hardware design, the first 100 ms of data after recording
-starts is typically muted.
+Subscribes to the audio data read event, which is triggered when audio stream data needs to be read. This API uses an asynchronous callback to return the result. The callback function is used only to read audio data. Do not call AudioCapturer APIs in it. To eliminate power-on noise caused by the microphone hardware design, the first 100 ms of data after recording starts is typically muted.
 
 **Since:** 11
 
@@ -930,9 +872,7 @@ Releases this audio capturer. This API uses a promise to return the result.
 requestPlaybackCaptureStart(callback: Callback<PlaybackCaptureStartState>): void
 ```
 
-Asynchronously request to start the playback capture stream.
-This function is non-blocking, which means system will continue to process user authorization and
-stream starting when receiving the start request. And the final result will be returned by callback.
+Asynchronously request to start the playback capture stream. This function is non-blocking, which means system will continue to process user authorization and stream starting when receiving the start request. And the final result will be returned by callback.
 
 **Since:** 26.0.0
 
@@ -952,13 +892,7 @@ stream starting when receiving the start request. And the final result will be r
 setIndependentAudioSessionStrategy(strategy: AudioSessionStrategy, behavior: number): void
 ```
 
-Sets the independent audio session strategy and behavior parameters.
-
-> **NOTE**
->
-> If this API is called while an audio capturer is running, you must call the
-> [start](arkts-audio-audiocapturer-i.md#start-1) API again for
-> the settings to take effect.
+Sets the independent audio session strategy and behavior parameters. > **NOTE** > > If this API is called while an audio capturer is running, you must call the > [start](arkts-audio-audiocapturer-i.md#start-1) API again for > the settings to take effect.
 
 **Since:** 24
 
@@ -986,8 +920,7 @@ Sets the independent audio session strategy and behavior parameters.
 setMuteHint(mute: boolean): Promise<void>
 ```
 
-Set mute hint for this capturer, this method is used as a hint for power optimization
-it does not mute the recording stream, only affects internal processing strategy.
+Set mute hint for this capturer, this method is used as a hint for power optimization it does not mute the recording stream, only affects internal processing strategy.
 
 **Since:** 24
 
@@ -1019,11 +952,7 @@ it does not mute the recording stream, only affects internal processing strategy
 setNoiseReductionMode(noiseReductionMode: NoiseReductionMode): void
 ```
 
-Sets noise reduction mode for current audio capturer.
-The supported mode should be obtained by {@link #getSupportedNoiseReductionModes}.
-The actual effect may vary from different audio devices, and will be invalid when there are multiple
-recording streams running simultaneously.
-The mode can only be changed in created and stopped state.
+Sets noise reduction mode for current audio capturer. The supported mode should be obtained by {@link #getSupportedNoiseReductionModes}. The actual effect may vary from different audio devices, and will be invalid when there are multiple recording streams running simultaneously. The mode can only be changed in created and stopped state.
 
 **Since:** 26.0.0
 
@@ -1052,9 +981,7 @@ The mode can only be changed in created and stopped state.
 setWillMuteWhenInterrupted(muteWhenInterrupted: boolean): Promise<void>
 ```
 
-Sets whether to
-[mute the current audio recording stream when an audio interruption occurs](../../../../media/audio/using-audiocapturer-for-recording.md#setting-the-mute-interruption-mode)
-. This API uses a promise to return the result.
+Sets whether to [mute the current audio recording stream when an audio interruption occurs](../../../../media/audio/using-audiocapturer-for-recording.md#setting-the-mute-interruption-mode) . This API uses a promise to return the result.
 
 **Since:** 20
 
@@ -1084,8 +1011,7 @@ Sets whether to
 start(callback: AsyncCallback<void>): void
 ```
 
-Starts this audio capturer to start capturing audio data. This API uses an asynchronous callback to return the
-result.
+Starts this audio capturer to start capturing audio data. This API uses an asynchronous callback to return the result.
 
 **Since:** 8
 
@@ -1121,8 +1047,7 @@ Starts this audio capturer to start capturing audio data. This API uses a promis
 stop(callback: AsyncCallback<void>): void
 ```
 
-Stops this audio capturer, ceasing the input audio stream. This API uses an asynchronous callback to return the
-result.
+Stops this audio capturer, ceasing the input audio stream. This API uses an asynchronous callback to return the result.
 
 **Since:** 8
 

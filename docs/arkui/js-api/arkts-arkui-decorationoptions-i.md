@@ -12,13 +12,7 @@ Provides additional configuration options for the text decoration line style.
 enableMultiType?: boolean
 ```
 
-Whether to enable the display of multiple decoration lines.
-
-Default value: **undefined**. **true**: Enable the display of multiple decoration lines. **false** or
-**undefined**: Disable the display of multiple decoration lines.
-
-To display all decoration lines, this option must be enabled. The overlapping area of multiple decoration lines
-will show a combined effect, with the style, color, and thickness consistent with the last decoration line.
+Whether to enable the display of multiple decoration lines. Default value: **undefined**. **true**: Enable the display of multiple decoration lines. **false** or **undefined**: Disable the display of multiple decoration lines. To display all decoration lines, this option must be enabled. The overlapping area of multiple decoration lines will show a combined effect, with the style, color, and thickness consistent with the last decoration line.
 
 **Type:** boolean
 

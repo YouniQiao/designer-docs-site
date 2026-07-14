@@ -12,8 +12,7 @@ import { deviceSettings } from '@kit.MDMKit';
 function setValueForAccount(admin: Want, item: SettingsItem, accountId: number, value: string): void
 ```
 
-Sets the device policy for a specified user. This API allows you to set a specific parameter for a given user, such
-as setting the device name for user 100.
+Sets the device policy for a specified user. This API allows you to set a specific parameter for a given user, such as setting the device name for user 100.
 
 **Since:** 24
 

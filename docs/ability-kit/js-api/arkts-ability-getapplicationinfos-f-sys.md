@@ -12,8 +12,7 @@ import { bundle } from '@kit.AbilityKit';
 function getApplicationInfos(bundleFlags: number, userId: number, callback: AsyncCallback<Array<ApplicationInfo>>): void
 ```
 
-Obtains information about all installed apps for a specified user. This API uses an asynchronous
-callback to return the result.
+Obtains information about all installed apps for a specified user. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 
@@ -60,8 +59,7 @@ bundle.getApplicationInfos(bundleFlags, userId, (err, data) => {
 function getApplicationInfos(bundleFlags: number, callback: AsyncCallback<Array<ApplicationInfo>>): void
 ```
 
-Obtains information about installed apps for the user to which the caller belongs.
-This API uses an asynchronous callback to return the result.
+Obtains information about installed apps for the user to which the caller belongs. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 

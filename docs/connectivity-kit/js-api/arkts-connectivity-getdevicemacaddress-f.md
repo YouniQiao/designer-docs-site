@@ -12,8 +12,7 @@ import { wifiManager } from '@kit.ConnectivityKit';
 function getDeviceMacAddress(): string[]
 ```
 
-Obtain the MAC address of a Wi-Fi device. Wi-Fi must be enabled.
-The MAC address is unique and cannot be changed.
+Obtain the MAC address of a Wi-Fi device. Wi-Fi must be enabled. The MAC address is unique and cannot be changed.
 
 **Since:** 15
 

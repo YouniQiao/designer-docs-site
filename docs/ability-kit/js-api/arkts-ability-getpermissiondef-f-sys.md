@@ -12,8 +12,7 @@ import { bundleManager } from '@kit.AbilityKit';
 function getPermissionDef(permissionName: string, callback: AsyncCallback<PermissionDef>): void
 ```
 
-Obtains the PermissionDef struct based on the given permission name. This API uses an asynchronous callback to
-return the result.
+Obtains the PermissionDef struct based on the given permission name. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 

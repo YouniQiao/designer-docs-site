@@ -4,8 +4,7 @@
 export type NotificationSubscribeInfo = _NotificationSubscribeInfo
 ```
 
-The **NotificationSubscribeInfo** module provides APIs for defining the information about the publisher for
-notification subscription.
+The **NotificationSubscribeInfo** module provides APIs for defining the information about the publisher for notification subscription.
 
 **Since:** 9
 

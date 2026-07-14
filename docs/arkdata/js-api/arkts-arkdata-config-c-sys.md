@@ -1,7 +1,6 @@
 # Config (System API)
 
-Provides APIs for setting device-cloud synergy, including enabling and disabling device-cloud synergy, clearing
-data, and notifying data changes.
+Provides APIs for setting device-cloud synergy, including enabling and disabling device-cloud synergy, clearing data, and notifying data changes.
 
 **Since:** 10
 
@@ -58,6 +57,30 @@ Queries the last synchronization information in batch
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supportedbecause the device does not support the device-cloud capability. |
 | [14800001](../errorcode-data-rdb.md#14800001-invalid-arguments) | Invalid arguments. Possible causes: 1. the accountId is empty;2. the bundlename is null; 3. the number of bundleInfos exceeds the upper limit or the number is 0. |
 
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+const accountId: string = "accountId";
+const bundleInfos: Array<cloudData.BundleInfo> = [
+  { bundleName: "bundleName1", storeId: "storeId1" },
+  { bundleName: "bundleName2" }
+];
+
+try {
+  cloudData.Config.batchQueryLastSyncInfo(accountId, bundleInfos).then((result) => {
+    console.info(`Succeeded in querying last sync info. Result is ${JSON.stringify(result)}`);
+  }).catch((err: BusinessError) => {
+    console.error(`Failed to query last sync info. Error code is ${err.code}, message is ${err.message}`);
+  });
+} catch(e) {
+  let error = e as BusinessError;
+  console.error(`An unexpected error occurred. Code: ${error.code}, message: ${error.message}`);
+}
+
+```
+
 ## changeAppCloudSwitch
 
 ```TypeScript
@@ -69,8 +92,7 @@ static changeAppCloudSwitch(
     ): void
 ```
 
-Changes the device-cloud synergy setting for an application. This API uses an asynchronous callback to return the
-result.
+Changes the device-cloud synergy setting for an application. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -103,8 +125,8 @@ result.
 ```TypeScript
 import { BusinessError } from '@kit.BasicServicesKit';
 
-let account: string = 'test_id';
-let bundleName: string = 'test_bundleName';
+let account: string = "test_id";
+let bundleName: string = "test_bundleName";
 try {
   cloudData.Config.changeAppCloudSwitch(account, bundleName, true, (err: BusinessError) => {
     if (err === undefined) {
@@ -164,8 +186,8 @@ Changes the device-cloud synergy setting for an application. This API uses a pro
 ```TypeScript
 import { BusinessError } from '@kit.BasicServicesKit';
 
-let account: string = 'test_id';
-let bundleName: string = 'test_bundleName';
+let account: string = "test_id";
+let bundleName: string = "test_bundleName";
 try {
   cloudData.Config.changeAppCloudSwitch(account, bundleName, true).then(() => {
     console.info('Succeeded in changing App cloud switch');
@@ -230,8 +252,8 @@ Changes the device-cloud synergy setting for an application. This API uses a pro
 ```TypeScript
 import { BusinessError } from '@kit.BasicServicesKit';
 
-let account: string = 'test_id';
-let bundleName: string = 'test_bundleName';
+let account: string = "test_id";
+let bundleName: string = "test_bundleName";
 let config: cloudData.SwitchConfig = {
   dbInfo: {
     'test_storeName1': {
@@ -307,7 +329,7 @@ let appActions: dataType = {
 try {
   cloudData.Config.clear(account, appActions, (err: BusinessError) => {
     if (err === undefined) {
-      console.info('Succeeding in clearing cloud data');
+      console.info('Succeeded in clearing cloud data');
     } else {
       console.error(`Failed to clear cloud data. Code: ${err.code}, message: ${err.message}`);
     }
@@ -370,7 +392,7 @@ let appActions: dataType = {
 };
 try {
   cloudData.Config.clear(account, appActions).then(() => {
-    console.info('Succeeding in clearing cloud data');
+    console.info('Succeeded in clearing cloud data');
   }).catch((err: BusinessError) => {
     console.error(`Failed to clear cloud data. Code: ${err.code}, message: ${err.message}`);
   });
@@ -436,7 +458,7 @@ let appActions: Record<string, cloudData.ClearAction> = {
   'test_bundleName2': cloudData.ClearAction.CLEAR_CLOUD_DATA_AND_INFO,
   'test_bundleName3': cloudData.ClearAction.CLEAR_CLOUD_NONE,
 };
-let config: Record<stringm, cloudData.ClearConfig> = {
+let config: Record<string, cloudData.ClearConfig> = {
   'test_bundleName': {
     dbInfo: {
       'test_storeName': {
@@ -451,7 +473,7 @@ let config: Record<stringm, cloudData.ClearConfig> = {
 }
 try {
   cloudData.Config.clear(account, appActions, config).then(() => {
-    console.info('Succeeding in clearing cloud data');
+    console.info('Succeeded in clearing cloud data');
   }).catch((err: BusinessError) => {
     console.error(`Failed to clear cloud data. Code: ${err.code}, message: ${err.message}`);
   });
@@ -473,8 +495,7 @@ static cloudSync(
     ): Promise<void>
 ```
 
-Synchronizes data of a specified application on the device to the cloud. This API uses a promise to return the
-result.
+Synchronizes data of a specified application on the device to the cloud. This API uses a promise to return the result.
 
 **Since:** 20
 
@@ -514,17 +535,17 @@ result.
 import { BusinessError } from '@kit.BasicServicesKit';
 import { relationalStore } from '@kit.ArkData';
 
-try{
+try {
   cloudData.Config.cloudSync("bundleName", "storeId", relationalStore.SyncMode.SYNC_MODE_TIME_FIRST, (progress)=>{
     console.info('Succeeded in getting progress details.');
   }).then(() => {
-      console.info('Succeeded in syncing cloud data.');
+    console.info('Succeeded in syncing cloud data.');
   }).catch((err: BusinessError) => {
-      console.error(`Failed to sync cloud data. Code: ${err.code}, message: ${err.message}`);
+    console.error(`Failed to sync cloud data. Code: ${err.code}, message: ${err.message}`);
   });
 } catch (e) {
   let error = e as BusinessError;
-  console.error(`Failed to sync cloud data. Code: ${e.code}, message: ${e.message}`);
+  console.error(`Failed to sync cloud data. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -574,6 +595,37 @@ Sync data to cloud. This API uses a promise to return the result.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supportedbecause the device does not support the device-cloud capability. |
 | [14800001](../errorcode-data-rdb.md#14800001-invalid-arguments) | Invalid arguments. Possible causes: 1. Empty conditions. |
 
+**Example**
+
+```TypeScript
+import { relationalStore } from '@kit.ArkData';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let bundleInfo: cloudData.BundleInfo = {
+  bundleName: 'com.example.myapplication',
+  // Other BundleInfo fields
+};
+
+let config: relationalStore.CloudSyncConfig = {
+  mode: relationalStore.SyncMode.SYNC_MODE_TIME_FIRST,
+  enablePredicate: true
+};
+
+try {
+  cloudData.Config.cloudSyncEx(bundleInfo, config, (progressDetails: relationalStore.ProgressDetails) => {
+    console.info(`Cloud sync progress: ${progressDetails.schedule}, code: ${progressDetails.code}`);
+  }).then(() => {
+    console.info('Succeeded in cloud sync');
+  }).catch((err: BusinessError) => {
+    console.error(`Failed to cloud sync. Code: ${err.code}, message: ${err.message}`);
+  });
+} catch (e) {
+  let error = e as BusinessError;
+  console.error(`An unexpected error occurred. Code: ${error.code}, message: ${error.message}`);
+}
+
+```
+
 ## disableCloud
 
 ```TypeScript
@@ -611,7 +663,7 @@ Disables device-cloud synergy. This API uses an asynchronous callback to return 
 ```TypeScript
 import { BusinessError } from '@kit.BasicServicesKit';
 
-let account: string = 'test_id';
+let account: string = "test_id";
 try {
   cloudData.Config.disableCloud(account, (err: BusinessError) => {
     if (err === undefined) {
@@ -669,7 +721,7 @@ Disables device-cloud synergy. This API uses a promise to return the result.
 ```TypeScript
 import { BusinessError } from '@kit.BasicServicesKit';
 
-let account: string = 'test_id';
+let account: string = "test_id";
 try {
   cloudData.Config.disableCloud(account).then(() => {
     console.info('Succeeded in disabling cloud');
@@ -725,7 +777,7 @@ Enables device-cloud synergy. This API uses an asynchronous callback to return t
 ```TypeScript
 import { BusinessError } from '@kit.BasicServicesKit';
 
-let account: string = 'test_id';
+let account: string = "test_id";
 let switches: Record<string, boolean> = { 'test_bundleName1': true, 'test_bundleName2': false };
 try {
   cloudData.Config.enableCloud(account, switches, (err: BusinessError) => {
@@ -785,7 +837,7 @@ Enables device-cloud synergy. This API uses a promise to return the result.
 ```TypeScript
 import { BusinessError } from '@kit.BasicServicesKit';
 
-let account: string = 'test_id';
+let account: string = "test_id";
 let switches: Record<string, boolean> = { 'test_bundleName1': true, 'test_bundleName2': false };
 try {
   cloudData.Config.enableCloud(account, switches).then(() => {
@@ -806,8 +858,7 @@ try {
 static notifyDataChange(extInfo: ExtraData, userId?: number): Promise<void>
 ```
 
-Notifies the data changes in the cloud. This API uses a promise to return the result. You can specify the
-database and tables with data changes in the **extraData** field in **extInfo**, and specify the user ID.
+Notifies the data changes in the cloud. This API uses a promise to return the result. You can specify the database and tables with data changes in the **extraData** field in **extInfo**, and specify the user ID.
 
 **Since:** 11
 
@@ -868,9 +919,7 @@ try {
 static notifyDataChange(extInfo: ExtraData, callback: AsyncCallback<void>): void
 ```
 
-Notifies the data changes in the cloud with the specified information, such as the database and table names (
-specified by the **extraData** field in **extInfo**). This API uses an asynchronous callback to return the
-result.
+Notifies the data changes in the cloud with the specified information, such as the database and table names ( specified by the **extraData** field in **extInfo**). This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -926,9 +975,7 @@ try {
 static notifyDataChange(extInfo: ExtraData, userId: number, callback: AsyncCallback<void>): void
 ```
 
-Notifies the data changes of a user in the cloud. This API uses an asynchronous callback to return the result.
-You can also specify the database and tables with data changes in the **extraData** field in **extInfo**, and
-specify the user ID.
+Notifies the data changes of a user in the cloud. This API uses an asynchronous callback to return the result. You can also specify the database and tables with data changes in the **extraData** field in **extInfo**, and specify the user ID.
 
 **Since:** 11
 
@@ -1023,8 +1070,8 @@ Notifies the data changes in the cloud. This API uses a promise to return the re
 ```TypeScript
 import { BusinessError } from '@kit.BasicServicesKit';
 
-let account: string = 'test_id';
-let bundleName: string = 'test_bundleName';
+let account: string = "test_id";
+let bundleName: string = "test_bundleName";
 try {
   cloudData.Config.notifyDataChange(account, bundleName).then(() => {
     console.info('Succeeded in notifying the change of data');
@@ -1076,8 +1123,8 @@ Notifies the data changes in the cloud. This API uses an asynchronous callback t
 ```TypeScript
 import { BusinessError } from '@kit.BasicServicesKit';
 
-let account: string = 'test_id';
-let bundleName: string = 'test_bundleName';
+let account: string = "test_id";
+let bundleName: string = "test_bundleName";
 try {
   cloudData.Config.notifyDataChange(account, bundleName, (err: BusinessError) => {
     if (err === undefined) {
@@ -1130,6 +1177,46 @@ Remove specified observer of specified type from the database.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supportedbecause the device does not support the device-cloud capability. |
 | [14800001](../errorcode-data-rdb.md#14800001-invalid-arguments) | Invalid arguments. Possible causes: 1. bundlename is null;<br>2. the number of bundleInfos exceeds the upper limit or the number is 0. |
 
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+const bundleInfos: Array<cloudData.BundleInfo> = [
+  { bundleName: "bundleName1", storeId: "storeId1" },
+  { bundleName: "bundleName2" }
+];
+
+const progressCallback = (result: Record<string, Record<string, cloudData.SyncInfo>>) => {
+  console.info(`Sync info changed. Result is ${JSON.stringify(result)}`);
+};
+
+// Subscribe to sync information changes.
+try {
+  cloudData.Config.onSyncInfoChanged(bundleInfos, progressCallback);
+} catch(e) {
+  let error = e as BusinessError;
+  console.error(`An unexpected error occurred. Code: ${error.code}, message: ${error.message}`);
+}
+
+// Unsubscribe from a specified callback.
+try {
+  cloudData.Config.offSyncInfoChanged(bundleInfos, progressCallback);
+} catch(e) {
+  let error = e as BusinessError;
+  console.error(`An unexpected error occurred. Code: ${error.code}, message: ${error.message}`);
+}
+
+// Unsubscribe from all callbacks.
+try {
+  cloudData.Config.offSyncInfoChanged(bundleInfos);
+} catch(e) {
+  let error = e as BusinessError;
+  console.error(`An unexpected error occurred. Code: ${error.code}, message: ${error.message}`);
+}
+
+```
+
 ## onSyncInfoChanged
 
 ```TypeScript
@@ -1166,6 +1253,27 @@ Subscribes to changes in the sync information of a specified application.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed,application which is not a system application uses system API. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supportedbecause the device does not support the device-cloud capability. |
 | [14800001](../errorcode-data-rdb.md#14800001-invalid-arguments) | Invalid arguments. Possible causes: 1. bundlename is null;<br>2. the number of bundleInfos exceeds the upper limit or the number is 0. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+const bundleInfos: Array<cloudData.BundleInfo> = [
+  { bundleName: "bundleName1", storeId: "storeId1" },
+  { bundleName: "bundleName2" }
+];
+
+try {
+  cloudData.Config.onSyncInfoChanged(bundleInfos, (result) => {
+    console.info(`Sync info changed. Result is ${JSON.stringify(result)}`);
+  });
+} catch(e) {
+  let error = e as BusinessError;
+  console.error(`An unexpected error occurred. Code: ${error.code}, message: ${error.message}`);
+}
+
+```
 
 ## queryLastSyncInfo
 
@@ -1215,18 +1323,18 @@ Queries information about the last device-cloud sync. This API uses a promise to
 ```TypeScript
 import { BusinessError } from '@kit.BasicServicesKit';
 
-const accountId:string = "accountId";
-const bundleName:string = "bundleName";
-const storeId:string = "storeId";
+const accountId: string = "accountId";
+const bundleName: string = "bundleName";
+const storeId: string = "storeId";
 try {
-    cloudData.Config.queryLastSyncInfo(accountId, bundleName, storeId).then((result) => {
-    	console.info(`Succeeded in querying last syncinfo. Info is ${JSON.stringify(result)}`);
-	}).catch((err: BusinessError) => {
-    	console.error(`Failed to query last syncinfo. Error code is ${err.code}, message is ${err.message}`);
+  cloudData.Config.queryLastSyncInfo(accountId, bundleName, storeId).then((result) => {
+    console.info(`Succeeded in querying last syncinfo. Info is ${JSON.stringify(result)}`);
+  }).catch((err: BusinessError) => {
+    console.error(`Failed to query last syncinfo. Error code is ${err.code}, message is ${err.message}`);
 	});
 } catch(e) {
-    let error = e as BusinessError;
-  	console.error(`An unexpected error occurred. Code: ${error.code}, message: ${error.message}`);
+  let error = e as BusinessError;
+  console.error(`An unexpected error occurred. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -1241,8 +1349,7 @@ static queryStatistics(
     ): Promise<Record<string, Array<StatisticInfo>>>
 ```
 
-Queries device-cloud data statistics, which include the data not synced, data synced and consistent, and data
-synced but inconsistent between the device and the cloud. This API uses a promise to return the result.
+Queries device-cloud data statistics, which include the data not synced, data synced and consistent, and data synced but inconsistent between the device and the cloud. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -1280,14 +1387,14 @@ synced but inconsistent between the device and the cloud. This API uses a promis
 ```TypeScript
 import { BusinessError } from '@kit.BasicServicesKit';
 
-const accountId:string = "accountId";
-const bundleName:string = "bundleName";
-const storeId:string = "storeId";
+const accountId: string = "accountId";
+const bundleName: string = "bundleName";
+const storeId: string = "storeId";
 
 cloudData.Config.queryStatistics(accountId, bundleName, storeId).then((result) => {
-    console.info(`Succeeded in querying statistics. Info is ${JSON.stringify(result)}`);
+  console.info(`Succeeded in querying statistics. Info is ${JSON.stringify(result)}`);
 }).catch((err: BusinessError) => {
-    console.error(`Failed to query statistics. Error code is ${err.code}, message is ${err.message}`);
+  console.error(`Failed to query statistics. Error code is ${err.code}, message is ${err.message}`);
 });
 
 ```
@@ -1336,9 +1443,9 @@ Sets a global device-cloud sync strategy. This API uses a promise to return the 
 import { BusinessError } from '@kit.BasicServicesKit';
 
 cloudData.Config.setGlobalCloudStrategy(cloudData.StrategyType.NETWORK, [cloudData.NetWorkStrategy.WIFI]).then(() => {
-    console.info('Succeeded in setting the global cloud strategy');
+  console.info('Succeeded in setting the global cloud strategy');
 }).catch((err: BusinessError) => {
-    console.error(`Failed to set global cloud strategy. Code: ${err.code}, message: ${err.message}`);
+  console.error(`Failed to set global cloud strategy. Code: ${err.code}, message: ${err.message}`);
 });
 
 ```
@@ -1381,4 +1488,27 @@ Stops syncing data to the cloud.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | if permission verification failed, application which is not a systemapplication uses system API. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supportedbecause the device does not support the device-cloud capability. |
 | [14800001](../errorcode-data-rdb.md#14800001-invalid-arguments) | Invalid arguments. Possible causes: 1. bundlename is null;<br>2. the number of bundleInfos exceeds the upper limit or the number is 0. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let bundleInfos: Array<cloudData.BundleInfo> = [
+  { bundleName: 'com.example.myapplication1' },
+  { bundleName: 'com.example.myapplication2' }
+];
+
+try {
+  cloudData.Config.stopCloudSync(bundleInfos).then(() => {
+    console.info('Succeeded in stopping cloud sync');
+  }).catch((err: BusinessError) => {
+    console.error(`Failed to stop cloud sync. Code: ${err.code}, message: ${err.message}`);
+  });
+} catch (e) {
+  let error = e as BusinessError;
+  console.error(`An unexpected error occurred. Code: ${error.code}, message: ${error.message}`);
+}
+
+```
 

@@ -12,14 +12,7 @@ import { wifiManager } from '@kit.MDMKit';
 function addAllowedWifiList(admin: Want, list: Array<WifiAccessInfo>): void
 ```
 
-Adds allowed Wi-Fi networks. The current device can only connect to the allowed Wi-Fi networks.
-
-A policy conflict is reported when this API is called in the following scenarios:
-
-1. Wi-Fi networks have been disabled by calling [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1).
-You can resolve the conflict by enabling the Wi-Fi networks through [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1).
-2. Disallowed Wi-Fi networks have been added by calling [addDisallowedWifiList](arkts-mdm-adddisallowedwifilist-f.md#adddisallowedwifilist-1).
-You can resolve the conflict by removing the disallowed Wi-Fi networks through [removeDisallowedWifiList](arkts-mdm-removedisallowedwifilist-f.md#removedisallowedwifilist-1).
+Adds allowed Wi-Fi networks. The current device can only connect to the allowed Wi-Fi networks. A policy conflict is reported when this API is called in the following scenarios: 1. Wi-Fi networks have been disabled by calling [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1). You can resolve the conflict by enabling the Wi-Fi networks through [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1). 2. Disallowed Wi-Fi networks have been added by calling [addDisallowedWifiList](arkts-mdm-adddisallowedwifilist-f.md#adddisallowedwifilist-1). You can resolve the conflict by removing the disallowed Wi-Fi networks through [removeDisallowedWifiList](arkts-mdm-removedisallowedwifilist-f.md#removedisallowedwifilist-1).
 
 **Since:** 19
 

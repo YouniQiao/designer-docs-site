@@ -75,8 +75,7 @@ onStartLayoutWrite(jobId: string, oldAttrs: PrintAttributes, newAttrs: PrintAttr
       writeResultCallback: (jobId: string, writeResult: PrintFileCreationState) => void): void
 ```
 
-Sends an empty PDF file descriptor to a third-party application. The third-party application updates the file
-with the new print attributes and then calls **writeResultCallback** to print the file.
+Sends an empty PDF file descriptor to a third-party application. The third-party application updates the file with the new print attributes and then calls **writeResultCallback** to print the file.
 
 **Since:** 11
 

@@ -1,9 +1,6 @@
 # LayeredDrawableDescriptor
 
-当传入资源id或name为包含前景和背景资源的json文件时，生成LayeredDrawableDescriptor对象。继承自
-[DrawableDescriptor](arkts-arkui-drawabledescriptorloadedresult-i.md)。
-
-drawable.json位于项目工程entry/src/main/resources/base/media目录下。定义请参考：
+当传入资源id或name为包含前景和背景资源的json文件时，生成LayeredDrawableDescriptor对象。继承自 [DrawableDescriptor](arkts-arkui-drawabledescriptorloadedresult-i.md)。 drawable.json位于项目工程entry/src/main/resources/base/media目录下。定义请参考：
 
 **继承/实现关系：** LayeredDrawableDescriptor extends [DrawableDescriptor](arkts-arkui-drawabledescriptor-c.md)
 
@@ -303,10 +300,7 @@ struct Index {
 setBlendMode(mode: drawing.BlendMode): void
 ```
 
-设置LayeredDrawableDescriptor的混合模式。对同一LayeredDrawableDescriptor对象多次调用setBlendMode接口时，
-仅在绘制完成前的最后一次调用生效。该接口不支持动态切换。
-LayeredDrawableDescriptor的默认绘制顺序为背景、蒙版、前景。设置了混合模式后，绘制顺序变为背景、前景、蒙版。
-若设置的值无效，则按照未设置混合模式进行绘制。
+设置LayeredDrawableDescriptor的混合模式。对同一LayeredDrawableDescriptor对象多次调用setBlendMode接口时， 仅在绘制完成前的最后一次调用生效。该接口不支持动态切换。 LayeredDrawableDescriptor的默认绘制顺序为背景、蒙版、前景。设置了混合模式后，绘制顺序变为背景、前景、蒙版。 若设置的值无效，则按照未设置混合模式进行绘制。
 
 **起始版本：** 23
 

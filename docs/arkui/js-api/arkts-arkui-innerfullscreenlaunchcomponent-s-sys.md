@@ -54,9 +54,7 @@ Sets the component Controller.
 onError?: ErrorCallback
 ```
 
-Callback triggered when an error occurs during running of the started ExtensionAbility.
-It is supported only when the atomic service runs in embedded mode,
-with the parameter being of type BusinessError.
+Callback triggered when an error occurs during running of the started ExtensionAbility. It is supported only when the atomic service runs in embedded mode, with the parameter being of type BusinessError.
 
 **Type:** ErrorCallback
 
@@ -88,9 +86,7 @@ Indicates the callback of onReceive.
 onTerminated?: Callback<TerminationInfo>
 ```
 
-Callback triggered when the EmbeddableUIAbility is terminated to receive the information
-about the termination. It is supported only when the atomic service runs in embedded mode,
-with the parameter being of type TerminationInfo.
+Callback triggered when the EmbeddableUIAbility is terminated to receive the information about the termination. It is supported only when the atomic service runs in embedded mode, with the parameter being of type TerminationInfo.
 
 **Type:** Callback<TerminationInfo>
 

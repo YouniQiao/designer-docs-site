@@ -1,7 +1,6 @@
 # VolumeFlag (System API)
 
-Enumerates volume related operations.
-Flags should be powers of 2!
+Enumerates volume related operations. Flags should be powers of 2!
 
 **Since:** 12
 

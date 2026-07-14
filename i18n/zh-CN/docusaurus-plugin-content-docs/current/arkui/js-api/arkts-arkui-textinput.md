@@ -1,11 +1,6 @@
 # TextInput
 
-单行文本输入框组件。
-
-> **说明：**
-
-> 该组件仅支持单文本样式，若需实现富文本样式，建议使用[RichEditor]{@link rich_editor}组件。
-
+单行文本输入框组件。 > **说明：** > 该组件仅支持单文本样式，若需实现富文本样式，建议使用[RichEditor]{@link rich_editor}组件。
 
 ## TextInput
 

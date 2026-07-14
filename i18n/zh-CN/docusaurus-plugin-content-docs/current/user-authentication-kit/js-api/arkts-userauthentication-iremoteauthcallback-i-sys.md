@@ -32,8 +32,7 @@ onGetRemoteAuthWidgetParam: WidgetParamCallback
 onRemoteAuthResult: ResultCallback
 ```
 
-调用返回认证结果。如果鉴权成功。
-UserAuthResult中包含token信息。
+调用返回认证结果。如果鉴权成功。 UserAuthResult中包含token信息。
 
 **类型：** ResultCallback
 

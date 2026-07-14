@@ -6,14 +6,7 @@
 function updateBackgroundRunning(context: Context, bgModes: string[]): Promise<ContinuousTaskNotification>
 ```
 
-更新长时任务类型，使用Promise异步回调。长时任务更新成功后，会有通知栏消息，没有提示音。</br>更新长时任务前，可以通过
-[getAllContinuousTasks](arkts-backgroundtasks-getallcontinuoustasks-f.md#getallcontinuoustasks-1)接口获取当前所有长时任务信息，如果当前没有已经
-存在的长时任务，会更新失败。</br>该接口仅支持更新如下三个接口申请的长时任务：</br>
-[startBackgroundRunning(context: Context, bgMode: BackgroundMode, wantAgent: WantAgent, callback:AsyncCallback&lt;void&gt;): void](backgroundTaskManager.startBackgroundRunning(context: Context, bgMode:BackgroundMode, wantAgent: WantAgent, callback: AsyncCallback<void>))
-</br>
-[startBackgroundRunning(context: Context, bgMode: BackgroundMode, wantAgent: WantAgent): Promise&lt;void&gt;]{@linkbackgroundTaskManager.startBackgroundRunning(context: Context, bgMode: BackgroundMode, wantAgent: WantAgent)}
-</br>
-[startBackgroundRunning(context: Context, bgModes: string[], wantAgent: WantAgent):Promise&lt;ContinuousTaskNotification&gt;]{@link backgroundTaskManager.startBackgroundRunning(context: Context,bgModes: string[], wantAgent: WantAgent)}
+更新长时任务类型，使用Promise异步回调。长时任务更新成功后，会有通知栏消息，没有提示音。</br>更新长时任务前，可以通过 [getAllContinuousTasks](arkts-backgroundtasks-getallcontinuoustasks-f.md#getallcontinuoustasks-1)接口获取当前所有长时任务信息，如果当前没有已经 存在的长时任务，会更新失败。</br>该接口仅支持更新如下三个接口申请的长时任务：</br> [startBackgroundRunning(context: Context, bgMode: BackgroundMode, wantAgent: WantAgent, callback:AsyncCallback&lt;void&gt;): void](backgroundTaskManager.startBackgroundRunning(context: Context, bgMode:BackgroundMode, wantAgent: WantAgent, callback: AsyncCallback<void>)) </br> [startBackgroundRunning(context: Context, bgMode: BackgroundMode, wantAgent: WantAgent): Promise&lt;void&gt;]{@linkbackgroundTaskManager.startBackgroundRunning(context: Context, bgMode: BackgroundMode, wantAgent: WantAgent)} </br> [startBackgroundRunning(context: Context, bgModes: string[], wantAgent: WantAgent):Promise&lt;ContinuousTaskNotification&gt;]{@link backgroundTaskManager.startBackgroundRunning(context: Context,bgModes: string[], wantAgent: WantAgent)}
 
 **起始版本：** 12
 
@@ -82,13 +75,7 @@ export default class EntryAbility extends UIAbility {
 function updateBackgroundRunning(context: Context, request: ContinuousTaskRequest): Promise<ContinuousTaskNotification>
 ```
 
-更新长时任务，使用Promise异步回调。长时任务更新成功后，会有通知栏消息，没有提示音。
-
-更新长时任务还存在如下约束限制：
-
-1. 本接口仅支持更新如下接口申请的长时任务：[startBackgroundRunning(context: Context, request: ContinuousTaskRequest):Promise&lt;ContinuousTaskNotification&gt;](backgroundTaskManager.startBackgroundRunning(context: Context,request: ContinuousTaskRequest))。
-2. 已经合并的长时任务，且后台任务主类型和子类型均相同，仅支持更新ContinuousTaskRequest.wantAgent中的wants信息（abilityName等），如果类型不同，更新失败。
-3. 如果待更新的长时任务或指定的更新类型中包含数据传输类型，直接返回失败。
+更新长时任务，使用Promise异步回调。长时任务更新成功后，会有通知栏消息，没有提示音。 更新长时任务还存在如下约束限制： 1. 本接口仅支持更新如下接口申请的长时任务：[startBackgroundRunning(context: Context, request: ContinuousTaskRequest):Promise&lt;ContinuousTaskNotification&gt;](backgroundTaskManager.startBackgroundRunning(context: Context,request: ContinuousTaskRequest))。 2. 已经合并的长时任务，且后台任务主类型和子类型均相同，仅支持更新ContinuousTaskRequest.wantAgent中的wants信息（abilityName等），如果类型不同，更新失败。 3. 如果待更新的长时任务或指定的更新类型中包含数据传输类型，直接返回失败。
 
 **起始版本：** 21
 

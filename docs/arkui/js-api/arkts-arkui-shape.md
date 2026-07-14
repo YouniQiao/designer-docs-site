@@ -2,7 +2,6 @@
 
 Provides interfaces for drawing components.
 
-
 ## Shape
 
 ```TypeScript

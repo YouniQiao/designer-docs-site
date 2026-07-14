@@ -1,14 +1,6 @@
 # ParticleColorOptions
 
-The color changes randomly, with the per-second change difference being a value randomly generated from the range.
-The target color is obtained by applying the change difference to the current color value of each of the R, G, B, A
-channels.
-
-> **NOTE**
->
-> To standardize anonymous object definitions, the element definitions here have been revised in API version 18.
-> While historical version information is preserved for anonymous objects, there may be cases where the outer element
-> 's @since version number is higher than inner elements'. This does not affect interface usability.
+The color changes randomly, with the per-second change difference being a value randomly generated from the range. The target color is obtained by applying the change difference to the current color value of each of the R, G, B, A channels. > **NOTE** > > To standardize anonymous object definitions, the element definitions here have been revised in API version 18. > While historical version information is preserved for anonymous objects, there may be cases where the outer element > 's @since version number is higher than inner elements'. This does not affect interface usability.
 
 **Since:** 18
 

@@ -20,8 +20,7 @@ import { logLibrary } from '@kit.PerformanceAnalysisKit';
 mtime: number
 ```
 
-Time of the last modification to the file. The value is the number of seconds elapsed
-since 00:00:00 on January 1, 1970.
+Time of the last modification to the file. The value is the number of seconds elapsed since 00:00:00 on January 1, 1970.
 
 **Type:** number
 

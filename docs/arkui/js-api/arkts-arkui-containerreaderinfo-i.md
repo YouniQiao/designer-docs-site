@@ -1,7 +1,6 @@
 # ContainerReaderInfo
 
-Defines the configuration options for ContainerReader component.
-Used to specify the parameters for container dimension reading and breakpoint analysis.
+Defines the configuration options for ContainerReader component. Used to specify the parameters for container dimension reading and breakpoint analysis.
 
 **Since:** 26.0.0
 
@@ -19,8 +18,7 @@ import { BreakpointOptions, ContainerReader, ContainerReaderAttribute } from '@k
 heightBreakpoint?: HeightBreakpoint
 ```
 
-Optional height breakpoint configuration for container height analysis.
-Defines the height thresholds that trigger different layout behaviors.
+Optional height breakpoint configuration for container height analysis. Defines the height thresholds that trigger different layout behaviors.
 
 **Type:** HeightBreakpoint
 
@@ -40,8 +38,7 @@ Defines the height thresholds that trigger different layout behaviors.
 size: Size
 ```
 
-The target container size for layout analysis.
-Defines the reference dimensions used for breakpoint calculation and layout adaptation.
+The target container size for layout analysis. Defines the reference dimensions used for breakpoint calculation and layout adaptation.
 
 **Type:** Size
 
@@ -61,8 +58,7 @@ Defines the reference dimensions used for breakpoint calculation and layout adap
 widthBreakpoint?: WidthBreakpoint
 ```
 
-Optional width breakpoint configuration for container width analysis.
-Defines the width thresholds that trigger different layout behaviors.
+Optional width breakpoint configuration for container width analysis. Defines the width thresholds that trigger different layout behaviors.
 
 **Type:** WidthBreakpoint
 

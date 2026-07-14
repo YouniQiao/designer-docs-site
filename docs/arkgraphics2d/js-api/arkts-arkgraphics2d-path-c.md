@@ -1,13 +1,6 @@
 # Path
 
-A compound geometric path consisting of line segments, arcs, quadratic Bezier curves, and cubic Bezier curves.
-
-> **NOTE**
->
-> - This module uses the physical pixel unit, px.
->
-> - The module operates under a single-threaded model. The caller needs to manage thread safety and context state
-> transitions.
+A compound geometric path consisting of line segments, arcs, quadratic Bezier curves, and cubic Bezier curves. > **NOTE** > > - This module uses the physical pixel unit, px. > > - The module operates under a single-threaded model. The caller needs to manage thread safety and context state > transitions.
 
 **Since:** 11
 
@@ -25,12 +18,7 @@ import { drawing } from '@kit.ArkGraphics2D';
 addArc(rect: common2D.Rect, startAngle: number, sweepAngle: number): void
 ```
 
-Adds an arc to this path.
-When **startAngle** and **sweepAngle** meet the following conditions, an oval instead of an arc is added:
-
-1. The result of **startAngle** modulo 90 is close to 0.
-2. The value of **sweepAngle** is not in the range of (-360, 360).
-In other cases, this API adds an arc by applying the result of **sweepAngle** modulo 360 to the path.
+Adds an arc to this path. When **startAngle** and **sweepAngle** meet the following conditions, an oval instead of an arc is added: 1. The result of **startAngle** modulo 90 is close to 0. 2. The value of **sweepAngle** is not in the range of (-360, 360). In other cases, this API adds an arc by applying the result of **sweepAngle** modulo 360 to the path.
 
 **Since:** 12
 
@@ -184,10 +172,7 @@ Adds a rectangle to a path in the specified direction. The start point is the up
 addRoundRect(roundRect: RoundRect, pathDirection?: PathDirection): void
 ```
 
-Adds a rounded rectangle to a path in the specified direction. When the path direction is clockwise, the start
-point is at the intersection of the rounded rectangle's left boundary and its lower left corner. When the path
-direction is counterclockwise, the start point is at the intersection point between the left boundary and the
-upper left corner.
+Adds a rounded rectangle to a path in the specified direction. When the path direction is clockwise, the start point is at the intersection of the rounded rectangle's left boundary and its lower left corner. When the path direction is counterclockwise, the start point is at the intersection point between the left boundary and the upper left corner.
 
 **Since:** 12
 
@@ -212,18 +197,7 @@ upper left corner.
 approximate(acceptableError: number): Array<number>
 ```
 
-Converts the existing path into an approximate path consisting of consecutive line segments.
-
-> **NOTE**
->
-> - Avoid setting **acceptableError** to **0** as it heavily divides the curve path, significantly impacting
-> performance and memory usage.
->
-> - Setting a high **acceptableError** simplifies the path greatly by keeping only essential points, potentially
-> distorting the original shape.
->
-> - When you set a high **acceptableError** for curves such as ellipses, the fitting process often simplifies
-> them to polygons by keeping just the start and end points of their Bezier curve segments.
+Converts the existing path into an approximate path consisting of consecutive line segments. > **NOTE** > > - Avoid setting **acceptableError** to **0** as it heavily divides the curve path, significantly impacting > performance and memory usage. > > - Setting a high **acceptableError** simplifies the path greatly by keeping only essential points, potentially > distorting the original shape. > > - When you set a high **acceptableError** for curves such as ellipses, the fitting process often simplifies > them to polygons by keeping just the start and end points of their Bezier curve segments.
 
 **Since:** 20
 
@@ -253,10 +227,7 @@ Converts the existing path into an approximate path consisting of consecutive li
 arcTo(x1: number, y1: number, x2: number, y2: number, startDeg: number, sweepDeg: number): void
 ```
 
-Draws an arc to this path using angle arc mode. This mode first defines a rectangle and takes its inscribed
-ellipse. Then, it specifies a start angle and a sweep angle. The arc is the portion of the ellipse's
-circumference defined by the start angle and the sweep angle. By default, a line segment from the last point of
-the path to the start point of the arc is also added.
+Draws an arc to this path using angle arc mode. This mode first defines a rectangle and takes its inscribed ellipse. Then, it specifies a start angle and a sweep angle. The arc is the portion of the ellipse's circumference defined by the start angle and the sweep angle. By default, a line segment from the last point of the path to the start point of the arc is also added.
 
 **Since:** 11
 
@@ -329,8 +300,7 @@ Closes this path by adding a line segment from the start point to the last point
 conicTo(ctrlX: number, ctrlY: number, endX: number, endY: number, weight: number): void
 ```
 
-Draws a conic curve from the last point of this path to the target point. If the path is empty, the start point (
-0, 0) is used.
+Draws a conic curve from the last point of this path to the target point. If the path is empty, the start point ( 0, 0) is used.
 
 **Since:** 12
 
@@ -394,8 +364,7 @@ Constructs a copy of an existing path.
 contains(x: number, y: number): boolean
 ```
 
-Checks whether a coordinate point is included in this path. For details, see
-[PathFillType](arkts-arkgraphics2d-pathfilltype-e.md).
+Checks whether a coordinate point is included in this path. For details, see [PathFillType](arkts-arkgraphics2d-pathfilltype-e.md).
 
 **Since:** 12
 
@@ -446,8 +415,7 @@ Converts path to an SVG string.
 cubicTo(ctrlX1: number, ctrlY1: number, ctrlX2: number, ctrlY2: number, endX: number, endY: number): void
 ```
 
-Draws a cubic Bezier curve from the last point of this path to the target point. If the path is empty, the start
-point (0, 0) is used.
+Draws a cubic Bezier curve from the last point of this path to the target point. If the path is empty, the start point (0, 0) is used.
 
 **Since:** 11
 
@@ -578,8 +546,7 @@ Obtains the path length.
 getMatrix(forceClosed: boolean, distance: number, matrix: Matrix, flags: PathMeasureMatrixFlags): boolean
 ```
 
-Obtains a transformation matrix at a specific position along the path, which represents the coordinates and
-orientation of that point.
+Obtains a transformation matrix at a specific position along the path, which represents the coordinates and orientation of that point.
 
 **Since:** 12
 
@@ -731,9 +698,7 @@ Gets path verb data.
 interpolate(other: Path, weight: number, interpolatedPath: Path): boolean
 ```
 
-Interpolates between the existing path and another path based on the given weight and stores the result in the
-target path object. Interpolation is achievable if the two paths have the same number of points. The target path
-is created based on the structure of the existing path.
+Interpolates between the existing path and another path based on the given weight and stores the result in the target path object. Interpolation is achievable if the two paths have the same number of points. The target path is created based on the structure of the existing path.
 
 **Since:** 20
 
@@ -827,8 +792,7 @@ Checks if two paths are equal.
 isInterpolate(other: Path): boolean
 ```
 
-Checks whether the existing path and another path are compatible for interpolation in terms of structure and
-operation sequence. If the paths contain conic operations, the weight values of the operations must be the same.
+Checks whether the existing path and another path are compatible for interpolation in terms of structure and operation sequence. If the paths contain conic operations, the weight values of the operations must be the same.
 
 **Since:** 20
 
@@ -852,8 +816,7 @@ operation sequence. If the paths contain conic operations, the weight values of 
 isInverseFillType(): boolean
 ```
 
-Checks whether the current path fill type is the inverse fill type. For example, the fill types **Winding** and
-**EvenOdd** are not inverse types, while **InverseWinding** and **InverseEvenOdd** are inverse types.
+Checks whether the current path fill type is the inverse fill type. For example, the fill types **Winding** and **EvenOdd** are not inverse types, while **InverseWinding** and **InverseEvenOdd** are inverse types.
 
 **Since:** 23
 
@@ -895,8 +858,7 @@ Checks whether a path forms a rectangle.
 lineTo(x: number, y: number): void
 ```
 
-Draws a line segment from the last point of this path to the target point. If the path is empty, the start point
-(0, 0) is used.
+Draws a line segment from the last point of this path to the target point. If the path is empty, the start point (0, 0) is used.
 
 **Since:** 11
 
@@ -950,8 +912,7 @@ Sets the start point of this path.
 offset(dx: number, dy: number): Path
 ```
 
-Offsets this path by specified distances along the X axis and Y axis and stores the resulting path in the
-**Path** object returned.
+Offsets this path by specified distances along the X axis and Y axis and stores the resulting path in the **Path** object returned.
 
 **Since:** 12
 
@@ -1013,8 +974,7 @@ Combines this path with the passed-in path based on the specified operation mode
 quadTo(ctrlX: number, ctrlY: number, endX: number, endY: number): void
 ```
 
-Draws a quadratic Bezier curve from the last point of this path to the target point. If the path is empty, the
-start point (0, 0) is used.
+Draws a quadratic Bezier curve from the last point of this path to the target point. If the path is empty, the start point (0, 0) is used.
 
 **Since:** 11
 
@@ -1043,8 +1003,7 @@ start point (0, 0) is used.
 rConicTo(ctrlX: number, ctrlY: number, endX: number, endY: number, weight: number): void
 ```
 
-Draws a conic curve from the last point of this path to a point relative to the last point. If the path is empty,
-the start point (0, 0) is used.
+Draws a conic curve from the last point of this path to a point relative to the last point. If the path is empty, the start point (0, 0) is used.
 
 **Since:** 12
 
@@ -1074,8 +1033,7 @@ the start point (0, 0) is used.
 rCubicTo(ctrlX1: number, ctrlY1: number, ctrlX2: number, ctrlY2: number, endX: number, endY: number): void
 ```
 
-Draws a cubic Bezier curve from the last point of this path to a point relative to the last point. If the path is
-empty, the start point (0, 0) is used.
+Draws a cubic Bezier curve from the last point of this path to a point relative to the last point. If the path is empty, the start point (0, 0) is used.
 
 **Since:** 12
 
@@ -1106,8 +1064,7 @@ empty, the start point (0, 0) is used.
 rLineTo(dx: number, dy: number): void
 ```
 
-Draws a line segment from the last point of this path to a point relative to the last point. If the path is empty
-, the start point (0, 0) is used.
+Draws a line segment from the last point of this path to a point relative to the last point. If the path is empty , the start point (0, 0) is used.
 
 **Since:** 12
 
@@ -1134,8 +1091,7 @@ Draws a line segment from the last point of this path to a point relative to the
 rMoveTo(dx: number, dy: number): void
 ```
 
-Sets the start position relative to the last point of this path. If the path is empty, the start point (0, 0) is
-used.
+Sets the start position relative to the last point of this path. If the path is empty, the start point (0, 0) is used.
 
 **Since:** 12
 
@@ -1162,8 +1118,7 @@ used.
 rQuadTo(dx1: number, dy1: number, dx2: number, dy2: number): void
 ```
 
-Draws a quadratic Bezier curve from the last point of this path to a point relative to the last point. If the
-path is empty, the start point (0, 0) is used.
+Draws a quadratic Bezier curve from the last point of this path to a point relative to the last point. If the path is empty, the start point (0, 0) is used.
 
 **Since:** 12
 
@@ -1236,9 +1191,7 @@ Updates the existing path with another path.
 setFillType(pathFillType: PathFillType): void
 ```
 
-Sets the fill type of this path. The fill type determines how "inside" of the path is drawn. For example, when
-the fill type **Winding** is used, "inside" of the path is determined by a non-zero sum of signed edge crossings.
-When **EvenOdd** is used, "inside" of the path is determined by an odd number of edge crossings.
+Sets the fill type of this path. The fill type determines how "inside" of the path is drawn. For example, when the fill type **Winding** is used, "inside" of the path is determined by a non-zero sum of signed edge crossings. When **EvenOdd** is used, "inside" of the path is determined by an odd number of edge crossings.
 
 **Since:** 12
 
@@ -1281,9 +1234,7 @@ Sets the last point of a path.
 toggleInverseFillType(): void
 ```
 
-Toggles the fill type of the path to the inverse type. For example, if the **Winding** fill type is used, the
-fill type after inversion is **InverseWinding**. If the **EvenOdd** fill type is used, the fill type after
-inversion is **InverseEvenOdd**. The same applies to the other two types.
+Toggles the fill type of the path to the inverse type. For example, if the **Winding** fill type is used, the fill type after inversion is **InverseWinding**. If the **EvenOdd** fill type is used, the fill type after inversion is **InverseEvenOdd**. The same applies to the other two types.
 
 **Since:** 23
 

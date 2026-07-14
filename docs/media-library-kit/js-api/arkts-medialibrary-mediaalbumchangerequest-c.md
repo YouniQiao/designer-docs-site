@@ -1,6 +1,6 @@
 # MediaAlbumChangeRequest
 
-Defines the class of media album change request.
+Provides APIs for managing the media album change request.
 
 **Inheritance/Implementation:** MediaAlbumChangeRequest implements [MediaChangeRequest](arkts-medialibrary-mediachangerequest-i.md)
 
@@ -36,7 +36,7 @@ Add assets to the album.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | System inner fail |
 | 14000016 | Operation Not Support |
 
@@ -46,7 +46,7 @@ Add assets to the album.
 constructor(album: Album)
 ```
 
-The constructor to create a MediaAlbumChangeRequest instance.
+Constructor used to initialize a new object.
 
 **Since:** 11
 
@@ -56,13 +56,13 @@ The constructor to create a MediaAlbumChangeRequest instance.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| album | Album | Yes | Specify which album to change |
+| album | Album | Yes | Album to change. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | System inner fail |
 
 ## getAlbum
@@ -71,7 +71,7 @@ The constructor to create a MediaAlbumChangeRequest instance.
 getAlbum(): Album
 ```
 
-Obtains the album in the current album change request.
+Obtains the album in the current album change request. > **NOTE** > > For the change request for creating an album, this API returns **null** before > [applyChanges](arkts-medialibrary-photoaccesshelper-i.md#applychanges-1) is called > to apply the changes.
 
 **Since:** 11
 
@@ -81,13 +81,13 @@ Obtains the album in the current album change request.
 
 | Type | Description |
 | --- | --- |
-| Album | - Returns the album |
+| Album | Album obtained. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 | 14000011 | System inner fail |
 
 ## removeAssets
@@ -112,7 +112,7 @@ Removes assets from the album.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | System inner fail |
 | 14000016 | Operation Not Support |
 
@@ -122,7 +122,7 @@ Removes assets from the album.
 setAlbumName(name: string): void
 ```
 
-Sets the album name.
+Sets the album name. The album name must meet the following requirements: - The total length of the album name must be between 1 and 255 characters. - It must not contain any invalid characters, which are: . \ / : * ? " ' ` < > | { } [ ] - It is case-insensitive. - Duplicate album names are not allowed.
 
 **Since:** 11
 
@@ -138,7 +138,7 @@ Sets the album name.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | System inner fail |
 
 ## comment

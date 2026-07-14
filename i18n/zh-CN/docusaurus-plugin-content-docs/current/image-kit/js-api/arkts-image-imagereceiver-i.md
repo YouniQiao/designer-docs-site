@@ -1,8 +1,6 @@
 # ImageReceiver
 
-图像接收类，用于获取组件Surface ID，接收最新的图片和读取下一张图片，以及释放ImageReceiver实例。
-
-在调用以下方法前需要先创建ImageReceiver实例。
+图像接收类，用于获取组件Surface ID，接收最新的图片和读取下一张图片，以及释放ImageReceiver实例。 在调用以下方法前需要先创建ImageReceiver实例。
 
 **起始版本：** 12
 
@@ -92,12 +90,7 @@ async function On() {
 readLatestImage(): Promise<Image>
 ```
 
-从ImageReceiver读取最新的图片。使用promise异步回调。
-
-> **注意**：
->
-> 此接口需要在[on](sendableImage.ImageReceiver.on)回调触发后调用，才能正常的接收到数据。且此接口返回的[Image](arkts-image-image-i.md)对象使
-> 用完毕后需要调用[release](arkts-image-pixelmap-i.md#release-1)方法释放，释放后才可以继续接收新的数据。
+从ImageReceiver读取最新的图片。使用promise异步回调。 > **注意**： > > 此接口需要在[on](sendableImage.ImageReceiver.on)回调触发后调用，才能正常的接收到数据。且此接口返回的[Image](arkts-image-image-i.md)对象使 > 用完毕后需要调用[release](arkts-image-pixelmap-i.md#release-1)方法释放，释放后才可以继续接收新的数据。
 
 **起始版本：** 12
 
@@ -137,12 +130,7 @@ async function ReadLatestImage() {
 readNextImage(): Promise<Image>
 ```
 
-从ImageReceiver读取下一张图片。使用promise异步回调。
-
-> **注意**：
->
-> 此接口需要在[on](sendableImage.ImageReceiver.on)回调触发后调用，才能正常的接收到数据。且此接口返回的[Image](arkts-image-image-i.md)对象使
-> 用完毕后需要调用[release](arkts-image-pixelmap-i.md#release-1)方法释放，释放后才可以继续接收新的数据。
+从ImageReceiver读取下一张图片。使用promise异步回调。 > **注意**： > > 此接口需要在[on](sendableImage.ImageReceiver.on)回调触发后调用，才能正常的接收到数据。且此接口返回的[Image](arkts-image-image-i.md)对象使 > 用完毕后需要调用[release](arkts-image-pixelmap-i.md#release-1)方法释放，释放后才可以继续接收新的数据。
 
 **起始版本：** 12
 
@@ -182,11 +170,7 @@ async function ReadNextImage() {
 release(): Promise<void>
 ```
 
-释放ImageReceiver实例。使用promise异步回调。
-
-由于图片占用内存较大，所以当ImageReceiver实例使用完成后，应主动调用该方法，及时释放内存。
-
-释放时应确保该实例的所有异步方法均执行完成，且后续不再使用该实例。
+释放ImageReceiver实例。使用promise异步回调。 由于图片占用内存较大，所以当ImageReceiver实例使用完成后，应主动调用该方法，及时释放内存。 释放时应确保该实例的所有异步方法均执行完成，且后续不再使用该实例。
 
 **起始版本：** 12
 

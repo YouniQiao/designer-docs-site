@@ -1,7 +1,6 @@
 # AppEventPackage
 
-Defines parameters of an **AppEventPackage** object. This API is used to obtain detail information about an event
-package, which is obtained using the [takeNext](arkts-performanceanalysis-appeventpackageholder-c.md#takenext-1) API.
+Defines parameters of an **AppEventPackage** object. This API is used to obtain detail information about an event package, which is obtained using the [takeNext](arkts-performanceanalysis-appeventpackageholder-c.md#takenext-1) API.
 
 **Since:** 9
 
@@ -19,9 +18,7 @@ import { hiAppEvent } from '@kit.PerformanceAnalysisKit';
 appEventInfos: Array<AppEventInfo>
 ```
 
-Event object group.
-
-**Atomic service API**: This parameter can be used in atomic services since API version 12.
+Event object group. **Atomic service API**: This parameter can be used in atomic services since API version 12.
 
 **Type:** Array<AppEventInfo>
 
@@ -37,9 +34,7 @@ Event object group.
 data: string[]
 ```
 
-Event data in the event package.
-
-**Atomic service API**: This parameter can be used in atomic services since API version 11.
+Event data in the event package. **Atomic service API**: This parameter can be used in atomic services since API version 11.
 
 **Type:** string[]
 
@@ -55,9 +50,7 @@ Event data in the event package.
 packageId: number
 ```
 
-Event package ID, which is named from **0** in ascending order.
-
-**Atomic service API**: This parameter can be used in atomic services since API version 11.
+Event package ID, which is named from **0** in ascending order. **Atomic service API**: This parameter can be used in atomic services since API version 11.
 
 **Type:** number
 
@@ -73,9 +66,7 @@ Event package ID, which is named from **0** in ascending order.
 row: number
 ```
 
-Number of events in the event package.
-
-**Atomic service API**: This parameter can be used in atomic services since API version 11.
+Number of events in the event package. **Atomic service API**: This parameter can be used in atomic services since API version 11.
 
 **Type:** number
 
@@ -91,9 +82,7 @@ Number of events in the event package.
 size: number
 ```
 
-Event size of the event package, in bytes.
-
-**Atomic service API**: This parameter can be used in atomic services since API version 11.
+Event size of the event package, in bytes. **Atomic service API**: This parameter can be used in atomic services since API version 11.
 
 **Type:** number
 

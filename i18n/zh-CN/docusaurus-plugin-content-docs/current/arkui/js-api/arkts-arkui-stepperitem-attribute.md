@@ -16,11 +16,7 @@
 nextLabel(value: string)
 ```
 
-设置右侧文本按钮内容，最后一页默认值为“开始”，其余页默认值为“下一步”。
-
-> **说明：**
-
-> 从API version 8开始支持，从API version 22开始废弃，建议使用[showNext](arkts-arkui-swipercontroller-c.md#shownext-1)替代。
+设置右侧文本按钮内容，最后一页默认值为“开始”，其余页默认值为“下一步”。 > **说明：** > 从API version 8开始支持，从API version 22开始废弃，建议使用[showNext](arkts-arkui-swipercontroller-c.md#shownext-1)替代。
 
 **起始版本：** 8
 
@@ -44,11 +40,7 @@ nextLabel(value: string)
 prevLabel(value: string)
 ```
 
-设置左侧文本按钮内容，第一页没有左侧文本按钮，当步骤导航器大于一页时，除第一页外默认值都为“返回”。
-
-> **说明：**
-
-> 从API version 8开始支持，从API version 22开始废弃，建议使用[showPrevious](arkts-arkui-swipercontroller-c.md#showprevious-1)替代。
+设置左侧文本按钮内容，第一页没有左侧文本按钮，当步骤导航器大于一页时，除第一页外默认值都为“返回”。 > **说明：** > 从API version 8开始支持，从API version 22开始废弃，建议使用[showPrevious](arkts-arkui-swipercontroller-c.md#showprevious-1)替代。
 
 **起始版本：** 8
 
@@ -72,11 +64,7 @@ prevLabel(value: string)
 status(value?: ItemState)
 ```
 
-设置步骤导航器nextLabel的显示状态。
-
-> **说明：**
-
-> 从API version 8开始支持，从API version 22开始废弃，建议使用[indicatorInteractive](SwiperAttribute#indicatorInteractive)替代。
+设置步骤导航器nextLabel的显示状态。 > **说明：** > 从API version 8开始支持，从API version 22开始废弃，建议使用[indicatorInteractive](SwiperAttribute#indicatorInteractive)替代。
 
 **起始版本：** 8
 

@@ -12,8 +12,7 @@ import { bundleResourceManager } from '@kit.AbilityKit';
 function getAllBundleResourceInfo(resourceFlags: number, callback: AsyncCallback<Array<BundleResourceInfo>>): void
 ```
 
-Obtains the bundle resource information of all applications based on the given resource flags. This API uses an
-asynchronous callback to return the result.
+Obtains the bundle resource information of all applications based on the given resource flags. This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -45,8 +44,7 @@ asynchronous callback to return the result.
 function getAllBundleResourceInfo(resourceFlags: number): Promise<Array<BundleResourceInfo>>
 ```
 
-Obtains the bundle resource information of all applications based on the given resource flags. This API uses a
-promise to return the result.
+Obtains the bundle resource information of all applications based on the given resource flags. This API uses a promise to return the result.
 
 **Since:** 11
 

@@ -7,9 +7,7 @@ function decapsulate(keyAlias: string, params: HuksParam[], encapData: Uint8Arra
       sharedKeyAlias?: string, sharedKeyParams?:  HuksParam[]): Promise<HuksReturnResult>
 ```
 
-Post-Quantum Cryptography密钥解封装操作，支持HUKS密钥管理
-或由应用程序本身决定。如果应用程序选择管理密钥，
-对称密钥包含在HuksReturnResult的outData字段中。
+Post-Quantum Cryptography密钥解封装操作，支持HUKS密钥管理 或由应用程序本身决定。如果应用程序选择管理密钥， 对称密钥包含在HuksReturnResult的outData字段中。
 
 **起始版本：** 26.0.0
 

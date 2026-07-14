@@ -12,10 +12,7 @@ import { userAuth } from '@kit.UserAuthenticationKit';
 function queryReusableAuthResult(authParam: AuthParam): Uint8Array
 ```
 
-Queries whether there is any reusable identity authentication result. This API is used to query whether there is an
-authentication result that meets the reuse conditions before authentication is initiated. If such a result exists,
-the **AuthToken** that can be reused is returned directly, and the user does not need to perform authentication
-again.
+Queries whether there is any reusable identity authentication result. This API is used to query whether there is an authentication result that meets the reuse conditions before authentication is initiated. If such a result exists, the **AuthToken** that can be reused is returned directly, and the user does not need to perform authentication again.
 
 **Since:** 20
 

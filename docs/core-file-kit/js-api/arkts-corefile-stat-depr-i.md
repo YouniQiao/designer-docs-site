@@ -1,7 +1,6 @@
 # Stat
 
-Provides detailed file information. Before calling a method of the **Stat** class, use the [stat()](arkts-corefile-fileio-stat-f.md#stat-1)
-method synchronously or asynchronously to create a **Stat** instance.
+Provides detailed file information. Before calling a method of the **Stat** class, use the [stat()](arkts-corefile-fileio-stat-f.md#stat-1) method synchronously or asynchronously to create a **Stat** instance.
 
 **Since:** 6
 
@@ -17,8 +16,7 @@ method synchronously or asynchronously to create a **Stat** instance.
 isBlockDevice(): boolean
 ```
 
-Checks whether this file is a block special file. A block special file supports access by block only, and it is
-cached when accessed.
+Checks whether this file is a block special file. A block special file supports access by block only, and it is cached when accessed.
 
 **Since:** 6
 
@@ -48,8 +46,7 @@ let isBLockDevice = fileio.statSync(filePath).isBlockDevice();
 isCharacterDevice(): boolean
 ```
 
-Checks whether this file is a character special file. A character special file supports random access, and it is
-not cached when accessed.
+Checks whether this file is a character special file. A character special file supports random access, and it is not cached when accessed.
 
 **Since:** 6
 
@@ -263,8 +260,7 @@ Number of blocks occupied by a file. Each block is 512 bytes.
 readonly ctime: number
 ```
 
-Time of the last status change of the file. The value is the number of seconds elapsed since 00:00:00 on January 1,
-1970.
+Time of the last status change of the file. The value is the number of seconds elapsed since 00:00:00 on January 1, 1970.
 
 **Type:** number
 
@@ -334,31 +330,7 @@ File identifier, which varies with files on the same device.
 readonly mode: number
 ```
 
-File type and permissions. The first four bits indicate the file type, and the last 12 bits indicate the
-permissions. The bit fields are described as follows:
-- **0o170000**: mask used to obtain the file type.
-- **0o140000**: The file is a socket.
-- **0o120000**: The file is a symbolic link.
-- **0o100000**: The file is a regular file.
-- **0o060000**: The file is a block device.
-- **0o040000**: The file is a directory.
-- **0o020000**: The file is a character device.
-- **0o010000**: The file is a named pipe (FIFO).
-- **0o0700**: mask used to obtain the owner permissions.
-- **0o0400**: The owner has the permission to read a regular file or a directory entry.
-- **0o0200**: The owner has the permission to write a regular file or create and delete a directory entry.
-- **0o0100**: The owner has the permission to execute a regular file or search for the specified path in a
-directory.
-- **0o0070**: mask used to obtain the user group permissions.
-- **0o0040**: The user group has the permission to read a regular file or a directory entry.
-- **0o0020**: The user group has the permission to write a regular file or create and delete a directory entry.
-- **0o0010**: The user group has the permission to execute a regular file or search for the specified path in a
-directory.
-- **0o0007**: mask used to obtain the permissions of other users.
-- **0o0004**: Other users have the permission to read a regular file or a directory entry.
-- **0o0002**: Other users have the permission to write a regular file or create and delete a directory entry.
-- **0o0001**: Other users have the permission to execute a regular file or search for the specified path in a
-directory.
+File type and permissions. The first four bits indicate the file type, and the last 12 bits indicate the permissions. The bit fields are described as follows: - **0o170000**: mask used to obtain the file type. - **0o140000**: The file is a socket. - **0o120000**: The file is a symbolic link. - **0o100000**: The file is a regular file. - **0o060000**: The file is a block device. - **0o040000**: The file is a directory. - **0o020000**: The file is a character device. - **0o010000**: The file is a named pipe (FIFO). - **0o0700**: mask used to obtain the owner permissions. - **0o0400**: The owner has the permission to read a regular file or a directory entry. - **0o0200**: The owner has the permission to write a regular file or create and delete a directory entry. - **0o0100**: The owner has the permission to execute a regular file or search for the specified path in a directory. - **0o0070**: mask used to obtain the user group permissions. - **0o0040**: The user group has the permission to read a regular file or a directory entry. - **0o0020**: The user group has the permission to write a regular file or create and delete a directory entry. - **0o0010**: The user group has the permission to execute a regular file or search for the specified path in a directory. - **0o0007**: mask used to obtain the permissions of other users. - **0o0004**: Other users have the permission to read a regular file or a directory entry. - **0o0002**: Other users have the permission to write a regular file or create and delete a directory entry. - **0o0001**: Other users have the permission to execute a regular file or search for the specified path in a directory.
 
 **Type:** number
 
@@ -376,8 +348,7 @@ directory.
 readonly mtime: number
 ```
 
-Time when the file content was last modified. The value is the number of seconds elapsed since 00:00:00 on January
-1, 1970.
+Time when the file content was last modified. The value is the number of seconds elapsed since 00:00:00 on January 1, 1970.
 
 **Type:** number
 

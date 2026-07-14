@@ -138,11 +138,7 @@ Sets the mask in the shape of a rectangle with rounded corners.
 fillColor: number
 ```
 
-Describes the fill color of the mask, in ARGB format. The default value is **0XFF000000**.
-
-A color with only the transparency is generated based on the transparency and brightness of **fillColor**. The
-higher the brightness, the more transparent the color. Then, the color is blended with the color of **RenderNode**
-using the [BlendMode.SRC_IN](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-blendmode-e.md) API to generate the final color.
+Describes the fill color of the mask, in ARGB format. The default value is **0XFF000000**. A color with only the transparency is generated based on the transparency and brightness of **fillColor**. The higher the brightness, the more transparent the color. Then, the color is blended with the color of **RenderNode** using the [BlendMode.SRC_IN](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-blendmode-e.md) API to generate the final color.
 
 **Type:** number
 
@@ -162,11 +158,7 @@ using the [BlendMode.SRC_IN](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphi
 strokeColor: number
 ```
 
-Sets the stroke color for the mask, in ARGB format. The default value is **0XFF000000**.
-
-A color with only the transparency is generated based on the transparency and brightness of **strokeColor**. The
-higher the brightness, the more transparent the color. Then, the color is blended with the color of **RenderNode**
-using the [BlendMode.SRC_IN](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-blendmode-e.md) API to generate the final color.
+Sets the stroke color for the mask, in ARGB format. The default value is **0XFF000000**. A color with only the transparency is generated based on the transparency and brightness of **strokeColor**. The higher the brightness, the more transparent the color. Then, the color is blended with the color of **RenderNode** using the [BlendMode.SRC_IN](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-blendmode-e.md) API to generate the final color.
 
 **Type:** number
 

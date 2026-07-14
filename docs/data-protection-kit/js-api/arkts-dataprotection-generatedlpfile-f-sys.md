@@ -12,12 +12,7 @@ import { dlpPermission } from '@kit.DataProtectionKit';
 function generateDLPFile(plaintextFd: number, ciphertextFd: number, property: DLPProperty): Promise<DLPFile>
 ```
 
-Generates a **DLPFile** object, which is an encrypted file that can be accessed only by authorized users. The
-users can have the full control permission or read-only permission on the DLP file. This API uses a promise to
-return the result.
-
-After calling **generateDLPFile** to return a **DLPFile** object, the system must call **closeDLPFile** to
-release resources after using the object.
+Generates a **DLPFile** object, which is an encrypted file that can be accessed only by authorized users. The users can have the full control permission or read-only permission on the DLP file. This API uses a promise to return the result. After calling **generateDLPFile** to return a **DLPFile** object, the system must call **closeDLPFile** to release resources after using the object.
 
 **Since:** 10
 
@@ -102,13 +97,7 @@ ExampleFunction();
 function generateDLPFile(plaintextFd: number, ciphertextFd: number, property: DLPProperty, callback: AsyncCallback<DLPFile>): void
 ```
 
-Generates a DLP file, which is an encrypted file that can be accessed only by authorized users. The users can
-have the full control permission or read-only permission on the DLP file. Obtains a **DLPFile** object. This API
-uses an asynchronous callback to return the result. After using the **DLPFile** object, call **closeDLPFile** to
-close the object to prevent resource leakage.
-
-After calling **generateDLPFile()** to return a **DLPFile** object, the system must call **closeDLPFile()** to
-release resources after using the object.
+Generates a DLP file, which is an encrypted file that can be accessed only by authorized users. The users can have the full control permission or read-only permission on the DLP file. Obtains a **DLPFile** object. This API uses an asynchronous callback to return the result. After using the **DLPFile** object, call **closeDLPFile** to close the object to prevent resource leakage. After calling **generateDLPFile()** to return a **DLPFile** object, the system must call **closeDLPFile()** to release resources after using the object.
 
 **Since:** 10
 

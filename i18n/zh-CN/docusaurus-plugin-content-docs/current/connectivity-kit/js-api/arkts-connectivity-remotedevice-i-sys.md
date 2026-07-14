@@ -380,8 +380,7 @@ setPairingPasscode(passcode: string): Promise<void>
 startCrediblePairing(): Promise<void>
 ```
 
-发起与可信的远端星闪设备的配对。
-该接口不触发对话框，不需要用户授权。
+发起与可信的远端星闪设备的配对。 该接口不触发对话框，不需要用户授权。
 
 **起始版本：** 26.0.0
 

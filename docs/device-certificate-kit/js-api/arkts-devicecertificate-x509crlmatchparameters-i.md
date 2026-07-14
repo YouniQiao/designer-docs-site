@@ -1,7 +1,6 @@
 # X509CRLMatchParameters
 
-Represents the parameters used to match a certificate revocation list (CRL). If no parameter is specified, all CRLs
-are matched.
+Represents the parameters used to match a certificate revocation list (CRL). If no parameter is specified, all CRLs are matched.
 
 **Since:** 11
 

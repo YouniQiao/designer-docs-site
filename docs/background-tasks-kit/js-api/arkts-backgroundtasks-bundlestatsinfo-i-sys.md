@@ -18,8 +18,7 @@ import { usageStatistics } from '@kit.BackgroundTasksKit';
 abilityInFgTotalTime?: number
 ```
 
-The total duration, in milliseconds.
-<br> Unit:ms
+The total duration, in milliseconds. <br> Unit:ms
 
 **Type:** number
 
@@ -35,8 +34,7 @@ The total duration, in milliseconds.
 abilityPrevAccessTime?: number
 ```
 
-The last time when the application was accessed, in milliseconds.
-<br> Unit:ms
+The last time when the application was accessed, in milliseconds. <br> Unit:ms
 
 **Type:** number
 
@@ -52,8 +50,7 @@ The last time when the application was accessed, in milliseconds.
 abilityPrevSeenTime?: number
 ```
 
-The last time when the application was visible in the foreground, in milliseconds.
-<br> Unit:ms
+The last time when the application was visible in the foreground, in milliseconds. <br> Unit:ms
 
 **Type:** number
 
@@ -69,8 +66,7 @@ The last time when the application was visible in the foreground, in millisecond
 abilitySeenTotalTime?: number
 ```
 
-The total duration, in milliseconds.
-<br> Unit:ms
+The total duration, in milliseconds. <br> Unit:ms
 
 **Type:** number
 
@@ -118,8 +114,7 @@ The bundle name of the application.
 fgAbilityAccessTotalTime?: number
 ```
 
-The total duration, in milliseconds.
-<br> Unit:ms
+The total duration, in milliseconds. <br> Unit:ms
 
 **Type:** number
 
@@ -135,8 +130,7 @@ The total duration, in milliseconds.
 fgAbilityPrevAccessTime?: number
 ```
 
-The last time when the foreground application was accessed, in milliseconds.
-<br> Unit:ms
+The last time when the foreground application was accessed, in milliseconds. <br> Unit:ms
 
 **Type:** number
 
@@ -168,9 +162,7 @@ The identifier of BundleStatsInfo.
 infosBeginTime?: number
 ```
 
-The time of the first bundle usage record in this {@code BundleActiveInfo} object,
-in milliseconds.
-<br> Unit:ms
+The time of the first bundle usage record in this {@code BundleActiveInfo} object, in milliseconds. <br> Unit:ms
 
 **Type:** number
 
@@ -186,9 +178,7 @@ in milliseconds.
 infosEndTime?: number
 ```
 
-The time of the last bundle usage record in this {@code BundleActiveInfo} object,
-in milliseconds.
-<br> Unit:ms
+The time of the last bundle usage record in this {@code BundleActiveInfo} object, in milliseconds. <br> Unit:ms
 
 **Type:** number
 

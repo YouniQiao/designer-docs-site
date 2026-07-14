@@ -20,8 +20,7 @@ import { osAccount } from '@kit.BasicServicesKit';
 challenge?: Uint8Array
 ```
 
-Random challenge value, which prevents replay attacks. The value contains a maximum of 32 bytes. The default
-value is **undefined**.
+Random challenge value, which prevents replay attacks. The value contains a maximum of 32 bytes. The default value is **undefined**.
 
 **Type:** Uint8Array
 
@@ -41,15 +40,7 @@ value is **undefined**.
 interactionContext?: Context
 ```
 
-User interaction context configuration. The default value is **undefined**.
-
-- If no context is specified, the authorization dialog box is displayed in modal system mode.
-- If [UIAbilityContext](../apis-ability-kit/js-apis-inner-application-uiAbilityContext.md) or
-[UIExtensionContext](../apis-ability-kit/js-apis-inner-application-uiExtensionContext.md) is specified, the
-authorization dialog box is displayed in modal application mode.
-- If no valid context is provided, the authorization dialog box cannot be displayed.
-
-Note: This parameter is valid only when **isInteractionAllowed** is set to **true**.
+User interaction context configuration. The default value is **undefined**. - If no context is specified, the authorization dialog box is displayed in modal system mode. - If [UIAbilityContext](../apis-ability-kit/js-apis-inner-application-uiAbilityContext.md) or [UIExtensionContext](../apis-ability-kit/js-apis-inner-application-uiExtensionContext.md) is specified, the authorization dialog box is displayed in modal application mode. - If no valid context is provided, the authorization dialog box cannot be displayed. Note: This parameter is valid only when **isInteractionAllowed** is set to **true**.
 
 **Type:** Context
 
@@ -69,13 +60,7 @@ Note: This parameter is valid only when **isInteractionAllowed** is set to **tru
 isInteractionAllowed?: boolean
 ```
 
-Whether user interaction is allowed. The default value is **true**.
-
-If the value is **true**, the authorization dialog box can be displayed in the interaction context. If the value
-is **false**, the authorization dialog box cannot be displayed.
-
-Note: This option is valid only when the caller is in the foreground. If the caller is in the background, user
-interaction is not allowed.
+Whether user interaction is allowed. The default value is **true**. If the value is **true**, the authorization dialog box can be displayed in the interaction context. If the value is **false**, the authorization dialog box cannot be displayed. Note: This option is valid only when the caller is in the foreground. If the caller is in the background, user interaction is not allowed.
 
 **Type:** boolean
 
@@ -95,10 +80,7 @@ interaction is not allowed.
 isReuseNeeded?: boolean
 ```
 
-Whether to reuse the previous authorization. The default value is **true**.
-
-If the value is **true** and the authorization result is valid, the result will be reused. Otherwise, a new
-authorization will be executed.
+Whether to reuse the previous authorization. The default value is **true**. If the value is **true** and the authorization result is valid, the result will be reused. Otherwise, a new authorization will be executed.
 
 **Type:** boolean
 

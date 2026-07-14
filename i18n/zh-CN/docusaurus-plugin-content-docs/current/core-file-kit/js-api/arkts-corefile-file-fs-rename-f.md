@@ -6,11 +6,7 @@
 declare function rename(oldPath: string, newPath: string): Promise<void>
 ```
 
-重命名文件或目录，使用promise异步回调。
-
-> **说明：**
->
-> 该接口不支持在分布式文件路径下操作。
+重命名文件或目录，使用promise异步回调。 > **说明：** > > 该接口不支持在分布式文件路径下操作。
 
 **起始版本：** 9
 
@@ -62,11 +58,7 @@ declare function rename(oldPath: string, newPath: string): Promise<void>
 declare function rename(oldPath: string, newPath: string, callback: AsyncCallback<void>): void
 ```
 
-重命名文件或目录，使用callback异步回调。
-
-> **说明：**
->
-> 该接口不支持在分布式文件路径下操作。
+重命名文件或目录，使用callback异步回调。 > **说明：** > > 该接口不支持在分布式文件路径下操作。
 
 **起始版本：** 9
 

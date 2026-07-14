@@ -6,9 +6,7 @@
 function getAppProvisionInfo(bundleName: string, callback: AsyncCallback<AppProvisionInfo>): void
 ```
 
-获取指定bundleName的provision配置文件信息。使用callback异步回调。
-
-获取调用方自身的信息时不需要权限。
+获取指定bundleName的provision配置文件信息。使用callback异步回调。 获取调用方自身的信息时不需要权限。
 
 **起始版本：** 10
 
@@ -65,9 +63,7 @@ try {
 function getAppProvisionInfo(bundleName: string, userId: number, callback: AsyncCallback<AppProvisionInfo>): void
 ```
 
-获取指定bundleName和userId的provision配置文件信息。使用callback异步回调。
-
-获取调用方自身的信息时不需要权限。
+获取指定bundleName和userId的provision配置文件信息。使用callback异步回调。 获取调用方自身的信息时不需要权限。
 
 **起始版本：** 10
 
@@ -127,9 +123,7 @@ try {
 function getAppProvisionInfo(bundleName: string, userId?: number): Promise<AppProvisionInfo>
 ```
 
-根据bundleName和userId获取应用的provision配置文件信息。使用Promise异步回调。
-
-获取调用方自身的信息时不需要权限。
+根据bundleName和userId获取应用的provision配置文件信息。使用Promise异步回调。 获取调用方自身的信息时不需要权限。
 
 **起始版本：** 10
 

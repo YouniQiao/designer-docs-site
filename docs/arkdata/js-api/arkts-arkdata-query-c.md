@@ -1,7 +1,6 @@
 # Query
 
-Provides methods to create a **Query** object, which defines different data query criteria. A **Query** object
-supports a maximum of 256 predicates.
+Provides methods to create a **Query** object, which defines different data query criteria. A **Query** object supports a maximum of 256 predicates.
 
 **Since:** 9
 
@@ -41,14 +40,15 @@ import { BusinessError } from '@kit.BasicServicesKit';
 try {
     let query: distributedKVStore.Query | null = new distributedKVStore.Query();
     if (query != null) {
-      query.notEqualTo("field", "value1");
+      query.notEqualTo('field', 'value1');
       query.and();
-      query.notEqualTo("field", "value2");
-      console.info("query is " + query.getSqlLike());
+      query.notEqualTo('field', 'value2');
+      console.info('query is ' + query.getSqlLike());
     }
     query = null;
-} catch (e) {
-    console.error("duplicated calls should be ok :" + e);
+} catch (err) {
+    let error = err as BusinessError;
+    console.error(`An unexpected error occurred. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -82,13 +82,14 @@ try {
     let query: distributedKVStore.Query | null = new distributedKVStore.Query();
     if (query != null) {
       query.beginGroup();
-      query.isNotNull("field");
+      query.isNotNull('field');
       query.endGroup();
-      console.info("query is " + query.getSqlLike());
+      console.info('query is ' + query.getSqlLike());
     }
     query = null;
-} catch (e) {
-    console.error("duplicated calls should be ok :" + e);
+} catch (err) {
+    let error = err as BusinessError;
+    console.error(`An unexpected error occurred. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -113,14 +114,7 @@ Defines a constructor used to create a **Query** instance.
 deviceId(deviceId: string): Query
 ```
 
-Creates a **Query** object with the device ID as the key prefix.
-
-> **NOTE**
->
-> **deviceId** can be obtained by
-> [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1)
-> .
-> > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
+Creates a **Query** object with the device ID as the key prefix. > **NOTE** > > **deviceId** can be obtained by > [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1) > . > > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
 
 **Since:** 9
 
@@ -154,12 +148,12 @@ import { BusinessError } from '@kit.BasicServicesKit';
 try {
     let query: distributedKVStore.Query | null = new distributedKVStore.Query();
     if (query != null) {
-      query.deviceId("deviceId");
+      query.deviceId('deviceId');
       console.info(`query is ${query.getSqlLike()}`);
     }
-} catch (e) {
-    let error = e as BusinessError;
-    console.error(`duplicated calls should be ok.code is ${error.code},message is ${error.message}`);
+} catch (err) {
+    let error = err as BusinessError;
+    console.error(`An unexpected error occurred. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -193,13 +187,14 @@ try {
     let query: distributedKVStore.Query | null = new distributedKVStore.Query();
     if (query != null) {
       query.beginGroup();
-      query.isNotNull("field");
+      query.isNotNull('field');
       query.endGroup();
-      console.info("query is " + query.getSqlLike());
+      console.info('query is ' + query.getSqlLike());
     }
     query = null;
-} catch (e) {
-    console.error("duplicated calls should be ok :" + e);
+} catch (err) {
+    let error = err as BusinessError;
+    console.error(`An unexpected error occurred. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -210,15 +205,7 @@ try {
 equalTo(field: string, value: number | number | string | boolean): Query
 ```
 
-Creates a **Query** object to match the specified field whose value is equal to the given value.
-
-> **NOTE**
->
-> This API should be used together with [Schema](arkts-arkdata-schema-c.md).
->
-> For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV
-> store using the **getKVStore()** method in
-> [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
+Creates a **Query** object to match the specified field whose value is equal to the given value. > **NOTE** > > This API should be used together with [Schema](arkts-arkdata-schema-c.md). > > For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV > store using the **getKVStore()** method in > [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
 
 **Since:** 9
 
@@ -276,8 +263,9 @@ try {
       let sql1 = query.getSqlLike();
       console.info(`GetSqlLike sql= ${sql1}`);
     }
-} catch (e) {
-    console.error("duplicated calls should be ok : " + e);
+} catch (err) {
+    let error = err as BusinessError;
+    console.error(`An unexpected error occurred. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -288,15 +276,7 @@ try {
 greaterThan(field: string, value: number | number | string | boolean): Query
 ```
 
-Creates a **Query** object to match the specified field whose value is greater than the specified value.
-
-> **NOTE**
->
-> This API should be used together with [Schema](arkts-arkdata-schema-c.md).
->
-> For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV
-> store using the **getKVStore()** method in
-> [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
+Creates a **Query** object to match the specified field whose value is greater than the specified value. > **NOTE** > > This API should be used together with [Schema](arkts-arkdata-schema-c.md). > > For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV > store using the **getKVStore()** method in > [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
 
 **Since:** 9
 
@@ -329,16 +309,7 @@ Creates a **Query** object to match the specified field whose value is greater t
 greaterThanOrEqualTo(field: string, value: number | number | string): Query
 ```
 
-Creates a **Query** object to match the specified field whose value is greater than or equal to the specified
-value.
-
-> **NOTE**
->
-> This API should be used together with [Schema](arkts-arkdata-schema-c.md).
->
-> For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV
-> store using the **getKVStore()** method in
-> [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
+Creates a **Query** object to match the specified field whose value is greater than or equal to the specified value. > **NOTE** > > This API should be used together with [Schema](arkts-arkdata-schema-c.md). > > For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV > store using the **getKVStore()** method in > [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
 
 **Since:** 9
 
@@ -371,15 +342,7 @@ value.
 inNumber(field: string, valueList: number[] | number[]): Query
 ```
 
-Creates a **Query** object to match the specified field whose value is within the specified list of numbers.
-
-> **NOTE**
->
-> This API should be used together with [Schema](arkts-arkdata-schema-c.md).
->
-> For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV
-> store using the **getKVStore()** method in
-> [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
+Creates a **Query** object to match the specified field whose value is within the specified list of numbers. > **NOTE** > > This API should be used together with [Schema](arkts-arkdata-schema-c.md). > > For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV > store using the **getKVStore()** method in > [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
 
 **Since:** 9
 
@@ -412,15 +375,7 @@ Creates a **Query** object to match the specified field whose value is within th
 inString(field: string, valueList: string[]): Query
 ```
 
-Creates a **Query** object to match the specified field whose value is within the specified list of strings.
-
-> **NOTE**
->
-> This API should be used together with [Schema](arkts-arkdata-schema-c.md).
->
-> For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV
-> store using the **getKVStore()** method in
-> [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
+Creates a **Query** object to match the specified field whose value is within the specified list of strings. > **NOTE** > > This API should be used together with [Schema](arkts-arkdata-schema-c.md). > > For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV > store using the **getKVStore()** method in > [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
 
 **Since:** 9
 
@@ -455,13 +410,13 @@ import { BusinessError } from '@kit.BasicServicesKit';
 try {
     let query: distributedKVStore.Query | null = new distributedKVStore.Query();
     if (query != null) {
-      query.inString("field", ['test1', 'test2']);
+      query.inString('field', ['test1', 'test2']);
       console.info(`query is ${query.getSqlLike()}`);
     }
     query = null;
-} catch (e) {
-    let error = e as BusinessError;
-    console.error(`duplicated calls should be ok.code is ${error.code},message is ${error.message}`);
+} catch (err) {
+    let error = err as BusinessError;
+    console.error(`An unexpected error occurred. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -472,15 +427,7 @@ try {
 isNotNull(field: string): Query
 ```
 
-Creates a **Query** object to match the specified field whose value is not **null**.
-
-> **NOTE**
->
-> This API should be used together with [Schema](arkts-arkdata-schema-c.md).
->
-> For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV
-> store using the **getKVStore()** method in
-> [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
+Creates a **Query** object to match the specified field whose value is not **null**. > **NOTE** > > This API should be used together with [Schema](arkts-arkdata-schema-c.md). > > For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV > store using the **getKVStore()** method in > [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
 
 **Since:** 9
 
@@ -514,13 +461,13 @@ import { BusinessError } from '@kit.BasicServicesKit';
 try {
   let query: distributedKVStore.Query | null = new distributedKVStore.Query();
   if (query != null) {
-    query.isNotNull("field");
+    query.isNotNull('field');
     console.info(`query is ${query.getSqlLike()}`);
   }
   query = null;
-} catch (e) {
-  let error = e as BusinessError;
-  console.error(`duplicated calls should be ok.code is ${error.code},message is ${error.message}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`An unexpected error occurred. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -531,15 +478,7 @@ try {
 isNull(field: string): Query
 ```
 
-Creates a **Query** object to match the specified field whose value is **null**.
-
-> **NOTE**
->
-> This API should be used together with [Schema](arkts-arkdata-schema-c.md).
->
-> For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV
-> store using the **getKVStore()** method in
-> [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
+Creates a **Query** object to match the specified field whose value is **null**. > **NOTE** > > This API should be used together with [Schema](arkts-arkdata-schema-c.md). > > For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV > store using the **getKVStore()** method in > [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
 
 **Since:** 9
 
@@ -573,13 +512,13 @@ import { BusinessError } from '@kit.BasicServicesKit';
 try {
     let query: distributedKVStore.Query | null = new distributedKVStore.Query();
     if (query != null) {
-      query.isNull("field");
+      query.isNull('field');
       console.info(`query is ${query.getSqlLike()}`);
     }
     query = null;
-} catch (e) {
-    let error = e as BusinessError;
-    console.error(`duplicated calls should be ok.code is ${error.code},message is ${error.message}`);
+} catch (err) {
+    let error = err as BusinessError;
+    console.error(`An unexpected error occurred. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -590,15 +529,7 @@ try {
 lessThan(field: string, value: number | number | string): Query
 ```
 
-Creates a **Query** object to match the specified field whose value is less than the specified value.
-
-> **NOTE**
->
-> This API should be used together with [Schema](arkts-arkdata-schema-c.md).
->
-> For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV
-> store using the **getKVStore()** method in
-> [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
+Creates a **Query** object to match the specified field whose value is less than the specified value. > **NOTE** > > This API should be used together with [Schema](arkts-arkdata-schema-c.md). > > For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV > store using the **getKVStore()** method in > [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
 
 **Since:** 9
 
@@ -631,15 +562,7 @@ Creates a **Query** object to match the specified field whose value is less than
 lessThanOrEqualTo(field: string, value: number | number | string): Query
 ```
 
-Creates a **Query** object to match the specified field whose value is less than or equal to the specified value.
-
-> **NOTE**
->
-> This API should be used together with [Schema](arkts-arkdata-schema-c.md).
->
-> For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV
-> store using the **getKVStore()** method in
-> [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
+Creates a **Query** object to match the specified field whose value is less than or equal to the specified value. > **NOTE** > > This API should be used together with [Schema](arkts-arkdata-schema-c.md). > > For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV > store using the **getKVStore()** method in > [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
 
 **Since:** 9
 
@@ -672,15 +595,7 @@ Creates a **Query** object to match the specified field whose value is less than
 like(field: string, value: string): Query
 ```
 
-Creates a **Query** object to match the specified field whose value is similar to the specified string.
-
-> **NOTE**
->
-> This API should be used together with [Schema](arkts-arkdata-schema-c.md).
->
-> For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV
-> store using the **getKVStore()** method in
-> [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
+Creates a **Query** object to match the specified field whose value is similar to the specified string. > **NOTE** > > This API should be used together with [Schema](arkts-arkdata-schema-c.md). > > For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV > store using the **getKVStore()** method in > [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
 
 **Since:** 9
 
@@ -715,13 +630,13 @@ import { BusinessError } from '@kit.BasicServicesKit';
 try {
     let query: distributedKVStore.Query | null = new distributedKVStore.Query();
     if (query != null) {
-      query.like("field", "value");
+      query.like('field', 'value');
       console.info(`query is ${query.getSqlLike()}`);
     }
     query = null;
-} catch (e) {
-    let error = e as BusinessError;
-    console.error(`duplicated calls should be ok.code is ${error.code},message is ${error.message}`);
+} catch (err) {
+    let error = err as BusinessError;
+    console.error(`An unexpected error occurred. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -732,9 +647,7 @@ try {
 limit(total: number, offset: number): Query
 ```
 
-Creates a **Query** object to specify the number of records of the query result and where to start. This API must
-be called after the invocation of the **orderByAsc()**, **orderByDesc()**, and the query APIs of the **Query**
-object.
+Creates a **Query** object to specify the number of records of the query result and where to start. This API must be called after the invocation of the **orderByAsc()**, **orderByDesc()**, and the query APIs of the **Query** object.
 
 **Since:** 9
 
@@ -771,14 +684,14 @@ let offset = 1;
 try {
   let query: distributedKVStore.Query | null = new distributedKVStore.Query();
   if (query != null) {
-    query.notEqualTo("field", "value");
+    query.notEqualTo('field', 'value');
     query.limit(total, offset);
     console.info(`query is ${query.getSqlLike()}`);
   }
   query = null;
-} catch (e) {
-  let error = e as BusinessError;
-  console.error(`duplicated calls should be ok.code is ${error.code},message is ${error.message}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`An unexpected error occurred. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -789,15 +702,7 @@ try {
 notEqualTo(field: string, value: number | number | string | boolean): Query
 ```
 
-Creates a **Query** object to match the specified field whose value is not equal to the specified value.
-
-> **NOTE**
->
-> This API should be used together with [Schema](arkts-arkdata-schema-c.md).
->
-> For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV
-> store using the **getKVStore()** method in
-> [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
+Creates a **Query** object to match the specified field whose value is not equal to the specified value. > **NOTE** > > This API should be used together with [Schema](arkts-arkdata-schema-c.md). > > For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV > store using the **getKVStore()** method in > [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
 
 **Since:** 9
 
@@ -830,15 +735,7 @@ Creates a **Query** object to match the specified field whose value is not equal
 notInNumber(field: string, valueList: number[] | number[]): Query
 ```
 
-Creates a **Query** object to match the specified field whose value is not within the specified list of numbers.
-
-> **NOTE**
->
-> This API should be used together with [Schema](arkts-arkdata-schema-c.md).
->
-> For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV
-> store using the **getKVStore()** method in
-> [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
+Creates a **Query** object to match the specified field whose value is not within the specified list of numbers. > **NOTE** > > This API should be used together with [Schema](arkts-arkdata-schema-c.md). > > For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV > store using the **getKVStore()** method in > [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
 
 **Since:** 9
 
@@ -871,15 +768,7 @@ Creates a **Query** object to match the specified field whose value is not withi
 notInString(field: string, valueList: string[]): Query
 ```
 
-Creates a **Query** object to match the specified field whose value is not within the specified list of strings.
-
-> **NOTE**
->
-> This API should be used together with [Schema](arkts-arkdata-schema-c.md).
->
-> For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV
-> store using the **getKVStore()** method in
-> [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
+Creates a **Query** object to match the specified field whose value is not within the specified list of strings. > **NOTE** > > This API should be used together with [Schema](arkts-arkdata-schema-c.md). > > For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV > store using the **getKVStore()** method in > [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
 
 **Since:** 9
 
@@ -914,13 +803,13 @@ import { BusinessError } from '@kit.BasicServicesKit';
 try {
     let query: distributedKVStore.Query | null = new distributedKVStore.Query();
     if (query != null) {
-      query.notInString("field", ['test1', 'test2']);
+      query.notInString('field', ['test1', 'test2']);
       console.info(`query is ${query.getSqlLike()}`);
     }
     query = null;
-} catch (e) {
-    let error = e as BusinessError;
-    console.error(`duplicated calls should be ok.code is ${error.code},message is ${error.message}`);
+} catch (err) {
+    let error = err as BusinessError;
+    console.error(`An unexpected error occurred. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -953,14 +842,15 @@ import { BusinessError } from '@kit.BasicServicesKit';
 try {
     let query: distributedKVStore.Query | null = new distributedKVStore.Query();
     if (query != null) {
-      query.notEqualTo("field", "value1");
+      query.notEqualTo('field', 'value1');
       query.or();
-      query.notEqualTo("field", "value2");
-      console.info("query is " + query.getSqlLike());
+      query.notEqualTo('field', 'value2');
+      console.info('query is ' + query.getSqlLike());
     }
     query = null;
-} catch (e) {
-    console.error("duplicated calls should be ok :" + e);
+} catch (err) {
+    let error = err as BusinessError;
+    console.error(`An unexpected error occurred. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -971,15 +861,7 @@ try {
 orderByAsc(field: string): Query
 ```
 
-Creates a **Query** object to sort the query results in ascending order.
-
-> **NOTE**
->
-> This API should be used together with [Schema](arkts-arkdata-schema-c.md).
->
-> For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV
-> store using the **getKVStore()** method in
-> [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
+Creates a **Query** object to sort the query results in ascending order. > **NOTE** > > This API should be used together with [Schema](arkts-arkdata-schema-c.md). > > For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV > store using the **getKVStore()** method in > [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
 
 **Since:** 9
 
@@ -1013,14 +895,14 @@ import { BusinessError } from '@kit.BasicServicesKit';
 try {
     let query: distributedKVStore.Query | null = new distributedKVStore.Query();
     if (query != null) {
-      query.notEqualTo("field", "value");
-      query.orderByAsc("field");
+      query.notEqualTo('field', 'value');
+      query.orderByAsc('field');
       console.info(`query is ${query.getSqlLike()}`);
     }
     query = null;
-} catch (e) {
-    let error = e as BusinessError;
-    console.error(`duplicated calls should be ok.code is ${error.code},message is ${error.message}`);
+} catch (err) {
+    let error = err as BusinessError;
+    console.error(`An unexpected error occurred. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -1031,15 +913,7 @@ try {
 orderByDesc(field: string): Query
 ```
 
-Creates a **Query** object to sort the query results in descending order.
-
-> **NOTE**
->
-> This API should be used together with [Schema](arkts-arkdata-schema-c.md).
->
-> For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV
-> store using the **getKVStore()** method in
-> [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
+Creates a **Query** object to sort the query results in descending order. > **NOTE** > > This API should be used together with [Schema](arkts-arkdata-schema-c.md). > > For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV > store using the **getKVStore()** method in > [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
 
 **Since:** 9
 
@@ -1073,14 +947,14 @@ import { BusinessError } from '@kit.BasicServicesKit';
 try {
     let query: distributedKVStore.Query | null = new distributedKVStore.Query();
     if (query != null) {
-      query.notEqualTo("field", "value");
-      query.orderByDesc("field");
+      query.notEqualTo('field', 'value');
+      query.orderByDesc('field');
       console.info(`query is ${query.getSqlLike()}`);
     }
     query = null;
-} catch (e) {
-    let error = e as BusinessError;
-    console.error(`duplicated calls should be ok.code is ${error.code},message is ${error.message}`);
+} catch (err) {
+    let error = err as BusinessError;
+    console.error(`An unexpected error occurred. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -1125,14 +999,14 @@ import { BusinessError } from '@kit.BasicServicesKit';
 try {
     let query: distributedKVStore.Query | null = new distributedKVStore.Query();
     if (query != null) {
-      query.prefixKey("$.name");
-      query.prefixKey("0");
+      query.prefixKey('$.name');
+      query.prefixKey('0');
       console.info(`query is ${query.getSqlLike()}`);
     }
     query = null;
-} catch (e) {
-    let error = e as BusinessError;
-    console.error(`duplicated calls should be ok.code is ${error.code},message is ${error.message}`);
+} catch (err) {
+    let error = err as BusinessError;
+    console.error(`An unexpected error occurred. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -1165,14 +1039,15 @@ import { BusinessError } from '@kit.BasicServicesKit';
 try {
   let query: distributedKVStore.Query | null = new distributedKVStore.Query();
   if (query != null) {
-    query.equalTo("key", "value");
-    console.info("query is " + query.getSqlLike());
+    query.equalTo('key', 'value');
+    console.info('query is ' + query.getSqlLike());
     query.reset();
-    console.info("query is " + query.getSqlLike());
+    console.info('query is ' + query.getSqlLike());
   }
   query = null;
-} catch (e) {
-  console.error("simply calls should be ok :" + e);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`An unexpected error occurred. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -1217,14 +1092,14 @@ import { BusinessError } from '@kit.BasicServicesKit';
 try {
     let query: distributedKVStore.Query | null = new distributedKVStore.Query();
     if (query != null) {
-      query.setSuggestIndex("$.name");
-      query.setSuggestIndex("0");
+      query.setSuggestIndex('$.name');
+      query.setSuggestIndex('0');
       console.info(`query is ${query.getSqlLike()}`);
     }
     query = null;
-} catch (e) {
-    let error = e as BusinessError;
-    console.error(`duplicated calls should be ok.code is ${error.code},message is ${error.message}`);
+} catch (err) {
+    let error = err as BusinessError;
+    console.error(`An unexpected error occurred. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -1235,15 +1110,7 @@ try {
 unlike(field: string, value: string): Query
 ```
 
-Creates a **Query** object to match the specified field whose value is not similar to the specified string.
-
-> **NOTE**
->
-> This API should be used together with [Schema](arkts-arkdata-schema-c.md).
->
-> For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV
-> store using the **getKVStore()** method in
-> [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
+Creates a **Query** object to match the specified field whose value is not similar to the specified string. > **NOTE** > > This API should be used together with [Schema](arkts-arkdata-schema-c.md). > > For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV > store using the **getKVStore()** method in > [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
 
 **Since:** 9
 
@@ -1278,13 +1145,13 @@ import { BusinessError } from '@kit.BasicServicesKit';
 try {
     let query: distributedKVStore.Query | null = new distributedKVStore.Query();
     if (query != null) {
-      query.unlike("field", "value");
+      query.unlike('field', 'value');
       console.info(`query is ${query.getSqlLike()}`);
     }
     query = null;
-} catch (e) {
-    let error = e as BusinessError;
-    console.error(`duplicated calls should be ok.code is ${error.code},message is ${error.message}`);
+} catch (err) {
+    let error = err as BusinessError;
+    console.error(`An unexpected error occurred. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```

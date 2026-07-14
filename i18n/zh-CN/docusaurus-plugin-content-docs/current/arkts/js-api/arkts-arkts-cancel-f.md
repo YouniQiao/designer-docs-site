@@ -6,11 +6,7 @@
 function cancel(task: Task): void
 ```
 
-取消任务池中的任务。当任务在taskpool等待队列中，取消该任务后该任务将不再执行，并返回任务被取消的异常；当任务已经在taskpool工作线程执行，
-取消该任务并不影响任务继续执行，执行结果在catch分支返回，搭配**isCanceled()**可以对任务取消行为作出响应。也就是说，
-**taskpool.cancel**对其之前的**taskpool.execute**、**taskpool.executeDelayed**或**taskpool.executePeriodically**生效。
-从API version 20开始，在执行cancel操作后，可以在catch分支里使用泛型BusinessError<
-[taskpool.TaskResult](arkts-arkts-taskresult-i.md)>，来获取任务中抛出的异常信息或最终的执行结果。
+取消任务池中的任务。当任务在taskpool等待队列中，取消该任务后该任务将不再执行，并返回任务被取消的异常；当任务已经在taskpool工作线程执行， 取消该任务并不影响任务继续执行，执行结果在catch分支返回，搭配**isCanceled()**可以对任务取消行为作出响应。也就是说， **taskpool.cancel**对其之前的**taskpool.execute**、**taskpool.executeDelayed**或**taskpool.executePeriodically**生效。 从API version 20开始，在执行cancel操作后，可以在catch分支里使用泛型BusinessError< [taskpool.TaskResult](arkts-arkts-taskresult-i.md)>，来获取任务中抛出的异常信息或最终的执行结果。
 
 **起始版本：** 9
 
@@ -39,9 +35,7 @@ function cancel(task: Task): void
 function cancel(group: TaskGroup): void
 ```
 
-取消任务池中的任务组。如果任务组中的任务未全部执行结束，返回**undefined**。
-从API version 20开始，在执行cancel操作后，可以在catch分支里使用泛型BusinessError<
-[taskpool.TaskResult](arkts-arkts-taskresult-i.md)>，来获取任务中抛出的异常信息或最终的执行结果。
+取消任务池中的任务组。如果任务组中的任务未全部执行结束，返回**undefined**。 从API version 20开始，在执行cancel操作后，可以在catch分支里使用泛型BusinessError< [taskpool.TaskResult](arkts-arkts-taskresult-i.md)>，来获取任务中抛出的异常信息或最终的执行结果。
 
 **起始版本：** 10
 
@@ -109,12 +103,7 @@ concurrentFunc();
 function cancel(taskId: number): void
 ```
 
-通过任务ID取消任务池中的任务。如果任务在taskpool等待队列中，取消后任务将不再执行，并返回任务取消的异常。如果任务已在taskpool工作线程中执行，
-取消不影响任务继续执行，执行结果在catch分支返回，搭配**isCanceled()**可以对任务取消行为作出响应。**taskpool.cancel**对其之前的
-**taskpool.execute**或**taskpool.executeDelayed**生效。在其他线程调用**taskpool.cancel**时，需注意其行为是异步的，
-可能影响之后的**taskpool.execute**或**taskpool.executeDelayed**。
-从API version 20开始，在执行cancel操作后，可以在catch分支里使用泛型BusinessError<
-[taskpool.TaskResult](arkts-arkts-taskresult-i.md)>，来获取任务中抛出的异常信息或最终的执行结果。
+通过任务ID取消任务池中的任务。如果任务在taskpool等待队列中，取消后任务将不再执行，并返回任务取消的异常。如果任务已在taskpool工作线程中执行， 取消不影响任务继续执行，执行结果在catch分支返回，搭配**isCanceled()**可以对任务取消行为作出响应。**taskpool.cancel**对其之前的 **taskpool.execute**或**taskpool.executeDelayed**生效。在其他线程调用**taskpool.cancel**时，需注意其行为是异步的， 可能影响之后的**taskpool.execute**或**taskpool.executeDelayed**。 从API version 20开始，在执行cancel操作后，可以在catch分支里使用泛型BusinessError< [taskpool.TaskResult](arkts-arkts-taskresult-i.md)>，来获取任务中抛出的异常信息或最终的执行结果。
 
 **起始版本：** 18
 

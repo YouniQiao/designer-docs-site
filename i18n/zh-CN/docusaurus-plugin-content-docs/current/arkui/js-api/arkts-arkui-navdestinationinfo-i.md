@@ -12,8 +12,7 @@ NavDestination组件信息，由系统返回给开发者。
 index: number
 ```
 
-NavDestination在页面栈中的索引。
-取值应≥0。
+NavDestination在页面栈中的索引。 取值应≥0。
 
 **类型：** number
 
@@ -31,8 +30,7 @@ NavDestination在页面栈中的索引。
 mode?: NavDestinationMode
 ```
 
-NavDestination类型。
-默认值：NavDestinationMode.Standard。
+NavDestination类型。 默认值：NavDestinationMode.Standard。
 
 **类型：** NavDestinationMode
 

@@ -10,9 +10,7 @@ function addDisallowedRunningBundlesSync(
   ): void
 ```
 
-添加应用至应用运行禁止名单，添加至禁止名单的应用不允许在当前/指定用户下运行。从API version 21开始，如果应用运行允许名单
-[addallowedRunningBundles](arkts-mdm-addallowedrunningbundles-f.md#addallowedrunningbundles-1)非空，就不能再通过本接口添加应用运行禁止名单，否则会报9200010冲突错误
-码。
+添加应用至应用运行禁止名单，添加至禁止名单的应用不允许在当前/指定用户下运行。从API version 21开始，如果应用运行允许名单 [addallowedRunningBundles](arkts-mdm-addallowedrunningbundles-f.md#addallowedrunningbundles-1)非空，就不能再通过本接口添加应用运行禁止名单，否则会报9200010冲突错误 码。
 
 **起始版本：** 12
 

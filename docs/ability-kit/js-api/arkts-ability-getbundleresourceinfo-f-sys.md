@@ -12,8 +12,7 @@ import { bundleResourceManager } from '@kit.AbilityKit';
 function getBundleResourceInfo(bundleName: string, resourceFlags?: number): BundleResourceInfo
 ```
 
-Obtains the resource information of an application based on the given bundle name and resource flags. This API
-returns the result synchronously.
+Obtains the resource information of an application based on the given bundle name and resource flags. This API returns the result synchronously.
 
 **Since:** 11
 
@@ -52,8 +51,7 @@ returns the result synchronously.
 function getBundleResourceInfo(bundleName: string, resourceFlags?: number, appIndex?: number): BundleResourceInfo
 ```
 
-Obtains the resource information of an application based on the given bundle name, resource flags, and app index.
-This API returns the result synchronously.
+Obtains the resource information of an application based on the given bundle name, resource flags, and app index. This API returns the result synchronously.
 
 **Since:** 12
 

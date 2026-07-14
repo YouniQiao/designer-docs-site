@@ -4,9 +4,7 @@
 type AvailableDeviceStatusCallback = (deviceStatusList: DeviceStatus[]) => void
 ```
 
-Defines the callback triggered for receiving notifications of available device status changes. When the list of
-available devices changes (for example, a new device goes online or a device goes offline), the system notifies
-the application through this callback.
+Defines the callback triggered for receiving notifications of available device status changes. When the list of available devices changes (for example, a new device goes online or a device goes offline), the system notifies the application through this callback.
 
 **Since:** 23
 

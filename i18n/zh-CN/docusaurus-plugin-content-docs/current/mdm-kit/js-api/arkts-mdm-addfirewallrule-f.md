@@ -6,15 +6,7 @@
 function addFirewallRule(admin: Want, firewallRule: FirewallRule): void
 ```
 
-为设备添加防火墙过滤规则。
-
-API version 21及之前版本，仅支持IPv4。从API version 22开始，支持IPv4和IPv6。
-
-从API version 23开始，支持[LogType](arkts-mdm-logtype-e.md)。
-
-添加了[Action](arkts-mdm-action-e.md)为ALLOW规则后，将会默认添加DENY规则，不在ALLOW规则之内的网络数据包将会被丢弃或拦截。
-
-设备重启，将会清空防火墙过滤规则。
+为设备添加防火墙过滤规则。 API version 21及之前版本，仅支持IPv4。从API version 22开始，支持IPv4和IPv6。 从API version 23开始，支持[LogType](arkts-mdm-logtype-e.md)。 添加了[Action](arkts-mdm-action-e.md)为ALLOW规则后，将会默认添加DENY规则，不在ALLOW规则之内的网络数据包将会被丢弃或拦截。 设备重启，将会清空防火墙过滤规则。
 
 **起始版本：** 12
 

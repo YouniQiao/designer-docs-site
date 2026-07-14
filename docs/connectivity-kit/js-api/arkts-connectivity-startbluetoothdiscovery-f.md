@@ -12,9 +12,7 @@ import { bluetoothManager } from '@kit.ConnectivityKit';
 function startBluetoothDiscovery(): void
 ```
 
-Starts scanning Bluetooth devices.
-On API 10 and above, the permission required by this interface is changed from DISCOVER_BLUETOOTH and LOCATION and
-APPROXIMATELY_LOCATION to ACCESS_BLUETOOTH.
+Starts scanning Bluetooth devices. On API 10 and above, the permission required by this interface is changed from DISCOVER_BLUETOOTH and LOCATION and APPROXIMATELY_LOCATION to ACCESS_BLUETOOTH.
 
 **Since:** 9
 

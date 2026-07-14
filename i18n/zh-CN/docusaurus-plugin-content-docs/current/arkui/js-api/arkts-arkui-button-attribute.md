@@ -1,8 +1,6 @@
 # Button属性/事件
 
-除支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持以下属性：
-
-支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)。
+除支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持以下属性： 支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)。
 
 **继承/实现关系：** ButtonAttribute extends [CommonMethod<ButtonAttribute>](CommonMethod<ButtonAttribute>)
 
@@ -16,13 +14,7 @@
 buttonStyle(value: ButtonStyleMode)
 ```
 
-设置Button组件的样式和重要程度。根据设置枚举值的不同，系统自动会调整按钮的背景色和文字颜色。背景色和文字颜色也支持开发者通过
-[backgroundColor](arkts-arkui-commonmethod-c.md#backgroundcolor-1)、
-[fontColor](ButtonAttribute#fontColor)和[role](ButtonAttribute#role)接口设置，实际显示效果以最后一次设置为准。
-
-> **说明：**
->
-> 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+设置Button组件的样式和重要程度。根据设置枚举值的不同，系统自动会调整按钮的背景色和文字颜色。背景色和文字颜色也支持开发者通过 [backgroundColor](arkts-arkui-commonmethod-c.md#backgroundcolor-1)、 [fontColor](ButtonAttribute#fontColor)和[role](ButtonAttribute#role)接口设置，实际显示效果以最后一次设置为准。 > **说明：** > > 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 11
 
@@ -68,11 +60,7 @@ contentModifier(modifier: ContentModifier<ButtonConfiguration>)
 controlSize(value: ControlSize)
 ```
 
-设置Button组件的尺寸。
-
-> **说明：**
->
-> 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+设置Button组件的尺寸。 > **说明：** > > 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 11
 
@@ -272,9 +260,7 @@ minFontScale(scale: number | Resource)
 role(value: ButtonRole)
 ```
 
-设置Button组件的角色。根据设置枚举值的不同，系统自动会调整按钮的背景色和文字颜色。背景色和文字颜色也支持开发者通过
-[backgroundColor](arkts-arkui-commonmethod-c.md#backgroundcolor-1)、
-[fontColor](ButtonAttribute#fontColor)和[buttonStyle](ButtonAttribute#buttonStyle)接口设置，实际显示效果以最后一次设置为准。
+设置Button组件的角色。根据设置枚举值的不同，系统自动会调整按钮的背景色和文字颜色。背景色和文字颜色也支持开发者通过 [backgroundColor](arkts-arkui-commonmethod-c.md#backgroundcolor-1)、 [fontColor](ButtonAttribute#fontColor)和[buttonStyle](ButtonAttribute#buttonStyle)接口设置，实际显示效果以最后一次设置为准。
 
 **起始版本：** 12
 

@@ -36,16 +36,7 @@ Name of the target named route.
 params?: Object
 ```
 
-Data that needs to be passed to the target page during redirection. The target page can use
-**router.getParams()** to obtain the passed parameters, for example, **this.keyValue** (**keyValue** is the value
-of a key in **params**). In the web-like paradigm, these parameters can be directly used on the target page. If
-the field specified by **key** already exists on the target page, the passed value of the key will be displayed.
-
-**NOTE**
-
-The **params** parameter cannot pass objects returned by methods and system APIs, for example, **PixelMap**
-objects defined and returned by media APIs. To pass such objects, extract from them the basic type attributes to
-be passed, and then construct objects of the object type.
+Data that needs to be passed to the target page during redirection. The target page can use **router.getParams()** to obtain the passed parameters, for example, **this.keyValue** (**keyValue** is the value of a key in **params**). In the web-like paradigm, these parameters can be directly used on the target page. If the field specified by **key** already exists on the target page, the passed value of the key will be displayed. **NOTE** The **params** parameter cannot pass objects returned by methods and system APIs, for example, **PixelMap** objects defined and returned by media APIs. To pass such objects, extract from them the basic type attributes to be passed, and then construct objects of the object type.
 
 **Type:** Object
 
@@ -63,20 +54,7 @@ be passed, and then construct objects of the object type.
 recoverable?: boolean
 ```
 
-Whether the corresponding page is recoverable.
-
-Default value: **true**.
-
-**true**: The corresponding page is recoverable.
-
-**false**: The corresponding page is not recoverable.
-
-**NOTE**
-
-If an application is switched to the background and is later closed by the system due to resource constraints or
-other reasons, a page marked as recoverable can be restored by the system when the application is brought back to
-the foreground. For more details, see
-[UIAbility Backup and Restore](../../../../application-models/ability-recover-guideline.md).
+Whether the corresponding page is recoverable. Default value: **true**. **true**: The corresponding page is recoverable. **false**: The corresponding page is not recoverable. **NOTE** If an application is switched to the background and is later closed by the system due to resource constraints or other reasons, a page marked as recoverable can be restored by the system when the application is brought back to the foreground. For more details, see [UIAbility Backup and Restore](../../../../application-models/ability-recover-guideline.md).
 
 **Type:** boolean
 

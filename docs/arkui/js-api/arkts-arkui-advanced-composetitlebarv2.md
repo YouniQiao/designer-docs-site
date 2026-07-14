@@ -18,7 +18,7 @@ import { ComposeTitleBarV2MenuItemParams, ComposeTitleBarV2, ComposeTitleBarV2Me
 
 | Name | Description |
 | --- | --- |
-| [ComposeTitleBarV2](arkts-arkui-composetitlebarv2-s.md) | Declaration of the composable title bar. Composable title bar represents a common title bar that contains a title,subtitle (optional), and profile picture (optional). It can come with a Back button for switching between pages ofdifferent levels. |
+| [ComposeTitleBarV2](arkts-arkui-composetitlebarv2-s.md) | Declaration of the composable title bar. Composable title bar represents a common title bar that contains a title, subtitle (optional), and profile picture (optional). It can come with a Back button for switching between pages of different levels. |
 
 ### Interfaces
 

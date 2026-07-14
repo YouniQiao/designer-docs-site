@@ -1,8 +1,6 @@
 # CaptureSession
 
-Implements a capture session, which saves all [CameraInput](arkts-camera-camerainput-i.md) and
-[CameraOutput](arkts-camera-cameraoutput-i.md) instances required to run the camera and requests the camera
-to complete shooting or video recording.
+Implements a capture session, which saves all [CameraInput](arkts-camera-camerainput-i.md) and [CameraOutput](arkts-camera-cameraoutput-i.md) instances required to run the camera and requests the camera to complete shooting or video recording.
 
 **Since:** 10
 
@@ -680,11 +678,7 @@ Unsubscribes from CaptureSession error events. This API uses a callback to retur
 on(type: 'focusStateChange', callback: AsyncCallback<FocusState>): void
 ```
 
-Subscribes to focus state change events. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
+Subscribes to focus state change events. This API uses an asynchronous callback to return the result. > **NOTE** > > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
 
 **Since:** 10
 
@@ -707,11 +701,7 @@ Subscribes to focus state change events. This API uses an asynchronous callback 
 on(type: 'error', callback: ErrorCallback): void
 ```
 
-Subscribes to CaptureSession error events. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
+Subscribes to CaptureSession error events. This API uses an asynchronous callback to return the result. > **NOTE** > > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
 
 **Since:** 10
 
@@ -848,9 +838,7 @@ Removes a [CameraOutput](arkts-camera-cameraoutput-i.md) instance from this sess
 setExposureBias(exposureBias: number): void
 ```
 
-Sets an exposure compensation value (EV).
-Before the setting, you are advised to use
-[getExposureBiasRange](arkts-camera-capturesession-i.md#getexposurebiasrange-1) to obtain the supported values.
+Sets an exposure compensation value (EV). Before the setting, you are advised to use [getExposureBiasRange](arkts-camera-capturesession-i.md#getexposurebiasrange-1) to obtain the supported values.
 
 **Since:** 10
 
@@ -878,9 +866,7 @@ Before the setting, you are advised to use
 setExposureMode(aeMode: ExposureMode): void
 ```
 
-Sets an exposure mode. Before the setting, call
-[isExposureModeSupported](arkts-camera-capturesession-i.md#isexposuremodesupported-1) to check whether the target
-exposure mode is supported.
+Sets an exposure mode. Before the setting, call [isExposureModeSupported](arkts-camera-capturesession-i.md#isexposuremodesupported-1) to check whether the target exposure mode is supported.
 
 **Since:** 10
 
@@ -908,12 +894,7 @@ exposure mode is supported.
 setFlashMode(flashMode: FlashMode): void
 ```
 
-Sets a flash mode.
-Before the setting, do the following checks:
-
-1. Use [hasFlash](arkts-camera-capturesession-i.md#hasflash-1) to check whether the camera device has flash.
-2. Use [isFlashModeSupported](arkts-camera-capturesession-i.md#isflashmodesupported-1) to check whether the camera
-device supports the flash mode.
+Sets a flash mode. Before the setting, do the following checks: 1. Use [hasFlash](arkts-camera-capturesession-i.md#hasflash-1) to check whether the camera device has flash. 2. Use [isFlashModeSupported](arkts-camera-capturesession-i.md#isflashmodesupported-1) to check whether the camera device supports the flash mode.
 
 **Since:** 10
 
@@ -941,9 +922,7 @@ device supports the flash mode.
 setFocusMode(afMode: FocusMode): void
 ```
 
-Sets a focus mode.
-Before the setting, call [isFocusModeSupported](arkts-camera-capturesession-i.md#isfocusmodesupported-1) to check
-whether the focus mode is supported.
+Sets a focus mode. Before the setting, call [isFocusModeSupported](arkts-camera-capturesession-i.md#isfocusmodesupported-1) to check whether the focus mode is supported.
 
 **Since:** 10
 
@@ -971,13 +950,7 @@ whether the focus mode is supported.
 setFocusPoint(point: Point): void
 ```
 
-Sets the focal point. The focal point must be in the coordinate system (0-1), where the top-left corner is {0, 0}
-and the bottom-right corner is {1, 1}.
-
-The coordinate system is based on the horizontal device direction with the device's charging port on the right.
-If the layout of the preview screen of an application is based on the vertical direction with the charging port
-on the lower side, the layout width and height are {w, h}, and the touch point is {x, y}, then the coordinate
-point after conversion is {y/h, 1-x/w}.
+Sets the focal point. The focal point must be in the coordinate system (0-1), where the top-left corner is {0, 0} and the bottom-right corner is {1, 1}. The coordinate system is based on the horizontal device direction with the device's charging port on the right. If the layout of the preview screen of an application is based on the vertical direction with the charging port on the lower side, the layout width and height are {w, h}, and the touch point is {x, y}, then the coordinate point after conversion is {y/h, 1-x/w}.
 
 **Since:** 10
 
@@ -1005,13 +978,7 @@ point after conversion is {y/h, 1-x/w}.
 setMeteringPoint(point: Point): void
 ```
 
-Sets the metering point, which is the center point of the metering rectangle. The metering point must be in the
-coordinate system (0-1), where the top-left corner is {0, 0} and the bottom-right corner is {1, 1}.
-
-The coordinate system is based on the horizontal device direction with the device's charging port on the right.
-If the layout of the preview screen of an application is based on the vertical direction with the charging port
-on the lower side, the layout width and height are {w, h}, and the touch point is {x, y}, then the coordinate
-point after conversion is {y/h, 1-x/w}.
+Sets the metering point, which is the center point of the metering rectangle. The metering point must be in the coordinate system (0-1), where the top-left corner is {0, 0} and the bottom-right corner is {1, 1}. The coordinate system is based on the horizontal device direction with the device's charging port on the right. If the layout of the preview screen of an application is based on the vertical direction with the charging port on the lower side, the layout width and height are {w, h}, and the touch point is {x, y}, then the coordinate point after conversion is {y/h, 1-x/w}.
 
 **Since:** 10
 
@@ -1039,9 +1006,7 @@ point after conversion is {y/h, 1-x/w}.
 setVideoStabilizationMode(mode: VideoStabilizationMode): void
 ```
 
-Sets a video stabilization mode. Before the setting, call
-[isVideoStabilizationModeSupported](arkts-camera-capturesession-i.md#isvideostabilizationmodesupported-1) to check
-whether the target video stabilization mode is supported.
+Sets a video stabilization mode. Before the setting, call [isVideoStabilizationModeSupported](arkts-camera-capturesession-i.md#isvideostabilizationmodesupported-1) to check whether the target video stabilization mode is supported.
 
 **Since:** 10
 

@@ -12,10 +12,7 @@ import { certificateManagerDialog } from '@kit.DeviceCertificateKit';
 function openAuthorizeDialog(context: common.Context): Promise<string>
 ```
 
-Opens the authorization page of the certificate management dialog box to grant a credential to the application.
-After the API is successfully called, the app can use the URI of the authorization certificate returned by the API
-to sign, verify the signature, and query details.
-This API uses a promise to return the result.
+Opens the authorization page of the certificate management dialog box to grant a credential to the application. After the API is successfully called, the app can use the URI of the authorization certificate returned by the API to sign, verify the signature, and query details. This API uses a promise to return the result.
 
 **Since:** 20
 
@@ -78,11 +75,7 @@ try {
 function openAuthorizeDialog(context: common.Context, authorizeRequest: AuthorizeRequest): Promise<CertReference>
 ```
 
-Opens the Certificate Credential Authorization page of the Certificate Management dialog box. On the page that is
-displayed, you can authorize the application to use certificate credentials. After the API is called successfully,
-the app can use the URI of the authorization certificate returned by the API to sign, verify the signature, and
-query details. The types of certificates that can be authorized include application certificate credentials, user
-certificate credentials, and USB Key certificate credentials. Using Promise Asynchronous Callbacks.
+Opens the Certificate Credential Authorization page of the Certificate Management dialog box. On the page that is displayed, you can authorize the application to use certificate credentials. After the API is called successfully, the app can use the URI of the authorization certificate returned by the API to sign, verify the signature, and query details. The types of certificates that can be authorized include application certificate credentials, user certificate credentials, and USB Key certificate credentials. Using Promise Asynchronous Callbacks.
 
 **Since:** 22
 

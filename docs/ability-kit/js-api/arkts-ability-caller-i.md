@@ -1,9 +1,6 @@
 # Caller
 
-A Caller UIAbility can use the
-[startAbilityByCall](arkts-ability-uiabilitycontext-c.md#startabilitybycall-1) API to start the
-target Callee UIAbility. After the target UIAbility is started successfully, a Caller object is returned to the
-caller for communication.
+A Caller UIAbility can use the [startAbilityByCall](arkts-ability-uiabilitycontext-c.md#startabilitybycall-1) API to start the target Callee UIAbility. After the target UIAbility is started successfully, a Caller object is returned to the caller for communication.
 
 **Since:** 9
 
@@ -21,8 +18,7 @@ import { Callee, Caller, OnReleaseCallback, OnRemoteStateChangeCallback, CalleeC
 call(method: string, data: rpc.Parcelable): Promise<void>
 ```
 
-Used by a Caller UIAbility to send serialized data, as agreed upon by both parties, to the Callee UIAbility. This
-API uses a promise to return the result.
+Used by a Caller UIAbility to send serialized data, as agreed upon by both parties, to the Callee UIAbility. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -117,8 +113,7 @@ export default class MainUIAbility extends UIAbility {
 callWithResult(method: string, data: rpc.Parcelable): Promise<rpc.MessageSequence>
 ```
 
-Used by a Caller UIAbility to send serialized data to a Callee UIAbility and return the result after the Callee
-UIAbility processes the message. This API uses a promise to return the result.
+Used by a Caller UIAbility to send serialized data to a Callee UIAbility and return the result after the Callee UIAbility processes the message. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -216,8 +211,7 @@ export default class MainUIAbility extends UIAbility {
 off(type: 'release', callback: OnReleaseCallback): void
 ```
 
-Unregisters the listener for disconnection notifications from the Callee UIAbility. This is the reverse operation
-of [on('release')](Caller.on). It is currently not supported.
+Unregisters the listener for disconnection notifications from the Callee UIAbility. This is the reverse operation of [on('release')](Caller.on). It is currently not supported.
 
 **Since:** 9
 
@@ -276,8 +270,7 @@ export default class MainUIAbility extends UIAbility {
 off(type: 'release'): void
 ```
 
-Unregisters the listener for disconnection notifications from the Callee UIAbility. This is the reverse operation
-of [Caller.on('release')](Caller.on). It is currently not supported.
+Unregisters the listener for disconnection notifications from the Callee UIAbility. This is the reverse operation of [Caller.on('release')](Caller.on). It is currently not supported.
 
 **Since:** 9
 
@@ -453,8 +446,7 @@ export default class MainUIAbility extends UIAbility {
 onRemoteStateChange(callback: OnRemoteStateChangeCallback): void
 ```
 
-Called when the remote UIAbility state changes in the collaboration scenario. This API uses an asynchronous
-callback to return the result.
+Called when the remote UIAbility state changes in the collaboration scenario. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -512,9 +504,7 @@ export default class MainAbility extends UIAbility {
 release(): void
 ```
 
-Used by a Caller UIAbility to proactively release the connection with the Callee UIAbility. After this API is
-called, the Caller UIAbility can no longer use **call** or **callWithResult** to send messages to the Callee
-UIAbility.
+Used by a Caller UIAbility to proactively release the connection with the Callee UIAbility. After this API is called, the Caller UIAbility can no longer use **call** or **callWithResult** to send messages to the Callee UIAbility.
 
 **Since:** 9
 

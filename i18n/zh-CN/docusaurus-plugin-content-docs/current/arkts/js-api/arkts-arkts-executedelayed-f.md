@@ -6,8 +6,7 @@
 function executeDelayed(delayTime: number, task: Task, priority?: Priority): Promise<Object>
 ```
 
-延时执行任务。当前执行模式可以设置任务优先级，并且可以尝试调用**cancel()**取消执行。该任务不能是任务组任务、串行队列任务、
-异步队列任务或周期任务。对于长时任务，仅支持执行一次；对于非长时任务，可以多次调用。使用Promise异步回调。
+延时执行任务。当前执行模式可以设置任务优先级，并且可以尝试调用**cancel()**取消执行。该任务不能是任务组任务、串行队列任务、 异步队列任务或周期任务。对于长时任务，仅支持执行一次；对于非长时任务，可以多次调用。使用Promise异步回调。
 
 **起始版本：** 11
 
@@ -68,8 +67,7 @@ taskpool.executeDelayed(1000, task).then(() => { // 1000: delayTime is 1000ms
 function executeDelayed<A extends Array<Object>, R>(delayTime: number, task: GenericsTask<A, R>, priority?: Priority): Promise<R>
 ```
 
-延时执行泛型任务，不校验任务的参数类型和返回值类型。使用Promise异步回调。
-executeDelayed任务的校验是结合**new GenericsTask**一起用的，参数、返回值类型需与**new GenericsTask**中的类型保持一致。
+延时执行泛型任务，不校验任务的参数类型和返回值类型。使用Promise异步回调。 executeDelayed任务的校验是结合**new GenericsTask**一起用的，参数、返回值类型需与**new GenericsTask**中的类型保持一致。
 
 **起始版本：** 13
 

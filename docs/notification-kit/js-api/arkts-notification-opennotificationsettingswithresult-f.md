@@ -12,9 +12,7 @@ import { notificationManager } from '@kit.NotificationKit';
 function openNotificationSettingsWithResult(context: UIAbilityContext): Promise<NotificationSetting>
 ```
 
-Opens the notification settings page of the application, which is displayed in semi-modal mode and can be used to
-set the notification enabling and notification mode. This API uses a promise to return the result. When the semi-
-modal window is closed, the user-defined status is returned.
+Opens the notification settings page of the application, which is presented in a semi-modal window and can be used to set notification switches, notification reminder methods, etc. This API uses a promise to return the user-set status when the semi-modal window is closed. Unlike openNotificationSettings, this API returns a NotificationSetting object when the semi-modal window is closed. You can determine whether the user has enabled the notification permission based on the returned result, thereby deciding subsequent logic.
 
 **Since:** 26.0.0
 

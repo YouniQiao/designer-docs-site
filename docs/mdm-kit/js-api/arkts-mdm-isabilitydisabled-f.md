@@ -12,8 +12,7 @@ import { applicationManager } from '@kit.MDMKit';
 function isAbilityDisabled(admin: Want | null, bundleName: string, accountId: number, abilityName: string): boolean
 ```
 
-Checks whether the Ability component of a specified application (system application or third-party application) is
-disabled.
+Checks whether the Ability component of a specified application (system application or third-party application) is disabled.
 
 **Since:** 23
 

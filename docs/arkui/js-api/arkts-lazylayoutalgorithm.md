@@ -7,7 +7,7 @@
 | Name | Description |
 | --- | --- |
 | [LazyCustomLayoutAlgorithm](arkts-arkui-lazycustomlayoutalgorithm-c.md) | Defines the lazy custom layout algorithm. |
-| [LazyLayoutHelper](arkts-arkui-lazylayouthelper-c.md) | Helper class for lazy layout algorithm.Provides layout direction and view position information for lazy layout. |
+| [LazyLayoutHelper](arkts-arkui-lazylayouthelper-c.md) | Helper class for lazy layout algorithm. Provides layout direction and view position information for lazy layout. |
 
 ### Interfaces
 

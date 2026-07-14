@@ -1,18 +1,6 @@
 # ListItem
 
-The ListItem component displays specific items in the list. It must be used together with List.
-
-> **NOTE**
->
-> - This component is supported since API version 7. Updates will be marked with a superscript to indicate
-> their earliest API version.
->
-> - The parent of this component can only be List or ListItemGroup.
->
-> - When this component is used with LazyForEach, its child components are created when it is created.
-> When this component is used with if/else or ForEach, or when the parent component is List or ListItemGroup,
-> its child components are created when it is laid out.
-
+The ListItem component displays specific items in the list. It must be used together with List. > **NOTE** > > - This component is supported since API version 7. Updates will be marked with a superscript to indicate > their earliest API version. > > - The parent of this component can only be List or ListItemGroup. > > - When this component is used with LazyForEach, its child components are created when it is created. > When this component is used with if/else or ForEach, or when the parent component is List or ListItemGroup, > its child components are created when it is laid out.
 
 ## ListItem
 

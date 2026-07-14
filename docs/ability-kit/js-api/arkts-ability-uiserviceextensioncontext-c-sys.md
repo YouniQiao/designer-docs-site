@@ -1,16 +1,6 @@
 # UIServiceExtensionContext (System API)
 
-The UIServiceExtensionContext module provides the context environment for a
-[UIServiceExtensionAbility](arkts-ability-uiserviceextensionability-c-sys.md). It
-inherits from [ExtensionContext](arkts-ability-extensioncontext-c.md).
-
-UIServiceExtensionContext provides access to a
-[UIServiceExtensionAbility](arkts-ability-uiserviceextensionability-c-sys.md) and
-APIs for operating the ability, for example, starting, terminating, connecting, and disconnecting ability.
-
-> **NOTE**
->
-> - The APIs of this module must be used on the main thread, but not on child threads such as Worker and TaskPool.
+The UIServiceExtensionContext module provides the context environment for a [UIServiceExtensionAbility](arkts-ability-uiserviceextensionability-c-sys.md). It inherits from [ExtensionContext](arkts-ability-extensioncontext-c.md). UIServiceExtensionContext provides access to a [UIServiceExtensionAbility](arkts-ability-uiserviceextensionability-c-sys.md) and APIs for operating the ability, for example, starting, terminating, connecting, and disconnecting ability. > **NOTE** > > - The APIs of this module must be used on the main thread, but not on child threads such as Worker and TaskPool.
 
 **Inheritance/Implementation:** UIServiceExtensionContext extends [ExtensionContext](arkts-ability-extensioncontext-c.md)
 
@@ -26,13 +16,7 @@ APIs for operating the ability, for example, starting, terminating, connecting, 
 connectServiceExtensionAbility(want: Want, options: ConnectOptions): number
 ```
 
-Connects to a [UIExtensionAbility](arkts-ability-uiextensionability-c.md) and returns
-the connection ID.
-
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
-> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
+Connects to a [UIExtensionAbility](arkts-ability-uiextensionability-c.md) and returns the connection ID. > **NOTE** > > For details about the startup rules for the components in the stage model, see > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
 
 **Since:** 14
 
@@ -80,9 +64,7 @@ the connection ID.
 disconnectServiceExtensionAbility(connectionId: number): Promise<void>
 ```
 
-Disconnects from a [UIExtensionAbility](arkts-ability-uiextensionability-c.md). This
-API is opposite to [connectServiceExtensionAbility](arkts-ability-uiserviceextensioncontext-c-sys.md#connectserviceextensionability-1)
-. This API uses a promise to return the result.
+Disconnects from a [UIExtensionAbility](arkts-ability-uiextensionability-c.md). This API is opposite to [connectServiceExtensionAbility](arkts-ability-uiserviceextensioncontext-c-sys.md#connectserviceextensionability-1) . This API uses a promise to return the result.
 
 **Since:** 14
 
@@ -118,12 +100,7 @@ API is opposite to [connectServiceExtensionAbility](arkts-ability-uiserviceexten
 startAbility(want: Want, options?: StartOptions): Promise<void>
 ```
 
-Starts an ability. This API uses a promise to return the result.
-
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
-> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
+Starts an ability. This API uses a promise to return the result. > **NOTE** > > For details about the startup rules for the components in the stage model, see > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
 
 **Since:** 14
 
@@ -176,15 +153,7 @@ startAbilityByType(type: string, wantParam: Record<string, Object>,
     abilityStartCallback: AbilityStartCallback): Promise<void>
 ```
 
-Starts a [UIAbility](arkts-app-ability-uiability.md) or
-[UIExtensionAbility](arkts-ability-uiextensionability-c.md) based on the type of the
-target ability. This API can be called only by applications running in the foreground. This API uses a promise to
-return the result.
-
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
-> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
+Starts a [UIAbility](arkts-app-ability-uiability.md) or [UIExtensionAbility](arkts-ability-uiextensionability-c.md) based on the type of the target ability. This API can be called only by applications running in the foreground. This API uses a promise to return the result. > **NOTE** > > For details about the startup rules for the components in the stage model, see > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
 
 **Since:** 14
 
@@ -221,9 +190,7 @@ return the result.
 terminateSelf(): Promise<void>
 ```
 
-Terminates this
-[UIServiceExtensionAbility](arkts-ability-uiserviceextensionability-c-sys.md). This
-API uses a promise to return the result.
+Terminates this [UIServiceExtensionAbility](arkts-ability-uiserviceextensionability-c-sys.md). This API uses a promise to return the result.
 
 **Since:** 14
 

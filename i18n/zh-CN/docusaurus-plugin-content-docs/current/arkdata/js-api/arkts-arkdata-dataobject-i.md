@@ -12,10 +12,7 @@
 bindAssetStore(assetKey: string, bindInfo: BindInfo, callback: AsyncCallback<void>): void
 ```
 
-绑定分布式对象中的单个资产与其对应的数据库信息，当前版本只支持分布式对象中的资产与关系型数据库的绑定。使用callback方式异步回调。
-
-当分布式对象中包含的资产和关系型数据库中包含的资产指向同一个实体资产文件，即两个资产的Uri相同时，就会存在冲突，我们把这种资产称为融合资产。如果需要分布式数据管理进行融合资产的冲突解决，需要先进行资产的绑定。当应用退出
-session后，绑定关系随之消失。
+绑定分布式对象中的单个资产与其对应的数据库信息，当前版本只支持分布式对象中的资产与关系型数据库的绑定。使用callback方式异步回调。 当分布式对象中包含的资产和关系型数据库中包含的资产指向同一个实体资产文件，即两个资产的Uri相同时，就会存在冲突，我们把这种资产称为融合资产。如果需要分布式数据管理进行融合资产的冲突解决，需要先进行资产的绑定。当应用退出 session后，绑定关系随之消失。
 
 **起始版本：** 11
 
@@ -98,10 +95,7 @@ class EntryAbility extends UIAbility {
 bindAssetStore(assetKey: string, bindInfo: BindInfo): Promise<void>
 ```
 
-绑定分布式对象中的单个资产与其对应的数据库信息，当前版本只支持分布式对象中的资产与关系型数据库的绑定。使用Promise方式作为异步回调。
-
-当分布式对象中包含的资产和关系型数据库中包含的资产指向同一个实体资产文件，即两个资产的Uri相同时，就会存在冲突，我们把这种资产称为融合资产。如果需要分布式数据管理进行融合资产的冲突解决，需要先进行资产的绑定。当应用退出
-session后，绑定关系随之消失。
+绑定分布式对象中的单个资产与其对应的数据库信息，当前版本只支持分布式对象中的资产与关系型数据库的绑定。使用Promise方式作为异步回调。 当分布式对象中包含的资产和关系型数据库中包含的资产指向同一个实体资产文件，即两个资产的Uri相同时，就会存在冲突，我们把这种资产称为融合资产。如果需要分布式数据管理进行融合资产的冲突解决，需要先进行资产的绑定。当应用退出 session后，绑定关系随之消失。
 
 **起始版本：** 11
 
@@ -596,11 +590,7 @@ try {
 revokeSave(callback: AsyncCallback<RevokeSaveSuccessResponse>): void
 ```
 
-撤回保存的分布式数据对象。使用callback方式作为异步方法。
-
-如果对象保存在本地设备，那么将删除所有受信任设备上所保存的数据。
-
-如果对象保存在其他设备，那么将删除本地设备上的数据。
+撤回保存的分布式数据对象。使用callback方式作为异步方法。 如果对象保存在本地设备，那么将删除所有受信任设备上所保存的数据。 如果对象保存在其他设备，那么将删除本地设备上的数据。
 
 **起始版本：** 9
 
@@ -651,11 +641,7 @@ g_object.revokeSave((err: BusinessError, result: distributedDataObject.RevokeSav
 revokeSave(): Promise<RevokeSaveSuccessResponse>
 ```
 
-撤回保存的分布式数据对象。使用Promise方式作为异步方法。
-
-如果对象保存在本地设备，那么将删除所有受信任设备上所保存的数据。
-
-如果对象保存在其他设备，那么将删除本地设备上的数据。
+撤回保存的分布式数据对象。使用Promise方式作为异步方法。 如果对象保存在本地设备，那么将删除所有受信任设备上所保存的数据。 如果对象保存在其他设备，那么将删除本地设备上的数据。
 
 **起始版本：** 9
 
@@ -702,15 +688,7 @@ g_object.revokeSave().then((result: distributedDataObject.RevokeSaveSuccessRespo
 save(deviceId: string, callback: AsyncCallback<SaveSuccessResponse>): void
 ```
 
-保存分布式数据对象。使用callback方式异步回调。
-
-对象数据保存成功后，当应用存在时不会释放对象数据，当应用退出后，重新进入应用时，恢复保存在设备上的数据。
-
-有以下几种情况时，保存的数据将会被释放：
-
-- 存储时间超过24小时。
-- 应用卸载。
-- 成功恢复数据之后。
+保存分布式数据对象。使用callback方式异步回调。 对象数据保存成功后，当应用存在时不会释放对象数据，当应用退出后，重新进入应用时，恢复保存在设备上的数据。 有以下几种情况时，保存的数据将会被释放： - 存储时间超过24小时。 - 应用卸载。 - 成功恢复数据之后。
 
 **起始版本：** 9
 
@@ -753,15 +731,7 @@ g_object.save('local', (err: BusinessError, result:distributedDataObject.SaveSuc
 save(deviceId: string): Promise<SaveSuccessResponse>
 ```
 
-保存分布式数据对象。使用Promise方式作为异步回调。
-
-对象数据保存成功后，当应用存在时不会释放对象数据，当应用退出后，重新进入应用时，恢复保存在设备上的数据。
-
-有以下几种情况时，保存的数据将会被释放：
-
-- 存储时间超过24小时。
-- 应用卸载。
-- 成功恢复数据之后。
+保存分布式数据对象。使用Promise方式作为异步回调。 对象数据保存成功后，当应用存在时不会释放对象数据，当应用退出后，重新进入应用时，恢复保存在设备上的数据。 有以下几种情况时，保存的数据将会被释放： - 存储时间超过24小时。 - 应用卸载。 - 成功恢复数据之后。
 
 **起始版本：** 9
 
@@ -807,8 +777,7 @@ g_object.save('local').then((callbackInfo: distributedDataObject.SaveSuccessResp
 setAsset(assetKey: string, uri: string): Promise<void>
 ```
 
-设置分布式对象中的单个资产的属性信息，该接口必须在[setSessionId](arkts-arkdata-dataobject-i.md#setsessionid-3)接
-口调用前使用。使用Promise异步回调。
+设置分布式对象中的单个资产的属性信息，该接口必须在[setSessionId](arkts-arkdata-dataobject-i.md#setsessionid-3)接 口调用前使用。使用Promise异步回调。
 
 **起始版本：** 20
 
@@ -885,8 +854,7 @@ class EntryAbility extends UIAbility {
 setAssets(assetsKey: string, uris: Array<string>): Promise<void>
 ```
 
-设置分布式对象中的多个资产的属性信息，该接口必须在[setSessionId](arkts-arkdata-dataobject-i.md#setsessionid-3)接
-口调用前使用。使用Promise异步回调。
+设置分布式对象中的多个资产的属性信息，该接口必须在[setSessionId](arkts-arkdata-dataobject-i.md#setsessionid-3)接 口调用前使用。使用Promise异步回调。
 
 **起始版本：** 20
 
@@ -1049,8 +1017,7 @@ g_object.setSessionId(() => {
 setSessionId(sessionId?: string): Promise<void>
 ```
 
-设置sessionId或退出分布式组网，使用Promise异步回调。当传入""、null或不传入参数时，表示退出分布式组网。当可信组网中有多个设备处于协同状态时，如果多个设备间的分布式对象设置为同一个sessionId，就能自
-动同步。
+设置sessionId或退出分布式组网，使用Promise异步回调。当传入""、null或不传入参数时，表示退出分布式组网。当可信组网中有多个设备处于协同状态时，如果多个设备间的分布式对象设置为同一个sessionId，就能自 动同步。
 
 **起始版本：** 9
 

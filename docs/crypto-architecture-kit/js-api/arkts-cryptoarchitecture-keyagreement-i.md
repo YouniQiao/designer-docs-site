@@ -1,8 +1,6 @@
 # KeyAgreement
 
-Provides APIs for key agreement operations. Before using any API of the **KeyAgreement** class, you must create a
-**KeyAgreement** instance by using
-[createKeyAgreement(algName: string): KeyAgreement](arkts-cryptoarchitecture-createkeyagreement-f.md#createkeyagreement-1).
+Provides APIs for key agreement operations. Before using any API of the **KeyAgreement** class, you must create a **KeyAgreement** instance by using [createKeyAgreement(algName: string): KeyAgreement](arkts-cryptoarchitecture-createkeyagreement-f.md#createkeyagreement-1).
 
 **Since:** 9
 
@@ -22,8 +20,7 @@ import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 generateSecret(priKey: PriKey, pubKey: PubKey, callback: AsyncCallback<DataBlob>): void
 ```
 
-Generates a shared secret based on the given private key and public key. This API uses an asynchronous callback
-to return the result.
+Generates a shared secret based on the given private key and public key. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -56,8 +53,7 @@ to return the result.
 generateSecret(priKey: PriKey, pubKey: PubKey): Promise<DataBlob>
 ```
 
-Generates a shared secret based on the given private key and public key. This API uses a promise to return the
-result.
+Generates a shared secret based on the given private key and public key. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -95,13 +91,7 @@ result.
 generateSecretSync(priKey: PriKey, pubKey: PubKey): DataBlob
 ```
 
-Generates a shared secret based on the given private key and public key. This API returns the shared secret
-generated synchronously.
-
-<br><br>**NOTE**
-<br>It is recommended to prioritize the use of asynchronous API, {@link generateSecret}. Synchronous API may
-take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore,
-it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
+Generates a shared secret based on the given private key and public key. This API returns the shared secret generated synchronously. <br><br>**NOTE** <br>It is recommended to prioritize the use of asynchronous API, {@link generateSecret}. Synchronous API may take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore, it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
 
 **Since:** 12
 

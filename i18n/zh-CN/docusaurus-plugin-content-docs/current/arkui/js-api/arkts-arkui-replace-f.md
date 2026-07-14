@@ -6,12 +6,7 @@
 function replace(options: RouterOptions): void
 ```
 
-用应用内的某个页面替换当前页面，并销毁被替换的页面。
-
-> **说明：**
->
-> 从API version 8开始支持，从API version 9开始废弃，建议使用
-> [replaceUrl](arkts-arkui-router-c.md#replaceurl-2)替代。
+用应用内的某个页面替换当前页面，并销毁被替换的页面。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃，建议使用 > [replaceUrl](arkts-arkui-router-c.md#replaceurl-2)替代。
 
 **起始版本：** 8
 
@@ -30,6 +25,8 @@ function replace(options: RouterOptions): void
 **示例：**
 
 ```TypeScript
+import { router } from '@kit.ArkUI';
+
 class RouterParams {
   data1: string;
 

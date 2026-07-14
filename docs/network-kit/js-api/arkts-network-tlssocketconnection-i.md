@@ -158,8 +158,7 @@ tlsServer.on('connect', (client: socket.TLSSocketConnection) => {
 getCipherSuite(callback: AsyncCallback<Array<string>>): void
 ```
 
-Returns a list containing the negotiated cipher suite information.
-For example:{"TLS_RSA_WITH_AES_128_CBC_SHA256", "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"}
+Returns a list containing the negotiated cipher suite information. For example:{"TLS_RSA_WITH_AES_128_CBC_SHA256", "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"}
 
 **Since:** 24
 
@@ -230,8 +229,7 @@ tlsServer.on('connect', (client: socket.TLSSocketConnection) => {
 getCipherSuite(): Promise<Array<string>>
 ```
 
-Returns a list containing the negotiated cipher suite information.
-For example:{"TLS_RSA_WITH_AES_128_CBC_SHA256", "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"}
+Returns a list containing the negotiated cipher suite information. For example:{"TLS_RSA_WITH_AES_128_CBC_SHA256", "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"}
 
 **Since:** 24
 
@@ -502,9 +500,7 @@ tlsServer.on('connect', (client: socket.TLSSocketConnection) => {
 getRemoteCertificate(callback: AsyncCallback<X509CertRawData>): void
 ```
 
-<p>Returns an object representing the peer certificate. If the peer does not provide a certificate,
-an empty object will be returned. If the socket is destroyed, null is returned.</p>
-It only contains the peer's certificate.
+<p>Returns an object representing the peer certificate. If the peer does not provide a certificate, an empty object will be returned. If the socket is destroyed, null is returned.</p> It only contains the peer's certificate.
 
 **Since:** 24
 
@@ -530,9 +526,7 @@ It only contains the peer's certificate.
 getRemoteCertificate(): Promise<X509CertRawData>
 ```
 
-<p>Returns an object representing the peer certificate. If the peer does not provide a certificate,
-an empty object will be returned. If the socket is destroyed, null is returned.</p>
-It only contains the peer's certificate.
+<p>Returns an object representing the peer certificate. If the peer does not provide a certificate, an empty object will be returned. If the socket is destroyed, null is returned.</p> It only contains the peer's certificate.
 
 **Since:** 24
 
@@ -557,8 +551,7 @@ It only contains the peer's certificate.
 getSignatureAlgorithms(callback: AsyncCallback<Array<string>>): void
 ```
 
-<p>The list of signature algorithms shared between the server and the client,
-in descending order of priority.</p>
+<p>The list of signature algorithms shared between the server and the client, in descending order of priority.</p>
 
 **Since:** 24
 
@@ -627,8 +620,7 @@ tlsServer.on('connect', (client: socket.TLSSocketConnection) => {
 getSignatureAlgorithms(): Promise<Array<string>>
 ```
 
-<p>The list of signature algorithms shared between the server and the client,
-in descending order of priority.</p>
+<p>The list of signature algorithms shared between the server and the client, in descending order of priority.</p>
 
 **Since:** 24
 

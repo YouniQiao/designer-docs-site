@@ -18,8 +18,7 @@ import { matrix4 } from '@kit.ArkUI';
 combine(options: Matrix4Transit): Matrix4Transit
 ```
 
-Combines the effects of two matrices to generate a new matrix object. The matrix that calls this API will be
-changed.
+Combines the effects of two matrices to generate a new matrix object. The matrix that calls this API will be changed.
 
 **Since:** 7
 

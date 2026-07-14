@@ -6,15 +6,7 @@
 function setInterface(pipe: USBDevicePipe, iface: USBInterface): number
 ```
 
-设置设备接口。
-
-> **说明：**
->
-> 一个USB接口可能存在多重选择模式，支持动态切换。使用的场景：数据传输时，通过该接口可重新设置端点，使端点与传输类型匹配。
->
-> 在调用该接口前需要通过
-> [usbManager.claimInterface](arkts-basicservices-claiminterface-f.md#claiminterface-1)
-> claim通信接口。
+设置设备接口。 > **说明：** > > 一个USB接口可能存在多重选择模式，支持动态切换。使用的场景：数据传输时，通过该接口可重新设置端点，使端点与传输类型匹配。 > > 在调用该接口前需要通过 > [usbManager.claimInterface](arkts-basicservices-claiminterface-f.md#claiminterface-1) > claim通信接口。
 
 **起始版本：** 9
 
@@ -43,7 +35,7 @@ function setInterface(pipe: USBDevicePipe, iface: USBInterface): number
 **示例：**
 
 ```TypeScript
-function setInterface() {
+async function setInterface() {
   let devicesList: Array<usbManager.USBDevice> = usbManager.getDevices();
   if (!devicesList || devicesList.length == 0) {
     console.info(`device list is empty`);
@@ -51,7 +43,7 @@ function setInterface() {
   }
 
   let device: usbManager.USBDevice = devicesList?.[0];
-  usbManager.requestRight(device.name);
+  await usbManager.requestRight(device.name);
   let devicepipe: usbManager.USBDevicePipe = usbManager.connectDevice(device);
   let interfaces: usbManager.USBInterface = device.configs?.[0]?.interfaces?.[0];
   let ret: number = usbManager.claimInterface(devicepipe, interfaces);

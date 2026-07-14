@@ -1,11 +1,6 @@
 # NotificationSubscriberExtensionAbility
 
-NotificationSubscriberExtensionAbility is the base class for notification subscription extensions, providing the core
-functionality for subscribing to notifications.
-
-> **NOTE**
->
-> The APIs of this module can be used only in the stage model.
+NotificationSubscriberExtensionAbility is the base class for notification subscription extensions, providing the core functionality for subscribing to notifications. > **NOTE** > > The APIs of this module can be used only in the stage model.
 
 **Since:** 22
 

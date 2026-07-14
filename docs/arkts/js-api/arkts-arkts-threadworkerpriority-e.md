@@ -1,7 +1,6 @@
 # ThreadWorkerPriority
 
-Enumerates the priorities available for Worker threads.
-For details about the mappings between priorities and QoS levels, see QoS Level.
+Enumerates the priorities available for Worker threads. For details about the mappings between priorities and QoS levels, see QoS Level.
 
 **Since:** 18
 

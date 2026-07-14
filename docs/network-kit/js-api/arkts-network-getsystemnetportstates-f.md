@@ -12,8 +12,7 @@ import { connection } from '@kit.NetworkKit';
 function getSystemNetPortStates(): Promise<NetPortStatesInfo>
 ```
 
-Obtains the port states of system network.
-To invoke this method, you must have the {@code ohos.permission.GET_IP_MAC_INFO} permission.
+Obtains the port states of system network. To invoke this method, you must have the {@code ohos.permission.GET_IP_MAC_INFO} permission.
 
 **Since:** 24
 

@@ -1,18 +1,6 @@
 # Path2D
 
-**Path2D** allows you to describe a path through an existing path. This path can be drawn
-through the **stroke** or **fill** API of **Canvas**.
-
-> **NOTE**
->
-> The Path2D object does not support the resetting of an existing path. If a new path
-> is required, you can create an empty Path2D object.
->
-> The methods of the Path2D object do not take effect for the paths set in the
-> [CanvasRenderingContext2D](arkts-arkui-canvasrenderingcontext2d-c.md)
-> and
-> [OffscreenCanvasRenderingContext2D](arkts-arkui-offscreencanvasrenderingcontext2d-c.md)
-> objects.
+**Path2D** allows you to describe a path through an existing path. This path can be drawn through the **stroke** or **fill** API of **Canvas**. > **NOTE** > > The Path2D object does not support the resetting of an existing path. If a new path > is required, you can create an empty Path2D object. > > The methods of the Path2D object do not take effect for the paths set in the > [CanvasRenderingContext2D](arkts-arkui-canvasrenderingcontext2d-c.md) > and > [OffscreenCanvasRenderingContext2D](arkts-arkui-offscreencanvasrenderingcontext2d-c.md) > objects.
 
 **Inheritance/Implementation:** Path2D extends [CanvasPath](arkts-arkui-canvaspath-c.md)
 
@@ -111,8 +99,7 @@ Constructs a Path2D object using a path object.
 constructor(path: Path2D, unit: LengthMetricsUnit)
 ```
 
-When a path object is used to construct a Path2D object, the unit mode of the Path2D
-object can be configured.
+When a path object is used to construct a Path2D object, the unit mode of the Path2D object can be configured.
 
 **Since:** 12
 
@@ -137,8 +124,7 @@ object can be configured.
 constructor(d: string)
 ```
 
-Constructs a Path2D object using a path string that complies with the SVG path
-description specifications.
+Constructs a Path2D object using a path string that complies with the SVG path description specifications.
 
 **Since:** 8
 
@@ -160,8 +146,7 @@ description specifications.
 constructor(description: string, unit: LengthMetricsUnit)
 ```
 
-Constructs a Path2D object using a path string that complies with the SVG path
-specifications. The unit mode of the Path2D object can be configured.
+Constructs a Path2D object using a path string that complies with the SVG path specifications. The unit mode of the Path2D object can be configured.
 
 **Since:** 12
 

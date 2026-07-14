@@ -12,8 +12,7 @@
 autoCreateEmptyFile?: boolean
 ```
 
-保存文件时，由应用决定是否预置空文件。默认为true，Picker会预置空文件并且返回文件的URI数组。
-false不预置空文件，只会返回文件的URI数组。
+保存文件时，由应用决定是否预置空文件。默认为true，Picker会预置空文件并且返回文件的URI数组。 false不预置空文件，只会返回文件的URI数组。
 
 **类型：** boolean
 
@@ -47,8 +46,7 @@ defaultFilePathUri?: string
 fileSuffixChoices?: Array<string>
 ```
 
-保存文件的后缀类型。传入字符串数组，每一项代表一个后缀选项，每一项内部用"|"分为两部分，第一部分为描述，
-第二部分为要保存的后缀。没有"|"则没有描述，该项整体是一个保存的后缀。默认没有后缀类型。
+保存文件的后缀类型。传入字符串数组，每一项代表一个后缀选项，每一项内部用"|"分为两部分，第一部分为描述， 第二部分为要保存的后缀。没有"|"则没有描述，该项整体是一个保存的后缀。默认没有后缀类型。
 
 **类型：** Array<string>
 
@@ -80,8 +78,7 @@ newFileNames?: Array<string>
 pickerMode?: DocumentPickerMode
 ```
 
-拉起picker的类型, 默认为DEFAULT。当pickerMode设置为DOWNLOAD时，用户配置的参数newFileNames、
-defaultFilePathUri和fileSuffixChoices将不会生效。
+拉起picker的类型, 默认为DEFAULT。当pickerMode设置为DOWNLOAD时，用户配置的参数newFileNames、 defaultFilePathUri和fileSuffixChoices将不会生效。
 
 **类型：** DocumentPickerMode
 

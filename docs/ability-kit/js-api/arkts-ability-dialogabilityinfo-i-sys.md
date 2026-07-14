@@ -164,14 +164,7 @@ Installation directory of the application.
 installSource?: string
 ```
 
-Installation source of the application. The options are as follows:
-
-- **pre-installed**: pre-installed application installed during the first boot.
-- **ota**: pre-installed application added during system upgrade.
-- **recovery**: pre-installed application manually restored by the user after uninstallation.
-- **bundleName**: installation by the application corresponding to this bundle name. **bundleName** represents a
-variable, subject to the actual value.
-- **unknown**: unknown application installation source.
+Installation source of the application. The options are as follows: - **pre-installed**: pre-installed application installed during the first boot. - **ota**: pre-installed application added during system upgrade. - **recovery**: pre-installed application manually restored by the user after uninstallation. - **bundleName**: installation by the application corresponding to this bundle name. **bundleName** represents a variable, subject to the actual value. - **unknown**: unknown application installation source.
 
 **Type:** string
 

@@ -12,8 +12,7 @@ import { hiTraceMeter } from '@kit.PerformanceAnalysisKit';
 function unregisterTraceListener(index: number): number
 ```
 
-Unregisters the callback function used to notify whether the trace capture is enabled, which is registered using
-**registerTraceListener()**.
+Unregisters the callback function used to notify whether the trace capture is enabled, which is registered using **registerTraceListener()**.
 
 **Since:** 22
 

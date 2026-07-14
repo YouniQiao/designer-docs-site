@@ -12,10 +12,7 @@ import { usbManager } from '@kit.BasicServicesKit';
 function requestAccessoryRight(accessory: USBAccessory): Promise<boolean>
 ```
 
-Requests the permission to access a USB accessory for a specified application. This API uses a promise to return
-the result.
-You need to call [usbManager.getAccessoryList](arkts-basicservices-getaccessorylist-f.md#getaccessorylist-1) to obtain the accessory list
-and use [USBAccessory](arkts-basicservices-usbaccessory-i.md) as a parameter.
+Requests the permission to access a USB accessory for a specified application. This API uses a promise to return the result. You need to call [usbManager.getAccessoryList](arkts-basicservices-getaccessorylist-f.md#getaccessorylist-1) to obtain the accessory list and use [USBAccessory](arkts-basicservices-usbaccessory-i.md) as a parameter.
 
 **Since:** 14
 

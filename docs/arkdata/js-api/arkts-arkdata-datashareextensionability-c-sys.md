@@ -315,8 +315,7 @@ export default class DataShareExtAbility extends DataShareExtensionAbility {
 onCreate?(want: Want, callback: AsyncCallback<void>): void
 ```
 
-Called by the server to initialize service logic when the DataShare client connects to the
-DataShareExtensionAbility server. This API can be overridden as required.
+Called by the server to initialize service logic when the DataShare client connects to the DataShareExtensionAbility server. This API can be overridden as required.
 
 **Since:** 9
 

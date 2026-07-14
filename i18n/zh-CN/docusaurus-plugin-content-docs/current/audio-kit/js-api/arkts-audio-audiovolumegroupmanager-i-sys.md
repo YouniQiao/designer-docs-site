@@ -1,14 +1,6 @@
 # AudioVolumeGroupManager
 
-管理音频组音量。
-
-在使用AudioVolumeGroupManager的接口之前，需先通过
-[getVolumeGroupManager](arkts-audio-audiovolumemanager-i.md#getvolumegroupmanager-1)
-获取AudioVolumeGroupManager实例。
-
-> **说明：**
->
-> - 本Interface首批接口从API version 9开始支持。
+管理音频组音量。 在使用AudioVolumeGroupManager的接口之前，需先通过 [getVolumeGroupManager](arkts-audio-audiovolumemanager-i.md#getvolumegroupmanager-1) 获取AudioVolumeGroupManager实例。 > **说明：** > > - 本Interface首批接口从API version 9开始支持。
 
 **起始版本：** 9
 

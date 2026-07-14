@@ -12,21 +12,7 @@ import { applicationManager } from '@kit.MDMKit';
 function addKeepAliveApps(admin: Want, bundleNames: Array<string>, accountId: number): void
 ```
 
-Adds applications to the keep-alive list; once added, the application processes will be kept alive automatically.
-After the device is powered on or the application is killed, the system will proactively restart these application
-processes.<!--RP7--><!--RP7End-->
-
-For applications added to the keep-alive list via this API, users cannot manually revoke their keep-alive status on
-the device <!--RP6--><!--RP6End-->. However, you can call the
-[removeKeepAliveApps](arkts-mdm-removekeepaliveapps-f.md#removekeepaliveapps-1) API to remove them from the keep-alive list.
-
-If applications are disallowed to run by calling
-[addDisallowedRunningBundlesSync](arkts-mdm-adddisallowedrunningbundlessync-f.md#adddisallowedrunningbundlessync-1), they cannot be kept
-alive. Otherwise, error code 9200010 will be reported.
-
-To use similar functions on phones or tablets, call
-[addUserNonStopApps](arkts-mdm-addusernonstopapps-f.md#addusernonstopapps-1) or
-[addFreezeExemptedApps](arkts-mdm-addfreezeexemptedapps-f.md#addfreezeexemptedapps-1). For details, see the relevant documents.
+Adds applications to the keep-alive list; once added, the application processes will be kept alive automatically. After the device is powered on or the application is killed, the system will proactively restart these application processes.<!--RP7--><!--RP7End--> For applications added to the keep-alive list via this API, users cannot manually revoke their keep-alive status on the device <!--RP6--><!--RP6End-->. However, you can call the [removeKeepAliveApps](arkts-mdm-removekeepaliveapps-f.md#removekeepaliveapps-1) API to remove them from the keep-alive list. If applications are disallowed to run by calling [addDisallowedRunningBundlesSync](arkts-mdm-adddisallowedrunningbundlessync-f.md#adddisallowedrunningbundlessync-1), they cannot be kept alive. Otherwise, error code 9200010 will be reported. To use similar functions on phones or tablets, call [addUserNonStopApps](arkts-mdm-addusernonstopapps-f.md#addusernonstopapps-1) or [addFreezeExemptedApps](arkts-mdm-addfreezeexemptedapps-f.md#addfreezeexemptedapps-1). For details, see the relevant documents.
 
 **Since:** 14
 
@@ -86,23 +72,7 @@ try {
 function addKeepAliveApps(admin: Want, bundleNames: Array<string>, accountId: number, disallowModify: boolean): void
 ```
 
-Adds applications to the keep-alive list; once added, the application processes will be kept alive automatically.
-You can also set whether to disable manual keep-alive cancellation. After the device is powered on or the
-application is killed, the system will proactively restart these application processes.
-
-Applications can be added to the keep-alive list via this API and the
-[addKeepAliveApps](arkts-mdm-addkeepaliveapps-f.md#addkeepaliveapps-1)
-API. Settings from both APIs can take effect simultaneously. For a single user, the keep-alive list supports a
-maximum of 5 applications. For example, if there are already 3 applications in the current list, a maximum of 2
-more can be added for the user via this API.
-
-If applications are disallowed to run by calling
-[addDisallowedRunningBundlesSync](arkts-mdm-adddisallowedrunningbundlessync-f.md#adddisallowedrunningbundlessync-1), they cannot be kept
-alive. Otherwise, error code 9200010 will be reported.
-
-To use similar functions on phones or tablets, call
-[addUserNonStopApps](arkts-mdm-addusernonstopapps-f.md#addusernonstopapps-1) or
-[addFreezeExemptedApps](arkts-mdm-addfreezeexemptedapps-f.md#addfreezeexemptedapps-1). For details, see the relevant documents.
+Adds applications to the keep-alive list; once added, the application processes will be kept alive automatically. You can also set whether to disable manual keep-alive cancellation. After the device is powered on or the application is killed, the system will proactively restart these application processes. Applications can be added to the keep-alive list via this API and the [addKeepAliveApps](arkts-mdm-addkeepaliveapps-f.md#addkeepaliveapps-1) API. Settings from both APIs can take effect simultaneously. For a single user, the keep-alive list supports a maximum of 5 applications. For example, if there are already 3 applications in the current list, a maximum of 2 more can be added for the user via this API. If applications are disallowed to run by calling [addDisallowedRunningBundlesSync](arkts-mdm-adddisallowedrunningbundlessync-f.md#adddisallowedrunningbundlessync-1), they cannot be kept alive. Otherwise, error code 9200010 will be reported. To use similar functions on phones or tablets, call [addUserNonStopApps](arkts-mdm-addusernonstopapps-f.md#addusernonstopapps-1) or [addFreezeExemptedApps](arkts-mdm-addfreezeexemptedapps-f.md#addfreezeexemptedapps-1). For details, see the relevant documents.
 
 **Since:** 20
 

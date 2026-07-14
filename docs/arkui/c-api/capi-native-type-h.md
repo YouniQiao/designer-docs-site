@@ -4967,7 +4967,7 @@ Sets the text shadow options of the text style.
 | Parameter | Description |
 | -- | -- |
 | OH_ArkUI_TextEditorTextStyle* style | Pointer to the text style of the **TextEditor** component. |
-| [const OH_ArkUI_ShadowOptions](capi-arkui-nativemodule-oh-arkui-shadowoptions.md)** options | Double pointer to the text shadow options. |
+| const OH_ArkUI_ShadowOptions** options | Double pointer to the text shadow options. |
 | int32_t length | Length of the text shadow options. |
 
 **Returns**:
@@ -4993,7 +4993,7 @@ Obtains the text shadow options of the text style.
 | Parameter | Description |
 | -- | -- |
 | OH_ArkUI_TextEditorTextStyle* style | Pointer to the text style of the **TextEditor** component. |
-| [OH_ArkUI_ShadowOptions](capi-arkui-nativemodule-oh-arkui-shadowoptions.md)** shadowOptions | Double pointer to the text shadow options. |
+| OH_ArkUI_ShadowOptions** shadowOptions | Double pointer to the text shadow options. |
 | uint32_t shadowOptionsSize | Size of the shadow option buffer. |
 | uint32_t* writeLength | Pointer to the number of actual text shadow options in the text style. |
 
@@ -6074,7 +6074,7 @@ Sets direction of linear gradient options.
 | Parameter | Description |
 | -- | -- |
 | [OH_ArkUI_LinearGradientOptions](capi-arkui-nativemodule-oh-arkui-lineargradientoptions.md)* options | Pointer to the <b>OH_ArkUI_LinearGradientOptions</b> object. |
-| [ArkUI_LinearGradientDirection](capi-native-type-visual-h.md#arkui_lineargradientdirection) direction | Direction of linear gradient.The parameter type is [ArkUI_LinearGradientDirection](capi-native-type-visual-h.md#arkui_lineargradientdirection). |
+| ArkUI_LinearGradientDirection direction | Direction of linear gradient.The parameter type is [ArkUI_LinearGradientDirection](capi-native-type-visual-h.md#arkui_lineargradientdirection). |
 
 **Returns**:
 
@@ -6099,7 +6099,7 @@ Gets direction of linear gradient options.
 | Parameter | Description |
 | -- | -- |
 | [const OH_ArkUI_LinearGradientOptions](capi-arkui-nativemodule-oh-arkui-lineargradientoptions.md)* options | Pointer to the <b>OH_ArkUI_LinearGradientOptions</b> object. |
-| [ArkUI_LinearGradientDirection](capi-native-type-visual-h.md#arkui_lineargradientdirection)* direction | Pointer to the direction of linear gradient.The parameter type is [ArkUI_LinearGradientDirection](capi-native-type-visual-h.md#arkui_lineargradientdirection). |
+| ArkUI_LinearGradientDirection* direction | Pointer to the direction of linear gradient.The parameter type is [ArkUI_LinearGradientDirection](capi-native-type-visual-h.md#arkui_lineargradientdirection). |
 
 **Returns**:
 

@@ -1,12 +1,6 @@
 # LongTask
 
-Describes a continuous task. **LongTask** inherits from
-[Task](arkts-arkts-execute-f.md#execute-1).
-No upper limit is set for the execution time of a continuous task, and no timeout exception is thrown if a
-continuous task runs for a long period of time. However, a continuous task cannot be executed in a task group or
-executed for multiple times.
-The thread for executing a continuous task exists until [terminateTask](arkts-arkts-terminatetask-f.md#terminatetask-1) is called
-after the execution is complete. The thread is reclaimed when it is idle.
+Describes a continuous task. **LongTask** inherits from [Task](arkts-arkts-execute-f.md#execute-1). No upper limit is set for the execution time of a continuous task, and no timeout exception is thrown if a continuous task runs for a long period of time. However, a continuous task cannot be executed in a task group or executed for multiple times. The thread for executing a continuous task exists until [terminateTask](arkts-arkts-terminatetask-f.md#terminatetask-1) is called after the execution is complete. The thread is reclaimed when it is idle.
 
 **Inheritance/Implementation:** LongTask extends [Task](arkts-arkts-task-c.md)
 

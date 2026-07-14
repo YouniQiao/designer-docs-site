@@ -18,7 +18,7 @@ import { componentUtils } from '@kit.ArkUI';
 
 | Name | Description |
 | --- | --- |
-| [getRectangleById](arkts-arkui-getrectanglebyid-f.md#getrectanglebyid-1) | Obtains a **ComponentInfo** object based on the component ID and synchronously returns the geometric properties ofthe component.&gt; **NOTE**&gt;&gt; - Since API version 10, you can use the&gt; [getComponentUtils](arkts-arkui-uicontext-c.md#getcomponentutils-1) API in&gt; [UIContext](arkts-arkui-uicontext.md) to obtain the [ComponentUtils](arkts-arkui-uicontext.md) object&gt; associated with the current UI context. This API provides access to component coordinates and size information&gt; after the target component completes layout. It is recommended that you invoke this API within&gt; [layout completion callbacks](arkts-arkui-inspector.md). Note that dynamically created components&gt; must be mounted to the component tree before this API can obtain their information, as unmounted components are&gt; not measured or laid out by the UI framework. Always ensure that component mounting precedes information&gt; retrieval attempts. |
+| [getRectangleById](arkts-arkui-getrectanglebyid-f.md#getrectanglebyid-1) | Obtains a **ComponentInfo** object based on the component ID and synchronously returns the geometric properties of the component. &gt; **NOTE** &gt; &gt; - Since API version 10, you can use the &gt; [getComponentUtils](arkts-arkui-uicontext-c.md#getcomponentutils-1) API in &gt; [UIContext](arkts-arkui-uicontext.md) to obtain the [ComponentUtils](arkts-arkui-uicontext.md) object &gt; associated with the current UI context. This API provides access to component coordinates and size information &gt; after the target component completes layout. It is recommended that you invoke this API within &gt; [layout completion callbacks](arkts-arkui-inspector.md). Note that dynamically created components &gt; must be mounted to the component tree before this API can obtain their information, as unmounted components are &gt; not measured or laid out by the UI framework. Always ensure that component mounting precedes information &gt; retrieval attempts. |
 
 <!--Del-->
 ### Functions（系统接口）
@@ -32,7 +32,7 @@ import { componentUtils } from '@kit.ArkUI';
 
 | Name | Description |
 | --- | --- |
-| [ComponentInfo](arkts-arkui-componentinfo-i.md) | Implements a **ComponentInfo** object, which provides the size, position, translation, scaling, rotation, andaffine matrix information of the component. |
+| [ComponentInfo](arkts-arkui-componentinfo-i.md) | Implements a **ComponentInfo** object, which provides the size, position, translation, scaling, rotation, and affine matrix information of the component. |
 | [Offset](arkts-arkui-offset-i.md) | Defines the offset property. |
 | [RotateResult](arkts-arkui-rotateresult-i.md) | Rotation Result. |
 | [ScaleResult](arkts-arkui-scaleresult-i.md) | Scale Result |

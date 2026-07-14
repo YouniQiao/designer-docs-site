@@ -18,8 +18,7 @@ import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventList
 onStatus(networkId: string, status: number): void
 ```
 
-Called to return the specified status. Its parameters are passed in by
-[connectDfs](../../../../reference/apis-core-file-kit/js-apis-file-fs.md#fileioconnectdfs12).
+Called to return the specified status. Its parameters are passed in by [connectDfs](../../../../reference/apis-core-file-kit/js-apis-file-fs.md#fileioconnectdfs12).
 
 **Since:** 12
 

@@ -1,7 +1,6 @@
 # PageInfo
 
-Represents the page information of the router or navigation destination.
-If there is no related page information, **undefined** is returned.
+Represents the page information of the router or navigation destination. If there is no related page information, **undefined** is returned.
 
 **Since:** 12
 

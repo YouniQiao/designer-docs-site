@@ -50,10 +50,7 @@ Unique ID of the setting item.
 mediaId: string
 ```
 
-Media id associated with the current settings.
-If the settings are associated with the current media information,
-you need to set the mediaId; otherwise,
-it is not required to set the mediaId.
+Media id associated with the current settings. If the settings are associated with the current media information, you need to set the mediaId; otherwise, it is not required to set the mediaId.
 
 **Type:** string
 
@@ -85,8 +82,7 @@ Type of the setting item.
 settingValue?: string | boolean | SettingContent[] | WantAgent
 ```
 
-Value of the setting item.
-SWITCH: bool, LIST: SettingContent, JUMP: string.
+Value of the setting item. SWITCH: bool, LIST: SettingContent, JUMP: string.
 
 **Type:** string | boolean | SettingContent[] | WantAgent
 

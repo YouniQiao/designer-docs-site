@@ -6,15 +6,7 @@
 function moveMainWindowToTargetDisplay(displayId: number, windowId: number): Promise<void>
 ```
 
-将指定的主窗口迁移到指定的屏幕上。使用Promise异步回调。
-
-- 对于[主屏](../../../../displaymanager/display-terminology.md#主屏)/
-[扩展屏](../../../../displaymanager/display-terminology.md#扩展屏)与
-[虚拟屏](../../../../displaymanager/display-terminology.md#虚拟屏)之间以及虚拟屏与虚拟屏之间的窗口迁移，仅主窗及其子窗会一起被迁移到对应屏幕上且被抬升，如果存在子窗，最上层可获焦子
-窗会获取焦点，否则主窗口获焦。
-- 对于主屏与扩展屏之间的窗口迁移，只会将主窗口迁移到对应屏幕，抬升并获取焦点。
-
-<!--RP3--><!--RP3End-->
+将指定的主窗口迁移到指定的屏幕上。使用Promise异步回调。 - 对于[主屏](../../../../displaymanager/display-terminology.md#主屏)/ [扩展屏](../../../../displaymanager/display-terminology.md#扩展屏)与 [虚拟屏](../../../../displaymanager/display-terminology.md#虚拟屏)之间以及虚拟屏与虚拟屏之间的窗口迁移，仅主窗及其子窗会一起被迁移到对应屏幕上且被抬升，如果存在子窗，最上层可获焦子 窗会获取焦点，否则主窗口获焦。 - 对于主屏与扩展屏之间的窗口迁移，只会将主窗口迁移到对应屏幕，抬升并获取焦点。 <!--RP3--><!--RP3End-->
 
 **起始版本：** 26.0.0
 
@@ -47,38 +39,4 @@ function moveMainWindowToTargetDisplay(displayId: number, windowId: number): Pro
 | [1300003](../errorcode-window.md#1300003-系统服务工作异常) | This window manager service works abnormally. |
 | [1300004](../errorcode-window.md#1300004-无权限操作) | Unauthorized operation. Possible cause: The window is not a main window. |
 | [1300008](../errorcode-window.md#1300008-显示设备异常) | Invalid display. Possible cause:1. DisplayId is a negative number or not exist. |
-
-**示例：**
-
-```TypeScript
-// EntryAbility.ets
-import { UIAbility } from '@kit.AbilityKit';
-import { display, window } from '@kit.ArkUI';
-import { BusinessError } from '@kit.BasicServicesKit';
-
-export default class EntryAbility extends UIAbility {
-  // ...
-  onWindowStageCreate(windowStage: window.WindowStage): void {
-    console.info('onWindowStageCreate');
-    windowStage.loadContent('pages/Index', (err: BusinessError) => {
-      if (err.code) {
-        console.error(`Failed to load content for main window. Cause code: ${err.code}, message: ${err.message}`);
-      }
-      let displayClass: display.Display | null = null;
-      displayClass = display.getDefaultDisplaySync();
-      let mainWindow = windowStage.getMainWindowSync();
-      try {
-        window.moveMainWindowToTargetDisplay(displayClass.id, mainWindow.getWindowProperties().id).then(() => {
-          console.info(`Succeeded in moving window id: ${mainWindow.getWindowProperties().id} to target display id: ${mainWindow.getWindowProperties().displayId}`);
-        }).catch((err: BusinessError) => {
-          console.error(`Failed to move window to target display. Cause code: ${err.code}, message: ${err.message}`);
-        });
-      } catch (exception) {
-        console.error(`Failed to move window to target display. Cause code: ${exception.code}, message: ${exception.message}`);
-      }
-    });
-  }
-}
-
-```
 

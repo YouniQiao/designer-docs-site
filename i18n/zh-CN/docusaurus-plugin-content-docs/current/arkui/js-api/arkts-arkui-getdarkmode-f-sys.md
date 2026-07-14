@@ -6,17 +6,7 @@
 function getDarkMode(): DarkMode
 ```
 
-获取系统当前的深色模式配置。
-
-<!--Del-->
-
-> **说明：**
-
-> 该接口在API version 19及之前版本中为系统接口。开发者使用该接口时需要申请
-> [ohos.permission.UPDATE_CONFIGURATION](../../../../security/AccessToken/permissions-for-system-apps.md#ohospermissionupdate_configuration)
-> 权限。
-
-<!--DelEnd-->
+获取系统当前的深色模式配置。 <!--Del--> > **说明：** > 该接口在API version 19及之前版本中为系统接口。开发者使用该接口时需要申请 > [ohos.permission.UPDATE_CONFIGURATION](../../../../security/AccessToken/permissions-for-system-apps.md#ohospermissionupdate_configuration) > 权限。 <!--DelEnd-->
 
 **起始版本：** 20
 
@@ -50,8 +40,8 @@ try {
   let darkMode = uiAppearance.getDarkMode();
   console.info('Get dark-mode ' + darkMode);
 } catch (error) {
-  let message = (error as BusinessError).message;
-  console.error('Get dark-mode failed, ' + message);
+  let err = error as BusinessError;
+  console.error(`Get dark-mode failed. Code: ${err.code}, message: ${err.message}`);
 }
 
 ```

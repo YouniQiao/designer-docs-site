@@ -1,8 +1,6 @@
 # TextTimer属性/事件
 
-除支持[通用属性](../../../../reference/apis-arkui/arkui-ts/ts-component-general-attributes.md)外，还支持以下属性。
-
-除支持[通用事件](../../../../reference/apis-arkui/arkui-ts/ts-component-general-events.md)外，还支持以下事件。
+除支持[通用属性](../../../../reference/apis-arkui/arkui-ts/ts-component-general-attributes.md)外，还支持以下属性。 除支持[通用事件](../../../../reference/apis-arkui/arkui-ts/ts-component-general-events.md)外，还支持以下事件。
 
 **继承/实现关系：** TextTimerAttribute extends [CommonMethod<TextTimerAttribute>](CommonMethod<TextTimerAttribute>)
 
@@ -148,9 +146,7 @@ fontWeight(value: number | FontWeight | ResourceStr)
 format(value: string)
 ```
 
-设置自定义格式，需至少包含一个HH、mm、ss、SS中的关键字。使用yy、MM、dd等日期格式时，使用默认值。
-
-计时器更新频率按format最小单位处理，例如：format设置为'HH:mm'时，更新频率为一分钟。
+设置自定义格式，需至少包含一个HH、mm、ss、SS中的关键字。使用yy、MM、dd等日期格式时，使用默认值。 计时器更新频率按format最小单位处理，例如：format设置为'HH:mm'时，更新频率为一分钟。
 
 **起始版本：** 8
 
@@ -194,11 +190,7 @@ onTimer(event: (utc: number, elapsedTime: number) => void)
 textShadow(value: ShadowOptions | Array<ShadowOptions>)
 ```
 
-设置文字阴影效果。该接口支持以数组形式入参，实现多重文字阴影。不支持fill字段, 不支持智能取色模式。
-
-> **说明：**
->
-> 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+设置文字阴影效果。该接口支持以数组形式入参，实现多重文字阴影。不支持fill字段, 不支持智能取色模式。 > **说明：** > > 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 11
 

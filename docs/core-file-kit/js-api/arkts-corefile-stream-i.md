@@ -1,8 +1,6 @@
 # Stream
 
-Provides API for stream operations. Before calling any API of **Stream**, you need to create a **Stream** instance by
-using [fileIo.createStream](../../../../reference/apis-core-file-kit/js-apis-file-fs.md#fileiocreatestream) or
-[fileIo.fdopenStream](../../../../reference/apis-core-file-kit/js-apis-file-fs.md#fileiofdopenstream).
+Provides API for stream operations. Before calling any API of **Stream**, you need to create a **Stream** instance by using [fileIo.createStream](../../../../reference/apis-core-file-kit/js-apis-file-fs.md#fileiocreatestream) or [fileIo.fdopenStream](../../../../reference/apis-core-file-kit/js-apis-file-fs.md#fileiofdopenstream).
 
 **Since:** 9
 
@@ -395,6 +393,27 @@ Reads data from a stream file. This API uses an asynchronous callback to return 
 | 13900034 | Operation would block |
 | 13900042 | Unknown error |
 
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+import { buffer } from '@kit.ArkTS';
+
+let filePath = pathDir + "/test.txt";
+let stream = fileIo.createStreamSync(filePath, "r+");
+let arrayBuffer = new ArrayBuffer(4096);
+stream.read(arrayBuffer, (err: BusinessError, readLen: number) => {
+  if (err) {
+    console.error(`Failed to read stream. Code: ${err.code}, message: ${err.message}`);
+  } else {
+    let buf = buffer.from(arrayBuffer, 0, readLen);
+    console.info(`Succeeded in reading data, the content of file is: ${buf.toString()}`);
+    stream.close();
+  }
+});
+
+```
+
 ## read
 
 ```TypeScript
@@ -434,6 +453,32 @@ Reads data from a stream file. This API uses an asynchronous callback to return 
 | 13900020 | Invalid argument |
 | 13900034 | Operation would block |
 | 13900042 | Unknown error |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+import { buffer } from '@kit.ArkTS';
+import { ReadOptions } from '@kit.CoreFileKit';
+
+let filePath = pathDir + "/test.txt";
+let stream = fileIo.createStreamSync(filePath, "r+");
+let arrayBuffer = new ArrayBuffer(4096);
+let readOption: ReadOptions = {
+  offset: 5,
+  length: 5
+};
+stream.read(arrayBuffer, readOption, (err: BusinessError, readLen: number) => {
+  if (err) {
+    console.error(`Failed to read stream. Code: ${err.code}, message: ${err.message}`);
+  } else {
+    let buf = buffer.from(arrayBuffer, 0, readLen);
+    console.info(`Succeeded in reading data, the content of file is: ${buf.toString()}`);
+    stream.close();
+  }
+});
+
+```
 
 ## readSync
 
@@ -604,6 +649,26 @@ Writes data to a stream file. This API uses an asynchronous callback to return t
 | 13900041 | Quota exceeded |
 | 13900042 | Unknown error |
 
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let filePath = pathDir + "/test.txt";
+let stream = fileIo.createStreamSync(filePath, "r+");
+stream.write("hello, world", (err: BusinessError, bytesWritten: number) => {
+  if (err) {
+    console.error(`Failed to write stream. Code: ${err.code}, message: ${err.message}`);
+  } else {
+    if (bytesWritten) {
+      console.info(`Succeeded in writing, size is: ${bytesWritten}`);
+    }
+  }
+  stream.close();
+});
+
+```
+
 ## write
 
 ```TypeScript
@@ -646,6 +711,32 @@ Writes data to a stream file. This API uses an asynchronous callback to return t
 | 13900034 | Operation would block |
 | 13900041 | Quota exceeded |
 | 13900042 | Unknown error |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+import { WriteOptions } from '@kit.CoreFileKit';
+
+let filePath = pathDir + "/test.txt";
+let stream = fileIo.createStreamSync(filePath, "r+");
+let writeOption: WriteOptions = {
+  offset: 5,
+  length: 5,
+  encoding: 'utf-8'
+};
+stream.write("hello, world", writeOption, (err: BusinessError, bytesWritten: number) => {
+  if (err) {
+    console.error(`Failed to write stream. Code: ${err.code}, message: ${err.message}`);
+  } else {
+    if (bytesWritten) {
+      console.info(`Succeeded in writing, size is: ${bytesWritten}`);
+    }
+  }
+  stream.close();
+});
+
+```
 
 ## writeSync
 

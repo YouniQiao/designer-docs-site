@@ -1,8 +1,6 @@
 # TimePickerDialogOptions
 
-Defines the configuration options of the time picker dialog box.
-
-Inherited from [TimePickerOptions](arkts-arkui-timepickeroptions-i.md).
+Defines the configuration options of the time picker dialog box. Inherited from [TimePickerOptions](arkts-arkui-timepickeroptions-i.md).
 
 **Inheritance/Implementation:** TimePickerDialogOptions extends [TimePickerOptions](arkts-arkui-timepickeroptions-i.md)
 
@@ -16,15 +14,7 @@ Inherited from [TimePickerOptions](arkts-arkui-timepickeroptions-i.md).
 acceptButtonStyle?: PickerDialogButtonStyle
 ```
 
-Style of the accept button.
-
-**NOTE**
-
-1. In **acceptButtonStyle** and **cancelButtonStyle**, at most one **primary** field can be set to **true**.
-If both are set to **true**, the **primary** field will remain at the default value of **false**.
-2. The default button height is 40 vp and remains fixed even in accessibility and large-font modes. In addition,
-even if the button style is set to [ROUNDED_RECTANGLE](arkts-arkui-buttontype-e.md), the displayed effect is still a
-capsule button ([Capsule](arkts-arkui-buttontype-e.md)).
+Style of the accept button. **NOTE** 1. In **acceptButtonStyle** and **cancelButtonStyle**, at most one **primary** field can be set to **true**. If both are set to **true**, the **primary** field will remain at the default value of **false**. 2. The default button height is 40 vp and remains fixed even in accessibility and large-font modes. In addition, even if the button style is set to [ROUNDED_RECTANGLE](arkts-arkui-buttontype-e.md), the displayed effect is still a capsule button ([Capsule](arkts-arkui-buttontype-e.md)).
 
 **Type:** PickerDialogButtonStyle
 
@@ -42,9 +32,7 @@ capsule button ([Capsule](arkts-arkui-buttontype-e.md)).
 alignment?: DialogAlignment
 ```
 
-Alignment mode of the dialog box in the vertical direction.
-
-Default value: **DialogAlignment.Default**
+Alignment mode of the dialog box in the vertical direction. Default value: **DialogAlignment.Default**
 
 **Type:** DialogAlignment
 
@@ -62,15 +50,7 @@ Default value: **DialogAlignment.Default**
 backgroundBlurStyle?: BlurStyle
 ```
 
-Background blur style of the dialog box.
-
-Default value: **BlurStyle.COMPONENT_ULTRA_THICK**
-
-**NOTE**
-
-Setting this parameter to **BlurStyle.NONE** disables the background blur. When **backgroundBlurStyle** is set to a
-value other than **NONE**, do not set **backgroundColor**. If you do, the color display may not produce the
-expected visual effect.
+Background blur style of the dialog box. Default value: **BlurStyle.COMPONENT_ULTRA_THICK** **NOTE** Setting this parameter to **BlurStyle.NONE** disables the background blur. When **backgroundBlurStyle** is set to a value other than **NONE**, do not set **backgroundColor**. If you do, the color display may not produce the expected visual effect.
 
 **Type:** BlurStyle
 
@@ -108,14 +88,7 @@ Options for customizing the background blur style.
 backgroundColor?: ResourceColor
 ```
 
-Backplane color of the dialog box.
-
-Default value: **Color.Transparent**
-
-**NOTE**
-
-When **backgroundColor** is set to a non-transparent color, **backgroundBlurStyle** must be set to
-**BlurStyle.NONE**; otherwise, the color display may not meet the expected effect.
+Backplane color of the dialog box. Default value: **Color.Transparent** **NOTE** When **backgroundColor** is set to a non-transparent color, **backgroundBlurStyle** must be set to **BlurStyle.NONE**; otherwise, the color display may not meet the expected effect.
 
 **Type:** ResourceColor
 
@@ -153,16 +126,7 @@ Options for customizing the background effect.
 cancelButtonStyle?: PickerDialogButtonStyle
 ```
 
-Style of the cancel button.
-
-**NOTE**
-
-1. In **acceptButtonStyle** and **cancelButtonStyle**, at most one **primary** field can be set to **true**.
-If both are set to **true**, the **primary** field will remain at the default value of **false**.
-If both are set to **true**, the **primary** field will remain at the default value of false.
-2. The default button height is 40 vp and remains fixed even in accessibility and large-font modes.
-In addition, even if the button style is set to [ROUNDED_RECTANGLE](arkts-arkui-buttontype-e.md),
-the displayed effect is still a capsule button ([Capsule](arkts-arkui-buttontype-e.md)).
+Style of the cancel button. **NOTE** 1. In **acceptButtonStyle** and **cancelButtonStyle**, at most one **primary** field can be set to **true**. If both are set to **true**, the **primary** field will remain at the default value of **false**. If both are set to **true**, the **primary** field will remain at the default value of false. 2. The default button height is 40 vp and remains fixed even in accessibility and large-font modes. In addition, even if the button style is set to [ROUNDED_RECTANGLE](arkts-arkui-buttontype-e.md), the displayed effect is still a capsule button ([Capsule](arkts-arkui-buttontype-e.md)).
 
 **Type:** PickerDialogButtonStyle
 
@@ -180,17 +144,7 @@ the displayed effect is still a capsule button ([Capsule](arkts-arkui-buttontype
 dateTimeOptions?: DateTimeOptions
 ```
 
-Whether to display a leading zero for the hours and minutes. Currently only the configuration of the **hour** and
-**minute** parameters is supported.
-
-Default value:
-
-**hour**: For the 24-hour format, the default value is **"2-digit"**, meaning the hour is displayed as a two-digit
-number. If the actual value is less than 10, a leading zero is added, displayed as "0X". For the 12-hour format,
-the default value is **"numeric"**, meaning no leading zero.
-
-**minute**: The default value is **"2-digit"**, meaning the minute is displayed as a two-digit number. If the
-actual value is less than 10, a leading zero is added, displayed as "0X".
+Whether to display a leading zero for the hours and minutes. Currently only the configuration of the **hour** and **minute** parameters is supported. Default value: **hour**: For the 24-hour format, the default value is **"2-digit"**, meaning the hour is displayed as a two-digit number. If the actual value is less than 10, a leading zero is added, displayed as "0X". For the 12-hour format, the default value is **"numeric"**, meaning no leading zero. **minute**: The default value is **"2-digit"**, meaning the minute is displayed as a two-digit number. If the actual value is less than 10, a leading zero is added, displayed as "0X".
 
 **Type:** DateTimeOptions
 
@@ -208,9 +162,7 @@ actual value is less than 10, a leading zero is added, displayed as "0X".
 disappearTextStyle?: PickerTextStyle
 ```
 
-Text color, font size, and font weight of edge items (the second item above or below the selected item).
-
-Default value: { color: '#ff182431', font: { size: '14fp', weight: FontWeight.Regular } }
+Text color, font size, and font weight of edge items (the second item above or below the selected item). Default value: { color: '#ff182431', font: { size: '14fp', weight: FontWeight.Regular } }
 
 **Type:** PickerTextStyle
 
@@ -228,15 +180,7 @@ Default value: { color: '#ff182431', font: { size: '14fp', weight: FontWeight.Re
 enableCascade?: boolean
 ```
 
-Whether the AM/PM indicator automatically switches based on the hour value. Only takes effect when
-**useMilitaryTime** is set to **false**.
-
-- **true**: The AM/PM indicator automatically switches based on the hour value.
-- **false**: The AM/PM indicator remains static regardless of hour changes.
-
-Default value: **false**.
-
-When **enableCascade** is set to **true**, it only takes effect if the **loop** parameter is also **true**.
+Whether the AM/PM indicator automatically switches based on the hour value. Only takes effect when **useMilitaryTime** is set to **false**. - **true**: The AM/PM indicator automatically switches based on the hour value. - **false**: The AM/PM indicator remains static regardless of hour changes. Default value: **false**. When **enableCascade** is set to **true**, it only takes effect if the **loop** parameter is also **true**.
 
 **Type:** boolean
 
@@ -256,18 +200,7 @@ When **enableCascade** is set to **true**, it only takes effect if the **loop** 
 enableHapticFeedback?: boolean
 ```
 
-Whether to enable haptic feedback.
-
-- **true**: Enable haptic feedback.
-- **false**: Disable haptic feedback.
-
-Default value: **true**.
-
-**NOTE**
-
-1. Whether this parameter takes effect after being set to **true** depends on hardware support.
-2. To enable haptic feedback, you must declare the following permission under **requestPermissions** in
-**module** in **src/main/module.json5** of the project.
+Whether to enable haptic feedback. - **true**: Enable haptic feedback. - **false**: Disable haptic feedback. Default value: **true**. **NOTE** 1. Whether this parameter takes effect after being set to **true** depends on hardware support. 2. To enable haptic feedback, you must declare the following permission under **requestPermissions** in **module** in **src/main/module.json5** of the project.
 
 **Type:** boolean
 
@@ -287,12 +220,7 @@ Default value: **true**.
 enableHoverMode?: boolean
 ```
 
-Whether to enable the hover mode.
-
-- **true**: Respond when the device is in semi-folded mode.
-- **false**: Do not respond when the device is in semi-folded mode.
-
-Default value: **false**.
+Whether to enable the hover mode. - **true**: Respond when the device is in semi-folded mode. - **false**: Do not respond when the device is in semi-folded mode. Default value: **false**.
 
 **Type:** boolean
 
@@ -312,9 +240,7 @@ Default value: **false**.
 hoverModeArea?: HoverModeAreaType
 ```
 
-Display area of the dialog box in hover mode.
-
-Default value: **HoverModeAreaType.BOTTOM_SCREEN**
+Display area of the dialog box in hover mode. Default value: **HoverModeAreaType.BOTTOM_SCREEN**
 
 **Type:** HoverModeAreaType
 
@@ -334,10 +260,7 @@ Default value: **HoverModeAreaType.BOTTOM_SCREEN**
 maskRect?: Rectangle
 ```
 
-Mask area of the dialog box. Events outside the mask area are transparently transmitted, and events within the mask
-area are not.
-
-Default value: **{ x: 0, y: 0, width: '100%', height: '100%' }**
+Mask area of the dialog box. Events outside the mask area are transparently transmitted, and events within the mask area are not. Default value: **{ x: 0, y: 0, width: '100%', height: '100%' }**
 
 **Type:** Rectangle
 
@@ -355,9 +278,7 @@ Default value: **{ x: 0, y: 0, width: '100%', height: '100%' }**
 offset?: Offset
 ```
 
-Offset of the dialog box relative to the alignment position.
-
-Default value: **{ dx: 0 , dy: 0 }**
+Offset of the dialog box relative to the alignment position. Default value: **{ dx: 0 , dy: 0 }**
 
 **Type:** Offset
 
@@ -423,17 +344,7 @@ Triggered when the text picker in the dialog box snaps to the selected item.
 onDidAppear?: () => void
 ```
 
-Event callback after the dialog box appears.
-
-**NOTE**
-
-1. The normal timing sequence is as follows: onWillAppear > onDidAppear > (onAccept/onCancel/onChange) >
-onWillDisappear > onDidDisappear.
-2. You can set the callback event for changing the dialog box display effect in **onDidAppear**.
-The settings take effect next time the dialog box appears.
-3. If the user closes the dialog box immediately after it appears, **onWillDisappear** is invoked before
-**onDidAppear**.
-4. If the dialog box is closed before its entrance animation is finished, this callback is not invoked.
+Event callback after the dialog box appears. **NOTE** 1. The normal timing sequence is as follows: onWillAppear > onDidAppear > (onAccept/onCancel/onChange) > onWillDisappear > onDidDisappear. 2. You can set the callback event for changing the dialog box display effect in **onDidAppear**. The settings take effect next time the dialog box appears. 3. If the user closes the dialog box immediately after it appears, **onWillDisappear** is invoked before **onDidAppear**. 4. If the dialog box is closed before its entrance animation is finished, this callback is not invoked.
 
 **Type:** () => void
 
@@ -451,12 +362,7 @@ The settings take effect next time the dialog box appears.
 onDidDisappear?: () => void
 ```
 
-Event callback after the dialog box disappears.
-
-**NOTE**
-
-1. The normal timing sequence is as follows: onWillAppear > onDidAppear > (onAccept/onCancel/onChange) >
-onWillDisappear > onDidDisappear.
+Event callback after the dialog box disappears. **NOTE** 1. The normal timing sequence is as follows: onWillAppear > onDidAppear > (onAccept/onCancel/onChange) > onWillDisappear > onDidDisappear.
 
 **Type:** () => void
 
@@ -474,17 +380,7 @@ onWillDisappear > onDidDisappear.
 onEnterSelectedArea?: Callback<TimePickerResult>
 ```
 
-Represents the callback triggered during the scrolling of the text picker when an item enters the divider area.
-Compared to the **onChange** event, this event is triggered earlier, specifically when the scroll distance of the
-current column exceeds half the height of the selected item, which indicates that the item has entered the divider
-area.
-
-**NOTE**
-
-When **enableCascade** is set to **true**, using this callback is not recommended due to the interdependent
-relationship between the AM/PM and hour columns. This callback indicates the moment an option enters the divider
-area during scrolling, and only the value of the currently scrolled column will change. The values of other non-
-scrolled columns will remain unchanged.
+Represents the callback triggered during the scrolling of the text picker when an item enters the divider area. Compared to the **onChange** event, this event is triggered earlier, specifically when the scroll distance of the current column exceeds half the height of the selected item, which indicates that the item has entered the divider area. **NOTE** When **enableCascade** is set to **true**, using this callback is not recommended due to the interdependent relationship between the AM/PM and hour columns. This callback indicates the moment an option enters the divider area during scrolling, and only the value of the currently scrolled column will change. The values of other non- scrolled columns will remain unchanged.
 
 **Type:** Callback<TimePickerResult>
 
@@ -502,14 +398,7 @@ scrolled columns will remain unchanged.
 onWillAppear?: () => void
 ```
 
-Event callback when the dialog box is about to appear.
-
-**NOTE**
-
-1. The normal timing sequence is as follows: onWillAppear > onDidAppear > (onAccept/onCancel/onChange) >
-onWillDisappear > onDidDisappear.
-2. You can set the callback event for changing the dialog box display effect in **onWillAppear**.
-The settings take effect next time the dialog box appears.
+Event callback when the dialog box is about to appear. **NOTE** 1. The normal timing sequence is as follows: onWillAppear > onDidAppear > (onAccept/onCancel/onChange) > onWillDisappear > onDidDisappear. 2. You can set the callback event for changing the dialog box display effect in **onWillAppear**. The settings take effect next time the dialog box appears.
 
 **Type:** () => void
 
@@ -527,14 +416,7 @@ The settings take effect next time the dialog box appears.
 onWillDisappear?: () => void
 ```
 
-Event callback when the dialog box is about to disappear.
-
-**NOTE**
-
-1. The normal timing sequence is as follows: onWillAppear > onDidAppear > (onAccept/onCancel/onChange) >
-onWillDisappear > onDidDisappear.
-2. If the user closes the dialog box immediately after it appears, **onWillDisappear** is invoked before
-**onDidAppear**.
+Event callback when the dialog box is about to disappear. **NOTE** 1. The normal timing sequence is as follows: onWillAppear > onDidAppear > (onAccept/onCancel/onChange) > onWillDisappear > onDidDisappear. 2. If the user closes the dialog box immediately after it appears, **onWillDisappear** is invoked before **onDidAppear**.
 
 **Type:** () => void
 
@@ -552,9 +434,7 @@ onWillDisappear > onDidDisappear.
 selectedTextStyle?: PickerTextStyle
 ```
 
-Font color, font size, and font weight of the selected item.
-
-Default value: { color: '#ff007dff', font: { size: '20fp', weight: FontWeight.Medium } }
+Font color, font size, and font weight of the selected item. Default value: { color: '#ff007dff', font: { size: '20fp', weight: FontWeight.Medium } }
 
 **Type:** PickerTextStyle
 
@@ -572,12 +452,7 @@ Default value: { color: '#ff007dff', font: { size: '20fp', weight: FontWeight.Me
 shadow?: ShadowOptions | ShadowStyle
 ```
 
-Shadow of the dialog box.
-
-**NOTE**
-
-Default value on 2-in-1 devices: **ShadowStyle.OUTER_FLOATING_MD** when the dialog box is focused and
-**ShadowStyle.OUTER_FLOATING_SM** otherwise
+Shadow of the dialog box. **NOTE** Default value on 2-in-1 devices: **ShadowStyle.OUTER_FLOATING_MD** when the dialog box is focused and **ShadowStyle.OUTER_FLOATING_SM** otherwise
 
 **Type:** ShadowOptions | ShadowStyle
 
@@ -595,8 +470,7 @@ Default value on 2-in-1 devices: **ShadowStyle.OUTER_FLOATING_MD** when the dial
 systemMaterial?: SystemUiMaterial
 ```
 
-Set system-styled materials for dialog. Different materials have different effects,
-which can influence backgroundColor, border, shadow, and other visual attributes of dialog.
+Set system-styled materials for dialog. Different materials have different effects, which can influence backgroundColor, border, shadow, and other visual attributes of dialog.
 
 **Type:** SystemUiMaterial
 
@@ -614,10 +488,7 @@ which can influence backgroundColor, border, shadow, and other visual attributes
 textStyle?: PickerTextStyle
 ```
 
-Text color, font size, and font weight of candidate items (the first item immediately above or below the selected
-item).
-
-Default value: { color: '#ff182431', font: { size: '16fp', weight: FontWeight.Regular } }
+Text color, font size, and font weight of candidate items (the first item immediately above or below the selected item). Default value: { color: '#ff182431', font: { size: '16fp', weight: FontWeight.Regular } }
 
 **Type:** PickerTextStyle
 
@@ -635,12 +506,7 @@ Default value: { color: '#ff182431', font: { size: '16fp', weight: FontWeight.Re
 useMilitaryTime?: boolean
 ```
 
-Whether to display the time in 24-hour format or 12-hour format.
-
-- **true**: 24-hour format.
-- **false**: 12-hour format.
-
-Default value: **false**.
+Whether to display the time in 24-hour format or 12-hour format. - **true**: 24-hour format. - **false**: 12-hour format. Default value: **false**.
 
 **Type:** boolean
 

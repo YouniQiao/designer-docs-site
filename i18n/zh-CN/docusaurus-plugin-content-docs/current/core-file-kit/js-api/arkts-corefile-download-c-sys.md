@@ -278,11 +278,7 @@ download.start(uri, (err: BusinessError) => {
 stop(uri: string): Promise<void>
 ```
 
-异步方法停止云文件下载。使用Promise异步回调。
-
-> **说明：**
->
-> 调用stop接口，当前文件下载流程会终止，缓存文件会被删除，再次调用start接口会重新开始下载。
+异步方法停止云文件下载。使用Promise异步回调。 > **说明：** > > 调用stop接口，当前文件下载流程会终止，缓存文件会被删除，再次调用start接口会重新开始下载。
 
 **起始版本：** 10
 
@@ -334,11 +330,7 @@ download.stop(uri).then(() => {
 stop(uri: string, callback: AsyncCallback<void>): void
 ```
 
-异步方法停止云文件下载。使用callback异步回调。
-
-> **说明：**
->
-> 调用stop接口，当前文件下载流程会终止，缓存文件会被删除，再次调用start接口会重新开始下载。
+异步方法停止云文件下载。使用callback异步回调。 > **说明：** > > 调用stop接口，当前文件下载流程会终止，缓存文件会被删除，再次调用start接口会重新开始下载。
 
 **起始版本：** 10
 

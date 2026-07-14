@@ -12,10 +12,7 @@ import { process } from '@kit.ArkTS';
 function exit(code: number): void
 ```
 
-Terminates this process.
-
-Exercise caution when using this API. After this API is called, the application exits. If the input parameter is
-not 0, data loss or exceptions may occur.
+Terminates this process. Exercise caution when using this API. After this API is called, the application exits. If the input parameter is not 0, data loss or exceptions may occur.
 
 **Since:** 7
 

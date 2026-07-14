@@ -12,13 +12,7 @@
 avoidArea: window.AvoidArea
 ```
 
-标准悬浮窗内容的避让区域。
-
-**注意：**
-
-通过[setUIContext()](arkts-arkui-floatviewcontroller-i.md#setuicontext-1)或
-[setUIContextByName()](arkts-arkui-floatviewcontroller-i.md#setuicontextbyname-1)加载的页面中，位于避让区域的组件将不响应手势事件，添加需要手势响应事件
-的组件时，请注意避让这些区域。
+标准悬浮窗内容的避让区域。 **注意：** 通过[setUIContext()](arkts-arkui-floatviewcontroller-i.md#setuicontext-1)或 [setUIContextByName()](arkts-arkui-floatviewcontroller-i.md#setuicontextbyname-1)加载的页面中，位于避让区域的组件将不响应手势事件，添加需要手势响应事件 的组件时，请注意避让这些区域。
 
 **类型：** window.AvoidArea
 
@@ -34,8 +28,7 @@ avoidArea: window.AvoidArea
 displayId: number
 ```
 
-标准悬浮窗所在屏幕ID。
-取值限定为整数。
+标准悬浮窗所在屏幕ID。 取值限定为整数。
 
 **类型：** number
 
@@ -83,8 +76,7 @@ templateType: FloatViewTemplateType
 windowId: number
 ```
 
-标准悬浮窗窗口ID。
-取值限定为整数。
+标准悬浮窗窗口ID。 取值限定为整数。
 
 **类型：** number
 

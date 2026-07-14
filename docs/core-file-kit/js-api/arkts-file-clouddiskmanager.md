@@ -21,7 +21,7 @@ import { cloudDiskManager } from '@kit.CoreFileKit';
 
 | Name | Description |
 | --- | --- |
-| [SyncFolderAccessor](arkts-corefile-syncfolderaccessor-c-sys.md) | A sync root management class that enables the File Manager to access the sync root information registered by third-party cloud disks. |
+| [SyncFolderAccessor](arkts-corefile-syncfolderaccessor-c-sys.md) | A sync root management class that enables the File Manager to access the sync root information registered by third- party cloud disks. |
 <!--DelEnd-->
 
 <!--Del-->

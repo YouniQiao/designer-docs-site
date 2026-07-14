@@ -12,9 +12,7 @@ import { securityManager } from '@kit.MDMKit';
 function setPasswordPolicy(admin: Want, policy: PasswordPolicy): void
 ```
 
-Sets the device screen lock password policy. During screen lock password setting, if the current screen lock
-password does not meet the requirements, a security message will be displayed, prompting the user to reset the
-screen lock password.
+Sets the device screen lock password policy. During screen lock password setting, if the current screen lock password does not meet the requirements, a security message will be displayed, prompting the user to reset the screen lock password.
 
 **Since:** 12
 

@@ -12,9 +12,7 @@
 borderRadius?: Dimension | BorderRadiuses
 ```
 
-圆角类型，用于描述组件边框圆角半径。
-
-参数为Dimension类型时，不支持以Percentage形式设置。
+圆角类型，用于描述组件边框圆角半径。 参数为Dimension类型时，不支持以Percentage形式设置。
 
 **类型：** Dimension | BorderRadiuses
 
@@ -32,9 +30,7 @@ borderRadius?: Dimension | BorderRadiuses
 margin?: Dimension | Margin
 ```
 
-外边距类型，用于描述组件不同方向的外边距。
-
-参数为Dimension类型时，四个方向外边距同时生效。
+外边距类型，用于描述组件不同方向的外边距。 参数为Dimension类型时，四个方向外边距同时生效。
 
 **类型：** Dimension | Margin
 

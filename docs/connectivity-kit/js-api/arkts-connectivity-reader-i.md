@@ -70,9 +70,7 @@ function secureElementDemo() {
 getName(): string
 ```
 
-Returns the name of this reader.
-If this reader is a SIM reader, then its name must be "SIM[slot]".
-If the reader is an embedded SE reader, then its name must be "eSE[slot]".
+Returns the name of this reader. If this reader is a SIM reader, then its name must be "SIM[slot]". If the reader is an embedded SE reader, then its name must be "eSE[slot]".
 
 **Since:** 10
 
@@ -161,9 +159,7 @@ try {
 openSession(): Session
 ```
 
-Connects to a SE in this reader.
-This method prepares (initializes) the SE for communication before the session object is returned.
-There might be multiple sessions opened at the same time on the same reader.
+Connects to a SE in this reader. This method prepares (initializes) the SE for communication before the session object is returned. There might be multiple sessions opened at the same time on the same reader.
 
 **Since:** 10
 

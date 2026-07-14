@@ -12,9 +12,7 @@ import { wifiManager } from '@kit.ConnectivityKit';
 function removeCandidateConfig(networkId: number): Promise<void>
 ```
 
-Remove a specified candidate hotspot configuration, only the configuration which is added by ourself is allowed
-to be removed.
-The app must be in the foreground.
+Remove a specified candidate hotspot configuration, only the configuration which is added by ourself is allowed to be removed. The app must be in the foreground.
 
 **Since:** 12
 
@@ -71,9 +69,7 @@ The app must be in the foreground.
 function removeCandidateConfig(networkId: number, callback: AsyncCallback<void>): void
 ```
 
-Remove a specified candidate hotspot configuration, only the configuration which is added by ourself is allowed
-to be removed.
-The app must be in the foreground.
+Remove a specified candidate hotspot configuration, only the configuration which is added by ourself is allowed to be removed. The app must be in the foreground.
 
 **Since:** 12
 

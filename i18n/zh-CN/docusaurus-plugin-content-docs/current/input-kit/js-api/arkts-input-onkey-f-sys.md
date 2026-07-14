@@ -6,15 +6,7 @@
 function onKey(keyOptions: KeyOptions, callback:KeyCommandCallback): void
 ```
 
-订阅组合按键（按键命令模式），支持通过triggerType指定不同的触发模式。当满足条件的组合按键输入事件发生时，使用callback异步回调。
-
-与
-[inputConsumer.on('key')](arkts-input-on-f-sys.md#on-1)
-现有接口的区别：
-
-- 本接口的keyOptions支持triggerType参数，可选择按键按下触发、重复按下触发、重复按下或抬起均会触发等模式。
-- 本接口回调参数为KeyCommandCallback类型，同时接收KeyOptions和KeyEvent对象。
-- 本接口采用事件消费机制，可通过事件消费阻止按键事件向后传递。
+订阅组合按键（按键命令模式），支持通过triggerType指定不同的触发模式。当满足条件的组合按键输入事件发生时，使用callback异步回调。 与 [inputConsumer.on('key')](arkts-input-on-f-sys.md#on-1) 现有接口的区别： - 本接口的keyOptions支持triggerType参数，可选择按键按下触发、重复按下触发、重复按下或抬起均会触发等模式。 - 本接口回调参数为KeyCommandCallback类型，同时接收KeyOptions和KeyEvent对象。 - 本接口采用事件消费机制，可通过事件消费阻止按键事件向后传递。
 
 **起始版本：** 26.0.0
 
@@ -41,6 +33,7 @@ function onKey(keyOptions: KeyOptions, callback:KeyCommandCallback): void
 
 ```TypeScript
 import { inputConsumer } from '@kit.InputKit';
+import { BusinessError } from '@kit.BasicServicesKit';
 
 let leftCtrlKey = 2072;
 let cKey = 2049;
@@ -53,17 +46,19 @@ let keyOptions: inputConsumer.KeyOptions = {
 };
 let callback: inputConsumer.KeyCommandCallback = (keyOptions, keyEvents): void => {
   console.info(`keyOptions: ${keyOptions} keyEvents: ${keyEvents}`);
-}
+};
 try {
   inputConsumer.onKey(keyOptions, callback);
 } catch (error) {
-  console.error(`Subscribe failed, error: ${JSON.stringify(error, [`code`, `message`])}`);
+  const err: BusinessError = error as BusinessError;
+  console.error(`Failed to subscribe. Code: ${err.code}, message: ${err.message}`);
 }
 
 ```
 
 ```TypeScript
 import { inputConsumer } from '@kit.InputKit';
+import { BusinessError } from '@kit.BasicServicesKit';
 
 let keyOptions: inputConsumer.KeyOptions = {
   preKeys: [],
@@ -78,13 +73,15 @@ let callback: inputConsumer.KeyCommandCallback = (keyOptions, keyEvents): void =
 try {
   inputConsumer.onKey(keyOptions, callback);
 } catch (error) {
-  console.error(`Subscribe failed, error: ${JSON.stringify(error, [`code`, `message`])}`);
+  const err: BusinessError = error as BusinessError;
+  console.error(`Failed to subscribe. Code: ${err.code}, message: ${err.message}`);
 }
 
 ```
 
 ```TypeScript
 import { inputConsumer } from '@kit.InputKit';
+import { BusinessError } from '@kit.BasicServicesKit';
 
 let leftAltKey = 2045;
 let tabKey = 2049;
@@ -101,7 +98,8 @@ let callback: inputConsumer.KeyCommandCallback = (keyOptions, keyEvents): void =
 try {
   inputConsumer.onKey(keyOptions, callback);
 } catch (error) {
-  console.error(`Subscribe failed, error: ${JSON.stringify(error, [`code`, `message`])}`);
+  const err: BusinessError = error as BusinessError;
+  console.error(`Failed to subscribe. Code: ${err.code}, message: ${err.message}`);
 }
 
 ```

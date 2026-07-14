@@ -1,6 +1,6 @@
 # PhotoAssetChangeInfo
 
-Defines the photo asset info.
+Describes the information about a media asset.
 
 **Since:** 20
 
@@ -18,7 +18,7 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 albumChangeInfos?: AlbumChangeInfo[] | null
 ```
 
-The analysis album change info.
+Smart album change information.
 
 **Type:** AlbumChangeInfo[] | null
 
@@ -36,8 +36,7 @@ The analysis album change info.
 assetSourceType?: AssetSourceType
 ```
 
-The asset source type.
-Default value: 0.
+The asset source type. Default value: 0.
 
 **Type:** AssetSourceType
 
@@ -55,7 +54,7 @@ Default value: 0.
 dateAddedMs: number
 ```
 
-Time when the photo or video is added, in milliseconds.
+Unix timestamp when the media asset was created, in milliseconds.
 
 **Type:** number
 
@@ -71,7 +70,7 @@ Time when the photo or video is added, in milliseconds.
 dateDay: string
 ```
 
-Date of the photo or video.
+Date when the media asset was created.
 
 **Type:** string
 
@@ -87,8 +86,7 @@ Date of the photo or video.
 dateModifiedMs?: number
 ```
 
-The modified time of asset.
-<br>Unit:milliseconds.
+The modified time of asset. <br>Unit:milliseconds.
 
 **Type:** number
 
@@ -106,7 +104,7 @@ The modified time of asset.
 dateTakenMs: number
 ```
 
-Time when the photo or video is captured, in milliseconds.
+Unix timestamp when the media asset was captured, in milliseconds.
 
 **Type:** number
 
@@ -122,7 +120,7 @@ Time when the photo or video is captured, in milliseconds.
 dateTrashedMs: number
 ```
 
-Time when the photo or video is deleted, in milliseconds.
+Unix timestamp when the media asset was deleted, in milliseconds.
 
 **Type:** number
 
@@ -138,7 +136,7 @@ Time when the photo or video is deleted, in milliseconds.
 displayName?: string
 ```
 
-Display name of photo asset.
+Display name of the media asset.
 
 **Type:** string
 
@@ -154,7 +152,7 @@ Display name of photo asset.
 fileId: number
 ```
 
-Unique ID of the photo or video.
+ID of the media asset.
 
 **Type:** number
 
@@ -170,8 +168,7 @@ Unique ID of the photo or video.
 hiddenTime?: number
 ```
 
-The hidden time of asset.
-<br>Unit:milliseconds.
+The hidden time of asset. <br>Unit:milliseconds.
 
 **Type:** number
 
@@ -189,11 +186,11 @@ The hidden time of asset.
 isFavorite: boolean
 ```
 
-Whether the image or video is added to favorites.
+Whether the media asset is marked as a favorite. **true** if marked, **false** otherwise.
 
 **Type:** boolean
 
-**Since:** 20
+**Since:** 26.0.0
 
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -205,7 +202,7 @@ Whether the image or video is added to favorites.
 isHidden: boolean
 ```
 
-Whether the photo or video is hidden.
+Whether the media asset is hidden. **true** if hidden, **false** otherwise.
 
 **Type:** boolean
 
@@ -221,7 +218,7 @@ Whether the photo or video is hidden.
 position?: PositionType
 ```
 
-asset position.
+Position of the media asset.
 
 **Type:** PositionType
 
@@ -237,7 +234,7 @@ asset position.
 size?: number
 ```
 
-Size of photo asset.
+File size of the media asset, in bytes. The size of a moving photo includes the total size of the image and video.
 
 **Type:** number
 
@@ -253,7 +250,7 @@ Size of photo asset.
 strongAssociation: StrongAssociationType
 ```
 
-Cloud-based enhancement flag for photos and videos.
+Strong association type of the media asset.
 
 **Type:** StrongAssociationType
 
@@ -269,7 +266,7 @@ Cloud-based enhancement flag for photos and videos.
 thumbnailVisible: ThumbnailVisibility
 ```
 
-Whether the thumbnail is visible.
+Accessibility status of the thumbnail.
 
 **Type:** ThumbnailVisibility
 

@@ -12,10 +12,7 @@ import { window } from '@kit.ArkUI';
 function setGestureNavigationEnabled(enable: boolean, callback: AsyncCallback<void>): void
 ```
 
-Enables or disables gesture navigation. This API uses an asynchronous callback to return the result. For security
-purposes, the system does not interfere with the disabling and enabling of gesture navigation. If an application
-exits abnormally after it disables gesture navigation and wants to restore gesture navigation, it must implement
-automatic launch and call this API again to enable gesture navigation.
+Enables or disables gesture navigation. This API uses an asynchronous callback to return the result. For security purposes, the system does not interfere with the disabling and enabling of gesture navigation. If an application exits abnormally after it disables gesture navigation and wants to restore gesture navigation, it must implement automatic launch and call this API again to enable gesture navigation.
 
 **Since:** 10
 
@@ -66,10 +63,7 @@ try {
 function setGestureNavigationEnabled(enable: boolean): Promise<void>
 ```
 
-Enables or disables gesture navigation. This API uses a promise to return the result. For security purposes, the
-system does not interfere with the disabling and enabling of gesture navigation. If an application exits abnormally
-after it disables gesture navigation and wants to restore gesture navigation, it must implement automatic launch
-and call this API again to enable gesture navigation.
+Enables or disables gesture navigation. This API uses a promise to return the result. For security purposes, the system does not interfere with the disabling and enabling of gesture navigation. If an application exits abnormally after it disables gesture navigation and wants to restore gesture navigation, it must implement automatic launch and call this API again to enable gesture navigation.
 
 **Since:** 10
 

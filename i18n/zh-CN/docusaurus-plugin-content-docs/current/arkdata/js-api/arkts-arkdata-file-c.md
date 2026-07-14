@@ -1,0 +1,64 @@
+# File
+
+File类型数据，是[UnifiedRecord](arkts-arkdata-unifiedrecord-c.md)的子类，也是文件类型数据的基类，用于描述文件类型数据，推荐开发者优先使用File的子类描述数据，如 [Image](arkts-arkdata-image-c.md)、[Video](arkts-arkdata-video-c.md)、 [Folder](arkts-arkdata-folder-c.md)等具体子类。
+
+**继承/实现关系：** File extends [UnifiedRecord](arkts-arkdata-unifiedrecord-c.md)
+
+**起始版本：** 10
+
+**系统能力：** SystemCapability.DistributedDataManager.UDMF.Core
+
+## details
+
+```TypeScript
+details?: Record<string, string>
+```
+
+是一个字典类型对象，key和value都是string类型，用于描述文件相关信息。例如，可生成一个details内容为 { "name":"文件名", "type":"文件类型" } 的数据对象，用于描述一个文件。非必填字段，默认值为空字典对象。
+
+**类型：** Record<string, string>
+
+**起始版本：** 10
+
+**模型约束：** 此接口仅可在Stage模型下使用。
+
+**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+
+**系统能力：** SystemCapability.DistributedDataManager.UDMF.Core
+
+## uri
+
+```TypeScript
+set uri(value: string)
+```
+
+表示统一文件的详细信息。
+
+**类型：** string
+
+**起始版本：** 10
+
+**模型约束：** 此接口仅可在Stage模型下使用。
+
+**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+
+**系统能力：** SystemCapability.DistributedDataManager.UDMF.Core
+
+## uriAuthorizationPolicies
+
+```TypeScript
+set uriAuthorizationPolicies(value: Array<UriPermission> | undefined)
+```
+
+用于拖拽场景的URI授权策略。默认值为READ+WRITE+PERSIST（读+写+持久化授权），只针对单个record使用，优先级最高，具体策略见 [UriPermission](arkts-arkdata-uripermission-e.md)。
+
+**类型：** Array<UriPermission>
+
+**起始版本：** 26.0.0
+
+**模型约束：** 此接口仅可在Stage模型下使用。
+
+**元服务API：** 从API版本26.0.0开始，该接口支持在元服务API中使用。
+
+**系统能力：** SystemCapability.DistributedDataManager.UDMF.Core
+

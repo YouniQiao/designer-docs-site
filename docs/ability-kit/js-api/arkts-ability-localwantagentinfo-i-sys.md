@@ -1,9 +1,6 @@
 # LocalWantAgentInfo (System API)
 
-Defines the information required for triggering a local WantAgent object. The information can be used as an input
-parameter in
-[createLocalWantAgent](../../../../reference/apis-ability-kit/js-apis-app-ability-wantAgent-sys.md#wantagentcreatelocalwantagent20)
-to obtain a local WantAgent object.
+Defines the information required for triggering a local WantAgent object. The information can be used as an input parameter in [createLocalWantAgent](../../../../reference/apis-ability-kit/js-apis-app-ability-wantAgent-sys.md#wantagentcreatelocalwantagent20) to obtain a local WantAgent object.
 
 **Since:** 20
 
@@ -53,8 +50,7 @@ Custom request code, which is used to identify the operation to execute.
 wants: Array<Want>
 ```
 
-Array of all Want objects. Currently, only one Want object is supported. If multiple values are passed in, only the
-first member in the array is used.
+Array of all Want objects. Currently, only one Want object is supported. If multiple values are passed in, only the first member in the array is used.
 
 **Type:** Array<Want>
 

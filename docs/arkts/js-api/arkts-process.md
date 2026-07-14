@@ -18,11 +18,11 @@ import { process } from '@kit.ArkTS';
 
 | Name | Description |
 | --- | --- |
-| [abort](arkts-arkts-abort-f.md#abort-1) | Aborts a process and generates a core file. This method will cause a process to exit immediately. Exercisecaution when using this method. |
-| [exit](arkts-arkts-exit-f.md#exit-1) | Terminates this process.Exercise caution when using this API. After this API is called, the application exits. If the input parameter isnot 0, data loss or exceptions may occur. |
+| [abort](arkts-arkts-abort-f.md#abort-1) | Aborts a process and generates a core file. This method will cause a process to exit immediately. Exercise caution when using this method. |
+| [exit](arkts-arkts-exit-f.md#exit-1) | Terminates this process. Exercise caution when using this API. After this API is called, the application exits. If the input parameter is not 0, data loss or exceptions may occur. |
 | [getEnvironmentVar](arkts-arkts-getenvironmentvar-f.md#getenvironmentvar-1) | Obtains the value of an environment variable. |
 | [getPastCpuTime](arkts-arkts-getpastcputime-f.md#getpastcputime-1) | Obtains the CPU time (in milliseconds) from the time the process starts to the current time. |
-| [getStartRealtime](arkts-arkts-getstartrealtime-f.md#getstartrealtime-1) | Obtains the duration (excluding the system sleep time), in milliseconds, from the time the system starts to thetime the process starts. |
+| [getStartRealtime](arkts-arkts-getstartrealtime-f.md#getstartrealtime-1) | Obtains the duration (excluding the system sleep time), in milliseconds, from the time the system starts to the time the process starts. |
 | [getSystemConfig](arkts-arkts-getsystemconfig-f.md#getsystemconfig-1) | Obtains the system configuration. |
 | [getThreadPriority](arkts-arkts-getthreadpriority-f.md#getthreadpriority-1) | Obtains the thread priority based on the specified TID. |
 | [getUidForName](arkts-arkts-getuidforname-f.md#getuidforname-1) | Obtains the UID of a user from the user database of the system based on the specified user name. |
@@ -48,7 +48,7 @@ import { process } from '@kit.ArkTS';
 
 | Name | Description |
 | --- | --- |
-| [ProcessManager](arkts-arkts-processmanager-c.md) | Provides APIs for throwing exceptions during the addition of a process.Construct a **ProcessManager** object. |
+| [ProcessManager](arkts-arkts-processmanager-c.md) | Provides APIs for throwing exceptions during the addition of a process. Construct a **ProcessManager** object. |
 
 <!--Del-->
 ### Interfaces（系统接口）

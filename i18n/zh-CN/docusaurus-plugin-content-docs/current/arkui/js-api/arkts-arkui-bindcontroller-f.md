@@ -6,8 +6,7 @@
 export function bindController(node: FrameNode, controller: TextController, nodeType: 'Text'): void
 ```
 
-将文本控制器[TextController](../arkts-components/arkts-arkui-textcontroller-c.md)绑定到[Text](arkts-arkui-text-t.md)节点。若该节点非ArkTS语言创建，则需要设置是否支持跨语言访问，如果不支持跨语言
-访问，则抛出异常。该接口不支持声明式方式创建的节点。
+将文本控制器[TextController](../arkts-components/arkts-arkui-textcontroller-c.md)绑定到[Text](arkts-arkui-text-t.md)节点。若该节点非ArkTS语言创建，则需要设置是否支持跨语言访问，如果不支持跨语言 访问，则抛出异常。该接口不支持声明式方式创建的节点。
 
 **起始版本：** 20
 
@@ -39,8 +38,7 @@ export function bindController(node: FrameNode, controller: TextController, node
 export function bindController(node: FrameNode, controller: SwiperController, nodeType: 'Swiper'): void
 ```
 
-将控制器[SwiperController](../arkts-components/arkts-arkui-swipercontroller-c.md)绑定到[Swiper](arkts-arkui-swiper-t.md)节点。若该节点非ArkTS语言创建，则需要设置是否支持跨语言访问，如果
-不支持跨语言访问，则抛出异常。该接口不支持声明式方式创建的节点。
+将控制器[SwiperController](../arkts-components/arkts-arkui-swipercontroller-c.md)绑定到[Swiper](arkts-arkui-swiper-t.md)节点。若该节点非ArkTS语言创建，则需要设置是否支持跨语言访问，如果 不支持跨语言访问，则抛出异常。该接口不支持声明式方式创建的节点。
 
 **起始版本：** 20
 
@@ -72,8 +70,7 @@ export function bindController(node: FrameNode, controller: SwiperController, no
 function bindController(node: FrameNode, controller: Scroller, nodeType: 'Scroll'): void
 ```
 
-将滚动控制器[Scroller](../arkts-components/arkts-arkui-scroller-c.md)绑定到[Scroll](arkts-arkui-scroll-t.md)节点。若该节点非ArkTS语言创建，则需要设置是否支持跨语言访问，如果不支持跨语言访问，则抛出异
-常。从API version 26.0.0开始，该接口支持声明式方式创建的节点，API version 26.0.0以下版本不支持。
+将滚动控制器[Scroller](../arkts-components/arkts-arkui-scroller-c.md)绑定到[Scroll](arkts-arkui-scroll-t.md)节点。若该节点非ArkTS语言创建，则需要设置是否支持跨语言访问，如果不支持跨语言访问，则抛出异 常。从API version 26.0.0开始，该接口支持声明式方式创建的节点，API version 26.0.0以下版本不支持。
 
 **起始版本：** 15
 
@@ -105,8 +102,7 @@ function bindController(node: FrameNode, controller: Scroller, nodeType: 'Scroll
 export function bindController(node: FrameNode, controller: Scroller, nodeType: 'List'): void
 ```
 
-将滚动控制器[Scroller](../arkts-components/arkts-arkui-scroller-c.md)绑定到[List](arkts-arkui-list-t.md)节点。若该节点非ArkTS语言创建，则需要设置是否支持跨语言访问，如果不支持跨语言访问，则抛出异常。从
-API version 26.0.0开始，该接口支持声明式方式创建的节点，API version 26.0.0以下版本不支持。
+将滚动控制器[Scroller](../arkts-components/arkts-arkui-scroller-c.md)绑定到[List](arkts-arkui-list-t.md)节点。若该节点非ArkTS语言创建，则需要设置是否支持跨语言访问，如果不支持跨语言访问，则抛出异常。从 API version 26.0.0开始，该接口支持声明式方式创建的节点，API version 26.0.0以下版本不支持。
 
 **起始版本：** 20
 
@@ -138,8 +134,7 @@ API version 26.0.0开始，该接口支持声明式方式创建的节点，API v
 export function bindController(node: FrameNode, controller: TextInputController, nodeType: 'TextInput'): void
 ```
 
-将输入框控制器[TextInputController](../arkts-components/arkts-arkui-textinputcontroller-c.md)绑定到[TextInput](arkts-arkui-textinput-t.md)节点。若该节点非ArkTS语言创建，则需
-要设置是否支持跨语言访问，如果不支持跨语言访问，则抛出异常。该接口从API版本26.0.0开始支持声明式方式创建的节点。
+将输入框控制器[TextInputController](../arkts-components/arkts-arkui-textinputcontroller-c.md)绑定到[TextInput](arkts-arkui-textinput-t.md)节点。若该节点非ArkTS语言创建，则需 要设置是否支持跨语言访问，如果不支持跨语言访问，则抛出异常。该接口从API版本26.0.0开始支持声明式方式创建的节点。
 
 **起始版本：** 20
 
@@ -171,8 +166,7 @@ export function bindController(node: FrameNode, controller: TextInputController,
 export function bindController(node: FrameNode, controller: Scroller, nodeType: 'WaterFlow'): void
 ```
 
-将滚动控制器[Scroller](../arkts-components/arkts-arkui-scroller-c.md)绑定到[WaterFlow](arkts-arkui-waterflow-t.md)节点。若该节点非ArkTS语言创建，则需要设置是否支持跨语言访问，如果不支持跨语言访
-问，则抛出异常。从API version 26.0.0开始，该接口支持声明式方式创建的节点，API version 26.0.0以下版本不支持。
+将滚动控制器[Scroller](../arkts-components/arkts-arkui-scroller-c.md)绑定到[WaterFlow](arkts-arkui-waterflow-t.md)节点。若该节点非ArkTS语言创建，则需要设置是否支持跨语言访问，如果不支持跨语言访 问，则抛出异常。从API version 26.0.0开始，该接口支持声明式方式创建的节点，API version 26.0.0以下版本不支持。
 
 **起始版本：** 20
 
@@ -204,8 +198,7 @@ export function bindController(node: FrameNode, controller: Scroller, nodeType: 
 export function bindController(node: FrameNode, controller: TextAreaController, nodeType: 'TextArea'): void
 ```
 
-将输入框控制器[TextAreaController](../arkts-components/arkts-arkui-textareacontroller-c.md)绑定到[TextArea](arkts-arkui-textarea-t.md)节点。若该节点非ArkTS语言创建，则需要设置是
-否支持跨语言访问，如果不支持跨语言访问，则抛出异常。该接口从API版本26.0.0开始支持声明式方式创建的节点。
+将输入框控制器[TextAreaController](../arkts-components/arkts-arkui-textareacontroller-c.md)绑定到[TextArea](arkts-arkui-textarea-t.md)节点。若该节点非ArkTS语言创建，则需要设置是 否支持跨语言访问，如果不支持跨语言访问，则抛出异常。该接口从API版本26.0.0开始支持声明式方式创建的节点。
 
 **起始版本：** 20
 
@@ -237,8 +230,7 @@ export function bindController(node: FrameNode, controller: TextAreaController, 
 export function bindController(node: FrameNode, controller: Scroller, nodeType: 'Grid'): void
 ```
 
-将滚动控制器[Scroller](../arkts-components/arkts-arkui-scroller-c.md)绑定到[Grid](arkts-arkui-grid-t.md)节点。若该节点非ArkTS语言创建，则需要设置是否支持跨语言访问，如果不支持跨语言访问，则抛出异常。从
-API version 26.0.0开始，该接口支持声明式方式创建的节点，API version 26.0.0以下版本不支持。
+将滚动控制器[Scroller](../arkts-components/arkts-arkui-scroller-c.md)绑定到[Grid](arkts-arkui-grid-t.md)节点。若该节点非ArkTS语言创建，则需要设置是否支持跨语言访问，如果不支持跨语言访问，则抛出异常。从 API version 26.0.0开始，该接口支持声明式方式创建的节点，API version 26.0.0以下版本不支持。
 
 **起始版本：** 20
 

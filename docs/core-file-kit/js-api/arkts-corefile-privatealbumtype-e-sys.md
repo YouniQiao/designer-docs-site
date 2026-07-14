@@ -1,6 +1,6 @@
 # PrivateAlbumType (System API)
 
-Private album type
+Enumerates the system album types. This API will be deprecated. Use [AlbumType](arkts-corefile-albumtype-e-sys.md) and [AlbumSubType](arkts-corefile-albumsubtype-e-sys.md) instead.
 
 **Since:** 9
 
@@ -18,13 +18,13 @@ Private album type
 TYPE_FAVORITE
 ```
 
-System Private Album: Favorite album
+Favorites.
 
 **Since:** 9
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** FAVORITE
+**Substitutes:** [FAVORITE](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-albumsubtype-e.md#favorite)
 
 **System capability:** SystemCapability.FileManagement.UserFileManager.Core
 
@@ -36,13 +36,13 @@ System Private Album: Favorite album
 TYPE_TRASH
 ```
 
-System Private Album: Trash album
+Trash.
 
 **Since:** 9
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** TRASH
+**Substitutes:** [TRASH](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-albumsubtype-e-sys.md#trash)
 
 **System capability:** SystemCapability.FileManagement.UserFileManager.Core
 

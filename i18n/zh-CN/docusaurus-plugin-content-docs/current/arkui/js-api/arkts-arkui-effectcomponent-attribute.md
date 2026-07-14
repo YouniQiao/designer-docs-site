@@ -1,8 +1,6 @@
 # EffectComponent属性/事件
 
-支持通用属性，目前仅支持对backgroundBlurStyle属性做绘制合并优化。
-
-不支持通用事件。
+支持通用属性，目前仅支持对backgroundBlurStyle属性做绘制合并优化。 不支持通用事件。
 
 **继承/实现关系：** EffectComponentAttribute extends [CommonMethod<EffectComponentAttribute>](CommonMethod<EffectComponentAttribute>)
 

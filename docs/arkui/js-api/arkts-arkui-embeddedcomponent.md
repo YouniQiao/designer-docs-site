@@ -1,8 +1,6 @@
 # EmbeddedComponent
 
-Provide an interface for the EmbeddedComponent, which is used
-<br/>to render UI asynchronously
-
+Provide an interface for the EmbeddedComponent, which is used <br/>to render UI asynchronously
 
 ## EmbeddedComponent
 
@@ -12,8 +10,7 @@ EmbeddedComponent(
   )
 ```
 
-Construct the EmbeddedComponent.<br/>
-Called when the EmbeddedComponent is used.
+Construct the EmbeddedComponent.<br/> Called when the EmbeddedComponent is used.
 
 **Since:** 12
 
@@ -39,8 +36,7 @@ EmbeddedComponent(
   )
 ```
 
-Construct the EmbeddedComponent.<br/>
-Called when the EmbeddedComponent is used.
+Construct the EmbeddedComponent.<br/> Called when the EmbeddedComponent is used.
 
 **Since:** 26.0.0
 

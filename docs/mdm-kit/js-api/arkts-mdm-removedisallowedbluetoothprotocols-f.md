@@ -12,9 +12,7 @@ import { bluetoothManager } from '@kit.MDMKit';
 function removeDisallowedBluetoothProtocols(admin: Want, accountId: number, protocols: Array<Protocol>): void
 ```
 
-Removes disallowed Bluetooth protocols. After removing some protocols, the user is still restricted by the
-remaining disallowed protocols; after removing all protocols, the user can use any protocol; removing non-existent
-protocols results in a successful API call but no actual change.
+Removes disallowed Bluetooth protocols. After removing some protocols, the user is still restricted by the remaining disallowed protocols; after removing all protocols, the user can use any protocol; removing non-existent protocols results in a successful API call but no actual change.
 
 **Since:** 20
 

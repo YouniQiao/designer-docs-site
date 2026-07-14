@@ -1,11 +1,6 @@
 # Int32Array
 
-一种线性数据结构，底层基于[ArkTS ArrayBuffer](arkts-collections.md)实现。
-
-> **说明**
->
-> - 此模块仅支持在ArkTS文件（文件后缀为.ets）中导入使用。
-> **装饰器**：\@Sendable
+一种线性数据结构，底层基于[ArkTS ArrayBuffer](arkts-collections.md)实现。 > **说明** > > - 此模块仅支持在ArkTS文件（文件后缀为.ets）中导入使用。 > **装饰器**：\@Sendable
 
 **起始版本：** 12
 
@@ -862,8 +857,7 @@ reduce<U>(callbackFn: TypedArrayReduceCallback<U, number, Int32Array>, initialVa
 reduceRight<U = number>(callbackFn: TypedArrayReduceCallback<U, number, Int32Array>, initialValue: U): U
 ```
 
-反向遍历ArkTS Int32Array，对ArkTS Int32Array中的每个元素执行归约函数，且接收一个初始值作为归约函数首次调用的参数，
-并返回最终的归约结果。
+反向遍历ArkTS Int32Array，对ArkTS Int32Array中的每个元素执行归约函数，且接收一个初始值作为归约函数首次调用的参数， 并返回最终的归约结果。
 
 **起始版本：** 18
 
@@ -1119,8 +1113,7 @@ subarray(begin?: number, end?: number): Int32Array
 toLocaleString(): string
 ```
 
-根据当前应用的系统地区获取符合当前文化习惯的数字表示形式，让每个元素调用自己的**toLocaleString**方法把数字转换为字符串，
-然后使用逗号（,）将每个元素的结果字符串按照顺序拼接成字符串。
+根据当前应用的系统地区获取符合当前文化习惯的数字表示形式，让每个元素调用自己的**toLocaleString**方法把数字转换为字符串， 然后使用逗号（,）将每个元素的结果字符串按照顺序拼接成字符串。
 
 **起始版本：** 18
 

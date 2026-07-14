@@ -14,9 +14,7 @@ In addition to the [universal attributes](arkts-arkui-commonmethod-c.md), the fo
 radius(value: Length | Array<any>)
 ```
 
-Sets the radius of the rounded corner. The value must be greater than or equal to 0. This attribute can be
-dynamically set using [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1). Invalid values are treated as the
-default value.
+Sets the radius of the rounded corner. The value must be greater than or equal to 0. This attribute can be dynamically set using [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1). Invalid values are treated as the default value.
 
 **Since:** 7
 
@@ -38,9 +36,7 @@ default value.
 radiusHeight(value: Length)
 ```
 
-Sets the height of the rounded corner. The width and height are the same when only the height is set. This
-attribute can be dynamically set using [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1). Invalid values
-are treated as the default value.
+Sets the height of the rounded corner. The width and height are the same when only the height is set. This attribute can be dynamically set using [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1). Invalid values are treated as the default value.
 
 **Since:** 7
 
@@ -62,10 +58,7 @@ are treated as the default value.
 radiusWidth(value: Length)
 ```
 
-Sets the width of the rounded corner. The width and height are the same when only the width is set. This attribute
-can be dynamically set using
-[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)
-. Invalid values are treated as the default value.
+Sets the width of the rounded corner. The width and height are the same when only the width is set. This attribute can be dynamically set using [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) . Invalid values are treated as the default value.
 
 **Since:** 7
 

@@ -67,8 +67,7 @@ class MyCloudDB implements cloudExtension.CloudDB {
 generateId(count: number): Promise<Result<Array<string>>>
 ```
 
-Generates IDs for the data records inserted to the cloud database.
-The IDs are unique. This API uses a promise to return the result.
+Generates IDs for the data records inserted to the cloud database. The IDs are unique. This API uses a promise to return the result.
 
 **Since:** 11
 
@@ -136,8 +135,8 @@ Extends the lock period of the database. This API uses a promise to return the r
 **Example**
 
 ```TypeScript
-let test_lockId: number = 1;
-let test_time: number = 10;
+let testLockId: number = 1;
+let testTime: number = 10;
 class MyCloudDB implements cloudExtension.CloudDB {
   // ...
   async heartbeat(lockId: number): Promise<cloudExtension.Result<cloudExtension.LockInfo>> {
@@ -148,8 +147,8 @@ class MyCloudDB implements cloudExtension.CloudDB {
       code: cloudExtension.ErrorCode.SUCCESS,
       description: 'heartbeat succeeded',
       value: {
-        interval: test_time,
-        lockId: test_lockId
+        interval: testTime,
+        lockId: testLockId
       }
     };
   }
@@ -230,8 +229,8 @@ Locks this cloud database. This API uses a promise to return the result.
 **Example**
 
 ```TypeScript
-let test_time: number = 10;
-let test_lockId: number = 1;
+let testTime: number = 10;
+let testLockId: number = 1;
 class MyCloudDB implements cloudExtension.CloudDB {
   // ...
   async lock(): Promise<cloudExtension.Result<cloudExtension.LockInfo>> {
@@ -242,8 +241,8 @@ class MyCloudDB implements cloudExtension.CloudDB {
       code: cloudExtension.ErrorCode.SUCCESS,
       description: 'lock succeeded',
       value: {
-        interval: test_time,
-        lockId: test_lockId
+        interval: testTime,
+        lockId: testLockId
       }
     };
   }

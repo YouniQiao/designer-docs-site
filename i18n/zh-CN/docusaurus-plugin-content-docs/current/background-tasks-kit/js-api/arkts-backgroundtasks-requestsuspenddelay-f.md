@@ -6,11 +6,7 @@
 function requestSuspendDelay(reason: string, callback: Callback<void>): DelaySuspendInfo
 ```
 
-申请短时任务。
-
-> **说明：**
->
-> 短时任务的申请和使用过程中的约束与限制请参考[指南](../../../../task-management/transient-task.md#约束与限制)。
+申请短时任务。 > **说明：** > > 短时任务的申请和使用过程中的约束与限制请参考[指南](../../../../task-management/transient-task.md#约束与限制)。
 
 **起始版本：** 9
 
@@ -47,16 +43,16 @@ function requestSuspendDelay(reason: string, callback: Callback<void>): DelaySus
 import { BusinessError } from '@kit.BasicServicesKit';
 import { backgroundTaskManager } from '@kit.BackgroundTasksKit';
 
-let myReason = 'test requestSuspendDelay';
+let delayReason = 'test requestSuspendDelay';
 try {
-  let delayInfo = backgroundTaskManager.requestSuspendDelay(myReason, () => {
+  let delayInfo = backgroundTaskManager.requestSuspendDelay(delayReason, () => {
   // 回调函数。应用申请的短时任务即将超时，通过此函数回调应用，执行一些清理和标注工作，并取消短时任务
   // 此处回调与应用的业务功能不耦合，短时任务申请成功后，正常执行应用本身的业务
     console.info('Request suspension delay will time out.');
   })
-  let id = delayInfo.requestId;
+  let requestId = delayInfo.requestId;
   let time = delayInfo.actualDelayTime;
-  console.info('The requestId is: ' + id);
+  console.info('The requestId is: ' + requestId);
   console.info('The actualDelayTime is: ' + time);
 } catch (error) {
   console.error(`requestSuspendDelay failed. code is ${(error as BusinessError).code} message is ${(error as BusinessError).message}`);

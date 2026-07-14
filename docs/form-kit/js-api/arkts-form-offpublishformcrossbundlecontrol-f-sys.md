@@ -12,8 +12,7 @@ import { formProvider } from '@kit.FormKit';
 function offPublishFormCrossBundleControl(callback?: formInfo.PublishFormCrossBundleControlCallback): void
 ```
 
-Unsubscribes from controls on cross-bundle widget addition to the home screen. This API uses an asynchronous
-callback to return the result.
+Unsubscribes from controls on cross-bundle widget addition to the home screen. This API uses an asynchronous callback to return the result.
 
 **Since:** 23
 

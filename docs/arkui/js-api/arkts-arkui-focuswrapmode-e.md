@@ -28,10 +28,7 @@ Cross-axis directional navigation does not wrap focus.
 WRAP_WITH_ARROW = 1
 ```
 
-Cross-axis directional navigation wraps focus.
-
-In irregular grid layouts, when moving focus along the cross axis, the system prioritizes focusable items within
-the same row.
+Cross-axis directional navigation wraps focus. In irregular grid layouts, when moving focus along the cross axis, the system prioritizes focusable items within the same row.
 
 **Since:** 20
 

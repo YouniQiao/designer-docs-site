@@ -12,8 +12,7 @@ import { distributedMissionManager } from '@kit.AbilityKit';
 function continueMission(parameter: ContinueDeviceInfo, options: ContinueCallback, callback: AsyncCallback<void>): void
 ```
 
-Continues a mission on a remote device, with the mission ID specified. This API uses an asynchronous callback to
-return the result.
+Continues a mission on a remote device, with the mission ID specified. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -87,8 +86,7 @@ try {
 function continueMission(parameter: ContinueDeviceInfo, options: ContinueCallback): Promise<void>
 ```
 
-Continues a mission on a remote device, with the mission ID specified. This API uses a promise to return the
-result.
+Continues a mission on a remote device, with the mission ID specified. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -164,8 +162,7 @@ try {
 function continueMission(parameter: ContinueMissionInfo, callback: AsyncCallback<void>): void
 ```
 
-Continues a mission on a remote device, with the bundle name specified. This API uses an asynchronous callback to
-return the result.
+Continues a mission on a remote device, with the bundle name specified. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -232,8 +229,7 @@ try {
 function continueMission(parameter: ContinueMissionInfo): Promise<void>
 ```
 
-Continues a mission on a remote device, with the bundle name specified. This API uses a promise to return the
-result.
+Continues a mission on a remote device, with the bundle name specified. This API uses a promise to return the result.
 
 **Since:** 10
 

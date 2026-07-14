@@ -6,13 +6,7 @@
 function run(startupTasks: Array<string>, config?: StartupConfig): Promise<void>
 ```
 
-执行启动框架启动任务或加载so文件。
-
-> **说明：**
->
-> 本接口不支持执行feature类型HAP中的启动任务，如需要使用相关能力请调用
-> [startupManager.run](arkts-ability-run-f.md#run-2)
-> 接口。
+执行启动框架启动任务或加载so文件。 > **说明：** > > 本接口不支持执行feature类型HAP中的启动任务，如需要使用相关能力请调用 > [startupManager.run](arkts-ability-run-f.md#run-2) > 接口。
 
 **起始版本：** 12
 
@@ -81,8 +75,7 @@ export default class EntryAbility extends UIAbility {
 function run(startupTasks: Array<string>, context: common.AbilityStageContext, config: StartupConfig): Promise<void>
 ```
 
-执行启动框架启动任务或加载so文件。支持指定[AbilityStageContext](arkts-ability-abilitystagecontext-c.md)用于启动任务的加载。使
-用Promise异步回调。
+执行启动框架启动任务或加载so文件。支持指定[AbilityStageContext](arkts-ability-abilitystagecontext-c.md)用于启动任务的加载。使 用Promise异步回调。
 
 **起始版本：** 20
 

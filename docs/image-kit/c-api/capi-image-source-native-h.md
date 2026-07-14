@@ -190,7 +190,7 @@ Creates the pointer to an OH_ImageSource_Info object.
 
 | Type | Description |
 | -- | -- |
-| [Image_ErrorCode](capi-image-common-h.md#image_errorcode) | Returns [Image_ErrorCode](capi-image-common-h.md#image_errorcode) |
+| [Image_ErrorCode](capi-image-common-h.md#image_errorcode) | <ul><br>         <li>[IMAGE_SUCCESS](capi-image-common-h.md#image_errorcode) if the execution is successful.</li><br>         <li>[IMAGE_BAD_PARAMETER](capi-image-common-h.md#image_errorcode) info is nullptr.</li><br>         </ul> |
 
 ### OH_ImageSourceInfo_GetWidth()
 
@@ -338,7 +338,7 @@ Creates the pointer to an OH_DecodingOptions object.
 
 | Type | Description |
 | -- | -- |
-| [Image_ErrorCode](capi-image-common-h.md#image_errorcode) | Returns [Image_ErrorCode](capi-image-common-h.md#image_errorcode) |
+| [Image_ErrorCode](capi-image-common-h.md#image_errorcode) | <ul><br>         <li>[IMAGE_SUCCESS](capi-image-common-h.md#image_errorcode) if the execution is successful.</li><br>         <li>[IMAGE_BAD_PARAMETER](capi-image-common-h.md#image_errorcode) options is nullptr.</li><br>         </ul> |
 
 ### OH_DecodingOptions_GetPixelFormat()
 
@@ -1040,7 +1040,7 @@ Creates the pointer to an OH_PictureNative object based on decoding options.
 | -- | -- |
 | [OH_ImageSourceNative](capi-image-nativemodule-oh-imagesourcenative.md) *source | Pointer to an OH_ImageSourceNative object. |
 | [OH_DecodingOptionsForPicture](capi-image-nativemodule-oh-decodingoptionsforpicture.md) *options | Pointer to the decoding options. |
-| [OH_PictureNative](capi-image-nativemodule-oh-picturenative.md) **picture | Double pointer to the OH_PictureNative object created at the C++ local layer. |
+| OH_PictureNative **picture | Double pointer to the OH_PictureNative object created at the C++ local layer. |
 
 **Returns**:
 
@@ -1066,7 +1066,7 @@ Creates the pointer to an OH_PictureNative object at the specified index.
 | -- | -- |
 | [OH_ImageSourceNative](capi-image-nativemodule-oh-imagesourcenative.md) *source | Pointer to an OH_ImageSourceNative object. |
 | uint32_t index | Index of the image. |
-| [OH_PictureNative](capi-image-nativemodule-oh-picturenative.md) **picture | Double pointer to the OH_PictureNative object created at the C++ local layer. |
+| OH_PictureNative **picture | Double pointer to the OH_PictureNative object created at the C++ local layer. |
 
 **Returns**:
 
@@ -1294,7 +1294,7 @@ Obtains desired auxiliary pictures in the decoding options (auxiliary pictures c
 | Parameter | Description |
 | -- | -- |
 | [OH_DecodingOptionsForPicture](capi-image-nativemodule-oh-decodingoptionsforpicture.md) *options | Pointer to an OH_DecodingOptionsForPicture object. |
-| [Image_AuxiliaryPictureType](capi-picture-native-h.md#image_auxiliarypicturetype) **desiredAuxiliaryPictures | Double pointer to the desired auxiliary pictures. |
+| Image_AuxiliaryPictureType **desiredAuxiliaryPictures | Double pointer to the desired auxiliary pictures. |
 | size_t *length | Length of the desired auxiliary pictures. |
 
 **Returns**:
@@ -1320,7 +1320,7 @@ Sets desired auxiliary pictures in the decoding options.
 | Parameter | Description |
 | -- | -- |
 | [OH_DecodingOptionsForPicture](capi-image-nativemodule-oh-decodingoptionsforpicture.md) *options | Pointer to an OH_DecodingOptionsForPicture object. |
-| [Image_AuxiliaryPictureType](capi-picture-native-h.md#image_auxiliarypicturetype) *desiredAuxiliaryPictures | Pointer to the desired auxiliary pictures. |
+| Image_AuxiliaryPictureType *desiredAuxiliaryPictures | Pointer to the desired auxiliary pictures. |
 | size_t length | Length of the desired auxiliary pictures. |
 
 **Returns**:

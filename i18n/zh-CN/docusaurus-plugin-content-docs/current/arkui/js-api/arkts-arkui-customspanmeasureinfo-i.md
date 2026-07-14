@@ -12,9 +12,7 @@
 fontSize: number
 ```
 
-设置文本字体大小。
-
-单位：[fp](../../../../reference/apis-arkui/arkui-ts/ts-pixel-units.md#基本像素单位)
+设置文本字体大小。 单位：[fp](../../../../reference/apis-arkui/arkui-ts/ts-pixel-units.md#基本像素单位)
 
 **类型：** number
 
@@ -32,11 +30,7 @@ fontSize: number
 layoutPolicy?: LayoutPolicy
 ```
 
-自定义span所在父组件的宽度布局策略。
-
-**说明：**
-
-当值为null或undefined时，表示父组件没有设置宽度布局策略。
+自定义span所在父组件的宽度布局策略。 **说明：** 当值为null或undefined时，表示父组件没有设置宽度布局策略。
 
 **类型：** LayoutPolicy
 
@@ -54,9 +48,7 @@ layoutPolicy?: LayoutPolicy
 maxWidth?: number
 ```
 
-自定义span所在父组件的内容区的最大宽度约束。
-
-单位：[px](../../../../reference/apis-arkui/arkui-ts/ts-pixel-units.md#基本像素单位)
+自定义span所在父组件的内容区的最大宽度约束。 单位：[px](../../../../reference/apis-arkui/arkui-ts/ts-pixel-units.md#基本像素单位)
 
 **类型：** number
 

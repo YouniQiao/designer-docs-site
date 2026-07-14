@@ -32,8 +32,7 @@ Text on the button.
 titleResource?: string
 ```
 
-Resource ID of the title. This parameter is used to read the title information after the system language is
-switched.
+Resource ID of the title. This parameter is used to read the title information after the system language is switched.
 
 **Type:** string
 

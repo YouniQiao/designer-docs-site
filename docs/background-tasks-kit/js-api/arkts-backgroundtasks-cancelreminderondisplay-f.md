@@ -12,9 +12,7 @@ import { reminderAgentManager } from '@kit.BackgroundTasksKit';
 function cancelReminderOnDisplay(reminderId: number): Promise<void>
 ```
 
-Cancels the notification card displayed in the notification center with the agent reminder data retained. For
-example, for a daily repeating reminder, calling this API removes the card from the notification center, but the
-reminder will be triggered again the next day according to its schedule.
+Cancels the notification card displayed in the notification center with the agent reminder data retained. For example, for a daily repeating reminder, calling this API removes the card from the notification center, but the reminder will be triggered again the next day according to its schedule.
 
 **Since:** 23
 

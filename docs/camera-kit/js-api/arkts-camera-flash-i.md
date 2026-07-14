@@ -1,7 +1,6 @@
 # Flash
 
-Flash extends [FlashQuery](arkts-camera-flashquery-i.md)
-Provides APIs related to the flash.
+Flash extends [FlashQuery](arkts-camera-flashquery-i.md) Provides APIs related to the flash.
 
 **Inheritance/Implementation:** Flash extends [FlashQuery](arkts-camera-flashquery-i.md)
 
@@ -91,12 +90,7 @@ Subscribes flash state change event callback.
 setFlashMode(flashMode: FlashMode): void
 ```
 
-Sets a flash mode.
-
-Before the setting, do the following checks:
-
-1. Use [hasFlash](arkts-camera-flashquery-i.md#hasflash-1) to check whether the camera device has flash.
-2. Use [isFlashModeSupported](arkts-camera-flashquery-i.md#isflashmodesupported-1) to check whether the camera device supports the flash mode.
+Sets a flash mode. Before the setting, do the following checks: 1. Use [hasFlash](arkts-camera-flashquery-i.md#hasflash-1) to check whether the camera device has flash. 2. Use [isFlashModeSupported](arkts-camera-flashquery-i.md#isflashmodesupported-1) to check whether the camera device supports the flash mode.
 
 **Since:** 11
 

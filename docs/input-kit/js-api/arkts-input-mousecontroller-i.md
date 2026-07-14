@@ -1,13 +1,6 @@
 # MouseController
 
-Provides the capability of simulating mouse operations. The simulated mouse operation sequence must meet the
-following requirements:
-
-1. A mouse button can be pressed only when it is in the released state.
-2. A mouse button can only be released after it has been pressed.
-3. A valid axis event sequence must begin with a **beginAxis** call, followed by zero or more **updateAxis** calls,
-and end with an **endAxis** call.
-4. Only one axis event sequence can be in progress at a time.
+Provides the capability of simulating mouse operations. The simulated mouse operation sequence must meet the following requirements: 1. A mouse button can be pressed only when it is in the released state. 2. A mouse button can only be released after it has been pressed. 3. A valid axis event sequence must begin with a **beginAxis** call, followed by zero or more **updateAxis** calls, and end with an **endAxis** call. 4. Only one axis event sequence can be in progress at a time.
 
 **Since:** 26.0.0
 

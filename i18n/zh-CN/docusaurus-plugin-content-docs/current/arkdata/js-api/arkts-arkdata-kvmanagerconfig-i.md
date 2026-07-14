@@ -28,13 +28,7 @@ bundleName: string
 context: BaseContext
 ```
 
-应用的上下文。
-
-FA模型的应用Context定义见[Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md)。
-
-Stage模型的应用Context定义见[Context](../../apis-ability-kit/arkts-apis/arkts-ability-uiabilitycontext-c.md)。
-
-从API version 10开始，context的参数类型为[BaseContext](../../apis-ability-kit/arkts-apis/arkts-ability-basecontext-c.md)。
+应用的上下文。 FA模型的应用Context定义见[Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md)。 Stage模型的应用Context定义见[Context](../../apis-ability-kit/arkts-apis/arkts-ability-uiabilitycontext-c.md)。 从API version 10开始，context的参数类型为[BaseContext](../../apis-ability-kit/arkts-apis/arkts-ability-basecontext-c.md)。
 
 **类型：** BaseContext
 

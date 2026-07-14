@@ -6,9 +6,7 @@
 function stopBackgroundRunning(context: Context, callback: AsyncCallback<void>): void
 ```
 
-取消当前UIAbility（FA模型则为ServiceAbility）下所有长时任务，使用callback异步回调。也可以通过
-[stopBackgroundRunning](arkts-backgroundtasks-stopbackgroundrunning-f.md#stopbackgroundrunning-3)
-接口取消指定Id的长时任务。
+取消当前UIAbility（FA模型则为ServiceAbility）下所有长时任务，使用callback异步回调。也可以通过 [stopBackgroundRunning](arkts-backgroundtasks-stopbackgroundrunning-f.md#stopbackgroundrunning-3) 接口取消指定Id的长时任务。
 
 **起始版本：** 9
 
@@ -71,9 +69,7 @@ export default class EntryAbility extends UIAbility {
 function stopBackgroundRunning(context: Context): Promise<void>
 ```
 
-取消当前UIAbility（FA模型则为ServiceAbility）下所有长时任务，使用Promise异步回调。也可以通过
-[stopBackgroundRunning](arkts-backgroundtasks-stopbackgroundrunning-f.md#stopbackgroundrunning-3)
-接口取消指定Id的长时任务。
+取消当前UIAbility（FA模型则为ServiceAbility）下所有长时任务，使用Promise异步回调。也可以通过 [stopBackgroundRunning](arkts-backgroundtasks-stopbackgroundrunning-f.md#stopbackgroundrunning-3) 接口取消指定Id的长时任务。
 
 **起始版本：** 9
 
@@ -137,9 +133,7 @@ export default class EntryAbility extends UIAbility {
 function stopBackgroundRunning(context: Context, continuousTaskId: number): Promise<void>
 ```
 
-取消指定Id的长时任务，使用Promise异步回调。也可以通过
-[stopBackgroundRunning](backgroundTaskManager.stopBackgroundRunning(context: Context, callback:AsyncCallback<void>))
-取消当前UIAbility下所有长时任务。
+取消指定Id的长时任务，使用Promise异步回调。也可以通过 [stopBackgroundRunning](backgroundTaskManager.stopBackgroundRunning(context: Context, callback:AsyncCallback<void>)) 取消当前UIAbility下所有长时任务。
 
 **起始版本：** 21
 

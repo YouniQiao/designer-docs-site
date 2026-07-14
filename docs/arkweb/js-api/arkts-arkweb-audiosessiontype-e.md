@@ -12,8 +12,7 @@ Enumerates the web audio types in the application.
 AMBIENT = 3
 ```
 
-Web game sounds and system music can be played at the same time. This value is applicable to web
-game scenarios. Its corresponding system audio stream type is **STREAM_USAGE_GAME**.
+Web game sounds and system music can be played at the same time. This value is applicable to web game scenarios. Its corresponding system audio stream type is **STREAM_USAGE_GAME**.
 
 **Since:** 20
 

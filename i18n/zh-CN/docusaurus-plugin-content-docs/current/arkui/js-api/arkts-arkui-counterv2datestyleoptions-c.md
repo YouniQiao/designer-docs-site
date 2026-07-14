@@ -1,8 +1,6 @@
 # CounterV2DateStyleOptions
 
-CounterV2DateStyleOptions定义日期内联型CounterV2的属性和事件。
-
-继承于[CounterV2CommonOptions](arkts-arkui-counterv2commonoptions-c.md)。
+CounterV2DateStyleOptions定义日期内联型CounterV2的属性和事件。 继承于[CounterV2CommonOptions](arkts-arkui-counterv2commonoptions-c.md)。
 
 **继承/实现关系：** CounterV2DateStyleOptions extends [CounterV2CommonOptions](arkts-arkui-counterv2commonoptions-c.md)
 
@@ -16,13 +14,7 @@ CounterV2DateStyleOptions定义日期内联型CounterV2的属性和事件。
 day?: number
 ```
 
-设置日期内联型初始日。
-
-默认值：1
-
-取值范围：[1, 31]
-
-必须为合法日期，如month为2月时，day传入30将视为异常值，按默认值处理。
+设置日期内联型初始日。 默认值：1 取值范围：[1, 31] 必须为合法日期，如month为2月时，day传入30将视为异常值，按默认值处理。
 
 **类型：** number
 
@@ -42,13 +34,7 @@ day?: number
 month?: number
 ```
 
-设置日期内联型初始月份。
-
-默认值：1
-
-取值范围：[1, 12]
-
-超出取值范围按默认值处理。
+设置日期内联型初始月份。 默认值：1 取值范围：[1, 12] 超出取值范围按默认值处理。
 
 **类型：** number
 
@@ -68,9 +54,7 @@ month?: number
 onDateChange?: OnDateCounterV2ChangeCallback
 ```
 
-当日期改变时，返回当前日期。
-
-值为undefined时，不显示当前的日期值。
+当日期改变时，返回当前日期。 值为undefined时，不显示当前的日期值。
 
 **类型：** OnDateCounterV2ChangeCallback
 
@@ -88,13 +72,7 @@ onDateChange?: OnDateCounterV2ChangeCallback
 year?: number
 ```
 
-设置日期内联型初始年份。
-
-默认值：1
-
-取值范围：[1, 5000]
-
-超出取值范围按默认值处理。
+设置日期内联型初始年份。 默认值：1 取值范围：[1, 5000] 超出取值范围按默认值处理。
 
 **类型：** number
 

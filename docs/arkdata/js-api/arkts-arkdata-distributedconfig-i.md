@@ -66,11 +66,7 @@ Specifies the asset temp path.
 asyncDownloadAsset?: boolean
 ```
 
-Whether to download assets synchronously or asynchronously when device-cloud sync is being performed for the
-current RDB store. The value **true** means to use an asynchronous task to download assets after all data is
-downloaded; **false** means to download assets synchronously.
-
-Default value: **false**.
+Whether to download assets synchronously or asynchronously when device-cloud sync is being performed for the current RDB store. The value **true** means to use an asynchronous task to download assets after all data is downloaded; **false** means to download assets synchronously. Default value: **false**.
 
 **Type:** boolean
 
@@ -84,11 +80,7 @@ Default value: **false**.
 autoSync: boolean
 ```
 
-Whether the table supports automatic device-cloud synchronization. If the value is **true**, the system can
-automatically trigger device-cloud sync. If the value is **false**, the system cannot automatically trigger
-device-cloud sync, and the [cloudSync]
-{@link @ohos.data.relationalStore:relationalStore.RdbStore.cloudSync(mode: SyncMode, tables: string[])}
-API needs to be called to trigger device-cloud sync.
+Whether the table supports automatic device-cloud synchronization. If the value is **true**, the system can automatically trigger device-cloud sync. If the value is **false**, the system cannot automatically trigger device-cloud sync, and the [cloudSync] {@link @ohos.data.relationalStore:relationalStore.RdbStore.cloudSync(mode: SyncMode, tables: string[])} API needs to be called to trigger device-cloud sync.
 
 **Type:** boolean
 
@@ -118,8 +110,7 @@ Specifies the auto synchronization switch.
 enableCloud?: boolean
 ```
 
-Whether to enable device-cloud sync for this RDB store. The value **true** means to enable device-cloud sync;
-**false** means the opposite. The default value is **true**.
+Whether to enable device-cloud sync for this RDB store. The value **true** means to enable device-cloud sync; **false** means the opposite. The default value is **true**.
 
 **Type:** boolean
 
@@ -133,10 +124,7 @@ Whether to enable device-cloud sync for this RDB store. The value **true** means
 tableType?: DistributedTableType
 ```
 
-Distributed table type. **DEVICE_COLLABORATION** indicates the device collaboration table, and **SINGLE_VERSION**
-indicates the single version table. For cross-device data sync, the default value is **DEVICE_COLLABORATION**.
-For device-cloud data sync, the default value is **SINGLE_VERSION**, and **DEVICE_COLLABORATION** is not
-supported.
+Distributed table type. **DEVICE_COLLABORATION** indicates the device collaboration table, and **SINGLE_VERSION** indicates the single version table. For cross-device data sync, the default value is **DEVICE_COLLABORATION**. For device-cloud data sync, the default value is **SINGLE_VERSION**, and **DEVICE_COLLABORATION** is not supported.
 
 **Type:** DistributedTableType
 

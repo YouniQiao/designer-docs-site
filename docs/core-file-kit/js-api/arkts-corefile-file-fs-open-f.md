@@ -72,8 +72,7 @@ Opens a file or directory. This API uses a promise to return the result. This AP
 declare function open(path: string, callback: AsyncCallback<File>): void
 ```
 
-Opens a file or directory. This API uses an asynchronous callback to return the result. This API supports the use of
-a URI.
+Opens a file or directory. This API uses an asynchronous callback to return the result. This API supports the use of a URI.
 
 **Since:** 9
 
@@ -126,9 +125,7 @@ a URI.
 declare function open(path: string, mode: number, callback: AsyncCallback<File>): void
 ```
 
-Opens a file or directory with the specified mode. This API uses an asynchronous callback to return the result.
-
-This API supports the use of a URI.
+Opens a file or directory with the specified mode. This API uses an asynchronous callback to return the result. This API supports the use of a URI.
 
 **Since:** 9
 

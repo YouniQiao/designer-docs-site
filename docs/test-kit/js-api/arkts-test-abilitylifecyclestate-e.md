@@ -1,9 +1,6 @@
 # AbilityLifecycleState
 
-Enumerates the ability lifecycle states. It can be used in
-[getAbilityState(ability)](application/AbilityDelegator:AbilityDelegator.getAbilityState) of
-[AbilityDelegator](application/AbilityDelegator:AbilityDelegator) to return different ability lifecycle
-states.
+Enumerates the ability lifecycle states. It can be used in [getAbilityState(ability)](application/AbilityDelegator:AbilityDelegator.getAbilityState) of [AbilityDelegator](application/AbilityDelegator:AbilityDelegator) to return different ability lifecycle states.
 
 **Since:** 9
 

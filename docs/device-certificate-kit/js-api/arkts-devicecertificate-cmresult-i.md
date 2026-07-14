@@ -130,8 +130,7 @@ Unique identifier of a certificate or credential. The value contains up to 256 b
 uriList?: Array<string>
 ```
 
-Certificate URI list.
-**Since**: 26.0.0
+Certificate URI list. **Since**: 26.0.0
 
 **Type:** Array<string>
 

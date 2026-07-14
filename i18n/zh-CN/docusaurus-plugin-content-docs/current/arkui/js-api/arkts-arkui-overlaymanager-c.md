@@ -35,8 +35,7 @@ Adds a specified ComponentContent node to the OverlayManager.
 addComponentContentWithOrder(content: ComponentContent, levelOrder?: LevelOrder): void
 ```
 
-Creates a floating layer node with the specified display order.
-This API allows you to define the stacking order of the nodes when they are created.
+Creates a floating layer node with the specified display order. This API allows you to define the stacking order of the nodes when they are created.
 
 **起始版本：** 18
 

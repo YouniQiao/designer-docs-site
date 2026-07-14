@@ -6,9 +6,7 @@
 function getDeviceIds(callback: AsyncCallback<Array<number>>): void
 ```
 
-获取所有输入设备的ID列表，使用callback异步回调。
-
-> **说明**：
+获取所有输入设备的ID列表，使用callback异步回调。 > **说明**：
 
 **起始版本：** 8
 
@@ -59,9 +57,7 @@ struct Index {
 function getDeviceIds(): Promise<Array<number>>
 ```
 
-获取所有输入设备的ID列表，使用Promise异步回调。
-
-> **说明**：
+获取所有输入设备的ID列表，使用Promise异步回调。 > **说明**：
 
 **起始版本：** 8
 

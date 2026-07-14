@@ -32,8 +32,7 @@ Specific error type returned by the pre-download error callback.
 readonly message: string
 ```
 
-Error message. A [universal error code](../../../../reference/errorcode-universal.md) or
-[HTTP error code](../../../../reference/apis-network-kit/errorcode-net-http.md) is returned.
+Error message. A [universal error code](../../../../reference/errorcode-universal.md) or [HTTP error code](../../../../reference/apis-network-kit/errorcode-net-http.md) is returned.
 
 **Type:** string
 

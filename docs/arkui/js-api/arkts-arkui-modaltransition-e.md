@@ -12,8 +12,7 @@ Defines modal transition type.
 DEFAULT = 0
 ```
 
-Use default animation.
-Upward animation when entering and downward animation when exiting.
+Use default animation. Upward animation when entering and downward animation when exiting.
 
 **Since:** 10
 

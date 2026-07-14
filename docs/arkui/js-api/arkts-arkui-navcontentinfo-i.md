@@ -12,10 +12,7 @@ Provides the destination information.
 index: number
 ```
 
-Index of the navigation destination in the routing stack. If the view is a root view (**NavBar**), the return value
-is **-1**.
-
-Value range: [-1, +��)
+Index of the navigation destination in the routing stack. If the view is a root view (**NavBar**), the return value is **-1**. Value range: [-1, +��)
 
 **Type:** number
 

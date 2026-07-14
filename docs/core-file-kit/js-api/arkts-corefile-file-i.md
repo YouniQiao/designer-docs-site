@@ -41,11 +41,9 @@ Obtains the parent directory of this file object.
 **Example**
 
 ```TypeScript
-import { BusinessError } from '@kit.BasicServicesKit';
-
 let filePath = pathDir + "/test.txt";
 let file = fileIo.openSync(filePath, fileIo.OpenMode.READ_WRITE | fileIo.OpenMode.CREATE);
-console.info(`Succeeded in getting parent path, the parent path is: ${file.getParent(}`);
+console.info(`Succeeded in getting parent path, the parent path is: ${file.getParent()}`);
 fileIo.closeSync(file);
 
 ```
@@ -56,8 +54,7 @@ fileIo.closeSync(file);
 lock(exclusive?: boolean): Promise<void>
 ```
 
-Applies an exclusive lock or a shared lock on this file in blocking mode. This API uses a promise to return the
-result.
+Applies an exclusive lock or a shared lock on this file in blocking mode. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -109,8 +106,7 @@ file.lock(true).then(() => {
 lock(callback: AsyncCallback<void>): void
 ```
 
-Applies an exclusive lock or a shared lock on this file in blocking mode. This API uses an asynchronous callback to
-return the result.
+Applies an exclusive lock or a shared lock on this file in blocking mode. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -133,14 +129,31 @@ return the result.
 | 13900042 | Unknown error |
 | 13900043 | No record locks available |
 
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let filePath = pathDir + "/test.txt";
+let file = fileIo.openSync(filePath, fileIo.OpenMode.READ_WRITE | fileIo.OpenMode.CREATE);
+file.lock((err: BusinessError) => {
+  if (err) {
+    console.error(`Failed to lock file. Code: ${err.code}, message: ${err.message}`);
+  } else {
+    console.info(`Succeeded in locking file.`);
+  }
+  fileIo.closeSync(file);
+});
+
+```
+
 ## lock
 
 ```TypeScript
 lock(exclusive: boolean, callback: AsyncCallback<void>): void
 ```
 
-Applies an exclusive lock or a shared lock on this file in blocking mode. This API uses an asynchronous callback to
-return the result.
+Applies an exclusive lock or a shared lock on this file in blocking mode. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -163,6 +176,24 @@ return the result.
 | 13900034 | Operation would block |
 | 13900042 | Unknown error |
 | 13900043 | No record locks available |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let filePath = pathDir + "/test.txt";
+let file = fileIo.openSync(filePath, fileIo.OpenMode.READ_WRITE | fileIo.OpenMode.CREATE);
+file.lock(true, (err: BusinessError) => {
+  if (err) {
+    console.error(`Failed to lock file. Code: ${err.code}, message: ${err.message}`);
+  } else {
+    console.info(`Succeeded in locking file.`);
+  }
+  fileIo.closeSync(file);
+});
+
+```
 
 ## tryLock
 

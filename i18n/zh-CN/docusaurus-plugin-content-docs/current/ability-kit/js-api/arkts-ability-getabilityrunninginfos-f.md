@@ -6,11 +6,7 @@
 function getAbilityRunningInfos(): Promise<Array<AbilityRunningInfo>>
 ```
 
-获取UIAbility运行时的相关信息。使用Promise异步回调。
-
-> **说明：**
->
-> 如果应用申请了ohos.permission.GET_RUNNING_INFO权限，可以获取所有应用UIAbility的运行信息，否则只能获取当前应用UIAbility的运行信息。
+获取UIAbility运行时的相关信息。使用Promise异步回调。 > **说明：** > > 如果应用申请了ohos.permission.GET_RUNNING_INFO权限，可以获取所有应用UIAbility的运行信息，否则只能获取当前应用UIAbility的运行信息。
 
 **起始版本：** 14
 
@@ -37,6 +33,7 @@ import { abilityManager } from '@kit.AbilityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
 try {
+  // 获取UIAbility运行时相关信息
   abilityManager.getAbilityRunningInfos()
     .then((data: abilityManager.AbilityRunningInfo[]) => {
       console.info(`getAbilityRunningInfos success, data: ${JSON.stringify(data)}`);

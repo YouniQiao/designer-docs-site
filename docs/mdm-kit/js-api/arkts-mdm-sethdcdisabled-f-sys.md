@@ -12,8 +12,7 @@ import { restrictions } from '@kit.MDMKit';
 function setHdcDisabled(admin: Want, disabled: boolean, callback: AsyncCallback<void>): void
 ```
 
-Enables or disables [HDC](../../../../../device-dev/subsystems/subsys-toolchain-hdc-guide.md). This API uses an
-asynchronous callback to return the result.
+Enables or disables [HDC](../../../../../device-dev/subsystems/subsys-toolchain-hdc-guide.md). This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 

@@ -14,11 +14,7 @@
 enabled: boolean
 ```
 
-是否可以切换状态。
-
-true：可以切换状态；false：不可以切换状态。
-
-默认值：true
+是否可以切换状态。 true：可以切换状态；false：不可以切换状态。 默认值：true
 
 **类型：** boolean
 
@@ -36,11 +32,7 @@ true：可以切换状态；false：不可以切换状态。
 isOn: boolean
 ```
 
-开关是否打开。
-
-true：开关打开；false：开关关闭。
-
-默认值：false
+开关是否打开。 true：开关打开；false：开关关闭。 默认值：false
 
 **类型：** boolean
 
@@ -58,9 +50,7 @@ true：开关打开；false：开关关闭。
 triggerChange: Callback<boolean>
 ```
 
-触发switch选中状态变化。
-
-true：状态从关切换为开；false：状态从开切换为关。
+触发switch选中状态变化。 true：状态从关切换为开；false：状态从开切换为关。
 
 **类型：** Callback<boolean>
 

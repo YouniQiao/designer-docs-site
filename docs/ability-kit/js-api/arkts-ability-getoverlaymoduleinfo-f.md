@@ -12,8 +12,7 @@ import { overlay } from '@kit.AbilityKit';
 function getOverlayModuleInfo(moduleName: string, callback: AsyncCallback<OverlayModuleInfo>): void
 ```
 
-Obtains the OverlayModuleInfo about a module with the overlay feature in the current application. This API uses an
-asynchronous callback to return the result.
+Obtains the OverlayModuleInfo about a module with the overlay feature in the current application. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -66,8 +65,7 @@ try {
 function getOverlayModuleInfo(moduleName: string): Promise<OverlayModuleInfo>
 ```
 
-Obtains the OverlayModuleInfo about a module with the overlay feature in the current application. This API uses a
-promise to return the result.
+Obtains the OverlayModuleInfo about a module with the overlay feature in the current application. This API uses a promise to return the result.
 
 **Since:** 10
 

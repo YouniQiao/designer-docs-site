@@ -1,7 +1,6 @@
 # USBConfig
 
-Represents the USB configuration. One [USBDevice](arkts-basicservices-usbdevice-i.md) can contain multiple **USBConfig**
-instances.
+Represents the USB configuration. One [USBDevice](arkts-basicservices-usbdevice-i.md) can contain multiple **USBConfig** instances.
 
 **Since:** 8
 

@@ -22,14 +22,15 @@ import { GetLocationTypeOption, SubscribeLocationOption, GeolocationResponse, Ge
 coordType?: string
 ```
 
-Coordinate system type. Available types can be obtained using getSupportedCoordTypes.
-The default type is wgs84.
+Coordinate system type. Available types can be obtained using getSupportedCoordTypes. The default type is wgs84.
 
 **Type:** string
 
 **Since:** 3
 
 **Deprecated since:** 9
+
+**Model restriction:** This API can be used only in the FA model.
 
 **System capability:** SystemCapability.Location.Location.Lite
 
@@ -47,6 +48,8 @@ Called when the listening fails.
 
 **Deprecated since:** 9
 
+**Model restriction:** This API can be used only in the FA model.
+
 **System capability:** SystemCapability.Location.Location.Lite
 
 ## success
@@ -62,6 +65,8 @@ Called whenever the geographical location changes.
 **Since:** 3
 
 **Deprecated since:** 9
+
+**Model restriction:** This API can be used only in the FA model.
 
 **System capability:** SystemCapability.Location.Location.Lite
 

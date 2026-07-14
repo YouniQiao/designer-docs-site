@@ -2,7 +2,6 @@
 
 Provides a Flex component that uses the flexible box model for layout.
 
-
 ## Flex
 
 ```TypeScript

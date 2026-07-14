@@ -22,8 +22,7 @@ import { trash } from '@kit.CoreFileKit';
 readonly ctime: number
 ```
 
-Time when the file or directory was created. It is the number of seconds elapsed since the Unix epoch (00:00:00
-UTC on January 1, 1970).
+Time when the file or directory was created. It is the number of seconds elapsed since the Unix epoch (00:00:00 UTC on January 1, 1970).
 
 **Type:** number
 
@@ -83,8 +82,7 @@ Permission on the file or directory.
 readonly mtime: number
 ```
 
-Time when the file or directory was last modified. It is the number of milliseconds elapsed since the Unix epoch
-(00:00:00 UTC on January 1, 1970).
+Time when the file or directory was last modified. It is the number of milliseconds elapsed since the Unix epoch (00:00:00 UTC on January 1, 1970).
 
 **Type:** number
 

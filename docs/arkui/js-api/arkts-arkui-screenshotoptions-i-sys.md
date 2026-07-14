@@ -20,8 +20,7 @@ import { screenshot } from '@kit.ArkUI';
 displayId?: number
 ```
 
-ID of the [display](arkts-arkui-displaystate-e.md) device on which the screen region is to be
-captured. The value must be an integer.
+ID of the [display](arkts-arkui-displaystate-e.md) device on which the screen region is to be captured. The value must be an integer.
 
 **Type:** number
 
@@ -37,8 +36,7 @@ captured. The value must be an integer.
 imageSize?: Size
 ```
 
-Region of the screen to capture. If no value is passed, the region of the logical screen associated with the
-specified display ID is returned.
+Region of the screen to capture. If no value is passed, the region of the logical screen associated with the specified display ID is returned.
 
 **Type:** Size
 
@@ -54,9 +52,7 @@ specified display ID is returned.
 isCaptureFullOfScreen?: boolean
 ```
 
-Whether to capture all displays on the current screen. If the screen contains multiple displays, the value
-**true** means that the entire screen is captured, and **false** means that only the region of the logical screen
-associated with the specified display ID is captured.
+Whether to capture all displays on the current screen. If the screen contains multiple displays, the value **true** means that the entire screen is captured, and **false** means that only the region of the logical screen associated with the specified display ID is captured.
 
 **Type:** boolean
 
@@ -72,9 +68,7 @@ associated with the specified display ID is captured.
 isNotificationNeeded?: boolean
 ```
 
-Whether to send a notification after a snapshot is captured. **true** to send, **false** otherwise. The default
-value is **true**. Such a notification can be listened for through
-[captureStatusChange](arkts-arkui-on-f.md#on-7).
+Whether to send a notification after a snapshot is captured. **true** to send, **false** otherwise. The default value is **true**. Such a notification can be listened for through [captureStatusChange](arkts-arkui-on-f.md#on-7).
 
 **Type:** boolean
 
@@ -90,8 +84,7 @@ value is **true**. Such a notification can be listened for through
 rotation?: number
 ```
 
-Angle by which the captured image should be rotated. Currently, the value can be **0** only. The default value is
-**0**.
+Angle by which the captured image should be rotated. Currently, the value can be **0** only. The default value is **0**.
 
 **Type:** number
 
@@ -107,8 +100,7 @@ Angle by which the captured image should be rotated. Currently, the value can be
 screenRect?: Rect
 ```
 
-Region of the screen to capture. If no value is passed, the region of the logical screen associated with the
-specified display ID is returned.
+Region of the screen to capture. If no value is passed, the region of the logical screen associated with the specified display ID is returned.
 
 **Type:** Rect
 

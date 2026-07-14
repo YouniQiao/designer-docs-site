@@ -1,10 +1,6 @@
 # ChipGroupItemOptions
 
-Defines the specific attributes of individual chips.
-
-> **NOTE**
->
-> If **suffixIcon** is specified, **allowClose** has no effect.
+Defines the specific attributes of individual chips. > **NOTE** > > If **suffixIcon** is specified, **allowClose** has no effect.
 
 **Since:** 12
 
@@ -22,15 +18,7 @@ import { ChipItemLabelOptions, ChipGroupSpaceOptions, SymbolItemOptions, SuffixI
 accessibilityDescription?: ResourceStr
 ```
 
-Accessible description of the chip. You can provide comprehensive text explanations of the chip in **ChipGroup** to
-help users understand the action they are about to perform and its potential consequences. This is particularly
-important when such outcomes cannot be directly inferred from the chip's own properties or its accessibility text.
-If a chip contains both text information and the accessible description, the text is announced first and then the
-accessible description, when the chip is selected.
-
-The default value is an empty string.
-
-If the value is **undefined**, the default value is used.
+Accessible description of the chip. You can provide comprehensive text explanations of the chip in **ChipGroup** to help users understand the action they are about to perform and its potential consequences. This is particularly important when such outcomes cannot be directly inferred from the chip's own properties or its accessibility text. If a chip contains both text information and the accessible description, the text is announced first and then the accessible description, when the chip is selected. The default value is an empty string. If the value is **undefined**, the default value is used.
 
 **Type:** ResourceStr
 
@@ -48,21 +36,7 @@ If the value is **undefined**, the default value is used.
 accessibilityLevel?: string
 ```
 
-Accessibility level of the chip. It determines whether the chip can be recognized by accessibility services.
-
-The options are as follows:
-
-**"auto"**: It is treated as "yes" by the system.
-
-**"yes"**: The chip can be recognized by accessibility services.
-
-**"no"**: The chip cannot be recognized by accessibility services.
-
-**"no-hide-descendants"**: Neither the chip nor its child components can be recognized by accessibility services.
-
-Default value: **"auto"**
-
-If the value is **undefined**, the default value is used.
+Accessibility level of the chip. It determines whether the chip can be recognized by accessibility services. The options are as follows: **"auto"**: It is treated as "yes" by the system. **"yes"**: The chip can be recognized by accessibility services. **"no"**: The chip cannot be recognized by accessibility services. **"no-hide-descendants"**: Neither the chip nor its child components can be recognized by accessibility services. Default value: **"auto"** If the value is **undefined**, the default value is used.
 
 **Type:** string
 
@@ -82,13 +56,7 @@ If the value is **undefined**, the default value is used.
 allowClose?: boolean
 ```
 
-Whether to show the delete icon.
-
-**true** to show, **false** to hide.
-
-Default value: **false**
-
-If the value is **undefined**, the default value is used.
+Whether to show the delete icon. **true** to show, **false** to hide. Default value: **false** If the value is **undefined**, the default value is used.
 
 **Type:** boolean
 
@@ -106,9 +74,7 @@ If the value is **undefined**, the default value is used.
 closeOptions?: CloseOptions
 ```
 
-Accessibility options of the default close icon.
-
-If the value is **undefined**, the default value is used.
+Accessibility options of the default close icon. If the value is **undefined**, the default value is used.
 
 **Type:** CloseOptions
 
@@ -144,11 +110,7 @@ Text of the chip.
 prefixIcon?: IconOptions
 ```
 
-Prefix image icon of the chip.
-
-Default value: no prefix image icon.
-
-If the value is **undefined**, the default value is used.
+Prefix image icon of the chip. Default value: no prefix image icon. If the value is **undefined**, the default value is used.
 
 **Type:** IconOptions
 
@@ -166,11 +128,7 @@ If the value is **undefined**, the default value is used.
 prefixSymbol?: ChipSymbolGlyphOptions
 ```
 
-Prefix symbol glyph icon of the chip.
-
-Default value: no prefix symbol glyph icon.
-
-If the value is **undefined**, the default value is used.
+Prefix symbol glyph icon of the chip. Default value: no prefix symbol glyph icon. If the value is **undefined**, the default value is used.
 
 **Type:** ChipSymbolGlyphOptions
 
@@ -188,14 +146,7 @@ If the value is **undefined**, the default value is used.
 suffixIcon?: IconOptions
 ```
 
-Suffix image icon of the chip.
-
-Default value: no suffix image icon.
-
-If the value is **undefined**, the default value is used.
-
-Note: This API is supported since API version 12 and deprecated since API version 14. You are advised to use
-**suffixImageIcon** instead.
+Suffix image icon of the chip. Default value: no suffix image icon. If the value is **undefined**, the default value is used. Note: This API is supported since API version 12 and deprecated since API version 14. You are advised to use **suffixImageIcon** instead.
 
 **Type:** IconOptions
 
@@ -217,11 +168,7 @@ Note: This API is supported since API version 12 and deprecated since API versio
 suffixImageIcon?: SuffixImageIconOptions
 ```
 
-Suffix image icon of the chip.
-
-Default value: no suffix image icon.
-
-If the value is **undefined**, the default value is used.
+Suffix image icon of the chip. Default value: no suffix image icon. If the value is **undefined**, the default value is used.
 
 **Type:** SuffixImageIconOptions
 
@@ -239,11 +186,7 @@ If the value is **undefined**, the default value is used.
 suffixSymbol?: ChipSymbolGlyphOptions
 ```
 
-Suffix symbol glyph icon of the chip.
-
-Default value: no suffix symbol glyph icon.
-
-If the value is **undefined**, the default value is used.
+Suffix symbol glyph icon of the chip. Default value: no suffix symbol glyph icon. If the value is **undefined**, the default value is used.
 
 **Type:** ChipSymbolGlyphOptions
 
@@ -261,11 +204,7 @@ If the value is **undefined**, the default value is used.
 suffixSymbolOptions?: ChipSuffixSymbolGlyphOptions
 ```
 
-Suffix symbol icon of the chip.
-
-Default value: The suffix symbol icon has no function.
-
-If the value is **undefined**, the default value is used.
+Suffix symbol icon of the chip. Default value: The suffix symbol icon has no function. If the value is **undefined**, the default value is used.
 
 **Type:** ChipSuffixSymbolGlyphOptions
 

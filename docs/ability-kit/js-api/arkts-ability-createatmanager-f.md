@@ -12,10 +12,7 @@ import { Context, Permissions, PermissionRequestResult } from '@kit.AbilityKit';
 function createAtManager(): AtManager
 ```
 
-Creates a program access control management instance for scenarios such as permission verification, runtime
-permission request, settings page authorization guidance, and permission status change monitoring. After the call
-is successful, an AtManager instance is returned, which can be used for subsequent permission management
-operations.
+Creates a program access control management instance for scenarios such as permission verification, runtime permission request, settings page authorization guidance, and permission status change monitoring. After the call is successful, an AtManager instance is returned, which can be used for subsequent permission management operations.
 
 **Since:** 8
 

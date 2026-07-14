@@ -1,7 +1,6 @@
 # ExceptionPromptV2
 
-Declare struct ExceptionPromptV2 higher-order component.
-The exception prompt component is used to show an error message when an error arises.
+Declare struct ExceptionPromptV2 higher-order component. The exception prompt component is used to show an error message when an error arises.
 
 **Since:** 26.0.0
 

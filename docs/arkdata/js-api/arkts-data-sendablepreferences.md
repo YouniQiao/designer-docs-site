@@ -1,25 +1,6 @@
 # @ohos.data.sendablePreferences
 
-The **sendablePreferences** module provides APIs for processing data in the form of key-value (KV) pairs, including
-querying, modifying, and persisting KV pairs.
-In the KV pairs, the key must be a string, and the value can be a number, a string, a Boolean value, a bigint, or a
-serializable object.
-The persistent files of the shared user preferences are stored in the
-[preferencesDir](../../../../application-models/application-context-stage.md#obtaining-application-file-paths)
-directory. Before creating a preferences object, ensure that the **preferencesDir** path can be read and written. The
-[encryption level](../../apis-ability-kit/arkts-apis/arkts-ability-areamode-e.md) of the persistent file directory
-determines the access to the files. For details, see
-[Application File Directory and Application File Path](../../../../file-management/app-sandbox-directory.md#application-file-directory-and-application-file-path)
-.
-Sendable preferences can be passed between concurrent ArkTS instances (including the main thread and TaskPool or
-Worker threads) by reference. It allows for higher performance than
-[user preferences](arkts-data-preferences.md). For more information, see
-[Using Sendable Objects](../../../../arkts-utils/sendable-guide.md).
-
-> **NOTE**
->
-> The shared user preferences are not thread-safe and may cause file damage and data loss when used in multi-process
-> scenarios. Do not use it in multi-process scenarios.
+The **sendablePreferences** module provides APIs for processing data in the form of key-value (KV) pairs, including querying, modifying, and persisting KV pairs. In the KV pairs, the key must be a string, and the value can be a number, a string, a Boolean value, a bigint, or a serializable object. The persistent files of the shared user preferences are stored in the [preferencesDir](../../../../application-models/application-context-stage.md#obtaining-application-file-paths) directory. Before creating a preferences object, ensure that the **preferencesDir** path can be read and written. The [encryption level](../../apis-ability-kit/arkts-apis/arkts-ability-areamode-e.md) of the persistent file directory determines the access to the files. For details, see [Application File Directory and Application File Path](../../../../file-management/app-sandbox-directory.md#application-file-directory-and-application-file-path) . Sendable preferences can be passed between concurrent ArkTS instances (including the main thread and TaskPool or Worker threads) by reference. It allows for higher performance than [user preferences](arkts-data-preferences.md). For more information, see [Using Sendable Objects](../../../../arkts-utils/sendable-guide.md). > **NOTE** > > The shared user preferences are not thread-safe and may cause file damage and data loss when used in multi-process > scenarios. Do not use it in multi-process scenarios.
 
 **Since:** 12
 
@@ -37,18 +18,18 @@ import { sendablePreferences } from '@kit.ArkData';
 
 | Name | Description |
 | --- | --- |
-| [deletePreferences](arkts-arkdata-deletepreferences-f.md#deletepreferences-1) | Deletes a specified **Preferences** instance from the cache. If the **Preferences** instance has a corresponding persistent file, the persistent file is also deleted. This API uses a promise to return the result.Avoid using a deleted **Preferences** instance to perform data operations, which may cause data inconsistency. |
+| [deletePreferences](arkts-arkdata-deletepreferences-f.md#deletepreferences-1) | Deletes a specified **Preferences** instance from the cache. If the **Preferences** instance has a corresponding persistent file, the persistent file is also deleted. This API uses a promise to return the result. Avoid using a deleted **Preferences** instance to perform data operations, which may cause data inconsistency. |
 | [getPreferences](arkts-arkdata-getpreferences-f.md#getpreferences-1) | Obtains a **Preferences** instance. This API uses a promise to return the result. |
 | [getPreferencesSync](arkts-arkdata-getpreferencessync-f.md#getpreferencessync-1) | Obtains a **Preferences** instance. This API returns the result synchronously. |
-| [removePreferencesFromCache](arkts-arkdata-removepreferencesfromcache-f.md#removepreferencesfromcache-1) | Removes a **Preferences** instance from the cache. This API uses a promise to return the result.After an application calls [getPreferences](arkts-arkdata-getpreferences-f.md#getpreferences-1) for the first time to obtaina **Preferences** instance, the obtained **Preferences** instance is cached. When the application calls [getPreferences](arkts-arkdata-getpreferences-f.md#getpreferences-1) again, the **Preferences** instance will be read from the cache instead of from the persistent file. After this API is called to remove the instance from the cache, calling **getPreferences** again will read data from the persistent file and create a **Preferences** instance. |
-| [removePreferencesFromCacheSync](arkts-arkdata-removepreferencesfromcachesync-f.md#removepreferencesfromcachesync-1) | Removes a **Preferences** instance from the cache. This API returns the result synchronously.After an application calls [getPreferences](arkts-arkdata-getpreferences-f.md#getpreferences-1) for the first time to obtain a **Preferences** instance, the obtained **Preferences** instance is cached. When the application calls [getPreferences](arkts-arkdata-getpreferences-f.md#getpreferences-1) again, the **Preferences** instance will be read from the cache instead of from the persistent file. After this API is called to remove the instance from the cache, calling **getPreferences** again will read data from the persistent file and create a **Preferences** instance. |
+| [removePreferencesFromCache](arkts-arkdata-removepreferencesfromcache-f.md#removepreferencesfromcache-1) | Removes a **Preferences** instance from the cache. This API uses a promise to return the result. After an application calls [getPreferences](arkts-arkdata-getpreferences-f.md#getpreferences-1) for the first time to obtain a **Preferences** instance, the obtained **Preferences** instance is cached. When the application calls [getPreferences](arkts-arkdata-getpreferences-f.md#getpreferences-1) again, the **Preferences** instance will be read from the cache instead of from the persistent file. After this API is called to remove the instance from the cache, calling **getPreferences** again will read data from the persistent file and create a **Preferences** instance. |
+| [removePreferencesFromCacheSync](arkts-arkdata-removepreferencesfromcachesync-f.md#removepreferencesfromcachesync-1) | Removes a **Preferences** instance from the cache. This API returns the result synchronously. After an application calls [getPreferences](arkts-arkdata-getpreferences-f.md#getpreferences-1) for the first time to obtain a **Preferences** instance, the obtained **Preferences** instance is cached. When the application calls [getPreferences](arkts-arkdata-getpreferences-f.md#getpreferences-1) again, the **Preferences** instance will be read from the cache instead of from the persistent file. After this API is called to remove the instance from the cache, calling **getPreferences** again will read data from the persistent file and create a **Preferences** instance. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
 | [Options](arkts-arkdata-options-i.md) | Represents the configuration options of a **Preferences** instance. |
-| [Preferences](arkts-arkdata-preferences-i.md) | Provides APIs for obtaining and modifying **Preferences** instances. **Preferences** inherits from [ISendable](../../../../arkts-utils/arkts-sendable.md#isendable) and can be passed between concurrent ArkTSinstances (including the main thread and the TaskPool or Worker threads) by reference.Before calling any API of **Preferences**, obtain a **Preferences** instance by using [sendablePreferences.getPreferences](arkts-arkdata-getpreferences-f.md#getpreferences-1). |
+| [Preferences](arkts-arkdata-preferences-i.md) | Provides APIs for obtaining and modifying **Preferences** instances. **Preferences** inherits from [ISendable](../../../../arkts-utils/arkts-sendable.md#isendable) and can be passed between concurrent ArkTS instances (including the main thread and the TaskPool or Worker threads) by reference. Before calling any API of **Preferences**, obtain a **Preferences** instance by using [sendablePreferences.getPreferences](arkts-arkdata-getpreferences-f.md#getpreferences-1). |
 
 ### Constants
 

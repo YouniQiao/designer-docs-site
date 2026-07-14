@@ -12,9 +12,7 @@
 UNKNOWN = -1
 ```
 
-拖拽结果尚未设置，在[onDragStart](arkts-arkui-commonmethod-c.md#ondragstart-1)，[onDragEnter](arkts-arkui-commonmethod-c.md#ondragenter-1)，
-[onDragMove](arkts-arkui-commonmethod-c.md#ondragmove-1)，[onDragLeave](arkts-arkui-commonmethod-c.md#ondragleave-1)，
-[onDrop](arkts-arkui-commonmethod-c.md#ondrop-1)中使用。
+拖拽结果尚未设置，在[onDragStart](arkts-arkui-commonmethod-c.md#ondragstart-1)，[onDragEnter](arkts-arkui-commonmethod-c.md#ondragenter-1)， [onDragMove](arkts-arkui-commonmethod-c.md#ondragmove-1)，[onDragLeave](arkts-arkui-commonmethod-c.md#ondragleave-1)， [onDrop](arkts-arkui-commonmethod-c.md#ondrop-1)中使用。
 
 **起始版本：** 24
 
@@ -78,8 +76,7 @@ DRAG_CANCELED = 2
 DROP_ENABLED = 3
 ```
 
-组件允许落入，在[onDragEnter](arkts-arkui-commonmethod-c.md#ondragenter-1)，[onDragMove](arkts-arkui-commonmethod-c.md#ondragmove-1)，
-[onDragLeave](arkts-arkui-commonmethod-c.md#ondragleave-1)中使用。
+组件允许落入，在[onDragEnter](arkts-arkui-commonmethod-c.md#ondragenter-1)，[onDragMove](arkts-arkui-commonmethod-c.md#ondragmove-1)， [onDragLeave](arkts-arkui-commonmethod-c.md#ondragleave-1)中使用。
 
 **起始版本：** 10
 
@@ -95,8 +92,7 @@ DROP_ENABLED = 3
 DROP_DISABLED = 4
 ```
 
-组件不允许落入，在[onDragEnter](arkts-arkui-commonmethod-c.md#ondragenter-1)，[onDragMove](arkts-arkui-commonmethod-c.md#ondragmove-1)，
-[onDragLeave](arkts-arkui-commonmethod-c.md#ondragleave-1)中使用。
+组件不允许落入，在[onDragEnter](arkts-arkui-commonmethod-c.md#ondragenter-1)，[onDragMove](arkts-arkui-commonmethod-c.md#ondragmove-1)， [onDragLeave](arkts-arkui-commonmethod-c.md#ondragleave-1)中使用。
 
 **起始版本：** 10
 

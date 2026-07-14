@@ -12,8 +12,7 @@ interface of app lifecycle.
 onWindowDisplayModeChanged?(isShownInMultiWindow: boolean, newConfig: resourceManager.Configuration): void
 ```
 
-Called when the window display mode of this ability changes, for example, from fullscreen mode
-to multi-window mode or from multi-window mode to fullscreen mode.
+Called when the window display mode of this ability changes, for example, from fullscreen mode to multi-window mode or from multi-window mode to fullscreen mode.
 
 **Since:** 7
 

@@ -269,8 +269,7 @@ observer.on('cellularDataConnectionStateChange', options, (data: observer.DataCo
 function on(type: 'cellularDataFlowChange', callback: Callback<DataFlowType>): void
 ```
 
-Callback when the uplink and downlink data flow state of cellular data services
-corresponding to the default sim card is updated.
+Callback when the uplink and downlink data flow state of cellular data services corresponding to the default sim card is updated.
 
 **Since:** 7
 
@@ -311,8 +310,7 @@ observer.on('cellularDataFlowChange', (data: data.DataFlowType) => {
 function on(type: 'cellularDataFlowChange', options: ObserverOptions, callback: Callback<DataFlowType>): void
 ```
 
-Callback when the uplink and downlink data flow state of cellular data services
-corresponding to the monitored {@code slotId} is updated.
+Callback when the uplink and downlink data flow state of cellular data services corresponding to the monitored {@code slotId} is updated.
 
 **Since:** 11
 
@@ -568,8 +566,7 @@ observer.on('simStateChange', options, (data: observer.SimStateData) => {
 function on(type: 'iccAccountInfoChange', callback: Callback<void>): void
 ```
 
-Receives an ICC account change. This callback is invoked when the ICC account updates
-and the observer is added to monitor the updates.
+Receives an ICC account change. This callback is invoked when the ICC account updates and the observer is added to monitor the updates.
 
 **Since:** 10
 

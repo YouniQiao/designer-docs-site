@@ -68,8 +68,7 @@ Whether to obtain only the text and divide the text into paragraphs. The default
 windowId?: number
 ```
 
-ID of the window whose content needs to be obtained. If this parameter is not set or is set to **undefined**, the
-content of the full-screen window is obtained by default.
+ID of the window whose content needs to be obtained. If this parameter is not set or is set to **undefined**, the content of the full-screen window is obtained by default.
 
 **Type:** number
 

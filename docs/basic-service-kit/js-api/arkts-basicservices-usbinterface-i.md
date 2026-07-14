@@ -1,7 +1,6 @@
 # USBInterface
 
-Represents a USB interface. One [USBConfiguration](arkts-basicservices-usbconfiguration-i.md) object can contain multiple *
-*USBInterface** instances, each providing a specific function.
+Represents a USB interface. One [USBConfiguration](arkts-basicservices-usbconfiguration-i.md) object can contain multiple * *USBInterface** instances, each providing a specific function.
 
 **Since:** 9
 
@@ -19,8 +18,7 @@ import { usbManager } from '@kit.BasicServicesKit';
 alternateSetting: number
 ```
 
-Settings for alternating between descriptors of the same USB interface. The value size indicates the number of
-optional modes. The value 0 indicates that no optional mode is supported.
+Settings for alternating between descriptors of the same USB interface. The value size indicates the number of optional modes. The value 0 indicates that no optional mode is supported.
 
 **Type:** number
 

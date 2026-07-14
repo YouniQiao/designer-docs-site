@@ -54,8 +54,7 @@ Fold status of the device.
 isHoverMode: boolean
 ```
 
-Whether the application is in the hover state. The value **true** means that the application
-is in the hover state, and **false** means the opposite.
+Whether the application is in the hover state. The value **true** means that the application is in the hover state, and **false** means the opposite.
 
 **Type:** boolean
 

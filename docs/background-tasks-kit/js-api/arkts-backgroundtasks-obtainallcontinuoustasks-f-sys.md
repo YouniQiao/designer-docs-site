@@ -12,8 +12,7 @@ import { backgroundTaskManager } from '@kit.BackgroundTasksKit';
 function obtainAllContinuousTasks(): Promise<ContinuousTaskInfo[]>
 ```
 
-Obtains all continuous task information, including the task ID and type. This API uses a promise to return the
-result.
+Obtains all continuous task information, including the task ID and type. This API uses a promise to return the result.
 
 **Since:** 23
 

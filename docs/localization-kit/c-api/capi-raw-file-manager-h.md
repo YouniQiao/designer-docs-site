@@ -99,7 +99,7 @@ Traverses all files in the **rawfile** directory.
 
 | Type | Description |
 | -- | -- |
-| RawDir * | Pointer to [RawDir](capi-rawfile-rawdir.md). After using the pointer, call [OH_ResourceManager_CloseRawDir](capi-raw-dir-h.md#oh_resourcemanager_closerawdir) to release<br>     it. If the operation fails or mgr is empty, a null pointer is returned. |
+| [RawDir *](capi-rawfile-rawdir.md) | Pointer to [RawDir](capi-rawfile-rawdir.md). After using the pointer, call [OH_ResourceManager_CloseRawDir](capi-raw-dir-h.md#oh_resourcemanager_closerawdir) to release<br>     it. If the operation fails or mgr is empty, a null pointer is returned. |
 
 **Reference**:
 
@@ -130,7 +130,7 @@ Opens a rawfile and reads the data in it.
 
 | Type | Description |
 | -- | -- |
-| [RawFile *](capi-rawfile-rawfile.md) | Pointer to [RawFile](capi-rawfile-rawfile.md). After using the pointer, call [OH_ResourceManager_CloseRawFile](capi-raw-file-h.md#oh_resourcemanager_closerawfile) to release<br>     it. If the operation fails or mgr or fileName is empty, a null pointer is returned. |
+| RawFile * | Pointer to [RawFile](capi-rawfile-rawfile.md). After using the pointer, call [OH_ResourceManager_CloseRawFile](capi-raw-file-h.md#oh_resourcemanager_closerawfile) to release<br>     it. If the operation fails or mgr or fileName is empty, a null pointer is returned. |
 
 **Reference**:
 
@@ -161,7 +161,7 @@ Opens a large rawfile and reads the data in it.
 
 | Type | Description |
 | -- | -- |
-| [RawFile64 *](capi-rawfile-rawfile64.md) | Pointer to [RawFile64](capi-rawfile-rawfile64.md). After using this pointer, call [OH_ResourceManager_CloseRawFile64](capi-raw-file-h.md#oh_resourcemanager_closerawfile64) to<br>     release it. If the operation fails or mgr or fileName is empty, a null pointer is returned. |
+| RawFile64 * | Pointer to [RawFile64](capi-rawfile-rawfile64.md). After using this pointer, call [OH_ResourceManager_CloseRawFile64](capi-raw-file-h.md#oh_resourcemanager_closerawfile64) to<br>     release it. If the operation fails or mgr or fileName is empty, a null pointer is returned. |
 
 **Reference**:
 

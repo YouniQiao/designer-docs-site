@@ -1,7 +1,6 @@
 # Random
 
-Provides APIs for random number operations. Before using any API of the **Random** class, you must create a
-**Random** instance by using [createRandom](arkts-cryptoarchitecture-createrandom-f.md#createrandom-1).
+Provides APIs for random number operations. Before using any API of the **Random** class, you must create a **Random** instance by using [createRandom](arkts-cryptoarchitecture-createrandom-f.md#createrandom-1).
 
 **Since:** 9
 
@@ -246,12 +245,7 @@ export default {
 generateRandomSync(len: number): DataBlob
 ```
 
-Generates a random number of the specified length. This API returns the result synchronously.
-
-<br><br>**NOTE**
-<br>It is recommended to prioritize the use of asynchronous API, {@link generateRandom}. Synchronous API may
-take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore,
-it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
+Generates a random number of the specified length. This API returns the result synchronously. <br><br>**NOTE** <br>It is recommended to prioritize the use of asynchronous API, {@link generateRandom}. Synchronous API may take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore, it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
 
 **Since:** 10
 

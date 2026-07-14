@@ -78,9 +78,7 @@ The minimum support version of TLS protocol.
 pingInterval?: number
 ```
 
-Self defined interval of ping frame.
-default: 30. disable: 0. max: 30000. unit:second.
-Ping is performed at every pingInterval.
+Self defined interval of ping frame. default: 30. disable: 0. max: 30000. unit:second. Ping is performed at every pingInterval.
 
 **Type:** number
 
@@ -94,9 +92,7 @@ Ping is performed at every pingInterval.
 pongTimeout?: number
 ```
 
-Self defined timeout of pong frame.
-default: 30. max: 30000. unit:second. The value must be less than or equal to pingInterval.
-If no pong is received within the pongTimeout period, the websocket connection will be disconnected.
+Self defined timeout of pong frame. default: 30. max: 30000. unit:second. The value must be less than or equal to pingInterval. If no pong is received within the pongTimeout period, the websocket connection will be disconnected.
 
 **Type:** number
 

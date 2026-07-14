@@ -1,8 +1,6 @@
 # IAuthWidgetCallback (System API)
 
-Defines the callback of the authentication widget. The authentication widget uses this callback to obtain commands
-sent by the user authentication framework and perform corresponding authentication operations based on the command
-content.
+Defines the callback of the authentication widget. The authentication widget uses this callback to obtain commands sent by the user authentication framework and perform corresponding authentication operations based on the command content.
 
 **Since:** 10
 
@@ -22,9 +20,7 @@ import { userAuth } from '@kit.UserAuthenticationKit';
 sendCommand(cmdData: string): void
 ```
 
-Triggered to receive commands from the user authentication framework. The user authentication framework uses this
-callback to send commands to the identity authentication widget. The widget needs to parse the command content
-and perform corresponding operations.
+Triggered to receive commands from the user authentication framework. The user authentication framework uses this callback to send commands to the identity authentication widget. The widget needs to parse the command content and perform corresponding operations.
 
 **Since:** 10
 

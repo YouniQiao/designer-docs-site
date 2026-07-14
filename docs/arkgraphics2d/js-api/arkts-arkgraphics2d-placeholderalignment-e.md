@@ -1,15 +1,6 @@
 # PlaceholderAlignment
 
-Enumerates the vertical alignment modes of a placeholder relative to the surrounding text.
-
-![image_PlaceholderAlignment.png](../../../../reference/apis-arkgraphics2d/figures/image_PlaceholderAlignment.png)
-
-> **NOTE**
->
-> The figure shows the last three alignment modes. The first three alignment modes are similar in text baseline
-> alignment, with the comparison reference being the text baseline, indicated by the green line.
->
-> ![image_Baseline.png](../../../../reference/apis-arkgraphics2d/figures/image_Baseline.png)
+Enumerates the vertical alignment modes of a placeholder relative to the surrounding text. ![image_PlaceholderAlignment.png](../../../../reference/apis-arkgraphics2d/figures/image_PlaceholderAlignment.png) > **NOTE** > > The figure shows the last three alignment modes. The first three alignment modes are similar in text baseline > alignment, with the comparison reference being the text baseline, indicated by the green line. > > ![image_Baseline.png](../../../../reference/apis-arkgraphics2d/figures/image_Baseline.png)
 
 **Since:** 12
 

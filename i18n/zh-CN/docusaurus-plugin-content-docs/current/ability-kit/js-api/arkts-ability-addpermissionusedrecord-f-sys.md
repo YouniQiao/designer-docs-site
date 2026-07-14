@@ -12,13 +12,7 @@ function addPermissionUsedRecord(
   ): Promise<void>
 ```
 
-受权限保护的应用在被其他服务、应用调用时，可以使用该接口增加一条权限使用记录。
-建议在访问敏感权限后调用此接口，以便系统记录对应的敏感权限访问事件。使用Promise异步回调。
-
-权限使用记录包括：调用方的应用身份标识、使用的应用权限名称，以及调用方访问本应用成功和失败的次数。
-
-权限使用记录受[setPermissionUsedRecordToggleStatus](arkts-ability-setpermissionusedrecordtogglestatus-f-sys.md#setpermissionusedrecordtogglestatus-1)设置的开关状态控制。
-开关关闭时，调用此接口不会产生权限使用记录。
+受权限保护的应用在被其他服务、应用调用时，可以使用该接口增加一条权限使用记录。 建议在访问敏感权限后调用此接口，以便系统记录对应的敏感权限访问事件。使用Promise异步回调。 权限使用记录包括：调用方的应用身份标识、使用的应用权限名称，以及调用方访问本应用成功和失败的次数。 权限使用记录受[setPermissionUsedRecordToggleStatus](arkts-ability-setpermissionusedrecordtogglestatus-f-sys.md#setpermissionusedrecordtogglestatus-1)设置的开关状态控制。 开关关闭时，调用此接口不会产生权限使用记录。
 
 **起始版本：** 9
 
@@ -97,12 +91,7 @@ function addPermissionUsedRecord(
   ): void
 ```
 
-受权限保护的应用在被其他服务、应用调用时，可以使用该接口增加一条权限使用记录。建议在访问敏感权限后调用此接口，以便系统记录对应的敏感权限访问事件。使用callback异步回调。
-
-权限使用记录包括：调用方的应用身份标识、使用的应用权限名称，以及调用方访问本应用成功和失败的次数。
-
-权限使用记录受[setPermissionUsedRecordToggleStatus](arkts-ability-setpermissionusedrecordtogglestatus-f-sys.md#setpermissionusedrecordtogglestatus-1)设置的开关状态控制。开关关
-闭时，调用此接口不会产生权限使用记录。
+受权限保护的应用在被其他服务、应用调用时，可以使用该接口增加一条权限使用记录。建议在访问敏感权限后调用此接口，以便系统记录对应的敏感权限访问事件。使用callback异步回调。 权限使用记录包括：调用方的应用身份标识、使用的应用权限名称，以及调用方访问本应用成功和失败的次数。 权限使用记录受[setPermissionUsedRecordToggleStatus](arkts-ability-setpermissionusedrecordtogglestatus-f-sys.md#setpermissionusedrecordtogglestatus-1)设置的开关状态控制。开关关 闭时，调用此接口不会产生权限使用记录。
 
 **起始版本：** 9
 

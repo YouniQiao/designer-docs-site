@@ -34,8 +34,7 @@ Unique ID of the display where the touch point is located. The value must be an 
 displayX: number
 ```
 
-X coordinate of the touch point relative to the left edge of the display, in pixels. The value must be an
-integer.
+X coordinate of the touch point relative to the left edge of the display, in pixels. The value must be an integer.
 
 **Type:** number
 

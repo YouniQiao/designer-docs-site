@@ -18,8 +18,7 @@ import { OverlayManager, FrameCallback, ResolvedUIContext, NodeRenderStateChange
 current: GestureRecognizer
 ```
 
-Gesture recognizer object. Detailed gesture information can be obtained from this object. However, avoid retaining
-this object locally as it may become invalid after the node is released.
+Gesture recognizer object. Detailed gesture information can be obtained from this object. However, avoid retaining this object locally as it may become invalid after the node is released.
 
 **Type:** GestureRecognizer
 
@@ -73,8 +72,7 @@ Gesture event object.
 node?: FrameNode
 ```
 
-Node that triggers the gesture. The default value is **null**, indicating that no specific node triggers the
-gesture.
+Node that triggers the gesture. The default value is **null**, indicating that no specific node triggers the gesture.
 
 **Type:** FrameNode
 

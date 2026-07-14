@@ -1,6 +1,6 @@
 # OperationItem
 
-Operation item
+Describes the settings for filtering media files.
 
 **Since:** 22
 
@@ -18,7 +18,7 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 field?: PhotoKeys
 ```
 
-The field of the operation.
+Column name in the data table. Currently, only the following key fields are supported: **URI**, **PHOTO_TYPE**, **DISPLAY_NAME**, **SIZE**, **DURATION**, **WIDTH**, **HEIGHT**, **ORIENTATION**, **FAVORITE**, **TITLE**, **POSITION**, **PHOTO_SUBTYPE**, **DYNAMIC_RANGE_TYPE**, **COVER_POSITION**, **BURST_KEY**, **LCD_SIZE**, **THM_SIZE**, **DETAIL_TIME**, **MEDIA_SUFFIX**, **OWNER_ALBUM_ID**, **ASPECT_RATIO** and **DATE_TAKEN_MS**. When [select](arkts-medialibrary-photoviewpicker-c.md#select-1) is used to set this parameter, an invalid field results in error code 401. When [@ohos.file.PhotoPickerComponent (PhotoPickerComponent)](arkts-file-photopickercomponent.md) is used to set this parameter, an invalid field does not trigger the **onPickerControllerReady** callback. This field is not involved in non-conditional predicates such as **and**, **or**, **beginWrap**, and **endWrap**.
 
 **Type:** PhotoKeys
 
@@ -36,7 +36,7 @@ The field of the operation.
 operationType: OperationType
 ```
 
-The type of the operation
+Predicates.
 
 **Type:** OperationType
 
@@ -54,8 +54,7 @@ The type of the operation
 value?: Array<OperationValueType>
 ```
 
-The value of the operation. The value length follows operationType-specific limit N (max 10),
-truncated to first N if exceeded.
+Values needed for matching different predicates. This field is not involved in non-conditional predicates such as **and**, **or**, **beginWrap**, and **endWrap**. The maximum length is 10; if exceeded, only the first 10 values are considered.
 
 **Type:** Array<OperationValueType>
 

@@ -140,9 +140,7 @@ Hyperlink style key, applicable to [UrlStyle](arkts-arkui-urlstyle-c.md).
 LINE_SPACING = 8
 ```
 
-Text line spacing style key, applicable to [LineSpacingStyle](arkts-arkui-linespacingstyle-c.md).
-
-**Since**: 26.0.0
+Text line spacing style key, applicable to [LineSpacingStyle](arkts-arkui-linespacingstyle-c.md). **Since**: 26.0.0
 
 **Since:** 26.0.0
 

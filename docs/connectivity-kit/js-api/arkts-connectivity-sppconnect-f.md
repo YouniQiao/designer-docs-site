@@ -12,8 +12,7 @@ import { bluetoothManager } from '@kit.ConnectivityKit';
 function sppConnect(device: string, option: SppOption, callback: AsyncCallback<number>): void
 ```
 
-Connects to a remote device over the socket.
-On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
+Connects to a remote device over the socket. On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
 
 **Since:** 9
 

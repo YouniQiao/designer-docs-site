@@ -18,8 +18,7 @@ import { distributedDeviceManager } from '@kit.DistributedServiceKit';
 deviceId: string
 ```
 
-Device ID. The value is the result of obfuscating the udid-hash (hash value of the UDID), **appid**, and salt
-using the SHA-256 algorithm.
+Device ID. The value is the result of obfuscating the udid-hash (hash value of the UDID), **appid**, and salt using the SHA-256 algorithm.
 
 **Type:** string
 

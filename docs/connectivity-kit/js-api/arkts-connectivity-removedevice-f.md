@@ -12,10 +12,7 @@ import { wifiManager } from '@kit.ConnectivityKit';
 function removeDevice(id: number): void
 ```
 
-Remove a Wi-Fi DeviceConfig with networkId.
-After a Wi-Fi DeviceConfig is removed, its configuration will be deleted from the list of Wi-Fi configurations.
-If the Wi-Fi DeviceConfig is being connected, the connection will be interrupted.
-The application can only delete Wi-Fi DeviceConfig it has created.
+Remove a Wi-Fi DeviceConfig with networkId. After a Wi-Fi DeviceConfig is removed, its configuration will be deleted from the list of Wi-Fi configurations. If the Wi-Fi DeviceConfig is being connected, the connection will be interrupted. The application can only delete Wi-Fi DeviceConfig it has created.
 
 **Since:** 15
 

@@ -20,14 +20,7 @@ import { dataShare } from '@kit.ArkData';
 isProxy?: boolean
 ```
 
-Whether the [DataShareHelper](arkts-arkdata-datasharehelperoptions-i-sys.md) is in proxy mode. The default value is
-**false**.
-
-If the value is **true**, the [DataShareHelper](arkts-arkdata-datasharehelperoptions-i-sys.md) to be created is in proxy
-mode, and all operations will not open the data provider application unless the database does not exist. If the
-database does not exist,
-[createDataShareHelper](dataShare.createDataShareHelper(context: Context, uri: string, options: DataShareHelperOptions, callback: AsyncCallback<DataShareHelper>))
-will start the data provider to create a database.
+Whether the [DataShareHelper](arkts-arkdata-datasharehelperoptions-i-sys.md) is in proxy mode. The default value is **false**. If the value is **true**, the [DataShareHelper](arkts-arkdata-datasharehelperoptions-i-sys.md) to be created is in proxy mode, and all operations will not open the data provider application unless the database does not exist. If the database does not exist, [createDataShareHelper](dataShare.createDataShareHelper(context: Context, uri: string, options: DataShareHelperOptions, callback: AsyncCallback<DataShareHelper>)) will start the data provider to create a database.
 
 **Type:** boolean
 

@@ -48,12 +48,7 @@ The command value {@link CommandInfo}
 parameter?: LoopMode | string | number
 ```
 
-parameter of the command. Whether this command requires parameters, see {@link AVSessionCommand}
-seek command requires a number parameter
-setSpeed command requires a number parameter
-setLoopMode command requires a {@link LoopMode} parameter.
-toggleFavorite command requires assetId {@link AVMetadata.assetId} parameter
-other commands need no parameter
+parameter of the command. Whether this command requires parameters, see {@link AVSessionCommand} seek command requires a number parameter setSpeed command requires a number parameter setLoopMode command requires a {@link LoopMode} parameter. toggleFavorite command requires assetId {@link AVMetadata.assetId} parameter other commands need no parameter
 
 **Type:** LoopMode | string | number
 

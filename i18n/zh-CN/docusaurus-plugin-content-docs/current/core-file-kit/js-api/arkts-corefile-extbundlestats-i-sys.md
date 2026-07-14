@@ -32,8 +32,7 @@ businessName: string
 flag: boolean
 ```
 
-系统应用或系统服务的空间占用是否需要在“设置-存储”界面单独展示。true表示单独显示，false表示不单独显示。
-该值为false时，空间占用会被归并到businessName指定的应用中。
+系统应用或系统服务的空间占用是否需要在“设置-存储”界面单独展示。true表示单独显示，false表示不单独显示。 该值为false时，空间占用会被归并到businessName指定的应用中。
 
 **类型：** boolean
 

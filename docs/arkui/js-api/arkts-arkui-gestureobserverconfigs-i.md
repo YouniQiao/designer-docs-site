@@ -1,7 +1,6 @@
 # GestureObserverConfigs
 
-Specifies the gesture callback phases to listen for (passing an empty array will be ineffective). Notifications are
-sent only when the gesture triggers the specified phases.
+Specifies the gesture callback phases to listen for (passing an empty array will be ineffective). Notifications are sent only when the gesture triggers the specified phases.
 
 **Since:** 20
 

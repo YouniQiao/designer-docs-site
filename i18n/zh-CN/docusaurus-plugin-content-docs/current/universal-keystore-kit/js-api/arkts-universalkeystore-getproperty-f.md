@@ -6,14 +6,7 @@
 function getProperty(resourceId: string, propertyId: string, params?: Array<HuksExternalCryptoParam>): Promise<Array<HuksExternalCryptoParam>>
 ```
 
-调用此接口获取属性值并返回结果。使用Promise异步回调。
-
-propertyId表示查询属性的ID信息，当前仅支持GMT 0016-2023中定义的SKF接口名作为属性ID，支持的ID包括如下：
-
-- SKF_EnumDev
-- SKF_GetDevInfo
-- SKF_EnumApplication
-- SKF_EnumContainer
+调用此接口获取属性值并返回结果。使用Promise异步回调。 propertyId表示查询属性的ID信息，当前仅支持GMT 0016-2023中定义的SKF接口名作为属性ID，支持的ID包括如下： - SKF_EnumDev - SKF_GetDevInfo - SKF_EnumApplication - SKF_EnumContainer
 
 **起始版本：** 22
 

@@ -1,10 +1,6 @@
 # @ohos.charger
 
-The **charger** module enumerates charging types.
-
-> **NOTE**
->
-> The APIs provided by this module are system APIs.
+The **charger** module enumerates charging types. > **NOTE** > > The APIs provided by this module are system APIs.
 
 **Since:** 10
 

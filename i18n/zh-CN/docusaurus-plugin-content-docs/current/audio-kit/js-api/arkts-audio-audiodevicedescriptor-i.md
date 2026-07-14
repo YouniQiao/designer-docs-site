@@ -12,9 +12,7 @@
 readonly address: string
 ```
 
-设备静态MAC地址。
-
-如果是蓝牙设备，需要申请权限ohos.permission.USE_BLUETOOTH。
+设备静态MAC地址。 如果是蓝牙设备，需要申请权限ohos.permission.USE_BLUETOOTH。
 
 **类型：** string
 
@@ -170,9 +168,7 @@ readonly model?: string
 readonly name: string
 ```
 
-设备名称。
-
-如果是蓝牙设备，需要申请权限ohos.permission.USE_BLUETOOTH。
+设备名称。 如果是蓝牙设备，需要申请权限ohos.permission.USE_BLUETOOTH。
 
 **类型：** string
 

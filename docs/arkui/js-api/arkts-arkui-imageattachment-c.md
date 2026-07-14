@@ -34,9 +34,7 @@ A constructor used to create an image object.
 constructor(attachment: Optional<AttachmentType>)
 ```
 
-A constructor used to create an image object. Compared to the constructor with a **value** type parameter, this
-constructor with an **attachment** type parameter supports images of **undefined** and
-[ResourceStr](arkts-arkui-resourcestr-t.md) types.
+A constructor used to create an image object. Compared to the constructor with a **value** type parameter, this constructor with an **attachment** type parameter supports images of **undefined** and [ResourceStr](arkts-arkui-resourcestr-t.md) types.
 
 **Since:** 15
 
@@ -112,9 +110,7 @@ Image scale type of the styled string.
 readonly size?: SizeOptions
 ```
 
-Image size of the styled string.
-
-Number-type values use px as the unit.
+Image size of the styled string. Number-type values use px as the unit.
 
 **Type:** SizeOptions
 
@@ -132,11 +128,7 @@ Number-type values use px as the unit.
 readonly sizeInVp?: SizeOptions
 ```
 
-Image size of the styled string.
-
-Number-type values use vp as the unit.
-
-If **ImageAttachment** is set to a negative value or **undefined**, **undefined** is returned.
+Image size of the styled string. Number-type values use vp as the unit. If **ImageAttachment** is set to a negative value or **undefined**, **undefined** is returned.
 
 **Type:** SizeOptions
 
@@ -154,12 +146,7 @@ If **ImageAttachment** is set to a negative value or **undefined**, **undefined*
 readonly supportSvg2?: boolean
 ```
 
-Whether to enable
-[enhanced SVG tag parsing capabilities](../../../../reference/apis-arkui/arkui-ts/ts-image-svg2-capabilities.md).
-
-**true**: Enable enhanced SVG tag parsing. **false**: Use original SVG tag parsing.
-
-Default value: **false**
+Whether to enable [enhanced SVG tag parsing capabilities](../../../../reference/apis-arkui/arkui-ts/ts-image-svg2-capabilities.md). **true**: Enable enhanced SVG tag parsing. **false**: Use original SVG tag parsing. Default value: **false**
 
 **Type:** boolean
 

@@ -12,14 +12,7 @@ import { image } from '@kit.ImageKit';
 function createAuxiliaryPicture(buffer: ArrayBuffer, size: Size, type: AuxiliaryPictureType): AuxiliaryPicture
 ```
 
-Creates an AuxiliaryPicture instance based on the ArrayBuffer image data, auxiliary picture size, and auxiliary
-picture type. This API accepts only continuous pixel data in BGRA format and will create an auxiliary picture in
-RGBA format.
-
-Images occupy a large amount of memory. When you finish using an AuxiliaryPicture instance, call
-[release](arkts-image-auxiliarypicture-i.md#release-1) to free the memory promptly. Before
-releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the
-instance is no longer needed.
+Creates an AuxiliaryPicture instance based on the ArrayBuffer image data, auxiliary picture size, and auxiliary picture type. This API accepts only continuous pixel data in BGRA format and will create an auxiliary picture in RGBA format. Images occupy a large amount of memory. When you finish using an AuxiliaryPicture instance, call [release](arkts-image-auxiliarypicture-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
 
 **Since:** 13
 

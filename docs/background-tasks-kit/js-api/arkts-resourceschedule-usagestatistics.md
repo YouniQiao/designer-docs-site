@@ -1,12 +1,6 @@
 # @ohos.resourceschedule.usageStatistics
 
-Provides methods for managing bundle usage statistics,
-including the methods for querying bundle usage information and state data.
-
-You can use the methods defined in this class to query
-the usage history and states of bundles in a specified period.
-The system stores the query result in a {@link BundleStatsInfo} instance and
-then returns it to you.
+Provides methods for managing bundle usage statistics, including the methods for querying bundle usage information and state data. You can use the methods defined in this class to query the usage history and states of bundles in a specified period. The system stores the query result in a {@link BundleStatsInfo} instance and then returns it to you.
 
 **Since:** 9
 
@@ -28,20 +22,20 @@ import { usageStatistics } from '@kit.BackgroundTasksKit';
 | [isIdleState](arkts-backgroundtasks-isidlestate-f-sys.md#isidlestate-1) | Checks whether the application with a specified bundle name is in the idle state. |
 | [isIdleState](arkts-backgroundtasks-isidlestate-f-sys.md#isidlestate-2) | Checks whether the application with a specified bundle name is in the idle state. |
 | [isIdleStateSync](arkts-backgroundtasks-isidlestatesync-f-sys.md#isidlestatesync-1) | Checks whether the application with a specified bundle name is in the idle state. |
-| [queryAppGroup](arkts-backgroundtasks-queryappgroup-f-sys.md#queryappgroup-1) | Queries the app group of the calling application.The priority defined in a priority group restricts the resource usage of an application,for example, restricting the running of background tasks. |
-| [queryAppGroup](arkts-backgroundtasks-queryappgroup-f-sys.md#queryappgroup-2) | Queries the app group of the calling application.The priority defined in a priority group restricts the resource usage of an application,for example, restricting the running of background tasks. |
-| [queryAppGroup](arkts-backgroundtasks-queryappgroup-f-sys.md#queryappgroup-3) | Queries the usage priority group by bundleName.The priority defined in a priority group restricts the resource usage of an application,for example, restricting the running of background tasks. |
-| [queryAppGroup](arkts-backgroundtasks-queryappgroup-f-sys.md#queryappgroup-4) | Queries the usage priority group by bundleName.The priority defined in a priority group restricts the resource usage of an application,for example, restricting the running of background tasks. |
-| [queryAppGroupSync](arkts-backgroundtasks-queryappgroupsync-f-sys.md#queryappgroupsync-1) | Queries the app group of the calling application.The priority defined in a priority group restricts the resource usage of an application,for example, restricting the running of background tasks. |
-| [queryAppGroupSync](arkts-backgroundtasks-queryappgroupsync-f-sys.md#queryappgroupsync-2) | Queries the usage priority group by bundleName.The priority defined in a priority group restricts the resource usage of an application,for example, restricting the running of background tasks. |
-| [queryAppStatsInfos](arkts-backgroundtasks-queryappstatsinfos-f-sys.md#queryappstatsinfos-1) | Queries usage information about each application within a specified period.This method queries usage information at the {@link #BY_OPTIMIZED} interval by default. |
+| [queryAppGroup](arkts-backgroundtasks-queryappgroup-f-sys.md#queryappgroup-1) | Queries the app group of the calling application. The priority defined in a priority group restricts the resource usage of an application, for example, restricting the running of background tasks. |
+| [queryAppGroup](arkts-backgroundtasks-queryappgroup-f-sys.md#queryappgroup-2) | Queries the app group of the calling application. The priority defined in a priority group restricts the resource usage of an application, for example, restricting the running of background tasks. |
+| [queryAppGroup](arkts-backgroundtasks-queryappgroup-f-sys.md#queryappgroup-3) | Queries the usage priority group by bundleName. The priority defined in a priority group restricts the resource usage of an application, for example, restricting the running of background tasks. |
+| [queryAppGroup](arkts-backgroundtasks-queryappgroup-f-sys.md#queryappgroup-4) | Queries the usage priority group by bundleName. The priority defined in a priority group restricts the resource usage of an application, for example, restricting the running of background tasks. |
+| [queryAppGroupSync](arkts-backgroundtasks-queryappgroupsync-f-sys.md#queryappgroupsync-1) | Queries the app group of the calling application. The priority defined in a priority group restricts the resource usage of an application, for example, restricting the running of background tasks. |
+| [queryAppGroupSync](arkts-backgroundtasks-queryappgroupsync-f-sys.md#queryappgroupsync-2) | Queries the usage priority group by bundleName. The priority defined in a priority group restricts the resource usage of an application, for example, restricting the running of background tasks. |
+| [queryAppStatsInfos](arkts-backgroundtasks-queryappstatsinfos-f-sys.md#queryappstatsinfos-1) | Queries usage information about each application within a specified period. This method queries usage information at the {@link #BY_OPTIMIZED} interval by default. |
 | [queryBundleEvents](arkts-backgroundtasks-querybundleevents-f-sys.md#querybundleevents-1) | Queries state data of all bundles within a specified period identified by the start and end time. |
 | [queryBundleEvents](arkts-backgroundtasks-querybundleevents-f-sys.md#querybundleevents-2) | Queries state data of all bundles within a specified period identified by the start and end time. |
 | [queryBundleEvents](arkts-backgroundtasks-querybundleevents-f-sys.md#querybundleevents-3) | Queries state data of all bundles within a specified period identified by the start and end time. |
 | [queryBundleStatsInfoByInterval](arkts-backgroundtasks-querybundlestatsinfobyinterval-f-sys.md#querybundlestatsinfobyinterval-1) | Queries usage information about each bundle within a specified period at a specified interval. |
 | [queryBundleStatsInfoByInterval](arkts-backgroundtasks-querybundlestatsinfobyinterval-f-sys.md#querybundlestatsinfobyinterval-2) | Queries usage information about each bundle within a specified period at a specified interval. |
-| [queryBundleStatsInfos](arkts-backgroundtasks-querybundlestatsinfos-f-sys.md#querybundlestatsinfos-1) | Queries usage information about each bundle within a specified period.This method queries usage information at the {@link #BY_OPTIMIZED} interval by default. |
-| [queryBundleStatsInfos](arkts-backgroundtasks-querybundlestatsinfos-f-sys.md#querybundlestatsinfos-2) | Queries usage information about each bundle within a specified period.This method queries usage information at the {@link #BY_OPTIMIZED} interval by default. |
+| [queryBundleStatsInfos](arkts-backgroundtasks-querybundlestatsinfos-f-sys.md#querybundlestatsinfos-1) | Queries usage information about each bundle within a specified period. This method queries usage information at the {@link #BY_OPTIMIZED} interval by default. |
+| [queryBundleStatsInfos](arkts-backgroundtasks-querybundlestatsinfos-f-sys.md#querybundlestatsinfos-2) | Queries usage information about each bundle within a specified period. This method queries usage information at the {@link #BY_OPTIMIZED} interval by default. |
 | [queryCurrentBundleEvents](arkts-backgroundtasks-querycurrentbundleevents-f-sys.md#querycurrentbundleevents-1) | Queries state data of the current bundle within a specified period. |
 | [queryCurrentBundleEvents](arkts-backgroundtasks-querycurrentbundleevents-f-sys.md#querycurrentbundleevents-2) | Queries state data of the current bundle within a specified period. |
 | [queryCurrentBundleEvents](arkts-backgroundtasks-querycurrentbundleevents-f-sys.md#querycurrentbundleevents-3) | Queries state data of the current bundle within a specified period. |

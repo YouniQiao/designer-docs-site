@@ -46,8 +46,7 @@ Information returned by the callback.
 devPipe: USBDevicePipe
 ```
 
-USB device pipe, which is used to determine the bus number and device address. You need to call
-[usbManager.connectDevice](arkts-basicservices-connectdevice-f.md#connectdevice-1)to obtain its value.
+USB device pipe, which is used to determine the bus number and device address. You need to call [usbManager.connectDevice](arkts-basicservices-connectdevice-f.md#connectdevice-1)to obtain its value.
 
 **Type:** USBDevicePipe
 
@@ -89,8 +88,7 @@ USB transfer flag.
 isoPacketCount: number
 ```
 
-Number of data packets during real-time transfer, used only for I/Os with real-time transfer endpoints. The value
-must be a non-negative number.
+Number of data packets during real-time transfer, used only for I/Os with real-time transfer endpoints. The value must be a non-negative number.
 
 **Type:** number
 

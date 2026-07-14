@@ -75,9 +75,7 @@ offEventNotify(callback?: Callback<Event>): void
 onEventNotify(callback: Callback<Event>): void
 ```
 
-订阅事件通知。
-
-只有授予了ohos.permission.NEARLINK_ACCESS权限的系统应用程序才能访问此事件。
+订阅事件通知。 只有授予了ohos.permission.NEARLINK_ACCESS权限的系统应用程序才能访问此事件。
 
 **起始版本：** 26.0.0
 
@@ -183,9 +181,7 @@ setPropertyIndication(property: Property, enable: boolean): Promise<void>
 writeDescriptor(descriptor: PropertyDescriptor): Promise<void>
 ```
 
-写入服务端的描述符。
-
-此方法不支持写入客户端属性配置描述符。要写入客户端属性配置描述符，请改为调用[setPropertyNotification](arkts-connectivity-client-i.md#setpropertynotification-1)或[setPropertyIndication](arkts-connectivity-client-i-sys.md#setpropertyindication-1)。
+写入服务端的描述符。 此方法不支持写入客户端属性配置描述符。要写入客户端属性配置描述符，请改为调用[setPropertyNotification](arkts-connectivity-client-i.md#setpropertynotification-1)或[setPropertyIndication](arkts-connectivity-client-i-sys.md#setpropertyindication-1)。
 
 **起始版本：** 26.0.0
 

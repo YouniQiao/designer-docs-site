@@ -1087,7 +1087,7 @@ Sets the image compression quality for the photo capture extension configuration
 
 | Type | Description |
 | -- | -- |
-| [Camera_ErrorCode](capi-camera-h.md#camera_errorcode) | CAMERA_OK: The operation is successful.<br>     <br>CAMERA_INVALID_ARGUMENT: A parameter is missing or the parameter type is incorrect.<br>     <br>CAMERA_OPERATION_NOT_ALLOWED: The operation is not allowed. |
+| [Camera_ErrorCode](capi-camera-h.md#camera_errorcode) | <ul><br>         <li>CAMERA_OK: The operation is successful.</li><br>         <li>CAMERA_INVALID_ARGUMENT: A parameter is missing or the parameter type is incorrect.</li><br>         </ul> |
 
 ### OH_PhotoCaptureSettingExt_SetImageRotation()
 
@@ -1112,7 +1112,7 @@ Sets the image rotation for the photo capture extension configuration.
 
 | Type | Description |
 | -- | -- |
-| [Camera_ErrorCode](capi-camera-h.md#camera_errorcode) | CAMERA_OK: The operation is successful.<br>     <br>CAMERA_INVALID_ARGUMENT: A parameter is missing or the parameter type is incorrect.<br>     <br>CAMERA_OPERATION_NOT_ALLOWED: The operation is not allowed. |
+| [Camera_ErrorCode](capi-camera-h.md#camera_errorcode) | <ul><br>         <li>CAMERA_OK: The operation is successful.</li><br>         <li>CAMERA_INVALID_ARGUMENT: A parameter is missing or the parameter type is incorrect.</li><br>         </ul> |
 
 ### OH_PhotoCaptureSettingExt_SetMirror()
 
@@ -1137,7 +1137,7 @@ Sets the image mirror for the photo capture extension configuration.
 
 | Type | Description |
 | -- | -- |
-| [Camera_ErrorCode](capi-camera-h.md#camera_errorcode) | CAMERA_OK: The operation is successful.<br>     <br>CAMERA_INVALID_ARGUMENT: A parameter is missing or the parameter type is incorrect.<br>     <br>CAMERA_OPERATION_NOT_ALLOWED: The operation is not allowed. |
+| [Camera_ErrorCode](capi-camera-h.md#camera_errorcode) | <ul><br>         <li>CAMERA_OK: The operation is successful.</li><br>         <li>CAMERA_INVALID_ARGUMENT: A parameter is missing or the parameter type is incorrect.</li><br>         </ul> |
 
 ### OH_PhotoOutput_DestroyPhotoCaptureSettingExt()
 
@@ -1186,7 +1186,7 @@ Sets the image location for the photo capture extension configuration.
 
 | Type | Description |
 | -- | -- |
-| [Camera_ErrorCode](capi-camera-h.md#camera_errorcode) | CAMERA_OK: The operation is successful.<br>     <br>CAMERA_INVALID_ARGUMENT: A parameter is missing or the parameter type is incorrect.<br>     <br>CAMERA_OPERATION_NOT_ALLOWED: The operation is not allowed. |
+| [Camera_ErrorCode](capi-camera-h.md#camera_errorcode) | <ul><br>         <li>CAMERA_OK: The operation is successful.</li><br>         <li>CAMERA_INVALID_ARGUMENT: A parameter is missing or the parameter type is incorrect.</li><br>         </ul> |
 
 ### OH_PhotoOutput_EnableAutoExtendedGainmapDelivery()
 

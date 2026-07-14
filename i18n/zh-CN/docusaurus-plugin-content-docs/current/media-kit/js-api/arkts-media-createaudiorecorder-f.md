@@ -6,11 +6,7 @@
 function createAudioRecorder(): AudioRecorder
 ```
 
-创建音频录制的实例来控制音频的录制。一台设备只允许创建一个录制实例。
-
-> **说明：**
-> > 从API version 6开始支持，从API version 9开始废弃，建议使用
-> [createAVRecorder](arkts-media-createavrecorder-f.md#createavrecorder-1)替代。
+创建音频录制的实例来控制音频的录制。一台设备只允许创建一个录制实例。 > **说明：** > > 从API version 6开始支持，从API version 9开始废弃，建议使用 > [createAVRecorder](arkts-media-createavrecorder-f.md#createavrecorder-1)替代。
 
 **起始版本：** 6
 

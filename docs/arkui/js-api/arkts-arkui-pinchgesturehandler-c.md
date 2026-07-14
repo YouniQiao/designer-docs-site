@@ -36,8 +36,7 @@ Constructor used to create a pinch gesture handler instance.
 onActionCancel(event: Callback<void>): PinchGestureHandler
 ```
 
-Sets the callback for pinch gesture cancellation. This callback is triggered when a touch cancellation event occurs
-after successful recognition. No gesture event information is returned.
+Sets the callback for pinch gesture cancellation. This callback is triggered when a touch cancellation event occurs after successful recognition. No gesture event information is returned.
 
 **Since:** 12
 
@@ -65,10 +64,7 @@ after successful recognition. No gesture event information is returned.
 onActionCancel(event: Callback<GestureEvent>): PinchGestureHandler
 ```
 
-Sets the callback for pinch gesture cancellation. This callback is triggered when a touch cancellation event occurs
-after successful recognition. Compared with
-[onActionCancel](arkts-arkui-pinchgesturehandler-c.md#onactioncancel-1), this API returns gesture
-event information.
+Sets the callback for pinch gesture cancellation. This callback is triggered when a touch cancellation event occurs after successful recognition. Compared with [onActionCancel](arkts-arkui-pinchgesturehandler-c.md#onactioncancel-1), this API returns gesture event information.
 
 **Since:** 18
 
@@ -96,8 +92,7 @@ event information.
 onActionEnd(event: Callback<GestureEvent>): PinchGestureHandler
 ```
 
-Sets the callback for pinch gesture recognition completion. This callback is triggered when all fingers are lifted
-after successful recognition.
+Sets the callback for pinch gesture recognition completion. This callback is triggered when all fingers are lifted after successful recognition.
 
 **Since:** 12
 

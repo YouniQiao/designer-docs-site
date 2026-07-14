@@ -6,9 +6,7 @@
 function cleanBundleCacheFiles(bundleName: string, callback: AsyncCallback<void>): void
 ```
 
-根据给定的bundleName清理BundleCache。使用callback异步回调。
-
-调用方清理自身缓存数据时不需要权限。
+根据给定的bundleName清理BundleCache。使用callback异步回调。 调用方清理自身缓存数据时不需要权限。
 
 **起始版本：** 9
 
@@ -66,9 +64,7 @@ try {
 function cleanBundleCacheFiles(bundleName: string): Promise<void>
 ```
 
-根据给定的bundleName清理BundleCache。使用Promise异步回调。
-
-调用方清理自身缓存数据时不需要权限。
+根据给定的bundleName清理BundleCache。使用Promise异步回调。 调用方清理自身缓存数据时不需要权限。
 
 **起始版本：** 9
 
@@ -129,9 +125,7 @@ try {
 function cleanBundleCacheFiles(bundleName: string, appIndex: number): Promise<void>
 ```
 
-根据给定的bundleName和appIndex清理BundleCache。使用Promise异步回调。
-
-调用方清理自身缓存数据时不需要权限。
+根据给定的bundleName和appIndex清理BundleCache。使用Promise异步回调。 调用方清理自身缓存数据时不需要权限。
 
 **起始版本：** 15
 

@@ -1,8 +1,6 @@
 # EllipsisMode
 
-省略号类型枚举。
-
-EllipsisMode.START和EllipsisMode.MIDDLE仅在单行超长文本生效。
+省略号类型枚举。 EllipsisMode.START和EllipsisMode.MIDDLE仅在单行超长文本生效。
 
 **起始版本：** 12
 

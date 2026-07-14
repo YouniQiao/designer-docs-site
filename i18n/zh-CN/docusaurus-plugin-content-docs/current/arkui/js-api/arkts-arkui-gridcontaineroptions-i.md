@@ -16,9 +16,7 @@ Defines the options of GridContainer.
 columns?: number | "auto"
 ```
 
-当前布局总列数。
-
-默认值：'auto'
+当前布局总列数。 默认值：'auto'
 
 **类型：** number | "auto"
 
@@ -72,9 +70,7 @@ margin?: number | string
 sizeType?: SizeType
 ```
 
-选用设备宽度类型。
-
-默认值：SizeType.Auto
+选用设备宽度类型。 默认值：SizeType.Auto
 
 **类型：** SizeType
 

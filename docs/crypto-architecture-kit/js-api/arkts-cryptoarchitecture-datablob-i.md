@@ -1,10 +1,6 @@
 # DataBlob
 
-Encapsulates binary data. The core field **data** is of the Uint8Array type.
-
-> **NOTE**
->
-> The Uint8Array typed array represents an array of 8-bit unsigned integers.
+Encapsulates binary data. The core field **data** is of the Uint8Array type. > **NOTE** > > The Uint8Array typed array represents an array of 8-bit unsigned integers.
 
 **Since:** 9
 

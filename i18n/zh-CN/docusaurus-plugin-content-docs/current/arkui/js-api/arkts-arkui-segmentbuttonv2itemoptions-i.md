@@ -1,12 +1,6 @@
 # SegmentButtonV2ItemOptions
 
-配置分段按钮选项参数。
-
-> **说明**
->
-> 1. 当配置`symbol`和`icon`时，`symbol`的显示优先级更高。
->
-> 2. 当`symbol`和`symbolModifier`同时设置HM Symbol资源时，`symbolModifier`设置的资源具有更高的显示优先级。
+配置分段按钮选项参数。 > **说明** > > 1. 当配置`symbol`和`icon`时，`symbol`的显示优先级更高。 > > 2. 当`symbol`和`symbolModifier`同时设置HM Symbol资源时，`symbolModifier`设置的资源具有更高的显示优先级。
 
 **起始版本：** 18
 
@@ -18,13 +12,7 @@
 accessibilityDescription?: ResourceStr
 ```
 
-分段按钮选项的无障碍说明[accessibilityDescription](../arkts-components/arkts-arkui-commonmethod-c.md#accessibilitydescription-1)。
-
-默认值：""
-
-值为undefined时，按默认值处理。
-
-装饰器类型：@Trace
+分段按钮选项的无障碍说明[accessibilityDescription](../arkts-components/arkts-arkui-commonmethod-c.md#accessibilitydescription-1)。 默认值："" 值为undefined时，按默认值处理。 装饰器类型：@Trace
 
 **类型：** ResourceStr
 
@@ -42,13 +30,7 @@ accessibilityDescription?: ResourceStr
 accessibilityLevel?: string
 ```
 
-分段按钮选项的无障碍重要性[accessibilityLevel](../arkts-components/arkts-arkui-commonmethod-c.md#accessibilitylevel-1)。
-
-默认值："auto"
-
-值为undefined时，按默认值处理。
-
-装饰器类型：@Trace
+分段按钮选项的无障碍重要性[accessibilityLevel](../arkts-components/arkts-arkui-commonmethod-c.md#accessibilitylevel-1)。 默认值："auto" 值为undefined时，按默认值处理。 装饰器类型：@Trace
 
 **类型：** string
 
@@ -66,13 +48,7 @@ accessibilityLevel?: string
 accessibilityText?: ResourceStr
 ```
 
-分段按钮选项的无障碍文本[accessibilityText](../arkts-components/arkts-arkui-commonmethod-c.md#accessibilitytext-1)。
-
-默认值：""
-
-值为undefined时，按默认值处理。
-
-装饰器类型：@Trace
+分段按钮选项的无障碍文本[accessibilityText](../arkts-components/arkts-arkui-commonmethod-c.md#accessibilitytext-1)。 默认值："" 值为undefined时，按默认值处理。 装饰器类型：@Trace
 
 **类型：** ResourceStr
 
@@ -90,15 +66,7 @@ accessibilityText?: ResourceStr
 enabled?: boolean
 ```
 
-分段按钮选项是否可用。
-
-默认值：true
-
-true：可用；false：不可用。
-
-值为undefined时，按默认值处理。
-
-装饰器类型：@Trace
+分段按钮选项是否可用。 默认值：true true：可用；false：不可用。 值为undefined时，按默认值处理。 装饰器类型：@Trace
 
 **类型：** boolean
 
@@ -116,11 +84,7 @@ true：可用；false：不可用。
 icon?: ResourceStr
 ```
 
-分段按钮选项图片类型图标。
-
-默认值：undefined
-
-装饰器类型：@Trace
+分段按钮选项图片类型图标。 默认值：undefined 装饰器类型：@Trace
 
 **类型：** ResourceStr
 
@@ -138,11 +102,7 @@ icon?: ResourceStr
 iconModifier?: ImageModifier
 ```
 
-分段按钮选项图片类型图标属性的样式修改器。
-
-默认值：undefined
-
-装饰器类型：@Trace
+分段按钮选项图片类型图标属性的样式修改器。 默认值：undefined 装饰器类型：@Trace
 
 **类型：** ImageModifier
 
@@ -160,11 +120,7 @@ iconModifier?: ImageModifier
 symbol?: Resource
 ```
 
-分段按钮选项的HM Symbol类型图标。
-
-默认值：undefined
-
-装饰器类型：@Trace
+分段按钮选项的HM Symbol类型图标。 默认值：undefined 装饰器类型：@Trace
 
 **类型：** Resource
 
@@ -182,11 +138,7 @@ symbol?: Resource
 symbolModifier?: SymbolGlyphModifier
 ```
 
-分段按钮选项HM Symbol类型图标属性样式修改器。
-
-默认值：undefined
-
-装饰器类型：@Trace
+分段按钮选项HM Symbol类型图标属性样式修改器。 默认值：undefined 装饰器类型：@Trace
 
 **类型：** SymbolGlyphModifier
 
@@ -204,11 +156,7 @@ symbolModifier?: SymbolGlyphModifier
 text?: ResourceStr
 ```
 
-分段按钮选项文本。
-
-默认值：undefined
-
-装饰器类型：@Trace
+分段按钮选项文本。 默认值：undefined 装饰器类型：@Trace
 
 **类型：** ResourceStr
 
@@ -226,11 +174,7 @@ text?: ResourceStr
 textModifier?: TextModifier
 ```
 
-分段按钮选项文本属性样式修改器。
-
-默认值：undefined
-
-装饰器类型：@Trace
+分段按钮选项文本属性样式修改器。 默认值：undefined 装饰器类型：@Trace
 
 **类型：** TextModifier
 

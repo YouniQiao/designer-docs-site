@@ -4,9 +4,7 @@
 export type UIServiceProxy = _UIServiceProxy.default
 ```
 
-Defines the capability for data communication with the UIServiceExtensionAbility. UIServiceExtensionAbility is a
-special type of ExtensionAbility provided by the system and is used to provide extended capabilities related to
-floating windows.
+Defines the capability for data communication with the UIServiceExtensionAbility. UIServiceExtensionAbility is a special type of ExtensionAbility provided by the system and is used to provide extended capabilities related to floating windows.
 
 **Since:** 14
 

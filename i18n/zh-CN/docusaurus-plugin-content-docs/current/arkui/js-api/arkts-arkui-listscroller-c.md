@@ -1,10 +1,6 @@
 # ListScroller
 
-List组件的滚动控制器，通过它控制List组件的滚动，仅支持一对一绑定到List组件。
-
-> **说明：**
->
-> ListScroller继承自[Scroller](arkts-arkui-scroller-c.md)，具有[Scroller](arkts-arkui-scroller-c.md)的全部方法。
+List组件的滚动控制器，通过它控制List组件的滚动，仅支持一对一绑定到List组件。 > **说明：** > > ListScroller继承自[Scroller](arkts-arkui-scroller-c.md)，具有[Scroller](arkts-arkui-scroller-c.md)的全部方法。
 
 **继承/实现关系：** ListScroller extends [Scroller](arkts-arkui-scroller-c.md)
 
@@ -47,14 +43,7 @@ closeAllSwipeActions(options?: CloseSwipeActionOptions): void
 getItemRectInGroup(index: number, indexInGroup: number): RectResult
 ```
 
-获取[ListItemGroup](arkts-arkui-listitemgroup.md)中的[ListItem](arkts-arkui-listitem.md)的大小和相对于List的位置。
-
-> **说明：**
->
-> - index必须是当前显示区域显示的子组件的索引值，否则视index为非法值。
-> - 索引值为index的子组件必须是ListItemGroup，否则视index为非法值。
-> - indexInGroup必须是当前显示区域内ListItemGroup中显示的ListItem的索引值，否则视indexInGroup为非法值。
-> - index或者indexInGroup为非法值时返回的大小和位置均为0。
+获取[ListItemGroup](arkts-arkui-listitemgroup.md)中的[ListItem](arkts-arkui-listitem.md)的大小和相对于List的位置。 > **说明：** > > - index必须是当前显示区域显示的子组件的索引值，否则视index为非法值。 > - 索引值为index的子组件必须是ListItemGroup，否则视index为非法值。 > - indexInGroup必须是当前显示区域内ListItemGroup中显示的ListItem的索引值，否则视indexInGroup为非法值。 > - index或者indexInGroup为非法值时返回的大小和位置均为0。
 
 **起始版本：** 11
 

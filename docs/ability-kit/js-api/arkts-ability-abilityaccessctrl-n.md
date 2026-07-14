@@ -16,13 +16,13 @@ import { Context, Permissions, PermissionRequestResult } from '@kit.AbilityKit';
 
 | Name | Description |
 | --- | --- |
-| [createAtManager](arkts-ability-createatmanager-f.md#createatmanager-1) | Creates a program access control management instance for scenarios such as permission verification, runtimepermission request, settings page authorization guidance, and permission status change monitoring. After the callis successful, an AtManager instance is returned, which can be used for subsequent permission managementoperations. |
+| [createAtManager](arkts-ability-createatmanager-f.md#createatmanager-1) | Creates a program access control management instance for scenarios such as permission verification, runtime permission request, settings page authorization guidance, and permission status change monitoring. After the call is successful, an AtManager instance is returned, which can be used for subsequent permission management operations. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [AtManager](arkts-ability-atmanager-i.md) | Program access control management class, providing capabilities such as permission verification, runtimepermission dialog box request, settings page authorization guidance, global switch request, and permissionstatus monitoring. Obtain an instance through [createAtManager](arkts-ability-createatmanager-f.md#createatmanager-1). |
+| [AtManager](arkts-ability-atmanager-i.md) | Program access control management class, providing capabilities such as permission verification, runtime permission dialog box request, settings page authorization guidance, global switch request, and permission status monitoring. Obtain an instance through [createAtManager](arkts-ability-createatmanager-f.md#createatmanager-1). |
 | [PermissionStateChangeInfo](arkts-ability-permissionstatechangeinfo-i.md) | Represents the permission state change details. |
 
 <!--Del-->
@@ -30,7 +30,7 @@ import { Context, Permissions, PermissionRequestResult } from '@kit.AbilityKit';
 
 | Name | Description |
 | --- | --- |
-| [AtManager](arkts-ability-atmanager-i-sys.md) | Program access control management class, providing capabilities such as permission verification, runtimepermission dialog box request, settings page authorization guidance, global switch request, and permissionstatus monitoring. Obtain an instance through [createAtManager](arkts-ability-createatmanager-f.md#createatmanager-1). |
+| [AtManager](arkts-ability-atmanager-i-sys.md) | Program access control management class, providing capabilities such as permission verification, runtime permission dialog box request, settings page authorization guidance, global switch request, and permission status monitoring. Obtain an instance through [createAtManager](arkts-ability-createatmanager-f.md#createatmanager-1). |
 | [PermissionStatusInfo](arkts-ability-permissionstatusinfo-i-sys.md) | Indicates the permission status. |
 | [CliInfo](arkts-ability-cliinfo-i-sys.md) | Represents CLI (Command Line Interface) information. |
 | [PermissionDialogDetail](arkts-ability-permissiondialogdetail-i-sys.md) | Represents the permission dialog information of a single command. |

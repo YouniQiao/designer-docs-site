@@ -12,11 +12,7 @@ import { hiTraceMeter } from '@kit.PerformanceAnalysisKit';
 function traceByValue(name: string, count: number): void
 ```
 
-Traces the value changes of an integer variable.
-
-Since API version 19, you are advised to use the
-[traceByValue<sup>19+</sup>()](arkts-performanceanalysis-tracebyvalue-f.md#tracebyvalue-2)
-API to specify the trace output level
+Traces the value changes of an integer variable. Since API version 19, you are advised to use the [traceByValue<sup>19+</sup>()](arkts-performanceanalysis-tracebyvalue-f.md#tracebyvalue-2) API to specify the trace output level
 
 **Since:** 8
 
@@ -49,8 +45,7 @@ hiTraceMeter.traceByValue("myTestCount", traceCount);  // When myTestCount chang
 function traceByValue(level: HiTraceOutputLevel, name: string, count: number): void
 ```
 
-Traces an integer with the trace output level specified. It is used to mark the name and value of a predefined
-integer variable to be traced.
+Traces an integer with the trace output level specified. It is used to mark the name and value of a predefined integer variable to be traced.
 
 **Since:** 19
 

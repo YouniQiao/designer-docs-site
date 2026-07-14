@@ -12,8 +12,7 @@ import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventList
 declare function connectDfs(networkId: string, listeners: DfsListeners): Promise<void>
 ```
 
-Triggers connection. If the peer device is abnormal, [onStatus](arkts-corefile-dfslisteners-i.md#onstatus-1) in **DfsListeners** will
-be called to notify the application.
+Triggers connection. If the peer device is abnormal, [onStatus](arkts-corefile-dfslisteners-i.md#onstatus-1) in **DfsListeners** will be called to notify the application.
 
 **Since:** 12
 

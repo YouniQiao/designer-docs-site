@@ -26,9 +26,7 @@ The gestures of child components are enabled and recognized based on the default
 IgnoreInternal
 ```
 
-The gestures of child components are disabled, including the built-in gestures, such as the built-in swipe gesture
-for a **List** component. If the areas of the parent and child components are partly overlapped, only gestures in
-the overlapped areas are disabled.
+The gestures of child components are disabled, including the built-in gestures, such as the built-in swipe gesture for a **List** component. If the areas of the parent and child components are partly overlapped, only gestures in the overlapped areas are disabled.
 
 **Since:** 7
 

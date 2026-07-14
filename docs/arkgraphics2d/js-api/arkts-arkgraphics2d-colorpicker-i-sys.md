@@ -1,7 +1,6 @@
 # ColorPicker
 
-A class used to obtain the color from an image. Before calling any method of ColorPicker, use createColorPicker to
-create a ColorPicker instance.
+A class used to obtain the color from an image. Before calling any method of ColorPicker, use createColorPicker to create a ColorPicker instance.
 
 **Since:** 9
 
@@ -157,8 +156,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 getDeepenImmersionColor(): Color
 ```
 
-Generates a stronger immersion color that merges with the background color and is deeper than
-the background color.
+Generates a stronger immersion color that merges with the background color and is deeper than the background color.
 
 **Since:** 26.0.0
 
@@ -254,9 +252,7 @@ Gets the Morandi shadow color from the dominant color.
 getReverseColor(): Color
 ```
 
-Gets the reverse color based on the discriminatePictureLightDegree result.
-When the picture light degree is EXTREMELY_LIGHT_COLOR_PICTURE, returns black color.
-For other picture light degree types, returns white color.
+Gets the reverse color based on the discriminatePictureLightDegree result. When the picture light degree is EXTREMELY_LIGHT_COLOR_PICTURE, returns black color. For other picture light degree types, returns white color.
 
 **Since:** 26.0.0
 

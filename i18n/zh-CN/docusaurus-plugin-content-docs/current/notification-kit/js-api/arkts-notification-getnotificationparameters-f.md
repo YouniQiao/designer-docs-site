@@ -12,8 +12,7 @@ import { notificationManager } from '@kit.NotificationKit';
 function getNotificationParameters(id: number, label?: string): Promise<NotificationParameters>
 ```
 
-获取通知[NotificationRequest](arkts-notification-notificationrequest-i.md)中wantAgent字段的部分信息。使用Promise异
-步回调。
+获取通知[NotificationRequest](arkts-notification-notificationrequest-i.md)中wantAgent字段的部分信息。使用Promise异 步回调。
 
 **起始版本：** 24
 

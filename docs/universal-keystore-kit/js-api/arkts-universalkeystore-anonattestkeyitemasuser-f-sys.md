@@ -12,9 +12,7 @@ import { huks } from '@kit.UniversalKeystoreKit';
 function anonAttestKeyItemAsUser(userId: number, keyAlias: string, huksOptions: HuksOptions): Promise<HuksReturnResult>
 ```
 
-Performs anonymous key attestation. This API uses a promise to return the result.
-
-This operation requires Internet access and takes time.
+Performs anonymous key attestation. This API uses a promise to return the result. This operation requires Internet access and takes time.
 
 **Since:** 12
 

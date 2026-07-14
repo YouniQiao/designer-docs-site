@@ -82,9 +82,7 @@ Multi-line text notification.
 NOTIFICATION_CONTENT_SYSTEM_LIVE_VIEW
 ```
 
-Live view notification. A third-party application cannot directly create a notification of this type. After the
-system proxy creates a system live view, the third-party application publishes a notification with the same ID to
-update the specified content.
+Live view notification. A third-party application cannot directly create a notification of this type. After the system proxy creates a system live view, the third-party application publishes a notification with the same ID to update the specified content.
 
 **Since:** 11
 

@@ -34,8 +34,7 @@ Attendees in a meeting. If this parameter is not set, the default null value is 
 description?: string
 ```
 
-Event description, with a maximum of 5,000 characters. If this parameter is not specified, the default value is
-an empty string.
+Event description, with a maximum of 5,000 characters. If this parameter is not specified, the default value is an empty string.
 
 **Type:** string
 
@@ -51,8 +50,7 @@ an empty string.
 endTime: number
 ```
 
-End time of an event. The value is a 13-digit timestamp. For an all-day event, this field is converted to the
-timestamp corresponding to 24:00 of the specified date.
+End time of an event. The value is a 13-digit timestamp. For an all-day event, this field is converted to the timestamp corresponding to 24:00 of the specified date.
 
 **Type:** number
 
@@ -68,14 +66,7 @@ timestamp corresponding to 24:00 of the specified date.
 id?: number
 ```
 
-Event ID. When you call
-[addEvent()](arkts-calendar-calendar-i.md#addevent-2) or
-[addEvents()](arkts-calendar-calendar-i.md#addevents-2) to create
-an event, this parameter is not required. When you call
-[deleteEvent()](arkts-calendar-calendar-i.md#deleteevent-2) or
-[deleteEvents()](arkts-calendar-calendar-i.md#deleteevents-2) to
-delete an event, this parameter is required and must be set to an array of integers. If this parameter is set to
-an invalid value, an error will be reported.
+Event ID. When you call [addEvent()](arkts-calendar-calendar-i.md#addevent-2) or [addEvents()](arkts-calendar-calendar-i.md#addevents-2) to create an event, this parameter is not required. When you call [deleteEvent()](arkts-calendar-calendar-i.md#deleteevent-2) or [deleteEvents()](arkts-calendar-calendar-i.md#deleteevents-2) to delete an event, this parameter is required and must be set to an array of integers. If this parameter is set to an invalid value, an error will be reported.
 
 **Type:** number
 
@@ -107,9 +98,7 @@ Unique ID of an event, with a maximum of 5,000 characters. If this parameter is 
 instanceEndTime?: number
 ```
 
-End time of an event. The value is a 13-digit timestamp. This parameter does not need to be set in
-[addEvent()](arkts-calendar-calendar-i.md#addevent-2)
-or [addEvents()](arkts-calendar-calendar-i.md#addevents-2).
+End time of an event. The value is a 13-digit timestamp. This parameter does not need to be set in [addEvent()](arkts-calendar-calendar-i.md#addevent-2) or [addEvents()](arkts-calendar-calendar-i.md#addevents-2).
 
 **Type:** number
 
@@ -125,9 +114,7 @@ or [addEvents()](arkts-calendar-calendar-i.md#addevents-2).
 instanceStartTime?: number
 ```
 
-Start time of an event. The value is a 13-digit timestamp. This parameter does not need to be set in
-[addEvent()](arkts-calendar-calendar-i.md#addevent-2)
-or [addEvents()](arkts-calendar-calendar-i.md#addevents-2).
+Start time of an event. The value is a 13-digit timestamp. This parameter does not need to be set in [addEvent()](arkts-calendar-calendar-i.md#addevent-2) or [addEvents()](arkts-calendar-calendar-i.md#addevents-2).
 
 **Type:** number
 
@@ -143,8 +130,7 @@ or [addEvents()](arkts-calendar-calendar-i.md#addevents-2).
 isAllDay?: boolean
 ```
 
-Whether the event is an all-day event. The value **true** means that the event is an all-day event, and **false**
-means the opposite. The default value is **false**.
+Whether the event is an all-day event. The value **true** means that the event is an all-day event, and **false** means the opposite. The default value is **false**.
 
 **Type:** boolean
 
@@ -192,8 +178,7 @@ Event location. If this parameter is not set, the default null value is used.
 recurrenceRule?: RecurrenceRule
 ```
 
-Recurrence rule of an event. The event is a recurring event if this parameter is set; otherwise, the event is a
-non-recurring event.
+Recurrence rule of an event. The event is a recurring event if this parameter is set; otherwise, the event is a non-recurring event.
 
 **Type:** RecurrenceRule
 
@@ -209,10 +194,7 @@ non-recurring event.
 reminderTime?: number[]
 ```
 
-Reminder time of the event, in minutes. For example, if the value is 5, the reminder occurs 5 minutes before the
-event starts. If this parameter is not set, no reminder is set. A negative value indicates the delay time for
-sending a notification. For an all-day event, this parameter specifies the time offset in minutes before 9 a.m.
-on the event date. A negative value indicates the number of minutes after 9 a.m.
+Reminder time of the event, in minutes. For example, if the value is 5, the reminder occurs 5 minutes before the event starts. If this parameter is not set, no reminder is set. A negative value indicates the delay time for sending a notification. For an all-day event, this parameter specifies the time offset in minutes before 9 a.m. on the event date. A negative value indicates the number of minutes after 9 a.m.
 
 **Type:** number[]
 
@@ -244,8 +226,7 @@ service?: EventService
 startTime: number
 ```
 
-Start time of an event. The value is a 13-digit timestamp. For an all-day event, this field is converted to the
-timestamp corresponding to 00:00 of the specified date.
+Start time of an event. The value is a 13-digit timestamp. For an all-day event, this field is converted to the timestamp corresponding to 00:00 of the specified date.
 
 **Type:** number
 
@@ -261,11 +242,7 @@ timestamp corresponding to 00:00 of the specified date.
 timeZone?: string
 ```
 
-Time zone of the event, with a maximum of 5,000 characters. If this parameter is not specified or set to an
-invalid value, the current time zone is used by default. If a different time zone is required, enter the
-corresponding time zone. You can call
-[systemDateTime.getTimezone()](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-gettimezone-f.md#gettimezone-1)
-to obtain the current system time zone.
+Time zone of the event, with a maximum of 5,000 characters. If this parameter is not specified or set to an invalid value, the current time zone is used by default. If a different time zone is required, enter the corresponding time zone. You can call [systemDateTime.getTimezone()](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-gettimezone-f.md#gettimezone-1) to obtain the current system time zone.
 
 **Type:** string
 
@@ -281,8 +258,7 @@ to obtain the current system time zone.
 title?: string
 ```
 
-Event title, with a maximum of 5,000 characters. If this parameter is not specified, the default value is an
-empty string.
+Event title, with a maximum of 5,000 characters. If this parameter is not specified, the default value is an empty string.
 
 **Type:** string
 

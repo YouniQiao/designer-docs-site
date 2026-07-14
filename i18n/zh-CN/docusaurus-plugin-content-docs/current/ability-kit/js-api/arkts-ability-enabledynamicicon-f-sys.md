@@ -71,11 +71,7 @@ try {
 function enableDynamicIcon(bundleName: string, moduleName: string, option?: BundleOptions): Promise<void>
 ```
 
-根据给定的bundleName、moduleName和option使能动态图标。使用Promise异步回调。
-
-使能当前用户下的动态图标信息时需要申请权限ohos.permission.ACCESS_DYNAMIC_ICON。
-
-使能其他用户下的动态图标信息时需要申请权限ohos.permission.ACCESS_DYNAMIC_ICON 和 ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS。
+根据给定的bundleName、moduleName和option使能动态图标。使用Promise异步回调。 使能当前用户下的动态图标信息时需要申请权限ohos.permission.ACCESS_DYNAMIC_ICON。 使能其他用户下的动态图标信息时需要申请权限ohos.permission.ACCESS_DYNAMIC_ICON 和 ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS。
 
 **起始版本：** 20
 

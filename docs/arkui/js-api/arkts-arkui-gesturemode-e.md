@@ -12,10 +12,7 @@ Defines the recognition mode of a gesture group.
 Sequence
 ```
 
-Sequential recognition. Gestures are recognized in the registration sequence until all gestures are recognized
-successfully. If any gesture in the sequence fails recognition, subsequent gestures will not be recognized.
-
-Only the last gesture in a sequentially recognized gesture group can trigger **onActionEnd**.
+Sequential recognition. Gestures are recognized in the registration sequence until all gestures are recognized successfully. If any gesture in the sequence fails recognition, subsequent gestures will not be recognized. Only the last gesture in a sequentially recognized gesture group can trigger **onActionEnd**.
 
 **Since:** 7
 
@@ -29,8 +26,7 @@ Only the last gesture in a sequentially recognized gesture group can trigger **o
 Parallel
 ```
 
-Parallel recognition. Registered gestures are recognized concurrently until all gestures are recognized. The
-recognition result of each gesture does not affect each other.
+Parallel recognition. Registered gestures are recognized concurrently until all gestures are recognized. The recognition result of each gesture does not affect each other.
 
 **Since:** 7
 
@@ -44,8 +40,7 @@ recognition result of each gesture does not affect each other.
 Exclusive
 ```
 
-Exclusive recognition. All registered gestures are processed simultaneously. Once any gesture is recognized
-successfully, the recognition process ends, and all other gestures are deemed unrecognized.
+Exclusive recognition. All registered gestures are processed simultaneously. Once any gesture is recognized successfully, the recognition process ends, and all other gestures are deemed unrecognized.
 
 **Since:** 7
 

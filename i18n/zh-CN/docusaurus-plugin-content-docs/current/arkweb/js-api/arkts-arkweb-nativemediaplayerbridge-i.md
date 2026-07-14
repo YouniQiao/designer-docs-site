@@ -1,15 +1,6 @@
 # NativeMediaPlayerBridge
 
-[CreateNativeMediaPlayerCallback](arkts-arkweb-createnativemediaplayercallback-t.md)回调函数的返回值类型。接管网页媒体
-的播放器和ArkWeb内核之间的一个接口类。
-
-ArkWeb内核通过该接口类的实例对象来控制应用创建的用来接管网页媒体的播放器。
-
-> **说明：**
->
-> - 本Interface首批接口从API version 12开始支持。
->
-> - 示例效果请以真机运行为准。
+[CreateNativeMediaPlayerCallback](arkts-arkweb-createnativemediaplayercallback-t.md)回调函数的返回值类型。接管网页媒体 的播放器和ArkWeb内核之间的一个接口类。 ArkWeb内核通过该接口类的实例对象来控制应用创建的用来接管网页媒体的播放器。 > **说明：** > > - 本Interface首批接口从API version 12开始支持。 > > - 示例效果请以真机运行为准。
 
 **起始版本：** 12
 

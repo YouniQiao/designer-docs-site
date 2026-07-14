@@ -32,9 +32,7 @@ Define whether to gather selected items in grid or list when item is long presse
 enableTwoFingerMultiSelect?: boolean
 ```
 
-Enable two-finger swipe multi-selection.
-{@code true} indicates that two-finger swiping can enter edit mode and perform multi-selection.
-{@code false} indicates that two-finger swiping cannot perform multi-selection.
+Enable two-finger swipe multi-selection. {@code true} indicates that two-finger swiping can enter edit mode and perform multi-selection. {@code false} indicates that two-finger swiping cannot perform multi-selection.
 
 **Type:** boolean
 
@@ -54,11 +52,7 @@ Enable two-finger swipe multi-selection.
 onGetPreviewBadge?: OnGetPreviewBadgeCallback
 ```
 
-Called to return whether to display the number badge or the number displayed on the badge
-for the context menu preview. If not set, the number of selected items within the display range will be used.
-Returning false means not displaying the badge.
-Returning true means using the number of selected items within the display range.
-Returning a number to include selected items outside the display range.
+Called to return whether to display the number badge or the number displayed on the badge for the context menu preview. If not set, the number of selected items within the display range will be used. Returning false means not displaying the badge. Returning true means using the number of selected items within the display range. Returning a number to include selected items outside the display range.
 
 **Type:** OnGetPreviewBadgeCallback
 
@@ -76,10 +70,7 @@ Returning a number to include selected items outside the display range.
 useDefaultMultiSelectStyle?: boolean
 ```
 
-Use default multi-select style.
-{@code true} indicates that the check box is displayed for GridItem or ListItem after entering the
-multi-select state.
-{@code false} indicates that there is no default style after entering the multi-select state.
+Use default multi-select style. {@code true} indicates that the check box is displayed for GridItem or ListItem after entering the multi-select state. {@code false} indicates that there is no default style after entering the multi-select state.
 
 **Type:** boolean
 

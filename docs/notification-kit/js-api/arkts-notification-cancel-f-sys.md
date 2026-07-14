@@ -12,10 +12,7 @@ import { notificationManager } from '@kit.NotificationKit';
 function cancel(representativeBundle: BundleOption, id: number): Promise<void>
 ```
 
-Cancels the notification of other applications of the user. This API uses a promise to return the result.
-
-The current application must have a proxy relationship with another application, or the
-**ohos.permission.NOTIFICATION_AGENT_CONTROLLER** permission is granted to the current application.
+Cancels the notification of other applications of the user. This API uses a promise to return the result. The current application must have a proxy relationship with another application, or the **ohos.permission.NOTIFICATION_AGENT_CONTROLLER** permission is granted to the current application.
 
 **Since:** 12
 

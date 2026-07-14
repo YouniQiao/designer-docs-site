@@ -148,9 +148,7 @@ action: AxisAction
 displayX: number
 ```
 
-鼠标光标在当前应用屏幕坐标系中的X坐标。
-
-单位：vp
+鼠标光标在当前应用屏幕坐标系中的X坐标。 单位：vp
 
 **类型：** number
 
@@ -168,9 +166,7 @@ displayX: number
 displayY: number
 ```
 
-鼠标光标在当前应用屏幕坐标系中的Y坐标。
-
-单位：vp
+鼠标光标在当前应用屏幕坐标系中的Y坐标。 单位：vp
 
 **类型：** number
 
@@ -188,14 +184,7 @@ displayY: number
 eventHandleId?: number
 ```
 
-用于事件处理的唯一标识。
-
-取值范围：[0, +∞)
-
-**说明：** 在使用[postInputEventWithStrategy](../arkts-apis/arkts-arkui-buildernode-c.md#postinputeventwithstrategy-1)接口分发事件时会使用该字段，事件每分
-发一次字段会增加100000。
-
-多次使用相同的eventHandleId进行事件分发将导致事件响应异常。仅在构造事件的时候需要对此字段赋值，其余情况开发者无需处理。
+用于事件处理的唯一标识。 取值范围：[0, +∞) **说明：** 在使用[postInputEventWithStrategy](../arkts-apis/arkts-arkui-buildernode-c.md#postinputeventwithstrategy-1)接口分发事件时会使用该字段，事件每分 发一次字段会增加100000。 多次使用相同的eventHandleId进行事件分发将导致事件响应异常。仅在构造事件的时候需要对此字段赋值，其余情况开发者无需处理。
 
 **类型：** number
 
@@ -213,11 +202,7 @@ eventHandleId?: number
 globalDisplayX?: number
 ```
 
-鼠标光标在[全局坐标系](../../../../windowmanager/window-terminology.md#全局坐标系)中的X坐标。
-
-单位：vp
-
-取值范围：[0, +∞)
+鼠标光标在[全局坐标系](../../../../windowmanager/window-terminology.md#全局坐标系)中的X坐标。 单位：vp 取值范围：[0, +∞)
 
 **类型：** number
 
@@ -235,11 +220,7 @@ globalDisplayX?: number
 globalDisplayY?: number
 ```
 
-鼠标光标或手写笔位置在[全局坐标系](../../../../windowmanager/window-terminology.md#全局坐标系)中的Y坐标。
-
-单位：vp
-
-取值范围：[0, +∞)
+鼠标光标或手写笔位置在[全局坐标系](../../../../windowmanager/window-terminology.md#全局坐标系)中的Y坐标。 单位：vp 取值范围：[0, +∞)
 
 **类型：** number
 
@@ -275,9 +256,7 @@ propagation: Callback<void>
 scrollStep?: number
 ```
 
-鼠标轴滚动步长配置。
-
-**说明：** 仅支持鼠标滚轮，取值范围：[0~65535]
+鼠标轴滚动步长配置。 **说明：** 仅支持鼠标滚轮，取值范围：[0~65535]
 
 **类型：** number
 
@@ -295,9 +274,7 @@ scrollStep?: number
 windowX: number
 ```
 
-鼠标光标在当前应用窗口坐标系中的X坐标。
-
-单位：vp
+鼠标光标在当前应用窗口坐标系中的X坐标。 单位：vp
 
 **类型：** number
 
@@ -315,9 +292,7 @@ windowX: number
 windowY: number
 ```
 
-鼠标光标在当前应用窗口坐标系中的Y坐标。
-
-单位：vp
+鼠标光标在当前应用窗口坐标系中的Y坐标。 单位：vp
 
 **类型：** number
 
@@ -335,9 +310,7 @@ windowY: number
 x: number
 ```
 
-鼠标光标在被点击元素为基准的[组件坐标系](../../../../ui/arkui-glossary.md#组件坐标系)中的X坐标。
-
-单位：vp
+鼠标光标在被点击元素为基准的[组件坐标系](../../../../ui/arkui-glossary.md#组件坐标系)中的X坐标。 单位：vp
 
 **类型：** number
 
@@ -355,9 +328,7 @@ x: number
 y: number
 ```
 
-鼠标光标在被点击元素为基准的[组件坐标系](../../../../ui/arkui-glossary.md#组件坐标系)中的Y坐标。
-
-单位：vp
+鼠标光标在被点击元素为基准的[组件坐标系](../../../../ui/arkui-glossary.md#组件坐标系)中的Y坐标。 单位：vp
 
 **类型：** number
 

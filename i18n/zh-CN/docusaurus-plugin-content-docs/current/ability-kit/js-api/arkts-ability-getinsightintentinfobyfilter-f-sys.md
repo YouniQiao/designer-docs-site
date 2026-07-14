@@ -6,8 +6,7 @@
 function getInsightIntentInfoByFilter(filter: InsightIntentInfoFilter): Promise<Array<InsightIntentInfo>>
 ```
 
-Obtains the intent information on the current device based on the given intent filter. This API uses a promise to
-return the result.<br>If the user ID of the calling application is different from the user ID of the intent, the
+Obtains the intent information on the current device based on the given intent filter. This API uses a promise to return the result.<br>If the user ID of the calling application is different from the user ID of the intent, the
 
 **起始版本：** 23
 
@@ -60,8 +59,8 @@ function getInfoByFilter() {
     insightIntentDriver.getInsightIntentInfoByFilter(filter).then((data) => {
       hilog.info(0x0000, 'testTag', 'getInsightIntentInfoByFilter return %{public}s', JSON.stringify(data));
     }).catch((err: BusinessError) => {
-      hilog.info(0x0000, 'testTag', 'getInsightIntentInfoByFilter errCode: %{public}d', err.code);
-      hilog.info(0x0000, 'testTag', 'getInsightIntentInfoByFilter errMessage: %{public}s', err.message);
+      hilog.error(0x0000, 'testTag', 'getInsightIntentInfoByFilter errCode: %{public}d', err.code);
+      hilog.error(0x0000, 'testTag', 'getInsightIntentInfoByFilter errMessage: %{public}s', err.message);
     });
   } catch (error) {
     hilog.error(0x0000, 'testTag', 'getInsightIntentInfoByFilter error caught %{public}s', JSON.stringify(error));

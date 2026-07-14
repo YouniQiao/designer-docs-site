@@ -152,15 +152,7 @@ try {
 fastConvertToJSObject(xml: string, options?: ConvertOptions): Object
 ```
 
-Converts an XML text to an object of the object type.
-
-> **NOTE**
->
-> - This API cannot parse XML files with a large amount of data. If the text content of a single element exceeds
-> 10 MB, an error message is displayed and an object that contains only the XML tag header will be returned.
->
-> - In Windows, a newline is usually represented by the carriage return (CR) followed by the line feed (LF).
-> However, the object obtained by calling this API uses only the LF to indicate a new line.
+Converts an XML text to an object of the object type. > **NOTE** > > - This API cannot parse XML files with a large amount of data. If the text content of a single element exceeds > 10 MB, an error message is displayed and an object that contains only the XML tag header will be returned. > > - In Windows, a newline is usually represented by the carriage return (CR) followed by the line feed (LF). > However, the object obtained by calling this API uses only the LF to indicate a new line.
 
 **Since:** 14
 
@@ -228,8 +220,7 @@ try {
 largeConvertToJSObject(xml: string, options?: ConvertOptions): Object
 ```
 
-Convert XML text to JavaScript objects, this method supports parsing large XML texts
-with a single node size exceeding 10M.
+Convert XML text to JavaScript objects, this method supports parsing large XML texts with a single node size exceeding 10M.
 
 **Since:** 23
 

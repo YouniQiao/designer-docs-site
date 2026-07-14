@@ -1,7 +1,6 @@
 # AutoFillExtensionContext（系统接口）
 
-AutoFillExtensionContext模块是AutoFillExtensionAbility的上下文环境，继承自
-[ExtensionContext](arkts-ability-extensioncontext-c.md)。
+AutoFillExtensionContext模块是AutoFillExtensionAbility的上下文环境，继承自 [ExtensionContext](arkts-ability-extensioncontext-c.md)。
 
 **继承/实现关系：** AutoFillExtensionContext extends [ExtensionContext](arkts-ability-extensioncontext-c.md)
 

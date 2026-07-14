@@ -60,12 +60,7 @@ Type of the file content. By default, the type is obtained based on the extensio
 uri: string
 ```
 
-Local path for storing files.
-
-Only **internal://cache/** is supported, that is, **context.cacheDir** of the caller (namely, cache directory of
-the input **context**).
-
-Example: **internal://cache/path/to/file.txt**.
+Local path for storing files. Only **internal://cache/** is supported, that is, **context.cacheDir** of the caller (namely, cache directory of the input **context**). Example: **internal://cache/path/to/file.txt**.
 
 **Type:** string
 

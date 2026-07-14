@@ -2,15 +2,13 @@
 
 Provides the path drawing interface.
 
-
 ## Path
 
 ```TypeScript
 Path(options?: PathOptions)
 ```
 
-Use new to create Path.
-Annonymous Object Rectification.
+Use new to create Path. Annonymous Object Rectification.
 
 **Since:** 7
 

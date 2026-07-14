@@ -72,7 +72,7 @@ Indicates neighboring cell information.
 slotId?: number
 ```
 
-Indicates the card slot index number.
+Indicates the card slot index number. The value should be an integer.
 
 **Type:** number
 

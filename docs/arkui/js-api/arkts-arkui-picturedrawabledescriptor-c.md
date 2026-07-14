@@ -1,7 +1,6 @@
 # PictureDrawableDescriptor
 
-Creates a **PictureDrawableDescriptor** object by passing a **Picture** object. This API inherits from
-[DrawableDescriptor](arkts-arkui-drawabledescriptorloadedresult-i.md).
+Creates a **PictureDrawableDescriptor** object by passing a **Picture** object. This API inherits from [DrawableDescriptor](arkts-arkui-drawabledescriptorloadedresult-i.md).
 
 **Inheritance/Implementation:** PictureDrawableDescriptor extends [DrawableDescriptor](arkts-arkui-drawabledescriptor-c.md)
 
@@ -62,7 +61,7 @@ Sets HDR composition.
 **Example**
 
 ```TypeScript
-import { PictureDrawableDescriptor } from '@ohos.arkui.drawableDescriptor';
+import { PictureDrawableDescriptor } from '@kit.ArkUI';
 import { image } from '@kit.ImageKit';
 
 

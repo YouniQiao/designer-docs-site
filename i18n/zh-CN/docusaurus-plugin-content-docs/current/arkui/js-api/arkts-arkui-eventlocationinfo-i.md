@@ -34,11 +34,7 @@ getCurrentLocalPosition?(): Coordinate2D
 displayX: number
 ```
 
-相对于屏幕的左上角X坐标。
-
-取值范围：[0, +∞)
-
-单位：vp
+相对于屏幕的左上角X坐标。 取值范围：[0, +∞) 单位：vp
 
 **类型：** number
 
@@ -56,11 +52,7 @@ displayX: number
 displayY: number
 ```
 
-相对于屏幕的左上角Y坐标。
-
-取值范围：[0, +∞)
-
-单位：vp
+相对于屏幕的左上角Y坐标。 取值范围：[0, +∞) 单位：vp
 
 **类型：** number
 
@@ -78,11 +70,7 @@ displayY: number
 globalDisplayX?: number
 ```
 
-相对于主屏幕左上角为原点的坐标系中的X坐标。
-
-单位：vp
-
-取值范围：[0, +∞)
+相对于主屏幕左上角为原点的坐标系中的X坐标。 单位：vp 取值范围：[0, +∞)
 
 **类型：** number
 
@@ -100,11 +88,7 @@ globalDisplayX?: number
 globalDisplayY?: number
 ```
 
-相对于主屏幕左上角为原点的坐标系中的Y坐标。
-
-单位：vp
-
-取值范围：[0, +∞)
+相对于主屏幕左上角为原点的坐标系中的Y坐标。 单位：vp 取值范围：[0, +∞)
 
 **类型：** number
 
@@ -122,11 +106,7 @@ globalDisplayY?: number
 windowX: number
 ```
 
-相对于窗口的左上角X坐标。
-
-取值范围：[0, +∞)
-
-单位：vp
+相对于窗口的左上角X坐标。 取值范围：[0, +∞) 单位：vp
 
 **类型：** number
 
@@ -144,11 +124,7 @@ windowX: number
 windowY: number
 ```
 
-相对于窗口的左上角Y坐标。
-
-取值范围：[0, +∞)
-
-单位：vp
+相对于窗口的左上角Y坐标。 取值范围：[0, +∞) 单位：vp
 
 **类型：** number
 
@@ -166,11 +142,7 @@ windowY: number
 x: number
 ```
 
-相对于组件左上角的X坐标。
-
-取值范围：[0, +∞)
-
-单位：vp
+相对于组件左上角的X坐标。 取值范围：[0, +∞) 单位：vp
 
 **类型：** number
 
@@ -188,11 +160,7 @@ x: number
 y: number
 ```
 
-相对于组件左上角的Y坐标。
-
-取值范围：[0, +∞)
-
-单位：vp
+相对于组件左上角的Y坐标。 取值范围：[0, +∞) 单位：vp
 
 **类型：** number
 

@@ -20,8 +20,7 @@ import { update } from '@kit.BasicServicesKit';
 deepFactoryReset(factoryResetStrategy: FactoryResetStrategy): Promise<void>
 ```
 
-Clears the user data partition and OS partition by means of overwriting. This API uses a promise to return the
-result.
+Clears the user data partition and OS partition by means of overwriting. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 

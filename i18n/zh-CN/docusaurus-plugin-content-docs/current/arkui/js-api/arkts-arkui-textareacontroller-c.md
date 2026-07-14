@@ -1,14 +1,6 @@
 # TextAreaController
 
-TextArea组件的控制器继承自[TextContentControllerBase](arkts-arkui-textcontentcontrollerbase-c.md)，涉及的接口有
-[getTextContentRect](arkts-arkui-textcontentcontrollerbase-c.md#gettextcontentrect-1)、
-[getTextContentLineCount](arkts-arkui-textcontentcontrollerbase-c.md#gettextcontentlinecount-1)、
-[getCaretOffset](arkts-arkui-textcontentcontrollerbase-c.md#getcaretoffset-1)、[addText](arkts-arkui-textcontentcontrollerbase-c.md#addtext-1)、
-[deleteText](arkts-arkui-textcontentcontrollerbase-c.md#deletetext-1)、[getSelection](arkts-arkui-textcontentcontrollerbase-c.md#getselection-1)
-、[clearPreviewText](arkts-arkui-textcontentcontrollerbase-c.md#clearpreviewtext-1)、
-[setStyledPlaceholder](arkts-arkui-textcontentcontrollerbase-c.md#setstyledplaceholder-1)、
-[deleteBackward](arkts-arkui-textcontentcontrollerbase-c.md#deletebackward-1)<!--Del-->以及系统接口
-[getText](arkts-arkui-textcontentcontrollerbase-c-sys.md#gettext-1)<!--DelEnd-->。
+TextArea组件的控制器继承自[TextContentControllerBase](arkts-arkui-textcontentcontrollerbase-c.md)，涉及的接口有 [getTextContentRect](arkts-arkui-textcontentcontrollerbase-c.md#gettextcontentrect-1)、 [getTextContentLineCount](arkts-arkui-textcontentcontrollerbase-c.md#gettextcontentlinecount-1)、 [getCaretOffset](arkts-arkui-textcontentcontrollerbase-c.md#getcaretoffset-1)、[addText](arkts-arkui-textcontentcontrollerbase-c.md#addtext-1)、 [deleteText](arkts-arkui-textcontentcontrollerbase-c.md#deletetext-1)、[getSelection](arkts-arkui-textcontentcontrollerbase-c.md#getselection-1) 、[clearPreviewText](arkts-arkui-textcontentcontrollerbase-c.md#clearpreviewtext-1)、 [setStyledPlaceholder](arkts-arkui-textcontentcontrollerbase-c.md#setstyledplaceholder-1)、 [deleteBackward](arkts-arkui-textcontentcontrollerbase-c.md#deletebackward-1)<!--Del-->以及系统接口 [getText](arkts-arkui-textcontentcontrollerbase-c-sys.md#gettext-1)<!--DelEnd-->。
 
 **继承/实现关系：** TextAreaController extends [TextContentControllerBase](arkts-arkui-textcontentcontrollerbase-c.md)
 

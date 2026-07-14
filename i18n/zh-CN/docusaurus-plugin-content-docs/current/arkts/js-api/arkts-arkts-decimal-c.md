@@ -690,11 +690,7 @@ static clamp(n: Value, min: Value, max: Value): Decimal
 comparedTo(n: Value): number
 ```
 
-Decimal的比较方法。
-1 如果此Decimal大于n的值，
--1 如果此Decimal小于n的值，
-0 如果两者的值相等，
-NaN 如果两者中任一Decimal的值为NaN。
+Decimal的比较方法。 1 如果此Decimal大于n的值， -1 如果此Decimal小于n的值， 0 如果两者的值相等， NaN 如果两者中任一Decimal的值为NaN。
 
 **起始版本：** 12
 
@@ -2040,12 +2036,7 @@ static set(config: DecimalConfig): void
 static sign(n: Value): number
 ```
 
-根据参数n的值返回对应的符号：
-1 如果 n > 0，
--1 如果 n < 0，
-0 如果 n 为 0，
--0 如果 n 为 -0，
-NaN 其他情况
+根据参数n的值返回对应的符号： 1 如果 n > 0， -1 如果 n < 0， 0 如果 n 为 0， -0 如果 n 为 -0， NaN 其他情况
 
 **起始版本：** 12
 
@@ -2299,9 +2290,7 @@ static sub(x: Value, y: Value): Decimal
 static sum(...n: Value[]): Decimal
 ```
 
-返回一个新的Decimal对象，其值为参数的和。按照precision设置有效位数，按照rounding设置舍入模式。
-
-仅对结果进行舍入，不对中间计算结果进行舍入。
+返回一个新的Decimal对象，其值为参数的和。按照precision设置有效位数，按照rounding设置舍入模式。 仅对结果进行舍入，不对中间计算结果进行舍入。
 
 **起始版本：** 12
 

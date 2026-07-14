@@ -32,9 +32,7 @@ maxFontSize?: number | string | Resource
 minFontSize?: number | string | Resource
 ```
 
-文本最小显示字号，与maxFontSize配合使用。当设置minFontSize和maxFontSize时，font中的size将不生效。
-默认最大行数为1，自适应高度方式为MIN_FONT_SIZE_FIRST。
-详细规则请参考Text组件的[minFontSize](TextAttribute#minFontSize)属性。
+文本最小显示字号，与maxFontSize配合使用。当设置minFontSize和maxFontSize时，font中的size将不生效。 默认最大行数为1，自适应高度方式为MIN_FONT_SIZE_FIRST。 详细规则请参考Text组件的[minFontSize](TextAttribute#minFontSize)属性。
 
 **类型：** number | string | Resource
 
@@ -52,8 +50,7 @@ minFontSize?: number | string | Resource
 overflow?: TextOverflow
 ```
 
-文本截断方式。当设置为MARQUEE时，该属性不生效。
-详细规则请参考Text组件的[textOverflow](TextAttribute#textOverflow)属性。
+文本截断方式。当设置为MARQUEE时，该属性不生效。 详细规则请参考Text组件的[textOverflow](TextAttribute#textOverflow)属性。
 
 **类型：** TextOverflow
 

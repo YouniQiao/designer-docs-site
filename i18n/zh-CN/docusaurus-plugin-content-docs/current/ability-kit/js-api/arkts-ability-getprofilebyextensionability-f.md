@@ -6,9 +6,7 @@
 function getProfileByExtensionAbility(moduleName: string, extensionAbilityName: string, metadataName: string, callback: AsyncCallback<Array<string>>): void
 ```
 
-根据给定的moduleName、extensionAbilityName和metadataName（module.json5中
-[metadata标签](../../../../quick-start/module-configuration-file.md#metadata标签)下的name）获取自身相应配置文件的json格式字符串。使用callback异步
-回调。
+根据给定的moduleName、extensionAbilityName和metadataName（module.json5中 [metadata标签](../../../../quick-start/module-configuration-file.md#metadata标签)下的name）获取自身相应配置文件的json格式字符串。使用callback异步 回调。
 
 **起始版本：** 9
 
@@ -67,9 +65,7 @@ try {
 function getProfileByExtensionAbility(moduleName: string, extensionAbilityName: string, metadataName?: string): Promise<Array<string>>
 ```
 
-根据给定的moduleName、extensionAbilityName和metadataName（module.json5中
-[metadata标签](../../../../quick-start/module-configuration-file.md#metadata标签)下的name）获取自身相应配置文件的json格式字符串。使用Promise异步回
-调。
+根据给定的moduleName、extensionAbilityName和metadataName（module.json5中 [metadata标签](../../../../quick-start/module-configuration-file.md#metadata标签)下的name）获取自身相应配置文件的json格式字符串。使用Promise异步回 调。
 
 **起始版本：** 9
 

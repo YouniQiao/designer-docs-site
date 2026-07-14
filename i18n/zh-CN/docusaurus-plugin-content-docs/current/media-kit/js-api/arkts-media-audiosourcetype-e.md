@@ -24,9 +24,7 @@ AUDIO_SOURCE_TYPE_DEFAULT = 0
 AUDIO_SOURCE_TYPE_MIC = 1
 ```
 
-表示MIC的音频输入源。
-
-**原子化服务API：** 从API version 12 开始，该接口支持在原子化服务中使用。
+表示MIC的音频输入源。 **原子化服务API：** 从API version 12 开始，该接口支持在原子化服务中使用。
 
 **起始版本：** 9
 

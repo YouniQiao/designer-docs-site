@@ -12,12 +12,7 @@ import { dlpPermission } from '@kit.DataProtectionKit';
 function getDLPFileAccessRecords(): Promise<Array<AccessedDLPFileInfo>>
 ```
 
-Obtains the list of DLP files that are accessed recently. After the API is successfully called, the file access
-records are returned, which can be used to track and manage the usage of DLP files. This API can be called only
-in non-DLP sandbox applications. This API uses a promise to return the result.
-
-This API is used to obtain the list of DLP files that are accessed recently, which can be used to track and
-manage file usage.
+Obtains the list of DLP files that are accessed recently. After the API is successfully called, the file access records are returned, which can be used to track and manage the usage of DLP files. This API can be called only in non-DLP sandbox applications. This API uses a promise to return the result. This API is used to obtain the list of DLP files that are accessed recently, which can be used to track and manage file usage.
 
 **Since:** 10
 
@@ -57,12 +52,7 @@ dlpPermission.getDLPFileAccessRecords().then((accessRecords) => { // Obtain the 
 function getDLPFileAccessRecords(callback: AsyncCallback<Array<AccessedDLPFileInfo>>): void
 ```
 
-Obtains the list of DLP files that are accessed recently. After the API is successfully called, the file access
-records are returned, which can be used to track and manage the usage of DLP files. This API uses an asynchronous
-callback to return the result.
-
-This API is used to obtain the list of DLP files that are accessed recently, which can be used to track and
-manage file usage.
+Obtains the list of DLP files that are accessed recently. After the API is successfully called, the file access records are returned, which can be used to track and manage the usage of DLP files. This API uses an asynchronous callback to return the result. This API is used to obtain the list of DLP files that are accessed recently, which can be used to track and manage file usage.
 
 **Since:** 10
 

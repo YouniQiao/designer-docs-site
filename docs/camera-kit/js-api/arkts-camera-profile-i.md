@@ -34,10 +34,7 @@ Output format.
 readonly size: Size
 ```
 
-Resolution.
-
-The size setting corresponds to the camera's resolution width and height, rather than the actual dimensions of
-the output image.
+Resolution. The size setting corresponds to the camera's resolution width and height, rather than the actual dimensions of the output image.
 
 **Type:** Size
 

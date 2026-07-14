@@ -1,11 +1,6 @@
 # StepperItem
 
-用作[Stepper]{@link stepper}组件的页面子组件。
-
-> **说明：**
-
-> - 从API version 8开始支持，从API version 22开始废弃，建议使用[Swiper]{@link swiper}替代。
-
+用作[Stepper]{@link stepper}组件的页面子组件。 > **说明：** > - 从API version 8开始支持，从API version 22开始废弃，建议使用[Swiper]{@link swiper}替代。
 
 ## StepperItem
 
@@ -13,12 +8,7 @@
 StepperItem()
 ```
 
-创建[Stepper]{@link stepper}组件的页面子组件。
-
-> **说明：**
-
-> 从API version 8开始支持，从API version 22开始废弃，建议使用
-> [Swiper](docroot://reference/apis-arkui/arkui-ts/ts-container-swiper.md#属性)替代。
+创建[Stepper]{@link stepper}组件的页面子组件。 > **说明：** > 从API version 8开始支持，从API version 22开始废弃，建议使用 > [Swiper](docroot://reference/apis-arkui/arkui-ts/ts-container-swiper.md#属性)替代。
 
 **起始版本：** 8
 

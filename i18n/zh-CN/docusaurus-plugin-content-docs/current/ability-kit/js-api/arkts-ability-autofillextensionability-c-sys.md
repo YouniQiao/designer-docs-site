@@ -1,7 +1,6 @@
 # AutoFillExtensionAbility（系统接口）
 
-AutoFillExtensionAbility模块支持账号、密码、地址等多种数据类型的自动填充与保存，继承自
-[ExtensionAbility](arkts-ability-extensionability-c.md)。
+AutoFillExtensionAbility模块支持账号、密码、地址等多种数据类型的自动填充与保存，继承自 [ExtensionAbility](arkts-ability-extensionability-c.md)。
 
 **继承/实现关系：** AutoFillExtensionAbility extends [ExtensionAbility](arkts-ability-extensionability-c.md)
 
@@ -143,12 +142,13 @@ class MyAutoFillExtensionAbility extends AutoFillExtensionAbility {
       autoFillManager.ViewData | common.AutoFillExtensionContext> = {
         'session': session,
         'message': 'AutoFill Page',
-        'fillCallback': callback,
+        'saveCallback': callback,
         'viewData': request.viewData,
         'context': this.context
       };
       let storage_fill = new LocalStorage(localStorageData);
       if (session) {
+        // 加载自动保存页面
         session.loadContent('pages/SelectorList', storage_fill);
       } else {
         hilog.error(0x0000, 'testTag', '%{public}s', 'session is null');
@@ -237,6 +237,7 @@ class MyAutoFillExtensionAbility extends AutoFillExtensionAbility {
       };
       let storage_save = new LocalStorage(localStorageData);
       if (session) {
+        // 加载自动保存页面
         session.loadContent('pages/SavePage', storage_save);
       } else {
         hilog.error(0x0000, 'testTag', '%{public}s', 'session is null');

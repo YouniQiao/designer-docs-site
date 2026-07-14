@@ -12,10 +12,7 @@ import { overlay } from '@kit.AbilityKit';
 function setOverlayEnabledByBundleName(bundleName:string, moduleName:string, isEnabled: boolean, callback: AsyncCallback<void>): void
 ```
 
-Enables or disables a module with the overlay feature in another application. This API uses an asynchronous
-callback to return the result.
-
-No permission is required when the specified application is the caller itself.
+Enables or disables a module with the overlay feature in another application. This API uses an asynchronous callback to return the result. No permission is required when the specified application is the caller itself.
 
 **Since:** 10
 
@@ -80,10 +77,7 @@ try {
 function setOverlayEnabledByBundleName(bundleName:string, moduleName:string, isEnabled: boolean): Promise<void>
 ```
 
-Enables or disables a module with the overlay feature in another application. This API uses a promise to return the
-result.
-
-No permission is required when the specified application is the caller itself.
+Enables or disables a module with the overlay feature in another application. This API uses a promise to return the result. No permission is required when the specified application is the caller itself.
 
 **Since:** 10
 

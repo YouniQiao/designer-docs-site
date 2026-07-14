@@ -52,10 +52,7 @@ FLAG_AUTH_PERSISTABLE_URI_PERMISSION = 0x00000040
 FLAG_INSTALL_ON_DEMAND = 0x00000800
 ```
 
-表示拉起原子化服务时开启免安装功能。
-
-- 如果开启了免安装功能，当系统检测到被拉起的原子化服务未安装时，会自动安装原子化服务，再进行拉起。
-- 如果未开启免安装功能，当原子化服务未安装时，将拉起失败。
+表示拉起原子化服务时开启免安装功能。 - 如果开启了免安装功能，当系统检测到被拉起的原子化服务未安装时，会自动安装原子化服务，再进行拉起。 - 如果未开启免安装功能，当原子化服务未安装时，将拉起失败。
 
 **起始版本：** 9
 
@@ -69,8 +66,7 @@ FLAG_INSTALL_ON_DEMAND = 0x00000800
 FLAG_ABILITY_ON_COLLABORATE = 0x00002000
 ```
 
-在多设备协同场景下，调用方应用通过DMS系统发起请求并且通过Flags字段携带此标志，协同方应用才会触发生命周期回调方法
-[onCollaborate()](arkts-ability-uiability-c.md#oncollaborate-1)。
+在多设备协同场景下，调用方应用通过DMS系统发起请求并且通过Flags字段携带此标志，协同方应用才会触发生命周期回调方法 [onCollaborate()](arkts-ability-uiability-c.md#oncollaborate-1)。
 
 **起始版本：** 18
 
@@ -82,9 +78,7 @@ FLAG_ABILITY_ON_COLLABORATE = 0x00002000
 FLAG_START_WITHOUT_TIPS = 0x40000000
 ```
 
-表示是否关闭匹配失败弹窗功能。
-
-通过[隐式方式拉起应用](../../../../application-models/app-startup-overview.md)时，如果没有能够匹配的应用，默认会弹出提示弹窗“暂无可用打开方式”。开发者可以通过该字段屏蔽该弹窗。
+表示是否关闭匹配失败弹窗功能。 通过[隐式方式拉起应用](../../../../application-models/app-startup-overview.md)时，如果没有能够匹配的应用，默认会弹出提示弹窗“暂无可用打开方式”。开发者可以通过该字段屏蔽该弹窗。
 
 **起始版本：** 11
 

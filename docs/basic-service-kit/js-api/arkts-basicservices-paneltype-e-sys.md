@@ -14,8 +14,7 @@ Enumerates the word selection panel types.
 MENU_PANEL = 1
 ```
 
-The menu panel can serve as a primary panel to display the functions that the current application can provide,
-such as translation and search.
+The menu panel can serve as a primary panel to display the functions that the current application can provide, such as translation and search.
 
 **Since:** 24
 
@@ -31,8 +30,7 @@ such as translation and search.
 MAIN_PANEL = 2
 ```
 
-The main panel can serve as a secondary panel that pops up when the user clicks on the function buttons
-on the menu panel, displaying specific translation or search results.
+The main panel can serve as a secondary panel that pops up when the user clicks on the function buttons on the menu panel, displaying specific translation or search results.
 
 **Since:** 24
 

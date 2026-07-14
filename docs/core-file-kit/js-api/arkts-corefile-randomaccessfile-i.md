@@ -1,7 +1,6 @@
 # RandomAccessFile
 
-Provides APIs for randomly reading and writing a stream. Before invoking any API of **RandomAccessFile**, you need to
-use **createRandomAccessFile()** to create a **RandomAccessFile** instance synchronously or asynchronously.
+Provides APIs for randomly reading and writing a stream. Before invoking any API of **RandomAccessFile**, you need to use **createRandomAccessFile()** to create a **RandomAccessFile** instance synchronously or asynchronously.
 
 **Since:** 10
 
@@ -227,6 +226,31 @@ Reads data from a file. This API uses an asynchronous callback to return the res
 | 13900034 | Operation would block |
 | 13900042 | Unknown error |
 
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let filePath = pathDir + "/test.txt";
+let file = fileIo.openSync(filePath, fileIo.OpenMode.CREATE | fileIo.OpenMode.READ_WRITE);
+let randomAccessFile = fileIo.createRandomAccessFileSync(file);
+let length: number = 20;
+
+let arrayBuffer = new ArrayBuffer(length);
+randomAccessFile.read(arrayBuffer, (err: BusinessError, readLength: number) => {
+  if (err) {
+    console.error(`Failed to read. Code: ${err.code}, message: ${err.message}`);
+  } else {
+    if (readLength) {
+      console.info(`Succeeded in reading, size is: ${readLength}`);
+    }
+  }
+  randomAccessFile.close();
+  fileIo.closeSync(file);
+});
+
+```
+
 ## read
 
 ```TypeScript
@@ -264,6 +288,35 @@ Reads data from a file. This API uses an asynchronous callback to return the res
 | 13900020 | Invalid argument |
 | 13900034 | Operation would block |
 | 13900042 | Unknown error |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+import { ReadOptions } from '@kit.CoreFileKit';
+
+let filePath = pathDir + "/test.txt";
+let file = fileIo.openSync(filePath, fileIo.OpenMode.CREATE | fileIo.OpenMode.READ_WRITE);
+let randomAccessFile = fileIo.createRandomAccessFileSync(file);
+let length: number = 20;
+let readOption: ReadOptions = {
+  offset: 1,
+  length: 5
+};
+let arrayBuffer = new ArrayBuffer(length);
+randomAccessFile.read(arrayBuffer, readOption, (err: BusinessError, readLength: number) => {
+  if (err) {
+    console.error(`Failed to read. Code: ${err.code}, message: ${err.message}`);
+  } else {
+    if (readLength) {
+      console.info(`Succeeded in reading, size is: ${readLength}`);
+    }
+  }
+  randomAccessFile.close();
+  fileIo.closeSync(file);
+});
+
+```
 
 ## readSync
 
@@ -469,6 +522,30 @@ Writes data to a file. This API uses an asynchronous callback to return the resu
 | 13900041 | Quota exceeded |
 | 13900042 | Unknown error |
 
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let filePath = pathDir + "/test.txt";
+let file = fileIo.openSync(filePath, fileIo.OpenMode.CREATE | fileIo.OpenMode.READ_WRITE);
+let randomAccessFile = fileIo.createRandomAccessFileSync(file);
+let bufferLength: number = 4096;
+let arrayBuffer = new ArrayBuffer(bufferLength);
+randomAccessFile.write(arrayBuffer, (err: BusinessError, bytesWritten: number) => {
+  if (err) {
+    console.error(`Failed to write. Code: ${err.code}, message: ${err.message}`);
+  } else {
+    if (bytesWritten) {
+      console.info(`Succeeded in writing, size is: ${bytesWritten}`);
+    }
+  }
+  randomAccessFile.close();
+  fileIo.closeSync(file);
+});
+
+```
+
 ## write
 
 ```TypeScript
@@ -509,6 +586,36 @@ Writes data to a file. This API uses an asynchronous callback to return the resu
 | 13900034 | Operation would block |
 | 13900041 | Quota exceeded |
 | 13900042 | Unknown error |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+import { WriteOptions } from '@kit.CoreFileKit';
+
+let filePath = pathDir + "/test.txt";
+let file = fileIo.openSync(filePath, fileIo.OpenMode.CREATE | fileIo.OpenMode.READ_WRITE);
+let randomAccessFile = fileIo.createRandomAccessFileSync(file);
+let bufferLength: number = 4096;
+let writeOption: WriteOptions = {
+  offset: 1,
+  length: bufferLength,
+  encoding: 'utf-8'
+};
+let arrayBuffer = new ArrayBuffer(bufferLength);
+randomAccessFile.write(arrayBuffer, writeOption, (err: BusinessError, bytesWritten: number) => {
+  if (err) {
+    console.error(`Failed to write. Code: ${err.code}, message: ${err.message}`);
+  } else {
+    if (bytesWritten) {
+      console.info(`Succeeded in writing, size is: ${bytesWritten}`);
+    }
+  }
+  randomAccessFile.close();
+  fileIo.closeSync(file);
+});
+
+```
 
 ## writeSync
 

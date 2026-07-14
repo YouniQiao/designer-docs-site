@@ -12,11 +12,7 @@ want的Params操作的常量。
 ABILITY_BACK_TO_OTHER_MISSION_STACK = 'ability.params.backToOtherMissionStack'
 ```
 
-表示是否支持跨任务链返回。
-
-该参数用于控制跨应用的UIAbility返回逻辑，其核心作用是改变用户执行返回键时的应用跳转行为。例如现有UIAbility A和UIAbility B，当前前台显示的是UIAbility A，随后系统服务又拉起
-UIAbility B（同时在Want的Params字段配置该参数为true），那么，当UIAbility B退出时，会返回到UIAbility A（即返回到最近一次的访问任务）。如果未配置该参数，则默认直接返回桌面。需要注意
-的是，该字段仅支持系统设置，三方应用传入该字段不生效。
+表示是否支持跨任务链返回。 该参数用于控制跨应用的UIAbility返回逻辑，其核心作用是改变用户执行返回键时的应用跳转行为。例如现有UIAbility A和UIAbility B，当前前台显示的是UIAbility A，随后系统服务又拉起 UIAbility B（同时在Want的Params字段配置该参数为true），那么，当UIAbility B退出时，会返回到UIAbility A（即返回到最近一次的访问任务）。如果未配置该参数，则默认直接返回桌面。需要注意 的是，该字段仅支持系统设置，三方应用传入该字段不生效。
 
 **起始版本：** 9
 
@@ -44,9 +40,7 @@ ABILITY_RECOVERY_RESTART = 'ohos.ability.params.abilityRecoveryRestart'
 CONTENT_TITLE_KEY = 'ohos.extra.param.key.contentTitle'
 ```
 
-表示原子化服务分享的标题。
-
-在跨端分享的[onShare](arkts-ability-uiability-c.md#onshare-1)回调中，开发者可通过该字段设置分享的标题。
+表示原子化服务分享的标题。 在跨端分享的[onShare](arkts-ability-uiability-c.md#onshare-1)回调中，开发者可通过该字段设置分享的标题。
 
 **起始版本：** 10
 
@@ -60,9 +54,7 @@ CONTENT_TITLE_KEY = 'ohos.extra.param.key.contentTitle'
 SHARE_ABSTRACT_KEY = 'ohos.extra.param.key.shareAbstract'
 ```
 
-表示原子化服务分享的内容摘要。
-
-在跨端分享的[onShare](arkts-ability-uiability-c.md#onshare-1)回调中，开发者可通过该字段设置分享的摘要。
+表示原子化服务分享的内容摘要。 在跨端分享的[onShare](arkts-ability-uiability-c.md#onshare-1)回调中，开发者可通过该字段设置分享的摘要。
 
 **起始版本：** 10
 
@@ -76,9 +68,7 @@ SHARE_ABSTRACT_KEY = 'ohos.extra.param.key.shareAbstract'
 SHARE_URL_KEY = 'ohos.extra.param.key.shareUrl'
 ```
 
-表示原子化服务分享的URL链接。
-
-在跨端分享的[onShare](arkts-ability-uiability-c.md#onshare-1)回调中，开发者可通过该字段设置分享的URL链接。
+表示原子化服务分享的URL链接。 在跨端分享的[onShare](arkts-ability-uiability-c.md#onshare-1)回调中，开发者可通过该字段设置分享的URL链接。
 
 **起始版本：** 10
 
@@ -120,8 +110,7 @@ SUPPORT_CONTINUE_SOURCE_EXIT_KEY = 'ohos.extra.param.key.supportContinueSourceEx
 SHOW_MODE_KEY = 'ohos.extra.param.key.showMode'
 ```
 
-表示[EmbeddableUIAbility](arkts-ability-embeddableuiability-c.md)的显示模式，值为枚举类型
-[ShowMode](arkts-ability-showmode-e.md)
+表示[EmbeddableUIAbility](arkts-ability-embeddableuiability-c.md)的显示模式，值为枚举类型 [ShowMode](arkts-ability-showmode-e.md)
 
 **起始版本：** 12
 
@@ -135,8 +124,7 @@ SHOW_MODE_KEY = 'ohos.extra.param.key.showMode'
 PARAMS_STREAM = 'ability.params.stream'
 ```
 
-表示授权给目标方的文件URI列表。对应的value必须是string类型的文件URI数组。文件URI的获取参考[fileUri](./@ohos.file.fileuri:fileUri.getUriFromPath)
-。该字段需要与文件URI读写[Flags](arkts-ability-flags-e.md)配合使用。
+表示授权给目标方的文件URI列表。对应的value必须是string类型的文件URI数组。文件URI的获取参考[fileUri](./@ohos.file.fileuri:fileUri.getUriFromPath) 。该字段需要与文件URI读写[Flags](arkts-ability-flags-e.md)配合使用。
 
 **起始版本：** 12
 
@@ -164,11 +152,7 @@ APP_CLONE_INDEX_KEY = 'ohos.extra.param.key.appCloneIndex'
 CALLER_REQUEST_CODE = 'ohos.extra.param.key.callerRequestCode'
 ```
 
-表示应用拉起的请求码。
-
-当调用[startAbilityForResult](./application/UIAbilityContext:UIAbilityContext.startabilityforresult)或
-[openLink](arkts-ability-uiabilitycontext-c.md#openlink-1)拉起目标方Ability时，需要目标方返回结果。为了确保目标方能够将结果准确
-返回到调用方，系统会自动生成唯一的requestCode，以标识本次调用。
+表示应用拉起的请求码。 当调用[startAbilityForResult](./application/UIAbilityContext:UIAbilityContext.startabilityforresult)或 [openLink](arkts-ability-uiabilitycontext-c.md#openlink-1)拉起目标方Ability时，需要目标方返回结果。为了确保目标方能够将结果准确 返回到调用方，系统会自动生成唯一的requestCode，以标识本次调用。
 
 **起始版本：** 12
 
@@ -182,9 +166,7 @@ CALLER_REQUEST_CODE = 'ohos.extra.param.key.callerRequestCode'
 PAGE_PATH = 'ohos.param.atomicservice.pagePath'
 ```
 
-表示原子化服务的页面路径。
-
-如果原子化服务的页面跳转是通过[router](../../../../ui/arkts-routing.md)实现的，可以使用该参数指定跳转的页面，例如"library/ets/pages/menu"。
+表示原子化服务的页面路径。 如果原子化服务的页面跳转是通过[router](../../../../ui/arkts-routing.md)实现的，可以使用该参数指定跳转的页面，例如"library/ets/pages/menu"。
 
 **起始版本：** 12
 
@@ -198,10 +180,7 @@ PAGE_PATH = 'ohos.param.atomicservice.pagePath'
 ROUTER_NAME = 'ohos.param.atomicservice.routerName'
 ```
 
-表示原子化服务的页面路由名称，即进行页面跳转时指定的页面名称。
-
-如果原子化服务的页面跳转是通过[Navigation](../../../../ui/arkts-navigation-architecture.md)实现的，可以通过ROUTER_NAME、PAGE_SOURCE_FILE及
-BUILD_FUNCTION联合使用指定跳转的页面。
+表示原子化服务的页面路由名称，即进行页面跳转时指定的页面名称。 如果原子化服务的页面跳转是通过[Navigation](../../../../ui/arkts-navigation-architecture.md)实现的，可以通过ROUTER_NAME、PAGE_SOURCE_FILE及 BUILD_FUNCTION联合使用指定跳转的页面。
 
 **起始版本：** 12
 
@@ -215,10 +194,7 @@ BUILD_FUNCTION联合使用指定跳转的页面。
 PAGE_SOURCE_FILE = 'ohos.param.atomicservice.pageSourceFile'
 ```
 
-表示原子化服务的页面源文件。
-
-如果原子化服务的页面跳转是通过[Navigation](../../../../ui/arkts-navigation-architecture.md)实现的，可以通过ROUTER_NAME、PAGE_SOURCE_FILE及
-BUILD_FUNCTION联合使用指定跳转的页面。
+表示原子化服务的页面源文件。 如果原子化服务的页面跳转是通过[Navigation](../../../../ui/arkts-navigation-architecture.md)实现的，可以通过ROUTER_NAME、PAGE_SOURCE_FILE及 BUILD_FUNCTION联合使用指定跳转的页面。
 
 **起始版本：** 12
 
@@ -232,10 +208,7 @@ BUILD_FUNCTION联合使用指定跳转的页面。
 BUILD_FUNCTION = 'ohos.param.atomicservice.buildFunction'
 ```
 
-表示原子化服务的生成函数。
-
-如果原子化服务的页面跳转是通过[Navigation](../../../../ui/arkts-navigation-architecture.md)实现的，可以通过ROUTER_NAME、PAGE_SOURCE_FILE及
-BUILD_FUNCTION联合使用指定跳转的页面。
+表示原子化服务的生成函数。 如果原子化服务的页面跳转是通过[Navigation](../../../../ui/arkts-navigation-architecture.md)实现的，可以通过ROUTER_NAME、PAGE_SOURCE_FILE及 BUILD_FUNCTION联合使用指定跳转的页面。
 
 **起始版本：** 12
 
@@ -249,9 +222,7 @@ BUILD_FUNCTION联合使用指定跳转的页面。
 SUB_PACKAGE_NAME = 'ohos.param.atomicservice.subpackageName'
 ```
 
-表示原子化服务的分包名。应用程序包支持多模块开发，每个应用程序包可能包含多个HAP或HSP。原子化服务为了实现快速启动效果，对HAP和HSP文件大小做了限制，并同时优化了启动机制，原子化服务的这种多模块开发方式称为“分包”。
-
-打开原子化服务的时候，可以通过设置该参数拉起对应的分包。
+表示原子化服务的分包名。应用程序包支持多模块开发，每个应用程序包可能包含多个HAP或HSP。原子化服务为了实现快速启动效果，对HAP和HSP文件大小做了限制，并同时优化了启动机制，原子化服务的这种多模块开发方式称为“分包”。 打开原子化服务的时候，可以通过设置该参数拉起对应的分包。
 
 **起始版本：** 12
 
@@ -265,9 +236,7 @@ SUB_PACKAGE_NAME = 'ohos.param.atomicservice.subpackageName'
 APP_INSTANCE_KEY = 'ohos.extra.param.key.appInstance'
 ```
 
-表示具体的应用实例。
-
-在[应用创建多实例](../../../../quick-start/multiInstance.md)时，系统会为每个实例分配唯一的标识。应用跳转时，开发者可以通过设置该参数指定希望跳转到的已创建的应用实例。
+表示具体的应用实例。 在[应用创建多实例](../../../../quick-start/multiInstance.md)时，系统会为每个实例分配唯一的标识。应用跳转时，开发者可以通过设置该参数指定希望跳转到的已创建的应用实例。
 
 **起始版本：** 14
 
@@ -279,9 +248,7 @@ APP_INSTANCE_KEY = 'ohos.extra.param.key.appInstance'
 CREATE_APP_INSTANCE_KEY = 'ohos.extra.param.key.createAppInstance'
 ```
 
-表示是否创建新应用实例。默认为false，表示不创建新应用实例。
-
-开发者可以通过设置该参数为true拉起新的应用实例。需要注意的是，被拉起的应用需要支持多实例，参考[应用创建多实例](../../../../quick-start/multiInstance.md)。
+表示是否创建新应用实例。默认为false，表示不创建新应用实例。 开发者可以通过设置该参数为true拉起新的应用实例。需要注意的是，被拉起的应用需要支持多实例，参考[应用创建多实例](../../../../quick-start/multiInstance.md)。
 
 **起始版本：** 14
 
@@ -317,10 +284,7 @@ DESTINATION_PLUGIN_ABILITY = 'ohos.params.pluginAbility'
 APP_LAUNCH_TRUSTLIST = 'ohos.params.appLaunchTrustList'
 ```
 
-表示隐式启动时的应用过滤列表。
-
-隐式启动时仅匹配列表中的应用，值为string类型的[AppIdentifier](./bundleManager/BundleInfo:BundleInfo.AppIdentifier)数组，过滤列表最多支持
-50个应用，传入空数组不生效。
+表示隐式启动时的应用过滤列表。 隐式启动时仅匹配列表中的应用，值为string类型的[AppIdentifier](./bundleManager/BundleInfo:BundleInfo.AppIdentifier)数组，过滤列表最多支持 50个应用，传入空数组不生效。
 
 **起始版本：** 17
 
@@ -334,9 +298,7 @@ APP_LAUNCH_TRUSTLIST = 'ohos.params.appLaunchTrustList'
 ATOMIC_SERVICE_SHARE_ROUTER = 'ohos.params.atomicservice.shareRouter'
 ```
 
-表示被拉起的原子化服务的页面栈信息。仅当拉起方为UIAbilityContext，被拉起方为原子化服务时生效。
-
-例如，某原子化服务中包含首页和第2页，如果希望直接拉起原子化服务的第2页，可以在拉起原子化服务时通过该字段传递第2页的页面栈信息。
+表示被拉起的原子化服务的页面栈信息。仅当拉起方为UIAbilityContext，被拉起方为原子化服务时生效。 例如，某原子化服务中包含首页和第2页，如果希望直接拉起原子化服务的第2页，可以在拉起原子化服务时通过该字段传递第2页的页面栈信息。
 
 **起始版本：** 20
 
@@ -350,15 +312,7 @@ ATOMIC_SERVICE_SHARE_ROUTER = 'ohos.params.atomicservice.shareRouter'
 LAUNCH_REASON_MESSAGE = 'ohos.params.launchReasonMessage'
 ```
 
-表示应用拉起的原因。
-
-调用方必须为系统应用，且需要申请ohos.permission.SET_LAUNCH_REASON_MESSAGE权限。当前取值支持：
-
-"ReasonMessage_SystemShare"：表示系统分享拉起。
-
-"ReasonMessage_DesktopShortcut"：表示桌面快捷方式拉起。
-
-"ReasonMessage_Notification"：表示通知拉起。
+表示应用拉起的原因。 调用方必须为系统应用，且需要申请ohos.permission.SET_LAUNCH_REASON_MESSAGE权限。当前取值支持： "ReasonMessage_SystemShare"：表示系统分享拉起。 "ReasonMessage_DesktopShortcut"：表示桌面快捷方式拉起。 "ReasonMessage_Notification"：表示通知拉起。
 
 **起始版本：** 18
 
@@ -372,10 +326,7 @@ LAUNCH_REASON_MESSAGE = 'ohos.params.launchReasonMessage'
 ABILITY_UNIFIED_DATA_KEY = 'ohos.param.ability.udKey'
 ```
 
-表示基于[UDMF](./@ohos.data.unifiedDataChannel:unifiedDataChannel)进行文件分享时使用的唯一标识。该字段只允许系统应用设置，三方应用可以读取。
-
-当Want中存在URI授权Flag字段（即[FLAG_AUTH_READ_URI_PERMISSION](arkts-ability-flags-e.md)或[FLAG_AUTH_WRITE_URI_PERMISSION](arkts-ability-flags-e.md)）
-，且同时存在PARAMS_STREAM字段时，该字段将不生效。
+表示基于[UDMF](../../apis-arkdata/arkts-apis/arkts-data-unifieddatachannel.md)进行文件分享时使用的唯一标识。该字段只允许系统应用设置，三方应用可以读取。 当Want中存在URI授权Flag字段（即[FLAG_AUTH_READ_URI_PERMISSION](arkts-ability-flags-e.md)或[FLAG_AUTH_WRITE_URI_PERMISSION](arkts-ability-flags-e.md)） ，且同时存在PARAMS_STREAM字段时，该字段将不生效。
 
 **起始版本：** 20
 

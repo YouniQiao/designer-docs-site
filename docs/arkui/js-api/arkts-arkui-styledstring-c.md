@@ -63,33 +63,7 @@ Checks whether this styled string the same as another styled string.
 static fromHtml(html: string): Promise<StyledString>
 ```
 
-Converts an HTML string into a styled string. Currently, the following HTML tags are supported for conversion: \<p>
-, \<span>, \<img>, \
-
-, \<strong>, \<b>, \<a>, \<i>, \<em>, \<s>, \<u>, \<del>, \<sup>, \<sub>. The **style** attribute within tags can
-be converted to the corresponding style in the styled string.
-
-For details about how to use this API, see
-[Example 12: Implementing Conversion Using fromHtml and toHtml]
-(../../../../reference/apis-arkui/arkui-ts/
-ts-universal-styled-string.md#example-12-implementing-conversion-using-fromhtml-and-tohtml).
-
-| Tag Name| Description |
-| ------------- | ---------------------------- |
-| \<p\> | Paragraph tag, which separates text into paragraphs. |
-| \<span\> | Inline text supporting style configuration. |
-| \<img\> | Image tag, used to insert an image. |
-| \<strong\> | Bold text tag. |
-| &lt;br&gt;<sup>20+</sup> | Line break tag. |
-| \<b\><sup>20+</sup> | Bold text tag. |
-| \<a\><sup>20+</sup> | Hyperlink tag. |
-| \<i\><sup>20+</sup> | Italic text tag. |
-| \<em\><sup>20+</sup> | Italic text tag. |
-| \<s\><sup>20+</sup> | Strikethrough tag, which adds a line through the text. |
-| \<u\><sup>20+</sup> | Underline tag, which adds a decorative underline to the text. |
-| \<del\><sup>20+</sup> | Strikethrough tag, which adds a line through the text. |
-| \<sup\><sup>20+</sup> | Superscript tag. |
-| \<sub\><sup>20+</sup> | Subscript tag. |
+Converts an HTML string into a styled string. Currently, the following HTML tags are supported for conversion: \<p> , \<span>, \<img>, \ , \<strong>, \<b>, \<a>, \<i>, \<em>, \<s>, \<u>, \<del>, \<sup>, \<sub>. The **style** attribute within tags can be converted to the corresponding style in the styled string. For details about how to use this API, see [Example 12: Implementing Conversion Using fromHtml and toHtml] (../../../../reference/apis-arkui/arkui-ts/ ts-universal-styled-string.md#example-12-implementing-conversion-using-fromhtml-and-tohtml). | Tag Name| Description | | ------------- | ---------------------------- | | \<p\> | Paragraph tag, which separates text into paragraphs. | | \<span\> | Inline text supporting style configuration. | | \<img\> | Image tag, used to insert an image. | | \<strong\> | Bold text tag. | | &lt;br&gt;<sup>20+</sup> | Line break tag. | | \<b\><sup>20+</sup> | Bold text tag. | | \<a\><sup>20+</sup> | Hyperlink tag. | | \<i\><sup>20+</sup> | Italic text tag. | | \<em\><sup>20+</sup> | Italic text tag. | | \<s\><sup>20+</sup> | Strikethrough tag, which adds a line through the text. | | \<u\><sup>20+</sup> | Underline tag, which adds a decorative underline to the text. | | \<del\><sup>20+</sup> | Strikethrough tag, which adds a line through the text. | | \<sup\><sup>20+</sup> | Superscript tag. | | \<sub\><sup>20+</sup> | Subscript tag. |
 
 **Since:** 12
 
@@ -146,10 +120,7 @@ Obtains the text of this styled string.
 getStyles(start: number, length: number, styledKey?: StyledStringKey): Array<SpanStyle>
 ```
 
-Obtains the styles in the specified range of a styled string. The specified range must not exceed the string's
-length.
-
-This API returns only styles explicitly set by the developer.
+Obtains the styles in the specified range of a styled string. The specified range must not exceed the string's length. This API returns only styles explicitly set by the developer.
 
 **Since:** 12
 
@@ -220,13 +191,7 @@ Obtains a substring of this styled string. The specified range must not exceed t
 static toHtml(styledString: StyledString): string
 ```
 
-Converts a styled string into an HTML-formatted string. The supported styled string keys for conversion, as
-detailed in [StyledStringKey](arkts-arkui-styledstringkey-e.md), include: **StyledStringKey.FONT**,
-**StyledStringKey.DECORATION**, **StyledStringKey.LETTER_SPACING**, **StyledStringKey.TEXT_SHADOW**,
-**StyledStringKey.LINE_HEIGHT**, and **StyledStringKey.IMAGE**.
-
-For details about how to use this API, see
-[Example 12: Implementing Conversion Using fromHtml and toHtml](../../../../reference/apis-arkui/arkui-ts/ts-universal-styled-string.md#example-12-implementing-conversion-using-fromhtml-and-tohtml).
+Converts a styled string into an HTML-formatted string. The supported styled string keys for conversion, as detailed in [StyledStringKey](arkts-arkui-styledstringkey-e.md), include: **StyledStringKey.FONT**, **StyledStringKey.DECORATION**, **StyledStringKey.LETTER_SPACING**, **StyledStringKey.TEXT_SHADOW**, **StyledStringKey.LINE_HEIGHT**, and **StyledStringKey.IMAGE**. For details about how to use this API, see [Example 12: Implementing Conversion Using fromHtml and toHtml](../../../../reference/apis-arkui/arkui-ts/ts-universal-styled-string.md#example-12-implementing-conversion-using-fromhtml-and-tohtml).
 
 **Since:** 14
 
@@ -260,11 +225,7 @@ For details about how to use this API, see
 readonly length: number
 ```
 
-Length of the styled string.
-
-**NOTE**
-
-Both **ImageAttachment** and **CustomSpan** in the styled string are counted as length 1.
+Length of the styled string. **NOTE** Both **ImageAttachment** and **CustomSpan** in the styled string are counted as length 1.
 
 **Type:** number
 

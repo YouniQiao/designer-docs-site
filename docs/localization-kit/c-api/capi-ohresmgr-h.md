@@ -87,7 +87,7 @@ Obtains the Base64 code of the media resource with the specified screen density 
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_ID_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001001 - The resource ID is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_ID](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001002 - No matching resource is found based on the resource ID.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_ID_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001001 - The resource ID is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_ID](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001002 - No matching resource is found based on the resource ID.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
 
 ### OH_ResourceManager_GetMediaBase64Data()
 
@@ -115,7 +115,7 @@ Obtains the Base64 code of the media resource with the specified screen density 
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_ID_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001001 - The resource ID is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_ID](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001002 - No matching resource is found based on the resource ID.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_ID_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001001 - The resource ID is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_ID](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001002 - No matching resource is found based on the resource ID.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
 
 ### OH_ResourceManager_GetMediaBase64ByName()
 
@@ -143,7 +143,7 @@ Obtains the Base64 code of the media resource with the specified screen density 
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_NAME_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001003 - The resource name is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_NAME](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001004 - No matching resource is found based on the resource name.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_NAME_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001003 - The resource name is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_NAME](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001004 - No matching resource is found based on the resource name.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
 
 ### OH_ResourceManager_GetMediaBase64DataByName()
 
@@ -171,7 +171,7 @@ Obtains the Base64 code of the media resource with the specified screen density 
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_NAME_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001003 - The resource name is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_NAME](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001004 - No matching resource is found based on the resource name.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_NAME_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001003 - The resource name is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_NAME](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001004 - No matching resource is found based on the resource name.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
 
 ### OH_ResourceManager_GetMedia()
 
@@ -199,7 +199,7 @@ Obtains the content of the media resource with the specified screen density base
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_ID_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001001 - The resource ID is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_ID](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001002 - No matching resource is found based on the resource ID.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_ID_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001001 - The resource ID is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_ID](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001002 - No matching resource is found based on the resource ID.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
 
 ### OH_ResourceManager_GetMediaData()
 
@@ -227,7 +227,7 @@ Obtains the content of the media resource with the specified screen density base
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_ID_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001001 - The resource ID is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_ID](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001002 - No matching resource is found based on the resource ID.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_ID_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001001 - The resource ID is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_ID](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001002 - No matching resource is found based on the resource ID.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
 
 ### OH_ResourceManager_GetMediaByName()
 
@@ -255,7 +255,7 @@ Obtains the content of the media resource with the specified screen density base
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_NAME_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001003 - The resource name is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_NAME](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001004 - No matching resource is found based on the resource name.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_NAME_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001003 - The resource name is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_NAME](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001004 - No matching resource is found based on the resource name.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
 
 ### OH_ResourceManager_GetMediaDataByName()
 
@@ -283,7 +283,7 @@ Obtains the content of the media resource with the specified screen density base
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_NAME_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001003 - The resource name is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_NAME](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001004 - No matching resource is found based on the resource name.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_NAME_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001003 - The resource name is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_NAME](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001004 - No matching resource is found based on the resource name.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
 
 ### OH_ResourceManager_GetDrawableDescriptor()
 
@@ -303,7 +303,7 @@ Obtains the **DrawableDescriptor** object of the icon resource with the specifie
 | -- | -- |
 | [const NativeResourceManager](capi-rawfile-nativeresourcemanager.md) *mgr | Pointer to [NativeResourceManager](capi-rawfile-nativeresourcemanager.md). It is obtained by using[OH_ResourceManager_InitNativeResourceManager](capi-raw-file-manager-h.md#oh_resourcemanager_initnativeresourcemanager). |
 | uint32_t resId | Indicates the resource ID. |
-| [ArkUI_DrawableDescriptor](../ArkUI/capi-arkui-nativemodule-arkui-drawabledescriptor.md) **drawableDescriptor | Result of writing **drawableDescriptor**. |
+| ArkUI_DrawableDescriptor **drawableDescriptor | Result of writing **drawableDescriptor**. |
 | density | Screen density. This parameter is optional. For details about the value range, see[ScreenDensity](capi-resmgr-common-h.md#screendensity). The default value is 0, indicating that the current system screen density (in DPI) isused. |
 | type | Icon type. The value **0** indicates an application icon, and the value **1** indicates a theme icon. |
 
@@ -311,7 +311,7 @@ Obtains the **DrawableDescriptor** object of the icon resource with the specifie
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_ID_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001001 - The resource ID is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_ID](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001002 - No matching resource is found based on the resource ID. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_ID_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001001 - The resource ID is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_ID](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001002 - No matching resource is found based on the resource ID. |
 
 ### OH_ResourceManager_GetDrawableDescriptorData()
 
@@ -331,7 +331,7 @@ Obtains the **DrawableDescriptor** object of the icon resource with the specifie
 | -- | -- |
 | [const NativeResourceManager](capi-rawfile-nativeresourcemanager.md) *mgr | Pointer to [NativeResourceManager](capi-rawfile-nativeresourcemanager.md). It is obtained by using[OH_ResourceManager_InitNativeResourceManager](capi-raw-file-manager-h.md#oh_resourcemanager_initnativeresourcemanager). |
 | uint32_t resId | Resource ID. |
-| [ArkUI_DrawableDescriptor](../ArkUI/capi-arkui-nativemodule-arkui-drawabledescriptor.md) **drawableDescriptor | Result of writing **drawableDescriptor**. |
+| ArkUI_DrawableDescriptor **drawableDescriptor | Result of writing **drawableDescriptor**. |
 | uint32_t density | Screen density. This parameter is optional. For details about the value range, see[ScreenDensity](capi-resmgr-common-h.md#screendensity). The default value is **0**, indicating that the current system screen density (in DPI) isused. If this parameter is not required, set it to **0**. |
 | uint32_t type | Icon type. This parameter is optional. The value **0** indicates an application icon, and the value **1indicates a theme icon. If this parameter is not required, set it to **0**. |
 
@@ -339,7 +339,7 @@ Obtains the **DrawableDescriptor** object of the icon resource with the specifie
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_ID_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001001 - The resource ID is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_ID](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001002 - No matching resource is found based on the resource ID. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_ID_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001001 - The resource ID is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_ID](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001002 - No matching resource is found based on the resource ID. |
 
 ### OH_ResourceManager_GetDrawableDescriptorByName()
 
@@ -359,7 +359,7 @@ Obtains the **DrawableDescriptor** object of the icon resource with the specifie
 | -- | -- |
 | [const NativeResourceManager](capi-rawfile-nativeresourcemanager.md) *mgr | Pointer to [NativeResourceManager](capi-rawfile-nativeresourcemanager.md). It is obtained by using[OH_ResourceManager_InitNativeResourceManager](capi-raw-file-manager-h.md#oh_resourcemanager_initnativeresourcemanager). |
 | const char *resName | Resource name. |
-| [ArkUI_DrawableDescriptor](../ArkUI/capi-arkui-nativemodule-arkui-drawabledescriptor.md) **drawableDescriptor | Result of writing **drawableDescriptor**. |
+| ArkUI_DrawableDescriptor **drawableDescriptor | Result of writing **drawableDescriptor**. |
 | density | Screen density. This parameter is optional. For details about the value range, see[ScreenDensity](capi-resmgr-common-h.md#screendensity). The default value is 0, indicating that the current system screen density (in DPI) isused. |
 | type | Icon type. This parameter is optional. The value **0** indicates an application icon, the value **1indicates a theme icon, and the value **2** indicates a dynamic icon. |
 
@@ -367,7 +367,7 @@ Obtains the **DrawableDescriptor** object of the icon resource with the specifie
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_NAME_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001003 - The resource name is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_NAME](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001004 - No matching resource is found based on the resource name. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_NAME_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001003 - The resource name is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_NAME](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001004 - No matching resource is found based on the resource name. |
 
 ### OH_ResourceManager_GetDrawableDescriptorDataByName()
 
@@ -387,7 +387,7 @@ Obtains the **DrawableDescriptor** object of the icon resource with the specifie
 | -- | -- |
 | [const NativeResourceManager](capi-rawfile-nativeresourcemanager.md) *mgr | Pointer to [NativeResourceManager](capi-rawfile-nativeresourcemanager.md). It is obtained by using[OH_ResourceManager_InitNativeResourceManager](capi-raw-file-manager-h.md#oh_resourcemanager_initnativeresourcemanager). |
 | const char *resName | Resource name. |
-| [ArkUI_DrawableDescriptor](../ArkUI/capi-arkui-nativemodule-arkui-drawabledescriptor.md) **drawableDescriptor | Result of writing **drawableDescriptor**. |
+| ArkUI_DrawableDescriptor **drawableDescriptor | Result of writing **drawableDescriptor**. |
 | uint32_t density | Screen density. This parameter is optional. For details about the value range, see[ScreenDensity](capi-resmgr-common-h.md#screendensity). The default value is **0**, indicating that the current system screen density (in DPI) isused. If this parameter is not required, set it to **0**. |
 | uint32_t type | Icon type. This parameter is optional. The value **0** indicates an application icon, and the value **1indicates a theme icon. If this parameter is not required, set it to **0**. |
 
@@ -395,7 +395,7 @@ Obtains the **DrawableDescriptor** object of the icon resource with the specifie
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_NAME_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001003 - The resource name is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_NAME](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001004 - No matching resource is found based on the resource name. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_NAME_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001003 - The resource name is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_NAME](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001004 - No matching resource is found based on the resource name. |
 
 ### OH_ResourceManager_GetSymbol()
 
@@ -421,7 +421,7 @@ Obtains a **symbol** resource based on the specified resource ID.
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_ID_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001001 - The resource ID is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_ID](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001002 - No matching resource is found based on the resource ID.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_ID_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001001 - The resource ID is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_ID](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001002 - No matching resource is found based on the resource ID.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced. |
 
 ### OH_ResourceManager_GetSymbolByName()
 
@@ -447,7 +447,7 @@ Obtains a **symbol** resource based on the specified resource name.
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_NAME_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001003 - The resource name is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_NAME](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001004 - No matching resource is found based on the resource name.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_NAME_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001003 - The resource name is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_NAME](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001004 - No matching resource is found based on the resource name.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced. |
 
 ### OH_ResourceManager_GetLocales()
 
@@ -474,7 +474,7 @@ Obtains the language list. After using this API, you need to call **OH_ResourceM
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
 
 ### OH_ResourceManager_GetLocalesData()
 
@@ -501,7 +501,7 @@ Obtains the language list. After using this API, you need to call **OH_ResourceM
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
 
 ### OH_ResourceManager_GetConfiguration()
 
@@ -524,13 +524,13 @@ Obtains the device configuration. After this API is used, call[OH_ResourceManage
 | Parameter | Description |
 | -- | -- |
 | [const NativeResourceManager](capi-rawfile-nativeresourcemanager.md) *mgr | Pointer to [NativeResourceManager](capi-rawfile-nativeresourcemanager.md). It is obtained by using[OH_ResourceManager_InitNativeResourceManager](capi-raw-file-manager-h.md#oh_resourcemanager_initnativeresourcemanager). |
-| ResourceManager_Configuration *configuration | Device configuration. The return value of **configuration.screenDensity** is the rounded valueof the device's DPI divided by 160. |
+| [ResourceManager_Configuration](capi-resourcemanager-resourcemanager-configuration.md) *configuration | Device configuration. The return value of **configuration.screenDensity** is the rounded valueof the device's DPI divided by 160. |
 
 **Returns**:
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_SYSTEM_RES_MANAGER_GET_FAILED](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001009 - The attempt to access system resources fails.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_SYSTEM_RES_MANAGER_GET_FAILED](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001009 - The attempt to access system resources fails.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
 
 ### OH_ResourceManager_GetResourceConfiguration()
 
@@ -555,7 +555,7 @@ Obtains the device configuration. After this API is used, call[OH_ResourceManage
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_SYSTEM_RES_MANAGER_GET_FAILED](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001009 - The attempt to access system resources fails.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_SYSTEM_RES_MANAGER_GET_FAILED](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001009 - The attempt to access system resources fails.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
 
 ### OH_ResourceManager_ReleaseConfiguration()
 
@@ -573,13 +573,13 @@ Releases the memory requested by using the [OH_ResourceManager_GetConfiguration]
 
 | Parameter | Description |
 | -- | -- |
-| ResourceManager_Configuration *configuration | Configuration object whose memory needs to be released. |
+| [ResourceManager_Configuration](capi-resourcemanager-resourcemanager-configuration.md) *configuration | Configuration object whose memory needs to be released. |
 
 **Returns**:
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed. |
 
 ### OH_ResourceManager_GetString()
 
@@ -606,7 +606,7 @@ Obtains a **string** resource based on the specified resource ID. The obtain com
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_ID_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001001 - The resource ID is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_ID](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001002 - No matching resource is found based on the resource ID.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_ID_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001001 - The resource ID is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_ID](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001002 - No matching resource is found based on the resource ID.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
 
 ### OH_ResourceManager_GetStringByName()
 
@@ -633,7 +633,7 @@ Obtains a **string** resource based on the specified resource name. The obtain c
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_NAME_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001003 - The resource name is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_NAME](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001004 - No matching resource is found based on the resource name.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_NAME_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001003 - The resource name is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_NAME](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001004 - No matching resource is found based on the resource name.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
 
 ### OH_ResourceManager_GetStringArray()
 
@@ -660,7 +660,7 @@ Obtains a string array based on the specified resource ID. After using this API,
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_ID_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001001 - The resource ID is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_ID](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001002 - No matching resource is found based on the resource ID.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_ID_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001001 - The resource ID is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_ID](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001002 - No matching resource is found based on the resource ID.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
 
 ### OH_ResourceManager_GetStringArrayByName()
 
@@ -687,7 +687,7 @@ Obtains a string array based on the specified resource name. After using this AP
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_NAME_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001003 - The resource name is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_NAME](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001004 - No matching resource is found based on the resource name.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_NAME_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001003 - The resource name is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_NAME](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001004 - No matching resource is found based on the resource name.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
 
 ### OH_ResourceManager_ReleaseStringArray()
 
@@ -712,7 +712,7 @@ Releases the memory of the string array.
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed. |
 
 ### OH_ResourceManager_GetPluralString()
 
@@ -743,7 +743,7 @@ Obtains singular and plural strings based on the specified resource ID. After us
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_ID_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001001 - The resource ID is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_ID](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001002 - No matching resource is found based on the resource ID.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_ID_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001001 - The resource ID is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_ID](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001002 - No matching resource is found based on the resource ID.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
 
 ### OH_ResourceManager_GetPluralStringByName()
 
@@ -774,7 +774,7 @@ Obtains singular and plural strings based on the specified resource name. After 
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_NAME_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001003 - The resource name is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_NAME](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001004 - No matching resource is found based on the resource name.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_NAME_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001003 - The resource name is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_NAME](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001004 - No matching resource is found based on the resource name.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
 
 ### OH_ResourceManager_GetIntPluralString()
 
@@ -802,7 +802,7 @@ Obtains singular and plural strings based on the specified resource ID. After us
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_ID_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001001 - The resource ID is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_ID](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001002 - No matching resource is found based on the resource ID.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_ID_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001001 - The resource ID is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_ID](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001002 - No matching resource is found based on the resource ID.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
 
 ### OH_ResourceManager_GetIntPluralStringByName()
 
@@ -830,7 +830,7 @@ Obtains singular and plural strings based on the specified resource name. After 
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_NAME_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001003 - The resource name is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_NAME](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001004 - No matching resource is found based on the resource name.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_NAME_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001003 - The resource name is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_NAME](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001004 - No matching resource is found based on the resource name.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
 
 ### OH_ResourceManager_GetDoublePluralString()
 
@@ -858,7 +858,7 @@ Obtains singular and plural strings based on the specified resource ID. After us
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_ID_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001001 - The resource ID is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_ID](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001002 - No matching resource is found based on the resource ID.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_ID_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001001 - The resource ID is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_ID](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001002 - No matching resource is found based on the resource ID.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
 
 ### OH_ResourceManager_GetDoublePluralStringByName()
 
@@ -886,7 +886,7 @@ Obtains singular and plural strings based on the specified resource name. After 
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_NAME_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001003 - The resource name is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_NAME](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001004 - No matching resource is found based on the resource name.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_NAME_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001003 - The resource name is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_NAME](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001004 - No matching resource is found based on the resource name.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced.<br>     <br>[ERROR_CODE_OUT_OF_MEMORY](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001100 - A memory overflow occurs. |
 
 ### OH_ResourceManager_GetColor()
 
@@ -912,7 +912,7 @@ Obtains a color value based on the specified resource ID.
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_ID_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001001 - The resource ID is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_ID](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001002 - No matching resource is found based on the resource ID.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_ID_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001001 - The resource ID is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_ID](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001002 - No matching resource is found based on the resource ID.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced. |
 
 ### OH_ResourceManager_GetColorByName()
 
@@ -938,7 +938,7 @@ Obtains a color value based on the specified resource ID.
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_NAME_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001003 - The resource name is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_NAME](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001004 - No matching resource is found based on the resource name.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_NAME_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001003 - The resource name is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_NAME](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001004 - No matching resource is found based on the resource name.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced. |
 
 ### OH_ResourceManager_GetInt()
 
@@ -964,7 +964,7 @@ Obtains an int value based on the specified resource ID.
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_ID_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001001 - The resource ID is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_ID](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001002 - No matching resource is found based on the resource ID.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_ID_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001001 - The resource ID is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_ID](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001002 - No matching resource is found based on the resource ID.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced. |
 
 ### OH_ResourceManager_GetIntByName()
 
@@ -990,7 +990,7 @@ Obtains an int value based on the specified resource name.
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_NAME_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001003 - The resource name is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_NAME](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001004 - No matching resource is found based on the resource name.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_NAME_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001003 - The resource name is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_NAME](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001004 - No matching resource is found based on the resource name.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced. |
 
 ### OH_ResourceManager_GetFloat()
 
@@ -1016,7 +1016,7 @@ Obtains a float value based on the specified resource ID.
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_ID_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001001 - The resource ID is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_ID](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001002 - No matching resource is found based on the resource ID.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_ID_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001001 - The resource ID is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_ID](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001002 - No matching resource is found based on the resource ID.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced. |
 
 ### OH_ResourceManager_GetFloatByName()
 
@@ -1042,7 +1042,7 @@ Obtains a float value based on the specified resource name.
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_NAME_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001003 - The resource name is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_NAME](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001004 - No matching resource is found based on the resource name.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_NAME_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001003 - The resource name is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_NAME](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001004 - No matching resource is found based on the resource name.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced. |
 
 ### OH_ResourceManager_GetBool()
 
@@ -1068,7 +1068,7 @@ Obtains a bool value based on the specified resource ID.
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_ID_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001001 - The resource ID is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_ID](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001002 - No matching resource is found based on the resource ID.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_ID_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001001 - The resource ID is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_ID](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001002 - No matching resource is found based on the resource ID.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced. |
 
 ### OH_ResourceManager_GetBoolByName()
 
@@ -1094,7 +1094,7 @@ Obtains a bool value based on the specified resource name.
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_NAME_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001003 - The resource name is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_NAME](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001004 - No matching resource is found based on the resource name.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_RES_NAME_NOT_FOUND](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001003 - The resource name is invalid.<br>     <br>[ERROR_CODE_RES_NOT_FOUND_BY_NAME](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001004 - No matching resource is found based on the resource name.<br>     <br>[ERROR_CODE_RES_REF_TOO_MUCH](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001006 - The resource is cyclically referenced. |
 
 ### OH_ResourceManager_AddResource()
 
@@ -1119,7 +1119,7 @@ Adds overlay resources when an application is running.
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_OVERLAY_RES_PATH_INVALID](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001010 - The resource path is invalid. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_OVERLAY_RES_PATH_INVALID](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001010 - The resource path is invalid. |
 
 ### OH_ResourceManager_RemoveResource()
 
@@ -1144,6 +1144,6 @@ Removes overlay resources when an application is running.
 
 | Type | Description |
 | -- | -- |
-| ResourceManager_ErrorCode | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_OVERLAY_RES_PATH_INVALID](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001010 - The resource path is invalid. |
+| [ResourceManager_ErrorCode](capi-resmgr-common-h.md#resourcemanager_errorcode) | [SUCCESS](capi-resmgr-common-h.md#resourcemanager_errorcode) 0 - The operation is successful.<br>     <br>[ERROR_CODE_INVALID_INPUT_PARAMETER](capi-resmgr-common-h.md#resourcemanager_errorcode) 401 - The input parameter is invalid. Possible causes: 1. The<br>     parameter type is incorrect. 2. Parameter verification failed.<br>     <br>[ERROR_CODE_OVERLAY_RES_PATH_INVALID](capi-resmgr-common-h.md#resourcemanager_errorcode) 9001010 - The resource path is invalid. |
 
 

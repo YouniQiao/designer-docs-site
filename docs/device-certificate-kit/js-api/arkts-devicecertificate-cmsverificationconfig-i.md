@@ -18,8 +18,7 @@ import { cert } from '@kit.DeviceCertificateKit';
 contentData?: Uint8Array
 ```
 
-Content data. If the detached mode is used, you need to specify the plaintext data. This parameter can be left
-empty in attached mode.
+Content data. If the detached mode is used, you need to specify the plaintext data. This parameter can be left empty in attached mode.
 
 **Type:** Uint8Array
 
@@ -69,11 +68,7 @@ Signer certificates.
 trustCerts: Array<X509Cert>
 ```
 
-Trusted certificates.
-
-> **NOTE**
->
-> You need to configure the trust certificates of all signers.
+Trusted certificates. > **NOTE** > > You need to configure the trust certificates of all signers.
 
 **Type:** Array<X509Cert>
 

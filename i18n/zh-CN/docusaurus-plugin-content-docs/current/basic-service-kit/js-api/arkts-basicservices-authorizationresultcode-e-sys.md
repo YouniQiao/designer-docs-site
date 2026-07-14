@@ -46,13 +46,7 @@ AUTHORIZATION_CANCELED = 12300301
 AUTHORIZATION_INTERACTION_NOT_ALLOWED = 12300302
 ```
 
-表示服务因不允许用户交互而拒绝授权。
-
-可能原因：
-
-1. 调用者位于后台；
-2. isInteractionAllowed选项的值为false；
-3. 指定的交互上下文无效。
+表示服务因不允许用户交互而拒绝授权。 可能原因： 1. 调用者位于后台； 2. isInteractionAllowed选项的值为false； 3. 指定的交互上下文无效。
 
 **起始版本：** 24
 
@@ -84,9 +78,7 @@ AUTHORIZATION_DENIED = 12300303
 AUTHORIZATION_SERVICE_BUSY = 12300304
 ```
 
-表示服务忙碌。
-
-可能原因：正在处理其他授权。
+表示服务忙碌。 可能原因：正在处理其他授权。
 
 **起始版本：** 24
 

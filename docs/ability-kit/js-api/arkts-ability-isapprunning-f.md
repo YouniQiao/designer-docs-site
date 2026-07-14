@@ -12,13 +12,7 @@ import { appManager } from '@kit.AbilityKit';
 function isAppRunning(bundleName: string, appCloneIndex?: number): Promise<boolean>
 ```
 
-Checks whether the application with the specified bundle name and application clone index is running across all
-users. This API uses a promise to return the result.
-
-> **NOTE**
->
-> If the application is not installed for the current user, error code 16000073 is returned. If the application is
-> installed for the current user, the system checks whether the application is running across all users.
+Checks whether the application with the specified bundle name and application clone index is running across all users. This API uses a promise to return the result. > **NOTE** > > If the application is not installed for the current user, error code 16000073 is returned. If the application is > installed for the current user, the system checks whether the application is running across all users.
 
 **Since:** 14
 

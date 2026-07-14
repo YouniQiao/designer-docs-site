@@ -1,9 +1,6 @@
 # DisplaySync
 
-An object that implements the setting of the frame rate and callback. It provides APIs for you to set the frame
-rate, register a callback, and start/stop the callback.
-Before calling any of the following APIs, you must use [displaySync.create()](arkts-arkgraphics2d-create-f.md#create-1) to create
-a **DisplaySync** instance.
+An object that implements the setting of the frame rate and callback. It provides APIs for you to set the frame rate, register a callback, and start/stop the callback. Before calling any of the following APIs, you must use [displaySync.create()](arkts-arkgraphics2d-create-f.md#create-1) to create a **DisplaySync** instance.
 
 **Since:** 11
 

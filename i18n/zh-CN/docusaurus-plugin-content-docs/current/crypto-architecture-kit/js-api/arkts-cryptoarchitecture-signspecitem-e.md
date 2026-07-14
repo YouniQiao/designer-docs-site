@@ -1,13 +1,6 @@
 # SignSpecItem
 
-表示签名验签参数的枚举。这些参数支持通过
-[setSignSpec](arkts-cryptoarchitecture-sign-i.md#setsignspec-1)、
-[setVerifySpec](arkts-cryptoarchitecture-verify-i.md#setverifyspec-1)接口设置，通过
-[getSignSpec](arkts-cryptoarchitecture-sign-i.md#getsignspec-1)、[getVerifySpec](arkts-cryptoarchitecture-verify-i.md#getverifyspec-1)接口
-获取。
-
-当前只支持RSA算法和SM2算法，从API version 11开始，增加对SM2_USER_ID_UINT8ARR参数的支持，详细规格请参考
-[签名验签规格](../../../../security/CryptoArchitectureKit/crypto-sign-sig-verify-overview.md)。
+表示签名验签参数的枚举。这些参数支持通过 [setSignSpec](arkts-cryptoarchitecture-sign-i.md#setsignspec-1)、 [setVerifySpec](arkts-cryptoarchitecture-verify-i.md#setverifyspec-1)接口设置，通过 [getSignSpec](arkts-cryptoarchitecture-sign-i.md#getsignspec-1)、[getVerifySpec](arkts-cryptoarchitecture-verify-i.md#getverifyspec-1)接口 获取。 当前只支持RSA算法和SM2算法，从API version 11开始，增加对SM2_USER_ID_UINT8ARR参数的支持，详细规格请参考 [签名验签规格](../../../../security/CryptoArchitectureKit/crypto-sign-sig-verify-overview.md)。
 
 **起始版本：** 10
 
@@ -69,18 +62,7 @@ PSS_MGF1_MD_STR = 102
 PSS_SALT_LEN_NUM = 103
 ```
 
-表示RSA算法中，使用PSS模式时，盐值的长度，长度以字节为单位。
-
-根据 FIPS 186-4 标准，sLen 应大于等于 0 且小于等于哈希长度。
-
-默认值：
-对于签名操作，自动计算最大盐值长度。
-对于验证操作，自动计算盐值长度。
-
-特殊值：
-对于签名操作，您也可以将值设置为 -1，以使用摘要长度作为盐值长度；或设置为 -2 或 -3，以自动计算最大盐值长度。推荐使用 -1。
-对于验证操作，您也可以将值设置为 -1，以使用摘要长度作为盐值长度；设置为 -2，以自动计算盐值长度；或设置为 -3，以使用最大盐值长度。
-推荐使用 -2。
+表示RSA算法中，使用PSS模式时，盐值的长度，长度以字节为单位。 根据 FIPS 186-4 标准，sLen 应大于等于 0 且小于等于哈希长度。 默认值： 对于签名操作，自动计算最大盐值长度。 对于验证操作，自动计算盐值长度。 特殊值： 对于签名操作，您也可以将值设置为 -1，以使用摘要长度作为盐值长度；或设置为 -2 或 -3，以自动计算最大盐值长度。推荐使用 -1。 对于验证操作，您也可以将值设置为 -1，以使用摘要长度作为盐值长度；设置为 -2，以自动计算盐值长度；或设置为 -3，以使用最大盐值长度。 推荐使用 -2。
 
 **起始版本：** 10
 

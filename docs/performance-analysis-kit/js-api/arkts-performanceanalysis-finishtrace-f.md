@@ -12,13 +12,7 @@ import { hiTraceMeter } from '@kit.PerformanceAnalysisKit';
 function finishTrace(name: string, taskId: number): void
 ```
 
-Stops an asynchronous trace.
-
-To stop a trace, the values of name and task ID in **finishTrace** must be the same as those in
-[startTrace()](arkts-performanceanalysis-starttrace-f.md#starttrace-1).
-
-Since API version 19, you are advised to use [finishAsyncTrace()](arkts-performanceanalysis-finishasynctrace-f.md#finishasynctrace-1), which must
-be used together with [startAsyncTrace()](arkts-performanceanalysis-startasynctrace-f.md#startasynctrace-1).
+Stops an asynchronous trace. To stop a trace, the values of name and task ID in **finishTrace** must be the same as those in [startTrace()](arkts-performanceanalysis-starttrace-f.md#starttrace-1). Since API version 19, you are advised to use [finishAsyncTrace()](arkts-performanceanalysis-finishasynctrace-f.md#finishasynctrace-1), which must be used together with [startAsyncTrace()](arkts-performanceanalysis-startasynctrace-f.md#startasynctrace-1).
 
 **Since:** 8
 

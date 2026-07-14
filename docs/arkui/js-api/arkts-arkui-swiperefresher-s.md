@@ -38,8 +38,7 @@ Sets the content when loading.
 @Prop isLoading: boolean
 ```
 
-Whether the component is loading.
-type { boolean }
+Whether the component is loading. type { boolean }
 
 **Type:** boolean
 

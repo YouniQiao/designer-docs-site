@@ -1,8 +1,6 @@
 # NfcVTag
 
-Provides methods for creating an NFC-V tag, obtaining tag information, and controlling tag read and write.
-<p>This class inherits from the {@link TagSession} abstract class and provides interfaces to create an
-{@code NfcVTag} and obtain the tag information.
+Provides methods for creating an NFC-V tag, obtaining tag information, and controlling tag read and write. <p>This class inherits from the {@link TagSession} abstract class and provides interfaces to create an {@code NfcVTag} and obtain the tag information.
 
 **Inheritance/Implementation:** NfcVTag extends [TagSession](arkts-connectivity-tagsession-i.md)
 

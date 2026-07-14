@@ -12,9 +12,7 @@ IconOptions定义图标的共通属性。
 size?: SizeOptions
 ```
 
-图标大小，不支持百分比。
-
-默认值：undefined
+图标大小，不支持百分比。 默认值：undefined
 
 **类型：** SizeOptions
 

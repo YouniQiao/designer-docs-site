@@ -14,8 +14,7 @@
 CREATED = 0
 ```
 
-CREATED事件。
-系统账号子profile创建完成时触发。
+CREATED事件。 系统账号子profile创建完成时触发。
 
 **起始版本：** 26.0.0
 
@@ -31,8 +30,7 @@ CREATED事件。
 DELETED = 1
 ```
 
-DELETED事件。
-当系统账号子Profile删除完成时触发。
+DELETED事件。 当系统账号子Profile删除完成时触发。
 
 **起始版本：** 26.0.0
 
@@ -48,8 +46,7 @@ DELETED事件。
 SWITCHING = 2
 ```
 
-SWITCHING事件。
-当系统账号子Profile切换开始时触发。
+SWITCHING事件。 当系统账号子Profile切换开始时触发。
 
 **起始版本：** 26.0.0
 
@@ -65,8 +62,7 @@ SWITCHING事件。
 SWITCHED = 3
 ```
 
-SWITCHED事件。
-系统账号子profile切换完成时触发。
+SWITCHED事件。 系统账号子profile切换完成时触发。
 
 **起始版本：** 26.0.0
 

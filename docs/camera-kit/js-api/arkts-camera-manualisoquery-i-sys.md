@@ -1,7 +1,6 @@
 # ManualIsoQuery (System API)
 
-Provides APIs to check whether a camera device supports manual ISO setting and obtain the ISO range supported by
-the device.
+Provides APIs to check whether a camera device supports manual ISO setting and obtain the ISO range supported by the device.
 
 **Since:** 24
 

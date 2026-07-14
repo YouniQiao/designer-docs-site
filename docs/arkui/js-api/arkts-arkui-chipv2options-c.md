@@ -130,8 +130,7 @@ Chip background color when chip is activated.
 public activatedBackgroundSystemMaterial?: uiMaterial.Material
 ```
 
-Set system-styled materials for the component which is activated. Different materials have different effects,
-which can influence the backgroundColor, border, shadow, and other visual attributes of the component.
+Set system-styled materials for the component which is activated. Different materials have different effects, which can influence the backgroundColor, border, shadow, and other visual attributes of the component.
 
 **Type:** uiMaterial.Material
 
@@ -185,8 +184,7 @@ Chip background color.
 public backgroundSystemMaterial?: uiMaterial.Material
 ```
 
-Set system-styled materials for the component. Different materials have different effects, which can influence
-the backgroundColor, border, shadow, and other visual attributes of the component.
+Set system-styled materials for the component. Different materials have different effects, which can influence the backgroundColor, border, shadow, and other visual attributes of the component.
 
 **Type:** uiMaterial.Material
 

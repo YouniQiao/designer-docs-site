@@ -12,21 +12,7 @@ import { telephonyManager } from '@kit.MDMKit';
 function addOutgoingCallPolicyNumbers(admin: Want, policy: adminManager.Policy, numbers: Array<string>): void
 ```
 
-Adds the trustlist or blocklist for outgoing calls. If no list is set, all numbers can make outgoing calls. Once a
-list is added, only numbers on the list are allowed (or blocked) from making outgoing calls.
-
-A policy conflict is reported when this API is called in the following scenarios:
-
-1. If the device's call capability has been disabled via the [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)
-API, using this API to add an outgoing call trustlist or blocklist will return error code 203. To resolve the
-conflict, disable the call restriction via the [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)
-API.
-2. If an outgoing call blocklist has been set via this API, using this API again to add an outgoing call trustlist
-will return error code 9200010. To resolve the conflict, remove the previously set blocklist via the [removeOutgoingCallPolicyNumbers](arkts-mdm-removeoutgoingcallpolicynumbers-f.md#removeoutgoingcallpolicynumbers-1)
-API.
-3. If an outgoing call trustlist has been set via this API, using this API again to add an outgoing call blocklist
-will return error code 9200010. To resolve the conflict, remove the previously set trustlist via the [removeOutgoingCallPolicyNumbers](arkts-mdm-removeoutgoingcallpolicynumbers-f.md#removeoutgoingcallpolicynumbers-1)
-API.
+Adds the trustlist or blocklist for outgoing calls. If no list is set, all numbers can make outgoing calls. Once a list is added, only numbers on the list are allowed (or blocked) from making outgoing calls. A policy conflict is reported when this API is called in the following scenarios: 1. If the device's call capability has been disabled via the [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1) API, using this API to add an outgoing call trustlist or blocklist will return error code 203. To resolve the conflict, disable the call restriction via the [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1) API. 2. If an outgoing call blocklist has been set via this API, using this API again to add an outgoing call trustlist will return error code 9200010. To resolve the conflict, remove the previously set blocklist via the [removeOutgoingCallPolicyNumbers](arkts-mdm-removeoutgoingcallpolicynumbers-f.md#removeoutgoingcallpolicynumbers-1) API. 3. If an outgoing call trustlist has been set via this API, using this API again to add an outgoing call blocklist will return error code 9200010. To resolve the conflict, remove the previously set trustlist via the [removeOutgoingCallPolicyNumbers](arkts-mdm-removeoutgoingcallpolicynumbers-f.md#removeoutgoingcallpolicynumbers-1) API.
 
 **Since:** 20
 

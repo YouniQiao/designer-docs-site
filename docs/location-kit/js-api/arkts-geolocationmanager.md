@@ -1,11 +1,11 @@
 # @ohos.geoLocationManager
 
-Provides interfaces for acquiring location information, managing location switches,
-geocoding, reverse geocoding, country code, fencing and other functions.
+Provides interfaces for acquiring location information, managing location switches, geocoding, reverse geocoding, country code, fencing and other functions.
 
-**Since:** 22
+**Since:** 9
 
-**System capability:** SystemCapability.Location.Location.Core
+**System capability:** 
+- API version 11 and later: SystemCapability.Location.Location.Core
 
 ## Modules to Import
 
@@ -21,9 +21,9 @@ import { geoLocationManager } from '@kit.LocationKit';
 | --- | --- |
 | [addBeaconFence](arkts-location-addbeaconfence-f.md#addbeaconfence-1) | Add a beacon fence. |
 | [addGnssGeofence](arkts-location-addgnssgeofence-f.md#addgnssgeofence-1) | Add a geofence. |
-| [findMatchingWlan](arkts-location-findmatchingwlan-f.md#findmatchingwlan-1) | Check whether the WLAN scan results match the WLAN BSSID list,return information about the WLAN device that is successfully matched. |
-| [flushCachedGnssLocations](arkts-location-flushcachedgnsslocations-f.md#flushcachedgnsslocations-1) | All prepared GNSS locations are returned to the application through the callback function,and the bottom-layer buffer is cleared. |
-| [flushCachedGnssLocations](arkts-location-flushcachedgnsslocations-f.md#flushcachedgnsslocations-2) | All prepared GNSS locations are returned to the application,and the bottom-layer buffer is cleared. |
+| [findMatchingWlan](arkts-location-findmatchingwlan-f.md#findmatchingwlan-1) | Check whether the WLAN scan results match the WLAN BSSID list, return information about the WLAN device that is successfully matched. |
+| [flushCachedGnssLocations](arkts-location-flushcachedgnsslocations-f.md#flushcachedgnsslocations-1) | All prepared GNSS locations are returned to the application through the callback function, and the bottom-layer buffer is cleared. |
+| [flushCachedGnssLocations](arkts-location-flushcachedgnsslocations-f.md#flushcachedgnsslocations-2) | All prepared GNSS locations are returned to the application, and the bottom-layer buffer is cleared. |
 | [getActiveGeoFences](arkts-location-getactivegeofences-f.md#getactivegeofences-1) | Get all active fences. |
 | [getAddressesFromLocation](arkts-location-getaddressesfromlocation-f.md#getaddressesfromlocation-1) | Obtain address info from location. |
 | [getAddressesFromLocation](arkts-location-getaddressesfromlocation-f.md#getaddressesfromlocation-2) | Obtain address info from location. |
@@ -42,7 +42,7 @@ import { geoLocationManager } from '@kit.LocationKit';
 | [getGeofenceSupportedCoordTypes](arkts-location-getgeofencesupportedcoordtypes-f.md#getgeofencesupportedcoordtypes-1) | Obtains the coordinate system types supported by geofence. |
 | [getLastLocation](arkts-location-getlastlocation-f.md#getlastlocation-1) | Obtain last known location. |
 | [getPoiInfo](arkts-location-getpoiinfo-f.md#getpoiinfo-1) | Obtaining POI Information. |
-| [getPostProcessingTrack](arkts-location-getpostprocessingtrack-f.md#getpostprocessingtrack-1) | Obtain post-processing trajectory information under specific sport mode. Only[SKIING](arkts-location-sportstype-e.md#skiing) is supported currently.Before calling this API, you need to call[on('locationChange')](geoLocationManager.on('locationChange')) and set the input parameter[sportsType](arkts-location-continuouslocationrequest-i-sys.md#sportstype) to the specific sport mode to starttracking.Returns data within 24 hours since tracking started; Subsequent calls return only new records. |
+| [getPostProcessingTrack](arkts-location-getpostprocessingtrack-f.md#getpostprocessingtrack-1) | Obtain post-processing trajectory information under specific sport mode. Only [SKIING](arkts-location-sportstype-e.md#skiing) is supported currently. Before calling this API, you need to call [on('locationChange')](geoLocationManager.on('locationChange')) and set the input parameter [sportsType](arkts-location-continuouslocationrequest-i-sys.md#sportstype) to the specific sport mode to start tracking. Returns data within 24 hours since tracking started; Subsequent calls return only new records. |
 | [isBeaconFenceSupported](arkts-location-isbeaconfencesupported-f.md#isbeaconfencesupported-1) | Check whether the BeaconFence service is supported. |
 | [isCachedGnssServiceSupported](arkts-location-iscachedgnssservicesupported-f.md#iscachedgnssservicesupported-1) | Check whether the cached GNSS service is supported. |
 | [isGeocoderAvailable](arkts-location-isgeocoderavailable-f.md#isgeocoderavailable-1) | Obtain geocoding service status. |
@@ -51,7 +51,7 @@ import { geoLocationManager } from '@kit.LocationKit';
 | [isLocationEnabled](arkts-location-islocationenabled-f.md#islocationenabled-1) | Obtain current location switch status. |
 | [isPoiServiceSupported](arkts-location-ispoiservicesupported-f.md#ispoiservicesupported-1) | Check whether the POI service is supported. |
 | [isWlanBssidMatched](arkts-location-iswlanbssidmatched-f.md#iswlanbssidmatched-1) | Check whether the WLAN scan results match the WLAN BSSID list. |
-| [off](arkts-location-off-f.md#off-1) | Unsubscribe location changed.You are advised to use the {@link offLocationChange} instead. |
+| [off](arkts-location-off-f.md#off-1) | Unsubscribe location changed. You are advised to use the {@link offLocationChange} instead. |
 | [off](arkts-location-off-f.md#off-2) | Unsubscribe continuous location error changed. |
 | [off](arkts-location-off-f.md#off-3) | Unsubscribe location switch changed. |
 | [off](arkts-location-off-f.md#off-4) | Unsubscribe to cache GNSS locations update messages. |
@@ -61,7 +61,7 @@ import { geoLocationManager } from '@kit.LocationKit';
 | [off](arkts-location-off-f.md#off-8) | Unregistering the callback function for listening to country code changes. |
 | [off](arkts-location-off-f.md#off-11) | Stop bluetooth scanning and unregister to listen to bluetooth scanning result changes. |
 | [offLocationChange](arkts-location-offlocationchange-f.md#offlocationchange-1) | Unsubscribe location changed. |
-| [on](arkts-location-on-f.md#on-1) | Subscribe location changed. |
+| [on](arkts-location-on-f.md#on-1) | Subscribe location changed. You are advised to use the {@link onLocationChange} instead. |
 | [on](arkts-location-on-f.md#on-2) | Subscribe continuous location error changed. |
 | [on](arkts-location-on-f.md#on-3) | Subscribe location switch changed. |
 | [on](arkts-location-on-f.md#on-4) | Subscribe to cache GNSS locations update messages. |
@@ -75,7 +75,7 @@ import { geoLocationManager } from '@kit.LocationKit';
 | [removeGnssGeofence](arkts-location-removegnssgeofence-f.md#removegnssgeofence-1) | Remove a geofence. |
 | [sendCommand](arkts-location-sendcommand-f.md#sendcommand-1) | Send extended commands to location subsystem. |
 | [sendCommand](arkts-location-sendcommand-f.md#sendcommand-2) | Send extended commands to location subsystem. |
-| [startBluetoothSearch](arkts-location-startbluetoothsearch-f.md#startbluetoothsearch-1) | Starts Bluetooth scanning and matches the device ID list in the input parameterwith the Bluetooth scanning result. If the matching is successful, the Bluetoothdevice information is returned through the callback. |
+| [startBluetoothSearch](arkts-location-startbluetoothsearch-f.md#startbluetoothsearch-1) | Starts Bluetooth scanning and matches the device ID list in the input parameter with the Bluetooth scanning result. If the matching is successful, the Bluetooth device information is returned through the callback. |
 | [stopBluetoothSearch](arkts-location-stopbluetoothsearch-f.md#stopbluetoothsearch-1) | Stop Bluetooth scanning and searching. |
 
 <!--Del-->
@@ -83,6 +83,7 @@ import { geoLocationManager } from '@kit.LocationKit';
 
 | Name | Description |
 | --- | --- |
+| [addFusionFence](arkts-location-addfusionfence-f-sys.md#addfusionfence-1) | Add a fusion fence. |
 | [disableLocation](arkts-location-disablelocation-f-sys.md#disablelocation-1) | Disable location switch. |
 | [disableLocationByUserId](arkts-location-disablelocationbyuserid-f-sys.md#disablelocationbyuserid-1) | Turn off the location switch for a specified user. |
 | [disableLocationMock](arkts-location-disablelocationmock-f-sys.md#disablelocationmock-1) | Disable the geographical location simulation function. |
@@ -94,12 +95,14 @@ import { geoLocationManager } from '@kit.LocationKit';
 | [enableReverseGeocodingMock](arkts-location-enablereversegeocodingmock-f-sys.md#enablereversegeocodingmock-1) | Enable the reverse geocoding simulation function. |
 | [getLocatingRequiredData](arkts-location-getlocatingrequireddata-f-sys.md#getlocatingrequireddata-1) | Get WiFi/BT scanning information, and use the WiFi/BT scanning information for localization. |
 | [getLocationIconStatus](arkts-location-getlocationiconstatus-f-sys.md#getlocationiconstatus-1) | Get location icon status. |
+| [isFusionFenceSupported](arkts-location-isfusionfencesupported-f-sys.md#isfusionfencesupported-1) | Check whether the fusion fence service is supported. |
 | [isLocationEnabledByUserId](arkts-location-islocationenabledbyuserid-f-sys.md#islocationenabledbyuserid-1) | Obtaining the location switch status of a specified user. |
 | [isLocationPrivacyConfirmed](arkts-location-islocationprivacyconfirmed-f-sys.md#islocationprivacyconfirmed-1) | Querying location privacy protocol confirmation status. |
 | [off](arkts-location-off-f-sys.md#off-9) | Stop WiFi/BT scanning and unsubscribe from WiFi/BT scanning information changes. |
 | [off](arkts-location-off-f-sys.md#off-10) | Unsubscribe location icon status changed. |
-| [on](arkts-location-on-f-sys.md#on-9) | Subscribe to changes in WiFi/BT scanning information,and use the WiFi/BT scanning information for localization. |
+| [on](arkts-location-on-f-sys.md#on-9) | Subscribe to changes in WiFi/BT scanning information, and use the WiFi/BT scanning information for localization. |
 | [on](arkts-location-on-f-sys.md#on-10) | Subscribe location icon status changed. |
+| [removeFusionFence](arkts-location-removefusionfence-f-sys.md#removefusionfence-1) | Remove a fusion fence. |
 | [setLocationPrivacyConfirmStatus](arkts-location-setlocationprivacyconfirmstatus-f-sys.md#setlocationprivacyconfirmstatus-1) | Set location privacy protocol confirmation status. |
 | [setLocationSwitchIgnored](arkts-location-setlocationswitchignored-f-sys.md#setlocationswitchignored-1) | Set the app locating behavior not controlled by the location switch. |
 | [setMockedLocations](arkts-location-setmockedlocations-f-sys.md#setmockedlocations-1) | Set the configuration parameters for location simulation. |
@@ -114,7 +117,7 @@ import { geoLocationManager } from '@kit.LocationKit';
 | [BeaconFenceRequest](arkts-location-beaconfencerequest-i.md) | Configuring parameters in BeaconFence request. |
 | [BeaconManufactureData](arkts-location-beaconmanufacturedata-i.md) | Beacon equipment manufacturer data. |
 | [BluetoothScanResult](arkts-location-bluetoothscanresult-i.md) | Describes the contents of the bluetooth scan results. |
-| [BluetoothSearchRequest](arkts-location-bluetoothsearchrequest-i.md) | Indicates request parameters for Bluetooth search function. |
+| [BluetoothSearchRequestParams](arkts-location-bluetoothsearchrequestparams-i.md) | Indicates request parameters for Bluetooth search function. |
 | [CachedGnssLocationsRequest](arkts-location-cachedgnsslocationsrequest-i.md) | Parameters for requesting to report cache location information. |
 | [ContinuousLocationRequest](arkts-location-continuouslocationrequest-i.md) | Configuring parameters in continuous location requests. |
 | [CountryCode](arkts-location-countrycode-i.md) | Country code structure. |
@@ -124,7 +127,7 @@ import { geoLocationManager } from '@kit.LocationKit';
 | [GeoAddress](arkts-location-geoaddress-i.md) | Data struct describes geographic locations. |
 | [GeoCodeRequest](arkts-location-geocoderequest-i.md) | Configuring parameters in geocode requests. |
 | [Geofence](arkts-location-geofence-i.md) | Circular fence information. |
-| [GeofenceRequest](arkts-location-geofencerequest-i.md) | Configuring parameters in geofence requests. |
+| [GeofenceRequest](arkts-location-geofencerequest-i.md) | Configuring parameters in geo fence requests. |
 | [GeofenceTransition](arkts-location-geofencetransition-i.md) | Geofence transition status. |
 | [GnssGeofenceRequest](arkts-location-gnssgeofencerequest-i.md) | Configuring parameters in GNSS geofence requests. |
 | [Location](arkts-location-location-i.md) | Provides information about geographic locations. |
@@ -133,6 +136,7 @@ import { geoLocationManager } from '@kit.LocationKit';
 | [MatchingWlanInfo](arkts-location-matchingwlaninfo-i.md) | Matching WLAN information structure. |
 | [Poi](arkts-location-poi-i.md) | Describes the information about a single POI. |
 | [PoiInfo](arkts-location-poiinfo-i.md) | Describes the POI information struct. |
+| [Point](arkts-location-point-i.md) | Indicates a location point, including the longitude and latitude. |
 | [ReverseGeoCodeRequest](arkts-location-reversegeocoderequest-i.md) | Configuring parameters in reverse geocode requests. |
 | [SatelliteStatusInfo](arkts-location-satellitestatusinfo-i.md) | Satellite status information. |
 | [SingleLocationRequest](arkts-location-singlelocationrequest-i.md) | Configuring parameters in single location requests. |
@@ -143,14 +147,21 @@ import { geoLocationManager } from '@kit.LocationKit';
 | Name | Description |
 | --- | --- |
 | [BluetoothScanInfo](arkts-location-bluetoothscaninfo-i-sys.md) | Describes the contents of the Bluetooth scan results. |
+| [CellFence](arkts-location-cellfence-i-sys.md) | Indicates CELL fence information. |
 | [CellInfo](arkts-location-cellinfo-i-sys.md) | Cell information. |
 | [ContinuousLocationRequest](arkts-location-continuouslocationrequest-i-sys.md) | Configuring parameters in continuous location requests. |
+| [FusionFenceRequestParams](arkts-location-fusionfencerequestparams-i-sys.md) | Indicates fusion fence request params. |
+| [FusionFenceTransition](arkts-location-fusionfencetransition-i-sys.md) | Indicates fusion fence transition information. |
 | [GeoAddress](arkts-location-geoaddress-i-sys.md) | Data struct describes geographic locations. |
+| [GnssFence](arkts-location-gnssfence-i-sys.md) | Indicates GNSS fence information. |
 | [LocatingRequiredData](arkts-location-locatingrequireddata-i-sys.md) | Describes the structure of the data required for locating. |
 | [LocatingRequiredDataConfig](arkts-location-locatingrequireddataconfig-i-sys.md) | Describes the request parameters for obtaining the data required for locating. |
+| [Location](arkts-location-location-i-sys.md) | Provides information about geographic locations. |
 | [LocationMockConfig](arkts-location-locationmockconfig-i-sys.md) | Parameters for configuring the location simulation function. |
 | [ReverseGeocodingMockInfo](arkts-location-reversegeocodingmockinfo-i-sys.md) | Configuration parameters for simulating reverse geocoding. |
+| [WifiFence](arkts-location-wififence-i-sys.md) | Indicates Wi-Fi fence information. |
 | [WifiScanInfo](arkts-location-wifiscaninfo-i-sys.md) | Describes the scanned WiFi information. |
+| [WirelessSignalFeature](arkts-location-wirelesssignalfeature-i-sys.md) | Indicates wireless signal feature. |
 <!--DelEnd-->
 
 ### Enums
@@ -177,9 +188,13 @@ import { geoLocationManager } from '@kit.LocationKit';
 
 | Name | Description |
 | --- | --- |
+| [FusionFenceScene](arkts-location-fusionfencescene-e-sys.md) | Enum for fusion fence scene. |
+| [FusionFenceType](arkts-location-fusionfencetype-e-sys.md) | Enum for fusion fence type. |
 | [GeofenceTransitionEvent](arkts-location-geofencetransitionevent-e-sys.md) | Enum for geofence transition status. |
+| [GnssFenceType](arkts-location-gnssfencetype-e-sys.md) | Enum for GNSS fence type. |
 | [LocatingRequiredDataType](arkts-location-locatingrequireddatatype-e-sys.md) | Enum for locating required data type. |
 | [LocationIconStatus](arkts-location-locationiconstatus-e-sys.md) | Enum for location icon status. |
 | [LocationPrivacyType](arkts-location-locationprivacytype-e-sys.md) | Enum for location privacy type. |
+| [WifiFingerprintType](arkts-location-wififingerprinttype-e-sys.md) | Enum for Wi-Fi fingerprint type. |
 <!--DelEnd-->
 

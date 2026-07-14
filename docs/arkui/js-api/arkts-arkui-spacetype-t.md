@@ -4,8 +4,7 @@
 declare type SpaceType = string | number | Resource
 ```
 
-Describes the supported data types for the **space** parameter in the constructors of the **Column** component. The
-type is a union of the following types.
+Describes the supported data types for the **space** parameter in the constructors of the **Column** component. The type is a union of the following types.
 
 **Since:** 18
 

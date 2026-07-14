@@ -1,7 +1,6 @@
 # ISO8601DateTimeFormat
 
-Provide a DateTime formatting interface which could format date to ISO 8601 standard string.
-[ISO8601](https://iso8601.com/).
+Provide a DateTime formatting interface which could format date to ISO 8601 standard string. [ISO8601](https://iso8601.com/).
 
 **Since:** 26.0.0
 

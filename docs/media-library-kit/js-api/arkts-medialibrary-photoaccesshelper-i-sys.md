@@ -20,7 +20,7 @@ import { sendablePhotoAccessHelper } from '@kit.MediaLibraryKit';
 createAsset(displayName: string): Promise<PhotoAsset>
 ```
 
-Creates an asset with the specified file name. This API uses a promise to return the result.
+Creates an asset with the specified file name. This API uses a promise to return the result. The file name must meet the following requirements: - A valid file name must include a base name and a supported image or video extension. - The total length of the file name must be between 1 and 255 characters. - The base name must not contain any invalid characters. Starting from API version 18, the following characters are considered invalid: \ / : * ? " < > | For API versions 10 to 17, the following characters are considered invalid: . .. \ / : * ? " ' ` < > | { } [ ]
 
 **Since:** 12
 
@@ -40,7 +40,7 @@ Creates an asset with the specified file name. This API uses a promise to return
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;PhotoAsset&gt; | Returns the newly created asset |
+| Promise&lt;PhotoAsset&gt; | Promise used to return the created asset. |
 
 **Error codes:**
 
@@ -48,10 +48,10 @@ Creates an asset with the specified file name. This API uses a promise to return
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
-| 13900020 | Invalid argument |
-| 14000001 | Invalid display name |
-| 14000011 | Internal system error |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
+| 13900020 | Invalid argument. |
+| 14000001 | Invalid display name. |
+| 14000011 | Internal system error. |
 
 **Example**
 
@@ -78,7 +78,7 @@ async function example(phAccessHelper: sendablePhotoAccessHelper.PhotoAccessHelp
 createAsset(displayName: string, options: photoAccessHelper.PhotoCreateOptions): Promise<PhotoAsset>
 ```
 
-Create a photo asset
+Creates an asset with the specified file name and options. This API uses a promise to return the result. The file name must meet the following requirements: - A valid file name must include a base name and a supported image or video extension. - The total length of the file name must be between 1 and 255 characters. - The base name must not contain any invalid characters. Starting from API version 18, the following characters are considered invalid: \ / : * ? " < > | For API versions 10 to 17, the following characters are considered invalid: . .. \ / : * ? " ' ` < > | { } [ ]
 
 **Since:** 12
 
@@ -92,14 +92,14 @@ Create a photo asset
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| displayName | string | Yes | Asset name |
-| options | photoAccessHelper.PhotoCreateOptions | Yes | Create operation |
+| displayName | string | Yes | File name of the asset to create. |
+| options | photoAccessHelper.PhotoCreateOptions | Yes | Options for creating the asset. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;PhotoAsset&gt; | Returns the newly created asset |
+| Promise&lt;PhotoAsset&gt; | Promise used to return the created asset. |
 
 **Error codes:**
 
@@ -107,10 +107,10 @@ Create a photo asset
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
-| 13900020 | Invalid argument |
-| 14000001 | Invalid display name |
-| 14000011 | Internal system error |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
+| 13900020 | Invalid argument. |
+| 14000001 | Invalid display name. |
+| 14000011 | Internal system error. |
 
 **Example**
 
@@ -143,8 +143,7 @@ getHiddenAlbums(
     ): Promise<FetchResult<Album>>
 ```
 
-Obtains hidden albums based on the specified display mode and retrieval options.
-This API uses a promise to return the result.
+Obtains hidden albums based on the specified display mode and retrieval options. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -159,13 +158,13 @@ This API uses a promise to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | mode | photoAccessHelper.HiddenPhotosDisplayMode | Yes | Display mode of hidden albums. |
-| options | photoAccessHelper.FetchOptions | No | Options for retrieving the albums.If this parameter is not specified, the albums are retrieved based on the display mode. |
+| options | photoAccessHelper.FetchOptions | No | Options for retrieving the albums. If this parameter is not specified, thealbums are retrieved based on the display mode. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;FetchResult&lt;Album&gt;&gt; | Returns fetchResult of albums containing hidden assets. |
+| Promise&lt;FetchResult&lt;Album&gt;&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -173,7 +172,7 @@ This API uses a promise to return the result.
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed, usually the result returned by VerifyAccessToken. |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | Internal system error |
 
 ## getPhotoAssets
@@ -182,7 +181,7 @@ This API uses a promise to return the result.
 getPhotoAssets(assetsData: photoAccessHelper.ValuesBucket[]): Promise<PhotoAsset[]>
 ```
 
-Get PhotoAsset objects from ValuesBucket record info.
+Converts the **ValuesBucket** record to a **PhotoAsset** object.
 
 **Since:** 24
 
@@ -196,13 +195,13 @@ Get PhotoAsset objects from ValuesBucket record info.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| assetsData | photoAccessHelper.ValuesBucket[] | Yes | Array of asset records. Each element in the arraycontains the asset's column names and their values. The array size cannot exceed 500. Each element in thearray must contain the following asset column information: file_id, data, display_name, media_type, andsubtype. |
+| assetsData | photoAccessHelper.ValuesBucket[] | Yes | Array of asset records.<br>Each element in the array contains the column name and value of the asset.<br>The array can contain a maximum of 500 elements.<br>Each element in the array must contain the following asset column information: **file_id**, **data**,**display_name**, **media_type**, and **subtype**. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;PhotoAsset[]&gt; | Returns an array of PhotoAsset objects (may be empty). |
+| Promise&lt;PhotoAsset[]&gt; | Promise used to return the PhotoAsset object array (which may be empty). |
 
 **Error codes:**
 
@@ -210,7 +209,7 @@ Get PhotoAsset objects from ValuesBucket record info.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application. |
 | [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) | The scenario parameter verification fails. Possible causes:<br>1. Invalid value type in ValuesBucket;<br>2. Missing required column in ValuesBucket;<br>3. Array size exceeds 500. |
-| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.<br>Possible causes: 1. Database corrupted; 2. The file system is abnormal; 3. The IPC request timed out. |
+| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.<br>Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
 **Example**
 
@@ -274,6 +273,6 @@ Fetch shared photo assets.
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | Internal system error |
 

@@ -22,8 +22,7 @@ import { userStatus } from '@kit.MultimodalAwarenessKit';
 hpeNetworkId: string
 ```
 
-Network ID of device that user head is facing.
-The maximum length is 128.
+Network ID of device that user head is facing. The maximum length is 128.
 
 **Type:** string
 

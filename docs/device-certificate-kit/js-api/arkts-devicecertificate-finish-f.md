@@ -12,8 +12,7 @@ import { certificateManager } from '@kit.DeviceCertificateKit';
 function finish(handle: Uint8Array, callback: AsyncCallback<CMResult>): void
 ```
 
-Finishes the signing operation. This is the last step in the signature process. The init and update interfaces need
-to be invoked first. This API uses an asynchronous callback to return the result.
+Finishes the signing operation. This is the last step in the signature process. The init and update interfaces need to be invoked first. This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -71,8 +70,7 @@ try {
 function finish(handle: Uint8Array, signature: Uint8Array, callback: AsyncCallback<CMResult>): void
 ```
 
-Finishes the signature verification operation. This is the last step in the signature verification process. The
-init and update interfaces need to be invoked first. This API uses an asynchronous callback to return the result.
+Finishes the signature verification operation. This is the last step in the signature verification process. The init and update interfaces need to be invoked first. This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 

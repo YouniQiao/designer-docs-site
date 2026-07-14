@@ -1,8 +1,6 @@
 # UIExtensionProxy (System API)
 
-This interface is used for send data to the UIExtensionAbility.<br/>
-It is returned from onRemoteReady callback of UIExtensionComponent<br/>
-when UIExtensionAbility connects successfully
+This interface is used for send data to the UIExtensionAbility.<br/> It is returned from onRemoteReady callback of UIExtensionComponent<br/> when UIExtensionAbility connects successfully
 
 **Since:** 10
 
@@ -16,8 +14,7 @@ when UIExtensionAbility connects successfully
 off(type: 'asyncReceiverRegister', callback?: Callback<UIExtensionProxy>): void
 ```
 
-Deregisters the listener that watches for async data receiver callback being registered by UIExtensionAbility.
-AnonyMous Object Rectification
+Deregisters the listener that watches for async data receiver callback being registered by UIExtensionAbility. AnonyMous Object Rectification
 
 **Since:** 18
 
@@ -40,8 +37,7 @@ AnonyMous Object Rectification
 off(type: 'syncReceiverRegister', callback?: Callback<UIExtensionProxy>): void
 ```
 
-Deregisters the listener that watches for sync data receiver callback being registered by UIExtensionAbility.
-AnonyMous Object Rectification
+Deregisters the listener that watches for sync data receiver callback being registered by UIExtensionAbility. AnonyMous Object Rectification
 
 **Since:** 18
 
@@ -64,8 +60,7 @@ AnonyMous Object Rectification
 on(type: 'asyncReceiverRegister', callback: Callback<UIExtensionProxy>): void
 ```
 
-Register the listener that watches for async data receiver callback being registered by UIExtensionAbility.
-AnonyMous Object Rectification
+Register the listener that watches for async data receiver callback being registered by UIExtensionAbility. AnonyMous Object Rectification
 
 **Since:** 18
 
@@ -88,8 +83,7 @@ AnonyMous Object Rectification
 on(type: 'syncReceiverRegister', callback: Callback<UIExtensionProxy>): void
 ```
 
-Register the listener that watches for sync data receiver callback being registered by UIExtensionAbility.
-AnonyMous Object Rectification
+Register the listener that watches for sync data receiver callback being registered by UIExtensionAbility. AnonyMous Object Rectification
 
 **Since:** 18
 
@@ -112,8 +106,7 @@ AnonyMous Object Rectification
 send(data: Record<string, Object>): void
 ```
 
-This function is for sending data to the UIExtensionAbility.
-AnonyMous Object Rectification
+This function is for sending data to the UIExtensionAbility. AnonyMous Object Rectification
 
 **Since:** 18
 
@@ -135,8 +128,7 @@ AnonyMous Object Rectification
 sendSync(data: Record<string, Object>): Record<string, Object>
 ```
 
-This function is for sending data to the UIExtensionAbility and waiting the result in blocking mode.
-AnonyMous Object Rectification
+This function is for sending data to the UIExtensionAbility and waiting the result in blocking mode. AnonyMous Object Rectification
 
 **Since:** 18
 

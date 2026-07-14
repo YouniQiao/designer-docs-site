@@ -12,12 +12,7 @@ import { launcherBundleManager } from '@kit.AbilityKit';
 function getShortcutInfo(bundleName :string, callback: AsyncCallback<Array<ShortcutInfo>>) : void
 ```
 
-Obtains the [shortcut information](arkts-ability-shortcutinfo-i.md) of the current user based on the given
-bundle name of a main application. To obtain shortcut information about an application clone, use
-[getShortcutInfoByAppIndex](arkts-ability-getshortcutinfobyappindex-f-sys.md#getshortcutinfobyappindex-1). This API uses an asynchronous
-callback to return the result.
-
-No permission is required for obtaining the caller's own information.
+Obtains the [shortcut information](arkts-ability-shortcutinfo-i.md) of the current user based on the given bundle name of a main application. To obtain shortcut information about an application clone, use [getShortcutInfoByAppIndex](arkts-ability-getshortcutinfobyappindex-f-sys.md#getshortcutinfobyappindex-1). This API uses an asynchronous callback to return the result. No permission is required for obtaining the caller's own information.
 
 **Since:** 9
 
@@ -75,12 +70,7 @@ try {
 function getShortcutInfo(bundleName : string) : Promise<Array<ShortcutInfo>>
 ```
 
-Obtains the [shortcut information](arkts-ability-shortcutinfo-i.md) of the current user based on the given
-bundle name of a main application. To obtain shortcut information about an application clone, use
-[getShortcutInfoByAppIndex](arkts-ability-getshortcutinfobyappindex-f-sys.md#getshortcutinfobyappindex-1). This API uses a promise to
-return the result.
-
-No permission is required for obtaining the caller's own information.
+Obtains the [shortcut information](arkts-ability-shortcutinfo-i.md) of the current user based on the given bundle name of a main application. To obtain shortcut information about an application clone, use [getShortcutInfoByAppIndex](arkts-ability-getshortcutinfobyappindex-f-sys.md#getshortcutinfobyappindex-1). This API uses a promise to return the result. No permission is required for obtaining the caller's own information.
 
 **Since:** 9
 

@@ -2,7 +2,6 @@
 
 Defines the ToolBarItem Component.
 
-
 ## ToolBarItem
 
 ```TypeScript

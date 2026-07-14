@@ -6,11 +6,7 @@
 function onPairingStateChange(callback: Callback<PairingStateParam>): void
 ```
 
-订阅NearLink配对状态变更事件。
-
-只有授予了ohos.permission.NEARLINK_ACCESS权限的应用程序才能访问此事件。
-如果应用被赋予了ohos.permission.GET_NEARLINK_PEER_MAC权限。
-回调返回真实设备地址，否则返回随机设备地址。
+订阅NearLink配对状态变更事件。 只有授予了ohos.permission.NEARLINK_ACCESS权限的应用程序才能访问此事件。 如果应用被赋予了ohos.permission.GET_NEARLINK_PEER_MAC权限。 回调返回真实设备地址，否则返回随机设备地址。
 
 **起始版本：** 26.0.0
 

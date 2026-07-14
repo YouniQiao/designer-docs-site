@@ -18,8 +18,7 @@ import { applicationManager } from '@kit.MDMKit';
 abilityInFgTotalTime: number
 ```
 
-The total duration, in milliseconds.
-The value should be an integer.
+The total duration, in milliseconds. The value should be an integer.
 
 **Type:** number
 

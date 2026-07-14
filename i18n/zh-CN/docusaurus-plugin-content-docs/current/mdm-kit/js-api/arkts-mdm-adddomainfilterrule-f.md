@@ -6,19 +6,7 @@
 function addDomainFilterRule(admin: Want, domainFilterRule: DomainFilterRule): void
 ```
 
-为设备添加域名过滤规则。
-
-API version 21及之前版本，仅支持IPv4。从API version 22开始，支持IPv4和IPv6。
-
-从API version 23开始，支持[LogType](arkts-mdm-logtype-e.md)。
-
-添加了[Action](arkts-mdm-action-e.md)为ALLOW规则后，将会默认添加DENY规则，不在ALLOW规则之内的域名解析数据包将会被丢弃或拦截。
-
-设备重启，将会清空域名过滤规则。
-
-> **说明：**
->
-> 为避免DNS缓存导致拦截规则失效，建议系统启动后立即配置域名过滤规则。若已因DNS缓存导致拦截失效，重启系统可清除缓存，恢复拦截功能。
+为设备添加域名过滤规则。 API version 21及之前版本，仅支持IPv4。从API version 22开始，支持IPv4和IPv6。 从API version 23开始，支持[LogType](arkts-mdm-logtype-e.md)。 添加了[Action](arkts-mdm-action-e.md)为ALLOW规则后，将会默认添加DENY规则，不在ALLOW规则之内的域名解析数据包将会被丢弃或拦截。 设备重启，将会清空域名过滤规则。 > **说明：** > > 为避免DNS缓存导致拦截规则失效，建议系统启动后立即配置域名过滤规则。若已因DNS缓存导致拦截失效，重启系统可清除缓存，恢复拦截功能。
 
 **起始版本：** 12
 

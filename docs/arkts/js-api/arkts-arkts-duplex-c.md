@@ -1,9 +1,6 @@
 # Duplex
 
-A stream that is both readable and writable. A duplex stream allows data to be transmitted in two directions, that
-is, data can be read and written.
-The **Duplex** class inherits from [Readable](arkts-arkts-readableoptions-i.md) and supports all the APIs in
-**Readable**.
+A stream that is both readable and writable. A duplex stream allows data to be transmitted in two directions, that is, data can be read and written. The **Duplex** class inherits from [Readable](arkts-arkts-readableoptions-i.md) and supports all the APIs in **Readable**.
 
 **Inheritance/Implementation:** Duplex extends [Readable](arkts-arkts-readable-c.md)
 
@@ -44,9 +41,7 @@ let duplex = new stream.Duplex();
 cork(): boolean
 ```
 
-Forces subsequent writes to be buffered. This API is called to optimize the performance of continuous write
-operations. After this API is called, the value of **writableCorked** is incremented by one. It is recommended
-that this API be used in pair with [uncork()](arkts-arkts-writable-c.md#uncork-1).
+Forces subsequent writes to be buffered. This API is called to optimize the performance of continuous write operations. After this API is called, the value of **writableCorked** is incremented by one. It is recommended that this API be used in pair with [uncork()](arkts-arkts-writable-c.md#uncork-1).
 
 **Since:** 12
 
@@ -75,8 +70,7 @@ console.info("duplexStream cork result", result); // duplexStream cork result tr
 doWrite(chunk: string | Uint8Array, encoding: string, callback: Function): void
 ```
 
-A data write API. You need to implement this API but do not call it directly. This API is automatically called
-when data is written. This API uses an asynchronous callback to return the result.
+A data write API. You need to implement this API but do not call it directly. This API is automatically called when data is written. This API uses an asynchronous callback to return the result.
 
 **Since:** 12
 
@@ -120,8 +114,7 @@ duplexStream.write('data', 'utf8');
 doWritev(chunks: string[] | Uint8Array[], callback: Function): void
 ```
 
-A batch data write API. You need to implement this API but do not call it directly. This API is automatically
-called when data is written. This API uses an asynchronous callback to return the result.
+A batch data write API. You need to implement this API but do not call it directly. This API is automatically called when data is written. This API uses an asynchronous callback to return the result.
 
 **Since:** 12
 
@@ -172,12 +165,7 @@ duplexStream.end();
 end(chunk?: string | Uint8Array, encoding?: string, callback?: Function): Writable
 ```
 
-Ends the writing process in a duplex stream. If the value of **writableCorked** is greater than 0, the value is
-set to **0** and the remaining data in the buffer is output. If the **chunk** parameter is passed, it is treated
-as the final data chunk and written using either the **write** or **doWrite** API, based on the current execution
-context. If **doWrite** is used for writing, the validity check of the **encoding** parameter depends on
-**doWrite**. If **end** is used alone (without **write**) and the **chunk** parameter is passed, the data is
-written through **doWrite**. This API uses an asynchronous callback to return the result.
+Ends the writing process in a duplex stream. If the value of **writableCorked** is greater than 0, the value is set to **0** and the remaining data in the buffer is output. If the **chunk** parameter is passed, it is treated as the final data chunk and written using either the **write** or **doWrite** API, based on the current execution context. If **doWrite** is used for writing, the validity check of the **encoding** parameter depends on **doWrite**. If **end** is used alone (without **write**) and the **chunk** parameter is passed, the data is written through **doWrite**. This API uses an asynchronous callback to return the result.
 
 **Since:** 12
 
@@ -283,10 +271,7 @@ console.info("duplexStream is result", result); // duplexStream is result true
 uncork(): boolean
 ```
 
-Releases the cork state, flushing the buffered data and writing it to the target location. After this API is
-called, the value of **writableCorked** is decremented by one. If the value reaches **0**, the stream is no
-longer in the cork state. Otherwise, the stream is still in the cork state. It is recommended that this API be
-used in pair with [cork()](arkts-arkts-writable-c.md#cork-1).
+Releases the cork state, flushing the buffered data and writing it to the target location. After this API is called, the value of **writableCorked** is decremented by one. If the value reaches **0**, the stream is no longer in the cork state. Otherwise, the stream is still in the cork state. It is recommended that this API be used in pair with [cork()](arkts-arkts-writable-c.md#cork-1).
 
 **Since:** 12
 

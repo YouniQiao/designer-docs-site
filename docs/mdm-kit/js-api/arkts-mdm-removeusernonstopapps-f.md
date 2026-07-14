@@ -12,9 +12,7 @@ import { applicationManager } from '@kit.MDMKit';
 function removeUserNonStopApps(admin: Want, applicationInstances: Array<common.ApplicationInstance>): void
 ```
 
-Removes the non-stoppable application list for a specified user. If the parameter list includes uninstalled
-applications, the removal will still succeed. Installed applications will be removed from the list, while
-uninstalled ones will not impact the removal process.
+Removes the non-stoppable application list for a specified user. If the parameter list includes uninstalled applications, the removal will still succeed. Installed applications will be removed from the list, while uninstalled ones will not impact the removal process.
 
 **Since:** 22
 

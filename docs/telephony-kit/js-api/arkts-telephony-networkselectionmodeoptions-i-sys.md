@@ -68,8 +68,7 @@ Indicates the network search mode of the SIM card.
 slotId: number
 ```
 
-Indicates the card slot index number, ranging from 0 to
-the maximum card slot index number supported by the device.
+Indicates the card slot index number, ranging from 0 to the maximum card slot index number supported by the device.
 
 **Type:** number
 

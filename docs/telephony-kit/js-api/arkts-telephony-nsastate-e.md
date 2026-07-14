@@ -36,8 +36,7 @@ Indicates that a device is idle under an LTE cell supporting NSA but not NR cove
 NSA_STATE_CONNECTED_DETECT = 3
 ```
 
-Indicates that a device is connected to an LTE network under an LTE cell
-that supports NSA and NR coverage detection.
+Indicates that a device is connected to an LTE network under an LTE cell that supports NSA and NR coverage detection.
 
 **Since:** 6
 

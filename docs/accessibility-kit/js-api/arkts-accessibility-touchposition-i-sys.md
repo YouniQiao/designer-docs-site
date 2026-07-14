@@ -14,8 +14,7 @@ Indicates touch position of accessibility virtual node.
 x: number
 ```
 
-X coordinate of the touch position on the virtual accessibility node, in pixels (px).
-Unit: px, The value range is all integers.
+X coordinate of the touch position on the virtual accessibility node, in pixels (px). Unit: px, The value range is all integers.
 
 **Type:** number
 
@@ -33,8 +32,7 @@ Unit: px, The value range is all integers.
 y: number
 ```
 
-Y coordinate of the touch position on the virtual accessibility node, in pixels (px).
-Unit: px, The value range is all integers.
+Y coordinate of the touch position on the virtual accessibility node, in pixels (px). Unit: px, The value range is all integers.
 
 **Type:** number
 

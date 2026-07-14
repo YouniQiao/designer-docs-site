@@ -2,7 +2,6 @@
 
 Provides interfaces for scrollable containers.
 
-
 ## Scroll
 
 ```TypeScript

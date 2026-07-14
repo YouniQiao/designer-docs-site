@@ -401,11 +401,7 @@ struct Index {
 pushStyle(textStyle: TextStyle): void
 ```
 
-Applies a new style to the current text blob.
-
-> **NOTE**
->
-> When you update the style of the current text blob, all text added afterward will use this new style.
+Applies a new style to the current text blob. > **NOTE** > > When you update the style of the current text blob, all text added afterward will use this new style.
 
 **Since:** 12
 

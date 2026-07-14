@@ -1,7 +1,6 @@
 # NotificationSlot
 
-The **NotificationSlot** module provides APIs for defining the notification slots. The notification reminder modes
-vary according to notification slots.
+The **NotificationSlot** module provides APIs for defining the notification slots. The notification reminder modes vary according to notification slots.
 
 **Since:** 7
 
@@ -13,10 +12,7 @@ vary according to notification slots.
 badgeFlag?: boolean
 ```
 
-Whether to display the badge.
-
-- **true**: Yes.
-- **false**: No. The default value is **true**.
+Whether to display the badge. The default value is **true**. - **true**: Display the badge. - **false**: Do not display the badge.
 
 **Type:** boolean
 
@@ -30,10 +26,7 @@ Whether to display the badge.
 bypassDnd?: boolean
 ```
 
-Whether to bypass DND mode in the system.
-
-- **true**: Yes.
-- **false**: No. The default value is **false**.
+Whether to bypass Do Not Disturb mode in the system. The default value is **false**. - **true**: Bypass Do Not Disturb mode, and notifications will still be alerted in Do Not Disturb mode. - **false**: Do not bypass Do Not Disturb mode, and notifications will not be alerted in Do Not Disturb mode.
 
 **Type:** boolean
 
@@ -47,7 +40,7 @@ Whether to bypass DND mode in the system.
 desc?: string
 ```
 
-Notification slot description. The value contains a maximum of 243 bytes. Excess part will be truncated.
+Description of the notification channel. The size cannot exceed 243 bytes, and the excess part will be truncated.
 
 **Type:** string
 
@@ -61,10 +54,7 @@ Notification slot description. The value contains a maximum of 243 bytes. Excess
 readonly enabled?: boolean
 ```
 
-Whether the notification is enabled.
-
-- **true**: enabled.
-- **false**: disabled.
+Whether to allow notifications to be published from this notification channel. - **true**: yes. - **false**: no.
 
 **Type:** boolean
 
@@ -78,10 +68,7 @@ Whether the notification is enabled.
 level?: notification.SlotLevel
 ```
 
-Notification level.
-
-This attribute is supported since API version 7 and deprecated since API version 20. You are advised to use
-**notificationLevel** instead.
+Notification level. This attribute is supported since API version 7 and deprecated since API version 20. You are advised to use **notificationLevel** instead.
 
 **Type:** notification.SlotLevel
 
@@ -99,7 +86,7 @@ This attribute is supported since API version 7 and deprecated since API version
 lightColor?: number
 ```
 
-Indicator color of the notification. Not supported currently.
+Indicator color of the notification. This is a reserved capability and is not supported currently.
 
 **Type:** number
 
@@ -113,10 +100,7 @@ Indicator color of the notification. Not supported currently.
 lightEnabled?: boolean
 ```
 
-Whether the indicator blinks for the notification.
-
-- **true**: Yes.
-- **false**: No. The default value is **false**.
+Whether to enable the light. The default value is **false**. - **true**: yes. - **false**: no.
 
 **Type:** boolean
 
@@ -130,7 +114,7 @@ Whether the indicator blinks for the notification.
 lockscreenVisibility?: number
 ```
 
-Mode for displaying the notification on the lock screen. Not supported currently.
+Mode for displaying the notification on the lock screen. This is a reserved capability and is not supported currently.
 
 **Type:** number
 
@@ -172,9 +156,7 @@ Notification slot type.
 sound?: string
 ```
 
-Name of the custom ringtone file for notifications. This file is stored in the **resources/rawfile** directory and
-supports formats such as M4A, AAC, MP3, OGG, WAV, FLAC, and AMR. The value contains a maximum of 243 bytes. Excess
-part will be truncated.
+File name of the custom ringtone for notifications from this channel. The file is placed in the **resources/rawfile** directory, and formats such as M4A, AAC, MP3, OGG, WAV, FLAC, and AMR are supported. The size cannot exceed 243 bytes, and the excess part will be truncated.
 
 **Type:** string
 
@@ -188,10 +170,7 @@ part will be truncated.
 type?: notification.SlotType
 ```
 
-Notification slot type.
-
-This attribute is supported since API version 7 and deprecated since API version 11. You are advised to use
-**notificationType** instead.
+Channel type. This attribute is supported since API version 7 and deprecated since API version 11. It is recommended to use **notificationType** instead.
 
 **Type:** notification.SlotType
 
@@ -209,10 +188,7 @@ This attribute is supported since API version 7 and deprecated since API version
 vibrationEnabled?: boolean
 ```
 
-Whether to enable vibration for the notification.
-
-- **true**: Yes.
-- **false**: No. The default value is **false**.
+Whether to enable vibration. The default value is **false**. - **true**: yes. - **false**: no.
 
 **Type:** boolean
 
@@ -226,7 +202,7 @@ Whether to enable vibration for the notification.
 vibrationValues?: Array<number>
 ```
 
-Vibration mode of the notification. Not supported currently.
+Vibration mode of the notification. This is a reserved capability and is not supported currently.
 
 **Type:** Array<number>
 

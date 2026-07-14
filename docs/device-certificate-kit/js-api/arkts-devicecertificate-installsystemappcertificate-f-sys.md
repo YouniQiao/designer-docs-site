@@ -12,8 +12,7 @@ import { certificateManager } from '@kit.DeviceCertificateKit';
 function installSystemAppCertificate(keystore: Uint8Array, keystorePwd: string): Promise<CMResult>
 ```
 
-Installs the system application credential. This API is called only by the certificate management application. This
-API uses a promise to return the result.
+Installs the system application credential. This API is called only by the certificate management application. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 

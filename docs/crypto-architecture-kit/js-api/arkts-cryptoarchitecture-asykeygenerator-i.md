@@ -1,8 +1,6 @@
 # AsyKeyGenerator
 
-Provides APIs for using the **AsyKeyGenerator**. Before using any API of the **AsyKeyGenerator** class, you must
-create an **AsyKeyGenerator** instance by using
-[createAsyKeyGenerator](arkts-cryptoarchitecture-createasykeygenerator-f.md#createasykeygenerator-1).
+Provides APIs for using the **AsyKeyGenerator**. Before using any API of the **AsyKeyGenerator** class, you must create an **AsyKeyGenerator** instance by using [createAsyKeyGenerator](arkts-cryptoarchitecture-createasykeygenerator-f.md#createasykeygenerator-1).
 
 **Since:** 9
 
@@ -216,12 +214,7 @@ keyGenPromise.then(keyPair => {
 convertKeySync(pubKey: DataBlob | null, priKey: DataBlob | null): KeyPair
 ```
 
-Converts data into an asymmetric key pair. This API returns the result synchronously.
-
-<br><br>**NOTE**
-<br>It is recommended to prioritize the use of asynchronous API, {@link convertKey}. Synchronous API may
-take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore,
-it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
+Converts data into an asymmetric key pair. This API returns the result synchronously. <br><br>**NOTE** <br>It is recommended to prioritize the use of asynchronous API, {@link convertKey}. Synchronous API may take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore, it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
 
 **Since:** 12
 
@@ -286,19 +279,7 @@ try {
 convertPemKey(pubKey: string | null, priKey: string | null): Promise<KeyPair>
 ```
 
-Converts data into an asymmetric key pair. This API uses a promise to return the result.
-
-> **NOTE**
->
-> 1. When **convertPemKey()** is used to convert an external string into an asymmetric key object defined by
-> the Crypto framework, the public key must comply with the ASN.1 syntax, X.509 specifications, and PEM
-> encoding format, and the private key must comply with the ASN.1 syntax, PKCS #8 specifications, and PEM
-> encoding format.
-> 2. In **convertPemKey()**, you can pass in either **pubKey** or **priKey**, or both of them. If one of them is
-> passed in, the returned **KeyPair** instance contains only the key converted from the data you passed in.
-> 3. When **convertPemKey** is used to convert an external string into an asymmetric key object defined by the
-> Crypto framework, the system does not verify whether the specifications of the generated key object are the
-> same as the key specifications specified for the asymmetric key generator.
+Converts data into an asymmetric key pair. This API uses a promise to return the result. > **NOTE** > > 1. When **convertPemKey()** is used to convert an external string into an asymmetric key object defined by > the Crypto framework, the public key must comply with the ASN.1 syntax, X.509 specifications, and PEM > encoding format, and the private key must comply with the ASN.1 syntax, PKCS #8 specifications, and PEM > encoding format. > 2. In **convertPemKey()**, you can pass in either **pubKey** or **priKey**, or both of them. If one of them is > passed in, the returned **KeyPair** instance contains only the key converted from the data you passed in. > 3. When **convertPemKey** is used to convert an external string into an asymmetric key object defined by the > Crypto framework, the system does not verify whether the specifications of the generated key object are the > same as the key specifications specified for the asymmetric key generator.
 
 **Since:** 12
 
@@ -375,21 +356,7 @@ async function TestConvertPemKeyByPromise() {
 convertPemKey(pubKey: string | null, priKey: string | null, password: string): Promise<KeyPair>
 ```
 
-Converts data into an asymmetric key pair. Encrypted private keys are supported. The private key password is
-synchronously passed to decrypt the private key. This API uses a promise to return the result.
-
-> **NOTE**
->
-> 1. When **convertPemKey()** is used to convert an external string into an asymmetric key object defined by
-> the Crypto framework, the public key must comply with the ASN.1 syntax, X.509 specifications, and PEM
-> encoding format, and the private key must comply with the ASN.1 syntax, PKCS #8 specifications, and PEM
-> encoding format.
-> 2. In **convertPemKey()**, you can pass in either **pubKey** or **priKey**, or both of them. If one of them is
-> passed in, the returned **KeyPair** instance contains only the key converted from the data you passed in.
-> 3. When **convertPemKey** is used to convert an external string into an asymmetric key object defined by the
-> Crypto framework, the system does not verify whether the specifications of the generated key object are the
-> same as the key specifications specified for the asymmetric key generator.
-> 4. If **password** is passed in, it can be used to decrypt the encrypted private key.
+Converts data into an asymmetric key pair. Encrypted private keys are supported. The private key password is synchronously passed to decrypt the private key. This API uses a promise to return the result. > **NOTE** > > 1. When **convertPemKey()** is used to convert an external string into an asymmetric key object defined by > the Crypto framework, the public key must comply with the ASN.1 syntax, X.509 specifications, and PEM > encoding format, and the private key must comply with the ASN.1 syntax, PKCS #8 specifications, and PEM > encoding format. > 2. In **convertPemKey()**, you can pass in either **pubKey** or **priKey**, or both of them. If one of them is > passed in, the returned **KeyPair** instance contains only the key converted from the data you passed in. > 3. When **convertPemKey** is used to convert an external string into an asymmetric key object defined by the > Crypto framework, the system does not verify whether the specifications of the generated key object are the > same as the key specifications specified for the asymmetric key generator. > 4. If **password** is passed in, it can be used to decrypt the encrypted private key.
 
 **Since:** 18
 
@@ -462,18 +429,7 @@ async function TestConvertPemKeyByPromise() {
 convertPemKeySync(pubKey: string | null, priKey: string | null): KeyPair
 ```
 
-Converts data into an asymmetric key pair. This API returns the result synchronously.
-
-> **NOTE**
-> The precautions for using **convertPemKeySync** are the same as those for **convertPemKey**. For details, see
-> the description of
-> [convertPemKey](arkts-cryptoarchitecture-asykeygenerator-i.md#convertpemkey-1)
-> .
-
-<br><br>**NOTE**
-<br>It is recommended to prioritize the use of asynchronous API, {@link convertPemKey}. Synchronous API may
-take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore,
-it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
+Converts data into an asymmetric key pair. This API returns the result synchronously. > **NOTE** > The precautions for using **convertPemKeySync** are the same as those for **convertPemKey**. For details, see > the description of > [convertPemKey](arkts-cryptoarchitecture-asykeygenerator-i.md#convertpemkey-1) > . <br><br>**NOTE** <br>It is recommended to prioritize the use of asynchronous API, {@link convertPemKey}. Synchronous API may take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore, it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
 
 **Since:** 12
 
@@ -553,18 +509,7 @@ function TestConvertPemKeyBySync() {
 convertPemKeySync(pubKey: string | null, priKey: string | null, password: string): KeyPair
 ```
 
-Converts data into an asymmetric key pair. Encrypted private keys are supported. The private key password is
-synchronously passed to decrypt the private key. This API is synchronous.
-
-> **NOTE**
-> The precautions for using **convertPemKeySync** are the same as those for
-> [convertPemKey](arkts-cryptoarchitecture-asykeygenerator-i.md#convertpemkey-2)
-> .
-
-<br><br>**NOTE**
-<br>It is recommended to prioritize the use of asynchronous API, {@link convertPemKey}. Synchronous API may
-take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore,
-it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
+Converts data into an asymmetric key pair. Encrypted private keys are supported. The private key password is synchronously passed to decrypt the private key. This API is synchronous. > **NOTE** > The precautions for using **convertPemKeySync** are the same as those for > [convertPemKey](arkts-cryptoarchitecture-asykeygenerator-i.md#convertpemkey-2) > . <br><br>**NOTE** <br>It is recommended to prioritize the use of asynchronous API, {@link convertPemKey}. Synchronous API may take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore, it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
 
 **Since:** 18
 
@@ -640,8 +585,7 @@ function TestConvertPemKeyBySync() {
 generateKeyPair(callback: AsyncCallback<KeyPair>): void
 ```
 
-Generates a random key pair using this asymmetric key generator. This API uses an asynchronous callback to return
-the result.
+Generates a random key pair using this asymmetric key generator. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -733,12 +677,7 @@ keyGenPromise.then(keyPair => {
 generateKeyPairSync(): KeyPair
 ```
 
-Generates a random key pair using this asymmetric key generator. This API returns the result synchronously.
-
-<br><br>**NOTE**
-<br>It is recommended to prioritize the use of asynchronous API, {@link generateKeyPair}. Synchronous API may
-take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore,
-it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
+Generates a random key pair using this asymmetric key generator. This API returns the result synchronously. <br><br>**NOTE** <br>It is recommended to prioritize the use of asynchronous API, {@link generateKeyPair}. Synchronous API may take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore, it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
 
 **Since:** 12
 

@@ -78,8 +78,7 @@ Trigger an event when the value of the counter has been changed.
 textWidth?: number
 ```
 
-Set text width of the counter component, ranges greater than or equal to 0.
-If undefined is passed, the text width will adapt to the text content.
+Set text width of the counter component, ranges greater than or equal to 0. If undefined is passed, the text width will adapt to the text content.
 
 **Type:** number
 

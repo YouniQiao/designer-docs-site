@@ -12,11 +12,7 @@ import { radio } from '@kit.TelephonyKit';
 function getUniqueDeviceId(slotId: number, callback: AsyncCallback<string>): void
 ```
 
-Obtains the unique device ID of a specified card slot of the device.
-
-If the device is registered with a 3GPP-compliant network, the international mobile equipment identity
-(IMEI) is returned. If the device is registered with a 3GPP2-compliant network, the mobile equipment identifier
-(MEID) is returned.
+Obtains the unique device ID of a specified card slot of the device. If the device is registered with a 3GPP-compliant network, the international mobile equipment identity (IMEI) is returned. If the device is registered with a 3GPP2-compliant network, the mobile equipment identifier (MEID) is returned.
 
 **Since:** 8
 
@@ -68,11 +64,7 @@ radio.getUniqueDeviceId(slotId, (err: BusinessError, data: string) => {
 function getUniqueDeviceId(slotId?: number): Promise<string>
 ```
 
-Obtains the unique device ID of a specified card slot of the device.
-
-If the device is registered with a 3GPP-compliant network, the international mobile equipment identity
-(IMEI) is returned. If the device is registered with a 3GPP2-compliant network, the mobile equipment identifier
-(MEID) is returned.
+Obtains the unique device ID of a specified card slot of the device. If the device is registered with a 3GPP-compliant network, the international mobile equipment identity (IMEI) is returned. If the device is registered with a 3GPP2-compliant network, the mobile equipment identifier (MEID) is returned.
 
 **Since:** 8
 
@@ -127,11 +119,7 @@ radio.getUniqueDeviceId(slotId).then((data: string) => {
 function getUniqueDeviceId(callback: AsyncCallback<string>): void
 ```
 
-Obtains the unique device ID of a specified card slot of the device.
-
-If the device is registered with a 3GPP-compliant network, the international mobile equipment identity
-(IMEI) is returned. If the device is registered with a 3GPP2-compliant network, the mobile equipment identifier
-(MEID) is returned.
+Obtains the unique device ID of a specified card slot of the device. If the device is registered with a 3GPP-compliant network, the international mobile equipment identity (IMEI) is returned. If the device is registered with a 3GPP2-compliant network, the mobile equipment identifier (MEID) is returned.
 
 **Since:** 8
 

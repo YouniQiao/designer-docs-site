@@ -28,9 +28,7 @@ Function handle for exiting full screen mode.
 videoHeight?: number
 ```
 
-Video height, in px. If the element that enters fulls screen mode is a **<video>** element, the value represents its
-height; if the element that enters fulls screen mode contains a **<video>** element, the value represents the height
-of the first sub-video element; in other cases, the value is **0**.
+Video height, in px. If the element that enters fulls screen mode is a **<video>** element, the value represents its height; if the element that enters fulls screen mode contains a **<video>** element, the value represents the height of the first sub-video element; in other cases, the value is **0**.
 
 **Type:** number
 
@@ -46,9 +44,7 @@ of the first sub-video element; in other cases, the value is **0**.
 videoWidth?: number
 ```
 
-Video width, in px. If the element that enters fulls screen mode is a **<video>** element, the value represents its
-width; if the element that enters fulls screen mode contains a **<video>** element, the value represents the width
-of the first sub-video element; in other cases, the value is **0**.
+Video width, in px. If the element that enters fulls screen mode is a **<video>** element, the value represents its width; if the element that enters fulls screen mode contains a **<video>** element, the value represents the width of the first sub-video element; in other cases, the value is **0**.
 
 **Type:** number
 

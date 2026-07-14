@@ -132,9 +132,7 @@ The USB Key service fails to be accessed.
 CM_ERROR_PARAMETER_VALIDATION_FAILED = 17500011
 ```
 
-The input parameter validation fails.
-
-For example, the parameter format is incorrect or the parameter range is invalid.
+The input parameter validation fails. For example, the parameter format is incorrect or the parameter range is invalid.
 
 **Since:** 22
 

@@ -18,13 +18,7 @@ import { accessibility } from '@kit.AccessibilityKit';
 backgroundColor: number | string
 ```
 
-Background color of captions.
-
-**number**: HEX format, used to represent colors defined in either the RGB or ARGB color models.
-
-**string**: #rrggbb, #rrggbbaa, #rgb, or #rgba format.
-
-Example: opaque red; number: 0xffff0000; string: '#ff0000', '#ff0000ff', '#f00', or '#f00f'
+Background color of captions. **number**: HEX format, used to represent colors defined in either the RGB or ARGB color models. **string**: #rrggbb, #rrggbbaa, #rgb, or #rgba format. Example: opaque red; number: 0xffff0000; string: '#ff0000', '#ff0000ff', '#f00', or '#f00f'
 
 **Type:** number | string
 
@@ -42,13 +36,7 @@ Example: opaque red; number: 0xffff0000; string: '#ff0000', '#ff0000ff', '#f00',
 fontColor: number | string
 ```
 
-Font color of captions.
-
-**number**: HEX format, used to represent colors defined in either the RGB or ARGB color models.
-
-**string**: #rrggbb, #rrggbbaa, #rgb, or #rgba format.
-
-Example: opaque red; number: 0xffff0000; string: '#ff0000', '#ff0000ff', '#f00', or '#f00f'
+Font color of captions. **number**: HEX format, used to represent colors defined in either the RGB or ARGB color models. **string**: #rrggbb, #rrggbbaa, #rgb, or #rgba format. Example: opaque red; number: 0xffff0000; string: '#ff0000', '#ff0000ff', '#f00', or '#f00f'
 
 **Type:** number | string
 
@@ -120,13 +108,7 @@ Font scale factor of captions, in percentage. The value ranges from 1 to 200.
 windowColor: number | string
 ```
 
-Window color of captions.
-
-**number**: HEX format, used to represent colors defined in either the RGB or ARGB color models.
-
-**string**: #rrggbb, #rrggbbaa, #rgb, or #rgba format.
-
-Example: opaque red; number: 0xffff0000; string: '#ff0000', '#ff0000ff', '#f00', or '#f00f'
+Window color of captions. **number**: HEX format, used to represent colors defined in either the RGB or ARGB color models. **string**: #rrggbb, #rrggbbaa, #rgb, or #rgba format. Example: opaque red; number: 0xffff0000; string: '#ff0000', '#ff0000ff', '#f00', or '#f00f'
 
 **Type:** number | string
 

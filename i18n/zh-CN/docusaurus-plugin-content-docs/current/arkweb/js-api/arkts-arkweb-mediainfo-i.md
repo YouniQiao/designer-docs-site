@@ -1,7 +1,6 @@
 # MediaInfo
 
-[CreateNativeMediaPlayerCallback](arkts-arkweb-createnativemediaplayercallback-t.md)回调函数的一个参数。包含了网页中媒
-体的信息。应用可以根据这些信息来创建接管网页媒体播放的播放器。
+[CreateNativeMediaPlayerCallback](arkts-arkweb-createnativemediaplayercallback-t.md)回调函数的一个参数。包含了网页中媒 体的信息。应用可以根据这些信息来创建接管网页媒体播放的播放器。
 
 **起始版本：** 12
 
@@ -43,10 +42,7 @@ Value of the **controlslist** attribute in **<video>** or **<audio>**.
 controlsShown: boolean
 ```
 
-Whether the **controls** attribute exists in **<video>** or **<audio>**.
-
-The value **true** means that the **controls** attribute exists in **<video>** or **<audio>**, and **false**
-means the opposite.
+Whether the **controls** attribute exists in **<video>** or **<audio>**. The value **true** means that the **controls** attribute exists in **<video>** or **<audio>**, and **false** means the opposite.
 
 **类型：** boolean
 
@@ -122,9 +118,7 @@ Type of the media.
 muted: boolean
 ```
 
-Whether to mute the player.
-
-The value **true** means to mute the player, and **false** means the opposite.
+Whether to mute the player. The value **true** means to mute the player, and **false** means the opposite.
 
 **类型：** boolean
 

@@ -20,9 +20,7 @@ import { update } from '@kit.BasicServicesKit';
 existTask: boolean
 ```
 
-Whether a task exists.
-
-The value **true** indicates that the task exists, and the value **false** indicates the opposite.
+Whether a task exists. The value **true** indicates that the task exists, and the value **false** indicates the opposite.
 
 **Type:** boolean
 

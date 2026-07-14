@@ -1,11 +1,6 @@
 # ViewportRect
 
-Describes the options of the viewport.
-
-> **NOTE**
->
-> To standardize anonymous object definitions, the element definitions here have been revised in API version 18.
-> While historical version information is preserved for anonymous objects, there may be cases where the outer element's @since version number is higher than inner elements'. This does not affect interface usability.
+Describes the options of the viewport. > **NOTE** > > To standardize anonymous object definitions, the element definitions here have been revised in API version 18. > While historical version information is preserved for anonymous objects, there may be cases where the outer element's @since version number is higher than inner elements'. This does not affect interface usability.
 
 **Since:** 18
 
@@ -17,13 +12,7 @@ Describes the options of the viewport.
 height?: Length
 ```
 
-Height of the viewport. The value must be greater than or equal to 0.
-
-Default value: **0**
-
-Default unit: vp
-
-Invalid values are treated as the default value.
+Height of the viewport. The value must be greater than or equal to 0. Default value: **0** Default unit: vp Invalid values are treated as the default value.
 
 **Type:** Length
 
@@ -41,13 +30,7 @@ Invalid values are treated as the default value.
 width?: Length
 ```
 
-Width of the viewport. The value must be greater than or equal to 0.
-
-Default value: **0**
-
-Default unit: vp
-
-Invalid values are treated as the default value.
+Width of the viewport. The value must be greater than or equal to 0. Default value: **0** Default unit: vp Invalid values are treated as the default value.
 
 **Type:** Length
 
@@ -65,13 +48,7 @@ Invalid values are treated as the default value.
 x?: Length
 ```
 
-Horizontal coordinate of the start point of the viewport.
-
-Default value: **0**
-
-Default unit: vp
-
-Invalid values are treated as the default value.
+Horizontal coordinate of the start point of the viewport. Default value: **0** Default unit: vp Invalid values are treated as the default value.
 
 **Type:** Length
 
@@ -89,13 +66,7 @@ Invalid values are treated as the default value.
 y?: Length
 ```
 
-Vertical coordinate of the start point of the viewport.
-
-Default value: **0**
-
-Default unit: vp
-
-Invalid values are treated as the default value.
+Vertical coordinate of the start point of the viewport. Default value: **0** Default unit: vp Invalid values are treated as the default value.
 
 **Type:** Length
 

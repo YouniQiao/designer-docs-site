@@ -36,7 +36,7 @@ Bundle information of the application.
 reminderFlags: number
 ```
 
-Reminder flag.
+Notification reminder mode flags.<br>- bit0: sound prompt. The value **0** indicates disabled, and **1** indicates enabled. <br>- bit1: lock screen. The value **0** indicates disabled, and **1** indicates enabled. <br>- bit2: banner. The value **0** indicates disabled, and **1** indicates enabled. <br>- bit3: screen on. The value **0** indicates disabled, and **1** indicates enabled. <br>- bit4: vibration. The value **0** indicates disabled, and **1** indicates enabled. <br>- bit5: status bar notification icon. The value **0** indicates disabled, and **1** indicates enabled.
 
 **Type:** number
 
@@ -52,8 +52,7 @@ Reminder flag.
 silentReminderEnabled: boolean
 ```
 
-Whether the silent reminder is enabled. The value **true** indicates that the silent reminder is enabled, and
-the value **false** indicates the opposite.
+Whether the silent reminder is enabled. The value **true** indicates that the silent reminder is enabled, and the value **false** indicates the opposite.
 
 **Type:** boolean
 

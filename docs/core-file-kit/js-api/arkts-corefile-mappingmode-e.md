@@ -12,8 +12,7 @@ Enumerated type of the file memory mapping mode, which can be used by the mmap A
 READ_ONLY = 0
 ```
 
-Read-only mode. The file mapping area is not writable. An exception is thrown when the file mapping area is
-modified.
+Read-only mode. The file mapping area is not writable. An exception is thrown when the file mapping area is modified.
 
 **Since:** 26.0.0
 
@@ -27,8 +26,7 @@ modified.
 READ_WRITE = 1
 ```
 
-Read/Write mode. The modification is written to the file mapping area and then synchronized to the file by the
-operating system (non-real-time).
+Read/Write mode. The modification is written to the file mapping area and then synchronized to the file by the operating system (non-real-time).
 
 **Since:** 26.0.0
 
@@ -42,8 +40,7 @@ operating system (non-real-time).
 PRIVATE = 2
 ```
 
-Private mode. It is a copy-on-write mapping mechanism. Modifications to the mapping area are visible only to the
-current process and do not affect the raw file.
+Private mode. It is a copy-on-write mapping mechanism. Modifications to the mapping area are visible only to the current process and do not affect the raw file.
 
 **Since:** 26.0.0
 

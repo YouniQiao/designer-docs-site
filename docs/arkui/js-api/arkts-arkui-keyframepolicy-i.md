@@ -18,8 +18,7 @@ import { window } from '@kit.ArkUI';
 animationDelay?: number
 ```
 
-Delay before the animation for keyframe layout changes starts, in ms. The default value is **100**. The value is
-**0** or a positive integer. Floating-point values are rounded down.
+Delay before the animation for keyframe layout changes starts, in ms. The default value is **100**. The value is **0** or a positive integer. Floating-point values are rounded down.
 
 **Type:** number
 
@@ -35,8 +34,7 @@ Delay before the animation for keyframe layout changes starts, in ms. The defaul
 animationDuration?: number
 ```
 
-Duration of the animation for keyframe layout changes, in ms. The default value is **100**. The value is **0** or
-a positive integer. Floating-point values are rounded down.
+Duration of the animation for keyframe layout changes, in ms. The default value is **100**. The value is **0** or a positive integer. Floating-point values are rounded down.
 
 **Type:** number
 
@@ -52,10 +50,7 @@ a positive integer. Floating-point values are rounded down.
 distance?: number
 ```
 
-Distance interval for triggering keyframe layout changes via dragging, in px. The default value is **1000**. The
-value is **0** or a positive integer. Floating-point values are rounded down. If the value is 0, the drag
-distance is ignored. It works with **interval** using an OR condition. If either of them is met, the layout
-change starts.
+Distance interval for triggering keyframe layout changes via dragging, in px. The default value is **1000**. The value is **0** or a positive integer. Floating-point values are rounded down. If the value is 0, the drag distance is ignored. It works with **interval** using an OR condition. If either of them is met, the layout change starts.
 
 **Type:** number
 
@@ -85,9 +80,7 @@ Whether to enable keyframes. **true** to enable, **false** otherwise.
 interval?: number
 ```
 
-Time interval for triggering keyframe layout changes via dragging, in ms. The default value is **1000**. The
-value is a positive integer. Floating-point values are rounded down. It works with **distance** using an OR
-condition. If either of them is met, the layout change starts.
+Time interval for triggering keyframe layout changes via dragging, in ms. The default value is **1000**. The value is a positive integer. Floating-point values are rounded down. It works with **distance** using an OR condition. If either of them is met, the layout change starts.
 
 **Type:** number
 

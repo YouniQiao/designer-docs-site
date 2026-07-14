@@ -28,25 +28,7 @@ The menu is displayed in the current window.
 PREFER_WINDOW = 1
 ```
 
-The menu is preferentially displayed in a separate window. If a separate window is not supported, the menu is
-displayed in the current window.
-
-**NOTE**
-
-Displaying the text selection menu in a separate window is not supported for window types other than the app main
-window, app sub-window, system modal window, and system desktop window.
-
-Displaying the text selection menu in a separate window is not supported in the previewer.
-
-Displaying the text selection menu in a separate window is not supported in
-[UIExtension](../arkts-apis/arkts-arkui-uiextension.md).
-
-When a text component is displayed in a child window of [Popup](../arkts-apis/arkts-arkui-advanced-popup.md),
-[Dialog](../arkts-apis/arkts-arkui-advanced-dialog.md), [Toast](../../../../ui/arkts-create-toast.md), or [Menu](arkts-arkui-menu.md),
-the corresponding text selection menu cannot be displayed in a separate window.
-
-When **autoFill** is available for **TextInput** or **TextArea**, the corresponding text selection menu cannot be
-displayed in a separate window.
+The menu is preferentially displayed in a separate window. If a separate window is not supported, the menu is displayed in the current window. **NOTE** Displaying the text selection menu in a separate window is not supported for window types other than the app main window, app sub-window, system modal window, and system desktop window. Displaying the text selection menu in a separate window is not supported in the previewer. Displaying the text selection menu in a separate window is not supported in [UIExtension](../arkts-apis/arkts-arkui-uiextension.md). When a text component is displayed in a child window of [Popup](../arkts-apis/arkts-arkui-advanced-popup.md), [Dialog](../arkts-apis/arkts-arkui-advanced-dialog.md), [Toast](../../../../ui/arkts-create-toast.md), or [Menu](arkts-arkui-menu.md), the corresponding text selection menu cannot be displayed in a separate window. When **autoFill** is available for **TextInput** or **TextArea**, the corresponding text selection menu cannot be displayed in a separate window.
 
 **Since:** 16
 

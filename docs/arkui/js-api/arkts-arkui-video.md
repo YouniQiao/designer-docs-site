@@ -2,7 +2,6 @@
 
 Defines the video interface.
 
-
 ## Video
 
 ```TypeScript

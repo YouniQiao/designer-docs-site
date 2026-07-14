@@ -1,10 +1,6 @@
 # AccessibilityElement
 
-Defines the **AccessibilityElement**. Before calling APIs of **AccessibilityElement**, you must call
-[AccessibilityExtensionContext.getFocusElement()](arkts-accessibility-accessibilityextensioncontext-c.md#getfocuselement-2)
-or
-[AccessibilityExtensionContext.getWindowRootElement()](arkts-accessibility-accessibilityextensioncontext-c.md#getwindowrootelement-2)
-to obtain an **AccessibilityElement** instance.
+Defines the **AccessibilityElement**. Before calling APIs of **AccessibilityElement**, you must call [AccessibilityExtensionContext.getFocusElement()](arkts-accessibility-accessibilityextensioncontext-c.md#getfocuselement-2) or [AccessibilityExtensionContext.getWindowRootElement()](arkts-accessibility-accessibilityextensioncontext-c.md#getwindowrootelement-2) to obtain an **AccessibilityElement** instance.
 
 **Since:** 9
 
@@ -16,8 +12,7 @@ to obtain an **AccessibilityElement** instance.
 actionNames(callback: AsyncCallback<Array<string>>): void
 ```
 
-Obtains the names of all actions supported by this element. This API uses an asynchronous callback to return the
-result.
+Obtains the names of all actions supported by this element. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -100,8 +95,7 @@ attributeValue<T extends keyof ElementAttributeValues>(
   ): void
 ```
 
-Obtains the attribute value based on an attribute name. This API uses an asynchronous callback to return the
-result.
+Obtains the attribute value based on an attribute name. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 

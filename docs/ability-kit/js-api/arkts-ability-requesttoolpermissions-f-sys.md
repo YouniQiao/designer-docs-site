@@ -6,10 +6,7 @@
 export function requestToolPermissions(permissionQuery: PermissionQuery): Promise<PermissionQueryResult>
 ```
 
-Queries tool permissions based on the specified operations.
-This function checks the permission status for CLI commands or APIs specified in permissionQuery.operationInfo.
-For each operation, it returns the permission status, authorization status, and whether a user dialog is required.
-When needTicket is set to true, a ticket will be generated for remote authorization.
+Queries tool permissions based on the specified operations. This function checks the permission status for CLI commands or APIs specified in permissionQuery.operationInfo. For each operation, it returns the permission status, authorization status, and whether a user dialog is required. When needTicket is set to true, a ticket will be generated for remote authorization.
 
 **Since:** 26.0.0
 

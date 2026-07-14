@@ -625,7 +625,7 @@ Adds a **VideoOutput** instance to a session.
 | Parameter | Description |
 | -- | -- |
 | [Camera_CaptureSession](capi-oh-camera-camera-capturesession.md)* session | Pointer to the target Camera_CaptureSession instance. |
-| [Camera_VideoOutput](capi-oh-camera-camera-videooutput.md)* videoOutput | Pointer to the **VideoOutput** instance to add. |
+| Camera_VideoOutput* videoOutput | Pointer to the **VideoOutput** instance to add. |
 
 **Returns**:
 
@@ -650,7 +650,7 @@ Removes a VideoOutput instance from a session.
 | Parameter | Description |
 | -- | -- |
 | [Camera_CaptureSession](capi-oh-camera-camera-capturesession.md)* session | Pointer to the target Camera_CaptureSession instance. |
-| [Camera_VideoOutput](capi-oh-camera-camera-videooutput.md)* videoOutput | Pointer to the VideoOutput instance to remove. |
+| Camera_VideoOutput* videoOutput | Pointer to the VideoOutput instance to remove. |
 
 **Returns**:
 
@@ -675,7 +675,7 @@ Adds a MetadataOutput instance to a session.
 | Parameter | Description |
 | -- | -- |
 | [Camera_CaptureSession](capi-oh-camera-camera-capturesession.md)* session | Pointer to the target Camera_CaptureSession instance. |
-| Camera_MetadataOutput* metadataOutput | Pointer to the MetadataOutput instance to add. |
+| [Camera_MetadataOutput](capi-oh-camera-camera-metadataoutput.md)* metadataOutput | Pointer to the MetadataOutput instance to add. |
 
 **Returns**:
 
@@ -700,7 +700,7 @@ Removes a MetadataOutput instance from a session.
 | Parameter | Description |
 | -- | -- |
 | [Camera_CaptureSession](capi-oh-camera-camera-capturesession.md)* session | Pointer to the target Camera_CaptureSession instance. |
-| Camera_MetadataOutput* metadataOutput | Pointer to the MetadataOutput instance to remove. |
+| [Camera_MetadataOutput](capi-oh-camera-camera-metadataoutput.md)* metadataOutput | Pointer to the MetadataOutput instance to remove. |
 
 **Returns**:
 
@@ -2293,7 +2293,7 @@ Checks whether a **VideoOutput** instance can be added to a session.
 | Parameter | Description |
 | -- | -- |
 | [Camera_CaptureSession](capi-oh-camera-camera-capturesession.md)* session | Pointer to the target Camera_CaptureSession instance. |
-| [Camera_VideoOutput](capi-oh-camera-camera-videooutput.md)* cameraOutput | Pointer to the **VideoOutput** instance to check. |
+| Camera_VideoOutput* cameraOutput | Pointer to the **VideoOutput** instance to check. |
 | bool* isSuccessful | Pointer to the check result for whether the VideoOutput instance can be added to the session. true** if it can be added to the session, **false** otherwise. |
 
 **Returns**:

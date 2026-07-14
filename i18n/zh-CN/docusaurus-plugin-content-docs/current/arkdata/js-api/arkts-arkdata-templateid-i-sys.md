@@ -1,7 +1,6 @@
 # TemplateId（系统接口）
 
-标记模板的数据结构，TemplateId是在[addTemplate](arkts-arkdata-datasharehelper-i-sys.md#addtemplate-1)中自动生成的，在
-[addTemplate](arkts-arkdata-datasharehelper-i-sys.md#addtemplate-1)后，可以使用模板id来标记模板。
+标记模板的数据结构，TemplateId是在[addTemplate](arkts-arkdata-datasharehelper-i-sys.md#addtemplate-1)中自动生成的，在 [addTemplate](arkts-arkdata-datasharehelper-i-sys.md#addtemplate-1)后，可以使用模板id来标记模板。
 
 **起始版本：** 10
 

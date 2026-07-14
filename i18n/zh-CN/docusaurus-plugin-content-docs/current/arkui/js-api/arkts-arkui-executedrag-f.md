@@ -125,13 +125,7 @@ struct DragControllerPage {
 function executeDrag(custom: CustomBuilder | DragItemInfo, dragInfo: DragInfo): Promise<DragEventParam>
 ```
 
-主动发起拖拽能力，传入拖拽发起后跟手效果所拖拽的对象以及携带拖拽信息。使用Promise异步回调。
-
-> **说明：**
->
-> 从API version 11开始，可以通过使用[UIContext](arkts-arkui-uicontext.md)中的
-> [getDragController](arkts-arkui-uicontext-c.md#getdragcontroller-1)方法获取当前UI
-> 上下文关联的[DragController](arkts-arkui-dragcontroller-c.md)对象。
+主动发起拖拽能力，传入拖拽发起后跟手效果所拖拽的对象以及携带拖拽信息。使用Promise异步回调。 > **说明：** > > 从API version 11开始，可以通过使用[UIContext](arkts-arkui-uicontext.md)中的 > [getDragController](arkts-arkui-uicontext-c.md#getdragcontroller-1)方法获取当前UI > 上下文关联的[DragController](arkts-arkui-dragcontroller-c.md)对象。
 
 **起始版本：** 10
 

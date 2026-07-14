@@ -99,8 +99,7 @@ let value = settings.getValueSync(context, settings.display.SCREEN_BRIGHTNESS_ST
 function getValueSync(context: Context, name: string, defValue: string, domainName: string): string
 ```
 
-Get value from settingsdata(synchronous method).
-[USER_SECURE] domain need ohos.permission.MANAGE_SECURE_SETTINGS permission.
+Get value from settingsdata(synchronous method). [USER_SECURE] domain need ohos.permission.MANAGE_SECURE_SETTINGS permission.
 
 **Since:** 11
 

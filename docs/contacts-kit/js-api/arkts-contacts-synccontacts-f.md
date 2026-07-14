@@ -12,9 +12,7 @@ import { contact } from '@kit.ContactsKit';
 function syncContacts(context: Context, mode: ContactSyncMode, progress: ContactSyncProgress, contacts: Array<Contact>): Promise<Array<number>>
 ```
 
-Sync multiple contacts in batches into contacts database.
-
-A maximum of 400 contacts can be synchronized in batches. The invoking party must be in the foreground.
+Sync multiple contacts in batches into contacts database. A maximum of 400 contacts can be synchronized in batches. The invoking party must be in the foreground.
 
 **Since:** 26.0.0
 

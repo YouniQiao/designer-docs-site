@@ -12,8 +12,7 @@ Defines the Localized align rule options of relative container.
 bias?: Bias
 ```
 
-Offset of the component under the anchor constraints.
-<br>The value is the ratio of the distance to the left/upper anchor to the total distance between anchors.
+Offset of the component under the anchor constraints. <br>The value is the ratio of the distance to the left/upper anchor to the total distance between anchors.
 
 **Type:** Bias
 
@@ -69,8 +68,7 @@ Center alignment in the vertical direction.
 end?: LocalizedHorizontalAlignParam
 ```
 
-Right alignment with left-to-right scripts and left alignment with right-to-left scripts in the horizontal
-direction.
+Right alignment with left-to-right scripts and left alignment with right-to-left scripts in the horizontal direction.
 
 **Type:** LocalizedHorizontalAlignParam
 
@@ -106,8 +104,7 @@ Center alignment in the horizontal direction.
 start?: LocalizedHorizontalAlignParam
 ```
 
-Left alignment with left-to-right scripts and right alignment with right-to-left scripts in the horizontal
-direction.
+Left alignment with left-to-right scripts and right alignment with right-to-left scripts in the horizontal direction.
 
 **Type:** LocalizedHorizontalAlignParam
 

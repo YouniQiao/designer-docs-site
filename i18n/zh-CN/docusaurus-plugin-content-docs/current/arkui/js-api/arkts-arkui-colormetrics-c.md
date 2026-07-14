@@ -12,8 +12,7 @@
 autoRefresh?(value: boolean): ColorMetrics
 ```
 
-设置ColorMetrics对象的自动刷新。
-启用时，当系统配置发生变化时，使用ColorMetrics.resourceColor()创建的对象的颜色值将自动更新
+设置ColorMetrics对象的自动刷新。 启用时，当系统配置发生变化时，使用ColorMetrics.resourceColor()创建的对象的颜色值将自动更新
 
 **起始版本：** 26.0.0
 

@@ -18,9 +18,7 @@ import { ShowActionMenuOptions, Button, ShowToastOptions, ShowDialogOptions, Sho
 buttons?: [Button, Button?, Button?]
 ```
 
-Array of buttons in the dialog box.
-The array structure is {text:'button', color: '#666666'}.
-One to three buttons are supported. The first button is of the positiveButton type, the second is of the negativeButton type, and the third is of the neutralButton type.
+Array of buttons in the dialog box. The array structure is {text:'button', color: '#666666'}. One to three buttons are supported. The first button is of the positiveButton type, the second is of the negativeButton type, and the third is of the neutralButton type.
 
 **Type:** [Button, Button?, Button?]
 

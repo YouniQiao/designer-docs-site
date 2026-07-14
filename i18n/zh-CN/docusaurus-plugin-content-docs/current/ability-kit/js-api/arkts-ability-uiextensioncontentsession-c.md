@@ -79,9 +79,7 @@ struct Extension {
 loadContent(path: string, storage?: LocalStorage): void
 ```
 
-为[UIExtensionAbility](arkts-ability-uiextensionability-c.md)组件加载页面，支持通过
-[LocalStorage](../../../../ui/state-management/arkts-localstorage.md)传递状态属性给被加载的页面。该接口用于开发者在UIExtensionAbility组件的
-[onSessionCreate](arkts-ability-uiextensionability-c.md#onsessioncreate-1)生命周期中加载页面。
+为[UIExtensionAbility](arkts-ability-uiextensionability-c.md)组件加载页面，支持通过 [LocalStorage](../../../../ui/state-management/arkts-localstorage.md)传递状态属性给被加载的页面。该接口用于开发者在UIExtensionAbility组件的 [onSessionCreate](arkts-ability-uiextensionability-c.md#onsessioncreate-1)生命周期中加载页面。
 
 **起始版本：** 10
 
@@ -136,10 +134,7 @@ export default class ShareExtAbility extends ShareExtensionAbility {
 loadContentByName(name: string, storage?: LocalStorage): void
 ```
 
-为[UIExtensionAbility](arkts-ability-uiextensionability-c.md)组件加载
-[命名路由](../../../../ui/arkts-routing.md#命名路由)页面，支持通过
-[LocalStorage](../../../../ui/state-management/arkts-localstorage.md)传递状态属性给被加载的页面。该接口用于开发者在UIExtensionAbility组件的
-[onSessionCreate](arkts-ability-uiextensionability-c.md#onsessioncreate-1)生命周期中加载命名路由页面。
+为[UIExtensionAbility](arkts-ability-uiextensionability-c.md)组件加载 [命名路由](../../../../ui/arkts-routing.md#命名路由)页面，支持通过 [LocalStorage](../../../../ui/state-management/arkts-localstorage.md)传递状态属性给被加载的页面。该接口用于开发者在UIExtensionAbility组件的 [onSessionCreate](arkts-ability-uiextensionability-c.md#onsessioncreate-1)生命周期中加载命名路由页面。
 
 **起始版本：** 18
 

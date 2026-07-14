@@ -6,9 +6,7 @@
 function getProfileByAbilitySync(moduleName: string, abilityName: string, metadataName?: string): Array<string>
 ```
 
-以同步方法根据给定的moduleName、abilityName和metadataName（module.json5中
-[metadata标签](../../../../quick-start/module-configuration-file.md#metadata标签)下的name）获取自身相应配置文件的json格式字符串，返回对象为string数
-组。
+以同步方法根据给定的moduleName、abilityName和metadataName（module.json5中 [metadata标签](../../../../quick-start/module-configuration-file.md#metadata标签)下的name）获取自身相应配置文件的json格式字符串，返回对象为string数 组。
 
 **起始版本：** 10
 

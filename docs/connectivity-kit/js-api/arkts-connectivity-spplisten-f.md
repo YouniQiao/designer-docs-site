@@ -12,8 +12,7 @@ import { bluetoothManager } from '@kit.ConnectivityKit';
 function sppListen(name: string, option: SppOption, callback: AsyncCallback<number>): void
 ```
 
-Creates a Bluetooth server listening socket.
-On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
+Creates a Bluetooth server listening socket. On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
 
 **Since:** 9
 

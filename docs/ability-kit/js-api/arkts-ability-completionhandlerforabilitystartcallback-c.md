@@ -1,7 +1,6 @@
 # CompletionHandlerForAbilityStartCallback
 
-CompletionHandlerForAbilityStartCallback provides two callback functions, **onRequestSuccess** and
-**onRequestFailure**, which are invoked when launching the specified ability succeeds or fails, respectively.
+CompletionHandlerForAbilityStartCallback provides two callback functions, **onRequestSuccess** and **onRequestFailure**, which are invoked when launching the specified ability succeeds or fails, respectively.
 
 **Since:** 21
 
@@ -19,9 +18,7 @@ import { CompletionHandlerForAbilityStartCallback, AbilityStartFailureCode } fro
 onRequestFailure?: OnRequestFailureFn
 ```
 
-Callback invoked when launching the specified ability fails.
-
-This API can be used in atomic services since API version 21.
+Callback invoked when launching the specified ability fails. This API can be used in atomic services since API version 21.
 
 **Type:** OnRequestFailureFn
 
@@ -39,9 +36,7 @@ This API can be used in atomic services since API version 21.
 onRequestSuccess?: OnRequestSuccessFn
 ```
 
-Callback invoked when the specified ability is successfully launched.
-
-This API can be used in atomic services since API version 21.
+Callback invoked when the specified ability is successfully launched. This API can be used in atomic services since API version 21.
 
 **Type:** OnRequestSuccessFn
 

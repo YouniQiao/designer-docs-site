@@ -38,7 +38,7 @@ Indicates additional information map.
 arfcn: number
 ```
 
-Indicates absolute radio frequency channel number (ARFCN).
+Indicates absolute radio frequency channel number (ARFCN). The value should be an integer.
 
 **Type:** number
 
@@ -74,7 +74,7 @@ Indicates ID of cell.
 lac: number
 ```
 
-Indicates location area code (LAC).
+Indicates location area code(LAC). The value should be an integer.
 
 **Type:** number
 
@@ -92,7 +92,7 @@ Indicates location area code (LAC).
 mcc: number
 ```
 
-Indicates mobile country code (MCC).
+Indicates mobile country code (MCC). The value should be an integer.
 
 **Type:** number
 
@@ -110,7 +110,7 @@ Indicates mobile country code (MCC).
 mnc: number
 ```
 
-Indicates mobile network code (MNC).
+Indicates mobile network code (MNC). The value should be an integer.
 
 **Type:** number
 
@@ -128,7 +128,7 @@ Indicates mobile network code (MNC).
 pci: number
 ```
 
-Indicates physical cell identifier (PCI).
+Indicates physical cell identifier (PCI). The value should be an integer.
 
 **Type:** number
 
@@ -146,7 +146,7 @@ Indicates physical cell identifier (PCI).
 rat: number
 ```
 
-Indicates radio access technology (RAT).
+Indicates radio access technology (RAT). The value should be an integer.
 
 **Type:** number
 
@@ -164,11 +164,29 @@ Indicates radio access technology (RAT).
 signalIntensity: number
 ```
 
-Indicates signal intensity.
+Indicates signal intensity. The value should be an integer.
 
 **Type:** number
 
 **Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Location.Location.Core
+
+**System API:** This is a system API.
+
+## tac
+
+```TypeScript
+tac?: number
+```
+
+Indicates tracking area code (TAC). The value range is all integers.
+
+**Type:** number
+
+**Since:** 26.0.0
 
 **Model restriction:** This API can be used only in the stage model.
 

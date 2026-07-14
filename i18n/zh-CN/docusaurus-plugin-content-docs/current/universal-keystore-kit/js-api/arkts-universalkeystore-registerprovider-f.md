@@ -6,23 +6,7 @@
 function registerProvider(providerName: string, params: Array<HuksExternalCryptoParam>): Promise<void>
 ```
 
-注册指定的外部provider。使用Promise异步回调。
-
-若需使用自定义PIN码弹窗，在注册provider时需要同步注册UIExtensionAbility，注意事项如下：
-
-1. 自定义ability通过UIExtensionAbility扩展实现。
-2. 注册的UIExtensionAbility可以通过证书管理kit提供的[openUKeyAuthDialog](../../apis-device-certificate-kit/arkts-apis/arkts-security-certmanager.md)接口统一拉起。
-
-3. 系统拉起自定义弹窗时会通过want接口向开发者传递以下参数：
-- Action：string参数类型，在拉起自定义弹窗时want传输的Action为"UkeyPINAuth"。
-- appUid：number参数类型，通过want.parameters传输。"appUid"字段为应用id，开发者可以通过该字段完成应用隔离。
-- keyUri：string参数类型其值为resourceId，通过want.parameters传输，表示Ukey证书的索引。
-
-4. 开发者实现UIExtensionAbility时，应用需根据指定场景返回对应的错误码：
-- 用户取消操作时，返回-1001。
-- keyUri指定的证书/密钥不存在时，返回-1008。
-- 参数格式错误时，返回-1014。
-- 其余失败场景返回错误码-1000，成功时返回0。
+注册指定的外部provider。使用Promise异步回调。 若需使用自定义PIN码弹窗，在注册provider时需要同步注册UIExtensionAbility，注意事项如下： 1. 自定义ability通过UIExtensionAbility扩展实现。 2. 注册的UIExtensionAbility可以通过证书管理kit提供的[openUKeyAuthDialog](../../apis-device-certificate-kit/arkts-apis/arkts-security-certmanager.md)接口统一拉起。 3. 系统拉起自定义弹窗时会通过want接口向开发者传递以下参数： - Action：string参数类型，在拉起自定义弹窗时want传输的Action为"UkeyPINAuth"。 - appUid：number参数类型，通过want.parameters传输。"appUid"字段为应用id，开发者可以通过该字段完成应用隔离。 - keyUri：string参数类型其值为resourceId，通过want.parameters传输，表示Ukey证书的索引。 4. 开发者实现UIExtensionAbility时，应用需根据指定场景返回对应的错误码： - 用户取消操作时，返回-1001。 - keyUri指定的证书/密钥不存在时，返回-1008。 - 参数格式错误时，返回-1014。 - 其余失败场景返回错误码-1000，成功时返回0。
 
 **起始版本：** 22
 

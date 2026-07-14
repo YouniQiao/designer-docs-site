@@ -1,9 +1,6 @@
 # CapsuleSegmentButtonConstructionOptions
 
-Represents configuration options for creating a **SegmentButton** component consisting of capsule-style segmented
-buttons.
-
-Inherits from [CommonSegmentButtonOptions](arkts-arkui-commonsegmentbuttonoptions-i.md).
+Represents configuration options for creating a **SegmentButton** component consisting of capsule-style segmented buttons. Inherits from [CommonSegmentButtonOptions](arkts-arkui-commonsegmentbuttonoptions-i.md).
 
 **Inheritance/Implementation:** CapsuleSegmentButtonConstructionOptions extends [CommonSegmentButtonOptions](arkts-arkui-commonsegmentbuttonoptions-i.md)
 
@@ -41,15 +38,7 @@ Button information.
 multiply?: boolean
 ```
 
-Whether multiple items can be selected.
-
-Default value: **false**
-
-If the value is **undefined**, the default value is used.
-
-**true**: Multi-selection is allowed.
-
-**false**: Multi-selection is not allowed.
+Whether multiple items can be selected. Default value: **false** If the value is **undefined**, the default value is used. **true**: Multi-selection is allowed. **false**: Multi-selection is not allowed.
 
 **Type:** boolean
 

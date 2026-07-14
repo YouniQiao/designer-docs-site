@@ -1,9 +1,6 @@
 # BreakPoints
 
-Sets breakpoints for the responsive grid container. For details about breakpoints, see
-[Breakpoints](../../../../ui/arkts-layout-development-grid-layout.md#breakpoints).
-
-<!--code_no_check-->
+Sets breakpoints for the responsive grid container. For details about breakpoints, see [Breakpoints](../../../../ui/arkts-layout-development-grid-layout.md#breakpoints). <!--code_no_check-->
 
 **Since:** 9
 
@@ -15,11 +12,7 @@ Sets breakpoints for the responsive grid container. For details about breakpoint
 reference?: BreakpointsReference
 ```
 
-Breakpoint switching reference.
-
-Default value: **BreakpointsReference.WindowSize**
-
-Invalid values are treated as the default value.
+Breakpoint switching reference. Default value: **BreakpointsReference.WindowSize** Invalid values are treated as the default value.
 
 **Type:** BreakpointsReference
 
@@ -37,13 +30,7 @@ Invalid values are treated as the default value.
 value?: Array<string>
 ```
 
-Array of monotonically increasing breakpoints.
-
-Default value: **["320vp", "600vp", "840vp"]**
-
-Invalid values are treated as the default value.
-
-Unit: vp.
+Array of monotonically increasing breakpoints. Default value: **["320vp", "600vp", "840vp"]** Invalid values are treated as the default value. Unit: vp.
 
 **Type:** Array<string>
 

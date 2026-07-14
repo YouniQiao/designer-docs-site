@@ -1,15 +1,6 @@
 # AlphabetIndexer属性/事件
 
-[width](arkts-arkui-commonmethod-c.md#width-1)属性设置"auto"时表示自适应宽度，宽度会随索引项最大宽度变化。
-
-[padding](arkts-arkui-commonmethod-c.md#padding-1)属性默认为4vp。
-
-文本最大的字体缩放倍数[maxFontScale](TextAttribute#maxFontScale)和最小的字体缩放倍数[minFontScale](TextAttribute#minFontScale)
-皆为1，不跟随系统字体大小调节变化。
-
-除支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持以下属性：
-
-除支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持以下事件：
+[width](arkts-arkui-commonmethod-c.md#width-1)属性设置"auto"时表示自适应宽度，宽度会随索引项最大宽度变化。 [padding](arkts-arkui-commonmethod-c.md#padding-1)属性默认为4vp。 文本最大的字体缩放倍数[maxFontScale](TextAttribute#maxFontScale)和最小的字体缩放倍数[minFontScale](TextAttribute#minFontScale) 皆为1，不跟随系统字体大小调节变化。 除支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持以下属性： 除支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持以下事件：
 
 **继承/实现关系：** AlphabetIndexerAttribute extends [CommonMethod<AlphabetIndexerAttribute>](CommonMethod<AlphabetIndexerAttribute>)
 
@@ -44,17 +35,7 @@ alignStyle(value: IndexerAlign, offset?: Length)
 autoCollapse(value: boolean)
 ```
 
-设置是否使用自适应折叠模式。
-
-如果索引项第一项为“#”，当除去第一项后剩余索引项数量 <= 9时，选择全显示模式；9 < 剩余索引项数量 <= 13时，根据索引条高度自适应选择全显示模式或者短折叠模式；剩余索引项数量 > 13时，根据索引条高度自适应选择短折叠
-模式或者长折叠模式。
-
-如果索引项第一项不为“#”，当所有索引项数量 <= 9时，选择全显示模式；9 < 所有索引项数量 <= 13时，根据索引条高度自适应选择全显示模式或者短折叠模式；所有索引项数量 > 13时，根据索引条高度自适应选择短折叠模式或者长
-折叠模式。
-
-> **说明：**
-
-> 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+设置是否使用自适应折叠模式。 如果索引项第一项为“#”，当除去第一项后剩余索引项数量 <= 9时，选择全显示模式；9 < 剩余索引项数量 <= 13时，根据索引条高度自适应选择全显示模式或者短折叠模式；剩余索引项数量 > 13时，根据索引条高度自适应选择短折叠 模式或者长折叠模式。 如果索引项第一项不为“#”，当所有索引项数量 <= 9时，选择全显示模式；9 < 所有索引项数量 <= 13时，根据索引条高度自适应选择全显示模式或者短折叠模式；所有索引项数量 > 13时，根据索引条高度自适应选择短折叠模式或者长 折叠模式。 > **说明：** > 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 11
 
@@ -240,11 +221,7 @@ onSelect(callback: OnAlphabetIndexerSelectCallback)
 onSelected(callback: (index: number) => void)
 ```
 
-索引项选中事件，回调参数为当前选中项索引。
-
-> **说明：**
-
-> 从API version 7开始支持，从API version 8开始废弃，建议使用[onSelect](AlphabetIndexerAttribute#onSelect)替代。
+索引项选中事件，回调参数为当前选中项索引。 > **说明：** > 从API version 7开始支持，从API version 8开始废弃，建议使用[onSelect](AlphabetIndexerAttribute#onSelect)替代。
 
 **起始版本：** 7
 
@@ -266,18 +243,7 @@ onSelected(callback: (index: number) => void)
 popupBackground(value: ResourceColor)
 ```
 
-设置提示弹窗背景颜色。
-
-该接口未被主动调用或参数value传入undefined时：
-
-API version 11及以前版本，提示弹窗背景颜色默认为0xFFFFFFFF，显示为白色。
-
-对于API version 12至API version 24版本，默认为#66808080，显示为半透明的灰色。
-
-从API版本26.0.0开始，如果和[popupBackgroundBlurStyle](AlphabetIndexerAttribute#popupBackgroundBlurStyle)均未被主动调用或参数
-value传入undefined，高档、中档算力设备默认显示为沉浸式材质
-[ImmersiveStyle](../../../../reference/apis-arkui/arkts-apis-uimaterial.md#immersivestyle)的THIN样式，低档算力设备默认显示为白色背景。如果
-popupBackgroundBlurStyle被主动调用且参数value传入有效值，提示弹窗背景颜色默认为#66808080，显示为半透明的灰色。
+设置提示弹窗背景颜色。 该接口未被主动调用或参数value传入undefined时： API version 11及以前版本，提示弹窗背景颜色默认为0xFFFFFFFF，显示为白色。 对于API version 12至API version 24版本，默认为#66808080，显示为半透明的灰色。 从API版本26.0.0开始，如果和[popupBackgroundBlurStyle](AlphabetIndexerAttribute#popupBackgroundBlurStyle)均未被主动调用或参数 value传入undefined，高档、中档算力设备默认显示为沉浸式材质 [ImmersiveStyle](../../../../reference/apis-arkui/arkts-apis-uimaterial.md#immersivestyle)的THIN样式，低档算力设备默认显示为白色背景。如果 popupBackgroundBlurStyle被主动调用且参数value传入有效值，提示弹窗背景颜色默认为#66808080，显示为半透明的灰色。
 
 **起始版本：** 7
 
@@ -297,10 +263,7 @@ popupBackgroundBlurStyle被主动调用且参数value传入有效值，提示弹
 popupBackgroundBlurStyle(value: BlurStyle)
 ```
 
-设置提示弹窗的背景模糊材质。API版本26.0.0之前版本，未通过该接口设置时，默认为组件普通材质模糊，对应取值为BlurStyle中的COMPONENT_REGULAR。从API版本26.0.0开始，
-[popupBackground](AlphabetIndexerAttribute#popupBackground)和popupBackgroundBlurStyle均未被主动调用或者传入undefined时，在高档
-、中档算力设备默认显示为沉浸式材质[ImmersiveStyle](../../../../reference/apis-arkui/arkts-apis-uimaterial.md#immersivestyle)的THIN样式，低档
-算力设备默认显示为白色背景。
+设置提示弹窗的背景模糊材质。API版本26.0.0之前版本，未通过该接口设置时，默认为组件普通材质模糊，对应取值为BlurStyle中的COMPONENT_REGULAR。从API版本26.0.0开始， [popupBackground](AlphabetIndexerAttribute#popupBackground)和popupBackgroundBlurStyle均未被主动调用或者传入undefined时，在高档 、中档算力设备默认显示为沉浸式材质[ImmersiveStyle](../../../../reference/apis-arkui/arkts-apis-uimaterial.md#immersivestyle)的THIN样式，低档 算力设备默认显示为白色背景。
 
 **起始版本：** 12
 
@@ -514,9 +477,7 @@ popupUnselectedColor(value: ResourceColor)
 selected(index: number)
 ```
 
-设置选中项索引值。
-
-从API version 10开始，该参数支持[$$](../../../../ui/state-management/arkts-two-way-sync.md)双向绑定变量。
+设置选中项索引值。 从API version 10开始，该参数支持[$$](../../../../ui/state-management/arkts-two-way-sync.md)双向绑定变量。
 
 **起始版本：** 8
 

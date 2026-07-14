@@ -80,11 +80,7 @@ Symbol icon for a single option on the menu bar. It has higher priority than **i
 value: string | Resource
 ```
 
-Text of the menu item. Its visibility varies by the API version.
-
-API version 9: visible.
-
-Since API version 10: invisible.
+Text of the menu item. Its visibility varies by the API version. API version 9: visible. Since API version 10: invisible.
 
 **Type:** string | Resource
 

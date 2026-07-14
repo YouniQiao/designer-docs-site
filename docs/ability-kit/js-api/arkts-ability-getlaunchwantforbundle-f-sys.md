@@ -12,8 +12,7 @@ import { bundleManager } from '@kit.AbilityKit';
 function getLaunchWantForBundle(bundleName: string, userId: number, callback: AsyncCallback<Want>): void
 ```
 
-Obtains the Want used to launch the bundle based on the given bundle name and user ID. This API uses an
-asynchronous callback to return the result.
+Obtains the Want used to launch the bundle based on the given bundle name and user ID. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -74,8 +73,7 @@ try {
 function getLaunchWantForBundle(bundleName: string, callback: AsyncCallback<Want>): void
 ```
 
-Obtains the Want used to launch the bundle based on the given bundle name. This API uses an asynchronous callback
-to return the result.
+Obtains the Want used to launch the bundle based on the given bundle name. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -133,8 +131,7 @@ try {
 function getLaunchWantForBundle(bundleName: string, userId?: number): Promise<Want>
 ```
 
-Obtains the Want used to launch the bundle based on the given bundle name and user ID. This API uses a promise to
-return the result.
+Obtains the Want used to launch the bundle based on the given bundle name and user ID. This API uses a promise to return the result.
 
 **Since:** 9
 

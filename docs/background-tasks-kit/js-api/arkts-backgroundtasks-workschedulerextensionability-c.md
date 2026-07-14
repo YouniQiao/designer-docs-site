@@ -1,8 +1,6 @@
 # WorkSchedulerExtensionAbility
 
-Provides callbacks to be invoked when the scheduling conditions are met or the scheduling ends, for example,
-[onWorkStart()](arkts-backgroundtasks-workschedulerextensionability-c.md#onworkstart-1) or
-[onWorkStop()](arkts-backgroundtasks-workschedulerextensionability-c.md#onworkstop-1) in WorkSchedulerExtensionAbility.
+Provides callbacks to be invoked when the scheduling conditions are met or the scheduling ends, for example, [onWorkStart()](arkts-backgroundtasks-workschedulerextensionability-c.md#onworkstart-1) or [onWorkStop()](arkts-backgroundtasks-workschedulerextensionability-c.md#onworkstop-1) in WorkSchedulerExtensionAbility.
 
 **Since:** 9
 
@@ -55,9 +53,7 @@ export default class MyWorkSchedulerExtensionAbility extends WorkSchedulerExtens
 onWorkStop(work: workScheduler.WorkInfo): void
 ```
 
-Called when the system stops scheduling the deferred task. This callback is triggered when the deferred task times
-out for 2 minutes or the [stopWork](arkts-backgroundtasks-stopwork-f.md#stopwork-1) API is
-called to cancel the task.
+Called when the system stops scheduling the deferred task. This callback is triggered when the deferred task times out for 2 minutes or the [stopWork](arkts-backgroundtasks-stopwork-f.md#stopwork-1) API is called to cancel the task.
 
 **Since:** 9
 

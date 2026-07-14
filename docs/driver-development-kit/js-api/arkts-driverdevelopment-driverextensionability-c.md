@@ -1,7 +1,6 @@
 # DriverExtensionAbility
 
-The **DriverExtensionAbility** module provides the ExtensionAbility related to drivers. It provides lifecycle
-callbacks to be invoked when a driver is created, destroyed, connected, or disconnected.
+The **DriverExtensionAbility** module provides the ExtensionAbility related to drivers. It provides lifecycle callbacks to be invoked when a driver is created, destroyed, connected, or disconnected.
 
 **Since:** 10
 
@@ -19,8 +18,7 @@ import { DriverExtensionContext } from '@kit.DriverDevelopmentKit';
 onConnect(want: Want): rpc.RemoteObject | Promise<rpc.RemoteObject>
 ```
 
-Called following **onCreate()** when a DriverExtensionAbility is started by calling **connectAbility()**. A
-**RemoteObject** object is returned for communication between the server and client.
+Called following **onCreate()** when a DriverExtensionAbility is started by calling **connectAbility()**. A **RemoteObject** object is returned for communication between the server and client.
 
 **Since:** 10
 

@@ -13,8 +13,7 @@ function parseAdResponse(adResponse: string, listener: MultiSlotsAdLoadListener,
     context: common.UIAbilityContext): void
 ```
 
-Parses and processes the body of an ad response
-(this API is only open to some pre-installed system applications).
+Parses and processes the body of an ad response (this API is only open to some pre-installed system applications).
 
 **Since:** 12
 

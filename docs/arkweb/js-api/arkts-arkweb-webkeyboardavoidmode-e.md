@@ -54,9 +54,7 @@ No viewport is resized, and soft keyboard avoidance is not triggered.
 RETURN_TO_UICONTEXT = 3
 ```
 
-The soft keyboard avoidance behavior of the **Web** component follows the
-[KeyboardAvoidMode](../../apis-arkui/arkts-apis/arkts-arkui-keyboardavoidmode-e.md) set by UIcontext. The **Web** component
-does not process the avoidance behavior of the component.
+The soft keyboard avoidance behavior of the **Web** component follows the [KeyboardAvoidMode](../../apis-arkui/arkts-apis/arkts-arkui-keyboardavoidmode-e.md) set by UIcontext. The **Web** component does not process the avoidance behavior of the component.
 
 **Since:** 22
 

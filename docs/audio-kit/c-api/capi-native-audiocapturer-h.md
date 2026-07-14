@@ -495,7 +495,7 @@ Called when the input device of an AudioCapturer instance changes.This function 
 | -- | -- |
 | (OH_AudioCapturer\* capturer | Pointer to the AudioCapturer instance that triggers the callback. |
 | void\* userData | Pointer to the user data passed when setting the callback viaOH_AudioStreamBuilder_SetCapturerDeviceChangeCallback. |
-| [OH_AudioDeviceDescriptorArray](capi-ohaudio-oh-audiodevicedescriptorarray.md)\* deviceArray | Pointer to an array of the new input devices. |
+| OH_AudioDeviceDescriptorArray\* deviceArray | Pointer to an array of the new input devices. |
 
 **Reference**:
 
@@ -731,7 +731,7 @@ Sets noise reduction mode for current audio capturer.The supported mode should b
 | Parameter | Description |
 | -- | -- |
 | [OH_AudioCapturer](capi-ohaudio-oh-audiocapturerstruct.md)* capturer | [in] Pointer to the audio capturer created by {@link OH_AudioStreamBuilder_GenerateCapturer}. |
-| [OH_AudioNoiseReductionMode](capi-native-audio-common-h.md#oh_audionoisereductionmode) noiseReductionMode | [in] The noise reduction mode to set. |
+| OH_AudioNoiseReductionMode noiseReductionMode | [in] The noise reduction mode to set. |
 
 **Returns**:
 
@@ -756,7 +756,7 @@ Gets the noise reduction mode for current audio capturer.The mode will only cons
 | Parameter | Description |
 | -- | -- |
 | [OH_AudioCapturer](capi-ohaudio-oh-audiocapturerstruct.md)* capturer | [in] Pointer to the audio capturer created by {@link OH_AudioStreamBuilder_GenerateCapturer}. |
-| [OH_AudioNoiseReductionMode](capi-native-audio-common-h.md#oh_audionoisereductionmode)* noiseReductionMode | [out] Pointer to get the input noise reduction mode, the default value is[AUDIO_NOISE_REDUCTION_MODE_FIDELITY](capi-native-audio-common-h.md#oh_audionoisereductionmode). |
+| OH_AudioNoiseReductionMode* noiseReductionMode | [out] Pointer to get the input noise reduction mode, the default value is[AUDIO_NOISE_REDUCTION_MODE_FIDELITY](capi-native-audio-common-h.md#oh_audionoisereductionmode). |
 
 **Returns**:
 
@@ -781,7 +781,7 @@ Gets all the supported noise reduction modes for current device platform.Current
 | Parameter | Description |
 | -- | -- |
 | [OH_AudioCapturer](capi-ohaudio-oh-audiocapturerstruct.md)* capturer | [in] Pointer to the audio capturer created by {@link OH_AudioStreamBuilder_GenerateCapturer}. |
-| [OH_AudioNoiseReductionMode](capi-native-audio-common-h.md#oh_audionoisereductionmode)* noiseReductionModeArray | [out] Pointer to a user-allocated array to get the supported noise reductionmodes, at least [AUDIO_NOISE_REDUCTION_MODE_FIDELITY](capi-native-audio-common-h.md#oh_audionoisereductionmode) is supported. |
+| OH_AudioNoiseReductionMode* noiseReductionModeArray | [out] Pointer to a user-allocated array to get the supported noise reductionmodes, at least [AUDIO_NOISE_REDUCTION_MODE_FIDELITY](capi-native-audio-common-h.md#oh_audionoisereductionmode) is supported. |
 | uint32_t inModeArraySize | [in] The allocated size of the 'noiseReductionModeArray' input parameter, it isrecommanded to allocate a larger size, such as 20, to adapt the new modes in the future. |
 | uint32_t *outModeArraySize | [out] Pointer to get the actual modes size. When the supported modes size is largerthan 'inModeArraySize', only part of the modes will be filled into 'noiseReductionModeArray', andthe 'outModeArraySize' will be equal to 'inModeArraySize'. |
 

@@ -18,8 +18,7 @@ import { systemManager } from '@kit.MDMKit';
 firstReceivedTime: number
 ```
 
-Time when the system update package is received for the first time.
-Unit: Seconds, The value must be an integer greater than or equal to 0.
+Time when the system update package is received for the first time. Unit: Seconds, The value must be an integer greater than or equal to 0.
 
 **Type:** number
 

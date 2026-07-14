@@ -16,7 +16,7 @@
 | --- | --- |
 | [ArcSwiperInterface](arkts-arkui-arcswiperinterface-i.md) | Provide an interface for ArcSwiper. |
 | [SwiperContentAnimatedTransition](arkts-arkui-swipercontentanimatedtransition-i.md) | ArcSwiper自定义切换动画相关信息。 |
-| [SwiperContentTransitionProxy](arkts-arkui-swipercontenttransitionproxy-i.md) | ArcSwiper自定义切换动画执行过程中，返回给开发者的proxy对象。开发者可通过该对象获取自定义动画视窗内的页面信息，同时，也可以通过调用该对象的finishTransition接口通知ArcSwiper组件页面自定义动画已结束。 |
+| [SwiperContentTransitionProxy](arkts-arkui-swipercontenttransitionproxy-i.md) | ArcSwiper自定义切换动画执行过程中，返回给开发者的proxy对象。开发者可通过该对象获取自定义动画视窗内的页面信息，同时，也可以通过调用该对象的finishTransition接口通知ArcSwiper组件页面自定义动画已结 束。 |
 
 ### 枚举
 

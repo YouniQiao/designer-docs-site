@@ -1,7 +1,6 @@
 # BreakpointOptions
 
-Defines the breakpoint configuration options for container dimension analysis.
-Specifies threshold values that trigger different layout behaviors based on container size.
+Defines the breakpoint configuration options for container dimension analysis. Specifies threshold values that trigger different layout behaviors based on container size.
 
 **Since:** 26.0.0
 
@@ -19,8 +18,7 @@ import { BreakpointOptions, ContainerReader, ContainerReaderAttribute } from '@k
 height?: Array<number>
 ```
 
-Optional array of height breakpoint values in vp units.
-Defines the height thresholds for container height analysis.
+Optional array of height breakpoint values in vp units. Defines the height thresholds for container height analysis.
 
 **Type:** Array<number>
 
@@ -40,8 +38,7 @@ Defines the height thresholds for container height analysis.
 width?: Array<number>
 ```
 
-Optional array of width breakpoint values in vp units.
-Defines the width thresholds for container width analysis.
+Optional array of width breakpoint values in vp units. Defines the width thresholds for container width analysis.
 
 **Type:** Array<number>
 

@@ -18,8 +18,7 @@ import { Binding, ComponentReuse, CustomComponentLifecycleState, ComponentInacti
 static addMonitor(target: object, path: string | string[], monitorCallback: MonitorCallback, options?: MonitorOptions): void
 ```
 
-Dynamically adds a listener to the state variable of state management V2. For details, see
-[addMonitor and clearMonitor APIs: Dynamically Adding and Removing Listeners](../../../../ui/state-management/arkts-new-addMonitor-clearMonitor.md).
+Dynamically adds a listener to the state variable of state management V2. For details, see [addMonitor and clearMonitor APIs: Dynamically Adding and Removing Listeners](../../../../ui/state-management/arkts-new-addMonitor-clearMonitor.md).
 
 **Since:** 20
 
@@ -52,11 +51,7 @@ Dynamically adds a listener to the state variable of state management V2. For de
 static applySync<T>(task: TaskCallback): T
 ```
 
-Synchronously updates a specified state variable. This API receives a closure function and updates only the
-internal modifications, including the updates of [@Computed](../../../../ui/state-management/arkts-new-computed.md)
-and [@Monitor](../../../../ui/state-management/arkts-new-monitor.md) decorators, and re-rendering of the UI nodes.
-For details, see
-[applySync/flushUpdates/flushUIUpdates APIs: Synchronous Update](../../../../ui/state-management/arkts-new-applySync-flushUpdates-flushUIUpdates.md).
+Synchronously updates a specified state variable. This API receives a closure function and updates only the internal modifications, including the updates of [@Computed](../../../../ui/state-management/arkts-new-computed.md) and [@Monitor](../../../../ui/state-management/arkts-new-monitor.md) decorators, and re-rendering of the UI nodes. For details, see [applySync/flushUpdates/flushUIUpdates APIs: Synchronous Update](../../../../ui/state-management/arkts-new-applySync-flushUpdates-flushUIUpdates.md).
 
 **Since:** 22
 
@@ -137,8 +132,7 @@ struct Index {
 static canBeObserved<T extends object>(source: T): ObservedResult
 ```
 
-Determines whether a data object can be observed and returns the observation result. For details, see
-[canBeObserved API: Determining Whether an Object Can Be Observed](../../../../ui/state-management/arkts-new-canBeObserved.md).
+Determines whether a data object can be observed and returns the observation result. For details, see [canBeObserved API: Determining Whether an Object Can Be Observed](../../../../ui/state-management/arkts-new-canBeObserved.md).
 
 **Since:** 23
 
@@ -209,8 +203,8 @@ class Student {
         // ID of the component associated with the decorator.
         const eleId = elementInfo.elementId;
         hilog.info(0x00, TAG, `elementId: ${eleId}`);
-      })
-    })
+      });
+    });
   }
 }
 
@@ -278,9 +272,7 @@ export struct School {
 static clearMonitor(target: object, path: string | string[], monitorCallback?: MonitorCallback) : void
 ```
 
-Deletes the listener added to the state variable of the state management V2 by calling the
-[addMonitor](arkts-arkui-uiutils-c.md#addmonitor-1) API. For details, see
-[addMonitor and clearMonitor APIs: Dynamically Adding and Removing Listeners](../../../../ui/state-management/arkts-new-addMonitor-clearMonitor.md).
+Deletes the listener added to the state variable of the state management V2 by calling the [addMonitor](arkts-arkui-uiutils-c.md#addmonitor-1) API. For details, see [addMonitor and clearMonitor APIs: Dynamically Adding and Removing Listeners](../../../../ui/state-management/arkts-new-addMonitor-clearMonitor.md).
 
 **Since:** 20
 
@@ -312,9 +304,7 @@ Deletes the listener added to the state variable of the state management V2 by c
 static enableV2Compatibility<T extends object>(source: T): T
 ```
 
-Enables V1 state variables to be observable in @ComponentV2. This API is primarily used in scenarios where V1 and V
-2 state management are mixed. For details, see
-[Mixed Use of State Management V1 and V2 (API Version 19 and Later)](../../../../ui/state-management/arkts-v1-v2-mixusage.md).
+Enables V1 state variables to be observable in @ComponentV2. This API is primarily used in scenarios where V1 and V 2 state management are mixed. For details, see [Mixed Use of State Management V1 and V2 (API Version 19 and Later)](../../../../ui/state-management/arkts-v1-v2-mixusage.md).
 
 **Since:** 19
 
@@ -384,10 +374,7 @@ struct CompV2 {
 static flushUIUpdates(): void
 ```
 
-Processes all state variable modifications before this API call and synchronizes the
-[dirty](../../../../ui/state-management/arkts-state-management-introduce.md#triggering-updates) UI nodes. However, it
-does not synchronize the execution of @Computed and @Monitor decorators. For details, see
-[applySync/flushUpdates/flushUIUpdates APIs: Synchronous Update](../../../../ui/state-management/arkts-new-applySync-flushUpdates-flushUIUpdates.md).
+Processes all state variable modifications before this API call and synchronizes the [dirty](../../../../ui/state-management/arkts-state-management-introduce.md#triggering-updates) UI nodes. However, it does not synchronize the execution of @Computed and @Monitor decorators. For details, see [applySync/flushUpdates/flushUIUpdates APIs: Synchronous Update](../../../../ui/state-management/arkts-new-applySync-flushUpdates-flushUIUpdates.md).
 
 **Since:** 22
 
@@ -425,6 +412,7 @@ struct Index {
           this.w = 100;
           this.h = 100;
           this.message = 'Hello World';
+          // Immediately process the preceding state variable modifications and synchronize the dirty UI nodes.
           UIUtils.flushUIUpdates();
           // The size of the column box gradually changes from (100 × 100) to (200 × 200) within 1s, and the text in the box changes to "Hello ArkUI".
           this.getUIContext().animateTo({
@@ -456,9 +444,7 @@ struct Index {
 static flushUpdates(): void
 ```
 
-Synchronously updates all state variable modifications before this API call, including the updates
-of @Computed and @Monitor decorators, and re-rendering of the UI nodes. For details, see
-[applySync/flushUpdates/flushUIUpdates APIs: Synchronous Update](../../../../ui/state-management/arkts-new-applySync-flushUpdates-flushUIUpdates.md).
+Synchronously updates all state variable modifications before this API call, including the updates of @Computed and @Monitor decorators, and re-rendering of the UI nodes. For details, see [applySync/flushUpdates/flushUIUpdates APIs: Synchronous Update](../../../../ui/state-management/arkts-new-applySync-flushUpdates-flushUIUpdates.md).
 
 **Since:** 22
 
@@ -527,10 +513,7 @@ struct Index {
 static getCustomComponentContext<T extends BaseCustomComponent>(customComponent: T): CustomComponentContext
 ```
 
-Obtains [CustomComponentContext](arkts-arkui-customcomponentcontext-i.md) of the given @Component(V1) or @ComponentV2.
-**CustomComponentContext** can be used to access the reuse pool of the component. For details about the reuse pool,
-see
-[Global Reuse: Centralized Component Recycling and Reuse](../../../../ui/state-management/arkts-global-reuse-pool.md).
+Obtains [CustomComponentContext](arkts-arkui-customcomponentcontext-i.md) of the given @Component(V1) or @ComponentV2. **CustomComponentContext** can be used to access the reuse pool of the component. For details about the reuse pool, see [Global Reuse: Centralized Component Recycling and Reuse](../../../../ui/state-management/arkts-global-reuse-pool.md).
 
 **Since:** 26.0.0
 
@@ -671,8 +654,7 @@ struct Index {
 static getTarget<T extends object>(source: T): T
 ```
 
-Obtains the original object from a proxy object wrapped by the state management framework. For details, see
-[getTarget API: Obtaining Original Objects](../../../../ui/state-management/arkts-new-getTarget.md).
+Obtains the original object from a proxy object wrapped by the state management framework. For details, see [getTarget API: Obtaining Original Objects](../../../../ui/state-management/arkts-new-getTarget.md).
 
 **Since:** 12
 
@@ -727,8 +709,7 @@ struct Index {
 static makeBinding<T>(getter: GetterCallback<T>): Binding<T>
 ```
 
-Creates a read-only one-way data binding instance, which is used to construct the arguments of the **Binding** type
-in the [\@Builder](../../../../ui/state-management/arkts-builder.md) function.
+Creates a read-only one-way data binding instance, which is used to construct the arguments of the **Binding** type in the [\@Builder](../../../../ui/state-management/arkts-builder.md) function.
 
 **Since:** 20
 
@@ -753,7 +734,7 @@ in the [\@Builder](../../../../ui/state-management/arkts-builder.md) function.
 **Example**
 
 ```TypeScript
-import { Binding, MutableBinding, UIUtils } from '@kit.ArkUI';
+import { Binding, UIUtils } from '@kit.ArkUI';
 
 @Builder
 function CustomButton(num1: Binding<number>) {
@@ -801,8 +782,7 @@ struct CompV2 {
 static makeBinding<T>(getter: GetterCallback<T>, setter: SetterCallback<T>): MutableBinding<T>
 ```
 
-Creates a mutable two-way data binding instance, which is used to construct the argument of the **MutableBinding**
-type in the \@Builder function.
+Creates a mutable two-way data binding instance, which is used to construct the argument of the **MutableBinding** type in the \@Builder function.
 
 **Since:** 20
 
@@ -880,8 +860,7 @@ struct CompV2 {
 static makeObserved<T extends object>(source: T): T
 ```
 
-Converts ordinary unobservable data into observable data. For details, see
-[makeObserved API: Changing Unobservable Data to Observable Data](../../../../ui/state-management/arkts-new-makeObserved.md).
+Converts ordinary unobservable data into observable data. For details, see [makeObserved API: Changing Unobservable Data to Observable Data](../../../../ui/state-management/arkts-new-makeObserved.md).
 
 **Since:** 12
 
@@ -915,6 +894,7 @@ class NonObservedClass {
 @Entry
 @ComponentV2
 struct Index {
+  // Use makeObserved to make the NonObservedClass instance observable.
   observedClass: NonObservedClass = UIUtils.makeObserved(new NonObservedClass());
   nonObservedClass: NonObservedClass = new NonObservedClass();
 
@@ -940,12 +920,7 @@ struct Index {
 static makeV1Observed<T extends object>(source: T): T
 ```
 
-Wraps an unobservable object into an object that is observable by V1 state management. This API is equivalent to @
-Observed and can be used to initialize @ObjectLink.
-
-This API can be used together with [enableV2Compatibility](arkts-arkui-uiutils-c.md#enablev2compatibility-1) in scenarios where
-state management V1 and V2 are used together. For details, see
-[Mixed Use of State Management V1 and V2 (API Version 19 and Later)](../../../../ui/state-management/arkts-v1-v2-mixusage.md).
+Wraps an unobservable object into an object that is observable by V1 state management. This API is equivalent to @ Observed and can be used to initialize @ObjectLink. This API can be used together with [enableV2Compatibility](arkts-arkui-uiutils-c.md#enablev2compatibility-1) in scenarios where state management V1 and V2 are used together. For details, see [Mixed Use of State Management V1 and V2 (API Version 19 and Later)](../../../../ui/state-management/arkts-v1-v2-mixusage.md).
 
 **Since:** 19
 
@@ -988,6 +963,7 @@ class Inner {
 @Entry
 @Component
 struct Index {
+  // Use makeV1Observed to wrap the Inner instance as a V1 observable object and pass it to the Outer constructor.
   @State outer: Outer = new Outer(UIUtils.makeV1Observed(new Inner()));
 
   build() {

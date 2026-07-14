@@ -1,16 +1,6 @@
 # ImagePacker
 
-ImagePacker类，用于图片压缩和编码。
-
-在调用ImagePacker的方法前，需要先通过[image.createImagePacker](arkts-image-createimagepacker-f.md#createimagepacker-1)构建一个ImagePacker实例。
-
-编码期间，请避免修改或释放作为输入的ImageSource/PixelMap/Picture对象，以免出现crash或其他未定义行为。
-
-由于图片占用内存较大，所以当ImagePacker实例使用完成后，应主动调用[release](arkts-image-imagepacker-i.md#release-1)方法及时
-释放内存。释放时应确保该实例的所有异步方法均执行完成，且后续不再使用该实例。
-
-当前支持的格式有：JPEG、WebP、PNG、HEIC<sup>12+</sup>、GIF<sup>18+</sup>、从API版本26.0.0开始支持TIFF格式（不同硬件设备支持情况不同，可通过ImagePacker的
-supportedFormats属性查看）。
+ImagePacker类，用于图片压缩和编码。 在调用ImagePacker的方法前，需要先通过[image.createImagePacker](arkts-image-createimagepacker-f.md#createimagepacker-1)构建一个ImagePacker实例。 编码期间，请避免修改或释放作为输入的ImageSource/PixelMap/Picture对象，以免出现crash或其他未定义行为。 由于图片占用内存较大，所以当ImagePacker实例使用完成后，应主动调用[release](arkts-image-imagepacker-i.md#release-1)方法及时 释放内存。释放时应确保该实例的所有异步方法均执行完成，且后续不再使用该实例。 当前支持的格式有：JPEG、WebP、PNG、HEIC<sup>12+</sup>、GIF<sup>18+</sup>、从API版本26.0.0开始支持TIFF格式（不同硬件设备支持情况不同，可通过ImagePacker的 supportedFormats属性查看）。
 
 **起始版本：** 6
 
@@ -132,11 +122,7 @@ packToData(source: ImageSource, options: PackingOption): Promise<ArrayBuffer>
 packToData(source: PixelMap, options: PackingOption): Promise<ArrayBuffer>
 ```
 
-图片压缩或重新编码。使用Promise异步回调。
-
-> **注意：**
->
-> 接口如果返回401错误码，表明参数异常，可能是PixelMap对象被提前释放了。需要调用方排查，在该方法调用结束后再释放PixelMap对象。
+图片压缩或重新编码。使用Promise异步回调。 > **注意：** > > 接口如果返回401错误码，表明参数异常，可能是PixelMap对象被提前释放了。需要调用方排查，在该方法调用结束后再释放PixelMap对象。
 
 **起始版本：** 13
 
@@ -284,11 +270,7 @@ packToFile(source: ImageSource, fd: number, options: PackingOption): Promise<voi
 packToFile(source: PixelMap, fd: number, options: PackingOption, callback: AsyncCallback<void>): void
 ```
 
-指定编码参数，将PixelMap直接编码进文件。使用callback异步回调。
-
-> **注意：**
->
-> 接口如果返回62980115错误码，表明参数异常，可能是PixelMap对象被提前释放了。需要调用方排查，在该方法调用结束后再释放PixelMap对象。
+指定编码参数，将PixelMap直接编码进文件。使用callback异步回调。 > **注意：** > > 接口如果返回62980115错误码，表明参数异常，可能是PixelMap对象被提前释放了。需要调用方排查，在该方法调用结束后再释放PixelMap对象。
 
 **起始版本：** 11
 
@@ -323,11 +305,7 @@ packToFile(source: PixelMap, fd: number, options: PackingOption, callback: Async
 packToFile(source: PixelMap, fd: number, options: PackingOption): Promise<void>
 ```
 
-指定编码参数，将PixelMap直接编码进文件。使用Promise异步回调。
-
-> **注意：**
->
-> 接口如果返回62980115错误码，表明参数异常，可能是PixelMap对象被提前释放了。需要调用方排查，在该方法调用结束后再释放PixelMap对象。
+指定编码参数，将PixelMap直接编码进文件。使用Promise异步回调。 > **注意：** > > 接口如果返回62980115错误码，表明参数异常，可能是PixelMap对象被提前释放了。需要调用方排查，在该方法调用结束后再释放PixelMap对象。
 
 **起始版本：** 11
 
@@ -433,11 +411,7 @@ packToFileFromPixelmapSequence(pixelmapSequence: Array<PixelMap>, fd: number, op
 packing(source: ImageSource, option: PackingOption, callback: AsyncCallback<ArrayBuffer>): void
 ```
 
-图片压缩或重新编码。使用callback异步回调。
-
-> **说明：**
->
-> [packToData](arkts-image-imagepacker-i.md#packtodata-1)代替。
+图片压缩或重新编码。使用callback异步回调。 > **说明：** > > [packToData](arkts-image-imagepacker-i.md#packtodata-1)代替。
 
 **起始版本：** 6
 
@@ -463,11 +437,7 @@ packing(source: ImageSource, option: PackingOption, callback: AsyncCallback<Arra
 packing(source: ImageSource, option: PackingOption): Promise<ArrayBuffer>
 ```
 
-图片压缩或重新编码。使用Promise异步回调。
-
-> **说明：**
->
-> [packToData](arkts-image-imagepacker-i.md#packtodata-1)代替。
+图片压缩或重新编码。使用Promise异步回调。 > **说明：** > > [packToData](arkts-image-imagepacker-i.md#packtodata-1)代替。
 
 **起始版本：** 6
 
@@ -498,14 +468,7 @@ packing(source: ImageSource, option: PackingOption): Promise<ArrayBuffer>
 packing(source: PixelMap, option: PackingOption, callback: AsyncCallback<ArrayBuffer>): void
 ```
 
-图片压缩或重新编码。使用callback异步回调。
-
-> **说明：**
->
-> [packToData](arkts-image-imagepacker-i.md#packtodata-1)代替。
-> > **注意：**
->
-> 接口如果返回"PixelMap mismatch"，表明参数异常，可能是PixelMap对象被提前释放了。需要调用方排查，在该方法调用结束后再释放PixelMap对象。
+图片压缩或重新编码。使用callback异步回调。 > **说明：** > > [packToData](arkts-image-imagepacker-i.md#packtodata-1)代替。 > > **注意：** > > 接口如果返回"PixelMap mismatch"，表明参数异常，可能是PixelMap对象被提前释放了。需要调用方排查，在该方法调用结束后再释放PixelMap对象。
 
 **起始版本：** 8
 
@@ -531,14 +494,7 @@ packing(source: PixelMap, option: PackingOption, callback: AsyncCallback<ArrayBu
 packing(source: PixelMap, option: PackingOption): Promise<ArrayBuffer>
 ```
 
-图片压缩或重新编码。使用Promise异步回调。
-
-> **说明：**
->
-> [packToData](arkts-image-imagepacker-i.md#packtodata-1)代替。
-> > **注意：**
->
-> 接口如果返回"PixelMap mismatch"，表明参数异常，可能是PixelMap对象被提前释放了。需要调用方排查，在该方法调用结束后再释放PixelMap对象。
+图片压缩或重新编码。使用Promise异步回调。 > **说明：** > > [packToData](arkts-image-imagepacker-i.md#packtodata-1)代替。 > > **注意：** > > 接口如果返回"PixelMap mismatch"，表明参数异常，可能是PixelMap对象被提前释放了。需要调用方排查，在该方法调用结束后再释放PixelMap对象。
 
 **起始版本：** 8
 
@@ -601,11 +557,7 @@ packing(picture: Picture, options: PackingOption): Promise<ArrayBuffer>
 release(callback: AsyncCallback<void>): void
 ```
 
-释放图片编码实例。使用callback异步回调。
-
-由于图片占用内存较大，所以当ImagePacker实例使用完成后，应主动调用该方法，及时释放内存。
-
-释放时应确保该实例的所有异步方法均执行完成，且后续不再使用该实例。
+释放图片编码实例。使用callback异步回调。 由于图片占用内存较大，所以当ImagePacker实例使用完成后，应主动调用该方法，及时释放内存。 释放时应确保该实例的所有异步方法均执行完成，且后续不再使用该实例。
 
 **起始版本：** 6
 
@@ -623,11 +575,7 @@ release(callback: AsyncCallback<void>): void
 release(): Promise<void>
 ```
 
-释放图片编码实例。使用Promise异步回调。
-
-由于图片占用内存较大，所以当ImagePacker实例使用完成后，应主动调用该方法，及时释放内存。
-
-释放时应确保该实例的所有异步方法均执行完成，且后续不再使用该实例。
+释放图片编码实例。使用Promise异步回调。 由于图片占用内存较大，所以当ImagePacker实例使用完成后，应主动调用该方法，及时释放内存。 释放时应确保该实例的所有异步方法均执行完成，且后续不再使用该实例。
 
 **起始版本：** 6
 

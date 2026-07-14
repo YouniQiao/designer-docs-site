@@ -20,8 +20,7 @@ import { selectionManager } from '@kit.BasicServicesKit';
 moveToGlobalDisplay(x: number, y: number): Promise<void>
 ```
 
-Moves the word selection panel to the specified coordinates on the screen. This API uses a promise to return the
-result.
+Moves the word selection panel to the specified coordinates on the screen. This API uses a promise to return the result.
 
 **Since:** 24
 

@@ -12,8 +12,7 @@ Provides preferred playback settings for player.
 enableSuperResolution?: boolean
 ```
 
-Enable super-resolution feature. default is false.
-Must enable super-resolution feature before calling {@link #setSuperResolution} and {@link #setVideoWindowSize}.
+Enable super-resolution feature. default is false. Must enable super-resolution feature before calling {@link #setSuperResolution} and {@link #setVideoWindowSize}.
 
 **类型：** boolean
 
@@ -29,8 +28,7 @@ Must enable super-resolution feature before calling {@link #setSuperResolution} 
 keepDecodingOnMute?: boolean
 ```
 
-Indicates whether to keep the decoder working when closing the media,
-which is used to facilitate quick opening of the media. Currently only supports video
+Indicates whether to keep the decoder working when closing the media, which is used to facilitate quick opening of the media. Currently only supports video
 
 **类型：** boolean
 
@@ -76,10 +74,7 @@ Audio language.
 preferredBufferDuration?: number
 ```
 
-Chooses a preferred buffer duration.
-
-<p>The preferred buffer duration in the playback policy, is used to set the buffer size. For details,
-see [Online Video Frame Freezing Optimization Practice](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-online-video-playback-lags-practice).</p>
+Chooses a preferred buffer duration. <p>The preferred buffer duration in the playback policy, is used to set the buffer size. For details, see [Online Video Frame Freezing Optimization Practice](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-online-video-playback-lags-practice).</p>
 
 **类型：** number
 
@@ -191,8 +186,7 @@ Show first frame on prepare.
 thresholdForAutoQuickPlay?: number
 ```
 
-set max buffering threshold for liveStreaming or avplayer while change the speed.
-It is recommended that the value be 2 seconds greater than the starting waterline.
+set max buffering threshold for liveStreaming or avplayer while change the speed. It is recommended that the value be 2 seconds greater than the starting waterline.
 
 **类型：** number
 

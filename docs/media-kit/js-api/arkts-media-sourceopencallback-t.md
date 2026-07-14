@@ -4,12 +4,7 @@
 type SourceOpenCallback = (request: MediaSourceLoadingRequest) => number
 ```
 
-This callback function is implemented by applications to handle resource open requests and return a unique handle
-for the opened resource.
-
-> **NOTE**
->
-> The client must return the handle immediately after processing the request.
+This callback function is implemented by applications to handle resource open requests and return a unique handle for the opened resource. > **NOTE** > > The client must return the handle immediately after processing the request.
 
 **Since:** 18
 

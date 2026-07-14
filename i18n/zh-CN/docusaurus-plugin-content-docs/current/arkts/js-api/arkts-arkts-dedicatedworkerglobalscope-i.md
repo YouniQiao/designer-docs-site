@@ -179,9 +179,7 @@ workerPort.onmessage = (): void => {
 onmessage?: (this: DedicatedWorkerGlobalScope, ev: MessageEvent) => void
 ```
 
-onmessage属性用于指定当Worker线程收到来自其宿主线程通过
-postMessage接口发送的消息时被调用的事件处理程序，
-该事件处理程序在Worker线程中执行。
+onmessage属性用于指定当Worker线程收到来自其宿主线程通过 postMessage接口发送的消息时被调用的事件处理程序， 该事件处理程序在Worker线程中执行。
 
 **类型：** (this: DedicatedWorkerGlobalScope, ev: MessageEvent) => void
 
@@ -199,8 +197,7 @@ postMessage接口发送的消息时被调用的事件处理程序，
 onmessageerror?: (this: DedicatedWorkerGlobalScope, ev: MessageEvent) => void
 ```
 
-onmessage属性用于指定当Worker线程收到一条无法被反序列化的消息时
-被调用的事件处理程序，该事件处理程序在Worker线程中执行。
+onmessage属性用于指定当Worker线程收到一条无法被反序列化的消息时 被调用的事件处理程序，该事件处理程序在Worker线程中执行。
 
 **类型：** (this: DedicatedWorkerGlobalScope, ev: MessageEvent) => void
 

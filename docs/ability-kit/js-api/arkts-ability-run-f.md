@@ -12,13 +12,7 @@ import { startupManager } from '@kit.AbilityKit';
 function run(startupTasks: Array<string>, config?: StartupConfig): Promise<void>
 ```
 
-Runs startup tasks or loads .so files.
-
-> **NOTE**
->
-> This API cannot be used to run startup tasks defined in a feature-type HAP. To run those tasks, use
-> [startupManager.run](arkts-ability-run-f.md#run-2)
-> .
+Runs startup tasks or loads .so files. > **NOTE** > > This API cannot be used to run startup tasks defined in a feature-type HAP. To run those tasks, use > [startupManager.run](arkts-ability-run-f.md#run-2) > .
 
 **Since:** 12
 
@@ -87,9 +81,7 @@ export default class EntryAbility extends UIAbility {
 function run(startupTasks: Array<string>, context: common.AbilityStageContext, config: StartupConfig): Promise<void>
 ```
 
-Runs startup tasks or loads .so files. You can specify
-[AbilityStageContext](arkts-ability-abilitystagecontext-c.md) for loading startup tasks. This
-API uses a promise to return the result.
+Runs startup tasks or loads .so files. You can specify [AbilityStageContext](arkts-ability-abilitystagecontext-c.md) for loading startup tasks. This API uses a promise to return the result.
 
 **Since:** 20
 

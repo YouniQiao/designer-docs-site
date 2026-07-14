@@ -12,8 +12,7 @@ import { notificationSubscribe } from '@kit.NotificationKit';
 function distributeOperation(hashcode: string, operationInfo?: OperationInfo): Promise<void>
 ```
 
-Triggers a notification for cross-device operations, such as tap-to-redirect and quick reply. This API uses a
-promise to return the result.
+Triggers a notification for cross-device operations, such as tap-to-redirect and quick reply. This API uses a promise to return the result.
 
 **Since:** 18
 

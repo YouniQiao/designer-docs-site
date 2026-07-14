@@ -6,12 +6,7 @@
 function startNativeChildProcess(entryPoint: string, args: ChildProcessArgs, options?: ChildProcessOptions): Promise<number>
 ```
 
-启动[Native子进程](../../../../application-models/ability-terminology.md#native子进程)。使用Promise异步回调。
-该接口在Tablet、PC/2in1中可正常调用，在其他设备类型中返回801错误码。
-
-> **说明：**
->
-> 调用该接口创建的子进程不会继承父进程资源，子进程创建成功会返回子进程pid，然后加载参数中指定的动态链接库文件并执行子进程的入口函数，入口函数执行完后子进程会自动销毁。调用该接口的进程销毁后，所创建的子进程也会一并销毁。
+启动[Native子进程](../../../../application-models/ability-terminology.md#native子进程)。使用Promise异步回调。 该接口在Tablet、PC/2in1中可正常调用，在其他设备类型中返回801错误码。 > **说明：** > > 调用该接口创建的子进程不会继承父进程资源，子进程创建成功会返回子进程pid，然后加载参数中指定的动态链接库文件并执行子进程的入口函数，入口函数执行完后子进程会自动销毁。调用该接口的进程销毁后，所创建的子进程也会一并销毁。
 
 **起始版本：** 13
 
@@ -113,7 +108,7 @@ struct Index {
                 .catch((err: BusinessError) => {
                   console.error(`startChildProcess business error, errorCode: ${err.code}, errorMsg:${err.message}`);
                 })
-            } catch (err) {
+            } catch (err: BusinessError) {
               console.error(`startChildProcess error, errorCode: ${err.code}, errorMsg:${err.message}`);
             }
           });

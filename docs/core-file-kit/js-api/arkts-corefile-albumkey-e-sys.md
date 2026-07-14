@@ -1,6 +1,6 @@
 # AlbumKey (System API)
 
-Describes Album TYPE predicate
+Defines the key album information.
 
 **Since:** 9
 
@@ -18,7 +18,7 @@ Describes Album TYPE predicate
 URI
 ```
 
-Album uri
+URI of the album.
 
 **Since:** 9
 
@@ -36,7 +36,7 @@ Album uri
 FILE_TYPE
 ```
 
-File type of the Album
+Type of the file.
 
 **Since:** 9
 
@@ -54,7 +54,7 @@ File type of the Album
 ALBUM_NAME
 ```
 
-Album name
+Name of the album.
 
 **Since:** 9
 
@@ -72,7 +72,7 @@ Album name
 DATE_ADDED
 ```
 
-Date of the Album creation
+Date when the file was added. The value is the number of seconds elapsed since the Epoch time (00:00:00 UTC on January 1, 1970).
 
 **Since:** 9
 
@@ -90,7 +90,7 @@ Date of the Album creation
 DATE_MODIFIED
 ```
 
-Modify date of the Album
+Date when the file content (not the file name) was last modified. The value is the number of seconds elapsed since the Epoch time (00:00:00 UTC on January 1, 1970).
 
 **Since:** 9
 

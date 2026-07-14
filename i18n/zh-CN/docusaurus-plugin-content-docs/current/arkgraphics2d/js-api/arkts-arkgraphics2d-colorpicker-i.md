@@ -1,7 +1,6 @@
 # ColorPicker
 
-取色类，用于从一张图像数据中获取它的主要颜色。在调用ColorPicker的方法前，需要先通过
-[createColorPicker](arkts-arkgraphics2d-createcolorpicker-f.md#createcolorpicker-1)创建一个ColorPicker实例。
+取色类，用于从一张图像数据中获取它的主要颜色。在调用ColorPicker的方法前，需要先通过 [createColorPicker](arkts-arkgraphics2d-createcolorpicker-f.md#createcolorpicker-1)创建一个ColorPicker实例。
 
 **起始版本：** 9
 
@@ -32,10 +31,12 @@ getAverageColor(): Color
 **示例：**
 
 ```TypeScript
-import { image } from "@kit.ImageKit";
-import { effectKit } from "@kit.ArkGraphics2D";
+import { image } from '@kit.ImageKit';
+import { effectKit } from '@kit.ArkGraphics2D';
 
-const color = new ArrayBuffer(96);
+// 创建用于图像效果的buffer
+const colorBuffer = new ArrayBuffer(96);
+// 设置图像初始化选项
 let opts: image.InitializationOptions = {
   editable: true,
   pixelFormat: 3,
@@ -43,18 +44,21 @@ let opts: image.InitializationOptions = {
     height: 4,
     width: 6
   }
-}
-image.createPixelMap(color, opts).then((pixelMap) => {
+};
+// 创建PixelMap实例
+image.createPixelMap(colorBuffer, opts).then((pixelMap) => {
+  // 创建ColorPicker实例
   effectKit.createColorPicker(pixelMap, (error, colorPicker) => {
     if (error) {
-      console.error('Failed to create color picker.');
+      console.error(`Failed to create color picker. Code: ${error.code}, message: ${error.message}`);
     } else {
       console.info('Succeeded in creating color picker.');
-      let color = colorPicker.getAverageColor();
-      console.info('get average color =' + color);
+      // 获取图像平均颜色
+      let averageColor = colorPicker.getAverageColor();
+      console.info('get average color =' + averageColor);
     }
-  })
-})
+  });
+});
 
 ```
 
@@ -83,10 +87,12 @@ getHighestSaturationColor(): Color
 **示例：**
 
 ```TypeScript
-import { image } from "@kit.ImageKit";
-import { effectKit } from "@kit.ArkGraphics2D";
+import { image } from '@kit.ImageKit';
+import { effectKit } from '@kit.ArkGraphics2D';
 
-const color = new ArrayBuffer(96);
+// 创建用于图像效果的buffer
+const colorBuffer = new ArrayBuffer(96);
+// 设置图像初始化选项
 let opts: image.InitializationOptions = {
   editable: true,
   pixelFormat: 3,
@@ -94,18 +100,21 @@ let opts: image.InitializationOptions = {
     height: 4,
     width: 6
   }
-}
-image.createPixelMap(color, opts).then((pixelMap) => {
+};
+// 创建PixelMap实例
+image.createPixelMap(colorBuffer, opts).then((pixelMap) => {
+  // 创建ColorPicker实例
   effectKit.createColorPicker(pixelMap, (error, colorPicker) => {
     if (error) {
-      console.error('Failed to create color picker.');
+      console.error(`Failed to create color picker. Code: ${error.code}, message: ${error.message}`);
     } else {
       console.info('Succeeded in creating color picker.');
-      let color = colorPicker.getHighestSaturationColor();
-      console.info('get highest saturation color =' + color);
+      // 获取图像饱和度最高的颜色
+      let saturationColor = colorPicker.getHighestSaturationColor();
+      console.info('get highest saturation color =' + saturationColor);
     }
-  })
-})
+  });
+});
 
 ```
 
@@ -134,10 +143,12 @@ getLargestProportionColor(): Color
 **示例：**
 
 ```TypeScript
-import { image } from "@kit.ImageKit";
-import { effectKit } from "@kit.ArkGraphics2D";
+import { image } from '@kit.ImageKit';
+import { effectKit } from '@kit.ArkGraphics2D';
 
-const color = new ArrayBuffer(96);
+// 创建用于图像效果的buffer
+const colorBuffer = new ArrayBuffer(96);
+// 设置图像初始化选项
 let opts : image.InitializationOptions = {
   editable: true,
   pixelFormat: 3,
@@ -145,18 +156,21 @@ let opts : image.InitializationOptions = {
     height: 4,
     width: 6
   }
-}
-image.createPixelMap(color, opts).then((pixelMap) => {
+};
+// 创建PixelMap实例
+image.createPixelMap(colorBuffer, opts).then((pixelMap) => {
+  // 创建ColorPicker实例
   effectKit.createColorPicker(pixelMap, (error, colorPicker) => {
     if (error) {
-      console.error('Failed to create color picker.');
+      console.error(`Failed to create color picker. Code: ${error.code}, message: ${error.message}`);
     } else {
       console.info('Succeeded in creating color picker.');
-      let color = colorPicker.getLargestProportionColor();
-      console.info('get largest proportion color =' + color);
+      // 获取图像占比最多的颜色
+      let largestColor = colorPicker.getLargestProportionColor();
+      console.info('get largest proportion color =' + largestColor);
     }
-  })
-})
+  });
+});
 
 ```
 
@@ -185,10 +199,12 @@ getMainColor(): Promise<Color>
 **示例：**
 
 ```TypeScript
-import { image } from "@kit.ImageKit";
-import { effectKit } from "@kit.ArkGraphics2D";
+import { image } from '@kit.ImageKit';
+import { effectKit } from '@kit.ArkGraphics2D';
 
-const color = new ArrayBuffer(96);
+// 创建用于图像效果的buffer
+const colorBuffer = new ArrayBuffer(96);
+// 设置图像初始化选项
 let opts: image.InitializationOptions = {
   editable: true,
   pixelFormat: 3,
@@ -196,20 +212,23 @@ let opts: image.InitializationOptions = {
     height: 4,
     width: 6
   }
-}
-image.createPixelMap(color, opts).then((pixelMap) => {
+};
+// 创建PixelMap实例
+image.createPixelMap(colorBuffer, opts).then((pixelMap) => {
+  // 创建ColorPicker实例
   effectKit.createColorPicker(pixelMap, (error, colorPicker) => {
     if (error) {
-      console.error('Failed to create color picker.');
-     } else {
-       console.info('Succeeded in creating color picker.');
-       colorPicker.getMainColor().then(color => {
+      console.error(`Failed to create color picker. Code: ${error.code}, message: ${error.message}`);
+    } else {
+      console.info('Succeeded in creating color picker.');
+      // 获取图像主色
+      colorPicker.getMainColor().then(mainColor => {
         console.info('Succeeded in getting main color.');
-         console.info(`color[ARGB]=${color.alpha},${color.red},${color.green},${color.blue}`);
-      })
+        console.info(`color[ARGB]=${mainColor.alpha},${mainColor.red},${mainColor.green},${mainColor.blue}`);
+      });
     }
-  })
-})
+  });
+});
 
 ```
 
@@ -238,10 +257,12 @@ getMainColorSync(): Color
 **示例：**
 
 ```TypeScript
-import { image } from "@kit.ImageKit";
-import { effectKit } from "@kit.ArkGraphics2D";
+import { image } from '@kit.ImageKit';
+import { effectKit } from '@kit.ArkGraphics2D';
 
-const color = new ArrayBuffer(96);
+// 创建用于图像效果的buffer
+const colorBuffer = new ArrayBuffer(96);
+// 设置图像初始化选项
 let opts : image.InitializationOptions = {
   editable: true,
   pixelFormat: 3,
@@ -249,18 +270,21 @@ let opts : image.InitializationOptions = {
     height: 4,
     width: 6
   }
-}
-image.createPixelMap(color, opts).then((pixelMap) => {
+};
+// 创建PixelMap实例
+image.createPixelMap(colorBuffer, opts).then((pixelMap) => {
+  // 创建ColorPicker实例
   effectKit.createColorPicker(pixelMap, (error, colorPicker) => {
     if (error) {
-      console.error('Failed to create color picker.');
+      console.error(`Failed to create color picker. Code: ${error.code}, message: ${error.message}`);
     } else {
       console.info('Succeeded in creating color picker.');
-      let color = colorPicker.getMainColorSync();
-      console.info('get main color =' + color);
+      // 同步获取图像主色
+      let mainColor = colorPicker.getMainColorSync();
+      console.info('get main color =' + mainColor);
     }
-  })
-})
+  });
+});
 
 ```
 
@@ -295,10 +319,12 @@ getTopProportionColors(colorCount: number): Array<Color | null>
 **示例：**
 
 ```TypeScript
-import { image } from "@kit.ImageKit";
-import { effectKit } from "@kit.ArkGraphics2D";
+import { image } from '@kit.ImageKit';
+import { effectKit } from '@kit.ArkGraphics2D';
 
-const color = new ArrayBuffer(96);
+// 创建用于图像效果的buffer
+const colorBuffer = new ArrayBuffer(96);
+// 设置图像初始化选项
 let opts : image.InitializationOptions = {
   editable: true,
   pixelFormat: 3,
@@ -306,22 +332,25 @@ let opts : image.InitializationOptions = {
     height: 4,
     width: 6
   }
-}
-image.createPixelMap(color, opts).then((pixelMap) => {
+};
+// 创建PixelMap实例
+image.createPixelMap(colorBuffer, opts).then((pixelMap) => {
+  // 创建ColorPicker实例
   effectKit.createColorPicker(pixelMap, (error, colorPicker) => {
     if (error) {
-      console.error('Failed to create color picker.');
+      console.error(`Failed to create color picker. Code: ${error.code}, message: ${error.message}`);
     } else {
       console.info('Succeeded in creating color picker.');
+      // 获取图像占比前2位的颜色
       let colors = colorPicker.getTopProportionColors(2);
-      for(let index = 0; index < colors.length; index++) {
+      for (let index = 0; index < colors.length; index++) {
         if (colors[index]) {
           console.info('get top proportion colors: index ' + index + ', color ' + colors[index]);
         }
       }
     }
-  })
-})
+  });
+});
 
 ```
 
@@ -356,10 +385,12 @@ isBlackOrWhiteOrGrayColor(color: number): boolean
 **示例：**
 
 ```TypeScript
-import { image } from "@kit.ImageKit";
-import { effectKit } from "@kit.ArkGraphics2D";
+import { image } from '@kit.ImageKit';
+import { effectKit } from '@kit.ArkGraphics2D';
 
-const color = new ArrayBuffer(96);
+// 创建用于图像效果的buffer
+const colorBuffer = new ArrayBuffer(96);
+// 设置图像初始化选项
 let opts: image.InitializationOptions = {
   editable: true,
   pixelFormat: 3,
@@ -367,18 +398,21 @@ let opts: image.InitializationOptions = {
     height: 4,
     width: 6
   }
-}
-image.createPixelMap(color, opts).then((pixelMap) => {
+};
+// 创建PixelMap实例
+image.createPixelMap(colorBuffer, opts).then((pixelMap) => {
+  // 创建ColorPicker实例
   effectKit.createColorPicker(pixelMap, (error, colorPicker) => {
     if (error) {
-      console.error('Failed to create color picker.');
+      console.error(`Failed to create color picker. Code: ${error.code}, message: ${error.message}`);
     } else {
       console.info('Succeeded in creating color picker.');
-      let bJudge = colorPicker.isBlackOrWhiteOrGrayColor(0xFFFFFFFF);
-      console.info('is black or white or gray color[bool](white) =' + bJudge);
+      // 判断颜色是否为黑白灰色
+      let isBlackOrWhiteOrGray = colorPicker.isBlackOrWhiteOrGrayColor(0xFFFFFFFF);
+      console.info('is black or white or gray color[bool](white) =' + isBlackOrWhiteOrGray);
     }
-  })
-})
+  });
+});
 
 ```
 

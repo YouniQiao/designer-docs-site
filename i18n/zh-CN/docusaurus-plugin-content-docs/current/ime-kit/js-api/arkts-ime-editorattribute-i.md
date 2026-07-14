@@ -54,10 +54,7 @@ readonly capitalizeMode?: CapitalizeMode
 readonly consumeKeyEvents?: boolean
 ```
 
-编辑框是否具有完整处理字母、字符、功能等按键的能力。
-
-- 值为true，表示具备此能力。
-- 值为false，表示不具备此能力。
+编辑框是否具有完整处理字母、字符、功能等按键的能力。 - 值为true，表示具备此能力。 - 值为false，表示不具备此能力。
 
 **类型：** boolean
 
@@ -87,8 +84,7 @@ readonly displayId?: number
 readonly enterKeyType: number
 ```
 
-编辑框的功能属性，详见
-[常量中的功能键定义](../../../../reference/apis-ime-kit/js-apis-inputmethodengine.md#工具不太能识别具体链接到的是哪个常量。让人工处理。咨询黄山）)。
+编辑框的功能属性
 
 **类型：** number
 
@@ -144,8 +140,7 @@ readonly immersiveMode?: ImmersiveMode
 readonly inputPattern: number
 ```
 
-编辑框的文本属性，详见
-[常量中的编辑框定义](../../../../reference/apis-ime-kit/js-apis-inputmethodengine.md#工具不太能识别具体链接到的是哪个常量。让人工处理。咨询黄山）)。
+编辑框的文本属性
 
 **类型：** number
 
@@ -159,10 +154,7 @@ readonly inputPattern: number
 isTextPreviewSupported: boolean
 ```
 
-编辑框是否支持预上屏。
-
-- 值为true，表示支持。
-- 值为false，表示不支持。
+编辑框是否支持预上屏。 - 值为true，表示支持。 - 值为false，表示不支持。
 
 **类型：** boolean
 

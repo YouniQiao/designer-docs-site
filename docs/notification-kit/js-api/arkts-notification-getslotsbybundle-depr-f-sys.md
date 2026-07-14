@@ -6,8 +6,7 @@
 function getSlotsByBundle(bundle: BundleOption, callback: AsyncCallback<Array<NotificationSlot>>): void
 ```
 
-Obtains the notification slots of a specified application.
-This API uses an asynchronous callback to return the result.
+Obtains the notification slots of a specified application. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 

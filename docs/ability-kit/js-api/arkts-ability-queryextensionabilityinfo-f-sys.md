@@ -13,10 +13,7 @@ function queryExtensionAbilityInfo(want: Want, extensionAbilityType: ExtensionAb
       extensionAbilityFlags: number, callback: AsyncCallback<Array<ExtensionAbilityInfo>>): void
 ```
 
-Obtains the ExtensionAbility information based on the given want, ExtensionAbility type, and ExtensionAbility
-flags. This API uses an asynchronous callback to return the result.
-
-No permission is required for obtaining the caller's own information.
+Obtains the ExtensionAbility information based on the given want, ExtensionAbility type, and ExtensionAbility flags. This API uses an asynchronous callback to return the result. No permission is required for obtaining the caller's own information.
 
 **Since:** 9
 
@@ -83,10 +80,7 @@ try {
 function queryExtensionAbilityInfo(want: Want, extensionAbilityType: ExtensionAbilityType, extensionAbilityFlags: number, userId: number, callback: AsyncCallback<Array<ExtensionAbilityInfo>>): void
 ```
 
-Obtains the ExtensionAbility information based on the given want, ExtensionAbility type, ExtensionAbility flags,
-and user ID. This API uses an asynchronous callback to return the result.
-
-No permission is required for obtaining the caller's own information.
+Obtains the ExtensionAbility information based on the given want, ExtensionAbility type, ExtensionAbility flags, and user ID. This API uses an asynchronous callback to return the result. No permission is required for obtaining the caller's own information.
 
 **Since:** 9
 
@@ -156,10 +150,7 @@ try {
 function queryExtensionAbilityInfo(want: Want, extensionAbilityType: ExtensionAbilityType, extensionAbilityFlags: number, userId?: number): Promise<Array<ExtensionAbilityInfo>>
 ```
 
-Obtains the ExtensionAbility information based on the given want, ExtensionAbility type, ExtensionAbility flags,
-and user ID. This API uses a promise to return the result.
-
-No permission is required for obtaining the caller's own information.
+Obtains the ExtensionAbility information based on the given want, ExtensionAbility type, ExtensionAbility flags, and user ID. This API uses a promise to return the result. No permission is required for obtaining the caller's own information.
 
 **Since:** 9
 

@@ -1,7 +1,6 @@
 # StatusBarProperty
 
-Describes the properties of the status bar. These properties are returned when you query the status bar's
-configuration details.
+Describes the properties of the status bar. These properties are returned when you query the status bar's configuration details.
 
 **Since:** 18
 

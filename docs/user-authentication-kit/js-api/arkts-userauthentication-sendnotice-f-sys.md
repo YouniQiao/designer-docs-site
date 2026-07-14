@@ -12,9 +12,7 @@ import { userAuth } from '@kit.UserAuthenticationKit';
 function sendNotice(noticeType: NoticeType, eventData: string): void
 ```
 
-Sends a notification from the user authentication widget. When the unified authentication widget is used for user
-authentication, this API is used to receive notifications from the unified authentication widget and send the
-notifications to the user authentication framework.
+Sends a notification from the user authentication widget. When the unified authentication widget is used for user authentication, this API is used to receive notifications from the unified authentication widget and send the notifications to the user authentication framework.
 
 **Since:** 10
 

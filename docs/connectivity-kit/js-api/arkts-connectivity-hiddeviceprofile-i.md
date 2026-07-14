@@ -554,11 +554,7 @@ try {
 registerHidDevice(sdp: HidDeviceSdp, inQos: HidDeviceQos, outQos: HidDeviceQos, callback: Callback<boolean>): void
 ```
 
-Application registers the HID Device capability.
-The application will only successfully call this API when it's in the foreground.
-If the application that has registered the HID Device capability is switched to the background, the system
-automatically cancels the HID Device capability registration. The application can listen to the appStatusChange
-callback to detect the status change.
+Application registers the HID Device capability. The application will only successfully call this API when it's in the foreground. If the application that has registered the HID Device capability is switched to the background, the system automatically cancels the HID Device capability registration. The application can listen to the appStatusChange callback to detect the status change.
 
 **Since:** 23
 

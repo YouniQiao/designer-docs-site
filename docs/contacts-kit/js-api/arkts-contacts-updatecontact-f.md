@@ -130,8 +130,7 @@ contact.selectContacts().then((data) => {
 function updateContact(contact: Contact, attrs: ContactAttributes, callback: AsyncCallback<void>): void
 ```
 
-Updates a contact. (The contact attribute list can be imported.) This API uses an asynchronous callback to return
-the result.
+Updates a contact. (The contact attribute list can be imported.) This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 
@@ -188,8 +187,7 @@ contact.selectContacts().then((data) => {
 function updateContact(context: Context, contact: Contact, attrs: ContactAttributes, callback: AsyncCallback<void>): void
 ```
 
-Updates a contact. (The contact attribute list can be imported.) This API uses an asynchronous callback to return
-the result.
+Updates a contact. (The contact attribute list can be imported.) This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 

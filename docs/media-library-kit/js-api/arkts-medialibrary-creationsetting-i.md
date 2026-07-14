@@ -1,6 +1,6 @@
 # CreationSetting
 
-Setting to create photo asset
+Represents the configuration for saving images or videos to the media library, including the file name, file type, and other related parameters.
 
 **Since:** 23
 
@@ -18,7 +18,7 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 fileNameExtension: string
 ```
 
-Extension of the asset
+File name extension, for example, **'jpg'**.
 
 **Type:** string
 
@@ -36,7 +36,7 @@ Extension of the asset
 photoType: PhotoType
 ```
 
-Specify photo type of the asset to create, include image or video
+[PhotoType](arkts-medialibrary-phototype-e.md) of the created media file, which can be **IMAGE** or **VIDEO**.
 
 **Type:** PhotoType
 
@@ -54,7 +54,7 @@ Specify photo type of the asset to create, include image or video
 title?: string
 ```
 
-Title of the asset
+Title of the image or video. If this parameter is not passed, the system generates a value. The parameter specifications are as follows: - It must not contain a file name extension. - It must not contain any invalid characters, which are:\ / : * ? " ' ` < > | { } [ ] - The file name consists of the title and file name extension. The file name string length ranges from 1 to 255. Therefore, the title length cannot be too long.
 
 **Type:** string
 

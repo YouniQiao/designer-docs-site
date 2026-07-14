@@ -12,9 +12,7 @@ import { certificateManagerDialog } from '@kit.DeviceCertificateKit';
 function openInstallCertificateDialog(context: common.Context, certType: CertificateType, certScope: CertificateScope, cert: Uint8Array): Promise<string>
 ```
 
-Opens the Certificate Management Install Certificate dialog box. After the certificate is successfully installed,
-the unique identifier of the certificate is returned. Applications can use the identifier to use the certificate.
-Use Promise asynchronous callback.
+Opens the Certificate Management Install Certificate dialog box. After the certificate is successfully installed, the unique identifier of the certificate is returned. Applications can use the identifier to use the certificate. Use Promise asynchronous callback.
 
 **Since:** 14
 

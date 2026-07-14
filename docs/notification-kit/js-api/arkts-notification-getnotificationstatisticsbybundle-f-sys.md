@@ -12,8 +12,7 @@ import { notificationManager } from '@kit.NotificationKit';
 function getNotificationStatisticsByBundle(bundles: BundleOption[]): Promise<BundleNotificationStatistics[]>
 ```
 
-Obtains notification statistics of a specified list of applications in batches.
-This API uses a promise to return the result.
+Obtains notification statistics of a specified list of applications in batches. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 

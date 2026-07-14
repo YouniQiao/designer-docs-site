@@ -1,7 +1,6 @@
 # ChipGroupPaddingOptions
 
-Defines the top and bottom padding of a **ChipGroup** component, which is used to control the overall height of the
-ChipGroup.
+Defines the top and bottom padding of a **ChipGroup** component, which is used to control the overall height of the ChipGroup.
 
 **Since:** 12
 
@@ -19,13 +18,7 @@ import { ChipItemLabelOptions, ChipGroupSpaceOptions, SymbolItemOptions, SuffixI
 bottom: Length
 ```
 
-Bottom padding. Percentage values are not supported.
-
-Default value: **14**
-
-Unit: vp
-
-If this parameter is set to **undefined**, the default value is used.
+Bottom padding. Percentage values are not supported. Default value: **14** Unit: vp If this parameter is set to **undefined**, the default value is used.
 
 **Type:** Length
 
@@ -43,13 +36,7 @@ If this parameter is set to **undefined**, the default value is used.
 top: Length
 ```
 
-Top padding. Percentage values are not supported.
-
-Default value: **14**
-
-Unit: vp
-
-If the value is **undefined**, the default value is used.
+Top padding. Percentage values are not supported. Default value: **14** Unit: vp If the value is **undefined**, the default value is used.
 
 **Type:** Length
 

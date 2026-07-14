@@ -18,8 +18,7 @@ import { image } from '@kit.ImageKit';
 bytesPerRow?: number
 ```
 
-Bytes per row.If it is not specified, it will be calculated as (width + 7) / 8.
-The value range is all integers.
+Bytes per row.If it is not specified, it will be calculated as (width + 7) / 8. The value range is all integers.
 
 **Type:** number
 

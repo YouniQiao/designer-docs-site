@@ -12,10 +12,7 @@ import { deviceSettings } from '@kit.MDMKit';
 function addHiddenSettingsMenu(admin: Want, menusToHidden: Array<SettingsMenu>): void
 ```
 
-Adds a setting item to the hidden setting item list of the current user. Then the setting item is hidden in the
-current user's settings menu and cannot be found in settings search. Even if the setting item is located through
-some means, it cannot be opened when tapped. The settings take effect immediately after the API is called. The
-Settings application does not need to be restarted.
+Adds a setting item to the hidden setting item list of the current user. Then the setting item is hidden in the current user's settings menu and cannot be found in settings search. Even if the setting item is located through some means, it cannot be opened when tapped. The settings take effect immediately after the API is called. The Settings application does not need to be restarted.
 
 **Since:** 24
 

@@ -1,22 +1,6 @@
 # AVPlayer
 
-AVPlayer is a playback management class. It provides APIs to manage and play media assets. Before calling any API
-in AVPlayer, you must use
-[createAVPlayer()](arkts-media-createavplayer-f.md#createavplayer-1) to create
-an AVPlayer instance.
-
-When using the AVPlayer instance, you are advised to register the following callbacks to proactively obtain status
-changes: [on('stateChange')](arkts-media-avplayer-i.md#on-2):
-listens for AVPlayer state changes. [on('error')](arkts-media-avplayer-i.md#on-16):
-listens for error events.
-
-Applications must properly manage AVPlayer instances according to their specific needs, creating and freeing them
-when necessary. Holding too many AVPlayer instances can lead to high memory usage, and in some cases, the system
-might terminate applications to free up resources.
-
-For details about the audio and video playback demo, see
-[Audio Playback](../../../../media/media/using-avplayer-for-playback.md) and
-[Video Playback](../../../../media/media/video-playback.md).
+AVPlayer is a playback management class. It provides APIs to manage and play media assets. Before calling any API in AVPlayer, you must use [createAVPlayer()](arkts-media-createavplayer-f.md#createavplayer-1) to create an AVPlayer instance. When using the AVPlayer instance, you are advised to register the following callbacks to proactively obtain status changes: [on('stateChange')](arkts-media-avplayer-i.md#on-2): listens for AVPlayer state changes. [on('error')](arkts-media-avplayer-i.md#on-16): listens for error events. Applications must properly manage AVPlayer instances according to their specific needs, creating and freeing them when necessary. Holding too many AVPlayer instances can lead to high memory usage, and in some cases, the system might terminate applications to free up resources. For details about the audio and video playback demo, see [Audio Playback](../../../../media/media/using-avplayer-for-playback.md) and [Video Playback](../../../../media/media/video-playback.md).
 
 **Since:** 9
 
@@ -70,8 +54,7 @@ Add a new playback source to the player's playlist.
 addSubtitleFromFd(fd: number, offset?: number, length?: number): Promise<void>
 ```
 
-Adds an external subtitle to a video based on the FD. Currently, the external subtitle must be set after
-**fdSrc** of the video resource is set in an AVPlayer instance. This API uses a promise to return the result.
+Adds an external subtitle to a video based on the FD. Currently, the external subtitle must be set after **fdSrc** of the video resource is set in an AVPlayer instance. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -106,8 +89,7 @@ Adds an external subtitle to a video based on the FD. Currently, the external su
 addSubtitleFromUrl(url: string): Promise<void>
 ```
 
-Adds an external subtitle to a video based on the URL. Currently, the external subtitle must be set after
-**fdSrc** of the video resource is set in an AVPlayer instance. This API uses a promise to return the result.
+Adds an external subtitle to a video based on the URL. Currently, the external subtitle must be set after **fdSrc** of the video resource is set in an AVPlayer instance. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -140,8 +122,7 @@ Adds an external subtitle to a video based on the URL. Currently, the external s
 advanceToMediaSource(id: string): Promise<void>
 ```
 
-Ends playback of the current mediasource and starts playback of the specified mediasource in the mediasource
-list.
+Ends playback of the current mediasource and starts playback of the specified mediasource in the mediasource list.
 
 **Since:** 26.0.0
 
@@ -262,8 +243,7 @@ Clears all the items in the player's playlist. Currently playing media will be t
 deselectTrack(index: number): Promise<void>
 ```
 
-Deselects the specified track when the AVPlayer plays multimedia resources with multiple audio or video tracks.
-This API uses a promise to return the result.
+Deselects the specified track when the AVPlayer plays multimedia resources with multiple audio or video tracks. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -324,8 +304,7 @@ Return the current mediasource.
 getCurrentPresentationTimestamp() : number
 ```
 
-Obtains the current playback time. This API can be called only when the AVPlayer is in the **playing**,
-**paused**, or **completed** state.
+Obtains the current playback time. This API can be called only when the AVPlayer is in the **playing**, **paused**, or **completed** state.
 
 **Since:** 23
 
@@ -353,8 +332,7 @@ Obtains the current playback time. This API can be called only when the AVPlayer
 getCurrentTrack(trackType: MediaType): Promise<number>
 ```
 
-Obtains the selected track by the specified media type. This API can be called only when the AVPlayer
-is in the prepared, playing, or paused state. This API uses a promise to return the result.
+Obtains the selected track by the specified media type. This API can be called only when the AVPlayer is in the prepared, playing, or paused state. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 
@@ -389,13 +367,7 @@ is in the prepared, playing, or paused state. This API uses a promise to return 
 getLoadedTimeRanges(): Promise<Array<Range>>
 ```
 
-Obtains the list of loaded time ranges. This API uses a promise to return the result.
-
-> **NOTE**
->
-> - For local media resources, the time range is from 0 to the entire media duration.
->
-> - For network media resources, the list of locally loaded time ranges is returned.
+Obtains the list of loaded time ranges. This API uses a promise to return the result. > **NOTE** > > - For local media resources, the time range is from 0 to the entire media duration. > > - For network media resources, the list of locally loaded time ranges is returned.
 
 **Since:** 26.0.0
 
@@ -415,10 +387,7 @@ Obtains the list of loaded time ranges. This API uses a promise to return the re
 getMediaKeySystemInfos(): Array<drm.MediaKeySystemInfo>
 ```
 
-Obtains the media key system information of the media asset that is being played. This API can be called only
-after the
-[on('mediaKeySystemInfoUpdate')](arkts-media-avplayer-i.md#on-1)
-event is successfully triggered.
+Obtains the media key system information of the media asset that is being played. This API can be called only after the [on('mediaKeySystemInfoUpdate')](arkts-media-avplayer-i.md#on-1) event is successfully triggered.
 
 **Since:** 11
 
@@ -466,8 +435,7 @@ Return the array of mediasources in the playlist.
 getPlaybackInfo(): Promise<PlaybackInfo>
 ```
 
-Obtains the playback information. This API can be called only when the AVPlayer is in the prepared, playing, or
-paused state. This API uses a promise to return the result.
+Obtains the playback information. This API can be called only when the AVPlayer is in the prepared, playing, or paused state. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -485,8 +453,7 @@ paused state. This API uses a promise to return the result.
 getPlaybackPosition() : number
 ```
 
-Obtains the current playback position. This API can be called only when the AVPlayer is in the prepared, playing,
-paused, or completed state.
+Obtains the current playback position. This API can be called only when the AVPlayer is in the prepared, playing, paused, or completed state.
 
 **Since:** 18
 
@@ -530,8 +497,7 @@ Obtains the playback speed of an AVPlayer. This API uses a promise to return the
 getPlaybackStatisticMetrics(): Promise<PlaybackMetrics>
 ```
 
-Obtains the statistic metrics of the current player. This API can be called when the AVPlayer is in the prepared,
-playing, paused, completed, or stopped state. This API uses a promise to return the result.
+Obtains the statistic metrics of the current player. This API can be called when the AVPlayer is in the prepared, playing, paused, completed, or stopped state. This API uses a promise to return the result.
 
 **Since:** 23
 
@@ -549,14 +515,7 @@ playing, paused, completed, or stopped state. This API uses a promise to return 
 getSeekableTimeRanges(): Promise<Array<Range>>
 ```
 
-Obtains the list of seekable time ranges. This API uses a promise to return the result.
-
-> **NOTE**
->
-> - For local media resources and media resources that support segment-based requests, the time range is from 0
-> to the entire media duration.
->
-> - For media resources that support only chunk-based transmission, there is no seekable time range.
+Obtains the list of seekable time ranges. This API uses a promise to return the result. > **NOTE** > > - For local media resources and media resources that support segment-based requests, the time range is from 0 > to the entire media duration. > > - For media resources that support only chunk-based transmission, there is no seekable time range.
 
 **Since:** 26.0.0
 
@@ -576,8 +535,7 @@ Obtains the list of seekable time ranges. This API uses a promise to return the 
 getSelectedTracks(): Promise<Array<number>>
 ```
 
-Obtains the indexes of the selected audio or video tracks. This API can be called only when the AVPlayer is in
-the prepared, playing, or paused state. This API uses a promise to return the result.
+Obtains the indexes of the selected audio or video tracks. This API can be called only when the AVPlayer is in the prepared, playing, or paused state. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -603,9 +561,7 @@ the prepared, playing, or paused state. This API uses a promise to return the re
 getTrackDescription(callback: AsyncCallback<Array<MediaDescription>>): void
 ```
 
-Obtains the audio and video track information. This API can be called only when the AVPlayer is in the prepared,
-playing, or paused state. To obtain information about all audio and video tracks, this API must be called after
-the data loading callback is triggered. This API uses an asynchronous callback to return the result.
+Obtains the audio and video track information. This API can be called only when the AVPlayer is in the prepared, playing, or paused state. To obtain information about all audio and video tracks, this API must be called after the data loading callback is triggered. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -631,8 +587,7 @@ the data loading callback is triggered. This API uses an asynchronous callback t
 getTrackDescription(): Promise<Array<MediaDescription>>
 ```
 
-Obtains the audio and video track information. This API can be called only when the AVPlayer is in the prepared,
-playing, or paused state. This API uses a promise to return the result.
+Obtains the audio and video track information. This API can be called only when the AVPlayer is in the prepared, playing, or paused state. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -684,10 +639,7 @@ Obtains the track selection filter configured for the player. This API uses a pr
 isSeekContinuousSupported() : boolean
 ```
 
-Checks whether the media source supports [seek](arkts-media-avplayer-i.md#seek-1) in SEEK_CONTINUOUS mode (specified by
-[SeekMode](arkts-media-seekmode-e.md)). The actual value is returned when this API is called in
-the prepared, playing, paused, or completed state. The value **false** is returned if it is called in other
-states. For devices that do not support the seek operation in SEEK_CONTINUOUS mode, **false** is returned.
+Checks whether the media source supports [seek](arkts-media-avplayer-i.md#seek-1) in SEEK_CONTINUOUS mode (specified by [SeekMode](arkts-media-seekmode-e.md)). The actual value is returned when this API is called in the prepared, playing, paused, or completed state. The value **false** is returned if it is called in other states. For devices that do not support the seek operation in SEEK_CONTINUOUS mode, **false** is returned.
 
 **Since:** 18
 
@@ -833,8 +785,7 @@ Unsubscribes from the event that checks whether the playback speed is successful
 off(type: 'playbackRateDone', callback?: OnPlaybackRateDone): void
 ```
 
-Unsubscribes from the event indicating that the playback rate set by calling
-[setPlaybackRate](arkts-media-avplayer-i.md#setplaybackrate-1) is applied.
+Unsubscribes from the event indicating that the playback rate set by calling [setPlaybackRate](arkts-media-avplayer-i.md#setplaybackrate-1) is applied.
 
 **Since:** 20
 
@@ -1002,8 +953,7 @@ Unsubscribes from the audio interruption event.
 off(type: 'availableBitrates', callback?: Callback<Array<number>>): void
 ```
 
-Unsubscribes from available bitrates of HLS/DASH streams. This event is reported after
-[prepare](arkts-media-avplayer-i.md#prepare-1) is called.
+Unsubscribes from available bitrates of HLS/DASH streams. This event is reported after [prepare](arkts-media-avplayer-i.md#prepare-1) is called.
 
 **Since:** 9
 
@@ -1045,8 +995,7 @@ Unsubscribes from AVPlayer errors.
 off(type: 'audioOutputDeviceChangeWithInfo', callback?: Callback<audio.AudioStreamDeviceChangeInfo>): void
 ```
 
-Unsubscribes from audio stream output device changes and reasons. This API uses an asynchronous callback to
-return the result.
+Unsubscribes from audio stream output device changes and reasons. This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -1238,8 +1187,7 @@ Unregisters listener to detect when changes occur in the playback content.
 offTimedMetaData(callback?: Callback<AVTimedMetaData>): void
 ```
 
-Unregister listener to detect time-based metadata,
-Currently, only the #EXT-X-DATERANGE data of HLS and the Event Streams information of DASH are supported.
+Unregister listener to detect time-based metadata, Currently, only the #EXT-X-DATERANGE data of HLS and the Event Streams information of DASH are supported.
 
 **Since:** 26.0.0
 
@@ -1324,11 +1272,7 @@ Subscribes to the event to check whether the volume is successfully set.
 on(type: 'endOfStream', callback: Callback<void>): void
 ```
 
-Subscribes to the event that indicates the end of the stream being played. If
-**[loop](../../../../reference/apis-media-kit/arkts-apis-media-AVPlayer.md#properties) = true** is set, the
-AVPlayer seeks to the beginning of the stream and plays the stream again. If **loop** is not set, the completed
-state is reported through the
-[stateChange](arkts-media-avplayer-i.md#on-2) event.
+Subscribes to the event that indicates the end of the stream being played. If **[loop](../../../../reference/apis-media-kit/arkts-apis-media-AVPlayer.md#properties) = true** is set, the AVPlayer seeks to the beginning of the stream and plays the stream again. If **loop** is not set, the completed state is reported through the [stateChange](arkts-media-avplayer-i.md#on-2) event.
 
 **Since:** 9
 
@@ -1391,8 +1335,7 @@ Subscribes to the event to check whether the playback speed is successfully set.
 on(type: 'playbackRateDone', callback: OnPlaybackRateDone): void
 ```
 
-Subscribes to the event indicating that the playback rate set by calling
-[setPlaybackRate](arkts-media-avplayer-i.md#setplaybackrate-1) is applied.
+Subscribes to the event indicating that the playback rate set by calling [setPlaybackRate](arkts-media-avplayer-i.md#setplaybackrate-1) is applied.
 
 **Since:** 20
 
@@ -1434,18 +1377,7 @@ Subscribes to the event to check whether the bitrate is successfully set.
 on(type: 'timeUpdate', callback: Callback<number>): void
 ```
 
-Subscribes to playback position changes. It is used to refresh the current position of the progress bar. By
-default, this event is reported every 100 ms. However, it is reported immediately upon a successful seek
-operation.
-
-> **NOTE**
->
-> - The **'timeUpdate'** event is not supported in live streaming scenarios.
->
-> - When a seek operation is performed, the progress bar can be updated based on the **'timeUpdate'** event only
-> after the seek operation is complete (**'seekdone'** received).
->
-> - In the **pause** state, the player reports the timeUpdate event when the buffering ends.
+Subscribes to playback position changes. It is used to refresh the current position of the progress bar. By default, this event is reported every 100 ms. However, it is reported immediately upon a successful seek operation. > **NOTE** > > - The **'timeUpdate'** event is not supported in live streaming scenarios. > > - When a seek operation is performed, the progress bar can be updated based on the **'timeUpdate'** event only > after the seek operation is complete (**'seekdone'** received). > > - In the **pause** state, the player reports the timeUpdate event when the buffering ends.
 
 **Since:** 9
 
@@ -1466,13 +1398,7 @@ operation.
 on(type: 'durationUpdate', callback: Callback<number>): void
 ```
 
-Subscribes to media asset duration changes. It is used to refresh the length of the progress bar. By default,
-this event is reported once in the prepared state. However, it can be repeatedly reported for special streams
-that trigger duration changes.
-
-> **NOTE**
->
-> The **durationUpdate** event is not supported in live streaming scenarios.
+Subscribes to media asset duration changes. It is used to refresh the length of the progress bar. By default, this event is reported once in the prepared state. However, it can be repeatedly reported for special streams that trigger duration changes. > **NOTE** > > The **durationUpdate** event is not supported in live streaming scenarios.
 
 **Since:** 9
 
@@ -1514,9 +1440,7 @@ Subscribes to audio and video buffer changes. This subscription is supported onl
 on(type: 'startRenderFrame', callback: Callback<void>): void
 ```
 
-Subscribes to the event that indicates rendering starts for the first frame. This subscription is supported only
-in video playback scenarios. This event only means that the playback service sends the first frame to the display
-module. The actual rendering effect depends on the rendering performance of the display service.
+Subscribes to the event that indicates rendering starts for the first frame. This subscription is supported only in video playback scenarios. This event only means that the playback service sends the first frame to the display module. The actual rendering effect depends on the rendering performance of the display service.
 
 **Since:** 9
 
@@ -1537,9 +1461,7 @@ module. The actual rendering effect depends on the rendering performance of the 
 on(type: 'videoSizeChange', callback: OnVideoSizeChangeHandler): void
 ```
 
-Subscribes to video size (width and height) changes. This subscription is supported only in video playback
-scenarios. By default, this event is reported only once in the prepared state. However, it is also reported upon
-resolution changes in the case of HLS streams.
+Subscribes to video size (width and height) changes. This subscription is supported only in video playback scenarios. By default, this event is reported only once in the prepared state. However, it is also reported upon resolution changes in the case of HLS streams.
 
 **Since:** 9
 
@@ -1560,11 +1482,7 @@ resolution changes in the case of HLS streams.
 on(type: 'audioInterrupt', callback: Callback<audio.InterruptEvent>): void
 ```
 
-Subscribes to the audio interruption event. When multiple audio and video assets are played at the same time,
-this event is triggered based on the audio interruption mode
-[audio.InterruptMode](../../apis-audio-kit/arkts-apis/arkts-audio-interruptmode-e.md). The application needs to perform
-corresponding processing based on different audio interruption events. For details, see
-[Handling Audio Interruption Events](../../../../media/audio/audio-playback-concurrency.md).
+Subscribes to the audio interruption event. When multiple audio and video assets are played at the same time, this event is triggered based on the audio interruption mode [audio.InterruptMode](../../apis-audio-kit/arkts-apis/arkts-audio-interruptmode-e.md). The application needs to perform corresponding processing based on different audio interruption events. For details, see [Handling Audio Interruption Events](../../../../media/audio/audio-playback-concurrency.md).
 
 **Since:** 9
 
@@ -1585,8 +1503,7 @@ corresponding processing based on different audio interruption events. For detai
 on(type: 'availableBitrates', callback: Callback<Array<number>>): void
 ```
 
-Subscribes to available bitrates of HLS/DASH streams. This event is reported only after the AVPlayer switches to
-the prepared state.
+Subscribes to available bitrates of HLS/DASH streams. This event is reported only after the AVPlayer switches to the prepared state.
 
 **Since:** 9
 
@@ -1607,14 +1524,7 @@ the prepared state.
 on(type: 'error', callback: ErrorCallback): void
 ```
 
-Subscribes to [AVPlayer](arkts-multimedia-media.md) errors. This event is used only for error prompt and
-does not require the user to stop playback control. If the
-[AVPlayerState](arkts-media-avplayerstate-t.md) is also switched to error, call
-[reset()](arkts-media-avplayer-i.md#reset-1) or
-[release()](arkts-media-avplayer-i.md#release-1) to exit the playback. If the playback
-remains in the error state after the [reset()](arkts-media-avplayer-i.md#reset-1) method
-is called, you are advised to directly invoke the
-[release()](arkts-media-avplayer-i.md#release-1) method to exit the playback operation.
+Subscribes to [AVPlayer](arkts-multimedia-media.md) errors. This event is used only for error prompt and does not require the user to stop playback control. If the [AVPlayerState](arkts-media-avplayerstate-t.md) is also switched to error, call [reset()](arkts-media-avplayer-i.md#reset-1) or [release()](arkts-media-avplayer-i.md#release-1) to exit the playback. If the playback remains in the error state after the [reset()](arkts-media-avplayer-i.md#reset-1) method is called, you are advised to directly invoke the [release()](arkts-media-avplayer-i.md#release-1) method to exit the playback operation.
 
 **Since:** 9
 
@@ -1662,12 +1572,7 @@ is called, you are advised to directly invoke the
 on(type: 'audioOutputDeviceChangeWithInfo', callback: Callback<audio.AudioStreamDeviceChangeInfo>): void
 ```
 
-Subscribes to audio stream output device changes and reasons. This API uses an asynchronous callback to return
-the result.
-
-When subscribing to this event, you are advised to implement the player behavior when the device is connected or
-disconnected by referring to
-[Handling Output Device Changes Gracefully](../../../../media/audio/audio-output-device-change.md).
+Subscribes to audio stream output device changes and reasons. This API uses an asynchronous callback to return the result. When subscribing to this event, you are advised to implement the player behavior when the device is connected or disconnected by referring to [Handling Output Device Changes Gracefully](../../../../media/audio/audio-output-device-change.md).
 
 **Since:** 11
 
@@ -1694,9 +1599,7 @@ disconnected by referring to
 on(type: 'subtitleUpdate', callback: Callback<SubtitleInfo>): void
 ```
 
-Subscribes to subtitle update events. When external subtitles exist, the system notifies the application through
-the subscribed-to callback. An application can subscribe to only one subtitle update event. When the application
-initiates multiple subscriptions to this event, the last subscription is applied.
+Subscribes to subtitle update events. When external subtitles exist, the system notifies the application through the subscribed-to callback. An application can subscribe to only one subtitle update event. When the application initiates multiple subscriptions to this event, the last subscription is applied.
 
 **Since:** 12
 
@@ -1717,9 +1620,7 @@ initiates multiple subscriptions to this event, the last subscription is applied
 on(type: 'trackChange', callback: OnTrackChangeHandler): void
 ```
 
-Subscribes to track change events. When the track changes, the system notifies the application through the
-subscribed-to callback. An application can subscribe to only one track change event. When the application
-initiates multiple subscriptions to this event, the last subscription is applied.
+Subscribes to track change events. When the track changes, the system notifies the application through the subscribed-to callback. An application can subscribe to only one track change event. When the application initiates multiple subscriptions to this event, the last subscription is applied.
 
 **Since:** 12
 
@@ -1740,9 +1641,7 @@ initiates multiple subscriptions to this event, the last subscription is applied
 on(type: 'trackInfoUpdate', callback: Callback<Array<MediaDescription>>): void
 ```
 
-Subscribes to track information update events. When the track information is updated, the system notifies the
-application through the subscribed-to callback. An application can subscribe to only one track change event. When
-the application initiates multiple subscriptions to this event, the last subscription is applied.
+Subscribes to track information update events. When the track information is updated, the system notifies the application through the subscribed-to callback. An application can subscribe to only one track change event. When the application initiates multiple subscriptions to this event, the last subscription is applied.
 
 **Since:** 12
 
@@ -1763,8 +1662,7 @@ the application initiates multiple subscriptions to this event, the last subscri
 on(type: 'amplitudeUpdate', callback: Callback<Array<number>>): void
 ```
 
-Subscribes to update events of the maximum audio level value, which is periodically reported when audio resources
-are played.
+Subscribes to update events of the maximum audio level value, which is periodically reported when audio resources are played.
 
 **Since:** 13
 
@@ -1783,10 +1681,7 @@ are played.
 on(type: 'seiMessageReceived', payloadTypes: Array<number>, callback: OnSeiMessageHandle): void
 ```
 
-Subscribes to events indicating that a Supplemental Enhancement Information (SEI) message is received. This
-applies only to HTTP-FLV live streaming and is triggered when SEI messages are present in the video stream. You
-must initiate the subscription before calling **prepare**. If you initiate multiple subscriptions to this event,
-the last subscription is applied.
+Subscribes to events indicating that a Supplemental Enhancement Information (SEI) message is received. This applies only to HTTP-FLV live streaming and is triggered when SEI messages are present in the video stream. You must initiate the subscription before calling **prepare**. If you initiate multiple subscriptions to this event, the last subscription is applied.
 
 **Since:** 18
 
@@ -1847,8 +1742,7 @@ Subscribes to metric events during playback.
 onPlaybackContentChanged(callback: Callback<string>):void
 ```
 
-Registers a listener to detect when the playback content has changed.
-The value carried in the callback function is the ID of the media source that is being played in the playlist.
+Registers a listener to detect when the playback content has changed. The value carried in the callback function is the ID of the media source that is being played in the playlist.
 
 **Since:** 26.0.0
 
@@ -1870,8 +1764,7 @@ The value carried in the callback function is the ID of the media source that is
 onTimedMetaData(callback: Callback<AVTimedMetaData>): void
 ```
 
-Register listener to detect time-based metadata,
-Currently, only the #EXT-X-DATERANGE data of HLS and the Event Streams information of DASH are supported.
+Register listener to detect time-based metadata, Currently, only the #EXT-X-DATERANGE data of HLS and the Event Streams information of DASH are supported.
 
 **Since:** 26.0.0
 
@@ -1893,8 +1786,7 @@ Currently, only the #EXT-X-DATERANGE data of HLS and the Event Streams informati
 pause(callback: AsyncCallback<void>): void
 ```
 
-Pauses audio and video playback. This API can be called only when the AVPlayer is in the playing state. This API
-uses an asynchronous callback to return the result.
+Pauses audio and video playback. This API can be called only when the AVPlayer is in the playing state. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -1920,8 +1812,7 @@ uses an asynchronous callback to return the result.
 pause(): Promise<void>
 ```
 
-Pauses audio and video playback. This API can be called only when the AVPlayer is in the playing state. This API
-uses a promise to return the result.
+Pauses audio and video playback. This API can be called only when the AVPlayer is in the playing state. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -1947,8 +1838,7 @@ uses a promise to return the result.
 play(callback: AsyncCallback<void>): void
 ```
 
-Starts to play an audio and video asset. This API can be called only when the AVPlayer is in the prepared, paused,
-or completed state. This API uses an asynchronous callback to return the result.
+Starts to play an audio and video asset. This API can be called only when the AVPlayer is in the prepared, paused, or completed state. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -1974,8 +1864,7 @@ or completed state. This API uses an asynchronous callback to return the result.
 play(): Promise<void>
 ```
 
-Starts to play an audio and video asset. This API can be called only when the AVPlayer is in the prepared, paused,
-or completed state. This API uses a promise to return the result.
+Starts to play an audio and video asset. This API can be called only when the AVPlayer is in the prepared, paused, or completed state. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -2001,10 +1890,7 @@ or completed state. This API uses a promise to return the result.
 prepare(callback: AsyncCallback<void>): void
 ```
 
-Prepares for audio and video playback. This API can be called only when the AVPlayer is in the initialized state.
-The state changes can be detected by subscribing to the
-[stateChange](arkts-media-avplayer-i.md#on-2) event. This
-API uses an asynchronous callback to return the result.
+Prepares for audio and video playback. This API can be called only when the AVPlayer is in the initialized state. The state changes can be detected by subscribing to the [stateChange](arkts-media-avplayer-i.md#on-2) event. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -2031,14 +1917,7 @@ API uses an asynchronous callback to return the result.
 prepare(): Promise<void>
 ```
 
-Prepares for audio and video playback. This API can be called only when the AVPlayer is in the initialized state.
-The state changes can be detected by subscribing to the
-[stateChange](arkts-media-avplayer-i.md#on-2) event. This
-API uses a promise to return the result.
-
-If your application frequently switches between short videos, you can create multiple AVPlayer objects to prepare
-the next video in advance, thereby improving the switching performance. For details, see
-[Smooth Switchover Between Online Short Videos](https://developer.huawei.com/consumer/en/doc/best-practices/bpta-smooth-switching).
+Prepares for audio and video playback. This API can be called only when the AVPlayer is in the initialized state. The state changes can be detected by subscribing to the [stateChange](arkts-media-avplayer-i.md#on-2) event. This API uses a promise to return the result. If your application frequently switches between short videos, you can create multiple AVPlayer objects to prepare the next video in advance, thereby improving the switching performance. For details, see [Smooth Switchover Between Online Short Videos](https://developer.huawei.com/consumer/en/doc/best-practices/bpta-smooth-switching).
 
 **Since:** 9
 
@@ -2065,8 +1944,7 @@ the next video in advance, thereby improving the switching performance. For deta
 release(callback: AsyncCallback<void>): void
 ```
 
-Releases the playback resources. This API can be called when the AVPlayer is in any state except released. This
-API uses an asynchronous callback to return the result.
+Releases the playback resources. This API can be called when the AVPlayer is in any state except released. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -2092,8 +1970,7 @@ API uses an asynchronous callback to return the result.
 release(): Promise<void>
 ```
 
-Releases the playback resources. This API can be called when the AVPlayer is in any state except released. This
-API uses a promise to return the result.
+Releases the playback resources. This API can be called when the AVPlayer is in any state except released. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -2119,8 +1996,7 @@ API uses a promise to return the result.
 removePlaybackMediaSource(id: string): Promise<void>
 ```
 
-Removes the specified playback media source from the player's playlist.
-If the id does not exist in the current playlist, the method returns immediately.
+Removes the specified playback media source from the player's playlist. If the id does not exist in the current playlist, the method returns immediately.
 
 **Since:** 26.0.0
 
@@ -2155,8 +2031,7 @@ If the id does not exist in the current playlist, the method returns immediately
 reset(callback: AsyncCallback<void>): void
 ```
 
-Resets audio and video playback. This API can be called only when the AVPlayer is in the initialized, prepared,
-playing, paused, completed, stopped, or error state. This API uses an asynchronous callback to return the result.
+Resets audio and video playback. This API can be called only when the AVPlayer is in the initialized, prepared, playing, paused, completed, stopped, or error state. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -2182,8 +2057,7 @@ playing, paused, completed, stopped, or error state. This API uses an asynchrono
 reset(): Promise<void>
 ```
 
-Resets audio and video playback. This API can be called only when the AVPlayer is in the initialized, prepared,
-playing, paused, completed, stopped, or error state. This API uses a promise to return the result.
+Resets audio and video playback. This API can be called only when the AVPlayer is in the initialized, prepared, playing, paused, completed, stopped, or error state. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -2209,13 +2083,7 @@ playing, paused, completed, stopped, or error state. This API uses a promise to 
 seek(timeMs: number, mode?: SeekMode): void
 ```
 
-Seeks to the specified playback position. This API can be called only when the AVPlayer is in the prepared,
-playing, paused, or completed state. You can check whether the seek operation takes effect by subscribing to the
-[on('seekDone')](arkts-media-avplayer-i.md#on-5) event.
-
-> **NOTE**
->
-> Since API version 24, **seek** is supported in live streaming scenarios.
+Seeks to the specified playback position. This API can be called only when the AVPlayer is in the prepared, playing, paused, or completed state. You can check whether the seek operation takes effect by subscribing to the [on('seekDone')](arkts-media-avplayer-i.md#on-5) event. > **NOTE** > > Since API version 24, **seek** is supported in live streaming scenarios.
 
 **Since:** 9
 
@@ -2238,8 +2106,7 @@ playing, paused, or completed state. You can check whether the seek operation ta
 seekToDefaultPosition(): void
 ```
 
-Seeks to the default access point of the playback source. For live streams, the latest recommended access point
-is used. For on-demand videos, the start position of the video is used (equivalent to **seek(0)**).
+Seeks to the default access point of the playback source. For live streams, the latest recommended access point is used. For on-demand videos, the start position of the video is used (equivalent to **seek(0)**).
 
 **Since:** 26.0.0
 
@@ -2259,8 +2126,7 @@ is used. For on-demand videos, the start position of the video is used (equivale
 selectTrack(index: number, mode?: SwitchMode): Promise<void>
 ```
 
-Selects a track when the AVPlayer plays multimedia resources with multiple audio or video tracks. This API uses a
-promise to return the result.
+Selects a track when the AVPlayer plays multimedia resources with multiple audio or video tracks. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -2296,10 +2162,7 @@ promise to return the result.
 setBitrate(bitrate: number): void
 ```
 
-Sets the bitrate for the streaming media. This API is valid only for HLS/DASH streams. By default, the AVPlayer
-selects a proper bitrate based on the network connection speed. This API can be called only when the AVPlayer is
-in the prepared, playing, paused, or completed state. You can check whether the setting takes effect by
-subscribing to the [bitrateDone](arkts-media-avplayer-i.md#on-8) event.
+Sets the bitrate for the streaming media. This API is valid only for HLS/DASH streams. By default, the AVPlayer selects a proper bitrate based on the network connection speed. This API can be called only when the AVPlayer is in the prepared, playing, paused, or completed state. You can check whether the setting takes effect by subscribing to the [bitrateDone](arkts-media-avplayer-i.md#on-8) event.
 
 **Since:** 9
 
@@ -2319,10 +2182,7 @@ subscribing to the [bitrateDone](arkts-media-avplayer-i.md#on-8) event.
 setDecryptionConfig(mediaKeySession: drm.MediaKeySession, secureVideoPath: boolean): void
 ```
 
-Sets the decryption configuration. When receiving an
-[on('mediaKeySystemInfoUpdate')](arkts-media-avplayer-i.md#on-1)
-event, create the related configuration and set the decryption configuration based on the information in the
-reported event. Otherwise, the playback fails.
+Sets the decryption configuration. When receiving an [on('mediaKeySystemInfoUpdate')](arkts-media-avplayer-i.md#on-1) event, create the related configuration and set the decryption configuration based on the information in the reported event. Otherwise, the playback fails.
 
 **Since:** 11
 
@@ -2349,18 +2209,7 @@ reported event. Otherwise, the playback fails.
 setLoudnessGain(loudnessGain: number): Promise<void>
 ```
 
-Sets the loudness gain of the AVPlayer. After this API is called, the loudness gain takes effect immediately. This
-API uses a promise to return the result.
-
-> **NOTE**
->
-> - This API can be called when the AVPlayer is in the prepared, playing, paused, completed, or stopped state.
->
-> - Before calling this API, ensure that the audio rendering information has been set in
-> **AVPlayer.audioRendererInfo** and the **usage** parameter in **audioRendererInfo** has been set to
-> [STREAM_USAGE_MUSIC](../../apis-audio-kit/arkts-apis/arkts-audio-streamusage-e.md),
-> [STREAM_USAGE_MOVIE](../../apis-audio-kit/arkts-apis/arkts-audio-streamusage-e.md), or
-> [STREAM_USAGE_AUDIOBOOK](../../apis-audio-kit/arkts-apis/arkts-audio-streamusage-e.md).
+Sets the loudness gain of the AVPlayer. After this API is called, the loudness gain takes effect immediately. This API uses a promise to return the result. > **NOTE** > > - This API can be called when the AVPlayer is in the prepared, playing, paused, completed, or stopped state. > > - Before calling this API, ensure that the audio rendering information has been set in > **AVPlayer.audioRendererInfo** and the **usage** parameter in **audioRendererInfo** has been set to > [STREAM_USAGE_MUSIC](../../apis-audio-kit/arkts-apis/arkts-audio-streamusage-e.md), > [STREAM_USAGE_MOVIE](../../apis-audio-kit/arkts-apis/arkts-audio-streamusage-e.md), or > [STREAM_USAGE_AUDIOBOOK](../../apis-audio-kit/arkts-apis/arkts-audio-streamusage-e.md).
 
 **Since:** 21
 
@@ -2384,10 +2233,7 @@ API uses a promise to return the result.
 setMediaMuted(mediaType: MediaType, muted: boolean): Promise<void>
 ```
 
-Mutes or unmutes the audio. Since API version 20, this API also supports whether to display the video image. This
-API uses a promise to return the result.
-
-This API can be called only when the AVPlayer is in the prepared, playing, paused, or completed state.
+Mutes or unmutes the audio. Since API version 20, this API also supports whether to display the video image. This API uses a promise to return the result. This API can be called only when the AVPlayer is in the prepared, playing, paused, or completed state.
 
 **Since:** 12
 
@@ -2421,8 +2267,7 @@ This API can be called only when the AVPlayer is in the prepared, playing, pause
 setMediaSource(src: MediaSource, strategy?: PlaybackStrategy): Promise<void>
 ```
 
-Sets a source of streaming media that can be pre-downloaded, downloads the media data, and temporarily stores the
-data in the memory. This API uses a promise to return the result.
+Sets a source of streaming media that can be pre-downloaded, downloads the media data, and temporarily stores the data in the memory. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -2456,10 +2301,7 @@ data in the memory. This API uses a promise to return the result.
 setPlaybackRange(startTimeMs: number, endTimeMs: number, mode?: SeekMode) : Promise<void>
 ```
 
-Sets the playback range and seeks to the start position of the range based on the specified
-[SeekMode](arkts-media-seekmode-e.md). After the setting, only the content in the specified
-range of the audio or video file is played. This API uses a promise to return the result. It can be used in the
-initialized, prepared, paused, stopped, or completed state.
+Sets the playback range and seeks to the start position of the range based on the specified [SeekMode](arkts-media-seekmode-e.md). After the setting, only the content in the specified range of the audio or video file is played. This API uses a promise to return the result. It can be used in the initialized, prepared, paused, stopped, or completed state.
 
 **Since:** 18
 
@@ -2494,13 +2336,7 @@ initialized, prepared, paused, stopped, or completed state.
 setPlaybackRate(rate: number): void
 ```
 
-Sets the playback rate. This API can be called only when the AVPlayer is in the prepared, playing, paused, or
-completed state. The value range is [0.125, 4.0]. You can check whether the setting takes effect through the
-[playbackRateDone](arkts-media-avplayer-i.md#on-7) event.
-
-> **NOTE**
->
-> This API is not supported in live mode.
+Sets the playback rate. This API can be called only when the AVPlayer is in the prepared, playing, paused, or completed state. The value range is [0.125, 4.0]. You can check whether the setting takes effect through the [playbackRateDone](arkts-media-avplayer-i.md#on-7) event. > **NOTE** > > This API is not supported in live mode.
 
 **Since:** 20
 
@@ -2527,8 +2363,7 @@ completed state. The value range is [0.125, 4.0]. You can check whether the sett
 setPlaybackStrategy(strategy: PlaybackStrategy): Promise<void>
 ```
 
-Sets a playback strategy. This API can be called only when the AVPlayer is in the initialized state. This API
-uses a promise to return the result.
+Sets a playback strategy. This API can be called only when the AVPlayer is in the initialized state. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -2561,13 +2396,7 @@ uses a promise to return the result.
 setSpeed(speed: PlaybackSpeed): void
 ```
 
-Sets the playback speed. This API can be called only when the AVPlayer is in the prepared, playing, paused, or
-completed state. You can check whether the speed setting takes effect by subscribing to the
-[on('speedDone')](arkts-media-avplayer-i.md#on-6) event.
-
-> **NOTE**
->
-> This method is not supported in live streaming scenarios.
+Sets the playback speed. This API can be called only when the AVPlayer is in the prepared, playing, paused, or completed state. You can check whether the speed setting takes effect by subscribing to the [on('speedDone')](arkts-media-avplayer-i.md#on-6) event. > **NOTE** > > This method is not supported in live streaming scenarios.
 
 **Since:** 9
 
@@ -2587,11 +2416,7 @@ completed state. You can check whether the speed setting takes effect by subscri
 setSuperResolution(enabled: boolean) : Promise<void>
 ```
 
-Enables or disables super resolution. This API can be called when the AVPlayer is in the initialized, prepared,
-playing, paused, completed, or stopped state. This API uses a promise to return the result.
-
-Before calling [prepare()](arkts-media-avplayer-i.md#prepare-1), enable super resolution
-by using [PlaybackStrategy](arkts-media-playbackstrategy-i.md).
+Enables or disables super resolution. This API can be called when the AVPlayer is in the initialized, prepared, playing, paused, completed, or stopped state. This API uses a promise to return the result. Before calling [prepare()](arkts-media-avplayer-i.md#prepare-1), enable super resolution by using [PlaybackStrategy](arkts-media-playbackstrategy-i.md).
 
 **Since:** 18
 
@@ -2625,8 +2450,7 @@ by using [PlaybackStrategy](arkts-media-playbackstrategy-i.md).
 setTrackSelectionFilter(filter : TrackSelectionFilter): Promise<void>
 ```
 
-Sets a track selection filter for the player. The player will use this filter to select available tracks for
-playback. This API uses a promise to return the result.
+Sets a track selection filter for the player. The player will use this filter to select available tracks for playback. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 
@@ -2658,14 +2482,7 @@ playback. This API uses a promise to return the result.
 setVideoWindowSize(width: number, height: number) : Promise<void>
 ```
 
-Sets the resolution of the output video after super resolution. This API can be called when the AVPlayer is in
-the initialized, prepared, playing, paused, completed, or stopped state. This API uses a promise to return the
-result.
-
-The input parameter values must be in the range of 320 × 320 to 1920 × 1080 (in px).
-
-Before calling [prepare()](arkts-media-avplayer-i.md#prepare-1), enable super resolution
-by using [PlaybackStrategy](arkts-media-playbackstrategy-i.md).
+Sets the resolution of the output video after super resolution. This API can be called when the AVPlayer is in the initialized, prepared, playing, paused, completed, or stopped state. This API uses a promise to return the result. The input parameter values must be in the range of 320 × 320 to 1920 × 1080 (in px). Before calling [prepare()](arkts-media-avplayer-i.md#prepare-1), enable super resolution by using [PlaybackStrategy](arkts-media-playbackstrategy-i.md).
 
 **Since:** 18
 
@@ -2701,9 +2518,7 @@ by using [PlaybackStrategy](arkts-media-playbackstrategy-i.md).
 setVolume(volume: number): void
 ```
 
-Sets the playback volume. This API can be called only when the AVPlayer is in the prepared, playing, paused, or
-completed state. You can check whether the volume setting takes effect by subscribing to the
-[on('volumeChange')](arkts-media-avplayer-i.md#on-3) event.
+Sets the playback volume. This API can be called only when the AVPlayer is in the prepared, playing, paused, or completed state. You can check whether the volume setting takes effect by subscribing to the [on('volumeChange')](arkts-media-avplayer-i.md#on-3) event.
 
 **Since:** 9
 
@@ -2723,8 +2538,7 @@ completed state. You can check whether the volume setting takes effect by subscr
 stop(callback: AsyncCallback<void>): void
 ```
 
-Stops audio and video playback. This API can be called only when the AVPlayer is in the prepared, playing, paused,
-or completed state. This API uses an asynchronous callback to return the result.
+Stops audio and video playback. This API can be called only when the AVPlayer is in the prepared, playing, paused, or completed state. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -2750,8 +2564,7 @@ or completed state. This API uses an asynchronous callback to return the result.
 stop(): Promise<void>
 ```
 
-Stops audio and video playback. This API can be called only when the AVPlayer is in the prepared, playing, paused,
-or completed state. This API uses a promise to return the result.
+Stops audio and video playback. This API can be called only when the AVPlayer is in the prepared, playing, paused, or completed state. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -2777,9 +2590,7 @@ or completed state. This API uses a promise to return the result.
 audioEffectMode ?: audio.AudioEffectMode
 ```
 
-Audio effect mode. The audio effect mode is a dynamic property and is restored to the default value
-**EFFECT_DEFAULT** when **usage** of **audioRendererInfo** is changed. It can be set only when the AVPlayer is in
-the prepared, playing, paused, or completed state.
+Audio effect mode. The audio effect mode is a dynamic property and is restored to the default value **EFFECT_DEFAULT** when **usage** of **audioRendererInfo** is changed. It can be set only when the AVPlayer is in the prepared, playing, paused, or completed state.
 
 **Type:** audio.AudioEffectMode
 
@@ -2795,12 +2606,7 @@ the prepared, playing, paused, or completed state.
 audioInterruptMode?: audio.InterruptMode
 ```
 
-Audio interruption mode. The default value is **SHARE_MODE**. It is a dynamic property
-
-and can be set only when the AVPlayer is in the prepared, playing, paused, or completed state.
-
-To take effect, this property must be set before
-[play()](arkts-media-avplayer-i.md#play-1) is called for the first time.
+Audio interruption mode. The default value is **SHARE_MODE**. It is a dynamic property and can be set only when the AVPlayer is in the prepared, playing, paused, or completed state. To take effect, this property must be set before [play()](arkts-media-avplayer-i.md#play-1) is called for the first time.
 
 **Type:** audio.InterruptMode
 
@@ -2816,15 +2622,7 @@ To take effect, this property must be set before
 audioRendererInfo?: audio.AudioRendererInfo
 ```
 
-Audio renderer information. If the media source contains videos, the default value of **usage** is
-**STREAM_USAGE_MOVIE**. Otherwise, the default value of **usage** is **STREAM_USAGE_MUSIC**. The default value of
-**rendererFlags** is 0. If the default value of **usage** does not meet the requirements, configure
-[audio.AudioRendererInfo](../../apis-audio-kit/arkts-apis/arkts-audio-audiorendererinfo-i.md).
-
-This parameter can be set only when the AVPlayer is in the initialized state.
-
-To take effect, this property must be set before
-[prepare()](arkts-media-avplayer-i.md#prepare-1) is called for the first time.
+Audio renderer information. If the media source contains videos, the default value of **usage** is **STREAM_USAGE_MOVIE**. Otherwise, the default value of **usage** is **STREAM_USAGE_MUSIC**. The default value of **rendererFlags** is 0. If the default value of **usage** does not meet the requirements, configure [audio.AudioRendererInfo](../../apis-audio-kit/arkts-apis/arkts-audio-audiorendererinfo-i.md). This parameter can be set only when the AVPlayer is in the initialized state. To take effect, this property must be set before [prepare()](arkts-media-avplayer-i.md#prepare-1) is called for the first time.
 
 **Type:** audio.AudioRendererInfo
 
@@ -2840,12 +2638,7 @@ To take effect, this property must be set before
 readonly currentTime: number
 ```
 
-Current video playback position, in ms. It can be used as a query parameter when the AVPlayer is in the prepared,
-playing, paused, or completed state.
-
-The value **-1** indicates an invalid value.
-
-In live mode, **-1** is returned by default.
+Current video playback position, in ms. It can be used as a query parameter when the AVPlayer is in the prepared, playing, paused, or completed state. The value **-1** indicates an invalid value. In live mode, **-1** is returned by default.
 
 **Type:** number
 
@@ -2861,33 +2654,7 @@ In live mode, **-1** is returned by default.
 dataSrc?: AVDataSrcDescriptor
 ```
 
-Descriptor of a streaming media asset. It can be set only when the AVPlayer is in the idle state.
-
-**Use scenario**: An application plays a file that has been downloaded from a remote source and saved locally.
-When the application has not yet downloaded the complete audio or video resources, it can start playing the data
-that has already been retrieved. By writing the retrieved data to a local file and simultaneously reading from
-that file, the application can achieve the capability of playing while caching.
-
-The video formats MP4, MPEG-TS, and MKV are supported.
-
-The audio formats M4A, AAC, MP3, OGG, WAV, FLAC, AMR, and APE are supported.
-
-A user is obtaining an audio and video file from a remote server and wants to play the downloaded file content.
-To implement this scenario, do as follows:
-
-1. Obtain the total file size, in bytes. If the total size cannot be obtained, set **fileSize** to **-1**.
-2. Implement the **func** callback to fill in data. If **fileSize** is **-1**, the format of **func** is **func(buffer: ArrayBuffer, length: number)**, and the AVPlayer obtains data in sequence; otherwise, the format is **func(buffer: ArrayBuffer, length: number, pos: number)**, and the AVPlayer seeks and obtains data in the required positions.
-3. Set **AVDataSrcDescriptor {fileSize = size, callback = func}**.
-
-**Notes:**
-
-If the media file to play is in MP4/M4A format, ensure that the **moov** field (specifying the media information)
-is before the **mdat** field (specifying the media data) or the fields before the **moov** field is less than 10
-MB. Otherwise, the parsing fails and the media file cannot be played.
-
-**NOTE**
-
-WebM is no longer supported since API version 11.
+Descriptor of a streaming media asset. It can be set only when the AVPlayer is in the idle state. **Use scenario**: An application plays a file that has been downloaded from a remote source and saved locally. When the application has not yet downloaded the complete audio or video resources, it can start playing the data that has already been retrieved. By writing the retrieved data to a local file and simultaneously reading from that file, the application can achieve the capability of playing while caching. The video formats MP4, MPEG-TS, and MKV are supported. The audio formats M4A, AAC, MP3, OGG, WAV, FLAC, AMR, and APE are supported. A user is obtaining an audio and video file from a remote server and wants to play the downloaded file content. To implement this scenario, do as follows: 1. Obtain the total file size, in bytes. If the total size cannot be obtained, set **fileSize** to **-1**. 2. Implement the **func** callback to fill in data. If **fileSize** is **-1**, the format of **func** is **func(buffer: ArrayBuffer, length: number)**, and the AVPlayer obtains data in sequence; otherwise, the format is **func(buffer: ArrayBuffer, length: number, pos: number)**, and the AVPlayer seeks and obtains data in the required positions. 3. Set **AVDataSrcDescriptor {fileSize = size, callback = func}**. **Notes:** If the media file to play is in MP4/M4A format, ensure that the **moov** field (specifying the media information) is before the **mdat** field (specifying the media data) or the fields before the **moov** field is less than 10 MB. Otherwise, the parsing fails and the media file cannot be played. **NOTE** WebM is no longer supported since API version 11.
 
 **Type:** AVDataSrcDescriptor
 
@@ -2903,12 +2670,7 @@ WebM is no longer supported since API version 11.
 readonly duration: number
 ```
 
-Video duration, in ms. It can be used as a query parameter when the AVPlayer is in the prepared, playing, paused,
-or completed state.
-
-The value **-1** indicates an invalid value.
-
-In live mode, **-1** is returned by default.
+Video duration, in ms. It can be used as a query parameter when the AVPlayer is in the prepared, playing, paused, or completed state. The value **-1** indicates an invalid value. In live mode, **-1** is returned by default.
 
 **Type:** number
 
@@ -2924,32 +2686,7 @@ In live mode, **-1** is returned by default.
 fdSrc?: AVFileDescriptor
 ```
 
-FD of the media asset. It can be set only when the AVPlayer is in the idle state.
-
-**Use scenario**: This property is required when media assets of an application are continuously stored in a
-file.
-
-The video formats MP4, MPEG-TS, and MKV are supported.
-
-The audio formats M4A, AAC, MP3, OGG, WAV, FLAC, AMR, and APE are supported.
-
-Assume that a media file that stores continuous assets consists of the following:
-
-Video 1 (address offset: 0, byte length: 100)
-
-Video 2 (address offset: 101; byte length: 50)
-
-Video 3 (address offset: 151, byte length: 150)
-
-1. To play video 1: AVFileDescriptor { fd = resource handle; offset = 0; length = 100; }
-2. To play video 2: AVFileDescriptor { fd = resource handle; offset = 101; length = 50; }
-3. To play video 3: AVFileDescriptor { fd = resource handle; offset = 151; length = 150; }
-
-To play an independent media file, use **src=fd://xx**.
-
-**NOTE**
-
-WebM is no longer supported since API version 11.
+FD of the media asset. It can be set only when the AVPlayer is in the idle state. **Use scenario**: This property is required when media assets of an application are continuously stored in a file. The video formats MP4, MPEG-TS, and MKV are supported. The audio formats M4A, AAC, MP3, OGG, WAV, FLAC, AMR, and APE are supported. Assume that a media file that stores continuous assets consists of the following: Video 1 (address offset: 0, byte length: 100) Video 2 (address offset: 101; byte length: 50) Video 3 (address offset: 151, byte length: 150) 1. To play video 1: AVFileDescriptor { fd = resource handle; offset = 0; length = 100; } 2. To play video 2: AVFileDescriptor { fd = resource handle; offset = 101; length = 50; } 3. To play video 3: AVFileDescriptor { fd = resource handle; offset = 151; length = 150; } To play an independent media file, use **src=fd://xx**. **NOTE** WebM is no longer supported since API version 11.
 
 **Type:** AVFileDescriptor
 
@@ -2965,10 +2702,7 @@ WebM is no longer supported since API version 11.
 readonly height: number
 ```
 
-Video height, in px. It can be used as a query parameter when the AVPlayer is in the prepared, playing, paused,
-or completed state.
-
-The value **0** indicates an invalid value.
+Video height, in px. It can be used as a query parameter when the AVPlayer is in the prepared, playing, paused, or completed state. The value **0** indicates an invalid value.
 
 **Type:** number
 
@@ -2984,12 +2718,7 @@ The value **0** indicates an invalid value.
 loop: boolean
 ```
 
-Whether to loop playback. **true** to loop, **false** otherwise. The default value is **false**. It is a dynamic
-property
-
-and can be set only when the AVPlayer is in the prepared, playing, paused, or completed state.
-
-This setting is not supported in live mode.
+Whether to loop playback. **true** to loop, **false** otherwise. The default value is **false**. It is a dynamic property and can be set only when the AVPlayer is in the prepared, playing, paused, or completed state. This setting is not supported in live mode.
 
 **Type:** boolean
 
@@ -3005,8 +2734,7 @@ This setting is not supported in live mode.
 playlistLoopMode?: PlaylistLoopMode
 ```
 
-Set the loop mode when playing the media source playlist.
-<br>Default value:PLAYLIST_LOOP_MODE_ALL, which means loops all items in the playlist.
+Set the loop mode when playing the media source playlist. <br>Default value:PLAYLIST_LOOP_MODE_ALL, which means loops all items in the playlist.
 
 **Type:** PlaylistLoopMode
 
@@ -3024,8 +2752,7 @@ Set the loop mode when playing the media source playlist.
 privacyType?: audio.AudioPrivacyType
 ```
 
-Audio privacy configuration. For more information, see {@link #audio.AudioPrivacyType}.
-Default value: PRIVACY_TYPE_PUBLIC.
+Audio privacy configuration. For more information, see {@link #audio.AudioPrivacyType}. Default value: PRIVACY_TYPE_PUBLIC.
 
 **Type:** audio.AudioPrivacyType
 
@@ -3057,17 +2784,7 @@ AVPlayer state. It can be used as a query parameter when the AVPlayer is in any 
 surfaceId?: string
 ```
 
-Video window ID. By default, there is no video window.
-
-This property can be set for the first time only when the AVPlayer is in the initialized state.
-
-It can be updated when the AVPlayer is in the prepared, playing, paused, completed, or stopped state. After the
-reset, the video is played in the new window.
-
-**Use scenario**: It is used to render the window for video playback (not involved in audio-only playback
-scenarios).
-
-[Create a surface ID through XComponent](../../apis-arkui/arkts-components/arkts-arkui-xcomponentcontroller-c.md#getxcomponentsurfaceid-1).
+Video window ID. By default, there is no video window. This property can be set for the first time only when the AVPlayer is in the initialized state. It can be updated when the AVPlayer is in the prepared, playing, paused, completed, or stopped state. After the reset, the video is played in the new window. **Use scenario**: It is used to render the window for video playback (not involved in audio-only playback scenarios). [Create a surface ID through XComponent](../../apis-arkui/arkts-components/arkts-arkui-xcomponentcontroller-c.md#getxcomponentsurfaceid-1).
 
 **Type:** string
 
@@ -3083,33 +2800,7 @@ scenarios).
 url?: string
 ```
 
-URL of the media asset. It can be set only when the AVPlayer is in the idle state.
-
-Supported video formats: MP4, MPEG-TS, and MKV.
-
-Supported audio formats: M4A, AAC, MP3, OGG, WAV, FLAC, AMR, and APE.
-
-**Example of supported URLs**:
-
-1. FD: fd://xx
-
-![](../../../../reference/apis-media-kit/figures/en-us_image_url.png)
-
-2. HTTP: http://xx
-3. HTTPS: https://xx
-4. HLS: http://xx or https://xx
-
-**NOTE**
-
-- To set the playback URL, you need to declare the
-[ohos.permission.INTERNET](../../../../security/AccessToken/permissions-for-all.md#ohospermissioninternet)
-permission. The related error code is
-[201 Permission Denied](../../../../reference/errorcode-universal.md#201-permission-denied).
-- WebM is no longer supported since API version 11.
-- After the resource handle (FD) is transferred to an AVPlayer instance, do not use the resource handle to
-perform other read and write operations, including but not limited to transferring this handle to other AVPlayer,
-AVMetadataExtractor, AVImageGenerator, or AVTranscoder instance. Competition occurs when multiple AVPlayers use
-the same resource handle to read and write files at the same time, resulting in errors in obtaining data.
+URL of the media asset. It can be set only when the AVPlayer is in the idle state. Supported video formats: MP4, MPEG-TS, and MKV. Supported audio formats: M4A, AAC, MP3, OGG, WAV, FLAC, AMR, and APE. **Example of supported URLs**: 1. FD: fd://xx ![](../../../../reference/apis-media-kit/figures/en-us_image_url.png) 2. HTTP: http://xx 3. HTTPS: https://xx 4. HLS: http://xx or https://xx **NOTE** - To set the playback URL, you need to declare the [ohos.permission.INTERNET](../../../../security/AccessToken/permissions-for-all.md#ohospermissioninternet) permission. The related error code is [201 Permission Denied](../../../../reference/errorcode-universal.md#201-permission-denied). - WebM is no longer supported since API version 11. - After the resource handle (FD) is transferred to an AVPlayer instance, do not use the resource handle to perform other read and write operations, including but not limited to transferring this handle to other AVPlayer, AVMetadataExtractor, AVImageGenerator, or AVTranscoder instance. Competition occurs when multiple AVPlayers use the same resource handle to read and write files at the same time, resulting in errors in obtaining data.
 
 **Type:** string
 
@@ -3125,9 +2816,7 @@ the same resource handle to read and write files at the same time, resulting in 
 videoScaleType?: VideoScaleType
 ```
 
-Video scale type. The default value is **VIDEO_SCALE_TYPE_FIT**. It is a dynamic property
-
-and can be set only when the AVPlayer is in the prepared, playing, paused, or completed state.
+Video scale type. The default value is **VIDEO_SCALE_TYPE_FIT**. It is a dynamic property and can be set only when the AVPlayer is in the prepared, playing, paused, or completed state.
 
 **Type:** VideoScaleType
 
@@ -3143,10 +2832,7 @@ and can be set only when the AVPlayer is in the prepared, playing, paused, or co
 readonly width: number
 ```
 
-Video width, in px. It can be used as a query parameter when the AVPlayer is in the prepared, playing, paused, or
-completed state.
-
-The value **0** indicates an invalid value.
+Video width, in px. It can be used as a query parameter when the AVPlayer is in the prepared, playing, paused, or completed state. The value **0** indicates an invalid value.
 
 **Type:** number
 

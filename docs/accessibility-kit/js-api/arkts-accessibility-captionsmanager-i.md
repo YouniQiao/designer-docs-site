@@ -1,8 +1,6 @@
 # CaptionsManager
 
-Implements configuration management for captions. Before calling any API of **CaptionsManager**, you must use the
-[accessibility.getCaptionsManager()](arkts-accessibility-getcaptionsmanager-f.md#getcaptionsmanager-1) API to obtain a **CaptionsManager**
-instance.
+Implements configuration management for captions. Before calling any API of **CaptionsManager**, you must use the [accessibility.getCaptionsManager()](arkts-accessibility-getcaptionsmanager-f.md#getcaptionsmanager-1) API to obtain a **CaptionsManager** instance.
 
 **Since:** 8
 
@@ -20,8 +18,7 @@ import { accessibility } from '@kit.AccessibilityKit';
 off(type: 'enableChange', callback?: Callback<boolean>): void
 ```
 
-Unsubscribes from the state changes of captions configuration. This API uses an asynchronous callback to return
-the result.
+Unsubscribes from the state changes of captions configuration. This API uses an asynchronous callback to return the result.
 
 **Since:** 8
 
@@ -137,17 +134,7 @@ struct Index {
 on(type: 'enableChange', callback: Callback<boolean>): void
 ```
 
-Subscribes to the state changes of captions configuration. This API uses an asynchronous callback to return the
-result.
-
-> **NOTE**
->
-> - The callback parameter for registering a listener must use a named function instead of an anonymous function.
-> Otherwise, a new underlying object is created each time the function is called, causing memory leakage.
->
-> - After calling this method, you must use
-> [off('enableChange')](arkts-accessibility-captionsmanager-i.md#off-1)
-> to cancel the listener before the object's lifecycle ends. Otherwise, a crash may occur.
+Subscribes to the state changes of captions configuration. This API uses an asynchronous callback to return the result. > **NOTE** > > - The callback parameter for registering a listener must use a named function instead of an anonymous function. > Otherwise, a new underlying object is created each time the function is called, causing memory leakage. > > - After calling this method, you must use > [off('enableChange')](arkts-accessibility-captionsmanager-i.md#off-1) > to cancel the listener before the object's lifecycle ends. Otherwise, a crash may occur.
 
 **Since:** 8
 
@@ -200,16 +187,7 @@ struct Index {
 on(type: 'styleChange', callback: Callback<CaptionsStyle>): void
 ```
 
-Subscribes to captions style changes. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> - The callback parameter for registering a listener must use a named function instead of an anonymous function.
-> Otherwise, a new underlying object is created each time the function is called, causing memory leakage.
->
-> - After calling this method, you must use
-> [off('styleChange')](arkts-accessibility-captionsmanager-i.md#off-2)
-> to cancel the listener before the object's lifecycle ends. Otherwise, a crash may occur.
+Subscribes to captions style changes. This API uses an asynchronous callback to return the result. > **NOTE** > > - The callback parameter for registering a listener must use a named function instead of an anonymous function. > Otherwise, a new underlying object is created each time the function is called, causing memory leakage. > > - After calling this method, you must use > [off('styleChange')](arkts-accessibility-captionsmanager-i.md#off-2) > to cancel the listener before the object's lifecycle ends. Otherwise, a crash may occur.
 
 **Since:** 8
 
@@ -262,8 +240,7 @@ struct Index {
 enabled: boolean
 ```
 
-Whether to enable captions configuration. The value **true** indicates that the caption configuration is enabled,
-and **false** indicates the opposite.
+Whether to enable captions configuration. The value **true** indicates that the caption configuration is enabled, and **false** indicates the opposite.
 
 **Type:** boolean
 

@@ -1,7 +1,6 @@
 # FaceAuthManager (System API)
 
-Provides APIs for facial authentication management. It provides management features during face enrollment,
-including setting the surface ID of the face preview page.
+Provides APIs for facial authentication management. It provides management features during face enrollment, including setting the surface ID of the face preview page.
 
 **Since:** 9
 
@@ -44,10 +43,7 @@ let faceAuthManager = new faceAuth.FaceAuthManager();
 setSurfaceId(surfaceId: string): void
 ```
 
-Sets the surface ID of the face preview page during face enrollment. This API must be used together with
-[addCredential](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-useridentitymanager-c-sys.md#addcredential-1) to display the face
-preview page through the surface of the
-[getXComponentSurfaceId](../../apis-arkui/arkts-components/arkts-arkui-xcomponentcontroller-c.md#getxcomponentsurfaceid-1) component.
+Sets the surface ID of the face preview page during face enrollment. This API must be used together with [addCredential](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-useridentitymanager-c-sys.md#addcredential-1) to display the face preview page through the surface of the [getXComponentSurfaceId](../../apis-arkui/arkts-components/arkts-arkui-xcomponentcontroller-c.md#getxcomponentsurfaceid-1) component.
 
 **Since:** 9
 

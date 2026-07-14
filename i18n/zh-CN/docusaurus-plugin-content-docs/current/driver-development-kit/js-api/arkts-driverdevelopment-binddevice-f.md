@@ -7,8 +7,7 @@ function bindDevice(deviceId: number, onDisconnect: AsyncCallback<number>,
     callback: AsyncCallback<{deviceId: number; remote: rpc.IRemoteObject;}>): void
 ```
 
-根据queryDevices()返回的设备信息绑定设备。
-需要调用[deviceManager.queryDevices()](arkts-driverdevelopment-querydevices-f.md#querydevices-1)获取设备信息以及device。
+根据queryDevices()返回的设备信息绑定设备。 需要调用[deviceManager.queryDevices()](arkts-driverdevelopment-querydevices-f.md#querydevices-1)获取设备信息以及device。
 
 **起始版本：** 10
 
@@ -73,8 +72,7 @@ function bindDevice(deviceId: number, onDisconnect: AsyncCallback<number>): Prom
     remote: rpc.IRemoteObject;}>
 ```
 
-根据queryDevices()返回的设备信息绑定设备。
-需要调用[deviceManager.queryDevices](arkts-driverdevelopment-querydevices-f.md#querydevices-1)获取设备信息以及device。
+根据queryDevices()返回的设备信息绑定设备。 需要调用[deviceManager.queryDevices](arkts-driverdevelopment-querydevices-f.md#querydevices-1)获取设备信息以及device。
 
 **起始版本：** 10
 

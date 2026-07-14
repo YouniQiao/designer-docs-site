@@ -1,7 +1,6 @@
 # Dir
 
-Manages directories. Before calling a method of the **Dir** class, use the **opendir()** method synchronously or
-asynchronously to create a **Dir** instance.
+Manages directories. Before calling a method of the **Dir** class, use the **opendir()** method synchronously or asynchronously to create a **Dir** instance.
 
 **Since:** 6
 
@@ -17,8 +16,7 @@ asynchronously to create a **Dir** instance.
 close(): Promise<void>
 ```
 
-Closes a directory. This API uses a promise to return the result. After a directory is closed, the file descriptor
-in **Dir** will be released and no directory entry can be read from **Dir**.
+Closes a directory. This API uses a promise to return the result. After a directory is closed, the file descriptor in **Dir** will be released and no directory entry can be read from **Dir**.
 
 **Since:** 7
 
@@ -50,8 +48,7 @@ dir.close().then(() => {
 close(callback: AsyncCallback<void>): void
 ```
 
-Closes a directory. This API uses an asynchronous callback to return the result. After a directory is closed, the
-file descriptor in **Dir** will be released and no directory entry can be read from **Dir**.
+Closes a directory. This API uses an asynchronous callback to return the result. After a directory is closed, the file descriptor in **Dir** will be released and no directory entry can be read from **Dir**.
 
 **Since:** 7
 
@@ -83,8 +80,7 @@ dir.close((err: BusinessError) => {
 closeSync(): void
 ```
 
-Closes a directory. After a directory is closed, the file descriptor in **Dir** will be released and no directory
-entry can be read from **Dir**.
+Closes a directory. After a directory is closed, the file descriptor in **Dir** will be released and no directory entry can be read from **Dir**.
 
 **Since:** 6
 

@@ -1,7 +1,6 @@
 # RecommendationOptions
 
-Defines the image recommendation options.
-The image recommendation feature depends on the image data analysis capability, which varies with devices.
+Defines the image recommendation options. The image recommendation feature depends on the image data analysis capability, which varies with devices.
 
 **Since:** 11
 
@@ -19,8 +18,7 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 defaultRecommendationType?: RecommendationType
 ```
 
-This configuration takes effect only when `RecommendationTypeList` is set.
-When enabled, the Picker will directly display the corresponding recommended photos upon opening.
+Recommended tag displayed when the picker is opened. This configuration takes effect only after **recommendationTypeList** is set. If the tag exists, the tag page is displayed by default. If the tag does not exist, the All tag page is displayed by default.
 
 **Type:** RecommendationType
 
@@ -38,7 +36,7 @@ When enabled, the Picker will directly display the corresponding recommended pho
 recommendationTypeList?: Array<RecommendationType>
 ```
 
-List of recommended image types.
+List of recommendation types. If images of multiple categories need to be recommended based on the enumerated value, set this parameter.
 
 **Type:** Array<RecommendationType>
 

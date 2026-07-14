@@ -20,8 +20,7 @@ import { camera } from '@kit.CameraKit';
 getSupportedPhysicalApertures(): Array<PhysicalAperture>
 ```
 
-Gets the supported physical apertures.
-Move to ApertureQuery interface from Aperture since 12.
+Gets the supported physical apertures. Move to ApertureQuery interface from Aperture since 12.
 
 **Since:** 24
 

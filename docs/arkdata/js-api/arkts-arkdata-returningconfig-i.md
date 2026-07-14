@@ -1,7 +1,6 @@
 # ReturningConfig
 
-Specifies the list of field names to return after returning-related APIs are called and the maximum number of
-records allowed in the result set.
+Specifies the list of field names to return after returning-related APIs are called and the maximum number of records allowed in the result set.
 
 **Since:** 23
 
@@ -19,8 +18,7 @@ import { relationalStore } from '@kit.ArkData';
 columns: Array<string>
 ```
 
-Fields returned in the result set. One to four fields are supported for input. Note: Field names containing
-spaces ( ), commas (,), or asterisks (*) are not allowed.
+Fields returned in the result set. One to four fields are supported for input. Note: Field names containing spaces ( ), commas (,), or asterisks (*) are not allowed.
 
 **Type:** Array<string>
 
@@ -36,9 +34,7 @@ spaces ( ), commas (,), or asterisks (*) are not allowed.
 maxReturningCount?: number
 ```
 
-Maximum number of rows returned in the result set. The default value is **1024**, and the maximum value is
-**32766**. Note: If the actual number of modified rows exceeds the value set for **maxReturningCount**, the
-system will discard the excess data.
+Maximum number of rows returned in the result set. The default value is **1024**, and the maximum value is **32766**. Note: If the actual number of modified rows exceeds the value set for **maxReturningCount**, the system will discard the excess data.
 
 **Type:** number
 

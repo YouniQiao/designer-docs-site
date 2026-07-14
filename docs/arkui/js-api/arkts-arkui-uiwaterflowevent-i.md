@@ -1,8 +1,6 @@
 # UIWaterFlowEvent
 
-Represents the return value of the
-[getEvent('WaterFlow')](FrameNode:typeNode.getEvent(node: FrameNode, nodeType: 'WaterFlow')) method in
-**frameNode**, which can be used to set scroll events for a **WaterFlow** node.
+Represents the return value of the [getEvent('WaterFlow')](FrameNode:typeNode.getEvent(node: FrameNode, nodeType: 'WaterFlow')) method in **frameNode**, which can be used to set scroll events for a **WaterFlow** node.
 
 **Inheritance/Implementation:** UIWaterFlowEvent extends [UIScrollableCommonEvent](arkts-arkui-uiscrollablecommonevent-i.md)
 
@@ -16,10 +14,7 @@ Represents the return value of the
 setOnDidScroll(callback: OnScrollCallback | undefined): void
 ```
 
-Sets the callback for the
-[onDidScroll](../../../../reference/apis-arkui/arkui-ts/ts-container-scrollable-common.md#ondidscroll12) event.
-
-If the input parameter is **undefined**, the event callback is reset.
+Sets the callback for the [onDidScroll](../../../../reference/apis-arkui/arkui-ts/ts-container-scrollable-common.md#ondidscroll12) event. If the input parameter is **undefined**, the event callback is reset.
 
 **Since:** 19
 
@@ -41,10 +36,7 @@ If the input parameter is **undefined**, the event callback is reset.
 setOnScrollIndex(callback: OnWaterFlowScrollIndexCallback | undefined): void
 ```
 
-Sets the callback of the
-[onScrollIndex](../../../../reference/apis-arkui/arkui-ts/ts-container-waterflow.md#onscrollindex11) event.
-
-If the input parameter is **undefined**, the event callback is reset.
+Sets the callback of the [onScrollIndex](../../../../reference/apis-arkui/arkui-ts/ts-container-waterflow.md#onscrollindex11) event. If the input parameter is **undefined**, the event callback is reset.
 
 **Since:** 19
 
@@ -66,10 +58,7 @@ If the input parameter is **undefined**, the event callback is reset.
 setOnWillScroll(callback: OnWillScrollCallback | undefined): void
 ```
 
-Sets the callback for the
-[onWillScroll](../../../../reference/apis-arkui/arkui-ts/ts-container-scrollable-common.md#onwillscroll12) event.
-
-If the input parameter is **undefined**, the event callback is reset.
+Sets the callback for the [onWillScroll](../../../../reference/apis-arkui/arkui-ts/ts-container-scrollable-common.md#onwillscroll12) event. If the input parameter is **undefined**, the event callback is reset.
 
 **Since:** 19
 

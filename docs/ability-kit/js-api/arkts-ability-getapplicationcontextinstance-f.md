@@ -12,8 +12,7 @@ import { application } from '@kit.AbilityKit';
 export function getApplicationContextInstance(): ApplicationContext
 ```
 
-Obtains the application context. This API provides context access independent of the base class **Context**.
-Repeated calls to this API obtain the same ApplicationContext instance.
+Obtains the application context. This API provides context access independent of the base class **Context**. Repeated calls to this API obtain the same ApplicationContext instance.
 
 **Since:** 23
 

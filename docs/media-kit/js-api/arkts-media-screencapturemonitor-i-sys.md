@@ -1,7 +1,6 @@
 # ScreenCaptureMonitor (System API)
 
-A class that provides APIs to query and monitor the system screen recorder status. Before calling any API,
-you must use getScreenCaptureMonitor() to obtain a ScreenCaptureMonitor instance.
+A class that provides APIs to query and monitor the system screen recorder status. Before calling any API, you must use getScreenCaptureMonitor() to obtain a ScreenCaptureMonitor instance.
 
 **Since:** 18
 
@@ -55,8 +54,7 @@ screenCaptureMonitor.off('systemScreenRecorder');
 on(type: 'systemScreenRecorder', callback: Callback<ScreenCaptureEvent>): void
 ```
 
-Subscribes to state change events of the system screen recorder. From the ScreenCaptureEvent event reported,
-you can determine whether the system screen recorder is working.
+Subscribes to state change events of the system screen recorder. From the ScreenCaptureEvent event reported, you can determine whether the system screen recorder is working.
 
 **Since:** 18
 
@@ -88,32 +86,6 @@ screenCaptureMonitor.on('systemScreenRecorder', (event: media.ScreenCaptureEvent
 })
 
 ```
-
-## onSystemScreenRecorder
-
-```TypeScript
-onSystemScreenRecorder(callback: Callback<ScreenCaptureEvent>): void
-```
-
-Subscribes to state change events of the system screen recorder. From the ScreenCaptureEvent event reported,
-you can determine whether the system screen recorder is working.
-This event is triggered when the state of the system screen recorder changes.
-
-**System capability:** SystemCapability.Multimedia.Media.AVScreenCapture
-
-**System API:** This is a system API.
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | Callback&lt;ScreenCaptureEvent&gt; | Yes | Callback invoked when the event is triggered,where ScreenCaptureEvent indicates the new state. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. |
 
 ## isSystemScreenRecorderWorking
 

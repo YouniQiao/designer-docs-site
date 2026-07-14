@@ -12,9 +12,7 @@
 isLoggedIn?: boolean
 ```
 
-是否登录。true表示已登录；false表示未登录。
-
-此接口为系统接口，默认为false。
+是否登录。true表示已登录；false表示未登录。 此接口为系统接口，默认为false。
 
 **类型：** boolean
 
@@ -30,9 +28,7 @@ isLoggedIn?: boolean
 shortName?: string
 ```
 
-系统账号的短名称。
-
-此接口为系统接口，默认为空。
+系统账号的短名称。 此接口为系统接口，默认为空。
 
 **类型：** string
 

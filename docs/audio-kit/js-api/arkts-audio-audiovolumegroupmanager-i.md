@@ -1,14 +1,6 @@
 # AudioVolumeGroupManager
 
-This interface implements volume management for an audio group.
-
-Before calling any API in AudioVolumeGroupManager, you must use
-[getVolumeGroupManager](arkts-audio-audiovolumemanager-i.md#getvolumegroupmanager-1)
-to obtain an AudioVolumeGroupManager instance.
-
-> **NOTE**
->
-> - The initial APIs of this interface are supported since API version 9.
+This interface implements volume management for an audio group. Before calling any API in AudioVolumeGroupManager, you must use [getVolumeGroupManager](arkts-audio-audiovolumemanager-i.md#getvolumegroupmanager-1) to obtain an AudioVolumeGroupManager instance. > **NOTE** > > - The initial APIs of this interface are supported since API version 9.
 
 **Since:** 9
 
@@ -26,8 +18,7 @@ import { audio } from '@kit.AudioKit';
 getMaxAmplitudeForInputDevice(inputDevice: AudioDeviceDescriptor): Promise<number>
 ```
 
-Obtains the maximum amplitude (in the range [0, 1]) of the audio stream for an input device. This API uses a
-promise to return the result.
+Obtains the maximum amplitude (in the range [0, 1]) of the audio stream for an input device. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -59,8 +50,7 @@ promise to return the result.
 getMaxAmplitudeForOutputDevice(outputDevice: AudioDeviceDescriptor): Promise<number>
 ```
 
-Obtains the maximum amplitude (in the range [0, 1]) of the audio stream for an output device. This API uses a
-promise to return the result.
+Obtains the maximum amplitude (in the range [0, 1]) of the audio stream for an output device. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -652,8 +642,7 @@ Checks whether a stream is muted. This API returns the result synchronously.
 isVolumeUnadjustable(): boolean
 ```
 
-Checks whether the fixed volume mode is enabled. When the fixed volume mode is enabled, the volume cannot be
-adjusted. This API returns the result synchronously.
+Checks whether the fixed volume mode is enabled. When the fixed volume mode is enabled, the volume cannot be adjusted. This API returns the result synchronously.
 
 **Since:** 10
 
@@ -722,9 +711,7 @@ Unsubscribes from the microphone state change event. This API uses an asynchrono
 on(type: 'ringerModeChange', callback: Callback<AudioRingMode>): void
 ```
 
-Subscribes to the ringer mode change event, which is triggered when the
-[AudioRingMode](arkts-audio-audioringmode-e.md) changes. This API uses an asynchronous callback
-to return the result.
+Subscribes to the ringer mode change event, which is triggered when the [AudioRingMode](arkts-audio-audioringmode-e.md) changes. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -750,12 +737,7 @@ to return the result.
 on(type: 'micStateChange', callback: Callback<MicStateChangeEvent>): void
 ```
 
-Subscribes to the microphone state change event, which is triggered when the microphone state is changed. This
-API uses an asynchronous callback to return the result.
-
-Currently, when multiple AudioManager instances are used in a single process, only the subscription of the last
-instance takes effect, and the subscription of other instances is overwritten (even if the last instance does not
-initiate a subscription). Therefore, you are advised to use a single AudioManager instance.
+Subscribes to the microphone state change event, which is triggered when the microphone state is changed. This API uses an asynchronous callback to return the result. Currently, when multiple AudioManager instances are used in a single process, only the subscription of the last instance takes effect, and the subscription of other instances is overwritten (even if the last instance does not initiate a subscription). Therefore, you are advised to use a single AudioManager instance.
 
 **Since:** 9
 

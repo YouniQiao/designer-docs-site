@@ -1,8 +1,6 @@
 # AreaMode
 
-Enumerates the file encryption levels, which are used to ensure data security for applications across different
-scenarios. You can select the appropriate encryption level based on the application requirements to protect user
-data.
+Enumerates the file encryption levels, which are used to ensure data security for applications across different scenarios. You can select the appropriate encryption level based on the application requirements to protect user data.
 
 **Since:** 9
 
@@ -30,8 +28,7 @@ Device-level encryption. Directories with this encryption level are accessible a
 EL2 = 1
 ```
 
-User-level encryption. Directories with this encryption level are accessible only after the device is powered on
-and the password is entered (for the first time).
+User-level encryption. Directories with this encryption level are accessible only after the device is powered on and the password is entered (for the first time).
 
 **Since:** 9
 
@@ -47,13 +44,7 @@ and the password is entered (for the first time).
 EL3 = 2
 ```
 
-User-level encryption. The file permissions vary according to their scenarios.
-
-- An open file is always readable and writable regardless of whether the screen is locked.
-- When the screen is locked, a closed file cannot be opened, read, or written. When the screen is unlocked, such
-a file can be opened, read, and written.
-- When the screen is locked, a file can be created and then opened and written but not read. When the screen is
-unlocked, a file can be created and then opened, read, and written.
+User-level encryption. The file permissions vary according to their scenarios. - An open file is always readable and writable regardless of whether the screen is locked. - When the screen is locked, a closed file cannot be opened, read, or written. When the screen is unlocked, such a file can be opened, read, and written. - When the screen is locked, a file can be created and then opened and written but not read. When the screen is unlocked, a file can be created and then opened, read, and written.
 
 **Since:** 11
 
@@ -69,14 +60,7 @@ unlocked, a file can be created and then opened, read, and written.
 EL4 = 3
 ```
 
-User-level encryption. The file permissions vary according to their scenarios.
-
-- When the screen is locked, an open file is not readable or writable. When the screen is unlocked, such a file
-is readable and writable.
-- When the screen is locked, a closed file cannot be opened, read, or written. When the screen is unlocked, such
-a file can be opened, read, and written.
-- When the screen is locked, a file cannot be created. When the screen is unlocked, a file can be created and
-then opened, read, and written.
+User-level encryption. The file permissions vary according to their scenarios. - When the screen is locked, an open file is not readable or writable. When the screen is unlocked, such a file is readable and writable. - When the screen is locked, a closed file cannot be opened, read, or written. When the screen is unlocked, such a file can be opened, read, and written. - When the screen is locked, a file cannot be created. When the screen is unlocked, a file can be created and then opened, read, and written.
 
 **Since:** 11
 
@@ -92,15 +76,7 @@ then opened, read, and written.
 EL5 = 4
 ```
 
-Application-level encryption. The file permissions vary according to their scenarios.
-
-- An open file is always readable and writable regardless of whether the screen is locked.
-
-When the screen is locked, a closed file can be opened, read, and written only if the reserved key is obtained by
-calling [Access](js-apis-screenLockFileManager.md#screenlockfilemanageracquireaccess). When the screen is
-unlocked, such a file can be opened, read, and written.
-
-A file can be created and then opened, read, and written regardless of whether the screen is locked.
+Application-level encryption. The file permissions vary according to their scenarios. - An open file is always readable and writable regardless of whether the screen is locked. When the screen is locked, a closed file can be opened, read, and written only if the reserved key is obtained by calling [Access](js-apis-screenLockFileManager.md#screenlockfilemanageracquireaccess). When the screen is unlocked, such a file can be opened, read, and written. A file can be created and then opened, read, and written regardless of whether the screen is locked.
 
 **Since:** 12
 

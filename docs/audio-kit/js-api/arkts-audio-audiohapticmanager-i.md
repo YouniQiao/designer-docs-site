@@ -1,7 +1,6 @@
 # AudioHapticManager
 
-Manages the audio-haptic feature. Before calling any API in AudioHapticManager, you must use
-[getAudioHapticManager](arkts-audio-getaudiohapticmanager-f.md#getaudiohapticmanager-1) to create an AudioHapticManager instance.
+Manages the audio-haptic feature. Before calling any API in AudioHapticManager, you must use [getAudioHapticManager](arkts-audio-getaudiohapticmanager-f.md#getaudiohapticmanager-1) to create an AudioHapticManager instance.
 
 **Since:** 11
 
@@ -19,8 +18,7 @@ import { audioHaptic } from '@kit.AudioKit';
 createPlayer(id: number, options?: AudioHapticPlayerOptions): Promise<AudioHapticPlayer>
 ```
 
-Create an audio haptic player. This method uses a promise to return the result. If haptics is needed, caller
-should have the permission of ohos.permission.VIBRATE.
+Create an audio haptic player. This method uses a promise to return the result. If haptics is needed, caller should have the permission of ohos.permission.VIBRATE.
 
 **Since:** 11
 
@@ -76,14 +74,7 @@ audioHapticManagerInstance.createPlayer(id, options).then((value: audioHaptic.Au
 registerSource(audioUri: string, hapticUri: string): Promise<number>
 ```
 
-Registers audio and haptic resources via URIs. This API uses a promise to return the result.
-
-> **NOTE**
->
-> A maximum of 128 resources can be registered at the same time for an application. Any attempt to register
-> beyond this limit will fail (returning a negative resource ID). You are advised to reasonably manage the number
-> of registered resources. For resources that are no longer used, you are advised to unregister them in a timely
-> manner.
+Registers audio and haptic resources via URIs. This API uses a promise to return the result. > **NOTE** > > A maximum of 128 resources can be registered at the same time for an application. Any attempt to register > beyond this limit will fail (returning a negative resource ID). You are advised to reasonably manage the number > of registered resources. For resources that are no longer used, you are advised to unregister them in a timely > manner.
 
 **Since:** 11
 
@@ -132,14 +123,7 @@ audioHapticManagerInstance.registerSource(audioUri, hapticUri).then((value: numb
 registerSourceFromFd(audioFd: AudioHapticFileDescriptor, hapticFd: AudioHapticFileDescriptor): Promise<number>
 ```
 
-Registers audio and haptic resources via file descriptors. This API uses a promise to return the result.
-
-> **NOTE**
->
-> A maximum of 128 resources can be registered at the same time for an application. Any attempt to register
-> beyond this limit will fail (returning a negative resource ID). You are advised to reasonably manage the number
-> of registered resources. For resources that are no longer used, you are advised to unregister them in a timely
-> manner.
+Registers audio and haptic resources via file descriptors. This API uses a promise to return the result. > **NOTE** > > A maximum of 128 resources can be registered at the same time for an application. Any attempt to register > beyond this limit will fail (returning a negative resource ID). You are advised to reasonably manage the number > of registered resources. For resources that are no longer used, you are advised to unregister them in a timely > manner.
 
 **Since:** 20
 
@@ -276,12 +260,7 @@ audioHapticManagerInstance.setStreamUsage(id, usage);
 unregisterSource(id: number): Promise<void>
 ```
 
-Unregisters an audio-haptic source. This API uses a promise to return the result.
-
-> **NOTE**
->
-> For resources that are no longer used, you are advised to unregister them in a timely manner to avoid issues
-> such as resource leaks or the number of resources exceeding the upper limit.
+Unregisters an audio-haptic source. This API uses a promise to return the result. > **NOTE** > > For resources that are no longer used, you are advised to unregister them in a timely manner to avoid issues > such as resource leaks or the number of resources exceeding the upper limit.
 
 **Since:** 11
 

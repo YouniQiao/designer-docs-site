@@ -27,11 +27,11 @@ import { Environment } from '@kit.CoreFileKit';
 
 | Name | Description |
 | --- | --- |
-| [getExternalStorageDir](arkts-corefile-getexternalstoragedir-f-sys.md#getexternalstoragedir-1) | Obtains the sandbox path of the root directory of an external storage card. This API is available only to thedevices with the SystemCapability.FileManagement.File.Environment.FolderObtain system capability. |
+| [getExternalStorageDir](arkts-corefile-getexternalstoragedir-f-sys.md#getexternalstoragedir-1) | Obtains the sandbox path of the root directory of an external storage card. This API is available only to the devices with the SystemCapability.FileManagement.File.Environment.FolderObtain system capability. |
 | [getStorageDataDir](arkts-corefile-getstoragedatadir-f-sys.md#getstoragedatadir-1) | Obtains the root directory of the memory. This API uses a promise to return the result. |
 | [getStorageDataDir](arkts-corefile-getstoragedatadir-f-sys.md#getstoragedatadir-2) | Obtains the root directory of the memory. This API uses an asynchronous callback to return the result. |
 | [getUserDataDir](arkts-corefile-getuserdatadir-f-sys.md#getuserdatadir-1) | Obtains the root directory of user files. This API uses a promise to return the result. |
 | [getUserDataDir](arkts-corefile-getuserdatadir-f-sys.md#getuserdatadir-2) | Obtains the root directory of user files. This API uses an asynchronous callback to return the result. |
-| [getUserHomeDir](arkts-corefile-getuserhomedir-f-sys.md#getuserhomedir-1) | Obtains the sandbox path of the built-in card directory of the current user. This API is available only to thedevices with the SystemCapability.FileManagement.File.Environment.FolderObtain system capability. |
+| [getUserHomeDir](arkts-corefile-getuserhomedir-f-sys.md#getuserhomedir-1) | Obtains the sandbox path of the built-in card directory of the current user. This API is available only to the devices with the SystemCapability.FileManagement.File.Environment.FolderObtain system capability. |
 <!--DelEnd-->
 

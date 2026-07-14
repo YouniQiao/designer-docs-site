@@ -53,7 +53,7 @@ The callback interface is invoked when the connection succeeds.
 | -- | -- |
 | (OH_AbilityRuntime_ConnectOptions \*connectOptions | Represents a pointer to an {@linkOH_AbilityRuntime_ConnectOptions} instance. |
 | [AbilityBase_Element](capi-abilitybase-abilitybase-element.md) \*element | Represents the element name of the extension ability. |
-| [OHIPCRemoteProxy](../IPCKit/capi-ohipcparcel-ohipcremoteproxy.md) \*proxy | Represents the remote object instance. |
+| OHIPCRemoteProxy \*proxy | Represents the remote object instance. |
 
 ### OH_AbilityRuntime_ConnectOptions_OnDisconnectCallback()
 

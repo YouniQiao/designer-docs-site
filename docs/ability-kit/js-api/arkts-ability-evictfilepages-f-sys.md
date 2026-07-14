@@ -12,8 +12,7 @@ import { appMemoryOptimizer } from '@kit.AbilityKit';
 function evictFilePages(fileNames: Array<string>): Promise<void>
 ```
 
-Sends a request to the system to release file page cache of specified files. The system determines
-whether to actually perform the release based on the current memory status, and success is not guaranteed.
+Sends a request to the system to release file page cache of specified files. The system determines whether to actually perform the release based on the current memory status, and success is not guaranteed.
 
 **Since:** 26.0.0
 

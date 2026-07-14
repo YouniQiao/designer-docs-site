@@ -46,7 +46,7 @@ brand: string
 deviceType: string
 ```
 
-设备类型。
+设备类型。常见取值：phone（手机）、tablet（平板）、tv（电视）、wearable（可穿戴设备）等。
 
 **类型：** string
 
@@ -110,7 +110,7 @@ model: string
 product: string
 ```
 
-代号。
+产品代号。
 
 **类型：** string
 
@@ -142,7 +142,7 @@ region: string
 screenDensity: number
 ```
 
-屏幕密度。
+屏幕像素密度。表示屏幕每英寸的像素点数量，单位为dpi(dots per inch)。不同设备的屏幕像素密度存在差异。
 
 **类型：** number
 
@@ -158,11 +158,7 @@ screenDensity: number
 screenShape: 'rect' | 'circle'
 ```
 
-屏幕形状。可取值：
-
-- rect：方形屏；
-
-- circle：圆形屏。
+屏幕形状。可取值： - rect：方形屏； - circle：圆形屏。
 
 **类型：** 'rect' | 'circle'
 
@@ -178,7 +174,7 @@ screenShape: 'rect' | 'circle'
 windowHeight: number
 ```
 
-可使用的窗口高度。
+可使用的窗口宽度，单位px。不同设备的可使用窗口尺寸存在差异。
 
 **类型：** number
 
@@ -194,7 +190,7 @@ windowHeight: number
 windowWidth: number
 ```
 
-可使用的窗口宽度。
+可使用的窗口宽度，单位px。不同设备的可使用窗口尺寸存在差异。
 
 **类型：** number
 

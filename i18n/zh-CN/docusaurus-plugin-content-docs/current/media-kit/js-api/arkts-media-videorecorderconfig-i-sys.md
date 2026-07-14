@@ -1,6 +1,6 @@
 # VideoRecorderConfig（系统接口）
 
-Provides the video recorder configuration definitions.
+视频录制配置定义。
 
 **起始版本：** 9
 
@@ -14,7 +14,7 @@ Provides the video recorder configuration definitions.
 audioSourceType?: AudioSourceType
 ```
 
-audio source type, details see @AudioSourceType .
+音频源类型，详见AudioSourceType。
 
 **类型：** AudioSourceType
 
@@ -30,7 +30,7 @@ audio source type, details see @AudioSourceType .
 location?: Location
 ```
 
-geographical location information.
+地理位置信息。
 
 **类型：** Location
 
@@ -46,7 +46,7 @@ geographical location information.
 profile: VideoRecorderProfile
 ```
 
-video recorder profile, can get by "getVideoRecorderProfile", details see @VideoRecorderProfile .=
+视频录制配置参数，可通过getVideoRecorderProfile获取，详见VideoRecorderProfile。
 
 **类型：** VideoRecorderProfile
 
@@ -62,8 +62,7 @@ video recorder profile, can get by "getVideoRecorderProfile", details see @Video
 rotation?: number
 ```
 
-Sets the video rotation angle in output file, and for the file to playback. mp4 support.
-the range of rotation angle should be {0, 90, 180, 270}, default is 0.
+设置视频输出文件中的旋转角度，用于文件播放。仅mp4格式支持。 旋转角度取值为{0, 90, 180, 270}，默认值为0。
 
 **类型：** number
 
@@ -79,9 +78,7 @@ the range of rotation angle should be {0, 90, 180, 270}, default is 0.
 url: string
 ```
 
-video output uri.support two kind of uri now.
-format like: scheme + "://" + "context".
-fd: fd://fd
+视频输出URI。支持两种URI格式。 格式：scheme + "://" + "context"。 fd格式：fd://fd
 
 **类型：** string
 
@@ -97,7 +94,7 @@ fd: fd://fd
 videoSourceType: VideoSourceType
 ```
 
-video source type, details see @VideoSourceType .
+视频源类型，详见VideoSourceType。
 
 **类型：** VideoSourceType
 

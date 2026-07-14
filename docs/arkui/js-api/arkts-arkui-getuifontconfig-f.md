@@ -12,11 +12,7 @@ import { font } from '@kit.ArkUI';
 function getUIFontConfig(): UIFontConfig
 ```
 
-Obtains the UI font configuration information in the system font configuration file.
-
-This API can only obtain the information in the configuration file. If the UI context is not clear, **undefined**
-may be returned. If you want to obtain the full font configuration information, you are advised to use the
-[getSystemFontFullNamesByType](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-getsystemfontfullnamesbytype-f.md#getsystemfontfullnamesbytype-1) API of the font engine.
+Obtains the UI font configuration information in the system font configuration file. This API can only obtain the information in the configuration file. If the UI context is not clear, **undefined** may be returned. If you want to obtain the full font configuration information, you are advised to use the [getSystemFontFullNamesByType](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-getsystemfontfullnamesbytype-f.md#getsystemfontfullnamesbytype-1) API of the font engine.
 
 **Since:** 11
 

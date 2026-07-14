@@ -6,9 +6,7 @@
 function importContactsViaUI(context: Context, contacts: Array<Contact>): Promise<Array<number>>
 ```
 
-通过UI交互批量导入多个联系人。
-
-每次最多可导入100个联系人。
+通过UI交互批量导入多个联系人。 每次最多可导入100个联系人。
 
 **起始版本：** 26.0.0
 

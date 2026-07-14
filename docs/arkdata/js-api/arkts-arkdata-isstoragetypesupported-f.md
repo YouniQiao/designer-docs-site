@@ -12,8 +12,7 @@ import { preferences } from '@kit.ArkData';
 function isStorageTypeSupported(type: StorageType): boolean
 ```
 
-Checks whether the specified storage type is supported. This API returns the result synchronously. If the storage
-type is supported, **true** is returned. Otherwise, **false** is returned.
+Checks whether the specified storage type is supported. This API returns the result synchronously. If the storage type is supported, **true** is returned. Otherwise, **false** is returned.
 
 **Since:** 18
 

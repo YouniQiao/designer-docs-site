@@ -18,13 +18,13 @@ import { wifi } from '@kit.ConnectivityKit';
 
 | Name | Description |
 | --- | --- |
-| [addUntrustedConfig](arkts-connectivity-adduntrustedconfig-f.md#adduntrustedconfig-1) | Adds a specified untrusted hotspot configuration.&lt;p&gt;This method adds one configuration at a time. After this configuration is added, your device will determine whether to connect to the hotspot. |
-| [addUntrustedConfig](arkts-connectivity-adduntrustedconfig-f.md#adduntrustedconfig-2) | Adds a specified untrusted hotspot configuration.&lt;p&gt;This method adds one configuration at a time. After this configuration is added, your device will determine whether to connect to the hotspot. |
+| [addUntrustedConfig](arkts-connectivity-adduntrustedconfig-f.md#adduntrustedconfig-1) | Adds a specified untrusted hotspot configuration. &lt;p&gt;This method adds one configuration at a time. After this configuration is added, your device will determine whether to connect to the hotspot. |
+| [addUntrustedConfig](arkts-connectivity-adduntrustedconfig-f.md#adduntrustedconfig-2) | Adds a specified untrusted hotspot configuration. &lt;p&gt;This method adds one configuration at a time. After this configuration is added, your device will determine whether to connect to the hotspot. |
 | [createGroup](arkts-connectivity-creategroup-f.md#creategroup-1) | Creates a P2P group. |
 | [getCountryCode](arkts-connectivity-getcountrycode-f.md#getcountrycode-1) | Obtains the country code of this device. |
 | [getCurrentGroup](arkts-connectivity-getcurrentgroup-f.md#getcurrentgroup-1) | Obtains information about the current group. |
 | [getCurrentGroup](arkts-connectivity-getcurrentgroup-f.md#getcurrentgroup-2) | Obtains information about the current group. |
-| [getIpInfo](arkts-connectivity-getipinfo-f.md#getipinfo-1) | Obtains the IP information of a Wi-Fi connection.&lt;p&gt;The IP information includes the host IP address, gateway address, and DNS information. |
+| [getIpInfo](arkts-connectivity-getipinfo-f.md#getipinfo-1) | Obtains the IP information of a Wi-Fi connection. &lt;p&gt;The IP information includes the host IP address, gateway address, and DNS information. |
 | [getLinkedInfo](arkts-connectivity-getlinkedinfo-f.md#getlinkedinfo-1) | Obtains information about a Wi-Fi connection. |
 | [getLinkedInfo](arkts-connectivity-getlinkedinfo-f.md#getlinkedinfo-2) | Obtains information about a Wi-Fi connection. |
 | [getP2pLinkedInfo](arkts-connectivity-getp2plinkedinfo-f.md#getp2plinkedinfo-1) | Obtains information about a P2P connection. |
@@ -37,11 +37,11 @@ import { wifi } from '@kit.ConnectivityKit';
 | [isConnected](arkts-connectivity-isconnected-f.md#isconnected-1) | Checks whether a Wi-Fi connection has been set up. |
 | [isFeatureSupported](arkts-connectivity-isfeaturesupported-f.md#isfeaturesupported-1) | Checks whether this device supports a specified feature. |
 | [isWifiActive](arkts-connectivity-iswifiactive-f.md#iswifiactive-1) | Queries the Wi-Fi status |
-| [off](arkts-connectivity-off-f.md#off-1) | Unsubscribe Wi-Fi status change events.&lt;p&gt;All callback functions will be deregistered If there is no specific callback parameter.&lt;/p&gt; |
-| [off](arkts-connectivity-off-f.md#off-2) | Unsubscribe Wi-Fi connection change events.&lt;p&gt;All callback functions will be deregistered If there is no specific callback parameter.&lt;/p&gt; |
-| [off](arkts-connectivity-off-f.md#off-3) | Unsubscribe Wi-Fi scan status change events.&lt;p&gt;All callback functions will be deregistered If there is no specific callback parameter.&lt;/p&gt; |
-| [off](arkts-connectivity-off-f.md#off-4) | Unsubscribe Wi-Fi rssi change events.&lt;p&gt;All callback functions will be deregistered If there is no specific callback parameter.&lt;/p&gt; |
-| [off](arkts-connectivity-off-f.md#off-6) | Unsubscribe Wi-Fi hotspot state change events.&lt;p&gt;All callback functions will be deregistered If there is no specific callback parameter.&lt;/p&gt; |
+| [off](arkts-connectivity-off-f.md#off-1) | Unsubscribe Wi-Fi status change events. &lt;p&gt;All callback functions will be deregistered If there is no specific callback parameter.&lt;/p&gt; |
+| [off](arkts-connectivity-off-f.md#off-2) | Unsubscribe Wi-Fi connection change events. &lt;p&gt;All callback functions will be deregistered If there is no specific callback parameter.&lt;/p&gt; |
+| [off](arkts-connectivity-off-f.md#off-3) | Unsubscribe Wi-Fi scan status change events. &lt;p&gt;All callback functions will be deregistered If there is no specific callback parameter.&lt;/p&gt; |
+| [off](arkts-connectivity-off-f.md#off-4) | Unsubscribe Wi-Fi rssi change events. &lt;p&gt;All callback functions will be deregistered If there is no specific callback parameter.&lt;/p&gt; |
+| [off](arkts-connectivity-off-f.md#off-6) | Unsubscribe Wi-Fi hotspot state change events. &lt;p&gt;All callback functions will be deregistered If there is no specific callback parameter.&lt;/p&gt; |
 | [off](arkts-connectivity-off-f.md#off-9) | Unsubscribe P2P status change events. |
 | [off](arkts-connectivity-off-f.md#off-10) | Unsubscribe P2P connection change events. |
 | [off](arkts-connectivity-off-f.md#off-11) | Unsubscribe P2P local device change events. |
@@ -62,9 +62,9 @@ import { wifi } from '@kit.ConnectivityKit';
 | [p2pCancelConnect](arkts-connectivity-p2pcancelconnect-f.md#p2pcancelconnect-1) | Canceling a P2P connection. |
 | [p2pConnect](arkts-connectivity-p2pconnect-f.md#p2pconnect-1) | Initiates a P2P connection to a device with the specified configuration. |
 | [removeGroup](arkts-connectivity-removegroup-f.md#removegroup-1) | Removes a P2P group. |
-| [removeUntrustedConfig](arkts-connectivity-removeuntrustedconfig-f.md#removeuntrustedconfig-1) | Removes a specified untrusted hotspot configuration.&lt;p&gt;This method removes one configuration at a time. |
-| [removeUntrustedConfig](arkts-connectivity-removeuntrustedconfig-f.md#removeuntrustedconfig-2) | Removes a specified untrusted hotspot configuration.&lt;p&gt;This method removes one configuration at a time. |
-| [scan](arkts-connectivity-scan-f.md#scan-1) | Scans Wi-Fi hotspot.&lt;p&gt;This API works in asynchronous mode.&lt;/p&gt; |
+| [removeUntrustedConfig](arkts-connectivity-removeuntrustedconfig-f.md#removeuntrustedconfig-1) | Removes a specified untrusted hotspot configuration. &lt;p&gt;This method removes one configuration at a time. |
+| [removeUntrustedConfig](arkts-connectivity-removeuntrustedconfig-f.md#removeuntrustedconfig-2) | Removes a specified untrusted hotspot configuration. &lt;p&gt;This method removes one configuration at a time. |
+| [scan](arkts-connectivity-scan-f.md#scan-1) | Scans Wi-Fi hotspot. &lt;p&gt;This API works in asynchronous mode.&lt;/p&gt; |
 | [startDiscoverDevices](arkts-connectivity-startdiscoverdevices-f.md#startdiscoverdevices-1) | Discover Wi-Fi P2P devices. |
 | [stopDiscoverDevices](arkts-connectivity-stopdiscoverdevices-f.md#stopdiscoverdevices-1) | Stops discovering Wi-Fi P2P devices. |
 
@@ -73,26 +73,26 @@ import { wifi } from '@kit.ConnectivityKit';
 
 | Name | Description |
 | --- | --- |
-| [addDeviceConfig](arkts-connectivity-adddeviceconfig-f-sys.md#adddeviceconfig-1) | Adds Wi-Fi connection configuration to the device.&lt;p&gt;The configuration will be updated when the configuration is added.&lt;/p&gt; |
-| [addDeviceConfig](arkts-connectivity-adddeviceconfig-f-sys.md#adddeviceconfig-2) | Adds Wi-Fi connection configuration to the device.&lt;p&gt;The configuration will be updated when the configuration is added.&lt;/p&gt; |
+| [addDeviceConfig](arkts-connectivity-adddeviceconfig-f-sys.md#adddeviceconfig-1) | Adds Wi-Fi connection configuration to the device. &lt;p&gt;The configuration will be updated when the configuration is added.&lt;/p&gt; |
+| [addDeviceConfig](arkts-connectivity-adddeviceconfig-f-sys.md#adddeviceconfig-2) | Adds Wi-Fi connection configuration to the device. &lt;p&gt;The configuration will be updated when the configuration is added.&lt;/p&gt; |
 | [connectToDevice](arkts-connectivity-connecttodevice-f-sys.md#connecttodevice-1) | Connects to Wi-Fi network. |
 | [connectToNetwork](arkts-connectivity-connecttonetwork-f-sys.md#connecttonetwork-1) | Connects to Wi-Fi network. |
 | [deletePersistentGroup](arkts-connectivity-deletepersistentgroup-f-sys.md#deletepersistentgroup-1) | Deletes the persistent P2P group with the specified network ID. |
-| [disableHotspot](arkts-connectivity-disablehotspot-f-sys.md#disablehotspot-1) | Disables a Wi-Fi hotspot.&lt;p&gt;This method is asynchronous. If Wi-Fi is enabled after the Wi-Fi hotspot is disabled, Wi-Fi may be re-enabled. |
-| [disableNetwork](arkts-connectivity-disablenetwork-f-sys.md#disablenetwork-1) | Disables a specified network.&lt;p&gt;The disabled network will not be associated with again. |
+| [disableHotspot](arkts-connectivity-disablehotspot-f-sys.md#disablehotspot-1) | Disables a Wi-Fi hotspot. &lt;p&gt;This method is asynchronous. If Wi-Fi is enabled after the Wi-Fi hotspot is disabled, Wi-Fi may be re-enabled. |
+| [disableNetwork](arkts-connectivity-disablenetwork-f-sys.md#disablenetwork-1) | Disables a specified network. &lt;p&gt;The disabled network will not be associated with again. |
 | [disableWifi](arkts-connectivity-disablewifi-f-sys.md#disablewifi-1) | Disables Wi-Fi. |
 | [disconnect](arkts-connectivity-disconnect-f-sys.md#disconnect-1) | Disconnect Wi-Fi network. |
-| [enableHotspot](arkts-connectivity-enablehotspot-f-sys.md#enablehotspot-1) | Enables a Wi-Fi hotspot.&lt;p&gt;This method is asynchronous. After the Wi-Fi hotspot is enabled, Wi-Fi may be disabled. |
+| [enableHotspot](arkts-connectivity-enablehotspot-f-sys.md#enablehotspot-1) | Enables a Wi-Fi hotspot. &lt;p&gt;This method is asynchronous. After the Wi-Fi hotspot is enabled, Wi-Fi may be disabled. |
 | [enableWifi](arkts-connectivity-enablewifi-f-sys.md#enablewifi-1) | Enables Wi-Fi. |
-| [getDeviceConfigs](arkts-connectivity-getdeviceconfigs-f-sys.md#getdeviceconfigs-1) | Obtains the list of all existing Wi-Fi configurations.&lt;p&gt;You can obtain only the Wi-Fi configurations you created on your own application. |
-| [getDeviceMacAddress](arkts-connectivity-getdevicemacaddress-f-sys.md#getdevicemacaddress-1) | Obtains the MAC address of a Wi-Fi device. Wi-Fi must be enabled.&lt;p&gt;The MAC address is unique and cannot be changed. |
+| [getDeviceConfigs](arkts-connectivity-getdeviceconfigs-f-sys.md#getdeviceconfigs-1) | Obtains the list of all existing Wi-Fi configurations. &lt;p&gt;You can obtain only the Wi-Fi configurations you created on your own application. |
+| [getDeviceMacAddress](arkts-connectivity-getdevicemacaddress-f-sys.md#getdevicemacaddress-1) | Obtains the MAC address of a Wi-Fi device. Wi-Fi must be enabled. &lt;p&gt;The MAC address is unique and cannot be changed. |
 | [getHotspotConfig](arkts-connectivity-gethotspotconfig-f-sys.md#gethotspotconfig-1) | Obtains the Wi-Fi hotspot configuration. |
-| [getStations](arkts-connectivity-getstations-f-sys.md#getstations-1) | Obtains the list of clients that are connected to a Wi-Fi hotspot.&lt;p&gt;This method can only be used on a device that serves as a Wi-Fi hotspot. |
-| [getSupportedFeatures](arkts-connectivity-getsupportedfeatures-f-sys.md#getsupportedfeatures-1) | Obtains the features supported by this device.&lt;p&gt;To check whether this device supports a specified feature. |
+| [getStations](arkts-connectivity-getstations-f-sys.md#getstations-1) | Obtains the list of clients that are connected to a Wi-Fi hotspot. &lt;p&gt;This method can only be used on a device that serves as a Wi-Fi hotspot. |
+| [getSupportedFeatures](arkts-connectivity-getsupportedfeatures-f-sys.md#getsupportedfeatures-1) | Obtains the features supported by this device. &lt;p&gt;To check whether this device supports a specified feature. |
 | [isHotspotActive](arkts-connectivity-ishotspotactive-f-sys.md#ishotspotactive-1) | Checks whether Wi-Fi hotspot is active on a device. |
 | [isHotspotDualBandSupported](arkts-connectivity-ishotspotdualbandsupported-f-sys.md#ishotspotdualbandsupported-1) | Checks whether a device serving as a Wi-Fi hotspot supports both the 2.4 GHz and 5 GHz Wi-Fi. |
-| [off](arkts-connectivity-off-f-sys.md#off-5) | Unsubscribe Wi-Fi stream change events.&lt;p&gt;All callback functions will be deregistered If there is no specific callback parameter.&lt;/p&gt; |
-| [off](arkts-connectivity-off-f-sys.md#off-7) | Unsubscribe Wi-Fi hotspot sta join events.&lt;p&gt;All callback functions will be deregistered If there is no specific callback parameter.&lt;/p&gt; |
+| [off](arkts-connectivity-off-f-sys.md#off-5) | Unsubscribe Wi-Fi stream change events. &lt;p&gt;All callback functions will be deregistered If there is no specific callback parameter.&lt;/p&gt; |
+| [off](arkts-connectivity-off-f-sys.md#off-7) | Unsubscribe Wi-Fi hotspot sta join events. &lt;p&gt;All callback functions will be deregistered If there is no specific callback parameter.&lt;/p&gt; |
 | [off](arkts-connectivity-off-f-sys.md#off-8) | Unsubscribe Wi-Fi hotspot sta leave events. |
 | [on](arkts-connectivity-on-f-sys.md#on-5) | Subscribe Wi-Fi stream change events. |
 | [on](arkts-connectivity-on-f-sys.md#on-7) | Subscribe Wi-Fi hotspot sta join events. |
@@ -100,9 +100,9 @@ import { wifi } from '@kit.ConnectivityKit';
 | [reassociate](arkts-connectivity-reassociate-f-sys.md#reassociate-1) | Re-associate to current network. |
 | [reconnect](arkts-connectivity-reconnect-f-sys.md#reconnect-1) | Re-connects to current network. |
 | [removeAllNetwork](arkts-connectivity-removeallnetwork-f-sys.md#removeallnetwork-1) | Removes all the saved Wi-Fi configurations. |
-| [removeDevice](arkts-connectivity-removedevice-f-sys.md#removedevice-1) | Deletes a Wi-Fi network with a specified ID.&lt;p&gt;After a Wi-Fi network is deleted, its configuration will be deleted from the list of Wi-Fi configurations.If the Wi-Fi network is being connected, the connection will be interrupted.The application can only delete Wi-Fi networks it has created. |
+| [removeDevice](arkts-connectivity-removedevice-f-sys.md#removedevice-1) | Deletes a Wi-Fi network with a specified ID. &lt;p&gt;After a Wi-Fi network is deleted, its configuration will be deleted from the list of Wi-Fi configurations. If the Wi-Fi network is being connected, the connection will be interrupted. The application can only delete Wi-Fi networks it has created. |
 | [setDeviceName](arkts-connectivity-setdevicename-f-sys.md#setdevicename-1) | Sets the name of the Wi-Fi P2P device. |
-| [setHotspotConfig](arkts-connectivity-sethotspotconfig-f-sys.md#sethotspotconfig-1) | Sets the hotspot for a device.&lt;p&gt;Only OPEN and WPA2 PSK hotspot can be configured. |
+| [setHotspotConfig](arkts-connectivity-sethotspotconfig-f-sys.md#sethotspotconfig-1) | Sets the hotspot for a device. &lt;p&gt;Only OPEN and WPA2 PSK hotspot can be configured. |
 | [updateNetwork](arkts-connectivity-updatenetwork-f-sys.md#updatenetwork-1) | Updates the specified Wi-Fi configuration. |
 <!--DelEnd-->
 

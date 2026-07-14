@@ -12,20 +12,7 @@ import { mediaquery } from '@kit.ArkUI';
 function matchMediaSync(condition: string): MediaQueryListener
 ```
 
-Sets the media query condition. This API returns the corresponding media query listener.
-
-> **NOTE**
->
-> - This API is supported since API version 7 and deprecated since API version 18. You are advised to use
-> [matchMediaSync](@link @ohos.arkui.UIContext:MediaQuery#matchMediaSync) instead. Before calling this API, you
-> need to obtain the [MediaQuery](@link @ohos.arkui.UIContext:MediaQuery) object using the
-> [getMediaQuery](@link @ohos.arkui.UIContext:UIContext#getMediaQuery) method in
-> [UIContext](@link @ohos.arkui.UIContext).
->
-> - Since API version 10, you can use the
-> [getMediaQuery](@link @ohos.arkui.UIContext:UIContext#getMediaQuery) API in
-> [UIContext](arkts-arkui-uicontext-c.md) to obtain the
-> [MediaQuery](arkts-arkui-mediaquery-c.md) object associated with the current UI context.
+Sets the media query condition. This API returns the corresponding media query listener. > **NOTE** > > - This API is supported since API version 7 and deprecated since API version 18. You are advised to use > [matchMediaSync](@link @ohos.arkui.UIContext:MediaQuery#matchMediaSync) instead. Before calling this API, you > need to obtain the [MediaQuery](@link @ohos.arkui.UIContext:MediaQuery) object using the > [getMediaQuery](@link @ohos.arkui.UIContext:UIContext#getMediaQuery) method in > [UIContext](@link @ohos.arkui.UIContext). > > - Since API version 10, you can use the > [getMediaQuery](@link @ohos.arkui.UIContext:UIContext#getMediaQuery) API in > [UIContext](arkts-arkui-uicontext-c.md) to obtain the > [MediaQuery](arkts-arkui-mediaquery-c.md) object associated with the current UI context.
 
 **Since:** 7
 

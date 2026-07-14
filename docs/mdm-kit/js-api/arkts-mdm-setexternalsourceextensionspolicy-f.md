@@ -12,20 +12,7 @@ import { securityManager } from '@kit.MDMKit';
 function setExternalSourceExtensionsPolicy(admin: Want, policy: common.ManagedPolicy): void
 ```
 
-Sets the management policy for extensions from external sources.
-
-- DEFAULT:
-
-Default policy with no restrictions applied. Users can enable or disable **Run extensions from external sources**
-in **Settings** > **Privacy & security** > **Advanced option**.
-- DISALLOW:
-
-Policy that disallows extensions from external sources to run. With this policy, currently running extensions can
-continue, but cannot be started after being closed. Users cannot enable **Run extensions from external sources**.
-- FORCE_OPEN:
-
-Policy that forcibly enables extensions from external sources to run. Users cannot disable
-**Run extensions from external sources**.
+Sets the management policy for extensions from external sources. - DEFAULT: Default policy with no restrictions applied. Users can enable or disable **Run extensions from external sources** in **Settings** > **Privacy & security** > **Advanced option**. - DISALLOW: Policy that disallows extensions from external sources to run. With this policy, currently running extensions can continue, but cannot be started after being closed. Users cannot enable **Run extensions from external sources**. - FORCE_OPEN: Policy that forcibly enables extensions from external sources to run. Users cannot disable **Run extensions from external sources**.
 
 **Since:** 22
 

@@ -12,8 +12,7 @@ import { overlay } from '@kit.AbilityKit';
 function setOverlayEnabled(moduleName:string, isEnabled: boolean, callback: AsyncCallback<void>): void
 ```
 
-Enables or disables a module with the overlay feature in the current application. This API uses an asynchronous
-callback to return the result.
+Enables or disables a module with the overlay feature in the current application. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -67,8 +66,7 @@ try {
 function setOverlayEnabled(moduleName:string, isEnabled: boolean): Promise<void>
 ```
 
-Enables or disables a module with the overlay feature in the current application. This API uses a promise to return
-the result.
+Enables or disables a module with the overlay feature in the current application. This API uses a promise to return the result.
 
 **Since:** 10
 

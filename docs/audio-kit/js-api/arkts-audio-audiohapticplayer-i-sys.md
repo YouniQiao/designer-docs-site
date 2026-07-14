@@ -1,8 +1,6 @@
 # AudioHapticPlayer
 
-Implements audio-haptic playback. Before calling any API in AudioHapticPlayer, you must use
-[createPlayer](arkts-audio-audiohapticmanager-i.md#createplayer-1)
-to create an AudioHapticPlayer instance.
+Implements audio-haptic playback. Before calling any API in AudioHapticPlayer, you must use [createPlayer](arkts-audio-audiohapticmanager-i.md#createplayer-1) to create an AudioHapticPlayer instance.
 
 **Since:** 11
 
@@ -20,8 +18,7 @@ import { audioHaptic } from '@kit.AudioKit';
 enableHapticsInSilentMode(enable: boolean): void
 ```
 
-Enable haptics when the ringer mode is silent mode.
-This function should be called before player start or after stop, and before release.
+Enable haptics when the ringer mode is silent mode. This function should be called before player start or after stop, and before release.
 
 **Since:** 20
 
@@ -100,8 +97,7 @@ Check whether the device supports haptics intensity ramp effect.
 setHapticsIntensity(intensity: number): Promise<void>
 ```
 
-Set haptics intensity for this player. This method uses a promise to return the result.
-This function should be called before player release, and can only set once for each starting process.
+Set haptics intensity for this player. This method uses a promise to return the result. This function should be called before player release, and can only set once for each starting process.
 
 **Since:** 20
 
@@ -136,8 +132,7 @@ This function should be called before player release, and can only set once for 
 setHapticsRamp(duration: number, startIntensity: number, endIntensity: number): Promise<void>
 ```
 
-Set haptics intensity ramp effect for this player. This method uses a promise to return the result.
-This function should be called before player start or after stop, and before release.
+Set haptics intensity ramp effect for this player. This method uses a promise to return the result. This function should be called before player start or after stop, and before release.
 
 **Since:** 20
 

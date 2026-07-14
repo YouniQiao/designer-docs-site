@@ -1,7 +1,6 @@
 # MediaSource
 
-The MediaSource class defines the media data information, which is from
-[createMediaSourceWithUrl](arkts-media-createmediasourcewithurl-f.md#createmediasourcewithurl-1).
+The MediaSource class defines the media data information, which is from [createMediaSourceWithUrl](arkts-media-createmediasourcewithurl-f.md#createmediasourcewithurl-1).
 
 **Since:** 12
 

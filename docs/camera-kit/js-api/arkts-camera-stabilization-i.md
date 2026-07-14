@@ -1,11 +1,6 @@
 # Stabilization
 
-**Stabilization** inherits from [StabilizationQuery](arkts-camera-stabilizationquery-i.md).
-It provides APIs to set video stabilization.
-Video stabilization can be set only when the session has a recording stream (
-[VideoOutput](arkts-camera-videooutput-i.md)). Among the enums of
-[VideoStabilizationMode](arkts-camera-videostabilizationmode-e.md), the **HIGH** mode only takes
-effect when the resolution set in [Profile](arkts-camera-profile-i.md) is 1920×1080.
+**Stabilization** inherits from [StabilizationQuery](arkts-camera-stabilizationquery-i.md). It provides APIs to set video stabilization. Video stabilization can be set only when the session has a recording stream ( [VideoOutput](arkts-camera-videooutput-i.md)). Among the enums of [VideoStabilizationMode](arkts-camera-videostabilizationmode-e.md), the **HIGH** mode only takes effect when the resolution set in [Profile](arkts-camera-profile-i.md) is 1920×1080.
 
 **Inheritance/Implementation:** Stabilization extends [StabilizationQuery](arkts-camera-stabilizationquery-i.md)
 
@@ -51,11 +46,7 @@ Obtains the video stabilization mode in use.
 setVideoStabilizationMode(mode: VideoStabilizationMode): void
 ```
 
-Sets a video stabilization mode. Before the setting, call
-[isVideoStabilizationModeSupported](arkts-camera-stabilizationquery-i.md#isvideostabilizationmodesupported-1)
-to check whether the target video stabilization mode is supported. It is recommended that you set the video
-stabilization mode between [commitConfig](arkts-camera-session-i.md#commitconfig-2) and
-[Start](arkts-camera-session-i.md#start-2).
+Sets a video stabilization mode. Before the setting, call [isVideoStabilizationModeSupported](arkts-camera-stabilizationquery-i.md#isvideostabilizationmodesupported-1) to check whether the target video stabilization mode is supported. It is recommended that you set the video stabilization mode between [commitConfig](arkts-camera-session-i.md#commitconfig-2) and [Start](arkts-camera-session-i.md#start-2).
 
 **Since:** 11
 

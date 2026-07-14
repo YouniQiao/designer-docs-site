@@ -1,11 +1,6 @@
 # StackLayoutAlgorithm
 
-堆叠布局算法类。
-
-> **说明：**
->
-> StackLayoutAlgorithm类对象可以赋值给LayoutAlgorithm类型变量，作为[DynamicLayout](arkts-arkui-components-arkdynamiclayout.md)组件的
-> 入参指定布局算法。
+堆叠布局算法类。 > **说明：** > > StackLayoutAlgorithm类对象可以赋值给LayoutAlgorithm类型变量，作为[DynamicLayout](arkts-arkui-components-arkdynamiclayout.md)组件的 > 入参指定布局算法。
 
 **继承/实现关系：** StackLayoutAlgorithm implements [LayoutAlgorithm](arkts-arkui-layoutalgorithm-i.md)
 
@@ -43,13 +38,7 @@ constructor(option?: StackLayoutAlgorithmOptions)
 @Trace public alignContent?: LocalizedAlignment
 ```
 
-设置子组件在堆叠布局算法中对齐格式。
-
-默认值：LocalizedAlignment.CENTER
-
-非法值：按默认值处理。
-
-装饰器类型：@Trace
+设置子组件在堆叠布局算法中对齐格式。 默认值：LocalizedAlignment.CENTER 非法值：按默认值处理。 装饰器类型：@Trace
 
 **类型：** LocalizedAlignment
 

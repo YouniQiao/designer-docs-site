@@ -6,6 +6,12 @@ Provides methods to operate and manage data transfer of NearLink.
 
 **System capability:** SystemCapability.Communication.NearLink.Base
 
+## Modules to Import
+
+```TypeScript
+import { dataTransfer } from '@kit.ConnectivityKit';
+```
+
 ## Summary
 
 ### Functions
@@ -19,8 +25,8 @@ Provides methods to operate and manage data transfer of NearLink.
 | [getConnectionState](arkts-connectivity-getconnectionstate-f.md#getconnectionstate-1) | Obtains the connection status for data transfer. |
 | [offConnectionStateChanged](arkts-connectivity-offconnectionstatechanged-f.md#offconnectionstatechanged-1) | Unsubscribes from the connection state change event. |
 | [offReadData](arkts-connectivity-offreaddata-f.md#offreaddata-1) | Unsubscribes from the event reported when data is read from the port. |
-| [onConnectionStateChanged](arkts-connectivity-onconnectionstatechanged-f.md#onconnectionstatechanged-1) | Subscribes to the connection state change event.This event is accessible only to applications that granted the ohos.permission.NEARLINK_ACCESS permission. |
-| [onReadData](arkts-connectivity-onreaddata-f.md#onreaddata-1) | Subscribes to the event reported when data is read from the port.This event is accessible only to applications that granted the ohos.permission.NEARLINK_ACCESS permission. |
+| [onConnectionStateChanged](arkts-connectivity-onconnectionstatechanged-f.md#onconnectionstatechanged-1) | Subscribes to the connection state change event. This event is accessible only to applications that granted the ohos.permission.NEARLINK_ACCESS permission. |
+| [onReadData](arkts-connectivity-onreaddata-f.md#onreaddata-1) | Subscribes to the event reported when data is read from the port. This event is accessible only to applications that granted the ohos.permission.NEARLINK_ACCESS permission. |
 | [writeData](arkts-connectivity-writedata-f.md#writedata-1) | Writes data by address and UUID. |
 
 ### Interfaces

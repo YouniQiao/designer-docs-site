@@ -12,17 +12,7 @@ import { dlpPermission } from '@kit.DataProtectionKit';
 function generateDlpFileForEnterprise(plaintextFd: number, dlpFd: number, property: DLPProperty, customProperty: CustomProperty): Promise<void>
 ```
 
-Encrypts a plaintext file to generate a DLP file for an enterprise account. This API can be called only by
-enterprise accounts. This API uses a promise to return the result.
-
-This API encrypts a plaintext file to generate a DLP file that can be accessed only by enterprise accounts,
-implementing enterprise-level file permission management.
-
-> **NOTE**
->
-> This API can be called only by enterprise accounts. Enterprises need to set up their own enterprise account
-> servers. This API generates a DLP file, which is an encrypted file that can be accessed only by accounts
-> authorized by the enterprise server.
+Encrypts a plaintext file to generate a DLP file for an enterprise account. This API can be called only by enterprise accounts. This API uses a promise to return the result. This API encrypts a plaintext file to generate a DLP file that can be accessed only by enterprise accounts, implementing enterprise-level file permission management. > **NOTE** > > This API can be called only by enterprise accounts. Enterprises need to set up their own enterprise account > servers. This API generates a DLP file, which is an encrypted file that can be accessed only by accounts > authorized by the enterprise server.
 
 **Since:** 21
 
@@ -36,8 +26,8 @@ implementing enterprise-level file permission management.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| plaintextFd | number | Yes | FD of a plaintext file. The value range is [0, 2&lt;sup&gt;31&lt;/sup&gt;-1]. If the value of**fd** is less than 0, error code 19100001 is thrown. If the value of **fd** is greater than 2&lt;sup&gt;31&lt;/sup&gt;-1, the value is truncated. |
-| dlpFd | number | Yes | FD of an encrypted file. The value range is [0, 2&lt;sup&gt;31&lt;/sup&gt;-1]. If the value of**fd** is less than 0, error code 19100001 is thrown. If the value of **fd** is greater than 2&lt;sup&gt;31&lt;/sup&gt;-1, the value is truncated. |
+| plaintextFd | number | Yes | FD of a plaintext file. The value range is [0, 2&lt;sup&gt;31&lt;/sup&gt;-1]. If the value of**fd** is less than 0, an error log is generated, and the function stops running. If the value of **fd** isgreater than 2&lt;sup&gt;31&lt;/sup&gt;-1, the excess part will be truncated. |
+| dlpFd | number | Yes | FD of an encrypted file. The value range is [0, 2&lt;sup&gt;31&lt;/sup&gt;-1]. If the value of**fd** is less than 0, an error log is generated, and the function stops running. If the value of **fd**is greater than 2&lt;sup&gt;31&lt;/sup&gt;-1, the excess part will be truncated. |
 | property | DLPProperty | Yes | General policy of DLP files. |
 | customProperty | CustomProperty | Yes | Enterprise custom policy. |
 

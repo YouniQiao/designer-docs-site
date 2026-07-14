@@ -12,7 +12,7 @@ import { notificationManager } from '@kit.NotificationKit';
 function getNotificationSetting(): Promise<NotificationSetting>
 ```
 
-获取应用程序的通知设置。使用Promise异步回调。
+获取应用程序的通知设置，包括锁屏通知、横幅通知、桌面角标、振动、铃声等 开关状态。使用Promise异步回调。
 
 **起始版本：** 20
 

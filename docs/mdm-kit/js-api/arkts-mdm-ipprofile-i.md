@@ -18,8 +18,7 @@ import { wifiManager } from '@kit.MDMKit';
 dnsServers: number[]
 ```
 
-DNS server. The array can contain a maximum of two addresses: the primary DNS server and the secondary DNS
-server.
+DNS server. The array can contain a maximum of two addresses: the primary DNS server and the secondary DNS server.
 
 **Type:** number[]
 
@@ -67,8 +66,7 @@ Default gateway, represented in decimal format, usually the IP address of the ro
 ipAddress: number
 ```
 
-IP address, represented in decimal format. For example, the standard dotted decimal notation **192.168.1.1**
-corresponds to the decimal value **3232235777**.
+IP address, represented in decimal format. For example, the standard dotted decimal notation **192.168.1.1** corresponds to the decimal value **3232235777**.
 
 **Type:** number
 

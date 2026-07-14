@@ -1,18 +1,6 @@
 # GeolocationPermissions
 
-Implements a **GeolocationPermissions** object.
-
-> **NOTE**
->
-> - The sample effect is subject to the actual device.
->
-> - You must load the **Web** component before calling the APIs in **GeolocationPermissions**.
->
-> - Required Permissions
-> **ohos.permission.LOCATION**, **ohos.permission.APPROXIMATELY_LOCATION**, and
-> **ohos.permission.LOCATION_IN_BACKGROUND**, which are required for accessing the location information. For details
-> about the permissions, see
-> [@ohos.geolocation (Geolocation)](../../../../reference/apis-location-kit/js-apis-geolocation.md).
+Implements a **GeolocationPermissions** object. > **NOTE** > > - The sample effect is subject to the actual device. > > - You must load the **Web** component before calling the APIs in **GeolocationPermissions**. > > - Required Permissions > **ohos.permission.LOCATION**, **ohos.permission.APPROXIMATELY_LOCATION**, and > **ohos.permission.LOCATION_IN_BACKGROUND**, which are required for accessing the location information. For details > about the permissions, see > [@ohos.geolocation (Geolocation)](../../../../reference/apis-location-kit/js-apis-geolocation.md).
 
 **Since:** 9
 
@@ -140,8 +128,7 @@ Obtains the geolocation permission status of the specified origin. This API uses
 static getAccessibleGeolocation(origin: string, callback: AsyncCallback<boolean>, incognito?: boolean): void
 ```
 
-Obtains the geolocation permission status of the specified origin. This API uses an asynchronous callback to
-return the result.
+Obtains the geolocation permission status of the specified origin. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -202,8 +189,7 @@ Obtains the geolocation permission status of all origins. This API uses a promis
 static getStoredGeolocation(callback: AsyncCallback<Array<string>>, incognito?: boolean): void
 ```
 
-Obtains the geolocation permission status of all origins. This API uses an asynchronous callback to return the
-result.
+Obtains the geolocation permission status of all origins. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 

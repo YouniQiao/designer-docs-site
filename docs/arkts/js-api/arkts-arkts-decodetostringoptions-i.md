@@ -18,10 +18,7 @@ import { util } from '@kit.ArkTS';
 stream?: boolean
 ```
 
-Whether the incomplete byte sequence at the end of the input needs to be appended to the parameter for the next
-call of **decodeToString**. The value **true** means that the incomplete byte sequence is stored in the internal
-buffer until the function is called next time. If the value is false, the byte sequence is directly decoded when
-the function is called currently. The default value is **false**.
+Whether the incomplete byte sequence at the end of the input needs to be appended to the parameter for the next call of **decodeToString**. The value **true** means that the incomplete byte sequence is stored in the internal buffer until the function is called next time. If the value is false, the byte sequence is directly decoded when the function is called currently. The default value is **false**.
 
 **Type:** boolean
 

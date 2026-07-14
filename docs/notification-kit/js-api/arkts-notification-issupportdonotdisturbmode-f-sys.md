@@ -12,7 +12,7 @@ import { notificationManager } from '@kit.NotificationKit';
 function isSupportDoNotDisturbMode(callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether DND mode is supported. This API uses an asynchronous callback to return the result.
+Checks whether DND mode is supported. This API uses an asynchronous callback to return the result. This API can be properly called on devices other than wearables and TVs. If it is called on wearables and TVs, error code 801 is returned.
 
 **Since:** 9
 
@@ -64,7 +64,7 @@ notificationManager.isSupportDoNotDisturbMode(isSupportDoNotDisturbModeCallback)
 function isSupportDoNotDisturbMode(): Promise<boolean>
 ```
 
-Checks whether DND mode is supported. This API uses a promise to return the result.
+Checks whether DND mode is supported. This API uses a promise to return the result. This API can be properly called on devices other than wearables and TVs. If it is called on wearables and TVs, error code 801 is returned.
 
 **Since:** 9
 

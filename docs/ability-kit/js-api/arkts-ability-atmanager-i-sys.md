@@ -1,8 +1,6 @@
 # AtManager
 
-Program access control management class, providing capabilities such as permission verification, runtime
-permission dialog box request, settings page authorization guidance, global switch request, and permission
-status monitoring. Obtain an instance through [createAtManager](arkts-ability-createatmanager-f.md#createatmanager-1).
+Program access control management class, providing capabilities such as permission verification, runtime permission dialog box request, settings page authorization guidance, global switch request, and permission status monitoring. Obtain an instance through [createAtManager](arkts-ability-createatmanager-f.md#createatmanager-1).
 
 **Since:** 8
 
@@ -23,8 +21,7 @@ generateCliAuthResult(
       authInfoList: Array<CliAuthInfo>): Promise<ToolAuthResult>
 ```
 
-Generates an authorization result based on the CLI authorization information.
-This API uses a promise to return the result.
+Generates an authorization result based on the CLI authorization information. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 
@@ -93,9 +90,7 @@ atManager.generateCliAuthResult(hostTokenID, agentID, authInfoList).then((data: 
 getCliPermissionRequestInfo(agentID: string, cliInfoList: Array<CliInfo>): Promise<PermissionDialogResult>
 ```
 
-Queries whether a CLI (Command Line Interface) command requires a permission dialog. After the call is
-successful, the permission dialog decision result corresponding to each command is returned. This API uses a
-promise to return the result.
+Queries whether a CLI (Command Line Interface) command requires a permission dialog. After the call is successful, the permission dialog decision result corresponding to each command is returned. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 
@@ -159,9 +154,7 @@ getCliPermissions(
       cliInfoList: Array<CliInfo>): Promise<CliPermissionsResult>
 ```
 
-Queries the CLI permissions and mapped runtime permissions that the CLI commands used by a specified app depend
-on. After the call is successful, the CLI permission decision status and runtime permission mapping list for
-each command are returned. This API uses a promise to return the result.
+Queries the CLI permissions and mapped runtime permissions that the CLI commands used by a specified app depend on. After the call is successful, the CLI permission decision status and runtime permission mapping list for each command are returned. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 
@@ -399,8 +392,7 @@ atManager.getPermissionsStatus(tokenID, ['ohos.permission.CAMERA']).then((data: 
 getVersion(): Promise<number>
 ```
 
-Obtains the data version number of the current permission management. This API uses a promise to return the
-result.
+Obtains the data version number of the current permission management. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -442,11 +434,7 @@ promise.then((data: number) => {
 grantPermission(tokenID: number, permissionName: Permissions, permissionFlags: number): Promise<void>
 ```
 
-Grants an app permission. After the call is successful, the specified app obtains the permission and can access
-the corresponding protected resources. Unlike
-[grantUserGrantedPermission](arkts-ability-atmanager-i-sys.md#grantusergrantedpermission-1),
-which only supports permissions of the user_grant type, this API supports granting permissions of both the
-user_grant and manual_settings types. This API uses a promise to return the result.
+Grants an app permission. After the call is successful, the specified app obtains the permission and can access the corresponding protected resources. Unlike [grantUserGrantedPermission](arkts-ability-atmanager-i-sys.md#grantusergrantedpermission-1), which only supports permissions of the user_grant type, this API supports granting permissions of both the user_grant and manual_settings types. This API uses a promise to return the result.
 
 **Since:** 21
 
@@ -506,12 +494,7 @@ atManager.grantPermission(tokenID, 'ohos.permission.READ_AUDIO', permissionFlags
 grantUserGrantedPermission(tokenID: number, permissionName: Permissions, permissionFlags: number): Promise<void>
 ```
 
-Grants a user_grant permission to an app. After the call is successful, the app obtains the user_grant
-permission and can access the corresponding protected resources. This API uses a promise to return the result.
-
-This API only supports granting permissions of the user_grant type. If you need to grant permissions of the
-user_grant or manual_settings type, you are advised to use
-[grantPermission](arkts-ability-atmanager-i-sys.md#grantpermission-1).
+Grants a user_grant permission to an app. After the call is successful, the app obtains the user_grant permission and can access the corresponding protected resources. This API uses a promise to return the result. This API only supports granting permissions of the user_grant type. If you need to grant permissions of the user_grant or manual_settings type, you are advised to use [grantPermission](arkts-ability-atmanager-i-sys.md#grantpermission-1).
 
 **Since:** 8
 
@@ -576,9 +559,7 @@ grantUserGrantedPermission(
     ): void
 ```
 
-Grants a user_grant permission to an app. This API uses an asynchronous callback to return the result. After the
-call is successful, the app obtains the user_grant permission and can access the corresponding protected
-resources.
+Grants a user_grant permission to an app. This API uses an asynchronous callback to return the result. After the call is successful, the app obtains the user_grant permission and can access the corresponding protected resources.
 
 **Since:** 8
 
@@ -640,14 +621,7 @@ off(
     ): void
 ```
 
-Unsubscribes from changes in the state of the specified permissions for the token ID list and permission list.
-This API uses an asynchronous callback to return the result.
-
-When unsubscribing, if no callback is passed in, all listening callbacks that completely match the tokenIDList
-and permissionList will be unsubscribed in batches.
-
-This API is usually used together with [on](abilityAccessCtrl.AtManager.on)
-to cancel the listening relationship created by on.
+Unsubscribes from changes in the state of the specified permissions for the token ID list and permission list. This API uses an asynchronous callback to return the result. When unsubscribing, if no callback is passed in, all listening callbacks that completely match the tokenIDList and permissionList will be unsubscribed in batches. This API is usually used together with [on](abilityAccessCtrl.AtManager.on) to cancel the listening relationship created by on.
 
 **Since:** 9
 
@@ -706,16 +680,7 @@ on(
     ): void
 ```
 
-Subscribes to changes in the state of specified permissions for the given applications. This API uses an
-asynchronous callback to return the result.
-
-Multiple callbacks can be registered for the specified **tokenIDList** and **permissionList**.
-
-If a new subscription overlaps with an existing subscription in terms of the tokenID list and permission list,
-the same callback cannot be used for subscription.
-
-This API is usually used together with [off](abilityAccessCtrl.AtManager.off).
-When listening is no longer needed, off should be called to unsubscribe.
+Subscribes to changes in the state of specified permissions for the given applications. This API uses an asynchronous callback to return the result. Multiple callbacks can be registered for the specified **tokenIDList** and **permissionList**. If a new subscription overlaps with an existing subscription in terms of the tokenID list and permission list, the same callback cannot be used for subscription. This API is usually used together with [off](abilityAccessCtrl.AtManager.off). When listening is no longer needed, off should be called to unsubscribe.
 
 **Since:** 9
 
@@ -776,9 +741,7 @@ queryStatusByPermission(
       permissionList: Array<Permissions>): Promise<Array<PermissionStatusInfo>>
 ```
 
-Queries all apps that have requested the specified permissions and their permission statuses based on the
-permission list. This API uses a promise to return the result. When the size of the queried data result exceeds
-50000 entries, the API directly returns error code 12100015.
+Queries all apps that have requested the specified permissions and their permission statuses based on the permission list. This API uses a promise to return the result. When the size of the queried data result exceeds 50000 entries, the API directly returns error code 12100015.
 
 **Since:** 26.0.0
 
@@ -835,9 +798,7 @@ atManager.queryStatusByPermission(permissionList).then((data: Array<abilityAcces
 queryStatusByTokenID(tokenIDList: Array<number>): Promise<Array<PermissionStatusInfo>>
 ```
 
-Queries all permission statuses of an app based on its tokenID list. This API uses a promise to return the
-result. When the size of the queried data result exceeds 50000 entries, the API directly returns error
-code 12100015.
+Queries all permission statuses of an app based on its tokenID list. This API uses a promise to return the result. When the size of the queried data result exceeds 50000 entries, the API directly returns error code 12100015.
 
 **Since:** 26.0.0
 
@@ -950,17 +911,7 @@ requestPermissionsFromUserWithWindowId(
         permissionList: Array<Permissions>) : Promise<PermissionRequestResult>
 ```
 
-Pops up a dialog based on the window ID to request user authorization. After the call is successful, the
-permission request result object is returned. Developers can continue the business process after window-level
-authorization based on the permission request result. This API uses a promise to return the result.
-
-This is applicable to scenarios where a system app needs to explicitly attach the permission request dialog to a
-specified window.
-
-If the user denies authorization, the dialog cannot be pulled up again. Permission can be re-obtained in the
-following ways: 1. Manually authorize in the system settings. 2. Call
-[requestPermissionOnSetting](arkts-ability-atmanager-i.md#requestpermissiononsetting-1) to pull up the
-permission settings dialog to guide the user to authorize.
+Pops up a dialog based on the window ID to request user authorization. After the call is successful, the permission request result object is returned. Developers can continue the business process after window-level authorization based on the permission request result. This API uses a promise to return the result. This is applicable to scenarios where a system app needs to explicitly attach the permission request dialog to a specified window. If the user denies authorization, the dialog cannot be pulled up again. Permission can be re-obtained in the following ways: 1. Manually authorize in the system settings. 2. Call [requestPermissionOnSetting](arkts-ability-atmanager-i.md#requestpermissiononsetting-1) to pull up the permission settings dialog to guide the user to authorize.
 
 **Since:** 23
 
@@ -1027,12 +978,7 @@ revokePermission(
       killProcess?: boolean): Promise<void>
 ```
 
-Revokes an app permission. After the call is successful, the app loses the permission and cannot access the
-corresponding protected resources. Whether to terminate the app process is determined by the value of the
-killProcess parameter. This API uses a promise to return the result.
-
-When the killProcess parameter is true and the permission status changes from "authorized" to "unauthorized",
-the app process will be terminated.
+Revokes an app permission. After the call is successful, the app loses the permission and cannot access the corresponding protected resources. Whether to terminate the app process is determined by the value of the killProcess parameter. This API uses a promise to return the result. When the killProcess parameter is true and the permission status changes from "authorized" to "unauthorized", the app process will be terminated.
 
 **Since:** 21
 
@@ -1100,16 +1046,7 @@ atManager.revokePermission(tokenID, 'ohos.permission.READ_AUDIO', permissionFlag
 revokeUserGrantedPermission(tokenID: number, permissionName: Permissions, permissionFlags: number): Promise<void>
 ```
 
-Revokes a user_grant permission from an app. After the call is successful, the app loses the user_grant
-permission and cannot access the corresponding protected resources.
-This API uses a promise to return the result.
-
-This API only supports revoking permissions of the user_grant type and does not support controlling whether to
-terminate the app process. If you need to revoke permissions of the user_grant or manual_settings type, or need
-to control whether to terminate the app process after revoking the permission, you are advised to use
-[revokePermission](arkts-ability-atmanager-i-sys.md#revokepermission-1).
-
-When the permission status changes from "authorized" to "unauthorized", the app process will be terminated.
+Revokes a user_grant permission from an app. After the call is successful, the app loses the user_grant permission and cannot access the corresponding protected resources. This API uses a promise to return the result. This API only supports revoking permissions of the user_grant type and does not support controlling whether to terminate the app process. If you need to revoke permissions of the user_grant or manual_settings type, or need to control whether to terminate the app process after revoking the permission, you are advised to use [revokePermission](arkts-ability-atmanager-i-sys.md#revokepermission-1). When the permission status changes from "authorized" to "unauthorized", the app process will be terminated.
 
 **Since:** 8
 
@@ -1174,9 +1111,7 @@ revokeUserGrantedPermission(
     ): void
 ```
 
-Revokes a user_grant permission from an app. This API uses an asynchronous callback to return the result.
-After the call is successful, the app loses the user_grant permission and cannot access the corresponding
-protected resources.
+Revokes a user_grant permission from an app. This API uses an asynchronous callback to return the result. After the call is successful, the app loses the user_grant permission and cannot access the corresponding protected resources.
 
 **Since:** 8
 
@@ -1233,10 +1168,7 @@ atManager.revokeUserGrantedPermission(tokenID, 'ohos.permission.READ_AUDIO', per
 setPermissionRequestToggleStatus(permissionName: Permissions, status: PermissionRequestToggleStatus): Promise<void>
 ```
 
-Sets the dialog toggle status for a specified permission of the current user. After the call is successful, the
-dialog toggle status of the permission will be set to the specified value. When the status is CLOSED, no
-permission dialog will pop up when the app requests the permission. When the status is OPEN, the permission
-dialog will pop up normally when the app requests the permission. This API uses a promise to return the result.
+Sets the dialog toggle status for a specified permission of the current user. After the call is successful, the dialog toggle status of the permission will be set to the specified value. When the status is CLOSED, no permission dialog will pop up when the app requests the permission. When the status is OPEN, the permission dialog will pop up normally when the app requests the permission. This API uses a promise to return the result.
 
 **Since:** 12
 

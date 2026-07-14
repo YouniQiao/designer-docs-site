@@ -1,12 +1,6 @@
 # AVImageGenerator
 
-AVImageGenerator is a class for video thumbnail retrieval. It provides APIs to obtain a thumbnail from a video.
-Before calling any API in AVImageGenerator, you must use
-[createAVImageGenerator()](arkts-media-createavimagegenerator-f.md#createavimagegenerator-3)
-to create an AVImageGenerator instance.
-
-For details about the demo for obtaining video thumbnails, see
-[Obtaining Video Thumbnails](../../../../media/media/avimagegenerator.md).
+AVImageGenerator is a class for video thumbnail retrieval. It provides APIs to obtain a thumbnail from a video. Before calling any API in AVImageGenerator, you must use [createAVImageGenerator()](arkts-media-createavimagegenerator-f.md#createavimagegenerator-3) to create an AVImageGenerator instance. For details about the demo for obtaining video thumbnails, see [Obtaining Video Thumbnails](../../../../media/media/avimagegenerator.md).
 
 **Since:** 12
 
@@ -87,8 +81,7 @@ fetchScaledFrameByTime(timeUs: number, queryMode: AVImageQueryOptions, outputSiz
       Promise<image.PixelMap>
 ```
 
-Fetches a scaled thumbnail from the video at a particular timestamp. This API uses a promise to return the
-result.
+Fetches a scaled thumbnail from the video at a particular timestamp. This API uses a promise to return the result.
 
 **Since:** 20
 
@@ -169,18 +162,7 @@ Releases this AVImageGenerator instance. This API uses a promise to return the r
 fdSrc ?: AVFileDescriptor
 ```
 
-Media file descriptor, which specifies the data source.
-
-There is a media file that stores continuous assets, the address offset is 0, and the byte length is 100. Its
-file descriptor is **AVFileDescriptor { fd = resourceHandle; offset = 0; length = 100; }**.
-
-**NOTE**
-
-After the resource handle (FD) is transferred to an AVImageGenerator instance, do not use the resource handle to
-perform other read and write operations, including but not limited to transferring this handle to other AVPlayer,
-AVMetadataExtractor, AVImageGenerator, or AVTranscoder instance. Competition occurs when multiple
-AVImageGenerator use the same resource handle to read and write files at the same time, resulting in errors in
-obtaining data.
+Media file descriptor, which specifies the data source. There is a media file that stores continuous assets, the address offset is 0, and the byte length is 100. Its file descriptor is **AVFileDescriptor { fd = resourceHandle; offset = 0; length = 100; }**. **NOTE** After the resource handle (FD) is transferred to an AVImageGenerator instance, do not use the resource handle to perform other read and write operations, including but not limited to transferring this handle to other AVPlayer, AVMetadataExtractor, AVImageGenerator, or AVTranscoder instance. Competition occurs when multiple AVImageGenerator use the same resource handle to read and write files at the same time, resulting in errors in obtaining data.
 
 **Type:** AVFileDescriptor
 

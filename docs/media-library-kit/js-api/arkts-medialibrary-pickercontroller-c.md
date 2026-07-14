@@ -214,9 +214,7 @@ Set max select count to picker component, include max_total_count, max_photo_cou
 setMovingPhotoState(movingPhotoState: photoAccessHelper.MovingPhotoBadgeStateType): Promise<void>
 ```
 
-Sets the moving photo effect in the photo browser view.
-This configuration only takes effect for moving photo when viewed in the photo browser.
-Note: Only MOVING_PHOTO_ENABLE and MOVING_PHOTO_DISABLE are supported as values.
+Sets the moving photo effect in the photo browser view. This configuration only takes effect for moving photo when viewed in the photo browser. Note: Only MOVING_PHOTO_ENABLE and MOVING_PHOTO_DISABLE are supported as values.
 
 **Since:** 23
 

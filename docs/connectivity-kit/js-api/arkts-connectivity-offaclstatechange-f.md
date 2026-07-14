@@ -12,9 +12,7 @@ import { connection } from '@kit.ConnectivityKit';
 function offAclStateChange(callback?: Callback<AclStateResult>): void
 ```
 
-Unsubscribe the event of acl state changed from a remote device.
-If the application has ohos.permission.GET_BLUETOOTH_PEERS_MAC, the type of the peer device address is real.
-Otherwise, the type of the peer device address is virtual.
+Unsubscribe the event of acl state changed from a remote device. If the application has ohos.permission.GET_BLUETOOTH_PEERS_MAC, the type of the peer device address is real. Otherwise, the type of the peer device address is virtual.
 
 **Since:** 26.0.0
 

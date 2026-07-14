@@ -1,7 +1,6 @@
 # AccessibilityExtensionAbility
 
-The **AccessibilityExtensionAbility** module provides accessibility extension capabilities based on the
-ExtensionAbility framework.
+The **AccessibilityExtensionAbility** module provides accessibility extension capabilities based on the ExtensionAbility framework.
 
 **Since:** 9
 
@@ -19,9 +18,7 @@ import { Rect, TouchPosition, AccessibilityVirtualNode, ElementAttributeKeys, Fo
 onAccessibilityConnect(): void
 ```
 
-Called when the AccessibilityExtensionAbility is enabled and connected to the system service.
-In this API, you can have the service logic initialized. This API can be overridden as required. It returns the
-result to notify that the ability is successfully connected.
+Called when the AccessibilityExtensionAbility is enabled and connected to the system service. In this API, you can have the service logic initialized. This API can be overridden as required. It returns the result to notify that the ability is successfully connected.
 
 **Since:** 20
 
@@ -57,9 +54,7 @@ class MyAccessibilityExtensionAbility extends AccessibilityExtensionAbility {
 onAccessibilityDisconnect(): void
 ```
 
-Called when the AccessibilityExtensionAbility is successfully disconnected from the system service.
-In this API, you can implement the service logic of resource release and exit. This API can be overridden as
-required.
+Called when the AccessibilityExtensionAbility is successfully disconnected from the system service. In this API, you can implement the service logic of resource release and exit. This API can be overridden as required.
 
 **Since:** 20
 
@@ -95,8 +90,7 @@ class MyAccessibilityExtensionAbility extends AccessibilityExtensionAbility {
 onAccessibilityEventInfo(event: AccessibilityEventInfo): void
 ```
 
-Called when a specified event occurs in an application. In this API, you can implement event-specific service
-logic. Generally, this API needs to be overridden.
+Called when a specified event occurs in an application. In this API, you can implement event-specific service logic. Generally, this API needs to be overridden.
 
 **Since:** 20
 
@@ -141,8 +135,7 @@ class MyAccessibilityExtensionAbility extends AccessibilityExtensionAbility {
 onAccessibilityKeyEvent(keyEvent: KeyEvent): boolean
 ```
 
-Called when a physical key is pressed. In this API, you can determine whether to consume the event based on the
-service.
+Called when a physical key is pressed. In this API, you can determine whether to consume the event based on the service.
 
 **Since:** 20
 

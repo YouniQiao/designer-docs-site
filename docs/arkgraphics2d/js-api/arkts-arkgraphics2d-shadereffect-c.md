@@ -1,16 +1,6 @@
 # ShaderEffect
 
-Implements the shader effect. After a shader effect is set for a pen or brush, the shader effect instead of the
-color attribute is used for drawing. In this case, the alpha value set for the pen or brush still takes effect.
-
-> **NOTE**
->
-> - The initial APIs of this class are supported since API version 12.
->
-> - This module uses the physical pixel unit, px.
->
-> - This module operates under a single-threaded model. The caller needs to manage thread safety and context state
-> transitions.
+Implements the shader effect. After a shader effect is set for a pen or brush, the shader effect instead of the color attribute is used for drawing. In this case, the alpha value set for the pen or brush still takes effect. > **NOTE** > > - The initial APIs of this class are supported since API version 12. > > - This module uses the physical pixel unit, px. > > - This module operates under a single-threaded model. The caller needs to manage thread safety and context state > transitions.
 
 **Since:** 12
 
@@ -131,8 +121,7 @@ static createImageShader(pixelmap: image.PixelMap, tileX: TileMode, tileY: TileM
         samplingOptions: SamplingOptions, matrix?: Matrix | null): ShaderEffect
 ```
 
-Creates a shader based on an image. You are advised not to use the function for the canvas of the capture type
-because it affects the performance.
+Creates a shader based on an image. You are advised not to use the function for the canvas of the capture type because it affects the performance.
 
 **Since:** 20
 
@@ -203,8 +192,7 @@ static createRadialGradient(centerPt: common2D.Point, radius: number, colors: Ar
       mode: TileMode, pos?: Array<number> | null, matrix?: Matrix | null): ShaderEffect
 ```
 
-Creates a **ShaderEffect** object that generates a radial gradient based on the center and radius of a circle. A
-radial gradient refers to the color transition that spreads out gradually from the center of a circle.
+Creates a **ShaderEffect** object that generates a radial gradient based on the center and radius of a circle. A radial gradient refers to the color transition that spreads out gradually from the center of a circle.
 
 **Since:** 12
 
@@ -241,8 +229,7 @@ static createSweepGradient(centerPt: common2D.Point, colors: Array<number>,
         matrix?: Matrix | null): ShaderEffect
 ```
 
-Creates a **ShaderEffect** object that generates a color sweep gradient around a given center point, either in a
-clockwise or counterclockwise direction.
+Creates a **ShaderEffect** object that generates a color sweep gradient around a given center point, either in a clockwise or counterclockwise direction.
 
 **Since:** 12
 

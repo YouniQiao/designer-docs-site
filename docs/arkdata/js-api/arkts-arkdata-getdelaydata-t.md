@@ -4,8 +4,7 @@
 type GetDelayData = (type: string) => UnifiedData
 ```
 
-Defines a function used to obtain a deferred **UnifiedData** object. Currently, it can be used only in the
-pasteboard application of the same device.
+Defines a function used to obtain a deferred **UnifiedData** object. Currently, it can be used only in the pasteboard application of the same device.
 
 **Since:** 12
 

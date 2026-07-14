@@ -12,16 +12,7 @@ import { usbManager } from '@kit.BasicServicesKit';
 function setInterface(pipe: USBDevicePipe, iface: USBInterface): number
 ```
 
-Sets a USB interface.
-
-> **NOTE**
->
-> A USB interface may have multiple selection modes and supports dynamic switching. It is used to reset the
-> endpoint to match the transmission type during data transmission.
->
-> Before calling this API, call the
-> [usbManager.claimInterface](arkts-basicservices-claiminterface-f.md#claiminterface-1)
-> API to claim a communication interface.
+Sets a USB interface. > **NOTE** > > A USB interface may have multiple selection modes and supports dynamic switching. It is used to reset the > endpoint to match the transmission type during data transmission. > > Before calling this API, call the > [usbManager.claimInterface](arkts-basicservices-claiminterface-f.md#claiminterface-1) > API to claim a communication interface.
 
 **Since:** 9
 

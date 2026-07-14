@@ -12,9 +12,7 @@
 shadowResolution?: Vec2
 ```
 
-单个阴影贴图缓冲区的分辨率, undefined by default,
-which means we use (1024, 1024) as the resolution of a single shadow map.
-需要提供相同的x和y值以获得正确的阴影效果，单位为像素.
+单个阴影贴图缓冲区的分辨率, undefined by default, which means we use (1024, 1024) as the resolution of a single shadow map. 需要提供相同的x和y值以获得正确的阴影效果，单位为像素.
 
 **类型：** Vec2
 

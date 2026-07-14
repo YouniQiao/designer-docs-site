@@ -12,9 +12,7 @@ import { skillManager } from '@kit.AbilityKit';
 function getSkillInfos(bundleName: string, flags: number, userId?: number): Promise<Array<SkillInfo>>
 ```
 
-Obtains all SkillInfo of a specified application based on bundleName.
-To query information for other local accounts, the permission
-ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS must additionally be granted.
+Obtains all SkillInfo of a specified application based on bundleName. To query information for other local accounts, the permission ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS must additionally be granted.
 
 **Since:** 26.0.0
 

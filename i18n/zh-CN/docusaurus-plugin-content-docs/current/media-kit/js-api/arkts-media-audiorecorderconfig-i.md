@@ -1,6 +1,6 @@
 # AudioRecorderConfig
 
-Provides the audio recorder configuration definitions.
+音频录制配置定义。
 
 **起始版本：** 6
 
@@ -16,7 +16,7 @@ Provides the audio recorder configuration definitions.
 audioEncodeBitRate?: number
 ```
 
-Audio encoding bit rate, in bit/s.
+音频编码比特率，单位为bit/s。
 
 **类型：** number
 
@@ -34,8 +34,7 @@ Audio encoding bit rate, in bit/s.
 audioEncoder?: AudioEncoder
 ```
 
-Audio encoding format. The default value is DEFAULT, it will be deprecated after API8.
-use "audioEncoderMime" instead.
+音频编码格式。默认值为DEFAULT，API8之后将废弃。 请使用"audioEncoderMime"替代。
 
 **类型：** AudioEncoder
 
@@ -53,7 +52,7 @@ use "audioEncoderMime" instead.
 audioEncoderMime?: CodecMimeType
 ```
 
-audio encoding format MIME. it used to replace audioEncoder.
+音频编码格式MIME。用于替代audioEncoder。
 
 **类型：** CodecMimeType
 
@@ -71,7 +70,7 @@ audio encoding format MIME. it used to replace audioEncoder.
 audioSampleRate?: number
 ```
 
-Audio sampling rate, in Hz.
+音频采样率，单位为Hz。
 
 **类型：** number
 
@@ -89,7 +88,7 @@ Audio sampling rate, in Hz.
 fileFormat?: ContainerFormatType
 ```
 
-output file format. see @ContainerFormatType , it used to replace "format".
+输出文件格式，详见ContainerFormatType。用于替代"format"。
 
 **类型：** ContainerFormatType
 
@@ -107,8 +106,7 @@ output file format. see @ContainerFormatType , it used to replace "format".
 format?: AudioOutputFormat
 ```
 
-Audio output format. The default value is DEFAULT, it will be deprecated after API8.
-it will be replaced with "fileFormat".
+音频输出格式。默认值为DEFAULT。API8之后废弃，使用"fileFormat"替代。
 
 **类型：** AudioOutputFormat
 
@@ -126,7 +124,7 @@ it will be replaced with "fileFormat".
 location?: Location
 ```
 
-Geographical location information.
+地理位置信息。
 
 **类型：** Location
 
@@ -144,7 +142,7 @@ Geographical location information.
 numberOfChannels?: number
 ```
 
-Number of audio channels.
+音频声道数。
 
 **类型：** number
 
@@ -162,10 +160,7 @@ Number of audio channels.
 uri: string
 ```
 
-Audio output uri.support two kind of uri now.
-format like: scheme + "://" + "context".
-file: file://path
-fd: fd://fd
+音频输出URI。支持两种URI格式。 格式：scheme + "://" + "context"。 file格式：file://path fd格式：fd://fd
 
 **类型：** string
 

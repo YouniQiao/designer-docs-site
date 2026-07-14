@@ -158,8 +158,7 @@ Module name of the shortcut.
 sourceType: number
 ```
 
-Source type of the shortcut. The value **0** means a custom shortcut, **1** means a static shortcut, and **2**
-means a dynamic shortcut. Dynamic shortcuts are supported since API version 23.
+Source type of the shortcut. The value **0** means a custom shortcut, **1** means a static shortcut, and **2** means a dynamic shortcut. Dynamic shortcuts are supported since API version 23.
 
 **Type:** number
 

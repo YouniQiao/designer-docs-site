@@ -364,8 +364,7 @@ Synchronous call.
 static readonly TF_WAIT_TIME: number
 ```
 
-RPC wait time, in seconds. This parameter cannot be used in IPC. The default waiting time is 8 seconds. You are
-advised not to change the waiting time.
+RPC wait time, in seconds. This parameter cannot be used in IPC. The default waiting time is 8 seconds. You are advised not to change the waiting time.
 
 **Type:** number
 

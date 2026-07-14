@@ -1,15 +1,6 @@
 # Magnifier
 
-Provides the capability of displaying and hiding of the magnifier. The magnifier enlarges the component content for
-you to view the component details.
-
-> **NOTE**
->
-> - In the following API examples, you must first use [getMagnifier()](arkts-arkui-uicontext-c.md#getmagnifier-1) in **UIContext**
-> to obtain a **Magnifier** instance, and then call the APIs using the obtained instance.
->
-> - The magnifier capability of this class does not affect that of text components. For text components, you are
-> advised to use the built-in magnifier capability.
+Provides the capability of displaying and hiding of the magnifier. The magnifier enlarges the component content for you to view the component details. > **NOTE** > > - In the following API examples, you must first use [getMagnifier()](arkts-arkui-uicontext-c.md#getmagnifier-1) in **UIContext** > to obtain a **Magnifier** instance, and then call the APIs using the obtained instance. > > - The magnifier capability of this class does not affect that of text components. For text components, you are > advised to use the built-in magnifier capability.
 
 **Since:** 22
 
@@ -49,13 +40,7 @@ Binds the magnifier to the component with the specified ID.
 show(x: number, y: number): void
 ```
 
-Sets the position of the component content displayed by the magnifier relative to the upper left corner of the
-component. After the setting is successful, the magnifier displays the content centered at the coordinate point.
-
-> **NOTE**
->
-> When the content of the component bound to the magnifier changes, the magnifier does not automatically update the
-> displayed content. You need to call the **show** API to update the displayed content of the magnifier.
+Sets the position of the component content displayed by the magnifier relative to the upper left corner of the component. After the setting is successful, the magnifier displays the content centered at the coordinate point. > **NOTE** > > When the content of the component bound to the magnifier changes, the magnifier does not automatically update the > displayed content. You need to call the **show** API to update the displayed content of the magnifier.
 
 **Since:** 22
 

@@ -12,9 +12,7 @@ import { bluetoothManager } from '@kit.ConnectivityKit';
 function startBLEScan(filters: Array<ScanFilter>, options?: ScanOptions): void
 ```
 
-Starts scanning for specified BLE devices with filters.
-On API 10 and above, the permission required by this interface is changed from DISCOVER_BLUETOOTH and
-MANAGE_BLUETOOTH and LOCATION to ACCESS_BLUETOOTH.
+Starts scanning for specified BLE devices with filters. On API 10 and above, the permission required by this interface is changed from DISCOVER_BLUETOOTH and MANAGE_BLUETOOTH and LOCATION to ACCESS_BLUETOOTH.
 
 **Since:** 9
 

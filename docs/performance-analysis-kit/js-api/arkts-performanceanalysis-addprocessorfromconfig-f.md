@@ -12,8 +12,7 @@ import { hiAppEvent } from '@kit.PerformanceAnalysisKit';
 function addProcessorFromConfig(processorName: string, configName?: string): Promise<number>
 ```
 
-Adds the configuration information of the data processor. The configuration file contains information such as the
-name of the event received by the data processor. This API uses a promise to return the result.
+Adds the configuration information of the data processor. The configuration file contains information such as the name of the event received by the data processor. This API uses a promise to return the result.
 
 **Since:** 20
 

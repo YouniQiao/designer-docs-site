@@ -6,8 +6,7 @@
 function getAllFormsInfo(callback: AsyncCallback<Array<formInfo.FormInfo>>): void
 ```
 
-Obtains the widget information provided by all applications on the device. This API uses an asynchronous callback
-to return the result.
+Obtains the widget information provided by all applications on the device. This API uses an asynchronous callback to return the result.
 
 **Since:** 8
 
@@ -34,8 +33,7 @@ to return the result.
 function getAllFormsInfo(): Promise<Array<formInfo.FormInfo>>
 ```
 
-Obtains the widget information provided by all applications on the device. This API uses a promise to return the
-result.
+Obtains the widget information provided by all applications on the device. This API uses a promise to return the result.
 
 **Since:** 8
 

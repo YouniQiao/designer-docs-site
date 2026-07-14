@@ -34,8 +34,7 @@ Display height, in pixels.
 id: number
 ```
 
-Display ID.
-The application can get more display information based on the same id from display interface.
+Display ID. The application can get more display information based on the same id from display interface.
 
 **Type:** number
 

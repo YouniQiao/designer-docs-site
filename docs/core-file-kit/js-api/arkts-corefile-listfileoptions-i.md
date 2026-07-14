@@ -34,8 +34,7 @@ File filtering configuration. This parameter is optional. It specifies the file 
 listNum?: number
 ```
 
-Number of file names to list. This parameter is optional. The default value is **0**, which means to list all
-files.
+Number of file names to list. This parameter is optional. The default value is **0**, which means to list all files.
 
 **Type:** number
 
@@ -51,10 +50,7 @@ files.
 recursion?: boolean
 ```
 
-Whether to list all files in the subdirectories recursively. This parameter is optional. The default value is
-**false**. If **recursion** is **false**, the names of files and directories that meet the filtering requirements
-in the current directory are returned. If **recursion** is **true**, relative paths (starting with"/") of all files
-that meet the specified conditions in the current directory are returned.
+Whether to list all files in the subdirectories recursively. This parameter is optional. The default value is **false**. If **recursion** is **false**, the names of files and directories that meet the filtering requirements in the current directory are returned. If **recursion** is **true**, relative paths (starting with"/") of all files that meet the specified conditions in the current directory are returned.
 
 **Type:** boolean
 

@@ -12,9 +12,7 @@ import { uiMaterial } from '@kit.ArkUI';
 function getMaterialInfo(): MaterialInfo
 ```
 
-Obtains the material configuration information of this application. The returned configuration information comes
-from the metadata configured in the [module.json5](../../../../quick-start/module-configuration-file.md) file of the
-application.
+Obtains the material configuration information of this application. The returned configuration information comes from the metadata configured in the [module.json5](../../../../quick-start/module-configuration-file.md) file of the application.
 
 **Since:** 26.0.0
 

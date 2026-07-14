@@ -34,19 +34,7 @@ Text abstract. It is an empty string by default.
 details?: Record<string, string>
 ```
 
-Object of the dictionary type used to describe the attributes of the text content. Both the key and value of the
-object are of the string type. For example, the following is a **details** object used to describe the properties
-of a file:
-
-{
-
-"title":"Title of the file",
-
-"content":"Content of the file"
-
-}
-
-By default, it is an empty dictionary object.
+Object of the dictionary type used to describe the attributes of the text content. Both the key and value of the object are of the string type. For example, the following is a **details** object used to describe the properties of a file: { "title":"Title of the file", "content":"Content of the file" } By default, it is an empty dictionary object.
 
 **Type:** Record<string, string>
 
@@ -78,8 +66,7 @@ Plaintext content.
 readonly uniformDataType: 'general.plain-text'
 ```
 
-Uniform data type, which has a fixed value of **general.plain-text**. For details, see
-[UniformDataType](arkts-arkdata-uniformdatatype-e.md).
+Uniform data type, which has a fixed value of **general.plain-text**. For details, see [UniformDataType](arkts-arkdata-uniformdatatype-e.md).
 
 **Type:** 'general.plain-text'
 

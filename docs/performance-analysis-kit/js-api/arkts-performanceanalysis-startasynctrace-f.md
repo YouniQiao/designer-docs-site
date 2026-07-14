@@ -13,13 +13,7 @@ function startAsyncTrace(level: HiTraceOutputLevel, name: string, taskId: number
       customArgs?: string): void
 ```
 
-Starts an asynchronous trace with the trace output level specified.
-
-If multiple trace tasks with the same name need to be performed at the same time or a trace needs to be performed
-multiple times concurrently, different task IDs must be specified in **startAsyncTrace**.
-
-If the trace tasks with the same name are not performed at the same time, the same taskId can be used. For details,
-see [finishAsyncTrace()](arkts-performanceanalysis-finishasynctrace-f.md#finishasynctrace-1).
+Starts an asynchronous trace with the trace output level specified. If multiple trace tasks with the same name need to be performed at the same time or a trace needs to be performed multiple times concurrently, different task IDs must be specified in **startAsyncTrace**. If the trace tasks with the same name are not performed at the same time, the same taskId can be used. For details, see [finishAsyncTrace()](arkts-performanceanalysis-finishasynctrace-f.md#finishasynctrace-1).
 
 **Since:** 19
 

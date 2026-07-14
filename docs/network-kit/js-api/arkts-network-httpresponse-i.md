@@ -94,8 +94,7 @@ Server status code.
 result: string | Object | ArrayBuffer
 ```
 
-result can be a string (API 6) or an ArrayBuffer(API 8). Object is deprecated from API 8.
-If {@link HttpRequestOptions#expectDataType} is set, the system preferentially returns this parameter.
+result can be a string (API 6) or an ArrayBuffer(API 8). Object is deprecated from API 8. If {@link HttpRequestOptions#expectDataType} is set, the system preferentially returns this parameter.
 
 **Type:** string | Object | ArrayBuffer
 
@@ -111,9 +110,7 @@ If {@link HttpRequestOptions#expectDataType} is set, the system preferentially r
 resultType: HttpDataType
 ```
 
-If the resultType is string, you can get result directly.
-If the resultType is Object, you can get result such as this: result['key'].
-If the resultType is ArrayBuffer, you can use ArrayBuffer to create the binary objects.
+If the resultType is string, you can get result directly. If the resultType is Object, you can get result such as this: result['key']. If the resultType is ArrayBuffer, you can use ArrayBuffer to create the binary objects.
 
 **Type:** HttpDataType
 

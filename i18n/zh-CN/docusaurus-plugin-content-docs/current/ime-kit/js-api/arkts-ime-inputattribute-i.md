@@ -12,13 +12,7 @@
 abilityName?: string
 ```
 
-编辑框设置的ability名称。
-
-- 编辑框设置ability名称时，长度不超过127个字符（如果超出将会自动截断为127个字符）。
-- 编辑框未设置ability名称时，默认为空字符串。
-- 该字段在调用绑定
-[attach](arkts-ime-inputmethodcontroller-i.md#attach-1)
-时提供给输入法应用。
+编辑框设置的ability名称。 - 编辑框设置ability名称时，长度不超过127个字符（如果超出将会自动截断为127个字符）。 - 编辑框未设置ability名称时，默认为空字符串。 - 该字段在调用绑定 [attach](arkts-ime-inputmethodcontroller-i.md#attach-1) 时提供给输入法应用。
 
 **类型：** string
 
@@ -32,13 +26,7 @@ abilityName?: string
 consumeKeyEvents?: boolean
 ```
 
-编辑框是否具有完整处理字母、字符、功能等按键的能力。默认值为false。
-
-- 值为true，表示具备此能力。
-- 值为false，表示不具备此能力。
-- 该字段在调用
-[attach](arkts-ime-inputmethodcontroller-i.md#attach-1)
-/ [InputAttribute](arkts-ime-inputattribute-i.md)时提供给输入法应用。
+编辑框是否具有完整处理字母、字符、功能等按键的能力。默认值为false。 - 值为true，表示具备此能力。 - 值为false，表示不具备此能力。 - 该字段在调用 [attach](arkts-ime-inputmethodcontroller-i.md#attach-1) / [InputAttribute](arkts-ime-inputattribute-i.md)时提供给输入法应用。
 
 **类型：** boolean
 
@@ -70,13 +58,7 @@ Enter键功能类型。
 placeholder?: string
 ```
 
-编辑框设置的占位符信息。
-
-- 编辑框设置占位符信息时，长度不超过255个字符（如果超出将会自动截断为255个字符），用于提示或引导用户输入临时性文本或符号。（例如：提示输入项为"必填"或"非必填"的输入结果反馈。）
-- 编辑框没有设置占位符信息时，默认为空字符串。
-- 该字段在调用
-[attach](arkts-ime-inputmethodcontroller-i.md#attach-1)
-时提供给输入法应用。
+编辑框设置的占位符信息。 - 编辑框设置占位符信息时，长度不超过255个字符（如果超出将会自动截断为255个字符），用于提示或引导用户输入临时性文本或符号。（例如：提示输入项为"必填"或"非必填"的输入结果反馈。） - 编辑框没有设置占位符信息时，默认为空字符串。 - 该字段在调用 [attach](arkts-ime-inputmethodcontroller-i.md#attach-1) 时提供给输入法应用。
 
 **类型：** string
 

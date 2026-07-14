@@ -60,9 +60,7 @@ The cloud is unavailable.
 LOCKED_BY_OTHERS = 4
 ```
 
-The device-cloud sync of another device is being performed.
-
-The sync of the local device can be performed only when the cloud resources are available.
+The device-cloud sync of another device is being performed. The sync of the local device can be performed only when the cloud resources are available.
 
 **Since:** 10
 
@@ -74,8 +72,7 @@ The sync of the local device can be performed only when the cloud resources are 
 RECORD_LIMIT_EXCEEDED = 5
 ```
 
-The number of records or size of the data to be synced exceeds the maximum. The maximum value is configured on
-the cloud.
+The number of records or size of the data to be synced exceeds the maximum. The maximum value is configured on the cloud.
 
 **Since:** 10
 

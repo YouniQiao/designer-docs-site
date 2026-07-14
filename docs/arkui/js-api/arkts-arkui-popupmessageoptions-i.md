@@ -12,12 +12,7 @@ Describes the popup message text style.
 font?: Font
 ```
 
-Font settings of the popup message.
-
-**NOTE**
-
-1. Setting **family** is not supported.
-2. The **weight** attribute in **Font** does not support the number type.
+Font settings of the popup message. **NOTE** 1. Setting **family** is not supported. 2. The **weight** attribute in **Font** does not support the number type.
 
 **Type:** Font
 

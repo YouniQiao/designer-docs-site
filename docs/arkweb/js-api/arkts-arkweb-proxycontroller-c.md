@@ -18,12 +18,7 @@ import { webview } from '@kit.ArkWeb';
 static applyProxyOverride(proxyConfig: ProxyConfig, callback: OnProxyConfigChangeCallback): void
 ```
 
-Sets ProxyConfig which will be used by all Webs in the app. URLs that match patterns in the bypass list will
-connect the server directly.
-Instead, the request will use the proxy specified by the config. Requests are not guaranteed to use the new proxy
-immediately; wait for
-the listener before loading a page. This listener will be called on the UI thread.
-Note: calling applyProxyOverride will cause any existing system wide setting to be ignored.
+Sets ProxyConfig which will be used by all Webs in the app. URLs that match patterns in the bypass list will connect the server directly. Instead, the request will use the proxy specified by the config. Requests are not guaranteed to use the new proxy immediately; wait for the listener before loading a page. This listener will be called on the UI thread. Note: calling applyProxyOverride will cause any existing system wide setting to be ignored.
 
 **Since:** 15
 
@@ -50,9 +45,7 @@ Note: calling applyProxyOverride will cause any existing system wide setting to 
 static removeProxyOverride(callback: OnProxyConfigChangeCallback): void
 ```
 
-Remove the proxy config. Requests are not guaranteed to not use the proxy; Wait for the listener before loading a
-page. This listener
-will be called on the UI thread.
+Remove the proxy config. Requests are not guaranteed to not use the proxy; Wait for the listener before loading a page. This listener will be called on the UI thread.
 
 **Since:** 15
 

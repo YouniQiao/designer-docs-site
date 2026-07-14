@@ -6,8 +6,7 @@
 declare function lchownSync(path: string, uid: number, gid: number): void
 ```
 
-Changes the file owner based on a file path and changes the owner of the symbolic link (not the referenced file).
-This API returns the result synchronously.
+Changes the file owner based on a file path and changes the owner of the symbolic link (not the referenced file). This API returns the result synchronously.
 
 **Since:** 7
 

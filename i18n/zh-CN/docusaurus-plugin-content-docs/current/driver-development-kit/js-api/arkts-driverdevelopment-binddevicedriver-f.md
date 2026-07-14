@@ -7,8 +7,7 @@ function bindDeviceDriver(deviceId: number, onDisconnect: AsyncCallback<number>,
     callback: AsyncCallback<RemoteDeviceDriver>): void
 ```
 
-根据queryDevices()返回的设备信息绑定设备。
-需要调用[deviceManager.queryDevices()](arkts-driverdevelopment-querydevices-f.md#querydevices-1)获取设备信息以及device。
+根据queryDevices()返回的设备信息绑定设备。 需要调用[deviceManager.queryDevices()](arkts-driverdevelopment-querydevices-f.md#querydevices-1)获取设备信息以及device。
 
 **起始版本：** 11
 
@@ -66,8 +65,7 @@ try {
 function bindDeviceDriver(deviceId: number, onDisconnect: AsyncCallback<number>): Promise<RemoteDeviceDriver>
 ```
 
-根据queryDevices()返回的设备信息绑定设备。
-需要调用[deviceManager.queryDevices](arkts-driverdevelopment-querydevices-f.md#querydevices-1)获取设备信息以及device。
+根据queryDevices()返回的设备信息绑定设备。 需要调用[deviceManager.queryDevices](arkts-driverdevelopment-querydevices-f.md#querydevices-1)获取设备信息以及device。
 
 **起始版本：** 11
 

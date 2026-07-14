@@ -36,9 +36,7 @@ Default data clearance mode of the database.
 tableInfo?: Record<string, ClearAction>
 ```
 
-Information about the table whose data is to be cleared and the clearance rules. The key is the table name, and
-the value is the clearance mode of the table. If this parameter is not set, the data clearance mode of database
-is used by default.
+Information about the table whose data is to be cleared and the clearance rules. The key is the table name, and the value is the clearance mode of the table. If this parameter is not set, the data clearance mode of database is used by default.
 
 **Type:** Record<string, ClearAction>
 

@@ -12,9 +12,7 @@ Size information of the text.
 readonly actualBoundingBoxAscent: number
 ```
 
-Distance from the horizontal line specified by the
-[CanvasRenderingContext2D.textBaseline](#canvastextbaseline) attribute to the top
-of the bounding rectangle used to render the text. Read-only.
+Distance from the horizontal line specified by the [CanvasRenderingContext2D.textBaseline](#canvastextbaseline) attribute to the top of the bounding rectangle used to render the text. Read-only.
 
 **Type:** number
 
@@ -32,9 +30,7 @@ of the bounding rectangle used to render the text. Read-only.
 readonly actualBoundingBoxDescent: number
 ```
 
-Distance from the horizontal line specified by the
-[CanvasRenderingContext2D.textBaseline](#canvastextbaseline) attribute to the bottom
-of the bounding rectangle used to render the text. Read-only.
+Distance from the horizontal line specified by the [CanvasRenderingContext2D.textBaseline](#canvastextbaseline) attribute to the bottom of the bounding rectangle used to render the text. Read-only.
 
 **Type:** number
 
@@ -52,9 +48,7 @@ of the bounding rectangle used to render the text. Read-only.
 readonly actualBoundingBoxLeft: number
 ```
 
-Distance parallel to the baseline from the alignment point determined by the
-[CanvasRenderingContext2D.textAlign](#canvastextalign) attribute to the left side
-of the bounding rectangle of the text. Read-only.
+Distance parallel to the baseline from the alignment point determined by the [CanvasRenderingContext2D.textAlign](#canvastextalign) attribute to the left side of the bounding rectangle of the text. Read-only.
 
 **Type:** number
 
@@ -72,9 +66,7 @@ of the bounding rectangle of the text. Read-only.
 readonly actualBoundingBoxRight: number
 ```
 
-Distance parallel to the baseline from the alignment point determined by the
-[CanvasRenderingContext2D.textAlign](#canvastextalign) attribute to the right side
-of the bounding rectangle of the text. Read-only.
+Distance parallel to the baseline from the alignment point determined by the [CanvasRenderingContext2D.textAlign](#canvastextalign) attribute to the right side of the bounding rectangle of the text. Read-only.
 
 **Type:** number
 
@@ -92,9 +84,7 @@ of the bounding rectangle of the text. Read-only.
 readonly alphabeticBaseline: number
 ```
 
-Distance from the horizontal line specified by the
-[CanvasRenderingContext2D.textBaseline](#canvastextbaseline) attribute to the alphabetic
-baseline of the line box. Read-only.
+Distance from the horizontal line specified by the [CanvasRenderingContext2D.textBaseline](#canvastextbaseline) attribute to the alphabetic baseline of the line box. Read-only.
 
 **Type:** number
 
@@ -112,9 +102,7 @@ baseline of the line box. Read-only.
 readonly emHeightAscent: number
 ```
 
-Distance from the horizontal line specified by the
-[CanvasRenderingContext2D.textBaseline](#canvastextbaseline) attribute to the top of the
-em square in the line box. Read-only.
+Distance from the horizontal line specified by the [CanvasRenderingContext2D.textBaseline](#canvastextbaseline) attribute to the top of the em square in the line box. Read-only.
 
 **Type:** number
 
@@ -132,9 +120,7 @@ em square in the line box. Read-only.
 readonly emHeightDescent: number
 ```
 
-Distance from the horizontal line specified by the
-[CanvasRenderingContext2D.textBaseline](#canvastextbaseline) attribute to the bottom of the
-em square in the line box. Read-only.
+Distance from the horizontal line specified by the [CanvasRenderingContext2D.textBaseline](#canvastextbaseline) attribute to the bottom of the em square in the line box. Read-only.
 
 **Type:** number
 
@@ -152,9 +138,7 @@ em square in the line box. Read-only.
 readonly fontBoundingBoxAscent: number
 ```
 
-Distance from the horizontal line specified by the
-[CanvasRenderingContext2D.textBaseline](#canvastextbaseline) attribute to the top of the
-bounding rectangle of all the fonts used to render the text. Read-only.
+Distance from the horizontal line specified by the [CanvasRenderingContext2D.textBaseline](#canvastextbaseline) attribute to the top of the bounding rectangle of all the fonts used to render the text. Read-only.
 
 **Type:** number
 
@@ -172,9 +156,7 @@ bounding rectangle of all the fonts used to render the text. Read-only.
 readonly fontBoundingBoxDescent: number
 ```
 
-Distance from the horizontal line specified by the
-[CanvasRenderingContext2D.textBaseline](#canvastextbaseline) attribute to the bottom of the
-bounding rectangle of all the fonts used to render the text. Read-only.
+Distance from the horizontal line specified by the [CanvasRenderingContext2D.textBaseline](#canvastextbaseline) attribute to the bottom of the bounding rectangle of all the fonts used to render the text. Read-only.
 
 **Type:** number
 
@@ -192,9 +174,7 @@ bounding rectangle of all the fonts used to render the text. Read-only.
 readonly hangingBaseline: number
 ```
 
-Distance from the horizontal line specified by the
-[CanvasRenderingContext2D.textBaseline](#canvastextbaseline) attribute to the hanging
-baseline of the line box. Read-only.
+Distance from the horizontal line specified by the [CanvasRenderingContext2D.textBaseline](#canvastextbaseline) attribute to the hanging baseline of the line box. Read-only.
 
 **Type:** number
 
@@ -212,11 +192,7 @@ baseline of the line box. Read-only.
 readonly height: number
 ```
 
-Height of the text. Read-only.
-
-Default unit: vp.
-
-If the unit mode of the **CanvasRenderingContext2D** object is set to px, the unit is px.
+Height of the text. Read-only. Default unit: vp. If the unit mode of the **CanvasRenderingContext2D** object is set to px, the unit is px.
 
 **Type:** number
 
@@ -234,9 +210,7 @@ If the unit mode of the **CanvasRenderingContext2D** object is set to px, the un
 readonly ideographicBaseline: number
 ```
 
-Distance from the horizontal line specified by the
-[CanvasRenderingContext2D.textBaseline](#canvastextbaseline) attribute to the ideographic
-baseline of the line box. Read-only.
+Distance from the horizontal line specified by the [CanvasRenderingContext2D.textBaseline](#canvastextbaseline) attribute to the ideographic baseline of the line box. Read-only.
 
 **Type:** number
 
@@ -254,11 +228,7 @@ baseline of the line box. Read-only.
 readonly width: number
 ```
 
-Width of the text. Read-only.
-
-Default unit: vp.
-
-If the unit mode of the **CanvasRenderingContext2D** object is set to px, the unit is px.
+Width of the text. Read-only. Default unit: vp. If the unit mode of the **CanvasRenderingContext2D** object is set to px, the unit is px.
 
 **Type:** number
 

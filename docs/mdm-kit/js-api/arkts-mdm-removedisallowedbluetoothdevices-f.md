@@ -12,9 +12,7 @@ import { bluetoothManager } from '@kit.MDMKit';
 function removeDisallowedBluetoothDevices(admin: Want, deviceIds: Array<string>): void
 ```
 
-Removes disallowed Bluetooth devices. If some Bluetooth devices are removed from the disallowed list, the current
-device cannot connect to the remaining ones; if all Bluetooth devices are removed, the current device can connect
-to any Bluetooth device.
+Removes disallowed Bluetooth devices. If some Bluetooth devices are removed from the disallowed list, the current device cannot connect to the remaining ones; if all Bluetooth devices are removed, the current device can connect to any Bluetooth device.
 
 **Since:** 20
 

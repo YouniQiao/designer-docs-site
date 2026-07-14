@@ -1,12 +1,6 @@
 # Pen
 
-画笔对象，描述所绘制图形形状的轮廓信息。
-
-> **说明：**
->
-> - 本模块使用屏幕物理像素单位px。
->
-> - 本模块为单线程模型策略，需要调用方自行管理线程安全和上下文状态的切换。
+画笔对象，描述所绘制图形形状的轮廓信息。 > **说明：** > > - 本模块使用屏幕物理像素单位px。 > > - 本模块为单线程模型策略，需要调用方自行管理线程安全和上下文状态的切换。
 
 **起始版本：** 11
 
@@ -581,8 +575,7 @@ setMaskFilter(filter: MaskFilter | null): void
 setMiterLimit(miter: number): void
 ```
 
-设置折线尖角长度与线宽的最大比值，当画笔绘制一条折线，并且[JoinStyle](arkts-arkgraphics2d-joinstyle-e.md)为MITER_JOIN时，若尖角长度与线宽的比值大
-于限制值，则该折角使用BEVEL_JOIN绘制。
+设置折线尖角长度与线宽的最大比值，当画笔绘制一条折线，并且[JoinStyle](arkts-arkgraphics2d-joinstyle-e.md)为MITER_JOIN时，若尖角长度与线宽的比值大 于限制值，则该折角使用BEVEL_JOIN绘制。
 
 **起始版本：** 12
 

@@ -1,7 +1,6 @@
 # FormInfoFilter
 
-The optional options used as filters to ask
-getFormsInfo to return formInfos from only forms that match the options.
+The optional options used as filters to ask getFormsInfo to return formInfos from only forms that match the options.
 
 **Since:** 9
 
@@ -19,8 +18,7 @@ import { formInfo } from '@kit.FormKit';
 moduleName?: string
 ```
 
-optional moduleName that used to ask getFormsInfo to return
-form infos with the same moduleName.
+optional moduleName that used to ask getFormsInfo to return form infos with the same moduleName.
 
 **Type:** string
 

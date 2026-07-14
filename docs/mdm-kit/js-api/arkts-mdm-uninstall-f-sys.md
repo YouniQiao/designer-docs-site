@@ -12,15 +12,7 @@ import { bundleManager } from '@kit.MDMKit';
 function uninstall(admin: Want, bundleName: string, callback: AsyncCallback<void>): void
 ```
 
-Uninstalls an application of the current user without retaining the bundle data. This API uses an asynchronous
-callback to return the result.
-
-> **NOTE**
->
-> Error code **401** will be returned if this API is called to uninstall an application that is either a non-
-> removable pre-installed application or one configured as non-uninstallable via the
-> [addDisallowedUninstallBundlesSync](arkts-mdm-adddisalloweduninstallbundlessync-f.md#adddisalloweduninstallbundlessync-1)
-> API.
+Uninstalls an application of the current user without retaining the bundle data. This API uses an asynchronous callback to return the result. > **NOTE** > > Error code **401** will be returned if this API is called to uninstall an application that is either a non- > removable pre-installed application or one configured as non-uninstallable via the > [addDisallowedUninstallBundlesSync](arkts-mdm-adddisalloweduninstallbundlessync-f.md#adddisalloweduninstallbundlessync-1) > API.
 
 **Since:** 10
 
@@ -83,15 +75,7 @@ bundleManager.uninstall(wantTemp, 'bundleName', (err) => {
 function uninstall(admin: Want, bundleName: string, userId: number, callback: AsyncCallback<void>): void
 ```
 
-Uninstalls an application of the specified user without retaining the bundle data This API uses an asynchronous
-callback to return the result.
-
-> **NOTE**
->
-> Error code **401** will be returned if this API is called to uninstall an application that is either a non-
-> removable pre-installed application or one configured as non-uninstallable via the
-> [addDisallowedUninstallBundlesSync](arkts-mdm-adddisalloweduninstallbundlessync-f.md#adddisalloweduninstallbundlessync-1)
-> API.
+Uninstalls an application of the specified user without retaining the bundle data This API uses an asynchronous callback to return the result. > **NOTE** > > Error code **401** will be returned if this API is called to uninstall an application that is either a non- > removable pre-installed application or one configured as non-uninstallable via the > [addDisallowedUninstallBundlesSync](arkts-mdm-adddisalloweduninstallbundlessync-f.md#adddisalloweduninstallbundlessync-1) > API.
 
 **Since:** 10
 
@@ -155,15 +139,7 @@ bundleManager.uninstall(wantTemp, 'bundleName', 100, (err) => {
 function uninstall(admin: Want, bundleName: string, isKeepData: boolean, callback: AsyncCallback<void>): void
 ```
 
-Uninstalls an application of the current user. The **isKeepData** parameter specifies whether to retain the bundle
-data. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> Error code **401** will be returned if this API is called to uninstall an application that is either a non-
-> removable pre-installed application or one configured as non-uninstallable via the
-> [addDisallowedUninstallBundlesSync](arkts-mdm-adddisalloweduninstallbundlessync-f.md#adddisalloweduninstallbundlessync-1)
-> API.
+Uninstalls an application of the current user. The **isKeepData** parameter specifies whether to retain the bundle data. This API uses an asynchronous callback to return the result. > **NOTE** > > Error code **401** will be returned if this API is called to uninstall an application that is either a non- > removable pre-installed application or one configured as non-uninstallable via the > [addDisallowedUninstallBundlesSync](arkts-mdm-adddisalloweduninstallbundlessync-f.md#adddisalloweduninstallbundlessync-1) > API.
 
 **Since:** 10
 
@@ -227,15 +203,7 @@ bundleManager.uninstall(wantTemp, 'bundleName', true, (err) => {
 function uninstall(admin: Want, bundleName: string, userId: number, isKeepData: boolean, callback: AsyncCallback<void>): void
 ```
 
-Uninstalls an application of the specified user. The **isKeepData** parameter specifies whether to retain the
-bundle data. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> Error code **401** will be returned if this API is called to uninstall an application that is either a non-
-> removable pre-installed application or one configured as non-uninstallable via the
-> [addDisallowedUninstallBundlesSync](arkts-mdm-adddisalloweduninstallbundlessync-f.md#adddisalloweduninstallbundlessync-1)
-> API.
+Uninstalls an application of the specified user. The **isKeepData** parameter specifies whether to retain the bundle data. This API uses an asynchronous callback to return the result. > **NOTE** > > Error code **401** will be returned if this API is called to uninstall an application that is either a non- > removable pre-installed application or one configured as non-uninstallable via the > [addDisallowedUninstallBundlesSync](arkts-mdm-adddisalloweduninstallbundlessync-f.md#adddisalloweduninstallbundlessync-1) > API.
 
 **Since:** 10
 

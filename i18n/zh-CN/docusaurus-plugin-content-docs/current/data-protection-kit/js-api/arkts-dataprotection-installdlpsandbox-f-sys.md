@@ -6,13 +6,7 @@
 function installDLPSandbox(bundleName: string, access: DLPFileAccess, userId: number, uri: string): Promise<DLPSandboxInfo>
 ```
 
-安装一个应用的DLP沙箱。DLP沙箱为受保护的DLP文件创建独立的运行环境，与原应用进程隔离，确保数据在授权范围内安全流转。沙箱应用继承原应用的功能但仅能访问授权的DLP文件。使用Promise异步回调。
-
-调用installDLPSandbox成功后必须在使用完毕后调用
-[uninstallDLPSandbox](arkts-dataprotection-uninstalldlpsandbox-f-sys.md#uninstalldlpsandbox-1)
-卸载沙箱。
-
-DLP文件管理应用打开受保护文件前，需要先为目标应用安装DLP沙箱。
+安装一个应用的DLP沙箱。DLP沙箱为受保护的DLP文件创建独立的运行环境，与原应用进程隔离，确保数据在授权范围内安全流转。沙箱应用继承原应用的功能但仅能访问授权的DLP文件。使用Promise异步回调。 调用installDLPSandbox成功后必须在使用完毕后调用 [uninstallDLPSandbox](arkts-dataprotection-uninstalldlpsandbox-f-sys.md#uninstalldlpsandbox-1) 卸载沙箱。 DLP文件管理应用打开受保护文件前，需要先为目标应用安装DLP沙箱。
 
 **起始版本：** 10
 
@@ -26,10 +20,10 @@ DLP文件管理应用打开受保护文件前，需要先为目标应用安装DL
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| bundleName | string | 是 | 应用包名。最小7字节，最大128字节。超出范围时抛出错误码19100001。 |
+| bundleName | string | 是 | 应用包名。最小7字节，最大128字节。超出范围时抛出错误码401。 |
 | access | DLPFileAccess | 是 | DLP文件授权类型。设置不同的授权类型将决定用户对DLP文件的访问权限范围。 |
 | userId | number | 是 | 当前的用户ID，通过账号子系统获取的系统账号ID，默认主用户ID：100。<br>取值范围为[0, 2&lt;sup&gt;31&lt;/sup&gt;-1]，超出范围将被截断。当传入参数值小于0时，输出错误日志。 |
-| uri | string | 是 | DLP文件的URI。不超过4095字节。超出范围时抛出错误码19100001。 |
+| uri | string | 是 | DLP文件的URI。不超过4095字节。超出范围时抛出错误码401。 |
 
 **返回值：**
 
@@ -69,13 +63,7 @@ dlpPermission.installDLPSandbox('com.ohos.note', dlpPermission.DLPFileAccess.REA
 function installDLPSandbox(bundleName: string, access: DLPFileAccess, userId: number, uri: string, callback: AsyncCallback<DLPSandboxInfo>): void
 ```
 
-安装一个应用的DLP沙箱。使用callback异步回调。调用成功后，系统为应用创建DLP沙箱环境并返回沙箱信息。
-
-调用installDLPSandbox成功后必须在使用完毕后调用
-[uninstallDLPSandbox](arkts-dataprotection-uninstalldlpsandbox-f-sys.md#uninstalldlpsandbox-1)
-卸载沙箱。
-
-DLP文件管理应用打开受保护文件前，需要先为目标应用安装DLP沙箱。
+安装一个应用的DLP沙箱。使用callback异步回调。调用成功后，系统为应用创建DLP沙箱环境并返回沙箱信息。 调用installDLPSandbox成功后必须在使用完毕后调用 [uninstallDLPSandbox](arkts-dataprotection-uninstalldlpsandbox-f-sys.md#uninstalldlpsandbox-1) 卸载沙箱。 DLP文件管理应用打开受保护文件前，需要先为目标应用安装DLP沙箱。
 
 **起始版本：** 10
 
@@ -89,10 +77,10 @@ DLP文件管理应用打开受保护文件前，需要先为目标应用安装DL
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| bundleName | string | 是 | 应用包名。最小7字节，最大128字节。超出范围时抛出错误码19100001。 |
+| bundleName | string | 是 | 应用包名。最小7字节，最大128字节。超出范围时抛出错误码401。 |
 | access | DLPFileAccess | 是 | DLP文件授权类型。设置不同的授权类型将决定用户对DLP文件的访问权限范围。 |
 | userId | number | 是 | 当前的用户ID，通过账号子系统获取的系统账号ID，默认主用户ID：100。<br>取值范围为[0, 2&lt;sup&gt;31&lt;/sup&gt;-1]，超出范围将被截断。当传入参数值小于0时，输出错误日志。 |
-| uri | string | 是 | DLP文件的URI。不超过4095字节。 超出范围时抛出错误码19100001。 |
+| uri | string | 是 | DLP文件的URI。不超过4095字节。 超出范围时抛出错误码401。 |
 | callback | AsyncCallback&lt;DLPSandboxInfo&gt; | 是 | 回调函数。当安装DLP沙箱成功，err为undefined，data为获取到的沙箱信息；否则为错误对象。 |
 
 **错误码：**

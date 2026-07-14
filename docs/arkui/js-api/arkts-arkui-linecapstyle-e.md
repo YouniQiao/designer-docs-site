@@ -44,8 +44,7 @@ The two ends of the dividing line are semicircles.
 Square
 ```
 
-Extends half a circle at the end of the path with a width equal to half the line width and a height equal to the
-line width.
+Extends half a circle at the end of the path with a width equal to half the line width and a height equal to the line width.
 
 **Since:** 7
 

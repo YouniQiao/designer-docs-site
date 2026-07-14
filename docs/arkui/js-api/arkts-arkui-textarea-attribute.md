@@ -1,8 +1,6 @@
 # TextArea properties/events
 
-In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following attributes are supported.
-
-In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following events are supported.
+In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following attributes are supported. In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following events are supported.
 
 **Inheritance/Implementation:** TextAreaAttribute extends [CommonMethod<TextAreaAttribute>](CommonMethod<TextAreaAttribute>)
 
@@ -16,8 +14,7 @@ In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-ap
 autoCapitalizationMode(mode: AutoCapitalizationMode)
 ```
 
-Sets the auto-capitalization text mode. This API provides the capability, but actual implementation depends on the
-input method application.
+Sets the auto-capitalization text mode. This API provides the capability, but actual implementation depends on the input method application.
 
 **Since:** 20
 
@@ -103,14 +100,7 @@ Sets the caret style.
 compressLeadingPunctuation(enabled: Optional<boolean>)
 ```
 
-Sets whether to enable leading punctuation compression.
-
-> **NOTE**
->
-> - Leading punctuation is not compressed by default.
->
-> - For the list of punctuation marks that support compression, see the punctuation range at the beginning of a
-> line in [ParagraphStyle](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-paragraphstyle-i.md).
+Sets whether to enable leading punctuation compression. > **NOTE** > > - Leading punctuation is not compressed by default. > > - For the list of punctuation marks that support compression, see the punctuation range at the beginning of a > line in [ParagraphStyle](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-paragraphstyle-i.md).
 
 **Since:** 23
 
@@ -154,10 +144,7 @@ Sets the content type for autofill.<!--RP3--><!--RP3End-->
 copyOption(value: CopyOptions)
 ```
 
-Sets whether the input text can be copied. If this attribute is set to **CopyOptions.None**, only paste and select
-all operations are supported.
-
-If this attribute is set to **CopyOptions.None**, drag and drop operations are not supported.
+Sets whether the input text can be copied. If this attribute is set to **CopyOptions.None**, only paste and select all operations are supported. If this attribute is set to **CopyOptions.None**, drag and drop operations are not supported.
 
 **Since:** 9
 
@@ -177,34 +164,7 @@ If this attribute is set to **CopyOptions.None**, drag and drop operations are n
 customKeyboard(value: CustomBuilder | ComponentContent | undefined, options?: KeyboardOptions)
 ```
 
-Sets the custom keyboard.
-
-When a custom keyboard is set, activating the text box opens the specified custom component, instead of the system
-input method.
-
-The height of the custom keyboard can be set using the **height** property of the custom component's root node,
-while the width uses the system default value.
-
-The custom keyboard is presented by overlaying the original screen, which is not compressed or lifted if avoid mode
-is not enabled or avoidance is not needed for the text box.
-
-The custom keyboard cannot obtain the focus, but it blocks gesture events.
-
-By default, the custom keyboard is closed when the input component loses the focus. You can also use the
-[TextAreaController](arkts-arkui-textareacontroller-c.md).[stopEditing](arkts-arkui-textareacontroller-c.md#stopediting-1) API to close the
-keyboard.
-
-When setting a custom keyboard, you can bind the [onKeyPrelme](arkts-arkui-commonmethod-c.md#onkeypreime-1) event to prevent
-input from the physical keyboard.
-
-From API version 23, the
-[setCustomKeyboardContinueFeature](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#setcustomkeyboardcontinuefeature23)
-API can be used to enable the continuation feature for custom keyboards. When switching between custom keyboards,
-the system changes the keyboard directly without triggering the close and open animations.
-
-> **NOTE**
->
-> This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
+Sets the custom keyboard. When a custom keyboard is set, activating the text box opens the specified custom component, instead of the system input method. The height of the custom keyboard can be set using the **height** property of the custom component's root node, while the width uses the system default value. The custom keyboard is presented by overlaying the original screen, which is not compressed or lifted if avoid mode is not enabled or avoidance is not needed for the text box. The custom keyboard cannot obtain the focus, but it blocks gesture events. By default, the custom keyboard is closed when the input component loses the focus. You can also use the [TextAreaController](arkts-arkui-textareacontroller-c.md).[stopEditing](arkts-arkui-textareacontroller-c.md#stopediting-1) API to close the keyboard. When setting a custom keyboard, you can bind the [onKeyPrelme](arkts-arkui-commonmethod-c.md#onkeypreime-1) event to prevent input from the physical keyboard. From API version 23, the [setCustomKeyboardContinueFeature](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#setcustomkeyboardcontinuefeature23) API can be used to enable the continuation feature for custom keyboards. When switching between custom keyboards, the system changes the keyboard directly without triggering the close and open animations. > **NOTE** > > This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 10
 
@@ -249,15 +209,7 @@ Sets the color, type, and style of the text decorative line.
 editMenuOptions(editMenu: EditMenuOptions)
 ```
 
-Sets the extended options of the custom context menu on selection, including the text content, icon, and callback.
-
-When
-[disableMenuItems](../../../../reference/apis-arkui/arkts-apis-uicontext-textmenucontroller.md#disablemenuitems20) or
-
-[disableSystemServiceMenuItems](../../../../reference/apis-arkui/arkts-apis-uicontext-textmenucontroller.md#disablesystemservicemenuitems20)
-is used to disable system service menu items in the context menu on selection, the disabled menu options will be
-excluded from the parameter list in the [onCreateMenu](arkts-arkui-editmenuoptions-i.md#oncreatemenu-1) callback of
-**editMenuOptions**.
+Sets the extended options of the custom context menu on selection, including the text content, icon, and callback. When [disableMenuItems](../../../../reference/apis-arkui/arkts-apis-uicontext-textmenucontroller.md#disablemenuitems20) or [disableSystemServiceMenuItems](../../../../reference/apis-arkui/arkts-apis-uicontext-textmenucontroller.md#disablesystemservicemenuitems20) is used to disable system service menu items in the context menu on selection, the disabled menu options will be excluded from the parameter list in the [onCreateMenu](arkts-arkui-editmenuoptions-i.md#oncreatemenu-1) callback of **editMenuOptions**.
 
 **Since:** 12
 
@@ -279,12 +231,7 @@ excluded from the parameter list in the [onCreateMenu](arkts-arkui-editmenuoptio
 ellipsisMode(mode: Optional<EllipsisMode>)
 ```
 
-Sets the ellipsis position. For the settings to work, [textOverflow](TextAreaAttribute#textOverflow) must be
-set to **TextOverflow.Ellipsis** and [maxLines](TextAreaAttribute#maxLines(value: number)) must be specified.
-Setting **ellipsisMode** alone does not take effect.
-
-**EllipsisMode.START** and **EllipsisMode.CENTER** take effect only when
-[maxLines](TextAreaAttribute#maxLines(value: number)) is set to **1**.
+Sets the ellipsis position. For the settings to work, [textOverflow](TextAreaAttribute#textOverflow) must be set to **TextOverflow.Ellipsis** and [maxLines](TextAreaAttribute#maxLines(value: number)) must be specified. Setting **ellipsisMode** alone does not take effect. **EllipsisMode.START** and **EllipsisMode.CENTER** take effect only when [maxLines](TextAreaAttribute#maxLines(value: number)) is set to **1**.
 
 **Since:** 18
 
@@ -306,9 +253,7 @@ Setting **ellipsisMode** alone does not take effect.
 enableAutoFill(value: boolean)
 ```
 
-Sets whether to enable autofill.<!--RP2--><!--RP2End-->
-
-<!--RP6--><!--RP6End-->
+Sets whether to enable autofill.<!--RP2--><!--RP2End--> <!--RP6--><!--RP6End-->
 
 **Since:** 12
 
@@ -352,10 +297,7 @@ Sets whether to enable automatic spacing between Chinese and Western characters.
 enableHapticFeedback(isEnabled: boolean)
 ```
 
-Specifies whether to enable haptic feedback.
-
-To enable haptic feedback, you must declare the **ohos.permission.VIBRATE** permission under **requestPermissions**
-in the [module.json5](../../../../quick-start/module-configuration-file.md) file of the project.
+Specifies whether to enable haptic feedback. To enable haptic feedback, you must declare the **ohos.permission.VIBRATE** permission under **requestPermissions** in the [module.json5](../../../../quick-start/module-configuration-file.md) file of the project.
 
 **Since:** 13
 
@@ -377,10 +319,7 @@ in the [module.json5](../../../../quick-start/module-configuration-file.md) file
 enableKeyboardOnFocus(value: boolean)
 ```
 
-Sets whether to pop up the soft keyboard when the **TextArea** component obtains focus in a way other than
-clicking.
-
-Since API version 10, the **TextArea** component is bound to the input method by default when it obtains focus.
+Sets whether to pop up the soft keyboard when the **TextArea** component obtains focus in a way other than clicking. Since API version 10, the **TextArea** component is bound to the input method by default when it obtains focus.
 
 **Since:** 10
 
@@ -402,10 +341,7 @@ Since API version 10, the **TextArea** component is bound to the input method by
 enablePreviewText(enable: boolean)
 ```
 
-Sets whether to enable preview text.
-
-The preview content is defined as a temporary, uncommitted input state. Currently, the text interception function
-is not supported.
+Sets whether to enable preview text. The preview content is defined as a temporary, uncommitted input state. Currently, the text interception function is not supported.
 
 **Since:** 12
 
@@ -427,13 +363,7 @@ is not supported.
 enableSelectedDataDetector(enable: boolean | undefined)
 ```
 
-Sets whether to enable entity recognition for selected text. This API only works on devices that provide text
-recognition.
-
-When **enableSelectedDataDetector** is set to **true**, all entity types are recognized by default.
-
-This feature is only effective when [CopyOptions](../../apis-core-file-kit/arkts-apis/arkts-corefile-copyoptions-i.md) is set to **CopyOptions.LocalDevice** or
-**CopyOptions.CrossDevice**.
+Sets whether to enable entity recognition for selected text. This API only works on devices that provide text recognition. When **enableSelectedDataDetector** is set to **true**, all entity types are recognized by default. This feature is only effective when [CopyOptions](../../apis-core-file-kit/arkts-apis/arkts-corefile-copyoptions-i.md) is set to **CopyOptions.LocalDevice** or **CopyOptions.CrossDevice**.
 
 **Since:** 22
 
@@ -455,11 +385,7 @@ This feature is only effective when [CopyOptions](../../apis-core-file-kit/arkts
 enterKeyType(value: EnterKeyType)
 ```
 
-Sets the type of the Enter key.
-
-> **NOTE**
->
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
+Sets the type of the Enter key. > **NOTE** > > This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
 
 **Since:** 11
 
@@ -481,9 +407,7 @@ Sets the type of the Enter key.
 fallbackLineSpacing(enabled: Optional<boolean>)
 ```
 
-Adapts the line height to the actual text height for overlapped multi-line text. This API takes effect only when
-the line height is less than the actual text height. If this API is not set, the line height does not adapt to the
-actual text height by default.
+Adapts the line height to the actual text height for overlapped multi-line text. This API takes effect only when the line height is less than the actual text height. If this API is not set, the line height does not adapt to the actual text height by default.
 
 **Since:** 23
 
@@ -545,15 +469,7 @@ Sets the font family.
 fontFeature(value: string)
 ```
 
-Sets the font feature, for example, monospaced digits.
-
-Format: normal \| \<feature-tag-value\>
-
-Format of **\<feature-tag-value\>**: \<string\> \[ \<integer\> \| on \| off ]
-
-There can be multiple **\<feature-tag-value\>** values, which are separated by commas (,).
-
-For example, the input format for monospaced clock fonts is "ss01" on.
+Sets the font feature, for example, monospaced digits. Format: normal \| \<feature-tag-value\> Format of **\<feature-tag-value\>**: \<string\> \[ \<integer\> \| on \| off ] There can be multiple **\<feature-tag-value\>** values, which are separated by commas (,). For example, the input format for monospaced clock fonts is "ss01" on.
 
 **Since:** 12
 
@@ -657,24 +573,7 @@ Enables half leading for text, which splits the leading equally between the top 
 heightAdaptivePolicy(value: TextHeightAdaptivePolicy)
 ```
 
-Sets how the adaptive height is determined for the text.
-
-When this attribute is set to **TextHeightAdaptivePolicy.MAX_LINES_FIRST**, the
-[maxLines](TextAreaAttribute#maxLines(value: number)) attribute takes precedence for adjusting the text
-height. If the **maxLines** setting results in a layout beyond the layout constraints, the text will shrink to a
-font size between [minFontSize](TextAreaAttribute#minFontSize) and
-[maxFontSize](TextAreaAttribute#maxFontSize) to allow for more content to be shown.
-
-If the text box is in inline input style, the font size in the editing state is different from that in the non-
-editing state.
-
-If this attribute is set to **TextHeightAdaptivePolicy.MIN_FONT_SIZE_FIRST**, the **minFontSize** attribute takes
-precedence for adjusting the text height. If the text can fit in one line with the **minFontSize** setting, the
-text will enlarge to the largest possible font size between **minFontSize** and **maxFontSize**.
-
-If this attribute is set to **TextHeightAdaptivePolicy.LAYOUT_CONSTRAINT_FIRST**, the layout constraints take
-precedence for adjusting the text height. If the resultant layout is beyond the layout constraints, the text will
-shrink to a font size between **minFontSize** and **maxFontSize** to respect the layout constraints.
+Sets how the adaptive height is determined for the text. When this attribute is set to **TextHeightAdaptivePolicy.MAX_LINES_FIRST**, the [maxLines](TextAreaAttribute#maxLines(value: number)) attribute takes precedence for adjusting the text height. If the **maxLines** setting results in a layout beyond the layout constraints, the text will shrink to a font size between [minFontSize](TextAreaAttribute#minFontSize) and [maxFontSize](TextAreaAttribute#maxFontSize) to allow for more content to be shown. If the text box is in inline input style, the font size in the editing state is different from that in the non- editing state. If this attribute is set to **TextHeightAdaptivePolicy.MIN_FONT_SIZE_FIRST**, the **minFontSize** attribute takes precedence for adjusting the text height. If the text can fit in one line with the **minFontSize** setting, the text will enlarge to the largest possible font size between **minFontSize** and **maxFontSize**. If this attribute is set to **TextHeightAdaptivePolicy.LAYOUT_CONSTRAINT_FIRST**, the layout constraints take precedence for adjusting the text height. If the resultant layout is beyond the layout constraints, the text will shrink to a font size between **minFontSize** and **maxFontSize** to respect the layout constraints.
 
 **Since:** 12
 
@@ -696,15 +595,7 @@ shrink to a font size between **minFontSize** and **maxFontSize** to respect the
 horizontalScrolling(enabled: Optional<boolean>)
 ```
 
-Sets whether to enable horizontal scrolling when the text is wider than the view. If this attribute is not set,
-horizontal scrolling is disabled.
-
-> **NOTE**
->
-> Horizontal scrolling is not supported in the following scenarios:
-> [inline mode](../../../../ui/arkts-common-components-text-input.md#inline-mode)<!--Del-->;
-> [voiceButton](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-textarea-sys.md#voicebutton23) enabled<
-> !--DelEnd-->.
+Sets whether to enable horizontal scrolling when the text is wider than the view. If this attribute is not set, horizontal scrolling is disabled. > **NOTE** > > Horizontal scrolling is not supported in the following scenarios: > [inline mode](../../../../ui/arkts-common-components-text-input.md#inline-mode)<!--Del-->; > [voiceButton](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-textarea-sys.md#voicebutton23) enabled< > !--DelEnd-->.
 
 **Since:** 24
 
@@ -726,8 +617,7 @@ horizontal scrolling is disabled.
 includeFontPadding(include: Optional<boolean>)
 ```
 
-Sets whether to add spacing to the first and last lines to avoid text truncation. If this attribute is not set, no
-spacing is added by default.
+Sets whether to add spacing to the first and last lines to avoid text truncation. If this attribute is not set, no spacing is added by default.
 
 **Since:** 23
 
@@ -749,14 +639,7 @@ spacing is added by default.
 inputFilter(value: ResourceStr, error?: (value: string) => void)
 ```
 
-Sets the regular expression for input filtering. Only inputs that comply with the regular expression can be
-displayed. Other inputs are filtered out.
-
-For single-character input scenarios, only single-character matching is supported; for multi-character input
-scenarios (such as pasting), string matching is supported.
-
-Starting from API version 11, setting **inputFilter** with a non-empty string invalidates the text filtering effect
-attached to the [type](TextAreaAttribute#type) API.
+Sets the regular expression for input filtering. Only inputs that comply with the regular expression can be displayed. Other inputs are filtered out. For single-character input scenarios, only single-character matching is supported; for multi-character input scenarios (such as pasting), string matching is supported. Starting from API version 11, setting **inputFilter** with a non-empty string invalidates the text filtering effect attached to the [type](TextAreaAttribute#type) API.
 
 **Since:** 8
 
@@ -777,9 +660,7 @@ attached to the [type](TextAreaAttribute#type) API.
 keyboardAppearance(appearance: Optional<KeyboardAppearance>)
 ```
 
-Sets the keyboard appearance for the text box. This setting takes effect only after input method adaptation. For
-details, see
-[Immersive Mode of the Input Method Application](../../../../inputmethod/inputmethod-immersive-mode-guide.md).
+Sets the keyboard appearance for the text box. This setting takes effect only after input method adaptation. For details, see [Immersive Mode of the Input Method Application](../../../../inputmethod/inputmethod-immersive-mode-guide.md).
 
 **Since:** 15
 
@@ -801,14 +682,7 @@ details, see
 letterSpacing(value: number | string | Resource)
 ```
 
-Sets the letter spacing for a text style. Percentage values follow default display behavior. If the value specified
-is **0**, the default value is used. For the string type, numeric string values with optional units, for example,
-**"10"** or **"10fp"**, are supported.
-
-If the value specified is a negative value, the text is compressed. A negative value too small may result in the
-text being compressed to 0 and no content being displayed.
-
-This setting applies to every character, including those at line endings.
+Sets the letter spacing for a text style. Percentage values follow default display behavior. If the value specified is **0**, the default value is used. For the string type, numeric string values with optional units, for example, **"10"** or **"10fp"**, are supported. If the value specified is a negative value, the text is compressed. A negative value too small may result in the text being compressed to 0 and no content being displayed. This setting applies to every character, including those at line endings.
 
 **Since:** 12
 
@@ -830,8 +704,7 @@ This setting applies to every character, including those at line endings.
 lineBreakStrategy(strategy: LineBreakStrategy)
 ```
 
-Sets the line break rule. This attribute takes effect only when [wordBreak](TextAreaAttribute#wordBreak) is
-not **WordBreak.BREAK_ALL**. Hyphens are not supported.
+Sets the line break rule. This attribute takes effect only when [wordBreak](TextAreaAttribute#wordBreak) is not **WordBreak.BREAK_ALL**. Hyphens are not supported.
 
 **Since:** 12
 
@@ -853,8 +726,7 @@ not **WordBreak.BREAK_ALL**. Hyphens are not supported.
 lineHeight(value: number | string | Resource)
 ```
 
-Text line height. If the value is less than or equal to 0, the line height is not limited and the font size is
-adaptive.
+Text line height. If the value is less than or equal to 0, the line height is not limited and the font size is adaptive.
 
 **Since:** 12
 
@@ -876,8 +748,7 @@ adaptive.
 lineSpacing(value: LengthMetrics)
 ```
 
-Sets the line spacing of the text. If the value specified is less than or equal to 0, the default value **0** is
-used.
+Sets the line spacing of the text. If the value specified is less than or equal to 0, the default value **0** is used.
 
 **Since:** 12
 
@@ -899,8 +770,7 @@ used.
 lineSpacing(value: LengthMetrics, options?: LineSpacingOptions)
 ```
 
-Sets the line spacing for text. When **LineSpacingOptions** is not specified, line spacing is applied above the
-first line and below the last line by default.
+Sets the line spacing for text. When **LineSpacingOptions** is not specified, line spacing is applied above the first line and below the last line by default.
 
 **Since:** 20
 
@@ -945,18 +815,7 @@ Sets the maximum font scale factor for text.
 maxFontSize(value: number | string | Resource)
 ```
 
-Sets the maximum font size. For the string type, numeric string values with optional units, for example, **"10"**
-or **"10fp"**, are supported.
-
-For the setting to take effect, this attribute must be used together with
-[minFontSize](TextAreaAttribute#minFontSize) and [maxLines](TextAreaAttribute#maxLines(value: number)),
-or layout constraint settings.
-
-When the adaptive font size is used, the **fontSize** settings do not take effect.
-
-If the value of **maxFontSize** is less than or equal to 0 or is less than the value of **minFontSize**, the
-adaptive font sizing feature is disabled. In such cases, the [fontSize](TextAreaAttribute#fontSize) attribute
-is used instead. If **fontSize** is not explicitly set, its default value will apply.
+Sets the maximum font size. For the string type, numeric string values with optional units, for example, **"10"** or **"10fp"**, are supported. For the setting to take effect, this attribute must be used together with [minFontSize](TextAreaAttribute#minFontSize) and [maxLines](TextAreaAttribute#maxLines(value: number)), or layout constraint settings. When the adaptive font size is used, the **fontSize** settings do not take effect. If the value of **maxFontSize** is less than or equal to 0 or is less than the value of **minFontSize**, the adaptive font sizing feature is disabled. In such cases, the [fontSize](TextAreaAttribute#fontSize) attribute is used instead. If **fontSize** is not explicitly set, its default value will apply.
 
 **Since:** 12
 
@@ -978,8 +837,7 @@ is used instead. If **fontSize** is not explicitly set, its default value will a
 maxLength(value: number)
 ```
 
-Sets the maximum number of characters for text input. By default, there is no maximum number of characters. When
-the maximum number is reached, no more characters can be entered.
+Sets the maximum number of characters for text input. By default, there is no maximum number of characters. When the maximum number is reached, no more characters can be entered.
 
 **Since:** 10
 
@@ -1001,10 +859,7 @@ the maximum number is reached, no more characters can be entered.
 maxLines(value: number)
 ```
 
-Sets the maximum number of lines that can be displayed. When **textOverflow** is set, text is truncated if the
-content exceeds this limit. When **textOverflow** is not set, in inline style, the text is scrollable if the
-content exceeds the limit while the text box is focused; **maxLines** does not apply when the text box is not
-focused. In non-inline style, the text is truncated according to the number of lines.
+Sets the maximum number of lines that can be displayed. When **textOverflow** is set, text is truncated if the content exceeds this limit. When **textOverflow** is not set, in inline style, the text is scrollable if the content exceeds the limit while the text box is focused; **maxLines** does not apply when the text box is not focused. In non-inline style, the text is truncated according to the number of lines.
 
 **Since:** 10
 
@@ -1026,11 +881,7 @@ focused. In non-inline style, the text is truncated according to the number of l
 maxLines(lines: number, options: MaxLinesOptions)
 ```
 
-Sets the maximum number of visible lines when used with [textOverflow](TextAreaAttribute#textOverflow).
-Excess content can be truncated or made scrollable based on configuration. Without **textOverflow**:
-
-- With focus in inline mode: Text exceeding the **maxLines** limit becomes scrollable.
-- Without focus in inline mode: **maxLines** has no effect.
+Sets the maximum number of visible lines when used with [textOverflow](TextAreaAttribute#textOverflow). Excess content can be truncated or made scrollable based on configuration. Without **textOverflow**: - With focus in inline mode: Text exceeding the **maxLines** limit becomes scrollable. - Without focus in inline mode: **maxLines** has no effect.
 
 **Since:** 20
 
@@ -1075,18 +926,7 @@ Sets the minimum font scale factor for text.
 minFontSize(value: number | string | Resource)
 ```
 
-Sets the minimum font size. For the string type, numeric string values with optional units, for example, **"10"**
-or **"10fp"**, are supported.
-
-For the setting to take effect, this attribute must be used together with
-[maxFontSize](TextAreaAttribute#maxFontSize) and [maxLines](TextAreaAttribute#maxLines(value: number)),
-or layout constraint settings.
-
-When the adaptive font size is used, the **fontSize** settings do not take effect.
-
-If the value of **minFontSize** is less than or equal to 0, the adaptive font sizing feature is disabled. In such
-cases, the [fontSize](TextAreaAttribute#fontSize) attribute is used instead. If **fontSize** is not
-explicitly set, its default value will apply.
+Sets the minimum font size. For the string type, numeric string values with optional units, for example, **"10"** or **"10fp"**, are supported. For the setting to take effect, this attribute must be used together with [maxFontSize](TextAreaAttribute#maxFontSize) and [maxLines](TextAreaAttribute#maxLines(value: number)), or layout constraint settings. When the adaptive font size is used, the **fontSize** settings do not take effect. If the value of **minFontSize** is less than or equal to 0, the adaptive font sizing feature is disabled. In such cases, the [fontSize](TextAreaAttribute#fontSize) attribute is used instead. If **fontSize** is not explicitly set, its default value will apply.
 
 **Since:** 12
 
@@ -1108,9 +948,7 @@ explicitly set, its default value will apply.
 minLines(lines: Optional<number>)
 ```
 
-Sets the minimum number of lines displayed for the component. When
-[constraintSize](arkts-arkui-commonmethod-c.md#constraintsize-1) is set, the component's final height respects the defined
-constraints.
+Sets the minimum number of lines displayed for the component. When [constraintSize](arkts-arkui-commonmethod-c.md#constraintsize-1) is set, the component's final height respects the defined constraints.
 
 **Since:** 20
 
@@ -1132,11 +970,7 @@ constraints.
 onChange(callback: EditableTextOnChangeCallback)
 ```
 
-Called when the input in the text box changes.
-
-In this callback, if caret operations are performed, you must adjust the caret logic based on the **previewText**
-parameter of [EditableTextOnChangeCallback](arkts-arkui-editabletextonchangecallback-t.md) to ensure it works seamlessly
-within the preview display scenario.
+Called when the input in the text box changes. In this callback, if caret operations are performed, you must adjust the caret logic based on the **previewText** parameter of [EditableTextOnChangeCallback](arkts-arkui-editabletextonchangecallback-t.md) to ensure it works seamlessly within the preview display scenario.
 
 **Since:** 7
 
@@ -1262,8 +1096,7 @@ Called when text is inserted.
 onEditChange(callback: (isEditing: boolean) => void)
 ```
 
-Called when the input state changes. The text box is in the editing state when it has the caret placed in it, and
-is in the non-editing state otherwise.
+Called when the input state changes. The text box is in the editing state when it has the caret placed in it, and is in the non-editing state otherwise.
 
 **Since:** 10
 
@@ -1327,8 +1160,7 @@ Called when the Enter key on the soft keyboard is pressed.
 onSubmit(callback: TextAreaSubmitCallback)
 ```
 
-Called when the Enter key on the soft keyboard is pressed, providing methods to maintain the editing state of the
-**TextArea** component upon submission.
+Called when the Enter key on the soft keyboard is pressed, providing methods to maintain the editing state of the **TextArea** component upon submission.
 
 **Since:** 14
 
@@ -1372,19 +1204,7 @@ Called when the text selection changes or the caret position changes during edit
 onWillAttachIME(callback: Callback<IMEClient> | undefined)
 ```
 
-Called when the input box is about to be bound to an input method.
-
-<!--Del-->
-
-Before the input box is bound to an input method, you can use the
-[setKeyboardAppearanceConfig](../arkts-apis/arkts-arkui-uicontext-c-sys.md#setkeyboardappearanceconfig-1) API of
-**UIContext** to set the keyboard style.<!--DelEnd-->
-
-From API version 22, the [setExtraConfig](arkts-arkui-imeclient-i.md#setextraconfig-1) method of [IMEClient](arkts-arkui-imeclient-i.md)
-can be called to set input method extension information. After the input method is bound, it receives this
-extension information which can be used to implement custom functionality.
-
-**IMEClient** is valid only during the execution of **onWillAttachIME** and cannot be called asynchronously.
+Called when the input box is about to be bound to an input method. <!--Del--> Before the input box is bound to an input method, you can use the [setKeyboardAppearanceConfig](../arkts-apis/arkts-arkui-uicontext-c-sys.md#setkeyboardappearanceconfig-1) API of **UIContext** to set the keyboard style.<!--DelEnd--> From API version 22, the [setExtraConfig](arkts-arkui-imeclient-i.md#setextraconfig-1) method of [IMEClient](arkts-arkui-imeclient-i.md) can be called to set input method extension information. After the input method is bound, it receives this extension information which can be used to implement custom functionality. **IMEClient** is valid only during the execution of **onWillAttachIME** and cannot be called asynchronously.
 
 **Since:** 22
 
@@ -1406,10 +1226,7 @@ extension information which can be used to implement custom functionality.
 onWillChange(callback: Callback<EditableTextChangeValue, boolean>)
 ```
 
-Called when the text content is about to change.
-
-This callback is triggered after **onWillInsert** and **onWillDelete**, but before **onDidInsert** and
-**onDidDelete**.
+Called when the text content is about to change. This callback is triggered after **onWillInsert** and **onWillDelete**, but before **onDidInsert** and **onDidDelete**.
 
 **Since:** 15
 
@@ -1431,9 +1248,7 @@ This callback is triggered after **onWillInsert** and **onWillDelete**, but befo
 onWillCopy(callback: Callback<string, boolean>)
 ```
 
-Called before a copy operation is performed.
-
-**Since**: 26.0.0
+Called before a copy operation is performed. **Since**: 26.0.0
 
 **Since:** 26.0.0
 
@@ -1455,9 +1270,7 @@ Called before a copy operation is performed.
 onWillCut(callback: Callback<string, boolean>)
 ```
 
-Called before a cut operation is performed.
-
-**Since**: 26.0.0
+Called before a cut operation is performed. **Since**: 26.0.0
 
 **Since:** 26.0.0
 
@@ -1523,16 +1336,7 @@ Called when text is about to be inserted.
 orphanCharOptimization(enabled: Optional<boolean>)
 ```
 
-Sets whether to enable orphan character optimization during text layout. If this attribute is not set, orphan
-character optimization is disabled by default.
-
-Orphan character optimization improves text layout by more efficiently handling isolated characters (the first
-character on the last line of a paragraph). When enabled, it adjusts line break points to avoid isolated characters
-whenever possible. This feature takes effect only when [wordBreak](TextAreaAttribute#wordBreak) is not
-**BREAK_ALL** and the [locale](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-textstyle-i.md) of the first
-[TextStyle](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-textstyle-i.md) in the text to be laid out is **"zh-Hans"** or **"zh-Hant"**.
-
-**Since**: 26.0.0
+Sets whether to enable orphan character optimization during text layout. If this attribute is not set, orphan character optimization is disabled by default. Orphan character optimization improves text layout by more efficiently handling isolated characters (the first character on the last line of a paragraph). When enabled, it adjusts line break points to avoid isolated characters whenever possible. This feature takes effect only when [wordBreak](TextAreaAttribute#wordBreak) is not **BREAK_ALL** and the [locale](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-textstyle-i.md) of the first [TextStyle](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-textstyle-i.md) in the text to be laid out is **"zh-Hans"** or **"zh-Hant"**. **Since**: 26.0.0
 
 **Since:** 26.0.0
 
@@ -1572,11 +1376,7 @@ Sets the placeholder text color.
 placeholderFont(value: Font)
 ```
 
-Placeholder text style, including the font size, font weight, font family, and font style.
-
-> **NOTE**
->
-> You can use [loadFontSync](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-fontcollection-c.md#loadfontsync-1) to register custom fonts.
+Placeholder text style, including the font size, font weight, font family, and font style. > **NOTE** > > You can use [loadFontSync](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-fontcollection-c.md#loadfontsync-1) to register custom fonts.
 
 **Since:** 7
 
@@ -1706,16 +1506,7 @@ Sets whether to hide the system text selection menu.
 shaderStyle(shader: ShaderStyle | undefined)
 ```
 
-Sets the text shader style, such as linear gradient or radial gradient.
-
-> **NOTE**
->
-> When both **shaderStyle** and [strokeWidth](TextAreaAttribute#strokeWidth) are set, **shaderStyle** does
-> not take effect.
->
-> **shaderStyle** has a higher priority than [fontColor](TextAreaAttribute#fontColor).
-
-**Since**: 26.0.0
+Sets the text shader style, such as linear gradient or radial gradient. > **NOTE** > > When both **shaderStyle** and [strokeWidth](TextAreaAttribute#strokeWidth) are set, **shaderStyle** does > not take effect. > > **shaderStyle** has a higher priority than [fontColor](TextAreaAttribute#fontColor). **Since**: 26.0.0
 
 **Since:** 26.0.0
 
@@ -1737,23 +1528,7 @@ Sets the text shader style, such as linear gradient or radial gradient.
 showCounter(value: boolean, options?: InputCounterOptions)
 ```
 
-Sets the character counter displayed when the number of characters entered exceeds the threshold. If the
-**showCounter** API is not called, the character counter is not displayed by default.
-
-**options** can be set only when **value** is set to **true**, in which case a character counter is displayed below
-the text box. This attribute must be used together with **maxLength**. The character counter is displayed in this
-format: Number of characters entered/Character limit.
-
-It is visible when the number of characters entered is greater than the character limit multiplied by the threshold
-percentage value. If **options** is not set, the text box border and character counter subscript turn red when the
-number of characters entered reaches the limit. If **value** is set to **true** and **options** is set, the text
-box border and character counter subscript turn red and the text box shakes when the number of characters entered
-reaches the limit, provided that the value of **thresholdPercentage** is valid. If **highlightBorder** is set to
-**false**, the text box border does not turn red. By default, **highlightBorder** is set to **true**. The character
-counter is not displayed for text boxes in inline input style.
-
-[Example 2: Implementing a Counter](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-textarea.md#example-2-implementing-a-counter)
-shows the effect of setting **showCounter**.
+Sets the character counter displayed when the number of characters entered exceeds the threshold. If the **showCounter** API is not called, the character counter is not displayed by default. **options** can be set only when **value** is set to **true**, in which case a character counter is displayed below the text box. This attribute must be used together with **maxLength**. The character counter is displayed in this format: Number of characters entered/Character limit. It is visible when the number of characters entered is greater than the character limit multiplied by the threshold percentage value. If **options** is not set, the text box border and character counter subscript turn red when the number of characters entered reaches the limit. If **value** is set to **true** and **options** is set, the text box border and character counter subscript turn red and the text box shakes when the number of characters entered reaches the limit, provided that the value of **thresholdPercentage** is valid. If **highlightBorder** is set to **false**, the text box border does not turn red. By default, **highlightBorder** is set to **true**. The character counter is not displayed for text boxes in inline input style. [Example 2: Implementing a Counter](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-textarea.md#example-2-implementing-a-counter) shows the effect of setting **showCounter**.
 
 **Since:** 10
 
@@ -1820,9 +1595,7 @@ Sets the text stroke color.
 strokeJoinStyle(strokeJoinStyle: StrokeJoinStyle | undefined)
 ```
 
-Sets the join style of the text stroke.
-
-**Since**: 26.0.0
+Sets the join style of the text stroke. **Since**: 26.0.0
 
 **Since:** 26.0.0
 
@@ -1866,8 +1639,7 @@ Sets the text stroke width.
 style(value: TextContentStyle)
 ```
 
-Sets the polymorphic style of the text box. The inline input style is only available for the
-**TextAreaType.NORMAL** type.
+Sets the polymorphic style of the text box. The inline input style is only available for the **TextAreaType.NORMAL** type.
 
 **Since:** 10
 
@@ -1889,21 +1661,7 @@ Sets the polymorphic style of the text box. The inline input style is only avail
 textAlign(value: TextAlign)
 ```
 
-Sets the horizontal alignment of the text.
-
-Available options are **TextAlign.Start**, **TextAlign.Center**, and **TextAlign.End**. **TextAlign.JUSTIFY** is
-available since API version 11.
-
-The vertical position of the text paragraph can be controlled by the
-[align](arkts-arkui-commonmethod-c.md#align-1) attribute, but the horizontal position cannot be controlled by
-**align** in this component.
-
-- **Alignment.TopStart**, **Alignment.Top**, **Alignment.TopEnd**: Content aligns to the top.
-- **Alignment.Start**, **Alignment.Center**, **Alignment.End**: Content is centered vertically.
-- **Alignment.BottomStart**, **Alignment.Bottom**, **Alignment.BottomEnd:** Content aligns to the bottom.
-
-When **textAlign** is set to **TextAlign.JUSTIFY**, the text in the last line is horizontally aligned with the
-start edge.
+Sets the horizontal alignment of the text. Available options are **TextAlign.Start**, **TextAlign.Center**, and **TextAlign.End**. **TextAlign.JUSTIFY** is available since API version 11. The vertical position of the text paragraph can be controlled by the [align](arkts-arkui-commonmethod-c.md#align-1) attribute, but the horizontal position cannot be controlled by **align** in this component. - **Alignment.TopStart**, **Alignment.Top**, **Alignment.TopEnd**: Content aligns to the top. - **Alignment.Start**, **Alignment.Center**, **Alignment.End**: Content is centered vertically. - **Alignment.BottomStart**, **Alignment.Bottom**, **Alignment.BottomEnd:** Content aligns to the bottom. When **textAlign** is set to **TextAlign.JUSTIFY**, the text in the last line is horizontally aligned with the start edge.
 
 **Since:** 7
 
@@ -1923,8 +1681,7 @@ start edge.
 textDirection(direction: TextDirection | undefined)
 ```
 
-Specifies the text layout direction. If this attribute is not set, the default text layout direction follows the
-component layout direction.
+Specifies the text layout direction. If this attribute is not set, the default text layout direction follows the component layout direction.
 
 **Since:** 23
 
@@ -1968,22 +1725,7 @@ Sets the indent of the first line text.
 textOverflow(value: TextOverflow)
 ```
 
-Sets the display mode when the text is too long.
-
-In inline style, the effect of truncating text according to
-[maxLines](TextAreaAttribute#maxLines(value: number)) only applies when **textOverflow** is set.
-
-Text is clipped at the transition between words. To clip text in the middle of a word, set
-[wordBreak](arkts-arkui-wordbreak-e.md) to **WordBreak.BREAK_ALL**.
-
-If **textOverflow** is set to **TextOverflow.None**, **TextOverflow.Clip**, or **TextOverflow.Ellipsis**, this
-attribute must be used with [maxLines](TextAreaAttribute#maxLines(value: number)) for the settings to take
-effect. **TextOverflow.None** produces the same effect as **TextOverflow.Clip**.
-
-> **NOTE**
->
-> The **TextArea** component does not support the **TextOverflow.MARQUEE** mode. If this attribute is set to
-> **TextOverflow.MARQUEE**, **TextOverflow.Clip** is used instead.
+Sets the display mode when the text is too long. In inline style, the effect of truncating text according to [maxLines](TextAreaAttribute#maxLines(value: number)) only applies when **textOverflow** is set. Text is clipped at the transition between words. To clip text in the middle of a word, set [wordBreak](arkts-arkui-wordbreak-e.md) to **WordBreak.BREAK_ALL**. If **textOverflow** is set to **TextOverflow.None**, **TextOverflow.Clip**, or **TextOverflow.Ellipsis**, this attribute must be used with [maxLines](TextAreaAttribute#maxLines(value: number)) for the settings to take effect. **TextOverflow.None** produces the same effect as **TextOverflow.Clip**. > **NOTE** > > The **TextArea** component does not support the **TextOverflow.MARQUEE** mode. If this attribute is set to > **TextOverflow.MARQUEE**, **TextOverflow.Clip** is used instead.
 
 **Since:** 12
 
@@ -2005,9 +1747,7 @@ effect. **TextOverflow.None** produces the same effect as **TextOverflow.Clip**.
 type(value: TextAreaType)
 ```
 
-Sets the text box type.
-
-Different **TextAreaType** values trigger corresponding keyboard types and enforce input restrictions.
+Sets the text box type. Different **TextAreaType** values trigger corresponding keyboard types and enforce input restrictions.
 
 **Since:** 11
 

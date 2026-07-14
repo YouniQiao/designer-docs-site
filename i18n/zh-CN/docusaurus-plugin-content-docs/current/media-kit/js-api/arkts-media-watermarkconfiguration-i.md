@@ -1,6 +1,6 @@
 # WatermarkConfiguration
 
-Set configuration of a watermark. The position starts at top left corner.
+设置水印配置。水印位置从左上角开始计算。
 
 **起始版本：** 26.0.0
 
@@ -12,8 +12,7 @@ Set configuration of a watermark. The position starts at top left corner.
 height?: number
 ```
 
-target height of the watermark in pixel
-The value range is all integers.
+target height of the watermark in pixel The value range is all integers.
 
 **类型：** number
 
@@ -29,8 +28,7 @@ The value range is all integers.
 left: number
 ```
 
-Offset of the watermark to the left line of pixel
-The value range is all integers.
+水印到左侧像素行的偏移量 取值为整数。
 
 **类型：** number
 
@@ -46,8 +44,7 @@ The value range is all integers.
 top: number
 ```
 
-Offset of the watermark to the top line of pixel
-The value range is all integers.
+水印到顶部像素行的偏移量 取值为整数。
 
 **类型：** number
 
@@ -63,8 +60,7 @@ The value range is all integers.
 width?: number
 ```
 
-target width of the watermark in pixel
-The value range is all integers.
+target width of the watermark in pixel The value range is all integers.
 
 **类型：** number
 

@@ -1,9 +1,6 @@
 # AccessibilityAction (System API)
 
-Enumerates executable actions for accessibility node elements.
-
-Accessibility node elements are UI components that support accessibility actions, such as buttons, text boxes, and so
-on.
+Enumerates executable actions for accessibility node elements. Accessibility node elements are UI components that support accessibility actions, such as buttons, text boxes, and so on.
 
 **Since:** 20
 

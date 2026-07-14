@@ -18,9 +18,7 @@ import { componentSnapshot } from '@kit.ArkUI';
 colorMode?: ColorModeOptions
 ```
 
-Color space used for the snapshot.
-
-Default value: **{colorSpace: SRGB, isAuto: false}**
+Color space used for the snapshot. Default value: **{colorSpace: SRGB, isAuto: false}**
 
 **Type:** ColorModeOptions
 
@@ -38,9 +36,7 @@ Default value: **{colorSpace: SRGB, isAuto: false}**
 dynamicRangeMode?: DynamicRangeModeOptions
 ```
 
-Dynamic range mode used for the snapshot.
-
-Default value: **{dynamicRangeMode: STANDARD, isAuto: false}**
+Dynamic range mode used for the snapshot. Default value: **{dynamicRangeMode: STANDARD, isAuto: false}**
 
 **Type:** DynamicRangeModeOptions
 
@@ -76,17 +72,7 @@ Rectangular region for the snapshot. The default region is the entire component.
 scale?: number
 ```
 
-Scale ratio for rendering pixel maps during a snapshot. Note that a high scale ratio may increase the time taken
-for the snapshot or even result in a snapshot failure.
-
-Value range: [0, +∞). If the value is less than or equal to 0, the default value is used.
-
-Default value: **1**
-
-**NOTE**
-
-Avoid capturing images that are excessively large, ideally not larger than the screen size. If the size of the
-image to capture exceeds device-specific underlying limits, the capture will fail.
+Scale ratio for rendering pixel maps during a snapshot. Note that a high scale ratio may increase the time taken for the snapshot or even result in a snapshot failure. Value range: [0, +∞). If the value is less than or equal to 0, the default value is used. Default value: **1** **NOTE** Avoid capturing images that are excessively large, ideally not larger than the screen size. If the size of the image to capture exceeds device-specific underlying limits, the capture will fail.
 
 **Type:** number
 
@@ -104,13 +90,7 @@ image to capture exceeds device-specific underlying limits, the capture will fai
 waitUntilRenderFinished?: boolean
 ```
 
-Whether to force the system to wait for all rendering commands to complete before taking the snapshot. The value
-**true** means to force the system to wait for all rendering commands to complete before taking the snapshot, and
-**false** means the opposite. This option ensures the snapshot reflects the most up-to-date content and should be
-enabled whenever possible. Note that enabling this option may increase the time required for the snapshot to
-complete, which depends on the size of the area that needs to be redrawn at the time.
-
-Default value: **false**
+Whether to force the system to wait for all rendering commands to complete before taking the snapshot. The value **true** means to force the system to wait for all rendering commands to complete before taking the snapshot, and **false** means the opposite. This option ensures the snapshot reflects the most up-to-date content and should be enabled whenever possible. Note that enabling this option may increase the time required for the snapshot to complete, which depends on the size of the area that needs to be redrawn at the time. Default value: **false**
 
 **Type:** boolean
 

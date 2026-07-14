@@ -9,16 +9,16 @@
 | [AppStorageV2](arkts-arkui-appstoragev2-c.md) | AppStorageV2具体UI使用说明，详见[AppStorageV2(应用全局的UI状态存储)](../../../../ui/state-management/arkts-new-appstoragev2.md)。 |
 | [Binding](arkts-arkui-binding-c.md) | 只读数据绑定的泛型类，可以绑定任意类型的数据。 |
 | [ConnectOptions](arkts-arkui-connectoptions-c.md) | globalConnect参数类型。 |
-| [ConnectOptionsCollections](arkts-arkui-connectoptionscollections-c.md) | [globalConnect](PersistenceV2.globalConnect&lt;T extends CollectionType&lt;S&gt;, S extends object&gt;( type: ConnectOptionsCollections&lt;T, S&gt; \| ConnectOptions&lt;T&gt; ))接口参数类型，ConnectOptionsCollections继承自[ConnectOptions\&lt;T\&gt;](arkts-arkui-connectoptions-c.md)。当开发者需要持久化容器类型数据（如`Array&lt;S&gt;`）时，需要使用`ConnectOptionsCollections`入参。如下展示`StorageDefaultCreator&lt;T&gt;`和`StorageDefaultCreator&lt;S&gt;`示例： |
+| [ConnectOptionsCollections](arkts-arkui-connectoptionscollections-c.md) | [globalConnect](PersistenceV2.globalConnect&lt;T extends CollectionType&lt;S&gt;, S extends object&gt;( type: ConnectOptionsCollections&lt;T, S&gt; \| ConnectOptions&lt;T&gt; )) 接口参数类型，ConnectOptionsCollections继承自[ConnectOptions\&lt;T\&gt;](arkts-arkui-connectoptions-c.md)。当开发者需要持久化容器类型数据（如`Array&lt;S&gt;`）时，需要使用 `ConnectOptionsCollections`入参。 如下展示`StorageDefaultCreator&lt;T&gt;`和`StorageDefaultCreator&lt;S&gt;`示例： |
 | [MutableBinding](arkts-arkui-mutablebinding-c.md) | 可变数据绑定的泛型类，允许对绑定值进行读写操作，提供完整的get和set访问器。 |
-| [PersistenceV2](arkts-arkui-persistencev2-c.md) | 继承自[AppStorageV2](arkts-arkui-appstoragev2-c.md)，PersistenceV2具体UI使用说明，详见[PersistenceV2(持久化存储UI状态)](../../../../ui/state-management/arkts-new-persistencev2.md)。 |
+| [PersistenceV2](arkts-arkui-persistencev2-c.md) | 继承自[AppStorageV2](arkts-arkui-appstoragev2-c.md)，PersistenceV2具体UI使用说明，详见 [PersistenceV2(持久化存储UI状态)](../../../../ui/state-management/arkts-new-persistencev2.md)。 |
 | [UIUtils](arkts-arkui-uiutils-c.md) | UIUtils提供一些方法，用于处理状态管理相关的数据转换。 |
 
 ### 接口
 
 | 名称 | 说明 |
 | --- | --- |
-| [CustomComponentContext](arkts-arkui-customcomponentcontext-i.md) | `CustomComponentContext`类提供对组件级服务的访问，包括复用池。通过[UIUtils.getCustomComponentContext](arkts-arkui-uiutils-c.md#getcustomcomponentcontext-1)获取实例。 |
+| [CustomComponentContext](arkts-arkui-customcomponentcontext-i.md) | `CustomComponentContext`类提供对组件级服务的访问，包括复用池。通过 [UIUtils.getCustomComponentContext](arkts-arkui-uiutils-c.md#getcustomcomponentcontext-1)获取实例。 |
 | [CustomComponentLifecycle](arkts-arkui-customcomponentlifecycle-i.md) | CustomComponentLifecycle用于监控自定义组件生命周期的变化。 |
 | [CustomComponentLifecycleObserver](arkts-arkui-customcomponentlifecycleobserver-i.md) | 用户注册自定义组件生命周期回调后，当该自定义组件的生命周期发生变化时，将触发监听器中相应的生命周期回调。 |
 | [DecoratorInfo](arkts-arkui-decoratorinfo-i.md) | 可被观察对象关联的装饰器和组件信息。 |

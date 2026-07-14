@@ -12,12 +12,7 @@ import { cacheDownload } from '@kit.BasicServicesKit';
 function setFileCacheSize(bytes: number): void
 ```
 
-Sets the upper limit of the file cache size for the **cacheDownload** component.
-
-- When this API is used to adjust the cache size, the LRU mode is used by default to clear redundant cached data
-in the file.
-- If **bytes** is set to **0**, all cached files will be deleted.
-- This API returns the result synchronously, without blocking the calling thread.
+Sets the upper limit of the file cache size for the **cacheDownload** component. - When this API is used to adjust the cache size, the LRU mode is used by default to clear redundant cached data in the file. - If **bytes** is set to **0**, all cached files will be deleted. - This API returns the result synchronously, without blocking the calling thread.
 
 **Since:** 18
 

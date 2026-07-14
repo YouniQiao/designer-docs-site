@@ -12,8 +12,7 @@ import { bundleManager } from '@kit.AbilityKit';
 function getDynamicIconInfo(bundleName: string): Promise<Array<DynamicIconInfo>>
 ```
 
-Obtains the dynamic icon information of all users and all application clones based on the given bundle name. This
-API uses a promise to return the result.
+Obtains the dynamic icon information of all users and all application clones based on the given bundle name. This API uses a promise to return the result.
 
 **Since:** 20
 

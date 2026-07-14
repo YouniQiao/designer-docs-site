@@ -1,8 +1,6 @@
 # EllipseShape
 
-用于clipShape和maskShape接口的椭圆形状。
-
-继承自[BaseShape](arkts-arkui-baseshape-c.md)。
+用于clipShape和maskShape接口的椭圆形状。 继承自[BaseShape](arkts-arkui-baseshape-c.md)。
 
 **继承/实现关系：** EllipseShape extends [BaseShape<EllipseShape>](BaseShape<EllipseShape>)
 

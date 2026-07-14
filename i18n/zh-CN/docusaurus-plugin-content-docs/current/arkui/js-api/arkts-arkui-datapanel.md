@@ -1,11 +1,6 @@
 # DataPanel
 
-数据面板组件，用于将多个数据占比情况使用占比图进行展示。
-
-> **说明：**
-
-> - 该组件从API版本26.0.0开始支持[WithTheme]{@link with_theme}。
-
+数据面板组件，用于将多个数据占比情况使用占比图进行展示。 > **说明：** > - 该组件从API版本26.0.0开始支持[WithTheme]{@link with_theme}。
 
 ## DataPanel
 

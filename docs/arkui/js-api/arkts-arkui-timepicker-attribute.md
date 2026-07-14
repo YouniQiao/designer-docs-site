@@ -1,8 +1,6 @@
 # TimePicker properties/events
 
-In addition to the [universal attributes](./common), the following attributes are supported.
-
-In addition to the [universal events](./common), the following events are supported.
+In addition to the [universal attributes](./common), the following attributes are supported. In addition to the [universal events](./common), the following events are supported.
 
 **Inheritance/Implementation:** TimePickerAttribute extends [CommonMethod<TimePickerAttribute>](CommonMethod<TimePickerAttribute>)
 
@@ -38,9 +36,7 @@ Sets whether to display a leading zero for the hours, minutes, and seconds.
 dateTimeOptions(timeFormat: Optional<DateTimeOptions>)
 ```
 
-Sets whether to display a leading zero for the hours, minutes, and seconds. Compared with
-[dateTimeOptions<sup>12+</sup>](TimePickerAttribute#dateTimeOptions(value: DateTimeOptions)), this API
-supports the **undefined** type for the **timeFormat** parameter.
+Sets whether to display a leading zero for the hours, minutes, and seconds. Compared with [dateTimeOptions<sup>12+</sup>](TimePickerAttribute#dateTimeOptions(value: DateTimeOptions)), this API supports the **undefined** type for the **timeFormat** parameter.
 
 **Since:** 18
 
@@ -106,10 +102,7 @@ Sets the text color, font size, and font weight of edge items (the second item a
 disappearTextStyle(style: Optional<PickerTextStyle>)
 ```
 
-Sets the text color, font size, and font weight of edge items (the second item above or below the selected item).
-Compared with
-[disappearTextStyle<sup>10+</sup>](TimePickerAttribute#disappearTextStyle(value: PickerTextStyle)), this API
-supports the **undefined** type for the **style** parameter.
+Sets the text color, font size, and font weight of edge items (the second item above or below the selected item). Compared with [disappearTextStyle<sup>10+</sup>](TimePickerAttribute#disappearTextStyle(value: PickerTextStyle)), this API supports the **undefined** type for the **style** parameter.
 
 **Since:** 18
 
@@ -131,8 +124,7 @@ supports the **undefined** type for the **style** parameter.
 enableCascade(enabled: boolean)
 ```
 
-Sets whether the AM/PM indicator automatically switches based on the hour value. Only takes effect when
-[useMilitaryTime](TimePickerAttribute#useMilitaryTime(value: boolean)) is set to **false**.
+Sets whether the AM/PM indicator automatically switches based on the hour value. Only takes effect when [useMilitaryTime](TimePickerAttribute#useMilitaryTime(value: boolean)) is set to **false**.
 
 **Since:** 18
 
@@ -154,14 +146,7 @@ Sets whether the AM/PM indicator automatically switches based on the hour value.
 enableHapticFeedback(enable: boolean)
 ```
 
-Sets whether to enable haptic feedback.
-
-To enable haptic feedback, you must declare the following permission under **requestPermissions** in **module** in
-**src/main/module.json5** of the project.
-
-> **NOTE**
->
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 18.
+Sets whether to enable haptic feedback. To enable haptic feedback, you must declare the following permission under **requestPermissions** in **module** in **src/main/module.json5** of the project. > **NOTE** > > This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 18.
 
 **Since:** 12
 
@@ -183,12 +168,7 @@ To enable haptic feedback, you must declare the following permission under **req
 enableHapticFeedback(enable: Optional<boolean>)
 ```
 
-Sets whether to enable haptic feedback. Compared with
-[enableHapticFeedback<sup>12+</sup>](TimePickerAttribute#enableHapticFeedback(enable: boolean)), this API
-supports the **undefined** type for the **enable** parameter.
-
-To enable haptic feedback, you must declare the following permission under **requestPermissions** in **module** in
-**src/main/module.json5** of the project.
+Sets whether to enable haptic feedback. Compared with [enableHapticFeedback<sup>12+</sup>](TimePickerAttribute#enableHapticFeedback(enable: boolean)), this API supports the **undefined** type for the **enable** parameter. To enable haptic feedback, you must declare the following permission under **requestPermissions** in **module** in **src/main/module.json5** of the project.
 
 **Since:** 18
 
@@ -232,9 +212,7 @@ Sets whether to enable loop scrolling.
 loop(isLoop: Optional<boolean>)
 ```
 
-Sets whether to enable loop scrolling. Compared with
-[loop<sup>11+</sup>](TimePickerAttribute#loop(value: boolean)), this API supports the **undefined** type for
-the **isLoop** parameter.
+Sets whether to enable loop scrolling. Compared with [loop<sup>11+</sup>](TimePickerAttribute#loop(value: boolean)), this API supports the **undefined** type for the **isLoop** parameter.
 
 **Since:** 18
 
@@ -256,11 +234,7 @@ the **isLoop** parameter.
 onChange(callback: (value: TimePickerResult) => void)
 ```
 
-Triggered when the time picker snaps to the selected item. This event cannot be triggered by two-way bound state
-variables.
-
-This callback is triggered only after the scroll animation completes. To obtain real-time index changes, use
-[onEnterSelectedArea](TimePickerAttribute#onEnterSelectedArea) instead.
+Triggered when the time picker snaps to the selected item. This event cannot be triggered by two-way bound state variables. This callback is triggered only after the scroll animation completes. To obtain real-time index changes, use [onEnterSelectedArea](TimePickerAttribute#onEnterSelectedArea) instead.
 
 **Since:** 8
 
@@ -280,12 +254,7 @@ This callback is triggered only after the scroll animation completes. To obtain 
 onChange(callback: Optional<OnTimePickerChangeCallback>)
 ```
 
-Triggered when the time picker snaps to the selected item. This event cannot be triggered by two-way bound state
-variables. Compared with [onChange](TimePickerAttribute#onChange(callback: TimePickerResult)), this API
-supports the **undefined** type for the **callback** parameter.
-
-This callback is triggered only after the scroll animation completes. To obtain real-time index changes, use
-[onEnterSelectedArea](TimePickerAttribute#onEnterSelectedArea) instead.
+Triggered when the time picker snaps to the selected item. This event cannot be triggered by two-way bound state variables. Compared with [onChange](TimePickerAttribute#onChange(callback: TimePickerResult)), this API supports the **undefined** type for the **callback** parameter. This callback is triggered only after the scroll animation completes. To obtain real-time index changes, use [onEnterSelectedArea](TimePickerAttribute#onEnterSelectedArea) instead.
 
 **Since:** 18
 
@@ -307,19 +276,7 @@ This callback is triggered only after the scroll animation completes. To obtain 
 onEnterSelectedArea(callback: Callback<TimePickerResult>)
 ```
 
-Triggered during the scrolling of the time picker when an item enters the divider area.
-
-Compared with the [onChange](TimePickerAttribute#onChange(callback: TimePickerResult)) event, this event is
-triggered earlier, specifically when the scroll distance of the current column exceeds half the height of the
-selected item, which indicates that the item has entered the divider area. When
-[enableCascade](TimePickerAttribute#enableCascade) is set to **true**, using this callback is not recommended
-due to the interdependent relationship between the AM/PM and hour columns. This callback indicates the moment an
-option enters the divider area during scrolling, and only the value of the currently scrolled column will change.
-The values of other non-scrolled columns will remain unchanged.
-
-> **NOTE**
->
-> This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
+Triggered during the scrolling of the time picker when an item enters the divider area. Compared with the [onChange](TimePickerAttribute#onChange(callback: TimePickerResult)) event, this event is triggered earlier, specifically when the scroll distance of the current column exceeds half the height of the selected item, which indicates that the item has entered the divider area. When [enableCascade](TimePickerAttribute#enableCascade) is set to **true**, using this callback is not recommended due to the interdependent relationship between the AM/PM and hour columns. This callback indicates the moment an option enters the divider area during scrolling, and only the value of the currently scrolled column will change. The values of other non-scrolled columns will remain unchanged. > **NOTE** > > This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 18
 
@@ -341,9 +298,7 @@ The values of other non-scrolled columns will remain unchanged.
 selectedTextStyle(value: PickerTextStyle)
 ```
 
-Sets the text color, font size, and font weight of the selected item.
-
-Default value: { color: '#ff007dff', font: { size: '20fp', weight: FontWeight.Medium } }
+Sets the text color, font size, and font weight of the selected item. Default value: { color: '#ff007dff', font: { size: '20fp', weight: FontWeight.Medium } }
 
 **Since:** 10
 
@@ -365,9 +320,7 @@ Default value: { color: '#ff007dff', font: { size: '20fp', weight: FontWeight.Me
 selectedTextStyle(style: Optional<PickerTextStyle>)
 ```
 
-Sets the text color, font size, and font weight of the selected item. Compared with
-[selectedTextStyle<sup>10+</sup>](TimePickerAttribute#selectedTextStyle(value: PickerTextStyle)), this API
-supports the **undefined** type for the **style** parameter.
+Sets the text color, font size, and font weight of the selected item. Compared with [selectedTextStyle<sup>10+</sup>](TimePickerAttribute#selectedTextStyle(value: PickerTextStyle)), this API supports the **undefined** type for the **style** parameter.
 
 **Since:** 18
 
@@ -389,8 +342,7 @@ supports the **undefined** type for the **style** parameter.
 textStyle(value: PickerTextStyle)
 ```
 
-Sets the text color, font size, and font weight of candidate items (the item immediately adjacent to the selected
-item, above or below).
+Sets the text color, font size, and font weight of candidate items (the item immediately adjacent to the selected item, above or below).
 
 **Since:** 10
 
@@ -412,10 +364,7 @@ item, above or below).
 textStyle(style: Optional<PickerTextStyle>)
 ```
 
-Sets the text color, font size, and font weight of candidate items (the item immediately adjacent to the selected
-item, above or below). Compared with
-[textStyle<sup>10+</sup>](TimePickerAttribute#textStyle(value: PickerTextStyle)), this API supports the
-**undefined** type for the **style** parameter.
+Sets the text color, font size, and font weight of candidate items (the item immediately adjacent to the selected item, above or below). Compared with [textStyle<sup>10+</sup>](TimePickerAttribute#textStyle(value: PickerTextStyle)), this API supports the **undefined** type for the **style** parameter.
 
 **Since:** 18
 
@@ -437,8 +386,7 @@ item, above or below). Compared with
 useMilitaryTime(value: boolean)
 ```
 
-Sets whether the time is displayed in 24-hour format. If this attribute is not specified, the system time format is
-used by default.
+Sets whether the time is displayed in 24-hour format. If this attribute is not specified, the system time format is used by default.
 
 **Since:** 8
 
@@ -458,9 +406,7 @@ used by default.
 useMilitaryTime(isMilitaryTime: Optional<boolean>)
 ```
 
-Sets whether the time is displayed in 24-hour format. If this attribute is not specified, the system time format is
-used by default. Compared with [useMilitaryTime](TimePickerAttribute#useMilitaryTime(value: boolean)), this
-API supports the **undefined** type for the **isMilitaryTime** parameter.
+Sets whether the time is displayed in 24-hour format. If this attribute is not specified, the system time format is used by default. Compared with [useMilitaryTime](TimePickerAttribute#useMilitaryTime(value: boolean)), this API supports the **undefined** type for the **isMilitaryTime** parameter.
 
 **Since:** 18
 

@@ -12,11 +12,7 @@
 alignItems?: VerticalAlign
 ```
 
-所有子组件在垂直方向上的对齐格式。
-
-默认值：VerticalAlign.Center
-
-非法值：按默认值处理。
+所有子组件在垂直方向上的对齐格式。 默认值：VerticalAlign.Center 非法值：按默认值处理。
 
 **类型：** VerticalAlign
 
@@ -38,12 +34,7 @@ alignItems?: VerticalAlign
 isReverse?: boolean
 ```
 
-子组件在水平方向上的排列是否反转。取值为true表示子组件在水平方向上反转排列，由于水平方向受通用属性[direction](../arkts-components/arkts-arkui-commonmethod-c.md#direction-1)影响，如果
-[direction](../arkts-components/arkts-arkui-commonmethod-c.md#direction-1)属性生效，再做一次反转。取值为false表示子组件在水平方向上正序排列。
-
-默认值：false
-
-非法值：按默认值处理。
+子组件在水平方向上的排列是否反转。取值为true表示子组件在水平方向上反转排列，由于水平方向受通用属性[direction](../arkts-components/arkts-arkui-commonmethod-c.md#direction-1)影响，如果 [direction](../arkts-components/arkts-arkui-commonmethod-c.md#direction-1)属性生效，再做一次反转。取值为false表示子组件在水平方向上正序排列。 默认值：false 非法值：按默认值处理。
 
 **类型：** boolean
 
@@ -65,11 +56,7 @@ isReverse?: boolean
 justifyContent?: FlexAlign
 ```
 
-所有子组件在水平方向上的对齐格式。
-
-默认值：FlexAlign.Start
-
-非法值：按默认值处理。
+所有子组件在水平方向上的对齐格式。 默认值：FlexAlign.Start 非法值：按默认值处理。
 
 **类型：** FlexAlign
 
@@ -91,11 +78,7 @@ justifyContent?: FlexAlign
 space?: LengthMetrics
 ```
 
-横向布局元素水平方向间距。
-
-默认值：LengthMetrics.vp(0)
-
-非法值：按默认值处理。
+横向布局元素水平方向间距。 默认值：LengthMetrics.vp(0) 非法值：按默认值处理。
 
 **类型：** LengthMetrics
 

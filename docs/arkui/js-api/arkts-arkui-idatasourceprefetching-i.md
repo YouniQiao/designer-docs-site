@@ -20,8 +20,7 @@ import { IDataSourcePrefetching, BasicPrefetcher, IPrefetcher } from '@kit.ArkUI
 cancel?(index: number): Promise<void> | void
 ```
 
-Cancels the prefetching of a specified data item from the dataset. This API can be either synchronous or
-asynchronous.
+Cancels the prefetching of a specified data item from the dataset. This API can be either synchronous or asynchronous.
 
 **Since:** 12
 

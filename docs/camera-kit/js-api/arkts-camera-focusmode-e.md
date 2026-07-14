@@ -12,8 +12,7 @@ Enumerates the focus modes.
 FOCUS_MODE_MANUAL = 0
 ```
 
-Manual focus. The focal length of the camera can be manually set to change the focus position. However, the focal
-point cannot be set.
+Manual focus. The focal length of the camera can be manually set to change the focus position. However, the focal point cannot be set.
 
 **Since:** 10
 

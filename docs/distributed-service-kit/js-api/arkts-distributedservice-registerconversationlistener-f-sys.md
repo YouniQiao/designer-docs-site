@@ -16,10 +16,7 @@ function registerConversationListener(
   ): void
 ```
 
-Registers a conversation listener to receive messages from any trusted device. Once registered, the specified
-callback function will be invoked whenever a message is received by the specified bundle and ability combination.
-Only one listener can be registered for a given bundle/ability pair at a time; registering a new listener will
-replace any previously registered listener for the same bundle and ability.
+Registers a conversation listener to receive messages from any trusted device. Once registered, the specified callback function will be invoked whenever a message is received by the specified bundle and ability combination. Only one listener can be registered for a given bundle/ability pair at a time; registering a new listener will replace any previously registered listener for the same bundle and ability.
 
 **Since:** 26.1.0
 

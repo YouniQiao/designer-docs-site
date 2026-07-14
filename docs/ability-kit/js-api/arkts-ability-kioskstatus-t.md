@@ -4,8 +4,7 @@
 export type KioskStatus = _KioskStatus
 ```
 
-Defines the kiosk status information, including whether the system is in kiosk mode and the information about the
-application in kiosk mode.
+Defines the kiosk status information, including whether the system is in kiosk mode and the information about the application in kiosk mode.
 
 **Since:** 20
 

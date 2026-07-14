@@ -1,8 +1,6 @@
 # LiveFormExtensionContext
 
-**LiveFormExtensionContext**, inherited from
-[ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md), is the context of
-[LiveFormExtensionAbility](arkts-app-form-liveformextensionability.md).
+**LiveFormExtensionContext**, inherited from [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md), is the context of [LiveFormExtensionAbility](arkts-app-form-liveformextensionability.md).
 
 **Inheritance/Implementation:** LiveFormExtensionContext extends [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md)
 
@@ -16,9 +14,7 @@
 public connectServiceExtensionAbility(want: Want, connection: ConnectOptions): number
 ```
 
-Connect a service extension ability.The destination of the connection must be a service extension.
-You must implement the {@link ConnectOptions} interface to obtain the proxy of the target
-service extension when the Service extension is connected.
+Connect a service extension ability.The destination of the connection must be a service extension. You must implement the {@link ConnectOptions} interface to obtain the proxy of the target service extension when the Service extension is connected.
 
 **Since:** 21
 

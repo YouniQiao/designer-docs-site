@@ -34,17 +34,7 @@ constructor(textBackgroundStyle: TextBackgroundStyle)
 readonly textBackgroundStyle: TextBackgroundStyle
 ```
 
-获取属性字符串的文本背景颜色。
-
-默认值：
-
-{
-
-color: Color.Transparent,
-
-radius: 0
-
-}
+获取属性字符串的文本背景颜色。 默认值： { color: Color.Transparent, radius: 0 }
 
 **类型：** TextBackgroundStyle
 

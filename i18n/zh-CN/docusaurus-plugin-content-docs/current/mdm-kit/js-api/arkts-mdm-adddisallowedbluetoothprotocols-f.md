@@ -38,15 +38,18 @@ function addDisallowedBluetoothProtocols(admin: Want, accountId: number,  protoc
 import { Want } from '@kit.AbilityKit';
 import { bluetoothManager } from '@kit.MDMKit';
 
+// 创建企业设备管理扩展组件
 let wantTemp: Want = {
   // 需根据实际情况进行替换
   bundleName: 'com.example.myapplication',
   abilityName: 'EnterpriseAdminAbility'
 };
-// 需根据实际情况进行替换
+// 定义用户ID（需根据实际情况进行替换）
 let accountId: number = 100;
+// 定义蓝牙协议数组（需根据实际情况进行替换）
 let protocols: Array<bluetoothManager.Protocol> = [bluetoothManager.Protocol.GATT, bluetoothManager.Protocol.SPP];
 try {
+  // 添加蓝牙协议禁用名单
   bluetoothManager.addDisallowedBluetoothProtocols(wantTemp, accountId, protocols);
   console.info('Succeeded in adding disallowed bluetooth protocols policy.');
 } catch (err) {
@@ -62,10 +65,7 @@ try {
 function addDisallowedBluetoothProtocols(admin: Want, accountId: number, protocols: Array<Protocol>, policy: TransferPolicy): void
 ```
 
-添加蓝牙协议至禁用名单。添加后，指定用户将无法根据指定的传输策略使用该禁用名单中的蓝牙协议。
-
-> **说明：**
->
+添加蓝牙协议至禁用名单。添加后，指定用户将无法根据指定的传输策略使用该禁用名单中的蓝牙协议。 > **说明：** >
 
 **起始版本：** 26.0.0
 
@@ -99,13 +99,16 @@ function addDisallowedBluetoothProtocols(admin: Want, accountId: number, protoco
 import { Want } from '@kit.AbilityKit';
 import { bluetoothManager } from '@kit.MDMKit';
 
+// 创建企业设备管理扩展组件
 let wantTemp: Want = {
   // 需根据实际情况进行替换
   bundleName: 'com.example.myapplication',
   abilityName: 'EnterpriseAdminAbility'
 };
 
+// 定义用户ID
 let accountId: number = 100;
+// 定义蓝牙协议数组
 let protocols: Array<bluetoothManager.Protocol> = [
   bluetoothManager.Protocol.GATT,
   bluetoothManager.Protocol.SPP,
@@ -113,6 +116,7 @@ let protocols: Array<bluetoothManager.Protocol> = [
 ];
 
 try {
+  // 添加蓝牙协议禁用名单，指定传输策略为禁止发送和接收
   bluetoothManager.addDisallowedBluetoothProtocols(wantTemp, accountId, protocols, bluetoothManager.TransferPolicy.RECEIVE_SEND);
   console.info('Succeeded in adding disallowed bluetooth protocols.');
 } catch (err) {

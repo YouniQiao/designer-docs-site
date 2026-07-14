@@ -6,13 +6,7 @@
 function startDLPManagerForResult(context: common.UIAbilityContext, want: Want): Promise<DLPManagerResult>
 ```
 
-在当前[UIAbility](../../apis-ability-kit/arkts-apis/arkts-ability-uiability-c.md)界面以无边框形式打开DLP权限管理应用。使用Promise异步回调。
-
-该接口用于拉起DLP权限管理应用配置文件权限，并将用户操作结果返回给调用方。
-
-> **说明：**
->
-> 该接口仅支持域账号调用。
+在当前[UIAbility](../../apis-ability-kit/arkts-apis/arkts-ability-uiability-c.md)界面以无边框形式打开DLP权限管理应用。使用Promise异步回调。 该接口用于拉起DLP权限管理应用配置文件权限，并将用户操作结果返回给调用方。 > **说明：** > > 该接口仅支持域账号调用。
 
 **起始版本：** 11
 

@@ -1,8 +1,6 @@
 # @ohos.rpc
 
-The **RPC** module implements communication between processes, including inter-process communication (IPC) on a
-single device and remote procedure call (RPC) between processes on difference devices. IPC is implemented based
-on the Binder driver, and RPC is based on the DSoftBus driver.
+The **RPC** module implements communication between processes, including inter-process communication (IPC) on a single device and remote procedure call (RPC) between processes on difference devices. IPC is implemented based on the Binder driver, and RPC is based on the DSoftBus driver.
 
 **Since:** 7
 
@@ -46,5 +44,5 @@ import { rpc } from '@kit.IPCKit';
 | Name | Description |
 | --- | --- |
 | [ErrorCode](arkts-ipc-errorcode-e.md) | The APIs of this module return exceptions since API version 9. The following table lists the error codes. |
-| [TypeCode](arkts-ipc-typecode-e.md) | Since API version 12,  [writeArrayBuffer](arkts-ipc-messagesequence-c.md#writearraybuffer-1) and [readArrayBuffer](arkts-ipc-messagesequence-c.md#readarraybuffer-1) are added to pass ArrayBuffer data. The specific TypedArray type is determined by the **TypeCode** defined as follows: |
+| [TypeCode](arkts-ipc-typecode-e.md) | Since API version 12, [writeArrayBuffer](arkts-ipc-messagesequence-c.md#writearraybuffer-1) and [readArrayBuffer](arkts-ipc-messagesequence-c.md#readarraybuffer-1) are added to pass ArrayBuffer data. The specific TypedArray type is determined by the **TypeCode** defined as follows: |
 

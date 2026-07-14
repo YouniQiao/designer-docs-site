@@ -2,7 +2,6 @@
 
 Defines the particle Interface.
 
-
 ## Particle
 
 ```TypeScript
@@ -17,9 +16,7 @@ Particle(particles: Particles<
     >)
 ```
 
-create a particle array.
-
-Anonymous Object Rectification.
+create a particle array. Anonymous Object Rectification.
 
 **Since:** 10
 

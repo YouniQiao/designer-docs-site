@@ -12,8 +12,7 @@ import { curves } from '@kit.ArkUI';
 function responsiveSpringMotion(response?: number, dampingFraction?: number, overlapDuration?: number): ICurve
 ```
 
-Creates a responsive spring animation curve. It is a special case of [springMotion](arkts-arkui-springmotion-f.md#springmotion-1),
-with the only difference in the default values. It can be used together with **springMotion**.
+Creates a responsive spring animation curve. It is a special case of [springMotion](arkts-arkui-springmotion-f.md#springmotion-1), with the only difference in the default values. It can be used together with **springMotion**.
 
 **Since:** 9
 

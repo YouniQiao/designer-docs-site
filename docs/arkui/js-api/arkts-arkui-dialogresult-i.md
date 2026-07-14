@@ -18,8 +18,7 @@ import { DialogButtonOrientation, DialogState, DialogResult, DialogBaseControlle
 dialogId: number
 ```
 
-Id of the dialog.
-The value should be an integer.
+Id of the dialog. The value should be an integer.
 
 **Type:** number
 

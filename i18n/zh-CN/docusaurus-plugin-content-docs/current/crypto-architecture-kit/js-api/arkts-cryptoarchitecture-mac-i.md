@@ -1,7 +1,6 @@
 # Mac
 
-Mac类，调用Mac方法进行消息认证码（Message Authentication Code）计算。调用前，需要通过
-[createMac](arkts-cryptoarchitecture-createmac-f.md#createmac-1)构造Mac实例。
+Mac类，调用Mac方法进行消息认证码（Message Authentication Code）计算。调用前，需要通过 [createMac](arkts-cryptoarchitecture-createmac-f.md#createmac-1)构造Mac实例。
 
 **起始版本：** 9
 
@@ -121,11 +120,7 @@ async function hmacByPromise() {
 doFinalSync(): DataBlob
 ```
 
-通过同步方式完成MAC计算并获取MAC计算结果。
-
-<br><br>**说明：**
-<br>建议优先使用异步API{@link doFinal}。同步API可能因系统繁忙、高负载等原因耗时较长而阻塞主线程。
-因此建议在子线程中调用同步API，以避免阻塞主线程。
+通过同步方式完成MAC计算并获取MAC计算结果。 <br><br>**说明：** <br>建议优先使用异步API{@link doFinal}。同步API可能因系统繁忙、高负载等原因耗时较长而阻塞主线程。 因此建议在子线程中调用同步API，以避免阻塞主线程。
 
 **起始版本：** 12
 
@@ -242,8 +237,7 @@ function testGetMacLength() {
 init(key: SymKey, callback: AsyncCallback<void>): void
 ```
 
-使用对称密钥初始化Mac计算。使用callback异步回调。init、update、doFinal为三段式接口，需要成组使用。其中init和doFinal必选，
-update可选。
+使用对称密钥初始化Mac计算。使用callback异步回调。init、update、doFinal为三段式接口，需要成组使用。其中init和doFinal必选， update可选。
 
 **起始版本：** 9
 
@@ -274,8 +268,7 @@ update可选。
 init(key: SymKey): Promise<void>
 ```
 
-使用对称密钥初始化Mac计算。使用Promise异步回调。init、update、doFinal为三段式接口，需要成组使用。其中init和doFinal必选，
-update可选。
+使用对称密钥初始化Mac计算。使用Promise异步回调。init、update、doFinal为三段式接口，需要成组使用。其中init和doFinal必选， update可选。
 
 **起始版本：** 9
 
@@ -311,12 +304,7 @@ update可选。
 initSync(key: SymKey): void
 ```
 
-使用对称密钥初始化Mac计算，通过同步方式获取结果。initSync、updateSync、doFinalSync为三段式接口，需要成组使用。其中initSync和
-doFinalSync必选，updateSync可选。
-
-<br><br>**说明：**
-<br>建议优先使用异步API{@link init}。同步API可能因系统繁忙、高负载等原因耗时较长而阻塞主线程。
-因此建议在子线程中调用同步API，以避免阻塞主线程。
+使用对称密钥初始化Mac计算，通过同步方式获取结果。initSync、updateSync、doFinalSync为三段式接口，需要成组使用。其中initSync和 doFinalSync必选，updateSync可选。 <br><br>**说明：** <br>建议优先使用异步API{@link init}。同步API可能因系统繁忙、高负载等原因耗时较长而阻塞主线程。 因此建议在子线程中调用同步API，以避免阻塞主线程。
 
 **起始版本：** 12
 
@@ -344,11 +332,7 @@ doFinalSync必选，updateSync可选。
 update(input: DataBlob, callback: AsyncCallback<void>): void
 ```
 
-传入消息进行Mac更新消息认证码状态。使用callback异步回调。
-
-> **说明：**
->
-> HMAC算法多次调用update更新的代码示例详见[消息认证码计算](../../../../security/CryptoArchitectureKit/crypto-compute-hmac.md#分段hmac)。
+传入消息进行Mac更新消息认证码状态。使用callback异步回调。 > **说明：** > > HMAC算法多次调用update更新的代码示例详见[消息认证码计算](../../../../security/CryptoArchitectureKit/crypto-compute-hmac.md#分段hmac)。
 
 **起始版本：** 9
 
@@ -379,11 +363,7 @@ update(input: DataBlob, callback: AsyncCallback<void>): void
 update(input: DataBlob): Promise<void>
 ```
 
-传入消息进行Mac更新消息认证码状态。使用Promise异步回调。
-
-> **说明：**
->
-> HMAC算法多次调用update更新的代码示例详见[消息认证码计算](../../../../security/CryptoArchitectureKit/crypto-compute-hmac.md#分段hmac)。
+传入消息进行Mac更新消息认证码状态。使用Promise异步回调。 > **说明：** > > HMAC算法多次调用update更新的代码示例详见[消息认证码计算](../../../../security/CryptoArchitectureKit/crypto-compute-hmac.md#分段hmac)。
 
 **起始版本：** 9
 
@@ -419,16 +399,7 @@ update(input: DataBlob): Promise<void>
 updateSync(input: DataBlob): void
 ```
 
-传入消息进行Mac更新消息认证码状态，通过同步方式获取结果。
-
-> **说明：**
->
-> HMAC算法多次调用updateSync更新的代码示例详见
-> [消息认证码计算](../../../../security/CryptoArchitectureKit/crypto-compute-hmac.md#分段hmac)。
-
-<br><br>**说明：**
-<br>建议优先使用异步API{@link update}。同步API可能因系统繁忙、高负载等原因耗时较长而阻塞主线程。
-因此建议在子线程中调用同步API，以避免阻塞主线程。
+传入消息进行Mac更新消息认证码状态，通过同步方式获取结果。 > **说明：** > > HMAC算法多次调用updateSync更新的代码示例详见 > [消息认证码计算](../../../../security/CryptoArchitectureKit/crypto-compute-hmac.md#分段hmac)。 <br><br>**说明：** <br>建议优先使用异步API{@link update}。同步API可能因系统繁忙、高负载等原因耗时较长而阻塞主线程。 因此建议在子线程中调用同步API，以避免阻塞主线程。
 
 **起始版本：** 12
 

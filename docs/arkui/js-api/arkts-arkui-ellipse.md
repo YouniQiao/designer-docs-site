@@ -2,15 +2,13 @@
 
 Ellipse drawing.
 
-
 ## Ellipse
 
 ```TypeScript
 Ellipse(options?: EllipseOptions)
 ```
 
-use new function to set the value.
-Anonymous Object Rectification.
+use new function to set the value. Anonymous Object Rectification.
 
 **Since:** 7
 

@@ -12,16 +12,7 @@ import { hidebug } from '@kit.PerformanceAnalysisKit';
 function dumpJsRawHeapData(needGC?: boolean): Promise<string>
 ```
 
-Dumps the original heap snapshot of the VM for the current thread and generates a .rawheap file. This API uses a
-promise to return the result. The file can be converted into a heapsnapshot file using
-rawheap-translator for parsing.
-
-> **NOTE**
->
-> This API is resource-consuming. Therefore, the calling frequency and times are strictly limited. You need to
-> delete the files immediately after processing them.
->
-> This API is valid only when the **Developer options** is enabled.
+Dumps the original heap snapshot of the VM for the current thread and generates a .rawheap file. This API uses a promise to return the result. The file can be converted into a heapsnapshot file using rawheap-translator for parsing. > **NOTE** > > This API is resource-consuming. Therefore, the calling frequency and times are strictly limited. You need to > delete the files immediately after processing them. > > This API is valid only when the **Developer options** is enabled.
 
 **Since:** 18
 
@@ -74,13 +65,7 @@ hidebug.dumpJsRawHeapData().then((filePath: string) => {
 function dumpJsRawHeapData(needGC: boolean, needClean: boolean): Promise<string>
 ```
 
-Dumps the original heap snapshot of the VM for the current thread. The API uses a promise to return the path of the
-.rawheap file. You can use rawheap-translator to convert the generated file into a .heapsnapshot file for parsing.
-The generated file will be stored in a folder within the application directory. However, since this file is usually
-large, the system imposes restrictions on the frequency and number of calls to this function. Consequently, you
-might fail to obtain the dump file due to quota limitations. These failures will persist until the quota is
-regularly refreshed by the system. Therefore, it is advisable to delete the file immediately after you have
-finished processing it. Moreover, it is recommended that you use this function in the gray - release version.
+Dumps the original heap snapshot of the VM for the current thread. The API uses a promise to return the path of the .rawheap file. You can use rawheap-translator to convert the generated file into a .heapsnapshot file for parsing. The generated file will be stored in a folder within the application directory. However, since this file is usually large, the system imposes restrictions on the frequency and number of calls to this function. Consequently, you might fail to obtain the dump file due to quota limitations. These failures will persist until the quota is regularly refreshed by the system. Therefore, it is advisable to delete the file immediately after you have finished processing it. Moreover, it is recommended that you use this function in the gray - release version.
 
 **Since:** 24
 
@@ -137,13 +122,7 @@ hidebug.dumpJsRawHeapData(true, true).then((filePath: string) => {
 function dumpJsRawHeapData(needGC: boolean, needClean: boolean, processDump: boolean): Promise<Array<string>>
 ```
 
-Dump the raw heap snapshot of the JavaScript Virtual Machine for the current thread.
-
-The generated file will be stored in a folder within the application directory. However, since this file is usually
-large, the system imposes restrictions on the frequency and number of calls to this function. Consequently, you
-might fail to obtain the dump file due to quota limitations. These failures will persist until the quota is
-regularly refreshed by the system. Therefore, it is advisable to delete the file immediately after you have
-finished processing it. Moreover, it is recommended that you use this function in the gray - release version.
+Dump the raw heap snapshot of the JavaScript Virtual Machine for the current thread. The generated file will be stored in a folder within the application directory. However, since this file is usually large, the system imposes restrictions on the frequency and number of calls to this function. Consequently, you might fail to obtain the dump file due to quota limitations. These failures will persist until the quota is regularly refreshed by the system. Therefore, it is advisable to delete the file immediately after you have finished processing it. Moreover, it is recommended that you use this function in the gray - release version.
 
 **Since:** 26.0.0
 

@@ -12,9 +12,7 @@ This interface is used to set the options for EmbeddedComponentAttribute during 
 areaChangePlaceholder?: Record<string, ComponentContent>
 ```
 
-Set Areachange placeholder.
-If the Areachange placeholder ComponentContent is set, the placeholder node is displayed until
-the EmbeddedComponent size change is complete.
+Set Areachange placeholder. If the Areachange placeholder ComponentContent is set, the placeholder node is displayed until the EmbeddedComponent size change is complete.
 
 **Type:** Record<string, ComponentContent>
 
@@ -52,8 +50,7 @@ Set EmbeddedComponent Content Dpi Follow Strategy.
 placeholder?: ComponentContent
 ```
 
-Set placeholder.
-If set placeholder ComponentContent, show placeholder node when connection is not established.
+Set placeholder. If set placeholder ComponentContent, show placeholder node when connection is not established.
 
 **Type:** ComponentContent
 

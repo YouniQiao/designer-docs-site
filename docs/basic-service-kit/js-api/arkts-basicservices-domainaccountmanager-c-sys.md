@@ -91,8 +91,7 @@ static auth(
       callback: IUserAuthCallback): void
 ```
 
-Authenticates a specified domain account. You can specify authentication options, such as server parameters. This
-API uses an asynchronous callback to return the result.
+Authenticates a specified domain account. You can specify authentication options, such as server parameters. This API uses an asynchronous callback to return the result.
 
 **Since:** 24
 
@@ -292,8 +291,7 @@ try {
 static getAccessToken(businessParams: Record<string, Object>, callback: AsyncCallback<Uint8Array>): void
 ```
 
-Obtains the service access token of a domain account. This API uses an asynchronous callback to return the
-result.
+Obtains the service access token of a domain account. This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -420,8 +418,7 @@ try {
 static getAccountInfo(options: GetDomainAccountInfoOptions, callback: AsyncCallback<DomainAccountInfo>): void
 ```
 
-Obtains information about a specified domain account. This API uses an asynchronous callback to return the
-result.
+Obtains information about a specified domain account. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -847,8 +844,7 @@ static updateAccountToken(
     ): void
 ```
 
-Updates the token of a domain account. An empty token means an invalid token. This API uses an asynchronous
-callback to return the result.
+Updates the token of a domain account. An empty token means an invalid token. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -909,8 +905,7 @@ try {
 static updateAccountToken(domainAccountInfo: DomainAccountInfo, token: Uint8Array): Promise<void>
 ```
 
-Updates the token of a domain account. An empty token means an invalid token. This API uses a promise to return
-the result.
+Updates the token of a domain account. An empty token means an invalid token. This API uses a promise to return the result.
 
 **Since:** 10
 

@@ -49,8 +49,7 @@ apply<T, A extends any[], R>(this: (this: T, ...args: A) => R, thisArg: T, args:
 bind<T>(this: T, thisArg: ThisParameterType<T>): OmitThisParameter<T>
 ```
 
-For a given function, creates a bound function that has the same body as the original function.
-The this object of the bound function is associated with the specified object, and has the specified initial parameters.
+For a given function, creates a bound function that has the same body as the original function. The this object of the bound function is associated with the specified object, and has the specified initial parameters.
 
 **Parameters:**
 

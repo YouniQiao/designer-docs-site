@@ -12,8 +12,7 @@ Describes the paragraph style.
 leadingMargin?: Dimension | LeadingMarginPlaceholder
 ```
 
-Indent of the paragraph. It has no effect if the paragraph starts with an image or builder span. If of the
-**Dimension** type, this parameter cannot be set in percentage. Default value: **{"size":["0.00px","0.00px"]}**
+Indent of the paragraph. It has no effect if the paragraph starts with an image or builder span. If of the **Dimension** type, this parameter cannot be set in percentage. Default value: **{"size":["0.00px","0.00px"]}**
 
 **Type:** Dimension | LeadingMarginPlaceholder
 
@@ -31,11 +30,7 @@ Indent of the paragraph. It has no effect if the paragraph starts with an image 
 lineBreakStrategy?: LineBreakStrategy
 ```
 
-Line break rule.
-
-Default value: **LineBreakStrategy.GREEDY**
-
-This parameter takes effect when **wordBreak** is not set to **breakAll**. Hyphens are not supported.
+Line break rule. Default value: **LineBreakStrategy.GREEDY** This parameter takes effect when **wordBreak** is not set to **breakAll**. Hyphens are not supported.
 
 **Type:** LineBreakStrategy
 
@@ -53,11 +48,7 @@ This parameter takes effect when **wordBreak** is not set to **breakAll**. Hyphe
 paragraphSpacing?: number
 ```
 
-Spacing between paragraphs.
-
-Unit: fp
-
-Default value: **0**
+Spacing between paragraphs. Unit: fp Default value: **0**
 
 **Type:** number
 
@@ -93,9 +84,7 @@ Set shader style.
 textAlign?: TextAlign
 ```
 
-Horizontal alignment mode of the text.
-
-Default value: **TextAlign.START**
+Horizontal alignment mode of the text. Default value: **TextAlign.START**
 
 **Type:** TextAlign
 
@@ -113,9 +102,7 @@ Default value: **TextAlign.START**
 textDirection?: TextDirection
 ```
 
-Sets the text direction.
-
-Default value: TextDirection.DEFAULT
+Sets the text direction. Default value: TextDirection.DEFAULT
 
 **Type:** TextDirection
 
@@ -133,9 +120,7 @@ Default value: TextDirection.DEFAULT
 textVerticalAlign?: TextVerticalAlign
 ```
 
-Vertical alignment of text paragraphs.
-
-Default value: **TextVerticalAlign.BASELINE**.
+Vertical alignment of text paragraphs. Default value: **TextVerticalAlign.BASELINE**.
 
 **Type:** TextVerticalAlign
 
@@ -153,9 +138,7 @@ Default value: **TextVerticalAlign.BASELINE**.
 wordBreak?: WordBreak
 ```
 
-Word break rule.
-
-Default value: **WordBreak.BREAK_WORD**
+Word break rule. Default value: **WordBreak.BREAK_WORD**
 
 **Type:** WordBreak
 

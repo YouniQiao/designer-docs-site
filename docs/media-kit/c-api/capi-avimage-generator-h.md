@@ -92,7 +92,7 @@ Extracts a video frame at a given time from a video.
 | -- | -- |
 | [OH_AVImageGenerator](capi-avimagegenerator-oh-avimagegenerator.md)* generator | Pointer to the OH_AVImageGenerator instance. |
 | int64_t timeUs | Time point of the video frame to be extracted in the video, in μs. |
-| [OH_AVImageGenerator_QueryOptions](capi-avimage-generator-base-h.md#oh_avimagegenerator_queryoptions) options | Mappings between the given time points and video frames. |
+| OH_AVImageGenerator_QueryOptions options | Mappings between the given time points and video frames. |
 | [OH_PixelmapNative](../ImageKit/capi-image-nativemodule-oh-pixelmapnative.md)** pixelMap | Double pointer to the video frame object obtained. |
 
 **Returns**:

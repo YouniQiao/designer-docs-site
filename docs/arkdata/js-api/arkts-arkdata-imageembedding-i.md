@@ -18,8 +18,7 @@ import { intelligence } from '@kit.ArkData';
 getEmbedding(image: Image): Promise<Array<number>>
 ```
 
-Obtains the embedding vector of the given image.
-The model can handle images below 20 MB in size in a single inference.
+Obtains the embedding vector of the given image. The model can handle images below 20 MB in size in a single inference.
 
 **Since:** 15
 

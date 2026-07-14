@@ -12,11 +12,7 @@ Information about the check box group.
 group?: string
 ```
 
-Group name.
-
-**NOTE**
-
-Among multiple check box groups with the same group name, only the first one takes effect.
+Group name. **NOTE** Among multiple check box groups with the same group name, only the first one takes effect.
 
 **Type:** string
 

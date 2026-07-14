@@ -1,8 +1,6 @@
 # DeviceRemindType (System API)
 
-> **NOTE**<br>
-> This API is supported since API version 8 and deprecated since API version 9. You are advised to use
-> notificationManager.DeviceRemindType instead.
+> **NOTE**<br> > This API is supported since API version 8 and deprecated since API version 9. You are advised to use > notificationManager.DeviceRemindType instead.
 
 **Since:** 8
 

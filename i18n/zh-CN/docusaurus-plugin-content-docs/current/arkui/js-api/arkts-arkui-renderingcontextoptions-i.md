@@ -12,10 +12,7 @@
 antialias?: boolean
 ```
 
-表明RenderingContext是否需要开启抗锯齿。
-<br>取值为undefined时按默认值处理。
-<br>true：开启抗锯齿；false：不开启抗锯齿。
-<br>默认值：false
+表明RenderingContext是否需要开启抗锯齿。 <br>取值为undefined时按默认值处理。 <br>true：开启抗锯齿；false：不开启抗锯齿。 <br>默认值：false
 
 **类型：** boolean
 

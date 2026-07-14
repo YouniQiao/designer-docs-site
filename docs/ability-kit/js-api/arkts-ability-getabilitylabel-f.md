@@ -12,10 +12,7 @@ import { bundle } from '@kit.AbilityKit';
 function getAbilityLabel(bundleName: string, abilityName: string, callback: AsyncCallback<string>): void
 ```
 
-Obtains the application name based on a given bundle name and ability name. This API uses an asynchronous callback
-to return the result.
-
-No permission is required for obtaining the caller's own information.
+Obtains the application name based on a given bundle name and ability name. This API uses an asynchronous callback to return the result. No permission is required for obtaining the caller's own information.
 
 **Since:** 8
 
@@ -40,10 +37,7 @@ No permission is required for obtaining the caller's own information.
 function getAbilityLabel(bundleName: string, abilityName: string): Promise<string>
 ```
 
-Obtains the application name based on a given bundle name and ability name. This API uses a promise to return the
-result.
-
-No permission is required for obtaining the caller's own information.
+Obtains the application name based on a given bundle name and ability name. This API uses a promise to return the result. No permission is required for obtaining the caller's own information.
 
 **Since:** 8
 

@@ -14,8 +14,7 @@
 aboutToReuse?(params: Record<string, Object | undefined | null>): void
 ```
 
-Invoked when a reusable custom component is re-added to the node tree
-from the reuse cache to receive construction parameters of the component.
+Invoked when a reusable custom component is re-added to the node tree from the reuse cache to receive construction parameters of the component.
 
 **起始版本：** 20
 

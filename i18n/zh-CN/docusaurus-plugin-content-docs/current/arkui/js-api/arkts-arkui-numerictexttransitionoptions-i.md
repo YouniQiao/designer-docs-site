@@ -12,13 +12,7 @@
 enableBlur?: boolean
 ```
 
-是否开启翻牌模糊效果。
-
-默认值：false
-
-true：开启翻牌模糊效果。
-
-false：不开启翻牌模糊效果。
+是否开启翻牌模糊效果。 默认值：false true：开启翻牌模糊效果。 false：不开启翻牌模糊效果。
 
 **类型：** boolean
 
@@ -36,9 +30,7 @@ false：不开启翻牌模糊效果。
 flipDirection?: FlipDirection
 ```
 
-翻牌方向。
-
-默认值：FlipDirection.DOWN
+翻牌方向。 默认值：FlipDirection.DOWN
 
 **类型：** FlipDirection
 

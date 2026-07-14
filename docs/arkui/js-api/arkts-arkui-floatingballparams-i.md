@@ -18,9 +18,7 @@ import { floatingBall } from '@kit.ArkUI';
 backgroundColor?: string
 ```
 
-Background color of the floating ball, in hexadecimal format without opacity (for example, **'#008EF5'** or
-**'#FF008EF5'**). If this parameter is not specified, the default background color of the system (light or dark
-mode) is used.
+Background color of the floating ball, in hexadecimal format without opacity (for example, **'#008EF5'** or **'#FF008EF5'**). If this parameter is not specified, the default background color of the system (light or dark mode) is used.
 
 **Type:** string
 
@@ -34,8 +32,7 @@ mode) is used.
 content?: string
 ```
 
-Content of the floating ball. It cannot exceed 64 bytes. The default value is an empty string, and no content is
-displayed on the floating ball.
+Content of the floating ball. It cannot exceed 64 bytes. The default value is an empty string, and no content is displayed on the floating ball.
 
 **Type:** string
 
@@ -49,9 +46,7 @@ displayed on the floating ball.
 contentColor?: string
 ```
 
-The color of the floating ball content, in hexadecimal format without opacity
-(e.g., **'#008EF5'** or **'#FF008EF5'**).
-Providing contentColor is not allowed if 'backgroundColor' is not provided.
+The color of the floating ball content, in hexadecimal format without opacity (e.g., **'#008EF5'** or **'#FF008EF5'**). Providing contentColor is not allowed if 'backgroundColor' is not provided.
 
 **Type:** string
 
@@ -72,9 +67,7 @@ otherwise is '#99000000'
 icon?: image.PixelMap
 ```
 
-Icon of the floating ball. The total number of bytes of the icon pixels cannot exceed 192 KB (which is obtained
-through [getPixelBytesNumber](../../apis-image-kit/arkts-apis/arkts-image-pixelmap-i.md#getpixelbytesnumber-1)). The recommended
-size is 128 px * 128 px. Actual display may vary based on the device capability and floating ball UI style.
+Icon of the floating ball. The total number of bytes of the icon pixels cannot exceed 192 KB (which is obtained through [getPixelBytesNumber](../../apis-image-kit/arkts-apis/arkts-image-pixelmap-i.md#getpixelbytesnumber-1)). The recommended size is 128 px * 128 px. Actual display may vary based on the device capability and floating ball UI style.
 
 **Type:** image.PixelMap
 
@@ -102,8 +95,7 @@ Floating ball template.
 textUpdateAnimationType?: FloatingBallTextUpdateAnimationType
 ```
 
-Animation type used when the floating ball text is updated. The default value is
-**FloatingBallTextUpdateAnimationType.ANIMATION_NONE**.
+Animation type used when the floating ball text is updated. The default value is **FloatingBallTextUpdateAnimationType.ANIMATION_NONE**.
 
 **Type:** FloatingBallTextUpdateAnimationType
 
@@ -135,9 +127,7 @@ Title of the floating ball. It cannot be an empty string and cannot exceed 64 by
 titleColor?: string
 ```
 
-The color of the floating ball title, in hexadecimal format without opacity
-(e.g., **'#008EF5'** or **'#FF008EF5'**).
-Providing titleColor is not allowed if 'backgroundColor' is not provided.
+The color of the floating ball title, in hexadecimal format without opacity (e.g., **'#008EF5'** or **'#FF008EF5'**). Providing titleColor is not allowed if 'backgroundColor' is not provided.
 
 **Type:** string
 

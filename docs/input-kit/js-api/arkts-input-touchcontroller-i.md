@@ -1,11 +1,6 @@
 # TouchController
 
-Provides the capability of simulating touch operations. The simulated touch operation sequence must meet the
-following requirements:
-
-1. All touch points must share the same **displayId**.
-2. Each touch point must begin with a **touchDown()** call, followed by zero or more **touchMove()** calls, and end
-with an **touchUp()** call.
+Provides the capability of simulating touch operations. The simulated touch operation sequence must meet the following requirements: 1. All touch points must share the same **displayId**. 2. Each touch point must begin with a **touchDown()** call, followed by zero or more **touchMove()** calls, and end with an **touchUp()** call.
 
 **Since:** 26.0.0
 

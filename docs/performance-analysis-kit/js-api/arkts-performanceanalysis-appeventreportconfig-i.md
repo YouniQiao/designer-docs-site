@@ -18,9 +18,7 @@ import { hiAppEvent } from '@kit.PerformanceAnalysisKit';
 domain?: string
 ```
 
-Event domain. The value is a string that contains a maximum of 32 characters, including digits (0 to 9), letters
-(a to z)(A to Z), and underscore (_). It must start with a letter and cannot end with an underscore (_). The default
-value is an empty string.
+Event domain. The value is a string that contains a maximum of 32 characters, including digits (0 to 9), letters (a to z)(A to Z), and underscore (_). It must start with a letter and cannot end with an underscore (_). The default value is an empty string.
 
 **Type:** string
 
@@ -36,8 +34,7 @@ value is an empty string.
 isRealTime?: boolean
 ```
 
-Whether to report events in real time. The value **true** indicates that events are reported in real time, and
-the value **false** indicates the opposite. The default value is **false**.
+Whether to report events in real time. The value **true** indicates that events are reported in real time, and the value **false** indicates the opposite. The default value is **false**.
 
 **Type:** boolean
 
@@ -53,9 +50,7 @@ the value **false** indicates the opposite. The default value is **false**.
 name?: string
 ```
 
-Event name. The value is string that contains a maximum of 48 characters, including digits (0 to 9), letters (a
-to z)(A to Z), underscore (_), and dollar sign ($). It must start with a letter or dollar sign ($) and end with a
-digit or letter. The default value is an empty string.
+Event name. The value is string that contains a maximum of 48 characters, including digits (0 to 9), letters (a to z)(A to Z), underscore (_), and dollar sign ($). It must start with a letter or dollar sign ($) and end with a digit or letter. The default value is an empty string.
 
 **Type:** string
 

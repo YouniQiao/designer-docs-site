@@ -1,10 +1,6 @@
 # SegmentButtonOptions
 
-> **NOTE**
->
-> The component does not support custom font type settings.
-
-Provides initial data and custom properties for the **SegmentButton** component.
+> **NOTE** > > The component does not support custom font type settings. Provides initial data and custom properties for the **SegmentButton** component.
 
 **Since:** 11
 
@@ -22,8 +18,7 @@ import { CommonSegmentButtonOptions, SegmentButtonItemOptionsConstructorOptions,
 backgroundSystemMaterial?: uiMaterial.Material
 ```
 
-Set system-styled materials for the component. Different materials have different effects, which can influence
-the backgroundColor, border, shadow, and other visual attributes of the component.
+Set system-styled materials for the component. Different materials have different effects, which can influence the backgroundColor, border, shadow, and other visual attributes of the component.
 
 **Type:** uiMaterial.Material
 

@@ -6,9 +6,7 @@
 function getBundleInfo(bundleName: string, bundleFlags: number, callback: AsyncCallback<BundleInfo>): void
 ```
 
-根据给定的bundleName和bundleFlags获取BundleInfo。使用callback异步回调。
-
-获取调用方自身的信息时不需要权限。
+根据给定的bundleName和bundleFlags获取BundleInfo。使用callback异步回调。 获取调用方自身的信息时不需要权限。
 
 **起始版本：** 14
 
@@ -67,9 +65,7 @@ try {
 function getBundleInfo(bundleName: string, bundleFlags: number, userId: number, callback: AsyncCallback<BundleInfo>): void
 ```
 
-根据给定的bundleName、bundleFlags和userId获取[BundleInfo](bundleManager/BundleInfo)。使用callback异步回调。
-
-获取调用方自身信息时不需要权限。
+根据给定的bundleName、bundleFlags和userId获取[BundleInfo](bundleManager/BundleInfo)。使用callback异步回调。 获取调用方自身信息时不需要权限。
 
 **起始版本：** 14
 
@@ -157,9 +153,7 @@ try {
 function getBundleInfo(bundleName: string, bundleFlags: number, userId?: number): Promise<BundleInfo>
 ```
 
-根据给定的bundleName、bundleFlags和userId获取BundleInfo。使用Promise异步回调。
-
-获取调用方自身的信息时不需要权限。
+根据给定的bundleName、bundleFlags和userId获取BundleInfo。使用Promise异步回调。 获取调用方自身的信息时不需要权限。
 
 **起始版本：** 14
 

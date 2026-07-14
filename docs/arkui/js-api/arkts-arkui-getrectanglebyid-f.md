@@ -12,20 +12,7 @@ import { componentUtils } from '@kit.ArkUI';
 function getRectangleById(id: string): ComponentInfo
 ```
 
-Obtains a **ComponentInfo** object based on the component ID and synchronously returns the geometric properties of
-the component.
-
-> **NOTE**
->
-> - Since API version 10, you can use the
-> [getComponentUtils](arkts-arkui-uicontext-c.md#getcomponentutils-1) API in
-> [UIContext](arkts-arkui-uicontext.md) to obtain the [ComponentUtils](arkts-arkui-uicontext.md) object
-> associated with the current UI context. This API provides access to component coordinates and size information
-> after the target component completes layout. It is recommended that you invoke this API within
-> [layout completion callbacks](arkts-arkui-inspector.md). Note that dynamically created components
-> must be mounted to the component tree before this API can obtain their information, as unmounted components are
-> not measured or laid out by the UI framework. Always ensure that component mounting precedes information
-> retrieval attempts.
+Obtains a **ComponentInfo** object based on the component ID and synchronously returns the geometric properties of the component. > **NOTE** > > - Since API version 10, you can use the > [getComponentUtils](arkts-arkui-uicontext-c.md#getcomponentutils-1) API in > [UIContext](arkts-arkui-uicontext.md) to obtain the [ComponentUtils](arkts-arkui-uicontext.md) object > associated with the current UI context. This API provides access to component coordinates and size information > after the target component completes layout. It is recommended that you invoke this API within > [layout completion callbacks](arkts-arkui-inspector.md). Note that dynamically created components > must be mounted to the component tree before this API can obtain their information, as unmounted components are > not measured or laid out by the UI framework. Always ensure that component mounting precedes information > retrieval attempts.
 
 **Since:** 10
 

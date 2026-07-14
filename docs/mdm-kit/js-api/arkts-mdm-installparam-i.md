@@ -18,13 +18,7 @@ import { bundleManager } from '@kit.MDMKit';
 installFlag?: number
 ```
 
-Installation flag.
-
-- **0**: initial installation.
-- **1**: overwrite installation.
-- **2**: installation-free.
-
-Default value: **0**
+Installation flag. - **0**: initial installation. - **1**: overwrite installation. - **2**: installation-free. Default value: **0**
 
 **Type:** number
 
@@ -40,8 +34,7 @@ Default value: **0**
 parameters?: Record<string, string>
 ```
 
-Extended parameters. The default value is null. The key can be **ohos.bms.param.enterpriseForAllUser**. If the
-corresponding value is set **true**, the application is installed for all users.
+Extended parameters. The default value is null. The key can be **ohos.bms.param.enterpriseForAllUser**. If the corresponding value is set **true**, the application is installed for all users.
 
 **Type:** Record<string, string>
 

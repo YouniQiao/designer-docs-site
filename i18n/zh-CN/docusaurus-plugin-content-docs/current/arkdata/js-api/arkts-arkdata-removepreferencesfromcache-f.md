@@ -6,11 +6,7 @@
 function removePreferencesFromCache(context: Context, options: Options): Promise<void>
 ```
 
-从缓存中移除指定的Preferences实例，使用Promise异步回调。
-
-应用首次调用[getPreferences](arkts-arkdata-getpreferences-f.md#getpreferences-1)接口获取某个Preferences实例后，该实例会被缓存起来，后续调用
-[getPreferences](arkts-arkdata-getpreferences-f.md#getpreferences-1)时不会再次从持久化文件中读取，直接从缓存中获取Preferences实例。调用此接口移除缓存中的实例之后，再次
-getPreferences将会重新读取持久化文件，生成新的Preferences实例。
+从缓存中移除指定的Preferences实例，使用Promise异步回调。 应用首次调用[getPreferences](arkts-arkdata-getpreferences-f.md#getpreferences-1)接口获取某个Preferences实例后，该实例会被缓存起来，后续调用 [getPreferences](arkts-arkdata-getpreferences-f.md#getpreferences-1)时不会再次从持久化文件中读取，直接从缓存中获取Preferences实例。调用此接口移除缓存中的实例之后，再次 getPreferences将会重新读取持久化文件，生成新的Preferences实例。
 
 **起始版本：** 12
 

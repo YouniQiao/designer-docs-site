@@ -36,8 +36,7 @@ Action triggered when the menu option is clicked.
 builder?: () => void
 ```
 
-Builder of the custom component displayed upon click. It must be used with @Builder for building the custom
-component.
+Builder of the custom component displayed upon click. It must be used with @Builder for building the custom component.
 
 **Type:** () => void
 

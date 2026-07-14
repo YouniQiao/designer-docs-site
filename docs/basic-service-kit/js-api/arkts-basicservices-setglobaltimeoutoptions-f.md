@@ -12,8 +12,7 @@ import { cacheDownload } from '@kit.BasicServicesKit';
 function setGlobalTimeoutOptions(options?: TimeoutOptions): void
 ```
 
-Sets timeout configuration for all tasks.
-Used when task-specific timeout configuration is not configured.
+Sets timeout configuration for all tasks. Used when task-specific timeout configuration is not configured.
 
 **Since:** 26.0.0
 

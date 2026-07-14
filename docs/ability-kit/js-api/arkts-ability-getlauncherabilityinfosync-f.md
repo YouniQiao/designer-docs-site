@@ -12,8 +12,7 @@ import { launcherBundleManager } from '@kit.AbilityKit';
 function getLauncherAbilityInfoSync(bundleName: string, userId: number): Array<LauncherAbilityInfo>
 ```
 
-Obtains the [launcher ability information](arkts-ability-launcherabilityinfo-i.md) based on
-the given bundle name and user ID.
+Obtains the [launcher ability information](arkts-ability-launcherabilityinfo-i.md) based on the given bundle name and user ID.
 
 **Since:** 18
 

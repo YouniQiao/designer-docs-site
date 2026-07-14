@@ -74,8 +74,7 @@ Hardware version of the sensor.
 isLocalSensor?: boolean
 ```
 
-Whether the sensor is a local sensor. The value **true** indicates a local sensor, and the value **false**
-indicates the opposite.
+Whether the sensor is a local sensor. The value **true** indicates a local sensor, and the value **false** indicates the opposite.
 
 **Type:** boolean
 
@@ -89,8 +88,7 @@ indicates the opposite.
 isMockSensor?: boolean
 ```
 
-Whether the sensor is a mock sensor. The value **true** indicates a mock sensor, and the value **false**
-indicates the opposite.
+Whether the sensor is a mock sensor. The value **true** indicates a mock sensor, and the value **false** indicates the opposite.
 
 **Type:** boolean
 

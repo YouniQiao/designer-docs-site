@@ -214,9 +214,7 @@ HUKS_AES_KEY_SIZE_256 = 256
 HUKS_AES_KEY_SIZE_512 = 512
 ```
 
-表示使用AES算法的密钥长度为512bit。
-
-**说明：** 从API version 8开始支持，从API version 11开始废弃。
+表示使用AES算法的密钥长度为512bit。 **说明：** 从API version 8开始支持，从API version 11开始废弃。
 
 **起始版本：** 8
 

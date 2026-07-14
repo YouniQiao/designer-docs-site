@@ -12,8 +12,7 @@ import { commonEventManager } from '@kit.BasicServicesKit';
 function subscribeToEvent(subscriber: CommonEventSubscriber, callback: Callback<CommonEventData>): Promise<void>
 ```
 
-Subscribes to a common event. This API uses a promise to return the result, indicating subscription success or
-failure.
+Subscribes to a common event. This API uses a promise to return the result, indicating subscription success or failure.
 
 **Since:** 20
 
@@ -52,7 +51,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 let subscriber: commonEventManager.CommonEventSubscriber | null = null;
 // Subscriber information.
 let subscribeInfo: commonEventManager.CommonEventSubscribeInfo = {
-  events: ["event"]
+  events: ['event']
 };
 
 // Create a subscriber.
@@ -67,9 +66,9 @@ try {
         // Subscribe to a common event.
         try {
           commonEventManager.subscribeToEvent(subscriber, (data: commonEventManager.CommonEventData) => {
-            console.info(`Succeeded to receive common event, data is ` + JSON.stringify(data));
+            console.info(`Succeeded to receive common event, data is ${JSON.stringify(data)}`);
           }).then(() => {
-            console.info(`Succeeded to subscribe.`);
+            console.info(`Succeeded in subscribing.`);
           }).catch((err: BusinessError) => {
             console.error(`Failed to subscribe. Code is ${err.code}, message is ${err.message}`);
           });

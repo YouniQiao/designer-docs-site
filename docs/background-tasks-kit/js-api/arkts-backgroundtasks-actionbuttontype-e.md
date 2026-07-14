@@ -24,8 +24,7 @@ Button for closing the reminder.
 ACTION_BUTTON_TYPE_SNOOZE = 1
 ```
 
-Button for snoozing the reminder, with the frequency and timing configured via **snoozeTimes** and
-**timeInterval** in the [ReminderRequest](arkts-backgroundtasks-reminderrequest-i.md) struct.
+Button for snoozing the reminder, with the frequency and timing configured via **snoozeTimes** and **timeInterval** in the [ReminderRequest](arkts-backgroundtasks-reminderrequest-i.md) struct.
 
 **Since:** 9
 

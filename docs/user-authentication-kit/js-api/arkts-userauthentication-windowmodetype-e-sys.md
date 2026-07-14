@@ -1,7 +1,6 @@
 # WindowModeType (System API)
 
-Enumerates the display types of the user authentication screen. This enum defines the display modes that can be
-used on the authentication screen and is used to control the window style of the system authentication widget.
+Enumerates the display types of the user authentication screen. This enum defines the display modes that can be used on the authentication screen and is used to control the window style of the system authentication widget.
 
 **Since:** 10
 
@@ -15,8 +14,7 @@ used on the authentication screen and is used to control the window style of the
 DIALOG_BOX = 1
 ```
 
-Dialog box type. The authentication screen is displayed in dialog box mode, which is applicable to most
-authentication scenarios and provides good user experience.
+Dialog box type. The authentication screen is displayed in dialog box mode, which is applicable to most authentication scenarios and provides good user experience.
 
 **Since:** 10
 
@@ -30,9 +28,7 @@ authentication scenarios and provides good user experience.
 FULLSCREEN = 2
 ```
 
-Full screen. The authentication screen is displayed in full screen mode, which is applicable to scenarios that
-require immersive authentication experience or scenarios where a large amount of authentication information needs
-to be displayed.
+Full screen. The authentication screen is displayed in full screen mode, which is applicable to scenarios that require immersive authentication experience or scenarios where a large amount of authentication information needs to be displayed.
 
 **Since:** 10
 

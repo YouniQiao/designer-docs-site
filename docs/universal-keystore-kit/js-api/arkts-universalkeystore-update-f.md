@@ -12,9 +12,7 @@ import { huks } from '@kit.UniversalKeystoreKit';
 function update(handle: number, token?: Uint8Array, options: HuksOptions, callback: AsyncCallback<HuksResult>): void
 ```
 
-Updates the key operation data by segment. This API uses an asynchronous callback to return the result.
-
-The **huks.init**, **huks.update**, and **huks.finish** must be used together.
+Updates the key operation data by segment. This API uses an asynchronous callback to return the result. The **huks.init**, **huks.update**, and **huks.finish** must be used together.
 
 **Since:** 8
 
@@ -40,9 +38,7 @@ The **huks.init**, **huks.update**, and **huks.finish** must be used together.
 function update(handle: number, token?: Uint8Array, options: HuksOptions): Promise<HuksResult>
 ```
 
-Updates the key operation data by segment. This API uses a promise to return the result.
-
-The **huks.init**, **huks.update**, and **huks.finish** must be used together.
+Updates the key operation data by segment. This API uses a promise to return the result. The **huks.init**, **huks.update**, and **huks.finish** must be used together.
 
 **Since:** 8
 

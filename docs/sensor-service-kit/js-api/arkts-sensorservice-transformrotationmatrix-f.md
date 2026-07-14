@@ -13,8 +13,7 @@ function transformRotationMatrix(inRotationVector: Array<number>, coordinates: C
     callback: AsyncCallback<Array<number>>): void
 ```
 
-Transforms a rotation vector based on the coordinate system. This API uses an asynchronous callback to return the
-result.
+Transforms a rotation vector based on the coordinate system. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 

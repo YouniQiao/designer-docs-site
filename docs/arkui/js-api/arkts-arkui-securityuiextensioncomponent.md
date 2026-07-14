@@ -1,8 +1,6 @@
 # SecurityUIExtensionComponent
 
-Provide an interface for the UIExtensionComponent, which is used
-<br/>to render UI of a remote UIExtensionAbility
-
+Provide an interface for the UIExtensionComponent, which is used <br/>to render UI of a remote UIExtensionAbility
 
 ## SecurityUIExtensionComponent
 
@@ -12,8 +10,7 @@ SecurityUIExtensionComponent(
   )
 ```
 
-Construct the UIExtensionComponent.<br/>
-Called when the UIExtensionComponent is used.
+Construct the UIExtensionComponent.<br/> Called when the UIExtensionComponent is used.
 
 **Since:** 26.0.0
 

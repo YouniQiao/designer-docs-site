@@ -12,14 +12,7 @@ import { applicationManager } from '@kit.MDMKit';
 function addFreezeExemptedApps(admin: Want, applicationInstances: Array<common.ApplicationInstance>): void
 ```
 
-Adds applications to the background freeze-exempt application list for a specified user. This policy applies only
-to installed applications and becomes invalid after the device is restarted. If the parameter list contains
-uninstalled applications, error code 9200012 will be returned. If an application in the list is uninstalled after
-the policy is set, the uninstalled application will be removed from the list. Adding an application that already
-exists in the list will return success, but the application will not be added repeatedly to the policy list.
-
-Freezing operations include suspending the target application, and managing software resource agents, hardware
-resource agents, and high-power consumption.
+Adds applications to the background freeze-exempt application list for a specified user. This policy applies only to installed applications and becomes invalid after the device is restarted. If the parameter list contains uninstalled applications, error code 9200012 will be returned. If an application in the list is uninstalled after the policy is set, the uninstalled application will be removed from the list. Adding an application that already exists in the list will return success, but the application will not be added repeatedly to the policy list. Freezing operations include suspending the target application, and managing software resource agents, hardware resource agents, and high-power consumption.
 
 **Since:** 22
 

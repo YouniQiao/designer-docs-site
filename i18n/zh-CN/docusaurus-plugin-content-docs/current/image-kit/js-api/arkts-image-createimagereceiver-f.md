@@ -6,10 +6,7 @@
 function createImageReceiver(size: image.Size, format: image.ImageFormat, capacity: number): ImageReceiver
 ```
 
-通过图片大小、图片格式、容量创建ImageReceiver实例。
-
-由于图片占用内存较大，所以当ImageReceiver实例使用完成后，应主动调用[release](arkts-image-pixelmap-i.md#release-1)方法及时释放内存。释放时应确保该实例的所有异步方法均执行
-完成，且后续不再使用该实例。
+通过图片大小、图片格式、容量创建ImageReceiver实例。 由于图片占用内存较大，所以当ImageReceiver实例使用完成后，应主动调用[release](arkts-image-pixelmap-i.md#release-1)方法及时释放内存。释放时应确保该实例的所有异步方法均执行 完成，且后续不再使用该实例。
 
 **起始版本：** 12
 

@@ -1,9 +1,6 @@
 # File
 
-Represents the file data. It is a child class of [UnifiedRecord](arkts-arkdata-unifiedrecord-c.md) and a base
-class of the data of the file type. You are advised to use the child class of **File**, for example,
-[Image](arkts-arkdata-image-c.md), [Video](arkts-arkdata-video-c.md), and
-[Folder](arkts-arkdata-folder-c.md), to describe data.
+Represents the file data. It is a child class of [UnifiedRecord](arkts-arkdata-unifiedrecord-c.md) and a base class of the data of the file type. You are advised to use the child class of **File**, for example, [Image](arkts-arkdata-image-c.md), [Video](arkts-arkdata-video-c.md), and [Folder](arkts-arkdata-folder-c.md), to describe data.
 
 **Inheritance/Implementation:** File extends [UnifiedRecord](arkts-arkdata-unifiedrecord-c.md)
 
@@ -23,18 +20,7 @@ import { unifiedDataChannel } from '@kit.ArkData';
 details?: Record<string, string>
 ```
 
-A dictionary type object, where both the key and value are of the string type and are used to describe file
-information. For example, a data object with the following content can be created to describe a file:
-
-{
-
-"name":"File name",
-
-"type":"File type"
-
-}
-
-The default value is an empty dictionary object.
+A dictionary type object, where both the key and value are of the string type and are used to describe file information. For example, a data object with the following content can be created to describe a file: { "name":"File name", "type":"File type" } The default value is an empty dictionary object.
 
 **Type:** Record<string, string>
 

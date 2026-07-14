@@ -46,8 +46,7 @@ The type of the Bluetooth address.
 rawAddressType?: BluetoothRawAddressType
 ```
 
-Address type defined by the Bluetooth Core Specification.
-It is used only when the {@link BluetoothAddress#addressType} is {@link BluetoothAddressType#REAL}.
+Address type defined by the Bluetooth Core Specification. It is used only when the {@link BluetoothAddress#addressType} is {@link BluetoothAddressType#REAL}.
 
 **Type:** BluetoothRawAddressType
 

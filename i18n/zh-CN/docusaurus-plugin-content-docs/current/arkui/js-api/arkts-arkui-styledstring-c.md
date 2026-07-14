@@ -63,49 +63,7 @@ equals(other: StyledString): boolean
 static fromHtml(html: string): Promise<StyledString>
 ```
 
-将HTML格式字符串转换成属性字符串，当前支持转换的HTML标签范围：\<p>、\<span>、\<img>、\
-
-、\<strong>、\<b>、\<a>、\<i>、\<em>、\<s>、\<u>、\<del>、\<sup>、\<sub>、\<cite>、\<dfn>、\<small>、\<h1>、\<h2>、\<h3>、\<h4>、\<h5
->、\<h6>。支持将标签中的style属性样式转换成对应的属性字符串样式。
-
-使用方法参考
-[示例12（fromHtml和toHtml互相转换）]
-(../../../../reference/apis-arkui/arkui-ts/ts-universal-styled-string.md#示例12fromhtml和tohtml互相转换)
-和[示例18（fromHtml转换）](../../../../reference/apis-arkui/arkui-ts/ts-universal-styled-string.md#示例18fromhtml转换)。
-
-| 标签名称 | 说明 |
-| ------------- | ---------------------------- |
-| \<p\> | 段落，分隔文本段落。 |
-| \<span\> | 行内文本，支持样式设置。 |
-| \<img\> | 插入图片。 |
-| \<strong\> | 加粗文本。 |
-| &lt;br&gt;<sup>20+</sup> | 换行。 |
-| \<b\><sup>20+</sup> | 加粗文本。 |
-| \<a\><sup>20+</sup> | 超链接。 |
-| \<i\><sup>20+</sup> | 斜体文本。 |
-| \<em\><sup>20+</sup> | 斜体文本。 |
-| \<s\><sup>20+</sup> | 删除线（中划线）。 |
-| \<u\><sup>20+</sup> | 下划线。 |
-| \<del\><sup>20+</sup> | 删除线（中划线）。 |
-| \<sup\><sup>20+</sup> | 上标文本。 |
-| \<sub\><sup>20+</sup> | 下标文本。 |
-| \<cite\> | 斜体文本。
-
-| \<dfn\> | 斜体文本。
-
-| \<small\> | 缩小字号标签。字号缩放为父容器字号属性的0.8倍，支持嵌套叠加。
-
-| \<h1\> | 一级标题。
-
-| \<h2\> | 二级标题。
-
-| \<h3\> | 三级标题。
-
-| \<h4\> | 四级标题。
-
-| \<h5\> | 五级标题。
-
-| \<h6\> | 六级标题。
+将HTML格式字符串转换成属性字符串，当前支持转换的HTML标签范围：\<p>、\<span>、\<img>、\ 、\<strong>、\<b>、\<a>、\<i>、\<em>、\<s>、\<u>、\<del>、\<sup>、\<sub>、\<cite>、\<dfn>、\<small>、\<h1>、\<h2>、\<h3>、\<h4>、\<h5 >、\<h6>。支持将标签中的style属性样式转换成对应的属性字符串样式。 使用方法参考 [示例12（fromHtml和toHtml互相转换）] (../../../../reference/apis-arkui/arkui-ts/ts-universal-styled-string.md#示例12fromhtml和tohtml互相转换) 和[示例18（fromHtml转换）](../../../../reference/apis-arkui/arkui-ts/ts-universal-styled-string.md#示例18fromhtml转换)。 | 标签名称 | 说明 | | ------------- | ---------------------------- | | \<p\> | 段落，分隔文本段落。 | | \<span\> | 行内文本，支持样式设置。 | | \<img\> | 插入图片。 | | \<strong\> | 加粗文本。 | | &lt;br&gt;<sup>20+</sup> | 换行。 | | \<b\><sup>20+</sup> | 加粗文本。 | | \<a\><sup>20+</sup> | 超链接。 | | \<i\><sup>20+</sup> | 斜体文本。 | | \<em\><sup>20+</sup> | 斜体文本。 | | \<s\><sup>20+</sup> | 删除线（中划线）。 | | \<u\><sup>20+</sup> | 下划线。 | | \<del\><sup>20+</sup> | 删除线（中划线）。 | | \<sup\><sup>20+</sup> | 上标文本。 | | \<sub\><sup>20+</sup> | 下标文本。 | | \<cite\> | 斜体文本。 | \<dfn\> | 斜体文本。 | \<small\> | 缩小字号标签。字号缩放为父容器字号属性的0.8倍，支持嵌套叠加。 | \<h1\> | 一级标题。 | \<h2\> | 二级标题。 | \<h3\> | 三级标题。 | \<h4\> | 四级标题。 | \<h5\> | 五级标题。 | \<h6\> | 六级标题。
 
 **起始版本：** 12
 
@@ -162,9 +120,7 @@ getString(): string
 getStyles(start: number, length: number, styledKey?: StyledStringKey): Array<SpanStyle>
 ```
 
-获取指定范围属性字符串的样式集合。不能超出属性字符串的长度。
-
-该接口仅返回开发者设置的样式。
+获取指定范围属性字符串的样式集合。不能超出属性字符串的长度。 该接口仅返回开发者设置的样式。
 
 **起始版本：** 12
 
@@ -235,12 +191,7 @@ subStyledString(start: number, length?: number): StyledString
 static toHtml(styledString: StyledString): string
 ```
 
-将属性字符串转换成HTML格式字符串。支持转换的属性字符串[StyledStringKey](arkts-arkui-styledstringkey-e.md)包括：StyledStringKey.FONT、
-StyledStringKey.DECORATION、StyledStringKey.LETTER_SPACING、StyledStringKey.TEXT_SHADOW、StyledStringKey.LINE_HEIGHT、
-StyledStringKey.IMAGE。
-
-使用方法参考
-[示例12（fromHtml和toHtml互相转换）](../../../../reference/apis-arkui/arkui-ts/ts-universal-styled-string.md#示例12fromhtml和tohtml互相转换)。
+将属性字符串转换成HTML格式字符串。支持转换的属性字符串[StyledStringKey](arkts-arkui-styledstringkey-e.md)包括：StyledStringKey.FONT、 StyledStringKey.DECORATION、StyledStringKey.LETTER_SPACING、StyledStringKey.TEXT_SHADOW、StyledStringKey.LINE_HEIGHT、 StyledStringKey.IMAGE。 使用方法参考 [示例12（fromHtml和toHtml互相转换）](../../../../reference/apis-arkui/arkui-ts/ts-universal-styled-string.md#示例12fromhtml和tohtml互相转换)。
 
 **起始版本：** 14
 
@@ -274,11 +225,7 @@ StyledStringKey.IMAGE。
 readonly length: number
 ```
 
-属性字符串字符的长度。
-
-**说明：**
-
-属性字符串中的ImageAttachment和CustomSpan长度都计为1。
+属性字符串字符的长度。 **说明：** 属性字符串中的ImageAttachment和CustomSpan长度都计为1。
 
 **类型：** number
 

@@ -1,7 +1,6 @@
 # @ohos.web.webNativeMessagingExtensionManager
 
-The webNativeMessagingExtensionManager module provides the capability of managing message extensions based on web
-standards.
+The webNativeMessagingExtensionManager module provides the capability of managing message extensions based on web standards.
 
 **Since:** 21
 
@@ -27,7 +26,7 @@ import { webNativeMessagingExtensionManager } from '@kit.ArkWeb';
 | Name | Description |
 | --- | --- |
 | [ConnectionNativeInfo](arkts-arkweb-connectionnativeinfo-i.md) | Represents the information about the web native message connection. |
-| [WebExtensionConnectionCallback](arkts-arkweb-webextensionconnectioncallback-i.md) | As an input parameter when connecting a web native messaging extension, it is used to receivestate changes during the connection. |
+| [WebExtensionConnectionCallback](arkts-arkweb-webextensionconnectioncallback-i.md) | As an input parameter when connecting a web native messaging extension, it is used to receive state changes during the connection. |
 
 ### Enums
 

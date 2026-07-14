@@ -1,7 +1,6 @@
 # IPCSkeleton
 
-Obtains IPC context, including the UID and PID, local and remote device IDs, and whether the method is invoked on
-the same device.
+Obtains IPC context, including the UID and PID, local and remote device IDs, and whether the method is invoked on the same device.
 
 **Since:** 7
 
@@ -19,8 +18,7 @@ import { rpc } from '@kit.IPCKit';
 static flushCmdBuffer(object: IRemoteObject): void
 ```
 
-Flushes all suspended commands from the specified **RemoteProxy** to the corresponding **RemoteObject**. This API
-is a static method. You are advised to call this API before performing any sensitive operation.
+Flushes all suspended commands from the specified **RemoteProxy** to the corresponding **RemoteObject**. This API is a static method. You are advised to call this API before performing any sensitive operation.
 
 **Since:** 9
 
@@ -72,8 +70,7 @@ try {
 static flushCommands(object: IRemoteObject): number
 ```
 
-Flushes all suspended commands from the specified **RemoteProxy** to the corresponding **RemoteObject**. This API
-is a static method. You are advised to call this API before performing any sensitive operation.
+Flushes all suspended commands from the specified **RemoteProxy** to the corresponding **RemoteObject**. This API is a static method. You are advised to call this API before performing any sensitive operation.
 
 **Since:** 7
 
@@ -168,9 +165,7 @@ class Stub extends rpc.RemoteObject {
 static getCallingPid(): number
 ```
 
-Obtains the PID of the caller. This API is a static method, which is invoked by the **RemoteObject** object in
-the **onRemoteRequest** method. If this method is not invoked in the IPC context (**onRemoteRequest**), the
-PID of the process will be returned.
+Obtains the PID of the caller. This API is a static method, which is invoked by the **RemoteObject** object in the **onRemoteRequest** method. If this method is not invoked in the IPC context (**onRemoteRequest**), the PID of the process will be returned.
 
 **Since:** 7
 
@@ -248,9 +243,7 @@ class Stub extends rpc.RemoteObject {
 static getCallingUid(): number
 ```
 
-Obtains the UID of the caller. This API is a static method, which is invoked by the **RemoteObject** object in
-the **onRemoteRequest** method. If this method is not invoked in the IPC context (**onRemoteRequest**), the
-UID of the process will be returned.
+Obtains the UID of the caller. This API is a static method, which is invoked by the **RemoteObject** object in the **onRemoteRequest** method. If this method is not invoked in the IPC context (**onRemoteRequest**), the UID of the process will be returned.
 
 **Since:** 7
 
@@ -400,8 +393,7 @@ class Stub extends rpc.RemoteObject {
 static resetCallingIdentity(): string
 ```
 
-Resets the UID and PID of the remote user to those of the local user. This API is a static method and is used in
-scenarios such as identity authentication.
+Resets the UID and PID of the remote user to those of the local user. This API is a static method and is used in scenarios such as identity authentication.
 
 **Since:** 7
 
@@ -440,9 +432,7 @@ class Stub extends rpc.RemoteObject {
 static restoreCallingIdentity(identity: string): void
 ```
 
-Restores the UID and PID of the remote user. This API is a static method. It is usually called after
-**resetCallingIdentity**, and the UID and PID of the remote user returned by **resetCallingIdentity** are
-required.
+Restores the UID and PID of the remote user. This API is a static method. It is usually called after **resetCallingIdentity**, and the UID and PID of the remote user returned by **resetCallingIdentity** are required.
 
 **Since:** 9
 
@@ -452,13 +442,13 @@ required.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| identity | string | Yes | A string containing the UID and PID of the remote user. The length of the stringmust be less than 40960 bytes. are returned by **resetCallingIdentity**. |
+| identity | string | Yes | A string containing the UID and PID of the remote user. The length of the stringmust be less than 40960. are returned by **resetCallingIdentity**. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.The number of parameters is incorrect;2.The parameter type does not match;3.The string length is greater than or equal to 40960 bytes;4.The number of bytes copied to the buffer is different from the length of the obtained string. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.The number of parameters is incorrect;2.The parameter type does not match;3.The string length is greater than or equal to 40960;4.The number of bytes copied to the buffer is different from the length of the obtained string. |
 
 **Example**
 
@@ -488,9 +478,7 @@ class Stub extends rpc.RemoteObject {
 static setCallingIdentity(identity: string): boolean
 ```
 
-Sets the UID and PID of the remote user. This API is a static method. It is usually called after
-**resetCallingIdentity**, and the UID and PID of the remote user returned by **resetCallingIdentity** are
-required.
+Sets the UID and PID of the remote user. This API is a static method. It is usually called after **resetCallingIdentity**, and the UID and PID of the remote user returned by **resetCallingIdentity** are required.
 
 **Since:** 7
 

@@ -12,16 +12,7 @@ import { dlpPermission } from '@kit.DataProtectionKit';
 function decryptDlpFile(dlpFd: number, plaintextFd: number): Promise<void>
 ```
 
-Decrypts a DLP file to generate a plaintext file. This API can be called only by enterprise accounts. This API
-uses a promise to return the result.
-
-This API decrypts DLP files into plaintext files, which is applicable to exporting or migrating files by users
-with owner permissions.
-
-> **NOTE**
->
-> This API can be called only by enterprise accounts. Enterprises need to set up their own enterprise account
-> servers. The enterprise server determines whether an account is authorized to decrypt DLP files.
+Decrypts a DLP file to generate a plaintext file. This API can be called only by enterprise accounts. This API uses a promise to return the result. This API decrypts DLP files into plaintext files, which is applicable to exporting or migrating files by users with owner permissions. > **NOTE** > > This API can be called only by enterprise accounts. Enterprises need to set up their own enterprise account > servers. The enterprise server determines whether an account is authorized to decrypt DLP files.
 
 **Since:** 21
 
@@ -35,8 +26,8 @@ with owner permissions.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| dlpFd | number | Yes | FD of the DLP file to be decrypted. The value range is [0, 2&lt;sup&gt;31&lt;/sup&gt;-1]. If thevalue of **fd** is less than 0, error code 19100001 is thrown. If the value of **fd** is greater than2&lt;sup&gt;31&lt;/sup&gt;-1, the value is truncated. |
-| plaintextFd | number | Yes | FD of the decrypted file. The value range is [0, 2&lt;sup&gt;31&lt;/sup&gt;-1]. If the valueof **fd** is less than 0, error code 19100001 is thrown. If the value of **fd** is greater than2&lt;sup&gt;31&lt;/sup&gt;, the value is truncated. |
+| dlpFd | number | Yes | FD of the DLP file to be decrypted. The value range is [0, 2&lt;sup&gt;31&lt;/sup&gt;-1]. If thevalue of **fd** is less than 0, n error log is generated, and the function stops running. If the value of**fd** is greater than 2&lt;sup&gt;31&lt;/sup&gt;-1, the excess part will be truncated. |
+| plaintextFd | number | Yes | FD of the decrypted file. The value range is [0, 2&lt;sup&gt;31&lt;/sup&gt;-1]. If the valueof **fd** is less than 0, an error log is generated, and the function stops running. If the value of **fd**is greater than 2&lt;sup&gt;31&lt;/sup&gt;, the excess part will be truncated. |
 
 **Return value:**
 

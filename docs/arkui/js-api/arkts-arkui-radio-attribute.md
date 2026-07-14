@@ -1,8 +1,6 @@
 # Radio properties/events
 
-In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following attributes are supported.
-
-In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following events are supported.
+In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following attributes are supported. In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following events are supported.
 
 **Inheritance/Implementation:** RadioAttribute extends [CommonMethod<RadioAttribute>](CommonMethod<RadioAttribute>)
 
@@ -16,13 +14,7 @@ In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-ap
 checked(value: boolean)
 ```
 
-Sets whether the radio button is selected.
-
-Since API version 10, this attribute supports two-way binding through
-[$$](../../../../ui/state-management/arkts-two-way-sync.md).
-
-Since API version 18, this attribute supports two-way binding through
-[!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
+Sets whether the radio button is selected. Since API version 10, this attribute supports two-way binding through [$$](../../../../ui/state-management/arkts-two-way-sync.md). Since API version 18, this attribute supports two-way binding through [!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
 
 **Since:** 8
 
@@ -44,11 +36,7 @@ Since API version 18, this attribute supports two-way binding through
 checked(isChecked: Optional<boolean>)
 ```
 
-Sets whether the radio button is selected. Compared with [checked](RadioAttribute#checked(value: boolean)),
-this API supports the **undefined** type for the **isChecked** parameter.
-
-This attribute supports two-way binding through [$$](../../../../ui/state-management/arkts-two-way-sync.md) and
-[!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
+Sets whether the radio button is selected. Compared with [checked](RadioAttribute#checked(value: boolean)), this API supports the **undefined** type for the **isChecked** parameter. This attribute supports two-way binding through [$$](../../../../ui/state-management/arkts-two-way-sync.md) and [!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
 
 **Since:** 18
 
@@ -94,9 +82,7 @@ Creates a content modifier.
 contentModifier(modifier: Optional<ContentModifier<RadioConfiguration>>)
 ```
 
-Creates a content modifier. Compared with
-[contentModifier](RadioAttribute#contentModifier(modifier: ContentModifier<RadioConfiguration>))<sup>12+</sup
->, this API supports the **undefined** type for the **modifier** parameter.
+Creates a content modifier. Compared with [contentModifier](RadioAttribute#contentModifier(modifier: ContentModifier<RadioConfiguration>))<sup>12+</sup >, this API supports the **undefined** type for the **modifier** parameter.
 
 **Since:** 18
 
@@ -140,9 +126,7 @@ Triggered when the selected state of the radio button changes.
 onChange(callback: Optional<OnRadioChangeCallback>)
 ```
 
-Triggered when the selected state of the radio button changes. Compared with
-[onChange](RadioAttribute#onChange(callback: (isChecked: boolean) => void)), this API supports the
-**undefined** type for the **callback** parameter.
+Triggered when the selected state of the radio button changes. Compared with [onChange](RadioAttribute#onChange(callback: (isChecked: boolean) => void)), this API supports the **undefined** type for the **callback** parameter.
 
 **Since:** 18
 
@@ -166,9 +150,7 @@ Triggered when the selected state of the radio button changes. Compared with
 radioStyle(value?: RadioStyle)
 ```
 
-Sets the style of the radio button in selected or deselected state.
-
-Since API version 10, this API is supported in ArkTS widgets.
+Sets the style of the radio button in selected or deselected state. Since API version 10, this API is supported in ArkTS widgets.
 
 **Since:** 10
 

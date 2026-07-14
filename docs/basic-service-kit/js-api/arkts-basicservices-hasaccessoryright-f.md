@@ -12,9 +12,7 @@ import { usbManager } from '@kit.BasicServicesKit';
 function hasAccessoryRight(accessory: USBAccessory): boolean
 ```
 
-Checks whether the application has the permission to access the USB accessory.
-You need to call [usbManager.getAccessoryList](arkts-basicservices-getaccessorylist-f.md#getaccessorylist-1) to obtain the accessory list
-and use [USBAccessory](arkts-basicservices-usbaccessory-i.md) as a parameter.
+Checks whether the application has the permission to access the USB accessory. You need to call [usbManager.getAccessoryList](arkts-basicservices-getaccessorylist-f.md#getaccessorylist-1) to obtain the accessory list and use [USBAccessory](arkts-basicservices-usbaccessory-i.md) as a parameter.
 
 **Since:** 14
 

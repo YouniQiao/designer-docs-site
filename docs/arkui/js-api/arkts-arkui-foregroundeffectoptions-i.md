@@ -12,10 +12,7 @@ Describes the foreground effect.
 radius: number
 ```
 
-Blur radius. The value range is [0, +∞).
-
-This parameter takes effect only within the component scope. When it is used with other APIs, the effect beyond the
-component scope does not apply.
+Blur radius. The value range is [0, +∞). This parameter takes effect only within the component scope. When it is used with other APIs, the effect beyond the component scope does not apply.
 
 **Type:** number
 

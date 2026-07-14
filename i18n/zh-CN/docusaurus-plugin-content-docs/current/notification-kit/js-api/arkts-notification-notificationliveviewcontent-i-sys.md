@@ -1,6 +1,6 @@
 # NotificationLiveViewContent（系统接口）
 
-描述普通实况通知。
+描述普通实况通知。继承自[NotificationBasicContent](arkts-notification-notificationbasiccontent-i.md)。
 
 **继承/实现关系：** NotificationLiveViewContent extends [NotificationBasicContent](arkts-notification-notificationbasiccontent-i.md)
 
@@ -48,10 +48,7 @@ extraInfo?: Record<string, Object>
 isLocalUpdateOnly?: boolean
 ```
 
-实况窗是否只在本地更新。默认为false。
-
-- true：是。
-- false：否。
+实况窗是否只在本地更新。默认为false。 - true：是。 - false：否。
 
 **类型：** boolean
 

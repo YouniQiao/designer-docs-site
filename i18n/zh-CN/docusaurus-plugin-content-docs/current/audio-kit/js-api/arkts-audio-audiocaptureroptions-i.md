@@ -26,9 +26,7 @@ capturerInfo: AudioCapturerInfo
 playbackCaptureConfig?: AudioPlaybackCaptureConfig
 ```
 
-音频内录的配置信息。
-
-<br/
+音频内录的配置信息。 <br/
 
 **类型：** AudioPlaybackCaptureConfig
 
@@ -46,8 +44,7 @@ playbackCaptureConfig?: AudioPlaybackCaptureConfig
 playbackCaptureMode?: AudioPlaybackCaptureMode
 ```
 
-内录模式。可设置为AudioPlaybackCaptureMode中的枚举值或其按位或组合，当前仅支持MODE_DEFAULT（0x0）、MODE_MEDIA（0x1）、MODE_EXCLUDING_SELF（0x8000），
-以及MODE_MEDIA和MODE_EXCLUDING_SELF的按位或组合（0x8001）。
+内录模式。可设置为AudioPlaybackCaptureMode中的枚举值或其按位或组合，当前仅支持MODE_DEFAULT（0x0）、MODE_MEDIA（0x1）、MODE_EXCLUDING_SELF（0x8000）， 以及MODE_MEDIA和MODE_EXCLUDING_SELF的按位或组合（0x8001）。
 
 **类型：** AudioPlaybackCaptureMode
 

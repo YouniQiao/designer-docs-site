@@ -1,8 +1,8 @@
 # PhotoKeys
 
-Enumeration of photo asset members
+Defines the key information about an image or video file.
 
-**Since:** 20
+**Since:** 10
 
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -12,9 +12,9 @@ Enumeration of photo asset members
 URI = 'uri'
 ```
 
-Asset uri, read only
+URI of the file. **Note**: Only the [DataSharePredicates.equalTo](../../apis-arkdata/arkts-apis/arkts-arkdata-datasharepredicates-c.md#equalto-1) predicate can be used for this field during photo query.
 
-**Since:** 20
+**Since:** 10
 
 **Atomic service API:** This API can be used in atomic services since API version 20.
 
@@ -26,9 +26,9 @@ Asset uri, read only
 PHOTO_TYPE = 'media_type'
 ```
 
-Photo type of the asset, read only
+Type of the file.
 
-**Since:** 20
+**Since:** 10
 
 **Atomic service API:** This API can be used in atomic services since API version 20.
 
@@ -40,9 +40,9 @@ Photo type of the asset, read only
 DISPLAY_NAME = 'display_name'
 ```
 
-Asset name, read only
+File name displayed. The file name must meet the following requirements: - A valid file name must include a base name and a supported image or video extension. - The file name length ranges from 1 to 255. - The base name must not contain any invalid characters, which are:.. \ / : * ? " ' ` < > | { } [ ]
 
-**Since:** 20
+**Since:** 10
 
 **Atomic service API:** This API can be used in atomic services since API version 20.
 
@@ -54,9 +54,9 @@ Asset name, read only
 SIZE = 'size'
 ```
 
-Size of the asset, read only
+File size, in bytes. The size of a moving photo includes the total size of the image and video.
 
-**Since:** 20
+**Since:** 10
 
 **Atomic service API:** This API can be used in atomic services since API version 20.
 
@@ -68,9 +68,9 @@ Size of the asset, read only
 DATE_ADDED = 'date_added'
 ```
 
-Creation date of the asset, read only
+Unix timestamp when the file was created, in seconds.
 
-**Since:** 20
+**Since:** 10
 
 **Atomic service API:** This API can be used in atomic services since API version 20.
 
@@ -82,9 +82,9 @@ Creation date of the asset, read only
 DATE_MODIFIED = 'date_modified'
 ```
 
-Modified date of the asset, read only
+Unix timestamp when the file content (not the file name) was last modified, in seconds. This value is updated when the file content is modified, but not when the file name is modified.
 
-**Since:** 20
+**Since:** 10
 
 **Atomic service API:** This API can be used in atomic services since API version 20.
 
@@ -96,9 +96,9 @@ Modified date of the asset, read only
 DURATION = 'duration'
 ```
 
-Duration of video files, read only
+Duration, in ms.
 
-**Since:** 20
+**Since:** 10
 
 **Atomic service API:** This API can be used in atomic services since API version 20.
 
@@ -110,9 +110,9 @@ Duration of video files, read only
 WIDTH = 'width'
 ```
 
-Width of the image asset, read only
+Image width, in pixels.
 
-**Since:** 20
+**Since:** 10
 
 **Atomic service API:** This API can be used in atomic services since API version 20.
 
@@ -124,9 +124,9 @@ Width of the image asset, read only
 HEIGHT = 'height'
 ```
 
-Height of the image asset, read only
+Image height, in pixels.
 
-**Since:** 20
+**Since:** 10
 
 **Atomic service API:** This API can be used in atomic services since API version 20.
 
@@ -138,9 +138,9 @@ Height of the image asset, read only
 DATE_TAKEN = 'date_taken'
 ```
 
-Date taken of the asset, read only
+Unix timestamp when the photo was taken, in seconds.
 
-**Since:** 20
+**Since:** 10
 
 **Atomic service API:** This API can be used in atomic services since API version 20.
 
@@ -152,9 +152,9 @@ Date taken of the asset, read only
 ORIENTATION = 'orientation'
 ```
 
-Orientation of the image asset, read only
+Orientation of the file, in degrees.
 
-**Since:** 20
+**Since:** 10
 
 **Atomic service API:** This API can be used in atomic services since API version 20.
 
@@ -166,9 +166,9 @@ Orientation of the image asset, read only
 FAVORITE = 'is_favorite'
 ```
 
-Favorite state of the asset, read only
+Whether the file is marked as favorites.
 
-**Since:** 20
+**Since:** 10
 
 **Atomic service API:** This API can be used in atomic services since API version 20.
 
@@ -180,23 +180,9 @@ Favorite state of the asset, read only
 TITLE = 'title'
 ```
 
-Title of the asset
+Title of the file.
 
-**Since:** 20
-
-**Atomic service API:** This API can be used in atomic services since API version 20.
-
-**System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
-
-## POSITION
-
-```TypeScript
-POSITION = 'position'
-```
-
-Asset position, read only
-
-**Since:** 20
+**Since:** 10
 
 **Atomic service API:** This API can be used in atomic services since API version 20.
 
@@ -208,9 +194,9 @@ Asset position, read only
 DATE_ADDED_MS = 'date_added_ms'
 ```
 
-Creation time of the asset in milliseconds, read only
+Unix timestamp when the file was created, in milliseconds. **Note**: The photos queried cannot be sorted based on this field.
 
-**Since:** 20
+**Since:** 12
 
 **Atomic service API:** This API can be used in atomic services since API version 20.
 
@@ -222,9 +208,9 @@ Creation time of the asset in milliseconds, read only
 DATE_MODIFIED_MS = 'date_modified_ms'
 ```
 
-Modified time of the asset in milliseconds, read only
+Unix timestamp when the file was modified, in milliseconds. This value is updated when the file content is modified, but not when the file name is modified. **Note**: The photos queried cannot be sorted based on this field.
 
-**Since:** 20
+**Since:** 12
 
 **Atomic service API:** This API can be used in atomic services since API version 20.
 
@@ -236,9 +222,9 @@ Modified time of the asset in milliseconds, read only
 PHOTO_SUBTYPE = 'subtype'
 ```
 
-Photo subtype of the asset, read only
+Subtype of the media file.
 
-**Since:** 20
+**Since:** 12
 
 **Atomic service API:** This API can be used in atomic services since API version 20.
 
@@ -250,9 +236,9 @@ Photo subtype of the asset, read only
 DYNAMIC_RANGE_TYPE = 'dynamic_range_type'
 ```
 
-Dynamic range type of the asset, read only
+Dynamic range type of the media asset.
 
-**Since:** 20
+**Since:** 12
 
 **Atomic service API:** This API can be used in atomic services since API version 20.
 
@@ -264,9 +250,9 @@ Dynamic range type of the asset, read only
 COVER_POSITION = 'cover_position'
 ```
 
-Cover position of the asset, read only
+Position of the moving photo cover, which is the video timestamp (in μs) corresponding to the cover frame.
 
-**Since:** 20
+**Since:** 12
 
 **Atomic service API:** This API can be used in atomic services since API version 20.
 
@@ -278,9 +264,9 @@ Cover position of the asset, read only
 BURST_KEY = 'burst_key'
 ```
 
-Unique uuid of the burst photos, read only
+Unique ID of a group of burst photos.
 
-**Since:** 20
+**Since:** 12
 
 **Atomic service API:** This API can be used in atomic services since API version 20.
 
@@ -292,9 +278,9 @@ Unique uuid of the burst photos, read only
 LCD_SIZE = 'lcd_size'
 ```
 
-Width and height information of lcd picture, read only
+Width and height of an LCD image, in the format of a **width:height** string.
 
-**Since:** 20
+**Since:** 12
 
 **Atomic service API:** This API can be used in atomic services since API version 20.
 
@@ -306,9 +292,9 @@ Width and height information of lcd picture, read only
 THM_SIZE = 'thm_size'
 ```
 
-Width and height information of thumbnail picture, read only
+Width and height of a thumbnail image, in the format of a **width:height** string.
 
-**Since:** 20
+**Since:** 12
 
 **Atomic service API:** This API can be used in atomic services since API version 20.
 
@@ -320,9 +306,9 @@ Width and height information of thumbnail picture, read only
 DETAIL_TIME = 'detail_time'
 ```
 
-Detail time of the asset, read only
+Detailed time. The value is a string of time when the image or video was taken in the time zone and does not change with the time zone.
 
-**Since:** 20
+**Since:** 13
 
 **Atomic service API:** This API can be used in atomic services since API version 20.
 
@@ -334,23 +320,11 @@ Detail time of the asset, read only
 DATE_TAKEN_MS = 'date_taken_ms'
 ```
 
-Date taken of the asset in milliseconds, read only
+Unix timestamp when the image was captured, in milliseconds.
 
-**Since:** 20
+**Since:** 13
 
 **Atomic service API:** This API can be used in atomic services since API version 20.
-
-**System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
-
-## OWNER_ALBUM_ID
-
-```TypeScript
-OWNER_ALBUM_ID = 'owner_album_id'
-```
-
-Owner album id of the asset, read only
-
-**Since:** 22
 
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -360,7 +334,7 @@ Owner album id of the asset, read only
 MEDIA_SUFFIX = 'media_suffix'
 ```
 
-Suffix of the asset, read only
+File name extension.
 
 **Since:** 18
 
@@ -372,7 +346,7 @@ Suffix of the asset, read only
 ASPECT_RATIO = 'aspect_ratio'
 ```
 
-width/height of a photo
+Aspect ratio of the image or video.
 
 **Since:** 22
 
@@ -386,7 +360,7 @@ width/height of a photo
 CHANGE_TIME = 'change_time'
 ```
 
-change time of photo
+Time when the photo is changed.
 
 **Since:** 23
 

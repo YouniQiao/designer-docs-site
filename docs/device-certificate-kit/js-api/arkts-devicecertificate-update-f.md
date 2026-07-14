@@ -12,9 +12,7 @@ import { certificateManager } from '@kit.DeviceCertificateKit';
 function update(handle: Uint8Array, data: Uint8Array, callback: AsyncCallback<void>): void
 ```
 
-Updates the data for the signing or signature verification operation. It needs to be invoked after the init
-operation to transfer the data to be signed and verified. This API uses an asynchronous callback to
-return the result.
+Updates the data for the signing or signature verification operation. It needs to be invoked after the init operation to transfer the data to be signed and verified. This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 

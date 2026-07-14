@@ -6,9 +6,7 @@
 function getAbilityLabelSync(bundleName: string, moduleName: string, abilityName: string): string
 ```
 
-以同步的方法获取指定bundleName、moduleName和abilityName的label。
-
-获取调用方自身的信息时不需要权限。
+以同步的方法获取指定bundleName、moduleName和abilityName的label。 获取调用方自身的信息时不需要权限。
 
 **起始版本：** 10
 

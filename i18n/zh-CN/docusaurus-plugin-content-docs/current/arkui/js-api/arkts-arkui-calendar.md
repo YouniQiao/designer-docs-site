@@ -2,7 +2,6 @@
 
 Calendar Interface
 
-
 ## Calendar
 
 ```TypeScript

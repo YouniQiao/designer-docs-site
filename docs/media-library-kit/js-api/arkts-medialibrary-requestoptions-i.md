@@ -1,6 +1,6 @@
 # RequestOptions
 
-Options to request media asset
+Represents request options.
 
 **Since:** 11
 
@@ -18,7 +18,7 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 compatibleMode?: CompatibleMode
 ```
 
-Indicates the compatible mode
+HDR video transcoding policy, which can be **FAST_ORIGINAL_FORMAT_MODE** (maintaining the original HDR format) or **COMPATIBLE_FORMAT_MODE** (converting HDR content to SDR format). The default value is **FAST_ORIGINAL_FORMAT_MODE**.
 
 **Type:** CompatibleMode
 
@@ -32,7 +32,7 @@ Indicates the compatible mode
 deliveryMode: DeliveryMode
 ```
 
-Indicates the delivery mode
+Delivery mode of the requested asset. The value can be **FAST_MODE**, **HIGH_QUALITY_MODE**, or **BALANCE_MODE**.
 
 **Type:** DeliveryMode
 
@@ -46,7 +46,7 @@ Indicates the delivery mode
 mediaAssetProgressHandler?: MediaAssetProgressHandler
 ```
 
-data handler used to notify the progress of required media asset data
+Callback used to return the HDR-to-SDR conversion progress.
 
 **Type:** MediaAssetProgressHandler
 

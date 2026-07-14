@@ -12,9 +12,7 @@ Enumerates the color space types.
 UNKNOWN = 0
 ```
 
-Unknown type.
-
-This API can be used in atomic services since API version 12.
+Unknown type. This API can be used in atomic services since API version 12.
 
 **Since:** 9
 
@@ -28,13 +26,7 @@ This API can be used in atomic services since API version 12.
 ADOBE_RGB_1998 = 1
 ```
 
-Adobe RGB (1998).
-
-The conversion function is of the Adobe RGB (1998) type.
-
-The encoding range is of the Full type.
-
-This API can be used in atomic services since API version 12.
+Adobe RGB (1998). The conversion function is of the Adobe RGB (1998) type. The encoding range is of the Full type. This API can be used in atomic services since API version 12.
 
 **Since:** 9
 
@@ -48,13 +40,7 @@ This API can be used in atomic services since API version 12.
 DCI_P3 = 2
 ```
 
-DCI-P3.
-
-The conversion function is of the Gamma 2.6 type.
-
-The encoding range is of the Full type.
-
-This API can be used in atomic services since API version 12.
+DCI-P3. The conversion function is of the Gamma 2.6 type. The encoding range is of the Full type. This API can be used in atomic services since API version 12.
 
 **Since:** 9
 
@@ -68,13 +54,7 @@ This API can be used in atomic services since API version 12.
 DISPLAY_P3 = 3
 ```
 
-DCI-P3.
-
-The conversion function is of the Gamma 2.6 type.
-
-The encoding range is of the Full type.
-
-This API can be used in atomic services since API version 12.
+DCI-P3. The conversion function is of the Gamma 2.6 type. The encoding range is of the Full type. This API can be used in atomic services since API version 12.
 
 **Since:** 9
 
@@ -88,15 +68,7 @@ This API can be used in atomic services since API version 12.
 SRGB = 4
 ```
 
-SRGB.
-
-The conversion function is of the SRGB type.
-
-The encoding range is of the Full type.
-
-This is the default color space type.
-
-This API can be used in atomic services since API version 12.
+SRGB. The conversion function is of the SRGB type. The encoding range is of the Full type. This is the default color space type. This API can be used in atomic services since API version 12.
 
 **Since:** 9
 
@@ -110,13 +82,7 @@ This API can be used in atomic services since API version 12.
 BT709 = 6
 ```
 
-BT709.
-
-The conversion function is of the BT709 type.
-
-The encoding range is of the Full type.
-
-This API can be used in atomic services since API version 12.
+BT709. The conversion function is of the BT709 type. The encoding range is of the Full type. This API can be used in atomic services since API version 12.
 
 **Since:** 11
 
@@ -130,13 +96,7 @@ This API can be used in atomic services since API version 12.
 BT601_EBU = 7
 ```
 
-BT601_P.
-
-The conversion function is of the BT709 type.
-
-The encoding range is of the Full type.
-
-This API can be used in atomic services since API version 12.
+BT601_P. The conversion function is of the BT709 type. The encoding range is of the Full type. This API can be used in atomic services since API version 12.
 
 **Since:** 11
 
@@ -150,13 +110,7 @@ This API can be used in atomic services since API version 12.
 BT601_SMPTE_C = 8
 ```
 
-BT601_N.
-
-The conversion function is of the BT709 type.
-
-The encoding range is of the Full type.
-
-This API can be used in atomic services since API version 12.
+BT601_N. The conversion function is of the BT709 type. The encoding range is of the Full type. This API can be used in atomic services since API version 12.
 
 **Since:** 11
 
@@ -170,13 +124,7 @@ This API can be used in atomic services since API version 12.
 BT2020_HLG = 9
 ```
 
-BT2020.
-
-The conversion function is of the HLG type.
-
-The encoding range is of the Full type.
-
-This API can be used in atomic services since API version 12.
+BT2020. The conversion function is of the HLG type. The encoding range is of the Full type. This API can be used in atomic services since API version 12.
 
 **Since:** 11
 
@@ -190,13 +138,7 @@ This API can be used in atomic services since API version 12.
 BT2020_PQ = 10
 ```
 
-BT2020.
-
-The conversion function is of the PQ type.
-
-The encoding range is of the Full type.
-
-This API can be used in atomic services since API version 12.
+BT2020. The conversion function is of the PQ type. The encoding range is of the Full type. This API can be used in atomic services since API version 12.
 
 **Since:** 11
 
@@ -210,13 +152,7 @@ This API can be used in atomic services since API version 12.
 P3_HLG = 11
 ```
 
-Display P3.
-
-The conversion function is of the HLG type.
-
-The encoding range is of the Full type.
-
-This API can be used in atomic services since API version 12.
+Display P3. The conversion function is of the HLG type. The encoding range is of the Full type. This API can be used in atomic services since API version 12.
 
 **Since:** 11
 
@@ -230,13 +166,7 @@ This API can be used in atomic services since API version 12.
 P3_PQ = 12
 ```
 
-Display P3.
-
-The conversion function is of the PQ type.
-
-The encoding range is of the Full type.
-
-This API can be used in atomic services since API version 12.
+Display P3. The conversion function is of the PQ type. The encoding range is of the Full type. This API can be used in atomic services since API version 12.
 
 **Since:** 11
 
@@ -250,13 +180,7 @@ This API can be used in atomic services since API version 12.
 ADOBE_RGB_1998_LIMIT = 13
 ```
 
-Adobe RGB (1998).
-
-The conversion function is of the Adobe RGB (1998) type.
-
-The encoding range is of the Limit type.
-
-This API can be used in atomic services since API version 12.
+Adobe RGB (1998). The conversion function is of the Adobe RGB (1998) type. The encoding range is of the Limit type. This API can be used in atomic services since API version 12.
 
 **Since:** 11
 
@@ -270,13 +194,7 @@ This API can be used in atomic services since API version 12.
 DISPLAY_P3_LIMIT = 14
 ```
 
-Display P3.
-
-The conversion function is of the SRGB type.
-
-The encoding range is of the Limit type.
-
-This API can be used in atomic services since API version 12.
+Display P3. The conversion function is of the SRGB type. The encoding range is of the Limit type. This API can be used in atomic services since API version 12.
 
 **Since:** 11
 
@@ -290,13 +208,7 @@ This API can be used in atomic services since API version 12.
 SRGB_LIMIT = 15
 ```
 
-SRGB.
-
-The conversion function is of the SRGB type.
-
-The encoding range is of the Limit type.
-
-This API can be used in atomic services since API version 12.
+SRGB. The conversion function is of the SRGB type. The encoding range is of the Limit type. This API can be used in atomic services since API version 12.
 
 **Since:** 11
 
@@ -310,13 +222,7 @@ This API can be used in atomic services since API version 12.
 BT709_LIMIT = 16
 ```
 
-BT709.
-
-The conversion function is of the BT709 type.
-
-The encoding range is of the Limit type.
-
-This API can be used in atomic services since API version 12.
+BT709. The conversion function is of the BT709 type. The encoding range is of the Limit type. This API can be used in atomic services since API version 12.
 
 **Since:** 11
 
@@ -330,13 +236,7 @@ This API can be used in atomic services since API version 12.
 BT601_EBU_LIMIT = 17
 ```
 
-BT601_P.
-
-The conversion function is of the BT709 type.
-
-The encoding range is of the Limit type.
-
-This API can be used in atomic services since API version 12.
+BT601_P. The conversion function is of the BT709 type. The encoding range is of the Limit type. This API can be used in atomic services since API version 12.
 
 **Since:** 11
 
@@ -350,13 +250,7 @@ This API can be used in atomic services since API version 12.
 BT601_SMPTE_C_LIMIT = 18
 ```
 
-BT601_N.
-
-The conversion function is of the BT709 type.
-
-The encoding range is of the Limit type.
-
-This API can be used in atomic services since API version 12.
+BT601_N. The conversion function is of the BT709 type. The encoding range is of the Limit type. This API can be used in atomic services since API version 12.
 
 **Since:** 11
 
@@ -370,13 +264,7 @@ This API can be used in atomic services since API version 12.
 BT2020_HLG_LIMIT = 19
 ```
 
-BT2020.
-
-The conversion function is of the HLG type.
-
-The encoding range is of the Limit type.
-
-This API can be used in atomic services since API version 12.
+BT2020. The conversion function is of the HLG type. The encoding range is of the Limit type. This API can be used in atomic services since API version 12.
 
 **Since:** 11
 
@@ -390,13 +278,7 @@ This API can be used in atomic services since API version 12.
 BT2020_PQ_LIMIT = 20
 ```
 
-BT2020.
-
-The conversion function is of the PQ type.
-
-The encoding range is of the Limit type.
-
-This API can be used in atomic services since API version 12.
+BT2020. The conversion function is of the PQ type. The encoding range is of the Limit type. This API can be used in atomic services since API version 12.
 
 **Since:** 11
 
@@ -410,13 +292,7 @@ This API can be used in atomic services since API version 12.
 P3_HLG_LIMIT = 21
 ```
 
-Display P3.
-
-The conversion function is of the HLG type.
-
-The encoding range is of the Limit type.
-
-This API can be used in atomic services since API version 12.
+Display P3. The conversion function is of the HLG type. The encoding range is of the Limit type. This API can be used in atomic services since API version 12.
 
 **Since:** 11
 
@@ -430,13 +306,7 @@ This API can be used in atomic services since API version 12.
 P3_PQ_LIMIT = 22
 ```
 
-Display P3.
-
-The conversion function is of the PQ type.
-
-The encoding range is of the Limit type.
-
-This API can be used in atomic services since API version 12.
+Display P3. The conversion function is of the PQ type. The encoding range is of the Limit type. This API can be used in atomic services since API version 12.
 
 **Since:** 11
 
@@ -450,11 +320,7 @@ This API can be used in atomic services since API version 12.
 LINEAR_P3 = 23
 ```
 
-Display P3.
-
-The conversion function is of the Linear type.
-
-This API can be used in atomic services since API version 12.
+Display P3. The conversion function is of the Linear type. This API can be used in atomic services since API version 12.
 
 **Since:** 11
 
@@ -468,11 +334,7 @@ This API can be used in atomic services since API version 12.
 LINEAR_SRGB = 24
 ```
 
-SRGB.
-
-The conversion function is of the Linear type.
-
-This API can be used in atomic services since API version 12.
+SRGB. The conversion function is of the Linear type. This API can be used in atomic services since API version 12.
 
 **Since:** 11
 
@@ -486,13 +348,7 @@ This API can be used in atomic services since API version 12.
 LINEAR_BT709 = LINEAR_SRGB
 ```
 
-Same as that of LINEAR_SRGB.
-
-BT709.
-
-The conversion function is of the Linear type.
-
-This API can be used in atomic services since API version 12.
+Same as that of LINEAR_SRGB. BT709. The conversion function is of the Linear type. This API can be used in atomic services since API version 12.
 
 **Since:** 11
 
@@ -506,11 +362,7 @@ This API can be used in atomic services since API version 12.
 LINEAR_BT2020 = 25
 ```
 
-BT2020.
-
-The conversion function is of the Linear type.
-
-This API can be used in atomic services since API version 12.
+BT2020. The conversion function is of the Linear type. This API can be used in atomic services since API version 12.
 
 **Since:** 11
 
@@ -524,15 +376,7 @@ This API can be used in atomic services since API version 12.
 DISPLAY_SRGB = SRGB
 ```
 
-Same as that of SRGB.
-
-SRGB.
-
-The conversion function is of the SRGB type.
-
-The encoding range is of the Full type.
-
-This API can be used in atomic services since API version 12.
+Same as that of SRGB. SRGB. The conversion function is of the SRGB type. The encoding range is of the Full type. This API can be used in atomic services since API version 12.
 
 **Since:** 11
 
@@ -546,15 +390,7 @@ This API can be used in atomic services since API version 12.
 DISPLAY_P3_SRGB = DISPLAY_P3
 ```
 
-Same as that of DISPLAY_P3.
-
-Display P3.
-
-The conversion function is of the SRGB type.
-
-The encoding range is of the Full type.
-
-This API can be used in atomic services since API version 12.
+Same as that of DISPLAY_P3. Display P3. The conversion function is of the SRGB type. The encoding range is of the Full type. This API can be used in atomic services since API version 12.
 
 **Since:** 11
 
@@ -568,13 +404,7 @@ This API can be used in atomic services since API version 12.
 DISPLAY_P3_HLG = P3_HLG
 ```
 
-Display P3.
-
-The conversion function is of the HLG type.
-
-The encoding range is of the Full type.
-
-This API can be used in atomic services since API version 12.
+Display P3. The conversion function is of the HLG type. The encoding range is of the Full type. This API can be used in atomic services since API version 12.
 
 **Since:** 11
 
@@ -588,15 +418,7 @@ This API can be used in atomic services since API version 12.
 DISPLAY_P3_PQ = P3_PQ
 ```
 
-Same as that of P3_PQ.
-
-Display P3.
-
-The conversion function is of the PQ type.
-
-The encoding range is of the Full type.
-
-This API can be used in atomic services since API version 12.
+Same as that of P3_PQ. Display P3. The conversion function is of the PQ type. The encoding range is of the Full type. This API can be used in atomic services since API version 12.
 
 **Since:** 11
 
@@ -610,9 +432,7 @@ This API can be used in atomic services since API version 12.
 H_LOG = 26
 ```
 
-BT2020.
-
-The conversion function is of the LOG type.
+BT2020. The conversion function is of the LOG type.
 
 **Since:** 18
 
@@ -624,11 +444,7 @@ The conversion function is of the LOG type.
 DISPLAY_BT2020_SRGB = 27
 ```
 
-DISPLAY BT2020.
-
-The conversion function is of the SRGB type.
-
-The encoding range is of the Full type.
+DISPLAY BT2020. The conversion function is of the SRGB type. The encoding range is of the Full type.
 
 **Since:** 20
 
@@ -640,9 +456,7 @@ The encoding range is of the Full type.
 CUSTOM = 5
 ```
 
-Custom type.
-
-This API can be used in atomic services since API version 12.
+Custom type. This API can be used in atomic services since API version 12.
 
 **Since:** 9
 

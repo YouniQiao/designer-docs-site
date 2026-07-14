@@ -1,7 +1,6 @@
 # ColorPicker
 
-取色类，用于从一张图像数据中获取它的主要颜色。在调用ColorPicker的方法前，需要先通过
-[createColorPicker](arkts-arkgraphics2d-createcolorpicker-f.md#createcolorpicker-1)创建一个ColorPicker实例。
+取色类，用于从一张图像数据中获取它的主要颜色。在调用ColorPicker的方法前，需要先通过 [createColorPicker](arkts-arkgraphics2d-createcolorpicker-f.md#createcolorpicker-1)创建一个ColorPicker实例。
 
 **起始版本：** 9
 
@@ -45,7 +44,7 @@ let opts: image.InitializationOptions = {
     height: 4,
     width: 6
   }
-}
+};
 image.createPixelMap(color, opts).then((pixelMap) => {
   effectKit.createColorPicker(pixelMap, (error, colorPicker) => {
     if (error) {
@@ -56,7 +55,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
       console.info('The color light degree of the image is ' + pictureLightDegree);
     }
   })
-})
+});
 
 ```
 
@@ -102,7 +101,7 @@ let opts: image.InitializationOptions = {
     height: 4,
     width: 6
   }
-}
+};
 image.createPixelMap(color, opts).then((pixelMap) => {
   effectKit.createColorPicker(pixelMap, (error, colorPicker) => {
     if (error) {
@@ -113,7 +112,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
       console.info('Get proportion of fully transparent pixels: ' + percentage);
     }
   })
-})
+});
 
 ```
 
@@ -159,7 +158,7 @@ let opts: image.InitializationOptions = {
     height: 4,
     width: 6
   }
-}
+};
 image.createPixelMap(color, opts).then((pixelMap) => {
   effectKit.createColorPicker(pixelMap, (error, colorPicker) => {
     if (error) {
@@ -170,7 +169,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
       console.info('The complexity degree of the image is ' + complexityDegree);
     }
   })
-})
+});
 
 ```
 
@@ -223,7 +222,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
       console.info('get deepen immersion color =' + color);
     }
   })
-})
+});
 
 ```
 
@@ -276,7 +275,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
       console.info('get immersive background color =' + color);
     }
   })
-})
+});
 
 ```
 
@@ -329,7 +328,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
       console.info('get immersive foreground color =' + color);
     }
   })
-})
+});
 
 ```
 
@@ -382,7 +381,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
       console.info('get Morandi shadow color =' + color);
     }
   })
-})
+});
 
 ```
 
@@ -392,9 +391,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 getReverseColor(): Color
 ```
 
-基于图像亮度判别结果生成反向颜色，并将结果写入[Color](arkts-arkgraphics2d-color-i.md)里。根据
-[discriminatePictureLightDegree](arkts-arkgraphics2d-colorpicker-i-sys.md#discriminatepicturelightdegree-1)接口获取的图片明亮类型得到一个反色，
-仅极亮色图片（EXTREMELY_LIGHT_COLOR_PICTURE）类型返回黑色，其他类型返回白色。用于界面主题或对比度计算。
+基于图像亮度判别结果生成反向颜色，并将结果写入[Color](arkts-arkgraphics2d-color-i.md)里。根据 [discriminatePictureLightDegree](arkts-arkgraphics2d-colorpicker-i-sys.md#discriminatepicturelightdegree-1)接口获取的图片明亮类型得到一个反色， 仅极亮色图片（EXTREMELY_LIGHT_COLOR_PICTURE）类型返回黑色，其他类型返回白色。用于界面主题或对比度计算。
 
 **起始版本：** 26.0.0
 
@@ -437,7 +434,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
       console.info('get reverse color =' + color);
     }
   })
-})
+});
 
 ```
 
@@ -483,7 +480,7 @@ let opts: image.InitializationOptions = {
     height: 4,
     width: 6
   }
-}
+};
 image.createPixelMap(color, opts).then((pixelMap) => {
   effectKit.createColorPicker(pixelMap, (error, colorPicker) => {
     if (error) {
@@ -494,7 +491,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
       console.info('The shade degree of the image is ' + shadeDegree);
     }
   })
-})
+});
 
 ```
 
@@ -546,7 +543,7 @@ let opts: image.InitializationOptions = {
     height: 4,
     width: 6
   }
-}
+};
 image.createPixelMap(color, opts).then((pixelMap) => {
   effectKit.createColorPicker(pixelMap, (error, colorPicker) => {
     if (error) {
@@ -559,7 +556,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
       })
     }
   })
-})
+});
 
 ```
 

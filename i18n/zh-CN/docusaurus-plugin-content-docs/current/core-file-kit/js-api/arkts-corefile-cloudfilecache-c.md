@@ -199,9 +199,7 @@ try {
 off(event: 'batchDownload', callback?: Callback<MultiDownloadProgress>): void
 ```
 
-云盘文件缓存对象移除由
-[on](arkts-corefile-cloudfilecache-c.md#on-2)接口添加的云文
-件批量缓存过程事件的监听。
+云盘文件缓存对象移除由 [on](arkts-corefile-cloudfilecache-c.md#on-2)接口添加的云文 件批量缓存过程事件的监听。
 
 **起始版本：** 20
 
@@ -452,9 +450,7 @@ fileCache.start(uri, (err: BusinessError) => {
 startBatch(uris: Array<string>, fileType?: DownloadFileType): Promise<number>
 ```
 
-启动云文件批量缓存。使用Promise异步回调。
-
-不同的批量缓存任务可以通过接口返回的任务ID区分。
+启动云文件批量缓存。使用Promise异步回调。 不同的批量缓存任务可以通过接口返回的任务ID区分。
 
 **起始版本：** 20
 
@@ -513,10 +509,7 @@ fileCache.startBatch(uriList, cloudSync.DownloadFileType.CONTENT).then((download
 stop(uri: string, needClean?: boolean): Promise<void>
 ```
 
-Stops downloading a file from the Drive Kit to the local device. This API uses a promise to return the result.
-
-When **stop()** is called, the current file download process terminates, and downloaded files are retained by
-default. You can call **start()** to resume the download.
+Stops downloading a file from the Drive Kit to the local device. This API uses a promise to return the result. When **stop()** is called, the current file download process terminates, and downloaded files are retained by default. You can call **start()** to resume the download.
 
 **起始版本：** 12
 
@@ -568,9 +561,7 @@ fileCache.stop(uri, true).then(() => {
 stop(uri: string, callback: AsyncCallback<void>): void
 ```
 
-异步方法停止云盘文件缓存。使用callback异步回调。
-
-调用stop接口，当前文件下载流程会终止，不删除缓存文件，再次调用start接口重新启动下载。
+异步方法停止云盘文件缓存。使用callback异步回调。 调用stop接口，当前文件下载流程会终止，不删除缓存文件，再次调用start接口重新启动下载。
 
 **起始版本：** 11
 
@@ -618,9 +609,7 @@ fileCache.stop(uri, (err: BusinessError) => {
 stopBatch(downloadId: number, needClean?: boolean): Promise<void>
 ```
 
-停止由[startBatch](arkts-corefile-cloudfilecache-c.md#startbatch-1)启动的云文件批量缓存任务。使用Promise异步回调。
-
-调用stopBatch接口会终止当前文件批量缓存流程，未下载完成的缓存文件是否删除由needClean参数决定。
+停止由[startBatch](arkts-corefile-cloudfilecache-c.md#startbatch-1)启动的云文件批量缓存任务。使用Promise异步回调。 调用stopBatch接口会终止当前文件批量缓存流程，未下载完成的缓存文件是否删除由needClean参数决定。
 
 **起始版本：** 20
 

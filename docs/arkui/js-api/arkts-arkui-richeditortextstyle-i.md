@@ -12,15 +12,7 @@ Provides the text style information.
 decoration?: DecorationStyleInterface
 ```
 
-Style, color, and thickness of the text decoration.
-
-Default value of **type**: **TextDecorationType.None**
-
-Default value of **color**: same as the font color
-
-Default value of **style**: **TextDecorationStyle.SOLID**
-
-Default value of **thicknessScale**: **1.0**
+Style, color, and thickness of the text decoration. Default value of **type**: **TextDecorationType.None** Default value of **color**: same as the font color Default value of **style**: **TextDecorationStyle.SOLID** Default value of **thicknessScale**: **1.0**
 
 **Type:** DecorationStyleInterface
 
@@ -146,12 +138,7 @@ Font weight.
 halfLeading?: boolean
 ```
 
-Whether half leading is enabled.
-
-Whether half leading is enabled. Half leading is the leading split in half and applied equally to the top and
-bottom edges. The value **true** means that half leading is enabled, and **false** means the opposite.
-
-Default value: **false**
+Whether half leading is enabled. Whether half leading is enabled. Half leading is the leading split in half and applied equally to the top and bottom edges. The value **true** means that half leading is enabled, and **false** means the opposite. Default value: **false**
 
 **Type:** boolean
 
@@ -205,11 +192,7 @@ Line height. The default unit is fp.
 strokeColor?: ResourceColor
 ```
 
-Text stroke color.
-
-Default value: Follow the font color.
-
-Sets the font color for abnormal values.
+Text stroke color. Default value: Follow the font color. Sets the font color for abnormal values.
 
 **Type:** ResourceColor
 
@@ -245,17 +228,7 @@ The stroke join style of the text.
 strokeWidth?: LengthMetrics | number
 ```
 
-Text stroke width. If the unit value of LengthMetrics is [PERCENT](../arkts-apis/arkts-arkui-lengthunit-e.md), the
-current setting does not take effect and is processed as 0.
-
-If the value is less than 0, the value is an entity word. If the value is greater than 0, the value is an outline
-word. If the value is equal to 0, there is no stroke effect.
-
-The default value is 0vp.
-
-Unit: LengthMetrics is followed by LengthMetrics when the type is LengthMetrics, and vp when the type is number.
-
-Value range: (-∞, +∞)
+Text stroke width. If the unit value of LengthMetrics is [PERCENT](../arkts-apis/arkts-arkui-lengthunit-e.md), the current setting does not take effect and is processed as 0. If the value is less than 0, the value is an entity word. If the value is greater than 0, the value is an outline word. If the value is equal to 0, there is no stroke effect. The default value is 0vp. Unit: LengthMetrics is followed by LengthMetrics when the type is LengthMetrics, and vp when the type is number. Value range: (-∞, +∞)
 
 **Type:** LengthMetrics | number
 
@@ -273,17 +246,7 @@ Value range: (-∞, +∞)
 textBackgroundStyle?: TextBackgroundStyle
 ```
 
-Text background style.
-
-Default value:
-
-{
-
-color: Color.Transparent,
-
-radius: 0
-
-}
+Text background style. Default value: { color: Color.Transparent, radius: 0 }
 
 **Type:** TextBackgroundStyle
 
@@ -301,11 +264,7 @@ radius: 0
 textShadow?: ShadowOptions | Array<ShadowOptions>
 ```
 
-Text shadow. It supports input parameters in an array to implement multiple text shadows.
-
-**NOTE**
-
-Only the shadow blur radius, color, and offset can be set. Smart color picking is not supported.
+Text shadow. It supports input parameters in an array to implement multiple text shadows. **NOTE** Only the shadow blur radius, color, and offset can be set. Smart color picking is not supported.
 
 **Type:** ShadowOptions | Array<ShadowOptions>
 

@@ -1,10 +1,6 @@
 # NodeAdapter
 
-NodeAdapter提供FrameNode的数据懒加载能力，通过[LazyForEach](../arkts-components/arkts-arkui-lazyforeach.md)实现接口功能。
-
-> **说明：**
->
-> 入参不能为负数，入参为负数时不做处理。
+NodeAdapter提供FrameNode的数据懒加载能力，通过[LazyForEach](../arkts-components/arkts-arkui-lazyforeach.md)实现接口功能。 > **说明：** > > 入参不能为负数，入参为负数时不做处理。
 
 **起始版本：** 12
 
@@ -16,11 +12,7 @@ NodeAdapter提供FrameNode的数据懒加载能力，通过[LazyForEach](../arkt
 static attachNodeAdapter(adapter: NodeAdapter, node: FrameNode): boolean
 ```
 
-给FrameNode绑定一个NodeAdapter。一个节点只能绑定一个NodeAdapter。已经绑定NodeAdapter的再次绑定会失败并返回false。
-
-> **说明：**
->
-> 支持绑定的组件：Column、Row、Stack、GridRow、Flex、Swiper、RelativeContainer、List、ListItemGroup、WaterFlow、Grid。
+给FrameNode绑定一个NodeAdapter。一个节点只能绑定一个NodeAdapter。已经绑定NodeAdapter的再次绑定会失败并返回false。 > **说明：** > > 支持绑定的组件：Column、Row、Stack、GridRow、Flex、Swiper、RelativeContainer、List、ListItemGroup、WaterFlow、Grid。
 
 **起始版本：** 12
 
@@ -103,8 +95,7 @@ dispose(): void
 getAllAvailableItems(): Array<FrameNode>
 ```
 
-获取所有有效数据。有效节点数据包括显示在屏幕上的节点以及预加载的节点。其中预加载节点的数量可依照LazyForEach的
-[使用限制](../../../../ui/rendering-control/arkts-rendering-control-lazyforeach.md#使用限制)，调整父容器的cachedCount属性进行设置。
+获取所有有效数据。有效节点数据包括显示在屏幕上的节点以及预加载的节点。其中预加载节点的数量可依照LazyForEach的 [使用限制](../../../../ui/rendering-control/arkts-rendering-control-lazyforeach.md#使用限制)，调整父容器的cachedCount属性进行设置。
 
 **起始版本：** 12
 
@@ -149,8 +140,7 @@ insertItem(start: number, count: number): void
 isDisposed(): boolean
 ```
 
-查询当前FrameNode对象是否已解除与后端实体节点的引用关系。前端节点均绑定有相应的后端实体节点，当节点调用dispose接口解除绑定后，再次调用接口可能会出现crash、返回默认值的情况。由于业务需求，可能存在节点在
-dispose后仍被调用接口的情况。为此，提供此接口以供开发者在操作节点前检查其有效性，避免潜在风险。
+查询当前FrameNode对象是否已解除与后端实体节点的引用关系。前端节点均绑定有相应的后端实体节点，当节点调用dispose接口解除绑定后，再次调用接口可能会出现crash、返回默认值的情况。由于业务需求，可能存在节点在 dispose后仍被调用接口的情况。为此，提供此接口以供开发者在操作节点前检查其有效性，避免潜在风险。
 
 **起始版本：** 20
 

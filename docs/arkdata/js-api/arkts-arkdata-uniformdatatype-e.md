@@ -1,9 +1,6 @@
 # UniformDataType
 
-Enumerates the uniform data types. Some data types are related. For example, the JPEG type belongs to the IMAGE
-type. For more preset data types, see [Preset UTD List].
-
-The following table lists the common uniform data types.
+Enumerates the uniform data types. Some data types are related. For example, the JPEG type belongs to the IMAGE type. For more preset data types, see [Preset UTD List]. The following table lists the common uniform data types.
 
 **Since:** 10
 
@@ -15,9 +12,7 @@ The following table lists the common uniform data types.
 ENTITY = 'general.entity'
 ```
 
-Generic physical storage type.
-
-This type is uncategorized.
+Generic physical storage type. This type is uncategorized.
 
 **Since:** 11
 
@@ -31,9 +26,7 @@ This type is uncategorized.
 OBJECT = 'general.object'
 ```
 
-Generic logical content type.
-
-This type is uncategorized.
+Generic logical content type. This type is uncategorized.
 
 **Since:** 11
 
@@ -47,9 +40,7 @@ This type is uncategorized.
 COMPOSITE_OBJECT = 'general.composite-object'
 ```
 
-Generic composite content type. For example, a PDF file that contains text and image.
-
-This type belongs to **OBJECT**.
+Generic composite content type. For example, a PDF file that contains text and image. This type belongs to **OBJECT**.
 
 **Since:** 11
 
@@ -63,9 +54,7 @@ This type belongs to **OBJECT**.
 TEXT = 'general.text'
 ```
 
-Generic text type.
-
-This type belongs to **OBJECT**.
+Generic text type. This type belongs to **OBJECT**.
 
 **Since:** 10
 
@@ -81,9 +70,7 @@ This type belongs to **OBJECT**.
 PLAIN_TEXT = 'general.plain-text'
 ```
 
-Text without specific encoding or identifier.
-
-This type belongs to **TEXT**.
+Text without specific encoding or identifier. This type belongs to **TEXT**.
 
 **Since:** 10
 
@@ -99,9 +86,7 @@ This type belongs to **TEXT**.
 HTML = 'general.html'
 ```
 
-HTML.
-
-This type belongs to **TEXT**.
+HTML. This type belongs to **TEXT**.
 
 **Since:** 10
 
@@ -117,9 +102,7 @@ This type belongs to **TEXT**.
 HYPERLINK = 'general.hyperlink'
 ```
 
-Hyperlink.
-
-This type belongs to **TEXT**.
+Hyperlink. This type belongs to **TEXT**.
 
 **Since:** 10
 
@@ -135,9 +118,7 @@ This type belongs to **TEXT**.
 XML = 'general.xml'
 ```
 
-XML.
-
-This type belongs to **TEXT**.
+XML. This type belongs to **TEXT**.
 
 **Since:** 11
 
@@ -151,9 +132,7 @@ This type belongs to **TEXT**.
 XHTML = 'general.xhtml'
 ```
 
-XHTML.
-
-This type belongs to **XML**.
+XHTML. This type belongs to **XML**.
 
 **Since:** 12
 
@@ -167,9 +146,7 @@ This type belongs to **XML**.
 RSS = 'general.rss'
 ```
 
-RSS.
-
-This type belongs to **XML**.
+RSS. This type belongs to **XML**.
 
 **Since:** 12
 
@@ -183,9 +160,7 @@ This type belongs to **XML**.
 SMIL = 'com.real.smil'
 ```
 
-Synchronized Multimedia Integration Language (SMIL).
-
-This type belongs to **XML**.
+Synchronized Multimedia Integration Language (SMIL). This type belongs to **XML**.
 
 **Since:** 12
 
@@ -199,9 +174,7 @@ This type belongs to **XML**.
 SOURCE_CODE = 'general.source-code'
 ```
 
-Generic source code type.
-
-This type belongs to **TEXT**.
+Generic source code type. This type belongs to **TEXT**.
 
 **Since:** 11
 
@@ -215,9 +188,7 @@ This type belongs to **TEXT**.
 SCRIPT = 'general.script'
 ```
 
-Source code in any scripting language.
-
-This type belongs to **SOURCE_CODE**.
+Source code in any scripting language. This type belongs to **SOURCE_CODE**.
 
 **Since:** 11
 
@@ -231,9 +202,7 @@ This type belongs to **SOURCE_CODE**.
 SHELL_SCRIPT = 'general.shell-script'
 ```
 
-Shell script.
-
-This type belongs to **SCRIPT**.
+Shell script. This type belongs to **SCRIPT**.
 
 **Since:** 11
 
@@ -247,9 +216,7 @@ This type belongs to **SCRIPT**.
 CSH_SCRIPT = 'general.csh-script'
 ```
 
-C shell script.
-
-This type belongs to **SHELL_SCRIPT**.
+C shell script. This type belongs to **SHELL_SCRIPT**.
 
 **Since:** 11
 
@@ -263,9 +230,7 @@ This type belongs to **SHELL_SCRIPT**.
 PERL_SCRIPT = 'general.perl-script'
 ```
 
-Perl script.
-
-This type belongs to **SHELL_SCRIPT**.
+Perl script. This type belongs to **SHELL_SCRIPT**.
 
 **Since:** 11
 
@@ -279,9 +244,7 @@ This type belongs to **SHELL_SCRIPT**.
 PHP_SCRIPT = 'general.php-script'
 ```
 
-PHP script.
-
-This type belongs to **SHELL_SCRIPT**.
+PHP script. This type belongs to **SHELL_SCRIPT**.
 
 **Since:** 11
 
@@ -295,9 +258,7 @@ This type belongs to **SHELL_SCRIPT**.
 PYTHON_SCRIPT = 'general.python-script'
 ```
 
-Python script.
-
-This type belongs to **SHELL_SCRIPT**.
+Python script. This type belongs to **SHELL_SCRIPT**.
 
 **Since:** 11
 
@@ -311,9 +272,7 @@ This type belongs to **SHELL_SCRIPT**.
 RUBY_SCRIPT = 'general.ruby-script'
 ```
 
-Ruby script.
-
-This type belongs to **SHELL_SCRIPT**.
+Ruby script. This type belongs to **SHELL_SCRIPT**.
 
 **Since:** 11
 
@@ -327,9 +286,7 @@ This type belongs to **SHELL_SCRIPT**.
 TYPE_SCRIPT = 'general.type-script'
 ```
 
-TypeScript source code.
-
-This type belongs to **SOURCE_CODE**.
+TypeScript source code. This type belongs to **SOURCE_CODE**.
 
 **Since:** 11
 
@@ -343,9 +300,7 @@ This type belongs to **SOURCE_CODE**.
 JAVA_SCRIPT = 'general.java-script'
 ```
 
-JavaScript source code.
-
-This type belongs to **SOURCE_CODE**.
+JavaScript source code. This type belongs to **SOURCE_CODE**.
 
 **Since:** 11
 
@@ -359,9 +314,7 @@ This type belongs to **SOURCE_CODE**.
 CSS = 'general.css'
 ```
 
-CSS.
-
-This type belongs to **SCRIPT**.
+CSS. This type belongs to **SCRIPT**.
 
 **Since:** 12
 
@@ -375,9 +328,7 @@ This type belongs to **SCRIPT**.
 C_HEADER = 'general.c-header'
 ```
 
-Header file in C.
-
-This type belongs to **SOURCE_CODE**.
+Header file in C. This type belongs to **SOURCE_CODE**.
 
 **Since:** 11
 
@@ -391,9 +342,7 @@ This type belongs to **SOURCE_CODE**.
 C_SOURCE = 'general.c-source'
 ```
 
-Source code in C.
-
-This type belongs to **SOURCE_CODE**.
+Source code in C. This type belongs to **SOURCE_CODE**.
 
 **Since:** 11
 
@@ -407,9 +356,7 @@ This type belongs to **SOURCE_CODE**.
 C_PLUS_PLUS_HEADER = 'general.c-plus-plus-header'
 ```
 
-Header file in C++.
-
-This type belongs to **SOURCE_CODE**.
+Header file in C++. This type belongs to **SOURCE_CODE**.
 
 **Since:** 11
 
@@ -423,9 +370,7 @@ This type belongs to **SOURCE_CODE**.
 C_PLUS_PLUS_SOURCE = 'general.c-plus-plus-source'
 ```
 
-Source code in C++.
-
-This type belongs to **SOURCE_CODE**.
+Source code in C++. This type belongs to **SOURCE_CODE**.
 
 **Since:** 11
 
@@ -439,9 +384,7 @@ This type belongs to **SOURCE_CODE**.
 JAVA_SOURCE = 'general.java-source'
 ```
 
-Source code in Java.
-
-This type belongs to **SOURCE_CODE**.
+Source code in Java. This type belongs to **SOURCE_CODE**.
 
 **Since:** 11
 
@@ -455,9 +398,7 @@ This type belongs to **SOURCE_CODE**.
 TEX = 'general.tex'
 ```
 
-Source code in TEX format.
-
-This type belongs to **SOURCE_CODE**.
+Source code in TEX format. This type belongs to **SOURCE_CODE**.
 
 **Since:** 12
 
@@ -471,9 +412,7 @@ This type belongs to **SOURCE_CODE**.
 MARKDOWN = 'general.markdown'
 ```
 
-Markdown.
-
-This type belongs to **TEXT**.
+Markdown. This type belongs to **TEXT**.
 
 **Since:** 12
 
@@ -487,9 +426,7 @@ This type belongs to **TEXT**.
 ASC_TEXT = 'general.asc-text'
 ```
 
-ASCII.
-
-This type belongs to **TEXT**.
+ASCII. This type belongs to **TEXT**.
 
 **Since:** 12
 
@@ -503,9 +440,7 @@ This type belongs to **TEXT**.
 RICH_TEXT = 'general.rich-text'
 ```
 
-Rich text.
-
-This type belongs to **TEXT**.
+Rich text. This type belongs to **TEXT**.
 
 **Since:** 12
 
@@ -519,9 +454,7 @@ This type belongs to **TEXT**.
 DELIMITED_VALUES_TEXT = 'general.delimited-values-text'
 ```
 
-Generic type of all delimited value texts.
-
-This type belongs to **TEXT**.
+Generic type of all delimited value texts. This type belongs to **TEXT**.
 
 **Since:** 12
 
@@ -535,9 +468,7 @@ This type belongs to **TEXT**.
 COMMA_SEPARATED_VALUES_TEXT = 'general.comma-separated-values-text'
 ```
 
-Comma-separated values (CSV).
-
-This type belongs to **DELIMITED_VALUES_TEXT**.
+Comma-separated values (CSV). This type belongs to **DELIMITED_VALUES_TEXT**.
 
 **Since:** 12
 
@@ -551,9 +482,7 @@ This type belongs to **DELIMITED_VALUES_TEXT**.
 TAB_SEPARATED_VALUES_TEXT = 'general.tab-separated-values-text'
 ```
 
-Tab-separated values (TSV).
-
-This type belongs to **DELIMITED_VALUES_TEXT**.
+Tab-separated values (TSV). This type belongs to **DELIMITED_VALUES_TEXT**.
 
 **Since:** 12
 
@@ -567,9 +496,7 @@ This type belongs to **DELIMITED_VALUES_TEXT**.
 EBOOK = 'general.ebook'
 ```
 
-Generic eBook file format type.
-
-This type belongs to **COMPOSITE_OBJECT**.
+Generic eBook file format type. This type belongs to **COMPOSITE_OBJECT**.
 
 **Since:** 11
 
@@ -583,9 +510,7 @@ This type belongs to **COMPOSITE_OBJECT**.
 EPUB = 'general.epub'
 ```
 
-Electronic publication (EPUB).
-
-This type belongs to **EBOOK**.
+Electronic publication (EPUB). This type belongs to **EBOOK**.
 
 **Since:** 11
 
@@ -599,9 +524,7 @@ This type belongs to **EBOOK**.
 AZW = 'com.amazon.azw'
 ```
 
-AZW.
-
-This type belongs to **EBOOK**.
+AZW. This type belongs to **EBOOK**.
 
 **Since:** 11
 
@@ -615,9 +538,7 @@ This type belongs to **EBOOK**.
 AZW3 = 'com.amazon.azw3'
 ```
 
-AZW3.
-
-This type belongs to **EBOOK**.
+AZW3. This type belongs to **EBOOK**.
 
 **Since:** 11
 
@@ -631,9 +552,7 @@ This type belongs to **EBOOK**.
 KFX = 'com.amazon.kfx'
 ```
 
-KFX.
-
-This type belongs to **EBOOK**.
+KFX. This type belongs to **EBOOK**.
 
 **Since:** 11
 
@@ -647,9 +566,7 @@ This type belongs to **EBOOK**.
 MOBI = 'com.amazon.mobi'
 ```
 
-MOBI.
-
-This type belongs to **EBOOK**.
+MOBI. This type belongs to **EBOOK**.
 
 **Since:** 11
 
@@ -663,9 +580,7 @@ This type belongs to **EBOOK**.
 MEDIA = 'general.media'
 ```
 
-Generic media type.
-
-This type belongs to **OBJECT**.
+Generic media type. This type belongs to **OBJECT**.
 
 **Since:** 11
 
@@ -679,9 +594,7 @@ This type belongs to **OBJECT**.
 IMAGE = 'general.image'
 ```
 
-Image.
-
-This type belongs to **MEDIA**.
+Image. This type belongs to **MEDIA**.
 
 **Since:** 10
 
@@ -697,9 +610,7 @@ This type belongs to **MEDIA**.
 JPEG = 'general.jpeg'
 ```
 
-JPEG.
-
-This type belongs to **IMAGE**.
+JPEG. This type belongs to **IMAGE**.
 
 **Since:** 11
 
@@ -713,9 +624,7 @@ This type belongs to **IMAGE**.
 PNG = 'general.png'
 ```
 
-PNG.
-
-This type belongs to **IMAGE**.
+PNG. This type belongs to **IMAGE**.
 
 **Since:** 11
 
@@ -729,9 +638,7 @@ This type belongs to **IMAGE**.
 RAW_IMAGE = 'general.raw-image'
 ```
 
-Raw image.
-
-This type belongs to **IMAGE**.
+Raw image. This type belongs to **IMAGE**.
 
 **Since:** 11
 
@@ -745,9 +652,7 @@ This type belongs to **IMAGE**.
 TIFF = 'general.tiff'
 ```
 
-TIFF.
-
-This type belongs to **IMAGE**.
+TIFF. This type belongs to **IMAGE**.
 
 **Since:** 11
 
@@ -761,9 +666,7 @@ This type belongs to **IMAGE**.
 BMP = 'com.microsoft.bmp'
 ```
 
-BMP.
-
-This type belongs to **IMAGE**.
+BMP. This type belongs to **IMAGE**.
 
 **Since:** 11
 
@@ -777,9 +680,7 @@ This type belongs to **IMAGE**.
 ICO = 'com.microsoft.ico'
 ```
 
-Windows icon.
-
-This type belongs to **IMAGE**.
+Windows icon. This type belongs to **IMAGE**.
 
 **Since:** 11
 
@@ -793,9 +694,7 @@ This type belongs to **IMAGE**.
 PHOTOSHOP_IMAGE = 'com.adobe.photoshop-image'
 ```
 
-Adobe Photoshop image.
-
-This type belongs to **IMAGE**.
+Adobe Photoshop image. This type belongs to **IMAGE**.
 
 **Since:** 11
 
@@ -809,9 +708,7 @@ This type belongs to **IMAGE**.
 AI_IMAGE = 'com.adobe.illustrator.ai-image'
 ```
 
-Adobe Illustrator image (.ai).
-
-This type belongs to **IMAGE**.
+Adobe Illustrator image (.ai). This type belongs to **IMAGE**.
 
 **Since:** 11
 
@@ -825,9 +722,7 @@ This type belongs to **IMAGE**.
 FAX = 'general.fax'
 ```
 
-Generic type of the fax.
-
-This type belongs to **IMAGE**.
+Generic type of the fax. This type belongs to **IMAGE**.
 
 **Since:** 12
 
@@ -841,9 +736,7 @@ This type belongs to **IMAGE**.
 JFX_FAX = 'com.j2.jfx-fax'
 ```
 
-J2 jConnect fax file format.
-
-This type belongs to **FAX**.
+J2 jConnect fax file format. This type belongs to **FAX**.
 
 **Since:** 12
 
@@ -857,9 +750,7 @@ This type belongs to **FAX**.
 EFX_FAX = 'com.js.efx-fax'
 ```
 
-EFX file format.
-
-This type belongs to **FAX**.
+EFX file format. This type belongs to **FAX**.
 
 **Since:** 12
 
@@ -873,9 +764,7 @@ This type belongs to **FAX**.
 XBITMAP_IMAGE = 'general.xbitmap-image'
 ```
 
-X BitMAP (XBM) used in the X Window system (X11).
-
-This type belongs to **IMAGE**.
+X BitMAP (XBM) used in the X Window system (X11). This type belongs to **IMAGE**.
 
 **Since:** 12
 
@@ -889,9 +778,7 @@ This type belongs to **IMAGE**.
 GIF = 'general.gif'
 ```
 
-GIF.
-
-This type belongs to **IMAGE**.
+GIF. This type belongs to **IMAGE**.
 
 **Since:** 12
 
@@ -905,9 +792,7 @@ This type belongs to **IMAGE**.
 TGA_IMAGE = 'com.truevision.tga-image'
 ```
 
-Tagged Graphics (TGA) format.
-
-This type belongs to **IMAGE**.
+Tagged Graphics (TGA) format. This type belongs to **IMAGE**.
 
 **Since:** 12
 
@@ -921,9 +806,7 @@ This type belongs to **IMAGE**.
 SGI_IMAGE = 'com.sgi.sgi-image'
 ```
 
-Silicon Graphics image (SGI) format.
-
-This type belongs to **IMAGE**.
+Silicon Graphics image (SGI) format. This type belongs to **IMAGE**.
 
 **Since:** 12
 
@@ -937,9 +820,7 @@ This type belongs to **IMAGE**.
 OPENEXR_IMAGE = 'com.ilm.openexr-image'
 ```
 
-OpenXR image format.
-
-This type belongs to **IMAGE**.
+OpenXR image format. This type belongs to **IMAGE**.
 
 **Since:** 12
 
@@ -953,9 +834,7 @@ This type belongs to **IMAGE**.
 FLASHPIX_IMAGE = 'com.kodak.flashpix.image'
 ```
 
-FlashPix image format.
-
-This type belongs to **IMAGE**.
+FlashPix image format. This type belongs to **IMAGE**.
 
 **Since:** 12
 
@@ -969,9 +848,7 @@ This type belongs to **IMAGE**.
 WORD_DOC = 'com.microsoft.word.doc'
 ```
 
-Microsoft Word.
-
-This type belongs to **COMPOSITE_OBJECT**.
+Microsoft Word. This type belongs to **COMPOSITE_OBJECT**.
 
 **Since:** 11
 
@@ -985,9 +862,7 @@ This type belongs to **COMPOSITE_OBJECT**.
 EXCEL = 'com.microsoft.excel.xls'
 ```
 
-Microsoft Excel.
-
-This type belongs to **COMPOSITE_OBJECT**.
+Microsoft Excel. This type belongs to **COMPOSITE_OBJECT**.
 
 **Since:** 11
 
@@ -1001,9 +876,7 @@ This type belongs to **COMPOSITE_OBJECT**.
 PPT = 'com.microsoft.powerpoint.ppt'
 ```
 
-Microsoft PowerPoint presentation format.
-
-This type belongs to **COMPOSITE_OBJECT**.
+Microsoft PowerPoint presentation format. This type belongs to **COMPOSITE_OBJECT**.
 
 **Since:** 11
 
@@ -1017,9 +890,7 @@ This type belongs to **COMPOSITE_OBJECT**.
 WORD_DOT = 'com.microsoft.word.dot'
 ```
 
-Microsoft Word template.
-
-This type belongs to **COMPOSITE_OBJECT**.
+Microsoft Word template. This type belongs to **COMPOSITE_OBJECT**.
 
 **Since:** 12
 
@@ -1033,9 +904,7 @@ This type belongs to **COMPOSITE_OBJECT**.
 POWERPOINT_PPS = 'com.microsoft.powerpoint.pps'
 ```
 
-Microsoft PowerPoint slide show format.
-
-This type belongs to **COMPOSITE_OBJECT**.
+Microsoft PowerPoint slide show format. This type belongs to **COMPOSITE_OBJECT**.
 
 **Since:** 12
 
@@ -1049,9 +918,7 @@ This type belongs to **COMPOSITE_OBJECT**.
 POWERPOINT_POT = 'com.microsoft.powerpoint.pot'
 ```
 
-Microsoft PowerPoint template.
-
-This type belongs to **COMPOSITE_OBJECT**.
+Microsoft PowerPoint template. This type belongs to **COMPOSITE_OBJECT**.
 
 **Since:** 12
 
@@ -1065,9 +932,7 @@ This type belongs to **COMPOSITE_OBJECT**.
 EXCEL_XLT = 'com.microsoft.excel.xlt'
 ```
 
-Microsoft Excel template.
-
-This type belongs to **COMPOSITE_OBJECT**.
+Microsoft Excel template. This type belongs to **COMPOSITE_OBJECT**.
 
 **Since:** 12
 
@@ -1081,9 +946,7 @@ This type belongs to **COMPOSITE_OBJECT**.
 VISIO_VSD = 'com.microsoft.visio.vsd'
 ```
 
-Microsoft Visio.
-
-This type belongs to **COMPOSITE_OBJECT**.
+Microsoft Visio. This type belongs to **COMPOSITE_OBJECT**.
 
 **Since:** 12
 
@@ -1097,9 +960,7 @@ This type belongs to **COMPOSITE_OBJECT**.
 PDF = 'com.adobe.pdf'
 ```
 
-PDF.
-
-This type belongs to **COMPOSITE_OBJECT**.
+PDF. This type belongs to **COMPOSITE_OBJECT**.
 
 **Since:** 11
 
@@ -1113,9 +974,7 @@ This type belongs to **COMPOSITE_OBJECT**.
 POSTSCRIPT = 'com.adobe.postscript'
 ```
 
-PostScript.
-
-This type belongs to **COMPOSITE_OBJECT**.
+PostScript. This type belongs to **COMPOSITE_OBJECT**.
 
 **Since:** 11
 
@@ -1129,9 +988,7 @@ This type belongs to **COMPOSITE_OBJECT**.
 ENCAPSULATED_POSTSCRIPT = 'com.adobe.encapsulated-postscript'
 ```
 
-Encapsulated PostScript.
-
-This type belongs to **POSTSCRIPT**.
+Encapsulated PostScript. This type belongs to **POSTSCRIPT**.
 
 **Since:** 11
 
@@ -1145,9 +1002,7 @@ This type belongs to **POSTSCRIPT**.
 VIDEO = 'general.video'
 ```
 
-Generic video type.
-
-This type belongs to **MEDIA**.
+Generic video type. This type belongs to **MEDIA**.
 
 **Since:** 10
 
@@ -1163,9 +1018,7 @@ This type belongs to **MEDIA**.
 AVI = 'general.avi'
 ```
 
-AVI.
-
-This type belongs to **VIDEO**.
+AVI. This type belongs to **VIDEO**.
 
 **Since:** 11
 
@@ -1179,9 +1032,7 @@ This type belongs to **VIDEO**.
 MPEG = 'general.mpeg'
 ```
 
-MPEG-1 or MPEG-2.
-
-This type belongs to **VIDEO**.
+MPEG-1 or MPEG-2. This type belongs to **VIDEO**.
 
 **Since:** 11
 
@@ -1195,9 +1046,7 @@ This type belongs to **VIDEO**.
 MPEG4 = 'general.mpeg-4'
 ```
 
-MPEG-4.
-
-This type belongs to **VIDEO**.
+MPEG-4. This type belongs to **VIDEO**.
 
 **Since:** 11
 
@@ -1211,9 +1060,7 @@ This type belongs to **VIDEO**.
 VIDEO_3GPP = 'general.3gpp'
 ```
 
-3GP (3GPP file format).
-
-This type belongs to **VIDEO**.
+3GP (3GPP file format). This type belongs to **VIDEO**.
 
 **Since:** 11
 
@@ -1227,9 +1074,7 @@ This type belongs to **VIDEO**.
 VIDEO_3GPP2 = 'general.3gpp2'
 ```
 
-3G2 (3GPP2 file format).
-
-This type belongs to **VIDEO**.
+3G2 (3GPP2 file format). This type belongs to **VIDEO**.
 
 **Since:** 11
 
@@ -1243,9 +1088,7 @@ This type belongs to **VIDEO**.
 TS = 'general.ts'
 ```
 
-MPEG-TS.
-
-This type belongs to **VIDEO**.
+MPEG-TS. This type belongs to **VIDEO**.
 
 **Since:** 12
 
@@ -1259,9 +1102,7 @@ This type belongs to **VIDEO**.
 MPEGURL_VIDEO = 'general.mpegurl-video'
 ```
 
-MPEG video playlist format.
-
-This type belongs to **VIDEO**.
+MPEG video playlist format. This type belongs to **VIDEO**.
 
 **Since:** 12
 
@@ -1275,9 +1116,7 @@ This type belongs to **VIDEO**.
 WINDOWS_MEDIA_WM = 'com.microsoft.windows-media-wm'
 ```
 
-Windows WM format.
-
-This type belongs to **VIDEO**.
+Windows WM format. This type belongs to **VIDEO**.
 
 **Since:** 11
 
@@ -1291,9 +1130,7 @@ This type belongs to **VIDEO**.
 WINDOWS_MEDIA_WMV = 'com.microsoft.windows-media-wmv'
 ```
 
-Windows WMV format.
-
-This type belongs to **VIDEO**.
+Windows WMV format. This type belongs to **VIDEO**.
 
 **Since:** 11
 
@@ -1307,9 +1144,7 @@ This type belongs to **VIDEO**.
 WINDOWS_MEDIA_WMP = 'com.microsoft.windows-media-wmp'
 ```
 
-Windows WMP format.
-
-This type belongs to **VIDEO**.
+Windows WMP format. This type belongs to **VIDEO**.
 
 **Since:** 11
 
@@ -1323,9 +1158,7 @@ This type belongs to **VIDEO**.
 WINDOWS_MEDIA_WVX = 'com.microsoft.windows-media-wvx'
 ```
 
-Windows WVX format.
-
-This type belongs to **VIDEO**.
+Windows WVX format. This type belongs to **VIDEO**.
 
 **Since:** 11
 
@@ -1339,9 +1172,7 @@ This type belongs to **VIDEO**.
 WINDOWS_MEDIA_WMX = 'com.microsoft.windows-media-wmx'
 ```
 
-Windows WMX format.
-
-This type belongs to **VIDEO**.
+Windows WMX format. This type belongs to **VIDEO**.
 
 **Since:** 11
 
@@ -1355,9 +1186,7 @@ This type belongs to **VIDEO**.
 REALMEDIA = 'com.real.realmedia'
 ```
 
-RealMedia format.
-
-This type belongs to **VIDEO**.
+RealMedia format. This type belongs to **VIDEO**.
 
 **Since:** 12
 
@@ -1371,9 +1200,7 @@ This type belongs to **VIDEO**.
 MATROSKA_VIDEO = 'org.matroska.mkv'
 ```
 
-MKV.
-
-This type belongs to **VIDEO**.
+MKV. This type belongs to **VIDEO**.
 
 **Since:** 12
 
@@ -1387,9 +1214,7 @@ This type belongs to **VIDEO**.
 FLASH = 'com.adobe.flash'
 ```
 
-Flash.
-
-This type belongs to **VIDEO**.
+Flash. This type belongs to **VIDEO**.
 
 **Since:** 12
 
@@ -1403,9 +1228,7 @@ This type belongs to **VIDEO**.
 AUDIO = 'general.audio'
 ```
 
-Generic audio type.
-
-This type belongs to **MEDIA**.
+Generic audio type. This type belongs to **MEDIA**.
 
 **Since:** 10
 
@@ -1421,9 +1244,7 @@ This type belongs to **MEDIA**.
 AAC = 'general.aac'
 ```
 
-AAC.
-
-This type belongs to **AUDIO**.
+AAC. This type belongs to **AUDIO**.
 
 **Since:** 11
 
@@ -1437,9 +1258,7 @@ This type belongs to **AUDIO**.
 AIFF = 'general.aiff'
 ```
 
-AIFF.
-
-This type belongs to **AUDIO**.
+AIFF. This type belongs to **AUDIO**.
 
 **Since:** 11
 
@@ -1453,9 +1272,7 @@ This type belongs to **AUDIO**.
 ALAC = 'general.alac'
 ```
 
-ALAC.
-
-This type belongs to **AUDIO**.
+ALAC. This type belongs to **AUDIO**.
 
 **Since:** 11
 
@@ -1469,9 +1286,7 @@ This type belongs to **AUDIO**.
 FLAC = 'general.flac'
 ```
 
-FLAC.
-
-This type belongs to **AUDIO**.
+FLAC. This type belongs to **AUDIO**.
 
 **Since:** 11
 
@@ -1485,9 +1300,7 @@ This type belongs to **AUDIO**.
 MP3 = 'general.mp3'
 ```
 
-MP3.
-
-This type belongs to **AUDIO**.
+MP3. This type belongs to **AUDIO**.
 
 **Since:** 11
 
@@ -1501,9 +1314,7 @@ This type belongs to **AUDIO**.
 OGG = 'general.ogg'
 ```
 
-OGG.
-
-This type belongs to **AUDIO**.
+OGG. This type belongs to **AUDIO**.
 
 **Since:** 11
 
@@ -1517,9 +1328,7 @@ This type belongs to **AUDIO**.
 PCM = 'general.pcm'
 ```
 
-PCM.
-
-This type belongs to **AUDIO**.
+PCM. This type belongs to **AUDIO**.
 
 **Since:** 11
 
@@ -1533,9 +1342,7 @@ This type belongs to **AUDIO**.
 WINDOWS_MEDIA_WMA = 'com.microsoft.windows-media-wma'
 ```
 
-Windows WMA.
-
-This type belongs to **AUDIO**.
+Windows WMA. This type belongs to **AUDIO**.
 
 **Since:** 11
 
@@ -1549,9 +1356,7 @@ This type belongs to **AUDIO**.
 WAVEFORM_AUDIO = 'com.microsoft.waveform-audio'
 ```
 
-Windows Waveform.
-
-This type belongs to **AUDIO**.
+Windows Waveform. This type belongs to **AUDIO**.
 
 **Since:** 11
 
@@ -1565,9 +1370,7 @@ This type belongs to **AUDIO**.
 WINDOWS_MEDIA_WAX = 'com.microsoft.windows-media-wax'
 ```
 
-Windows WAX.
-
-This type belongs to **AUDIO**.
+Windows WAX. This type belongs to **AUDIO**.
 
 **Since:** 11
 
@@ -1581,9 +1384,7 @@ This type belongs to **AUDIO**.
 AU_AUDIO = 'general.au-audio'
 ```
 
-AU format.
-
-This type belongs to **AUDIO**.
+AU format. This type belongs to **AUDIO**.
 
 **Since:** 12
 
@@ -1597,9 +1398,7 @@ This type belongs to **AUDIO**.
 AIFC_AUDIO = 'general.aifc-audio'
 ```
 
-AIFC.
-
-This type belongs to **AUDIO**.
+AIFC. This type belongs to **AUDIO**.
 
 **Since:** 12
 
@@ -1613,9 +1412,7 @@ This type belongs to **AUDIO**.
 MPEGURL_AUDIO = 'general.mpegurl-audio'
 ```
 
-MPEG audio playlist format.
-
-This type belongs to **AUDIO**.
+MPEG audio playlist format. This type belongs to **AUDIO**.
 
 **Since:** 12
 
@@ -1629,9 +1426,7 @@ This type belongs to **AUDIO**.
 MPEG_4_AUDIO = 'general.mpeg-4-audio'
 ```
 
-MPEG-4.
-
-This type belongs to **AUDIO**.
+MPEG-4. This type belongs to **AUDIO**.
 
 **Since:** 12
 
@@ -1645,9 +1440,7 @@ This type belongs to **AUDIO**.
 MP2 = 'general.mp2'
 ```
 
-MP2.
-
-This type belongs to **AUDIO**.
+MP2. This type belongs to **AUDIO**.
 
 **Since:** 12
 
@@ -1661,9 +1454,7 @@ This type belongs to **AUDIO**.
 MPEG_AUDIO = 'general.mpeg-audio'
 ```
 
-MPEG audio format.
-
-This type belongs to **AUDIO**.
+MPEG audio format. This type belongs to **AUDIO**.
 
 **Since:** 12
 
@@ -1677,9 +1468,7 @@ This type belongs to **AUDIO**.
 ULAW_AUDIO = 'general.ulaw-audio'
 ```
 
-ULAW.
-
-This type belongs to **AUDIO**.
+ULAW. This type belongs to **AUDIO**.
 
 **Since:** 12
 
@@ -1693,9 +1482,7 @@ This type belongs to **AUDIO**.
 SD2_AUDIO = 'com.digidesign.sd2-audio'
 ```
 
-Digidesign Sound Designer II (SDII).
-
-This type belongs to **AUDIO**.
+Digidesign Sound Designer II (SDII). This type belongs to **AUDIO**.
 
 **Since:** 12
 
@@ -1709,9 +1496,7 @@ This type belongs to **AUDIO**.
 REALAUDIO = 'com.real.realaudio'
 ```
 
-RealAudio.
-
-This type belongs to **AUDIO**.
+RealAudio. This type belongs to **AUDIO**.
 
 **Since:** 12
 
@@ -1725,9 +1510,7 @@ This type belongs to **AUDIO**.
 MATROSKA_AUDIO = 'org.matroska.mka'
 ```
 
-MKA.
-
-This type belongs to **AUDIO**.
+MKA. This type belongs to **AUDIO**.
 
 **Since:** 12
 
@@ -1741,9 +1524,7 @@ This type belongs to **AUDIO**.
 FILE = 'general.file'
 ```
 
-Generic file type.
-
-This type belongs to **ENTITY**.
+Generic file type. This type belongs to **ENTITY**.
 
 **Since:** 10
 
@@ -1759,9 +1540,7 @@ This type belongs to **ENTITY**.
 DIRECTORY = 'general.directory'
 ```
 
-Generic directory type.
-
-This type belongs to **ENTITY**.
+Generic directory type. This type belongs to **ENTITY**.
 
 **Since:** 11
 
@@ -1775,9 +1554,7 @@ This type belongs to **ENTITY**.
 FOLDER = 'general.folder'
 ```
 
-Generic folder type.
-
-This type belongs to **DIRECTORY**.
+Generic folder type. This type belongs to **DIRECTORY**.
 
 **Since:** 10
 
@@ -1793,9 +1570,7 @@ This type belongs to **DIRECTORY**.
 SYMLINK = 'general.symlink'
 ```
 
-Generic symbolic type.
-
-This type belongs to **ENTITY**.
+Generic symbolic type. This type belongs to **ENTITY**.
 
 **Since:** 11
 
@@ -1809,9 +1584,7 @@ This type belongs to **ENTITY**.
 ARCHIVE = 'general.archive'
 ```
 
-Generic archive file type.
-
-This type belongs to **OBJECT**.
+Generic archive file type. This type belongs to **OBJECT**.
 
 **Since:** 11
 
@@ -1825,9 +1598,7 @@ This type belongs to **OBJECT**.
 BZ2_ARCHIVE = 'general.bz2-archive'
 ```
 
-BZ2.
-
-This type belongs to **ARCHIVE**.
+BZ2. This type belongs to **ARCHIVE**.
 
 **Since:** 11
 
@@ -1841,9 +1612,7 @@ This type belongs to **ARCHIVE**.
 OPG = 'general.opg'
 ```
 
-OPG.
-
-This type belongs to **ARCHIVE**.
+OPG. This type belongs to **ARCHIVE**.
 
 **Since:** 12
 
@@ -1857,9 +1626,7 @@ This type belongs to **ARCHIVE**.
 TAZ_ARCHIVE = 'general.taz-archive'
 ```
 
-TAR.
-
-This type belongs to **TAR_ARCHIVE**.
+TAR. This type belongs to **TAR_ARCHIVE**.
 
 **Since:** 12
 
@@ -1873,9 +1640,7 @@ This type belongs to **TAR_ARCHIVE**.
 WEB_ARCHIVE = 'general.web-archive'
 ```
 
-MHTML format for web page archiving.
-
-This type belongs to **ARCHIVE**.
+MHTML format for web page archiving. This type belongs to **ARCHIVE**.
 
 **Since:** 12
 
@@ -1889,9 +1654,7 @@ This type belongs to **ARCHIVE**.
 DISK_IMAGE = 'general.disk-image'
 ```
 
-Generic type of any file that can be mounted as a volume.
-
-This type belongs to **ARCHIVE**.
+Generic type of any file that can be mounted as a volume. This type belongs to **ARCHIVE**.
 
 **Since:** 11
 
@@ -1905,9 +1668,7 @@ This type belongs to **ARCHIVE**.
 ISO = 'general.iso'
 ```
 
-ISO image (optical disk image) format.
-
-This type belongs to **DISK_IMAGE**.
+ISO image (optical disk image) format. This type belongs to **DISK_IMAGE**.
 
 **Since:** 12
 
@@ -1921,9 +1682,7 @@ This type belongs to **DISK_IMAGE**.
 TAR_ARCHIVE = 'general.tar-archive'
 ```
 
-TAR.
-
-This type belongs to ARCHIVE.
+TAR. This type belongs to ARCHIVE.
 
 **Since:** 11
 
@@ -1937,9 +1696,7 @@ This type belongs to ARCHIVE.
 ZIP_ARCHIVE = 'general.zip-archive'
 ```
 
-ZIP.
-
-This type belongs to **ARCHIVE**.
+ZIP. This type belongs to **ARCHIVE**.
 
 **Since:** 11
 
@@ -1953,9 +1710,7 @@ This type belongs to **ARCHIVE**.
 JAVA_ARCHIVE = 'com.sun.java-archive'
 ```
 
-JAR (Java archive).
-
-This type belongs to **ARCHIVE** and **EXECUTABLE**.
+JAR (Java archive). This type belongs to **ARCHIVE** and **EXECUTABLE**.
 
 **Since:** 11
 
@@ -1969,9 +1724,7 @@ This type belongs to **ARCHIVE** and **EXECUTABLE**.
 GNU_TAR_ARCHIVE = 'org.gnu.gnu-tar-archive'
 ```
 
-GNU.
-
-This type belongs to **ARCHIVE**.
+GNU. This type belongs to **ARCHIVE**.
 
 **Since:** 11
 
@@ -1985,9 +1738,7 @@ This type belongs to **ARCHIVE**.
 GNU_ZIP_ARCHIVE = 'org.gnu.gnu-zip-archive'
 ```
 
-GZIP archive.
-
-This type belongs to **ARCHIVE**.
+GZIP archive. This type belongs to **ARCHIVE**.
 
 **Since:** 11
 
@@ -2001,9 +1752,7 @@ This type belongs to **ARCHIVE**.
 GNU_ZIP_TAR_ARCHIVE = 'org.gnu.gnu-zip-tar-archive'
 ```
 
-GZIP TAR.
-
-This type belongs to **ARCHIVE**.
+GZIP TAR. This type belongs to **ARCHIVE**.
 
 **Since:** 11
 
@@ -2017,9 +1766,7 @@ This type belongs to **ARCHIVE**.
 OPENXML = 'org.openxmlformats.openxml'
 ```
 
-OpenXML base type.
-
-This type belongs to **ARCHIVE**.
+OpenXML base type. This type belongs to **ARCHIVE**.
 
 **Since:** 12
 
@@ -2033,9 +1780,7 @@ This type belongs to **ARCHIVE**.
 WORDPROCESSINGML_DOCUMENT = 'org.openxmlformats.wordprocessingml.document'
 ```
 
-WordProcessingML format.
-
-This type belongs to **OPENXML** and **COMPOSITE_OBJECT**.
+WordProcessingML format. This type belongs to **OPENXML** and **COMPOSITE_OBJECT**.
 
 **Since:** 12
 
@@ -2049,9 +1794,7 @@ This type belongs to **OPENXML** and **COMPOSITE_OBJECT**.
 SPREADSHEETML_SHEET = 'org.openxmlformats.spreadsheetml.sheet'
 ```
 
-SpreadsheetML format.
-
-This type belongs to **OPENXML** and **COMPOSITE_OBJECT**.
+SpreadsheetML format. This type belongs to **OPENXML** and **COMPOSITE_OBJECT**.
 
 **Since:** 12
 
@@ -2065,9 +1808,7 @@ This type belongs to **OPENXML** and **COMPOSITE_OBJECT**.
 PRESENTATIONML_PRESENTATION = 'org.openxmlformats.presentationml.presentation'
 ```
 
-PresentationML format.
-
-This type belongs to **OPENXML** and **COMPOSITE_OBJECT**.
+PresentationML format. This type belongs to **OPENXML** and **COMPOSITE_OBJECT**.
 
 **Since:** 12
 
@@ -2081,9 +1822,7 @@ This type belongs to **OPENXML** and **COMPOSITE_OBJECT**.
 DRAWINGML_VISIO = 'org.openxmlformats.drawingml.visio'
 ```
 
-DrawingML file format of Office Open XML (OOXML).
-
-This type belongs to **OPENXML** and **COMPOSITE_OBJECT**.
+DrawingML file format of Office Open XML (OOXML). This type belongs to **OPENXML** and **COMPOSITE_OBJECT**.
 
 **Since:** 12
 
@@ -2097,9 +1836,7 @@ This type belongs to **OPENXML** and **COMPOSITE_OBJECT**.
 DRAWINGML_TEMPLATE = 'org.openxmlformats.drawingml.template'
 ```
 
-DrawingML template format of OOXML.
-
-This type belongs to **OPENXML** and **COMPOSITE_OBJECT**.
+DrawingML template format of OOXML. This type belongs to **OPENXML** and **COMPOSITE_OBJECT**.
 
 **Since:** 12
 
@@ -2113,9 +1850,7 @@ This type belongs to **OPENXML** and **COMPOSITE_OBJECT**.
 WORDPROCESSINGML_TEMPLATE = 'org.openxmlformats.wordprocessingml.template'
 ```
 
-WordProcessingML template format of OOXML.
-
-This type belongs to **OPENXML** and **COMPOSITE_OBJECT**.
+WordProcessingML template format of OOXML. This type belongs to **OPENXML** and **COMPOSITE_OBJECT**.
 
 **Since:** 12
 
@@ -2129,9 +1864,7 @@ This type belongs to **OPENXML** and **COMPOSITE_OBJECT**.
 PRESENTATIONML_TEMPLATE = 'org.openxmlformats.presentationml.template'
 ```
 
-PresentationML template format of OOXML.
-
-This type belongs to **OPENXML** and **COMPOSITE_OBJECT**.
+PresentationML template format of OOXML. This type belongs to **OPENXML** and **COMPOSITE_OBJECT**.
 
 **Since:** 12
 
@@ -2145,9 +1878,7 @@ This type belongs to **OPENXML** and **COMPOSITE_OBJECT**.
 PRESENTATIONML_SLIDESHOW = 'org.openxmlformats.presentationml.slideshow'
 ```
 
-PresentationML slide show format of OOXML.
-
-This type belongs to **OPENXML** and **COMPOSITE_OBJECT**.
+PresentationML slide show format of OOXML. This type belongs to **OPENXML** and **COMPOSITE_OBJECT**.
 
 **Since:** 12
 
@@ -2161,9 +1892,7 @@ This type belongs to **OPENXML** and **COMPOSITE_OBJECT**.
 SPREADSHEETML_TEMPLATE = 'org.openxmlformats.spreadsheetml.template'
 ```
 
-SpreadsheetML template format of OOXML.
-
-This type belongs to **OPENXML** and **COMPOSITE_OBJECT**.
+SpreadsheetML template format of OOXML. This type belongs to **OPENXML** and **COMPOSITE_OBJECT**.
 
 **Since:** 12
 
@@ -2177,9 +1906,7 @@ This type belongs to **OPENXML** and **COMPOSITE_OBJECT**.
 OPENDOCUMENT = 'org.oasis.opendocument'
 ```
 
-OpenDocument format for Office applications.
-
-This type belongs to **ARCHIVE**.
+OpenDocument format for Office applications. This type belongs to **ARCHIVE**.
 
 **Since:** 12
 
@@ -2193,9 +1920,7 @@ This type belongs to **ARCHIVE**.
 OPENDOCUMENT_TEXT = 'org.oasis.opendocument.text'
 ```
 
-OpenDocument format for word processing (text) documents.
-
-This type belongs to **OPENDOCUMENT** and **COMPOSITE_OBJECT**.
+OpenDocument format for word processing (text) documents. This type belongs to **OPENDOCUMENT** and **COMPOSITE_OBJECT**.
 
 **Since:** 12
 
@@ -2209,9 +1934,7 @@ This type belongs to **OPENDOCUMENT** and **COMPOSITE_OBJECT**.
 OPENDOCUMENT_SPREADSHEET = 'org.oasis.opendocument.spreadsheet'
 ```
 
-OpenDocument format for spreadsheets.
-
-This type belongs to **OPENDOCUMENT** and **COMPOSITE_OBJECT**.
+OpenDocument format for spreadsheets. This type belongs to **OPENDOCUMENT** and **COMPOSITE_OBJECT**.
 
 **Since:** 12
 
@@ -2225,9 +1948,7 @@ This type belongs to **OPENDOCUMENT** and **COMPOSITE_OBJECT**.
 OPENDOCUMENT_PRESENTATION = 'org.oasis.opendocument.presentation'
 ```
 
-OpenDocument format for presentations.
-
-This type belongs to **OPENDOCUMENT** and **COMPOSITE_OBJECT**.
+OpenDocument format for presentations. This type belongs to **OPENDOCUMENT** and **COMPOSITE_OBJECT**.
 
 **Since:** 12
 
@@ -2241,9 +1962,7 @@ This type belongs to **OPENDOCUMENT** and **COMPOSITE_OBJECT**.
 OPENDOCUMENT_GRAPHICS = 'org.oasis.opendocument.graphics'
 ```
 
-OpenDocument format for graphics.
-
-This type belongs to **OPENDOCUMENT** and **COMPOSITE_OBJECT**.
+OpenDocument format for graphics. This type belongs to **OPENDOCUMENT** and **COMPOSITE_OBJECT**.
 
 **Since:** 12
 
@@ -2257,9 +1976,7 @@ This type belongs to **OPENDOCUMENT** and **COMPOSITE_OBJECT**.
 OPENDOCUMENT_FORMULA = 'org.oasis.opendocument.formula'
 ```
 
-OpenDocument format for formula.
-
-This type belongs to **OPENDOCUMENT**.
+OpenDocument format for formula. This type belongs to **OPENDOCUMENT**.
 
 **Since:** 12
 
@@ -2273,9 +1990,7 @@ This type belongs to **OPENDOCUMENT**.
 STUFFIT_ARCHIVE = 'com.allume.stuffit-archive'
 ```
 
-Stuffit compression format (stuffit archive).
-
-This type belongs to **ARCHIVE**.
+Stuffit compression format (stuffit archive). This type belongs to **ARCHIVE**.
 
 **Since:** 12
 
@@ -2289,9 +2004,7 @@ This type belongs to **ARCHIVE**.
 RAR_ARCHIVE = 'com.rarlab.rar-archive'
 ```
 
-WinRAR.
-
-This type belongs to **ARCHIVE**.
+WinRAR. This type belongs to **ARCHIVE**.
 
 **Since:** 12
 
@@ -2305,9 +2018,7 @@ This type belongs to **ARCHIVE**.
 SEVEN_ZIP_ARCHIVE = 'org.7-zip.7-zip-archive'
 ```
 
-7-Zip.
-
-This type belongs to **ARCHIVE**.
+7-Zip. This type belongs to **ARCHIVE**.
 
 **Since:** 12
 
@@ -2321,9 +2032,7 @@ This type belongs to **ARCHIVE**.
 CALENDAR = 'general.calendar'
 ```
 
-Generic calendar type.
-
-This type belongs to **OBJECT**.
+Generic calendar type. This type belongs to **OBJECT**.
 
 **Since:** 11
 
@@ -2337,9 +2046,7 @@ This type belongs to **OBJECT**.
 VCS = 'general.vcs'
 ```
 
-VCalendar (VCS) format.
-
-This type belongs to **CALENDAR** and **TEXT**.
+VCalendar (VCS) format. This type belongs to **CALENDAR** and **TEXT**.
 
 **Since:** 12
 
@@ -2353,9 +2060,7 @@ This type belongs to **CALENDAR** and **TEXT**.
 ICS = 'general.ics'
 ```
 
-Internet Calendaring and Scheduling (ICS) format.
-
-This type belongs to **CALENDAR** and **TEXT**.
+Internet Calendaring and Scheduling (ICS) format. This type belongs to **CALENDAR** and **TEXT**.
 
 **Since:** 12
 
@@ -2369,9 +2074,7 @@ This type belongs to **CALENDAR** and **TEXT**.
 CONTACT = 'general.contact'
 ```
 
-Generic contact type.
-
-This type belongs to **OBJECT**.
+Generic contact type. This type belongs to **OBJECT**.
 
 **Since:** 11
 
@@ -2385,9 +2088,7 @@ This type belongs to **OBJECT**.
 DATABASE = 'general.database'
 ```
 
-Generic database file type.
-
-This type belongs to **OBJECT**.
+Generic database file type. This type belongs to **OBJECT**.
 
 **Since:** 11
 
@@ -2401,9 +2102,7 @@ This type belongs to **OBJECT**.
 MESSAGE = 'general.message'
 ```
 
-Generic message type.
-
-This type belongs to **OBJECT**.
+Generic message type. This type belongs to **OBJECT**.
 
 **Since:** 11
 
@@ -2417,9 +2116,7 @@ This type belongs to **OBJECT**.
 EXECUTABLE = 'general.executable'
 ```
 
-Generic type of all executable files.
-
-This type belongs to **OBJECT**.
+Generic type of all executable files. This type belongs to **OBJECT**.
 
 **Since:** 12
 
@@ -2433,9 +2130,7 @@ This type belongs to **OBJECT**.
 PORTABLE_EXECUTABLE = 'com.microsoft.portable-executable'
 ```
 
-Microsoft Windows portable executable format.
-
-This type belongs to **EXECUTABLE**.
+Microsoft Windows portable executable format. This type belongs to **EXECUTABLE**.
 
 **Since:** 12
 
@@ -2449,9 +2144,7 @@ This type belongs to **EXECUTABLE**.
 SUN_JAVA_CLASS = 'com.sun.java-class'
 ```
 
-Java class file format.
-
-This type belongs to **EXECUTABLE**.
+Java class file format. This type belongs to **EXECUTABLE**.
 
 **Since:** 12
 
@@ -2465,9 +2158,7 @@ This type belongs to **EXECUTABLE**.
 VCARD = 'general.vcard'
 ```
 
-Generic electronic business card type.
-
-This type belongs to **OBJECT**.
+Generic electronic business card type. This type belongs to **OBJECT**.
 
 **Since:** 11
 
@@ -2481,9 +2172,7 @@ This type belongs to **OBJECT**.
 NAVIGATION = 'general.navigation'
 ```
 
-Generic navigation data type.
-
-This type belongs to **OBJECT**.
+Generic navigation data type. This type belongs to **OBJECT**.
 
 **Since:** 11
 
@@ -2497,9 +2186,7 @@ This type belongs to **OBJECT**.
 LOCATION = 'general.location'
 ```
 
-Location data.
-
-This type belongs to **NAVIGATION**.
+Location data. This type belongs to **NAVIGATION**.
 
 **Since:** 11
 
@@ -2513,9 +2200,7 @@ This type belongs to **NAVIGATION**.
 FONT = 'general.font'
 ```
 
-Basic type of fonts.
-
-This type belongs to **OBJECT**.
+Basic type of fonts. This type belongs to **OBJECT**.
 
 **Since:** 12
 
@@ -2529,9 +2214,7 @@ This type belongs to **OBJECT**.
 TRUETYPE_FONT = 'general.truetype-font'
 ```
 
-TrueType font format.
-
-This type belongs to **FONT**.
+TrueType font format. This type belongs to **FONT**.
 
 **Since:** 12
 
@@ -2545,9 +2228,7 @@ This type belongs to **FONT**.
 TRUETYPE_COLLECTION_FONT = 'general.truetype-collection-font'
 ```
 
-TrueType Collection font format.
-
-This type belongs to **FONT**.
+TrueType Collection font format. This type belongs to **FONT**.
 
 **Since:** 12
 
@@ -2561,9 +2242,7 @@ This type belongs to **FONT**.
 OPENTYPE_FONT = 'general.opentype-font'
 ```
 
-OpenType font format.
-
-This type belongs to **FONT**.
+OpenType font format. This type belongs to **FONT**.
 
 **Since:** 12
 
@@ -2577,9 +2256,7 @@ This type belongs to **FONT**.
 POSTSCRIPT_FONT = 'com.adobe.postscript-font'
 ```
 
-PostScript font format.
-
-This type belongs to **FONT**.
+PostScript font format. This type belongs to **FONT**.
 
 **Since:** 12
 
@@ -2593,9 +2270,7 @@ This type belongs to **FONT**.
 POSTSCRIPT_PFB_FONT = 'com.adobe.postscript-pfb-font'
 ```
 
-PostScript Font Binary font format.
-
-This type belongs to **FONT**.
+PostScript Font Binary font format. This type belongs to **FONT**.
 
 **Since:** 12
 
@@ -2609,9 +2284,7 @@ This type belongs to **FONT**.
 POSTSCRIPT_PFA_FONT = 'com.adobe.postscript-pfa-font'
 ```
 
-Adobe Type 1 font format.
-
-This type belongs to **FONT**.
+Adobe Type 1 font format. This type belongs to **FONT**.
 
 **Since:** 12
 
@@ -2625,9 +2298,7 @@ This type belongs to **FONT**.
 OPENHARMONY_FORM = 'openharmony.form'
 ```
 
-Widget defined for the system.
-
-This type belongs to **OBJECT**.
+Widget defined for the system. This type belongs to **OBJECT**.
 
 **Since:** 10
 
@@ -2643,9 +2314,7 @@ This type belongs to **OBJECT**.
 OPENHARMONY_APP_ITEM = 'openharmony.app-item'
 ```
 
-Home screen icon defined for the system.
-
-This type belongs to **OBJECT**.
+Home screen icon defined for the system. This type belongs to **OBJECT**.
 
 **Since:** 10
 
@@ -2661,9 +2330,7 @@ This type belongs to **OBJECT**.
 OPENHARMONY_PIXEL_MAP = 'openharmony.pixel-map'
 ```
 
-Pixel map defined for the system.
-
-This type belongs to **IMAGE**.
+Pixel map defined for the system. This type belongs to **IMAGE**.
 
 **Since:** 10
 
@@ -2679,9 +2346,7 @@ This type belongs to **IMAGE**.
 OPENHARMONY_ATOMIC_SERVICE = 'openharmony.atomic-service'
 ```
 
-Atomic service type defined for the system.
-
-This type belongs to **OBJECT**.
+Atomic service type defined for the system. This type belongs to **OBJECT**.
 
 **Since:** 11
 
@@ -2695,9 +2360,7 @@ This type belongs to **OBJECT**.
 OPENHARMONY_PACKAGE = 'openharmony.package'
 ```
 
-Package (compressed folder) defined for the system.
-
-This type belongs to **DIRECTORY**.
+Package (compressed folder) defined for the system. This type belongs to **DIRECTORY**.
 
 **Since:** 11
 
@@ -2711,9 +2374,7 @@ This type belongs to **DIRECTORY**.
 OPENHARMONY_HAP = 'openharmony.hap'
 ```
 
-Ability package defined for the system.
-
-This type belongs to **OPENHARMONY_PACKAGE**.
+Ability package defined for the system. This type belongs to **OPENHARMONY_PACKAGE**.
 
 **Since:** 11
 
@@ -2727,9 +2388,7 @@ This type belongs to **OPENHARMONY_PACKAGE**.
 OPENHARMONY_HDOC = 'openharmony.hdoc'
 ```
 
-Memo format defined for the system.
-
-This type belongs to **COMPOSITE_OBJECT**.
+Memo format defined for the system. This type belongs to **COMPOSITE_OBJECT**.
 
 **Since:** 12
 
@@ -2743,9 +2402,7 @@ This type belongs to **COMPOSITE_OBJECT**.
 OPENHARMONY_HINOTE = 'openharmony.hinote'
 ```
 
-Note format defined for the system.
-
-This type belongs to **COMPOSITE_OBJECT**.
+Note format defined for the system. This type belongs to **COMPOSITE_OBJECT**.
 
 **Since:** 12
 
@@ -2759,9 +2416,7 @@ This type belongs to **COMPOSITE_OBJECT**.
 OPENHARMONY_STYLED_STRING = 'openharmony.styled-string'
 ```
 
-Style string type defined for the system.
-
-This type belongs to **COMPOSITE_OBJECT**.
+Style string type defined for the system. This type belongs to **COMPOSITE_OBJECT**.
 
 **Since:** 12
 
@@ -2775,9 +2430,7 @@ This type belongs to **COMPOSITE_OBJECT**.
 OPENHARMONY_WANT = 'openharmony.want'
 ```
 
-Want defined for the system.
-
-This type belongs to **OBJECT**.
+Want defined for the system. This type belongs to **OBJECT**.
 
 **Since:** 12
 
@@ -2791,9 +2444,7 @@ This type belongs to **OBJECT**.
 OFD = 'general.ofd'
 ```
 
-Open Fixed-layout Document (OFD).
-
-This type belongs to **COMPOSITE_OBJECT**.
+Open Fixed-layout Document (OFD). This type belongs to **COMPOSITE_OBJECT**.
 
 **Since:** 12
 
@@ -2807,9 +2458,7 @@ This type belongs to **COMPOSITE_OBJECT**.
 CAD = 'general.cad'
 ```
 
-Generic type of all computer-aided design types.
-
-This type belongs to **OBJECT**.
+Generic type of all computer-aided design types. This type belongs to **OBJECT**.
 
 **Since:** 12
 
@@ -2823,9 +2472,7 @@ This type belongs to **OBJECT**.
 OCTET_STREAM = 'general.octet-stream'
 ```
 
-Any binary data type.
-
-This type belongs to **OBJECT**.
+Any binary data type. This type belongs to **OBJECT**.
 
 **Since:** 12
 
@@ -2839,9 +2486,7 @@ This type belongs to **OBJECT**.
 FILE_URI = 'general.file-uri'
 ```
 
-File address type.
-
-This type belongs to **TEXT**.
+File address type. This type belongs to **TEXT**.
 
 **Since:** 15
 
@@ -2855,9 +2500,7 @@ This type belongs to **TEXT**.
 CONTENT_FORM = 'general.content-form'
 ```
 
-Content widget type.
-
-This type belongs to **OBJECT**.
+Content widget type. This type belongs to **OBJECT**.
 
 **Since:** 15
 

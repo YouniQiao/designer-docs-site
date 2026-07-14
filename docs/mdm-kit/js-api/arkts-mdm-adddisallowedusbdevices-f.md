@@ -12,13 +12,7 @@ import { usbManager } from '@kit.MDMKit';
 function addDisallowedUsbDevices(admin: Want, usbDevices: Array<UsbDeviceType>): void
 ```
 
-Adds disallowed USB device types.
-
-A policy conflict is reported when this API is called in the following scenarios:
-
-1. The USB capability of the device has been disabled using the [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1) API.
-2. The available USB devices have been added through [addAllowedUsbDevices](arkts-mdm-addallowedusbdevices-f.md#addallowedusbdevices-1).
-3. USB storage write access has been disabled for specific users via the [setDisallowedPolicyForAccount](arkts-mdm-setdisallowedpolicyforaccount-f.md#setdisallowedpolicyforaccount-1) API.
+Adds disallowed USB device types. A policy conflict is reported when this API is called in the following scenarios: 1. The USB capability of the device has been disabled using the [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1) API. 2. The available USB devices have been added through [addAllowedUsbDevices](arkts-mdm-addallowedusbdevices-f.md#addallowedusbdevices-1). 3. USB storage write access has been disabled for specific users via the [setDisallowedPolicyForAccount](arkts-mdm-setdisallowedpolicyforaccount-f.md#setdisallowedpolicyforaccount-1) API.
 
 **Since:** 14
 

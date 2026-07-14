@@ -119,9 +119,7 @@ Sets physical aperture value.
 setVirtualAperture(aperture: number): void
 ```
 
-Sets a virtual aperture. Before the setting, call
-[getSupportedVirtualApertures](arkts-camera-aperturequery-i-sys.md#getsupportedvirtualapertures-1) to obtain the supported
-virtual apertures.
+Sets a virtual aperture. Before the setting, call [getSupportedVirtualApertures](arkts-camera-aperturequery-i-sys.md#getsupportedvirtualapertures-1) to obtain the supported virtual apertures.
 
 **Since:** 11
 

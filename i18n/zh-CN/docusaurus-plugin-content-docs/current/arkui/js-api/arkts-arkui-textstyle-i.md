@@ -12,9 +12,7 @@
 wordBreak?: WordBreak
 ```
 
-弹窗message内容的文本截断方式。
-
-默认值：WordBreak.BREAK_ALL
+弹窗message内容的文本截断方式。 默认值：WordBreak.BREAK_ALL
 
 **类型：** WordBreak
 

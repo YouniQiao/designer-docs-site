@@ -1,7 +1,6 @@
 # IntervalInfo
 
-You can obtain the timestamp information from the event callback, including the timestamp when the current frame
-arrives and the timestamp when the next frame is expected to arrive.
+You can obtain the timestamp information from the event callback, including the timestamp when the current frame arrives and the timestamp when the next frame is expected to arrive.
 
 **Since:** 11
 

@@ -32,11 +32,7 @@ customData: CustomData
 isPopup: boolean
 ```
 
-自动填充服务是否拉起popup窗口。
-
-true：当前拉起popup窗口。
-
-false：当前拉起模态窗。
+自动填充服务是否拉起popup窗口。 true：当前拉起popup窗口。 false：当前拉起模态窗。
 
 **类型：** boolean
 

@@ -48,8 +48,7 @@ Bottom edge of the window.
 START = 2
 ```
 
-Start edge of the window, which is the left edge for left-to-right scripts and the right edge for right-to-left
-scripts.
+Start edge of the window, which is the left edge for left-to-right scripts and the right edge for right-to-left scripts.
 
 **Since:** 10
 
@@ -67,8 +66,7 @@ scripts.
 END = 3
 ```
 
-End edge of the window, which is the right edge for left-to-right scripts and the left edge for right-to-left
-scripts.
+End edge of the window, which is the right edge for left-to-right scripts and the left edge for right-to-left scripts.
 
 **Since:** 10
 

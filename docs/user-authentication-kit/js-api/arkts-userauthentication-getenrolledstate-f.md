@@ -12,10 +12,7 @@ import { userAuth } from '@kit.UserAuthenticationKit';
 function getEnrolledState(authType: UserAuthType): EnrolledState
 ```
 
-Obtains the credential state. This API is used to obtain the credential enrollment information of a specified
-authentication type, including the credential digest and quantity. The application can compare the current query
-result with the previously saved result to determine whether the user has added or deleted credentials, and then
-perform corresponding service processing.
+Obtains the credential state. This API is used to obtain the credential enrollment information of a specified authentication type, including the credential digest and quantity. The application can compare the current query result with the previously saved result to determine whether the user has added or deleted credentials, and then perform corresponding service processing.
 
 **Since:** 12
 

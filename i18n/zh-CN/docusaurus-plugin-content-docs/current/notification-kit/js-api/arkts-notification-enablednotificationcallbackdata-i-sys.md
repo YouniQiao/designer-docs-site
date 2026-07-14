@@ -1,6 +1,6 @@
 # EnabledNotificationCallbackData（系统接口）
 
-应用角标使能状态变化。
+应用角标使能状态变化的回调函数类型。
 
 **起始版本：** 8
 
@@ -30,9 +30,7 @@ readonly bundle: string
 readonly enable: boolean
 ```
 
-应用通知使能状态。
-- true：允许。
-- false：禁止。
+应用通知使能状态。 - true：允许。 - false：禁止。
 
 **类型：** boolean
 

@@ -18,9 +18,7 @@ import { ShowActionMenuOptions, Button, ShowToastOptions, ShowDialogOptions, Sho
 buttons: [Button, Button?, Button?, Button?, Button?, Button?]
 ```
 
-Array of buttons in the dialog box.
-The array structure is {text:'button', color: '#666666'}.
-One to six buttons are supported.
+Array of buttons in the dialog box. The array structure is {text:'button', color: '#666666'}. One to six buttons are supported.
 
 **Type:** [Button, Button?, Button?, Button?, Button?, Button?]
 

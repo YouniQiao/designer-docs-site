@@ -90,9 +90,7 @@ Set the icon resource.
 isFolder?: boolean
 ```
 
-Whether the node is a directory.
-Default value: false.
-true: The node is a directory. false: The node is not a directory.
+Whether the node is a directory. Default value: false. true: The node is a directory. false: The node is not a directory.
 
 **Type:** boolean
 

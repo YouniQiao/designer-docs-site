@@ -4,10 +4,7 @@
 type AudioRendererWriteDataCallback = (data: ArrayBuffer) => AudioDataCallbackResult | void
 ```
 
-Defines the callback function used to write data to the audio renderer. Once the callback function finishes its
-execution, the audio service queues the data pointed to by **data** for playback. Therefore, do not change the data
-outside the callback. It is crucial to fill **data** with the exact length of data designated for playback;
-otherwise, noises may occur during playback.
+Defines the callback function used to write data to the audio renderer. Once the callback function finishes its execution, the audio service queues the data pointed to by **data** for playback. Therefore, do not change the data outside the callback. It is crucial to fill **data** with the exact length of data designated for playback; otherwise, noises may occur during playback.
 
 **Since:** 12
 

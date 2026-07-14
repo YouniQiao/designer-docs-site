@@ -12,10 +12,7 @@ import { text } from '@kit.ArkGraphics2D';
 function getFontDescriptorByFullName(fullName: string, fontType: SystemFontType): Promise<FontDescriptor>
 ```
 
-Obtains the font descriptor based on the font name and type. This API uses a promise to return the result.
-
-A font descriptor is a data structure that describes font features. It contains details of the font appearance and
-properties.
+Obtains the font descriptor based on the font name and type. This API uses a promise to return the result. A font descriptor is a data structure that describes font features. It contains details of the font appearance and properties.
 
 **Since:** 14
 

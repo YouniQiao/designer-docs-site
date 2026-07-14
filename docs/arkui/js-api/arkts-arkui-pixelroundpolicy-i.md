@@ -12,8 +12,7 @@ Enumerates the directions of pixel rounding at the component level.
 bottom?: PixelRoundCalcPolicy
 ```
 
-Rounding alignment for the component's bottom edge.
-<br>Invalid values are rounded using the round-half-up rule.
+Rounding alignment for the component's bottom edge. <br>Invalid values are rounded using the round-half-up rule.
 
 **Type:** PixelRoundCalcPolicy
 
@@ -35,8 +34,7 @@ Rounding alignment for the component's bottom edge.
 end?: PixelRoundCalcPolicy
 ```
 
-Rounding alignment for the component's end edge.
-<br>Invalid values are rounded using the round-half-up rule.
+Rounding alignment for the component's end edge. <br>Invalid values are rounded using the round-half-up rule.
 
 **Type:** PixelRoundCalcPolicy
 
@@ -58,8 +56,7 @@ Rounding alignment for the component's end edge.
 start?: PixelRoundCalcPolicy
 ```
 
-Rounding alignment for the component's start edge.
-<br>Invalid values are rounded using the round-half-up rule.
+Rounding alignment for the component's start edge. <br>Invalid values are rounded using the round-half-up rule.
 
 **Type:** PixelRoundCalcPolicy
 
@@ -81,8 +78,7 @@ Rounding alignment for the component's start edge.
 top?: PixelRoundCalcPolicy
 ```
 
-Rounding alignment for the component's top edge.
-<br>Invalid values are rounded using the round-half-up rule.
+Rounding alignment for the component's top edge. <br>Invalid values are rounded using the round-half-up rule.
 
 **Type:** PixelRoundCalcPolicy
 

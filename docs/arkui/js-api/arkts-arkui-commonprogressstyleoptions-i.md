@@ -12,15 +12,7 @@ Provides common style configuration options for the progress indicator.
 enableSmoothEffect?: boolean
 ```
 
-Whether to enable the smooth effect. When this feature is enabled, the progress value transitions from the current
-value to the target value with a progress change animation displayed on the page. When this feature is disabled,
-the progress value jumps directly to the target value without any animation.
-
-**true**: The smooth effect is enabled.
-
-**false**: The smooth effect is disabled.
-
-Default value: **true**
+Whether to enable the smooth effect. When this feature is enabled, the progress value transitions from the current value to the target value with a progress change animation displayed on the page. When this feature is disabled, the progress value jumps directly to the target value without any animation. **true**: The smooth effect is enabled. **false**: The smooth effect is disabled. Default value: **true**
 
 **Type:** boolean
 

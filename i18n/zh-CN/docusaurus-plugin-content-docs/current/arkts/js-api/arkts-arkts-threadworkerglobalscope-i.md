@@ -1,7 +1,6 @@
 # ThreadWorkerGlobalScope
 
-Worker线程用于与宿主线程通信的类。其中postMessage接口用于向宿主线程发送消息，close接口用于销毁Worker线程。
-ThreadWorkerGlobalScope类继承GlobalScope9+。
+Worker线程用于与宿主线程通信的类。其中postMessage接口用于向宿主线程发送消息，close接口用于销毁Worker线程。 ThreadWorkerGlobalScope类继承GlobalScope9+。
 
 **继承/实现关系：** ThreadWorkerGlobalScope extends [GlobalScope](arkts-arkts-globalscope-i.md)
 
@@ -15,8 +14,7 @@ ThreadWorkerGlobalScope类继承GlobalScope9+。
 callGlobalCallObjectMethod(instanceName: string, methodName: string, timeout: number, ...args: Object[]): Object
 ```
 
-Worker线程调用宿主线程上注册的对象的指定方法，此调用对Worker线程同步，对宿主线程异步，
-返回值通过数据拷贝传递。
+Worker线程调用宿主线程上注册的对象的指定方法，此调用对Worker线程同步，对宿主线程异步， 返回值通过数据拷贝传递。
 
 **起始版本：** 11
 
@@ -253,8 +251,7 @@ workerPort.onmessage = (e: MessageEvents): void => {
 postMessageAtFront?(message: Object, priority: Priority, transfer?: ArrayBuffer[]): void
 ```
 
-Worker线程通过转移对象所有权的方式向宿主线程发送插队消息，并插入到对应优先级队列的队头。
-除Worker线程向主线程发送的场景外，该接口与postMessage功能一致。
+Worker线程通过转移对象所有权的方式向宿主线程发送插队消息，并插入到对应优先级队列的队头。 除Worker线程向主线程发送的场景外，该接口与postMessage功能一致。
 
 **起始版本：** 26.0.0
 
@@ -370,8 +367,7 @@ workerPort.onmessage = (e: MessageEvents) => {
 postMessageWithSharedSendable(message: Object, transfer?: ArrayBuffer[]): void
 ```
 
-Worker线程向宿主线程发送消息，消息中的Sendable对象通过引用传递，
-非Sendable对象通过拷贝数据的方式传递。
+Worker线程向宿主线程发送消息，消息中的Sendable对象通过引用传递， 非Sendable对象通过拷贝数据的方式传递。
 
 **起始版本：** 12
 
@@ -444,9 +440,7 @@ workerInstance.onmessage = (e: MessageEvents) => {
 onmessage?: (this: ThreadWorkerGlobalScope, ev: MessageEvents) => void
 ```
 
-当Worker线程收到来自其宿主线程通过postMessage接口发送的消息时调用的事件处理程序，
-该事件处理程序在Worker线程中执行。其中this指调用者对象本身ThreadWorkerGlobalScope，
-ev类型为MessageEvents，表示收到的消息数据。
+当Worker线程收到来自其宿主线程通过postMessage接口发送的消息时调用的事件处理程序， 该事件处理程序在Worker线程中执行。其中this指调用者对象本身ThreadWorkerGlobalScope， ev类型为MessageEvents，表示收到的消息数据。
 
 **类型：** (this: ThreadWorkerGlobalScope, ev: MessageEvents) => void
 
@@ -462,9 +456,7 @@ ev类型为MessageEvents，表示收到的消息数据。
 onmessageerror?: (this: ThreadWorkerGlobalScope, ev: MessageEvents) => void
 ```
 
-当Worker线程收到一条无法被反序列化的消息时调用的事件处理程序，
-该事件处理程序在Worker线程中执行。其中this指调用者对象本身ThreadWorkerGlobalScope，
-ev类型为MessageEvents，表示收到的消息数据。
+当Worker线程收到一条无法被反序列化的消息时调用的事件处理程序， 该事件处理程序在Worker线程中执行。其中this指调用者对象本身ThreadWorkerGlobalScope， ev类型为MessageEvents，表示收到的消息数据。
 
 **类型：** (this: ThreadWorkerGlobalScope, ev: MessageEvents) => void
 

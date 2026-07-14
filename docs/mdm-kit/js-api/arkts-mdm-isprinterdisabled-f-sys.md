@@ -12,8 +12,7 @@ import { restrictions } from '@kit.MDMKit';
 function isPrinterDisabled(admin: Want, callback: AsyncCallback<boolean>): void
 ```
 
-Queries whether the printing capability of a device is disabled. This API uses an asynchronous callback to return
-the result.
+Queries whether the printing capability of a device is disabled. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 

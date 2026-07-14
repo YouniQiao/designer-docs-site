@@ -138,10 +138,7 @@ setRoundRectShape(roundRect: RoundRect): void
 fillColor: number
 ```
 
-遮罩的填充颜色，使用ARGB格式。默认值为`0XFF000000`。
-
-通过fillColor的透明度和亮度生成一个仅含透明度的颜色。亮度越高，颜色越透明。然后，使用[BlendMode.SRC_IN](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-blendmode-e.md)方式
-与RenderNode本身的颜色混合，生成最终颜色。
+遮罩的填充颜色，使用ARGB格式。默认值为`0XFF000000`。 通过fillColor的透明度和亮度生成一个仅含透明度的颜色。亮度越高，颜色越透明。然后，使用[BlendMode.SRC_IN](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-blendmode-e.md)方式 与RenderNode本身的颜色混合，生成最终颜色。
 
 **类型：** number
 
@@ -161,10 +158,7 @@ fillColor: number
 strokeColor: number
 ```
 
-遮罩的边框颜色，使用ARGB格式。默认值为`0XFF000000`。
-
-通过strokeColor的透明度和亮度生成一个仅含透明度的颜色。亮度越高，颜色越透明。然后，使用[BlendMode.SRC_IN](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-blendmode-e.md)
-方式与RenderNode本身的颜色混合，生成最终颜色。
+遮罩的边框颜色，使用ARGB格式。默认值为`0XFF000000`。 通过strokeColor的透明度和亮度生成一个仅含透明度的颜色。亮度越高，颜色越透明。然后，使用[BlendMode.SRC_IN](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-blendmode-e.md) 方式与RenderNode本身的颜色混合，生成最终颜色。
 
 **类型：** number
 

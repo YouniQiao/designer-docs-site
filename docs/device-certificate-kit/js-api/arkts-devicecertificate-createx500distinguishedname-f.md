@@ -12,8 +12,7 @@ import { cert } from '@kit.DeviceCertificateKit';
 function createX500DistinguishedName(nameStr: string): Promise<X500DistinguishedName>
 ```
 
-Creates an **X500DistinguishedName** object with a name in the form of a string. This API uses a promise to return
-the result.
+Creates an **X500DistinguishedName** object with a name in the form of a string. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -88,8 +87,7 @@ async function createX500DistinguishedName() {
 function createX500DistinguishedName(nameDer: Uint8Array): Promise<X500DistinguishedName>
 ```
 
-Creates an **X500DistinguishedName** object with a name in DER format. This API uses a promise to return the
-result.
+Creates an **X500DistinguishedName** object with a name in DER format. This API uses a promise to return the result.
 
 **Since:** 12
 

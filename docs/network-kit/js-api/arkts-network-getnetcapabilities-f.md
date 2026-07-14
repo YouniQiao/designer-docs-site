@@ -12,8 +12,7 @@ import { connection } from '@kit.NetworkKit';
 function getNetCapabilities(netHandle: NetHandle, callback: AsyncCallback<NetCapabilities>): void
 ```
 
-Obtains {@link NetCapabilities} of a {@link NetHandle} object.
-To invoke this method, you must have the {@code ohos.permission.GET_NETWORK_INFO} permission.
+Obtains {@link NetCapabilities} of a {@link NetHandle} object. To invoke this method, you must have the {@code ohos.permission.GET_NETWORK_INFO} permission.
 
 **Since:** 11
 
@@ -71,8 +70,7 @@ connection.getDefaultNet().then((netHandle: connection.NetHandle) => {
 function getNetCapabilities(netHandle: NetHandle): Promise<NetCapabilities>
 ```
 
-Obtains {@link NetCapabilities} of a {@link NetHandle} object.
-To invoke this method, you must have the {@code ohos.permission.GET_NETWORK_INFO} permission.
+Obtains {@link NetCapabilities} of a {@link NetHandle} object. To invoke this method, you must have the {@code ohos.permission.GET_NETWORK_INFO} permission.
 
 **Since:** 11
 

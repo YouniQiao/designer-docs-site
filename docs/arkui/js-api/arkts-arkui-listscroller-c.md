@@ -1,12 +1,6 @@
 # ListScroller
 
-Implements the scroll controller of the **List** component. A **List** component is bound to a **ListScroller** on a
-one-to-one basis.
-
-> **NOTE**
->
-> **ListScroller** inherits from [Scroller](arkts-arkui-scroller-c.md) and has all methods of
-> [Scroller](arkts-arkui-scroller-c.md).
+Implements the scroll controller of the **List** component. A **List** component is bound to a **ListScroller** on a one-to-one basis. > **NOTE** > > **ListScroller** inherits from [Scroller](arkts-arkui-scroller-c.md) and has all methods of > [Scroller](arkts-arkui-scroller-c.md).
 
 **Inheritance/Implementation:** ListScroller extends [Scroller](arkts-arkui-scroller-c.md)
 
@@ -20,8 +14,7 @@ one-to-one basis.
 closeAllSwipeActions(options?: CloseSwipeActionOptions): void
 ```
 
-Collapses the [list items](arkts-arkui-listitem.md) in the [EXPANDED](arkts-arkui-swipeactionstate-e.md) state and sets callback
-events.
+Collapses the [list items](arkts-arkui-listitem.md) in the [EXPANDED](arkts-arkui-swipeactionstate-e.md) state and sets callback events.
 
 **Since:** 11
 
@@ -50,18 +43,7 @@ events.
 getItemRectInGroup(index: number, indexInGroup: number): RectResult
 ```
 
-Obtains the size of a [list item](arkts-arkui-listitem.md) in a [list item group](arkts-arkui-listitemgroup.md) and its position
-relative to the list.
-
-> **NOTE**
->
-> - The value of **index** must be the index of a child component visible in the display area.
-Otherwise, the value is considered invalid.
-> - The child component for which **index** is set must be a list item group. Otherwise,
-the **index** value is considered invalid.
-> - The value of **indexInGroup** must be the index of a list item in the list item group visible
-in the display area. Otherwise, the value is considered invalid.
-> - When **index** or **indexInGroup** is set to an invalid value, the returned size and position are both **0**.
+Obtains the size of a [list item](arkts-arkui-listitem.md) in a [list item group](arkts-arkui-listitemgroup.md) and its position relative to the list. > **NOTE** > > - The value of **index** must be the index of a child component visible in the display area. Otherwise, the value is considered invalid. > - The child component for which **index** is set must be a list item group. Otherwise, the **index** value is considered invalid. > - The value of **indexInGroup** must be the index of a list item in the list item group visible in the display area. Otherwise, the value is considered invalid. > - When **index** or **indexInGroup** is set to an invalid value, the returned size and position are both **0**.
 
 **Since:** 11
 

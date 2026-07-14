@@ -18,10 +18,7 @@ import { i18n } from '@kit.LocalizationKit';
 cyclicalYear: number
 ```
 
-The cyclical year of date.
-If you need to convert between the chinese calendar and the Gregorian calendar,
-the year range must be set from 1 to 60.
-The value range is all integers.
+The cyclical year of date. If you need to convert between the chinese calendar and the Gregorian calendar, the year range must be set from 1 to 60. The value range is all integers.
 
 **Type:** number
 
@@ -57,9 +54,7 @@ Date of the chinese calendar time.
 gregorianYear: number
 ```
 
-The gregorian year of date.
-If you need to convert between the chinese calendar and the Gregorian calendar,
-the year range must be set from 1900 to 2100.
+The gregorian year of date. If you need to convert between the chinese calendar and the Gregorian calendar, the year range must be set from 1900 to 2100.
 
 **Type:** number
 

@@ -104,8 +104,7 @@ lru.put(33, 3);
 clear(): void
 ```
 
-Clears key-value pairs from this cache. The **afterRemoval()** API will be called to perform subsequent
-operations.
+Clears key-value pairs from this cache. The **afterRemoval()** API will be called to perform subsequent operations.
 
 **Since:** 8
 

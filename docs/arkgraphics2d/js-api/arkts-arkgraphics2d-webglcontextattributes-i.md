@@ -12,8 +12,7 @@ WebGL 1.0
 alpha?: boolean
 ```
 
-If true, the drawing buffer has an alpha channel for the purposes of storing
-both color and alpha values.
+If true, the drawing buffer has an alpha channel for the purposes of storing both color and alpha values.
 
 **Type:** boolean
 
@@ -77,8 +76,7 @@ If true, the drawing buffer is not synchronized with the display's refresh.
 failIfMajorPerformanceCaveat?: boolean
 ```
 
-If true, a context creation fails if the implementation determines that
-the performance would be dramatically low.
+If true, a context creation fails if the implementation determines that the performance would be dramatically low.
 
 **Type:** boolean
 

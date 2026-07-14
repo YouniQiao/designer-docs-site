@@ -1,8 +1,6 @@
 # ContentCoverOptions
 
-继承自[BindOptions](arkts-arkui-bindoptions-i.md)。
-
-全屏模态页面内容选项。
+继承自[BindOptions](arkts-arkui-bindoptions-i.md)。 全屏模态页面内容选项。
 
 **继承/实现关系：** ContentCoverOptions extends [BindOptions](arkts-arkui-bindoptions-i.md)
 
@@ -36,13 +34,7 @@ enableSafeArea?: boolean
 modalTransition?: ModalTransition
 ```
 
-全屏模态页面的系统转场方式。
-
-默认值：ModalTransition.DEFAULT。
-
-**说明：**
-
-与transition同时设置时，此属性不生效。
+全屏模态页面的系统转场方式。 默认值：ModalTransition.DEFAULT。 **说明：** 与transition同时设置时，此属性不生效。
 
 **类型：** ModalTransition
 
@@ -62,12 +54,7 @@ modalTransition?: ModalTransition
 onWillDismiss?: Callback<DismissContentCoverAction>
 ```
 
-全屏模态页面交互式关闭回调函数。
-
-**说明：**
-
-当用户执行back事件关闭交互操作时，如果注册该回调函数，则不会立刻关闭。在回调函数中可以通过reason得到阻拦关闭页面的操作类型，从而根据原因选择是否关闭全屏模态页面。在onWillDismiss回调中，不能再做
-onWillDismiss拦截。
+全屏模态页面交互式关闭回调函数。 **说明：** 当用户执行back事件关闭交互操作时，如果注册该回调函数，则不会立刻关闭。在回调函数中可以通过reason得到阻拦关闭页面的操作类型，从而根据原因选择是否关闭全屏模态页面。在onWillDismiss回调中，不能再做 onWillDismiss拦截。
 
 **类型：** Callback<DismissContentCoverAction>
 

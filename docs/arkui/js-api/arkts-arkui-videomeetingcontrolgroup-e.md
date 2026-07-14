@@ -1,7 +1,6 @@
 # VideoMeetingControlGroup
 
-Enumerates the video meeting component groups. They are used only when
-[PiPTemplateType](arkts-arkui-piptemplatetype-e.md) is set to **VIDEO_MEETING**.
+Enumerates the video meeting component groups. They are used only when [PiPTemplateType](arkts-arkui-piptemplatetype-e.md) is set to **VIDEO_MEETING**.
 
 **Since:** 12
 

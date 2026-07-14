@@ -34,9 +34,7 @@ Creates a content modifier.
 contentModifier(modifier: Optional<ContentModifier<RatingConfiguration>>)
 ```
 
-Creates a content modifier. Compared with
-[contentModifier](RatingAttribute#contentModifier(modifier: ContentModifier<RatingConfiguration>)), this API
-supports the **undefined** type for the **modifier** parameter.
+Creates a content modifier. Compared with [contentModifier](RatingAttribute#contentModifier(modifier: ContentModifier<RatingConfiguration>)), this API supports the **undefined** type for the **modifier** parameter.
 
 **Since:** 18
 
@@ -80,9 +78,7 @@ Triggered when the rating value changes.
 onChange(callback: Optional<OnRatingChangeCallback>)
 ```
 
-Triggered when the rating value changes. Compared with
-[onChange](RatingAttribute#onChange(callback: (value: number) => void)), this API supports the **undefined**
-type for the **callback** parameter.
+Triggered when the rating value changes. Compared with [onChange](RatingAttribute#onChange(callback: (value: number) => void)), this API supports the **undefined** type for the **callback** parameter.
 
 **Since:** 18
 
@@ -106,11 +102,7 @@ type for the **callback** parameter.
 starStyle(options: StarStyleOptions)
 ```
 
-Sets the star style. For details about the supported image types, see [Image](../../apis-image-kit/arkts-apis/arkts-multimedia-image.md).
-
-Local and network images are supported. The PixelMap type is not supported.
-
-By default, the image is loaded in asynchronous mode. Synchronous loading is not supported.
+Sets the star style. For details about the supported image types, see [Image](../../apis-image-kit/arkts-apis/arkts-multimedia-image.md). Local and network images are supported. The PixelMap type is not supported. By default, the image is loaded in asynchronous mode. Synchronous loading is not supported.
 
 **Since:** 7
 
@@ -132,14 +124,7 @@ By default, the image is loaded in asynchronous mode. Synchronous loading is not
 starStyle(options: Optional<StarStyleOptions>)
 ```
 
-Sets the star style. For details about the supported image types, see [Image](../../apis-image-kit/arkts-apis/arkts-multimedia-image.md).
-
-Local and network images are supported. The PixelMap type is not supported.
-
-By default, the image is loaded in asynchronous mode. Synchronous loading is not supported.
-
-Compared with [starStyle](RatingAttribute#starStyle(options: StarStyleOptions)), this API supports the
-**undefined** type for the **options** parameter.
+Sets the star style. For details about the supported image types, see [Image](../../apis-image-kit/arkts-apis/arkts-multimedia-image.md). Local and network images are supported. The PixelMap type is not supported. By default, the image is loaded in asynchronous mode. Synchronous loading is not supported. Compared with [starStyle](RatingAttribute#starStyle(options: StarStyleOptions)), this API supports the **undefined** type for the **options** parameter.
 
 **Since:** 18
 
@@ -185,9 +170,7 @@ Sets the total number of stars. Values less than 0 are treated as the default va
 stars(starCount: Optional<number>)
 ```
 
-Sets the total number of stars. Values less than 0 are treated as the default value. Compared with
-[stars](RatingAttribute#stars(value: number)), this API supports the **undefined** type for the **starCount**
-parameter.
+Sets the total number of stars. Values less than 0 are treated as the default value. Compared with [stars](RatingAttribute#stars(value: number)), this API supports the **undefined** type for the **starCount** parameter.
 
 **Since:** 18
 
@@ -233,9 +216,7 @@ Sets the step for rating. Values less than 0.1 are treated as the default value.
 stepSize(size: Optional<number>)
 ```
 
-Sets the step for rating. Values less than 0.1 are treated as the default value. Compared with
-[stepSize](RatingAttribute#stepSize(value: number)), this API supports the **undefined** type for the
-**size** parameter.
+Sets the step for rating. Values less than 0.1 are treated as the default value. Compared with [stepSize](RatingAttribute#stepSize(value: number)), this API supports the **undefined** type for the **size** parameter.
 
 **Since:** 18
 

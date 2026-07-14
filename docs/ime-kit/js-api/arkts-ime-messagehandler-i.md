@@ -1,20 +1,6 @@
 # MessageHandler
 
-Represents a custom communication object.
-
-> **NOTE**
->
-> You can register this object to receive custom communication data sent by the edit box application attached to
-> the input method application. When the custom communication data is received, the
-> [onMessage](arkts-ime-messagehandler-i.md#onmessage-1) callback in
-> this object is triggered.
->
-> This object is globally unique. After multiple registrations, only the last registered object is valid and
-> retained, and the [onTerminated](arkts-ime-messagehandler-i.md#onterminated-1) callback of the
-> penultimate registered object is triggered.
->
-> If this object is unregistered, its [onTerminated](arkts-ime-messagehandler-i.md#onterminated-1)
-> callback will be triggered.
+Represents a custom communication object. > **NOTE** > > You can register this object to receive custom communication data sent by the edit box application attached to > the input method application. When the custom communication data is received, the > [onMessage](arkts-ime-messagehandler-i.md#onmessage-1) callback in > this object is triggered. > > This object is globally unique. After multiple registrations, only the last registered object is valid and > retained, and the [onTerminated](arkts-ime-messagehandler-i.md#onterminated-1) callback of the > penultimate registered object is triggered. > > If this object is unregistered, its [onTerminated](arkts-ime-messagehandler-i.md#onterminated-1) > callback will be triggered.
 
 **Since:** 15
 
@@ -32,15 +18,7 @@ import { inputMethodEngine } from '@kit.IMEKit';
 onMessage(msgId: string, msgParam?: ArrayBuffer): void
 ```
 
-Receives the custom data callback sent by the edit box application attached to the input method application.
-
-> **NOTE**
->
-> This callback is triggered when the registered [MessageHandler](arkts-ime-messagehandler-i.md)
-> receives custom communication data sent by the edit box application attached to the input method application.
->
-> The **msgId** parameter is mandatory, and the **msgParam** parameter is optional. If only the custom **msgId**
-> data is received, confirm it with the data sender.
+Receives the custom data callback sent by the edit box application attached to the input method application. > **NOTE** > > This callback is triggered when the registered [MessageHandler](arkts-ime-messagehandler-i.md) > receives custom communication data sent by the edit box application attached to the input method application. > > The **msgId** parameter is mandatory, and the **msgParam** parameter is optional. If only the custom **msgId** > data is received, confirm it with the data sender.
 
 **Since:** 15
 
@@ -80,17 +58,7 @@ inputMethodEngine.getInputMethodAbility()
 onTerminated(): void
 ```
 
-Listens for MessageHandler termination.
-
-> **NOTE**
->
-> When an application registers a new [MessageHandler](arkts-ime-messagehandler-i.md) object, the
-> [onTerminated](arkts-ime-messagehandler-i.md#onterminated-1) callback of the penultimate registered
-> [MessageHandler](arkts-ime-messagehandler-i.md) object is triggered.
->
-> When an application unregisters a new [MessageHandler](arkts-ime-messagehandler-i.md) object, the
-> [onTerminated](arkts-ime-messagehandler-i.md#onterminated-1) callback of the registered
-> [MessageHandler](arkts-ime-messagehandler-i.md) object is triggered.
+Listens for MessageHandler termination. > **NOTE** > > When an application registers a new [MessageHandler](arkts-ime-messagehandler-i.md) object, the > [onTerminated](arkts-ime-messagehandler-i.md#onterminated-1) callback of the penultimate registered > [MessageHandler](arkts-ime-messagehandler-i.md) object is triggered. > > When an application unregisters a new [MessageHandler](arkts-ime-messagehandler-i.md) object, the > [onTerminated](arkts-ime-messagehandler-i.md#onterminated-1) callback of the registered > [MessageHandler](arkts-ime-messagehandler-i.md) object is triggered.
 
 **Since:** 15
 

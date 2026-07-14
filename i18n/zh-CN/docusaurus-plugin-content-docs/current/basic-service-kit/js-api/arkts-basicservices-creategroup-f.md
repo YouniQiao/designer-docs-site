@@ -6,8 +6,7 @@
 function createGroup(config: GroupConfig): Promise<string>
 ```
 
-根据[GroupConfig](arkts-basicservices-groupconfig-i.md)分组条件创建分组
-，并返回分组id。使用Promise异步回调。
+根据[GroupConfig](arkts-basicservices-groupconfig-i.md)分组条件创建分组 ，并返回分组id。使用Promise异步回调。
 
 **起始版本：** 15
 

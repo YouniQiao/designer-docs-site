@@ -32,9 +32,7 @@ User permission on the DLP file, for example, read-only.
 flags: number
 ```
 
-Operations that can be performed on the DLP file. The value is a combination of different
-[ActionFlagTypes](arkts-dataprotection-actionflagtype-e.md). If the value is out of range, error code 19100001 is
-thrown.
+Operations that can be performed on the DLP file. The value is determined by a combination of different [ActionFlagTypes](arkts-dataprotection-actionflagtype-e.md).
 
 **Type:** number
 

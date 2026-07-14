@@ -12,8 +12,7 @@ import { geolocation } from '@kit.LocationKit';
 function flushCachedGnssLocations(callback: AsyncCallback<boolean>): void
 ```
 
-All prepared GNSS locations are returned to the application through the callback function,
-and the bottom-layer buffer is cleared.
+All prepared GNSS locations are returned to the application through the callback function, and the bottom-layer buffer is cleared.
 
 **Since:** 8
 
@@ -53,8 +52,7 @@ geolocation.flushCachedGnssLocations((err, result) => {
 function flushCachedGnssLocations(): Promise<boolean>
 ```
 
-All prepared GNSS locations are returned to the application through the callback function,
-and the bottom-layer buffer is cleared.
+All prepared GNSS locations are returned to the application through the callback function, and the bottom-layer buffer is cleared.
 
 **Since:** 8
 

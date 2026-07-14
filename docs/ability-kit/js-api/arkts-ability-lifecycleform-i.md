@@ -12,9 +12,7 @@ interface of form lifecycle.
 onAcquireFormState?(want: Want): formInfo.FormState
 ```
 
-Called to return a {@link FormState} object.
-<p>You must override this callback if you want this ability to return the actual form state. Otherwise,
-this method returns {@link FormState#DEFAULT} by default.</p>
+Called to return a {@link FormState} object. <p>You must override this callback if you want this ability to return the actual form state. Otherwise, this method returns {@link FormState#DEFAULT} by default.</p>
 
 **Since:** 8
 
@@ -86,8 +84,7 @@ Called to return a {@link formBindingData.FormBindingData} object.
 onDestroy?(formId: string): void
 ```
 
-Called to notify the form provider that a specified form has been deleted. Override this method if
-you want your application, as the form provider, to be notified of form deletion.
+Called to notify the form provider that a specified form has been deleted. Override this method if you want your application, as the form provider, to be notified of form deletion.
 
 **Since:** 8
 
@@ -107,8 +104,7 @@ you want your application, as the form provider, to be notified of form deletion
 onEvent?(formId: string, message: string): void
 ```
 
-Called when a specified message event defined by the form provider is triggered. This method is valid only for
-JS forms.
+Called when a specified message event defined by the form provider is triggered. This method is valid only for JS forms.
 
 **Since:** 8
 

@@ -19,8 +19,8 @@ import { data } from '@kit.TelephonyKit';
 | Name | Description |
 | --- | --- |
 | [getActiveApnName](arkts-telephony-getactiveapnname-f.md#getactiveapnname-1) | Get Active APN's Name. |
-| [getCellularDataFlowType](arkts-telephony-getcellulardataflowtype-f.md#getcellulardataflowtype-1) | Indicates that there is no uplink or downlink data.&lt;p&gt;It is a return value of service state query of cellular data services. |
-| [getCellularDataFlowType](arkts-telephony-getcellulardataflowtype-f.md#getcellulardataflowtype-2) | Indicates that there is no uplink or downlink data.&lt;p&gt;It is a return value of service state query of cellular data services. |
+| [getCellularDataFlowType](arkts-telephony-getcellulardataflowtype-f.md#getcellulardataflowtype-1) | Indicates that there is no uplink or downlink data. &lt;p&gt;It is a return value of service state query of cellular data services. |
+| [getCellularDataFlowType](arkts-telephony-getcellulardataflowtype-f.md#getcellulardataflowtype-2) | Indicates that there is no uplink or downlink data. &lt;p&gt;It is a return value of service state query of cellular data services. |
 | [getCellularDataState](arkts-telephony-getcellulardatastate-f.md#getcellulardatastate-1) | Obtain the connection state of the PS domain. |
 | [getCellularDataState](arkts-telephony-getcellulardatastate-f.md#getcellulardatastate-2) | Obtain the connection state of the PS domain. |
 | [getDefaultCellularDataSimId](arkts-telephony-getdefaultcellulardatasimid-f.md#getdefaultcellulardatasimid-1) | Obtains the default cellular data SIM ID. |
@@ -36,7 +36,7 @@ import { data } from '@kit.TelephonyKit';
 | [queryAllApns](arkts-telephony-queryallapns-f.md#queryallapns-1) | Query all APN info. |
 | [queryApnIds](arkts-telephony-queryapnids-f.md#queryapnids-1) | Query APN IDs. |
 | [setPreferredApn](arkts-telephony-setpreferredapn-f.md#setpreferredapn-1) | Set preferred APN. |
-| [showSystemApnSettings](arkts-telephony-showsystemapnsettings-f.md#showsystemapnsettings-1) | Open the system APN selection menu, which is presented in a semi-modal form and canbe used to select a specific APN. This API uses a promise to return the result.If there is no SIM card or the device does not support the APN menu, the menu cannot be displayed. |
+| [showSystemApnSettings](arkts-telephony-showsystemapnsettings-f.md#showsystemapnsettings-1) | Open the system APN selection menu, which is presented in a semi-modal form and can be used to select a specific APN. This API uses a promise to return the result. If there is no SIM card or the device does not support the APN menu, the menu cannot be displayed. |
 
 <!--Del-->
 ### Functions（系统接口）

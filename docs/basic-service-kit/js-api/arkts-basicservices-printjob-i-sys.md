@@ -84,8 +84,7 @@ FD list of files to print.
 isLandscape: boolean
 ```
 
-Whether pages are printed in landscape mode. The value **true** indicates that pages are printed in landscape
-mode, and **false** indicates that pages are printed in portrait mode. The default value is **false**.
+Whether pages are printed in landscape mode. The value **true** indicates that pages are printed in landscape mode, and **false** indicates that pages are printed in portrait mode. The default value is **false**.
 
 **Type:** boolean
 
@@ -101,8 +100,7 @@ mode, and **false** indicates that pages are printed in portrait mode. The defau
 isSequential: boolean
 ```
 
-Whether the printing is sequential. The value **true** means that the printing is sequential, and **false** means
-the opposite. The default value is **false**.
+Whether the printing is sequential. The value **true** means that the printing is sequential, and **false** means the opposite. The default value is **false**.
 
 **Type:** boolean
 

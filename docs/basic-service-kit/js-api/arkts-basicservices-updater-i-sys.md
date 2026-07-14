@@ -131,8 +131,7 @@ try {
 clearError(versionDigestInfo: VersionDigestInfo, clearOptions: ClearOptions, callback: AsyncCallback<void>): void
 ```
 
-Clears errors. If an exception occurs during version download or installation, the update package and update
-status are cleared. This API uses an asynchronous callback to return the result.
+Clears errors. If an exception occurs during version download or installation, the update package and update status are cleared. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -197,8 +196,7 @@ try {
 clearError(versionDigestInfo: VersionDigestInfo, clearOptions: ClearOptions): Promise<void>
 ```
 
-Clears errors. If an exception occurs during version download or installation, the update package and update
-status are cleared. This API uses a promise to return the result.
+Clears errors. If an exception occurs during version download or installation, the update package and update status are cleared. This API uses a promise to return the result.
 
 **Since:** 9
 

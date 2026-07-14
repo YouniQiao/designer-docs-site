@@ -6,14 +6,7 @@
 function enable(enable: boolean, callback: AsyncCallback<void>): void
 ```
 
-开启、关闭键鼠穿越，使用callback异步回调。
-
-> **说明：**
->
-> 从 API version 9开始支持，从API version 23开始废弃。建议使用
-> [cooperate.prepareCooperate](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-preparecooperate-f-sys.md#preparecooperate-1)、
-> [cooperate.unprepareCooperate](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-unpreparecooperate-f-sys.md#unpreparecooperate-1)
-> 替代。
+开启、关闭键鼠穿越，使用callback异步回调。 > **说明：** > > 从 API version 9开始支持，从API version 23开始废弃。建议使用 > [cooperate.prepareCooperate](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-preparecooperate-f-sys.md#preparecooperate-1)、 > [cooperate.unprepareCooperate](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-unpreparecooperate-f-sys.md#unpreparecooperate-1) > 替代。
 
 **起始版本：** 9
 
@@ -77,13 +70,7 @@ struct Index {
 function enable(enable: boolean): Promise<void>
 ```
 
-开启、关闭键鼠穿越，使用Promise异步回调。
-
-> **说明：**
->
-> 从 API version 9开始支持，从API version 23开始废弃。建议使用
-> [cooperate.prepareCooperate](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-preparecooperate-f-sys.md#preparecooperate-2)、
-> [cooperate.unprepareCooperate](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-unpreparecooperate-f-sys.md#unpreparecooperate-2)替代。
+开启、关闭键鼠穿越，使用Promise异步回调。 > **说明：** > > 从 API version 9开始支持，从API version 23开始废弃。建议使用 > [cooperate.prepareCooperate](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-preparecooperate-f-sys.md#preparecooperate-2)、 > [cooperate.unprepareCooperate](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-unpreparecooperate-f-sys.md#unpreparecooperate-2)替代。
 
 **起始版本：** 9
 

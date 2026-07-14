@@ -1,12 +1,6 @@
 # AVMetadataExtractor
 
-AVMetadataExtractor is a class for metadata retrieval. It provides APIs to obtain metadata and thumbnails from
-media assets. Before calling any API of AVMetadataExtractor, you must use
-[media.createAVMetadataExtractor](arkts-media-createavmetadataextractor-f.md#createavmetadataextractor-3)
-to create an AVMetadataExtractor instance.
-
-For details about the demo of obtaining audio or video metadata and video thumbnails, see
-[Using AVMetadataExtractor to Extract Audio and Video Metadata (ArkTS)](../../../../media/media/avmetadataextractor.md).
+AVMetadataExtractor is a class for metadata retrieval. It provides APIs to obtain metadata and thumbnails from media assets. Before calling any API of AVMetadataExtractor, you must use [media.createAVMetadataExtractor](arkts-media-createavmetadataextractor-f.md#createavmetadataextractor-3) to create an AVMetadataExtractor instance. For details about the demo of obtaining audio or video metadata and video thumbnails, see [Using AVMetadataExtractor to Extract Audio and Video Metadata (ArkTS)](../../../../media/media/avmetadataextractor.md).
 
 **Since:** 11
 
@@ -24,8 +18,7 @@ import { media } from '@kit.MediaKit';
 cancelAllFetchFrames(): void
 ```
 
-Cancels the ongoing task of obtaining thumbnails in batches. (The thumbnails that have been obtained are not
-affected.)
+Cancels the ongoing task of obtaining thumbnails in batches. (The thumbnails that have been obtained are not affected.)
 
 **Since:** 23
 
@@ -125,8 +118,7 @@ fetchFrameByTimeWithTimeout(timeUs: number, options: AVImageQueryOptions, param:
       timeoutMs: number): Promise<image.PixelMap | undefined>
 ```
 
-Obtains a video thumbnail. You can set the maximum timeout interval (**timeoutMs**) for obtaining the thumbnail.
-This API uses a promise to return the result.
+Obtains a video thumbnail. You can set the maximum timeout interval (**timeoutMs**) for obtaining the thumbnail. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 
@@ -166,16 +158,7 @@ fetchFramesByTimes(timesUs: number[], queryOption: AVImageQueryOptions, param: P
         callback: OnFrameFetched): void
 ```
 
-Obtains video thumbnails in batches. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> - The given video resource is decoded first, and then image frames are extracted from each time point in the
-> **timesUs** array based on the provided **options** and **param**.
->
-> - When each image extraction is complete, the system calls the callback function and passes the extraction
-> result. Note that the execution order of the callback function may be inconsistent with the time points in the
-> **timesUs** array.
+Obtains video thumbnails in batches. This API uses an asynchronous callback to return the result. > **NOTE** > > - The given video resource is decoded first, and then image frames are extracted from each time point in the > **timesUs** array based on the provided **options** and **param**. > > - When each image extraction is complete, the system calls the callback function and passes the extraction > result. Note that the execution order of the callback function may be inconsistent with the time points in the > **timesUs** array.
 
 **Since:** 23
 
@@ -210,20 +193,7 @@ fetchFramesByTimesWithTimeout(timesUs: number[], queryOption: AVImageQueryOption
       timeoutMs: number, callback: OnFrameFetched): void
 ```
 
-Obtains video thumbnails in batches. You can set the maximum timeout interval (**timeoutMs**) for obtaining each
-thumbnail. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> - The given video resource is decoded first, and then image frames are extracted from each time point in the
-> **timesUs** array based on the provided **options** and **param**.
->
-> - When each image extraction is complete, the system calls the callback function and passes the extraction
-> result. Note that the execution order of the callback function may be inconsistent with the time points in the
-> **timesUs** array.
->
-> - The **timeoutMs** parameter indicates the maximum timeout interval for obtaining each thumbnail frame, not
-> the entire batch thumbnail extraction process.
+Obtains video thumbnails in batches. You can set the maximum timeout interval (**timeoutMs**) for obtaining each thumbnail. This API uses an asynchronous callback to return the result. > **NOTE** > > - The given video resource is decoded first, and then image frames are extracted from each time point in the > **timesUs** array based on the provided **options** and **param**. > > - When each image extraction is complete, the system calls the callback function and passes the extraction > result. Note that the execution order of the callback function may be inconsistent with the time points in the > **timesUs** array. > > - The **timeoutMs** parameter indicates the maximum timeout interval for obtaining each thumbnail frame, not > the entire batch thumbnail extraction process.
 
 **Since:** 26.0.0
 
@@ -310,8 +280,7 @@ Obtains the media metadata. This API uses a promise to return the result.
 fetchMetadataWithTimeout(timeoutMs: number): Promise<AVMetadata | undefined>
 ```
 
-Obtains the media metadata. You can set the maximum timeout interval (**timeoutMs**) for obtaining the metadata.
-This API uses a promise to return the result.
+Obtains the media metadata. You can set the maximum timeout interval (**timeoutMs**) for obtaining the metadata. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 
@@ -395,11 +364,7 @@ Releases this AVMetadataExtractor instance. This API uses a promise to return th
 setUrlSource(url: string, headers?: Record<string, string>): void
 ```
 
-Sets the data source for a network on-demand resource. Only network metadata (
-[fetchMetadata](arkts-media-avmetadataextractor-i.md#fetchmetadata-1)) and
-thumbnails (
-[fetchFrameByTime](arkts-media-avmetadataextractor-i.md#fetchframebytime-1)
-) can be obtained. The media resource URL must be set before the retrieval.
+Sets the data source for a network on-demand resource. Only network metadata ( [fetchMetadata](arkts-media-avmetadataextractor-i.md#fetchmetadata-1)) and thumbnails ( [fetchFrameByTime](arkts-media-avmetadataextractor-i.md#fetchframebytime-1) ) can be obtained. The media resource URL must be set before the retrieval.
 
 **Since:** 20
 
@@ -418,11 +383,7 @@ thumbnails (
 dataSrc ?: AVDataSrcDescriptor
 ```
 
-Streaming media resource descriptor, which specifies the data source. Before obtaining metadata, you must set the
-data source through either **fdSrc** or **dataSrc**.
-
-When an application obtains a media file from the remote, you can set **dataSrc** to obtain the metadata before
-the application finishes the downloading.
+Streaming media resource descriptor, which specifies the data source. Before obtaining metadata, you must set the data source through either **fdSrc** or **dataSrc**. When an application obtains a media file from the remote, you can set **dataSrc** to obtain the metadata before the application finishes the downloading.
 
 **Type:** AVDataSrcDescriptor
 
@@ -436,19 +397,7 @@ the application finishes the downloading.
 fdSrc ?: AVFileDescriptor
 ```
 
-Media file descriptor, which specifies the data source. Before obtaining metadata, you must set the data source
-through either **fdSrc** or **dataSrc**.
-
-There is a media file that stores continuous assets, the address offset is 0, and the byte length is 100. Its
-file descriptor is **AVFileDescriptor { fd = resourceHandle; offset = 0; length = 100; }**.
-
-**NOTE**
-
-After the resource handle (FD) is transferred to an AVMetadataExtractor instance, do not use the resource handle
-to perform other read and write operations, including but not limited to transferring this handle to other
-AVPlayer, AVMetadataExtractor, AVImageGenerator, or AVTranscoder instance. Competition occurs when multiple
-AVMetadataExtractor use the same resource handle to read and write files at the same time, resulting in errors in
-obtaining data.
+Media file descriptor, which specifies the data source. Before obtaining metadata, you must set the data source through either **fdSrc** or **dataSrc**. There is a media file that stores continuous assets, the address offset is 0, and the byte length is 100. Its file descriptor is **AVFileDescriptor { fd = resourceHandle; offset = 0; length = 100; }**. **NOTE** After the resource handle (FD) is transferred to an AVMetadataExtractor instance, do not use the resource handle to perform other read and write operations, including but not limited to transferring this handle to other AVPlayer, AVMetadataExtractor, AVImageGenerator, or AVTranscoder instance. Competition occurs when multiple AVMetadataExtractor use the same resource handle to read and write files at the same time, resulting in errors in obtaining data.
 
 **Type:** AVFileDescriptor
 

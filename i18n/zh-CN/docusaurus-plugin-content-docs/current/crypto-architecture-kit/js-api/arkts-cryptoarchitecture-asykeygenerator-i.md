@@ -1,7 +1,6 @@
 # AsyKeyGenerator
 
-非对称密钥生成器。在使用该类的方法前，需要先使用[createAsyKeyGenerator](arkts-cryptoarchitecture-createasykeygenerator-f.md#createasykeygenerator-1)方法构建
-一个AsyKeyGenerator实例。
+非对称密钥生成器。在使用该类的方法前，需要先使用[createAsyKeyGenerator](arkts-cryptoarchitecture-createasykeygenerator-f.md#createasykeygenerator-1)方法构建 一个AsyKeyGenerator实例。
 
 **起始版本：** 9
 
@@ -209,11 +208,7 @@ keyGenPromise.then(keyPair => {
 convertKeySync(pubKey: DataBlob | null, priKey: DataBlob | null): KeyPair
 ```
 
-同步获取指定数据生成非对称密钥。
-
-<br><br>**说明：**
-<br>建议优先使用异步API{@link convertKey}。同步API可能因系统繁忙、高负载等原因耗时较长而阻塞主线程。
-因此建议在子线程中调用同步API，以避免阻塞主线程。
+同步获取指定数据生成非对称密钥。 <br><br>**说明：** <br>建议优先使用异步API{@link convertKey}。同步API可能因系统繁忙、高负载等原因耗时较长而阻塞主线程。 因此建议在子线程中调用同步API，以避免阻塞主线程。
 
 **起始版本：** 12
 
@@ -278,16 +273,7 @@ try {
 convertPemKey(pubKey: string | null, priKey: string | null): Promise<KeyPair>
 ```
 
-获取指定数据生成非对称密钥。使用Promise异步回调。
-
-> **说明：**
->
-> 1. 使用convertPemKey()将外部字符串转换为Crypto框架定义的非对称密钥对象时，公钥需满足ASN.1语法、X.509规范和PEM编码格式，私钥需
-> 满足ASN.1语法、PKCS#8规范和PEM编码格式。
-> 2. 在convertPemKey()中，可以只传入pubKey或priKey中的一个，也可以两个都传入。如果只传入其中一个，返回的KeyPair实例中只包含从传
-> 入数据转换而来的密钥。
-> 3. 使用convertPemKey将外部字符串转换为Crypto框架定义的非对称密钥对象时，系统不会校验生成的密钥对象规格是否与为非对称密钥生成器指
-> 定的密钥规格相同。
+获取指定数据生成非对称密钥。使用Promise异步回调。 > **说明：** > > 1. 使用convertPemKey()将外部字符串转换为Crypto框架定义的非对称密钥对象时，公钥需满足ASN.1语法、X.509规范和PEM编码格式，私钥需 > 满足ASN.1语法、PKCS#8规范和PEM编码格式。 > 2. 在convertPemKey()中，可以只传入pubKey或priKey中的一个，也可以两个都传入。如果只传入其中一个，返回的KeyPair实例中只包含从传 > 入数据转换而来的密钥。 > 3. 使用convertPemKey将外部字符串转换为Crypto框架定义的非对称密钥对象时，系统不会校验生成的密钥对象规格是否与为非对称密钥生成器指 > 定的密钥规格相同。
 
 **起始版本：** 12
 
@@ -364,17 +350,7 @@ async function TestConvertPemKeyByPromise() {
 convertPemKey(pubKey: string | null, priKey: string | null, password: string): Promise<KeyPair>
 ```
 
-获取指定数据生成非对称密钥。支持加密的私钥，同步传入私钥口令解密私钥。使用Promise异步回调。
-
-> **说明：**
->
-> 1. 使用convertPemKey()将外部字符串转换为Crypto框架定义的非对称密钥对象时，公钥需满足ASN.1语法、X.509规范和PEM编码格式，私钥需
-> 满足ASN.1语法、PKCS#8规范和PEM编码格式。
-> 2. 在convertPemKey()中，可以只传入pubKey或priKey中的一个，也可以两个都传入。如果只传入其中一个，返回的KeyPair实例中只包含从传
-> 入数据转换而来的密钥。
-> 3. 使用convertPemKey将外部字符串转换为Crypto框架定义的非对称密钥对象时，系统不会校验生成的密钥对象规格是否与为非对称密钥生成器指
-> 定的密钥规格相同。
-> 4. 如果传入了password参数，可用于解密加密的私钥。
+获取指定数据生成非对称密钥。支持加密的私钥，同步传入私钥口令解密私钥。使用Promise异步回调。 > **说明：** > > 1. 使用convertPemKey()将外部字符串转换为Crypto框架定义的非对称密钥对象时，公钥需满足ASN.1语法、X.509规范和PEM编码格式，私钥需 > 满足ASN.1语法、PKCS#8规范和PEM编码格式。 > 2. 在convertPemKey()中，可以只传入pubKey或priKey中的一个，也可以两个都传入。如果只传入其中一个，返回的KeyPair实例中只包含从传 > 入数据转换而来的密钥。 > 3. 使用convertPemKey将外部字符串转换为Crypto框架定义的非对称密钥对象时，系统不会校验生成的密钥对象规格是否与为非对称密钥生成器指 > 定的密钥规格相同。 > 4. 如果传入了password参数，可用于解密加密的私钥。
 
 **起始版本：** 18
 
@@ -447,16 +423,7 @@ async function TestConvertPemKeyByPromise() {
 convertPemKeySync(pubKey: string | null, priKey: string | null): KeyPair
 ```
 
-同步获取指定数据，生成非对称密钥。
-
-> **说明：**
-> convertPemKeySync接口与convertPemKey接口注意事项相同，见
-> [convertPemKey](arkts-cryptoarchitecture-asykeygenerator-i.md#convertpemkey-1)
-> 接口说明。
-
-<br><br>**说明：**
-<br>建议优先使用异步API{@link convertPemKey}。同步API可能因系统繁忙、高负载等原因耗时较长而阻塞主线程。
-因此建议在子线程中调用同步API，以避免阻塞主线程。
+同步获取指定数据，生成非对称密钥。 > **说明：** > convertPemKeySync接口与convertPemKey接口注意事项相同，见 > [convertPemKey](arkts-cryptoarchitecture-asykeygenerator-i.md#convertpemkey-1) > 接口说明。 <br><br>**说明：** <br>建议优先使用异步API{@link convertPemKey}。同步API可能因系统繁忙、高负载等原因耗时较长而阻塞主线程。 因此建议在子线程中调用同步API，以避免阻塞主线程。
 
 **起始版本：** 12
 
@@ -536,16 +503,7 @@ function TestConvertPemKeyBySync() {
 convertPemKeySync(pubKey: string | null, priKey: string | null, password: string): KeyPair
 ```
 
-获取指定数据生成非对称密钥。支持加密的私钥，同步传入私钥口令解密私钥。使用同步方法。
-
-> **说明：**
-> convertPemKeySync接口与convertPemKey接口注意事项相同，见
-> [convertPemKey](arkts-cryptoarchitecture-asykeygenerator-i.md#convertpemkey-2)
-> 接口说明。
-
-<br><br>**说明：**
-<br>建议优先使用异步API{@link convertPemKey}。同步API可能因系统繁忙、高负载等原因耗时较长而阻塞主线程。
-因此建议在子线程中调用同步API，以避免阻塞主线程。
+获取指定数据生成非对称密钥。支持加密的私钥，同步传入私钥口令解密私钥。使用同步方法。 > **说明：** > convertPemKeySync接口与convertPemKey接口注意事项相同，见 > [convertPemKey](arkts-cryptoarchitecture-asykeygenerator-i.md#convertpemkey-2) > 接口说明。 <br><br>**说明：** <br>建议优先使用异步API{@link convertPemKey}。同步API可能因系统繁忙、高负载等原因耗时较长而阻塞主线程。 因此建议在子线程中调用同步API，以避免阻塞主线程。
 
 **起始版本：** 18
 
@@ -713,11 +671,7 @@ keyGenPromise.then(keyPair => {
 generateKeyPairSync(): KeyPair
 ```
 
-同步获取非对称密钥生成器随机生成的密钥。
-
-<br><br>**说明：**
-<br>建议优先使用异步API{@link generateKeyPair}。同步API可能因系统繁忙、高负载等原因耗时较长而阻塞主线程。
-因此建议在子线程中调用同步API，以避免阻塞主线程。
+同步获取非对称密钥生成器随机生成的密钥。 <br><br>**说明：** <br>建议优先使用异步API{@link generateKeyPair}。同步API可能因系统繁忙、高负载等原因耗时较长而阻塞主线程。 因此建议在子线程中调用同步API，以避免阻塞主线程。
 
 **起始版本：** 12
 

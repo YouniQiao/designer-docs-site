@@ -14,15 +14,7 @@ Defines the basic gesture event type. Inherits from [BaseEvent](arkts-arkui-base
 fingerInfos?: FingerInfo[]
 ```
 
-Information about touch points of the gesture event. For gesture events initiated by a touchscreen, **fingerInfos**
-includes information about all touch points. For gesture events initiated by a mouse or touchpad, **fingerInfos**
-contains only one touch point.
-
-**NOTE**
-
-**fingerInfos** only records information about effective fingers that participate in the touch. Fingers that are
-pressed first but do not participate in triggering of the current gesture will not be shown in **fingerInfos**. The
-default value is an empty array **[]**, and an empty array indicates no effective touch point information.
+Information about touch points of the gesture event. For gesture events initiated by a touchscreen, **fingerInfos** includes information about all touch points. For gesture events initiated by a mouse or touchpad, **fingerInfos** contains only one touch point. **NOTE** **fingerInfos** only records information about effective fingers that participate in the touch. Fingers that are pressed first but do not participate in triggering of the current gesture will not be shown in **fingerInfos**. The default value is an empty array **[]**, and an empty array indicates no effective touch point information.
 
 **Type:** FingerInfo[]
 

@@ -1,8 +1,6 @@
 # @ohos.telephony.radio
 
-Provides interfaces for applications to obtain the network state, cell information, signal information,
-and device ID of the wireless cellular network (WCN), and provides a callback registration mechanism to
-listen for changes of the network, cell, and signal status of the WCN.
+Provides interfaces for applications to obtain the network state, cell information, signal information, and device ID of the wireless cellular network (WCN), and provides a callback registration mechanism to listen for changes of the network, cell, and signal status of the WCN.
 
 **Since:** 6
 
@@ -31,10 +29,10 @@ import { radio } from '@kit.TelephonyKit';
 | [getOperatorName](arkts-telephony-getoperatorname-f.md#getoperatorname-1) | Get the operator name of the specified SIM card slot. |
 | [getOperatorName](arkts-telephony-getoperatorname-f.md#getoperatorname-2) | Get the operator name of the specified SIM card slot. |
 | [getOperatorNameSync](arkts-telephony-getoperatornamesync-f.md#getoperatornamesync-1) | Get the operator name of the specified SIM card slot. |
-| [getPrimarySlotId](arkts-telephony-getprimaryslotid-f.md#getprimaryslotid-1) | Obtains the index number of the card slot where the primary card is located if multiple SIM cards are inserted.The primary card is the SIM card inserted in the card slot that uses data services by default. |
-| [getPrimarySlotId](arkts-telephony-getprimaryslotid-f.md#getprimaryslotid-2) | Obtains the index number of the card slot where the primary card is located if multiple SIM cards are inserted.The primary card is the SIM card inserted in the card slot that uses data services by default. |
-| [getRadioTech](arkts-telephony-getradiotech-f.md#getradiotech-1) | Obtains radio access technology (RAT) of the registered network. The systemreturns RAT of the packet service (PS) and circuit service (CS) domain. |
-| [getRadioTech](arkts-telephony-getradiotech-f.md#getradiotech-2) | Obtains radio access technology (RAT) of the registered network. The systemreturns RAT of the packet service (PS) and circuit service (CS) domain. |
+| [getPrimarySlotId](arkts-telephony-getprimaryslotid-f.md#getprimaryslotid-1) | Obtains the index number of the card slot where the primary card is located if multiple SIM cards are inserted. The primary card is the SIM card inserted in the card slot that uses data services by default. |
+| [getPrimarySlotId](arkts-telephony-getprimaryslotid-f.md#getprimaryslotid-2) | Obtains the index number of the card slot where the primary card is located if multiple SIM cards are inserted. The primary card is the SIM card inserted in the card slot that uses data services by default. |
+| [getRadioTech](arkts-telephony-getradiotech-f.md#getradiotech-1) | Obtains radio access technology (RAT) of the registered network. The system returns RAT of the packet service (PS) and circuit service (CS) domain. |
+| [getRadioTech](arkts-telephony-getradiotech-f.md#getradiotech-2) | Obtains radio access technology (RAT) of the registered network. The system returns RAT of the packet service (PS) and circuit service (CS) domain. |
 | [getRadioTechSync](arkts-telephony-getradiotechsync-f.md#getradiotechsync-1) | Obtains radio access technology (RAT) of the registered network. |
 | [getSignalInformation](arkts-telephony-getsignalinformation-f.md#getsignalinformation-1) | Obtains the list of signal strength information of the registered network corresponding to a specified SIM card. |
 | [getSignalInformation](arkts-telephony-getsignalinformation-f.md#getsignalinformation-2) | Obtains the list of signal strength information of the registered network corresponding to a specified SIM card. |
@@ -78,12 +76,12 @@ import { radio } from '@kit.TelephonyKit';
 | [getNrOptionMode](arkts-telephony-getnroptionmode-f-sys.md#getnroptionmode-3) | Get the option mode of NR. |
 | [getPreferredNetwork](arkts-telephony-getpreferrednetwork-f-sys.md#getpreferrednetwork-1) | Get the preferred network for the specified SIM card slot. |
 | [getPreferredNetwork](arkts-telephony-getpreferrednetwork-f-sys.md#getpreferrednetwork-2) | Get the preferred network for the specified SIM card slot. |
-| [getUniqueDeviceId](arkts-telephony-getuniquedeviceid-f-sys.md#getuniquedeviceid-1) | Obtains the unique device ID of a specified card slot of the device.If the device is registered with a 3GPP-compliant network, the international mobile equipment identity(IMEI) is returned. If the device is registered with a 3GPP2-compliant network, the mobile equipment identifier(MEID) is returned. |
-| [getUniqueDeviceId](arkts-telephony-getuniquedeviceid-f-sys.md#getuniquedeviceid-2) | Obtains the unique device ID of a specified card slot of the device.If the device is registered with a 3GPP-compliant network, the international mobile equipment identity(IMEI) is returned. If the device is registered with a 3GPP2-compliant network, the mobile equipment identifier(MEID) is returned. |
-| [getUniqueDeviceId](arkts-telephony-getuniquedeviceid-f-sys.md#getuniquedeviceid-3) | Obtains the unique device ID of a specified card slot of the device.If the device is registered with a 3GPP-compliant network, the international mobile equipment identity(IMEI) is returned. If the device is registered with a 3GPP2-compliant network, the mobile equipment identifier(MEID) is returned. |
+| [getUniqueDeviceId](arkts-telephony-getuniquedeviceid-f-sys.md#getuniquedeviceid-1) | Obtains the unique device ID of a specified card slot of the device. If the device is registered with a 3GPP-compliant network, the international mobile equipment identity (IMEI) is returned. If the device is registered with a 3GPP2-compliant network, the mobile equipment identifier (MEID) is returned. |
+| [getUniqueDeviceId](arkts-telephony-getuniquedeviceid-f-sys.md#getuniquedeviceid-2) | Obtains the unique device ID of a specified card slot of the device. If the device is registered with a 3GPP-compliant network, the international mobile equipment identity (IMEI) is returned. If the device is registered with a 3GPP2-compliant network, the mobile equipment identifier (MEID) is returned. |
+| [getUniqueDeviceId](arkts-telephony-getuniquedeviceid-f-sys.md#getuniquedeviceid-3) | Obtains the unique device ID of a specified card slot of the device. If the device is registered with a 3GPP-compliant network, the international mobile equipment identity (IMEI) is returned. If the device is registered with a 3GPP2-compliant network, the mobile equipment identifier (MEID) is returned. |
 | [isManualNetworkScanning](arkts-telephony-ismanualnetworkscanning-f-sys.md#ismanualnetworkscanning-1) | Determine whether the current manual network scan is in progress. |
 | [off](arkts-telephony-off-f-sys.md#off-1) | Unsubscribe from imsRegStateChange event. |
-| [on](arkts-telephony-on-f-sys.md#on-1) | Called when the IMS registration state of specified IMS service type corresponding toa monitored {@code slotId} updates. |
+| [on](arkts-telephony-on-f-sys.md#on-1) | Called when the IMS registration state of specified IMS service type corresponding to a monitored {@code slotId} updates. |
 | [sendUpdateCellLocationRequest](arkts-telephony-sendupdatecelllocationrequest-f-sys.md#sendupdatecelllocationrequest-1) | Actively requests to update location information. |
 | [sendUpdateCellLocationRequest](arkts-telephony-sendupdatecelllocationrequest-f-sys.md#sendupdatecelllocationrequest-2) | Actively requests to update location information. |
 | [sendUpdateCellLocationRequest](arkts-telephony-sendupdatecelllocationrequest-f-sys.md#sendupdatecelllocationrequest-3) | Actively requests to update location information. |

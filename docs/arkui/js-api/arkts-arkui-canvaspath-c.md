@@ -1,7 +1,6 @@
 # CanvasPath
 
-Path object, which provides basic methods for drawing paths. For details about the path-related APIs,
-see the description in **CanvasRenderingContext2D**.
+Path object, which provides basic methods for drawing paths. For details about the path-related APIs, see the description in **CanvasRenderingContext2D**.
 
 **Since:** 8
 
@@ -93,9 +92,7 @@ Draws a cubic Bezier curve on the canvas.
 closePath(): void
 ```
 
-Moves the current point of the path back to the start point of the path, and draws a straight line between the
-current point and the start point. If the shape has already been closed or has only one point, this method does
-nothing.
+Moves the current point of the path back to the start point of the path, and draws a straight line between the current point and the start point. If the shape has already been closed or has only one point, this method does nothing.
 
 **Since:** 8
 
@@ -172,15 +169,7 @@ Connects the current point to a target position using a line.
 moveTo(x: number, y: number): void
 ```
 
-Moves a drawing path from the current position to a target position on the canvas.
-> **NOTE**
->
-> In versions earlier than API version 18, if the **moveTo** API is not called or invalid arguments
-> are passed to it, the path starts from (0,0).
->
-> Starting from API version 18, if the **moveTo** API is not executed or invalid arguments are passed
-> to it, the path will begin at the start point of the first valid call to **lineTo**, **arcTo**,
-> **bezierCurveTo**, or **quadraticCurveTo**.
+Moves a drawing path from the current position to a target position on the canvas. > **NOTE** > > In versions earlier than API version 18, if the **moveTo** API is not called or invalid arguments > are passed to it, the path starts from (0,0). > > Starting from API version 18, if the **moveTo** API is not executed or invalid arguments are passed > to it, the path will begin at the start point of the first valid call to **lineTo**, **arcTo**, > **bezierCurveTo**, or **quadraticCurveTo**.
 
 **Since:** 8
 
@@ -253,8 +242,7 @@ Creates a rectangle on the canvas.
 roundRect(x: number, y: number, w: number, h: number, radii?: number | Array<number>): void
 ```
 
-Creates a rounded rectangle path. This API does not directly render content. To draw the rounded
-rectangle on the canvas, use **fill** or **stroke**.
+Creates a rounded rectangle path. This API does not directly render content. To draw the rounded rectangle on the canvas, use **fill** or **stroke**.
 
 **Since:** 20
 

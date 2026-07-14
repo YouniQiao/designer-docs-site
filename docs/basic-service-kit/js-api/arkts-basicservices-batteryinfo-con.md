@@ -70,10 +70,7 @@ Battery health status of the device.
 const isBatteryPresent: boolean
 ```
 
-Whether the battery is supported or present. The value **true** means that the battery is supported or present;
-**false** means the opposite.
-
-Default value: **false**.
+Whether the battery is supported or present. The value **true** means that the battery is supported or present; **false** means the opposite. Default value: **false**.
 
 **Since:** 7
 

@@ -6,9 +6,7 @@
 function setSandboxAppConfig(configInfo: string): Promise<void>
 ```
 
-设置沙箱应用配置信息，配置信息为JSON字符串格式，具体内容由应用自行设置。调用成功后，沙箱应用将按照配置信息运行。使用Promise异步回调。
-
-该接口用于设置沙箱应用的配置信息，以便应用按需传递自定义参数。
+设置沙箱应用配置信息，配置信息为JSON字符串格式，具体内容由应用自行设置。调用成功后，沙箱应用将按照配置信息运行。使用Promise异步回调。 该接口用于设置沙箱应用的配置信息，以便应用按需传递自定义参数。
 
 **起始版本：** 11
 
@@ -18,7 +16,7 @@ function setSandboxAppConfig(configInfo: string): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| configInfo | string | 是 | 沙箱应用配置信息。长度不超过2&lt;sup&gt;22&lt;/sup&gt;-1字节，超出此范围抛出错误码19100001。 |
+| configInfo | string | 是 | 沙箱应用配置信息。长度不超过2&lt;sup&gt;22&lt;/sup&gt;-1字节，超出此范围抛出错误码401。 |
 
 **返回值：**
 

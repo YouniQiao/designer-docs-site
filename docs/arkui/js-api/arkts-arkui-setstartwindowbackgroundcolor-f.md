@@ -12,10 +12,7 @@ import { window } from '@kit.ArkUI';
 function setStartWindowBackgroundColor(moduleName: string, abilityName: string, color: ColorMetrics): Promise<void>
 ```
 
-Sets the background color of the splash screen of the UIAbility based on the specified module name and ability name
-within the same bundle name. This API uses a promise to return the result.
-
-This API takes effect for all processes of the same bundle name, for example, in multi-instance or clone scenarios.
+Sets the background color of the splash screen of the UIAbility based on the specified module name and ability name within the same bundle name. This API uses a promise to return the result. This API takes effect for all processes of the same bundle name, for example, in multi-instance or clone scenarios.
 
 **Since:** 20
 

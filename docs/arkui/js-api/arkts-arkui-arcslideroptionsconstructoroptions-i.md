@@ -18,9 +18,7 @@ import { ArcSliderLayoutOptions, ArcSliderValueOptionsConstructorOptions, ArcSli
 digitalCrownSensitivity?: CrownSensitivity
 ```
 
-Sensitivity to the digital crown rotation.
-
-Default value: **CrownSensitivity.MEDIUM**
+Sensitivity to the digital crown rotation. Default value: **CrownSensitivity.MEDIUM**
 
 **Type:** CrownSensitivity
 
@@ -36,9 +34,7 @@ Default value: **CrownSensitivity.MEDIUM**
 layoutOptions?: ArcSliderLayoutOptions
 ```
 
-Style of the arc slider.
-
-Default value: default values of all properties of [ArcSliderStyleOptions](arkts-arkui-arcsliderstyleoptions-c.md)
+Style of the arc slider. Default value: default values of all properties of [ArcSliderStyleOptions](arkts-arkui-arcsliderstyleoptions-c.md)
 
 **Type:** ArcSliderLayoutOptions
 
@@ -54,9 +50,7 @@ Default value: default values of all properties of [ArcSliderStyleOptions](arkts
 onChange?: ArcSliderChangeHandler
 ```
 
-Callback invoked to notify the application when the progress value of the arc slider changes.
-
-Default value: If this parameter is not provided, no callback will be invoked.
+Callback invoked to notify the application when the progress value of the arc slider changes. Default value: If this parameter is not provided, no callback will be invoked.
 
 **Type:** ArcSliderChangeHandler
 
@@ -72,9 +66,7 @@ Default value: If this parameter is not provided, no callback will be invoked.
 onEnlarge?: ArcSliderEnlargeHandler
 ```
 
-Callback invoked to notify the application when the arc slider is enlarged or reduced.
-
-Default value: If this parameter is not provided, no callback will be invoked.
+Callback invoked to notify the application when the arc slider is enlarged or reduced. Default value: If this parameter is not provided, no callback will be invoked.
 
 **Type:** ArcSliderEnlargeHandler
 
@@ -90,9 +82,7 @@ Default value: If this parameter is not provided, no callback will be invoked.
 onTouch?: ArcSliderTouchHandler
 ```
 
-Callback invoked to notify the application when the arc slider is touched.
-
-Default value: If this parameter is not provided, no callback will be invoked.
+Callback invoked to notify the application when the arc slider is touched. Default value: If this parameter is not provided, no callback will be invoked.
 
 **Type:** ArcSliderTouchHandler
 
@@ -108,9 +98,7 @@ Default value: If this parameter is not provided, no callback will be invoked.
 styleOptions?: ArcSliderStyleOptions
 ```
 
-Style of the arc slider.
-
-Default value: default values of all properties of [ArcSliderStyleOptions](arkts-arkui-arcsliderstyleoptions-c.md)
+Style of the arc slider. Default value: default values of all properties of [ArcSliderStyleOptions](arkts-arkui-arcsliderstyleoptions-c.md)
 
 **Type:** ArcSliderStyleOptions
 
@@ -126,9 +114,7 @@ Default value: default values of all properties of [ArcSliderStyleOptions](arkts
 valueOptions?: ArcSliderValueOptions
 ```
 
-Style of the arc slider.
-
-Default value: default values of all properties of [ArcSliderStyleOptions](arkts-arkui-arcsliderstyleoptions-c.md)
+Style of the arc slider. Default value: default values of all properties of [ArcSliderStyleOptions](arkts-arkui-arcsliderstyleoptions-c.md)
 
 **Type:** ArcSliderValueOptions
 

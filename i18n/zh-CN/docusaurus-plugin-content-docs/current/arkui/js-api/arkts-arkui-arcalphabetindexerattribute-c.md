@@ -1,8 +1,6 @@
 # ArcAlphabetIndexerAttribute
 
-除支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持以下属性：
-
-除支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持以下事件：
+除支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持以下属性： 除支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持以下事件：
 
 **继承/实现关系：** ArcAlphabetIndexerAttribute extends [CommonMethod<ArcAlphabetIndexerAttribute>](CommonMethod<ArcAlphabetIndexerAttribute>)
 
@@ -172,12 +170,7 @@ popupBackground(color: Optional<ColorMetrics>): ArcAlphabetIndexerAttribute
 popupBackgroundBlurStyle(style: Optional<BlurStyle>): ArcAlphabetIndexerAttribute
 ```
 
-设置提示弹窗的背景模糊材质。未通过该接口设置时，默认为关闭模糊，对应取值为BlurStyle中的NONE。
-
-> **说明：**
-
-> 当通过popupBackgroundBlurStyle设置弹窗气泡的背景模糊材质时，不建议再通过
-> [popupBackground](arkts-arkui-arcalphabetindexerattribute-c.md#popupbackground-1)设置背景色。
+设置提示弹窗的背景模糊材质。未通过该接口设置时，默认为关闭模糊，对应取值为BlurStyle中的NONE。 > **说明：** > 当通过popupBackgroundBlurStyle设置弹窗气泡的背景模糊材质时，不建议再通过 > [popupBackground](arkts-arkui-arcalphabetindexerattribute-c.md#popupbackground-1)设置背景色。
 
 **起始版本：** 18
 

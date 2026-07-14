@@ -1,7 +1,6 @@
 # BackgroundTaskSubmode
 
-长时任务子类型。通常与长时任务主类型[BackgroundTaskMode](arkts-backgroundtasks-backgroundtaskmode-e.md)配合使用，对照关系请参考长时任务主类型与子类型对照表，两者
-共同作为API version 21新增的申请、更新长时任务接口入参，用于指定长时任务类型。
+长时任务子类型。通常与长时任务主类型[BackgroundTaskMode](arkts-backgroundtasks-backgroundtaskmode-e.md)配合使用，对照关系请参考长时任务主类型与子类型对照表，两者 共同作为API version 21新增的申请、更新长时任务接口入参，用于指定长时任务类型。
 
 **起始版本：** 21
 

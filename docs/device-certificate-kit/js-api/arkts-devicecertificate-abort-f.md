@@ -12,9 +12,7 @@ import { certificateManager } from '@kit.DeviceCertificateKit';
 function abort(handle: Uint8Array, callback: AsyncCallback<void>): void
 ```
 
-Aborts the signing or signature verification operation. This method is mutually exclusive with the finish method.
-Only one method can be invoked in a signature verification process. This API uses an asynchronous callback to
-return the result.
+Aborts the signing or signature verification operation. This method is mutually exclusive with the finish method. Only one method can be invoked in a signature verification process. This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -67,8 +65,7 @@ try {
 function abort(handle: Uint8Array): Promise<void>
 ```
 
-Aborts the signing or signature verification operation. This method is mutually exclusive with the finish method.
-Only one method can be invoked in a signature verification process. This API uses a promise to return the result.
+Aborts the signing or signature verification operation. This method is mutually exclusive with the finish method. Only one method can be invoked in a signature verification process. This API uses a promise to return the result.
 
 **Since:** 11
 

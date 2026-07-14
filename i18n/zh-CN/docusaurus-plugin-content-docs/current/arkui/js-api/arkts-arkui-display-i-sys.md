@@ -1,9 +1,6 @@
 # Display
 
-屏幕实例。描述Display对象的属性和方法。
-
-下列API示例中都需先使用[getAllDisplays()](arkts-arkui-getalldisplays-f.md#getalldisplays-1)、
-[getDefaultDisplaySync()](arkts-arkui-getdefaultdisplaysync-f.md#getdefaultdisplaysync-1)中的任一方法获取到Display实例，再通过此实例调用对应方法。
+屏幕实例。描述Display对象的属性和方法。 下列API示例中都需先使用[getAllDisplays()](arkts-arkui-getalldisplays-f.md#getalldisplays-1)、 [getDefaultDisplaySync()](arkts-arkui-getdefaultdisplaysync-f.md#getdefaultdisplaysync-1)中的任一方法获取到Display实例，再通过此实例调用对应方法。
 
 **起始版本：** 7
 

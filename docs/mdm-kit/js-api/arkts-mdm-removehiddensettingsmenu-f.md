@@ -12,11 +12,7 @@ import { deviceSettings } from '@kit.MDMKit';
 function removeHiddenSettingsMenu(admin: Want, menusToHidden: Array<SettingsMenu>): void
 ```
 
-Removes a setting item from the hidden setting item list of the current user. Setting items in the hidden setting
-item list are hidden in the current user's settings menu and cannot be found in settings search. Even if a setting
-item is located through some means, it cannot be opened when tapped. If the remaining hidden setting item list is
-empty after the removal, all setting items are displayed. The settings take effect immediately after the API is
-called. The Settings application does not need to be restarted.
+Removes a setting item from the hidden setting item list of the current user. Setting items in the hidden setting item list are hidden in the current user's settings menu and cannot be found in settings search. Even if a setting item is located through some means, it cannot be opened when tapped. If the remaining hidden setting item list is empty after the removal, all setting items are displayed. The settings take effect immediately after the API is called. The Settings application does not need to be restarted.
 
 **Since:** 24
 

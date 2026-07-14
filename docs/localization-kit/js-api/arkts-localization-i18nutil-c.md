@@ -1,7 +1,6 @@
 # I18NUtil
 
-Internationalization utility class, which provides the capabilities of unit conversion, date sequence retrieval,
-time segment name retrieval, region matching, and path localization.
+Internationalization utility class, which provides the capabilities of unit conversion, date sequence retrieval, time segment name retrieval, region matching, and path localization.
 
 **Since:** 9
 
@@ -107,10 +106,7 @@ Obtains the sequence of the year, month, and day in the specified locale.
 static getThreeLetterLanguage(locale: string): string
 ```
 
-Converts a language code from two letters to three letters.
-
-For example, the two-letter language code of Chinese is **zh**, and the corresponding three-letter language code
-is **zho**. For details, see [ISO 639](https://www.iso.org/iso-639-language-code).
+Converts a language code from two letters to three letters. For example, the two-letter language code of Chinese is **zh**, and the corresponding three-letter language code is **zho**. For details, see [ISO 639](https://www.iso.org/iso-639-language-code).
 
 **Since:** 12
 
@@ -143,10 +139,7 @@ is **zho**. For details, see [ISO 639](https://www.iso.org/iso-639-language-code
 static getThreeLetterRegion(locale: string): string
 ```
 
-Converts a region code from two letters to three letters.
-
-For example, the two-letter region code of China is **CN**, and the corresponding three-letter region code is
-**CHN**. For details, see [ISO 3166](https://www.iso.org/iso-3166-country-codes.html).
+Converts a region code from two letters to three letters. For example, the two-letter region code of China is **CN**, and the corresponding three-letter region code is **CHN**. For details, see [ISO 3166](https://www.iso.org/iso-3166-country-codes.html).
 
 **Since:** 12
 
@@ -213,9 +206,7 @@ Obtains the localized expression of the specified time in the specified locale.
 static getUnicodeWrappedFilePath(path: string, delimiter?: string, locale?: Intl.Locale): string
 ```
 
-Localizes a file path for the specified locale.
-
-For example, "/data/out/tmp" is changed to "tmp/out/data/" after localization.
+Localizes a file path for the specified locale. For example, "/data/out/tmp" is changed to "tmp/out/data/" after localization.
 
 **Since:** 20
 
@@ -249,9 +240,7 @@ For example, "/data/out/tmp" is changed to "tmp/out/data/" after localization.
 static getUnicodeWrappedFilePath(path: string, delimiter?: string, locale?: intl.Locale): string
 ```
 
-Localizes a file path for the specified locale.
-
-For example, "/data/out/tmp" is changed to "tmp/out/data/" after localization.
+Localizes a file path for the specified locale. For example, "/data/out/tmp" is changed to "tmp/out/data/" after localization.
 
 **Since:** 18
 
@@ -289,9 +278,7 @@ For example, "/data/out/tmp" is changed to "tmp/out/data/" after localization.
 static setUnicodeWrappedBidiDirection(text: string, direction: 'RTL' | 'LTR'): string
 ```
 
-Sets the text direction for certain text within a paragraph, including RTL (right-to-left) and
-LTR (left-to-right). NOTE: The setting does not take effect within strong characters (characters
-with an intrinsic, unambiguous writing direction).
+Sets the text direction for certain text within a paragraph, including RTL (right-to-left) and LTR (left-to-right). NOTE: The setting does not take effect within strong characters (characters with an intrinsic, unambiguous writing direction).
 
 **Since:** 26.0.0
 

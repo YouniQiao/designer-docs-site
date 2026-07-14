@@ -36,8 +36,7 @@ Length of the data to write, in bytes. This parameter is optional. The default v
 offset?: number
 ```
 
-Start position of the file to write (current **filePointer** plus **offset**), in bytes. This parameter is
-optional. By default, data is written from the **filePointer**.
+Start position of the file to write (current **filePointer** plus **offset**), in bytes. This parameter is optional. By default, data is written from the **filePointer**.
 
 **Type:** number
 

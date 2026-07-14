@@ -13,10 +13,7 @@ function unbind(floatViewController: FloatViewController,
     floatingBallController: floatingBall.FloatingBallController): Promise<void>
 ```
 
-Unbinds the float view and floating ball. The unbinding can be performed only after both the
-[float view controller](arkts-arkui-floatviewcontroller-i.md) and
-[floating ball controller](arkts-arkui-floatingballcontroller-i.md) are stopped. This
-API uses a promise to return the result.
+Unbinds the float view and floating ball. The unbinding can be performed only after both the [float view controller](arkts-arkui-floatviewcontroller-i.md) and [floating ball controller](arkts-arkui-floatingballcontroller-i.md) are stopped. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 

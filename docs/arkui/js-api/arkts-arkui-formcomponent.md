@@ -2,7 +2,6 @@
 
 Defines the FormComponent.
 
-
 ## FormComponent
 
 ```TypeScript

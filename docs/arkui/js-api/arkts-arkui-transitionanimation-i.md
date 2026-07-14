@@ -34,10 +34,7 @@ Transition animation configuration.
 opacity?: number
 ```
 
-Opacity of the window during the transition animation. If this parameter is set to **0**, the window is
-completely transparent. The default value is **1.0**. When the animation type is **WindowTransitionType.DESTROY**
-, this represents the opacity at the end of the animation. The value ranges from 0 to 1.0. The value is reset to
-**1.0** when the animation ends.
+Opacity of the window during the transition animation. If this parameter is set to **0**, the window is completely transparent. The default value is **1.0**. When the animation type is **WindowTransitionType.DESTROY** , this represents the opacity at the end of the animation. The value ranges from 0 to 1.0. The value is reset to **1.0** when the animation ends.
 
 **Type:** number
 

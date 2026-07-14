@@ -12,18 +12,7 @@ import { applicationManager } from '@kit.MDMKit';
 function addUserNonStopApps(admin: Want, applicationInstances: Array<common.ApplicationInstance>): void
 ```
 
-Adds applications to the non-stoppable application list for a specified user. This policy only applies to installed
-applications. If the parameter list contains uninstalled applications, error code 9200012 will be returned. If an
-application in the list is uninstalled after the policy is set, the uninstalled application will be removed from
-the list. Adding an application that already exists in the list will return success, but the application will not
-be added repeatedly to the policy list.
-
-On phones and tablets, non-stoppable applications cannot be closed by swiping up in the task center. After a user
-taps the application name in **Settings** > **Apps & services** to go to the details page, the forcible stop button
-is unavailable, and the disable button does not take effect.
-
-On PCs/2-in-1 devices, after a user taps the application name in **Settings** > **Apps & services** to go to the
-details page, the forcible stop button is unavailable, and the disable button does not take effect.
+Adds applications to the non-stoppable application list for a specified user. This policy only applies to installed applications. If the parameter list contains uninstalled applications, error code 9200012 will be returned. If an application in the list is uninstalled after the policy is set, the uninstalled application will be removed from the list. Adding an application that already exists in the list will return success, but the application will not be added repeatedly to the policy list. On phones and tablets, non-stoppable applications cannot be closed by swiping up in the task center. After a user taps the application name in **Settings** > **Apps & services** to go to the details page, the forcible stop button is unavailable, and the disable button does not take effect. On PCs/2-in-1 devices, after a user taps the application name in **Settings** > **Apps & services** to go to the details page, the forcible stop button is unavailable, and the disable button does not take effect.
 
 **Since:** 22
 

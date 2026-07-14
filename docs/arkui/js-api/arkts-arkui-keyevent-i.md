@@ -62,9 +62,7 @@ ID of the input device that triggers the key event.
 intentionCode: IntentionCode
 ```
 
-Intention corresponding to the key.
-
-Default value: **IntentionCode.INTENTION_UNKNOWN**.
+Intention corresponding to the key. Default value: **IntentionCode.INTENTION_UNKNOWN**.
 
 **Type:** IntentionCode
 
@@ -138,8 +136,7 @@ ScrollLock state. **true**: locked. **false**: unlocked.
 keyCode: number
 ```
 
-Key value. For details about the key values provided by the key-based input devices, see
-[KeyCode](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md).
+Key value. For details about the key values provided by the key-based input devices, see [KeyCode](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md).
 
 **Type:** number
 
@@ -187,9 +184,7 @@ Name of the key.
 metaKey: number
 ```
 
-State of the Meta key (the key located next to the **Ctrl** key in the lower left corner of the keyboard, or the
-key marked with a window logo) when the key event occurs. The value **1** indicates that the Meta key is pressed,
-and **0** indicates that it is not pressed.
+State of the Meta key (the key located next to the **Ctrl** key in the lower left corner of the keyboard, or the key marked with a window logo) when the key event occurs. The value **1** indicates that the Meta key is pressed, and **0** indicates that it is not pressed.
 
 **Type:** number
 
@@ -221,8 +216,7 @@ Blocks [event bubbling](../../../../ui/arkts-interaction-basic-principles.md#eve
 timestamp: number
 ```
 
-Timestamp of the event. It is the interval between the time when the event is triggered and the time when the
-system starts, in nanoseconds.
+Timestamp of the event. It is the interval between the time when the event is triggered and the time when the system starts, in nanoseconds.
 
 **Type:** number
 
@@ -254,9 +248,7 @@ Key type.
 unicode?: number
 ```
 
-Unicode value of the key. Non-space basic Latin characters in the 0x0021-0x007E range are supported. Characters
-with a value of 0 are not supported. In the case of key combination, this API returns the Unicode value of the key
-corresponding to the key event.
+Unicode value of the key. Non-space basic Latin characters in the 0x0021-0x007E range are supported. Characters with a value of 0 are not supported. In the case of key combination, this API returns the Unicode value of the key corresponding to the key event.
 
 **Type:** number
 

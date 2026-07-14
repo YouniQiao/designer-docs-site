@@ -18,10 +18,7 @@ In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkt
 mode(mode: NavRouteMode)
 ```
 
-Sets the route mode used for redirecting the user from the **NavRouter** component to the specified navigation
-destination page.
-
-> **NOTE**
+Sets the route mode used for redirecting the user from the **NavRouter** component to the specified navigation destination page. > **NOTE**
 
 **Since:** 10
 
@@ -47,11 +44,7 @@ destination page.
 onStateChange(callback: (isActivated: boolean) => void)
 ```
 
-Called when the component activation status changes. **onStateChange(true)** is called when the **NavRouter**
-component is activated and its **NavDestination** child component is loaded. **onStateChange(false)** is called
-when the **NavDestination** child component is not displayed.
-
-> **NOTE**
+Called when the component activation status changes. **onStateChange(true)** is called when the **NavRouter** component is activated and its **NavDestination** child component is loaded. **onStateChange(false)** is called when the **NavDestination** child component is not displayed. > **NOTE**
 
 **Since:** 9
 

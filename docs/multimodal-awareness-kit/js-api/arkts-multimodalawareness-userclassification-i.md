@@ -36,8 +36,7 @@ User age group, for example, child or adult.
 confidence?: float
 ```
 
-Confidence of the detection result. The value is a floating point number ranging from 0 to 1. A larger value
-indicates a higher confidence.
+Confidence of the detection result. The value is a floating point number ranging from 0 to 1. A larger value indicates a higher confidence.
 
 **Type:** float
 

@@ -54,8 +54,7 @@ Camera position in 3D space.
 quaternion: DepthVector4
 ```
 
-Camera rotation as quaternion (x, y, z, w).
-Represents the orientation of the camera in 3D space.
+Camera rotation as quaternion (x, y, z, w). Represents the orientation of the camera in 3D space.
 
 **Type:** DepthVector4
 

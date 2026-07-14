@@ -14,22 +14,7 @@ In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkt
 enableNestedScroll(enabled: Optional<boolean>)
 ```
 
-Sets whether nested scrolling is enabled.
-
-> **NOTE**
->
-> When nested scrolling is enabled, the scroll offset is first passed to the inner scrollable component, which
-> then passes it to the outer parent scrollable component based on the set nested scrolling priority.
->
-> Nested scrolling is not supported when the **WaterFlow** component is in
-> [WaterFlowLayoutMode.SLIDING_WINDOW](../../../../reference/apis-arkui/arkui-ts/ts-container-waterflow.md#waterflowlayoutmode12)
-> layout mode.
->
-> When the nested scrolling mode is set to
-> [PARALLEL](../../../../reference/apis-arkui/arkui-ts/ts-appendix-enums.md#nestedscrollmode10), both the parent
-> and child components scroll simultaneously. You need to manage the scroll order in the
-> [onScrollFrameBegin](../../../../reference/apis-arkui/arkui-ts/ts-container-scroll.md#onscrollframebegin9) event
-> according to the desired logic.
+Sets whether nested scrolling is enabled. > **NOTE** > > When nested scrolling is enabled, the scroll offset is first passed to the inner scrollable component, which > then passes it to the outer parent scrollable component based on the set nested scrolling priority. > > Nested scrolling is not supported when the **WaterFlow** component is in > [WaterFlowLayoutMode.SLIDING_WINDOW](../../../../reference/apis-arkui/arkui-ts/ts-container-waterflow.md#waterflowlayoutmode12) > layout mode. > > When the nested scrolling mode is set to > [PARALLEL](../../../../reference/apis-arkui/arkui-ts/ts-appendix-enums.md#nestedscrollmode10), both the parent > and child components scroll simultaneously. You need to manage the scroll order in the > [onScrollFrameBegin](../../../../reference/apis-arkui/arkui-ts/ts-container-scroll.md#onscrollframebegin9) event > according to the desired logic.
 
 **Since:** 14
 
@@ -51,8 +36,7 @@ Sets whether nested scrolling is enabled.
 scrollBarColor(color: Optional<ColorMetrics>)
 ```
 
-Sets the color of the scrollbar slider. This parameter is valid only when the scrollbar does not contain child
-components.
+Sets the color of the scrollbar slider. This parameter is valid only when the scrollbar does not contain child components.
 
 **Since:** 20
 

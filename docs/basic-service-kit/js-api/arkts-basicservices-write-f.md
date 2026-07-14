@@ -12,9 +12,7 @@ import { serialManager } from '@kit.BasicServicesKit';
 function write(portId: number, buffer: Uint8Array, timeout?: number): Promise<number>
 ```
 
-Writes data to the serial port device asynchronously. The length of data written each time cannot exceed 4 KB;
-otherwise, data loss may occur. You are advised to write long data in multiple packets. This API uses a promise to
-return the result.
+Writes data to the serial port device asynchronously. The length of data written each time cannot exceed 4 KB; otherwise, data loss may occur. You are advised to write long data in multiple packets. This API uses a promise to return the result.
 
 **Since:** 19
 
@@ -68,7 +66,7 @@ function write() {
   if (!serialManager.hasSerialRight(portId)) {
     serialManager.requestSerialRight(portId).then(result => {
       if (!result) {
-        // If the application does not have the access permission and is not granted by the user, the application exits.
+        // If the application does not have the access permission and the user does not grant the permission, the application exits.
         console.error('user is not granted the operation permission');
         return;
       } else {
@@ -92,6 +90,14 @@ function write() {
   }).catch((error: Error) => {
     console.error('write usbSerial error, ' + JSON.stringify(error));
   })
+
+  // Close the serial port device.
+  try {
+    serialManager.close(portId);
+    console.info('close usbSerial success, portId: ' + portId);
+  } catch (error) {
+    console.error('close usbSerial error, ' + JSON.stringify(error));
+  }
 }
 
 ```

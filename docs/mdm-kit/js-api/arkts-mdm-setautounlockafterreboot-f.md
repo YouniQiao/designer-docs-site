@@ -12,8 +12,7 @@ import { systemManager } from '@kit.MDMKit';
 function setAutoUnlockAfterReboot(admin: Want, isAllowed: boolean): void
 ```
 
-Sets automatic unlocking upon device reboot. This setting takes effect only on devices without a screen lock
-password.
+Sets automatic unlocking upon device reboot. This setting takes effect only on devices without a screen lock password.
 
 **Since:** 20
 

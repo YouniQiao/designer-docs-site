@@ -12,8 +12,7 @@ import { bundleManager } from '@kit.AbilityKit';
 function getBundleArchiveInfo(hapFilePath: string, bundleFlags: number, callback: AsyncCallback<BundleInfo>): void
 ```
 
-Obtains the bundle information based on the given HAP file path and bundle flags. This API uses an asynchronous
-callback to return the result.
+Obtains the bundle information based on the given HAP file path and bundle flags. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -72,8 +71,7 @@ try {
 function getBundleArchiveInfo(hapFilePath: string,  bundleFlags: number): Promise<BundleInfo>
 ```
 
-Obtains the bundle information based on the given HAP file path and bundle flags. This API uses a promise to return
-the result.
+Obtains the bundle information based on the given HAP file path and bundle flags. This API uses a promise to return the result.
 
 **Since:** 9
 

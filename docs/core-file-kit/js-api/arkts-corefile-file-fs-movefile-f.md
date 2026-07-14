@@ -12,11 +12,7 @@ import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventList
 declare function moveFile(src: string, dest: string, mode?: number): Promise<void>
 ```
 
-Moves a file. This API uses a promise to return the result.
-
-> **NOTE**
->
-> This API is not supported in a distributed directory.
+Moves a file. This API uses a promise to return the result. > **NOTE** > > This API is not supported in a distributed directory.
 
 **Since:** 9
 
@@ -67,12 +63,7 @@ Moves a file. This API uses a promise to return the result.
 declare function moveFile(src: string, dest: string, callback: AsyncCallback<void>): void
 ```
 
-Moves a file and forcibly overwrites the file with the same name in the destination directory. This API uses an
-asynchronous callback to return the result.
-
-> **NOTE**
->
-> This API is not supported in a distributed directory.
+Moves a file and forcibly overwrites the file with the same name in the destination directory. This API uses an asynchronous callback to return the result. > **NOTE** > > This API is not supported in a distributed directory.
 
 **Since:** 9
 
@@ -117,11 +108,7 @@ asynchronous callback to return the result.
 declare function moveFile(src: string, dest: string, mode: number, callback: AsyncCallback<void>): void
 ```
 
-Moves a file with the specified mode. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> This API is not supported in a distributed directory.
+Moves a file with the specified mode. This API uses an asynchronous callback to return the result. > **NOTE** > > This API is not supported in a distributed directory.
 
 **Since:** 9
 

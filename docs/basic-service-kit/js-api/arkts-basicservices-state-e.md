@@ -12,8 +12,7 @@ Defines the current task status.
 INITIALIZED = 0x00
 ```
 
-The task is initialized based on the configuration specified in
-[Config](arkts-basicservices-config-i.md).
+The task is initialized based on the configuration specified in [Config](arkts-basicservices-config-i.md).
 
 **Since:** 10
 

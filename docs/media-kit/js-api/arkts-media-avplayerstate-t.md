@@ -4,11 +4,7 @@
 type AVPlayerState = 'idle' | 'initialized' | 'prepared' | 'playing' | 'paused' | 'completed' | 'stopped' | 'released' | 'error'
 ```
 
-Describes the state of the [AVPlayer](arkts-multimedia-media.md). Your application can proactively obtain
-the AVPlayer state through the **state** property or obtain the reported AVPlayer state by subscribing to the
-[stateChange](arkts-media-avplayer-i.md#on-2)
-event. For details about the rules for state transition, see
-[Audio Playback](../../../../media/media/using-avplayer-for-playback.md).
+Describes the state of the [AVPlayer](arkts-multimedia-media.md). Your application can proactively obtain the AVPlayer state through the **state** property or obtain the reported AVPlayer state by subscribing to the [stateChange](arkts-media-avplayer-i.md#on-2) event. For details about the rules for state transition, see [Audio Playback](../../../../media/media/using-avplayer-for-playback.md).
 
 **Since:** 9
 

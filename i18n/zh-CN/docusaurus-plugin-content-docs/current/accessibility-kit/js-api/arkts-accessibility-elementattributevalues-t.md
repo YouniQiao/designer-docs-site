@@ -4,8 +4,7 @@
 export type ElementAttributeValues = _ElementAttributeValues
 ```
 
-表示节点元素具备的属性名称及属性值类型信息，请参考
-[ElementAttributeValues](arkts-accessibility-elementattributevalues-i.md)。
+表示节点元素具备的属性名称及属性值类型信息，请参考 [ElementAttributeValues](arkts-accessibility-elementattributevalues-i.md)。
 
 **起始版本：** 10
 

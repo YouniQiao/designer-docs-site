@@ -12,8 +12,7 @@ Provides the information about the nested scrollable containers.
 child: Scroller
 ```
 
-Controller of the scrollable container nested within the target scrollable container. This scrollable container is
-a child component of the target scrollable container.
+Controller of the scrollable container nested within the target scrollable container. This scrollable container is a child component of the target scrollable container.
 
 **Type:** Scroller
 

@@ -1,7 +1,6 @@
 # UIExtensionContentSession
 
-UIExtensionContentSession is the UI operation class for the UIExtensionAbility. It provides control over page loading
-and allows configuration of the window privacy mode of the host application.
+UIExtensionContentSession is the UI operation class for the UIExtensionAbility. It provides control over page loading and allows configuration of the window privacy mode of the host application.
 
 **Since:** 10
 
@@ -19,8 +18,7 @@ import { UIExtensionContentSession } from '@kit.AbilityKit';
 getUIExtensionHostWindowProxy(): uiExtensionHost.UIExtensionHostWindowProxy
 ```
 
-Obtains the window object corresponding to the current UIExtension to notify the width, height, position, and
-avoided area.
+Obtains the window object corresponding to the current UIExtension to notify the width, height, position, and avoided area.
 
 **Since:** 11
 
@@ -161,8 +159,7 @@ struct Index {
 setReceiveDataCallback(callback: (data: Record<string, Object>) => void): void
 ```
 
-Sets a callback to receive data from the UIExtensionComponent. This API uses an asynchronous callback to return the
-result.
+Sets a callback to receive data from the UIExtensionComponent. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -220,8 +217,7 @@ struct Index {
 setReceiveDataForResultCallback(callback: (data: Record<string, Object>) => Record<string, Object>): void
 ```
 
-Sets a callback with a return value to receive data from the UIExtensionComponent. This API uses an asynchronous
-callback to return the result.
+Sets a callback with a return value to receive data from the UIExtensionComponent. This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -280,9 +276,7 @@ struct Index {
 setWindowBackgroundColor(color: string): void
 ```
 
-Sets the background color for the loading page of the UIExtensionAbility. This API can be used only after
-[loadContent()](arkts-ability-uiextensioncontentsession-c.md#loadcontent-1) is called
-and takes effect.
+Sets the background color for the loading page of the UIExtensionAbility. This API can be used only after [loadContent()](arkts-ability-uiextensioncontentsession-c.md#loadcontent-1) is called and takes effect.
 
 **Since:** 10
 
@@ -342,19 +336,7 @@ export default class UIExtAbility extends UIExtensionAbility {
 startAbility(want: Want, callback: AsyncCallback<void>): void
 ```
 
-Starts an ability. This API uses an asynchronous callback to return the result.
-UI extension uses this method to start a specific ability.If the caller application is in foreground,
-you can use this method to start ability; If the caller application is in the background,
-you need to apply for permission:ohos.permission.START_ABILITIES_FROM_BACKGROUND.
-If the target ability is visible, you can start the target ability; If the target ability is invisible,
-you need to apply for permission:ohos.permission.START_INVISIBLE_ABILITY to start target invisible ability.
-If the target ability is in cross-device, you need to apply for permission:ohos.permission.DISTRIBUTED_DATASYNC.
-
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
-> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
-> > The application where the UIExtensionComponent is located must be running in the foreground and gain focus.
+Starts an ability. This API uses an asynchronous callback to return the result. UI extension uses this method to start a specific ability.If the caller application is in foreground, you can use this method to start ability; If the caller application is in the background, you need to apply for permission:ohos.permission.START_ABILITIES_FROM_BACKGROUND. If the target ability is visible, you can start the target ability; If the target ability is invisible, you need to apply for permission:ohos.permission.START_INVISIBLE_ABILITY to start target invisible ability. If the target ability is in cross-device, you need to apply for permission:ohos.permission.DISTRIBUTED_DATASYNC. > **NOTE** > > For details about the startup rules for the components in the stage model, see > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md). > > The application where the UIExtensionComponent is located must be running in the foreground and gain focus.
 
 **Since:** 10
 
@@ -424,19 +406,7 @@ export default class UIExtAbility extends UIExtensionAbility {
 startAbility(want: Want, options: StartOptions, callback: AsyncCallback<void>): void
 ```
 
-Starts an ability with **options** specified. This API uses an asynchronous callback to return the result.
-UI extension uses this method to start a specific ability.If the caller application is in foreground,
-you can use this method to start ability; If the caller application is in the background,
-you need to apply for permission:ohos.permission.START_ABILITIES_FROM_BACKGROUND.
-If the target ability is visible, you can start the target ability; If the target ability is invisible,
-you need to apply for permission:ohos.permission.START_INVISIBLE_ABILITY to start target invisible ability.
-If the target ability is in cross-device, you need to apply for permission:ohos.permission.DISTRIBUTED_DATASYNC.
-
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
-> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
-> > The application where the UIExtensionComponent is located must be running in the foreground and gain focus.
+Starts an ability with **options** specified. This API uses an asynchronous callback to return the result. UI extension uses this method to start a specific ability.If the caller application is in foreground, you can use this method to start ability; If the caller application is in the background, you need to apply for permission:ohos.permission.START_ABILITIES_FROM_BACKGROUND. If the target ability is visible, you can start the target ability; If the target ability is invisible, you need to apply for permission:ohos.permission.START_INVISIBLE_ABILITY to start target invisible ability. If the target ability is in cross-device, you need to apply for permission:ohos.permission.DISTRIBUTED_DATASYNC. > **NOTE** > > For details about the startup rules for the components in the stage model, see > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md). > > The application where the UIExtensionComponent is located must be running in the foreground and gain focus.
 
 **Since:** 10
 
@@ -509,19 +479,7 @@ export default class UIExtAbility extends UIExtensionAbility {
 startAbility(want: Want, options?: StartOptions): Promise<void>
 ```
 
-Starts an ability. This API uses a promise to return the result.
-UI extension uses this method to start a specific ability.If the caller application is in foreground,
-you can use this method to start ability; If the caller application is in the background,
-you need to apply for permission:ohos.permission.START_ABILITIES_FROM_BACKGROUND.
-If the target ability is visible, you can start the target ability; If the target ability is invisible,
-you need to apply for permission:ohos.permission.START_INVISIBLE_ABILITY to start target invisible ability.
-If the target ability is in cross-device, you need to apply for permission:ohos.permission.DISTRIBUTED_DATASYNC.
-
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
-> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
-> > The application where the UIExtensionComponent is located must be running in the foreground and gain focus.
+Starts an ability. This API uses a promise to return the result. UI extension uses this method to start a specific ability.If the caller application is in foreground, you can use this method to start ability; If the caller application is in the background, you need to apply for permission:ohos.permission.START_ABILITIES_FROM_BACKGROUND. If the target ability is visible, you can start the target ability; If the target ability is invisible, you need to apply for permission:ohos.permission.START_INVISIBLE_ABILITY to start target invisible ability. If the target ability is in cross-device, you need to apply for permission:ohos.permission.DISTRIBUTED_DATASYNC. > **NOTE** > > For details about the startup rules for the components in the stage model, see > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md). > > The application where the UIExtensionComponent is located must be running in the foreground and gain focus.
 
 **Since:** 10
 
@@ -601,16 +559,7 @@ export default class UIExtAbility extends UIExtensionAbility {
 startAbilityAsCaller(want: Want, callback: AsyncCallback<void>): void
 ```
 
-Starts an ability as the caller. The initial ability places its caller information (such as the bundle name and
-ability name) in the **want** parameter and transfers the information to an ExtensionAbility at the middle layer.
-When the ExtensionAbility starts another ability by calling this API, the started ability can obtain the caller
-information of the initial ability from the **onCreate** lifecycle. This API uses an asynchronous callback to
-return the result.
-If the caller application is in foreground, you can use this method to start ability; If the caller application is
-in the background, you need to apply for permission:ohos.permission.START_ABILITIES_FROM_BACKGROUND.
-If the target ability is visible, you can start the target ability; If the target ability is invisible,
-you need to apply for permission:ohos.permission.START_INVISIBLE_ABILITY to start target invisible ability.
-If the target ability is in cross-device, you need to apply for permission:ohos.permission.DISTRIBUTED_DATASYNC.
+Starts an ability as the caller. The initial ability places its caller information (such as the bundle name and ability name) in the **want** parameter and transfers the information to an ExtensionAbility at the middle layer. When the ExtensionAbility starts another ability by calling this API, the started ability can obtain the caller information of the initial ability from the **onCreate** lifecycle. This API uses an asynchronous callback to return the result. If the caller application is in foreground, you can use this method to start ability; If the caller application is in the background, you need to apply for permission:ohos.permission.START_ABILITIES_FROM_BACKGROUND. If the target ability is visible, you can start the target ability; If the target ability is invisible, you need to apply for permission:ohos.permission.START_INVISIBLE_ABILITY to start target invisible ability. If the target ability is in cross-device, you need to apply for permission:ohos.permission.DISTRIBUTED_DATASYNC.
 
 **Since:** 11
 
@@ -685,16 +634,7 @@ export default class UIExtAbility extends UIExtensionAbility {
 startAbilityAsCaller(want: Want, options: StartOptions, callback: AsyncCallback<void>): void
 ```
 
-Starts an ability as the caller, with **options** specified. The initial ability places its caller information (
-such as the bundle name and ability name) in the **want** parameter and transfers the information to an
-ExtensionAbility at the middle layer. When the ExtensionAbility starts another ability by calling this API, the
-started ability can obtain the caller information of the initial ability from the **onCreate** lifecycle. This API
-uses an asynchronous callback to return the result.
-If the caller application is in foreground, you can use this method to start ability; If the caller application is
-in the background, you need to apply for permission:ohos.permission.START_ABILITIES_FROM_BACKGROUND.
-If the target ability is visible, you can start the target ability; If the target ability is invisible,
-you need to apply for permission:ohos.permission.START_INVISIBLE_ABILITY to start target invisible ability.
-If the target ability is in cross-device, you need to apply for permission:ohos.permission.DISTRIBUTED_DATASYNC.
+Starts an ability as the caller, with **options** specified. The initial ability places its caller information ( such as the bundle name and ability name) in the **want** parameter and transfers the information to an ExtensionAbility at the middle layer. When the ExtensionAbility starts another ability by calling this API, the started ability can obtain the caller information of the initial ability from the **onCreate** lifecycle. This API uses an asynchronous callback to return the result. If the caller application is in foreground, you can use this method to start ability; If the caller application is in the background, you need to apply for permission:ohos.permission.START_ABILITIES_FROM_BACKGROUND. If the target ability is visible, you can start the target ability; If the target ability is invisible, you need to apply for permission:ohos.permission.START_INVISIBLE_ABILITY to start target invisible ability. If the target ability is in cross-device, you need to apply for permission:ohos.permission.DISTRIBUTED_DATASYNC.
 
 **Since:** 11
 
@@ -772,15 +712,7 @@ export default class UIExtAbility extends UIExtensionAbility {
 startAbilityAsCaller(want: Want, options?: StartOptions): Promise<void>
 ```
 
-Starts an ability as the caller. The initial ability places its caller information (such as the bundle name and
-ability name) in the **want** parameter and transfers the information to an ExtensionAbility at the middle layer.
-When the ExtensionAbility starts another ability by calling this API, the started ability can obtain the caller
-information of the initial ability from the **onCreate** lifecycle. This API uses a promise to return the result.
-If the caller application is in foreground, you can use this method to start ability; If the caller application is
-in the background, you need to apply for permission:ohos.permission.START_ABILITIES_FROM_BACKGROUND.
-If the target ability is visible, you can start the target ability; If the target ability is invisible,
-you need to apply for permission:ohos.permission.START_INVISIBLE_ABILITY to start target invisible ability.
-If the target ability is in cross-device, you need to apply for permission:ohos.permission.DISTRIBUTED_DATASYNC.
+Starts an ability as the caller. The initial ability places its caller information (such as the bundle name and ability name) in the **want** parameter and transfers the information to an ExtensionAbility at the middle layer. When the ExtensionAbility starts another ability by calling this API, the started ability can obtain the caller information of the initial ability from the **onCreate** lifecycle. This API uses a promise to return the result. If the caller application is in foreground, you can use this method to start ability; If the caller application is in the background, you need to apply for permission:ohos.permission.START_ABILITIES_FROM_BACKGROUND. If the target ability is visible, you can start the target ability; If the target ability is invisible, you need to apply for permission:ohos.permission.START_INVISIBLE_ABILITY to start target invisible ability. If the target ability is in cross-device, you need to apply for permission:ohos.permission.DISTRIBUTED_DATASYNC.
 
 **Since:** 11
 
@@ -865,31 +797,7 @@ export default class UIExtAbility extends UIExtensionAbility {
 startAbilityForResult(want: Want, callback: AsyncCallback<AbilityResult>): void
 ```
 
-Starts an ability and returns the result to the caller after the ability is terminated. This API uses an
-asynchronous callback to return the result.
-If the caller application is in foreground, you can use this method to start ability; If the caller application
-is in the background, you need to apply for permission:ohos.permission.START_ABILITIES_FROM_BACKGROUND.
-If the target ability is visible, you can start the target ability; If the target ability is invisible,
-you need to apply for permission:ohos.permission.START_INVISIBLE_ABILITY to start target invisible ability.
-If the target ability is in cross-device, you need to apply for permission:ohos.permission.DISTRIBUTED_DATASYNC.
-
-An ability can be terminated in the following ways:
-
-- Normally, you can call
-[terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)
-to terminate the ability. The result is returned to the caller.
-- If an exception occurs, for example, the ability is killed, an error message, in which **resultCode** is **-1**,
-is returned to the caller.
-- If different applications call this API to start an ability that uses the singleton mode and then call
-[terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)
-to terminate the ability, the normal result is returned to the last caller, and an exception message, in which
-**resultCode** is **-1**, is returned to others.
-
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
-> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
-> > The application where the UIExtensionComponent is located must be running in the foreground and gain focus.
+Starts an ability and returns the result to the caller after the ability is terminated. This API uses an asynchronous callback to return the result. If the caller application is in foreground, you can use this method to start ability; If the caller application is in the background, you need to apply for permission:ohos.permission.START_ABILITIES_FROM_BACKGROUND. If the target ability is visible, you can start the target ability; If the target ability is invisible, you need to apply for permission:ohos.permission.START_INVISIBLE_ABILITY to start target invisible ability. If the target ability is in cross-device, you need to apply for permission:ohos.permission.DISTRIBUTED_DATASYNC. An ability can be terminated in the following ways: - Normally, you can call [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1) to terminate the ability. The result is returned to the caller. - If an exception occurs, for example, the ability is killed, an error message, in which **resultCode** is **-1**, is returned to the caller. - If different applications call this API to start an ability that uses the singleton mode and then call [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1) to terminate the ability, the normal result is returned to the last caller, and an exception message, in which **resultCode** is **-1**, is returned to others. > **NOTE** > > For details about the startup rules for the components in the stage model, see > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md). > > The application where the UIExtensionComponent is located must be running in the foreground and gain focus.
 
 **Since:** 10
 
@@ -959,31 +867,7 @@ export default class UIExtAbility extends UIExtensionAbility {
 startAbilityForResult(want: Want, options: StartOptions, callback: AsyncCallback<AbilityResult>): void
 ```
 
-Starts an ability with **options** specified and returns the result to the caller after the ability is terminated.
-This API uses an asynchronous callback to return the result.
-If the caller application is in foreground, you can use this method to start ability; If the caller application
-is in the background, you need to apply for permission:ohos.permission.START_ABILITIES_FROM_BACKGROUND.
-If the target ability is visible, you can start the target ability; If the target ability is invisible,
-you need to apply for permission:ohos.permission.START_INVISIBLE_ABILITY to start target invisible ability.
-If the target ability is in cross-device, you need to apply for permission:ohos.permission.DISTRIBUTED_DATASYNC.
-
-An ability can be terminated in the following ways:
-
-- Normally, you can call
-[terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)
-to terminate the ability. The result is returned to the caller.
-- If an exception occurs, for example, the ability is killed, an error message, in which **resultCode** is **-1**,
-is returned to the caller.
-- If different applications call this API to start an ability that uses the singleton mode and then call
-[terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)
-to terminate the ability, the normal result is returned to the last caller, and an exception message, in which
-**resultCode** is **-1**, is returned to others.
-
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
-> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
-> The application where the UIExtensionComponent is located must be running in the foreground and gain focus.
+Starts an ability with **options** specified and returns the result to the caller after the ability is terminated. This API uses an asynchronous callback to return the result. If the caller application is in foreground, you can use this method to start ability; If the caller application is in the background, you need to apply for permission:ohos.permission.START_ABILITIES_FROM_BACKGROUND. If the target ability is visible, you can start the target ability; If the target ability is invisible, you need to apply for permission:ohos.permission.START_INVISIBLE_ABILITY to start target invisible ability. If the target ability is in cross-device, you need to apply for permission:ohos.permission.DISTRIBUTED_DATASYNC. An ability can be terminated in the following ways: - Normally, you can call [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1) to terminate the ability. The result is returned to the caller. - If an exception occurs, for example, the ability is killed, an error message, in which **resultCode** is **-1**, is returned to the caller. - If different applications call this API to start an ability that uses the singleton mode and then call [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1) to terminate the ability, the normal result is returned to the last caller, and an exception message, in which **resultCode** is **-1**, is returned to others. > **NOTE** > > For details about the startup rules for the components in the stage model, see > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md). > The application where the UIExtensionComponent is located must be running in the foreground and gain focus.
 
 **Since:** 10
 
@@ -1056,31 +940,7 @@ export default class UIExtAbility extends UIExtensionAbility {
 startAbilityForResult(want: Want, options?: StartOptions): Promise<AbilityResult>
 ```
 
-Starts an ability and returns the result to the caller after the ability is terminated. This API uses a promise to
-return the result.
-If the caller application is in foreground, you can use this method to start ability; If the caller application
-is in the background, you need to apply for permission:ohos.permission.START_ABILITIES_FROM_BACKGROUND.
-If the target ability is visible, you can start the target ability; If the target ability is invisible,
-you need to apply for permission:ohos.permission.START_INVISIBLE_ABILITY to start target invisible ability.
-If the target ability is in cross-device, you need to apply for permission:ohos.permission.DISTRIBUTED_DATASYNC.
-
-An ability can be terminated in the following ways:
-
-- Normally, you can call
-[terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)
-to terminate the ability. The result is returned to the caller.
-- If an exception occurs, for example, the ability is killed, an error message, in which **resultCode** is **-1**,
-is returned to the caller.
-- If different applications call this API to start an ability that uses the singleton mode and then call
-[terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)
-to terminate the ability, the normal result is returned to the last caller, and an exception message, in which
-**resultCode** is **-1**, is returned to others.
-
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
-> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
-> The application where the UIExtensionComponent is located must be running in the foreground and gain focus.
+Starts an ability and returns the result to the caller after the ability is terminated. This API uses a promise to return the result. If the caller application is in foreground, you can use this method to start ability; If the caller application is in the background, you need to apply for permission:ohos.permission.START_ABILITIES_FROM_BACKGROUND. If the target ability is visible, you can start the target ability; If the target ability is invisible, you need to apply for permission:ohos.permission.START_INVISIBLE_ABILITY to start target invisible ability. If the target ability is in cross-device, you need to apply for permission:ohos.permission.DISTRIBUTED_DATASYNC. An ability can be terminated in the following ways: - Normally, you can call [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1) to terminate the ability. The result is returned to the caller. - If an exception occurs, for example, the ability is killed, an error message, in which **resultCode** is **-1**, is returned to the caller. - If different applications call this API to start an ability that uses the singleton mode and then call [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1) to terminate the ability, the normal result is returned to the last caller, and an exception message, in which **resultCode** is **-1**, is returned to others. > **NOTE** > > For details about the startup rules for the components in the stage model, see > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md). > The application where the UIExtensionComponent is located must be running in the foreground and gain focus.
 
 **Since:** 10
 

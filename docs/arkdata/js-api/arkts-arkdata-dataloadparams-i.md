@@ -1,9 +1,6 @@
 # DataLoadParams
 
-Defines the data loading policy for the data sender in the lazy loading scenario.
-
-If both **loadHandler** and **delayedDataLoadHandler** are passed, **delayedDataLoadHandler** is preferentially
-used, and **loadHandler** does not take effect.
+Defines the data loading policy for the data sender in the lazy loading scenario. If both **loadHandler** and **delayedDataLoadHandler** are passed, **delayedDataLoadHandler** is preferentially used, and **loadHandler** does not take effect.
 
 **Since:** 20
 
@@ -39,9 +36,7 @@ Indicates data loading information.
 delayedDataLoadHandler?: DelayedDataLoadHandler
 ```
 
-Indicates the callback function for deferred and non-blocking data loading.
-This handler is optional. If it is provided, it will take precedence over
-the synchronous DataLoadHandler (i.e., DataLoadHandler will be ignored).
+Indicates the callback function for deferred and non-blocking data loading. This handler is optional. If it is provided, it will take precedence over the synchronous DataLoadHandler (i.e., DataLoadHandler will be ignored).
 
 **Type:** DelayedDataLoadHandler
 

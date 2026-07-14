@@ -1,13 +1,6 @@
 # NativeMediaPlayerBridge
 
-Instance of the API class between the web media player and the ArkWeb kernel.
-
-The ArkWeb kernel uses an object of this interface class to
-control the player created by the application to take over web page media.
-
-> **NOTE**
->
-> - The sample effect is subject to the actual device.
+Instance of the API class between the web media player and the ArkWeb kernel. The ArkWeb kernel uses an object of this interface class to control the player created by the application to take over web page media. > **NOTE** > > - The sample effect is subject to the actual device.
 
 **Since:** 12
 

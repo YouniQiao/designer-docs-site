@@ -333,13 +333,7 @@ remove(key: K): V | undefined
 toString(): string
 ```
 
-返回对象的字符串表示形式。
-返回字符串格式是：SendableLruCache[ maxSize = (maxSize), hits = (hitCount),
-misses = (missCount), hitRate = (hitRate) ]。
-(maxSize)表示缓存区最大值，
-(hitCount)表示查询值匹配成功的次数，
-(missCount)表示查询值匹配失败的次数，
-(hitRate)表示查询值匹配率。
+返回对象的字符串表示形式。 返回字符串格式是：SendableLruCache[ maxSize = (maxSize), hits = (hitCount), misses = (missCount), hitRate = (hitRate) ]。 (maxSize)表示缓存区最大值， (hitCount)表示查询值匹配成功的次数， (missCount)表示查询值匹配失败的次数， (hitRate)表示查询值匹配率。
 
 **起始版本：** 18
 

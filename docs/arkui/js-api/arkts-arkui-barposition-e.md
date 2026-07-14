@@ -12,8 +12,7 @@ Enumerates the positions of the **Tabs** component.
 Start
 ```
 
-If the **vertical** attribute is set to **true**, the tab is on the left of the container. If the **vertical**
-attribute is set to **false**, the tab is on the top of the container.
+If the **vertical** attribute is set to **true**, the tab is on the left of the container. If the **vertical** attribute is set to **false**, the tab is on the top of the container.
 
 **Since:** 7
 
@@ -27,8 +26,7 @@ attribute is set to **false**, the tab is on the top of the container.
 End
 ```
 
-If the **vertical** attribute is set to **true**, the tab is on the right of the container. If the **vertical**
-attribute is set to **false**, the tab is at the bottom of the container.
+If the **vertical** attribute is set to **true**, the tab is on the right of the container. If the **vertical** attribute is set to **false**, the tab is at the bottom of the container.
 
 **Since:** 7
 

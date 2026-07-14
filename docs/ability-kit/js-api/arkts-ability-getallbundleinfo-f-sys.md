@@ -12,8 +12,7 @@ import { bundleManager } from '@kit.AbilityKit';
 function getAllBundleInfo(bundleFlags: number, callback: AsyncCallback<Array<BundleInfo>>): void
 ```
 
-Obtains all the bundle information in the system based on the given bundle flags. This API uses an asynchronous
-callback to return the result.
+Obtains all the bundle information in the system based on the given bundle flags. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -69,8 +68,7 @@ try {
 function getAllBundleInfo(bundleFlags: number, userId: number, callback: AsyncCallback<Array<BundleInfo>>): void
 ```
 
-Obtains all the bundle information in the system based on the given bundle flags and user ID. This API uses an
-asynchronous callback to return the result.
+Obtains all the bundle information in the system based on the given bundle flags and user ID. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -129,8 +127,7 @@ try {
 function getAllBundleInfo(bundleFlags: number, userId?: number): Promise<Array<BundleInfo>>
 ```
 
-Obtains all the bundle information in the system based on the given bundle flags and user ID. This API uses a
-promise to return the result.
+Obtains all the bundle information in the system based on the given bundle flags and user ID. This API uses a promise to return the result.
 
 **Since:** 9
 

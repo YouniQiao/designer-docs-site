@@ -1,6 +1,6 @@
 # DefaultChangeUri
 
-Enumeration uris for registerChange.
+Enumerates the **DefaultChangeUri** subtypes.
 
 **Since:** 10
 
@@ -12,7 +12,7 @@ Enumeration uris for registerChange.
 DEFAULT_HIDDEN_ALBUM_URI = 'file://media/HiddenAlbum'
 ```
 
-Uri for albums in hidden album view.
+URI of an album in the hidden albums that are displayed by album, that is, the URI of an album with hidden files. Such albums do not include the preset hidden album and the albums in the trash. This URI is used to subscribe to the change notifications of the hidden albums displayed by album.
 
 **Since:** 11
 

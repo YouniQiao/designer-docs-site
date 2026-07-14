@@ -18,11 +18,7 @@ import { cert } from '@kit.DeviceCertificateKit';
 crlDownloadURI?: string
 ```
 
-Address used to download the CRLs.
-
-> **NOTE**
->
-> The URI takes effect only for the leaf certificate.
+Address used to download the CRLs. > **NOTE** > > The URI takes effect only for the leaf certificate.
 
 **Type:** string
 
@@ -38,8 +34,7 @@ Address used to download the CRLs.
 ocspDigest?: string
 ```
 
-Hash algorithm used to create a certificate ID during OCSP communication. The options **MD5**, **SHA1**,
-**SHA224**, **SHA256**, **SHA384**, and **SHA512** are supported. The default value is **SHA256**.
+Hash algorithm used to create a certificate ID during OCSP communication. The options **MD5**, **SHA1**, **SHA224**, **SHA256**, **SHA384**, and **SHA512** are supported. The default value is **SHA256**.
 
 **Type:** string
 
@@ -89,12 +84,7 @@ Signing certificate used for verifying the signature of the OCSP response.
 ocspResponderURI?: string
 ```
 
-URI of the alternative server used to send OCSP requests. HTTP and HTTPS are supported. The specific
-configuration is determined via the negotiation with the server.
-
-> **NOTE**
->
-> The URI takes effect only for the leaf certificate.
+URI of the alternative server used to send OCSP requests. HTTP and HTTPS are supported. The specific configuration is determined via the negotiation with the server. > **NOTE** > > The URI takes effect only for the leaf certificate.
 
 **Type:** string
 

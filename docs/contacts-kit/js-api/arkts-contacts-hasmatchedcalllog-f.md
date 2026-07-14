@@ -12,9 +12,7 @@ import { contact } from '@kit.ContactsKit';
 function hasMatchedCallLog(context: Context, phoneNumber: string, minDuration: number): Promise<boolean>
 ```
 
-Check whether there are any calls that meet the specified condition.
-
-By default, the system queries call records generated within 6 hours.
+Check whether there are any calls that meet the specified condition. By default, the system queries call records generated within 6 hours.
 
 **Since:** 24
 

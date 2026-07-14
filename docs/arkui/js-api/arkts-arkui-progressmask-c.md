@@ -36,8 +36,7 @@ Constructs a **ProgressMask** object.
 enableBreathingAnimation(value: boolean): void
 ```
 
-Sets whether to enable the breathing animation when the progress indicator is full. If this API is not set, the
-breathing animation is disabled by default.
+Sets whether to enable the breathing animation when the progress indicator is full. If this API is not set, the breathing animation is disabled by default.
 
 **Since:** 12
 

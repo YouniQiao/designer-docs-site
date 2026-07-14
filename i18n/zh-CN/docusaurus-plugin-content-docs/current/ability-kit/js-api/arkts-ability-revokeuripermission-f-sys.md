@@ -6,15 +6,7 @@
 function revokeUriPermission(uri: string, targetBundleName: string, callback: AsyncCallback<number>): void
 ```
 
-撤销授权指定应用的URI。使用callback异步回调。
-该接口仅在Phone、PC/2in1、Tablet设备中可正常调用，在其他设备可以调用但是不生效。
-
-> **说明：**
->
-> - 允许应用撤销自身获得的其他应用URI权限，或授权给其他应用的URI权限。
->
-> - 因URI处理涉及编解码，传入的URI需要使用[getUriFromPath](@ohos.file.fileuri:fileUri.getUriFromPath)接口获取。对于应用自行拼接的URI，系统无法保证
-> 其功能。
+撤销授权指定应用的URI。使用callback异步回调。 该接口仅在Phone、PC/2in1、Tablet设备中可正常调用，在其他设备可以调用但是不生效。 > **说明：** > > - 允许应用撤销自身获得的其他应用URI权限，或授权给其他应用的URI权限。 > > - 因URI处理涉及编解码，传入的URI需要使用[getUriFromPath](@ohos.file.fileuri:fileUri.getUriFromPath)接口获取。对于应用自行拼接的URI，系统无法保证 > 其功能。
 
 **起始版本：** 10
 
@@ -69,15 +61,7 @@ uriPermissionManager.revokeUriPermission(uri, targetBundleName, (error) => {
 function revokeUriPermission(uri: string, targetBundleName: string): Promise<number>
 ```
 
-撤销授权指定应用的URI。使用Promise异步回调。
-该接口仅在Phone、PC/2in1、Tablet设备中可正常调用，在其他设备可以调用但是不生效。
-
-> **说明：**
->
-> - 允许应用撤销自身获得的其他应用URI权限，或授权给其他应用的URI权限。
->
-> - 因URI处理涉及编解码，传入的URI需要使用[getUriFromPath](@ohos.file.fileuri:fileUri.getUriFromPath)接口获取。对于应用自行拼接的URI，系统无法保证
-> 其功能。
+撤销授权指定应用的URI。使用Promise异步回调。 该接口仅在Phone、PC/2in1、Tablet设备中可正常调用，在其他设备可以调用但是不生效。 > **说明：** > > - 允许应用撤销自身获得的其他应用URI权限，或授权给其他应用的URI权限。 > > - 因URI处理涉及编解码，传入的URI需要使用[getUriFromPath](@ohos.file.fileuri:fileUri.getUriFromPath)接口获取。对于应用自行拼接的URI，系统无法保证 > 其功能。
 
 **起始版本：** 10
 
@@ -137,17 +121,7 @@ uriPermissionManager.revokeUriPermission(uri, targetBundleName)
 function revokeUriPermission(uri: string, targetBundleName: string, appCloneIndex: number): Promise<void>
 ```
 
-撤销授权指定应用的URI。使用Promise异步回调。
-该接口仅在Phone、PC/2in1、Tablet设备中可正常调用，在其他设备可以调用但是不生效。
-
-> **说明：**
->
-> - 允许应用撤销自身获得的其他应用URI权限，或授权给其他应用的URI权限。
->
-> - 该接口支持撤销授权给分身应用的URI权限，需要指定目标应用的应用包名和分身索引。
->
-> - 因URI处理涉及编解码，传入的URI需要使用[getUriFromPath](@ohos.file.fileuri:fileUri.getUriFromPath)接口获取。对于应用自行拼接的URI，系统无法保证
-> 其功能。
+撤销授权指定应用的URI。使用Promise异步回调。 该接口仅在Phone、PC/2in1、Tablet设备中可正常调用，在其他设备可以调用但是不生效。 > **说明：** > > - 允许应用撤销自身获得的其他应用URI权限，或授权给其他应用的URI权限。 > > - 该接口支持撤销授权给分身应用的URI权限，需要指定目标应用的应用包名和分身索引。 > > - 因URI处理涉及编解码，传入的URI需要使用[getUriFromPath](@ohos.file.fileuri:fileUri.getUriFromPath)接口获取。对于应用自行拼接的URI，系统无法保证 > 其功能。
 
 **起始版本：** 14
 

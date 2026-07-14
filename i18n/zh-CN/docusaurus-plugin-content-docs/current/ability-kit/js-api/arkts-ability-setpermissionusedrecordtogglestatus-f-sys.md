@@ -6,10 +6,7 @@
 function setPermissionUsedRecordToggleStatus(status: boolean): Promise<void>
 ```
 
-设置是否记录当前用户的权限使用情况。系统应用调用此接口，可以设置当前用户的权限使用记录开关状态。使用Promise异步回调。
-
-status为true时，[addPermissionUsedRecord](arkts-ability-addpermissionusedrecord-f-sys.md#addpermissionusedrecord-1)接口可以正常添加使用记录；status为false时，
-[addPermissionUsedRecord](arkts-ability-addpermissionusedrecord-f-sys.md#addpermissionusedrecord-1)接口不产生权限使用记录，并且删除当前用户的历史记录。
+设置是否记录当前用户的权限使用情况。系统应用调用此接口，可以设置当前用户的权限使用记录开关状态。使用Promise异步回调。 status为true时，[addPermissionUsedRecord](arkts-ability-addpermissionusedrecord-f-sys.md#addpermissionusedrecord-1)接口可以正常添加使用记录；status为false时， [addPermissionUsedRecord](arkts-ability-addpermissionusedrecord-f-sys.md#addpermissionusedrecord-1)接口不产生权限使用记录，并且删除当前用户的历史记录。
 
 **起始版本：** 18
 

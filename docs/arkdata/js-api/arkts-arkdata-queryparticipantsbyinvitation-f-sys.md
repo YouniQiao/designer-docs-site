@@ -15,8 +15,7 @@ function queryParticipantsByInvitation(
     ): void
 ```
 
-Queries the participants based on the sharing invitation code.
-This API uses an asynchronous callback to return the result.
+Queries the participants based on the sharing invitation code. This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -52,7 +51,6 @@ cloudData.sharing.queryParticipantsByInvitation('sharing_invitation_code_test', 
   console.info(`query participants by invitation succeeded, result: ${result}`);
 }))
 
-
 ```
 
 
@@ -62,8 +60,7 @@ cloudData.sharing.queryParticipantsByInvitation('sharing_invitation_code_test', 
 function queryParticipantsByInvitation(invitationCode: string): Promise<Result<Array<Participant>>>
 ```
 
-Queries the participants based on the sharing invitation code.
-This API uses a promise to return the result.
+Queries the participants based on the sharing invitation code. This API uses a promise to return the result.
 
 **Since:** 11
 
@@ -101,7 +98,6 @@ cloudData.sharing.queryParticipantsByInvitation('sharing_invitation_code_test').
 }).catch((err: BusinessError) => {
   console.error(`query participants by invitation failed, code is ${err.code},message is ${err.message}`);
 })
-
 
 ```
 

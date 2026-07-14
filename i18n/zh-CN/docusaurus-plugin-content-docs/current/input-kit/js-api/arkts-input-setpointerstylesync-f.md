@@ -6,8 +6,7 @@
 function setPointerStyleSync(windowId: number, pointerStyle: PointerStyle): void
 ```
 
-设置指定窗口的鼠标样式类型，使用同步方式返回结果。此接口仅支持设置本应用进程内窗口的鼠标样式类型，如需通过UIExtensionAbility进程设置宿主窗口的鼠标样式类型，请参阅
-[setCursor](../../../../reference/apis-arkui/arkts-apis-uicontext-cursorcontroller.md#setcursor12)。
+设置指定窗口的鼠标样式类型，使用同步方式返回结果。此接口仅支持设置本应用进程内窗口的鼠标样式类型，如需通过UIExtensionAbility进程设置宿主窗口的鼠标样式类型，请参阅 [setCursor](../../../../reference/apis-arkui/arkts-apis-uicontext-cursorcontroller.md#setcursor12)。
 
 **起始版本：** 10
 
@@ -57,7 +56,7 @@ struct Index {
               pointer.setPointerStyleSync(windowId, pointer.PointerStyle.CROSS);
               console.info(`Succeeded in setting pointer style.`);
             } catch (error) {
-              console.error(`Failed to get pointer size, Code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message}.`);
+              console.error(`Failed to set pointer style, Code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message}.`);
             }
           });
         })

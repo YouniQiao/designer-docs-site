@@ -6,13 +6,7 @@
 function releaseInterface(pipe: USBDevicePipe, iface: USBInterface): number
 ```
 
-释放claim过的通信接口。
-
-> **说明：**
->
-> 在调用该接口前需要通过
-> [usbManager.claimInterface](arkts-basicservices-claiminterface-f.md#claiminterface-1)
-> claim通信接口。
+释放claim过的通信接口。 > **说明：** > > 在调用该接口前需要通过 > [usbManager.claimInterface](arkts-basicservices-claiminterface-f.md#claiminterface-1) > claim通信接口。
 
 **起始版本：** 9
 
@@ -41,7 +35,7 @@ function releaseInterface(pipe: USBDevicePipe, iface: USBInterface): number
 **示例：**
 
 ```TypeScript
-function releaseInterface() {
+async function releaseInterface() {
   let devicesList: Array<usbManager.USBDevice> = usbManager.getDevices();
   if (!devicesList || devicesList.length == 0) {
     console.info(`device list is empty`);
@@ -49,7 +43,7 @@ function releaseInterface() {
   }
 
   let device: usbManager.USBDevice = devicesList?.[0];
-  usbManager.requestRight(device.name);
+  await usbManager.requestRight(device.name);
   let devicepipe: usbManager.USBDevicePipe = usbManager.connectDevice(device);
   let interfaces: usbManager.USBInterface = device.configs?.[0]?.interfaces?.[0];
   let ret: number = usbManager.claimInterface(devicepipe, interfaces);

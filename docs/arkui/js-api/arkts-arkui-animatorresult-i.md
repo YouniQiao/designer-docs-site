@@ -18,9 +18,7 @@ import { AnimatorOptions, SimpleAnimatorOptions, AnimatorResult } from '@kit.Ark
 cancel(): void
 ```
 
-Cancels the animation, triggering the [onCancel](../../../../reference/apis-arkui/js-apis-animator.md#properties)
-callback. This API is functionally identical to [finish](arkts-arkui-animatorresult-i.md#finish-1) except for the callback it
-triggers. It is recommended that you use the **finish** API to end animations.
+Cancels the animation, triggering the [onCancel](../../../../reference/apis-arkui/js-apis-animator.md#properties) callback. This API is functionally identical to [finish](arkts-arkui-animatorresult-i.md#finish-1) except for the callback it triggers. It is recommended that you use the **finish** API to end animations.
 
 **Since:** 6
 
@@ -43,8 +41,7 @@ animator.cancel();
 finish(): void
 ```
 
-Ends the animation, triggering the [onFinish](../../../../reference/apis-arkui/js-apis-animator.md#properties)
-callback.
+Ends the animation, triggering the [onFinish](../../../../reference/apis-arkui/js-apis-animator.md#properties) callback.
 
 **Since:** 6
 
@@ -90,8 +87,7 @@ animator.pause();
 play(): void
 ```
 
-Plays this animation. The animation retains the previous playback state. For example, if the animation is set to
-**reverse** and paused, it will remain in **reverse** when resumed.
+Plays this animation. The animation retains the previous playback state. For example, if the animation is set to **reverse** and paused, it will remain in **reverse** when resumed.
 
 **Since:** 6
 
@@ -181,9 +177,7 @@ struct AnimatorTest {
 reset(options: AnimatorOptions | SimpleAnimatorOptions): void
 ```
 
-Resets the animation parameters of this animator. Compared with
-[reset](arkts-arkui-animatorresult-i.md#reset-1), this API accepts parameters of the
-[SimpleAnimatorOptions](arkts-arkui-simpleanimatoroptions-c.md) type.
+Resets the animation parameters of this animator. Compared with [reset](arkts-arkui-animatorresult-i.md#reset-1), this API accepts parameters of the [SimpleAnimatorOptions](arkts-arkui-simpleanimatoroptions-c.md) type.
 
 **Since:** 18
 
@@ -387,10 +381,7 @@ Called when this animation is finished.
 onFrame: (progress: number) => void
 ```
 
-Called when a frame is received.
-
-**progress**: current value of the animation. Value range: [begin, end] defined in
-[AnimatorOptions](arkts-arkui-animatoroptions-i.md). Default value range: [0, 1]
+Called when a frame is received. **progress**: current value of the animation. Value range: [begin, end] defined in [AnimatorOptions](arkts-arkui-animatoroptions-i.md). Default value range: [0, 1]
 
 **Type:** (progress: number) => void
 
@@ -426,10 +417,7 @@ Called when this animation repeats.
 oncancel: () => void
 ```
 
-Called when this animation is canceled.
-
-Note: This API is supported since API version 6 and deprecated since API version 12. You are advised to use
-**onCancel** instead.
+Called when this animation is canceled. Note: This API is supported since API version 6 and deprecated since API version 12. You are advised to use **onCancel** instead.
 
 **Type:** () => void
 
@@ -449,10 +437,7 @@ Note: This API is supported since API version 6 and deprecated since API version
 onfinish: () => void
 ```
 
-Called when this animation is finished.
-
-Note: This API is supported since API version 6 and deprecated since API version 12. You are advised to use
-**onFinish** instead.
+Called when this animation is finished. Note: This API is supported since API version 6 and deprecated since API version 12. You are advised to use **onFinish** instead.
 
 **Type:** () => void
 
@@ -472,10 +457,7 @@ Note: This API is supported since API version 6 and deprecated since API version
 onframe: (progress: number) => void
 ```
 
-Called when a frame is received.
-
-Note: This API is supported since API version 6 and deprecated since API version 12. You are advised to use
-**onFrame** instead.
+Called when a frame is received. Note: This API is supported since API version 6 and deprecated since API version 12. You are advised to use **onFrame** instead.
 
 **Type:** (progress: number) => void
 
@@ -495,10 +477,7 @@ Note: This API is supported since API version 6 and deprecated since API version
 onrepeat: () => void
 ```
 
-Called when this animation repeats.
-
-Note: This API is supported since API version 6 and deprecated since API version 12. You are advised to use
-**onRepeat** instead.
+Called when this animation repeats. Note: This API is supported since API version 6 and deprecated since API version 12. You are advised to use **onRepeat** instead.
 
 **Type:** () => void
 

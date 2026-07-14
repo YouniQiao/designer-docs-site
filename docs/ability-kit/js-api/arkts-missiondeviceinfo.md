@@ -7,6 +7,6 @@
 
 | Name | Description |
 | --- | --- |
-| [MissionDeviceInfo](arkts-ability-missiondeviceinfo-i-sys.md) | The module defines the parameters required for registering a listener. It can be used as an input parameter in[registerMissionListener](arkts-ability-registermissionlistener-f-sys.md#registermissionlistener-2) |
+| [MissionDeviceInfo](arkts-ability-missiondeviceinfo-i-sys.md) | The module defines the parameters required for registering a listener. It can be used as an input parameter in [registerMissionListener](arkts-ability-registermissionlistener-f-sys.md#registermissionlistener-2) |
 <!--DelEnd-->
 

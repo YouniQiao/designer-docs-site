@@ -1,8 +1,6 @@
 # CloudEnhancement (System API)
 
-Provides APIs for cloud enhancement management,
-including managing the tasks of generating AI-powered cloud enhancement photos
-and obtaining the association between the original photos and AI cloud enhancement photos.
+Provides APIs for cloud enhancement management, including managing the tasks of generating AI-powered cloud- enhanced photos and obtaining the association between the original photos and AI cloud-enhanced photos.
 
 **Since:** 13
 
@@ -36,7 +34,7 @@ Cancels all cloud enhancement tasks.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Returns void |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -84,13 +82,13 @@ Cancels cloud enhancement tasks.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| photoAssets | Array&lt;PhotoAsset&gt; | Yes | Array of PhotoAssets whose cloud enhancement tasks are to be canceled. |
+| photoAssets | Array&lt;PhotoAsset&gt; | Yes | Array of [PhotoAsset](arkts-medialibrary-photoasset-i.md) objectswhose cloud enhancement tasks are to be canceled. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Returns void |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -98,7 +96,7 @@ Cancels cloud enhancement tasks.
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | Internal system error |
 
 **Example**
@@ -155,15 +153,15 @@ Obtains a cloud enhancement instance.
 
 | Type | Description |
 | --- | --- |
-| CloudEnhancement | Returns cloud enhancement instance |
+| CloudEnhancement | A cloud enhancement instance. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
-| 14000011 | Internal system error@static |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
+| 14000011 | Internal system error |
 
 **Example**
 
@@ -212,13 +210,13 @@ Obtains the photo after cloud enhancement.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| asset | PhotoAsset | Yes | PhotoAsset whose cloud enhancement photo is to be obtained. |
+| asset | PhotoAsset | Yes | [PhotoAsset](arkts-medialibrary-photoasset-i.md) for which the cloud-enhanced photois to be obtained. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;PhotoAsset&gt; | Returns cloud-enhanced asset |
+| Promise&lt;PhotoAsset&gt; | Promise used to return the photo after cloud enhancement. |
 
 **Error codes:**
 
@@ -226,7 +224,7 @@ Obtains the photo after cloud enhancement.
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | Internal system error |
 
 **Example**
@@ -280,13 +278,13 @@ Prioritizes a cloud enhancement task.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| photoAsset | PhotoAsset | Yes | PhotoAsset whose cloud enhancement priority needs to be escalated. |
+| photoAsset | PhotoAsset | Yes | [PhotoAsset](arkts-medialibrary-photoasset-i.md) whose cloud enhancementpriority needs to be escalated. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Returns void |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -294,7 +292,7 @@ Prioritizes a cloud enhancement task.
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | Internal system error |
 
 **Example**
@@ -348,13 +346,13 @@ Queries information about a cloud enhancement task.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| photoAsset | PhotoAsset | Yes | PhotoAsset whose cloud enhancement task information is to be queried. |
+| photoAsset | PhotoAsset | Yes | [PhotoAsset](arkts-medialibrary-photoasset-i.md) whose cloud enhancement taskinformation is to be queried. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;CloudEnhancementTaskState&gt; | Returns cloud enhancement task state |
+| Promise&lt;CloudEnhancementTaskState&gt; | Promise used to return the information about the cloudenhancement task. |
 
 **Error codes:**
 
@@ -362,7 +360,7 @@ Queries information about a cloud enhancement task.
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | Internal system error |
 
 **Example**
@@ -428,7 +426,7 @@ async function example(context: Context) {
 submitCloudEnhancementTasks(photoAssets: Array<PhotoAsset>, hasCloudWatermark: boolean): Promise<void>
 ```
 
-Submits cloud enhancement tasks.
+Submits cloud enhancement tasks. This API uses a promise to return the result.
 
 **Since:** 13
 
@@ -442,14 +440,14 @@ Submits cloud enhancement tasks.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| photoAssets | Array&lt;PhotoAsset&gt; | Yes | PhotoAsset to enhance. |
+| photoAssets | Array&lt;PhotoAsset&gt; | Yes | [PhotoAsset](arkts-medialibrary-photoasset-i.md) to enhance. |
 | hasCloudWatermark | boolean | Yes | Whether to add a cloud enhancement watermark to the enhanced images. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Returns void |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -457,7 +455,7 @@ Submits cloud enhancement tasks.
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | Internal system error |
 
 **Example**
@@ -499,7 +497,7 @@ submitCloudEnhancementTasks(
     ): Promise<void>
 ```
 
-Submits cloud enhancement tasks.
+Submits cloud enhancement tasks. You can select the trigger mode of the cloud enhancement task. This API uses a promise to return the result.
 
 **Since:** 18
 
@@ -513,15 +511,15 @@ Submits cloud enhancement tasks.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| photoAssets | Array&lt;PhotoAsset&gt; | Yes | PhotoAsset to enhance. |
-| hasCloudWatermark | boolean | Yes | Whether to add a cloud watermark to the enhanced image.The value true means to add the watermark, and false means the opposite. |
-| triggerMode | number | No | Trigger mode of the cloud enhancement task.0: manually triggered. 1: automatically triggered. The default value is 0. |
+| photoAssets | Array&lt;PhotoAsset&gt; | Yes | [PhotoAsset](arkts-medialibrary-photoasset-i.md) to enhance. |
+| hasCloudWatermark | boolean | Yes | Whether to add a cloud watermark to the enhanced image. **true** to add,**false** otherwise. |
+| triggerMode | number | No | Trigger mode of the cloud enhancement task.<br>**- 0**: manually triggered.<br>**- 1**: automatically triggered.<br>The default value is **0**. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Returns void |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -529,7 +527,7 @@ Submits cloud enhancement tasks.
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | Internal system error |
 
 **Example**
@@ -582,7 +580,7 @@ Synchronizes the cloud enhancement task status.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Returns void |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

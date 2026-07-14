@@ -18,8 +18,7 @@ import { MaxCountType, PreselectedInfo, BaseItemInfo, ItemInfo, AnimatorParams, 
 appAlbumFilters?: Array<string>
 ```
 
-Only display album contents corresponding to the specified applications.
-Use the bundle name to identify the application.
+Only display album contents corresponding to the specified applications. Use the bundle name to identify the application.
 
 **Type:** Array<string>
 

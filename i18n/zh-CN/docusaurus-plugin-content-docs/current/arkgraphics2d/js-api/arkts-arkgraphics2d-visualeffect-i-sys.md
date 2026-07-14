@@ -1,7 +1,6 @@
 # VisualEffect
 
-VisualEffect效果类，用于将相应的效果添加到指定的组件上。
-在调用VisualEffect的方法前，需要先通过createEffect创建一个VisualEffect实例。
+VisualEffect效果类，用于将相应的效果添加到指定的组件上。 在调用VisualEffect的方法前，需要先通过createEffect创建一个VisualEffect实例。
 
 **起始版本：** 12
 
@@ -38,9 +37,12 @@ backgroundColorBlender(blender: BrightnessBlender): VisualEffect
 **示例：**
 
 ```TypeScript
+import { uiEffect } from '@kit.ArkGraphics2D'
 let blender : uiEffect.BrightnessBlender =
   uiEffect.createBrightnessBlender({cubicRate:1.0, quadraticRate:1.0, linearRate:1.0, degree:1.0, saturation:1.0,
     positiveCoefficient:[2.3, 4.5, 2.0], negativeCoefficient:[0.5, 2.0, 0.5], fraction:0.0})
+let visualEffect = uiEffect.createEffect();
+// 将混合器添加至组件上以改变组件背景颜色
 visualEffect.backgroundColorBlender(blender)
 
 ```
@@ -89,14 +91,14 @@ import { common2D, uiEffect } from '@kit.ArkGraphics2D'
 @Entry
 @Component
 struct Index {
-  @State point1:common2D.Point3d = {
-    x:0,y:0,z:2
+  @State borderLightPosition: common2D.Point3d = {
+    x: 0, y: 0, z: 2
   }
-  @State color1:common2D.Color = {
-    red:1,green:1,blue:1,alpha:1
+  @State borderLightColor: common2D.Color = {
+    red: 1, green: 1, blue: 1, alpha: 1
   }
-  @State lightIntensity1:number = 1
-  @State borderWidth:number = 20
+  @State lightIntensity: number = 1
+  @State borderWidth_: number = 20
 
   build() {
     Column() {
@@ -109,8 +111,9 @@ struct Index {
           .width('646px')
           .height('900px')
           .borderRadius(10)
-          .visualEffect(uiEffect.createEffect().borderLight(this.point1, this.color1, this.lightIntensity1,
-            this.borderWidth))
+          // 为圆角矩形组件边框添加3D光照效果
+          .visualEffect(uiEffect.createEffect().borderLight(this.borderLightPosition, this.borderLightColor, this.lightIntensity,
+            this.borderWidth_))
       }
       .width('100%')
       .height('55%')
@@ -163,7 +166,7 @@ colorGradient(colors: Array<Color>, positions: Array<common2D.Point>, strengths:
 **示例：**
 
 ```TypeScript
-import { common2D, uiEffect } from "@kit.ArkGraphics2D"
+import { common2D, uiEffect } from '@kit.ArkGraphics2D'
 
 @Entry
 @Component
@@ -171,6 +174,7 @@ struct ColorGradientExample {
   build() {
     Stack() {
       Stack() {}
+      // 此方法为组件添加颜色渐变效果
       .visualEffect(uiEffect.createEffect()
         .colorGradient(
           [
@@ -205,13 +209,7 @@ struct ColorGradientExample {
 distortionCollapse(distortionParam: DistortionParam): VisualEffect
 ```
 
-此方法为组件添加非线性形变效果。
-
-1. 该视效支持控件范围外的绘制，但仍会受到父控件Clip的影响。
-2. 因包含前景Filter，未与EffectComponent组合使用时不兼容组件自身及子组件的部分视效（如BrightnessBlender或systemMaterial）。
-3. 支持对系统材质进行扭曲，但是与EffectComponent组合使用时，会导致系统材质的背景扭曲。
-4. 调用distortionCollapse时，会创建与形变后区域等大的离屏画布，再将当前组件（含子组件）的内容绘制到离屏画布上，再对画布上的已有内容进行形变绘制。
-5. 使用该实现方式时，如果不与EffectComponent组合使用，将导致systemMaterial、backgroundEffect、brightness、blur等需要截屏的接口无法截取到正确的画面。
+此方法为组件添加非线性形变效果。 1. 该视效支持控件范围外的绘制，但仍会受到父控件Clip的影响。 2. 因包含前景Filter，未与EffectComponent组合使用时不兼容组件自身及子组件的部分视效（如BrightnessBlender或systemMaterial）。 3. 支持对系统材质进行扭曲，但是与EffectComponent组合使用时，会导致系统材质的背景扭曲。 4. 调用distortionCollapse时，会创建与形变后区域等大的离屏画布，再将当前组件（含子组件）的内容绘制到离屏画布上，再对画布上的已有内容进行形变绘制。 5. 使用该实现方式时，如果不与EffectComponent组合使用，将导致systemMaterial、backgroundEffect、brightness、blur等需要截屏的接口无法截取到正确的画面。
 
 **起始版本：** 26.0.0
 
@@ -317,7 +315,7 @@ struct Index {
   @State tintColorB: number = 1.;
   @State tintColorA: number = 1.;
 
-  private GetMaterialVisualEffect(): uiEffect.VisualEffect {
+  private getMaterialVisualEffect(): uiEffect.VisualEffect {
     let effect: uiEffect.VisualEffect = uiEffect.createEffect();
     effect.liquidMaterial({
       enable: true,
@@ -343,7 +341,7 @@ struct Index {
           .height(553 + 'px')
           .width(553 + 'px')
           .borderRadius(12)
-          .visualEffect(this.GetMaterialVisualEffect())
+          .visualEffect(this.getMaterialVisualEffect())
       }
       .backgroundEffect({
         radius: 15,

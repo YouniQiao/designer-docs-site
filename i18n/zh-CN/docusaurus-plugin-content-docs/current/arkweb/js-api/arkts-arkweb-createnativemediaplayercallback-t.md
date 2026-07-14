@@ -5,8 +5,7 @@ type CreateNativeMediaPlayerCallback =
       (handler: NativeMediaPlayerHandler, mediaInfo: MediaInfo) => NativeMediaPlayerBridge
 ```
 
-[onCreateNativeMediaPlayer](arkts-arkweb-webviewcontroller-c.md#oncreatenativemediaplayer-1)
-方法的参数。一个回调函数，创建一个播放器，用于接管网页中的媒体播放。
+[onCreateNativeMediaPlayer](arkts-arkweb-webviewcontroller-c.md#oncreatenativemediaplayer-1) 方法的参数。一个回调函数，创建一个播放器，用于接管网页中的媒体播放。
 
 **起始版本：** 12
 

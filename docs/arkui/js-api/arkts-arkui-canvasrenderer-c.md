@@ -1,22 +1,6 @@
 # CanvasRenderer
 
-After the **CanvasRenderingContext2D** object is bound to the **Canvas** component, you can draw shapes,
-texts, and images on the **Canvas** component.
-
-> **NOTE**
->
-> * It is recommended that the **CanvasRenderingContext2D** object and the **Canvas** component be
-> encapsulated into the same custom component, ensuring a one-to-one correspondence and consistent
-> lifecycle between them.
->
-> * When you call drawing APIs in this module, the commands are stored in the associated **Canvas**
-> component's command queue. These commands are only executed when the current frame enters the rendering
-> phase and the associated **Canvas** component is visible. Therefore, when the **Canvas** component is
-> invisible (for example, off-screen or hidden), avoid frequent drawing calls to prevent command queue
-> buildup and excessive memory usage.
->
-> * When the width or height of the **Canvas** component exceeds 8000 px, rendering via the CPU causes
-> significant performance degradation.
+After the **CanvasRenderingContext2D** object is bound to the **Canvas** component, you can draw shapes, texts, and images on the **Canvas** component. > **NOTE** > > * It is recommended that the **CanvasRenderingContext2D** object and the **Canvas** component be > encapsulated into the same custom component, ensuring a one-to-one correspondence and consistent > lifecycle between them. > > * When you call drawing APIs in this module, the commands are stored in the associated **Canvas** > component's command queue. These commands are only executed when the current frame enters the rendering > phase and the associated **Canvas** component is visible. Therefore, when the **Canvas** component is > invisible (for example, off-screen or hidden), avoid frequent drawing calls to prevent command queue > buildup and excessive memory usage. > > * When the width or height of the **Canvas** component exceeds 8000 px, rendering via the CPU causes > significant performance degradation.
 
 **Inheritance/Implementation:** CanvasRenderer extends [CanvasPath](arkts-arkui-canvaspath-c.md)
 
@@ -150,8 +134,7 @@ Creates a conic gradient.
 createImageData(sw: number, sh: number): ImageData
 ```
 
-Creates a blank ImageData object of a specified size. This API involves time-consuming memory copy. Therefore,
-avoid frequent calls to it. The createImageData example is identical to the putImageData example.
+Creates a blank ImageData object of a specified size. This API involves time-consuming memory copy. Therefore, avoid frequent calls to it. The createImageData example is identical to the putImageData example.
 
 **Since:** 8
 
@@ -180,8 +163,7 @@ avoid frequent calls to it. The createImageData example is identical to the putI
 createImageData(imageData: ImageData): ImageData
 ```
 
-Creates an **ImageData** object with the same width and height of an existing **ImageData**
-object. This API involves time-consuming memory copy. Therefore, avoid frequent calls to it.
+Creates an **ImageData** object with the same width and height of an existing **ImageData** object. This API involves time-consuming memory copy. Therefore, avoid frequent calls to it.
 
 **Since:** 8
 
@@ -487,8 +469,7 @@ Draws filled text on the canvas.
 getImageData(sx: number, sy: number, sw: number, sh: number): ImageData
 ```
 
-Obtains the **ImageData** object created with the pixels within the specified area on the
-canvas. This API involves time-consuming memory copy. Therefore, avoid frequent calls to it.
+Obtains the **ImageData** object created with the pixels within the specified area on the canvas. This API involves time-consuming memory copy. Therefore, avoid frequent calls to it.
 
 **Since:** 8
 
@@ -541,8 +522,7 @@ Obtains the dash line style.
 getPixelMap(sx: number, sy: number, sw: number, sh: number): PixelMap
 ```
 
-Obtains the **PixelMap** object created with the pixels within the specified area on the
-canvas. This API involves time-consuming memory copy. Therefore, avoid frequent calls to it.
+Obtains the **PixelMap** object created with the pixels within the specified area on the canvas. This API involves time-consuming memory copy. Therefore, avoid frequent calls to it.
 
 **Since:** 8
 
@@ -593,8 +573,7 @@ Obtains the current transformation matrix being applied to the context.
 measureText(text: string): TextMetrics
 ```
 
-Returns a **TextMetrics** object used to obtain the width of specified text. Note that the width
-obtained may vary by device.
+Returns a **TextMetrics** object used to obtain the width of specified text. Note that the width obtained may vary by device.
 
 **Since:** 8
 
@@ -682,8 +661,7 @@ Fills the new rectangular area with the **ImageData** data after cropping.
 reset(): void
 ```
 
-Resets this **CanvasRenderingContext2D** object to its default state and clears the background buffer,
-drawing state stack, defined paths, and styles.
+Resets this **CanvasRenderingContext2D** object to its default state and clears the background buffer, drawing state stack, defined paths, and styles.
 
 **Since:** 12
 
@@ -715,16 +693,7 @@ Resets the current transform to the identity matrix.
 restore(): void
 ```
 
-Restores the saved drawing context.
-
-> **NOTE**
->
-> When the number of calls to **restore()** does not exceed the number of calls to **save()**,
-> this API pops the saved drawing state from the stack and restores the attributes, clipping
-> path, and transformation matrix of the **CanvasRenderingContext2D** object.<br>
-> If the number of calls to **restore()** exceeds the number of calls to **save()**, this API
-> does nothing.<br>
-> If there is no saved state, this API does nothing.
+Restores the saved drawing context. > **NOTE** > > When the number of calls to **restore()** does not exceed the number of calls to **save()**, > this API pops the saved drawing state from the stack and restores the attributes, clipping > path, and transformation matrix of the **CanvasRenderingContext2D** object.<br> > If the number of calls to **restore()** exceeds the number of calls to **save()**, this API > does nothing.<br> > If there is no saved state, this API does nothing.
 
 **Since:** 8
 
@@ -740,8 +709,7 @@ Restores the saved drawing context.
 restoreLayer(): void
 ```
 
-Restores the image transformation and cropping state to the state before **saveLayer**,
-and then draws the layer onto the canvas. For the sample code, see the code for **saveLayer**.
+Restores the image transformation and cropping state to the state before **saveLayer**, and then draws the layer onto the canvas. For the sample code, see the code for **saveLayer**.
 
 **Since:** 12
 
@@ -856,8 +824,7 @@ Sets the dash line style.
 setPixelMap(value?: PixelMap): void
 ```
 
-Draws the input **PixelMap** object on the canvas.
-The example is the same as that of **getPixelMap**.
+Draws the input **PixelMap** object on the canvas. The example is the same as that of **getPixelMap**.
 
 **Since:** 8
 
@@ -877,20 +844,7 @@ The example is the same as that of **getPixelMap**.
 setTransform(a: number, b: number, c: number, d: number, e: number, f: number): void
 ```
 
-Resets the existing transformation matrix and creates a new transformation matrix by
-using the same parameters as the **transform()** API.
-
-> **NOTE**
->
-> The coordinates of each point in the graph after transformation can be calculated
-> using the following formula:
->
-> **x** and **y** represent coordinates before transformation, and **x'** and **y'**
-> represent coordinates after transformation.
->
-> - x' = `a * x + c * y + e`
->
-> - y' = `b * x + d * y + f`
+Resets the existing transformation matrix and creates a new transformation matrix by using the same parameters as the **transform()** API. > **NOTE** > > The coordinates of each point in the graph after transformation can be calculated > using the following formula: > > **x** and **y** represent coordinates before transformation, and **x'** and **y'** > represent coordinates after transformation. > > - x' = `a * x + c * y + e` > > - y' = `b * x + d * y + f`
 
 **Since:** 8
 
@@ -917,8 +871,7 @@ using the same parameters as the **transform()** API.
 setTransform(transform?: Matrix2D): void
 ```
 
-Resets the current transformation to the identity matrix, and then creates a new
-transformation matrix based on the specified **Matrix2D** object.
+Resets the current transformation to the identity matrix, and then creates a new transformation matrix based on the specified **Matrix2D** object.
 
 **Since:** 8
 
@@ -1050,22 +1003,7 @@ Displays the specified **ImageBitmap** object.
 transform(a: number, b: number, c: number, d: number, e: number, f: number): void
 ```
 
-Defines a transformation matrix. To transform a graph, you only need to set parameters of
-the matrix. The coordinates of the graph are multiplied by the matrix values to obtain new
-coordinates of the transformed graph. You can use the matrix to implement multiple transform
-effects.
-
-> **NOTE**
->
-> The coordinates of each point in the graph after transformation can be calculated
-> using the following formula:
->
-> **x** and **y** represent coordinates before transformation, and **x'** and **y'**
-> represent coordinates after transformation.
->
-> - x' = `a * x + c * y + e`
->
-> - y' = `b * x + d * y + f`
+Defines a transformation matrix. To transform a graph, you only need to set parameters of the matrix. The coordinates of the graph are multiplied by the matrix values to obtain new coordinates of the transformed graph. You can use the matrix to implement multiple transform effects. > **NOTE** > > The coordinates of each point in the graph after transformation can be calculated > using the following formula: > > **x** and **y** represent coordinates before transformation, and **x'** and **y'** > represent coordinates after transformation. > > - x' = `a * x + c * y + e` > > - y' = `b * x + d * y + f`
 
 **Since:** 8
 
@@ -1115,17 +1053,7 @@ Moves the origin of the coordinate system.
 antialias: boolean | undefined
 ```
 
-Sets whether to enable anti-aliasing for drawing graphics and text. Setting this API
-overrides the anti-aliasing effect in [RenderingContextSettings](#renderingcontextsettings).
-If this API is not specified, the default value is **undefined** and the anti-aliasing effect
-in [RenderingContextSettings](#renderingcontextsettings) is used.
-
-Whether to enable anti-aliasing for drawing graphics and text.
-
-**true**: Anti-aliasing is enabled. **false**: Anti-aliasing is disabled.
-
-When the value is **undefined**, the anti-aliasing effect in
-[RenderingContextSettings](#renderingcontextsettings) is used.
+Sets whether to enable anti-aliasing for drawing graphics and text. Setting this API overrides the anti-aliasing effect in [RenderingContextSettings](#renderingcontextsettings). If this API is not specified, the default value is **undefined** and the anti-aliasing effect in [RenderingContextSettings](#renderingcontextsettings) is used. Whether to enable anti-aliasing for drawing graphics and text. **true**: Anti-aliasing is enabled. **false**: Anti-aliasing is disabled. When the value is **undefined**, the anti-aliasing effect in [RenderingContextSettings](#renderingcontextsettings) is used.
 
 **Type:** boolean | undefined
 
@@ -1145,13 +1073,7 @@ When the value is **undefined**, the anti-aliasing effect in
 direction: CanvasDirection
 ```
 
-Sets the text direction. This attribute is write-only. You can set its value through an
-assignment statement, but cannot obtain its current value through a read operation. If you
-attempt to read its current value, **undefined** will be returned.
-
-For details, see {@link CanvasDirection}.
-
-Default value: **"inherit"**
+Sets the text direction. This attribute is write-only. You can set its value through an assignment statement, but cannot obtain its current value through a read operation. If you attempt to read its current value, **undefined** will be returned. For details, see {@link CanvasDirection}. Default value: **"inherit"**
 
 **Type:** CanvasDirection
 
@@ -1171,27 +1093,7 @@ Default value: **"inherit"**
 fillStyle: string | number | CanvasGradient | CanvasPattern
 ```
 
-Sets the fill color for rendering. This attribute is write-only. You can set its value through an
-assignment statement, but cannot obtain its current value through a read operation. If you attempt
-to read its current value, **undefined** will be returned.
-
-- When the type is string, this attribute indicates the color of the fill area. For details about
-the color format, see the description for the string type in
-[ResourceColor](arkts-arkui-resourcecolor-t.md).
-
-- When the type is number, this attribute indicates the color of the fill area. Fully transparent
-colors are not supported. For details about the color format, see the description for the number
-type in [ResourceColor](arkts-arkui-resourcecolor-t.md).
-
-- When the type is **CanvasGradient**, this attribute indicates a gradient object, which is created
-via the [createLinearGradient](#createlineargradient) API.
-
-- When the type is **CanvasPattern**, this attribute indicates a pattern, which is created via the
-[createPattern](#createpattern) API.
-
-Default value: **'#000000'** (black)
-
-Invalid values do not take effect. The effect before the setting is retained.
+Sets the fill color for rendering. This attribute is write-only. You can set its value through an assignment statement, but cannot obtain its current value through a read operation. If you attempt to read its current value, **undefined** will be returned. - When the type is string, this attribute indicates the color of the fill area. For details about the color format, see the description for the string type in [ResourceColor](arkts-arkui-resourcecolor-t.md). - When the type is number, this attribute indicates the color of the fill area. Fully transparent colors are not supported. For details about the color format, see the description for the number type in [ResourceColor](arkts-arkui-resourcecolor-t.md). - When the type is **CanvasGradient**, this attribute indicates a gradient object, which is created via the [createLinearGradient](#createlineargradient) API. - When the type is **CanvasPattern**, this attribute indicates a pattern, which is created via the [createPattern](#createpattern) API. Default value: **'#000000'** (black) Invalid values do not take effect. The effect before the setting is retained.
 
 **Type:** string | number | CanvasGradient | CanvasPattern
 
@@ -1211,47 +1113,7 @@ Invalid values do not take effect. The effect before the setting is retained.
 filter: string
 ```
 
-Sets the filter for an image. Any number of filters can be combined. This attribute is
-write-only. You can set its value through an assignment statement, but cannot obtain its
-current value through a read operation. If you attempt to read its current value,
-**undefined** will be returned.
-
-> **NOTE**
->
-> The resources used in this example are not located in the **src** > **main** > **resource** directory. Starting
-> from DevEco Studio 6.0.0 Beta2, the resources that are located outside the **resources** directory are not
-> packaged by default when a project or module is created. To package these resources, go to **buildOption** in the
-> module's **build-profile.json5** file > **resOptions** > **copyCodeResource**, and set **enable** to **true**.
-> For details, see the description of copyCodeResource.
-
-Available values are as follows:
-
-- **'none'**: no filter effect.
-- **'blur(`<length>`)'**: applies the Gaussian blur to the image. The value must be greater
-than or equal to 0. The unit can be px, vp, or rem. The default value is **blur(0px)**.
-- **'brightness([`<number>`\|`<percentage>`])'**: applies a linear multiplier to the image to
-adjust its brightness. The value can be a number or a percentage, and must be greater than
-or equal to 0. The default value is **brightness(1)**.
-- **'contrast([`<number>`\|`<percentage>`])'**: adjusts the contrast of the image. The value
-can be a number or a percentage, and must be greater than or equal to 0. The default value
-is **contrast(1)**.
-- **'grayscale([`<number>`\|`<percentage>`])'**: converts the image to grayscale. The value can
-be a number or a percentage, and must be within the range of [0, 1]. The default value is
-**grayscale(0)**.
-- **'hue-rotate(`<angle>`)'**: applies hue rotation to the image. The value ranges from
-**0deg** to **360deg**. The default value is **hue-rotate(0deg)**.
-- **'invert([`<number>`\|`<percentage>`])'**: inverts the input image. The value can be a number
-or a percentage, and must be within the range of [0, 1]. The default value is
-**invert(0)**.
-- **'opacity([`<number>`\|`<percentage>`])'**: adjusts the opacity of the image. The value can be
-a number or a percentage, and must be within the range of [0, 1]. The default value is
-**opacity(1)**.
-- **'saturate([`<number>`\|`<percentage>`])'**: adjusts the saturation of the image. The value
-can be a number or a percentage, and must be greater than or equal to 0. The default value
-is **saturate(1)**.
-- **'sepia([`<number>`\|`<percentage>`])'**: converts the image to sepia. The value can be a
-number or a percentage, and must be within the range of [0, 1]. The default value is
-**sepia(0)**.
+Sets the filter for an image. Any number of filters can be combined. This attribute is write-only. You can set its value through an assignment statement, but cannot obtain its current value through a read operation. If you attempt to read its current value, **undefined** will be returned. > **NOTE** > > The resources used in this example are not located in the **src** > **main** > **resource** directory. Starting > from DevEco Studio 6.0.0 Beta2, the resources that are located outside the **resources** directory are not > packaged by default when a project or module is created. To package these resources, go to **buildOption** in the > module's **build-profile.json5** file > **resOptions** > **copyCodeResource**, and set **enable** to **true**. > For details, see the description of copyCodeResource. Available values are as follows: - **'none'**: no filter effect. - **'blur(`<length>`)'**: applies the Gaussian blur to the image. The value must be greater than or equal to 0. The unit can be px, vp, or rem. The default value is **blur(0px)**. - **'brightness([`<number>`\|`<percentage>`])'**: applies a linear multiplier to the image to adjust its brightness. The value can be a number or a percentage, and must be greater than or equal to 0. The default value is **brightness(1)**. - **'contrast([`<number>`\|`<percentage>`])'**: adjusts the contrast of the image. The value can be a number or a percentage, and must be greater than or equal to 0. The default value is **contrast(1)**. - **'grayscale([`<number>`\|`<percentage>`])'**: converts the image to grayscale. The value can be a number or a percentage, and must be within the range of [0, 1]. The default value is **grayscale(0)**. - **'hue-rotate(`<angle>`)'**: applies hue rotation to the image. The value ranges from **0deg** to **360deg**. The default value is **hue-rotate(0deg)**. - **'invert([`<number>`\|`<percentage>`])'**: inverts the input image. The value can be a number or a percentage, and must be within the range of [0, 1]. The default value is **invert(0)**. - **'opacity([`<number>`\|`<percentage>`])'**: adjusts the opacity of the image. The value can be a number or a percentage, and must be within the range of [0, 1]. The default value is **opacity(1)**. - **'saturate([`<number>`\|`<percentage>`])'**: adjusts the saturation of the image. The value can be a number or a percentage, and must be greater than or equal to 0. The default value is **saturate(1)**. - **'sepia([`<number>`\|`<percentage>`])'**: converts the image to sepia. The value can be a number or a percentage, and must be within the range of [0, 1]. The default value is **sepia(0)**.
 
 **Type:** string
 
@@ -1271,38 +1133,7 @@ number or a percentage, and must be within the range of [0, 1]. The default valu
 font: string
 ```
 
-Sets the text font. This attribute is write-only. You can set its value through an
-assignment statement, but cannot obtain its current value through a read operation.
-If you attempt to read its current value, **undefined** will be returned.
-
-Syntax: ctx.font = 'font-style font-weight font-size font-family'
-
-- (Optional) **font-style**: font style. Available values are **normal** and **italic**.
-
-- (Optional) **font-weight**: font weight. Available values are as follows: **normal**,
-**bold**, **bolder**, **lighter**, **100**, **200**, **300**, **400**, **500**, **600**,
-**700**, **800**, **900**.
-
-- (Optional) **font-size**: font size and line height. The unit can be px or vp and must
-be specified.
-
-- (Optional) **font-family**: font family. Available values are **sans-serif**,
-**serif**, and **monospace**.
-
-Starting from API version 20, this API is used to set registered custom fonts (the DevEco
-Studio Previewer does not support custom fonts). You can register a custom font in either
-of the following ways:
-
-Register a custom font by calling the asynchronous API
-this.uiContext.getFont().[registerFont](../arkts-apis/arkts-arkui-font-c.md#registerfont-1)
-of ArkUI. Immediate rendering after calling this API may result in the custom font not
-taking effect.
-
-Directly call the fontCollection.[loadFontSync](../../../../reference/apis-arkgraphics2d/js-apis-graphics-text.md#loadfontsync)
-API of the font engine to register the custom font. In this case, the **fontCollection**
-instance must be **text.FontCollection.getGlobalInstance()** because the component loads
-fonts from this instance by default. If you use another instance, the custom font may not
-take effect.
+Sets the text font. This attribute is write-only. You can set its value through an assignment statement, but cannot obtain its current value through a read operation. If you attempt to read its current value, **undefined** will be returned. Syntax: ctx.font = 'font-style font-weight font-size font-family' - (Optional) **font-style**: font style. Available values are **normal** and **italic**. - (Optional) **font-weight**: font weight. Available values are as follows: **normal**, **bold**, **bolder**, **lighter**, **100**, **200**, **300**, **400**, **500**, **600**, **700**, **800**, **900**. - (Optional) **font-size**: font size and line height. The unit can be px or vp and must be specified. - (Optional) **font-family**: font family. Available values are **sans-serif**, **serif**, and **monospace**. Starting from API version 20, this API is used to set registered custom fonts (the DevEco Studio Previewer does not support custom fonts). You can register a custom font in either of the following ways: Register a custom font by calling the asynchronous API this.uiContext.getFont().[registerFont](../arkts-apis/arkts-arkui-font-c.md#registerfont-1) of ArkUI. Immediate rendering after calling this API may result in the custom font not taking effect. Directly call the fontCollection.[loadFontSync](../../../../reference/apis-arkgraphics2d/js-apis-graphics-text.md#loadfontsync) API of the font engine to register the custom font. In this case, the **fontCollection** instance must be **text.FontCollection.getGlobalInstance()** because the component loads fonts from this instance by default. If you use another instance, the custom font may not take effect.
 
 **Type:** string
 
@@ -1322,20 +1153,7 @@ take effect.
 globalAlpha: number
 ```
 
-Sets the opacity. This attribute is write-only. You can set its value through an assignment
-statement, but cannot obtain its current value through a read operation. If you attempt to read
-its current value, **undefined** will be returned.
-
-The value range is [0.0, 1.0]. **0.0** indicates completely transparent, and **1.0** indicates
-completely opaque. If the set value is less than 0.0, **0.0** will be used. If the set value is
-greater than 1.0, **1.0** will be used.
-
-In versions earlier than API version 18, if **NaN** or **Infinity** is set, rendering APIs cannot
-be called for rendering after this API. In API version 18 and later versions, if **NaN** or
-**Infinity** is set, the current API does not take effect, and other rendering APIs with valid
-arguments can be called normally.
-
-Default value: **1.0**
+Sets the opacity. This attribute is write-only. You can set its value through an assignment statement, but cannot obtain its current value through a read operation. If you attempt to read its current value, **undefined** will be returned. The value range is [0.0, 1.0]. **0.0** indicates completely transparent, and **1.0** indicates completely opaque. If the set value is less than 0.0, **0.0** will be used. If the set value is greater than 1.0, **1.0** will be used. In versions earlier than API version 18, if **NaN** or **Infinity** is set, rendering APIs cannot be called for rendering after this API. In API version 18 and later versions, if **NaN** or **Infinity** is set, the current API does not take effect, and other rendering APIs with valid arguments can be called normally. Default value: **1.0**
 
 **Type:** number
 
@@ -1353,27 +1171,7 @@ Default value: **1.0**
 globalCompositeOperation: string
 ```
 
-Sets the composite operation. This attribute is write-only. You can set its value through an
-assignment statement, but cannot obtain its current value through a read operation. If you
-attempt to read its current value, **undefined** will be returned.
-
-Available values are as follows:
-
-| Name | Description |
-| ------ | ------ |
-| source-over | Displays the new drawing above the existing drawing. Default value. |
-| source-atop | Displays the new drawing on the top of the existing drawing. |
-| source-in | Displays the new drawing inside the existing drawing. |
-| source-out | Displays part of the new drawing that is outside of the existing drawing. |
-| destination-over | Displays the existing drawing above the new drawing. |
-| destination-atop | Displays the existing drawing on the top of the new drawing. |
-| destination-in | Displays the existing drawing inside the new drawing. |
-| destination-out | Displays the existing drawing outside the new drawing. |
-| lighter | Displays both the new and existing drawing. |
-| copy | Displays the new drawing and neglects the existing drawing. |
-| xor | Combines the new drawing and existing drawing using the XOR operation. |
-
-Default value: **'source-over'**
+Sets the composite operation. This attribute is write-only. You can set its value through an assignment statement, but cannot obtain its current value through a read operation. If you attempt to read its current value, **undefined** will be returned. Available values are as follows: | Name | Description | | ------ | ------ | | source-over | Displays the new drawing above the existing drawing. Default value. | | source-atop | Displays the new drawing on the top of the existing drawing. | | source-in | Displays the new drawing inside the existing drawing. | | source-out | Displays part of the new drawing that is outside of the existing drawing. | | destination-over | Displays the existing drawing above the new drawing. | | destination-atop | Displays the existing drawing on the top of the new drawing. | | destination-in | Displays the existing drawing inside the new drawing. | | destination-out | Displays the existing drawing outside the new drawing. | | lighter | Displays both the new and existing drawing. | | copy | Displays the new drawing and neglects the existing drawing. | | xor | Combines the new drawing and existing drawing using the XOR operation. | Default value: **'source-over'**
 
 **Type:** string
 
@@ -1393,18 +1191,7 @@ Default value: **'source-over'**
 imageSmoothingEnabled: boolean
 ```
 
-Indicates whether to apply image smoothing adjustments when drawing images. The value
-**true** means to enable smoothing, and **false** means to disable it. This attribute is
-write-only. You can set its value through an assignment statement, but cannot obtain its
-current value through a read operation. If you attempt to read its current value,
-**undefined** will be returned. Default value: **true**.
-> **NOTE**
->
-> The resources used in this example are not located in the **src** > **main** > **resource** directory. Starting
-> from DevEco Studio 6.0.0 Beta2, the resources that are located outside the **resources** directory are not
-> packaged by default when a project or module is created. To package these resources, go to **buildOption** in the
-> module's **build-profile.json5** file > **resOptions** > **copyCodeResource**, and set **enable** to **true**.
-> For details, see the description of copyCodeResource in **resOptions**.
+Indicates whether to apply image smoothing adjustments when drawing images. The value **true** means to enable smoothing, and **false** means to disable it. This attribute is write-only. You can set its value through an assignment statement, but cannot obtain its current value through a read operation. If you attempt to read its current value, **undefined** will be returned. Default value: **true**. > **NOTE** > > The resources used in this example are not located in the **src** > **main** > **resource** directory. Starting > from DevEco Studio 6.0.0 Beta2, the resources that are located outside the **resources** directory are not > packaged by default when a project or module is created. To package these resources, go to **buildOption** in the > module's **build-profile.json5** file > **resOptions** > **copyCodeResource**, and set **enable** to **true**. > For details, see the description of copyCodeResource in **resOptions**.
 
 **Type:** boolean
 
@@ -1424,18 +1211,7 @@ current value through a read operation. If you attempt to read its current value
 imageSmoothingQuality: ImageSmoothingQuality
 ```
 
-Sets the image smoothing quality when **imageSmoothingEnabled** is set to **true**.
-This attribute is write-only. You can set its value through an assignment statement, but
-cannot obtain its current value through a read operation. If you attempt to read its
-current value, **undefined** will be returned. For details, see
-{@link ImageSmoothingQuality}. Default value: **"low"**
-> **NOTE**
->
-> The resources used in this example are not located in the **src** > **main** > **resource** directory. Starting
-> from DevEco Studio 6.0.0 Beta2, the resources that are located outside the **resources** directory are not
-> packaged by default when a project or module is created. To package these resources, go to **buildOption** in the
-> module's **build-profile.json5** file > **resOptions** > **copyCodeResource**, and set **enable** to **true**.
-> For details, see the description of copyCodeResource in **resOptions**.
+Sets the image smoothing quality when **imageSmoothingEnabled** is set to **true**. This attribute is write-only. You can set its value through an assignment statement, but cannot obtain its current value through a read operation. If you attempt to read its current value, **undefined** will be returned. For details, see {@link ImageSmoothingQuality}. Default value: **"low"** > **NOTE** > > The resources used in this example are not located in the **src** > **main** > **resource** directory. Starting > from DevEco Studio 6.0.0 Beta2, the resources that are located outside the **resources** directory are not > packaged by default when a project or module is created. To package these resources, go to **buildOption** in the > module's **build-profile.json5** file > **resOptions** > **copyCodeResource**, and set **enable** to **true**. > For details, see the description of copyCodeResource in **resOptions**.
 
 **Type:** ImageSmoothingQuality
 
@@ -1455,41 +1231,7 @@ current value, **undefined** will be returned. For details, see
 letterSpacing: LengthMetrics | string
 ```
 
-Sets the letter spacing. This attribute is write-only. You can set its value through an
-assignment statement, but cannot obtain its current value through a read operation. If you
-attempt to read its current value, **undefined** will be returned.
-
-Spacing between characters.
-
-When the LengthMetrics type is used:
-
-The spacing is set according to the specified unit.
-
-The FP, PERCENT, and LPX units are not supported and will be treated as invalid values.
-
-Negative and fractional values are supported. When set to a fraction, the spacing is not
-rounded.
-
-When the string type is used:
-
-Percentage values are not supported and will be treated as invalid.
-
-Negative and decimal values are supported. When set to a decimal value, the spacing is not
-rounded.
-
-If no unit is specified (for example, **letterSpacing = '10'**) and **LengthMetricsUnit**
-is not set, the default unit is vp.
-
-If **LengthMetricsUnit** is set to px, the default unit is px.
-
-If the value of **letterSpacing** is specified with a unit (for example,
-**letterSpacing='10vp'**), the letter spacing is set based on the specified unit.
-
-Default value: **0** (Invalid values are treated as the default value.)
-
-> **NOTE**
->
-> The LengthMetrics type is recommended for better performance.
+Sets the letter spacing. This attribute is write-only. You can set its value through an assignment statement, but cannot obtain its current value through a read operation. If you attempt to read its current value, **undefined** will be returned. Spacing between characters. When the LengthMetrics type is used: The spacing is set according to the specified unit. The FP, PERCENT, and LPX units are not supported and will be treated as invalid values. Negative and fractional values are supported. When set to a fraction, the spacing is not rounded. When the string type is used: Percentage values are not supported and will be treated as invalid. Negative and decimal values are supported. When set to a decimal value, the spacing is not rounded. If no unit is specified (for example, **letterSpacing = '10'**) and **LengthMetricsUnit** is not set, the default unit is vp. If **LengthMetricsUnit** is set to px, the default unit is px. If the value of **letterSpacing** is specified with a unit (for example, **letterSpacing='10vp'**), the letter spacing is set based on the specified unit. Default value: **0** (Invalid values are treated as the default value.) > **NOTE** > > The LengthMetrics type is recommended for better performance.
 
 **Type:** LengthMetrics | string
 
@@ -1509,9 +1251,7 @@ Default value: **0** (Invalid values are treated as the default value.)
 lineCap: CanvasLineCap
 ```
 
-Sets the line caps. This attribute is write-only. You can set its value through an assignment statement, but cannot
-obtain its current value through a read operation. If you attempt to read its current value, undefined will be
-returned.
+Sets the line caps. This attribute is write-only. You can set its value through an assignment statement, but cannot obtain its current value through a read operation. If you attempt to read its current value, undefined will be returned.
 
 **Type:** CanvasLineCap
 
@@ -1531,16 +1271,7 @@ returned.
 lineDashOffset: number
 ```
 
-Sets the dashed line offset of the canvas. The value is of the float type. This attribute
-takes effect only when **setLineDash** is set. This attribute is write-only. You can set
-its value through an assignment statement, but cannot obtain its current value through a
-read operation. If you attempt to read its current value, **undefined** will be returned.
-
-Default value: **0.0**
-
-Default unit: vp
-
-Invalid values **NaN** and **Infinity** are treated as the default value.
+Sets the dashed line offset of the canvas. The value is of the float type. This attribute takes effect only when **setLineDash** is set. This attribute is write-only. You can set its value through an assignment statement, but cannot obtain its current value through a read operation. If you attempt to read its current value, **undefined** will be returned. Default value: **0.0** Default unit: vp Invalid values **NaN** and **Infinity** are treated as the default value.
 
 **Type:** number
 
@@ -1560,18 +1291,7 @@ Invalid values **NaN** and **Infinity** are treated as the default value.
 lineJoin: CanvasLineJoin
 ```
 
-Sets the line join. This attribute is write-only. You can set its value through an assignment
-statement, but cannot obtain its current value through a read operation. If you attempt to read
-its current value, **undefined** will be returned. For details, see {@link CanvasLineJoin}.
-<br>Available values are as follows:
-<br>- **'round'**: The shape used to join line segments is a sector, whose radius at the rounded
-corner is equal to the line width.
-<br>- **'bevel'**: The shape used to join line segments is a triangle. The rectangular corner
-of each line is independent.
-<br>- **'miter'**: The shape used to join line segments has a mitered corner by extending the
-outside edges of the lines until they meet. You can view the effect of this attribute in
-**miterLimit**.
-<br>Default value: **'miter'**
+Sets the line join. This attribute is write-only. You can set its value through an assignment statement, but cannot obtain its current value through a read operation. If you attempt to read its current value, **undefined** will be returned. For details, see {@link CanvasLineJoin}. <br>Available values are as follows: <br>- **'round'**: The shape used to join line segments is a sector, whose radius at the rounded corner is equal to the line width. <br>- **'bevel'**: The shape used to join line segments is a triangle. The rectangular corner of each line is independent. <br>- **'miter'**: The shape used to join line segments has a mitered corner by extending the outside edges of the lines until they meet. You can view the effect of this attribute in **miterLimit**. <br>Default value: **'miter'**
 
 **Type:** CanvasLineJoin
 
@@ -1591,17 +1311,7 @@ outside edges of the lines until they meet. You can view the effect of this attr
 lineWidth: number
 ```
 
-Sets the line width. This attribute is write-only. You can set its value through an assignment
-statement, but cannot obtain its current value through a read operation. If you attempt to read
-its current value, **undefined** will be returned.
-
-Default value: **1** (px)
-
-Default unit: vp
-
-The value does not support **0** or negative numbers. **0**, negative numbers,
-and **NaN** are handled as the default value. The value **Infinity** is invalid and
-no drawing is performed.
+Sets the line width. This attribute is write-only. You can set its value through an assignment statement, but cannot obtain its current value through a read operation. If you attempt to read its current value, **undefined** will be returned. Default value: **1** (px) Default unit: vp The value does not support **0** or negative numbers. **0**, negative numbers, and **NaN** are handled as the default value. The value **Infinity** is invalid and no drawing is performed.
 
 **Type:** number
 
@@ -1621,19 +1331,7 @@ no drawing is performed.
 miterLimit: number
 ```
 
-Sets the miter limit, which specifies the distance between the inner and outer angles
-at line joins. This attribute takes effect only when **lineJoin** is set to **miter**.
-This attribute is write-only. You can set its value through an assignment statement,
-but cannot obtain its current value through a read operation. If you attempt to read
-its current value, **undefined** will be returned.
-
-Default value: **10px**
-
-Unit: px
-
-The value of **miterLimit** cannot be **0** or a negative number. Values of **0**,
-negative numbers, and **NaN** are handled with the default value. **Infinity** will
-cause an exception on the **miterLimit** attribute.
+Sets the miter limit, which specifies the distance between the inner and outer angles at line joins. This attribute takes effect only when **lineJoin** is set to **miter**. This attribute is write-only. You can set its value through an assignment statement, but cannot obtain its current value through a read operation. If you attempt to read its current value, **undefined** will be returned. Default value: **10px** Unit: px The value of **miterLimit** cannot be **0** or a negative number. Values of **0**, negative numbers, and **NaN** are handled with the default value. **Infinity** will cause an exception on the **miterLimit** attribute.
 
 **Type:** number
 
@@ -1653,19 +1351,7 @@ cause an exception on the **miterLimit** attribute.
 shadowBlur: number
 ```
 
-Sets the blur level for drawing shadows. This attribute is write-only. You can set its
-value through an assignment statement, but cannot obtain its current value through a read
-operation. If you attempt to read its current value, **undefined** will be returned.
-
-Blur level. A larger value produces a greater blur effect. The value is of float type and
-must be greater than or equal to 0.
-
-Default value: **0.0**
-
-Unit: px
-
-The value of **shadowBlur** cannot be a negative number. A negative number, **NaN**, and
-**Infinity** are treated as the default value.
+Sets the blur level for drawing shadows. This attribute is write-only. You can set its value through an assignment statement, but cannot obtain its current value through a read operation. If you attempt to read its current value, **undefined** will be returned. Blur level. A larger value produces a greater blur effect. The value is of float type and must be greater than or equal to 0. Default value: **0.0** Unit: px The value of **shadowBlur** cannot be a negative number. A negative number, **NaN**, and **Infinity** are treated as the default value.
 
 **Type:** number
 
@@ -1685,14 +1371,7 @@ The value of **shadowBlur** cannot be a negative number. A negative number, **Na
 shadowColor: string
 ```
 
-Sets the shadow color. This attribute is write-only. You can set its value through an
-assignment statement, but cannot obtain its current value through a read operation. If you
-attempt to read its current value, **undefined** will be returned.
-
-For details about the color format, see the description for the string type in
-[ResourceColor](arkts-arkui-resourcecolor-t.md).
-
-Default value: **'#00000000'** (transparent black)
+Sets the shadow color. This attribute is write-only. You can set its value through an assignment statement, but cannot obtain its current value through a read operation. If you attempt to read its current value, **undefined** will be returned. For details about the color format, see the description for the string type in [ResourceColor](arkts-arkui-resourcecolor-t.md). Default value: **'#00000000'** (transparent black)
 
 **Type:** string
 
@@ -1712,16 +1391,7 @@ Default value: **'#00000000'** (transparent black)
 shadowOffsetX: number
 ```
 
-Sets the horizontal offset between the drawn shadow and the original object. This
-attribute is write-only. You can set its value through an assignment statement, but cannot
-obtain its current value through a read operation. If you attempt to read its current
-value, **undefined** will be returned.
-
-Default value: **0.0**
-
-Default unit: vp
-
-Invalid values **NaN** and **Infinity** are treated as the default value.
+Sets the horizontal offset between the drawn shadow and the original object. This attribute is write-only. You can set its value through an assignment statement, but cannot obtain its current value through a read operation. If you attempt to read its current value, **undefined** will be returned. Default value: **0.0** Default unit: vp Invalid values **NaN** and **Infinity** are treated as the default value.
 
 **Type:** number
 
@@ -1741,16 +1411,7 @@ Invalid values **NaN** and **Infinity** are treated as the default value.
 shadowOffsetY: number
 ```
 
-Sets the vertical offset between the drawn shadow and the original object. This attribute
-is write-only. You can set its value through an assignment statement, but cannot obtain its
-current value through a read operation. If you attempt to read its current value,
-**undefined** will be returned.
-
-Default value: **0.0**
-
-Default unit: vp
-
-Invalid values **NaN** and **Infinity** are treated as the default value.
+Sets the vertical offset between the drawn shadow and the original object. This attribute is write-only. You can set its value through an assignment statement, but cannot obtain its current value through a read operation. If you attempt to read its current value, **undefined** will be returned. Default value: **0.0** Default unit: vp Invalid values **NaN** and **Infinity** are treated as the default value.
 
 **Type:** number
 
@@ -1770,28 +1431,7 @@ Invalid values **NaN** and **Infinity** are treated as the default value.
 strokeStyle: string | number | CanvasGradient | CanvasPattern
 ```
 
-Sets the stroke color. This attribute is write-only. You can set its value through an
-assignment statement, but cannot obtain its current value through a read operation.
-If you attempt to read its current value, **undefined** will be returned.
-
-- When the type is string, this attribute indicates the stroke color. For details about
-the color format, see the description for the string type in
-[ResourceColor](arkts-arkui-resourcecolor-t.md).
-
-- When the type is number, this attribute indicates the stroke color. Fully transparent
-colors are not supported. For details about the color format, see the description for
-the number type in
-[ResourceColor](arkts-arkui-resourcecolor-t.md).
-
-- When the type is **CanvasGradient**, this attribute indicates a gradient object, which is
-created via the [createLinearGradient](#createlineargradient) API.
-
-- When the type is **CanvasPattern**, this attribute indicates a pattern, which is created
-via the [createPattern](CanvasRenderingContext2D#createPattern) API.
-
-Default value: **'#000000'** (black)
-
-Invalid values do not take effect. The effect before the setting is retained.
+Sets the stroke color. This attribute is write-only. You can set its value through an assignment statement, but cannot obtain its current value through a read operation. If you attempt to read its current value, **undefined** will be returned. - When the type is string, this attribute indicates the stroke color. For details about the color format, see the description for the string type in [ResourceColor](arkts-arkui-resourcecolor-t.md). - When the type is number, this attribute indicates the stroke color. Fully transparent colors are not supported. For details about the color format, see the description for the number type in [ResourceColor](arkts-arkui-resourcecolor-t.md). - When the type is **CanvasGradient**, this attribute indicates a gradient object, which is created via the [createLinearGradient](#createlineargradient) API. - When the type is **CanvasPattern**, this attribute indicates a pattern, which is created via the [createPattern](CanvasRenderingContext2D#createPattern) API. Default value: **'#000000'** (black) Invalid values do not take effect. The effect before the setting is retained.
 
 **Type:** string | number | CanvasGradient | CanvasPattern
 
@@ -1811,14 +1451,7 @@ Invalid values do not take effect. The effect before the setting is retained.
 textAlign: CanvasTextAlign
 ```
 
-Sets the text alignment type. This attribute is write-only. You can set its value through
-an assignment statement, but cannot obtain its current value through a read operation.
-If you attempt to read its current value, **undefined** will be returned.
-
-In the **ltr** layout mode, the value **'start'** equals **'left'**. In the **rtl** layout
-mode, the value **'start'** equals **'right'**.
-
-Default value: **'left'**
+Sets the text alignment type. This attribute is write-only. You can set its value through an assignment statement, but cannot obtain its current value through a read operation. If you attempt to read its current value, **undefined** will be returned. In the **ltr** layout mode, the value **'start'** equals **'left'**. In the **rtl** layout mode, the value **'start'** equals **'right'**. Default value: **'left'**
 
 **Type:** CanvasTextAlign
 
@@ -1838,12 +1471,7 @@ Default value: **'left'**
 textBaseline: CanvasTextBaseline
 ```
 
-Sets the horizontal alignment baseline for text rendering. This attribute is write-only.
-You can set its value through an assignment statement, but cannot obtain its current value
-through a read operation. If you attempt to read its current value, **undefined** will be
-returned.
-
-Default value: **'alphabetic'**
+Sets the horizontal alignment baseline for text rendering. This attribute is write-only. You can set its value through an assignment statement, but cannot obtain its current value through a read operation. If you attempt to read its current value, **undefined** will be returned. Default value: **'alphabetic'**
 
 **Type:** CanvasTextBaseline
 

@@ -6,9 +6,7 @@
 function getInputMethodAbility(): InputMethodAbility
 ```
 
-获取输入法应用客户端实例[InputMethodAbility](arkts-ime-inputmethodability-i.md)（输入法能力对象），仅支持输入法应用调用。
-
-输入法应用获取该实例后，可订阅软键盘显示/隐藏请求事件、创建/销毁输入法面板等。
+获取输入法应用客户端实例[InputMethodAbility](arkts-ime-inputmethodability-i.md)（输入法能力对象），仅支持输入法应用调用。 输入法应用获取该实例后，可订阅软键盘显示/隐藏请求事件、创建/销毁输入法面板等。
 
 **起始版本：** 9
 

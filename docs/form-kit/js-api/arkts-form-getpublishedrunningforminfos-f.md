@@ -12,8 +12,7 @@ import { formProvider } from '@kit.FormKit';
 function getPublishedRunningFormInfos(): Promise<Array<formInfo.RunningFormInfo>>
 ```
 
-Obtains information about all widgets that have been added to the home screen. This API uses a promise to return
-the result.
+Obtains information about all widgets that have been added to the home screen. This API uses a promise to return the result.
 
 **Since:** 20
 

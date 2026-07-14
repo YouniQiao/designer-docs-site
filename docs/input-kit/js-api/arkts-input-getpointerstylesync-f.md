@@ -12,8 +12,7 @@ import { pointer } from '@kit.InputKit';
 function getPointerStyleSync(windowId: number): PointerStyle
 ```
 
-Queries the mouse pointer style type of a specified window, such as east arrow, west arrow, south arrow, and north
-arrow. This API can obtain only the mouse pointer style type of windows within the current application process.
+Queries the mouse pointer style type of a specified window, such as east arrow, west arrow, south arrow, and north arrow. This API can obtain only the mouse pointer style type of windows within the current application process.
 
 **Since:** 10
 

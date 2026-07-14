@@ -62,8 +62,7 @@ Scheduled time to update the widget. The value is in 24-hour format and accurate
 readonly supportDimensions: Array<string>
 ```
 
-Dimensions of the widget. The value can be **1*2**, **2*2**, **2*4**, **4*4**, or a combination of these options.
-At least one option must be specified when defining the widget.
+Dimensions of the widget. The value can be **1*2**, **2*2**, **2*4**, **4*4**, or a combination of these options. At least one option must be specified when defining the widget.
 
 **Type:** Array<string>
 
@@ -95,9 +94,7 @@ Widget type.
 readonly updateDuration: number
 ```
 
-Interval to update the widget. The unit is 30 minutes. The value is a multiple of 30. A widget can be updated at a
-specified interval (**updateDuration**) or at the scheduled time (**scheduledUpdateTime**). If both are configured,
-**updateDuration** takes precedence.
+Interval to update the widget. The unit is 30 minutes. The value is a multiple of 30. A widget can be updated at a specified interval (**updateDuration**) or at the scheduled time (**scheduledUpdateTime**). If both are configured, **updateDuration** takes precedence.
 
 **Type:** number
 

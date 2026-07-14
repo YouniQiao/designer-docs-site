@@ -12,9 +12,7 @@ import { companionDeviceAuth } from '@kit.UserAuthenticationKit';
 function getStatusMonitor(localUserId: number): StatusMonitor
 ```
 
-Obtains the status monitor. This API is used to obtain the status monitor object of a specified user. The object
-can be used to query and subscribe to the template status, continuous authentication status, and available device
-status of the companion device.
+Obtains the status monitor. This API is used to obtain the status monitor object of a specified user. The object can be used to query and subscribe to the template status, continuous authentication status, and available device status of the companion device.
 
 **Since:** 23
 

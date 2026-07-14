@@ -16,8 +16,7 @@ function unshare(
     ): void
 ```
 
-Unshares data based on the specified shared resource ID and participants.
-This API uses an asynchronous callback to return the result.
+Unshares data based on the specified shared resource ID and participants. This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -68,7 +67,6 @@ cloudData.sharing.unshare('sharing_resource_test', participants, ((err: Business
   console.info(`unshare succeeded, result: ${result}`);
 }))
 
-
 ```
 
 
@@ -81,8 +79,7 @@ function unshare(
     ): Promise<Result<Array<Result<Participant>>>>
 ```
 
-Unshares data based on the specified shared resource ID and participants.
-This API uses a promise to return the result.
+Unshares data based on the specified shared resource ID and participants. This API uses a promise to return the result.
 
 **Since:** 11
 
@@ -135,7 +132,6 @@ cloudData.sharing.unshare('sharing_resource_test', participants).then((result) =
 }).catch((err: BusinessError) => {
   console.error(`unshare failed, code is ${err.code},message is ${err.message}`);
 })
-
 
 ```
 

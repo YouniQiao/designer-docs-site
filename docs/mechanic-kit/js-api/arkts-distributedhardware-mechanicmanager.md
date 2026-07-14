@@ -1,7 +1,6 @@
 # @ohos.distributedHardware.mechanicManager
 
-Provides capabilities for controlling and interacting with mechanical devices connected to this device.
-The capabilities cover connection management, control, and monitoring.
+Provides capabilities for controlling and interacting with mechanical devices connected to this device. The capabilities cover connection management, control, and monitoring.
 
 **Since:** 20
 
@@ -44,7 +43,7 @@ import { mechanicManager } from '@kit.MechanicKit';
 | [move](arkts-mechanic-move-f-sys.md#move-1) | Move a mechanical device with the specified parameters. |
 | [moveBySpeed](arkts-mechanic-movebyspeed-f-sys.md#movebyspeed-1) | Move a mechanical device at the specified speed. |
 | [off](arkts-mechanic-off-f-sys.md#off-3) | Unregister a listener for axis state changes. |
-| [on](arkts-mechanic-on-f-sys.md#on-3) | Register a listener for axis state changes.The status of the rotation axis changes dynamically, which needs to be monitored. |
+| [on](arkts-mechanic-on-f-sys.md#on-3) | Register a listener for axis state changes. The status of the rotation axis changes dynamically, which needs to be monitored. |
 | [rotate](arkts-mechanic-rotate-f-sys.md#rotate-1) | Rotates a mechanical device to the relative angles. |
 | [rotateBySpeed](arkts-mechanic-rotatebyspeed-f-sys.md#rotatebyspeed-1) | Rotates a mechanical device at the specified speed. |
 | [rotateToEulerAngles](arkts-mechanic-rotatetoeulerangles-f-sys.md#rotatetoeulerangles-1) | Rotates a mechanical device to the absolute angles. |
@@ -77,7 +76,7 @@ import { mechanicManager } from '@kit.MechanicKit';
 | [RotationAxesStateChangeInfo](arkts-mechanic-rotationaxesstatechangeinfo-i-sys.md) | Rotation axes state change information. |
 | [RotationAxesStatus](arkts-mechanic-rotationaxesstatus-i-sys.md) | Rotation axes status |
 | [RotationLimits](arkts-mechanic-rotationlimits-i-sys.md) | Rotation angle limits relative to the reference point. |
-| [RotationSpeed](arkts-mechanic-rotationspeed-i-sys.md) | Rotational speed. A negative value indicates a clockwise rotation, and a positive value indicates acounterclockwise rotation. |
+| [RotationSpeed](arkts-mechanic-rotationspeed-i-sys.md) | Rotational speed. A negative value indicates a clockwise rotation, and a positive value indicates a counterclockwise rotation. |
 | [SearchParams](arkts-mechanic-searchparams-i-sys.md) | Parameters for target searching. |
 | [SearchResult](arkts-mechanic-searchresult-i-sys.md) | Search result. |
 | [SpeedParams](arkts-mechanic-speedparams-i-sys.md) | Parameters for moving or turning at a speed. |

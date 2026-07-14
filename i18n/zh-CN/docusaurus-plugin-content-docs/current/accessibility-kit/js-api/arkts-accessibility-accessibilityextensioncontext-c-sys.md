@@ -210,11 +210,7 @@ holdRunningLockSync(): void
 notifyDisconnect(): void
 ```
 
-通知无障碍服务可以关闭该无障碍扩展服务。
-
-此函数需要与注册预关闭接口
-[on('preDisconnect')](arkts-accessibility-accessibilityextensioncontext-c-sys.md#on-1)配合使用，
-如果没有调用过注册预关闭函数，直接调用此函数不生效。
+通知无障碍服务可以关闭该无障碍扩展服务。 此函数需要与注册预关闭接口 [on('preDisconnect')](arkts-accessibility-accessibilityextensioncontext-c-sys.md#on-1)配合使用， 如果没有调用过注册预关闭函数，直接调用此函数不生效。
 
 **起始版本：** 20
 
@@ -267,10 +263,7 @@ off(type: 'preDisconnect', callback?: Callback<void>): void
 on(type: 'preDisconnect', callback: Callback<void>): void
 ```
 
-向无障碍服务注册回调函数，在无障碍服务关闭该无障碍扩展服务前会执行该回调函数。使用callback异步回调。
-
-此注册函数需要与[notifyDisconnect](arkts-accessibility-accessibilityextensioncontext-c-sys.md#notifydisconnect-1)配合使用，如果不调用
-[notifyDisconnect](arkts-accessibility-accessibilityextensioncontext-c-sys.md#notifydisconnect-1)，则默认等待30秒后，无障碍扩展服务会自动关闭。
+向无障碍服务注册回调函数，在无障碍服务关闭该无障碍扩展服务前会执行该回调函数。使用callback异步回调。 此注册函数需要与[notifyDisconnect](arkts-accessibility-accessibilityextensioncontext-c-sys.md#notifydisconnect-1)配合使用，如果不调用 [notifyDisconnect](arkts-accessibility-accessibilityextensioncontext-c-sys.md#notifydisconnect-1)，则默认等待30秒后，无障碍扩展服务会自动关闭。
 
 **起始版本：** 20
 

@@ -1,17 +1,6 @@
 # InputEventMonitor
 
-Input event monitor identity object.
-
-This object is created and returned by the system, serving as the unique identifier of the monitor.
-
-> **NOTE**
->
-> - The object is empty and does not contain any accessible members.
->
-> - Developers cannot create this object on their own. It can only be obtained by registering through the
-> [addLocalInputEventMonitor](UIContext:UIContext#addLocalInputEventMonitor) API.
->
-> - It is used for identity verification when unregistering later.
+Input event monitor identity object. This object is created and returned by the system, serving as the unique identifier of the monitor. > **NOTE** > > - The object is empty and does not contain any accessible members. > > - Developers cannot create this object on their own. It can only be obtained by registering through the > [addLocalInputEventMonitor](UIContext:UIContext#addLocalInputEventMonitor) API. > > - It is used for identity verification when unregistering later.
 
 **Since:** 26.0.0
 

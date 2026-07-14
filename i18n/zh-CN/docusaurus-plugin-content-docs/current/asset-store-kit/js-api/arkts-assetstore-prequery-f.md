@@ -6,8 +6,7 @@
 function preQuery(query: AssetMap): Promise<Uint8Array>
 ```
 
-查询的预处理，用于需要用户认证的关键资产。在用户认证成功后，应当随后调用[asset.query](arkts-assetstore-query-f.md#query-1)和[asset.postQuery](arkts-assetstore-postquery-f.md#postquery-1)接口。使用
-Promise异步回调。
+查询的预处理，用于需要用户认证的关键资产。在用户认证成功后，应当随后调用[asset.query](arkts-assetstore-query-f.md#query-1)和[asset.postQuery](arkts-assetstore-postquery-f.md#postquery-1)接口。使用 Promise异步回调。
 
 **起始版本：** 11
 

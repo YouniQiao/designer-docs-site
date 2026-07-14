@@ -34,9 +34,7 @@ A constructor used to create a text baseline offset style.
 readonly baselineOffset: number
 ```
 
-Text baseline offset.
-
-Unit: [vp](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
+Text baseline offset. Unit: [vp](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
 
 **Type:** number
 

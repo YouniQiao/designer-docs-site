@@ -12,8 +12,7 @@ import { i18n } from '@kit.LocalizationKit';
 export function getLineInstance(locale: string): BreakIterator
 ```
 
-Obtains a **BreakIterator** object. The **BreakIterator** object maintains an internal break iterator that can be
-used to access various line break points.
+Obtains a **BreakIterator** object. The **BreakIterator** object maintains an internal break iterator that can be used to access various line break points.
 
 **Since:** 8
 

@@ -28,10 +28,7 @@ Text area controller.
 placeholder?: ResourceStr
 ```
 
-Text displayed when there is no input.
-
-When only the **placeholder** attribute is set, the text selection handle is still available; the caret stays at
-the beginning of the placeholder text when the handle is released.
+Text displayed when there is no input. When only the **placeholder** attribute is set, the text selection handle is still available; the caret stays at the beginning of the placeholder text when the handle is released.
 
 **Type:** ResourceStr
 
@@ -47,16 +44,7 @@ the beginning of the placeholder text when the handle is released.
 text?: ResourceStr
 ```
 
-Current text input.
-
-You are advised to bind the state variable to the text in real time through the **onChange** event, so as to
-prevent display errors when the component is updated.
-
-Since API version 10, this parameter supports two-way binding through
-[$$](../../../../ui/state-management/arkts-two-way-sync.md).
-
-Since API version 18, this parameter supports two-way binding through
-[!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
+Current text input. You are advised to bind the state variable to the text in real time through the **onChange** event, so as to prevent display errors when the component is updated. Since API version 10, this parameter supports two-way binding through [$$](../../../../ui/state-management/arkts-two-way-sync.md). Since API version 18, this parameter supports two-way binding through [!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
 
 **Type:** ResourceStr
 

@@ -2,7 +2,6 @@
 
 Provides ports for stacking containers.
 
-
 ## FolderStack
 
 ```TypeScript

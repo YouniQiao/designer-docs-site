@@ -1,8 +1,6 @@
 # Component
 
-Represents a component on the UI and provides APIs for obtaining component attributes, clicking a component,
-scrolling to search for a component, and text injection.
-All APIs provided in this class use a promise to return the result and must be invoked using **await**.
+Represents a component on the UI and provides APIs for obtaining component attributes, clicking a component, scrolling to search for a component, and text injection. All APIs provided in this class use a promise to return the result and must be invoked using **await**.
 
 **Since:** 9
 
@@ -20,8 +18,7 @@ import { ResizeDirection, WindowMode, PenMode, PenKeyOperation, Driver, MatchPat
 clearText(): Promise<void>
 ```
 
-Clears the text information of a component. This API takes effect only for editable text components. This API
-uses a promise to return the result.
+Clears the text information of a component. This API takes effect only for editable text components. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -439,10 +436,7 @@ async function demo() {
 getOriginalText(): Promise<string>
 ```
 
-Obtains the text information of this component. This API uses a promise to return the result. If the
-[accessibilityLevel](../../apis-arkui/arkts-components/arkts-arkui-commonmethod-c.md#accessibilitylevel-1)
-attribute of the component is set to **no** or **no-hide-descendants**, this API can be used
-to obtain the text information of the component, but [Component.getText()](arkts-test-component-c.md#gettext-1) cannot.
+Obtains the text information of this component. This API uses a promise to return the result. If the [accessibilityLevel](../../apis-arkui/arkts-components/arkts-arkui-commonmethod-c.md#accessibilitylevel-1) attribute of the component is set to **no** or **no-hide-descendants**, this API can be used to obtain the text information of the component, but [Component.getText()](arkts-test-component-c.md#gettext-1) cannot.
 
 **Since:** 20
 
@@ -483,14 +477,7 @@ async function demo() {
 getText(): Promise<string>
 ```
 
-Obtains the text information of this component. This API uses a promise to return the result.
-
-> **NOTE**
->
-> If the [accessibilityLevel](../../apis-arkui/arkts-components/arkts-arkui-commonmethod-c.md#accessibilitylevel-1)
-> attribute of the component is set to **no** or **no-hide-descendants**, this API cannot be used to obtain the
-> text information of the component. In this case, you can use
-> [Component.getOriginalText ()](arkts-test-component-c.md#getoriginaltext-1) instead.
+Obtains the text information of this component. This API uses a promise to return the result. > **NOTE** > > If the [accessibilityLevel](../../apis-arkui/arkts-components/arkts-arkui-commonmethod-c.md#accessibilitylevel-1) > attribute of the component is set to **no** or **no-hide-descendants**, this API cannot be used to obtain the > text information of the component. In this case, you can use > [Component.getOriginalText ()](arkts-test-component-c.md#getoriginaltext-1) instead.
 
 **Since:** 9
 
@@ -572,8 +559,7 @@ async function demo() {
 inputText(text: string): Promise<void>
 ```
 
-Clears the original text in a component and inputs the specified text. This API takes effect only for editable
-text components. This API uses a promise to return the result.
+Clears the original text in a component and inputs the specified text. This API takes effect only for editable text components. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -621,8 +607,7 @@ async function demo() {
 inputText(text: string, mode: InputTextMode): Promise<void>
 ```
 
-Inputs text to a component in a specified text input mode. This API takes effect only for editable text
-components. This API uses a promise to return the result.
+Inputs text to a component in a specified text input mode. This API takes effect only for editable text components. This API uses a promise to return the result.
 
 **Since:** 20
 
@@ -1169,8 +1154,7 @@ async function demo() {
 scrollSearch(on: On): Promise<Component>
 ```
 
-Scrolls on this component to search for the target component. This API is applicable to components that support
-scrolling. This API uses a promise to return the result.
+Scrolls on this component to search for the target component. This API is applicable to components that support scrolling. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -1218,9 +1202,7 @@ async function demo() {
 scrollSearch(on: On, vertical?: boolean, offset?: number): Promise<Component>
 ```
 
-Scrolls on this component to search for the target component. This API is applicable to components that support
-scrolling. You can specify the scrolling direction and the offset between the scrolling start and end points and
-the component border. This API uses a promise to return the result.
+Scrolls on this component to search for the target component. This API is applicable to components that support scrolling. You can specify the scrolling direction and the offset between the scrolling start and end points and the component border. This API uses a promise to return the result.
 
 **Since:** 18
 
@@ -1270,8 +1252,7 @@ async function demo() {
 scrollToBottom(speed?: number): Promise<void>
 ```
 
-Scrolls to the bottom of this component. This API is applicable to components that support scrolling. This API
-uses a promise to return the result.
+Scrolls to the bottom of this component. This API is applicable to components that support scrolling. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -1319,8 +1300,7 @@ async function demo() {
 scrollToTop(speed?: number): Promise<void>
 ```
 
-Scrolls to the top of this component. This API is applicable to components that support scrolling. This API uses
-a promise to return the result.
+Scrolls to the top of this component. This API is applicable to components that support scrolling. This API uses a promise to return the result.
 
 **Since:** 9
 

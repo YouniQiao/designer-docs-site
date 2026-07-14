@@ -1,8 +1,6 @@
 # LoopObserver
 
-定义异常监听，可以作为
-[ErrorManager.on](arkts-ability-on-f.md#on-2)
-的入参监听当前应用主线程事件处理事件。
+定义异常监听，可以作为 [ErrorManager.on](arkts-ability-on-f.md#on-2) 的入参监听当前应用主线程事件处理事件。
 
 **起始版本：** 12
 

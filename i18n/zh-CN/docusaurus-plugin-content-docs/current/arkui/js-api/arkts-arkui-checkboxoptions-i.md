@@ -12,13 +12,7 @@
 group?: string
 ```
 
-用于指定多选框所属群组的名称（即所属CheckboxGroup的名称）。
-
-默认值：undefined，默认状态下配合[CheckboxGroupOptions](arkts-arkui-checkboxgroupoptions-i.md)属性group信息为undefined的节点使用。
-
-**说明：**
-
-未配合使用[CheckboxGroup](arkts-arkui-checkboxgroup.md)组件时，此值无用。
+用于指定多选框所属群组的名称（即所属CheckboxGroup的名称）。 默认值：undefined，默认状态下配合[CheckboxGroupOptions](arkts-arkui-checkboxgroupoptions-i.md)属性group信息为undefined的节点使用。 **说明：** 未配合使用[CheckboxGroup](arkts-arkui-checkboxgroup.md)组件时，此值无用。
 
 **类型：** string
 
@@ -54,9 +48,7 @@ indicatorBuilder?: CustomBuilder
 name?: string
 ```
 
-指定多选框名称。
-
-默认值：undefined，取值为undefined无效果。
+指定多选框名称。 默认值：undefined，取值为undefined无效果。
 
 **类型：** string
 

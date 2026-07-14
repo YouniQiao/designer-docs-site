@@ -1,7 +1,6 @@
 # USBDeviceInfo (System API)
 
-Defines detailed information about the USB device. It is inherited from
-[DeviceInfo](arkts-driverdevelopment-deviceinfo-i-sys.md).
+Defines detailed information about the USB device. It is inherited from [DeviceInfo](arkts-driverdevelopment-deviceinfo-i-sys.md).
 
 **Inheritance/Implementation:** USBDeviceInfo extends [DeviceInfo](arkts-driverdevelopment-deviceinfo-i-sys.md)
 

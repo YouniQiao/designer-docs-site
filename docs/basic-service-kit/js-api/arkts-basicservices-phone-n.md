@@ -18,5 +18,5 @@ import { settings } from '@kit.BasicServicesKit';
 
 | Name | Description |
 | --- | --- |
-| [RTT_CALLING_STATUS](arkts-basicservices-phone-con.md#rtt_calling_status) | Specifies whether real-time text (RTT) calling is enabled. If enabled, incoming and outgoing calls areanswered as RTT calls when supported by the device and carrier. If the value is {@code 1}, RTT calling isenabled. If the value is {@code 0}, RTT calling is disabled. |
+| [RTT_CALLING_STATUS](arkts-basicservices-phone-con.md#rtt_calling_status) | Specifies whether real-time text (RTT) calling is enabled. If enabled, incoming and outgoing calls are answered as RTT calls when supported by the device and carrier. If the value is {@code 1}, RTT calling is enabled. If the value is {@code 0}, RTT calling is disabled. |
 

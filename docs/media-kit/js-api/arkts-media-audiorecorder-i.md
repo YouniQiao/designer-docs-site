@@ -1,8 +1,6 @@
 # AudioRecorder
 
-AudioRecorder is a class for audio recording management. It provides APIs to record audio. Before calling any API
-in AudioRecorder, you must use [createAudioRecorder()](arkts-media-createaudiorecorder-f.md#createaudiorecorder-1) to
-create an AudioRecorder instance.
+AudioRecorder is a class for audio recording management. It provides APIs to record audio. Before calling any API in AudioRecorder, you must use [createAudioRecorder()](arkts-media-createaudiorecorder-f.md#createaudiorecorder-1) to create an AudioRecorder instance.
 
 **Since:** 6
 
@@ -185,8 +183,7 @@ Subscribes to the audio recording events.
 on(type: 'error', callback: ErrorCallback): void
 ```
 
-Subscribes to audio recording error events. After an error event is reported, you must handle the event and exit
-the recording.
+Subscribes to audio recording error events. After an error event is reported, you must handle the event and exit the recording.
 
 **Since:** 6
 
@@ -271,10 +268,7 @@ Releases the audio recording resources.
 reset(): void
 ```
 
-Resets audio recording.
-
-Before resetting audio recording, you must call **stop()** to stop recording. After audio recording is reset, you
-must call **prepare()** to set the recording configurations for another recording.
+Resets audio recording. Before resetting audio recording, you must call **stop()** to stop recording. After audio recording is reset, you must call **prepare()** to set the recording configurations for another recording.
 
 **Since:** 6
 

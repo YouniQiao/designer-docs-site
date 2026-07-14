@@ -1,7 +1,6 @@
 # @ohos.file.cloudSync
 
-The **cloudSync** module provides the device-cloud sync capabilities for applications. You can use the APIs to start
-or stop device-cloud sync and start or stop the download of images.
+The **cloudSync** module provides the device-cloud sync capabilities for applications. You can use the APIs to start or stop device-cloud sync and start or stop the download of images.
 
 **Since:** 11
 
@@ -31,8 +30,8 @@ import { cloudSync } from '@kit.CoreFileKit';
 | [getFileSyncState](arkts-corefile-getfilesyncstate-f-sys.md#getfilesyncstate-1) | Obtains the file sync state. This API uses a promise to return the result. |
 | [getFileSyncState](arkts-corefile-getfilesyncstate-f-sys.md#getfilesyncstate-2) | Obtains the file sync state. This API uses an asynchronous callback to return the result. |
 | [getFileSyncState](arkts-corefile-getfilesyncstate-f-sys.md#getfilesyncstate-3) | Obtains the file sync state. |
-| [optimizeStorage](arkts-corefile-optimizestorage-f-sys.md#optimizestorage-1) | Optimizes the resources that have been synced to the cloud from the local Gallery and executes the automatic agingpolicy according to the remaining local space. This API uses a promise to return the result. |
-| [startOptimizeSpace](arkts-corefile-startoptimizespace-f-sys.md#startoptimizespace-1) | Optimizes local resources that have been synced to the cloud and optimizes local images and videos that have notbeen accessed before the aging period expires. This API uses a promise to return the result. The callback returnsthe optimization progress.startOptimizeSpace is used together with **stopOptimizeSpace**. If **startOptimizeSpace** is called repeatedly, theerror code 22400006 will be returned, indicating that other tasks are being executed. |
+| [optimizeStorage](arkts-corefile-optimizestorage-f-sys.md#optimizestorage-1) | Optimizes the resources that have been synced to the cloud from the local Gallery and executes the automatic aging policy according to the remaining local space. This API uses a promise to return the result. |
+| [startOptimizeSpace](arkts-corefile-startoptimizespace-f-sys.md#startoptimizespace-1) | Optimizes local resources that have been synced to the cloud and optimizes local images and videos that have not been accessed before the aging period expires. This API uses a promise to return the result. The callback returns the optimization progress. startOptimizeSpace is used together with **stopOptimizeSpace**. If **startOptimizeSpace** is called repeatedly, the error code 22400006 will be returned, indicating that other tasks are being executed. |
 | [stopOptimizeSpace](arkts-corefile-stopoptimizespace-f-sys.md#stopoptimizespace-1) | Synchronously stops optimizing cloud resource space. This method is used with **startOptimizeSpace**. |
 <!--DelEnd-->
 
@@ -41,8 +40,8 @@ import { cloudSync } from '@kit.CoreFileKit';
 | Name | Description |
 | --- | --- |
 | [CloudFileCache](arkts-corefile-cloudfilecache-c.md) | Provides APIs for the file manager application to download files from the Drive Kit to a local device. |
-| [FileSync](arkts-corefile-filesync-c.md) | Provides APIs for the file manager application to perform device-cloud sync of the files stored in the Drive Kit.Before using the APIs of this class, you need to create a **FileSync** instance. |
-| [FileVersion](arkts-corefile-fileversion-c.md) | Represents the device-cloud file version management class. It allows you to manage historical versions of client-cloud files, obtain the list of historical versions, download historical versions to the local device, replace thecurrent local file with a historical version file, and query and remove conflict flags for version conflicts. |
+| [FileSync](arkts-corefile-filesync-c.md) | Provides APIs for the file manager application to perform device-cloud sync of the files stored in the Drive Kit. Before using the APIs of this class, you need to create a **FileSync** instance. |
+| [FileVersion](arkts-corefile-fileversion-c.md) | Represents the device-cloud file version management class. It allows you to manage historical versions of client- cloud files, obtain the list of historical versions, download historical versions to the local device, replace the current local file with a historical version file, and query and remove conflict flags for version conflicts. |
 | [MultiDownloadProgress](arkts-corefile-multidownloadprogress-c.md) | Represents the batch download progress of a file from the Drive Kit. |
 
 <!--Del-->
@@ -51,9 +50,9 @@ import { cloudSync } from '@kit.CoreFileKit';
 | Name | Description |
 | --- | --- |
 | [CloudFileCache](arkts-corefile-cloudfilecache-c-sys.md) | Provides APIs for the file manager application to download files from the Drive Kit to a local device. |
-| [Download](arkts-corefile-download-c-sys.md) | Provides APIs for downloading image files to **Gallery**. Before using the APIs of **Download**, you need to createa **Download** instance. |
-| [FileSync](arkts-corefile-filesync-c-sys.md) | Provides APIs for the file manager application to perform device-cloud sync of the files stored in the Drive Kit.Before using the APIs of this class, you need to create a **FileSync** instance. |
-| [GallerySync](arkts-corefile-gallerysync-c-sys.md) | Provides APIs to implement device-cloud sync of media assets in **Gallery**. Before using the APIs of**GallerySync**, you need to create a **GallerySync** instance. |
+| [Download](arkts-corefile-download-c-sys.md) | Provides APIs for downloading image files to **Gallery**. Before using the APIs of **Download**, you need to create a **Download** instance. |
+| [FileSync](arkts-corefile-filesync-c-sys.md) | Provides APIs for the file manager application to perform device-cloud sync of the files stored in the Drive Kit. Before using the APIs of this class, you need to create a **FileSync** instance. |
+| [GallerySync](arkts-corefile-gallerysync-c-sys.md) | Provides APIs to implement device-cloud sync of media assets in **Gallery**. Before using the APIs of **GallerySync**, you need to create a **GallerySync** instance. |
 <!--DelEnd-->
 
 ### Interfaces
@@ -63,9 +62,9 @@ import { cloudSync } from '@kit.CoreFileKit';
 | [ChangeData](arkts-corefile-changedata-i.md) | Represents the data change information. |
 | [DownloadProgress](arkts-corefile-downloadprogress-i.md) | Represents information about the download progress of a cloud file. |
 | [FailedFileInfo](arkts-corefile-failedfileinfo-i.md) | Represents a list of files that fail to be downloaded from the Drive Kit and failure causes. |
-| [HistoryVersion](arkts-corefile-historyversion-i.md) | Represents the historical version information of the device-cloud file when the[gethistoryversionlist](arkts-corefile-fileversion-c.md#gethistoryversionlist-1) method of the[FileVersion](arkts-corefile-fileversion-c.md) class is called. |
+| [HistoryVersion](arkts-corefile-historyversion-i.md) | Represents the historical version information of the device-cloud file when the [gethistoryversionlist](arkts-corefile-fileversion-c.md#gethistoryversionlist-1) method of the [FileVersion](arkts-corefile-fileversion-c.md) class is called. |
 | [SyncProgress](arkts-corefile-syncprogress-i.md) | Represents information about the device-cloud sync progress. |
-| [VersionDownloadProgress](arkts-corefile-versiondownloadprogress-i.md) | Represents the download state and progress information of historical version files when the[downloadHistoryVersion](arkts-corefile-fileversion-c.md#downloadhistoryversion-1) method of the[FileVersion](arkts-corefile-fileversion-c.md) class is called. |
+| [VersionDownloadProgress](arkts-corefile-versiondownloadprogress-i.md) | Represents the download state and progress information of historical version files when the [downloadHistoryVersion](arkts-corefile-fileversion-c.md#downloadhistoryversion-1) method of the [FileVersion](arkts-corefile-fileversion-c.md) class is called. |
 
 <!--Del-->
 ### Interfaces（系统接口）
@@ -83,18 +82,18 @@ import { cloudSync } from '@kit.CoreFileKit';
 | --- | --- |
 | [DownloadErrorType](arkts-corefile-downloaderrortype-e.md) | Enumerates the device-cloud download error types. |
 | [DownloadFileType](arkts-corefile-downloadfiletype-e.md) | Enumerates the download file types from the Drive Kit. |
-| [ErrorType](arkts-corefile-errortype-e.md) | Enumerates the device-cloud sync errors.- In the current phase, **NETWORK_UNAVAILABLE** is returned only when the mobile data network and Wi-Fi areunavailable. If the mobile data network is available, the synchronization can be performed normally.- During the sync process, if the battery level is lower than 10% in non-charging scenarios, **BATTERY_LEVEL_LOW**will be return when the current upload is complete.- When sync is being triggered, if the battery level is lower than 10% in non-charging scenarios, sync is notallowed.- If the cloud space is insufficient when a file is uploaded, the upload will fail and there is no such a file inthe cloud. |
+| [ErrorType](arkts-corefile-errortype-e.md) | Enumerates the device-cloud sync errors. - In the current phase, **NETWORK_UNAVAILABLE** is returned only when the mobile data network and Wi-Fi are unavailable. If the mobile data network is available, the synchronization can be performed normally. - During the sync process, if the battery level is lower than 10% in non-charging scenarios, **BATTERY_LEVEL_LOW** will be return when the current upload is complete. - When sync is being triggered, if the battery level is lower than 10% in non-charging scenarios, sync is not allowed. - If the cloud space is insufficient when a file is uploaded, the upload will fail and there is no such a file in the cloud. |
 | [FileState](arkts-corefile-filestate-e.md) | Enumerates the device-cloud file sync states. |
 | [NotifyType](arkts-corefile-notifytype-e.md) | Enumerates the data change types. |
 | [State](arkts-corefile-state-e.md) | Enumerates the download states of a cloud file. |
-| [SyncState](arkts-corefile-syncstate-e.md) | Enumerates the device-cloud sync states.&gt; **NOTE**&gt;&gt; If a sync progress event listener is registered for an application, a callback will be invoked to notify the&gt; application when the device-cloud sync state is changed. |
+| [SyncState](arkts-corefile-syncstate-e.md) | Enumerates the device-cloud sync states. &gt; **NOTE** &gt; &gt; If a sync progress event listener is registered for an application, a callback will be invoked to notify the &gt; application when the device-cloud sync state is changed. |
 
 <!--Del-->
 ### Enums（系统接口）
 
 | Name | Description |
 | --- | --- |
-| [ErrorType](arkts-corefile-errortype-e-sys.md) | Enumerates the device-cloud sync errors.- In the current phase, **NETWORK_UNAVAILABLE** is returned only when the mobile data network and Wi-Fi areunavailable. If the mobile data network is available, the synchronization can be performed normally.- During the sync process, if the battery level is lower than 10% in non-charging scenarios, **BATTERY_LEVEL_LOW**will be return when the current upload is complete.- When sync is being triggered, if the battery level is lower than 10% in non-charging scenarios, sync is notallowed.- If the cloud space is insufficient when a file is uploaded, the upload will fail and there is no such a file inthe cloud. |
+| [ErrorType](arkts-corefile-errortype-e-sys.md) | Enumerates the device-cloud sync errors. - In the current phase, **NETWORK_UNAVAILABLE** is returned only when the mobile data network and Wi-Fi are unavailable. If the mobile data network is available, the synchronization can be performed normally. - During the sync process, if the battery level is lower than 10% in non-charging scenarios, **BATTERY_LEVEL_LOW** will be return when the current upload is complete. - When sync is being triggered, if the battery level is lower than 10% in non-charging scenarios, sync is not allowed. - If the cloud space is insufficient when a file is uploaded, the upload will fail and there is no such a file in the cloud. |
 | [FileSyncState](arkts-corefile-filesyncstate-e-sys.md) | Enumerates the device-cloud file sync states. |
 | [OptimizeState](arkts-corefile-optimizestate-e-sys.md) | Enumerates the space optimization states. |
 | [State](arkts-corefile-state-e-sys.md) | Enumerates the download states of a cloud file. |

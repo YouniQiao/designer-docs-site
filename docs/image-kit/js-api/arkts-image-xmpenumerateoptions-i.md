@@ -34,8 +34,7 @@ The option that controls recursive enabling.
 onlyQualifier?: boolean
 ```
 
-Whether to return only qualifier data.
-<br>Default value:false.
+Whether to return only qualifier data. <br>Default value:false.
 
 **Type:** boolean
 

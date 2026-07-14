@@ -12,8 +12,7 @@ import { cooperate } from '@kit.DistributedServiceKit';
 function getCooperateSwitchState(networkId: string, callback: AsyncCallback<boolean>): void
 ```
 
-Obtains the screen hopping status of the target device. This API uses an asynchronous callback to return the
-result.
+Obtains the screen hopping status of the target device. This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 

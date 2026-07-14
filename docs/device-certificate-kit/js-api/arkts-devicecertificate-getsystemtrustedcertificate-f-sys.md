@@ -12,8 +12,7 @@ import { certificateManager } from '@kit.DeviceCertificateKit';
 function getSystemTrustedCertificate(certUri: string): Promise<CMResult>
 ```
 
-Obtains details about a CA certificate trusted by the system. This API is called only by the certificate management
-application. This API uses a promise to return the result.
+Obtains details about a CA certificate trusted by the system. This API is called only by the certificate management application. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 

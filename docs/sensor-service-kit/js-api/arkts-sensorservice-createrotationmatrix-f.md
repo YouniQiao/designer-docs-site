@@ -102,8 +102,7 @@ promise.then((data: Array<number>) => {
 function createRotationMatrix(gravity: Array<number>, geomagnetic: Array<number>, callback: AsyncCallback<RotationMatrixResponse>): void
 ```
 
-Obtains the rotation matrix based on a gravity vector and geomagnetic vector. This API uses an asynchronous
-callback to return the result.
+Obtains the rotation matrix based on a gravity vector and geomagnetic vector. This API uses an asynchronous callback to return the result.
 
 **Since:** 8
 
@@ -145,8 +144,7 @@ sensor.createRotationMatrix([-0.27775216, 0.5351276, 9.788099], [210.87253, -78.
 function createRotationMatrix(gravity: Array<number>, geomagnetic: Array<number>,): Promise<RotationMatrixResponse>
 ```
 
-Obtains the rotation matrix based on a gravity vector and geomagnetic vector. This API uses a promise to return the
-result.
+Obtains the rotation matrix based on a gravity vector and geomagnetic vector. This API uses a promise to return the result.
 
 **Since:** 8
 

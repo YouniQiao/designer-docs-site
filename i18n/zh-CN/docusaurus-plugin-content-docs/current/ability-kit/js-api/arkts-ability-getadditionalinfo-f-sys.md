@@ -6,8 +6,7 @@
 function getAdditionalInfo(bundleName: string): string
 ```
 
-以同步接口查询指定bundleName的额外信息。该返回值是在调用install接口时传入的[InstallParam](arkts-ability-installparam-i-sys.md)中的
-additionalInfo字段。
+以同步接口查询指定bundleName的额外信息。该返回值是在调用install接口时传入的[InstallParam](arkts-ability-installparam-i-sys.md)中的 additionalInfo字段。
 
 **起始版本：** 10
 

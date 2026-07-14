@@ -12,10 +12,7 @@ import { sim } from '@kit.TelephonyKit';
 function getSimIccId(slotId: number, callback: AsyncCallback<string>): void
 ```
 
-Obtains the ICCID of the SIM card in a specified slot.
-
-<p>The ICCID is a unique identifier of a SIM card. It consists of 20 digits
-and is recorded in the EFICCID file of the SIM card.
+Obtains the ICCID of the SIM card in a specified slot. <p>The ICCID is a unique identifier of a SIM card. It consists of 20 digits and is recorded in the EFICCID file of the SIM card.
 
 **Since:** 7
 
@@ -64,10 +61,7 @@ sim.getSimIccId(0, (err: BusinessError, data: string) => {
 function getSimIccId(slotId: number): Promise<string>
 ```
 
-Obtains the ICCID of the SIM card in a specified slot.
-
-<p>The ICCID is a unique identifier of a SIM card. It consists of 20 digits
-and is recorded in the EFICCID file of the SIM card.
+Obtains the ICCID of the SIM card in a specified slot. <p>The ICCID is a unique identifier of a SIM card. It consists of 20 digits and is recorded in the EFICCID file of the SIM card.
 
 **Since:** 7
 

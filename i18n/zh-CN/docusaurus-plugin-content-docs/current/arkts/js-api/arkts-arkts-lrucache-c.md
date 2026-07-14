@@ -1,7 +1,6 @@
 # LRUCache
 
-提供在缓存已满时丢弃最近最少使用的数据以腾出空间给新元素的 API。此类使用最近最少使用（LRU）算法，该算法认为最近
-使用的数据可能在不久的将来再次被访问，而最少访问的数据是最不具价值的数据，应从缓存中移除。
+提供在缓存已满时丢弃最近最少使用的数据以腾出空间给新元素的 API。此类使用最近最少使用（LRU）算法，该算法认为最近 使用的数据可能在不久的将来再次被访问，而最少访问的数据是最不具价值的数据，应从缓存中移除。
 
 **起始版本：** 9
 
@@ -49,16 +48,7 @@ for (let value of pro) {
 afterRemoval(isEvict: boolean, key: K, value: V, newValue: V): void
 ```
 
-在移除值后执行后续操作。后续操作必须由开发者实现。该 API 在删除操作期间会被调用，例如
-[get<sup>9+</sup>](arkts-arkts-lrucache-c.md#get-1)、[put<sup>9+</sup>](arkts-arkts-lrucache-c.md#put-1)、
-[remove<sup>9+</sup>](arkts-arkts-lrucache-c.md#remove-1)、[clear<sup>9+</sup>](arkts-arkts-lrucache-c.md#clear-1) 和
-[updateCapacity<sup>9+</sup>](arkts-arkts-lrucache-c.md#updatecapacity-1)。
-
-> **NOTE**
->
-> 如果在调用 [clear<sup>9+</sup>](arkts-arkts-lrucache-c.md#clear-1) 和
-> [updateCapacity<sup>9+</sup>](arkts-arkts-lrucache-c.md#updatecapacity-1) 后执行回调方法，并且输入的 **key** 和
-> **value** 参数为 MapIterator 类型，请参考示例 2 执行后续操作。
+在移除值后执行后续操作。后续操作必须由开发者实现。该 API 在删除操作期间会被调用，例如 [get<sup>9+</sup>](arkts-arkts-lrucache-c.md#get-1)、[put<sup>9+</sup>](arkts-arkts-lrucache-c.md#put-1)、 [remove<sup>9+</sup>](arkts-arkts-lrucache-c.md#remove-1)、[clear<sup>9+</sup>](arkts-arkts-lrucache-c.md#clear-1) 和 [updateCapacity<sup>9+</sup>](arkts-arkts-lrucache-c.md#updatecapacity-1)。 > **NOTE** > > 如果在调用 [clear<sup>9+</sup>](arkts-arkts-lrucache-c.md#clear-1) 和 > [updateCapacity<sup>9+</sup>](arkts-arkts-lrucache-c.md#updatecapacity-1) 后执行回调方法，并且输入的 **key** 和 > **value** 参数为 MapIterator 类型，请参考示例 2 执行后续操作。
 
 **起始版本：** 9
 
@@ -246,10 +236,7 @@ for (let value of pair) {
 get(key: K): V | undefined
 ```
 
-获取 key 对应的值。如果该 key 不在缓存中，则调用
-[createDefault<sup>9+</sup>](arkts-arkts-lrucache-c.md#createdefault-1) 创建该 key。如果 **createDefault** 中指定的值
-不为 **undefined**，则调用 [afterRemoval<sup>9+</sup>](arkts-arkts-lrucache-c.md#afterremoval-1) 返回 **createDefault**
-中指定的值。
+获取 key 对应的值。如果该 key 不在缓存中，则调用 [createDefault<sup>9+</sup>](arkts-arkts-lrucache-c.md#createdefault-1) 创建该 key。如果 **createDefault** 中指定的值 不为 **undefined**，则调用 [afterRemoval<sup>9+</sup>](arkts-arkts-lrucache-c.md#afterremoval-1) 返回 **createDefault** 中指定的值。
 
 **起始版本：** 9
 

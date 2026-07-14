@@ -32,19 +32,7 @@ Address family option.
 body?: string | Object | ArrayBuffer
 ```
 
-The body content of the HTTP request.
-
-This parameter explicitly specifies the payload to be sent in the request body.
-When this field is set, the framework forces the data into the body, regardless of
-the HTTP request method (GET, POST, etc.).
-
-Serialization rules:
-- string: sent directly as the request body.
-- Object: serialized to a JSON string before being sent.
-- ArrayBuffer: sent as raw binary data without additional serialization.
-
-If both body and extraData are specified, body takes precedence, and extraData
-will be ignored.
+The body content of the HTTP request. This parameter explicitly specifies the payload to be sent in the request body. When this field is set, the framework forces the data into the body, regardless of the HTTP request method (GET, POST, etc.). Serialization rules: - string: sent directly as the request body. - Object: serialized to a JSON string before being sent. - ArrayBuffer: sent as raw binary data without additional serialization. If both body and extraData are specified, body takes precedence, and extraData will be ignored.
 
 **Type:** string | Object | ArrayBuffer
 
@@ -60,10 +48,7 @@ will be ignored.
 caData?: string
 ```
 
-A PEM representation of a certificate. The system will create an X.509 certificate object in the SSL process.
-If the caPath option is set, the caData option will be ignored.
-Certificate chain is not supported.
-Maxium length is 8000 Bytes.
+A PEM representation of a certificate. The system will create an X.509 certificate object in the SSL process. If the caPath option is set, the caData option will be ignored. Certificate chain is not supported. Maxium length is 8000 Bytes.
 
 **Type:** string
 
@@ -95,8 +80,7 @@ If this parameter is set, the system will use ca path specified by user, or else
 certificatePinning?: CertificatePinning | CertificatePinning[]
 ```
 
-Certificate pinning option. If server certificate's digest does not match
-{@link CertificatePinning.publicKeyHash}, request will fail.
+Certificate pinning option. If server certificate's digest does not match {@link CertificatePinning.publicKeyHash}, request will fail.
 
 **Type:** CertificatePinning | CertificatePinning[]
 
@@ -124,8 +108,7 @@ Support the application to pass in client certificates, allowing the server to v
 clientEncCert?: ClientCert
 ```
 
-Support the application to pass in client certificates, allowing the server to verify the
-client's encryption identity.
+Support the application to pass in client certificates, allowing the server to verify the client's encryption identity.
 
 **Type:** ClientCert
 
@@ -171,9 +154,7 @@ Supports specifying the user custom defined http request method
 dnsOverHttps?: string
 ```
 
-If this parameter is set, incoming DNS resolution server URL for the DoH server to use for name resolving.
-The parameter must be URL-encoded in the following format: "https://host:port/path".
-It MUST specify an HTTPS URL.
+If this parameter is set, incoming DNS resolution server URL for the DoH server to use for name resolving. The parameter must be URL-encoded in the following format: "https://host:port/path". It MUST specify an HTTPS URL.
 
 **Type:** string
 
@@ -187,9 +168,7 @@ It MUST specify an HTTPS URL.
 dnsServers?: Array<string>
 ```
 
-If this parameter is set, use the specified DNS server for DNS resolution.
-Multiple DNS resolution servers can be set up, with a maximum of 3 servers.
-Only take the first three if there are more than three.
+If this parameter is set, use the specified DNS server for DNS resolution. Multiple DNS resolution servers can be set up, with a maximum of 3 servers. Only take the first three if there are more than three.
 
 **Type:** Array<string>
 
@@ -203,11 +182,7 @@ Only take the first three if there are more than three.
 enablePartialChain?: boolean
 ```
 
-Indicates whether to enable partial chain verification.
-The default value is true when SslType is set to TLS, and false when SslType is set to TLCP.
-If set to false, the certificate chain must verify up to a trusted root CA.
-If set to true, the verification succeeds if the chain builds to a trusted intermediate CA,
-without requiring a path to a trusted root CA.
+Indicates whether to enable partial chain verification. The default value is true when SslType is set to TLS, and false when SslType is set to TLCP. If set to false, the certificate chain must verify up to a trusted root CA. If set to true, the verification succeeds if the chain builds to a trusted intermediate CA, without requiring a path to a trusted root CA.
 
 **Type:** boolean
 
@@ -239,8 +214,7 @@ Data type to be returned. If this parameter is set, the system preferentially re
 extraData?: string | Object | ArrayBuffer
 ```
 
-Additional data of the request.
-extraData can be a string or an Object (API 6) or an ArrayBuffer(API 8).
+Additional data of the request. extraData can be a string or an Object (API 6) or an ArrayBuffer(API 8).
 
 **Type:** string | Object | ArrayBuffer
 
@@ -288,8 +262,7 @@ Maximum HTTP idle time (unit: ms)
 maxLimit?: number
 ```
 
-The maximum limit of the response body. The default value is 5 * 1024 * 1024, in Byte.
-The maximum value is 100 * 1024 *1024, in Byte.
+The maximum limit of the response body. The default value is 5 * 1024 * 1024, in Byte. The maximum value is 100 * 1024 *1024, in Byte.
 
 **Type:** number
 
@@ -333,9 +306,7 @@ Request method,default is GET.
 multiFormDataList?: Array<MultiFormData>
 ```
 
-The data fields which is supported by the HTTP protocol to post
-forms and by the SMTP and IMAP protocols to provide
-the email data to send/upload.
+The data fields which is supported by the HTTP protocol to post forms and by the SMTP and IMAP protocols to provide the email data to send/upload.
 
 **Type:** Array<MultiFormData>
 
@@ -349,8 +320,7 @@ the email data to send/upload.
 pathPreference?: PathPreference
 ```
 
-Support specifying a preferred network when making HTTP requests.
-If the specified network is unavailable, the default network will be selected to send the request.
+Support specifying a preferred network when making HTTP requests. If the specified network is unavailable, the default network will be selected to send the request.
 
 **Type:** PathPreference
 
@@ -380,21 +350,7 @@ priority?: number
 queryParams?: string | QueryParamObject
 ```
 
-Query parameters to append to the request URL.
-Supports two input forms:
-- `string`: a pre-encoded query string provided by the caller. It is appended
-to the URL as-is and is not encoded again by the system.
-- `QueryParamObject`: a key-value object. The system encodes keys and values
-and serializes them into the URL query string automatically.
-
-Notes:
-1. For `string`, do not include the leading `?`
-(for example, use `"key=value"`, not `"?key=value"`).
-2. For `string`, the caller is responsible for encoding special characters.
-3. For `string`, use `&` to separate multiple parameters.
-
-If both `queryParams` and `extraData` are specified, `queryParams` takes
-precedence for URL construction, and `extraData` will be ignored.
+Query parameters to append to the request URL. Supports two input forms: - `string`: a pre-encoded query string provided by the caller. It is appended to the URL as-is and is not encoded again by the system. - `QueryParamObject`: a key-value object. The system encodes keys and values and serializes them into the URL query string automatically. Notes: 1. For `string`, do not include the leading `?` (for example, use `"key=value"`, not `"?key=value"`). 2. For `string`, the caller is responsible for encoding special characters. 3. For `string`, use `&` to separate multiple parameters. If both `queryParams` and `extraData` are specified, `queryParams` takes precedence for URL construction, and `extraData` will be ignored.
 
 **Type:** string | QueryParamObject
 
@@ -442,9 +398,7 @@ Certificate authority(CA) which is used to verify the remote server's identifica
 resumeFrom?: number
 ```
 
-Used to set to uploading or downloading the start bytes. The default value is 0.
-HTTP standard (RFC 7233 section 3.1) allows servers to ignore range requests.
-For HTTP PUT uploads this option should not be used, since it may conflict with other options.
+Used to set to uploading or downloading the start bytes. The default value is 0. HTTP standard (RFC 7233 section 3.1) allows servers to ignore range requests. For HTTP PUT uploads this option should not be used, since it may conflict with other options.
 
 **Type:** number
 
@@ -458,9 +412,7 @@ For HTTP PUT uploads this option should not be used, since it may conflict with 
 resumeTo?: number
 ```
 
-Used to set to uploading or downloading the end bytes. Translate to the end if not set.
-HTTP standard (RFC 7233 section 3.1) allows servers to ignore range requests.
-For HTTP PUT uploads this option should not be used, since it may conflict with other options.
+Used to set to uploading or downloading the end bytes. Translate to the end if not set. HTTP standard (RFC 7233 section 3.1) allows servers to ignore range requests. For HTTP PUT uploads this option should not be used, since it may conflict with other options.
 
 **Type:** number
 
@@ -520,8 +472,7 @@ Support specifying an SNI domain name to include the SNI field during the TLS co
 sslType?: SslType
 ```
 
-Which secure communication protocol is used, TLS (by defaul) or TLCP.
-If TLCP is used, all TLS related options, such as caPath, caData and clientCert, are ignored.
+Which secure communication protocol is used, TLS (by defaul) or TLCP. If TLCP is used, all TLS related options, such as caPath, caData and clientCert, are ignored.
 
 **Type:** SslType
 
@@ -585,8 +536,7 @@ default is automatically specified by the system.
 usingProxy?: boolean | HttpProxy
 ```
 
-If this parameter is set as type of boolean, the system will use default proxy or not use proxy.
-If this parameter is set as type of HttpProxy, the system will use the specified HttpProxy.
+If this parameter is set as type of boolean, the system will use default proxy or not use proxy. If this parameter is set as type of HttpProxy, the system will use the specified HttpProxy.
 
 **Type:** boolean | HttpProxy
 
@@ -602,8 +552,7 @@ If this parameter is set as type of HttpProxy, the system will use the specified
 usingSocks5Proxy?: Socks5Proxy
 ```
 
-Specifies the use of a SOCKS5 proxy. Note that this configuration takes precedence over usingProxy.
-It is recommend not to configure both simultaneously.
+Specifies the use of a SOCKS5 proxy. Note that this configuration takes precedence over usingProxy. It is recommend not to configure both simultaneously.
 
 **Type:** Socks5Proxy
 

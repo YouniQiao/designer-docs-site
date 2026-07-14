@@ -34,8 +34,7 @@ Length of the data to read, in bytes. This parameter is optional. The default va
 offset?: number
 ```
 
-Start position of the file to read (current **filePointer** plus **offset**), in bytes. This parameter is optional.
-By default, data is read from the **filePointer**.
+Start position of the file to read (current **filePointer** plus **offset**), in bytes. This parameter is optional. By default, data is read from the **filePointer**.
 
 **Type:** number
 

@@ -36,8 +36,7 @@ Alpha type. The default value is **IMAGE_ALPHA_TYPE_PREMUL**.
 editable?: boolean
 ```
 
-Whether the image pixels are editable. **true** if editable, **false** otherwise. The value **false** provides
-better image rendering and transmission performance. The default value is **false**.
+Whether the image pixels are editable. **true** if editable, **false** otherwise. The value **false** provides better image rendering and transmission performance. The default value is **false**.
 
 **Type:** boolean
 

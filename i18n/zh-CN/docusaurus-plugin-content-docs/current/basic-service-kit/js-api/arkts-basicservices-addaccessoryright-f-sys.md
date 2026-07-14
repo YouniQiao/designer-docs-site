@@ -6,8 +6,7 @@
 function addAccessoryRight(tokenId: number, accessory: USBAccessory): void
 ```
 
-为应用程序添加访问USB配requestAccessoryRight件权限。
-[usbManager.]{(@link usbManager.requestAccessoryRight)}会触发弹窗请求用户授权；addAccessoryRight不会触发弹窗，而是直接添加应用程序访问设备的权限。
+为应用程序添加访问USB配requestAccessoryRight件权限。 [usbManager.]{(@link usbManager.requestAccessoryRight)}会触发弹窗请求用户授权；addAccessoryRight不会触发弹窗，而是直接添加应用程序访问设备的权限。
 
 **起始版本：** 14
 

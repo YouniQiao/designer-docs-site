@@ -6,8 +6,7 @@
 declare function Env<T>(key: SystemEnvKey<T> | SystemProperties): PropertyDecorator
 ```
 
-Defining Env PropertyDecorator.
-On API 26.0.0 and above, the parameter also supports the SystemEnvKey<T> type.
+Defining Env PropertyDecorator. On API 26.0.0 and above, the parameter also supports the SystemEnvKey<T> type.
 
 **Since:** 22
 

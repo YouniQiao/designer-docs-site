@@ -24,8 +24,7 @@ The rendering process does not bypass the vsync scheduling. Default value.
 SCROLLBY_FROM_ZERO_OFFSET = 1
 ```
 
-When **scrollBy** is used (only the scrolling offset is supported) and the scrolling offset of the web page
-is **0**, the rendering process bypasses the vsync scheduling.
+When **scrollBy** is used (only the scrolling offset is supported) and the scrolling offset of the web page is **0**, the rendering process bypasses the vsync scheduling.
 
 **Since:** 20
 

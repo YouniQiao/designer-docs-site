@@ -12,9 +12,7 @@
 ACTION_ADD_ACCOUNT_IMPLICITLY = 'addAccountImplicitly'
 ```
 
-表示操作，隐式添加账号。
-
-**说明：**从API version 8开始支持，从API version 9开始废弃，建议使用ACTION_CREATE_ACCOUNT_IMPLICITLY替代。
+表示操作，隐式添加账号。 **说明：**从API version 8开始支持，从API version 9开始废弃，建议使用ACTION_CREATE_ACCOUNT_IMPLICITLY替代。
 
 **起始版本：** 8
 
@@ -30,9 +28,7 @@ ACTION_ADD_ACCOUNT_IMPLICITLY = 'addAccountImplicitly'
 ACTION_AUTHENTICATE = 'authenticate'
 ```
 
-表示操作，鉴权。
-
-**说明：**从API version 8开始支持，从API version 9开始废弃，建议使用ACTION_AUTH替代。
+表示操作，鉴权。 **说明：**从API version 8开始支持，从API version 9开始废弃，建议使用ACTION_AUTH替代。
 
 **起始版本：** 8
 

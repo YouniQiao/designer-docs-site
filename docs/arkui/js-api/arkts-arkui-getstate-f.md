@@ -12,14 +12,7 @@ import { router } from '@kit.ArkUI';
 function getState(): RouterState
 ```
 
-Obtains state information about the page at the top of the navigation stack.
-
-> **NOTE**
->
-> - Since API version 10, you can use the
-> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in
-> [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated
-> with the current UI context.
+Obtains state information about the page at the top of the navigation stack. > **NOTE** > > - Since API version 10, you can use the > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in > [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated > with the current UI context.
 
 **Since:** 8
 

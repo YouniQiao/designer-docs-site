@@ -2,7 +2,7 @@
 
 Invoke options for function execution.
 
-**Since:** 26.1.0
+**Since:** 26.0.0
 
 **System capability:** SystemCapability.Ability.AgentRuntime.Core
 
@@ -20,12 +20,11 @@ import { functionManager } from '@kit.AbilityKit';
 context?: Context
 ```
 
-Context of the caller.<br>Note: Currently, only
-[UIAbilityContext](arkts-ability-uiabilitycontext-c.md) is supported.
+Context of the caller.<br>Note: Currently, only [UIAbilityContext](arkts-ability-uiabilitycontext-c.md) is supported.
 
 **Type:** Context
 
-**Since:** 26.1.0
+**Since:** 26.0.0
 
 **Model restriction:** This API can be used only in the stage model.
 

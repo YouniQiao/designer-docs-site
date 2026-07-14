@@ -47,5 +47,5 @@ import { vpnExtension } from '@kit.NetworkKit';
 | --- | --- |
 | [LinkAddress](arkts-network-linkaddress-t.md) | Get network link information. |
 | [RouteInfo](arkts-network-routeinfo-t.md) | Get network route information. |
-| [VpnExtensionContext](arkts-network-vpnextensioncontext-t.md) | The context of vpn extension. It allows access toserviceExtension-specific resources. |
+| [VpnExtensionContext](arkts-network-vpnextensioncontext-t.md) | The context of vpn extension. It allows access to serviceExtension-specific resources. |
 

@@ -1,9 +1,6 @@
 # SwiperContentTransitionProxy
 
-Implements the proxy object returned during the execution of the custom page transition animation of the **Swiper**
-component. You can use this object to obtain the page information in the custom animation viewport. You can also call
-the **finishTransition** API of this object to notify the **Swiper** component that the custom animation has finished
-playing.
+Implements the proxy object returned during the execution of the custom page transition animation of the **Swiper** component. You can use this object to obtain the page information in the custom animation viewport. You can also call the **finishTransition** API of this object to notify the **Swiper** component that the custom animation has finished playing.
 
 **Since:** 12
 
@@ -73,8 +70,7 @@ Length of the page specified by **index** along the main axis, in vp.
 position: number
 ```
 
-Position of the page specified by **index** relative to the start position of the **Swiper** main axis (start
-position of the page corresponding to **selectedIndex**).
+Position of the page specified by **index** relative to the start position of the **Swiper** main axis (start position of the page corresponding to **selectedIndex**).
 
 **Type:** number
 

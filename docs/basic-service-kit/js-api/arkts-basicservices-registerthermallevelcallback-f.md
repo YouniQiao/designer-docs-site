@@ -12,8 +12,7 @@ import { thermal } from '@kit.BasicServicesKit';
 function registerThermalLevelCallback(callback: Callback<ThermalLevel>): void
 ```
 
-Registers a callback to be invoked when the thermal level changes. This API uses an asynchronous callback to return
-the result.
+Registers a callback to be invoked when the thermal level changes. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 

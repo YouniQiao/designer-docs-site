@@ -210,21 +210,7 @@ struct ColorGradientExample {
 distortionCollapse(distortionParam: DistortionParam): VisualEffect
 ```
 
-Sets distortion collapse effect.
-
-NOTE
-1. This visual effect supports drawing outside the bounds of the control,
-but it is still subject to the clipping (Clip) of the parent control.
-2. Because it contains a foreground Filter, some visual effects of the component itself and its child components
-(e.g., BrightnessBlender or systemMaterial) are incompatible when not used in combination
-with the EffectComponent.
-3. It supports distorting the system material, but when used in combination with the EffectComponent,
-it will cause the background of the system material to be distorted.
-4. When calling distortionCollapse, an offscreen canvas equal in size to the deformed area will be created.
-The content of the current component (including child components) is then drawn onto this offscreen canvas,
-and the existing content on the canvas is drawn with deformation. When using this implementation without
-combining with the EffectComponent, interfaces that require screen capture, such as systemMaterial,
-backgroundEffect, brightness, and blur, will not be able to capture the correct screen.
+Sets distortion collapse effect. NOTE 1. This visual effect supports drawing outside the bounds of the control, but it is still subject to the clipping (Clip) of the parent control. 2. Because it contains a foreground Filter, some visual effects of the component itself and its child components (e.g., BrightnessBlender or systemMaterial) are incompatible when not used in combination with the EffectComponent. 3. It supports distorting the system material, but when used in combination with the EffectComponent, it will cause the background of the system material to be distorted. 4. When calling distortionCollapse, an offscreen canvas equal in size to the deformed area will be created. The content of the current component (including child components) is then drawn onto this offscreen canvas, and the existing content on the canvas is drawn with deformation. When using this implementation without combining with the EffectComponent, interfaces that require screen capture, such as systemMaterial, backgroundEffect, brightness, and blur, will not be able to capture the correct screen.
 
 **Since:** 26.0.0
 

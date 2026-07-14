@@ -1,10 +1,6 @@
 # DSAKeyPairSpec
 
-Defines a child class of [AsyKeySpec](arkts-cryptoarchitecture-asykeyspec-i.md) used to specify full parameters of the
-public and private keys in the DSA algorithm.
-
-To generate a key based on key parameters, pass it to
-[createAsyKeyGeneratorBySpec()](arkts-cryptoarchitecture-createasykeygeneratorbyspec-f.md#createasykeygeneratorbyspec-1) to create a key generator.
+Defines a child class of [AsyKeySpec](arkts-cryptoarchitecture-asykeyspec-i.md) used to specify full parameters of the public and private keys in the DSA algorithm. To generate a key based on key parameters, pass it to [createAsyKeyGeneratorBySpec()](arkts-cryptoarchitecture-createasykeygeneratorbyspec-f.md#createasykeygeneratorbyspec-1) to create a key generator.
 
 **Inheritance/Implementation:** DSAKeyPairSpec extends [AsyKeySpec](arkts-cryptoarchitecture-asykeyspec-i.md)
 

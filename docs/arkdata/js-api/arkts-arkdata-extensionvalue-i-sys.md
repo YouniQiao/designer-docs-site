@@ -36,9 +36,7 @@ Time when a row of data is created, in ms.
 readonly id: string
 ```
 
-ID generated when data is inserted.
-An ID is generated for each row when data is first inserted to the cloud.
-The ID must be unique for each table.
+ID generated when data is inserted. An ID is generated for each row when data is first inserted to the cloud. The ID must be unique for each table.
 
 **Type:** string
 

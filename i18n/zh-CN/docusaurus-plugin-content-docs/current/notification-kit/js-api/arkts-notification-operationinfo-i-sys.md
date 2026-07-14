@@ -20,8 +20,7 @@ import { notificationSubscribe } from '@kit.NotificationKit';
 actionName?: string
 ```
 
-描述通知中显示的操作按钮（与通知
-[NotificationActionButton](arkts-notification-notificationactionbutton-i.md)中title字段保持一致）。
+描述通知中显示的操作按钮（与通知 [NotificationActionButton](arkts-notification-notificationactionbutton-i.md)中title字段保持一致）。
 
 **类型：** string
 
@@ -53,12 +52,7 @@ buttonIndex?: number
 operationType?: number
 ```
 
-用户点击操作类型。
-
-- 0：用户点击非实况通知本体。
-- 1：用户点击非实况通知按钮。
-- 32：用户点击实况通知本体。
-- 33：用户点击实况通知辅助区
+用户点击操作类型。 - 0：用户点击非实况通知本体。 - 1：用户点击非实况通知按钮。 - 32：用户点击实况通知本体。 - 33：用户点击实况通知辅助区
 
 **类型：** number
 
@@ -74,8 +68,7 @@ operationType?: number
 userInput?: string
 ```
 
-用户输入（用于通知跨设备快捷回复场景传递用户输入，与通知
-[NotificationUserInput](arkts-notification-notificationuserinput-i.md)中inputKey字段保持一致）。
+用户输入（用于通知跨设备快捷回复场景传递用户输入，与通知 [NotificationUserInput](arkts-notification-notificationuserinput-i.md)中inputKey字段保持一致）。
 
 **类型：** string
 

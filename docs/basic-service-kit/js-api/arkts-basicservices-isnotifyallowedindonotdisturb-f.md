@@ -12,8 +12,7 @@ import { intelligentScene } from '@kit.BasicServicesKit';
 function isNotifyAllowedInDoNotDisturb(): Promise<boolean>
 ```
 
-Checks whether calling bundle is allow notify(e.g. sound & vibration) when system
-Do Not Disturb is on.
+Checks whether calling bundle is allow notify(e.g. sound & vibration) when system Do Not Disturb is on.
 
 **Since:** 23
 

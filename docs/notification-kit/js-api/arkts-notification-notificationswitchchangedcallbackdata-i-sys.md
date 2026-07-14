@@ -1,6 +1,6 @@
 # NotificationSwitchChangedCallbackData (System API)
 
-Describes the notification switch state changes callback data.
+Returns the changes of the notification switch state.
 
 **Since:** 26.0.0
 
@@ -32,8 +32,7 @@ Notification switch state.
 readonly switchName: string
 ```
 
-Notification switch name. Values ​​are: DEAL (transaction-related notification aggregation switch) and LOGISTICS
-(logistics-related notification aggregation switch).
+Notification switch name. The value can be **DEAL** (aggregated switch for transaction notifications) or **LOGISTICS** (aggregated switch for logistics notifications).
 
 **Type:** string
 
@@ -51,8 +50,7 @@ Notification switch name. Values ​​are: DEAL (transaction-related notificati
 readonly userId: number
 ```
 
-User ID.
-The value range is all integers.
+User ID. The value range is all integers.
 
 **Type:** number
 

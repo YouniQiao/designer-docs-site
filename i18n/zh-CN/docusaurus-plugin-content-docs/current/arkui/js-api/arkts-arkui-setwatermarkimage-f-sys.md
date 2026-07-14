@@ -74,9 +74,7 @@ image.createPixelMap(color, initializationOptions).then((pixelMap: image.PixelMa
 function setWaterMarkImage(pixelMap: image.PixelMap, enable: boolean, priority: number): Promise<void>
 ```
 
-设置屏幕水印图片的显示状态，并设定水印的优先级。使用Promise异步回调。当priority等于0时，当前接口与
-[setWaterMarkImage](arkts-arkui-setwatermarkimage-f-sys.md#setwatermarkimage-3)
-等价。
+设置屏幕水印图片的显示状态，并设定水印的优先级。使用Promise异步回调。当priority等于0时，当前接口与 [setWaterMarkImage](arkts-arkui-setwatermarkimage-f-sys.md#setwatermarkimage-3) 等价。
 
 **起始版本：** 26.0.0
 

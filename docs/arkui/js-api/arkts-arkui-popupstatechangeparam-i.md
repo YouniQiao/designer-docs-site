@@ -12,8 +12,7 @@ Display state of the popup.
 isVisible: boolean
 ```
 
-Display state of the popup. It returns **true** when the popup transitions from closed to open, and **false** when
-the popup transitions from open to closed.
+Display state of the popup. It returns **true** when the popup transitions from closed to open, and **false** when the popup transitions from open to closed.
 
 **Type:** boolean
 

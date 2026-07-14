@@ -1,12 +1,6 @@
 # CommonEventSubscribeInfo
 
-The **CommonEventSubscribeInfo** module provides APIs for providing subscriber information.
-
-> **NOTE**
->
-> After users subscribing to custom common events, any application can send potential malicious common events to
-> subscribers. Use the **publisherPermission** and **publisherBundleName** parameters of this module to restrict the
-> publishing scope of common events.
+The **CommonEventSubscribeInfo** module provides APIs for providing subscriber information. > **NOTE** > > After users subscribing to custom common events, any application can send potential malicious common events to > subscribers. Use the **publisherPermission** and **publisherBundleName** parameters of this module to restrict the > publishing scope of common events.
 
 **Since:** 7
 
@@ -34,8 +28,7 @@ Common events to subscribe to.
 priority?: number
 ```
 
-Subscriber priority. The value ranges from –100 to +1000. If the value exceeds the upper or lower limit, the upper
-or lower limit is used.
+Subscriber priority. The value ranges from –100 to +1000. If the value exceeds the upper or lower limit, the upper or lower limit is used.
 
 **Type:** number
 
@@ -67,8 +60,7 @@ Bundle name of the publisher to subscribe to.
 publisherDeviceId?: string
 ```
 
-Device ID. Use [@ohos.deviceInfo](arkts-deviceinfo.md) to obtain the UDID as the device ID of
-the subscriber. Not supported currently.
+Device ID. Use [@ohos.deviceInfo](arkts-deviceinfo.md) to obtain the UDID as the device ID of the subscriber. Not supported currently.
 
 **Type:** string
 
@@ -100,10 +92,7 @@ Permission of the publisher. The subscriber can receive only the events from the
 userId?: number
 ```
 
-User ID. If this parameter is not specified, the default value, which is the ID of the current user, will be used.
-The value must be an existing user ID in the system. Use
-[getOsAccountLocalId](arkts-basicservices-accountmanager-i.md#getosaccountlocalid-1)
-to obtain the system account ID and use it as the user ID of the subscriber.
+User ID. If this parameter is not specified, the default value, which is the ID of the current user, will be used. The value must be an existing user ID in the system. Use [getOsAccountLocalId](arkts-basicservices-accountmanager-i.md#getosaccountlocalid-1) to obtain the system account ID and use it as the user ID of the subscriber.
 
 **Type:** number
 

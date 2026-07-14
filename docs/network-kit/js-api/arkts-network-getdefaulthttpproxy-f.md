@@ -12,12 +12,7 @@ import { connection } from '@kit.NetworkKit';
 function getDefaultHttpProxy(callback: AsyncCallback<HttpProxy>): void
 ```
 
-Obtains the default {@link HttpProxy} proxy settings.
-
-If an application level proxy is set, the application level proxy parameters are returned.
-If a global proxy is set, the global proxy parameters are returned.
-If the process is bound to a {@link NetHandle} using {@link setAppNet}, the {@link NetHandle} proxy settings are returned.
-In other cases, the proxy settings of default network are returned.
+Obtains the default {@link HttpProxy} proxy settings. If an application level proxy is set, the application level proxy parameters are returned. If a global proxy is set, the global proxy parameters are returned. If the process is bound to a {@link NetHandle} using {@link setAppNet}, the {@link NetHandle} proxy settings are returned. In other cases, the proxy settings of default network are returned.
 
 **Since:** 10
 
@@ -59,12 +54,7 @@ connection.getDefaultHttpProxy((error: BusinessError, data: connection.HttpProxy
 function getDefaultHttpProxy(): Promise<HttpProxy>
 ```
 
-Obtains the default {@link HttpProxy} proxy settings.
-
-If an application level proxy is set, the application level proxy parameters are returned.
-If a global proxy is set, the global proxy parameters are returned.
-If the process is bound to a {@link NetHandle} using {@link setAppNet}, the {@link NetHandle} proxy settings are returned.
-In other cases, the proxy settings of default network are returned.
+Obtains the default {@link HttpProxy} proxy settings. If an application level proxy is set, the application level proxy parameters are returned. If a global proxy is set, the global proxy parameters are returned. If the process is bound to a {@link NetHandle} using {@link setAppNet}, the {@link NetHandle} proxy settings are returned. In other cases, the proxy settings of default network are returned.
 
 **Since:** 10
 

@@ -30,11 +30,7 @@ curve?: Curve
 delay?: number
 ```
 
-转场动画的延迟。
-
-默认值：0（毫秒）
-
-单位：ms
+转场动画的延迟。 默认值：0（毫秒） 单位：ms
 
 **类型：** number
 
@@ -52,11 +48,7 @@ delay?: number
 duration?: number
 ```
 
-转场动画的持续时间。
-
-默认值：1000（毫秒）
-
-单位：ms
+转场动画的持续时间。 默认值：1000（毫秒） 单位：ms
 
 **类型：** number
 
@@ -74,8 +66,7 @@ duration?: number
 event: Callback<void>
 ```
 
-指定转场动效的闭包函数，系统会根据闭包中对组件UI状态的修改，生成对应的过渡动画。参见[animateTo](../arkts-apis/arkts-arkui-uicontext-c-sys.md#animatetoimmediately-1)中
-的event。
+指定转场动效的闭包函数，系统会根据闭包中对组件UI状态的修改，生成对应的过渡动画。参见[animateTo](../arkts-apis/arkts-arkui-uicontext-c-sys.md#animatetoimmediately-1)中 的event。
 
 **类型：** Callback<void>
 

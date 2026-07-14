@@ -12,9 +12,7 @@ import { companionDeviceAuth } from '@kit.UserAuthenticationKit';
 function updateEnabledBusinessIds(templateId: Uint8Array, enabledBusinessIds: number[]): Promise<void>
 ```
 
-Updates the service scope supported by the specified companion device template. This API is used to modify the
-list of service IDs enabled for a registered template, thereby controlling the service scenarios in which the
-template can be used. This API uses a promise to return the result.
+Updates the service scope supported by the specified companion device template. This API is used to modify the list of service IDs enabled for a registered template, thereby controlling the service scenarios in which the template can be used. This API uses a promise to return the result.
 
 **Since:** 23
 

@@ -1,8 +1,6 @@
 # Parameter (System API)
 
-Sets the parameter for a specific operation when the accessibility node element executes this operation. For details,
-see [AccessibilityAction](arkts-accessibility-accessibilityaction-e-sys.md) (executable actions for accessibility
-node elements).
+Sets the parameter for a specific operation when the accessibility node element executes this operation. For details, see [AccessibilityAction](arkts-accessibility-accessibilityaction-e-sys.md) (executable actions for accessibility node elements).
 
 **Since:** 20
 
@@ -134,8 +132,7 @@ End coordinate of the selected text in the component, for example, **'8'**.
 selectTextInForWard?: boolean
 ```
 
-Whether to forward select the text within the component. The value **true** indicates to forward select the text,
-and the value **false** indicates the opposite.
+Whether to forward select the text within the component. The value **true** indicates to forward select the text, and the value **false** indicates the opposite.
 
 **Type:** boolean
 

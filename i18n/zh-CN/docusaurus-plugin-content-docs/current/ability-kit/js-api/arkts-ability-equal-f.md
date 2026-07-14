@@ -6,9 +6,7 @@
 function equal(agent: WantAgent, otherAgent: WantAgent, callback: AsyncCallback<boolean>): void
 ```
 
-判断两个WantAgent实例是否相等，使用callback异步回调，以此来确定是否是来自同一应用的相同操作。
-当两个WantAgent实例由当前用户下的同一应用使用相同的WantAgentInfo信息创建，并且实例未被cancel取消，这两个实例相等。在通知（携带WantAgent实例）场景，通知更新时会比较2个通知中的
-WantAgent实例，不相等时会把旧通知的WantAgent实例删除。
+判断两个WantAgent实例是否相等，使用callback异步回调，以此来确定是否是来自同一应用的相同操作。 当两个WantAgent实例由当前用户下的同一应用使用相同的WantAgentInfo信息创建，并且实例未被cancel取消，这两个实例相等。在通知（携带WantAgent实例）场景，通知更新时会比较2个通知中的 WantAgent实例，不相等时会把旧通知的WantAgent实例删除。
 
 **起始版本：** 9
 
@@ -73,6 +71,7 @@ function getWantAgentCallback(err: BusinessError, data: WantAgent) {
   if (err) {
     console.error(`getWantAgent failed, code: ${JSON.stringify(err.code)}, message: ${JSON.stringify(err.message)}`);
   } else {
+    // 创建WantAgent成功，保存返回的WantAgent对象
     wantAgent1 = data;
     wantAgent2 = data;
   }
@@ -85,6 +84,7 @@ function getWantAgentCallback(err: BusinessError, data: WantAgent) {
     }
   }
   try {
+    // 调用equal接口判断两个WantAgent实例是否相等
     wantAgent.equal(wantAgent1, wantAgent2, equalCallback);
   } catch (err) {
     console.error(`equal failed! ${(err as BusinessError).code} ${(err as BusinessError).message}`);
@@ -92,6 +92,7 @@ function getWantAgentCallback(err: BusinessError, data: WantAgent) {
 }
 
 try {
+  // 调用getWantAgent接口创建WantAgent对象
   wantAgent.getWantAgent(wantAgentInfo, getWantAgentCallback);
 } catch (err) {
   console.error(`getWantAgent failed! ${(err as BusinessError).code} ${(err as BusinessError).message}`);
@@ -106,9 +107,7 @@ try {
 function equal(agent: WantAgent, otherAgent: WantAgent): Promise<boolean>
 ```
 
-判断两个WantAgent实例是否相等，使用Promise异步回调，以此来确定是否是来自同一应用的相同操作。
-当两个WantAgent实例由当前用户下的同一应用使用相同的WantAgentInfo信息创建，并且实例未被cancel取消，这两个实例相等。在通知（携带WantAgent实例）场景，通知更新时会比较2个通知中的
-WantAgent实例，不相等时会把旧通知的WantAgent实例删除。
+判断两个WantAgent实例是否相等，使用Promise异步回调，以此来确定是否是来自同一应用的相同操作。 当两个WantAgent实例由当前用户下的同一应用使用相同的WantAgentInfo信息创建，并且实例未被cancel取消，这两个实例相等。在通知（携带WantAgent实例）场景，通知更新时会比较2个通知中的 WantAgent实例，不相等时会把旧通知的WantAgent实例删除。
 
 **起始版本：** 9
 
@@ -178,21 +177,24 @@ function getWantAgentCallback(err: BusinessError, data: WantAgent) {
   if (err) {
     console.error(`getWantAgent failed, code: ${JSON.stringify(err.code)}, message: ${JSON.stringify(err.message)}`);
   } else {
+    // 创建WantAgent成功，保存返回的WantAgent对象
     wantAgent1 = data;
     wantAgent2 = data;
   }
   try {
+    // 使用Promise方式判断两个WantAgent实例是否相等
     wantAgent.equal(wantAgent1, wantAgent2).then((data) => {
       console.info(`equal ok! ${JSON.stringify(data)}`);
     }).catch((err: BusinessError) => {
-      console.error(`equal failed! ${err.code} ${err.message}`);
-    })
+    console.error(`equal failed! ${err.code} ${err.message}`);
+  });
   } catch (err) {
     console.error(`equal failed! ${(err as BusinessError).code} ${(err as BusinessError).message}`);
   }
 }
 
 try {
+  // 调用getWantAgent接口创建WantAgent对象
   wantAgent.getWantAgent(wantAgentInfo, getWantAgentCallback);
 } catch (err) {
   console.error(`getWantAgent failed! ${(err as BusinessError).code} ${(err as BusinessError).message}`);

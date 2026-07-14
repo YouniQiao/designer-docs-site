@@ -6,9 +6,7 @@
 function getEvent(node: FrameNode, nodeType: 'Scroll'): UIScrollEvent | undefined
 ```
 
-Obtains the **UIScrollEvent** object associated with the **Scroll** node for configuring scroll events. The scroll
-events configured through this API coexist with declarative events without overriding them. If both event callbacks
-are registered, the declaratively defined event callback takes precedence.
+Obtains the **UIScrollEvent** object associated with the **Scroll** node for configuring scroll events. The scroll events configured through this API coexist with declarative events without overriding them. If both event callbacks are registered, the declaratively defined event callback takes precedence.
 
 **Since:** 19
 
@@ -38,9 +36,7 @@ are registered, the declaratively defined event callback takes precedence.
 function getEvent(node: FrameNode, nodeType: 'List'): UIListEvent | undefined
 ```
 
-Obtains the **UIListEvent** object associated with the **List** node for configuring scroll events. The scroll
-events configured through this API coexist with declarative events without overriding them. If both event callbacks
-are registered, the declaratively defined event callback takes precedence.
+Obtains the **UIListEvent** object associated with the **List** node for configuring scroll events. The scroll events configured through this API coexist with declarative events without overriding them. If both event callbacks are registered, the declaratively defined event callback takes precedence.
 
 **Since:** 19
 
@@ -70,9 +66,7 @@ are registered, the declaratively defined event callback takes precedence.
 function getEvent(node: FrameNode, nodeType: 'WaterFlow'): UIWaterFlowEvent | undefined
 ```
 
-Obtains the **UIWaterFlowEvent** object associated with the [WaterFlow](arkts-arkui-waterflow-t.md) node for
-configuring scroll events. The scroll events configured through this API coexist with declarative events without
-overriding them. If both event callbacks are registered, the declaratively defined event callback takes precedence.
+Obtains the **UIWaterFlowEvent** object associated with the [WaterFlow](arkts-arkui-waterflow-t.md) node for configuring scroll events. The scroll events configured through this API coexist with declarative events without overriding them. If both event callbacks are registered, the declaratively defined event callback takes precedence.
 
 **Since:** 19
 
@@ -102,9 +96,7 @@ overriding them. If both event callbacks are registered, the declaratively defin
 function getEvent(node: FrameNode, nodeType: 'Grid'): UIGridEvent | undefined
 ```
 
-Obtains the **UIGridEvent** object associated with the **Grid** node for configuring scroll events. The scroll
-events configured through this API coexist with declarative events without overriding them. If both event callbacks
-are registered, the declaratively defined event callback takes precedence.
+Obtains the **UIGridEvent** object associated with the **Grid** node for configuring scroll events. The scroll events configured through this API coexist with declarative events without overriding them. If both event callbacks are registered, the declaratively defined event callback takes precedence.
 
 **Since:** 19
 

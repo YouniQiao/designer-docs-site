@@ -54,10 +54,7 @@ Pixel density, in ppi.
 isHdr: boolean
 ```
 
-Whether the image is an HDR image. The value **true** means an HDR image, and **false** means an SDR image. For
-[ImageSource](arkts-image-imagesource-i.md), this parameter specifies whether the source image is in HDR
-format. For [PixelMap](arkts-image-pixelmap-i.md), this parameter specifies whether the decoded PixelMap
-is in HDR format.
+Whether the image is an HDR image. The value **true** means an HDR image, and **false** means an SDR image. For [ImageSource](arkts-image-imagesource-i.md), this parameter specifies whether the source image is in HDR format. For [PixelMap](arkts-image-pixelmap-i.md), this parameter specifies whether the decoded PixelMap is in HDR format.
 
 **Type:** boolean
 
@@ -71,16 +68,7 @@ is in HDR format.
 mimeType: string
 ```
 
-Actual image format (MIME type).
-
-The supported formats for image decoding and image encoding are different. Do not directly use the actual image
-format obtained after decoding as the value of **format** in [PackingOption](arkts-image-packingoption-i.md) during
-image encoding.
-
-You can use the **supportedFormats** property of
-[ImageSource](@ohos.multimedia.image: image.ImageSource#supportedFormats) and
-[ImagePacker](@ohos.multimedia.image: image.ImagePacker#supportedFormats) to view the
-supported formats for decoding and encoding.
+Actual image format (MIME type). The supported formats for image decoding and image encoding are different. Do not directly use the actual image format obtained after decoding as the value of **format** in [PackingOption](arkts-image-packingoption-i.md) during image encoding. You can use the **supportedFormats** property of [ImageSource](@ohos.multimedia.image: image.ImageSource#supportedFormats) and [ImagePacker](@ohos.multimedia.image: image.ImagePacker#supportedFormats) to view the supported formats for decoding and encoding.
 
 **Type:** string
 
@@ -130,8 +118,7 @@ Image size.
 stride: number
 ```
 
-Number of bytes from one row of pixels in memory to the next row of pixels in memory.stride >= region.size.width*
-4
+Number of bytes from one row of pixels in memory to the next row of pixels in memory.stride >= region.size.width* 4
 
 **Type:** number
 

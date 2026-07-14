@@ -12,8 +12,7 @@ Specifies the power saving mode.
 EFFICIENCY_MODE = 1
 ```
 
-Efficiency mode. Applications set to this mode will not enter the power saving mode, where fewer CPU
-resources are available.
+Efficiency mode. Applications set to this mode will not enter the power saving mode, where fewer CPU resources are available.
 
 **Since:** 20
 

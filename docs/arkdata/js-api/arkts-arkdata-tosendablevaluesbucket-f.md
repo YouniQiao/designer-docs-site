@@ -12,8 +12,7 @@ import { sendableRelationalStore } from '@kit.ArkData';
 function toSendableValuesBucket(valuesBucket: NonSendableBucket): ValuesBucket
 ```
 
-Converts a key-value (KV) pair that cannot be passed across threads into the data that can be passed across
-threads.
+Converts a key-value (KV) pair that cannot be passed across threads into the data that can be passed across threads.
 
 **Since:** 12
 

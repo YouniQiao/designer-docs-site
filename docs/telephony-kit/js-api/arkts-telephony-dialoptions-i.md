@@ -18,8 +18,7 @@ import { call } from '@kit.TelephonyKit';
 extras?: boolean
 ```
 
-Indicates whether the call to be made is a video call. The value {@code false} indicates
-a voice call.
+Indicates whether the call to be made is a video call. The value {@code false} indicates a voice call.
 
 **Type:** boolean
 

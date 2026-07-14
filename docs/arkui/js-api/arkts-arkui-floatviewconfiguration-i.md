@@ -34,9 +34,7 @@ Context environment.
 isConfirmOnClose?: boolean
 ```
 
-This field controls whether user confirmation is required when the close button is clicked.
-**true** if clicking the close button requires user confirmation, otherwise no confirmation is needed.
-Default value: default value is false.
+This field controls whether user confirmation is required when the close button is clicked. **true** if clicking the close button requires user confirmation, otherwise no confirmation is needed. Default value: default value is false.
 
 **Type:** boolean
 

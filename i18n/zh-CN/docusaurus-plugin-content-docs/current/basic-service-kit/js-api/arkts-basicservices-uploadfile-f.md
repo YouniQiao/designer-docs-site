@@ -6,13 +6,7 @@
 function uploadFile(context: BaseContext, config: UploadConfig, callback: AsyncCallback<UploadTask>): void
 ```
 
-创建并启动一个上传任务，使用callback异步回调，支持HTTP协议。通过
-[on('complete'|'fail')](arkts-basicservices-uploadtask-i.md#on-3)
-可获取任务上传时的成功信息或错误信息。
-
-> **说明：**
->
-> 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
+创建并启动一个上传任务，使用callback异步回调，支持HTTP协议。通过 [on('complete'|'fail')](arkts-basicservices-uploadtask-i.md#on-3) 可获取任务上传时的成功信息或错误信息。 > **说明：** > > 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
 
 **起始版本：** 9
 
@@ -73,13 +67,7 @@ try {
 function uploadFile(context: BaseContext, config: UploadConfig): Promise<UploadTask>
 ```
 
-创建并启动一个上传任务，使用Promise异步回调，支持HTTP协议。通过
-[on('complete'|'fail')](arkts-basicservices-uploadtask-i.md#on-3)
-可获取任务上传时的成功信息或错误信息。
-
-> **说明：**
->
-> 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
+创建并启动一个上传任务，使用Promise异步回调，支持HTTP协议。通过 [on('complete'|'fail')](arkts-basicservices-uploadtask-i.md#on-3) 可获取任务上传时的成功信息或错误信息。 > **说明：** > > 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
 
 **起始版本：** 9
 

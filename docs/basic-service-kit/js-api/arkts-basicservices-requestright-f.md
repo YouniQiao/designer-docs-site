@@ -12,9 +12,7 @@ import { usbManager } from '@kit.BasicServicesKit';
 function requestRight(deviceName: string): Promise<boolean>
 ```
 
-Requests the temporary device access permission for the application. This API uses a promise to return the result.
-System applications are granted the device access permission by default, and you do not need to apply for the
-permission separately.
+Requests the temporary device access permission for the application. This API uses a promise to return the result. System applications are granted the device access permission by default, and you do not need to apply for the permission separately.
 
 **Since:** 9
 

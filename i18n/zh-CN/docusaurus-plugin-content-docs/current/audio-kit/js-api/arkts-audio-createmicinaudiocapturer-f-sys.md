@@ -6,10 +6,7 @@
 function createMicInAudioCapturer(config: AudioCapturerMicInConfig): Promise<AudioCapturer | null>
 ```
 
-获取一个特殊的{@link #AudioCapturer}实例。该方法使用promise返回录音实例。
-此捕获可用于记录Mic-In音频数据和回声参考信号，以便应用处理算法。
-Mic-In音频数据和回声参考信号将根据应用程序设置的配置被放入一个或多个缓冲。
-当应用程序处于后台时，不允许创建录音实例。
+获取一个特殊的{@link #AudioCapturer}实例。该方法使用promise返回录音实例。 此捕获可用于记录Mic-In音频数据和回声参考信号，以便应用处理算法。 Mic-In音频数据和回声参考信号将根据应用程序设置的配置被放入一个或多个缓冲。 当应用程序处于后台时，不允许创建录音实例。
 
 **起始版本：** 23
 

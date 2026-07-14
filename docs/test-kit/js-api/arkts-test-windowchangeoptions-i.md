@@ -1,7 +1,6 @@
 # WindowChangeOptions
 
-Describes the extended configuration of window change event listening,
-which is used to specify the listening process configuration and event filtering conditions.
+Describes the extended configuration of window change event listening, which is used to specify the listening process configuration and event filtering conditions.
 
 **Since:** 22
 
@@ -35,10 +34,7 @@ Bundle name of the window to be listened for. By default, all windows are listen
 timeout?: number
 ```
 
-Listening timeout interval, to prevent listening failures casued by event notification delay.
-<br>Value range: The value should be >= 500
-<br>Default value: 10000
-<br>Unit: ms
+Listening timeout interval, to prevent listening failures casued by event notification delay. <br>Value range: The value should be >= 500 <br>Default value: 10000 <br>Unit: ms
 
 **Type:** number
 

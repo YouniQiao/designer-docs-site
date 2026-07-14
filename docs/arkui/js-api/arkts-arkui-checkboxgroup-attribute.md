@@ -1,8 +1,6 @@
 # CheckboxGroup properties/events
 
-In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following attributes are supported.
-
-In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following events are supported.
+In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following attributes are supported. In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following events are supported.
 
 **Inheritance/Implementation:** CheckboxGroupAttribute extends [CommonMethod<CheckboxGroupAttribute>](CommonMethod<CheckboxGroupAttribute>)
 
@@ -40,9 +38,7 @@ Sets the check box shape of the check box group.
 checkboxShape(shape: Optional<CheckBoxShape>)
 ```
 
-Sets the check box shape of the check box group. Compared with
-[checkboxShape](CheckboxGroupAttribute#checkboxShape(value: CheckBoxShape))<sup>12+</sup>, this API supports
-the **undefined** type for the **shape** parameter.
+Sets the check box shape of the check box group. Compared with [checkboxShape](CheckboxGroupAttribute#checkboxShape(value: CheckBoxShape))<sup>12+</sup>, this API supports the **undefined** type for the **shape** parameter.
 
 **Since:** 18
 
@@ -66,12 +62,7 @@ the **undefined** type for the **shape** parameter.
 contentModifier(modifier: Optional<ContentModifier<CheckBoxGroupConfiguration>>)
 ```
 
-Customize the CheckboxGroup content area. When this attribute is set, the settings of other attributes become
-invalid.
-
-> **NOTE**
->
-> This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
+Customize the CheckboxGroup content area. When this attribute is set, the settings of other attributes become invalid. > **NOTE** > > This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 21
 
@@ -115,9 +106,7 @@ Sets the check mark style of the check box.
 mark(style: Optional<MarkStyle>)
 ```
 
-Sets the check mark style of the check box. Compared with
-[mark](CheckboxGroupAttribute#mark(value: MarkStyle))<sup>10+</sup>, this API supports the **undefined** type
-for the **style** parameter.
+Sets the check mark style of the check box. Compared with [mark](CheckboxGroupAttribute#mark(value: MarkStyle))<sup>10+</sup>, this API supports the **undefined** type for the **style** parameter.
 
 **Since:** 18
 
@@ -161,9 +150,7 @@ Triggered when the selected status of the check box group or any check box where
 onChange(callback: Optional<OnCheckboxGroupChangeCallback>)
 ```
 
-Triggered when the selected status of the check box group or any check box wherein changes. Compared with
-[onChange](CheckboxGroupAttribute#onChange(callback: OnCheckboxGroupChangeCallback)), this API supports the
-**undefined** type for the **callback** parameter.
+Triggered when the selected status of the check box group or any check box wherein changes. Compared with [onChange](CheckboxGroupAttribute#onChange(callback: OnCheckboxGroupChangeCallback)), this API supports the **undefined** type for the **callback** parameter.
 
 **Since:** 18
 
@@ -187,17 +174,7 @@ Triggered when the selected status of the check box group or any check box where
 selectAll(value: boolean)
 ```
 
-Sets whether to select all check boxes in the group. If the **select** attribute is set for a
-[Checkbox](arkts-arkui-checkbox.md) component in the same group, the setting of the **Checkbox** has a higher priority.
-
-When used with components that have caching functionality (such as [List](arkts-arkui-list.md)), the selection state of
-uncreated check boxes must be controlled by the developer.
-
-Since API version 10, this attribute supports two-way binding through
-[$$](../../../../ui/state-management/arkts-two-way-sync.md).
-
-Since API version 18, this attribute supports two-way binding through
-[!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
+Sets whether to select all check boxes in the group. If the **select** attribute is set for a [Checkbox](arkts-arkui-checkbox.md) component in the same group, the setting of the **Checkbox** has a higher priority. When used with components that have caching functionality (such as [List](arkts-arkui-list.md)), the selection state of uncreated check boxes must be controlled by the developer. Since API version 10, this attribute supports two-way binding through [$$](../../../../ui/state-management/arkts-two-way-sync.md). Since API version 18, this attribute supports two-way binding through [!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
 
 **Since:** 8
 
@@ -219,16 +196,7 @@ Since API version 18, this attribute supports two-way binding through
 selectAll(isAllSelected: Optional<boolean>)
 ```
 
-Sets whether to select all. If the **select** attribute is set for a [Checkbox](arkts-arkui-checkbox.md) component in the
-same group, the setting of the **Checkbox** has a higher priority. Compared with
-[selectAll](CheckboxGroupAttribute#selectAll(value: boolean)), this API supports the **undefined** type for
-the **isAllSelected** parameter.
-
-When used with components that have caching functionality (such as [List](arkts-arkui-list.md)), the selection state of
-uncreated check boxes must be controlled by the developer.
-
-This attribute supports two-way binding through [$$](../../../../ui/state-management/arkts-two-way-sync.md) and
-[!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
+Sets whether to select all. If the **select** attribute is set for a [Checkbox](arkts-arkui-checkbox.md) component in the same group, the setting of the **Checkbox** has a higher priority. Compared with [selectAll](CheckboxGroupAttribute#selectAll(value: boolean)), this API supports the **undefined** type for the **isAllSelected** parameter. When used with components that have caching functionality (such as [List](arkts-arkui-list.md)), the selection state of uncreated check boxes must be controlled by the developer. This attribute supports two-way binding through [$$](../../../../ui/state-management/arkts-two-way-sync.md) and [!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
 
 **Since:** 18
 
@@ -274,9 +242,7 @@ Sets the color of the selected check box.
 selectedColor(resColor: Optional<ResourceColor>)
 ```
 
-Sets the color of the selected check box. Compared with
-[selectedColor](CheckboxGroupAttribute#selectedColor(value: ResourceColor)), this API supports the
-**undefined** type for the **resColor** parameter.
+Sets the color of the selected check box. Compared with [selectedColor](CheckboxGroupAttribute#selectedColor(value: ResourceColor)), this API supports the **undefined** type for the **resColor** parameter.
 
 **Since:** 18
 
@@ -322,9 +288,7 @@ Sets the border color of the check box when it is not selected.
 unselectedColor(resColor: Optional<ResourceColor>)
 ```
 
-Sets the border color of the check box when it is not selected. Compared with
-[unselectedColor](CheckboxGroupAttribute#unselectedColor(value: ResourceColor))<sup>10+</sup>, this API
-supports the **undefined** type for the **resColor** parameter.
+Sets the border color of the check box when it is not selected. Compared with [unselectedColor](CheckboxGroupAttribute#unselectedColor(value: ResourceColor))<sup>10+</sup>, this API supports the **undefined** type for the **resColor** parameter.
 
 **Since:** 18
 

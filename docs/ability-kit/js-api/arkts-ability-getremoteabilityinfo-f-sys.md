@@ -12,8 +12,7 @@ import { distributedBundle } from '@kit.AbilityKit';
 function getRemoteAbilityInfo(elementName: ElementName, callback: AsyncCallback<RemoteAbilityInfo>): void
 ```
 
-Obtains the information about the remote ability that matches the given element name. This API uses an asynchronous
-callback to return the result.
+Obtains the information about the remote ability that matches the given element name. This API uses an asynchronous callback to return the result.
 
 **Since:** 8
 
@@ -41,8 +40,7 @@ callback to return the result.
 function getRemoteAbilityInfo(elementName: ElementName): Promise<RemoteAbilityInfo>
 ```
 
-Obtains the information about the remote ability that matches the given element name. This API uses a promise to
-return the result.
+Obtains the information about the remote ability that matches the given element name. This API uses a promise to return the result.
 
 **Since:** 8
 

@@ -18,8 +18,7 @@ import { ble } from '@kit.ConnectivityKit';
 irk?: Uint8Array
 ```
 
-Identity Resolving Key of BLE peripheral device.
-{@link ScanFilter#irk} needs to be used with {@link ScanFilter#address}.
+Identity Resolving Key of BLE peripheral device. {@link ScanFilter#irk} needs to be used with {@link ScanFilter#address}.
 
 **Type:** Uint8Array
 

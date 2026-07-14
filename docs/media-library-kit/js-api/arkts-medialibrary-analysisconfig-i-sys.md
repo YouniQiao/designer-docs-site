@@ -1,6 +1,6 @@
 # AnalysisConfig (System API)
 
-Asset analysis config.
+Defines the asset analysis configuration.
 
 **Since:** 24
 
@@ -20,8 +20,7 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 extraInfos?: string
 ```
 
-Extra info in JSON string format.
-<br>Length range:(0,500].
+Extended information in JSON string format. Length range: (0, 500].
 
 **Type:** string
 
@@ -39,7 +38,7 @@ Extra info in JSON string format.
 types: AnalysisType[]
 ```
 
-Array of analysis types, limited in size to the number of defined members in the AnalysisType enumeration.
+Array of intelligent analysis types. The maximum size of the array is the number of members defined by the [AnalysisType](arkts-medialibrary-analysistype-e-sys.md) enum.
 
 **Type:** AnalysisType[]
 
@@ -57,8 +56,7 @@ Array of analysis types, limited in size to the number of defined members in the
 uris: string[]
 ```
 
-Array of asset URIs.
-<br>Length range:[0, 100].
+Asset URI array. Length range: [0, 100].
 
 **Type:** string[]
 

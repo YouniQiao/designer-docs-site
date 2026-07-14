@@ -1,15 +1,6 @@
 # Lattice
 
-Lattice object. which is used to divide an image by lattice.
-
-> **NOTE**
->
-> - The initial APIs of this class are supported since API version 12.
->
-> - This module uses the physical pixel unit, px.
->
-> - This module operates under a single-threaded model. The caller needs to manage thread safety and context state
-> transitions.
+Lattice object. which is used to divide an image by lattice. > **NOTE** > > - The initial APIs of this class are supported since API version 12. > > - This module uses the physical pixel unit, px. > > - This module operates under a single-threaded model. The caller needs to manage thread safety and context state > transitions.
 
 **Since:** 12
 
@@ -28,10 +19,7 @@ static createImageLattice(xDivs: Array<number>, yDivs: Array<number>, fXCount: n
         fBounds?: common2D.Rect | null, fRectTypes?: Array<RectType> | null, fColors?: Array<common2D.Color> | null): Lattice
 ```
 
-Divides the image into lattices. The lattices on both even columns and even rows are fixed, and they are drawn at
-their original size if the target is large enough. If the target is too small to hold the fixed lattices, all the
-fixed lattices are scaled down to fit the target, and the lattices that are not on even columns and even rows are
-scaled to accommodate the remaining space.
+Divides the image into lattices. The lattices on both even columns and even rows are fixed, and they are drawn at their original size if the target is large enough. If the target is too small to hold the fixed lattices, all the fixed lattices are scaled down to fit the target, and the lattices that are not on even columns and even rows are scaled to accommodate the remaining space.
 
 **Since:** 12
 
@@ -68,10 +56,7 @@ static createImageLattice(xDivs: Array<number>, yDivs: Array<number>, fXCount: n
         fBounds?: common2D.Rect | null, fRectTypes?: Array<RectType> | null, fColors?: Array<number> | null): Lattice
 ```
 
-Divides the image into lattices. The lattices on both even columns and even rows are fixed, and they are drawn at
-their original size if the target is large enough. If the target is too small to hold the fixed lattices, all the
-fixed lattices are scaled down to fit the target, and the lattices that are not on even columns and even rows are
-scaled to accommodate the remaining space.
+Divides the image into lattices. The lattices on both even columns and even rows are fixed, and they are drawn at their original size if the target is large enough. If the target is too small to hold the fixed lattices, all the fixed lattices are scaled down to fit the target, and the lattices that are not on even columns and even rows are scaled to accommodate the remaining space.
 
 **Since:** 18
 

@@ -1,14 +1,6 @@
 # AudioRenderer
 
-This interface provides APIs for audio rendering.
-
-Before calling any API in AudioRenderer, you must use
-[createAudioRenderer](arkts-audio-createaudiorenderer-f.md#createaudiorenderer-1)
-to create an AudioRenderer instance.
-
-> **NOTE**
->
-> - The initial APIs of this interface are supported since API version 8.
+This interface provides APIs for audio rendering. Before calling any API in AudioRenderer, you must use [createAudioRenderer](arkts-audio-createaudiorenderer-f.md#createaudiorenderer-1) to create an AudioRenderer instance. > **NOTE** > > - The initial APIs of this interface are supported since API version 8.
 
 **Since:** 8
 
@@ -62,8 +54,7 @@ Drains the playback buffer. This API uses a promise to return the result.
 flush(): Promise<void>
 ```
 
-Flushes the buffer. This API is available when [AudioState](arkts-audio-audiostate-e.md) is
-**STATE_RUNNING**, **STATE_PAUSED**, or **STATE_STOPPED**. This API uses a promise to return the result.
+Flushes the buffer. This API is available when [AudioState](arkts-audio-audiostate-e.md) is **STATE_RUNNING**, **STATE_PAUSED**, or **STATE_STOPPED**. This API uses a promise to return the result.
 
 **Since:** 11
 
@@ -177,8 +168,7 @@ Obtains the stream ID of this audio renderer. This API returns the result synchr
 getAudioTime(callback: AsyncCallback<number>): void
 ```
 
-Obtains the timestamp of the current playback position, measured in nanoseconds from the Unix epoch (January 1, 1
-970). This API uses an asynchronous callback to return the result.
+Obtains the timestamp of the current playback position, measured in nanoseconds from the Unix epoch (January 1, 1 970). This API uses an asynchronous callback to return the result.
 
 **Since:** 8
 
@@ -196,8 +186,7 @@ Obtains the timestamp of the current playback position, measured in nanoseconds 
 getAudioTime(): Promise<number>
 ```
 
-Obtains the timestamp of the current playback position, measured in nanoseconds from the Unix epoch (January 1, 1
-970). This API uses a promise to return the result.
+Obtains the timestamp of the current playback position, measured in nanoseconds from the Unix epoch (January 1, 1 970). This API uses a promise to return the result.
 
 **Since:** 8
 
@@ -215,8 +204,7 @@ Obtains the timestamp of the current playback position, measured in nanoseconds 
 getAudioTimeSync(): number
 ```
 
-Obtains the timestamp of the current playback position, measured in nanoseconds from the Unix epoch (January 1, 1
-970). This API returns the result synchronously.
+Obtains the timestamp of the current playback position, measured in nanoseconds from the Unix epoch (January 1, 1 970). This API returns the result synchronously.
 
 **Since:** 10
 
@@ -234,19 +222,7 @@ Obtains the timestamp of the current playback position, measured in nanoseconds 
 getAudioTimestampInfo(): Promise<AudioTimestampInfo>
 ```
 
-Obtains the timestamp and position information of an output audio stream. It adapts to the speed adjustment
-interface. This API uses a promise to return the result.
-
-This information is commonly used for audio and video synchronization.
-
-Note that when the actual playback position (**framePosition**) is 0, the timestamp remains fixed until the
-stream begins to play. The playback position is also reset when **Flush** is called.
-
-Additionally, changes in the audio stream route, such as switching devices or output types, will reset the
-playback position, whereas the timestamp keeps increasing. You are advised to call this API to obtain the
-corresponding value only when the actual playback position and timestamp are stable. This API adapts to the speed
-adjustment interface. For example, if the playback speed is set to 2x, the rate at which the playback position
-increases is also twice the normal speed.
+Obtains the timestamp and position information of an output audio stream. It adapts to the speed adjustment interface. This API uses a promise to return the result. This information is commonly used for audio and video synchronization. Note that when the actual playback position (**framePosition**) is 0, the timestamp remains fixed until the stream begins to play. The playback position is also reset when **Flush** is called. Additionally, changes in the audio stream route, such as switching devices or output types, will reset the playback position, whereas the timestamp keeps increasing. You are advised to call this API to obtain the corresponding value only when the actual playback position and timestamp are stable. This API adapts to the speed adjustment interface. For example, if the playback speed is set to 2x, the rate at which the playback position increases is also twice the normal speed.
 
 **Since:** 19
 
@@ -270,19 +246,7 @@ increases is also twice the normal speed.
 getAudioTimestampInfoSync(): AudioTimestampInfo
 ```
 
-Obtains the timestamp and position information of an output audio stream. It adapts to the speed adjustment
-interface. This API returns the result synchronously.
-
-This information is commonly used for audio and video synchronization.
-
-Note that when the actual playback position (**framePosition**) is 0, the timestamp remains fixed until the
-stream begins to play. The playback position is also reset when **Flush** is called.
-
-Additionally, changes in the audio stream route, such as switching devices or output types, will reset the
-playback position, whereas the timestamp keeps increasing. You are advised to call this API to obtain the
-corresponding value only when the actual playback position and timestamp are stable. This API adapts to the speed
-adjustment interface. For example, if the playback speed is set to 2x, the rate at which the playback position
-increases is also twice the normal speed.
+Obtains the timestamp and position information of an output audio stream. It adapts to the speed adjustment interface. This API returns the result synchronously. This information is commonly used for audio and video synchronization. Note that when the actual playback position (**framePosition**) is 0, the timestamp remains fixed until the stream begins to play. The playback position is also reset when **Flush** is called. Additionally, changes in the audio stream route, such as switching devices or output types, will reset the playback position, whereas the timestamp keeps increasing. You are advised to call this API to obtain the corresponding value only when the actual playback position and timestamp are stable. This API adapts to the speed adjustment interface. For example, if the playback speed is set to 2x, the rate at which the playback position increases is also twice the normal speed.
 
 **Since:** 19
 
@@ -306,8 +270,7 @@ increases is also twice the normal speed.
 getBufferSize(callback: AsyncCallback<number>): void
 ```
 
-Obtains a reasonable minimum buffer size in bytes for rendering. This API uses an asynchronous callback to return
-the result.
+Obtains a reasonable minimum buffer size in bytes for rendering. This API uses an asynchronous callback to return the result.
 
 **Since:** 8
 
@@ -361,8 +324,7 @@ Obtains a reasonable minimum buffer size in bytes for rendering. This API return
 getCurrentOutputDevices(callback: AsyncCallback<AudioDeviceDescriptors>): void
 ```
 
-Obtains the output device information of the audio stream. This API uses an asynchronous callback to return the
-result.
+Obtains the output device information of the audio stream. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -416,18 +378,7 @@ Obtains the output device information of the audio stream. This API returns the 
 getLatency(type: AudioLatencyType): number
 ```
 
-Obtains the estimated latency of the current audio route.
-
-> **NOTE**
->
-> - The estimated latency of a wireless audio device may be inaccurate. The result is for reference only.
->
-> - Since the latency is not counted in the real-time buffer, you are advised to obtain the latency only when the
-> audio playback starts to avoid frequent calls. Otherwise, the API call may be blocked due to route switching.
->
-> - You are advised to use [getAudioTimestampInfo](arkts-audio-audiorenderer-i.md#getaudiotimestampinfo-1) or
-> [getAudioTimestampInfoSync](arkts-audio-audiorenderer-i.md#getaudiotimestampinfosync-1) to implement audio and video
-> synchronization after the audio is output to the hardware.
+Obtains the estimated latency of the current audio route. > **NOTE** > > - The estimated latency of a wireless audio device may be inaccurate. The result is for reference only. > > - Since the latency is not counted in the real-time buffer, you are advised to obtain the latency only when the > audio playback starts to avoid frequent calls. Otherwise, the API call may be blocked due to route switching. > > - You are advised to use [getAudioTimestampInfo](arkts-audio-audiorenderer-i.md#getaudiotimestampinfo-1) or > [getAudioTimestampInfoSync](arkts-audio-audiorenderer-i.md#getaudiotimestampinfosync-1) to implement audio and video > synchronization after the audio is output to the hardware.
 
 **Since:** 23
 
@@ -743,8 +694,7 @@ Obtains the playback speed.
 getStreamInfo(callback: AsyncCallback<AudioStreamInfo>): void
 ```
 
-Obtains the stream information of this audio renderer. This API uses an asynchronous callback to return the
-result.
+Obtains the stream information of this audio renderer. This API uses an asynchronous callback to return the result.
 
 **Since:** 8
 
@@ -798,8 +748,7 @@ Obtains the stream information of this audio renderer. This API returns the resu
 getUnderflowCount(callback: AsyncCallback<number>): void
 ```
 
-Obtains the number of underflow audio frames in the audio stream that is being played. This API uses an
-asynchronous callback to return the result.
+Obtains the number of underflow audio frames in the audio stream that is being played. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -817,8 +766,7 @@ asynchronous callback to return the result.
 getUnderflowCount(): Promise<number>
 ```
 
-Obtains the number of underflow audio frames in the audio stream that is being played. This API uses a promise to
-return the result.
+Obtains the number of underflow audio frames in the audio stream that is being played. This API uses a promise to return the result.
 
 **Since:** 10
 
@@ -836,8 +784,7 @@ return the result.
 getUnderflowCountSync(): number
 ```
 
-Obtains the number of underflow audio frames in the audio stream that is being played. This API returns the
-result synchronously.
+Obtains the number of underflow audio frames in the audio stream that is being played. This API returns the result synchronously.
 
 **Since:** 10
 
@@ -936,8 +883,7 @@ Unsubscribes from the period reached event. This API uses an asynchronous callba
 off(type: 'stateChange', callback?: Callback<AudioState>): void
 ```
 
-Unsubscribes from the audio renderer state change event. This API uses an asynchronous callback to return the
-result.
+Unsubscribes from the audio renderer state change event. This API uses an asynchronous callback to return the result.
 
 **Since:** 18
 
@@ -962,8 +908,7 @@ result.
 off(type: 'outputDeviceChange', callback?: Callback<AudioDeviceDescriptors>): void
 ```
 
-Unsubscribes from the audio output device change event. This API uses an asynchronous callback to return the
-result.
+Unsubscribes from the audio output device change event. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -989,8 +934,7 @@ result.
 off(type: 'outputDeviceChangeWithInfo', callback?: Callback<AudioStreamDeviceChangeInfo>): void
 ```
 
-Unsubscribes from the change event of audio output devices and reasons. This API uses an asynchronous callback to
-return the result.
+Unsubscribes from the change event of audio output devices and reasons. This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -1042,17 +986,7 @@ Unsubscribes from the audio data write event. This API uses an asynchronous call
 on(type: 'audioInterrupt', callback: Callback<InterruptEvent>): void
 ```
 
-Subscribes to the audio interruption event, which is triggered when the audio focus is changed. This API uses an
-asynchronous callback to return the result.
-
-The AudioRenderer instance proactively gains the focus when the **start** event occurs and releases the focus
-when the **pause** or **stop** event occurs. Therefore, you do not need to request to gain or release the focus.
-
-After this API is called, an [InterruptEvent](arkts-audio-interruptevent-i.md) is received when
-the AudioRenderer instance fails to obtain the focus or an audio interruption event occurs (for example, the
-audio stream is interrupted by others). It is recommended that the application perform further processing based
-on the **InterruptEvent** information. For details, see
-[Introduction to Audio Focus](../../../../media/audio/audio-playback-concurrency.md).
+Subscribes to the audio interruption event, which is triggered when the audio focus is changed. This API uses an asynchronous callback to return the result. The AudioRenderer instance proactively gains the focus when the **start** event occurs and releases the focus when the **pause** or **stop** event occurs. Therefore, you do not need to request to gain or release the focus. After this API is called, an [InterruptEvent](arkts-audio-interruptevent-i.md) is received when the AudioRenderer instance fails to obtain the focus or an audio interruption event occurs (for example, the audio stream is interrupted by others). It is recommended that the application perform further processing based on the **InterruptEvent** information. For details, see [Introduction to Audio Focus](../../../../media/audio/audio-playback-concurrency.md).
 
 **Since:** 9
 
@@ -1078,11 +1012,7 @@ on the **InterruptEvent** information. For details, see
 on(type: 'markReach', frame: number, callback: Callback<number>): void
 ```
 
-Subscribes to the mark reached event, which is triggered (only once) when the number of frames rendered reaches
-the value of the **frame** parameter. This API uses an asynchronous callback to return the result.
-
-For example, if **frame** is set to **100**, the callback is invoked when the number of rendered frames reaches
-the 100th frame.
+Subscribes to the mark reached event, which is triggered (only once) when the number of frames rendered reaches the value of the **frame** parameter. This API uses an asynchronous callback to return the result. For example, if **frame** is set to **100**, the callback is invoked when the number of rendered frames reaches the 100th frame.
 
 **Since:** 8
 
@@ -1102,12 +1032,7 @@ the 100th frame.
 on(type: 'periodReach', frame: number, callback: Callback<number>): void
 ```
 
-Subscribes to the period reached event, which is triggered each time the number of frames rendered reaches the
-value of the **frame** parameter. In other words, the information is reported periodically. This API uses an
-asynchronous callback to return the result.
-
-For example, if **frame** is set to **10**, the callback is invoked each time 10 frames are rendered, for example
-, when the number of frames rendered reaches the 10th frame, 20th frame, and 30th frame.
+Subscribes to the period reached event, which is triggered each time the number of frames rendered reaches the value of the **frame** parameter. In other words, the information is reported periodically. This API uses an asynchronous callback to return the result. For example, if **frame** is set to **10**, the callback is invoked each time 10 frames are rendered, for example , when the number of frames rendered reaches the 10th frame, 20th frame, and 30th frame.
 
 **Since:** 8
 
@@ -1127,8 +1052,7 @@ For example, if **frame** is set to **10**, the callback is invoked each time 10
 on(type: 'stateChange', callback: Callback<AudioState>): void
 ```
 
-Subscribes to the audio renderer state change event, which is triggered when the state of the audio renderer is
-changed. This API uses an asynchronous callback to return the result.
+Subscribes to the audio renderer state change event, which is triggered when the state of the audio renderer is changed. This API uses an asynchronous callback to return the result.
 
 **Since:** 8
 
@@ -1147,8 +1071,7 @@ changed. This API uses an asynchronous callback to return the result.
 on(type: 'outputDeviceChange', callback: Callback<AudioDeviceDescriptors>): void
 ```
 
-Subscribes to the audio output device change event, which is triggered when an audio output device is changed.
-This API uses an asynchronous callback to return the result.
+Subscribes to the audio output device change event, which is triggered when an audio output device is changed. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -1174,9 +1097,7 @@ This API uses an asynchronous callback to return the result.
 on(type: 'outputDeviceChangeWithInfo', callback: Callback<AudioStreamDeviceChangeInfo>): void
 ```
 
-Subscribes to the change event of audio output devices and reasons, which is triggered when an audio output
-device is changed, and the change reason is reported. This API uses an asynchronous callback to return the
-result.
+Subscribes to the change event of audio output devices and reasons, which is triggered when an audio output device is changed, and the change reason is reported. This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -1202,10 +1123,7 @@ result.
 on(type: 'writeData', callback: AudioRendererWriteDataCallback): void
 ```
 
-Subscribes to the audio data write event, which is triggered when audio data needs to be written. This API uses
-an asynchronous callback to return the result.
-
-The callback function is used only to write audio data. Do not call AudioRenderer APIs in it.
+Subscribes to the audio data write event, which is triggered when audio data needs to be written. This API uses an asynchronous callback to return the result. The callback function is used only to write audio data. Do not call AudioRenderer APIs in it.
 
 **Since:** 11
 
@@ -1386,10 +1304,7 @@ Sets the audio channel blending mode. This API returns the result synchronously.
 setDefaultOutputDevice(deviceType: DeviceType): Promise<void>
 ```
 
-Temporarily changes the current audio device
-This function applies on audiorenderers whose StreamUsage are
-STREAM_USAGE_VOICE_COMMUNICATION/STREAM_USAGE_VIDEO_COMMUNICATION/STREAM_USAGE_VOICE_MESSAGE.
-Setting the device will only takes effect if no other accessory such as headphones are in use
+Temporarily changes the current audio device This function applies on audiorenderers whose StreamUsage are STREAM_USAGE_VOICE_COMMUNICATION/STREAM_USAGE_VIDEO_COMMUNICATION/STREAM_USAGE_VOICE_MESSAGE. Setting the device will only takes effect if no other accessory such as headphones are in use
 
 **Since:** 12
 
@@ -1421,13 +1336,7 @@ Setting the device will only takes effect if no other accessory such as headphon
 setIndependentAudioSessionStrategy(strategy: AudioSessionStrategy, behavior: number): void
 ```
 
-Sets the independent audio session strategy and behavior parameters.
-
-> **NOTE**
->
-> If this API is called while an audio renderer is running, you must call the
-> [start](arkts-audio-audiorenderer-i.md#start-1) API again for
-> the settings to take effect.
+Sets the independent audio session strategy and behavior parameters. > **NOTE** > > If this API is called while an audio renderer is running, you must call the > [start](arkts-audio-audiorenderer-i.md#start-1) API again for > the settings to take effect.
 
 **Since:** 24
 
@@ -1455,8 +1364,7 @@ Sets the independent audio session strategy and behavior parameters.
 setInterruptMode(mode: InterruptMode, callback: AsyncCallback<void>): void
 ```
 
-Sets the audio interruption mode for the application. This API uses an asynchronous callback to return the
-result.
+Sets the audio interruption mode for the application. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -1524,10 +1432,7 @@ Sets the audio interruption mode for the application. This API returns the resul
 setLoudnessGain(loudnessGain: number): Promise<void>
 ```
 
-Sets the loudness gain of this stream. The default loudness gain is 0.0dB.
-The stream usage of the audio renderer must be {@link StreamUsage#STREAM_USAGE_MUSIC},
-{@link StreamUsage#STREAM_USAGE_MOVIE} or {@link StreamUsage#STREAM_USAGE_AUDIOBOOK}.
-After calling this interface, the adjustment of loundness gain will take effect immediately.
+Sets the loudness gain of this stream. The default loudness gain is 0.0dB. The stream usage of the audio renderer must be {@link StreamUsage#STREAM_USAGE_MUSIC}, {@link StreamUsage#STREAM_USAGE_MOVIE} or {@link StreamUsage#STREAM_USAGE_AUDIOBOOK}. After calling this interface, the adjustment of loundness gain will take effect immediately.
 
 **Since:** 20
 
@@ -1609,11 +1514,7 @@ Sets the render rate. This API uses a promise to return the result.
 setSilentModeAndMixWithOthers(on: boolean): void
 ```
 
-Sets the silent mode in concurrent playback for the audio stream.
-
-If the silent mode in concurrent playback is enabled, the system mutes the audio stream and does not interrupt
-other audio streams. If the silent mode in concurrent playback is disabled, the audio stream can gain focus based
-on the system focus strategy.
+Sets the silent mode in concurrent playback for the audio stream. If the silent mode in concurrent playback is enabled, the system mutes the audio stream and does not interrupt other audio streams. If the silent mode in concurrent playback is disabled, the audio stream can gain focus based on the system focus strategy.
 
 **Since:** 12
 

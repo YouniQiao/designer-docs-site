@@ -108,8 +108,7 @@ A drop animation is finished. (Triggered when the drop animation ends.)
 ACTION_CANCELED_BEFORE_DRAG = 6
 ```
 
-A drop animation is terminated. (Triggered when the finger is lifted off the screen after the component enters the
-**READY_TO_TRIGGER_DRAG_ACTION** state.)
+A drop animation is terminated. (Triggered when the finger is lifted off the screen after the component enters the **READY_TO_TRIGGER_DRAG_ACTION** state.)
 
 **Since:** 12
 

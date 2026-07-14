@@ -1,9 +1,6 @@
 # AttributeUpdater
 
-Represents the implementation class of AttributeModifier. You need to customize a class to inherit
-AttributeUpdater.
-C indicates the constructor type of the component, for example, TextInterface of the Text component and
-ImageInterface of the Image component. It is required only when updateConstructorParams is used.
+Represents the implementation class of AttributeModifier. You need to customize a class to inherit AttributeUpdater. C indicates the constructor type of the component, for example, TextInterface of the Text component and ImageInterface of the Image component. It is required only when updateConstructorParams is used.
 
 **Inheritance/Implementation:** AttributeUpdater implements [AttributeModifier<T>](AttributeModifier<T>)
 
@@ -83,8 +80,7 @@ Invoked to notify the application that the component bound to the same custom Mo
 get attribute(): T | undefined
 ```
 
-Obtains the attribute class instance corresponding to the component in AttributeUpdater.
-The instance can then be used to directly update attributes.
+Obtains the attribute class instance corresponding to the component in AttributeUpdater. The instance can then be used to directly update attributes.
 
 **Type:** T
 
@@ -102,9 +98,7 @@ The instance can then be used to directly update attributes.
 updateConstructorParams: C
 ```
 
-The type is used to change the constructor input parameters of the
-component.C indicates the constructor type of the component, for example, TextInterface of the Text component and
-ImageInterface of the Image component.
+The type is used to change the constructor input parameters of the component.C indicates the constructor type of the component, for example, TextInterface of the Text component and ImageInterface of the Image component.
 
 **Type:** C
 

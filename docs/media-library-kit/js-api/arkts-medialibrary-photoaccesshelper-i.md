@@ -20,11 +20,7 @@ import { sendablePhotoAccessHelper } from '@kit.MediaLibraryKit';
 createAsset(photoType: PhotoType, extension: string, options?: photoAccessHelper.CreateOptions): Promise<string>
 ```
 
-Creates an image or video asset with the specified file type, file name extension, and options.
-This API uses a promise to return the result.
-If the caller does not have the ohos.permission.WRITE_IMAGEVIDEO permission,
-you can create a media asset by using a security component.
-For details, see Creating a Media Asset Using a Security Component.
+Creates an image or video asset with the specified file type, file name extension, and options. This API uses a promise to return the result. If you do not have the **ohos.permission.WRITE_IMAGEVIDEO** permission, you can create a media asset by using a security component. For details, see [Saving Media Assets](../../../../media/medialibrary/photoAccessHelper-savebutton.md).
 
 **Since:** 12
 
@@ -38,22 +34,22 @@ For details, see Creating a Media Asset Using a Security Component.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| photoType | PhotoType | Yes | Type of the file to create, which can be IMAGE or VIDEO. |
-| extension | string | Yes | File name extension, for example, 'jpg'. The value contains 1 to 255 characters. |
-| options | photoAccessHelper.CreateOptions | No | Options for creating the media asset, for example, {title: 'testPhoto'}. |
+| photoType | PhotoType | Yes | Type of the file to create, which can be **IMAGE** or **VIDEO**. |
+| extension | string | Yes | File name extension, for example, **'jpg'**. The string length ranges from 1 to 255. |
+| options | photoAccessHelper.CreateOptions | No | Options for creating the media asset, for example, **{title: 'testPhoto'}**.<br>The file name must not contain any invalid characters.<br>Starting from API version 18, the following characters are considered invalid: \ / : * ? " &lt; &gt; \|<br>For API versions 10 to 17, the following characters are consideredinvalid: . .. \ / : * ? " ' ` &lt; &gt; \| { } [ ] |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;string&gt; | Returns the uri of the newly created asset |
+| Promise&lt;string&gt; | Promise used to return the URI of the created media asset. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | Internal system error |
 
 **Example**
@@ -87,7 +83,7 @@ async function example(phAccessHelper: sendablePhotoAccessHelper.PhotoAccessHelp
 getAlbums(options: photoAccessHelper.FetchOptions): Promise<FetchResult<Album>>
 ```
 
-Obtains albums. This API uses a promise to return the result.
+Obtains albums based on the specified options. This API uses a promise to return the result. Before the operation, ensure that the albums to obtain exist.
 
 **Since:** 12
 
@@ -99,20 +95,20 @@ Obtains albums. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| options | photoAccessHelper.FetchOptions | Yes | Options for fetching the albums. |
+| options | photoAccessHelper.FetchOptions | Yes | Retrieval options. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;FetchResult&lt;Album&gt;&gt; | - Returns the fetch result |
+| Promise&lt;FetchResult&lt;Album&gt;&gt; | Promise used to return the result. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | Internal system error |
 
 **Example**
@@ -158,7 +154,7 @@ getAlbums(
     ): Promise<FetchResult<Album>>
 ```
 
-Obtains albums based on the specified options and album type. This API uses a promise to return the result.
+Obtains albums based on the specified options and album type. This API uses a promise to return the result. Before the operation, ensure that the albums to obtain exist.
 
 **Since:** 12
 
@@ -170,22 +166,22 @@ Obtains albums based on the specified options and album type. This API uses a pr
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | AlbumType | Yes | Type of the albums to obtain. |
+| type | AlbumType | Yes | Album type. |
 | subtype | AlbumSubtype | Yes | Subtype of the album. |
-| options | photoAccessHelper.FetchOptions | No | Options for fetching the albums.If this parameter is not specified, the albums are obtained based on the album type by default. |
+| options | photoAccessHelper.FetchOptions | No | Retrieval options. If this parameter is not specified, the albums areobtained based on the album type by default. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;FetchResult&lt;Album&gt;&gt; | - Returns the fetch result |
+| Promise&lt;FetchResult&lt;Album&gt;&gt; | Promise used to return the result. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | Internal system error |
 
 **Example**
@@ -227,7 +223,7 @@ async function example(phAccessHelper: sendablePhotoAccessHelper.PhotoAccessHelp
 getAssets(options: photoAccessHelper.FetchOptions): Promise<FetchResult<PhotoAsset>>
 ```
 
-Obtains media assets. This API uses a promise to return the result.
+Obtains image and video assets. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -239,20 +235,20 @@ Obtains media assets. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| options | photoAccessHelper.FetchOptions | Yes | Options for fetching the media assets. |
+| options | photoAccessHelper.FetchOptions | Yes | Retrieval options. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;FetchResult&lt;PhotoAsset&gt;&gt; | Returns the fetch result. |
+| Promise&lt;FetchResult&lt;PhotoAsset&gt;&gt; | Promise used to return the media assets obtained. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | Internal system error |
 
 **Example**
@@ -292,7 +288,7 @@ async function example(phAccessHelper: sendablePhotoAccessHelper.PhotoAccessHelp
 getBurstAssets(burstKey: string, options: photoAccessHelper.FetchOptions): Promise<FetchResult<PhotoAsset>>
 ```
 
-Obtains burst assets. This API uses a promise to return the result.
+Obtains resources of burst photos. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -304,21 +300,21 @@ Obtains burst assets. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| burstKey | string | Yes | Burst asset options. |
-| options | photoAccessHelper.FetchOptions | Yes |  |
+| burstKey | string | Yes | Universally Unique Identifier (UUID) of a group of burst photos, that is,**BURST_KEY** of [PhotoKeys](arkts-medialibrary-photokeys-e.md). The stringcontains 36 bytes. |
+| options | photoAccessHelper.FetchOptions | Yes | Retrieval options. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;FetchResult&lt;PhotoAsset&gt;&gt; | Returns the fetch result. |
+| Promise&lt;FetchResult&lt;PhotoAsset&gt;&gt; | Promise used to return the result. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | Internal system error |
 
 **Example**
@@ -367,8 +363,7 @@ async function example(phAccessHelper: sendablePhotoAccessHelper.PhotoAccessHelp
 release(): Promise<void>
 ```
 
-Releases this PhotoAccessHelper instance. This API uses a promise to return the result.
-Call this API when the APIs of the PhotoAccessHelper instance are no longer used.
+Releases the **PhotoAccessHelper** instance. Call this method when the APIs of the **PhotoAccessHelper** instance are no longer used. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -378,7 +373,7 @@ Call this API when the APIs of the PhotoAccessHelper instance are no longer used
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Returns void |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

@@ -12,11 +12,7 @@ import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 function createMac(algName: string): Mac
 ```
 
-Creates a **Mac** instance for MAC operations.
-
-For details about the supported specifications, see
-[MAC Overview and Algorithm Specifications](../../../../security/CryptoArchitectureKit/crypto-compute-mac-overview.md)
-.
+Creates a **Mac** instance for MAC operations. For details about the supported specifications, see [MAC Overview and Algorithm Specifications](../../../../security/CryptoArchitectureKit/crypto-compute-mac-overview.md) .
 
 **Since:** 9
 
@@ -68,11 +64,7 @@ try {
 function createMac(macSpec: MacSpec): Mac
 ```
 
-Creates a **Mac** instance for message authentication code (MAC) operations.
-
-For details about the supported specifications, see
-[MAC Overview and Algorithm Specifications](../../../../security/CryptoArchitectureKit/crypto-compute-mac-overview.md)
-.
+Creates a **Mac** instance for message authentication code (MAC) operations. For details about the supported specifications, see [MAC Overview and Algorithm Specifications](../../../../security/CryptoArchitectureKit/crypto-compute-mac-overview.md) .
 
 **Since:** 18
 

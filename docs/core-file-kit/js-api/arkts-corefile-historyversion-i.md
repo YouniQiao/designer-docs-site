@@ -1,8 +1,6 @@
 # HistoryVersion
 
-Represents the historical version information of the device-cloud file when the
-[gethistoryversionlist](arkts-corefile-fileversion-c.md#gethistoryversionlist-1) method of the
-[FileVersion](arkts-corefile-fileversion-c.md) class is called.
+Represents the historical version information of the device-cloud file when the [gethistoryversionlist](arkts-corefile-fileversion-c.md#gethistoryversionlist-1) method of the [FileVersion](arkts-corefile-fileversion-c.md) class is called.
 
 **Since:** 20
 
@@ -20,14 +18,7 @@ import { cloudSync } from '@kit.CoreFileKit';
 autoResolved: boolean
 ```
 
-Whether the current version is the one where conflicts were automatically resolved.
-
-When the application is set to manually resolve conflicts, **false** is returned by default, which is
-meaningless.
-
-When the application is set to automatically resolve conflicts, the device side automatically resolves conflicts.
-The value **true** means conflicts exist in the current version and have been automatically resolved by the
-device-cloud service; the value **false** means no conflict exists and conflicts are not automatically resolved.
+Whether the current version is the one where conflicts were automatically resolved. When the application is set to manually resolve conflicts, **false** is returned by default, which is meaningless. When the application is set to automatically resolve conflicts, the device side automatically resolves conflicts. The value **true** means conflicts exist in the current version and have been automatically resolved by the device-cloud service; the value **false** means no conflict exists and conflicts are not automatically resolved.
 
 **Type:** boolean
 

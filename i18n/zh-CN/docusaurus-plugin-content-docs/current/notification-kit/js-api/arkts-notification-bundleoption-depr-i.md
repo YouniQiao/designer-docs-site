@@ -1,8 +1,6 @@
 # BundleOption
 
-> **说明：**
-> > 从 API version 7开始支持，从API version 9开始废弃。建议使用
-> [notificationManager.BundleOption](arkts-notification-bundleoption-i.md)替代。
+> **说明：** > > 从 API version 7开始支持，从API version 9开始废弃。建议使用 > [notificationManager.BundleOption](arkts-notification-bundleoption-i.md)替代。
 
 **起始版本：** 7
 

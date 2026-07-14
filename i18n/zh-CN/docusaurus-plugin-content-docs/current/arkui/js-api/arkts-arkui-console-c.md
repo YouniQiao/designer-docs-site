@@ -39,8 +39,7 @@ Prints a message if value is false or omitted.
 static count(label?: string): void
 ```
 
-Maintains an internal counter specific to label and print the number of times
-console.count() has been called with the given label.
+Maintains an internal counter specific to label and print the number of times console.count() has been called with the given label.
 
 **起始版本：** 10
 
@@ -135,8 +134,7 @@ Prints properties of the specified JavaScript object.
 static dirxml(...arguments: Object[]): void
 ```
 
-This method calls console.log() passing it the arguments received.
-This method does not produce any XML formatting.
+This method calls console.log() passing it the arguments received. This method does not produce any XML formatting.
 
 **起始版本：** 10
 

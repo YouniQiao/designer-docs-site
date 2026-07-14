@@ -14,9 +14,7 @@
 isExistNewVersion: boolean
 ```
 
-是否有新版本。
-
-true表示有新版本，false表示没有新版本。
+是否有新版本。 true表示有新版本，false表示没有新版本。
 
 **类型：** boolean
 

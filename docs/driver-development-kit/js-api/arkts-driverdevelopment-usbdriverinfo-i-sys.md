@@ -1,7 +1,6 @@
 # USBDriverInfo (System API)
 
-Defines detailed information about the USB device driver. It is inherited from
-[DriverInfo](arkts-driverdevelopment-driverinfo-i-sys.md).
+Defines detailed information about the USB device driver. It is inherited from [DriverInfo](arkts-driverdevelopment-driverinfo-i-sys.md).
 
 **Inheritance/Implementation:** USBDriverInfo extends [DriverInfo](arkts-driverdevelopment-driverinfo-i-sys.md)
 

@@ -1,8 +1,6 @@
 # ToneHapticsAttrs（系统接口）
 
-系统铃音的振动属性。在调用ToneHapticsAttrs<sup>14+</sup>的接口前，需要先通过
-[getToneHapticsList](arkts-audio-systemsoundmanager-i-sys.md#gettonehapticslist-1)或
-[getHapticsAttrsSyncedWithTone](arkts-audio-systemsoundmanager-i-sys.md#gethapticsattrssyncedwithtone-1)方法获取实例。
+系统铃音的振动属性。在调用ToneHapticsAttrs<sup>14+</sup>的接口前，需要先通过 [getToneHapticsList](arkts-audio-systemsoundmanager-i-sys.md#gettonehapticslist-1)或 [getHapticsAttrsSyncedWithTone](arkts-audio-systemsoundmanager-i-sys.md#gethapticsattrssyncedwithtone-1)方法获取实例。
 
 **起始版本：** 14
 

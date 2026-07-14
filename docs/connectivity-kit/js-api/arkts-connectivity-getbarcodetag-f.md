@@ -12,9 +12,7 @@ import { tag } from '@kit.ConnectivityKit';
 function getBarcodeTag(tagInfo: TagInfo): BarcodeTag
 ```
 
-Obtains an {@link BarcodeTag} object based on the tag information.
-During tag reading, if the tag supports the NfcBarcode technology,
-an {@link BarcodeTag} object will be created.
+Obtains an {@link BarcodeTag} object based on the tag information. During tag reading, if the tag supports the NfcBarcode technology, an {@link BarcodeTag} object will be created.
 
 **Since:** 18
 

@@ -6,9 +6,7 @@
 function onConnectionStateChanged(callback: Callback<ConnectionResult>): void
 ```
 
-订阅连接状态变化事件。
-
-只有授予了ohos.permission.NEARLINK_ACCESS权限的应用程序才能访问此事件。
+订阅连接状态变化事件。 只有授予了ohos.permission.NEARLINK_ACCESS权限的应用程序才能访问此事件。
 
 **起始版本：** 26.0.0
 

@@ -1,7 +1,6 @@
 # Video
 
-Represents video data. It is a child class of [File](arkts-arkdata-file-c.md) and is used to describe a video
-file.
+Represents video data. It is a child class of [File](arkts-arkdata-file-c.md) and is used to describe a video file.
 
 **Inheritance/Implementation:** Video extends [File](arkts-arkdata-file-c.md)
 

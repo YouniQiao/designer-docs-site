@@ -12,11 +12,7 @@ import { userAuth } from '@kit.UserAuthenticationKit';
 function getAuthInstance(challenge: Uint8Array, authType: UserAuthType, authTrustLevel: AuthTrustLevel): AuthInstance
 ```
 
-Obtains an **AuthInstance** instance for user authentication.
-
-> **NOTE**
-
-> An **AuthInstance** instance can be used for authentication only once.
+Obtains an **AuthInstance** instance for user authentication. > **NOTE** > An **AuthInstance** instance can be used for authentication only once.
 
 **Since:** 9
 

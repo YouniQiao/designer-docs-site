@@ -1,14 +1,6 @@
 # ChipItemStyle
 
-Defines the common attributes shared by all chips.
-
-> **NOTE**
->
-> 1. The size settings for chips can be of two types: (1) **ChipSize**, which conveniently offers two size options,
-> **NORMAL** and **SMALL**; (2) **SizeOptions**.
->
-> 2. If **backgroundColor** or **selectedBackgroundColor** is set to **undefined**, the default background color is
-> used. If an invalid value is provided, the background color is transparent.
+Defines the common attributes shared by all chips. > **NOTE** > > 1. The size settings for chips can be of two types: (1) **ChipSize**, which conveniently offers two size options, > **NORMAL** and **SMALL**; (2) **SizeOptions**. > > 2. If **backgroundColor** or **selectedBackgroundColor** is set to **undefined**, the default background color is > used. If an invalid value is provided, the background color is transparent.
 
 **Since:** 12
 
@@ -26,11 +18,7 @@ import { ChipItemLabelOptions, ChipGroupSpaceOptions, SymbolItemOptions, SuffixI
 backgroundColor?: ResourceColor
 ```
 
-Chip background color.
-
-Default value: **$r('sys.color.ohos_id_color_button_normal')**
-
-If this parameter is set to **undefined**, the default value is used.
+Chip background color. Default value: **$r('sys.color.ohos_id_color_button_normal')** If this parameter is set to **undefined**, the default value is used.
 
 **Type:** ResourceColor
 
@@ -48,11 +36,7 @@ If this parameter is set to **undefined**, the default value is used.
 fontColor?: ResourceColor
 ```
 
-Chip text color.
-
-Default value: **$r('sys.color.ohos_id_color_text_primary')**
-
-If this parameter is set to **undefined**, the default value is used.
+Chip text color. Default value: **$r('sys.color.ohos_id_color_text_primary')** If this parameter is set to **undefined**, the default value is used.
 
 **Type:** ResourceColor
 
@@ -70,11 +54,7 @@ If this parameter is set to **undefined**, the default value is used.
 selectedBackgroundColor?: ResourceColor
 ```
 
-Background color of the chip when it is activated.
-
-Default value: **$r('sys.color.ohos_id_color_emphasize')**
-
-If this parameter is set to **undefined**, the default value is used.
+Background color of the chip when it is activated. Default value: **$r('sys.color.ohos_id_color_emphasize')** If this parameter is set to **undefined**, the default value is used.
 
 **Type:** ResourceColor
 
@@ -92,11 +72,7 @@ If this parameter is set to **undefined**, the default value is used.
 selectedFontColor?: ResourceColor
 ```
 
-Text color of the chip when it is activated.
-
-Default value: **$r('sys.color.ohos_id_color_text_primary_contrary')**
-
-If this parameter is set to **undefined**, the default value is used.
+Text color of the chip when it is activated. Default value: **$r('sys.color.ohos_id_color_text_primary_contrary')** If this parameter is set to **undefined**, the default value is used.
 
 **Type:** ResourceColor
 
@@ -114,11 +90,7 @@ If this parameter is set to **undefined**, the default value is used.
 size?: ChipSize | SizeOptions
 ```
 
-Chip size. The ChipSize type needs to be imported from the Chip component.
-
-Default value: **ChipSize.NORMAL** or **{ height: 0, width: 0 }**
-
-If the value is **undefined**, the default value is used.
+Chip size. The ChipSize type needs to be imported from the Chip component. Default value: **ChipSize.NORMAL** or **{ height: 0, width: 0 }** If the value is **undefined**, the default value is used.
 
 **Type:** ChipSize | SizeOptions
 

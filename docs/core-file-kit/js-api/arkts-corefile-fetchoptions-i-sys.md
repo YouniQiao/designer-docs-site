@@ -1,6 +1,6 @@
 # FetchOptions (System API)
 
-Fetch parameters
+Defines the options for fetching file attributes.
 
 **Since:** 9
 
@@ -24,7 +24,7 @@ import { userFileManager } from '@kit.CoreFileKit';
 fetchColumns: Array<string>
 ```
 
-Indicates the columns to query.
+Options for fetching files based on the attributes in columns. If this parameter is left empty, files are fetched by URI, name, and type (the specific field names vary with the file asset or album object) by default. In addition, an error will be reported if [get](arkts-corefile-userfilemanager-i-sys.md#getphotoassets-1) is called to obtain other attributes of this object. Example: fetchColumns: ['uri', 'title']
 
 **Type:** Array<string>
 
@@ -44,7 +44,7 @@ Indicates the columns to query.
 predicates: dataSharePredicates.DataSharePredicates
 ```
 
-Predicate to query
+Predicates that specify the fetch criteria.
 
 **Type:** dataSharePredicates.DataSharePredicates
 

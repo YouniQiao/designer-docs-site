@@ -1,6 +1,6 @@
 # NotificationButton
 
-Describes the notification button.
+Describes the notification button, which is used to display an interactive button in the live view. > **NOTE** > > The actual display effect depends on the device capabilities and the notification center UI style.
 
 **Since:** 11
 
@@ -12,7 +12,7 @@ Describes the notification button.
 icons?: Array<image.PixelMap>
 ```
 
-Button icons. A maximum of three icons are supported.
+List of button icons, corresponding one-to-one with **names**, with each icon displayed on its corresponding button. A maximum of 3 icons is supported. The total bytes of icon pixels does not exceed 192 KB (the total bytes of icon pixels is obtained through getPixelBytesNumber). It is recommended that the icon pixel dimensions be 128 x 128. The value defaults to empty. This parameter is mutually exclusive with **iconsResource**; only one of them can be used.
 
 **Type:** Array<image.PixelMap>
 
@@ -26,7 +26,7 @@ Button icons. A maximum of three icons are supported.
 iconsResource?: Array<Resource>
 ```
 
-Button icon resources. A maximum of three icon resources are supported.
+List of button icon resources, corresponding one-to-one with **names** via Resource references. A maximum of 3 resources is supported. The value defaults to empty. This parameter is mutually exclusive with **icons**; only one of them can be used.
 
 **Type:** Array<Resource>
 
@@ -40,7 +40,7 @@ Button icon resources. A maximum of three icon resources are supported.
 names?: Array<string>
 ```
 
-Button names. A maximum of three names are supported.
+List of button names. Each name corresponds to the text displayed on a notification button. A maximum of 3 buttons is supported. The size of each name does not exceed 202 bytes, and the excess part will be truncated. The value defaults to empty.
 
 **Type:** Array<string>
 

@@ -6,8 +6,7 @@
 function partition(diskId: string, type: number, callback: AsyncCallback<void>): void
 ```
 
-对磁盘进行分区，使用callback异步回调。当前仅支持将磁盘设备重新分区为一个分区，系统是支持读取多分区的磁盘设备。
-不支持对光盘进行分区。
+对磁盘进行分区，使用callback异步回调。当前仅支持将磁盘设备重新分区为一个分区，系统是支持读取多分区的磁盘设备。 不支持对光盘进行分区。
 
 **起始版本：** 9
 
@@ -43,8 +42,7 @@ function partition(diskId: string, type: number, callback: AsyncCallback<void>):
 function partition(diskId: string, type: number): Promise<void>
 ```
 
-对磁盘设备进行分区，使用Promise异步回调。当前仅支持将磁盘设备重新分区为一个分区，系统是支持读取多分区的磁盘设备。
-不支持对光盘进行分区。
+对磁盘设备进行分区，使用Promise异步回调。当前仅支持将磁盘设备重新分区为一个分区，系统是支持读取多分区的磁盘设备。 不支持对光盘进行分区。
 
 **起始版本：** 9
 

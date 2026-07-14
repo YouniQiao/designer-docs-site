@@ -12,8 +12,7 @@ import { media } from '@kit.MediaKit';
 function createMediaSourceWithStreamData(streams: Array<MediaStream>): MediaSource
 ```
 
-Creates a multi-bitrate media source for streaming media. Currently, only the HTTP-FLV multi-bitrate media source
-is supported.
+Creates a multi-bitrate media source for streaming media. Currently, only the HTTP-FLV multi-bitrate media source is supported.
 
 **Since:** 19
 

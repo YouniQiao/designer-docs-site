@@ -12,21 +12,7 @@ import { systemManager } from '@kit.MDMKit';
 function setInstallLocalEnterpriseAppEnabledForAccount(admin: Want, isEnable: boolean, accountId: number): void
 ```
 
-Sets whether local installation of enterprise applications is supported for a specified user. After the policy of
-supporting local enterprise application installation is delivered to a PC/2-in-1 enterprise device that has the
-local installation capability, the user can double-click an enterprise application installation package on the
-desktop or in the Files application to install it.
-
-Only enterprise applications signed with the **enterprise_normal** or **enterprise_mdm** signature type are
-supported.
-
-> **NOTE**
->
-> A PC/2-in-1 enterprise device supports local installation of enterprise applications for the current user if any
-> of the following conditions is met:
->
-
-<!--RP7--><!--RP7End-->
+Sets whether local installation of enterprise applications is supported for a specified user. After the policy of supporting local enterprise application installation is delivered to a PC/2-in-1 enterprise device that has the local installation capability, the user can double-click an enterprise application installation package on the desktop or in the Files application to install it. Only enterprise applications signed with the **enterprise_normal** or **enterprise_mdm** signature type are supported. > **NOTE** > > A PC/2-in-1 enterprise device supports local installation of enterprise applications for the current user if any > of the following conditions is met: > <!--RP7--><!--RP7End-->
 
 **Since:** 24
 

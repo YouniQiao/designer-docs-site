@@ -14,8 +14,7 @@
 closeEffect(value: boolean)
 ```
 
-设置是否关闭数据占比图表旋转动效和投影效果。若未设置[trackShadow](DataPanelAttribute#trackShadow)属性，则由该属性控制投影效果的开关，开启投影的效果为投影的默认效果。若设置了
-trackShadow属性，则由trackShadow属性值控制投影效果的开关。
+设置是否关闭数据占比图表旋转动效和投影效果。若未设置[trackShadow](DataPanelAttribute#trackShadow)属性，则由该属性控制投影效果的开关，开启投影的效果为投影的默认效果。若设置了 trackShadow属性，则由trackShadow属性值控制投影效果的开关。
 
 **起始版本：** 7
 

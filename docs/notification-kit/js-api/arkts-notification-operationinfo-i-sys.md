@@ -20,8 +20,7 @@ import { notificationSubscribe } from '@kit.NotificationKit';
 actionName?: string
 ```
 
-Operation button displayed in the notification. The value must be the same as that of **title** in
-[NotificationActionButton](arkts-notification-notificationactionbutton-i.md).
+Operation button displayed in the notification. The value must be the same as that of **title** in [NotificationActionButton](arkts-notification-notificationactionbutton-i.md).
 
 **Type:** string
 
@@ -53,12 +52,7 @@ Index of the non-live view button or live view auxiliary area that the user taps
 operationType?: number
 ```
 
-Operation type.
-
-- **0**: The user taps the non-live view.
-- **1**: The user taps the non-live view button.
-- **32**: The user taps the live view.
-- **33**: The user taps the live view auxiliary area.
+Operation type. - **0**: The user taps the non-live view. - **1**: The user taps the non-live view button. - **32**: The user taps the live view. - **33**: The user taps the live view auxiliary area.
 
 **Type:** number
 
@@ -74,8 +68,7 @@ Operation type.
 userInput?: string
 ```
 
-User input, used to apply quick reply across devices. The value must be the same as that of **inputKey** in
-[NotificationUserInput](arkts-notification-notificationuserinput-i.md).
+User input, used to apply quick reply across devices. The value must be the same as that of **inputKey** in [NotificationUserInput](arkts-notification-notificationuserinput-i.md).
 
 **Type:** string
 

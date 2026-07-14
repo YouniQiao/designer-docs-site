@@ -28,13 +28,7 @@ level: AntiAliasingLevel
 maxSize: Size
 ```
 
-最大编码尺寸。
-
-当指定的width或者height大于0时，原图尺寸超过限制将保持原宽高比进行缩放，确保图像尺寸不超过该边界。
-
-默认值为{width: 0, height: 0}，表示不限制编码尺寸。
-
-单位：像素（px）。
+最大编码尺寸。 当指定的width或者height大于0时，原图尺寸超过限制将保持原宽高比进行缩放，确保图像尺寸不超过该边界。 默认值为{width: 0, height: 0}，表示不限制编码尺寸。 单位：像素（px）。
 
 **类型：** Size
 

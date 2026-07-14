@@ -6,11 +6,7 @@
 declare function moveDirSync(src: string, dest: string, mode?: number): void
 ```
 
-以同步方法移动源目录至目标路径下。
-
-> **说明：**
->
-> 该接口不支持在分布式文件路径下操作。
+以同步方法移动源目录至目标路径下。 > **说明：** > > 该接口不支持在分布式文件路径下操作。
 
 **起始版本：** 10
 

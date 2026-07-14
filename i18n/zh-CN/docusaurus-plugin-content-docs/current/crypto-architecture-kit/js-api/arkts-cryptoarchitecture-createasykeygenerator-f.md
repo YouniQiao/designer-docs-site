@@ -6,10 +6,7 @@
 function createAsyKeyGenerator(algName: string): AsyKeyGenerator
 ```
 
-通过指定算法名称的字符串，获取相应的非对称密钥生成器实例。
-
-支持的规格详见
-[非对称密钥生成和转换规格](../../../../security/CryptoArchitectureKit/crypto-asym-key-generation-conversion-spec.md)。
+通过指定算法名称的字符串，获取相应的非对称密钥生成器实例。 支持的规格详见 [非对称密钥生成和转换规格](../../../../security/CryptoArchitectureKit/crypto-asym-key-generation-conversion-spec.md)。
 
 **起始版本：** 9
 

@@ -14,9 +14,7 @@ Defines the TextPickerDialogOptionsExt for Text Picker Dialog.
 distortionMode?: DistortionMode
 ```
 
-Sets the distortion animation mode for the dialog.
-
-Default Value: DistortionMode.DISTORTION_AUTO
+Sets the distortion animation mode for the dialog. Default Value: DistortionMode.DISTORTION_AUTO
 
 **Type:** DistortionMode
 
@@ -36,9 +34,7 @@ Default Value: DistortionMode.DISTORTION_AUTO
 edgeLightMode?: EdgeLightMode
 ```
 
-Sets the edge light animation mode for the dialog.
-
-Default Value: EdgeLightMode.EDGELIGHT_AUTO
+Sets the edge light animation mode for the dialog. Default Value: EdgeLightMode.EDGELIGHT_AUTO
 
 **Type:** EdgeLightMode
 

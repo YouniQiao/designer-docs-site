@@ -12,8 +12,7 @@ Provides detailed information about the same-layer tag.
 height?: number
 ```
 
-The embed tag height.
-<br>Unit:px.
+The embed tag height. <br>Unit:px.
 
 **Type:** number
 
@@ -45,8 +44,7 @@ ID of the same-layer tag.
 params?: Map<string, string>
 ```
 
-List of key-value pairs contained in the **object** tag that form a map of the Object type. Use the methods
-provided by the Object type, such as **embed.info?.param?.["name"]** to operate the map object.
+List of key-value pairs contained in the **object** tag that form a map of the Object type. Use the methods provided by the Object type, such as **embed.info?.param?.["name"]** to operate the map object.
 
 **Type:** Map<string, string>
 
@@ -62,9 +60,7 @@ provided by the Object type, such as **embed.info?.param?.["name"]** to operate 
 position?: Position
 ```
 
-Position of the same-layer tag relative to the upper left corner of the **Web** component as the coordinate origin,
-This position is different from the standard position.
-<br>Unit: pixels.
+Position of the same-layer tag relative to the upper left corner of the **Web** component as the coordinate origin, This position is different from the standard position. <br>Unit: pixels.
 
 **Type:** Position
 
@@ -144,8 +140,7 @@ URL of the same-layer tag.
 width?: number
 ```
 
-The embed tag width.
-<br>Unit:px.
+The embed tag width. <br>Unit:px.
 
 **Type:** number
 

@@ -40,8 +40,7 @@ Cancel this request.
 handleCancel(abortLoading: boolean): void
 ```
 
-ArkWeb has encountered an SSL certificate error, and this interface indicates whether to terminate or
-continue displaying the error to users.
+ArkWeb has encountered an SSL certificate error, and this interface indicates whether to terminate or continue displaying the error to users.
 
 **Since:** 20
 

@@ -2,7 +2,6 @@
 
 Provides a sliding panel interface.
 
-
 ## Panel
 
 ```TypeScript

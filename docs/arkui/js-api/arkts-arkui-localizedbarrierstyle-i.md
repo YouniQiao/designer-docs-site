@@ -30,12 +30,7 @@ ID of the barrier, which must be unique and cannot be the same as the name of an
 localizedDirection : LocalizedBarrierDirection
 ```
 
-Direction of the barrier.
-
-Vertical-direction barriers (including **TOP** and **BOTTOM**) can only serve as the horizontal anchor of a
-component. If they are used as a vertical anchor, the anchor value will be **0**. Horizontal-direction barriers (
-including **START** and **END**) can only serve as the vertical anchor of a component. If they are used as a
-horizontal anchor, the anchor value will be **0**.
+Direction of the barrier. Vertical-direction barriers (including **TOP** and **BOTTOM**) can only serve as the horizontal anchor of a component. If they are used as a vertical anchor, the anchor value will be **0**. Horizontal-direction barriers ( including **START** and **END**) can only serve as the vertical anchor of a component. If they are used as a horizontal anchor, the anchor value will be **0**.
 
 **Type:** LocalizedBarrierDirection
 

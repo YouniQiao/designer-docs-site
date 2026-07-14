@@ -6,11 +6,7 @@
 function closePipe(pipe: USBDevicePipe): number
 ```
 
-关闭设备消息控制通道。
-
-1. 需要调用[usbManager.getDevices](arkts-basicservices-getdevices-f.md#getdevices-1)获取设备列表；
-2. 调用[usbManager.requestRight](arkts-basicservices-requestright-f.md#requestright-1)获取设备请求权限；
-3. 调用[usbManager.connectDevice](arkts-basicservices-connectdevice-f.md#connectdevice-1)得到devicepipe作为参数。
+关闭设备消息控制通道。 1. 需要调用[usbManager.getDevices](arkts-basicservices-getdevices-f.md#getdevices-1)获取设备列表； 2. 调用[usbManager.requestRight](arkts-basicservices-requestright-f.md#requestright-1)获取设备请求权限； 3. 调用[usbManager.connectDevice](arkts-basicservices-connectdevice-f.md#connectdevice-1)得到devicepipe作为参数。
 
 **起始版本：** 9
 
@@ -38,14 +34,14 @@ function closePipe(pipe: USBDevicePipe): number
 **示例：**
 
 ```TypeScript
-function closePipe() {
+async function closePipe() {
   let devicesList: Array<usbManager.USBDevice> = usbManager.getDevices();
   if (!devicesList || devicesList.length == 0) {
     console.info(`device list is empty`);
     return;
   }
 
-  usbManager.requestRight(devicesList?.[0]?.name);
+  await usbManager.requestRight(devicesList?.[0]?.name);
   let devicepipe: usbManager.USBDevicePipe = usbManager.connectDevice(devicesList?.[0]);
   let ret: number = usbManager.closePipe(devicepipe);
   console.info(`closePipe = ${ret}`);

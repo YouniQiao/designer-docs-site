@@ -1,8 +1,6 @@
 # RotationGestureInterface
 
-**RotationGesture** is used to trigger a rotation gesture, which recognizes rotational movements using two to five
-fingers, with a minimum angular change of 1 degree. This gesture cannot be triggered using a two-finger rotation
-operation on a trackpad.
+**RotationGesture** is used to trigger a rotation gesture, which recognizes rotational movements using two to five fingers, with a minimum angular change of 1 degree. This gesture cannot be triggered using a two-finger rotation operation on a trackpad.
 
 **Inheritance/Implementation:** RotationGestureInterface extends [GestureInterface<RotationGestureInterface>](GestureInterface<RotationGestureInterface>)
 
@@ -42,10 +40,7 @@ Sets the parameters for the rotation gesture. Inherits from [GestureInterface<T>
 (options?: RotationGestureHandlerOptions): RotationGestureInterface
 ```
 
-Sets the parameters for the rotation gesture. Compared with
-[RotationGesture](RotationGestureInterface(value?: { fingers?: number; angle?: number ))},
-this API adds the **isFingerCountLimited** parameter to **options**, which determines whether to enforce the exact
-number of fingers touching the screen.
+Sets the parameters for the rotation gesture. Compared with [RotationGesture](RotationGestureInterface(value?: { fingers?: number; angle?: number ))}, this API adds the **isFingerCountLimited** parameter to **options**, which determines whether to enforce the exact number of fingers touching the screen.
 
 **Since:** 15
 
@@ -73,8 +68,7 @@ number of fingers touching the screen.
 onActionCancel(event: () => void): RotationGestureInterface
 ```
 
-Triggered when a tap cancellation event is received after the rotation gesture is recognized. This callback does
-not return gesture event information.
+Triggered when a tap cancellation event is received after the rotation gesture is recognized. This callback does not return gesture event information.
 
 **Since:** 7
 
@@ -100,9 +94,7 @@ not return gesture event information.
 onActionCancel(event: Callback<GestureEvent>): RotationGestureInterface
 ```
 
-Triggered when a tap cancellation event is received after the rotation gesture is recognized. Compared with
-[onActionCancel](arkts-arkui-rotationgestureinterface-i.md#onactioncancel-1), this callback returns gesture
-event information.
+Triggered when a tap cancellation event is received after the rotation gesture is recognized. Compared with [onActionCancel](arkts-arkui-rotationgestureinterface-i.md#onactioncancel-1), this callback returns gesture event information.
 
 **Since:** 18
 

@@ -32,8 +32,7 @@ Device ID.
 isVibratorOnline: boolean
 ```
 
-Vibrator status. The value **true** indicates that the device is online, and the value **false** indicates the
-opposite.
+Vibrator status. The value **true** indicates that the device is online, and the value **false** indicates the opposite.
 
 **Type:** boolean
 

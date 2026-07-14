@@ -1,8 +1,6 @@
 # SystemTonePlayer（系统接口）
 
-系统提示音播放器提供了短信提示音、通知提示音的播放、配置、获取信息等功能。在调用SystemTonePlayer的接口前，需要先通过
-[getSystemTonePlayer](arkts-audio-systemsoundmanager-i-sys.md#getsystemtoneplayer-1)
-创建实例。
+系统提示音播放器提供了短信提示音、通知提示音的播放、配置、获取信息等功能。在调用SystemTonePlayer的接口前，需要先通过 [getSystemTonePlayer](arkts-audio-systemsoundmanager-i-sys.md#getsystemtoneplayer-1) 创建实例。
 
 **起始版本：** 11
 
@@ -179,9 +177,7 @@ off(type: 'error', callback?: ErrorCallback): void
 on(type: 'playFinished', streamId: number, callback: Callback<number>): void
 ```
 
-监听铃音播放完成事件（当铃音播放完成时触发）。使用callback异步回调。
-
-监听对象为传入的streamId对应音频流。当streamId传入0时，监听本播放器对应的所有音频流。
+监听铃音播放完成事件（当铃音播放完成时触发）。使用callback异步回调。 监听对象为传入的streamId对应音频流。当streamId传入0时，监听本播放器对应的所有音频流。
 
 **起始版本：** 18
 
@@ -321,10 +317,7 @@ setAudioVolumeScale(scale: number): void
 setHapticsFeature(hapticsFeature: systemSoundManager.ToneHapticsFeature): void
 ```
 
-设置播放铃音时的振动风格。
-
-调用本接口前，应该先调用[getSupportedHapticsFeatures](arkts-audio-systemtoneplayer-i-sys.md#getsupportedhapticsfeatures-1)查询支持的振动风格，如果设置不支持的振动风
-格，则设置失败。
+设置播放铃音时的振动风格。 调用本接口前，应该先调用[getSupportedHapticsFeatures](arkts-audio-systemtoneplayer-i-sys.md#getsupportedhapticsfeatures-1)查询 支持的振动风格，如果设置不支持的振动风格，则设置失败。
 
 **起始版本：** 13
 

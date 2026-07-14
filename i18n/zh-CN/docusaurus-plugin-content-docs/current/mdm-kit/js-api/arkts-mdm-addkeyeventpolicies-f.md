@@ -6,9 +6,7 @@
 function addKeyEventPolicies(admin: Want, keyPolicies: Array<KeyEventPolicy>): void
 ```
 
-添加按键事件处理策略。系统触发按键事件时，若匹配下发的按键事件策略，将通过
-[EnterpriseAdminExtensionAbility.onKeyEvent](arkts-mdm-enterpriseadminextensionability-c.md#onkeyevent-1)
-回调通知MDM应用，并携带匹配策略的按键事件信息。
+添加按键事件处理策略。系统触发按键事件时，若匹配下发的按键事件策略，将通过 [EnterpriseAdminExtensionAbility.onKeyEvent](arkts-mdm-enterpriseadminextensionability-c.md#onkeyevent-1) 回调通知MDM应用，并携带匹配策略的按键事件信息。
 
 **起始版本：** 23
 

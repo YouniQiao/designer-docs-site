@@ -1,8 +1,6 @@
 # ProcessInformation
 
-The module defines the process information. The information can be obtained through
-[getRunningProcessInformation](arkts-ability-getrunningprocessinformation-f.md#getrunningprocessinformation-1) of
-appManager.
+The module defines the process information. The information can be obtained through [getRunningProcessInformation](arkts-ability-getrunningprocessinformation-f.md#getrunningprocessinformation-1) of appManager.
 
 **Since:** 9
 
@@ -64,10 +62,7 @@ Type of the bundle running in the process.
 isPreload?: boolean
 ```
 
-Indicates whether the process is in the preload state.
-
-- `true`: The process is currently in the preload state.
-- `false`: The process is either not a preload process, or its preload state has been consumed.
+Indicates whether the process is in the preload state. - `true`: The process is currently in the preload state. - `false`: The process is either not a preload process, or its preload state has been consumed.
 
 **Type:** boolean
 

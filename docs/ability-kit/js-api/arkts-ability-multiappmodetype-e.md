@@ -12,8 +12,7 @@ Enumerates the types of the multi-app mode.
 UNSPECIFIED = 0
 ```
 
-Unspecified. It is the default value of
-[multiAppMode](../../../../quick-start/app-configuration-file.md#multiappmode).
+Unspecified. It is the default value of [multiAppMode](../../../../quick-start/app-configuration-file.md#multiappmode).
 
 **Since:** 12
 

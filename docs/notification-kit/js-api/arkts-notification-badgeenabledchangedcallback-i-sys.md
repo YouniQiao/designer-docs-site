@@ -1,7 +1,6 @@
 # BadgeEnabledChangedCallback
 
-Defines a callback function to listen for the enabling state changes of the application badge.
-type BadgeEnabledChangedCallback = (data: EnabledNotificationCallbackData) => void
+Defines a callback function to listen for the enabling state changes of the application badge. type BadgeEnabledChangedCallback = (data: EnabledNotificationCallbackData) => void
 
 **Since:** 12
 
@@ -25,5 +24,5 @@ Callback used to return the listened badge enabling state.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| data | EnabledNotificationCallbackData | Yes | Notification information that carries the system property value. |
+| data | EnabledNotificationCallbackData | Yes | Callback used to return the listened badge enabling state. |
 

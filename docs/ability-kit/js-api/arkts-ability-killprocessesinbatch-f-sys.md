@@ -12,10 +12,7 @@ import { appManager } from '@kit.AbilityKit';
 function killProcessesInBatch(pids: Array<number>): Promise<void>
 ```
 
-Kills processes in batches. This API uses a promise to return the result.
-This API can be properly called on PCs/2-in-1 devices. If it is called on other devices, error code 801 is
-returned.
-**Required permissions**: ohos.permission.KILL_APP_PROCESSES
+Kills processes in batches. This API uses a promise to return the result. This API can be properly called on PCs/2-in-1 devices. If it is called on other devices, error code 801 is returned. **Required permissions**: ohos.permission.KILL_APP_PROCESSES
 
 **Since:** 14
 

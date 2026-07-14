@@ -1,10 +1,6 @@
 # UploadTask
 
-Implements file uploads. Before using any APIs of this class, you must obtain an **UploadTask** object, from a
-promise through [request.uploadFile](arkts-basicservices-uploadfile-f.md#uploadfile-2) or from
-a callback through
-[request.uploadFile](arkts-basicservices-uploadfile-f.md#uploadfile-1)
-.
+Implements file uploads. Before using any APIs of this class, you must obtain an **UploadTask** object, from a promise through [request.uploadFile](arkts-basicservices-uploadfile-f.md#uploadfile-2) or from a callback through [request.uploadFile](arkts-basicservices-uploadfile-f.md#uploadfile-1) .
 
 **Since:** 6
 
@@ -22,12 +18,7 @@ import { request } from '@kit.BasicServicesKit';
 delete(callback: AsyncCallback<boolean>): void
 ```
 
-Deletes the upload task. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> The scenarios for triggering error code **401 the parameters check fails** do not exist. Therefore, this error
-> code is removed from API version 12.
+Deletes the upload task. This API uses an asynchronous callback to return the result. > **NOTE** > > The scenarios for triggering error code **401 the parameters check fails** do not exist. Therefore, this error > code is removed from API version 12.
 
 **Since:** 9
 
@@ -66,12 +57,7 @@ uploadTask.delete((err: BusinessError, result: boolean) => {
 delete(): Promise<boolean>
 ```
 
-Deletes the upload task. This API uses a promise to return the result.
-
-> **NOTE**
->
-> The scenarios for triggering error code **401 the parameters check fails** do not exist. Therefore, this error
-> code is removed from API version 12.
+Deletes the upload task. This API uses a promise to return the result. > **NOTE** > > The scenarios for triggering error code **401 the parameters check fails** do not exist. Therefore, this error > code is removed from API version 12.
 
 **Since:** 9
 
@@ -330,12 +316,7 @@ uploadTask.off('fail');
 on(type: 'progress', callback: (uploadedSize: number, totalSize: number) => void): void
 ```
 
-Subscribes to upload progress events. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> To maintain a balance between power consumption and performance, this API cannot be called when the application
-> is running in the background.
+Subscribes to upload progress events. This API uses an asynchronous callback to return the result. > **NOTE** > > To maintain a balance between power consumption and performance, this API cannot be called when the application > is running in the background.
 
 **Since:** 6
 
@@ -370,8 +351,7 @@ uploadTask.on('progress', upProgressCallback);
 on(type: 'headerReceive', callback: (header: object) => void): void
 ```
 
-Subscribes to HTTP response events for the upload task.This API uses an asynchronous callback to return the
-result.
+Subscribes to HTTP response events for the upload task.This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 

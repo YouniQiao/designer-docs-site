@@ -12,11 +12,7 @@ Defines data panel configuration options.
 max?: number
 ```
 
-- When set to a value greater than 0, this parameter indicates the maximum value in the **values** list.
-- When set to a value equal to or smaller than 0, this parameter indicates the sum of values in the **values**
-list, and the values are displayed proportionally based on their relative sizes.
-
-Default value: **100**
+- When set to a value greater than 0, this parameter indicates the maximum value in the **values** list. - When set to a value equal to or smaller than 0, this parameter indicates the sum of values in the **values** list, and the values are displayed proportionally based on their relative sizes. Default value: **100**
 
 **Type:** number
 
@@ -34,9 +30,7 @@ Default value: **100**
 type?: DataPanelType
 ```
 
-Type of the data panel (dynamic modification is not supported).
-
-Default value: **DataPanelType.Circle**
+Type of the data panel (dynamic modification is not supported). Default value: **DataPanelType.Circle**
 
 **Type:** DataPanelType
 
@@ -54,8 +48,7 @@ Default value: **DataPanelType.Circle**
 values: number[]
 ```
 
-Data value list. A maximum of nine values are supported. If more than nine values are set, only the first nine ones
-are used. A value less than 0 evaluates to the value **0**.
+Data value list. A maximum of nine values are supported. If more than nine values are set, only the first nine ones are used. A value less than 0 evaluates to the value **0**.
 
 **Type:** number[]
 

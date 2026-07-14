@@ -1,16 +1,6 @@
 # TextInputController
 
-The controller for the **TextInput** component inherits from
-[TextContentControllerBase](arkts-arkui-textcontentcontrollerbase-c.md). The APIs involved are as follows:<!--Del--> system API
-[getText](arkts-arkui-textcontentcontrollerbase-c-sys.md#gettext-1) and other APIs like<!--DelEnd-->
-[getTextContentRect](arkts-arkui-textcontentcontrollerbase-c.md#gettextcontentrect-1),
-[getTextContentLineCount](arkts-arkui-textcontentcontrollerbase-c.md#gettextcontentlinecount-1),
-[getCaretOffset](arkts-arkui-textcontentcontrollerbase-c.md#getcaretoffset-1), [addText](arkts-arkui-textcontentcontrollerbase-c.md#addtext-1),
-[deleteText](arkts-arkui-textcontentcontrollerbase-c.md#deletetext-1),
-[getSelection](arkts-arkui-textcontentcontrollerbase-c.md#getselection-1),
-[clearPreviewText](arkts-arkui-textcontentcontrollerbase-c.md#clearpreviewtext-1),
-[setStyledPlaceholder](arkts-arkui-textcontentcontrollerbase-c.md#setstyledplaceholder-1), and
-[deleteBackward](arkts-arkui-textcontentcontrollerbase-c.md#deletebackward-1).
+The controller for the **TextInput** component inherits from [TextContentControllerBase](arkts-arkui-textcontentcontrollerbase-c.md). The APIs involved are as follows:<!--Del--> system API [getText](arkts-arkui-textcontentcontrollerbase-c-sys.md#gettext-1) and other APIs like<!--DelEnd--> [getTextContentRect](arkts-arkui-textcontentcontrollerbase-c.md#gettextcontentrect-1), [getTextContentLineCount](arkts-arkui-textcontentcontrollerbase-c.md#gettextcontentlinecount-1), [getCaretOffset](arkts-arkui-textcontentcontrollerbase-c.md#getcaretoffset-1), [addText](arkts-arkui-textcontentcontrollerbase-c.md#addtext-1), [deleteText](arkts-arkui-textcontentcontrollerbase-c.md#deletetext-1), [getSelection](arkts-arkui-textcontentcontrollerbase-c.md#getselection-1), [clearPreviewText](arkts-arkui-textcontentcontrollerbase-c.md#clearpreviewtext-1), [setStyledPlaceholder](arkts-arkui-textcontentcontrollerbase-c.md#setstyledplaceholder-1), and [deleteBackward](arkts-arkui-textcontentcontrollerbase-c.md#deletebackward-1).
 
 **Inheritance/Implementation:** TextInputController extends [TextContentControllerBase](arkts-arkui-textcontentcontrollerbase-c.md)
 
@@ -25,8 +15,7 @@ The controller for the **TextInput** component inherits from
 caretPosition(value: number): void
 ```
 
-Sets the position of the caret. If the value is less than 0, the value **0** is used. If the value exceeds the text
-length, the caret is placed at the end of the text.
+Sets the position of the caret. If the value is less than 0, the value **0** is used. If the value exceeds the text length, the caret is placed at the end of the text.
 
 **Since:** 8
 

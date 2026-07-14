@@ -12,9 +12,7 @@ import { relationalStore } from '@kit.ArkData';
 function isTokenizerSupported(tokenizer: Tokenizer): boolean
 ```
 
-Checks whether the specified tokenizer is supported. This API returns the result synchronously.
-
-This API returns **true** if the specified tokenizer is supported; returns **false** otherwise.
+Checks whether the specified tokenizer is supported. This API returns the result synchronously. This API returns **true** if the specified tokenizer is supported; returns **false** otherwise.
 
 **Since:** 18
 

@@ -12,10 +12,7 @@ import { applicationManager } from '@kit.MDMKit';
 function addAllowedRunningBundles(admin: Want, appIdentifiers: Array<string>, accountId: number): void
 ```
 
-Adds the applications that are allowed to run under specified users.
-
-> **NOTE**
->
+Adds the applications that are allowed to run under specified users. > **NOTE** >
 
 **Since:** 21
 

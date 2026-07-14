@@ -12,12 +12,7 @@ import { hidebug } from '@kit.PerformanceAnalysisKit';
 function getSystemCpuUsage(): number
 ```
 
-Obtains the CPU usage of the system.
-
-> **NOTE**
->
-> This API involves cross-process communication and takes a long time. To avoid performance problems, you are
-> advised not to call this API in the main thread.
+Obtains the CPU usage of the system. > **NOTE** > > This API involves cross-process communication and takes a long time. To avoid performance problems, you are > advised not to call this API in the main thread.
 
 **Since:** 12
 

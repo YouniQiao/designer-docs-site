@@ -54,8 +54,7 @@ Whether to add a certificate. The default value is **true**. **true**: yes; **fa
 addSmimeCapAttr?: boolean
 ```
 
-Whether to add the SMIME capability to the CMS object. The default value is **true**. **true**: yes; **false**:
-no.
+Whether to add the SMIME capability to the CMS object. The default value is **true**. **true**: yes; **false**: no.
 
 **Type:** boolean
 
@@ -73,8 +72,7 @@ no.
 mdName: string
 ```
 
-Message digest algorithm, for example, **SHA384**. Currently, **SHA1**, **SHA256**, **SHA384**, and **SHA512**
-are supported.
+Message digest algorithm, for example, **SHA384**. Currently, **SHA1**, **SHA256**, **SHA384**, and **SHA512** are supported.
 
 **Type:** string
 
@@ -90,13 +88,7 @@ are supported.
 rsaSignaturePadding?: CmsRsaSignaturePadding
 ```
 
-Padding mode for an RSA signature. The default value is **PKCS1_PADDING**.
-When this parameter is set to **PKCS1_PSS_PADDING**, **mdName** must be set to **SHA256**, **SHA384**, or
-**SHA512**.
-
-> **NOTE**
->
-> This parameter is valid only when the private key type of the signature is RSA.
+Padding mode for an RSA signature. The default value is **PKCS1_PADDING**. When this parameter is set to **PKCS1_PSS_PADDING**, **mdName** must be set to **SHA256**, **SHA384**, or **SHA512**. > **NOTE** > > This parameter is valid only when the private key type of the signature is RSA.
 
 **Type:** CmsRsaSignaturePadding
 

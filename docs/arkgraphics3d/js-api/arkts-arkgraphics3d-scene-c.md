@@ -161,8 +161,7 @@ Get resource factory.
 importNode(name: string, node: Node, parent: Node | null): Node
 ```
 
-Import node into the scene. The original node may come from separate Scene.
-The node will be cloned and any modifications to the old node will not be visible after the import.
+Import node into the scene. The original node may come from separate Scene. The node will be cloned and any modifications to the old node will not be visible after the import.
 
 **Since:** 18
 
@@ -188,8 +187,7 @@ The node will be cloned and any modifications to the old node will not be visibl
 importScene(name: string, scene: Scene, parent: Node | null): Node
 ```
 
-Import scene into the scene as a node. The node hierarchy will appear under the parent node.
-All animations from the scene will be duplicated in the scene.
+Import scene into the scene as a node. The node hierarchy will appear under the parent node. All animations from the scene will be duplicated in the scene.
 
 **Since:** 18
 
@@ -215,8 +213,7 @@ All animations from the scene will be duplicated in the scene.
 static load(uri? : ResourceStr): Promise<Scene>
 ```
 
-Create a new scene from a ResourceStr.
-If uri is not provided, will return an empty scene.
+Create a new scene from a ResourceStr. If uri is not provided, will return an empty scene.
 
 **Since:** 12
 

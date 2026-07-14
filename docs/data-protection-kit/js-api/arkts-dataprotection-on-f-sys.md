@@ -12,16 +12,7 @@ import { dlpPermission } from '@kit.DataProtectionKit';
 function on(type: 'uninstallDLPSandbox', listener: Callback<DLPSandboxState>): void
 ```
 
-Registers a listener for the DLP sandbox uninstall event, which is used to detect changes in the sandbox
-environment. After the registration, the system notifies the application using a callback when the DLP sandbox is
-uninstalled.
-
-After a listener is registered by calling **on**, you are advised to call
-**[off](arkts-dataprotection-off-f-sys.md#off-2)** to
-unregister the listener and release resources when the listener is no longer needed.
-
-The DLP management application needs to track the creation and destruction status of the sandbox to maintain the
-sandbox list or release resources.
+Registers a listener for the DLP sandbox uninstall event, which is used to detect changes in the sandbox environment. After the registration, the system notifies the application using a callback when the DLP sandbox is uninstalled. After a listener is registered by calling **on**, you are advised to call **[off](arkts-dataprotection-off-f-sys.md#off-2)** to unregister the listener and release resources when the listener is no longer needed. The DLP management application needs to track the creation and destruction status of the sandbox to maintain the sandbox list or release resources.
 
 **Since:** 10
 

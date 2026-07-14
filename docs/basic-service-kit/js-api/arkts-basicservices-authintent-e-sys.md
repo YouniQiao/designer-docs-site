@@ -56,9 +56,7 @@ Security question authentication.
 ABANDONED_PIN_AUTH = 4
 ```
 
-Abandoned PIN authentication. After a user changes the lock screen password, the old PIN is abandoned. If a user
-forgets the current password, the user can reset the lock screen password after passing the authentication with
-the abandoned PIN.
+Abandoned PIN authentication. After a user changes the lock screen password, the old PIN is abandoned. If a user forgets the current password, the user can reset the lock screen password after passing the authentication with the abandoned PIN.
 
 **Since:** 20
 

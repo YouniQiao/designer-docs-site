@@ -76,8 +76,7 @@ ID used to identify a publication period.
 ranging: boolean
 ```
 
-Whether the device supports ranging. The value **true** indicates that the device supports ranging and the value
-**false** indicates the opposite.
+Whether the device supports ranging. The value **true** indicates that the device supports ranging and the value **false** indicates the opposite.
 
 **Type:** boolean
 

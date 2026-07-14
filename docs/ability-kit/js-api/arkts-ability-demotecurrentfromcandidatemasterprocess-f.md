@@ -12,10 +12,7 @@ import { application } from '@kit.AbilityKit';
 export function demoteCurrentFromCandidateMasterProcess(): Promise<void>
 ```
 
-Removes the current process from the candidate master process list. This API uses a promise to return the result.
-This API can be properly called on PCs/2-in-1 devices and tablets. If it is called on other devices, error code 801
-is returned.
-**System capability**: SystemCapability.Ability.AbilityRuntime.Core
+Removes the current process from the candidate master process list. This API uses a promise to return the result. This API can be properly called on PCs/2-in-1 devices and tablets. If it is called on other devices, error code 801 is returned. **System capability**: SystemCapability.Ability.AbilityRuntime.Core
 
 **Since:** 20
 

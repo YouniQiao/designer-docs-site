@@ -12,8 +12,7 @@ import { usbManager } from '@kit.BasicServicesKit';
 function setPortRoles(portId: number, powerRole: PowerRoleType, dataRole: DataRoleType): Promise<void>
 ```
 
-Sets the role types supported by a specified port, which can be **powerRole** (for charging) and **dataRole** (for
-data transfer). This API uses a promise to return the result.
+Sets the role types supported by a specified port, which can be **powerRole** (for charging) and **dataRole** (for data transfer). This API uses a promise to return the result.
 
 **Since:** 9
 

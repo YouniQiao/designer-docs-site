@@ -1,15 +1,6 @@
 # @ohos.enterprise.telephonyManager
 
-本模块提供通话管理能力。
-
-> **说明**：
->
-> 本模块接口仅适用于Stage模型。
->
-> 本模块接口仅对设备管理应用开放，调用接口前需激活该应用，详情请参考[MDM Kit开发指南](../../../../mdm/mdm-kit-guide.md)。
->
-> 全局通用限制类策略由restrictions提供，若要全局禁用通话，请参考
-> [@ohos.enterprise.restrictions （限制类策略）](arkts-enterprise-restrictions.md)。
+本模块提供通话管理能力。 > **说明**： > > 本模块接口仅适用于Stage模型。 > > 本模块接口仅对设备管理应用开放，调用接口前需激活该应用，详情请参考[MDM Kit开发指南](../../../../mdm/mdm-kit-guide.md)。 > > 全局通用限制类策略由restrictions提供，若要全局禁用通话，请参考 > [@ohos.enterprise.restrictions （限制类策略）](arkts-enterprise-restrictions.md)。
 
 **起始版本：** 20
 
@@ -22,8 +13,8 @@
 | 名称 | 说明 |
 | --- | --- |
 | [activeSim](arkts-mdm-activesim-f.md#activesim-1) | 启用指定卡槽的SIM卡。设备已经插入SIM卡但是并未启用的场景，可以通过该接口启用SIM卡，无需用户手动启用。SIM卡启用后可以使用该SIM卡进行通信。该接口需要插入SIM卡并关闭飞行模式才能成功调用。 |
-| [addIncomingCallPolicyNumbers](arkts-mdm-addincomingcallpolicynumbers-f.md#addincomingcallpolicynumbers-1) | 添加通话呼入的允许或禁用名单，如果不添加名单，则任意号码都可以呼入，添加后仅名单内的号码允许或禁止呼入。以下情况下，通过本接口添加通话呼入的允许或禁用名单，会报策略冲突：1. 已经通过[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)接口禁用了设备通话能力，再通过本接口添加通话呼入的禁用或允许名单，返回203错误码。通过[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)接口解除禁用设备通话能力后，可解除冲突。2. 已经通过本接口设置了通话呼入的禁用名单，再通过本接口添加通话呼入允许名单，返回9200010错误码。通过[removeIncomingCallPolicyNumbers](arkts-mdm-removeincomingcallpolicynumbers-f.md#removeincomingcallpolicynumbers-1)接口将之前设置的通话呼入禁用名单移除后，可解除冲突。3. 已经通过本接口设置了通话呼入的允许名单，再通过本接口添加通话呼入禁用名单，返回9200010错误码。通过[removeIncomingCallPolicyNumbers](arkts-mdm-removeincomingcallpolicynumbers-f.md#removeincomingcallpolicynumbers-1)接口将之前设置的通话呼入允许名单移除后，可解除冲突。 |
-| [addOutgoingCallPolicyNumbers](arkts-mdm-addoutgoingcallpolicynumbers-f.md#addoutgoingcallpolicynumbers-1) | 添加通话呼出的允许或禁用名单，如果不添加名单，任意号码都可以呼出，添加后只有名单内的号码允许或禁止呼出。以下情况下，通过本接口添加通话呼出的允许或禁用名单，会报策略冲突：1. 已经通过[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)接口禁用了设备通话能力，再通过本接口添加通话呼出的禁用或允许名单，返回203错误码。通过[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)接口解除禁用设备通话能力后，可解除冲突。2. 已经通过本接口设置了通话呼出的禁用名单，再通过本接口添加通话呼出允许名单，返回9200010错误码。通过[removeOutgoingCallPolicyNumbers](arkts-mdm-removeoutgoingcallpolicynumbers-f.md#removeoutgoingcallpolicynumbers-1)接口将之前设置的通话呼出禁用名单移除后，可解除冲突。3. 已经通过本接口设置了通话呼出的允许名单，再通过本接口添加通话呼出禁用名单，返回9200010错误码。通过[removeOutgoingCallPolicyNumbers](arkts-mdm-removeoutgoingcallpolicynumbers-f.md#removeoutgoingcallpolicynumbers-1)接口将之前设置的通话呼出允许名单移除后，可解除冲突。 |
+| [addIncomingCallPolicyNumbers](arkts-mdm-addincomingcallpolicynumbers-f.md#addincomingcallpolicynumbers-1) | 添加通话呼入的允许或禁用名单，如果不添加名单，则任意号码都可以呼入，添加后仅名单内的号码允许或禁止呼入。 以下情况下，通过本接口添加通话呼入的允许或禁用名单，会报策略冲突： 1. 已经通过[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)接口禁用了设备通话能力，再通过本接口添加通话呼入的禁用或允许名单，返回203错误码。通过[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)接口解除禁用设备通话能力后，可解除冲突。 2. 已经通过本接口设置了通话呼入的禁用名单，再通过本接口添加通话呼入允许名单，返回9200010错误码。通过[removeIncomingCallPolicyNumbers](arkts-mdm-removeincomingcallpolicynumbers-f.md#removeincomingcallpolicynumbers-1)接口将之前设置的通话呼入禁用名单移除后，可解除冲突。 3. 已经通过本接口设置了通话呼入的允许名单，再通过本接口添加通话呼入禁用名单，返回9200010错误码。通过[removeIncomingCallPolicyNumbers](arkts-mdm-removeincomingcallpolicynumbers-f.md#removeincomingcallpolicynumbers-1)接口将之前设置的通话呼入允许名单移除后，可解除冲突。 |
+| [addOutgoingCallPolicyNumbers](arkts-mdm-addoutgoingcallpolicynumbers-f.md#addoutgoingcallpolicynumbers-1) | 添加通话呼出的允许或禁用名单，如果不添加名单，任意号码都可以呼出，添加后只有名单内的号码允许或禁止呼出。 以下情况下，通过本接口添加通话呼出的允许或禁用名单，会报策略冲突： 1. 已经通过[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)接口禁用了设备通话能力，再通过本接口添加通话呼出的禁用或允许名单，返回203错误码。通过[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)接口解除禁用设备通话能力后，可解除冲突。 2. 已经通过本接口设置了通话呼出的禁用名单，再通过本接口添加通话呼出允许名单，返回9200010错误码。通过[removeOutgoingCallPolicyNumbers](arkts-mdm-removeoutgoingcallpolicynumbers-f.md#removeoutgoingcallpolicynumbers-1)接口将之前设置的通话呼出禁用名单移除后，可解除冲突。 3. 已经通过本接口设置了通话呼出的允许名单，再通过本接口添加通话呼出禁用名单，返回9200010错误码。通过[removeOutgoingCallPolicyNumbers](arkts-mdm-removeoutgoingcallpolicynumbers-f.md#removeoutgoingcallpolicynumbers-1)接口将之前设置的通话呼出允许名单移除后，可解除冲突。 |
 | [addReceiveSmsPolicyNumbers](arkts-mdm-addreceivesmspolicynumbers-f.md#addreceivesmspolicynumbers-1) | 添加接收短信的允许或禁用名单 |
 | [addSendSmsPolicyNumbers](arkts-mdm-addsendsmspolicynumbers-f.md#addsendsmspolicynumbers-1) | 添加发送短信的允许或禁用名单 |
 | [deactiveSim](arkts-mdm-deactivesim-f.md#deactivesim-1) | 停用指定卡槽SIM卡。停用该SIM卡，无法使用该卡槽的SIM卡接打电话，收发短信，上网。该接口需要插入SIM卡并关闭飞行模式才能成功调用。 |
@@ -34,8 +25,8 @@
 | [getSendSmsPolicyNumbers](arkts-mdm-getsendsmspolicynumbers-f.md#getsendsmspolicynumbers-1) | 查询发送短信的允许或禁用名单 |
 | [hangupCalling](arkts-mdm-hangupcalling-f.md#hangupcalling-1) | 挂断当前通话。仅支持运营商通话，不包括畅联等。 |
 | [isSimDisabled](arkts-mdm-issimdisabled-f.md#issimdisabled-1) | 查询指定卡槽是否禁用。 |
-| [removeIncomingCallPolicyNumbers](arkts-mdm-removeincomingcallpolicynumbers-f.md#removeincomingcallpolicynumbers-1) | 移除通话呼入的允许或禁用名单，若在该名单尚未设置时进行移除，则会移除失败。以下情况下，通过本接口移除通话呼入的允许或禁用名单，会报策略冲突：1. 已经通过[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)接口禁用了设备通话能力，再通过本接口移除通话呼入的禁用或允许名单，返回203错误码。通过[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)接口解除禁用设备通话能力后，可解除冲突。 |
-| [removeOutgoingCallPolicyNumbers](arkts-mdm-removeoutgoingcallpolicynumbers-f.md#removeoutgoingcallpolicynumbers-1) | 移除通话呼出的允许或禁用名单，若在该名单尚未设置时进行移除，则会移除失败。以下情况下，通过本接口移除通话呼出的允许或禁用名单，会报策略冲突：已经通过[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)接口禁用了设备通话能力，再通过本接口移除通话呼出的禁用或允许名单，返回203错误码。通过[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)接口解除禁用设备通话能力后，可解除冲突。 |
+| [removeIncomingCallPolicyNumbers](arkts-mdm-removeincomingcallpolicynumbers-f.md#removeincomingcallpolicynumbers-1) | 移除通话呼入的允许或禁用名单，若在该名单尚未设置时进行移除，则会移除失败。 以下情况下，通过本接口移除通话呼入的允许或禁用名单，会报策略冲突： 1. 已经通过[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)接口禁用了设备通话能力，再通过本接口移除通话呼入的禁用或允许名单，返回203错误码。通过[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)接口解除禁用设备通话能力后，可解除冲突。 |
+| [removeOutgoingCallPolicyNumbers](arkts-mdm-removeoutgoingcallpolicynumbers-f.md#removeoutgoingcallpolicynumbers-1) | 移除通话呼出的允许或禁用名单，若在该名单尚未设置时进行移除，则会移除失败。 以下情况下，通过本接口移除通话呼出的允许或禁用名单，会报策略冲突： 已经通过 [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1) 接口禁用了设备通话能力，再通过本接口移除通话呼出的禁用或允许名单，返回203错误码。通过 [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1) 接口解除禁用设备通话能力后，可解除冲突。 |
 | [removeReceiveSmsPolicyNumbers](arkts-mdm-removereceivesmspolicynumbers-f.md#removereceivesmspolicynumbers-1) | 移除接收短信的允许或禁用名单 |
 | [removeSendSmsPolicyNumbers](arkts-mdm-removesendsmspolicynumbers-f.md#removesendsmspolicynumbers-1) | 移除发送短信允许或禁用名单 |
 | [setDefaultData](arkts-mdm-setdefaultdata-f.md#setdefaultdata-1) | 设置指定卡槽的SIM卡为默认数据流量卡，设备将使用指定卡槽的SIM卡流量上网。该接口需要插入SIM卡并关闭飞行模式才能成功调用。 |

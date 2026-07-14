@@ -1,7 +1,6 @@
 # VolumeFlag（系统接口）
 
-Enumerates volume related operations.
-Flags should be powers of 2!
+Enumerates volume related operations. Flags should be powers of 2!
 
 **起始版本：** 12
 

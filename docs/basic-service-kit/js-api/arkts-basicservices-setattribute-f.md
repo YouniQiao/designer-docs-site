@@ -12,8 +12,7 @@ import { serialManager } from '@kit.BasicServicesKit';
 function setAttribute(portId: number, attribute: SerialAttribute): void
 ```
 
-Sets the parameters of the serial port. If this method is not called, the default configuration parameters are used
-(baud rate: 9600 bit/s; data bit: 8; parity bit: 0; stop bit: 1).
+Sets the parameters of the serial port. If this method is not called, the default configuration parameters are used (baud rate: 9600 bit/s; data bit: 8; parity bit: 0; stop bit: 1).
 
 **Since:** 19
 
@@ -57,7 +56,7 @@ function setAttribute() {
   if (!serialManager.hasSerialRight(portId)) {
     serialManager.requestSerialRight(portId).then(result => {
       if (!result) {
-        // If the application does not have the access permission and is not granted by the user, the application exits.
+        // If the application does not have the access permission and the user does not grant the permission, the application exits.
         console.error('user is not granted the operation permission');
         return;
       } else {
@@ -87,6 +86,14 @@ function setAttribute() {
     console.info('setAttribute usbSerial success, attribute: ' + JSON.stringify(attribute));
   } catch (error) {
     console.error('setAttribute usbSerial error, ' + JSON.stringify(error));
+  }
+
+  // Close the serial port device.
+  try {
+    serialManager.close(portId);
+    console.info('close usbSerial success, portId: ' + portId);
+  } catch (error) {
+    console.error('close usbSerial error, ' + JSON.stringify(error));
   }
 }
 

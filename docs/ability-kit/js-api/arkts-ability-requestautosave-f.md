@@ -12,9 +12,7 @@ import { autoFillManager } from '@kit.AbilityKit';
 export function requestAutoSave(context: UIContext, callback?: AutoSaveCallback): void
 ```
 
-Requests to automatically save the widget data. This API uses an asynchronous callback to return the result.
-If the current widget does not support widget switching, you can call this API to save historical widget input
-data. The callback is triggered when the auto-save request is complete.
+Requests to automatically save the widget data. This API uses an asynchronous callback to return the result. If the current widget does not support widget switching, you can call this API to save historical widget input data. The callback is triggered when the auto-save request is complete.
 
 **Since:** 11
 

@@ -12,13 +12,7 @@
 group?: string
 ```
 
-群组名称。
-
-默认值：undefined，默认状态下管理[CheckboxOptions](arkts-arkui-checkboxoptions-i.md)属性group信息为undefined的节点。
-
-**说明：**
-
-具有相同群组名称的多个CheckboxGroup，仅第一个CheckboxGroup生效。
+群组名称。 默认值：undefined，默认状态下管理[CheckboxOptions](arkts-arkui-checkboxoptions-i.md)属性group信息为undefined的节点。 **说明：** 具有相同群组名称的多个CheckboxGroup，仅第一个CheckboxGroup生效。
 
 **类型：** string
 

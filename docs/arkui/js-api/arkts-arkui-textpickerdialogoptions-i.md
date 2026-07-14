@@ -14,13 +14,7 @@ Defines the TextPickerDialogOptions for Text Picker Dialog.
 acceptButtonStyle?: PickerDialogButtonStyle
 ```
 
-Style of accept button.
-
-<p><strong>NOTE</strong>:
-<br>In the acceptButtonStyle and cancelButtonStyle configurations,
-<br>only one primary field can be set to true at most.
-<br>If both the primary fields are set to true, neither will take effect.
-</p>
+Style of accept button. <p><strong>NOTE</strong>: <br>In the acceptButtonStyle and cancelButtonStyle configurations, <br>only one primary field can be set to true at most. <br>If both the primary fields are set to true, neither will take effect. </p>
 
 **Type:** PickerDialogButtonStyle
 
@@ -134,10 +128,7 @@ Options for customizing the background effect.
 canLoop?: boolean
 ```
 
-Whether to support scroll looping.
-The value true means to support scroll looping, and false means the opposite.
-
-Default Value: true
+Whether to support scroll looping. The value true means to support scroll looping, and false means the opposite. Default Value: true
 
 **Type:** boolean
 
@@ -157,13 +148,7 @@ Default Value: true
 cancelButtonStyle?: PickerDialogButtonStyle
 ```
 
-Style of cancel button.
-
-<p><strong>NOTE</strong>:
-<br>In the acceptButtonStyle and cancelButtonStyle configurations,
-<br>only one primary field can be set to true at most.
-<br>If both the primary fields are set to true, neither will take effect.
-</p>
+Style of cancel button. <p><strong>NOTE</strong>: <br>In the acceptButtonStyle and cancelButtonStyle configurations, <br>only one primary field can be set to true at most. <br>If both the primary fields are set to true, neither will take effect. </p>
 
 **Type:** PickerDialogButtonStyle
 
@@ -199,11 +184,7 @@ Height of the picker item.
 defaultTextStyle?: TextPickerTextStyle
 ```
 
-Style of the text items when the text style change animation during the scrolling process is disabled.
-
-<p><strong>NOTE</strong>:
-<br>It is effective only when disableTextStyleAnimation is true.
-</p>
+Style of the text items when the text style change animation during the scrolling process is disabled. <p><strong>NOTE</strong>: <br>It is effective only when disableTextStyleAnimation is true. </p>
 
 **Type:** TextPickerTextStyle
 
@@ -221,9 +202,7 @@ Style of the text items when the text style change animation during the scrollin
 disableTextStyleAnimation?: boolean
 ```
 
-Sets whether to enable the text style change animation during the scrolling process.
-true: Disable the text style change animation.
-false: Enable the text style change animation.
+Sets whether to enable the text style change animation during the scrolling process. true: Disable the text style change animation. false: Enable the text style change animation.
 
 **Type:** boolean
 
@@ -243,9 +222,7 @@ false: Enable the text style change animation.
 disappearTextStyle?: PickerTextStyle
 ```
 
-Font color, font size, and font weight of the top and bottom items.
-
-Default Value：{ color: '#ff182431', font: { size: '14fp', weight: FontWeight.Regular } }
+Font color, font size, and font weight of the top and bottom items. Default Value：{ color: '#ff182431', font: { size: '14fp', weight: FontWeight.Regular } }
 
 **Type:** PickerTextStyle
 
@@ -265,15 +242,7 @@ Default Value：{ color: '#ff182431', font: { size: '14fp', weight: FontWeight.R
 enableHapticFeedback?: boolean
 ```
 
-Whether to enable haptic feedback.
-true (default): Haptic feedback is enabled.
-false: Haptic feedback is disabled.
-
-<p><strong>NOTE</strong>:
-<br>To enable haptic feedback, you must declare the ohos.permission.VIBRATE permission
-<br>under requestPermissions in the module.json5 file of the project.
-<br>"requestPermissions": [{"name": "ohos.permission.VIBRATE"}].
-</p>
+Whether to enable haptic feedback. true (default): Haptic feedback is enabled. false: Haptic feedback is disabled. <p><strong>NOTE</strong>: <br>To enable haptic feedback, you must declare the ohos.permission.VIBRATE permission <br>under requestPermissions in the module.json5 file of the project. <br>"requestPermissions": [{"name": "ohos.permission.VIBRATE"}]. </p>
 
 **Type:** boolean
 
@@ -293,9 +262,7 @@ false: Haptic feedback is disabled.
 enableHoverMode?: boolean
 ```
 
-Whether to enable the hover mode.
-
-Default Value: false
+Whether to enable the hover mode. Default Value: false
 
 **Type:** boolean
 
@@ -315,9 +282,7 @@ Default Value: false
 hoverModeArea?: HoverModeAreaType
 ```
 
-Display area of the dialog box in hover mode.
-
-Default Value: HoverModeAreaType.BOTTOM_SCREEN
+Display area of the dialog box in hover mode. Default Value: HoverModeAreaType.BOTTOM_SCREEN
 
 **Type:** HoverModeAreaType
 
@@ -337,8 +302,7 @@ Default Value: HoverModeAreaType.BOTTOM_SCREEN
 maskRect?: Rectangle
 ```
 
-Mask area of the dialog box.
-Events outside the mask area are transparently transmitted, and events within the mask area are not.
+Mask area of the dialog box. Events outside the mask area are transparently transmitted, and events within the mask area are not.
 
 **Type:** Rectangle
 
@@ -426,17 +390,7 @@ Callback invoked when the text picker in the dialog box snaps to the selected it
 onDidAppear?: () => void
 ```
 
-Event callback when the dialog box appears.
-
-<p><strong>NOTE</strong>:
-<br>1. The normal timing sequence is as follows:
-onWillAppear > onDidAppear > (onAccept/onCancel/onChange/onScrollStop) > onWillDisappear > onDidDisappear.
-<br>2. You can set the callback event for changing the dialog box display effect in onDidAppear.
-The settings take effect next time the dialog box appears.
-<br>3. If the user closes the dialog box immediately after it appears,
-onWillDisappearis invoked before onDidAppear.
-<br>4. If the dialog box is closed before its entrance animation is finished, this callback is not invoked.
-</p>
+Event callback when the dialog box appears. <p><strong>NOTE</strong>: <br>1. The normal timing sequence is as follows: onWillAppear > onDidAppear > (onAccept/onCancel/onChange/onScrollStop) > onWillDisappear > onDidDisappear. <br>2. You can set the callback event for changing the dialog box display effect in onDidAppear. The settings take effect next time the dialog box appears. <br>3. If the user closes the dialog box immediately after it appears, onWillDisappearis invoked before onDidAppear. <br>4. If the dialog box is closed before its entrance animation is finished, this callback is not invoked. </p>
 
 **Type:** () => void
 
@@ -454,12 +408,7 @@ onWillDisappearis invoked before onDidAppear.
 onDidDisappear?: () => void
 ```
 
-Event callback when the dialog box disappears.
-
-<p><strong>NOTE</strong>:
-<br>The normal timing sequence is as follows:
-<br>onWillAppear > onDidAppear > (onAccept/onCancel/onChange/onScrollStop) > onWillDisappear > onDidDisappear.
-</p>
+Event callback when the dialog box disappears. <p><strong>NOTE</strong>: <br>The normal timing sequence is as follows: <br>onWillAppear > onDidAppear > (onAccept/onCancel/onChange/onScrollStop) > onWillDisappear > onDidDisappear. </p>
 
 **Type:** () => void
 
@@ -477,19 +426,7 @@ Event callback when the dialog box disappears.
 onEnterSelectedArea?: Callback<TextPickerResult>
 ```
 
-Represents the callback triggered during the scrolling of the text picker when an item enters the divider area.
-Compared to the onChange event, this event is triggered earlier,
-specifically when the scroll distance of the current column exceeds half the height of the selected item,
-which indicates that the item has entered the divider area.
-
-<p><strong>NOTE</strong>:
-<br>In scenarios where the picker contains linked columns,
-<br>the use of this callback is not recommended.
-<br>The reason is that it identifies nodes where items enter the divider area during scrolling.
-<br>However, items that change in response to the scrolling do not themselves scroll. As a result,
-<br>he callback's return values will only reflect changes for the currently scrolling column,
-<br>while other non-scrolling columns will remain unchanged.
-</p>
+Represents the callback triggered during the scrolling of the text picker when an item enters the divider area. Compared to the onChange event, this event is triggered earlier, specifically when the scroll distance of the current column exceeds half the height of the selected item, which indicates that the item has entered the divider area. <p><strong>NOTE</strong>: <br>In scenarios where the picker contains linked columns, <br>the use of this callback is not recommended. <br>The reason is that it identifies nodes where items enter the divider area during scrolling. <br>However, items that change in response to the scrolling do not themselves scroll. As a result, <br>he callback's return values will only reflect changes for the currently scrolling column, <br>while other non-scrolling columns will remain unchanged. </p>
 
 **Type:** Callback<TextPickerResult>
 
@@ -525,14 +462,7 @@ Callback invoked when the scrolling in the text picker of the dialog box stops.
 onWillAppear?: () => void
 ```
 
-Event callback when the dialog box is about to appear.
-
-<p><strong>NOTE</strong>:
-<br>1. The normal timing sequence is as follows:
-<br>onWillAppear > onDidAppear > (onAccept/onCancel/onChange/onScrollStop) > onWillDisappear > onDidDisappear.
-<br>2. You can set the callback event for changing the dialog box display effect in onWillAppear.
-<br>the settings take effect next time the dialog box appears.
-</p>
+Event callback when the dialog box is about to appear. <p><strong>NOTE</strong>: <br>1. The normal timing sequence is as follows: <br>onWillAppear > onDidAppear > (onAccept/onCancel/onChange/onScrollStop) > onWillDisappear > onDidDisappear. <br>2. You can set the callback event for changing the dialog box display effect in onWillAppear. <br>the settings take effect next time the dialog box appears. </p>
 
 **Type:** () => void
 
@@ -550,14 +480,7 @@ Event callback when the dialog box is about to appear.
 onWillDisappear?: () => void
 ```
 
-Event callback when the dialog box is about to disappear.
-
-<p><strong>NOTE</strong>:
-<br>1. The normal timing sequence is as follows:
-onWillAppear > onDidAppear > (onAccept/onCancel/onChange/onScrollStop) > onWillDisappear > onDidDisappear.
-<br>2. If the user closes the dialog box immediately after it appears,
-onWillDisappear is invoked before onDidAppear.
-</p>
+Event callback when the dialog box is about to disappear. <p><strong>NOTE</strong>: <br>1. The normal timing sequence is as follows: onWillAppear > onDidAppear > (onAccept/onCancel/onChange/onScrollStop) > onWillDisappear > onDidDisappear. <br>2. If the user closes the dialog box immediately after it appears, onWillDisappear is invoked before onDidAppear. </p>
 
 **Type:** () => void
 
@@ -575,10 +498,7 @@ onWillDisappear is invoked before onDidAppear.
 selectedBackgroundStyle?: PickerBackgroundStyle
 ```
 
-Background style of selected items.
-
-Default Value: { color: $r('sys.color.comp_background_tertiary'),
-borderRadius: $r('sys.float.corner_radius_level12') }
+Background style of selected items. Default Value: { color: $r('sys.color.comp_background_tertiary'), borderRadius: $r('sys.float.corner_radius_level12') }
 
 **Type:** PickerBackgroundStyle
 
@@ -616,9 +536,7 @@ Font color, font size, and font weight of the selected item.
 shadow?: ShadowOptions | ShadowStyle
 ```
 
-Shadow of the dialog box.
-Default value on 2-in-1 devices: ShadowStyle.OUTER_FLOATING_MD when the dialog box is focused
-and ShadowStyle.OUTER_FLOATING_SM otherwise.
+Shadow of the dialog box. Default value on 2-in-1 devices: ShadowStyle.OUTER_FLOATING_MD when the dialog box is focused and ShadowStyle.OUTER_FLOATING_SM otherwise.
 
 **Type:** ShadowOptions | ShadowStyle
 
@@ -636,9 +554,7 @@ and ShadowStyle.OUTER_FLOATING_SM otherwise.
 textStyle?: PickerTextStyle
 ```
 
-Font color, font size, and font weight of all items except the top, bottom, and selected items.
-
-Default Value：{ color: '#ff182431', font: { size: '16fp', weight: FontWeight.Regular } }
+Font color, font size, and font weight of all items except the top, bottom, and selected items. Default Value：{ color: '#ff182431', font: { size: '16fp', weight: FontWeight.Regular } }
 
 **Type:** PickerTextStyle
 

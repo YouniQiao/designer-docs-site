@@ -1,12 +1,6 @@
 # AudioVolumeManager
 
-音量管理。
-
-在使用AudioVolumeManager的接口之前，需先通过[getVolumeManager](arkts-audio-audiomanager-i.md#getvolumemanager-1)获取AudioVolumeManager实例。
-
-> **说明：**
->
-> - 本Interface首批接口从API version 9开始支持。
+音量管理。 在使用AudioVolumeManager的接口之前，需先通过[getVolumeManager](arkts-audio-audiomanager-i.md#getvolumemanager-1)获取AudioVolumeManager实例。 > **说明：** > > - 本Interface首批接口从API version 9开始支持。
 
 **起始版本：** 9
 
@@ -619,8 +613,7 @@ Gets the volume db value that system calculate by volume type, volume level and 
 isAppVolumeMutedForUid(uid: number, owned: boolean): Promise<boolean>
 ```
 
-Checks whether the app volume is muted. If there are multiple callers setting muted states,
-only when all callers cancel muted state the volume of this app will be truly unmuted.
+Checks whether the app volume is muted. If there are multiple callers setting muted states, only when all callers cancel muted state the volume of this app will be truly unmuted.
 
 **起始版本：** 19
 
@@ -917,8 +910,7 @@ audioVolumeManager.offVolumePercentageChange(volumePercentageChangeCallback);
 on(type: 'appVolumeChangeForUid', uid: number, callback: Callback<VolumeEvent>): void
 ```
 
-Listens for specified app volume change events.
-The app volume may changed by {@link setAppVolumePercentageForUid}.
+Listens for specified app volume change events. The app volume may changed by {@link setAppVolumePercentageForUid}.
 
 **起始版本：** 19
 
@@ -1037,8 +1029,7 @@ audioVolumeManager.on('systemVolumeChange', (volumeEvent: audio.VolumeEvent) => 
 onSystemVolumeChangeByFilter(filter: SystemVolumeFilter, callback: Callback<VolumeEvent>): void
 ```
 
-订阅系统音量变化事件。当系统体积为目标时
-系统卷过滤器更改，已注册的客户端将收到回调。
+订阅系统音量变化事件。当系统体积为目标时 系统卷过滤器更改，已注册的客户端将收到回调。
 
 **起始版本：** 26.0.0
 
@@ -1107,8 +1098,7 @@ onVolumePercentageChange((volumeEvent: audio.VolumeEvent) => {
 setAppVolumeMutedForUid(uid: number, muted: boolean): Promise<void>
 ```
 
-Change mute state of specified application volume. If there are multiple callers setting muted states,
-only when all callers cancel muted state the volume of this app will be truly unmuted.
+Change mute state of specified application volume. If there are multiple callers setting muted states, only when all callers cancel muted state the volume of this app will be truly unmuted.
 
 **起始版本：** 19
 
@@ -1246,11 +1236,7 @@ Sets the volume for specific uid application. This method uses a promise to retu
 setSystemVolumePercentage(volumeType: AudioVolumeType, percentage: number): Promise<void>
 ```
 
-Sets the system volume percentage, using an integer ranging from minimum system volume percentage to 100.
-The volume percentage corresponds to volume levels, with each level tied to a specific percentage. When the
-volume level changes, the volume percentage adjusts accordingly and is mapped within the range of volume levels.
-Zero volume is mapped to 0, and the maximum volume is mapped to 100%. Intermediate volume levels are evenly
-distributed between 1 and 99. When the volume percentage changes, the volume level changes accordingly.
+Sets the system volume percentage, using an integer ranging from minimum system volume percentage to 100. The volume percentage corresponds to volume levels, with each level tied to a specific percentage. When the volume level changes, the volume percentage adjusts accordingly and is mapped within the range of volume levels. Zero volume is mapped to 0, and the maximum volume is mapped to 100%. Intermediate volume levels are evenly distributed between 1 and 99. When the volume percentage changes, the volume level changes accordingly.
 
 **起始版本：** 23
 

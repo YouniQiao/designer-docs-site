@@ -18,14 +18,7 @@ import { webview } from '@kit.ArkWeb';
 x: number
 ```
 
-Horizontal scrolling offset of a web page. The value is the difference between the x-coordinate of the left
-boundary of the web page and that of the left boundary of the **Web** component.
-
-When the web page is scrolled rightwards, the value is negative.
-
-When the web page is not scrolled or scrolled leftwards, the value is **0** or positive.
-
-Unit: vp
+Horizontal scrolling offset of a web page. The value is the difference between the x-coordinate of the left boundary of the web page and that of the left boundary of the **Web** component. When the web page is scrolled rightwards, the value is negative. When the web page is not scrolled or scrolled leftwards, the value is **0** or positive. Unit: vp
 
 **Type:** number
 
@@ -41,14 +34,7 @@ Unit: vp
 y: number
 ```
 
-Vertical scrolling offset of a web page. The value is the difference between the y-coordinate of the upper
-boundary of the web page and that of the upper boundary of the **Web** component.
-
-When the web page is scrolled downwards, the value is negative.
-
-When the web page is not scrolled or scrolled upwards, the value is **0** or positive.
-
-Unit: vp
+Vertical scrolling offset of a web page. The value is the difference between the y-coordinate of the upper boundary of the web page and that of the upper boundary of the **Web** component. When the web page is scrolled downwards, the value is negative. When the web page is not scrolled or scrolled upwards, the value is **0** or positive. Unit: vp
 
 **Type:** number
 

@@ -1,7 +1,6 @@
 # Watcher
 
-Listens for file change. You can call the **Watcher.stop()** method synchronously or asynchronously to stop the
-listening.
+Listens for file change. You can call the **Watcher.stop()** method synchronously or asynchronously to stop the listening.
 
 **Since:** 7
 

@@ -12,8 +12,7 @@ import { window } from '@kit.ArkUI';
 function getVisibleWindowInfo(): Promise<Array<WindowInfo>>
 ```
 
-Obtains information about visible main windows on the current screen. Visible main windows are main windows that
-are not returned to the background. This API uses a promise to return the result.
+Obtains information about visible main windows on the current screen. Visible main windows are main windows that are not returned to the background. This API uses a promise to return the result.
 
 **Since:** 18
 

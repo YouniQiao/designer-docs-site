@@ -1,9 +1,6 @@
 # ToneAttrs（系统接口）
 
-管理铃声属性。在调用ToneAttrs<sup>12+</sup>的接口前，需要先通过
-[createCustomizedToneAttrs](arkts-audio-createcustomizedtoneattrs-f-sys.md#createcustomizedtoneattrs-1)或
-[getDefaultRingtoneAttrs](arkts-audio-systemsoundmanager-i-sys.md#getdefaultringtoneattrs-1)、
-[getRingtoneAttrList](arkts-audio-systemsoundmanager-i-sys.md#getringtoneattrlist-1)等方法获取实例。
+管理铃声属性。在调用ToneAttrs<sup>12+</sup>的接口前，需要先通过 [createCustomizedToneAttrs](arkts-audio-createcustomizedtoneattrs-f-sys.md#createcustomizedtoneattrs-1)或 [getDefaultRingtoneAttrs](arkts-audio-systemsoundmanager-i-sys.md#getdefaultringtoneattrs-1)、 [getRingtoneAttrList](arkts-audio-systemsoundmanager-i-sys.md#getringtoneattrlist-1)等方法获取实例。
 
 **起始版本：** 12
 
@@ -29,7 +26,7 @@ getCategory(): number
 
 | 类型 | 说明 |
 | --- | --- |
-| number | 铃声类别，取值参考[铃声类别的常量](../../../../reference/apis-audio-kit/js-apis-systemSoundManager-sys.md#工具不太能识别具体链接到的是哪个常量。让人工处理。咨询黄山）)。 |
+| number | 铃声类别，取值参考[铃声类别的常量](#常量)。 |
 
 **错误码：**
 
@@ -227,7 +224,7 @@ setCategory(category: number): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| category | number | 是 | 铃声类别，取值参考[铃声类别的常量](../../../../reference/apis-audio-kit/js-apis-systemSoundManager-sys.md#工具不太能识别具体链接到的是哪个常量。让人工处理。咨询黄山）)。 |
+| category | number | 是 | 铃声类别，取值参考[铃声类别的常量](#常量)。 |
 
 **错误码：**
 

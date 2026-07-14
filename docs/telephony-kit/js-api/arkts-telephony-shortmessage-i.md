@@ -130,8 +130,7 @@ Indicates the SMSC timestamp.
 status: number
 ```
 
-Indicates the SMS message status from the SMS-STATUS-REPORT message sent by the
-Short Message Service Center (SMSC).
+Indicates the SMS message status from the SMS-STATUS-REPORT message sent by the Short Message Service Center (SMSC).
 
 **Type:** number
 

@@ -6,8 +6,7 @@
 function getFormsInfo(bundleName: string, callback: AsyncCallback<Array<formInfo.FormInfo>>): void
 ```
 
-Obtains the widget information provided by a given application on the device. This API uses an asynchronous
-callback to return the result.
+Obtains the widget information provided by a given application on the device. This API uses an asynchronous callback to return the result.
 
 **Since:** 8
 
@@ -39,8 +38,7 @@ function getFormsInfo(
   ): void
 ```
 
-Obtains the widget information provided by a given application on the device. This API uses an asynchronous
-callback to return the result.
+Obtains the widget information provided by a given application on the device. This API uses an asynchronous callback to return the result.
 
 **Since:** 8
 
@@ -69,8 +67,7 @@ callback to return the result.
 function getFormsInfo(bundleName: string, moduleName?: string): Promise<Array<formInfo.FormInfo>>
 ```
 
-Obtains the widget information provided by a given application on the device. This API uses a promise to return
-the result.
+Obtains the widget information provided by a given application on the device. This API uses a promise to return the result.
 
 **Since:** 8
 

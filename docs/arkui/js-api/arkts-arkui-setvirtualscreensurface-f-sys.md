@@ -12,8 +12,7 @@ import { screen } from '@kit.ArkUI';
 function setVirtualScreenSurface(screenId:number, surfaceId: string, callback: AsyncCallback<void>): void
 ```
 
-Sets a surface for a virtual screen. The virtual screen displays the content of the surface. This API uses an
-asynchronous callback to return the result.
+Sets a surface for a virtual screen. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -90,8 +89,7 @@ struct Index {
 function setVirtualScreenSurface(screenId:number, surfaceId: string): Promise<void>
 ```
 
-Sets a surface for a virtual screen. The virtual screen displays the content of the surface. This API uses a
-promise to return the result.
+Sets a surface for a virtual screen. This API uses a promise to return the result.
 
 **Since:** 9
 

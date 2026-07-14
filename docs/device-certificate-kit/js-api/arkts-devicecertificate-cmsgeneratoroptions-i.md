@@ -36,8 +36,7 @@ Format of the content. The default value is **CmsContentDataFormat.BINARY**.
 isDetached?: boolean
 ```
 
-Whether the final CMS message does not contain the raw data. The default value is **false**. **true**: raw data is
-not contained; **false**: raw data is contained.
+Whether the final CMS message does not contain the raw data. The default value is **false**. **true**: raw data is not contained; **false**: raw data is contained.
 
 **Type:** boolean
 

@@ -1,8 +1,6 @@
 # DragSpringLoadingState
 
-定义拖拽的悬停检测状态的枚举类型。
-默认系统配置下，如果没有触发CANCEL，状态报告如下：
-保持Hover-->500ms-->BEGIN-->100ms-->UPDATE-->100ms-->UPDATE-->100ms-->UPDATE-->100ms-->END
+定义拖拽的悬停检测状态的枚举类型。 默认系统配置下，如果没有触发CANCEL，状态报告如下： 保持Hover-->500ms-->BEGIN-->100ms-->UPDATE-->100ms-->UPDATE-->100ms-->UPDATE-->100ms-->END
 
 **起始版本：** 20
 

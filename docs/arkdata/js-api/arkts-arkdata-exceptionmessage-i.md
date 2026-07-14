@@ -18,8 +18,7 @@ import { relationalStore } from '@kit.ArkData';
 code: number
 ```
 
-Error code returned by the executed SQL statement. For details about the values and meanings, see
-[SQLite Error Codes](https://www.sqlite.org/rescode.html).
+Error code returned by the executed SQL statement. For details about the values and meanings, see [SQLite Error Codes](https://www.sqlite.org/rescode.html).
 
 **Type:** number
 

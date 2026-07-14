@@ -12,8 +12,7 @@ import { notificationManager } from '@kit.NotificationKit';
 function removeSlot(slotType: SlotType, callback: AsyncCallback<void>): void
 ```
 
-Removes a notification slot of a specified type for this application. This API uses an asynchronous callback to
-return the result.
+Removes a notification slot of a specified type for this application. This API uses an asynchronous callback to return the result. After deletion, the corresponding type of notification slot and its configuration will be permanently removed. When a notification of this type is published subsequently, the system will automatically create a default slot. Notifications already published through this slot are not affected and can still be viewed in the notification center. This is suitable for scenarios where a slot needs to be deleted and then recreated for reconfiguration.
 
 **Since:** 9
 
@@ -23,7 +22,7 @@ return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| slotType | SlotType | Yes | Type of a notification slot, such as social communication, service notification,content consultation, and so on. |
+| slotType | SlotType | Yes | Notification slot type, such as social communication, service reminder,and content consultation. The created slot type must be passed in; otherwise, the deletionoperation is invalid. |
 | callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
@@ -60,7 +59,7 @@ notificationManager.removeSlot(slotType, removeSlotCallback);
 function removeSlot(slotType: SlotType): Promise<void>
 ```
 
-Removes a notification slot of a specified type for this application. This API uses a promise to return the result.
+Removes a notification slot of a specified type for this application. This API uses a promise to return the result. After deletion, the corresponding notification slot and its configuration will be permanently removed. When a notification of this type is published subsequently, the system will automatically create a default slot. Notifications already published through this slot are not affected and can still be viewed in the notification center. This is suitable for scenarios where a slot needs to be deleted and then recreated for reconfiguration.
 
 **Since:** 9
 
@@ -70,7 +69,7 @@ Removes a notification slot of a specified type for this application. This API u
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| slotType | SlotType | Yes | Type of a notification slot, such as social communication, service notification,content consultation, and so on. |
+| slotType | SlotType | Yes | Notification slot type, such as social communication, service reminder,and content consultation. The created slot type must be passed in; otherwise, the deletionoperation is invalid. |
 
 **Return value:**
 

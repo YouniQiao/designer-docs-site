@@ -12,8 +12,7 @@ import { bundle } from '@kit.AbilityKit';
 function getBundleArchiveInfo(hapFilePath: string, bundleFlags: number, callback: AsyncCallback<BundleInfo>): void
 ```
 
-Obtains information about the bundles contained in a HAP file. This API uses an asynchronous callback to return the
-result.
+Obtains information about the bundles contained in a HAP file. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 

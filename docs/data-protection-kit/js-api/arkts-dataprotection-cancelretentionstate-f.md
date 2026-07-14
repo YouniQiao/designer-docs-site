@@ -12,11 +12,7 @@ import { dlpPermission } from '@kit.DataProtectionKit';
 function cancelRetentionState(docUris: Array<string>): Promise<void>
 ```
 
-Cancels the sandbox retention state, that is, allows the sandbox application to be automatically uninstalled when
-the DLP file is closed. This API uses a promise to return the result.
-
-This API is used to cancel the retention state for sandbox application and restore the default behavior to
-release system resources. It is applicable to scenarios where the DLP file is no longer frequently accessed.
+Cancels the sandbox retention state, that is, allows the sandbox application to be automatically uninstalled when the DLP file is closed. This API uses a promise to return the result. This API is used to cancel the retention state for sandbox application and restore the default behavior to release system resources. It is applicable to scenarios where the DLP file is no longer frequently accessed.
 
 **Since:** 10
 
@@ -26,7 +22,7 @@ release system resources. It is applicable to scenarios where the DLP file is no
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| docUris | Array&lt;string&gt; | Yes | URIs of the files to be canceled with the retention state. The length of thearray is not limited. Each string contains a maximum of 4095 bytes. If the string is out of range, error code19100001 is thrown. |
+| docUris | Array&lt;string&gt; | Yes | URIs of the files to be canceled with the retention state. The length of thearray is not limited. Each string contains a maximum of 4095 bytes. If the string is out of range, error code401 is thrown. |
 
 **Return value:**
 
@@ -63,11 +59,7 @@ dlpPermission.cancelRetentionState([uri]).then(() => { // Cancel the retention s
 function cancelRetentionState(docUris: Array<string>, callback: AsyncCallback<void>): void
 ```
 
-Cancels the sandbox retention state, that is, allows the sandbox application to be automatically uninstalled when
-the DLP file is closed. This API uses an asynchronous callback to return the result.
-
-This API is used to cancel the retention state for sandbox application and restore the default behavior to
-release system resources. It is applicable to scenarios where the DLP file is no longer frequently accessed.
+Cancels the sandbox retention state, that is, allows the sandbox application to be automatically uninstalled when the DLP file is closed. This API uses an asynchronous callback to return the result. This API is used to cancel the retention state for sandbox application and restore the default behavior to release system resources. It is applicable to scenarios where the DLP file is no longer frequently accessed.
 
 **Since:** 10
 
@@ -77,7 +69,7 @@ release system resources. It is applicable to scenarios where the DLP file is no
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| docUris | Array&lt;string&gt; | Yes | URIs of the files to be canceled with the retention state. The length of thearray is not limited. Each string contains a maximum of 4095 bytes. If the string is out of range, error code19100001 is thrown. |
+| docUris | Array&lt;string&gt; | Yes | URIs of the files to be canceled with the retention state. The length of thearray is not limited. Each string contains a maximum of 4095 bytes. If the string is out of range, error code401 is thrown. |
 | callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**

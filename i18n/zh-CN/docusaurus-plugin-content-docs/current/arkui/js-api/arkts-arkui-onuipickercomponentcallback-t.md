@@ -4,10 +4,7 @@
 declare type OnUIPickerComponentCallback = (selectedIndex: number) => void
 ```
 
-定义[onChange](UIPickerComponentAttribute#onChange)和
-[onScrollStop](UIPickerComponentAttribute#onScrollStop)事件的回调类型。
-
-取值范围：[0, 子组件的个数-1]内的整数。
+定义[onChange](UIPickerComponentAttribute#onChange)和 [onScrollStop](UIPickerComponentAttribute#onScrollStop)事件的回调类型。 取值范围：[0, 子组件的个数-1]内的整数。
 
 **起始版本：** 22
 

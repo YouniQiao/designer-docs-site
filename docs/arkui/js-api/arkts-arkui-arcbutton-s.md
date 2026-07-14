@@ -1,13 +1,6 @@
 # ArcButton
 
-The **ArcButton** component offers various button styles, such as emphasized, normal, and warning. It is recommended
-for devices with circular screens.
-
-> **NOTE**
-
-> - This component can be used on phones, PCs, 2-in-1 devices, tablets, TVs, and wearables. In API version 22 and
-> earlier versions, a compilation warning will be reported when this component is used on phones, PCs, 2-in-1
-> devices, tablets, and TVs, but the component can still run properly.
+The **ArcButton** component offers various button styles, such as emphasized, normal, and warning. It is recommended for devices with circular screens. > **NOTE** > - This component can be used on phones, PCs, 2-in-1 devices, tablets, TVs, and wearables. In API version 22 and > earlier versions, a compilation warning will be reported when this component is used on phones, PCs, 2-in-1 > devices, tablets, and TVs, but the component can still run properly.
 
 **Since:** 18
 

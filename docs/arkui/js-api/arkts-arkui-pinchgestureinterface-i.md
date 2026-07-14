@@ -1,12 +1,6 @@
 # PinchGestureInterface
 
-**PinchGesture** is used to trigger a pinch gesture, which requires two to five fingers with a minimum 5 vp
-distance between the fingers.
-
-> **NOTE**
->
-> To trigger the pinch gesture again after successful recognition, all fingers must be lifted and then make
-> contact again to satisfy the recognition criteria.
+**PinchGesture** is used to trigger a pinch gesture, which requires two to five fingers with a minimum 5 vp distance between the fingers. > **NOTE** > > To trigger the pinch gesture again after successful recognition, all fingers must be lifted and then make > contact again to satisfy the recognition criteria.
 
 **Inheritance/Implementation:** PinchGestureInterface extends [GestureInterface<PinchGestureInterface>](GestureInterface<PinchGestureInterface>)
 
@@ -46,10 +40,7 @@ Sets the parameters for the pinch gesture. Inherits from [GestureInterface<T>](a
 (options?: PinchGestureHandlerOptions): PinchGestureInterface
 ```
 
-Sets the parameters for the pinch gesture. Compared with
-[PinchGesture](PinchGestureInterface(value?: { fingers?: number; distance?: number ))},
-this API adds the **isFingerCountLimited** parameter to **options**, which determines whether to enforce the exact
-number of fingers touching the screen.
+Sets the parameters for the pinch gesture. Compared with [PinchGesture](PinchGestureInterface(value?: { fingers?: number; distance?: number ))}, this API adds the **isFingerCountLimited** parameter to **options**, which determines whether to enforce the exact number of fingers touching the screen.
 
 **Since:** 15
 
@@ -77,8 +68,7 @@ number of fingers touching the screen.
 onActionCancel(event: () => void): PinchGestureInterface
 ```
 
-Triggered when a touch cancellation event occurs after successful pinch gesture recognition. No gesture event
-information is returned.
+Triggered when a touch cancellation event occurs after successful pinch gesture recognition. No gesture event information is returned.
 
 **Since:** 7
 
@@ -104,9 +94,7 @@ information is returned.
 onActionCancel(event: Callback<GestureEvent>): PinchGestureInterface
 ```
 
-Triggered when a touch cancellation event occurs after successful pinch gesture recognition. Compared with
-[onActionCancel](arkts-arkui-pinchgestureinterface-i.md#onactioncancel-1), this callback returns gesture
-event information.
+Triggered when a touch cancellation event occurs after successful pinch gesture recognition. Compared with [onActionCancel](arkts-arkui-pinchgestureinterface-i.md#onactioncancel-1), this callback returns gesture event information.
 
 **Since:** 18
 

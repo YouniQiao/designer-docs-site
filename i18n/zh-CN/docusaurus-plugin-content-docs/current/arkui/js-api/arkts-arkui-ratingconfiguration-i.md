@@ -14,9 +14,7 @@
 indicator: boolean
 ```
 
-评分条是否作为指示器使用。当值为true时，表示作为指示器；当值为false时，表示不作为指示器。
-
-默认值：false
+评分条是否作为指示器使用。当值为true时，表示作为指示器；当值为false时，表示不作为指示器。 默认值：false
 
 **类型：** boolean
 
@@ -34,17 +32,7 @@ indicator: boolean
 rating: number
 ```
 
-设置并接收评分值。
-
-默认值：0
-
-取值范围： [0, stars]
-
-小于0取0，大于[stars](RatingAttribute#stars(value: number))取最大值stars。
-
-该参数支持[$$](../../../../ui/state-management/arkts-two-way-sync.md)双向绑定变量。
-
-该参数支持[!!](../../../../ui/state-management/arkts-new-binding.md#系统组件参数双向绑定)双向绑定变量。
+设置并接收评分值。 默认值：0 取值范围： [0, stars] 小于0取0，大于[stars](RatingAttribute#stars(value: number))取最大值stars。 该参数支持[$$](../../../../ui/state-management/arkts-two-way-sync.md)双向绑定变量。 该参数支持[!!](../../../../ui/state-management/arkts-new-binding.md#系统组件参数双向绑定)双向绑定变量。
 
 **类型：** number
 
@@ -62,9 +50,7 @@ rating: number
 stars: number
 ```
 
-评分条的星级总数。
-
-默认值：5
+评分条的星级总数。 默认值：5
 
 **类型：** number
 
@@ -82,9 +68,7 @@ stars: number
 stepSize: number
 ```
 
-评分条的评分步长。
-
-默认值：0.5
+评分条的评分步长。 默认值：0.5
 
 **类型：** number
 

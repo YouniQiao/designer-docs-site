@@ -1,7 +1,6 @@
 # Configuration
 
-The module defines environment change information. Configuration is an interface definition and is used only for
-field declaration.
+The module defines environment change information. Configuration is an interface definition and is used only for field declaration.
 
 **Since:** 8
 

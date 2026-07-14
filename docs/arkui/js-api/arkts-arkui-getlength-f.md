@@ -12,14 +12,7 @@ import { router } from '@kit.ArkUI';
 function getLength(): string
 ```
 
-Obtains the number of pages in the current stack.
-
-> **NOTE**
->
-> - Since API version 10, you can use the
-> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in
-> [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated
-> with the current UI context.
+Obtains the number of pages in the current stack. > **NOTE** > > - Since API version 10, you can use the > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in > [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated > with the current UI context.
 
 **Since:** 8
 

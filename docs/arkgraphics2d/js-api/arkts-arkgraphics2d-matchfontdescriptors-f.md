@@ -12,8 +12,7 @@ import { text } from '@kit.ArkGraphics2D';
 function matchFontDescriptors(desc: FontDescriptor): Promise<Array<FontDescriptor>>
 ```
 
-Obtains all system font descriptors that match the provided font descriptor. This API uses a promise to return the
-result.
+Obtains all system font descriptors that match the provided font descriptor. This API uses a promise to return the result.
 
 **Since:** 18
 

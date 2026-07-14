@@ -1,19 +1,6 @@
 # On
 
-Since API version 9, the UiTest framework provides a wide range of UI component feature description APIs in the
-**On** class to filter and match components.
-
-The APIs provided by the **On** class exhibit the following features:
-
-1. Allow one or more attributes as the match conditions.
-For example, you can specify both the **text** and **id** attributes to find the target component.
-2. Provide multiple match patterns for component attributes.
-3. Support absolute positioning and relative positioning for components.
-APIs such as [ON.isBefore](arkts-test-on-c.md#isbefore-1) and [ON.isAfter](arkts-test-on-c.md#isafter-1) can be used to specify
-the features of adjacent components to assist positioning.
-
-All APIs provided in the **On** class are synchronous. You are advised to use the static constructor **ON** to create
-an **On** object in chain mode.
+Since API version 9, the UiTest framework provides a wide range of UI component feature description APIs in the **On** class to filter and match components. The APIs provided by the **On** class exhibit the following features: 1. Allow one or more attributes as the match conditions. For example, you can specify both the **text** and **id** attributes to find the target component. 2. Provide multiple match patterns for component attributes. 3. Support absolute positioning and relative positioning for components. APIs such as [ON.isBefore](arkts-test-on-c.md#isbefore-1) and [ON.isAfter](arkts-test-on-c.md#isafter-1) can be used to specify the features of adjacent components to assist positioning. All APIs provided in the **On** class are synchronous. You are advised to use the static constructor **ON** to create an **On** object in chain mode.
 
 **Since:** 9
 
@@ -31,8 +18,7 @@ import { ResizeDirection, WindowMode, PenMode, PenKeyOperation, Driver, MatchPat
 afterComponent(com: Component): On
 ```
 
-Requires that the target Component which is after another Component that specified by the given {@link Component}
-object,used to locate Component relatively.
+Requires that the target Component which is after another Component that specified by the given {@link Component} object,used to locate Component relatively.
 
 **Since:** 26.0.0
 
@@ -64,8 +50,7 @@ object,used to locate Component relatively.
 beforeComponent(com: Component): On
 ```
 
-Requires that the target Component which is before another Component that specified by the given {@link Component}
-object,used to locate Component relatively.
+Requires that the target Component which is before another Component that specified by the given {@link Component} object,used to locate Component relatively.
 
 **Since:** 26.0.0
 
@@ -690,14 +675,7 @@ let on: On = ON.longClickable(true); // Use the static constructor ON to create 
 originalText(text: string, pattern?: MatchPattern): On
 ```
 
-Specifies the text content and text matching pattern of the component.
-
-> **NOTE**
->
-> If the [accessibilityLevel](../../apis-arkui/arkts-components/arkts-arkui-commonmethod-c.md#accessibilitylevel-1)
-> of a component is set to **no** or **no-hide-descendants**, this API can be used to specify the text attribute of
-> the target component for searching for the component. In this case, the [On.text()](arkts-test-on-c.md#text-1) API does not
-> take effect.
+Specifies the text content and text matching pattern of the component. > **NOTE** > > If the [accessibilityLevel](../../apis-arkui/arkts-components/arkts-arkui-commonmethod-c.md#accessibilitylevel-1) > of a component is set to **no** or **no-hide-descendants**, this API can be used to specify the text attribute of > the target component for searching for the component. In this case, the [On.text()](arkts-test-on-c.md#text-1) API does not > take effect.
 
 **Since:** 20
 
@@ -824,14 +802,7 @@ let on: On = ON.selected(true); // Use the static constructor ON to create an On
 text(txt: string, pattern?: MatchPattern): On
 ```
 
-Specifies the text attribute of the target component. Multiple match patterns are supported.
-
-> **NOTE**
->
-> If the [accessibilityLevel](../../apis-arkui/arkts-components/arkts-arkui-commonmethod-c.md#accessibilitylevel-1)
-> of a component is set to **no** or **no-hide-descendants**, this API cannot be used to specify the text attribute
-> of the target component for searching for the component. In this case, you can use the
-> [On.originalText()](arkts-test-on-c.md#originaltext-1) API.
+Specifies the text attribute of the target component. Multiple match patterns are supported. > **NOTE** > > If the [accessibilityLevel](../../apis-arkui/arkts-components/arkts-arkui-commonmethod-c.md#accessibilitylevel-1) > of a component is set to **no** or **no-hide-descendants**, this API cannot be used to specify the text attribute > of the target component for searching for the component. In this case, you can use the > [On.originalText()](arkts-test-on-c.md#originaltext-1) API.
 
 **Since:** 9
 
@@ -1002,8 +973,7 @@ let on: On = ON.text('java').within(ON.type('Scroll')); // Search for the child 
 withinComponent(com: Component): On
 ```
 
-Requires that the target Component which is inside of another Component that specified by the given {@link Component}
-object,used to locate Component relatively.
+Requires that the target Component which is inside of another Component that specified by the given {@link Component} object,used to locate Component relatively.
 
 **Since:** 26.0.0
 

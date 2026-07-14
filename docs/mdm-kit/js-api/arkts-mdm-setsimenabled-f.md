@@ -12,9 +12,7 @@ import { telephonyManager } from '@kit.MDMKit';
 function setSimEnabled(admin: Want, slotId: number): void
 ```
 
-Enables the SIM card in a specified slot. After it has been disabled with **setSimDisabled**, the card must be
-turned back on manually in **Settings** > **Mobile network** > **SIM management**, as this **setSimEnabled** API
-cannot re-enable it directly.
+Enables the SIM card in a specified slot. After it has been disabled with **setSimDisabled**, the card must be turned back on manually in **Settings** > **Mobile network** > **SIM management**, as this **setSimEnabled** API cannot re-enable it directly.
 
 **Since:** 20
 

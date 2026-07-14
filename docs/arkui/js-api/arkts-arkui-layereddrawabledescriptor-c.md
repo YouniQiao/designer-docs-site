@@ -1,11 +1,6 @@
 # LayeredDrawableDescriptor
 
-Creates a **LayeredDrawableDescriptor** object when the passed resource ID or name belongs to a JSON file that
-contains foreground and background resources. Inherits from
-[DrawableDescriptor](arkts-arkui-drawabledescriptorloadedresult-i.md).
-
-The **drawable.json** file is located under **entry/src/main/resources/base/media** in the project directory. Below
-shows the file content:
+Creates a **LayeredDrawableDescriptor** object when the passed resource ID or name belongs to a JSON file that contains foreground and background resources. Inherits from [DrawableDescriptor](arkts-arkui-drawabledescriptorloadedresult-i.md). The **drawable.json** file is located under **entry/src/main/resources/base/media** in the project directory. Below shows the file content:
 
 **Inheritance/Implementation:** LayeredDrawableDescriptor extends [DrawableDescriptor](arkts-arkui-drawabledescriptor-c.md)
 
@@ -262,8 +257,7 @@ struct Index {
 static getMaskClipPath(): string
 ```
 
-Obtains the built-in clipping path parameters of the system. It is a static method of
-**LayeredDrawableDescriptor**.
+Obtains the built-in clipping path parameters of the system. It is a static method of **LayeredDrawableDescriptor**.
 
 **Since:** 10
 
@@ -312,11 +306,7 @@ struct Index {
 setBlendMode(mode: drawing.BlendMode): void
 ```
 
-Sets the blend mode of **LayeredDrawableDescriptor**. If this API is called for multiple times on the same
-**LayeredDrawableDescriptor** object, only the last call before the drawing completion takes effect. This API does
-not support dynamic switching. The default drawing order of **LayeredDrawableDescriptor** is background, mask, and
-foreground. After the blend mode is set, the drawing order changes to background, foreground, and mask. If the
-specified value is invalid, the default drawing order is used.
+Sets the blend mode of **LayeredDrawableDescriptor**. If this API is called for multiple times on the same **LayeredDrawableDescriptor** object, only the last call before the drawing completion takes effect. This API does not support dynamic switching. The default drawing order of **LayeredDrawableDescriptor** is background, mask, and foreground. After the blend mode is set, the drawing order changes to background, foreground, and mask. If the specified value is invalid, the default drawing order is used.
 
 **Since:** 23
 
@@ -336,7 +326,6 @@ specified value is invalid, the default drawing order is used.
 
 ```TypeScript
 import { DrawableDescriptor, LayeredDrawableDescriptor } from '@kit.ArkUI';
-import { image } from '@kit.ImageKit';
 import { drawing } from '@kit.ArkGraphics2D';
 
 @Entry

@@ -1,15 +1,6 @@
 # RdbStore
 
-Provides APIs for managing data in an RDB store.
-
-Before using the following APIs, you should obtain an **RdbStore** instance by calling the
-[getRdbStore](arkts-arkdata-getrdbstore-f.md#getrdbstore-2)
-method and then call the corresponding method through the instance.
-
-In addition, use
-[execute](arkts-arkdata-rdbstore-i.md#execute-1)
-to initialize the database table structure and related data first, ensuring that the prerequisites for related API
-calls are met.
+Provides APIs for managing data in an RDB store. Before using the following APIs, you should obtain an **RdbStore** instance by calling the [getRdbStore](arkts-arkdata-getrdbstore-f.md#getrdbstore-2) method and then call the corresponding method through the instance. In addition, use [execute](arkts-arkdata-rdbstore-i.md#execute-1) to initialize the database table structure and related data first, ensuring that the prerequisites for related API calls are met.
 
 **Since:** 9
 
@@ -228,13 +219,7 @@ Backs up a database in a specified name.
 batchInsert(table: string, values: Array<ValuesBucket>, callback: AsyncCallback<number>): void
 ```
 
-Inserts a batch of data into the target table.
-
-The data insertion fails if the API returns an error, or if it returns -1 without throwing an error.
-
-Write 32766 parameters per batch using the {@link ConflictResolution.ON_CONFLICT_REPLACE} policy.
-The product of the number of inserted data records and the size of the union of all fields in the inserted data
-equals the number of parameters. This API returns immediately upon a failure during the process.
+Inserts a batch of data into the target table. The data insertion fails if the API returns an error, or if it returns -1 without throwing an error. Write 32766 parameters per batch using the {@link ConflictResolution.ON_CONFLICT_REPLACE} policy. The product of the number of inserted data records and the size of the union of all fields in the inserted data equals the number of parameters. This API returns immediately upon a failure during the process.
 
 **Since:** 9
 
@@ -279,13 +264,7 @@ equals the number of parameters. This API returns immediately upon a failure dur
 batchInsert(table: string, values: Array<ValuesBucket>): Promise<number>
 ```
 
-Inserts a batch of data into the target table.
-
-The data insertion fails if the API returns an error, or if it returns -1 without throwing an error.
-
-Write 32766 parameters per batch using the {@link ConflictResolution.ON_CONFLICT_REPLACE} policy.
-The product of the number of inserted data records and the size of the union of all fields in the inserted data
-equals the number of parameters. This API returns immediately upon a failure during the process.
+Inserts a batch of data into the target table. The data insertion fails if the API returns an error, or if it returns -1 without throwing an error. Write 32766 parameters per batch using the {@link ConflictResolution.ON_CONFLICT_REPLACE} policy. The product of the number of inserted data records and the size of the union of all fields in the inserted data equals the number of parameters. This API returns immediately upon a failure during the process.
 
 **Since:** 9
 
@@ -335,13 +314,7 @@ equals the number of parameters. This API returns immediately upon a failure dur
 batchInsertSync(table: string, values: Array<ValuesBucket>): number
 ```
 
-Inserts a batch of data into the target table.
-
-The data insertion fails if the API returns an error, or if it returns -1 without throwing an error.
-
-Write 32766 parameters per batch using the {@link ConflictResolution.ON_CONFLICT_REPLACE} policy.
-The product of the number of inserted data records and the size of the union of all fields in the inserted data
-equals the number of parameters. This API returns immediately upon a failure during the process.
+Inserts a batch of data into the target table. The data insertion fails if the API returns an error, or if it returns -1 without throwing an error. Write 32766 parameters per batch using the {@link ConflictResolution.ON_CONFLICT_REPLACE} policy. The product of the number of inserted data records and the size of the union of all fields in the inserted data equals the number of parameters. This API returns immediately upon a failure during the process.
 
 **Since:** 12
 
@@ -395,13 +368,7 @@ batchInsertWithConflictResolution(
     ): Promise<number>
 ```
 
-Inserts a batch of data into the target table.
-
-A maximum of 32766 parameters can be inserted at a time. If the number of parameters exceeds the upper limit,
-the error code 14800000 is returned. The product of the number of inserted data records and the size of the union
-of all fields in the inserted data equals the number of parameters. For example, if the size of the union is 10,
-a maximum of 3276 data records can be inserted (3276 * 10 = 32760). Ensure that your application complies with
-this constraint when calling this API to avoid errors caused by excessive parameters.
+Inserts a batch of data into the target table. A maximum of 32766 parameters can be inserted at a time. If the number of parameters exceeds the upper limit, the error code 14800000 is returned. The product of the number of inserted data records and the size of the union of all fields in the inserted data equals the number of parameters. For example, if the size of the union is 10, a maximum of 3276 data records can be inserted (3276 * 10 = 32760). Ensure that your application complies with this constraint when calling this API to avoid errors caused by excessive parameters.
 
 **Since:** 18
 
@@ -456,13 +423,7 @@ batchInsertWithConflictResolutionSync(
     ): number
 ```
 
-Inserts a batch of data into the target table.
-
-A maximum of 32766 parameters can be inserted at a time. If the number of parameters exceeds the upper limit,
-the error code 14800000 is returned. The product of the number of inserted data records and the size of the union
-of all fields in the inserted data equals the number of parameters. For example, if the size of the union is 10,
-a maximum of 3276 data records can be inserted (3276 * 10 = 32760). Ensure that your application complies with
-this constraint when calling this API to avoid errors caused by excessive parameters.
+Inserts a batch of data into the target table. A maximum of 32766 parameters can be inserted at a time. If the number of parameters exceeds the upper limit, the error code 14800000 is returned. The product of the number of inserted data records and the size of the union of all fields in the inserted data equals the number of parameters. For example, if the size of the union is 10, a maximum of 3276 data records can be inserted (3276 * 10 = 32760). Ensure that your application complies with this constraint when calling this API to avoid errors caused by excessive parameters.
 
 **Since:** 18
 
@@ -514,13 +475,7 @@ batchInsertWithReturning(table: string, values: Array<ValuesBucket>, config: Ret
       conflict?: ConflictResolution): Promise<Result>
 ```
 
-Inserts a batch of data into the target table and return a resultSet of changed fields.
-
-A maximum of 32766 parameters can be inserted at a time. If the number of parameters exceeds the upper limit,
-the error code 14800001 is returned. The product of the number of inserted data records and the size of the union
-of all fields in the inserted data equals the number of parameters. For example, if the size of the union is 10,
-a maximum of 3276 data records can be inserted (3276 * 10 = 32760). Ensure that your application complies with
-this constraint when calling this API to avoid errors caused by excessive parameters.
+Inserts a batch of data into the target table and return a resultSet of changed fields. A maximum of 32766 parameters can be inserted at a time. If the number of parameters exceeds the upper limit, the error code 14800001 is returned. The product of the number of inserted data records and the size of the union of all fields in the inserted data equals the number of parameters. For example, if the size of the union is 10, a maximum of 3276 data records can be inserted (3276 * 10 = 32760). Ensure that your application complies with this constraint when calling this API to avoid errors caused by excessive parameters.
 
 **Since:** 23
 
@@ -567,13 +522,7 @@ batchInsertWithReturningSync(table: string, values: Array<ValuesBucket>, config:
       conflict?: ConflictResolution): Result
 ```
 
-Inserts a batch of data into the target table and return a resultSet of changed fields.
-
-A maximum of 32766 parameters can be inserted at a time. If the number of parameters exceeds the upper limit,
-the error code 14800001 is returned. The product of the number of inserted data records and the size of the union
-of all fields in the inserted data equals the number of parameters. For example, if the size of the union is 10,
-a maximum of 3276 data records can be inserted (3276 * 10 = 32760). Ensure that your application complies with
-this constraint when calling this API to avoid errors caused by excessive parameters.
+Inserts a batch of data into the target table and return a resultSet of changed fields. A maximum of 32766 parameters can be inserted at a time. If the number of parameters exceeds the upper limit, the error code 14800001 is returned. The product of the number of inserted data records and the size of the union of all fields in the inserted data equals the number of parameters. For example, if the size of the union is 10, a maximum of 3276 data records can be inserted (3276 * 10 = 32760). Ensure that your application complies with this constraint when calling this API to avoid errors caused by excessive parameters.
 
 **Since:** 23
 
@@ -700,9 +649,7 @@ BeginTransaction before execute your sql.
 cleanDirtyData(table: string, cursor: number, callback: AsyncCallback<void>): void
 ```
 
-Cleans the dirty data, which is the data deleted in the cloud.
-
-Data with a cursor smaller than the specified cursor will be cleaned up.
+Cleans the dirty data, which is the data deleted in the cloud. Data with a cursor smaller than the specified cursor will be cleaned up.
 
 **Since:** 11
 
@@ -791,10 +738,7 @@ Cleans all dirty data deleted in the cloud.
 cleanDirtyData(table: string, cursor?: number): Promise<void>
 ```
 
-Cleans dirty data deleted in the cloud.
-
-If a cursor is specified, data with a cursor smaller than the specified cursor will be cleaned up.
-otherwise clean all.
+Cleans dirty data deleted in the cloud. If a cursor is specified, data with a cursor smaller than the specified cursor will be cleaned up. otherwise clean all.
 
 **Since:** 11
 
@@ -1296,8 +1240,7 @@ Deletes data from the database based on a specified instance object of RdbPredic
 deleteWithReturning(predicates: RdbPredicates, config: ReturningConfig): Promise<Result>
 ```
 
-Deletes data from the database based on a specified instance object of RdbPredicates and return a
-resultSet of changed fields.
+Deletes data from the database based on a specified instance object of RdbPredicates and return a resultSet of changed fields.
 
 **Since:** 23
 
@@ -1341,8 +1284,7 @@ resultSet of changed fields.
 deleteWithReturningSync(predicates: RdbPredicates, config: ReturningConfig): Result
 ```
 
-Deletes data from the database based on a specified instance object of RdbPredicates and return a
-resultSet of changed fields.
+Deletes data from the database based on a specified instance object of RdbPredicates and return a resultSet of changed fields.
 
 **Since:** 23
 
@@ -2203,8 +2145,7 @@ Locks data from the database based on a specified instance object of RdbPredicat
 obtainDistributedTableName(device: string, table: string, callback: AsyncCallback<string>): void
 ```
 
-Obtain distributed table name of specified remote device according to local table name.
-When query remote device database, distributed table name is needed.
+Obtain distributed table name of specified remote device according to local table name. When query remote device database, distributed table name is needed.
 
 **Since:** 9
 
@@ -2235,8 +2176,7 @@ When query remote device database, distributed table name is needed.
 obtainDistributedTableName(device: string, table: string): Promise<string>
 ```
 
-Obtain distributed table name of specified remote device according to local table name.
-When query remote device database, distributed table name is needed.
+Obtain distributed table name of specified remote device according to local table name. When query remote device database, distributed table name is needed.
 
 **Since:** 9
 
@@ -2470,9 +2410,7 @@ Unsubscribes from the SQL execution error logs.
 on(event: 'dataChange', type: SubscribeType, observer: Callback<Array<string>>): void
 ```
 
-Subscribes to data changes of this RDB store.
-The registered callback will be called when data in a distributed RDB store changes.
-the callback will be invoked.
+Subscribes to data changes of this RDB store. The registered callback will be called when data in a distributed RDB store changes. the callback will be invoked.
 
 **Since:** 9
 
@@ -2500,8 +2438,7 @@ the callback will be invoked.
 on(event: 'dataChange', type: SubscribeType, observer: Callback<Array<string>> | Callback<Array<ChangeInfo>>): void
 ```
 
-Subscribes to data changes of this RDB store.
-The registered callback will be called when data in a distributed RDB store changes.
+Subscribes to data changes of this RDB store. The registered callback will be called when data in a distributed RDB store changes.
 
 **Since:** 10
 
@@ -2998,10 +2935,7 @@ Queries data in the database based on SQL statement with sync interface.
 querySqlWithoutRowCount(sql: string, bindArgs?: Array<ValueType>): Promise<LiteResultSet>
 ```
 
-Queries data from the RDB store based on specified conditions without calculating the row count. This API uses a
-promise to return the result and delivers better performance than the
-[querySql](arkts-arkdata-transaction-i.md#querysql-1) API. The number of relational operators between
-expressions and operators in the SQL statement cannot exceed 1,000.
+Queries data from the RDB store based on specified conditions without calculating the row count. This API uses a promise to return the result and delivers better performance than the [querySql](arkts-arkdata-transaction-i.md#querysql-1) API. The number of relational operators between expressions and operators in the SQL statement cannot exceed 1,000.
 
 **Since:** 23
 
@@ -3035,11 +2969,7 @@ expressions and operators in the SQL statement cannot exceed 1,000.
 querySqlWithoutRowCountSync(sql: string, bindArgs?: Array<ValueType>): LiteResultSet
 ```
 
-Queries data from the RDB store based on specified SQL statements without calculating the row count. The number
-of relational operators between expressions and operators in the SQL statement cannot exceed 1,000. If complex
-logic and a large number of loops are involved in the operations on the **LiteResultSet** obtained by
-**querySqlWithoutRowCountSync**, the freeze problem may occur. You are advised to perform this operation in the
-[taskpool](../../apis-arkts/arkts-apis/arkts-taskpool.md) thread.
+Queries data from the RDB store based on specified SQL statements without calculating the row count. The number of relational operators between expressions and operators in the SQL statement cannot exceed 1,000. If complex logic and a large number of loops are involved in the operations on the **LiteResultSet** obtained by **querySqlWithoutRowCountSync**, the freeze problem may occur. You are advised to perform this operation in the [taskpool](../../apis-arkts/arkts-apis/arkts-taskpool.md) thread.
 
 **Since:** 23
 
@@ -3804,11 +3734,7 @@ Sync data between devices.
 syncEx(mode: SyncMode, predicates: RdbPredicates): Promise<Array<SyncResult>>
 ```
 
-Sync data between devices.
-
-1. The difference between the sync interface and the syncEx interface is that they can return more error codes,
-but their functionality is similar.
-2. Before invoking synchronization, call setdistributedTable to set the distributed table.
+Sync data between devices. 1. The difference between the sync interface and the syncEx interface is that they can return more error codes, but their functionality is similar. 2. Before invoking synchronization, call setdistributedTable to set the distributed table.
 
 **Since:** 26.0.0
 
@@ -4143,8 +4069,7 @@ updateWithReturning(values: ValuesBucket, predicates: RdbPredicates, config: Ret
       conflict?: ConflictResolution): Promise<Result>
 ```
 
-Updates data in the database based on a specified instance object of RdbPredicates and return a
-resultSet of changed fields.
+Updates data in the database based on a specified instance object of RdbPredicates and return a resultSet of changed fields.
 
 **Since:** 23
 
@@ -4191,8 +4116,7 @@ updateWithReturningSync(values: ValuesBucket, predicates: RdbPredicates, config:
       conflict?: ConflictResolution): Result
 ```
 
-Updates data in the database based on a specified instance object of RdbPredicates and return a
-resultSet of changed fields.
+Updates data in the database based on a specified instance object of RdbPredicates and return a resultSet of changed fields.
 
 **Since:** 23
 
@@ -4252,8 +4176,7 @@ Set whether the database is rebuilt.
 version: number
 ```
 
-Set RdbStore version. The version number must be an integer greater than 0.
-Obtains the RdbStore version.
+Set RdbStore version. The version number must be an integer greater than 0. Obtains the RdbStore version.
 
 **Type:** number
 

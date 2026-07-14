@@ -12,8 +12,7 @@
 addColorStop(offset: number, color: string): void
 ```
 
-Adds a color stop for the **CanvasGradient** object based on the specified offset
-and gradient color.
+Adds a color stop for the **CanvasGradient** object based on the specified offset and gradient color.
 
 **Since:** 8
 
@@ -36,25 +35,7 @@ and gradient color.
 addColorStop(offset: number, color: string | ColorMetrics): void
 ```
 
-Adds a color stop for the **CanvasGradient** object based on the specified offset
-and gradient color. Colors in RGB or ARGB format can be set. You can set P3 color
-gamut values by passing in the
-[ColorMetrics](../arkts-apis/arkts-arkui-colormetrics-c.md)
-type, which can achieve richer color reproduction on devices that support high color gamut.
-
-> **NOTE**
->
-> Only the
-> [fillStyle](CanvasRenderingContext2D#fillStyle)
-> and
-> [strokeStyle](CanvasRenderingContext2D#strokeStyle)
-> attributes of the
-> [CanvasRenderingContext2D](arkts-arkui-canvasrenderingcontext2d-c.md)
-> object support the **CanvasGradient** object with the P3 wide color gamut. In addition,
-> the color gamut mode of the window where the **Canvas** component is located must be set
-> to wide color gamut mode **WIDE_GAMUT** via the
-> [setWindowColorSpace](Window#setWindowColorSpace)
-> method.
+Adds a color stop for the **CanvasGradient** object based on the specified offset and gradient color. Colors in RGB or ARGB format can be set. You can set P3 color gamut values by passing in the [ColorMetrics](../arkts-apis/arkts-arkui-colormetrics-c.md) type, which can achieve richer color reproduction on devices that support high color gamut. > **NOTE** > > Only the > [fillStyle](CanvasRenderingContext2D#fillStyle) > and > [strokeStyle](CanvasRenderingContext2D#strokeStyle) > attributes of the > [CanvasRenderingContext2D](arkts-arkui-canvasrenderingcontext2d-c.md) > object support the **CanvasGradient** object with the P3 wide color gamut. In addition, > the color gamut mode of the window where the **Canvas** component is located must be set > to wide color gamut mode **WIDE_GAMUT** via the > [setWindowColorSpace](Window#setWindowColorSpace) > method.
 
 **Since:** 20
 

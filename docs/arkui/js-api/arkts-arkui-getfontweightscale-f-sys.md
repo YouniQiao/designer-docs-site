@@ -12,17 +12,7 @@ import { uiAppearance } from '@kit.ArkUI';
 function getFontWeightScale(): number
 ```
 
-Obtains the current font weight scale factor.
-
-<!--Del-->
-
-> **NOTE**
-
-> This API is a system API in API version 19 and earlier. Using this API requires the
-> [ohos.permission.UPDATE_CONFIGURATION](../../../../security/AccessToken/permissions-for-system-apps.md#ohospermissionupdate_configuration)
-> permission.
-
-<!--DelEnd-->
+Obtains the current font weight scale factor. <!--Del--> > **NOTE** > This API is a system API in API version 19 and earlier. Using this API requires the > [ohos.permission.UPDATE_CONFIGURATION](../../../../security/AccessToken/permissions-for-system-apps.md#ohospermissionupdate_configuration) > permission. <!--DelEnd-->
 
 **Since:** 20
 
@@ -57,8 +47,8 @@ try {
   let fontWeightScale = uiAppearance.getFontWeightScale();
   console.info('Get fontWeightScale ' + fontWeightScale);
 } catch (error) {
-  let message = (error as BusinessError).message;
-  console.error('Get fontWeightScale failed, ' + message);
+  let err = error as BusinessError;
+  console.error(`Get fontWeightScale failed. Code: ${err.code}, message: ${err.message}`);
 }
 
 ```

@@ -18,8 +18,7 @@ import { dlpPermission } from '@kit.DataProtectionKit';
 classificationLabel?: string
 ```
 
-User-defined classification label of an enterprise DLP file. The value contains a maximum of 255 bytes. If
-the value is out of range, error code 19100001 is thrown.
+User-defined classification label of an enterprise DLP file. The value contains a maximum of 255 bytes. If the value is out of range, error code 19100001 is thrown.
 
 **Type:** string
 

@@ -30,8 +30,7 @@ fixedMode?: FixedMode
 isInject?: boolean
 ```
 
-表示该触屏输入事件是否为注入事件。注入事件详细介绍可参考
-[@ohos.multimodalInput.inputEventClient](arkts-multimodalinput-inputeventclient.md)。
+表示该触屏输入事件是否为注入事件。注入事件详细介绍可参考 [@ohos.multimodalInput.inputEventClient](arkts-multimodalinput-inputeventclient.md)。
 
 **类型：** boolean
 

@@ -1,7 +1,6 @@
 # ContactSelectionOptions
 
-Defines the Contact selection options, which specifies whether one contact or
-multiple contacts can be selected.
+Defines the Contact selection options, which specifies whether one contact or multiple contacts can be selected.
 
 **Since:** 10
 
@@ -19,8 +18,7 @@ import { contact } from '@kit.ContactsKit';
 filter?: ContactSelectionFilter
 ```
 
-Contact selection filter.
-This API can be used in atomic services since API version 15.
+Contact selection filter. This API can be used in atomic services since API version 15.
 
 **Type:** ContactSelectionFilter
 
@@ -36,9 +34,7 @@ This API can be used in atomic services since API version 15.
 isAutoDismissOnNavigation?: boolean
 ```
 
-Indicates whether the contact picker is automatically closed when page routing is performed,for example, when the application is in the background.
-
-The default value is false
+Indicates whether the contact picker is automatically closed when page routing is performed,for example, when the application is in the background. The default value is false
 
 **Type:** boolean
 
@@ -56,9 +52,7 @@ The default value is false
 isDisplayedByName?: boolean
 ```
 
-Whether to display contacts by name. The value **true** indicates that contacts are displayed by name, and the
-value **false** indicates that contacts are displayed by number. The default value is **false**.
-This API can be used in atomic services since API version 15.
+Whether to display contacts by name. The value **true** indicates that contacts are displayed by name, and the value **false** indicates that contacts are displayed by number. The default value is **false**. This API can be used in atomic services since API version 15.
 
 **Type:** boolean
 
@@ -74,8 +68,7 @@ This API can be used in atomic services since API version 15.
 isMultiSelect?: boolean
 ```
 
-Whether multiple contacts can be selected. The value **true** indicates that multiple contacts can be selected,
-and the value **false** indicates that only one contact can be selected. The default value is **false**.
+Whether multiple contacts can be selected. The value **true** indicates that multiple contacts can be selected, and the value **false** indicates that only one contact can be selected. The default value is **false**.
 
 **Type:** boolean
 
@@ -91,9 +84,7 @@ and the value **false** indicates that only one contact can be selected. The def
 maxSelectable?: number
 ```
 
-Maximum number of contacts. The default value is **10000**. If the value exceeds the maximum number, the default
-value is used.
-This API can be used in atomic services since API version 15.
+Maximum number of contacts. The default value is **10000**. If the value exceeds the maximum number, the default value is used. This API can be used in atomic services since API version 15.
 
 **Type:** number
 

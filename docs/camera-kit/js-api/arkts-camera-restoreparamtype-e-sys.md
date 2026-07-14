@@ -42,8 +42,7 @@ Persistent parameter type. This parameter is used to restore stream information 
 TRANSIENT_ACTIVE_PARAM = 2
 ```
 
-Temporary parameter type. This parameter is used to restore stream information only within a period of time after
-the camera application is closed. Its priority is higher than that of the persistent parameter.
+Temporary parameter type. This parameter is used to restore stream information only within a period of time after the camera application is closed. Its priority is higher than that of the persistent parameter.
 
 **Since:** 11
 

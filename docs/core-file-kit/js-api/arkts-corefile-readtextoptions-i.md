@@ -20,8 +20,7 @@ import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventList
 encoding?: string
 ```
 
-Format of the data to be encoded. This parameter is valid only when the data type is string. The default value is
-**'utf-8'**, which is the only value supported.
+Format of the data to be encoded. This parameter is valid only when the data type is string. The default value is **'utf-8'**, which is the only value supported.
 
 **Type:** string
 

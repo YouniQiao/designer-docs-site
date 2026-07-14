@@ -12,13 +12,7 @@ Uses an image resource as the indicator.
 borderRadius?: Length
 ```
 
-Rounded corner radius of the indicator. It cannot be set in percentage.
-
-Default value: **0.0**
-
-Unit: vp
-
-Value range: [0, +∞)
+Rounded corner radius of the indicator. It cannot be set in percentage. Default value: **0.0** Unit: vp Value range: [0, +∞)
 
 **Type:** Length
 
@@ -38,12 +32,7 @@ Value range: [0, +∞)
 drawable?: DrawableDescriptor
 ```
 
-Image resource of the indicator.
-Supported types: [DrawableDescriptor](../arkts-apis/arkts-arkui-drawabledescriptorloadedresult-i.md),
-[PixelMapDrawableDescriptor](../arkts-apis/arkts-arkui-pixelmapdrawabledescriptor-c.md),
-[LayeredDrawableDescriptor](../arkts-apis/arkts-arkui-layereddrawabledescriptor-c.md), and
-[AnimatedDrawableDescriptor](../arkts-apis/arkts-arkui-animateddrawabledescriptor-c.md). If an invalid image
-resource is passed, the default solid indicator is displayed.
+Image resource of the indicator. Supported types: [DrawableDescriptor](../arkts-apis/arkts-arkui-drawabledescriptorloadedresult-i.md), [PixelMapDrawableDescriptor](../arkts-apis/arkts-arkui-pixelmapdrawabledescriptor-c.md), [LayeredDrawableDescriptor](../arkts-apis/arkts-arkui-layereddrawabledescriptor-c.md), and [AnimatedDrawableDescriptor](../arkts-apis/arkts-arkui-animateddrawabledescriptor-c.md). If an invalid image resource is passed, the default solid indicator is displayed.
 
 **Type:** DrawableDescriptor
 
@@ -61,13 +50,7 @@ resource is passed, the default solid indicator is displayed.
 height?: Length
 ```
 
-Height of the indicator. It cannot be set in percentage.
-
-Default value: **2.0**
-
-Unit: vp
-
-Value range: [0, +∞)
+Height of the indicator. It cannot be set in percentage. Default value: **2.0** Unit: vp Value range: [0, +∞)
 
 **Type:** Length
 
@@ -87,13 +70,7 @@ Value range: [0, +∞)
 marginTop?: Length
 ```
 
-Spacing between the indicator and text. It cannot be set in percentage.
-
-Default value: **8.0**
-
-Unit: vp
-
-Value range: [0, +∞)
+Spacing between the indicator and text. It cannot be set in percentage. Default value: **8.0** Unit: vp Value range: [0, +∞)
 
 **Type:** Length
 
@@ -113,15 +90,7 @@ Value range: [0, +∞)
 width?: Length
 ```
 
-Width of the indicator. It cannot be set in percentage.
-
-Default value: **0.0**
-
-Unit: vp
-
-Value range: [0, +∞)
-
-If this parameter is set to **0**, the tab text width will be used instead.
+Width of the indicator. It cannot be set in percentage. Default value: **0.0** Unit: vp Value range: [0, +∞) If this parameter is set to **0**, the tab text width will be used instead.
 
 **Type:** Length
 

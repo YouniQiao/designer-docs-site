@@ -1,12 +1,6 @@
 # RichEditorTextStyleResult
 
-Provides the text span style information returned by the backend.
-
-While **fontWeight** in **RichEditorTextStyle** sets the font weight, **fontWeight** in **RichEditorTextStyleResult**
-returns the set font weight after conversion to digits.
-
-Conversion relationship between fontWeight in RichEditorSymbolSpanStyle and RichEditorSymbolSpanStyleResult, the
-conversion relationship is the same as that of fontWeight in RichEditorTextStyle and RichEditorTextStyleResult.
+Provides the text span style information returned by the backend. While **fontWeight** in **RichEditorTextStyle** sets the font weight, **fontWeight** in **RichEditorTextStyleResult** returns the set font weight after conversion to digits. Conversion relationship between fontWeight in RichEditorSymbolSpanStyle and RichEditorSymbolSpanStyleResult, the conversion relationship is the same as that of fontWeight in RichEditorTextStyle and RichEditorTextStyleResult.
 
 **Since:** 10
 
@@ -144,12 +138,7 @@ Font weight.
 halfLeading?: boolean
 ```
 
-Whether half leading is enabled.
-
-Whether half leading is enabled. Half leading is the leading split in half and applied equally to the top and
-bottom edges. The value **true** means that half leading is enabled, and **false** means the opposite.
-
-Default value: **false**
+Whether half leading is enabled. Whether half leading is enabled. Half leading is the leading split in half and applied equally to the top and bottom edges. The value **true** means that half leading is enabled, and **false** means the opposite. Default value: **false**
 
 **Type:** boolean
 
@@ -239,9 +228,7 @@ Get the stroke join style of the text.
 strokeWidth?: number
 ```
 
-Text stroke width.
-
-The unit is [vp](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md).
+Text stroke width. The unit is [vp](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md).
 
 **Type:** number
 
@@ -259,17 +246,7 @@ The unit is [vp](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md).
 textBackgroundStyle?: TextBackgroundStyle
 ```
 
-Text background style.
-
-Default value:
-
-{
-
-color: Color.Transparent,
-
-radius: 0
-
-}
+Text background style. Default value: { color: Color.Transparent, radius: 0 }
 
 **Type:** TextBackgroundStyle
 
@@ -287,11 +264,7 @@ radius: 0
 textShadow?: Array<ShadowOptions>
 ```
 
-Text shadow.
-
-**NOTE**
-
-Only the shadow blur radius, shadow color, and shadow offset can be queried.
+Text shadow. **NOTE** Only the shadow blur radius, shadow color, and shadow offset can be queried.
 
 **Type:** Array<ShadowOptions>
 

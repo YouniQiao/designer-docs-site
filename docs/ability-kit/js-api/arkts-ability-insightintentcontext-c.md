@@ -1,10 +1,6 @@
 # InsightIntentContext
 
-The module provides the context for intent execution. It is used as a property in both the
-[intent execution base class](arkts-ability-insightintentexecutor-c.md) and
-[base class decorated with @InsightIntentEntry](arkts-ability-insightintententryexecutor-c.md)
-, offering essential capabilities for intent implementation, for example, starting
-[UIAbility components](arkts-app-ability-uiability.md) within the same application.
+The module provides the context for intent execution. It is used as a property in both the [intent execution base class](arkts-ability-insightintentexecutor-c.md) and [base class decorated with @InsightIntentEntry](arkts-ability-insightintententryexecutor-c.md) , offering essential capabilities for intent implementation, for example, starting [UIAbility components](arkts-app-ability-uiability.md) within the same application.
 
 **Since:** 11
 
@@ -22,8 +18,7 @@ import { InsightIntentContext } from '@kit.AbilityKit';
 setReturnModeForUIAbilityForeground(returnMode: insightIntent.ReturnMode): void
 ```
 
-Sets the return mode of the intent execution result. This API is applicable to intents with the execution mode set
-to [UI_ABILITY_FOREGROUND](arkts-ability-executemode-e.md).
+Sets the return mode of the intent execution result. This API is applicable to intents with the execution mode set to [UI_ABILITY_FOREGROUND](arkts-ability-executemode-e.md).
 
 **Since:** 23
 
@@ -95,8 +90,7 @@ export default class InsightIntentExecutorUI extends InsightIntentExecutor {
 setReturnModeForUIExtensionAbility(returnMode: insightIntent.ReturnMode): void
 ```
 
-Sets the return mode of the intent execution result. This API is applicable to intents with the execution mode set
-to [UI_EXTENSION_ABILITY](arkts-ability-executemode-e.md).
+Sets the return mode of the intent execution result. This API is applicable to intents with the execution mode set to [UI_EXTENSION_ABILITY](arkts-ability-executemode-e.md).
 
 **Since:** 23
 
@@ -167,8 +161,7 @@ export default class InsightIntentExecutorUI extends InsightIntentExecutor {
 startAbility(want: Want, callback: AsyncCallback<void>): void
 ```
 
-Starts a UIAbility. This API can only be used to start UIAbility components within the same application. This API
-uses an asynchronous callback to return the result.
+Starts a UIAbility. This API can only be used to start UIAbility components within the same application. This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -251,8 +244,7 @@ export default class IntentExecutorImpl extends InsightIntentExecutor {
 startAbility(want: Want): Promise<void>
 ```
 
-Starts a UIAbility. This API can only be used to start UIAbility components within the same application. This API
-uses a promise to return the result.
+Starts a UIAbility. This API can only be used to start UIAbility components within the same application. This API uses a promise to return the result.
 
 **Since:** 11
 
@@ -335,11 +327,7 @@ export default class IntentExecutorImpl extends InsightIntentExecutor {
 instanceId: number
 ```
 
-Unique ID of an intent instance. Its execution result can be returned through
-[insightIntentProvider.sendExecuteResult]
-{@link @ohos.app.ability.insightIntentProvider:insightIntentProvider.sendExecuteResult} and
-[insightIntentProvider.sendIntentResult]
-{@link @ohos.app.ability.insightIntentProvider:insightIntentProvider.sendIntentResult}.
+Unique ID of an intent instance. Its execution result can be returned through [insightIntentProvider.sendExecuteResult] {@link @ohos.app.ability.insightIntentProvider:insightIntentProvider.sendExecuteResult} and [insightIntentProvider.sendIntentResult] {@link @ohos.app.ability.insightIntentProvider:insightIntentProvider.sendIntentResult}.
 
 **Type:** number
 

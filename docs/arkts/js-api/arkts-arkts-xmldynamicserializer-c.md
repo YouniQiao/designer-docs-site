@@ -59,8 +59,7 @@ console.info(result); // <d/>
 constructor(encoding?: string)
 ```
 
-A parameterized constructor used to create a new XmlDynamicSerializer instance.
-The input parameter is an encoding format of string type.
+A parameterized constructor used to create a new XmlDynamicSerializer instance. The input parameter is an encoding format of string type.
 
 **Since:** 20
 

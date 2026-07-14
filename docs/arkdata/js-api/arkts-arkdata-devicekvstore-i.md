@@ -1,14 +1,6 @@
 # DeviceKVStore
 
-Provides APIs for querying data in a device KV store and performing cross-device data sync. This class inherits
-from **SingleKVStore**. The **SingleKVStore** APIs such as **put** and **putBatch** can be used.
-Data is distinguished by device in a device KV store. Each device can only write and modify its own data. Data of
-other devices is read-only and cannot be modified.
-For example, a device KV store can be used to implement image sharing between devices. The images of other devices
-can be viewed, but not be modified or deleted.
-Before calling any method in **DeviceKVStore**, you must use
-[getKVStore](arkts-arkdata-kvmanager-i.md#getkvstore-1)
-to obtain a **DeviceKVStore** object.
+Provides APIs for querying data in a device KV store and performing cross-device data sync. This class inherits from **SingleKVStore**. The **SingleKVStore** APIs such as **put** and **putBatch** can be used. Data is distinguished by device in a device KV store. Each device can only write and modify its own data. Data of other devices is read-only and cannot be modified. For example, a device KV store can be used to implement image sharing between devices. The images of other devices can be viewed, but not be modified or deleted. Before calling any method in **DeviceKVStore**, you must use [getKVStore](arkts-arkdata-kvmanager-i.md#getkvstore-1) to obtain a **DeviceKVStore** object.
 
 **Inheritance/Implementation:** DeviceKVStore extends [SingleKVStore](arkts-arkdata-singlekvstore-i.md)
 
@@ -28,8 +20,7 @@ import { distributedKVStore } from '@kit.ArkData';
 get(key: string, callback: AsyncCallback<boolean | string | number | number | Uint8Array>): void
 ```
 
-Obtains the value of the specified key for this device. This API uses an asynchronous callback to return the
-result.
+Obtains the value of the specified key for this device. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -94,15 +85,7 @@ Obtains the value of the specified key for this device. This API uses a promise 
 get(deviceId: string, key: string, callback: AsyncCallback<boolean | string | number | number | Uint8Array>): void
 ```
 
-Obtains a string value that matches the specified device ID and key. This API uses an asynchronous callback to
-return the result.
-
-> **NOTE**
->
-> **deviceId** can be obtained by
-> [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1)
-> .
-> > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
+Obtains a string value that matches the specified device ID and key. This API uses an asynchronous callback to return the result. > **NOTE** > > **deviceId** can be obtained by > [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1) > . > > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
 
 **Since:** 9
 
@@ -133,15 +116,7 @@ return the result.
 get(deviceId: string, key: string): Promise<boolean | string | number | number | Uint8Array>
 ```
 
-Obtains a string value that matches the specified device ID and key. This API uses a promise to return the
-result.
-
-> **NOTE**
->
-> **deviceId** can be obtained by
-> [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1)
-> .
-> > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
+Obtains a string value that matches the specified device ID and key. This API uses a promise to return the result. > **NOTE** > > **deviceId** can be obtained by > [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1) > . > > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
 
 **Since:** 9
 
@@ -177,8 +152,7 @@ result.
 getEntries(keyPrefix: string, callback: AsyncCallback<Entry[]>): void
 ```
 
-Obtains all KV pairs that match the specified key prefix for this device. This API uses an asynchronous callback
-to return the result.
+Obtains all KV pairs that match the specified key prefix for this device. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -221,15 +195,15 @@ try {
   }
   console.info(`entries: ${entries}`);
   kvStore.putBatch(entries, async (err: BusinessError) => {
-    if (err != undefined) {
-      console.error(`Failed to put Batch.code is ${err.code},message is ${err.message}`);
+    if (err) {
+      console.error(`Failed to put Batch. Code: ${err.code}, message: ${err.message}`);
       return;
     }
     console.info('Succeeded in putting Batch');
     if (kvStore != null) {
       kvStore.getEntries('batch_test_string_key', (err: BusinessError, entries: distributedKVStore.Entry[]) => {
-        if (err != undefined) {
-          console.error(`Failed to get Entries.code is ${err.code},message is ${err.message}`);
+        if (err) {
+          console.error(`Failed to get Entries. Code: ${err.code}, message: ${err.message}`);
           return;
         }
         console.info('Succeeded in getting Entries');
@@ -238,9 +212,9 @@ try {
       });
     }
   });
-} catch (e) {
-  let error = e as BusinessError;
-  console.error(`An unexpected error occurred.code is ${error.code},message is ${error.message} `);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`An unexpected error occurred. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -251,8 +225,7 @@ try {
 getEntries(keyPrefix: string): Promise<Entry[]>
 ```
 
-Obtains all KV pairs that match the specified key prefix for this device. This API uses a promise to return the
-result.
+Obtains all KV pairs that match the specified key prefix for this device. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -306,15 +279,15 @@ try {
         console.info('Succeeded in getting Entries');
         console.info(`PutBatch ${entries}`);
       }).catch((err: BusinessError) => {
-        console.error(`Failed to get Entries.code is ${err.code},message is ${err.message}`);
+        console.error(`Failed to get Entries. Code: ${err.code}, message: ${err.message}`);
       });
     }
   }).catch((err: BusinessError) => {
-    console.error(`Failed to put Batch.code is ${err.code},message is ${err.message}`);
+    console.error(`Failed to put Batch. Code: ${err.code}, message: ${err.message}`);
   });
-} catch (e) {
-  let error = e as BusinessError;
-  console.error(`An unexpected error occurred.code is ${error.code},message is ${error.message} `);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`An unexpected error occurred. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -325,15 +298,7 @@ try {
 getEntries(deviceId: string, keyPrefix: string, callback: AsyncCallback<Entry[]>): void
 ```
 
-Obtains all KV pairs that match the specified device ID and key prefix. This API uses an asynchronous callback to
-return the result.
-
-> **NOTE**
->
-> **deviceId** can be obtained by
-> [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1)
-> .
-> > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
+Obtains all KV pairs that match the specified device ID and key prefix. This API uses an asynchronous callback to return the result. > **NOTE** > > **deviceId** can be obtained by > [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1) > . > > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
 
 **Since:** 9
 
@@ -377,15 +342,15 @@ try {
   }
   console.info(`entries : ${entries}`);
   kvStore.putBatch(entries, async (err: BusinessError) => {
-    if (err != undefined) {
-      console.error(`Failed to put batch.code is ${err.code},message is ${err.message}`);
+    if (err) {
+      console.error(`Failed to put batch. Code: ${err.code}, message: ${err.message}`);
       return;
     }
     console.info('Succeeded in putting batch');
     if (kvStore != null) {
       kvStore.getEntries('localDeviceId', 'batch_test_string_key', (err: BusinessError, entries: distributedKVStore.Entry[]) => {
-        if (err != undefined) {
-          console.error(`Failed to get entries.code is ${err.code},message is ${err.message}`);
+        if (err) {
+          console.error(`Failed to get entries. Code: ${err.code}, message: ${err.message}`);
           return;
         }
         console.info('Succeeded in getting entries');
@@ -394,9 +359,9 @@ try {
       });
     }
   });
-} catch (e) {
-  let error = e as BusinessError;
-  console.error(`Failed to put batch.code is ${error.code},message is ${error.message}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to put batch. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -407,15 +372,7 @@ try {
 getEntries(deviceId: string, keyPrefix: string): Promise<Entry[]>
 ```
 
-Obtains all KV pairs that match the specified device ID and key prefix. This API uses a promise to return the
-result.
-
-> **NOTE**
->
-> **deviceId** can be obtained by
-> [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1)
-> .
-> > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
+Obtains all KV pairs that match the specified device ID and key prefix. This API uses a promise to return the result. > **NOTE** > > **deviceId** can be obtained by > [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1) > . > > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
 
 **Since:** 9
 
@@ -473,15 +430,15 @@ try {
         console.info(`entries[0].value: ${entries[0].value}`);
         console.info(`entries[0].value.value: ${entries[0].value.value}`);
       }).catch((err: BusinessError) => {
-        console.error(`Failed to get entries.code is ${err.code},message is ${err.message}`);
+        console.error(`Failed to get entries. Code: ${err.code}, message: ${err.message}`);
       });
     }
   }).catch((err: BusinessError) => {
-    console.error(`Failed to put batch.code is ${err.code},message is ${err.message}`);
+    console.error(`Failed to put batch. Code: ${err.code}, message: ${err.message}`);
   });
-} catch (e) {
-  let error = e as BusinessError;
-  console.error(`Failed to put batch.code is ${error.code},message is ${error.message}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to put batch. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -492,8 +449,7 @@ try {
 getEntries(query: Query, callback: AsyncCallback<Entry[]>): void
 ```
 
-Obtains all KV pairs that match the specified **Query** object for this device. This API uses an asynchronous
-callback to return the result.
+Obtains all KV pairs that match the specified **Query** object for this device. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -535,15 +491,19 @@ try {
     }
     entries.push(entry);
   }
-  console.info(`entries: {entries}`);
+  console.info(`entries: ${entries}`);
   kvStore.putBatch(entries, (err: BusinessError) => {
+    if (err) {
+      console.error(`Failed to put Batch. Code: ${err.code}, message: ${err.message}`);
+      return;
+    }
     console.info('Succeeded in putting Batch');
     const query = new distributedKVStore.Query();
-    query.prefixKey("batch_test");
+    query.prefixKey('batch_test');
     if (kvStore != null) {
       kvStore.getEntries(query, (err: BusinessError, entries: distributedKVStore.Entry[]) => {
-        if (err != undefined) {
-          console.error(`Failed to get Entries.code is ${err.code},message is ${err.message}`);
+        if (err) {
+          console.error(`Failed to get Entries. Code: ${err.code}, message: ${err.message}`);
           return;
         }
         console.info('Succeeded in getting Entries');
@@ -552,9 +512,9 @@ try {
       });
     }
   });
-} catch (e) {
-  let error = e as BusinessError;
-  console.error(`Failed to get Entries.code is ${error.code},message is ${error.message}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to get Entries. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -565,8 +525,7 @@ try {
 getEntries(query: Query): Promise<Entry[]>
 ```
 
-Obtains all KV pairs that match the specified **Query** object for this device. This API uses a promise to return
-the result.
+Obtains all KV pairs that match the specified **Query** object for this device. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -613,25 +572,25 @@ try {
     }
     entries.push(entry);
   }
-  console.info(`entries: {entries}`);
+  console.info(`entries: ${entries}`);
   kvStore.putBatch(entries).then(async () => {
     console.info('Succeeded in putting Batch');
     const query = new distributedKVStore.Query();
-    query.prefixKey("batch_test");
+    query.prefixKey('batch_test');
     if (kvStore != null) {
       kvStore.getEntries(query).then((entries: distributedKVStore.Entry[]) => {
         console.info('Succeeded in getting Entries');
       }).catch((err: BusinessError) => {
-        console.error(`Failed to get Entries.code is ${err.code},message is ${err.message}`);
+        console.error(`Failed to get Entries. Code: ${err.code}, message: ${err.message}`);
       });
     }
   }).catch((err: BusinessError) => {
-    console.error(`Failed to get Entries.code is ${err.code},message is ${err.message}`)
+    console.error(`Failed to get Entries. Code: ${err.code}, message: ${err.message}`);
   });
   console.info('Succeeded in getting Entries');
-} catch (e) {
-  let error = e as BusinessError;
-  console.error(`Failed to get Entries.code is ${error.code},message is ${error.message}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to get Entries. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -642,15 +601,7 @@ try {
 getEntries(deviceId: string, query: Query, callback: AsyncCallback<Entry[]>): void
 ```
 
-Obtains the KV pairs that match the specified device ID and **Query** object. This API uses an asynchronous
-callback to return the result.
-
-> **NOTE**
->
-> **deviceId** can be obtained by
-> [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1)
-> .
-> > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
+Obtains the KV pairs that match the specified device ID and **Query** object. This API uses an asynchronous callback to return the result. > **NOTE** > > **deviceId** can be obtained by > [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1) > . > > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
 
 **Since:** 9
 
@@ -695,18 +646,18 @@ try {
   }
   console.info(`entries: ${entries}`);
   kvStore.putBatch(entries, async (err: BusinessError) => {
-    if (err != undefined) {
-      console.error(`Failed to put batch.code is ${err.code},message is ${err.message}`);
+    if (err) {
+      console.error(`Failed to put batch. Code: ${err.code}, message: ${err.message}`);
       return;
     }
     console.info('Succeeded in putting batch');
     let query = new distributedKVStore.Query();
     query.deviceId('localDeviceId');
-    query.prefixKey("batch_test");
+    query.prefixKey('batch_test');
     if (kvStore != null) {
       kvStore.getEntries('localDeviceId', query, (err: BusinessError, entries: distributedKVStore.Entry[]) => {
-        if (err != undefined) {
-          console.error(`Failed to get entries.code is ${err.code},message is ${err.message}`);
+        if (err) {
+          console.error(`Failed to get entries. Code: ${err.code}, message: ${err.message}`);
           return;
         }
         console.info('Succeeded in getting entries');
@@ -716,9 +667,9 @@ try {
     }
   });
   console.info('Succeeded in getting entries');
-} catch (e) {
-  let error = e as BusinessError;
-  console.error(`Failed to get entries.code is ${error.code},message is ${error.message}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to get entries. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -729,15 +680,7 @@ try {
 getEntries(deviceId: string, query: Query): Promise<Entry[]>
 ```
 
-Obtains the KV pairs that match the specified device ID and **Query** object. This API uses a promise to return
-the result.
-
-> **NOTE**
->
-> **deviceId** can be obtained by
-> [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1)
-> .
-> > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
+Obtains the KV pairs that match the specified device ID and **Query** object. This API uses a promise to return the result. > **NOTE** > > **deviceId** can be obtained by > [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1) > . > > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
 
 **Since:** 9
 
@@ -790,21 +733,21 @@ try {
     console.info('Succeeded in putting batch');
     let query = new distributedKVStore.Query();
     query.deviceId('localDeviceId');
-    query.prefixKey("batch_test");
+    query.prefixKey('batch_test');
     if (kvStore != null) {
       kvStore.getEntries('localDeviceId', query).then((entries: distributedKVStore.Entry[]) => {
         console.info('Succeeded in getting entries');
       }).catch((err: BusinessError) => {
-        console.error(`Failed to get entries.code is ${err.code},message is ${err.message}`);
+        console.error(`Failed to get entries. Code: ${err.code}, message: ${err.message}`);
       });
     }
   }).catch((err: BusinessError) => {
-    console.error(`Failed to put batch.code is ${err.code},message is ${err.message}`);
+    console.error(`Failed to put batch. Code: ${err.code}, message: ${err.message}`);
   });
   console.info('Succeeded in getting entries');
-} catch (e) {
-  let error = e as BusinessError;
-  console.error(`Failed to get entries.code is ${error.code},message is ${error.message}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to get entries. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -815,8 +758,7 @@ try {
 getResultSet(keyPrefix: string, callback: AsyncCallback<KVStoreResultSet>): void
 ```
 
-Obtains a result set with the specified prefix for this device. This API uses an asynchronous callback to return
-the result.
+Obtains a result set with the specified prefix for this device. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -860,23 +802,23 @@ try {
     entries.push(entry);
   }
   kvStore.putBatch(entries, async (err: BusinessError) => {
-    if (err != undefined) {
-      console.error(`Failed to put batch.code is ${err.code},message is ${err.message}`);
+    if (err) {
+      console.error(`Failed to put batch. Code: ${err.code}, message: ${err.message}`);
       return;
     }
     console.info('Succeeded in putting batch');
     if (kvStore != null) {
       kvStore.getResultSet('batch_test_string_key', async (err: BusinessError, result: distributedKVStore.KVStoreResultSet) => {
-        if (err != undefined) {
-          console.error(`Failed to get resultset.code is ${err.code},message is ${err.message}`);
+        if (err) {
+          console.error(`Failed to get resultset. Code: ${err.code}, message: ${err.message}`);
           return;
         }
         console.info('Succeeded in getting result set');
         resultSet = result;
         if (kvStore != null) {
           kvStore.closeResultSet(resultSet, (err: BusinessError) => {
-            if (err != undefined) {
-              console.error(`Failed to close resultset.code is ${err.code},message is ${err.message}`);
+            if (err) {
+              console.error(`Failed to close resultset. Code: ${err.code}, message: ${err.message}`);
               return;
             }
             console.info('Succeeded in closing result set');
@@ -885,9 +827,9 @@ try {
       });
     }
   });
-} catch (e) {
-  let error = e as BusinessError;
-  console.error(`An unexpected error occurred.code is ${error.code},message is ${error.message}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`An unexpected error occurred. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -948,25 +890,25 @@ try {
   }
   kvStore.putBatch(entries).then(async () => {
     console.info('Succeeded in putting batch');
+    kvStore.getResultSet('batch_test_string_key').then((result: distributedKVStore.KVStoreResultSet) => {
+      console.info('Succeeded in getting result set');
+      resultSet = result;
+      if (kvStore != null) {
+        kvStore.closeResultSet(resultSet).then(() => {
+          console.info('Succeeded in closing result set');
+        }).catch((err: BusinessError) => {
+          console.error(`Failed to close resultset. Code: ${err.code}, message: ${err.message}`);
+        });
+      }
+    }).catch((err: BusinessError) => {
+      console.error(`Failed to get resultset. Code: ${err.code}, message: ${err.message}`);
+    });
   }).catch((err: BusinessError) => {
-    console.error(`Failed to put batch.code is ${err.code},message is ${err.message}`);
+    console.error(`Failed to put batch. Code: ${err.code}, message: ${err.message}`);
   });
-  kvStore.getResultSet('batch_test_string_key').then((result: distributedKVStore.KVStoreResultSet) => {
-    console.info('Succeeded in getting result set');
-    resultSet = result;
-    if (kvStore != null) {
-      kvStore.closeResultSet(resultSet).then(() => {
-        console.info('Succeeded in closing result set');
-      }).catch((err: BusinessError) => {
-        console.error(`Failed to close resultset.code is ${err.code},message is ${err.message}`);
-      });
-    }
-  }).catch((err: BusinessError) => {
-    console.error(`Failed to get resultset.code is ${err.code},message is ${err.message}`);
-  });
-} catch (e) {
-  let error = e as BusinessError;
-  console.error(`An unexpected error occurred.code is ${error.code},message is ${error.message}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`An unexpected error occurred. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -977,15 +919,7 @@ try {
 getResultSet(deviceId: string, keyPrefix: string, callback: AsyncCallback<KVStoreResultSet>): void
 ```
 
-Obtains a **KVStoreResultSet** object that matches the specified device ID and key prefix. This API uses an
-asynchronous callback to return the result.
-
-> **NOTE**
->
-> **deviceId** can be obtained by
-> [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1)
-> .
-> > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
+Obtains a **KVStoreResultSet** object that matches the specified device ID and key prefix. This API uses an asynchronous callback to return the result. > **NOTE** > > **deviceId** can be obtained by > [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1) > . > > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
 
 **Since:** 9
 
@@ -1018,25 +952,25 @@ import { BusinessError } from '@kit.BasicServicesKit';
 try {
   let resultSet: distributedKVStore.KVStoreResultSet;
   kvStore.getResultSet('localDeviceId', 'batch_test_string_key', async (err: BusinessError, result: distributedKVStore.KVStoreResultSet) => {
-    if (err != undefined) {
-      console.error(`Failed to get resultSet.code is ${err.code},message is ${err.message}`);
+    if (err) {
+      console.error(`Failed to get resultSet. Code: ${err.code}, message: ${err.message}`);
       return;
     }
     console.info('Succeeded in getting resultSet');
     resultSet = result;
     if (kvStore != null) {
       kvStore.closeResultSet(resultSet, (err: BusinessError) => {
-        if (err != undefined) {
-          console.error(`Failed to close resultSet.code is ${err.code},message is ${err.message}`);
+        if (err) {
+          console.error(`Failed to close resultSet. Code: ${err.code}, message: ${err.message}`);
           return;
         }
         console.info('Succeeded in closing resultSet');
       })
     }
   });
-} catch (e) {
-  let error = e as BusinessError;
-  console.error(`Failed to get resultSet.code is ${error.code},message is ${error.message}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to get resultSet. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -1047,15 +981,7 @@ try {
 getResultSet(deviceId: string, keyPrefix: string): Promise<KVStoreResultSet>
 ```
 
-Obtains a **KVStoreResultSet** object that matches the specified device ID and key prefix. This API uses a
-promise to return the result.
-
-> **NOTE**
->
-> **deviceId** can be obtained by
-> [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1)
-> .
-> > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
+Obtains a **KVStoreResultSet** object that matches the specified device ID and key prefix. This API uses a promise to return the result. > **NOTE** > > **deviceId** can be obtained by > [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1) > . > > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
 
 **Since:** 9
 
@@ -1099,15 +1025,15 @@ try {
       kvStore.closeResultSet(resultSet).then(() => {
         console.info('Succeeded in closing resultSet');
       }).catch((err: BusinessError) => {
-        console.error(`Failed to close resultSet.code is ${err.code},message is ${err.message}`);
+        console.error(`Failed to close resultSet. Code: ${err.code}, message: ${err.message}`);
       });
     }
   }).catch((err: BusinessError) => {
-    console.error(`Failed to get resultSet.code is ${err.code},message is ${err.message}`);
+    console.error(`Failed to get resultSet. Code: ${err.code}, message: ${err.message}`);
   });
-} catch (e) {
-  let error = e as BusinessError;
-  console.error(`Failed to get resultSet.code is ${error.code},message is ${error.message}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to get resultSet. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -1118,15 +1044,7 @@ try {
 getResultSet(query: Query, callback: AsyncCallback<KVStoreResultSet>): void
 ```
 
-Obtains a **KVStoreResultSet** object that matches the specified **Query** object for this device. This API uses
-an asynchronous callback to return the result.
-
-> **NOTE**
->
-> **deviceId** can be obtained by
-> [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1)
-> .
-> > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
+Obtains a **KVStoreResultSet** object that matches the specified **Query** object for this device. This API uses an asynchronous callback to return the result. > **NOTE** > > **deviceId** can be obtained by > [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1) > . > > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
 
 **Since:** 9
 
@@ -1170,25 +1088,25 @@ try {
     entries.push(entry);
   }
   kvStore.putBatch(entries, async (err: BusinessError) => {
-    if (err != undefined) {
-      console.error(`Failed to put batch.code is ${err.code},message is ${err.message}`);
+    if (err) {
+      console.error(`Failed to put batch. Code: ${err.code}, message: ${err.message}`);
       return;
     }
     console.info('Succeeded in putting batch');
     const query = new distributedKVStore.Query();
-    query.prefixKey("batch_test");
+    query.prefixKey('batch_test');
     if (kvStore != null) {
       kvStore.getResultSet(query, async (err: BusinessError, result: distributedKVStore.KVStoreResultSet) => {
-        if (err != undefined) {
-          console.error(`Failed to get resultSet.code is ${err.code},message is ${err.message}`);
+        if (err) {
+          console.error(`Failed to get resultSet. Code: ${err.code}, message: ${err.message}`);
           return;
         }
         console.info('Succeeded in getting resultSet');
         resultSet = result;
         if (kvStore != null) {
           kvStore.closeResultSet(resultSet, (err: BusinessError) => {
-            if (err != undefined) {
-              console.error(`Failed to close resultSet.code is ${err.code},message is ${err.message}`);
+            if (err) {
+              console.error(`Failed to close resultSet. Code: ${err.code}, message: ${err.message}`);
               return;
             }
             console.info('Succeeded in closing resultSet');
@@ -1197,9 +1115,9 @@ try {
       });
     }
   });
-} catch (e) {
-  let error = e as BusinessError;
-  console.error(`Failed to get resultSet`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to get resultSet. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -1210,8 +1128,7 @@ try {
 getResultSet(query: Query): Promise<KVStoreResultSet>
 ```
 
-Obtains a **KVStoreResultSet** object that matches the specified **Query** object for this device. This API uses
-a promise to return the result.
+Obtains a **KVStoreResultSet** object that matches the specified **Query** object for this device. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -1262,19 +1179,19 @@ try {
   kvStore.putBatch(entries).then(async () => {
     console.info('Succeeded in putting batch');
   }).catch((err: BusinessError) => {
-    console.error(`Failed to put batch.code is ${err.code},message is ${err.message}`);
+    console.error(`Failed to put batch. Code: ${err.code}, message: ${err.message}`);
   });
   const query = new distributedKVStore.Query();
-  query.prefixKey("batch_test");
+  query.prefixKey('batch_test');
   kvStore.getResultSet(query).then((result: distributedKVStore.KVStoreResultSet) => {
     console.info('Succeeded in getting result set');
     resultSet = result;
   }).catch((err: BusinessError) => {
-    console.error(`Failed to get resultset.code is ${err.code},message is ${err.message}`);
+    console.error(`Failed to get resultset. Code: ${err.code}, message: ${err.message}`);
   });
-} catch (e) {
-  let error = e as BusinessError;
-  console.error(`An unexpected error occurred.code is ${error.code},message is ${error.message}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`An unexpected error occurred. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -1285,15 +1202,7 @@ try {
 getResultSet(deviceId: string, query: Query, callback: AsyncCallback<KVStoreResultSet>): void
 ```
 
-Obtains a **KVStoreResultSet** object that matches the specified device ID and **Query** object. This API uses an
-asynchronous callback to return the result.
-
-> **NOTE**
->
-> **deviceId** can be obtained by
-> [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1)
-> .
-> > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
+Obtains a **KVStoreResultSet** object that matches the specified device ID and **Query** object. This API uses an asynchronous callback to return the result. > **NOTE** > > **deviceId** can be obtained by > [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1) > . > > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
 
 **Since:** 9
 
@@ -1338,25 +1247,25 @@ try {
     entries.push(entry);
   }
   kvStore.putBatch(entries, async (err: BusinessError) => {
-    if (err != undefined) {
-      console.error(`Failed to put batch.code is ${err.code},message is ${err.message}`);
+    if (err) {
+      console.error(`Failed to put batch. Code: ${err.code}, message: ${err.message}`);
       return;
     }
     console.info('Succeeded in putting batch');
     const query = new distributedKVStore.Query();
-    query.prefixKey("batch_test");
+    query.prefixKey('batch_test');
     if (kvStore != null) {
       kvStore.getResultSet('localDeviceId', query, async (err: BusinessError, result: distributedKVStore.KVStoreResultSet) => {
-        if (err != undefined) {
-          console.error(`Failed to get resultSet.code is ${err.code},message is ${err.message}`);
+        if (err) {
+          console.error(`Failed to get resultSet. Code: ${err.code}, message: ${err.message}`);
           return;
         }
         console.info('Succeeded in getting resultSet');
         resultSet = result;
         if (kvStore != null) {
           kvStore.closeResultSet(resultSet, (err: BusinessError) => {
-            if (err != undefined) {
-              console.error(`Failed to close resultSet.code is ${err.code},message is ${err.message}`);
+            if (err) {
+              console.error(`Failed to close resultSet. Code: ${err.code}, message: ${err.message}`);
               return;
             }
             console.info('Succeeded in closing resultSet');
@@ -1365,9 +1274,9 @@ try {
       });
     }
   });
-} catch (e) {
-  let error = e as BusinessError;
-  console.error(`Failed to get resultSet.code is ${error.code},message is ${error.message}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to get resultSet. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -1378,15 +1287,7 @@ try {
 getResultSet(deviceId: string, query: Query): Promise<KVStoreResultSet>
 ```
 
-Obtains a **KVStoreResultSet** object that matches the specified device ID and **Query** object. This API uses a
-promise to return the result.
-
-> **NOTE**
->
-> **deviceId** can be obtained by
-> [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1)
-> .
-> > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
+Obtains a **KVStoreResultSet** object that matches the specified device ID and **Query** object. This API uses a promise to return the result. > **NOTE** > > **deviceId** can be obtained by > [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1) > . > > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
 
 **Since:** 9
 
@@ -1438,10 +1339,10 @@ try {
   kvStore.putBatch(entries).then(async () => {
     console.info('Succeeded in putting batch');
   }).catch((err: BusinessError) => {
-    console.error(`Failed to put batch.code is ${err.code},message is ${err.message}`);
+    console.error(`Failed to put batch. Code: ${err.code}, message: ${err.message}`);
   });
   const query = new distributedKVStore.Query();
-  query.prefixKey("batch_test");
+  query.prefixKey('batch_test');
   if (kvStore != null) {
     kvStore.getResultSet('localDeviceId', query).then((result: distributedKVStore.KVStoreResultSet) => {
       console.info('Succeeded in getting resultSet');
@@ -1450,19 +1351,19 @@ try {
         kvStore.closeResultSet(resultSet).then(() => {
           console.info('Succeeded in closing resultSet');
         }).catch((err: BusinessError) => {
-          console.error(`Failed to close resultSet.code is ${err.code},message is ${err.message}`);
+          console.error(`Failed to close resultSet. Code: ${err.code}, message: ${err.message}`);
         });
       }
     }).catch((err: BusinessError) => {
-      console.error(`Failed to get resultSet.code is ${err.code},message is ${err.message}`);
+      console.error(`Failed to get resultSet. Code: ${err.code}, message: ${err.message}`);
     });
   }
   query.deviceId('localDeviceId');
-  console.info("GetResultSet " + query.getSqlLike());
+  console.info('GetResultSet ' + query.getSqlLike());
 
-} catch (e) {
-  let error = e as BusinessError;
-  console.error(`Failed to get resultSet.code is ${error.code},message is ${error.message}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to get resultSet. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -1473,8 +1374,7 @@ try {
 getResultSize(query: Query, callback: AsyncCallback<number>): void
 ```
 
-Obtains the number of results that match the specified **Query** object for this device. This API uses an
-asynchronous callback to return the result.
+Obtains the number of results that match the specified **Query** object for this device. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -1517,22 +1417,26 @@ try {
     entries.push(entry);
   }
   kvStore.putBatch(entries, (err: BusinessError) => {
+    if (err) {
+      console.error(`Failed to put batch. Code: ${err.code}, message: ${err.message}`);
+      return;
+    }
     console.info('Succeeded in putting batch');
     const query = new distributedKVStore.Query();
-    query.prefixKey("batch_test");
+    query.prefixKey('batch_test');
     if (kvStore != null) {
       kvStore.getResultSize(query, (err: BusinessError, resultSize: number) => {
-        if (err != undefined) {
-          console.error(`Failed to get result size.code is ${err.code},message is ${err.message}`);
+        if (err) {
+          console.error(`Failed to get result size. Code: ${err.code}, message: ${err.message}`);
           return;
         }
         console.info('Succeeded in getting result set size');
       });
     }
   });
-} catch (e) {
-  let error = e as BusinessError;
-  console.error(`An unexpected error occurred.code is ${error.code},message is ${error.message}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`An unexpected error occurred. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -1543,8 +1447,7 @@ try {
 getResultSize(query: Query): Promise<number>
 ```
 
-Obtains the number of results that match the specified **Query** object for this device. This API uses a promise
-to return the result.
+Obtains the number of results that match the specified **Query** object for this device. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -1594,18 +1497,18 @@ try {
   kvStore.putBatch(entries).then(async () => {
     console.info('Succeeded in putting batch');
   }).catch((err: BusinessError) => {
-    console.error(`Failed to put batch.code is ${err.code},message is ${err.message}`);
+    console.error(`Failed to put batch. Code: ${err.code}, message: ${err.message}`);
   });
   const query = new distributedKVStore.Query();
-  query.prefixKey("batch_test");
+  query.prefixKey('batch_test');
   kvStore.getResultSize(query).then((resultSize: number) => {
     console.info('Succeeded in getting result set size');
   }).catch((err: BusinessError) => {
-    console.error(`Failed to get result size.code is ${err.code},message is ${err.message}`);
+    console.error(`Failed to get result size. Code: ${err.code}, message: ${err.message}`);
   });
-} catch (e) {
-  let error = e as BusinessError;
-  console.error(`An unexpected error occurred.code is ${error.code},message is ${error.message}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`An unexpected error occurred. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -1616,15 +1519,7 @@ try {
 getResultSize(deviceId: string, query: Query, callback: AsyncCallback<number>): void
 ```
 
-Obtains the number of results that match the specified device ID and **Query** object. This API uses an
-asynchronous callback to return the result.
-
-> **NOTE**
->
-> **deviceId** can be obtained by
-> [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1)
-> .
-> > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
+Obtains the number of results that match the specified device ID and **Query** object. This API uses an asynchronous callback to return the result. > **NOTE** > > **deviceId** can be obtained by > [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1) > . > > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
 
 **Since:** 9
 
@@ -1668,26 +1563,26 @@ try {
     entries.push(entry);
   }
   kvStore.putBatch(entries, (err: BusinessError) => {
-    if (err != undefined) {
-      console.error(`Failed to put batch.code is ${err.code},message is ${err.message}`);
+    if (err) {
+      console.error(`Failed to put batch. Code: ${err.code}, message: ${err.message}`);
       return;
     }
     console.info('Succeeded in putting batch');
     const query = new distributedKVStore.Query();
-    query.prefixKey("batch_test");
+    query.prefixKey('batch_test');
     if (kvStore != null) {
       kvStore.getResultSize('localDeviceId', query, (err: BusinessError, resultSize: number) => {
-        if (err != undefined) {
-          console.error(`Failed to get resultSize.code is ${err.code},message is ${err.message}`);
+        if (err) {
+          console.error(`Failed to get resultSize. Code: ${err.code}, message: ${err.message}`);
           return;
         }
         console.info('Succeeded in getting resultSize');
       });
     }
   });
-} catch (e) {
-  let error = e as BusinessError;
-  console.error(`Failed to get resultSize.code is ${error.code},message is ${error.message}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to get resultSize. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -1698,15 +1593,7 @@ try {
 getResultSize(deviceId: string, query: Query): Promise<number>
 ```
 
-Obtains the number of results that match the specified device ID and **Query** object. This API uses a promise to
-return the result.
-
-> **NOTE**
->
-> **deviceId** can be obtained by
-> [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1)
-> .
-> > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
+Obtains the number of results that match the specified device ID and **Query** object. This API uses a promise to return the result. > **NOTE** > > **deviceId** can be obtained by > [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1) > . > > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
 
 **Since:** 9
 
@@ -1757,18 +1644,18 @@ try {
   kvStore.putBatch(entries).then(async () => {
     console.info('Succeeded in putting batch');
   }).catch((err: BusinessError) => {
-    console.error(`Failed to put batch.code is ${err.code},message is ${err.message}`);
+    console.error(`Failed to put batch. Code: ${err.code}, message: ${err.message}`);
   });
   let query = new distributedKVStore.Query();
-  query.prefixKey("batch_test");
+  query.prefixKey('batch_test');
   kvStore.getResultSize('localDeviceId', query).then((resultSize: number) => {
     console.info('Succeeded in getting resultSize');
   }).catch((err: BusinessError) => {
-    console.error(`Failed to get resultSize.code is ${err.code},message is ${err.message}`);
+    console.error(`Failed to get resultSize. Code: ${err.code}, message: ${err.message}`);
   });
-} catch (e) {
-  let error = e as BusinessError;
-  console.error(`Failed to get resultSize.code is ${error.code},message is ${error.message}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to get resultSize. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```

@@ -6,8 +6,7 @@
 function registerAppGroupCallBack(groupCallback: Callback<AppGroupCallbackInfo>, callback: AsyncCallback<void>): void
 ```
 
-应用注册分组变化监听，即用户名下的某个应用分组发生变化时，向所有已注册分组变化监听的应用返回[AppGroupCallbackInfo](arkts-backgroundtasks-appgroupcallbackinfo-i-sys.md)信息。
-使用Callback异步回调。
+应用注册分组变化监听，即用户名下的某个应用分组发生变化时，向所有已注册分组变化监听的应用返回[AppGroupCallbackInfo](arkts-backgroundtasks-appgroupcallbackinfo-i-sys.md)信息。 使用Callback异步回调。
 
 **起始版本：** 9
 
@@ -69,8 +68,7 @@ usageStatistics.registerAppGroupCallBack(onBundleGroupChanged, (err: BusinessErr
 function registerAppGroupCallBack(groupCallback: Callback<AppGroupCallbackInfo>): Promise<void>
 ```
 
-注册应用分组变化监听，即用户名下的某个应用分组发生变化时，向所有已注册分组变化监听的应用返回[AppGroupCallbackInfo](arkts-backgroundtasks-appgroupcallbackinfo-i-sys.md)信息。
-使用Promise异步回调。
+注册应用分组变化监听，即用户名下的某个应用分组发生变化时，向所有已注册分组变化监听的应用返回[AppGroupCallbackInfo](arkts-backgroundtasks-appgroupcallbackinfo-i-sys.md)信息。 使用Promise异步回调。
 
 **起始版本：** 9
 

@@ -1,19 +1,6 @@
 # SecureSession
 
-**SecureSession** inherits from [Session](arkts-camera-session-i.md),
-[Flash](arkts-camera-flash-i.md), [AutoExposure](arkts-camera-autoexposure-i.md),
-[WhiteBalance](arkts-camera-whitebalance-i.md), [Focus](arkts-camera-focus-i.md), and [Zoom](arkts-camera-zoom-i.md).
-
-It implements a secure session, which provides operations on the flash, exposure, white balance, focus, and zoom.
-
-You can call [createSession](arkts-camera-cameramanager-i.md#createsession-1) with
-[SceneMode](arkts-camera-scenemode-e.md) set to **SECURE_PHOTO** to create a session in secure
-mode. The secure mode is designed for applications with high security requirements, such as facial recognition
-systems and banking services. It must be used together with the <!--RP1-->security TA<!--RP1End--> to support
-service scenarios where both standard preview streams and security streams are output.<!--RP2-->
-
-The security TA can verify the signature of data delivered by the server, sign images, parse and assemble TLV logic
-, and read, create, and operate keys. It applies to image processing.<!--RP2End-->
+**SecureSession** inherits from [Session](arkts-camera-session-i.md), [Flash](arkts-camera-flash-i.md), [AutoExposure](arkts-camera-autoexposure-i.md), [WhiteBalance](arkts-camera-whitebalance-i.md), [Focus](arkts-camera-focus-i.md), and [Zoom](arkts-camera-zoom-i.md). It implements a secure session, which provides operations on the flash, exposure, white balance, focus, and zoom. You can call [createSession](arkts-camera-cameramanager-i.md#createsession-1) with [SceneMode](arkts-camera-scenemode-e.md) set to **SECURE_PHOTO** to create a session in secure mode. The secure mode is designed for applications with high security requirements, such as facial recognition systems and banking services. It must be used together with the <!--RP1-->security TA<!--RP1End--> to support service scenarios where both standard preview streams and security streams are output.<!--RP2--> The security TA can verify the signature of data delivered by the server, sign images, parse and assemble TLV logic , and read, create, and operate keys. It applies to image processing.<!--RP2End-->
 
 **Inheritance/Implementation:** SecureSession extends [Session](arkts-camera-session-i.md), [Flash](arkts-camera-flash-i.md), [AutoExposure](arkts-camera-autoexposure-i.md), [WhiteBalance](arkts-camera-whitebalance-i.md), [Focus](arkts-camera-focus-i.md), [Zoom](arkts-camera-zoom-i.md)
 
@@ -103,11 +90,7 @@ Unsubscribes from focus state change events.
 on(type: 'error', callback: ErrorCallback): void
 ```
 
-Subscribes to SecureSession error events. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
+Subscribes to SecureSession error events. This API uses an asynchronous callback to return the result. > **NOTE** > > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
 
 **Since:** 12
 
@@ -128,11 +111,7 @@ Subscribes to SecureSession error events. This API uses an asynchronous callback
 on(type: 'focusStateChange', callback: AsyncCallback<FocusState>): void
 ```
 
-Subscribes to focus state change events. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
+Subscribes to focus state change events. This API uses an asynchronous callback to return the result. > **NOTE** > > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
 
 **Since:** 12
 

@@ -1,7 +1,6 @@
 # CameraManager
 
-Implements camera management. Before calling any API in CameraManager, you must use
-[getCameraManager](arkts-camera-getcameramanager-f.md#getcameramanager-1) to obtain a CameraManager instance.
+Implements camera management. Before calling any API in CameraManager, you must use [getCameraManager](arkts-camera-getcameramanager-f.md#getcameramanager-1) to obtain a CameraManager instance.
 
 **Since:** 10
 
@@ -19,12 +18,7 @@ import { camera } from '@kit.CameraKit';
 createCameraInputWithTokenId(camera: CameraDevice, tokenId: number): CameraInput
 ```
 
-Creates a CameraInput instance by camera and calling token.
-
-Before using this interface, first through the getSupportedCameras interface to query the current list of camera
-devices supported by the device, the developer needs to be based on specific scenarios to choose the camera
-device
-that meets the needs of the developer, and then use this interface to create a CameraInput instance.
+Creates a CameraInput instance by camera and calling token. Before using this interface, first through the getSupportedCameras interface to query the current list of camera devices supported by the device, the developer needs to be based on specific scenarios to choose the camera device that meets the needs of the developer, and then use this interface to create a CameraInput instance.
 
 **Since:** 24
 
@@ -590,8 +584,7 @@ function preSwitch(cameraDevice: camera.CameraDevice, context: common.BaseContex
 prelaunch(): void
 ```
 
-Prelaunches the camera device. This API is called when a user clicks the system camera icon to start the camera
-application.
+Prelaunches the camera device. This API is called when a user clicks the system camera icon to start the camera application.
 
 **Since:** 10
 
@@ -630,9 +623,7 @@ function preLaunch(context: common.BaseContext): void {
 setPrelaunchConfig(prelaunchConfig: PrelaunchConfig): void
 ```
 
-Sets prelaunch configuration.
-Before the setting, call [isPrelaunchSupported](arkts-camera-cameramanager-i-sys.md#isprelaunchsupported-1) to check whether
-the camera device supports prelaunch.
+Sets prelaunch configuration. Before the setting, call [isPrelaunchSupported](arkts-camera-cameramanager-i-sys.md#isprelaunchsupported-1) to check whether the camera device supports prelaunch.
 
 **Since:** 10
 

@@ -18,9 +18,7 @@ import { ResizeDirection, WindowMode, PenMode, PenKeyOperation, Driver, MatchPat
 key1?: number
 ```
 
-The first keyCode to press during the operation.
-If not set, no key event will be injected.
-Setting only key2 without key1 will result in a BusinessError 17000007.
+The first keyCode to press during the operation. If not set, no key event will be injected. Setting only key2 without key1 will result in a BusinessError 17000007.
 
 **Type:** number
 
@@ -36,9 +34,7 @@ Setting only key2 without key1 will result in a BusinessError 17000007.
 key2?: number
 ```
 
-The second KeyCode to press during the operation.
-If not set, no key event will be injected.
-Setting only key2 without key1 will result in a BusinessError 17000007.
+The second KeyCode to press during the operation. If not set, no key event will be injected. Setting only key2 without key1 will result in a BusinessError 17000007.
 
 **Type:** number
 

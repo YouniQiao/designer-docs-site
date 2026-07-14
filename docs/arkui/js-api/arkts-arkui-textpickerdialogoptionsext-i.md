@@ -126,9 +126,7 @@ Defines the textPickerDialog's background effect with options
 canLoop?: boolean
 ```
 
-Can scroll loop if true is set, on the contrary it can not.
-
-Default Value: true
+Can scroll loop if true is set, on the contrary it can not. Default Value: true
 
 **Type:** boolean
 
@@ -552,8 +550,7 @@ Defines the dialog's shadow.
 systemMaterial?: SystemUiMaterial
 ```
 
-Set system-styled materials for dialog. Different materials have different effects,
-which can influence backgroundColor, border, shadow, and other visual attributes of dialog.
+Set system-styled materials for dialog. Different materials have different effects, which can influence backgroundColor, border, shadow, and other visual attributes of dialog.
 
 **Type:** SystemUiMaterial
 

@@ -1,10 +1,24 @@
 # AlbumKeys
 
-Enumerates the key album attributes.
+Enumerates the album keys.
 
-**Since:** 12
+**Since:** 10
 
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
+
+## ALBUM_LPATH
+
+```TypeScript
+ALBUM_LPATH = 'lpath'
+```
+
+Virtual path of the album. Albums and their virtual path values: - Camera application album: '/DCIM/Camera' - Screenshot application album: '/Pictures/Screenshots' - Screen recording application album: '/Pictures/Screenrecords' - User-created album: '/Pictures/Users/{Custom album name}'
+
+**Since:** 23
+
+**System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
+
+**System API:** This is a system API.
 
 ## BUNDLE_NAME
 
@@ -40,7 +54,7 @@ Timestamp when the album was modified, in milliseconds.
 COVER_URI_SOURCE = 'cover_uri_source'
 ```
 
-album cover uri source
+Source URI of the album cover.
 
 **Since:** 20
 
@@ -54,7 +68,7 @@ album cover uri source
 UPLOAD_STATUS = 'upload_status'
 ```
 
-Album upload status
+Synchronization status of the album.
 
 **Since:** 22
 
@@ -68,7 +82,7 @@ Album upload status
 HIDDEN = 'hidden'
 ```
 
-hidden state of album
+Hidden status.
 
 **Since:** 23
 

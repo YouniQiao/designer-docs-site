@@ -1,8 +1,6 @@
 # AnimatedDrawableDescriptor
 
-Defines a descriptor object used to play animated content (for example, **PixelMap** arrays or animated image
-resources) using the [Image](./@internal/component/ets/image) component. It inherits from
-[DrawableDescriptor](arkts-arkui-drawabledescriptorloadedresult-i.md).
+Defines a descriptor object used to play animated content (for example, **PixelMap** arrays or animated image resources) using the [Image](./@internal/component/ets/image) component. It inherits from [DrawableDescriptor](arkts-arkui-drawabledescriptorloadedresult-i.md).
 
 **Inheritance/Implementation:** AnimatedDrawableDescriptor extends [DrawableDescriptor](arkts-arkui-drawabledescriptor-c.md)
 

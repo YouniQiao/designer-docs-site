@@ -124,9 +124,7 @@ Indicates direction information.
 latitude: number
 ```
 
-Indicates latitude information.
-A positive value indicates north latitude,
-and a negative value indicates south latitude.
+Indicates latitude information. A positive value indicates north latitude, and a negative value indicates south latitude.
 
 **Type:** number
 
@@ -146,9 +144,7 @@ and a negative value indicates south latitude.
 longitude: number
 ```
 
-Indicates Longitude information.
-A positive value indicates east longitude ,
-and a negative value indicates west longitude .
+Indicates Longitude information. A positive value indicates east longitude , and a negative value indicates west longitude .
 
 **Type:** number
 

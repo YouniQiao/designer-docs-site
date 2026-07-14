@@ -18,12 +18,7 @@ import { geoLocationManager } from '@kit.LocationKit';
 locale?: string
 ```
 
-Indicates the language area information.
-ISO 639 alpha-2 or alpha-3 language code.
-Example: "zh" (Chinese), "en" (English).
-
-The default value is obtained from the language settings of the device (settings/system/Language & region
-/Language).
+Indicates the language area information. ISO 639 alpha-2 or alpha-3 language code. Example: "zh" (Chinese), "en" (English). The default value is obtained from the language settings of the device (settings/system/Language & region /Language).
 
 **Type:** string
 
@@ -41,9 +36,7 @@ The default value is obtained from the language settings of the device (settings
 timeoutMs?: number
 ```
 
-Indicates the timeout period.
-The default value is 5000 ms.
-The value range is all integers.
+Indicates the timeout period. The default value is 5000 ms. The value range is all integers.
 
 **Type:** number
 

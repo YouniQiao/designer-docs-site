@@ -1,12 +1,6 @@
 # SearchOptions
 
-Describes the initialization options of the **Search** component.
-
-> **NOTE**
->
-> To standardize anonymous object definitions, the element definitions here have been revised in API version 18.
-> While historical version information is preserved for anonymous objects, there may be cases where the outer element
-> 's @since version number is higher than inner elements'. This does not affect interface usability.
+Describes the initialization options of the **Search** component. > **NOTE** > > To standardize anonymous object definitions, the element definitions here have been revised in API version 18. > While historical version information is preserved for anonymous objects, there may be cases where the outer element > 's @since version number is higher than inner elements'. This does not affect interface usability.
 
 **Since:** 18
 
@@ -34,19 +28,7 @@ Controller of the **Search** component.
 icon?: string
 ```
 
-Path to the search icon. By default, the system search icon is used.
-
-**NOTE**
-
-The icon data source supports both
-[relative paths](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-image.md#example-25-displaying-an-image-using-a-relative-path)
-and network images.
-
-- The supported formats include PNG, JPG, BMP, SVG, GIF, pixelmap, and HEIF.
-- The Base64 string is supported in the following format: data:image/[png|jpeg|bmp|webp|heif];base64,[base64 data],
-where *[base64 data]* is a Base64 string.
-
-If this attribute and the **searchIcon** attribute are both set, the **searchIcon** attribute takes precedence.
+Path to the search icon. By default, the system search icon is used. **NOTE** The icon data source supports both [relative paths](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-image.md#example-25-displaying-an-image-using-a-relative-path) and network images. - The supported formats include PNG, JPG, BMP, SVG, GIF, pixelmap, and HEIF. - The Base64 string is supported in the following format: data:image/[png|jpeg|bmp|webp|heif];base64,[base64 data], where *[base64 data]* is a Base64 string. If this attribute and the **searchIcon** attribute are both set, the **searchIcon** attribute takes precedence.
 
 **Type:** string
 
@@ -78,15 +60,7 @@ Text displayed when there is no input.
 value?: ResourceStr
 ```
 
-Sets the text input in the search text box.
-
-Since API version 10, this parameter supports two-way binding through
-[$$](../../../../ui/state-management/arkts-two-way-sync.md).
-
-Since API version 18, this parameter supports two-way binding through
-[!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
-
-The Resource type is supported since API version 20.
+Sets the text input in the search text box. Since API version 10, this parameter supports two-way binding through [$$](../../../../ui/state-management/arkts-two-way-sync.md). Since API version 18, this parameter supports two-way binding through [!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters). The Resource type is supported since API version 20.
 
 **Type:** ResourceStr
 

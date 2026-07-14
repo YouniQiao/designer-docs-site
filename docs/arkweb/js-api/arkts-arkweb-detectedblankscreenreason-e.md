@@ -12,9 +12,7 @@ Enumerates the reasons for the blank screen.
 NO_CONTENTFUL_NODES = 0
 ```
 
-No contentful node is detected.
-
-This may be triggered when the detection policy is **DETECTION_CONTENTFUL_NODES_SEVENTEEN**.
+No contentful node is detected. This may be triggered when the detection policy is **DETECTION_CONTENTFUL_NODES_SEVENTEEN**.
 
 **Since:** 22
 
@@ -26,10 +24,7 @@ This may be triggered when the detection policy is **DETECTION_CONTENTFUL_NODES_
 SUB_THRESHOLD_CONTENTFUL_NODES = 1
 ```
 
-The number of contentful nodes detected is less than or equal to the threshold.
-
-This may be triggered when the detection policy is **DETECTION_CONTENTFUL_NODES_SEVENTEEN** and
-**contentfulNodesCountThreshold** is set.
+The number of contentful nodes detected is less than or equal to the threshold. This may be triggered when the detection policy is **DETECTION_CONTENTFUL_NODES_SEVENTEEN** and **contentfulNodesCountThreshold** is set.
 
 **Since:** 22
 

@@ -28,11 +28,7 @@ Action triggered when a menu item is clicked.
 enabled?: boolean
 ```
 
-Whether to enable interactions with the menu item.
-
-**true**: yes; **false**: no
-
-Default value: **true**.
+Whether to enable interactions with the menu item. **true**: yes; **false**: no Default value: **true**.
 
 **Type:** boolean
 
@@ -70,8 +66,7 @@ Menu item icon.
 symbolIcon?: SymbolGlyphModifier
 ```
 
-Icon of a menu item. You can configure the menu item icon using **Modifier**. If both **symbolIcon** and **icon**
-are configured, the icon is not displayed.
+Icon of a menu item. You can configure the menu item icon using **Modifier**. If both **symbolIcon** and **icon** are configured, the icon is not displayed.
 
 **Type:** SymbolGlyphModifier
 

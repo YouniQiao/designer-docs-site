@@ -2,7 +2,6 @@
 
 Provides an interface for indicator.
 
-
 ## IndicatorComponent
 
 ```TypeScript

@@ -12,14 +12,7 @@ Provides gauge indicator options.
 icon?: ResourceStr
 ```
 
-Image path of the icon.
-
-**NOTE**
-
-If this parameter is not set, the default style is used, which is a triangle pointer.
-
-Only icons in SVG format are supported. If icons in other formats are used, the default triangle style indicator is
-used.
+Image path of the icon. **NOTE** If this parameter is not set, the default style is used, which is a triangle pointer. Only icons in SVG format are supported. If icons in other formats are used, the default triangle style indicator is used.
 
 **Type:** ResourceStr
 
@@ -41,20 +34,7 @@ used.
 space?: Dimension
 ```
 
-Distance between the indicator and the outer edge of the ring. The value cannot be in percentage.
-
-Default value: **8**
-
-Unit: vp
-
-**NOTE**
-
-For the default triangle style indicator, the distance is the amount of space between the triangle and the outer
-edge of the ring.
-
-If this parameter is set to a value less than 0, the default value will be used.
-
-If this parameter is set to a value greater than the ring radius, the default value will be used.
+Distance between the indicator and the outer edge of the ring. The value cannot be in percentage. Default value: **8** Unit: vp **NOTE** For the default triangle style indicator, the distance is the amount of space between the triangle and the outer edge of the ring. If this parameter is set to a value less than 0, the default value will be used. If this parameter is set to a value greater than the ring radius, the default value will be used.
 
 **Type:** Dimension
 

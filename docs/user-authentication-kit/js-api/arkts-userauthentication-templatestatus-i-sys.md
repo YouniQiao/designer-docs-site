@@ -1,8 +1,6 @@
 # TemplateStatus (System API)
 
-Describes the complete status information about a registered companion device authentication template, including
-the template ID, data confirmation status, validity, user ID, time when the template is added, supported
-services, and associated device status.
+Describes the complete status information about a registered companion device authentication template, including the template ID, data confirmation status, validity, user ID, time when the template is added, supported services, and associated device status.
 
 **Since:** 23
 
@@ -22,8 +20,7 @@ import { companionDeviceAuth } from '@kit.UserAuthenticationKit';
 addedTime: Date
 ```
 
-Template adding time. Timestamp when the template is created. The value is a Unix timestamp, that is, the
-number of milliseconds elapsed since 00:00:00 on January 1, 1970.
+Template adding time. Timestamp when the template is created. The value is a Unix timestamp, that is, the number of milliseconds elapsed since 00:00:00 on January 1, 1970.
 
 **Type:** Date
 
@@ -41,8 +38,7 @@ number of milliseconds elapsed since 00:00:00 on January 1, 1970.
 deviceStatus: DeviceStatus
 ```
 
-Device status information. It specifies the current status of the companion device associated with the
-template, including the online status and device name.
+Device status information. It specifies the current status of the companion device associated with the template, including the online status and device name.
 
 **Type:** DeviceStatus
 
@@ -60,9 +56,7 @@ template, including the online status and device name.
 enabledBusinessIds: number[]
 ```
 
-List of supported service IDs. It specifies the service scenarios where the template is enabled. You can
-update the service scenarios by calling the
-[updateEnabledBusinessIds](arkts-userauthentication-updateenabledbusinessids-f-sys.md#updateenabledbusinessids-1) API.
+List of supported service IDs. It specifies the service scenarios where the template is enabled. You can update the service scenarios by calling the [updateEnabledBusinessIds](arkts-userauthentication-updateenabledbusinessids-f-sys.md#updateenabledbusinessids-1) API.
 
 **Type:** number[]
 
@@ -80,9 +74,7 @@ update the service scenarios by calling the
 isConfirmed: boolean
 ```
 
-Data confirmation status. The value **true** indicates that the data is real-time data and has been confirmed
-and synchronized with the device. The value **false** indicates that the data is cached data, which may be
-different from the actual device status.
+Data confirmation status. The value **true** indicates that the data is real-time data and has been confirmed and synchronized with the device. The value **false** indicates that the data is cached data, which may be different from the actual device status.
 
 **Type:** boolean
 
@@ -100,9 +92,7 @@ different from the actual device status.
 isValid: boolean
 ```
 
-Template validity. The value **true** indicates that the template is valid and can be used for
-authentication. The value **false** indicates that the template is invalid, may have been deleted or expired,
-and cannot be used for authentication.
+Template validity. The value **true** indicates that the template is valid and can be used for authentication. The value **false** indicates that the template is invalid, may have been deleted or expired, and cannot be used for authentication.
 
 **Type:** boolean
 
@@ -120,8 +110,7 @@ and cannot be used for authentication.
 localUserId: number
 ```
 
-Local user ID. It specifies the user ID associated with the template on the primary device. The value is a
-positive integer greater than or equal to 0.
+Local user ID. It specifies the user ID associated with the template on the primary device. The value is a positive integer greater than or equal to 0.
 
 **Type:** number
 
@@ -139,8 +128,7 @@ positive integer greater than or equal to 0.
 templateId: Uint8Array
 ```
 
-Template ID. Unique ID of a companion device authentication template, which is used to specify the target
-template when the service scope is updated or the authentication status is subscribed to.
+Template ID. Unique ID of a companion device authentication template, which is used to specify the target template when the service scope is updated or the authentication status is subscribed to.
 
 **Type:** Uint8Array
 

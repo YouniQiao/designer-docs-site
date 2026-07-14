@@ -44,8 +44,7 @@ REJECT = 1
 MISMATCH = 2
 ```
 
-表示版本不匹配：迁移发起端应用可以在[onContinue](arkts-ability-uiability-c.md#oncontinue-1)中获取到迁移目标端应用的版本号，进行协商后，如果版本不
-匹配导致无法迁移，可以返回该结果。
+表示版本不匹配：迁移发起端应用可以在[onContinue](arkts-ability-uiability-c.md#oncontinue-1)中获取到迁移目标端应用的版本号，进行协商后，如果版本不 匹配导致无法迁移，可以返回该结果。
 
 **起始版本：** 9
 

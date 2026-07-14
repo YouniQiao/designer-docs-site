@@ -278,19 +278,7 @@ error: string
 extraInfo?: string
 ```
 
-扩展属性，用于定义一些特定组件的属性，包含：
-
-- CheckboxGroupSelectedStatus：表示CheckboxGroup组件的选中状态，其中取值0表示已选中，取值1表示部分选中，取值2表示未选中。
-- Row：Grid组件中聚焦item的行信息，表示该item在第几行。
-- Column：Grid组件中聚焦的item的列，表示该item在第几列。
-- ListItemIndex：List组件中聚焦item的行信息，表示当前该item在第几行。
-- SideBarContainerStates：表示可展开类组件（SideBarContainer、Select）的展开状态，其中取值0表示收起态，取值1表示展开态。
-- ToggleType：表示Toggle组件的具体类型，其中取值0表示Checkbox，取值1表示Switch，取值2表示Button。
-- BindSheet：表示BindSheet组件的状态，其中取值0表示状态高，取值1表示状态中，取值2表示状态低。
-- hasRegisteredHover：表示组件是否注册了onAccessibilityHover事件回调，取值为1表示组件注册了事件回调，若未注册不会使用该字段。
-- direction：表示list组件的布局方向，其中取值"vertical"表示竖向，取值"horizontal"表示横向。
-- expandedState：表示list组件中listItem的展开状态，其中取值"expanded"表示展开态，取值"collapsed"表示收起态。
-- componentTypeDescription：组件类型详细信息，对componentType的补充描述。
+扩展属性，用于定义一些特定组件的属性，包含： - CheckboxGroupSelectedStatus：表示CheckboxGroup组件的选中状态，其中取值0表示已选中，取值1表示部分选中，取值2表示未选中。 - Row：Grid组件中聚焦item的行信息，表示该item在第几行。 - Column：Grid组件中聚焦的item的列，表示该item在第几列。 - ListItemIndex：List组件中聚焦item的行信息，表示当前该item在第几行。 - SideBarContainerStates：表示可展开类组件（SideBarContainer、Select）的展开状态，其中取值0表示收起态，取值1表示展开态。 - ToggleType：表示Toggle组件的具体类型，其中取值0表示Checkbox，取值1表示Switch，取值2表示Button。 - BindSheet：表示BindSheet组件的状态，其中取值0表示状态高，取值1表示状态中，取值2表示状态低。 - hasRegisteredHover：表示组件是否注册了onAccessibilityHover事件回调，取值为1表示组件注册了事件回调，若未注册不会使用该字段。 - direction：表示list组件的布局方向，其中取值"vertical"表示竖向，取值"horizontal"表示横向。 - expandedState：表示list组件中listItem的展开状态，其中取值"expanded"表示展开态，取值"collapsed"表示收起态。 - componentTypeDescription：组件类型详细信息，对componentType的补充描述。
 
 **类型：** string
 

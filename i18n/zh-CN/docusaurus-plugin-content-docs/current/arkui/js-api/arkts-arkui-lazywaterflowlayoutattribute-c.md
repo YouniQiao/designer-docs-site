@@ -98,8 +98,7 @@ header(builder: CustomBuilder | undefined): T
 onVisibleIndexesChange(callback: OnVisibleIndexesChangeCallback | undefined): T
 ```
 
-当组件中显示的第一个或最后一个项目更改时调用。
-它在组件初始化时会触发一次。
+当组件中显示的第一个或最后一个项目更改时调用。 它在组件初始化时会触发一次。
 
 **起始版本：** 26.0.0
 

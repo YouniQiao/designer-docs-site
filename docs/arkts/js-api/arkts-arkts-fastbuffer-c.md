@@ -18,8 +18,7 @@ import { fastbuffer } from '@kit.ArkTS';
 compare(target: FastBuffer | Uint8Array, targetStart?: number, targetEnd?: number, sourceStart?: number, sourceEnd?: number): -1 | 0 | 1
 ```
 
-Compares buf with target and returns a number indicating whether buf comes before, after,
-or is the same as target in sort order. Comparison is based on the actual sequence of bytes in each FastBuffer.
+Compares buf with target and returns a number indicating whether buf comes before, after, or is the same as target in sort order. Comparison is based on the actual sequence of bytes in each FastBuffer.
 
 **Since:** 20
 
@@ -73,8 +72,7 @@ console.info(buf1.compare(buf2, 5, 6, 5).toString());
 copy(target: FastBuffer | Uint8Array, targetStart?: number, sourceStart?: number, sourceEnd?: number): number
 ```
 
-Copies data from a region of buf to a region in target, even if the target memory region overlaps with buf.
-If sourceEnd is greater than the length of the target, the length of the target shall prevail, and the extra part will not be overwritten.
+Copies data from a region of buf to a region in target, even if the target memory region overlaps with buf. If sourceEnd is greater than the length of the target, the length of the target shall prevail, and the extra part will not be overwritten.
 
 **Since:** 20
 
@@ -998,8 +996,7 @@ console.info(buf.readInt8(1).toString());
 readIntBE(offset: number, byteLength: number): number
 ```
 
-Reads byteLength number of bytes from buf at the specified offset and interprets the result as a big-endian,
-two's complement signed value supporting up to 48 bits of accuracy
+Reads byteLength number of bytes from buf at the specified offset and interprets the result as a big-endian, two's complement signed value supporting up to 48 bits of accuracy
 
 **Since:** 20
 
@@ -1044,8 +1041,7 @@ console.info(num.toString());
 readIntLE(offset: number, byteLength: number): number
 ```
 
-Reads byteLength number of bytes from buf at the specified offset and interprets the result as a little-endian,
-two's complement signed value supporting up to 48 bits of accuracy.
+Reads byteLength number of bytes from buf at the specified offset and interprets the result as a little-endian, two's complement signed value supporting up to 48 bits of accuracy.
 
 **Since:** 20
 
@@ -1310,8 +1306,7 @@ console.info(buf.readUInt8(1).toString());
 readUIntBE(offset: number, byteLength: number): number
 ```
 
-Reads byteLength number of bytes from buf at the specified offset and interprets the result as
-an unsigned big-endian integer supporting up to 48 bits of accuracy.
+Reads byteLength number of bytes from buf at the specified offset and interprets the result as an unsigned big-endian integer supporting up to 48 bits of accuracy.
 
 **Since:** 20
 
@@ -1355,8 +1350,7 @@ console.info(buf.readUIntBE(0, 6).toString(16));
 readUIntLE(offset: number, byteLength: number): number
 ```
 
-Reads byteLength number of bytes from buf at the specified offset and interprets the result as an unsigned,
-little-endian integer supporting up to 48 bits of accuracy.
+Reads byteLength number of bytes from buf at the specified offset and interprets the result as an unsigned, little-endian integer supporting up to 48 bits of accuracy.
 
 **Since:** 20
 

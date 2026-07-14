@@ -1,6 +1,6 @@
 # EnabledPriorityNotificationByBundleCallbackData（系统接口）
 
-应用通知优先级开关状态
+应用通知优先级开关状态。
 
 **起始版本：** 23
 
@@ -30,10 +30,7 @@ readonly bundle: string
 readonly enableStatus: notificationManager.PriorityEnableStatus
 ```
 
-应用通知的优先使能状态。
-- DISABLE：不允许设置为优先通知。
-- ENABLE_BY_INTELLIGENT：允许经智能识别、用户关键词匹配、应用规则匹配等方式设置为优先通知。
-- ENABLE：应用通知均设置为优先通知。
+应用通知的优先使能状态。 - DISABLE：不允许设置为优先通知。 - ENABLE_BY_INTELLIGENT：允许经智能识别、用户关键词匹配、应用规则匹配等方式设置为优先通知。 - ENABLE：应用通知均设置为优先通知。
 
 **类型：** notificationManager.PriorityEnableStatus
 

@@ -12,8 +12,7 @@ import { usbManager } from '@kit.BasicServicesKit';
 function getRawDescriptor(pipe: USBDevicePipe): Uint8Array
 ```
 
-Obtains a raw USB descriptor. If the USB service is abnormal, **undefined** may be returned. Check whether the
-return value of the API is empty.
+Obtains a raw USB descriptor. If the USB service is abnormal, **undefined** may be returned. Check whether the return value of the API is empty.
 
 **Since:** 9
 

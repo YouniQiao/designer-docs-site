@@ -13,8 +13,7 @@ export function createPluginModuleContextForHostBundle(context: Context, pluginB
     hostBundleName: string): Promise<Context>
 ```
 
-Creates the context for a plugin based on a given context, plugin bundle name, plugin module name, and application
-bundle name to obtain the basic information about the plugin. This API uses a promise to return the result.
+Creates the context for a plugin based on a given context, plugin bundle name, plugin module name, and application bundle name to obtain the basic information about the plugin. This API uses a promise to return the result.
 
 **Since:** 20
 

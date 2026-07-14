@@ -12,18 +12,7 @@ import { accessibility } from '@kit.AccessibilityKit';
 function on(type: 'accessibilityStateChange', callback: Callback<boolean>): void
 ```
 
-Subscribes to the state changes of the accessibility application. This API uses an asynchronous callback to return
-the result. To obtain information about accessibility applications in the system, use
-[accessibility.getAccessibilityExtensionListSync](arkts-accessibility-getaccessibilityextensionlistsync-f.md#getaccessibilityextensionlistsync-1).
-
-> **NOTE**
->
-> - The callback parameter for registering a listener must use a named function instead of an anonymous function.
-> Otherwise, a new underlying object is created each time the function is called, causing memory leakage.
->
-> - After calling this method, you must use
-> [accessibility.off('accessibilityStateChange')](arkts-accessibility-off-f.md#off-1)
-> to cancel the listener before the object's lifecycle ends. Otherwise, a crash may occur.
+Subscribes to the state changes of the accessibility application. This API uses an asynchronous callback to return the result. To obtain information about accessibility applications in the system, use [accessibility.getAccessibilityExtensionListSync](arkts-accessibility-getaccessibilityextensionlistsync-f.md#getaccessibilityextensionlistsync-1). > **NOTE** > > - The callback parameter for registering a listener must use a named function instead of an anonymous function. > Otherwise, a new underlying object is created each time the function is called, causing memory leakage. > > - After calling this method, you must use > [accessibility.off('accessibilityStateChange')](arkts-accessibility-off-f.md#off-1) > to cancel the listener before the object's lifecycle ends. Otherwise, a crash may occur.
 
 **Since:** 7
 
@@ -67,18 +56,7 @@ accessibility.on('accessibilityStateChange', (data: boolean) => {
 function on(type: 'touchGuideStateChange', callback: Callback<boolean>): void
 ```
 
-Subscribes to the state changes in touch guide mode. This API uses an asynchronous callback to return the result.
-To obtain information about accessibility applications in the system, use
-[accessibility.getAccessibilityExtensionListSync](arkts-accessibility-getaccessibilityextensionlistsync-f.md#getaccessibilityextensionlistsync-1).
-
-> **NOTE**
->
-> - The callback parameter for registering a listener must use a named function instead of an anonymous function.
-> Otherwise, a new underlying object is created each time the function is called, causing memory leakage.
->
-> - After calling this method, you must use
-> [accessibility.off('touchGuideStateChange')](arkts-accessibility-off-f.md#off-2)
-> to cancel the listener before the object's lifecycle ends. Otherwise, a crash may occur.
+Subscribes to the state changes in touch guide mode. This API uses an asynchronous callback to return the result. To obtain information about accessibility applications in the system, use [accessibility.getAccessibilityExtensionListSync](arkts-accessibility-getaccessibilityextensionlistsync-f.md#getaccessibilityextensionlistsync-1). > **NOTE** > > - The callback parameter for registering a listener must use a named function instead of an anonymous function. > Otherwise, a new underlying object is created each time the function is called, causing memory leakage. > > - After calling this method, you must use > [accessibility.off('touchGuideStateChange')](arkts-accessibility-off-f.md#off-2) > to cancel the listener before the object's lifecycle ends. Otherwise, a crash may occur.
 
 **Since:** 7
 
@@ -122,16 +100,7 @@ accessibility.on('touchGuideStateChange', (data: boolean) => {
 function on(type: 'screenReaderStateChange', callback: Callback<boolean>): void
 ```
 
-Subscribes to the state changes of the screen reader. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> - The callback parameter for registering a listener must use a named function instead of an anonymous function.
-> Otherwise, a new underlying object is created each time the function is called, causing memory leakage.
->
-> - After calling this method, you must use
-> [accessibility.off('screenReaderStateChange')](arkts-accessibility-off-f.md#off-3)
-> to cancel the listener before the object's lifecycle ends. Otherwise, a crash may occur.
+Subscribes to the state changes of the screen reader. This API uses an asynchronous callback to return the result. > **NOTE** > > - The callback parameter for registering a listener must use a named function instead of an anonymous function. > Otherwise, a new underlying object is created each time the function is called, causing memory leakage. > > - After calling this method, you must use > [accessibility.off('screenReaderStateChange')](arkts-accessibility-off-f.md#off-3) > to cancel the listener before the object's lifecycle ends. Otherwise, a crash may occur.
 
 **Since:** 18
 
@@ -172,17 +141,7 @@ accessibility.on('screenReaderStateChange', (data: boolean) => {
 function on(type: 'touchModeChange', callback: Callback<string>): void
 ```
 
-Subscribes to the single- or double-touch event changes in touch guide mode. This API uses an asynchronous callback
-to return the result.
-
-> **NOTE**
->
-> - The callback parameter for registering a listener must use a named function instead of an anonymous function.
-> Otherwise, a new underlying object is created each time the function is called, causing memory leakage.
->
-> - After calling this method, you must use
-> [accessibility.off('touchModeChange')](arkts-accessibility-off-f.md#off-4)
-> to cancel the listener before the object's lifecycle ends. Otherwise, a crash may occur.
+Subscribes to the single- or double-touch event changes in touch guide mode. This API uses an asynchronous callback to return the result. > **NOTE** > > - The callback parameter for registering a listener must use a named function instead of an anonymous function. > Otherwise, a new underlying object is created each time the function is called, causing memory leakage. > > - After calling this method, you must use > [accessibility.off('touchModeChange')](arkts-accessibility-off-f.md#off-4) > to cancel the listener before the object's lifecycle ends. Otherwise, a crash may occur.
 
 **Since:** 20
 

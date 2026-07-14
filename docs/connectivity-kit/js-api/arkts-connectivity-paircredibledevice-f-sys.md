@@ -12,9 +12,7 @@ import { connection } from '@kit.ConnectivityKit';
 function pairCredibleDevice(deviceId: string, transport: BluetoothTransport, callback: AsyncCallback<void>): void
 ```
 
-Starts pairing with a credible remote Bluetooth device with transport.
-This interface does not trigger a dialog box and does not require user authorization.
-Only specific system application can use this function.
+Starts pairing with a credible remote Bluetooth device with transport. This interface does not trigger a dialog box and does not require user authorization. Only specific system application can use this function.
 
 **Since:** 10
 
@@ -72,9 +70,7 @@ try {
 function pairCredibleDevice(deviceId: string, transport: BluetoothTransport): Promise<void>
 ```
 
-Starts pairing with a credible remote Bluetooth device with transport.
-This interface does not trigger a dialog box and does not require user authorization.
-Only specific system application can use this function.
+Starts pairing with a credible remote Bluetooth device with transport. This interface does not trigger a dialog box and does not require user authorization. Only specific system application can use this function.
 
 **Since:** 10
 

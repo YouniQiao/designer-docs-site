@@ -1,7 +1,6 @@
 # Writable
 
-Stream to which data can be written. A writable stream allows data to be written to a target, which can be a file,
-an HTTP response, a standard output, another stream, or the like.
+Stream to which data can be written. A writable stream allows data to be written to a target, which can be a file, an HTTP response, a standard output, another stream, or the like.
 
 **Since:** 12
 
@@ -40,9 +39,7 @@ let writableStream = new stream.Writable();
 cork(): boolean
 ```
 
-Forces subsequent writes to be buffered. This API is called to optimize the performance of continuous write
-operations. After this API is called, the value of **writableCorked** is incremented by one. It is recommended
-that this API be used in pair with [uncork()](arkts-arkts-writable-c.md#uncork-1).
+Forces subsequent writes to be buffered. This API is called to optimize the performance of continuous write operations. After this API is called, the value of **writableCorked** is incremented by one. It is recommended that this API be used in pair with [uncork()](arkts-arkts-writable-c.md#uncork-1).
 
 **Since:** 12
 
@@ -81,8 +78,7 @@ console.info("Writable cork result", result); // Writable cork result true
 doInitialize(callback: Function): void
 ```
 
-You need to implement this API but do not call it directly. It is automatically called during the initialization
-of the writable stream. This API uses an asynchronous callback to return the result.
+You need to implement this API but do not call it directly. It is automatically called during the initialization of the writable stream. This API uses an asynchronous callback to return the result.
 
 **Since:** 12
 
@@ -120,8 +116,7 @@ new MyWritable();
 doWrite(chunk: string | Uint8Array, encoding: string, callback: Function): void
 ```
 
-A data write API. You need to implement this API but do not call it directly. This API is automatically called
-when data is written. This API uses an asynchronous callback to return the result.
+A data write API. You need to implement this API but do not call it directly. This API is automatically called when data is written. This API uses an asynchronous callback to return the result.
 
 **Since:** 12
 
@@ -162,8 +157,7 @@ writableStream.write('data', 'utf8');
 doWritev(chunks: string[] | Uint8Array[], callback: Function): void
 ```
 
-A batch data write API. You need to implement this API but do not call it directly. This API is automatically
-called when data is written. This API uses an asynchronous callback to return the result.
+A batch data write API. You need to implement this API but do not call it directly. This API is automatically called when data is written. This API uses an asynchronous callback to return the result.
 
 **Since:** 12
 
@@ -208,12 +202,7 @@ writableStream.end();
 end(chunk?: string | Uint8Array, encoding?: string, callback?: Function): Writable
 ```
 
-Ends the writing process in a writable stream. If the value of **writableCorked** is greater than 0, the value is
-set to **0** and the remaining data in the buffer is output. If the **chunk** parameter is passed, it is treated
-as the final data chunk and written using either the **write** or **doWrite** API, based on the current execution
-context. If **doWrite** is used for writing, the validity check of the **encoding** parameter depends on
-**doWrite**. If **end** is used alone (without **write**) and the **chunk** parameter is passed, the data is
-written through **doWrite**. This API uses an asynchronous callback to return the result.
+Ends the writing process in a writable stream. If the value of **writableCorked** is greater than 0, the value is set to **0** and the remaining data in the buffer is output. If the **chunk** parameter is passed, it is treated as the final data chunk and written using either the **write** or **doWrite** API, based on the current execution context. If **doWrite** is used for writing, the validity check of the **encoding** parameter depends on **doWrite**. If **end** is used alone (without **write**) and the **chunk** parameter is passed, the data is written through **doWrite**. This API uses an asynchronous callback to return the result.
 
 **Since:** 12
 
@@ -409,10 +398,7 @@ console.info("Writable is result", result); // Writable is result true
 uncork(): boolean
 ```
 
-Releases the cork state, flushing the buffered data and writing it to the target location. After this API is
-called, the value of **writableCorked** is decremented by one. If the value reaches **0**, the stream is no
-longer in the cork state. Otherwise, the stream is still in the cork state. It is recommended that this API be
-used in pair with [cork()](arkts-arkts-writable-c.md#cork-1).
+Releases the cork state, flushing the buffered data and writing it to the target location. After this API is called, the value of **writableCorked** is decremented by one. If the value reaches **0**, the stream is no longer in the cork state. Otherwise, the stream is still in the cork state. It is recommended that this API be used in pair with [cork()](arkts-arkts-writable-c.md#cork-1).
 
 **Since:** 12
 

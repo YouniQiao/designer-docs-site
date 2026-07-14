@@ -1,8 +1,6 @@
 # WebNativeMessagingExtensionContext
 
-WebNativeMessagingExtensionContext is the context of web native message extension and is inherited from
-ExtensionContext. It provides the capability of exchanging messages with WebNativeMessagingExtension.
-The APIs of this module can be used only in the stage model.
+WebNativeMessagingExtensionContext is the context of web native message extension and is inherited from ExtensionContext. It provides the capability of exchanging messages with WebNativeMessagingExtension. The APIs of this module can be used only in the stage model.
 
 **Inheritance/Implementation:** WebNativeMessagingExtensionContext extends [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md)
 

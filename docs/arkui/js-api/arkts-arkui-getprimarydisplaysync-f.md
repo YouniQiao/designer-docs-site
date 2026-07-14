@@ -12,9 +12,7 @@ import { display } from '@kit.ArkUI';
 function getPrimaryDisplaySync(): Display
 ```
 
-Obtains the information about the primary display. For devices other than 2-in-1 devices, the Display object
-obtained is the built-in screen. For 2-in-1 devices with an external screen, the Display object obtained is the
-primary screen. For 2-in-1 devices without an external screen, the Display object obtained is the built-in screen.
+Obtains the information about the primary display. For devices other than 2-in-1 devices, the Display object obtained is the built-in screen. For 2-in-1 devices with an external screen, the Display object obtained is the primary screen. For 2-in-1 devices without an external screen, the Display object obtained is the built-in screen.
 
 **Since:** 14
 

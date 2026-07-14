@@ -79,10 +79,7 @@ Called back when all abilities connected to a Service ability are disconnected.
 onReconnect?(want: Want): void
 ```
 
-Called when a new client attempts to connect to a Service ability after all previous client connections to it
-are disconnected.
-<p>The Service ability must have been started but not been destroyed, that is, {@link #startAbility} has been
-called but {@link #terminateSelf} has not.</p>
+Called when a new client attempts to connect to a Service ability after all previous client connections to it are disconnected. <p>The Service ability must have been started but not been destroyed, that is, {@link #startAbility} has been called but {@link #terminateSelf} has not.</p>
 
 **Since:** 7
 
@@ -102,8 +99,7 @@ called but {@link #terminateSelf} has not.</p>
 onStart?(): void
 ```
 
-Called back when an ability is started for initialization (it can be called only once in the entire lifecycle of
-an ability).
+Called back when an ability is started for initialization (it can be called only once in the entire lifecycle of an ability).
 
 **Since:** 7
 

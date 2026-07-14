@@ -1,6 +1,6 @@
 # BaseSelectOptions
 
-Class BaseSelectOptions, which is extracted from class PhotoSelectOptions
+Defines the basic options for selecting media files from Gallery.
 
 **Since:** 12
 
@@ -18,14 +18,13 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 MIMEType?: PhotoViewMIMETypes
 ```
 
-The Type of the file in the picker window.
-Move from class PhotoSelectOptions to it's base class BaseSelectOptions
+Available media file types. **IMAGE_VIDEO_TYPE** is used by default.
 
 **Type:** PhotoViewMIMETypes
 
-**Since:** 12
+**Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -53,7 +52,7 @@ Configuration for asset compatibility capabilities.
 assetFilter?: Array<OperationItem>
 ```
 
-Media asset filtering configuration.
+Media asset filter, with a maximum length of 50 items. If the limit is exceeded, only the first 50 items are used. **NOTE** 1. When this filter is applied, other filters become invalid. 2. When setting multiple conditions, enclose the filter conditions in parentheses to prevent conflicts with internal filter items.
 
 **Type:** Array<OperationItem>
 
@@ -71,7 +70,7 @@ Media asset filtering configuration.
 autoPlayScenes?: Array<AutoPlayScene>
 ```
 
-Moving photo playback mode. Supports up to two modes.
+Playback mode of the moving photo. The maximum array length is 2. If this limit is exceeded, the first two elements are used, and the extra ones are automatically ignored.
 
 **Type:** Array<AutoPlayScene>
 
@@ -89,9 +88,7 @@ Moving photo playback mode. Supports up to two modes.
 combinedMediaTypeFilter?: Array<string>
 ```
 
-Configures filter conditions as a string array, supporting multiple combined
-conditions to specify supported file types. When this parameter is set, the
-original file type configuration parameters `MIMEType` and `mimeTypeFilter` become invalid.
+A string array of filter criteria, supporting combinations of various types. The string format is as follows: **photoType | photoSubType1,photoSubType2, ... | mimeType1,mimeType2, ...** - The first part specifies a single **photoType**, which is fixed at **image** or **video**. - The second part lists 1 to *N* photoSubTypes, separated by commas, with an OR relationship. Currently, the maximum value of *N* is **1**. Options include **movingPhoto** or "*" (ignore). - The third part lists 1 to *N* mimeTypes, separated by commas, with an OR relationship. Currently, the maximum value of *N* is **10**. The format is similar to [MimeTypeFilter](arkts-medialibrary-mimetypefilter-c.md). Filters are combined using intersection logic. The NOT logic is supported. To exclude types, use parentheses. Each string can have only one set. If the filter string does not match the specifications, the result is empty. Only the first three array elements are used; **MIMETypes** and **mimeTypeFilter** are ignored.
 
 **Type:** Array<string>
 
@@ -107,7 +104,7 @@ original file type configuration parameters `MIMEType` and `mimeTypeFilter` beco
 fileSizeFilter?: FileSizeFilter
 ```
 
-Media file size filtering configuration.
+Configuration for file size filtering. When this parameter is set, only media files within the specified size range are displayed. You are advised to notify users that only images or videos of the specified size can be selected.
 
 **Type:** FileSizeFilter
 
@@ -123,9 +120,7 @@ Media file size filtering configuration.
 globalMovingPhotoState?: MovingPhotoBadgeStateType
 ```
 
-Initial state for global moving photos.
-Only MOVING_PHOTO_ENABLE and MOVING_PHOTO_DISABLE are supported for configuration.
-Defaults to MOVING_PHOTO_ENABLE, which enables the dynamic effect.
+Global effect of the moving photo. Currently, only **MOVING_PHOTO_ENABLED** and **MOVING_PHOTO_DISABLED** are supported. The default value is **MOVING_PHOTO_ENABLED**.
 
 **Type:** MovingPhotoBadgeStateType
 
@@ -143,7 +138,7 @@ Defaults to MOVING_PHOTO_ENABLE, which enables the dynamic effect.
 gridPinchMode?: GridPinchMode
 ```
 
-Grid pinch mode.
+Pinch mode of the grid in the picker.
 
 **Type:** GridPinchMode
 
@@ -161,7 +156,7 @@ Grid pinch mode.
 isMovingPhotoBadgeShown?: boolean
 ```
 
-Support showing moving photo badge.
+Whether the moving photo badge is displayed in the photo browser page. **true** to display the badge, **false** to hide it. The default is **false**. If this parameter is set to **true**, [Photoselectresult](arkts-medialibrary-photoselectresult-c.md) returns the **movingPhotoBadgeStates** array. The default status of a moving photo is [MOVING_PHOTO_ENABLED](arkts-medialibrary-movingphotobadgestatetype-e.md). Note: Use both **isMovingPhotoBadgeShown** and **MovingPhotoBadgeStateType** to determine whether a photo is a moving photo.
 
 **Type:** boolean
 
@@ -177,14 +172,13 @@ Support showing moving photo badge.
 isPhotoTakingSupported?: boolean
 ```
 
-Support taking photos.
-Move from class PhotoSelectOptions to it's base class BaseSelectOptions
+Whether photo taking is supported. **true** if supported, **false** otherwise.
 
 **Type:** boolean
 
-**Since:** 12
+**Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -194,7 +188,7 @@ Move from class PhotoSelectOptions to it's base class BaseSelectOptions
 isPreviewForSingleSelectionSupported?: boolean
 ```
 
-Support preview in single selection mode or not
+Whether to enable full image preview if a single image is selected. **true** to enable, **false** otherwise. The default value is **true**.
 
 **Type:** boolean
 
@@ -210,14 +204,13 @@ Support preview in single selection mode or not
 isSearchSupported?: boolean
 ```
 
-Support search.
-Move from class PhotoSelectOptions to it's base class BaseSelectOptions
+Whether the image is searchable. **true** if searchable, **false** otherwise.
 
 **Type:** boolean
 
-**Since:** 12
+**Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -227,14 +220,13 @@ Move from class PhotoSelectOptions to it's base class BaseSelectOptions
 maxSelectNumber?: number
 ```
 
-Maximum number of images for a single selection.
-Move from class PhotoSelectOptions to it's base class BaseSelectOptions
+Maximum number of media files that can be selected. The maximum value is **500**, and the default value is **50** .
 
 **Type:** number
 
-**Since:** 12
+**Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -244,7 +236,7 @@ Move from class PhotoSelectOptions to it's base class BaseSelectOptions
 mimeTypeFilter?: MimeTypeFilter
 ```
 
-Media file filtering configuration.
+Configuration for file type filtering. Multiple types can be specified. When this parameter is set, the **MIMEType** configuration automatically becomes invalid. When this parameter is set, only media files of the configured filter type are displayed. You are advised to notify users that only images or videos of the specified type can be selected.
 
 **Type:** MimeTypeFilter
 
@@ -260,8 +252,7 @@ Media file filtering configuration.
 photoViewMimeTypeFileSizeFilters?: Array<PhotoViewMimeTypeFileSizeFilter>
 ```
 
-Media file type and size combined filtering configuration. The array supports a maximum length of 3.
-Setting this parameter will cause the `fileSizeFilter` and `MIMEType` parameters to be ignored.
+An array used to filter media files by type and size. Only the first three array elements are used; **MIMETypes** and **fileSizeFilter** are ignored.
 
 **Type:** Array<PhotoViewMimeTypeFileSizeFilter>
 
@@ -295,14 +286,13 @@ Preferred compatibility mode.
 preselectedUris?: Array<string>
 ```
 
-The uri for the preselected files.
-Move from class PhotoSelectOptions to it's base class BaseSelectOptions
+URI of the preselected image.
 
 **Type:** Array<string>
 
-**Since:** 12
+**Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -312,14 +302,13 @@ Move from class PhotoSelectOptions to it's base class BaseSelectOptions
 recommendationOptions?: RecommendationOptions
 ```
 
-The recommendation options when use recommendation photo function.
-Move from class PhotoSelectOptions to it's base class BaseSelectOptions
+Image recommendation parameters.
 
 **Type:** RecommendationOptions
 
-**Since:** 12
+**Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -329,7 +318,7 @@ Move from class PhotoSelectOptions to it's base class BaseSelectOptions
 showDateOnScrollbar?: boolean
 ```
 
-Display date information when dragging the scrollbar.
+Whether to display the date group information when the scroll bar is dragged. **true**: yes; **false**: no. The default value is **false**.
 
 **Type:** boolean
 
@@ -347,7 +336,7 @@ Display date information when dragging the scrollbar.
 singleSelectionMode?: SingleSelectionMode
 ```
 
-The mode of single selection
+Single selection mode. The default value is **SingleSelectionMode.BROWSER_MODE**.
 
 **Type:** SingleSelectionMode
 
@@ -363,7 +352,7 @@ The mode of single selection
 videoDurationFilter?: VideoDurationFilter
 ```
 
-Media file video duration filtering configuration.
+Configuration for video duration filtering. When this parameter is set, only media files within the specified duration range are displayed. You are advised to notify users that only videos of the specified length can be selected.
 
 **Type:** VideoDurationFilter
 

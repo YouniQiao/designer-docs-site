@@ -6,10 +6,7 @@
 function getSpecifiedDistributionType(bundleName: string): string
 ```
 
-以同步的方法查询指定bundleName的[HarmonyAppProvision配置文件说明](../../../../security/app-provision-structure.md)，该返回值是在调用install接口时传
-入的[InstallParam](arkts-ability-installparam-i-sys.md)中的specifiedDistributionType字段。
-
-获取调用方自身的信息时不需要权限。
+以同步的方法查询指定bundleName的[HarmonyAppProvision配置文件说明](../../../../security/app-provision-structure.md)，该返回值是在调用install接口时传 入的[InstallParam](arkts-ability-installparam-i-sys.md)中的specifiedDistributionType字段。 获取调用方自身的信息时不需要权限。
 
 **起始版本：** 10
 

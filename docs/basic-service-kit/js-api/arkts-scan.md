@@ -1,9 +1,6 @@
 # @ohos.scan
 
-This module provides JavaScript APIs of the scan framework for discovering and connecting to scanners.
-
-> **NOTE**
-> > This topic describes only public APIs provided by the module.
+This module provides JavaScript APIs of the scan framework for discovering and connecting to scanners. > **NOTE** > > This topic describes only public APIs provided by the module.
 
 **Since:** 20
 
@@ -28,10 +25,10 @@ import { scan } from '@kit.BasicServicesKit';
 | [getScannerCurrentSetting](arkts-basicservices-getscannercurrentsetting-f.md#getscannercurrentsetting-1) | Obtains the current scanner settings. This API uses a promise to return the result. |
 | [getScannerParameter](arkts-basicservices-getscannerparameter-f.md#getscannerparameter-1) | Obtains scanner parameters. This API uses a promise to return the result. |
 | [init](arkts-basicservices-init-f.md#init-1) | Initializes the scan service. This API uses a promise to return the result. |
-| [off](arkts-basicservices-off-f.md#off-1) | Unregisters a callback used to listen for the scanner discovery event. This API uses an asynchronous callback toreturn the result. |
-| [off](arkts-basicservices-off-f.md#off-2) | Unregisters a callback used to listen for the scanner sync event. This API uses an asynchronous callback toreturn the result. |
-| [on](arkts-basicservices-on-f.md#on-1) | Registers a callback used to listen for the scanner discovery event. This API uses an asynchronous callback toreturn the result. |
-| [on](arkts-basicservices-on-f.md#on-2) | Registers a callback used to listen for the scanner sync event. This API uses an asynchronous callback to returnthe result. |
+| [off](arkts-basicservices-off-f.md#off-1) | Unregisters a callback used to listen for the scanner discovery event. This API uses an asynchronous callback to return the result. |
+| [off](arkts-basicservices-off-f.md#off-2) | Unregisters a callback used to listen for the scanner sync event. This API uses an asynchronous callback to return the result. |
+| [on](arkts-basicservices-on-f.md#on-1) | Registers a callback used to listen for the scanner discovery event. This API uses an asynchronous callback to return the result. |
+| [on](arkts-basicservices-on-f.md#on-2) | Registers a callback used to listen for the scanner sync event. This API uses an asynchronous callback to return the result. |
 | [openScanner](arkts-basicservices-openscanner-f.md#openscanner-1) | Opens a scanner. This API uses a promise to return the result. |
 | [setScanAutoOption](arkts-basicservices-setscanautooption-f.md#setscanautooption-1) | Sets the scan option to auto mode. This API uses a promise to return the result. |
 | [setScannerParameter](arkts-basicservices-setscannerparameter-f.md#setscannerparameter-1) | Sets scanner parameters. This API uses a promise to return the result. |
@@ -46,10 +43,10 @@ import { scan } from '@kit.BasicServicesKit';
 | [addScanner](arkts-basicservices-addscanner-f-sys.md#addscanner-1) | Adds a scanner. This API uses a promise to return the result. |
 | [deleteScanner](arkts-basicservices-deletescanner-f-sys.md#deletescanner-1) | Deletes a scanner. This API uses a promise to return the result. |
 | [getAddedScanners](arkts-basicservices-getaddedscanners-f-sys.md#getaddedscanners-1) | Obtains the added scanners. This API uses a promise to return the result. |
-| [off](arkts-basicservices-off-f-sys.md#off-3) | Unregisters the callback used to listen for the scanner addition event. This API uses an asynchronous callback toreturn the result. |
-| [off](arkts-basicservices-off-f-sys.md#off-4) | Unregisters the callback used to listen for the scanner deletion event. This API uses an asynchronous callback toreturn the result. |
-| [on](arkts-basicservices-on-f-sys.md#on-3) | Registers a callback used to listen for the scanner addition event. This API uses an asynchronous callback toreturn the result. |
-| [on](arkts-basicservices-on-f-sys.md#on-4) | Registers a callback used to listen for the scanner deletion event. This API uses an asynchronous callback toreturn the result. |
+| [off](arkts-basicservices-off-f-sys.md#off-3) | Unregisters the callback used to listen for the scanner addition event. This API uses an asynchronous callback to return the result. |
+| [off](arkts-basicservices-off-f-sys.md#off-4) | Unregisters the callback used to listen for the scanner deletion event. This API uses an asynchronous callback to return the result. |
+| [on](arkts-basicservices-on-f-sys.md#on-3) | Registers a callback used to listen for the scanner addition event. This API uses an asynchronous callback to return the result. |
+| [on](arkts-basicservices-on-f-sys.md#on-4) | Registers a callback used to listen for the scanner deletion event. This API uses an asynchronous callback to return the result. |
 <!--DelEnd-->
 
 ### Interfaces

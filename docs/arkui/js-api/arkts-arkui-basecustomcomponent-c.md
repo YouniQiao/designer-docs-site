@@ -14,11 +14,7 @@ Custom Component base class and it is migrated from class CustomComponent.
 aboutToAppear?(): void
 ```
 
-Invoked after a new instance of the custom component is created
-and before its build() function is executed. You can change state variables in aboutToAppear.
-The change will take effect when you execute the build() function next time.
-The aboutToAppear lifecycle callback of a custom component with a custom layout
-is invoked during the layout process.
+Invoked after a new instance of the custom component is created and before its build() function is executed. You can change state variables in aboutToAppear. The change will take effect when you execute the build() function next time. The aboutToAppear lifecycle callback of a custom component with a custom layout is invoked during the layout process.
 
 **Since:** 18
 
@@ -34,9 +30,7 @@ is invoked during the layout process.
 aboutToDisappear?(): void
 ```
 
-Invoked when this component is about to disappear.
-Do not change state variables in the aboutToDisappear function as doing this can cause unexpected errors.
-For example, the modification of the @Link decorated variable may cause unstable application running.
+Invoked when this component is about to disappear. Do not change state variables in the aboutToDisappear function as doing this can cause unexpected errors. For example, the modification of the @Link decorated variable may cause unstable application running.
 
 **Since:** 18
 
@@ -128,10 +122,7 @@ Get current UIContext and it is migrated from class CustomComponent.
 getUniqueId(): number
 ```
 
-Get uniqueId of the custom component and it is migrated from class CustomComponent.
-This unique ID is assigned by the system to each component.
-If this API is called before the component's corresponding node is created or after it has been destroyed, an
-invalid unique ID, which is -1, will be returned.
+Get uniqueId of the custom component and it is migrated from class CustomComponent. This unique ID is assigned by the system to each component. If this API is called before the component's corresponding node is created or after it has been destroyed, an invalid unique ID, which is -1, will be returned.
 
 **Since:** 18
 
@@ -153,9 +144,7 @@ invalid unique ID, which is -1, will be returned.
 onBackPress?(): void | boolean
 ```
 
-Invoked when a user clicks the back button on a router-managed page (a custom component decorated with
-[\@Entry](../../../../ui/state-management/arkts-create-custom-components.md#entry)). The value **true** means that
-the page executes its own return logic, and **false** (default) means that the default return logic is used.
+Invoked when a user clicks the back button on a router-managed page (a custom component decorated with [\@Entry](../../../../ui/state-management/arkts-create-custom-components.md#entry)). The value **true** means that the page executes its own return logic, and **false** (default) means that the default return logic is used.
 
 **Since:** 7
 
@@ -169,9 +158,7 @@ the page executes its own return logic, and **false** (default) means that the d
 onDidBuild?(): void
 ```
 
-The callback method after the custom component is built and it is migrated from class CustomComponent.
-
-Triggered when the custom component has been built.
+The callback method after the custom component is built and it is migrated from class CustomComponent. Triggered when the custom component has been built.
 
 **Since:** 18
 
@@ -211,9 +198,7 @@ onFormRecover Method, this is only for ArkTS form, it is migrated from class Cus
 onFormRecycle?(): string
 ```
 
-onFormRecycle Method, this is only for ArkTS form, if form was marked recyclable by form user, when system memory is low,
-it will be recycled after calling this method, you should return a string of params that you wish to be saved, it will be
-passed back as params in onFormRecover, in which you can recover the form, it is migrated from class CustomComponent.
+onFormRecycle Method, this is only for ArkTS form, if form was marked recyclable by form user, when system memory is low, it will be recycled after calling this method, you should return a string of params that you wish to be saved, it will be passed back as params in onFormRecover, in which you can recover the form, it is migrated from class CustomComponent.
 
 **Since:** 18
 
@@ -237,9 +222,7 @@ passed back as params in onFormRecover, in which you can recover the form, it is
 onMeasureSize?(selfLayoutInfo: GeometryInfo, children: Array<Measurable>, constraint: ConstraintSizeOptions): SizeResult
 ```
 
-Invoked when the custom component needs to determine its size. Through this callback the component
-receives its layout information and size constraints from the ArkUI framework. State variables should
-not be changed in this callback.
+Invoked when the custom component needs to determine its size. Through this callback the component receives its layout information and size constraints from the ArkUI framework. State variables should not be changed in this callback.
 
 **Since:** 18
 
@@ -291,16 +274,7 @@ Triggered when the Entry custom component has been pushed with singleton mode.
 onPageHide?(): void
 ```
 
-Invoked each time a router-managed page (a custom component decorated with
-[\@Entry](../../../../ui/state-management/arkts-create-custom-components.md#entry)) is hidden, including scenarios
-such as route navigation and the application moving to the background.
-
-> **NOTE**
-
-> To ensure smooth UI responsiveness, avoid executing time-consuming operations within the callback function that
-> may block the main thread. For resource-intensive tasks such as camera resource deallocation, consider
-> implementing asynchronous solutions. For best practices, see
-> [Reducing Application Latency: Postponing Resource Release](https://developer.huawei.com/consumer/en/doc/best-practices/bpta-application-latency-optimization-cases#section8783201923819).
+Invoked each time a router-managed page (a custom component decorated with [\@Entry](../../../../ui/state-management/arkts-create-custom-components.md#entry)) is hidden, including scenarios such as route navigation and the application moving to the background. > **NOTE** > To ensure smooth UI responsiveness, avoid executing time-consuming operations within the callback function that > may block the main thread. For resource-intensive tasks such as camera resource deallocation, consider > implementing asynchronous solutions. For best practices, see > [Reducing Application Latency: Postponing Resource Release](https://developer.huawei.com/consumer/en/doc/best-practices/bpta-application-latency-optimization-cases#section8783201923819).
 
 **Since:** 7
 
@@ -314,9 +288,7 @@ such as route navigation and the application moving to the background.
 onPageShow?(): void
 ```
 
-Invoked each time a router-managed page (a custom component decorated with
-[\@Entry](../../../../ui/state-management/arkts-create-custom-components.md#entry)) is displayed, including scenarios
-such as route navigation and the application returning to the foreground.
+Invoked each time a router-managed page (a custom component decorated with [\@Entry](../../../../ui/state-management/arkts-create-custom-components.md#entry)) is displayed, including scenarios such as route navigation and the application returning to the foreground.
 
 **Since:** 7
 
@@ -330,9 +302,7 @@ such as route navigation and the application returning to the foreground.
 onPlaceChildren?(selfLayoutInfo: GeometryInfo, children: Array<Layoutable>, constraint: ConstraintSizeOptions): void
 ```
 
-Invoked when the custom component needs to determine the positions of its child components. Through this
-callback the component receives its child component size constraints from the ArkUI framework.
-State variables should not be changed in this callback.
+Invoked when the custom component needs to determine the positions of its child components. Through this callback the component receives its child component size constraints from the ArkUI framework. State variables should not be changed in this callback.
 
 **Since:** 18
 
@@ -356,16 +326,7 @@ State variables should not be changed in this callback.
 onWillApplyTheme?(theme: Theme): void
 ```
 
-Invoked before the **build()** function of a new instance of the custom component is executed, to obtain the
-**Theme** object of the component context. You can change state variables in **onWillApplyTheme**. The change will
-take effect when you execute the **build()** function next time.
-
-> * * Note: * *
-> Since API version 18, this API can be used in the status management V2 component.
-
-> **NOTE**
-
-> Since API version 18, this API is supported in the components of V2.
+Invoked before the **build()** function of a new instance of the custom component is executed, to obtain the **Theme** object of the component context. You can change state variables in **onWillApplyTheme**. The change will take effect when you execute the **build()** function next time. > * * Note: * * > Since API version 18, this API can be used in the status management V2 component. > **NOTE** > Since API version 18, this API is supported in the components of V2.
 
 **Since:** 12
 
@@ -387,8 +348,7 @@ take effect when you execute the **build()** function next time.
 pageTransition?(): void
 ```
 
-PageTransition Method and it is migrated from class CustomComponent.
-Implement Animation when enter this page or move to other pages.
+PageTransition Method and it is migrated from class CustomComponent. Implement Animation when enter this page or move to other pages.
 
 **Since:** 9
 
@@ -402,8 +362,7 @@ Implement Animation when enter this page or move to other pages.
 queryNavDestinationInfo(): NavDestinationInfo | undefined
 ```
 
-Queries the **NavDestination** information of this custom component. This API has effect only when the component is
-contained within a **NavDestination** component.
+Queries the **NavDestination** information of this custom component. This API has effect only when the component is contained within a **NavDestination** component.
 
 **Since:** 11
 
@@ -425,9 +384,7 @@ contained within a **NavDestination** component.
 queryNavDestinationInfo(isInner: Optional<boolean>): NavDestinationInfo | undefined
 ```
 
-Queries the information of the nearest **NavDestination** component (a navigation page or subpage of the
-**Navigation** component) associated with this custom component. The search direction is controlled by **isInner**:
-**true** for inward search and **false** for outward search.
+Queries the information of the nearest **NavDestination** component (a navigation page or subpage of the **Navigation** component) associated with this custom component. The search direction is controlled by **isInner**: **true** for inward search and **false** for outward search.
 
 **Since:** 18
 

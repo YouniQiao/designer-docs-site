@@ -12,9 +12,7 @@ ArcSliderOptions的构造信息。
 digitalCrownSensitivity?: CrownSensitivity
 ```
 
-设置旋转表冠的灵敏度。
-
-默认值：CrownSensitivity.MEDIUM
+设置旋转表冠的灵敏度。 默认值：CrownSensitivity.MEDIUM
 
 **类型：** CrownSensitivity
 
@@ -30,9 +28,7 @@ digitalCrownSensitivity?: CrownSensitivity
 layoutOptions?: ArcSliderLayoutOptions
 ```
 
-配置弧形Slider的样式信息。
-
-默认值：[ArcSliderStyleOptions](arkts-arkui-arcsliderstyleoptions-c.md)的各项子属性均取其默认值。
+配置弧形Slider的样式信息。 默认值：[ArcSliderStyleOptions](arkts-arkui-arcsliderstyleoptions-c.md)的各项子属性均取其默认值。
 
 **类型：** ArcSliderLayoutOptions
 
@@ -48,9 +44,7 @@ layoutOptions?: ArcSliderLayoutOptions
 onChange?: ArcSliderChangeHandler
 ```
 
-弧形Slider的进度值发生变化时，告知应用。
-
-默认值：不传入的情况，无回调。
+弧形Slider的进度值发生变化时，告知应用。 默认值：不传入的情况，无回调。
 
 **类型：** ArcSliderChangeHandler
 
@@ -66,9 +60,7 @@ onChange?: ArcSliderChangeHandler
 onEnlarge?: ArcSliderEnlargeHandler
 ```
 
-弧形Slider放大或缩小时，告知应用。
-
-默认值：不传入的情况，无回调。
+弧形Slider放大或缩小时，告知应用。 默认值：不传入的情况，无回调。
 
 **类型：** ArcSliderEnlargeHandler
 
@@ -84,9 +76,7 @@ onEnlarge?: ArcSliderEnlargeHandler
 onTouch?: ArcSliderTouchHandler
 ```
 
-弧形Slider被触摸时，告知应用。
-
-默认值：不传入的情况，无回调。
+弧形Slider被触摸时，告知应用。 默认值：不传入的情况，无回调。
 
 **类型：** ArcSliderTouchHandler
 
@@ -102,9 +92,7 @@ onTouch?: ArcSliderTouchHandler
 styleOptions?: ArcSliderStyleOptions
 ```
 
-配置弧形Slider的样式信息。
-
-默认值：[ArcSliderStyleOptions](arkts-arkui-arcsliderstyleoptions-c.md)的各项子属性均取其默认值。
+配置弧形Slider的样式信息。 默认值：[ArcSliderStyleOptions](arkts-arkui-arcsliderstyleoptions-c.md)的各项子属性均取其默认值。
 
 **类型：** ArcSliderStyleOptions
 
@@ -120,9 +108,7 @@ styleOptions?: ArcSliderStyleOptions
 valueOptions?: ArcSliderValueOptions
 ```
 
-配置弧形Slider的样式信息。
-
-默认值：[ArcSliderStyleOptions](arkts-arkui-arcsliderstyleoptions-c.md)的各项子属性均取其默认值。
+配置弧形Slider的样式信息。 默认值：[ArcSliderStyleOptions](arkts-arkui-arcsliderstyleoptions-c.md)的各项子属性均取其默认值。
 
 **类型：** ArcSliderValueOptions
 

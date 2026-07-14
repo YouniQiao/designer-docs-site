@@ -26,9 +26,7 @@ readonly appIndex: number
 readonly appInfo: ApplicationInfo
 ```
 
-应用程序的配置信息，通过调用
-[getBundleInfoForSelf](arkts-ability-getbundleinfoforself-f.md#getbundleinfoforself-1)接
-口，bundleFlags参数传入GET_BUNDLE_INFO_WITH_APPLICATION获取。
+应用程序的配置信息，通过调用 [getBundleInfoForSelf](arkts-ability-getbundleinfoforself-f.md#getbundleinfoforself-1)接 口，bundleFlags参数传入GET_BUNDLE_INFO_WITH_APPLICATION获取。
 
 **类型：** ApplicationInfo
 
@@ -44,8 +42,7 @@ readonly appInfo: ApplicationInfo
 readonly buildVersion?: string
 ```
 
-应用包的构建版本号，用于标识相同发布版本下的不同构建版本包，对应[app.json5](../../../../quick-start/app-configuration-file.md)中配置的buildVersion字段。
-**模型约束：** 此接口仅可在Stage模型下使用。
+应用包的构建版本号，用于标识相同发布版本下的不同构建版本包，对应[app.json5](../../../../quick-start/app-configuration-file.md)中配置的buildVersion字段。 **模型约束：** 此接口仅可在Stage模型下使用。
 
 **类型：** string
 
@@ -79,9 +76,7 @@ readonly firstInstallTime?: number
 readonly hapModulesInfo: Array<HapModuleInfo>
 ```
 
-模块的配置信息，通过调用
-[getBundleInfoForSelf](arkts-ability-getbundleinfoforself-f.md#getbundleinfoforself-1)接
-口，bundleFlags参数传入GET_BUNDLE_INFO_WITH_HAP_MODULE获取。
+模块的配置信息，通过调用 [getBundleInfoForSelf](arkts-ability-getbundleinfoforself-f.md#getbundleinfoforself-1)接 口，bundleFlags参数传入GET_BUNDLE_INFO_WITH_HAP_MODULE获取。
 
 **类型：** Array<HapModuleInfo>
 
@@ -97,11 +92,7 @@ readonly hapModulesInfo: Array<HapModuleInfo>
 readonly installTime: number
 ```
 
-应用包安装时间戳，表示从1970-01-01 08:00:00 UTC+8逝去的毫秒数，单位毫秒。
-
-**说明：**
-
-设备出厂首次开机时，如果未获取到当前时间，会以Unix时间戳基准（1970-01-01 08:00:00 UTC+8）作为当前系统的起始时间。例如，开机后未获取到时间，等待32s之后安装成功，则应用包安装时间戳为32000。
+应用包安装时间戳，表示从1970-01-01 08:00:00 UTC+8逝去的毫秒数，单位毫秒。 **说明：** 设备出厂首次开机时，如果未获取到当前时间，会以Unix时间戳基准（1970-01-01 08:00:00 UTC+8）作为当前系统的起始时间。例如，开机后未获取到时间，等待32s之后安装成功，则应用包安装时间戳为32000。
 
 **类型：** number
 
@@ -149,10 +140,7 @@ readonly name: string
 readonly permissionGrantStates: Array<bundleManager.PermissionGrantState>
 ```
 
-申请权限的授予状态，通过调用
-[getBundleInfoForSelf](arkts-ability-getbundleinfoforself-f.md#getbundleinfoforself-1)接
-口，bundleFlags参数传入GET_BUNDLE_INFO_WITH_REQUESTED_PERMISSION获取。reqPermissionDetails数组和permissionGrantStates数组的索引顺序一一对
-应，即reqPermissionDetails[2]的授权状态为permissionGrantStates[2]。
+申请权限的授予状态，通过调用 [getBundleInfoForSelf](arkts-ability-getbundleinfoforself-f.md#getbundleinfoforself-1)接 口，bundleFlags参数传入GET_BUNDLE_INFO_WITH_REQUESTED_PERMISSION获取。reqPermissionDetails数组和permissionGrantStates数组的索引顺序一一对 应，即reqPermissionDetails[2]的授权状态为permissionGrantStates[2]。
 
 **类型：** Array<bundleManager.PermissionGrantState>
 
@@ -168,10 +156,7 @@ readonly permissionGrantStates: Array<bundleManager.PermissionGrantState>
 readonly reqPermissionDetails: Array<ReqPermissionDetail>
 ```
 
-应用运行时需向系统申请的权限集合的详细信息，通过调用
-[getBundleInfoForSelf](arkts-ability-getbundleinfoforself-f.md#getbundleinfoforself-1)接
-口，bundleFlags参数传入GET_BUNDLE_INFO_WITH_REQUESTED_PERMISSION获取。reqPermissionDetails数组和permissionGrantStates数组的索引顺序一一对
-应，即reqPermissionDetails[2]的授权状态为permissionGrantStates[2]。
+应用运行时需向系统申请的权限集合的详细信息，通过调用 [getBundleInfoForSelf](arkts-ability-getbundleinfoforself-f.md#getbundleinfoforself-1)接 口，bundleFlags参数传入GET_BUNDLE_INFO_WITH_REQUESTED_PERMISSION获取。reqPermissionDetails数组和permissionGrantStates数组的索引顺序一一对 应，即reqPermissionDetails[2]的授权状态为permissionGrantStates[2]。
 
 **类型：** Array<ReqPermissionDetail>
 
@@ -187,9 +172,7 @@ readonly reqPermissionDetails: Array<ReqPermissionDetail>
 readonly routerMap: Array<RouterItem>
 ```
 
-应用的路由表配置，由hapModulesInfo下的routerMap信息，根据RouterItem中的name字段进行去重后合并得到。通过调用
-[getBundleInfoForSelf](arkts-ability-getbundleinfoforself-f.md#getbundleinfoforself-1)接
-口，bundleFlags参数传入GET_BUNDLE_INFO_WITH_HAP_MODULE和GET_BUNDLE_INFO_WITH_ROUTER_MAP获取。
+应用的路由表配置，由hapModulesInfo下的routerMap信息，根据RouterItem中的name字段进行去重后合并得到。通过调用 [getBundleInfoForSelf](arkts-ability-getbundleinfoforself-f.md#getbundleinfoforself-1)接 口，bundleFlags参数传入GET_BUNDLE_INFO_WITH_HAP_MODULE和GET_BUNDLE_INFO_WITH_ROUTER_MAP获取。
 
 **类型：** Array<RouterItem>
 
@@ -205,9 +188,7 @@ readonly routerMap: Array<RouterItem>
 readonly signatureInfo: SignatureInfo
 ```
 
-应用包的签名信息，通过调用
-[getBundleInfoForSelf](arkts-ability-getbundleinfoforself-f.md#getbundleinfoforself-1)接
-口，bundleFlags参数传入GET_BUNDLE_INFO_WITH_SIGNATURE_INFO获取。
+应用包的签名信息，通过调用 [getBundleInfoForSelf](arkts-ability-getbundleinfoforself-f.md#getbundleinfoforself-1)接 口，bundleFlags参数传入GET_BUNDLE_INFO_WITH_SIGNATURE_INFO获取。
 
 **类型：** SignatureInfo
 

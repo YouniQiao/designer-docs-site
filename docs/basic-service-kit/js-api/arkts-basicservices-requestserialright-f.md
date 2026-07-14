@@ -12,9 +12,7 @@ import { serialManager } from '@kit.BasicServicesKit';
 function requestSerialRight(portId: number): Promise<boolean>
 ```
 
-Requests the permission for the application to access the serial port device. After the application exits, the
-access permission on the serial port device is automatically removed. After the application is restarted, you need
-to request the permission again. This API uses a promise to return the result.
+Requests the permission for the application to access the serial port device. After the application exits, the access permission on the serial port device is automatically removed. After the application is restarted, you need to request the permission again. This API uses a promise to return the result.
 
 **Since:** 19
 
@@ -63,7 +61,7 @@ function requestSerialRight() {
   if (!serialManager.hasSerialRight(portId)) {
     serialManager.requestSerialRight(portId).then(result => {
       if (!result) {
-        // If the application does not have the access permission and is not granted by the user, the application exits.
+        // If the application does not have the access permission and the user does not grant the permission, the application exits.
         console.error('user is not granted the operation permission');
         return;
       } else {

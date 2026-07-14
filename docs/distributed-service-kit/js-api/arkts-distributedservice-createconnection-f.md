@@ -12,8 +12,7 @@ import { linkEnhance } from '@kit.DistributedServiceKit';
 function createConnection(deviceId: string, name: string): Connection
 ```
 
-Creates a **Connection** object on the device that functions as the client. The device can then initiate connection
-requests to the device that functions as the server.
+Creates a **Connection** object on the device that functions as the client. The device can then initiate connection requests to the device that functions as the server.
 
 **Since:** 20
 

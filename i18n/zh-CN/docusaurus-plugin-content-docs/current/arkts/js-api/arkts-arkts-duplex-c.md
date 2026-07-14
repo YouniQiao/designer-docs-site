@@ -1,7 +1,6 @@
 # Duplex
 
-既可读又可写的流。双工流允许数据双向传输，即可读可写。
-**Duplex**类继承自[Readable](arkts-arkts-readableoptions-i.md)，支持**Readable**中的所有API。
+既可读又可写的流。双工流允许数据双向传输，即可读可写。 **Duplex**类继承自[Readable](arkts-arkts-readableoptions-i.md)，支持**Readable**中的所有API。
 
 **继承/实现关系：** Duplex extends [Readable](arkts-arkts-readable-c.md)
 
@@ -99,7 +98,7 @@ class TestDuplex extends stream.Duplex {
 }
 
 let duplexStream = new TestDuplex();
-duplexStream.write('data', 'utf8');
+duplexStream.write("data", "utf8");
 
 ```
 
@@ -147,8 +146,8 @@ class TestDuplex extends stream.Duplex {
 
 let duplexStream = new TestDuplex();
 duplexStream.cork();
-duplexStream.write('data1', 'utf8');
-duplexStream.write('data2', 'utf8');
+duplexStream.write("data1", "utf8");
+duplexStream.write("data2", "utf8");
 duplexStream.uncork();
 duplexStream.end();
 
@@ -206,7 +205,7 @@ class TestDuplex extends stream.Duplex {
 }
 
 let duplexStream = new TestDuplex();
-duplexStream.end('test', 'utf8', () => {
+duplexStream.end("test", "utf8", () => {
   console.info("Duplex is end"); // Duplex is end
 });
 
@@ -255,7 +254,7 @@ class TestDuplex extends stream.Duplex {
 }
 
 let duplexStream = new TestDuplex();
-let result = duplexStream.setDefaultEncoding('utf8');
+let result = duplexStream.setDefaultEncoding("utf8");
 console.info("duplexStream is result", result); // duplexStream is result true
 
 ```
@@ -283,7 +282,7 @@ uncork(): boolean
 **示例：**
 
 ```TypeScript
-let dataWritten = '';
+let dataWritten = "";
 class TestDuplex extends stream.Duplex {
   constructor() {
     super();
@@ -300,8 +299,8 @@ class TestDuplex extends stream.Duplex {
 
 let duplexStream = new TestDuplex();
 duplexStream.cork();
-duplexStream.write('a');
-duplexStream.write('b');
+duplexStream.write("a");
+duplexStream.write("b");
 duplexStream.uncork();
 console.info("Duplex test uncork", dataWritten); // Duplex test uncork ab
 
@@ -361,7 +360,7 @@ class TestDuplex extends stream.Duplex {
 }
 
 let duplexStream = new TestDuplex();
-let result = duplexStream.write('test', 'utf8');
+let result = duplexStream.write("test", "utf8");
 console.info("duplexStream result", result); // duplexStream result true
 
 ```

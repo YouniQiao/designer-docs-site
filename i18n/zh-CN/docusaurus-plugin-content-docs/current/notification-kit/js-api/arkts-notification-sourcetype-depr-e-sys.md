@@ -1,8 +1,6 @@
 # SourceType（系统接口）
 
-> **说明：**
-> 从 API version 8开始支持，从API version 9开始废弃。建议使用
-[notificationManager.SourceType](js-apis-notificationManager-sys.md#sourcetype)替代。
+> **说明：** > 从 API version 8开始支持，从API version 9开始废弃。建议使用 [notificationManager.SourceType](js-apis-notificationManager-sys.md#sourcetype)替代。
 
 **起始版本：** 8
 

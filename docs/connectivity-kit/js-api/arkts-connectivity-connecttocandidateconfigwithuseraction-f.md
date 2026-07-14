@@ -12,10 +12,7 @@ import { wifiManager } from '@kit.ConnectivityKit';
 function connectToCandidateConfigWithUserAction(networkId: number): Promise<void>
 ```
 
-Connect to a specified candidate hotspot by networkId, and wait for user respond result.
-Only the configuration which is added by ourself is allowed to be connected.
-This method connect to a configuration at a time.
-The app must be in the foreground.
+Connect to a specified candidate hotspot by networkId, and wait for user respond result. Only the configuration which is added by ourself is allowed to be connected. This method connect to a configuration at a time. The app must be in the foreground.
 
 **Since:** 20
 

@@ -20,8 +20,7 @@ import { osAccount } from '@kit.BasicServicesKit';
 addCredential(credentialInfo: CredentialInfo, callback: IIdmCallback): void
 ```
 
-Adds credential information, including the credential type, subtype, and token (if a non-PIN credential is added)
-.
+Adds credential information, including the credential type, subtype, and token (if a non-PIN credential is added) .
 
 **Since:** 8
 
@@ -380,8 +379,7 @@ try {
 getAuthInfo(authType: AuthType, callback: AsyncCallback<Array<EnrolledCredInfo>>): void
 ```
 
-Obtains authentication information of the specified type. This API uses an asynchronous callback to return the
-result.
+Obtains authentication information of the specified type. This API uses an asynchronous callback to return the result.
 
 **Since:** 8
 
@@ -555,8 +553,7 @@ try {
 getEnrolledId(authType: AuthType, accountId?: number): Promise<Uint8Array>
 ```
 
-Obtains the ID of the enrolled credential based on the credential type and account ID (optional). This API uses a
-promise to return the result.
+Obtains the ID of the enrolled credential based on the credential type and account ID (optional). This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -619,8 +616,7 @@ try {
 offCredentialChanged(callback?: Callback<CredentialChangeInfo>): void
 ```
 
-Unsubscribes from credential change events. If no callback is not specified, this API unsubscribes from all
-subscription records.
+Unsubscribes from credential change events. If no callback is not specified, this API unsubscribes from all subscription records.
 
 **Since:** 23
 
@@ -685,8 +681,7 @@ try {
 onCredentialChanged(credentialTypes: AuthType[], callback: Callback<CredentialChangeInfo>): void
 ```
 
-Subscribes to one or more credential change events. This API uses a callback to return the credential change
-information.
+Subscribes to one or more credential change events. This API uses a callback to return the credential change information.
 
 **Since:** 23
 
@@ -798,9 +793,7 @@ try {
 openSession(accountId?: number): Promise<Uint8Array>
 ```
 
-Opens a session. This API returns a challenge value, which can be used to determine whether the subsequent
-identity authentication is in this session. This can prevent replay attacks. This API uses a promise to return
-the result.
+Opens a session. This API returns a challenge value, which can be used to determine whether the subsequent identity authentication is in this session. This can prevent replay attacks. This API uses a promise to return the result.
 
 **Since:** 8
 

@@ -1,6 +1,6 @@
 # ChangeData
 
-Defines the change data
+Defines the return value of the listener callback.
 
 **Since:** 10
 
@@ -18,7 +18,7 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 extraUris: Array<string>
 ```
 
-Change details of the asset uris to an album.
+URIs of the changed files in the album. The value may be undefined. Check whether the value is undefined before using it.
 
 **Type:** Array<string>
 
@@ -32,7 +32,7 @@ Change details of the asset uris to an album.
 type: NotifyType
 ```
 
-The NotifyType of ChangeData
+Notification type.
 
 **Type:** NotifyType
 
@@ -46,7 +46,7 @@ The NotifyType of ChangeData
 uris: Array<string>
 ```
 
-The changed uris
+All URIs with the same [NotifyType](arkts-medialibrary-notifytype-e.md), which can be **PhotoAsset** or **Album**.
 
 **Type:** Array<string>
 

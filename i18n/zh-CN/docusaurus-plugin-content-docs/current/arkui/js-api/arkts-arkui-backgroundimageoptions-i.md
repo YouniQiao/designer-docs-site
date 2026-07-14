@@ -1,10 +1,6 @@
 # BackgroundImageOptions
 
-定义背景图选项。
-
-> **说明：**
->
-> 背景图片的同步加载可能会带来潜在性能问题，详情可见[Image](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-image.md#image-1)中说明。
+定义背景图选项。 > **说明：** > > 背景图片的同步加载可能会带来潜在性能问题，详情可见[Image](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-image.md#image-1)中说明。
 
 **起始版本：** 18
 
@@ -36,13 +32,7 @@ repeat?: ImageRepeat
 syncLoad?: boolean
 ```
 
-是否同步加载图片，默认是异步加载。同步加载时阻塞UI线程，不会显示占位图。
-
-默认值：false
-
-false：异步加载图片。
-
-true：同步加载图片。
+是否同步加载图片，默认是异步加载。同步加载时阻塞UI线程，不会显示占位图。 默认值：false false：异步加载图片。 true：同步加载图片。
 
 **类型：** boolean
 

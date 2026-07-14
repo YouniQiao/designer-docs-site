@@ -1,17 +1,6 @@
 # ImageSource
 
-The **ImageSource** class provides APIs to obtain image information.
-
-Before calling any API in ImageSource, you must use
-[image.createImageSource](arkts-image-createimagesource-f.md#createimagesource-1) to create an
-ImageSource instance.
-
-All APIs in ImageSource cannot be called concurrently.
-
-Images occupy a large amount of memory. When you finish using an ImageSource instance, call
-[release](arkts-image-imagesource-i.md#release-1) to free the memory promptly. Before
-releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the
-instance is no longer needed.
+The **ImageSource** class provides APIs to obtain image information. Before calling any API in ImageSource, you must use [image.createImageSource](arkts-image-createimagesource-f.md#createimagesource-1) to create an ImageSource instance. All APIs in ImageSource cannot be called concurrently. Images occupy a large amount of memory. When you finish using an ImageSource instance, call [release](arkts-image-imagesource-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
 
 **Since:** 6
 
@@ -29,11 +18,7 @@ import { image } from '@kit.ImageKit';
 createWideGamutSdrPixelMap(): Promise<PixelMap>
 ```
 
-Decodes to a SDR PixelMap, using a as wide gamut as possible.
-For a SDR ImageSource, decodes to a SDR PixelMap using its native color space.
-For a HDR ImageSource with a single-channel gainmap, decodes its base(SDR) image and ingores its gainmap.
-For a HDR ImageSource with a three-channel gainmap, decodes to a SDR PixelMap using CM_DISPLAY_BT2020_SRGB
-color space.
+Decodes to a SDR PixelMap, using a as wide gamut as possible. For a SDR ImageSource, decodes to a SDR PixelMap using its native color space. For a HDR ImageSource with a single-channel gainmap, decodes its base(SDR) image and ingores its gainmap. For a HDR ImageSource with a three-channel gainmap, decodes to a SDR PixelMap using CM_DISPLAY_BT2020_SRGB color space.
 
 **Since:** 20
 

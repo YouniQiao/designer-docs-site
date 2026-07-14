@@ -18,11 +18,7 @@ import { audio } from '@kit.AudioKit';
 sourceType: SourceType
 ```
 
-The system uses this to determine the recording scenario of the application according to
-the SourceType that the application expects to use for streaming, and provides users with
-the ability to select matching noise reduction modes. The supported source types include
-{@link SourceType#SOURCE_TYPE_MIC}, {@link SourceType#SOURCE_TYPE_CAMCORDER}, and
-{@link SourceType#SOURCE_TYPE_LIVE}.
+The system uses this to determine the recording scenario of the application according to the SourceType that the application expects to use for streaming, and provides users with the ability to select matching noise reduction modes. The supported source types include {@link SourceType#SOURCE_TYPE_MIC}, {@link SourceType#SOURCE_TYPE_CAMCORDER}, and {@link SourceType#SOURCE_TYPE_LIVE}.
 
 **Type:** SourceType
 

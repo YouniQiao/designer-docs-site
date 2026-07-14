@@ -12,8 +12,7 @@ Enumerates the statuses of sensitive data keys under the lock screen.
 KEY_NOT_EXIST = -2
 ```
 
-The key does not exist. This status indicates that the app has not enabled the sensitive data protection function
-under lock screen, or the protection function is unavailable on the current device.
+The key does not exist. This status indicates that the app has not enabled the sensitive data protection function under lock screen, or the protection function is unavailable on the current device.
 
 **Since:** 18
 

@@ -1,7 +1,6 @@
 # Parameter（系统接口）
 
-无障碍节点元素执行特定操作时，为操作提供具体设置的参数值。详见[AccessibilityAction](arkts-accessibility-accessibilityaction-e-sys.md)（无障碍节点元素可执行的操
-作）。
+无障碍节点元素执行特定操作时，为操作提供具体设置的参数值。详见[AccessibilityAction](arkts-accessibility-accessibilityaction-e-sys.md)（无障碍节点元素可执行的操 作）。
 
 **起始版本：** 20
 

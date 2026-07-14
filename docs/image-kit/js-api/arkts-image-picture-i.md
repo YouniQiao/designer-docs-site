@@ -1,15 +1,6 @@
 # Picture
 
-An image that contains special information can be decoded into a picture object, which generally contains the main
-picture, auxiliary picture, and metadata. The main picture contains most information about the image and is mainly
-used to render the image. The auxiliary picture is used to store data related to but different from the main
-picture, revealing more comprehensive details. The metadata is generally used to store information about the image
-file. The picture object class is used to read or write picture objects. Before calling any API in Picture, you
-must use [image.createPicture](arkts-image-createpicture-f.md#createpicture-1) to create a Picture object.
-
-Images occupy a large amount of memory. When you finish using a Picture instance, call
-[release](arkts-image-picture-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure that all
-asynchronous operations associated with the instance have finished and the instance is no longer needed.
+An image that contains special information can be decoded into a picture object, which generally contains the main picture, auxiliary picture, and metadata. The main picture contains most information about the image and is mainly used to render the image. The auxiliary picture is used to store data related to but different from the main picture, revealing more comprehensive details. The metadata is generally used to store information about the image file. The picture object class is used to read or write picture objects. Before calling any API in Picture, you must use [image.createPicture](arkts-image-createpicture-f.md#createpicture-1) to create a Picture object. Images occupy a large amount of memory. When you finish using a Picture instance, call [release](arkts-image-picture-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
 
 **Since:** 13
 
@@ -75,8 +66,7 @@ Obtains the PixelMap object of the gain map.
 getHdrComposedPixelmap(): Promise<PixelMap>
 ```
 
-Generates a High Dynamic Range (HDR) image and obtains its PixelMap object. This API uses a promise to return the
-result.
+Generates a High Dynamic Range (HDR) image and obtains its PixelMap object. This API uses a promise to return the result.
 
 **Since:** 13
 
@@ -101,10 +91,7 @@ result.
 getHdrComposedPixelmapWithOptions(options?: HdrComposeOptions): Promise<PixelMap | undefined>
 ```
 
-Composites an HDR image and returns PixelMap of the image. Composition options (such as PixelMapFormat) can be
-passed. This API uses a promise to return the result.
-
-The Picture object that calls this API must contain the main picture, gain map, and metadata.
+Composites an HDR image and returns PixelMap of the image. Composition options (such as PixelMapFormat) can be passed. This API uses a promise to return the result. The Picture object that calls this API must contain the main picture, gain map, and metadata.
 
 **Since:** 23
 
@@ -185,10 +172,7 @@ Obtains the metadata of this Picture object. This API uses a promise to return t
 hdrComposeToMainPixelmap(): Promise<void>
 ```
 
-Invokes the VPE algorithm to compose the main pixelmap and gainmap. The composed result will replace the
-main pixelmap of the current picture object.
-
-The Picture object that calls this API must contain the main pixelmap, gain map.
+Invokes the VPE algorithm to compose the main pixelmap and gainmap. The composed result will replace the main pixelmap of the current picture object. The Picture object that calls this API must contain the main pixelmap, gain map.
 
 **Since:** 26.0.0
 
@@ -239,13 +223,7 @@ Marshals this Picture object and writes it to a MessageSequence object.
 release(): void
 ```
 
-Releases this Picture object.
-
-Images occupy a large amount of memory. When you finish using a Picture instance, call this API to free the
-memory promptly.
-
-Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished
-and the instance is no longer needed.
+Releases this Picture object. Images occupy a large amount of memory. When you finish using a Picture instance, call this API to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
 
 **Since:** 13
 

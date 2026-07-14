@@ -99,9 +99,7 @@ settings.setValue(context, settings.display.SCREEN_BRIGHTNESS_STATUS, '100').the
 function setValue(context: Context, name: string, value: string, domainName: string): Promise<boolean>
 ```
 
-Set settingsdata value.
-[DEVICE_SHARED, USER_PROPERTY] domain need ohos.permission.MANAGE_SETTINGS permission.
-[USER_SECURE] domain need ohos.permission.MANAGE_SECURE_SETTINGS permission.
+Set settingsdata value. [DEVICE_SHARED, USER_PROPERTY] domain need ohos.permission.MANAGE_SETTINGS permission. [USER_SECURE] domain need ohos.permission.MANAGE_SECURE_SETTINGS permission.
 
 **Since:** 11
 

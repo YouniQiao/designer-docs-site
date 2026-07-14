@@ -6,8 +6,7 @@
 function setProperty(resourceId: string, propertyId: string, params?: HuksExternalCryptoParam[]): Promise<void>
 ```
 
-The set-type operations of the external crypto extension support calling custom interfaces.
-However, the custom interface must be registered with the provider.
+The set-type operations of the external crypto extension support calling custom interfaces. However, the custom interface must be registered with the provider.
 
 **起始版本：** 26.0.0
 

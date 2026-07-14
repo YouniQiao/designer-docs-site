@@ -30,9 +30,7 @@ children?: TextCascadePickerRangeContent[]
 text: string | Resource
 ```
 
-文本信息。
-
-**说明**：当文本长度大于列宽时，文本被截断。
+文本信息。 **说明**：当文本长度大于列宽时，文本被截断。
 
 **类型：** string | Resource
 

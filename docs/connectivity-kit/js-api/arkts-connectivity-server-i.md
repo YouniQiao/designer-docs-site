@@ -1,11 +1,16 @@
 # Server
 
-Manages SSAP server. Before calling a SSAP server method,
-you must use {@link createServer} to create a SSAP server instance.
+Manages SSAP server. Before calling a SSAP server method, you must use {@link createServer} to create a SSAP server instance.
 
 **Since:** 26.0.0
 
 **System capability:** SystemCapability.Communication.NearLink.Base
+
+## Modules to Import
+
+```TypeScript
+import { ssap } from '@kit.ConnectivityKit';
+```
 
 ## addService
 
@@ -189,11 +194,7 @@ Unsubscribes from property write events from the client.
 onConnectionStateChange(callback: Callback<ConnectionChangeState>): void
 ```
 
-Subscribes to server connection state changed events.
-
-This event is accessible only to applications that granted the ohos.permission.NEARLINK_ACCESS permission.
-If the application is granted the ohos.permission.GET_NEARLINK_PEER_MAC permission,
-the callback returns the real device address; otherwise, a random device address is returned.
+Subscribes to server connection state changed events. This event is accessible only to applications that granted the ohos.permission.NEARLINK_ACCESS permission. If the application is granted the ohos.permission.GET_NEARLINK_PEER_MAC permission, the callback returns the real device address; otherwise, a random device address is returned.
 
 **Since:** 26.0.0
 
@@ -213,9 +214,7 @@ the callback returns the real device address; otherwise, a random device address
 onMtuChange(callback: Callback<number>): void
 ```
 
-Subscribes to MTU changed events.
-
-This event is accessible only to applications that granted the ohos.permission.NEARLINK_ACCESS permission.
+Subscribes to MTU changed events. This event is accessible only to applications that granted the ohos.permission.NEARLINK_ACCESS permission.
 
 **Since:** 26.0.0
 
@@ -235,11 +234,7 @@ This event is accessible only to applications that granted the ohos.permission.N
 onPropertyRead(callback: Callback<PropertyReadRequest>): void
 ```
 
-Subscribes to property read events from the client.
-
-This event is accessible only to applications that granted the ohos.permission.NEARLINK_ACCESS permission.
-If the application is granted the ohos.permission.GET_NEARLINK_PEER_MAC permission,
-the callback returns the real device address; otherwise, a random device address is returned.
+Subscribes to property read events from the client. This event is accessible only to applications that granted the ohos.permission.NEARLINK_ACCESS permission. If the application is granted the ohos.permission.GET_NEARLINK_PEER_MAC permission, the callback returns the real device address; otherwise, a random device address is returned.
 
 **Since:** 26.0.0
 
@@ -259,11 +254,7 @@ the callback returns the real device address; otherwise, a random device address
 onPropertyWrite(callback: Callback<PropertyWriteRequest>): void
 ```
 
-Subscribes to property write events from the client.
-
-This event is accessible only to applications that granted the ohos.permission.NEARLINK_ACCESS permission.
-If the application is granted the ohos.permission.GET_NEARLINK_PEER_MAC permission,
-the callback returns the real device address; otherwise, a random device address is returned.
+Subscribes to property write events from the client. This event is accessible only to applications that granted the ohos.permission.NEARLINK_ACCESS permission. If the application is granted the ohos.permission.GET_NEARLINK_PEER_MAC permission, the callback returns the real device address; otherwise, a random device address is returned.
 
 **Since:** 26.0.0
 

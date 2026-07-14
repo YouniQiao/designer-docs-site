@@ -12,8 +12,7 @@ import { request } from '@kit.BasicServicesKit';
 function touch(id: string, token: string, callback: AsyncCallback<TaskInfo>): void
 ```
 
-Queries the task details based on the task ID and token. This API uses an asynchronous callback to return the
-result.
+Queries the task details based on the task ID and token. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 

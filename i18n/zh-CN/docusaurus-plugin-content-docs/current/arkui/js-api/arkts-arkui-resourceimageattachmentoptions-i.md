@@ -48,9 +48,7 @@ layoutStyle?: ImageAttachmentLayoutStyle
 objectFit?: ImageFit
 ```
 
-设置图片的缩放类型，当前枚举类型不支持ImageFit.MATRIX。
-
-默认值：ImageFit.Cover
+设置图片的缩放类型，当前枚举类型不支持ImageFit.MATRIX。 默认值：ImageFit.Cover
 
 **类型：** ImageFit
 
@@ -104,11 +102,7 @@ size?: SizeOptions
 supportSvg2?: boolean
 ```
 
-获取属性字符串是否开启[SVG标签解析能力增强功能](../../../../reference/apis-arkui/arkui-ts/ts-image-svg2-capabilities.md)。
-
-true：支持SVG解析新能力；false：保持原有SVG解析能力。
-
-默认值：false
+获取属性字符串是否开启[SVG标签解析能力增强功能](../../../../reference/apis-arkui/arkui-ts/ts-image-svg2-capabilities.md)。 true：支持SVG解析新能力；false：保持原有SVG解析能力。 默认值：false
 
 **类型：** boolean
 
@@ -126,11 +120,7 @@ true：支持SVG解析新能力；false：保持原有SVG解析能力。
 syncLoad?: boolean
 ```
 
-是否同步加载图片，默认是异步加载。同步加载时阻塞UI线程，不会显示占位图。
-
-true：同步加载；false：异步加载。
-
-默认值：false
+是否同步加载图片，默认是异步加载。同步加载时阻塞UI线程，不会显示占位图。 true：同步加载；false：异步加载。 默认值：false
 
 **类型：** boolean
 
@@ -148,9 +138,7 @@ true：同步加载；false：异步加载。
 verticalAlign?: ImageSpanAlignment
 ```
 
-设置图片基于文本的对齐方式。
-
-默认值：ImageSpanAlignment.BOTTOM
+设置图片基于文本的对齐方式。 默认值：ImageSpanAlignment.BOTTOM
 
 **类型：** ImageSpanAlignment
 

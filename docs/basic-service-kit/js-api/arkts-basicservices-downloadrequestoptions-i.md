@@ -1,9 +1,6 @@
 # DownloadRequestOptions
 
-> **NOTE**
->
-> This API has been supported since API version 3 and deprecated since API version 9. You are advised to use
-> [UploadConfig](arkts-basicservices-config-i.md) instead.
+> **NOTE** > > This API has been supported since API version 3 and deprecated since API version 9. You are advised to use > [UploadConfig](arkts-basicservices-config-i.md) instead.
 
 **Since:** 3
 
@@ -43,8 +40,7 @@ Called when API call is complete.
 description?: string
 ```
 
-Download description.
-The default value is the file name.
+Download description. The default value is the file name.
 
 **Type:** string
 
@@ -80,8 +76,7 @@ Called when downloading fails.
 filename?: string
 ```
 
-Name of the file to downloaded.
-The value is obtained from the current request or resource URL by default.
+Name of the file to downloaded. The value is obtained from the current request or resource URL by default.
 
 **Type:** string
 

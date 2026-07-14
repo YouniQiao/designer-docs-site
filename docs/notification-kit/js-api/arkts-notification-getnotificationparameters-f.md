@@ -12,9 +12,7 @@ import { notificationManager } from '@kit.NotificationKit';
 function getNotificationParameters(id: number, label?: string): Promise<NotificationParameters>
 ```
 
-Obtains some information about the **wantAgent** field in
-[NotificationRequest](arkts-notification-notificationrequest-i.md). This API uses a promise to
-return the result.
+Obtains some information about the **wantAgent** field in [NotificationRequest](arkts-notification-notificationrequest-i.md). This API uses a promise to return the result.
 
 **Since:** 24
 
@@ -26,7 +24,7 @@ return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| id | number | Yes | Notification ID. |
+| id | number | Yes | Notification ID, used to identify the target notification. This value is specified by the**id** field of NotificationRequest when a notification is published. |
 | label | string | No | Notification label. This parameter is left empty by default. |
 
 **Return value:**

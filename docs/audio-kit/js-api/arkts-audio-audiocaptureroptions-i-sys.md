@@ -12,25 +12,31 @@ Describes audio capturer configurations.
 import { audio } from '@kit.AudioKit';
 ```
 
+## playbackCaptureUid
+
+```TypeScript
+playbackCaptureUid?: number
+```
+
+The target application uid for voice/video communication playback capture. This parameter takes effect only when {@link AudioPlaybackCaptureMode#MODE_ONLY_VOIP} is set in {@link AudioCapturerOptions#playbackCaptureMode}. In other playback capture modes, this parameter is ignored. The value should be an integer.
+
+**Type:** number
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Audio.PlaybackCapture
+
+**System API:** This is a system API.
+
 ## preferredInputDevice
 
 ```TypeScript
 preferredInputDevice?: AudioDeviceDescriptor
 ```
 
-Perfered input device for this audio capturer. The preferredInputDevice must be an input device, and
-the source type in {@link captureInfo} must be {@link SourceType#SOURCE_TYPE_RECONGITION} or
-{@link SourceType#SOURCE_TYPE_VOICE_TRANSCRIPTION}, otherwise this parameter will be ignored.
-If the user does not specify a device, the system automatically selects the recording device for
-the audio capturer. When the user specifies a prefer device to
-create a recongition or transcription recording,
-
-1) If the prefer device is online, the current audiocapturer may use the preferred device for
-recording; if the prefer device goes offline during operation, the system automatically selects
-a recording device.
-2) If the prefer device is offline, the system automatically selects a recording device;
-if the prefer device comes online during operation, it may switch to the prefer device for recording.
-Users can query the device which is in use by {@link AudioCapturer#getCurrentAudioCapturerChangeInfo}.
+Perfered input device for this audio capturer. The preferredInputDevice must be an input device, and the source type in {@link captureInfo} must be {@link SourceType#SOURCE_TYPE_RECONGITION} or {@link SourceType#SOURCE_TYPE_VOICE_TRANSCRIPTION}, otherwise this parameter will be ignored. If the user does not specify a device, the system automatically selects the recording device for the audio capturer. When the user specifies a prefer device to create a recongition or transcription recording, 1) If the prefer device is online, the current audiocapturer may use the preferred device for recording; if the prefer device goes offline during operation, the system automatically selects a recording device. 2) If the prefer device is offline, the system automatically selects a recording device; if the prefer device comes online during operation, it may switch to the prefer device for recording. Users can query the device which is in use by {@link AudioCapturer#getCurrentAudioCapturerChangeInfo}.
 
 **Type:** AudioDeviceDescriptor
 

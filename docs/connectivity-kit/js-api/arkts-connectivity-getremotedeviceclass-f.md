@@ -12,8 +12,7 @@ import { bluetoothManager } from '@kit.ConnectivityKit';
 function getRemoteDeviceClass(deviceId: string): DeviceClass
 ```
 
-Obtains the class of a peer Bluetooth device.
-On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
+Obtains the class of a peer Bluetooth device. On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
 
 **Since:** 9
 

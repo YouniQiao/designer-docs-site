@@ -12,14 +12,7 @@ import { router } from '@kit.ArkUI';
 function replaceUrl(options: RouterOptions, callback: AsyncCallback<void>): void
 ```
 
-Replaces the current page with another one in the application and destroys the current page.
-
-> **NOTE**
->
-> - Since API version 10, you can use the
-> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in
-> [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated
-> with the current UI context.
+Replaces the current page with another one in the application and destroys the current page. > **NOTE** > > - Since API version 10, you can use the > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in > [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated > with the current UI context.
 
 **Since:** 9
 
@@ -49,6 +42,8 @@ Replaces the current page with another one in the application and destroys the c
 **Example**
 
 ```TypeScript
+import { router } from '@kit.ArkUI';
+
 class RouterParams {
   data1: string;
 
@@ -62,7 +57,7 @@ router.replaceUrl({
   params: new RouterParams('message')
 }, (err) => {
   if (err) {
-    console.error(`replaceUrl failed, code is ${err.code}, message is ${err.message}`);
+    console.error(`replaceUrl failed. Code: ${err.code}, message: ${err.message}`);
     return;
   }
   console.info('replaceUrl success');
@@ -77,16 +72,7 @@ router.replaceUrl({
 function replaceUrl(options: RouterOptions): Promise<void>
 ```
 
-Replaces the current page with another one in the application and destroys the current page. This API cannot be
-used to configure page transition effects. To configure page transition effects, use the
-[Navigation](../../../../ui/arkts-navigation-architecture.md) component.
-
-> **NOTE**
->
-> - Since API version 10, you can use the
-> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in
-> [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated
-> with the current UI context.
+Replaces the current page with another one in the application and destroys the current page. This API cannot be used to configure page transition effects. To configure page transition effects, use the [Navigation](../../../../ui/arkts-navigation-architecture.md) component. > **NOTE** > > - Since API version 10, you can use the > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in > [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated > with the current UI context.
 
 **Since:** 9
 
@@ -121,6 +107,8 @@ used to configure page transition effects. To configure page transition effects,
 **Example**
 
 ```TypeScript
+import { router } from '@kit.ArkUI';
+
 import { BusinessError } from '@kit.BasicServicesKit';
 
 class RouterParams {
@@ -138,8 +126,8 @@ router.replaceUrl({
   .then(() => {
     console.info(`replaceUrl finish`);
   })
-  .catch((err: ESObject) => {
-    console.error(`replaceUrl failed, code is ${(err as BusinessError).code}, message is ${(err as BusinessError).message}`);
+  .catch((err: BusinessError) => {
+    console.error(`replaceUrl failed. Code: ${err.code}, message: ${err.message}`);
   })
 
 ```
@@ -151,14 +139,7 @@ router.replaceUrl({
 function replaceUrl(options: RouterOptions, mode: RouterMode, callback: AsyncCallback<void>): void
 ```
 
-Replaces the current page with another one in the application and destroys the current page.
-
-> **NOTE**
->
-> - Since API version 10, you can use the
-> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in
-> [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated
-> with the current UI context.
+Replaces the current page with another one in the application and destroys the current page. > **NOTE** > > - Since API version 10, you can use the > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in > [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated > with the current UI context.
 
 **Since:** 9
 
@@ -189,6 +170,8 @@ Replaces the current page with another one in the application and destroys the c
 **Example**
 
 ```TypeScript
+import { router } from '@kit.ArkUI';
+
 class RouterParams {
   data1: string;
 
@@ -202,7 +185,7 @@ router.replaceUrl({
   params: new RouterParams('message')
 }, router.RouterMode.Standard, (err) => {
   if (err) {
-    console.error(`replaceUrl failed, code is ${err.code}, message is ${err.message}`);
+    console.error(`replaceUrl failed. Code: ${err.code}, message: ${err.message}`);
     return;
   }
   console.info('replaceUrl success');
@@ -217,14 +200,7 @@ router.replaceUrl({
 function replaceUrl(options: RouterOptions, mode: RouterMode): Promise<void>
 ```
 
-Replaces the current page with another one in the application and destroys the current page.
-
-> **NOTE**
->
-> - Since API version 10, you can use the
-> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in
-> [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated
-> with the current UI context.
+Replaces the current page with another one in the application and destroys the current page. > **NOTE** > > - Since API version 10, you can use the > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in > [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated > with the current UI context.
 
 **Since:** 9
 
@@ -260,6 +236,8 @@ Replaces the current page with another one in the application and destroys the c
 **Example**
 
 ```TypeScript
+import { router } from '@kit.ArkUI';
+
 import { BusinessError } from '@kit.BasicServicesKit';
 
 class RouterParams {
@@ -277,8 +255,8 @@ router.replaceUrl({
   .then(() => {
     console.info(`replaceUrl finish`);
   })
-  .catch((err: ESObject) => {
-    console.error(`replaceUrl failed, code is ${(err as BusinessError).code}, message is ${(err as BusinessError).message}`);
+  .catch((err: BusinessError) => {
+    console.error(`replaceUrl failed. Code: ${err.code}, message: ${err.message}`);
   })
 
 ```

@@ -12,9 +12,7 @@ import { childProcessManager } from '@kit.AbilityKit';
 function isNativeChildProcessSupported(): boolean
 ```
 
-Checks whether the caller is allowed to create native child processes on this device.
-Some devices may not support creating native child processes, so it is recommended to use this interface to
-verify support beforehand.
+Checks whether the caller is allowed to create native child processes on this device. Some devices may not support creating native child processes, so it is recommended to use this interface to verify support beforehand.
 
 **Since:** 26.0.0
 

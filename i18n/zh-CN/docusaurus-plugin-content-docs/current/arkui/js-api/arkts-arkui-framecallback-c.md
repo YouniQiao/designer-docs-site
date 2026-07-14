@@ -1,12 +1,6 @@
 # FrameCallback
 
-用于设置下一帧渲染时需要执行的任务。
-
-> **说明：**
->
-> - 以下API需要配合[UIContext](arkts-arkui-uicontext.md)中的[postFrameCallback](arkts-arkui-uicontext-c.md#postframecallback-1)和
-> [postDelayedFrameCallback](arkts-arkui-uicontext-c.md#postdelayedframecallback-1)使用。开发者需要继承该类并重写
-> [onFrame](arkts-arkui-framecallback-c.md#onframe-1)或[onIdle](arkts-arkui-framecallback-c.md#onidle-1)方法，实现具体的业务逻辑。
+用于设置下一帧渲染时需要执行的任务。 > **说明：** > > - 以下API需要配合[UIContext](arkts-arkui-uicontext.md)中的[postFrameCallback](arkts-arkui-uicontext-c.md#postframecallback-1)和 > [postDelayedFrameCallback](arkts-arkui-uicontext-c.md#postdelayedframecallback-1)使用。开发者需要继承该类并重写 > [onFrame](arkts-arkui-framecallback-c.md#onframe-1)或[onIdle](arkts-arkui-framecallback-c.md#onidle-1)方法，实现具体的业务逻辑。
 
 **起始版本：** 12
 

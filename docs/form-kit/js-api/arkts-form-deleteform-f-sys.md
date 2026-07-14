@@ -12,8 +12,7 @@ import { formHost } from '@kit.FormKit';
 function deleteForm(formId: string, callback: AsyncCallback<void>): void
 ```
 
-Deletes a widget. After this API is called, the application can no longer use the widget, and the Widget Manager
-will not retain the widget information. This API uses an asynchronous callback to return the result.
+Deletes a widget. After this API is called, the application can no longer use the widget, and the Widget Manager will not retain the widget information. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -50,8 +49,7 @@ will not retain the widget information. This API uses an asynchronous callback t
 function deleteForm(formId: string): Promise<void>
 ```
 
-Deletes a widget. After this API is called, the application can no longer use the widget, and the Widget Manager
-will not retain the widget information. This API uses a promise to return the result.
+Deletes a widget. After this API is called, the application can no longer use the widget, and the Widget Manager will not retain the widget information. This API uses a promise to return the result.
 
 **Since:** 9
 

@@ -1,7 +1,6 @@
 # BindInfo
 
-Represents the information about the joint asset in the RDB store to bind. Currently, only the RDB stores are
-supported.
+Represents the information about the joint asset in the RDB store to bind. Currently, only the RDB stores are supported.
 
 **Since:** 11
 

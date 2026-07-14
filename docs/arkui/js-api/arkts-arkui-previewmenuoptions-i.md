@@ -12,13 +12,7 @@ Defines the options of the preview menu.
 hapticFeedbackMode? : HapticFeedbackMode
 ```
 
-Vibration effect when the menu is displayed. This parameter takes effect when ImageSpan or BuilderSpan is bound to
-the preview menu.
-
-Default value: **HapticFeedbackMode.DISABLED** (no vibration when the menu is displayed)
-
-Note: The settings take effect only when the application has the ohos.permission.VIBRATE permission and the user
-has enabled haptic feedback.
+Vibration effect when the menu is displayed. This parameter takes effect when ImageSpan or BuilderSpan is bound to the preview menu. Default value: **HapticFeedbackMode.DISABLED** (no vibration when the menu is displayed) Note: The settings take effect only when the application has the ohos.permission.VIBRATE permission and the user has enabled haptic feedback.
 
 **Type:** HapticFeedbackMode
 

@@ -1,10 +1,6 @@
 # MessageSequence
 
-Provides APIs for reading and writing data in specific format. During RPC or IPC, the sender can use the
-**write()** method provided by **MessageSequence** to write data in specific format to a **MessageSequence**
-object. The receiver can use the **read()** method provided by **MessageSequence** to read data in specific
-format from a **MessageSequence** object. The data formats include basic data types and arrays, IPC objects,
-interface tokens, and custom sequenceable objects.
+Provides APIs for reading and writing data in specific format. During RPC or IPC, the sender can use the **write()** method provided by **MessageSequence** to write data in specific format to a **MessageSequence** object. The receiver can use the **read()** method provided by **MessageSequence** to read data in specific format from a **MessageSequence** object. The data formats include basic data types and arrays, IPC objects, interface tokens, and custom sequenceable objects.
 
 **Since:** 9
 
@@ -1535,9 +1531,7 @@ try {
 readInterfaceToken(): string
 ```
 
-Reads the interface token from this **MessageSequence** object. The interface token is read in the sequence in
-which it is written to the **MessageSequence** object. The local object can use it to verify the
-communication.
+Reads the interface token from this **MessageSequence** object. The interface token is read in the sequence in which it is written to the **MessageSequence** object. The local object can use it to verify the communication.
 
 **Since:** 9
 
@@ -1965,9 +1959,7 @@ try {
 readRemoteObject(): IRemoteObject
 ```
 
-Reads the remote object from **MessageSequence**. You can use this API to deserialize the **MessageSequence**
-object to generate an **IRemoteObject**. The remote object is read in the order in which it is written to
-this **MessageSequence** object.
+Reads the remote object from **MessageSequence**. You can use this API to deserialize the **MessageSequence** object to generate an **IRemoteObject**. The remote object is read in the order in which it is written to this **MessageSequence** object.
 
 **Since:** 9
 
@@ -3292,8 +3284,7 @@ try {
 writeInterfaceToken(token: string): void
 ```
 
-Writes an interface token to this **MessageSequence** object. The remote object can use this interface token to
-verify the communication.
+Writes an interface token to this **MessageSequence** object. The remote object can use this interface token to verify the communication.
 
 **Since:** 9
 
@@ -3303,13 +3294,13 @@ verify the communication.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| token | string | Yes | Interface token to write. The length of the string must be less than 40960 bytes. |
+| token | string | Yes | Interface token to write. The length of the string must be less than 40960. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.The number of parameters is incorrect;2.The parameter type does not match;3.The string length is greater than or equal to 40960 bytes;4.The number of bytes copied to the buffer is different from the length of the obtained string. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.The number of parameters is incorrect;2.The parameter type does not match;3.The string length is greater than or equal to 40960;4.The number of bytes copied to the buffer is different from the length of the obtained string. |
 | [1900009](../errorcode-rpc.md#1900009-failed-to-write-data-to-messagesequence) | Failed to write data to the message sequence. |
 
 **Example**
@@ -3601,14 +3592,7 @@ try {
 writeRawData(rawData: number[], size: number): void
 ```
 
-Writes raw data to this **MessageSequence** object.
-
-> **NOTE**
->
-> - This API cannot be called for multiple times in one parcel communication.
->
-> - When the data volume is large (greater than 32 KB), the shared memory is used to transmit data. In this case,
-> pay attention to the SELinux configuration.
+Writes raw data to this **MessageSequence** object. > **NOTE** > > - This API cannot be called for multiple times in one parcel communication. > > - When the data volume is large (greater than 32 KB), the shared memory is used to transmit data. In this case, > pay attention to the SELinux configuration.
 
 **Since:** 9
 
@@ -3657,14 +3641,7 @@ try {
 writeRawDataBuffer(rawData: ArrayBuffer, size: number): void
 ```
 
-Writes raw data to this **MessageSequence** object.
-
-> **NOTE**
->
-> - This API cannot be called for multiple times in one parcel communication.
->
-> - When the data volume is large (greater than 32 KB), the shared memory is used to transmit data. In this case,
-> pay attention to the SELinux configuration.
+Writes raw data to this **MessageSequence** object. > **NOTE** > > - This API cannot be called for multiple times in one parcel communication. > > - When the data volume is large (greater than 32 KB), the shared memory is used to transmit data. In this case, > pay attention to the SELinux configuration.
 
 **Since:** 11
 
@@ -3923,13 +3900,13 @@ Writes a string to this **MessageSequence** object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| val | string | Yes | String to write. The length of the string must be less than 40960 bytes. |
+| val | string | Yes | String to write. The length of the string must be less than 40960. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.The number of parameters is incorrect;2.The parameter type does not match;3.The string length is greater than or equal to 40960 bytes;4.The number of bytes copied to the buffer is different from the length of the obtained string. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.The number of parameters is incorrect;2.The parameter type does not match;3.The string length is greater than or equal to 40960;4.The number of bytes copied to the buffer is different from the length of the obtained string. |
 | [1900009](../errorcode-rpc.md#1900009-failed-to-write-data-to-messagesequence) | Failed to write data to the message sequence. |
 
 **Example**
@@ -3966,13 +3943,13 @@ Writes a string array to this **MessageSequence** object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| stringArray | string[] | Yes | String array to write. The length of a single element in the array must be lessthan 40960 bytes. |
+| stringArray | string[] | Yes | String array to write. The length of a single element in the array must be lessthan 40960. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.The parameter is an empty array;2.The number of parameters is incorrect;3.The parameter type does not match;4.The string length is greater than or equal to 40960 bytes;5.The number of bytes copied to the buffer is different from the length of the obtained string. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.The parameter is an empty array;2.The number of parameters is incorrect;3.The parameter type does not match;4.The string length is greater than or equal to 40960;5.The number of bytes copied to the buffer is different from the length of the obtained string. |
 | [1900009](../errorcode-rpc.md#1900009-failed-to-write-data-to-messagesequence) | Failed to write data to the message sequence. |
 
 **Example**

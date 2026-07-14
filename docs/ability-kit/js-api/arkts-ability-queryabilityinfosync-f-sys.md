@@ -12,10 +12,7 @@ import { bundleManager } from '@kit.AbilityKit';
 function queryAbilityInfoSync(want: Want, abilityFlags: number, userId?: number): Array<AbilityInfo>
 ```
 
-Obtains the ability information based on the given want, ability flags, and user ID. This API returns the result
-synchronously.
-
-No permission is required for obtaining the caller's own information.
+Obtains the ability information based on the given want, ability flags, and user ID. This API returns the result synchronously. No permission is required for obtaining the caller's own information.
 
 **Since:** 10
 

@@ -1,6 +1,6 @@
 # SystemSoundManager（系统接口）
 
-管理系统声音。在调用SystemSoundManager的接口前，需要先通过[getSystemSoundManager](arkts-audio-getsystemsoundmanager-f-sys.md#getsystemsoundmanager-1)创建实例。
+管理系统声音。在调用SystemSoundManager的接口前，需要先 通过[getSystemSoundManager](arkts-audio-getsystemsoundmanager-f-sys.md#getsystemsoundmanager-1)创建实例。
 
 **起始版本：** 10
 
@@ -584,14 +584,7 @@ getMockHapticRingtonePlayer(
       context: BaseContext, type: RingtoneType, ringtoneUri: string): Promise<RingtonePlayer | null>
 ```
 
-获取模拟触觉铃声播放器，根据指定的铃声类型和铃音文件URI，播放该铃音文件对应的振动文件及其模拟触觉声音文件。使用Promise异步回调。
-
-> **说明：**
->
-> - 调用该接口前，请确保传入的ringtoneUri在系统中存在，否则会出现异常和错误。例如无法播放匹配的触觉声音文件。
->
-> - 通过该接口获取实例后，在服务终止时需主动调用RingtonePlayer的
-> [release](arkts-audio-ringtoneplayer-i-sys.md#release-1)方法释放播放器资源。
+获取模拟触觉铃声播放器，根据指定的铃声类型和铃音文件URI，播放该铃音文件对应的振动文件及其模拟触觉声音文件。使用Promise异步回调。 > **说明：** > > - 调用该接口前，请确保传入的ringtoneUri在系统中存在，否则会出现异常和错误。例如无法播放匹配的触觉声音文件。 > > - 通过该接口获取实例后，在服务终止时需主动调用RingtonePlayer的 > [release](arkts-audio-ringtoneplayer-i-sys.md#release-1)方法释放播放器资源。
 
 **起始版本：** 26.0.0
 
@@ -653,14 +646,7 @@ systemSoundManagerInstance.getMockHapticRingtonePlayer(context, type, ringtoneUr
 getMockHapticRingtonePlayer(context: BaseContext, hapticUri: string): Promise<RingtonePlayer | null>
 ```
 
-获取模拟触觉铃声播放器，根据指定的触觉文件URI播放振动文件及其对应的模拟触觉声音文件。使用Promise异步回调。
-
-> **说明：**
->
-> - 调用该接口前，请确保传入的hapticUri在系统中存在，否则会出现异常和错误。例如无法播放匹配的触觉声音文件。
->
-> - 通过该接口获取实例后，在服务终止时需主动调用RingtonePlayer的
-> [release](arkts-audio-ringtoneplayer-i-sys.md#release-1)方法释放播放器资源。
+获取模拟触觉铃声播放器，根据指定的触觉文件URI播放振动文件及其对应的模拟触觉声音文件。使用Promise异步回调。 > **说明：** > > - 调用该接口前，请确保传入的hapticUri在系统中存在，否则会出现异常和错误。例如无法播放匹配的触觉声音文件。 > > - 通过该接口获取实例后，在服务终止时需主动调用RingtonePlayer的 > [release](arkts-audio-ringtoneplayer-i-sys.md#release-1)方法释放播放器资源。
 
 **起始版本：** 26.0.0
 
@@ -901,7 +887,7 @@ getSystemRingtonePlayer(context: Context, type: RingtoneType, callback: AsyncCal
 | --- | --- | --- | --- |
 | context | Context | 是 | 当前应用的上下文。 |
 | type | RingtoneType | 是 | 待获取播放器的系统铃声的类型。 |
-| callback | AsyncCallback&lt;RingtonePlayer&gt; | 是 | 回调函数。当获取系统铃声播放器成功，err为undefined，data为获取到的系统铃声播放器；否则为错误对象。 |
+| callback | AsyncCallback&lt;RingtonePlayer&gt; | 是 | 回调函数。当获取系统铃声播放器成功，err为undefineddata为获取到的系统铃声播放器；否则为错误对象。 |
 
 **示例：**
 

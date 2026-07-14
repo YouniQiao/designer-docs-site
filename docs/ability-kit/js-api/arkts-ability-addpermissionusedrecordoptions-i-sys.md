@@ -20,11 +20,7 @@ import { privacyManager } from '@kit.AbilityKit';
 enhancedIdentity?: string
 ```
 
-Extension identity, used to identify additional identity information of the caller. This field is passed in when
-it is necessary to distinguish permission usage records from different call sources under the same application.
-The length does not exceed 48 characters. Passing an excessively long value when calling
-[addPermissionUsedRecord](arkts-ability-addpermissionusedrecord-f-sys.md#addpermissionusedrecord-1) will return error code 12100001.
-The maximum length is 48. Default value: empty string.
+Extension identity, used to identify additional identity information of the caller. This field is passed in when it is necessary to distinguish permission usage records from different call sources under the same application. The length does not exceed 48 characters. Passing an excessively long value when calling [addPermissionUsedRecord](arkts-ability-addpermissionusedrecord-f-sys.md#addpermissionusedrecord-1) will return error code 12100001. The maximum length is 48. Default value: empty string.
 
 **Type:** string
 
@@ -42,9 +38,7 @@ The maximum length is 48. Default value: empty string.
 usedType?: PermissionUsedType
 ```
 
-Sensitive permission usage type.
-
-Default value: NORMAL_TYPE.
+Sensitive permission usage type. Default value: NORMAL_TYPE.
 
 **Type:** PermissionUsedType
 

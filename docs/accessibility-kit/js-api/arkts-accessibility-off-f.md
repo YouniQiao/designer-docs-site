@@ -12,8 +12,7 @@ import { accessibility } from '@kit.AccessibilityKit';
 function off(type: 'accessibilityStateChange', callback?: Callback<boolean>): void
 ```
 
-Unsubscribes from the state changes of the accessibility application. This API uses an asynchronous callback to
-return the result.
+Unsubscribes from the state changes of the accessibility application. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 
@@ -54,8 +53,7 @@ accessibility.off('accessibilityStateChange', (data: boolean) => {
 function off(type: 'touchGuideStateChange', callback?: Callback<boolean>): void
 ```
 
-Unsubscribes from the state changes in touch guide mode. This API uses an asynchronous callback to return the
-result.
+Unsubscribes from the state changes in touch guide mode. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 
@@ -96,8 +94,7 @@ accessibility.off('touchGuideStateChange', (data: boolean) => {
 function off(type: 'screenReaderStateChange', callback?: Callback<boolean>): void
 ```
 
-Unsubscribes from the state changes of the screen reader. This API uses an asynchronous callback to return the
-result.
+Unsubscribes from the state changes of the screen reader. This API uses an asynchronous callback to return the result.
 
 **Since:** 18
 
@@ -138,8 +135,7 @@ accessibility.off('screenReaderStateChange', (data: boolean) => {
 function off(type: 'touchModeChange', callback?: Callback<string>): void
 ```
 
-Unsubscribes from the single- or double-touch event changes in touch guide mode. This API uses an asynchronous
-callback to return the result.
+Unsubscribes from the single- or double-touch event changes in touch guide mode. This API uses an asynchronous callback to return the result.
 
 **Since:** 20
 

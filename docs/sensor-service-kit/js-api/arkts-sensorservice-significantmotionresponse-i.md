@@ -20,8 +20,7 @@ import { sensor } from '@kit.SensorServiceKit';
 scalar: number
 ```
 
-Intensity of a motion. This parameter specifies whether a device has a significant motion on three physical axes
-(X, Y, and Z). The value **1** is reported when the device has a significant motion.
+Intensity of a motion. This parameter specifies whether a device has a significant motion on three physical axes (X, Y, and Z). The value **1** is reported when the device has a significant motion.
 
 **Type:** number
 

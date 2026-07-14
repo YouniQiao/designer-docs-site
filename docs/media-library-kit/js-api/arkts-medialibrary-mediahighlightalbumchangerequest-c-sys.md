@@ -1,6 +1,6 @@
 # MediaHighlightAlbumChangeRequest (System API)
 
-Defines the class of media highlight album change request.
+Provides APIs for managing the media album change request. It inherits from [MediaAnalysisAlbumChangeRequest](arkts-medialibrary-mediaanalysisalbumchangerequest-c-sys.md).
 
 **Inheritance/Implementation:** MediaHighlightAlbumChangeRequest extends [MediaAnalysisAlbumChangeRequest](arkts-medialibrary-mediaanalysisalbumchangerequest-c-sys.md)
 
@@ -75,7 +75,7 @@ async function example(context: Context) {
 setHighlightAttribute(attribute: HighlightAlbumChangeAttribute, value: string): void
 ```
 
-Set attribute values of highlight album.
+Sets the specified attribute value in the highlights album.
 
 **Since:** 21
 
@@ -89,8 +89,8 @@ Set attribute values of highlight album.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| attribute | HighlightAlbumChangeAttribute | Yes | Highlight attribute to be set. |
-| value | string | Yes | Value of attribute. |
+| attribute | HighlightAlbumChangeAttribute | Yes | Attribute to set. |
+| value | string | Yes | Value to set for the attribute.<br>When **attribute** is **IS_VIEWED** or **IS_FAVORITE**, the value is **0** or **1**.When **attribute** is **NOTIFICATION_TIME**, the value is anumeric string of a maximum of 8 bytes, for example, **12345678**. |
 
 **Error codes:**
 
@@ -98,8 +98,8 @@ Set attribute values of highlight album.
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application. |
-| [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
-| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.Possible causes: 1. Database corrupted; 2. The file system is abnormal; 3. The IPC request timed out. |
+| [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
+| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error.It is recommended to retry and check the logs.Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
 **Example**
 

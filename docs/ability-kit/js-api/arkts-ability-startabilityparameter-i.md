@@ -1,8 +1,6 @@
 # StartAbilityParameter
 
-The module defines the parameters for starting an ability. The parameters can be used as input parameters in
-[startAbility](arkts-ability-startability-f.md#startability-1)
-to start the specified ability.
+The module defines the parameters for starting an ability. The parameters can be used as input parameters in [startAbility](arkts-ability-startability-f.md#startability-1) to start the specified ability.
 
 **Since:** 6
 
@@ -30,8 +28,7 @@ Indicates the special start setting used in starting ability.
 abilityStartSettings?: Record<string, Object>
 ```
 
-Indicates the special start setting used in starting ability.
-The ability of this property is same as abilityStartSetting. If both are set, this property will be used.
+Indicates the special start setting used in starting ability. The ability of this property is same as abilityStartSetting. If both are set, this property will be used.
 
 **Type:** Record<string, Object>
 

@@ -18,8 +18,7 @@ import { certificateManagerDialog } from '@kit.DeviceCertificateKit';
 showInstallButton: boolean
 ```
 
-Whether to display the button for installing the certificate. The value **true** means to display the button; the
-value **false** means the opposite.
+Whether to display the button for installing the certificate. The value **true** means to display the button; the value **false** means the opposite.
 
 **Type:** boolean
 

@@ -12,8 +12,7 @@ import { display } from '@kit.ArkUI';
 function removeVirtualScreenBlocklist(windowIds: Array<number>): Promise<void>
 ```
 
-Removes windows from the list of windows that are not allowed to be displayed during casting. This API takes effect
-only for the main window of an application or system windows. This API uses a promise to return the result.
+Removes windows from the list of windows that are not allowed to be displayed during casting. This API takes effect only for the main window of an application or system windows. This API uses a promise to return the result.
 
 **Since:** 18
 

@@ -206,8 +206,7 @@ contact.queryContacts(context, {
 function queryContacts(attrs: ContactAttributes, callback: AsyncCallback<Array<Contact>>): void
 ```
 
-Queries all contacts based on the specified attributes. This API uses an asynchronous callback to return the
-result.
+Queries all contacts based on the specified attributes. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 
@@ -252,8 +251,7 @@ contact.queryContacts({
 function queryContacts(context: Context, attrs: ContactAttributes, callback: AsyncCallback<Array<Contact>>): void
 ```
 
-Queries all contacts based on the specified attributes. This API uses an asynchronous callback to return the
-result.
+Queries all contacts based on the specified attributes. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -306,8 +304,7 @@ contact.queryContacts(context, {
 function queryContacts(holder: Holder, attrs: ContactAttributes, callback: AsyncCallback<Array<Contact>>): void
 ```
 
-Queries all contacts based on the specified holder and attributes. This API uses an asynchronous callback to return
-the result.
+Queries all contacts based on the specified holder and attributes. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 
@@ -357,8 +354,7 @@ contact.queryContacts({
 function queryContacts(context: Context, holder: Holder, attrs: ContactAttributes, callback: AsyncCallback<Array<Contact>>): void
 ```
 
-Queries all contacts based on the specified holder and attributes. This API uses an asynchronous callback to return
-the result.
+Queries all contacts based on the specified holder and attributes. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 

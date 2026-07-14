@@ -2,19 +2,13 @@
 
 Defines the interface for setting a paste button.
 
-
 ## PasteButton
 
 ```TypeScript
 PasteButton()
 ```
 
-Creates a **PasteButton** component with an icon, text, and background by default. After creation, the system
-triggers an authorization check when the button is tapped. Upon successful authorization, the application gains
-permission to read the current clipboard content.
-<br>**Description**</br>
-<ul><li>You may want to learn the [restrictions on security component styles](docroot://security/AccessToken/security-component-overview.md#constraints)
-to avoid authorization failures caused by incompliant styles.</li></ul>
+Creates a **PasteButton** component with an icon, text, and background by default. After creation, the system triggers an authorization check when the button is tapped. Upon successful authorization, the application gains permission to read the current clipboard content. <br>**Description**</br> <ul><li>You may want to learn the [restrictions on security component styles](docroot://security/AccessToken/security-component-overview.md#constraints) to avoid authorization failures caused by incompliant styles.</li></ul>
 
 **Since:** 10
 
@@ -30,12 +24,7 @@ to avoid authorization failures caused by incompliant styles.</li></ul>
 PasteButton(options: PasteButtonOptions)
 ```
 
-Creates a paste button with the specified icon, text and button type. After creation, the system triggers an
-authorization check when the button is tapped. Upon successful authorization, the app gains temporary permission to
-read the clipboard.
-<br>**Description**</br>
-<ul><li>You may want to learn the [restrictions on security component styles](docroot://security/AccessToken/security-component-overview.md#constraints)
-to avoid authorization failures caused by incompliant styles.</li></ul>
+Creates a paste button with the specified icon, text and button type. After creation, the system triggers an authorization check when the button is tapped. Upon successful authorization, the app gains temporary permission to read the clipboard. <br>**Description**</br> <ul><li>You may want to learn the [restrictions on security component styles](docroot://security/AccessToken/security-component-overview.md#constraints) to avoid authorization failures caused by incompliant styles.</li></ul>
 
 **Since:** 10
 

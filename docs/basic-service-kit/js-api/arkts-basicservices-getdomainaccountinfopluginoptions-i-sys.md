@@ -1,8 +1,6 @@
 # GetDomainAccountInfoPluginOptions (System API)
 
-Defines the options for the domain plug-in to obtain the domain account information. The
-**GetDomainAccountInfoPluginOptions** class inherits from
-[**GetDomainAccountInfoOptions**](arkts-basicservices-getdomainaccountinfooptions-i-sys.md).
+Defines the options for the domain plug-in to obtain the domain account information. The **GetDomainAccountInfoPluginOptions** class inherits from [**GetDomainAccountInfoOptions**](arkts-basicservices-getdomainaccountinfooptions-i-sys.md).
 
 **Inheritance/Implementation:** GetDomainAccountInfoPluginOptions extends [GetDomainAccountInfoOptions](arkts-basicservices-getdomainaccountinfooptions-i-sys.md)
 

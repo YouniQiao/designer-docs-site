@@ -12,11 +12,7 @@ Represents the selection menu option extension.
 menuType?: MenuType
 ```
 
-Type of the custom selection menu.
-
-Default value: **MenuType.SELECTION_MENU**
-
-Since API version 20, **MenuType.PREVIEW_MENU** supports hyperlink preview.
+Type of the custom selection menu. Default value: **MenuType.SELECTION_MENU** Since API version 20, **MenuType.PREVIEW_MENU** supports hyperlink preview.
 
 **Type:** MenuType
 

@@ -15,9 +15,7 @@ declare function listFileExt(
 ): Promise<string[]>
 ```
 
-Lists all file names in a directory. This API uses a promise to return the result.
-This API supports recursive listing of all file names and custom file name filtering.
-The returned result starts with a slash (/) and contains the subdirectory.
+Lists all file names in a directory. This API uses a promise to return the result. This API supports recursive listing of all file names and custom file name filtering. The returned result starts with a slash (/) and contains the subdirectory.
 
 **Since:** 26.0.0
 

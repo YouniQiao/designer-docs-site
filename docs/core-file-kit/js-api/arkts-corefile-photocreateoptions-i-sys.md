@@ -1,6 +1,6 @@
 # PhotoCreateOptions (System API)
 
-Describe additional operations for creating photo
+Defines the options for creating an image or video asset.
 
 **Since:** 10
 
@@ -24,7 +24,7 @@ import { userFileManager } from '@kit.CoreFileKit';
 cameraShotKey?: string
 ```
 
-Camera shot key
+Key for the Ultra Snapshot feature. This parameter is available only for the system camera, and the key value is defined by the system camera.
 
 **Type:** string
 
@@ -44,7 +44,7 @@ Camera shot key
 subType?: PhotoSubType
 ```
 
-SubType of the photo
+Subtype of the image or video.
 
 **Type:** PhotoSubType
 

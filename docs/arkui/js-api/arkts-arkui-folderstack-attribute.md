@@ -14,8 +14,7 @@ In addition to the [universal events](arkts-arkui-commonmethod-c.md), the follow
 alignContent(value: Alignment)
 ```
 
-Sets the alignment of child components in the container. When both this attribute and the
-[align](arkts-arkui-commonmethod-c.md#align-1) attribute are set, whichever is set last takes effect.
+Sets the alignment of child components in the container. When both this attribute and the [align](arkts-arkui-commonmethod-c.md#align-1) attribute are set, whichever is set last takes effect.
 
 **Since:** 11
 
@@ -37,8 +36,7 @@ Sets the alignment of child components in the container. When both this attribut
 autoHalfFold(value: boolean)
 ```
 
-Sets whether to enable auto rotation. This attribute is effective only when auto rotation
-is disabled in device system settings.
+Sets whether to enable auto rotation. This attribute is effective only when auto rotation is disabled in device system settings.
 
 **Since:** 11
 
@@ -82,8 +80,7 @@ Sets whether to enable the default animation.
 onFolderStateChange(callback: OnFoldStatusChangeCallback)
 ```
 
-Triggered when the fold state of the device changes. This API takes effect only in
-landscape mode.
+Triggered when the fold state of the device changes. This API takes effect only in landscape mode.
 
 **Since:** 11
 

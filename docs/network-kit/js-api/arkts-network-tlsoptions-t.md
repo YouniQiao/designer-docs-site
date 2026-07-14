@@ -4,9 +4,7 @@
 export type TlsOptions = 'system' | TlsConfig
 ```
 
-TlsOptions.
-'system': use system tls configuration.
-TlsOption: tls version range, and specify cipher suite.
+TlsOptions. 'system': use system tls configuration. TlsOption: tls version range, and specify cipher suite.
 
 **Since:** 18
 

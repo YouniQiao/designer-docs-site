@@ -6,13 +6,7 @@
 function getDragPreview(): DragPreview
 ```
 
-返回一个代表拖拽背板的对象。
-
-> **说明：**
->
-> 从API version 11开始，可以通过使用[UIContext](arkts-arkui-uicontext.md)中的
-> [getDragController](arkts-arkui-uicontext-c.md#getdragcontroller-1)方法获取当前UI
-> 上下文关联的[DragController](arkts-arkui-dragcontroller-c.md)对象。
+返回一个代表拖拽背板的对象。 > **说明：** > > 从API version 11开始，可以通过使用[UIContext](arkts-arkui-uicontext.md)中的 > [getDragController](arkts-arkui-uicontext-c.md#getdragcontroller-1)方法获取当前UI > 上下文关联的[DragController](arkts-arkui-dragcontroller-c.md)对象。
 
 **起始版本：** 11
 

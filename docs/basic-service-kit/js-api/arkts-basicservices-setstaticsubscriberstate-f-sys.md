@@ -12,8 +12,7 @@ import { commonEventManager } from '@kit.BasicServicesKit';
 function setStaticSubscriberState(enable: boolean, callback: AsyncCallback<void>): void
 ```
 
-Enables or disables static subscription for an application. This API uses an asynchronous callback to return the
-result.
+Enables or disables static subscription for an application. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -46,7 +45,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 commonEventManager.setStaticSubscriberState(true, (err: BusinessError) => {
   if (err.code != 0) {
-    console.error(`setStaticSubscriberState failed, errCode: ${err.code}, errMes: ${err.message}`);
+    console.error(`setStaticSubscriberState failed, errCode: ${err.code}, errMsg: ${err.message}`);
     return;
   }
   console.info(`setStaticSubscriberState success`);
@@ -99,8 +98,8 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 commonEventManager.setStaticSubscriberState(false).then(() => {
   console.info(`setStaticSubscriberState success`);
-}).catch ((err: BusinessError) => {
-  console.error(`setStaticSubscriberState failed, errCode: ${err.code}, errMes: ${err.message}`);
+}).catch((err: BusinessError) => {
+  console.error(`setStaticSubscriberState failed, errCode: ${err.code}, errMsg: ${err.message}`);
 });
 
 ```
@@ -112,8 +111,7 @@ commonEventManager.setStaticSubscriberState(false).then(() => {
 function setStaticSubscriberState(enable: boolean, events?: Array<string>): Promise<void>
 ```
 
-Enables or disables the static subscription event for the current application and records the event name. This API
-uses a promise to return the result.
+Enables or disables the static subscription event for the current application and records the event name. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -150,11 +148,11 @@ uses a promise to return the result.
 ```TypeScript
 import { BusinessError } from '@kit.BasicServicesKit';
 
-let evenName: string[] = ['usual.event.SEND_DATA'];
-commonEventManager.setStaticSubscriberState(true, evenName).then(() => {
-  console.info(`setStaticSubscriberState success, state is ${true}`);
+let eventName: string[] = ['usual.event.SEND_DATA'];
+commonEventManager.setStaticSubscriberState(true, eventName).then(() => {
+  console.info(`setStaticSubscriberState success`);
 }).catch((err: BusinessError) => {
-  console.error(`setStaticSubscriberState failed, errCode: ${err.code}, errMes: ${err.message}`);
+  console.error(`setStaticSubscriberState failed, errCode: ${err.code}, errMsg: ${err.message}`);
 });
 
 ```

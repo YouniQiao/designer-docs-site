@@ -36,8 +36,7 @@ Description of the volume.
 diskId: string
 ```
 
-ID of the disk to which the volume belongs. A disk can have one or more volumes. The disk ID is in the disk-{
-Primary device ID}-{Secondary device ID} format, which is similar to the volume ID.
+ID of the disk to which the volume belongs. A disk can have one or more volumes. The disk ID is in the disk-{ Primary device ID}-{Secondary device ID} format, which is similar to the volume ID.
 
 **Type:** string
 
@@ -87,9 +86,7 @@ File system type. Common file systems are **ext2**, **vfat**, and **NTFS**.
 id: string
 ```
 
-Volume ID, in the vol-{Primary device ID}-{Secondary device ID} format. The primary device IDs identify devices
-of different types. The secondary device IDs identify different devices of the same type. The volume IDs vary
-depending on the card insertion sequence.
+Volume ID, in the vol-{Primary device ID}-{Secondary device ID} format. The primary device IDs identify devices of different types. The secondary device IDs identify different devices of the same type. The volume IDs vary depending on the card insertion sequence.
 
 **Type:** string
 
@@ -139,8 +136,7 @@ Path of the volume mounted. Generally, the path is **\/mnt/data/external/{uuid}*
 removable: boolean
 ```
 
-Whether the volume can be removed. Currently, only removable storage devices are supported. The value **true**
-means the device can be removed; the value **false** means the opposite.
+Whether the volume can be removed. Currently, only removable storage devices are supported. The value **true** means the device can be removed; the value **false** means the opposite.
 
 **Type:** boolean
 
@@ -156,15 +152,7 @@ means the device can be removed; the value **false** means the opposite.
 state: number
 ```
 
-Volume status.
-
-**0**: The volume is unmounted.
-
-**1**: The volume is being checked.
-
-**2**: The volume is mounted.
-
-**3**: The volume is being ejected.
+Volume status. **0**: The volume is unmounted. **1**: The volume is being checked. **2**: The volume is mounted. **3**: The volume is being ejected.
 
 **Type:** number
 
@@ -180,8 +168,7 @@ Volume status.
 uuid: string
 ```
 
-Volume UUID, which uniquely identifies a volume irrespective of the card insertion sequence. However, the UUID of
-a volume will change after the volume is formatted.
+Volume UUID, which uniquely identifies a volume irrespective of the card insertion sequence. However, the UUID of a volume will change after the volume is formatted.
 
 **Type:** string
 

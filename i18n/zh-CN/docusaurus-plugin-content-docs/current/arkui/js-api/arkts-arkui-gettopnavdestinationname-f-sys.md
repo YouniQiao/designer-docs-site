@@ -6,8 +6,7 @@
 function getTopNavDestinationName(windowId: number): Promise<string>
 ```
 
-获取指定的前台窗口当前栈顶[Navigation](./@internal/component/ets/navigation)中的
-[NavDestination](./@internal/component/ets/nav_destination)名称，使用Promise异步回调。
+获取指定的前台窗口当前栈顶[Navigation](./@internal/component/ets/navigation)中的 [NavDestination](./@internal/component/ets/nav_destination)名称，使用Promise异步回调。
 
 **起始版本：** 20
 

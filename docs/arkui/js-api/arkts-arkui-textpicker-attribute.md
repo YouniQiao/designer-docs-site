@@ -1,8 +1,6 @@
 # TextPicker properties/events
 
-In addition to the [universal attributes](./common), the following attributes are supported.
-
-In addition to the [universal events](./common), the following events are supported.
+In addition to the [universal attributes](./common), the following attributes are supported. In addition to the [universal events](./common), the following events are supported.
 
 **Inheritance/Implementation:** TextPickerAttribute extends [CommonMethod<TextPickerAttribute>](CommonMethod<TextPickerAttribute>)
 
@@ -38,9 +36,7 @@ Sets whether to enable loop scrolling.
 canLoop(isLoop: Optional<boolean>)
 ```
 
-Sets whether to enable loop scrolling. Compared with
-[canLoop<sup>10+</sup>](TextPickerAttribute#canLoop(value: boolean)), this API supports the **undefined**
-type for the **isLoop** parameter.
+Sets whether to enable loop scrolling. Compared with [canLoop<sup>10+</sup>](TextPickerAttribute#canLoop(value: boolean)), this API supports the **undefined** type for the **isLoop** parameter.
 
 **Since:** 18
 
@@ -82,9 +78,7 @@ Sets the height of the picker items.
 defaultPickerItemHeight(height: Optional<number | string>)
 ```
 
-Sets the height of the picker items. Compared with
-[defaultPickerItemHeight](TextPickerAttribute#defaultPickerItemHeight(value: number | string)), this API
-supports the **undefined** type for the **height** parameter.
+Sets the height of the picker items. Compared with [defaultPickerItemHeight](TextPickerAttribute#defaultPickerItemHeight(value: number | string)), this API supports the **undefined** type for the **height** parameter.
 
 **Since:** 18
 
@@ -106,9 +100,7 @@ supports the **undefined** type for the **height** parameter.
 defaultTextStyle(style: TextPickerTextStyle)
 ```
 
-Sets the text style of the items when the text style change animation during the scrolling process is disabled.
-This setting takes effect only when
-[disableTextStyleAnimation](TextPickerAttribute#disableTextStyleAnimation) is set to **true**.
+Sets the text style of the items when the text style change animation during the scrolling process is disabled. This setting takes effect only when [disableTextStyleAnimation](TextPickerAttribute#disableTextStyleAnimation) is set to **true**.
 
 **Since:** 15
 
@@ -196,10 +188,7 @@ Sets the text color, font size, and font weight of edge items (the second item a
 disappearTextStyle(style: Optional<PickerTextStyle>)
 ```
 
-Sets the text color, font size, and font weight of edge items (the second item above or below the selected item).
-Compared with
-[disappearTextStyle<sup>10+</sup>](TextPickerAttribute#disappearTextStyle(value: PickerTextStyle)), this API
-supports the **undefined** type for the **style** parameter.
+Sets the text color, font size, and font weight of edge items (the second item above or below the selected item). Compared with [disappearTextStyle<sup>10+</sup>](TextPickerAttribute#disappearTextStyle(value: PickerTextStyle)), this API supports the **undefined** type for the **style** parameter.
 
 **Since:** 18
 
@@ -221,10 +210,7 @@ supports the **undefined** type for the **style** parameter.
 disappearTextStyle(style: Optional<PickerTextStyle | TextPickerTextStyle>)
 ```
 
-Sets the text style of edge items (the second item above or below the selected item), covering the following: text
-color, font size, font weight, maximum font size, minimum font size, text overflow mode. Compared with
-[disappearTextStyle](TextPickerAttribute#disappearTextStyle(style: Optional<PickerTextStyle>))<sup>18+</sup>,
-this API supports the [TextPickerTextStyle](arkts-arkui-textpickertextstyle-i.md) type for the **style** parameter.
+Sets the text style of edge items (the second item above or below the selected item), covering the following: text color, font size, font weight, maximum font size, minimum font size, text overflow mode. Compared with [disappearTextStyle](TextPickerAttribute#disappearTextStyle(style: Optional<PickerTextStyle>))<sup>18+</sup>, this API supports the [TextPickerTextStyle](arkts-arkui-textpickertextstyle-i.md) type for the **style** parameter.
 
 **Since:** 20
 
@@ -246,10 +232,7 @@ this API supports the [TextPickerTextStyle](arkts-arkui-textpickertextstyle-i.md
 divider(value: DividerOptions | null)
 ```
 
-Sets the divider style. If not explicitly set, the divider uses the default style.
-
-If the sum of **startMargin** and **endMargin** in [DividerOptions](arkts-arkui-divideroptions-i.md) exceeds the component's
-width, both margins are automatically reset to 0.
+Sets the divider style. If not explicitly set, the divider uses the default style. If the sum of **startMargin** and **endMargin** in [DividerOptions](arkts-arkui-divideroptions-i.md) exceeds the component's width, both margins are automatically reset to 0.
 
 **Since:** 12
 
@@ -271,12 +254,7 @@ width, both margins are automatically reset to 0.
 divider(textDivider: Optional<DividerOptions | null>)
 ```
 
-Sets the divider style. If not explicitly set, the divider uses the default style. Compared with
-[divider<sup>12+</sup>](TextPickerAttribute#divider(value: DividerOptions | null)), this API supports the
-**undefined** type for the **textDivider** parameter.
-
-If the sum of **startMargin** and **endMargin** in [DividerOptions](arkts-arkui-divideroptions-i.md) exceeds the component's
-width, both margins are automatically reset to 0.
+Sets the divider style. If not explicitly set, the divider uses the default style. Compared with [divider<sup>12+</sup>](TextPickerAttribute#divider(value: DividerOptions | null)), this API supports the **undefined** type for the **textDivider** parameter. If the sum of **startMargin** and **endMargin** in [DividerOptions](arkts-arkui-divideroptions-i.md) exceeds the component's width, both margins are automatically reset to 0.
 
 **Since:** 18
 
@@ -320,8 +298,7 @@ Sets whether to enable haptic feedback.
 gradientHeight(value: Dimension)
 ```
 
-Sets the height of the fade effect applied to the top and bottom edges of the content area. If no setting is
-specified, a default fade effect is used.
+Sets the height of the fade effect applied to the top and bottom edges of the content area. If no setting is specified, a default fade effect is used.
 
 **Since:** 12
 
@@ -343,10 +320,7 @@ specified, a default fade effect is used.
 gradientHeight(height: Optional<Dimension>)
 ```
 
-Sets the height of the fade effect applied to the top and bottom edges of the content area. If no setting is
-specified, a default fade effect is used. Compared with
-[gradientHeight<sup>12+</sup>](TextPickerAttribute#gradientHeight(value: Dimension)), this API supports the
-**undefined** type for the **height** parameter.
+Sets the height of the fade effect applied to the top and bottom edges of the content area. If no setting is specified, a default fade effect is used. Compared with [gradientHeight<sup>12+</sup>](TextPickerAttribute#gradientHeight(value: Dimension)), this API supports the **undefined** type for the **height** parameter.
 
 **Since:** 18
 
@@ -368,10 +342,7 @@ specified, a default fade effect is used. Compared with
 onAccept(callback: (value: string, index: number) => void)
 ```
 
-Triggered when the OK button in the dialog box is clicked. This event can be triggered only in the
-[text picker dialog box](./text_picker).
-
-This API is supported since API version 8 and deprecated since API version 10. No substitute is provided.
+Triggered when the OK button in the dialog box is clicked. This event can be triggered only in the [text picker dialog box](./text_picker). This API is supported since API version 8 and deprecated since API version 10. No substitute is provided.
 
 **Since:** 8
 
@@ -391,10 +362,7 @@ This API is supported since API version 8 and deprecated since API version 10. N
 onCancel(callback: () => void)
 ```
 
-Triggered when the cancel button in the dialog box is clicked. This event can be triggered only in the
-[text picker dialog box](./text_picker).
-
-This API is supported since API version 8 and deprecated since API version 10. No substitute is provided.
+Triggered when the cancel button in the dialog box is clicked. This event can be triggered only in the [text picker dialog box](./text_picker). This API is supported since API version 8 and deprecated since API version 10. No substitute is provided.
 
 **Since:** 8
 
@@ -414,12 +382,7 @@ This API is supported since API version 8 and deprecated since API version 10. N
 onChange(callback: (value: string | string[], index: number | number[]) => void)
 ```
 
-Triggered when the text picker snaps to the selected item. This event cannot be triggered by two-way bound state
-variables. When the picker contains text only or a combination of images and text, **value** indicates the text of
-the selected item. When the picker contains images only, **value** is empty.
-
-This callback is triggered only after the scroll animation completes. To obtain real-time index changes, use
-[onEnterSelectedArea](TextPickerAttribute#onEnterSelectedArea) instead.
+Triggered when the text picker snaps to the selected item. This event cannot be triggered by two-way bound state variables. When the picker contains text only or a combination of images and text, **value** indicates the text of the selected item. When the picker contains images only, **value** is empty. This callback is triggered only after the scroll animation completes. To obtain real-time index changes, use [onEnterSelectedArea](TextPickerAttribute#onEnterSelectedArea) instead.
 
 **Since:** 8
 
@@ -439,15 +402,7 @@ This callback is triggered only after the scroll animation completes. To obtain 
 onChange(callback: Optional<OnTextPickerChangeCallback>)
 ```
 
-Triggered when the text picker snaps to the selected item. This event cannot be triggered by two-way bound state
-variables. When the picker contains text only or a combination of images and text, **value** indicates the text of
-the selected item. When the picker contains images only, **value** is empty. Compared with
-[onChange]
-{@link TextPickerAttribute#onChange(callback: (value: string | string[], index: number | number[]) => void)},
-this API supports the **undefined** type for the **callback** parameter.
-
-This callback is triggered only after the scroll animation completes. To obtain real-time index changes, use
-[onEnterSelectedArea](TextPickerAttribute#onEnterSelectedArea) instead.
+Triggered when the text picker snaps to the selected item. This event cannot be triggered by two-way bound state variables. When the picker contains text only or a combination of images and text, **value** indicates the text of the selected item. When the picker contains images only, **value** is empty. Compared with [onChange] {@link TextPickerAttribute#onChange(callback: (value: string | string[], index: number | number[]) => void)}, this API supports the **undefined** type for the **callback** parameter. This callback is triggered only after the scroll animation completes. To obtain real-time index changes, use [onEnterSelectedArea](TextPickerAttribute#onEnterSelectedArea) instead.
 
 **Since:** 18
 
@@ -469,21 +424,7 @@ This callback is triggered only after the scroll animation completes. To obtain 
 onEnterSelectedArea(callback: TextPickerEnterSelectedAreaCallback)
 ```
 
-Triggered when an option enters the selection zone during text picker scrolling (when the scroll distance exceeds
-half the selected item's height).
-
-> **NOTE**
->
-> - This event is triggered earlier than the [onChange]
-> {@link TextPickerAttribute#onChange(callback: (value: string | string[], index: number | number[]) => void)}
-> event.
->
-> - In scenarios where the picker contains linked columns, the use of this callback is not recommended. The reason
-> is that it identifies nodes where items enter the divider area during scrolling. However, items that change in
-> response to the scrolling do not themselves scroll. As a result, the callback's return values will only reflect
-> changes for the currently scrolling column, while other non-scrolling columns will remain unchanged.
->
-> - This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
+Triggered when an option enters the selection zone during text picker scrolling (when the scroll distance exceeds half the selected item's height). > **NOTE** > > - This event is triggered earlier than the [onChange] > {@link TextPickerAttribute#onChange(callback: (value: string | string[], index: number | number[]) => void)} > event. > > - In scenarios where the picker contains linked columns, the use of this callback is not recommended. The reason > is that it identifies nodes where items enter the divider area during scrolling. However, items that change in > response to the scrolling do not themselves scroll. As a result, the callback's return values will only reflect > changes for the currently scrolling column, while other non-scrolling columns will remain unchanged. > > - This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 18
 
@@ -505,14 +446,7 @@ half the selected item's height).
 onScrollStop(callback: TextPickerScrollStopCallback)
 ```
 
-Triggered when the scrolling in the text picker stops.
-
-If the scrolling is initiated by a gesture, this event is triggered when the finger is lifted from the screen and
-the scrolling stops.
-
-> **NOTE**
->
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
+Triggered when the scrolling in the text picker stops. If the scrolling is initiated by a gesture, this event is triggered when the finger is lifted from the screen and the scrolling stops. > **NOTE** > > This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
 
 **Since:** 14
 
@@ -534,16 +468,7 @@ the scrolling stops.
 onScrollStop(callback: Optional<TextPickerScrollStopCallback>)
 ```
 
-Triggered when the scrolling in the text picker stops. Compared with
-[onScrollStop<sup>14+</sup>](TextPickerAttribute#onScrollStop(callback: TextPickerScrollStopCallback)), this
-API supports the **undefined** type for the **callback** parameter.
-
-If the scrolling is initiated by a gesture, this event is triggered when the finger is lifted from the screen and
-the scrolling stops.
-
-> **NOTE**
->
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
+Triggered when the scrolling in the text picker stops. Compared with [onScrollStop<sup>14+</sup>](TextPickerAttribute#onScrollStop(callback: TextPickerScrollStopCallback)), this API supports the **undefined** type for the **callback** parameter. If the scrolling is initiated by a gesture, this event is triggered when the finger is lifted from the screen and the scrolling stops. > **NOTE** > > This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
 
 **Since:** 18
 
@@ -587,9 +512,7 @@ Sets the background style of selected items.
 selectedIndex(value: number | number[])
 ```
 
-Sets the index of the selected item or items in the data list. This setting takes precedence over the **value**
-property in [TextPickerOptions](arkts-arkui-textpickeroptions-i.md). Use the number type for single-column pickers. Use the
-number[] type for multi-column pickers.
+Sets the index of the selected item or items in the data list. This setting takes precedence over the **value** property in [TextPickerOptions](arkts-arkui-textpickeroptions-i.md). Use the number type for single-column pickers. Use the number[] type for multi-column pickers.
 
 **Since:** 10
 
@@ -611,11 +534,7 @@ number[] type for multi-column pickers.
 selectedIndex(index: Optional<number | number[]>)
 ```
 
-Sets the index of the selected item or items in the data list. This setting takes precedence over the **value**
-property in [TextPickerOptions](arkts-arkui-textpickeroptions-i.md). Use the number type for single-column pickers. Use the
-number[] type for multi-column pickers. Compared with
-[selectedIndex<sup>10+</sup>](TextPickerAttribute#selectedIndex(value: number | number[])), this API supports
-the **undefined** type for the **index** parameter.
+Sets the index of the selected item or items in the data list. This setting takes precedence over the **value** property in [TextPickerOptions](arkts-arkui-textpickeroptions-i.md). Use the number type for single-column pickers. Use the number[] type for multi-column pickers. Compared with [selectedIndex<sup>10+</sup>](TextPickerAttribute#selectedIndex(value: number | number[])), this API supports the **undefined** type for the **index** parameter.
 
 **Since:** 18
 
@@ -659,9 +578,7 @@ Sets the text color, font size, and font weight of the selected item.
 selectedTextStyle(style: Optional<PickerTextStyle>)
 ```
 
-Sets the text color, font size, and font weight of the selected item. Compared with
-[selectedTextStyle<sup>10+</sup>](TextPickerAttribute#selectedTextStyle(value: PickerTextStyle)), this API
-supports the **undefined** type for the **style** parameter.
+Sets the text color, font size, and font weight of the selected item. Compared with [selectedTextStyle<sup>10+</sup>](TextPickerAttribute#selectedTextStyle(value: PickerTextStyle)), this API supports the **undefined** type for the **style** parameter.
 
 **Since:** 18
 
@@ -683,10 +600,7 @@ supports the **undefined** type for the **style** parameter.
 selectedTextStyle(style: Optional<PickerTextStyle | TextPickerTextStyle>)
 ```
 
-Sets the text style of the selected item, covering the following: text color, font size, font weight, maximum font
-size, minimum font size, text overflow mode. Compared with
-[selectedTextStyle](TextPickerAttribute#selectedTextStyle(style: Optional<PickerTextStyle>))<sup>18+</sup>,
-this API supports the [TextPickerTextStyle](arkts-arkui-textpickertextstyle-i.md) type for the **style** parameter.
+Sets the text style of the selected item, covering the following: text color, font size, font weight, maximum font size, minimum font size, text overflow mode. Compared with [selectedTextStyle](TextPickerAttribute#selectedTextStyle(style: Optional<PickerTextStyle>))<sup>18+</sup>, this API supports the [TextPickerTextStyle](arkts-arkui-textpickertextstyle-i.md) type for the **style** parameter.
 
 **Since:** 20
 
@@ -708,8 +622,7 @@ this API supports the [TextPickerTextStyle](arkts-arkui-textpickertextstyle-i.md
 textStyle(value: PickerTextStyle)
 ```
 
-Sets the text color, font size, and font weight of candidate items (the first item immediately above or below the
-selected item).
+Sets the text color, font size, and font weight of candidate items (the first item immediately above or below the selected item).
 
 **Since:** 10
 
@@ -731,10 +644,7 @@ selected item).
 textStyle(style: Optional<PickerTextStyle>)
 ```
 
-Sets the text color, font size, and font weight of candidate items (the first item immediately above or below the
-selected item). Compared with
-[textStyle<sup>10+</sup>](TextPickerAttribute#textStyle(value: PickerTextStyle)), this API supports the
-**undefined** type for the **style** parameter.
+Sets the text color, font size, and font weight of candidate items (the first item immediately above or below the selected item). Compared with [textStyle<sup>10+</sup>](TextPickerAttribute#textStyle(value: PickerTextStyle)), this API supports the **undefined** type for the **style** parameter.
 
 **Since:** 18
 
@@ -756,10 +666,7 @@ selected item). Compared with
 textStyle(style: Optional<PickerTextStyle | TextPickerTextStyle>)
 ```
 
-Sets the text style of candidate items (the first item immediately above or below the selected item), covering the
-following: text color, font size, font weight, maximum font size, minimum font size, text overflow mode. Compared
-with [textStyle](TextPickerAttribute#textStyle(style: Optional<PickerTextStyle>))<sup>18+</sup>, this API
-supports the [TextPickerTextStyle](arkts-arkui-textpickertextstyle-i.md) type for the **style** parameter.
+Sets the text style of candidate items (the first item immediately above or below the selected item), covering the following: text color, font size, font weight, maximum font size, minimum font size, text overflow mode. Compared with [textStyle](TextPickerAttribute#textStyle(style: Optional<PickerTextStyle>))<sup>18+</sup>, this API supports the [TextPickerTextStyle](arkts-arkui-textpickertextstyle-i.md) type for the **style** parameter.
 
 **Since:** 20
 

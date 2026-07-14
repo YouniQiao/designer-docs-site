@@ -1,13 +1,6 @@
 # Scroller
 
-可滚动容器组件的控制器，可以将此组件绑定至容器组件，然后通过它控制容器组件的滚动。同一个控制器不可以控制多个容器组件，目前支持绑定到ArcList、ArcScrollBar、List、Scroll、ScrollBar、Grid、WaterFlow上。
-
-<p><strong>说明</strong>
-<br>1、Scroller控制器与滚动容器组件的绑定发生在组件创建阶段。
-<br>2、Scroller控制器与滚动容器组件绑定后才可以正常调用Scroller方法，否则根据调用接口不同会不生效或者抛异常。
-<br>3、以aboutToAppear为例，aboutToAppear在创建自定义组件的新实例后，在执行其build()方法之前执行。因此如果滚动组件在自定义组件build内，在该自定义组件aboutToAppear执行时，内部滚动组件还没有创建，是不能正常调用上述Scroller方法的。
-<br>4、以onAppear为例，组件挂载显示后触发此回调。因此在滚动组件的onAppear回调执行时，滚动组件已经创建并已经和Scroller绑定成功，是可以正常调用Scroller方法的。
-</p>
+可滚动容器组件的控制器，可以将此组件绑定至容器组件，然后通过它控制容器组件的滚动。同一个控制器不可以控制多个容器组件，目前支持绑定到ArcList、ArcScrollBar、List、Scroll、ScrollBar、Grid、WaterFlow上。 <p><strong>说明</strong> <br>1、Scroller控制器与滚动容器组件的绑定发生在组件创建阶段。 <br>2、Scroller控制器与滚动容器组件绑定后才可以正常调用Scroller方法，否则根据调用接口不同会不生效或者抛异常。 <br>3、以aboutToAppear为例，aboutToAppear在创建自定义组件的新实例后，在执行其build()方法之前执行。因此如果滚动组件在自定义组件build内，在该自定义组件aboutToAppear执行时，内部滚动组件还没有创建，是不能正常调用上述Scroller方法的。 <br>4、以onAppear为例，组件挂载显示后触发此回调。因此在滚动组件的onAppear回调执行时，滚动组件已经创建并已经和Scroller绑定成功，是可以正常调用Scroller方法的。 </p>
 
 **起始版本：** 7
 
@@ -61,15 +54,7 @@ contentSize(): SizeResult
 currentOffset() : OffsetResult
 ```
 
-获取当前滚动偏移量。
-
-<p><strong>说明</strong>
-<br>1. 当Scroller没有和组件绑定时，该接口会返回undefined，但是接口中没有声明，
-推荐使用offset函数。
-<br>2. Grid、List、WaterFlow组件有懒加载机制，组件内容没有加载并布局完成时，
-内容总偏移量通过估算得到，估算结果可能会有误差。其中List组件可以通过childrenMainSize
-属性解决估算不准确的问题，Grid与WaterFlow估算不准暂无解决方案。
-</p>
+获取当前滚动偏移量。 <p><strong>说明</strong> <br>1. 当Scroller没有和组件绑定时，该接口会返回undefined，但是接口中没有声明， 推荐使用offset函数。 <br>2. Grid、List、WaterFlow组件有懒加载机制，组件内容没有加载并布局完成时， 内容总偏移量通过估算得到，估算结果可能会有误差。其中List组件可以通过childrenMainSize 属性解决估算不准确的问题，Grid与WaterFlow估算不准暂无解决方案。 </p>
 
 **起始版本：** 7
 
@@ -140,11 +125,7 @@ getFrameNode(): FrameNode | undefined
 getItemIndex(x: number, y: number): number
 ```
 
-根据坐标获取子组件的索引。
-
-<p><strong>说明</strong>
-<br>坐标无效时返回<em>-1</em>。
-</p>
+根据坐标获取子组件的索引。 <p><strong>说明</strong> <br>坐标无效时返回<em>-1</em>。 </p>
 
 **起始版本：** 14
 
@@ -180,12 +161,7 @@ getItemIndex(x: number, y: number): number
 getItemRect(index: number): RectResult
 ```
 
-获取子组件相对于父组件的大小和位置。
-
-<p><strong>说明</strong>
-<br>index必须是显示区域内可见的子组件的索引，否则视为无效值。
-<br>非法值返回的大小和位置均为0。
-</p>
+获取子组件相对于父组件的大小和位置。 <p><strong>说明</strong> <br>index必须是显示区域内可见的子组件的索引，否则视为无效值。 <br>非法值返回的大小和位置均为0。 </p>
 
 **起始版本：** 11
 
@@ -220,11 +196,7 @@ getItemRect(index: number): RectResult
 isAtEnd(): boolean
 ```
 
-检查是否已滚动到底部。
-
-<p><strong>说明</strong>
-<br>该接口支持ArcList、Scroll、List、Grid和WaterFlow组件。
-</p>
+检查是否已滚动到底部。 <p><strong>说明</strong> <br>该接口支持ArcList、Scroll、List、Grid和WaterFlow组件。 </p>
 
 **起始版本：** 10
 
@@ -268,11 +240,7 @@ offset() : OffsetResult | undefined
 scrollBy(dx: Length, dy: Length)
 ```
 
-滚动指定距离。
-
-<p><strong>说明</strong>
-<br>该接口支持ArcList、Scroll、List、Grid和WaterFlow组件。
-</p>
+滚动指定距离。 <p><strong>说明</strong> <br>该接口支持ArcList、Scroll、List、Grid和WaterFlow组件。 </p>
 
 **起始版本：** 9
 
@@ -293,8 +261,7 @@ scrollBy(dx: Length, dy: Length)
 scrollEdge(value: Edge, options?: ScrollEdgeOptions)
 ```
 
-滚动到容器边缘，不区分滚动轴方向，Edge.Top和Edge.Start表现相同，Edge.Bottom和Edge.End表现相同。
-Scroll组件默认有动画，Grid、List、WaterFlow组件默认无动画。
+滚动到容器边缘，不区分滚动轴方向，Edge.Top和Edge.Start表现相同，Edge.Bottom和Edge.End表现相同。 Scroll组件默认有动画，Grid、List、WaterFlow组件默认无动画。
 
 **起始版本：** 7
 
@@ -357,11 +324,7 @@ scrollPage(value: { next: boolean; direction?: Axis })
 scrollTo(options: ScrollOptions)
 ```
 
-滑动到指定位置。
-
-<p><strong>说明</strong>
-<br>scrollTo动画速度大于200vp/s时，滚动组件区域内的组件不响应点击事件。
-</p>
+滑动到指定位置。 <p><strong>说明</strong> <br>scrollTo动画速度大于200vp/s时，滚动组件区域内的组件不响应点击事件。 </p>
 
 **起始版本：** 7
 
@@ -381,23 +344,7 @@ scrollTo(options: ScrollOptions)
 scrollToIndex(value: number, smooth?: boolean, align?: ScrollAlign, options?: ScrollToIndexOptions)
 ```
 
-滑动到指定索引位置，支持设置额外偏移量。
-开启smooth动效时，会对经过的所有item进行加载和布局计算，当大量加载item时会导致性能问题，
-建议先调用scrollToIndex不带动画跳转到目标附近位置，再调用scrollToIndex带动画滚动到目标位置。
-
-<p><strong>说明</strong>
-<br>该接口仅对ArcList、Grid、List和WaterFlow组件生效。
-<br>在LazyForEach、ForEach、Repeat刷新数据源时，需确保在数据刷新完成之后再调用此接口。
-<br>从API version 11开始，在List中支持contentStartOffset和contentEndOffset。
-从API version 22开始，在Grid和Waterflow组件中支持设置contentStartOffset和contentEndOffset。
-<br>- 当滚动容器组件设置contentStartOffset时，如果ScrollAlign设置为START，滚动结束时，
-指定item首部会与滚动容器组件contentStartOffset处对齐。
-<br>- 当滚动容器组件设置contentEndOffset时，如果ScrollAlign设置为END，滚动结束时，
-指定item尾部会与滚动容器组件contentEndOffset处对齐。
-<br>- 当滚动容器组件设置contentStartOffset或contentEndOffset时，如果ScrollAlign设置为AUTO，
-且指定item完全处于显示区内，不做调整；否则依照滚动距离最短的原则，将指定item首部与滚动组件
-contentStartOffset处对齐，或指定item尾部与滚动组件contentEndOffset处对齐，使指定item完全显示。
-</p>
+滑动到指定索引位置，支持设置额外偏移量。 开启smooth动效时，会对经过的所有item进行加载和布局计算，当大量加载item时会导致性能问题， 建议先调用scrollToIndex不带动画跳转到目标附近位置，再调用scrollToIndex带动画滚动到目标位置。 <p><strong>说明</strong> <br>该接口仅对ArcList、Grid、List和WaterFlow组件生效。 <br>在LazyForEach、ForEach、Repeat刷新数据源时，需确保在数据刷新完成之后再调用此接口。 <br>从API version 11开始，在List中支持contentStartOffset和contentEndOffset。 从API version 22开始，在Grid和Waterflow组件中支持设置contentStartOffset和contentEndOffset。 <br>- 当滚动容器组件设置contentStartOffset时，如果ScrollAlign设置为START，滚动结束时， 指定item首部会与滚动容器组件contentStartOffset处对齐。 <br>- 当滚动容器组件设置contentEndOffset时，如果ScrollAlign设置为END，滚动结束时， 指定item尾部会与滚动容器组件contentEndOffset处对齐。 <br>- 当滚动容器组件设置contentStartOffset或contentEndOffset时，如果ScrollAlign设置为AUTO， 且指定item完全处于显示区内，不做调整；否则依照滚动距离最短的原则，将指定item首部与滚动组件 contentStartOffset处对齐，或指定item尾部与滚动组件contentEndOffset处对齐，使指定item完全显示。 </p>
 
 **起始版本：** 7
 

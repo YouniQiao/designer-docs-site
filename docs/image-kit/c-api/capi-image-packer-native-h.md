@@ -111,7 +111,7 @@ Creates the pointer to an OH_PackingOptions struct.
 
 | Type | Description |
 | -- | -- |
-| [Image_ErrorCode](capi-image-common-h.md#image_errorcode) | Returns [Image_ErrorCode](capi-image-common-h.md#image_errorcode) |
+| [Image_ErrorCode](capi-image-common-h.md#image_errorcode) | <ul><br>         <li>[IMAGE_SUCCESS](capi-image-common-h.md#image_errorcode) if the execution is successful.</li><br>         <li>[IMAGE_BAD_PARAMETER](capi-image-common-h.md#image_errorcode) options is nullptr.</li><br>         </ul> |
 
 ### OH_PackingOptions_GetMimeType()
 
@@ -686,7 +686,7 @@ Creates the pointer to an OH_ImagePackerNative struct.
 
 | Type | Description |
 | -- | -- |
-| [Image_ErrorCode](capi-image-common-h.md#image_errorcode) | Returns [Image_ErrorCode](capi-image-common-h.md#image_errorcode) |
+| [Image_ErrorCode](capi-image-common-h.md#image_errorcode) | <ul><br>         <li>[IMAGE_SUCCESS](capi-image-common-h.md#image_errorcode) if the execution is successful.</li><br>         <li>[IMAGE_BAD_PARAMETER](capi-image-common-h.md#image_errorcode) imagePacker is nullptr.</li><br>         </ul> |
 
 ### OH_ImagePackerNative_PackToDataFromImageSource()
 
@@ -706,7 +706,7 @@ Encodes an image source into data in a given format.
 | -- | -- |
 | [OH_ImagePackerNative](capi-image-nativemodule-oh-imagepackernative.md) *imagePacker | Pointer to OH_ImagePackerNative. |
 | [OH_PackingOptions](capi-image-nativemodule-oh-packingoptions.md) *options | Pointer to an OH_PackingOptions struct. |
-| [OH_ImageSourceNative](capi-image-nativemodule-oh-imagesourcenative.md) *imageSource | Pointer to the image source to encode. |
+| OH_ImageSourceNative *imageSource | Pointer to the image source to encode. |
 | uint8_t *outData | Pointer to the buffer used to store the output data. |
 | size_t *size | Pointer to the size of the buffer. |
 
@@ -762,7 +762,7 @@ Encodes a picture into data in a given format.
 | -- | -- |
 | [OH_ImagePackerNative](capi-image-nativemodule-oh-imagepackernative.md) *imagePacker | Pointer to OH_ImagePackerNative. |
 | [OH_PackingOptions](capi-image-nativemodule-oh-packingoptions.md) *options | Pointer to an OH_PackingOptions struct. |
-| [OH_PictureNative](capi-image-nativemodule-oh-picturenative.md) *picture | Pointer to the picture to encode. |
+| OH_PictureNative *picture | Pointer to the picture to encode. |
 | uint8_t *outData | Pointer to the buffer used to store the output data. |
 | size_t *size | Pointer to the size of the buffer. |
 
@@ -819,7 +819,7 @@ Encodes an image source into a file.
 | -- | -- |
 | [OH_ImagePackerNative](capi-image-nativemodule-oh-imagepackernative.md) *imagePacker | Pointer to OH_ImagePackerNative. |
 | [OH_PackingOptions](capi-image-nativemodule-oh-packingoptions.md) *options | Pointer to an OH_PackingOptions struct. |
-| [OH_ImageSourceNative](capi-image-nativemodule-oh-imagesourcenative.md) *imageSource | Pointer to the image source to encode. |
+| OH_ImageSourceNative *imageSource | Pointer to the image source to encode. |
 | int32_t fd | File descriptor, which is writable. |
 
 **Returns**:
@@ -873,7 +873,7 @@ Encodes a picture into a file.
 | -- | -- |
 | [OH_ImagePackerNative](capi-image-nativemodule-oh-imagepackernative.md) *imagePacker | Pointer to OH_ImagePackerNative. |
 | [OH_PackingOptions](capi-image-nativemodule-oh-packingoptions.md) *options | Pointer to an OH_PackingOptions struct. |
-| [OH_PictureNative](capi-image-nativemodule-oh-picturenative.md) *picture | Pointer to the picture to encode. |
+| OH_PictureNative *picture | Pointer to the picture to encode. |
 | int32_t fd | File descriptor, which is writable. |
 
 **Returns**:

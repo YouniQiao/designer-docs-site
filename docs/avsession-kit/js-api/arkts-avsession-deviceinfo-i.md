@@ -50,8 +50,7 @@ The playback type supported by the device. See {@link AVCastCategory}
 deviceId: string
 ```
 
-Audio device id.The length of the audioDeviceId array is greater than 1
-if output to multiple devices at the same time.
+Audio device id.The length of the audioDeviceId array is greater than 1 if output to multiple devices at the same time.
 
 **Type:** string
 
@@ -67,8 +66,7 @@ if output to multiple devices at the same time.
 deviceName: string
 ```
 
-Device name. The length of the deviceName array is greater than 1
-if output to multiple devices at the same time.
+Device name. The length of the deviceName array is greater than 1 if output to multiple devices at the same time.
 
 **Type:** string
 

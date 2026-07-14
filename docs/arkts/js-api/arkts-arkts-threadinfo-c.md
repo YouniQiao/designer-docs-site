@@ -18,8 +18,7 @@ import { taskpool } from '@kit.ArkTS';
 priority?: Priority
 ```
 
-Priority of the calling thread. If the return value is empty, no task is running. You are advised not to change
-the value.
+Priority of the calling thread. If the return value is empty, no task is running. You are advised not to change the value.
 
 **Type:** Priority
 
@@ -35,8 +34,7 @@ the value.
 taskIds?: number[]
 ```
 
-IDs of tasks running on the calling thread. If the return value is empty, no task is running. You are advised not
-to change the value.
+IDs of tasks running on the calling thread. If the return value is empty, no task is running. You are advised not to change the value.
 
 **Type:** number[]
 
@@ -52,8 +50,7 @@ to change the value.
 tid: number
 ```
 
-ID of the worker thread. If the return value is empty, no task is running. You are advised not to change the
-value.
+ID of the worker thread. If the return value is empty, no task is running. You are advised not to change the value.
 
 **Type:** number
 

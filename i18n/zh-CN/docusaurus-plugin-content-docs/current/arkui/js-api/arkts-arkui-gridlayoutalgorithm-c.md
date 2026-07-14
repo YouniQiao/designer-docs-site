@@ -1,11 +1,6 @@
 # GridLayoutAlgorithm
 
-网格布局算法类。
-
-> **说明：**
->
-> GridLayoutAlgorithm类对象可以赋值给LayoutAlgorithm类型变量，作为[DynamicLayout](arkts-arkui-components-arkdynamiclayout.md)组件的入
-> 参指定布局算法。
+网格布局算法类。 > **说明：** > > GridLayoutAlgorithm类对象可以赋值给LayoutAlgorithm类型变量，作为[DynamicLayout](arkts-arkui-components-arkdynamiclayout.md)组件的入 > 参指定布局算法。
 
 **继承/实现关系：** GridLayoutAlgorithm implements [LayoutAlgorithm](arkts-arkui-layoutalgorithm-i.md)
 
@@ -41,13 +36,7 @@ constructor(option?: GridLayoutAlgorithmOptions)
 @Trace public columnsGap?: LengthMetrics
 ```
 
-列与列之间的间距。
-
-默认值：LengthMetrics.vp(0)
-
-非法值：按默认值处理。
-
-装饰器类型：@Trace
+列与列之间的间距。 默认值：LengthMetrics.vp(0) 非法值：按默认值处理。 装饰器类型：@Trace
 
 **类型：** LengthMetrics
 
@@ -67,13 +56,7 @@ constructor(option?: GridLayoutAlgorithmOptions)
 @Trace public columnsTemplate?: string | ItemFillPolicy
 ```
 
-设置当前网格布局的列数。
-
-默认值：'1fr'
-
-非法值：按默认值处理。
-
-装饰器类型：@Trace
+设置当前网格布局的列数。 默认值：'1fr' 非法值：按默认值处理。 装饰器类型：@Trace
 
 **类型：** string | ItemFillPolicy
 
@@ -93,13 +76,7 @@ constructor(option?: GridLayoutAlgorithmOptions)
 @Trace public rowsGap?: LengthMetrics
 ```
 
-行与行之间的间距。
-
-默认值：LengthMetrics.vp(0)
-
-非法值：按默认值处理。
-
-装饰器类型：@Trace
+行与行之间的间距。 默认值：LengthMetrics.vp(0) 非法值：按默认值处理。 装饰器类型：@Trace
 
 **类型：** LengthMetrics
 

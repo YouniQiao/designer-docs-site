@@ -18,10 +18,7 @@ import { media } from '@kit.MediaKit';
 height?: number
 ```
 
-The expected output frame image height.
-If the value is less than 0, the height will be the orginal height of the video.
-If the value is 0 or no value is assigned, the scaling ratio will follow the specified width.
-If both width and height is not assigned, the output will be the original size of video frame.
+The expected output frame image height. If the value is less than 0, the height will be the orginal height of the video. If the value is 0 or no value is assigned, the scaling ratio will follow the specified width. If both width and height is not assigned, the output will be the original size of video frame.
 
 **Type:** number
 
@@ -35,10 +32,7 @@ If both width and height is not assigned, the output will be the original size o
 width?:number
 ```
 
-The expected output frame image width.
-If the value is less than 0, the width will be the orginal width of the video.
-If the value is 0 or no value is assigned, the scaling ratio will follow the specified height.
-If both width and height is not assigned, the output will be the original size of video frame.
+The expected output frame image width. If the value is less than 0, the width will be the orginal width of the video. If the value is 0 or no value is assigned, the scaling ratio will follow the specified height. If both width and height is not assigned, the output will be the original size of video frame.
 
 **Type:** number
 

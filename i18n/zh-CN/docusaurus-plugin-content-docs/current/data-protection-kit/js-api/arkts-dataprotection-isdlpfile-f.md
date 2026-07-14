@@ -6,9 +6,7 @@
 function isDLPFile(fd: number): Promise<boolean>
 ```
 
-根据文件的fd，查询该文件是否是DLP文件。使用Promise异步回调。
-
-在文件处理流程中，需要先判断文件是否为DLP文件，再决定后续处理策略（如是否需要通过DLP沙箱打开）。
+根据文件的fd，查询该文件是否是DLP文件。使用Promise异步回调。 在文件处理流程中，需要先判断文件是否为DLP文件，再决定后续处理策略（如是否需要通过DLP沙箱打开）。
 
 **起始版本：** 10
 
@@ -62,9 +60,7 @@ dlpPermission.isDLPFile(file).then((isDLPFile: boolean) => {
 function isDLPFile(fd: number, callback: AsyncCallback<boolean>): void
 ```
 
-根据文件的fd，查询该文件是否是DLP文件。调用成功后返回查询结果，true表示是DLP文件，false表示非DLP文件。使用callback异步回调。
-
-在文件处理流程中，需要先判断文件是否为DLP文件，再决定后续处理策略（如是否需要通过DLP沙箱打开）。
+根据文件的fd，查询该文件是否是DLP文件。调用成功后返回查询结果，true表示是DLP文件，false表示非DLP文件。使用callback异步回调。 在文件处理流程中，需要先判断文件是否为DLP文件，再决定后续处理策略（如是否需要通过DLP沙箱打开）。
 
 **起始版本：** 10
 

@@ -18,8 +18,7 @@ import { uniformDataStruct } from '@kit.ArkData';
 details?: Record<string, number | number | number | string | Uint8Array>
 ```
 
-Object of the dictionary type used to describe the icon. The key is of the string type, and the value can be a
-number, a string, or a Uint8Array. By default, it is an empty dictionary object.
+Object of the dictionary type used to describe the icon. The key is of the string type, and the value can be a number, a string, or a Uint8Array. By default, it is an empty dictionary object.
 
 **Type:** Record<string, number | number | number | string | Uint8Array>
 
@@ -35,8 +34,7 @@ number, a string, or a Uint8Array. By default, it is an empty dictionary object.
 fileType: string
 ```
 
-File type, which must be UTD. For details, see [Prebuilt UTDs]. The
-maximum length of the value is 1024 bytes.
+File type, which must be UTD. For details, see [Prebuilt UTDs]. The maximum length of the value is 1024 bytes.
 
 **Type:** string
 
@@ -68,8 +66,7 @@ File path.
 readonly uniformDataType: 'general.file-uri'
 ```
 
-Uniform data type, which has a fixed value of **general.file-uri**. For details, see
-[UniformDataType](arkts-arkdata-uniformdatatype-e.md).
+Uniform data type, which has a fixed value of **general.file-uri**. For details, see [UniformDataType](arkts-arkdata-uniformdatatype-e.md).
 
 **Type:** 'general.file-uri'
 

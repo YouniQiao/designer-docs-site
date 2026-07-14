@@ -12,8 +12,7 @@ Enumerates progress indicator types.
 Linear = 0
 ```
 
-Linear type. Since API version 9, the progress indicator adapts to vertical display when its height is greater than
-its width.
+Linear type. Since API version 9, the progress indicator adapts to vertical display when its height is greater than its width.
 
 **Since:** 8
 
@@ -77,9 +76,7 @@ Ring style with scales, which is similar to the clock scale style.
 Capsule = 4
 ```
 
-Capsule style. At both ends, the progress indicator works in the same manner as the eclipse style. In the middle
-part of the capsule, the progress indicator works in the same manner as the linear style. When the height is
-greater than the width, the progress indicator adapts to vertical display.
+Capsule style. At both ends, the progress indicator works in the same manner as the eclipse style. In the middle part of the capsule, the progress indicator works in the same manner as the linear style. When the height is greater than the width, the progress indicator adapts to vertical display.
 
 **Since:** 8
 

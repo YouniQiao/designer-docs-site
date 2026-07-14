@@ -179,9 +179,7 @@ tlsServer.getLocalAddress().then((localAddress: socket.NetAddress) => {
 getProtocol(callback: AsyncCallback<string>): void
 ```
 
-Returns a string containing the negotiated SSL/TLS protocol version of the current connection.
-For connected sockets that have not completed the handshake process, the value 'unknown' will be returned.
-Server sockets or disconnected client sockets will return a value of null.
+Returns a string containing the negotiated SSL/TLS protocol version of the current connection. For connected sockets that have not completed the handshake process, the value 'unknown' will be returned. Server sockets or disconnected client sockets will return a value of null.
 
 **Since:** 24
 
@@ -249,9 +247,7 @@ tlsServer.getProtocol((err: BusinessError, data: string) => {
 getProtocol(): Promise<string>
 ```
 
-Returns a string containing the negotiated SSL/TLS protocol version of the current connection.
-For connected sockets that have not completed the handshake process, the value 'unknown' will be returned.
-Server sockets or disconnected client sockets will return a value of null.
+Returns a string containing the negotiated SSL/TLS protocol version of the current connection. For connected sockets that have not completed the handshake process, the value 'unknown' will be returned. Server sockets or disconnected client sockets will return a value of null.
 
 **Since:** 24
 
@@ -512,9 +508,7 @@ tlsServer.getState().then(() => {
 listen(options: TLSConnectOptions, callback: AsyncCallback<void>): void
 ```
 
-Binds the IP address and port number, the port number can be specified or randomly allocated by the system.
-<p>Listens for a TCPSocket connection to be made to this socket and accepts it. This interface uses multiple threads
-for accept processing and uses poll multiplex to process client connections.</p>
+Binds the IP address and port number, the port number can be specified or randomly allocated by the system. <p>Listens for a TCPSocket connection to be made to this socket and accepts it. This interface uses multiple threads for accept processing and uses poll multiplex to process client connections.</p>
 
 **Since:** 24
 
@@ -585,9 +579,7 @@ tlsServer.listen(tlsConnectOptions, (err: BusinessError) => {
 listen(options: TLSConnectOptions): Promise<void>
 ```
 
-Binds the IP address and port number, the port number can be specified or randomly allocated by the system.
-<p>Listens for a TCPSocket connection to be made to this socket and accepts it. This interface uses multiple threads
-for accept processing and uses poll multiplex to process client connections.</p>
+Binds the IP address and port number, the port number can be specified or randomly allocated by the system. <p>Listens for a TCPSocket connection to be made to this socket and accepts it. This interface uses multiple threads for accept processing and uses poll multiplex to process client connections.</p>
 
 **Since:** 24
 

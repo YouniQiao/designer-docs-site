@@ -12,8 +12,7 @@ import { cloudSyncManager } from '@kit.CoreFileKit';
 function getBundlesLocalFilePresentStatus(bundleNames: Array<string>): Promise<Array<LocalFilePresentStatus>>
 ```
 
-Obtains the existence status of local files for multiple applications and checks whether there are files that
-have not been uploaded to the cloud in the cloud storage space. This API uses a promise to return the result.
+Obtains the existence status of local files for multiple applications and checks whether there are files that have not been uploaded to the cloud in the cloud storage space. This API uses a promise to return the result.
 
 **Since:** 23
 

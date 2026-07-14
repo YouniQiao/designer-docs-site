@@ -20,9 +20,7 @@ import { i18n } from '@kit.LocalizationKit';
 isSuggestedFirst?: boolean
 ```
 
-Whether to move the recommended language or country/region to the top in the sorting result. The value "true"
-means to move the recommended language or country/region to the top, and the value "false" means the opposite.
-The default value is true.
+Whether to move the recommended language or country/region to the top in the sorting result. The value "true" means to move the recommended language or country/region to the top, and the value "false" means the opposite. The default value is true.
 
 **Type:** boolean
 
@@ -38,9 +36,7 @@ The default value is true.
 isUseLocalName?: boolean
 ```
 
-Whether to use the local name for sorting. The value "true" means to use the local name for sorting, and the
-value "false" means the opposite. If getLanguageInfoArray is called, the default value of isUseLocalName is
-true. If getRegionInfoArray is called, the default value of isUseLocalName is false.
+Whether to use the local name for sorting. The value "true" means to use the local name for sorting, and the value "false" means the opposite. If getLanguageInfoArray is called, the default value of isUseLocalName is true. If getRegionInfoArray is called, the default value of isUseLocalName is false.
 
 **Type:** boolean
 
@@ -56,8 +52,7 @@ true. If getRegionInfoArray is called, the default value of isUseLocalName is fa
 locale?: string
 ```
 
-Locale information, which consists of the language, script, and country/region, for example, "zh-Hans-CN".
-The default value is the current system locale.
+Locale information, which consists of the language, script, and country/region, for example, "zh-Hans-CN". The default value is the current system locale.
 
 **Type:** string
 

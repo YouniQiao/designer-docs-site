@@ -112,7 +112,7 @@ Set window mode for start options.
 | Parameter | Description |
 | -- | -- |
 | AbilityRuntime_StartOptions *startOptions | The options to set window mode for. |
-| [AbilityRuntime_WindowMode](capi-context-constant-h.md#abilityruntime_windowmode) windowMode | The window mode. |
+| AbilityRuntime_WindowMode windowMode | The window mode. |
 
 **Returns**:
 
@@ -287,7 +287,7 @@ Set start visibility for start options.
 | Parameter | Description |
 | -- | -- |
 | AbilityRuntime_StartOptions *startOptions | The options to set start visibility for. |
-| [AbilityRuntime_StartVisibility](capi-context-constant-h.md#abilityruntime_startvisibility) startVisibility | The start visibility. |
+| AbilityRuntime_StartVisibility startVisibility | The start visibility. |
 
 **Returns**:
 
@@ -387,7 +387,7 @@ Set start window modes for start options.
 | Parameter | Description |
 | -- | -- |
 | AbilityRuntime_StartOptions *startOptions | The options to set start window modes for. |
-| [AbilityRuntime_SupportedWindowMode](capi-context-constant-h.md#abilityruntime_supportedwindowmode) *supportedWindowModes | The start window modes. |
+| AbilityRuntime_SupportedWindowMode *supportedWindowModes | The start window modes. |
 | size_t size | The size of start window modes. |
 
 **Returns**:
@@ -513,7 +513,7 @@ Get the window mode from start options.
 | Parameter | Description |
 | -- | -- |
 | AbilityRuntime_StartOptions *startOptions | [in] The start options to read. |
-| [AbilityRuntime_WindowMode](capi-context-constant-h.md#abilityruntime_windowmode) *windowMode | [out] The obtained window mode. It must not be NULL. |
+| AbilityRuntime_WindowMode *windowMode | [out] The obtained window mode. It must not be NULL. |
 
 **Returns**:
 
@@ -688,7 +688,7 @@ Get the start visibility from start options.
 | Parameter | Description |
 | -- | -- |
 | AbilityRuntime_StartOptions *startOptions | [in] The start options to read. |
-| [AbilityRuntime_StartVisibility](capi-context-constant-h.md#abilityruntime_startvisibility) *startVisibility | [out] The obtained start visibility. It must not be NULL. |
+| AbilityRuntime_StartVisibility *startVisibility | [out] The obtained start visibility. It must not be NULL. |
 
 **Returns**:
 
@@ -747,7 +747,7 @@ Get the supported start window modes from start options.
 | Parameter | Description |
 | -- | -- |
 | AbilityRuntime_StartOptions *startOptions | [in] The start options to read. |
-| [AbilityRuntime_SupportedWindowMode](capi-context-constant-h.md#abilityruntime_supportedwindowmode) **supportedWindowModes | [out] The pointer used to receive the supported start window modes.It must not be NULL and must point to NULL before the call. |
+| AbilityRuntime_SupportedWindowMode **supportedWindowModes | [out] The pointer used to receive the supported start window modes.It must not be NULL and must point to NULL before the call. |
 | size_t *size | [out] The number of returned supported start window modes. It must not be NULL. |
 
 **Returns**:

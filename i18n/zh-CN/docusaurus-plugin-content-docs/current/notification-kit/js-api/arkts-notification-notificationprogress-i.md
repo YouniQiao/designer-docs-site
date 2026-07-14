@@ -1,6 +1,6 @@
 # NotificationProgress
 
-描述通知进度。
+描述通知进度，用于在实况窗中展示进度条信息。 > **说明：** > > 实际显示效果依赖于设备能力和通知中心UI样式。
 
 **起始版本：** 11
 
@@ -12,7 +12,7 @@
 currentValue?: number
 ```
 
-进度当前值。
+进度当前值。取值范围为全体非负整数。
 
 **类型：** number
 
@@ -26,10 +26,7 @@ currentValue?: number
 isPercentage?: boolean
 ```
 
-是否按百分比展示。默认为false。
-
-- true：是。
-- false：否。
+是否按百分比展示进度。默认为false。 - true：进度以百分比形式展示。 - false：进度以绝对值形式展示。
 
 **类型：** boolean
 
@@ -43,7 +40,7 @@ isPercentage?: boolean
 maxValue?: number
 ```
 
-进度最大值。
+进度最大值。取值范围为全体非负整数。
 
 **类型：** number
 

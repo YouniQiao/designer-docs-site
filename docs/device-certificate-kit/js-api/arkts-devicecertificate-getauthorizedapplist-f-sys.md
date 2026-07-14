@@ -12,8 +12,7 @@ import { certificateManager } from '@kit.DeviceCertificateKit';
 function getAuthorizedAppList(keyUri: string) : Promise<CMResult>
 ```
 
-Obtains the list of authorized applications of a user's public credential. This API is called only by the
-certificate management application. This API uses a promise to return the result.
+Obtains the list of authorized applications of a user's public credential. This API is called only by the certificate management application. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 

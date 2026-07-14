@@ -67,8 +67,7 @@ Set the value of a specific effect property
 readonly effectId: string
 ```
 
-The id of the effect.
-This is the id that was used to create the effect.
+The id of the effect. This is the id that was used to create the effect.
 
 **Type:** string
 

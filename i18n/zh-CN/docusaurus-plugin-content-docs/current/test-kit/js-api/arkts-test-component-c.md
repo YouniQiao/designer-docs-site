@@ -1,7 +1,6 @@
 # Component
 
-UiTest框架在API9中，Component类代表了UI界面上的一个控件，提供控件属性获取，控件点击，滑动查找，文本注入等API。
-该类提供的所有方法都使用Promise方式作为异步方法，需使用await调用。
+UiTest框架在API9中，Component类代表了UI界面上的一个控件，提供控件属性获取，控件点击，滑动查找，文本注入等API。 该类提供的所有方法都使用Promise方式作为异步方法，需使用await调用。
 
 **起始版本：** 9
 
@@ -438,9 +437,7 @@ async function demo() {
 getOriginalText(): Promise<string>
 ```
 
-获取控件对象的文本信息。使用Promise异步回调。如果控件的无障碍属性
-[accessibilityLevel](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-accessibility.md#accessibilitylevel)
-设置为'no'或'no-hide-descendants'，可以使用本接口获取控件的文本信息，无法使用[Component.getText()](arkts-test-component-c.md#gettext-1)获取控件的文本信息。
+获取控件对象的文本信息。使用Promise异步回调。如果控件的无障碍属性 [accessibilityLevel](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-accessibility.md#accessibilitylevel) 设置为'no'或'no-hide-descendants'，可以使用本接口获取控件的文本信息，无法使用[Component.getText()](arkts-test-component-c.md#gettext-1)获取控件的文本信息。
 
 **起始版本：** 20
 
@@ -481,14 +478,7 @@ async function demo() {
 getText(): Promise<string>
 ```
 
-获取控件对象的文本信息。使用Promise异步回调。
-
-> **说明**
->
-> 如果控件的无障碍属性
-> [accessibilityLevel](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-accessibility.md#accessibilitylevel)
-> 设置为'no'或'no-hide-descendants'，无法使用本接口获取控件的文本信息，可以使用[Component.getOriginalText()](arkts-test-component-c.md#getoriginaltext-1)
-> 获取控件的文本信息。
+获取控件对象的文本信息。使用Promise异步回调。 > **说明** > > 如果控件的无障碍属性 > [accessibilityLevel](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-accessibility.md#accessibilitylevel) > 设置为'no'或'no-hide-descendants'，无法使用本接口获取控件的文本信息，可以使用[Component.getOriginalText()](arkts-test-component-c.md#getoriginaltext-1) > 获取控件的文本信息。
 
 **起始版本：** 9
 

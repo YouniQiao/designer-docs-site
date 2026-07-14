@@ -28,9 +28,7 @@ builder: CustomBuilder
 height: TitleHeight | Length
 ```
 
-设置标题栏高度。
-
-取值范围：[0, +∞)。
+设置标题栏高度。 取值范围：[0, +∞)。
 
 **类型：** TitleHeight | Length
 

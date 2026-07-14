@@ -297,7 +297,7 @@ Updates data in the database based on specified conditions.
 | -- | -- |
 | [OH_Rdb_Transaction](capi-rdb-oh-rdb-transaction.md) *trans | Represents a pointer to an instance of OH_Rdb_Transaction. |
 | const OH_VBucket *row | Represents the row data to be updated into the table. |
-| [const OH_Predicates](capi-rdb-oh-predicates.md) *predicates | Represents the specified update condition by the instance object of OH_Predicates. |
+| const OH_Predicates *predicates | Represents the specified update condition by the instance object of OH_Predicates. |
 | int64_t *changes | Represents the number of successful insertions. |
 
 **Returns**:
@@ -324,7 +324,7 @@ Updates data in the database based on specified conditions and support conflict 
 | -- | -- |
 | [OH_Rdb_Transaction](capi-rdb-oh-rdb-transaction.md) *trans | Represents a pointer to an instance of OH_Rdb_Transaction. |
 | const OH_VBucket *row | Represents the row data to be updated into the table. |
-| [const OH_Predicates](capi-rdb-oh-predicates.md) *predicates | Represents the specified update condition by the instance object of OH_Predicates. |
+| const OH_Predicates *predicates | Represents the specified update condition by the instance object of OH_Predicates. |
 | Rdb_ConflictResolution resolution | Represents the resolution when conflict occurs. |
 | int64_t *changes | Represents the number of successful insertions. |
 
@@ -351,7 +351,7 @@ Deletes data from the database based on specified conditions
 | Parameter | Description |
 | -- | -- |
 | [OH_Rdb_Transaction](capi-rdb-oh-rdb-transaction.md) *trans | Represents a pointer to an instance of OH_Rdb_Transaction. |
-| [const OH_Predicates](capi-rdb-oh-predicates.md) *predicates | Represents the specified update condition by the instance object of OH_Predicates. |
+| const OH_Predicates *predicates | Represents the specified update condition by the instance object of OH_Predicates. |
 | int64_t *changes | Represents the number of successfully Deleted. |
 
 **Returns**:
@@ -377,7 +377,7 @@ Queries data in the database based on specified conditions without row count.
 | Parameter | Description |
 | -- | -- |
 | [OH_Rdb_Transaction](capi-rdb-oh-rdb-transaction.md) *trans | Represents a pointer to an instance of OH_Rdb_Transaction. |
-| [const OH_Predicates](capi-rdb-oh-predicates.md) *predicates | Represents the specified update condition by the instance object of OH_Predicates. |
+| const OH_Predicates *predicates | Represents the specified update condition by the instance object of OH_Predicates. |
 | const char * const columns[] | Represents the columns to query. If the value is empty array, the query applies to all columns. |
 | int len | Represents the number of columns elements. |
 
@@ -404,7 +404,7 @@ Queries data in the database based on specified conditions.
 | Parameter | Description |
 | -- | -- |
 | [OH_Rdb_Transaction](capi-rdb-oh-rdb-transaction.md) *trans | Represents a pointer to an instance of OH_Rdb_Transaction. |
-| [const OH_Predicates](capi-rdb-oh-predicates.md) *predicates | Represents the specified update condition by the instance object of OH_Predicates. |
+| const OH_Predicates *predicates | Represents the specified update condition by the instance object of OH_Predicates. |
 | const char *columns[] | Represents the columns to query. If the value is empty array, the query applies to all columns. |
 | int len | Represents the number of columns elements. |
 
@@ -485,7 +485,7 @@ Executes an SQL statement that contains specified parameters.
 | [OH_Rdb_Transaction](capi-rdb-oh-rdb-transaction.md) *trans | Represents a pointer to an instance of OH_Rdb_Transaction. |
 | const char *sql | Represents the SQL statement to execute. |
 | [const OH_Data_Values](capi-rdb-oh-data-values.md) *args | Represents the values of the parameters in the SQL statement. |
-| OH_Data_Value **result | Represents a pointer to OH_Data_Value instance when the execution is successful.The memory must be released through the OH_Value_Destroy interface after the use is complete. |
+| [OH_Data_Value](capi-rdb-oh-data-value.md) **result | Represents a pointer to OH_Data_Value instance when the execution is successful.The memory must be released through the OH_Value_Destroy interface after the use is complete. |
 
 **Returns**:
 
@@ -573,7 +573,7 @@ Updates data in the database based on specified conditions and output change inf
 | -- | -- |
 | [OH_Rdb_Transaction](capi-rdb-oh-rdb-transaction.md) *trans | Represents a pointer to an instance of OH_Rdb_Transaction. |
 | OH_VBucket *row | Represents the row data to be updated into the table. |
-| [OH_Predicates](capi-rdb-oh-predicates.md) *predicates | Represents a pointer to an {link OH_Predicates} instance. |
+| OH_Predicates *predicates | Represents a pointer to an {link OH_Predicates} instance. |
 | Rdb_ConflictResolution resolution | Represents the resolution when conflict occurs. |
 | OH_RDB_ReturningContext *context | Represents a pointer to a pointer to an [OH_RDB_ReturningContext](capi-rdb-oh-rdb-returningcontext.md) instance. |
 
@@ -605,7 +605,7 @@ Deletes data from the database based on specified conditions and output change i
 | Parameter | Description |
 | -- | -- |
 | [OH_Rdb_Transaction](capi-rdb-oh-rdb-transaction.md) *trans | Represents a pointer to an instance of OH_Rdb_Transaction. |
-| [OH_Predicates](capi-rdb-oh-predicates.md) *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance. |
+| OH_Predicates *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance. |
 | OH_RDB_ReturningContext *context | Represents a pointer to a pointer to an [OH_RDB_ReturningContext](capi-rdb-oh-rdb-returningcontext.md) instance. |
 
 **Returns**:

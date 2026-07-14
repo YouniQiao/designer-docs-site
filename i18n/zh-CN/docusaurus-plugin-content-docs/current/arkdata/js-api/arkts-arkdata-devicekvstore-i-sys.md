@@ -1,14 +1,6 @@
 # DeviceKVStore
 
-设备协同数据库，继承自SingleKVStore，提供查询数据和端端同步数据的方法，可以使用SingleKVStore的方法例如：put、putBatch等。
-
-设备协同数据库，以设备维度对数据进行区分，每台设备仅能写入和修改本设备的数据，其它设备的数据对其是只读的，无法修改其它设备的数据。
-
-比如，可以使用设备协同数据库实现设备间的图片分享，可以查看其他设备的图片，但无法修改和删除其他设备的图片。
-
-在调用DeviceKVStore的方法前，需要先通过
-[getKVStore](arkts-arkdata-kvmanager-i.md#getkvstore-1)
-构建一个DeviceKVStore实例。
+设备协同数据库，继承自SingleKVStore，提供查询数据和端端同步数据的方法，可以使用SingleKVStore的方法例如：put、putBatch等。 设备协同数据库，以设备维度对数据进行区分，每台设备仅能写入和修改本设备的数据，其它设备的数据对其是只读的，无法修改其它设备的数据。 比如，可以使用设备协同数据库实现设备间的图片分享，可以查看其他设备的图片，但无法修改和删除其他设备的图片。 在调用DeviceKVStore的方法前，需要先通过 [getKVStore](arkts-arkdata-kvmanager-i.md#getkvstore-1) 构建一个DeviceKVStore实例。
 
 **继承/实现关系：** DeviceKVStore extends [SingleKVStore](arkts-arkdata-singlekvstore-i.md)
 

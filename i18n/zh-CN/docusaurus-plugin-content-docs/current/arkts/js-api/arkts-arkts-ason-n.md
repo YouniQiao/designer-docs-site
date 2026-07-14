@@ -13,7 +13,7 @@ ArkTS JSON工具。
 | 名称 | 说明 |
 | --- | --- |
 | [parse](arkts-arkts-parse-f.md#parse-1) | 将JavaScript对象表示法（JSON）字符串转换为ArkTS值。 |
-| [stringify](arkts-arkts-stringify-f.md#stringify-1) | 将ArkTS值转换为JavaScript对象表示法（JSON）字符串。额外支持Map和Set。 |
+| [stringify](arkts-arkts-stringify-f.md#stringify-1) | 将ArkTS值转换为JavaScript对象表示法（JSON）字符串。 额外支持Map和Set。 |
 
 ### 接口
 

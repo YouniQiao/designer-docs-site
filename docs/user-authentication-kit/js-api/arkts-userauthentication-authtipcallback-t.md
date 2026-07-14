@@ -4,10 +4,7 @@
 type AuthTipCallback = (authTipInfo: AuthTipInfo) => void
 ```
 
-Defines the callback to return the intermediate authentication status. This callback is used to obtain various
-intermediate status information during authentication, including authentication failure, lockout, and loading and
-release of the authentication screen. By subscribing to these intermediate statuses, the application can provide
-more refined user interaction and status management during the authentication process.
+Defines the callback to return the intermediate authentication status. This callback is used to obtain various intermediate status information during authentication, including authentication failure, lockout, and loading and release of the authentication screen. By subscribing to these intermediate statuses, the application can provide more refined user interaction and status management during the authentication process.
 
 **Since:** 20
 

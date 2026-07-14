@@ -12,8 +12,7 @@ import { shortcutManager } from '@kit.AbilityKit';
 function setShortcutVisibleForSelf(id: string, visible: boolean): Promise<void>
 ```
 
-Sets whether to display the specified shortcut for the current application. This API uses a promise to return the
-result.
+Sets whether to display the specified shortcut for the current application. This API uses a promise to return the result.
 
 **Since:** 20
 

@@ -12,8 +12,7 @@ import { reminderAgentManager } from '@kit.BackgroundTasksKit';
 function deleteExcludeDates(reminderId: number): Promise<void>
 ```
 
-Deletes all non-reminder dates for a recurring calendar reminder with a specific ID. This API uses a promise to
-return the result.
+Deletes all non-reminder dates for a recurring calendar reminder with a specific ID. This API uses a promise to return the result.
 
 **Since:** 12
 

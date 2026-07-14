@@ -12,15 +12,7 @@ import { huksExternalCrypto } from '@kit.UniversalKeystoreKit';
 function getProperty(resourceId: string, propertyId: string, params?: Array<HuksExternalCryptoParam>): Promise<Array<HuksExternalCryptoParam>>
 ```
 
-Obtains a property value. This API uses a promise to return the result.
-
-The **propertyId** indicates the ID of the property to be queried. Currently, only the SKF API names defined in GMT
-0016-2023 can be used as property IDs. The supported IDs are as follows:
-
-- SKF_EnumDev
-- SKF_GetDevInfo
-- SKF_EnumApplication
-- SKF_EnumContainer
+Obtains a property value. This API uses a promise to return the result. The **propertyId** indicates the ID of the property to be queried. Currently, only the SKF API names defined in GMT 0016-2023 can be used as property IDs. The supported IDs are as follows: - SKF_EnumDev - SKF_GetDevInfo - SKF_EnumApplication - SKF_EnumContainer
 
 **Since:** 22
 

@@ -18,8 +18,7 @@ import { certificateManager } from '@kit.DeviceCertificateKit';
 certPurpose?: CertificatePurpose
 ```
 
-Credential usage.
-Default value: PURPOSE_DEFAULT.
+Credential usage. Default value: PURPOSE_DEFAULT.
 
 **Type:** CertificatePurpose
 

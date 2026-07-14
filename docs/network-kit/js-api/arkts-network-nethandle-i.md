@@ -18,9 +18,7 @@ import { connection } from '@kit.NetworkKit';
 bindSocket(socketParam: TCPSocket | UDPSocket, callback: AsyncCallback<void>): void
 ```
 
-<p>Binds a TCPSocket or UDPSocket to the current network. All data flows from
-the socket will use this network, without being subject to {@link setAppNet}.</p>
-Before using this method, ensure that the socket is disconnected.
+<p>Binds a TCPSocket or UDPSocket to the current network. All data flows from the socket will use this network, without being subject to {@link setAppNet}.</p> Before using this method, ensure that the socket is disconnected.
 
 **Since:** 9
 
@@ -111,9 +109,7 @@ interface Data {
 bindSocket(socketParam: TCPSocket | UDPSocket): Promise<void>
 ```
 
-<p>Binds a TCPSocket or UDPSocket to the current network. All data flows from
-the socket will use this network, without being subject to {@link setAppNet}.</p>
-Before using this method, ensure that the socket is disconnected.
+<p>Binds a TCPSocket or UDPSocket to the current network. All data flows from the socket will use this network, without being subject to {@link setAppNet}.</p> Before using this method, ensure that the socket is disconnected.
 
 **Since:** 9
 

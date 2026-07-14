@@ -12,9 +12,7 @@ import { window } from '@kit.ArkUI';
 function getAllWindowLayoutInfo(displayId: number): Promise<Array<WindowLayoutInfo>>
 ```
 
-Obtains the layout information array of all windows visible on a display. The layout information is arranged based
-on the current window stacking order, and the topmost window in the hierarchy is at index 0 of the array. This API
-uses a promise to return the result.
+Obtains the layout information array of all windows visible on a display. The layout information is arranged based on the current window stacking order, and the topmost window in the hierarchy is at index 0 of the array. This API uses a promise to return the result.
 
 **Since:** 15
 
@@ -50,9 +48,7 @@ uses a promise to return the result.
 function getAllWindowLayoutInfo(displayId: number, option?: WindowInfoOptions): Promise<Array<WindowLayoutInfo>>
 ```
 
-Obtains the array of window layout info visible on a specified screen.
-The width and height of each rect are calculated after scaling. The array is sorted by the current window level.
-The index of the array corresponding to the highest level is 0.
+Obtains the array of window layout info visible on a specified screen. The width and height of each rect are calculated after scaling. The array is sorted by the current window level. The index of the array corresponding to the highest level is 0.
 
 **Since:** 26.0.0
 

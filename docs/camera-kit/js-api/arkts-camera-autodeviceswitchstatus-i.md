@@ -18,8 +18,7 @@ import { camera } from '@kit.CameraKit';
 readonly isDeviceCapabilityChanged: boolean
 ```
 
-Whether the camera capability is changed after the camera is automatically switched. **true** if changed,
-**false** otherwise.
+Whether the camera capability is changed after the camera is automatically switched. **true** if changed, **false** otherwise.
 
 **Type:** boolean
 

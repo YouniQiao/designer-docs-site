@@ -12,8 +12,7 @@ import { wifiManager } from '@kit.ConnectivityKit';
 function getCandidateConfigs(): Array<WifiDeviceConfig>
 ```
 
-Obtain the list of all existed candidate Wi-Fi configurations which added by ourself.
-You can obtain only the Wi-Fi configurations you created on your own application.
+Obtain the list of all existed candidate Wi-Fi configurations which added by ourself. You can obtain only the Wi-Fi configurations you created on your own application.
 
 **Since:** 12
 

@@ -1,10 +1,6 @@
 # @ohos.file.recent
 
-The **file.recent** module provides APIs for managing the list of recently accessed files.
-
-> **NOTE**
->
-> - Currently, the APIs of this module can be called only by **FileManager**.
+The **file.recent** module provides APIs for managing the list of recently accessed files. > **NOTE** > > - Currently, the APIs of this module can be called only by **FileManager**.
 
 **Since:** 10
 

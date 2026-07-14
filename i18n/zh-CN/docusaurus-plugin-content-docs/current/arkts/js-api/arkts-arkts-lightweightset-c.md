@@ -49,7 +49,7 @@ for (let value of lightWeightSet) {
 // 使用方法二：
 let symbolIterator = lightWeightSet[Symbol.iterator]();
 let iteratorResult: IteratorResult<string> = symbolIterator.next();
-while(!iteratorResult.done) {
+while (!iteratorResult.done) {
   console.info("value:", iteratorResult.value);
   iteratorResult = symbolIterator.next();
 }
@@ -61,10 +61,10 @@ while(!iteratorResult.done) {
 ```TypeScript
 // 不建议在Symbol.iterator中使用add、remove、removeAt方法，会导致死循环等不可预知的风险，可使用for循环来进行插入和删除。
 let lightWeightSet = new LightWeightSet<string>();
-for(let i = 0; i < 10; i++) {
+for (let i = 0; i < 10; i++) {
   lightWeightSet.add(i + "123");
 }
-for(let i = 0; i < 10; i++) {
+for (let i = 0; i < 10; i++) {
   lightWeightSet.remove(i + "123");
 }
 
@@ -279,11 +279,7 @@ for(let i = 0; i < 10; i++) {
 equal(obj: Object): boolean
 ```
 
-判断此容器与obj的构成元素是否相同。
-
-> **说明**
->
-> 此接口从API version 8开始支持，从API version 12开始废弃。无替代接口。
+判断此容器与obj的构成元素是否相同。 > **说明** > > 此接口从API version 8开始支持，从API version 12开始废弃。无替代接口。
 
 **起始版本：** 8
 
@@ -367,10 +363,10 @@ lightWeightSet.forEach((value: string, key: string) => {
 ```TypeScript
 // 不建议在forEach函数中使用add、remove、removeAt方法，会导致死循环等不可预知的风险，可使用for循环来进行插入和删除。
 let lightWeightSet = new LightWeightSet<string>();
-for(let i = 0; i < 10; i++) {
+for (let i = 0; i < 10; i++) {
   lightWeightSet.add(i + "123");
 }
-for(let i = 0; i < 10; i++) {
+for (let i = 0; i < 10; i++) {
   lightWeightSet.remove(i + "123");
 }
 

@@ -260,10 +260,7 @@ openCustomDialog<T extends Object>(dialogContent: ComponentContent<T>, options?:
 openCustomDialog(options: promptAction.CustomDialogOptions): Promise<number>
 ```
 
-打开自定义对话框。
-
-isModal = true和showInSubWindow = true不能同时使用。
-* @param { promptAction.CustomDialogOptions } options - 选项。 * @returns { Promise<number> } 返回将由closeCustomDialog使用的对话框ID。
+打开自定义对话框。 isModal = true和showInSubWindow = true不能同时使用。 * @param { promptAction.CustomDialogOptions } options - 选项。 * @returns { Promise<number> } 返回将由closeCustomDialog使用的对话框ID。
 
 **起始版本：** 12
 
@@ -299,9 +296,7 @@ openCustomDialogWithController<T extends Object>(dialogContent: ComponentContent
     options?: promptAction.BaseDialogOptions): Promise<void>
 ```
 
-打开带有frameNode和控制器的自定义对话框。
-
-isModal = true和showInSubWindow = true不能同时使用。
+打开带有frameNode和控制器的自定义对话框。 isModal = true和showInSubWindow = true不能同时使用。
 
 **起始版本：** 18
 
@@ -455,9 +450,7 @@ presentCustomDialog(builder: CustomBuilder | CustomBuilderWithId, controller?: p
     options?: promptAction.DialogOptions): Promise<number>
 ```
 
-使用控制器显示自定义对话框。
-
-isModal = true和showInSubWindow = true不能同时使用。
+使用控制器显示自定义对话框。 isModal = true和showInSubWindow = true不能同时使用。
 
 **起始版本：** 18
 

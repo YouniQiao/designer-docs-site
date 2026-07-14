@@ -6,8 +6,7 @@
 function createVideoRecorder(callback: AsyncCallback<VideoRecorder>): void
 ```
 
-The maintenance of this interface has been stopped since version api 9. Please use AVRecorder
-Creates an VideoRecorder instance.
+该接口自API version 9起停止维护，建议使用AVRecorder。 创建视频录制实例。
 
 **起始版本：** 9
 
@@ -19,7 +18,7 @@ Creates an VideoRecorder instance.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;VideoRecorder&gt; | 是 | used to return AudioPlayer instance if the operation issuccessful; returns null otherwise. |
+| callback | AsyncCallback&lt;VideoRecorder&gt; | 是 | 回调函数，返回VideoRecorder实例，失败时返回null。 |
 
 **错误码：**
 
@@ -52,8 +51,7 @@ media.createVideoRecorder((error: BusinessError, video: media.VideoRecorder) => 
 function createVideoRecorder(): Promise<VideoRecorder>
 ```
 
-The maintenance of this interface has been stopped since version api 9. Please use AVRecorder
-Creates an VideoRecorder instance.
+该接口自API version 9起停止维护，建议使用AVRecorder。 创建视频录制实例。
 
 **起始版本：** 9
 
@@ -65,7 +63,7 @@ Creates an VideoRecorder instance.
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;VideoRecorder&gt; | A Promise instance used to return VideoRecorder instance if the operation issuccessful; returns null otherwise. |
+| Promise&lt;VideoRecorder&gt; | Promise对象，返回VideoRecorder实例，失败时返回null。 |
 
 **错误码：**
 

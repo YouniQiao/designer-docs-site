@@ -1,13 +1,6 @@
 # Pen
 
-Defines a pen, which is used to describe the style and color to outline a shape.
-
-> **NOTE**
->
-> - This module uses the physical pixel unit, px.
->
-> - The module operates under a single-threaded model. The caller needs to manage thread safety and context state
-> transitions.
+Defines a pen, which is used to describe the style and color to outline a shape. > **NOTE** > > - This module uses the physical pixel unit, px. > > - The module operates under a single-threaded model. The caller needs to manage thread safety and context state > transitions.
 
 **Since:** 11
 
@@ -115,8 +108,7 @@ Obtains the color of this pen.
 getColor4f(): common2D.Color4f
 ```
 
-Obtains the pen color. The difference between this method and [getColor](arkts-arkgraphics2d-pen-c.md#getcolor-1) is that
-this method returns a floating point number.
+Obtains the pen color. The difference between this method and [getColor](arkts-arkgraphics2d-pen-c.md#getcolor-1) is that this method returns a floating point number.
 
 **Since:** 20
 
@@ -309,8 +301,7 @@ Sets an alpha value for this pen.
 setAntiAlias(aa: boolean): void
 ```
 
-Enables anti-aliasing for this pen. Anti-aliasing makes the edges of the content smoother. If this API is not
-called, anti-aliasing is disabled by default.
+Enables anti-aliasing for this pen. Anti-aliasing makes the edges of the content smoother. If this API is not called, anti-aliasing is disabled by default.
 
 **Since:** 11
 
@@ -406,8 +397,7 @@ Sets a color for this pen.
 setColor(alpha: number, red: number, green: number, blue: number): void
 ```
 
-Sets a color for this pen. This API provides better performance than
-[setColor](arkts-arkgraphics2d-pen-c.md#setcolor-1) and is recommended.
+Sets a color for this pen. This API provides better performance than [setColor](arkts-arkgraphics2d-pen-c.md#setcolor-1) and is recommended.
 
 **Since:** 12
 
@@ -452,8 +442,7 @@ Sets a color for this pen.
 setColor4f(color4f: common2D.Color4f, colorSpace: colorSpaceManager.ColorSpaceManager | null): void
 ```
 
-Sets the color and standard color gamut for this pen. The difference between this method and
-[setColor](arkts-arkgraphics2d-pen-c.md#setcolor-1) is that the color gamut can be set separately.
+Sets the color and standard color gamut for this pen. The difference between this method and [setColor](arkts-arkgraphics2d-pen-c.md#setcolor-1) is that the color gamut can be set separately.
 
 **Since:** 20
 
@@ -592,9 +581,7 @@ Adds a mask filter for this pen.
 setMiterLimit(miter: number): void
 ```
 
-Sets the maximum ratio allowed between the sharp corner length of a polyline and its line width. When drawing a
-polyline with the pen, if [JoinStyle](arkts-arkgraphics2d-joinstyle-e.md) is set to **MITER_JOIN**
-and this maximum ratio is exceeded, the corner will be displayed as beveled instead of mitered.
+Sets the maximum ratio allowed between the sharp corner length of a polyline and its line width. When drawing a polyline with the pen, if [JoinStyle](arkts-arkgraphics2d-joinstyle-e.md) is set to **MITER_JOIN** and this maximum ratio is exceeded, the corner will be displayed as beveled instead of mitered.
 
 **Since:** 12
 
@@ -690,9 +677,7 @@ Sets a shadow layer for this pen. The shadow layer effect takes effect only when
 setStrokeWidth(width: number): void
 ```
 
-Sets the stroke width for this pen. The value **0** is treated as an unusually thin width. During drawing, the
-width of 0 is always drawn as 1 pixel wide, regardless of any scaling applied to the canvas. Negative values are
-also regarded as the value **0** during the drawing process.
+Sets the stroke width for this pen. The value **0** is treated as an unusually thin width. During drawing, the width of 0 is always drawn as 1 pixel wide, regardless of any scaling applied to the canvas. Negative values are also regarded as the value **0** during the drawing process.
 
 **Since:** 11
 

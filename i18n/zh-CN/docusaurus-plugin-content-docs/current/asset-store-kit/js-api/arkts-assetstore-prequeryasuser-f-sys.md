@@ -6,8 +6,7 @@
 function preQueryAsUser(userId: number, query: AssetMap): Promise<Uint8Array>
 ```
 
-在指定用户空间中查询的预处理，用于需要用户认证的关键资产。在用户认证成功后，应当随后调用[asset.queryAsUser](arkts-assetstore-queryasuser-f-sys.md#queryasuser-1)和
-[asset.postQueryAsUser](arkts-assetstore-postqueryasuser-f-sys.md#postqueryasuser-1)接口。使用Promise异步回调。
+在指定用户空间中查询的预处理，用于需要用户认证的关键资产。在用户认证成功后，应当随后调用[asset.queryAsUser](arkts-assetstore-queryasuser-f-sys.md#queryasuser-1)和 [asset.postQueryAsUser](arkts-assetstore-postqueryasuser-f-sys.md#postqueryasuser-1)接口。使用Promise异步回调。
 
 **起始版本：** 12
 

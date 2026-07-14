@@ -12,9 +12,7 @@
 color?: ResourceColor
 ```
 
-分割线的颜色。
-
-默认值：'#33000000'
+分割线的颜色。 默认值：'#33000000'
 
 **类型：** ResourceColor
 
@@ -34,13 +32,7 @@ color?: ResourceColor
 endMargin?: Dimension
 ```
 
-分割线与TextPicker侧边结束端的距离。
-
-默认值：0
-
-单位：默认为vp，也可指定单位为px。
-
-取值范围：endMargin小于0时无效，最大值不得超过TextPicker列宽。不支持“百分比”类型。
+分割线与TextPicker侧边结束端的距离。 默认值：0 单位：默认为vp，也可指定单位为px。 取值范围：endMargin小于0时无效，最大值不得超过TextPicker列宽。不支持“百分比”类型。
 
 **类型：** Dimension
 
@@ -60,13 +52,7 @@ endMargin?: Dimension
 startMargin?: Dimension
 ```
 
-分割线与TextPicker侧边起始端的距离。
-
-默认值：0
-
-单位：默认为vp，也可指定单位为px。
-
-取值范围：startMargin小于0时无效，最大值不得超过TextPicker列宽。不支持“百分比”类型。
+分割线与TextPicker侧边起始端的距离。 默认值：0 单位：默认为vp，也可指定单位为px。 取值范围：startMargin小于0时无效，最大值不得超过TextPicker列宽。不支持“百分比”类型。
 
 **类型：** Dimension
 
@@ -86,13 +72,7 @@ startMargin?: Dimension
 strokeWidth?: Dimension
 ```
 
-分割线的线宽。
-
-默认值：2.0px
-
-单位：默认为vp，也可指定单位为px。
-
-取值范围：strokeWidth小于0取默认值，最大不得超过列高的一半。不支持“百分比”类型。
+分割线的线宽。 默认值：2.0px 单位：默认为vp，也可指定单位为px。 取值范围：strokeWidth小于0取默认值，最大不得超过列高的一半。不支持“百分比”类型。
 
 **类型：** Dimension
 

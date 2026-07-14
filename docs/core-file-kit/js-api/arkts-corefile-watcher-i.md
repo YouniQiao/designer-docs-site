@@ -1,7 +1,6 @@
 # Watcher
 
-Provides APIs for observing the changes of files or directories. Before using the APIs of **Watcher**, call
-**createWatcher()** to create a **Watcher** object.
+Provides APIs for observing the changes of files or directories. Before using the APIs of **Watcher**, call **createWatcher()** to create a **Watcher** object.
 
 **Since:** 10
 

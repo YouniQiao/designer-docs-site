@@ -1,6 +1,6 @@
 # HighlightAlbum (System API)
 
-Provides APIs for managing the Highlights album, which is an automatically generated collection of memorable photos or videos.
+Provides APIs for managing the **Highlights** album, which is an automatically generated collection of memorable photos or videos.
 
 **Since:** 12
 
@@ -20,7 +20,7 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 constructor(album: Album)
 ```
 
-The constructor to create a highlight instance.
+Constructor.
 
 **Since:** 12
 
@@ -32,14 +32,14 @@ The constructor to create a highlight instance.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| album | Album | Yes | Analysis album |
+| album | Album | Yes | **Highlights** album. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | Internal system error |
 
 **Example**
@@ -90,7 +90,7 @@ Deletes highlight albums.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;number&gt; | Returns result of delete highlight album |
+| Promise&lt;number&gt; | Promise used to return the operation result. The value **0** means that the operationis successful, and **1** means the opposite. |
 
 **Error codes:**
 
@@ -98,8 +98,8 @@ Deletes highlight albums.
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
-| 14000011 | Internal system error. It is recommended to retry and check the logs.<br>Possible causes: 1. Database corrupted; 2. The file system is abnormal; 3. The IPC request timed out.@static |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
+| 14000011 | Internal system error. It is recommended to retry and check the logs.<br>Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
 **Example**
 
@@ -137,7 +137,7 @@ async function example(context: Context) {
 getHighlightAlbumInfo(type: HighlightAlbumInfoType): Promise<string>
 ```
 
-Obtains specific information about the Highlights album.
+Obtains specific information about the **Highlights** album.
 
 **Since:** 12
 
@@ -157,7 +157,7 @@ Obtains specific information about the Highlights album.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;string&gt; | Returns highlight album info into a json string |
+| Promise&lt;string&gt; | Promise used to return the album information. |
 
 **Error codes:**
 
@@ -165,7 +165,7 @@ Obtains specific information about the Highlights album.
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | Internal system error |
 
 **Example**
@@ -224,7 +224,7 @@ Obtains the ArrayBuffer for caching the specified asset.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;ArrayBuffer&gt; | Returns array buffer of the content |
+| Promise&lt;ArrayBuffer&gt; | Promise used to return the ArrayBuffer. |
 
 **Error codes:**
 
@@ -232,8 +232,8 @@ Obtains the ArrayBuffer for caching the specified asset.
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
-| 14000011 | Internal system error |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
+| 14000011 | Internal system error. Possible causes:<br>1. The database is corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
 **Example**
 
@@ -269,7 +269,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 setHighlightUserActionData(type: HighlightUserActionType, actionData: number): Promise<void>
 ```
 
-Sets the user behavior data for the Highlights album.
+Sets the user behavior data for the **Highlights** album.
 
 **Since:** 12
 
@@ -290,7 +290,7 @@ Sets the user behavior data for the Highlights album.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Returns void |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -298,7 +298,7 @@ Sets the user behavior data for the Highlights album.
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | Internal system error |
 
 **Example**
@@ -334,7 +334,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 setSubTitle(subTitle: string): Promise<void>
 ```
 
-Set highlight sub title
+Sets the subtitle for this **Highlights** album instance. The subtitle must meet the following requirements: - The total length of the subtitle must be between 0 and 255 characters. - It must not contain any invalid characters, which are: . \ / : * ? " ' ` < > | { } [ ] - The characters are case insensitive.
 
 **Since:** 18
 
@@ -348,7 +348,7 @@ Set highlight sub title
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| subTitle | string | Yes | Highlight sub title |
+| subTitle | string | Yes | Subtitle to set. |
 
 **Return value:**
 
@@ -362,6 +362,6 @@ Set highlight sub title
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
-| 14000011 | Internal system error. It is recommended to retry and check the logs.<br>Possible causes: 1. Database corrupted; 2. The file system is abnormal; 3. The IPC request timed out. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
+| 14000011 | Internal system error. It is recommended to retry and check the logs.<br>Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 

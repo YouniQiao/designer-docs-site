@@ -12,8 +12,7 @@ import { usbManager } from '@kit.BasicServicesKit';
 function removeRight(deviceName: string): boolean
 ```
 
-Removes the device access permission for the application. System applications are granted the device access
-permission by default, and calling this API will not revoke the permission.
+Removes the device access permission for the application. System applications are granted the device access permission by default, and calling this API will not revoke the permission.
 
 **Since:** 9
 

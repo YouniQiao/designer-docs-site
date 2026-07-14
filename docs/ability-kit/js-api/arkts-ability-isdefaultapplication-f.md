@@ -12,9 +12,7 @@ import { defaultAppManager } from '@kit.AbilityKit';
 function isDefaultApplication(type: string, callback: AsyncCallback<boolean>) : void
 ```
 
-Checks whether this application is the default application of a system-defined application type or a
-[uniform data type](../../apis-arkdata/arkts-apis/arkts-data-uniformtypedescriptor.md). This API uses an asynchronous
-callback to return the result.
+Checks whether this application is the default application of a system-defined application type or a [uniform data type](../../apis-arkdata/arkts-apis/arkts-data-uniformtypedescriptor.md). This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -57,9 +55,7 @@ defaultAppManager.isDefaultApplication(defaultAppManager.ApplicationType.BROWSER
 function isDefaultApplication(type: string) : Promise<boolean>
 ```
 
-Checks whether this application is the default application of a system-defined application type or a
-[uniform data type](../../apis-arkdata/arkts-apis/arkts-data-uniformtypedescriptor.md). This API uses a promise to
-return the result.
+Checks whether this application is the default application of a system-defined application type or a [uniform data type](../../apis-arkdata/arkts-apis/arkts-data-uniformtypedescriptor.md). This API uses a promise to return the result.
 
 **Since:** 9
 

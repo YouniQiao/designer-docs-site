@@ -1,12 +1,6 @@
 # CmsGenerator
 
-Provides APIs for generating the messages in CMS format.
-
-> **NOTE**
->
-> PKCS #7 is a standard syntax for storing signed or encrypted data. CMS is an extension of PKCS #7. PKCS #7
-> supports data types including data, signed data, enveloped data, signed and enveloped data, digested
-> data, and encrypted data. It is often used to protect data integrity and confidentiality.
+Provides APIs for generating the messages in CMS format. > **NOTE** > > PKCS #7 is a standard syntax for storing signed or encrypted data. CMS is an extension of PKCS #7. PKCS #7 > supports data types including data, signed data, enveloped data, signed and enveloped data, digested > data, and encrypted data. It is often used to protect data integrity and confidentiality.
 
 **Since:** 18
 
@@ -24,11 +18,7 @@ import { cert } from '@kit.DeviceCertificateKit';
 addCert(cert: X509Cert): void
 ```
 
-Adds a CMS certificate of the **SIGNED_DATA** content type, for example, the issuer certificate of a signing
-certificate.
-
-If the **addSigner** API is not called and only the certificate is added, the generated CMS signed data
-contains only the certificate.
+Adds a CMS certificate of the **SIGNED_DATA** content type, for example, the issuer certificate of a signing certificate. If the **addSigner** API is not called and only the certificate is added, the generated CMS signed data contains only the certificate.
 
 **Since:** 18
 
@@ -115,10 +105,7 @@ function testAddCert() {
 addRecipientInfo(recipientInfo: CmsRecipientInfo): Promise<void>
 ```
 
-Adds recipient information to a CMS with the content type of **ENVELOPED_DATA**. This API uses a promise to
-return the result.
-
-At least one recipient needs to be set.
+Adds recipient information to a CMS with the content type of **ENVELOPED_DATA**. This API uses a promise to return the result. At least one recipient needs to be set.
 
 **Since:** 22
 
@@ -356,8 +343,7 @@ function testAddSigner() {
 doFinal(data: Uint8Array, options?: CmsGeneratorOptions): Promise<Uint8Array | string>
 ```
 
-Obtains the CMS message, for example, the CMS signed data or CMS enveloped data. This API uses a promise to
-return the result.
+Obtains the CMS message, for example, the CMS signed data or CMS enveloped data. This API uses a promise to return the result.
 
 **Since:** 18
 
@@ -493,8 +479,7 @@ async function testDoFinalByPromise() {
 doFinalSync(data: Uint8Array, options?: CmsGeneratorOptions): Uint8Array | string
 ```
 
-Obtains the CMS message, for example, the CMS signed data or CMS enveloped data. This API returns the result
-synchronously.
+Obtains the CMS message, for example, the CMS signed data or CMS enveloped data. This API returns the result synchronously.
 
 **Since:** 18
 
@@ -627,11 +612,7 @@ function testDoFinalSync() {
 getEncryptedContentData(): Promise<Uint8Array>
 ```
 
-Obtains the encrypted content data of the CMS whose content type is **ENVELOPED_DATA**. This API uses a promise
-to return the result.
-
-Obtains the encrypted content data if the **CmsGenerator** of the **ENVELOPED_DATA** type is created and data
-separation is used to generate detached CMS enveloped data.
+Obtains the encrypted content data of the CMS whose content type is **ENVELOPED_DATA**. This API uses a promise to return the result. Obtains the encrypted content data if the **CmsGenerator** of the **ENVELOPED_DATA** type is created and data separation is used to generate detached CMS enveloped data.
 
 **Since:** 22
 
@@ -757,10 +738,7 @@ async function testGetEncryptedContentData() {
 setRecipientEncryptionAlgorithm(algorithm: CmsRecipientEncryptionAlgorithm): void
 ```
 
-Sets the encryption algorithm for the CMS whose content type is **ENVELOPED_DATA**.
-
-This method should be called immediately after the **CmsGenerator** of the **ENVELOPED_DATA** type is created. If
-this method is not called, AES_256_GCM is used as the encryption algorithm by default.
+Sets the encryption algorithm for the CMS whose content type is **ENVELOPED_DATA**. This method should be called immediately after the **CmsGenerator** of the **ENVELOPED_DATA** type is created. If this method is not called, AES_256_GCM is used as the encryption algorithm by default.
 
 **Since:** 22
 

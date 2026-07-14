@@ -1,6 +1,6 @@
 # NotificationTime
 
-Describes the notification timing information.
+Describes the notification timing information. > **NOTE** > > The actual display effect depends on the device capabilities and the notification center UI style.
 
 **Since:** 11
 
@@ -12,7 +12,7 @@ Describes the notification timing information.
 initialTime?: number
 ```
 
-Start time, in milliseconds.
+Initial time for the timer, used to set the starting point of the timer in the Live View. The value range is all non-negative integers. The default value is **0**. Unit: millisecond.
 
 **Type:** number
 
@@ -26,10 +26,7 @@ Start time, in milliseconds.
 isCountDown?: boolean
 ```
 
-Whether to count down. The default value is **false**.
-
-- **true**: Yes.
-- **false**: No.
+Whether it is countdown mode. The default value is **false**. - **true**: The time is displayed decreasing from initialTime. - **false**: The time is displayed increasing from initialTime.
 
 **Type:** boolean
 
@@ -43,10 +40,7 @@ Whether to count down. The default value is **false**.
 isInTitle?: boolean
 ```
 
-Whether the time is displayed in the title. The default value is **false**.
-
-- **true**: Yes.
-- **false**: No.
+Whether the time information is displayed in the notification title. The default value is **false**. - **true**: The timer information will be embedded in the title area. - **false**: The timer information is displayed in a separate area.
 
 **Type:** boolean
 
@@ -60,10 +54,7 @@ Whether the time is displayed in the title. The default value is **false**.
 isPaused?: boolean
 ```
 
-Whether to pause the progress. The default value is **false**.
-
-- **true**: Yes.
-- **false**: No.
+Whether the timer is paused. The default value is **false**. - **true**: The timer is paused at the current value. - **false**: The timer runs normally.
 
 **Type:** boolean
 

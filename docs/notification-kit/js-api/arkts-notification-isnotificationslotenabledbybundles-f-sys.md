@@ -12,8 +12,7 @@ import { notificationManager } from '@kit.NotificationKit';
 function isNotificationSlotEnabledByBundles(bundles: Array<BundleOption>, type: SlotType): Promise<Map<BundleOption, boolean>>
 ```
 
-Checks whether a notification slot type is enabled for the specified applications in batch. This API uses a
-promise to return the result.
+Checks whether a notification slot type is enabled for the specified applications in batch. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 

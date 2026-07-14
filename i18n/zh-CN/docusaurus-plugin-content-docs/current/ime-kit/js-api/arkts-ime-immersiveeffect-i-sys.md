@@ -12,9 +12,7 @@
 fluidLightMode?: FluidLightMode
 ```
 
-流光模式，未填充时默认为NONE。
-
-该属性仅系统应用可以使用。
+流光模式，未填充时默认为NONE。 该属性仅系统应用可以使用。
 
 **类型：** FluidLightMode
 

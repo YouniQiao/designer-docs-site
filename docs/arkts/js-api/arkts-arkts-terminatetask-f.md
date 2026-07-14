@@ -12,8 +12,7 @@ import { taskpool } from '@kit.ArkTS';
 function terminateTask(longTask: LongTask): void
 ```
 
-Terminates a continuous task in the task pool. It is called after the continuous task is complete. After the task
-is terminated, the thread that executes the task may be reclaimed.
+Terminates a continuous task in the task pool. It is called after the continuous task is complete. After the task is terminated, the thread that executes the task may be reclaimed.
 
 **Since:** 12
 

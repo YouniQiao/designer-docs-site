@@ -12,12 +12,7 @@ import { image } from '@kit.ImageKit';
 function createPictureFromParcel(sequence: rpc.MessageSequence): Picture
 ```
 
-Creates a Picture object from a MessageSequence object.
-
-Images occupy a large amount of memory. When you finish using a Picture instance, call
-[release](arkts-image-picture-i.md#release-1) to free the memory promptly. Before releasing the
-instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no
-longer needed.
+Creates a Picture object from a MessageSequence object. Images occupy a large amount of memory. When you finish using a Picture instance, call [release](arkts-image-picture-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
 
 **Since:** 13
 

@@ -36,8 +36,7 @@ Name of the shared bundle.
 versionCode?: number
 ```
 
-Version number of the shared bundle. By default, no value is passed, and all shared bundles of the specified name
-are uninstalled.
+Version number of the shared bundle. By default, no value is passed, and all shared bundles of the specified name are uninstalled.
 
 **Type:** number
 

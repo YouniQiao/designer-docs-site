@@ -12,10 +12,7 @@ import { taskpool } from '@kit.ArkTS';
 function executeDelayed(delayTime: number, task: Task, priority?: Priority): Promise<Object>
 ```
 
-Executes a task after a given delay. In this execution mode, you can set the task priority and call **cancel()** to
-cancel the execution. The task cannot be a task in a task group, serial queue, or asynchronous queue, or a periodic
-task. This API can be called only once for a continuous task, but multiple times for a non-continuous task. This
-API uses a promise to return the result.
+Executes a task after a given delay. In this execution mode, you can set the task priority and call **cancel()** to cancel the execution. The task cannot be a task in a task group, serial queue, or asynchronous queue, or a periodic task. This API can be called only once for a continuous task, but multiple times for a non-continuous task. This API uses a promise to return the result.
 
 **Since:** 11
 
@@ -76,10 +73,7 @@ taskpool.executeDelayed(1000, task).then(() => { // 1000: delayTime is 1000ms
 function executeDelayed<A extends Array<Object>, R>(delayTime: number, task: GenericsTask<A, R>, priority?: Priority): Promise<R>
 ```
 
-Executes the generic task with a delay without verifying the parameter type and return value type of the task. This
-API uses a promise to return the result.
-The verification of the **executeDelayed** task works in conjunction with **new GenericsTask**, requiring that the
-parameter and return value types match those specified in **new GenericsTask**.
+Executes the generic task with a delay without verifying the parameter type and return value type of the task. This API uses a promise to return the result. The verification of the **executeDelayed** task works in conjunction with **new GenericsTask**, requiring that the parameter and return value types match those specified in **new GenericsTask**.
 
 **Since:** 13
 

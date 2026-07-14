@@ -1,20 +1,6 @@
 # RawInputEventWrapper
 
-原始输入事件包装器类。
-
-提供统一的接口来访问不同类型的输入事件，确保类型安全和向后兼容性。
-
-此类封装了原始的MouseEvent、TouchEvent或KeyEvent对象，并通过类型安全的方法访问。
-
-此类为抽象类，开发者无法自行创建实例。系统会在触发输入事件监听器时自动创建实例并传递回调函数。
-
-> **说明：**
->
-> 由于监听器在事件派发给具体组件之前执行，事件中的一些字段将无法提供有效值：如触发对象[target](arkts-arkui-eventtarget-i.md)、相对于组件的坐标
-> [x](arkts-arkui-mouseevent-i.md#x)和[y](arkts-arkui-mouseevent-i.md#y)、[getCurrentLocalPosition](arkts-arkui-touchobject-i.md#getcurrentlocalposition-1)和
-> [stopPropagation](arkts-arkui-touchevent-i.md#stoppropagation)方法、TouchEvent的[preventDefault](arkts-arkui-touchevent-i.md#preventdefault)和
-> [getHistoricalPoints](arkts-arkui-touchevent-i.md#gethistoricalpoints-1)方法以及KeyEvent的[metaKey](arkts-arkui-keyevent-i.md#metakey)属性和
-> [getModifierKeyState](arkts-arkui-keyevent-i.md#getmodifierkeystate-1)方法。
+原始输入事件包装器类。 提供统一的接口来访问不同类型的输入事件，确保类型安全和向后兼容性。 此类封装了原始的MouseEvent、TouchEvent或KeyEvent对象，并通过类型安全的方法访问。 此类为抽象类，开发者无法自行创建实例。系统会在触发输入事件监听器时自动创建实例并传递回调函数。 > **说明：** > > 由于监听器在事件派发给具体组件之前执行，事件中的一些字段将无法提供有效值：如触发对象[target](arkts-arkui-eventtarget-i.md)、相对于组件的坐标 > [x](arkts-arkui-mouseevent-i.md#x)和[y](arkts-arkui-mouseevent-i.md#y)、[getCurrentLocalPosition](arkts-arkui-touchobject-i.md#getcurrentlocalposition-1)和 > [stopPropagation](arkts-arkui-touchevent-i.md#stoppropagation)方法、TouchEvent的[preventDefault](arkts-arkui-touchevent-i.md#preventdefault)和 > [getHistoricalPoints](arkts-arkui-touchevent-i.md#gethistoricalpoints-1)方法以及KeyEvent的[metaKey](arkts-arkui-keyevent-i.md#metakey)属性和 > [getModifierKeyState](arkts-arkui-keyevent-i.md#getmodifierkeystate-1)方法。
 
 **起始版本：** 26.0.0
 

@@ -6,11 +6,7 @@
 function getPixelMap(wallpaperType: WallpaperType, callback: AsyncCallback<image.PixelMap>): void
 ```
 
-获取壁纸图片的像素图。
-
-> **说明：**
->
-> 从 API version 7开始支持，从API version 9开始废弃。
+获取壁纸图片的像素图。 > **说明：** > > 从 API version 7开始支持，从API version 9开始废弃。
 
 **起始版本：** 7
 
@@ -52,11 +48,7 @@ wallpaper.getPixelMap(wallpaper.WallpaperType.WALLPAPER_SYSTEM, (error: Business
 function getPixelMap(wallpaperType: WallpaperType): Promise<image.PixelMap>
 ```
 
-获取壁纸图片的像素图。
-
-> **说明：**
->
-> 从 API version 7开始支持，从API version 9开始废弃。
+获取壁纸图片的像素图。 > **说明：** > > 从 API version 7开始支持，从API version 9开始废弃。
 
 **起始版本：** 7
 

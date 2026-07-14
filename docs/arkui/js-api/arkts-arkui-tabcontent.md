@@ -1,13 +1,6 @@
 # TabContent
 
-The **TabContent** component is used only in the **Tabs** component. It corresponds to the content view of a switched
-tab page.
-
-> **NOTE**
-
-> - By default, the [clip]{@link CommonMethod#clip(value: boolean)} attribute of this component is set to **true**.
-> If you want to extend the content area to the outside of the component, disable the **clip** attribute first.
-
+The **TabContent** component is used only in the **Tabs** component. It corresponds to the content view of a switched tab page. > **NOTE** > - By default, the [clip]{@link CommonMethod#clip(value: boolean)} attribute of this component is set to **true**. > If you want to extend the content area to the outside of the component, disable the **clip** attribute first.
 
 ## TabContent
 

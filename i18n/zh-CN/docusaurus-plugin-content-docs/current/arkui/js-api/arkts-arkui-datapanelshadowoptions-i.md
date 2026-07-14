@@ -14,15 +14,7 @@ DataPanelShadowOptions继承自[MultiShadowOptions](arkts-arkui-multishadowoptio
 colors?: Array<ResourceColor | LinearGradient>
 ```
 
-各数据段投影的颜色。
-
-默认值：与valueColors值相同
-
-**说明：**
-
-若设置的投影颜色的个数少于数据段个数时，则显示的投影颜色的个数和设置的投影颜色个数一致。
-
-若设置的投影颜色的个数多于数据段个数时，则显示的投影颜色的个数和数据段个数一致。
+各数据段投影的颜色。 默认值：与valueColors值相同 **说明：** 若设置的投影颜色的个数少于数据段个数时，则显示的投影颜色的个数和设置的投影颜色个数一致。 若设置的投影颜色的个数多于数据段个数时，则显示的投影颜色的个数和数据段个数一致。
 
 **类型：** Array<ResourceColor | LinearGradient>
 

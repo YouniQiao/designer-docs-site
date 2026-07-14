@@ -1,17 +1,6 @@
 # KVStoreResultSet
 
-Provides APIs for obtaining the distributed KV store result sets. A maximum of eight result sets can be opened at a
-time.
-The **KVStoreResultSet** instance is not refreshed in real time. After using the result set, if the data in the
-database is changed (by being added, deleted, or modified), you need to query the result set again to obtain the
-latest data.
-Before calling any API in **KVStoreResultSet**, you must use **
-[getKVStore](arkts-arkdata-kvmanager-i.md#getkvstore-1)
-** to construct a **SingleKVStore** or **DeviceKVStore** instance.
-
-> **NOTE**
->
-> The cursor start position of **KVStoreResultSet** is **-1**.
+Provides APIs for obtaining the distributed KV store result sets. A maximum of eight result sets can be opened at a time. The **KVStoreResultSet** instance is not refreshed in real time. After using the result set, if the data in the database is changed (by being added, deleted, or modified), you need to query the result set again to obtain the latest data. Before calling any API in **KVStoreResultSet**, you must use ** [getKVStore](arkts-arkdata-kvmanager-i.md#getkvstore-1) ** to construct a **SingleKVStore** or **DeviceKVStore** instance. > **NOTE** > > The cursor start position of **KVStoreResultSet** is **-1**.
 
 **Since:** 9
 
@@ -55,12 +44,13 @@ try {
     console.info('getResultSet succeed.');
     resultSet = result;
     count = resultSet.getCount();
-    console.info("getCount succeed:" + count);
+    console.info('getCount succeed:' + count);
   }).catch((err: BusinessError) => {
-    console.error('getResultSet failed: ' + err);
+    console.error(`Failed to get resultset. Code: ${err.code}, message: ${err.message}`);
   });
-} catch (e) {
-  console.error("getCount failed: " + e);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to get count. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -96,12 +86,13 @@ try {
     console.info('getResultSet succeed.');
     resultSet = result;
     let entry = resultSet.getEntry();
-    console.info("getEntry succeed:" + JSON.stringify(entry));
+    console.info('getEntry succeed:' + JSON.stringify(entry));
   }).catch((err: BusinessError) => {
-    console.error('getResultSet failed: ' + err);
+    console.error(`Failed to get resultset. Code: ${err.code}, message: ${err.message}`);
   });
-} catch (e) {
-  console.error("getEntry failed: " + e);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to get entry. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -112,9 +103,7 @@ try {
 getPosition(): number
 ```
 
-Obtains the current data read position (position from which data is read) in the result set. The read position
-changes with the operations, such as [moveToFirst](arkts-arkdata-kvstoreresultset-i.md#movetofirst-1) and
-[moveToLast](arkts-arkdata-kvstoreresultset-i.md#movetolast-1).
+Obtains the current data read position (position from which data is read) in the result set. The read position changes with the operations, such as [moveToFirst](arkts-arkdata-kvstoreresultset-i.md#movetofirst-1) and [moveToLast](arkts-arkdata-kvstoreresultset-i.md#movetolast-1).
 
 **Since:** 9
 
@@ -140,12 +129,13 @@ try {
     console.info('getResultSet succeeded.');
     resultSet = result;
     position = resultSet.getPosition();
-    console.info("getPosition succeed:" + position);
+    console.info('getPosition succeed:' + position);
   }).catch((err: BusinessError) => {
-    console.error('getResultSet failed: ' + err);
+    console.error(`Failed to get resultset. Code: ${err.code}, message: ${err.message}`);
   });
-} catch (e) {
-  console.error("getPosition failed: " + e);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to get position. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -181,12 +171,13 @@ try {
     console.info('getResultSet succeed.');
     resultSet = result;
     let isAfterLast = resultSet.isAfterLast();
-    console.info("Check isAfterLast succeed:" + isAfterLast);
+    console.info('Check isAfterLast succeed:' + isAfterLast);
   }).catch((err: BusinessError) => {
-    console.error('getResultSet failed: ' + err);
+    console.error(`Failed to get resultset. Code: ${err.code}, message: ${err.message}`);
   });
-} catch (e) {
-  console.error("Check isAfterLast failed: " + e);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to check isAfterLast. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -222,12 +213,13 @@ try {
     console.info('getResultSet succeed.');
     resultSet = result;
     let isBeforeFirst = resultSet.isBeforeFirst();
-    console.info("Check isBeforeFirst succeed: " + isBeforeFirst);
+    console.info('Check isBeforeFirst succeed: ' + isBeforeFirst);
   }).catch((err: BusinessError) => {
-    console.error('getResultSet failed: ' + err);
+    console.error(`Failed to get resultset. Code: ${err.code}, message: ${err.message}`);
   });
-} catch (e) {
-  console.error("Check isBeforeFirst failed: " + e);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to check isBeforeFirst. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -264,12 +256,13 @@ try {
     console.info('getResultSet succeed.');
     resultSet = result;
     isFirst = resultSet.isFirst();
-    console.info("Check isFirst succeed:" + isFirst);
+    console.info('Check isFirst succeed:' + isFirst);
   }).catch((err: BusinessError) => {
-    console.error('getResultSet failed: ' + err);
+    console.error(`Failed to get resultset. Code: ${err.code}, message: ${err.message}`);
   });
-} catch (e) {
-  console.error("Check isFirst failed: " + e);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to check isFirst. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -306,12 +299,13 @@ try {
     console.info('getResultSet succeed.');
     resultSet = result;
     isLast = resultSet.isLast();
-    console.info("Check isLast succeed: " + isLast);
+    console.info('Check isLast succeed: ' + isLast);
   }).catch((err: BusinessError) => {
-    console.error('getResultSet failed: ' + err);
+    console.error(`Failed to get resultset. Code: ${err.code}, message: ${err.message}`);
   });
-} catch (e) {
-  console.error("Check isLast failed: " + e);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to check isLast. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -322,8 +316,7 @@ try {
 move(offset: number): boolean
 ```
 
-Moves the data read position with the specified offset from the current position. That is, moves the number of
-rows specified by **offset** from the current position.
+Moves the data read position with the specified offset from the current position. That is, moves the number of rows specified by **offset** from the current position.
 
 **Since:** 9
 
@@ -363,11 +356,11 @@ try {
     moved = resultSet.move(2); // If the current position is 0, move the read position forward by two rows, that is, move to row 3.
     console.info(`Succeeded in moving.moved = ${moved}`);
   }).catch((err: BusinessError) => {
-    console.error(`Failed to get resultSet.code is ${err.code},message is ${err.message}`);
+    console.error(`Failed to get resultSet. Code: ${err.code}, message: ${err.message}`);
   });
-} catch (e) {
-  let error = e as BusinessError;
-  console.error(`Failed to move.code is ${error.code},message is ${error.message}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to move. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -404,12 +397,13 @@ try {
     console.info('getResultSet succeed.');
     resultSet = result;
     moved = resultSet.moveToFirst();
-    console.info("moveToFirst succeed: " + moved);
+    console.info('moveToFirst succeed: ' + moved);
   }).catch((err: BusinessError) => {
-    console.error('getResultSet failed: ' + err);
+    console.error(`Failed to get resultset. Code: ${err.code}, message: ${err.message}`);
   });
-} catch (e) {
-  console.error("moveToFirst failed " + e);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to move to first. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -446,12 +440,13 @@ try {
     console.info('getResultSet succeed.');
     resultSet = result;
     moved = resultSet.moveToLast();
-    console.info("moveToLast succeed:" + moved);
+    console.info('moveToLast succeed:' + moved);
   }).catch((err: BusinessError) => {
-    console.error('getResultSet failed: ' + err);
+    console.error(`Failed to get resultset. Code: ${err.code}, message: ${err.message}`);
   });
-} catch (e) {
-  console.error("moveToLast failed: " + e);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to move to last. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -462,8 +457,7 @@ try {
 moveToNext(): boolean
 ```
 
-Moves the data read position to the next row. If the result set is empty, **false** will be returned. This API
-applies when the whole result set is obtained.
+Moves the data read position to the next row. If the result set is empty, **false** will be returned. This API applies when the whole result set is obtained.
 
 **Since:** 9
 
@@ -490,13 +484,14 @@ try {
     resultSet = result;
     do {
       moved = resultSet.moveToNext();
-      console.info("moveToNext succeed: " + moved);
-    } while (moved)
+      console.info('moveToNext succeed: ' + moved);
+    } while (moved);
   }).catch((err: BusinessError) => {
-    console.error('getResultSet failed: ' + err);
+    console.error(`Failed to get resultset. Code: ${err.code}, message: ${err.message}`);
   });
-} catch (e) {
-  console.error("moveToNext failed: " + e);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to move to next. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -547,11 +542,11 @@ try {
     moved = resultSet.moveToPosition(1);
     console.info(`Succeeded in moving to position.moved=${moved}`);
   }).catch((err: BusinessError) => {
-    console.error(`Failed to get resultSet.code is ${err.code},message is ${err.message}`);
+    console.error(`Failed to get resultSet. Code: ${err.code}, message: ${err.message}`);
   });
-} catch (e) {
-  let error = e as BusinessError;
-  console.error(`Failed to move to position.code is ${error.code},message is ${error.message}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to move to position. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -562,8 +557,7 @@ try {
 moveToPrevious(): boolean
 ```
 
-Moves the data read position to the previous row. If the result set is empty, **false** will be returned. This
-API applies when the whole result set is obtained.
+Moves the data read position to the previous row. If the result set is empty, **false** will be returned. This API applies when the whole result set is obtained.
 
 **Since:** 9
 
@@ -590,12 +584,13 @@ try {
     resultSet = result;
     moved = resultSet.moveToLast();
     moved = resultSet.moveToPrevious();
-    console.info("moveToPrevious succeed:" + moved);
+    console.info('moveToPrevious succeed:' + moved);
   }).catch((err: BusinessError) => {
-    console.error('getResultSet failed: ' + err);
+    console.error(`Failed to get resultset. Code: ${err.code}, message: ${err.message}`);
   });
-} catch (e) {
-  console.error("moveToPrevious failed: " + e);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to move to previous. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```

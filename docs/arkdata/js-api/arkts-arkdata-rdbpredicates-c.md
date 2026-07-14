@@ -1,8 +1,6 @@
 # RdbPredicates
 
-Defines the predicates for an RDB store. This class determines whether the conditional expression for the RDB store
-is true or false. Multiple predicates statements can be concatenated by using **and()** by default.
-**RdbPredicates** cannot be passed across threads using Sendable.
+Defines the predicates for an RDB store. This class determines whether the conditional expression for the RDB store is true or false. Multiple predicates statements can be concatenated by using **and()** by default. **RdbPredicates** cannot be passed across threads using Sendable.
 
 **Since:** 9
 
@@ -56,8 +54,7 @@ Creates an **RdbPredicates** object to add a left parenthesis.
 beginsWith(field: string, value: string): RdbPredicates
 ```
 
-Creates an **RdbPredicates** object to search for the records in the specified column that begin with the given
-value.
+Creates an **RdbPredicates** object to search for the records in the specified column that begin with the given value.
 
 **Since:** 9
 
@@ -88,8 +85,7 @@ value.
 between(field: string, low: ValueType, high: ValueType): RdbPredicates
 ```
 
-Creates an **RdbPredicates** object to search for the records that are within the given range (including the min.
-and max. values) in the specified column.
+Creates an **RdbPredicates** object to search for the records that are within the given range (including the min. and max. values) in the specified column.
 
 **Since:** 9
 
@@ -145,8 +141,7 @@ Defines a constructor used to create an **RdbPredicates** object.
 contains(field: string, value: string): RdbPredicates
 ```
 
-Creates an **RdbPredicates** object to search for the records in the specified column that contain the given
-value.
+Creates an **RdbPredicates** object to search for the records in the specified column that contain the given value.
 
 **Since:** 9
 
@@ -213,8 +208,7 @@ Creates an **RdbPredicates** object to add a right parenthesis.
 endsWith(field: string, value: string): RdbPredicates
 ```
 
-Creates an **RdbPredicates** object to search for the records in the specified column that end with the given
-value.
+Creates an **RdbPredicates** object to search for the records in the specified column that end with the given value.
 
 **Since:** 9
 
@@ -245,8 +239,7 @@ value.
 equalTo(field: string, value: ValueType): RdbPredicates
 ```
 
-Creates an **RdbPredicates** object to search for the records in the specified column that are equal to the given
-value.
+Creates an **RdbPredicates** object to search for the records in the specified column that are equal to the given value.
 
 **Since:** 9
 
@@ -277,8 +270,7 @@ value.
 glob(field: string, value: string): RdbPredicates
 ```
 
-Creates an **RdbPredicates** object to search for the records in the specified column that match the given
-string.
+Creates an **RdbPredicates** object to search for the records in the specified column that match the given string.
 
 **Since:** 9
 
@@ -309,8 +301,7 @@ string.
 greaterThan(field: string, value: ValueType): RdbPredicates
 ```
 
-Creates an **RdbPredicates** object to search for the records that are greater than the given value in the
-specified column.
+Creates an **RdbPredicates** object to search for the records that are greater than the given value in the specified column.
 
 **Since:** 9
 
@@ -341,8 +332,7 @@ specified column.
 greaterThanOrEqualTo(field: string, value: ValueType): RdbPredicates
 ```
 
-Creates an **RdbPredicates** object to search for the records that are greater than or equal to the given value
-in the specified column.
+Creates an **RdbPredicates** object to search for the records that are greater than or equal to the given value in the specified column.
 
 **Since:** 9
 
@@ -434,14 +424,7 @@ Filters for group data that meets the conditions.
 in(field: string, value: Array<ValueType>): RdbPredicates
 ```
 
-Creates an **RdbPredicates** object to search for the records that are in the given range in the specified
-column.
-
-> **NOTE**
->
-> The **value** array cannot be empty; otherwise, this condition becomes invalid. As a result, the operation (
-> such as full query, update, or deletion) is performed on all data. Before calling this API, check whether the
-> **value** array is empty to avoid misoperations.
+Creates an **RdbPredicates** object to search for the records that are in the given range in the specified column. > **NOTE** > > The **value** array cannot be empty; otherwise, this condition becomes invalid. As a result, the operation ( > such as full query, update, or deletion) is performed on all data. Before calling this API, check whether the > **value** array is empty to avoid misoperations.
 
 **Since:** 9
 
@@ -472,8 +455,7 @@ column.
 inAllDevices(): RdbPredicates
 ```
 
-Creates an **RdbPredicates** object to specify all remote devices on the network to connect during distributed
-database sync.
+Creates an **RdbPredicates** object to specify all remote devices on the network to connect during distributed database sync.
 
 **Since:** 9
 
@@ -491,15 +473,7 @@ database sync.
 inDevices(devices: Array<string>): RdbPredicates
 ```
 
-Creates an **RdbPredicates** object to specify the remote devices to connect on the network during distributed
-database sync.
-
-> **NOTE**
->
-> **devices** can be obtained by using [deviceManager.getAvailableDeviceListSync]
-> {@link @ohos.distributedDeviceManager:distributedDeviceManager.DeviceManager.getAvailableDeviceListSync}.
-> When calling **sync()**, you need to call **inDevices** to specify the devices. If **inDevices** is not used,
-> data will be synced to all devices on the network by default.
+Creates an **RdbPredicates** object to specify the remote devices to connect on the network during distributed database sync. > **NOTE** > > **devices** can be obtained by using [deviceManager.getAvailableDeviceListSync] > {@link @ohos.distributedDeviceManager:distributedDeviceManager.DeviceManager.getAvailableDeviceListSync}. > When calling **sync()**, you need to call **inDevices** to specify the devices. If **inDevices** is not used, > data will be synced to all devices on the network by default.
 
 **Since:** 9
 
@@ -619,8 +593,7 @@ Creates an **RdbPredicates** object to search for the records in the specified c
 lessThan(field: string, value: ValueType): RdbPredicates
 ```
 
-Creates an **RdbPredicates** object to search for the records that are less than the given value in the specified
-column.
+Creates an **RdbPredicates** object to search for the records that are less than the given value in the specified column.
 
 **Since:** 9
 
@@ -651,8 +624,7 @@ column.
 lessThanOrEqualTo(field: string, value: ValueType): RdbPredicates
 ```
 
-Creates an **RdbPredicates** object to search for the records that are less than or equal to the given value in
-the specified column.
+Creates an **RdbPredicates** object to search for the records that are less than or equal to the given value in the specified column.
 
 **Since:** 9
 
@@ -683,8 +655,7 @@ the specified column.
 like(field: string, value: string): RdbPredicates
 ```
 
-Creates an **RdbPredicates** object to search for the records in the specified column that are similar to the
-given value.
+Creates an **RdbPredicates** object to search for the records in the specified column that are similar to the given value.
 
 **Since:** 9
 
@@ -745,8 +716,7 @@ Creates a **RdbPredicates** object to limit the number of records.
 notBetween(field: string, low: ValueType, high: ValueType): RdbPredicates
 ```
 
-Creates an **RdbPredicates** object to search for the records that are out of the given range (excluding the min.
-and max. values) in the specified column.
+Creates an **RdbPredicates** object to search for the records that are out of the given range (excluding the min. and max. values) in the specified column.
 
 **Since:** 9
 
@@ -778,8 +748,7 @@ and max. values) in the specified column.
 notContains(field: string, value: string): RdbPredicates
 ```
 
-Creates an **RdbPredicates** object to search for the records that do not contain the given value in the
-specified column.
+Creates an **RdbPredicates** object to search for the records that do not contain the given value in the specified column.
 
 **Since:** 12
 
@@ -810,8 +779,7 @@ specified column.
 notEqualTo(field: string, value: ValueType): RdbPredicates
 ```
 
-Creates an **RdbPredicates** object to search for the records in the specified column that are not equal to the
-given value.
+Creates an **RdbPredicates** object to search for the records in the specified column that are not equal to the given value.
 
 **Since:** 9
 
@@ -842,8 +810,7 @@ given value.
 notIn(field: string, value: Array<ValueType>): RdbPredicates
 ```
 
-Creates an **RdbPredicates** object to search for the records that are out of the given range in the specified
-column.
+Creates an **RdbPredicates** object to search for the records that are out of the given range in the specified column.
 
 **Since:** 9
 
@@ -874,8 +841,7 @@ column.
 notLike(field: string, value: string): RdbPredicates
 ```
 
-Creates an **RdbPredicates** object to search for the records in the specified column that are not similar to the
-given value.
+Creates an **RdbPredicates** object to search for the records in the specified column that are not similar to the given value.
 
 **Since:** 12
 
@@ -906,9 +872,7 @@ given value.
 offsetAs(rowOffset: number): RdbPredicates
 ```
 
-Creates an **RdbPredicates** object to set the start position of the query result. This API must be used together
-with **limitAs**. Otherwise, no result will be returned. To query all rows after the specified offset, pass in a
-parameter less than or equal to **0** in **limitAs**.
+Creates an **RdbPredicates** object to set the start position of the query result. This API must be used together with **limitAs**. Otherwise, no result will be returned. To query all rows after the specified offset, pass in a parameter less than or equal to **0** in **limitAs**.
 
 **Since:** 9
 

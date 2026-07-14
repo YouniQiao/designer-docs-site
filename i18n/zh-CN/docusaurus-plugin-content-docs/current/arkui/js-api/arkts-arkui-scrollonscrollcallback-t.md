@@ -4,11 +4,7 @@
 declare type ScrollOnScrollCallback = (xOffset: number, yOffset: number, scrollState: ScrollState) => void
 ```
 
-Scroll滚动时触发的回调。
-
-<p><strong>说明</strong>
-<br>若通过onScrollFrameBegin事件和scrollBy方法实现容器嵌套滚动，需设置子滚动节点的EdgeEffect为None。如Scroll嵌套List滚动时，List组件的edgeEffect属性需设置为EdgeEffect.None。
-</p>
+Scroll滚动时触发的回调。 <p><strong>说明</strong> <br>若通过onScrollFrameBegin事件和scrollBy方法实现容器嵌套滚动，需设置子滚动节点的EdgeEffect为None。如Scroll嵌套List滚动时，List组件的edgeEffect属性需设置为EdgeEffect.None。 </p>
 
 **起始版本：** 12
 

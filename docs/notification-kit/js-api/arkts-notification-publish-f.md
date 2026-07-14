@@ -12,10 +12,7 @@ import { notificationManager } from '@kit.NotificationKit';
 function publish(request: NotificationRequest, callback: AsyncCallback<void>): void
 ```
 
-Publishes a notification. This API uses an asynchronous callback to return the result.
-
-If the ID and label of the new notification are the same as that of the previous notification, the new one replaces
-the previous one.
+Publishes a notification. This API uses an asynchronous callback to return the result. After a notification is published, it will be displayed as a notification widget in the device's notification center, status bar, etc. If the ID and tag of the newly published notification are the same as those of an already published notification, the new notification will replace the original one, achieving a notification update effect.
 
 **Since:** 9
 
@@ -84,10 +81,7 @@ notificationManager.publish(notificationRequest, publishCallback);
 function publish(request: NotificationRequest): Promise<void>
 ```
 
-Publishes a notification. This API uses a promise to return the result.
-
-If the ID and label of the new notification are the same as that of the previous notification, the new one replaces
-the previous one.
+Publishes a notification. This API uses a promise to return the result. After a notification is published, it will be displayed as a notification card in the device's notification center, status bar, and other locations. If the ID and tag of the newly published notification are the same as those of an already published notification, the new notification will replace the original one, achieving a notification update effect.
 
 **Since:** 9
 

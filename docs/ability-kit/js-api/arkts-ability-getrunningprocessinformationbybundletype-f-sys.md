@@ -13,8 +13,7 @@ function getRunningProcessInformationByBundleType(
     bundleType: bundleManager.BundleType): Promise<Array<ProcessInformation>>
 ```
 
-Obtains the information about the running process based on the bundle type. This API uses a promise to return the
-result.
+Obtains the information about the running process based on the bundle type. This API uses a promise to return the result.
 
 **Since:** 12
 

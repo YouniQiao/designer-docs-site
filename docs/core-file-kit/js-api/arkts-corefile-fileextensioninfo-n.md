@@ -1,7 +1,6 @@
 # fileExtensionInfo
 
-The **fileExtensionInfo** module defines attributes in **RootInfo** and **FileInfo** of the user file access and
-management module.
+The **fileExtensionInfo** module defines attributes in **RootInfo** and **FileInfo** of the user file access and management module.
 
 **Since:** 9
 

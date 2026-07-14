@@ -12,12 +12,7 @@ Provides information about the check box.
 group?: string
 ```
 
-Group name of the check box (that is, the name of the check box group to which the check box belongs).
-
-**NOTE**
-
-For the settings to take effect, this parameter must be used with the [CheckboxGroup](arkts-arkui-checkboxgroup.md)
-component.
+Group name of the check box (that is, the name of the check box group to which the check box belongs). **NOTE** For the settings to take effect, this parameter must be used with the [CheckboxGroup](arkts-arkui-checkboxgroup.md) component.
 
 **Type:** string
 
@@ -35,8 +30,7 @@ component.
 indicatorBuilder?: CustomBuilder
 ```
 
-Custom component to indicate that the check box is selected. This custom component is center aligned with the check
-box. When **indicatorBuilder** is set to **undefined** or **null**, it defaults to the state where it is not set.
+Custom component to indicate that the check box is selected. This custom component is center aligned with the check box. When **indicatorBuilder** is set to **undefined** or **null**, it defaults to the state where it is not set.
 
 **Type:** CustomBuilder
 

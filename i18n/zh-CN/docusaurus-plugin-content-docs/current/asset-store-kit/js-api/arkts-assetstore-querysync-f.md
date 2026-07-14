@@ -6,11 +6,7 @@
 function querySync(query: AssetMap): Array<AssetMap>
 ```
 
-查询一条或多条符合条件的关键资产。若查询需要用户认证的关键资产，则需要在本函数前调用[asset.preQuerySync](arkts-assetstore-prequerysync-f.md#prequerysync-1)，在本函数后调用
-[asset.postQuerySync](arkts-assetstore-postquerysync-f.md#postquerysync-1)，开发步骤请参考
-[开发指导](../../../../security/AssetStoreKit/asset-js-query-auth.md)。使用同步方式返回结果。
-
-如果未查询到符合条件的关键资产，将抛出“未找到关键资产”的异常，而非返回空的查询结果列表。
+查询一条或多条符合条件的关键资产。若查询需要用户认证的关键资产，则需要在本函数前调用[asset.preQuerySync](arkts-assetstore-prequerysync-f.md#prequerysync-1)，在本函数后调用 [asset.postQuerySync](arkts-assetstore-postquerysync-f.md#postquerysync-1)，开发步骤请参考 [开发指导](../../../../security/AssetStoreKit/asset-js-query-auth.md)。使用同步方式返回结果。 如果未查询到符合条件的关键资产，将抛出“未找到关键资产”的异常，而非返回空的查询结果列表。
 
 **起始版本：** 12
 

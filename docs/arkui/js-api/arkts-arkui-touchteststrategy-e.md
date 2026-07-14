@@ -30,8 +30,7 @@ Custom dispatch has no effect; the system dispatches events based on the hit sta
 FORWARD_COMPETITION = 1
 ```
 
-The event is dispatched to a specified child node, and the system determines whether to dispatch events to other
-sibling nodes.
+The event is dispatched to a specified child node, and the system determines whether to dispatch events to other sibling nodes.
 
 **Since:** 11
 

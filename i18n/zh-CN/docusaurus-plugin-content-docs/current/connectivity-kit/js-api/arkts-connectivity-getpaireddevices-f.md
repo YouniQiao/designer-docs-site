@@ -6,8 +6,7 @@
 function getPairedDevices(): string[]
 ```
 
-获取已与当前设备配对的设备列表。
-如果用户有ohos.permission.GET_NEARLINK_PEER_MAC权限，则返回真实设备地址。否则，返回随机的设备地址
+获取已与当前设备配对的设备列表。 如果用户有ohos.permission.GET_NEARLINK_PEER_MAC权限，则返回真实设备地址。否则，返回随机的设备地址
 
 **起始版本：** 26.0.0
 

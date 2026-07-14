@@ -12,8 +12,7 @@ import { certificateManager } from '@kit.DeviceCertificateKit';
 function uninstallSystemAppCertificate(keyUri: string) : Promise<void>
 ```
 
-Uninstalls the credential of the system application. This API is called only by the certificate management
-application. This API uses a promise to return the result.
+Uninstalls the credential of the system application. This API is called only by the certificate management application. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 

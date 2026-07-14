@@ -12,11 +12,7 @@
 actionButton?: [ActionButton?, ActionButton?, ActionButton?]
 ```
 
-弹出的提醒通知中显示的按钮。
-
-针对三方应用：最多支持两个按钮。
-
-针对系统应用：从API version 10开始最多支持三个按钮，API version 10之前的版本最多支持两个按钮。
+弹出的提醒通知中显示的按钮。 针对三方应用：最多支持两个按钮。 针对系统应用：从API version 10开始最多支持三个按钮，API version 10之前的版本最多支持两个按钮。
 
 **类型：** [ActionButton?, ActionButton?, ActionButton?]
 
@@ -30,10 +26,7 @@ actionButton?: [ActionButton?, ActionButton?, ActionButton?]
 autoDeletedTime?: number
 ```
 
-自动清除的时间。
-
-数据格式：时间戳，单位：ms，具体请参考
-[NotificationRequest.autoDeletedTime](../../apis-notification-kit/arkts-apis/arkts-notification-notificationrequest-i.md#autodeletedtime)
+自动清除的时间。 数据格式：时间戳，单位：ms，具体请参考 [NotificationRequest.autoDeletedTime](../../apis-notification-kit/arkts-apis/arkts-notification-notificationrequest-i.md#autodeletedtime)
 
 **类型：** number
 
@@ -131,9 +124,7 @@ groupId?: string
 maxScreenWantAgent?: MaxScreenWantAgent
 ```
 
-提醒到达时，全屏显示自动拉起目标的ability信息。如果设备正在使用中，则弹出一个通知横幅框。
-
-说明：该接口为预留接口，暂不支持使用。
+提醒到达时，全屏显示自动拉起目标的ability信息。如果设备正在使用中，则弹出一个通知横幅框。 说明：该接口为预留接口，暂不支持使用。
 
 **类型：** MaxScreenWantAgent
 
@@ -189,16 +180,7 @@ ringChannel?: RingChannel
 ringDuration?: number
 ```
 
-指明响铃时长。
-
-单位：s，默认1s，范围：[0, 1800]。
-
-值为0时：跟随系统设置中的通知铃声。
-
-值大于0时：如果设置了[ReminderRequest.customRingUri](arkts-backgroundtasks-reminderrequest-i.md)，则在指定的通道
-[ReminderRequest.ringChannel](arkts-backgroundtasks-reminderrequest-i.md)上响铃。否则使用代理提醒默认的自定义提示音。
-
-响铃同时会触发振动，从API版本26.0.0开始，支持长振动，振动时长与响铃时长一致。API版本26.0.0之前版本，响铃时会快速振动一次。
+指明响铃时长。 单位：s，默认1s，范围：[0, 1800]。 值为0时：跟随系统设置中的通知铃声。 值大于0时：如果设置了[ReminderRequest.customRingUri](arkts-backgroundtasks-reminderrequest-i.md)，则在指定的通道 [ReminderRequest.ringChannel](arkts-backgroundtasks-reminderrequest-i.md)上响铃。否则使用代理提醒默认的自定义提示音。 响铃同时会触发振动，从API版本26.0.0开始，支持长振动，振动时长与响铃时长一致。API版本26.0.0之前版本，响铃时会快速振动一次。
 
 **类型：** number
 
@@ -282,11 +264,7 @@ snoozeTimes?: number
 tapDismissed?: boolean
 ```
 
-通知是否自动清除，默认值为true，具体请参考
-[NotificationRequest.tapDismissed](../../apis-notification-kit/arkts-apis/arkts-notification-notificationrequest-i.md#tapdismissed)
-
-- true：点击通知消息或通知按钮后，自动删除当前通知。
-- false：点击通知消息或通知按钮后，保留当前通知。
+通知是否自动清除，默认值为true，具体请参考 [NotificationRequest.tapDismissed](../../apis-notification-kit/arkts-apis/arkts-notification-notificationrequest-i.md#tapdismissed) - true：点击通知消息或通知按钮后，自动删除当前通知。 - false：点击通知消息或通知按钮后，保留当前通知。
 
 **类型：** boolean
 
@@ -300,9 +278,7 @@ tapDismissed?: boolean
 timeInterval?: number
 ```
 
-执行延时提醒间隔。
-
-单位：s，最少30s（不适用于倒计时提醒类型）。
+执行延时提醒间隔。 单位：s，最少30s（不适用于倒计时提醒类型）。
 
 **类型：** number
 

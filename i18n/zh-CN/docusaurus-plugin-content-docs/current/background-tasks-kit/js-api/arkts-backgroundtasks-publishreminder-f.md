@@ -6,14 +6,7 @@
 function publishReminder(reminderReq: ReminderRequest, callback: AsyncCallback<number>): void
 ```
 
-发布后台代理提醒。使用callback异步回调。
-
-> **说明：**
->
-> 该接口需要申请通知弹窗权限
-> [notificationManager.requestEnableNotification](../../apis-notification-kit/arkts-apis/arkts-notification-requestenablenotification-f.md#requestenablenotification-2)
-> 后调用。
->
+发布后台代理提醒。使用callback异步回调。 > **说明：** > > 该接口需要申请通知弹窗权限 > [notificationManager.requestEnableNotification](../../apis-notification-kit/arkts-apis/arkts-notification-requestenablenotification-f.md#requestenablenotification-2) > 后调用。 >
 
 **起始版本：** 9
 
@@ -64,14 +57,7 @@ reminderAgentManager.publishReminder(timer, (err: BusinessError, reminderId: num
 function publishReminder(reminderReq: ReminderRequest): Promise<number>
 ```
 
-发布后台代理提醒。使用Promise异步回调。
-
-> **说明：**
->
-> 该接口需要申请通知弹窗权限
-> [notificationManager.requestEnableNotification](../../apis-notification-kit/arkts-apis/arkts-notification-requestenablenotification-f.md#requestenablenotification-2)
-> 后调用。
->
+发布后台代理提醒。使用Promise异步回调。 > **说明：** > > 该接口需要申请通知弹窗权限 > [notificationManager.requestEnableNotification](../../apis-notification-kit/arkts-apis/arkts-notification-requestenablenotification-f.md#requestenablenotification-2) > 后调用。 >
 
 **起始版本：** 9
 

@@ -12,8 +12,7 @@ Mode of lock operations.
 SHARED = 1
 ```
 
-Shared lock operation.
-The operation could reenter if this mode is specified.
+Shared lock operation. The operation could reenter if this mode is specified.
 
 **Since:** 12
 
@@ -27,8 +26,7 @@ The operation could reenter if this mode is specified.
 EXCLUSIVE = 2
 ```
 
-Exclusive lock operation.
-If this mode is specified, the operation is executed only when the lock is acquired exclusively.
+Exclusive lock operation. If this mode is specified, the operation is executed only when the lock is acquired exclusively.
 
 **Since:** 12
 

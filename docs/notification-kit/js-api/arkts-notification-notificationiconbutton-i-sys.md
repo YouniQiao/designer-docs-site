@@ -14,10 +14,7 @@ Describes the information of a system notification button.
 hidePanel?: boolean
 ```
 
-Whether to hide the notification panel when the button is tapped. The default value is **false**.
-
-- **true**: Yes.
-- **false**: No.
+Whether to hide the notification panel when the button is tapped. The default value is **false**. - **true**: Yes. - **false**: No.
 
 **Type:** boolean
 
@@ -49,7 +46,7 @@ Background image of a button.
 name: string
 ```
 
-Button ID, which is used to distinguish multiple buttons of the same notification.
+Button identifier, used to distinguish multiple different buttons for the same notification. The string length cannot exceed 202 bytes, and the exceeding part will be truncated. It cannot be an empty string.
 
 **Type:** string
 
@@ -65,7 +62,7 @@ Button ID, which is used to distinguish multiple buttons of the same notificatio
 text?: string
 ```
 
-Text displayed on the button. This parameter is left empty by default.
+Text displayed on the button, which defaults to empty. The string length cannot exceed 202 bytes, and the exceeding part will be truncated.
 
 **Type:** string
 

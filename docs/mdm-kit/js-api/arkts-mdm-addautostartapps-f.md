@@ -12,10 +12,7 @@ import { applicationManager } from '@kit.MDMKit';
 function addAutoStartApps(admin: Want, autoStartApps: Array<Want>): void
 ```
 
-Adds the auto-start applications for the current user. Applications added to the auto-start list via this API
-cannot be manually disabled for auto-start by users on the device<!--RP4--><!--RP4End-->. However, they can be
-removed from the auto-start list using the
-[removeAutoStartApps](arkts-mdm-removeautostartapps-f.md#removeautostartapps-1) API.
+Adds the auto-start applications for the current user. Applications added to the auto-start list via this API cannot be manually disabled for auto-start by users on the device<!--RP4--><!--RP4End-->. However, they can be removed from the auto-start list using the [removeAutoStartApps](arkts-mdm-removeautostartapps-f.md#removeautostartapps-1) API.
 
 **Since:** 12
 
@@ -81,14 +78,7 @@ try {
 function addAutoStartApps(admin: Want, autoStartApps: Array<Want>, accountId: number, disallowModify: boolean): void
 ```
 
-Adds a list of applications that automatically start upon device startup for a specified user, and sets whether to
-prohibit the user from manually canceling application auto-start<!--RP4--><!--RP4End-->.
-
-Applications can be added to the auto-start list via this API and the
-[addAutoStartApps](arkts-mdm-addautostartapps-f.md#addautostartapps-1) API.
-Settings from both APIs can take effect simultaneously. For a single user, the auto-start list supports a maximum
-of 10 applications. For example, if there are already 3 applications in the current list, a maximum of 7 more can
-be added for the user via this API.
+Adds a list of applications that automatically start upon device startup for a specified user, and sets whether to prohibit the user from manually canceling application auto-start<!--RP4--><!--RP4End-->. Applications can be added to the auto-start list via this API and the [addAutoStartApps](arkts-mdm-addautostartapps-f.md#addautostartapps-1) API. Settings from both APIs can take effect simultaneously. For a single user, the auto-start list supports a maximum of 10 applications. For example, if there are already 3 applications in the current list, a maximum of 7 more can be added for the user via this API.
 
 **Since:** 20
 

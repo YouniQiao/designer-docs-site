@@ -34,10 +34,7 @@ String identified by the keyword in the font variation key-value pair.
 isNormalized?: boolean
 ```
 
-Whether to normalize. If the value is **true**, the value range of the value field is -1 to 1, which maps the
-minimum value to the maximum value configured in the font file. The value **0** indicates the default value
-configured in the font file. If the value is **false**, the value range of the value field is the adjustable
-range supported by the font file itself. The default value is **false**.
+Whether to normalize. If the value is **true**, the value range of the value field is -1 to 1, which maps the minimum value to the maximum value configured in the font file. The value **0** indicates the default value configured in the font file. If the value is **false**, the value range of the value field is the adjustable range supported by the font file itself. The default value is **false**.
 
 **Type:** boolean
 

@@ -12,9 +12,7 @@ import { usbManager } from '@kit.BasicServicesKit';
 function addAccessoryRight(tokenId: number, accessory: USBAccessory): void
 ```
 
-Adds the permission to applications for accessing USB accessories.
-[usbManager.requestAccessoryRight]{(@link usbManager.requestAccessoryRight)} triggers a dialog box to request user authorization. **addAccessoryRight** does
-not trigger a dialog box but directly adds the device access permission for the application.
+Adds the permission to applications for accessing USB accessories. [usbManager.requestAccessoryRight]{(@link usbManager.requestAccessoryRight)} triggers a dialog box to request user authorization. **addAccessoryRight** does not trigger a dialog box but directly adds the device access permission for the application.
 
 **Since:** 14
 

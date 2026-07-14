@@ -41,5 +41,5 @@ import { curves } from '@kit.ArkUI';
 
 | Name | Description |
 | --- | --- |
-| [Curve](arkts-arkui-curve-e.md) | Defines an interpolation curve. For details about the curves and animations, see &lt;!--RP1--&gt;[Bezier Curve](../../../../../design/ux-design/animation-attributes.md)&lt;!--RP1End--&gt;. |
+| [Curve](arkts-arkui-curve-e.md) | Defines an interpolation curve. For details about the curves and animations, see &lt;!--RP1--&gt; [Bezier Curve](../../../../../design/ux-design/animation-attributes.md)&lt;!--RP1End--&gt;. |
 

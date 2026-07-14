@@ -12,16 +12,7 @@ import { bluetoothManager } from '@kit.MDMKit';
 function addDisallowedBluetoothDevices(admin: Want, deviceIds: Array<string>): void
 ```
 
-Adds Bluetooth devices to the blocklist. The current device cannot connect to the disallowed Bluetooth devices.
-Since API version 22, the MAC addresses in the array must comply with the Bluetooth MAC address specifications (for
-example, 00:1A:2B:3C:4D:5E). Invalid MAC addresses will be removed and only valid MAC addresses will be added.
-
-A policy conflict is reported when this API is called in the following scenarios:
-
-1. Bluetooth has been disabled by calling [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1).
-You can resolve the conflict by enabling the Bluetooth through [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1).
-2. Allowed Bluetooth devices have been added by calling [addAllowedBluetoothDevices](arkts-mdm-addallowedbluetoothdevices-f.md#addallowedbluetoothdevices-1).
-You can resolve the conflict by removing allowed Bluetooth devices through [removeAllowedBluetoothDevices](arkts-mdm-removeallowedbluetoothdevices-f.md#removeallowedbluetoothdevices-1).
+Adds Bluetooth devices to the blocklist. The current device cannot connect to the disallowed Bluetooth devices. Since API version 22, the MAC addresses in the array must comply with the Bluetooth MAC address specifications (for example, 00:1A:2B:3C:4D:5E). Invalid MAC addresses will be removed and only valid MAC addresses will be added. A policy conflict is reported when this API is called in the following scenarios: 1. Bluetooth has been disabled by calling [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1). You can resolve the conflict by enabling the Bluetooth through [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1). 2. Allowed Bluetooth devices have been added by calling [addAllowedBluetoothDevices](arkts-mdm-addallowedbluetoothdevices-f.md#addallowedbluetoothdevices-1). You can resolve the conflict by removing allowed Bluetooth devices through [removeAllowedBluetoothDevices](arkts-mdm-removeallowedbluetoothdevices-f.md#removeallowedbluetoothdevices-1).
 
 **Since:** 20
 

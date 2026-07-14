@@ -1,8 +1,6 @@
 # AudioPlayer
 
-AudioPlayer is a class for audio playback management. It provides APIs to manage and play audio. Before calling any
-API in AudioPlayer, you must use [createAudioPlayer()](arkts-media-createaudioplayer-f.md#createaudioplayer-1) to
-create an AudioPlayer instance.
+AudioPlayer is a class for audio playback management. It provides APIs to manage and play audio. Before calling any API in AudioPlayer, you must use [createAudioPlayer()](arkts-media-createaudioplayer-f.md#createaudioplayer-1) to create an AudioPlayer instance.
 
 **Since:** 6
 
@@ -24,8 +22,7 @@ import { media } from '@kit.MediaKit';
 getTrackDescription(callback: AsyncCallback<Array<MediaDescription>>): void
 ```
 
-Obtains the audio track information. It can be called only after the **'dataLoad'** event is triggered. This API
-uses an asynchronous callback to return the result.
+Obtains the audio track information. It can be called only after the **'dataLoad'** event is triggered. This API uses an asynchronous callback to return the result.
 
 **Since:** 8
 
@@ -47,8 +44,7 @@ uses an asynchronous callback to return the result.
 getTrackDescription(): Promise<Array<MediaDescription>>
 ```
 
-Obtains the audio track information. It can be called only after the **'dataLoad'** event is triggered. This API
-uses a promise to return the result.
+Obtains the audio track information. It can be called only after the **'dataLoad'** event is triggered. This API uses a promise to return the result.
 
 **Since:** 8
 
@@ -254,8 +250,7 @@ Subscribes to the audio playback events.
 on(type: 'timeUpdate', callback: Callback<number>): void
 ```
 
-Subscribes to the **'timeUpdate'** event. This event is reported every second when the audio playback is in
-progress.
+Subscribes to the **'timeUpdate'** event. This event is reported every second when the audio playback is in progress.
 
 **Since:** 6
 
@@ -278,8 +273,7 @@ progress.
 on(type: 'audioInterrupt', callback: (info: audio.InterruptEvent) => void): void
 ```
 
-Subscribes to the audio interruption event. For details, see
-[audio.InterruptEvent](../../apis-audio-kit/arkts-apis/arkts-audio-interruptevent-i.md).
+Subscribes to the audio interruption event. For details, see [audio.InterruptEvent](../../apis-audio-kit/arkts-apis/arkts-audio-interruptevent-i.md).
 
 **Since:** 9
 
@@ -302,8 +296,7 @@ Subscribes to the audio interruption event. For details, see
 on(type: 'error', callback: ErrorCallback): void
 ```
 
-Subscribes to audio playback error events. After an error event is reported, you must handle the event and exit
-the playback.
+Subscribes to audio playback error events. After an error event is reported, you must handle the event and exit the playback.
 
 **Since:** 6
 
@@ -504,22 +497,7 @@ Audio duration, in ms.
 fdSrc: AVFileDescriptor
 ```
 
-Description of the audio file. This property is required when audio assets of an application are continuously
-stored in a file.
-
-Assume that a music file that stores continuous music assets consists of the following:
-
-Music 1 (address offset: 0, byte length: 100)
-
-Music 2 (address offset: 101; byte length: 50)
-
-Music 3 (address offset: 151, byte length: 150)
-
-1. To play music 1: AVFileDescriptor { fd = resource handle; offset = 0; length = 100; }
-2. To play music 2: AVFileDescriptor { fd = resource handle; offset = 101; length = 50; }
-3. To play music 3: AVFileDescriptor { fd = resource handle; offset = 151; length = 150; }
-
-To play an independent music file, use **src=fd://xx**.
+Description of the audio file. This property is required when audio assets of an application are continuously stored in a file. Assume that a music file that stores continuous music assets consists of the following: Music 1 (address offset: 0, byte length: 100) Music 2 (address offset: 101; byte length: 50) Music 3 (address offset: 151, byte length: 150) 1. To play music 1: AVFileDescriptor { fd = resource handle; offset = 0; length = 100; } 2. To play music 2: AVFileDescriptor { fd = resource handle; offset = 101; length = 50; } 3. To play music 3: AVFileDescriptor { fd = resource handle; offset = 151; length = 150; } To play an independent music file, use **src=fd://xx**.
 
 **Type:** AVFileDescriptor
 
@@ -555,19 +533,7 @@ Whether to loop audio playback. **true** to loop, **false** otherwise.
 src: string
 ```
 
-Audio file URI. The mainstream audio formats (M4A, AAC, MP3, OGG, WAV, and AMR) are supported.
-
-**Example of supported URLs**:
-
-1. FD: fd://xx
-
-![](../../../../reference/apis-media-kit/figures/en-us_image_url.png)
-
-2. HTTP: http://xx
-3. HTTPS: https://xx
-4. HLS: http://xx or https://xx
-
-ohos.permission.READ_MEDIA or ohos.permission.INTERNET
+Audio file URI. The mainstream audio formats (M4A, AAC, MP3, OGG, WAV, and AMR) are supported. **Example of supported URLs**: 1. FD: fd://xx ![](../../../../reference/apis-media-kit/figures/en-us_image_url.png) 2. HTTP: http://xx 3. HTTPS: https://xx 4. HLS: http://xx or https://xx ohos.permission.READ_MEDIA or ohos.permission.INTERNET
 
 **Type:** string
 
@@ -587,8 +553,7 @@ ohos.permission.READ_MEDIA or ohos.permission.INTERNET
 readonly state: AudioState
 ```
 
-Audio playback state. This state cannot be used as the condition for triggering the call of **play()**,
-**pause()**, or **stop()**.
+Audio playback state. This state cannot be used as the condition for triggering the call of **play()**, **pause()**, or **stop()**.
 
 **Type:** AudioState
 

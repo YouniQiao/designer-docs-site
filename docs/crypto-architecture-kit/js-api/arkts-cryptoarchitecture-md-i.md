@@ -1,7 +1,6 @@
 # Md
 
-Provides APIs for message digest operations. Before using any API of the **Md** class, you must create an
-**Md** instance by using [createMd](arkts-cryptoarchitecture-createmd-f.md#createmd-1).
+Provides APIs for message digest operations. Before using any API of the **Md** class, you must create an **Md** instance by using [createMd](arkts-cryptoarchitecture-createmd-f.md#createmd-1).
 
 **Since:** 9
 
@@ -208,12 +207,7 @@ export default {
 digestSync(): DataBlob
 ```
 
-Generates a message digest. This API returns the result synchronously.
-
-<br><br>**NOTE**
-<br>It is recommended to prioritize the use of asynchronous API, {@link digest}. Synchronous API may
-take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore,
-it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
+Generates a message digest. This API returns the result synchronously. <br><br>**NOTE** <br>It is recommended to prioritize the use of asynchronous API, {@link digest}. Synchronous API may take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore, it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
 
 **Since:** 12
 
@@ -378,14 +372,7 @@ function getLength() {
 update(input: DataBlob, callback: AsyncCallback<void>): void
 ```
 
-Updates the message digest status. This API uses an asynchronous callback to return the result. **update** must
-be used with **digest** together. **digest** is mandatory, and **update** is optional.
-
-> **NOTE**
->
-> For details about the code for calling **update** multiple times in a message digest operation, see
-> [Generating an MD by Passing In Data by Segment](../../../../security/CryptoArchitectureKit/crypto-generate-message-digest.md#generating-an-md-by-passing-in-data-by-segment)
-> .
+Updates the message digest status. This API uses an asynchronous callback to return the result. **update** must be used with **digest** together. **digest** is mandatory, and **update** is optional. > **NOTE** > > For details about the code for calling **update** multiple times in a message digest operation, see > [Generating an MD by Passing In Data by Segment](../../../../security/CryptoArchitectureKit/crypto-generate-message-digest.md#generating-an-md-by-passing-in-data-by-segment) > .
 
 **Since:** 9
 
@@ -420,14 +407,7 @@ be used with **digest** together. **digest** is mandatory, and **update** is opt
 update(input: DataBlob): Promise<void>
 ```
 
-Updates the message digest status. This API uses a promise to return the result. **update** must be used with
-**digest** together. **digest** is mandatory, and **update** is optional.
-
-> **NOTE**
->
-> For details about the code for calling **update** multiple times in a message digest operation, see
-> [Generating an MD by Passing In Data by Segment](../../../../security/CryptoArchitectureKit/crypto-generate-message-digest.md#generating-an-md-by-passing-in-data-by-segment)
-> .
+Updates the message digest status. This API uses a promise to return the result. **update** must be used with **digest** together. **digest** is mandatory, and **update** is optional. > **NOTE** > > For details about the code for calling **update** multiple times in a message digest operation, see > [Generating an MD by Passing In Data by Segment](../../../../security/CryptoArchitectureKit/crypto-generate-message-digest.md#generating-an-md-by-passing-in-data-by-segment) > .
 
 **Since:** 9
 
@@ -465,19 +445,7 @@ Updates the message digest status. This API uses a promise to return the result.
 updateSync(input: DataBlob): void
 ```
 
-Updates the message digest status. This API returns the result synchronously. **updateSync** must be used with
-**digestSync** together. **digestSync** is mandatory, and **updateSync** is optional.
-
-> **NOTE**
->
-> For details about the code for calling **updateSync** multiple times in a message digest operation, see
-> [Generating an MD by Passing In Data by Segment](../../../../security/CryptoArchitectureKit/crypto-generate-message-digest.md#generating-an-md-by-passing-in-data-by-segment)
-> .
-
-<br><br>**NOTE**
-<br>It is recommended to prioritize the use of asynchronous API, {@link update}. Synchronous API may
-take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore,
-it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
+Updates the message digest status. This API returns the result synchronously. **updateSync** must be used with **digestSync** together. **digestSync** is mandatory, and **updateSync** is optional. > **NOTE** > > For details about the code for calling **updateSync** multiple times in a message digest operation, see > [Generating an MD by Passing In Data by Segment](../../../../security/CryptoArchitectureKit/crypto-generate-message-digest.md#generating-an-md-by-passing-in-data-by-segment) > . <br><br>**NOTE** <br>It is recommended to prioritize the use of asynchronous API, {@link update}. Synchronous API may take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore, it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
 
 **Since:** 12
 

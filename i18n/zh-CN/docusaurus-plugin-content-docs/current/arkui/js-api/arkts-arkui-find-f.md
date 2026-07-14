@@ -6,11 +6,7 @@
 function find(id: string, callback: AsyncCallback<Window>): void
 ```
 
-查找id所对应的窗口，使用callback异步回调。
-
-> **说明：**
->
-> 从API version 7开始支持，从API version 9开始废弃，建议使用[findWindow()](arkts-arkui-findwindow-f.md#findwindow-1)替代。
+查找id所对应的窗口，使用callback异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃，建议使用[findWindow()](arkts-arkui-findwindow-f.md#findwindow-1)替代。
 
 **起始版本：** 7
 
@@ -52,11 +48,7 @@ window.find('test', (err: BusinessError, data) => {
 function find(id: string): Promise<Window>
 ```
 
-查找id所对应的窗口，使用Promise异步回调。
-
-> **说明：**
->
-> 从API version 7开始支持，从API version 9开始废弃，建议使用[findWindow()](arkts-arkui-findwindow-f.md#findwindow-1)替代。
+查找id所对应的窗口，使用Promise异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃，建议使用[findWindow()](arkts-arkui-findwindow-f.md#findwindow-1)替代。
 
 **起始版本：** 7
 

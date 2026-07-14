@@ -106,13 +106,13 @@ Sets the media source for the extractor.
 | Parameter | Description |
 | -- | -- |
 | [OH_AVMetadataExtractor](capi-avmetadataextractor-oh-avmetadataextractor.md) *extractor | Pointer to the **OH_AVMetadataExtractor** instance. |
-| [OH_AVMediaSource](capi-avmediasource-oh-avmediasource.md) *source | Media source to be set. |
+| OH_AVMediaSource *source | Media source to be set. |
 
 **Returns**:
 
 | Type | Description |
 | -- | -- |
-| [OH_AVErrCode](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode) | Function result code.<br> [AV_ERR_OK](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): the execution is successful.<br> [AV_ERR_INVALID_VAL](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): input extractor is nullptr or input source is invalid. |
+| OH_AVErrCode | Function result code.<br> [AV_ERR_OK](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): the execution is successful.<br> [AV_ERR_INVALID_VAL](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): input extractor is nullptr or input source is invalid. |
 
 ### OH_AVMetadataExtractor_Create()
 
@@ -157,7 +157,7 @@ Sets a data source based on the media file descriptor.
 
 | Type | Description |
 | -- | -- |
-| [OH_AVErrCode](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode) | Function result code.<br> [AV_ERR_OK](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): the execution is successful.<br> [AV_ERR_INVALID_VAL](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): input extractor is nullptr or input param is invalid.<br> [AV_ERR_OPERATE_NOT_PERMIT](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): operation not allowed.<br> [AV_ERR_NO_MEMORY](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): internal memory allocation failed. |
+| OH_AVErrCode | Function result code.<br> [AV_ERR_OK](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): the execution is successful.<br> [AV_ERR_INVALID_VAL](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): input extractor is nullptr or input param is invalid.<br> [AV_ERR_OPERATE_NOT_PERMIT](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): operation not allowed.<br> [AV_ERR_NO_MEMORY](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): internal memory allocation failed. |
 
 ### OH_AVMetadataExtractor_FetchMetadata()
 
@@ -182,7 +182,7 @@ Obtains metadata from a media asset.This function must be called after [OH_AVMet
 
 | Type | Description |
 | -- | -- |
-| [OH_AVErrCode](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode) | Function result code.<br> [AV_ERR_OK](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): the execution is successful.<br> [AV_ERR_INVALID_VAL](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): input extractor is nullptr or input param is invalid.<br> [AV_ERR_OPERATE_NOT_PERMIT](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): operation not allowed.<br> [AV_ERR_UNSUPPORTED_FORMAT](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): format is unsupported.<br> [AV_ERR_NO_MEMORY](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): internal memory allocation failed.<br> [AV_ERR_IO_CLEARTEXT_NOT_PERMITTED](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): http cleartext traffic is not permitted. Add since api 23. |
+| OH_AVErrCode | Function result code.<br> [AV_ERR_OK](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): the execution is successful.<br> [AV_ERR_INVALID_VAL](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): input extractor is nullptr or input param is invalid.<br> [AV_ERR_OPERATE_NOT_PERMIT](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): operation not allowed.<br> [AV_ERR_UNSUPPORTED_FORMAT](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): format is unsupported.<br> [AV_ERR_NO_MEMORY](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): internal memory allocation failed.<br> [AV_ERR_IO_CLEARTEXT_NOT_PERMITTED](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): http cleartext traffic is not permitted. Add since api 23. |
 
 ### OH_AVMetadataExtractor_FetchAlbumCover()
 
@@ -201,13 +201,13 @@ Obtains the cover of an audio album.This function must be called after [OH_AVMet
 | Parameter | Description |
 | -- | -- |
 | [OH_AVMetadataExtractor](capi-avmetadataextractor-oh-avmetadataextractor.md)* extractor | Pointer to the **OH_AVMetadataExtractor** instance. |
-| OH_PixelmapNative** pixelMap | Double pointer to the album cover obtained. |
+| [OH_PixelmapNative](../ImageKit/capi-image-nativemodule-oh-pixelmapnative.md)** pixelMap | Double pointer to the album cover obtained. |
 
 **Returns**:
 
 | Type | Description |
 | -- | -- |
-| [OH_AVErrCode](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode) | Function result code.<br> [AV_ERR_OK](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): the execution is successful.<br> [AV_ERR_INVALID_VAL](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): input extractor is nullptr or input param is invalid.<br> [AV_ERR_OPERATE_NOT_PERMIT](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): operation not allowed.<br> [AV_ERR_UNSUPPORTED_FORMAT](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): format is unsupported.<br> [AV_ERR_NO_MEMORY](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): internal memory allocation failed. |
+| OH_AVErrCode | Function result code.<br> [AV_ERR_OK](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): the execution is successful.<br> [AV_ERR_INVALID_VAL](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): input extractor is nullptr or input param is invalid.<br> [AV_ERR_OPERATE_NOT_PERMIT](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): operation not allowed.<br> [AV_ERR_UNSUPPORTED_FORMAT](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): format is unsupported.<br> [AV_ERR_NO_MEMORY](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): internal memory allocation failed. |
 
 ### OH_AVMetadataExtractor_FetchFrameByTime()
 
@@ -229,13 +229,13 @@ Extracts an image at a specified time point from the video source. This function
 | int64_t timeUs | Time (in microseconds) at which an image is extracted from the video resource. |
 | OH_AVMedia_SeekMode seekMode | Seek mode that defines the relationship between the specified time and the key frame. For details,see [OH_AVMedia_SeekMode](capi-avmedia-base-h.md#oh_avmedia_seekmode). |
 | const OH_AVMetadataExtractor_OutputParam* outputParam | Output parameter of the image, for example, the height or width of the image. For details, see [OH_AVMetadataExtractor_OutputParam](capi-avmetadataextractor-oh-avmetadataextractor-outputparam.md).If this parameter is a null pointer, the original size of the video is used. Note: You need to use [OH_PixelmapNative_Destroy](../ImageKit/capi-pixelmap-native-h.md#oh_pixelmapnative_destroy)to release the pixel map after using it. |
-| OH_PixelmapNative** pixelMap | Used to receive images extracted from the video source. For details, see [OH_PixelmapNative](../ImageKit/capi-image-nativemodule-oh-pixelmapnative.md). |
+| [OH_PixelmapNative](../ImageKit/capi-image-nativemodule-oh-pixelmapnative.md)** pixelMap | Used to receive images extracted from the video source. For details, see [OH_PixelmapNative](../ImageKit/capi-image-nativemodule-oh-pixelmapnative.md). |
 
 **Returns**:
 
 | Type | Description |
 | -- | -- |
-| [OH_AVErrCode](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode) | Function result code.<br> [AV_ERR_OK](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): the execution is successful.<br> [AV_ERR_INVALID_VAL](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): the input param is invalid.<br> [AV_ERR_OPERATE_NOT_PERMIT](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): operation not allowed.<br> [AV_ERR_UNSUPPORTED_FORMAT](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): format is unsupported.<br> [AV_ERR_SERVICE_DIED](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): the service died.<br> [AV_ERR_IO_CLEARTEXT_NOT_PERMITTED](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): http cleartext traffic is not permitted. |
+| OH_AVErrCode | Function result code.<br> [AV_ERR_OK](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): the execution is successful.<br> [AV_ERR_INVALID_VAL](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): the input param is invalid.<br> [AV_ERR_OPERATE_NOT_PERMIT](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): operation not allowed.<br> [AV_ERR_UNSUPPORTED_FORMAT](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): format is unsupported.<br> [AV_ERR_SERVICE_DIED](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): the service died.<br> [AV_ERR_IO_CLEARTEXT_NOT_PERMITTED](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): http cleartext traffic is not permitted. |
 
 ### OH_AVMetadataExtractor_OnFrameFetched()
 
@@ -277,7 +277,7 @@ Extracts images at multiple specified time points from the video source asynchro
 
 | Type | Description |
 | -- | -- |
-| [OH_AVErrCode](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode) | Function result code.<br> [AV_ERR_OK](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode) if the execution is successful.<br> [AV_ERR_INVALID_VAL](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): the input param is invalid.<br> [AV_ERR_SERVICE_DIED](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): the service died.<br> [AV_ERR_IO_CLEARTEXT_NOT_PERMITTED](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): http cleartext traffic is not permitted.<br> [AV_ERR_OPERATE_NOT_PERMIT](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): operation not allowed. Returned by onFrameInfoCallback.<br> [AV_ERR_UNSUPPORTED_FORMAT](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): format is unsupported. Returned by onFrameInfoCallback.<br> [AV_ERR_TIMEOUT](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): the execution is times out. Returned by onFrameInfoCallback. |
+| OH_AVErrCode | Function result code.<br> [AV_ERR_OK](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode) if the execution is successful.<br> [AV_ERR_INVALID_VAL](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): the input param is invalid.<br> [AV_ERR_SERVICE_DIED](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): the service died.<br> [AV_ERR_IO_CLEARTEXT_NOT_PERMITTED](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): http cleartext traffic is not permitted.<br> [AV_ERR_OPERATE_NOT_PERMIT](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): operation not allowed. Returned by onFrameInfoCallback.<br> [AV_ERR_UNSUPPORTED_FORMAT](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): format is unsupported. Returned by onFrameInfoCallback.<br> [AV_ERR_TIMEOUT](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): the execution is times out. Returned by onFrameInfoCallback. |
 
 ### OH_AVMetadataExtractor_CancelAllFetchFrames()
 
@@ -319,7 +319,7 @@ Releases the resources used by the **OH_AVMetadataExtractor** instance and destr
 
 | Type | Description |
 | -- | -- |
-| [OH_AVErrCode](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode) | Function result code.<br> [AV_ERR_OK](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): the execution is successful.<br> [AV_ERR_INVALID_VAL](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): input extractor is nullptr or input param is invalid. |
+| OH_AVErrCode | Function result code.<br> [AV_ERR_OK](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): the execution is successful.<br> [AV_ERR_INVALID_VAL](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode): input extractor is nullptr or input param is invalid. |
 
 ### OH_AVMetadataExtractor_OutputParam_Create()
 

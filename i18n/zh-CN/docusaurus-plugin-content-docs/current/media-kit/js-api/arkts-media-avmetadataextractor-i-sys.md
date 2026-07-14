@@ -1,14 +1,6 @@
 # AVMetadataExtractor
 
-元数据获取类，用于从媒体资源中获取元数据、缩略图。在调用AVMetadataExtractor的方法前，需要先通过
-[media.createAVMetadataExtractor](arkts-media-createavmetadataextractor-f.md#createavmetadataextractor-3)
-构建一个AVMetadataExtractor实例。
-
-获取音频或视频元数据、视频缩略图的demo可参考：[使用AVMetadataExtractor提取音视频元数据信息(ArkTS)](../../../../media/media/avmetadataextractor.md)。
-
-> **说明：**
->
-> - 本Interface首批接口从API version 11开始支持。
+元数据获取类，用于从媒体资源中获取元数据、缩略图。在调用AVMetadataExtractor的方法前，需要先通过 [media.createAVMetadataExtractor](arkts-media-createavmetadataextractor-f.md#createavmetadataextractor-3) 构建一个AVMetadataExtractor实例。 获取音频或视频元数据、视频缩略图的demo可参考：[使用AVMetadataExtractor提取音视频元数据信息(ArkTS)](../../../../media/media/avmetadataextractor.md)。 > **说明：** > > - 本Interface首批接口从API version 11开始支持。
 
 **起始版本：** 11
 

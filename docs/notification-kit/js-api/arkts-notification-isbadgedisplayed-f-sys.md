@@ -12,8 +12,7 @@ import { notificationManager } from '@kit.NotificationKit';
 function isBadgeDisplayed(bundle: BundleOption, callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether the notification badge is enabled for a specified application. This API uses an asynchronous
-callback to return the result.
+Checks whether the notification badge is enabled for a specified application. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -69,8 +68,7 @@ notificationManager.isBadgeDisplayed(bundle, isBadgeDisplayedCallback);
 function isBadgeDisplayed(bundle: BundleOption): Promise<boolean>
 ```
 
-Checks whether the notification badge is enabled for a specified application. This API uses a promise to return the
-result.
+Checks whether the notification badge is enabled for a specified application. This API uses a promise to return the result.
 
 **Since:** 9
 

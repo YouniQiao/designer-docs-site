@@ -12,9 +12,7 @@ Represents an operation for deleting data.
 count?: number
 ```
 
-Number of data records to delete.
-
-Default value: **1**.
+Number of data records to delete. Default value: **1**.
 
 **Type:** number
 

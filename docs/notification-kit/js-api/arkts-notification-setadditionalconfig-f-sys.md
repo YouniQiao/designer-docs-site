@@ -12,8 +12,7 @@ import { notificationManager } from '@kit.NotificationKit';
 function setAdditionalConfig(key: string, value: string): Promise<number>
 ```
 
-Sets the additional system configuration information of the notification. This API uses a promise to return the
-result.
+Sets the additional system configuration information of the notification. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -27,7 +26,7 @@ result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| key | string | Yes | Additional configuration key. Currently, only **RING_TRUSTLIST_PKG** is supported,indicating that the application supports[custom ringtone](arkts-notification-notificationrequest-i.md). |
+| key | string | Yes | Additional configuration key. Currently, only **RING_TRUSTLIST_PKG** is supported,indicating that the application supports custom ringtones. |
 | value | string | Yes | Additional configuration value. Example: [bundleName1,bundleName2]. |
 
 **Return value:**

@@ -12,11 +12,7 @@ import { sendableImage } from '@kit.ImageKit';
 function createImageSource(uri: string): ImageSource
 ```
 
-Creates an ImageSource instance based on a given URI.
-
-Images occupy a large amount of memory. When you finish using an ImageSource instance, call
-[release](arkts-image-pixelmap-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure
-that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
+Creates an ImageSource instance based on a given URI. Images occupy a large amount of memory. When you finish using an ImageSource instance, call [release](arkts-image-pixelmap-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
 
 **Since:** 12
 
@@ -55,11 +51,7 @@ async function Demo(context : Context) {
 function createImageSource(fd: number): ImageSource
 ```
 
-Creates an ImageSource instance based on a given file descriptor.
-
-Images occupy a large amount of memory. When you finish using an ImageSource instance, call
-[release](arkts-image-pixelmap-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure
-that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
+Creates an ImageSource instance based on a given file descriptor. Images occupy a large amount of memory. When you finish using an ImageSource instance, call [release](arkts-image-pixelmap-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
 
 **Since:** 12
 
@@ -100,13 +92,7 @@ async function Demo(context : Context) {
 function createImageSource(buf: ArrayBuffer): ImageSource
 ```
 
-Creates an ImageSource instance based on buffers. The data passed by **buf** must be undecoded. Do not pass the
-pixel buffer data such as RBGA and YUV. If you want to create a PixelMap based on the pixel buffer data, call
-[sendableImage.createPixelMap](arkts-image-createpixelmap-f.md#createpixelmap-1).
-
-Images occupy a large amount of memory. When you finish using an ImageSource instance, call
-[release](arkts-image-pixelmap-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure
-that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
+Creates an ImageSource instance based on buffers. The data passed by **buf** must be undecoded. Do not pass the pixel buffer data such as RBGA and YUV. If you want to create a PixelMap based on the pixel buffer data, call [sendableImage.createPixelMap](arkts-image-createpixelmap-f.md#createpixelmap-1). Images occupy a large amount of memory. When you finish using an ImageSource instance, call [release](arkts-image-pixelmap-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
 
 **Since:** 12
 

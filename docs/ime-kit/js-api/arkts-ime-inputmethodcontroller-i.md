@@ -1,8 +1,6 @@
 # InputMethodController
 
-A control class that encapsulates APIs for input method management, which can only be invoked after an
-**InputMethodController** instance is obtained via
-[getController](arkts-ime-getcontroller-f.md#getcontroller-1).
+A control class that encapsulates APIs for input method management, which can only be invoked after an **InputMethodController** instance is obtained via [getController](arkts-ime-getcontroller-f.md#getcontroller-1).
 
 **Since:** 6
 
@@ -439,8 +437,7 @@ inputMethod.getController().discardTypingText().then(() => {
 hideSoftKeyboard(callback: AsyncCallback<void>): void
 ```
 
-Hide soft keyboard.
-This API can be called only by system applications.
+Hide soft keyboard. This API can be called only by system applications.
 
 **Since:** 9
 
@@ -483,8 +480,7 @@ inputMethod.getController().hideSoftKeyboard((err: BusinessError) => {
 hideSoftKeyboard(): Promise<void>
 ```
 
-Hide soft keyboard.
-This API can be called only by system applications.
+Hide soft keyboard. This API can be called only by system applications.
 
 **Since:** 9
 
@@ -1101,8 +1097,7 @@ console.info(`All callbacks unsubscribed from finishTextPreview`);
 on(type: 'selectByRange', callback: Callback<Range>): void
 ```
 
-Register a callback and when IME sends select event with range of selection,
-the callback will be invoked.
+Register a callback and when IME sends select event with range of selection, the callback will be invoked.
 
 **Since:** 10
 
@@ -1136,8 +1131,7 @@ inputMethod.getController().on('selectByRange', (range: inputMethod.Range) => {
 on(type: 'selectByMovement', callback: Callback<Movement>): void
 ```
 
-Register a callback and when IME sends select event witch movement of cursor,
-the callback will be invoked.
+Register a callback and when IME sends select event witch movement of cursor, the callback will be invoked.
 
 **Since:** 10
 
@@ -1219,8 +1213,7 @@ inputMethodController.off('insertText');
 on(type: 'deleteLeft', callback: (length: number) => void): void
 ```
 
-Register a callback and when IME sends delete left event with length,
-the callback will be invoked.
+Register a callback and when IME sends delete left event with length, the callback will be invoked.
 
 **Since:** 10
 
@@ -1255,8 +1248,7 @@ inputMethod.getController().on('deleteLeft', (length: number) => {
 on(type: 'deleteRight', callback: (length: number) => void): void
 ```
 
-Register a callback and when IME sends delete right event with length,
-the callback will be invoked.
+Register a callback and when IME sends delete right event with length, the callback will be invoked.
 
 **Since:** 10
 
@@ -1542,8 +1534,7 @@ inputMethod.getController().on('getTextIndexAtCursor', () => {
 on(type: 'setPreviewText', callback: SetPreviewTextCallback): void
 ```
 
-<p>Subscribe 'setPreviewText' event.</p>
-<p>To support the preview text feature, developers should subscribe to this event before calling attach.</p>
+<p>Subscribe 'setPreviewText' event.</p> <p>To support the preview text feature, developers should subscribe to this event before calling attach.</p>
 
 **Since:** 17
 
@@ -1593,8 +1584,7 @@ console.info(`All callbacks unsubscribed from setPreviewText`);
 on(type: 'finishTextPreview', callback: Callback<void>): void
 ```
 
-<p>Subscribe 'finishTextPreview' event.</p>
-<p>To support the preview text feature, developers should subscribe to this event before calling attach.</p>
+<p>Subscribe 'finishTextPreview' event.</p> <p>To support the preview text feature, developers should subscribe to this event before calling attach.</p>
 
 **Since:** 17
 
@@ -1740,8 +1730,7 @@ inputMethod.getController().sendMessage(msgId, msgParam).then(() => {
 setCallingWindow(windowId: number, callback: AsyncCallback<void>): void
 ```
 
-Inform the system of the window ID of the application currently bound to the input method.
-After the correct setting, the window where the client is located can avoid the input method window.
+Inform the system of the window ID of the application currently bound to the input method. After the correct setting, the window where the client is located can avoid the input method window.
 
 **Since:** 10
 
@@ -1785,8 +1774,7 @@ inputMethod.getController().setCallingWindow(windowId, (err: BusinessError) => {
 setCallingWindow(windowId: number): Promise<void>
 ```
 
-Inform the system of the window ID of the application currently bound to the input method.
-After the correct setting, the window where the client is located can avoid the input method window.
+Inform the system of the window ID of the application currently bound to the input method. After the correct setting, the window where the client is located can avoid the input method window.
 
 **Since:** 10
 
@@ -1833,8 +1821,7 @@ inputMethod.getController().setCallingWindow(windowId).then(() => {
 showSoftKeyboard(callback: AsyncCallback<void>): void
 ```
 
-Show soft keyboard.
-This API can be called only by system applications.
+Show soft keyboard. This API can be called only by system applications.
 
 **Since:** 9
 
@@ -1877,8 +1864,7 @@ inputMethod.getController().showSoftKeyboard((err: BusinessError) => {
 showSoftKeyboard(): Promise<void>
 ```
 
-Show soft keyboard.
-This API can be called only by system applications.
+Show soft keyboard. This API can be called only by system applications.
 
 **Since:** 9
 

@@ -1,8 +1,8 @@
 # GridObjectSortComponentItem
 
-Declaration of the GridObjectSortComponent item.
+Provides data item configuration for the **GridObjectSortComponent** component.
 
-**Since:** 12
+**Since:** 11
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -18,11 +18,11 @@ import { GridObjectSortComponentType, GridObjectSortComponentOptions, GridObject
 id: number | string
 ```
 
-id of GridObjectSortComponent item.
+Data ID, which must be unique. The default value is an empty string.
 
 **Type:** number | string
 
-**Since:** 12
+**Since:** 11
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -36,11 +36,11 @@ id of GridObjectSortComponent item.
 order: number
 ```
 
-order of GridObjectSortComponentItem, Used for sorting dataList.
+Sequence number. The value must be greater than or equal to 0. Default value: **0**.
 
 **Type:** number
 
-**Since:** 12
+**Since:** 11
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -54,11 +54,11 @@ order of GridObjectSortComponentItem, Used for sorting dataList.
 selected: boolean
 ```
 
-selected of GridObjectSortComponent item, true is show area, false is add area.
+Whether the grid object has been added. The value **true** means that the grid object has been added, and **false** means the opposite.
 
 **Type:** boolean
 
-**Since:** 12
+**Since:** 11
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -72,15 +72,15 @@ selected of GridObjectSortComponent item, true is show area, false is add area.
 symbolStyle?: SymbolGlyphModifier
 ```
 
-symbol of the GridObjectSortComponent item.
+Symbol resource of the image. Required when **GridObjectSortComponentType** is set to **IMAGE_TEXT**. The priority of this property is higher than that of **url**.
 
 **Type:** SymbolGlyphModifier
 
-**Since:** 22
+**Since:** 18
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 22.
+**Atomic service API:** This API can be used in atomic services since API version 18.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -90,11 +90,11 @@ symbol of the GridObjectSortComponent item.
 text: ResourceStr
 ```
 
-GridObjectSortComponent item text.
+Text information.
 
 **Type:** ResourceStr
 
-**Since:** 12
+**Since:** 11
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -108,11 +108,11 @@ GridObjectSortComponent item text.
 url?: ResourceStr
 ```
 
-image resource path of the GridObjectSortComponent item.
+URL of the image. Required when **GridObjectSortComponentType** is set to **IMAGE_TEXT**.
 
 **Type:** ResourceStr
 
-**Since:** 12
+**Since:** 11
 
 **Model restriction:** This API can be used only in the stage model.
 

@@ -12,13 +12,13 @@ import { MultiNavPathStack, MultiNavigation, SplitPolicy } from '@kit.ArkUI';
 
 | Name | Description |
 | --- | --- |
-| [MultiNavPathStack](arkts-arkui-multinavpathstack-c.md) | Implements a navigation stack of the **MultiNavigation** component. Currently, this stack can be created only by theuser and cannot be obtained through callbacks. Do not use events or APIs such as **onReady** of **NavDestination** toobtain the navigation stack and perform stack operations, as this may lead to unpredictable issues. |
+| [MultiNavPathStack](arkts-arkui-multinavpathstack-c.md) | Implements a navigation stack of the **MultiNavigation** component. Currently, this stack can be created only by the user and cannot be obtained through callbacks. Do not use events or APIs such as **onReady** of **NavDestination** to obtain the navigation stack and perform stack operations, as this may lead to unpredictable issues. |
 
 ### Structs
 
 | Name | Description |
 | --- | --- |
-| [MultiNavigation](arkts-arkui-multinavigation-s.md) | **MultiNavigation** is a component designed for multi-column display and routing navigation on large-screen devices.&gt; **NOTE**&gt; Due to the nested stack structure of **MultiNavigation**, calling APIs explicitly stated as unsupported in this&gt; document or APIs not listed in the supported API list (such as **getParent**, **setInterception**, and&gt; **pushDestination**) may lead to unpredictable issues.&gt; In scenarios with deep nesting, **MultiNavigation** may encounter routing animation issues. |
+| [MultiNavigation](arkts-arkui-multinavigation-s.md) | **MultiNavigation** is a component designed for multi-column display and routing navigation on large-screen devices. &gt; **NOTE** &gt; Due to the nested stack structure of **MultiNavigation**, calling APIs explicitly stated as unsupported in this &gt; document or APIs not listed in the supported API list (such as **getParent**, **setInterception**, and &gt; **pushDestination**) may lead to unpredictable issues. &gt; In scenarios with deep nesting, **MultiNavigation** may encounter routing animation issues. |
 
 ### Enums
 

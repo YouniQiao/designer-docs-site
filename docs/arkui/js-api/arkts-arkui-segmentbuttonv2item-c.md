@@ -40,14 +40,7 @@ Constructs a **SegmentButtonV2ItemOptions** instance.
 accessibilityDescription?: ResourceStr
 ```
 
-[Accessibility description](../arkts-components/arkts-arkui-commonmethod-c.md#accessibilitydescription-1) of the segmented button
-item.
-
-Default value: **""**
-
-If the value is **undefined**, the default value is used.
-
-Decorator type: @Trace
+[Accessibility description](../arkts-components/arkts-arkui-commonmethod-c.md#accessibilitydescription-1) of the segmented button item. Default value: **""** If the value is **undefined**, the default value is used. Decorator type: @Trace
 
 **Type:** ResourceStr
 
@@ -65,13 +58,7 @@ Decorator type: @Trace
 accessibilityLevel?: string
 ```
 
-[Accessibility level](../arkts-components/arkts-arkui-commonmethod-c.md#accessibilitylevel-1) of the segmented button item.
-
-Default value: **"auto"**
-
-If the value is **undefined**, the default value is used.
-
-Decorator type: @Trace
+[Accessibility level](../arkts-components/arkts-arkui-commonmethod-c.md#accessibilitylevel-1) of the segmented button item. Default value: **"auto"** If the value is **undefined**, the default value is used. Decorator type: @Trace
 
 **Type:** string
 
@@ -89,13 +76,7 @@ Decorator type: @Trace
 accessibilityText?: ResourceStr
 ```
 
-[Accessibility text](../arkts-components/arkts-arkui-commonmethod-c.md#accessibilitytext-1) of the segmented button item.
-
-Default value: **""**
-
-If the value is **undefined**, the default value is used.
-
-Decorator type: @Trace
+[Accessibility text](../arkts-components/arkts-arkui-commonmethod-c.md#accessibilitytext-1) of the segmented button item. Default value: **""** If the value is **undefined**, the default value is used. Decorator type: @Trace
 
 **Type:** ResourceStr
 
@@ -113,15 +94,7 @@ Decorator type: @Trace
 enabled: boolean
 ```
 
-Whether the segmented button item is enabled.
-
-Default value: **true**
-
-**true**: enabled. **false**: disabled.
-
-If the value is **undefined**, the default value is used.
-
-Decorator type: @Trace
+Whether the segmented button item is enabled. Default value: **true** **true**: enabled. **false**: disabled. If the value is **undefined**, the default value is used. Decorator type: @Trace
 
 **Type:** boolean
 
@@ -139,11 +112,7 @@ Decorator type: @Trace
 icon?: ResourceStr
 ```
 
-Image icon of the segmented button item.
-
-Default value: **undefined**
-
-Decorator type: @Trace
+Image icon of the segmented button item. Default value: **undefined** Decorator type: @Trace
 
 **Type:** ResourceStr
 
@@ -161,11 +130,7 @@ Decorator type: @Trace
 iconModifier?: ImageModifier
 ```
 
-Image icon modifier for the segmented button item.
-
-Default value: **undefined**
-
-Decorator type: @Trace
+Image icon modifier for the segmented button item. Default value: **undefined** Decorator type: @Trace
 
 **Type:** ImageModifier
 
@@ -201,11 +166,7 @@ Checks whether the segmented button item contains both text and icon configurati
 symbol?: Resource
 ```
 
-HM Symbol icon of the segmented button item.
-
-Default value: **undefined**
-
-Decorator type: @Trace
+HM Symbol icon of the segmented button item. Default value: **undefined** Decorator type: @Trace
 
 **Type:** Resource
 
@@ -223,11 +184,7 @@ Decorator type: @Trace
 symbolModifier?: SymbolGlyphModifier
 ```
 
-HM Symbol icon modifier for the segmented button item.
-
-Default value: **undefined**
-
-Decorator type: @Trace
+HM Symbol icon modifier for the segmented button item. Default value: **undefined** Decorator type: @Trace
 
 **Type:** SymbolGlyphModifier
 
@@ -245,11 +202,7 @@ Decorator type: @Trace
 text?: ResourceStr
 ```
 
-Text of the segmented button item.
-
-Default value: **undefined**
-
-Decorator type: @Trace
+Text of the segmented button item. Default value: **undefined** Decorator type: @Trace
 
 **Type:** ResourceStr
 
@@ -267,11 +220,7 @@ Decorator type: @Trace
 textModifier?: TextModifier
 ```
 
-Text modifier for the segmented button item.
-
-Default value: **undefined**
-
-Decorator type: @Trace
+Text modifier for the segmented button item. Default value: **undefined** Decorator type: @Trace
 
 **Type:** TextModifier
 

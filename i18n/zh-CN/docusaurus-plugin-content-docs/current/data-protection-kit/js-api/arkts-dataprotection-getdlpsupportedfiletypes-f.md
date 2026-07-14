@@ -6,9 +6,7 @@
 function getDLPSupportedFileTypes(): Promise<Array<string>>
 ```
 
-查询当前可支持权限设置和校验的文件扩展名类型列表。调用成功后返回支持的文件类型列表，用于判断哪些文件类型可进行DLP权限管理。使用Promise异步回调。
-
-该接口用于获取支持DLP权限管理的文件类型列表，以便决定当前文件是否可以进行加密。
+查询当前可支持权限设置和校验的文件扩展名类型列表。调用成功后返回支持的文件类型列表，用于判断哪些文件类型可进行DLP权限管理。使用Promise异步回调。 该接口用于获取支持DLP权限管理的文件类型列表，以便决定当前文件是否可以进行加密。
 
 **起始版本：** 10
 
@@ -47,9 +45,7 @@ dlpPermission.getDLPSupportedFileTypes().then((fileTypes) => { // 获取支持DL
 function getDLPSupportedFileTypes(callback: AsyncCallback<Array<string>>): void
 ```
 
-查询当前可支持权限设置和校验的文件扩展名类型列表。调用成功后返回支持的文件类型列表，用于判断哪些文件类型可进行DLP权限管理。使用callback异步回调。
-
-该接口用于获取支持DLP权限管理的文件类型列表，以便决定当前文件是否可以进行加密。
+查询当前可支持权限设置和校验的文件扩展名类型列表。调用成功后返回支持的文件类型列表，用于判断哪些文件类型可进行DLP权限管理。使用callback异步回调。 该接口用于获取支持DLP权限管理的文件类型列表，以便决定当前文件是否可以进行加密。
 
 **起始版本：** 10
 

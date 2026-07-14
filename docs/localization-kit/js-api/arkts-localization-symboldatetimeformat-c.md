@@ -1,9 +1,6 @@
 # SymbolDateTimeFormat
 
-Provide a DateTime formatting interface that supports custom symbols.
-This interface formats date time values into strings with custom symbols,
-and can replace variable symbols in the formatted result with custom fixed symbols
-(e.g., replacing "2:23 PM" with "2:23 afternoon").
+Provide a DateTime formatting interface that supports custom symbols. This interface formats date time values into strings with custom symbols, and can replace variable symbols in the formatted result with custom fixed symbols (e.g., replacing "2:23 PM" with "2:23 afternoon").
 
 **Inheritance/Implementation:** SymbolDateTimeFormat extends [Intl.DateTimeFormat](../../apis-na/arkts-apis/arkts-na-datetimeformat-i.md)
 
@@ -167,8 +164,7 @@ Formats a date to parts.
 public parse(text: string, lenientMode: boolean): number
 ```
 
-Parse a date time localized string to Unix timestamp.
-Unix timestamp, indicating the number of milliseconds elapsed since 00:00:00 on January 1, 1970 GMT.
+Parse a date time localized string to Unix timestamp. Unix timestamp, indicating the number of milliseconds elapsed since 00:00:00 on January 1, 1970 GMT.
 
 **Since:** 26.0.0
 
@@ -203,8 +199,7 @@ Unix timestamp, indicating the number of milliseconds elapsed since 00:00:00 on 
 public resolvedOptions(): ResolvedSymbolDateTimeFormatOptions
 ```
 
-Obtains the options for creating a SymbolDateTimeFormat object.
-This will allow us to check the current config symbols.
+Obtains the options for creating a SymbolDateTimeFormat object. This will allow us to check the current config symbols.
 
 **Since:** 26.0.0
 

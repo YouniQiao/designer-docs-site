@@ -1,9 +1,6 @@
 # TypeCode
 
-Since API version 12,
-[writeArrayBuffer](arkts-ipc-messagesequence-c.md#writearraybuffer-1) and
-[readArrayBuffer](arkts-ipc-messagesequence-c.md#readarraybuffer-1) are added to pass ArrayBuffer
-data. The specific TypedArray type is determined by the **TypeCode** defined as follows:
+Since API version 12, [writeArrayBuffer](arkts-ipc-messagesequence-c.md#writearraybuffer-1) and [readArrayBuffer](arkts-ipc-messagesequence-c.md#readarraybuffer-1) are added to pass ArrayBuffer data. The specific TypedArray type is determined by the **TypeCode** defined as follows:
 
 **Since:** 12
 

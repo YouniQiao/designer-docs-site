@@ -1,19 +1,6 @@
 # RectUtils
 
-This module provides tools for processing rectangles.
-Use scenarios:
-
-1. Quickly create rectangles and get their basic features, like making a new rectangle, copying one, and obtaining its width, height, and center point.
-2. Calculate and adjust boundaries, such as obtaining the inclusion relationship, calculating and updating intersections and unions between rectangles, and updating boundary values.
-
-> **NOTE**
->
-> - The initial APIs of this class are supported since API version 20.
->
-> - This module uses the physical pixel unit, px.
->
-> - This module operates under a single-threaded model. The caller needs to manage thread safety and context state
-> transitions.
+This module provides tools for processing rectangles. Use scenarios: 1. Quickly create rectangles and get their basic features, like making a new rectangle, copying one, and obtaining its width, height, and center point. 2. Calculate and adjust boundaries, such as obtaining the inclusion relationship, calculating and updating intersections and unions between rectangles, and updating boundary values. > **NOTE** > > - The initial APIs of this class are supported since API version 20. > > - This module uses the physical pixel unit, px. > > - This module operates under a single-threaded model. The caller needs to manage thread safety and context state > transitions.
 
 **Since:** 20
 
@@ -104,8 +91,7 @@ Checks whether a rectangle completely contains another rectangle.
 static contains(rect: common2D.Rect, left: number, top: number, right: number, bottom: number): boolean
 ```
 
-Checks whether a rectangle completely contains another rectangle (which is marked by the coordinates of the upper
-left and lower right corners).
+Checks whether a rectangle completely contains another rectangle (which is marked by the coordinates of the upper left and lower right corners).
 
 **Since:** 20
 
@@ -207,8 +193,7 @@ Obtains the width of a rectangle.
 static inset(rect: common2D.Rect, left: number, top: number, right: number, bottom: number): void
 ```
 
-Adds the input left, top, right, and bottom values to the left, top, right, and bottom boundaries of a specified
-rectangle, respectively.
+Adds the input left, top, right, and bottom values to the left, top, right, and bottom boundaries of a specified rectangle, respectively.
 
 **Since:** 20
 
@@ -230,8 +215,7 @@ rectangle, respectively.
 static intersect(rect: common2D.Rect, other: common2D.Rect): boolean
 ```
 
-Calculates the intersection of two rectangles and updates the intersection result to the rectangle represented by
-the first input parameter.
+Calculates the intersection of two rectangles and updates the intersection result to the rectangle represented by the first input parameter.
 
 **Since:** 20
 
@@ -256,8 +240,7 @@ the first input parameter.
 static isEmpty(rect: common2D.Rect): boolean
 ```
 
-Checks whether a rectangle is empty (the left boundary is greater than or equal to the right boundary or the top
-boundary is greater than or equal to the bottom boundary).
+Checks whether a rectangle is empty (the left boundary is greater than or equal to the right boundary or the top boundary is greater than or equal to the bottom boundary).
 
 **Since:** 20
 
@@ -458,8 +441,7 @@ Sets the left, right, top, and bottom boundaries of the rectangle to **0**.
 static setLtrb(rect: common2D.Rect, left: number, top: number, right: number, bottom: number): void
 ```
 
-Updates the top, bottom, left, and right boundary values of the existing rectangle using the input top, bottom,
-left, and right values, respectively.
+Updates the top, bottom, left, and right boundary values of the existing rectangle using the input top, bottom, left, and right values, respectively.
 
 **Since:** 20
 
@@ -500,12 +482,7 @@ Assigns the existing rectangle with another rectangle.
 static sort(rect: common2D.Rect): void
 ```
 
-If the rectangle is reversed (that is, the left boundary is greater than the right boundary or the top boundary
-is greater than the bottom boundary), the top and bottom (left and right) boundary values of the rectangle are
-exchanged, so that the top boundary is less than the bottom boundary (the left boundary is less than the right
-boundary).
-If the rectangle is not reversed (that is, the left boundary is less than or equal to the right boundary or the
-top boundary is less than or equal to the bottom boundary), no operation is performed.
+If the rectangle is reversed (that is, the left boundary is greater than the right boundary or the top boundary is greater than the bottom boundary), the top and bottom (left and right) boundary values of the rectangle are exchanged, so that the top boundary is less than the bottom boundary (the left boundary is less than the right boundary). If the rectangle is not reversed (that is, the left boundary is less than or equal to the right boundary or the top boundary is less than or equal to the bottom boundary), no operation is performed.
 
 **Since:** 20
 
@@ -523,9 +500,7 @@ top boundary is less than or equal to the bottom boundary), no operation is perf
 static union(rect: common2D.Rect, other: common2D.Rect): void
 ```
 
-Calculates the union of two rectangles and updates the union result to the rectangle represented by the first
-input parameter. If the first input parameter is empty, the union result is updated to the rectangle represented
-by the second input parameter. If the second input parameter is empty, no operation is performed.
+Calculates the union of two rectangles and updates the union result to the rectangle represented by the first input parameter. If the first input parameter is empty, the union result is updated to the rectangle represented by the second input parameter. If the second input parameter is empty, no operation is performed.
 
 **Since:** 20
 

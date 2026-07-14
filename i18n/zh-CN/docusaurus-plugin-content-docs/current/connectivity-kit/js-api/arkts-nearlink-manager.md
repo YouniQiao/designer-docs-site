@@ -13,7 +13,7 @@
 | 名称 | 说明 |
 | --- | --- |
 | [getLocalName](arkts-connectivity-getlocalname-f.md#getlocalname-1) | 获取本地设备的名称。 |
-| [getPairedDevices](arkts-connectivity-getpaireddevices-f.md#getpaireddevices-1) | 获取已与当前设备配对的设备列表。如果用户有ohos.permission.GET_NEARLINK_PEER_MAC权限，则返回真实设备地址。否则，返回随机的设备地址 |
+| [getPairedDevices](arkts-connectivity-getpaireddevices-f.md#getpaireddevices-1) | 获取已与当前设备配对的设备列表。 如果用户有ohos.permission.GET_NEARLINK_PEER_MAC权限，则返回真实设备地址。否则，返回随机的设备地址 |
 | [getState](arkts-connectivity-getstate-f.md#getstate-1) | 获取星闪状态。 |
 | [isNearLinkSupported](arkts-connectivity-isnearlinksupported-f.md#isnearlinksupported-1) | 检查当前设备是否支持星闪。 |
 | [offStateChange](arkts-connectivity-offstatechange-f.md#offstatechange-1) | 取消订阅状态变更事件。 |

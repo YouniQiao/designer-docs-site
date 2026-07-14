@@ -1,8 +1,6 @@
 # Session
 
-Session represent a connection session to one of the SEs available on the device. These objects
-can be used to get a communication channel with an applet in the SE. This channel can be the basic channel
-or a logical channel.
+Session represent a connection session to one of the SEs available on the device. These objects can be used to get a communication channel with an applet in the SE. This channel can be the basic channel or a logical channel.
 
 **Since:** 10
 
@@ -94,8 +92,7 @@ try {
 getATR(): number[]
 ```
 
-Get the ATR of this SE.
-A empty array SHALL be returned if the ATR for this SE is not available.
+Get the ATR of this SE. A empty array SHALL be returned if the ATR for this SE is not available.
 
 **Since:** 10
 
@@ -237,8 +234,7 @@ try {
 openBasicChannel(aid: number[]): Promise<Channel>
 ```
 
-This method is provided to ease the development of mobile applications and for backward compatibility with
-existing applications. This method is equivalent to openBasicChannel(aid, P2=0x00).
+This method is provided to ease the development of mobile applications and for backward compatibility with existing applications. This method is equivalent to openBasicChannel(aid, P2=0x00).
 
 **Since:** 10
 
@@ -303,8 +299,7 @@ function secureElementDemo() {
 openBasicChannel(aid: number[], callback: AsyncCallback<Channel>): void
 ```
 
-This method is provided to ease the development of mobile applications and for backward compatibility with
-existing applications. This method is equivalent to openBasicChannel(aid, P2=0x00).
+This method is provided to ease the development of mobile applications and for backward compatibility with existing applications. This method is equivalent to openBasicChannel(aid, P2=0x00).
 
 **Since:** 10
 
@@ -366,14 +361,7 @@ function secureElementDemo() {
 openBasicChannel(aid: number[], p2: number): Promise<Channel>
 ```
 
-Get access to the basic channel, as defined in [ISO 7816-4] (the one that has number 0). The obtained object
-is an instance of the channel class.
-Once this channel has been opened by a device application, it is considered as ‘locked’ by this device
-application, and other calls to this method SHALL return Null, until the channel is closed.
-Some SE plug-ins, such as those handling UICC, may prevent the use of the Basic Channel. In these cases,
-a Null value SHALL be returned.
-P2 is normally 0x00. The device SHOULD allow any value for P2 and SHALL allow the following values:
-0x00, 0x04, 0x08, 0x0C (as defined in [ISO 7816-4]).
+Get access to the basic channel, as defined in [ISO 7816-4] (the one that has number 0). The obtained object is an instance of the channel class. Once this channel has been opened by a device application, it is considered as ‘locked’ by this device application, and other calls to this method SHALL return Null, until the channel is closed. Some SE plug-ins, such as those handling UICC, may prevent the use of the Basic Channel. In these cases, a Null value SHALL be returned. P2 is normally 0x00. The device SHOULD allow any value for P2 and SHALL allow the following values: 0x00, 0x04, 0x08, 0x0C (as defined in [ISO 7816-4]).
 
 **Since:** 10
 
@@ -440,14 +428,7 @@ function secureElementDemo() {
 openBasicChannel(aid: number[], p2: number, callback: AsyncCallback<Channel>): void
 ```
 
-Get access to the basic channel, as defined in [ISO 7816-4] (the one that has number 0). The obtained object
-is an instance of the channel class.
-Once this channel has been opened by a device application, it is considered as ‘locked’ by this device
-application, and other calls to this method SHALL return Null, until the channel is closed.
-Some SE plug-ins, such as those handling UICC, may prevent the use of the Basic Channel. In these cases,
-a Null value SHALL be returned.
-P2 is normally 0x00. The device SHOULD allow any value for P2 and SHALL allow the following values:
-0x00, 0x04, 0x08, 0x0C (as defined in [ISO 7816-4]).
+Get access to the basic channel, as defined in [ISO 7816-4] (the one that has number 0). The obtained object is an instance of the channel class. Once this channel has been opened by a device application, it is considered as ‘locked’ by this device application, and other calls to this method SHALL return Null, until the channel is closed. Some SE plug-ins, such as those handling UICC, may prevent the use of the Basic Channel. In these cases, a Null value SHALL be returned. P2 is normally 0x00. The device SHOULD allow any value for P2 and SHALL allow the following values: 0x00, 0x04, 0x08, 0x0C (as defined in [ISO 7816-4]).
 
 **Since:** 10
 
@@ -511,8 +492,7 @@ function secureElementDemo() {
 openLogicalChannel(aid: number[]): Promise<Channel>
 ```
 
-This method is provided to ease the development of mobile applications and for backward compatibility with
-existing applications. This method is equivalent to openLogicalChannel(aid, P2=0x00).
+This method is provided to ease the development of mobile applications and for backward compatibility with existing applications. This method is equivalent to openLogicalChannel(aid, P2=0x00).
 
 **Since:** 10
 
@@ -577,8 +557,7 @@ function secureElementDemo() {
 openLogicalChannel(aid: number[], callback: AsyncCallback<Channel>): void
 ```
 
-This method is provided to ease the development of mobile applications and for backward compatibility with
-existing applications. This method is equivalent to openLogicalChannel(aid, P2=0x00).
+This method is provided to ease the development of mobile applications and for backward compatibility with existing applications. This method is equivalent to openLogicalChannel(aid, P2=0x00).
 
 **Since:** 10
 
@@ -640,14 +619,7 @@ function secureElementDemo() {
 openLogicalChannel(aid: number[], p2: number): Promise<Channel>
 ```
 
-Open a logical channel with the SE, selecting the applet represented by the given AID (when the AID is not
-Null and the length of the AID is not 0).
-If the length of the AID is 0, the method will select the Issuer Security Domain of the SE by sending a SELECT
-command with 0 length AID as defined in [GPCS].
-If the AID is Null, the method SHALL only send a MANAGE CHANNEL Open and SHALL NOT send a
-SELECT command. In this case, the default applet associated to the logical channel will be selected by default.
-P2 is normally 0x00. The device SHOULD allow any value for P2 and SHALL allow the following values:
-0x00, 0x04, 0x08, 0x0C (as defined in [ISO 7816-4]).
+Open a logical channel with the SE, selecting the applet represented by the given AID (when the AID is not Null and the length of the AID is not 0). If the length of the AID is 0, the method will select the Issuer Security Domain of the SE by sending a SELECT command with 0 length AID as defined in [GPCS]. If the AID is Null, the method SHALL only send a MANAGE CHANNEL Open and SHALL NOT send a SELECT command. In this case, the default applet associated to the logical channel will be selected by default. P2 is normally 0x00. The device SHOULD allow any value for P2 and SHALL allow the following values: 0x00, 0x04, 0x08, 0x0C (as defined in [ISO 7816-4]).
 
 **Since:** 10
 
@@ -714,14 +686,7 @@ function secureElementDemo() {
 openLogicalChannel(aid: number[], p2: number, callback: AsyncCallback<Channel>): void
 ```
 
-Open a logical channel with the SE, selecting the applet represented by the given AID (when the AID is not
-Null and the length of the AID is not 0).
-If the length of the AID is 0, the method will select the Issuer Security Domain of the SE by sending a SELECT
-command with 0 length AID as defined in [GPCS].
-If the AID is Null, the method SHALL only send a MANAGE CHANNEL Open and SHALL NOT send a
-SELECT command. In this case, the default applet associated to the logical channel will be selected by default.
-P2 is normally 0x00. The device SHOULD allow any value for P2 and SHALL allow the following values:
-0x00, 0x04, 0x08, 0x0C (as defined in [ISO 7816-4]).
+Open a logical channel with the SE, selecting the applet represented by the given AID (when the AID is not Null and the length of the AID is not 0). If the length of the AID is 0, the method will select the Issuer Security Domain of the SE by sending a SELECT command with 0 length AID as defined in [GPCS]. If the AID is Null, the method SHALL only send a MANAGE CHANNEL Open and SHALL NOT send a SELECT command. In this case, the default applet associated to the logical channel will be selected by default. P2 is normally 0x00. The device SHOULD allow any value for P2 and SHALL allow the following values: 0x00, 0x04, 0x08, 0x0C (as defined in [ISO 7816-4]).
 
 **Since:** 10
 

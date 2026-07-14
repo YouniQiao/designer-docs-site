@@ -1,6 +1,6 @@
 # FileAsset (System API)
 
-Provides methods to encapsulate file attributes.
+Provides APIs for encapsulating file asset attributes.
 
 **Since:** 9
 
@@ -24,7 +24,7 @@ import { userFileManager } from '@kit.CoreFileKit';
 close(fd: number, callback: AsyncCallback<void>): void
 ```
 
-Close the file is located.
+Closes a file. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -40,8 +40,8 @@ Close the file is located.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| fd | number | Yes | Fd of the file which had been opened |
-| callback | AsyncCallback&lt;void&gt; | Yes | No value will be returned. |
+| fd | number | Yes | File descriptor of the file to close. |
+| callback | AsyncCallback&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Example**
 
@@ -82,7 +82,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 close(fd: number): Promise<void>
 ```
 
-Close the file is located.
+Closes this file. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -98,13 +98,13 @@ Close the file is located.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| fd | number | Yes | Fd of the file which had been opened |
+| fd | number | Yes | File descriptor of the file to close. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Return promise |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 
@@ -140,7 +140,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 commitModify(callback: AsyncCallback<void>): void
 ```
 
-Modify meta data where the file is located.
+Commits the modification on the file metadata to the database. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -158,7 +158,7 @@ Modify meta data where the file is located.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void&gt; | Yes | No value will be returned. |
+| callback | AsyncCallback&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Example**
 
@@ -200,7 +200,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 commitModify(): Promise<void>
 ```
 
-Modify meta data where the file is located.
+Commits the modification on the file metadata to the database. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -218,7 +218,7 @@ Modify meta data where the file is located.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Return promise |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 
@@ -259,7 +259,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 favorite(isFavorite: boolean, callback: AsyncCallback<void>): void
 ```
 
-Set favorite for the file when the file is located.
+Favorites or unfavorites a file. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -277,8 +277,8 @@ Set favorite for the file when the file is located.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| isFavorite | boolean | Yes | True is favorite file, false is not favorite file |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return, No value is returned. |
+| isFavorite | boolean | Yes | Whether to favorite or unfavorite the file. The value **true** means to favoritethe file; the value **false** means the opposite. |
+| callback | AsyncCallback&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Example**
 
@@ -313,7 +313,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 favorite(isFavorite: boolean): Promise<void>
 ```
 
-Set favorite for the file when the file is located.
+Favorites or unfavorites this file asset. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -331,13 +331,13 @@ Set favorite for the file when the file is located.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| isFavorite | boolean | Yes | isFavorite True is favorite file, false is not favorite file |
+| isFavorite | boolean | Yes | Whether to favorite or unfavorite the file. The value **true** means to favoritethe file; the value **false** means the opposite. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Return promise |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 
@@ -371,7 +371,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 get(member: string): MemberType
 ```
 
-Return the fileAsset member parameter.
+Obtains the value of a **FileAsset** parameter.
 
 **Since:** 9
 
@@ -387,13 +387,13 @@ Return the fileAsset member parameter.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| member | string | Yes | The name of the parameter. for example : get(ImageVideoKey.URI) |
+| member | string | Yes | Member parameter name, for example, **ImageVideoKey.DISPLAY_NAME**. You need to set**PhotoKeys** to be obtained in **fetchColumns** for all attributes except **uri**, **photoType**, and**displayName**. For example, **fetchColumns: ['title']**. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| MemberType | @syscap SystemCapability.FileManagement.UserFileManager.Core@systemapi |
+| MemberType | Returns the member parameter. |
 
 **Example**
 
@@ -428,7 +428,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 getExif(callback: AsyncCallback<string>): void
 ```
 
-Get exif info of the asset.
+Obtains the EXIF data from a JPG image and returns a JSON string. This API uses an asynchronous callback to return the result. For details about the EXIF tags, see [image.PropertyKey](../../apis-image-kit/arkts-apis/arkts-image-propertykey-e.md). | Key Value | Description | | --------------------------------------- | ----------------- | | BitsPerSample | Number of bits per sample.| | Orientation | Image orientation.| | ImageLength | Image length.| | ImageWidth | Image width.| | GPSLatitude | GPS latitude of the image.| | GPSLongitude | GPS longitude of the image.| | GPSLatitudeRef | Longitude reference, for example, W or E.| | GPSLongitudeRef | Latitude reference, for example, N or S.| | DateTimeOriginal | Shooting time.| | ExposureTime | Exposure time.| | SceneType | Scene type.| | ISOSpeedRatings | ISO sensitivity or speed.| | FNumber | f-number.| | DateTime | Modification time.| | GPSTimeStamp | GPS timestamp.| | GPSDateStamp | GPS date stamp.| | ImageDescription | Image description.| | Make | Manufacturer.| | MakeNote | Manufacturer.| | Model | Model.| | PhotoMode | Photo mode.| | SensitivityType | Sensitivity type.| | StandardOutputSensitivity | Standard output sensitivity.| | RecommendedExposureIndex | Recommended exposure index.| | ApertureValue | Aperture value.| | MeteringMode | Metering mode.| | LightSource | Light source.| | Flash | Flash status.| | FocalLength | Focal length.| | UserComment | User comments.| | PixelXDimension | Pixel X dimension.| | PixelYDimension | Pixel Y dimension.| | WhiteBalance | White balance.| | FocalLengthIn35mmFilm | Focal length in 35 mm film.| | ExposureBiasValue | Exposure compensation.| > **NOTE** > > This API returns a JSON string that contains EXIF tags. The complete Exif information consists of all_exif and > [ImageVideoKey](arkts-corefile-imagevideokey-e-sys.md).USER_COMMENT. The two fields need to be passed to > **fetchColumns**.
 
 **Since:** 10
 
@@ -446,7 +446,7 @@ Get exif info of the asset.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;string&gt; | Yes | Returns exif info into a json string |
+| callback | AsyncCallback&lt;string&gt; | Yes | Callback that returns the EXIF data, in JSON strings. |
 
 **Error codes:**
 
@@ -501,7 +501,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 getExif(): Promise<string>
 ```
 
-Get exif info of the asset.
+Obtains the EXIF data from a JPG image and returns a JSON string. This API uses a promise to return the result. For details about the EXIF tags, see [image.PropertyKey](../../apis-image-kit/arkts-apis/arkts-image-propertykey-e.md). | Key Value | Description | | --------------------------------------- | ----------------- | | BitsPerSample | Number of bits per sample.| | Orientation | Image orientation.| | ImageLength | Image length.| | ImageWidth | Image width.| | GPSLatitude | GPS latitude of the image.| | GPSLongitude | GPS longitude of the image.| | GPSLatitudeRef | Longitude reference, for example, W or E.| | GPSLongitudeRef | Latitude reference, for example, N or S.| | DateTimeOriginal | Shooting time.| | ExposureTime | Exposure time.| | SceneType | Scene type.| | ISOSpeedRatings | ISO sensitivity or speed.| | FNumber | f-number.| | DateTime | Modification time.| | GPSTimeStamp | GPS timestamp.| | GPSDateStamp | GPS date stamp.| | ImageDescription | Image description.| | Make | Manufacturer.| | MakeNote | Manufacturer.| | Model | Model.| | PhotoMode | Photo mode.| | SensitivityType | Sensitivity type.| | StandardOutputSensitivity | Standard output sensitivity.| | RecommendedExposureIndex | Recommended exposure index.| | ApertureValue | Aperture value.| | MeteringMode | Metering mode.| | LightSource | Light source.| | Flash | Flash status.| | FocalLength | Focal length.| | UserComment | User comments.| | PixelXDimension | Pixel X dimension.| | PixelYDimension | Pixel Y dimension.| | WhiteBalance | White balance.| | FocalLengthIn35mmFilm | Focal length in 35 mm film.| | ExposureBiasValue | Exposure compensation.| > **NOTE** > > This API returns a JSON string that contains EXIF tags. The complete Exif information consists of all_exif and > [ImageVideoKey](arkts-corefile-imagevideokey-e-sys.md).USER_COMMENT. The two fields need to be passed to > **fetchColumns**.
 
 **Since:** 10
 
@@ -519,7 +519,7 @@ Get exif info of the asset.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;string&gt; | Returns exif info into a json string |
+| Promise&lt;string&gt; | Promise that returns the EXIF data, in JSON strings. |
 
 **Error codes:**
 
@@ -564,7 +564,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 getThumbnail(callback: AsyncCallback<image.PixelMap>): void
 ```
 
-Get thumbnail of the file when the file is located.
+Obtains the thumbnail of a file. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -582,7 +582,7 @@ Get thumbnail of the file when the file is located.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;image.PixelMap&gt; | Yes | Callback used to return the thumbnail's pixelMap. |
+| callback | AsyncCallback&lt;image.PixelMap&gt; | Yes | Callback used to return the PixelMap of the thumbnail. |
 
 **Example**
 
@@ -618,7 +618,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 getThumbnail(size: image.Size, callback: AsyncCallback<image.PixelMap>): void
 ```
 
-Get thumbnail of the file when the file is located.
+Obtains the file thumbnail of the given size. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -636,8 +636,8 @@ Get thumbnail of the file when the file is located.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| size | image.Size | Yes | Thumbnail's size |
-| callback | AsyncCallback&lt;image.PixelMap&gt; | Yes | Callback used to return the thumbnail's pixelMap. |
+| size | image.Size | Yes | Size of the thumbnail. |
+| callback | AsyncCallback&lt;image.PixelMap&gt; | Yes | Callback used to return the PixelMap of the thumbnail. |
 
 **Example**
 
@@ -675,7 +675,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 getThumbnail(size?: image.Size): Promise<image.PixelMap>
 ```
 
-Get thumbnail of the file when the file is located.
+Obtains the file thumbnail of the given size. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -693,13 +693,13 @@ Get thumbnail of the file when the file is located.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| size | image.Size | No | Thumbnail's size |
+| size | image.Size | No | Size of the thumbnail. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;image.PixelMap&gt; | Return promise |
+| Promise&lt;image.PixelMap&gt; | Promise that returns the PixelMap of the thumbnail. |
 
 **Example**
 
@@ -736,7 +736,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 open(mode: string, callback: AsyncCallback<number>): void
 ```
 
-Open local file.
+Opens this file asset. This API uses an asynchronous callback to return the result. > **NOTE** > > The write operations are mutually exclusive. After a write operation is complete, you must call **close** to > close the file.
 
 **Since:** 9
 
@@ -754,8 +754,8 @@ Open local file.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| mode | string | Yes | Mode for open, for example: rw, r, w. |
-| callback | AsyncCallback&lt;number&gt; | Yes | Callback return the fd of the file. |
+| mode | string | Yes | Mode of opening the file, for example, **'r'** (read-only), **'w'** (write-only), and**'rw'** (read-write). |
+| callback | AsyncCallback&lt;number&gt; | Yes | Callback used to return the file descriptor of the file opened. |
 
 **Example**
 
@@ -784,7 +784,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 open(mode: string): Promise<number>
 ```
 
-Open local file.
+Opens this file asset. This API uses a promise to return the result. > **NOTE** > > The write operations are mutually exclusive. After a write operation is complete, you must call **close** to > close the file.
 
 **Since:** 9
 
@@ -802,13 +802,13 @@ Open local file.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| mode | string | Yes | Mode for open, for example: rw, r, w. |
+| mode | string | Yes | File open mode, which can be **r** (read-only), **w** (write-only), or **rw** (read-write). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;number&gt; | Return promise |
+| Promise&lt;number&gt; | Promise that returns the file descriptor of the file opened. |
 
 **Example**
 
@@ -840,7 +840,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 set(member: string, value: string): void
 ```
 
-Set the fileAsset member parameter.
+Sets a **FileAsset** parameter.
 
 **Since:** 9
 
@@ -856,8 +856,8 @@ Set the fileAsset member parameter.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| member | string | Yes | The name of the parameter |
-| value | string | Yes | The value of the parameter. |
+| member | string | Yes | Member parameter name, for example, **ImageVideoKey.DISPLAY_NAME**. |
+| value | string | Yes | Value to set. Only the values of **DISPLAY_NAME** and **TITLE** can be changed. |
 
 **Example**
 
@@ -891,7 +891,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 setHidden(hiddenState: boolean, callback: AsyncCallback<void>): void
 ```
 
-Set file hidden state.
+Sets a file to hidden state. This API uses an asynchronous callback to return the result. The private files set to hidden state are located in the private album (in hidden state) and are not open to third-party applications. After obtaining private files from the private album, users can set **hiddenState** to **false** to remove them from the private album.
 
 **Since:** 10
 
@@ -909,8 +909,8 @@ Set file hidden state.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| hiddenState | boolean | Yes | true: Put the asset into hidden album; false: Recover the asset from hidden album. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Return void. |
+| hiddenState | boolean | Yes | Whether to hide the file. The value **true** means to hide the file; the value**false** means the opposite. |
+| callback | AsyncCallback&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Error codes:**
 
@@ -952,7 +952,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 setHidden(hiddenState: boolean): Promise<void>
 ```
 
-Set file hidden state.
+Sets this file asset to the hidden state. This API uses a promise to return the result. The private files set to hidden state are located in the private album (in hidden state) and are not open to third-party applications. After obtaining private files from the private album, users can set **hiddenState** to **false** to remove them from the private album.
 
 **Since:** 10
 
@@ -970,13 +970,13 @@ Set file hidden state.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| hiddenState | boolean | Yes | true: Put the asset into hidden album; false: Recover the asset from hidden album. |
+| hiddenState | boolean | Yes | Whether to hide the file. The value **true** means to hide the file; the value**false** means the opposite. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Returns the promise |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1020,7 +1020,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 setUserComment(userComment: string, callback: AsyncCallback<void>): void
 ```
 
-Set user comment info to the asset.
+Sets user comment information of an image or video. This API uses an asynchronous callback to return the result. > **NOTE** > > This API can only be used to set user comment information of an image or video.
 
 **Since:** 10
 
@@ -1038,15 +1038,15 @@ Set user comment info to the asset.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| userComment | string | Yes | user comment info |
-| callback | AsyncCallback&lt;void&gt; | Yes | Returns void. |
+| userComment | string | Yes | User comment information to set, which cannot exceed 140 characters. |
+| callback | AsyncCallback&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 
 **Example**
 
@@ -1086,7 +1086,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 setUserComment(userComment: string): Promise<void>
 ```
 
-Set user comment info to the asset.
+Sets user comment information of an image or video. This API uses a promise to return the result. > **NOTE** > > This API can only be used to set user comment information of an image or video.
 
 **Since:** 10
 
@@ -1104,20 +1104,20 @@ Set user comment info to the asset.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| userComment | string | Yes | user comment info |
+| userComment | string | Yes | User comment information to set, which cannot exceed 140 characters. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Returns void |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 
 **Example**
 
@@ -1151,7 +1151,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 displayName: string
 ```
 
-Display name (with a file name extension) of the file.
+File name, including the file name extension, to display.
 
 **Type:** string
 
@@ -1171,7 +1171,7 @@ Display name (with a file name extension) of the file.
 readonly fileType: FileType
 ```
 
-File type, for example, IMAGE, VIDEO, AUDIO
+Type of the file.
 
 **Type:** FileType
 
@@ -1179,7 +1179,7 @@ File type, for example, IMAGE, VIDEO, AUDIO
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** PhotoType
+**Substitutes:** [photoType](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoasset-i.md#phototype)
 
 **System capability:** SystemCapability.FileManagement.UserFileManager.Core
 
@@ -1191,7 +1191,7 @@ File type, for example, IMAGE, VIDEO, AUDIO
 readonly uri: string
 ```
 
-URI of the file.
+Media asset URI, for example, **file://media/Photo/1/IMG_datetime_0001/displayName.jpg**. For details, see [Media File URI](../../../../file-management/user-file-uri-intro.md#media-file-uri).
 
 **Type:** string
 

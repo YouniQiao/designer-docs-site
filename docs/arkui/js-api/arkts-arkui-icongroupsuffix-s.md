@@ -1,11 +1,6 @@
 # IconGroupSuffix
 
-The **ChipGroup** component provides a set of chips for organizing and categorizing files or resource content.
-
-> **NOTE**
->
-> With **SymbolGlyphModifier**, neither modifying the animation type with **symbolEffect** nor setting the effect
-> strategy with [effectStrategy](SymbolGlyphAttribute#effectStrategy) is supported.
+The **ChipGroup** component provides a set of chips for organizing and categorizing files or resource content. > **NOTE** > > With **SymbolGlyphModifier**, neither modifying the animation type with **symbolEffect** nor setting the effect > strategy with [effectStrategy](SymbolGlyphAttribute#effectStrategy) is supported.
 
 **Since:** 12
 
@@ -23,8 +18,7 @@ import { ChipItemLabelOptions, ChipGroupSpaceOptions, SymbolItemOptions, SuffixI
 iconBackgroundSystemMaterial?: uiMaterial.Material
 ```
 
-Set system-styled materials for the component. Different materials have different effects, which can influence
-the backgroundColor, border, shadow, and other visual attributes of the component.
+Set system-styled materials for the component. Different materials have different effects, which can influence the backgroundColor, border, shadow, and other visual attributes of the component.
 
 **Type:** uiMaterial.Material
 

@@ -12,8 +12,7 @@ import { inputDevice } from '@kit.InputKit';
 function getIntervalSinceLastInput(): Promise<number>
 ```
 
-Obtains the interval (including the device sleep time) elapsed since the last system input event. This API uses a
-promise to return the result.
+Obtains the interval (including the device sleep time) elapsed since the last system input event. This API uses a promise to return the result.
 
 **Since:** 14
 

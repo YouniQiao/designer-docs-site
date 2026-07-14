@@ -6,9 +6,7 @@
 function closeAccessory(accessoryHandle: USBAccessoryHandle): void
 ```
 
-关闭配件文件描述符。
-需要调用[usbManager.openAccessory](arkts-basicservices-openaccessory-f.md#openaccessory-1)获取配件列表，得到
-[USBAccessoryHandle](arkts-basicservices-usbaccessoryhandle-i.md)作为参数。
+关闭配件文件描述符。 需要调用[usbManager.openAccessory](arkts-basicservices-openaccessory-f.md#openaccessory-1)获取配件列表，得到 [USBAccessoryHandle](arkts-basicservices-usbaccessoryhandle-i.md)作为参数。
 
 **起始版本：** 14
 

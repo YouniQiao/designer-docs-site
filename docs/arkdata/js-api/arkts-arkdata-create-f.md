@@ -12,8 +12,7 @@ import { distributedDataObject } from '@kit.ArkData';
 function create(context: Context, source: object): DataObject
 ```
 
-Creates a distributed data object. The object properties support basic types (number, Boolean, and string) and
-complex types (array and nested basic types).
+Creates a distributed data object. The object properties support basic types (number, Boolean, and string) and complex types (array and nested basic types).
 
 **Since:** 9
 
@@ -43,24 +42,24 @@ complex types (array and nested basic types).
 FA model:
 
 ```TypeScript
+
 // Import the module.
 import { featureAbility } from '@kit.AbilityKit';
-import { BusinessError } from '@kit.BasicServicesKit';
 // Obtain the context.
 let context = featureAbility.getContext();
 class SourceObject {
-    name: string
-    age: number
-    isVis: boolean
+  name: string
+  age: number
+  isVis: boolean
 
-    constructor(name: string, age: number, isVis: boolean) {
-        this.name = name;
-        this.age = age;
-        this.isVis = isVis;
-    }
+  constructor(name: string, age: number, isVis: boolean) {
+    this.name = name;
+    this.age = age;
+    this.isVis = isVis;
+  }
 }
 
-let source: SourceObject = new SourceObject("jack", 18, false);
+let source: SourceObject = new SourceObject('jack', 18, false);
 let g_object: distributedDataObject.DataObject = distributedDataObject.create(context, source);
 
 ```
@@ -74,23 +73,24 @@ import { BusinessError } from '@kit.BasicServicesKit';
 import { window } from '@kit.ArkUI';
 
 let g_object: distributedDataObject.DataObject|null = null;
-class SourceObject {
-    name: string
-    age: number
-    isVis: boolean
 
-    constructor(name: string, age: number, isVis: boolean) {
-        this.name = name;
-        this.age = age;
-        this.isVis = isVis;
-    }
+class SourceObject {
+  name: string
+  age: number
+  isVis: boolean
+
+  constructor(name: string, age: number, isVis: boolean) {
+    this.name = name;
+    this.age = age;
+    this.isVis = isVis;
+  }
 }
 
 class EntryAbility extends UIAbility {
-    onWindowStageCreate(windowStage: window.WindowStage) {
-        let source: SourceObject = new SourceObject("jack", 18, false);
-        g_object = distributedDataObject.create(this.context, source);
-    }
+  onWindowStageCreate(windowStage: window.WindowStage) {
+    let source: SourceObject = new SourceObject('jack', 18, false);
+    g_object = distributedDataObject.create(this.context, source);
+  }
 }
 
 ```

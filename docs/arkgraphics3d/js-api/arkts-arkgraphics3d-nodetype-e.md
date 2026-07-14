@@ -60,8 +60,7 @@ The node is a light node.
 CUSTOM = 255
 ```
 
-The node is of custom type.
-Usually this means that the node is of a type defined in an extension plugin.
+The node is of custom type. Usually this means that the node is of a type defined in an extension plugin.
 
 **Since:** 21
 

@@ -6,8 +6,7 @@
 function generateKeyItemAsUser(userId: number, keyAlias: string, huksOptions: HuksOptions): Promise<void>
 ```
 
-指定用户身份生成密钥，使用Promise方式异步返回结果。基于密钥不出[TEE](../../../../security/UniversalKeystoreKit/huks-concepts.md#可信执行环境tee)原则，通过
-promise不会返回密钥材料内容，只用于表示此次调用是否成功。
+指定用户身份生成密钥，使用Promise方式异步返回结果。基于密钥不出[TEE](../../../../security/UniversalKeystoreKit/huks-concepts.md#可信执行环境tee)原则，通过 promise不会返回密钥材料内容，只用于表示此次调用是否成功。
 
 **起始版本：** 12
 

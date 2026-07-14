@@ -12,13 +12,7 @@ import { screenLockFileManager } from '@kit.AbilityKit';
 function releaseAccess(dataType: DataType): ReleaseStatus
 ```
 
-Releases the permission to access a specified type of sensitive data under the lock screen synchronously. After the
-release is successful, the reference count of the sensitive data key decreases. When the reference count reaches
-zero, the key can be destroyed after the screen has been locked for the system-configured duration threshold.
-
-Before calling this API, ensure that the app has enabled the sensitive data protection under lock screen feature
-and that the permission has been successfully requested by calling the
-[acquireAccess](arkts-ability-acquireaccess-f.md#acquireaccess-1) API first.
+Releases the permission to access a specified type of sensitive data under the lock screen synchronously. After the release is successful, the reference count of the sensitive data key decreases. When the reference count reaches zero, the key can be destroyed after the screen has been locked for the system-configured duration threshold. Before calling this API, ensure that the app has enabled the sensitive data protection under lock screen feature and that the permission has been successfully requested by calling the [acquireAccess](arkts-ability-acquireaccess-f.md#acquireaccess-1) API first.
 
 **Since:** 12
 

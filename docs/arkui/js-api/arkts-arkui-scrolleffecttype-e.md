@@ -12,8 +12,7 @@ Enumerates the scroll effect types.
 COMMON_BLUR = 0
 ```
 
-Common blur style. It applies uniform blur to the background.
-The blurred background appear/disappear with transparent gradient.
+Common blur style. It applies uniform blur to the background. The blurred background appear/disappear with transparent gradient.
 
 **Since:** 26.0.0
 
@@ -29,9 +28,7 @@ The blurred background appear/disappear with transparent gradient.
 GRADUAL_BLUR = 1
 ```
 
-Gradual blur style. It applies uniform blur to the title background with clear boundaries.
-The title bar content changes color/state before and after scrolling.
-During scrolling, it changes linearly following the gesture.
+Gradual blur style. It applies uniform blur to the title background with clear boundaries. The title bar content changes color/state before and after scrolling. During scrolling, it changes linearly following the gesture.
 
 **Since:** 26.0.0
 

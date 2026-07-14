@@ -134,8 +134,7 @@ struct Index {
 protect(socketFd: number, callback: AsyncCallback<void>): void
 ```
 
-Protect a socket from VPN connections. After protecting, data sent through this socket will go directly to the
-underlying network so its traffic will not be forwarded through the VPN.
+Protect a socket from VPN connections. After protecting, data sent through this socket will go directly to the underlying network so its traffic will not be forwarded through the VPN.
 
 **Since:** 10
 
@@ -212,8 +211,7 @@ struct Index {
 protect(socketFd: number): Promise<void>
 ```
 
-Protect a socket from VPN connections. After protecting, data sent through this socket will go directly to the
-underlying network so its traffic will not be forwarded through the VPN.
+Protect a socket from VPN connections. After protecting, data sent through this socket will go directly to the underlying network so its traffic will not be forwarded through the VPN.
 
 **Since:** 10
 

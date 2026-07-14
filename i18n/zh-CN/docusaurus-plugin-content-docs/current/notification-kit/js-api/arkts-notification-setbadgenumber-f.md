@@ -12,7 +12,7 @@ import { notificationManager } from '@kit.NotificationKit';
 function setBadgeNumber(badgeNumber: number, callback: AsyncCallback<void>): void
 ```
 
-设定角标个数，在应用的桌面图标上呈现。使用callback异步回调。
+设定角标个数，在应用的桌面图标上呈现。使用callback异步回调。 角标是应用桌面图标右上角显示的数字标识，用于提示用户有未处理的通知数量。 设定后，桌面图标将显示对应角标数字。适用于需要在桌面图标上提示用户 待处理消息数量的场景，如未读消息数、待办事项数等。
 
 **起始版本：** 10
 
@@ -60,7 +60,7 @@ notificationManager.setBadgeNumber(badgeNumber, setBadgeNumberCallback);
 function setBadgeNumber(badgeNumber: number): Promise<void>
 ```
 
-设定角标个数，在应用的桌面图标上呈现。使用Promise异步回调。
+设定角标个数，在应用的桌面图标上呈现。使用Promise异步回调。 角标是应用桌面图标右上角显示的数字标识，用于提示用户有未处理的通知数量。 设定后，桌面图标将显示对应角标数字。适用于需要在桌面图标上提示用户 待处理消息数量的场景，如未读消息数、待办事项数等。
 
 **起始版本：** 10
 

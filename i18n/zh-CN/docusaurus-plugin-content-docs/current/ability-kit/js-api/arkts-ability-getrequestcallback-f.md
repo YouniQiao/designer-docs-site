@@ -6,12 +6,7 @@
 function getRequestCallback(want: Want): RequestCallback
 ```
 
-从Want中获取请求方的RequestCallback。
-
-> **说明：**
->
-> 该接口可以在ServiceExtensionAbility下使用，如果ServiceExtensionAbility实现了模态弹框，则能从Want中获取请求方的RequestCallback。其他场景使用该接口，均无法获取返回
-> 值。
+从Want中获取请求方的RequestCallback。 > **说明：** > > 该接口可以在ServiceExtensionAbility下使用，如果ServiceExtensionAbility实现了模态弹框，则能从Want中获取请求方的RequestCallback。其他场景使用该接口，均无法获取返回 > 值。
 
 **起始版本：** 9
 
@@ -43,9 +38,10 @@ import { AbilityConstant, UIAbility, Want, dialogRequest } from '@kit.AbilityKit
 export default class EntryAbility extends UIAbility {
   onCreate(want: Want, launchParam: AbilityConstant.LaunchParam): void {
     try {
+      // 获取请求方的RequestCallback
       let requestCallback = dialogRequest.getRequestCallback(want);
-    } catch(err) {
-      console.error(`getRequestInfo err= ${JSON.stringify(err)}`);
+    } catch (err) {
+      console.error(`Failed to getRequestCallback. Code: ${err.code}, message: ${err.message}`);
     }
   }
 }

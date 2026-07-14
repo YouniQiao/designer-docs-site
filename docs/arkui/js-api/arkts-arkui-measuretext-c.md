@@ -18,19 +18,7 @@ import { MeasureOptions } from '@kit.ArkUI';
 static measureText(options: MeasureOptions): number
 ```
 
-Measures the single-line display width of the specified text. For multi-line text (separated by newline characters
-**\n**), this API returns the width of the longest line.
-
-> **NOTE**
->
-> - Since API version 12, you can use the
-> [getMeasureUtils](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getmeasureutils12) API in
-> [UIContext](arkts-arkui-uicontext.md) to obtain the [MeasureUtils](arkts-arkui-uicontext.md) object
-> associated with the current UI context.
->
-> - **measureText** always measures single-line text width. Layout constraints in **options** (**constraintWidth**,
-> **maxLines**, and more) do not affect results. For layout-constrained width measurement, use
-> [measureTextSize](../../../../reference/apis-arkui/arkts-apis-uicontext-measureutils.md#measuretextsize12).
+Measures the single-line display width of the specified text. For multi-line text (separated by newline characters **\n**), this API returns the width of the longest line. > **NOTE** > > - Since API version 12, you can use the > [getMeasureUtils](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getmeasureutils12) API in > [UIContext](arkts-arkui-uicontext.md) to obtain the [MeasureUtils](arkts-arkui-uicontext.md) object > associated with the current UI context. > > - **measureText** always measures single-line text width. Layout constraints in **options** (**constraintWidth**, > **maxLines**, and more) do not affect results. For layout-constrained width measurement, use > [measureTextSize](../../../../reference/apis-arkui/arkts-apis-uicontext-measureutils.md#measuretextsize12).
 
 **Since:** 9
 
@@ -87,14 +75,7 @@ struct Index {
 static measureTextSize(options: MeasureOptions): SizeOptions
 ```
 
-Measures the width and height of the given text.
-
-> **NOTE**
->
-> - Since API version 12, you can use the
-> [getMeasureUtils](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getmeasureutils12) API in
-> [UIContext](arkts-arkui-uicontext.md) to obtain the [MeasureUtils](arkts-arkui-uicontext.md) object
-> associated with the current UI context.
+Measures the width and height of the given text. > **NOTE** > > - Since API version 12, you can use the > [getMeasureUtils](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getmeasureutils12) API in > [UIContext](arkts-arkui-uicontext.md) to obtain the [MeasureUtils](arkts-arkui-uicontext.md) object > associated with the current UI context.
 
 **Since:** 10
 

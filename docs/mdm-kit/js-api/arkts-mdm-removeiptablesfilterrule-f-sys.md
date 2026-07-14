@@ -12,8 +12,7 @@ import { networkManager } from '@kit.MDMKit';
 function removeIptablesFilterRule(admin: Want, filterRule: RemoveFilterRule, callback: AsyncCallback<void>): void
 ```
 
-Removes the network packet filtering rule. Only IPv4 is supported. This API uses an asynchronous callback to return
-the result.
+Removes the network packet filtering rule. Only IPv4 is supported. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 

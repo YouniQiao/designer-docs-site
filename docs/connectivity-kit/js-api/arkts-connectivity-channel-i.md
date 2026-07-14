@@ -18,8 +18,7 @@ import { omapi } from '@kit.ConnectivityKit';
 close(): void
 ```
 
-Closes this channel to the SE.
-If the method is called when the channel is already closed, this method SHALL be ignored.
+Closes this channel to the SE. If the method is called when the channel is already closed, this method SHALL be ignored.
 
 **Since:** 10
 
@@ -54,8 +53,7 @@ try {
 getSelectResponse(): number[]
 ```
 
-Returns the data as received from the application select command, including the status word received
-at applet selection.
+Returns the data as received from the application select command, including the status word received at applet selection.
 
 **Since:** 10
 

@@ -12,8 +12,7 @@ import { radio } from '@kit.TelephonyKit';
 function on(type: 'imsRegStateChange', slotId: number, imsType: ImsServiceType, callback: Callback<ImsRegInfo>): void
 ```
 
-Called when the IMS registration state of specified IMS service type corresponding to
-a monitored {@code slotId} updates.
+Called when the IMS registration state of specified IMS service type corresponding to a monitored {@code slotId} updates.
 
 **Since:** 9
 

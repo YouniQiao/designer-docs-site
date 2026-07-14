@@ -1,7 +1,6 @@
 # DeviceFlag
 
-Defines the values of **deviceFlags** used in **RootInfo**. **deviceFlags** is used to determine whether a
-capability is available through the AND operation.
+Defines the values of **deviceFlags** used in **RootInfo**. **deviceFlags** is used to determine whether a capability is available through the AND operation.
 
 **Since:** 9
 

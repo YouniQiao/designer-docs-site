@@ -18,8 +18,7 @@ import { display } from '@kit.ArkUI';
 readonly brightnessPosition?: number
 ```
 
-Position of the brightness bar corresponding to the current screen brightness.
-Value range: [0.0,1.0]. Default value: 0.0.
+Position of the brightness bar corresponding to the current screen brightness. Value range: [0.0,1.0]. Default value: 0.0.
 
 **Type:** number
 

@@ -12,12 +12,7 @@ import { audio } from '@kit.AudioKit';
 function createMicInAudioCapturer(config: AudioCapturerMicInConfig): Promise<AudioCapturer | null>
 ```
 
-Obtains a special {@link #AudioCapturer} instance. This method uses a promise to return the capturer instance.
-This capture can be used to record both Mic-In audio data and echo reference signal, for application to
-process algorithm.
-Mic-In audio data and echo reference signal will be put in one buffer or multiple buffers according to
-configuration set by application.
-Capturer is also not allowed to be created when application is in background.
+Obtains a special {@link #AudioCapturer} instance. This method uses a promise to return the capturer instance. This capture can be used to record both Mic-In audio data and echo reference signal, for application to process algorithm. Mic-In audio data and echo reference signal will be put in one buffer or multiple buffers according to configuration set by application. Capturer is also not allowed to be created when application is in background.
 
 **Since:** 23
 

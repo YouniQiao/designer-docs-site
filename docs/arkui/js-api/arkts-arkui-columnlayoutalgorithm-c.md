@@ -1,13 +1,6 @@
 # ColumnLayoutAlgorithm
 
-Vertical linear layout algorithm class.
-
-> **NOTE**
->
-> The object of the **ColumnLayoutAlgorithm** class can be assigned to a variable of the **LayoutAlgorithm** type as
-> the input parameter of the
-> [DynamicLayout](../../../../reference/apis-arkui/arkui-ts/ts-container-dynamiclayout.md) component to specify the
-> layout algorithm.
+Vertical linear layout algorithm class. > **NOTE** > > The object of the **ColumnLayoutAlgorithm** class can be assigned to a variable of the **LayoutAlgorithm** type as > the input parameter of the > [DynamicLayout](../../../../reference/apis-arkui/arkui-ts/ts-container-dynamiclayout.md) component to specify the > layout algorithm.
 
 **Inheritance/Implementation:** ColumnLayoutAlgorithm implements [LayoutAlgorithm](arkts-arkui-layoutalgorithm-i.md)
 
@@ -45,11 +38,7 @@ Constructs the vertical linear layout algorithm class.
 @Trace public alignItems?: HorizontalAlign
 ```
 
-Horizontal alignment mode of all child components.
-
-Default value: **HorizontalAlign.Center**
-
-Invalid values are treated as the default value.
+Horizontal alignment mode of all child components. Default value: **HorizontalAlign.Center** Invalid values are treated as the default value.
 
 **Type:** HorizontalAlign
 
@@ -69,13 +58,7 @@ Invalid values are treated as the default value.
 @Trace public isReverse?: boolean
 ```
 
-Whether to reverse the vertical arrangement of child components. **true** indicates to reverse the vertical
-arrangement of child components. **false** indicates to arrange child components in the vertical direction in
-normal order.
-
-Default value: **false**
-
-Invalid values are treated as the default value.
+Whether to reverse the vertical arrangement of child components. **true** indicates to reverse the vertical arrangement of child components. **false** indicates to arrange child components in the vertical direction in normal order. Default value: **false** Invalid values are treated as the default value.
 
 **Type:** boolean
 
@@ -95,11 +78,7 @@ Invalid values are treated as the default value.
 @Trace public justifyContent?: FlexAlign
 ```
 
-Vertical alignment mode of all child components.
-
-Default value: **FlexAlign.Start**
-
-Invalid values are treated as the default value.
+Vertical alignment mode of all child components. Default value: **FlexAlign.Start** Invalid values are treated as the default value.
 
 **Type:** FlexAlign
 
@@ -119,11 +98,7 @@ Invalid values are treated as the default value.
 @Trace public space?: LengthMetrics
 ```
 
-Vertical spacing between elements in a vertical layout.
-
-Default value: **LengthMetrics.vp(0)**
-
-Invalid values are treated as the default value.
+Vertical spacing between elements in a vertical layout. Default value: **LengthMetrics.vp(0)** Invalid values are treated as the default value.
 
 **Type:** LengthMetrics
 

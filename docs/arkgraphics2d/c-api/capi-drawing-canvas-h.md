@@ -517,7 +517,7 @@ Draws a PixelMap based on a mesh, where mesh vertices are evenly distributed acr
 
 | Type | Description |
 | -- | -- |
-| [OH_Drawing_ErrorCode](capi-drawing-error-code-h.md#oh_drawing_errorcode) | Returns one of the following result codes:<br> OH_DRAWING_SUCCESS if the operation is successful.<br> OH_DRAWING_ERROR_INCORRECT_PARAMETER if any of the parameters, such as cCanvas, pixelMap, and vertices<br> , is empty or the input parameter does not meet the value rule. |
+| OH_Drawing_ErrorCode | Returns one of the following result codes:<br> OH_DRAWING_SUCCESS if the operation is successful.<br> OH_DRAWING_ERROR_INCORRECT_PARAMETER if any of the parameters, such as cCanvas, pixelMap, and vertices<br> , is empty or the input parameter does not meet the value rule. |
 
 ### OH_Drawing_CanvasDrawPixelMapNine()
 
@@ -545,7 +545,7 @@ Splits a pixel map into nine sections using two horizontal and two vertical line
 
 | Type | Description |
 | -- | -- |
-| [OH_Drawing_ErrorCode](capi-drawing-error-code-h.md#oh_drawing_errorcode) | Returns one of the following result codes:<br> OH_DRAWING_SUCCESS if the operation is successful.<br> OH_DRAWING_ERROR_INVALID_PARAMETER if canvas, pixelMap, or dst is NULL. |
+| OH_Drawing_ErrorCode | Returns one of the following result codes:<br> OH_DRAWING_SUCCESS if the operation is successful.<br> OH_DRAWING_ERROR_INVALID_PARAMETER if canvas, pixelMap, or dst is NULL. |
 
 ### OH_Drawing_CanvasDrawPixelMapRect()
 
@@ -596,7 +596,7 @@ Draws a portion of a pixel map onto a specified area of the canvas.
 
 | Type | Description |
 | -- | -- |
-| [OH_Drawing_ErrorCode](capi-drawing-error-code-h.md#oh_drawing_errorcode) | Execution result.<br> OH_DRAWING_SUCCESS if the operation is successful.<br> OH_DRAWING_ERROR_INVALID_PARAMETER if canvas, pixelMap, or dst is NULL. |
+| OH_Drawing_ErrorCode | Execution result.<br> OH_DRAWING_SUCCESS if the operation is successful.<br> OH_DRAWING_ERROR_INVALID_PARAMETER if canvas, pixelMap, or dst is NULL. |
 
 ### OH_Drawing_CanvasDrawBackground()
 
@@ -659,7 +659,7 @@ Draws a point.
 
 | Type | Description |
 | -- | -- |
-| [OH_Drawing_ErrorCode](capi-drawing-error-code-h.md#oh_drawing_errorcode) | Returns one of the following result codes:<br> OH_DRAWING_SUCCESS if the operation is successful.<br> OH_DRAWING_ERROR_INVALID_PARAMETER if either canvas or point is NULL. |
+| OH_Drawing_ErrorCode | Returns one of the following result codes:<br> OH_DRAWING_SUCCESS if the operation is successful.<br> OH_DRAWING_ERROR_INVALID_PARAMETER if either canvas or point is NULL. |
 
 ### OH_Drawing_CanvasDrawPoints()
 
@@ -788,7 +788,7 @@ Fills the entire canvas with the specified color and blend mode.
 
 | Type | Description |
 | -- | -- |
-| [OH_Drawing_ErrorCode](capi-drawing-error-code-h.md#oh_drawing_errorcode) | Returns one of the following result codes:<br> OH_DRAWING_SUCCESS if the operation is successful.<br> OH_DRAWING_ERROR_INVALID_PARAMETER if canvas is NULL.<br> OH_DRAWING_ERROR_PARAMETER_OUT_OF_RANGE if blendMode is not set to one of the enumerated values. |
+| OH_Drawing_ErrorCode | Returns one of the following result codes:<br> OH_DRAWING_SUCCESS if the operation is successful.<br> OH_DRAWING_ERROR_INVALID_PARAMETER if canvas is NULL.<br> OH_DRAWING_ERROR_PARAMETER_OUT_OF_RANGE if blendMode is not set to one of the enumerated values. |
 
 ### OH_Drawing_CanvasDrawOval()
 
@@ -856,7 +856,7 @@ Draws an arc. It enables you to define the start angle, sweep angle, and whether
 
 | Type | Description |
 | -- | -- |
-| [OH_Drawing_ErrorCode](capi-drawing-error-code-h.md#oh_drawing_errorcode) | Returns one of the following result codes:<br> OH_DRAWING_SUCCESS if the operation is successful.<br> OH_DRAWING_ERROR_INVALID_PARAMETER if either canvas or rect is NULL. |
+| OH_Drawing_ErrorCode | Returns one of the following result codes:<br> OH_DRAWING_SUCCESS if the operation is successful.<br> OH_DRAWING_ERROR_INVALID_PARAMETER if either canvas or rect is NULL. |
 
 ### OH_Drawing_CanvasDrawRoundRect()
 
@@ -901,7 +901,7 @@ Draws two nested rounded rectangles. The outer rectangle boundary must contain t
 
 | Type | Description |
 | -- | -- |
-| [OH_Drawing_ErrorCode](capi-drawing-error-code-h.md#oh_drawing_errorcode) | Returns one of the following result codes:<br> OH_DRAWING_SUCCESS if the operation is successful.<br> OH_DRAWING_ERROR_INVALID_PARAMETER if canvas, outer, or inner is NULL. |
+| OH_Drawing_ErrorCode | Returns one of the following result codes:<br> OH_DRAWING_SUCCESS if the operation is successful.<br> OH_DRAWING_ERROR_INVALID_PARAMETER if canvas, outer, or inner is NULL. |
 
 ### OH_Drawing_CanvasDrawSingleCharacter()
 
@@ -929,7 +929,7 @@ Draws a single character. If the typeface of the current font does not support t
 
 | Type | Description |
 | -- | -- |
-| [OH_Drawing_ErrorCode](capi-drawing-error-code-h.md#oh_drawing_errorcode) | Returns one of the following result codes:<br> OH_DRAWING_SUCCESS if the operation is successful.<br> OH_DRAWING_ERROR_INVALID_PARAMETER if at least one of the parameters canvas, str, or font is NULL,<br> or the length of str is 0. |
+| OH_Drawing_ErrorCode | Returns one of the following result codes:<br> OH_DRAWING_SUCCESS if the operation is successful.<br> OH_DRAWING_ERROR_INVALID_PARAMETER if at least one of the parameters canvas, str, or font is NULL,<br> or the length of str is 0. |
 
 ### OH_Drawing_CanvasDrawSingleCharacterWithFeatures()
 
@@ -958,7 +958,7 @@ Draws a single character with font features. If the typeface of the current font
 
 | Type | Description |
 | -- | -- |
-| [OH_Drawing_ErrorCode](capi-drawing-error-code-h.md#oh_drawing_errorcode) | Execution result.<br> OH_DRAWING_SUCCESS if the operation is successful.<br> OH_DRAWING_ERROR_INVALID_PARAMETER if at least one of the parameters canvas, str, font, or <br> fontFeatures is NULL, or the length of str is 0. |
+| OH_Drawing_ErrorCode | Execution result.<br> OH_DRAWING_SUCCESS if the operation is successful.<br> OH_DRAWING_ERROR_INVALID_PARAMETER if at least one of the parameters canvas, str, font, or <br> fontFeatures is NULL, or the length of str is 0. |
 
 ### OH_Drawing_CanvasDrawTextBlob()
 
@@ -1011,7 +1011,7 @@ Draws the array of glyphs with specified font. Nothing is drawn if glyphCount is
 
 | Type | Description |
 | -- | -- |
-| [OH_Drawing_ErrorCode](capi-drawing-error-code-h.md#oh_drawing_errorcode) | Returns the error code.<br> Returns [OH_DRAWING_SUCCESS](capi-drawing-error-code-h.md#oh_drawing_errorcode) if the operation is successful.<br> Returns [OH_DRAWING_ERROR_INCORRECT_PARAMETER](capi-drawing-error-code-h.md#oh_drawing_errorcode) if any of canvas, glyphIds, positions and font is nullptr.<br> Returns [OH_DRAWING_ERROR_PARAMETER_OUT_OF_RANGE](capi-drawing-error-code-h.md#oh_drawing_errorcode) if glyphIdOffset or positionOffset is less than 0, or if<br> glyphIdCount is less than (glyphIdOffset + glyphCount) or positionCount is less than (positionOffset + glyphCount). |
+| OH_Drawing_ErrorCode | Returns the error code.<br> Returns [OH_DRAWING_SUCCESS](capi-drawing-error-code-h.md#oh_drawing_errorcode) if the operation is successful.<br> Returns [OH_DRAWING_ERROR_INCORRECT_PARAMETER](capi-drawing-error-code-h.md#oh_drawing_errorcode) if any of canvas, glyphIds, positions and font is nullptr.<br> Returns [OH_DRAWING_ERROR_PARAMETER_OUT_OF_RANGE](capi-drawing-error-code-h.md#oh_drawing_errorcode) if glyphIdOffset or positionOffset is less than 0, or if<br> glyphIdCount is less than (glyphIdOffset + glyphCount) or positionCount is less than (positionOffset + glyphCount). |
 
 ### OH_Drawing_CanvasClipRect()
 
@@ -1100,7 +1100,7 @@ Clips a rectangle.
 
 | Type | Description |
 | -- | -- |
-| [OH_Drawing_ErrorCode](capi-drawing-error-code-h.md#oh_drawing_errorcode) | Returns one of the following result codes:<br> OH_DRAWING_SUCCESS if the operation is successful.<br> OH_DRAWING_ERROR_INVALID_PARAMETER if either canvas or region is NULL.<br> OH_DRAWING_ERROR_PARAMETER_OUT_OF_RANGE if clipOp is not set to one of the enumerated values. |
+| OH_Drawing_ErrorCode | Returns one of the following result codes:<br> OH_DRAWING_SUCCESS if the operation is successful.<br> OH_DRAWING_ERROR_INVALID_PARAMETER if either canvas or region is NULL.<br> OH_DRAWING_ERROR_PARAMETER_OUT_OF_RANGE if clipOp is not set to one of the enumerated values. |
 
 ### OH_Drawing_CanvasRotate()
 
@@ -1394,7 +1394,7 @@ Reset the clip status.
 
 | Type | Description |
 | -- | -- |
-| [OH_Drawing_ErrorCode](capi-drawing-error-code-h.md#oh_drawing_errorcode) | Returns the error code.<br>         Returns [OH_DRAWING_SUCCESS](capi-drawing-error-code-h.md#oh_drawing_errorcode) if the operation is successful.<br>         Returns [OH_DRAWING_ERROR_INVALID_PARAMETER](capi-drawing-error-code-h.md#oh_drawing_errorcode) if canvas is nullptr. |
+| OH_Drawing_ErrorCode | Returns the error code.<br>         Returns [OH_DRAWING_SUCCESS](capi-drawing-error-code-h.md#oh_drawing_errorcode) if the operation is successful.<br>         Returns [OH_DRAWING_ERROR_INVALID_PARAMETER](capi-drawing-error-code-h.md#oh_drawing_errorcode) if canvas is nullptr. |
 
 ### OH_Drawing_CanvasDrawImageRectWithSrc()
 
@@ -1545,7 +1545,7 @@ Checks whether the region that can be drawn is empty after clipping.
 
 | Type | Description |
 | -- | -- |
-| [OH_Drawing_ErrorCode](capi-drawing-error-code-h.md#oh_drawing_errorcode) | Returns one of the following result codes:<br> OH_DRAWING_SUCCESS if the operation is successful.<br> OH_DRAWING_ERROR_INVALID_PARAMETER if either canvas or isClipEmpty is NULL. |
+| OH_Drawing_ErrorCode | Returns one of the following result codes:<br> OH_DRAWING_SUCCESS if the operation is successful.<br> OH_DRAWING_ERROR_INVALID_PARAMETER if either canvas or isClipEmpty is NULL. |
 
 ### OH_Drawing_CanvasGetImageInfo()
 
@@ -1570,7 +1570,7 @@ Obtains the image information of a canvas.
 
 | Type | Description |
 | -- | -- |
-| [OH_Drawing_ErrorCode](capi-drawing-error-code-h.md#oh_drawing_errorcode) | Returns one of the following result codes:<br> OH_DRAWING_SUCCESS if the operation is successful.<br> OH_DRAWING_ERROR_INVALID_PARAMETER if either canvas or imageInfo is NULL. |
+| OH_Drawing_ErrorCode | Returns one of the following result codes:<br> OH_DRAWING_SUCCESS if the operation is successful.<br> OH_DRAWING_ERROR_INVALID_PARAMETER if either canvas or imageInfo is NULL. |
 
 ### OH_Drawing_CanvasDrawRecordCmd()
 
@@ -1595,7 +1595,7 @@ Draws an **OH_Drawing_RecordCmd** object.
 
 | Type | Description |
 | -- | -- |
-| [OH_Drawing_ErrorCode](capi-drawing-error-code-h.md#oh_drawing_errorcode) | Returns one of the following result codes:<br> OH_DRAWING_SUCCESS if the operation is successful.<br> OH_DRAWING_ERROR_INVALID_PARAMETER if either canvas or recordCmd is NULL. |
+| OH_Drawing_ErrorCode | Returns one of the following result codes:<br> OH_DRAWING_SUCCESS if the operation is successful.<br> OH_DRAWING_ERROR_INVALID_PARAMETER if either canvas or recordCmd is NULL. |
 
 ### OH_Drawing_CanvasDrawRecordCmdNesting()
 
@@ -1620,7 +1620,7 @@ Draws an **OH_Drawing_RecordCmd** object. This API supports nesting.
 
 | Type | Description |
 | -- | -- |
-| [OH_Drawing_ErrorCode](capi-drawing-error-code-h.md#oh_drawing_errorcode) | Operation code.<br> OH_DRAWING_SUCCESS if the operation is successful.<br> OH_DRAWING_ERROR_INVALID_PARAMETER if either canvas or recordCmd is NULL. |
+| OH_Drawing_ErrorCode | Operation code.<br> OH_DRAWING_SUCCESS if the operation is successful.<br> OH_DRAWING_ERROR_INVALID_PARAMETER if either canvas or recordCmd is NULL. |
 
 ### OH_Drawing_CanvasQuickRejectPath()
 
@@ -1646,7 +1646,7 @@ Checks whether the path is not intersecting with the canvas area. The canvas are
 
 | Type | Description |
 | -- | -- |
-| [OH_Drawing_ErrorCode](capi-drawing-error-code-h.md#oh_drawing_errorcode) | Returns one of the following result codes:<br> OH_DRAWING_SUCCESS if the operation is successful.<br> OH_DRAWING_ERROR_INVALID_PARAMETER if canvas, path, or quickReject is NULL. |
+| OH_Drawing_ErrorCode | Returns one of the following result codes:<br> OH_DRAWING_SUCCESS if the operation is successful.<br> OH_DRAWING_ERROR_INVALID_PARAMETER if canvas, path, or quickReject is NULL. |
 
 ### OH_Drawing_CanvasQuickRejectRect()
 
@@ -1672,7 +1672,7 @@ Checks whether the rectangle is not intersecting with the canvas area. The canva
 
 | Type | Description |
 | -- | -- |
-| [OH_Drawing_ErrorCode](capi-drawing-error-code-h.md#oh_drawing_errorcode) | Returns one of the following result codes:<br> OH_DRAWING_SUCCESS if the operation is successful.<br> OH_DRAWING_ERROR_INVALID_PARAMETER if canvas, rect, or quickReject is NULL. |
+| OH_Drawing_ErrorCode | Returns one of the following result codes:<br> OH_DRAWING_SUCCESS if the operation is successful.<br> OH_DRAWING_ERROR_INVALID_PARAMETER if canvas, rect, or quickReject is NULL. |
 
 ### OH_Drawing_CanvasIsOpaque()
 
@@ -1697,6 +1697,6 @@ Checks if the current layer that drawn into the device is opaque.
 
 | Type | Description |
 | -- | -- |
-| [OH_Drawing_ErrorCode](capi-drawing-error-code-h.md#oh_drawing_errorcode) | Returns the error code.<br>         Returns [OH_DRAWING_SUCCESS](capi-drawing-error-code-h.md#oh_drawing_errorcode) if the operation is successful.<br>         Returns [OH_DRAWING_ERROR_INCORRECT_PARAMETER](capi-drawing-error-code-h.md#oh_drawing_errorcode) if canvas or isOpaque is nullptr. |
+| OH_Drawing_ErrorCode | Returns the error code.<br>         Returns [OH_DRAWING_SUCCESS](capi-drawing-error-code-h.md#oh_drawing_errorcode) if the operation is successful.<br>         Returns [OH_DRAWING_ERROR_INCORRECT_PARAMETER](capi-drawing-error-code-h.md#oh_drawing_errorcode) if canvas or isOpaque is nullptr. |
 
 

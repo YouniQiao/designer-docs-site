@@ -12,11 +12,7 @@ import { dlpPermission } from '@kit.DataProtectionKit';
 function isInSandbox(): Promise<boolean>
 ```
 
-Checks whether this application is running in a DLP sandbox environment. This API uses a promise to return the
-result.
-
-This API is used to determine whether the current application is running in a DLP sandbox environment. If it is,
-the system can perform operations or call APIs for sandbox applications.
+Checks whether this application is running in a DLP sandbox environment. This API uses a promise to return the result. This API is used to determine whether the current application is running in a DLP sandbox environment. If it is, the system can perform operations or call APIs for sandbox applications.
 
 **Since:** 10
 
@@ -55,11 +51,7 @@ dlpPermission.isInSandbox().then((isInSandbox) => { // Check whether the applica
 function isInSandbox(callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether this application is running in a DLP sandbox environment. This API uses an asynchronous callback
-to return the result.
-
-This API is used to determine whether the current application is running in a DLP sandbox environment. If it is,
-the system can perform operations or call APIs for sandbox applications.
+Checks whether this application is running in a DLP sandbox environment. This API uses an asynchronous callback to return the result. This API is used to determine whether the current application is running in a DLP sandbox environment. If it is, the system can perform operations or call APIs for sandbox applications.
 
 **Since:** 10
 

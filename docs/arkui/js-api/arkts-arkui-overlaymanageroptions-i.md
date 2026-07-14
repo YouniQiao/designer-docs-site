@@ -18,9 +18,7 @@ import { OverlayManager, FrameCallback, ResolvedUIContext, NodeRenderStateChange
 enableBackPressedEvent?: boolean
 ```
 
-hether to enable the swipe-to-dismiss gesture for **ComponentContent** under **OverlayManager**.
-The value **true** means to enable the swipe-to-dismiss gesture, and **false** means the opposite. Default value: **false**.<br>
-**Atomic service API**: This API can be used in atomic services since API version 19.
+hether to enable the swipe-to-dismiss gesture for **ComponentContent** under **OverlayManager**. The value **true** means to enable the swipe-to-dismiss gesture, and **false** means the opposite. Default value: **false**.<br> **Atomic service API**: This API can be used in atomic services since API version 19.
 
 **Type:** boolean
 
@@ -40,9 +38,7 @@ The value **true** means to enable the swipe-to-dismiss gesture, and **false** m
 renderRootOverlay?: boolean
 ```
 
-Whether to render the overlay root node. The value **true** means to render the overlay root node,
-and **false** means the opposite. The default value is **true**.<br>
-**Atomic service API**: This API can be used in atomic services since API version 15.
+Whether to render the overlay root node. The value **true** means to render the overlay root node, and **false** means the opposite. The default value is **true**.<br> **Atomic service API**: This API can be used in atomic services since API version 15.
 
 **Type:** boolean
 

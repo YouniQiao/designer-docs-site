@@ -14,8 +14,7 @@ In addition to the [universal attributes](arkts-arkui-commonmethod-c.md), the fo
 endPoint(value: Array<any>)
 ```
 
-Sets the coordinates (relative coordinates) of the end point of the line. This attribute can be dynamically set
-using [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1). Invalid values are treated as the default value.
+Sets the coordinates (relative coordinates) of the end point of the line. This attribute can be dynamically set using [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1). Invalid values are treated as the default value.
 
 **Since:** 7
 
@@ -37,8 +36,7 @@ using [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1). In
 startPoint(value: Array<any>)
 ```
 
-Sets the coordinates (relative coordinates) of the start point of the line. This attribute can be dynamically set
-using [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1). Invalid values are treated as the default value.
+Sets the coordinates (relative coordinates) of the start point of the line. This attribute can be dynamically set using [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1). Invalid values are treated as the default value.
 
 **Since:** 7
 

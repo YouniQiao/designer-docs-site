@@ -12,10 +12,7 @@ import { abilityManager } from '@kit.AbilityKit';
 function queryAtomicServiceStartupRule(context: Context, appId: string): Promise<AtomicServiceStartupRule>
 ```
 
-Obtains the rule for launching an
-[EmbeddableUIAbility](arkts-ability-embeddableuiability-c.md) in embedded mode. This API
-uses a promise to return the result.
-This API can be properly called only on phones and tablets. On other devices, it returns the error code 801.
+Obtains the rule for launching an [EmbeddableUIAbility](arkts-ability-embeddableuiability-c.md) in embedded mode. This API uses a promise to return the result. This API can be properly called only on phones and tablets. On other devices, it returns the error code 801.
 
 **Since:** 18
 

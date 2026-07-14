@@ -106,8 +106,7 @@ contact.queryContact(context, 'xxx', (err: BusinessError, data) => {
 function queryContact(key: string, holder: Holder, callback: AsyncCallback<Contact>): void
 ```
 
-Queries a contact based on the specified key and holder. This API uses an asynchronous callback to return the
-result.
+Queries a contact based on the specified key and holder. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 
@@ -155,8 +154,7 @@ contact.queryContact('xxx', {
 function queryContact(context: Context, key: string, holder: Holder, callback: AsyncCallback<Contact>): void
 ```
 
-Queries a contact based on the specified key and holder. This API uses an asynchronous callback to return the
-result.
+Queries a contact based on the specified key and holder. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -212,8 +210,7 @@ contact.queryContact(context, 'xxx', {
 function queryContact(key: string, attrs: ContactAttributes, callback: AsyncCallback<Contact>): void
 ```
 
-Queries a contact based on the specified key and attributes. This API uses an asynchronous callback to return the
-result.
+Queries a contact based on the specified key and attributes. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 
@@ -259,8 +256,7 @@ contact.queryContact('xxx', {
 function queryContact(context: Context, key: string, attrs: ContactAttributes, callback: AsyncCallback<Contact>): void
 ```
 
-Queries a contact based on the specified key and attributes. This API uses an asynchronous callback to return the
-result.
+Queries a contact based on the specified key and attributes. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -314,8 +310,7 @@ contact.queryContact(context, 'xxx', {
 function queryContact(key: string, holder: Holder, attrs: ContactAttributes, callback: AsyncCallback<Contact>): void
 ```
 
-Queries a contact based on the specified key, holder, and attributes. This API uses an asynchronous callback to
-return the result.
+Queries a contact based on the specified key, holder, and attributes. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 
@@ -366,8 +361,7 @@ contact.queryContact('xxx', {
 function queryContact(context: Context, key: string, holder: Holder, attrs: ContactAttributes, callback: AsyncCallback<Contact>): void
 ```
 
-Queries a contact based on the specified key, holder, and attributes. This API uses an asynchronous callback to
-return the result.
+Queries a contact based on the specified key, holder, and attributes. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 

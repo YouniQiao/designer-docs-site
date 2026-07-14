@@ -1,7 +1,6 @@
 # Folder
 
-Represents the folder data. It is a child class of [File](arkts-arkdata-file-c.md) and is used to describe a
-folder.
+Represents the folder data. It is a child class of [File](arkts-arkdata-file-c.md) and is used to describe a folder.
 
 **Inheritance/Implementation:** Folder extends [File](arkts-arkdata-file-c.md)
 

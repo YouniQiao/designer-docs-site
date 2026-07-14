@@ -12,16 +12,7 @@ import { dlpPermission } from '@kit.DataProtectionKit';
 function queryDlpPolicy(dlpFd: number): Promise<string>
 ```
 
-Parses the file header in a DLP file to obtain the DLP plaintext policy. The returned JSON string of the DLP
-policy contains the [DLPProperty](arkts-dataprotection-dlpproperty-i.md) and
-[CustomProperty](arkts-dataprotection-customproperty-i.md) information. This API uses a promise to return the result.
-
-This API obtains the policy information of a DLP file for analysis in scenarios such as viewing the DLP file
-permission configuration.
-
-> **NOTE**
->
-> This API can be called only by enterprise accounts.
+Parses the file header in a DLP file to obtain the DLP plaintext policy. The returned JSON string of the DLP policy contains the [DLPProperty](arkts-dataprotection-dlpproperty-i.md) and [CustomProperty](arkts-dataprotection-customproperty-i.md) information. This API uses a promise to return the result. This API obtains the policy information of a DLP file for analysis in scenarios such as viewing the DLP file permission configuration. > **NOTE** > > This API can be called only by enterprise accounts.
 
 **Since:** 21
 
@@ -35,7 +26,7 @@ permission configuration.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| dlpFd | number | Yes | FD of the DLP file to be queried. The value range is [0, 2&lt;sup&gt;31&lt;/sup&gt;-1]. If thevalue of **fd** is less than 0, error code 19100001 is thrown. If the value of **fd** is greater than2&lt;sup&gt;31&lt;/sup&gt;-1, the value is truncated. |
+| dlpFd | number | Yes | FD of the DLP file to be queried. The value range is [0, 2&lt;sup&gt;31&lt;/sup&gt;-1]. If thevalue of **fd** is less than 0, an error log is generated, and the function stops running. If the valueof **fd** is greater than 2&lt;sup&gt;31&lt;/sup&gt;-1, the excess part will be truncated. |
 
 **Return value:**
 

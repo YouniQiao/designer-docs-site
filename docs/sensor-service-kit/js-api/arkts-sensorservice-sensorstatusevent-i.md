@@ -46,8 +46,7 @@ Device name.
 isSensorOnline: boolean
 ```
 
-Sensor status. The value **true** indicates that the sensor is online, and the value **false** indicates the
-opposite.
+Sensor status. The value **true** indicates that the sensor is online, and the value **false** indicates the opposite.
 
 **Type:** boolean
 

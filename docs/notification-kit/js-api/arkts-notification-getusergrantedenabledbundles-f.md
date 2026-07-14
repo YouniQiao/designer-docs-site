@@ -12,8 +12,7 @@ import { notificationExtensionSubscription } from '@kit.NotificationKit';
 function getUserGrantedEnabledBundles(): Promise<GrantedBundleInfo[]>
 ```
 
-Obtains the applications that are allowed to access device notifications. This API uses a promise to return the
-result.
+Obtains the applications that are allowed to access device notifications. This API uses a promise to return the result.
 
 **Since:** 22
 

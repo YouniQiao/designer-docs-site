@@ -30,11 +30,7 @@ leadingMargin?: Dimension | LeadingMarginPlaceholder
 lineBreakStrategy?: LineBreakStrategy
 ```
 
-设置折行规则。
-
-默认值：LineBreakStrategy.GREEDY
-
-在wordBreak不等于breakAll的时候生效，不支持连字符。
+设置折行规则。 默认值：LineBreakStrategy.GREEDY 在wordBreak不等于breakAll的时候生效，不支持连字符。
 
 **类型：** LineBreakStrategy
 
@@ -52,11 +48,7 @@ lineBreakStrategy?: LineBreakStrategy
 paragraphSpacing?: number
 ```
 
-设置段落间距大小。
-
-单位：fp
-
-段落间距默认大小为0。
+设置段落间距大小。 单位：fp 段落间距默认大小为0。
 
 **类型：** number
 
@@ -74,12 +66,7 @@ paragraphSpacing?: number
 shaderStyle?: ShaderStyle
 ```
 
-设置文本着色器效果。
-
-该接口与[RichEditorTextStyle](arkts-arkui-richeditortextstyleresult-i.md)中的strokeWidth同时设置时，该接口不生效，shaderStyle的优先级高于
-[RichEditorTextStyle](arkts-arkui-richeditortextstyleresult-i.md)的fontColor。
-
-**模型约束：** 此接口仅可在Stage模型下使用。
+设置文本着色器效果。 该接口与[RichEditorTextStyle](arkts-arkui-richeditortextstyleresult-i.md)中的strokeWidth同时设置时，该接口不生效，shaderStyle的优先级高于 [RichEditorTextStyle](arkts-arkui-richeditortextstyleresult-i.md)的fontColor。 **模型约束：** 此接口仅可在Stage模型下使用。
 
 **类型：** ShaderStyle
 
@@ -115,9 +102,7 @@ textAlign?: TextAlign
 textDirection?: TextDirection
 ```
 
-设置文本方向。
-
-默认值：TextDirection.DEFAULT
+设置文本方向。 默认值：TextDirection.DEFAULT
 
 **类型：** TextDirection
 
@@ -135,9 +120,7 @@ textDirection?: TextDirection
 textVerticalAlign?: TextVerticalAlign
 ```
 
-设置文本段落在垂直方向的对齐方式。
-
-默认值：TextVerticalAlign.BASELINE
+设置文本段落在垂直方向的对齐方式。 默认值：TextVerticalAlign.BASELINE
 
 **类型：** TextVerticalAlign
 
@@ -155,9 +138,7 @@ textVerticalAlign?: TextVerticalAlign
 wordBreak?: WordBreak
 ```
 
-设置断行规则。
-
-默认值：WordBreak.BREAK_WORD
+设置断行规则。 默认值：WordBreak.BREAK_WORD
 
 **类型：** WordBreak
 

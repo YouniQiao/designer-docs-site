@@ -12,8 +12,7 @@ import { notificationManager } from '@kit.NotificationKit';
 function isDistributedEnabledByBundle(bundle: BundleOption, callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether distributed notification is enabled for a specified application. This API uses an asynchronous
-callback to return the result.
+Checks whether distributed notification is enabled for a specified application. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -74,8 +73,7 @@ notificationManager.isDistributedEnabledByBundle(bundle, isDistributedEnabledByB
 function isDistributedEnabledByBundle(bundle: BundleOption): Promise<boolean>
 ```
 
-Checks whether distributed notification is enabled for a specified application. This API uses a promise to return
-the result.
+Checks whether distributed notification is enabled for a specified application. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -138,8 +136,7 @@ notificationManager.isDistributedEnabledByBundle(bundle).then((data: boolean) =>
 function isDistributedEnabledByBundle(bundle: BundleOption, deviceType: string): Promise<boolean>
 ```
 
-Obtains whether a specified application enables cross-device collaboration. This API uses a promise to return the
-result.
+Obtains whether a specified application enables cross-device collaboration. This API uses a promise to return the result. This API can be properly called on devices other than wearables and TVs. If it is called on wearables and TVs, error code 801 is returned.
 
 **Since:** 12
 

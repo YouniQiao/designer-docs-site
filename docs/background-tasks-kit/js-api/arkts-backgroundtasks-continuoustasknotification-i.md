@@ -66,9 +66,7 @@ ID of the continuous-task notification.
 slotType: notificationManager.SlotType
 ```
 
-Slot type of a continuous-task notification.
-
-Note: After a continuous task is successfully requested or updated, no prompt tone is played.
+Slot type of a continuous-task notification. Note: After a continuous task is successfully requested or updated, no prompt tone is played.
 
 **Type:** notificationManager.SlotType
 

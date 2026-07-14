@@ -18,9 +18,7 @@ import { request } from '@kit.BasicServicesKit';
 bundle?: string
 ```
 
-Specify the package name of an application.
-Only for advanced search, common search will be fixed to the caller.
-A "*" means any bundle.
+Specify the package name of an application. Only for advanced search, common search will be fixed to the caller. A "*" means any bundle.
 
 **Type:** string
 

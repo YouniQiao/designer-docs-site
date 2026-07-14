@@ -180,9 +180,7 @@ audioEffectManager.offAudioSeparationEffectEnabledChange();
 onAudioSeparationEffectEnabledChange(callback: Callback<boolean>): void
 ```
 
-订阅系统音频分离效果使能状态变更事件。
-系统中的音频分离效果状态可由系统播放控制器应用设定，
-其他应用程序可以使用此函数来监听change事件。
+订阅系统音频分离效果使能状态变更事件。 系统中的音频分离效果状态可由系统播放控制器应用设定， 其他应用程序可以使用此函数来监听change事件。
 
 **起始版本：** 26.0.0
 
@@ -268,9 +266,7 @@ try {
 setAudioSeparationEffectEnabled(enabled: boolean, uid: number, streamId?: number): Promise<void>
 ```
 
-设置特定应用进程的音频分离效果开关。
-或用于特定的音频播放流。
-该接口使用promise返回结果。
+设置特定应用进程的音频分离效果开关。 或用于特定的音频播放流。 该接口使用promise返回结果。
 
 **起始版本：** 26.0.0
 

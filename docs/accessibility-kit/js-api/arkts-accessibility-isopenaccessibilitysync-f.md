@@ -12,9 +12,7 @@ import { accessibility } from '@kit.AccessibilityKit';
 function isOpenAccessibilitySync(): boolean
 ```
 
-Checks whether any accessibility application has been enabled in the system. To obtain information about
-accessibility applications in the system, use
-[accessibility.getAccessibilityExtensionListSync](arkts-accessibility-getaccessibilityextensionlistsync-f.md#getaccessibilityextensionlistsync-1).
+Checks whether any accessibility application has been enabled in the system. To obtain information about accessibility applications in the system, use [accessibility.getAccessibilityExtensionListSync](arkts-accessibility-getaccessibilityextensionlistsync-f.md#getaccessibilityextensionlistsync-1).
 
 **Since:** 10
 

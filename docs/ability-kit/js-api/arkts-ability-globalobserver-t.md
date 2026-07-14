@@ -4,11 +4,7 @@
 export type GlobalObserver = (reason: GlobalError) => void
 ```
 
-Defines an exception observer that can be used as an input parameter for
-[errorManager.on('globalErrorOccurred')](arkts-ability-on-f.md#on-6)
-and
-[errorManager.on('globalUnhandledRejectionDetected')](arkts-ability-on-f.md#on-4)
-to monitor event processing on the main thread of the current application.
+Defines an exception observer that can be used as an input parameter for [errorManager.on('globalErrorOccurred')](arkts-ability-on-f.md#on-6) and [errorManager.on('globalUnhandledRejectionDetected')](arkts-ability-on-f.md#on-4) to monitor event processing on the main thread of the current application.
 
 **Since:** 18
 

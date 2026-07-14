@@ -1,8 +1,6 @@
 # NfcBTag
 
-Provides interfaces to create an {@code NfcBTag} and perform I/O operations on the tag.
-<p>This class inherits from the {@link TagSession} abstract class and provides interfaces to create an
-{@code NfcBTag} and obtain the tag information.
+Provides interfaces to create an {@code NfcBTag} and perform I/O operations on the tag. <p>This class inherits from the {@link TagSession} abstract class and provides interfaces to create an {@code NfcBTag} and obtain the tag information.
 
 **Inheritance/Implementation:** NfcBTag extends [TagSession](arkts-connectivity-tagsession-i.md)
 

@@ -646,8 +646,7 @@ Parsing error associated with the media manifest.
 ERR_CODE_CAST_CONTROL_PARSING_CONTAINER_UNSUPPORTED = 6613003
 ```
 
-An error occurs when attempting to extract a file with an unsupported media container format
-or an unsupported media container feature.
+An error occurs when attempting to extract a file with an unsupported media container format or an unsupported media container feature.
 
 **Since:** 13
 

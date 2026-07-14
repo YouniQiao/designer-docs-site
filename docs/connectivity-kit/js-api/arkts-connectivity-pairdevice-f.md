@@ -12,9 +12,7 @@ import { bluetoothManager } from '@kit.ConnectivityKit';
 function pairDevice(deviceId: string): void
 ```
 
-Starts pairing with a remote Bluetooth device.
-On API 10 and above, the permission required by this interface is changed from DISCOVER_BLUETOOTH to
-ACCESS_BLUETOOTH.
+Starts pairing with a remote Bluetooth device. On API 10 and above, the permission required by this interface is changed from DISCOVER_BLUETOOTH to ACCESS_BLUETOOTH.
 
 **Since:** 9
 

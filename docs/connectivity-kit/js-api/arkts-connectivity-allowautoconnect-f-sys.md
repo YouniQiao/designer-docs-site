@@ -12,8 +12,7 @@ import { wifiManager } from '@kit.ConnectivityKit';
 function allowAutoConnect(netId: number, isAllowed: boolean): void
 ```
 
-Set whther to allow automatic connnect by networkId.
-The network can be associated with again if isAllowed is true, else not.
+Set whther to allow automatic connnect by networkId. The network can be associated with again if isAllowed is true, else not.
 
 **Since:** 17
 

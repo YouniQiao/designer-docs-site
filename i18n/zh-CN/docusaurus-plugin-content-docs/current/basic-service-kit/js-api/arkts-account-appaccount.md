@@ -29,11 +29,11 @@
 | [AuthCallback](arkts-basicservices-authcallback-i.md) | 认证器回调类。 |
 | [AuthResult](arkts-basicservices-authresult-i.md) | 表示认证结果信息。 |
 | [AuthTokenInfo](arkts-basicservices-authtokeninfo-i.md) | 表示Auth令牌信息。 |
-| [AuthenticatorCallback](arkts-basicservices-authenticatorcallback-i.md) | OAuth认证器回调接口。@link appAccount.AuthCallback}替代。 |
+| [AuthenticatorCallback](arkts-basicservices-authenticatorcallback-i.md) | OAuth认证器回调接口。 @link appAccount.AuthCallback}替代。 |
 | [AuthenticatorInfo](arkts-basicservices-authenticatorinfo-i.md) | 表示OAuth认证器信息。 |
 | [CreateAccountImplicitlyOptions](arkts-basicservices-createaccountimplicitlyoptions-i.md) | 表示隐式创建账号的选项。 |
 | [CreateAccountOptions](arkts-basicservices-createaccountoptions-i.md) | 表示创建账号的选项。 |
-| [OAuthTokenInfo](arkts-basicservices-oauthtokeninfo-i.md) | 表示OAuth令牌信息。@link appAccount.AuthTokenInfo}替代。 |
+| [OAuthTokenInfo](arkts-basicservices-oauthtokeninfo-i.md) | 表示OAuth令牌信息。 @link appAccount.AuthTokenInfo}替代。 |
 | [SelectAccountsOptions](arkts-basicservices-selectaccountsoptions-i.md) | 表示用于选择账号的选项。 |
 | [SetPropertiesOptions](arkts-basicservices-setpropertiesoptions-i.md) | 表示用于设置属性的选项。 |
 | [VerifyCredentialOptions](arkts-basicservices-verifycredentialoptions-i.md) | 表示用于验证凭据的选项。 |

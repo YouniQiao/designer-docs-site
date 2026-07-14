@@ -12,8 +12,7 @@ import { radio } from '@kit.TelephonyKit';
 function getRadioTech(slotId: number, callback: AsyncCallback<NetworkRadioTech>): void
 ```
 
-Obtains radio access technology (RAT) of the registered network. The system
-returns RAT of the packet service (PS) and circuit service (CS) domain.
+Obtains radio access technology (RAT) of the registered network. The system returns RAT of the packet service (PS) and circuit service (CS) domain.
 
 **Since:** 11
 
@@ -46,8 +45,7 @@ returns RAT of the packet service (PS) and circuit service (CS) domain.
 function getRadioTech(slotId: number): Promise<NetworkRadioTech>
 ```
 
-Obtains radio access technology (RAT) of the registered network. The system
-returns RAT of the packet service (PS) and circuit service (CS) domain.
+Obtains radio access technology (RAT) of the registered network. The system returns RAT of the packet service (PS) and circuit service (CS) domain.
 
 **Since:** 11
 

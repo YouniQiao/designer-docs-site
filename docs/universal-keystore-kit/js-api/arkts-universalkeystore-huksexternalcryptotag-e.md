@@ -60,8 +60,7 @@ UID of the caller.
 HUKS_EXT_CRYPTO_TAG_PURPOSE = HuksExternalCryptoTagType.HUKS_EXT_CRYPTO_TAG_TYPE_INT | 200005
 ```
 
-Usage type of the key corresponding to the certificate chain. For details, see
-[CertificatePurpose](../../apis-device-certificate-kit/arkts-apis/arkts-devicecertificate-certificatepurpose-e.md).
+Usage type of the key corresponding to the certificate chain. For details, see [CertificatePurpose](../../apis-device-certificate-kit/arkts-apis/arkts-devicecertificate-certificatepurpose-e.md).
 
 **Since:** 22
 

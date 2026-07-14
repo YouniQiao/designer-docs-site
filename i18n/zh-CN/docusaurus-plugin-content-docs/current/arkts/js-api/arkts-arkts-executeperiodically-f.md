@@ -6,8 +6,7 @@
 function executePeriodically(period: number, task: Task, priority?: Priority): void
 ```
 
-周期任务每隔period时长执行一次。当前执行模式支持设置任务优先级，并可以通过调用**cancel()**取消执行。周期任务不能是任务组任务、
-串行队列任务或异步队列任务，不能再次调用执行接口，且执行的任务不能拥有依赖关系。
+周期任务每隔period时长执行一次。当前执行模式支持设置任务优先级，并可以通过调用**cancel()**取消执行。周期任务不能是任务组任务、 串行队列任务或异步队列任务，不能再次调用执行接口，且执行的任务不能拥有依赖关系。
 
 **起始版本：** 12
 
@@ -82,8 +81,7 @@ taskpoolTest();
 function executePeriodically<A extends Array<Object>, R>(period: number, task: GenericsTask<A, R>, priority?: Priority): void
 ```
 
-周期执行泛型任务，不校验任务的参数类型和返回值类型。
-executePeriodically任务的校验是结合**new GenericsTask**一起用的，参数、返回值类型需与**new GenericsTask**中的类型保持一致。
+周期执行泛型任务，不校验任务的参数类型和返回值类型。 executePeriodically任务的校验是结合**new GenericsTask**一起用的，参数、返回值类型需与**new GenericsTask**中的类型保持一致。
 
 **起始版本：** 13
 

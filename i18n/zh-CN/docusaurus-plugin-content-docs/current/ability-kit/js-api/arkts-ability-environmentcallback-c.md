@@ -12,8 +12,7 @@ EnvironmentCallback模块提供对系统环境变化监听回调的能力。
 onConfigurationUpdated(config: Configuration): void
 ```
 
-[注册系统环境变化的监听](arkts-ability-applicationcontext-c.md#on-2)
-后，在系统环境变化时触发回调。
+[注册系统环境变化的监听](arkts-ability-applicationcontext-c.md#on-2) 后，在系统环境变化时触发回调。
 
 **起始版本：** 9
 
@@ -39,8 +38,7 @@ onConfigurationUpdated(config: Configuration): void
 onMemoryLevel(level: AbilityConstant.MemoryLevel): void
 ```
 
-[注册系统环境变化的监听](arkts-ability-applicationcontext-c.md#on-2)
-后，在系统内存变化时触发回调。
+[注册系统环境变化的监听](arkts-ability-applicationcontext-c.md#on-2) 后，在系统内存变化时触发回调。
 
 **起始版本：** 9
 

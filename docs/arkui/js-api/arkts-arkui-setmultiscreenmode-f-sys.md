@@ -13,9 +13,7 @@ function setMultiScreenMode(primaryScreenId: number, secondaryScreenId: number,
     secondaryScreenMode: MultiScreenMode): Promise<void>
 ```
 
-Sets the display mode (mirror or extend) of the secondary screen. This API uses a promise to return the result. If
-both **primaryScreenId** and **secondaryScreenId** are set to **0**, the content is displayed only on the secondary
-screen.
+Sets the display mode (mirror or extend) of the secondary screen. This API uses a promise to return the result. If both **primaryScreenId** and **secondaryScreenId** are set to **0**, the content is displayed only on the secondary screen.
 
 **Since:** 13
 

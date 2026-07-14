@@ -101,11 +101,7 @@ try {
 checkOsAccountActivated(localId: number, callback: AsyncCallback<boolean>): void
 ```
 
-判断指定系统账号是否处于激活状态。使用callback异步回调。
-
-> **说明：**
->
-> 从API version 9开始支持，从API version 11开始废弃。替代方法仅向系统应用开放。
+判断指定系统账号是否处于激活状态。使用callback异步回调。 > **说明：** > > 从API version 9开始支持，从API version 11开始废弃。替代方法仅向系统应用开放。
 
 **起始版本：** 9
 
@@ -163,11 +159,7 @@ try {
 checkOsAccountActivated(localId: number): Promise<boolean>
 ```
 
-判断指定系统账号是否处于激活状态。使用Promise异步回调。
-
-> **说明：**
->
-> 从API version 9开始支持，从API version 11开始废弃。替代方法仅向系统应用开放。
+判断指定系统账号是否处于激活状态。使用Promise异步回调。 > **说明：** > > 从API version 9开始支持，从API version 11开始废弃。替代方法仅向系统应用开放。
 
 **起始版本：** 9
 
@@ -228,11 +220,7 @@ try {
 checkOsAccountConstraintEnabled(localId: number, constraint: string, callback: AsyncCallback<boolean>): void
 ```
 
-判断指定系统账号是否具有指定约束。使用callback异步回调。
-
-> **说明：**
->
-> 从API version 9开始支持，从API version 11开始废弃。替代方法仅向系统应用开放。
+判断指定系统账号是否具有指定约束。使用callback异步回调。 > **说明：** > > 从API version 9开始支持，从API version 11开始废弃。替代方法仅向系统应用开放。
 
 **起始版本：** 9
 
@@ -292,11 +280,7 @@ try {
 checkOsAccountConstraintEnabled(localId: number, constraint: string): Promise<boolean>
 ```
 
-判断指定系统账号是否具有指定约束。使用Promise异步回调。
-
-> **说明：**
->
-> 从API version 9开始支持，从API version 11开始废弃。替代方法仅向系统应用开放。
+判断指定系统账号是否具有指定约束。使用Promise异步回调。 > **说明：** > > 从API version 9开始支持，从API version 11开始废弃。替代方法仅向系统应用开放。
 
 **起始版本：** 9
 
@@ -448,12 +432,7 @@ try {
 checkOsAccountVerified(callback: AsyncCallback<boolean>): void
 ```
 
-检查当前系统账号是否已认证解锁。使用callback异步回调。
-
-> **说明：**
->
-> 从API version 9开始支持，从API version 11开始废弃。建议使用
-> [isOsAccountUnlocked](arkts-basicservices-accountmanager-i.md#isosaccountunlocked-1)替代。
+检查当前系统账号是否已认证解锁。使用callback异步回调。 > **说明：** > > 从API version 9开始支持，从API version 11开始废弃。建议使用 > [isOsAccountUnlocked](arkts-basicservices-accountmanager-i.md#isosaccountunlocked-1)替代。
 
 **起始版本：** 9
 
@@ -502,12 +481,7 @@ try {
 checkOsAccountVerified(): Promise<boolean>
 ```
 
-检查当前系统账号是否已认证解锁。使用Promise异步回调。
-
-> **说明：**
->
-> 从API version 9开始支持，从API version 11开始废弃。建议使用
-> [isOsAccountUnlocked](arkts-basicservices-accountmanager-i.md#isosaccountunlocked-1)替代。
+检查当前系统账号是否已认证解锁。使用Promise异步回调。 > **说明：** > > 从API version 9开始支持，从API version 11开始废弃。建议使用 > [isOsAccountUnlocked](arkts-basicservices-accountmanager-i.md#isosaccountunlocked-1)替代。
 
 **起始版本：** 9
 
@@ -554,11 +528,7 @@ try {
 checkOsAccountVerified(localId: number, callback: AsyncCallback<boolean>): void
 ```
 
-检查指定系统账号是否已验证。使用callback异步回调。
-
-> **说明：**
->
-> 从API version 9开始支持，从API version 11开始废弃。替代方法仅向系统应用开放。
+检查指定系统账号是否已验证。使用callback异步回调。 > **说明：** > > 从API version 9开始支持，从API version 11开始废弃。替代方法仅向系统应用开放。
 
 **起始版本：** 9
 
@@ -614,11 +584,7 @@ try {
 checkOsAccountVerified(localId: number): Promise<boolean>
 ```
 
-检查指定系统账号是否已验证。使用Promise异步回调。
-
-> **说明：**
->
-> 从API version 9开始支持，从API version 11开始废弃。替代方法仅向系统应用开放。
+检查指定系统账号是否已验证。使用Promise异步回调。 > **说明：** > > 从API version 9开始支持，从API version 11开始废弃。替代方法仅向系统应用开放。
 
 **起始版本：** 9
 
@@ -769,12 +735,7 @@ try {
 getCreatedOsAccountsCount(callback: AsyncCallback<number>): void
 ```
 
-获取已创建的系统账号数量。使用callback异步回调。
-
-> **说明：**
->
-> 从API version 7开始支持，从API version 9开始废弃。建议使用
-> [getOsAccountCount](arkts-basicservices-accountmanager-i.md#getosaccountcount-1)替代。
+获取已创建的系统账号数量。使用callback异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [getOsAccountCount](arkts-basicservices-accountmanager-i.md#getosaccountcount-1)替代。
 
 **起始版本：** 7
 
@@ -814,12 +775,7 @@ accountManager.getCreatedOsAccountsCount((err: BusinessError, count: number)=>{
 getCreatedOsAccountsCount(): Promise<number>
 ```
 
-获取已创建的系统账号数量。使用Promise异步回调。
-
-> **说明：**
->
-> 从API version 7开始支持，从API version 9开始废弃。建议使用
-> [getOsAccountCount](arkts-basicservices-accountmanager-i.md#getosaccountcount-2)替代。
+获取已创建的系统账号数量。使用Promise异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [getOsAccountCount](arkts-basicservices-accountmanager-i.md#getosaccountcount-2)替代。
 
 **起始版本：** 7
 
@@ -857,11 +813,7 @@ accountManager.getCreatedOsAccountsCount().then((count: number) => {
 getCurrentOsAccount(callback: AsyncCallback<OsAccountInfo>): void
 ```
 
-查询当前进程所属的系统账号的信息。使用callback异步回调。
-
-> **说明：**
->
-> 从API version 9开始支持，从API version 11开始废弃。替代方法仅向系统应用开放。
+查询当前进程所属的系统账号的信息。使用callback异步回调。 > **说明：** > > 从API version 9开始支持，从API version 11开始废弃。替代方法仅向系统应用开放。
 
 **起始版本：** 9
 
@@ -913,11 +865,7 @@ try {
 getCurrentOsAccount(): Promise<OsAccountInfo>
 ```
 
-查询当前进程所属的系统账号的信息。使用Promise异步回调。
-
-> **说明：**
->
-> 从API version 9开始支持，从API version 11开始废弃。替代方法仅向系统应用开放。
+查询当前进程所属的系统账号的信息。使用Promise异步回调。 > **说明：** > > 从API version 9开始支持，从API version 11开始废弃。替代方法仅向系统应用开放。
 
 **起始版本：** 9
 
@@ -967,13 +915,7 @@ try {
 getDistributedVirtualDeviceId(callback: AsyncCallback<string>): void
 ```
 
-获取分布式虚拟设备ID。使用callback异步回调。
-
-> **说明：**
->
-> 从API version 7开始支持，从API version 9开始废弃。建议使用
-> [queryDistributedVirtualDeviceId](arkts-basicservices-accountmanager-i.md#querydistributedvirtualdeviceid-1)
-> 替代。
+获取分布式虚拟设备ID。使用callback异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [queryDistributedVirtualDeviceId](arkts-basicservices-accountmanager-i.md#querydistributedvirtualdeviceid-1) > 替代。
 
 **起始版本：** 7
 
@@ -1013,12 +955,7 @@ accountManager.getDistributedVirtualDeviceId((err: BusinessError, virtualID: str
 getDistributedVirtualDeviceId(): Promise<string>
 ```
 
-获取分布式虚拟设备ID。使用Promise异步回调。
-
-> **说明：**
->
-> 从API version 7开始支持，从API version 9开始废弃。建议使用
-> [queryDistributedVirtualDeviceId](arkts-basicservices-accountmanager-i.md#querydistributedvirtualdeviceid-2)替代。
+获取分布式虚拟设备ID。使用Promise异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [queryDistributedVirtualDeviceId](arkts-basicservices-accountmanager-i.md#querydistributedvirtualdeviceid-2)替代。
 
 **起始版本：** 7
 
@@ -1099,11 +1036,7 @@ try {
 getOsAccountAllConstraints(localId: number, callback: AsyncCallback<Array<string>>): void
 ```
 
-获取指定系统账号的全部约束。使用callback异步回调。
-
-> **说明：**
->
-> 从API version 7开始支持，从API version 9开始废弃。替代方法仅向系统应用开放。
+获取指定系统账号的全部约束。使用callback异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。替代方法仅向系统应用开放。
 
 **起始版本：** 7
 
@@ -1148,11 +1081,7 @@ accountManager.getOsAccountAllConstraints(localId, (err: BusinessError, constrai
 getOsAccountAllConstraints(localId: number): Promise<Array<string>>
 ```
 
-获取指定系统账号的全部约束。使用Promise异步回调。
-
-> **说明：**
->
-> 从API version 7开始支持，从API version 9开始废弃。替代方法仅向系统应用开放。
+获取指定系统账号的全部约束。使用Promise异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。替代方法仅向系统应用开放。
 
 **起始版本：** 7
 
@@ -1200,11 +1129,7 @@ accountManager.getOsAccountAllConstraints(localId).then((constraints: string[]) 
 getOsAccountConstraints(localId: number, callback: AsyncCallback<Array<string>>): void
 ```
 
-获取指定系统账号的全部约束。使用callback异步回调。
-
-> **说明：**
->
-> 从API version 9开始支持，从API version 11开始废弃。替代方法仅向系统应用开放。
+获取指定系统账号的全部约束。使用callback异步回调。 > **说明：** > > 从API version 9开始支持，从API version 11开始废弃。替代方法仅向系统应用开放。
 
 **起始版本：** 9
 
@@ -1262,11 +1187,7 @@ try {
 getOsAccountConstraints(localId: number): Promise<Array<string>>
 ```
 
-获取指定系统账号的全部约束。使用Promise异步回调。
-
-> **说明：**
->
-> 从API version 9开始支持，从API version 11开始废弃。替代方法仅向系统应用开放。
+获取指定系统账号的全部约束。使用Promise异步回调。 > **说明：** > > 从API version 9开始支持，从API version 11开始废弃。替代方法仅向系统应用开放。
 
 **起始版本：** 9
 
@@ -1327,8 +1248,7 @@ try {
 getOsAccountCount(callback: AsyncCallback<number>): void
 ```
 
-获取已创建的系统账号数量。使用callback异步回调。
-该接口仅限系统应用调用。
+获取已创建的系统账号数量。使用callback异步回调。 该接口仅限系统应用调用。
 
 **起始版本：** 9
 
@@ -1377,8 +1297,7 @@ try {
 getOsAccountCount(): Promise<number>
 ```
 
-获取已创建的系统账号数量。使用Promise异步回调。
-该接口仅限系统应用调用。
+获取已创建的系统账号数量。使用Promise异步回调。 该接口仅限系统应用调用。
 
 **起始版本：** 9
 
@@ -1569,13 +1488,7 @@ try {
 getOsAccountLocalIdBySerialNumber(serialNumber: number, callback: AsyncCallback<number>): void
 ```
 
-通过SN码查询与其关联的系统账号的账号ID。使用callback异步回调。
-
-> **说明：**
->
-> 从API version 8开始支持，从API version 9开始废弃。建议使用
-> [getOsAccountLocalIdForSerialNumber](arkts-basicservices-accountmanager-i.md#getosaccountlocalidforserialnumber-1)
-> 替代。
+通过SN码查询与其关联的系统账号的账号ID。使用callback异步回调。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃。建议使用 > [getOsAccountLocalIdForSerialNumber](arkts-basicservices-accountmanager-i.md#getosaccountlocalidforserialnumber-1) > 替代。
 
 **起始版本：** 8
 
@@ -1617,13 +1530,7 @@ accountManager.getOsAccountLocalIdBySerialNumber(serialNumber, (err: BusinessErr
 getOsAccountLocalIdBySerialNumber(serialNumber: number): Promise<number>
 ```
 
-通过SN码查询与其关联的系统账号的账号ID。使用Promise异步回调。
-
-> **说明：**
->
-> 从API version 8开始支持，从API version 9开始废弃。建议使用
-> [getOsAccountLocalIdForSerialNumber](arkts-basicservices-accountmanager-i.md#getosaccountlocalidforserialnumber-2)
-> 替代。
+通过SN码查询与其关联的系统账号的账号ID。使用Promise异步回调。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃。建议使用 > [getOsAccountLocalIdForSerialNumber](arkts-basicservices-accountmanager-i.md#getosaccountlocalidforserialnumber-2) > 替代。
 
 **起始版本：** 8
 
@@ -1668,8 +1575,7 @@ accountManager.getOsAccountLocalIdBySerialNumber(serialNumber).then((localId: nu
 getOsAccountLocalIdForDomain(domainInfo: DomainAccountInfo, callback: AsyncCallback<number>): void
 ```
 
-根据域账号信息，获取与其关联的系统账号ID。使用callback异步回调。
-该接口仅限系统应用调用。
+根据域账号信息，获取与其关联的系统账号ID。使用callback异步回调。 该接口仅限系统应用调用。
 
 **起始版本：** 9
 
@@ -1721,8 +1627,7 @@ try {
 getOsAccountLocalIdForDomain(domainInfo: DomainAccountInfo): Promise<number>
 ```
 
-根据域账号信息，获取与其关联的系统账号的账号ID。使用Promise异步回调。
-该接口仅限系统应用调用。
+根据域账号信息，获取与其关联的系统账号的账号ID。使用Promise异步回调。 该接口仅限系统应用调用。
 
 **起始版本：** 9
 
@@ -2044,13 +1949,7 @@ try {
 getOsAccountLocalIdFromDomain(domainInfo: DomainAccountInfo, callback: AsyncCallback<number>): void
 ```
 
-根据域账号信息，获取与其关联的系统账号的账号ID。使用callback异步回调。
-
-> **说明：**
->
-> 从API version 8开始支持，从API version 9开始废弃。建议使用
-> [getOsAccountLocalIdForDomain](arkts-basicservices-accountmanager-i.md#getosaccountlocalidfordomain-1)
-> 替代。
+根据域账号信息，获取与其关联的系统账号的账号ID。使用callback异步回调。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃。建议使用 > [getOsAccountLocalIdForDomain](arkts-basicservices-accountmanager-i.md#getosaccountlocalidfordomain-1) > 替代。
 
 **起始版本：** 8
 
@@ -2092,13 +1991,7 @@ accountManager.getOsAccountLocalIdFromDomain(domainInfo, (err: BusinessError, lo
 getOsAccountLocalIdFromDomain(domainInfo: DomainAccountInfo): Promise<number>
 ```
 
-根据域账号信息，获取与其关联的系统账号的账号ID。使用Promise异步回调。
-
-> **说明：**
->
-> 从API version 8开始支持，从API version 9开始废弃。建议使用
-> [getOsAccountLocalIdForDomain](arkts-basicservices-accountmanager-i.md#getosaccountlocalidfordomain-2)
-> 替代。
+根据域账号信息，获取与其关联的系统账号的账号ID。使用Promise异步回调。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃。建议使用 > [getOsAccountLocalIdForDomain](arkts-basicservices-accountmanager-i.md#getosaccountlocalidfordomain-2) > 替代。
 
 **起始版本：** 8
 
@@ -2143,12 +2036,7 @@ accountManager.getOsAccountLocalIdFromDomain(domainInfo).then((localId: number) 
 getOsAccountLocalIdFromProcess(callback: AsyncCallback<number>): void
 ```
 
-获取当前进程所属的系统账号ID。使用callback异步回调。
-
-> **说明：**
->
-> 从API version 7开始支持，从API version 9开始废弃。建议使用
-> [getOsAccountLocalId](arkts-basicservices-accountmanager-i.md#getosaccountlocalid-1)替代。
+获取当前进程所属的系统账号ID。使用callback异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [getOsAccountLocalId](arkts-basicservices-accountmanager-i.md#getosaccountlocalid-1)替代。
 
 **起始版本：** 7
 
@@ -2186,12 +2074,7 @@ accountManager.getOsAccountLocalIdFromProcess((err: BusinessError, localId: numb
 getOsAccountLocalIdFromProcess(): Promise<number>
 ```
 
-获取当前进程所属的系统账号ID。使用Promise异步回调。
-
-> **说明：**
->
-> 从API version 7开始支持，从API version 9开始废弃。建议使用
-> [getOsAccountLocalId](arkts-basicservices-accountmanager-i.md#getosaccountlocalid-2)替代。
+获取当前进程所属的系统账号ID。使用Promise异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [getOsAccountLocalId](arkts-basicservices-accountmanager-i.md#getosaccountlocalid-2)替代。
 
 **起始版本：** 7
 
@@ -2227,13 +2110,7 @@ accountManager.getOsAccountLocalIdFromProcess().then((localId: number) => {
 getOsAccountLocalIdFromUid(uid: number, callback: AsyncCallback<number>): void
 ```
 
-根据uid查询对应的系统账号ID。使用callback异步回调。
-
-> **说明：**
->
-> 从API version 7开始支持，从API version 9开始废弃。建议使用
-> [getOsAccountLocalIdForUid](arkts-basicservices-accountmanager-i.md#getosaccountlocalidforuid-1)
-> 替代。
+根据uid查询对应的系统账号ID。使用callback异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [getOsAccountLocalIdForUid](arkts-basicservices-accountmanager-i.md#getosaccountlocalidforuid-1) > 替代。
 
 **起始版本：** 7
 
@@ -2275,12 +2152,7 @@ accountManager.getOsAccountLocalIdFromUid(uid, (err: BusinessError, localId: num
 getOsAccountLocalIdFromUid(uid: number): Promise<number>
 ```
 
-根据uid查询对应的系统账号ID。使用Promise异步回调。
-
-> **说明：**
->
-> 从API version 7开始支持，从API version 9开始废弃。建议使用
-> [getOsAccountLocalIdForUid](arkts-basicservices-accountmanager-i.md#getosaccountlocalidforuid-2)替代。
+根据uid查询对应的系统账号ID。使用Promise异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [getOsAccountLocalIdForUid](arkts-basicservices-accountmanager-i.md#getosaccountlocalidforuid-2)替代。
 
 **起始版本：** 7
 
@@ -2561,12 +2433,7 @@ try {
 getOsAccountTypeFromProcess(callback: AsyncCallback<OsAccountType>): void
 ```
 
-查询当前进程所属的系统账号的账号类型。使用callback异步回调。
-
-> **说明：**
->
-> 从API version 7开始支持，从API version 9开始废弃。建议使用
-> [getOsAccountType](arkts-basicservices-accountmanager-i.md#getosaccounttype-1)替代。
+查询当前进程所属的系统账号的账号类型。使用callback异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [getOsAccountType](arkts-basicservices-accountmanager-i.md#getosaccounttype-1)替代。
 
 **起始版本：** 7
 
@@ -2604,12 +2471,7 @@ accountManager.getOsAccountTypeFromProcess((err: BusinessError, accountType: osA
 getOsAccountTypeFromProcess(): Promise<OsAccountType>
 ```
 
-查询当前进程所属的系统账号的账号类型。使用Promise异步回调。
-
-> **说明：**
->
-> 从API version 7开始支持，从API version 9开始废弃。建议使用[getOsAccountType](arkts-basicservices-accountmanager-i.md#getosaccounttype-2)
-> 替代。
+查询当前进程所属的系统账号的账号类型。使用Promise异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用[getOsAccountType](arkts-basicservices-accountmanager-i.md#getosaccounttype-2) > 替代。
 
 **起始版本：** 7
 
@@ -2645,13 +2507,7 @@ accountManager.getOsAccountTypeFromProcess().then((accountType: osAccount.OsAcco
 getSerialNumberByOsAccountLocalId(localId: number, callback: AsyncCallback<number>): void
 ```
 
-通过系统账号ID获取与该系统账号关联的SN码。使用callback异步回调。
-
-> **说明：**
->
-> 从API version 8开始支持，从API version 9开始废弃。建议使用
-> [getSerialNumberForOsAccountLocalId](arkts-basicservices-accountmanager-i.md#getserialnumberforosaccountlocalid-1)
-> 替代。
+通过系统账号ID获取与该系统账号关联的SN码。使用callback异步回调。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃。建议使用 > [getSerialNumberForOsAccountLocalId](arkts-basicservices-accountmanager-i.md#getserialnumberforosaccountlocalid-1) > 替代。
 
 **起始版本：** 8
 
@@ -2694,13 +2550,7 @@ accountManager.getSerialNumberByOsAccountLocalId(localId, (err: BusinessError, s
 getSerialNumberByOsAccountLocalId(localId: number): Promise<number>
 ```
 
-通过系统账号ID获取与该系统账号关联的SN码。使用Promise异步回调。
-
-> **说明：**
->
-> 从API version 8开始支持，从API version 9开始废弃。建议使用
-> [getSerialNumberForOsAccountLocalId](arkts-basicservices-accountmanager-i.md#getserialnumberforosaccountlocalid-2)
-> 替代。
+通过系统账号ID获取与该系统账号关联的SN码。使用Promise异步回调。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃。建议使用 > [getSerialNumberForOsAccountLocalId](arkts-basicservices-accountmanager-i.md#getserialnumberforosaccountlocalid-2) > 替代。
 
 **起始版本：** 8
 
@@ -2855,13 +2705,7 @@ try {
 isMultiOsAccountEnable(callback: AsyncCallback<boolean>): void
 ```
 
-判断是否支持多系统账号。使用callback异步回调。
-
-> **说明：**
->
-> 从API version 7开始支持，从API version 9开始废弃。建议使用
-> [checkMultiOsAccountEnabled](arkts-basicservices-accountmanager-i.md#checkmultiosaccountenabled-1)
-> 替代。
+判断是否支持多系统账号。使用callback异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [checkMultiOsAccountEnabled](arkts-basicservices-accountmanager-i.md#checkmultiosaccountenabled-1) > 替代。
 
 **起始版本：** 7
 
@@ -2899,12 +2743,7 @@ accountManager.isMultiOsAccountEnable((err: BusinessError, isEnabled: boolean) =
 isMultiOsAccountEnable(): Promise<boolean>
 ```
 
-判断是否支持多系统账号。使用Promise异步回调。
-
-> **说明：**
->
-> 从API version 7开始支持，从API version 9开始废弃。建议使用
-> [checkMultiOsAccountEnabled](arkts-basicservices-accountmanager-i.md#checkmultiosaccountenabled-2)替代。
+判断是否支持多系统账号。使用Promise异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [checkMultiOsAccountEnabled](arkts-basicservices-accountmanager-i.md#checkmultiosaccountenabled-2)替代。
 
 **起始版本：** 7
 
@@ -2940,11 +2779,7 @@ accountManager.isMultiOsAccountEnable().then((isEnabled: boolean) => {
 isOsAccountActived(localId: number, callback: AsyncCallback<boolean>): void
 ```
 
-判断指定系统账号是否处于激活状态。使用callback异步回调。
-
-> **说明：**
->
-> 从API version 7开始支持，从API version 9开始废弃。替代方法仅向系统应用开放。
+判断指定系统账号是否处于激活状态。使用callback异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。替代方法仅向系统应用开放。
 
 **起始版本：** 7
 
@@ -2989,11 +2824,7 @@ accountManager.isOsAccountActived(localId, (err: BusinessError, isActived: boole
 isOsAccountActived(localId: number): Promise<boolean>
 ```
 
-判断指定系统账号是否处于激活状态。使用Promise异步回调。
-
-> **说明：**
->
-> 从API version 7开始支持，从API version 9开始废弃。替代方法仅向系统应用开放。
+判断指定系统账号是否处于激活状态。使用Promise异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。替代方法仅向系统应用开放。
 
 **起始版本：** 7
 
@@ -3041,11 +2872,7 @@ accountManager.isOsAccountActived(localId).then((isActived: boolean) => {
 isOsAccountConstraintEnable(localId: number, constraint: string, callback: AsyncCallback<boolean>): void
 ```
 
-判断指定系统账号是否具有指定约束。使用callback异步回调。
-
-> **说明：**
->
-> 从API version 7开始支持，从API version 9开始废弃。替代方法仅向系统应用开放。
+判断指定系统账号是否具有指定约束。使用callback异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。替代方法仅向系统应用开放。
 
 **起始版本：** 7
 
@@ -3092,11 +2919,7 @@ accountManager.isOsAccountConstraintEnable(localId, constraint, (err: BusinessEr
 isOsAccountConstraintEnable(localId: number, constraint: string): Promise<boolean>
 ```
 
-判断指定系统账号是否具有指定约束。使用Promise异步回调。
-
-> **说明：**
->
-> 从API version 7开始支持，从API version 9开始废弃。替代方法仅向系统应用开放。
+判断指定系统账号是否具有指定约束。使用Promise异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。替代方法仅向系统应用开放。
 
 **起始版本：** 7
 
@@ -3242,13 +3065,7 @@ try {
 isOsAccountVerified(callback: AsyncCallback<boolean>): void
 ```
 
-检查当前系统账号是否已验证。使用callback异步回调。
-
-> **说明：**
->
-> 从API version 7开始支持，从API version 9开始废弃。建议使用
-> [checkOsAccountVerified](arkts-basicservices-accountmanager-i.md#checkosaccountverified-1)
-> 替代。
+检查当前系统账号是否已验证。使用callback异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [checkOsAccountVerified](arkts-basicservices-accountmanager-i.md#checkosaccountverified-1) > 替代。
 
 **起始版本：** 7
 
@@ -3288,11 +3105,7 @@ accountManager.isOsAccountVerified((err: BusinessError, isVerified: boolean) => 
 isOsAccountVerified(localId: number, callback: AsyncCallback<boolean>): void
 ```
 
-检查指定系统账号是否已验证。使用callback异步回调。
-
-> **说明：**
->
-> 从API version 7开始支持，从API version 9开始废弃。替代方法仅向系统应用开放。
+检查指定系统账号是否已验证。使用callback异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。替代方法仅向系统应用开放。
 
 **起始版本：** 7
 
@@ -3335,11 +3148,7 @@ accountManager.isOsAccountVerified(localId, (err: BusinessError, isVerified: boo
 isOsAccountVerified(localId?: number): Promise<boolean>
 ```
 
-检查指定系统账号是否已验证。使用Promise异步回调。
-
-> **说明：**
->
-> 从API version 7开始支持，从API version 9开始废弃。替代方法仅向系统应用开放。
+检查指定系统账号是否已验证。使用Promise异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。替代方法仅向系统应用开放。
 
 **起始版本：** 7
 
@@ -3383,13 +3192,7 @@ accountManager.isOsAccountVerified().then((isVerified: boolean) => {
 isTestOsAccount(callback: AsyncCallback<boolean>): void
 ```
 
-检查当前系统账号是否为测试账号。使用callback异步回调。
-
-> **说明：**
->
-> 从API version 7开始支持，从API version 9开始废弃。建议使用
-> [checkOsAccountTestable](arkts-basicservices-accountmanager-i.md#checkosaccounttestable-1)
-> 替代。
+检查当前系统账号是否为测试账号。使用callback异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [checkOsAccountTestable](arkts-basicservices-accountmanager-i.md#checkosaccounttestable-1) > 替代。
 
 **起始版本：** 7
 
@@ -3427,12 +3230,7 @@ accountManager.isTestOsAccount((err: BusinessError, isTestable: boolean) => {
 isTestOsAccount(): Promise<boolean>
 ```
 
-检查当前系统账号是否为测试账号。使用Promise异步回调。
-
-> **说明：**
->
-> 从API version 7开始支持，从API version 9开始废弃。建议使用
-> [checkOsAccountTestable](arkts-basicservices-accountmanager-i.md#checkosaccounttestable-2)替代。
+检查当前系统账号是否为测试账号。使用Promise异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [checkOsAccountTestable](arkts-basicservices-accountmanager-i.md#checkosaccounttestable-2)替代。
 
 **起始版本：** 7
 
@@ -3468,13 +3266,7 @@ let accountManager: osAccount.AccountManager = osAccount.getAccountManager();
 queryActivatedOsAccountIds(callback: AsyncCallback<Array<number>>): void
 ```
 
-查询当前处于激活状态的系统账号的ID列表。使用callback异步回调。
-
-> **说明：**
->
-> 从API version 8开始支持，从API version 9开始废弃。建议使用
-> [getActivatedOsAccountLocalIds](arkts-basicservices-accountmanager-i.md#getactivatedosaccountlocalids-1)
-> 替代。
+查询当前处于激活状态的系统账号的ID列表。使用callback异步回调。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃。建议使用 > [getActivatedOsAccountLocalIds](arkts-basicservices-accountmanager-i.md#getactivatedosaccountlocalids-1) > 替代。
 
 **起始版本：** 8
 
@@ -3515,12 +3307,7 @@ accountManager.queryActivatedOsAccountIds((err: BusinessError, idArray: number[]
 queryActivatedOsAccountIds(): Promise<Array<number>>
 ```
 
-查询当前处于激活状态的系统账号的ID列表。使用Promise异步回调。
-
-> **说明：**
->
-> 从API version 8开始支持，从API version 9开始废弃。建议使用
-> [getActivatedOsAccountLocalIds](arkts-basicservices-accountmanager-i.md#getactivatedosaccountlocalids-2)替代。
+查询当前处于激活状态的系统账号的ID列表。使用Promise异步回调。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃。建议使用 > [getActivatedOsAccountLocalIds](arkts-basicservices-accountmanager-i.md#getactivatedosaccountlocalids-2)替代。
 
 **起始版本：** 8
 
@@ -3556,11 +3343,7 @@ accountManager.queryActivatedOsAccountIds().then((idArray: number[]) => {
 queryCurrentOsAccount(callback: AsyncCallback<OsAccountInfo>): void
 ```
 
-查询当前进程所属的系统账号的信息。使用callback异步回调。
-
-> **说明：**
->
-> 从API version 7开始支持，从API version 9开始废弃。替代方法仅向系统应用开放。
+查询当前进程所属的系统账号的信息。使用callback异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。替代方法仅向系统应用开放。
 
 **起始版本：** 7
 
@@ -3600,11 +3383,7 @@ accountManager.queryCurrentOsAccount((err: BusinessError, curAccountInfo: osAcco
 queryCurrentOsAccount(): Promise<OsAccountInfo>
 ```
 
-查询当前进程所属的系统账号的信息。使用Promise异步回调。
-
-> **说明：**
->
-> 从API version 7开始支持，从API version 9开始废弃。替代方法仅向系统应用开放。
+查询当前进程所属的系统账号的信息。使用Promise异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。替代方法仅向系统应用开放。
 
 **起始版本：** 7
 

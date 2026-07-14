@@ -12,10 +12,7 @@ import { errorManager } from '@kit.AbilityKit';
 function setDefaultFreezeObserver(defaultObserver?: FreezeObserver) : FreezeObserver
 ```
 
-Set the default freeze observer, This function will be executed right after the callback function registered
-through errorManager.on is executed. You can use it to implement chain calls instead of errorManager.on.
-If an empty observer is set for a certain module, it will cause the call chain to be interrupted.
-This API must be called in the main thread.
+Set the default freeze observer, This function will be executed right after the callback function registered through errorManager.on is executed. You can use it to implement chain calls instead of errorManager.on. If an empty observer is set for a certain module, it will cause the call chain to be interrupted. This API must be called in the main thread.
 
 **Since:** 26.0.0
 

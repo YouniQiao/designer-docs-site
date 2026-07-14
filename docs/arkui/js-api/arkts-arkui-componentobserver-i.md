@@ -18,8 +18,7 @@ import { inspector } from '@kit.ArkUI';
 off(type: 'layout', callback?: () => void): void
 ```
 
-Deregisters a callback with the corresponding query condition by using the handle.
-This callback is not triggered when the component layout complete.
+Deregisters a callback with the corresponding query condition by using the handle. This callback is not triggered when the component layout complete.
 
 **Since:** 10
 
@@ -42,8 +41,7 @@ This callback is not triggered when the component layout complete.
 off(type: 'draw', callback?: () => void): void
 ```
 
-Deregisters a callback with the corresponding query condition by using the handle.
-This callback is not triggered when the component draw complete.
+Deregisters a callback with the corresponding query condition by using the handle. This callback is not triggered when the component draw complete.
 
 **Since:** 10
 
@@ -66,8 +64,7 @@ This callback is not triggered when the component draw complete.
 off(type: 'drawChildren', callback?: Callback<void>): void
 ```
 
-Deregisters a callback with the corresponding query condition by using the handle.
-This callback is not triggered when the child of component draw complete.
+Deregisters a callback with the corresponding query condition by using the handle. This callback is not triggered when the child of component draw complete.
 
 **Since:** 20
 
@@ -90,8 +87,7 @@ This callback is not triggered when the child of component draw complete.
 offDrawChildren(callback?: Callback<number[]>): void
 ```
 
-Deregisters a callback with the corresponding query condition by using the handle.
-This callback is not triggered when the child of component draw complete.
+Deregisters a callback with the corresponding query condition by using the handle. This callback is not triggered when the child of component draw complete.
 
 **Since:** 24
 
@@ -152,8 +148,7 @@ struct ImageExample {
 offLayoutChildren(callback?: Callback<void>): void
 ```
 
-Deregisters a callback with the corresponding query condition by using the handle.
-This callback will not be triggered when the child of component layout is complete.
+Deregisters a callback with the corresponding query condition by using the handle. This callback will not be triggered when the child of component layout is complete.
 
 **Since:** 23
 
@@ -245,8 +240,7 @@ struct ImageExample {
 on(type: 'layout', callback: () => void): void
 ```
 
-Registers a callback with the corresponding query condition by using the handle.
-This callback is triggered when the component layout complete.
+Registers a callback with the corresponding query condition by using the handle. This callback is triggered when the component layout complete.
 
 **Since:** 10
 
@@ -269,8 +263,7 @@ This callback is triggered when the component layout complete.
 on(type: 'draw', callback: () => void): void
 ```
 
-Registers a callback with the corresponding query condition by using the handle.
-This callback is triggered when the component draw complete.
+Registers a callback with the corresponding query condition by using the handle. This callback is triggered when the component draw complete.
 
 **Since:** 10
 
@@ -293,8 +286,7 @@ This callback is triggered when the component draw complete.
 on(type: 'drawChildren', callback: Callback<void>): void
 ```
 
-Registers a callback with the corresponding query condition by using the handle.
-This callback is triggered when the child of component draw complete.
+Registers a callback with the corresponding query condition by using the handle. This callback is triggered when the child of component draw complete.
 
 **Since:** 20
 
@@ -317,8 +309,7 @@ This callback is triggered when the child of component draw complete.
 onDrawChildren(callback: Callback<number[]>): void
 ```
 
-Registers a callback with the corresponding query condition by using the handle.
-This callback is triggered when the child of component draw complete.
+Registers a callback with the corresponding query condition by using the handle. This callback is triggered when the child of component draw complete.
 
 **Since:** 24
 
@@ -379,8 +370,7 @@ struct ImageExample {
 onLayoutChildren(callback: Callback<void>): void
 ```
 
-Registers a callback with the corresponding query condition by using the handle.
-This callback will be triggered when the child of component layout is complete.
+Registers a callback with the corresponding query condition by using the handle. This callback will be triggered when the child of component layout is complete.
 
 **Since:** 23
 

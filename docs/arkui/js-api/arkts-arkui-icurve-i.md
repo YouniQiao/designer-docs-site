@@ -1,9 +1,6 @@
 # ICurve
 
-Represents a curve object. Different types of curve objects can be created using APIs in this module, including
-[curves.cubicBezierCurve](arkts-arkui-cubicbeziercurve-f.md#cubicbeziercurve-1) and
-[curves.interpolatingSpring](arkts-arkui-interpolatingspring-f.md#interpolatingspring-1). The curve object provides interpolation
-functionality through its member method [interpolate](arkts-arkui-icurve-i.md#interpolate-1).
+Represents a curve object. Different types of curve objects can be created using APIs in this module, including [curves.cubicBezierCurve](arkts-arkui-cubicbeziercurve-f.md#cubicbeziercurve-1) and [curves.interpolatingSpring](arkts-arkui-interpolatingspring-f.md#interpolatingspring-1). The curve object provides interpolation functionality through its member method [interpolate](arkts-arkui-icurve-i.md#interpolate-1).
 
 **Since:** 9
 

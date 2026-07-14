@@ -12,17 +12,7 @@ Describes the button style.
 buttonStyle?: ButtonStyleMode
 ```
 
-Style and importance of the button. The system automatically adjusts the button background color and text color
-based on the enumerated value. You can also use the
-[backgroundColor](arkts-arkui-commonmethod-c.md#backgroundcolor-1),
-[fontColor](ButtonAttribute#fontColor), and [role](ButtonAttribute#role) APIs to set the background
-color and text color. The actual displayed effect will be determined by the last setting.
-
-Default value: **ButtonStyleMode.EMPHASIZED**
-
-**NOTE**
-
-The button primacy is as follows, from high to low: emphasized button, normal button, text button.
+Style and importance of the button. The system automatically adjusts the button background color and text color based on the enumerated value. You can also use the [backgroundColor](arkts-arkui-commonmethod-c.md#backgroundcolor-1), [fontColor](ButtonAttribute#fontColor), and [role](ButtonAttribute#role) APIs to set the background color and text color. The actual displayed effect will be determined by the last setting. Default value: **ButtonStyleMode.EMPHASIZED** **NOTE** The button primacy is as follows, from high to low: emphasized button, normal button, text button.
 
 **Type:** ButtonStyleMode
 
@@ -44,9 +34,7 @@ The button primacy is as follows, from high to low: emphasized button, normal bu
 controlSize?: ControlSize
 ```
 
-Button size.
-
-Default value: **ControlSize.NORMAL**
+Button size. Default value: **ControlSize.NORMAL**
 
 **Type:** ControlSize
 
@@ -68,13 +56,7 @@ Default value: **ControlSize.NORMAL**
 role?: ButtonRole
 ```
 
-Role of the button. The system automatically adjusts the button background color and text color based on the
-enumerated value. You can also use the
-[backgroundColor](arkts-arkui-commonmethod-c.md#backgroundcolor-1),
-[fontColor](ButtonAttribute#fontColor), and [buttonStyle](ButtonAttribute#buttonStyle) APIs to set
-the background color and text color. The actual displayed effect will be determined by the last setting.
-
-Default value: **ButtonRole.NORMAL**
+Role of the button. The system automatically adjusts the button background color and text color based on the enumerated value. You can also use the [backgroundColor](arkts-arkui-commonmethod-c.md#backgroundcolor-1), [fontColor](ButtonAttribute#fontColor), and [buttonStyle](ButtonAttribute#buttonStyle) APIs to set the background color and text color. The actual displayed effect will be determined by the last setting. Default value: **ButtonRole.NORMAL**
 
 **Type:** ButtonRole
 
@@ -96,17 +78,7 @@ Default value: **ButtonRole.NORMAL**
 stateEffect?: boolean
 ```
 
-Whether to enable the pressed state effect when the button is clicked.
-
-**true**: The pressed state effect is enabled. **false**: The pressed state effect is disabled.
-
-Default value: **true**
-
-**NOTE**
-
-When the pressed state effect is enabled and a custom pressed state style is configured, the resulting color
-displayed after pressing is a composite blend of the original background color and the newly defined pressed
-state color.
+Whether to enable the pressed state effect when the button is clicked. **true**: The pressed state effect is enabled. **false**: The pressed state effect is disabled. Default value: **true** **NOTE** When the pressed state effect is enabled and a custom pressed state style is configured, the resulting color displayed after pressing is a composite blend of the original background color and the newly defined pressed state color.
 
 **Type:** boolean
 
@@ -124,12 +96,7 @@ state color.
 type?: ButtonType
 ```
 
-Button display style.
-
-Default value: **ButtonType.ROUNDED_RECTANGLE**
-
-API version 18 and later: The default value is **ButtonType.ROUNDED_RECTANGLE**. Versions earlier than API
-version 18: The default value is **ButtonType.Capsule**.
+Button display style. Default value: **ButtonType.ROUNDED_RECTANGLE** API version 18 and later: The default value is **ButtonType.ROUNDED_RECTANGLE**. Versions earlier than API version 18: The default value is **ButtonType.Capsule**.
 
 **Type:** ButtonType
 

@@ -12,9 +12,7 @@ import { huks } from '@kit.UniversalKeystoreKit';
 function initSession(keyAlias: string, options: HuksOptions, callback: AsyncCallback<HuksSessionHandle>): void
 ```
 
-Initializes a session for a key operation. This API uses an asynchronous callback to return the result.
-
-The **huks.initSession**, **huks.updateSession**, and **huks.finishSession** must be used together.
+Initializes a session for a key operation. This API uses an asynchronous callback to return the result. The **huks.initSession**, **huks.updateSession**, and **huks.finishSession** must be used together. > **NOTE** > > Initializing a session for SE security level keys defined in > [HuksKeySecurityLevel](arkts-universalkeystore-hukskeysecuritylevel-e.md) requires the ohos.permission.ACCESS_SE_KEY permission.
 
 **Since:** 9
 
@@ -34,6 +32,7 @@ The **huks.initSession**, **huks.updateSession**, and **huks.finishSession** mus
 
 | Error Code ID | Error Message |
 | --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | The application permissions are insufficient, possibly becausethe ohos.permission.ACCESS_SE_KEY permission is missing.<br>**Applicable version:** 26.0.0 and later |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified.2. Incorrect parameter types.3. Parameter verification failed. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | api is not supported |
 | [12000001](../errorcode-huks.md#12000001-feature-not-supported) | algorithm mode is not supported |
@@ -60,9 +59,7 @@ The **huks.initSession**, **huks.updateSession**, and **huks.finishSession** mus
 function initSession(keyAlias: string, options: HuksOptions): Promise<HuksSessionHandle>
 ```
 
-Initializes a session for a key operation. This API uses a promise to return the result.
-
-The **huks.initSession**, **huks.updateSession**, and **huks.finishSession** must be used together.
+Initializes a session for a key operation. This API uses a promise to return the result. The **huks.initSession**, **huks.updateSession**, and **huks.finishSession** must be used together. > **NOTE** > > Initializing a session for SE security level keys defined in > [HuksKeySecurityLevel](arkts-universalkeystore-hukskeysecuritylevel-e.md) requires the ohos.permission.ACCESS_SE_KEY permission.
 
 **Since:** 9
 
@@ -87,6 +84,7 @@ The **huks.initSession**, **huks.updateSession**, and **huks.finishSession** mus
 
 | Error Code ID | Error Message |
 | --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | The application permissions are insufficient, possibly becausethe ohos.permission.ACCESS_SE_KEY permission is missing.<br>**Applicable version:** 26.0.0 and later |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified.2. Incorrect parameter types.3. Parameter verification failed. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | api is not supported |
 | [12000001](../errorcode-huks.md#12000001-feature-not-supported) | algorithm mode is not supported |

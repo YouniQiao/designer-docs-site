@@ -12,9 +12,7 @@ Enumerates device features.
 WIFI_P2P = 0
 ```
 
-Wi-Fi P2P (peer-to-peer connection), which allows devices to directly connect to each other without an access
-point. Once this feature is disallowed, devices cannot be connected through Wi-Fi P2P, affecting application
-functions that require direct Wi-Fi connections, such as file transfer, online gaming, and screen sharing.
+Wi-Fi P2P (peer-to-peer connection), which allows devices to directly connect to each other without an access point. Once this feature is disallowed, devices cannot be connected through Wi-Fi P2P, affecting application functions that require direct Wi-Fi connections, such as file transfer, online gaming, and screen sharing.
 
 **Since:** 24
 
@@ -252,8 +250,7 @@ Device Wi-Fi capability.
 TETHERING = 17
 ```
 
-Network tethering capability. The ability to share the device's internet connection with other devices,
-that is, hotspot sharing.
+Network tethering capability. The ability to share the device's internet connection with other devices, that is, hotspot sharing.
 
 **Since:** 26.0.0
 
@@ -575,9 +572,7 @@ Capability of the device to debug other devices through HDC.
 VIRTUAL_SERVICE = 40
 ```
 
-Device virtualization service capability, which refers to the system capability of running other operating system
-platforms (such as Linux and Windows) through virtualization technology by leveraging the redundancy of the
-device's hardware resources.
+Device virtualization service capability, which refers to the system capability of running other operating system platforms (such as Linux and Windows) through virtualization technology by leveraging the redundancy of the device's hardware resources.
 
 **Since:** 26.0.0
 

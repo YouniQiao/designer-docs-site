@@ -48,10 +48,7 @@ Extra information of the live view. This parameter is left empty by default.
 isLocalUpdateOnly?: boolean
 ```
 
-Whether the live view is updated only locally. The default value is **false**.
-
-- **true**: Yes.
-- **false**: No.
+Whether the live view is updated only locally. The default value is **false**. - **true**: Yes. - **false**: No.
 
 **Type:** boolean
 
@@ -99,9 +96,7 @@ Notification status.
 version?: number
 ```
 
-If the version number stored in the database is not **0xffffffff**, the version number needs to be verified when
-the live view is updated or ended to ensure that the current version number is greater than the version number
-stored in the database. The default value is **0xffffffff**.
+If the version number stored in the database is not **0xffffffff**, the version number needs to be verified when the live view is updated or ended to ensure that the current version number is greater than the version number stored in the database. The default value is **0xffffffff**.
 
 **Type:** number
 

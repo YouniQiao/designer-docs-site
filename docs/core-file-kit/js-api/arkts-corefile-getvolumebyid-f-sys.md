@@ -12,8 +12,7 @@ import { volumeManager } from '@kit.CoreFileKit';
 function getVolumeById(volumeId: string, callback: AsyncCallback<Volume>): void
 ```
 
-Obtains information about a volume based on the volume ID. This API uses an asynchronous callback to return the
-result.
+Obtains information about a volume based on the volume ID. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 

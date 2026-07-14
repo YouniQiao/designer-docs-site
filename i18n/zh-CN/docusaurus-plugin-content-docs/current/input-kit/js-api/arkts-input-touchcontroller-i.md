@@ -1,9 +1,6 @@
 # TouchController
 
-提供模拟触控操作的功能。模拟触控操作序列必须满足以下要求：
-
-1. 所有触点的displayId必须相同。
-2. 每个触点都必须以`touchDown()`开始，以`touchUp()`结束，中间可包含多个`touchMove()`。
+提供模拟触控操作的功能。模拟触控操作序列必须满足以下要求： 1. 所有触点的displayId必须相同。 2. 每个触点都必须以`touchDown()`开始，以`touchUp()`结束，中间可包含多个`touchMove()`。
 
 **起始版本：** 26.0.0
 

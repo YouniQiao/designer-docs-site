@@ -12,8 +12,7 @@ import { nfcController } from '@kit.ConnectivityKit';
 function disableNfc(): void
 ```
 
-Disables NFC.
-This API can be called only by system applications
+Disables NFC. This API can be called only by system applications
 
 **Since:** 9
 

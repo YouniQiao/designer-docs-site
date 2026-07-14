@@ -54,8 +54,7 @@ Returned by the client to indicate that the requested resource URL does not exis
 LOADING_ERROR_INVAID_HANDLE = 3
 ```
 
-Returned by the client to indicate that the ID of the requested resource handle (specified by **uuid**) is
-invalid.
+Returned by the client to indicate that the ID of the requested resource handle (specified by **uuid**) is invalid.
 
 **Since:** 18
 

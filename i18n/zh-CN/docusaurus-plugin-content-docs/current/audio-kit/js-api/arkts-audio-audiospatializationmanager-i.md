@@ -1,13 +1,6 @@
 # AudioSpatializationManager
 
-空间音频管理。
-
-在使用AudioSpatializationManager的接口之前，需先通过
-[getSpatializationManager](arkts-audio-audiomanager-i.md#getspatializationmanager-1)获取AudioSpatializationManager实例。
-
-> **说明：**
->
-> - 本Interface首批接口从API version 18开始支持。
+空间音频管理。 在使用AudioSpatializationManager的接口之前，需先通过 [getSpatializationManager](arkts-audio-audiomanager-i.md#getspatializationmanager-1)获取AudioSpatializationManager实例。 > **说明：** > > - 本Interface首批接口从API version 18开始支持。
 
 **起始版本：** 18
 

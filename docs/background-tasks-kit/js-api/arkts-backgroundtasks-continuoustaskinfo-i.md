@@ -116,9 +116,7 @@ Continuous task ID.
 isFromWebView: boolean
 ```
 
-Whether to request a continuous task in WebView mode, that is, whether to request a continuous task through the
-system proxy application. The value **true** indicates that the Webview mode is used, and the value **false**
-indicates that the Webview mode is not used.
+Whether to request a continuous task in WebView mode, that is, whether to request a continuous task through the system proxy application. The value **true** indicates that the Webview mode is used, and the value **false** indicates that the Webview mode is not used.
 
 **Type:** boolean
 
@@ -160,8 +158,7 @@ Application PID.
 suspendState: boolean
 ```
 
-Whether the requested continuous task is suspended. The value **true** indicates that the task is suspended, and
-the value **false** indicates that the task is activated.
+Whether the requested continuous task is suspended. The value **true** indicates that the task is suspended, and the value **false** indicates that the task is activated.
 
 **Type:** boolean
 
@@ -189,8 +186,7 @@ Application UID.
 wantAgentAbilityName: string
 ```
 
-Ability name configured in [WantAgent](../../apis-ability-kit/arkts-apis/arkts-app-ability-wantagent.md). **WantAgent** is a notification
-parameter used to specify the target page when a continuous task notification is tapped.
+Ability name configured in [WantAgent](../../apis-ability-kit/arkts-apis/arkts-app-ability-wantagent.md). **WantAgent** is a notification parameter used to specify the target page when a continuous task notification is tapped.
 
 **Type:** string
 
@@ -204,8 +200,7 @@ parameter used to specify the target page when a continuous task notification is
 wantAgentBundleName: string
 ```
 
-Bundle name configured in [WantAgent](../../apis-ability-kit/arkts-apis/arkts-app-ability-wantagent.md). **WantAgent** is a notification
-parameter used to specify the target page when a continuous task notification is tapped.
+Bundle name configured in [WantAgent](../../apis-ability-kit/arkts-apis/arkts-app-ability-wantagent.md). **WantAgent** is a notification parameter used to specify the target page when a continuous task notification is tapped.
 
 **Type:** string
 

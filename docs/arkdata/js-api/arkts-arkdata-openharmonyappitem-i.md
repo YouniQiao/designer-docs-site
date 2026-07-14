@@ -114,8 +114,7 @@ Bundle name corresponding to the icon.
 details?: Record<string, number | number | number | string | Uint8Array>
 ```
 
-Object of the dictionary type used to describe the icon. The key is of the string type, and the value can be a
-number, a string, or a Uint8Array. By default, it is an empty dictionary object.
+Object of the dictionary type used to describe the icon. The key is of the string type, and the value can be a number, a string, or a Uint8Array. By default, it is an empty dictionary object.
 
 **Type:** Record<string, number | number | number | string | Uint8Array>
 
@@ -131,8 +130,7 @@ number, a string, or a Uint8Array. By default, it is an empty dictionary object.
 readonly uniformDataType: 'openharmony.app-item'
 ```
 
-Uniform data type, which has a fixed value of **openharmony.app-item**. For details, see
-[UniformDataType](arkts-arkdata-uniformdatatype-e.md).
+Uniform data type, which has a fixed value of **openharmony.app-item**. For details, see [UniformDataType](arkts-arkdata-uniformdatatype-e.md).
 
 **Type:** 'openharmony.app-item'
 

@@ -12,10 +12,7 @@ import { ranging } from '@kit.ConnectivityKit';
 function stopPassiveRanging(handle: number, capabilityType: RangingTypes): void
 ```
 
-Stops passive ranging mode.
-
-Stops the passive ranging broadcast and cleans up associated resources
-based on the specified handle and ranging capability type.
+Stops passive ranging mode. Stops the passive ranging broadcast and cleans up associated resources based on the specified handle and ranging capability type.
 
 **Since:** 26.0.0
 

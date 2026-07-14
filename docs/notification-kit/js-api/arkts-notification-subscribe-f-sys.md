@@ -12,8 +12,7 @@ import { notificationSubscribe } from '@kit.NotificationKit';
 function subscribe(subscriber: NotificationSubscriber, callback: AsyncCallback<void>): void
 ```
 
-Subscribes to notifications of all applications under this user. This API uses an asynchronous callback to return
-the result.
+Subscribes to notifications of all applications under this user. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -79,8 +78,7 @@ function subscribe(
   ): void
 ```
 
-Subscribes to a notification with the subscription information specified. This API uses an asynchronous callback to
-return the result.
+Subscribes to a notification with the subscription information specified. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -148,8 +146,7 @@ notificationSubscribe.subscribe(subscriber, info, subscribeCallback);
 function subscribe(subscriber: NotificationSubscriber, info?: NotificationSubscribeInfo): Promise<void>
 ```
 
-Subscribes to a notification with the subscription information specified. This API uses a promise to return the
-result.
+Subscribes to a notification with the subscription information specified. This API uses a promise to return the result.
 
 **Since:** 9
 

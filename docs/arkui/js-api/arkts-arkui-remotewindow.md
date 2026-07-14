@@ -2,7 +2,6 @@
 
 Provides an interface for controlling the remote window.
 
-
 ## RemoteWindow
 
 ```TypeScript

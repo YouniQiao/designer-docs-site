@@ -45,8 +45,7 @@ dataAbilityPredicates.equalTo("NAME", "Lisa")
 beginWrap(): DataAbilityPredicates
 ```
 
-Creates a **DataAbilityPredicates** object to add a left parenthesis. This API is similar to "(" in an SQL
-statement and must be used with **endWrap**.
+Creates a **DataAbilityPredicates** object to add a left parenthesis. This API is similar to "(" in an SQL statement and must be used with **endWrap**.
 
 **Since:** 7
 
@@ -76,10 +75,7 @@ dataAbilityPredicates.equalTo("NAME", "lisi")
 beginsWith(field: string, value: string): DataAbilityPredicates
 ```
 
-Creates a **DataAbilityPredicates** object to search for the records in the specified column that begin with the
-given value.
-
-This API is similar to the percent sign (%) in SQL statements.
+Creates a **DataAbilityPredicates** object to search for the records in the specified column that begin with the given value. This API is similar to the percent sign (%) in SQL statements.
 
 **Since:** 7
 
@@ -111,8 +107,7 @@ dataAbilityPredicates.beginsWith("NAME", "os")
 between(field: string, low: ValueType, high: ValueType): DataAbilityPredicates
 ```
 
-Creates a **DataAbilityPredicates** object to search for the records in the specified column that are within the
-given range.
+Creates a **DataAbilityPredicates** object to search for the records in the specified column that are within the given range.
 
 **Since:** 7
 
@@ -145,8 +140,7 @@ dataAbilityPredicates.between("AGE", 10, 50)
 contains(field: string, value: string): DataAbilityPredicates
 ```
 
-Creates a **DataAbilityPredicates** object to search for the records in the specified column that contain the
-given value.
+Creates a **DataAbilityPredicates** object to search for the records in the specified column that contain the given value.
 
 **Since:** 7
 
@@ -203,8 +197,7 @@ dataAbilityPredicates.equalTo("NAME", "Rose").distinct()
 endWrap(): DataAbilityPredicates
 ```
 
-Creates a **DataAbilityPredicates** object to add a right parenthesis. This API is similar to ")" in an SQL
-statement and must be used with **beginWrap**.
+Creates a **DataAbilityPredicates** object to add a right parenthesis. This API is similar to ")" in an SQL statement and must be used with **beginWrap**.
 
 **Since:** 7
 
@@ -234,10 +227,7 @@ dataAbilityPredicates.equalTo("NAME", "lisi")
 endsWith(field: string, value: string): DataAbilityPredicates
 ```
 
-Creates a **DataAbilityPredicates** object to search for the records in the specified column that end with the
-given value.
-
-This API is similar to the percent sign (%) in SQL statements.
+Creates a **DataAbilityPredicates** object to search for the records in the specified column that end with the given value. This API is similar to the percent sign (%) in SQL statements.
 
 **Since:** 7
 
@@ -269,10 +259,7 @@ dataAbilityPredicates.endsWith("NAME", "se")
 equalTo(field: string, value: ValueType): DataAbilityPredicates
 ```
 
-Creates a **DataAbilityPredicates** object to search for the records in the specified column that are equal to
-the given value.
-
-This API is similar to the SQL equal to (=) operator.
+Creates a **DataAbilityPredicates** object to search for the records in the specified column that are equal to the given value. This API is similar to the SQL equal to (=) operator.
 
 **Since:** 7
 
@@ -304,8 +291,7 @@ dataAbilityPredicates.equalTo("NAME", "lisi")
 glob(field: string, value: string): DataAbilityPredicates
 ```
 
-Creates a **DataAbilityPredicates** object to search for the records in the specified column that match the given
-string. Different from **like**, the input parameters of this API are case-sensitive.
+Creates a **DataAbilityPredicates** object to search for the records in the specified column that match the given string. Different from **like**, the input parameters of this API are case-sensitive.
 
 **Since:** 7
 
@@ -343,8 +329,7 @@ dataAbilityPredicates.glob("NAME", "lisa")
 greaterThan(field: string, value: ValueType): DataAbilityPredicates
 ```
 
-Creates a **DataAbilityPredicates** object to search for the records in the specified column that are greater
-than the given value.
+Creates a **DataAbilityPredicates** object to search for the records in the specified column that are greater than the given value.
 
 **Since:** 7
 
@@ -376,8 +361,7 @@ dataAbilityPredicates.greaterThan("AGE", 18)
 greaterThanOrEqualTo(field: string, value: ValueType): DataAbilityPredicates
 ```
 
-Creates a **DataAbilityPredicates** object to search for the records in the specified column that are greater
-than or equal to the given value.
+Creates a **DataAbilityPredicates** object to search for the records in the specified column that are greater than or equal to the given value.
 
 **Since:** 7
 
@@ -440,8 +424,7 @@ dataAbilityPredicates.groupBy(["AGE", "NAME"])
 in(field: string, value: Array<ValueType>): DataAbilityPredicates
 ```
 
-Creates a **DataAbilityPredicates** object to search for the records in the specified column that are in the
-given range.
+Creates a **DataAbilityPredicates** object to search for the records in the specified column that are in the given range.
 
 **Since:** 7
 
@@ -473,8 +456,7 @@ dataAbilityPredicates.in("AGE", [18, 20])
 indexedBy(field: string): DataAbilityPredicates
 ```
 
-Creates a **DataAbilityPredicates** object to specify the index column. Before calling this API, you need to
-create an index column.
+Creates a **DataAbilityPredicates** object to specify the index column. Before calling this API, you need to create an index column.
 
 **Since:** 7
 
@@ -544,8 +526,7 @@ export default class EntryAbility extends UIAbility {
 isNotNull(field: string): DataAbilityPredicates
 ```
 
-Creates a **DataAbilityPredicates** object to search for the records in the specified column that are not
-**null**.
+Creates a **DataAbilityPredicates** object to search for the records in the specified column that are not **null**.
 
 **Since:** 7
 
@@ -607,8 +588,7 @@ dataAbilityPredicates.isNull("NAME")
 lessThan(field: string, value: ValueType): DataAbilityPredicates
 ```
 
-Creates a **DataAbilityPredicates** object to search for the records in the specified column that are less than
-the given value.
+Creates a **DataAbilityPredicates** object to search for the records in the specified column that are less than the given value.
 
 **Since:** 7
 
@@ -640,8 +620,7 @@ dataAbilityPredicates.lessThan("AGE", 20)
 lessThanOrEqualTo(field: string, value: ValueType): DataAbilityPredicates
 ```
 
-Creates a **DataAbilityPredicates** object to search for the records in the specified column that are less than
-or equal to the given value.
+Creates a **DataAbilityPredicates** object to search for the records in the specified column that are less than or equal to the given value.
 
 **Since:** 7
 
@@ -673,10 +652,7 @@ dataAbilityPredicates.lessThanOrEqualTo("AGE", 20)
 like(field: string, value: string): DataAbilityPredicates
 ```
 
-Creates a **DataAbilityPredicates** object to search for the records in the specified column that are similar to
-the given value.
-
-This API is similar to the SQL **like** statement.
+Creates a **DataAbilityPredicates** object to search for the records in the specified column that are similar to the given value. This API is similar to the SQL **like** statement.
 
 **Since:** 7
 
@@ -739,8 +715,7 @@ dataAbilityPredicates.equalTo("NAME", "Rose").limitAs(3)
 notBetween(field: string, low: ValueType, high: ValueType): DataAbilityPredicates
 ```
 
-Creates a **DataAbilityPredicates** object to search for the records in the specified column that are out of the
-given range.
+Creates a **DataAbilityPredicates** object to search for the records in the specified column that are out of the given range.
 
 **Since:** 7
 
@@ -773,10 +748,7 @@ dataAbilityPredicates.notBetween("AGE", 10, 50)
 notEqualTo(field: string, value: ValueType): DataAbilityPredicates
 ```
 
-Creates a **DataAbilityPredicates** object to search for the records in the specified column that are not equal
-to the given value.
-
-This API is similar to the SQL not equal (!=) operator.
+Creates a **DataAbilityPredicates** object to search for the records in the specified column that are not equal to the given value. This API is similar to the SQL not equal (!=) operator.
 
 **Since:** 7
 
@@ -808,8 +780,7 @@ dataAbilityPredicates.notEqualTo("NAME", "lisi")
 notIn(field: string, value: Array<ValueType>): DataAbilityPredicates
 ```
 
-Creates a **DataAbilityPredicates** object to search for the records in the specified column that are out of the
-given range.
+Creates a **DataAbilityPredicates** object to search for the records in the specified column that are out of the given range.
 
 **Since:** 7
 
@@ -841,9 +812,7 @@ dataAbilityPredicates.notIn("NAME", ["Lisa", "Rose"])
 offsetAs(rowOffset: number): DataAbilityPredicates
 ```
 
-Creates a **DataAbilityPredicates** object to set the start position of the query result. This API must be used
-together with **limitAs**. Otherwise, no result will be returned. To query all rows after the specified offset,
-pass in **-1** in **limitAs**.
+Creates a **DataAbilityPredicates** object to set the start position of the query result. This API must be used together with **limitAs**. Otherwise, no result will be returned. To query all rows after the specified offset, pass in **-1** in **limitAs**.
 
 **Since:** 7
 
@@ -875,9 +844,7 @@ dataAbilityPredicates.equalTo("NAME", "Rose").offsetAs(3).limitAs(3)
 or(): DataAbilityPredicates
 ```
 
-Creates a **DataAbilityPredicates** object to add the OR condition.
-
-This API is similar to the SQL **or** operator.
+Creates a **DataAbilityPredicates** object to add the OR condition. This API is similar to the SQL **or** operator.
 
 **Since:** 7
 
@@ -904,8 +871,7 @@ dataAbilityPredicates.equalTo("NAME", "Lisa")
 orderByAsc(field: string): DataAbilityPredicates
 ```
 
-Creates a **DataAbilityPredicates** object to sort the records in the specified column in ascending order. When
-there are multiple **orderByAsc**s, the first **orderByAsc** used has the highest priority.
+Creates a **DataAbilityPredicates** object to sort the records in the specified column in ascending order. When there are multiple **orderByAsc**s, the first **orderByAsc** used has the highest priority.
 
 **Since:** 7
 
@@ -937,8 +903,7 @@ dataAbilityPredicates.orderByAsc("NAME").orderByAsc("AGE").orderByAsc("SALARY")
 orderByDesc(field: string): DataAbilityPredicates
 ```
 
-Creates a **DataAbilityPredicates** object to sort the records in the specified column in descending order. When
-there are multiple **orderByDesc**s, the first **orderByDesc** used has the highest priority.
+Creates a **DataAbilityPredicates** object to sort the records in the specified column in descending order. When there are multiple **orderByDesc**s, the first **orderByDesc** used has the highest priority.
 
 **Since:** 7
 

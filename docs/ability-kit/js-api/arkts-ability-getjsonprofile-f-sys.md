@@ -12,10 +12,7 @@ import { bundleManager } from '@kit.AbilityKit';
 function getJsonProfile(profileType: ProfileType, bundleName: string, moduleName?: string, userId?: number): string
 ```
 
-Obtains the JSON strings of the profile based on the given profile type, bundle name, and module name. This API
-returns the result synchronously.
-
-No permission is required for obtaining the caller's own profile.
+Obtains the JSON strings of the profile based on the given profile type, bundle name, and module name. This API returns the result synchronously. No permission is required for obtaining the caller's own profile.
 
 **Since:** 11
 

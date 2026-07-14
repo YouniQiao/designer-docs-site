@@ -1,6 +1,6 @@
 # NotificationCapsule
 
-Describe the notification capsule.
+Describes the notification capsule, which is used to display the capsule form in the live view. > **NOTE** > > The actual display effect depends on the device capabilities and the notification center UI style.
 
 **Since:** 11
 
@@ -12,7 +12,7 @@ Describe the notification capsule.
 backgroundColor?: string
 ```
 
-Background color of the capsule.
+Capsule background color. Colors in rgb, rgba, or argb format are supported. Example of rgb format color: **#ffffff**, **rgb(255, 100, 255)**. Example of rgba format color: **rgba(255, 100, 255, 0.5)**. Example of argb format color: **#ff000000**. The size does not exceed 202 bytes, and the excess part will be truncated. The value defaults to empty.
 
 **Type:** string
 
@@ -26,7 +26,7 @@ Background color of the capsule.
 icon?: image.PixelMap
 ```
 
-Icon of the capsule.
+Capsule icon. The total bytes of the icon pixel does not exceed 192 KB (the total bytes of the icon pixel is obtained through getPixelBytesNumber). It is recommended that the icon pixel dimensions be 128 x 128.
 
 **Type:** image.PixelMap
 
@@ -40,7 +40,7 @@ Icon of the capsule.
 title?: string
 ```
 
-Title of the capsule, with a maximum of 200 bytes. Excess part will be truncated.
+Capsule title. The size does not exceed 202 bytes, and the excess part will be truncated. The value defaults to empty.
 
 **Type:** string
 

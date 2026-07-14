@@ -12,12 +12,7 @@ Defines the properties for controlling the automatic playback behavior.
 stopWhenTouched: boolean
 ```
 
-Whether the automatic playback stops immediately when the component is touched.
-
-The value **true** means that the automatic playback stops immediately when the component is touched, and **false**
-means the opposite.
-
-Default value: **true**.
+Whether the automatic playback stops immediately when the component is touched. The value **true** means that the automatic playback stops immediately when the component is touched, and **false** means the opposite. Default value: **true**.
 
 **Type:** boolean
 

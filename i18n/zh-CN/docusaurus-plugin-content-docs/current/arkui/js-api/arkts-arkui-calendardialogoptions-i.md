@@ -1,13 +1,6 @@
 # CalendarDialogOptions
 
-日历选择器弹窗选项。
-
-继承自[CalendarOptions](arkts-arkui-calendaroptions-i.md)。
-
-> **说明：**
->
-> 在应用窗口缩小过程中，弹窗的宽度会被不断压缩，当缩小到一定程度时会导致其内容无法完整显示，
-保证CalendarPickerDialog内容能够完整显示的最小窗口宽度为386vp。
+日历选择器弹窗选项。 继承自[CalendarOptions](arkts-arkui-calendaroptions-i.md)。 > **说明：** > > 在应用窗口缩小过程中，弹窗的宽度会被不断压缩，当缩小到一定程度时会导致其内容无法完整显示， 保证CalendarPickerDialog内容能够完整显示的最小窗口宽度为386vp。
 
 **继承/实现关系：** CalendarDialogOptions extends [CalendarOptions](arkts-arkui-calendaroptions-i.md)
 
@@ -21,12 +14,7 @@
 acceptButtonStyle?: PickerDialogButtonStyle
 ```
 
-设置确认按钮显示样式、样式和重要程度、角色、背景色、圆角、文本颜色、字号、字体粗细、字体样式、字体列表、
-按钮是否默认响应Enter键。
-
-**说明：**
-
-acceptButtonStyle与cancelButtonStyle中最多只能有一个primary字段配置为true，二者primary字段均配置为true时均不生效。
+设置确认按钮显示样式、样式和重要程度、角色、背景色、圆角、文本颜色、字号、字体粗细、字体样式、字体列表、 按钮是否默认响应Enter键。 **说明：** acceptButtonStyle与cancelButtonStyle中最多只能有一个primary字段配置为true，二者primary字段均配置为true时均不生效。
 
 **类型：** PickerDialogButtonStyle
 
@@ -44,14 +32,7 @@ acceptButtonStyle与cancelButtonStyle中最多只能有一个primary字段配置
 backgroundBlurStyle?: BlurStyle
 ```
 
-弹窗背板模糊材质。
-
-默认值：BlurStyle.COMPONENT_ULTRA_THICK
-
-**说明：**
-
-设置为BlurStyle.NONE即可关闭背景虚化。
-当设置了backgroundBlurStyle为非NONE值时，则不要设置backgroundColor，否则显示的颜色将不符合预期效果。
+弹窗背板模糊材质。 默认值：BlurStyle.COMPONENT_ULTRA_THICK **说明：** 设置为BlurStyle.NONE即可关闭背景虚化。 当设置了backgroundBlurStyle为非NONE值时，则不要设置backgroundColor，否则显示的颜色将不符合预期效果。
 
 **类型：** BlurStyle
 
@@ -89,13 +70,7 @@ backgroundBlurStyleOptions?: BackgroundBlurStyleOptions
 backgroundColor?: ResourceColor
 ```
 
-弹窗背板颜色。
-
-默认值：Color.Transparent
-
-**说明：**
-
-当设置了backgroundColor为非透明色时，backgroundBlurStyle需要设置为BlurStyle.NONE，否则显示的颜色将不符合预期效果。
+弹窗背板颜色。 默认值：Color.Transparent **说明：** 当设置了backgroundColor为非透明色时，backgroundBlurStyle需要设置为BlurStyle.NONE，否则显示的颜色将不符合预期效果。
 
 **类型：** ResourceColor
 
@@ -133,12 +108,7 @@ backgroundEffect?: BackgroundEffectOptions
 cancelButtonStyle?: PickerDialogButtonStyle
 ```
 
-设置取消按钮显示样式、样式和重要程度、角色、背景色、圆角、文本颜色、字号、字体粗细、字体样式、字体列表、
-按钮是否默认响应Enter键。
-
-**说明：**
-
-acceptButtonStyle与cancelButtonStyle中最多只能有一个primary字段配置为true，二者primary字段均配置为true时均不生效。
+设置取消按钮显示样式、样式和重要程度、角色、背景色、圆角、文本颜色、字号、字体粗细、字体样式、字体列表、 按钮是否默认响应Enter键。 **说明：** acceptButtonStyle与cancelButtonStyle中最多只能有一个primary字段配置为true，二者primary字段均配置为true时均不生效。
 
 **类型：** PickerDialogButtonStyle
 
@@ -156,12 +126,7 @@ acceptButtonStyle与cancelButtonStyle中最多只能有一个primary字段配置
 enableHoverMode?: boolean
 ```
 
-是否响应悬停态。
-
-- true：响应悬停态。
-- false：不响应悬停态。
-
-默认值：false
+是否响应悬停态。 - true：响应悬停态。 - false：不响应悬停态。 默认值：false
 
 **类型：** boolean
 
@@ -181,9 +146,7 @@ enableHoverMode?: boolean
 hoverModeArea?: HoverModeAreaType
 ```
 
-悬停态下弹窗默认展示区域。
-
-默认值：HoverModeAreaType.BOTTOM_SCREEN
+悬停态下弹窗默认展示区域。 默认值：HoverModeAreaType.BOTTOM_SCREEN
 
 **类型：** HoverModeAreaType
 
@@ -203,12 +166,7 @@ hoverModeArea?: HoverModeAreaType
 markToday?: boolean
 ```
 
-设置日历选择器弹窗中系统当前日期是否保持高亮显示。
-
-- true：系统当前日期在日历选择器弹窗内保持高亮显示。
-- false：系统当前日期在日历选择器弹窗内不保持高亮显示。
-
-默认值：false
+设置日历选择器弹窗中系统当前日期是否保持高亮显示。 - true：系统当前日期在日历选择器弹窗内保持高亮显示。 - false：系统当前日期在日历选择器弹窗内不保持高亮显示。 默认值：false
 
 **类型：** boolean
 
@@ -228,9 +186,7 @@ markToday?: boolean
 onAccept?: Callback<Date>
 ```
 
-点击弹窗中的“确定”按钮时触发该回调。
-
-回调函数的参数表示选中的日期值。
+点击弹窗中的“确定”按钮时触发该回调。 回调函数的参数表示选中的日期值。
 
 **类型：** Callback<Date>
 
@@ -266,9 +222,7 @@ onCancel?: VoidCallback
 onChange?: Callback<Date>
 ```
 
-选择弹窗中日期使当前选中项改变时触发该回调。
-
-回调函数的参数表示选中的日期值。
+选择弹窗中日期使当前选中项改变时触发该回调。 回调函数的参数表示选中的日期值。
 
 **类型：** Callback<Date>
 
@@ -286,17 +240,7 @@ onChange?: Callback<Date>
 onDidAppear?: VoidCallback
 ```
 
-弹窗弹出后的事件回调。
-
-**说明：**
-
-1.正常时序依次为：onWillAppear>>onDidAppear>>(onAccept/onCancel/onChange)>>onWillDisappear>>onDidDisappear。
-
-2.在onDidAppear内设置改变弹窗显示效果的回调事件，二次弹出生效。
-
-3.快速点击弹出，消失弹窗时，存在onWillDisappear在onDidAppear前生效。
-
-4. 当弹窗入场动效未完成时关闭弹窗，该回调不会触发。
+弹窗弹出后的事件回调。 **说明：** 1.正常时序依次为：onWillAppear>>onDidAppear>>(onAccept/onCancel/onChange)>>onWillDisappear>>onDidDisappear。 2.在onDidAppear内设置改变弹窗显示效果的回调事件，二次弹出生效。 3.快速点击弹出，消失弹窗时，存在onWillDisappear在onDidAppear前生效。 4. 当弹窗入场动效未完成时关闭弹窗，该回调不会触发。
 
 **类型：** VoidCallback
 
@@ -314,11 +258,7 @@ onDidAppear?: VoidCallback
 onDidDisappear?: VoidCallback
 ```
 
-弹窗消失后的事件回调。
-
-**说明：**
-
-1.正常时序依次为：onWillAppear>>onDidAppear>>(onAccept/onCancel/onChange)>>onWillDisappear>>onDidDisappear。
+弹窗消失后的事件回调。 **说明：** 1.正常时序依次为：onWillAppear>>onDidAppear>>(onAccept/onCancel/onChange)>>onWillDisappear>>onDidDisappear。
 
 **类型：** VoidCallback
 
@@ -336,13 +276,7 @@ onDidDisappear?: VoidCallback
 onWillAppear?: VoidCallback
 ```
 
-弹窗显示动效前的事件回调。
-
-**说明：**
-
-1.正常时序依次为：onWillAppear>>onDidAppear>>(onAccept/onCancel/onChange)>>onWillDisappear>>onDidDisappear。
-
-2.在onWillAppear内设置改变弹窗显示效果的回调事件，二次弹出生效。
+弹窗显示动效前的事件回调。 **说明：** 1.正常时序依次为：onWillAppear>>onDidAppear>>(onAccept/onCancel/onChange)>>onWillDisappear>>onDidDisappear。 2.在onWillAppear内设置改变弹窗显示效果的回调事件，二次弹出生效。
 
 **类型：** VoidCallback
 
@@ -360,13 +294,7 @@ onWillAppear?: VoidCallback
 onWillDisappear?: VoidCallback
 ```
 
-弹窗退出动效前的事件回调。
-
-**说明：**
-
-1.正常时序依次为：onWillAppear>>onDidAppear>>(onAccept/onCancel/onChange)>>onWillDisappear>>onDidDisappear。
-
-2.快速点击弹出，消失弹窗时，存在onWillDisappear在onDidAppear前生效。
+弹窗退出动效前的事件回调。 **说明：** 1.正常时序依次为：onWillAppear>>onDidAppear>>(onAccept/onCancel/onChange)>>onWillDisappear>>onDidDisappear。 2.快速点击弹出，消失弹窗时，存在onWillDisappear在onDidAppear前生效。
 
 **类型：** VoidCallback
 
@@ -384,9 +312,7 @@ onWillDisappear?: VoidCallback
 shadow?: ShadowOptions | ShadowStyle
 ```
 
-设置弹窗背板的阴影。
-
-当设备为2in1时，默认场景下，获焦时阴影值为ShadowStyle.OUTER_FLOATING_MD，失焦时为ShadowStyle.OUTER_FLOATING_SM。
+设置弹窗背板的阴影。 当设备为2in1时，默认场景下，获焦时阴影值为ShadowStyle.OUTER_FLOATING_MD，失焦时为ShadowStyle.OUTER_FLOATING_SM。
 
 **类型：** ShadowOptions | ShadowStyle
 

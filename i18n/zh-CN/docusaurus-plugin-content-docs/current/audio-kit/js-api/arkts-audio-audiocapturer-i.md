@@ -1,12 +1,6 @@
 # AudioCapturer
 
-提供音频采集的相关接口。
-
-在使用AudioCapturer的接口之前，需先通过[createAudioCapturer](arkts-audio-createaudiocapturer-f.md#createaudiocapturer-1)获取AudioCapturer实例。
-
-> **说明：**
->
-> - 本Interface首批接口从API version 8开始支持。
+提供音频采集的相关接口。 在使用AudioCapturer的接口之前，需先通过[createAudioCapturer](arkts-audio-createaudiocapturer-f.md#createaudiocapturer-1)获取AudioCapturer实例。 > **说明：** > > - 本Interface首批接口从API version 8开始支持。
 
 **起始版本：** 8
 
@@ -126,9 +120,7 @@ getAudioTimeSync(): number
 getAudioTimestampInfo(): Promise<AudioTimestampInfo>
 ```
 
-获取输入音频流时间戳和当前数据帧位置信息。
-
-该接口可以获取到音频通道实际录制位置（framePos）以及录制到该位置时候的时间戳（timestamp），时间戳单位为纳秒。
+获取输入音频流时间戳和当前数据帧位置信息。 该接口可以获取到音频通道实际录制位置（framePos）以及录制到该位置时候的时间戳（timestamp），时间戳单位为纳秒。
 
 **起始版本：** 19
 
@@ -320,9 +312,7 @@ getCurrentInputDevices(): AudioDeviceDescriptors
 getNoiseReductionMode(): NoiseReductionMode
 ```
 
-获取当前音频捕获器的降噪模式。
-模式将只考虑默认和设置的状态，音频输入设备和流并发将
-不被视为。
+获取当前音频捕获器的降噪模式。 模式将只考虑默认和设置的状态，音频输入设备和流并发将 不被视为。
 
 **起始版本：** 26.0.0
 
@@ -432,11 +422,7 @@ getStreamInfoSync(): AudioStreamInfo
 getSupportedNoiseReductionModes(): Array<NoiseReductionMode>
 ```
 
-获取当前设备平台支持的所有降噪模式。
-目前，降噪效果仅在使用
-{@link StreamUsage#Stream_USAGE_VOICE_MESSAGE}，其他支持的用法可能会在以后扩展。
-支持的模式只考虑音频格式和设备平台。
-不会考虑音频输入设备和流并发。
+获取当前设备平台支持的所有降噪模式。 目前，降噪效果仅在使用 {@link StreamUsage#Stream_USAGE_VOICE_MESSAGE}，其他支持的用法可能会在以后扩展。 支持的模式只考虑音频格式和设备平台。 不会考虑音频输入设备和流并发。
 
 **起始版本：** 26.0.0
 
@@ -628,9 +614,7 @@ off(type: 'readData', callback?: Callback<ArrayBuffer>): void
 on(type: 'markReach', frame: number, callback: Callback<number>): void
 ```
 
-监听标记到达事件（当采集的帧数达到frame参数的值时触发，仅调用一次）。使用callback异步回调。
-
-如果将frame设置为100，当采集帧数到达第100帧时，系统将上报信息。
+监听标记到达事件（当采集的帧数达到frame参数的值时触发，仅调用一次）。使用callback异步回调。 如果将frame设置为100，当采集帧数到达第100帧时，系统将上报信息。
 
 **起始版本：** 8
 
@@ -650,9 +634,7 @@ on(type: 'markReach', frame: number, callback: Callback<number>): void
 on(type: 'periodReach', frame: number, callback: Callback<number>): void
 ```
 
-监听标记到达事件（当采集的帧数达到frame参数的值时触发，即按周期上报信息）。使用callback异步回调。
-
-如果将frame设置为10，每渲染10帧数据均会上报信息（例如：第10帧、第20帧、第30帧......）。
+监听标记到达事件（当采集的帧数达到frame参数的值时触发，即按周期上报信息）。使用callback异步回调。 如果将frame设置为10，每渲染10帧数据均会上报信息（例如：第10帧、第20帧、第30帧......）。
 
 **起始版本：** 8
 
@@ -691,12 +673,7 @@ on(type: 'stateChange', callback: Callback<AudioState>): void
 on(type: 'audioInterrupt', callback: Callback<InterruptEvent>): void
 ```
 
-监听音频中断事件（当音频焦点发生变化时触发）。使用callback异步回调。
-
-AudioCapturer对象在start事件时获取焦点，在pause、stop等事件时释放焦点，无需开发者主动申请。
-
-调用此方法后，如果AudioCapturer对象获取焦点失败或发生中断事件（如被其他音频打断等），会收到[InterruptEvent](arkts-audio-interruptevent-i.md)。建议应用根据
-InterruptEvent的信息进行进一步处理。更多信息请参阅文档[音频焦点介绍](../../../../media/audio/audio-playback-concurrency.md)。
+监听音频中断事件（当音频焦点发生变化时触发）。使用callback异步回调。 AudioCapturer对象在start事件时获取焦点，在pause、stop等事件时释放焦点，无需开发者主动申请。 调用此方法后，如果AudioCapturer对象获取焦点失败或发生中断事件（如被其他音频打断等），会收到[InterruptEvent](arkts-audio-interruptevent-i.md)。建议应用根据 InterruptEvent的信息进行进一步处理。更多信息请参阅文档[音频焦点介绍](../../../../media/audio/audio-playback-concurrency.md)。
 
 **起始版本：** 10
 
@@ -774,11 +751,7 @@ on(type: 'audioCapturerChange', callback: Callback<AudioCapturerChangeInfo>): vo
 on(type: 'readData', callback: Callback<ArrayBuffer>): void
 ```
 
-监听音频数据读取回调事件（当需要读取音频流数据时触发）。使用callback异步回调。
-
-回调函数仅用来读取音频数据，请勿在回调函数中调用AudioCapturer相关接口。
-
-为了消除麦克风硬件设计带来的上电杂音，通常会对录音启动后的前100ms数据进行静音。
+监听音频数据读取回调事件（当需要读取音频流数据时触发）。使用callback异步回调。 回调函数仅用来读取音频数据，请勿在回调函数中调用AudioCapturer相关接口。 为了消除麦克风硬件设计带来的上电杂音，通常会对录音启动后的前100ms数据进行静音。
 
 **起始版本：** 11
 
@@ -893,11 +866,7 @@ release(): Promise<void>
 requestPlaybackCaptureStart(callback: Callback<PlaybackCaptureStartState>): void
 ```
 
-请求启动内录流接口，内录流只能通过该接口触发启动。使用callback异步回调。
-
-内录是指以系统内部音频数据作为音频源的输入类型，简称为内录，对应的流称为内录流。常用于录制目标设备应用发送到系统以供播放的音频。
-
-该接口为非阻塞接口，系统接收到内录启动请求后，会继续处理用户授权检查和内录流启动，最终结果通过回调函数返回。
+请求启动内录流接口，内录流只能通过该接口触发启动。使用callback异步回调。 内录是指以系统内部音频数据作为音频源的输入类型，简称为内录，对应的流称为内录流。常用于录制目标设备应用发送到系统以供播放的音频。 该接口为非阻塞接口，系统接收到内录启动请求后，会继续处理用户授权检查和内录流启动，最终结果通过回调函数返回。
 
 **起始版本：** 26.0.0
 
@@ -917,11 +886,7 @@ requestPlaybackCaptureStart(callback: Callback<PlaybackCaptureStartState>): void
 setIndependentAudioSessionStrategy(strategy: AudioSessionStrategy, behavior: number): void
 ```
 
-设置独立的音频会话策略和行为参数。
-
-> **说明：**
->
-> 当音频采集器在运行状态时调用此接口后，必须重新调用接口[start](arkts-audio-audiocapturer-i.md#start-1)使其生效。
+设置独立的音频会话策略和行为参数。 > **说明：** > > 当音频采集器在运行状态时调用此接口后，必须重新调用接口[start](arkts-audio-audiocapturer-i.md#start-1)使其生效。
 
 **起始版本：** 24
 
@@ -949,17 +914,7 @@ setIndependentAudioSessionStrategy(strategy: AudioSessionStrategy, behavior: num
 setMuteHint(mute: boolean): Promise<void>
 ```
 
-应用将当前录音流的自身静音状态传递给系统音频模块。<!--RP1-->该接口不会触发录音流静音，当前仅在部分PC/2in1设备上用于优化设备功耗。<!--RP1End-->使用Promise异步回调。
-
-> **说明：**
->
-> - 该接口用于向系统音频模块上报应用自身的静音状态，不会改变录音流的实际静音状态。
->
-> - 该接口仅在录音流处于运行态时允许调用，否则返回错误码6800103。
->
-> - 同一录音流同时设置流级静音提示接口（本接口）和会话级静音提示接口
-> [AudioSessionManager.setCapturerMuteHint](arkts-audio-audiosessionmanager-i.md#setcapturermutehint-1)时，流级
-> [setMuteHint](arkts-audio-audiocapturer-i.md#setmutehint-1)优先级更高，数值以流级设置值为准。
+应用将当前录音流的自身静音状态传递给系统音频模块。<!--RP1-->该接口不会触发录音流静音，当前仅在部分PC/2in1设备上用于优化设备功耗。<!--RP1End-->使用Promise异步回调。 > **说明：** > > - 该接口用于向系统音频模块上报应用自身的静音状态，不会改变录音流的实际静音状态。 > > - 该接口仅在录音流处于运行态时允许调用，否则返回错误码6800103。 > > - 同一录音流同时设置流级静音提示接口（本接口）和会话级静音提示接口 > [AudioSessionManager.setCapturerMuteHint](arkts-audio-audiosessionmanager-i.md#setcapturermutehint-1)时，流级 > [setMuteHint](arkts-audio-audiocapturer-i.md#setmutehint-1)优先级更高，数值以流级设置值为准。
 
 **起始版本：** 24
 
@@ -991,11 +946,7 @@ setMuteHint(mute: boolean): Promise<void>
 setNoiseReductionMode(noiseReductionMode: NoiseReductionMode): void
 ```
 
-设置当前音频捕获器的降噪模式。
-支持的模式需要通过{@link#getSupportedNoiseReduceModes}获取。
-实际效果可能因不同的音频设备而异，当有多个时将无效
-同时运行的录制流。
-只能在已创建和已停止状态下更改模式。
+设置当前音频捕获器的降噪模式。 支持的模式需要通过{@link#getSupportedNoiseReduceModes}获取。 实际效果可能因不同的音频设备而异，当有多个时将无效 同时运行的录制流。 只能在已创建和已停止状态下更改模式。
 
 **起始版本：** 26.0.0
 

@@ -14,9 +14,7 @@ Edge light animation mode enumeration.
 EDGELIGHT_AUTO = 0
 ```
 
-Adaptive edge light animation.
-
-Turned off on low-performance devices and turned on on medium/high-performance devices.
+Adaptive edge light animation. Turned off on low-performance devices and turned on on medium/high-performance devices.
 
 **Since:** 26.0.0
 

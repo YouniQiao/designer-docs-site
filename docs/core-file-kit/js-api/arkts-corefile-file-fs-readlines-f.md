@@ -12,8 +12,7 @@ import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventList
 declare function readLines(filePath: string, options?: Options): Promise<ReaderIterator>
 ```
 
-Reads the text content of a file line by line. This API uses a promise to return the result. Only the files in UTF-8
-format are supported.
+Reads the text content of a file line by line. This API uses a promise to return the result. Only the files in UTF-8 format are supported.
 
 **Since:** 11
 
@@ -57,8 +56,7 @@ format are supported.
 declare function readLines(filePath: string, callback: AsyncCallback<ReaderIterator>): void
 ```
 
-Reads a file text line by line. This API uses an asynchronous callback to return the result. Only the files in UTF-8
-format are supported.
+Reads a file text line by line. This API uses an asynchronous callback to return the result. Only the files in UTF-8 format are supported.
 
 **Since:** 11
 
@@ -95,8 +93,7 @@ format are supported.
 declare function readLines(filePath: string, options: Options, callback: AsyncCallback<ReaderIterator>): void
 ```
 
-Reads a file text line by line. This API uses an asynchronous callback to return the result. Only the files in UTF-8
-format are supported.
+Reads a file text line by line. This API uses an asynchronous callback to return the result. Only the files in UTF-8 format are supported.
 
 **Since:** 11
 

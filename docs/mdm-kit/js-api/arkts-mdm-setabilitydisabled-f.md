@@ -12,9 +12,7 @@ import { applicationManager } from '@kit.MDMKit';
 function setAbilityDisabled(admin: Want, bundleName: string, accountId: number, abilityName: string, isDisabled: boolean): void
 ```
 
-Sets whether to disable the Ability component of a specified application (system application or third-party
-application). Currently, only the UIAbility type is supported. After the UIAbility type is disabled, the UI of the
-Ability component cannot be started.
+Sets whether to disable the Ability component of a specified application (system application or third-party application). Currently, only the UIAbility type is supported. After the UIAbility type is disabled, the UI of the Ability component cannot be started.
 
 **Since:** 23
 

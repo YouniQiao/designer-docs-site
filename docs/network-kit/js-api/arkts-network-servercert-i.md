@@ -1,7 +1,6 @@
 # ServerCert
 
-The serverCert field of the server certificate, which includes two attributes:
-File paths of server certificate (certPath) and certificate private key (keyPath). Only support PEM format.
+The serverCert field of the server certificate, which includes two attributes: File paths of server certificate (certPath) and certificate private key (keyPath). Only support PEM format.
 
 **Since:** 24
 

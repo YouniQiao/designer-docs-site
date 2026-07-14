@@ -12,8 +12,7 @@ import { abilityConnectionManager } from '@kit.DistributedServiceKit';
 function connect(sessionId: number): Promise<ConnectResult>
 ```
 
-Sets up a UIAbility connection after a collaboration session is created and the session ID is obtained. This API
-uses a promise to return the result.
+Sets up a UIAbility connection after a collaboration session is created and the session ID is obtained. This API uses a promise to return the result.
 
 **Since:** 18
 

@@ -185,9 +185,7 @@ usageStatistics.queryModuleUsageRecords((err: BusinessError, res: Array<usageSta
 function queryModuleUsageRecords(): Promise<Array<HapModuleInfo>>
 ```
 
-查询FA模型下各应用不用Hap包的使用记录（不超过1000条）。若Hap包中存在FA卡片，使用信息中也包含卡片信息。使用Promise异步回调。
-
-使用Promise形式返回不超过1000条FA使用记录，FA使用记录由近及远排序。
+查询FA模型下各应用不用Hap包的使用记录（不超过1000条）。若Hap包中存在FA卡片，使用信息中也包含卡片信息。使用Promise异步回调。 使用Promise形式返回不超过1000条FA使用记录，FA使用记录由近及远排序。
 
 **起始版本：** 9
 

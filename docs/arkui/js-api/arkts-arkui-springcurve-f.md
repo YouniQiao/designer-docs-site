@@ -12,8 +12,7 @@ import { curves } from '@kit.ArkUI';
 function springCurve(velocity: number, mass: number, stiffness: number, damping: number): ICurve
 ```
 
-Creates a spring curve. The curve shape is subject to the spring parameters, and the animation duration is subject
-to the **duration** parameter in **animation** and **animateTo**.
+Creates a spring curve. The curve shape is subject to the spring parameters, and the animation duration is subject to the **duration** parameter in **animation** and **animateTo**.
 
 **Since:** 9
 

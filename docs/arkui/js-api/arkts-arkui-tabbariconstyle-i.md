@@ -12,13 +12,7 @@ Represents a label icon style object.
 selectedColor?: ResourceColor
 ```
 
-Color of the label icon when it is selected.
-
-Default value: **#FF007DFF**
-
-**NOTE**
-
-This attribute only applies to an SVG image. Once set, the fill color will replace that of the SVG image.
+Color of the label icon when it is selected. Default value: **#FF007DFF** **NOTE** This attribute only applies to an SVG image. Once set, the fill color will replace that of the SVG image.
 
 **Type:** ResourceColor
 
@@ -38,13 +32,7 @@ This attribute only applies to an SVG image. Once set, the fill color will repla
 unselectedColor?: ResourceColor
 ```
 
-Color of the label icon when it is not selected.
-
-Default value: **#33182431**
-
-**NOTE**
-
-This attribute only applies to an SVG image. Once set, the fill color will replace that of the SVG image.
+Color of the label icon when it is not selected. Default value: **#33182431** **NOTE** This attribute only applies to an SVG image. Once set, the fill color will replace that of the SVG image.
 
 **Type:** ResourceColor
 

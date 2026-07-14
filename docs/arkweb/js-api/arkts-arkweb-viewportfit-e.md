@@ -26,8 +26,7 @@ The entire web page is visible. Default value.
 CONTAINS = 1
 ```
 
-The initial layout viewport and the visual viewport are confined within the bounding rectangle of the device's
-physical screen.
+The initial layout viewport and the visual viewport are confined within the bounding rectangle of the device's physical screen.
 
 **Since:** 12
 
@@ -41,8 +40,7 @@ physical screen.
 COVER = 2
 ```
 
-The initial layout viewport and the visual viewport are confined within the bounding rectangle of the device's
-physical screen.
+The initial layout viewport and the visual viewport are confined within the bounding rectangle of the device's physical screen.
 
 **Since:** 12
 

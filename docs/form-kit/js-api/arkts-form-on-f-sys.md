@@ -12,8 +12,7 @@ import { formObserver } from '@kit.FormKit';
 function on(type: 'formAdd', observerCallback: Callback<formInfo.RunningFormInfo>): void
 ```
 
-Listens to the event of add form.
-<p>You can use this method to listen to the event of add form.</p>
+Listens to the event of add form. <p>You can use this method to listen to the event of add form.</p>
 
 **Since:** 10
 
@@ -44,8 +43,7 @@ Listens to the event of add form.
 function on(type: 'formAdd', hostBundleName: string, observerCallback: Callback<formInfo.RunningFormInfo>): void
 ```
 
-Listens to the event of add form.
-<p>You can use this method to listen to the event of add form for a particular card host.</p>
+Listens to the event of add form. <p>You can use this method to listen to the event of add form for a particular card host.</p>
 
 **Since:** 10
 
@@ -77,8 +75,7 @@ Listens to the event of add form.
 function on(type: 'formRemove', observerCallback: Callback<formInfo.RunningFormInfo>): void
 ```
 
-Listens to the event of remove form.
-<p>You can use this method to listen to the event of remove form.</p>
+Listens to the event of remove form. <p>You can use this method to listen to the event of remove form.</p>
 
 **Since:** 10
 
@@ -109,8 +106,7 @@ Listens to the event of remove form.
 function on(type: 'formRemove', hostBundleName: string, observerCallback: Callback<formInfo.RunningFormInfo>): void
 ```
 
-Listens to the event of remove form.
-<p>You can use this method to listen to the event of remove form for a particular card host.</p>
+Listens to the event of remove form. <p>You can use this method to listen to the event of remove form for a particular card host.</p>
 
 **Since:** 10
 
@@ -142,8 +138,7 @@ Listens to the event of remove form.
 function on(type: 'notifyVisible', observerCallback: Callback<Array<formInfo.RunningFormInfo>>): void
 ```
 
-Listens to the event of notifyVisible type change.
-<p>You can use this method to listen to the event of notifyVisible type change.</p>
+Listens to the event of notifyVisible type change. <p>You can use this method to listen to the event of notifyVisible type change.</p>
 
 **Since:** 10
 
@@ -178,8 +173,7 @@ function on(
   ): void
 ```
 
-Listens to the event of notifyVisible type change.
-<p>You can use this method to listen to the event of notifyVisible type change for a particular card host.</p>
+Listens to the event of notifyVisible type change. <p>You can use this method to listen to the event of notifyVisible type change for a particular card host.</p>
 
 **Since:** 10
 
@@ -211,8 +205,7 @@ Listens to the event of notifyVisible type change.
 function on(type: 'notifyInvisible', observerCallback: Callback<Array<formInfo.RunningFormInfo>>): void
 ```
 
-Listens to the event of notifyInvisible type change.
-<p>You can use this method to listen to the event of notifyInvisible type change.</p>
+Listens to the event of notifyInvisible type change. <p>You can use this method to listen to the event of notifyInvisible type change.</p>
 
 **Since:** 10
 
@@ -247,8 +240,7 @@ function on(
   ): void
 ```
 
-Listens to the event of notifyInvisible type change.
-<p>You can use this method to listen to the event of notifyInvisible type change for a particular card host.</p>
+Listens to the event of notifyInvisible type change. <p>You can use this method to listen to the event of notifyInvisible type change for a particular card host.</p>
 
 **Since:** 10
 
@@ -280,8 +272,7 @@ Listens to the event of notifyInvisible type change.
 function on(type: 'router', observerCallback: Callback<formInfo.RunningFormInfo>): void
 ```
 
-Router event listening in registered form.
-<p>This interface requires permission to receive callback.</p>
+Router event listening in registered form. <p>This interface requires permission to receive callback.</p>
 
 **Since:** 11
 
@@ -312,8 +303,7 @@ Router event listening in registered form.
 function on(type: 'router', hostBundleName: string, observerCallback: Callback<formInfo.RunningFormInfo>): void
 ```
 
-Router event listening in registered form.
-<p>This interface requires permission to receive callback.</p>
+Router event listening in registered form. <p>This interface requires permission to receive callback.</p>
 
 **Since:** 11
 
@@ -345,8 +335,7 @@ Router event listening in registered form.
 function on(type: 'message', observerCallback: Callback<formInfo.RunningFormInfo>): void
 ```
 
-Message event listening in registered form.
-<p>This interface requires permission to receive callback.</p>
+Message event listening in registered form. <p>This interface requires permission to receive callback.</p>
 
 **Since:** 11
 
@@ -377,8 +366,7 @@ Message event listening in registered form.
 function on(type: 'message', hostBundleName: string, observerCallback: Callback<formInfo.RunningFormInfo>): void
 ```
 
-Message event listening in registered form.
-<p>This interface requires permission to receive callback.</p>
+Message event listening in registered form. <p>This interface requires permission to receive callback.</p>
 
 **Since:** 11
 
@@ -410,8 +398,7 @@ Message event listening in registered form.
 function on(type: 'call', observerCallback: Callback<formInfo.RunningFormInfo>): void
 ```
 
-Call event listening in registered form.
-<p>This interface requires permission to receive callback.</p>
+Call event listening in registered form. <p>This interface requires permission to receive callback.</p>
 
 **Since:** 11
 
@@ -442,8 +429,7 @@ Call event listening in registered form.
 function on(type: 'call', hostBundleName: string, observerCallback: Callback<formInfo.RunningFormInfo>): void
 ```
 
-Call event listening in registered form.
-<p>This interface requires permission to receive callback.</p>
+Call event listening in registered form. <p>This interface requires permission to receive callback.</p>
 
 **Since:** 11
 

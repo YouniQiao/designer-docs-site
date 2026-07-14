@@ -12,8 +12,7 @@ import { bundleManager } from '@kit.AbilityKit';
 function getApplicationLabel(bundleName: string, appIndex: number): Promise<string>
 ```
 
-Obtains the name of an application with the specified package name and clone index.
-This API uses a promise to return the result.
+Obtains the name of an application with the specified package name and clone index. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 

@@ -12,8 +12,7 @@ import { applicationManager } from '@kit.MDMKit';
 function getDisallowedRunningBundles(admin: Want, callback: AsyncCallback<Array<string>>): void
 ```
 
-Obtains applications that are not allowed to run by the current user. This API uses an asynchronous callback to
-return the result.
+Obtains applications that are not allowed to run by the current user. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -75,8 +74,7 @@ applicationManager.getDisallowedRunningBundles(wantTemp, (err, result) => {
 function getDisallowedRunningBundles(admin: Want, userId: number, callback: AsyncCallback<Array<string>>): void
 ```
 
-Obtains an application from the applications that are not allowed to run by the current user (specified by
-**userId**). This API uses an asynchronous callback to return the result.
+Obtains an application from the applications that are not allowed to run by the current user (specified by **userId**). This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -139,8 +137,7 @@ applicationManager.getDisallowedRunningBundles(wantTemp, 100, (err, result) => {
 function getDisallowedRunningBundles(admin: Want, userId?: number): Promise<Array<string>>
 ```
 
-Obtains applications that are not allowed to run by the current user or a specified user. This API uses a promise
-to return the result.
+Obtains applications that are not allowed to run by the current user or a specified user. This API uses a promise to return the result.
 
 **Since:** 10
 

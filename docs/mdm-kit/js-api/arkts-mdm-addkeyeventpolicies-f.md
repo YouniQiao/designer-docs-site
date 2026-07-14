@@ -12,10 +12,7 @@ import { systemManager } from '@kit.MDMKit';
 function addKeyEventPolicies(admin: Want, keyPolicies: Array<KeyEventPolicy>): void
 ```
 
-Adds a key event handling policy. When the system triggers a key event, if the event matches the delivered key
-event policy, the MDM app will be notified via the
-[EnterpriseAdminExtensionAbility.onKeyEvent](arkts-mdm-enterpriseadminextensionability-c.md#onkeyevent-1)
-callback, with the key event information of the matched policy carried in the callback.
+Adds a key event handling policy. When the system triggers a key event, if the event matches the delivered key event policy, the MDM app will be notified via the [EnterpriseAdminExtensionAbility.onKeyEvent](arkts-mdm-enterpriseadminextensionability-c.md#onkeyevent-1) callback, with the key event information of the matched policy carried in the callback.
 
 **Since:** 23
 

@@ -1,13 +1,6 @@
 # Font
 
-Describes the attributes used for text rendering, such as size and typeface.
-
-> **NOTE**
->
-> - This module uses the physical pixel unit, px.
->
-> - This module operates under a single-threaded model. The caller needs to manage thread safety and context state
-> transitions.
+Describes the attributes used for text rendering, such as size and typeface. > **NOTE** > > - This module uses the physical pixel unit, px. > > - This module operates under a single-threaded model. The caller needs to manage thread safety and context state > transitions.
 
 **Since:** 11
 
@@ -563,8 +556,7 @@ Checks whether the font follows the theme font. By default, the font follows the
 measureSingleCharacter(text: string): number
 ```
 
-Measures the width of a single character. If the typeface of the current font does not support the character to
-measure, the system typeface is used to measure the character width.
+Measures the width of a single character. If the typeface of the current font does not support the character to measure, the system typeface is used to measure the character width.
 
 **Since:** 12
 
@@ -596,8 +588,7 @@ measure, the system typeface is used to measure the character width.
 measureSingleCharacterWithFeatures(text: string, features: Array<FontFeature>): number
 ```
 
-Measures the width of a single character with font features. If the typeface of the current font does not support
-the character to measure, the system typeface is used to measure the character width.
+Measures the width of a single character with font features. If the typeface of the current font does not support the character to measure, the system typeface is used to measure the character width.
 
 **Since:** 20
 
@@ -630,12 +621,7 @@ the character to measure, the system typeface is used to measure the character w
 measureText(text: string, encoding: TextEncoding): number
 ```
 
-Measures the text width.
-
-> **NOTE**
->
-> This API is used to measure the text width of the original string. To measure the text width after typesetting,
-> call [measure.measureText](../../../../reference/apis-arkui/arkts-apis-uicontext-measureutils.md#measuretext12).
+Measures the text width. > **NOTE** > > This API is used to measure the text width of the original string. To measure the text width after typesetting, > call [measure.measureText](../../../../reference/apis-arkui/arkts-apis-uicontext-measureutils.md#measuretext12).
 
 **Since:** 11
 
@@ -876,8 +862,7 @@ Sets a horizontal skew factor for this font.
 setThemeFontFollowed(followed: boolean): void
 ```
 
-Sets whether to follow the theme font. When **followed** is set to **true**, the theme font is used if it is
-enabled by the system and no typeface is set.
+Sets whether to follow the theme font. When **followed** is set to **true**, the theme font is used if it is enabled by the system and no typeface is set.
 
 **Since:** 15
 

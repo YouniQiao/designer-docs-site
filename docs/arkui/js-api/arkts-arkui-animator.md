@@ -2,7 +2,6 @@
 
 Defines Animator.
 
-
 ## Animator
 
 ```TypeScript

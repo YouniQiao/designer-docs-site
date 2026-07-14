@@ -1,7 +1,6 @@
 # CaptionsManager
 
-字幕配置管理，在调用CaptionsManager的方法前，需要先通过 [accessibility.getCaptionsManager()](arkts-accessibility-getcaptionsmanager-f.md#getcaptionsmanager-1)获取
-CaptionsManager实例。
+字幕配置管理，在调用CaptionsManager的方法前，需要先通过 [accessibility.getCaptionsManager()](arkts-accessibility-getcaptionsmanager-f.md#getcaptionsmanager-1)获取 CaptionsManager实例。
 
 **起始版本：** 8
 
@@ -129,15 +128,7 @@ struct Index {
 on(type: 'enableChange', callback: Callback<boolean>): void
 ```
 
-监听字幕配置启用状态变化事件，使用callback异步回调。
-
-> **说明：**
->
-> - 注册监听的callback参数应使用具名函数而非匿名函数，否则每次调用时会创建一个新的底层对象，引起内存泄漏问题。
->
-> - 调用此方法后，务必在对象生命周期结束前使用
-> [off('enableChange')](arkts-accessibility-captionsmanager-i.md#off-1)
-> 取消监听，否则可能会导致崩溃。
+监听字幕配置启用状态变化事件，使用callback异步回调。 > **说明：** > > - 注册监听的callback参数应使用具名函数而非匿名函数，否则每次调用时会创建一个新的底层对象，引起内存泄漏问题。 > > - 调用此方法后，务必在对象生命周期结束前使用 > [off('enableChange')](arkts-accessibility-captionsmanager-i.md#off-1) > 取消监听，否则可能会导致崩溃。
 
 **起始版本：** 8
 
@@ -190,15 +181,7 @@ struct Index {
 on(type: 'styleChange', callback: Callback<CaptionsStyle>): void
 ```
 
-监听字幕风格变化事件，使用callback异步回调。
-
-> **说明：**
->
-> - 注册监听的callback参数应使用具名函数而非匿名函数，否则每次调用时会创建一个新的底层对象，引起内存泄漏问题。
->
-> - 调用此方法后，务必在对象生命周期结束前使用
-> [off('styleChange')](arkts-accessibility-captionsmanager-i.md#off-2)
-> 取消监听，否则可能会导致崩溃。
+监听字幕风格变化事件，使用callback异步回调。 > **说明：** > > - 注册监听的callback参数应使用具名函数而非匿名函数，否则每次调用时会创建一个新的底层对象，引起内存泄漏问题。 > > - 调用此方法后，务必在对象生命周期结束前使用 > [off('styleChange')](arkts-accessibility-captionsmanager-i.md#off-2) > 取消监听，否则可能会导致崩溃。
 
 **起始版本：** 8
 

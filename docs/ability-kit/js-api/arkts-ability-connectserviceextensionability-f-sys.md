@@ -12,12 +12,7 @@ import { agentManager } from '@kit.AbilityKit';
 function connectServiceExtensionAbility(context: AgentExtensionContext, want: Want, callback: ConnectOptions): number
 ```
 
-Connects an AgentExtensionAbility to a ServiceExtensionAbility.
-If the target service extension ability is visible, you can connect to it.
-If the target service extension ability is invisible, you need to apply for
-permission:ohos.permission.START_INVISIBLE_ABILITY to connect to it.
-If the target service extension ability is on a remote device, you need to apply for
-permission:ohos.permission.DISTRIBUTED_DATASYNC.
+Connects an AgentExtensionAbility to a ServiceExtensionAbility. If the target service extension ability is visible, you can connect to it. If the target service extension ability is invisible, you need to apply for permission:ohos.permission.START_INVISIBLE_ABILITY to connect to it. If the target service extension ability is on a remote device, you need to apply for permission:ohos.permission.DISTRIBUTED_DATASYNC.
 
 **Since:** 26.0.0
 

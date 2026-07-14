@@ -1,8 +1,6 @@
 # Tabs properties/events
 
-In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following attributes are supported.
-
-In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following events are supported.
+In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following attributes are supported. In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following events are supported.
 
 **Inheritance/Implementation:** TabsAttribute extends [CommonMethod<TabsAttribute>](CommonMethod<TabsAttribute>)
 
@@ -16,9 +14,7 @@ In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-ap
 animationCurve(curve: Curve | ICurve)
 ```
 
-Sets the tab switching animation curve for the **Tabs** component. For details about commonly used curves, refer to
-the [Curve](arkts-arkui-curve-e.md) enum. Custom interpolation curve objects can also be created using the APIs provided in
-the [interpolation calculation](../arkts-apis/arkts-curves.md) module.
+Sets the tab switching animation curve for the **Tabs** component. For details about commonly used curves, refer to the [Curve](arkts-arkui-curve-e.md) enum. Custom interpolation curve objects can also be created using the APIs provided in the [interpolation calculation](../arkts-apis/arkts-curves.md) module.
 
 **Since:** 20
 
@@ -40,18 +36,7 @@ the [interpolation calculation](../arkts-apis/arkts-curves.md) module.
 animationDuration(value: number)
 ```
 
-Sets the duration of the tab switching animation for the **Tabs** component.
-
-If **animationCurve** is not set, **animationDuration** only controls the duration of tab switching animations
-triggered by tapping a tab or calling the **changeIndex** API, and page-turning animations triggered by swiping in
-**TabContent**, the duration is determined by the intrinsic parameters of the default curve
-**interpolatingSpring(-1, 1, 228, 30)**.
-
-For details about curves unaffected by **animationDuration**, see
-[Interpolation Calculation](../arkts-apis/arkts-curves.md). These curves include curves of type
-[springMotion](../arkts-apis/arkts-arkui-springmotion-f.md#springmotion-1),
-[responsiveSpringMotion](../arkts-apis/arkts-arkui-responsivespringmotion-f.md#responsivespringmotion-1), and
-[interpolatingSpring](../arkts-apis/arkts-arkui-interpolatingspring-f.md#interpolatingspring-1).
+Sets the duration of the tab switching animation for the **Tabs** component. If **animationCurve** is not set, **animationDuration** only controls the duration of tab switching animations triggered by tapping a tab or calling the **changeIndex** API, and page-turning animations triggered by swiping in **TabContent**, the duration is determined by the intrinsic parameters of the default curve **interpolatingSpring(-1, 1, 228, 30)**. For details about curves unaffected by **animationDuration**, see [Interpolation Calculation](../arkts-apis/arkts-curves.md). These curves include curves of type [springMotion](../arkts-apis/arkts-arkui-springmotion-f.md#springmotion-1), [responsiveSpringMotion](../arkts-apis/arkts-arkui-responsivespringmotion-f.md#responsivespringmotion-1), and [interpolatingSpring](../arkts-apis/arkts-arkui-interpolatingspring-f.md#interpolatingspring-1).
 
 **Since:** 7
 
@@ -71,12 +56,7 @@ For details about curves unaffected by **animationDuration**, see
 animationMode(mode: Optional<AnimationMode>)
 ```
 
-Sets the animation mode for tab switching initiated by clicking a specific tab or by calling the **changeIndex**
-API of **TabsController**.
-
-> **NOTE**
->
-> This attribute cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
+Sets the animation mode for tab switching initiated by clicking a specific tab or by calling the **changeIndex** API of **TabsController**. > **NOTE** > > This attribute cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 12
 
@@ -98,11 +78,7 @@ API of **TabsController**.
 barBackgroundBlurStyle(value: BlurStyle)
 ```
 
-Sets the background blur style of the tab bar.
-
-> **NOTE**
->
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
+Sets the background blur style of the tab bar. > **NOTE** > > This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
 
 **Since:** 11
 
@@ -124,8 +100,7 @@ Sets the background blur style of the tab bar.
 barBackgroundBlurStyle(style: BlurStyle, options: BackgroundBlurStyleOptions)
 ```
 
-Defines the blur style to apply between the background and content of a tab bar. It encapsulates various blur
-radius, mask color, mask opacity, saturation, and brightness values through enum values.
+Defines the blur style to apply between the background and content of a tab bar. It encapsulates various blur radius, mask color, mask opacity, saturation, and brightness values through enum values.
 
 **Since:** 18
 
@@ -214,9 +189,7 @@ Enable floating style for bar.
 barGridAlign(value: BarGridColumnOptions)
 ```
 
-Sets the visible area of the tab bar in grid mode. For details, see **BarGridColumnOptions**. This attribute is
-effective only in horizontal mode. It is not applicable to
-[XS, XL, and XXL devices](../../../../ui/arkts-layout-development-grid-layout.md#breakpoints).
+Sets the visible area of the tab bar in grid mode. For details, see **BarGridColumnOptions**. This attribute is effective only in horizontal mode. It is not applicable to [XS, XL, and XXL devices](../../../../ui/arkts-layout-development-grid-layout.md#breakpoints).
 
 **Since:** 10
 
@@ -238,14 +211,7 @@ effective only in horizontal mode. It is not applicable to
 barHeight(value: Length)
 ```
 
-Sets the height of the tab bar. For horizontal **Tabs** components, you can set the height to **'auto'** to allow
-the tab bar to automatically adapt to the height of its child components. If the height is set to a value less than
-0 or greater than the height of the **Tabs** component, the default value is used.
-
-In versions earlier than API version 14, setting **barHeight** to a fixed value prevents the tab bar from extending
-beyond the bottom safe area. Since API version 14, the [safeAreaPadding](arkts-arkui-commonmethod-c.md#safeareapadding-1)
-attribute is supported. When **safeAreaPadding** is set to 0 or is not explicitly set, the tab bar is allowed to
-extend beyond the bottom safe area.
+Sets the height of the tab bar. For horizontal **Tabs** components, you can set the height to **'auto'** to allow the tab bar to automatically adapt to the height of its child components. If the height is set to a value less than 0 or greater than the height of the **Tabs** component, the default value is used. In versions earlier than API version 14, setting **barHeight** to a fixed value prevents the tab bar from extending beyond the bottom safe area. Since API version 14, the [safeAreaPadding](arkts-arkui-commonmethod-c.md#safeareapadding-1) attribute is supported. When **safeAreaPadding** is set to 0 or is not explicitly set, the tab bar is allowed to extend beyond the bottom safe area.
 
 **Since:** 7
 
@@ -265,10 +231,7 @@ extend beyond the bottom safe area.
 barHeight(height: Length, noMinHeightLimit: boolean)
 ```
 
-Sets the height of the tab bar. For horizontal **Tabs** components, you can set the height to **'auto'** to allow
-the tab bar to automatically adapt to the height of its child components; you can also set **noMinHeightLimit** to
-**true** so that the adaptive height can be less than the default tab bar height. If the height is set to a value
-less than 0 or greater than the height of the **Tabs** component, the default value is used.
+Sets the height of the tab bar. For horizontal **Tabs** components, you can set the height to **'auto'** to allow the tab bar to automatically adapt to the height of its child components; you can also set **noMinHeightLimit** to **true** so that the adaptive height can be less than the default tab bar height. If the height is set to a value less than 0 or greater than the height of the **Tabs** component, the default value is used.
 
 **Since:** 20
 
@@ -399,8 +362,7 @@ Sets the position of the **Tabs** component.
 barWidth(value: Length)
 ```
 
-Sets the width of the tab bar. If the set value is less than 0 or greater than the width of the **Tabs** component,
-the default value is used.
+Sets the width of the tab bar. If the set value is less than 0 or greater than the width of the **Tabs** component, the default value is used.
 
 **Since:** 7
 
@@ -420,8 +382,7 @@ the default value is used.
 cachedMaxCount(count: number, mode: TabsCacheMode)
 ```
 
-Sets the maximum number of child components to cache and the caching mode. If this attribute is not set, all child
-components are cached by default and are not released after being cached.
+Sets the maximum number of child components to cache and the caching mode. If this attribute is not set, all child components are cached by default and are not released after being cached.
 
 **Since:** 19
 
@@ -444,32 +405,7 @@ components are cached by default and are not released after being cached.
 customContentTransition(delegate: TabsCustomContentTransitionCallback)
 ```
 
-Defines a custom tab page transition animation.
-
-Instructions:
-
-1. When a custom animation is used, the default transition animation of the **Tabs** component is disabled,
-and the tab pages cannot be switched by swipe gestures.
-2. Setting this attribute to **undefined** disables the custom transition animation and reverts to the component's
-default transition animation.
-3. Currently, the custom animation cannot be interrupted.
-4. Currently, the custom animation can be triggered only in two scenarios: clicking a tab and
-calling the TabsController.changeIndex() API.
-5. When a custom animation is used, all events except **onGestureSwipe** of the **Tabs** component are supported.
-6. The triggering time of the **onChange** and **onAnimationEnd** events needs to be specified.
-If the second custom animation is triggered during the execution of the first custom animation,
-the **onChange** and **onAnimationEnd** events of the first custom animation are triggered
-when the second custom animation starts.
-7. When a custom animation is used, the layout mode of the page involved in the animation is changed to **Stack**.
-If the **zIndex** attribute is not set for related pages, the **zIndex** values of all pages are the same.
-In this case, the pages are rendered in the order in which they are added to the component tree (that is,
-the sequence of page indexes). In light of this, to control the rendering levels of pages, set the **zIndex**
-attribute of the pages.
-8. This attribute cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
-
-> **NOTE**
->
-> This API can be called in [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
+Defines a custom tab page transition animation. Instructions: 1. When a custom animation is used, the default transition animation of the **Tabs** component is disabled, and the tab pages cannot be switched by swipe gestures. 2. Setting this attribute to **undefined** disables the custom transition animation and reverts to the component's default transition animation. 3. Currently, the custom animation cannot be interrupted. 4. Currently, the custom animation can be triggered only in two scenarios: clicking a tab and calling the TabsController.changeIndex() API. 5. When a custom animation is used, all events except **onGestureSwipe** of the **Tabs** component are supported. 6. The triggering time of the **onChange** and **onAnimationEnd** events needs to be specified. If the second custom animation is triggered during the execution of the first custom animation, the **onChange** and **onAnimationEnd** events of the first custom animation are triggered when the second custom animation starts. 7. When a custom animation is used, the layout mode of the page involved in the animation is changed to **Stack**. If the **zIndex** attribute is not set for related pages, the **zIndex** values of all pages are the same. In this case, the pages are rendered in the order in which they are added to the component tree (that is, the sequence of page indexes). In light of this, to control the rendering levels of pages, set the **zIndex** attribute of the pages. 8. This attribute cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1). > **NOTE** > > This API can be called in [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
 
 **Since:** 11
 
@@ -513,11 +449,7 @@ Sets the divider between the **TabBar** and **TabContent** components.
 edgeEffect(edgeEffect: Optional<EdgeEffect>)
 ```
 
-Sets the edge effect used when the boundary of the scrolling area is reached.
-
-> **NOTE**
->
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 17.
+Sets the edge effect used when the boundary of the scrolling area is reached. > **NOTE** > > This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 17.
 
 **Since:** 12
 
@@ -539,9 +471,7 @@ Sets the edge effect used when the boundary of the scrolling area is reached.
 fadingEdge(value: boolean)
 ```
 
-Sets whether the tabs fade out when they exceed the container width. It is recommended that this attribute be used
-together with the **barBackgroundColor** attribute. If **barBackgroundColor** is not defined, the default fade
-effect shows a white gradient at the container's edge.
+Sets whether the tabs fade out when they exceed the container width. It is recommended that this attribute be used together with the **barBackgroundColor** attribute. If **barBackgroundColor** is not defined, the default fade effect shows a white gradient at the container's edge.
 
 **Since:** 10
 
@@ -563,10 +493,7 @@ effect shows a white gradient at the container's edge.
 nestedScroll(value: TabsNestedScrollMode | undefined)
 ```
 
-Sets the nested scrolling mode of the **Tabs** component and its parent component. If this API is not called, the
-default nested scrolling mode is [SELF_ONLY](arkts-arkui-tabsnestedscrollmode-e.md).
-
-**Model constraint**: This API can be used only in the stage model.
+Sets the nested scrolling mode of the **Tabs** component and its parent component. If this API is not called, the default nested scrolling mode is [SELF_ONLY](arkts-arkui-tabsnestedscrollmode-e.md). **Model constraint**: This API can be used only in the stage model.
 
 **Since:** 24
 
@@ -588,9 +515,7 @@ default nested scrolling mode is [SELF_ONLY](arkts-arkui-tabsnestedscrollmode-e.
 onAnimationEnd(handler: OnTabsAnimationEndCallback)
 ```
 
-Triggered when the tab switching animation is completed, including cases where the gesture is interrupted during
-animation. This event is not triggered when **animationDuration** is set to **0**, which effectively disables the
-animation.
+Triggered when the tab switching animation is completed, including cases where the gesture is interrupted during animation. This event is not triggered when **animationDuration** is set to **0**, which effectively disables the animation.
 
 **Since:** 11
 
@@ -612,8 +537,7 @@ animation.
 onAnimationStart(handler: OnTabsAnimationStartCallback)
 ```
 
-Triggered when the transition animation starts. If [animationDuration](TabsAttribute#animationDuration) is
-set to **0** and [scrollable](TabsAttribute#scrollable) is set to **false**, this callback is not triggered.
+Triggered when the transition animation starts. If [animationDuration](TabsAttribute#animationDuration) is set to **0** and [scrollable](TabsAttribute#scrollable) is set to **false**, this callback is not triggered.
 
 **Since:** 11
 
@@ -635,26 +559,7 @@ set to **0** and [scrollable](TabsAttribute#scrollable) is set to **false**, thi
 onChange(event: Callback<number>)
 ```
 
-Triggered after the active tab changes.
-
-This event is triggered when any of the following occurs:
-
-1. After completing a swipe-triggered tab switching animation.
-
-2. After the active tab changes by calling the [changeIndex](arkts-arkui-tabscontroller-c.md#changeindex-1) API of [Controller](arkts-arkui-tabscontroller-c.md).
-
-3. After the active tab changes by updating the index through the bound [state variable](../../../../ui/state-management/arkts-state.md).
-
-4. After the active tab changes by tapping a tab in the tab bar.
-
-> **NOTE**
->
-> When a custom tab is used, relying solely on the **onChange** event for synchronization between tabs and swipe
-> gestures may result in delayed visual updates, since it is triggered after the swipe-triggered tab switching
-> animation is completed. For smooth animations, listen for the active tab index in
-> [onAnimationStart](TabsAttribute#onAnimationStart) and update the tab index accordingly. For details about
-> the implementation, see
-> [Example 3](../../../../reference/apis-arkui/arkui-ts/ts-container-tabs.md#example-3-implementing-custom-tab-switching-synchronization).
+Triggered after the active tab changes. This event is triggered when any of the following occurs: 1. After completing a swipe-triggered tab switching animation. 2. After the active tab changes by calling the [changeIndex](arkts-arkui-tabscontroller-c.md#changeindex-1) API of [Controller](arkts-arkui-tabscontroller-c.md). 3. After the active tab changes by updating the index through the bound [state variable](../../../../ui/state-management/arkts-state.md). 4. After the active tab changes by tapping a tab in the tab bar. > **NOTE** > > When a custom tab is used, relying solely on the **onChange** event for synchronization between tabs and swipe > gestures may result in delayed visual updates, since it is triggered after the swipe-triggered tab switching > animation is completed. For smooth animations, listen for the active tab index in > [onAnimationStart](TabsAttribute#onAnimationStart) and update the tab index accordingly. For details about > the implementation, see > [Example 3](../../../../reference/apis-arkui/arkui-ts/ts-container-tabs.md#example-3-implementing-custom-tab-switching-synchronization).
 
 **Since:** 7
 
@@ -674,11 +579,7 @@ This event is triggered when any of the following occurs:
 onContentDidScroll(handler: OnTabsContentDidScrollCallback | undefined)
 ```
 
-Triggered when content in the **Tabs** component scrolls.
-
-During page scrolling, the [OnTabsContentDidScrollCallback](arkts-arkui-ontabscontentdidscrollcallback-t.md) callback is
-invoked for all pages in the viewport on a frame-by-frame basis. For example, when there are two pages whose
-subscripts are 0 and 1 in the viewport, two callbacks whose indexes are 0 and 1 are invoked in each frame.
+Triggered when content in the **Tabs** component scrolls. During page scrolling, the [OnTabsContentDidScrollCallback](arkts-arkui-ontabscontentdidscrollcallback-t.md) callback is invoked for all pages in the viewport on a frame-by-frame basis. For example, when there are two pages whose subscripts are 0 and 1 in the viewport, two callbacks whose indexes are 0 and 1 are invoked in each frame.
 
 **Since:** 23
 
@@ -700,24 +601,7 @@ subscripts are 0 and 1 in the viewport, two callbacks whose indexes are 0 and 1 
 onContentWillChange(handler: OnTabsContentWillChangeCallback)
 ```
 
-Triggered when a new page is about to be displayed.
-
-This event is triggered when any of the following occurs:
-
-1. When the user swipes through the **TabContent** to switch to a new page.
-
-2. When **TabsController.changeIndex** is called to switch to a new page.
-
-3. When the **index** attribute is changed to switch to a new page.
-
-4. When the user taps a tab on the tab bar to switch to a new page.
-
-5. When the user presses the left or
-right arrow key on the keyboard to switch to a new page while the tab bar has focus.
-
-> **NOTE**
->
-> This API can be called in [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
+Triggered when a new page is about to be displayed. This event is triggered when any of the following occurs: 1. When the user swipes through the **TabContent** to switch to a new page. 2. When **TabsController.changeIndex** is called to switch to a new page. 3. When the **index** attribute is changed to switch to a new page. 4. When the user taps a tab on the tab bar to switch to a new page. 5. When the user presses the left or right arrow key on the keyboard to switch to a new page while the tab bar has focus. > **NOTE** > > This API can be called in [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
 
 **Since:** 12
 
@@ -761,24 +645,7 @@ Triggered on a frame-by-frame basis during swipe gestures for tab switching.
 onSelected(event: Callback<number>)
 ```
 
-Triggered when the selected element changes. The index of the currently selected element is returned.
-
-This event is triggered when any of the following occurs:
-
-1. When the swipe gesture is released and the tab switching threshold is met, triggering the switching animation.
-
-2. When the [changeIndex](arkts-arkui-tabscontroller-c.md#changeindex-1) API of [TabsController](arkts-arkui-tabscontroller-c.md)
-is called, triggering the switching animation.
-
-3. When the index of the active tab is changed through the bound
-[state variable](../../../../ui/state-management/arkts-state.md).
-
-4. When a tab is tapped.
-
-> **NOTE**
->
-> In the **onSelected** callback, the index of the current displayed page cannot be set using **index** of
-> [TabsOptions](arkts-arkui-tabsoptions-i.md), and **TabsController.changeIndex()** cannot be called.
+Triggered when the selected element changes. The index of the currently selected element is returned. This event is triggered when any of the following occurs: 1. When the swipe gesture is released and the tab switching threshold is met, triggering the switching animation. 2. When the [changeIndex](arkts-arkui-tabscontroller-c.md#changeindex-1) API of [TabsController](arkts-arkui-tabscontroller-c.md) is called, triggering the switching animation. 3. When the index of the active tab is changed through the bound [state variable](../../../../ui/state-management/arkts-state.md). 4. When a tab is tapped. > **NOTE** > > In the **onSelected** callback, the index of the current displayed page cannot be set using **index** of > [TabsOptions](arkts-arkui-tabsoptions-i.md), and **TabsController.changeIndex()** cannot be called.
 
 **Since:** 18
 
@@ -822,17 +689,7 @@ Triggered when a tab is clicked.
 onUnselected(event: Callback<number>)
 ```
 
-Triggered when the selected element changes. The index of the element that is about to be hidden is returned.
-
-This event is triggered when any of the following occurs:
-
-1. When the swipe gesture is released and the tab switching threshold is met, triggering the switching animation.
-
-2. When the [changeIndex](arkts-arkui-tabscontroller-c.md#changeindex-1) API of [TabsController](arkts-arkui-tabscontroller-c.md) is called, triggering the switching animation.
-
-3. When the index of the active tab is changed through the bound [state variable](../../../../ui/state-management/arkts-state.md).
-
-4. When a tab is tapped.
+Triggered when the selected element changes. The index of the element that is about to be hidden is returned. This event is triggered when any of the following occurs: 1. When the swipe gesture is released and the tab switching threshold is met, triggering the switching animation. 2. When the [changeIndex](arkts-arkui-tabscontroller-c.md#changeindex-1) API of [TabsController](arkts-arkui-tabscontroller-c.md) is called, triggering the switching animation. 3. When the index of the active tab is changed through the bound [state variable](../../../../ui/state-management/arkts-state.md). 4. When a tab is tapped.
 
 **Since:** 18
 

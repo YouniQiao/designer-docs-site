@@ -1,7 +1,6 @@
 # ImmersiveStyle
 
-Enumerates immersive material styles. Different material styles correspond to different material parameters,
-including the blur degree and brightness.
+Enumerates immersive material styles. Different material styles correspond to different material parameters, including the blur degree and brightness.
 
 **Since:** 26.0.0
 
@@ -13,8 +12,7 @@ including the blur degree and brightness.
 ULTRA_THIN_EC = 5
 ```
 
-Ultra thin style. The material layer is ultra thin, with a very strong transparency effect,
-set on EffectComponent.
+Ultra thin style. The material layer is ultra thin, with a very strong transparency effect, set on EffectComponent.
 
 **Since:** 26.0.0
 
@@ -104,8 +102,7 @@ Ultra thick style, set on EffectComponent.
 ULTRA_THIN_EC_SUB = 10
 ```
 
-Ultra thin style. The material layer is ultra thin, with a very strong transparency effect,
-set on sub component of EffectComponent.
+Ultra thin style. The material layer is ultra thin, with a very strong transparency effect, set on sub component of EffectComponent.
 
 **Since:** 26.0.0
 
@@ -123,8 +120,7 @@ set on sub component of EffectComponent.
 THIN_EC_SUB = 11
 ```
 
-Thin style. The material layer is thin, with a strong transparency effect,
-set on sub component of EffectComponent.
+Thin style. The material layer is thin, with a strong transparency effect, set on sub component of EffectComponent.
 
 **Since:** 26.0.0
 

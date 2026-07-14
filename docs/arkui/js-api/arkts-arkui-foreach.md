@@ -1,12 +1,6 @@
 # ForEach
 
-**ForEach** enables rendering of repeated content based on array type data.
-
-> **NOTE**
-
-For details about the development, see
-[ForEach: Rendering Repeated Content](docroot://ui/rendering-control/arkts-rendering-control-foreach.md).
-
+**ForEach** enables rendering of repeated content based on array type data. > **NOTE** For details about the development, see [ForEach: Rendering Repeated Content](docroot://ui/rendering-control/arkts-rendering-control-foreach.md).
 
 ## ForEach
 
@@ -18,10 +12,7 @@ ForEach(
   )
 ```
 
-**ForEach** enables rendering of repeated content based on array type data. It must be used in a container
-component, and the component it returns must be one allowed inside the container component. For example, a
-**ListItem** component is allowed only when the parent container component of **ForEach** is [List]{@link list} or
-[ListItemGroup]{@link list_item_group}.
+**ForEach** enables rendering of repeated content based on array type data. It must be used in a container component, and the component it returns must be one allowed inside the container component. For example, a **ListItem** component is allowed only when the parent container component of **ForEach** is [List]{@link list} or [ListItemGroup]{@link list_item_group}.
 
 **Since:** 7
 

@@ -1,19 +1,6 @@
 # Span
 
-作为[Text]{@link text}、[ContainerSpan]{@link container_span}组件的子组件，用于显示行内文本的组件。
-
-> **说明：**
-
-> 该组件从API version 10开始支持继承父组件Text的属性，即如果子组件未设置属性且父组件设置属性，则继承父组件设置的属性。支持继承的属性仅包括：fontColor、fontSize、fontStyle、
-> fontWeight、decoration、letterSpacing、textCase、fontFamily、textShadow。
->
-> 不支持[通用属性]{@link common}。若需设置通用属性，应使用[Text]{@link text}进行设置，或改用[属性字符串]{@link styled_string}中的
-> [CustomSpan]{@link CustomSpan}自行绘制。
->
-> [通用事件]{@link common}只支持点击事件
-> [onClick]{@link CommonMethod#onClick(event: Callback<ClickEvent>, distanceThreshold: number)}和悬浮事件
-> [onHover]{@link CommonMethod#onHover}。
-
+作为[Text]{@link text}、[ContainerSpan]{@link container_span}组件的子组件，用于显示行内文本的组件。 > **说明：** > 该组件从API version 10开始支持继承父组件Text的属性，即如果子组件未设置属性且父组件设置属性，则继承父组件设置的属性。支持继承的属性仅包括：fontColor、fontSize、fontStyle、 > fontWeight、decoration、letterSpacing、textCase、fontFamily、textShadow。 > > 不支持[通用属性]{@link common}。若需设置通用属性，应使用[Text]{@link text}进行设置，或改用[属性字符串]{@link styled_string}中的 > [CustomSpan]{@link CustomSpan}自行绘制。 > > [通用事件]{@link common}只支持点击事件 > [onClick]{@link CommonMethod#onClick(event: Callback<ClickEvent>, distanceThreshold: number)}和悬浮事件 > [onHover]{@link CommonMethod#onHover}。
 
 ## Span
 

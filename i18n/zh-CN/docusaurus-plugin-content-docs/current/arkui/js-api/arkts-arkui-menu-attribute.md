@@ -58,11 +58,7 @@ fontColor(value: ResourceColor)
 fontSize(value: Length)
 ```
 
-统一设置Menu中所有文本的尺寸。
-
-> **说明：**
->
-> 从API version 9开始支持，从API version 10开始废弃，建议使用[font](MenuAttribute#font)代替。
+统一设置Menu中所有文本的尺寸。 > **说明：** > > 从API version 9开始支持，从API version 10开始废弃，建议使用[font](MenuAttribute#font)代替。
 
 **起始版本：** 9
 
@@ -84,9 +80,7 @@ fontSize(value: Length)
 menuItemDivider(options: DividerStyleOptions | undefined)
 ```
 
-设置menuItem分割线样式，不设置该属性则不展示分割线。
-
-startMargin + endMargin 超过组件宽度后startMargin和endMargin会被置0。
+设置menuItem分割线样式，不设置该属性则不展示分割线。 startMargin + endMargin 超过组件宽度后startMargin和endMargin会被置0。
 
 **起始版本：** 12
 

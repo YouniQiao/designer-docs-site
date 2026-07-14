@@ -124,8 +124,7 @@ Private key scalar **k** on the elliptic curve (EC).
 EC_PRIVATE_04_X_Y_K = 7
 ```
 
-Indicates the composite encoding 04||X||Y||K of the EC key, where 04||X||Y is the uncompressed public key point
-and K is the private key scalar.
+Indicates the composite encoding 04||X||Y||K of the EC key, where 04||X||Y is the uncompressed public key point and K is the private key scalar.
 
 **Since:** 26.0.0
 

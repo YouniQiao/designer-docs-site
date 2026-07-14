@@ -1,9 +1,6 @@
 # NotificationKey
 
-> **说明：**
-> 从 API version 7开始支持，从API version 9开始废弃。<!--Del-->建议使用
-> [notificationManager.NotificationKey](arkts-notification-notificationkey-i-sys.md)替代。
-> <!--DelEnd-->
+> **说明：** > 从 API version 7开始支持，从API version 9开始废弃。<!--Del-->建议使用 > [notificationManager.NotificationKey](arkts-notification-notificationkey-i-sys.md)替代。 > <!--DelEnd-->
 
 **起始版本：** 7
 

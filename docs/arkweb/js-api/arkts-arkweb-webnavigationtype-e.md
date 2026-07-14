@@ -26,10 +26,7 @@ Unknown type.
 MAIN_FRAME_NEW_ENTRY = 1
 ```
 
-A new entry was created due to a navigation happened on the main frame.
-Contains all situations that will generate a mainframe navigation entry,
-which means that navigations to a hash on the same document or history.pushState
-also belong to this type.
+A new entry was created due to a navigation happened on the main frame. Contains all situations that will generate a mainframe navigation entry, which means that navigations to a hash on the same document or history.pushState also belong to this type.
 
 **Since:** 11
 
@@ -43,11 +40,7 @@ also belong to this type.
 MAIN_FRAME_EXISTING_ENTRY = 2
 ```
 
-Navigate to an existing entry due to a navigation on the main frame.
-e.g.
-1. History navigations.
-2. Reloads (contains loading the same url).
-3. Same-document navigations(history.replaceState(), location.replace()).
+Navigate to an existing entry due to a navigation on the main frame. e.g. 1. History navigations. 2. Reloads (contains loading the same url). 3. Same-document navigations(history.replaceState(), location.replace()).
 
 **Since:** 11
 

@@ -12,8 +12,7 @@ Defines the screen capture parameters.
 audioBitrate?: number
 ```
 
-Audio bit rate, in bit/s. This value is used for both internal capture and external capture (using microphones).
-The default value is **96000**.
+Audio bit rate, in bit/s. This value is used for both internal capture and external capture (using microphones). The default value is **96000**.
 
 **类型：** number
 
@@ -27,8 +26,7 @@ The default value is **96000**.
 audioChannelCount?: number
 ```
 
-Number of audio channels. This value is used for both internal capture and external capture (using microphones).
-Only **1** and **2** (default) are supported.
+Number of audio channels. This value is used for both internal capture and external capture (using microphones). Only **1** and **2** (default) are supported.
 
 **类型：** number
 
@@ -42,8 +40,7 @@ Only **1** and **2** (default) are supported.
 audioSampleRate?: number
 ```
 
-Audio sampling rate, in Hz. This value is used for both internal capture
-and external capture (using microphones), in Hz. Only **48000** (default value) and **16000** are supported.
+Audio sampling rate, in Hz. This value is used for both internal capture and external capture (using microphones), in Hz. Only **48000** (default value) and **16000** are supported.
 
 **类型：** number
 

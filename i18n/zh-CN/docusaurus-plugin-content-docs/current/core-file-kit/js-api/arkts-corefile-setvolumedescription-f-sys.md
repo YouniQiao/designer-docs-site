@@ -6,8 +6,7 @@
 function setVolumeDescription(uuid: string, description: string, callback: AsyncCallback<void>): void
 ```
 
-修改指定卷设备描述，使用callback异步回调。当前仅支持修改ntfs和exfat两种文件系统类型的设备描述，
-只有处于卸载状态的卷设备可以修改设备描述。
+修改指定卷设备描述，使用callback异步回调。当前仅支持修改ntfs和exfat两种文件系统类型的设备描述， 只有处于卸载状态的卷设备可以修改设备描述。
 
 **起始版本：** 9
 
@@ -45,8 +44,7 @@ function setVolumeDescription(uuid: string, description: string, callback: Async
 function setVolumeDescription(uuid: string, description: string): Promise<void>
 ```
 
-修改指定卷设备描述，使用Promise异步回调。当前仅支持修改ntfs和exfat两种文件系统类型的设备描述，
-只有处于卸载状态的卷设备可以修改设备描述。
+修改指定卷设备描述，使用Promise异步回调。当前仅支持修改ntfs和exfat两种文件系统类型的设备描述， 只有处于卸载状态的卷设备可以修改设备描述。
 
 **起始版本：** 9
 

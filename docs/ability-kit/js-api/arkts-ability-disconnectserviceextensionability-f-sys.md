@@ -12,8 +12,7 @@ import { agentManager } from '@kit.AbilityKit';
 function disconnectServiceExtensionAbility(context: AgentExtensionContext, connectId: number): Promise<void>
 ```
 
-Disconnects an AgentExtensionAbility from a ServiceExtensionAbility, in contrast to
-{@link connectServiceExtensionAbility}.
+Disconnects an AgentExtensionAbility from a ServiceExtensionAbility, in contrast to {@link connectServiceExtensionAbility}.
 
 **Since:** 26.0.0
 

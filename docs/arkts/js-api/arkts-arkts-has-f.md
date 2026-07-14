@@ -12,9 +12,7 @@ import { JSON } from '@kit.ArkTS';
 function has(obj: object, property: string): boolean
 ```
 
-Checks whether an ArkTS object contains a key. This API can be used for related operations after
-[JSON.parse](arkts-arkts-parse-f.md#parse-1) is called to parse a JSON string. This API supports only valid JSON strings whose
-outermost layer is in dictionary format (in braces instead of square brackets).
+Checks whether an ArkTS object contains a key. This API can be used for related operations after [JSON.parse](arkts-arkts-parse-f.md#parse-1) is called to parse a JSON string. This API supports only valid JSON strings whose outermost layer is in dictionary format (in braces instead of square brackets).
 
 **Since:** 12
 

@@ -12,18 +12,7 @@ function queryTrafficStats(
   ): Promise<statistics.NetStatsInfo>
 ```
 
-查询当前用户下指定应用在特定时间段内使用流量情况。使用Promise异步回调。
-
-> **说明：**
->
-> 传入的网络类型（networkInfo.type）仅支持蜂窝网络（connection.NetBearType.BEARER_CELLULAR）和Wi-Fi网络（
-> connection.NetBearType.BEARER_WIFI）。若传入其他值，接口会返回错误码9200012。
->
-> 传入的起始时间（networkInfo.startTime）、结束时间（networkInfo.endTime）为秒级时间戳。若传入的起始时间、结束时间为负数，或起始时间大于结束时间，接口会返回错误码9200012。
->
-> 传入的用户ID（accountId）非当前用户时，接口会返回错误码9200012。
->
-> 建议查询的时间间隔（结束时间-起始时间）最小为1天，最大为30天。时间间隔太小，查询结果可能不准确。时间间隔太大，查询耗时会很长。
+查询当前用户下指定应用在特定时间段内使用流量情况。使用Promise异步回调。 > **说明：** > > 传入的网络类型（networkInfo.type）仅支持蜂窝网络（connection.NetBearType.BEARER_CELLULAR）和Wi-Fi网络（ > connection.NetBearType.BEARER_WIFI）。若传入其他值，接口会返回错误码9200012。 > > 传入的起始时间（networkInfo.startTime）、结束时间（networkInfo.endTime）为秒级时间戳。若传入的起始时间、结束时间为负数，或起始时间大于结束时间，接口会返回错误码9200012。 > > 传入的用户ID（accountId）非当前用户时，接口会返回错误码9200012。 > > 建议查询的时间间隔（结束时间-起始时间）最小为1天，最大为30天。时间间隔太小，查询结果可能不准确。时间间隔太大，查询耗时会很长。
 
 **起始版本：** 26.0.0
 

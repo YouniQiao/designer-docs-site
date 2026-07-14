@@ -18,8 +18,7 @@ import { floatingBall } from '@kit.ArkUI';
 readonly windowId: number
 ```
 
-ID of the floating ball window.
-The value range is all integers.
+ID of the floating ball window. The value range is all integers.
 
 **Type:** number
 

@@ -6,11 +6,7 @@
 function removeRule(rule: bigint): void
 ```
 
-> **˵����**
->
-> ��API version 8��ʼ֧�֣���API version 9��ʼ����������ʹ��[hichecker.removeCheckRule](arkts-performanceanalysis-removecheckrule-f.md#removecheckrule-1)�����
-
-ɾ��һ�����������ɾ���Ĺ��������������Ч��
+> **˵����** > > ��API version 8��ʼ֧�֣���API version 9��ʼ����������ʹ��[hichecker.removeCheckRule](arkts-performanceanalysis-removecheckrule-f.md#removecheckrule-1)����� ɾ��һ�����������ɾ���Ĺ��������������Ч��
 
 **起始版本：** 8
 

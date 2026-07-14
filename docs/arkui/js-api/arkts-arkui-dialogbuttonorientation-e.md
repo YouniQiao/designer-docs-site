@@ -12,8 +12,7 @@ The arrangement of buttons in dialog.
 AUTO = 0
 ```
 
-Two or fewer buttons are arranged horizontally,
-and two or more buttons are arranged vertically.
+Two or fewer buttons are arranged horizontally, and two or more buttons are arranged vertically.
 
 **Since:** 26.1.0
 

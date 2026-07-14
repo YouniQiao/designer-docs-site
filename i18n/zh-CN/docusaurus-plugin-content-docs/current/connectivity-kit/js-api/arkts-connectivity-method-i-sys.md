@@ -14,9 +14,7 @@ SSAP方法。
 methodUuid: string
 ```
 
-方法实例的UUID
-长度必须为36，由16进制数字字符和连字符共36个字符组成，形如“FFFFFFFF-1234-5678-ABCD-000000001234”，代表128比特标识。
-<br>不允许使用NearLink标准UUID。
+方法实例的UUID 长度必须为36，由16进制数字字符和连字符共36个字符组成，形如“FFFFFFFF-1234-5678-ABCD-000000001234”，代表128比特标识。 <br>不允许使用NearLink标准UUID。
 
 **类型：** string
 
@@ -70,9 +68,7 @@ result?: ArrayBuffer
 serviceUuid: string
 ```
 
-方法所属的{@link Service}实例的UUID
-长度必须为36，由16进制数字字符和连字符共36个字符组成，形如“FFFFFFFF-1234-5678-ABCD-000000001234”，代表128比特标识。
-<br>不允许使用NearLink标准UUID。
+方法所属的{@link Service}实例的UUID 长度必须为36，由16进制数字字符和连字符共36个字符组成，形如“FFFFFFFF-1234-5678-ABCD-000000001234”，代表128比特标识。 <br>不允许使用NearLink标准UUID。
 
 **类型：** string
 

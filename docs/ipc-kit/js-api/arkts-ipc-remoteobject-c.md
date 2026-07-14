@@ -82,7 +82,7 @@ A constructor used to create a **RemoteObject** object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| descriptor | string | Yes | Interface descriptor. The length of the string must be less than 40960 bytes. |
+| descriptor | string | Yes | Interface descriptor. The length of the string must be less than 40960. |
 
 **Example**
 
@@ -301,7 +301,7 @@ Obtains the string of the interface descriptor.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| descriptor | string | Yes | String of the interface descriptor. The length of the string must be less than40960 bytes. |
+| descriptor | string | Yes | String of the interface descriptor. The length of the string must be less than40960. |
 
 **Return value:**
 
@@ -313,7 +313,7 @@ Obtains the string of the interface descriptor.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.The number of parameters is incorrect;2.The parameter type does not match;3.The string length is greater than or equal to 40960 bytes;4.The number of bytes copied to the buffer is different from the length of the obtained string. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.The number of parameters is incorrect;2.The parameter type does not match;3.The string length is greater than or equal to 40960;4.The number of bytes copied to the buffer is different from the length of the obtained string. |
 
 **Example**
 
@@ -360,13 +360,13 @@ Binds an interface descriptor to an **IRemoteBroker** object.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | localInterface | IRemoteBroker | Yes | **IRemoteBroker** object. |
-| descriptor | string | Yes | **IRemoteBroker** object bound to the interface descriptor. The length of thedescriptor must be less than 40960 bytes. |
+| descriptor | string | Yes | **IRemoteBroker** object bound to the interface descriptor. The length of thedescriptor must be less than 40960. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.The number of parameters is incorrect;2.The parameter type does not match;3.The string length is greater than or equal to 40960 bytes;4.The number of bytes copied to the buffer is different from the length of the obtained string. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.The number of parameters is incorrect;2.The parameter type does not match;3.The string length is greater than or equal to 40960;4.The number of bytes copied to the buffer is different from the length of the obtained string. |
 
 **Example**
 
@@ -413,16 +413,7 @@ onRemoteMessageRequest(
     ): boolean | Promise<boolean>
 ```
 
-Called to return a response to **sendMessageRequest()**. The server processes the request synchronously or
-asynchronously and returns the result in this API.
-
-> **NOTE**
->
-> - You are advised to overload **onRemoteMessageRequest** preferentially, which implements synchronous and
-> asynchronous message processing.
->
-> - If both **onRemoteRequest()** and **onRemoteMessageRequest()** are overloaded, only
-> **onRemoteMessageRequest()** takes effect.
+Called to return a response to **sendMessageRequest()**. The server processes the request synchronously or asynchronously and returns the result in this API. > **NOTE** > > - You are advised to overload **onRemoteMessageRequest** preferentially, which implements synchronous and > asynchronous message processing. > > - If both **onRemoteRequest()** and **onRemoteMessageRequest()** are overloaded, only > **onRemoteMessageRequest()** takes effect.
 
 **Since:** 9
 
@@ -544,15 +535,7 @@ onRemoteMessageRequest(
     ): boolean | Promise<boolean>
 ```
 
-Provides a response to **sendMessageRequest()**. The server processes the request and returns a response in this
-API. The IPC context can be obtained from the input parameter **callingInfo**.
-
-> **NOTE**
->
-> You are advised to overload the **onRemoteMessageRequest** method with the **CallingInfo** parameter to
-> implement synchronous and asynchronous message processing.
-> If both **onRemoteRequest()** and **onRemoteMessageRequest()** are overloaded, only
-> **onRemoteMessageRequest()** takes effect.
+Provides a response to **sendMessageRequest()**. The server processes the request and returns a response in this API. The IPC context can be obtained from the input parameter **callingInfo**. > **NOTE** > > You are advised to overload the **onRemoteMessageRequest** method with the **CallingInfo** parameter to > implement synchronous and asynchronous message processing. > If both **onRemoteRequest()** and **onRemoteMessageRequest()** are overloaded, only > **onRemoteMessageRequest()** takes effect.
 
 **Since:** 23
 
@@ -670,8 +653,7 @@ class TestRemoteObject extends rpc.RemoteObject {
 onRemoteRequest(code: number, data: MessageParcel, reply: MessageParcel, options: MessageOption): boolean
 ```
 
-Called to return a response to **sendRequest()**. The server processes the request and returns a response in this
-function.
+Called to return a response to **sendRequest()**. The server processes the request and returns a response in this function.
 
 **Since:** 7
 
@@ -783,11 +765,7 @@ sendMessageRequest(
     ): Promise<RequestResult>
 ```
 
-Sends a **MessageSequence** message to the remote process in synchronous or asynchronous mode. If asynchronous
-mode is set in **options**, a promise will be fulfilled immediately and the reply message is empty. The
-specific reply needs to be obtained from the callback on the service side. If synchronous mode is set in
-**options**, a promise will be fulfilled when the response to **sendMessageRequest** is returned, and the
-reply message contains the returned information.
+Sends a **MessageSequence** message to the remote process in synchronous or asynchronous mode. If asynchronous mode is set in **options**, a promise will be fulfilled immediately and the reply message is empty. The specific reply needs to be obtained from the callback on the service side. If synchronous mode is set in **options**, a promise will be fulfilled when the response to **sendMessageRequest** is returned, and the reply message contains the returned information.
 
 **Since:** 9
 
@@ -873,11 +851,7 @@ sendMessageRequest(
     ): void
 ```
 
-Sends a **MessageSequence** message to the remote process in synchronous or asynchronous mode. If asynchronous
-mode is set in **options**, a callback will be called immediately, and the reply message is empty. The
-specific reply needs to be obtained from the callback on the service side. If synchronous mode is set in
-**options**, a callback will be invoked when the response to **sendMessageRequest** is returned, and the
-reply message contains the returned information.
+Sends a **MessageSequence** message to the remote process in synchronous or asynchronous mode. If asynchronous mode is set in **options**, a callback will be called immediately, and the reply message is empty. The specific reply needs to be obtained from the callback on the service side. If synchronous mode is set in **options**, a callback will be invoked when the response to **sendMessageRequest** is returned, and the reply message contains the returned information.
 
 **Since:** 9
 
@@ -905,11 +879,7 @@ reply message contains the returned information.
 sendRequest(code: number, data: MessageParcel, reply: MessageParcel, options: MessageOption): boolean
 ```
 
-Sends a **MessageParcel** message to the remote process in synchronous or asynchronous mode. If asynchronous mode
-is set in **options**, a promise will be fulfilled immediately and the reply message is empty. The specific
-reply needs to be obtained from the callback on the service side. If synchronous mode is set in **options**,
-a promise will be fulfilled when the response to **sendRequest** is returned, and the reply message contains
-the returned information.
+Sends a **MessageParcel** message to the remote process in synchronous or asynchronous mode. If asynchronous mode is set in **options**, a promise will be fulfilled immediately and the reply message is empty. The specific reply needs to be obtained from the callback on the service side. If synchronous mode is set in **options**, a promise will be fulfilled when the response to **sendRequest** is returned, and the reply message contains the returned information.
 
 **Since:** 7
 
@@ -982,11 +952,7 @@ sendRequest(
     ): Promise<SendRequestResult>
 ```
 
-Sends a **MessageParcel** message to the remote process in synchronous or asynchronous mode. If asynchronous mode
-is set in **options**, a promise will be fulfilled immediately and the reply message is empty. The specific
-reply needs to be obtained from the callback on the service side. If synchronous mode is set in **options**,
-a promise will be fulfilled when the response to **sendRequest** is returned, and the reply message contains
-the returned information.
+Sends a **MessageParcel** message to the remote process in synchronous or asynchronous mode. If asynchronous mode is set in **options**, a promise will be fulfilled immediately and the reply message is empty. The specific reply needs to be obtained from the callback on the service side. If synchronous mode is set in **options**, a promise will be fulfilled when the response to **sendRequest** is returned, and the reply message contains the returned information.
 
 **Since:** 8
 
@@ -1070,11 +1036,7 @@ sendRequest(
     ): void
 ```
 
-Sends a **MessageParcel** message to the remote process in synchronous or asynchronous mode. If asynchronous mode
-is set in **options**, a callback will be called immediately, and the reply message is empty. The specific
-reply needs to be obtained from the callback on the service side. If synchronous mode is set in **options**,
-a callback will be invoked when the response to **sendRequest** is returned, and the reply message contains
-the returned information.
+Sends a **MessageParcel** message to the remote process in synchronous or asynchronous mode. If asynchronous mode is set in **options**, a callback will be called immediately, and the reply message is empty. The specific reply needs to be obtained from the callback on the service side. If synchronous mode is set in **options**, a callback will be invoked when the response to **sendRequest** is returned, and the reply message contains the returned information.
 
 **Since:** 8
 

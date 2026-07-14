@@ -1,10 +1,6 @@
 # MediaQueryListener
 
-Implements the media query listener, including the first query result when the listener is applied for. The
-specified media query condition, for example, **'(width <= 600vp)'**, is compared system information. If related
-information is not initialized during the first query, **matches** returns **false**.
-
-Inherits from [MediaQueryResult](arkts-arkui-mediaqueryresult-i.md).
+Implements the media query listener, including the first query result when the listener is applied for. The specified media query condition, for example, **'(width <= 600vp)'**, is compared system information. If related information is not initialized during the first query, **matches** returns **false**. Inherits from [MediaQueryResult](arkts-arkui-mediaqueryresult-i.md).
 
 **Inheritance/Implementation:** MediaQueryListener extends [MediaQueryResult](arkts-arkui-mediaqueryresult-i.md)
 
@@ -65,11 +61,7 @@ listener.off('change', onPortrait) // Unregister the callback.
 on(type: 'change', callback: Callback<MediaQueryResult>): void
 ```
 
-Registers a media query listener. The callback is triggered when the media attributes change.
-
-> **NOTE**
->
-> The **on** or **off** function cannot be called in the registered callback.
+Registers a media query listener. The callback is triggered when the media attributes change. > **NOTE** > > The **on** or **off** function cannot be called in the registered callback.
 
 **Since:** 7
 

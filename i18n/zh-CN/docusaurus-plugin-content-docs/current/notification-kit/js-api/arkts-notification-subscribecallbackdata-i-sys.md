@@ -14,8 +14,7 @@
 readonly notificationClassification?: NotificationClassification
 ```
 
-通知分类信息。
-仅在[NotificationSubscribeInfo](arkts-notification-notificationsubscribeinfo-i-sys.md)中的enableClassification为true时存在。
+通知分类信息。 仅在[NotificationSubscribeInfo](arkts-notification-notificationsubscribeinfo-i-sys.md)中的enableClassification为true时存在。
 
 **类型：** NotificationClassification
 
@@ -97,7 +96,7 @@ readonly sound?: string
 readonly vibrationValues?: Array<number>
 ```
 
-通知震动。
+通知振动。
 
 **类型：** Array<number>
 
@@ -113,7 +112,7 @@ readonly vibrationValues?: Array<number>
 voiceContent?: VoiceContent
 ```
 
-通知消息中语音播报内容定义
+通知语音播报内容。
 
 **类型：** VoiceContent
 

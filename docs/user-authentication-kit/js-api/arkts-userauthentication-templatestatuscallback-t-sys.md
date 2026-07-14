@@ -4,9 +4,7 @@
 type TemplateStatusCallback = (templateStatusList: TemplateStatus[]) => void
 ```
 
-Defines the callback triggered for receiving notifications of template status changes. When the template status
-changes (for example, the template is added, deleted, or its validity changes), the system notifies the
-application through this callback.
+Defines the callback triggered for receiving notifications of template status changes. When the template status changes (for example, the template is added, deleted, or its validity changes), the system notifies the application through this callback.
 
 **Since:** 23
 

@@ -44,9 +44,7 @@ getPixelMap(): image.PixelMap
 invalidate(): void
 ```
 
-重新绘制DrawableDescriptor。当前仅支持
-[PictureDrawableDescriptor](arkts-arkui-picturedrawabledescriptor-c.md)类型，其他DrawableDescriptor子类型触
-发后无效果。若DrawableDescriptor未绑定任何组件，则不会执行任何操作。
+重新绘制DrawableDescriptor。当前仅支持 [PictureDrawableDescriptor](arkts-arkui-picturedrawabledescriptor-c.md)类型，其他DrawableDescriptor子类型触 发后无效果。若DrawableDescriptor未绑定任何组件，则不会执行任何操作。
 
 **起始版本：** 26.0.0
 
@@ -62,14 +60,7 @@ invalidate(): void
 isReleased(): boolean
 ```
 
-查询DrawableDescriptor是否已被释放。返回true表示已释放，此时调用
-[getPixelMap](arkts-arkui-drawabledescriptor-c.md#getpixelmap-1)、
-[getForeground](arkts-arkui-layereddrawabledescriptor-c.md#getforeground-1)、
-[getBackground](arkts-arkui-layereddrawabledescriptor-c.md#getbackground-1)、
-[getMask](arkts-arkui-layereddrawabledescriptor-c.md#getmask-1)、
-[loadSync](arkts-arkui-drawabledescriptor-c.md#loadsync-1)、
-[load](arkts-arkui-drawabledescriptor-c.md#load-1)等接口会抛出111002错误；返回false表示未释放，对象可正
-常使用。
+查询DrawableDescriptor是否已被释放。返回true表示已释放，此时调用 [getPixelMap](arkts-arkui-drawabledescriptor-c.md#getpixelmap-1)、 [getForeground](arkts-arkui-layereddrawabledescriptor-c.md#getforeground-1)、 [getBackground](arkts-arkui-layereddrawabledescriptor-c.md#getbackground-1)、 [getMask](arkts-arkui-layereddrawabledescriptor-c.md#getmask-1)、 [loadSync](arkts-arkui-drawabledescriptor-c.md#loadsync-1)、 [load](arkts-arkui-drawabledescriptor-c.md#load-1)等接口会抛出111002错误；返回false表示未释放，对象可正 常使用。
 
 **起始版本：** 26.0.0
 
@@ -153,13 +144,7 @@ loadSync(): DrawableDescriptorLoadedResult
 release(): void
 ```
 
-释放DrawableDescriptor持有的资源。调用release后，该对象将不可用，再调用
-[getPixelMap](arkts-arkui-drawabledescriptor-c.md#getpixelmap-1)、
-[getForeground](arkts-arkui-layereddrawabledescriptor-c.md#getforeground-1)、
-[getBackground](arkts-arkui-layereddrawabledescriptor-c.md#getbackground-1)、
-[getMask](arkts-arkui-layereddrawabledescriptor-c.md#getmask-1)、
-[loadSync](arkts-arkui-drawabledescriptor-c.md#loadsync-1)、
-[load](arkts-arkui-drawabledescriptor-c.md#load-1)等接口会抛出111002错误。重复调用release不会崩溃。
+释放DrawableDescriptor持有的资源。调用release后，该对象将不可用，再调用 [getPixelMap](arkts-arkui-drawabledescriptor-c.md#getpixelmap-1)、 [getForeground](arkts-arkui-layereddrawabledescriptor-c.md#getforeground-1)、 [getBackground](arkts-arkui-layereddrawabledescriptor-c.md#getbackground-1)、 [getMask](arkts-arkui-layereddrawabledescriptor-c.md#getmask-1)、 [loadSync](arkts-arkui-drawabledescriptor-c.md#loadsync-1)、 [load](arkts-arkui-drawabledescriptor-c.md#load-1)等接口会抛出111002错误。重复调用release不会崩溃。
 
 **起始版本：** 26.0.0
 

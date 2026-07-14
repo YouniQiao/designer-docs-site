@@ -12,5 +12,5 @@ import { DistributedExtensionAbility } from '@kit.DistributedServiceKit';
 
 | Name | Description |
 | --- | --- |
-| [DistributedExtensionAbility](arkts-distributedservice-distributedextensionability-c.md) | The **DistributedExtensionAbility** module provides distributed extension capabilities and lifecycle callbacks fordistributed ability creation, destruction, and connection. |
+| [DistributedExtensionAbility](arkts-distributedservice-distributedextensionability-c.md) | The **DistributedExtensionAbility** module provides distributed extension capabilities and lifecycle callbacks for distributed ability creation, destruction, and connection. |
 

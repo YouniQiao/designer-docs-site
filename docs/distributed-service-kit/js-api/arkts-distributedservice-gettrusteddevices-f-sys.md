@@ -12,8 +12,7 @@ import { conversation } from '@kit.DistributedServiceKit';
 function getTrustedDevices(): DeviceNodeInfo[]
 ```
 
-Obtains device information about all trusted devices. Trusted devices are devices that have been previously
-authenticated. This API returns a list of all such devices currently visible on the network.
+Obtains device information about all trusted devices. Trusted devices are devices that have been previously authenticated. This API returns a list of all such devices currently visible on the network.
 
 **Since:** 26.1.0
 

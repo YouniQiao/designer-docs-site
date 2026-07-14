@@ -20,8 +20,7 @@ import { dlpPermission } from '@kit.DataProtectionKit';
 enterprise: string
 ```
 
-JSON string of an enterprise custom policy. The value contains a maximum of 4,194,304 bytes. If the value is
-out of range, error code 19100001 is thrown.
+JSON string of an enterprise custom policy. The value contains a maximum of 4,194,304 bytes. If the value is out of range, error code 401 is thrown.
 
 **Type:** string
 

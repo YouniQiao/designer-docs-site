@@ -2,7 +2,7 @@
 
 Defines date options for DatePickerComponent.
 
-**Inheritance/Implementation:** DateOptions extends [CommonOptions](arkts-arkui-commonoptions-c.md#commonoptions)
+**Inheritance/Implementation:** DateOptions extends [CommonOptions](arkts-arkui-commonoptions-c.md)
 
 **Since:** 26.0.0
 
@@ -11,7 +11,7 @@ Defines date options for DatePickerComponent.
 ## Modules to Import
 
 ```TypeScript
-import { DisplayMode, TimeFormat, DatePickerComponent, DateMode, DatePickerComponentOptions, DatePickerComponentResult } from '@ohos.arkui.advanced.DatePickerComponent';
+import { DisplayMode, TimeFormat, DatePickerComponent, DateMode, DatePickerComponentOptions, DatePickerComponentResult } from '@kit.ArkUI';
 ```
 
 ## lunar

@@ -1,8 +1,6 @@
 # UIExtensionContext
 
-UIExtensionContext是[UIExtensionAbility](arkts-ability-uiextensionability-c.md)的上下文环境，继承自
-[ExtensionContext](arkts-ability-extensioncontext-c.md)，提供UIExtensionAbility的相关配置信息以及操作UIAbility的方法，如
-启动UIAbility等。
+UIExtensionContext是[UIExtensionAbility](arkts-ability-uiextensionability-c.md)的上下文环境，继承自 [ExtensionContext](arkts-ability-extensioncontext-c.md)，提供UIExtensionAbility的相关配置信息以及操作UIAbility的方法，如 启动UIAbility等。
 
 **继承/实现关系：** UIExtensionContext extends [ExtensionContext](arkts-ability-extensioncontext-c.md)
 
@@ -16,14 +14,7 @@ UIExtensionContext是[UIExtensionAbility](arkts-ability-uiextensionability-c.md)
 connectServiceExtensionAbility(want: Want, options: ConnectOptions): number
 ```
 
-将当前UIExtensionAbility连接到一个ServiceExtensionAbility，通过返回的proxy与ServiceExtensionAbility进行通信，以使用ServiceExtensionAbility
-对外提供的能力。
-ServiceExtensionAbility是一类特殊的[ExtensionAbility](../../../../application-models/extensionability-overview.md)组件，这类组件由系
-统提供，通常用于提供指定场景后台服务能力，不支持开发者自定义。ServiceExtensionAbility可以被其他组件连接，并根据调用者的请求信息在后台处理相关事务。
-
-> **说明：**
->
-> 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
+将当前UIExtensionAbility连接到一个ServiceExtensionAbility，通过返回的proxy与ServiceExtensionAbility进行通信，以使用ServiceExtensionAbility 对外提供的能力。 ServiceExtensionAbility是一类特殊的[ExtensionAbility](../../../../application-models/extensionability-overview.md)组件，这类组件由系 统提供，通常用于提供指定场景后台服务能力，不支持开发者自定义。ServiceExtensionAbility可以被其他组件连接，并根据调用者的请求信息在后台处理相关事务。 > **说明：** > > 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
 
 **起始版本：** 10
 
@@ -70,11 +61,7 @@ ServiceExtensionAbility是一类特殊的[ExtensionAbility](../../../../applicat
 connectUIServiceExtensionAbility(want: Want, callback: UIServiceExtensionConnectCallback) : Promise<UIServiceProxy>
 ```
 
-连接到一个UIServiceExtensionAbility。使用Promise异步回调。
-
-> **说明：**
->
-> 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
+连接到一个UIServiceExtensionAbility。使用Promise异步回调。 > **说明：** > > 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
 
 **起始版本：** 14
 
@@ -118,9 +105,7 @@ connectUIServiceExtensionAbility(want: Want, callback: UIServiceExtensionConnect
 disconnectServiceExtensionAbility(connection: number, callback: AsyncCallback<void>): void
 ```
 
-断开与ServiceExtensionAbility的连接，断开连接之后开发者需要将连接成功时返回的remote对象置空。使用callback异步回调。
-ServiceExtensionAbility是一类特殊的[ExtensionAbility](../../../../application-models/extensionability-overview.md)组件，这类组件由系
-统提供，通常用于提供指定场景后台服务能力，不支持开发者自定义。ServiceExtensionAbility可以被其他组件连接，并根据调用者的请求信息在后台处理相关事务。
+断开与ServiceExtensionAbility的连接，断开连接之后开发者需要将连接成功时返回的remote对象置空。使用callback异步回调。 ServiceExtensionAbility是一类特殊的[ExtensionAbility](../../../../application-models/extensionability-overview.md)组件，这类组件由系 统提供，通常用于提供指定场景后台服务能力，不支持开发者自定义。ServiceExtensionAbility可以被其他组件连接，并根据调用者的请求信息在后台处理相关事务。
 
 **起始版本：** 10
 
@@ -149,9 +134,7 @@ ServiceExtensionAbility是一类特殊的[ExtensionAbility](../../../../applicat
 disconnectServiceExtensionAbility(connection: number): Promise<void>
 ```
 
-断开与ServiceExtensionAbility的连接，断开连接之后开发者需要将连接成功时返回的remote对象置空。使用Promise异步回调。
-ServiceExtensionAbility是一类特殊的[ExtensionAbility](../../../../application-models/extensionability-overview.md)组件，这类组件由系
-统提供，通常用于提供指定场景后台服务能力，不支持开发者自定义。ServiceExtensionAbility可以被其他组件连接，并根据调用者的请求信息在后台处理相关事务。
+断开与ServiceExtensionAbility的连接，断开连接之后开发者需要将连接成功时返回的remote对象置空。使用Promise异步回调。 ServiceExtensionAbility是一类特殊的[ExtensionAbility](../../../../application-models/extensionability-overview.md)组件，这类组件由系 统提供，通常用于提供指定场景后台服务能力，不支持开发者自定义。ServiceExtensionAbility可以被其他组件连接，并根据调用者的请求信息在后台处理相关事务。
 
 **起始版本：** 10
 
@@ -219,20 +202,7 @@ disconnectUIServiceExtensionAbility(proxy: UIServiceProxy): Promise<void>
 openAtomicService(appId: string, options?: AtomicServiceOptions): Promise<AbilityResult>
 ```
 
-打开一个独立窗口的原子化服务，并返回结果。使用Promise异步回调。
-分为以下几种情况：
-
-- 正常情况下可通过调用
-[terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)
-接口使之终止并且返回结果给调用方。
-- 异常情况下比如杀死原子化服务会返回异常信息给调用方，异常信息中resultCode为-1。
-- 如果不同应用多次调用该接口启动同一个原子化服务，当这个原子化服务调用
-[terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)
-接口使之终止时，只将正常结果返回给最后一个调用方, 其它调用方返回异常信息，异常信息中resultCode为-1。
-
-> **说明：**
->
-> 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
+打开一个独立窗口的原子化服务，并返回结果。使用Promise异步回调。 分为以下几种情况： - 正常情况下可通过调用 [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1) 接口使之终止并且返回结果给调用方。 - 异常情况下比如杀死原子化服务会返回异常信息给调用方，异常信息中resultCode为-1。 - 如果不同应用多次调用该接口启动同一个原子化服务，当这个原子化服务调用 [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1) 接口使之终止时，只将正常结果返回给最后一个调用方, 其它调用方返回异常信息，异常信息中resultCode为-1。 > **说明：** > > 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
 
 **起始版本：** 12
 
@@ -273,20 +243,7 @@ openAtomicService(appId: string, options?: AtomicServiceOptions): Promise<Abilit
 openLink(link: string, options?: OpenLinkOptions, callback?: AsyncCallback<AbilityResult>): Promise<void>
 ```
 
-通过App Linking或Deep Linking方式启动UIAbility。使用Promise异步回调。
-通过在link字段中传入标准格式的URL，基于隐式want匹配规则拉起目标UIAbility。目标方必须具备以下过滤器特征，才能处理App Linking链接：
-
-- "actions"列表中包含"ohos.want.action.viewData"。
-- "entities"列表中包含"entity.system.browsable"。
-- "uris"列表中包含"scheme"为"https"且"domainVerify"为true的元素。
-如果希望获取被拉起方终止后的结果，可以设置callback参数，此参数的使用可参照
-[startAbilityForResult](arkts-ability-uiextensioncontext-c.md#startabilityforresult-1)
-接口。
-传入的参数不合法时，如未设置必选参数或link字符串不是标准格式的URL，接口会直接抛出异常。参数校验通过，拉起目标方时出现的错误通过promise返回错误信息。
-
-> **说明：**
->
-> 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
+通过App Linking或Deep Linking方式启动UIAbility。使用Promise异步回调。 通过在link字段中传入标准格式的URL，基于隐式want匹配规则拉起目标UIAbility。目标方必须具备以下过滤器特征，才能处理App Linking链接： - "actions"列表中包含"ohos.want.action.viewData"。 - "entities"列表中包含"entity.system.browsable"。 - "uris"列表中包含"scheme"为"https"且"domainVerify"为true的元素。 如果希望获取被拉起方终止后的结果，可以设置callback参数，此参数的使用可参照 [startAbilityForResult](arkts-ability-uiextensioncontext-c.md#startabilityforresult-1) 接口。 传入的参数不合法时，如未设置必选参数或link字符串不是标准格式的URL，接口会直接抛出异常。参数校验通过，拉起目标方时出现的错误通过promise返回错误信息。 > **说明：** > > 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
 
 **起始版本：** 12
 
@@ -364,15 +321,7 @@ reportDrawnCompleted(callback: AsyncCallback<void>): void
 setColorMode(colorMode: ConfigurationConstant.ColorMode): void
 ```
 
-设置UIExtensionAbility的深浅色模式。调用该接口前需要保证该UIExtensionContext对应页面已完成加载。仅支持主线程调用。
-
-> **说明**：
->
-> - 调用该接口后会创建新的资源管理器对象，如果此前有缓存资源管理器，需要进行更新。
->
-> - 深浅色模式生效的优先级：UIExtensionAbility的深浅色模式 > 应用的深浅色模式（
-> [ApplicationContext.setColorMode](arkts-ability-applicationcontext-c.md#setcolormode-1)）> 系统的深浅色模
-> 式。
+设置UIExtensionAbility的深浅色模式。调用该接口前需要保证该UIExtensionContext对应页面已完成加载。仅支持主线程调用。 > **说明**： > > - 调用该接口后会创建新的资源管理器对象，如果此前有缓存资源管理器，需要进行更新。 > > - 深浅色模式生效的优先级：UIExtensionAbility的深浅色模式 > 应用的深浅色模式（ > [ApplicationContext.setColorMode](arkts-ability-applicationcontext-c.md#setcolormode-1)）> 系统的深浅色模 > 式。
 
 **起始版本：** 18
 
@@ -398,11 +347,7 @@ setColorMode(colorMode: ConfigurationConstant.ColorMode): void
 startAbility(want: Want, callback: AsyncCallback<void>): void
 ```
 
-启动一个UIAbility。使用callback异步回调。
-
-> **说明：**
->
-> 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
+启动一个UIAbility。使用callback异步回调。 > **说明：** > > 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
 
 **起始版本：** 10
 
@@ -457,11 +402,7 @@ startAbility(want: Want, callback: AsyncCallback<void>): void
 startAbility(want: Want, options: StartOptions, callback: AsyncCallback<void>): void
 ```
 
-启动一个UIAbility。使用callback异步回调。
-
-> **说明：**
->
-> 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
+启动一个UIAbility。使用callback异步回调。 > **说明：** > > 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
 
 **起始版本：** 10
 
@@ -515,11 +456,7 @@ startAbility(want: Want, options: StartOptions, callback: AsyncCallback<void>): 
 startAbility(want: Want, options?: StartOptions): Promise<void>
 ```
 
-启动一个UIAbility。使用Promise异步回调。
-
-> **说明：**
->
-> 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
+启动一个UIAbility。使用Promise异步回调。 > **说明：** > > 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
 
 **起始版本：** 10
 
@@ -580,19 +517,7 @@ startAbility(want: Want, options?: StartOptions): Promise<void>
 startAbilityForResult(want: Want, callback: AsyncCallback<AbilityResult>): void
 ```
 
-启动一个UIAbility，开发者可以通过回调函数接收被拉起的UIAbility退出时的返回结果。使用callback异步回调。UIAbility被启动后，有如下情况:
-
-- 正常情况下可通过调用
-[terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)
-接口使之终止并且返回结果给调用方。
-- 异常情况下比如杀死UIAbility会返回异常信息给调用方, 异常信息中resultCode为-1。
-- 如果被启动的UIAbility模式是单实例模式, 不同应用多次调用该接口启动这个UIAbility，当这个UIAbility调用
-[terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)
-接口使之终止时，只将正常结果返回给最后一个调用方, 其它调用方返回异常信息, 异常信息中resultCode为-1。
-
-> **说明：**
->
-> 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
+启动一个UIAbility，开发者可以通过回调函数接收被拉起的UIAbility退出时的返回结果。使用callback异步回调。UIAbility被启动后，有如下情况: - 正常情况下可通过调用 [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1) 接口使之终止并且返回结果给调用方。 - 异常情况下比如杀死UIAbility会返回异常信息给调用方, 异常信息中resultCode为-1。 - 如果被启动的UIAbility模式是单实例模式, 不同应用多次调用该接口启动这个UIAbility，当这个UIAbility调用 [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1) 接口使之终止时，只将正常结果返回给最后一个调用方, 其它调用方返回异常信息, 异常信息中resultCode为-1。 > **说明：** > > 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
 
 **起始版本：** 10
 
@@ -647,19 +572,7 @@ startAbilityForResult(want: Want, callback: AsyncCallback<AbilityResult>): void
 startAbilityForResult(want: Want, options: StartOptions, callback: AsyncCallback<AbilityResult>): void
 ```
 
-启动一个UIAbility，开发者可以通过回调函数接收被拉起的UIAbility退出时的返回结果。使用callback异步回调。UIAbility被启动后，有如下情况:
-
-- 正常情况下可通过调用
-[terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)
-接口使之终止并且返回结果给调用方。
-- 异常情况下比如杀死UIAbility会返回异常信息给调用方，异常信息中resultCode为-1。
-- 如果被启动的UIAbility模式是单实例模式, 不同应用多次调用该接口启动这个UIAbility，当这个UIAbility调用
-[terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)
-接口使之终止时，只将正常结果返回给最后一个调用方，其它调用方返回异常信息, 异常信息中resultCode为-1。
-
-> **说明：**
->
-> 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
+启动一个UIAbility，开发者可以通过回调函数接收被拉起的UIAbility退出时的返回结果。使用callback异步回调。UIAbility被启动后，有如下情况: - 正常情况下可通过调用 [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1) 接口使之终止并且返回结果给调用方。 - 异常情况下比如杀死UIAbility会返回异常信息给调用方，异常信息中resultCode为-1。 - 如果被启动的UIAbility模式是单实例模式, 不同应用多次调用该接口启动这个UIAbility，当这个UIAbility调用 [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1) 接口使之终止时，只将正常结果返回给最后一个调用方，其它调用方返回异常信息, 异常信息中resultCode为-1。 > **说明：** > > 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
 
 **起始版本：** 10
 
@@ -713,19 +626,7 @@ startAbilityForResult(want: Want, options: StartOptions, callback: AsyncCallback
 startAbilityForResult(want: Want, options?: StartOptions): Promise<AbilityResult>
 ```
 
-启动一个UIAbility，开发者可以通过回调函数接收被拉起的UIAbility退出时的返回结果。使用Promise异步回调。UIAbility被启动后，有如下情况:
-
-- 正常情况下可通过调用
-[terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)
-接口使之终止并且返回结果给调用方。
-- 异常情况下比如杀死UIAbility会返回异常信息给调用方, 异常信息中resultCode为-1。
-- 如果被启动的UIAbility模式是单实例模式, 不同应用多次调用该接口启动这个UIAbility，当这个UIAbility调用
-[terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)
-接口使之终止时，只将正常结果返回给最后一个调用方, 其它调用方返回异常信息, 异常信息中resultCode为-1。
-
-> **说明：**
->
-> 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
+启动一个UIAbility，开发者可以通过回调函数接收被拉起的UIAbility退出时的返回结果。使用Promise异步回调。UIAbility被启动后，有如下情况: - 正常情况下可通过调用 [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1) 接口使之终止并且返回结果给调用方。 - 异常情况下比如杀死UIAbility会返回异常信息给调用方, 异常信息中resultCode为-1。 - 如果被启动的UIAbility模式是单实例模式, 不同应用多次调用该接口启动这个UIAbility，当这个UIAbility调用 [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1) 接口使之终止时，只将正常结果返回给最后一个调用方, 其它调用方返回异常信息, 异常信息中resultCode为-1。 > **说明：** > > 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
 
 **起始版本：** 10
 
@@ -786,11 +687,7 @@ startAbilityForResult(want: Want, options?: StartOptions): Promise<AbilityResult
 startUIServiceExtensionAbility(want: Want): Promise<void>
 ```
 
-启动一个UIServiceExtensionAbility。使用Promise异步回调。
-
-> **说明：**
->
-> 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
+启动一个UIServiceExtensionAbility。使用Promise异步回调。 > **说明：** > > 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
 
 **起始版本：** 14
 

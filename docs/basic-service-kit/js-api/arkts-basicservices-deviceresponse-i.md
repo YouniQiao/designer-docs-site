@@ -50,19 +50,7 @@ Brand.
 deviceType: string
 ```
 
-Device type. The options are as follows:
-phone: smartphone
-tablet: tablet
-tv: smart TV
-wearable: wearable
-liteWearable: lite wearable
-ar: AR
-vr: virtual reality
-earphones: headset
-pc: personal computer
-speaker: speaker
-smartVision: smart visual device
-linkIoT: connection module
+Device type. The options are as follows: phone: smartphone tablet: tablet tv: smart TV wearable: wearable liteWearable: lite wearable ar: AR vr: virtual reality earphones: headset pc: personal computer speaker: speaker smartVision: smart visual device linkIoT: connection module
 
 **Type:** string
 
@@ -174,15 +162,49 @@ Screen density, unit dpi.
 screenShape: 'rect' | 'circle'
 ```
 
-Screen shape. The options are as follows:
-rect: Rectangle screen.
-circle: Circle screen.
+Screen shape. The options are as follows: rect: Rectangle screen. circle: Circle screen.
 
 **Type:** 'rect' | 'circle'
 
 **Since:** 4
 
 **Deprecated since:** 6
+
+**System capability:** SystemCapability.Startup.SystemInfo.Lite
+
+## sdkMinorApiVersion
+
+```TypeScript
+sdkMinorApiVersion: number
+```
+
+Minor API version of the system software. From API 26 and later versions, the system API version format is sdkApiVersion.sdkMinorApiVersion.sdkPatchApiVersion. Example: 26.0.0 Value range: (-∞,+∞).
+
+**Type:** number
+
+**Since:** 26.0.0
+
+**Deprecated since:** 26.0.0
+
+**Model restriction:** This API can be used only in the FA model.
+
+**System capability:** SystemCapability.Startup.SystemInfo.Lite
+
+## sdkPatchApiVersion
+
+```TypeScript
+sdkPatchApiVersion: number
+```
+
+Minor API version of the system software. From API 26 and later versions, the system API version format is sdkApiVersion.sdkMinorApiVersion.sdkPatchApiVersion. Example: 26.0.0 Value range: (-∞,+∞).
+
+**Type:** number
+
+**Since:** 26.0.0
+
+**Deprecated since:** 26.0.0
+
+**Model restriction:** This API can be used only in the FA model.
 
 **System capability:** SystemCapability.Startup.SystemInfo.Lite
 

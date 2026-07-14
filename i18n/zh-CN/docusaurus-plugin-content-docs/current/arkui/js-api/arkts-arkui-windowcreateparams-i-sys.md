@@ -12,8 +12,7 @@
 isWindowLimitsForcible?: boolean
 ```
 
-是否覆盖系统窗口尺寸限制。
-如果为true，则当前主窗口可以设置超出系统限制的窗口尺寸限制。
+是否覆盖系统窗口尺寸限制。 如果为true，则当前主窗口可以设置超出系统限制的窗口尺寸限制。
 
 **类型：** boolean
 
@@ -33,9 +32,7 @@ isWindowLimitsForcible?: boolean
 systemAnimationParams?: StartAnimationSystemParams
 ```
 
-启动动画配置，仅对全屏应用生效。
-
-不同应用间跳转场景不生效，仍保持系统默认动效。
+启动动画配置，仅对全屏应用生效。 不同应用间跳转场景不生效，仍保持系统默认动效。
 
 **类型：** StartAnimationSystemParams
 

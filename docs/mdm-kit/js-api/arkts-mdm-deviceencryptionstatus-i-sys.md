@@ -20,9 +20,7 @@ import { securityManager } from '@kit.MDMKit';
 isEncrypted: boolean
 ```
 
-Whether the file system of the device is encrypted.
-
-The value **true** means the file system of the device is encrypted; the value **false** means the opposite.
+Whether the file system of the device is encrypted. The value **true** means the file system of the device is encrypted; the value **false** means the opposite.
 
 **Type:** boolean
 

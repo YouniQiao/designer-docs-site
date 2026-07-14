@@ -141,8 +141,7 @@ try {
 build(): VibratorPattern
 ```
 
-Constructor used to create a **VibratorPattern** object, which determines the vibration sequence of short or long
-events.
+Constructor used to create a **VibratorPattern** object, which determines the vibration sequence of short or long events.
 
 **Since:** 18
 

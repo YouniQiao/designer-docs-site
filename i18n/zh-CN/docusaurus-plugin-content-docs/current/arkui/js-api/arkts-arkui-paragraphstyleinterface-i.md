@@ -12,9 +12,7 @@ ParagraphStyleInterface
 leadingMargin?: LengthMetrics | LeadingMarginPlaceholder
 ```
 
-设置文本段落的缩进。不支持百分比。
-
-默认值：0
+设置文本段落的缩进。不支持百分比。 默认值：0
 
 **类型：** LengthMetrics | LeadingMarginPlaceholder
 
@@ -32,9 +30,7 @@ leadingMargin?: LengthMetrics | LeadingMarginPlaceholder
 leadingMarginSpan?: LeadingMarginSpan
 ```
 
-设置文本段落的自定义缩进。不支持百分比。
-
-默认值：0
+设置文本段落的自定义缩进。不支持百分比。 默认值：0
 
 **类型：** LeadingMarginSpan
 
@@ -70,11 +66,7 @@ maxLines?: number
 overflow?: TextOverflow
 ```
 
-设置文本段落超长时的显示方式。
-
-默认值：TextOverflow.None
-
-需配合maxLines使用，单独设置不生效。不支持TextOverflow.MARQUEE。
+设置文本段落超长时的显示方式。 默认值：TextOverflow.None 需配合maxLines使用，单独设置不生效。不支持TextOverflow.MARQUEE。
 
 **类型：** TextOverflow
 
@@ -92,9 +84,7 @@ overflow?: TextOverflow
 paragraphSpacing?: LengthMetrics
 ```
 
-设置文本段落的段落间距。
-
-段落间距默认大小为0。不支持百分比。
+设置文本段落的段落间距。 段落间距默认大小为0。不支持百分比。
 
 **类型：** LengthMetrics
 
@@ -112,10 +102,7 @@ paragraphSpacing?: LengthMetrics
 shaderStyle?: ShaderStyle
 ```
 
-设置文本着色器效果。
-
-该接口与[TextStyleInterface](arkts-arkui-textstyleinterface-i.md)的strokeWidth同时设置时，该接口不生效，shaderStyle的优先级高于
-[TextStyleInterface](arkts-arkui-textstyleinterface-i.md)中的fontColor。
+设置文本着色器效果。 该接口与[TextStyleInterface](arkts-arkui-textstyleinterface-i.md)的strokeWidth同时设置时，该接口不生效，shaderStyle的优先级高于 [TextStyleInterface](arkts-arkui-textstyleinterface-i.md)中的fontColor。
 
 **类型：** ShaderStyle
 
@@ -133,13 +120,7 @@ shaderStyle?: ShaderStyle
 tailIndents?: LengthMetrics | Array<LengthMetrics>
 ```
 
-指定段落中每行的尾部缩进。
-<p><strong>说明</strong>：
-当提供单个LengthMetrics值时，所有行共享相同的尾部缩进
-当提供数组时，第i个元素指定第i行的尾部缩进。
-如果文本行数超过数组长度，则使用数组中的最后一个元素应用至其余的行。
-<br>负值被视为0。
-</p>。
+指定段落中每行的尾部缩进。 <p><strong>说明</strong>： 当提供单个LengthMetrics值时，所有行共享相同的尾部缩进 当提供数组时，第i个元素指定第i行的尾部缩进。 如果文本行数超过数组长度，则使用数组中的最后一个元素应用至其余的行。 <br>负值被视为0。 </p>。
 
 **类型：** LengthMetrics | Array<LengthMetrics>
 
@@ -157,9 +138,7 @@ tailIndents?: LengthMetrics | Array<LengthMetrics>
 textAlign?: TextAlign
 ```
 
-设置文本段落在水平方向的对齐方式。
-
-默认值：TextAlign.Start
+设置文本段落在水平方向的对齐方式。 默认值：TextAlign.Start
 
 **类型：** TextAlign
 
@@ -177,9 +156,7 @@ textAlign?: TextAlign
 textDirection?: TextDirection
 ```
 
-设置文本方向。
-
-默认值：TextDirection.DEFAULT
+设置文本方向。 默认值：TextDirection.DEFAULT
 
 **类型：** TextDirection
 
@@ -197,9 +174,7 @@ textDirection?: TextDirection
 textIndent?: LengthMetrics
 ```
 
-设置文本段落的首行文本缩进。不支持百分比。
-
-默认值：0
+设置文本段落的首行文本缩进。不支持百分比。 默认值：0
 
 **类型：** LengthMetrics
 
@@ -217,9 +192,7 @@ textIndent?: LengthMetrics
 textVerticalAlign?: TextVerticalAlign
 ```
 
-设置文本段落在垂直方向的对齐方式。
-
-默认值：TextVerticalAlign.BASELINE
+设置文本段落在垂直方向的对齐方式。 默认值：TextVerticalAlign.BASELINE
 
 **类型：** TextVerticalAlign
 
@@ -237,9 +210,7 @@ textVerticalAlign?: TextVerticalAlign
 wordBreak?: WordBreak
 ```
 
-设置文本段落的断行规则。
-
-默认值：WordBreak.NORMAL
+设置文本段落的断行规则。 默认值：WordBreak.NORMAL
 
 **类型：** WordBreak
 

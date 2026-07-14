@@ -2,7 +2,6 @@
 
 Defines the ColumnSplit component.
 
-
 ## ColumnSplit
 
 ```TypeScript

@@ -150,8 +150,7 @@ image.createPixelMap(color, initializationOptions).then((pixelMap: image.PixelMa
 function setWaterMarkImage(pixelMap: image.PixelMap, enable: boolean, callback: AsyncCallback<void>): void
 ```
 
-Controls whether a watermark image is displayed on the screen. This API uses an asynchronous callback to return the
-result.
+Controls whether a watermark image is displayed on the screen. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 

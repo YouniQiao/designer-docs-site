@@ -22,9 +22,9 @@
 | --- | --- |
 | [BindInfo](arkts-arkdata-bindinfo-i.md) | 数据库的绑定信息。当前版本只支持关系型数据库的绑定。 |
 | [DataObject](arkts-arkdata-dataobject-i.md) | 表示一个分布式数据对象。在使用以下接口前，需调用[create()](arkts-arkdata-create-f.md#create-1)获取DataObject对象。 |
-| [DistributedObject](arkts-arkdata-distributedobject-i.md) | 表示一个分布式数据对象。在使用以下接口前，需调用[createDistributedObject()](arkts-arkdata-createdistributedobject-f.md#createdistributedobject-1)获取DistributedObject对象。 |
-| [RevokeSaveSuccessResponse](arkts-arkdata-revokesavesuccessresponse-i.md) | [revokeSave](arkts-arkdata-dataobject-i.md#revokesave-1)接口回调信息。 |
-| [SaveSuccessResponse](arkts-arkdata-savesuccessresponse-i.md) | [save](arkts-arkdata-dataobject-i.md#save-1)接口回调信息。 |
+| [DistributedObject](arkts-arkdata-distributedobject-i.md) | 表示一个分布式数据对象。在使用以下接口前，需调用[createDistributedObject()](arkts-arkdata-createdistributedobject-f.md#createdistributedobject-1)获取 DistributedObject对象。 |
+| [RevokeSaveSuccessResponse](arkts-arkdata-revokesavesuccessresponse-i.md) | [revokeSave](arkts-arkdata-dataobject-i.md#revokesave-1) 接口回调信息。 |
+| [SaveSuccessResponse](arkts-arkdata-savesuccessresponse-i.md) | [save](arkts-arkdata-dataobject-i.md#save-1) 接口回调信息。 |
 
 ### 类型
 

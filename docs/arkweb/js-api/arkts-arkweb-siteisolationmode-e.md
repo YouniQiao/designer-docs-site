@@ -1,9 +1,6 @@
 # SiteIsolationMode
 
-Enumerates the site isolation modes. The site isolation mechanism isolates websites from different sources in
-different render processes to reduce the cross-domain attack surface. For example, on a PC, each tab corresponds to
-a render process. After site isolation is enabled, Iframes from different sources run in independent render
-processes.
+Enumerates the site isolation modes. The site isolation mechanism isolates websites from different sources in different render processes to reduce the cross-domain attack surface. For example, on a PC, each tab corresponds to a render process. After site isolation is enabled, Iframes from different sources run in independent render processes.
 
 **Since:** 21
 

@@ -52,8 +52,7 @@ Add an interceptor chain to the HTTP client.
 public apply(httpRequest: HttpRequest): boolean
 ```
 
-Attach the chain to the target http request.
-Only one chain can be attached to a given request.
+Attach the chain to the target http request. Only one chain can be attached to a given request.
 
 **Since:** 22
 

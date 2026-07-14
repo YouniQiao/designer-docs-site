@@ -14,8 +14,7 @@ Custom ComponentV2
 aboutToReuse?(): void
 ```
 
-Invoked when a reusable custom component managed by state management V2
-is taken from the reuse pool and reinserted into the node tree.
+Invoked when a reusable custom component managed by state management V2 is taken from the reuse pool and reinserted into the node tree.
 
 **Since:** 18
 

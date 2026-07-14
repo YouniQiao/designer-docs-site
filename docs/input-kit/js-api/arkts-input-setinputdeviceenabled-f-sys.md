@@ -12,9 +12,7 @@ import { inputDevice } from '@kit.InputKit';
 function setInputDeviceEnabled(deviceId: number, enabled: boolean): Promise<void>
 ```
 
-Sets the input switch status of an input device. Take the touchscreen as an example. If the input switch is off,
-the touchscreen does not respond when being touched. If the input switch is on, the touchscreen wakes up when being
-touched. This API uses a promise to return the result.
+Sets the input switch status of an input device. Take the touchscreen as an example. If the input switch is off, the touchscreen does not respond when being touched. If the input switch is on, the touchscreen wakes up when being touched. This API uses a promise to return the result.
 
 **Since:** 18
 

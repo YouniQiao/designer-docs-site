@@ -12,8 +12,7 @@ import { continuationManager } from '@kit.AbilityKit';
 function register(callback: AsyncCallback<number>): void
 ```
 
-Registers the continuation management service and obtains a token. This API does not involve any filter parameters
-and uses an asynchronous callback to return the result.
+Registers the continuation management service and obtains a token. This API does not involve any filter parameters and uses an asynchronous callback to return the result.
 
 **Since:** 8
 
@@ -55,8 +54,7 @@ continuationManager.register((err, data) => {
 function register(options: ContinuationExtraParams, callback: AsyncCallback<number>): void
 ```
 
-Registers the continuation management service and obtains a token. This API uses an asynchronous callback to return
-the result.
+Registers the continuation management service and obtains a token. This API uses an asynchronous callback to return the result.
 
 **Since:** 8
 

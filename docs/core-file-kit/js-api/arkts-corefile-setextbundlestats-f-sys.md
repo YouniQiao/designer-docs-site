@@ -12,12 +12,7 @@ import { storageStatistics } from '@kit.CoreFileKit';
 function setExtBundleStats(userId: number, stats: ExtBundleStats): Promise<void>
 ```
 
-Reports the space usage of system applications or system services. This API uses a promise to return the result.
-
-> **NOTE**
->
-> If the value of **flag** in **stats** is **false**, the value of **businessName** must be the bundle name of an
-> application.
+Reports the space usage of system applications or system services. This API uses a promise to return the result. > **NOTE** > > If the value of **flag** in **stats** is **false**, the value of **businessName** must be the bundle name of an > application.
 
 **Since:** 23
 

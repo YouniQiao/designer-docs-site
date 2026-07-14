@@ -4,11 +4,7 @@
 export type GlobalObserver = (reason: GlobalError) => void
 ```
 
-定义异常监听，可以作为
-[errorManager.on('globalErrorOccurred')](arkts-ability-on-f.md#on-6)
-和
-[errorManager.on('globalUnhandledRejectionDetected')](arkts-ability-on-f.md#on-4)
-的入参监听当前应用主线程事件处理事件。
+定义异常监听，可以作为 [errorManager.on('globalErrorOccurred')](arkts-ability-on-f.md#on-6) 和 [errorManager.on('globalUnhandledRejectionDetected')](arkts-ability-on-f.md#on-4) 的入参监听当前应用主线程事件处理事件。
 
 **起始版本：** 18
 

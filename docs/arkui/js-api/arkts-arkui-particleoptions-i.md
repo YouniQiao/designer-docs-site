@@ -12,13 +12,7 @@ Defines the ParticleOptions Interface.
 acceleration?: AccelerationOptions<ACC_SPEED_UPDATER, ACC_ANGLE_UPDATER>
 ```
 
-Particle acceleration.
-
-**NOTE**
-
-**speed** indicates the acceleration speed, and **angle** indicates the acceleration direction (in angles).
-
-Default value: **{ speed:{range:[0.0,0.0]},angle:{range:[0.0,0.0]} }**
+Particle acceleration. **NOTE** **speed** indicates the acceleration speed, and **angle** indicates the acceleration direction (in angles). Default value: **{ speed:{range:[0.0,0.0]},angle:{range:[0.0,0.0]} }**
 
 **Type:** AccelerationOptions<ACC_SPEED_UPDATER, ACC_ANGLE_UPDATER>
 
@@ -38,11 +32,7 @@ Default value: **{ speed:{range:[0.0,0.0]},angle:{range:[0.0,0.0]} }**
 color?: ParticleColorPropertyOptions<COLOR_UPDATER>
 ```
 
-Particle color.
-
-**NOTE**
-
-Default value: **{ range:[Color.White,Color.White] }.** Colors cannot be set for image particles.
+Particle color. **NOTE** Default value: **{ range:[Color.White,Color.White] }.** Colors cannot be set for image particles.
 
 **Type:** ParticleColorPropertyOptions<COLOR_UPDATER>
 
@@ -80,9 +70,7 @@ Particle emitter.
 opacity?: ParticlePropertyOptions<number, OPACITY_UPDATER>
 ```
 
-Particle opacity.
-
-Default value: **{ range:[1.0,1.0] }**
+Particle opacity. Default value: **{ range:[1.0,1.0] }**
 
 **Type:** ParticlePropertyOptions<number, OPACITY_UPDATER>
 
@@ -102,9 +90,7 @@ Default value: **{ range:[1.0,1.0] }**
 scale?: ParticlePropertyOptions<number, SCALE_UPDATER>
 ```
 
-Particle scale.
-
-Default value: **{ range:[1.0,1.0] }**
+Particle scale. Default value: **{ range:[1.0,1.0] }**
 
 **Type:** ParticlePropertyOptions<number, SCALE_UPDATER>
 
@@ -124,11 +110,7 @@ Default value: **{ range:[1.0,1.0] }**
 spin?: ParticlePropertyOptions<number, SPIN_UPDATER>
 ```
 
-Particle spin angle.
-
-Default value: **{range:[0.0,0.0]}**
-
-Direction: A positive number indicates clockwise spinning, and a negative number indicates anticlockwise spinning.
+Particle spin angle. Default value: **{range:[0.0,0.0]}** Direction: A positive number indicates clockwise spinning, and a negative number indicates anticlockwise spinning.
 
 **Type:** ParticlePropertyOptions<number, SPIN_UPDATER>
 
@@ -148,15 +130,7 @@ Direction: A positive number indicates clockwise spinning, and a negative number
 velocity?: VelocityOptions
 ```
 
-Particle velocity.
-
-**NOTE**
-
-**speed** indicates the time rate at which the particle moves. **angle** indicates the direction (in angles) in
-which the particle moves, with the geometric center of the element as the coordinate origin and the horizontal
-direction as the x-axis. A positive number indicates clockwise rotation.
-
-Default value: **{speed: [0.0,0.0],angle: [0.0,0.0] }**
+Particle velocity. **NOTE** **speed** indicates the time rate at which the particle moves. **angle** indicates the direction (in angles) in which the particle moves, with the geometric center of the element as the coordinate origin and the horizontal direction as the x-axis. A positive number indicates clockwise rotation. Default value: **{speed: [0.0,0.0],angle: [0.0,0.0] }**
 
 **Type:** VelocityOptions
 

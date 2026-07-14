@@ -1,8 +1,6 @@
 # RectShape
 
-Represents a rectangle shape used in the **clipShape** and **maskShape** APIs.
-
-This API inherits from [BaseShape](arkts-arkui-baseshape-c.md).
+Represents a rectangle shape used in the **clipShape** and **maskShape** APIs. This API inherits from [BaseShape](arkts-arkui-baseshape-c.md).
 
 **Inheritance/Implementation:** RectShape extends [BaseShape<RectShape>](BaseShape<RectShape>)
 

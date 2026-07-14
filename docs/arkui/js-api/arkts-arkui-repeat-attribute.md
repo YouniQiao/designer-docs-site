@@ -14,18 +14,7 @@ In addition to the [drag-and-drop sorting](../../apis-ability-kit/arkts-apis/ark
 each(itemGenerator: (repeatItem: RepeatItem<T>) => void)
 ```
 
-Component generator. When the return value of [.templateId()](RepeatAttribute#templateId) does not match any
-[.template()](RepeatAttribute#template) type (that is, the current item does not match any defined template
-style), the data item is processed using **.each()**.
-
-> **NOTE**
->
-> - The **each** property is mandatory. If it is omitted, runtime errors will occur.
->
-> - The **itemGenerator** parameter is of the **RepeatItem** type, which combines **item** and **index**. Do not
-> destructure **RepeatItem**.
->
-> - This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
+Component generator. When the return value of [.templateId()](RepeatAttribute#templateId) does not match any [.template()](RepeatAttribute#template) type (that is, the current item does not match any defined template style), the data item is processed using **.each()**. > **NOTE** > > - The **each** property is mandatory. If it is omitted, runtime errors will occur. > > - The **itemGenerator** parameter is of the **RepeatItem** type, which combines **item** and **index**. Do not > destructure **RepeatItem**. > > - This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 12
 
@@ -49,11 +38,7 @@ style), the data item is processed using **.each()**.
 key(keyGenerator: (item: T, index: number) => string)
 ```
 
-Key generator.
-
-> **NOTE**
->
-> This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
+Key generator. > **NOTE** > > This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 12
 
@@ -77,11 +62,7 @@ Key generator.
 template(type: string, itemBuilder: RepeatItemBuilder<T>, templateOptions?: TemplateOptions)
 ```
 
-Renders the corresponding template child component based on the template type.
-
-> **NOTE**
->
-> This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
+Renders the corresponding template child component based on the template type. > **NOTE** > > This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 12
 
@@ -105,11 +86,7 @@ Renders the corresponding template child component based on the template type.
 templateId(typedFunc: TemplateTypedFunc<T>)
 ```
 
-Assigns a template type for this data item.
-
-> **NOTE**
->
-> This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
+Assigns a template type for this data item. > **NOTE** > > This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 12
 
@@ -131,11 +108,7 @@ Assigns a template type for this data item.
 virtualScroll(virtualScrollOptions?: VirtualScrollOptions)
 ```
 
-Enables virtual scrolling for **Repeat**.
-
-> **NOTE**
->
-> This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
+Enables virtual scrolling for **Repeat**. > **NOTE** > > This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 12
 

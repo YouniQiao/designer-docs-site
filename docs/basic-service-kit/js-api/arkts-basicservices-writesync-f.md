@@ -12,8 +12,7 @@ import { serialManager } from '@kit.BasicServicesKit';
 function writeSync(portId: number, buffer: Uint8Array, timeout?: number): number
 ```
 
-Writes data to the serial port device synchronously. The length of data written each time cannot exceed 4 KB;
-otherwise, data loss may occur. You are advised to write long data in multiple packets.
+Writes data to the serial port device synchronously. The length of data written each time cannot exceed 4 KB; otherwise, data loss may occur. You are advised to write long data in multiple packets.
 
 **Since:** 19
 
@@ -67,7 +66,7 @@ function writeSync() {
   if (!serialManager.hasSerialRight(portId)) {
     serialManager.requestSerialRight(portId).then(result => {
       if (!result) {
-        // If the application does not have the access permission and is not granted by the user, the application exits.
+        // If the application does not have the access permission and the user does not grant the permission, the application exits.
         console.error('user is not granted the operation permission');
         return;
       } else {
@@ -91,6 +90,14 @@ function writeSync() {
     console.info('writeSync usbSerial success, writeSyncBuffer: ' + writeSyncBuffer.toString());
   } catch (error) {
     console.error('writeSync usbSerial error, ' + JSON.stringify(error));
+  }
+  
+  // Close the serial port device.
+  try {
+    serialManager.close(portId);
+    console.info('close usbSerial success, portId: ' + portId);
+  } catch (error) {
+    console.error('close usbSerial error, ' + JSON.stringify(error));
   }
 }
 

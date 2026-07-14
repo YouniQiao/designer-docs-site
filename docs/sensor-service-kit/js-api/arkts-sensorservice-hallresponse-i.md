@@ -20,8 +20,7 @@ import { sensor } from '@kit.SensorServiceKit';
 status: number
 ```
 
-Hall effect sensor status. This parameter specifies whether a magnetic field exists around a device. The value
-**0** means that a magnetic field does not exist, and a value greater than **0** means the opposite.
+Hall effect sensor status. This parameter specifies whether a magnetic field exists around a device. The value **0** means that a magnetic field does not exist, and a value greater than **0** means the opposite.
 
 **Type:** number
 

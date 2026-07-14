@@ -1,7 +1,6 @@
 # UICommonEvent
 
-Implements a common event callback. Passing **undefined** as the input parameter resets the corresponding event
-callback.
+Implements a common event callback. Passing **undefined** as the input parameter resets the corresponding event callback.
 
 **Since:** 12
 
@@ -189,8 +188,7 @@ Sets the callback for the [onMouse](arkts-arkui-commonmethod-c.md#onmouse-1) eve
 setOnSizeChange(callback: SizeChangeCallback | undefined): void
 ```
 
-Sets the callback for the [onSizeChange](arkts-arkui-commonmethod-c.md#onsizechange-1) event, which is triggered when the
-component's size changes.
+Sets the callback for the [onSizeChange](arkts-arkui-commonmethod-c.md#onsizechange-1) event, which is triggered when the component's size changes.
 
 **Since:** 12
 
@@ -234,9 +232,7 @@ Sets the callback for the [touch event](arkts-arkui-commonmethod-c.md#ontouch-1)
 setOnVisibleAreaApproximateChange(options: VisibleAreaEventOptions, event: VisibleAreaChangeCallback | undefined): void
 ```
 
-Sets the callback for the
-[onVisibleAreaChange](arkts-arkui-commonmethod-c.md#onvisibleareachange-1)
-visible area change event.
+Sets the callback for the [onVisibleAreaChange](arkts-arkui-commonmethod-c.md#onvisibleareachange-1) visible area change event.
 
 **Since:** 12
 

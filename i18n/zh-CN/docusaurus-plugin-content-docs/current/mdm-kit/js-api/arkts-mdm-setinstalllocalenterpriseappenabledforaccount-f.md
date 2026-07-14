@@ -6,16 +6,7 @@
 function setInstallLocalEnterpriseAppEnabledForAccount(admin: Want, isEnable: boolean, accountId: number): void
 ```
 
-设置指定用户下是否支持本地安装企业应用。在具备本地安装能力的PC/2in1企业设备上下发支持本地企业应用策略后，用户可以在桌面或者文件管理器直接双击企业应用安装包，即可直接安装企业应用。
-
-仅支持enterprise_normal或enterprise_mdm签名类型的企业应用。
-
-> **说明：**
->
-> 满足以下任意条件，PC/2in1企业设备在当前用户下即支持本地安装企业应用：
->
-
-<!--RP7--><!--RP7End-->
+设置指定用户下是否支持本地安装企业应用。在具备本地安装能力的PC/2in1企业设备上下发支持本地企业应用策略后，用户可以在桌面或者文件管理器直接双击企业应用安装包，即可直接安装企业应用。 仅支持enterprise_normal或enterprise_mdm签名类型的企业应用。 > **说明：** > > 满足以下任意条件，PC/2in1企业设备在当前用户下即支持本地安装企业应用： > <!--RP7--><!--RP7End-->
 
 **起始版本：** 24
 

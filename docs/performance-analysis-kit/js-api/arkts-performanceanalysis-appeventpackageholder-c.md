@@ -18,9 +18,7 @@ import { hiAppEvent } from '@kit.PerformanceAnalysisKit';
 constructor(watcherName: string)
 ```
 
-Constructs an **AppEventPackageHolder** instance. You can call [addWatcher](arkts-performanceanalysis-addwatcher-f.md#addwatcher-1) to add
-an event watcher, and then associate the **AppEventPackageHolder** instance with the watcher added in the
-application based on the watcher name.
+Constructs an **AppEventPackageHolder** instance. You can call [addWatcher](arkts-performanceanalysis-addwatcher-f.md#addwatcher-1) to add an event watcher, and then associate the **AppEventPackageHolder** instance with the watcher added in the application based on the watcher name.
 
 **Since:** 9
 
@@ -58,8 +56,7 @@ let holder1: hiAppEvent.AppEventPackageHolder = new hiAppEvent.AppEventPackageHo
 setRow(size: number): void
 ```
 
-Sets the number of data records of the event package obtained each time. When **setRow()** and **setSize()** are
-called at the same time, only **setRow()** takes effect.
+Sets the number of data records of the event package obtained each time. When **setRow()** and **setSize()** are called at the same time, only **setRow()** takes effect.
 
 **Since:** 12
 
@@ -133,13 +130,7 @@ holder2.setSize(1000);
 takeNext(): AppEventPackage
 ```
 
-Obtains the subscription event.
-
-The system obtains the subscription event data based on the data size threshold specified by **setSize** or the
-number of data records specified by **setRow**. By default, one subscription event data record is obtained. When
-all subscription event data is obtained, **null** is returned.
-
-When **setRow** and **setSize** are called at the same time, only **setRow** takes effect.
+Obtains the subscription event. The system obtains the subscription event data based on the data size threshold specified by **setSize** or the number of data records specified by **setRow**. By default, one subscription event data record is obtained. When all subscription event data is obtained, **null** is returned. When **setRow** and **setSize** are called at the same time, only **setRow** takes effect.
 
 **Since:** 9
 

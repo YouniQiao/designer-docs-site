@@ -2,7 +2,7 @@
 
 Defines information about the images or videos selected.
 
-**Since:** 12
+**Since:** 10
 
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -18,7 +18,7 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 contextRecoveryInfo: ContextRecoveryInfo
 ```
 
-Contextual information about the PhotoPicker's exit state.
+Information about the context of exiting the PhotoPicker. This information is returned when the selection process is complete and is used by the application within **PhotoSelectOptions** during the subsequent launch of the PhotoPicker to restore the state from the previous exit.
 
 **Type:** ContextRecoveryInfo
 
@@ -34,15 +34,13 @@ Contextual information about the PhotoPicker's exit state.
 isOriginalPhoto: boolean
 ```
 
-Whether the selected media asset is the original image.
-The value true means that the selected media asset is the original image, and false means the opposite.
-The default value is false.
+Whether the selected media file is the original image. **true** if yes, **false** otherwise. The default value is **false**.
 
 **Type:** boolean
 
-**Since:** 12
+**Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -52,9 +50,7 @@ The default value is false.
 movingPhotoBadgeStates: Array<MovingPhotoBadgeStateType>
 ```
 
-Moving photo badge states for the selected media files in the gallery.
-When isMovingPhotoBadgeShown is true, movingPhotoBadgeStates contains the moving photo states;
-otherwise, it is empty.
+Array of moving photo badge states for the media files selected from Gallery. If **isMovingPhotoBadgeShown** is set to **true**, this array contains the moving photo badge states. Otherwise, it is empty.
 
 **Type:** Array<MovingPhotoBadgeStateType>
 
@@ -70,14 +66,13 @@ otherwise, it is empty.
 photoUris: Array<string>
 ```
 
-URIs of the images or videos selected. The URI array can be used only by calling photoAccessHelper.getAssets with temporary authorization.
-For details about how to use the media file URI, see Using a Media File URI.
+URIs of the media files selected. This URI array can be used only by calling the [photoAccessHelper.getAssets](arkts-medialibrary-photoaccesshelper-i.md#getassets-1) API through temporary authorization. For details, see [Using a Media File URI](../../../../file-management/user-file-uri-intro.md#using-a-media-file-uri).
 
 **Type:** Array<string>
 
-**Since:** 12
+**Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
 

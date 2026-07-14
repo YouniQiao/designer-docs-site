@@ -26,9 +26,7 @@ Called back when an ability enters the <b>ACTIVE</b> state.
 onCompleteContinuation?(result: number): void
 ```
 
-Called back when a local ability migration is complete.
-<p>You can define the processing logic after the migration is complete. For example, you can display a prompt to
-notify the user of the successful migration and then exit the local ability.</p>
+Called back when a local ability migration is complete. <p>You can define the processing logic after the migration is complete. For example, you can display a prompt to notify the user of the successful migration and then exit the local ability.</p>
 
 **Since:** 7
 
@@ -90,8 +88,7 @@ Called back when an ability enters the <b>BACKGROUND</b> state.
 onInactive?(): void
 ```
 
-Called back when an ability enters the <b>INACTIVE</b> state (an ability in this state is not interactive and may
-change to the <b>BACKGROUND</b> or <b>ACTIVE</b> state).
+Called back when an ability enters the <b>INACTIVE</b> state (an ability in this state is not interactive and may change to the <b>BACKGROUND</b> or <b>ACTIVE</b> state).
 
 **Since:** 7
 
@@ -105,8 +102,7 @@ change to the <b>BACKGROUND</b> or <b>ACTIVE</b> state).
 onMemoryLevel?(level: number): void
 ```
 
-Called when the system has determined to trim the memory, for example, when the ability is running in the
-background and there is no enough memory for running as many background processes as possible.
+Called when the system has determined to trim the memory, for example, when the ability is running in the background and there is no enough memory for running as many background processes as possible.
 
 **Since:** 7
 
@@ -146,8 +142,7 @@ Called when the launch mode of an ability is set to singleton.
 onRemoteTerminated?(): void
 ```
 
-Called to notify the local device when a running ability on the remote device is destroyed after a reversible
-migration is performed for the ability from the local device to the remote device.
+Called to notify the local device when a running ability on the remote device is destroyed after a reversible migration is performed for the ability from the local device to the remote device.
 
 **Since:** 7
 
@@ -161,9 +156,7 @@ migration is performed for the ability from the local device to the remote devic
 onRestoreAbilityState?(inState: PacMap): void
 ```
 
-This method is called if an ability was destroyed at a certain time due to resource reclaim or was
-unexpectedly destroyed and the {@link #onSaveAbilityState(PacMap)} method was called to save its user data and
-states. Generally, this method is called after the {@link #onStart(Want)} method.
+This method is called if an ability was destroyed at a certain time due to resource reclaim or was unexpectedly destroyed and the {@link #onSaveAbilityState(PacMap)} method was called to save its user data and states. Generally, this method is called after the {@link #onStart(Want)} method.
 
 **Since:** 7
 
@@ -183,9 +176,7 @@ states. Generally, this method is called after the {@link #onStart(Want)} method
 onRestoreData?(data: Object): void
 ```
 
-Restores the user data saved during the migration for an ability on the remote device immediately after the
-ability is created on the remote device. Lifecycle scheduling for the ability starts only after the user data
-is restored.
+Restores the user data saved during the migration for an ability on the remote device immediately after the ability is created on the remote device. Lifecycle scheduling for the ability starts only after the user data is restored.
 
 **Since:** 7
 
@@ -205,9 +196,7 @@ is restored.
 onSaveAbilityState?(outState: PacMap): void
 ```
 
-This method is called when the system determines that the ability may be destroyed in an unexpected
-situation, for example, when the screen orientation changes or the user touches the Home key. Generally,
-this method is used only to save temporary states.
+This method is called when the system determines that the ability may be destroyed in an unexpected situation, for example, when the screen orientation changes or the user touches the Home key. Generally, this method is used only to save temporary states.
 
 **Since:** 7
 
@@ -227,9 +216,7 @@ this method is used only to save temporary states.
 onSaveData?(data: Object): boolean
 ```
 
-Saves the user data of a local ability generated during runtime.
-After the migration is triggered and the local ability is ready, this method is called when the Distributed
-Scheduler Service requests data from the local ability.
+Saves the user data of a local ability generated during runtime. After the migration is triggered and the local ability is ready, this method is called when the Distributed Scheduler Service requests data from the local ability.
 
 **Since:** 7
 

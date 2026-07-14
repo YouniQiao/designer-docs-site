@@ -1,8 +1,6 @@
 # Video属性/事件
 
-除支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持以下属性：
-
-除支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持以下事件：
+除支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持以下属性： 除支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持以下事件：
 
 **继承/实现关系：** VideoAttribute extends [CommonMethod<VideoAttribute>](CommonMethod<VideoAttribute>)
 
@@ -16,11 +14,7 @@
 analyzerConfig(config: ImageAnalyzerConfig)
 ```
 
-设置AI分析识别类型，包括主体识别、文字识别和对象查找等功能，支持[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)动态设置属性方法。
-
-> **说明：**
->
-> 从API version 20开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+设置AI分析识别类型，包括主体识别、文字识别和对象查找等功能，支持[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)动态设置属性方法。 > **说明：** > > 从API version 20开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 12
 
@@ -82,16 +76,7 @@ controls(value: boolean)
 enableAnalyzer(enable: boolean)
 ```
 
-设置组件支持AI分析，当前支持主体识别、文字识别和对象查找等功能，支持[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)动态设置属性方法。
-
-使能后，视频播放暂停时自动进入分析状态，开始分析当前画面帧，视频继续播放后自动退出分析状态。
-
-不能和[overlay](arkts-arkui-commonmethod-c.md#overlay-1)属性同时使用，两者同时设置时[overlay](arkts-arkui-commonmethod-c.md#overlay-1)中
-[CustomBuilder](../../../../reference/apis-arkui/arkui-ts/ts-types.md#custombuilder8)属性将失效。
-
-> **说明：**
->
-> 从API version 20开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+设置组件支持AI分析，当前支持主体识别、文字识别和对象查找等功能，支持[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)动态设置属性方法。 使能后，视频播放暂停时自动进入分析状态，开始分析当前画面帧，视频继续播放后自动退出分析状态。 不能和[overlay](arkts-arkui-commonmethod-c.md#overlay-1)属性同时使用，两者同时设置时[overlay](arkts-arkui-commonmethod-c.md#overlay-1)中 [CustomBuilder](../../../../reference/apis-arkui/arkui-ts/ts-types.md#custombuilder8)属性将失效。 > **说明：** > > 从API version 20开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 12
 
@@ -113,9 +98,7 @@ enableAnalyzer(enable: boolean)
 enableShortcutKey(enabled: boolean)
 ```
 
-设置组件支持快捷键响应，支持[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)动态设置属性方法。
-
-目前支持在组件获焦后响应空格键播放/暂停、上下方向键调整视频音量、左右方向键快进/快退。
+设置组件支持快捷键响应，支持[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)动态设置属性方法。 目前支持在组件获焦后响应空格键播放/暂停、上下方向键调整视频音量、左右方向键快进/快退。
 
 **起始版本：** 15
 
@@ -197,11 +180,7 @@ objectFit(value: ImageFit)
 onError(event: VoidCallback | import('../api/@ohos.base').ErrorCallback)
 ```
 
-播放失败时触发该事件，支持[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)动态设置属性方法。
-
-> **说明：**
->
-> 从API version 20开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+播放失败时触发该事件，支持[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)动态设置属性方法。 > **说明：** > > 从API version 20开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 7
 

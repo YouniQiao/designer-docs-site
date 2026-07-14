@@ -14,9 +14,7 @@
 enhancedIdentity?: string
 ```
 
-扩展身份，用于标识调用方的附加身份信息。当需要区分同一应用下不同调用来源的权限使用记录时传入此字段。长度不超过48个字符，调用
-[addPermissionUsedRecord](arkts-ability-addpermissionusedrecord-f-sys.md#addpermissionusedrecord-1)时传入超长值会返回错误码12100001。
-最大长度为48。默认值：空字符串。
+扩展身份，用于标识调用方的附加身份信息。当需要区分同一应用下不同调用来源的权限使用记录时传入此字段。长度不超过48个字符，调用 [addPermissionUsedRecord](arkts-ability-addpermissionusedrecord-f-sys.md#addpermissionusedrecord-1)时传入超长值会返回错误码12100001。 最大长度为48。默认值：空字符串。
 
 **类型：** string
 
@@ -34,9 +32,7 @@ enhancedIdentity?: string
 usedType?: PermissionUsedType
 ```
 
-敏感权限使用类型。
-
-默认值：NORMAL_TYPE。
+敏感权限使用类型。 默认值：NORMAL_TYPE。
 
 **类型：** PermissionUsedType
 

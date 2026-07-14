@@ -12,8 +12,7 @@ import { launcherBundleManager } from '@kit.AbilityKit';
 function getAllLauncherAbilityInfo(userId: number, callback: AsyncCallback<Array<LauncherAbilityInfo>>) : void
 ```
 
-Obtains the [launcher ability information](arkts-ability-launcherabilityinfo-i.md) of all
-applications based on the given user ID. This API uses an asynchronous callback to return the result.
+Obtains the [launcher ability information](arkts-ability-launcherabilityinfo-i.md) of all applications based on the given user ID. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -70,8 +69,7 @@ try {
 function getAllLauncherAbilityInfo(userId: number) : Promise<Array<LauncherAbilityInfo>>
 ```
 
-Obtains the [launcher ability information](arkts-ability-launcherabilityinfo-i.md) of all
-applications based on the given user ID. This API uses a promise to return the result.
+Obtains the [launcher ability information](arkts-ability-launcherabilityinfo-i.md) of all applications based on the given user ID. This API uses a promise to return the result.
 
 **Since:** 9
 

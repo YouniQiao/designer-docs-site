@@ -34,9 +34,7 @@ Certificate chain information. The default value is **undefined**.
 outData?: Uint8Array
 ```
 
-Challenge obtained after the
-[initSession](arkts-universalkeystore-initsession-f.md#initsession-1)
-operation. The default value is **undefined**.
+Challenge obtained after the [initSession](arkts-universalkeystore-initsession-f.md#initsession-1) operation. The default value is **undefined**.
 
 **Type:** Uint8Array
 
@@ -52,9 +50,7 @@ operation. The default value is **undefined**.
 properties?: Array<HuksParam>
 ```
 
-Challenge obtained after the
-[initSession](arkts-universalkeystore-initsession-f.md#initsession-1)
-operation. The default value is **undefined**.
+Challenge obtained after the [initSession](arkts-universalkeystore-initsession-f.md#initsession-1) operation. The default value is **undefined**.
 
 **Type:** Array<HuksParam>
 

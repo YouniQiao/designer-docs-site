@@ -12,10 +12,7 @@ import { usageStatistics } from '@kit.BackgroundTasksKit';
 function queryAppGroupSync(): number
 ```
 
-Queries the app group of the calling application.
-
-The priority defined in a priority group restricts the resource usage of an application,
-for example, restricting the running of background tasks.
+Queries the app group of the calling application. The priority defined in a priority group restricts the resource usage of an application, for example, restricting the running of background tasks.
 
 **Since:** 10
 
@@ -62,10 +59,7 @@ let priorityGroup: number = usageStatistics.queryAppGroupSync();
 function queryAppGroupSync(bundleName: string): number
 ```
 
-Queries the usage priority group by bundleName.
-
-The priority defined in a priority group restricts the resource usage of an application,
-for example, restricting the running of background tasks.
+Queries the usage priority group by bundleName. The priority defined in a priority group restricts the resource usage of an application, for example, restricting the running of background tasks.
 
 **Since:** 10
 

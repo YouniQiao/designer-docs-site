@@ -1,6 +1,6 @@
 # OperationType
 
-Enumeration type of operation.
+Enumerates the predicates.
 
 **Since:** 22
 
@@ -12,7 +12,7 @@ Enumeration type of operation.
 EQUAL_TO = 1
 ```
 
-Matches fields that are equal to the specified value. The value length is limited to 1.
+Checks for equality, using the first element of the **value** array to match the predicate. If the array is longer, only the first element is considered.
 
 **Since:** 22
 
@@ -28,7 +28,7 @@ Matches fields that are equal to the specified value. The value length is limite
 NOT_EQUAL_TO = 2
 ```
 
-Matches fields that are not equal to the specified value. The value length is limited to 1.
+Checks for inequality, using the first element of the **value** array to match the predicate. If the array is longer, only the first element is considered.
 
 **Since:** 22
 
@@ -44,7 +44,7 @@ Matches fields that are not equal to the specified value. The value length is li
 GREATER_THAN = 3
 ```
 
-Matches fields that are greater than the specified value. The value length is limited to 1.
+Checks whether the value is greater than the predicate, using the first element of the **value** array to match the predicate. If the array is longer, only the first element is considered.
 
 **Since:** 22
 
@@ -60,7 +60,7 @@ Matches fields that are greater than the specified value. The value length is li
 LESS_THAN = 4
 ```
 
-Matches fields that are less than the specified value. The value length is limited to 1.
+Checks whether the value is less than the predicate, using the first element of the **value** array to match the predicate. If the array is longer, only the first element is considered.
 
 **Since:** 22
 
@@ -76,7 +76,7 @@ Matches fields that are less than the specified value. The value length is limit
 GREATER_THAN_OR_EQUAL_TO = 5
 ```
 
-Matches fields that are greater than or equal to the specified value. The value length is limited to 1.
+Checks whether the value is greater than or equal to the predicate, using the first element of the **value** array to match the predicate. If the array is longer, only the first element is considered.
 
 **Since:** 22
 
@@ -92,7 +92,7 @@ Matches fields that are greater than or equal to the specified value. The value 
 LESS_THAN_OR_EQUAL_TO = 6
 ```
 
-Matches fields that are less than or equal to the specified value. The value length is limited to 1.
+Checks whether the value is less than or equal to the predicate, using the first element of the **value** array to match the predicate. If the array is longer, only the first element is considered.
 
 **Since:** 22
 
@@ -108,7 +108,7 @@ Matches fields that are less than or equal to the specified value. The value len
 AND = 7
 ```
 
-Equivalent to the "AND" operator in SQL. No field or value parameters required.
+Logical 'AND', similar to 'and' in database queries. No **field** or **value** is needed.
 
 **Since:** 22
 
@@ -124,7 +124,7 @@ Equivalent to the "AND" operator in SQL. No field or value parameters required.
 OR = 8
 ```
 
-Equivalent to the "OR" operator in SQL. No field or value parameters required.
+Logical 'OR', similar to 'or' in database queries. No **field** or **value** is needed.
 
 **Since:** 22
 
@@ -140,7 +140,7 @@ Equivalent to the "OR" operator in SQL. No field or value parameters required.
 IN = 9
 ```
 
-Matches fields within the specified range. The value length is limited to 10.
+Matches fields within a specified range, with a maximum value length of 10.
 
 **Since:** 22
 
@@ -156,7 +156,7 @@ Matches fields within the specified range. The value length is limited to 10.
 NOT_IN = 10
 ```
 
-Matches fields outside the specified range. The value length is limited to 10.
+Matches fields outside a specified range, with a maximum value length of 10.
 
 **Since:** 22
 
@@ -172,8 +172,7 @@ Matches fields outside the specified range. The value length is limited to 10.
 BEGIN_WRAP = 11
 ```
 
-Used to add a left parenthesis to the predicate, equivalent to the "(" in SQL.
-Must be used together with a right parenthesis. No field or value parameters required.
+Adds a left parenthesis to the predicate, similar to "(" in database queries. It must be used with a right parenthesis. No **field** or **value** is needed.
 
 **Since:** 22
 
@@ -189,8 +188,7 @@ Must be used together with a right parenthesis. No field or value parameters req
 END_WRAP = 12
 ```
 
-Used to add a right parenthesis to the predicate, equivalent to the ")" in SQL.
-Must be used together with a left parenthesis. No field or value parameters required.
+Adds a right parenthesis to the predicate, similar to ")" in database queries. It must be used with a left parenthesis. No **field** or **value** is needed.
 
 **Since:** 22
 
@@ -206,8 +204,7 @@ Must be used together with a left parenthesis. No field or value parameters requ
 BETWEEN = 13
 ```
 
-Matches fields within the specified range. The interval is inclusive of both endpoints (closed interval).
-The value length is limited to 2, representing the left and right boundaries.
+Matches fields within a specified range, including both endpoints (closed interval). It uses the first two elements of the **value** array, where the first element is the lower boundary and the second is the upper boundary. For example, in the array [1, 2, 3, 4], the first two elements are used, with 1 as the lower boundary and 2 as the upper boundary.
 
 **Since:** 22
 
@@ -223,8 +220,7 @@ The value length is limited to 2, representing the left and right boundaries.
 NOT_BETWEEN = 14
 ```
 
-Matches fields outside the specified range. The interval is exclusive of both endpoints (open interval).
-The value length is limited to 2, representing the left and right boundaries.
+Matches fields outside a specified range, excluding both endpoints (open interval). It uses the first two elements of the **value** array, where the first element is the lower boundary and the second is the upper boundary. For example, in the array [1, 2, 3, 4], the first two elements are used, with 1 as the lower boundary and 2 as the upper boundary.
 
 **Since:** 22
 

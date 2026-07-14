@@ -4,8 +4,7 @@
 export type AgentHostProxy = _AgentHostProxy
 ```
 
-The AgentHostProxy is a proxy object for the client connected to the Agent, through which it
-can communicate with the Agent's connection counterpart.
+The AgentHostProxy is a proxy object for the client connected to the Agent, through which it can communicate with the Agent's connection counterpart.
 
 **Since:** 24
 

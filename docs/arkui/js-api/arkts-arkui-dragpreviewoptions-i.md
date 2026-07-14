@@ -12,12 +12,7 @@ Preview image processing mode and badge count during dragging.
 mode?: DragPreviewMode | Array<DragPreviewMode>
 ```
 
-How the background image is processed when the component is dragged.
-
-Default value: **DragPreviewMode.AUTO**
-
-If **DragPreviewMode.AUTO** is set concurrently with other enumerated values, **DragPreviewMode.AUTO** takes
-precedence and the other values are ignored.
+How the background image is processed when the component is dragged. Default value: **DragPreviewMode.AUTO** If **DragPreviewMode.AUTO** is set concurrently with other enumerated values, **DragPreviewMode.AUTO** takes precedence and the other values are ignored.
 
 **Type:** DragPreviewMode | Array<DragPreviewMode>
 
@@ -35,33 +30,7 @@ precedence and the other values are ignored.
 modifier?: ImageModifier
 ```
 
-Drag preview style modifier. It applies image component attributes and styles to configure preview appearance (see
-Example 6). Supported effects: opacity, shadow, background blur, and rounded corners. Text drag previews only
-support default styling.
-
-1. Opacity
-
-Use [opacity](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-opacity.md#opacity). The value ranges
-from 0 to 1. If this parameter is set to **0** or left empty, the default opacity 0.95 is used. If this parameter
-is set to **1** or an abnormal value, the opacity is 1.
-
-2. Shadow
-
-Use [shadow](arkts-arkui-commonmethod-c.md#shadow-1).
-
-3. Background blur
-
-Use [backgroundEffect](arkts-arkui-commonmethod-c.md#backgroundeffect-1) or
-[backgroundBlurStyle](arkts-arkui-commonmethod-c.md#backgroundblurstyle-1).
-If both are set, the latter setting takes precedence.
-
-4. Rounded corners
-
-Use [border](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-border.md#border) or
-[borderRadius](arkts-arkui-commonmethod-c.md#borderradius-1). Modifier
-settings override mode settings.
-
-Default value: empty (unmodifiable).
+Drag preview style modifier. It applies image component attributes and styles to configure preview appearance (see Example 6). Supported effects: opacity, shadow, background blur, and rounded corners. Text drag previews only support default styling. 1. Opacity Use [opacity](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-opacity.md#opacity). The value ranges from 0 to 1. If this parameter is set to **0** or left empty, the default opacity 0.95 is used. If this parameter is set to **1** or an abnormal value, the opacity is 1. 2. Shadow Use [shadow](arkts-arkui-commonmethod-c.md#shadow-1). 3. Background blur Use [backgroundEffect](arkts-arkui-commonmethod-c.md#backgroundeffect-1) or [backgroundBlurStyle](arkts-arkui-commonmethod-c.md#backgroundblurstyle-1). If both are set, the latter setting takes precedence. 4. Rounded corners Use [border](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-border.md#border) or [borderRadius](arkts-arkui-commonmethod-c.md#borderradius-1). Modifier settings override mode settings. Default value: empty (unmodifiable).
 
 **Type:** ImageModifier
 
@@ -79,15 +48,7 @@ Default value: empty (unmodifiable).
 numberBadge?: boolean | number
 ```
 
-Whether to display the number badge or the number displayed on the badge. For a number badge, the value range is
-[0, 2<sup>31</sup>-1]. Values outside this range will be processed as the default state. If the value specified is
-a floating-point number, only the integer part is displayed.
-
-**NOTE**
-
-When multiple items are dragged, use this API to set the number of items dragged.
-
-Default value: **true**.
+Whether to display the number badge or the number displayed on the badge. For a number badge, the value range is [0, 2<sup>31</sup>-1]. Values outside this range will be processed as the default state. If the value specified is a floating-point number, only the integer part is displayed. **NOTE** When multiple items are dragged, use this API to set the number of items dragged. Default value: **true**.
 
 **Type:** boolean | number
 
@@ -105,9 +66,7 @@ Default value: **true**.
 sizeChangeEffect?: DraggingSizeChangeEffect
 ```
 
-Transition effect between the floating image and drag preview.
-
-Default value: **DraggingSizeChangeEffect.DEFAULT**.
+Transition effect between the floating image and drag preview. Default value: **DraggingSizeChangeEffect.DEFAULT**.
 
 **Type:** DraggingSizeChangeEffect
 

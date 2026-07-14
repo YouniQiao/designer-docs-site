@@ -12,9 +12,7 @@ import { netFirewall } from '@kit.NetworkKit';
 function setNetFirewallPolicy(userId: number, policy: NetFirewallPolicy): Promise<void>
 ```
 
-Set firewall policy by userId.
-<p>Enables or disables the firewall function, and specifies the default actions for inbound connections and
-outbound connections.</p>
+Set firewall policy by userId. <p>Enables or disables the firewall function, and specifies the default actions for inbound connections and outbound connections.</p>
 
 **Since:** 15
 

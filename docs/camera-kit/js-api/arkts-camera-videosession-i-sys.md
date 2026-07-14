@@ -1,9 +1,6 @@
 # VideoSession
 
-VideoSession extends Session, Flash, AutoExposure, Focus, Zoom, Stabilization, ColorManagement
-Implements a video session, which sets the parameters of the normal video mode and saves all
-[CameraInput](arkts-camera-camerainput-i.md) and [CameraOutput](arkts-camera-cameraoutput-i.md)
-instances required to run the camera. It inherits from [Session](arkts-camera-session-i.md).
+VideoSession extends Session, Flash, AutoExposure, Focus, Zoom, Stabilization, ColorManagement Implements a video session, which sets the parameters of the normal video mode and saves all [CameraInput](arkts-camera-camerainput-i.md) and [CameraOutput](arkts-camera-cameraoutput-i.md) instances required to run the camera. It inherits from [Session](arkts-camera-session-i.md).
 
 **Inheritance/Implementation:** VideoSession extends [Session](arkts-camera-session-i.md), [Flash](arkts-camera-flash-i.md), [AutoExposure](arkts-camera-autoexposure-i.md), [WhiteBalance](arkts-camera-whitebalance-i.md), [Focus](arkts-camera-focus-i.md), [Zoom](arkts-camera-zoom-i.md), [Stabilization](arkts-camera-stabilization-i.md), [ColorManagement](arkts-camera-colormanagement-i.md), [ControlCenter](arkts-camera-controlcenter-i.md), [AutoDeviceSwitch](arkts-camera-autodeviceswitch-i.md), [Macro](arkts-camera-macro-i-sys.md), [ManualExposure](arkts-camera-manualexposure-i.md), [ManualFocus](arkts-camera-manualfocus-i-sys.md), [ManualIso](arkts-camera-manualiso-i-sys.md), [OIS](arkts-camera-ois-i.md), [Aperture](arkts-camera-aperture-i-sys.md)
 

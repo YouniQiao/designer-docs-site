@@ -1,13 +1,6 @@
 # Brush
 
-Defines a brush, which is used to describe the style and color to fill in a shape.
-
-> **NOTE**
->
-> - This module uses the physical pixel unit, px.
->
-> - This module operates under a single-threaded model. The caller needs to manage thread safety and context state
-> transitions.
+Defines a brush, which is used to describe the style and color to fill in a shape. > **NOTE** > > - This module uses the physical pixel unit, px. > > - This module operates under a single-threaded model. The caller needs to manage thread safety and context state > transitions.
 
 **Since:** 11
 
@@ -97,8 +90,7 @@ Obtains the color of this brush.
 getColor4f(): common2D.Color4f
 ```
 
-Obtains the brush color. The difference between this method and [getColor](arkts-arkgraphics2d-brush-c.md#getcolor-1) is
-that this method returns a floating point number.
+Obtains the brush color. The difference between this method and [getColor](arkts-arkgraphics2d-brush-c.md#getcolor-1) is that this method returns a floating point number.
 
 **Since:** 20
 
@@ -206,8 +198,7 @@ Sets an alpha value for this brush.
 setAntiAlias(aa: boolean): void
 ```
 
-Enables anti-aliasing for this brush. Anti-aliasing makes the edges of the content smoother. If this API is not
-called, anti-aliasing is disabled by default.
+Enables anti-aliasing for this brush. Anti-aliasing makes the edges of the content smoother. If this API is not called, anti-aliasing is disabled by default.
 
 **Since:** 11
 
@@ -279,8 +270,7 @@ Sets a color for this brush.
 setColor(alpha: number, red: number, green: number, blue: number): void
 ```
 
-Sets a color for this brush. This API provides better performance than
-[setColor](arkts-arkgraphics2d-brush-c.md#setcolor-1) and is recommended.
+Sets a color for this brush. This API provides better performance than [setColor](arkts-arkgraphics2d-brush-c.md#setcolor-1) and is recommended.
 
 **Since:** 12
 
@@ -331,8 +321,7 @@ Sets a color for this brush.
 setColor4f(color4f: common2D.Color4f, colorSpace: colorSpaceManager.ColorSpaceManager | null): void
 ```
 
-Sets the color and standard color gamut for this brush. The difference between this method and
-[setColor](arkts-arkgraphics2d-brush-c.md#setcolor-1) is that the color gamut can be set separately.
+Sets the color and standard color gamut for this brush. The difference between this method and [setColor](arkts-arkgraphics2d-brush-c.md#setcolor-1) is that the color gamut can be set separately.
 
 **Since:** 20
 

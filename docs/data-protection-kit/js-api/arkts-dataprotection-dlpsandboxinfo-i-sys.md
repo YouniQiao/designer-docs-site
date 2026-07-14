@@ -36,8 +36,7 @@ Index of the DLP sandbox application.
 bindAppIndex?: number
 ```
 
-Index of the DLP sandbox application to be bound. This parameter is not returned by default. It is returned
-only when the sandbox application is previewed.
+Index of the DLP sandbox application to be bound. This parameter is not returned by default. It is returned only when the sandbox application is previewed.
 
 **Type:** number
 

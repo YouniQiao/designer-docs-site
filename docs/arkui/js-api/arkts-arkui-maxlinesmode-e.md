@@ -1,7 +1,6 @@
 # MaxLinesMode
 
-Enumerates the display effects of the **TextArea** component when text exceeds the maximum number of lines. The
-default value is **CLIP** (truncating text at the maximum line count).
+Enumerates the display effects of the **TextArea** component when text exceeds the maximum number of lines. The default value is **CLIP** (truncating text at the maximum line count).
 
 **Since:** 20
 

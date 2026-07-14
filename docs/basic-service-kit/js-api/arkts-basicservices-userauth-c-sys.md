@@ -112,9 +112,7 @@ auth(
     ): Uint8Array
 ```
 
-Starts user authentication based on the specified challenge value, authentication type (PIN, facial, or
-fingerprint authentication), authentication trust level, and optional parameters (such as the account ID and
-authentication intent).
+Starts user authentication based on the specified challenge value, authentication type (PIN, facial, or fingerprint authentication), authentication trust level, and optional parameters (such as the account ID and authentication intent).
 
 **Since:** 12
 
@@ -372,8 +370,7 @@ let userAuth = new osAccount.UserAuth();
 getAvailableStatus(authType: AuthType, authTrustLevel: AuthTrustLevel): number
 ```
 
-Obtains the available status of the authentication capability corresponding to the specified authentication type
-and trust level.
+Obtains the available status of the authentication capability corresponding to the specified authentication type and trust level.
 
 **Since:** 8
 
@@ -562,8 +559,7 @@ try {
 getPropertyByCredentialId(credentialId: Uint8Array, keys: Array<GetPropertyType>): Promise<ExecutorProperty>
 ```
 
-Obtains the specified property information of the associated executor based on the credential ID. This API uses a
-promise to return the result.
+Obtains the specified property information of the associated executor based on the credential ID. This API uses a promise to return the result.
 
 **Since:** 14
 

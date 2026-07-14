@@ -1,12 +1,6 @@
 # Particles
 
-Defines the particle array.
-
-> **NOTE**
->
-> To standardize anonymous object definitions, the element definitions here have been revised in API version 18.
-> While historical version information is preserved for anonymous objects, there may be cases where the outer element
-> 's @since version number is higher than inner elements'. This does not affect interface usability.
+Defines the particle array. > **NOTE** > > To standardize anonymous object definitions, the element definitions here have been revised in API version 18. > While historical version information is preserved for anonymous objects, there may be cases where the outer element > 's @since version number is higher than inner elements'. This does not affect interface usability.
 
 **Since:** 18
 
@@ -28,8 +22,7 @@ particles: Array<
   >
 ```
 
-An array of particle options, each of which covers the emitter, color, opacity, scale, velocity, acceleration, and
-spin speed of particles. For details, see [ParticleOptions](arkts-arkui-particleoptions-i.md).
+An array of particle options, each of which covers the emitter, color, opacity, scale, velocity, acceleration, and spin speed of particles. For details, see [ParticleOptions](arkts-arkui-particleoptions-i.md).
 
 **Type:** Array<
     ParticleOptions<

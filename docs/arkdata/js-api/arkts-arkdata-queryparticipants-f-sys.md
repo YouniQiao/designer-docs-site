@@ -12,8 +12,7 @@ import { cloudData } from '@kit.ArkData';
 function queryParticipants(sharingResource: string, callback: AsyncCallback<Result<Array<Participant>>>): void
 ```
 
-Queries the participants of the specified shared data.
-This API uses an asynchronous callback to return the result.
+Queries the participants of the specified shared data. This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -49,7 +48,6 @@ cloudData.sharing.queryParticipants('sharing_resource_test', ((err: BusinessErro
   console.info(`query participants succeeded, result: ${result}`);
 }))
 
-
 ```
 
 
@@ -59,8 +57,7 @@ cloudData.sharing.queryParticipants('sharing_resource_test', ((err: BusinessErro
 function queryParticipants(sharingResource: string): Promise<Result<Array<Participant>>>
 ```
 
-Queries the participants of the specified shared data.
-This API uses a promise to return the result.
+Queries the participants of the specified shared data. This API uses a promise to return the result.
 
 **Since:** 11
 
@@ -98,7 +95,6 @@ cloudData.sharing.queryParticipants('sharing_resource_test').then((result) => {
 }).catch((err: BusinessError) => {
   console.error(`query participants failed, code is ${err.code},message is ${err.message}`);
 })
-
 
 ```
 

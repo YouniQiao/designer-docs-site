@@ -18,8 +18,7 @@ import { media } from '@kit.MediaKit';
 enableCameraPostprocessing?: boolean
 ```
 
-Indicates whether to enable camera post-processing during video playback,
-which is used to apply image enhancements when playing back video content.
+Indicates whether to enable camera post-processing during video playback, which is used to apply image enhancements when playing back video content.
 
 **Type:** boolean
 

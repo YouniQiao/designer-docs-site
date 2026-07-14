@@ -12,8 +12,7 @@ import { bundleManager } from '@kit.AbilityKit';
 function getAllApplicationInfo(appFlags: number, callback: AsyncCallback<Array<ApplicationInfo>>): void
 ```
 
-Obtains all the application information in the system based on the given application flags. This API uses an
-asynchronous callback to return the result.
+Obtains all the application information in the system based on the given application flags. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -70,8 +69,7 @@ function getAllApplicationInfo(appFlags: number,
     userId: number, callback: AsyncCallback<Array<ApplicationInfo>>): void
 ```
 
-Obtains all the application information in the system based on the given application flags and user ID. This API
-uses an asynchronous callback to return the result.
+Obtains all the application information in the system based on the given application flags and user ID. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -130,8 +128,7 @@ try {
 function getAllApplicationInfo(appFlags: number, userId?: number): Promise<Array<ApplicationInfo>>
 ```
 
-Obtains all the application information in the system based on the given application flags and user ID. This API
-uses a promise to return the result.
+Obtains all the application information in the system based on the given application flags and user ID. This API uses a promise to return the result.
 
 **Since:** 9
 

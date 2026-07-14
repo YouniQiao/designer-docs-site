@@ -12,8 +12,7 @@ import { inputDevice } from '@kit.InputKit';
 function off(type: 'change', listener?: Callback<DeviceListener>): void
 ```
 
-Disables listening for device hot swap events. This API is called before the application exits. This API uses an
-asynchronous callback to return the result.
+Disables listening for device hot swap events. This API is called before the application exits. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 

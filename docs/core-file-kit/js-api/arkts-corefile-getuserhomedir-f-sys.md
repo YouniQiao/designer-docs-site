@@ -12,8 +12,7 @@ import { Environment } from '@kit.CoreFileKit';
 function getUserHomeDir(): string
 ```
 
-Obtains the sandbox path of the built-in card directory of the current user. This API is available only to the
-devices with the SystemCapability.FileManagement.File.Environment.FolderObtain system capability.
+Obtains the sandbox path of the built-in card directory of the current user. This API is available only to the devices with the SystemCapability.FileManagement.File.Environment.FolderObtain system capability.
 
 **Since:** 11
 

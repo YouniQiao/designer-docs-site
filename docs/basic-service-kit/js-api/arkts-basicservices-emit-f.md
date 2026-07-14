@@ -12,15 +12,7 @@ import { emitter } from '@kit.BasicServicesKit';
 function emit(event: InnerEvent, data?: EventData): void
 ```
 
-Emits a specified event.
-
-This API can be used to emit data objects across threads. The data objects must meet the specifications specified
-in [Overview of Inter-Thread Communication Objects](../../../../arkts-utils/serializable-overview.md). Currently,
-complex data decorated by decorators such as [@State](../../../../ui/state-management/arkts-state.md) and
-[@Observed](../../../../ui/state-management/arkts-observed-and-objectlink.md) is not supported.
-
-After an event is published using this API, the event may not be executed immediately. When the execution starts
-depends on the number of events in the event queue and the execution efficiency of each event.
+Emits a specified event. This API can be used to emit data objects across threads. The data objects must meet the specifications specified in [Overview of Inter-Thread Communication Objects](../../../../arkts-utils/serializable-overview.md). Currently, complex data decorated by decorators such as [@State](../../../../ui/state-management/arkts-state.md) and [@Observed](../../../../ui/state-management/arkts-observed-and-objectlink.md) is not supported. After an event is published using this API, the event may not be executed immediately. When the execution starts depends on the number of events in the event queue and the execution efficiency of each event.
 
 **Since:** 7
 
@@ -61,15 +53,7 @@ emitter.emit(innerEvent, eventData);
 function emit(eventId: string, data?: EventData): void
 ```
 
-Emits a specified event.
-
-This API can be used to emit data objects across threads. The data objects must meet the specifications specified
-in [Overview of Inter-Thread Communication Objects](../../../../arkts-utils/serializable-overview.md). Currently,
-complex data decorated by decorators such as [@State](../../../../ui/state-management/arkts-state.md) and
-[@Observed](../../../../ui/state-management/arkts-observed-and-objectlink.md) is not supported.
-
-After an event is published using this API, the event may not be executed immediately. When the execution starts
-depends on the number of events in the event queue and the execution efficiency of each event.
+Emits a specified event. This API can be used to emit data objects across threads. The data objects must meet the specifications specified in [Overview of Inter-Thread Communication Objects](../../../../arkts-utils/serializable-overview.md). Currently, complex data decorated by decorators such as [@State](../../../../ui/state-management/arkts-state.md) and [@Observed](../../../../ui/state-management/arkts-observed-and-objectlink.md) is not supported. After an event is published using this API, the event may not be executed immediately. When the execution starts depends on the number of events in the event queue and the execution efficiency of each event.
 
 **Since:** 11
 
@@ -89,12 +73,12 @@ depends on the number of events in the event queue and the execution efficiency 
 ```TypeScript
 let eventData: emitter.EventData = {
   data: {
-  "content": "content",
-  "id": 1,
+    "content": "content",
+    "id": 1,
   }
 };
 
-emitter.emit("eventId", eventData);
+emitter.emit('eventId', eventData);
 
 ```
 
@@ -105,15 +89,7 @@ emitter.emit("eventId", eventData);
 function emit<T>(eventId: string, data?: GenericEventData<T>): void
 ```
 
-Emits a specified event.
-
-This API can be used to emit data objects across threads. The data objects must meet the specifications specified
-in [Overview of Inter-Thread Communication Objects](../../../../arkts-utils/serializable-overview.md). Currently,
-complex data decorated by decorators such as [@State](../../../../ui/state-management/arkts-state.md) and
-[@Observed](../../../../ui/state-management/arkts-observed-and-objectlink.md) is not supported.
-
-After an event is published using this API, the event may not be executed immediately. When the execution starts
-depends on the number of events in the event queue and the execution efficiency of each event.
+Emits a specified event. This API can be used to emit data objects across threads. The data objects must meet the specifications specified in [Overview of Inter-Thread Communication Objects](../../../../arkts-utils/serializable-overview.md). Currently, complex data decorated by decorators such as [@State](../../../../ui/state-management/arkts-state.md) and [@Observed](../../../../ui/state-management/arkts-observed-and-objectlink.md) is not supported. After an event is published using this API, the event may not be executed immediately. When the execution starts depends on the number of events in the event queue and the execution efficiency of each event.
 
 **Since:** 12
 
@@ -145,7 +121,7 @@ class Sample {
 let eventData: emitter.GenericEventData<Sample> = {
   data: new Sample()
 };
-emitter.emit("eventId", eventData);
+emitter.emit('eventId', eventData);
 
 ```
 
@@ -156,15 +132,7 @@ emitter.emit("eventId", eventData);
 function emit(eventId: string, options: Options, data?: EventData): void
 ```
 
-Emits an event of a specified priority.
-
-This API can be used to emit data objects across threads. The data objects must meet the specifications specified
-in [Overview of Inter-Thread Communication Objects](../../../../arkts-utils/serializable-overview.md). Currently,
-complex data decorated by decorators such as [@State](../../../../ui/state-management/arkts-state.md) and
-[@Observed](../../../../ui/state-management/arkts-observed-and-objectlink.md) is not supported.
-
-After an event is published using this API, the event may not be executed immediately. When the execution starts
-depends on the number of events in the event queue and the execution efficiency of each event.
+Emits an event of a specified priority. This API can be used to emit data objects across threads. The data objects must meet the specifications specified in [Overview of Inter-Thread Communication Objects](../../../../arkts-utils/serializable-overview.md). Currently, complex data decorated by decorators such as [@State](../../../../ui/state-management/arkts-state.md) and [@Observed](../../../../ui/state-management/arkts-observed-and-objectlink.md) is not supported. After an event is published using this API, the event may not be executed immediately. When the execution starts depends on the number of events in the event queue and the execution efficiency of each event.
 
 **Since:** 11
 
@@ -194,7 +162,7 @@ let options: emitter.Options = {
   priority: emitter.EventPriority.HIGH
 };
 
-emitter.emit("eventId", options, eventData);
+emitter.emit('eventId', options, eventData);
 
 ```
 
@@ -205,15 +173,7 @@ emitter.emit("eventId", options, eventData);
 function emit<T>(eventId: string, options: Options, data?: GenericEventData<T>): void
 ```
 
-Emits an event of a specified priority.
-
-This API can be used to emit data objects across threads. The data objects must meet the specifications specified
-in [Overview of Inter-Thread Communication Objects](../../../../arkts-utils/serializable-overview.md). Currently,
-complex data decorated by decorators such as [@State](../../../../ui/state-management/arkts-state.md) and
-[@Observed](../../../../ui/state-management/arkts-observed-and-objectlink.md) is not supported.
-
-After an event is published using this API, the event may not be executed immediately. When the execution starts
-depends on the number of events in the event queue and the execution efficiency of each event.
+Emits an event of a specified priority. This API can be used to emit data objects across threads. The data objects must meet the specifications specified in [Overview of Inter-Thread Communication Objects](../../../../arkts-utils/serializable-overview.md). Currently, complex data decorated by decorators such as [@State](../../../../ui/state-management/arkts-state.md) and [@Observed](../../../../ui/state-management/arkts-observed-and-objectlink.md) is not supported. After an event is published using this API, the event may not be executed immediately. When the execution starts depends on the number of events in the event queue and the execution efficiency of each event.
 
 **Since:** 12
 
@@ -250,7 +210,7 @@ let eventData: emitter.GenericEventData<Sample> = {
   data: new Sample()
 };
 
-emitter.emit("eventId", options, eventData);
+emitter.emit('eventId', options, eventData);
 
 ```
 

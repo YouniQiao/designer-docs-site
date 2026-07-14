@@ -86,17 +86,7 @@ A constructor used to create a **ComponentContent** object.
 dispose(): void
 ```
 
-Immediately releases the reference relationship between this **ComponentContent** object and its
-[entity node](../../../../ui/arkts-user-defined-node.md#basic-concepts). For details about the scenarios involving
-**ComponentContent** unbinding, see
-[Canceling the Reference to the Entity Node](../../../../ui/arkts-user-defined-arktsNode-builderNode.md#canceling-the-reference-to-the-entity-node).
-
-> **NOTE**
->
-> After calling **dispose()**, the **ComponentContent** object cancels its reference to the backend entity node. If
-> the frontend object **ComponentContent** cannot be released, memory leaks may occur. To avoid this, be sure to
-> call **dispose()** on the **ComponentContent** object when you no longer need it. This reduces the complexity of
-> reference relationships and lowers the risk of memory leaks.
+Immediately releases the reference relationship between this **ComponentContent** object and its [entity node](../../../../ui/arkts-user-defined-node.md#basic-concepts). For details about the scenarios involving **ComponentContent** unbinding, see [Canceling the Reference to the Entity Node](../../../../ui/arkts-user-defined-arktsNode-builderNode.md#canceling-the-reference-to-the-entity-node). > **NOTE** > > After calling **dispose()**, the **ComponentContent** object cancels its reference to the backend entity node. If > the frontend object **ComponentContent** cannot be released, memory leaks may occur. To avoid this, be sure to > call **dispose()** on the **ComponentContent** object when you no longer need it. This reduces the complexity of > reference relationships and lowers the risk of memory leaks.
 
 **Since:** 12
 
@@ -112,16 +102,7 @@ Immediately releases the reference relationship between this **ComponentContent*
 inheritFreezeOptions(enabled: boolean): void
 ```
 
-Sets whether this **ComponentContent** object inherits the freeze policy from its parent component's custom
-components. When inheritance is disabled (set to **false**), the **ComponentContent** object's freeze policy is set
-to **false**, which means its associated node remains unfrozen even in an inactive state.
-
-> **NOTE**
->
-> When **inheritFreezeOptions** is set to **true** for **ComponentContent** and the parent component is a custom
-> component, BuilderNode, ComponentContent, ReactiveBuilderNode, or ReactiveComponentContent, the freeze policy of
-> the parent component is inherited. If the child component is a custom component, its freeze policy is not
-> transferred to the child component.
+Sets whether this **ComponentContent** object inherits the freeze policy from its parent component's custom components. When inheritance is disabled (set to **false**), the **ComponentContent** object's freeze policy is set to **false**, which means its associated node remains unfrozen even in an inactive state. > **NOTE** > > When **inheritFreezeOptions** is set to **true** for **ComponentContent** and the parent component is a custom > component, BuilderNode, ComponentContent, ReactiveBuilderNode, or ReactiveComponentContent, the freeze policy of > the parent component is inherited. If the child component is a custom component, its freeze policy is not > transferred to the child component.
 
 **Since:** 20
 
@@ -143,10 +124,7 @@ to **false**, which means its associated node remains unfrozen even in an inacti
 isDisposed(): boolean
 ```
 
-Checks whether this **ComponentContent** object has released its reference to its backend entity node. Frontend
-nodes maintain references to corresponding backend entity nodes. After a node calls the **dispose** API to release
-this reference, subsequent API calls may cause crashes or return default values. This API facilitates validation of
-node validity prior to operations, thereby mitigating risks in scenarios where calls after disposal are required.
+Checks whether this **ComponentContent** object has released its reference to its backend entity node. Frontend nodes maintain references to corresponding backend entity nodes. After a node calls the **dispose** API to release this reference, subsequent API calls may cause crashes or return default values. This API facilitates validation of node validity prior to operations, thereby mitigating risks in scenarios where calls after disposal are required.
 
 **Since:** 20
 
@@ -168,8 +146,7 @@ node validity prior to operations, thereby mitigating risks in scenarios where c
 isTransferred(): boolean
 ```
 
-Returns a flag indicating whether the current ComponentContent was obtained through dynamic-static conversion,
-includes conversions in both directions: dynamic-to-static and static-to-dynamic.
+Returns a flag indicating whether the current ComponentContent was obtained through dynamic-static conversion, includes conversions in both directions: dynamic-to-static and static-to-dynamic.
 
 **Since:** 24
 
@@ -191,14 +168,7 @@ includes conversions in both directions: dynamic-to-static and static-to-dynamic
 recycle(): void
 ```
 
-- Triggers recycling of custom components under this **ComponentContent**. Component recycling is part of the
-component reuse mechanism. For details, see
-[@Reusable Decorator: Reusing V1 Components](../../../../ui/state-management/arkts-reusable.md).
-- **ComponentContent** completes the reuse event transfer between internal and external custom components through
-**reuse** and **recycle**. For specific usage scenarios, see
-[Implementing Node Reuse with the BuilderNode reuse and recycle APIs](../../../../ui/arkts-user-defined-arktsNode-builderNode.md#implementing-node-reuse-with-the-buildernode-reuse-and-recycle-apis).
-Since API version 26.0.0, custom components in **ComponentContent** support V2 component reuse. For details, see
-[@ReusableV2 Decorator: Reusing Components](../../../../ui/state-management/arkts-new-reusableV2.md).
+- Triggers recycling of custom components under this **ComponentContent**. Component recycling is part of the component reuse mechanism. For details, see [@Reusable Decorator: Reusing V1 Components](../../../../ui/state-management/arkts-reusable.md). - **ComponentContent** completes the reuse event transfer between internal and external custom components through **reuse** and **recycle**. For specific usage scenarios, see [Implementing Node Reuse with the BuilderNode reuse and recycle APIs](../../../../ui/arkts-user-defined-arktsNode-builderNode.md#implementing-node-reuse-with-the-buildernode-reuse-and-recycle-apis). Since API version 26.0.0, custom components in **ComponentContent** support V2 component reuse. For details, see [@ReusableV2 Decorator: Reusing Components](../../../../ui/state-management/arkts-new-reusableV2.md).
 
 **Since:** 12
 
@@ -214,12 +184,7 @@ Since API version 26.0.0, custom components in **ComponentContent** support V2 c
 reuse(param?: Object): void
 ```
 
-Triggers component reuse for custom components under this **ComponentContent**. For details about component reuse,
-see [@Reusable Decorator: Reusing V1 Components](../../../../ui/state-management/arkts-reusable.md). For details
-about the scenarios involving **ComponentContent** unbinding, see
-[Canceling the Reference to the Entity Node](../../../../ui/arkts-user-defined-arktsNode-builderNode.md#canceling-the-reference-to-the-entity-node).
-Since API version 26.0.0, custom components in **ComponentContent** support V2 component reuse. For details, see
-[@ReusableV2 Decorator: Reusing Components](../../../../ui/state-management/arkts-new-reusableV2.md).
+Triggers component reuse for custom components under this **ComponentContent**. For details about component reuse, see [@Reusable Decorator: Reusing V1 Components](../../../../ui/state-management/arkts-reusable.md). For details about the scenarios involving **ComponentContent** unbinding, see [Canceling the Reference to the Entity Node](../../../../ui/arkts-user-defined-arktsNode-builderNode.md#canceling-the-reference-to-the-entity-node). Since API version 26.0.0, custom components in **ComponentContent** support V2 component reuse. For details, see [@ReusableV2 Decorator: Reusing Components](../../../../ui/state-management/arkts-new-reusableV2.md).
 
 **Since:** 12
 
@@ -241,9 +206,7 @@ Since API version 26.0.0, custom components in **ComponentContent** support V2 c
 update(args: T): void
 ```
 
-Updates the builder function parameters encapsulated by the
-[WrappedBuilder](../../../../ui/state-management/arkts-wrapBuilder.md) object. The parameter type must be the same as
-that passed by constructor.
+Updates the builder function parameters encapsulated by the [WrappedBuilder](../../../../ui/state-management/arkts-wrapBuilder.md) object. The parameter type must be the same as that passed by constructor.
 
 **Since:** 12
 
@@ -265,12 +228,7 @@ that passed by constructor.
 updateConfiguration(): void
 ```
 
-Updates the configuration of the entire node by passing in a
-[system environment change](../../apis-ability-kit/arkts-apis/arkts-ability-configuration-i.md) event.
-
-> **NOTE**
->
-> The updateConfiguration API is used to notify an object of updating the current system environment change.
+Updates the configuration of the entire node by passing in a [system environment change](../../apis-ability-kit/arkts-apis/arkts-ability-configuration-i.md) event. > **NOTE** > > The updateConfiguration API is used to notify an object of updating the current system environment change.
 
 **Since:** 12
 

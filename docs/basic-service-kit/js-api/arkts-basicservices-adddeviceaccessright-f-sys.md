@@ -12,10 +12,7 @@ import { usbManager } from '@kit.BasicServicesKit';
 function addDeviceAccessRight(tokenId: string, deviceName: string): boolean
 ```
 
-Adds the device access permission for the application. System applications are granted the device access permission
-by default, and calling this API will not revoke the permission.
-[usbManager.requestRight]{(@link usbManager.requestRight)} triggers a dialog box to request for user authorization, whereas addDeviceAccessRight adds
-the access permission directly without displaying a dialog box.
+Adds the device access permission for the application. System applications are granted the device access permission by default, and calling this API will not revoke the permission. [usbManager.requestRight]{(@link usbManager.requestRight)} triggers a dialog box to request for user authorization, whereas addDeviceAccessRight adds the access permission directly without displaying a dialog box.
 
 **Since:** 12
 

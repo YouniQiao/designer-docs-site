@@ -1,8 +1,6 @@
 # DynamicLayoutAttribute
 
-支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)。
-
-支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)。
+支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)。 支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)。
 
 **继承/实现关系：** DynamicLayoutAttribute extends [CommonMethod<DynamicLayoutAttribute>](CommonMethod<DynamicLayoutAttribute>)
 

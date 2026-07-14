@@ -12,9 +12,7 @@ Defines the load committed details.
 didReplaceEntry: boolean
 ```
 
-True if the committed entry has replaced the existing one. Note that in
-case of subframes, the NavigationEntry and FrameNavigationEntry objects
-don't actually get replaced - they're reused, but with updated attributes.
+True if the committed entry has replaced the existing one. Note that in case of subframes, the NavigationEntry and FrameNavigationEntry objects don't actually get replaced - they're reused, but with updated attributes.
 
 **Type:** boolean
 
@@ -46,11 +44,7 @@ Check whether the request is for getting the main frame.
 isSameDocument: boolean
 ```
 
-Whether the navigation happened without changing document. Examples of
-same document navigations are:
-1. reference fragment navigations.
-2. pushState/replaceState.
-3. same page history navigation
+Whether the navigation happened without changing document. Examples of same document navigations are: 1. reference fragment navigations. 2. pushState/replaceState. 3. same page history navigation
 
 **Type:** boolean
 

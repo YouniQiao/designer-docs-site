@@ -33,13 +33,7 @@ let emitter1: emitter.Emitter = new emitter.Emitter();
 emit(eventId: string, data?: EventData): void
 ```
 
-发送指定事件到当前Emitter类实例。
-
-该接口支持跨线程传输数据对象，需要遵循数据跨线程传输的规格约束，详见[线程间通信对象](../../../../arkts-utils/serializable-overview.md)。目前不支持使用
-[@State装饰器](../../../../ui/state-management/arkts-state.md)、
-[@Observed装饰器](../../../../ui/state-management/arkts-observed-and-objectlink.md)等装饰器修饰的复杂类型数据。
-
-该接口发布某个事件后，不保证该事件立刻执行，执行时间取决于事件队列里面的事件数量以及各事件的执行效率。
+发送指定事件到当前Emitter类实例。 该接口支持跨线程传输数据对象，需要遵循数据跨线程传输的规格约束，详见[线程间通信对象](../../../../arkts-utils/serializable-overview.md)。目前不支持使用 [@State装饰器](../../../../ui/state-management/arkts-state.md)、 [@Observed装饰器](../../../../ui/state-management/arkts-observed-and-objectlink.md)等装饰器修饰的复杂类型数据。 该接口发布某个事件后，不保证该事件立刻执行，执行时间取决于事件队列里面的事件数量以及各事件的执行效率。
 
 **起始版本：** 22
 
@@ -60,12 +54,12 @@ emit(eventId: string, data?: EventData): void
 let emitter1: emitter.Emitter = new emitter.Emitter();
 let eventData: emitter.EventData = {
   data: {
-  "content": "content",
-  "id": 1,
+    "content": "content",
+    "id": 1,
   }
 };
 
-emitter1.emit("eventId", eventData);
+emitter1.emit('eventId', eventData);
 
 ```
 
@@ -75,13 +69,7 @@ emitter1.emit("eventId", eventData);
 emit<T>(eventId: string, data?: GenericEventData<T>): void
 ```
 
-发送指定事件到当前Emitter类实例。
-
-该接口支持跨线程传输数据对象，需要遵循数据跨线程传输的规格约束，详见[线程间通信对象](../../../../arkts-utils/serializable-overview.md)。目前不支持使用
-[@State装饰器](../../../../ui/state-management/arkts-state.md)、
-[@Observed装饰器](../../../../ui/state-management/arkts-observed-and-objectlink.md)等装饰器修饰的复杂类型数据。
-
-该接口发布某个事件后，不保证该事件立刻执行，执行时间取决于事件队列里面的事件数量以及各事件的执行效率。
+发送指定事件到当前Emitter类实例。 该接口支持跨线程传输数据对象，需要遵循数据跨线程传输的规格约束，详见[线程间通信对象](../../../../arkts-utils/serializable-overview.md)。目前不支持使用 [@State装饰器](../../../../ui/state-management/arkts-state.md)、 [@Observed装饰器](../../../../ui/state-management/arkts-observed-and-objectlink.md)等装饰器修饰的复杂类型数据。 该接口发布某个事件后，不保证该事件立刻执行，执行时间取决于事件队列里面的事件数量以及各事件的执行效率。
 
 **起始版本：** 22
 
@@ -116,7 +104,7 @@ let eventData: emitter.GenericEventData<Sample> = {
   data: new Sample()
 };
 
-emitter1.emit("eventId", eventData);
+emitter1.emit('eventId', eventData);
 
 ```
 
@@ -126,13 +114,7 @@ emitter1.emit("eventId", eventData);
 emit(eventId: string, options: Options, data?: EventData): void
 ```
 
-发送指定事件到当前Emitter类实例。
-
-该接口支持跨线程传输数据对象，需要遵循数据跨线程传输的规格约束，详见[线程间通信对象](../../../../arkts-utils/serializable-overview.md)。目前不支持使用
-[@State装饰器](../../../../ui/state-management/arkts-state.md)、
-[@Observed装饰器](../../../../ui/state-management/arkts-observed-and-objectlink.md)等装饰器修饰的复杂类型数据。
-
-该接口发布某个事件后，不保证该事件立刻执行，执行时间取决于事件队列里面的事件数量以及各事件的执行效率。
+发送指定事件到当前Emitter类实例。 该接口支持跨线程传输数据对象，需要遵循数据跨线程传输的规格约束，详见[线程间通信对象](../../../../arkts-utils/serializable-overview.md)。目前不支持使用 [@State装饰器](../../../../ui/state-management/arkts-state.md)、 [@Observed装饰器](../../../../ui/state-management/arkts-observed-and-objectlink.md)等装饰器修饰的复杂类型数据。 该接口发布某个事件后，不保证该事件立刻执行，执行时间取决于事件队列里面的事件数量以及各事件的执行效率。
 
 **起始版本：** 22
 
@@ -158,12 +140,12 @@ let options: emitter.Options = {
 };
 let eventData: emitter.EventData = {
   data: {
-  "content": "content",
-  "id": 1,
+    "content": "content",
+    "id": 1,
   }
 };
 
-emitter1.emit("eventId", options, eventData);
+emitter1.emit('eventId', options, eventData);
 
 ```
 
@@ -173,13 +155,7 @@ emitter1.emit("eventId", options, eventData);
 emit<T>(eventId: string, options: Options, data?: GenericEventData<T>): void
 ```
 
-发送指定优先级事件到当前Emitter类实例。
-
-该接口支持跨线程传输数据对象，需要遵循数据跨线程传输的规格约束，详见[线程间通信对象](../../../../arkts-utils/serializable-overview.md)。目前不支持使用
-[@State装饰器](../../../../ui/state-management/arkts-state.md)、
-[@Observed装饰器](../../../../ui/state-management/arkts-observed-and-objectlink.md)等装饰器修饰的复杂类型数据。
-
-该接口发布某个事件后，不保证该事件立刻执行，执行时间取决于事件队列里面的事件数量以及各事件的执行效率。
+发送指定优先级事件到当前Emitter类实例。 该接口支持跨线程传输数据对象，需要遵循数据跨线程传输的规格约束，详见[线程间通信对象](../../../../arkts-utils/serializable-overview.md)。目前不支持使用 [@State装饰器](../../../../ui/state-management/arkts-state.md)、 [@Observed装饰器](../../../../ui/state-management/arkts-observed-and-objectlink.md)等装饰器修饰的复杂类型数据。 该接口发布某个事件后，不保证该事件立刻执行，执行时间取决于事件队列里面的事件数量以及各事件的执行效率。
 
 **起始版本：** 22
 
@@ -218,7 +194,7 @@ let eventData: emitter.GenericEventData<Sample> = {
   data: new Sample()
 };
 
-emitter1.emit("eventId", options, eventData);
+emitter1.emit('eventId', options, eventData);
 
 ```
 
@@ -252,7 +228,7 @@ getListenerCount(eventId: string): number
 
 ```TypeScript
 let emitter1: emitter.Emitter = new emitter.Emitter();
-let count = emitter1.getListenerCount("eventId");
+let count: number = emitter1.getListenerCount('eventId');
 
 ```
 
@@ -262,9 +238,7 @@ let count = emitter1.getListenerCount("eventId");
 off(eventId: string): void
 ```
 
-取消当前Emitter类实例事件ID为eventId的所有订阅。
-
-使用该接口取消某个事件订阅后，已通过[emit](arkts-basicservices-emitter-c.md#emit-1)接口发布但尚未被执行的事件将被取消。
+取消当前Emitter类实例事件ID为eventId的所有订阅。 使用该接口取消某个事件订阅后，已通过[emit](arkts-basicservices-emitter-c.md#emit-1)接口发布但尚未被执行的事件将被取消。
 
 **起始版本：** 22
 
@@ -283,7 +257,7 @@ off(eventId: string): void
 ```TypeScript
 let emitter1: emitter.Emitter = new emitter.Emitter();
 
-emitter1.off("eventId");
+emitter1.off('eventId');
 
 ```
 
@@ -293,11 +267,7 @@ emitter1.off("eventId");
 off(eventId: string, callback: Callback<EventData>): void
 ```
 
-取消订阅当前Emitter类实例的事件。仅当已使用[on](arkts-basicservices-emitter-c.md#on-1)或
-[once](arkts-basicservices-emitter-c.md#once-1)接口订阅了事件ID为eventId且回调处理函数为
-callback的事件时，该接口才生效。
-
-使用该接口取消事件订阅后，已通过[emit](arkts-basicservices-emitter-c.md#emit-1)接口发布但尚未执行的事件将被取消。
+取消订阅当前Emitter类实例的事件。仅当已使用[on](arkts-basicservices-emitter-c.md#on-1)或 [once](arkts-basicservices-emitter-c.md#once-1)接口订阅了事件ID为eventId且回调处理函数为 callback的事件时，该接口才生效。 使用该接口取消事件订阅后，已通过[emit](arkts-basicservices-emitter-c.md#emit-1)接口发布但尚未执行的事件将被取消。
 
 **起始版本：** 22
 
@@ -321,9 +291,9 @@ let emitter1: emitter.Emitter = new emitter.Emitter();
 
 let callback: Callback<emitter.EventData> = (eventData: emitter.EventData) => {
   console.info(`eventData: ${JSON.stringify(eventData)}`);
-}
+};
 
-emitter1.off("eventId", callback);
+emitter1.off('eventId', callback);
 
 ```
 
@@ -333,13 +303,7 @@ emitter1.off("eventId", callback);
 off<T>(eventId: string, callback: Callback<GenericEventData<T>>): void
 ```
 
-取消订阅当前Emitter类实例的事件。仅当已使用
-[on](arkts-basicservices-emitter-c.md#on-2)或
-[once](arkts-basicservices-emitter-c.md#once-2)接口订阅了事件ID为eventId且
-回调处理函数为callback的事件时，该接口才生效。
-
-使用该接口取消事件订阅后，已通过[emit](arkts-basicservices-emitter-c.md#emit-2)接口发布但尚未执行的事件将被取
-消。
+取消订阅当前Emitter类实例的事件。仅当已使用 [on](arkts-basicservices-emitter-c.md#on-2)或 [once](arkts-basicservices-emitter-c.md#once-2)接口订阅了事件ID为eventId且 回调处理函数为callback的事件时，该接口才生效。 使用该接口取消事件订阅后，已通过[emit](arkts-basicservices-emitter-c.md#emit-2)接口发布但尚未执行的事件将被取 消。
 
 **起始版本：** 22
 
@@ -377,9 +341,9 @@ let callback: Callback<emitter.GenericEventData<Sample>> = (eventData: emitter.G
   if (eventData?.data instanceof Sample) {
     eventData?.data?.printCount();
   }
-}
+};
 
-emitter1.off("eventId", callback);
+emitter1.off('eventId', callback);
 
 ```
 
@@ -413,9 +377,9 @@ let emitter1: emitter.Emitter = new emitter.Emitter();
 
 let callback: Callback<emitter.EventData> = (eventData: emitter.EventData) => {
   console.info(`eventData: ${JSON.stringify(eventData)}`);
-}
+};
 
-emitter1.on(`eventId`, callback);
+emitter1.on('eventId', callback);
 
 ```
 
@@ -463,9 +427,9 @@ let callback: Callback<emitter.GenericEventData<Sample>> = (eventData: emitter.G
   if (eventData?.data instanceof Sample) {
     eventData?.data?.printCount();
   }
-}
+};
 
-emitter1.on("eventId", callback);
+emitter1.on('eventId', callback);
 
 ```
 
@@ -499,9 +463,9 @@ let emitter1: emitter.Emitter = new emitter.Emitter();
 
 let callback: Callback<emitter.EventData> = (eventData: emitter.EventData) => {
   console.info(`eventData: ${JSON.stringify(eventData)}`);
-}
+};
 
-emitter1.once("eventId", callback);
+emitter1.once('eventId', callback);
 
 ```
 
@@ -549,9 +513,9 @@ let callback: Callback<emitter.GenericEventData<Sample>> = (eventData: emitter.G
   if (eventData?.data instanceof Sample) {
     eventData?.data?.printCount();
   }
-}
+};
 
-emitter1.once("eventId", callback);
+emitter1.once('eventId', callback);
 
 ```
 

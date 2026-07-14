@@ -1,11 +1,6 @@
 # Float32Array
 
-一种线性数据结构，底层基于[ArkTS ArrayBuffer](arkts-collections.md)实现。
-
-> **说明：**
->
-> - 此模块仅支持在ArkTS文件（文件后缀为.ets）中导入使用。
-> **装饰器类型：** \@Sendable
+一种线性数据结构，底层基于[ArkTS ArrayBuffer](arkts-collections.md)实现。 > **说明：** > > - 此模块仅支持在ArkTS文件（文件后缀为.ets）中导入使用。 > **装饰器类型：** \@Sendable
 
 **起始版本：** 12
 

@@ -554,9 +554,7 @@ static cloudSyncEx(
     ): Promise<void>
 ```
 
-对指定应用的数据按照云同步配置信息进行端云同步，当
-[CloudSyncConfig](../../../../reference/apis-arkdata/js-apis-data-relationalStore-sys.md#cloudsyncconfig)中的
-downloadOnly为true时，端云同步仅把云侧数据同步到本地，使用Promise异步回调。
+对指定应用的数据按照云同步配置信息进行端云同步，当 [CloudSyncConfig](../../../../reference/apis-arkdata/js-apis-data-relationalStore-sys.md#cloudsyncconfig)中的 downloadOnly为true时，端云同步仅把云侧数据同步到本地，使用Promise异步回调。
 
 **起始版本：** 26.0.0
 

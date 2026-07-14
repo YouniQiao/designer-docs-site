@@ -1,9 +1,6 @@
 # PiPController
 
-Implements a PiP controller that starts, stops, or updates a PiP window and registers callbacks.
-
-Before calling any of the following APIs, you must use
-[PiPWindow.create()](arkts-arkui-create-f.md#create-1) to create a PiPController instance.
+Implements a PiP controller that starts, stops, or updates a PiP window and registers callbacks. Before calling any of the following APIs, you must use [PiPWindow.create()](arkts-arkui-create-f.md#create-1) to create a PiPController instance.
 
 **Since:** 11
 
@@ -40,7 +37,7 @@ Obtains the status of the auto-start PiP switch in Settings. This API uses a pro
 | Error Code ID | Error Message |
 | --- | --- |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. Failed to call the API due to limited devicecapabilities. |
-| [1300014](../errorcode-window.md#1300014-pip-internal-error) | PiP internal error. |
+| [1300014](../errorcode-window.md#1300014-pip-internal-error) | PiP internal error. Possible cause:The PiP controller has been destroyed. |
 
 **Example**
 
@@ -87,7 +84,7 @@ Obtains the PIP window information. This API uses a promise to return the result
 | Error Code ID | Error Message |
 | --- | --- |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. Failed to call the API due to limited devicecapabilities. |
-| [1300014](../errorcode-window.md#1300014-pip-internal-error) | PiP internal error. |
+| [1300014](../errorcode-window.md#1300014-pip-internal-error) | PiP internal error. Possible causes:<br>1.The PiP controller has been destroyed.<br>2.The PiP window is not created or has been destroyed. |
 
 **Example**
 
@@ -133,7 +130,7 @@ Check whether the PiP window is active. This API uses a promise to return the re
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [1300014](../errorcode-window.md#1300014-pip-internal-error) | PiP internal error. |
+| [1300014](../errorcode-window.md#1300014-pip-internal-error) | PiP internal error. Possible causes:<br>1.The PiP controller has been destroyed.<br>2.The PiP window is not created or has been destroyed. |
 
 **Example**
 
@@ -189,9 +186,7 @@ this.pipController.off('stateChange');
 off(type: 'controlPanelActionEvent'): void
 ```
 
-Unsubscribes from PiP action events. The
-**[off('controlEvent')](arkts-arkui-pipcontroller-i.md#off-3)**
-API is preferred.
+Unsubscribes from PiP action events. The **[off('controlEvent')](arkts-arkui-pipcontroller-i.md#off-3)** API is preferred.
 
 **Since:** 11
 
@@ -335,8 +330,7 @@ this.pipController.off('activeStatusChange', callback);
 on(type: 'stateChange', callback: (state: PiPState, reason: string) => void): void
 ```
 
-Subscribes to PiP state events. To avoid potential memory leaks, you are advised to stop listening when it is no
-longer needed.
+Subscribes to PiP state events. To avoid potential memory leaks, you are advised to stop listening when it is no longer needed.
 
 **Since:** 11
 
@@ -390,10 +384,7 @@ this.pipController.on('stateChange', (state: PiPWindow.PiPState, reason: string)
 on(type: 'controlPanelActionEvent', callback: ControlPanelActionEventCallback): void
 ```
 
-Subscribes to PiP action events. To avoid potential memory leaks, you are advised to stop listening when it is no
-longer needed. The
-[on('controlEvent')](arkts-arkui-pipcontroller-i.md#on-3)
-API is preferred.
+Subscribes to PiP action events. To avoid potential memory leaks, you are advised to stop listening when it is no longer needed. The [on('controlEvent')](arkts-arkui-pipcontroller-i.md#on-3) API is preferred.
 
 **Since:** 11
 
@@ -447,8 +438,7 @@ this.pipController.on('controlPanelActionEvent', (event: PiPWindow.PiPActionEven
 on(type: 'controlEvent', callback: Callback<ControlEventParam>): void
 ```
 
-Subscribes to PiP action events. To avoid potential memory leaks, you are advised to stop listening when it is no
-longer needed.
+Subscribes to PiP action events. To avoid potential memory leaks, you are advised to stop listening when it is no longer needed.
 
 **Since:** 12
 
@@ -502,8 +492,7 @@ this.pipController.on('controlEvent', (control) => {
 on(type: 'pipWindowSizeChange', callback: Callback<PiPWindowSize>): void
 ```
 
-Subscribes to PiP window size change events. To avoid potential memory leaks, you are advised to stop listening
-when it is no longer needed.
+Subscribes to PiP window size change events. To avoid potential memory leaks, you are advised to stop listening when it is no longer needed.
 
 **Since:** 15
 
@@ -524,7 +513,7 @@ when it is no longer needed.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: Callback is already registered. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. Failed to call the API due to limited devicecapabilities. |
-| [1300014](../errorcode-window.md#1300014-pip-internal-error) | PiP internal error. |
+| [1300014](../errorcode-window.md#1300014-pip-internal-error) | PiP internal error. Possible cause:The PiP controller has been destroyed. |
 
 **Example**
 
@@ -546,8 +535,7 @@ try {
 on(type: 'activeStatusChange', callback: Callback<boolean>): void
 ```
 
-Subscribes to PiP window active status change events. To avoid potential memory leaks, you are advised to stop
-listening when it is no longer needed.
+Subscribes to PiP window active status change events. To avoid potential memory leaks, you are advised to stop listening when it is no longer needed.
 
 **Since:** 22
 
@@ -579,12 +567,7 @@ this.pipController.on('activeStatusChange', callback);
 setAutoStartEnabled(enable: boolean): void
 ```
 
-Sets whether to automatically start the PiP window when the application's main window which can start the
-PiP window transitions to the background. By default, the PiP window is not automatically started.
-
-If the XComponent approach is used to implement PiP and the **Navigation** component is used for route management
-, the system caches the top stack information with the specified navigation ID upon the first call of
-**setAutoStartEnabled(true)**.
+Sets whether to automatically start the PiP window when the application's main window which can start the PiP window transitions to the background. By default, the PiP window is not automatically started. If the XComponent approach is used to implement PiP and the **Navigation** component is used for route management , the system caches the top stack information with the specified navigation ID upon the first call of **setAutoStartEnabled(true)**.
 
 **Since:** 11
 
@@ -666,9 +649,9 @@ Starts a PiP window. This API uses a promise to return the result.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [1300012](../errorcode-window.md#1300012-abnormal-pip-window-status) | The PiP window state is abnormal. |
-| [1300013](../errorcode-window.md#1300013-failure-in-creating-a-pip-window) | Failed to create the PiP window. |
-| [1300014](../errorcode-window.md#1300014-pip-internal-error) | PiP internal error. |
+| [1300012](../errorcode-window.md#1300012-abnormal-pip-window-status) | The PiP window state is abnormal. Possible causes:<br>1.The PiP controller has been destroyed.<br>2.The PiP window is not created or has been destroyed. |
+| [1300013](../errorcode-window.md#1300013-failure-in-creating-a-pip-window) | Failed to create the PiP window. Possible causes:<br>1.PiP configuration parameters are invalid, such as pipOption or context is null.<br>2.The XComponentController or main window is null.<br>3.The main window is not shown (non-auto-start scenario).<br>4.Navigation component operation failed. |
+| [1300014](../errorcode-window.md#1300014-pip-internal-error) | PiP internal error. Possible cause:Internal error, failed to show the PiP window. such as insufficient resources or abnormal window service. |
 | [1300015](../errorcode-window.md#1300015-repeated-pip-operations) | Repeated PiP operation. |
 | [1300034](../errorcode-window.md#1300034-operation-of-the-float-view-conflicts-with-those-of-other-floating-windows) | This operation conflicts with other floating windows. Possible cause:App has already started float view.<br>**Applicable version:** 26.0.0 and later |
 
@@ -709,8 +692,8 @@ Stops a PiP window. This API uses a promise to return the result.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [1300011](../errorcode-window.md#1300011-failure-in-destroying-a-pip-window) | Failed to destroy the PiP window. |
-| [1300012](../errorcode-window.md#1300012-abnormal-pip-window-status) | The PiP window state is abnormal. |
+| [1300011](../errorcode-window.md#1300011-failure-in-destroying-a-pip-window) | Failed to destroy the PiP window. Possible cause:Internal error, the window type is not a PiP window. |
+| [1300012](../errorcode-window.md#1300012-abnormal-pip-window-status) | The PiP window state is abnormal. Possible cause:The PiP window is not created or has been destroyed. |
 | [1300015](../errorcode-window.md#1300015-repeated-pip-operations) | Repeated PiP operation. |
 
 **Example**
@@ -757,7 +740,7 @@ Updates the PiP node content. This API uses a promise to return the result.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types.<br>3. Parameter verification failed. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. Failed to call the API due to limited devicecapabilities. |
-| [1300014](../errorcode-window.md#1300014-pip-internal-error) | PiP internal error. |
+| [1300014](../errorcode-window.md#1300014-pip-internal-error) | PiP internal error. Possible cause:The PiP controller has been destroyed. |
 
 **Example**
 

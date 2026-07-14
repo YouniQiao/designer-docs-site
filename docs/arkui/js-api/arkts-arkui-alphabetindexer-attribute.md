@@ -1,16 +1,6 @@
 # AlphabetIndexer properties/events
 
-When the [width](arkts-arkui-commonmethod-c.md#width-1) attribute is set to **"auto"**, the width is adaptive. This
-means that the width will adjust according to the maximum width of the index items.
-
-The default value of the [padding](arkts-arkui-commonmethod-c.md#padding-1) attribute is 4 vp.
-
-The [maxFontScale](TextAttribute#maxFontScale) and [minFontScale](TextAttribute#minFontScale) attributes
-are both set to a constant value of 1, which means that they do not change with the system font size.
-
-In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following attributes are supported.
-
-In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following events are supported.
+When the [width](arkts-arkui-commonmethod-c.md#width-1) attribute is set to **"auto"**, the width is adaptive. This means that the width will adjust according to the maximum width of the index items. The default value of the [padding](arkts-arkui-commonmethod-c.md#padding-1) attribute is 4 vp. The [maxFontScale](TextAttribute#maxFontScale) and [minFontScale](TextAttribute#minFontScale) attributes are both set to a constant value of 1, which means that they do not change with the system font size. In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following attributes are supported. In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following events are supported.
 
 **Inheritance/Implementation:** AlphabetIndexerAttribute extends [CommonMethod<AlphabetIndexerAttribute>](CommonMethod<AlphabetIndexerAttribute>)
 
@@ -45,19 +35,7 @@ Sets the alignment style of the indexer pop-up window.
 autoCollapse(value: boolean)
 ```
 
-Sets whether to enable the adaptive collapse behavior for the indexer.
-
-When the first index item is **"#"**: Remaining items ≤ 9: Full display mode; 9 < Remaining items ≤ 13: Adapts
-between full display and short collapse modes based on the indexer height; remaining items > 13: Adapts between
-short and long collapse modes based on the indexer height.
-
-When the first index item is not **"#"**: All items ≤ 9: Full display mode; 9 < All items ≤ 13: Adapts between full
-display and short collapse modes based on the indexer height; all items > 13: Adapts between short and long
-collapse modes based on the indexer height.
-
-> **NOTE**
-
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
+Sets whether to enable the adaptive collapse behavior for the indexer. When the first index item is **"#"**: Remaining items ≤ 9: Full display mode; 9 < Remaining items ≤ 13: Adapts between full display and short collapse modes based on the indexer height; remaining items > 13: Adapts between short and long collapse modes based on the indexer height. When the first index item is not **"#"**: All items ≤ 9: Full display mode; 9 < All items ≤ 13: Adapts between full display and short collapse modes based on the indexer height; all items > 13: Adapts between short and long collapse modes based on the indexer height. > **NOTE** > This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
 
 **Since:** 11
 
@@ -183,8 +161,7 @@ Sets the size of the index item area.
 onPopupSelect(callback: OnAlphabetIndexerPopupSelectCallback)
 ```
 
-Triggered when a secondary index item in the pop-up window is selected. The callback parameter is the index of the
-selected secondary index item.
+Triggered when a secondary index item in the pop-up window is selected. The callback parameter is the index of the selected secondary index item.
 
 **Since:** 8
 
@@ -204,9 +181,7 @@ selected secondary index item.
 onRequestPopupData(callback: OnAlphabetIndexerRequestPopupDataCallback)
 ```
 
-Triggered for a secondary index item content event in the pop-up window. The callback parameter is the index of the
-selected secondary index item. The return value is the secondary index item content to be displayed in the pop-up
-window.
+Triggered for a secondary index item content event in the pop-up window. The callback parameter is the index of the selected secondary index item. The return value is the secondary index item content to be displayed in the pop-up window.
 
 **Since:** 8
 
@@ -226,8 +201,7 @@ window.
 onSelect(callback: OnAlphabetIndexerSelectCallback)
 ```
 
-Triggered when an index item is selected, with the callback parameter being the index of the currently selected
-item.
+Triggered when an index item is selected, with the callback parameter being the index of the currently selected item.
 
 **Since:** 8
 
@@ -247,10 +221,7 @@ item.
 onSelected(callback: (index: number) => void)
 ```
 
-Triggered when an index item is selected, with the callback parameter being the index of the currently selected
-item.
-
-> **NOTE**
+Triggered when an index item is selected, with the callback parameter being the index of the currently selected item. > **NOTE**
 
 **Since:** 7
 
@@ -272,22 +243,7 @@ item.
 popupBackground(value: ResourceColor)
 ```
 
-Sets the background color for the pop-up window.
-
-If this API is not called or the **value** parameter is set to **undefined**:
-
-In API version 11 and earlier versions, the default background color of the pop-up is **0xFFFFFFFF**, which is
-white.
-
-In API versions 12 to 24, the default background color is **#66808080**, which is translucent gray.
-
-Since API version 26.0.0, if neither **popupBackground** nor
-[popupBackgroundBlurStyle](AlphabetIndexerAttribute#popupBackgroundBlurStyle) is called or the **value**
-parameter is set to **undefined**, the **THIN** style of
-**[ImmersiveStyle](../../../../reference/apis-arkui/arkts-apis-uimaterial.md#immersivestyle)** is displayed by
-default on devices with high- and mid-level computing power, and the white background is displayed by default on
-devices with low-level computing power. If **popupBackgroundBlurStyle** is called and the **value** parameter is
-set to a valid value, the background color of the pop-up is **#66808080** by default, which is translucent gray.
+Sets the background color for the pop-up window. If this API is not called or the **value** parameter is set to **undefined**: In API version 11 and earlier versions, the default background color of the pop-up is **0xFFFFFFFF**, which is white. In API versions 12 to 24, the default background color is **#66808080**, which is translucent gray. Since API version 26.0.0, if neither **popupBackground** nor [popupBackgroundBlurStyle](AlphabetIndexerAttribute#popupBackgroundBlurStyle) is called or the **value** parameter is set to **undefined**, the **THIN** style of **[ImmersiveStyle](../../../../reference/apis-arkui/arkts-apis-uimaterial.md#immersivestyle)** is displayed by default on devices with high- and mid-level computing power, and the white background is displayed by default on devices with low-level computing power. If **popupBackgroundBlurStyle** is called and the **value** parameter is set to a valid value, the background color of the pop-up is **#66808080** by default, which is translucent gray.
 
 **Since:** 7
 
@@ -307,13 +263,7 @@ set to a valid value, the background color of the pop-up is **#66808080** by def
 popupBackgroundBlurStyle(value: BlurStyle)
 ```
 
-Sets the background blur style of the pop-up window. In versions earlier than API version 26.0.0, if this API is
-not called, the **COMPONENT_REGULAR** value in **BlurStyle** is used by default. Since API version 26.0.0, if
-neither [popupBackground](AlphabetIndexerAttribute#popupBackground) nor **popupBackgroundBlurStyle** is
-called or the value is **undefined**, the **THIN** style of
-[ImmersiveStyle](../../../../reference/apis-arkui/arkts-apis-uimaterial.md#immersivestyle) is used by default on
-devices with high- and mid-level computing power, and the white background is used by default on devices with low-
-level computing power.
+Sets the background blur style of the pop-up window. In versions earlier than API version 26.0.0, if this API is not called, the **COMPONENT_REGULAR** value in **BlurStyle** is used by default. Since API version 26.0.0, if neither [popupBackground](AlphabetIndexerAttribute#popupBackground) nor **popupBackgroundBlurStyle** is called or the value is **undefined**, the **THIN** style of [ImmersiveStyle](../../../../reference/apis-arkui/arkts-apis-uimaterial.md#immersivestyle) is used by default on devices with high- and mid-level computing power, and the white background is used by default on devices with low- level computing power.
 
 **Since:** 12
 
@@ -527,10 +477,7 @@ Sets the text color for the unselected secondary index items in the pop-up windo
 selected(index: number)
 ```
 
-Sets the index of the selected item.
-
-Since API version 10, this parameter supports two-way binding through
-[$$](../../../../ui/state-management/arkts-two-way-sync.md).
+Sets the index of the selected item. Since API version 10, this parameter supports two-way binding through [$$](../../../../ui/state-management/arkts-two-way-sync.md).
 
 **Since:** 8
 

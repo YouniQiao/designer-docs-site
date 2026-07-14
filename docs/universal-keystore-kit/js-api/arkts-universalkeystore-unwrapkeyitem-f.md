@@ -12,9 +12,7 @@ import { huks } from '@kit.UniversalKeystoreKit';
 function unwrapKeyItem(keyAlias: string, params: HuksOptions, wrappedKey: Uint8Array): Promise<HuksReturnResult>
 ```
 
-Unwraps a key. This API uses a promise to return the result.
-
-<!--Del-->This feature is not supported currently.<!--DelEnd-->
+Unwraps a key. This API uses a promise to return the result. > **NOTE** > > Unwrapping SE security level keys that defined in [HuksKeySecurityLevel](arkts-universalkeystore-hukskeysecuritylevel-e.md) > requires the ohos.permission.ACCESS_SE_KEY permission. <!--Del-->This feature is not supported currently.<!--DelEnd-->
 
 **Since:** 20
 
@@ -40,6 +38,7 @@ Unwraps a key. This API uses a promise to return the result.
 
 | Error Code ID | Error Message |
 | --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | The application permissions are insufficient, possibly becausethe ohos.permission.ACCESS_SE_KEY permission is missing.<br>**Applicable version:** 26.0.0 and later |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | api is not supported |
 | [12000004](../errorcode-huks.md#12000004-file-error) | operating file failed |
 | [12000005](../errorcode-huks.md#12000005-ipc-error) | IPC communication failed |

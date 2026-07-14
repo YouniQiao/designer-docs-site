@@ -1,7 +1,6 @@
 # GetDataParams
 
-Defines parameters when an application obtains the Data from the pasteboard, including the
-destination path, file conflict options, and progress indicator types.
+Defines parameters when an application obtains the Data from the pasteboard, including the destination path, file conflict options, and progress indicator types.
 
 **Since:** 15
 
@@ -19,10 +18,7 @@ import { pasteboard } from '@kit.BasicServicesKit';
 destUri?: string
 ```
 
-Destination path for copying files. If file processing is not supported, this parameter is not required. If the
-application involves complex file processing policies or needs to distinguish file multipathing storage, you are
-advised not to set this parameter but let the application copy files by itself. This parameter is left empty by
-default.
+Destination path for copying files. If file processing is not supported, this parameter is not required. If the application involves complex file processing policies or needs to distinguish file multipathing storage, you are advised not to set this parameter but let the application copy files by itself. This parameter is left empty by default.
 
 **Type:** string
 
@@ -74,8 +70,7 @@ Progress indicator options. You can choose whether to use the default progress i
 progressListener?: ProgressListener
 ```
 
-Defines a listener for progress data changes. If the default progress indicator is not used, you can set this
-type to obtain the paste progress. This parameter is left empty by default.
+Defines a listener for progress data changes. If the default progress indicator is not used, you can set this type to obtain the paste progress. This parameter is left empty by default.
 
 **Type:** ProgressListener
 
@@ -93,9 +88,7 @@ type to obtain the paste progress. This parameter is left empty by default.
 progressSignal?: ProgressSignal
 ```
 
-Function for canceling the paste task. This parameter is valid only when
-[ProgressIndicator](arkts-basicservices-progressindicator-e.md) is set to **NONE**. This parameter is left empty by
-default.
+Function for canceling the paste task. This parameter is valid only when [ProgressIndicator](arkts-basicservices-progressindicator-e.md) is set to **NONE**. This parameter is left empty by default.
 
 **Type:** ProgressSignal
 

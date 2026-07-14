@@ -26,10 +26,7 @@ STREAM_USAGE_UNKNOWN = 0
 STREAM_USAGE_MEDIA = 1
 ```
 
-媒体。
-
-从API version 7开始支持，从API version 10开始废弃，建议使用该枚举中的STREAM_USAGE_MUSIC、STREAM_USAGE_MOVIE、STREAM_USAGE_GAME或
-STREAM_USAGE_AUDIOBOOK替代。
+媒体。 从API version 7开始支持，从API version 10开始废弃，建议使用该枚举中的STREAM_USAGE_MUSIC、STREAM_USAGE_MOVIE、STREAM_USAGE_GAME或 STREAM_USAGE_AUDIOBOOK替代。
 
 **起始版本：** 7
 
@@ -115,9 +112,7 @@ STREAM_USAGE_VOICE_MESSAGE = 5
 STREAM_USAGE_NOTIFICATION_RINGTONE = 6
 ```
 
-通知铃声。
-
-从API version 7开始支持，从API version 10开始废弃，建议使用该枚举中的STREAM_USAGE_RINGTONE替代。
+通知铃声。 从API version 7开始支持，从API version 10开始废弃，建议使用该枚举中的STREAM_USAGE_RINGTONE替代。
 
 **起始版本：** 7
 

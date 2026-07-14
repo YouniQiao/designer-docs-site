@@ -12,11 +12,7 @@ import { sendableImage } from '@kit.ImageKit';
 function createImageReceiver(size: image.Size, format: image.ImageFormat, capacity: number): ImageReceiver
 ```
 
-Creates an ImageReceiver instance based on the specified image size, format, and capacity.
-
-Images occupy a large amount of memory. When you finish using an ImageReceiver instance, call
-[release](arkts-image-pixelmap-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure
-that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
+Creates an ImageReceiver instance based on the specified image size, format, and capacity. Images occupy a large amount of memory. When you finish using an ImageReceiver instance, call [release](arkts-image-pixelmap-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
 
 **Since:** 12
 

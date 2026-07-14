@@ -1,8 +1,6 @@
 # VideoRecorder (System API)
 
-The maintenance of this interface has been stopped since version api 9. Please use AVRecorder.
-Manages and record video. Before calling an VideoRecorder method, you must use createVideoRecorder()
-to create an VideoRecorder instance.
+The maintenance of this interface has been stopped since version api 9. Please use AVRecorder. Manages and record video. Before calling an VideoRecorder method, you must use createVideoRecorder() to create an VideoRecorder instance.
 
 **Since:** 9
 
@@ -475,9 +473,7 @@ videoRecorder.release().then(() => {
 reset(callback: AsyncCallback<void>): void
 ```
 
-Resets video recording.
-Before resetting video recording, you must call stop() to stop recording. After video recording is reset,
-you must call prepare() to set the recording configurations for another recording.
+Resets video recording. Before resetting video recording, you must call stop() to stop recording. After video recording is reset, you must call prepare() to set the recording configurations for another recording.
 
 **Since:** 9
 
@@ -521,9 +517,7 @@ videoRecorder.reset((err: BusinessError) => {
 reset(): Promise<void>
 ```
 
-Resets video recording.
-Before resetting video recording, you must call stop() to stop recording. After video recording is reset,
-you must call prepare() to set the recording configurations for another recording.
+Resets video recording. Before resetting video recording, you must call stop() to stop recording. After video recording is reset, you must call prepare() to set the recording configurations for another recording.
 
 **Since:** 9
 

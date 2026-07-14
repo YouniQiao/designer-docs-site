@@ -12,8 +12,7 @@ import { storageStatistics } from '@kit.CoreFileKit';
 function getFreeSize(callback: AsyncCallback<number>): void
 ```
 
-Obtains the available space (in bytes) of the built-in storage. This API uses an asynchronous callback to return the
-result.
+Obtains the available space (in bytes) of the built-in storage. This API uses an asynchronous callback to return the result.
 
 **Since:** 15
 

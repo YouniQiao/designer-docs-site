@@ -6,9 +6,7 @@
 function getOriginalFileName(fileName: string): string
 ```
 
-获取指定DLP文件名的原始文件名。该接口为同步接口。
-
-根据原始文件名后缀判断文件类型，选择对应的应用打开。
+获取指定DLP文件名的原始文件名。该接口为同步接口。 根据原始文件名后缀判断文件类型，选择对应的应用打开。
 
 **起始版本：** 10
 
@@ -18,7 +16,7 @@ function getOriginalFileName(fileName: string): string
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| fileName | string | 是 | 指定要查询的DLP文件名。长度不超过255字节，超出此范围抛出错误码19100001。 |
+| fileName | string | 是 | 指定要查询的DLP文件名。长度不超过255字节，超出此范围抛出错误码401。 |
 
 **返回值：**
 

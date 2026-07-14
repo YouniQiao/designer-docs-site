@@ -6,9 +6,7 @@
 function getSharedBundleInfo(bundleName: string,  moduleName: string, callback: AsyncCallback<Array<SharedBundleInfo>>): void
 ```
 
-获取指定的共享包信息。使用callback异步回调。
-
-获取调用方自身的信息时不需要权限。
+获取指定的共享包信息。使用callback异步回调。 获取调用方自身的信息时不需要权限。
 
 **起始版本：** 10
 
@@ -68,9 +66,7 @@ try {
 function getSharedBundleInfo(bundleName: string, moduleName: string): Promise<Array<SharedBundleInfo>>
 ```
 
-获取指定的共享包信息。使用Promise异步回调。
-
-获取调用方自身的信息时不需要权限。
+获取指定的共享包信息。使用Promise异步回调。 获取调用方自身的信息时不需要权限。
 
 **起始版本：** 10
 

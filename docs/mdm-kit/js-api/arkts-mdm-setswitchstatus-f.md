@@ -12,13 +12,7 @@ import { deviceSettings } from '@kit.MDMKit';
 function setSwitchStatus(admin: Want, key: SwitchKey, status: SwitchStatus): void
 ```
 
-Sets the state of a switch. This API can enable or disable NearLink, Bluetooth, and Wi-Fi. After the setting is
-applied, users can manually enable or disable them. If a switch has been disabled through the
-[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)
-API, error code 203 will be thrown when you attempt to set the state of the switch through this API. In this case,
-you need to use the
-[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)
-API to enable the switch.
+Sets the state of a switch. This API can enable or disable NearLink, Bluetooth, and Wi-Fi. After the setting is applied, users can manually enable or disable them. If a switch has been disabled through the [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1) API, error code 203 will be thrown when you attempt to set the state of the switch through this API. In this case, you need to use the [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1) API to enable the switch.
 
 **Since:** 26.0.0
 

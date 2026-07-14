@@ -12,15 +12,7 @@ import { dlpPermission } from '@kit.DataProtectionKit';
 function openDLPFile(ciphertextFd: number, appId: string): Promise<DLPFile>
 ```
 
-Opens a DLP file. After the API is successfully called, the **DLPFile** object is returned, which can be used to
-manage the permissions on the DLP file and perform related operations. This API uses a promise to return the
-result.
-
-After calling **openDLPFile()** to return a **DLPFile** object, the system must call
-[closeDLPFile](arkts-dataprotection-dlpfile-i-sys.md#closedlpfile-1) to release resources after using the object.
-
-When a DLP management application or an authorized application needs to access a DLP file, it must first open the
-file to obtain the managed object.
+Opens a DLP file. After the API is successfully called, the **DLPFile** object is returned, which can be used to manage the permissions on the DLP file and perform related operations. This API uses a promise to return the result. After calling **openDLPFile()** to return a **DLPFile** object, the system must call [closeDLPFile](arkts-dataprotection-dlpfile-i-sys.md#closedlpfile-1) to release resources after using the object. When a DLP management application or an authorized application needs to access a DLP file, it must first open the file to obtain the managed object.
 
 **Since:** 11
 
@@ -35,7 +27,7 @@ file to obtain the managed object.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | ciphertextFd | number | Yes | FD of the encrypted file. The value range is [0, 2&lt;sup&gt;31&lt;/sup&gt;-1]. If the valueof **fd** is less than 0, an error log is generated, and the function stops running. If the value of **fd**is greater than 2&lt;sup&gt;31&lt;/sup&gt;-1, the excess part will be truncated. |
-| appId | string | Yes | ID of the caller. The value contains 8 to 1024 bytes. If the value is out of range,error code 19100001 is returned. |
+| appId | string | Yes | ID of the caller. The value contains 8 to 1024 bytes. If the value is out of range,error code 401 is returned. |
 
 **Return value:**
 
@@ -100,10 +92,7 @@ ExampleFunction();
 function openDLPFile(ciphertextFd: number, appId: string, callback: AsyncCallback<DLPFile>): void
 ```
 
-Opens a DLP file. This API uses an asynchronous callback to return the result. After the API is successfully
-called, the **DLPFile** object is returned, which can be used to manage the permissions on the DLP file and
-perform related operations. After using the **DLPFile** object, call **closeDLPFile** to close the object to
-prevent resource leakage.
+Opens a DLP file. This API uses an asynchronous callback to return the result. After the API is successfully called, the **DLPFile** object is returned, which can be used to manage the permissions on the DLP file and perform related operations. After using the **DLPFile** object, call **closeDLPFile** to close the object to prevent resource leakage.
 
 **Since:** 11
 
@@ -118,7 +107,7 @@ prevent resource leakage.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | ciphertextFd | number | Yes | FD of the encrypted file. The value range is [0, 2&lt;sup&gt;31&lt;/sup&gt;-1]. If the valueof **fd** is less than 0, an error log is generated, and the function stops running. If the value of **fd**is greater than 2&lt;sup&gt;31&lt;/sup&gt;-1, the excess part will be truncated. |
-| appId | string | Yes | ID of the caller. The value contains 8 to 1024 bytes. If the value is out of range,error code 19100001 is returned. |
+| appId | string | Yes | ID of the caller. The value contains 8 to 1024 bytes. If the value is out of range,error code 401 is returned. |
 | callback | AsyncCallback&lt;DLPFile&gt; | Yes | Callback used to receive the result of opening a DLP file. Thecallback parameters include **err** and **res**. **err** is **undefined** when the operation is successful;otherwise, **err** is an error object. **res** is a **DLPFile** object that represents the DLP file opened. |
 
 **Error codes:**

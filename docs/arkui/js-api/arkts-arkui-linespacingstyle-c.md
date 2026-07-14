@@ -12,9 +12,7 @@ Describes the text line spacing style.
 constructor(lineSpacing: LengthMetrics, options?: LineSpacingOptions)
 ```
 
-A constructor used to create a text line spacing style.
-
-**Since**: 26.0.0
+A constructor used to create a text line spacing style. **Since**: 26.0.0
 
 **Since:** 26.0.0
 
@@ -37,11 +35,7 @@ A constructor used to create a text line spacing style.
 readonly lineSpacing: number
 ```
 
-Text line spacing.
-
-Value range: [0, +∞)
-
-Unit: [vp](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
+Text line spacing. Value range: [0, +∞) Unit: [vp](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
 
 **Type:** number
 

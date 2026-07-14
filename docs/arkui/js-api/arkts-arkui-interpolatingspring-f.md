@@ -12,9 +12,7 @@ import { curves } from '@kit.ArkUI';
 function interpolatingSpring(velocity: number, mass: number, stiffness: number, damping: number): ICurve
 ```
 
-Creates an interpolating spring curve animated from 0 to 1. The actual animation value is calculated based on the
-curve. The animation duration is subject to the curve parameters, rather than the **duration** parameter in
-**animation** or **animateTo**.
+Creates an interpolating spring curve animated from 0 to 1. The actual animation value is calculated based on the curve. The animation duration is subject to the curve parameters, rather than the **duration** parameter in **animation** or **animateTo**.
 
 **Since:** 10
 

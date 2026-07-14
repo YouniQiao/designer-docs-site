@@ -1,8 +1,6 @@
 # UIPickerComponent properties/events
 
-In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following attributes are supported.
-
-In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following events are supported.
+In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following attributes are supported. In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following events are supported.
 
 **Inheritance/Implementation:** UIPickerComponentAttribute extends [CommonMethod<UIPickerComponentAttribute>](CommonMethod<UIPickerComponentAttribute>)
 
@@ -16,15 +14,7 @@ In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-ap
 canLoop(isLoop: Optional<boolean>)
 ```
 
-Sets whether the option list can loop scrolling.
-
-- true: Loop scrolling is enabled.
-- false: Loop scrolling is disabled.
-
-Default value: true
-If the value of isLoop is undefined, the default value is used.
-If the number of child components is less than 8,
-loop scrolling will not occur regardless of whether isLoop is set to true or false.
+Sets whether the option list can loop scrolling. - true: Loop scrolling is enabled. - false: Loop scrolling is disabled. Default value: true If the value of isLoop is undefined, the default value is used. If the number of child components is less than 8, loop scrolling will not occur regardless of whether isLoop is set to true or false.
 
 **Since:** 22
 
@@ -68,17 +58,7 @@ Sets the total number of visible items.
 enableHapticFeedback(enable: Optional<boolean>)
 ```
 
-Sets whether to enable haptic feedback.
-
-To enable haptic feedback, you must declare the following permission under **requestPermissions** in **module** in
-**src/main/module.json5** of the project.
-
-- true: Enable haptic feedback.
-- false: Disable haptic feedback.
-
-Default value: true
-If the value of enable is undefined, the default value is used.
-After this function is enabled, whether haptic feedback is available depends on the hardware support of the system.
+Sets whether to enable haptic feedback. To enable haptic feedback, you must declare the following permission under **requestPermissions** in **module** in **src/main/module.json5** of the project. - true: Enable haptic feedback. - false: Disable haptic feedback. Default value: true If the value of enable is undefined, the default value is used. After this function is enabled, whether haptic feedback is available depends on the hardware support of the system.
 
 **Since:** 22
 
@@ -122,18 +102,7 @@ Sets the height of each item.
 onChange(callback: Optional<OnUIPickerComponentCallback>)
 ```
 
-Triggered when the selected item changes.
-
-If callback is set to undefined, the callback is not used.
-
-NOTE
-
-- If more than half of an option's area enters the selected item area, the option becomes the selected item.
-
-- The selected item area can be identified by setting
-[selectionIndicator](UIPickerComponentAttribute#selectionIndicator). If the selected item indicator is set
-to the background, the background area is the selected item area. If the selected item indicator is set to the
-divider, the area between the center lines of the upper and lower dividers is the selected item area.
+Triggered when the selected item changes. If callback is set to undefined, the callback is not used. NOTE - If more than half of an option's area enters the selected item area, the option becomes the selected item. - The selected item area can be identified by setting [selectionIndicator](UIPickerComponentAttribute#selectionIndicator). If the selected item indicator is set to the background, the background area is the selected item area. If the selected item indicator is set to the divider, the area between the center lines of the upper and lower dividers is the selected item area.
 
 **Since:** 22
 
@@ -155,11 +124,7 @@ divider, the area between the center lines of the upper and lower dividers is th
 onScrollStop(callback: Optional<OnUIPickerComponentCallback>)
 ```
 
-Triggered when the picker scrolling stops. The picker scrolling stops when the scrolling animation triggered by an
-action is complete. If a new scrolling animation is triggered before the previous one finishes, it does not count
-as scrolling stop.
-
-If callback is set to undefined, the callback is not used.
+Triggered when the picker scrolling stops. The picker scrolling stops when the scrolling animation triggered by an action is complete. If a new scrolling animation is triggered before the previous one finishes, it does not count as scrolling stop. If callback is set to undefined, the callback is not used.
 
 **Since:** 22
 
@@ -181,11 +146,7 @@ If callback is set to undefined, the callback is not used.
 selectionIndicator(style: Optional<PickerIndicatorStyle>)
 ```
 
-Sets the style of the selected item indicator.
-
-Default value: { type: PickerIndicatorType.BACKGROUND, borderRadius: { value:12, unit:LengthUnit.vp },
-backgroundColor: 'sys.color.comp_background_tertiary' }
-If the value of style is undefined, the default value is used.
+Sets the style of the selected item indicator. Default value: { type: PickerIndicatorType.BACKGROUND, borderRadius: { value:12, unit:LengthUnit.vp }, backgroundColor: 'sys.color.comp_background_tertiary' } If the value of style is undefined, the default value is used.
 
 **Since:** 22
 

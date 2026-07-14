@@ -12,9 +12,7 @@ Defines the CustomSpanDrawInfo interface.
 baseline: number
 ```
 
-Baseline offset of the line where the custom span is located.
-
-Unit: [px](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
+Baseline offset of the line where the custom span is located. Unit: [px](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
 
 **Type:** number
 
@@ -32,9 +30,7 @@ Unit: [px](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
 lineBottom: number
 ```
 
-Bottom margin of the custom span relative to the **Text** component.
-
-Unit: [px](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
+Bottom margin of the custom span relative to the **Text** component. Unit: [px](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
 
 **Type:** number
 
@@ -52,9 +48,7 @@ Unit: [px](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
 lineTop: number
 ```
 
-Top margin of the custom span relative to the **Text** component.
-
-Unit: [px](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
+Top margin of the custom span relative to the **Text** component. Unit: [px](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
 
 **Type:** number
 
@@ -72,9 +66,7 @@ Unit: [px](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
 x: number
 ```
 
-Offset of the custom span relative to the mounted component.
-
-Unit: [px](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
+Offset of the custom span relative to the mounted component. Unit: [px](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
 
 **Type:** number
 

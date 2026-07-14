@@ -6,11 +6,7 @@
 function anonAttestKeyItem(keyAlias: string, options: HuksOptions, callback: AsyncCallback<HuksReturnResult>): void
 ```
 
-获取匿名化密钥证书。使用callback异步回调。
-
-该操作需要联网进行，且耗时较长。返回12000012错误码时，可能是由于网络异常导致。此时如果没有联网，需要提示用户网络没有连接，如果已经联网，可能是由于网络抖动导致失败，建议重试。
-
-<!--RP1--><!--RP1End-->
+获取匿名化密钥证书。使用callback异步回调。 该操作需要联网进行，且耗时较长。返回12000012错误码时，可能是由于网络异常导致。此时如果没有联网，需要提示用户网络没有连接，如果已经联网，可能是由于网络抖动导致失败，建议重试。 > **说明：** > > 获取[HuksKeySecurityLevel](arkts-universalkeystore-hukskeysecuritylevel-e.md)中定义的SE安全级别密钥证书需要ohos.permission.ACCESS_SE_KEY权限。 <!--RP1--><!--RP1End-->
 
 **起始版本：** 11
 
@@ -30,6 +26,7 @@ function anonAttestKeyItem(keyAlias: string, options: HuksOptions, callback: Asy
 
 | 错误码ID | 错误信息 |
 | --- | --- |
+| [201](../../errorcode-universal.md#201-权限校验失败) | The application permissions are insufficient, possibly becausethe ohos.permission.ACCESS_SE_KEY permission is missing.<br>**适用版本：** 26.0.0+ |
 | [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified.2. Incorrect parameter types.3. Parameter verification failed. |
 | [801](../../errorcode-universal.md#801-该设备不支持此api) | api is not supported |
 | [12000001](../errorcode-huks.md#12000001-该子功能不支持特性) | algorithm mode is not supported |
@@ -147,11 +144,7 @@ async function generateKeyThenAttestKey(): Promise<void> {
 function anonAttestKeyItem(keyAlias: string, options: HuksOptions): Promise<HuksReturnResult>
 ```
 
-获取匿名化密钥证书。使用Promise异步回调。
-
-该操作需要联网进行，且耗时较长。返回12000012错误码时，可能是由于网络异常导致。此时如果没有联网，需要提示用户网络没有连接，如果已经联网，可能是由于网络抖动导致失败，建议重试。
-
-<!--RP1--><!--RP1End-->
+获取匿名化密钥证书。使用Promise异步回调。 该操作需要联网进行，且耗时较长。返回12000012错误码时，可能是由于网络异常导致。此时如果没有联网，需要提示用户网络没有连接，如果已经联网，可能是由于网络抖动导致失败，建议重试。 > **说明：** > > 获取[HuksKeySecurityLevel](arkts-universalkeystore-hukskeysecuritylevel-e.md)中定义的SE安全级别密钥证书需要ohos.permission.ACCESS_SE_KEY权限。 <!--RP1--><!--RP1End-->
 
 **起始版本：** 11
 
@@ -176,6 +169,7 @@ function anonAttestKeyItem(keyAlias: string, options: HuksOptions): Promise<Huks
 
 | 错误码ID | 错误信息 |
 | --- | --- |
+| [201](../../errorcode-universal.md#201-权限校验失败) | The application permissions are insufficient, possibly becausethe ohos.permission.ACCESS_SE_KEY permission is missing.<br>**适用版本：** 26.0.0+ |
 | [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified.2. Incorrect parameter types.3. Parameter verification failed. |
 | [801](../../errorcode-universal.md#801-该设备不支持此api) | api is not supported |
 | [12000001](../errorcode-huks.md#12000001-该子功能不支持特性) | algorithm mode is not supported |

@@ -21,7 +21,7 @@ import { motion } from '@kit.MultimodalAwarenessKit';
 | [getRecentOperatingHandStatus](arkts-multimodalawareness-getrecentoperatinghandstatus-f.md#getrecentoperatinghandstatus-1) | Obtains the latest operating hand status. |
 | [off](arkts-multimodalawareness-off-f.md#off-1) | Unsubscribes from operating hand change events. |
 | [off](arkts-multimodalawareness-off-f.md#off-2) | Disables listening for holding hand status changes. |
-| [on](arkts-multimodalawareness-on-f.md#on-1) | Subscribes to operating hand change events.If the device does not support this function, error code 801 is returned. |
+| [on](arkts-multimodalawareness-on-f.md#on-1) | Subscribes to operating hand change events. If the device does not support this function, error code 801 is returned. |
 | [on](arkts-multimodalawareness-on-f.md#on-2) | Enables listening for holding hand status changes. |
 
 <!--Del-->

@@ -102,8 +102,7 @@ Checks whether effect suggestion is supported.
 setEffectSuggestionStatus(status: Array<EffectSuggestionStatus>): void
 ```
 
-Set the range of effect suggestion type and enable status.
-The application should fully set all data when it starts up.
+Set the range of effect suggestion type and enable status. The application should fully set all data when it starts up.
 
 **Since:** 12
 

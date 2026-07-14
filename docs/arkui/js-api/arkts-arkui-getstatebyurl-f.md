@@ -12,14 +12,7 @@ import { router } from '@kit.ArkUI';
 function getStateByUrl(url: string): Array<RouterState>
 ```
 
-Obtains the status information about a page by its URL.
-
-> **NOTE**
->
-> - Since API version 12, you can use the
-> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in
-> [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated
-> with the current UI context.
+Obtains the status information about a page by its URL. > **NOTE** > > - Since API version 12, you can use the > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in > [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated > with the current UI context.
 
 **Since:** 12
 
@@ -48,6 +41,8 @@ Obtains the status information about a page by its URL.
 **Example**
 
 ```TypeScript
+import { router } from '@kit.ArkUI';
+
 let options: Array<router.RouterState> = router.getStateByUrl('pages/index');
 for (let i: number = 0; i < options.length; i++) {
   console.info('index = ' + options[i].index);

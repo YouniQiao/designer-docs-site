@@ -1,9 +1,6 @@
 # PanoramaPhotoSession (System API)
 
-PanoramaPhotoSession extends Session, Focus, AutoExposure, WhiteBalance, ColorEffect
-Implements a panoramic photo session, which sets the parameters of the panoramic photo mode and saves all
-[CameraInput](arkts-camera-camerainput-i.md) and [CameraOutput](arkts-camera-cameraoutput-i.md)
-instances required to run the camera. It inherits from [Session](arkts-camera-session-i.md).
+PanoramaPhotoSession extends Session, Focus, AutoExposure, WhiteBalance, ColorEffect Implements a panoramic photo session, which sets the parameters of the panoramic photo mode and saves all [CameraInput](arkts-camera-camerainput-i.md) and [CameraOutput](arkts-camera-cameraoutput-i.md) instances required to run the camera. It inherits from [Session](arkts-camera-session-i.md).
 
 **Inheritance/Implementation:** PanoramaPhotoSession extends [Session](arkts-camera-session-i.md), [Focus](arkts-camera-focus-i.md), [AutoExposure](arkts-camera-autoexposure-i.md), [WhiteBalance](arkts-camera-whitebalance-i.md), [ColorEffect](arkts-camera-coloreffect-i-sys.md)
 
@@ -97,8 +94,7 @@ function unregisterFocusStateChange(panoramaPhotoSession: camera.PanoramaPhotoSe
 on(type: 'error', callback: ErrorCallback): void
 ```
 
-Subscribes to HighResolutionPhotoSession error events. This API uses an asynchronous callback to return the
-result.
+Subscribes to HighResolutionPhotoSession error events. This API uses an asynchronous callback to return the result.
 
 **Since:** 12
 

@@ -6,9 +6,7 @@
 function setManagedBrowserPolicy(admin: Want, bundleName: string, policyName: string, policyValue: string): void
 ```
 
-为指定的浏览器设置浏览器策略，成功后会发布系统公共事件
-[COMMON_EVENT_MANAGED_BROWSER_POLICY_CHANGED](../../../../reference/apis-basic-services-kit/common_event/commonEventManager-definitions.md#common_event_managed_browser_policy_changed)
-。
+为指定的浏览器设置浏览器策略，成功后会发布系统公共事件 [COMMON_EVENT_MANAGED_BROWSER_POLICY_CHANGED](../../../../reference/apis-basic-services-kit/common_event/commonEventManager-definitions.md#common_event_managed_browser_policy_changed) 。
 
 **起始版本：** 15
 
@@ -48,8 +46,11 @@ let wantTemp: Want = {
   abilityName: 'EnterpriseAdminAbility'
 };
 // 需根据实际情况进行替换
+// 浏览器应用包名
 let bundleName: string = 'com.example.testbrowser';
+// 浏览器策略名称
 let policyName: string = 'InsecurePrivateNetworkRequestsAllowed';
+// 浏览器策略值
 let policyValue: string = '{"level":"mandatory","scope":"machine","source":"platform","value":true}';
 
 try {

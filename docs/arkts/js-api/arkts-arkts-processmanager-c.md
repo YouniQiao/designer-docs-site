@@ -1,8 +1,6 @@
 # ProcessManager
 
-Provides APIs for throwing exceptions during the addition of a process.
-
-Construct a **ProcessManager** object.
+Provides APIs for throwing exceptions during the addition of a process. Construct a **ProcessManager** object.
 
 **Since:** 9
 
@@ -20,10 +18,7 @@ import { process } from '@kit.ArkTS';
 exit(code: number): void
 ```
 
-Terminates this process.
-
-Exercise caution when using this API. After this API is called, the application exits. If the input parameter
-is not 0, data loss or exceptions may occur.
+Terminates this process. Exercise caution when using this API. After this API is called, the application exits. If the input parameter is not 0, data loss or exceptions may occur.
 
 **Since:** 9
 
@@ -51,12 +46,7 @@ pro.exit(0);
 getEnvironmentVar(name: string): string
 ```
 
-Obtains the value of an environment variable.
-
-> **NOTE**
->
-> Obtains the value of an environment variable. If the environment variable does not exist, **undefined** is
-> returned.
+Obtains the value of an environment variable. > **NOTE** > > Obtains the value of an environment variable. If the environment variable does not exist, **undefined** is > returned.
 
 **Since:** 9
 

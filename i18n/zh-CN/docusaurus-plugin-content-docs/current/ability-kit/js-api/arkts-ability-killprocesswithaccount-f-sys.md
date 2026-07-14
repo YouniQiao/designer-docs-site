@@ -6,11 +6,7 @@
 function killProcessWithAccount(bundleName: string, accountId: number): Promise<void>
 ```
 
-终止account进程。使用Promise异步回调。
-
-> **说明：**
->
-> 当accountId为当前用户时，不需要校验ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS权限。
+终止account进程。使用Promise异步回调。 > **说明：** > > 当accountId为当前用户时，不需要校验ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS权限。
 
 **起始版本：** 9
 
@@ -75,11 +71,7 @@ function killProcessWithAccount(bundleName: string, accountId: number, clearPage
     Promise<void>
 ```
 
-终止account进程。使用Promise异步回调。
-
-> **说明：**
->
-> 当accountId为当前用户时，不需要校验ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS权限。
+终止account进程。使用Promise异步回调。 > **说明：** > > 当accountId为当前用户时，不需要校验ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS权限。
 
 **起始版本：** 14
 
@@ -145,11 +137,7 @@ try {
 function killProcessWithAccount(bundleName: string, accountId: number, callback: AsyncCallback<void>): void
 ```
 
-终止account进程。使用callback异步回调。
-
-> **说明：**
->
-> 当accountId为当前用户时，不需要校验ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS权限。
+终止account进程。使用callback异步回调。 > **说明：** > > 当accountId为当前用户时，不需要校验ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS权限。
 
 **起始版本：** 9
 

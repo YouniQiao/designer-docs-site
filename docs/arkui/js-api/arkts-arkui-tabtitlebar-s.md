@@ -36,8 +36,7 @@ Menu items on the right side.
 swiperContent: () => void
 ```
 
-Content builder. Each component corresponds to a tab item.
-The builder needs to be transferred.
+Content builder. Each component corresponds to a tab item. The builder needs to be transferred.
 
 **Type:** () => void
 

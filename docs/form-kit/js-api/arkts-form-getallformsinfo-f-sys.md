@@ -12,8 +12,7 @@ import { formHost } from '@kit.FormKit';
 function getAllFormsInfo(callback: AsyncCallback<Array<formInfo.FormInfo>>): void
 ```
 
-Obtains the widget information provided by all applications on the device (excluding template widgets). This API
-uses an asynchronous callback to return the result.
+Obtains the widget information provided by all applications on the device (excluding template widgets). This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -47,8 +46,7 @@ uses an asynchronous callback to return the result.
 function getAllFormsInfo(): Promise<Array<formInfo.FormInfo>>
 ```
 
-Obtains the widget information provided by all applications on the device (excluding template widgets). This API
-uses a promise to return the result.
+Obtains the widget information provided by all applications on the device (excluding template widgets). This API uses a promise to return the result.
 
 **Since:** 9
 

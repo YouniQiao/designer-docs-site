@@ -12,9 +12,7 @@ import { util } from '@kit.ArkTS';
 function getMainThreadStackTrace(): string
 ```
 
-Obtains the stack trace information of the main thread. A maximum of 64 call frames can be returned.
-This API may affect the performance of the main thread. You are advised to use this API only when necessary, such
-as in log recording, error analysis, or debugging scenarios.
+Obtains the stack trace information of the main thread. A maximum of 64 call frames can be returned. This API may affect the performance of the main thread. You are advised to use this API only when necessary, such as in log recording, error analysis, or debugging scenarios.
 
 **Since:** 20
 

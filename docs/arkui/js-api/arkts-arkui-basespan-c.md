@@ -14,8 +14,7 @@ Defines the base class **BaseSpan**, including the universal attributes of the *
 baselineOffset(value: LengthMetrics): T
 ```
 
-Sets the offset of the baseline. This attribute coexists with the **baselineOffset** attribute of the parent
-component.
+Sets the offset of the baseline. This attribute coexists with the **baselineOffset** attribute of the parent component.
 
 **Since:** 12
 
@@ -43,8 +42,7 @@ component.
 textBackgroundStyle(style: TextBackgroundStyle): T
 ```
 
-Background style. This attribute prioritizes the value separately set for the component. If it is not set, the
-component can inherit the settings from its parent [ContainerSpan](arkts-arkui-containerspan.md).
+Background style. This attribute prioritizes the value separately set for the component. If it is not set, the component can inherit the settings from its parent [ContainerSpan](arkts-arkui-containerspan.md).
 
 **Since:** 11
 

@@ -36,8 +36,7 @@ The device is physically online.
 READY = 1
 ```
 
-The information between devices has been synchronized in the Distributed Data Service (DDS) module, and the
-device is ready for running distributed services.
+The information between devices has been synchronized in the Distributed Data Service (DDS) module, and the device is ready for running distributed services.
 
 **Since:** 7
 

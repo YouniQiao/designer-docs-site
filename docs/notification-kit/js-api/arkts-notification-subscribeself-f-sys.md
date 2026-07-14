@@ -12,8 +12,7 @@ import { notificationSubscribe } from '@kit.NotificationKit';
 function subscribeSelf(subscriber: NotificationSubscriber): Promise<void>
 ```
 
-Subscribes to notifications of the application and specifies subscription information. This API uses a promise to
-return the result.
+Subscribes to notifications of the application and specifies subscription information. This API uses a promise to return the result.
 
 **Since:** 11
 

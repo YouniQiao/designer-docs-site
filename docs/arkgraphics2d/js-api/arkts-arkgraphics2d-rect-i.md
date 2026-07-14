@@ -1,7 +1,6 @@
 # Rect
 
-Describes a rectangle, which can be defined by two coordinate points: upper left corner point and lower right
-corner point.
+Describes a rectangle, which can be defined by two coordinate points: upper left corner point and lower right corner point.
 
 **Since:** 11
 

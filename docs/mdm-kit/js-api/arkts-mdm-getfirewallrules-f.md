@@ -12,11 +12,7 @@ import { networkManager } from '@kit.MDMKit';
 function getFirewallRules(admin: Want): Array<FirewallRule>
 ```
 
-Queries firewall rules of a device.
-
-In API version 21 and earlier versions, only IPv4 is supported. IPv4 and IPv6 are supported since API version 22.
-
-[LogType](arkts-mdm-logtype-e.md) is supported since API version 23.
+Queries firewall rules of a device. In API version 21 and earlier versions, only IPv4 is supported. IPv4 and IPv6 are supported since API version 22. [LogType](arkts-mdm-logtype-e.md) is supported since API version 23.
 
 **Since:** 12
 

@@ -1,13 +1,6 @@
 # AudioRoutingManager
 
-音频路由管理。
-
-在使用AudioRoutingManager的接口之前，需先通过[getRoutingManager](arkts-audio-audiomanager-i.md#getroutingmanager-1)获取
-AudioRoutingManager实例。
-
-> **说明：**
->
-> - 本Interface首批接口从API version 9开始支持。
+音频路由管理。 在使用AudioRoutingManager的接口之前，需先通过[getRoutingManager](arkts-audio-audiomanager-i.md#getroutingmanager-1)获取 AudioRoutingManager实例。 > **说明：** > > - 本Interface首批接口从API version 9开始支持。
 
 **起始版本：** 9
 
@@ -19,13 +12,7 @@ AudioRoutingManager实例。
 declareDeviceTypesCompatibility(deviceTypes: DeviceTypeArray): void
 ```
 
-声明应用需要兼容的设备类型。
-
-> **说明：**
->
-> 对于API version 20及以上版本新增的设备类型，应用调用获取设备的相关接口时（例如
-> [getAvailableDevices](arkts-audio-audiosessionmanager-i.md#getavailabledevices-1)），默认返回的设备类型为匿名类型。如需获取具体设备类型，需先调用该方法进行
-> 设备类型兼容声明。
+声明应用需要兼容的设备类型。 > **说明：** > > 对于API version 20及以上版本新增的设备类型，应用调用获取设备的相关接口时（例如 > [getAvailableDevices](arkts-audio-audiosessionmanager-i.md#getavailabledevices-1)），默认返回的设备类型为匿名类型。如需获取具体设备类型，需先调用该方法进行 > 设备类型兼容声明。
 
 **起始版本：** 26.0.0
 
@@ -666,10 +653,7 @@ on(type: 'preferredInputDeviceChangeForCapturerInfo', capturerInfo: AudioCapture
 on(type: 'micBlockStatusChanged', callback: Callback<DeviceBlockStatusInfo>): void
 ```
 
-监听麦克风堵塞状态变化事件。使用callback异步回调。
-
-使用此功能前，请使用[isMicBlockDetectionSupported](arkts-audio-audioroutingmanager-i.md#ismicblockdetectionsupported-1)查询设备是否支持检测。
-应用在使用麦克风录音时，若麦克风堵塞状态发生变化，将触发该事件。目前此检测功能仅支持麦克风位于本地设备上。
+监听麦克风堵塞状态变化事件。使用callback异步回调。 使用此功能前，请使用[isMicBlockDetectionSupported](arkts-audio-audioroutingmanager-i.md#ismicblockdetectionsupported-1)查询设备是否支持检测。 应用在使用麦克风录音时，若麦克风堵塞状态发生变化，将触发该事件。目前此检测功能仅支持麦克风位于本地设备上。
 
 **起始版本：** 13
 
@@ -695,11 +679,7 @@ on(type: 'micBlockStatusChanged', callback: Callback<DeviceBlockStatusInfo>): vo
 setCommunicationDevice(deviceType: CommunicationDeviceType, active: boolean, callback: AsyncCallback<void>): void
 ```
 
-设置通信设备激活状态。使用callback异步回调。
-
-该接口由于功能设计变化，将在后续版本废弃，不建议开发者使用。
-
-推荐使用AVSession提供的[设备切换组件](../../../../media/avsession/using-switch-call-devices.md)，实现通话设备切换。
+设置通信设备激活状态。使用callback异步回调。 该接口由于功能设计变化，将在后续版本废弃，不建议开发者使用。 推荐使用AVSession提供的[设备切换组件](../../../../media/avsession/using-switch-call-devices.md)，实现通话设备切换。
 
 **起始版本：** 9
 
@@ -719,11 +699,7 @@ setCommunicationDevice(deviceType: CommunicationDeviceType, active: boolean, cal
 setCommunicationDevice(deviceType: CommunicationDeviceType, active: boolean): Promise<void>
 ```
 
-设置通信设备激活状态。使用Promise异步回调。
-
-该接口由于功能设计变化，将在后续版本废弃，不建议开发者使用。
-
-推荐开发者使用AVSession提供的[设备切换组件](../../../../media/avsession/using-switch-call-devices.md)，实现通话设备切换。
+设置通信设备激活状态。使用Promise异步回调。 该接口由于功能设计变化，将在后续版本废弃，不建议开发者使用。 推荐开发者使用AVSession提供的[设备切换组件](../../../../media/avsession/using-switch-call-devices.md)，实现通话设备切换。
 
 **起始版本：** 9
 

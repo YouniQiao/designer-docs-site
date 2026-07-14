@@ -14,11 +14,7 @@ Sets the voice button options.
 enabled?: boolean
 ```
 
-Whether to enable or disable the voice button for the input box.
-
-**true**: The voice button is enabled. **false**: The voice button is disabled.
-
-Default value: **false**
+Whether to enable or disable the voice button for the input box. **true**: The voice button is enabled. **false**: The voice button is disabled. Default value: **false**
 
 **Type:** boolean
 

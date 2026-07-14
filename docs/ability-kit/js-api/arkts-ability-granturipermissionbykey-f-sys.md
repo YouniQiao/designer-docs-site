@@ -12,12 +12,7 @@ import { uriPermissionManager } from '@kit.AbilityKit';
 function grantUriPermissionByKey(key: string, flag: wantConstant.Flags, targetTokenId: number): Promise<void>
 ```
 
-Grants the URI access permission of the current application to the target application through the unique key of the
-Unified Data Management Framework (UDMF) data. The permission will be revoked after the target application exits.
-This API uses a promise to return the result.
-This API can be properly called only on phones, 2-in-1 devices, and tablets. If it is called on other device types,
-error code 801 is returned.
-**System API**: This is a system API.
+Grants the URI access permission of the current application to the target application through the unique key of the Unified Data Management Framework (UDMF) data. The permission will be revoked after the target application exits. This API uses a promise to return the result. This API can be properly called only on phones, 2-in-1 devices, and tablets. If it is called on other device types, error code 801 is returned. **System API**: This is a system API.
 
 **Since:** 20
 

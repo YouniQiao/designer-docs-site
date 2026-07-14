@@ -1,14 +1,6 @@
 # AudioRoutingManager
 
-This interface implements audio routing management.
-
-Before calling any API in AudioRoutingManager, you must use
-[getRoutingManager](arkts-audio-audiomanager-i.md#getroutingmanager-1) to obtain an
-AudioRoutingManager instance.
-
-> **NOTE**
->
-> - The initial APIs of this interface are supported since API version 9.
+This interface implements audio routing management. Before calling any API in AudioRoutingManager, you must use [getRoutingManager](arkts-audio-audiomanager-i.md#getroutingmanager-1) to obtain an AudioRoutingManager instance. > **NOTE** > > - The initial APIs of this interface are supported since API version 9.
 
 **Since:** 9
 
@@ -26,14 +18,7 @@ import { audio } from '@kit.AudioKit';
 declareDeviceTypesCompatibility(deviceTypes: DeviceTypeArray): void
 ```
 
-Declares the original device types that the application has adapted to.
-By default, the system returns anonymous device types. This method allows applications to
-declare which specific device types they have explicitly adapted to. Once declared, the system
-will return the original device types to the application instead of the anonymous ones.
-Note: This method only supports device types introduced from API 20 onwards (such as hearing aids
-and nearlink devices). If this interface is not called for these new device types, the application
-will only be able to obtain anonymous device types.
-Legacy device types prior to API 20 do not need this declaration.
+Declares the original device types that the application has adapted to. By default, the system returns anonymous device types. This method allows applications to declare which specific device types they have explicitly adapted to. Once declared, the system will return the original device types to the application instead of the anonymous ones. Note: This method only supports device types introduced from API 20 onwards (such as hearing aids and nearlink devices). If this interface is not called for these new device types, the application will only be able to obtain anonymous device types. Legacy device types prior to API 20 do not need this declaration.
 
 **Since:** 26.0.0
 
@@ -164,8 +149,7 @@ Obtains the audio devices with a specific flag. This API returns the result sync
 getPreferOutputDeviceForRendererInfo(rendererInfo: AudioRendererInfo, callback: AsyncCallback<AudioDeviceDescriptors>): void
 ```
 
-Obtains the output device with the highest priority based on the audio renderer information. This API uses an
-asynchronous callback to return the result.
+Obtains the output device with the highest priority based on the audio renderer information. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -192,8 +176,7 @@ asynchronous callback to return the result.
 getPreferOutputDeviceForRendererInfo(rendererInfo: AudioRendererInfo): Promise<AudioDeviceDescriptors>
 ```
 
-Obtains the output device with the highest priority based on the audio renderer information. This API uses a
-promise to return the result.
+Obtains the output device with the highest priority based on the audio renderer information. This API uses a promise to return the result.
 
 **Since:** 10
 
@@ -225,8 +208,7 @@ promise to return the result.
 getPreferredInputDeviceForCapturerInfo(capturerInfo: AudioCapturerInfo, callback: AsyncCallback<AudioDeviceDescriptors>): void
 ```
 
-Obtains the input device with the highest priority based on the audio capturer information. This API uses an
-asynchronous callback to return the result.
+Obtains the input device with the highest priority based on the audio capturer information. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -253,8 +235,7 @@ asynchronous callback to return the result.
 getPreferredInputDeviceForCapturerInfo(capturerInfo: AudioCapturerInfo): Promise<AudioDeviceDescriptors>
 ```
 
-Obtains the input device with the highest priority based on the audio capturer information. This API uses a
-promise to return the result.
+Obtains the input device with the highest priority based on the audio capturer information. This API uses a promise to return the result.
 
 **Since:** 10
 
@@ -317,8 +298,7 @@ Gets preferred input device for target audio capturer info.
 getPreferredOutputDeviceForRendererInfoSync(rendererInfo: AudioRendererInfo): AudioDeviceDescriptors
 ```
 
-Obtains the output device with the highest priority based on the audio renderer information. This API returns the
-result synchronously.
+Obtains the output device with the highest priority based on the audio renderer information. This API returns the result synchronously.
 
 **Since:** 10
 
@@ -423,8 +403,7 @@ Checks whether a communication device is active. This API returns the result syn
 isMicBlockDetectionSupported():Promise<boolean>
 ```
 
-Checks whether the current device supports microphone blocking detection. This API uses a promise to return the
-result.
+Checks whether the current device supports microphone blocking detection. This API uses a promise to return the result.
 
 **Since:** 13
 
@@ -442,8 +421,7 @@ result.
 off(type: 'deviceChange', callback?: Callback<DeviceChangeAction>): void
 ```
 
-Unsubscribes from the event indicating that the connection status of an audio device is changed. This API uses an
-asynchronous callback to return the result.
+Unsubscribes from the event indicating that the connection status of an audio device is changed. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -469,8 +447,7 @@ asynchronous callback to return the result.
 off(type: 'availableDeviceChange', callback?: Callback<DeviceChangeAction>): void
 ```
 
-Unsubscribes from the event indicating that the connection status of an available audio device is changed. This
-API uses an asynchronous callback to return the result.
+Unsubscribes from the event indicating that the connection status of an available audio device is changed. This API uses an asynchronous callback to return the result.
 
 **Since:** 12
 
@@ -496,8 +473,7 @@ API uses an asynchronous callback to return the result.
 off(type: 'preferOutputDeviceChangeForRendererInfo', callback?: Callback<AudioDeviceDescriptors>): void
 ```
 
-Unsubscribes from the change event of the output device with the highest priority. This API uses an asynchronous
-callback to return the result.
+Unsubscribes from the change event of the output device with the highest priority. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -523,8 +499,7 @@ callback to return the result.
 off(type: 'preferredInputDeviceChangeForCapturerInfo', callback?: Callback<AudioDeviceDescriptors>): void
 ```
 
-Unsubscribes from the change event of the input device with the highest priority. This API uses an asynchronous
-callback to return the result.
+Unsubscribes from the change event of the input device with the highest priority. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -550,8 +525,7 @@ callback to return the result.
 off(type: 'micBlockStatusChanged', callback?: Callback<DeviceBlockStatusInfo>): void
 ```
 
-Unsubscribes from the microphone blocked status change event. This API uses an asynchronous callback to return
-the result.
+Unsubscribes from the microphone blocked status change event. This API uses an asynchronous callback to return the result.
 
 **Since:** 13
 
@@ -577,8 +551,7 @@ the result.
 on(type: 'deviceChange', deviceFlag: DeviceFlag, callback: Callback<DeviceChangeAction>): void
 ```
 
-Subscribes to the event indicating that the connection status of an audio device is changed. This API uses an
-asynchronous callback to return the result.
+Subscribes to the event indicating that the connection status of an audio device is changed. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -605,8 +578,7 @@ asynchronous callback to return the result.
 on(type: 'availableDeviceChange', deviceUsage: DeviceUsage, callback: Callback<DeviceChangeAction>): void
 ```
 
-Subscribes to the event indicating that the connection status of an available audio device is changed. This API
-uses an asynchronous callback to return the result.
+Subscribes to the event indicating that the connection status of an available audio device is changed. This API uses an asynchronous callback to return the result.
 
 **Since:** 12
 
@@ -633,8 +605,7 @@ uses an asynchronous callback to return the result.
 on(type: 'preferOutputDeviceChangeForRendererInfo', rendererInfo: AudioRendererInfo, callback: Callback<AudioDeviceDescriptors>): void
 ```
 
-Subscribes to the change event of the output device with the highest priority, which is triggered when the output
-device with the highest priority is changed. This API uses an asynchronous callback to return the result.
+Subscribes to the change event of the output device with the highest priority, which is triggered when the output device with the highest priority is changed. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -661,8 +632,7 @@ device with the highest priority is changed. This API uses an asynchronous callb
 on(type: 'preferredInputDeviceChangeForCapturerInfo', capturerInfo: AudioCapturerInfo, callback: Callback<AudioDeviceDescriptors>): void
 ```
 
-Subscribes to the change event of the input device with the highest priority, which is triggered when the input
-device with the highest priority is changed. This API uses an asynchronous callback to return the result.
+Subscribes to the change event of the input device with the highest priority, which is triggered when the input device with the highest priority is changed. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -689,12 +659,7 @@ device with the highest priority is changed. This API uses an asynchronous callb
 on(type: 'micBlockStatusChanged', callback: Callback<DeviceBlockStatusInfo>): void
 ```
 
-Subscribes to the microphone blocked status change event. This API uses an asynchronous callback to return the
-result.
-
-Before using this API, check whether the current device supports microphone blocking detection. This event is
-triggered when the microphone blocked status changes during recording. Currently, this API takes effect only for
-the microphone on the local device.
+Subscribes to the microphone blocked status change event. This API uses an asynchronous callback to return the result. Before using this API, check whether the current device supports microphone blocking detection. This event is triggered when the microphone blocked status changes during recording. Currently, this API takes effect only for the microphone on the local device.
 
 **Since:** 13
 
@@ -720,12 +685,7 @@ the microphone on the local device.
 setCommunicationDevice(deviceType: CommunicationDeviceType, active: boolean, callback: AsyncCallback<void>): void
 ```
 
-Sets a communication device to the active state. This API uses an asynchronous callback to return the result.
-
-This API will be deprecated in a later version due to function design is changed. You are not advised to use it.
-
-You are advised to use the [AVCastPicker component](../../../../media/avsession/using-switch-call-devices.md)
-provided by AVSession to switch between call devices.
+Sets a communication device to the active state. This API uses an asynchronous callback to return the result. This API will be deprecated in a later version due to function design is changed. You are not advised to use it. You are advised to use the [AVCastPicker component](../../../../media/avsession/using-switch-call-devices.md) provided by AVSession to switch between call devices.
 
 **Since:** 9
 
@@ -745,12 +705,7 @@ provided by AVSession to switch between call devices.
 setCommunicationDevice(deviceType: CommunicationDeviceType, active: boolean): Promise<void>
 ```
 
-Sets a communication device to the active state. This API uses a promise to return the result.
-
-This API will be deprecated in a later version due to function design is changed. You are not advised to use it.
-
-You are advised to use the [AVCastPicker component](../../../../media/avsession/using-switch-call-devices.md)
-provided by AVSession to switch between call devices.
+Sets a communication device to the active state. This API uses a promise to return the result. This API will be deprecated in a later version due to function design is changed. You are not advised to use it. You are advised to use the [AVCastPicker component](../../../../media/avsession/using-switch-call-devices.md) provided by AVSession to switch between call devices.
 
 **Since:** 9
 

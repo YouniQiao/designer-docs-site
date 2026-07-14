@@ -20,8 +20,7 @@ import { sendablePhotoAccessHelper } from '@kit.MediaLibraryKit';
 close(): void
 ```
 
-Closes this FetchFileResult instance to invalidate it.
-After this instance is closed, the APIs in this instance cannot be invoked.
+Closes this FetchResult instance to invalidate it. After this instance is closed, the APIs in this instance cannot be invoked.
 
 **Since:** 12
 
@@ -75,7 +74,7 @@ Obtains all the file assets in the result set. This API uses a promise to return
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Array&lt;T&gt;&gt; | Returns all the objects |
+| Promise&lt;Array&lt;T&gt;&gt; | Promise used to return all the assets in the result set. |
 
 **Error codes:**
 
@@ -121,7 +120,7 @@ Obtains the total number of files in the result set.
 
 | Type | Description |
 | --- | --- |
-| number | Total number of objects. |
+| number | Total number of files obtained. |
 
 **Error codes:**
 
@@ -167,7 +166,7 @@ Obtains the first asset in the result set. This API uses a promise to return the
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;T&gt; | Returns the first object in the fetch result. |
+| Promise&lt;T&gt; | Promise used to return the first object in the result set. |
 
 **Error codes:**
 
@@ -213,7 +212,7 @@ Obtains the last asset in the result set. This API uses a promise to return the 
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;T&gt; | Returns the last object |
+| Promise&lt;T&gt; | Promise used to return the last object in the result set. |
 
 **Error codes:**
 
@@ -249,9 +248,7 @@ async function example(phAccessHelper: sendablePhotoAccessHelper.PhotoAccessHelp
 getNextObject(): Promise<T>
 ```
 
-Obtains the next asset in the result set. This API uses a promise to return the result.
-Before using this API, you must use isAfterLast() to check whether the current position is the end of
-<br>the result set.
+Obtains the next asset in the result set. This API uses a promise to return the result. Before using this API, you must use [isAfterLast()](arkts-medialibrary-fetchresult-i.md#isafterlast-1) to check whether the current position is the end of the result set.
 
 **Since:** 12
 
@@ -261,7 +258,7 @@ Before using this API, you must use isAfterLast() to check whether the current p
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;T&gt; | Returns the next object |
+| Promise&lt;T&gt; | Promise used to return the next object in the result set. |
 
 **Error codes:**
 
@@ -308,19 +305,19 @@ Obtains the asset with the given index in the result set. This API uses a promis
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| index | number | Yes | Index of the asset to obtain. The value starts from 0. |
+| index | number | Yes | Index of the asset to obtain. The value starts from **0**. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;T&gt; | Returns the object |
+| Promise&lt;T&gt; | Promise used to return the asset obtained. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | Internal system error |
 
 **Example**
@@ -361,7 +358,7 @@ Checks whether the cursor is in the last row of the result set.
 
 | Type | Description |
 | --- | --- |
-| boolean | Whether the object is the last one in the fetch result. |
+| boolean | Returns **true** if the cursor is in the last row of the result set; returns **false**otherwise. |
 
 **Error codes:**
 

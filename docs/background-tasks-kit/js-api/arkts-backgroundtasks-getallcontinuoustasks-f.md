@@ -12,8 +12,7 @@ import { backgroundTaskManager } from '@kit.BackgroundTasksKit';
 function getAllContinuousTasks(context: Context): Promise<ContinuousTaskInfo[]>
 ```
 
-Obtains all continuous task information, including the task ID and type. This API uses a promise to return the
-result.
+Obtains all continuous task information, including the task ID and type. This API uses a promise to return the result.
 
 **Since:** 20
 
@@ -73,8 +72,7 @@ export default class EntryAbility extends UIAbility {
 function getAllContinuousTasks(context: Context, includeSuspended: boolean): Promise<ContinuousTaskInfo[]>
 ```
 
-Obtains all continuous task information, including the task ID and type. It supports specifying whether to include
-suspended tasks and uses a promise to return the result.
+Obtains all continuous task information, including the task ID and type. It supports specifying whether to include suspended tasks and uses a promise to return the result.
 
 **Since:** 20
 

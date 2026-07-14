@@ -12,9 +12,7 @@ Defines the options of translate.
 x?: number | string
 ```
 
-Translation distance along the x-axis.
-For the number type, the unit is VP, and the value range is (-∞, +∞).
-For the string type, the value follows the format of length string type.
+Translation distance along the x-axis. For the number type, the unit is VP, and the value range is (-∞, +∞). For the string type, the value follows the format of length string type.
 
 **Type:** number | string
 
@@ -32,9 +30,7 @@ For the string type, the value follows the format of length string type.
 y?: number | string
 ```
 
-Translation distance along the y-axis.
-For the number type, the unit is VP, and the value range is (-∞, +∞).
-For the string type, the value follows the format of length string type.
+Translation distance along the y-axis. For the number type, the unit is VP, and the value range is (-∞, +∞). For the string type, the value follows the format of length string type.
 
 **Type:** number | string
 
@@ -52,8 +48,7 @@ For the string type, the value follows the format of length string type.
 z?: number | string
 ```
 
-Distance to translate along the z-axis. The value is a floating
-point number, the default value is 0.0, and the unit is px.
+Distance to translate along the z-axis. The value is a floating point number, the default value is 0.0, and the unit is px.
 
 **Type:** number | string
 

@@ -46,8 +46,7 @@ Length of the data read, in bytes.
 offset: number
 ```
 
-Position of the buffer to which the data will be read relative to the
-start address of the buffer, in bytes.
+Position of the buffer to which the data will be read relative to the start address of the buffer, in bytes.
 
 **Type:** number
 

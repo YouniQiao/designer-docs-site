@@ -12,8 +12,7 @@ import { inputMonitor } from '@kit.InputKit';
 function queryTouchEvents(count: number) : Promise<Array<TouchEvent>>
 ```
 
-Queries recent touchscreen input events. A maximum of 100 events can be queried. Since API version 26.0.0, a
-maximum of 60 events can be queried. This API uses a promise to return the result.
+Queries recent touchscreen input events. A maximum of 100 events can be queried. Since API version 26.0.0, a maximum of 60 events can be queried. This API uses a promise to return the result.
 
 **Since:** 20
 

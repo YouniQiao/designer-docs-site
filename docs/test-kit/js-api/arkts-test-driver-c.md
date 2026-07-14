@@ -1,9 +1,6 @@
 # Driver
 
-The **Driver** class is the main entry to the UiTest framework. It provides APIs for features such as component
-matching/search, key injection, coordinate clicking/sliding, and screenshot.
-All APIs provided by this class, except **Driver.create()**, use a promise to return the result and must be invoked
-using **await**.
+The **Driver** class is the main entry to the UiTest framework. It provides APIs for features such as component matching/search, key injection, coordinate clicking/sliding, and screenshot. All APIs provided by this class, except **Driver.create()**, use a promise to return the result and must be invoked using **await**.
 
 **Since:** 9
 
@@ -21,8 +18,7 @@ import { ResizeDirection, WindowMode, PenMode, PenKeyOperation, Driver, MatchPat
 assertComponentExist(on: On): Promise<void>
 ```
 
-Asserts whether a component matches the specified attributes exists on the current page. This API uses a promise
-to return the result.
+Asserts whether a component matches the specified attributes exists on the current page. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -463,8 +459,7 @@ async function demo() {
 drag(startx: number, starty: number, endx: number, endy: number, speed?: number): Promise<void>
 ```
 
-Drags from the start coordinate point to the target coordinate point. This API uses a promise to return the result
-.
+Drags from the start coordinate point to the target coordinate point. This API uses a promise to return the result .
 
 **Since:** 9
 
@@ -514,8 +509,7 @@ async function demo() {
 dragBetween(from: Point, to: Point, speed?: number, duration?: number): Promise<void>
 ```
 
-Drags from the start point to the target point. You can specify the drag speed and the click duration before
-dragging. This API uses a promise to return the result.
+Drags from the start point to the target point. You can specify the drag speed and the click duration before dragging. This API uses a promise to return the result.
 
 **Since:** 20
 
@@ -693,8 +687,7 @@ async function demo() {
 findComponents(on: On): Promise<Array<Component>>
 ```
 
-Searches for all matched components based on the specified attributes and saves them in a list. This API uses a
-promise to return the result.
+Searches for all matched components based on the specified attributes and saves them in a list. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -882,8 +875,7 @@ async function demo() {
 fling(direction: UiDirection, speed: number, displayId: number): Promise<void>
 ```
 
-Simulates a fling operation on a specified display with the specified direction and speed. This API uses a promise
-to return the result.
+Simulates a fling operation on a specified display with the specified direction and speed. This API uses a promise to return the result.
 
 **Since:** 20
 
@@ -1186,11 +1178,7 @@ async function demo() {
 injectKnucklePointerAction(pointers: PointerMatrix, speed?: number): Promise<void>
 ```
 
-Simulates a multi-point knuckle scrolling operation. This API uses a promise to return the result.
-
-> **NOTE**
->
-> If the knuckle gesture is disabled on the device<!--RP4--><!--RP4End-->, 17000005 is returned.
+Simulates a multi-point knuckle scrolling operation. This API uses a promise to return the result. > **NOTE** > > If the knuckle gesture is disabled on the device<!--RP4--><!--RP4End-->, 17000005 is returned.
 
 **Since:** 22
 
@@ -1356,8 +1344,7 @@ async function demo() {
 inputText(p: Point, text: string): Promise<void>
 ```
 
-Inputs text at a specified coordinate without clearing the original text in the component. This API uses a promise
-to return the result.
+Inputs text at a specified coordinate without clearing the original text in the component. This API uses a promise to return the result.
 
 **Since:** 11
 
@@ -1406,8 +1393,7 @@ async function demo() {
 inputText(p: Point, text: string, mode: InputTextMode): Promise<void>
 ```
 
-Inputs text at a specified coordinate point in a specified input mode. This API uses a promise to return the
-result.
+Inputs text at a specified coordinate point in a specified input mode. This API uses a promise to return the result.
 
 **Since:** 20
 
@@ -1466,8 +1452,7 @@ async function demo_Chinese() {
 isComponentPresentWhenDrag(on: On, from: Point, to: Point, speed?: number, duration?: number): Promise<boolean>
 ```
 
-Drags from the start point to the end point and checks whether the target component exists. This API uses a
-promise to return the result.
+Drags from the start point to the end point and checks whether the target component exists. This API uses a promise to return the result.
 
 **Since:** 22
 
@@ -1517,8 +1502,7 @@ async function demo() {
 isComponentPresentWhenLongClick(on: On, point: Point, duration?: number): Promise<boolean>
 ```
 
-Long-clicks at the specified coordinates and checks whether the target component exists. This API uses a promise
-to return the result.
+Long-clicks at the specified coordinates and checks whether the target component exists. This API uses a promise to return the result.
 
 **Since:** 22
 
@@ -1566,8 +1550,7 @@ async function demo() {
 isComponentPresentWhenSwipe(on: On, from: Point, to: Point, speed?: number): Promise<boolean>
 ```
 
-Swipes from the start point to the end point and checks whether the target component exists. This API uses a
-promise to return the result.
+Swipes from the start point to the end point and checks whether the target component exists. This API uses a promise to return the result.
 
 **Since:** 22
 
@@ -1616,11 +1599,7 @@ async function demo() {
 knuckleKnock(pointers: Array<Point>, times: number): Promise<void>
 ```
 
-Simulates a knuckle knock on the display. This API uses a promise to return the result.
-
-> **NOTE**
->
-> If the knuckle gesture is disabled on the device<!--RP4--><!--RP4End-->, 17000005 is returned.
+Simulates a knuckle knock on the display. This API uses a promise to return the result. > **NOTE** > > If the knuckle gesture is disabled on the device<!--RP4--><!--RP4End-->, 17000005 is returned.
 
 **Since:** 22
 
@@ -1798,9 +1777,7 @@ LongClick on the specified location on the screen, with optional touch settings.
 mouseClick(p: Point, btnId: MouseButton, key1?: number, key2?: number): Promise<void>
 ```
 
-Injects a mouse click action at the specified coordinates, with the optional key or key combination. This API uses
-a promise to return the result. For example, if the value of **key1** is **2072**, the **Ctrl** button is pressed
-with the mouse click.
+Injects a mouse click action at the specified coordinates, with the optional key or key combination. This API uses a promise to return the result. For example, if the value of **key1** is **2072**, the **Ctrl** button is pressed with the mouse click.
 
 **Since:** 10
 
@@ -1849,9 +1826,7 @@ async function demo() {
 mouseDoubleClick(p: Point, btnId: MouseButton, key1?: number, key2?: number): Promise<void>
 ```
 
-Injects a double-click action at the specified coordinates, with the optional key or key combination. This API
-uses a promise to return the result. For example, if the value of **key** is **2072**, the **Ctrl** button is
-pressed with the double-click.
+Injects a double-click action at the specified coordinates, with the optional key or key combination. This API uses a promise to return the result. For example, if the value of **key** is **2072**, the **Ctrl** button is pressed with the double-click.
 
 **Since:** 11
 
@@ -1948,8 +1923,7 @@ async function demo() {
 mouseDrag(from: Point, to: Point, speed?: number, duration?: number): Promise<void>
 ```
 
-Drags the mouse from the start point to the end point. You can specify the dragging speed and the duration before
-dragging. This API uses a promise to return the result.
+Drags the mouse from the start point to the end point. You can specify the dragging speed and the duration before dragging. This API uses a promise to return the result.
 
 **Since:** 20
 
@@ -1998,8 +1972,7 @@ async function demo() {
 mouseDragWithOptions(from: Point, to: Point, touchOptions?: TouchOptions, keyOptions?: KeyOptions): Promise<void>
 ```
 
-Hold down the left mouse button and drag on the screen between the specified points,
-with optional touch and key settings.
+Hold down the left mouse button and drag on the screen between the specified points, with optional touch and key settings.
 
 **Since:** 26.0.0
 
@@ -2035,9 +2008,7 @@ with optional touch and key settings.
 mouseLongClick(p: Point, btnId: MouseButton, key1?: number, key2?: number): Promise<void>
 ```
 
-Injects a mouse long-click action at the specified coordinates, with the optional key or key combination. This API
-uses a promise to return the result. For example, if the value of **Key** is **2072**, the **Ctrl** button is
-long-clicked with the mouse device.
+Injects a mouse long-click action at the specified coordinates, with the optional key or key combination. This API uses a promise to return the result. For example, if the value of **Key** is **2072**, the **Ctrl** button is long-clicked with the mouse device.
 
 **Since:** 11
 
@@ -2086,9 +2057,7 @@ async function demo() {
 mouseLongClick(p: Point, btnId: MouseButton, key1?: number, key2?: number, duration?: number): Promise<void>
 ```
 
-Injects a mouse long-click action at the specified coordinates, with the optional key or key combination and the
-specified duration. This API uses a promise to return the result. For example, if the value of **Key** is **2072**
-, the **Ctrl** button is long-clicked with the mouse device.
+Injects a mouse long-click action at the specified coordinates, with the optional key or key combination and the specified duration. This API uses a promise to return the result. For example, if the value of **Key** is **2072** , the **Ctrl** button is long-clicked with the mouse device.
 
 **Since:** 20
 
@@ -2232,9 +2201,7 @@ async function demo() {
 mouseScroll(p: Point, down: boolean, d: number, key1?: number, key2?: number): Promise<void>
 ```
 
-Injects a mouse scroll action at the specified coordinates, with the optional key or key combination. This API
-uses a promise to return the result. For example, if the value of **key1** is **2072**, the **Ctrl** button is
-pressed with mouse scrolling.
+Injects a mouse scroll action at the specified coordinates, with the optional key or key combination. This API uses a promise to return the result. For example, if the value of **key1** is **2072**, the **Ctrl** button is pressed with mouse scrolling.
 
 **Since:** 10
 
@@ -2284,8 +2251,7 @@ async function demo() {
 mouseScroll(p: Point, down: boolean, d: number, key1?: number, key2?: number, speed?: number): Promise<void>
 ```
 
-Injects a mouse scroll action at the specified coordinates, with the optional key or key combination and the
-specified scroll speed. This API uses a promise to return the result.
+Injects a mouse scroll action at the specified coordinates, with the optional key or key combination and the specified scroll speed. This API uses a promise to return the result.
 
 **Since:** 11
 
@@ -2648,8 +2614,7 @@ async function demo() {
 pressHome(displayId: number): Promise<void>
 ```
 
-Injects an operation of returning to the home screen on the specified display. This API uses a promise to return
-the result.
+Injects an operation of returning to the home screen on the specified display. This API uses a promise to return the result.
 
 **Since:** 20
 
@@ -2695,8 +2660,7 @@ async function demo() {
 screenCap(savePath: string): Promise<boolean>
 ```
 
-Captures the current screen and saves it as a PNG image to the given save path. This API uses a promise to return
-the result. This API can be used in scenarios where screenshots are supported.
+Captures the current screen and saves it as a PNG image to the given save path. This API uses a promise to return the result. This API can be used in scenarios where screenshots are supported.
 
 **Since:** 9
 
@@ -2742,8 +2706,7 @@ async function demo() {
 screenCap(savePath: string, displayId: number): Promise<boolean>
 ```
 
-Captures the specified screen and saves it as a PNG image to the given save path. This API uses a promise to
-return the result. This API can be used in scenarios where screenshots are supported.
+Captures the specified screen and saves it as a PNG image to the given save path. This API uses a promise to return the result. This API can be used in scenarios where screenshots are supported.
 
 **Since:** 20
 
@@ -2790,9 +2753,7 @@ async function demo() {
 screenCapture(savePath: string, rect?: Rect): Promise<boolean>
 ```
 
-Captures the specified area of the current screen and saves the captured screenshot as a PNG image to the
-specified path. This API uses a promise to return the result. This API can be used in scenarios where screenshots
-are supported.
+Captures the specified area of the current screen and saves the captured screenshot as a PNG image to the specified path. This API uses a promise to return the result. This API can be used in scenarios where screenshots are supported.
 
 **Since:** 10
 
@@ -2844,8 +2805,7 @@ async function demo() {
 setDisplayRotation(rotation: DisplayRotation): Promise<void>
 ```
 
-Sets the display rotation of the current scene. This API uses a promise to return the result. It applies to
-rotatable scenarios.
+Sets the display rotation of the current scene. This API uses a promise to return the result. It applies to rotatable scenarios.
 
 **Since:** 9
 
@@ -2937,8 +2897,7 @@ async function demo() {
 swipe(startx: number, starty: number, endx: number, endy: number, speed?: number): Promise<void>
 ```
 
-Swipes from the start coordinate point to the target coordinate point. This API uses a promise to return the
-result.
+Swipes from the start coordinate point to the target coordinate point. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -2988,8 +2947,7 @@ async function demo() {
 swipeBetween(from: Point, to: Point, speed?: number): Promise<void>
 ```
 
-Swipes from the start coordinate point to the target coordinate point. This API uses a promise to return the
-result.
+Swipes from the start coordinate point to the target coordinate point. This API uses a promise to return the result.
 
 **Since:** 20
 
@@ -3171,9 +3129,7 @@ async function demo() {
 triggerCombineKeys(key0: number, key1: number, key2?: number): Promise<void>
 ```
 
-Triggers a combination key event based on the specified key values. This API uses a promise to return the result.
-For example, if the value of **Key** is (2072, 2019), the combination key **Ctrl+C** that matches the value is
-found and clicked.
+Triggers a combination key event based on the specified key values. This API uses a promise to return the result. For example, if the value of **Key** is (2072, 2019), the combination key **Ctrl+C** that matches the value is found and clicked.
 
 **Since:** 9
 
@@ -3221,9 +3177,7 @@ async function demo() {
 triggerCombineKeys(key0: number, key1: number, key2?: number, displayId?: number): Promise<void>
 ```
 
-Triggers a combination key event based on the specified key values on the specified screen. This API uses a
-promise to return the result. For example, if the value of **Key** is (2072, 2019), the combination key **Ctrl+C**
-that matches the value is found and clicked.
+Triggers a combination key event based on the specified key values on the specified screen. This API uses a promise to return the result. For example, if the value of **Key** is (2072, 2019), the combination key **Ctrl+C** that matches the value is found and clicked.
 
 **Since:** 20
 
@@ -3319,8 +3273,7 @@ async function demo() {
 triggerKey(keyCode: number, displayId: number): Promise<void>
 ```
 
-Triggers a key event by passing the key value on the specified screen. This API uses a promise to return the
-result.
+Triggers a key event by passing the key value on the specified screen. This API uses a promise to return the result.
 
 **Since:** 20
 
@@ -3368,14 +3321,7 @@ async function demo() {
 triggerPenKey(key: PenKey, mode: PenMode, operation: PenKeyOperation, options?: PenKeyOperationOptions): Promise<void>
 ```
 
-Trigger pen key operation.
-
-Supported combinations:
-
-- HANDWRITING mode: HANDWRITING key with CLICK or DOUBLE_CLICK operation.
-- AIR_MOUSE mode: AIR_MOUSE key with CLICK or DOUBLE_CLICK operation (requires point in options),
-HANDWRITING key with CLICK or DOUBLE_CLICK operation, SMART key with CLICK operation.
-Other combinations will result in a BusinessError 17000007.
+Trigger pen key operation. Supported combinations: - HANDWRITING mode: HANDWRITING key with CLICK or DOUBLE_CLICK operation. - AIR_MOUSE mode: AIR_MOUSE key with CLICK or DOUBLE_CLICK operation (requires point in options), HANDWRITING key with CLICK or DOUBLE_CLICK operation, SMART key with CLICK operation. Other combinations will result in a BusinessError 17000007.
 
 **Since:** 26.0.0
 
@@ -3430,8 +3376,7 @@ async function demo() {
 waitForComponent(on: On, time: number): Promise<Component>
 ```
 
-Searches for the target component based on the attributes within a specified time. This API uses a promise to
-return the result.
+Searches for the target component based on the attributes within a specified time. This API uses a promise to return the result.
 
 **Since:** 9
 

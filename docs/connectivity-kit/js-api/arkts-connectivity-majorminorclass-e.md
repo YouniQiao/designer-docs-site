@@ -16,8 +16,7 @@ The enum of major minor class of a bluetooth device.
 COMPUTER_UNCATEGORIZED = 0x0100
 ```
 
-The Minor Device Class field
-Computer Major Class
+The Minor Device Class field Computer Major Class
 
 **Since:** 9
 

@@ -12,8 +12,7 @@ import { config } from '@kit.AccessibilityKit';
 function off(type: 'enabledAccessibilityExtensionListChange', callback?: Callback<void>): void
 ```
 
-Cancels a listener for changes in the list of enabled accessibility extension abilities. This API uses an
-asynchronous callback to return the result.
+Cancels a listener for changes in the list of enabled accessibility extension abilities. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -45,8 +44,7 @@ asynchronous callback to return the result.
 function off(type: 'installedAccessibilityListChange', callback?: Callback<void>): void
 ```
 
-Cancels a listener for changes in the list of installed accessibility extension abilities. This API uses an
-asynchronous callback to return the result.
+Cancels a listener for changes in the list of installed accessibility extension abilities. This API uses an asynchronous callback to return the result.
 
 **Since:** 12
 

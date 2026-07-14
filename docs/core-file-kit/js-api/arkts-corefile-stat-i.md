@@ -1,7 +1,6 @@
 # Stat
 
-Represents detailed file information. Before calling any API of the **Stat()** class, use
-[stat()](../../../../reference/apis-core-file-kit/js-apis-file-fs.md#fileiostat) to create a **Stat** instance.
+Represents detailed file information. Before calling any API of the **Stat()** class, use [stat()](../../../../reference/apis-core-file-kit/js-apis-file-fs.md#fileiostat) to create a **Stat** instance.
 
 **Since:** 9
 
@@ -19,8 +18,7 @@ import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventList
 isBlockDevice(): boolean
 ```
 
-Checks whether this file is a block special file. A block special file supports access by block only, and it is
-cached when accessed.
+Checks whether this file is a block special file. A block special file supports access by block only, and it is cached when accessed.
 
 **Since:** 9
 
@@ -53,8 +51,7 @@ let isBLockDevice = fileIo.statSync(filePath).isBlockDevice();
 isCharacterDevice(): boolean
 ```
 
-Checks whether this file is a character special file. A character special device supports random access, and it is
-not cached when accessed.
+Checks whether this file is a character special file. A character special device supports random access, and it is not cached when accessed.
 
 **Since:** 9
 
@@ -256,10 +253,7 @@ let isSymbolicLink = fileIo.statSync(filePath).isSymbolicLink();
 readonly atime: number
 ```
 
-Time when the file was last accessed. The value is the number of seconds elapsed since 00:00:00 on January 1, 1970.
-
-**Note**: Currently, user data partitions are mounted in **noatime** mode by default, and **atime** update is
-disabled.
+Time when the file was last accessed. The value is the number of seconds elapsed since 00:00:00 on January 1, 1970. **Note**: Currently, user data partitions are mounted in **noatime** mode by default, and **atime** update is disabled.
 
 **Type:** number
 
@@ -275,11 +269,7 @@ disabled.
 readonly atimeNs?:bigint
 ```
 
-Time of the last access to the file. The value is the number of nanoseconds elapsed since 00:00:00 on January 1, 19
-70.
-
-**Note**: Currently, user data partitions are mounted in **noatime** mode by default, and **atime** update is
-disabled.
+Time of the last access to the file. The value is the number of nanoseconds elapsed since 00:00:00 on January 1, 19 70. **Note**: Currently, user data partitions are mounted in **noatime** mode by default, and **atime** update is disabled.
 
 **Type:** bigint
 
@@ -293,8 +283,7 @@ disabled.
 readonly ctime: number
 ```
 
-Time when the file metadata was last modified. The value is the number of seconds elapsed since 00:00:00 on January
-1, 1970.
+Time when the file metadata was last modified. The value is the number of seconds elapsed since 00:00:00 on January 1, 1970.
 
 **Type:** number
 
@@ -308,8 +297,7 @@ Time when the file metadata was last modified. The value is the number of second
 readonly ctimeNs?:bigint
 ```
 
-Time of the last status change of the file. The value is the number of nanoseconds elapsed since 00:00:00 on
-January 1, 1970.
+Time of the last status change of the file. The value is the number of nanoseconds elapsed since 00:00:00 on January 1, 1970.
 
 **Type:** bigint
 
@@ -365,22 +353,7 @@ File location, which indicates whether the file is stored in a local device or i
 readonly mode: number
 ```
 
-File permissions. The meaning of each bit is as follows:
-
-Note: The following values are in octal format. The return values are in decimal format. You need to convert the
-values.
-
-- **0o400**: The user has the read permission on a regular file or a directory entry.
-- **0o200**: The user has the permission to write a regular file or create and delete a directory entry.
-- **0o100**: The user has the permission to execute a regular file or search for the specified path in a directory.
-- **0o040**: The user group has the read permission on a regular file or a directory entry.
-- **0o020**: The user group has the permission to write a regular file or create and delete a directory entry.
-- **0o010**: The user group has the permission to execute a regular file or search for the specified path in a
-directory.
-- **0o004**: Other users have the permission to read a regular file or read a directory entry.
-- **0o002**: Other users have the permission to write a regular file or create and delete a directory entry.
-- **0o001**: Other users have the permission to execute a regular file or search for the specified path in a
-directory.
+File permissions. The meaning of each bit is as follows: Note: The following values are in octal format. The return values are in decimal format. You need to convert the values. - **0o400**: The user has the read permission on a regular file or a directory entry. - **0o200**: The user has the permission to write a regular file or create and delete a directory entry. - **0o100**: The user has the permission to execute a regular file or search for the specified path in a directory. - **0o040**: The user group has the read permission on a regular file or a directory entry. - **0o020**: The user group has the permission to write a regular file or create and delete a directory entry. - **0o010**: The user group has the permission to execute a regular file or search for the specified path in a directory. - **0o004**: Other users have the permission to read a regular file or read a directory entry. - **0o002**: Other users have the permission to write a regular file or create and delete a directory entry. - **0o001**: Other users have the permission to execute a regular file or search for the specified path in a directory.
 
 **Type:** number
 
@@ -396,8 +369,7 @@ directory.
 readonly mtime: number
 ```
 
-Time when the file content was last modified. The value is the number of seconds elapsed since 00:00:00 on January
-1, 1970.
+Time when the file content was last modified. The value is the number of seconds elapsed since 00:00:00 on January 1, 1970.
 
 **Type:** number
 
@@ -413,8 +385,7 @@ Time when the file content was last modified. The value is the number of seconds
 readonly mtimeNs?:bigint
 ```
 
-Time of the last modification to the file. The value is the number of nanoseconds elapsed since 00:00:00 on January
-1, 1970.
+Time of the last modification to the file. The value is the number of nanoseconds elapsed since 00:00:00 on January 1, 1970.
 
 **Type:** bigint
 

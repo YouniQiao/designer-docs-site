@@ -1,8 +1,6 @@
 # ArcAlphabetIndexerAttribute
 
-In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following attributes are supported.
-
-In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following events are supported.
+In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following attributes are supported. In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following events are supported.
 
 **Inheritance/Implementation:** ArcAlphabetIndexerAttribute extends [CommonMethod<ArcAlphabetIndexerAttribute>](CommonMethod<ArcAlphabetIndexerAttribute>)
 
@@ -178,13 +176,7 @@ Sets the background color of the pop-up window.
 popupBackgroundBlurStyle(style: Optional<BlurStyle>): ArcAlphabetIndexerAttribute
 ```
 
-Sets the background blur style of the pop-up window. If this API is not used, the blur is disabled by default. The
-corresponding value is **NONE** in **BlurStyle**.
-
-> **NOTE**
-
-> After configuring the pop-up window background blur style with **popupBackgroundBlurStyle**, avoid applying
-> background colors via [popupBackground](arkts-arkui-arcalphabetindexerattribute-c.md#popupbackground-1).
+Sets the background blur style of the pop-up window. If this API is not used, the blur is disabled by default. The corresponding value is **NONE** in **BlurStyle**. > **NOTE** > After configuring the pop-up window background blur style with **popupBackgroundBlurStyle**, avoid applying > background colors via [popupBackground](arkts-arkui-arcalphabetindexerattribute-c.md#popupbackground-1).
 
 **Since:** 18
 

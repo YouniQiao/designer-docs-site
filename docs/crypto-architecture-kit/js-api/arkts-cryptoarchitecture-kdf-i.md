@@ -1,7 +1,6 @@
 # Kdf
 
-Defines the key derivation function class. Before using APIs of this class, you need to create an instance of this
-class by using **createKdf(algName: string): Kdf**.
+Defines the key derivation function class. Before using APIs of this class, you need to create an instance of this class by using **createKdf(algName: string): Kdf**.
 
 **Since:** 11
 
@@ -21,8 +20,7 @@ import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 generateSecret(params: KdfSpec, callback: AsyncCallback<DataBlob>): void
 ```
 
-Generates a key based on the specified key derivation parameters. This API uses an asynchronous callback to
-return the result.
+Generates a key based on the specified key derivation parameters. This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -187,12 +185,7 @@ kdfPromise.then(secret => {
 generateSecretSync(params: KdfSpec): DataBlob
 ```
 
-Generates a key based on the specified key derivation parameters. This API returns the result synchronously.
-
-<br><br>**NOTE**
-<br>It is recommended to prioritize the use of asynchronous API, {@link generateSecret}. Synchronous API may
-take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore,
-it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
+Generates a key based on the specified key derivation parameters. This API returns the result synchronously. <br><br>**NOTE** <br>It is recommended to prioritize the use of asynchronous API, {@link generateSecret}. Synchronous API may take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore, it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
 
 **Since:** 12
 

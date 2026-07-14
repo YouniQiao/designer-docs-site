@@ -1,11 +1,6 @@
 # AuthenticatorCallback
 
-Provides OAuth authenticator callbacks.
-
-> **NOTE**
->
-> This API is supported since API version 8 and deprecated since API version 9. You are advised to use
-> [AuthCallback](arkts-basicservices-authcallback-i.md) instead.
+Provides OAuth authenticator callbacks. > **NOTE** > > This API is supported since API version 8 and deprecated since API version 9. You are advised to use > [AuthCallback](arkts-basicservices-authcallback-i.md) instead.
 
 **Since:** 8
 
@@ -27,11 +22,7 @@ import { appAccount } from '@kit.BasicServicesKit';
 onRequestRedirected: (request: Want) => void
 ```
 
-Called to redirect a request.
-
-> **NOTE**
->
-> This API is supported since API version 8 and deprecated since API version 9. Use [onRequestRedirected](#onrequestredirected9) instead.
+Called to redirect a request. > **NOTE** > > This API is supported since API version 8 and deprecated since API version 9. Use [onRequestRedirected](#onrequestredirected9) instead.
 
 **Type:** (request: Want) => void
 
@@ -49,11 +40,7 @@ Called to redirect a request.
 onResult: (code: number, result: { [key: string]: any }) => void
 ```
 
-Called to return the result of an authentication request.
-
-> **NOTE**
->
-> This API is supported since API version 8 and deprecated since API version 9. Use [onResult](#onresult9) instead.
+Called to return the result of an authentication request. > **NOTE** > > This API is supported since API version 8 and deprecated since API version 9. Use [onResult](#onresult9) instead.
 
 **Type:** (code: number, result: { [key: string]: any }) => void
 

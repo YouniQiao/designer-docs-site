@@ -1,8 +1,6 @@
 # ClientCert
 
-The clientCert field of the client certificate, which includes three attributes:
-client certificate (certPath) and only support PEM format, certificate private key (keyPath),
-and passphrase (keyPassword).
+The clientCert field of the client certificate, which includes three attributes: client certificate (certPath) and only support PEM format, certificate private key (keyPath), and passphrase (keyPassword).
 
 **Since:** 12
 

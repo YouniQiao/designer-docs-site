@@ -92,8 +92,7 @@ Destination URL.
 windowFeatures: WindowFeatures
 ```
 
-Contains the attributes that a webpage requests from its containing web view, the parameters
-of window.open.
+Contains the attributes that a webpage requests from its containing web view, the parameters of window.open.
 
 **类型：** WindowFeatures
 

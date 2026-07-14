@@ -26,8 +26,7 @@ when the MixMode set AVERAGE,the mixing method for background colors is that the
 CROSS = 2
 ```
 
-when the MixMode set CROSS,the color mixing method for the background is a transition where one color crosses
-through to another.
+when the MixMode set CROSS,the color mixing method for the background is a transition where one color crosses through to another.
 
 **Since:** 18
 

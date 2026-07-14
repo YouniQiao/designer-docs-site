@@ -28,8 +28,7 @@ The marquee starts scrolling.
 BOUNCE = 1
 ```
 
-The marquee completes one scroll movement. If the number of **loops** is not 1, this value will be returned
-multiple times.
+The marquee completes one scroll movement. If the number of **loops** is not 1, this value will be returned multiple times.
 
 **Since:** 18
 

@@ -1,9 +1,6 @@
 # UiDriver
 
-The **UiDriver** class is the main entry to the UiTest framework. It provides APIs for features such as component
-matching/search, key injection, coordinate clicking/sliding, and screenshot.
-All APIs provided by this class, except **UiDriver.create()**, use a promise to return the result and must be invoked
-using **await**.
+The **UiDriver** class is the main entry to the UiTest framework. It provides APIs for features such as component matching/search, key injection, coordinate clicking/sliding, and screenshot. All APIs provided by this class, except **UiDriver.create()**, use a promise to return the result and must be invoked using **await**.
 
 **Since:** 8
 
@@ -25,9 +22,7 @@ import { ResizeDirection, WindowMode, PenMode, PenKeyOperation, Driver, MatchPat
 assertComponentExist(by: By): Promise<void>
 ```
 
-Asserts that a component that matches the given attributes exists on the current page. If the component does not
-exist, the API throws a JS exception, causing the current test case to fail. This API uses a promise to return the
-result.
+Asserts that a component that matches the given attributes exists on the current page. If the component does not exist, the API throws a JS exception, causing the current test case to fail. This API uses a promise to return the result.
 
 **Since:** 8
 
@@ -76,8 +71,7 @@ async function demo() {
 click(x: number, y: number): Promise<void>
 ```
 
-Clicks a specific point of this **UiDriver** object based on the given coordinates. This API uses a promise to
-return the result.
+Clicks a specific point of this **UiDriver** object based on the given coordinates. This API uses a promise to return the result.
 
 **Since:** 8
 
@@ -119,12 +113,7 @@ async function demo() {
 static create(): UiDriver
 ```
 
-Creates a **UiDriver** object and returns the object created. This API is a static API.
-
-> **NOTE**
->
-> This method is supported since API version 8 and deprecated since API version 9. You are advised to use
-> [create<sup>9+</sup>](arkts-test-driver-c.md#create-1) instead.
+Creates a **UiDriver** object and returns the object created. This API is a static API. > **NOTE** > > This method is supported since API version 8 and deprecated since API version 9. You are advised to use > [create<sup>9+</sup>](arkts-test-driver-c.md#create-1) instead.
 
 **Since:** 8
 
@@ -199,8 +188,7 @@ async function demo() {
 doubleClick(x: number, y: number): Promise<void>
 ```
 
-Double-clicks a specific point of this **UiDriver** object based on the given coordinates. This API uses a promise
-to return the result.
+Double-clicks a specific point of this **UiDriver** object based on the given coordinates. This API uses a promise to return the result.
 
 **Since:** 8
 
@@ -242,8 +230,7 @@ async function demo() {
 findComponent(by: By): Promise<UiComponent>
 ```
 
-Searches this **UiDriver** object for the target component that matches the given attributes. This API uses a
-promise to return the result.
+Searches this **UiDriver** object for the target component that matches the given attributes. This API uses a promise to return the result.
 
 **Since:** 8
 
@@ -284,8 +271,7 @@ async function demo() {
 findComponents(by: By): Promise<Array<UiComponent>>
 ```
 
-Searches this **UiDriver** object for all components that match the given attributes. This API uses a promise to
-return the result.
+Searches this **UiDriver** object for all components that match the given attributes. This API uses a promise to return the result.
 
 **Since:** 8
 
@@ -326,8 +312,7 @@ async function demo() {
 longClick(x: number, y: number): Promise<void>
 ```
 
-Long-clicks a specific point of this **UiDriver** object based on the given coordinates. This API uses a promise to
-return the result.
+Long-clicks a specific point of this **UiDriver** object based on the given coordinates. This API uses a promise to return the result.
 
 **Since:** 8
 
@@ -404,8 +389,7 @@ async function demo() {
 screenCap(savePath: string): Promise<boolean>
 ```
 
-Captures the current screen of this **UiDriver** object and saves it as a PNG image to the given save path. This
-API uses a promise to return the result.
+Captures the current screen of this **UiDriver** object and saves it as a PNG image to the given save path. This API uses a promise to return the result.
 
 **Since:** 8
 
@@ -446,8 +430,7 @@ async function demo() {
 swipe(startx: number, starty: number, endx: number, endy: number): Promise<void>
 ```
 
-Swipes on this **UiDriver** object from the start point to the end point based on the given coordinates. This API
-uses a promise to return the result.
+Swipes on this **UiDriver** object from the start point to the end point based on the given coordinates. This API uses a promise to return the result.
 
 **Since:** 8
 
@@ -491,8 +474,7 @@ async function demo() {
 triggerKey(keyCode: number): Promise<void>
 ```
 
-Triggers the key of this **UiDriver** object that matches the given key code. This API uses a promise to return the
-result.
+Triggers the key of this **UiDriver** object that matches the given key code. This API uses a promise to return the result.
 
 **Since:** 8
 

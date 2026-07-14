@@ -32,8 +32,7 @@ deviceId: string
 deviceIdType: number
 ```
 
-设备ID类型。用于指定设备业务标识的类型，可在[DeviceIdType](arkts-userauthentication-deviceidtype-e-sys.md)基础上自定义扩展，如使用UNIFIED_DEVICE_ID(1)
-表示统一设备ID，或使用厂商自定义值（≥10000）。
+设备ID类型。用于指定设备业务标识的类型，可在[DeviceIdType](arkts-userauthentication-deviceidtype-e-sys.md)基础上自定义扩展，如使用UNIFIED_DEVICE_ID(1) 表示统一设备ID，或使用厂商自定义值（≥10000）。
 
 **类型：** number
 

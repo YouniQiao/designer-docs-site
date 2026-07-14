@@ -12,9 +12,7 @@ import { userAccessCtrl } from '@kit.UserAuthenticationKit';
 function verifyAuthToken(authToken: Uint8Array, allowableDuration: number): Promise<AuthToken>
 ```
 
-Verifies an authentication token. This API is used to verify the validity of an **AuthToken**, including the
-integrity and validity check. After the verification is successful, the detailed information about the parsed
-**AuthToken** is returned. This API uses a promise to return the result.
+Verifies an authentication token. This API is used to verify the validity of an **AuthToken**, including the integrity and validity check. After the verification is successful, the detailed information about the parsed **AuthToken** is returned. This API uses a promise to return the result.
 
 **Since:** 18
 

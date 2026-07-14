@@ -12,8 +12,7 @@ import { hidebug } from '@kit.PerformanceAnalysisKit';
 function getNativeHeapSize() : bigint
 ```
 
-Obtains the total number of bytes occupied by the total space (**uordblks** + **fordblks**, which are obtained from
-**mallinfo**) held by a process, which is measured by the memory allocator.
+Obtains the total number of bytes occupied by the total space (**uordblks** + **fordblks**, which are obtained from **mallinfo**) held by a process, which is measured by the memory allocator.
 
 **Since:** 8
 

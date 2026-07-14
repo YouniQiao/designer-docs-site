@@ -6,12 +6,7 @@
 function claimInterface(pipe: USBDevicePipe, iface: USBInterface, force?: boolean): number
 ```
 
-声明对USB设备某个接口的控制权。
-
-> **说明：**
->
-> 在USB编程中，claim interface是一个常见操作，指的是应用程序请求操作系统将某个USB接口从内核驱动中释放并交由用户空间程序控制。<br>
-> > 下面用到的claim通信接口都表示claim interface操作。
+声明对USB设备某个接口的控制权。 > **说明：** > > 在USB编程中，claim interface是一个常见操作，指的是应用程序请求操作系统将某个USB接口从内核驱动中释放并交由用户空间程序控制。<br> > > 下面用到的claim通信接口都表示claim interface操作。
 
 **起始版本：** 9
 
@@ -41,7 +36,7 @@ function claimInterface(pipe: USBDevicePipe, iface: USBInterface, force?: boolea
 **示例：**
 
 ```TypeScript
-function claimInterface() {
+async function claimInterface() {
   let devicesList: Array<usbManager.USBDevice> = usbManager.getDevices();
   if (!devicesList || devicesList.length == 0) {
     console.info(`device list is empty`);
@@ -49,10 +44,10 @@ function claimInterface() {
   }
 
   let device: usbManager.USBDevice = devicesList?.[0];
-  usbManager.requestRight(device.name);
+  await usbManager.requestRight(device.name);
   let devicepipe: usbManager.USBDevicePipe = usbManager.connectDevice(device);
   let interfaces: usbManager.USBInterface = device.configs?.[0]?.interfaces?.[0];
-  let ret: number= usbManager.claimInterface(devicepipe, interfaces);
+  let ret: number = usbManager.claimInterface(devicepipe, interfaces);
   console.info(`claimInterface = ${ret}`);
   ret = usbManager.releaseInterface(devicepipe, interfaces);
   console.info(`releaseInterface = ${ret}`);

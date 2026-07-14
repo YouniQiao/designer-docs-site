@@ -36,8 +36,7 @@ Event type of this event.
 mechId: number
 ```
 
-ID of the mechanical device.
-The value should be an integer.
+ID of the mechanical device. The value should be an integer.
 
 **Type:** number
 

@@ -1,12 +1,6 @@
 # DragController
 
-Provides APIs for initiating drag actions. When receiving a gesture event, such as a touch or long-press event, an
-application can initiate a drag action and carry drag information therein.
-
-> **NOTE**
->
-> In the following API examples, you must first use [getDragController()](arkts-arkui-uicontext-c.md#getdragcontroller-1) in
-> **UIContext** to obtain a **DragController** instance, and then call the APIs using the obtained instance.
+Provides APIs for initiating drag actions. When receiving a gesture event, such as a touch or long-press event, an application can initiate a drag action and carry drag information therein. > **NOTE** > > In the following API examples, you must first use [getDragController()](arkts-arkui-uicontext-c.md#getdragcontroller-1) in > **UIContext** to obtain a **DragController** instance, and then call the APIs using the obtained instance.
 
 **Since:** 11
 

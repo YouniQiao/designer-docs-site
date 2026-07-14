@@ -12,8 +12,7 @@
 static readonly ORIGIN: ColorContent
 ```
 
-重置[fillColor](ImageAttribute#fillColor(value: ResourceColor))接口，效果上与不设置
-[fillColor](ImageAttribute#fillColor(value: ResourceColor))一致。
+重置[fillColor](ImageAttribute#fillColor(value: ResourceColor))接口，效果上与不设置 [fillColor](ImageAttribute#fillColor(value: ResourceColor))一致。
 
 **类型：** ColorContent
 

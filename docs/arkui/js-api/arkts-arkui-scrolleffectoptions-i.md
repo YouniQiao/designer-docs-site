@@ -12,8 +12,7 @@ Defines the scroll effect options for the title bar.
 blurEffectiveEndOffset?: LengthMetrics
 ```
 
-The maximum sliding distance of the content area to enable the final blur style of the title bar.
-Default value: 8vp.
+The maximum sliding distance of the content area to enable the final blur style of the title bar. Default value: 8vp.
 
 **Type:** LengthMetrics
 
@@ -31,8 +30,7 @@ Default value: 8vp.
 blurEffectiveStartOffset?: LengthMetrics
 ```
 
-The minimum sliding distance of the content area to enable the title bar sliding blur effect.
-Default value: 0vp.
+The minimum sliding distance of the content area to enable the title bar sliding blur effect. Default value: 0vp.
 
 **Type:** LengthMetrics
 
@@ -50,8 +48,7 @@ Default value: 0vp.
 scrollEffectType?: ScrollEffectType
 ```
 
-Title bar scroll blur style.
-Default value: ScrollEffectType.COMMON_BLUR.
+Title bar scroll blur style. Default value: ScrollEffectType.COMMON_BLUR.
 
 **Type:** ScrollEffectType
 

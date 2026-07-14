@@ -12,8 +12,7 @@ import { bundleManager } from '@kit.MDMKit';
 function removeDisallowedUninstallBundlesSync(admin: Want, appIds: Array<string>, accountId?: number): void
 ```
 
-Removes the applications that cannot be uninstalled by the current or specified user through the specified device
-administrator application.
+Removes the applications that cannot be uninstalled by the current or specified user through the specified device administrator application.
 
 **Since:** 12
 

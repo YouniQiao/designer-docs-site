@@ -20,8 +20,7 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 progress: number
 ```
 
-The percentage of deep optimize space state.
-Unit: Percentage, The value range is all integers, Value range: [0, 100].
+The percentage of deep optimize space state. Unit: Percentage, The value range is all integers, Value range: [0, 100].
 
 **Type:** number
 

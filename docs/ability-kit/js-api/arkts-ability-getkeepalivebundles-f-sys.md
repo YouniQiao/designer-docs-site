@@ -12,12 +12,7 @@ import { appManager } from '@kit.AbilityKit';
 function getKeepAliveBundles(type: KeepAliveAppType, userId?: number): Promise<Array<KeepAliveBundleInfo>>
 ```
 
-Obtains information about a specified type of keep-alive application of a user. The application information is
-defined by [KeepAliveBundleInfo](arkts-ability-keepalivebundleinfo-i-sys.md). This API uses a promise to return the
-result.
-This API can be properly called on PCs/2-in-1 devices. If it is called on other devices, error code 801 is
-returned.
-**Required permissions**: ohos.permission.MANAGE_APP_KEEP_ALIVE
+Obtains information about a specified type of keep-alive application of a user. The application information is defined by [KeepAliveBundleInfo](arkts-ability-keepalivebundleinfo-i-sys.md). This API uses a promise to return the result. This API can be properly called on PCs/2-in-1 devices. If it is called on other devices, error code 801 is returned. **Required permissions**: ohos.permission.MANAGE_APP_KEEP_ALIVE
 
 **Since:** 14
 

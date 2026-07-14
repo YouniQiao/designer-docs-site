@@ -12,8 +12,7 @@ import { jsLeakWatcher } from '@kit.PerformanceAnalysisKit';
 function check(): string
 ```
 
-Obtains the list of objects that are leaked and registered using **jsLeakWatcher.watch()**. Objects that are not
-reclaimed after GC is triggered are marked as leaked.
+Obtains the list of objects that are leaked and registered using **jsLeakWatcher.watch()**. Objects that are not reclaimed after GC is triggered are marked as leaked.
 
 **Since:** 12
 

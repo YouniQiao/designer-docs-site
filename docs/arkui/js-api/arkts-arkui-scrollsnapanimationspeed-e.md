@@ -12,8 +12,7 @@ Enumerates the speeds of the snap animation for list scrolling.
 NORMAL = 0
 ```
 
-Default snap animation speed for the list, typically used when list items are large and scrolling moves one item
-per swipe.
+Default snap animation speed for the list, typically used when list items are large and scrolling moves one item per swipe.
 
 **Since:** 22
 

@@ -12,10 +12,7 @@ import { systemManager } from '@kit.MDMKit';
 function addDisallowedNearLinkProtocols(admin: Want, protocols: Array<NearLinkProtocol>, accountId: number): void
 ```
 
-Adds a list of NearLink protocols that are not allowed to be used for a specified user. NearLink Kit provides a low
--power, high-speed short-range communication service that supports connection and data interaction between NearLink
-devices. <!--RP3--><!--RP3End-->This API does not take effect for system services and system applications such as
-the keyboard and stylus.
+Adds a list of NearLink protocols that are not allowed to be used for a specified user. NearLink Kit provides a low -power, high-speed short-range communication service that supports connection and data interaction between NearLink devices. <!--RP3--><!--RP3End-->This API does not take effect for system services and system applications such as the keyboard and stylus.
 
 **Since:** 20
 

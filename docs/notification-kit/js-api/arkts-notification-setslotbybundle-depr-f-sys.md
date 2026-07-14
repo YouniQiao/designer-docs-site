@@ -6,8 +6,7 @@
 function setSlotByBundle(bundle: BundleOption, slot: NotificationSlot, callback: AsyncCallback<void>): void
 ```
 
-Sets the notification slot for a specified application.
-This API uses an asynchronous callback to return the result.
+Sets the notification slot for a specified application. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 

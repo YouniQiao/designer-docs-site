@@ -1,12 +1,6 @@
 # ImageSource
 
-Provides APIs to obtain image information. Before calling any API in ImageSource, you must use
-[sendableImage.createImageSource](arkts-image-createimagesource-f.md#createimagesource-1) to create an ImageSource
-instance.
-
-Images occupy a large amount of memory. When you finish using an ImageSource instance, call
-[release](arkts-image-pixelmap-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure
-that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
+Provides APIs to obtain image information. Before calling any API in ImageSource, you must use [sendableImage.createImageSource](arkts-image-createimagesource-f.md#createimagesource-1) to create an ImageSource instance. Images occupy a large amount of memory. When you finish using an ImageSource instance, call [release](arkts-image-pixelmap-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
 
 **Since:** 12
 
@@ -24,12 +18,7 @@ import { sendableImage } from '@kit.ImageKit';
 createPixelMap(options?: image.DecodingOptions): Promise<PixelMap>
 ```
 
-Creates a PixelMap object based on decoding options. This API uses a promise to return the result.
-
-Images occupy a large amount of memory. When you finish using a PixelMap instance, call
-[release](arkts-image-pixelmap-i.md#release-1) to free the memory promptly. Before releasing the instance,
-ensure that all asynchronous operations associated with the instance have finished and the instance is no longer
-needed.
+Creates a PixelMap object based on decoding options. This API uses a promise to return the result. Images occupy a large amount of memory. When you finish using a PixelMap instance, call [release](arkts-image-pixelmap-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
 
 **Since:** 12
 
@@ -75,13 +64,7 @@ async function Demo(context : Context) {
 release(): Promise<void>
 ```
 
-Releases this ImageSource instance. This API uses a promise to return the result.
-
-Images occupy a large amount of memory. When you finish using an ImageSource instance, call this API to free the
-memory promptly.
-
-Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished
-and the instance is no longer needed.
+Releases this ImageSource instance. This API uses a promise to return the result. Images occupy a large amount of memory. When you finish using an ImageSource instance, call this API to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
 
 **Since:** 12
 

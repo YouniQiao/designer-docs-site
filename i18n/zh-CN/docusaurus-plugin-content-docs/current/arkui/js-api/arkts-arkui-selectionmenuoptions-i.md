@@ -12,9 +12,7 @@
 menuType?: MenuType
 ```
 
-自定义选择菜单类型。
-
-默认值：MenuType.SELECTION_MENU。
+自定义选择菜单类型。 默认值：MenuType.SELECTION_MENU。
 
 **类型：** MenuType
 

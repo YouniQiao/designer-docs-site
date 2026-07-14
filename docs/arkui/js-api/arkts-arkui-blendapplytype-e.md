@@ -30,8 +30,7 @@ The content of the view is blended in sequence on the target image.
 OFFSCREEN = 1
 ```
 
-The content of the component and its child components are drawn on the offscreen canvas, and then blended with the
-existing content on the canvas.
+The content of the component and its child components are drawn on the offscreen canvas, and then blended with the existing content on the canvas.
 
 **Since:** 11
 

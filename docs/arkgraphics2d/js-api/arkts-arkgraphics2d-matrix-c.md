@@ -1,25 +1,6 @@
 # Matrix
 
-Implements a matrix.
-A 3 x 3 matrix is shown as below.
-![matrix_3x3](../../../../reference/apis-arkgraphics2d/figures/matrix3X3.PNG)
-Elements in the matrix from left to right and from top to bottom respectively represent a horizontal scale
-coefficient, a horizontal skew coefficient, a horizontal translation coefficient, a vertical skew coefficient, a
-vertical scale coefficient, a vertical translation coefficient, an X-axis perspective coefficient, a Y-axis
-perspective coefficient, and a perspective scale coefficient.
-If (x<sub>1</sub>, y<sub>1</sub>) is the source coordinate point, (x<sub>2</sub>, y<sub>2</sub>) is the coordinate
-point obtained by transforming the source coordinate point using the matrix, then the relationship between the two
-coordinate points is as follows:
-![matrix_xy](../../../../reference/apis-arkgraphics2d/figures/matrix_xy.PNG)
-
-> **NOTE**
->
-> - The initial APIs of this class are supported since API version 12.
->
-> - This module uses the physical pixel unit, px.
->
-> - The module operates under a single-threaded model. The caller needs to manage thread safety and context state
-> transitions.
+Implements a matrix. A 3 x 3 matrix is shown as below. ![matrix_3x3](../../../../reference/apis-arkgraphics2d/figures/matrix3X3.PNG) Elements in the matrix from left to right and from top to bottom respectively represent a horizontal scale coefficient, a horizontal skew coefficient, a horizontal translation coefficient, a vertical skew coefficient, a vertical scale coefficient, a vertical translation coefficient, an X-axis perspective coefficient, a Y-axis perspective coefficient, and a perspective scale coefficient. If (x<sub>1</sub>, y<sub>1</sub>) is the source coordinate point, (x<sub>2</sub>, y<sub>2</sub>) is the coordinate point obtained by transforming the source coordinate point using the matrix, then the relationship between the two coordinate points is as follows: ![matrix_xy](../../../../reference/apis-arkgraphics2d/figures/matrix_xy.PNG) > **NOTE** > > - The initial APIs of this class are supported since API version 12. > > - This module uses the physical pixel unit, px. > > - The module operates under a single-threaded model. The caller needs to manage thread safety and context state > transitions.
 
 **Since:** 12
 
@@ -145,8 +126,7 @@ Inverts this matrix and returns the result.
 isAffine(): boolean
 ```
 
-Checks whether the existing matrix is an affine matrix, which includes transformations such as translation,
-rotation, and scaling.
+Checks whether the existing matrix is an affine matrix, which includes transformations such as translation, rotation, and scaling.
 
 **Since:** 20
 
@@ -242,9 +222,7 @@ Maps a source point array to a destination point array by means of matrix transf
 mapRadius(radius: number): number
 ```
 
-Returns the average radius of the ellipse formed after a circle with the specified **radius** is mapped by the
-existing matrix. The square of the average radius is the product of the major axis length and minor axis length
-of the ellipse. If the matrix contains perspective transformation, the result is meaningless.
+Returns the average radius of the ellipse formed after a circle with the specified **radius** is mapped by the existing matrix. The square of the average radius is the product of the major axis length and minor axis length of the ellipse. If the matrix contains perspective transformation, the result is meaningless.
 
 **Since:** 20
 
@@ -268,13 +246,7 @@ of the ellipse. If the matrix contains perspective transformation, the result is
 mapRect(dst: common2D.Rect, src: common2D.Rect): boolean
 ```
 
-Sets the destination rectangle to the bounding rectangle of the shape obtained after transforming the source
-rectangle with a matrix transformation. As shown in the figure below, the blue rectangle represents the source
-rectangle, and the yellow rectangle is the shape obtained after a matrix transformation is applied to the source
-rectangle. Since the edges of the yellow rectangle are not aligned with the coordinate axes, it cannot be
-represented by a rectangle object. To address this issue, a destination rectangle (black rectangle) is defined as
-the bounding rectangle.
-![mapRect](../../../../reference/apis-arkgraphics2d/figures/zh-ch_matrix_mapRect.png)
+Sets the destination rectangle to the bounding rectangle of the shape obtained after transforming the source rectangle with a matrix transformation. As shown in the figure below, the blue rectangle represents the source rectangle, and the yellow rectangle is the shape obtained after a matrix transformation is applied to the source rectangle. Since the edges of the yellow rectangle are not aligned with the coordinate axes, it cannot be represented by a rectangle object. To address this issue, a destination rectangle (black rectangle) is defined as the bounding rectangle. ![mapRect](../../../../reference/apis-arkgraphics2d/figures/zh-ch_matrix_mapRect.png)
 
 **Since:** 12
 
@@ -323,8 +295,7 @@ Right-multiply the existing matrix by another matrix.
 postRotate(degree: number, px: number, py: number): void
 ```
 
-Post multiplies this matrix by a matrix that is derived from an identity matrix after it has been rotated by a
-given degree around the rotation point (px, py).
+Post multiplies this matrix by a matrix that is derived from an identity matrix after it has been rotated by a given degree around the rotation point (px, py).
 
 **Since:** 12
 
@@ -350,8 +321,7 @@ given degree around the rotation point (px, py).
 postScale(sx: number, sy: number, px: number, py: number): void
 ```
 
-Post multiplies this matrix by a matrix that is derived from an identity matrix after it has been scaled with the
-coefficient (sx, sy) at the scale point (px, py).
+Post multiplies this matrix by a matrix that is derived from an identity matrix after it has been scaled with the coefficient (sx, sy) at the scale point (px, py).
 
 **Since:** 12
 
@@ -399,8 +369,7 @@ Right-multiply the existing matrix by a skew transformation matrix.
 postTranslate(dx: number, dy: number): void
 ```
 
-Post multiplies this matrix by a matrix that is derived from an identity matrix after it has been translated by a
-given distance (dx, dy).
+Post multiplies this matrix by a matrix that is derived from an identity matrix after it has been translated by a given distance (dx, dy).
 
 **Since:** 12
 
@@ -449,8 +418,7 @@ Preconcats the existing matrix with the passed-in matrix.
 preRotate(degree: number, px: number, py: number): void
 ```
 
-Premultiplies this matrix by a matrix that is derived from an identity matrix after it has been rotated by a
-given degree around the rotation point (px, py).
+Premultiplies this matrix by a matrix that is derived from an identity matrix after it has been rotated by a given degree around the rotation point (px, py).
 
 **Since:** 12
 
@@ -476,8 +444,7 @@ given degree around the rotation point (px, py).
 preScale(sx: number, sy: number, px: number, py: number): void
 ```
 
-Premultiplies this matrix by a matrix that is derived from an identity matrix after it has been scaled with the
-coefficient (sx, sy) at the scale point (px, py).
+Premultiplies this matrix by a matrix that is derived from an identity matrix after it has been scaled with the coefficient (sx, sy) at the scale point (px, py).
 
 **Since:** 12
 
@@ -525,8 +492,7 @@ Left-multiply the existing matrix by a skew transformation matrix.
 preTranslate(dx: number, dy: number): void
 ```
 
-Premultiplies this matrix by a matrix that is derived from an identity matrix after it has been translated by a
-given distance (dx, dy).
+Premultiplies this matrix by a matrix that is derived from an identity matrix after it has been translated by a given distance (dx, dy).
 
 **Since:** 12
 
@@ -642,8 +608,7 @@ Updates the existing matrix with another matrix.
 setPolyToPoly(src: Array<common2D.Point>, dst: Array<common2D.Point>, count: number): boolean
 ```
 
-Sets this matrix to a transformation matrix that maps the source point array to the destination point array. Both
-the number of source points and that of destination points must be in the range [0, 4].
+Sets this matrix to a transformation matrix that maps the source point array to the destination point array. Both the number of source points and that of destination points must be in the range [0, 4].
 
 **Since:** 12
 

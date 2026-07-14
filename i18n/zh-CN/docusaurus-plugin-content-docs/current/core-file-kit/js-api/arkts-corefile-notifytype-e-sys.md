@@ -52,8 +52,7 @@ NOTIFY_DELETE = 1
 NOTIFY_MOVED_TO = 2
 ```
 
-表示移动至该文件（对目录下子文件或目录执行rename操作，或外部文件或目录执行move操作到本文件。详见registerObserver接口的示例1，及unregisterObserver(uri: string)接口的示例
-1）。
+表示移动至该文件（对目录下子文件或目录执行rename操作，或外部文件或目录执行move操作到本文件。详见registerObserver接口的示例1，及unregisterObserver(uri: string)接口的示例 1）。
 
 **起始版本：** 10
 
@@ -71,8 +70,7 @@ NOTIFY_MOVED_TO = 2
 NOTIFY_MOVED_FROM = 3
 ```
 
-表示自该文件移出（对目录下子文件或目录执行rename操作，或子文件（夹）执行move操作从该文件夹内移出。详见registerObserver接口的示例1，及unregisterObserver(uri: string)接口
-的示例1）。
+表示自该文件移出（对目录下子文件或目录执行rename操作，或子文件（夹）执行move操作从该文件夹内移出。详见registerObserver接口的示例1，及unregisterObserver(uri: string)接口 的示例1）。
 
 **起始版本：** 10
 

@@ -1,7 +1,6 @@
 # CameraInput
 
-Defines the camera input object.
-It provides camera device information used in [Session](arkts-camera-session-i.md).
+Defines the camera input object. It provides camera device information used in [Session](arkts-camera-session-i.md).
 
 **Since:** 10
 
@@ -117,11 +116,7 @@ Unsubscribes from **CameraInput** occlusion events. This API uses an asynchronou
 on(type: 'cameraOcclusionDetection', callback: AsyncCallback<CameraOcclusionDetectionResult>): void
 ```
 
-Subscribes to **CameraInput** occlusion events. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
+Subscribes to **CameraInput** occlusion events. This API uses an asynchronous callback to return the result. > **NOTE** > > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
 
 **Since:** 23
 

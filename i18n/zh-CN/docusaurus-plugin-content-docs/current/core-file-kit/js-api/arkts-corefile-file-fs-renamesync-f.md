@@ -6,11 +6,7 @@
 declare function renameSync(oldPath: string, newPath: string): void
 ```
 
-以同步方法重命名文件或目录。
-
-> **说明：**
->
-> 该接口不支持在分布式文件路径下操作。
+以同步方法重命名文件或目录。 > **说明：** > > 该接口不支持在分布式文件路径下操作。
 
 **起始版本：** 9
 

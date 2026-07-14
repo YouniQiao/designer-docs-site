@@ -12,9 +12,7 @@
 isSystemGesture: boolean
 ```
 
-当前手势是否为组件自带手势。true表示是，false表示否。
-
-默认值：false
+当前手势是否为组件自带手势。true表示是，false表示否。 默认值：false
 
 **类型：** boolean
 
@@ -32,11 +30,7 @@ isSystemGesture: boolean
 tag?: string
 ```
 
-手势标志。
-
-**说明：**
-
-未设置事件标志tag属性时，tag不返回或返回undefined。
+手势标志。 **说明：** 未设置事件标志tag属性时，tag不返回或返回undefined。
 
 **类型：** string
 
@@ -54,11 +48,7 @@ tag?: string
 type: GestureControl.GestureType
 ```
 
-手势类型。
-
-**说明：**
-
-当手势为未暴露类型的系统内置手势事件时，type的值为-1。
+手势类型。 **说明：** 当手势为未暴露类型的系统内置手势事件时，type的值为-1。
 
 **类型：** GestureControl.GestureType
 

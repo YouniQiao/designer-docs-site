@@ -14,11 +14,7 @@
 checked: boolean
 ```
 
-设置单选框的选中状态。
-
-默认值：false
-
-值为true时，单选框被选中。值为false时，单选框不被选中。
+设置单选框的选中状态。 默认值：false 值为true时，单选框被选中。值为false时，单选框不被选中。
 
 **类型：** boolean
 
@@ -36,9 +32,7 @@ checked: boolean
 triggerChange: Callback<boolean>
 ```
 
-触发单选框选中状态变化。
-
-值为true时，表示从未选中变为选中。值为false时，表示从选中变为未选中。
+触发单选框选中状态变化。 值为true时，表示从未选中变为选中。值为false时，表示从选中变为未选中。
 
 **类型：** Callback<boolean>
 

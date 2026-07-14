@@ -18,7 +18,7 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 static cancelRequest(context: Context, requestId: string): Promise<void>
 ```
 
-Cancels a request for the asset, the callback of which has not been triggered yet.
+Cancels a request for the asset, the callback of which has not been triggered yet. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -31,21 +31,21 @@ Cancels a request for the asset, the callback of which has not been triggered ye
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | context | Context | Yes | Context of the ability instance. |
-| requestId | string | Yes | ID of the request to cancel. It is a valid request ID returned by requestImage. |
+| requestId | string | Yes | ID of the request to cancel. It is a valid request ID returned by **requestImage**. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Returns void |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
-| 14000011 | System inner fail@static |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
+| 14000011 | System inner fail |
 
 ## loadMovingPhoto
 
@@ -57,9 +57,9 @@ static loadMovingPhoto(
     ): Promise<MovingPhoto>
 ```
 
-Load moving photo
+Loads a moving photo in the application sandbox. This API uses a promise to return the result.
 
-**Since:** 14
+**Since:** 12
 
 **Atomic service API:** This API can be used in atomic services since API version 14.
 
@@ -70,21 +70,21 @@ Load moving photo
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | context | Context | Yes | AbilityContext or UIExtensionContext instance. |
-| imageFileUri | string | Yes | image file uri of the moving photo to be loaded |
-| videoFileUri | string | Yes | video file uri of the moving photo to be loaded |
+| imageFileUri | string | Yes | URI of the image file of the moving photo in the application sandbox.<br>Example: **'file://com.example.temptest/data/storage/el2/base/haps/ImageFile.jpg'**. |
+| videoFileUri | string | Yes | URI of the video file of the moving photo in the application sandbox.<br>Example: **'file://com.example.temptest/data/storage/el2/base/haps/VideoFile.mp4'**. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;MovingPhoto&gt; | Returns moving photo |
+| Promise&lt;MovingPhoto&gt; | Promise used to return the[MovingPhoto](arkts-file-photoaccesshelper.md) instance. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
-| 14000011 | Internal system error@static |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
+| 14000011 | Internal system error |
 
 ## quickRequestImage
 
@@ -97,7 +97,7 @@ static quickRequestImage(
     ): Promise<string>
 ```
 
-Requests an image quickly.
+Requests an image quickly. This API uses a promise to return the result.
 
 **Since:** 13
 
@@ -112,21 +112,21 @@ Requests an image quickly.
 | context | Context | Yes | Context of the ability instance. |
 | asset | PhotoAsset | Yes | Image to request. |
 | requestOptions | RequestOptions | Yes | Options for requesting the image. |
-| dataHandler | QuickImageDataHandler&lt;image.Picture&gt; | Yes | Media asset handler,<br>which invokes a callback to return the image when the requested image is ready. |
+| dataHandler | QuickImageDataHandler&lt;image.Picture&gt; | Yes | Media asset handler, which invokes a callback toreturn the image when the requested image is ready. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;string&gt; | Returns request id |
+| Promise&lt;string&gt; | Promise used to return the request ID, which can be used in[cancelRequest](arkts-medialibrary-mediaassetmanager-c.md#cancelrequest-1) to cancel a request. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
-| 14000011 | Internal system error@static |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
+| 14000011 | Internal system error |
 
 ## requestImage
 
@@ -139,7 +139,7 @@ static requestImage(
     ): Promise<string>
 ```
 
-Request image
+Requests an image. This API uses a promise to return the result.
 
 **Since:** 11
 
@@ -154,21 +154,21 @@ Request image
 | context | Context | Yes | Context of the ability instance. |
 | asset | PhotoAsset | Yes | Image to request. |
 | requestOptions | RequestOptions | Yes | Options for requesting the image. |
-| dataHandler | MediaAssetDataHandler&lt;image.ImageSource&gt; | Yes | Media asset handler,<br>which invokes a callback to return the image when the requested image is ready. |
+| dataHandler | MediaAssetDataHandler&lt;image.ImageSource&gt; | Yes | Media asset handler, which invokes a callbackto return the image when the requested image is ready. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;string&gt; | Returns request id |
+| Promise&lt;string&gt; | Promise used to return the request ID, which can be used in[cancelRequest](arkts-medialibrary-mediaassetmanager-c.md#cancelrequest-1) to cancel a request. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
-| 14000011 | System inner fail@static |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
+| 14000011 | System inner fail. Possible causes:<br>1. The database is corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
 ## requestImageData
 
@@ -181,7 +181,7 @@ static requestImageData(
     ): Promise<string>
 ```
 
-Requests image data.
+Requests image data. This API uses a promise to return the result.
 
 **Since:** 11
 
@@ -196,21 +196,21 @@ Requests image data.
 | context | Context | Yes | Context of the ability instance. |
 | asset | PhotoAsset | Yes | Image to request. |
 | requestOptions | RequestOptions | Yes | Options for requesting the image. |
-| dataHandler | MediaAssetDataHandler&lt;ArrayBuffer&gt; | Yes | Media asset handler,<br>which invokes a callback to return the image when the requested image is ready. |
+| dataHandler | MediaAssetDataHandler&lt;ArrayBuffer&gt; | Yes | Media asset handler, which invokes a callback toreturn the image when the requested image is ready. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;string&gt; | Returns request id |
+| Promise&lt;string&gt; | Promise used to return the request ID, which can be used in[cancelRequest](arkts-medialibrary-mediaassetmanager-c.md#cancelrequest-1) to cancel a request. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
-| 14000011 | System inner fail@static |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
+| 14000011 | System inner fail. Possible causes:<br>1. The database is corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
 ## requestMovingPhoto
 
@@ -223,9 +223,9 @@ static requestMovingPhoto(
     ): Promise<string>
 ```
 
-Requests a moving photo object, which can be used to request the asset data of the moving photo.
+Requests a moving photo object, which can be used to request the asset data of the moving photo. This API uses a promise to return the result.
 
-**Since:** 18
+**Since:** 12
 
 **Required permissions:** ohos.permission.READ_IMAGEVIDEO
 
@@ -238,22 +238,22 @@ Requests a moving photo object, which can be used to request the asset data of t
 | context | Context | Yes | Context of the ability instance. |
 | asset | PhotoAsset | Yes | Image to request. |
 | requestOptions | RequestOptions | Yes | Options for requesting the image. |
-| dataHandler | MediaAssetDataHandler&lt;MovingPhoto&gt; | Yes | Media asset handler,<br>which invokes a callback to return the image when the requested image is ready. |
+| dataHandler | MediaAssetDataHandler&lt;MovingPhoto&gt; | Yes | Media asset handler, which invokes a callback toreturn the image when the requested image is ready. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;string&gt; | Returns request id |
+| Promise&lt;string&gt; | Promise used to return the request ID, which can be used in[cancelRequest](arkts-medialibrary-mediaassetmanager-c.md#cancelrequest-1) to cancel a request. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
-| 14000011 | System inner fail@static |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 and later |
+| 14000011 | System inner fail |
 
 ## requestVideoFile
 
@@ -267,9 +267,9 @@ static requestVideoFile(
     ): Promise<string>
 ```
 
-Request video file
+Requests a video and saves it to the specified sandbox directory. This API uses a promise to return the result.
 
-**Since:** 15
+**Since:** 12
 
 **Required permissions:** ohos.permission.READ_IMAGEVIDEO
 
@@ -282,21 +282,21 @@ Request video file
 | context | Context | Yes | Context of the ability instance. |
 | asset | PhotoAsset | Yes | Image to request. |
 | requestOptions | RequestOptions | Yes | Options for requesting the video asset. |
-| fileUri | string | Yes | the destination file uri to save the video data |
-| dataHandler | MediaAssetDataHandler&lt;boolean&gt; | Yes | Media asset handler.<br>When the requested video is written to the specified directory, a callback is triggered. |
+| fileUri | string | Yes | URI of the sandbox directory, to which the requested video asset is to be saved.Example: **'file://com.example.temptest/data/storage/el2/base/haps/entry/files/test.mp4'**. |
+| dataHandler | MediaAssetDataHandler&lt;boolean&gt; | Yes | Media asset handler. When the requested video is writtento the specified directory, a callback is triggered.<br>If the video is successfully written, **true** is returned. Otherwise, **false** is returned. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;string&gt; | Returns request id |
+| Promise&lt;string&gt; | Promise used to return the request ID, which can be used in[cancelRequest](arkts-medialibrary-mediaassetmanager-c.md#cancelrequest-1) to cancel a request. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
-| 14000011 | System inner fail@static |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 15 and later |
+| 14000011 | System inner fail. Possible causes:<br>1. The database is corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 

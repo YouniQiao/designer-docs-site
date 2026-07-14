@@ -12,8 +12,7 @@ import { insightIntentDriver } from '@kit.AbilityKit';
 function getInsightIntentInfoByIntentName(bundleName: string, moduleName: string, intentName: string, intentFlags: number): Promise<InsightIntentInfo>
 ```
 
-Obtains the intent information on the current device based on the bundle name, module name, and intent name. This
-API uses a promise to return the result.
+Obtains the intent information on the current device based on the bundle name, module name, and intent name. This API uses a promise to return the result.
 
 **Since:** 20
 

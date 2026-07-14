@@ -1,7 +1,6 @@
 # ISO8601DateTimeFormatOptions
 
-Represents optional configuration items for the ISO8601DateTimeFormat object.
-These options determine which elements need to be displayed after formatting and the corresponding format.
+Represents optional configuration items for the ISO8601DateTimeFormat object. These options determine which elements need to be displayed after formatting and the corresponding format.
 
 **Since:** 26.0.0
 
@@ -19,8 +18,7 @@ import { i18n } from '@kit.LocalizationKit';
 dateFormat?: 'calendar' | 'ordinal' | 'week'
 ```
 
-The ISO 8601 date format to format. The value can be: "calendar", the format is yyyy-MM-dd; "ordinal",
-the format is yyyy-DDD; "week", the format is YYYY-Www-e. Default value is "calendar".
+The ISO 8601 date format to format. The value can be: "calendar", the format is yyyy-MM-dd; "ordinal", the format is yyyy-DDD; "week", the format is YYYY-Www-e. Default value is "calendar".
 
 **Type:** 'calendar' | 'ordinal' | 'week'
 
@@ -56,8 +54,7 @@ Check if need to show time zone part. Default value is true that show time zone.
 separatorStyle?: 'extended' | 'basic'
 ```
 
-The date time separator style. The value can be: "extended": with -/:, "basic": compact mode.
-Default separator style is "extended".
+The date time separator style. The value can be: "extended": with -/:, "basic": compact mode. Default separator style is "extended".
 
 **Type:** 'extended' | 'basic'
 
@@ -75,8 +72,7 @@ Default separator style is "extended".
 timePrecision?: 'dateOnly' | 'hours' | 'minutes' | 'seconds' | 'milliSeconds'
 ```
 
-The ISO 8601 time precision to format. The value can be: "dateOnly", "hours", "minutes", "seconds",
-"milliSeconds". Default value is "seconds".
+The ISO 8601 time precision to format. The value can be: "dateOnly", "hours", "minutes", "seconds", "milliSeconds". Default value is "seconds".
 
 **Type:** 'dateOnly' | 'hours' | 'minutes' | 'seconds' | 'milliSeconds'
 

@@ -4,8 +4,7 @@
 export type FormExtensionContext = _FormExtensionContext.default
 ```
 
-The context of form extension. It allows access to
-formExtension-specific resources.
+The context of form extension. It allows access to formExtension-specific resources.
 
 **起始版本：** 11
 

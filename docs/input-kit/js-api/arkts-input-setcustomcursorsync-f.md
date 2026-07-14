@@ -12,10 +12,7 @@ import { pointer } from '@kit.InputKit';
 function setCustomCursorSync(windowId: number, pixelMap: image.PixelMap, focusX?: number, focusY?: number): void
 ```
 
-Sets a custom pointer style for a specified window synchronously. This API can set only the custom pointer style of
-windows within the current application process. For details about how to set the custom pointer style of the host
-window through the **UIExtensionAbility** process, see
-[setCustomCursor](../../apis-arkui/arkts-apis/arkts-arkui-cursorcontroller-c.md#setcustomcursor-1).
+Sets a custom pointer style for a specified window synchronously. This API can set only the custom pointer style of windows within the current application process. For details about how to set the custom pointer style of the host window through the **UIExtensionAbility** process, see [setCustomCursor](../../apis-arkui/arkts-apis/arkts-arkui-cursorcontroller-c.md#setcustomcursor-1).
 
 **Since:** 11
 

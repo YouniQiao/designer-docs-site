@@ -12,8 +12,7 @@ import { wifiManager } from '@kit.ConnectivityKit';
 function getStations(): Array<StationInfo>
 ```
 
-Obtain the list of stations that are connected to the Wi-Fi hotspot.
-This method can only be used on a device that serves as a Wi-Fi hotspot.
+Obtain the list of stations that are connected to the Wi-Fi hotspot. This method can only be used on a device that serves as a Wi-Fi hotspot.
 
 **Since:** 10
 

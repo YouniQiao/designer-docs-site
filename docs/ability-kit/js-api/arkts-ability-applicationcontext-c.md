@@ -1,11 +1,6 @@
 # ApplicationContext
 
-ApplicationContext inherits from [Context](arkts-ability-context-depr-i.md) and provides application-level management
-capabilities, such as application lifecycle listening, process management, and application environment setting.
-
-> **NOTE**
->
-> The APIs of this module can be used only in the stage model.
+ApplicationContext inherits from [Context](arkts-ability-context-depr-i.md) and provides application-level management capabilities, such as application lifecycle listening, process management, and application environment setting. > **NOTE** > > The APIs of this module can be used only in the stage model.
 
 **Inheritance/Implementation:** ApplicationContext extends [Context](arkts-ability-context-t.md)
 
@@ -19,18 +14,7 @@ capabilities, such as application lifecycle listening, process management, and a
 clearUpApplicationData(): Promise<void>
 ```
 
-Clears up all data in the application file path and revokes the permissions that the application has requested from
-users. This API uses a promise to return the result. It can be called only on the main thread.
-
-> **NOTE**
->
-> For details about the application file path, see
-> [Application File Directory and Application File Path](../../../../file-management/app-sandbox-directory.md#application-file-directory-and-application-file-path)
-> . The figure shows only the application file paths in the EL1 and EL2 directories. For the application file paths
-> in other directories, refer to EL1.
->
-> This API stops the application process. After the application process is stopped, all subsequent callbacks will
-> not be triggered.
+Clears up all data in the application file path and revokes the permissions that the application has requested from users. This API uses a promise to return the result. It can be called only on the main thread. > **NOTE** > > For details about the application file path, see > [Application File Directory and Application File Path](../../../../file-management/app-sandbox-directory.md#application-file-directory-and-application-file-path) > . The figure shows only the application file paths in the EL1 and EL2 directories. For the application file paths > in other directories, refer to EL1. > > This API stops the application process. After the application process is stopped, all subsequent callbacks will > not be triggered.
 
 **Since:** 11
 
@@ -57,18 +41,7 @@ users. This API uses a promise to return the result. It can be called only on th
 clearUpApplicationData(callback: AsyncCallback<void>): void
 ```
 
-Clears up all data in the application file path and revokes the permissions that the application has requested from
-users. This API uses an asynchronous callback to return the result. It can be called only on the main thread.
-
-> **NOTE**
->
-> For details about the application file path, see
-> [Application File Directory and Application File Path](../../../../file-management/app-sandbox-directory.md#application-file-directory-and-application-file-path)
-> . The figure shows only the application file paths in the EL1 and EL2 directories. For the application file paths
-> in other directories, refer to EL1.
->
-> This API stops the application process. After the application process is stopped, all subsequent callbacks will
-> not be triggered.
+Clears up all data in the application file path and revokes the permissions that the application has requested from users. This API uses an asynchronous callback to return the result. It can be called only on the main thread. > **NOTE** > > For details about the application file path, see > [Application File Directory and Application File Path](../../../../file-management/app-sandbox-directory.md#application-file-directory-and-application-file-path) > . The figure shows only the application file paths in the EL1 and EL2 directories. For the application file paths > in other directories, refer to EL1. > > This API stops the application process. After the application process is stopped, all subsequent callbacks will > not be triggered.
 
 **Since:** 11
 
@@ -96,11 +69,7 @@ users. This API uses an asynchronous callback to return the result. It can be ca
 disableDelayedProcessExit(): Promise<void>
 ```
 
-Disables delayed process exit for the current process.
-
-<p><b>NOTE</b>:
-<br>This API can be called only by the main thread.
-<br>Calling this API cancels the effect of {@link enableDelayedProcessExit}.</p>
+Disables delayed process exit for the current process. <p><b>NOTE</b>: <br>This API can be called only by the main thread. <br>Calling this API cancels the effect of {@link enableDelayedProcessExit}.</p>
 
 **Since:** 26.0.0
 
@@ -128,13 +97,7 @@ Disables delayed process exit for the current process.
 enableDelayedProcessExit(): Promise<void>
 ```
 
-Enable delayed exit for the current process.
-<p>**NOTE**:
-<br>It can be called only by the main thread.
-<br>Under normal circumstances, the process exits after the last UIAbility within the application process
-has exited. After calling this interface, the process will delay its exit for 10 seconds after the last
-UIAbility exits. If a new Ability is started within the 10 seconds in the current process, the process
-no longer exits.</p>
+Enable delayed exit for the current process. <p>**NOTE**: <br>It can be called only by the main thread. <br>Under normal circumstances, the process exits after the last UIAbility within the application process has exited. After calling this interface, the process will delay its exit for 10 seconds after the last UIAbility exits. If a new Ability is started within the 10 seconds in the current process, the process no longer exits.</p>
 
 **Since:** 26.0.0
 
@@ -162,8 +125,7 @@ no longer exits.</p>
 getAllRunningInstanceKeys(): Promise<Array<string>>
 ```
 
-Obtains the unique instance IDs of all multi-instances of this application. This API uses a promise to return the
-result. It can be called only on the main thread.
+Obtains the unique instance IDs of all multi-instances of this application. This API uses a promise to return the result. It can be called only on the main thread.
 
 **Since:** 14
 
@@ -191,12 +153,7 @@ result. It can be called only on the main thread.
 getAllWindowStages(): Promise<Array<window.WindowStage>>
 ```
 
-Obtains all WindowStage objects in the current application process. This API uses a promise to return the result.
-It can be called only on the main thread.
-
-This API is used to manage multiple windows in an application that contains several UIAbility components, for
-example, managing the states of different WindowStage objects, or synchronizing state or data between multiple
-windows within the same application.
+Obtains all WindowStage objects in the current application process. This API uses a promise to return the result. It can be called only on the main thread. This API is used to manage multiple windows in an application that contains several UIAbility components, for example, managing the states of different WindowStage objects, or synchronizing state or data between multiple windows within the same application.
 
 **Since:** 23
 
@@ -247,10 +204,7 @@ Obtains the index of the current application clone.
 getCurrentInstanceKey(): string
 ```
 
-Obtains the unique instance ID of this application. This API can be called only on the main thread.
-
-This API can be properly called only on 2-in-1 devices. If it is called on other device types, error code 16000078
-is returned.
+Obtains the unique instance ID of this application. This API can be called only on the main thread. This API can be properly called only on 2-in-1 devices. If it is called on other device types, error code 16000078 is returned.
 
 **Since:** 14
 
@@ -337,11 +291,7 @@ Obtains the information about running processes. This API uses an asynchronous c
 getUIAbilityByInstanceId(instanceId: string): UIAbility
 ```
 
-Get the UIAbility instance by the instance Id.
-
-<p>**NOTE**:
-<br>It can be called only by the main thread.
-</p>
+Get the UIAbility instance by the instance Id. <p>**NOTE**: <br>It can be called only by the main thread. </p>
 
 **Since:** 26.0.0
 
@@ -375,13 +325,7 @@ Get the UIAbility instance by the instance Id.
 killAllProcesses(): Promise<void>
 ```
 
-Kills all processes of this application. The application will not execute the normal lifecycle when exiting. This
-API uses a promise to return the result. It can be called only on the main thread.
-
-> **NOTE**
->
-> This API is used to forcibly exit an application in abnormal scenarios. To exit an application properly, call
-> [terminateSelf()](arkts-ability-uiabilitycontext-c.md#terminateself-2).
+Kills all processes of this application. The application will not execute the normal lifecycle when exiting. This API uses a promise to return the result. It can be called only on the main thread. > **NOTE** > > This API is used to forcibly exit an application in abnormal scenarios. To exit an application properly, call > [terminateSelf()](arkts-ability-uiabilitycontext-c.md#terminateself-2).
 
 **Since:** 9
 
@@ -410,13 +354,7 @@ API uses a promise to return the result. It can be called only on the main threa
 killAllProcesses(clearPageStack: boolean): Promise<void>
 ```
 
-Kills all processes of this application. The application will not execute the normal lifecycle when exiting. This
-API uses a promise to return the result. It can be called only on the main thread.
-
-> **NOTE**
->
-> This API is used to forcibly exit an application in abnormal scenarios. To exit an application properly, call
-> [terminateSelf()](arkts-ability-uiabilitycontext-c.md#terminateself-2).
+Kills all processes of this application. The application will not execute the normal lifecycle when exiting. This API uses a promise to return the result. It can be called only on the main thread. > **NOTE** > > This API is used to forcibly exit an application in abnormal scenarios. To exit an application properly, call > [terminateSelf()](arkts-ability-uiabilitycontext-c.md#terminateself-2).
 
 **Since:** 14
 
@@ -451,13 +389,7 @@ API uses a promise to return the result. It can be called only on the main threa
 killAllProcesses(callback: AsyncCallback<void>): void
 ```
 
-Kills all processes of this application. The application will not execute the normal lifecycle when exiting. This
-API uses an asynchronous callback to return the result. It can be called only on the main thread.
-
-> **NOTE**
->
-> This API is used to forcibly exit an application in abnormal scenarios. To exit an application properly, call
-> [terminateSelf()](arkts-ability-uiabilitycontext-c.md#terminateself-2).
+Kills all processes of this application. The application will not execute the normal lifecycle when exiting. This API uses an asynchronous callback to return the result. It can be called only on the main thread. > **NOTE** > > This API is used to forcibly exit an application in abnormal scenarios. To exit an application properly, call > [terminateSelf()](arkts-ability-uiabilitycontext-c.md#terminateself-2).
 
 **Since:** 9
 
@@ -486,8 +418,7 @@ API uses an asynchronous callback to return the result. It can be called only on
 off(type: 'abilityLifecycle', callbackId: number, callback: AsyncCallback<void>): void
 ```
 
-Unregisters a listener for the lifecycle of a UIAbility within the application. This API uses an asynchronous
-callback to return the result. It can be called only on the main thread.
+Unregisters a listener for the lifecycle of a UIAbility within the application. This API uses an asynchronous callback to return the result. It can be called only on the main thread.
 
 **Since:** 9
 
@@ -517,8 +448,7 @@ callback to return the result. It can be called only on the main thread.
 off(type: 'abilityLifecycle', callbackId: number): Promise<void>
 ```
 
-Unregisters a listener for the lifecycle of a UIAbility within the application. This API uses a promise to return
-the result. It can be called only on the main thread.
+Unregisters a listener for the lifecycle of a UIAbility within the application. This API uses a promise to return the result. It can be called only on the main thread.
 
 **Since:** 9
 
@@ -553,8 +483,7 @@ the result. It can be called only on the main thread.
 off(type: 'environment', callbackId: number, callback: AsyncCallback<void>): void
 ```
 
-Unregisters the listener for system environment changes. This API uses an asynchronous callback to return the
-result. It can be called only on the main thread.
+Unregisters the listener for system environment changes. This API uses an asynchronous callback to return the result. It can be called only on the main thread.
 
 **Since:** 9
 
@@ -584,8 +513,7 @@ result. It can be called only on the main thread.
 off(type: 'environment', callbackId: number): Promise<void>
 ```
 
-Unregisters the listener for system environment changes. This API uses a promise to return the result. It can be
-called only on the main thread.
+Unregisters the listener for system environment changes. This API uses a promise to return the result. It can be called only on the main thread.
 
 **Since:** 9
 
@@ -620,8 +548,7 @@ called only on the main thread.
 off(type: 'applicationStateChange', callback?: ApplicationStateChangeCallback): void
 ```
 
-Unregisters the listener for application process state changes. This API uses an asynchronous callback to return
-the result. It can be called only on the main thread.
+Unregisters the listener for application process state changes. This API uses an asynchronous callback to return the result. It can be called only on the main thread.
 
 **Since:** 10
 
@@ -650,11 +577,7 @@ the result. It can be called only on the main thread.
 offSystemConfigurationUpdated(callback?: systemConfiguration.UpdatedCallback): void
 ```
 
-unregisters a listener for system configuration updated.
-
-<p>**NOTE**:
-<br>It can be called only by the main thread.
-</p>
+unregisters a listener for system configuration updated. <p>**NOTE**: <br>It can be called only by the main thread. </p>
 
 **Since:** 24
 
@@ -676,8 +599,7 @@ unregisters a listener for system configuration updated.
 on(type: 'abilityLifecycle', callback: AbilityLifecycleCallback): number
 ```
 
-Registers a listener for the lifecycle of a UIAbility within the application. This API uses an asynchronous
-callback to return the result. It can be called only on the main thread.
+Registers a listener for the lifecycle of a UIAbility within the application. This API uses an asynchronous callback to return the result. It can be called only on the main thread.
 
 **Since:** 9
 
@@ -712,25 +634,7 @@ callback to return the result. It can be called only on the main thread.
 on(type: 'environment', callback: EnvironmentCallback): number
 ```
 
-Registers a listener for system environment changes. This API uses an asynchronous callback to return the result.
-It can be called only on the main thread.
-
-> **NOTE**
->
-> - You can also use [onConfigurationUpdate](arkts-ability-ability-c.md#onconfigurationupdate-1) to
-> listen for system environment changes. Unlike
-> [onConfigurationUpdate](arkts-ability-ability-c.md#onconfigurationupdate-1) of **Ability**, this
-> API offers greater flexibility. It can be used both within application components and pages. However, the
-> environment variables that can be subscribed to are different from those of
-> [onConfigurationUpdate](arkts-ability-ability-c.md#onconfigurationupdate-1). For example, this
-> API cannot be used to subscribe to direction, screen density, and display ID changes. For details, see the
-> description of each environment variable in
-> [Configuration](arkts-ability-configuration-i.md).
->
-> - There are certain restrictions when this API is triggered. For example, if you set the application language by
-> calling [setLanguage](arkts-ability-applicationcontext-c.md#setlanguage-1), the system does not trigger the
-> callback for the current API even if the system language changes. For details, see
-> [When to Use](../../../../application-models/subscribe-system-environment-variable-changes.md#when-to-use).
+Registers a listener for system environment changes. This API uses an asynchronous callback to return the result. It can be called only on the main thread. > **NOTE** > > - You can also use [onConfigurationUpdate](arkts-ability-ability-c.md#onconfigurationupdate-1) to > listen for system environment changes. Unlike > [onConfigurationUpdate](arkts-ability-ability-c.md#onconfigurationupdate-1) of **Ability**, this > API offers greater flexibility. It can be used both within application components and pages. However, the > environment variables that can be subscribed to are different from those of > [onConfigurationUpdate](arkts-ability-ability-c.md#onconfigurationupdate-1). For example, this > API cannot be used to subscribe to direction, screen density, and display ID changes. For details, see the > description of each environment variable in > [Configuration](arkts-ability-configuration-i.md). > > - There are certain restrictions when this API is triggered. For example, if you set the application language by > calling [setLanguage](arkts-ability-applicationcontext-c.md#setlanguage-1), the system does not trigger the > callback for the current API even if the system language changes. For details, see > [When to Use](../../../../application-models/subscribe-system-environment-variable-changes.md#when-to-use).
 
 **Since:** 9
 
@@ -765,8 +669,7 @@ It can be called only on the main thread.
 on(type: 'applicationStateChange', callback: ApplicationStateChangeCallback): void
 ```
 
-Registers a listener for application process state changes. This API uses an asynchronous callback to return the
-result. It can be called only on the main thread.
+Registers a listener for application process state changes. This API uses an asynchronous callback to return the result. It can be called only on the main thread.
 
 **Since:** 10
 
@@ -795,11 +698,7 @@ result. It can be called only on the main thread.
 onSystemConfigurationUpdated(callback: systemConfiguration.UpdatedCallback): void
 ```
 
-Registers a listener for system configuration updated.
-
-<p>**NOTE**:
-<br>It can be called only by the main thread.
-</p>
+Registers a listener for system configuration updated. <p>**NOTE**: <br>It can be called only by the main thread. </p>
 
 **Since:** 24
 
@@ -821,22 +720,7 @@ Registers a listener for system configuration updated.
 restartApp(want: Want): void
 ```
 
-Restarts the application and starts the specified UIAbility. This API can be called only by the main thread, and
-the application to restart must be active.
-
-> **NOTE**
->
-> When this API is called to restart the application, the **onDestroy** lifecycle callback of the ability in the
-> application is not triggered.
->
-> If an atomic service calls this API,
-> [restartSelfAtomicService()](arkts-ability-restartselfatomicservice-f.md#restartselfatomicservice-1)
-> , or [UIAbilityContext.restartApp()](arkts-ability-uiabilitycontext-c.md#restartapp-1) within 3 seconds after a
-> successful call to this API, the system returns error code 16000064.
->
-> If an application calls this API or
-> [UIAbilityContext.restartApp()](arkts-ability-uiabilitycontext-c.md#restartapp-1) within 3 seconds after a
-> successful call to this API, the system returns error code 16000064.
+Restarts the application and starts the specified UIAbility. This API can be called only by the main thread, and the application to restart must be active. > **NOTE** > > When this API is called to restart the application, the **onDestroy** lifecycle callback of the ability in the > application is not triggered. > > If an atomic service calls this API, > [restartSelfAtomicService()](arkts-ability-restartselfatomicservice-f.md#restartselfatomicservice-1) > , or [UIAbilityContext.restartApp()](arkts-ability-uiabilitycontext-c.md#restartapp-1) within 3 seconds after a > successful call to this API, the system returns error code 16000064. > > If an application calls this API or > [UIAbilityContext.restartApp()](arkts-ability-uiabilitycontext-c.md#restartapp-1) within 3 seconds after a > successful call to this API, the system returns error code 16000064.
 
 **Since:** 12
 
@@ -868,14 +752,7 @@ the application to restart must be active.
 setColorMode(colorMode: ConfigurationConstant.ColorMode): void
 ```
 
-Sets the dark/light color mode for the application. This API can be called only on the main thread.
-
-> **NOTE**
->
-> Before calling this API, ensure that the window has been created and the page corresponding to the UIAbility has
-> been loaded (using the
-> [loadContent](../../../../reference/apis-arkui/arkts-apis-window-WindowStage.md#loadcontent9) API in the
-> [onWindowStageCreate()](arkts-ability-uiability-c.md#onwindowstagecreate-1) lifecycle).
+Sets the dark/light color mode for the application. This API can be called only on the main thread. > **NOTE** > > Before calling this API, ensure that the window has been created and the page corresponding to the UIAbility has > been loaded (using the > [loadContent](../../../../reference/apis-arkui/arkts-apis-window-WindowStage.md#loadcontent9) API in the > [onWindowStageCreate()](arkts-ability-uiability-c.md#onwindowstagecreate-1) lifecycle).
 
 **Since:** 11
 
@@ -904,14 +781,7 @@ Sets the dark/light color mode for the application. This API can be called only 
 setFont(font: string): void
 ```
 
-Sets the font for this application. This API can be called only on the main thread.
-
-> **NOTE**
->
-> Before calling this API, ensure that the window has been created and the page corresponding to the UIAbility has
-> been loaded (using the
-> [loadContent](../../../../reference/apis-arkui/arkts-apis-window-WindowStage.md#loadcontent9) API in the
-> [onWindowStageCreate()](arkts-ability-uiability-c.md#onwindowstagecreate-1) lifecycle).
+Sets the font for this application. This API can be called only on the main thread. > **NOTE** > > Before calling this API, ensure that the window has been created and the page corresponding to the UIAbility has > been loaded (using the > [loadContent](../../../../reference/apis-arkui/arkts-apis-window-WindowStage.md#loadcontent9) API in the > [onWindowStageCreate()](arkts-ability-uiability-c.md#onwindowstagecreate-1) lifecycle).
 
 **Since:** 12
 
@@ -960,14 +830,7 @@ Sets the scale ratio for the font size of this application. This API can be call
 setLanguage(language: string): void
 ```
 
-Sets the language for the application. This API can be called only on the main thread.
-
-> **NOTE**
->
-> Before calling this API, ensure that the window has been created and the page corresponding to the UIAbility has
-> been loaded (using the
-> [loadContent](../../../../reference/apis-arkui/arkts-apis-window-WindowStage.md#loadcontent9) API in the
-> [onWindowStageCreate()](arkts-ability-uiability-c.md#onwindowstagecreate-1) lifecycle).
+Sets the language for the application. This API can be called only on the main thread. > **NOTE** > > Before calling this API, ensure that the window has been created and the page corresponding to the UIAbility has > been loaded (using the > [loadContent](../../../../reference/apis-arkui/arkts-apis-window-WindowStage.md#loadcontent9) API in the > [onWindowStageCreate()](arkts-ability-uiability-c.md#onwindowstagecreate-1) lifecycle).
 
 **Since:** 11
 
@@ -995,27 +858,7 @@ Sets the language for the application. This API can be called only on the main t
 setSupportedProcessCache(isSupported : boolean): void
 ```
 
-Sets whether the current application's process supports resource caching, so that the cached process resources can
-be reused when the application is started again. This API can be called only on the main thread.
-
-This setting applies only to the current process instance and does not affect others. If the application process
-instance is terminated, the previously set state will not be preserved and must be reset.
-
-This API can be properly called only on phones and 2-in-1 devices. If it is called on other device types, error
-code 801 is returned.
-
-> **NOTE**
->
-> - This API only sets the application to be ready for quick startup after caching. It does not mean that quick
-> startup will be triggered. Other conditions must be considered to determine whether to trigger quick startup.
->
-> - To ensure that this API is effective before the process exits, it should be called as soon as possible. You are
-> advised to call this API within the **onCreate()** callback of the
-> [AbilityStage](arkts-ability-abilitystage-c.md).
->
-> - If this API is called multiple times within the same process, the outcome of the final call is used. In cases
-> where there are multiple AbilityStage instances, to achieve the desired result, this API must be called and
-> configured with the same value in each AbilityStage.
+Sets whether the current application's process supports resource caching, so that the cached process resources can be reused when the application is started again. This API can be called only on the main thread. This setting applies only to the current process instance and does not affect others. If the application process instance is terminated, the previously set state will not be preserved and must be reset. This API can be properly called only on phones and 2-in-1 devices. If it is called on other device types, error code 801 is returned. > **NOTE** > > - This API only sets the application to be ready for quick startup after caching. It does not mean that quick > startup will be triggered. Other conditions must be considered to determine whether to trigger quick startup. > > - To ensure that this API is effective before the process exits, it should be called as soon as possible. You are > advised to call this API within the **onCreate()** callback of the > [AbilityStage](arkts-ability-abilitystage-c.md). > > - If this API is called multiple times within the same process, the outcome of the final call is used. In cases > where there are multiple AbilityStage instances, to achieve the desired result, this API must be called and > configured with the same value in each AbilityStage.
 
 **Since:** 12
 

@@ -1,9 +1,6 @@
 # SymbolGlyph properties/events
 
-The [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) are supported. For text attributes, only the following attributes are
-supported.
-
-The [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) are supported.
+The [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) are supported. For text attributes, only the following attributes are supported. The [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) are supported.
 
 **Inheritance/Implementation:** SymbolGlyphAttribute extends [CommonMethod<SymbolGlyphAttribute>](CommonMethod<SymbolGlyphAttribute>)
 
@@ -17,11 +14,7 @@ The [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-commo
 effectStrategy(value: SymbolEffectStrategy)
 ```
 
-Sets the effect strategy of the **SymbolGlyph** component.
-
-> **NOTE**
->
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
+Sets the effect strategy of the **SymbolGlyph** component. > **NOTE** > > This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
 
 **Since:** 11
 
@@ -45,11 +38,7 @@ Sets the effect strategy of the **SymbolGlyph** component.
 fontColor(value: Array<ResourceColor>)
 ```
 
-Sets the color of the **SymbolGlyph** component.
-
-> **NOTE**
->
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
+Sets the color of the **SymbolGlyph** component. > **NOTE** > > This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
 
 **Since:** 11
 
@@ -97,16 +86,7 @@ Called when the SymbolGlyph color is set.
 fontSize(value: number | string | Resource)
 ```
 
-Sets the size of the **SymbolGlyph** component. When using the string type, numeric string values with optional
-units, for example, **"10"** or **"10fp"**, are supported.
-
-The display size of the symbol glyph is controlled by the **fontSize** setting. Once **width** or **height** is
-specified, other universal attributes will only affect the size of the component's placeholder, not the symbol
-glyph itself.
-
-> **NOTE**
->
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
+Sets the size of the **SymbolGlyph** component. When using the string type, numeric string values with optional units, for example, **"10"** or **"10fp"**, are supported. The display size of the symbol glyph is controlled by the **fontSize** setting. Once **width** or **height** is specified, other universal attributes will only affect the size of the component's placeholder, not the symbol glyph itself. > **NOTE** > > This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
 
 **Since:** 11
 
@@ -130,16 +110,7 @@ glyph itself.
 fontWeight(value: number | FontWeight | string)
 ```
 
-Sets the font weight of the **SymbolGlyph** component. For the number type, the value ranges from 100 to 900, at an
-interval of 100. A larger value indicates a heavier font weight. The default value is **400**. For the string type,
-only strings of the number type are supported, for example, **"400"**, **"bold"**, **"bolder"**, **"lighter"**,
-**"regular"**, and **"medium"**, which correspond to the enumerated values in **FontWeight**.
-
-The **sys.symbol.ohos_lungs** icon does not support font weight setting.
-
-> **NOTE**
->
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
+Sets the font weight of the **SymbolGlyph** component. For the number type, the value ranges from 100 to 900, at an interval of 100. A larger value indicates a heavier font weight. The default value is **400**. For the string type, only strings of the number type are supported, for example, **"400"**, **"bold"**, **"bolder"**, **"lighter"**, **"regular"**, and **"medium"**, which correspond to the enumerated values in **FontWeight**. The **sys.symbol.ohos_lungs** icon does not support font weight setting. > **NOTE** > > This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
 
 **Since:** 11
 
@@ -232,11 +203,7 @@ Sets the minimum font scale factor for the **SymbolGlyph** component.
 renderingStrategy(value: SymbolRenderingStrategy)
 ```
 
-Sets the rendering strategy of the **SymbolGlyph** component.
-
-> **NOTE**
->
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
+Sets the rendering strategy of the **SymbolGlyph** component. > **NOTE** > > This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
 
 **Since:** 11
 
@@ -260,12 +227,7 @@ Sets the rendering strategy of the **SymbolGlyph** component.
 shaderStyle(shader: Array<ShaderStyle | undefined> | ShaderStyle)
 ```
 
-Applies a gradient or solid color shader effect to the **SymbolGlyph** component.
-
-This API supports [RadialGradientStyle](arkts-arkui-radialgradientstyle-c.md),
-[LinearGradientStyle](arkts-arkui-lineargradientstyle-c.md), and [ColorShaderStyle](arkts-arkui-colorshaderstyle-c.md). When set,
-**shaderStyle** takes precedence over [fontColor](SymbolSpanAttribute#fontColor) and any AI-based styling. To
-apply a simple solid color, using [fontColor](SymbolSpanAttribute#fontColor) is recommended.
+Applies a gradient or solid color shader effect to the **SymbolGlyph** component. This API supports [RadialGradientStyle](arkts-arkui-radialgradientstyle-c.md), [LinearGradientStyle](arkts-arkui-lineargradientstyle-c.md), and [ColorShaderStyle](arkts-arkui-colorshaderstyle-c.md). When set, **shaderStyle** takes precedence over [fontColor](SymbolSpanAttribute#fontColor) and any AI-based styling. To apply a simple solid color, using [fontColor](SymbolSpanAttribute#fontColor) is recommended.
 
 **Since:** 20
 

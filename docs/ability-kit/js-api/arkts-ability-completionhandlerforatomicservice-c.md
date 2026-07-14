@@ -1,10 +1,6 @@
 # CompletionHandlerForAtomicService
 
-CompletionHandlerForAtomicService provides two callback functions,
-[onAtomicServiceRequestSuccess](arkts-ability-completionhandlerforatomicservice-c.md#onatomicservicerequestsuccess-1)
-and
-[onAtomicServiceRequestFailure](arkts-ability-completionhandlerforatomicservice-c.md#onatomicservicerequestfailure-1)
-, to handle the results of successful and failed atomic service launch requests, respectively.
+CompletionHandlerForAtomicService provides two callback functions, [onAtomicServiceRequestSuccess](arkts-ability-completionhandlerforatomicservice-c.md#onatomicservicerequestsuccess-1) and [onAtomicServiceRequestFailure](arkts-ability-completionhandlerforatomicservice-c.md#onatomicservicerequestfailure-1) , to handle the results of successful and failed atomic service launch requests, respectively.
 
 **Since:** 20
 

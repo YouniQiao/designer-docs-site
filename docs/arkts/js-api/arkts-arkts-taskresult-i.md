@@ -1,7 +1,6 @@
 # TaskResult
 
-Describes the supplementary information captured in **BusinessError** in the catch branch after a task in the
-waiting or execution phase is canceled. In other scenarios, the task result is **undefined**.
+Describes the supplementary information captured in **BusinessError** in the catch branch after a task in the waiting or execution phase is canceled. In other scenarios, the task result is **undefined**.
 
 **Since:** 20
 
@@ -19,8 +18,7 @@ import { taskpool } from '@kit.ArkTS';
 error?: Error | Object
 ```
 
-Error message. By default, the value is the same as the **message** field of **BusinessError**. You are advised
-not to change the value.
+Error message. By default, the value is the same as the **message** field of **BusinessError**. You are advised not to change the value.
 
 **Type:** Error | Object
 

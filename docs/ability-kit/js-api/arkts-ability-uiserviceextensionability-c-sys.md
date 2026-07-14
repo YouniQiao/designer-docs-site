@@ -1,12 +1,6 @@
 # UIServiceExtensionAbility (System API)
 
-UIServiceExtensionAbility provides extended capabilities related to the floating window component. It inherits from
-[ExtensionAbility](arkts-ability-extensionability-c.md). It is mainly used to provide services
-with UIs for third-party applications.
-
-> **NOTE**
->
-> The APIs of this module must be used in the main thread, but not in child threads such as Worker and TaskPool.
+UIServiceExtensionAbility provides extended capabilities related to the floating window component. It inherits from [ExtensionAbility](arkts-ability-extensionability-c.md). It is mainly used to provide services with UIs for third-party applications. > **NOTE** > > The APIs of this module must be used in the main thread, but not in child threads such as Worker and TaskPool.
 
 **Inheritance/Implementation:** UIServiceExtensionAbility extends [ExtensionAbility](arkts-ability-extensionability-c.md)
 
@@ -28,13 +22,7 @@ import { UIServiceExtensionAbility } from '@kit.AbilityKit';
 onConnect(want: Want, proxy: UIServiceHostProxy): void
 ```
 
-Called when the connection to a
-[UIServiceExtensionAbility](arkts-ability-uiserviceextensionability-c-sys.md) is
-established. If the UIServiceExtensionAbility is started by calling
-[connectUIServiceExtensionAbility()](arkts-ability-uiextensioncontext-c.md#connectuiserviceextensionability-1)
-, this callback will be invoked after [onCreate()](arkts-ability-uiserviceextensionability-c-sys.md#oncreate-1). This callback
-receives a [UIServiceHostProxy](arkts-ability-uiservicehostproxy-i-sys.md) object for communication
-between the client and server.
+Called when the connection to a [UIServiceExtensionAbility](arkts-ability-uiserviceextensionability-c-sys.md) is established. If the UIServiceExtensionAbility is started by calling [connectUIServiceExtensionAbility()](arkts-ability-uiextensioncontext-c.md#connectuiserviceextensionability-1) , this callback will be invoked after [onCreate()](arkts-ability-uiserviceextensionability-c-sys.md#oncreate-1). This callback receives a [UIServiceHostProxy](arkts-ability-uiservicehostproxy-i-sys.md) object for communication between the client and server.
 
 **Since:** 14
 
@@ -142,9 +130,7 @@ class ServiceExt extends UIServiceExtensionAbility {
 onDestroy(): void
 ```
 
-Called to clear resources when this
-[UIServiceExtensionAbility](arkts-ability-uiserviceextensionability-c-sys.md) is
-destroyed.
+Called to clear resources when this [UIServiceExtensionAbility](arkts-ability-uiserviceextensionability-c-sys.md) is destroyed.
 
 **Since:** 14
 
@@ -173,9 +159,7 @@ class ServiceExt extends UIServiceExtensionAbility {
 onDisconnect(want: Want, proxy: UIServiceHostProxy): void
 ```
 
-Called when the connection to a
-[UIServiceExtensionAbility](arkts-ability-uiserviceextensionability-c-sys.md) is
-interrupted.
+Called when the connection to a [UIServiceExtensionAbility](arkts-ability-uiserviceextensionability-c-sys.md) is interrupted.
 
 **Since:** 14
 
@@ -211,14 +195,7 @@ class UIServiceExt extends UIServiceExtensionAbility {
 onRequest(want: Want, startId: number): void
 ```
 
-Called to request to start a
-[UIServiceExtensionAbility](arkts-ability-uiserviceextensionability-c-sys.md). If the
-UIServiceExtensionAbility is started by calling
-[startAbility](arkts-ability-uiabilitycontext-c.md#startability-1)
-or
-[startUIServiceExtensionAbility](arkts-ability-uiabilitycontext-c.md#startuiserviceextensionability-1)
-, this callback will be invoked after [onCreate](arkts-ability-uiserviceextensionability-c-sys.md#oncreate-1). The value of
-**startId** is incremented for each UIServiceExtensionAbility that is started.
+Called to request to start a [UIServiceExtensionAbility](arkts-ability-uiserviceextensionability-c-sys.md). If the UIServiceExtensionAbility is started by calling [startAbility](arkts-ability-uiabilitycontext-c.md#startability-1) or [startUIServiceExtensionAbility](arkts-ability-uiabilitycontext-c.md#startuiserviceextensionability-1) , this callback will be invoked after [onCreate](arkts-ability-uiserviceextensionability-c-sys.md#oncreate-1). The value of **startId** is incremented for each UIServiceExtensionAbility that is started.
 
 **Since:** 14
 
@@ -254,11 +231,7 @@ class UIServiceExt extends UIServiceExtensionAbility {
 onWindowDidCreate(window: window.Window): void
 ```
 
-Called when a window is created for the
-[UIServiceExtensionAbility](arkts-ability-uiserviceextensionability-c-sys.md). Through
-this callback, the
-[UIServiceExtensionAbility](arkts-ability-uiserviceextensionability-c-sys.md) passes the
-created window object to the foreground application.
+Called when a window is created for the [UIServiceExtensionAbility](arkts-ability-uiserviceextensionability-c-sys.md). Through this callback, the [UIServiceExtensionAbility](arkts-ability-uiserviceextensionability-c-sys.md) passes the created window object to the foreground application.
 
 **Since:** 14
 
@@ -294,11 +267,7 @@ class ServiceExt extends UIServiceExtensionAbility {
 onWindowWillCreate(config: window.ExtensionWindowConfig): void
 ```
 
-Called when a window will be created for the
-[UIServiceExtensionAbility](arkts-ability-uiserviceextensionability-c-sys.md). Through
-**window.ExtensionWindowConfig** in the callback, the foreground application sends the parameters for creating the
-window to the
-[UIServiceExtensionAbility](arkts-ability-uiserviceextensionability-c-sys.md).
+Called when a window will be created for the [UIServiceExtensionAbility](arkts-ability-uiserviceextensionability-c-sys.md). Through **window.ExtensionWindowConfig** in the callback, the foreground application sends the parameters for creating the window to the [UIServiceExtensionAbility](arkts-ability-uiserviceextensionability-c-sys.md).
 
 **Since:** 14
 
@@ -334,9 +303,7 @@ class UIServiceExt extends UIServiceExtensionAbility {
 context: UIServiceExtensionContext
 ```
 
-Context environment for a
-[UIServiceExtensionAbility](arkts-ability-uiserviceextensionability-c-sys.md). This
-context inherits from [ExtensionContext](arkts-ability-extensioncontext-c.md).
+Context environment for a [UIServiceExtensionAbility](arkts-ability-uiserviceextensionability-c-sys.md). This context inherits from [ExtensionContext](arkts-ability-extensioncontext-c.md).
 
 **Type:** UIServiceExtensionContext
 

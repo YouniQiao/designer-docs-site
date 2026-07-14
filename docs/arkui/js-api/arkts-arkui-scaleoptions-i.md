@@ -12,10 +12,7 @@ Defines the options of scale.
 centerX?: number | string
 ```
 
-X coordinate of the transformation center point (anchor). The value can be of the string type, for example,
-**'50'** and **'50%'**.
-
-Unit: vp
+X coordinate of the transformation center point (anchor). The value can be of the string type, for example, **'50'** and **'50%'**. Unit: vp
 
 **Type:** number | string
 
@@ -33,10 +30,7 @@ Unit: vp
 centerY?: number | string
 ```
 
-Y coordinate of the transformation center point (anchor). The value can be of the string type, for example,
-**'50'** and **'50%'**.
-
-Unit: vp
+Y coordinate of the transformation center point (anchor). The value can be of the string type, for example, **'50'** and **'50%'**. Unit: vp
 
 **Type:** number | string
 
@@ -54,10 +48,7 @@ Unit: vp
 x?: number
 ```
 
-Scale ratio along the x-axis.
-x > 1: The component is scaled up along the x-axis.
-0 < x < 1: The component is scaled down along the x-axis.
-x < 0: The component is scaled in the reverse direction of the x-axis.
+Scale ratio along the x-axis. x > 1: The component is scaled up along the x-axis. 0 < x < 1: The component is scaled down along the x-axis. x < 0: The component is scaled in the reverse direction of the x-axis.
 
 **Type:** number
 
@@ -75,10 +66,7 @@ x < 0: The component is scaled in the reverse direction of the x-axis.
 y?: number
 ```
 
-Scale ratio along the y-axis.
-y > 1: The component is scaled up along the y-axis.
-0 < y < 1: The component is scaled down along the y-axis.
-y < 0: The component is scaled in the reverse direction of the y-axis.
+Scale ratio along the y-axis. y > 1: The component is scaled up along the y-axis. 0 < y < 1: The component is scaled down along the y-axis. y < 0: The component is scaled in the reverse direction of the y-axis.
 
 **Type:** number
 
@@ -96,9 +84,7 @@ y < 0: The component is scaled in the reverse direction of the y-axis.
 z?: number
 ```
 
-Scale ratio along the z-axis. z > 1: The component is scaled up along the z-axis.
-<br>0 < z < 1: The component is scaled down along the z-axis.
-<br>z < 0: The component is scaled in the reverse direction of the z-axis.
+Scale ratio along the z-axis. z > 1: The component is scaled up along the z-axis. <br>0 < z < 1: The component is scaled down along the z-axis. <br>z < 0: The component is scaled in the reverse direction of the z-axis.
 
 **Type:** number
 

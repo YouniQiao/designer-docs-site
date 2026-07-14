@@ -36,9 +36,7 @@ Index of the clone. The default value is the currently available minimum index.
 userId?: number
 ```
 
-ID of the user for whom the clone is to be created. You can obtain the user ID by calling
-[getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-accountmanager-i.md#getosaccountlocalid-1)
-. The default value is the user ID of the caller.
+ID of the user for whom the clone is to be created. You can obtain the user ID by calling [getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-accountmanager-i.md#getosaccountlocalid-1) . The default value is the user ID of the caller.
 
 **Type:** number
 

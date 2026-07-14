@@ -12,10 +12,7 @@ import { backgroundTaskManager } from '@kit.BackgroundTasksKit';
 function stopBackgroundRunning(context: Context, callback: AsyncCallback<void>): void
 ```
 
-Cancels all continuous tasks in the current UIAbility (ServiceAbility in the FA model). This API uses an
-asynchronous callback to return the result. You can also call the
-[stopBackgroundRunning](arkts-backgroundtasks-stopbackgroundrunning-f.md#stopbackgroundrunning-3)
-API to cancel a continuous task with the specified ID.
+Cancels all continuous tasks in the current UIAbility (ServiceAbility in the FA model). This API uses an asynchronous callback to return the result. You can also call the [stopBackgroundRunning](arkts-backgroundtasks-stopbackgroundrunning-f.md#stopbackgroundrunning-3) API to cancel a continuous task with the specified ID.
 
 **Since:** 9
 
@@ -78,10 +75,7 @@ export default class EntryAbility extends UIAbility {
 function stopBackgroundRunning(context: Context): Promise<void>
 ```
 
-Cancels all continuous tasks in the current UIAbility (ServiceAbility in the FA model). This API uses a promise to
-return the result. You can also call the
-[stopBackgroundRunning](arkts-backgroundtasks-stopbackgroundrunning-f.md#stopbackgroundrunning-3)
-API to cancel a continuous task with the specified ID.
+Cancels all continuous tasks in the current UIAbility (ServiceAbility in the FA model). This API uses a promise to return the result. You can also call the [stopBackgroundRunning](arkts-backgroundtasks-stopbackgroundrunning-f.md#stopbackgroundrunning-3) API to cancel a continuous task with the specified ID.
 
 **Since:** 9
 
@@ -145,10 +139,7 @@ export default class EntryAbility extends UIAbility {
 function stopBackgroundRunning(context: Context, continuousTaskId: number): Promise<void>
 ```
 
-Cancels a continuous task with the specified ID. This API uses a promise to return the result. You can also call
-the
-[stopBackgroundRunning](arkts-backgroundtasks-stopbackgroundrunning-f.md#stopbackgroundrunning-1)
-API to cancel all continuous tasks in the current UIAbility.
+Cancels a continuous task with the specified ID. This API uses a promise to return the result. You can also call the [stopBackgroundRunning](arkts-backgroundtasks-stopbackgroundrunning-f.md#stopbackgroundrunning-1) API to cancel all continuous tasks in the current UIAbility.
 
 **Since:** 21
 

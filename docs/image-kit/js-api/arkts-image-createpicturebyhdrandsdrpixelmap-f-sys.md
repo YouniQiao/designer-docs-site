@@ -12,9 +12,7 @@ import { image } from '@kit.ImageKit';
 function createPictureByHdrAndSdrPixelMap(hdrPixelMap: PixelMap, sdrPixelMap: PixelMap): Promise<Picture>
 ```
 
-Creates a Picture object based on an HDR PixelMap and an SDR PixelMap. The system uses the HDR PixelMap and SDR
-PixelMap to generate a gainmap. The returned Picture object contains the SDR PixelMap and the generated gainmap,
-both in RGBA8888 format. This API uses a promise to return the result.
+Creates a Picture object based on an HDR PixelMap and an SDR PixelMap. The system uses the HDR PixelMap and SDR PixelMap to generate a gainmap. The returned Picture object contains the SDR PixelMap and the generated gainmap, both in RGBA8888 format. This API uses a promise to return the result.
 
 **Since:** 20
 
@@ -88,8 +86,7 @@ function createPictureByHdrAndSdrPixelMap(hdrPixelMap: PixelMap, sdrPixelMap: Pi
       params: GainmapParams): Promise<Picture>
 ```
 
-Creates a Picture object by a HDR PixelMap and a SDR PixelMap with specified options. A gainmap will be generated
-using the HDR and SDR PixelMap, and the returned Picture will contain the SDR PixelMap and the generated gainmap.
+Creates a Picture object by a HDR PixelMap and a SDR PixelMap with specified options. A gainmap will be generated using the HDR and SDR PixelMap, and the returned Picture will contain the SDR PixelMap and the generated gainmap.
 
 **Since:** 26.0.0
 

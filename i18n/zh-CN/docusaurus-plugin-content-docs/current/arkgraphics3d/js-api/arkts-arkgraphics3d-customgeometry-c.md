@@ -28,16 +28,7 @@ colors?: Color[]
 indices?: number[]
 ```
 
-构成三角形的顶点索引. PrimitiveTopology应用于索引定义的序列.
-
-给定vertices = [a, b, c, d]，创建相同的一对三角形的示例:
-topology = PrimitiveTopology.TRIANGLE_LIST
-indices = [0, 1, 2, 2, 1, 3]
-生成的三角形：abc、cbd
-
-topology = PrimitiveTopology.TRIANGLE_STRIP
-indices = [0, 1, 2, 3]
-生成的三角形：abc、cbd (b和c在cbd中被反转，以匹配第一个三角形的面方向)
+构成三角形的顶点索引. PrimitiveTopology应用于索引定义的序列. 给定vertices = [a, b, c, d]，创建相同的一对三角形的示例: topology = PrimitiveTopology.TRIANGLE_LIST indices = [0, 1, 2, 2, 1, 3] 生成的三角形：abc、cbd topology = PrimitiveTopology.TRIANGLE_STRIP indices = [0, 1, 2, 3] 生成的三角形：abc、cbd (b和c在cbd中被反转，以匹配第一个三角形的面方向)
 
 **类型：** number[]
 

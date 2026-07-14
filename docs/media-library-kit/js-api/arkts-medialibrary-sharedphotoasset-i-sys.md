@@ -54,8 +54,7 @@ Path data of photo asset
 dateAdded: number
 ```
 
-Added date of photo asset
-Unit: ms, The value must be an integer greater than or equal to 0.
+Added date of photo asset Unit: ms, The value must be an integer greater than or equal to 0.
 
 **Type:** number
 
@@ -103,8 +102,7 @@ The day of the file created
 dateModified: number
 ```
 
-Modify date of photo asset
-Unit: ms, The value must be an integer greater than or equal to 0.
+Modify date of photo asset Unit: ms, The value must be an integer greater than or equal to 0.
 
 **Type:** number
 
@@ -152,8 +150,7 @@ The month of the file created
 dateTaken: number
 ```
 
-DateTaken of photo asset
-Unit: ms, The value must be an integer greater than or equal to 0.
+DateTaken of photo asset Unit: ms, The value must be an integer greater than or equal to 0.
 
 **Type:** number
 
@@ -233,8 +230,7 @@ Display name of photo asset
 duration: number
 ```
 
-Duration of video photo asset
-Unit: ms, The value must be an integer greater than or equal to 0.
+Duration of video photo asset Unit: ms, The value must be an integer greater than or equal to 0.
 
 **Type:** number
 
@@ -282,8 +278,7 @@ File id of photo asset
 height: number
 ```
 
-Height of photo asset
-Unit: px, The value must be an integer greater than or equal to 0.
+Height of photo asset Unit: px, The value must be an integer greater than or equal to 0.
 
 **Type:** number
 
@@ -379,8 +374,7 @@ Effect mode of moving photo
 orientation: number
 ```
 
-Orientation of photo asset
-Unit: deg, The value must be an integer within [0,359].
+Orientation of photo asset Unit: deg, The value must be an integer within [0,359].
 
 **Type:** number
 
@@ -428,8 +422,7 @@ Position of photo asset
 size: number
 ```
 
-Size of photo asset
-Unit: Byte, The value must be an integer greater than or equal to 0.
+Size of photo asset Unit: Byte, The value must be an integer greater than or equal to 0.
 
 **Type:** number
 
@@ -573,8 +566,7 @@ User comment info of photo asset
 width: number
 ```
 
-Width of photo asset
-Unit: px, The value must be an integer greater than or equal to 0.
+Width of photo asset Unit: px, The value must be an integer greater than or equal to 0.
 
 **Type:** number
 

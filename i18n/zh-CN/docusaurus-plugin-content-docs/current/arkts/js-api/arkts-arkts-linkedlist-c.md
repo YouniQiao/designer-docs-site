@@ -1,7 +1,6 @@
 # LinkedList
 
-LinkedList底层基于双向链表实现。双向链表的每个节点都有一个指向上一元素的引用和指向下一元素的引用。
-查询元素时，从头或尾开始遍历。
+LinkedList底层基于双向链表实现。双向链表的每个节点都有一个指向上一元素的引用和指向下一元素的引用。 查询元素时，从头或尾开始遍历。
 
 **起始版本：** 8
 
@@ -102,17 +101,21 @@ add(element: T): boolean
 ```TypeScript
 let linkedList = new LinkedList<string | number | boolean | object>();
 let result = linkedList.add("a");
+console.info("result = ", result); // result =  true
 let result1 = linkedList.add(1);
-let b = [1, 2, 3];
-let result2 = linkedList.add(b);
-class C {
-  name: string = ''
-  age: string = ''
+console.info("result = ", result1); // result =  true
+let numArray = [1, 2, 3];
+let result2 = linkedList.add(numArray);
+console.info("result = ", result2); // result =  true
+class PersonInfo {
+  name: string = '';
+  age: string = '';
 }
-let c: C = {name : "Dylan", age : "13"};
-let result3 = linkedList.add(c);
+let personInfo: PersonInfo = {name : "Dylan", age : "13"};
+let result3 = linkedList.add(personInfo);
+console.info("result = ", result3); // result =  true
 let result4 = linkedList.add(false);
-console.info("result = ", result4) // result =  true
+console.info("result = ", result4); // result =  true
 
 ```
 
@@ -148,14 +151,14 @@ addFirst(element: T): void
 let linkedList = new LinkedList<string | number | boolean | object>();
 linkedList.addFirst("a");
 linkedList.addFirst(1);
-let b = [1, 2, 3];
-linkedList.addFirst(b);
-class C {
-  name: string = ''
-  age: string = ''
+let numArray = [1, 2, 3];
+linkedList.addFirst(numArray);
+class PersonInfo {
+  name: string = '';
+  age: string = '';
 }
-let c: C = {name : "Dylan", age : "13"};
-linkedList.addFirst(c);
+let personInfo: PersonInfo = {name : "Dylan", age : "13"};
+linkedList.addFirst(personInfo);
 linkedList.addFirst(false);
 let result = linkedList.get(2);
 console.info("result:", result);  // result: 1,2,3

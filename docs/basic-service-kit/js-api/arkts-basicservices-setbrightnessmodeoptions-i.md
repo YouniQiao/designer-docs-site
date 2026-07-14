@@ -36,8 +36,7 @@ Called when an API call is complete.
 fail?: (data: string, code: number) => void
 ```
 
-Called when an API call has failed. **data** indicates the error information, and **code** indicates the error
-code.
+Called when an API call has failed. **data** indicates the error information, and **code** indicates the error code.
 
 **Type:** (data: string, code: number) => void
 

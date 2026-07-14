@@ -1,8 +1,6 @@
 # DistributedTableType
 
-Enumerates the distributed table types. Use the enum name rather than the enum value. This item is a database-level
-configuration. If a database contains multiple distributed tables, all tables must use the same distributed table
-type; switching the table type or upgrade tables is not supported.
+Enumerates the distributed table types. Use the enum name rather than the enum value. This item is a database-level configuration. If a database contains multiple distributed tables, all tables must use the same distributed table type; switching the table type or upgrade tables is not supported.
 
 **Since:** 23
 
@@ -14,9 +12,7 @@ type; switching the table type or upgrade tables is not supported.
 DEVICE_COLLABORATION = 0
 ```
 
-Multi-device collaboration table. Data on each device is stored in an independent distributed table in an
-isolated manner instead of being written to the local table. The name of the distributed table is formed by
-prepending the peer device's device ID to the original table name.
+Multi-device collaboration table. Data on each device is stored in an independent distributed table in an isolated manner instead of being written to the local table. The name of the distributed table is formed by prepending the peer device's device ID to the original table name.
 
 **Since:** 23
 
@@ -30,8 +26,7 @@ prepending the peer device's device ID to the original table name.
 SINGLE_VERSION = 1
 ```
 
-Single version table. Data is directly written to the local table of the peer device through the distributed data
-management framework.
+Single version table. Data is directly written to the local table of the peer device through the distributed data management framework.
 
 **Since:** 23
 

@@ -66,8 +66,7 @@ function getEvent(node: FrameNode, nodeType: 'List'): UIListEvent | undefined
 function getEvent(node: FrameNode, nodeType: 'WaterFlow'): UIWaterFlowEvent | undefined
 ```
 
-获取[WaterFlow](arkts-arkui-waterflow-t.md)节点中持有的UIWaterFlowEvent对象，用于设置滚动事件。设置的滚动事件与声明式定义的事件平行；设置的滚动事件不覆盖原有的声明式事件。同时设置
-两个事件回调的时候，优先回调声明式事件。
+获取[WaterFlow](arkts-arkui-waterflow-t.md)节点中持有的UIWaterFlowEvent对象，用于设置滚动事件。设置的滚动事件与声明式定义的事件平行；设置的滚动事件不覆盖原有的声明式事件。同时设置 两个事件回调的时候，优先回调声明式事件。
 
 **起始版本：** 19
 

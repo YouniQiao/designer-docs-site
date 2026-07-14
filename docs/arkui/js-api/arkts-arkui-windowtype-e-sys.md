@@ -12,11 +12,7 @@ Enumerates the window types.
 TYPE_INPUT_METHOD = 2
 ```
 
-Input method window.
-
-Note: This API is supported since API version 9 and deprecated since API version 13. There is no alternative
-window type. To control the input method, call
-[Input method framework APIs](../../../../inputmethod/inputmethod-application-guide.md).
+Input method window. Note: This API is supported since API version 9 and deprecated since API version 13. There is no alternative window type. To control the input method, call [Input method framework APIs](../../../../inputmethod/inputmethod-application-guide.md).
 
 **Since:** 9
 

@@ -12,8 +12,7 @@ import { connection } from '@kit.NetworkKit';
 function setPacUrl(pacUrl: string): void
 ```
 
-Set the URL {@link pacUrl} of the current PAC script.
-To invoke this method, you must have the {@code ohos.permission.SET_PAC_URL} permission.
+Set the URL {@link pacUrl} of the current PAC script. To invoke this method, you must have the {@code ohos.permission.SET_PAC_URL} permission.
 
 **Since:** 15
 

@@ -68,12 +68,7 @@ sampleFormat: AudioSampleFormat
 samplingRate: AudioSamplingRate | number
 ```
 
-音频文件的采样率，单位为赫兹（Hz）。支持传入[AudioSamplingRate](arkts-audio-audiosamplingrate-e.md)。
-
-从API版本26.0.0开始：
-
-- 参数samplingRate支持number类型。
-- 音频渲染扩展支持8000Hz到384000Hz范围内以10Hz为步长的采样率值。具体设备支持的采样率规格会存在差异。
+音频文件的采样率，单位为赫兹（Hz）。支持传入[AudioSamplingRate](arkts-audio-audiosamplingrate-e.md)。 从API版本26.0.0开始： - 参数samplingRate支持number类型。 - 音频渲染扩展支持8000Hz到384000Hz范围内以10Hz为步长的采样率值。具体设备支持的采样率规格会存在差异。
 
 **类型：** AudioSamplingRate | number
 

@@ -2,7 +2,6 @@
 
 Defines the Web interface.
 
-
 ## Web
 
 ```TypeScript

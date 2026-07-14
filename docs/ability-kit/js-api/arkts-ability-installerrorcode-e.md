@@ -1,9 +1,6 @@
 # InstallErrorCode
 
-> **NOTE**
->
-> This API has been supported since API version 7 and deprecated since API version 9. You are advised to use
-> [errorcode-bundle](../../../../reference/apis-ability-kit/errorcode-bundle.md) instead.
+> **NOTE** > > This API has been supported since API version 7 and deprecated since API version 9. You are advised to use > [errorcode-bundle](../../../../reference/apis-ability-kit/errorcode-bundle.md) instead.
 
 **Since:** 7
 
@@ -17,8 +14,7 @@
 SUCCESS = 0
 ```
 
-Installation conflict. (The basic information of the application to update is inconsistent with that of the
-existing application.)
+Installation conflict. (The basic information of the application to update is inconsistent with that of the existing application.)
 
 **Since:** 7
 
@@ -32,8 +28,7 @@ existing application.)
 STATUS_INSTALL_FAILURE = 1
 ```
 
-Installation conflict. (The basic information of the application to update is inconsistent with that of the
-existing application.)
+Installation conflict. (The basic information of the application to update is inconsistent with that of the existing application.)
 
 **Since:** 7
 
@@ -47,8 +42,7 @@ existing application.)
 STATUS_INSTALL_FAILURE_ABORTED = 2
 ```
 
-Installation conflict. (The basic information of the application to update is inconsistent with that of the
-existing application.)
+Installation conflict. (The basic information of the application to update is inconsistent with that of the existing application.)
 
 **Since:** 7
 
@@ -62,8 +56,7 @@ existing application.)
 STATUS_INSTALL_FAILURE_INVALID = 3
 ```
 
-Installation conflict. (The basic information of the application to update is inconsistent with that of the
-existing application.)
+Installation conflict. (The basic information of the application to update is inconsistent with that of the existing application.)
 
 **Since:** 7
 
@@ -77,8 +70,7 @@ existing application.)
 STATUS_INSTALL_FAILURE_CONFLICT = 4
 ```
 
-Installation conflict. (The basic information of the application to update is inconsistent with that of the
-existing application.)
+Installation conflict. (The basic information of the application to update is inconsistent with that of the existing application.)
 
 **Since:** 7
 
@@ -92,8 +84,7 @@ existing application.)
 STATUS_INSTALL_FAILURE_STORAGE = 5
 ```
 
-Installation conflict. (The basic information of the application to update is inconsistent with that of the
-existing application.)
+Installation conflict. (The basic information of the application to update is inconsistent with that of the existing application.)
 
 **Since:** 7
 
@@ -107,8 +98,7 @@ existing application.)
 STATUS_INSTALL_FAILURE_INCOMPATIBLE = 6
 ```
 
-Installation conflict. (The basic information of the application to update is inconsistent with that of the
-existing application.)
+Installation conflict. (The basic information of the application to update is inconsistent with that of the existing application.)
 
 **Since:** 7
 
@@ -122,8 +112,7 @@ existing application.)
 STATUS_UNINSTALL_FAILURE = 7
 ```
 
-Installation conflict. (The basic information of the application to update is inconsistent with that of the
-existing application.)
+Installation conflict. (The basic information of the application to update is inconsistent with that of the existing application.)
 
 **Since:** 7
 
@@ -137,8 +126,7 @@ existing application.)
 STATUS_UNINSTALL_FAILURE_BLOCKED = 8
 ```
 
-Installation conflict. (The basic information of the application to update is inconsistent with that of the
-existing application.)
+Installation conflict. (The basic information of the application to update is inconsistent with that of the existing application.)
 
 **Since:** 7
 
@@ -152,8 +140,7 @@ existing application.)
 STATUS_UNINSTALL_FAILURE_ABORTED = 9
 ```
 
-Installation conflict. (The basic information of the application to update is inconsistent with that of the
-existing application.)
+Installation conflict. (The basic information of the application to update is inconsistent with that of the existing application.)
 
 **Since:** 7
 
@@ -167,8 +154,7 @@ existing application.)
 STATUS_UNINSTALL_FAILURE_CONFLICT = 10
 ```
 
-Installation conflict. (The basic information of the application to update is inconsistent with that of the
-existing application.)
+Installation conflict. (The basic information of the application to update is inconsistent with that of the existing application.)
 
 **Since:** 7
 
@@ -182,8 +168,7 @@ existing application.)
 STATUS_INSTALL_FAILURE_DOWNLOAD_TIMEOUT = 0x0B
 ```
 
-Installation conflict. (The basic information of the application to update is inconsistent with that of the
-existing application.)
+Installation conflict. (The basic information of the application to update is inconsistent with that of the existing application.)
 
 **Since:** 7
 
@@ -197,8 +182,7 @@ existing application.)
 STATUS_INSTALL_FAILURE_DOWNLOAD_FAILED = 0x0C
 ```
 
-Installation conflict. (The basic information of the application to update is inconsistent with that of the
-existing application.)
+Installation conflict. (The basic information of the application to update is inconsistent with that of the existing application.)
 
 **Since:** 7
 
@@ -226,8 +210,7 @@ No uninstallation permission.
 STATUS_ABILITY_NOT_FOUND = 0x40
 ```
 
-Installation conflict. (The basic information of the application to update is inconsistent with that of the
-existing application.)
+Installation conflict. (The basic information of the application to update is inconsistent with that of the existing application.)
 
 **Since:** 7
 
@@ -241,8 +224,7 @@ existing application.)
 STATUS_BMS_SERVICE_ERROR = 0x41
 ```
 
-Installation conflict. (The basic information of the application to update is inconsistent with that of the
-existing application.)
+Installation conflict. (The basic information of the application to update is inconsistent with that of the existing application.)
 
 **Since:** 7
 

@@ -12,12 +12,7 @@ import { jsLeakWatcher } from '@kit.PerformanceAnalysisKit';
 function enableLeakWatcher(isEnabled: boolean, configs: Array<string>, callback: Callback<Array<string>>): void
 ```
 
-Enables the detection for JS object leaks. This function is disabled by default.
-
-This API can detect the JS object memory leak, which is simpler than the method that needs to call the **enable**,
-**watch**, **check**, and **dump** functions.
-
-If a memory leak occurs, the leaked file is returned through the callback.
+Enables the detection for JS object leaks. This function is disabled by default. This API can detect the JS object memory leak, which is simpler than the method that needs to call the **enable**, **watch**, **check**, and **dump** functions. If a memory leak occurs, the leaked file is returned through the callback.
 
 **Since:** 20
 
@@ -59,11 +54,7 @@ jsLeakWatcher.enableLeakWatcher(true, config, (filePath: Array<string>) => {
 function enableLeakWatcher(isEnabled: boolean, configs: LeakWatcherConfig, callback: Callback<Array<string>>): void
 ```
 
-Enables the ArkTS object leak detection.
-
-This API can detect memory leaks of ArkTS objects with a single call, which is simpler than the previous method
-that requires four functions (**enable**, **watch**, **check**, and **dump**). You can use the **configs**
-parameter to customize the properties of monitoring items, greatly improving the leak detection performance.
+Enables the ArkTS object leak detection. This API can detect memory leaks of ArkTS objects with a single call, which is simpler than the previous method that requires four functions (**enable**, **watch**, **check**, and **dump**). You can use the **configs** parameter to customize the properties of monitoring items, greatly improving the leak detection performance.
 
 **Since:** 24
 

@@ -1,7 +1,6 @@
 # AudioSpatialEnabledStateForDevice (System API)
 
-This interface is used to notify the listener of any device Spatialization or Head Tracking enable
-or Adaptive Spatial Rendering state change.
+This interface is used to notify the listener of any device Spatialization or Head Tracking enable or Adaptive Spatial Rendering state change.
 
 **Since:** 12
 

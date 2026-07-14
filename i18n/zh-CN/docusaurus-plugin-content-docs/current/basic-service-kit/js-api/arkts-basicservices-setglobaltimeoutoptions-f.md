@@ -6,8 +6,7 @@
 function setGlobalTimeoutOptions(options?: TimeoutOptions): void
 ```
 
-Sets timeout configuration for all tasks.
-Used when task-specific timeout configuration is not configured.
+Sets timeout configuration for all tasks. Used when task-specific timeout configuration is not configured.
 
 **起始版本：** 26.0.0
 

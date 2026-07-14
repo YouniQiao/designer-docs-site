@@ -18,13 +18,7 @@ Describes the parameters required for bundle installation, recovery, or uninstal
 installFlag: number
 ```
 
-Installation flag.
-
-The value can be:
-
-**1** (default): overwrite installation.
-
-**16**: installation-free.
+Installation flag. The value can be: **1** (default): overwrite installation. **16**: installation-free.
 
 **Type:** number
 
@@ -46,8 +40,7 @@ The value can be:
 isKeepData: boolean
 ```
 
-Whether to retain the bundle data when the application is uninstalled. The default value is **false**. **true** to
-retain, **false** otherwise.
+Whether to retain the bundle data when the application is uninstalled. The default value is **false**. **true** to retain, **false** otherwise.
 
 **Type:** boolean
 

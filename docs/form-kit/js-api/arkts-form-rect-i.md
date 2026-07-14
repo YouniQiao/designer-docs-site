@@ -18,8 +18,7 @@ import { formInfo } from '@kit.FormKit';
 height: number
 ```
 
-The height of Rect
-Unit: vp.
+The height of Rect Unit: vp.
 
 **Type:** number
 
@@ -35,8 +34,7 @@ Unit: vp.
 left: number
 ```
 
-The left position of Rect
-Unit: vp.
+The left position of Rect Unit: vp.
 
 **Type:** number
 
@@ -52,8 +50,7 @@ Unit: vp.
 top: number
 ```
 
-The top position of Rect
-Unit: vp.
+The top position of Rect Unit: vp.
 
 **Type:** number
 
@@ -69,8 +66,7 @@ Unit: vp.
 width: number
 ```
 
-The width of Rect
-Unit: vp.
+The width of Rect Unit: vp.
 
 **Type:** number
 

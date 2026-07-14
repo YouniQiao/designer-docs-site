@@ -1,8 +1,6 @@
 # TabSegmentButtonConstructionOptions
 
-Creates a SegmentButtonOptions object of the tab type.
-
-Inherits from [CommonSegmentButtonOptions](arkts-arkui-commonsegmentbuttonoptions-i.md).
+Creates a SegmentButtonOptions object of the tab type. Inherits from [CommonSegmentButtonOptions](arkts-arkui-commonsegmentbuttonoptions-i.md).
 
 **Inheritance/Implementation:** TabSegmentButtonConstructionOptions extends [CommonSegmentButtonOptions](arkts-arkui-commonsegmentbuttonoptions-i.md)
 

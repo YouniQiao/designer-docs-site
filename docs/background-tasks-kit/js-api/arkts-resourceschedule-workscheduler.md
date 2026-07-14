@@ -1,9 +1,6 @@
 # @ohos.resourceschedule.workScheduler
 
-The **workScheduler** module provides the APIs for registering, canceling, and querying deferred tasks. You can use
-the APIs to register tasks that do not have high requirements on real-time performance as deferred tasks. The system
-schedules and executes the deferred tasks at an appropriate time, subject to the storage space, power consumption,
-and more. For details, see [Deferred Task Scheduling](../../../../task-management/work-scheduler.md).
+The **workScheduler** module provides the APIs for registering, canceling, and querying deferred tasks. You can use the APIs to register tasks that do not have high requirements on real-time performance as deferred tasks. The system schedules and executes the deferred tasks at an appropriate time, subject to the storage space, power consumption, and more. For details, see [Deferred Task Scheduling](../../../../task-management/work-scheduler.md).
 
 **Since:** 9
 

@@ -12,8 +12,7 @@ import { abilityManager } from '@kit.AbilityKit';
 function getTopAbility(): Promise<ElementName>
 ```
 
-Obtains the top ability, which is the ability that has the window focus. This API uses a promise to return the
-result.
+Obtains the top ability, which is the ability that has the window focus. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -41,8 +40,7 @@ result.
 function getTopAbility(callback: AsyncCallback<ElementName>): void
 ```
 
-Obtains the top ability, which is the ability that has the window focus. This API uses an asynchronous callback to
-return the result.
+Obtains the top ability, which is the ability that has the window focus. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 

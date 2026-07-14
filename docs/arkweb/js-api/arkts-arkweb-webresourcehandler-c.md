@@ -1,7 +1,6 @@
 # WebResourceHandler
 
-Used to intercept url requests. Response headers and body can be sent through
-WebResourceHandler.
+Used to intercept url requests. Response headers and body can be sent through WebResourceHandler.
 
 **Since:** 12
 

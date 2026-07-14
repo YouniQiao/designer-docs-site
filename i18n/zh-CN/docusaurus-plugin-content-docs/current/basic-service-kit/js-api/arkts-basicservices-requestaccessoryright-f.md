@@ -6,9 +6,7 @@
 function requestAccessoryRight(accessory: USBAccessory): Promise<boolean>
 ```
 
-为指定应用程序申请访问USB配件的访问权限。使用Promise异步回调。
-需要调用[usbManager.getAccessoryList](arkts-basicservices-getaccessorylist-f.md#getaccessorylist-1)获取配件列表，得到
-[USBAccessory](arkts-basicservices-usbaccessory-i.md)作为参数。
+为指定应用程序申请访问USB配件的访问权限。使用Promise异步回调。 需要调用[usbManager.getAccessoryList](arkts-basicservices-getaccessorylist-f.md#getaccessorylist-1)获取配件列表，得到 [USBAccessory](arkts-basicservices-usbaccessory-i.md)作为参数。
 
 **起始版本：** 14
 

@@ -12,8 +12,7 @@ import { connection } from '@kit.NetworkKit';
 function enableAirplaneMode(callback: AsyncCallback<void>): void
 ```
 
-Enables the airplane mode for a device.
-To invoke this method, you must have the {@code ohos.permission.CONNECTIVITY_INTERNAL} permission.
+Enables the airplane mode for a device. To invoke this method, you must have the {@code ohos.permission.CONNECTIVITY_INTERNAL} permission.
 
 **Since:** 8
 
@@ -58,8 +57,7 @@ connection.enableAirplaneMode((error: BusinessError) => {
 function enableAirplaneMode(): Promise<void>
 ```
 
-Enables the airplane mode for a device.
-To invoke this method, you must have the {@code ohos.permission.CONNECTIVITY_INTERNAL} permission.
+Enables the airplane mode for a device. To invoke this method, you must have the {@code ohos.permission.CONNECTIVITY_INTERNAL} permission.
 
 **Since:** 8
 

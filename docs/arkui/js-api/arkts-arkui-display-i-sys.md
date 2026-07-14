@@ -1,10 +1,6 @@
 # Display
 
-Implements a Display instance, with attributes and APIs defined.
-
-Before calling any API in Display, you must use
-[getAllDisplays()](arkts-arkui-getalldisplays-f.md#getalldisplays-1) or
-[getDefaultDisplaySync()](arkts-arkui-getdefaultdisplaysync-f.md#getdefaultdisplaysync-1) to obtain a Display instance.
+Implements a Display instance, with attributes and APIs defined. Before calling any API in Display, you must use [getAllDisplays()](arkts-arkui-getalldisplays-f.md#getalldisplays-1) or [getDefaultDisplaySync()](arkts-arkui-getdefaultdisplaysync-f.md#getdefaultdisplaysync-1) to obtain a Display instance.
 
 **Since:** 7
 
@@ -22,8 +18,7 @@ import { display } from '@kit.ArkUI';
 hasImmersiveWindow(callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether this display contains an immersive window. This API uses an asynchronous callback to return the
-result.
+Checks whether this display contains an immersive window. This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 

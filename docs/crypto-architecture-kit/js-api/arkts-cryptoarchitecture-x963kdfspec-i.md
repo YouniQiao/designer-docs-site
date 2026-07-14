@@ -1,11 +1,6 @@
 # X963KdfSpec
 
-Defines the child class of [KdfSpec](arkts-cryptoarchitecture-kdfspec-i.md). It is a parameter for X963KDF key derivation
-function (KDF).
-
-> **NOTE**
->
-> **key** is the original key material entered by the user.
+Defines the child class of [KdfSpec](arkts-cryptoarchitecture-kdfspec-i.md). It is a parameter for X963KDF key derivation function (KDF). > **NOTE** > > **key** is the original key material entered by the user.
 
 **Inheritance/Implementation:** X963KdfSpec extends [KdfSpec](arkts-cryptoarchitecture-kdfspec-i.md)
 
@@ -57,8 +52,7 @@ Key material.
 keySize: number
 ```
 
-Length of the derived key, in bytes.
-The value must be a positive integer.
+Length of the derived key, in bytes. The value must be a positive integer.
 
 **Type:** number
 

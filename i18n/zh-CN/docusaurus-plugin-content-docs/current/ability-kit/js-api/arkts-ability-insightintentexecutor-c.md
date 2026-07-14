@@ -1,10 +1,6 @@
 # InsightIntentExecutor
 
-本模块提供意图执行基类，开发者通过本模块对接端侧[意图框架](../../../../application-models/insight-intent-overview.md)，
-[通过配置文件开发意图][configuration files](../../../../application-models/insight-intent-config-development.md)实现意图的业务逻辑。
-
-除了可以通过配置文件开发意图，还可以通过装饰器开发意图。对于API version 20及以后的版本，推荐使用
-[通过装饰器开发意图](../../../../application-models/insight-intent-decorator-development.md)。
+本模块提供意图执行基类，开发者通过本模块对接端侧[意图框架](../../../../application-models/insight-intent-overview.md)， [通过配置文件开发意图][configuration files](../../../../application-models/insight-intent-config-development.md)实现意图的业务逻辑。 除了可以通过配置文件开发意图，还可以通过装饰器开发意图。对于API version 20及以后的版本，推荐使用 [通过装饰器开发意图](../../../../application-models/insight-intent-decorator-development.md)。
 
 **起始版本：** 11
 
@@ -17,9 +13,7 @@ onExecuteInServiceExtensionAbility(name: string, param: Record<string, Object>):
     insightIntent.ExecuteResult | Promise<insightIntent.ExecuteResult>
 ```
 
-当意图执行依赖ServiceExtensionAbility组件启动时，会在ServiceExtensionAbility组件生命周期执行中触发本意图执行接口。支持同步返回和使用Promise异步返回。
-
-- 意图执行时ServiceExtensionAbility生命周期触发顺序：onCreate、onRequest、onExecuteInServiceExtensionAbility。
+当意图执行依赖ServiceExtensionAbility组件启动时，会在ServiceExtensionAbility组件生命周期执行中触发本意图执行接口。支持同步返回和使用Promise异步返回。 - 意图执行时ServiceExtensionAbility生命周期触发顺序：onCreate、onRequest、onExecuteInServiceExtensionAbility。
 
 **起始版本：** 11
 
@@ -90,7 +84,7 @@ async function executeInsightIntent(param: Record<string, Object>): Promise<insi
       }
     };
     resolve(result);
-  });
+  })
 }
 
 export default class IntentExecutorImpl extends InsightIntentExecutor {
@@ -124,11 +118,7 @@ onExecuteInUIAbilityBackgroundMode(name: string, param: Record<string, Object>):
     insightIntent.ExecuteResult | Promise<insightIntent.ExecuteResult>
 ```
 
-当意图执行依赖[UIAbility](arkts-app-ability-uiability.md)组件后台启动时，会在UIAbility组件生命周期执行中触发本意图执行接口。支持同步返回和使用Promise异步返回。
-
-- 若UIAbility组件冷启动，意图执行时UIAbility组件生命周期触发顺序：[onCreate](arkts-ability-uiability-c.md#oncreate-1)、
-onExecuteInUIAbilityBackgroundMode、[onBackground](arkts-ability-uiability-c.md#onbackground-1)。
-- 若UIAbility组件热启动，意图执行时UIAbility组件生命周期触发顺序：onExecuteInUIAbilityBackgroundMode。
+当意图执行依赖[UIAbility](arkts-app-ability-uiability.md)组件后台启动时，会在UIAbility组件生命周期执行中触发本意图执行接口。支持同步返回和使用Promise异步返回。 - 若UIAbility组件冷启动，意图执行时UIAbility组件生命周期触发顺序：[onCreate](arkts-ability-uiability-c.md#oncreate-1)、 onExecuteInUIAbilityBackgroundMode、[onBackground](arkts-ability-uiability-c.md#onbackground-1)。 - 若UIAbility组件热启动，意图执行时UIAbility组件生命周期触发顺序：onExecuteInUIAbilityBackgroundMode。
 
 **起始版本：** 11
 
@@ -193,7 +183,18 @@ export default class IntentExecutorImpl extends InsightIntentExecutor {
   // 实现异步接口需要使用async/await语法糖，通过async声明该接口是一个异步函数
   async onExecuteInUIAbilityBackgroundMode(name: string,
     param: Record<string, Object>): Promise<insightIntent.ExecuteResult> {
-    let result: insightIntent.ExecuteResult = await executeInsightIntent(param);
+    let result: insightIntent.ExecuteResult;
+    if (name !== 'SupportedInsightIntentName') {
+      hilog.warn(0x0000, 'testTag', 'Unsupported insight intent %{public}s', name);
+      result = {
+        code: 404,
+        result: {
+          message: 'Unsupported insight intent.',
+        }
+      };
+      return result;
+    }
+    result = await executeInsightIntent(param);
     return result;
   }
 }
@@ -207,15 +208,7 @@ onExecuteInUIAbilityForegroundMode(name: string, param: Record<string, Object>, 
     insightIntent.ExecuteResult | Promise<insightIntent.ExecuteResult>
 ```
 
-当意图执行依赖[UIAbility](arkts-app-ability-uiability.md)组件前台启动时，会在UIAbility组件生命周期执行中触发本意图执行接口。支持同步返回和使用Promise异步返回。
-
-- 若UIAbility组件冷启动，意图执行时UIAbility组件生命周期触发顺序：[onCreate](arkts-ability-uiability-c.md#oncreate-1)、
-[onWindowStageCreate](arkts-ability-uiability-c.md#onwindowstagecreate-1)、
-onExecuteInUIAbilityForegroundMode、[onForeground](arkts-ability-uiability-c.md#onforeground-1)。
-- 若UIAbility组件热启动，且启动时UIAbility组件处于后台，意图执行时UIAbility组件生命周期触发顺序：
-[onNewWant](arkts-ability-uiability-c.md#onnewwant-1)、onExecuteInUIAbilityForegroundMode、
-[onForeground](arkts-ability-uiability-c.md#onforeground-1)。
-- 若UIAbility组件热启动，且启动时UIAbility组件处于前台，意图执行时UIAbility组件生命周期触发顺序：onExecuteInUIAbilityForegroundMode。
+当意图执行依赖[UIAbility](arkts-app-ability-uiability.md)组件前台启动时，会在UIAbility组件生命周期执行中触发本意图执行接口。支持同步返回和使用Promise异步返回。 - 若UIAbility组件冷启动，意图执行时UIAbility组件生命周期触发顺序：[onCreate](arkts-ability-uiability-c.md#oncreate-1)、 [onWindowStageCreate](arkts-ability-uiability-c.md#onwindowstagecreate-1)、 onExecuteInUIAbilityForegroundMode、[onForeground](arkts-ability-uiability-c.md#onforeground-1)。 - 若UIAbility组件热启动，且启动时UIAbility组件处于后台，意图执行时UIAbility组件生命周期触发顺序： [onNewWant](arkts-ability-uiability-c.md#onnewwant-1)、onExecuteInUIAbilityForegroundMode、 [onForeground](arkts-ability-uiability-c.md#onforeground-1)。 - 若UIAbility组件热启动，且启动时UIAbility组件处于前台，意图执行时UIAbility组件生命周期触发顺序：onExecuteInUIAbilityForegroundMode。
 
 **起始版本：** 11
 
@@ -267,7 +260,7 @@ export default class IntentExecutorImpl extends InsightIntentExecutor {
     // 若开发者需要加载意图内容，pages/IntentPage即为意图页面
     pageLoader.loadContent('pages/IntentPage', (err, data) => {
       if (err.code) {
-        hilog.error(0x0000, 'testTag', 'Failed to load the content. Cause: %{public}s', JSON.stringify(err));
+        hilog.error(0x0000, 'testTag', `Failed to load the content. Code: ${err.code}, message: ${err.message}`);
       } else {
         hilog.info(0x0000, 'testTag', '%{public}s', 'Succeeded in loading the content');
       }
@@ -335,14 +328,7 @@ onExecuteInUIExtensionAbility(name: string, param: Record<string, Object>, pageL
     insightIntent.ExecuteResult | Promise<insightIntent.ExecuteResult>
 ```
 
-当意图执行依赖[UIExtensionAbility](arkts-ability-uiextensionability-c.md)启动时，会在UIExtensionAbility组
-件生命周期执行中触发本意图执行接口。支持同步返回和使用Promise异步返回。
-
-- 意图执行时UIExtensionAbility生命周期触发顺序：
-[onCreate](arkts-ability-uiextensionability-c.md#oncreate-1)、
-[onSessionCreate](arkts-ability-uiextensionability-c.md#onsessioncreate-1)、
-onExecuteInUIExtensionAbility、
-[onForeground](arkts-ability-uiextensionability-c.md#onforeground-1)。
+当意图执行依赖[UIExtensionAbility](arkts-ability-uiextensionability-c.md)启动时，会在UIExtensionAbility组 件生命周期执行中触发本意图执行接口。支持同步返回和使用Promise异步返回。 - 意图执行时UIExtensionAbility生命周期触发顺序： [onCreate](arkts-ability-uiextensionability-c.md#oncreate-1)、 [onSessionCreate](arkts-ability-uiextensionability-c.md#onsessioncreate-1)、 onExecuteInUIExtensionAbility、 [onForeground](arkts-ability-uiextensionability-c.md#onforeground-1)。
 
 **起始版本：** 11
 

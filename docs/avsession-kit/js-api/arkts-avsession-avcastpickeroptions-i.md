@@ -46,8 +46,7 @@ Set the picker style.
 sessionType?: AVSessionType
 ```
 
-Indicates current session type to show different picker ui.
-If not set, default value is 'audio'.
+Indicates current session type to show different picker ui. If not set, default value is 'audio'.
 
 **Type:** AVSessionType
 

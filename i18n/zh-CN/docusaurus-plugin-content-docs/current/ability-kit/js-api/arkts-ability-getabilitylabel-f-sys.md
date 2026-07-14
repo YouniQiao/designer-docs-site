@@ -6,9 +6,7 @@
 function getAbilityLabel(bundleName: string, moduleName: string, abilityName: string, callback: AsyncCallback<string>): void
 ```
 
-获取指定bundleName、moduleName和abilityName的label。使用callback异步回调。
-
-获取调用方自身的信息时不需要权限。
+获取指定bundleName、moduleName和abilityName的label。使用callback异步回调。 获取调用方自身的信息时不需要权限。
 
 **起始版本：** 9
 
@@ -74,9 +72,7 @@ try {
 function getAbilityLabel(bundleName: string, moduleName: string, abilityName: string): Promise<string>
 ```
 
-获取指定bundleName、moduleName和abilityName的label。使用Promise异步回调。
-
-获取调用方自身的信息时不需要权限。
+获取指定bundleName、moduleName和abilityName的label。使用Promise异步回调。 获取调用方自身的信息时不需要权限。
 
 **起始版本：** 9
 

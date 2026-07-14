@@ -52,8 +52,7 @@ Format of the content.
 encryptedContentData?: Uint8Array
 ```
 
-Encrypted content data for detached CMS enveloped data, used when the CMS structure does not contain the
-encrypted content inline.
+Encrypted content data for detached CMS enveloped data, used when the CMS structure does not contain the encrypted content inline.
 
 **Type:** Uint8Array
 

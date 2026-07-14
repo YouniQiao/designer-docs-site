@@ -1,9 +1,6 @@
 # Ellipse
 
-椭圆绘制组件。
-
-> **说明：**
-
+椭圆绘制组件。 > **说明：**
 
 ## Ellipse
 
@@ -11,8 +8,7 @@
 Ellipse(options?: EllipseOptions)
 ```
 
-use new function to set the value.
-Anonymous Object Rectification.
+use new function to set the value. Anonymous Object Rectification.
 
 **起始版本：** 7
 

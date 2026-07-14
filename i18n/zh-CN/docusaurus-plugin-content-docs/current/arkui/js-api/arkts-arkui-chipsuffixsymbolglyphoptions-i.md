@@ -12,9 +12,7 @@ symbol类型后缀图标属性的无障碍朗读功能属性类型。
 action?: VoidCallback
 ```
 
-后缀图标设定事件。
-
-默认值：undefined
+后缀图标设定事件。 默认值：undefined
 
 **类型：** VoidCallback
 
@@ -32,9 +30,7 @@ action?: VoidCallback
 activatedAccessibility?: AccessibilityOptions
 ```
 
-激活态无障碍朗读功能属性。
-
-默认值：undefined
+激活态无障碍朗读功能属性。 默认值：undefined
 
 **类型：** AccessibilityOptions
 
@@ -52,9 +48,7 @@ activatedAccessibility?: AccessibilityOptions
 normalAccessibility?: AccessibilityOptions
 ```
 
-非激活态无障碍朗读功能属性。
-
-默认值：undefined
+非激活态无障碍朗读功能属性。 默认值：undefined
 
 **类型：** AccessibilityOptions
 

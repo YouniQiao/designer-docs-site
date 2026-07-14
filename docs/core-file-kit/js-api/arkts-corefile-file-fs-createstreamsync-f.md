@@ -12,8 +12,7 @@ import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventList
 declare function createStreamSync(path: string, mode: string): Stream
 ```
 
-Creates a stream based on a file path. This API returns the result synchronously. To close the stream, use
-**close()** of [Stream](arkts-corefile-stream-i.md).
+Creates a stream based on a file path. This API returns the result synchronously. To close the stream, use **close()** of [Stream](arkts-corefile-stream-i.md).
 
 **Since:** 9
 

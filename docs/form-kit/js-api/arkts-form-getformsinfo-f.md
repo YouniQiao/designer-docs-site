@@ -12,8 +12,7 @@ import { formProvider } from '@kit.FormKit';
 function getFormsInfo(filter: formInfo.FormInfoFilter, callback: AsyncCallback<Array<formInfo.FormInfo>>): void
 ```
 
-Obtains the application's widget information that meets a filter criterion on the device. This API uses an
-asynchronous callback to return the result.
+Obtains the application's widget information that meets a filter criterion on the device. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -68,8 +67,7 @@ try {
 function getFormsInfo(callback: AsyncCallback<Array<formInfo.FormInfo>>): void
 ```
 
-Obtains the application's widget information on the device. This API uses an asynchronous callback to return the
-result.
+Obtains the application's widget information on the device. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -119,8 +117,7 @@ try {
 function getFormsInfo(filter?: formInfo.FormInfoFilter): Promise<Array<formInfo.FormInfo>>
 ```
 
-Obtains information about widgets that meet the criteria of the current application. This API uses a promise to
-return the result.
+Obtains information about widgets that meet the criteria of the current application. This API uses a promise to return the result.
 
 **Since:** 9
 

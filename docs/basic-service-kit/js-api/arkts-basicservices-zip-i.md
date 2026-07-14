@@ -370,8 +370,7 @@ async function demo() {
 deflateEnd(strm: ZStream): Promise<ReturnStatus>
 ```
 
-Releases all dynamically allocated data structs of a decompression stream. This API uses a promise to return the
-result.
+Releases all dynamically allocated data structs of a decompression stream. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -443,8 +442,7 @@ async function demo() {
 deflateGetDictionary(strm: ZStream, dictionary: ArrayBuffer): Promise<DictionaryOutputInfo>
 ```
 
-Obtains the content and length of the decompression dictionary used in a compression stream. This API uses a
-promise to return the result.
+Obtains the content and length of the decompression dictionary used in a compression stream. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -517,8 +515,7 @@ async function demo() {
 deflateInit(strm: ZStream, level: CompressLevel): Promise<ReturnStatus>
 ```
 
-Initializes a compression stream with a specified compression level. This API uses a promise to return the
-result.
+Initializes a compression stream with a specified compression level. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -582,8 +579,7 @@ deflateInit2(strm: ZStream, level: CompressLevel, method: CompressMethod, window
         memLevel: MemLevel, strategy: CompressStrategy): Promise<ReturnStatus>
 ```
 
-Initializes a compression stream with the specified compression level, compression method, window size, memory
-level, and compression strategy. This API uses a promise to return the result.
+Initializes a compression stream with the specified compression level, compression method, window size, memory level, and compression strategy. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -720,8 +716,7 @@ async function demo() {
 deflatePending(strm: ZStream): Promise<DeflatePendingOutputInfo>
 ```
 
-Returns the number of bytes and bits of output that has been generated but not yet provided in the available
-output. This API uses a promise to return the result.
+Returns the number of bytes and bits of output that has been generated but not yet provided in the available output. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -857,8 +852,7 @@ async function demo() {
 deflateReset(strm: ZStream): Promise<ReturnStatus>
 ```
 
-Equivalent to call the **deflateEnd** API and then the **deflateInit** API. However, this API does not release or
-reallocate the internal decompression state. This API uses a promise to return the result.
+Equivalent to call the **deflateEnd** API and then the **deflateInit** API. However, this API does not release or reallocate the internal decompression state. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -925,8 +919,7 @@ async function demo() {
 deflateResetKeep(strm: ZStream): Promise<ReturnStatus>
 ```
 
-Resets the initialized compression stream, but retains the compression parameters and dictionaries set by it.
-This API uses a promise to return the result.
+Resets the initialized compression stream, but retains the compression parameters and dictionaries set by it. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -993,8 +986,7 @@ async function demo() {
 deflateSetDictionary(strm: ZStream, dictionary: ArrayBuffer): Promise<ReturnStatus>
 ```
 
-Initializes the compression dictionary from a given sequence of bytes. This API uses a promise to return the
-result.
+Initializes the compression dictionary from a given sequence of bytes. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -1062,8 +1054,7 @@ async function demo() {
 deflateSetHeader(strm: ZStream, head: GzHeader): Promise<ReturnStatus>
 ```
 
-Provides the header information of a gzip file when **deflateInit2()** requests a gzip stream. This API uses a
-promise to return the result.
+Provides the header information of a gzip file when **deflateInit2()** requests a gzip stream. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -1326,8 +1317,7 @@ async function demo() {
 inflateBack(strm: ZStream, backIn: InflateBackInputCallback, inDesc: object, backOut: InflateBackOutputCallback, outDesc: object): Promise<ReturnStatus>
 ```
 
-Implements decompression and uses callbacks to process input and output data. This API uses a promise to return
-the result.
+Implements decompression and uses callbacks to process input and output data. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -1502,8 +1492,7 @@ async function demo() {
 inflateBackEnd(strm: ZStream): Promise<ReturnStatus>
 ```
 
-Releases all memory allocated by the **inflateBackInit()** function. This API uses a promise to return the
-result.
+Releases all memory allocated by the **inflateBackInit()** function. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -1540,8 +1529,7 @@ For details about the sample code, see [inflateBack](#inflateback12).
 inflateBackInit(strm: ZStream, windowBits: number, window: ArrayBuffer): Promise<ReturnStatus>
 ```
 
-Initializes the internal stream state for decompression before using the **inflateBack()** function. This API
-uses a promise to return the result.
+Initializes the internal stream state for decompression before using the **inflateBack()** function. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -1580,8 +1568,7 @@ For details about the sample code, see [inflateBack](#inflateback12).
 inflateCodesUsed(strm: ZStream): Promise<number>
 ```
 
-Describes the number of Huffman trees used in a decompression stream. This API uses a promise to return the
-result.
+Describes the number of Huffman trees used in a decompression stream. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -1705,8 +1692,7 @@ async function demo() {
 inflateEnd(strm: ZStream): Promise<ReturnStatus>
 ```
 
-Releases all dynamically allocated data structs of a decompression stream. This API uses a promise to return the
-result.
+Releases all dynamically allocated data structs of a decompression stream. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -1773,8 +1759,7 @@ async function demo() {
 inflateGetDictionary(strm: ZStream, dictionary: ArrayBuffer): Promise<DictionaryOutputInfo>
 ```
 
-Obtains the content and length of the decompression dictionary used in a decompression stream. This API uses a
-promise to return the result.
+Obtains the content and length of the decompression dictionary used in a decompression stream. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -1837,8 +1822,7 @@ async function demo() {
 inflateGetHeader(strm: ZStream, header: GzHeader): Promise<ReturnStatus>
 ```
 
-Obtains the header information of a gzip file before decompressing data. This API uses a promise to return the
-result.
+Obtains the header information of a gzip file before decompressing data. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -1958,8 +1942,7 @@ zip.inflateInit({ nextIn: arrayBufferIn, availableIn: 1, nextOut: arrayBufferOut
 inflateInit2(strm: ZStream, windowBits: number): Promise<ReturnStatus>
 ```
 
-Initializes a decompression stream with the specified **windowBits**. This API uses a promise to return the
-result.
+Initializes a decompression stream with the specified **windowBits**. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -2079,9 +2062,7 @@ async function demo() {
 inflatePrime(strm: ZStream, bits: number, value: number): Promise<ReturnStatus>
 ```
 
-Sets the initial number of bits and bit value in the specified decompression stream to pre-fill the bit buffer at
-the beginning of the decompression stream to correctly process the data. This API uses a promise to return the
-result.
+Sets the initial number of bits and bit value in the specified decompression stream to pre-fill the bit buffer at the beginning of the decompression stream to correctly process the data. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -2145,8 +2126,7 @@ async function demo() {
 inflateReset(strm: ZStream): Promise<ReturnStatus>
 ```
 
-Resets the status of the specified decompression stream to the initial state to start a new decompression
-operation. The internal buffer is not released or reallocated. This API uses a promise to return the result.
+Resets the status of the specified decompression stream to the initial state to start a new decompression operation. The internal buffer is not released or reallocated. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -2208,8 +2188,7 @@ async function demo() {
 inflateReset2(strm: ZStream, windowBits: number): Promise<ReturnStatus>
 ```
 
-Resets the status of the specified decompression stream and updates the window size to start a new decompression
-operation. The internal buffer is not released or reallocated. This API uses a promise to return the result.
+Resets the status of the specified decompression stream and updates the window size to start a new decompression operation. The internal buffer is not released or reallocated. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -2272,8 +2251,7 @@ async function demo() {
 inflateResetKeep(strm: ZStream): Promise<ReturnStatus>
 ```
 
-Resets the state of the decompression stream to retain the allocated Huffman tree and preset dictionary. This API
-uses a promise to return the result.
+Resets the state of the decompression stream to retain the allocated Huffman tree and preset dictionary. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -2335,8 +2313,7 @@ async function demo() {
 inflateSetDictionary(strm: ZStream, dictionary: ArrayBuffer): Promise<ReturnStatus>
 ```
 
-Initializes the dictionary content of a decompression stream based on the given dictionary data. This API uses a
-promise to return the result.
+Initializes the dictionary content of a decompression stream based on the given dictionary data. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -2437,8 +2414,7 @@ async function demo() {
 inflateSync(strm: ZStream): Promise<ReturnStatus>
 ```
 
-Skips invalid compressed data until a possible complete refresh point is found. This API uses a promise to return
-the result.
+Skips invalid compressed data until a possible complete refresh point is found. This API uses a promise to return the result.
 
 **Since:** 12
 

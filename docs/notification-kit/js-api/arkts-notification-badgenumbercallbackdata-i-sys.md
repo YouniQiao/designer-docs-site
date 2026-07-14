@@ -1,6 +1,6 @@
 # BadgeNumberCallbackData (System API)
 
-Describes the badge number of the application has changed.
+Returns the changes of the application badge number.
 
 **Since:** 10
 
@@ -62,8 +62,7 @@ Bundle name of the application.
 readonly instanceKey?: number
 ```
 
-Key value of an application instance. This parameter is supported since API version 12 and
-deprecated since API version 15.You are advised to use **appInstanceKey** instead.
+Key value of an application instance. This parameter is supported since API version 12 and deprecated since API version 15.You are advised to use **appInstanceKey** instead.
 
 **Type:** number
 

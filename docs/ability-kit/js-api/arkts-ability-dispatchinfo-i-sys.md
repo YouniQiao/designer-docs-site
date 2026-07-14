@@ -1,13 +1,6 @@
 # DispatchInfo (System API)
 
-The module provides version information about the dispatchInfo struct and dispatch API. The information can be
-obtained through
-[freeInstall.getDispatchInfo](arkts-ability-getdispatchinfo-f-sys.md#getdispatchinfo-1)
-.
-
-> **NOTE**
->
-> The APIs provided by this module are system APIs.
+The module provides version information about the dispatchInfo struct and dispatch API. The information can be obtained through [freeInstall.getDispatchInfo](arkts-ability-getdispatchinfo-f-sys.md#getdispatchinfo-1) . > **NOTE** > > The APIs provided by this module are system APIs.
 
 **Since:** 9
 

@@ -1,12 +1,6 @@
 # DLPFile (System API)
 
-Provides APIs for managing DLP files. A **DLPFile** instance indicates a DLP file object. You can use
-[generateDLPFile](arkts-dataprotection-generatedlpfile-f-sys.md#generatedlpfile-1)
-or [openDLPFile](arkts-dataprotection-opendlpfile-f-sys.md#opendlpfile-1) to obtain a **DLPFile**
-instance. The **DLPFile** object represents an opened DLP file handle, which encapsulates all operation APIs for
-DLP files. After using the object, the system must call the
-[closeDLPFile](arkts-dataprotection-dlpfile-i-sys.md#closedlpfile-1) API to release resources to prevent file handle leaks.
-Authorization is required when the **DLPFile** object is transferred across processes.
+Provides APIs for managing DLP files. A **DLPFile** instance indicates a DLP file object. You can use [generateDLPFile](arkts-dataprotection-generatedlpfile-f-sys.md#generatedlpfile-1) or [openDLPFile](arkts-dataprotection-opendlpfile-f-sys.md#opendlpfile-1) to obtain a **DLPFile** instance. The **DLPFile** object represents an opened DLP file handle, which encapsulates all operation APIs for DLP files. After using the object, the system must call the [closeDLPFile](arkts-dataprotection-dlpfile-i-sys.md#closedlpfile-1) API to release resources to prevent file handle leaks. Authorization is required when the **DLPFile** object is transferred across processes.
 
 **Since:** 10
 
@@ -26,18 +20,7 @@ import { dlpPermission } from '@kit.DataProtectionKit';
 addDLPLinkFile(linkFileName: string): Promise<void>
 ```
 
-Adds a link file to the Filesystem in Userspace (FUSE). FUSE allows you to implement custom logic of the file
-system in user space. The link file is a virtual file in the FUSE, which is used to map to the DLP file. The
-read and write on the link file will be synchronized to the actual DLP file. This API uses a promise to
-return the result.
-
-After calling **addDLPLinkFile** to add a link file, the system needs to call
-[deleteDLPLinkFile](arkts-dataprotection-dlpfile-i-sys.md#deletedlplinkfile-1) to remove the DLP
-link file.
-
-When a DLP application needs to access a DLP file using a standard file API, it can add a link file as the
-virtual plaintext file to map the DLP file, and then perform read and write on the link file as it does on a
-common file.
+Adds a link file to the Filesystem in Userspace (FUSE). FUSE allows you to implement custom logic of the file system in user space. The link file is a virtual file in the FUSE, which is used to map to the DLP file. The read and write on the link file will be synchronized to the actual DLP file. This API uses a promise to return the result. After calling **addDLPLinkFile** to add a link file, the system needs to call [deleteDLPLinkFile](arkts-dataprotection-dlpfile-i-sys.md#deletedlplinkfile-1) to remove the DLP link file. When a DLP application needs to access a DLP file using a standard file API, it can add a link file as the virtual plaintext file to map the DLP file, and then perform read and write on the link file as it does on a common file.
 
 **Since:** 10
 
@@ -51,7 +34,7 @@ common file.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| linkFileName | string | Yes | Name of the link file in the FUSE. The value contains up to 255 bytes. Ifthe value is out of range, error code 19100001 is thrown. |
+| linkFileName | string | Yes | Name of the link file in the FUSE. The value contains up to 255 bytes. Ifthe value is out of range, error code 401 is thrown. |
 
 **Return value:**
 
@@ -109,14 +92,7 @@ ExampleFunction();
 addDLPLinkFile(linkFileName: string, callback: AsyncCallback<void>): void
 ```
 
-Adds a link file to the FUSE. This API uses an asynchronous callback to return the result. After this API is
-successfully called, a virtual file used to map the DLP file is created in the FUSE.
-
-After calling **addDLPLinkFile** to add a link file, the system needs to call
-[deleteDLPLinkFile](arkts-dataprotection-dlpfile-i-sys.md#deletedlplinkfile-1) to remove the DLP
-link file.
-
-This API is called when a DLP application needs to access a DLP file using a standard file API.
+Adds a link file to the FUSE. This API uses an asynchronous callback to return the result. After this API is successfully called, a virtual file used to map the DLP file is created in the FUSE. After calling **addDLPLinkFile** to add a link file, the system needs to call [deleteDLPLinkFile](arkts-dataprotection-dlpfile-i-sys.md#deletedlplinkfile-1) to remove the DLP link file. This API is called when a DLP application needs to access a DLP file using a standard file API.
 
 **Since:** 10
 
@@ -130,7 +106,7 @@ This API is called when a DLP application needs to access a DLP file using a sta
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| linkFileName | string | Yes | Name of the link file in the FUSE. The value contains up to 255 bytes. Ifthe value is out of range, error code 19100001 is thrown. |
+| linkFileName | string | Yes | Name of the link file in the FUSE. The value contains up to 255 bytes. Ifthe value is out of range, error code 401 is thrown. |
 | callback | AsyncCallback&lt;void&gt; | Yes | Callback used to receive the result of adding a link file. |
 
 **Error codes:**
@@ -186,16 +162,7 @@ ExampleFunction();
 closeDLPFile(): Promise<void>
 ```
 
-Closes a **DLPFile** object. This API uses a promise to return the result.
-
-After calling [openDLPFile](arkts-dataprotection-opendlpfile-f-sys.md#opendlpfile-1) to return a
-**DLPFile** object, the system must call **closeDLPFile()** to release resources after using the object.
-
-This API is used when the file owner decides to close a DLP file.
-
-> **NOTE**
->
-> If a DLP file is no longer used, close the **dlpFile** object to release the memory.
+Closes a **DLPFile** object. This API uses a promise to return the result. After calling [openDLPFile](arkts-dataprotection-opendlpfile-f-sys.md#opendlpfile-1) to return a **DLPFile** object, the system must call **closeDLPFile()** to release resources after using the object. This API is used when the file owner decides to close a DLP file. > **NOTE** > > If a DLP file is no longer used, close the **dlpFile** object to release the memory.
 
 **Since:** 10
 
@@ -259,16 +226,7 @@ ExampleFunction();
 closeDLPFile(callback: AsyncCallback<void>): void
 ```
 
-Closes a **DLPFile** object. This API uses an asynchronous callback to return the result.
-
-After calling **openDLPFile()** to return a **DLPFile** object, the system must call **closeDLPFile()** to
-release resources after using the object.
-
-This API is used when the file owner decides to close a DLP file.
-
-> **NOTE**
->
-> If a DLP file is no longer used, close the **dlpFile** instance to release the memory.
+Closes a **DLPFile** object. This API uses an asynchronous callback to return the result. After calling **openDLPFile()** to return a **DLPFile** object, the system must call **closeDLPFile()** to release resources after using the object. This API is used when the file owner decides to close a DLP file. > **NOTE** > > If a DLP file is no longer used, close the **dlpFile** instance to release the memory.
 
 **Since:** 10
 
@@ -336,13 +294,7 @@ ExampleFunction();
 deleteDLPLinkFile(linkFileName: string): Promise<void>
 ```
 
-Deletes a link file from the FUSE. This API uses a promise to return the result. After the API is
-successfully called, the specified link file is deleted from the FUSE.
-
-Before calling **deleteDLPLinkFile**, the system must call
-[addDLPLinkFile](arkts-dataprotection-dlpfile-i-sys.md#adddlplinkfile-1) to add a DLP link file.
-
-This API is used to clear the link file mapping after DLP file access is complete.
+Deletes a link file from the FUSE. This API uses a promise to return the result. After the API is successfully called, the specified link file is deleted from the FUSE. Before calling **deleteDLPLinkFile**, the system must call [addDLPLinkFile](arkts-dataprotection-dlpfile-i-sys.md#adddlplinkfile-1) to add a DLP link file. This API is used to clear the link file mapping after DLP file access is complete.
 
 **Since:** 10
 
@@ -356,7 +308,7 @@ This API is used to clear the link file mapping after DLP file access is complet
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| linkFileName | string | Yes | Name of the link file in the FUSE. The value contains up to 255 bytes. Ifthe value is out of range, error code 19100001 is thrown. |
+| linkFileName | string | Yes | Name of the link file in the FUSE. The value contains up to 255 bytes. Ifthe value is out of range, error code 401 is thrown. |
 
 **Return value:**
 
@@ -415,13 +367,7 @@ ExampleFunction();
 deleteDLPLinkFile(linkFileName: string, callback: AsyncCallback<void>): void
 ```
 
-Deletes a link file from the FUSE. This API uses an asynchronous callback to return the result. After the API
-is successfully called, the specified link file is deleted from the FUSE.
-
-Before calling **deleteDLPLinkFile**, the system must call
-[addDLPLinkFile](arkts-dataprotection-dlpfile-i-sys.md#adddlplinkfile-1) to add a DLP link file.
-
-This API is used to clear the link file mapping after DLP file access is complete.
+Deletes a link file from the FUSE. This API uses an asynchronous callback to return the result. After the API is successfully called, the specified link file is deleted from the FUSE. Before calling **deleteDLPLinkFile**, the system must call [addDLPLinkFile](arkts-dataprotection-dlpfile-i-sys.md#adddlplinkfile-1) to add a DLP link file. This API is used to clear the link file mapping after DLP file access is complete.
 
 **Since:** 10
 
@@ -435,7 +381,7 @@ This API is used to clear the link file mapping after DLP file access is complet
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| linkFileName | string | Yes | Name of the link file in the FUSE. The value contains up to 255 bytes. Ifthe value is out of range, error code 19100001 is thrown. |
+| linkFileName | string | Yes | Name of the link file in the FUSE. The value contains up to 255 bytes. Ifthe value is out of range, error code 401 is thrown. |
 | callback | AsyncCallback&lt;void&gt; | Yes | Callback used to receive the result of deleting a link file. |
 
 **Error codes:**
@@ -492,10 +438,7 @@ ExampleFunction();
 recoverDLPFile(plaintextFd: number): Promise<void>
 ```
 
-Recovers the plaintext of a DLP file. This API uses a promise to return the result.
-
-This API is used when the file owner decides to disable the DLP protection for a file and convert it into a
-common file for free sharing.
+Recovers the plaintext of a DLP file. This API uses a promise to return the result. This API is used when the file owner decides to disable the DLP protection for a file and convert it into a common file for free sharing.
 
 **Since:** 10
 
@@ -577,9 +520,7 @@ ExampleFunction();
 recoverDLPFile(plaintextFd: number, callback: AsyncCallback<void>): void
 ```
 
-Recovers the plaintext of a DLP file. This API uses an asynchronous callback to return the result.
-
-This API is used when the file owner decides to disable the DLP protection for a file.
+Recovers the plaintext of a DLP file. This API uses an asynchronous callback to return the result. This API is used when the file owner decides to disable the DLP protection for a file.
 
 **Since:** 10
 
@@ -658,10 +599,7 @@ ExampleFunction();
 replaceDLPLinkFile(linkFileName: string): Promise<void>
 ```
 
-Replaces a link file. This API uses a promise to return the result. After the API is successfully called, the
-current link file is replaced with the new link file.
-
-When you need to access a different DLP file, you can replace the link file to change the file mapping.
+Replaces a link file. This API uses a promise to return the result. After the API is successfully called, the current link file is replaced with the new link file. When you need to access a different DLP file, you can replace the link file to change the file mapping.
 
 **Since:** 10
 
@@ -675,7 +613,7 @@ When you need to access a different DLP file, you can replace the link file to c
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| linkFileName | string | Yes | Name of the link file in the FUSE. The value contains up to 255 bytes. Ifthe value is out of range, error code 19100001 is thrown. |
+| linkFileName | string | Yes | Name of the link file in the FUSE. The value contains up to 255 bytes. Ifthe value is out of range, error code 401 is thrown. |
 
 **Return value:**
 
@@ -736,10 +674,7 @@ ExampleFunction();
 replaceDLPLinkFile(linkFileName: string, callback: AsyncCallback<void>): void
 ```
 
-Replaces a link file. This API uses an asynchronous callback to return the result. After the API is
-successfully called, the current link file is replaced with the new link file.
-
-When you need to access a different DLP file, you can replace the link file.
+Replaces a link file. This API uses an asynchronous callback to return the result. After the API is successfully called, the current link file is replaced with the new link file. When you need to access a different DLP file, you can replace the link file.
 
 **Since:** 10
 
@@ -753,7 +688,7 @@ When you need to access a different DLP file, you can replace the link file.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| linkFileName | string | Yes | Name of the link file in the FUSE. The value contains up to 255 bytes. Ifthe value is out of range, error code 19100001 is thrown. |
+| linkFileName | string | Yes | Name of the link file in the FUSE. The value contains up to 255 bytes. Ifthe value is out of range, error code 401 is thrown. |
 | callback | AsyncCallback&lt;void&gt; | Yes | Callback used to receive the result of replacing a link file. Thecallback parameter is **err**. **err** is **undefined** when the operation is successful; otherwise,**err** is an error object. |
 
 **Error codes:**
@@ -812,13 +747,7 @@ ExampleFunction();
 resumeFuseLink(): Promise<void>
 ```
 
-Resumes the read and write on the FUSE. This API uses a promise to return the result. After the API is
-successfully called, the read and write on the link file are resumed.
-
-This API can be called to resume read and write only after
-[stopFuseLink](arkts-dataprotection-dlpfile-i-sys.md#stopfuselink-1) is called to stop the read and write operations.
-
-After the link file is replaced, the read and write need to be resumed for normal file access.
+Resumes the read and write on the FUSE. This API uses a promise to return the result. After the API is successfully called, the read and write on the link file are resumed. This API can be called to resume read and write only after [stopFuseLink](arkts-dataprotection-dlpfile-i-sys.md#stopfuselink-1) is called to stop the read and write operations. After the link file is replaced, the read and write need to be resumed for normal file access.
 
 **Since:** 10
 
@@ -885,13 +814,7 @@ ExampleFunction();
 resumeFuseLink(callback: AsyncCallback<void>): void
 ```
 
-Resumes the read and write on the FUSE. This API uses an asynchronous callback to return the result. After
-the API is successfully called, the read and write on the link file are resumed.
-
-This API can be called to resume read and write only after
-[stopFuseLink](arkts-dataprotection-dlpfile-i-sys.md#stopfuselink-1) is called to stop the read and write operations.
-
-After the link file is replaced, the read and write need to be resumed.
+Resumes the read and write on the FUSE. This API uses an asynchronous callback to return the result. After the API is successfully called, the read and write on the link file are resumed. This API can be called to resume read and write only after [stopFuseLink](arkts-dataprotection-dlpfile-i-sys.md#stopfuselink-1) is called to stop the read and write operations. After the link file is replaced, the read and write need to be resumed.
 
 **Since:** 10
 
@@ -962,13 +885,7 @@ ExampleFunction();
 stopFuseLink(): Promise<void>
 ```
 
-Stops the read and write on the FUSE. This API uses a promise to return the result. After the API is
-successfully called, the read and write on the link file are stopped.
-
-After calling **stopFuseLink** to stop the read and write operations on the FUSE, the system must call
-[resumeFuseLink](arkts-dataprotection-dlpfile-i-sys.md#resumefuselink-1) to resume the read and write operations.
-
-Before deleting a link file, stop the read and write to ensure secure file operations.
+Stops the read and write on the FUSE. This API uses a promise to return the result. After the API is successfully called, the read and write on the link file are stopped. After calling **stopFuseLink** to stop the read and write operations on the FUSE, the system must call [resumeFuseLink](arkts-dataprotection-dlpfile-i-sys.md#resumefuselink-1) to resume the read and write operations. Before deleting a link file, stop the read and write to ensure secure file operations.
 
 **Since:** 10
 
@@ -1033,13 +950,7 @@ ExampleFunction();
 stopFuseLink(callback: AsyncCallback<void>): void
 ```
 
-Stops the read and write on the FUSE. This API uses an asynchronous callback to return the result. After the
-API is successfully called, the read and write on the link file are stopped.
-
-After calling **stopFuseLink** to stop the read and write operations on the FUSE, the system must call
-[resumeFuseLink](arkts-dataprotection-dlpfile-i-sys.md#resumefuselink-1) to resume the read and write operations.
-
-Before deleting a link file, stop the read and write.
+Stops the read and write on the FUSE. This API uses an asynchronous callback to return the result. After the API is successfully called, the read and write on the link file are stopped. After calling **stopFuseLink** to stop the read and write operations on the FUSE, the system must call [resumeFuseLink](arkts-dataprotection-dlpfile-i-sys.md#resumefuselink-1) to resume the read and write operations. Before deleting a link file, stop the read and write.
 
 **Since:** 10
 

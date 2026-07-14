@@ -66,8 +66,7 @@ Obtains the group id of the form.
 isFontScaleFollowSystem?: boolean
 ```
 
-Obtains whether the font scaling factor follows system settings.
-<br>Default value:The default value is true.
+Obtains whether the font scaling factor follows system settings. <br>Default value:The default value is true.
 
 **Type:** boolean
 
@@ -155,9 +154,7 @@ Obtains whether the form is template form.
 readonly previewImages?: Array<number>
 ```
 
-Indicates the form previewImage IDs map corresponds to the \"supportDimensions\". The maximum length is +∞,
-positive
-integer.
+Indicates the form previewImage IDs map corresponds to the \"supportDimensions\". The maximum length is +∞, positive integer.
 
 **Type:** Array<number>
 

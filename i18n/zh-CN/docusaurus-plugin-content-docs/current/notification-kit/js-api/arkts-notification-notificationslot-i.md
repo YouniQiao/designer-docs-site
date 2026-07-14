@@ -1,6 +1,6 @@
 # NotificationSlot
 
-描述通知渠道，不同通知渠道对应的通知提醒方式不同。
+描述通知渠道，不同通知渠道对应的通知提醒方式不同。 > **说明：** > > 本模块首批接口从API version 7开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
 **起始版本：** 7
 
@@ -12,10 +12,7 @@
 badgeFlag?: boolean
 ```
 
-是否显示角标。
-
-- true：是。
-- false：否。默认值为true。
+是否显示角标。默认值为true。 - true：显示角标。 - false：不显示角标。
 
 **类型：** boolean
 
@@ -29,10 +26,7 @@ badgeFlag?: boolean
 bypassDnd?: boolean
 ```
 
-是否在系统中绕过免打扰模式。
-
-- true：是。
-- false：否。默认值为false。
+是否在系统中绕过免打扰模式。默认值为false。 - true：绕过免打扰模式，免打扰模式下仍会提醒。 - false：不绕过免打扰模式，免打扰模式下不提醒。
 
 **类型：** boolean
 
@@ -46,7 +40,7 @@ bypassDnd?: boolean
 desc?: string
 ```
 
-通知渠道描述信息。大小不超过243字节，超出部分会被截取。
+通知渠道描述信息。大小不超过243字节，超出部分会被截断。
 
 **类型：** string
 
@@ -60,10 +54,7 @@ desc?: string
 readonly enabled?: boolean
 ```
 
-表示是否允许发布此通知渠道的通知。
-
-- true：允许。
-- false：禁止。
+表示是否允许发布此通知渠道的通知。 - true：允许发布通知。 - false：禁止发布通知。
 
 **类型：** boolean
 
@@ -77,9 +68,7 @@ readonly enabled?: boolean
 level?: notification.SlotLevel
 ```
 
-通知级别。
-
-从API version 7开始支持，从API version 20开始废弃，建议使用notificationLevel替代。
+通知级别。 从API version 7开始支持，从API version 20开始废弃，建议使用notificationLevel替代。
 
 **类型：** notification.SlotLevel
 
@@ -111,10 +100,7 @@ lightColor?: number
 lightEnabled?: boolean
 ```
 
-是否闪灯。
-
-- true：是。
-- false：否。默认值为false。
+是否闪灯。默认值为false。 - true：闪灯。 - false：不闪灯。
 
 **类型：** boolean
 
@@ -142,7 +128,7 @@ lockscreenVisibility?: number
 notificationLevel?: notificationManager.SlotLevel
 ```
 
-通知级别。
+通知级别，用于描述该渠道类型通知的显示优先级和提醒强度。
 
 **类型：** notificationManager.SlotLevel
 
@@ -156,7 +142,7 @@ notificationLevel?: notificationManager.SlotLevel
 notificationType?: notificationManager.SlotType
 ```
 
-通道类型。
+描述通知渠道，不同通知渠道对应的通知提醒方式不同。
 
 **类型：** notificationManager.SlotType
 
@@ -170,7 +156,7 @@ notificationType?: notificationManager.SlotType
 sound?: string
 ```
 
-该渠道的通知的自定义铃声文件名。该文件放在resources/rawfile目录下，支持m4a、aac、mp3、ogg、wav、flac、amr等格式。大小不超过243字节，超出部分会被截取。
+该渠道的通知的自定义铃声文件名。该文件放在resources/rawfile目录下，支持m4a、aac、mp3、ogg、wav、flac、amr等格式。大小不超过243字节，超出部分会被截断。
 
 **类型：** string
 
@@ -184,9 +170,7 @@ sound?: string
 type?: notification.SlotType
 ```
 
-通道类型。
-
-从API version 7开始支持，从API version 11开始废弃，建议使用notificationType替代。
+渠道类型。 从API version 7开始支持，从API version 11开始废弃，建议使用notificationType替代。
 
 **类型：** notification.SlotType
 
@@ -204,10 +188,7 @@ type?: notification.SlotType
 vibrationEnabled?: boolean
 ```
 
-是否可振动。
-
-- true：是。
-- false：否。默认值为false。
+是否可振动。默认值为false。 - true：可振动。 - false：不可振动。
 
 **类型：** boolean
 

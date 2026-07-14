@@ -12,9 +12,7 @@ import { skillManager } from '@kit.AbilityKit';
 function getAllSkillInfos(flags: number, userId?: number): Promise<Array<SkillInfo>>
 ```
 
-Obtains all SkillInfo objects installed on the device.
-To query information for other local accounts, the permission
-ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS must additionally be granted.
+Obtains all SkillInfo objects installed on the device. To query information for other local accounts, the permission ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS must additionally be granted.
 
 **Since:** 26.0.0
 

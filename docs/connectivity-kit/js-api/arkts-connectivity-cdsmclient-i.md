@@ -1,11 +1,16 @@
 # CdsmClient
 
-Manages a CDSM client instance. Before invoking any CDSM client method,
-you must use {@link createCdsmClient} to create a CDSM client instance.
+Manages a CDSM client instance. Before invoking any CDSM client method, you must use {@link createCdsmClient} to create a CDSM client instance.
 
 **Since:** 26.0.0
 
 **System capability:** SystemCapability.Communication.NearLink.Base
+
+## Modules to Import
+
+```TypeScript
+import { cdsm } from '@kit.ConnectivityKit';
+```
 
 ## getCdsmInfo
 
@@ -63,11 +68,7 @@ Unsubscribes from coordinated devices set information change event.
 onCdsmInfoChange(callback: Callback<CdsmInfo>): void
 ```
 
-Subscribes to coordinated devices set information change event.
-
-This event is accessible only to applications that granted the ohos.permission.NEARLINK_ACCESS permission.
-If the application is granted the ohos.permission.GET_NEARLINK_PEER_MAC permission,
-the callback returns the real device address; otherwise, a random device address is returned.
+Subscribes to coordinated devices set information change event. This event is accessible only to applications that granted the ohos.permission.NEARLINK_ACCESS permission. If the application is granted the ohos.permission.GET_NEARLINK_PEER_MAC permission, the callback returns the real device address; otherwise, a random device address is returned.
 
 **Since:** 26.0.0
 

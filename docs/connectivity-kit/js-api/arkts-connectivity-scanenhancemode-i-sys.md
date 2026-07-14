@@ -38,8 +38,7 @@ The mode of scan enhance.
 timeout: number
 ```
 
-The duration of scan enhance.
-The value range is all integers.
+The duration of scan enhance. The value range is all integers.
 
 **Type:** number
 

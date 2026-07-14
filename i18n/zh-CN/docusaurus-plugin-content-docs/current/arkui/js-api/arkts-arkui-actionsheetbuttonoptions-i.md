@@ -1,10 +1,6 @@
 # ActionSheetButtonOptions
 
-弹窗中按钮的样式。
-
-> **说明：**
->
-> 为规范匿名对象的定义，API 18版本修改了此处的元素定义。其中，保留了历史匿名对象的起始版本信息，会出现外层元素@since版本号高于内层元素版本号的情况，但这不影响接口的使用。
+弹窗中按钮的样式。 > **说明：** > > 为规范匿名对象的定义，API 18版本修改了此处的元素定义。其中，保留了历史匿名对象的起始版本信息，会出现外层元素@since版本号高于内层元素版本号的情况，但这不影响接口的使用。
 
 **起始版本：** 18
 
@@ -32,9 +28,7 @@ Button选中时的回调。
 defaultFocus?: boolean
 ```
 
-设置Button是否是默认焦点，true表示Button是默认焦点，false表示Button不是默认焦点。
-
-默认值：false
+设置Button是否是默认焦点，true表示Button是默认焦点，false表示Button不是默认焦点。 默认值：false
 
 **类型：** boolean
 
@@ -54,9 +48,7 @@ defaultFocus?: boolean
 enabled?: boolean
 ```
 
-点击Button是否响应，true表示Button可以响应，false表示Button不可以响应。
-
-默认值：true
+点击Button是否响应，true表示Button可以响应，false表示Button不可以响应。 默认值：true
 
 **类型：** boolean
 
@@ -76,9 +68,7 @@ enabled?: boolean
 style?: DialogButtonStyle
 ```
 
-设置Button的风格样式。
-
-默认值：DialogButtonStyle.DEFAULT
+设置Button的风格样式。 默认值：DialogButtonStyle.DEFAULT
 
 **类型：** DialogButtonStyle
 
@@ -98,9 +88,7 @@ style?: DialogButtonStyle
 value: string | Resource
 ```
 
-Button文本内容。
-
-当文本内容过长无法显示时，用省略号代替未显示的部分。
+Button文本内容。 当文本内容过长无法显示时，用省略号代替未显示的部分。
 
 **类型：** string | Resource
 

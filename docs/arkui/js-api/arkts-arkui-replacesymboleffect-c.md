@@ -38,8 +38,7 @@ A constructor used to create an **AppearSymbolEffect** instance, which comes wit
 constructor(scope?: EffectScope, replaceType?: ReplaceEffectType)
 ```
 
-A constructor used to create a **ReplaceSymbolEffect** instance, which comes with a replace animation effect. The
-replace effect type can be specified.
+A constructor used to create a **ReplaceSymbolEffect** instance, which comes with a replace animation effect. The replace effect type can be specified.
 
 **Since:** 20
 
@@ -64,9 +63,7 @@ replace effect type can be specified.
 replaceType?: ReplaceEffectType
 ```
 
-Replacement effect type.
-
-Default value: **ReplaceEffectType.SEQUENTIAL**.
+Replacement effect type. Default value: **ReplaceEffectType.SEQUENTIAL**.
 
 **Type:** ReplaceEffectType
 
@@ -86,9 +83,7 @@ Default value: **ReplaceEffectType.SEQUENTIAL**.
 scope?: EffectScope
 ```
 
-Effect scope.
-
-Default value: **EffectScope.LAYER**
+Effect scope. Default value: **EffectScope.LAYER**
 
 **Type:** EffectScope
 

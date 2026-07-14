@@ -92,9 +92,7 @@ Called when the messages fail to be sent.
 message?: string
 ```
 
-Messages sent to the destination device.
-A maximum of 1 KB of data can be transmitted at a time.
-If more than 1 KB of data needs to be transmitted, split the messages into multiple parts to transmit.
+Messages sent to the destination device. A maximum of 1 KB of data can be transmitted at a time. If more than 1 KB of data needs to be transmitted, split the messages into multiple parts to transmit.
 
 **Type:** string
 

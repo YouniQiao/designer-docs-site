@@ -18,8 +18,7 @@ import { calendarManager } from '@kit.CalendarKit';
 latitude?: number
 ```
 
-Latitude of the location. The value range is [-90, 90]. The default value is **undefined**. If the value is out
-of the range, the map cannot be displayed properly.
+Latitude of the location. The value range is [-90, 90]. The default value is **undefined**. If the value is out of the range, the map cannot be displayed properly.
 
 **Type:** number
 
@@ -51,8 +50,7 @@ Location, with a maximum of 5,000 characters. If this parameter is not specified
 longitude?: number
 ```
 
-Longitude of the location. The value range is [-180, 180]. The default value is **undefined**. If the value is
-out of the range, the map cannot be displayed properly.
+Longitude of the location. The value range is [-180, 180]. The default value is **undefined**. If the value is out of the range, the map cannot be displayed properly.
 
 **Type:** number
 

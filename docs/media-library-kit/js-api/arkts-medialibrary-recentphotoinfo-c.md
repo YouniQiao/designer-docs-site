@@ -18,7 +18,7 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 dateTaken?: number
 ```
 
-The dateTaken of photos or videos
+Time when the recent image or video was shot (in milliseconds since January 1, 1970). The unit is ms.
 
 **Type:** number
 
@@ -34,7 +34,7 @@ The dateTaken of photos or videos
 identifier?: string
 ```
 
-The identifier of photos or videos
+Hash value of the name of the recent image or video, which is used to help the application determine whether the image or video to be displayed is the same as the one displayed before.
 
 **Type:** string
 

@@ -1,11 +1,6 @@
 # AVRecorderConfig
 
-Describes the audio and video recording parameters.
-
-The **audioSourceType** and **videoSourceType** parameters are used to distinguish audio-only recording,
-video-only recording, and audio and video recording. For audio-only recording, set only **audioSourceType**.
-For video-only recording, set only **videoSourceType**. For audio and video recording, set both **audioSourceType**
-and **videoSourceType**.
+音视频录制的参数。 audioSourceType和videoSourceType参数用于区分纯音频录制、纯视频录制和音视频录制。纯音频录制仅设置audioSourceType。纯视频录制仅设置videoSourceType。音视频录制需同时设置audioSourceType和videoSourceType。
 
 **起始版本：** 9
 
@@ -17,8 +12,7 @@ and **videoSourceType**.
 audioSourceType?: AudioSourceType
 ```
 
-Type of the audio source to record. This parameter is mandatory for audio recording.<br>**Atomic service API**:
-This API can be used in atomic services since API version 12.
+录制的音频源类型。录制音频时该参数为必填参数。<br>**原子化服务API**：从API version 12开始，该接口支持在原子化服务中使用。
 
 **类型：** AudioSourceType
 
@@ -34,7 +28,7 @@ This API can be used in atomic services since API version 12.
 fileGenerationMode?: FileGenerationMode
 ```
 
-Mode for creating the file, which is used together with on('photoAssetAvailable').
+文件创建模式，与on('photoAssetAvailable')配合使用。
 
 **类型：** FileGenerationMode
 
@@ -48,9 +42,7 @@ Mode for creating the file, which is used together with on('photoAssetAvailable'
 location?: Location
 ```
 
-Geographical location of the recorded video. By default, the geographical location information is not recorded.
-<br>This API is supported since API version 6 and deprecated since API version 12. You are advised to use
-**AVMetadata.location** instead. If both parameters are set, **AVMetadata.location** is used.
+录制视频的地理位置。默认不记录地理位置信息。<br>此接口从API version 6开始支持，从API version 12开始废弃，建议使用**AVMetadata.location**替代。如果同时设置了两个参数，将使用**AVMetadata.location**。
 
 **类型：** Location
 
@@ -68,10 +60,7 @@ Geographical location of the recorded video. By default, the geographical locati
 maxDuration?: number
 ```
 
-Maximum recording duration, in seconds. The value range is [1, 2^31-1]. If an invalid value is provided,
-it is reset to the maximum allowed duration. Once the recording reaches the specified duration,
-it stops automatically and notifies via the **stateChange** callback that the recording has stopped:
-AVRecorderState = 'stopped', StateChangeReason = BACKGROUND.
+最大录制时长，单位为秒。取值范围为[1, 2^31-1]。如果提供了无效值，将重置为最大允许时长。一旦录制达到指定时长，将自动停止并通过**stateChange**回调通知录制已停止：AVRecorderState = 'stopped'，StateChangeReason = BACKGROUND。
 
 **类型：** number
 
@@ -85,7 +74,7 @@ AVRecorderState = 'stopped', StateChangeReason = BACKGROUND.
 metadata?: AVMetadata
 ```
 
-Metadata. For details, see @AVMetadata.
+元数据。详见AVMetadata。
 
 **类型：** AVMetadata
 
@@ -99,8 +88,7 @@ Metadata. For details, see @AVMetadata.
 profile: AVRecorderProfile
 ```
 
-Recording profile. This parameter is mandatory.<br>**Atomic service API**: This API can be used in atomic
-services since API version 12.
+录制配置参数。此参数为必填参数。<br>**原子化服务API**：从API version 12开始，该接口支持在原子化服务中使用。
 
 **类型：** AVRecorderProfile
 
@@ -116,9 +104,7 @@ services since API version 12.
 rotation?: number
 ```
 
-Rotation angle of the recorded video. The value can be 0 (default), 90, 180, or 270 for MP4 videos.<br>This API
-is supported since API version 6 and deprecated since API version 12. You are advised to use
-**AVMetadata.videoOrientation** instead. If both parameters are set, **AVMetadata.videoOrientation** is used.
+录制视频的旋转角度。MP4视频取值可为0（默认）、90、180或270。<br>此接口从API version 6开始支持，从API version 12开始废弃，建议使用**AVMetadata.videoOrientation**替代。如果同时设置了两个参数，将使用**AVMetadata.videoOrientation**。
 
 **类型：** number
 
@@ -136,8 +122,7 @@ is supported since API version 6 and deprecated since API version 12. You are ad
 url: string
 ```
 
-Recording output URL: fd://xx (fd number).<br>This parameter is mandatory.<br>**Atomic service API**:
-This API can be used in atomic services since API version 12.
+录制输出URL：fd://xx（fd句柄）。<br>此参数为必填参数。<br>**原子化服务API**：从API version 12开始，该接口支持在原子化服务中使用。
 
 **类型：** string
 
@@ -153,7 +138,7 @@ This API can be used in atomic services since API version 12.
 videoSourceType?: VideoSourceType
 ```
 
-Type of the video source to record. This parameter is mandatory for video recording.
+录制的视频源类型。录制视频时该参数为必填参数。
 
 **类型：** VideoSourceType
 

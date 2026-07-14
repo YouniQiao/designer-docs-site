@@ -14,9 +14,7 @@ Defines the group notification information.
 groupTitle?: string
 ```
 
-Group title displayed after notifications are grouped.
-This parameter is valid only when the notification is the latest one in the notification group.
-This parameter is left empty by default.
+Group title displayed after notifications are grouped. This parameter is valid only when the notification is the latest one in the notification group. This parameter is left empty by default.
 
 **Type:** string
 
@@ -34,12 +32,7 @@ This parameter is left empty by default.
 isGroupIcon?: boolean
 ```
 
-Whether to use the **smallIcon** field in
-[NotificationRequest](@link ./notification/notificationRequest:NotificationRequest) as the group icon displayed
-after notifications are grouped. Whether to use the **smallIcon** field as the group icon when the notification
-is the latest one in the notification group and the **smallIcon** field is passed. The default value is **false**.
-- **true**: yes.
-- **false**: no.
+Whether to use the **smallIcon** field in [NotificationRequest](@link ./notification/notificationRequest:NotificationRequest) as the group icon displayed after notifications are grouped. Whether to use the **smallIcon** field as the group icon when the notification is the latest one in the notification group and the **smallIcon** field is passed. The default value is **false**. - **true**: yes. - **false**: no.
 
 **Type:** boolean
 

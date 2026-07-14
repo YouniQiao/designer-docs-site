@@ -12,9 +12,7 @@ import { bluetoothManager } from '@kit.ConnectivityKit';
 function cancelPairedDevice(deviceId: string): void
 ```
 
-Remove a paired remote device.
-On API 10 and above, the permission required by this interface is changed from DISCOVER_BLUETOOTH to
-ACCESS_BLUETOOTH.
+Remove a paired remote device. On API 10 and above, the permission required by this interface is changed from DISCOVER_BLUETOOTH to ACCESS_BLUETOOTH.
 
 **Since:** 9
 

@@ -134,8 +134,7 @@ struct Index {
 function on(type: 'mouse', rect: display.Rect[], receiver: Callback<MouseEvent>): void
 ```
 
-Enables listening for mouse events. When the mouse pointer moves to the specified rectangular area, a callback is
-triggered. This API uses an asynchronous callback to return the result.
+Enables listening for mouse events. When the mouse pointer moves to the specified rectangular area, a callback is triggered. This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -585,8 +584,7 @@ struct Index {
 function on(type: 'fingerprint', receiver: Callback<FingerprintEvent>): void
 ```
 
-Enables listening for fingerprint gesture input events. This API uses an asynchronous callback to return the
-result.
+Enables listening for fingerprint gesture input events. This API uses an asynchronous callback to return the result.
 
 **Since:** 12
 
@@ -830,8 +828,7 @@ struct Index {
 function on(type: 'keyPressed', keys: Array<KeyCode>, receiver: Callback<KeyEvent>): void
 ```
 
-Listens for the press and release events of the specified key, which can be the **META_LEFT**, **META_RIGHT**,
-power, or volume key. This API uses an asynchronous callback to return the result.
+Listens for the press and release events of the specified key, which can be the **META_LEFT**, **META_RIGHT**, power, or volume key. This API uses an asynchronous callback to return the result.
 
 **Since:** 15
 

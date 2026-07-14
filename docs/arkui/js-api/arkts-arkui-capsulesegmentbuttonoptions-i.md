@@ -1,7 +1,6 @@
 # CapsuleSegmentButtonOptions
 
-Provides configuration options for capsule-style segmented buttons. Inherits from
-[CapsuleSegmentButtonConstructionOptions](arkts-arkui-capsulesegmentbuttonconstructionoptions-i.md).
+Provides configuration options for capsule-style segmented buttons. Inherits from [CapsuleSegmentButtonConstructionOptions](arkts-arkui-capsulesegmentbuttonconstructionoptions-i.md).
 
 **Inheritance/Implementation:** CapsuleSegmentButtonOptions extends [CapsuleSegmentButtonConstructionOptions](arkts-arkui-capsulesegmentbuttonconstructionoptions-i.md)
 
@@ -21,13 +20,7 @@ import { CommonSegmentButtonOptions, SegmentButtonItemOptionsConstructorOptions,
 type: "capsule"
 ```
 
-Type of the **SegmentButton** component.
-
-**NOTE**
-
-**"tab"**: tab-style segmented buttons, designed for page or content section switching.
-
-**"capsule"**: capsule-style segmented buttons, suitable for single or multiple selection scenarios.
+Type of the **SegmentButton** component. **NOTE** **"tab"**: tab-style segmented buttons, designed for page or content section switching. **"capsule"**: capsule-style segmented buttons, suitable for single or multiple selection scenarios.
 
 **Type:** "capsule"
 

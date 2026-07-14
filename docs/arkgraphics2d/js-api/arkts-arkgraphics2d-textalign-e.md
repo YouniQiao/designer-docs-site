@@ -54,8 +54,7 @@ Center-aligned.
 JUSTIFY = 3
 ```
 
-Justified, which means that each line (except the last line) is stretched so that every line has equal width, and
-the left and right margins are straight.
+Justified, which means that each line (except the last line) is stretched so that every line has equal width, and the left and right margins are straight.
 
 **Since:** 12
 

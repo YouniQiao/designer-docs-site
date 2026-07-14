@@ -13,9 +13,7 @@ function encapsulate(keyAlias: string, params: HuksParam[],
       sharedKeyAlias?: string, sharedKeyParams?: HuksParam[]): Promise<HuksReturnResult>
 ```
 
-Post-Quantum Cryptography key encapsulation operation, supporting key management by HUKS
-or by the application itself. If the application chooses to manage the key,
-the symmetric key is carried in the outData field of HuksReturnResult.
+Post-Quantum Cryptography key encapsulation operation, supporting key management by HUKS or by the application itself. If the application chooses to manage the key, the symmetric key is carried in the outData field of HuksReturnResult.
 
 **Since:** 26.0.0
 

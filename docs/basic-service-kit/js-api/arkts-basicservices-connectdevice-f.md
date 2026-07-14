@@ -12,11 +12,7 @@ import { usbManager } from '@kit.BasicServicesKit';
 function connectDevice(device: USBDevice): Readonly<USBDevicePipe>
 ```
 
-Connects to the USB device based on the device information returned by **getDevices()**. If the USB service is
-abnormal, **undefined** may be returned. Check whether the return value of the API is empty.
-
-1. Call [usbManager.getDevices](arkts-basicservices-getdevices-f.md#getdevices-1) to obtain the USB device list.
-2. Call [usbManager.requestRight](arkts-basicservices-requestright-f.md#requestright-1) to request the device access permission.
+Connects to the USB device based on the device information returned by **getDevices()**. If the USB service is abnormal, **undefined** may be returned. Check whether the return value of the API is empty. 1. Call [usbManager.getDevices](arkts-basicservices-getdevices-f.md#getdevices-1) to obtain the USB device list. 2. Call [usbManager.requestRight](arkts-basicservices-requestright-f.md#requestright-1) to request the device access permission.
 
 **Since:** 9
 

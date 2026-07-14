@@ -1,7 +1,6 @@
 # Connection
 
-Represents a **Connection** object, which provides methods for connecting to and disconnecting from a peer device,
-obtaining the device's ID, sending data, and registering or unregistering event callbacks.
+Represents a **Connection** object, which provides methods for connecting to and disconnecting from a peer device, obtaining the device's ID, sending data, and registering or unregistering event callbacks.
 
 **Since:** 20
 
@@ -19,8 +18,7 @@ import { linkEnhance } from '@kit.DistributedServiceKit';
 close(): void
 ```
 
-Destroys the **Connection** object to release resources. If the device needs to interact with the peer device
-again, create a **Connection** object again and call `connect()` to initiate a connection.
+Destroys the **Connection** object to release resources. If the device needs to interact with the peer device again, create a **Connection** object again and call `connect()` to initiate a connection.
 
 **Since:** 20
 
@@ -121,8 +119,7 @@ try {
 disconnect(): void
 ```
 
-Disconnects from the peer device. The created **Connection** object remains valid after this API is called. You
-can call **connect()** to reconnect to the peer device if necessary.
+Disconnects from the peer device. The created **Connection** object remains valid after this API is called. You can call **connect()** to reconnect to the peer device if necessary.
 
 **Since:** 20
 
@@ -171,8 +168,7 @@ try {
 getPeerDeviceId(): string
 ```
 
-Obtains the device ID of the peer device. This API is called when the connection is established successfully
-either by initiating a connection or accepting an incoming connection.
+Obtains the device ID of the peer device. This API is called when the connection is established successfully either by initiating a connection or accepting an incoming connection.
 
 **Since:** 20
 
@@ -279,8 +275,7 @@ try {
 off(type: 'disconnected', callback?: Callback<number>): void
 ```
 
-Unregisters the listener for **disconnected** events. This API uses an asynchronous callback to return the
-result.
+Unregisters the listener for **disconnected** events. This API uses an asynchronous callback to return the result.
 
 **Since:** 20
 
@@ -506,8 +501,7 @@ try {
 on(type: 'dataReceived', callback: Callback<ArrayBuffer>): void
 ```
 
-Registers a listener for the **dataReceived** events. This API uses an asynchronous callback to return the
-result.
+Registers a listener for the **dataReceived** events. This API uses an asynchronous callback to return the result.
 
 **Since:** 20
 
@@ -563,8 +557,7 @@ try {
 sendData(data: ArrayBuffer): void
 ```
 
-Sends data to the server after a connection is established successfully. When the server receives the connection
-callback, it can also send data to the client.
+Sends data to the server after a connection is established successfully. When the server receives the connection callback, it can also send data to the client.
 
 **Since:** 20
 

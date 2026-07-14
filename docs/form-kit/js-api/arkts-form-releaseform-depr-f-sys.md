@@ -6,9 +6,7 @@
 function releaseForm(formId: string, callback: AsyncCallback<void>): void
 ```
 
-Releases a widget. After this API is called, the application can no longer use the widget, but the Widget Manager
-still retains the widget cache and storage information. This API uses an asynchronous callback to return the
-result.
+Releases a widget. After this API is called, the application can no longer use the widget, but the Widget Manager still retains the widget cache and storage information. This API uses an asynchronous callback to return the result.
 
 **Since:** 8
 
@@ -36,9 +34,7 @@ result.
 function releaseForm(formId: string, isReleaseCache: boolean, callback: AsyncCallback<void>): void
 ```
 
-Releases a widget. After this API is called, the application can no longer use the widget, but the Widget Manager
-retains the storage information about the widget and retains or releases the cache information based on the
-setting. This API uses an asynchronous callback to return the result.
+Releases a widget. After this API is called, the application can no longer use the widget, but the Widget Manager retains the storage information about the widget and retains or releases the cache information based on the setting. This API uses an asynchronous callback to return the result.
 
 **Since:** 8
 
@@ -67,9 +63,7 @@ setting. This API uses an asynchronous callback to return the result.
 function releaseForm(formId: string, isReleaseCache?: boolean): Promise<void>
 ```
 
-Releases a widget. After this API is called, the application can no longer use the widget, but the Widget Manager
-retains the storage information about the widget and retains or releases the cache information based on the
-setting. This API uses a promise to return the result.
+Releases a widget. After this API is called, the application can no longer use the widget, but the Widget Manager retains the storage information about the widget and retains or releases the cache information based on the setting. This API uses a promise to return the result.
 
 **Since:** 8
 

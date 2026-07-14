@@ -1,12 +1,6 @@
 # PermissionDef（系统接口）
 
-[module.json5配置文件](../../../../quick-start/module-configuration-file.md)中定义的权限详细信息，通过接口
-[bundleManager.getPermissionDef](arkts-ability-getpermissiondef-f-sys.md#getpermissiondef-1)
-获取。
-
-> **说明：**
->
-> 本模块为系统接口。
+[module.json5配置文件](../../../../quick-start/module-configuration-file.md)中定义的权限详细信息，通过接口 [bundleManager.getPermissionDef](arkts-ability-getpermissiondef-f-sys.md#getpermissiondef-1) 获取。 > **说明：** > > 本模块为系统接口。
 
 **起始版本：** 9
 

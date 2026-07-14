@@ -1,6 +1,6 @@
 # NotificationSwitchChangedCallbackData（系统接口）
 
-描述通知开关状态变化的回调数据。
+通知开关状态变化的回调函数类型。
 
 **起始版本：** 26.0.0
 
@@ -50,8 +50,7 @@ readonly switchName: string
 readonly userId: number
 ```
 
-用户ID。
-取值为所有整数。
+用户ID。 取值为所有整数。
 
 **类型：** number
 

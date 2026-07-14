@@ -18,10 +18,7 @@ import { TreeListener, NodeParam, CallbackParam, TreeListenType, TreeView, TreeC
 addNode(nodeParam?: NodeParam): TreeController
 ```
 
-Initialize the interface of the tree view. This interface is used to generate ListNodeDataSource data.
-addNode is only designed for initialization. It can only be invoked during initialization.
-
-A maximum of 50 directory levels can be added.
+Initialize the interface of the tree view. This interface is used to generate ListNodeDataSource data. addNode is only designed for initialization. It can only be invoked during initialization. A maximum of 50 directory levels can be added.
 
 **Since:** 22
 
@@ -49,10 +46,7 @@ A maximum of 50 directory levels can be added.
 buildDone(): void
 ```
 
-After the initialization is complete by calling the addNode interface,
-call this interface to complete initialization.
-
-This interface must be called when you finish initializing the ListTreeView by addNode.
+After the initialization is complete by calling the addNode interface, call this interface to complete initialization. This interface must be called when you finish initializing the ListTreeView by addNode.
 
 **Since:** 22
 
@@ -68,8 +62,7 @@ This interface must be called when you finish initializing the ListTreeView by a
 modifyNode(): void
 ```
 
-Modify the node name.
-Register an ON_ITEM_MODIFY callback to obtain the ID, parent node ID, and node name of the modified node.
+Modify the node name. Register an ON_ITEM_MODIFY callback to obtain the ID, parent node ID, and node name of the modified node.
 
 **Since:** 22
 
@@ -109,8 +102,7 @@ This interface is called when a secondaryTitle needs to be updated
 removeNode(): void
 ```
 
-Delete a node.
-Register an ON_ITEM_DELETE callback through the ListTreeListener mechanism to obtain the IDs of all deleted nodes.
+Delete a node. Register an ON_ITEM_DELETE callback through the ListTreeListener mechanism to obtain the IDs of all deleted nodes.
 
 **Since:** 22
 

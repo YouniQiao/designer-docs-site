@@ -38,9 +38,7 @@ A constructor used to create an **AppearSymbolEffect** instance, which comes wit
 scope?: EffectScope
 ```
 
-Effect scope.
-
-Default value: **EffectScope.LAYER**
+Effect scope. Default value: **EffectScope.LAYER**
 
 **Type:** EffectScope
 

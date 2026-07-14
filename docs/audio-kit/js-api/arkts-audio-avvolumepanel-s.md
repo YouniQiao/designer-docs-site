@@ -18,8 +18,7 @@ import { AVVolumePanelParameter, AVVolumePanel } from '@kit.AudioKit';
 volumeLevel?: number
 ```
 
-Sets the device volume through the volume panel.
-The value should be between mininum and maxinum current device volume, otherwise it will be discarded.
+Sets the device volume through the volume panel. The value should be between mininum and maxinum current device volume, otherwise it will be discarded.
 
 **Type:** number
 

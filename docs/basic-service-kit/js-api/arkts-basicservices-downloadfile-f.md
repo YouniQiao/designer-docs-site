@@ -12,17 +12,7 @@ import { request } from '@kit.BasicServicesKit';
 function downloadFile(context: BaseContext, config: DownloadConfig, callback: AsyncCallback<DownloadTask>): void
 ```
 
-Downloads a file. This API uses an asynchronous callback to return the result. HTTP is supported. You can use
-[on('complete'|'pause'|'remove')](arkts-basicservices-downloadtask-i.md#on-2)
-to obtain the download task state, including task completion, pause, and removal. You can also use
-[on('fail')](arkts-basicservices-downloadtask-i.md#on-5) to obtain the task download
-error information.
-
-> **NOTE**
->
-> For details about how to obtain the context in the example, see
-> [Obtaining the Context of UIAbility](../../../../application-models/uiability-usage.md#obtaining-the-context-of-uiability)
-> .
+Downloads a file. This API uses an asynchronous callback to return the result. HTTP is supported. You can use [on('complete'|'pause'|'remove')](arkts-basicservices-downloadtask-i.md#on-2) to obtain the download task state, including task completion, pause, and removal. You can also use [on('fail')](arkts-basicservices-downloadtask-i.md#on-5) to obtain the task download error information. > **NOTE** > > For details about how to obtain the context in the example, see > [Obtaining the Context of UIAbility](../../../../application-models/uiability-usage.md#obtaining-the-context-of-uiability) > .
 
 **Since:** 9
 
@@ -80,17 +70,7 @@ try {
 function downloadFile(context: BaseContext, config: DownloadConfig): Promise<DownloadTask>
 ```
 
-Downloads a file. This API uses a promise to return the result. HTTP is supported. You can use
-[on('complete'|'pause'|'remove')](arkts-basicservices-downloadtask-i.md#on-2)
-to obtain the download task state, including task completion, pause, and removal. You can also use
-[on('fail')](arkts-basicservices-downloadtask-i.md#on-5) to obtain the task download
-error information.
-
-> **NOTE**
->
-> For details about how to obtain the context in the example, see
-> [Obtaining the Context of UIAbility](../../../../application-models/uiability-usage.md#obtaining-the-context-of-uiability)
-> .
+Downloads a file. This API uses a promise to return the result. HTTP is supported. You can use [on('complete'|'pause'|'remove')](arkts-basicservices-downloadtask-i.md#on-2) to obtain the download task state, including task completion, pause, and removal. You can also use [on('fail')](arkts-basicservices-downloadtask-i.md#on-5) to obtain the task download error information. > **NOTE** > > For details about how to obtain the context in the example, see > [Obtaining the Context of UIAbility](../../../../application-models/uiability-usage.md#obtaining-the-context-of-uiability) > .
 
 **Since:** 9
 

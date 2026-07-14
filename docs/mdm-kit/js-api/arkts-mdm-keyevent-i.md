@@ -1,8 +1,6 @@
 # KeyEvent
 
-Enumerates key events. When the
-[EnterpriseAdminExtensionAbility.onKeyEvent](arkts-mdm-enterpriseadminextensionability-c.md#onkeyevent-1)
-key event callback is triggered, the current key event information is transferred.
+Enumerates key events. When the [EnterpriseAdminExtensionAbility.onKeyEvent](arkts-mdm-enterpriseadminextensionability-c.md#onkeyevent-1) key event callback is triggered, the current key event information is transferred.
 
 **Since:** 23
 
@@ -20,10 +18,7 @@ import { systemManager } from '@kit.MDMKit';
 actionTime: number
 ```
 
-Time when the key action occurs. The value is a microsecond-level timestamp after the system is powered on. For
-long-press key events, this parameter remains unchanged in subsequent key events. Apps can use this timestamp to
-determine whether the event is a long-press event and execute the corresponding long-press event logic
-accordingly.
+Time when the key action occurs. The value is a microsecond-level timestamp after the system is powered on. For long-press key events, this parameter remains unchanged in subsequent key events. Apps can use this timestamp to determine whether the event is a long-press event and execute the corresponding long-press event logic accordingly.
 
 **Type:** number
 

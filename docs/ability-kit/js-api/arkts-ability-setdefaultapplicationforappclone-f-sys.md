@@ -12,8 +12,7 @@ import { defaultAppManager } from '@kit.AbilityKit';
 function setDefaultApplicationForAppClone(type: string, elementName: ElementName, appIndex: number, userId?: number): void
 ```
 
-Sets an application clone as the default application of the specified type. This API returns the result
-synchronously.
+Sets an application clone as the default application of the specified type. This API returns the result synchronously.
 
 **Since:** 23
 

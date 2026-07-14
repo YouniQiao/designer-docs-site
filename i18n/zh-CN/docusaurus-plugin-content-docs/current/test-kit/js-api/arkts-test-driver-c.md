@@ -1,7 +1,6 @@
 # Driver
 
-Driver类为uitest测试框架的总入口，提供控件匹配/查找，按键注入，坐标点击/滑动，截图等能力。
-该类提供的方法除Driver.create()和Driver.createUIEventObserver()以外的所有方法都使用Promise方式作为异步方法，需使用await方式调用。
+Driver类为uitest测试框架的总入口，提供控件匹配/查找，按键注入，坐标点击/滑动，截图等能力。 该类提供的方法除Driver.create()和Driver.createUIEventObserver()以外的所有方法都使用Promise方式作为异步方法，需使用await方式调用。
 
 **起始版本：** 9
 
@@ -1215,11 +1214,7 @@ async function demo() {
 injectKnucklePointerAction(pointers: PointerMatrix, speed?: number): Promise<void>
 ```
 
-模拟指关节多点注入滑动操作。使用Promise异步回调。
-
-> **说明：**
->
-> 若设备关闭了指关节手势<!--RP4--><!--RP4End-->，则调用本接口返回17000005错误码。
+模拟指关节多点注入滑动操作。使用Promise异步回调。 > **说明：** > > 若设备关闭了指关节手势<!--RP4--><!--RP4End-->，则调用本接口返回17000005错误码。
 
 **起始版本：** 22
 
@@ -1652,11 +1647,7 @@ async function demo() {
 knuckleKnock(pointers: Array<Point>, times: number): Promise<void>
 ```
 
-模拟指关节敲击屏幕操作。使用Promise异步回调。
-
-> **说明：**
->
-> 若设备关闭了指关节手势<!--RP4--><!--RP4End-->，则调用本接口返回17000005错误码。
+模拟指关节敲击屏幕操作。使用Promise异步回调。 > **说明：** > > 若设备关闭了指关节手势<!--RP4--><!--RP4End-->，则调用本接口返回17000005错误码。
 
 **起始版本：** 22
 
@@ -2047,8 +2038,7 @@ async function demo() {
 mouseDragWithOptions(from: Point, to: Point, touchOptions?: TouchOptions, keyOptions?: KeyOptions): Promise<void>
 ```
 
-按住鼠标左键并在屏幕上的指定点之间拖动，
-具有可选的触摸和按键设置。
+按住鼠标左键并在屏幕上的指定点之间拖动， 具有可选的触摸和按键设置。
 
 **起始版本：** 26.0.0
 
@@ -3442,14 +3432,7 @@ async function demo() {
 triggerPenKey(key: PenKey, mode: PenMode, operation: PenKeyOperation, options?: PenKeyOperationOptions): Promise<void>
 ```
 
-Trigger pen key operation.
-
-Supported combinations:
-
-- HANDWRITING mode: HANDWRITING key with CLICK or DOUBLE_CLICK operation.
-- AIR_MOUSE mode: AIR_MOUSE key with CLICK or DOUBLE_CLICK operation (requires point in options),
-HANDWRITING key with CLICK or DOUBLE_CLICK operation, SMART key with CLICK operation.
-Other combinations will result in a BusinessError 17000007.
+Trigger pen key operation. Supported combinations: - HANDWRITING mode: HANDWRITING key with CLICK or DOUBLE_CLICK operation. - AIR_MOUSE mode: AIR_MOUSE key with CLICK or DOUBLE_CLICK operation (requires point in options), HANDWRITING key with CLICK or DOUBLE_CLICK operation, SMART key with CLICK operation. Other combinations will result in a BusinessError 17000007.
 
 **起始版本：** 26.0.0
 

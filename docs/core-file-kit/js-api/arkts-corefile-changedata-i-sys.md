@@ -1,6 +1,6 @@
 # ChangeData (System API)
 
-the value of the monitor callback function
+Defines the return value of the listener callback.
 
 **Since:** 10
 
@@ -24,7 +24,7 @@ import { userFileManager } from '@kit.CoreFileKit';
 subUris: Array<string>
 ```
 
-change details of the Album's FileAssets when uris is the Album's uri type
+URIs of the changed files in the album. The value may be undefined. Check whether the value is undefined before using it.
 
 **Type:** Array<string>
 
@@ -42,7 +42,7 @@ change details of the Album's FileAssets when uris is the Album's uri type
 type: NotifyType
 ```
 
-the NotifyType of ChangeData
+Notification type.
 
 **Type:** NotifyType
 
@@ -62,7 +62,7 @@ the NotifyType of ChangeData
 uris: Array<string>
 ```
 
-all uris of the same NotifyType, could be FileAssets' or Albums'
+Array of all file asset or album URIs with the same [NotifyType](arkts-corefile-notifytype-e-sys.md).
 
 **Type:** Array<string>
 

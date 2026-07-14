@@ -12,9 +12,7 @@ Describes the divider style.
 color?: ResourceColor
 ```
 
-Color of the divider.
-
-Default value: **#33182431**
+Color of the divider. Default value: **#33182431**
 
 **Type:** ResourceColor
 
@@ -32,13 +30,7 @@ Default value: **#33182431**
 endMargin?: Length
 ```
 
-Distance between the divider and the bottom of the sidebar. It cannot be set in percentage.
-
-Default value: **0.0**
-
-Unit: vp
-
-Value range: [0, +∞)
+Distance between the divider and the bottom of the sidebar. It cannot be set in percentage. Default value: **0.0** Unit: vp Value range: [0, +∞)
 
 **Type:** Length
 
@@ -58,13 +50,7 @@ Value range: [0, +∞)
 startMargin?: Length
 ```
 
-Distance between the divider and the top of the sidebar. It cannot be set in percentage.
-
-Default value: **0.0**
-
-Unit: vp
-
-Value range: [0, +∞)
+Distance between the divider and the top of the sidebar. It cannot be set in percentage. Default value: **0.0** Unit: vp Value range: [0, +∞)
 
 **Type:** Length
 
@@ -84,13 +70,7 @@ Value range: [0, +∞)
 strokeWidth: Length
 ```
 
-Width of the divider. It cannot be set in percentage.
-
-Default value: **0.0**
-
-Unit: vp
-
-Value range: [0, +∞)
+Width of the divider. It cannot be set in percentage. Default value: **0.0** Unit: vp Value range: [0, +∞)
 
 **Type:** Length
 

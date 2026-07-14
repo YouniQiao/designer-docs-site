@@ -1,7 +1,6 @@
 # WebDownloadItem
 
-Represents a download task, You can use this object to operate the corresponding download task.
-Currently, the maximum length of the download file name supported by **WebDownloadItem** is 255 bytes.
+Represents a download task, You can use this object to operate the corresponding download task. Currently, the maximum length of the download file name supported by **WebDownloadItem** is 255 bytes.
 
 **Since:** 11
 
@@ -365,9 +364,7 @@ Pause the web download.
 resume(): void
 ```
 
-Resume the web download.
-Use WebDownloadManager.resumeDownload to resume deserialized downloads.
-WebDownloadItem.resume is only used to resume the currently paused download.
+Resume the web download. Use WebDownloadManager.resumeDownload to resume deserialized downloads. WebDownloadItem.resume is only used to resume the currently paused download.
 
 **Since:** 11
 
@@ -407,15 +404,7 @@ Serialize web download to typed array.
 start(downloadPath: string): void
 ```
 
-Start the web download.
-<p><strong>API Note</strong>:<br>
-This API must be used in the **onBeforeDownload** callback of **WebDownloadDelegate**. If it is not called in
-the callback, the download task remains in the PENDING state and is downloaded to a temporary directory. After
-the target path is specified by **WebDownloadItem.start**, the temporary files are renamed to the target path
-and the unfinished files are directly downloaded to the target path. If you do not want to download the file to
-the temporary directory before invoking **WebDownloadItem.start**, you can call **WebDownloadItem.cancel** to
-cancel the current download task and then call **WebDownloadManager.resumeDownload** to resume the task.
-</p>
+Start the web download. <p><strong>API Note</strong>:<br> This API must be used in the **onBeforeDownload** callback of **WebDownloadDelegate**. If it is not called in the callback, the download task remains in the PENDING state and is downloaded to a temporary directory. After the target path is specified by **WebDownloadItem.start**, the temporary files are renamed to the target path and the unfinished files are directly downloaded to the target path. If you do not want to download the file to the temporary directory before invoking **WebDownloadItem.start**, you can call **WebDownloadItem.cancel** to cancel the current download task and then call **WebDownloadManager.resumeDownload** to resume the task. </p>
 
 **Since:** 11
 

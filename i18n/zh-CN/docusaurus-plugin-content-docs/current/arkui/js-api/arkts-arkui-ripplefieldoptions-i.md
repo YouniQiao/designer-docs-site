@@ -12,8 +12,7 @@
 amplitude?: number
 ```
 
-The amplitude of the ripple field. The greater the amplitude, the stronger the force of the ripple field.
-Range of values:[0, +∞)
+The amplitude of the ripple field. The greater the amplitude, the stronger the force of the ripple field. Range of values:[0, +∞)
 
 **类型：** number
 
@@ -33,8 +32,7 @@ Range of values:[0, +∞)
 attenuation?: number
 ```
 
-The attenuation coefficient of the ripple field. The larger the attenuation coefficient, the faster the wave
-attenuates over time. Range of values:[0,1]
+The attenuation coefficient of the ripple field. The larger the attenuation coefficient, the faster the wave attenuates over time. Range of values:[0,1]
 
 **类型：** number
 
@@ -54,8 +52,7 @@ attenuates over time. Range of values:[0,1]
 center?: PositionT<number>
 ```
 
-The central point where the ripple field generates force. The top-left corner of the component is the origin of
-coordinates. The coordinate unit is vp.
+The central point where the ripple field generates force. The top-left corner of the component is the origin of coordinates. The coordinate unit is vp.
 
 **类型：** PositionT<number>
 
@@ -95,8 +92,7 @@ The region influenced by the ripple field.
 waveSpeed?: number
 ```
 
-Wave speed. The greater the wave speed, the faster the wave changes over time, and the more pronounced the wave
-motion. Range of values:[0, +∞)
+Wave speed. The greater the wave speed, the faster the wave changes over time, and the more pronounced the wave motion. Range of values:[0, +∞)
 
 **类型：** number
 
@@ -116,9 +112,7 @@ motion. Range of values:[0, +∞)
 wavelength?: number
 ```
 
-Wavelength, which is the distance over which a wave cycle changes. The larger
-the wavelength, the slower the wave changes with distance, and the less pronounced the wave fluctiations.
-Range of values:[0, +∞)
+Wavelength, which is the distance over which a wave cycle changes. The larger the wavelength, the slower the wave changes with distance, and the less pronounced the wave fluctiations. Range of values:[0, +∞)
 
 **类型：** number
 

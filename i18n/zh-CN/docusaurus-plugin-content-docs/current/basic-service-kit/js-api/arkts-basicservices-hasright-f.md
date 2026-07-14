@@ -6,8 +6,7 @@
 function hasRight(deviceName: string): boolean
 ```
 
-判断是否有权访问该设备。
-如果“使用者”（如各种App或系统）有权访问设备则返回true；无权访问设备则返回false。
+判断是否有权访问该设备。 如果“使用者”（如各种App或系统）有权访问设备则返回true；无权访问设备则返回false。
 
 **起始版本：** 9
 
@@ -35,7 +34,7 @@ function hasRight(deviceName: string): boolean
 **示例：**
 
 ```TypeScript
-function hasRight(): boolean {
+async function hasRight(): boolean {
   let devicesList: Array<usbManager.USBDevice> = usbManager.getDevices();
   if (!devicesList || devicesList.length == 0) {
     console.info(`device list is empty`);
@@ -43,7 +42,7 @@ function hasRight(): boolean {
   }
 
   let device: usbManager.USBDevice = devicesList?.[0];
-  usbManager.requestRight(device.name);
+  await usbManager.requestRight(device.name);
   let right: boolean = usbManager.hasRight(device.name);
   console.info(`${right}`);
   return right;

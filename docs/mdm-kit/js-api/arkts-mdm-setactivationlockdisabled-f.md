@@ -12,8 +12,7 @@ import { systemManager } from '@kit.MDMKit';
 function setActivationLockDisabled(admin: Want, isDisabled: boolean, credential?: string): Promise<void>
 ```
 
-Enables or disables the device activation lock. After the device activation lock is disabled, the Find Device
-function will no longer be available. This function applies only to specific devices.<!--RP5--><!--RP5End-->
+Enables or disables the device activation lock. After the device activation lock is disabled, the Find Device function will no longer be available. This function applies only to specific devices.<!--RP5--><!--RP5End-->
 
 **Since:** 24
 

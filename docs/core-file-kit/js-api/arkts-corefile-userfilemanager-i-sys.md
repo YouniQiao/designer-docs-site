@@ -6,7 +6,7 @@ Defines the UserFileManager class and provides functions to access the data in u
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [photoAccessHelper:photoAccessHelper](../../apis-media-library-kit/arkts-apis/arkts-file-photoaccesshelper.md)
+**Substitutes:** [PhotoAccessHelper](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-i.md)
 
 **System capability:** SystemCapability.FileManagement.UserFileManager.Core
 
@@ -24,7 +24,7 @@ import { userFileManager } from '@kit.CoreFileKit';
 createAlbum(name: string, callback: AsyncCallback<Album>): void
 ```
 
-Create a generic user album.
+Creates an album. This API uses an asynchronous callback to return the result. The album name must meet the following requirements: - The album name is a string of 1 to 255 characters. - The album name cannot contain any of the following characters: . .. \ / : * ? " ' ` < > | { } [ ] - The album name is case-insensitive. - Duplicate album names are not allowed.
 
 **Since:** 10
 
@@ -42,8 +42,8 @@ Create a generic user album.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| name | string | Yes | Album name to be created. |
-| callback | AsyncCallback&lt;Album&gt; | Yes | Returns the instance of newly created Album |
+| name | string | Yes | Name of the album to create. |
+| callback | AsyncCallback&lt;Album&gt; | Yes | Callback used to return the created album instance. |
 
 **Example**
 
@@ -70,7 +70,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 createAlbum(name: string): Promise<Album>
 ```
 
-Create a generic user album.
+Creates an album. This API uses a promise to return the result. The album name must meet the following requirements: - The album name is a string of 1 to 255 characters. - The album name cannot contain any of the following characters: . .. \ / : * ? " ' ` < > | { } [ ] - The album name is case-insensitive. - Duplicate album names are not allowed.
 
 **Since:** 10
 
@@ -88,13 +88,13 @@ Create a generic user album.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| name | string | Yes | Album name to be created. |
+| name | string | Yes | Name of the album to create. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Album&gt; | Returns the instance of newly created Album |
+| Promise&lt;Album&gt; | Promise that returns the created album instance. |
 
 **Example**
 
@@ -121,7 +121,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 createAudioAsset(displayName: string, callback: AsyncCallback<FileAsset>): void
 ```
 
-Create Audio Asset
+Creates an audio asset. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -137,8 +137,8 @@ Create Audio Asset
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| displayName | string | Yes | File name |
-| callback | AsyncCallback&lt;FileAsset&gt; | Yes | Callback used to return the FileAsset |
+| displayName | string | Yes | File name of the audio asset to create. |
+| callback | AsyncCallback&lt;FileAsset&gt; | Yes | Callback used to return the created audio asset. |
 
 **Error codes:**
 
@@ -173,13 +173,11 @@ async function example(mgr: userFileManager.UserFileManager) {
 createAudioAsset(displayName: string): Promise<FileAsset>
 ```
 
-Create Audio Asset
+Creates an audio asset. This API uses a promise to return the result.
 
 **Since:** 10
 
 **Deprecated since:** 26.0.0
-
-**Substitutes:** [AudioViewPicker](arkts-corefile-audioviewpicker-c.md)
 
 **Required permissions:** ohos.permission.WRITE_AUDIO
 
@@ -191,13 +189,13 @@ Create Audio Asset
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| displayName | string | Yes | File name |
+| displayName | string | Yes | File name of the audio asset to create. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;FileAsset&gt; | A Promise instance used to return the FileAsset |
+| Promise&lt;FileAsset&gt; | Promise that returns the created audio asset. |
 
 **Error codes:**
 
@@ -230,7 +228,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 createPhotoAsset(displayName: string, albumUri: string, callback: AsyncCallback<FileAsset>): void
 ```
 
-Create Photo Asset
+Creates an image or video asset with the specified file name and URI. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -248,9 +246,9 @@ Create Photo Asset
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| displayName | string | Yes | File name |
-| albumUri | string | Yes | Asset will put into the album. |
-| callback | AsyncCallback&lt;FileAsset&gt; | Yes | Callback used to return the FileAsset |
+| displayName | string | Yes | File name of the image or video to create. |
+| albumUri | string | Yes | URI of the album where the image or video is located. |
+| callback | AsyncCallback&lt;FileAsset&gt; | Yes | Callback used to return the image or video created. |
 
 **Error codes:**
 
@@ -293,7 +291,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 createPhotoAsset(displayName: string, callback: AsyncCallback<FileAsset>): void
 ```
 
-Create Photo Asset
+Creates an image or video asset with the specified file name. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -311,8 +309,8 @@ Create Photo Asset
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| displayName | string | Yes | File name |
-| callback | AsyncCallback&lt;FileAsset&gt; | Yes | Callback used to return the FileAsset |
+| displayName | string | Yes | File name of the image or video to create. |
+| callback | AsyncCallback&lt;FileAsset&gt; | Yes | Callback used to return the image or video created. |
 
 **Error codes:**
 
@@ -347,7 +345,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 createPhotoAsset(displayName: string, albumUri?: string): Promise<FileAsset>
 ```
 
-Create Photo Asset
+Creates an image or video asset with the specified file name and album URI. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -365,14 +363,14 @@ Create Photo Asset
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| displayName | string | Yes | File name |
-| albumUri | string | No | Album uri is optional, PhotoAssets will put into the default album without albumUri |
+| displayName | string | Yes | File name of the image or video to create. |
+| albumUri | string | No | URI of the album where the image or video is located. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;FileAsset&gt; | A Promise instance used to return the FileAsset |
+| Promise&lt;FileAsset&gt; | Promise that returns the created image or video asset. |
 
 **Error codes:**
 
@@ -405,7 +403,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 createPhotoAsset(displayName: string, createOption: PhotoCreateOptions): Promise<FileAsset>
 ```
 
-Create Photo Asset
+Creates an image or video asset with the specified file name and options. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -423,14 +421,14 @@ Create Photo Asset
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| displayName | string | Yes | File name |
-| createOption | PhotoCreateOptions | Yes | Create operation |
+| displayName | string | Yes | File name of the image or video to create. |
+| createOption | PhotoCreateOptions | Yes | Options for creating an image or video asset. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;FileAsset&gt; | A Promise instance used to return the FileAsset |
+| Promise&lt;FileAsset&gt; | Promise that returns the created image or video asset. |
 
 **Error codes:**
 
@@ -466,7 +464,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 createPhotoAsset(displayName: string, createOption: PhotoCreateOptions, callback: AsyncCallback<FileAsset>): void
 ```
 
-Create Photo Asset
+Creates an image or video asset with the specified file name and options. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -484,9 +482,9 @@ Create Photo Asset
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| displayName | string | Yes | File name |
-| createOption | PhotoCreateOptions | Yes | Photo create operation |
-| callback | AsyncCallback&lt;FileAsset&gt; | Yes | Callback used to return the FileAsset |
+| displayName | string | Yes | File name of the image or video to create. |
+| createOption | PhotoCreateOptions | Yes | Options for creating an image or video asset. |
+| callback | AsyncCallback&lt;FileAsset&gt; | Yes | Callback used to return the image or video created. |
 
 **Error codes:**
 
@@ -524,7 +522,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 delete(uri: string, callback: AsyncCallback<void>): void
 ```
 
-Delete Asset
+Deletes a media file. This API uses an asynchronous callback to return the result. The deleted file is moved to the recycle bin. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -542,8 +540,8 @@ Delete Asset
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uri | string | Yes | Uri of FileAsset |
-| callback | AsyncCallback&lt;void&gt; | Yes | No value returned |
+| uri | string | Yes | URI of the media file. |
+| callback | AsyncCallback&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Error codes:**
 
@@ -594,7 +592,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 delete(uri: string): Promise<void>
 ```
 
-Delete Asset
+Deletes media assets. The deleted assets are moved to the trash. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -612,13 +610,13 @@ Delete Asset
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uri | string | Yes | Uri of FileAsset |
+| uri | string | Yes | URI of the media file. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | A Promise instance, no value returned |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -662,7 +660,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 deleteAlbums(albums: Array<Album>, callback: AsyncCallback<void>): void
 ```
 
-Delete generic user-created albums.
+Deletes user albums. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -680,8 +678,8 @@ Delete generic user-created albums.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| albums | Array&lt;Album&gt; | Yes | Specify which album to delete |
-| callback | AsyncCallback&lt;void&gt; | Yes | Returns void |
+| albums | Array&lt;Album&gt; | Yes | Albums to delete. |
+| callback | AsyncCallback&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Example**
 
@@ -719,7 +717,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 deleteAlbums(albums: Array<Album>): Promise<void>
 ```
 
-Delete generic user-created albums.
+Deletes user albums. This API uses a promise to return the result.
 
 **Since:** 10
 
@@ -737,13 +735,13 @@ Delete generic user-created albums.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| albums | Array&lt;Album&gt; | Yes | Specify which album to delete |
+| albums | Array&lt;Album&gt; | Yes | Albums to delete. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Returns the promise |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 
@@ -781,7 +779,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 getActivePeers(callback: AsyncCallback<Array<PeerInfo>>): void
 ```
 
-Get Active Peer device information
+Obtains information about online peer devices. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -795,7 +793,7 @@ Get Active Peer device information
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;Array&lt;PeerInfo&gt;&gt; | Yes | Callback return the list of the active peer devices' information |
+| callback | AsyncCallback&lt;Array&lt;PeerInfo&gt;&gt; | Yes | Callback used to return a list of online peer devices. |
 
 **Example**
 
@@ -824,7 +822,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 getActivePeers(): Promise<Array<PeerInfo>>
 ```
 
-Get Active Peer device information
+Obtains the information about online peer devices. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -838,7 +836,7 @@ Get Active Peer device information
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Array&lt;PeerInfo&gt;&gt; | Promise used to return the list of the active peer devices' information |
+| Promise&lt;Array&lt;PeerInfo&gt;&gt; | Promise that returns a list of online peer devices. |
 
 **Example**
 
@@ -875,7 +873,7 @@ getAlbums(
     ): void
 ```
 
-Obtains albums based on the retrieval options and album types.
+Obtains albums based on the specified options and album type. This API uses an asynchronous callback to return the result. This API cannot be used to obtain hidden albums. Use [getHiddenAlbums](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-i-sys.md#gethiddenalbums-1) to obtain hidden albums. Before the operation, ensure that the albums to obtain exist.
 
 **Since:** 10
 
@@ -893,10 +891,10 @@ Obtains albums based on the retrieval options and album types.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | AlbumType | Yes | Album type. |
-| subType | AlbumSubType | Yes | Album subtype. |
-| options | FetchOptions | Yes | options to fetch albums |
-| callback | AsyncCallback&lt;FetchResult&lt;Album&gt;&gt; | Yes | Returns the fetch result of the albums |
+| type | AlbumType | Yes | Type of the album to obtain. |
+| subType | AlbumSubType | Yes | Subtype of the album. |
+| options | FetchOptions | Yes | Retrieval options. |
+| callback | AsyncCallback&lt;FetchResult&lt;Album&gt;&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -943,7 +941,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 getAlbums(type: AlbumType, subType: AlbumSubType, callback: AsyncCallback<FetchResult<Album>>): void
 ```
 
-Obtains albums based on the album types.
+Obtains albums by type. This API uses an asynchronous callback to return the result. This API cannot be used to obtain hidden albums. Use [getHiddenAlbums](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-i-sys.md#gethiddenalbums-1) to obtain hidden albums. Before the operation, ensure that the albums to obtain exist.
 
 **Since:** 10
 
@@ -961,9 +959,9 @@ Obtains albums based on the album types.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | AlbumType | Yes | Album type. |
-| subType | AlbumSubType | Yes | Album subtype. |
-| callback | AsyncCallback&lt;FetchResult&lt;Album&gt;&gt; | Yes | Returns the fetch result of the albums |
+| type | AlbumType | Yes | Type of the album to obtain. |
+| subType | AlbumSubType | Yes | Subtype of the album. |
+| callback | AsyncCallback&lt;FetchResult&lt;Album&gt;&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -1002,7 +1000,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 getAlbums(type: AlbumType, subType: AlbumSubType, options?: FetchOptions): Promise<FetchResult<Album>>
 ```
 
-Obtains albums based on the retrieval options and album types.
+Obtains albums based on the specified options and album type. This API uses a promise to return the result. This API cannot be used to obtain hidden albums. Use [getHiddenAlbums](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-i-sys.md#gethiddenalbums-1) to obtain hidden albums. Before the operation, ensure that the albums to obtain exist.
 
 **Since:** 10
 
@@ -1020,15 +1018,15 @@ Obtains albums based on the retrieval options and album types.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | AlbumType | Yes | Album type. |
-| subType | AlbumSubType | Yes | Album subtype. |
-| options | FetchOptions | No | -options to fetch albums |
+| type | AlbumType | Yes | Type of the album to obtain. |
+| subType | AlbumSubType | Yes | Subtype of the album. |
+| options | FetchOptions | No | Options for fetching the albums. If this parameter is not specified, thealbums are obtained based on the album type by default. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;FetchResult&lt;Album&gt;&gt; | - Returns the fetch result of the albums |
+| Promise&lt;FetchResult&lt;Album&gt;&gt; | Promise that returns the albums. |
 
 **Error codes:**
 
@@ -1074,7 +1072,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 getAllPeers(callback: AsyncCallback<Array<PeerInfo>>): void
 ```
 
-Get all the peer devices' information
+Obtains information about all peer devices. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -1088,7 +1086,7 @@ Get all the peer devices' information
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;Array&lt;PeerInfo&gt;&gt; | Yes | Callback return the list of the all the peer devices' information |
+| callback | AsyncCallback&lt;Array&lt;PeerInfo&gt;&gt; | Yes | Callback used to return a list of online peer devices. |
 
 **Example**
 
@@ -1117,7 +1115,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 getAllPeers(): Promise<Array<PeerInfo>>
 ```
 
-Get all the peer devices' information
+Obtains the information about all peer devices. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -1131,7 +1129,7 @@ Get all the peer devices' information
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Array&lt;PeerInfo&gt;&gt; | Promise used to return the list of the all the peer devices' information |
+| Promise&lt;Array&lt;PeerInfo&gt;&gt; | Promise that returns the information obtained. |
 
 **Example**
 
@@ -1164,13 +1162,11 @@ async function example(mgr: userFileManager.UserFileManager) {
 getAudioAssets(options: FetchOptions, callback: AsyncCallback<FetchResult<FileAsset>>): void
 ```
 
-Query audio assets
+Obtains audio assets. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
 **Deprecated since:** 26.0.0
-
-**Substitutes:** [AudioViewPicker](arkts-corefile-audioviewpicker-c.md)
 
 **Required permissions:** ohos.permission.READ_AUDIO
 
@@ -1183,7 +1179,7 @@ Query audio assets
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | FetchOptions | Yes | Retrieval options. |
-| callback | AsyncCallback&lt;FetchResult&lt;FileAsset&gt;&gt; | Yes | Callback return the FetchResult. |
+| callback | AsyncCallback&lt;FetchResult&lt;FileAsset&gt;&gt; | Yes | Callback used to return the audio assets obtained. |
 
 **Error codes:**
 
@@ -1227,13 +1223,11 @@ async function example(mgr: userFileManager.UserFileManager) {
 getAudioAssets(options: FetchOptions): Promise<FetchResult<FileAsset>>
 ```
 
-Query audio assets
+Obtains an audio asset. This API uses a promise to return the result.
 
 **Since:** 9
 
 **Deprecated since:** 26.0.0
-
-**Substitutes:** [AudioViewPicker](arkts-corefile-audioviewpicker-c.md)
 
 **Required permissions:** ohos.permission.READ_AUDIO
 
@@ -1251,7 +1245,7 @@ Query audio assets
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;FetchResult&lt;FileAsset&gt;&gt; | A promise instance used to return the files in the format of a FetchResult instance |
+| Promise&lt;FetchResult&lt;FileAsset&gt;&gt; | Promise that returns the audio assets obtained. |
 
 **Error codes:**
 
@@ -1295,7 +1289,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 getPhotoAlbums(options: AlbumFetchOptions, callback: AsyncCallback<FetchResult<Album>>): void
 ```
 
-Obtains albums based on the retrieval options. This method uses an asynchronous callback to return.
+Obtains image and video albums. This API uses an asynchronous callback to return the result. This API cannot be used to obtain hidden albums. Use [getHiddenAlbums](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-i-sys.md#gethiddenalbums-1) to obtain hidden albums. This API will be deprecated. Use [getAlbums](arkts-corefile-userfilemanager-i-sys.md#getalbums-1) instead.
 
 **Since:** 9
 
@@ -1313,8 +1307,8 @@ Obtains albums based on the retrieval options. This method uses an asynchronous 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| options | AlbumFetchOptions | Yes | Retrieval options. |
-| callback | AsyncCallback&lt;FetchResult&lt;Album&gt;&gt; | Yes | Callback used to return an album array. |
+| options | AlbumFetchOptions | Yes | Options for fetching the albums. |
+| callback | AsyncCallback&lt;FetchResult&lt;Album&gt;&gt; | Yes | Callback used to return the albums obtained. |
 
 **Error codes:**
 
@@ -1360,7 +1354,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 getPhotoAlbums(options: AlbumFetchOptions): Promise<FetchResult<Album>>
 ```
 
-Obtains albums based on the retrieval options. This method uses a promise to return the albums.
+Obtains albums. This API uses a promise to return the result. This API cannot be used to obtain hidden albums. Use [getHiddenAlbums](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-i-sys.md#gethiddenalbums-1) to obtain hidden albums. This API will be deprecated. Use [getAlbums](arkts-corefile-userfilemanager-i-sys.md#getalbums-1) instead.
 
 **Since:** 9
 
@@ -1378,13 +1372,13 @@ Obtains albums based on the retrieval options. This method uses a promise to ret
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| options | AlbumFetchOptions | Yes | Retrieval options. |
+| options | AlbumFetchOptions | Yes | Options for fetching the albums. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;FetchResult&lt;Album&gt;&gt; | A Promise instance used to return an album array. |
+| Promise&lt;FetchResult&lt;Album&gt;&gt; | Promise that returns the albums obtained. |
 
 **Error codes:**
 
@@ -1423,7 +1417,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 getPhotoAssets(options: FetchOptions, callback: AsyncCallback<FetchResult<FileAsset>>): void
 ```
 
-Query photo, video assets
+Obtains image and video assets. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -1441,8 +1435,8 @@ Query photo, video assets
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| options | FetchOptions | Yes | retrieval options. |
-| callback | AsyncCallback&lt;FetchResult&lt;FileAsset&gt;&gt; | Yes | Callback return the FetchResult. |
+| options | FetchOptions | Yes | Options for fetching the image and video assets. |
+| callback | AsyncCallback&lt;FetchResult&lt;FileAsset&gt;&gt; | Yes | Callback used to return the image and video assetsobtained. |
 
 **Error codes:**
 
@@ -1486,7 +1480,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 getPhotoAssets(options: FetchOptions): Promise<FetchResult<FileAsset>>
 ```
 
-Query photo, video assets
+Obtains image and video assets. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -1504,13 +1498,13 @@ Query photo, video assets
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| options | FetchOptions | Yes | Retrieval options. |
+| options | FetchOptions | Yes | Options for fetching the image and video assets. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;FetchResult&lt;FileAsset&gt;&gt; | A promise instance used to return the files in the format of a FetchResult instance |
+| Promise&lt;FetchResult&lt;FileAsset&gt;&gt; | Promise that returns the image and video assets obtained. |
 
 **Error codes:**
 
@@ -1554,13 +1548,13 @@ async function example(mgr: userFileManager.UserFileManager) {
 getPhotoIndex(photoUri: string, albumUri: string, options: FetchOptions, callback: AsyncCallback<number>): void
 ```
 
-Get the index of the asset in the album
+Obtains the index of an image or video in an album. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** getPhotoIndex
+**Substitutes:** [getPhotoIndex](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-i-sys.md#getphotoindex-1)
 
 **Required permissions:** ohos.permission.READ_IMAGEVIDEO
 
@@ -1572,16 +1566,16 @@ Get the index of the asset in the album
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| photoUri | string | Yes | The photo asset uri. |
-| albumUri | string | Yes | The album uri. |
-| options | FetchOptions | Yes | fetch options |
-| callback | AsyncCallback&lt;number&gt; | Yes | Returns the index of the asset in the album |
+| photoUri | string | Yes | URI of the media asset whose index is to be obtained. |
+| albumUri | string | Yes | Album URI, which can be an empty string. If it is an empty string, all the mediaassets in the Gallery are obtained by default. |
+| options | FetchOptions | Yes | Retrieval options. Only one search condition or sorting mode must be set in**predicates**. If no value is set or multiple search criteria or sorting modes are set, the API cannot becalled successfully. |
+| callback | AsyncCallback&lt;number&gt; | Yes | Callback used to return the index obtained. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 
 **Example**
 
@@ -1631,7 +1625,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 getPhotoIndex(photoUri: string, albumUri: string, options: FetchOptions): Promise<number>
 ```
 
-Get the index of the asset in the album
+Obtains the index of an image or video in an album. This API uses a promise to return the result.
 
 **Since:** 10
 
@@ -1649,21 +1643,21 @@ Get the index of the asset in the album
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| photoUri | string | Yes | The photo asset uri. |
-| albumUri | string | Yes | The album uri. |
-| options | FetchOptions | Yes | fetch options |
+| photoUri | string | Yes | URI of the media asset whose index is to be obtained. |
+| albumUri | string | Yes | Album URI, which can be an empty string. If it is an empty string, all the mediaassets in the Gallery are obtained by default. |
+| options | FetchOptions | Yes | Retrieval options. Only one search condition or sorting mode must be set in**predicates**. If no value is set or multiple search criteria or sorting modes are set, the API cannot becalled successfully. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;number&gt; | - Returns the index of the asset in the album |
+| Promise&lt;number&gt; | Promise that returns the index obtained. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 
 **Example**
 
@@ -1716,7 +1710,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 getPrivateAlbum(type: PrivateAlbumType, callback: AsyncCallback<FetchResult<PrivateAlbum>>): void
 ```
 
-Obtains system private albums based on the private album type. This method uses an asynchronous callback to return.
+Obtains the system album. This API uses an asynchronous callback to return the result. This API will be deprecated. Use [getAlbums](arkts-corefile-userfilemanager-i-sys.md#getalbums-1) instead.
 
 **Since:** 9
 
@@ -1734,8 +1728,8 @@ Obtains system private albums based on the private album type. This method uses 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | PrivateAlbumType | Yes | Private album type |
-| callback | AsyncCallback&lt;FetchResult&lt;PrivateAlbum&gt;&gt; | Yes | Used to return a private album FetchResult. |
+| type | PrivateAlbumType | Yes | Type of the system album to obtain. |
+| callback | AsyncCallback&lt;FetchResult&lt;PrivateAlbum&gt;&gt; | Yes | Callback used to return the albums obtained. |
 
 **Error codes:**
 
@@ -1768,7 +1762,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 getPrivateAlbum(type: PrivateAlbumType): Promise<FetchResult<PrivateAlbum>>
 ```
 
-Obtains system private albums based on the private album type. This method uses a promise to return.
+Obtains the private album. This API uses a promise to return the result. This API will be deprecated. Use [getAlbums](arkts-corefile-userfilemanager-i-sys.md#getalbums-1) instead.
 
 **Since:** 9
 
@@ -1786,13 +1780,13 @@ Obtains system private albums based on the private album type. This method uses 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | PrivateAlbumType | Yes | Private album type |
+| type | PrivateAlbumType | Yes | Type of the system album to obtain. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;FetchResult&lt;PrivateAlbum&gt;&gt; | A Promise instance used to return a private album FetchResult. |
+| Promise&lt;FetchResult&lt;PrivateAlbum&gt;&gt; | Promise that returns the albums obtained. |
 
 **Error codes:**
 
@@ -1824,7 +1818,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 off(type: ChangeEvent, callback?: Callback<void>): void
 ```
 
-Turn off monitor the data changes
+Unsubscribes from changes of the file management library. This API uses a callback to return the result. This API will be deprecated. Use [off](arkts-corefile-userfilemanager-i-sys.md#off-2) instead.
 
 **Since:** 9
 
@@ -1840,8 +1834,8 @@ Turn off monitor the data changes
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | ChangeEvent | Yes | One of 'deviceChange','albumChange','imageChange','audioChange','videoChange','remoteFileChange' |
-| callback | Callback&lt;void&gt; | No | No value returned |
+| type | ChangeEvent | Yes | Type of event to subscribe to.<br>**'deviceChange'**: device change.<br>**'albumChange'**: album change.<br>**'imageChange'**: image change.<br>**'audioChange'**: audio file change.<br>**'videoChange'**: video file change.<br>**'remoteFileChange'**: change of the file on a registered device. |
+| callback | Callback&lt;void&gt; | No | Callback that returns no value. |
 
 **Example**
 
@@ -1884,13 +1878,13 @@ async function example(mgr: userFileManager.UserFileManager) {
 off(uri: string, callback?: Callback<ChangeData>): void
 ```
 
-Turn off monitor for the specified uri.
+Unregisters the listener for the specified URI. Multiple callbacks can be registered for a URI for listening. You can use this API to unregister the specified callbacks or all callbacks.
 
 **Since:** 10
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [unRegisterChange](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-i.md#unregisterchange-1)
+**Substitutes:** unregisterChange
 
 **System capability:** SystemCapability.FileManagement.UserFileManager.Core
 
@@ -1900,8 +1894,8 @@ Turn off monitor for the specified uri.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uri | string | Yes | FileAsset's uri, Album's uri or DefaultChangeUri value |
-| callback | Callback&lt;ChangeData&gt; | No | Remove specified callback from monitoring to a specified uri |
+| uri | string | Yes | URI of the file asset or album, or[DefaultChangeUri](arkts-corefile-defaultchangeuri-e-sys.md). |
+| callback | Callback&lt;ChangeData&gt; | No | Callback registered by[on](arkts-corefile-userfilemanager-i-sys.md#on-2). If this parameter is not specified, all listener callbacks registered for the URI will be unregistered.<br>Note that the specified callback will not be invoked. |
 
 **Error codes:**
 
@@ -1959,7 +1953,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 on(type: ChangeEvent, callback: Callback<void>): void
 ```
 
-Turn on monitor the data changes
+Subscribes to changes of the file management library. This API uses a callback to return the result. This API will be deprecated. Use [on](arkts-corefile-userfilemanager-i-sys.md#on-2) instead.
 
 **Since:** 9
 
@@ -1975,8 +1969,8 @@ Turn on monitor the data changes
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | ChangeEvent | Yes | One of 'deviceChange','albumChange','imageChange','audioChange','videoChange','remoteFileChange' |
-| callback | Callback&lt;void&gt; | Yes | No value returned |
+| type | ChangeEvent | Yes | Type of event to subscribe to.<br>**'deviceChange'**: device change.<br>**'albumChange'**: album change.<br>**'imageChange'**: image change.<br>**'audioChange'**: audio file change.<br>**'videoChange'**: video file change.<br>**'remoteFileChange'**: change of the file on a registered device. |
+| callback | Callback&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Example**
 
@@ -2017,7 +2011,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 on(uri: string, forSubUri: boolean, callback: Callback<ChangeData>): void
 ```
 
-Turn on monitor for the specified uri.
+Registers a listener for the specified URI. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -2033,9 +2027,9 @@ Turn on monitor for the specified uri.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uri | string | Yes | FileAsset's uri, album's uri or DefaultChangeUri |
-| forSubUri | boolean | Yes | Monitor the sub uri. |
-| callback | Callback&lt;ChangeData&gt; | Yes | callback function, return the ChangeData to be monitored |
+| uri | string | Yes | URI of the file asset or album, or[DefaultChangeUri](arkts-corefile-defaultchangeuri-e-sys.md). |
+| forSubUri | boolean | Yes | Whether to perform fuzzy listening.<br>If **uri** is the URI of the album, thevalue **true** means to listen for the file change in the album; the value **false** means to listen for thealbum change only. If **uri** is the URI of the file asset, there is no difference whether **forSubUri** is**true** or **false**. If **uri** is **DefaultChangeUri**, the value must be **true**, otherwise, the URIcannot be found and no message can be received. |
+| callback | Callback&lt;ChangeData&gt; | Yes | Callback used to return [ChangeData](arkts-corefile-changedata-i-sys.md).<br>Note that different callbacks can be registered for a URI. You can use[off](arkts-corefile-userfilemanager-i-sys.md#off-2)to disable the specified callback or all callbacks for the URI. |
 
 **Error codes:**
 
@@ -2092,7 +2086,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 release(callback: AsyncCallback<void>): void
 ```
 
-Release UserFileManager instance
+Releases this **UserFileManager** instance. This API uses an asynchronous callback to return the result. Call this API when the APIs in the **UserFileManager** instance are no longer used.
 
 **Since:** 9
 
@@ -2108,7 +2102,7 @@ Release UserFileManager instance
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void&gt; | Yes | No value returned |
+| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -2134,7 +2128,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 release(): Promise<void>
 ```
 
-Release UserFileManager instance
+Releases this **UserFileManager** instance. This API uses a promise to return the result. Call this API when the APIs in the **UserFileManager** instance are no longer used.
 
 **Since:** 9
 
@@ -2150,7 +2144,7 @@ Release UserFileManager instance
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Return promise |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 

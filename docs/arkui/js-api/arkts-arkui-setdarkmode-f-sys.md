@@ -12,9 +12,7 @@ import { uiAppearance } from '@kit.ArkUI';
 function setDarkMode(mode: DarkMode, callback: AsyncCallback<void>): void
 ```
 
-Sets the system color mode. This API uses an asynchronous callback to return the result.
-
-**Permission required**: ohos.permission.UPDATE_CONFIGURATION
+Sets the system color mode. This API uses an asynchronous callback to return the result. **Permission required**: ohos.permission.UPDATE_CONFIGURATION
 
 **Since:** 10
 
@@ -48,14 +46,14 @@ import { BusinessError } from '@kit.BasicServicesKit';
 try {
   uiAppearance.setDarkMode(uiAppearance.DarkMode.ALWAYS_DARK, (error) => {
     if (error) {
-      console.error('Set dark-mode failed, ' + error.message);
-    } else {
-      console.info('Set dark-mode successfully.');
+      console.error(`Set dark-mode failed. Code: ${error.code}, message: ${error.message}`);
+      return;
     }
-  })
+    console.info('Set dark-mode successfully.');
+  });
 } catch (error) {
-  let message = (error as BusinessError).message;
-  console.error('Set dark-mode failed, ' + message);
+  let err = error as BusinessError;
+  console.error(`Set dark-mode failed. Code: ${err.code}, message: ${err.message}`);
 }
 
 ```
@@ -67,9 +65,7 @@ try {
 function setDarkMode(mode: DarkMode): Promise<void>
 ```
 
-Sets the system color mode. This API uses a promise to return the result.
-
-**Permission required**: ohos.permission.UPDATE_CONFIGURATION
+Sets the system color mode. This API uses a promise to return the result. **Permission required**: ohos.permission.UPDATE_CONFIGURATION
 
 **Since:** 10
 
@@ -108,12 +104,12 @@ import { BusinessError } from '@kit.BasicServicesKit';
 try {
   uiAppearance.setDarkMode(uiAppearance.DarkMode.ALWAYS_DARK).then(() => {
     console.info('Set dark-mode successfully.');
-  }).catch((error: Error) => {
-    console.error('Set dark-mode failed, ' + error.message);
+  }).catch((error: BusinessError) => {
+    console.error(`Set dark-mode failed. Code: ${error.code}, message: ${error.message}`);
   });
 } catch (error) {
-  let message = (error as BusinessError).message;
-  console.error('Set dark-mode failed, ' + message);
+  let err = error as BusinessError;
+  console.error(`Set dark-mode failed. Code: ${err.code}, message: ${err.message}`);
 }
 
 ```

@@ -1,14 +1,18 @@
 # getPairedDevices
 
+## Modules to Import
+
+```TypeScript
+import { manager } from '@kit.ConnectivityKit';
+```
+
 ## getPairedDevices
 
 ```TypeScript
 function getPairedDevices(): string[]
 ```
 
-Gets the list of devices that have been paired with the current device.
-If the user has the ohos.permission.GET_NEARLINK_PEER_MAC permission, the real device address is returned.
-Otherwise, a random device address is returned.
+Gets the list of devices that have been paired with the current device. If the user has the ohos.permission.GET_NEARLINK_PEER_MAC permission, the real device address is returned. Otherwise, a random device address is returned.
 
 **Since:** 26.0.0
 

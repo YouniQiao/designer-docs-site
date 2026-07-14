@@ -13,8 +13,7 @@ function transformCoordinateSystem(inRotationVector: Array<number>, coordinates:
     callback: AsyncCallback<Array<number>>): void
 ```
 
-Rotates a rotation vector so that it can represent the coordinate system in different ways. This API uses an
-asynchronous callback to return the result.
+Rotates a rotation vector so that it can represent the coordinate system in different ways. This API uses an asynchronous callback to return the result.
 
 **Since:** 8
 
@@ -59,8 +58,7 @@ sensor.transformCoordinateSystem([1, 0, 0, 0, 1, 0, 0, 0, 1], { x: 2, y: 3 },
 function transformCoordinateSystem(inRotationVector: Array<number>, coordinates: CoordinatesOptions): Promise<Array<number>>
 ```
 
-Rotates a rotation vector so that it can represent the coordinate system in different ways. This API uses a promise
-to return the result.
+Rotates a rotation vector so that it can represent the coordinate system in different ways. This API uses a promise to return the result.
 
 **Since:** 8
 

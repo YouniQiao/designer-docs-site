@@ -12,9 +12,7 @@ import { appManager } from '@kit.AbilityKit';
 function preloadApplication(bundleName: string, userId: number, mode: PreloadMode, appIndex?: number): Promise<void>
 ```
 
-Preloads an application process. A successful call does not always mean that the preloading is successful. In other
-words, the target application process may not be created even if the API is successfully called. This API uses a
-promise to return the result.
+Preloads an application process. A successful call does not always mean that the preloading is successful. In other words, the target application process may not be created even if the API is successfully called. This API uses a promise to return the result.
 
 **Since:** 12
 

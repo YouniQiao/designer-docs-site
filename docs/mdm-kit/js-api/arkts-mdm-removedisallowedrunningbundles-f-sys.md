@@ -12,8 +12,7 @@ import { applicationManager } from '@kit.MDMKit';
 function removeDisallowedRunningBundles(admin: Want, appIds: Array<string>, callback: AsyncCallback<void>): void
 ```
 
-Removes an application from the applications that are not allowed to run under the current user. This API uses an
-asynchronous callback to return the result.
+Removes an application from the applications that are not allowed to run under the current user. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -78,8 +77,7 @@ applicationManager.removeDisallowedRunningBundles(wantTemp, appIds, (err) => {
 function removeDisallowedRunningBundles(admin: Want, appIds: Array<string>, userId: number, callback: AsyncCallback<void>): void
 ```
 
-Removes an application from the applications that are not allowed to run under the current user (specified by
-**userId**). This API uses an asynchronous callback to return the result.
+Removes an application from the applications that are not allowed to run under the current user (specified by **userId**). This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -145,8 +143,7 @@ applicationManager.removeDisallowedRunningBundles(wantTemp, appIds, 100, (err) =
 function removeDisallowedRunningBundles(admin: Want, appIds: Array<string>, userId?: number): Promise<void>
 ```
 
-Removes an application from the applications that are not allowed to run under the current or specified user. This
-API uses a promise to return the result.
+Removes an application from the applications that are not allowed to run under the current or specified user. This API uses a promise to return the result.
 
 **Since:** 10
 

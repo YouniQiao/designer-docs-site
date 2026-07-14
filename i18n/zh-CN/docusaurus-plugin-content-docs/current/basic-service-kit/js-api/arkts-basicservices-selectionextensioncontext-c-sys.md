@@ -1,13 +1,6 @@
 # SelectionExtensionContext（系统接口）
 
-SelectionExtensionContext是
-[SelectionExtensionAbility](arkts-basicservices-selectionextensionability-c-sys.md)的上下文，继承自
-[ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md)。
-每个SelectionExtensionAbility组件实例化时，系统都会自动创建对应的SelectionExtensionContext。开发者可以通过SelectionExtensionContext拉起同应用内其他
-Ability。
-
-> **说明：**
-> - 本模块仅支持PC/2in1设备。
+SelectionExtensionContext是 [SelectionExtensionAbility](arkts-basicservices-selectionextensionability-c-sys.md)的上下文，继承自 [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md)。 每个SelectionExtensionAbility组件实例化时，系统都会自动创建对应的SelectionExtensionContext。开发者可以通过SelectionExtensionContext拉起同应用内其他 Ability。 > **说明：** > - 本模块仅支持PC/2in1设备。
 
 **继承/实现关系：** SelectionExtensionContext extends [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md)
 
@@ -78,8 +71,8 @@ import { rpc } from '@kit.IPCKit';
 import { Want } from '@kit.AbilityKit';
 
 class SelectionAbilityStub extends rpc.RemoteObject {
-  constructor(des: string) {
-    super(des);
+  constructor(descriptor: string) {
+    super(descriptor);
   }
   onRemoteMessageRequest(
     code: number,
@@ -95,17 +88,19 @@ class SelectionAbilityStub extends rpc.RemoteObject {
 class SelectionExtAbility extends SelectionExtensionAbility {
   onConnect(want: Want): rpc.RemoteObject {
     try {
+      // 构造Want对象，指定要拉起的目标Ability信息
       let wantAbility: Want = {
-        bundleName: "com.selection.selectionapplication",
-        abilityName: "EntryAbility",
+        bundleName: 'com.selection.selectionapplication',
+        abilityName: 'EntryAbility',
       };
+      // 拉起目标Ability，this.context由SelectionExtensionAbility实例自动提供，无需额外获取
       this.context.startAbility(wantAbility).then(() => {
         console.info(`startAbility success`);
       }).catch((err: BusinessError) => {
-        console.error(`startAbility error: ${err.code}, error message: ${err.message}`);
-      })
-    } catch (err) {
-      console.error(`startAbility error: ${err.code}, error message: ${err.message}`);
+        console.error(`Failed to startAbility. Error code: ${err.code}, error message: ${err.message}`);
+      });
+    } catch(err) {
+      console.error(`Failed to startAbility. Error code: ${err.code}, error message: ${err.message}`);
     }
     return new SelectionAbilityStub('remote');
   }

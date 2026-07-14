@@ -12,8 +12,7 @@ import { bundle } from '@kit.AbilityKit';
 function getAllBundleInfo(bundleFlag: BundleFlag, userId: number, callback: AsyncCallback<Array<BundleInfo>>): void
 ```
 
-Obtains the information of all bundles of the specified user. This API uses an asynchronous callback to return the
-result.
+Obtains the information of all bundles of the specified user. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 
@@ -38,8 +37,7 @@ result.
 function getAllBundleInfo(bundleFlag: BundleFlag, callback: AsyncCallback<Array<BundleInfo>>): void
 ```
 
-Obtains the information of all bundles of the current user. This API uses an asynchronous callback to return the
-result.
+Obtains the information of all bundles of the current user. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 

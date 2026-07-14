@@ -1,6 +1,6 @@
 # VideoDurationFilter
 
-Media file video duration filtering configuration.
+Describes the configuration for video duration filtering.
 
 **Since:** 19
 
@@ -18,7 +18,7 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 extraVideoDuration?: number
 ```
 
-Specifing the upper limit of video duration to be filtered.
+Maximum video duration in **FilterOperator.BETWEEN** mode. The default value is **-1**. The unit is milliseconds (ms).
 
 **Type:** number
 
@@ -34,7 +34,7 @@ Specifing the upper limit of video duration to be filtered.
 filterOperator: FilterOperator
 ```
 
-Specifing filter operator.
+Filter operator. For example, files can be filtered based on being greater than or less than a certain file size.
 
 **Type:** FilterOperator
 
@@ -50,7 +50,7 @@ Specifing filter operator.
 videoDuration: number
 ```
 
-Specifing the video duration of files to be filtered.
+Video duration used for filtering. The unit is milliseconds (ms).
 
 **Type:** number
 

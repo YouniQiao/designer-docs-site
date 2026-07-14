@@ -14,8 +14,7 @@
 DEFAULT
 ```
 
-Default edge effect. Compress the space in the drag direction
-and stretch the space in the opposite drag direction.
+Default edge effect. Compress the space in the drag direction and stretch the space in the opposite drag direction.
 
 **起始版本：** 10
 

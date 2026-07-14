@@ -44,8 +44,7 @@ The animation is played backwards.
 Alternate
 ```
 
-The animation is played forwards for an odd number of times (1, 3, 5...) and backwards for an even number of times
-(2, 4, 6...).
+The animation is played forwards for an odd number of times (1, 3, 5...) and backwards for an even number of times (2, 4, 6...).
 
 **Since:** 7
 
@@ -61,8 +60,7 @@ The animation is played forwards for an odd number of times (1, 3, 5...) and bac
 AlternateReverse
 ```
 
-The animation is played backwards for an odd number of times (1, 3, 5...) and forwards for an even number of times
-(2, 4, 6...).
+The animation is played backwards for an odd number of times (1, 3, 5...) and forwards for an even number of times (2, 4, 6...).
 
 **Since:** 7
 

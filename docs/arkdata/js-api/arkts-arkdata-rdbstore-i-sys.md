@@ -1,15 +1,6 @@
 # RdbStore
 
-Provides APIs for managing data in an RDB store.
-
-Before using the following APIs, you should obtain an **RdbStore** instance by calling the
-[getRdbStore](arkts-arkdata-getrdbstore-f.md#getrdbstore-2)
-method and then call the corresponding method through the instance.
-
-In addition, use
-[execute](arkts-arkdata-rdbstore-i.md#execute-1)
-to initialize the database table structure and related data first, ensuring that the prerequisites for related API
-calls are met.
+Provides APIs for managing data in an RDB store. Before using the following APIs, you should obtain an **RdbStore** instance by calling the [getRdbStore](arkts-arkdata-getrdbstore-f.md#getrdbstore-2) method and then call the corresponding method through the instance. In addition, use [execute](arkts-arkdata-rdbstore-i.md#execute-1) to initialize the database table structure and related data first, ensuring that the prerequisites for related API calls are met.
 
 **Since:** 9
 
@@ -27,9 +18,7 @@ import { relationalStore } from '@kit.ArkData';
 cleanDeviceDirtyData(table: string, cursor?: number): Promise<void>
 ```
 
-Cleans dirty data deleted in the cross-device sync.
-If a cursor is specified, data whose cursor is smaller than the specified cursor is cleaned.
-Otherwise, all data is cleaned.
+Cleans dirty data deleted in the cross-device sync. If a cursor is specified, data whose cursor is smaller than the specified cursor is cleaned. Otherwise, all data is cleaned.
 
 **Since:** 26.0.0
 

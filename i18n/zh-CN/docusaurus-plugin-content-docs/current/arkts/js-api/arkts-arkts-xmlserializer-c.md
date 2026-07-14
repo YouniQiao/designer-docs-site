@@ -12,11 +12,7 @@ XmlSerializer接口用于生成XML文件。
 addEmptyElement(name: string): void
 ```
 
-添加一个空元素。
-
-> **说明：**
->
-> 该接口对所添加数据不做标准XML校验处理，确保所添加的数据符合标准XML规范。例如不允许添加数字开头的元素名称。
+添加一个空元素。 > **说明：** > > 该接口对所添加数据不做标准XML校验处理，确保所添加的数据符合标准XML规范。例如不允许添加数字开头的元素名称。
 
 **起始版本：** 8
 
@@ -50,11 +46,7 @@ console.info(result); // <d/>
 constructor(buffer: ArrayBuffer | DataView, encoding?: string)
 ```
 
-XmlSerializer的构造函数。
-
-> **说明：**
->
-> buffer是开发者根据需要自定义大小的缓存区域，用于临时存储生成的XML文本。在使用过程中必须确保缓存区域足以容纳生成的文本内容。
+XmlSerializer的构造函数。 > **说明：** > > buffer是开发者根据需要自定义大小的缓存区域，用于临时存储生成的XML文本。在使用过程中必须确保缓存区域足以容纳生成的文本内容。
 
 **起始版本：** 8
 
@@ -83,11 +75,7 @@ let xmlSerializer = new xml.XmlSerializer(arrayBuffer, "utf-8");
 endElement(): void
 ```
 
-添加元素结束标记。
-
-> **说明：**
->
-> 调用该接口前必须先调用[startElement](arkts-arkts-xmlserializer-c.md#startelement-1)接口写入元素开始标记。
+添加元素结束标记。 > **说明：** > > 调用该接口前必须先调用[startElement](arkts-arkts-xmlserializer-c.md#startelement-1)接口写入元素开始标记。
 
 **起始版本：** 8
 
@@ -118,11 +106,7 @@ console.info(result);
 setAttributes(name: string, value: string): void
 ```
 
-添加元素的属性和属性值。
-
-> **说明：**
->
-> 该接口对所添加数据不做标准XML校验处理，确保所添加的数据符合标准XML规范。例如不允许添加数字开头的属性名称以及添加多个同名的属性名称。
+添加元素的属性和属性值。 > **说明：** > > 该接口对所添加数据不做标准XML校验处理，确保所添加的数据符合标准XML规范。例如不允许添加数字开头的属性名称以及添加多个同名的属性名称。
 
 **起始版本：** 8
 
@@ -159,11 +143,7 @@ console.info(result); // <note importance="high"/>
 setCDATA(text: string): void
 ```
 
-提供在CDATA标签中添加数据的能力，所生成的CDATA标签结构为："\<!\[CDATA\[" + 所添加的数据 + "\]\]\>"。
-
-> **说明：**
->
-> 该接口对所添加数据不做标准XML校验处理，请确保所添加的数据符合标准XML规范。比如不允许在CDATA标签中添加包含"\]\]\>"字符串的数据。
+提供在CDATA标签中添加数据的能力，所生成的CDATA标签结构为："\<!\[CDATA\[" + 所添加的数据 + "\]\]\>"。 > **说明：** > > 该接口对所添加数据不做标准XML校验处理，请确保所添加的数据符合标准XML规范。比如不允许在CDATA标签中添加包含"\]\]\>"字符串的数据。
 
 **起始版本：** 8
 
@@ -294,11 +274,7 @@ console.info(result); // <!DOCTYPE root SYSTEM "http://www.test.org/test.dtd">
 setNamespace(prefix: string, namespace: string): void
 ```
 
-添加当前元素标记的命名空间。
-
-> **说明：**
->
-> 该接口对所添加数据不做标准XML校验处理，请确保所添加的数据符合标准XML规范。例如禁止添加数字开头的前缀以及为同一个元素设置多个命名空间。
+添加当前元素标记的命名空间。 > **说明：** > > 该接口对所添加数据不做标准XML校验处理，请确保所添加的数据符合标准XML规范。例如禁止添加数字开头的前缀以及为同一个元素设置多个命名空间。
 
 **起始版本：** 8
 
@@ -373,13 +349,7 @@ console.info(result); // <note importance="high">Happy</note>
 startElement(name: string): void
 ```
 
-根据给定名称添加元素开始标记。
-
-> **说明：**
->
-> - 调用该接口后须调用[endElement](arkts-arkts-xmlserializer-c.md#endelement-1)写入元素结束标记，以确保节点正确闭合。
->
-> - 该接口对所添加数据不做标准XML校验处理，请确保所添加的数据符合标准XML规范。比如不允许添加数字开头的元素名称。
+根据给定名称添加元素开始标记。 > **说明：** > > - 调用该接口后须调用[endElement](arkts-arkts-xmlserializer-c.md#endelement-1)写入元素结束标记，以确保节点正确闭合。 > > - 该接口对所添加数据不做标准XML校验处理，请确保所添加的数据符合标准XML规范。比如不允许添加数字开头的元素名称。
 
 **起始版本：** 8
 

@@ -14,13 +14,7 @@
 static convertPoint(curveName: string, encodedPoint: Uint8Array): Point
 ```
 
-根据椭圆曲线的曲线名，即相应的NID（Name Identifier），将指定的点数据转换为Point对象。当前支持压缩/非压缩格式的点数据。
-
-> **说明：**
->
-> 根据RFC5480规范中第2.2节的描述：
-> 1. 非压缩格式的点数据表示为 **0x04**|x坐标|y坐标。
-> 2. **Fp**域（当前不支持**F2m**域）中的压缩点数据表示如下：**0x03**|x坐标（当y坐标为奇数时）；**0x02**|x坐标（当y坐标为偶数时）。
+根据椭圆曲线的曲线名，即相应的NID（Name Identifier），将指定的点数据转换为Point对象。当前支持压缩/非压缩格式的点数据。 > **说明：** > > 根据RFC5480规范中第2.2节的描述： > 1. 非压缩格式的点数据表示为 **0x04**|x坐标|y坐标。 > 2. **Fp**域（当前不支持**F2m**域）中的压缩点数据表示如下：**0x03**|x坐标（当y坐标为奇数时）；**0x02**|x坐标（当y坐标为偶数时）。
 
 **起始版本：** 12
 
@@ -70,9 +64,7 @@ console.info('returnPoint: ' + returnPoint.x.toString(16));
 static genECCCommonParamsSpec(curveName: string): ECCCommonParamsSpec
 ```
 
-根据椭圆曲线相应的NID（Name Identifier）字符串名称生成相应的非对称公共密钥参数。详见
-[ECC密钥生成规格](../../../../security/CryptoArchitectureKit/crypto-asym-key-generation-conversion-spec.md#ecc)和
-[SM2密钥生成规格](../../../../security/CryptoArchitectureKit/crypto-asym-key-generation-conversion-spec.md#sm2)。
+根据椭圆曲线相应的NID（Name Identifier）字符串名称生成相应的非对称公共密钥参数。详见 [ECC密钥生成规格](../../../../security/CryptoArchitectureKit/crypto-asym-key-generation-conversion-spec.md#ecc)和 [SM2密钥生成规格](../../../../security/CryptoArchitectureKit/crypto-asym-key-generation-conversion-spec.md#sm2)。
 
 **起始版本：** 11
 
@@ -123,8 +115,7 @@ try {
 static getEncodedPoint(curveName: string, point: Point, format: string): Uint8Array
 ```
 
-根据椭圆曲线的曲线名，即相应的NID（Name Identifier），按照指定的点数据格式，将Point对象转换为点数据。当前支持压缩/非压缩格式的点
-数据。
+根据椭圆曲线的曲线名，即相应的NID（Name Identifier），按照指定的点数据格式，将Point对象转换为点数据。当前支持压缩/非压缩格式的点 数据。
 
 **起始版本：** 12
 

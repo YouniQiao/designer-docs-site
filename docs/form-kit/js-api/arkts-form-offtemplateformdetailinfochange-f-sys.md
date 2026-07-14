@@ -12,8 +12,7 @@ import { formHost } from '@kit.FormKit';
 function offTemplateFormDetailInfoChange(callback?: formInfo.TemplateFormDetailInfoCallback): void
 ```
 
-Unsubscribes from changes in the static configuration information of template widgets. This API uses an
-asynchronous callback to return the result.
+Unsubscribes from changes in the static configuration information of template widgets. This API uses an asynchronous callback to return the result.
 
 **Since:** 23
 

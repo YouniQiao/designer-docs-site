@@ -12,7 +12,7 @@ import { notificationManager } from '@kit.NotificationKit';
 function removeAllSlots(callback: AsyncCallback<void>): void
 ```
 
-删除当前应用所有通知渠道。使用callback异步回调。
+删除当前应用所有通知渠道。使用callback异步回调。 删除后，当前应用的所有通知渠道及其配置将被永久移除，后续发布通知时系统将自动创建对应类型的渠道。 已通过这些渠道发布的通知不受影响，仍可在通知中心查看。 适用于需要一次性清除所有渠道配置的场景。
 
 **起始版本：** 9
 
@@ -56,7 +56,7 @@ notificationManager.removeAllSlots(removeAllSlotsCallback);
 function removeAllSlots(): Promise<void>
 ```
 
-删除当前应用所有通知渠道。使用Promise异步回调。
+删除当前应用所有通知渠道。使用Promise异步回调。 删除后，当前应用的所有通知渠道及其配置将被永久移除，后续发布通知时系统将自动创建对应类型的渠道。 已通过这些渠道发布的通知不受影响，仍可在通知中心查看。 适用于需要一次性清除所有渠道配置的场景。
 
 **起始版本：** 9
 

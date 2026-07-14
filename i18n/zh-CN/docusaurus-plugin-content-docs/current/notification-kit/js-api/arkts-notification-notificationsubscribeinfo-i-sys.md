@@ -1,10 +1,6 @@
 # NotificationSubscribeInfo（系统接口）
 
-通知发布者的信息。
-
-> **说明：**
->
-> 本模块为系统接口。
+通知发布者的信息。 > **说明：** > > 本模块首批接口从API version 7开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。 > > 本模块为系统接口。
 
 **起始版本：** 7
 
@@ -50,9 +46,7 @@ deviceType?: string
 enableClassification?: boolean
 ```
 
-是否启用通知分类。
-- true：表示启用。
-- false：表示禁用。默认值为false。
+是否启用通知分类。 - true：表示启用。 - false：表示禁用。默认值为false。
 
 **类型：** boolean
 
@@ -70,13 +64,7 @@ enableClassification?: boolean
 filterLimit?: number
 ```
 
-通知过滤范围。默认值为0。取值范围包括：
-
-- 0：不进行任何过滤，订阅全部通知。
-- 1：将渠道类型为[SOCIAL_COMMUNICATION](arkts-notification-slottype-e.md)且
-[userInput](arkts-notification-notificationactionbutton-i.md)为空的通知过滤掉。
-- 2：将渠道类型为[SOCIAL_COMMUNICATION](arkts-notification-slottype-e.md)且
-[userInput](arkts-notification-notificationactionbutton-i.md)不为空的通知过滤掉。
+通知过滤范围。默认值为0。取值范围包括： - 0：不进行任何过滤，订阅全部通知。 - 1：将渠道类型为[SOCIAL_COMMUNICATION](arkts-notification-slottype-e.md)且 [userInput](arkts-notification-notificationactionbutton-i.md)为空的通知过滤掉。 - 2：将渠道类型为[SOCIAL_COMMUNICATION](arkts-notification-slottype-e.md)且 [userInput](arkts-notification-notificationactionbutton-i.md)不为空的通知过滤掉。
 
 **类型：** number
 
@@ -92,10 +80,7 @@ filterLimit?: number
 needSilentReplayOnSubscribe?: boolean
 ```
 
-是否启用订阅时的静默重放。
-- true：表示启用。
-- false：表示禁用。默认值为false。
-启用后，首次订阅时会以静默方式重新推送历史通知，不会出现响铃和振动提醒。
+是否启用订阅时的静默重放。 - true：表示启用。 - false：表示禁用。默认值为false。 启用后，首次订阅时会以静默方式重新推送历史通知，不会出现响铃和振动提醒。
 
 **类型：** boolean
 

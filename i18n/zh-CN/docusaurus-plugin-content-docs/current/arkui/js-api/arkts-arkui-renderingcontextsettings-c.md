@@ -34,13 +34,7 @@ constructor(antialias?: boolean)
 antialias?: boolean
 ```
 
-表明canvas是否开启抗锯齿。
-<br>异常值undefined按默认值处理。
-<br>false：表示不开启抗锯齿功能，true：表示开启抗锯齿。
-<br>默认值：false
-<br>**说明：**<br>
-绘制文本默认开启抗锯齿效果，RenderingContextSettings的antialias无法影响绘制文本的抗锯齿效果，
-如需修改文本抗锯齿效果，请使用[antialias<sup>24+</sup>](#antialias24)接口。
+表明canvas是否开启抗锯齿。 <br>异常值undefined按默认值处理。 <br>false：表示不开启抗锯齿功能，true：表示开启抗锯齿。 <br>默认值：false <br>**说明：**<br> 绘制文本默认开启抗锯齿效果，RenderingContextSettings的antialias无法影响绘制文本的抗锯齿效果， 如需修改文本抗锯齿效果，请使用[antialias<sup>24+</sup>](#antialias24)接口。
 
 **类型：** boolean
 

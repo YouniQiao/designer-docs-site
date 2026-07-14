@@ -12,10 +12,7 @@ import { bundleManager } from '@kit.AbilityKit';
 function getAppProvisionInfoSync(bundleName: string, userId?: number): AppProvisionInfo
 ```
 
-Obtains the provision profile based on the given bundle name and user ID. This API returns the result
-synchronously.
-
-No permission is required for obtaining the caller's own information.
+Obtains the provision profile based on the given bundle name and user ID. This API returns the result synchronously. No permission is required for obtaining the caller's own information.
 
 **Since:** 10
 

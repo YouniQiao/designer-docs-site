@@ -12,8 +12,7 @@ import { backgroundTaskManager } from '@kit.BackgroundTasksKit';
 function getTransientTaskInfo(): Promise<TransientTaskInfo>
 ```
 
-Obtains all transient task information, including the remaining quota of the current day. This API uses a promise
-to return the result.
+Obtains all transient task information, including the remaining quota of the current day. This API uses a promise to return the result.
 
 **Since:** 20
 

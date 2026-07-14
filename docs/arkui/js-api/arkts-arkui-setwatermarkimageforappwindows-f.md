@@ -12,11 +12,7 @@ import { window } from '@kit.ArkUI';
 function setWatermarkImageForAppWindows(pixelMap: image.PixelMap | undefined): Promise<void>
 ```
 
-Sets a watermark image for windows in the current application process. This API uses a promise to return the
-result. This API must be called after
-[loadContent()](arkts-arkui-window-i.md#loadcontent-1)
-or [setUIContent()](arkts-arkui-window-i.md#setuicontent-1)
-takes effect.
+Sets a watermark image for windows in the current application process. This API uses a promise to return the result. This API must be called after [loadContent()](arkts-arkui-window-i.md#loadcontent-1) or [setUIContent()](arkts-arkui-window-i.md#setuicontent-1) takes effect.
 
 **Since:** 21
 

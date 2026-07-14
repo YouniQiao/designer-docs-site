@@ -18,8 +18,7 @@ import { ResizeDirection, WindowMode, PenMode, PenKeyOperation, Driver, MatchPat
 displayId?: number
 ```
 
-ID of the display to which the coordinate point belongs. The value is an integer greater than or equal to 0. The
-default value is the default screen ID of the device.
+ID of the display to which the coordinate point belongs. The value is an integer greater than or equal to 0. The default value is the default screen ID of the device.
 
 **Type:** number
 

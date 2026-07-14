@@ -1,9 +1,6 @@
 # PubKey
 
-公钥，是[Key](arkts-cryptoarchitecture-key-i.md)的子类，在非对称加密、签名验证、密钥协商时需要将其对象作为输入使用。
-
-公钥可以通过非对称密钥生成器[AsyKeyGenerator](arkts-cryptoarchitecture-asykeygenerator-i.md)、
-[AsyKeyGeneratorBySpec](arkts-cryptoarchitecture-asykeygeneratorbyspec-i.md)来生成。
+公钥，是[Key](arkts-cryptoarchitecture-key-i.md)的子类，在非对称加密、签名验证、密钥协商时需要将其对象作为输入使用。 公钥可以通过非对称密钥生成器[AsyKeyGenerator](arkts-cryptoarchitecture-asykeygenerator-i.md)、 [AsyKeyGeneratorBySpec](arkts-cryptoarchitecture-asykeygeneratorbyspec-i.md)来生成。
 
 **继承/实现关系：** PubKey extends [Key](arkts-cryptoarchitecture-key-i.md)
 
@@ -96,13 +93,7 @@ async function testgetAsyKeySpec() {
 getEncodedDer(format: string): DataBlob
 ```
 
-支持根据指定的密钥格式（如规范、压缩状态等），获取符合ASN.1语法和DER编码的公钥数据。
-
-> **说明：**
->
-> 本接口和[Key.getEncoded()](arkts-cryptoarchitecture-key-i.md#getencoded-1)的区别是：
-> 1. 本接口可以指定获取密钥数据的格式。
-> 2. [Key.getEncoded()](arkts-cryptoarchitecture-key-i.md#getencoded-1)不支持指定获取密钥数据的格式。
+支持根据指定的密钥格式（如规范、压缩状态等），获取符合ASN.1语法和DER编码的公钥数据。 > **说明：** > > 本接口和[Key.getEncoded()](arkts-cryptoarchitecture-key-i.md#getencoded-1)的区别是： > 1. 本接口可以指定获取密钥数据的格式。 > 2. [Key.getEncoded()](arkts-cryptoarchitecture-key-i.md#getencoded-1)不支持指定获取密钥数据的格式。
 
 **起始版本：** 12
 
@@ -262,11 +253,7 @@ async function eccGetKeyDataTest() {
 getKeyDataSync(itemType: AsyKeyDataItem): Uint8Array
 ```
 
-获取指定的密钥数据类型对应的公钥数据。此API以同步方式返回结果。
-
-<br><br>**说明：**
-<br>建议优先使用异步API{@link getKeyData}。同步API可能因系统繁忙、高负载等原因耗时较长而阻塞主线程。
-因此建议在子线程中调用同步API，以避免阻塞主线程。
+获取指定的密钥数据类型对应的公钥数据。此API以同步方式返回结果。 <br><br>**说明：** <br>建议优先使用异步API{@link getKeyData}。同步API可能因系统繁忙、高负载等原因耗时较长而阻塞主线程。 因此建议在子线程中调用同步API，以避免阻塞主线程。
 
 **起始版本：** 26.0.0
 

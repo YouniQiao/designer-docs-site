@@ -1,7 +1,6 @@
 # Region
 
-Describes the region information.
-It inherits from [lang.ISendable](../../../../arkts-utils/arkts-sendable.md#isendable).
+Describes the region information. It inherits from [lang.ISendable](../../../../arkts-utils/arkts-sendable.md#isendable).
 
 **Inheritance/Implementation:** Region extends [lang.ISendable](../../apis-arkts/arkts-apis/arkts-arkts-isendable-i.md)
 

@@ -58,8 +58,7 @@ The value of a NotifyCharacteristic instance
 confirm: boolean
 ```
 
-Specifies whether to request confirmation from the BLE peripheral device (indication) or
-send a notification. Value {@code true} indicates the former and {@code false} indicates the latter.
+Specifies whether to request confirmation from the BLE peripheral device (indication) or send a notification. Value {@code true} indicates the former and {@code false} indicates the latter.
 
 **Type:** boolean
 

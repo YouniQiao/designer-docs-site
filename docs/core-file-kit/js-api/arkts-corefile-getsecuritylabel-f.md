@@ -12,8 +12,7 @@ import { securityLabel } from '@kit.CoreFileKit';
 function getSecurityLabel(path: string): Promise<string>
 ```
 
-Obtains the data security level of a file or directory. If no data security level has been set, **s3** is returned
-by default. This API uses a promise to return the result.
+Obtains the data security level of a file or directory. If no data security level has been set, **s3** is returned by default. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -64,8 +63,7 @@ securityLabel.getSecurityLabel(filePath).then((type: string) => {
 function getSecurityLabel(path: string, callback: AsyncCallback<string>): void
 ```
 
-Obtains the data security level of a file or directory. If no data security level has been set, **s3** is returned
-by default. This API uses an asynchronous callback to return the result.
+Obtains the data security level of a file or directory. If no data security level has been set, **s3** is returned by default. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 

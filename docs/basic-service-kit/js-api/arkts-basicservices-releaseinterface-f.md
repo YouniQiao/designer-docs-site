@@ -12,13 +12,7 @@ import { usbManager } from '@kit.BasicServicesKit';
 function releaseInterface(pipe: USBDevicePipe, iface: USBInterface): number
 ```
 
-Releases the claimed communication interface.
-
-> **NOTE**
->
-> Before calling this API, call the
-> [usbManager.claimInterface](arkts-basicservices-claiminterface-f.md#claiminterface-1)
-> API to claim a communication interface.
+Releases the claimed communication interface. > **NOTE** > > Before calling this API, call the > [usbManager.claimInterface](arkts-basicservices-claiminterface-f.md#claiminterface-1) > API to claim a communication interface.
 
 **Since:** 9
 

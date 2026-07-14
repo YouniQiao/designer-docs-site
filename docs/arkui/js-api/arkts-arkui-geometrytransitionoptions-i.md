@@ -12,11 +12,7 @@ Defines the options of geometry transition.
 follow?: boolean
 ```
 
-Whether to apply the animation to components that are always in the component tree. It is effective only in the
-**if** syntax. The value **true** means to apply the animation to components that are always in the component tree,
-and **false** means the opposite.
-
-Default value: **false**
+Whether to apply the animation to components that are always in the component tree. It is effective only in the **if** syntax. The value **true** means to apply the animation to components that are always in the component tree, and **false** means the opposite. Default value: **false**
 
 **Type:** boolean
 

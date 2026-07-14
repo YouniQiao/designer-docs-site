@@ -54,8 +54,7 @@ Set the picker color mode.
 customPicker?: CustomBuilder
 ```
 
-Set the custom builder for the picker appearance.
-If not set, system will show the default appearance for different device type.
+Set the custom builder for the picker appearance. If not set, system will show the default appearance for different device type.
 
 **Type:** CustomBuilder
 
@@ -125,8 +124,7 @@ Set the picker style.
 sessionType?: string
 ```
 
-Set the session type used by current picker component which can refer to AVSessionType in avSession.
-If not set, default value is 'audio'.
+Set the session type used by current picker component which can refer to AVSessionType in avSession. If not set, default value is 'audio'.
 
 **Type:** string
 

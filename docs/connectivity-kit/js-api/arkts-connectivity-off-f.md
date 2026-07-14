@@ -12,9 +12,7 @@ import { wifiManager } from '@kit.ConnectivityKit';
 function off(type: 'wifiStateChange', callback?: Callback<number>): void
 ```
 
-Unsubscribe Wi-Fi status change events.
-
-All callback functions will be deregistered If there is no specific callback parameter.
+Unsubscribe Wi-Fi status change events. All callback functions will be deregistered If there is no specific callback parameter.
 
 **Since:** 12
 
@@ -64,8 +62,7 @@ All callback functions will be deregistered If there is no specific callback par
 function off(type: 'wifiConnectionChange', callback?: Callback<number>): void
 ```
 
-Unsubscribe Wi-Fi connection change events.
-All callback functions will be deregistered If there is no specific callback parameter.
+Unsubscribe Wi-Fi connection change events. All callback functions will be deregistered If there is no specific callback parameter.
 
 **Since:** 12
 
@@ -115,8 +112,7 @@ All callback functions will be deregistered If there is no specific callback par
 function off(type: 'wifiScanStateChange', callback?: Callback<number>): void
 ```
 
-Unsubscribe Wi-Fi scan status change events.
-All callback functions will be deregistered If there is no specific callback parameter.
+Unsubscribe Wi-Fi scan status change events. All callback functions will be deregistered If there is no specific callback parameter.
 
 **Since:** 12
 
@@ -166,8 +162,7 @@ All callback functions will be deregistered If there is no specific callback par
 function off(type: 'wifiRssiChange', callback?: Callback<number>): void
 ```
 
-Unsubscribe Wi-Fi rssi change events.
-All callback functions will be deregistered If there is no specific callback parameter.
+Unsubscribe Wi-Fi rssi change events. All callback functions will be deregistered If there is no specific callback parameter.
 
 **Since:** 9
 
@@ -215,8 +210,7 @@ All callback functions will be deregistered If there is no specific callback par
 function off(type: 'hotspotStateChange', callback?: Callback<number>): void
 ```
 
-Unsubscribe Wi-Fi hotspot state change events.
-All callback functions will be deregistered If there is no specific callback parameter.
+Unsubscribe Wi-Fi hotspot state change events. All callback functions will be deregistered If there is no specific callback parameter.
 
 **Since:** 9
 

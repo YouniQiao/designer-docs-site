@@ -1,7 +1,6 @@
 # DataProxyHandle
 
-数据代理操作句柄的实例，可使用此实例访问或管理共享配置信息。在调用DataProxyHandle提供的方法前，需要先通过
-[createDataProxyHandle](arkts-arkdata-createdataproxyhandle-f.md#createdataproxyhandle-1)构建一个实例。
+数据代理操作句柄的实例，可使用此实例访问或管理共享配置信息。在调用DataProxyHandle提供的方法前，需要先通过 [createDataProxyHandle](arkts-arkdata-createdataproxyhandle-f.md#createdataproxyhandle-1)构建一个实例。
 
 **起始版本：** 20
 
@@ -166,8 +165,7 @@ dataProxyHandle.get(urisToGet, config).then((results: dataShare.DataProxyGetResu
 getValues(uri: string, config: DataProxyConfig): Promise<ValueType[]>
 ```
 
-获取指定 URI 下的所有多值类型数据。只有发布者和位于 [allowList](arkts-arkdata-proxydata-i.md#allowlist) 中的应用程序才能获取此数据。该 API 使用 Promise
-异步回调。
+获取指定 URI 下的所有多值类型数据。只有发布者和位于 [allowList](arkts-arkdata-proxydata-i.md#allowlist) 中的应用程序才能获取此数据。该 API 使用 Promise 异步回调。
 
 **起始版本：** 26.0.0
 
@@ -305,13 +303,7 @@ on(
     ): DataProxyResult[]
 ```
 
-订阅指定URI对应共享配置变更事件。若订阅者已注册变更通知，当配置发布方修改配置时，订阅者将会接收到callback通知，通知携带数据变更类型、变化的URI、变更的共享配置内容。使用callback异步回调。该功能不允许跨用户
-订阅通知，不允许订阅未发布的配置。订阅成功后若权限被收回，则后续不再通知订阅者。
-
-触发通知：配置发布方调用[publish](arkts-arkdata-dataproxyhandle-i.md#publish-1)、
-[delete](arkts-arkdata-dataproxyhandle-i.md#delete-1)、
-[delete](arkts-arkdata-dataproxyhandle-i.md#delete-1)接口发布、删除指定配置或者删除所有配置时会自动触
-发通知。
+订阅指定URI对应共享配置变更事件。若订阅者已注册变更通知，当配置发布方修改配置时，订阅者将会接收到callback通知，通知携带数据变更类型、变化的URI、变更的共享配置内容。使用callback异步回调。该功能不允许跨用户 订阅通知，不允许订阅未发布的配置。订阅成功后若权限被收回，则后续不再通知订阅者。 触发通知：配置发布方调用[publish](arkts-arkdata-dataproxyhandle-i.md#publish-1)、 [delete](arkts-arkdata-dataproxyhandle-i.md#delete-1)、 [delete](arkts-arkdata-dataproxyhandle-i.md#delete-1)接口发布、删除指定配置或者删除所有配置时会自动触 发通知。
 
 **起始版本：** 20
 
@@ -371,8 +363,7 @@ results.forEach((result) => {
 publish(data: ProxyData[], config: DataProxyConfig): Promise<DataProxyResult[]>
 ```
 
-发布共享配置项。使用Promise异步回调。发布后，发布者和允许列表中指定的应用可以访问该共享配置项。如果要发布的URI已经存在，则更新对应的共享配置项。如果发布的配置项中存在任一URI的长度超出上限或者格式校验失败，则当前发
-布操作失败。只有发布者才允许更新共享配置项。API版本26.0.0之前，每个应用支持最多32个共享配置；从API版本26.0.0开始，每个应用支持最多64个共享配置。
+发布共享配置项。使用Promise异步回调。发布后，发布者和允许列表中指定的应用可以访问该共享配置项。如果要发布的URI已经存在，则更新对应的共享配置项。如果发布的配置项中存在任一URI的长度超出上限或者格式校验失败，则当前发 布操作失败。只有发布者才允许更新共享配置项。API版本26.0.0之前，每个应用支持最多32个共享配置；从API版本26.0.0开始，每个应用支持最多64个共享配置。
 
 **起始版本：** 20
 
@@ -431,10 +422,7 @@ dataProxyHandle.publish(newConfigData, config).then((results: dataShare.DataProx
 putValue(uri: string, key: number, value: ValueType, config: DataProxyConfig): Promise<void>
 ```
 
-将一个值写入到已发布的数据中。该操作仅支持对多值类型数据执行。若传入的**key**不存在，则添加新的值；若传入的**key**已存在，则更新该key对应的值。默认情况下，单条数据（即URI）在单次应用中最多可添加10个值，每
-个值
-最大长度为4096字节。同时，单条数据（即一个URI）在单次应用中所有值总长度受限于数据发布时指定的**maxValueLength**参数值。请注意，该API中**maxValueLength**参数不生效。该API使用Pr
-omise异步回调。
+将一个值写入到已发布的数据中。该操作仅支持对多值类型数据执行。若传入的**key**不存在，则添加新的值；若传入的**key**已存在，则更新该key对应的值。默认情况下，单条数据（即URI）在单次应用中最多可添加10个值，每 个值 最大长度为4096字节。同时，单条数据（即一个URI）在单次应用中所有值总长度受限于数据发布时指定的**maxValueLength**参数值。请注意，该API中**maxValueLength**参数不生效。该API使用Pr omise异步回调。
 
 **起始版本：** 26.0.0
 

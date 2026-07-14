@@ -12,9 +12,7 @@ import { bluetoothManager } from '@kit.ConnectivityKit';
 function enableBluetooth(): void
 ```
 
-Enables Bluetooth on a device.
-On API 10 and above, the permission required by this interface is changed from DISCOVER_BLUETOOTH to
-ACCESS_BLUETOOTH.
+Enables Bluetooth on a device. On API 10 and above, the permission required by this interface is changed from DISCOVER_BLUETOOTH to ACCESS_BLUETOOTH.
 
 **Since:** 9
 

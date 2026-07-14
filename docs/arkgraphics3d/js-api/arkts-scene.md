@@ -27,9 +27,9 @@
 | [RaycastParameters](arkts-arkgraphics3d-raycastparameters-i.md) | How a raycast should be performed. |
 | [RaycastResult](arkts-arkgraphics3d-raycastresult-i.md) | The result of a ray cast hit. |
 | [RenderConfiguration](arkts-arkgraphics3d-renderconfiguration-i.md) | Global render configuration control |
-| [RenderContext](arkts-arkgraphics3d-rendercontext-i.md) | Render context defines the context for all rendering resources. Resources within the same render contextmay be shared between scenes created within the same render context. |
+| [RenderContext](arkts-arkgraphics3d-rendercontext-i.md) | Render context defines the context for all rendering resources. Resources within the same render context may be shared between scenes created within the same render context. |
 | [RenderParameters](arkts-arkgraphics3d-renderparameters-i.md) | Defines parameters for manual rendering. |
-| [RenderResourceFactory](arkts-arkgraphics3d-renderresourcefactory-i.md) | The render resource factory. RenderResourceFactory is used to create resources that can be sharedacross Scenes that share a RenderContext |
+| [RenderResourceFactory](arkts-arkgraphics3d-renderresourcefactory-i.md) | The render resource factory. RenderResourceFactory is used to create resources that can be shared across Scenes that share a RenderContext |
 | [SceneComponent](arkts-arkgraphics3d-scenecomponent-i.md) | Define underlying scene component |
 | [SceneNodeParameters](arkts-arkgraphics3d-scenenodeparameters-i.md) | The scene node parameters type. |
 | [SceneResourceFactory](arkts-arkgraphics3d-sceneresourcefactory-i.md) | The scene resource factory. |
@@ -40,7 +40,7 @@
 
 | Name | Description |
 | --- | --- |
-| [RenderResourceFactory](arkts-arkgraphics3d-renderresourcefactory-i-sys.md) | The render resource factory. RenderResourceFactory is used to create resources that can be sharedacross Scenes that share a RenderContext |
+| [RenderResourceFactory](arkts-arkgraphics3d-renderresourcefactory-i-sys.md) | The render resource factory. RenderResourceFactory is used to create resources that can be shared across Scenes that share a RenderContext |
 | [SceneLoadParams](arkts-arkgraphics3d-sceneloadparams-i-sys.md) | The parameters for loading a scene |
 <!--DelEnd-->
 

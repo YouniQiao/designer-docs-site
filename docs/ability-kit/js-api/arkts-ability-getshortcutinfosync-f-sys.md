@@ -12,11 +12,7 @@ import { launcherBundleManager } from '@kit.AbilityKit';
 function getShortcutInfoSync(bundleName: string): Array<ShortcutInfo>
 ```
 
-Obtains the [shortcut information](arkts-ability-shortcutinfo-i.md) of the current user based on the given
-bundle name of a main application. To obtain shortcut information about an application clone, use
-[getShortcutInfoByAppIndex](arkts-ability-getshortcutinfobyappindex-f-sys.md#getshortcutinfobyappindex-1).
-
-No permission is required for obtaining the caller's own information.
+Obtains the [shortcut information](arkts-ability-shortcutinfo-i.md) of the current user based on the given bundle name of a main application. To obtain shortcut information about an application clone, use [getShortcutInfoByAppIndex](arkts-ability-getshortcutinfobyappindex-f-sys.md#getshortcutinfobyappindex-1). No permission is required for obtaining the caller's own information.
 
 **Since:** 10
 
@@ -73,11 +69,7 @@ try {
 function getShortcutInfoSync(bundleName: string, userId: number): Array<ShortcutInfo>
 ```
 
-Obtains the [shortcut information](arkts-ability-shortcutinfo-i.md) of the specified user based on the given
-bundle name of a main application. To obtain shortcut information about an application clone, use
-[getShortcutInfoByAppIndex](arkts-ability-getshortcutinfobyappindex-f-sys.md#getshortcutinfobyappindex-1).
-
-No permission is required for obtaining the caller's own information.
+Obtains the [shortcut information](arkts-ability-shortcutinfo-i.md) of the specified user based on the given bundle name of a main application. To obtain shortcut information about an application clone, use [getShortcutInfoByAppIndex](arkts-ability-getshortcutinfobyappindex-f-sys.md#getshortcutinfobyappindex-1). No permission is required for obtaining the caller's own information.
 
 **Since:** 13
 

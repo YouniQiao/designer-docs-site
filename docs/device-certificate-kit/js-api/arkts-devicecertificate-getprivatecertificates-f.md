@@ -12,8 +12,7 @@ import { certificateManager } from '@kit.DeviceCertificateKit';
 function getPrivateCertificates(): Promise<CMResult>
 ```
 
-Obtains the credentials for installing the application. This API uses a promise to return the result
-asynchronously.
+Obtains the credentials for installing the application. This API uses a promise to return the result asynchronously.
 
 **Since:** 13
 

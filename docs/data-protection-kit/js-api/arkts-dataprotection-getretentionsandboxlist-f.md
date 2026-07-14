@@ -12,11 +12,7 @@ import { dlpPermission } from '@kit.DataProtectionKit';
 function getRetentionSandboxList(bundleName?: string): Promise<Array<RetentionSandboxInfo>>
 ```
 
-Obtains the sandbox applications in the retention state of an application. This API can be called only in non-DLP
-sandbox applications. This API uses a promise to return the result.
-
-This API is used to query the sandbox retention information of a specified application, so that the sandbox
-environment in the retention state can be checked or managed.
+Obtains the sandbox applications in the retention state of an application. This API can be called only in non-DLP sandbox applications. This API uses a promise to return the result. This API is used to query the sandbox retention information of a specified application, so that the sandbox environment in the retention state can be checked or managed.
 
 **Since:** 10
 
@@ -26,7 +22,7 @@ environment in the retention state can be checked or managed.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| bundleName | string | No | Bundle name of the application, which is used to query the sandbox retentioninformation of the application. This parameter is required when you need to query the sandbox retentioninformation of another application. It is optional when you need to query the sandbox retention informationof the current application. The value contains 7 to 128 bytes. If the value is out of range, error code19100001 is thrown. |
+| bundleName | string | No | Bundle name of the application, which is used to query the sandbox retentioninformation of the application. This parameter is required when you need to query the sandbox retentioninformation of another application. It is optional when you need to query the sandbox retention informationof the current application. The value contains 7 to 128 bytes. If the value is out of range, error code401 is thrown. |
 
 **Return value:**
 
@@ -63,11 +59,7 @@ dlpPermission.getRetentionSandboxList().then((sandboxList) => { // Obtain the sa
 function getRetentionSandboxList(bundleName: string, callback: AsyncCallback<Array<RetentionSandboxInfo>>): void
 ```
 
-Obtains the sandbox applications in the retention state of an application. This API uses an asynchronous callback
-to return the result.
-
-This API is used to query the sandbox retention information of a specified application, so that the sandbox
-environment in the retention state can be checked or managed.
+Obtains the sandbox applications in the retention state of an application. This API uses an asynchronous callback to return the result. This API is used to query the sandbox retention information of a specified application, so that the sandbox environment in the retention state can be checked or managed.
 
 **Since:** 10
 
@@ -77,7 +69,7 @@ environment in the retention state can be checked or managed.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| bundleName | string | Yes | Bundle name of the application, which is used to query the sandbox retentioninformation of the application. This parameter is required when you need to query the sandbox retentioninformation of another application. It is optional when you need to query the sandbox retention informationof the current application. The value contains 7 to 128 bytes. If the value is out of range, error code19100001 is thrown. |
+| bundleName | string | Yes | Bundle name of the application, which is used to query the sandbox retentioninformation of the application. This parameter is required when you need to query the sandbox retentioninformation of another application. It is optional when you need to query the sandbox retention informationof the current application. The value contains 7 to 128 bytes. If the value is out of range, error code401 is thrown. |
 | callback | AsyncCallback&lt;Array&lt;RetentionSandboxInfo&gt;&gt; | Yes | Callback used to return the result. If theoperation is successful, **err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
@@ -111,11 +103,7 @@ dlpPermission.getRetentionSandboxList("bundleName", (err, sandboxList) => {
 function getRetentionSandboxList(callback: AsyncCallback<Array<RetentionSandboxInfo>>): void
 ```
 
-Obtains the sandbox applications in the retention state of an application. This API uses an asynchronous callback
-to return the result.
-
-This API is used to query the sandbox retention information of a specified application, so that the sandbox
-environment in the retention state can be checked or managed.
+Obtains the sandbox applications in the retention state of an application. This API uses an asynchronous callback to return the result. This API is used to query the sandbox retention information of a specified application, so that the sandbox environment in the retention state can be checked or managed.
 
 **Since:** 10
 

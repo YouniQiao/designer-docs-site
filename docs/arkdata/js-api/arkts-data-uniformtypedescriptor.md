@@ -43,5 +43,5 @@ import { uniformTypeDescriptor } from '@kit.ArkData';
 
 | Name | Description |
 | --- | --- |
-| [UniformDataType](arkts-arkdata-uniformdatatype-e.md) | Enumerates the uniform data types. Some data types are related. For example, the JPEG type belongs to the IMAGE type. For more preset data types, see [Preset UTD List].The following table lists the common uniform data types. |
+| [UniformDataType](arkts-arkdata-uniformdatatype-e.md) | Enumerates the uniform data types. Some data types are related. For example, the JPEG type belongs to the IMAGE type. For more preset data types, see [Preset UTD List]. The following table lists the common uniform data types. |
 

@@ -114,8 +114,7 @@ Font measurement flags that are valid.
 leading: number
 ```
 
-Interline spacing, that is, the distance from the descent of one line of text to the ascent of the next line. The
-value is a floating point number.
+Interline spacing, that is, the distance from the descent of one line of text to the ascent of the next line. The value is a floating point number.
 
 **Type:** number
 
@@ -243,8 +242,7 @@ Height of the lowercase letter x. The value is usually a negative value.
 xMax?: number
 ```
 
-Horizontal distance from the rightmost edge of any glyph bounding box to the origin. The value is a positive
-number, indicating the maximum horizontal coordinate across all glyph bounding boxes.
+Horizontal distance from the rightmost edge of any glyph bounding box to the origin. The value is a positive number, indicating the maximum horizontal coordinate across all glyph bounding boxes.
 
 **Type:** number
 
@@ -260,8 +258,7 @@ number, indicating the maximum horizontal coordinate across all glyph bounding b
 xMin?: number
 ```
 
-Horizontal distance from the leftmost edge of any glyph bounding box to the origin. This value is usually less
-than 0, indicating the minimum horizontal coordinate across all glyph bounding boxes.
+Horizontal distance from the leftmost edge of any glyph bounding box to the origin. This value is usually less than 0, indicating the minimum horizontal coordinate across all glyph bounding boxes.
 
 **Type:** number
 

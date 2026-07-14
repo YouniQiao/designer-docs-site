@@ -12,8 +12,7 @@ import { notificationExtensionSubscription } from '@kit.NotificationKit';
 function setUserGrantedState(targetBundle: BundleOption, enabled: boolean): Promise<void>
 ```
 
-Sets the enabling state of the **Allow access to notifications on this device** switch for a specified application.
-This API uses a promise to return the result.
+Sets the enabling state of the **Allow access to notifications on this device** switch for a specified application. This API uses a promise to return the result.
 
 **Since:** 22
 

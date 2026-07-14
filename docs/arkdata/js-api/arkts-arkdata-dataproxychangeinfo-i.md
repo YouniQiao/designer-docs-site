@@ -1,7 +1,6 @@
 # DataProxyChangeInfo
 
-Defines a struct for notifying subscribers of the shared configuration changes, including data change type, URI,
-and content.
+Defines a struct for notifying subscribers of the shared configuration changes, including data change type, URI, and content.
 
 **Since:** 20
 

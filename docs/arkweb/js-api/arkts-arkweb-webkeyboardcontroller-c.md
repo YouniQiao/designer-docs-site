@@ -92,9 +92,7 @@ Inserts characters into the **Web** component text box.
 sendFunctionKey(key: number): void
 ```
 
-Inserts a function key. Currently, only the Enter key type is supported.
-For details about the value, see
-[EnterKeyType](../../apis-ime-kit/arkts-apis/arkts-ime-enterkeytype-e.md).
+Inserts a function key. Currently, only the Enter key type is supported. For details about the value, see [EnterKeyType](../../apis-ime-kit/arkts-apis/arkts-ime-enterkeytype-e.md).
 
 **Since:** 12
 

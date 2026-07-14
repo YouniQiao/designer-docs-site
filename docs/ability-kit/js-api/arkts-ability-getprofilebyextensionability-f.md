@@ -12,10 +12,7 @@ import { bundleManager } from '@kit.AbilityKit';
 function getProfileByExtensionAbility(moduleName: string, extensionAbilityName: string, metadataName: string, callback: AsyncCallback<Array<string>>): void
 ```
 
-Obtains the JSON string array of the current application's configuration file based on the given module name,
-ExtensionAbility name, and metadata name (name configured in
-[metadata](../../../../quick-start/module-configuration-file.md#metadata) of the **module.json5** file). This API
-uses an asynchronous callback to return the result.
+Obtains the JSON string array of the current application's configuration file based on the given module name, ExtensionAbility name, and metadata name (name configured in [metadata](../../../../quick-start/module-configuration-file.md#metadata) of the **module.json5** file). This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -74,10 +71,7 @@ try {
 function getProfileByExtensionAbility(moduleName: string, extensionAbilityName: string, metadataName?: string): Promise<Array<string>>
 ```
 
-Obtains the JSON string array of the current application's configuration file based on the given module name,
-ExtensionAbility name, and metadata name (name configured in
-[metadata](../../../../quick-start/module-configuration-file.md#metadata) of the **module.json5** file). This API
-uses a promise to return the result.
+Obtains the JSON string array of the current application's configuration file based on the given module name, ExtensionAbility name, and metadata name (name configured in [metadata](../../../../quick-start/module-configuration-file.md#metadata) of the **module.json5** file). This API uses a promise to return the result.
 
 **Since:** 9
 

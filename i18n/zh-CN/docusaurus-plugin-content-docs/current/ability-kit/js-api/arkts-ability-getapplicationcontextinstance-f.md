@@ -6,8 +6,7 @@
 export function getApplicationContextInstance(): ApplicationContext
 ```
 
-获取应用上下文。开发者使用该接口时，无需依赖Context基类。
-重复调用该接口，将获取同一个ApplicationContext实例。
+获取应用上下文。开发者使用该接口时，无需依赖Context基类。 重复调用该接口，将获取同一个ApplicationContext实例。
 
 **起始版本：** 23
 

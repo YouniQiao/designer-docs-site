@@ -12,9 +12,7 @@ import { appControl } from '@kit.AbilityKit';
 function getDisposedStatus(appId: string, callback: AsyncCallback<Want>): void
 ```
 
-Obtains the disposed status of an application. This API uses an asynchronous callback to return the result. If the
-operation is successful, the disposed status of the application is returned. If the operation fails, an error
-message is returned.
+Obtains the disposed status of an application. This API uses an asynchronous callback to return the result. If the operation is successful, the disposed status of the application is returned. If the operation fails, an error message is returned.
 
 **Since:** 9
 
@@ -72,9 +70,7 @@ try {
 function getDisposedStatus(appId: string): Promise<Want>
 ```
 
-Obtains the disposed status of an application. This API uses a promise to return the result. If the operation is
-successful, the disposed status of the application is returned. If the operation fails, an error message is
-returned.
+Obtains the disposed status of an application. This API uses a promise to return the result. If the operation is successful, the disposed status of the application is returned. If the operation fails, an error message is returned.
 
 **Since:** 9
 

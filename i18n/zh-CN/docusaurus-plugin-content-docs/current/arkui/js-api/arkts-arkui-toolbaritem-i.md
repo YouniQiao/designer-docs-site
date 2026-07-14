@@ -48,14 +48,7 @@ activeIcon?: ResourceStr
 activeSymbolIcon?: SymbolGlyphModifier
 ```
 
-工具栏单个选项处于ACTIVE态时的symbol资源（优先级高于activeIcon）。
-
-**说明：**
-
-不支持通过[SymbolGlyphModifier](SymbolGlyphModifier:SymbolGlyphModifier)对象的
-[fontSize](SymbolGlyphAttribute#fontSize)属性修改图标大小、[effectStrategy](SymbolGlyphAttribute#effectStrategy)
-属性修改动效、[symbolEffect](SymbolGlyphAttribute#symbolEffect(symbolEffect: SymbolEffect, isActive?: boolean))属性修改动
-效类型。
+工具栏单个选项处于ACTIVE态时的symbol资源（优先级高于activeIcon）。 **说明：** 不支持通过[SymbolGlyphModifier](SymbolGlyphModifier:SymbolGlyphModifier)对象的 [fontSize](SymbolGlyphAttribute#fontSize)属性修改图标大小、[effectStrategy](SymbolGlyphAttribute#effectStrategy) 属性修改动效、[symbolEffect](SymbolGlyphAttribute#symbolEffect(symbolEffect: SymbolEffect, isActive?: boolean))属性修改动 效类型。
 
 **类型：** SymbolGlyphModifier
 
@@ -91,9 +84,7 @@ icon?: ResourceStr
 status?: ToolbarItemStatus
 ```
 
-工具栏单个选项的状态。
-
-默认值：ToolbarItemStatus.NORMAL
+工具栏单个选项的状态。 默认值：ToolbarItemStatus.NORMAL
 
 **类型：** ToolbarItemStatus
 
@@ -111,14 +102,7 @@ status?: ToolbarItemStatus
 symbolIcon?: SymbolGlyphModifier
 ```
 
-工具栏单个选项的symbol资源（优先级高于icon）。
-
-**说明：**
-
-不支持通过[SymbolGlyphModifier](SymbolGlyphModifier:SymbolGlyphModifier)对象的
-[fontSize](SymbolGlyphAttribute#fontSize)属性修改图标大小、[effectStrategy](SymbolGlyphAttribute#effectStrategy)
-属性修改动效、[symbolEffect](SymbolGlyphAttribute#symbolEffect(symbolEffect: SymbolEffect, isActive?: boolean))属性修改动
-效类型。
+工具栏单个选项的symbol资源（优先级高于icon）。 **说明：** 不支持通过[SymbolGlyphModifier](SymbolGlyphModifier:SymbolGlyphModifier)对象的 [fontSize](SymbolGlyphAttribute#fontSize)属性修改图标大小、[effectStrategy](SymbolGlyphAttribute#effectStrategy) 属性修改动效、[symbolEffect](SymbolGlyphAttribute#symbolEffect(symbolEffect: SymbolEffect, isActive?: boolean))属性修改动 效类型。
 
 **类型：** SymbolGlyphModifier
 

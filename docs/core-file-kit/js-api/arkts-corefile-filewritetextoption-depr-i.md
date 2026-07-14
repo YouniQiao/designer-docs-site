@@ -14,8 +14,7 @@ Defines the options used in writeText().
 append?: boolean
 ```
 
-Whether to enable the append mode. The default value is **false**. The value **true** means to enable the append
-mode; the value **false** means the opposite.
+Whether to enable the append mode. The default value is **false**. The value **true** means to enable the append mode; the value **false** means the opposite.
 
 **Type:** boolean
 
@@ -63,11 +62,7 @@ Encoding format. The default format is **UTF-8**.
 fail?: (data: string, code: number) => void
 ```
 
-Callback invoked when the API call fails.
-**data** indicates the error information.
-**code** indicates the returned error code:
-**202**: invalid parameter
-**300**: I/O error
+Callback invoked when the API call fails. **data** indicates the error information. **code** indicates the returned error code: **202**: invalid parameter **300**: I/O error
 
 **Type:** (data: string, code: number) => void
 
@@ -115,10 +110,7 @@ String to write into the file.
 uri: string
 ```
 
-URI of a local file. If it does not exist, a file will be created. Restricted by the underlying file system of lite
-wearables, the value must meet the following requirements:
-1. The URI cannot contain the following special characters: \"*+,:;<=>?[]|\x7F.
-2. The value can contain a maximum of 128 characters.
+URI of a local file. If it does not exist, a file will be created. Restricted by the underlying file system of lite wearables, the value must meet the following requirements: 1. The URI cannot contain the following special characters: \"*+,:;<=>?[]|\x7F. 2. The value can contain a maximum of 128 characters.
 
 **Type:** string
 

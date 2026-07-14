@@ -30,8 +30,7 @@ Worker的名字，new Worker时指定。
 onerror?: (ev: ErrorEvent) => void
 ```
 
-Worker在执行过程中发生异常被调用的回调函数，该回调函数在Worker线程中执行。
-其中ev类型为ErrorEvent，表示收到的异常数据。
+Worker在执行过程中发生异常被调用的回调函数，该回调函数在Worker线程中执行。 其中ev类型为ErrorEvent，表示收到的异常数据。
 
 **类型：** (ev: ErrorEvent) => void
 

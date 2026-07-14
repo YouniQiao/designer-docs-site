@@ -6,13 +6,7 @@
 function decompressFile(inFile: string, outFile: string, options: Options, callback: AsyncCallback<void>): void
 ```
 
-解压文件，解压的结果。使用callback异步回调。
-
-> **说明：**
->
-> 为了避免路径穿越，从API version 13开始，inFile和outFile传入的参数不允许包含“../”，否则会返回900001、900002错误码。
->
-> 传入的压缩包内部文件或者文件夹名称不能包含“../”，否则会返回900003错误码。
+解压文件，解压的结果。使用callback异步回调。 > **说明：** > > 为了避免路径穿越，从API version 13开始，inFile和outFile传入的参数不允许包含“../”，否则会返回900001、900002错误码。 > > 传入的压缩包内部文件或者文件夹名称不能包含“../”，否则会返回900003错误码。
 
 **起始版本：** 9
 
@@ -74,13 +68,7 @@ try {
 function decompressFile(inFile: string, outFile: string, callback: AsyncCallback<void>): void
 ```
 
-解压文件，解压的结果。使用callback异步回调。
-
-> **说明：**
->
-> 为了避免路径穿越，从API version 13开始，inFile和outFile传入的参数不允许包含“../”，否则会返回900001、900002错误码。
->
-> 传入的压缩包内部文件或者文件夹名称不能包含“../”，否则会返回900003错误码。
+解压文件，解压的结果。使用callback异步回调。 > **说明：** > > 为了避免路径穿越，从API version 13开始，inFile和outFile传入的参数不允许包含“../”，否则会返回900001、900002错误码。 > > 传入的压缩包内部文件或者文件夹名称不能包含“../”，否则会返回900003错误码。
 
 **起始版本：** 10
 
@@ -137,13 +125,7 @@ try {
 function decompressFile(inFile: string, outFile: string, options?: Options): Promise<void>
 ```
 
-解压文件，解压的结果。使用Promise异步回调。
-
-> **说明：**
->
-> 为了避免路径穿越，从API version 13开始，inFile和outFile传入的参数不允许包含“../”，否则会返回900001、900002错误码。
->
-> 传入的压缩包内部文件或者文件夹名称不能包含“../”，否则会返回900003错误码。
+解压文件，解压的结果。使用Promise异步回调。 > **说明：** > > 为了避免路径穿越，从API version 13开始，inFile和outFile传入的参数不允许包含“../”，否则会返回900001、900002错误码。 > > 传入的压缩包内部文件或者文件夹名称不能包含“../”，否则会返回900003错误码。
 
 **起始版本：** 9
 

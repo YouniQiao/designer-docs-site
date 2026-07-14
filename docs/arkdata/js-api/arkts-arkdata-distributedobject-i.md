@@ -1,7 +1,6 @@
 # DistributedObject
 
-Provides APIs for managing a distributed data object. Before using any API of this class, use
-createDistributedObject() to create a DistributedObject object.
+Provides APIs for managing a distributed data object. Before using any API of this class, use createDistributedObject() to create a DistributedObject object.
 
 **Since:** 8
 
@@ -44,30 +43,30 @@ Unsubscribes from data changes of this distributed data object.
 
 ```TypeScript
 class SourceObject {
-    name: string
-    age: number
-    isVis: boolean
+  name: string
+  age: number
+  isVis: boolean
 
-    constructor(name: string, age: number, isVis: boolean) {
-        this.name = name
-        this.age = age
-        this.isVis = isVis
-    }
+  constructor(name: string, age: number, isVis: boolean) {
+    this.name = name;
+    this.age = age;
+    this.isVis = isVis;
+  }
 }
 
-let source: SourceObject = new SourceObject("jack", 18, false);
+let source: SourceObject = new SourceObject('jack', 18, false);
 let g_object: distributedDataObject.DistributedObject = distributedDataObject.createDistributedObject(source);
 // Unregister the specified data change callback.
-g_object.off("change", (sessionId: string, fields: Array<string>) => {
-    console.info("change" + sessionId);
+g_object.off('change', (sessionId: string, fields: Array<string>) => {
+    console.info('change' + sessionId);
     if (fields != null && fields != undefined) {
         for (let index: number = 0; index < fields.length; index++) {
-            console.info("changed !" + fields[index] + " " + g_object[fields[index]]);
+            console.info('changed !' + fields[index] + ' ' + g_object[fields[index]]);
         }
     }
 });
 // Unregister all data change callbacks.
-g_object.off("change");
+g_object.off('change');
 
 ```
 
@@ -101,25 +100,25 @@ Unsubscribes from the status change of this distributed data object.
 
 ```TypeScript
 class SourceObject {
-    name: string
-    age: number
-    isVis: boolean
+  name: string
+  age: number
+  isVis: boolean
 
-    constructor(name: string, age: number, isVis: boolean) {
-        this.name = name
-        this.age = age
-        this.isVis = isVis
-    }
+  constructor(name: string, age: number, isVis: boolean) {
+    this.name = name;
+    this.age = age;
+    this.isVis = isVis;
+  }
 }
 
-let source: SourceObject = new SourceObject("jack", 18, false);
+let source: SourceObject = new SourceObject('jack', 18, false);
 let g_object: distributedDataObject.DistributedObject = distributedDataObject.createDistributedObject(source);
 // Unregister the specified status change callback.
-g_object.off("status", (sessionId: string, networkId: string, status: 'online' | 'offline') => {
-    console.info("status changed " + sessionId + " " + status + " " + networkId);
+g_object.off('status', (sessionId: string, networkId: string, status: 'online' | 'offline') => {
+    console.info('status changed ' + sessionId + ' ' + status + ' ' + networkId);
 });
 // Unregister all status change callbacks.
-g_object.off("status");
+g_object.off('status');
 
 ```
 
@@ -150,24 +149,24 @@ Subscribes to data changes of this distributed data object.
 
 ```TypeScript
 class SourceObject {
-    name: string
-    age: number
-    isVis: boolean
+  name: string
+  age: number
+  isVis: boolean
 
-    constructor(name: string, age: number, isVis: boolean) {
-        this.name = name
-        this.age = age
-        this.isVis = isVis
-    }
+  constructor(name: string, age: number, isVis: boolean) {
+    this.name = name;
+    this.age = age;
+    this.isVis = isVis;
+  }
 }
 
-let source: SourceObject = new SourceObject("jack", 18, false);
+let source: SourceObject = new SourceObject('jack', 18, false);
 let g_object: distributedDataObject.DistributedObject = distributedDataObject.createDistributedObject(source);
-g_object.on("change", (sessionId: string, fields: Array<string>) => {
-    console.info("change" + sessionId);
+g_object.on('change', (sessionId: string, fields: Array<string>) => {
+    console.info('change' + sessionId);
     if (fields != null && fields != undefined) {
         for (let index: number = 0; index < fields.length; index++) {
-            console.info("changed !" + fields[index] + " " + g_object[fields[index]]);
+            console.info('changed !' + fields[index] + ' ' + g_object[fields[index]]);
         }
     }
 });
@@ -204,22 +203,22 @@ Subscribes to status changes of this distributed data object.
 
 ```TypeScript
 class SourceObject {
-    name: string
-    age: number
-    isVis: boolean
+  name: string
+  age: number
+  isVis: boolean
 
-    constructor(name: string, age: number, isVis: boolean) {
-        this.name = name
-        this.age = age
-        this.isVis = isVis
-    }
+  constructor(name: string, age: number, isVis: boolean) {
+    this.name = name;
+    this.age = age;
+    this.isVis = isVis;
+  }
 }
 
-let source: SourceObject = new SourceObject("jack", 18, false);
+let source: SourceObject = new SourceObject('jack', 18, false);
 let g_object: distributedDataObject.DistributedObject = distributedDataObject.createDistributedObject(source);
 
-g_object.on("status", (sessionId: string, networkId: string, status: 'online' | 'offline') => {
-    console.info("status changed " + sessionId + " " + status + " " + networkId);
+g_object.on('status', (sessionId: string, networkId: string, status: 'online' | 'offline') => {
+    console.info('status changed ' + sessionId + ' ' + status + ' ' + networkId);
 });
 
 ```
@@ -230,8 +229,7 @@ g_object.on("status", (sessionId: string, networkId: string, status: 'online' | 
 setSessionId(sessionId?: string): boolean
 ```
 
-Sets a session ID. For the devices in the collaboration state in a trusted network, data of the distributed
-objects with the same session ID can be automatically synced across devices.
+Sets a session ID. For the devices in the collaboration state in a trusted network, data of the distributed objects with the same session ID can be automatically synced across devices.
 
 **Since:** 8
 
@@ -259,23 +257,23 @@ objects with the same session ID can be automatically synced across devices.
 
 ```TypeScript
 class SourceObject {
-    name: string
-    age: number
-    isVis: boolean
+  name: string
+  age: number
+  isVis: boolean
 
-    constructor(name: string, age: number, isVis: boolean) {
-        this.name = name
-        this.age = age
-        this.isVis = isVis
-    }
+  constructor(name: string, age: number, isVis: boolean) {
+    this.name = name;
+    this.age = age;
+    this.isVis = isVis;
+  }
 }
 
-let source: SourceObject = new SourceObject("jack", 18, false);
+let source: SourceObject = new SourceObject('jack', 18, false);
 let g_object: distributedDataObject.DistributedObject = distributedDataObject.createDistributedObject(source);
 // Add g_object to the distributed network.
 g_object.setSessionId(distributedDataObject.genSessionId());
 // Remove g_object from the distributed network.
-g_object.setSessionId("");
+g_object.setSessionId('');
 
 ```
 

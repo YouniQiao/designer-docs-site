@@ -4,8 +4,7 @@
 type OnDestroyAISession = (id: string) => void
 ```
 
-Triggered when an AI session is destroyed.
-Used for cleaning up resources associated with custom AI models.
+Triggered when an AI session is destroyed. Used for cleaning up resources associated with custom AI models.
 
 **Since:** 26.0.0
 

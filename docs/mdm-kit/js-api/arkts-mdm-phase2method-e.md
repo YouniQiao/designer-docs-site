@@ -82,8 +82,7 @@ GTC.
 PHASE2_SIM = 5
 ```
 
-Subscriber Identity Module (SIM). It performs authentication using the keys and algorithms stored in the SIM card
-of a smartphone.
+Subscriber Identity Module (SIM). It performs authentication using the keys and algorithms stored in the SIM card of a smartphone.
 
 **Since:** 12
 
@@ -97,8 +96,7 @@ of a smartphone.
 PHASE2_AKA = 6
 ```
 
-Authentication and Key Agreement (AKA). It performs authentication using enhanced keys and algorithms stored in a
-USIM card (applicable to 3G/4G/5G SIM cards).
+Authentication and Key Agreement (AKA). It performs authentication using enhanced keys and algorithms stored in a USIM card (applicable to 3G/4G/5G SIM cards).
 
 **Since:** 12
 

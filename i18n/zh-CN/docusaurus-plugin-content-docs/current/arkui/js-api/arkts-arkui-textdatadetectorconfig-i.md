@@ -12,9 +12,7 @@
 color?: ResourceColor
 ```
 
-设置文本识别成功后的实体颜色。
-
-默认值：'#ff0a59f7'
+设置文本识别成功后的实体颜色。 默认值：'#ff0a59f7'
 
 **类型：** ResourceColor
 
@@ -32,19 +30,7 @@ color?: ResourceColor
 decoration?: DecorationStyleInterface
 ```
 
-设置文本识别成功后的实体装饰线样式。
-
-默认值：
-
-{
-
- type: TextDecorationType.Underline,
-
- color: 与实体颜色一致,
-
- style: TextDecorationStyle.SOLID 
-
-}
+设置文本识别成功后的实体装饰线样式。 默认值： { type: TextDecorationType.Underline, color: 与实体颜色一致, style: TextDecorationStyle.SOLID }
 
 **类型：** DecorationStyleInterface
 
@@ -62,13 +48,7 @@ decoration?: DecorationStyleInterface
 enablePreviewMenu?: boolean
 ```
 
-设置是否开启文本识别长按显示预览菜单。true表示开启，false表示未开启。
-
-默认值：false
-
-当[copyOptions](RichEditorAttribute#copyOptions)设置为None时，若enablePreviewMenu设置为true，长按AI实体也不能显示预览菜单。
-
-该参数在Phone、Tablet中可正常调用，在PC/2in1、TV和Wearable等其他设备类型中无效果。
+设置是否开启文本识别长按显示预览菜单。true表示开启，false表示未开启。 默认值：false 当[copyOptions](RichEditorAttribute#copyOptions)设置为None时，若enablePreviewMenu设置为true，长按AI实体也不能显示预览菜单。 该参数在Phone、Tablet中可正常调用，在PC/2in1、TV和Wearable等其他设备类型中无效果。
 
 **类型：** boolean
 

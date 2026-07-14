@@ -30,8 +30,7 @@ context: UIAbilityContext | UIContext
 index: number
 ```
 
-触发生命周期的routerPage页面对应的上下文信息。
-取值应≥0。
+触发生命周期的routerPage页面对应的上下文信息。 取值应≥0。
 
 **类型：** number
 

@@ -6,10 +6,7 @@
 function setWatermarkImageForAppWindows(pixelMap: image.PixelMap | undefined): Promise<void>
 ```
 
-设置或取消本应用进程下窗口的水印图片，使用Promise异步回调。该接口需要在
-[loadContent()](arkts-arkui-window-i.md#loadcontent-1)
-或[setUIContent()](arkts-arkui-window-i.md#setuicontent-1)调用生效后使
-用。
+设置或取消本应用进程下窗口的水印图片，使用Promise异步回调。该接口需要在 [loadContent()](arkts-arkui-window-i.md#loadcontent-1) 或[setUIContent()](arkts-arkui-window-i.md#setuicontent-1)调用生效后使 用。
 
 **起始版本：** 21
 

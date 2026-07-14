@@ -1,10 +1,6 @@
 # SegmentButtonIconTextItem
 
-Icon and text button information.
-
-> **NOTE**
->
-> Both the **icon** and **selectedIcon** attributes must be set. Setting only one of them is invalid.
+Icon and text button information. > **NOTE** > > Both the **icon** and **selectedIcon** attributes must be set. Setting only one of them is invalid.
 
 **Since:** 11
 
@@ -22,13 +18,7 @@ import { CommonSegmentButtonOptions, SegmentButtonItemOptionsConstructorOptions,
 accessibilityDescription?: ResourceStr
 ```
 
-Accessibility description, which is used to explain component operations to users. You can set detailed description
-text to help users understand the operation consequences. If a component has both text and accessibility
-description, the text is read first, and then the accessibility description is read.
-
-The default value is an empty string.
-
-If the value is **undefined**, the default value is used.
+Accessibility description, which is used to explain component operations to users. You can set detailed description text to help users understand the operation consequences. If a component has both text and accessibility description, the text is read first, and then the accessibility description is read. The default value is an empty string. If the value is **undefined**, the default value is used.
 
 **Type:** ResourceStr
 
@@ -48,23 +38,7 @@ If the value is **undefined**, the default value is used.
 accessibilityLevel?: string
 ```
 
-Accessibility level, which is used to set whether the current component can be recognized by accessibility
-services.
-
-The options are as follows:
-
-**"auto"**: The component can be recognized by accessibility services.
-
-**"yes"**: The component can be recognized by accessibility services.
-
-**"no"**: The component cannot be recognized by accessibility services.
-
-**"no-hide-descendants"**: Neither the component nor its child components can be recognized by accessibility
-services.
-
-Default value: **"auto"**
-
-If the value is **undefined**, the default value is used.
+Accessibility level, which is used to set whether the current component can be recognized by accessibility services. The options are as follows: **"auto"**: The component can be recognized by accessibility services. **"yes"**: The component can be recognized by accessibility services. **"no"**: The component cannot be recognized by accessibility services. **"no-hide-descendants"**: Neither the component nor its child components can be recognized by accessibility services. Default value: **"auto"** If the value is **undefined**, the default value is used.
 
 **Type:** string
 
@@ -84,9 +58,7 @@ If the value is **undefined**, the default value is used.
 icon: ResourceStr
 ```
 
-Icon of the unselected item.
-
-If the value is undefined, no icon is displayed.
+Icon of the unselected item. If the value is undefined, no icon is displayed.
 
 **Type:** ResourceStr
 
@@ -104,11 +76,7 @@ If the value is undefined, no icon is displayed.
 iconAccessibilityText?: ResourceStr
 ```
 
-Accessibility text of the unselected item.
-
-The default value is an empty string.
-
-If the value is **undefined**, the default value is used.
+Accessibility text of the unselected item. The default value is an empty string. If the value is **undefined**, the default value is used.
 
 **Type:** ResourceStr
 
@@ -128,9 +96,7 @@ If the value is **undefined**, the default value is used.
 selectedIcon: ResourceStr
 ```
 
-Icon of the selected item.
-
-If the value is undefined, no icon is displayed.
+Icon of the selected item. If the value is undefined, no icon is displayed.
 
 **Type:** ResourceStr
 
@@ -148,11 +114,7 @@ If the value is undefined, no icon is displayed.
 selectedIconAccessibilityText?: ResourceStr
 ```
 
-Accessibility text of the selected item.
-
-The default value is an empty string.
-
-If the value is **undefined**, the default value is used.
+Accessibility text of the selected item. The default value is an empty string. If the value is **undefined**, the default value is used.
 
 **Type:** ResourceStr
 
@@ -172,9 +134,7 @@ If the value is **undefined**, the default value is used.
 text: ResourceStr
 ```
 
-Button text.
-
-If the value is undefined, no text is displayed.
+Button text. If the value is undefined, no text is displayed.
 
 **Type:** ResourceStr
 

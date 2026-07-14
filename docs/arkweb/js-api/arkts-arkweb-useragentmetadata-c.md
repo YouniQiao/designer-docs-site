@@ -58,8 +58,7 @@ Gets the value for the sec-ch-ua-bitness.
 getBrandVersionList(): Array<UserAgentBrandVersion>
 ```
 
-Returns the current list of UserAgentBrandVersion which are used to generate the User-Agent client hints
-sec-ch-ua and sec-ch-ua-full-version-list.
+Returns the current list of UserAgentBrandVersion which are used to generate the User-Agent client hints sec-ch-ua and sec-ch-ua-full-version-list.
 
 **Since:** 24
 
@@ -219,11 +218,7 @@ Gets the value for the sec-ch-ua-wow64.
 setArchitecture(arch: string): void
 ```
 
-Sets User-Agent metadata architecture.
-
-<p><strong>API Note</strong>:<br>
-The default value is empty string which means the system default value will be used.
-</p>
+Sets User-Agent metadata architecture. <p><strong>API Note</strong>:<br> The default value is empty string which means the system default value will be used. </p>
 
 **Since:** 24
 
@@ -263,12 +258,7 @@ Sets User-Agent metadata bitness default is "".
 setBrandVersionList(brandVersionList: Array<UserAgentBrandVersion>): void
 ```
 
-Sets User-Agent metadata brands and their versions.
-
-<p><strong>API Note</strong>:<br>
-The default value is an empty list which means the system default User-Agent metadata brands and versions will be
-used to generate the User-Agent client hints.
-</p>
+Sets User-Agent metadata brands and their versions. <p><strong>API Note</strong>:<br> The default value is an empty list which means the system default User-Agent metadata brands and versions will be used to generate the User-Agent client hints. </p>
 
 **Since:** 24
 
@@ -288,12 +278,7 @@ used to generate the User-Agent client hints.
 setFormFactors(formFactors: Array<UserAgentFormFactor>): void
 ```
 
-Sets User-Agent metadata form factors.
-
-<p><strong>API Note</strong>:<br>
-The default value is empty list which means the system default value will be used.
-Form factor value should be one or more of DESKTOP, AUTOMOTIVE, MOBILE, TABLET, XR, EINK, WATCH.
-</p>
+Sets User-Agent metadata form factors. <p><strong>API Note</strong>:<br> The default value is empty list which means the system default value will be used. Form factor value should be one or more of DESKTOP, AUTOMOTIVE, MOBILE, TABLET, XR, EINK, WATCH. </p>
 
 **Since:** 24
 
@@ -313,11 +298,7 @@ Form factor value should be one or more of DESKTOP, AUTOMOTIVE, MOBILE, TABLET, 
 setFullVersion(fullVersion: string): void
 ```
 
-Sets User-Agent metadata full version.
-
-<p><strong>API Note</strong>:<br>
-The default value is empty string which means the system default value will be used.
-</p>
+Sets User-Agent metadata full version. <p><strong>API Note</strong>:<br> The default value is empty string which means the system default value will be used. </p>
 
 **Since:** 24
 
@@ -357,11 +338,7 @@ Sets User-Agent metadata mobile, default is true.
 setModel(model: string): void
 ```
 
-Sets User-Agent metadata model.
-
-<p><strong>API Note</strong>:<br>
-The default value is empty string which means the system default value will be used.
-</p>
+Sets User-Agent metadata model. <p><strong>API Note</strong>:<br> The default value is empty string which means the system default value will be used. </p>
 
 **Since:** 24
 
@@ -381,11 +358,7 @@ The default value is empty string which means the system default value will be u
 setPlatform(platform: string): void
 ```
 
-Sets User-Agent metadata platform.
-
-<p><strong>API Note</strong>:<br>
-The default value is empty string which means the system default value will be used.
-</p>
+Sets User-Agent metadata platform. <p><strong>API Note</strong>:<br> The default value is empty string which means the system default value will be used. </p>
 
 **Since:** 24
 
@@ -405,11 +378,7 @@ The default value is empty string which means the system default value will be u
 setPlatformVersion(platformVersion: string): void
 ```
 
-Sets User-Agent metadata platform version.
-
-<p><strong>API Note</strong>:<br>
-The default value is empty string which means the system default value will be used.
-</p>
+Sets User-Agent metadata platform version. <p><strong>API Note</strong>:<br> The default value is empty string which means the system default value will be used. </p>
 
 **Since:** 24
 

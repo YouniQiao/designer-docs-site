@@ -12,9 +12,7 @@ import { notificationManager } from '@kit.NotificationKit';
 function snoozeNotification(hashCode: string, delayTime: number): Promise<void>
 ```
 
-Sets a notification snooze reminder. The notification reminds the user again after the specified time. Each setting
-triggers only one reminder, using the same reminder mode as the original notification.
-After the snooze reminder is set, the original notification is deleted.
+Snoozes a notification. The notification will be reminded again after the specified time. Each setting will trigger only one reminder, and the reminder mode will be the same as that of the notification.<br>The notification will be deleted after the setting.
 
 **Since:** 26.0.0
 
@@ -30,14 +28,14 @@ After the snooze reminder is set, the original notification is deleted.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| hashCode | string | Yes | The hashCode of the notification to snooze. |
-| delayTime | number | Yes | The time interval in seconds to delay the reminder<br>Unit: s. |
+| hashCode | string | Yes | Unique ID of the notification to be snoozed. |
+| delayTime | number | Yes | Interval for the snoozed notification.<br>Unit: second. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Returns the promise. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

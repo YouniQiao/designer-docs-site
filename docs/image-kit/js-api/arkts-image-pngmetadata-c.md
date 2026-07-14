@@ -146,8 +146,7 @@ PNG gamma.
 readonly interlaceType?: number
 ```
 
-PNG interlacing mode.
-The value should be an integer.
+PNG interlacing mode. The value should be an integer.
 
 **Type:** number
 
@@ -179,8 +178,7 @@ PNG modification time.
 readonly sRGBIntent?: number
 ```
 
-PNG sRGB rendering intent.
-The value should be an integer.
+PNG sRGB rendering intent. The value should be an integer.
 
 **Type:** number
 
@@ -244,8 +242,7 @@ PNG warning.
 readonly xPixelsPerMeter?: number
 ```
 
-PNG x pixels per meter.
-The value should be an integer.
+PNG x pixels per meter. The value should be an integer.
 
 **Type:** number
 
@@ -261,8 +258,7 @@ The value should be an integer.
 readonly yPixelsPerMeter?: number
 ```
 
-PNG y pixels per meter.
-The value should be an integer.
+PNG y pixels per meter. The value should be an integer.
 
 **Type:** number
 

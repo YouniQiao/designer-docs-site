@@ -1,8 +1,6 @@
 # MakerNoteHuaweiMetadata
 
-MakerNoteHuaweiMetadata implements Metadata
-
-来自Huawei相机的照片元数据。
+MakerNoteHuaweiMetadata implements Metadata 来自Huawei相机的照片元数据。
 
 **继承/实现关系：** MakerNoteHuaweiMetadata implements [Metadata](arkts-image-metadata-i.md)
 
@@ -96,9 +94,7 @@ getBlob(): Promise<ArrayBuffer>
 getProperties(key: Array<string>): Promise<Record<string, string | null>>
 ```
 
-获取图像中属性的值。使用Promise异步回调。
-
-要查询的属性的具体信息请参考[PropertyKey](arkts-image-propertykey-e.md)。
+获取图像中属性的值。使用Promise异步回调。 要查询的属性的具体信息请参考[PropertyKey](arkts-image-propertykey-e.md)。
 
 **起始版本：** 23
 
@@ -162,9 +158,7 @@ setBlob(blob: ArrayBuffer): Promise<void>
 setProperties(records: Record<string, string | null>): Promise<void>
 ```
 
-批量设置图片元数据中的指定属性的值。使用Promise异步回调。
-
-要查询的属性的具体信息请参考[PropertyKey](arkts-image-propertykey-e.md)。
+批量设置图片元数据中的指定属性的值。使用Promise异步回调。 要查询的属性的具体信息请参考[PropertyKey](arkts-image-propertykey-e.md)。
 
 **起始版本：** 23
 
@@ -340,9 +334,7 @@ isFrontCamera?: boolean
 isWindSnapshot?: boolean
 ```
 
-是否采用风快照模式拍摄。true表示采用，false表示不采用。
-
-该模式是针对拍摄快速移动物体或容易产生模糊场景（如大风中、抓拍运动物体）的专门摄影。
+是否采用风快照模式拍摄。true表示采用，false表示不采用。 该模式是针对拍摄快速移动物体或容易产生模糊场景（如大风中、抓拍运动物体）的专门摄影。
 
 **类型：** boolean
 

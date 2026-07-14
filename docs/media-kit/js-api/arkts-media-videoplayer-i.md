@@ -1,9 +1,6 @@
 # VideoPlayer
 
-VideoPlayer is a class for video playback management. It provides APIs to manage and play videos. Before calling
-any API in VideoPlayer, you must use
-[createVideoPlayer()](arkts-media-createvideoplayer-f.md#createvideoplayer-1)
-to create a VideoPlayer instance.
+VideoPlayer is a class for video playback management. It provides APIs to manage and play videos. Before calling any API in VideoPlayer, you must use [createVideoPlayer()](arkts-media-createvideoplayer-f.md#createvideoplayer-1) to create a VideoPlayer instance.
 
 **Since:** 8
 
@@ -161,8 +158,7 @@ Subscribes to the video width and height change event.
 on(type: 'audioInterrupt', callback: (info: audio.InterruptEvent) => void): void
 ```
 
-Subscribes to the audio interruption event. For details, see
-[audio.InterruptEvent](../../apis-audio-kit/arkts-apis/arkts-audio-interruptevent-i.md).
+Subscribes to the audio interruption event. For details, see [audio.InterruptEvent](../../apis-audio-kit/arkts-apis/arkts-audio-interruptevent-i.md).
 
 **Since:** 9
 
@@ -185,8 +181,7 @@ Subscribes to the audio interruption event. For details, see
 on(type: 'error', callback: ErrorCallback): void
 ```
 
-Subscribes to video playback error events. After an error event is reported, you must handle the event and exit
-the playback.
+Subscribes to video playback error events. After an error event is reported, you must handle the event and exit the playback.
 
 **Since:** 8
 
@@ -429,8 +424,7 @@ Resets video playback. This API uses a promise to return the result.
 seek(timeMs: number, callback: AsyncCallback<number>): void
 ```
 
-Seeks to the specified playback position. The previous key frame at the specified position is played. This API
-uses an asynchronous callback to return the result.
+Seeks to the specified playback position. The previous key frame at the specified position is played. This API uses an asynchronous callback to return the result.
 
 **Since:** 8
 
@@ -477,8 +471,7 @@ Seeks to the specified playback position. This API uses an asynchronous callback
 seek(timeMs: number, mode?: SeekMode): Promise<number>
 ```
 
-Seeks to the specified playback position. If **mode** is not specified, the previous key frame at the specified
-position is played. This API uses a promise to return the result.
+Seeks to the specified playback position. If **mode** is not specified, the previous key frame at the specified position is played. This API uses a promise to return the result.
 
 **Since:** 8
 
@@ -507,12 +500,7 @@ position is played. This API uses a promise to return the result.
 setDisplaySurface(surfaceId: string, callback: AsyncCallback<void>): void
 ```
 
-Sets a surface ID. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> - **SetDisplaySurface** must be called between the URL setting and the calling of **prepare**. A surface must
-> be set for video streams without audio. Otherwise, the calling of **prepare** fails.
+Sets a surface ID. This API uses an asynchronous callback to return the result. > **NOTE** > > - **SetDisplaySurface** must be called between the URL setting and the calling of **prepare**. A surface must > be set for video streams without audio. Otherwise, the calling of **prepare** fails.
 
 **Since:** 8
 
@@ -535,12 +523,7 @@ Sets a surface ID. This API uses an asynchronous callback to return the result.
 setDisplaySurface(surfaceId: string): Promise<void>
 ```
 
-Sets a surface ID. This API uses a promise to return the result.
-
-> **NOTE**
->
-> - **SetDisplaySurface** must be called between the URL setting and the calling of **prepare**. A surface must
-> be set for video streams without audio. Otherwise, the calling of **prepare** fails.
+Sets a surface ID. This API uses a promise to return the result. > **NOTE** > > - **SetDisplaySurface** must be called between the URL setting and the calling of **prepare**. A surface must > be set for video streams without audio. Otherwise, the calling of **prepare** fails.
 
 **Since:** 8
 
@@ -768,22 +751,7 @@ Video duration, in ms. The value **-1** indicates the live mode.
 fdSrc: AVFileDescriptor
 ```
 
-Description of a video file. This property is required when video assets of an application are continuously
-stored in a file.
-
-Assume that a music file that stores continuous music assets consists of the following:
-
-Video 1 (address offset: 0, byte length: 100)
-
-Video 2 (address offset: 101; byte length: 50)
-
-Video 3 (address offset: 151, byte length: 150)
-
-1. To play video 1: AVFileDescriptor { fd = resource handle; offset = 0; length = 100; }
-2. To play video 2: AVFileDescriptor { fd = resource handle; offset = 101; length = 50; }
-3. To play video 3: AVFileDescriptor { fd = resource handle; offset = 151; length = 150; }
-
-To play an independent video file, use **src=fd://xx**.
+Description of a video file. This property is required when video assets of an application are continuously stored in a file. Assume that a music file that stores continuous music assets consists of the following: Video 1 (address offset: 0, byte length: 100) Video 2 (address offset: 101; byte length: 50) Video 3 (address offset: 151, byte length: 150) 1. To play video 1: AVFileDescriptor { fd = resource handle; offset = 0; length = 100; } 2. To play video 2: AVFileDescriptor { fd = resource handle; offset = 101; length = 50; } 3. To play video 3: AVFileDescriptor { fd = resource handle; offset = 151; length = 150; } To play an independent video file, use **src=fd://xx**.
 
 **Type:** AVFileDescriptor
 
@@ -855,22 +823,7 @@ Video playback state.
 url: string
 ```
 
-Video URL. The video formats MP4, MPEG-TS, and MKV are supported.
-
-**Example of supported URLs**:
-
-1. FD: fd://xx
-
-![](../../../../reference/apis-media-kit/figures/en-us_image_url.png)
-
-2. HTTP: http://xx
-3. HTTPS: https://xx
-4. HLS: http://xx or https://xx
-5. File type: file://xx
-
-**NOTE**
-
-WebM is no longer supported since API version 11.
+Video URL. The video formats MP4, MPEG-TS, and MKV are supported. **Example of supported URLs**: 1. FD: fd://xx ![](../../../../reference/apis-media-kit/figures/en-us_image_url.png) 2. HTTP: http://xx 3. HTTPS: https://xx 4. HLS: http://xx or https://xx 5. File type: file://xx **NOTE** WebM is no longer supported since API version 11.
 
 **Type:** string
 

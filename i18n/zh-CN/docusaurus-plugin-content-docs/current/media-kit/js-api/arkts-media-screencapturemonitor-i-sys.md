@@ -1,7 +1,6 @@
 # ScreenCaptureMonitor（系统接口）
 
-A class that provides APIs to query and monitor the system screen recorder status. Before calling any API,
-you must use getScreenCaptureMonitor() to obtain a ScreenCaptureMonitor instance.
+A class that provides APIs to query and monitor the system screen recorder status. Before calling any API, you must use getScreenCaptureMonitor() to obtain a ScreenCaptureMonitor instance.
 
 **起始版本：** 18
 
@@ -49,8 +48,9 @@ screenCaptureMonitor.off('systemScreenRecorder');
 on(type: 'systemScreenRecorder', callback: Callback<ScreenCaptureEvent>): void
 ```
 
-Subscribes to state change events of the system screen recorder. From the ScreenCaptureEvent event reported,
-you can determine whether the system screen recorder is working.
+Subscribes to state change events of the system screen recorder. From the ScreenCaptureEvent event reported, you can determine whether the system screen recorder is working.
+
+**起始版本：** 18
 
 **系统能力：** SystemCapability.Multimedia.Media.AVScreenCapture
 

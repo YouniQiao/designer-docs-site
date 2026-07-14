@@ -1,7 +1,6 @@
 # PanGestureEvent
 
-Inherits from [BaseGestureEvent](arkts-arkui-basegestureevent-i.md). This object can be passed as the **event** parameter of
-[onGestureJudgeBegin](arkts-arkui-commonmethod-c.md#ongesturejudgebegin-1).
+Inherits from [BaseGestureEvent](arkts-arkui-basegestureevent-i.md). This object can be passed as the **event** parameter of [onGestureJudgeBegin](arkts-arkui-commonmethod-c.md#ongesturejudgebegin-1).
 
 **Inheritance/Implementation:** PanGestureEvent extends [BaseGestureEvent](arkts-arkui-basegestureevent-i.md)
 
@@ -15,8 +14,7 @@ Inherits from [BaseGestureEvent](arkts-arkui-basegestureevent-i.md). This object
 offsetX: number
 ```
 
-Offset of the gesture event on the x-axis relative to the original area of the current component, in vp. A positive
-value means to pan from left to right, and a negative value means the opposite.
+Offset of the gesture event on the x-axis relative to the original area of the current component, in vp. A positive value means to pan from left to right, and a negative value means the opposite.
 
 **Type:** number
 
@@ -34,8 +32,7 @@ value means to pan from left to right, and a negative value means the opposite.
 offsetY: number
 ```
 
-Offset of the gesture event on the y-axis relative to the original area of the current component, in vp. A positive
-value means to pan from top to bottom, and a negative value means the opposite.
+Offset of the gesture event on the y-axis relative to the original area of the current component, in vp. A positive value means to pan from top to bottom, and a negative value means the opposite.
 
 **Type:** number
 
@@ -53,8 +50,7 @@ value means to pan from top to bottom, and a negative value means the opposite.
 velocity: number
 ```
 
-Velocity along the main axis. The value is the arithmetic square root of the sum of squares of the velocity along
-the x- and y-axis. The unit is vp/s.
+Velocity along the main axis. The value is the arithmetic square root of the sum of squares of the velocity along the x- and y-axis. The unit is vp/s.
 
 **Type:** number
 
@@ -72,9 +68,7 @@ the x- and y-axis. The unit is vp/s.
 velocityX: number
 ```
 
-Velocity along the x-axis. The origin of the coordinate axis is the upper left corner of the screen. The velocity
-is positive if the movement is from left to right, and it is negative if the movement is from right to left. The
-unit is vp/s.
+Velocity along the x-axis. The origin of the coordinate axis is the upper left corner of the screen. The velocity is positive if the movement is from left to right, and it is negative if the movement is from right to left. The unit is vp/s.
 
 **Type:** number
 
@@ -92,9 +86,7 @@ unit is vp/s.
 velocityY: number
 ```
 
-Velocity along the y-axis. The origin of the coordinate axis is the upper left corner of the screen. The velocity
-is positive if the movement is from top to bottom, and it is negative if the movement is from bottom to top. The
-unit is vp/s.
+Velocity along the y-axis. The origin of the coordinate axis is the upper left corner of the screen. The velocity is positive if the movement is from top to bottom, and it is negative if the movement is from bottom to top. The unit is vp/s.
 
 **Type:** number
 

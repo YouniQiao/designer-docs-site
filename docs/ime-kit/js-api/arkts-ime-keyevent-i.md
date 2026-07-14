@@ -1,8 +1,6 @@
 # KeyEvent
 
-In the following API examples, you must first use
-[getKeyboardDelegate](arkts-ime-getkeyboarddelegate-f.md#getkeyboarddelegate-1) to obtain a **KeyboardDelegate** instance, and
-then call the APIs using the obtained instance.
+In the following API examples, you must first use [getKeyboardDelegate](arkts-ime-getkeyboarddelegate-f.md#getkeyboarddelegate-1) to obtain a **KeyboardDelegate** instance, and then call the APIs using the obtained instance.
 
 **Since:** 8
 
@@ -20,10 +18,7 @@ import { inputMethodEngine } from '@kit.IMEKit';
 readonly keyAction: number
 ```
 
-Key event type.
-
-- **2**: keydown event.
-- **3**: keyup event.
+Key event type. - **2**: keydown event. - **3**: keyup event.
 
 **Type:** number
 

@@ -1,6 +1,6 @@
 # MediaAssetDataHandler
 
-Media asset handler, which can be used to customize the media asset processing logic in onDataPrepared.
+MediaAssetDataHandler is a media asset handler used to customize the media asset processing logic in **onDataPrepared**.
 
 **Since:** 11
 
@@ -18,9 +18,9 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 onDataPrepared(data: T, map?: Map<string, string>): void
 ```
 
-Indicates required media asset data is prepared
+Called when the requested media asset is ready. If an error occurs, **data** returned by the callback is **undefined**. Each media asset request corresponds to a callback. T supports the following data types: ArrayBuffer, [ImageSource](../../apis-image-kit/arkts-apis/arkts-image-imagesource-i.md), [MovingPhoto](arkts-file-photoaccesshelper.md), and boolean. ArrayBuffer indicates the image or video asset data, [ImageSource](../../apis-image-kit/arkts-apis/arkts-image-imagesource-i.md) indicates the image source, [MovingPhoto](arkts-file-photoaccesshelper.md) indicates a moving photo object, and boolean indicates whether the image or video is successfully written to the application sandbox directory. Information returned by **map**: | Map Key | Description| |----------|-------| | 'quality' | Image quality. The value **high** means high quality, and **low** means poor quality.|
 
-**Since:** 12
+**Since:** 11
 
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -28,6 +28,6 @@ Indicates required media asset data is prepared
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| data | T | Yes | the returned data of media asset |
-| map | Map&lt;string, string&gt; | No | additional information for the data |
+| data | T | Yes | Data of the image asset that is ready. It is of the generic type and supports the followingdata types: ArrayBuffer, [ImageSource](../../apis-image-kit/arkts-apis/arkts-image-imagesource-i.md),[MovingPhoto](arkts-file-photoaccesshelper.md), and boolean. |
+| map | Map&lt;string, string&gt; | No | Additional information about the image asset, such as the image quality.Currently, only **quality** is supported.<br>**Since:** 12 |
 

@@ -12,17 +12,7 @@ import { hiTraceMeter } from '@kit.PerformanceAnalysisKit';
 function startTrace(name: string, taskId: number): void
 ```
 
-Starts an asynchronous trace.
-
-If multiple trace tasks with the same name need to be performed at the same time or a trace needs to be performed
-multiple times concurrently, different task IDs must be specified in **startTrace**.
-
-If the trace tasks with the same name are not performed at the same time, the same taskId can be used. For a
-specific example, see [finishTrace()](arkts-performanceanalysis-finishtrace-f.md#finishtrace-1).
-
-Since API version 19, you are advised to use [startAsyncTrace()](arkts-performanceanalysis-startasynctrace-f.md#startasynctrace-1), which must be
-used together with [finishAsyncTrace()](arkts-performanceanalysis-finishasynctrace-f.md#finishasynctrace-1). In this way, you can specify the
-trace output level and category.
+Starts an asynchronous trace. If multiple trace tasks with the same name need to be performed at the same time or a trace needs to be performed multiple times concurrently, different task IDs must be specified in **startTrace**. If the trace tasks with the same name are not performed at the same time, the same taskId can be used. For a specific example, see [finishTrace()](arkts-performanceanalysis-finishtrace-f.md#finishtrace-1). Since API version 19, you are advised to use [startAsyncTrace()](arkts-performanceanalysis-startasynctrace-f.md#startasynctrace-1), which must be used together with [finishAsyncTrace()](arkts-performanceanalysis-finishasynctrace-f.md#finishasynctrace-1). In this way, you can specify the trace output level and category.
 
 **Since:** 8
 

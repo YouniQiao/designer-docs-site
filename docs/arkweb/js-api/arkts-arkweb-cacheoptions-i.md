@@ -1,7 +1,6 @@
 # CacheOptions
 
-Represents a configuration object for precompiling JavaScript in the **Web** component to generate bytecode cache,
-which is designed to control the updating of the bytecode cache.
+Represents a configuration object for precompiling JavaScript in the **Web** component to generate bytecode cache, which is designed to control the updating of the bytecode cache.
 
 **Since:** 12
 
@@ -19,9 +18,7 @@ import { webview } from '@kit.ArkWeb';
 responseHeaders: Array<WebHeader>
 ```
 
-Array of response headers from the server when a JavaScript file is requested. They include information such as E
--Tag or Last-Modified to identify the file version and determine whether the bytecode cache needs to be
-refreshed.
+Array of response headers from the server when a JavaScript file is requested. They include information such as E -Tag or Last-Modified to identify the file version and determine whether the bytecode cache needs to be refreshed.
 
 **Type:** Array<WebHeader>
 

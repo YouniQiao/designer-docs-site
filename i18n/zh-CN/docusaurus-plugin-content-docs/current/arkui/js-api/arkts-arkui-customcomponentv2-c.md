@@ -14,8 +14,7 @@
 aboutToReuse?(): void
 ```
 
-aboutToReuse Method for @ComponentV2, it is executed when fetching instance of custom component from RecyclePool.
-It is different from the @Reusable in CustomComponent, there is no param parameter in this callback.
+aboutToReuse Method for @ComponentV2, it is executed when fetching instance of custom component from RecyclePool. It is different from the @Reusable in CustomComponent, there is no param parameter in this callback.
 
 **起始版本：** 18
 

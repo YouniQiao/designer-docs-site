@@ -20,9 +20,7 @@ import { RespCallback } from '@kit.AdsKit';
 onLoadAd(adParam: advertising.AdRequestParams, adOptions: advertising.AdOptions, respCallback: RespCallback)
 ```
 
-Called when the media application starts to load an ad.
-The device vendor needs to implement the ad request service logic
-in this API and send the result to the media application through a call back.
+Called when the media application starts to load an ad. The device vendor needs to implement the ad request service logic in this API and send the result to the media application through a call back.
 
 **Since:** 11
 
@@ -61,9 +59,7 @@ onLoadAdWithMultiSlots(adParams: advertising.AdRequestParams[], adOptions: adver
     respCallback: RespCallback)
 ```
 
-Called when the media application starts to load multiple ads.
-The device vendor needs to implement the ad request service logic
-in this API and send the result to the media application through a call back.
+Called when the media application starts to load multiple ads. The device vendor needs to implement the ad request service logic in this API and send the result to the media application through a call back.
 
 **Since:** 11
 

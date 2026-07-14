@@ -34,9 +34,7 @@ Enumerates mouse event types.
 altKey: boolean
 ```
 
-Whether altKey is being pressed.
-
-The value **true** indicates that the key is pressed, and the value **false** indicates the opposite.
+Whether altKey is being pressed. The value **true** indicates that the key is pressed, and the value **false** indicates the opposite.
 
 **Type:** boolean
 
@@ -78,9 +76,7 @@ Enumerates mouse buttons.
 capsLock: boolean
 ```
 
-Whether capsLock is enabled.
-
-The value **true** indicates that capsLock is enabled, and the value **false** indicates the opposite.
+Whether capsLock is enabled. The value **true** indicates that capsLock is enabled, and the value **false** indicates the opposite.
 
 **Type:** boolean
 
@@ -94,9 +90,7 @@ The value **true** indicates that capsLock is enabled, and the value **false** i
 ctrlKey: boolean
 ```
 
-Whether ctrlKey is being pressed.
-
-The value **true** indicates that the key is pressed, and the value **false** indicates the opposite.
+Whether ctrlKey is being pressed. The value **true** indicates that the key is pressed, and the value **false** indicates the opposite.
 
 **Type:** boolean
 
@@ -110,9 +104,7 @@ The value **true** indicates that the key is pressed, and the value **false** in
 fnKey: boolean
 ```
 
-Whether fnKey is being pressed.
-
-The value **true** indicates that the key is pressed, and the value **false** indicates the opposite.
+Whether fnKey is being pressed. The value **true** indicates that the key is pressed, and the value **false** indicates the opposite.
 
 **Type:** boolean
 
@@ -126,13 +118,7 @@ The value **true** indicates that the key is pressed, and the value **false** in
 globalX?: number
 ```
 
-X coordinate of the mouse event in the global coordinate system with the upper left corner of the primary screen as
-the origin, in px. When this parameter is used as an input parameter, it is mandatory and supports only integers if
-[MouseEventData.useGlobalCoordinate](arkts-input-mouseeventdata-i-sys.md)
-is set to **true**. If **MouseEventData.useGlobalCoordinate** is set to **false**, this parameter is optional, and
-the X coordinate in the relative coordinate system with the upper left corner of the specified screen as the origin
-is used to calculate the injected event. When this parameter is used as an output parameter, it is reported by the
-system.
+X coordinate of the mouse event in the global coordinate system with the upper left corner of the primary screen as the origin, in px. When this parameter is used as an input parameter, it is mandatory and supports only integers if [MouseEventData.useGlobalCoordinate](arkts-input-mouseeventdata-i-sys.md) is set to **true**. If **MouseEventData.useGlobalCoordinate** is set to **false**, this parameter is optional, and the X coordinate in the relative coordinate system with the upper left corner of the specified screen as the origin is used to calculate the injected event. When this parameter is used as an output parameter, it is reported by the system.
 
 **Type:** number
 
@@ -146,13 +132,7 @@ system.
 globalY?: number
 ```
 
-Y coordinate of the mouse event in the global coordinate system with the upper left corner of the primary screen as
-the origin, in px. When this parameter is used as an input parameter, it is mandatory and supports only integers if
-[MouseEventData.useGlobalCoordinate](arkts-input-mouseeventdata-i-sys.md)
-is set to **true**. If **MouseEventData.useGlobalCoordinate** is set to **false**, this parameter is optional, and
-the Y coordinate in the relative coordinate system with the upper left corner of the specified screen as the origin
-is used to calculate the injected event. When this parameter is used as an output parameter, it is reported by the
-system.
+Y coordinate of the mouse event in the global coordinate system with the upper left corner of the primary screen as the origin, in px. When this parameter is used as an input parameter, it is mandatory and supports only integers if [MouseEventData.useGlobalCoordinate](arkts-input-mouseeventdata-i-sys.md) is set to **true**. If **MouseEventData.useGlobalCoordinate** is set to **false**, this parameter is optional, and the Y coordinate in the relative coordinate system with the upper left corner of the specified screen as the origin is used to calculate the injected event. When this parameter is used as an output parameter, it is reported by the system.
 
 **Type:** number
 
@@ -166,9 +146,7 @@ system.
 logoKey: boolean
 ```
 
-Whether logoKey is being pressed.
-
-The value **true** indicates that the key is pressed, and the value **false** indicates the opposite.
+Whether logoKey is being pressed. The value **true** indicates that the key is pressed, and the value **false** indicates the opposite.
 
 **Type:** boolean
 
@@ -182,9 +160,7 @@ The value **true** indicates that the key is pressed, and the value **false** in
 numLock: boolean
 ```
 
-Whether numLock is enabled.
-
-The value **true** indicates that numLock is enabled, and the value **false** indicates the opposite.
+Whether numLock is enabled. The value **true** indicates that numLock is enabled, and the value **false** indicates the opposite.
 
 **Type:** boolean
 
@@ -226,8 +202,7 @@ List of pressed keys.
 rawDeltaX: number
 ```
 
-X coordinate offset of the current mouse event relative to the previous event, in px. Currently, the value can only
-be an integer.
+X coordinate offset of the current mouse event relative to the previous event, in px. Currently, the value can only be an integer.
 
 **Type:** number
 
@@ -241,8 +216,7 @@ be an integer.
 rawDeltaY: number
 ```
 
-Y coordinate offset of the current mouse event relative to the previous event, in px. Currently, the value can only
-be an integer.
+Y coordinate offset of the current mouse event relative to the previous event, in px. Currently, the value can only be an integer.
 
 **Type:** number
 
@@ -256,8 +230,7 @@ be an integer.
 screenX: number
 ```
 
-X coordinate of the mouse event in the relative coordinate system with the upper left corner of the specified
-screen as the origin, in px. Currently, the value can only be an integer.
+X coordinate of the mouse event in the relative coordinate system with the upper left corner of the specified screen as the origin, in px. Currently, the value can only be an integer.
 
 **Type:** number
 
@@ -271,8 +244,7 @@ screen as the origin, in px. Currently, the value can only be an integer.
 screenY: number
 ```
 
-Y coordinate of the mouse event in the relative coordinate system with the upper left corner of the specified
-screen as the origin, in px. Currently, the value can only be an integer.
+Y coordinate of the mouse event in the relative coordinate system with the upper left corner of the specified screen as the origin, in px. Currently, the value can only be an integer.
 
 **Type:** number
 
@@ -286,9 +258,7 @@ screen as the origin, in px. Currently, the value can only be an integer.
 scrollLock: boolean
 ```
 
-Whether scrollLock is enabled.
-
-The value **true** indicates that scrollLock is enabled, and the value **false** indicates the opposite.
+Whether scrollLock is enabled. The value **true** indicates that scrollLock is enabled, and the value **false** indicates the opposite.
 
 **Type:** boolean
 
@@ -302,9 +272,7 @@ The value **true** indicates that scrollLock is enabled, and the value **false**
 shiftKey: boolean
 ```
 
-Whether shiftKey is being pressed.
-
-The value **true** indicates that the key is pressed, and the value **false** indicates the opposite.
+Whether shiftKey is being pressed. The value **true** indicates that the key is pressed, and the value **false** indicates the opposite.
 
 **Type:** boolean
 
@@ -332,8 +300,7 @@ Tool type.
 windowX: number
 ```
 
-X coordinate in the relative coordinate system with the upper left corner of the window where the mouse is located
-as the origin, in px. Currently, the value can only be an integer.
+X coordinate in the relative coordinate system with the upper left corner of the window where the mouse is located as the origin, in px. Currently, the value can only be an integer.
 
 **Type:** number
 
@@ -347,8 +314,7 @@ as the origin, in px. Currently, the value can only be an integer.
 windowY: number
 ```
 
-Y coordinate in the relative coordinate system with the upper left corner of the window where the mouse is located
-as the origin, in px. Currently, the value can only be an integer.
+Y coordinate in the relative coordinate system with the upper left corner of the window where the mouse is located as the origin, in px. Currently, the value can only be an integer.
 
 **Type:** number
 

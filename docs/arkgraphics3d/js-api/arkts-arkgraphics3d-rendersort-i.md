@@ -1,10 +1,6 @@
 # RenderSort
 
-Render sort Layer. Within a render slot a layer can define a sort layer order.
-There are 0-63 values available (0 first, 63 last). Default id value is 32.
-1. Typical use case is to set render sort layer to objects which render with depth test without depth write.
-2. Typical use case is to always render character and/or camera object first to cull large parts of the view.
-3. Sort e.g. plane layers.
+Render sort Layer. Within a render slot a layer can define a sort layer order. There are 0-63 values available (0 first, 63 last). Default id value is 32. 1. Typical use case is to set render sort layer to objects which render with depth test without depth write. 2. Typical use case is to always render character and/or camera object first to cull large parts of the view. 3. Sort e.g. plane layers.
 
 **Since:** 20
 
@@ -16,8 +12,7 @@ There are 0-63 values available (0 first, 63 last). Default id value is 32.
 renderSortLayer?: number
 ```
 
-Sort layer used for sorting submeshes in rendering in render slots.
-Valid values are 0 - 63.
+Sort layer used for sorting submeshes in rendering in render slots. Valid values are 0 - 63.
 
 **Type:** number
 
@@ -33,8 +28,7 @@ Valid values are 0 - 63.
 renderSortLayerOrder?: number
 ```
 
-Sort layer order to describe fine order within sort layer.
-Valid values are 0 - 255.
+Sort layer order to describe fine order within sort layer. Valid values are 0 - 255.
 
 **Type:** number
 

@@ -1,11 +1,6 @@
 # Screen (System API)
 
-Defines the [physical screen](../../../../displaymanager/display-terminology.md#physical-screen) instance.
-
-Before calling any API in Screen, you must use
-[getAllScreens()](arkts-arkui-getallscreens-f-sys.md#getallscreens-1) or
-[createVirtualScreen()](arkts-arkui-createvirtualscreen-f-sys.md#createvirtualscreen-1)
-to obtain a Screen instance.
+Defines the [physical screen](../../../../displaymanager/display-terminology.md#physical-screen) instance. Before calling any API in Screen, you must use [getAllScreens()](arkts-arkui-getallscreens-f-sys.md#getallscreens-1) or [createVirtualScreen()](arkts-arkui-createvirtualscreen-f-sys.md#createvirtualscreen-1) to obtain a Screen instance.
 
 **Since:** 9
 
@@ -171,12 +166,7 @@ screen.createVirtualScreen(option).then((data: screen.Screen) => {
 setOrientation(orientation: Orientation, callback: AsyncCallback<void>): void
 ```
 
-Sets the screen orientation. This API uses an asynchronous callback to return the result. The screen orientation
-changes only when the specified orientation complies with the
-[application rotation policy](../../../../quick-start/module-configuration-file.md#abilities) (you can configure
-the application rotation policy by setting the **orientation** field in the **abilities** tag in the
-**module.json5** file). If the specified orientation does not comply with the application rotation policy, the
-screen orientation does not change and no exception is thrown.
+Sets the screen orientation. This API uses an asynchronous callback to return the result. The screen orientation changes only when the specified orientation complies with the [application rotation policy](../../../../quick-start/module-configuration-file.md#abilities) (you can configure the application rotation policy by setting the **orientation** field in the **abilities** tag in the **module.json5** file). If the specified orientation does not comply with the application rotation policy, the screen orientation does not change and no exception is thrown.
 
 **Since:** 9
 
@@ -247,12 +237,7 @@ screen.createVirtualScreen(option).then((data: screen.Screen) => {
 setOrientation(orientation: Orientation): Promise<void>
 ```
 
-Sets the screen orientation. This API uses a promise to return the result. The screen orientation changes only
-when the specified orientation complies with the
-[application rotation policy](../../../../quick-start/module-configuration-file.md#abilities) (you can configure
-the application rotation policy by setting the **orientation** field in the **abilities** tag in the
-**module.json5** file). If the specified orientation does not comply with the application rotation policy, the
-screen orientation does not change and no exception is thrown.
+Sets the screen orientation. This API uses a promise to return the result. The screen orientation changes only when the specified orientation complies with the [application rotation policy](../../../../quick-start/module-configuration-file.md#abilities) (you can configure the application rotation policy by setting the **orientation** field in the **abilities** tag in the **module.json5** file). If the specified orientation does not comply with the application rotation policy, the screen orientation does not change and no exception is thrown.
 
 **Since:** 9
 
@@ -539,8 +524,7 @@ screen.createVirtualScreen(option).then((data: screen.Screen) => {
 readonly activeModeIndex: number
 ```
 
-Index of the active screen mode. The current value and value range of this parameter vary according to the
-screen resolution, refresh rate, and device hardware. The value is an integer.
+Index of the active screen mode. The current value and value range of this parameter vary according to the screen resolution, refresh rate, and device hardware. The value is an integer.
 
 **Type:** number
 

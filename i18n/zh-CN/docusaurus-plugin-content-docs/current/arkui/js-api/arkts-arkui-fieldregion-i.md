@@ -12,8 +12,7 @@
 position?: PositionT<number>
 ```
 
-The coordinates of the center position of the field. The top-left corner of the component is the origin of the
-coordinate system. The coordinate unit is vp.
+The coordinates of the center position of the field. The top-left corner of the component is the origin of the coordinate system. The coordinate unit is vp.
 
 **类型：** PositionT<number>
 

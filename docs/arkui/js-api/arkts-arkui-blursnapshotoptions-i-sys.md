@@ -1,7 +1,6 @@
 # BlurSnapshotOptions (System API)
 
-Defines the options for blur snapshot optimization.
-Setting this object enables blur optimization.
+Defines the options for blur snapshot optimization. Setting this object enables blur optimization.
 
 **Since:** 26.0.0
 
@@ -15,8 +14,7 @@ Setting this object enables blur optimization.
 enableFreeze?: boolean
 ```
 
-Whether to enable freeze optimization for the blur snapshot.
-When enabled, freeze optimization is applied to reduce rendering overhead during blur snapshot.
+Whether to enable freeze optimization for the blur snapshot. When enabled, freeze optimization is applied to reduce rendering overhead during blur snapshot.
 
 **Type:** boolean
 

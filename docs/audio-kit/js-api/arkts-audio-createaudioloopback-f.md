@@ -12,8 +12,7 @@ import { audio } from '@kit.AudioKit';
 function createAudioLoopback(mode: AudioLoopbackMode): Promise<AudioLoopback>
 ```
 
-Creates an <b>AudioLoopback</b> instance, which provides low-latency in-ear
-monitoring using a fast capturer and renderer.
+Creates an <b>AudioLoopback</b> instance, which provides low-latency in-ear monitoring using a fast capturer and renderer.
 
 **Since:** 26.0.0
 

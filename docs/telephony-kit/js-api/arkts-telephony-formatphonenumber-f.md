@@ -12,10 +12,7 @@ import { call } from '@kit.TelephonyKit';
 function formatPhoneNumber(phoneNumber: string, options: NumberFormatOptions, callback: AsyncCallback<string>): void
 ```
 
-Formats a phone number according to the Chinese Telephone Code Plan. Before the formatting,
-a phone number is in the format of country code (if any) + 3-digit service provider code
-+ 4-digit area code + 4-digit subscriber number. After the formatting,
-each part is separated by a space.
+Formats a phone number according to the Chinese Telephone Code Plan. Before the formatting, a phone number is in the format of country code (if any) + 3-digit service provider code + 4-digit area code + 4-digit subscriber number. After the formatting, each part is separated by a space.
 
 **Since:** 7
 
@@ -64,10 +61,7 @@ call.formatPhoneNumber("138xxxxxxxx", options, (err: BusinessError, data: string
 function formatPhoneNumber(phoneNumber: string, options?: NumberFormatOptions): Promise<string>
 ```
 
-Formats a phone number according to the Chinese Telephone Code Plan. Before the formatting,
-a phone number is in the format of country code (if any) + 3-digit service provider code
-+ 4-digit area code + 4-digit subscriber number. After the formatting,
-each part is separated by a space.
+Formats a phone number according to the Chinese Telephone Code Plan. Before the formatting, a phone number is in the format of country code (if any) + 3-digit service provider code + 4-digit area code + 4-digit subscriber number. After the formatting, each part is separated by a space.
 
 **Since:** 7
 
@@ -119,10 +113,7 @@ call.formatPhoneNumber("138xxxxxxxx", options).then((data: string) => {
 function formatPhoneNumber(phoneNumber: string, callback: AsyncCallback<string>): void
 ```
 
-Formats a phone number according to the Chinese Telephone Code Plan. Before the formatting,
-a phone number is in the format of country code (if any) + 3-digit service provider code
-+ 4-digit area code + 4-digit subscriber number. After the formatting,
-each part is separated by a space.
+Formats a phone number according to the Chinese Telephone Code Plan. Before the formatting, a phone number is in the format of country code (if any) + 3-digit service provider code + 4-digit area code + 4-digit subscriber number. After the formatting, each part is separated by a space.
 
 **Since:** 7
 

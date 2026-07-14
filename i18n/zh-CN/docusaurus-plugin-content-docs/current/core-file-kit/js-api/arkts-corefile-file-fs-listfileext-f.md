@@ -9,9 +9,7 @@ declare function listFileExt(
 ): Promise<string[]>
 ```
 
-列出目录下所有文件名，使用Promise异步回调。
-该接口支持通过自定义过滤函数对文件名进行过滤。
-可通过配置options中recursion参数实现递归列出所有文件的相对路径，相对路径以“/”开头。
+列出目录下所有文件名，使用Promise异步回调。 该接口支持通过自定义过滤函数对文件名进行过滤。 可通过配置options中recursion参数实现递归列出所有文件的相对路径，相对路径以“/”开头。
 
 **起始版本：** 26.0.0
 

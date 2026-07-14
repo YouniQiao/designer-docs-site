@@ -12,10 +12,7 @@ import { bundleManager } from '@kit.AbilityKit';
 function getAppProvisionInfo(bundleName: string, callback: AsyncCallback<AppProvisionInfo>): void
 ```
 
-Obtains the provision profile based on the given bundle name. This API uses an asynchronous callback to return the
-result.
-
-No permission is required for obtaining the caller's own information.
+Obtains the provision profile based on the given bundle name. This API uses an asynchronous callback to return the result. No permission is required for obtaining the caller's own information.
 
 **Since:** 10
 
@@ -72,10 +69,7 @@ try {
 function getAppProvisionInfo(bundleName: string, userId: number, callback: AsyncCallback<AppProvisionInfo>): void
 ```
 
-Obtains the provision profile based on the given bundle name and user ID. This API uses an asynchronous callback to
-return the result.
-
-No permission is required for obtaining the caller's own information.
+Obtains the provision profile based on the given bundle name and user ID. This API uses an asynchronous callback to return the result. No permission is required for obtaining the caller's own information.
 
 **Since:** 10
 
@@ -135,10 +129,7 @@ try {
 function getAppProvisionInfo(bundleName: string, userId?: number): Promise<AppProvisionInfo>
 ```
 
-Obtains the provision profile based on the given bundle name and user ID. This API uses a promise to return the
-result.
-
-No permission is required for obtaining the caller's own information.
+Obtains the provision profile based on the given bundle name and user ID. This API uses a promise to return the result. No permission is required for obtaining the caller's own information.
 
 **Since:** 10
 

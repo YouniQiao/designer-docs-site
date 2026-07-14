@@ -1,11 +1,6 @@
 # CmsParser
 
-CmsParser对象用于对CMS签名或封装数据进行验签或解封装。
-
-> **说明：**
->
-> PKCS #7是用于存储签名或加密数据的标准语法。注意CMS是PKCS #7的扩展，PKCS #7支持的数据类型包括数据、签名数据、封装数据、
-> 签名和封装数据、摘要数据、加密数据。常用于保护数据的完整性和机密性。
+CmsParser对象用于对CMS签名或封装数据进行验签或解封装。 > **说明：** > > PKCS #7是用于存储签名或加密数据的标准语法。注意CMS是PKCS #7的扩展，PKCS #7支持的数据类型包括数据、签名数据、封装数据、 > 签名和封装数据、摘要数据、加密数据。常用于保护数据的完整性和机密性。
 
 **起始版本：** 22
 
@@ -461,11 +456,7 @@ async function testCmsVerifyTest() {
 setRawData(data: Uint8Array | string, cmsFormat: CmsFormat): Promise<void>
 ```
 
-用于把CMS格式的数据转成CMS对象。使用Promise方式返回结果。
-
-> **说明：**
->
-> 支持PEM和DER格式的CMS消息。**string**对应PEM格式，**Uint8Array**对应DER格式。
+用于把CMS格式的数据转成CMS对象。使用Promise方式返回结果。 > **说明：** > > 支持PEM和DER格式的CMS消息。**string**对应PEM格式，**Uint8Array**对应DER格式。
 
 **起始版本：** 22
 

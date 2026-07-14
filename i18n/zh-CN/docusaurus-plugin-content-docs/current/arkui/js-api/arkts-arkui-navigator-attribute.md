@@ -42,9 +42,7 @@ active(value: boolean)
 params(value: object)
 ```
 
-设置跳转时传递到目标页面的数据。
-
-> **说明：**
+设置跳转时传递到目标页面的数据。 > **说明：**
 
 **起始版本：** 7
 
@@ -92,9 +90,7 @@ target(value: string)
 type(value: NavigationType)
 ```
 
-设置路由跳转方式。
-
-> **说明：**
+设置路由跳转方式。 > **说明：**
 
 **起始版本：** 7
 

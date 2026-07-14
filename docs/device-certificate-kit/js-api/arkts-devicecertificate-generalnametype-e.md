@@ -1,7 +1,6 @@
 # GeneralNameType
 
-Enumerates the types of GeneralName as defined in X.509, which can appear in Subject Alternative Name and other
-extensions.
+Enumerates the types of GeneralName as defined in X.509, which can appear in Subject Alternative Name and other extensions.
 
 **Since:** 12
 

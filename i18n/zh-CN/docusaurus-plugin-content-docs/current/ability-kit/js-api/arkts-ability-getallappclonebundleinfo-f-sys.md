@@ -6,10 +6,7 @@
 function getAllAppCloneBundleInfo(bundleName: string, bundleFlags: number, userId?: number): Promise<Array<BundleInfo>>
 ```
 
-根据bundleName、[bundleFlags](arkts-ability-bundleflag-e.md)以及用户ID查询主应用和分身应用的BundleInfo列表。
-使用Promise异步回调。
-
-获取调用方自身的信息时不需要权限。
+根据bundleName、[bundleFlags](arkts-ability-bundleflag-e.md)以及用户ID查询主应用和分身应用的BundleInfo列表。 使用Promise异步回调。 获取调用方自身的信息时不需要权限。
 
 **起始版本：** 12
 

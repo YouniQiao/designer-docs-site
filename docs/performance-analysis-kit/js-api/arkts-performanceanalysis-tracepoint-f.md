@@ -12,15 +12,7 @@ import { hiTraceChain } from '@kit.PerformanceAnalysisKit';
 function tracepoint(mode: HiTraceCommunicationMode, type: HiTraceTracepointType, id: HiTraceId, msg?: string): void
 ```
 
-Adds a trace point for the [@ohos.hiTraceMeter (Performance Tracing)](arkts-hitracemeter.md)
-logging, which is synchronous.
-
-When type is set to **CS** and **SR**, the HiTraceMeter tracing starts. When type is set to **CR** and **SS**, the
-HiTraceMeter tracing ends. When type is set to **GENERAL**, the HiTraceMeter tracing does not start.
-
-The trace points for **CS** and **CR** types must be used as a pair; likewise, trace points for **SR** and **SS**
-types must also be used together. Otherwise, the start and end trace points of HiTraceMeter cannot match each
-other.
+Adds a trace point for the [@ohos.hiTraceMeter (Performance Tracing)](arkts-hitracemeter.md) logging, which is synchronous. When type is set to **CS** and **SR**, the HiTraceMeter tracing starts. When type is set to **CR** and **SS**, the HiTraceMeter tracing ends. When type is set to **GENERAL**, the HiTraceMeter tracing does not start. The trace points for **CS** and **CR** types must be used as a pair; likewise, trace points for **SR** and **SS** types must also be used together. Otherwise, the start and end trace points of HiTraceMeter cannot match each other.
 
 **Since:** 8
 

@@ -18,8 +18,7 @@ import { calendarManager } from '@kit.CalendarKit';
 description?: string
 ```
 
-Description of the service, with a maximum of 5,000 characters. If this parameter is not specified, the default
-value is an empty string.
+Description of the service, with a maximum of 5,000 characters. If this parameter is not specified, the default value is an empty string.
 
 **Type:** string
 
@@ -51,8 +50,7 @@ Service type.
 uri: string
 ```
 
-Service URI, in the DeepLink format. The URI can then redirect the user to the corresponding third-party
-application page. The value is a string with a maximum of 5,000 characters.
+Service URI, in the DeepLink format. The URI can then redirect the user to the corresponding third-party application page. The value is a string with a maximum of 5,000 characters.
 
 **Type:** string
 

@@ -12,8 +12,7 @@ import { securityLabel } from '@kit.CoreFileKit';
 function setSecurityLabel(path: string, type: DataLevel): Promise<void>
 ```
 
-Sets the data security level for a file or directory. The level can only be adjusted from low to high, or set to
-the same level. This API uses a promise to return the result.
+Sets the data security level for a file or directory. The level can only be adjusted from low to high, or set to the same level. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -65,8 +64,7 @@ securityLabel.setSecurityLabel(filePath, "s0").then(() => {
 function setSecurityLabel(path: string, type: DataLevel, callback: AsyncCallback<void>): void
 ```
 
-Sets the data security level for a file or directory. The level can only be adjusted from low to high, or set to
-the same level. This API uses an asynchronous callback to return the result.
+Sets the data security level for a file or directory. The level can only be adjusted from low to high, or set to the same level. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 

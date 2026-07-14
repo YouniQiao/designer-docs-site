@@ -6,12 +6,7 @@
 function getDevices(): Array<Readonly<USBDevice>>
 ```
 
-获取接入主设备的USB设备列表。
-
-> **说明：**
->
-> 三方应用没有权限获取serial字段读取设备序列号，需要通过
-> [usbManager.requestRight](arkts-basicservices-requestright-f.md#requestright-1)申请权限后，自行发起控制传输获取。
+获取接入主设备的USB设备列表。 > **说明：** > > 三方应用没有权限获取serial字段读取设备序列号，需要通过 > [usbManager.requestRight](arkts-basicservices-requestright-f.md#requestright-1)申请权限后，自行发起控制传输获取。
 
 **起始版本：** 9
 

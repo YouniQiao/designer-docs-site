@@ -18,15 +18,15 @@ import { systemLoad } from '@kit.BasicServicesKit';
 
 | Name | Description |
 | --- | --- |
-| [getLevel](arkts-systemload-getlevel-f.md#getLevel-1) |  |
-| [off](arkts-systemload-off-f.md#off-1) | Unregister system load callback for perception system load change |
-| [offSystemLoadChange](arkts-systemload-offsystemloadchange-f.md#offSystemLoadChange-1) | Unregister system load callback for perception system load change |
-| [on](arkts-systemload-on-f.md#on-1) | Register system load callback for perception system load change |
-| [onSystemLoadChange](arkts-systemload-onsystemloadchange-f.md#onSystemLoadChange-1) | Register system load callback for perception system load change |
+| [getLevel](arkts-basicservices-getlevel-f.md#getlevel-1) |  |
+| [off](arkts-basicservices-off-f.md#off-1) | Unregister system load callback for perception system load change |
+| [on](arkts-basicservices-on-f.md#on-1) | Register system load callback for perception system load change |
 
-### Enums
+<!--Del-->
+### Enums（系统接口）
 
 | Name | Description |
 | --- | --- |
-| [SystemLoadLevel](arkts-systemload-systemloadlevel-e.md) | Enumerates the {@link SystemLoadLevel} types. |
+| [SystemLoadLevel](arkts-basicservices-systemloadlevel-e.md) | Enumerates the {@link SystemLoadLevel} types. |
+<!--DelEnd-->
 

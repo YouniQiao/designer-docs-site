@@ -1,8 +1,6 @@
 # UiComponent
 
-In **UiTest**, the **UiComponent** class represents a component on the UI and provides APIs for obtaining component
-attributes, clicking a component, scrolling to search for a component, and text injection.
-All APIs provided in this class use a promise to return the result and must be invoked using **await**.
+In **UiTest**, the **UiComponent** class represents a component on the UI and provides APIs for obtaining component attributes, clicking a component, scrolling to search for a component, and text injection. All APIs provided in this class use a promise to return the result and must be invoked using **await**.
 
 **Since:** 8
 
@@ -240,8 +238,7 @@ async function demo() {
 inputText(text: string): Promise<void>
 ```
 
-Inputs text to a component. This API takes effect only for editable text components. This API uses a promise to
-return the result.
+Inputs text to a component. This API takes effect only for editable text components. This API uses a promise to return the result.
 
 **Since:** 8
 
@@ -520,8 +517,7 @@ async function demo() {
 scrollSearch(by: By): Promise<UiComponent>
 ```
 
-Scrolls on this component to search for the target component (applicable to components that support scrolling, such
-as **List**). This API uses a promise to return the result.
+Scrolls on this component to search for the target component (applicable to components that support scrolling, such as **List**). This API uses a promise to return the result.
 
 **Since:** 8
 

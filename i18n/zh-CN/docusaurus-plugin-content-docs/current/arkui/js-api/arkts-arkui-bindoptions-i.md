@@ -12,9 +12,7 @@
 backgroundColor?: ResourceColor
 ```
 
-半模态页面的背板颜色。
-
-默认值：Color.White。
+半模态页面的背板颜色。 默认值：Color.White。
 
 **类型：** ResourceColor
 
@@ -86,11 +84,7 @@ onWillAppear?: () => void
 onWillDisappear?: () => void
 ```
 
-半模态页面回退（动画开始前）回调函数。
-
-**说明：**
-
-不允许在onWillDisappear函数中修改状态变量，可能会导致组件行为不稳定。
+半模态页面回退（动画开始前）回调函数。 **说明：** 不允许在onWillDisappear函数中修改状态变量，可能会导致组件行为不稳定。
 
 **类型：** () => void
 

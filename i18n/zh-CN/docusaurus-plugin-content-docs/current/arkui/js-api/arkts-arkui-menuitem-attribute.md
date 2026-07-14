@@ -142,11 +142,7 @@ selectIcon(value: boolean | ResourceStr | SymbolGlyphModifier)
 selected(value: boolean)
 ```
 
-设置菜单项是否选中。
-
-从API version 10开始，该参数支持[$$](../../../../ui/state-management/arkts-two-way-sync.md)双向绑定变量。
-
-从API version 18开始，该参数支持[!!](../../../../ui/state-management/arkts-new-binding.md#系统组件参数双向绑定)双向绑定变量。
+设置菜单项是否选中。 从API version 10开始，该参数支持[$$](../../../../ui/state-management/arkts-two-way-sync.md)双向绑定变量。 从API version 18开始，该参数支持[!!](../../../../ui/state-management/arkts-new-binding.md#系统组件参数双向绑定)双向绑定变量。
 
 **起始版本：** 9
 

@@ -18,7 +18,7 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 MIMEType?: photoAccessHelper.PhotoViewMIMETypes
 ```
 
-The Type of the file in the recent photo window.
+Types of the file displayed. The default value is **PhotoViewMIMETypes.IMAGE_VIDEO_TYPE**.
 
 **Type:** photoAccessHelper.PhotoViewMIMETypes
 
@@ -34,7 +34,7 @@ The Type of the file in the recent photo window.
 period?: number
 ```
 
-Support set period time
+Time range for displaying the recent images or videos, measured in seconds. After setting, the system shows images or videos taken within the specified time from the current moment. The longest duration you can set is 1 day (86400s). If the value is less than or equal to 0, greater than 86400, or not set, the system uses the longest duration (1 day) by default. If there are no images or videos within the set time range, the component does not show anything.
 
 **Type:** number
 
@@ -50,7 +50,7 @@ Support set period time
 photoSource?: PhotoSource
 ```
 
-PhotoSource
+Source of the recent image or video, for example, image or video taken by the camera or screenshot. By default, the source is not restricted.
 
 **Type:** PhotoSource
 

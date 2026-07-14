@@ -1,9 +1,6 @@
 # ColorSpaceManager
 
-Implements management of color space objects.
-Before calling any of the following APIs, you must use
-[create()](arkts-arkgraphics2d-create-f.md#create-1) to create a color
-space manager.
+Implements management of color space objects. Before calling any of the following APIs, you must use [create()](arkts-arkgraphics2d-create-f.md#create-1) to create a color space manager.
 
 **Inheritance/Implementation:** ColorSpaceManager extends [ISendable](arkts-arkgraphics2d-isendable-t.md)
 
@@ -44,6 +41,7 @@ Obtains the color space type.
 **Example**
 
 ```TypeScript
+// Obtain the color space type.
 let spaceName: colorSpaceManager.ColorSpace = colorSpace.getColorSpaceName();
 
 ```
@@ -75,6 +73,7 @@ Obtains the gamma of the color space.
 **Example**
 
 ```TypeScript
+// Obtain the gamma value of the color space.
 let gamma: number = colorSpace.getGamma();
 
 ```
@@ -107,6 +106,7 @@ Obtains the coordinates of the white point in the color space.
 
 ```TypeScript
 import { collections } from '@kit.ArkTS';
+// Obtain the white point value [x, y] of the color space.
 let point: collections.Array<number> = colorSpace.getWhitePoint();
 
 ```

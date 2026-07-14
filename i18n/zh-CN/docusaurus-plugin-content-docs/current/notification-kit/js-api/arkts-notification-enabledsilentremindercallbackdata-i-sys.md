@@ -1,6 +1,6 @@
 # EnabledSilentReminderCallbackData（系统接口）
 
-应用通知静默提醒使能状态变化。
+应用通知静默提醒开关状态的回调函数类型。
 
 **起始版本：** 24
 
@@ -32,11 +32,7 @@ readonly bundle: string
 readonly enableStatus: notificationManager.SwitchState
 ```
 
-应用通知的静默提醒开关状态。
-- USER_MODIFIED_OFF：用户设置的关闭状态。
-- USER_MODIFIED_ON：用户设置的开启状态。
-- SYSTEM_DEFAULT_OFF：用户设置前的初始关闭状态。
-- SYSTEM_DEFAULT_ON：用户设置前的初始开启状态。
+应用通知的静默提醒开关状态。 - USER_MODIFIED_OFF：用户设置的关闭状态。 - USER_MODIFIED_ON：用户设置的开启状态。 - SYSTEM_DEFAULT_OFF：用户设置前的初始关闭状态。 - SYSTEM_DEFAULT_ON：用户设置前的初始开启状态。
 
 **类型：** notificationManager.SwitchState
 

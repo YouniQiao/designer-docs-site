@@ -12,9 +12,7 @@ import { taskpool } from '@kit.ArkTS';
 function execute(func: Function, ...args: Object[]): Promise<Object>
 ```
 
-Places a function to be executed in the internal queue of the task pool. The function is not executed immediately.
-It waits to be distributed to the worker thread for execution. In this mode, the function cannot be canceled. This
-API uses a promise to return the result.
+Places a function to be executed in the internal queue of the task pool. The function is not executed immediately. It waits to be distributed to the worker thread for execution. In this mode, the function cannot be canceled. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -66,8 +64,7 @@ taskpool.execute(printArgs, 100).then((value: Object) => { // 100: test number
 function execute<A extends Array<Object>, R>(func: (...args: A) => R | Promise<R>, ...args: A): Promise<R>
 ```
 
-Verifies the passed-in parameter types and return value type of a concurrent function, and places the function in
-the queue of the task pool. This API uses a promise to return the result.
+Verifies the passed-in parameter types and return value type of a concurrent function, and places the function in the queue of the task pool. This API uses a promise to return the result.
 
 **Since:** 13
 
@@ -135,10 +132,7 @@ taskpool.execute<[[number, string]], string>(testWithArray, [100, "test"]).then(
 function execute(task: Task, priority?: Priority): Promise<Object>
 ```
 
-Places a task in the internal queue of the task pool. The task will not be executed immediately; instead, it waits
-to be distributed to a worker thread for execution. In the current mode, you can set the task priority and cancel
-the task. Note that the task cannot belong to a task group, serial queue, or asynchronous queue. For non-continuous
-tasks, this API can be called multiple times. This API uses a promise to return the result.
+Places a task in the internal queue of the task pool. The task will not be executed immediately; instead, it waits to be distributed to a worker thread for execution. In the current mode, you can set the task priority and cancel the task. Note that the task cannot belong to a task group, serial queue, or asynchronous queue. For non-continuous tasks, this API can be called multiple times. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -201,10 +195,7 @@ taskpool.execute(task3, taskpool.Priority.HIGH).then((value: Object) => {
 function execute<A extends Array<Object>, R>(task: GenericsTask<A, R>, priority?: Priority): Promise<R>
 ```
 
-Places the generic task in the internal queue of the task pool. The parameter type and return value type of the
-task are not verified. This API uses a promise to return the result.
-The verification of the **execute** task works in conjunction with **new GenericsTask**, requiring that the
-parameter and return value types match those specified in **new GenericsTask**.
+Places the generic task in the internal queue of the task pool. The parameter type and return value type of the task are not verified. This API uses a promise to return the result. The verification of the **execute** task works in conjunction with **new GenericsTask**, requiring that the parameter and return value types match those specified in **new GenericsTask**.
 
 **Since:** 13
 
@@ -265,10 +256,7 @@ taskpool.execute<[number], number>(task3, taskpool.Priority.HIGH).then((value: n
 function execute(group: TaskGroup, priority?: Priority): Promise<Object[]>
 ```
 
-Places a task group in the internal queue of the task pool. The tasks in the task group are not executed
-immediately. They wait to be distributed to the worker thread for execution. After all tasks in the task group are
-executed, a result array is returned. This mode is applicable to the execution of associated tasks. This API uses a
-promise to return the result.
+Places a task group in the internal queue of the task pool. The tasks in the task group are not executed immediately. They wait to be distributed to the worker thread for execution. After all tasks in the task group are executed, a result array is returned. This mode is applicable to the execution of associated tasks. This API uses a promise to return the result.
 
 **Since:** 10
 

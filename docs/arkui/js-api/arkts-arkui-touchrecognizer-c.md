@@ -50,8 +50,7 @@ Obtains the information about the component corresponding to this touch gesture 
 isHostBelongsTo(uniqueId: number): boolean
 ```
 
-Returns whether the node bound to the current touch gesture recognizer is a descendant of the specified
-component.
+Returns whether the node bound to the current touch gesture recognizer is a descendant of the specified component.
 
 **Since:** 26.0.0
 

@@ -12,9 +12,7 @@ Defines the options of blurStyle
 adaptiveColor?: AdaptiveColor
 ```
 
-Adaptive color mode.
-
-Default value: **AdaptiveColor.DEFAULT**
+Adaptive color mode. Default value: **AdaptiveColor.DEFAULT**
 
 **Type:** AdaptiveColor
 
@@ -34,9 +32,7 @@ Default value: **AdaptiveColor.DEFAULT**
 blurOptions?: BlurOptions
 ```
 
-Grayscale blur parameters.
-
-Default value: **grayscale: [0,0]**
+Grayscale blur parameters. Default value: **grayscale: [0,0]**
 
 **Type:** BlurOptions
 
@@ -56,9 +52,7 @@ Default value: **grayscale: [0,0]**
 colorMode?: ThemeColorMode
 ```
 
-Color mode used for the foreground blur.
-
-Default value: **ThemeColorMode.SYSTEM**
+Color mode used for the foreground blur. Default value: **ThemeColorMode.SYSTEM**
 
 **Type:** ThemeColorMode
 
@@ -78,15 +72,7 @@ Default value: **ThemeColorMode.SYSTEM**
 scale?: number
 ```
 
-Foreground blur scale.
-
-Default value: **1.0**
-
-Value range: [0.0, 1.0]
-
-**1.0** indicates the highest blur degree.
-
-**0.0** indicates the lowest blur degree.
+Foreground blur scale. Default value: **1.0** Value range: [0.0, 1.0] **1.0** indicates the highest blur degree. **0.0** indicates the lowest blur degree.
 
 **Type:** number
 

@@ -18,8 +18,7 @@ import { audioHaptic } from '@kit.AudioKit';
 muteAudio?: boolean
 ```
 
-Whether to mute the audio. **true** to mute, **false** otherwise. If this parameter is not specified, the default
-value **false** is used.
+Whether to mute the audio. **true** to mute, **false** otherwise. If this parameter is not specified, the default value **false** is used.
 
 **Type:** boolean
 
@@ -33,8 +32,7 @@ value **false** is used.
 muteHaptics?: boolean
 ```
 
-Whether to mute haptics feedback. **true** to mute, **false** otherwise. If this parameter is not specified, the
-default value **false** is used.
+Whether to mute haptics feedback. **true** to mute, **false** otherwise. If this parameter is not specified, the default value **false** is used.
 
 **Type:** boolean
 

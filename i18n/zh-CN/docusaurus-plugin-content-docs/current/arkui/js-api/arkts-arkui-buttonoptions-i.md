@@ -12,15 +12,7 @@
 buttonStyle?: ButtonStyleMode
 ```
 
-按钮的样式和重要程度，根据设置枚举值的不同，系统自动会调整按钮的背景色和文字颜色。背景色和文字颜色也支持开发者通过
-[backgroundColor](arkts-arkui-commonmethod-c.md#backgroundcolor-1)、
-[fontColor](ButtonAttribute#fontColor)和[role](ButtonAttribute#role)接口设置，实际显示效果以最后一次设置为准。
-
-默认值：ButtonStyleMode.EMPHASIZED
-
-**说明：**
-
-按钮重要程度：强调按钮>普通按钮>文字按钮。
+按钮的样式和重要程度，根据设置枚举值的不同，系统自动会调整按钮的背景色和文字颜色。背景色和文字颜色也支持开发者通过 [backgroundColor](arkts-arkui-commonmethod-c.md#backgroundcolor-1)、 [fontColor](ButtonAttribute#fontColor)和[role](ButtonAttribute#role)接口设置，实际显示效果以最后一次设置为准。 默认值：ButtonStyleMode.EMPHASIZED **说明：** 按钮重要程度：强调按钮>普通按钮>文字按钮。
 
 **类型：** ButtonStyleMode
 
@@ -42,9 +34,7 @@ buttonStyle?: ButtonStyleMode
 controlSize?: ControlSize
 ```
 
-按钮的尺寸。
-
-默认值：ControlSize.NORMAL
+按钮的尺寸。 默认值：ControlSize.NORMAL
 
 **类型：** ControlSize
 
@@ -66,12 +56,7 @@ controlSize?: ControlSize
 role?: ButtonRole
 ```
 
-按钮的角色，根据设置枚举值的不同，系统自动会调整按钮的背景色和文字颜色。背景色和文字颜色也支持开发者通过
-[backgroundColor](arkts-arkui-commonmethod-c.md#backgroundcolor-1)、
-[fontColor](ButtonAttribute#fontColor)和[buttonStyle](ButtonAttribute#buttonStyle)接口设置，实际显示效果以最后一次设置为
-准。
-
-默认值：ButtonRole.NORMAL
+按钮的角色，根据设置枚举值的不同，系统自动会调整按钮的背景色和文字颜色。背景色和文字颜色也支持开发者通过 [backgroundColor](arkts-arkui-commonmethod-c.md#backgroundcolor-1)、 [fontColor](ButtonAttribute#fontColor)和[buttonStyle](ButtonAttribute#buttonStyle)接口设置，实际显示效果以最后一次设置为 准。 默认值：ButtonRole.NORMAL
 
 **类型：** ButtonRole
 
@@ -93,15 +78,7 @@ role?: ButtonRole
 stateEffect?: boolean
 ```
 
-按钮按下时是否开启按压态显示效果。
-
-true：开启按压效果；false：关闭按压效果。
-
-默认值：true
-
-**说明：**
-
-当开启按压态显示效果，且开发者设置状态样式时，会基于状态样式设置完成后的背景色再进行颜色叠加。
+按钮按下时是否开启按压态显示效果。 true：开启按压效果；false：关闭按压效果。 默认值：true **说明：** 当开启按压态显示效果，且开发者设置状态样式时，会基于状态样式设置完成后的背景色再进行颜色叠加。
 
 **类型：** boolean
 
@@ -119,12 +96,7 @@ true：开启按压效果；false：关闭按压效果。
 type?: ButtonType
 ```
 
-按钮显示样式。
-
-默认值：ButtonType.ROUNDED_RECTANGLE
-
-API version 18及之后，ButtonType的默认值修改为ButtonType.ROUNDED_RECTANGLE。API version 18之前的版本，ButtonType的默认值为
-ButtonType.Capsule。
+按钮显示样式。 默认值：ButtonType.ROUNDED_RECTANGLE API version 18及之后，ButtonType的默认值修改为ButtonType.ROUNDED_RECTANGLE。API version 18之前的版本，ButtonType的默认值为 ButtonType.Capsule。
 
 **类型：** ButtonType
 

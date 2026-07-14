@@ -20,13 +20,7 @@ import { update } from '@kit.BasicServicesKit';
 scope: FactoryResetScope
 ```
 
-Reset scope.Available values:
-
-- DATA: Indicates "quick erase", erasing only the user data partition (app data, user settings, account info, etc.).
-Factory reset takes less time.
-
-- DATA_AND_OS: Indicates "deep erase", erasing both the user data partition and the system partition.
-Factory reset takes longer time.
+Reset scope.Available values: - DATA: Indicates "quick erase", erasing only the user data partition (app data, user settings, account info, etc.). Factory reset takes less time. - DATA_AND_OS: Indicates "deep erase", erasing both the user data partition and the system partition. Factory reset takes longer time.
 
 **Type:** FactoryResetScope
 
@@ -44,9 +38,7 @@ Factory reset takes longer time.
 strategy: string
 ```
 
-Reset scope description, providing supplementary details for the scope field.
-A meaningful value must be provided to match the corresponding erase scenario. If left empty, logs will lack effective information
-when anomalies occur, increasing troubleshooting difficulty.
+Reset scope description, providing supplementary details for the scope field. A meaningful value must be provided to match the corresponding erase scenario. If left empty, logs will lack effective information when anomalies occur, increasing troubleshooting difficulty.
 
 **Type:** string
 

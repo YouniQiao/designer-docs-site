@@ -4,8 +4,7 @@
 declare type ShouldBuiltInRecognizerParallelWithCallback = (current: GestureRecognizer, others: Array<GestureRecognizer>) => GestureRecognizer
 ```
 
-Represents the callback used to set the parallel relationship between built-in gestures and gestures of other
-components in the response chain.
+Represents the callback used to set the parallel relationship between built-in gestures and gestures of other components in the response chain.
 
 **Since:** 12
 

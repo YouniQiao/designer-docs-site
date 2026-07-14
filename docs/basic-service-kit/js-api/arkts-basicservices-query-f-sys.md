@@ -12,8 +12,7 @@ import { request } from '@kit.BasicServicesKit';
 function query(id: string, callback: AsyncCallback<TaskInfo>): void
 ```
 
-Queries specified task details.
-Creates a group based on GroupConfig
+Queries specified task details. Creates a group based on GroupConfig
 
 **Since:** 10
 

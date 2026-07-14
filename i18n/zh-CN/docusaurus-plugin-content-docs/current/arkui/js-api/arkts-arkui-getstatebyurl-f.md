@@ -6,18 +6,7 @@
 function getStateByUrl(url: string): Array<RouterState>
 ```
 
-通过url获取对应页面的状态信息。
-
-> **说明：**
->
-> - 从API version 12开始支持，从API version 18开始废弃，建议使用[getStateByUrl](arkts-arkui-router-c.md#getstatebyurl-1)替
-> 代。getStateByUrl需先通过[UIContext](arkts-arkui-uicontext.md)中的
-> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter)获取
-> [Router](arkts-arkui-uicontext.md)实例，然后通过该实例进行调用。
->
-> - 从API version 12开始，可以通过使用[UIContext](arkts-arkui-uicontext.md)中的
-> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter)方法获取当前UI上下文关联的
-> [Router](arkts-arkui-uicontext.md)对象。
+通过url获取对应页面的状态信息。 > **说明：** > > - 从API version 12开始支持，从API version 18开始废弃，建议使用[getStateByUrl](arkts-arkui-router-c.md#getstatebyurl-1)替 > 代。getStateByUrl需先通过[UIContext](arkts-arkui-uicontext.md)中的 > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter)获取 > [Router](arkts-arkui-uicontext.md)实例，然后通过该实例进行调用。 > > - 从API version 12开始，可以通过使用[UIContext](arkts-arkui-uicontext.md)中的 > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter)方法获取当前UI上下文关联的 > [Router](arkts-arkui-uicontext.md)对象。
 
 **起始版本：** 12
 
@@ -46,6 +35,8 @@ function getStateByUrl(url: string): Array<RouterState>
 **示例：**
 
 ```TypeScript
+import { router } from '@kit.ArkUI';
+
 let options: Array<router.RouterState> = router.getStateByUrl('pages/index');
 for (let i: number = 0; i < options.length; i++) {
   console.info('index = ' + options[i].index);

@@ -1,7 +1,6 @@
 # Caller
 
-调用方Caller UIAbility通过[startAbilityByCall](arkts-ability-uiabilitycontext-c.md#startabilitybycall-1)接口
-拉起目标Callee UIAbility，目标UIAbility启动成功后，返回一个Caller对象给调用方进行通信。
+调用方Caller UIAbility通过[startAbilityByCall](arkts-ability-uiabilitycontext-c.md#startabilitybycall-1)接口 拉起目标Callee UIAbility，目标UIAbility启动成功后，返回一个Caller对象给调用方进行通信。
 
 **起始版本：** 9
 
@@ -87,6 +86,7 @@ export default class MainUIAbility extends UIAbility {
     }).then((obj) => {
       let caller: Caller = obj;
       let msg = new MyMessageAble('msg', 'world'); // 参考Parcelable数据定义
+      // 向Callee发送消息
       caller.call(method, msg)
         .then(() => {
           console.info('Caller call() called');
@@ -146,7 +146,7 @@ import { window } from '@kit.ArkUI';
 import { rpc } from '@kit.IPCKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
-class MyMessageAble implements rpc.Parcelable {
+class MyMessageable implements rpc.Parcelable {
   name: string
   str: string
   num: number = 1
@@ -183,11 +183,12 @@ export default class MainUIAbility extends UIAbility {
     }).then((obj) => {
       caller = obj;
       let msg = new MyMessageAble('msg', 'world');
+      // 向Callee发送消息并获取返回结果
       caller.callWithResult(method, msg)
         .then((data) => {
           console.info('Caller callWithResult() called');
           let retMsg = new MyMessageAble('msg', 'world');
-          data.readParcelable(retMsg);
+          data.readParcelable(retMsg); // 读取Callee返回的Parcelable数据
         })
         .catch((callErr: BusinessError) => {
           console.error(`Caller.callWithResult catch error, error.code: ${callErr.code}, error.message: ${callErr.message}`);
@@ -243,11 +244,12 @@ export default class MainUIAbility extends UIAbility {
     }).then((obj) => {
       let caller: Caller = obj;
       try {
+        // 定义断开连接的回调函数
         let onReleaseCallBack: OnReleaseCallback = (str) => {
           console.info(`Caller OnRelease CallBack is called ${str}`);
         };
-        caller.on('release', onReleaseCallBack);
-        caller.off('release', onReleaseCallBack);
+        caller.on('release', onReleaseCallBack); // 注册断开连接的监听
+        caller.off('release', onReleaseCallBack); // 取消注册断开连接的监听
       } catch (error) {
         console.error(`Caller.on or Caller.off catch error, error.code: ${error.code}, error.message: ${error.message}`);
       }
@@ -307,7 +309,7 @@ export default class MainUIAbility extends UIAbility {
           console.info(`Caller OnRelease CallBack is called ${str}`);
         };
         caller.on('release', onReleaseCallBack);
-        caller.off('release');
+        caller.off('release'); // 取消注册所有断开连接的监听
       } catch (error) {
         console.error(`Caller.on or Caller.off catch error, error.code: ${error.code}, error.message: ${error.message}`);
       }
@@ -364,6 +366,7 @@ export default class MainUIAbility extends UIAbility {
     }).then((obj) => {
       let caller: Caller = obj;
       try {
+        // 注册release事件监听
         caller.on('release', (str) => {
           console.info(`Caller OnRelease CallBack is called ${str}`);
         });
@@ -421,6 +424,7 @@ export default class MainUIAbility extends UIAbility {
     }).then((obj) => {
       let caller: Caller = obj;
       try {
+        // 注册与Callee UIAbility连接断开监听
         caller.onRelease((str) => {
           console.info(`Caller OnRelease CallBack is called ${str}`);
         });
@@ -479,14 +483,17 @@ export default class MainAbility extends UIAbility {
     }).then((obj) => {
       let caller: Caller = obj;
       try {
+        // 注册协同场景下跨设备组件状态变化监听
         caller.onRemoteStateChange((str) => {
           console.info('Remote state changed ' + str);
         });
       } catch (error) {
-        console.error(`Caller.onRemoteStateChange catch error, error.code: ${JSON.stringify(error.code)}, error.message: ${JSON.stringify(error.message)}`);
+        let code = (error as BusinessError).code;
+        let msg = (error as BusinessError).message; 
+        console.error(`Caller.onRemoteStateChange catch error, error.code: ${code}, error.message: ${msg}.`);
       }
     }).catch((err: BusinessError) => {
-      console.error(`Caller GetCaller error, error.code: ${JSON.stringify(err.code)}, error.message: ${JSON.stringify(err.message)}`);
+      console.error(`Caller GetCaller error, error.code: ${err.code}, error.message: ${err.message}`);
     });
   }
 }
@@ -532,6 +539,7 @@ export default class MainUIAbility extends UIAbility {
     }).then((obj) => {
       caller = obj;
       try {
+        // 释放Caller与Callee的连接
         caller.release();
       } catch (releaseErr) {
         console.error(`Caller.release catch error, error.code: ${releaseErr.code}, error.message: ${releaseErr.message}`);

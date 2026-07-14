@@ -1,7 +1,6 @@
 # XComponentController
 
-Defines the controller of the XComponent.
-You can bind the controller to the XComponent to call the component APIs through the controller.
+Defines the controller of the XComponent. You can bind the controller to the XComponent to call the component APIs through the controller.
 
 **Since:** 12
 
@@ -27,8 +26,7 @@ A constructor used to create a XComponentController instance.
 getXComponentContext(): Object
 ```
 
-Obtains the context of an XComponent object.
-This API works only when type of the XComponent is set to SURFACE("surface") or TEXTURE.
+Obtains the context of an XComponent object. This API works only when type of the XComponent is set to SURFACE("surface") or TEXTURE.
 
 **Since:** 12
 
@@ -48,8 +46,7 @@ This API works only when type of the XComponent is set to SURFACE("surface") or 
 getXComponentSurfaceId(): string
 ```
 
-Obtains the ID of the surface held by the XComponent, which can then be used for @ohos APIs.
-This API works only when type of the XComponent is set to SURFACE("surface") or TEXTURE.
+Obtains the ID of the surface held by the XComponent, which can then be used for @ohos APIs. This API works only when type of the XComponent is set to SURFACE("surface") or TEXTURE.
 
 **Since:** 12
 
@@ -271,8 +268,7 @@ setXComponentSurfaceSize(value: {
   }): void
 ```
 
-Sets the width and height of the surface held by the XComponent.
-This API works only when type of the XComponent is set to SURFACE("surface") or TEXTURE.
+Sets the width and height of the surface held by the XComponent. This API works only when type of the XComponent is set to SURFACE("surface") or TEXTURE.
 
 **Since:** 9
 
@@ -294,10 +290,7 @@ This API works only when type of the XComponent is set to SURFACE("surface") or 
 startImageAnalyzer(config: ImageAnalyzerConfig): Promise<void>
 ```
 
-Starts AI image analysis in the given settings.
-Before calling this API, make sure the AI image analyzer is enabled.
-Because the image frame used for analysis is the one captured when this API is called, pay attention to the invoking time of this API.
-If this API is repeatedly called before the execution is complete, an error callback is triggered.
+Starts AI image analysis in the given settings. Before calling this API, make sure the AI image analyzer is enabled. Because the image frame used for analysis is the one captured when this API is called, pay attention to the invoking time of this API. If this API is repeatedly called before the execution is complete, an error callback is triggered.
 
 **Since:** 12
 
@@ -333,8 +326,7 @@ If this API is repeatedly called before the execution is complete, an error call
 stopImageAnalyzer(): void
 ```
 
-Stops AI image analysis.
-The content displayed by the AI image analyzer will be destroyed.
+Stops AI image analysis. The content displayed by the AI image analyzer will be destroyed.
 
 **Since:** 12
 

@@ -1,7 +1,6 @@
 # AccessibilityGrid (System API)
 
-Defines accessibility grid information. For details, see the currentItem attribute in
-[AccessibilityElement](arkts-accessibility-accessibilityelement-i.md).
+Defines accessibility grid information. For details, see the currentItem attribute in [AccessibilityElement](arkts-accessibility-accessibilityelement-i.md).
 
 **Since:** 20
 

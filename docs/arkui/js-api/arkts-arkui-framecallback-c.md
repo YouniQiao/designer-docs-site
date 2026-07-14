@@ -1,13 +1,6 @@
 # FrameCallback
 
-Implements the API for setting the task that needs to be executed during the next frame rendering.
-
-> **NOTE**
->
-> - The following APIs must be used in conjunction with [postFrameCallback](arkts-arkui-uicontext-c.md#postframecallback-1) and
-> [postDelayedFrameCallback](arkts-arkui-uicontext-c.md#postdelayedframecallback-1) from [UIContext](arkts-arkui-uicontext.md).
-> Extend this class and override either the [onFrame](arkts-arkui-framecallback-c.md#onframe-1) or
-> [onIdle](arkts-arkui-framecallback-c.md#onidle-1) method to implement specific service logic.
+Implements the API for setting the task that needs to be executed during the next frame rendering. > **NOTE** > > - The following APIs must be used in conjunction with [postFrameCallback](arkts-arkui-uicontext-c.md#postframecallback-1) and > [postDelayedFrameCallback](arkts-arkui-uicontext-c.md#postdelayedframecallback-1) from [UIContext](arkts-arkui-uicontext.md). > Extend this class and override either the [onFrame](arkts-arkui-framecallback-c.md#onframe-1) or > [onIdle](arkts-arkui-framecallback-c.md#onidle-1) method to implement specific service logic.
 
 **Since:** 12
 
@@ -47,9 +40,7 @@ Called when the next frame is rendered.
 onIdle(timeLeftInNano: number): void
 ```
 
-Called after the rendering of the subsequent frame has finished and there is more than 1 millisecond left before
-the next VSync signal. If the time left is not more than 1 millisecond, the execution of this API will be deferred
-to a later frame.
+Called after the rendering of the subsequent frame has finished and there is more than 1 millisecond left before the next VSync signal. If the time left is not more than 1 millisecond, the execution of this API will be deferred to a later frame.
 
 **Since:** 12
 

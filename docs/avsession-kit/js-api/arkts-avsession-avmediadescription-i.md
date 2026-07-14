@@ -268,8 +268,7 @@ The lyric uri of the media.
 mediaImage?: image.PixelMap | string
 ```
 
-The image of this media asset displayed in the media center.
-It can be a {@link PixelMap} or a URI formatted string,
+The image of this media asset displayed in the media center. It can be a {@link PixelMap} or a URI formatted string,
 
 **Type:** image.PixelMap | string
 
@@ -333,8 +332,7 @@ The uri of the media, used to locate the media in some special cases
 pcmSrc?: boolean
 ```
 
-Source type that supports PCM casting.
-The application can send PCM data directly to the system through audio APIs, without using AVSession to set data.
+Source type that supports PCM casting. The application can send PCM data directly to the system through audio APIs, without using AVSession to set data.
 
 **Type:** boolean
 

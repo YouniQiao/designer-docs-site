@@ -1,6 +1,6 @@
 # NotificationBasicContent
 
-Describes the normal text notification.
+Describes the basic text notification, which is used to display the title and body content. It serves as the basic content structure for other notification types. Other notification types (such as long text, multi-line text, picture, and live view) inherit this API and extend their own specific fields on this basis.
 
 **Since:** 7
 
@@ -12,8 +12,7 @@ Describes the normal text notification.
 additionalText?: string
 ```
 
-Additional information of the notification. It cannot exceed 3,072 bytes. Excess content will be truncated. This
-parameter is left empty by default.
+Additional notification content, which supplements the notification content and is not displayed in the notification center. It defaults to empty. The size does not exceed 3072 bytes, and the excess part will be truncated.
 
 **Type:** string
 
@@ -27,10 +26,7 @@ parameter is left empty by default.
 lockscreenPicture?: image.PixelMap
 ```
 
-Picture displayed on the lock screen. This parameter is left empty by default. Currently, only the live view
-notification is supported. The total number of the icon pixel bytes cannot exceed 192 KB (which is obtained through
-[getPixelBytesNumber](../../apis-image-kit/arkts-apis/arkts-image-pixelmap-i.md#getpixelbytesnumber-1)). The recommended icon size
-is 128 × 128 pixels. The display effect depends on the device capability and notification center UI style.
+Picture displayed on the lock screen. This parameter is left empty by default. Currently, only the live view notification is supported. The total number of the icon pixel bytes cannot exceed 192 KB (which is obtained through getPixelBytesNumber). The recommended icon size is 128 x 128 pixels. The display effect depends on the device capability and notification center UI style.
 
 **Type:** image.PixelMap
 
@@ -44,7 +40,7 @@ is 128 × 128 pixels. The display effect depends on the device capability and no
 text: string
 ```
 
-Notification content. It cannot be empty or exceed 3,072 bytes. Excess content will be truncated.
+Notification body content, displayed below the title. It cannot be an empty string. The size does not exceed 3072 bytes, and the excess part will be truncated.
 
 **Type:** string
 
@@ -58,7 +54,7 @@ Notification content. It cannot be empty or exceed 3,072 bytes. Excess content w
 title: string
 ```
 
-Notification title. It cannot be empty or exceed 1,024 bytes. Excess content will be truncated.
+Notification title, displayed at the top of the notification. It cannot be an empty string. The size does not exceed 1024 bytes, and the excess part will be truncated.
 
 **Type:** string
 

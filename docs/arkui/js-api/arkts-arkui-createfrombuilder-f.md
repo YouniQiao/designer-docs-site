@@ -13,25 +13,7 @@ function createFromBuilder(builder: CustomBuilder, callback: AsyncCallback<image
     delay?: number, checkImageStatus?: boolean, options?: SnapshotOptions): void
 ```
 
-Renders a custom component in the application background and outputs its snapshot. This API uses an asynchronous
-callback to return the result. The coordinates and size of the offscreen component's drawing area can be obtained
-through the callback.
-
-> **NOTE**
->
-> - Since API version 12, you can use the [getComponentSnapshot](arkts-arkui-uicontext-c.md#getcomponentsnapshot-1)
-> API in [UIContext](arkts-arkui-uicontext.md) to obtain the [ComponentSnapshot](arkts-arkui-componentsnapshot-c.md)
-> object associated with the current UI context.
->
-> - To account for the time spent in awaiting component building and rendering, the callback of offscreen snapshots
-> has a delay of less than 500 ms.
->
-> - Components in the builder do not support the setting of animation-related attributes, such as
-> [transition](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md).
->
-> - If a component is on a time-consuming task, for example, an [Image](../../apis-image-kit/arkts-apis/arkts-multimedia-image.md) or [Web](../../apis-arkweb/arkts-components/arkts-arkweb-web.md) component
-> that is loading online images, its loading may be still in progress when this API is called. In this case, the
-> output snapshot does not represent the component in the way it looks when the loading is successfully completed.
+Renders a custom component in the application background and outputs its snapshot. This API uses an asynchronous callback to return the result. The coordinates and size of the offscreen component's drawing area can be obtained through the callback. > **NOTE** > > - Since API version 12, you can use the [getComponentSnapshot](arkts-arkui-uicontext-c.md#getcomponentsnapshot-1) > API in [UIContext](arkts-arkui-uicontext.md) to obtain the [ComponentSnapshot](arkts-arkui-componentsnapshot-c.md) > object associated with the current UI context. > > - To account for the time spent in awaiting component building and rendering, the callback of offscreen snapshots > has a delay of less than 500 ms. > > - Components in the builder do not support the setting of animation-related attributes, such as > [transition](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md). > > - If a component is on a time-consuming task, for example, an [Image](../../apis-image-kit/arkts-apis/arkts-multimedia-image.md) or [Web](../../apis-arkweb/arkts-components/arkts-arkweb-web.md) component > that is loading online images, its loading may be still in progress when this API is called. In this case, the > output snapshot does not represent the component in the way it looks when the loading is successfully completed.
 
 **Since:** 10
 
@@ -134,25 +116,7 @@ function createFromBuilder(builder: CustomBuilder, delay?: number,
     checkImageStatus?: boolean, options?: SnapshotOptions): Promise<image.PixelMap>
 ```
 
-Renders a custom component in the application background and outputs its snapshot. This API uses a promise to
-return the result. The coordinates and size of the offscreen component's drawing area can be obtained through the
-callback.
-
-> **NOTE**
->
-> - Since API version 12, you can use the [getComponentSnapshot](arkts-arkui-uicontext-c.md#getcomponentsnapshot-1)
-> API in [UIContext](arkts-arkui-uicontext.md) to obtain the [ComponentSnapshot](arkts-arkui-componentsnapshot-c.md)
-> object associated with the current UI context.
->
-> - To account for the time spent in awaiting component building and rendering, the callback of offscreen snapshots
-> has a delay of less than 500 ms.
->
-> - Components in the builder do not support the setting of animation-related attributes, such as
-> [transition](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md).
->
-> - If a component is on a time-consuming task, for example, an [Image](../../apis-image-kit/arkts-apis/arkts-multimedia-image.md) or [Web](../../apis-arkweb/arkts-components/arkts-arkweb-web.md) component
-> that is loading online images, its loading may be still in progress when this API is called. In this case, the
-> output snapshot does not represent the component in the way it looks when the loading is successfully completed.
+Renders a custom component in the application background and outputs its snapshot. This API uses a promise to return the result. The coordinates and size of the offscreen component's drawing area can be obtained through the callback. > **NOTE** > > - Since API version 12, you can use the [getComponentSnapshot](arkts-arkui-uicontext-c.md#getcomponentsnapshot-1) > API in [UIContext](arkts-arkui-uicontext.md) to obtain the [ComponentSnapshot](arkts-arkui-componentsnapshot-c.md) > object associated with the current UI context. > > - To account for the time spent in awaiting component building and rendering, the callback of offscreen snapshots > has a delay of less than 500 ms. > > - Components in the builder do not support the setting of animation-related attributes, such as > [transition](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md). > > - If a component is on a time-consuming task, for example, an [Image](../../apis-image-kit/arkts-apis/arkts-multimedia-image.md) or [Web](../../apis-arkweb/arkts-components/arkts-arkweb-web.md) component > that is loading online images, its loading may be still in progress when this API is called. In this case, the > output snapshot does not represent the component in the way it looks when the loading is successfully completed.
 
 **Since:** 10
 

@@ -12,8 +12,7 @@ import { window } from '@kit.ArkUI';
 function toggleShownStateForAllAppWindows(callback: AsyncCallback<void>): void
 ```
 
-Hides or restores the application's windows during quick multi-window switching. This API uses an asynchronous
-callback to return the result.
+Hides or restores the application's windows during quick multi-window switching. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -58,8 +57,7 @@ window.toggleShownStateForAllAppWindows((err: BusinessError) => {
 function toggleShownStateForAllAppWindows(): Promise<void>
 ```
 
-Hides or restores the application's windows during quick multi-window switching. This API uses a promise to return
-the result.
+Hides or restores the application's windows during quick multi-window switching. This API uses a promise to return the result.
 
 **Since:** 9
 

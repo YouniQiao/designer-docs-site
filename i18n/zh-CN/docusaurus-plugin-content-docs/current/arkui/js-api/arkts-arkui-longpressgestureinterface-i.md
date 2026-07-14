@@ -1,10 +1,6 @@
 # LongPressGestureInterface
 
-用于触发长按手势事件，触发长按手势的最少手指数为1，默认最短长按时间为500毫秒。可配置duration参数控制最短长按时长。
-
-> **说明：**
->
-> 从API version 18开始，部分设备会优先响应系统的双指长按手势，导致应用的双指长按手势不生效。
+用于触发长按手势事件，触发长按手势的最少手指数为1，默认最短长按时间为500毫秒。可配置duration参数控制最短长按时长。 > **说明：** > > 从API version 18开始，部分设备会优先响应系统的双指长按手势，导致应用的双指长按手势不生效。
 
 **继承/实现关系：** LongPressGestureInterface extends [GestureInterface<LongPressGestureInterface>](GestureInterface<LongPressGestureInterface>)
 
@@ -18,13 +14,7 @@
 (value?: { fingers?: number; repeat?: boolean; duration?: number }): LongPressGestureInterface
 ```
 
-创建长按手势对象。继承自[GestureInterface<T>](arkts-arkui-gestureinterface-i.md)。
-
-当组件默认支持可拖拽时，如Text、TextInput、TextArea、HyperLink、Image和RichEditor等组件。长按手势与拖拽会出现冲突，事件优先级如下：
-
-当长按触发时间小于500毫秒时，系统优先响应长按事件而非拖拽事件。
-
-当长按触发时间达到或超过500毫秒时，系统优先响应拖拽事件而非长按事件。
+创建长按手势对象。继承自[GestureInterface<T>](arkts-arkui-gestureinterface-i.md)。 当组件默认支持可拖拽时，如Text、TextInput、TextArea、HyperLink、Image和RichEditor等组件。长按手势与拖拽会出现冲突，事件优先级如下： 当长按触发时间小于500毫秒时，系统优先响应长按事件而非拖拽事件。 当长按触发时间达到或超过500毫秒时，系统优先响应拖拽事件而非长按事件。
 
 **起始版本：** 7
 
@@ -50,14 +40,7 @@
 (options?: LongPressGestureHandlerOptions): LongPressGestureInterface
 ```
 
-创建长按手势对象。与[LongPressGesture](LongPressGestureInterface(value?: { fingers?: number; repeat?: boolean; duration?: number ))}相比，
-options参数新增了对isFingerCountLimited参数，表示是否检查触摸屏幕的手指数量。
-
-当组件默认支持可拖拽时，如Text、TextInput、TextArea、HyperLink、Image和RichEditor等组件。长按手势与拖拽会出现冲突，事件优先级如下：
-
-当长按触发时间小于500毫秒时，系统优先响应长按事件而非拖拽事件。
-
-当长按触发时间达到或超过500毫秒时，系统优先响应拖拽事件而非长按事件。
+创建长按手势对象。与[LongPressGesture](LongPressGestureInterface(value?: { fingers?: number; repeat?: boolean; duration?: number ))}相比， options参数新增了对isFingerCountLimited参数，表示是否检查触摸屏幕的手指数量。 当组件默认支持可拖拽时，如Text、TextInput、TextArea、HyperLink、Image和RichEditor等组件。长按手势与拖拽会出现冲突，事件优先级如下： 当长按触发时间小于500毫秒时，系统优先响应长按事件而非拖拽事件。 当长按触发时间达到或超过500毫秒时，系统优先响应拖拽事件而非长按事件。
 
 **起始版本：** 15
 

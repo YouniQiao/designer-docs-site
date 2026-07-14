@@ -17,10 +17,7 @@ function startVerticalPanel(
   ): Promise<void>
 ```
 
-Starts the vertical domain picker with panel config.
-If the target ability is visible, you can start the target ability; If the target ability is invisible,
-you need to apply for permission:ohos.permission.START_INVISIBLE_ABILITY to start target invisible ability.
-If the caller application is in the background, it is not allowed to call this interface.
+Starts the vertical domain picker with panel config. If the target ability is visible, you can start the target ability; If the target ability is invisible, you need to apply for permission:ohos.permission.START_INVISIBLE_ABILITY to start target invisible ability. If the caller application is in the background, it is not allowed to call this interface.
 
 **Since:** 20
 

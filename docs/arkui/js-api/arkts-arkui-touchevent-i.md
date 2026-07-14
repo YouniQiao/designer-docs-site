@@ -1,8 +1,6 @@
 # TouchEvent
 
-Inherits from [BaseEvent](arkts-arkui-baseevent-i.md). In non-event injection scenarios, **changedTouches** contains points
-resampled at the screen refresh rate, while **touches** contains points reported at the device's refresh rate. As
-such, **changedTouches** data may differ from **touches**.
+Inherits from [BaseEvent](arkts-arkui-baseevent-i.md). In non-event injection scenarios, **changedTouches** contains points resampled at the screen refresh rate, while **touches** contains points reported at the device's refresh rate. As such, **changedTouches** data may differ from **touches**.
 
 **Inheritance/Implementation:** TouchEvent extends [BaseEvent](arkts-arkui-baseevent-i.md)
 
@@ -16,13 +14,7 @@ such, **changedTouches** data may differ from **touches**.
 getHistoricalPoints(): Array<HistoricalPoint>
 ```
 
-Obtains all historical touch points for the current frame. The touch event frequency per frame varies by device.
-This API can be called only in [TouchEvent](arkts-arkui-touchevent-i.md). This API is only available within
-[TouchEvent](arkts-arkui-touchevent-i.md) during [onTouch](arkts-arkui-commonmethod-c.md#ontouch-1) invocations. Typically,
-[onTouch](arkts-arkui-commonmethod-c.md#ontouch-1) is invoked once per frame. If multiple [TouchEvent](arkts-arkui-touchevent-i.md)
-instances are received in a single frame, the last point is returned through **onTouch**, and the remaining points
-are stored as historical points. For multi-touch events within the same frame, multiple** onTouch** calls may
-occur.
+Obtains all historical touch points for the current frame. The touch event frequency per frame varies by device. This API can be called only in [TouchEvent](arkts-arkui-touchevent-i.md). This API is only available within [TouchEvent](arkts-arkui-touchevent-i.md) during [onTouch](arkts-arkui-commonmethod-c.md#ontouch-1) invocations. Typically, [onTouch](arkts-arkui-commonmethod-c.md#ontouch-1) is invoked once per frame. If multiple [TouchEvent](arkts-arkui-touchevent-i.md) instances are received in a single frame, the last point is returned through **onTouch**, and the remaining points are stored as historical points. For multi-touch events within the same frame, multiple** onTouch** calls may occur.
 
 **Since:** 10
 
@@ -44,8 +36,7 @@ occur.
 changedTouches: TouchObject[]
 ```
 
-Information about touch points that changed and triggered the event. When using this property, you need to check
-whether it is empty.
+Information about touch points that changed and triggered the event. When using this property, you need to check whether it is empty.
 
 **Type:** TouchObject[]
 
@@ -61,18 +52,7 @@ whether it is empty.
 eventHandleId?: number
 ```
 
-Unique identifier for event processing.
-
-Value range: [0, +∞)
-
-**NOTE**
-
-This field is used when dispatching events using the
-[postInputEventWithStrategy](../arkts-apis/arkts-arkui-buildernode-c.md#postinputeventwithstrategy-1) API. Each time an event is
-dispatched, this field is increased by 100000.
-
-Using the same **eventHandleId** for multiple event dispatches will cause abnormal event responses. This field only
-needs to be assigned when constructing an event; developers do not need to handle it in other cases.
+Unique identifier for event processing. Value range: [0, +∞) **NOTE** This field is used when dispatching events using the [postInputEventWithStrategy](../arkts-apis/arkts-arkui-buildernode-c.md#postinputeventwithstrategy-1) API. Each time an event is dispatched, this field is increased by 100000. Using the same **eventHandleId** for multiple event dispatches will cause abnormal event responses. This field only needs to be assigned when constructing an event; developers do not need to handle it in other cases.
 
 **Type:** number
 
@@ -90,12 +70,7 @@ needs to be assigned when constructing an event; developers do not need to handl
 preventDefault: () => void
 ```
 
-Blocks the default event.
-
-**NOTE**
-
-This API is only supported by the [Hyperlink](arkts-arkui-hyperlink.md) component. Using it with unsupported
-components throws an exception. Asynchronous calls and **Modifier** API integration are not yet supported.
+Blocks the default event. **NOTE** This API is only supported by the [Hyperlink](arkts-arkui-hyperlink.md) component. Using it with unsupported components throws an exception. Asynchronous calls and **Modifier** API integration are not yet supported.
 
 **Type:** () => void
 
@@ -129,8 +104,7 @@ Disables [event bubbling](../../../../ui/arkts-interaction-basic-principles.md#e
 touches: TouchObject[]
 ```
 
-Information about all touch points (for multi-touch). Each element represents one touch point. When using this
-property, you need to check whether it is empty.
+Information about all touch points (for multi-touch). Each element represents one touch point. When using this property, you need to check whether it is empty.
 
 **Type:** TouchObject[]
 

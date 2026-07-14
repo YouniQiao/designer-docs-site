@@ -34,8 +34,7 @@ Operation that triggers the permission state change.
 permissionName: Permissions
 ```
 
-Permissions whose authorization state changes. For details about the permissions, see
-[Application Permissions](../../../../security/AccessToken/app-permissions.md).
+Permissions whose authorization state changes. For details about the permissions, see [Application Permissions](../../../../security/AccessToken/app-permissions.md).
 
 **Type:** Permissions
 
@@ -51,10 +50,7 @@ Permissions whose authorization state changes. For details about the permissions
 tokenID: number
 ```
 
-ID of the subscribed application, which can be obtained through the
-[accessTokenId](arkts-ability-applicationinfo-i.md#accesstokenid) field in ApplicationInfo of
-BundleInfo. <br>For BundleInfo acquisition, please refer to:
-[bundleManager.getBundleInfoSync](arkts-ability-getbundleinfosync-f.md#getbundleinfosync-1).
+ID of the subscribed application, which can be obtained through the [accessTokenId](arkts-ability-applicationinfo-i.md#accesstokenid) field in ApplicationInfo of BundleInfo. <br>For BundleInfo acquisition, please refer to: [bundleManager.getBundleInfoSync](arkts-ability-getbundleinfosync-f.md#getbundleinfosync-1).
 
 **Type:** number
 

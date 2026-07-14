@@ -1,6 +1,6 @@
 # AVRecorderProfile
 
-Describes the audio and video recording profile.
+音视频录制配置参数。
 
 **起始版本：** 9
 
@@ -12,7 +12,7 @@ Describes the audio and video recording profile.
 aacProfile?: AacProfile
 ```
 
-AAC profile for AAC audio encoder. If not set, use AAC_LC profile as default.
+AAC音频编码器的AAC profile。如果不设置，默认使用AAC_LC profile。
 
 **类型：** AacProfile
 
@@ -28,16 +28,7 @@ AAC profile for AAC audio encoder. If not set, use AAC_LC profile as default.
 audioBitrate?: number
 ```
 
-Audio encoding bit rate, in bit/s. This parameter is mandatory for audio recording.<br>Supported bit rate ranges:
-<br>- Range [32000 - 500000] for the AAC encoding format.<br>- Range [64000] for the G.711 μ-law encoding format.
-<br>- Range [8000, 16000, 32000, 40000, 48000, 56000, 64000, 80000, 96000, 112000, 128000, 160000, 192000,
-224000, 256000, 320000] for the MP3 encoding format.<br>When the MP3 encoding format is used,
-the mapping between the sampling rate and bit rate is as follows:<br>- When the sampling rate is lower than
-16 kHZ, the bit rate range is [8000 - 64000].<br>- When the sampling rate ranges from 16 kHz to 32 kHz,
-the bit rate range is [8000 - 160000].<br>- When the sampling rate is greater than 32 kHz, the bit rate range
-is [32000 - 320000].<br>- Range [4750, 5150, 5900, 6700, 7400, 7950, 10200, 12200] for
-the AMR-NB encoding format.<br>- Range [6600, 8850, 12650, 14250, 15850, 18250, 19850, 23050, 23850] for the
-AMR-WB encoding format.<br>**Atomic service API**: This API can be used in atomic services since API version 12.
+音频编码比特率，单位为bit/s。录制音频时该参数为必填参数。<br>支持的比特率范围： <br>- AAC编码格式范围 [32000 - 500000]。<br>- G.711 μ-law编码格式范围 [64000]。 <br>- MP3编码格式范围 [8000, 16000, 32000, 40000, 48000, 56000, 64000, 80000, 96000, 112000, 128000, 160000, 192000, 224000, 256000, 320000]。<br>使用MP3编码格式时，采样率和比特率的对应关系如下：<br>- 采样率低于 16 kHz时，比特率范围为 [8000 - 64000]。<br>- 采样率在16 kHz至32 kHz之间时， 比特率范围为 [8000 - 160000]。<br>- 采样率大于32 kHz时，比特率范围为 [32000 - 320000]。<br>- AMR-NB编码格式范围 [4750, 5150, 5900, 6700, 7400, 7950, 10200, 12200]。<br>- AMR-WB编码格式范围 [6600, 8850, 12650, 14250, 15850, 18250, 19850, 23050, 23850]。<br>**原子化服务API**：从API version 12开始，该接口支持在原子化服务中使用。
 
 **类型：** number
 
@@ -53,10 +44,7 @@ AMR-WB encoding format.<br>**Atomic service API**: This API can be used in atomi
 audioChannels?: number
 ```
 
-Number of audio channels. This parameter is mandatory for audio recording.<br>- Range [1 - 8] for the
-AAC encoding format.<br>- Range [1] for the G.711 μ-law encoding format.<br>- Range [1 - 2] for the MP3 encoding
-format.<br>- Range [1] for the AMR-NB and AMR-WB encoding formats.<br>**Atomic service API**: This API can be
-used in atomic services since API version 12.
+音频声道数。录制音频时该参数为必填参数。<br>- AAC编码格式范围 [1 - 2]。<br>- G.711 μ-law编码格式范围 [1]。<br>- MP3编码格式范围 [1 - 2]。<br>- AMR-NB和AMR-WB编码格式范围 [1]。<br>**原子化服务API**：从API version 12开始，该接口支持在原子化服务中使用。
 
 **类型：** number
 
@@ -72,9 +60,7 @@ used in atomic services since API version 12.
 audioCodec?: CodecMimeType
 ```
 
-Audio encoding format. This parameter is mandatory for audio recording. Currently, AUDIO_AAC, AUDIO_MP3,
-AUDIO_G711MU, AUDIO_AMR_NB, and AUDIO_AMR_WB are supported.<br>**Atomic service API**: This API can be used in
-atomic services since API version 12.
+音频编码格式。录制音频时该参数为必填参数。当前支持AUDIO_AAC、AUDIO_MP3、AUDIO_G711MU、AUDIO_AMR_NB和AUDIO_AMR_WB。<br>**原子化服务API**：从API version 12开始，该接口支持在原子化服务中使用。
 
 **类型：** CodecMimeType
 
@@ -90,12 +76,7 @@ atomic services since API version 12.
 audioSampleRate?: number
 ```
 
-Audio sampling rate, in Hz. This parameter is mandatory for audio recording.<br>Supported sampling rate ranges:
-<br>- Range [8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000, 64000, 88200, 96000] for the AAC
-encoding format.<br>- Range [8000] for the G.711 μ-law encoding format.<br>- Range [8000, 11025, 12000, 16000,
-22050, 24000, 32000, 44100, 48000] for the MP3 encoding format.<br>- Range [8000] for the AMR-NB encoding format.
-<br>- Range [16000] for the AMR-WB encoding format.<br>Variable bit rate. The bit rate is for reference only.
-<br>**Atomic service API**: This API can be used in atomic services since API version 12.
+音频采样率，单位为Hz。录制音频时该参数为必填参数。<br>支持的采样率范围： <br>- AAC编码格式范围 [8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000, 64000, 88200, 96000]。<br>- G.711 μ-law编码格式范围 [8000]。<br>- MP3编码格式范围 [8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000]。<br>- AMR-NB编码格式范围 [8000]。<br>- AMR-WB编码格式范围 [16000]。<br>可变比特率。比特率仅供参考。<br>**原子化服务API**：从API version 12开始，该接口支持在原子化服务中使用。
 
 **类型：** number
 
@@ -111,7 +92,7 @@ encoding format.<br>- Range [8000] for the G.711 μ-law encoding format.<br>- Ra
 enableBFrame?: boolean
 ```
 
-Indicates whether enable B Frame. Default is disabled.
+是否启用B帧。默认不启用。
 
 **类型：** boolean
 
@@ -125,9 +106,7 @@ Indicates whether enable B Frame. Default is disabled.
 enableTemporalScale?: boolean
 ```
 
-Whether temporal layered encoding is supported. This parameter is optional for video recording. The default value
-is **false**. If this parameter is set to **true**, some frames in the video output streams can be skipped
-without being encoded.
+是否支持时域分层编码。录制视频时该参数可选。默认值为**false**。如果设置为**true**，视频输出流中的部分帧可以跳过不编码。
 
 **类型：** boolean
 
@@ -141,9 +120,7 @@ without being encoded.
 fileFormat: ContainerFormatType
 ```
 
-Container format of a file. This parameter is mandatory. Currently, the MP4, M4A, MP3, WAV, and AMR container
-formats are supported. The AUDIO_MP3 encoding format cannot be used in the MP4 container format.<br>**Atomic
-service API**: This API can be used in atomic services since API version 12.
+文件的容器格式。此参数为必填参数。当前支持MP4、M4A、MP3、WAV、AMR和AAC容器格式。AUDIO_MP3编码格式不能在MP4容器格式中使用。<br>**原子化服务API**：从API version 12开始，该接口支持在原子化服务中使用。
 
 **类型：** ContainerFormatType
 
@@ -159,9 +136,7 @@ service API**: This API can be used in atomic services since API version 12.
 isHdr?: boolean
 ```
 
-HDR encoding. This parameter is optional for video recording. The default value is **false**, and there is no
-requirement on the encoding format. When **isHdr** is set to **true**, the encoding format must be **video/hevc**
-.
+HDR编码。录制视频时该参数可选。默认值为**false**，对编码格式无要求。当**isHdr**设置为**true**时，编码格式必须为**video/hevc**。
 
 **类型：** boolean
 
@@ -175,8 +150,7 @@ requirement on the encoding format. When **isHdr** is set to **true**, the encod
 videoBitrate?: number
 ```
 
-Video encoding bit rate, in bit/s. This parameter is mandatory for video recording. The value range is
-[10000 - 100000000], in bit/s.
+视频编码比特率，单位为bit/s。录制视频时该参数为必填参数。取值范围为[10000 - 100000000]。
 
 **类型：** number
 
@@ -190,7 +164,7 @@ Video encoding bit rate, in bit/s. This parameter is mandatory for video recordi
 videoCodec?: CodecMimeType
 ```
 
-Video encoding format. This parameter is mandatory for video recording. Currently, VIDEO_AVC is supported.
+视频编码格式。录制视频时该参数为必填参数。当前支持VIDEO_AVC和VIDEO_HEVC。
 
 **类型：** CodecMimeType
 
@@ -204,7 +178,7 @@ Video encoding format. This parameter is mandatory for video recording. Currentl
 videoFrameHeight?: number
 ```
 
-Height of a video frame, in px. This parameter is mandatory for video recording. The value range is [144 - 4096].
+视频帧高度，单位为像素（px）。录制视频时该参数为必填参数。取值范围为[144 - 4096]。
 
 **类型：** number
 
@@ -218,7 +192,7 @@ Height of a video frame, in px. This parameter is mandatory for video recording.
 videoFrameRate?: number
 ```
 
-Video frame rate, in fps. This parameter is mandatory for video recording. The value range is [1 - 60].
+视频帧率，单位为fps。录制视频时该参数为必填参数。取值范围为[1 - 60]。
 
 **类型：** number
 
@@ -232,7 +206,7 @@ Video frame rate, in fps. This parameter is mandatory for video recording. The v
 videoFrameWidth?: number
 ```
 
-Width of a video frame, in px. This parameter is mandatory for video recording. The value range is [176 - 4096].
+视频帧宽度，单位为像素（px）。录制视频时该参数为必填参数。取值范围为[176 - 4096]。
 
 **类型：** number
 

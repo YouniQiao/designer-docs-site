@@ -156,7 +156,7 @@ Destroys an OH_AVSource instance and clears internal resources.An instance can b
 
 | Type | Description |
 | -- | -- |
-| OH_AVErrCode | [AV_ERR_OK](capi-native-averrors-h.md#oh_averrcode): The operation is successful.<br>     <br>[AV_ERR_INVALID_VAL](capi-native-averrors-h.md#oh_averrcode):<br>     <br>1. The value of source is nullptr.<br>     <br>2. The value of source does not point to an OH_AVSource instance. |
+| [OH_AVErrCode](capi-native-averrors-h.md#oh_averrcode) | [AV_ERR_OK](capi-native-averrors-h.md#oh_averrcode): The operation is successful.<br>     <br>[AV_ERR_INVALID_VAL](capi-native-averrors-h.md#oh_averrcode):<br>     <br>1. The value of source is nullptr.<br>     <br>2. The value of source does not point to an OH_AVSource instance. |
 
 ### OH_AVSource_GetSourceFormat()
 
@@ -180,7 +180,7 @@ Obtains the basic information about a media resource file.You must call [OH_AVFo
 
 | Type | Description |
 | -- | -- |
-| OH_AVFormat * | Basic information about the file. If the operation fails, NULL is returned.<br>     <br>The possible causes of an operation failure are as follows:<br>     <br>1. The value of source is nullptr.<br>     <br>2. The pointer is null or does not point to an OH_AVSource instance.<br>     <br>3. The source is not initialized. |
+| [OH_AVFormat *](capi-core-oh-avformat.md) | Basic information about the file. If the operation fails, NULL is returned.<br>     <br>The possible causes of an operation failure are as follows:<br>     <br>1. The value of source is nullptr.<br>     <br>2. The pointer is null or does not point to an OH_AVSource instance.<br>     <br>3. The source is not initialized. |
 
 ### OH_AVSource_GetTrackFormat()
 
@@ -205,7 +205,7 @@ Obtains the basic information about a track.You must call [OH_AVFormat_Destroy](
 
 | Type | Description |
 | -- | -- |
-| OH_AVFormat * | Basic information about the track. If the operation fails, NULL is returned.<br>     <br>The possible causes of an operation failure are as follows:<br>     <br>1. The value of source is invalid (either nullptr or a pointer to a non-OH_AVSource instance).<br>     <br>2. The track index is out of range.<br>     <br>3. The source is not initialized. |
+| [OH_AVFormat *](capi-core-oh-avformat.md) | Basic information about the track. If the operation fails, NULL is returned.<br>     <br>The possible causes of an operation failure are as follows:<br>     <br>1. The value of source is invalid (either nullptr or a pointer to a non-OH_AVSource instance).<br>     <br>2. The track index is out of range.<br>     <br>3. The source is not initialized. |
 
 ### OH_AVSource_GetCustomMetadataFormat()
 
@@ -229,6 +229,6 @@ Obtains the basic information about custom metadata.You must call [OH_AVFormat_D
 
 | Type | Description |
 | -- | -- |
-| OH_AVFormat * | Basic information about the metadata. If the operation fails, NULL is returned.<br>     <br>The possible causes of an operation failure are as follows:<br>     <br>1. The value of source is nullptr.<br>     <br>2. The pointer is null or does not point to an OH_AVSource instance.<br>     <br>3. The source is not initialized. |
+| [OH_AVFormat *](capi-core-oh-avformat.md) | Basic information about the metadata. If the operation fails, NULL is returned.<br>     <br>The possible causes of an operation failure are as follows:<br>     <br>1. The value of source is nullptr.<br>     <br>2. The pointer is null or does not point to an OH_AVSource instance.<br>     <br>3. The source is not initialized. |
 
 

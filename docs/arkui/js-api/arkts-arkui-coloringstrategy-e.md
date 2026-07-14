@@ -12,9 +12,7 @@ Enumerates the coloring strategies.
 INVERT = 'invert'
 ```
 
-The foreground colors are the inverse of the component background colors. This strategy is only applicable when set
-within the [foregroundColor](arkts-arkui-commonmethod-c.md#foregroundcolor-1)
-attribute.
+The foreground colors are the inverse of the component background colors. This strategy is only applicable when set within the [foregroundColor](arkts-arkui-commonmethod-c.md#foregroundcolor-1) attribute.
 
 **Since:** 10
 
@@ -30,10 +28,7 @@ attribute.
 AVERAGE = 'average'
 ```
 
-The shadow colors of the component are the average color obtained from the component background shadow area. This
-strategy is only applicable when set within the
-[shadow](arkts-arkui-commonmethod-c.md#shadow-1) attribute whose input parameter type is
-ShadowOptions.
+The shadow colors of the component are the average color obtained from the component background shadow area. This strategy is only applicable when set within the [shadow](arkts-arkui-commonmethod-c.md#shadow-1) attribute whose input parameter type is ShadowOptions.
 
 **Since:** 11
 
@@ -49,10 +44,7 @@ ShadowOptions.
 PRIMARY = 'primary'
 ```
 
-The shadow colors of the component are the primary color obtained from the component background shadow area. This
-strategy is only applicable when set within the
-[shadow](arkts-arkui-commonmethod-c.md#shadow-1) attribute whose input parameter type is
-ShadowOptions.
+The shadow colors of the component are the primary color obtained from the component background shadow area. This strategy is only applicable when set within the [shadow](arkts-arkui-commonmethod-c.md#shadow-1) attribute whose input parameter type is ShadowOptions.
 
 **Since:** 11
 

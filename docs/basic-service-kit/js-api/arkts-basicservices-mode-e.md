@@ -1,9 +1,6 @@
 # Mode
 
-Defines mode options.
-
-After foreground tasks of an application are switched to the background for a period of time, background tasks
-are not affected but foreground tasks will fail or pause.
+Defines mode options. After foreground tasks of an application are switched to the background for a period of time, background tasks are not affected but foreground tasks will fail or pause.
 
 **Since:** 10
 

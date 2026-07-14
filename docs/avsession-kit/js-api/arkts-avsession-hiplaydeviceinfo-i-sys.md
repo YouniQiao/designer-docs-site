@@ -20,9 +20,7 @@ import { avSession } from '@kit.AVSessionKit';
 castMode?: number
 ```
 
-HiPlay device cast mode.
-1: DEVICE_LEVEL_CAST
-2: APP_LEVEL_CAST
+HiPlay device cast mode. 1: DEVICE_LEVEL_CAST 2: APP_LEVEL_CAST
 
 **Type:** number
 
@@ -62,11 +60,7 @@ HiPlay device current cast uid.
 supportCastMode?: number
 ```
 
-HiPlay device supports cast mode.
-when device both support device level cast and app level cast, support cast mode is DEVICE_LEVEL_CAST|
-APP_LEVEL_CAST
-1: DEVICE_LEVEL_CAST
-2: APP_LEVEL_CAST
+HiPlay device supports cast mode. when device both support device level cast and app level cast, support cast mode is DEVICE_LEVEL_CAST| APP_LEVEL_CAST 1: DEVICE_LEVEL_CAST 2: APP_LEVEL_CAST
 
 **Type:** number
 

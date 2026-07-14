@@ -1,7 +1,6 @@
 # DragStartRequestStatus
 
-Enumerates the states defining whether an application can initiate a drag operation. This API is effective only
-when [onDragStart](../arkts-components/arkts-arkui-commonmethod-c.md#ondragstart-1) is called.
+Enumerates the states defining whether an application can initiate a drag operation. This API is effective only when [onDragStart](../arkts-components/arkts-arkui-commonmethod-c.md#ondragstart-1) is called.
 
 **Since:** 18
 

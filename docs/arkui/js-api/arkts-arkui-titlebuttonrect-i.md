@@ -1,7 +1,6 @@
 # TitleButtonRect
 
-Describes the rectangle used to hold the minimize, maximize, and close buttons on the title bar. This rectangle is
-located in the top-right corner of the window.
+Describes the rectangle used to hold the minimize, maximize, and close buttons on the title bar. This rectangle is located in the top-right corner of the window.
 
 **Since:** 11
 

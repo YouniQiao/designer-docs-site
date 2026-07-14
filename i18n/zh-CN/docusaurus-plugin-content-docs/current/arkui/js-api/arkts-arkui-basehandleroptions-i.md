@@ -12,9 +12,7 @@
 isFingerCountLimited?: boolean
 ```
 
-是否检查触摸屏幕的手指数量。true表示检查触摸屏幕的手指数量，false表示不检查触摸屏幕的手指数量。
-
-默认值：false
+是否检查触摸屏幕的手指数量。true表示检查触摸屏幕的手指数量，false表示不检查触摸屏幕的手指数量。 默认值：false
 
 **类型：** boolean
 

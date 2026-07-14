@@ -12,8 +12,7 @@ import { certificateManager } from '@kit.DeviceCertificateKit';
 function getPrivateCertificate(keyUri: string, callback: AsyncCallback<CMResult>): void
 ```
 
-Obtains detailed information about a private credential. This API uses an asynchronous callback to return the
-result.
+Obtains detailed information about a private credential. This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 

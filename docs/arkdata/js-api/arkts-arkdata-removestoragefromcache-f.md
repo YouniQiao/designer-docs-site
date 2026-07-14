@@ -6,8 +6,7 @@
 function removeStorageFromCache(path: string, callback: AsyncCallback<void>): void
 ```
 
-Removes the singleton **Storage** instance of a file from the cache. The removed instance cannot be used for data
-operations. Otherwise, data inconsistency will occur. This API uses an asynchronous callback to return the result.
+Removes the singleton **Storage** instance of a file from the cache. The removed instance cannot be used for data operations. Otherwise, data inconsistency will occur. This API uses an asynchronous callback to return the result.
 
 **Since:** 6
 
@@ -29,8 +28,7 @@ operations. Otherwise, data inconsistency will occur. This API uses an asynchron
 function removeStorageFromCache(path: string): Promise<void>
 ```
 
-Removes the singleton **Storage** instance of a file from the cache. The removed instance cannot be used for data
-operations. Otherwise, data inconsistency will occur. This API uses a promise to return the result.
+Removes the singleton **Storage** instance of a file from the cache. The removed instance cannot be used for data operations. Otherwise, data inconsistency will occur. This API uses a promise to return the result.
 
 **Since:** 6
 

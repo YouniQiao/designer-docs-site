@@ -17,8 +17,7 @@ function postConversationData(
 ): Promise<void>
 ```
 
-Posts conversation data to a specified device. This API sends a message to the target device identified by its
-networkId or udid. The message will be delivered to the specified bundle and ability on the remote device.
+Posts conversation data to a specified device. This API sends a message to the target device identified by its networkId or udid. The message will be delivered to the specified bundle and ability on the remote device.
 
 **Since:** 26.1.0
 

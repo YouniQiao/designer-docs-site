@@ -12,7 +12,7 @@ import { notificationManager } from '@kit.NotificationKit';
 function cancel(id: number, callback: AsyncCallback<void>): void
 ```
 
-Cancels a notification with the specified ID. This API uses an asynchronous callback to return the result.
+Cancels a notification with the specified ID. This API uses an asynchronous callback to return the result. After cancellation, the corresponding notification will be removed from the notification center, status bar, etc., and will no longer be visible to the user. Compared with notificationManager.cancel(id, label, callback), which includes the label parameter, this API does not pass in a label and will cancel the notification matching the specified ID. When a notification is published with a non-empty label, the `notificationManager.cancel(id, label, callback)` API must be used to cancel it.
 
 **Since:** 9
 
@@ -22,7 +22,7 @@ Cancels a notification with the specified ID. This API uses an asynchronous call
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| id | number | Yes | Notification ID. |
+| id | number | Yes | Notification ID, used to identify the target notification. This value isspecified by the **id** field of NotificationRequest when a notification is published. |
 | callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
@@ -59,8 +59,7 @@ notificationManager.cancel(0, cancelCallback);
 function cancel(id: number, label: string, callback: AsyncCallback<void>): void
 ```
 
-Cancels a notification with the specified ID and label. This API uses an asynchronous callback to return the
-result.
+Cancels a notification with the specified ID and label. This API uses an asynchronous callback to return the result. After cancellation, the corresponding notification will be removed from the notification center, status bar, and other locations, and will no longer be visible to the user. This is suitable for scenarios where a specific notification with a particular tag needs to be precisely canceled. Compared with notificationManager.cancel(id, callback), which only passes in the notification ID, this API additionally passes in the **label** parameter, allowing precise cancellation of notifications with different tags under the same ID.
 
 **Since:** 9
 
@@ -70,8 +69,8 @@ result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| id | number | Yes | Notification ID. |
-| label | string | Yes | Notification label. |
+| id | number | Yes | Notification ID, used to identify the target notification. This value isspecified by the **id** field of NotificationRequest when a notification is published. |
+| label | string | Yes | Notification tag, used to distinguish notifications with different tagsunder the same ID. This value is specified by the **label** field of NotificationRequest when anotification is published. |
 | callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
@@ -108,7 +107,7 @@ notificationManager.cancel(0, "label", cancelCallback);
 function cancel(id: number, label?: string): Promise<void>
 ```
 
-Cancels a notification with the specified ID and optional label. This API uses a promise to return the result.
+Cancels a published notification based on the notification ID and label. If the label is empty, it cancels the published notification that matches the specified notification ID and has an empty label. This API uses a promise to return the result. After cancellation, the corresponding notification will be removed from the notification center, status bar, and other locations, and will no longer be visible to the user.
 
 **Since:** 9
 
@@ -118,7 +117,7 @@ Cancels a notification with the specified ID and optional label. This API uses a
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| id | number | Yes | Notification ID. |
+| id | number | Yes | Notification ID, used to identify the target notification. This value isspecified by the id field of NotificationRequest when publishing a notification. |
 | label | string | No | Notification label. This parameter is left empty by default. |
 
 **Return value:**

@@ -1,7 +1,6 @@
 # Flags
 
-Enumerates the common preset keywords of the [Want.flags](arkts-ability-want-c.md) field. You can use
-these predefined keywords to set or retrieve additional flag information carried in application transitions.
+Enumerates the common preset keywords of the [Want.flags](arkts-ability-want-c.md) field. You can use these predefined keywords to set or retrieve additional flag information carried in application transitions.
 
 **Since:** 9
 
@@ -53,11 +52,7 @@ The URI can be persisted by the receiver. It takes effect only on 2-in-1 devices
 FLAG_INSTALL_ON_DEMAND = 0x00000800
 ```
 
-Enables on-demand installation when launching an atomic service.
-
-- If enabled, the system automatically installs the atomic service if it is not already installed before
-proceeding with the launch.
-- If disabled, the launch fails if the atomic service is not installed.
+Enables on-demand installation when launching an atomic service. - If enabled, the system automatically installs the atomic service if it is not already installed before proceeding with the launch. - If disabled, the launch fails if the atomic service is not installed.
 
 **Since:** 9
 
@@ -71,10 +66,7 @@ proceeding with the launch.
 FLAG_ABILITY_ON_COLLABORATE = 0x00002000
 ```
 
-In multi-device collaboration scenario, the caller application must initiate a request through the DMS, with this
-flag included in the **Flags** field, in order to invoke the lifecycle callback
-[onCollaborate()](arkts-ability-uiability-c.md#oncollaborate-1)
-of the target application.
+In multi-device collaboration scenario, the caller application must initiate a request through the DMS, with this flag included in the **Flags** field, in order to invoke the lifecycle callback [onCollaborate()](arkts-ability-uiability-c.md#oncollaborate-1) of the target application.
 
 **Since:** 18
 
@@ -86,11 +78,7 @@ of the target application.
 FLAG_START_WITHOUT_TIPS = 0x40000000
 ```
 
-Disables the "No available applications" prompt during implicit application launches.
-
-When [launching an application implicitly](../../../../application-models/app-startup-overview.md), a prompt saying "No
-available applications" will appear if no matching application is found. You can use this flag to prevent this
-prompt from appearing.
+Disables the "No available applications" prompt during implicit application launches. When [launching an application implicitly](../../../../application-models/app-startup-overview.md), a prompt saying "No available applications" will appear if no matching application is found. You can use this flag to prevent this prompt from appearing.
 
 **Since:** 11
 

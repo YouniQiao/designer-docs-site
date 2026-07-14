@@ -1,9 +1,6 @@
 # KeyCode
 
-按键编码。[添加按键事件策略](arkts-mdm-addkeyeventpolicies-f.md#addkeyeventpolicies-1)、[删除按键事件策略](arkts-mdm-removekeyeventpolicies-f.md#removekeyeventpolicies-1)、
-[获取按键事件策略](arkts-mdm-getkeyeventpolicies-f.md#getkeyeventpolicies-1)和
-[按键事件回调](arkts-mdm-enterpriseadminextensionability-c.md#onkeyevent-1)接口通过按键编码
-映射到设备对应实际按键。
+按键编码。[添加按键事件策略](arkts-mdm-addkeyeventpolicies-f.md#addkeyeventpolicies-1)、[删除按键事件策略](arkts-mdm-removekeyeventpolicies-f.md#removekeyeventpolicies-1)、 [获取按键事件策略](arkts-mdm-getkeyeventpolicies-f.md#getkeyeventpolicies-1)和 [按键事件回调](arkts-mdm-enterpriseadminextensionability-c.md#onkeyevent-1)接口通过按键编码 映射到设备对应实际按键。
 
 **起始版本：** 23
 

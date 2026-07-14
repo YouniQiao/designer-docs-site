@@ -1,7 +1,6 @@
 # ResolvedSymbolDateTimeFormatOptions
 
-Represents optional element for the ResolvedSymbolDateTimeFormatOptions object.
-Define the resolved symbol element and value that need to get.
+Represents optional element for the ResolvedSymbolDateTimeFormatOptions object. Define the resolved symbol element and value that need to get.
 
 **Inheritance/Implementation:** ResolvedSymbolDateTimeFormatOptions extends [Intl.ResolvedDateTimeFormatOptions](../../apis-na/arkts-apis/arkts-na-resolveddatetimeformatoptions-i.md)
 
@@ -21,8 +20,7 @@ import { i18n } from '@kit.LocalizationKit';
 amPMSymbol?: string[]
 ```
 
-AM and PM symbol of date time period part, such as "PM" of "2:23 PM". First parameter is AM,
-second parameter is PM.
+AM and PM symbol of date time period part, such as "PM" of "2:23 PM". First parameter is AM, second parameter is PM.
 
 **Type:** string[]
 

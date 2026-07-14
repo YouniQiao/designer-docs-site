@@ -12,9 +12,7 @@ import { usageStatistics } from '@kit.BackgroundTasksKit';
 function queryBundleStatsInfos(begin: number, end: number, callback: AsyncCallback<BundleStatsMap>): void
 ```
 
-Queries usage information about each bundle within a specified period.
-
-This method queries usage information at the {@link #BY_OPTIMIZED} interval by default.
+Queries usage information about each bundle within a specified period. This method queries usage information at the {@link #BY_OPTIMIZED} interval by default.
 
 **Since:** 9
 
@@ -71,9 +69,7 @@ usageStatistics.queryBundleStatsInfos(0, 20000000000000, (err: BusinessError, re
 function queryBundleStatsInfos(begin: number, end: number): Promise<BundleStatsMap>
 ```
 
-Queries usage information about each bundle within a specified period.
-
-This method queries usage information at the {@link #BY_OPTIMIZED} interval by default.
+Queries usage information about each bundle within a specified period. This method queries usage information at the {@link #BY_OPTIMIZED} interval by default.
 
 **Since:** 9
 

@@ -26,9 +26,7 @@ bypassHostnamesWithoutPeriod(): void
 clearImplicitRules(): void
 ```
 
-默认情况下，某些主机名如果属于链路本地 IP 或 localhost 地址，则会自动绕过代理。
-例如，匹配以下任意条件（非详尽列表）的主机名：localhost、*.localhost、[::1]、127.0.0.1/8、169.254/16、[FE80::]/10。
-调用此函数可覆盖默认行为，并强制将 localhost 和链路本地 URL 通过代理发送。
+默认情况下，某些主机名如果属于链路本地 IP 或 localhost 地址，则会自动绕过代理。 例如，匹配以下任意条件（非详尽列表）的主机名：localhost、*.localhost、[::1]、127.0.0.1/8、169.254/16、[FE80::]/10。 调用此函数可覆盖默认行为，并强制将 localhost 和链路本地 URL 通过代理发送。
 
 **起始版本：** 15
 
@@ -42,10 +40,7 @@ clearImplicitRules(): void
 enableReverseBypass(reverse: boolean): void
 ```
 
-反转bypass规则。
-
-若为 false，所有URL都将使用代理设置，除非URL匹配了绕过规则。
-若为 true，仅绕过列表中的URL会使用代理，其余所有URL都将直接连接。
+反转bypass规则。 若为 false，所有URL都将使用代理设置，除非URL匹配了绕过规则。 若为 true，仅绕过列表中的URL会使用代理，其余所有URL都将直接连接。
 
 **起始版本：** 15
 
@@ -111,9 +106,7 @@ getProxyRules(): Array<ProxyRule>
 insertBypassRule(bypassRule: string): void
 ```
 
-插入一个旁路规则，该规则指示哪些URL应跳过覆盖代理，直接连接到服务器。
-这些可能是URL或IP地址，并且支持通配符。例如，"*.example.com" 表示对以下地址的请求：
-"https://www.example.com"和"http://test.example.com"将直接连接服务器。
+插入一个旁路规则，该规则指示哪些URL应跳过覆盖代理，直接连接到服务器。 这些可能是URL或IP地址，并且支持通配符。例如，"*.example.com" 表示对以下地址的请求： "https://www.example.com"和"http://test.example.com"将直接连接服务器。
 
 **起始版本：** 15
 
@@ -165,20 +158,7 @@ insertDirectRule(schemeFilter?: ProxySchemeFilter): void
 insertProxyRule(proxyRule: string, schemeFilter?: ProxySchemeFilter): void
 ```
 
-插入一条代理规则，与schemeFilter匹配的URL都会使用指定代理。如果schemeFilter为空，所有URL都将使用指定代理。
-use the proxy rule if schemeFilter is null.
-
-代理的格式为[scheme://]host[:port]。Scheme是可选的，如果存在，必须为 HTTP、HTTPS 或 SOCKS。Scheme默认为 HTTP。
-host可以是带括号的 IPv6 字面量、IPv4 字面量，或者一个或多个由点分隔的标签。port是可选的，默认为 HTTP 的 80、
-HTTPS 的 443 和 SOCKS 的 1080。
-
-例如 example.com host: example.com
-https://example.com scheme: https host: example.com
-example.com:8888 host: example.com port: 8888
-https://example.com:8888 scheme:https host: example.com port:8888
-192.168.1.1 host: 192.168.1.1
-192.168.1.1:8888 host:192.168.1.1 port: 8888
-[10:20:30:40:50:60:70:80]
+插入一条代理规则，与schemeFilter匹配的URL都会使用指定代理。如果schemeFilter为空，所有URL都将使用指定代理。 use the proxy rule if schemeFilter is null. 代理的格式为[scheme://]host[:port]。Scheme是可选的，如果存在，必须为 HTTP、HTTPS 或 SOCKS。Scheme默认为 HTTP。 host可以是带括号的 IPv6 字面量、IPv4 字面量，或者一个或多个由点分隔的标签。port是可选的，默认为 HTTP 的 80、 HTTPS 的 443 和 SOCKS 的 1080。 例如 example.com host: example.com https://example.com scheme: https host: example.com example.com:8888 host: example.com port: 8888 https://example.com:8888 scheme:https host: example.com port:8888 192.168.1.1 host: 192.168.1.1 192.168.1.1:8888 host:192.168.1.1 port: 8888 [10:20:30:40:50:60:70:80]
 
 **起始版本：** 15
 

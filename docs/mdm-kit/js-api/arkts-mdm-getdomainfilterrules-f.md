@@ -12,11 +12,7 @@ import { networkManager } from '@kit.MDMKit';
 function getDomainFilterRules(admin: Want): Array<DomainFilterRule>
 ```
 
-Obtains domain name filtering rules.
-
-In API version 21 and earlier versions, only IPv4 is supported. IPv4 and IPv6 are supported since API version 22.
-
-[LogType](arkts-mdm-logtype-e.md) is supported since API version 23.
+Obtains domain name filtering rules. In API version 21 and earlier versions, only IPv4 is supported. IPv4 and IPv6 are supported since API version 22. [LogType](arkts-mdm-logtype-e.md) is supported since API version 23.
 
 **Since:** 12
 

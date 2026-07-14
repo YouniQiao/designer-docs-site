@@ -24,8 +24,7 @@ import { bluetoothManager } from '@kit.ConnectivityKit';
 disconnect(device: string): void
 ```
 
-Disconnect to device with pan.
-On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
+Disconnect to device with pan. On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
 
 **Since:** 9
 
@@ -66,8 +65,7 @@ On API 10 and above, the permission required by this interface is changed from U
 isTetheringOn(): boolean
 ```
 
-Obtains the tethering enable or disable.
-On API 10 and above, the permission required by this interface is changed to ACCESS_BLUETOOTH.
+Obtains the tethering enable or disable. On API 10 and above, the permission required by this interface is changed to ACCESS_BLUETOOTH.
 
 **Since:** 9
 
@@ -101,9 +99,7 @@ On API 10 and above, the permission required by this interface is changed to ACC
 setTethering(enable: boolean): void
 ```
 
-Enable bluetooth tethering.
-On API 10 and above, the permission required by this interface is changed from DISCOVER_BLUETOOTH to
-ACCESS_BLUETOOTH and MANAGE_BLUETOOTH.
+Enable bluetooth tethering. On API 10 and above, the permission required by this interface is changed from DISCOVER_BLUETOOTH to ACCESS_BLUETOOTH and MANAGE_BLUETOOTH.
 
 **Since:** 9
 

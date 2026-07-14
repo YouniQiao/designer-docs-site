@@ -296,12 +296,7 @@ try {
 install(hapFilePaths: Array<string>, installParam: InstallParam, callback: AsyncCallback<void>): void
 ```
 
-安装指定应用。使用callback异步回调。
-
-> **说明：**
->
-> 安装不同分发类型的应用需要申请相应的权限，分发类型可以参考[ApplicationInfo](arkts-ability-applicationinfo-i.md)中的
-> appDistributionType字段说明。
+安装指定应用。使用callback异步回调。 > **说明：** > > 安装不同分发类型的应用需要申请相应的权限，分发类型可以参考[ApplicationInfo](arkts-ability-applicationinfo-i.md)中的 > appDistributionType字段说明。
 
 **起始版本：** 9
 
@@ -394,12 +389,7 @@ try {
 install(hapFilePaths: Array<string>, callback: AsyncCallback<void>): void
 ```
 
-安装指定应用。使用callback异步回调。
-
-> **说明：**
->
-> 安装不同分发类型的应用需要申请相应的权限，分发类型可以参考[ApplicationInfo](arkts-ability-applicationinfo-i.md)中的
-> appDistributionType字段说明。
+安装指定应用。使用callback异步回调。 > **说明：** > > 安装不同分发类型的应用需要申请相应的权限，分发类型可以参考[ApplicationInfo](arkts-ability-applicationinfo-i.md)中的 > appDistributionType字段说明。
 
 **起始版本：** 9
 
@@ -485,12 +475,7 @@ try {
 install(hapFilePaths: Array<string>, installParam?: InstallParam): Promise<void>
 ```
 
-安装指定应用。使用Promise异步回调。
-
-> **说明：**
->
-> 安装不同分发类型的应用需要申请相应的权限，分发类型可以参考[ApplicationInfo](arkts-ability-applicationinfo-i.md)中的
-> appDistributionType字段说明。
+安装指定应用。使用Promise异步回调。 > **说明：** > > 安装不同分发类型的应用需要申请相应的权限，分发类型可以参考[ApplicationInfo](arkts-ability-applicationinfo-i.md)中的 > appDistributionType字段说明。
 
 **起始版本：** 9
 
@@ -670,12 +655,7 @@ try {
 installPreexistingApp(bundleName: string, userId?: number): Promise<void>
 ```
 
-在指定用户下安装指定bundleName的应用。使用Promise异步回调。
-
-> **说明：**
->
-> 该接口不支持安装[签名证书的分发类型](arkts-ability-applicationinfo-i.md)为enterprise，enterprise_mdm和
-> enterprise_normal的应用。
+在指定用户下安装指定bundleName的应用。使用Promise异步回调。 > **说明：** > > 该接口不支持安装[签名证书的分发类型](arkts-ability-applicationinfo-i.md)为enterprise，enterprise_mdm和 > enterprise_normal的应用。
 
 **起始版本：** 12
 

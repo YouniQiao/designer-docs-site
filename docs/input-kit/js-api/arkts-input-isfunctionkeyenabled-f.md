@@ -12,8 +12,7 @@ import { inputDevice } from '@kit.InputKit';
 function isFunctionKeyEnabled(functionKey: FunctionKey): Promise<boolean>
 ```
 
-Checks whether the specified function key (for example, **CapsLock**) is enabled. This API uses a promise to return
-the result.
+Checks whether the specified function key (for example, **CapsLock**) is enabled. This API uses a promise to return the result.
 
 **Since:** 15
 

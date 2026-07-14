@@ -1,9 +1,6 @@
 # Indicator
 
-Sets the distance between the navigation indicator and the **Swiper** component. Note that due to its default
-interaction area height of 32 vp, the navigation indicator cannot be placed flush against the bottom edge. To
-implement the function of completely attaching to the bottom, you can use the
-[IndicatorComponent](IndicatorComponentInterface) component to adjust the position more flexibly.
+Sets the distance between the navigation indicator and the **Swiper** component. Note that due to its default interaction area height of 32 vp, the navigation indicator cannot be placed flush against the bottom edge. To implement the function of completely attaching to the bottom, you can use the [IndicatorComponent](IndicatorComponentInterface) component to adjust the position more flexibly.
 
 **Since:** 10
 
@@ -45,8 +42,7 @@ Sets the position of the navigation indicator relative to the bottom edge of the
 bottom(bottom: LengthMetrics | Length, ignoreSize: boolean): T
 ```
 
-Sets the position of the navigation indicator relative to the bottom edge of the **Swiper** component. You can also
-choose to ignore the size of the navigation indicator using the **ignoreSize** property.
+Sets the position of the navigation indicator relative to the bottom edge of the **Swiper** component. You can also choose to ignore the size of the navigation indicator using the **ignoreSize** property.
 
 **Since:** 19
 
@@ -125,8 +121,7 @@ Returns a **DotIndicator** object.
 end(value: LengthMetrics): T
 ```
 
-Sets the distance between the navigation point indicator and the left edge (in right-to-left scripts) or the right
-edge (in left-to-right scripts) of the **Swiper** component.
+Sets the distance between the navigation point indicator and the left edge (in right-to-left scripts) or the right edge (in left-to-right scripts) of the **Swiper** component.
 
 **Since:** 12
 
@@ -216,8 +211,7 @@ Sets the position of the navigation indicator relative to the right edge of the 
 start(value: LengthMetrics): T
 ```
 
-Sets the distance between the navigation indicator and the right edge (in [RTL](arkts-arkui-layoutdirection-e.md) scripts) or
-the left edge (in [LTR](arkts-arkui-layoutdirection-e.md) scripts) of the **Swiper** component.
+Sets the distance between the navigation indicator and the right edge (in [RTL](arkts-arkui-layoutdirection-e.md) scripts) or the left edge (in [LTR](arkts-arkui-layoutdirection-e.md) scripts) of the **Swiper** component.
 
 **Since:** 12
 

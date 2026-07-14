@@ -12,8 +12,7 @@ Callback triggered when the navigation is complete.
 isMainFrame?: boolean
 ```
 
-Whether the event is triggered by the main frame.
-The value **true** indicates that the event is triggered by the main frame, and **false** indicates the opposite.
+Whether the event is triggered by the main frame. The value **true** indicates that the event is triggered by the main frame, and **false** indicates the opposite.
 
 **Type:** boolean
 
@@ -27,9 +26,7 @@ The value **true** indicates that the event is triggered by the main frame, and 
 isRefreshed: boolean
 ```
 
-Whether the page is reloaded. The value **true** means that the page is reloaded by invoking the
-[refresh](../arkts-apis/arkts-arkweb-webviewcontroller-c.md#refresh-1) API, and **false**
-means the opposite.
+Whether the page is reloaded. The value **true** means that the page is reloaded by invoking the [refresh](../arkts-apis/arkts-arkweb-webviewcontroller-c.md#refresh-1) API, and **false** means the opposite.
 
 **Type:** boolean
 

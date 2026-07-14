@@ -1,8 +1,6 @@
 # Context
 
-The context of an ability or an application. It allows access to
-application-specific resources, request and verification permissions.
-Can only be obtained through the ability.
+The context of an ability or an application. It allows access to application-specific resources, request and verification permissions. Can only be obtained through the ability.
 
 **Inheritance/Implementation:** Context extends [BaseContext](arkts-ability-basecontext-c.md)
 
@@ -520,8 +518,7 @@ Obtains the ModuleInfo object for this application.
 getOrCreateDistributedDir(): Promise<string>
 ```
 
-Obtains the distributed file path for storing ability or application data files.
-If the distributed file path does not exist, the system will create a path and return the created path.
+Obtains the distributed file path for storing ability or application data files. If the distributed file path does not exist, the system will create a path and return the created path.
 
 **Since:** 7
 
@@ -541,8 +538,7 @@ If the distributed file path does not exist, the system will create a path and r
 getOrCreateDistributedDir(callback: AsyncCallback<string>): void
 ```
 
-Obtains the distributed file path for storing ability or application data files.
-If the distributed file path does not exist, the system will create a path and return the created path.
+Obtains the distributed file path for storing ability or application data files. If the distributed file path does not exist, the system will create a path and return the created path.
 
 **Since:** 7
 
@@ -562,11 +558,7 @@ If the distributed file path does not exist, the system will create a path and r
 getOrCreateLocalDir(): Promise<string>
 ```
 
-Get the local root dir of an app. If it is the first call, the dir
-will be created.
-If in the context of the ability, return the root dir of
-the ability; if in the context of the application, return the
-root dir of the application.
+Get the local root dir of an app. If it is the first call, the dir will be created. If in the context of the ability, return the root dir of the ability; if in the context of the application, return the root dir of the application.
 
 **Since:** 7
 
@@ -586,11 +578,7 @@ root dir of the application.
 getOrCreateLocalDir(callback: AsyncCallback<string>): void
 ```
 
-Get the local root dir of an app. If it is the first call, the dir
-will be created.
-If in the context of the ability, return the root dir of
-the ability; if in the context of the application, return the
-root dir of the application.
+Get the local root dir of an app. If it is the first call, the dir will be created. If in the context of the ability, return the root dir of the ability; if in the context of the application, return the root dir of the application.
 
 **Since:** 7
 
@@ -870,9 +858,7 @@ Sets the display orientation of the current ability.
 setShowOnLockScreen(show: boolean, callback: AsyncCallback<void>): void
 ```
 
-Sets whether to show this ability on top of the lock screen whenever the lock screen is displayed, keeping the
-ability in the ACTIVE state.
-The interface can only take effect in API8 and below versions.
+Sets whether to show this ability on top of the lock screen whenever the lock screen is displayed, keeping the ability in the ACTIVE state. The interface can only take effect in API8 and below versions.
 
 **Since:** 7
 
@@ -897,9 +883,7 @@ The interface can only take effect in API8 and below versions.
 setShowOnLockScreen(show: boolean): Promise<void>
 ```
 
-Sets whether to show this ability on top of the lock screen whenever the lock screen is displayed, keeping the
-ability in the ACTIVE state.
-The interface can only take effect in API8 and below versions.
+Sets whether to show this ability on top of the lock screen whenever the lock screen is displayed, keeping the ability in the ACTIVE state. The interface can only take effect in API8 and below versions.
 
 **Since:** 7
 
@@ -984,10 +968,7 @@ Sets whether to wake up the screen when this ability is restored.
 verifyPermission(permission: string, options?: PermissionOptions): Promise<number>
 ```
 
-Verify whether the specified permission is allowed for a particular
-pid and uid running in the system.
-Pid and uid are optional. If you do not pass in pid and uid,
-it will check your own permission.
+Verify whether the specified permission is allowed for a particular pid and uid running in the system. Pid and uid are optional. If you do not pass in pid and uid, it will check your own permission.
 
 **Since:** 7
 
@@ -1014,10 +995,7 @@ it will check your own permission.
 verifyPermission(permission: string, options: PermissionOptions, callback: AsyncCallback<number>): void
 ```
 
-Verify whether the specified permission is allowed for a particular
-pid and uid running in the system.
-Pid and uid are optional. If you do not pass in pid and uid,
-it will check your own permission.
+Verify whether the specified permission is allowed for a particular pid and uid running in the system. Pid and uid are optional. If you do not pass in pid and uid, it will check your own permission.
 
 **Since:** 7
 
@@ -1039,10 +1017,7 @@ it will check your own permission.
 verifyPermission(permission: string, callback: AsyncCallback<number>): void
 ```
 
-Verify whether the specified permission is allowed for a particular
-pid and uid running in the system.
-Pid and uid are optional. If you do not pass in pid and uid,
-it will check your own permission.
+Verify whether the specified permission is allowed for a particular pid and uid running in the system. Pid and uid are optional. If you do not pass in pid and uid, it will check your own permission.
 
 **Since:** 7
 

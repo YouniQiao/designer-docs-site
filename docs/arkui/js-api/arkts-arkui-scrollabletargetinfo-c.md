@@ -1,7 +1,6 @@
 # ScrollableTargetInfo
 
-Provides the information about the scrollable container component corresponding to the gesture recognizer. It
-inherits from [EventTargetInfo](arkts-arkui-eventtargetinfo-c.md).
+Provides the information about the scrollable container component corresponding to the gesture recognizer. It inherits from [EventTargetInfo](arkts-arkui-eventtargetinfo-c.md).
 
 **Inheritance/Implementation:** ScrollableTargetInfo extends [EventTargetInfo](arkts-arkui-eventtargetinfo-c.md)
 
@@ -15,8 +14,7 @@ inherits from [EventTargetInfo](arkts-arkui-eventtargetinfo-c.md).
 isBegin(): boolean
 ```
 
-Checks whether this scrollable container component is scrolled to the top. If it is a **Swiper** component in loop
-mode, **false** is returned.
+Checks whether this scrollable container component is scrolled to the top. If it is a **Swiper** component in loop mode, **false** is returned.
 
 **Since:** 12
 
@@ -38,8 +36,7 @@ mode, **false** is returned.
 isEnd(): boolean
 ```
 
-Checks whether the current scroll container is scrolled to the bottom. If the container is a **Swiper** component
-and is in loop mode, **false** is returned.
+Checks whether the current scroll container is scrolled to the bottom. If the container is a **Swiper** component and is in loop mode, **false** is returned.
 
 **Since:** 12
 

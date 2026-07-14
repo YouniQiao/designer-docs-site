@@ -102,8 +102,7 @@ Resolution of the axis.
 source: SourceType
 ```
 
-Input sources supported by the input device, including the keyboard, mouse, touchscreen, trackball, touchpad, and
-joystick.
+Input sources supported by the input device, including the keyboard, mouse, touchscreen, trackball, touchpad, and joystick.
 
 **Type:** SourceType
 

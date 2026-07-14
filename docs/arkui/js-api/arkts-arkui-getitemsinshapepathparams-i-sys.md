@@ -38,8 +38,7 @@ image information.
 ratio?: number
 ```
 
-The proportion of non-transparent blank pixels in the selected area
-relative to the total pixels of the image. Default value is 0.15.
+The proportion of non-transparent blank pixels in the selected area relative to the total pixels of the image. Default value is 0.15.
 
 **Type:** number
 

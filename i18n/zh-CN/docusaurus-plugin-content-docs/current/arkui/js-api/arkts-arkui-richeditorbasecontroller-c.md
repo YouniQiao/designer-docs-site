@@ -30,9 +30,7 @@ closeSelectionMenu(): void
 deleteBackward(): void
 ```
 
-提供删除字符能力。没有内容被选中时，删除当前光标位置前的1个字符。有内容被选中时，删除选中内容。
-
-该接口不支持预上屏场景使用。
+提供删除字符能力。没有内容被选中时，删除当前光标位置前的1个字符。有内容被选中时，删除选中内容。 该接口不支持预上屏场景使用。
 
 **起始版本：** 23
 
@@ -48,9 +46,7 @@ deleteBackward(): void
 getCaretOffset(): number
 ```
 
-返回当前光标所在位置。
-
-当无法获取光标位置时（例如controller未与组件绑定时），该接口返回-1。
+返回当前光标所在位置。 当无法获取光标位置时（例如controller未与组件绑定时），该接口返回-1。
 
 **起始版本：** 10
 
@@ -230,19 +226,7 @@ setCaretOffset(offset: number): boolean
 setSelection(selectionStart: number, selectionEnd: number, options?: SelectionOptions): void
 ```
 
-支持设置组件内的内容选中，选中部分背板高亮。
-
-selectionStart和selectionEnd均为-1时表示全选，均为0时可以清空选中区。
-
-未获焦时调用该接口不产生选中效果。
-
-从API version 12开始，在2in1设备中，无论options取何值，调用setSelection接口都不会弹出菜单，此外，如果组件中已经存在菜单，调用setSelection接口会关闭菜单。
-
-在非2in1设备中，options取值为MenuPolicy.DEFAULT时，遵循以下规则：
-
-1. 组件内有手柄菜单时，接口调用后不关闭菜单，并且调整菜单位置。
-2. 组件内有不带手柄的菜单时，接口调用后不关闭菜单，并且菜单位置不变。
-3. 组件内无菜单时，接口调用后也无菜单显示。
+支持设置组件内的内容选中，选中部分背板高亮。 selectionStart和selectionEnd均为-1时表示全选，均为0时可以清空选中区。 未获焦时调用该接口不产生选中效果。 从API version 12开始，在2in1设备中，无论options取何值，调用setSelection接口都不会弹出菜单，此外，如果组件中已经存在菜单，调用setSelection接口会关闭菜单。 在非2in1设备中，options取值为MenuPolicy.DEFAULT时，遵循以下规则： 1. 组件内有手柄菜单时，接口调用后不关闭菜单，并且调整菜单位置。 2. 组件内有不带手柄的菜单时，接口调用后不关闭菜单，并且菜单位置不变。 3. 组件内无菜单时，接口调用后也无菜单显示。
 
 **起始版本：** 11
 

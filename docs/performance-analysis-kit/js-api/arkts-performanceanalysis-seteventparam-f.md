@@ -12,9 +12,7 @@ import { hiAppEvent } from '@kit.PerformanceAnalysisKit';
 function setEventParam(params: Record<string, ParamType>, domain: string, name?: string): Promise<void>
 ```
 
-Sets custom event parameters. This API uses a promise to return the result. During the same lifecycle, system
-events and application events can be associated through event domain and event name.System events only support
-crash, freeze and resource leak events.
+Sets custom event parameters. This API uses a promise to return the result. During the same lifecycle, system events and application events can be associated through event domain and event name.System events only support crash, freeze and resource leak events.
 
 **Since:** 12
 

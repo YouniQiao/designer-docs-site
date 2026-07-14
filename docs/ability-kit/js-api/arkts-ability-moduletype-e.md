@@ -26,8 +26,7 @@ Main module of and entry to the application, providing the basic application fun
 FEATURE = 2
 ```
 
-Dynamic feature module of the application, extending the application functionality. This type of HAP can be
-installed based on user needs and device types.
+Dynamic feature module of the application, extending the application functionality. This type of HAP can be installed based on user needs and device types.
 
 **Since:** 9
 

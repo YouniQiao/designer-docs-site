@@ -12,8 +12,7 @@ import { restrictions } from '@kit.MDMKit';
 function setPrinterDisabled(admin: Want, disabled: boolean, callback: AsyncCallback<void>): void
 ```
 
-Enables or disables the printing capability of the device. This API uses an asynchronous callback to return the
-result.
+Enables or disables the printing capability of the device. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 

@@ -1,41 +1,6 @@
 # Panel
 
-Panel是输入法面板对象，提供面板页面加载、显示/隐藏、尺寸调整、位置移动、模式切换等功能。Panel实例通过InputMethodAbility的
-[createPanel](arkts-ime-inputmethodability-i.md#createpanel-1)
-接口获取，使用完毕后需调用
-[destroyPanel](arkts-ime-inputmethodability-i.md#destroypanel-1)
-销毁以释放资源。createPanel与destroyPanel必须配对调用。
-**核心功能概述：**
-
-- **页面加载**：通过
-[setUiContent](arkts-ime-panel-i.md#setuicontent-1)为面板加载键盘页面内容，
-支持加载普通页面和与LocalStorage关联的页面。
-- **显示与隐藏**：通过[show](arkts-ime-panel-i.md#show-1)显示面板，通过
-[hide](arkts-ime-panel-i.md#hide-1)隐藏面板。面板的显示/隐藏也可通过订阅on('show')/on('hide')事件
-监听状态变化。
-- **尺寸与位置调整**：通过
-[resize](arkts-ime-panel-i.md#resize-1)调整面板尺寸，通过
-[moveTo](arkts-ime-panel-i.md#moveto-1)移动面板位置，通过
-[startMoving](arkts-ime-panel-i.md#startmoving-1)拖拽移动面板，通过
-[adjustPanelRect](arkts-ime-panel-i.md#adjustpanelrect-1)/
-[updatePanelRect](arkts-ime-panel-i.md#updatepanelrect-1)/
-[updateRegion](arkts-ime-panel-i.md#updateregion-1)调整面板区域。
-- **模式设置**：通过[changeFlag](arkts-ime-panel-i.md#changeflag-1)切换面板固定态/浮动态，通过
-[setPrivacyMode](arkts-ime-panel-i.md#setprivacymode-1)设置隐私模式，通过
-[setImmersiveMode](arkts-ime-panel-i.md#setimmersivemode-1)/
-[getImmersiveMode](arkts-ime-panel-i.md#getimmersivemode-1)设置/获取沉浸模式。
-- **事件监听**：通过on('show')/on('hide')/on('sizeChange')监听面板状态变化事件。
-**面板生命周期：**
-
-1. 在InputMethodAbility的[createPanel](arkts-ime-inputmethodability-i.md#createpanel-1)中创建Panel实例并指定面板类型和标志位。
-2. 调用[setUiContent](arkts-ime-panel-i.md#setuicontent-1)加载键盘页面内容。
-3. 调用[show](arkts-ime-panel-i.md#show-1)显示面板，用户可交互。
-4. 根据需要调用resize、moveTo、changeFlag等接口动态调整面板。
-5. 使用完毕后调用[destroyPanel](arkts-ime-inputmethodability-i.md#destroypanel-1)销毁面板，释放资源。
-
-下列API均需使用
-[createPanel](arkts-ime-inputmethodability-i.md#createpanel-1)
-获取到Panel实例后，通过实例调用。
+Panel是输入法面板对象，提供面板页面加载、显示/隐藏、尺寸调整、位置移动、模式切换等功能。Panel实例通过InputMethodAbility的 [createPanel](arkts-ime-inputmethodability-i.md#createpanel-1) 接口获取，使用完毕后需调用 [destroyPanel](arkts-ime-inputmethodability-i.md#destroypanel-1) 销毁以释放资源。createPanel与destroyPanel必须配对调用。 **核心功能概述：** - **页面加载**：通过 [setUiContent](arkts-ime-panel-i.md#setuicontent-1)为面板加载键盘页面内容， 支持加载普通页面和与LocalStorage关联的页面。 - **显示与隐藏**：通过[show](arkts-ime-panel-i.md#show-1)显示面板，通过 [hide](arkts-ime-panel-i.md#hide-1)隐藏面板。面板的显示/隐藏也可通过订阅on('show')/on('hide')事件 监听状态变化。 - **尺寸与位置调整**：通过 [resize](arkts-ime-panel-i.md#resize-1)调整面板尺寸，通过 [moveTo](arkts-ime-panel-i.md#moveto-1)移动面板位置，通过 [startMoving](arkts-ime-panel-i.md#startmoving-1)拖拽移动面板，通过 [adjustPanelRect](arkts-ime-panel-i.md#adjustpanelrect-1)/ [updatePanelRect](arkts-ime-panel-i.md#updatepanelrect-1)/ [updateRegion](arkts-ime-panel-i.md#updateregion-1)调整面板区域。 - **模式设置**：通过[changeFlag](arkts-ime-panel-i.md#changeflag-1)切换面板固定态/浮动态，通过 [setPrivacyMode](arkts-ime-panel-i.md#setprivacymode-1)设置隐私模式，通过 [setImmersiveMode](arkts-ime-panel-i.md#setimmersivemode-1)/ [getImmersiveMode](arkts-ime-panel-i.md#getimmersivemode-1)设置/获取沉浸模式。 - **事件监听**：通过on('show')/on('hide')/on('sizeChange')监听面板状态变化事件。 **面板生命周期：** 1. 在InputMethodAbility的[createPanel](arkts-ime-inputmethodability-i.md#createpanel-1)中创建Panel实例并指定面板类型和标志位。 2. 调用[setUiContent](arkts-ime-panel-i.md#setuicontent-1)加载键盘页面内容。 3. 调用[show](arkts-ime-panel-i.md#show-1)显示面板，用户可交互。 4. 根据需要调用resize、moveTo、changeFlag等接口动态调整面板。 5. 使用完毕后调用[destroyPanel](arkts-ime-inputmethodability-i.md#destroypanel-1)销毁面板，释放资源。 下列API均需使用 [createPanel](arkts-ime-inputmethodability-i.md#createpanel-1) 获取到Panel实例后，通过实例调用。
 
 **起始版本：** 10
 
@@ -167,8 +132,7 @@ panel.adjustPanelRect(panelFlag, panelRect);
 changeFlag(flag: PanelFlag): void
 ```
 
-将输入法应用的面板状态改变为其他[PanelFlag](arkts-ime-panelflag-e.md)形态，仅对
-[SOFT_KEYBOARD](arkts-ime-paneltype-e.md)生效。
+将输入法应用的面板状态改变为其他[PanelFlag](arkts-ime-panelflag-e.md)形态，仅对 [SOFT_KEYBOARD](arkts-ime-paneltype-e.md)生效。
 
 **起始版本：** 10
 
@@ -752,19 +716,7 @@ panel.resize(500, 1000).then(() => {
 setImmersiveEffect(effect: ImmersiveEffect): void
 ```
 
-设置输入法应用的沉浸效果。
-
-- 只有在[启用沉浸式模式](arkts-ime-panel-i.md#setimmersivemode-1)时，才能使用渐变模式和流光模式。
-- 只有在启用渐变模式时，才能使用流光模式。
-- 未启用渐变模式时，渐变高度必须为0px。
-- 只有系统应用才能设置流光模式。
-- 必须先调用以下任一接口，才能调用当前接口：
-- [adjustPanelRect](arkts-ime-panel-i.md#adjustpanelrect-1)(支持API
-version 12)
-- [adjustPanelRect](arkts-ime-panel-i.md#adjustpanelrect-2)(支持
-API version 15)
-- [resize](arkts-ime-panel-i.md#resize-1)(支持API
-version 10)
+设置输入法应用的沉浸效果。 - 只有在[启用沉浸式模式](arkts-ime-panel-i.md#setimmersivemode-1)时，才能使用渐变模式和流光模式。 - 只有在启用渐变模式时，才能使用流光模式。 - 未启用渐变模式时，渐变高度必须为0px。 - 只有系统应用才能设置流光模式。 - 必须先调用以下任一接口，才能调用当前接口： - [adjustPanelRect](arkts-ime-panel-i.md#adjustpanelrect-1)(支持API version 12) - [adjustPanelRect](arkts-ime-panel-i.md#adjustpanelrect-2)(支持 API version 15) - [resize](arkts-ime-panel-i.md#resize-1)(支持API version 10)
 
 **起始版本：** 20
 

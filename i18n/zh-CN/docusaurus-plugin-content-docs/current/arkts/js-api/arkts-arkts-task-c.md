@@ -12,8 +12,7 @@
 addDependency(...tasks: Task[]): void
 ```
 
-为当前任务添加对其他任务的依赖。使用该方法前需先构造**Task**实例。该任务和被依赖的任务不能是任务组任务、串行队列任务、
-异步队列任务、已执行任务或周期任务。存在依赖关系的任务（依赖其他任务的任务或被依赖的任务）执行后不可再次执行。
+为当前任务添加对其他任务的依赖。使用该方法前需先构造**Task**实例。该任务和被依赖的任务不能是任务组任务、串行队列任务、 异步队列任务、已执行任务或周期任务。存在依赖关系的任务（依赖其他任务的任务或被依赖的任务）执行后不可再次执行。
 
 **起始版本：** 11
 
@@ -33,7 +32,7 @@ addDependency(...tasks: Task[]): void
 | --- | --- |
 | [10200026](../errorcode-utils.md#10200026-当前任务存在循环依赖) | There is a circular dependency. |
 | [10200052](../errorcode-utils.md#10200052-周期性任务不能具有依赖项) | The periodic task cannot have a dependency.<br>**适用版本：** 12+ |
-| [10200056](../errorcode-utils.md#10200056-异步队列任务不能具有依赖项) | The task has been executed by the AsyncRunner.<br>**适用版本：** 18+ |
+| [10200056](../errorcode-utils.md#10200056-任务已被asyncrunner执行) | The task has been executed by the AsyncRunner.<br>**适用版本：** 18+ |
 
 **示例：**
 
@@ -282,8 +281,7 @@ taskpoolCancel();
 onEnqueued(callback: CallbackFunction): void
 ```
 
-注册回调函数，任务入队时将调用该函数。
-该注册需在任务执行前完成，否则会抛出异常。
+注册回调函数，任务入队时将调用该函数。 该注册需在任务执行前完成，否则会抛出异常。
 
 **起始版本：** 12
 
@@ -301,7 +299,7 @@ onEnqueued(callback: CallbackFunction): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [10200034](../errorcode-utils.md#10200034-监听任务未注册回调函数) | The executed task does not support the registration of listeners. |
+| [10200034](../errorcode-utils.md#10200034-已执行的任务不支持注册监听器) | The executed task does not support the registration of listeners. |
 
 **示例：**
 
@@ -333,8 +331,7 @@ taskpool.execute(task).then(() => {
 onExecutionFailed(callback: CallbackFunctionWithError): void
 ```
 
-注册一个回调函数，并在任务执行失败时调用它（周期任务不支持）。
-该注册需在任务执行前完成，否则会抛出异常。
+注册一个回调函数，并在任务执行失败时调用它（周期任务不支持）。 该注册需在任务执行前完成，否则会抛出异常。
 
 **起始版本：** 12
 
@@ -352,7 +349,7 @@ onExecutionFailed(callback: CallbackFunctionWithError): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [10200034](../errorcode-utils.md#10200034-监听任务未注册回调函数) | The executed task does not support the registration of listeners. |
+| [10200034](../errorcode-utils.md#10200034-已执行的任务不支持注册监听器) | The executed task does not support the registration of listeners. |
 
 **示例：**
 
@@ -367,19 +364,17 @@ function hashMapFunc(args: number) {
   while ((Date.now() - t) < 100) {
     continue;
   }
-  let hashMap1: HashMap<string, number> = new HashMap();
-  hashMap1.set('a', args);
-  return hashMap1;
+  return () => {};
 }
 
 let task2 = new taskpool.Task(hashMapFunc, 1);
 task2.onExecutionFailed((e: Error) => {
-  console.info("taskpool: onExecutionFailed error is " + e);
+  console.error("taskpool: onExecutionFailed error is " + e.message);
 })
 taskpool.execute(task2).then(() => {
   console.info("taskpool: execute task success");
 }).catch((e:BusinessError) => {
-  console.error(`taskpool: error code: ${e.code}, error info: ${e.message}`);
+  console.error(`taskpool: error code: ${e.code}, error message: ${e.message}`);
 })
 
 ```
@@ -390,8 +385,7 @@ taskpool.execute(task2).then(() => {
 onExecutionSucceeded(callback: CallbackFunction): void
 ```
 
-注册一个回调函数，并在任务执行成功时调用它。
-该注册需在任务执行前完成，否则会抛出异常。
+注册一个回调函数，并在任务执行成功时调用它。 该注册需在任务执行前完成，否则会抛出异常。
 
 **起始版本：** 12
 
@@ -409,7 +403,7 @@ onExecutionSucceeded(callback: CallbackFunction): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [10200034](../errorcode-utils.md#10200034-监听任务未注册回调函数) | The executed task does not support the registration of listeners. |
+| [10200034](../errorcode-utils.md#10200034-已执行的任务不支持注册监听器) | The executed task does not support the registration of listeners. |
 
 **示例：**
 
@@ -441,9 +435,7 @@ taskpool.execute(task).then(() => {
 onReceiveData(callback?: Function): void
 ```
 
-为任务注册回调函数，接收并处理任务池工作线程的数据。使用此方法前，需构造Task实例。
-说明：
-不支持为同一任务定义多种回调函数。如果多次赋值，只有最后一次赋值的回调函数会生效。
+为任务注册回调函数，接收并处理任务池工作线程的数据。使用此方法前，需构造Task实例。 说明： 不支持为同一任务定义多种回调函数。如果多次赋值，只有最后一次赋值的回调函数会生效。
 
 **起始版本：** 11
 
@@ -461,7 +453,7 @@ onReceiveData(callback?: Function): void
 
 ```TypeScript
 @Concurrent
-function ConcurrentFunc(num: number): number {
+function concurrentFunc(num: number): number {
   let res: number = num * 10;
   taskpool.Task.sendData(res);
   return num;
@@ -473,11 +465,11 @@ function printLog(data: number): void {
 
 async function testFunc(): Promise<void> {
   try {
-    let task: taskpool.Task = new taskpool.Task(ConcurrentFunc, 1);
+    let task: taskpool.Task = new taskpool.Task(concurrentFunc, 1);
     task.onReceiveData(printLog);
     await taskpool.execute(task);
   } catch (e) {
-    console.error(`taskpool: error code: ${e.code}, info: ${e.message}`);
+    console.error(`taskpool: error code: ${e.code}, message: ${e.message}`);
   }
 }
 
@@ -491,8 +483,7 @@ testFunc();
 onStartExecution(callback: CallbackFunction): void
 ```
 
-注册回调函数，任务执行前将调用该函数。
-该注册需在任务执行前完成，否则会抛出异常。
+注册回调函数，任务执行前将调用该函数。 该注册需在任务执行前完成，否则会抛出异常。
 
 **起始版本：** 12
 
@@ -510,7 +501,7 @@ onStartExecution(callback: CallbackFunction): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [10200034](../errorcode-utils.md#10200034-监听任务未注册回调函数) | The executed task does not support the registration of listeners. |
+| [10200034](../errorcode-utils.md#10200034-已执行的任务不支持注册监听器) | The executed task does not support the registration of listeners. |
 
 **示例：**
 
@@ -562,7 +553,7 @@ removeDependency(...tasks: Task[]): void
 | --- | --- |
 | [10200027](../errorcode-utils.md#10200027-依赖关系不存在) | The dependency does not exist. |
 | [10200052](../errorcode-utils.md#10200052-周期性任务不能具有依赖项) | The periodic task cannot have a dependency.<br>**适用版本：** 12+ |
-| [10200056](../errorcode-utils.md#10200056-异步队列任务不能具有依赖项) | The task has been executed by the AsyncRunner.<br>**适用版本：** 18+ |
+| [10200056](../errorcode-utils.md#10200056-任务已被asyncrunner执行) | The task has been executed by the AsyncRunner.<br>**适用版本：** 18+ |
 
 **示例：**
 
@@ -608,18 +599,7 @@ taskpool.execute(task3).then(() => {
 static sendData(...args: Object[]): void
 ```
 
-任务执行过程中向宿主线程发送消息并触发已注册的回调函数。使用此方法前需构造**Task**对象。
-
-> **说明**
->
-> - 该接口应在taskpool的线程中调用。
->
-> - 避免在回调函数中调用该方法，否则可能导致消息无法传递到宿主线程。
->
-> - 避免在异步函数中调用该方法，否则可能导致消息无法传递到宿主线程。如果在异步函数中使用，
-> 则需要使用**await**来确保该异步函数在任务中同步执行完成。
->
-> - 调用该接口时，请确保处理数据的回调函数已在宿主线程注册。
+任务执行过程中向宿主线程发送消息并触发已注册的回调函数。使用此方法前需构造**Task**对象。 > **说明** > > - 该接口应在taskpool的线程中调用。 > > - 避免在回调函数中调用该方法，否则可能导致消息无法传递到宿主线程。 > > - 避免在异步函数中调用该方法，否则可能导致消息无法传递到宿主线程。如果在异步函数中使用， > 则需要使用**await**来确保该异步函数在任务中同步执行完成。 > > - 调用该接口时，请确保处理数据的回调函数已在宿主线程注册。
 
 **起始版本：** 11
 
@@ -662,7 +642,7 @@ async function taskpoolTest(): Promise<void> {
     task.onReceiveData(printLog);
     await taskpool.execute(task);
   } catch (e) {
-    console.error(`taskpool: error code: ${e.code}, info: ${e.message}`);
+    console.error(`taskpool: error code: ${e.code}, message: ${e.message}`);
   }
 }
 
@@ -707,12 +687,7 @@ taskpoolTest();
 setCloneList(cloneList: Object[] | ArrayBuffer[]): void
 ```
 
-设置任务的拷贝列表。在使用该方法前，需先构造**Task**对象。
-
-> **说明**
->
-> 该接口需搭配
-> [@Sendable装饰器](../../../../arkts-utils/arkts-sendable.md#sendable装饰器)使用，否则会抛异常。建议开发者使用该装饰器以避免异常。
+设置任务的拷贝列表。在使用该方法前，需先构造**Task**对象。 > **说明** > > 该接口需搭配 > [@Sendable装饰器](../../../../arkts-utils/arkts-sendable.md#sendable装饰器)使用，否则会抛异常。建议开发者使用该装饰器以避免异常。
 
 **起始版本：** 11
 
@@ -869,12 +844,7 @@ struct Index {
 setTransferList(transfer?: ArrayBuffer[]): void
 ```
 
-设置任务的传输列表。使用该方法前需要先构造**Task**。不调用该接口，则传给任务的数据中的ArrayBuffer默认transfer转移。
-
-> **说明**
->
-> 此接口可以设置任务池中ArrayBuffer的transfer列表，transfer列表中的ArrayBuffer对象在传输时不会复制buffer内容到工作线程，
-> 而是转移buffer控制权至工作线程，传输后当前的ArrayBuffer失效。若ArrayBuffer为空，则不会transfer转移。
+设置任务的传输列表。使用该方法前需要先构造**Task**。不调用该接口，则传给任务的数据中的ArrayBuffer默认transfer转移。 > **说明** > > 此接口可以设置任务池中ArrayBuffer的transfer列表，transfer列表中的ArrayBuffer对象在传输时不会复制buffer内容到工作线程， > 而是转移buffer控制权至工作线程，传输后当前的ArrayBuffer失效。若ArrayBuffer为空，则不会transfer转移。
 
 **起始版本：** 10
 
@@ -936,8 +906,7 @@ console.info("testTransfer view3 byteLength: " + view1.byteLength);
 arguments?: Object[]
 ```
 
-创建任务传入函数所需的参数，支持的参数类型请参考[序列化支持类型](../../../../reference/apis-arkts/js-apis-taskpool.md#序列化支持类型)。<br>
-从API version 11开始，该接口支持在原子化服务中使用。
+创建任务传入函数所需的参数，支持的参数类型请参考[序列化支持类型](../../../../reference/apis-arkts/js-apis-taskpool.md#序列化支持类型)。<br> 从API version 11开始，该接口支持在原子化服务中使用。
 
 **类型：** Object[]
 
@@ -953,8 +922,7 @@ arguments?: Object[]
 cpuDuration: number
 ```
 
-执行任务CPU耗时。单位为ms。不建议修改此值。<br>
-从API version 11开始，该接口支持在原子化服务中使用。
+执行任务CPU耗时。单位为ms。不建议修改此值。<br> 从API version 11开始，该接口支持在原子化服务中使用。
 
 **类型：** number
 
@@ -972,8 +940,7 @@ cpuDuration: number
 function: Function
 ```
 
-创建任务时需要传入的函数，支持的函数返回值类型请参考[序列化支持类型](../../../../reference/apis-arkts/js-apis-taskpool.md#序列化支持类型)。<br>
-从API version 11开始，该接口支持在原子化服务中使用。
+创建任务时需要传入的函数，支持的函数返回值类型请参考[序列化支持类型](../../../../reference/apis-arkts/js-apis-taskpool.md#序列化支持类型)。<br> 从API version 11开始，该接口支持在原子化服务中使用。
 
 **类型：** Function
 
@@ -989,8 +956,7 @@ function: Function
 ioDuration: number
 ```
 
-执行任务异步IO耗时。单位为ms。不建议修改此值。<br>
-从API version 11开始，该接口支持在原子化服务中使用。
+执行任务异步IO耗时。单位为ms。不建议修改此值。<br> 从API version 11开始，该接口支持在原子化服务中使用。
 
 **类型：** number
 
@@ -1008,8 +974,7 @@ ioDuration: number
 name: string
 ```
 
-创建任务时指定的任务名称。不建议修改此值。<br>
-从API version 11开始，该接口支持在原子化服务中使用。
+创建任务时指定的任务名称。不建议修改此值。<br> 从API version 11开始，该接口支持在原子化服务中使用。
 
 **类型：** string
 
@@ -1025,8 +990,7 @@ name: string
 taskId: number
 ```
 
-任务ID。任务的标识符，系统默认提供全局唯一值，不建议修改此值。<br>
-从API version 18开始，该接口支持在原子化服务中使用。
+任务ID。任务的标识符，系统默认提供全局唯一值，不建议修改此值。<br> 从API version 18开始，该接口支持在原子化服务中使用。
 
 **类型：** number
 
@@ -1044,8 +1008,7 @@ taskId: number
 totalDuration: number
 ```
 
-执行任务总耗时。单位为ms。不建议修改此值。<br>
-从API version 11开始，该接口支持在原子化服务中使用。
+执行任务总耗时。单位为ms。不建议修改此值。<br> 从API version 11开始，该接口支持在原子化服务中使用。
 
 **类型：** number
 

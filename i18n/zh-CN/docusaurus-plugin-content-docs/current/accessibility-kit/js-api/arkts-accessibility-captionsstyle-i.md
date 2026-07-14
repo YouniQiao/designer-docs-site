@@ -12,13 +12,7 @@
 backgroundColor: number | string
 ```
 
-描述字幕背景颜色。
-
-number：HEX 格式颜色，支持 rgb 或 argb。
-
-string：支持 '#rrggbb', '#rrggbbaa', '#rgb', '#rgba' 格式。
-
-例：不透明红色，number: 0xffff0000，string: '#ff0000', '#ff0000ff', '#f00', '#f00f'。
+描述字幕背景颜色。 number：HEX 格式颜色，支持 rgb 或 argb。 string：支持 '#rrggbb', '#rrggbbaa', '#rgb', '#rgba' 格式。 例：不透明红色，number: 0xffff0000，string: '#ff0000', '#ff0000ff', '#f00', '#f00f'。
 
 **类型：** number | string
 
@@ -36,13 +30,7 @@ string：支持 '#rrggbb', '#rrggbbaa', '#rgb', '#rgba' 格式。
 fontColor: number | string
 ```
 
-描述字幕字体颜色。
-
-number：HEX 格式颜色，支持 rgb 或 argb。
-
-string：支持 '#rrggbb', '#rrggbbaa', '#rgb', '#rgba' 格式。
-
-例：不透明红色，number: 0xffff0000，string: '#ff0000', '#ff0000ff', '#f00', '#f00f'。
+描述字幕字体颜色。 number：HEX 格式颜色，支持 rgb 或 argb。 string：支持 '#rrggbb', '#rrggbbaa', '#rgb', '#rgba' 格式。 例：不透明红色，number: 0xffff0000，string: '#ff0000', '#ff0000ff', '#f00', '#f00f'。
 
 **类型：** number | string
 
@@ -114,13 +102,7 @@ fontScale: number
 windowColor: number | string
 ```
 
-描述字幕窗口颜色。
-
-number：HEX 格式颜色，支持 rgb 或 argb。
-
-string：支持 '#rrggbb', '#rrggbbaa', '#rgb', '#rgba' 格式。
-
-例：不透明红色，number: 0xffff0000，string: '#ff0000', '#ff0000ff', '#f00', '#f00f'。
+描述字幕窗口颜色。 number：HEX 格式颜色，支持 rgb 或 argb。 string：支持 '#rrggbb', '#rrggbbaa', '#rgb', '#rgba' 格式。 例：不透明红色，number: 0xffff0000，string: '#ff0000', '#ff0000ff', '#f00', '#f00f'。
 
 **类型：** number | string
 

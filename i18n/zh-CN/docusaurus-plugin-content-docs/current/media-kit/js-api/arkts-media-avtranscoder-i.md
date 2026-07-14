@@ -1,13 +1,6 @@
 # AVTranscoder
 
-视频转码管理类，用于视频转码。在调用AVTranscoder的方法前，需要先通过
-[createAVTranscoder()](arkts-media-createavtranscoder-f.md#createavtranscoder-1)构建一个AVTranscoder实例。
-
-视频转码demo可参考：[视频转码开发指导](../../../../media/media/using-avtranscoder-for-transcodering.md)
-
-> **说明：**
->
-> - 本Interface首批接口从API version 12开始支持。
+视频转码管理类，用于视频转码。在调用AVTranscoder的方法前，需要先通过 [createAVTranscoder()](arkts-media-createavtranscoder-f.md#createavtranscoder-1)构建一个AVTranscoder实例。 视频转码demo可参考：[视频转码开发指导](../../../../media/media/using-avtranscoder-for-transcodering.md) > **说明：** > > - 本Interface首批接口从API version 12开始支持。
 
 **起始版本：** 12
 
@@ -19,9 +12,7 @@
 addWatermark(watermark: image.PixelMap, config: WatermarkConfiguration): Promise<number>
 ```
 
-add a watermark for the AVTranscoder. This API uses a promise to return the result.
-App can add up to 5 watermarks.
-This API can be called only before the prepared state.
+add a watermark for the AVTranscoder. This API uses a promise to return the result. App can add up to 5 watermarks. This API can be called only before the prepared state.
 
 **起始版本：** 26.0.0
 
@@ -57,10 +48,7 @@ This API can be called only before the prepared state.
 cancel(): Promise<void>
 ```
 
-取消视频转码。使用Promise异步回调。
-
-需要在[prepare()](media.AVTranscoder.prepare)、[start()](media.AVTranscoder.start)、
-[pause()](media.AVTranscoder.pause)或[resume()](media.AVTranscoder.resume)事件成功触发后，才能调用cancel方法。
+取消视频转码。使用Promise异步回调。 需要在[prepare()](media.AVTranscoder.prepare)、[start()](media.AVTranscoder.start)、 [pause()](media.AVTranscoder.pause)或[resume()](media.AVTranscoder.resume)事件成功触发后，才能调用cancel方法。
 
 **起始版本：** 12
 
@@ -151,9 +139,7 @@ off(type:'progressUpdate', callback?: Callback<number>):void
 on(type:'complete', callback: Callback<void>):void
 ```
 
-注册转码完成事件，并通过注册的回调方法通知开发者。开发者只能注册一个进度更新事件的回调方法，当开发者重复注册时，以最后一次注册的回调接口为准。使用callback异步回调。
-
-当AVTranscoder上报complete事件时，当前转码操作已完成，开发者需要通过[release()](media.AVTranscoder.release)退出转码操作。
+注册转码完成事件，并通过注册的回调方法通知开发者。开发者只能注册一个进度更新事件的回调方法，当开发者重复注册时，以最后一次注册的回调接口为准。使用callback异步回调。 当AVTranscoder上报complete事件时，当前转码操作已完成，开发者需要通过[release()](media.AVTranscoder.release)退出转码操作。
 
 **起始版本：** 12
 
@@ -174,10 +160,7 @@ on(type:'complete', callback: Callback<void>):void
 on(type:'error', callback: ErrorCallback):void
 ```
 
-注册AVTranscoder的错误事件，该事件仅用于错误提示。如果AVTranscoder上报error事件，开发者需要通过[release()](media.AVTranscoder.release)退出转码操作
-。使用callback异步回调。
-
-开发者只能订阅一个错误事件的回调方法，当开发者重复订阅时，以最后一次订阅的回调接口为准。
+注册AVTranscoder的错误事件，该事件仅用于错误提示。如果AVTranscoder上报error事件，开发者需要通过[release()](media.AVTranscoder.release)退出转码操作 。使用callback异步回调。 开发者只能订阅一个错误事件的回调方法，当开发者重复订阅时，以最后一次订阅的回调接口为准。
 
 **起始版本：** 12
 
@@ -232,10 +215,7 @@ on(type:'progressUpdate', callback: Callback<number>):void
 pause(): Promise<void>
 ```
 
-暂停视频转码。使用Promise异步回调。
-
-需要[start()](media.AVTranscoder.start)事件成功触发后，才能调用pause方法，可以通过调用[resume()](media.AVTranscoder.resume)接
-口来恢复转码。
+暂停视频转码。使用Promise异步回调。 需要[start()](media.AVTranscoder.start)事件成功触发后，才能调用pause方法，可以通过调用[resume()](media.AVTranscoder.resume)接 口来恢复转码。
 
 **起始版本：** 12
 
@@ -299,9 +279,7 @@ prepare(config: AVTranscoderConfig): Promise<void>
 release(): Promise<void>
 ```
 
-释放视频转码资源。使用Promise异步回调。
-
-释放视频转码资源之后，该AVTranscoder实例不能再进行任何操作。
+释放视频转码资源。使用Promise异步回调。 释放视频转码资源之后，该AVTranscoder实例不能再进行任何操作。
 
 **起始版本：** 12
 
@@ -328,9 +306,7 @@ release(): Promise<void>
 resume(): Promise<void>
 ```
 
-恢复视频转码。使用Promise异步回调。
-
-需要在[pause()](media.AVTranscoder.pause)事件成功触发后，才能调用resume方法。
+恢复视频转码。使用Promise异步回调。 需要在[pause()](media.AVTranscoder.pause)事件成功触发后，才能调用resume方法。
 
 **起始版本：** 12
 
@@ -358,9 +334,7 @@ resume(): Promise<void>
 start(): Promise<void>
 ```
 
-开始视频转码。使用Promise异步回调。
-
-需要[prepare()](media.AVTranscoder.prepare)事件成功触发后，才能调用start方法。
+开始视频转码。使用Promise异步回调。 需要[prepare()](media.AVTranscoder.prepare)事件成功触发后，才能调用start方法。
 
 **起始版本：** 12
 
@@ -388,13 +362,7 @@ start(): Promise<void>
 fdDst: number
 ```
 
-目标媒体文件描述，通过该属性设置数据输出。在创建AVTranscoder实例后，必须设置fdSrc和fdDst属性。
-
-**说明：**
-
-- 将资源句柄（fd）传递给AVTranscoder实例之后，请不要通过该资源句柄做其他读写操作，包括但不限于将同一个资源句柄传递给多个AVPlayer/AVMetadataExtractor/AVImageGenerator
-/AVTranscoder。
-- 同一时间通过同一个资源句柄读写文件时存在竞争关系，将导致视频转码数据获取异常。
+目标媒体文件描述，通过该属性设置数据输出。在创建AVTranscoder实例后，必须设置fdSrc和fdDst属性。 **说明：** - 将资源句柄（fd）传递给AVTranscoder实例之后，请不要通过该资源句柄做其他读写操作，包括但不限于将同一个资源句柄传递给多个AVPlayer/AVMetadataExtractor/AVImageGenerator /AVTranscoder。 - 同一时间通过同一个资源句柄读写文件时存在竞争关系，将导致视频转码数据获取异常。
 
 **类型：** number
 
@@ -410,17 +378,7 @@ fdDst: number
 fdSrc: AVFileDescriptor
 ```
 
-源媒体文件描述，通过该属性设置数据源。
-
-**使用示例**：
-
-假设一个连续存储的媒体文件，地址偏移：0，字节长度：100。其文件描述为AVFileDescriptor{ fd = 资源句柄; offset = 0; length = 100; }。
-
-**说明：**
-
-- 将资源句柄（fd）传递给AVTranscoder实例之后，请不要通过该资源句柄做其他读写操作，包括但不限于将同一个资源句柄传递给多个AVPlayer/AVMetadataExtractor/AVImageGenerator
-/AVTranscoder。
-- 同一时间通过同一个资源句柄读写文件时存在竞争关系，将导致视频转码数据获取异常。
+源媒体文件描述，通过该属性设置数据源。 **使用示例**： 假设一个连续存储的媒体文件，地址偏移：0，字节长度：100。其文件描述为AVFileDescriptor{ fd = 资源句柄; offset = 0; length = 100; }。 **说明：** - 将资源句柄（fd）传递给AVTranscoder实例之后，请不要通过该资源句柄做其他读写操作，包括但不限于将同一个资源句柄传递给多个AVPlayer/AVMetadataExtractor/AVImageGenerator /AVTranscoder。 - 同一时间通过同一个资源句柄读写文件时存在竞争关系，将导致视频转码数据获取异常。
 
 **类型：** AVFileDescriptor
 

@@ -20,9 +20,7 @@ import { uiEffect } from '@kit.ArkGraphics2D';
 intensity: number
 ```
 
-Defines distortion intensity for heat distortion effect.
-Value range [0, 1], and values outside the range will be clamped.
-0 means no distortion, and 1 represents the maximum distortion level.
+Defines distortion intensity for heat distortion effect. Value range [0, 1], and values outside the range will be clamped. 0 means no distortion, and 1 represents the maximum distortion level.
 
 **Type:** number
 
@@ -40,9 +38,7 @@ Value range [0, 1], and values outside the range will be clamped.
 noiseScale: number
 ```
 
-Defines noise scale for heat distortion effect, controls the fineness of the noise texture.
-Value range [0.1, 5.0], and values outside the range will be clamped.
-The larger the value, the finer the noise texture.
+Defines noise scale for heat distortion effect, controls the fineness of the noise texture. Value range [0.1, 5.0], and values outside the range will be clamped. The larger the value, the finer the noise texture.
 
 **Type:** number
 
@@ -60,9 +56,7 @@ The larger the value, the finer the noise texture.
 progress: number
 ```
 
-Defines animation progress for heat distortion effect.
-Value range [0, 1], and values outside the range will be clamped.
-0 corresponds to the start of the animation, and 1 corresponds to the end of the animation.
+Defines animation progress for heat distortion effect. Value range [0, 1], and values outside the range will be clamped. 0 corresponds to the start of the animation, and 1 corresponds to the end of the animation.
 
 **Type:** number
 
@@ -80,9 +74,7 @@ Value range [0, 1], and values outside the range will be clamped.
 riseWeight: number
 ```
 
-Defines rise weight for heat distortion effect, controls the rising speed of bubbles.
-Value range [0, 1], and values outside the range will be clamped.
-The larger the value, the more obvious the upward movement.
+Defines rise weight for heat distortion effect, controls the rising speed of bubbles. Value range [0, 1], and values outside the range will be clamped. The larger the value, the more obvious the upward movement.
 
 **Type:** number
 

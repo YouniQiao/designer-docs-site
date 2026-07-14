@@ -62,9 +62,7 @@ deviceId: number
 intentionCode: IntentionCode
 ```
 
-按键对应的意图。
-
-默认值：IntentionCode.INTENTION_UNKNOWN。
+按键对应的意图。 默认值：IntentionCode.INTENTION_UNKNOWN。
 
 **类型：** IntentionCode
 

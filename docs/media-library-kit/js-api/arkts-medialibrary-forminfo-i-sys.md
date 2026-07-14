@@ -36,8 +36,7 @@ Widget ID, which is provided when a widget is created in Gallery.
 uri: string
 ```
 
-URI of the image bound to the widget. When a widget is created, uri can be empty or the URI of an image.
-When a widget is removed, uri is not verified and can be empty.
+URI of the image bound to the widget. When a widget is created, **uri** can be empty or the URI of an image. When a widget is removed, **uri** is not verified and can be empty.
 
 **Type:** string
 

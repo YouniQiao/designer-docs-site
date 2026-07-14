@@ -30,9 +30,7 @@ imageAIOptions?: ImageAIOptions
 unit?: LengthMetricsUnit
 ```
 
-用于描述Canvas绘制时所采用的单位模式。
-<br>仅可在创建Canvas时设置，后续不可修改。
-<br>默认值：**LengthMetricsUnit.DEFAULT**
+用于描述Canvas绘制时所采用的单位模式。 <br>仅可在创建Canvas时设置，后续不可修改。 <br>默认值：**LengthMetricsUnit.DEFAULT**
 
 **类型：** LengthMetricsUnit
 

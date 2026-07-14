@@ -1,8 +1,6 @@
 # UiWindow
 
-The **UiWindow** class represents a window on the UI and provides APIs for obtaining window attributes, dragging a
-window, and adjusting the window size.
-All APIs provided in this class use a promise to return the result and must be invoked using **await**.
+The **UiWindow** class represents a window on the UI and provides APIs for obtaining window attributes, dragging a window, and adjusting the window size. All APIs provided in this class use a promise to return the result and must be invoked using **await**.
 
 **Since:** 9
 
@@ -433,8 +431,7 @@ async function demo() {
 maximize(): Promise<void>
 ```
 
-Maximizes a window. This API uses a promise to return the result. This API is applicable to windows that can be
-maximized.
+Maximizes a window. This API uses a promise to return the result. This API is applicable to windows that can be maximized.
 
 **Since:** 9
 
@@ -476,8 +473,7 @@ async function demo() {
 minimize(): Promise<void>
 ```
 
-Minimizes a window. This API uses a promise to return the result. This API is applicable to windows that can be
-minimized.
+Minimizes a window. This API uses a promise to return the result. This API is applicable to windows that can be minimized.
 
 **Since:** 9
 
@@ -519,8 +515,7 @@ async function demo() {
 moveTo(x: number, y: number): Promise<void>
 ```
 
-Moves a window to the target point. This API uses a promise to return the result. This API is applicable to
-moveable windows.
+Moves a window to the target point. This API uses a promise to return the result. This API is applicable to moveable windows.
 
 **Since:** 9
 
@@ -570,8 +565,7 @@ async function demo() {
 resize(wide: number, height: number, direction: ResizeDirection): Promise<void>
 ```
 
-Resizes a window based on the specified width, height, and direction. This API uses a promise to return the
-result. This API is applicable to resizable windows.
+Resizes a window based on the specified width, height, and direction. This API uses a promise to return the result. This API is applicable to resizable windows.
 
 **Since:** 9
 
@@ -650,8 +644,7 @@ async function demo() {
 split(): Promise<void>
 ```
 
-Switches to the split-screen mode. This API uses a promise to return the result. This API is applicable to
-windows that support screen splitting.
+Switches to the split-screen mode. This API uses a promise to return the result. This API is applicable to windows that support screen splitting.
 
 **Since:** 9
 

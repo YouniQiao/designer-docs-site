@@ -60,11 +60,7 @@ CLOSE_BUTTON = 2
 SLIDE_DOWN = 3
 ```
 
-下拉关闭。
-
-**说明：**
-
-该接口仅支持在[半模态转场](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)中使用。
+下拉关闭。 **说明：** 该接口仅支持在[半模态转场](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)中使用。
 
 **起始版本：** 12
 
@@ -80,9 +76,7 @@ SLIDE_DOWN = 3
 SLIDE = 4
 ```
 
-滑动交互，不是向下滑动。
-默认表示向右滑动，镜像操作后表示向左滑动。
-不支持选择向左或向右滑动。
+滑动交互，不是向下滑动。 默认表示向右滑动，镜像操作后表示向左滑动。 不支持选择向左或向右滑动。
 
 **起始版本：** 20
 

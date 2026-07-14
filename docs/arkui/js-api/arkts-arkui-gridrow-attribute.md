@@ -14,9 +14,7 @@ In addition to the [universal events](arkts-arkui-commonmethod-c.md), the follow
 alignItems(value: ItemAlign)
 ```
 
-Sets the alignment mode of the **GridCol** components along the vertical main axis of the **GridRow** component.
-The alignment mode of the **GridCol** component can also be set using **alignSelf(ItemAlign)**. If both of the
-preceding methods are used, the setting of **alignSelf(ItemAlign)** prevails.
+Sets the alignment mode of the **GridCol** components along the vertical main axis of the **GridRow** component. The alignment mode of the **GridCol** component can also be set using **alignSelf(ItemAlign)**. If both of the preceding methods are used, the setting of **alignSelf(ItemAlign)** prevails.
 
 **Since:** 10
 
@@ -40,13 +38,7 @@ preceding methods are used, the setting of **alignSelf(ItemAlign)** prevails.
 onBreakpointChange(callback: (breakpoints: string) => void)
 ```
 
-Triggered when the breakpoint changes.
-
-> **NOTE**
-> >
-> When [breakpointsreference](#breakpointsreference) is set to **BreakpointsReference.ComponentSize**, you are not
-> advised to dynamically change the [padding](arkts-arkui-commonmethod-c.md#padding-1) or [margin](arkts-arkui-commonmethod-c.md#margin-1)
-> attribute value of the **GridRow** component in the **onBreakpointChange** callback.
+Triggered when the breakpoint changes. > **NOTE** > > > When [breakpointsreference](#breakpointsreference) is set to **BreakpointsReference.ComponentSize**, you are not > advised to dynamically change the [padding](arkts-arkui-commonmethod-c.md#padding-1) or [margin](arkts-arkui-commonmethod-c.md#margin-1) > attribute value of the **GridRow** component in the **onBreakpointChange** callback.
 
 **Since:** 9
 

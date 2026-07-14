@@ -12,9 +12,7 @@ import { overlay } from '@kit.AbilityKit';
 function getTargetOverlayModuleInfos(targetModuleName: string, callback: AsyncCallback<Array<OverlayModuleInfo>>): void
 ```
 
-Obtains the OverlayModuleInfo associated with the specified target module. Modules with the overlay feature
-generally provide an overlay resource file for other modules (target module) on the device. This API uses an
-asynchronous callback to return the result.
+Obtains the OverlayModuleInfo associated with the specified target module. Modules with the overlay feature generally provide an overlay resource file for other modules (target module) on the device. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -67,9 +65,7 @@ try {
 function getTargetOverlayModuleInfos(targetModuleName: string): Promise<Array<OverlayModuleInfo>>
 ```
 
-Obtains the OverlayModuleInfo associated with the specified target module. Modules with the overlay feature
-generally provide an overlay resource file for other modules (target module) on the device. This API uses a promise
-to return the result.
+Obtains the OverlayModuleInfo associated with the specified target module. Modules with the overlay feature generally provide an overlay resource file for other modules (target module) on the device. This API uses a promise to return the result.
 
 **Since:** 10
 

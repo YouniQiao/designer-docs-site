@@ -50,12 +50,7 @@ Indicates whether enable window decor, only support dialog, The default value is
 displayId?: number
 ```
 
-Screen ID of the current window. If it is not set, the screen ID of the parent window is used by default.
-The value is a non-negative integer and must correspond to an existing screen.
-In scenarios involving extended screens or heterogeneous virtual screens, a global floating window can be
-displayed on a specified screen by setting the screen ID.
-For modal windows and system windows, this parameter takes no effect, and the parent window's
-screen ID is used by default.
+Screen ID of the current window. If it is not set, the screen ID of the parent window is used by default. The value is a non-negative integer and must correspond to an existing screen. In scenarios involving extended screens or heterogeneous virtual screens, a global floating window can be displayed on a specified screen by setting the screen ID. For modal windows and system windows, this parameter takes no effect, and the parent window's screen ID is used by default.
 
 **Type:** number
 

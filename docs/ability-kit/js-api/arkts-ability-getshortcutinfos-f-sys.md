@@ -12,14 +12,7 @@ import { BundleStatusCallback } from '@kit.AbilityKit';
 function getShortcutInfos(bundleName: string, callback: AsyncCallback<Array<ShortcutInfo>>): void
 ```
 
-Obtains an array of the shortcut information based on a given bundle name. This API uses an asynchronous callback
-to return the result.
-
-> **NOTE**
->
-> This API has been supported since API version 8 and deprecated since API version 9. You are advised to use
-> [getShortcutInfo](@ohos.bundle.launcherBundleManager:launcherBundleManager.getShortcutInfo(bundleName :string, callback: AsyncCallback<Array<ShortcutInfo>>))
-> instead.
+Obtains an array of the shortcut information based on a given bundle name. This API uses an asynchronous callback to return the result. > **NOTE** > > This API has been supported since API version 8 and deprecated since API version 9. You are advised to use > [getShortcutInfo](@ohos.bundle.launcherBundleManager:launcherBundleManager.getShortcutInfo(bundleName :string, callback: AsyncCallback<Array<ShortcutInfo>>)) > instead.
 
 **Since:** 8
 
@@ -47,14 +40,7 @@ to return the result.
 function getShortcutInfos(bundleName: string): Promise<Array<ShortcutInfo>>
 ```
 
-Obtains an array of the shortcut information based on a given bundle name. This API uses a promise to return the
-result.
-
-> **NOTE**
->
-> This API has been supported since API version 8 and deprecated since API version 9. You are advised to use
-> [getShortcutInfo](@ohos.bundle.launcherBundleManager:launcherBundleManager.getShortcutInfo(bundleName :string, callback: AsyncCallback<Array<ShortcutInfo>>))
-> instead.
+Obtains an array of the shortcut information based on a given bundle name. This API uses a promise to return the result. > **NOTE** > > This API has been supported since API version 8 and deprecated since API version 9. You are advised to use > [getShortcutInfo](@ohos.bundle.launcherBundleManager:launcherBundleManager.getShortcutInfo(bundleName :string, callback: AsyncCallback<Array<ShortcutInfo>>)) > instead.
 
 **Since:** 8
 

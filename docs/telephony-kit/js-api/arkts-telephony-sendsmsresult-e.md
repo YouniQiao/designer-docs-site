@@ -48,8 +48,7 @@ Indicates that sending the SMS fails because the modem is powered off.
 SEND_SMS_FAILURE_SERVICE_UNAVAILABLE = 3
 ```
 
-Indicates that sending the SMS message fails because the network is unavailable
-or does not support sending or reception of SMS messages.
+Indicates that sending the SMS message fails because the network is unavailable or does not support sending or reception of SMS messages.
 
 **Since:** 6
 

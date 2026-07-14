@@ -20,8 +20,7 @@ import { dlpSetDlpFeature } from '@kit.DataProtectionKit';
 isSuccess: boolean
 ```
 
-Whether the DLP setting is successful. The value **true** indicates that the setting is successful, and the
-value **false** indicates that the setting fails.
+Whether the DLP setting is successful. The value **true** indicates that the setting is successful, and the value **false** indicates that the setting fails.
 
 **Type:** boolean
 

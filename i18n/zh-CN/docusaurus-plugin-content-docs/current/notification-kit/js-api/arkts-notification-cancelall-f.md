@@ -12,7 +12,7 @@ import { notificationManager } from '@kit.NotificationKit';
 function cancelAll(callback: AsyncCallback<void>): void
 ```
 
-取消当前应用所有已发布的通知。使用callback异步回调。
+取消当前应用所有已发布的通知。使用callback异步回调。 取消后，当前应用的所有通知将从通知中心、状态栏等位置移除，用户不再可见。 适用于应用退出或用户手动清除全部通知的场景。
 
 **起始版本：** 9
 
@@ -57,7 +57,7 @@ notificationManager.cancelAll(cancelAllCallback);
 function cancelAll(): Promise<void>
 ```
 
-取消当前应用所有已发布的通知。使用Promise异步回调。
+取消当前应用所有已发布的通知。使用Promise异步回调。 取消后，当前应用的所有通知将从通知中心、状态栏等位置移除，用户不再可见。 适用于应用退出或用户手动清除全部通知的场景。
 
 **起始版本：** 9
 

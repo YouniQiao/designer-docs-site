@@ -1,7 +1,6 @@
 # CloudMediaAssetManager (System API)
 
-A class used for cloud media asset management. It is used to manage download tasks for media assets stored
-in the cloud and delete local data and files pertaining to these cloud-based assets.
+A class used for cloud media asset management. It is used to manage download tasks for media assets stored in the cloud and delete local data and files pertaining to these cloud-based assets.
 
 **Since:** 14
 
@@ -35,7 +34,7 @@ Cancels a task that downloads cloud media assets.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Returns void |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -43,7 +42,7 @@ Cancels a task that downloads cloud media assets.
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| 14000011 | Internal system error. It is recommended to retry and check the logs.<br>Possible causes: 1. Database corrupted; 2. The file system is abnormal; 3. The IPC request timed out. |
+| 14000011 | Internal system error. It is recommended to retry and check the logs.<br>Possible causes:<br>1. Database corrupted; 2<br>. The file system is abnormal;<br>3. The IPC request timed out. |
 
 **Example**
 
@@ -67,7 +66,7 @@ async function example(context: Context) {
 cancelDownloadSpecificCloudMedia(assetUris: string[] | null): Promise<void>
 ```
 
-Cancel download cloud assets.
+Cancels a batch download for the specified cloud media assets. This API uses a promise to return the result.
 
 **Since:** 21
 
@@ -81,13 +80,13 @@ Cancel download cloud assets.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| assetUris | string[] \| null | Yes | Asset uris which will cancel, null or empty array means cancel all |
+| assetUris | string[] \| null | Yes | Array of URIs pointing to the original-quality images and videos to becanceled.<br>If null, undefined, or an empty list is passed, it represents all existing individual download items. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Returns void |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -96,7 +95,7 @@ Cancel download cloud assets.
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
 | [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) | The scenario parameter verification fails. Possible causes:The assetUris array size is bigger than 500. |
-| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.Possible causes: 1. Database corrupted; 2. The file system is abnormal; 3. The IPC request timed out. |
+| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
 **Example**
 
@@ -134,21 +133,21 @@ Obtains a CloudMediaAssetManager instance.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| context | Context | Yes | Obtains a CloudMediaAssetManager instance. |
+| context | Context | Yes | Context of the ability instance. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| CloudMediaAssetManager | Returns cloud media asset manager instance |
+| CloudMediaAssetManager | CloudMediaAssetManager instance. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
-| 14000011 | Internal system error. It is recommended to retry and check the logs.<br>Possible causes: 1. Database corrupted; 2. The file system is abnormal; 3. The IPC request timed out.@static |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
+| 14000011 | Internal system error. It is recommended to retry and check the logs.<br>Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
 **Example**
 
@@ -186,7 +185,7 @@ Obtains the status of a task that downloads cloud media assets.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;CloudMediaAssetStatus&gt; | Returns cloud media asset status |
+| Promise&lt;CloudMediaAssetStatus&gt; | Promise used to return the task status. |
 
 **Error codes:**
 
@@ -194,7 +193,7 @@ Obtains the status of a task that downloads cloud media assets.
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| 14000011 | Internal system error. It is recommended to retry and check the logs.<br>Possible causes: 1. Database corrupted; 2. The file system is abnormal; 3. The IPC request timed out. |
+| 14000011 | Internal system error. It is recommended to retry and check the logs.<br>Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
 **Example**
 
@@ -223,7 +222,7 @@ async function example(context: Context) {
 offDownloadProgressChange(callback?: Callback<CloudAssetDownloadProgressInfo>): void
 ```
 
-Unregister callback of download cloud assets task.
+Unregisters a callback to monitor changes in the progress of a batch download for cloud media assets.
 
 **Since:** 21
 
@@ -237,7 +236,7 @@ Unregister callback of download cloud assets task.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Callback&lt;CloudAssetDownloadProgressInfo&gt; | No | event callback |
+| callback | Callback&lt;CloudAssetDownloadProgressInfo&gt; | No | Callback to unregister, which is registered by[onDownloadProgressChange](photoAccessHelper.CloudMediaAssetManager.on). If this parameter is leftempty, all progress-related callbacks are unregistered. |
 
 **Error codes:**
 
@@ -245,7 +244,7 @@ Unregister callback of download cloud assets task.
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.Possible causes: 1. Database corrupted; 2. The file system is abnormal; 3. The IPC request timed out. |
+| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
 **Example**
 
@@ -269,7 +268,7 @@ async function example(context: Context) {
 onDownloadProgressChange(callback: Callback<CloudAssetDownloadProgressInfo>): void
 ```
 
-Register callback of download cloud assets task.
+Registers a callback to monitor changes in the progress of a batch download for cloud media assets.
 
 **Since:** 21
 
@@ -283,7 +282,7 @@ Register callback of download cloud assets task.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Callback&lt;CloudAssetDownloadProgressInfo&gt; | Yes | event callback |
+| callback | Callback&lt;CloudAssetDownloadProgressInfo&gt; | Yes | Callback to register. The callback returnsprogress information of the batch download. |
 
 **Error codes:**
 
@@ -291,7 +290,7 @@ Register callback of download cloud assets task.
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.Possible causes: 1. Database corrupted; 2. The file system is abnormal; 3. The IPC request timed out. |
+| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
 **Example**
 
@@ -333,7 +332,7 @@ Suspends a task that downloads cloud media assets.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Returns void |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -341,7 +340,7 @@ Suspends a task that downloads cloud media assets.
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| 14000011 | Internal system error. It is recommended to retry and check the logs.<br>Possible causes: 1. Database corrupted; 2. The file system is abnormal; 3. The IPC request timed out. |
+| 14000011 | Internal system error. It is recommended to retry and check the logs.<br>Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
 **Example**
 
@@ -365,7 +364,7 @@ async function example(context: Context) {
 pauseDownloadSpecificCloudMedia(assetUris: string[] | null): Promise<void>
 ```
 
-Pause download cloud assets.
+Pauses a batch download for the specified cloud media assets. This API uses a promise to return the result.
 
 **Since:** 21
 
@@ -379,13 +378,13 @@ Pause download cloud assets.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| assetUris | string[] \| null | Yes | Asset uris which will pause, null or empty array means pause all |
+| assetUris | string[] \| null | Yes | Array of URIs pointing to the original-quality images and videos to bepaused.<br>If null, undefined, or an empty list is passed, it represents all existing individual download items. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Returns void |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -394,7 +393,7 @@ Pause download cloud assets.
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
 | [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) | The scenario parameter verification fails. Possible causes:The assetUris array size is bigger than 500. |
-| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.Possible causes: 1. Database corrupted; 2. The file system is abnormal; 3. The IPC request timed out. |
+| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
 **Example**
 
@@ -420,7 +419,7 @@ async function example(context: Context) {
 queryDownloadSpecificCloudMediaDetails(predicates: dataSharePredicates.DataSharePredicates): Promise<CloudAssetDownloadStatus>
 ```
 
-Query download cloud assets task infomation.
+Obtains the details of a batch download for cloud media assets. This API uses a promise to return the result.
 
 **Since:** 21
 
@@ -434,13 +433,13 @@ Query download cloud assets task infomation.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| predicates | dataSharePredicates.DataSharePredicates | Yes | Filter parameter. |
+| predicates | dataSharePredicates.DataSharePredicates | Yes | Predicates that specify the fetch criteria. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;CloudAssetDownloadStatus&gt; | Returns download cloud assets task infomation. |
+| Promise&lt;CloudAssetDownloadStatus&gt; | Promise used to return the details obtained. |
 
 **Error codes:**
 
@@ -448,7 +447,7 @@ Query download cloud assets task infomation.
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.Possible causes: 1. Database corrupted; 2. The file system is abnormal; 3. The IPC request timed out. |
+| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
 **Example**
 
@@ -477,7 +476,7 @@ async function example(context: Context) {
 queryDownloadSpecificCloudMediaTaskCount(predicates: dataSharePredicates.DataSharePredicates): Promise<number>
 ```
 
-Query download cloud assets task count.
+Obtains the number of batch download tasks for cloud media assets. This API uses a promise to return the result.
 
 **Since:** 21
 
@@ -491,13 +490,13 @@ Query download cloud assets task count.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| predicates | dataSharePredicates.DataSharePredicates | Yes | Filter parameter. |
+| predicates | dataSharePredicates.DataSharePredicates | Yes | Predicates that specify the fetch criteria. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;number&gt; | Returns download cloud assets task count. |
+| Promise&lt;number&gt; | Promise used to return the number of batch download tasks. |
 
 **Error codes:**
 
@@ -505,7 +504,7 @@ Query download cloud assets task count.
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.Possible causes: 1. Database corrupted; 2. The file system is abnormal; 3. The IPC request timed out. |
+| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
 **Example**
 
@@ -534,7 +533,7 @@ async function example(context: Context) {
 resumeDownloadSpecificCloudMedia(assetUris: string[] | null): Promise<void>
 ```
 
-Resume download cloud assets.
+Resumes a batch download for the specified cloud media assets. This API uses a promise to return the result.
 
 **Since:** 21
 
@@ -548,13 +547,13 @@ Resume download cloud assets.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| assetUris | string[] \| null | Yes | Asset uris which will resume, null or empty array means resume all |
+| assetUris | string[] \| null | Yes | Array of URIs pointing to the original-quality images and videos to beresumed.<br>If null, undefined, or an empty list is passed, it represents all existing individual download items. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Returns void |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -563,7 +562,7 @@ Resume download cloud assets.
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
 | [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) | The scenario parameter verification fails. Possible causes:The assetUris array size is bigger than 500. |
-| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.Possible causes: 1. Database corrupted; 2. The file system is abnormal; 3. The IPC request timed out. |
+| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
 **Example**
 
@@ -609,7 +608,7 @@ Deletes local metadata and files of cloud media assets.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Returns void |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -617,8 +616,8 @@ Deletes local metadata and files of cloud media assets.
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
-| 14000011 | Internal system error. It is recommended to retry and check the logs.<br>Possible causes: 1. Database corrupted; 2. The file system is abnormal; 3. The IPC request timed out. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
+| 14000011 | Internal system error. It is recommended to retry and check the logs.<br>Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
 **Example**
 
@@ -662,7 +661,7 @@ Starts or resumes a task to download cloud media assets.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Returns void |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -670,8 +669,8 @@ Starts or resumes a task to download cloud media assets.
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
-| 14000011 | Internal system error. It is recommended to retry and check the logs.<br>Possible causes: 1. Database corrupted; 2. The file system is abnormal; 3. The IPC request timed out. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
+| 14000011 | Internal system error. It is recommended to retry and check the logs.<br>Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
 **Example**
 

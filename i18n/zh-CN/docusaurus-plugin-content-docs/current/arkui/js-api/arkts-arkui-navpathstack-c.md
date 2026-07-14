@@ -1,20 +1,6 @@
 # NavPathStack
 
-Navigation导航控制器，以栈的数据结构管理Navigation中所有的子页面，并提供栈操作的方法用于控制Navigation中子页面的切换。
-
-从API version 12开始，NavPathStack允许被继承，派生类对象可以替代基类NavPathStack对象使用。使用示例参见
-[示例10](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-navigation.md#示例10定义导航控制器派生类)。
-
-> **说明：**
->
-> 1.连续调用多个导航控制器操作方法时，中间过程会被忽略，显示最终的栈操作结果。
-
-> 例如：在Page1页面先pop再push一个Page1，系统会认为操作前和操作后的结果一致而不进行任何操作，如果需要强行push一个Page1实例，可以设置
-> [NavigationOption](arkts-arkui-navigationoptions-i.md)中的launchMode属性值为LaunchMode.NEW_INSTANCE模式。
->
-> 2.不建议开发者通过监听页面生命周期的方式管理自己的导航控制器。
->
-> 3.在应用处于后台状态下，调用NavPathStack的栈操作方法，会在应用再次回到前台状态时触发刷新。
+Navigation导航控制器，以栈的数据结构管理Navigation中所有的子页面，并提供栈操作的方法用于控制Navigation中子页面的切换。 从API version 12开始，NavPathStack允许被继承，派生类对象可以替代基类NavPathStack对象使用。使用示例参见 [示例10](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-navigation.md#示例10定义导航控制器派生类)。 > **说明：** > > 1.连续调用多个导航控制器操作方法时，中间过程会被忽略，显示最终的栈操作结果。 > 例如：在Page1页面先pop再push一个Page1，系统会认为操作前和操作后的结果一致而不进行任何操作，如果需要强行push一个Page1实例，可以设置 > [NavigationOption](arkts-arkui-navigationoptions-i.md)中的launchMode属性值为LaunchMode.NEW_INSTANCE模式。 > > 2.不建议开发者通过监听页面生命周期的方式管理自己的导航控制器。 > > 3.在应用处于后台状态下，调用NavPathStack的栈操作方法，会在应用再次回到前台状态时触发刷新。
 
 **起始版本：** 10
 
@@ -192,9 +178,7 @@ getParamByName(name: string): Array<unknown>
 getParent(): NavPathStack | null
 ```
 
-获取父NavPathStack。
-
-当出现Navigation嵌套Navigation的情况时（可以是直接嵌套，也可以是间接嵌套），内部Navigation的NavPathStack能够获取到外层Navigation的NavPathStack。
+获取父NavPathStack。 当出现Navigation嵌套Navigation的情况时（可以是直接嵌套，也可以是间接嵌套），内部Navigation的NavPathStack能够获取到外层Navigation的NavPathStack。
 
 **起始版本：** 11
 
@@ -290,27 +274,7 @@ moveToTop(name: string, animated?: boolean): number
 pop(animated?: boolean): NavPathInfo | undefined
 ```
 
-弹出路由栈栈顶元素。
-
-> **说明：**
->
-> 连续调用多个导航控制器方法时，中间被pop的页面会被缓存，后续push同名页面时会优先复用该页面，不会走新的页面创建流程。
-
-> 例如：
-
-> pathStack: NavPathStack = new NavPathStack()
-
-> // 初始页面栈为：[A]
-
-> pathStack.pop()
-
-> pathStack.pushPath(A)
-
-> pathStack.pushPath(B)
-
-> // 操作后页面栈为：[A B]
-
-> 此时A页面会被复用，不会走新的创建流程。
+弹出路由栈栈顶元素。 > **说明：** > > 连续调用多个导航控制器方法时，中间被pop的页面会被缓存，后续push同名页面时会优先复用该页面，不会走新的页面创建流程。 > 例如： > pathStack: NavPathStack = new NavPathStack() > // 初始页面栈为：[A] > pathStack.pop() > pathStack.pushPath(A) > pathStack.pushPath(B) > // 操作后页面栈为：[A B] > 此时A页面会被复用，不会走新的创建流程。
 
 **起始版本：** 10
 
@@ -338,27 +302,7 @@ pop(animated?: boolean): NavPathInfo | undefined
 pop(result: Object, animated?: boolean): NavPathInfo | undefined
 ```
 
-弹出路由栈栈顶元素，并触发onPop回调传入页面处理结果。
-
-> **说明：**
->
-> 连续调用多个导航控制器方法时，中间被pop的页面会被缓存，后续push同名页面时会优先复用该页面，不会走新的页面创建流程。
-
-> 例如：
-
-> pathStack: NavPathStack = new NavPathStack()
-
-> // 初始页面栈为：[A]
-
-> pathStack.pop()
-
-> pathStack.pushPath(A)
-
-> pathStack.pushPath(B)
-
-> // 操作后页面栈为：[A B]
-
-> 此时A页面会被复用，不会走新的创建流程。
+弹出路由栈栈顶元素，并触发onPop回调传入页面处理结果。 > **说明：** > > 连续调用多个导航控制器方法时，中间被pop的页面会被缓存，后续push同名页面时会优先复用该页面，不会走新的页面创建流程。 > 例如： > pathStack: NavPathStack = new NavPathStack() > // 初始页面栈为：[A] > pathStack.pop() > pathStack.pushPath(A) > pathStack.pushPath(B) > // 操作后页面栈为：[A B] > 此时A页面会被复用，不会走新的创建流程。
 
 **起始版本：** 11
 
@@ -493,11 +437,7 @@ popToName(name: string, result: Object, animated?: boolean): number
 pushDestination(info: NavPathInfo, animated?: boolean): Promise<void>
 ```
 
-将info指定的NavDestination页面信息入栈，使用Promise异步回调返回接口调用结果。
-
-> **说明：**
->
-> 不建议在[aboutToAppear](arkts-arkui-basecustomcomponent-c.md#abouttoappear-1)中使用栈操作，此时的页面还未构建完成，会导致白屏或跳转失败等问题。
+将info指定的NavDestination页面信息入栈，使用Promise异步回调返回接口调用结果。 > **说明：** > > 不建议在[aboutToAppear](arkts-arkui-basecustomcomponent-c.md#abouttoappear-1)中使用栈操作，此时的页面还未构建完成，会导致白屏或跳转失败等问题。
 
 **起始版本：** 11
 
@@ -535,11 +475,7 @@ pushDestination(info: NavPathInfo, animated?: boolean): Promise<void>
 pushDestination(info: NavPathInfo, options?: NavigationOptions): Promise<void>
 ```
 
-将info指定的NavDestination页面信息入栈，使用Promise异步回调返回接口调用结果，具体根据options中指定不同的[LaunchMode](arkts-arkui-launchmode-e.md)，来实现不同的行为。
-
-> **说明：**
->
-> 不建议在[aboutToAppear](arkts-arkui-basecustomcomponent-c.md#abouttoappear-1)中使用栈操作，此时的页面还未构建完成，会导致白屏或跳转失败等问题。
+将info指定的NavDestination页面信息入栈，使用Promise异步回调返回接口调用结果，具体根据options中指定不同的[LaunchMode](arkts-arkui-launchmode-e.md)，来实现不同的行为。 > **说明：** > > 不建议在[aboutToAppear](arkts-arkui-basecustomcomponent-c.md#abouttoappear-1)中使用栈操作，此时的页面还未构建完成，会导致白屏或跳转失败等问题。
 
 **起始版本：** 12
 
@@ -577,11 +513,7 @@ pushDestination(info: NavPathInfo, options?: NavigationOptions): Promise<void>
 pushDestinationByName(name: string, param: Object, animated?: boolean): Promise<void>
 ```
 
-将name指定的NavDestination页面信息入栈，传递的数据为param，使用Promise异步回调返回接口调用结果。
-
-> **说明：**
->
-> 不建议在[aboutToAppear](arkts-arkui-basecustomcomponent-c.md#abouttoappear-1)中使用栈操作，此时的页面还未构建完成，会导致白屏或跳转失败等问题。
+将name指定的NavDestination页面信息入栈，传递的数据为param，使用Promise异步回调返回接口调用结果。 > **说明：** > > 不建议在[aboutToAppear](arkts-arkui-basecustomcomponent-c.md#abouttoappear-1)中使用栈操作，此时的页面还未构建完成，会导致白屏或跳转失败等问题。
 
 **起始版本：** 11
 
@@ -620,11 +552,7 @@ pushDestinationByName(name: string, param: Object, animated?: boolean): Promise<
 pushDestinationByName(name: string, param: Object, onPop: import('../api/@ohos.base').Callback<PopInfo>, animated?: boolean): Promise<void>
 ```
 
-将name指定的NavDestination页面信息入栈，传递的数据为param，并且添加用于页面出栈时处理返回结果的onPop回调，使用Promise异步回调返回接口调用结果。
-
-> **说明：**
->
-> 不建议在[aboutToAppear](arkts-arkui-basecustomcomponent-c.md#abouttoappear-1)中使用栈操作，此时的页面还未构建完成，会导致白屏或跳转失败等问题。
+将name指定的NavDestination页面信息入栈，传递的数据为param，并且添加用于页面出栈时处理返回结果的onPop回调，使用Promise异步回调返回接口调用结果。 > **说明：** > > 不建议在[aboutToAppear](arkts-arkui-basecustomcomponent-c.md#abouttoappear-1)中使用栈操作，此时的页面还未构建完成，会导致白屏或跳转失败等问题。
 
 **起始版本：** 11
 
@@ -815,9 +743,7 @@ removeByName(name: string): number
 removeByNavDestinationId(navDestinationId: string): boolean
 ```
 
-将路由栈内指定navDestinationId的NavDestination页面删除。navDestinationId可以在NavDestination的
-[onReady](NavDestinationAttribute#onReady)回调中获取，也可以在
-[NavDestinationInfo](../arkts-apis/arkts-arkui-navdestinationinfo-i.md)中获取。
+将路由栈内指定navDestinationId的NavDestination页面删除。navDestinationId可以在NavDestination的 [onReady](NavDestinationAttribute#onReady)回调中获取，也可以在 [NavDestinationInfo](../arkts-apis/arkts-arkui-navdestinationinfo-i.md)中获取。
 
 **起始版本：** 12
 
@@ -975,17 +901,7 @@ setInterception(interception: NavigationInterception): void
 setPathStack(pathStack: Array<NavPathInfo>, animated?: boolean): void
 ```
 
-将当前路由栈中的路由页面信息数组更新为指定内容，并实现路由转场。
-
-> **说明：**
->
-> 1. 开发者可以在原有栈的基础上批量添加或删除页面。批量入栈的页面中，只有可见的页面会触发创建，其他页面虽已入栈但不会立即创建，当这些页面变为可见时，才会触发创建。
->
-> 2. 通过批量入栈功能更新的路由栈，各页面的生命周期事件触发顺序为从栈顶到底部依次触发，这与其它入栈接口从栈底到顶部的触发顺序不同。
->
-> 3. 开发者可以通过[NavPathInfo](arkts-arkui-navpathinfo-c.md)中的页面唯一标识符navDestinationId来操作已有页面，该id由系统默认生成且全局唯一（可以通过
-> [getPathStack](arkts-arkui-navpathstack-c.md#getpathstack-1)接口获取，不可主动赋新值）。若该id在当前路由栈中不存在，则表示新增页面，若在当前路由栈中存在，同时对应的name相同，则表示复用已
-> 有页面。
+将当前路由栈中的路由页面信息数组更新为指定内容，并实现路由转场。 > **说明：** > > 1. 开发者可以在原有栈的基础上批量添加或删除页面。批量入栈的页面中，只有可见的页面会触发创建，其他页面虽已入栈但不会立即创建，当这些页面变为可见时，才会触发创建。 > > 2. 通过批量入栈功能更新的路由栈，各页面的生命周期事件触发顺序为从栈顶到底部依次触发，这与其它入栈接口从栈底到顶部的触发顺序不同。 > > 3. 开发者可以通过[NavPathInfo](arkts-arkui-navpathinfo-c.md)中的页面唯一标识符navDestinationId来操作已有页面，该id由系统默认生成且全局唯一（可以通过 > [getPathStack](arkts-arkui-navpathstack-c.md#getpathstack-1)接口获取，不可主动赋新值）。若该id在当前路由栈中不存在，则表示新增页面，若在当前路由栈中存在，同时对应的name相同，则表示复用已 > 有页面。
 
 **起始版本：** 19
 

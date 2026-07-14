@@ -1,8 +1,6 @@
 # RoundRectShapeOptions
 
-Represents the parameter of the constructor used to create a **RectShape** object with rounded corners.
-
-This API inherits from [ShapeSize](arkts-arkui-shapesize-i.md).
+Represents the parameter of the constructor used to create a **RectShape** object with rounded corners. This API inherits from [ShapeSize](arkts-arkui-shapesize-i.md).
 
 **Inheritance/Implementation:** RoundRectShapeOptions extends [ShapeSize](arkts-arkui-shapesize-i.md)
 
@@ -22,14 +20,7 @@ import { RectShape, CircleShape, EllipseShape, PathShape } from '@kit.ArkUI';
 radiusHeight?: number | string
 ```
 
-Radius height of the rectangle border corners.
-
-When the parameter type is number, the valid value range is
-[0, +∞). When the parameter type is string, the value must conform to the [Length](../arkts-components/arkts-arkui-length-t.md) type specification.
-
-Unit: vp.
-
-If the value is invalid, 0 vp is used.
+Radius height of the rectangle border corners. When the parameter type is number, the valid value range is [0, +∞). When the parameter type is string, the value must conform to the [Length](../arkts-components/arkts-arkui-length-t.md) type specification. Unit: vp. If the value is invalid, 0 vp is used.
 
 **Type:** number | string
 
@@ -49,14 +40,7 @@ If the value is invalid, 0 vp is used.
 radiusWidth?: number | string
 ```
 
-Radius width of the rectangle border corners.
-
-When the parameter type is number, the valid value range is
-[0, +∞). When the parameter type is string, the value must conform to the [Length](../arkts-components/arkts-arkui-length-t.md) type specification.
-
-Unit: vp.
-
-If the value is invalid, 0 vp is used.
+Radius width of the rectangle border corners. When the parameter type is number, the valid value range is [0, +∞). When the parameter type is string, the value must conform to the [Length](../arkts-components/arkts-arkui-length-t.md) type specification. Unit: vp. If the value is invalid, 0 vp is used.
 
 **Type:** number | string
 

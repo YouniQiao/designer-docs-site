@@ -6,9 +6,7 @@
 function addAutoStartApps(admin: Want, autoStartApps: Array<Want>): void
 ```
 
-为当前用户添加开机自启动应用名单。通过本接口添加至自启动名单的应用，禁止用户在设备上手动取消应用自启动<!--RP4--><!--RP4End-->，但可通过
-[removeAutoStartApps](arkts-mdm-removeautostartapps-f.md#removeautostartapps-1)接口将应用从自
-启动名单中移除。
+为当前用户添加开机自启动应用名单。通过本接口添加至自启动名单的应用，禁止用户在设备上手动取消应用自启动<!--RP4--><!--RP4End-->，但可通过 [removeAutoStartApps](arkts-mdm-removeautostartapps-f.md#removeautostartapps-1)接口将应用从自 启动名单中移除。
 
 **起始版本：** 12
 
@@ -74,10 +72,7 @@ try {
 function addAutoStartApps(admin: Want, autoStartApps: Array<Want>, accountId: number, disallowModify: boolean): void
 ```
 
-为指定用户添加开机自启动应用名单，并设置是否禁止该用户手动取消应用自启动<!--RP4--><!--RP4End-->。
-
-通过本接口、[addAutoStartApps](arkts-mdm-addautostartapps-f.md#addautostartapps-1)接口均可添加开
-机自启动应用名单，两个接口的设置可同时生效。同一用户下，开机自启动应用名单最多支持包含10个应用。例如：若当前名单中已有3个应用，则最多还能通过本接口为当前用户添加7个应用。
+为指定用户添加开机自启动应用名单，并设置是否禁止该用户手动取消应用自启动<!--RP4--><!--RP4End-->。 通过本接口、[addAutoStartApps](arkts-mdm-addautostartapps-f.md#addautostartapps-1)接口均可添加开 机自启动应用名单，两个接口的设置可同时生效。同一用户下，开机自启动应用名单最多支持包含10个应用。例如：若当前名单中已有3个应用，则最多还能通过本接口为当前用户添加7个应用。
 
 **起始版本：** 20
 

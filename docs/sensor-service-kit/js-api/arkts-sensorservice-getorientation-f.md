@@ -12,8 +12,7 @@ import { sensor } from '@kit.SensorServiceKit';
 function getOrientation(rotationMatrix: Array<number>, callback: AsyncCallback<Array<number>>): void
 ```
 
-Obtains the device direction based on the rotation matrix. This API uses an asynchronous callback to return the
-result.
+Obtains the device direction based on the rotation matrix. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 

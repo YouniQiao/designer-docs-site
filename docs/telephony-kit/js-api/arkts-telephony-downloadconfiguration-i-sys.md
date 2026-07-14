@@ -20,9 +20,7 @@ import { eSIM } from '@kit.TelephonyKit';
 forceDisableProfile: boolean
 ```
 
-Specifies whether to forcibly disable the profile. If true, the active profile is disabled in order to perform
-the operation. Otherwise, {@link RESULT_MUST_DISABLE_PROFILE} is returned in resultCode to ask for the user's
-agreement to the operation.
+Specifies whether to forcibly disable the profile. If true, the active profile is disabled in order to perform the operation. Otherwise, {@link RESULT_MUST_DISABLE_PROFILE} is returned in resultCode to ask for the user's agreement to the operation.
 
 **Type:** boolean
 
@@ -38,8 +36,7 @@ agreement to the operation.
 isPprAllowed: boolean
 ```
 
-Specifies whether the user allows the service provider to enforce this Profile Policy Rule (PPR)
-after being informed of its restrictions.
+Specifies whether the user allows the service provider to enforce this Profile Policy Rule (PPR) after being informed of its restrictions.
 
 **Type:** boolean
 

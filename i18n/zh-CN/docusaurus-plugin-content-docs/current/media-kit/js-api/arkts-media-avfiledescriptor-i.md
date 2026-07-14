@@ -1,7 +1,6 @@
 # AVFileDescriptor
 
-Media file descriptor. The caller needs to ensure that the fd is valid and
-the offset and length are correct.
+Media file descriptor. The caller needs to ensure that the fd is valid and the offset and length are correct.
 
 **起始版本：** 9
 
@@ -13,8 +12,7 @@ the offset and length are correct.
 fd: number
 ```
 
-The file descriptor of audio or video source from file system. The caller
-is responsible to close the file descriptor.
+The file descriptor of audio or video source from file system. The caller is responsible to close the file descriptor.
 
 **类型：** number
 
@@ -30,8 +28,7 @@ is responsible to close the file descriptor.
 length?: number
 ```
 
-The length in bytes of the data to be read. By default, the length is the
-rest of bytes in the file from the offset.
+The length in bytes of the data to be read. By default, the length is the rest of bytes in the file from the offset.
 
 **类型：** number
 
@@ -47,8 +44,7 @@ rest of bytes in the file from the offset.
 offset?: number
 ```
 
-The offset into the file where the data to be read, in bytes. By default,
-the offset is zero.
+The offset into the file where the data to be read, in bytes. By default, the offset is zero.
 
 **类型：** number
 

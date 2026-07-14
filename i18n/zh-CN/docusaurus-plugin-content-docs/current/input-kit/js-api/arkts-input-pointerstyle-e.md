@@ -604,9 +604,7 @@ SCREENRECORDER_CURSOR = 48
 LASER_CURSOR = 49
 ```
 
-悬浮光标。手写笔进入空鼠模式时使用该光标，无法直接设置 。
-
-空鼠模式支持通过手写笔在空中转动来控制屏幕上虚拟光标的移动，并借助笔身按键实现上下翻页功能，用于演示PPT、隔空操作等场景。
+悬浮光标。手写笔进入空鼠模式时使用该光标，无法直接设置 。 空鼠模式支持通过手写笔在空中转动来控制屏幕上虚拟光标的移动，并借助笔身按键实现上下翻页功能，用于演示PPT、隔空操作等场景。
 
 **起始版本：** 22
 
@@ -618,9 +616,7 @@ LASER_CURSOR = 49
 LASER_CURSOR_DOT = 50
 ```
 
-点击光标。手写笔进入空鼠模式时使用该光标，无法直接设置 。
-
-空鼠模式支持通过手写笔在空中转动来控制屏幕上虚拟光标的移动，并借助笔身按键实现上下翻页功能，用于演示PPT、隔空操作等场景。
+点击光标。手写笔进入空鼠模式时使用该光标，无法直接设置 。 空鼠模式支持通过手写笔在空中转动来控制屏幕上虚拟光标的移动，并借助笔身按键实现上下翻页功能，用于演示PPT、隔空操作等场景。
 
 **起始版本：** 22
 
@@ -632,9 +628,7 @@ LASER_CURSOR_DOT = 50
 LASER_CURSOR_DOT_RED = 51
 ```
 
-激光笔光标。手写笔进入空鼠模式时使用该光标，无法直接设置 。
-
-空鼠模式支持通过手写笔在空中转动来控制屏幕上虚拟光标的移动，并借助笔身按键实现上下翻页功能，用于演示PPT、隔空操作等场景。
+激光笔光标。手写笔进入空鼠模式时使用该光标，无法直接设置 。 空鼠模式支持通过手写笔在空中转动来控制屏幕上虚拟光标的移动，并借助笔身按键实现上下翻页功能，用于演示PPT、隔空操作等场景。
 
 **起始版本：** 22
 
@@ -646,9 +640,7 @@ LASER_CURSOR_DOT_RED = 51
 DEVELOPER_DEFINED_ICON = -100
 ```
 
-自定义光标，开发者可使用
-[setCustomCursor](arkts-input-setcustomcursor-f.md#setcustomcursor-2)设置自定义光
-标，不支持使用[setPointerStyle](arkts-input-setpointerstyle-f.md#setpointerstyle-2)直接设置。
+自定义光标，开发者可使用 [setCustomCursor](arkts-input-setcustomcursor-f.md#setcustomcursor-2)设置自定义光 标，不支持使用[setPointerStyle](arkts-input-setpointerstyle-f.md#setpointerstyle-2)直接设置。
 
 **起始版本：** 22
 

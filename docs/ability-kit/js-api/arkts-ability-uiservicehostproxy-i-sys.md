@@ -1,12 +1,6 @@
 # UIServiceHostProxy (System API)
 
-UIServiceHostProxy functions as a proxy to send data from the
-[UIServiceExtensionAbility](arkts-ability-uiserviceextensionability-c-sys.md) server
-to the client.
-
-> **NOTE**
->
-> - The APIs of this module must be used in the main thread, but not in child threads such as Worker and TaskPool.
+UIServiceHostProxy functions as a proxy to send data from the [UIServiceExtensionAbility](arkts-ability-uiserviceextensionability-c-sys.md) server to the client. > **NOTE** > > - The APIs of this module must be used in the main thread, but not in child threads such as Worker and TaskPool.
 
 **Since:** 14
 
@@ -20,9 +14,7 @@ to the client.
 sendData(data: Record<string, Object>): void
 ```
 
-Sends data from the
-[UIServiceExtensionAbility](arkts-ability-uiserviceextensionability-c-sys.md)
-server to the client.
+Sends data from the [UIServiceExtensionAbility](arkts-ability-uiserviceextensionability-c-sys.md) server to the client.
 
 **Since:** 14
 

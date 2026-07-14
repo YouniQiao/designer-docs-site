@@ -46,13 +46,7 @@ Callback invoked when an API call fails.
 interval: string
 ```
 
-Execution frequency of the callback for returning the acceleration sensor data.
-
-The default value is **normal**. The options are as follows:
-
-- **game**: called at an interval of 20 ms, which is applicable to gaming scenarios.
-- **ui**: called at an interval of 60 ms, which is applicable to UI updating scenarios.
-- **normal**: called at an interval of 200 ms, which is applicable to power-saving scenarios.
+Execution frequency of the callback for returning the acceleration sensor data. The default value is **normal**. The options are as follows: - **game**: called at an interval of 20 ms, which is applicable to gaming scenarios. - **ui**: called at an interval of 60 ms, which is applicable to UI updating scenarios. - **normal**: called at an interval of 200 ms, which is applicable to power-saving scenarios.
 
 **Type:** string
 

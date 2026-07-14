@@ -1,9 +1,6 @@
 # LinkIntentDecoratorInfo
 
-LinkIntentDecoratorInfo inherits from [IntentDecoratorInfo](arkts-ability-intentdecoratorinfo-i.md) and describes the parameters
-supported by the
-[@InsightIntentLink](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentlink)
-decorator, such as the URI information required for application redirection.
+LinkIntentDecoratorInfo inherits from [IntentDecoratorInfo](arkts-ability-intentdecoratorinfo-i.md) and describes the parameters supported by the [@InsightIntentLink](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentlink) decorator, such as the URI information required for application redirection.
 
 **Inheritance/Implementation:** LinkIntentDecoratorInfo extends [IntentDecoratorInfo](arkts-ability-intentdecoratorinfo-i.md)
 

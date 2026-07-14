@@ -1,7 +1,6 @@
 # AbilityWindowConfiguration
 
-Defines the window configuration corresponding to this ability. The configuration is obtained through
-**featureAbility.AbilityWindowConfiguration**.
+Defines the window configuration corresponding to this ability. The configuration is obtained through **featureAbility.AbilityWindowConfiguration**.
 
 **Since:** 7
 

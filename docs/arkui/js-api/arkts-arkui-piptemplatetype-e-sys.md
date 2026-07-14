@@ -12,9 +12,7 @@ Enumerates the PiP template types.
 VIDEO_DRIVE = 4
 ```
 
-Indicate the content to show in picture-in-picture window is video drive
-
-Device Behavior Differences:Only supported by car
+Indicate the content to show in picture-in-picture window is video drive Device Behavior Differences:Only supported by car
 
 **Since:** 26.0.0
 

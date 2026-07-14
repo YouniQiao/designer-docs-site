@@ -84,8 +84,7 @@ The bundle name of application which current play list belongs to.
 lastPlayedTime?: number
 ```
 
-The time when the user last played the playlist.
-The time format can be system, such as 1611081385000, it means 2021-01-20 02:36:25.
+The time when the user last played the playlist. The time format can be system, such as 1611081385000, it means 2021-01-20 02:36:25.
 
 **Type:** number
 

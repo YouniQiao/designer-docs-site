@@ -12,8 +12,7 @@ Provides the callback information returned when a page is popped out of the rout
 info: NavPathInfo
 ```
 
-Information about the current page when a back action is performed. The value is automatically obtained by the
-system.
+Information about the current page when a back action is performed. The value is automatically obtained by the system.
 
 **Type:** NavPathInfo
 

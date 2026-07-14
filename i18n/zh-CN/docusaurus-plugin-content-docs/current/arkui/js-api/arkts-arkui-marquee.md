@@ -1,15 +1,6 @@
 # Marquee
 
-跑马灯组件，用于滚动展示一段单行文本。仅当文本内容宽度大于等于跑马灯组件宽度时滚动，当文本内容宽度小于跑马灯组件宽度时不滚动。
-
-> **说明：**
-
-> 为了不影响滚动帧率，建议在滚动类组件中Marquee的个数不超过4个，或者使用[Text]{@link text}组件的[TextOverflow.MARQUEE]{@link TextOverflow}替代。
->
-> 对于Marquee组件动态帧率的场景，可以使用[MarqueeDynamicSyncScene]{@link @ohos.arkui.UIContext}接口实现。
->
-> 在文本宽度小于跑马灯组件宽度时，使用[属性动画]{@link common}实现滚动。
-
+跑马灯组件，用于滚动展示一段单行文本。仅当文本内容宽度大于等于跑马灯组件宽度时滚动，当文本内容宽度小于跑马灯组件宽度时不滚动。 > **说明：** > 为了不影响滚动帧率，建议在滚动类组件中Marquee的个数不超过4个，或者使用[Text]{@link text}组件的[TextOverflow.MARQUEE]{@link TextOverflow}替代。 > > 对于Marquee组件动态帧率的场景，可以使用[MarqueeDynamicSyncScene]{@link @ohos.arkui.UIContext}接口实现。 > > 在文本宽度小于跑马灯组件宽度时，使用[属性动画]{@link common}实现滚动。
 
 ## Marquee
 

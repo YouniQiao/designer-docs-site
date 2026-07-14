@@ -1,7 +1,6 @@
 # BarStyle
 
-Enumerates the layout styles of the title bar and toolbar. Note that this API is not supported for the toolbar in
-**NavDestination**.
+Enumerates the layout styles of the title bar and toolbar. Note that this API is not supported for the toolbar in **NavDestination**.
 
 **Since:** 12
 
@@ -45,8 +44,7 @@ In this mode, the title bar or toolbar is overlaid on top of the content area.
 SAFE_AREA_PADDING = 2
 ```
 
-In this mode, the title bar or toolbar is configured to respect the
-[component-level safe area](arkts-arkui-commonmethod-c.md#safeareapadding-1).
+In this mode, the title bar or toolbar is configured to respect the [component-level safe area](arkts-arkui-commonmethod-c.md#safeareapadding-1).
 
 **Since:** 14
 

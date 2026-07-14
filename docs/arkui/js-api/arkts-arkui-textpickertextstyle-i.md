@@ -32,10 +32,7 @@ Maximum font size for the text. For details, see [maxFontSize](TextAttribute#max
 minFontSize?: number | string | Resource
 ```
 
-Minimum font size for the text. Used with **maxFontSize** to enable font scaling. When both **minFontSize** and
-**maxFontSize** are set, the **size** property in **font** is ignored. By default, the maximum number of lines is
-1, with the **MIN_FONT_SIZE_FIRST** adaptation strategy. For details, see
-[minFontSize](TextAttribute#minFontSize).
+Minimum font size for the text. Used with **maxFontSize** to enable font scaling. When both **minFontSize** and **maxFontSize** are set, the **size** property in **font** is ignored. By default, the maximum number of lines is 1, with the **MIN_FONT_SIZE_FIRST** adaptation strategy. For details, see [minFontSize](TextAttribute#minFontSize).
 
 **Type:** number | string | Resource
 
@@ -53,8 +50,7 @@ Minimum font size for the text. Used with **maxFontSize** to enable font scaling
 overflow?: TextOverflow
 ```
 
-Text overflow behavior. This property has no effect when set to **MARQUEE**. For details, see
-[textOverflow](TextAttribute#textOverflow).
+Text overflow behavior. This property has no effect when set to **MARQUEE**. For details, see [textOverflow](TextAttribute#textOverflow).
 
 **Type:** TextOverflow
 

@@ -1,8 +1,6 @@
 # ContinueDeviceInfo (System API)
 
-The module defines the parameters required for initiating mission continuation. For details about mission
-continuation, see
-[continueMission](arkts-ability-continuemission-f-sys.md#continuemission-1)
+The module defines the parameters required for initiating mission continuation. For details about mission continuation, see [continueMission](arkts-ability-continuemission-f-sys.md#continuemission-1)
 
 **Since:** 9
 

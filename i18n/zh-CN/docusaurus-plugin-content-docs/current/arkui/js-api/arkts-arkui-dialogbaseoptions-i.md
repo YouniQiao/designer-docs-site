@@ -50,8 +50,7 @@ autoCancel?: boolean
 backgroundBlurStyle?: BlurStyle
 ```
 
-对话框的背景模糊样式。
-<br>设置为BlurStyle.NONE将禁用背景模糊。
+对话框的背景模糊样式。 <br>设置为BlurStyle.NONE将禁用背景模糊。
 
 **类型：** BlurStyle
 
@@ -89,8 +88,7 @@ backgroundBlurStyleOptions?: BackgroundBlurStyleOptions
 backgroundColor?: ResourceColor
 ```
 
-对话框的背景颜色。
-<br>当backgroundColor设置为非透明色时，backgroundBlurStyle必须设置为BlurStyle.NONE。
+对话框的背景颜色。 <br>当backgroundColor设置为非透明色时，backgroundBlurStyle必须设置为BlurStyle.NONE。
 
 **类型：** ResourceColor
 
@@ -460,9 +458,7 @@ levelOrder?: LevelOrder
 levelUniqueId?: number
 ```
 
-页面级对话框显示层下节点的唯一标识。
-取值限定为整数。
-<br>该参数仅在levelMode为LevelMode.EMBEDDED时生效。
+页面级对话框显示层下节点的唯一标识。 取值限定为整数。 <br>该参数仅在levelMode为LevelMode.EMBEDDED时生效。
 
 **类型：** number
 
@@ -626,10 +622,7 @@ onWillDisappear?: VoidCallback
 onWillDismiss?: Callback<DialogDismissal>
 ```
 
-对话框交互关闭的回调。
-<br>如果注册了此回调，则用户点击后对话框不会立即关闭
-遮罩或返回按钮。
-回调中的reason参数用于判断是否可以关闭对话框。
+对话框交互关闭的回调。 <br>如果注册了此回调，则用户点击后对话框不会立即关闭 遮罩或返回按钮。 回调中的reason参数用于判断是否可以关闭对话框。
 
 **类型：** Callback<DialogDismissal>
 
@@ -665,8 +658,7 @@ shadow?: ShadowOptions | ShadowStyle
 showInSubWindow?: boolean
 ```
 
-是否在子窗口中显示。
-<br>isModal = true和showInSubWindow = true不能同时使用。
+是否在子窗口中显示。 <br>isModal = true和showInSubWindow = true不能同时使用。
 
 **类型：** boolean
 

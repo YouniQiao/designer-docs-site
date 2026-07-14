@@ -1,11 +1,16 @@
 # ClickCallback
 
-Defines a callback used to return whether the application started by double-pressing the function key is the
-application itself.
+Defines a callback used to return whether the application started by double-pressing the function key is the application itself.
 
 **Since:** 24
 
 **System capability:** SystemCapability.Applications.Settings.Core.Lite
+
+## Modules to Import
+
+```TypeScript
+import { settingsLite } from '@kit.BasicServicesKit';
+```
 
 ## onResult
 

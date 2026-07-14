@@ -1,8 +1,6 @@
 # NavRouteMode
 
-Defines the routing policy.
-
-> **NOTE**
+Defines the routing policy. > **NOTE**
 
 **Since:** 10
 
@@ -18,8 +16,7 @@ Defines the routing policy.
 PUSH_WITH_RECREATE
 ```
 
-The new navigation destination page replaces the current one. The current page is destroyed, but the information
-about this page is retained in the navigation stack.
+The new navigation destination page replaces the current one. The current page is destroyed, but the information about this page is retained in the navigation stack.
 
 **Since:** 10
 
@@ -39,8 +36,7 @@ about this page is retained in the navigation stack.
 PUSH
 ```
 
-The new navigation destination page overwrites the current one. The current page is not destroyed, and the
-information about this page is retained in the navigation stack.
+The new navigation destination page overwrites the current one. The current page is not destroyed, and the information about this page is retained in the navigation stack.
 
 **Since:** 10
 
@@ -60,8 +56,7 @@ information about this page is retained in the navigation stack.
 REPLACE
 ```
 
-The new navigation destination page replaces the current one. The current page is destroyed, and the information
-about this page is removed from the navigation stack.
+The new navigation destination page replaces the current one. The current page is destroyed, and the information about this page is removed from the navigation stack.
 
 **Since:** 10
 

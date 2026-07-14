@@ -1,6 +1,6 @@
 # SubscribeCallbackData (System API)
 
-Notification information that carries the system property value.
+Returns notification information carrying system property values.
 
 **Since:** 7
 
@@ -14,8 +14,7 @@ Notification information that carries the system property value.
 readonly notificationClassification?: NotificationClassification
 ```
 
-Notification classification information. Only exists if the
-[NotificationSubscribeInfo.enableClassification](arkts-notification-notificationsubscribeinfo-i-sys.md#enableclassification) is true.
+Notification classification information. It exists only when enableClassification in NotificationSubscribeInfo is true.
 
 **Type:** NotificationClassification
 
@@ -33,9 +32,7 @@ Notification classification information. Only exists if the
 readonly reason?: number
 ```
 
-Reason for deletion. The options are as follows:
-**1**: The notification is deleted after being clicked.
-**2**: The notification is deleted by the user.
+Reason for deletion. The options are as follows: - **1**: The notification is deleted after being tapped. - **2**: The notification is deleted by the user.
 
 **Type:** number
 
@@ -83,7 +80,7 @@ Notification sorting information.
 readonly sound?: string
 ```
 
-Sound used for notification.
+Notification sound.
 
 **Type:** string
 
@@ -99,7 +96,7 @@ Sound used for notification.
 readonly vibrationValues?: Array<number>
 ```
 
-Vibration used for notification.
+Notification vibration.
 
 **Type:** Array<number>
 
@@ -115,8 +112,7 @@ Vibration used for notification.
 readonly voiceContent?: VoiceContent
 ```
 
-Generated voice content for audio playback.
-Only present when voiceContentoptions.enabled is true in NotificationSubscribeInfo.
+Voice broadcast content of the notification. It exists only when voiceContentOptions.enabled is true in NotificationSubscribeInfo.
 
 **Type:** VoiceContent
 

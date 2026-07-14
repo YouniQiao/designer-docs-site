@@ -12,9 +12,7 @@ import { wifi } from '@kit.ConnectivityKit';
 function getDeviceConfigs(): Array<WifiDeviceConfig>
 ```
 
-Obtains the list of all existing Wi-Fi configurations.
-
-<p>You can obtain only the Wi-Fi configurations you created on your own application.
+Obtains the list of all existing Wi-Fi configurations. <p>You can obtain only the Wi-Fi configurations you created on your own application.
 
 **Since:** 7
 

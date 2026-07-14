@@ -1,20 +1,6 @@
 # LiteResultSet
 
-Defines APIs to access the result set obtained by querying the RDB store. This result set is the collection of
-results returned with the **query()** method called.
-
-The **LiteResultSet** instance is not refreshed in real time. After using the result set, if the data in the
-database is changed (by being added, deleted, or modified), you need to query the result set again to obtain the
-latest data.
-
-In the following API examples, you need to obtain an **LiteResultSet** instance by using a query method, such as
-[queryWithoutRowCount](arkts-arkdata-rdbstore-i.md#querywithoutrowcount-1) or
-[querySqlWithoutRowCount](arkts-arkdata-rdbstore-i.md#querysqlwithoutrowcount-1), and
-then call the corresponding method through this instance.
-
-> **NOTE**
->
-> - The initial APIs of this class are supported since API version 23.
+Defines APIs to access the result set obtained by querying the RDB store. This result set is the collection of results returned with the **query()** method called. The **LiteResultSet** instance is not refreshed in real time. After using the result set, if the data in the database is changed (by being added, deleted, or modified), you need to query the result set again to obtain the latest data. In the following API examples, you need to obtain an **LiteResultSet** instance by using a query method, such as [queryWithoutRowCount](arkts-arkdata-rdbstore-i.md#querywithoutrowcount-1) or [querySqlWithoutRowCount](arkts-arkdata-rdbstore-i.md#querysqlwithoutrowcount-1), and then call the corresponding method through this instance. > **NOTE** > > - The initial APIs of this class are supported since API version 23.
 
 **Since:** 23
 
@@ -32,9 +18,7 @@ import { relationalStore } from '@kit.ArkData';
 getFloat32Array(columnIndex: number): Float32Array
 ```
 
-Obtains the value of the specified column in the current row as a float array.
-The implementation class determines whether to throw an exception if the value of the specified column
-in the current row is null or the specified column is not of the float array type.
+Obtains the value of the specified column in the current row as a float array. The implementation class determines whether to throw an exception if the value of the specified column in the current row is null or the specified column is not of the float array type.
 
 **Since:** 23
 

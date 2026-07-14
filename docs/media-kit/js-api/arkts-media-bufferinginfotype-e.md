@@ -54,8 +54,7 @@ Buffering percentage. You can use this event to monitor the buffering status, in
 CACHED_DURATION = 4
 ```
 
-Estimated duration, in ms, that the buffered data can be played. This event is triggered once the data change
-amount in the buffer exceeds 500 ms. You can use this event to develop a progress bar.
+Estimated duration, in ms, that the buffered data can be played. This event is triggered once the data change amount in the buffer exceeds 500 ms. You can use this event to develop a progress bar.
 
 **Since:** 8
 

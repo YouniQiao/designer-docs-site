@@ -12,15 +12,7 @@
 normal: SymbolGlyphModifier
 ```
 
-ҳǩ��symbolͼ����̬ͨ��ʽ��
-
-Ĭ��ֵ��
-
-fontColor��#66182431
-
-renderingStrategy��SymbolRenderingStrategy.MULTIPLE_OPACITY
-
-fontSize��24vp
+ҳǩ��symbolͼ����̬ͨ��ʽ�� Ĭ��ֵ�� fontColor��#66182431 renderingStrategy��SymbolRenderingStrategy.MULTIPLE_OPACITY fontSize��24vp
 
 **类型：** SymbolGlyphModifier
 
@@ -38,15 +30,7 @@ fontSize��24vp
 selected?: SymbolGlyphModifier
 ```
 
-ҳǩ��symbolͼ��ѡ��̬��ʽ��
-
-Ĭ��ֵ��
-
-fontColor��#ff007dff
-
-renderingStrategy��SymbolRenderingStrategy.MULTIPLE_OPACITY
-
-fontSize��24vp
+ҳǩ��symbolͼ��ѡ��̬��ʽ�� Ĭ��ֵ�� fontColor��#ff007dff renderingStrategy��SymbolRenderingStrategy.MULTIPLE_OPACITY fontSize��24vp
 
 **类型：** SymbolGlyphModifier
 

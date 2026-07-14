@@ -1,8 +1,6 @@
 # @ohos.inputMethod
 
-The **inputMethod** module is oriented to common foreground applications (system applications such as Notes,
-Messaging, and Settings). It provides input method control and management capabilities, including displaying or
-hiding the soft keyboard, switching between input methods, and obtaining the list of all input methods.
+The **inputMethod** module is oriented to common foreground applications (system applications such as Notes, Messaging, and Settings). It provides input method control and management capabilities, including displaying or hiding the soft keyboard, switching between input methods, and obtaining the list of all input methods.
 
 **Since:** 6
 
@@ -63,7 +61,7 @@ import { inputMethod } from '@kit.IMEKit';
 | [InputMethodProperty](arkts-ime-inputmethodproperty-i.md) | input method property |
 | [InputMethodSetting](arkts-ime-inputmethodsetting-i.md) | In the following API examples, you must first use [getSetting](arkts-ime-getsetting-f.md#getsetting-1) to obtain an **InputMethodSetting** instance, and then call the APIs using the obtained instance. |
 | [InputWindowInfo](arkts-ime-inputwindowinfo-i.md) | Information of input window. |
-| [MessageHandler](arkts-ime-messagehandler-i.md) | &lt;p&gt;Custom message handler.&lt;/p&gt;&lt;p&gt;Implement this interface to respond to custom messages.&lt;/p&gt; |
+| [MessageHandler](arkts-ime-messagehandler-i.md) | &lt;p&gt;Custom message handler.&lt;/p&gt; &lt;p&gt;Implement this interface to respond to custom messages.&lt;/p&gt; |
 | [Movement](arkts-ime-movement-i.md) | Movement of cursor. |
 | [Range](arkts-ime-range-i.md) | Range of selected text. |
 | [TextConfig](arkts-ime-textconfig-i.md) | Config of editor. |

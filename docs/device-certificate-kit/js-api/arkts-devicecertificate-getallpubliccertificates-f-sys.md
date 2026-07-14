@@ -12,8 +12,7 @@ import { certificateManager } from '@kit.DeviceCertificateKit';
 function getAllPublicCertificates() : Promise<CMResult>
 ```
 
-Obtains the public credentials of all users. This API is called only by the certificate management application.
-This API uses a promise to return the result.
+Obtains the public credentials of all users. This API is called only by the certificate management application. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 

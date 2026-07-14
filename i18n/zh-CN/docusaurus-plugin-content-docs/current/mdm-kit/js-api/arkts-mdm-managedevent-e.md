@@ -136,8 +136,7 @@ MANAGED_EVENT_BOOT_COMPLETED = 9
 MANAGED_EVENT_BUNDLE_UPDATED = 10
 ```
 
-应用更新事件。**模型约束**：此接口仅可在Stage模型下使用。
-26.0.0。
+应用更新事件。**模型约束**：此接口仅可在Stage模型下使用。 26.0.0。
 
 **起始版本：** 26.0.0
 

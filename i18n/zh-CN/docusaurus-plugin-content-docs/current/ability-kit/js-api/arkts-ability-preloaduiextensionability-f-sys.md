@@ -6,8 +6,7 @@
 function preloadUIExtensionAbility(want: Want): Promise<number>
 ```
 
-预加载指定的[UIExtensionAbility](arkts-ability-uiextensionability-c.md)并返回预加载UIExtensionAbility实例
-的ID。使用Promise异步回调。
+预加载指定的[UIExtensionAbility](arkts-ability-uiextensionability-c.md)并返回预加载UIExtensionAbility实例 的ID。使用Promise异步回调。
 
 **起始版本：** 23
 

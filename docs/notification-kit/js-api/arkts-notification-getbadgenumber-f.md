@@ -12,7 +12,7 @@ import { notificationManager } from '@kit.NotificationKit';
 function getBadgeNumber(): Promise<number>
 ```
 
-Obtains the badge number of this application. This API uses a promise to return the result.
+Obtains the badge number of this application. This API uses a promise to return the result. This API is used to query the badge number displayed on the current application's desktop icon.
 
 **Since:** 22
 

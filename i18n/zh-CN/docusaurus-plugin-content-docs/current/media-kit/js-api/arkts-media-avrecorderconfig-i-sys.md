@@ -1,11 +1,6 @@
 # AVRecorderConfig
 
-Describes the audio and video recording parameters.
-
-The **audioSourceType** and **videoSourceType** parameters are used to distinguish audio-only recording,
-video-only recording, and audio and video recording. For audio-only recording, set only **audioSourceType**.
-For video-only recording, set only **videoSourceType**. For audio and video recording, set both **audioSourceType**
-and **videoSourceType**.
+音视频录制的参数。 audioSourceType和videoSourceType参数用于区分纯音频录制、纯视频录制和音视频录制。纯音频录制仅设置audioSourceType。纯视频录制仅设置videoSourceType。音视频录制需同时设置audioSourceType和videoSourceType。
 
 **起始版本：** 9
 
@@ -17,7 +12,7 @@ and **videoSourceType**.
 metaSourceTypes?: Array<MetaSourceType>
 ```
 
-Meta source types, details see @MetaSourceType .
+元数据源类型，详见MetaSourceType。
 
 **类型：** Array<MetaSourceType>
 

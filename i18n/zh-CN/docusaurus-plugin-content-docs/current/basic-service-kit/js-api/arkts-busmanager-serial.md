@@ -19,7 +19,7 @@
 
 | 名称 | 说明 |
 | --- | --- |
-| [addPortAuthorization](arkts-basicservices-addportauthorization-f-sys.md#addportauthorization-1) | 添加应用访问串口端口的权限仅面向串口授权弹窗系统应用开放 |
+| [addPortAuthorization](arkts-basicservices-addportauthorization-f-sys.md#addportauthorization-1) | 添加应用访问串口端口的权限 仅面向串口授权弹窗系统应用开放 |
 <!--DelEnd-->
 
 ### 接口

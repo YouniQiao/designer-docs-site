@@ -12,13 +12,7 @@ GridItem样式对象。
 style?: GridItemStyle
 ```
 
-设置GridItem样式。
-
-默认值：GridItemStyle.NONE
-
-设置为GridItemStyle.NONE时无样式。
-
-设置为GridItemStyle.PLAIN时，显示Hover、Press态样式。
+设置GridItem样式。 默认值：GridItemStyle.NONE 设置为GridItemStyle.NONE时无样式。 设置为GridItemStyle.PLAIN时，显示Hover、Press态样式。
 
 **类型：** GridItemStyle
 

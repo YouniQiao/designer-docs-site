@@ -14,8 +14,7 @@
 abilityName?: string
 ```
 
-Ability名称。默认值为空字符串。
-**模型约束：** 此接口仅可在Stage模型下使用。
+Ability名称。默认值为空字符串。 **模型约束：** 此接口仅可在Stage模型下使用。
 
 **类型：** string
 
@@ -49,8 +48,7 @@ appIndex?: number
 bundleName?: string
 ```
 
-应用包名。默认值为空字符串。
-**模型约束：** 此接口仅可在Stage模型下使用。
+应用包名。默认值为空字符串。 **模型约束：** 此接口仅可在Stage模型下使用。
 
 **类型：** string
 
@@ -68,8 +66,7 @@ bundleName?: string
 moduleName?: string
 ```
 
-Ability所属的模块名称。默认值为空字符串。
-**模型约束：** 此接口仅可在Stage模型下使用。
+Ability所属的模块名称。默认值为空字符串。 **模型约束：** 此接口仅可在Stage模型下使用。
 
 **类型：** string
 

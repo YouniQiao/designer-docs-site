@@ -236,11 +236,7 @@ Whether the current gesture recognizer is valid.
 preventBegin(): void
 ```
 
-Prevents a gesture recognizer from participating in the current gesture recognition before all fingers are lifted.
-If the system has already determined the result of the gesture recognizer (regardless of success or failure),
-calling this API will be ineffective. Unlike GestureRecognizer.[setEnabled](arkts-arkui-gesturerecognizer-c.md#setenabled-1)(isEnabled: boolean),
-which only affects callback execution, this API prevents the recognizer from participating in
-the recognition process entirely.
+Prevents a gesture recognizer from participating in the current gesture recognition before all fingers are lifted. If the system has already determined the result of the gesture recognizer (regardless of success or failure), calling this API will be ineffective. Unlike GestureRecognizer.[setEnabled](arkts-arkui-gesturerecognizer-c.md#setenabled-1)(isEnabled: boolean), which only affects callback execution, this API prevents the recognizer from participating in the recognition process entirely.
 
 **Since:** 20
 

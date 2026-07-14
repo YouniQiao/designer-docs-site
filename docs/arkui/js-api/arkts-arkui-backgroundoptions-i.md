@@ -12,9 +12,7 @@ Defines background options.
 align?: Alignment
 ```
 
-Set the alignment of the custom background and component.
-
-Anonymous Object Rectification.
+Set the alignment of the custom background and component. Anonymous Object Rectification.
 
 **Type:** Alignment
 
@@ -34,8 +32,7 @@ Anonymous Object Rectification.
 ignoresLayoutSafeAreaEdges?: Array<LayoutSafeAreaEdge>
 ```
 
-The set of edges for which to ignore layout safe area. To respect safe area insets on all edges, explicitly pass
-empty edge set.
+The set of edges for which to ignore layout safe area. To respect safe area insets on all edges, explicitly pass empty edge set.
 
 **Type:** Array<LayoutSafeAreaEdge>
 

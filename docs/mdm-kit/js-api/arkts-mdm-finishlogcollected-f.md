@@ -12,18 +12,7 @@ import { systemManager } from '@kit.MDMKit';
 function finishLogCollected(admin: Want): void
 ```
 
-Deletes the device logs collected by the current MDM app under the current user.
-
-> **NOTE**
->
-> After the app calls [startCollectLog](arkts-mdm-startcollectlog-f.md#startcollectlog-1) to initiate log collection and
-> receives the
-> [EnterpriseAdminExtensionAbility.onLogCollected](arkts-mdm-enterpriseadminextensionability-c.md#onlogcollected-1)
-> callback, you are advised to immediately copy or process the logs, and then call this API to delete the collected
-> logs.
->
-> If this API is not called, device logs will occupy the system storage space, which does not affect the next call
-> of [startCollectLog](arkts-mdm-startcollectlog-f.md#startcollectlog-1) to start a log collection task.
+Deletes the device logs collected by the current MDM app under the current user. > **NOTE** > > After the app calls [startCollectLog](arkts-mdm-startcollectlog-f.md#startcollectlog-1) to initiate log collection and > receives the > [EnterpriseAdminExtensionAbility.onLogCollected](arkts-mdm-enterpriseadminextensionability-c.md#onlogcollected-1) > callback, you are advised to immediately copy or process the logs, and then call this API to delete the collected > logs. > > If this API is not called, device logs will occupy the system storage space, which does not affect the next call > of [startCollectLog](arkts-mdm-startcollectlog-f.md#startcollectlog-1) to start a log collection task.
 
 **Since:** 23
 

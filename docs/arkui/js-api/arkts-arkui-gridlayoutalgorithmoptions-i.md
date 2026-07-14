@@ -12,11 +12,7 @@ Sets the number of columns, column spacing, and row spacing of the grid layout a
 columnsGap?: LengthMetrics
 ```
 
-Spacing between columns.
-
-Default value: **LengthMetrics.vp(0)**
-
-Invalid values are treated as the default value.
+Spacing between columns. Default value: **LengthMetrics.vp(0)** Invalid values are treated as the default value.
 
 **Type:** LengthMetrics
 
@@ -36,11 +32,7 @@ Invalid values are treated as the default value.
 columnsTemplate?: string | ItemFillPolicy
 ```
 
-Number of columns in the grid layout.
-
-Default value: **'1fr'**
-
-Invalid values are treated as the default value.
+Number of columns in the grid layout. Default value: **'1fr'** Invalid values are treated as the default value.
 
 **Type:** string | ItemFillPolicy
 
@@ -60,11 +52,7 @@ Invalid values are treated as the default value.
 rowsGap?: LengthMetrics
 ```
 
-Spacing between rows.
-
-Default value: **LengthMetrics.vp(0)**
-
-Invalid values are treated as the default value.
+Spacing between rows. Default value: **LengthMetrics.vp(0)** Invalid values are treated as the default value.
 
 **Type:** LengthMetrics
 

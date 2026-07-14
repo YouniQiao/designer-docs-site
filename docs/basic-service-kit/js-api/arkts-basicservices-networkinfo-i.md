@@ -32,8 +32,7 @@ DNS servers used for downloading resources.
 readonly ip?: string
 ```
 
-IP address of the URL used for downloading resources. When the DNS resolution fails, the IP address is
-undefined.
+IP address of the URL used for downloading resources. When the DNS resolution fails, the IP address is undefined.
 
 **Type:** string
 

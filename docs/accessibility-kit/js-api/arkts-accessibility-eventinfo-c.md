@@ -122,12 +122,7 @@ Name of the target application (mandatory).
 componentType?: string
 ```
 
-It should correspond to the event source component type, and the default value is empty.
-
-Example:
-
-- Button type - > 'Button'
-- Image type - > 'Image'
+It should correspond to the event source component type, and the default value is empty. Example: - Button type - > 'Button' - Image type - > 'Image'
 
 **Type:** string
 
@@ -145,8 +140,7 @@ Example:
 contents?: Array<string>
 ```
 
-Content list, which is set according to the actual scenario with no special restrictions. The default value is
-empty.
+Content list, which is set according to the actual scenario with no special restrictions. The default value is empty.
 
 **Type:** Array<string>
 
@@ -200,8 +194,7 @@ Component ID for active focusing, and the default value is empty.
 description?: string
 ```
 
-Event description, which is set according to the actual scenario with no special restrictions, and the default
-value is empty.
+Event description, which is set according to the actual scenario with no special restrictions, and the default value is empty.
 
 **Type:** string
 
@@ -273,8 +266,7 @@ Total number of items. The default value is **0**.
 lastContent?: string
 ```
 
-Latest content, which is set according to the actual scenario with no special restrictions. The default value is
-empty.
+Latest content, which is set according to the actual scenario with no special restrictions. The default value is empty.
 
 **Type:** string
 
@@ -310,8 +302,7 @@ ID of the page where the event occurs. The default value is **0**.
 textAnnouncedForAccessibility?: string
 ```
 
-Content for auto-broadcasting. When the application needs to proactively broadcast, set the broadcast content
-according to the actual scenario with no special restrictions, and the default value is empty.
+Content for auto-broadcasting. When the application needs to proactively broadcast, set the broadcast content according to the actual scenario with no special restrictions, and the default value is empty.
 
 **Type:** string
 

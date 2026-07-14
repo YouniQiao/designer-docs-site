@@ -12,9 +12,7 @@ import { wifi } from '@kit.ConnectivityKit';
 function removeUntrustedConfig(config: WifiDeviceConfig): Promise<boolean>
 ```
 
-Removes a specified untrusted hotspot configuration.
-
-<p>This method removes one configuration at a time.
+Removes a specified untrusted hotspot configuration. <p>This method removes one configuration at a time.
 
 **Since:** 7
 
@@ -79,9 +77,7 @@ try {
 function removeUntrustedConfig(config: WifiDeviceConfig, callback: AsyncCallback<boolean>): void
 ```
 
-Removes a specified untrusted hotspot configuration.
-
-<p>This method removes one configuration at a time.
+Removes a specified untrusted hotspot configuration. <p>This method removes one configuration at a time.
 
 **Since:** 7
 

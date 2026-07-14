@@ -12,8 +12,7 @@ import { formObserver } from '@kit.FormKit';
 function off(type: 'formAdd', hostBundleName?: string, observerCallback?: Callback<formInfo.RunningFormInfo>): void
 ```
 
-Cancels listening to the event of add form.
-<p>You can use this method to cancel listening to the event of add form.</p>
+Cancels listening to the event of add form. <p>You can use this method to cancel listening to the event of add form.</p>
 
 **Since:** 10
 
@@ -45,8 +44,7 @@ Cancels listening to the event of add form.
 function off(type: 'formRemove', hostBundleName?: string, observerCallback?: Callback<formInfo.RunningFormInfo>): void
 ```
 
-Cancels listening to the event of remove form.
-<p>You can use this method to cancel listening to the event of remove form.</p>
+Cancels listening to the event of remove form. <p>You can use this method to cancel listening to the event of remove form.</p>
 
 **Since:** 10
 
@@ -82,8 +80,7 @@ function off(
   ): void
 ```
 
-Cancels listening to the event of notifyVisible type change.
-<p>You can use this method to cancel listening to the event of notifyVisible type change.</p>
+Cancels listening to the event of notifyVisible type change. <p>You can use this method to cancel listening to the event of notifyVisible type change.</p>
 
 **Since:** 10
 
@@ -119,8 +116,7 @@ function off(
   ): void
 ```
 
-Cancels listening to the event of notifyInvisible type change.
-<p>You can use this method to cancel listening to the event of notifyInvisible type change.</p>
+Cancels listening to the event of notifyInvisible type change. <p>You can use this method to cancel listening to the event of notifyInvisible type change.</p>
 
 **Since:** 10
 

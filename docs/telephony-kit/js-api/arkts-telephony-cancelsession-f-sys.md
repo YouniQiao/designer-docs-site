@@ -12,9 +12,7 @@ import { eSIM } from '@kit.TelephonyKit';
 function cancelSession(slotId: number, transactionId: string, cancelReason: CancelReason): Promise<ResultCode>
 ```
 
-Cancel session can be used in the
-1.after the response to "ES9+.AuthenticateClient"
-2.after the response to "ES9+.GetBoundProfilePackage"
+Cancel session can be used in the 1.after the response to "ES9+.AuthenticateClient" 2.after the response to "ES9+.GetBoundProfilePackage"
 
 **Since:** 18
 

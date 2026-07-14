@@ -1,15 +1,6 @@
 # ImageFilter
 
-Implements an image filter.
-
-> **NOTE**
->
-> - The initial APIs of this class are supported since API version 12.
->
-> - This module uses the physical pixel unit, px.
->
-> - This module operates under a single-threaded model. The caller needs to manage thread safety and context state
-> transitions.
+Implements an image filter. > **NOTE** > > - The initial APIs of this class are supported since API version 12. > > - This module uses the physical pixel unit, px. > > - This module operates under a single-threaded model. The caller needs to manage thread safety and context state > transitions.
 
 **Since:** 12
 
@@ -93,8 +84,7 @@ Creates an image filter with a given blur effect.
 static createComposeImageFilter(cOuter: ImageFilter, cInner: ImageFilter): ImageFilter
 ```
 
-Cascades two image filters to create a new image filter. The first filter's output becomes the second filter's
-input. The second filter then processes this input to produce the final result.
+Cascades two image filters to create a new image filter. The first filter's output becomes the second filter's input. The second filter then processes this input to produce the final result.
 
 **Since:** 20
 
@@ -150,8 +140,7 @@ Creates an image filter object with a given color filter effect.
 static createFromImage(pixelmap: image.PixelMap, srcRect?: common2D.Rect | null, dstRect?: common2D.Rect | null): ImageFilter
 ```
 
-Creates an image filter from a given image. You are advised not to use the function for the canvas of the capture
-type because it affects the performance.
+Creates an image filter from a given image. You are advised not to use the function for the canvas of the capture type because it affects the performance.
 
 **Since:** 20
 

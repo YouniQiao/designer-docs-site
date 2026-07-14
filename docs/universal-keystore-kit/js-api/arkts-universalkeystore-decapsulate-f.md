@@ -13,9 +13,7 @@ function decapsulate(keyAlias: string, params: HuksParam[], encapData: Uint8Arra
       sharedKeyAlias?: string, sharedKeyParams?:  HuksParam[]): Promise<HuksReturnResult>
 ```
 
-Decapsulates a post-quantum cryptography key. This operation can be managed by HUKS
-or the app itself. If the app chooses to manage the key,
-the symmetric key is contained in the outData field of HuksReturnResult.
+Decapsulates a post-quantum cryptography key. This operation can be managed by HUKS or the app itself. If the app chooses to manage the key, the symmetric key is contained in the outData field of HuksReturnResult.
 
 **Since:** 26.0.0
 

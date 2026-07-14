@@ -18,8 +18,7 @@ import { connection } from '@kit.NetworkKit';
 dnsStrategy?: Socks5DnsStrategy
 ```
 
-DNS resolution strategy.
-Determines whether the client or the proxy server resolves the domain name.
+DNS resolution strategy. Determines whether the client or the proxy server resolves the domain name.
 
 **Type:** Socks5DnsStrategy
 

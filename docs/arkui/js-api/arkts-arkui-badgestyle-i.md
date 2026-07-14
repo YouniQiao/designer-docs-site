@@ -1,14 +1,6 @@
 # BadgeStyle
 
-Describes the badge style. It includes the font color, font size, badge color, badge size, etc.
-
-> **NOTE**
->
-> - When **borderWidth** is set to a value greater than 0 and **borderColor** is different from **badgeColor**, the
-> badge is drawn before the border. Edge pixels are anti-aliased, which produces semi-transparent pixels. This causes
-> the border in **badgeColor** to become visible at the four corners. To implement related scenarios, it is
-> recommended that you use the [Text](../../apis-arkgraphics2d/arkts-apis/arkts-graphics-text.md) component with its
-> [outline](arkts-arkui-commonmethod-c.md#outline-1) attribute instead of the **Badge** component.
+Describes the badge style. It includes the font color, font size, badge color, badge size, etc. > **NOTE** > > - When **borderWidth** is set to a value greater than 0 and **borderColor** is different from **badgeColor**, the > badge is drawn before the border. Edge pixels are anti-aliased, which produces semi-transparent pixels. This causes > the border in **badgeColor** to become visible at the four corners. To implement related scenarios, it is > recommended that you use the [Text](../../apis-arkgraphics2d/arkts-apis/arkts-graphics-text.md) component with its > [outline](arkts-arkui-commonmethod-c.md#outline-1) attribute instead of the **Badge** component.
 
 **Since:** 7
 
@@ -20,9 +12,7 @@ Describes the badge style. It includes the font color, font size, badge color, b
 badgeColor?: ResourceColor
 ```
 
-Badge color.
-
-Default value: **Color.Red**
+Badge color. Default value: **Color.Red**
 
 **Type:** ResourceColor
 
@@ -42,17 +32,7 @@ Default value: **Color.Red**
 badgeSize?: number | ResourceStr
 ```
 
-Badge size. The value of this parameter is a string of the number type. The unit can be px, vp, fp, or lpx, for
-example, 10 or 16fp. If no unit is specified, fp is used by default. If the value is **0**, the badge is not
-displayed.
-
-Unit: fp. Default value: **16vp**.
-
-**NOTE**
-
-1. Percentage values are not supported. If a percentage value is set, the default value is used.
-2. If **fontSize** is set and **badgeSize** is smaller than fontSize, **badgeSize** will take effect based on the
-value of **fontSize**.
+Badge size. The value of this parameter is a string of the number type. The unit can be px, vp, fp, or lpx, for example, 10 or 16fp. If no unit is specified, fp is used by default. If the value is **0**, the badge is not displayed. Unit: fp. Default value: **16vp**. **NOTE** 1. Percentage values are not supported. If a percentage value is set, the default value is used. 2. If **fontSize** is set and **badgeSize** is smaller than fontSize, **badgeSize** will take effect based on the value of **fontSize**.
 
 **Type:** number | ResourceStr
 
@@ -72,9 +52,7 @@ value of **fontSize**.
 borderColor?: ResourceColor
 ```
 
-Color of the background border.
-
-Default value: **Color.Red**
+Color of the background border. Default value: **Color.Red**
 
 **Type:** ResourceColor
 
@@ -94,15 +72,7 @@ Default value: **Color.Red**
 borderWidth?: Length
 ```
 
-Width of the background border.
-
-Default value: **1**
-
-Unit: vp
-
-**NOTE**
-
-Percentage values are not supported. If a percentage value is set, the default value is used.
+Width of the background border. Default value: **1** Unit: vp **NOTE** Percentage values are not supported. If a percentage value is set, the default value is used.
 
 **Type:** Length
 
@@ -122,9 +92,7 @@ Percentage values are not supported. If a percentage value is set, the default v
 color?: ResourceColor
 ```
 
-Font color.
-
-Default value: **Color.White**
+Font color. Default value: **Color.White**
 
 **Type:** ResourceColor
 
@@ -144,18 +112,7 @@ Default value: **Color.White**
 enableAutoAvoidance?: boolean
 ```
 
-Whether to enable avoidance when the badge text is extended.
-
-The value **true** means to enable avoidance, and **false** means the opposite.
-
-Default value: **false**.
-
-**NOTE**
-
-1. The avoidance effect is that the badge text is extended to the inside of the component.
-2. When the width of the outer border is greater than 0, the extension start point of the badge is the inner side
-of the outer border.
-3. When position is set to a specific coordinate value, the badge does not perform avoidance.
+Whether to enable avoidance when the badge text is extended. The value **true** means to enable avoidance, and **false** means the opposite. Default value: **false**. **NOTE** 1. The avoidance effect is that the badge text is extended to the inside of the component. 2. When the width of the outer border is greater than 0, the extension start point of the badge is the inner side of the outer border. 3. When position is set to a specific coordinate value, the badge does not perform avoidance.
 
 **Type:** boolean
 
@@ -175,19 +132,7 @@ of the outer border.
 fontSize?: number | ResourceStr
 ```
 
-Font size. The value of this parameter is a string of the number type. The unit can be px, vp, fp, or lpx, for
-example, 10 or 10fp. If no unit is specified, fp is used by default.
-
-Default value: **10vp**
-
-Default unit: fp
-
-The value must be greater than 0. If the value is **0**, the text is not displayed. If the value is less than 0,
-the default value is used.
-
-**NOTE**
-
-1. Percentage values are not supported. If a percentage value is set, the default value is used.
+Font size. The value of this parameter is a string of the number type. The unit can be px, vp, fp, or lpx, for example, 10 or 10fp. If no unit is specified, fp is used by default. Default value: **10vp** Default unit: fp The value must be greater than 0. If the value is **0**, the text is not displayed. If the value is less than 0, the default value is used. **NOTE** 1. Percentage values are not supported. If a percentage value is set, the default value is used.
 
 **Type:** number | ResourceStr
 
@@ -207,17 +152,7 @@ the default value is used.
 fontWeight?: number | FontWeight | ResourceStr
 ```
 
-Font weight of the text. For the number type, the value ranges from 100 to 900, at an interval of 100. A larger
-value indicates a bolder font. For the number type, if the value is not within the range, the default value **400**
-is used. For the string type, only strings that represent a number, for example, **400**, and the following
-enumerated values of **FontWeight** are supported: **bold**, **bolder**, **lighter**, **regular**, and **medium**.
-
-Default value: **FontWeight.Normal**
-
-**NOTE**
-
-Percentage values are not supported. If a percentage value is set, the default value is used. The ResourceStr type
-is supported since API version 20.
+Font weight of the text. For the number type, the value ranges from 100 to 900, at an interval of 100. A larger value indicates a bolder font. For the number type, if the value is not within the range, the default value **400** is used. For the string type, only strings that represent a number, for example, **400**, and the following enumerated values of **FontWeight** are supported: **bold**, **bolder**, **lighter**, **regular**, and **medium**. Default value: **FontWeight.Normal** **NOTE** Percentage values are not supported. If a percentage value is set, the default value is used. The ResourceStr type is supported since API version 20.
 
 **Type:** number | FontWeight | ResourceStr
 
@@ -235,9 +170,7 @@ is supported since API version 20.
 outerBorderColor?: ResourceColor
 ```
 
-Color of the background outer border.
-
-Default value: **Color.White**
+Color of the background outer border. Default value: **Color.White**
 
 **Type:** ResourceColor
 
@@ -257,13 +190,7 @@ Default value: **Color.White**
 outerBorderWidth?: LengthMetrics
 ```
 
-Width of the background outer border.
-
-Default value: **0**.
-
-Unit: vp
-
-Percentage values are not supported. If a percentage value is set, the default value is used.
+Width of the background outer border. Default value: **0**. Unit: vp Percentage values are not supported. If a percentage value is set, the default value is used.
 
 **Type:** LengthMetrics
 

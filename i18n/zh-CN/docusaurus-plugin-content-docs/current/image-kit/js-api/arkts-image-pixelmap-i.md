@@ -14,13 +14,7 @@ Sendable PixelMap instance.
 applyColorSpace(targetColorSpace: colorSpaceManager.ColorSpaceManager): Promise<void>
 ```
 
-Apply color space of pixelmap, the pixels will be changed by input color space.
-This method uses a promise to return the result.
-
-This method is used to change color space of PixelMap.
-Pixel data will be changed by calling this method.
-If you want to set the colorspace property of PixelMap only,
-use method {@Link #setColorSpace(colorSpaceManager.ColorSpaceManager)}.
+Apply color space of pixelmap, the pixels will be changed by input color space. This method uses a promise to return the result. This method is used to change color space of PixelMap. Pixel data will be changed by calling this method. If you want to set the colorspace property of PixelMap only, use method {@Link #setColorSpace(colorSpaceManager.ColorSpaceManager)}.
 
 **起始版本：** 12
 
@@ -812,8 +806,7 @@ async function ReadPixelsSync(pixelMap : sendableImage.PixelMap) {
 readPixelsToBuffer(dst: ArrayBuffer): Promise<void>
 ```
 
-Reads image pixelmap data and writes the data to an ArrayBuffer. This method uses
-a promise to return the result.
+Reads image pixelmap data and writes the data to an ArrayBuffer. This method uses a promise to return the result.
 
 **起始版本：** 12
 
@@ -1115,12 +1108,7 @@ async function ScaleSync(pixelMap : sendableImage.PixelMap) {
 setColorSpace(colorSpace: colorSpaceManager.ColorSpaceManager): void
 ```
 
-Set color space of pixelmap.
-
-This method is only used to set the colorspace property of PixelMap,
-while all pixel data remains the same after calling this method.
-If you want to change colorspace for all pixels, use method
-{@Link #applyColorSpace(colorSpaceManager.ColorSpaceManager)}.
+Set color space of pixelmap. This method is only used to set the colorspace property of PixelMap, while all pixel data remains the same after calling this method. If you want to change colorspace for all pixels, use method {@Link #applyColorSpace(colorSpaceManager.ColorSpaceManager)}.
 
 **起始版本：** 12
 
@@ -1344,8 +1332,7 @@ async function Unmarshalling() {
 writeBufferToPixels(src: ArrayBuffer): Promise<void>
 ```
 
-Reads image data in an ArrayBuffer and writes the data to a PixelMap object. This method
-uses a promise to return the result.
+Reads image data in an ArrayBuffer and writes the data to a PixelMap object. This method uses a promise to return the result.
 
 **起始版本：** 12
 
@@ -1440,8 +1427,7 @@ async function WriteBufferToPixelsSync(pixelMap: sendableImage.PixelMap) {
 writePixels(area: image.PositionArea): Promise<void>
 ```
 
-Writes image pixelmap data to the specified area. This method uses a promise to return
-the operation result.
+Writes image pixelmap data to the specified area. This method uses a promise to return the operation result.
 
 **起始版本：** 12
 

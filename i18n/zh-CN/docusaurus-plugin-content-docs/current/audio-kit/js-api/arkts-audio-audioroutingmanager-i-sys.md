@@ -1,13 +1,6 @@
 # AudioRoutingManager
 
-音频路由管理。
-
-在使用AudioRoutingManager的接口之前，需先通过[getRoutingManager](arkts-audio-audiomanager-i.md#getroutingmanager-1)获取
-AudioRoutingManager实例。
-
-> **说明：**
->
-> - 本Interface首批接口从API version 9开始支持。
+音频路由管理。 在使用AudioRoutingManager的接口之前，需先通过[getRoutingManager](arkts-audio-audiomanager-i.md#getroutingmanager-1)获取 AudioRoutingManager实例。 > **说明：** > > - 本Interface首批接口从API version 9开始支持。
 
 **起始版本：** 9
 
@@ -19,9 +12,7 @@ AudioRoutingManager实例。
 excludeOutputDevices(usage: DeviceUsage, devices: AudioDeviceDescriptors): Promise<void>
 ```
 
-Exclude output devices. After calling this function successfully, audio will not be played on the specified
-devices. Note that only the external ouput device can be excluded by this function. Local output devices is not
-accepted.
+Exclude output devices. After calling this function successfully, audio will not be played on the specified devices. Note that only the external ouput device can be excluded by this function. Local output devices is not accepted.
 
 **起始版本：** 18
 
@@ -92,8 +83,7 @@ async function excludeOutputDevices(){
 getActiveOutputDeviceDescriptors(): Promise<AudioDeviceDescriptors>
 ```
 
-获取当前音频设备情况下的活动输出设备描述符。
-激活策略与系统的音频设备策略相关。
+获取当前音频设备情况下的活动输出设备描述符。 激活策略与系统的音频设备策略相关。
 
 **起始版本：** 26.0.0
 
@@ -399,8 +389,7 @@ audioRoutingManager.offPreferredInputDeviceChangeByFilter(preferredInputDeviceCh
 on(type: 'preferredOutputDeviceChangeByFilter', filter: AudioRendererFilter, callback: Callback<AudioDeviceDescriptors>): void
 ```
 
-Subscribes to preferred output device change events. When preferred device for target audio renderer
-filter changes, registered clients will receive the callback.
+Subscribes to preferred output device change events. When preferred device for target audio renderer filter changes, registered clients will receive the callback.
 
 **起始版本：** 21
 
@@ -447,8 +436,7 @@ audioRoutingManager.on('preferredOutputDeviceChangeByFilter', outputAudioRendere
 onPreferredInputDeviceChangeByFilter(filter: AudioCapturerFilter, callback: Callback<AudioDeviceDescriptors>): void
 ```
 
-订阅首选输入设备变更事件。当目标音频的首选设备
-捕获器过滤器更改，已注册的客户端将收到回调。
+订阅首选输入设备变更事件。当目标音频的首选设备 捕获器过滤器更改，已注册的客户端将收到回调。
 
 **起始版本：** 26.0.0
 

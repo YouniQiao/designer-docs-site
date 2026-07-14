@@ -1,8 +1,6 @@
 # ProcessManager
 
-提供进程管理相关接口，包括进程 UID 判断、用户信息查询、线程优先级获取、环境变量获取、进程退出和信号发送等功能。
-
-通过 `new process.ProcessManager()` 构造 ProcessManager 对象。
+提供进程管理相关接口，包括进程 UID 判断、用户信息查询、线程优先级获取、环境变量获取、进程退出和信号发送等功能。 通过 `new process.ProcessManager()` 构造 ProcessManager 对象。
 
 **起始版本：** 9
 
@@ -14,9 +12,7 @@
 exit(code: number): void
 ```
 
-终止程序。
-
-请谨慎使用此接口，此接口调用后应用会退出，如果入参非 0 会产生数据丢失或者异常情况。
+终止程序。 请谨慎使用此接口，此接口调用后应用会退出，如果入参非 0 会产生数据丢失或者异常情况。
 
 **起始版本：** 9
 
@@ -33,8 +29,8 @@ exit(code: number): void
 **示例：**
 
 ```TypeScript
-let pro = new process.ProcessManager();
-pro.exit(0);
+let processManager = new process.ProcessManager();
+processManager.exit(0);
 
 ```
 
@@ -44,11 +40,7 @@ pro.exit(0);
 getEnvironmentVar(name: string): string
 ```
 
-获取环境变量对应的值。
-
-> **说明**
->
-> 获取环境变量的值。如果环境变量不存在，返回 **undefined**。
+获取环境变量对应的值。 > **说明** > > 获取环境变量的值。如果环境变量不存在，返回 **undefined**。
 
 **起始版本：** 9
 
@@ -71,8 +63,10 @@ getEnvironmentVar(name: string): string
 **示例：**
 
 ```TypeScript
-let pro = new process.ProcessManager();
-let pres = pro.getEnvironmentVar("PATH");
+// 创建ProcessManager实例
+let processManager = new process.ProcessManager();
+// 获取PATH环境变量的值
+let pres = processManager.getEnvironmentVar("PATH");
 
 ```
 
@@ -105,9 +99,12 @@ getSystemConfig(name: number): number
 **示例：**
 
 ```TypeScript
-let pro = new process.ProcessManager();
+// 创建ProcessManager实例
+let processManager = new process.ProcessManager();
+// 定义系统配置参数
 let _SC_ARG_MAX = 0;
-let pres = pro.getSystemConfig(_SC_ARG_MAX);
+// 获取系统配置信息
+let pres = processManager.getSystemConfig(_SC_ARG_MAX);
 
 ```
 
@@ -140,9 +137,12 @@ getThreadPriority(v: number): number
 **示例：**
 
 ```TypeScript
-let pro = new process.ProcessManager();
+// 创建ProcessManager实例
+let processManager = new process.ProcessManager();
+// 获取当前线程tid
 let tid = process.tid;
-let pres = pro.getThreadPriority(tid);
+// 根据tid获取线程优先级
+let pres = processManager.getThreadPriority(tid);
 
 ```
 
@@ -175,8 +175,10 @@ getUidForName(v: string): number
 **示例：**
 
 ```TypeScript
-let pro = new process.ProcessManager();
-let pres = pro.getUidForName("tool");
+// 创建ProcessManager实例
+let processManager = new process.ProcessManager();
+// 根据用户名获取uid
+let pres = processManager.getUidForName("tool");
 
 ```
 
@@ -209,11 +211,13 @@ isAppUid(v: number): boolean
 **示例：**
 
 ```TypeScript
-let pro = new process.ProcessManager();
+// 创建ProcessManager实例
+let processManager = new process.ProcessManager();
 // uid通过process.uid获取
 let pres = process.uid;
-let result = pro.isAppUid(pres);
-console.info("result: " + result); // result: true
+// 判断uid是否属于当前应用程序
+let result = processManager.isAppUid(pres);
+console.info("result:", result); // result: true
 
 ```
 
@@ -247,9 +251,12 @@ kill(signal: number, pid: number): boolean
 **示例：**
 
 ```TypeScript
-let pro = new process.ProcessManager();
+// 创建ProcessManager实例
+let processManager = new process.ProcessManager();
+// 获取当前进程pid
 let pres = process.pid;
-let result = pro.kill(28, pres);
+// 发送信号28结束当前进程
+let result = processManager.kill(28, pres);
 
 ```
 

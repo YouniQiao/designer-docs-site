@@ -48,8 +48,7 @@ Icon path of the toolbar item in the active state.
 activeSymbolIcon?: SymbolGlyphModifier
 ```
 
-Symbol icon for a single option on the menu bar when it is in active state. It has higher priority than
-**activeIcon**.
+Symbol icon for a single option on the menu bar when it is in active state. It has higher priority than **activeIcon**.
 
 **Type:** SymbolGlyphModifier
 
@@ -85,9 +84,7 @@ Icon path of the toolbar item.
 status?: ToolbarItemStatus
 ```
 
-Status of a toolbar item.
-
-Default value: **ToolbarItemStatus.NORMAL**
+Status of a toolbar item. Default value: **ToolbarItemStatus.NORMAL**
 
 **Type:** ToolbarItemStatus
 

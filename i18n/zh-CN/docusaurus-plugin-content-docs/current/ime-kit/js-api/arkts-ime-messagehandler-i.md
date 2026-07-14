@@ -12,10 +12,7 @@
 onMessage(msgId: string, msgParam?: ArrayBuffer): void
 ```
 
-接收已绑定当前输入法应用的编辑框应用发送的自定义数据回调函数。
-
-<p>当已注册的MessageHandler接收到来自已绑定当前输入法应用的编辑框应用所发送的自定义通信数据时，会触发该回调函数。</p>
-<p>msgId为必选参数，msgParam为可选参数。存在收到仅有msgId自定义数据的可能，需与数据发送方确认自定义数据。</p>
+接收已绑定当前输入法应用的编辑框应用发送的自定义数据回调函数。 <p>当已注册的MessageHandler接收到来自已绑定当前输入法应用的编辑框应用所发送的自定义通信数据时，会触发该回调函数。</p> <p>msgId为必选参数，msgParam为可选参数。存在收到仅有msgId自定义数据的可能，需与数据发送方确认自定义数据。</p>
 
 **起始版本：** 15
 
@@ -53,10 +50,7 @@ inputMethodEngine.getInputMethodAbility()
 onTerminated(): void
 ```
 
-监听对象终止回调函数。
-
-<p>当应用注册新的MessageHandler对象时，会触发上一个已注册MessageHandler对象的onTerminated回调函数。</p>
-<p>当应用取消注册时，会触发当前已注册MessageHandler对象的onTerminated回调函数。</p>
+监听对象终止回调函数。 <p>当应用注册新的MessageHandler对象时，会触发上一个已注册MessageHandler对象的onTerminated回调函数。</p> <p>当应用取消注册时，会触发当前已注册MessageHandler对象的onTerminated回调函数。</p>
 
 **起始版本：** 15
 

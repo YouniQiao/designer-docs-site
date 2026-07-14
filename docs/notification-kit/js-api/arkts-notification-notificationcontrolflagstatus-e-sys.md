@@ -1,7 +1,6 @@
 # NotificationControlFlagStatus (System API)
 
-Each bit can control the notification mode. When the bitwise OR operation is performed on
-**notificationControlFlags** and the enumerated values in the following table, the notification mode is disabled.
+Each bit can control the notification mode. When the bitwise OR operation is performed on **notificationControlFlags** and the enumerated values in the following table, the notification mode is disabled.
 
 **Since:** 12
 

@@ -1,6 +1,6 @@
 # MimeTypeFilter
 
-Media file filtering configuration.
+Describes the configuration for file type filtering.
 
 **Since:** 19
 
@@ -18,7 +18,7 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 mimeTypeArray: Array<string>
 ```
 
-Indicates the media file type to be filtered.
+Types of media files that PhotoPicker allows users to filter by. The maximum array length is 10, thus supporting up to 10 specified types. The filter type is defined by the MIME type, for example, image/jpeg and video/mp4.
 
 **Type:** Array<string>
 

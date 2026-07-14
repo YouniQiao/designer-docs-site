@@ -20,8 +20,7 @@ import { uiExtensionHost } from '@kit.ArkUI';
 createSubWindowWithOptions(name: string, subWindowOptions: window.SubWindowOptions): Promise<window.Window>
 ```
 
-Creates a subwindow for this **UIExtensionHostWindowProxy** instance. This API uses a promise to return the
-result.
+Creates a subwindow for this **UIExtensionHostWindowProxy** instance. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -194,8 +193,7 @@ export default class EntryAbility extends UIExtensionAbility {
 getWindowAvoidArea(type: window.AvoidAreaType): window.AvoidArea
 ```
 
-Obtains the area where this window cannot be displayed, for example, the system bar area, notch, gesture area,
-and soft keyboard area.
+Obtains the area where this window cannot be displayed, for example, the system bar area, notch, gesture area, and soft keyboard area.
 
 **Since:** 11
 
@@ -248,22 +246,7 @@ export default class EntryAbility extends UIExtensionAbility {
 hideNonSecureWindows(shouldHide: boolean): Promise<void>
 ```
 
-Sets whether to hide non-secure windows. This API uses a promise to return the result.
-
-> **NOTE**
->
-> - A non-secure window refers to any window that may obstruct the
-> [EmbeddedComponent](./@internal/component/ets/embedded_component) or
-> [UIExtensionComponent](./@internal/component/ets/ui_extension_component), such as global floating windows
-> , host subwindows, and dialog box windows created by the host application (excluding windows of these types
-> created by system applications).
->
-> - When using the **EmbeddedComponent** or **UIExtensionComponent** to display sensitive information, call this
-> API to hide non-secure windows and prevent information obstruction. Hidden non-secure windows will reappear
-> when the **EmbeddedComponent** or **UIExtensionComponent** is hidden or destroyed.
->
-> - On PCs/2-in-1 devices, global floating windows within non-secure windows remain visible when
-> **hideNonSecureWindows(true)** is called.
+Sets whether to hide non-secure windows. This API uses a promise to return the result. > **NOTE** > > - A non-secure window refers to any window that may obstruct the > [EmbeddedComponent](./@internal/component/ets/embedded_component) or > [UIExtensionComponent](./@internal/component/ets/ui_extension_component), such as global floating windows > , host subwindows, and dialog box windows created by the host application (excluding windows of these types > created by system applications). > > - When using the **EmbeddedComponent** or **UIExtensionComponent** to display sensitive information, call this > API to hide non-secure windows and prevent information obstruction. Hidden non-secure windows will reappear > when the **EmbeddedComponent** or **UIExtensionComponent** is hidden or destroyed. > > - On PCs/2-in-1 devices, global floating windows within non-secure windows remain visible when > **hideNonSecureWindows(true)** is called.
 
 **Since:** 11
 
@@ -334,15 +317,7 @@ export default class EntryAbility extends UIExtensionAbility {
 hidePrivacyContentForHost(shouldHide: boolean): Promise<void>
 ```
 
-Sets whether to enable privacy protection for the UIExtension component during non-system screenshots. This API
-uses a promise to return the result.
-
-> **NOTE**
->
-> When privacy protection is enabled, neither
-> [window.snapshot](@ohos.window:window.snapshot) nor
-> [UIContext.getComponentSnapshot](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getcomponentsnapshot12)
-> will capture the content of the current component (excluding subwindows created under this component).
+Sets whether to enable privacy protection for the UIExtension component during non-system screenshots. This API uses a promise to return the result. > **NOTE** > > When privacy protection is enabled, neither > [window.snapshot](@ohos.window:window.snapshot) nor > [UIContext.getComponentSnapshot](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getcomponentsnapshot12) > will capture the content of the current component (excluding subwindows created under this component).
 
 **Since:** 13
 
@@ -587,12 +562,7 @@ export default class EntryAbility extends UIExtensionAbility {
 setWaterMarkFlag(enable: boolean): Promise<void>
 ```
 
-Adds or deletes the watermark flag for this window. This API uses a promise to return the result.
-
-> **NOTE**
->
-> With the watermark flag added, the watermark is applied on the full screen when the window is in the foreground
-> , regardless of whether the window is displayed in full screen, floating, and split screen mode.
+Adds or deletes the watermark flag for this window. This API uses a promise to return the result. > **NOTE** > > With the watermark flag added, the watermark is applied on the full screen when the window is in the foreground > , regardless of whether the window is displayed in full screen, floating, and split screen mode.
 
 **Since:** 12
 
@@ -658,13 +628,7 @@ export default class EntryAbility extends UIExtensionAbility {
 properties: UIExtensionHostWindowProxyProperties
 ```
 
-Information about the host application window and the **UIExtensionComponent**.
-
-Note: Due to architecture restrictions, avoid obtaining the value in
-[onSessionCreate](../../apis-ability-kit/arkts-apis/arkts-ability-uiextensionability-c.md#onsessioncreate-1). Instead, when
-possible, obtain the value after receiving the
-[on('windowSizeChange')](arkts-arkui-uiextensionhostwindowproxy-i-sys.md#on-2)
-callback.
+Information about the host application window and the **UIExtensionComponent**. Note: Due to architecture restrictions, avoid obtaining the value in [onSessionCreate](../../apis-ability-kit/arkts-apis/arkts-ability-uiextensionability-c.md#onsessioncreate-1). Instead, when possible, obtain the value after receiving the [on('windowSizeChange')](arkts-arkui-uiextensionhostwindowproxy-i-sys.md#on-2) callback.
 
 **Type:** UIExtensionHostWindowProxyProperties
 

@@ -1,17 +1,6 @@
 # WebStorage
 
-通过WebStorage可管理Web SQL数据库接口和HTML5 Web存储接口，每个应用中的所有Web组件共享一个WebStorage。
-
-> **说明：**
->
-> - 本Class首批接口从API version 9开始支持。
->
-> - 示例效果请以真机运行为准。
->
-> - 目前调用WebStorage下的方法，都需要先加载Web组件。
->
-> - 本Class下的接口在ArkWeb内核升级到M132版本后因内核废弃Web SQL，对Web SQL数据库的管理失效。ArkWeb内核版本参考ArkWeb简介
-> [约束与限制](../../../../web/web-component-overview.md#约束与限制)。
+通过WebStorage可管理Web SQL数据库接口和HTML5 Web存储接口，每个应用中的所有Web组件共享一个WebStorage。 > **说明：** > > - 本Class首批接口从API version 9开始支持。 > > - 示例效果请以真机运行为准。 > > - 目前调用WebStorage下的方法，都需要先加载Web组件。 > > - 本Class下的接口在ArkWeb内核升级到M132版本后因内核废弃Web SQL，对Web SQL数据库的管理失效。ArkWeb内核版本参考ArkWeb简介 > [约束与限制](../../../../web/web-component-overview.md#约束与限制)。
 
 **起始版本：** 9
 

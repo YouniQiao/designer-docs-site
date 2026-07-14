@@ -54,8 +54,7 @@ try {
 function moveMissionToFront(missionId: number, options: StartOptions, callback: AsyncCallback<void>): void
 ```
 
-Switches a given mission to the foreground, with the startup parameters for the switching specified. This API uses
-an asynchronous callback to return the result.
+Switches a given mission to the foreground, with the startup parameters for the switching specified. This API uses an asynchronous callback to return the result.
 
 **Since:** 8
 
@@ -104,8 +103,7 @@ try {
 function moveMissionToFront(missionId: number, options?: StartOptions): Promise<void>
 ```
 
-Switches a given mission to the foreground, with the startup parameters for the switching specified. This API uses
-a promise to return the result.
+Switches a given mission to the foreground, with the startup parameters for the switching specified. This API uses a promise to return the result.
 
 **Since:** 8
 

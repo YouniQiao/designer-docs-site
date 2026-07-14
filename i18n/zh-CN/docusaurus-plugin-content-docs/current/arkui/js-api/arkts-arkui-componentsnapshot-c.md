@@ -1,14 +1,6 @@
 # ComponentSnapshot
 
-提供获取组件截图的能力，包括已加载的组件的截图和没有加载的组件的截图。
-
-> **说明：**
->
-> - 本Class首批接口从API version 12开始支持。
->
-> - 以下API需先使用UIContext中的[getComponentSnapshot()](arkts-arkui-uicontext-c.md#getcomponentsnapshot-1)方法获取ComponentSnapshot对象，再通过此实例调用对应方法。
->
-> - 缩放、平移、旋转等图形变换属性只对被截图组件的子组件生效；对目标组件本身应用图形变换属性不生效，显示的还是图形变换前的效果。
+提供获取组件截图的能力，包括已加载的组件的截图和没有加载的组件的截图。 > **说明：** > > - 本Class首批接口从API version 12开始支持。 > > - 以下API需先使用UIContext中的[getComponentSnapshot()](arkts-arkui-uicontext-c.md#getcomponentsnapshot-1)方法获取ComponentSnapshot对象，再通过此实例调用对应方法。 > > - 缩放、平移、旋转等图形变换属性只对被截图组件的子组件生效；对目标组件本身应用图形变换属性不生效，显示的还是图形变换前的效果。
 
 **起始版本：** 12
 
@@ -21,13 +13,7 @@ createFromBuilder(builder: CustomBuilder, callback: AsyncCallback<image.PixelMap
     delay?: number, checkImageStatus?: boolean, options?: componentSnapshot.SnapshotOptions): void
 ```
 
-传入[CustomBuilder](../arkts-components/arkts-arkui-custombuilder-t.md)自定义组件，系统对其进行离屏构建后进行截图。使用callback异步回调。
-
-> **说明：**
->
-> - 由于需要等待组件构建、渲染成功，离屏截图的回调有500ms以内的延迟，不适宜使用在对性能敏感的场景。
->
-> - 部分执行耗时任务的组件可能无法及时在截图前加载完成，因此会截取不到加载成功后的图像。例如：加载网络图片的[Image](../../apis-image-kit/arkts-apis/arkts-multimedia-image.md)组件、[Web](../../apis-arkweb/arkts-components/arkts-arkweb-web.md)组件。
+传入[CustomBuilder](../arkts-components/arkts-arkui-custombuilder-t.md)自定义组件，系统对其进行离屏构建后进行截图。使用callback异步回调。 > **说明：** > > - 由于需要等待组件构建、渲染成功，离屏截图的回调有500ms以内的延迟，不适宜使用在对性能敏感的场景。 > > - 部分执行耗时任务的组件可能无法及时在截图前加载完成，因此会截取不到加载成功后的图像。例如：加载网络图片的[Image](../../apis-image-kit/arkts-apis/arkts-multimedia-image.md)组件、[Web](../../apis-arkweb/arkts-components/arkts-arkweb-web.md)组件。
 
 **起始版本：** 12
 
@@ -64,13 +50,7 @@ createFromBuilder(builder: CustomBuilder, delay?: number,
     checkImageStatus?: boolean, options?: componentSnapshot.SnapshotOptions): Promise<image.PixelMap>
 ```
 
-传入[CustomBuilder](../arkts-components/arkts-arkui-custombuilder-t.md)自定义组件，系统对其进行离屏构建后进行截图。使用Promise异步回调。
-
-> **说明：**
->
-> - 由于需要等待组件构建、渲染成功，离屏截图的回调有500ms以内的延迟，不适宜使用在对性能敏感的场景。
->
-> - 部分执行耗时任务的组件可能无法及时在截图前加载完成，因此会截取不到加载成功后的图像。例如：加载网络图片的[Image](../../apis-image-kit/arkts-apis/arkts-multimedia-image.md)组件、[Web](../../apis-arkweb/arkts-components/arkts-arkweb-web.md)组件。
+传入[CustomBuilder](../arkts-components/arkts-arkui-custombuilder-t.md)自定义组件，系统对其进行离屏构建后进行截图。使用Promise异步回调。 > **说明：** > > - 由于需要等待组件构建、渲染成功，离屏截图的回调有500ms以内的延迟，不适宜使用在对性能敏感的场景。 > > - 部分执行耗时任务的组件可能无法及时在截图前加载完成，因此会截取不到加载成功后的图像。例如：加载网络图片的[Image](../../apis-image-kit/arkts-apis/arkts-multimedia-image.md)组件、[Web](../../apis-arkweb/arkts-components/arkts-arkweb-web.md)组件。
 
 **起始版本：** 12
 
@@ -153,11 +133,7 @@ createFromComponent<T extends Object>(content: ComponentContent<T>, delay?: numb
 get(id: string, callback: AsyncCallback<image.PixelMap>, options?: componentSnapshot.SnapshotOptions): void
 ```
 
-获取已加载的组件的截图，传入组件的[组件标识](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)，找到对应组件进行截图。使用callback异步回调。
-
-> **说明：**
->
-> 截图会获取最近一帧的绘制内容。如果在组件触发更新的同时调用截图，更新的渲染内容不会被截取到，截图会返回上一帧的绘制内容。
+获取已加载的组件的截图，传入组件的[组件标识](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)，找到对应组件进行截图。使用callback异步回调。 > **说明：** > > 截图会获取最近一帧的绘制内容。如果在组件触发更新的同时调用截图，更新的渲染内容不会被截取到，截图会返回上一帧的绘制内容。
 
 **起始版本：** 12
 
@@ -189,11 +165,7 @@ get(id: string, callback: AsyncCallback<image.PixelMap>, options?: componentSnap
 get(id: string, options?: componentSnapshot.SnapshotOptions): Promise<image.PixelMap>
 ```
 
-获取已加载的组件的截图，传入组件的[组件标识](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)，找到对应组件进行截图。使用Promise异步回调。
-
-> **说明：**
->
-> 截图会获取最近一帧的绘制内容。如果在组件触发更新的同时调用截图，更新的渲染内容不会被截取到，截图会返回上一帧的绘制内容。
+获取已加载的组件的截图，传入组件的[组件标识](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)，找到对应组件进行截图。使用Promise异步回调。 > **说明：** > > 截图会获取最近一帧的绘制内容。如果在组件触发更新的同时调用截图，更新的渲染内容不会被截取到，截图会返回上一帧的绘制内容。
 
 **起始版本：** 12
 
@@ -252,12 +224,7 @@ getSizeLimitation(): componentSnapshot.SnapshotSizeLimitation
 getSync(id: string, options?: componentSnapshot.SnapshotOptions): image.PixelMap
 ```
 
-获取已加载的组件的截图。传入组件的[组件标识](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)，找到对应组件进行截图，同步等待截图完成返回[PixelMap](../../apis-image-kit/arkts-apis/arkts-image-pixelmap-i.md)。
-本方法会阻塞主线程，请谨慎使用。接口的最大等待时间为3s，如果3s后未返回将会抛出异常。
-
-> **说明：**
->
-> 截图会获取最近一帧的绘制内容。如果在组件触发更新的同时调用截图，更新的渲染内容不会被截取到，截图会返回上一帧的绘制内容。
+获取已加载的组件的截图。传入组件的[组件标识](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)，找到对应组件进行截图，同步等待截图完成返回[PixelMap](../../apis-image-kit/arkts-apis/arkts-image-pixelmap-i.md)。 本方法会阻塞主线程，请谨慎使用。接口的最大等待时间为3s，如果3s后未返回将会抛出异常。 > **说明：** > > 截图会获取最近一帧的绘制内容。如果在组件触发更新的同时调用截图，更新的渲染内容不会被截取到，截图会返回上一帧的绘制内容。
 
 **起始版本：** 12
 
@@ -295,11 +262,7 @@ getSync(id: string, options?: componentSnapshot.SnapshotOptions): image.PixelMap
 getSyncWithUniqueId(uniqueId: number, options?: componentSnapshot.SnapshotOptions): image.PixelMap
 ```
 
-获取已加载的组件的截图，传入组件的uniqueId，找到对应组件进行截图。同步等待截图完成返回[PixelMap](../../apis-image-kit/arkts-apis/arkts-image-pixelmap-i.md)。
-
-> **说明：**
->
-> 截图会获取最近一帧的绘制内容。如果在组件触发更新的同时调用截图，更新的渲染内容不会被截取到，截图会返回上一帧的绘制内容。
+获取已加载的组件的截图，传入组件的uniqueId，找到对应组件进行截图。同步等待截图完成返回[PixelMap](../../apis-image-kit/arkts-apis/arkts-image-pixelmap-i.md)。 > **说明：** > > 截图会获取最近一帧的绘制内容。如果在组件触发更新的同时调用截图，更新的渲染内容不会被截取到，截图会返回上一帧的绘制内容。
 
 **起始版本：** 15
 
@@ -337,11 +300,7 @@ getSyncWithUniqueId(uniqueId: number, options?: componentSnapshot.SnapshotOption
 getWithUniqueId(uniqueId: number, options?: componentSnapshot.SnapshotOptions): Promise<image.PixelMap>
 ```
 
-获取已加载的组件的截图，传入组件的uniqueId，找到对应组件进行截图。使用Promise异步回调。
-
-> **说明：**
->
-> 截图会获取最近一帧的绘制内容。如果在组件触发更新的同时调用截图，更新的渲染内容不会被截取到，截图会返回上一帧的绘制内容。
+获取已加载的组件的截图，传入组件的uniqueId，找到对应组件进行截图。使用Promise异步回调。 > **说明：** > > 截图会获取最近一帧的绘制内容。如果在组件触发更新的同时调用截图，更新的渲染内容不会被截取到，截图会返回上一帧的绘制内容。
 
 **起始版本：** 15
 

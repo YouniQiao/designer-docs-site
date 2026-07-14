@@ -1,14 +1,6 @@
 # AudioStreamManager
 
-This interface implements audio stream management.
-
-Before calling any API in AudioStreamManager, you must use
-[getStreamManager](arkts-audio-audiomanager-i.md#getstreammanager-1) to obtain an
-AudioStreamManager instance.
-
-> **NOTE**
->
-> - The initial APIs of this interface are supported since API version 9.
+This interface implements audio stream management. Before calling any API in AudioStreamManager, you must use [getStreamManager](arkts-audio-audiomanager-i.md#getstreammanager-1) to obtain an AudioStreamManager instance. > **NOTE** > > - The initial APIs of this interface are supported since API version 9.
 
 **Since:** 9
 
@@ -26,8 +18,7 @@ import { audio } from '@kit.AudioKit';
 getAudioEffectInfoArray(usage: StreamUsage, callback: AsyncCallback<AudioEffectInfoArray>): void
 ```
 
-Obtains information about the audio effect mode in use. This API uses an asynchronous callback to return the
-result.
+Obtains information about the audio effect mode in use. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -115,12 +106,7 @@ Obtains information about the audio effect mode in use. This API returns the res
 getCurrentAudioCapturerInfoArray(callback: AsyncCallback<AudioCapturerChangeInfoArray>): void
 ```
 
-Obtains the information about this audio capturer. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> The audio capturer information returned by this API may include internal audio recording streams, such as voice
-> wakeup and cellular calls.
+Obtains the information about this audio capturer. This API uses an asynchronous callback to return the result. > **NOTE** > > The audio capturer information returned by this API may include internal audio recording streams, such as voice > wakeup and cellular calls.
 
 **Since:** 9
 
@@ -138,12 +124,7 @@ Obtains the information about this audio capturer. This API uses an asynchronous
 getCurrentAudioCapturerInfoArray(): Promise<AudioCapturerChangeInfoArray>
 ```
 
-Obtains the information about this audio capturer. This API uses a promise to return the result.
-
-> **NOTE**
->
-> The audio capturer information returned by this API may include internal audio recording streams, such as voice
-> wakeup and cellular calls.
+Obtains the information about this audio capturer. This API uses a promise to return the result. > **NOTE** > > The audio capturer information returned by this API may include internal audio recording streams, such as voice > wakeup and cellular calls.
 
 **Since:** 9
 
@@ -161,12 +142,7 @@ Obtains the information about this audio capturer. This API uses a promise to re
 getCurrentAudioCapturerInfoArraySync(): AudioCapturerChangeInfoArray
 ```
 
-Obtains the information about this audio capturer. This API returns the result synchronously.
-
-> **NOTE**
->
-> The audio capturer information returned by this API may include internal audio recording streams, such as voice
-> wakeup and cellular calls.
+Obtains the information about this audio capturer. This API returns the result synchronously. > **NOTE** > > The audio capturer information returned by this API may include internal audio recording streams, such as voice > wakeup and cellular calls.
 
 **Since:** 10
 
@@ -184,12 +160,7 @@ Obtains the information about this audio capturer. This API returns the result s
 getCurrentAudioRendererInfoArray(callback: AsyncCallback<AudioRendererChangeInfoArray>): void
 ```
 
-Obtains the information about this audio renderer. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> The audio renderer information returned by this API may include internal audio playback streams, such as
-> cellular calls and ultrasonic streams.
+Obtains the information about this audio renderer. This API uses an asynchronous callback to return the result. > **NOTE** > > The audio renderer information returned by this API may include internal audio playback streams, such as > cellular calls and ultrasonic streams.
 
 **Since:** 9
 
@@ -207,12 +178,7 @@ Obtains the information about this audio renderer. This API uses an asynchronous
 getCurrentAudioRendererInfoArray(): Promise<AudioRendererChangeInfoArray>
 ```
 
-Obtains the information about this audio renderer. This API uses a promise to return the result.
-
-> **NOTE**
->
-> The audio renderer information returned by this API may include internal audio playback streams, such as
-> cellular calls and ultrasonic streams.
+Obtains the information about this audio renderer. This API uses a promise to return the result. > **NOTE** > > The audio renderer information returned by this API may include internal audio playback streams, such as > cellular calls and ultrasonic streams.
 
 **Since:** 9
 
@@ -230,12 +196,7 @@ Obtains the information about this audio renderer. This API uses a promise to re
 getCurrentAudioRendererInfoArraySync(): AudioRendererChangeInfoArray
 ```
 
-Obtains the information about this audio renderer. This API returns the result synchronously.
-
-> **NOTE**
->
-> The audio renderer information returned by this API may include internal audio playback streams, such as
-> cellular calls and ultrasonic streams.
+Obtains the information about this audio renderer. This API returns the result synchronously. > **NOTE** > > The audio renderer information returned by this API may include internal audio playback streams, such as > cellular calls and ultrasonic streams.
 
 **Since:** 10
 
@@ -399,8 +360,7 @@ Checks whether the current system supports the specified audio loopback mode.
 isDirectPlaybackSupported(streamInfo: AudioStreamInfo, usage: StreamUsage): boolean
 ```
 
-Return if direct playback is supported for the specific audio stream info and usage type
-in current device situation.
+Return if direct playback is supported for the specific audio stream info and usage type in current device situation.
 
 **Since:** 26.0.0
 
@@ -427,8 +387,7 @@ in current device situation.
 isFastPlaybackSupported(streamInfo: AudioStreamInfo, usage: StreamUsage): boolean
 ```
 
-Return if fast playback is supported for the specific audio stream info and usage type
-in current device situation.
+Return if fast playback is supported for the specific audio stream info and usage type in current device situation.
 
 **Since:** 26.0.0
 
@@ -455,8 +414,7 @@ in current device situation.
 isFastRecordingSupported(streamInfo: AudioStreamInfo, source: SourceType): boolean
 ```
 
-Return if fast recording is supported for the specific audio stream info and usage type
-in current device situation.
+Return if fast recording is supported for the specific audio stream info and usage type in current device situation.
 
 **Since:** 26.0.0
 
@@ -483,8 +441,7 @@ in current device situation.
 isIntelligentNoiseReductionEnabledForCurrentDevice(sourceType: SourceType): boolean
 ```
 
-Checks whether the intelligent noise reduction feature is enabled for the audio stream of the specified source
-type.
+Checks whether the intelligent noise reduction feature is enabled for the audio stream of the specified source type.
 
 **Since:** 21
 
@@ -514,8 +471,7 @@ type.
 isMultichannelPlaybackSupported(streamInfo: AudioStreamInfo, usage: StreamUsage): boolean
 ```
 
-Return if multichannel playback is supported for the specific audio stream info and usage type
-in current device situation.
+Return if multichannel playback is supported for the specific audio stream info and usage type in current device situation.
 
 **Since:** 26.0.0
 
@@ -542,8 +498,7 @@ in current device situation.
 isOffloadPlaybackSupported(streamInfo: AudioStreamInfo, usage: StreamUsage): boolean
 ```
 
-Return if offload playback is supported for the specific audio stream info and usage type
-in current device situation.
+Return if offload playback is supported for the specific audio stream info and usage type in current device situation.
 
 **Since:** 26.0.0
 
@@ -630,12 +585,7 @@ Checks whether a stream is active. This API returns the result synchronously.
 off(type: 'audioRendererChange', callback?: Callback<AudioRendererChangeInfoArray>): void
 ```
 
-Unsubscribes from the audio renderer change event. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> The audio renderer information returned by this API may include internal audio playback streams, such as
-> cellular calls and ultrasonic streams.
+Unsubscribes from the audio renderer change event. This API uses an asynchronous callback to return the result. > **NOTE** > > The audio renderer information returned by this API may include internal audio playback streams, such as > cellular calls and ultrasonic streams.
 
 **Since:** 9
 
@@ -660,12 +610,7 @@ Unsubscribes from the audio renderer change event. This API uses an asynchronous
 off(type: 'audioCapturerChange', callback?: Callback<AudioCapturerChangeInfoArray>): void
 ```
 
-Unsubscribes from the audio capturer change event. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> The audio capturer information returned by this API may include internal audio recording streams, such as voice
-> wakeup and cellular calls.
+Unsubscribes from the audio capturer change event. This API uses an asynchronous callback to return the result. > **NOTE** > > The audio capturer information returned by this API may include internal audio recording streams, such as voice > wakeup and cellular calls.
 
 **Since:** 9
 
@@ -690,13 +635,7 @@ Unsubscribes from the audio capturer change event. This API uses an asynchronous
 on(type: 'audioRendererChange', callback: Callback<AudioRendererChangeInfoArray>): void
 ```
 
-Subscribes to the audio renderer change event, which is triggered when the audio playback stream status or device
-is changed. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> The audio renderer information returned by this API may include internal audio playback streams, such as
-> cellular calls and ultrasonic streams.
+Subscribes to the audio renderer change event, which is triggered when the audio playback stream status or device is changed. This API uses an asynchronous callback to return the result. > **NOTE** > > The audio renderer information returned by this API may include internal audio playback streams, such as > cellular calls and ultrasonic streams.
 
 **Since:** 9
 
@@ -722,13 +661,7 @@ is changed. This API uses an asynchronous callback to return the result.
 on(type: 'audioCapturerChange', callback: Callback<AudioCapturerChangeInfoArray>): void
 ```
 
-Subscribes to the audio capturer change event, which is triggered when the audio recording stream status or
-device is changed. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> The audio capturer information returned by this API may include internal audio recording streams, such as voice
-> wakeup and cellular calls.
+Subscribes to the audio capturer change event, which is triggered when the audio recording stream status or device is changed. This API uses an asynchronous callback to return the result. > **NOTE** > > The audio capturer information returned by this API may include internal audio recording streams, such as voice > wakeup and cellular calls.
 
 **Since:** 9
 

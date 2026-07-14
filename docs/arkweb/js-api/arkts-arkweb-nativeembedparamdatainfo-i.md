@@ -40,8 +40,7 @@ ID of the same-layer tag.
 paramItems?: Array<NativeEmbedParamItem>
 ```
 
-Details of the changed **param** element, including the status change type, ID, name, and value of each **param**
-element.
+Details of the changed **param** element, including the status change type, ID, name, and value of each **param** element.
 
 **Type:** Array<NativeEmbedParamItem>
 

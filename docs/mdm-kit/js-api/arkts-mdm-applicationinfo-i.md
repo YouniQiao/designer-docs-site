@@ -18,9 +18,7 @@ import { bundleManager } from '@kit.MDMKit';
 readonly accessTokenId: number
 ```
 
-Access token ID of the application, which is used in the
-[application access control verification API](../../../../reference/apis-ability-kit/js-apis-abilityAccessCtrl.md#checkaccesstoken9)
-.
+Access token ID of the application, which is used in the [application access control verification API](../../../../reference/apis-ability-kit/js-apis-abilityAccessCtrl.md#checkaccesstoken9) .
 
 **Type:** number
 
@@ -36,8 +34,7 @@ Access token ID of the application, which is used in the
 readonly appDistributionType: string
 ```
 
-Distribution type of the application signing certificate. For details, see the **appProvisionType** field in
-[ApplicationInfo](../../apis-ability-kit/arkts-apis/arkts-ability-applicationinfo-i.md).
+Distribution type of the application signing certificate. For details, see the **appProvisionType** field in [ApplicationInfo](../../apis-ability-kit/arkts-apis/arkts-ability-applicationinfo-i.md).
 
 **Type:** string
 
@@ -101,8 +98,7 @@ Installation directory of the application.
 readonly dataUnclearable: boolean
 ```
 
-Whether the application data is unclearable. The value **true** means that the application data is unclearable,
-and **false** means the opposite.
+Whether the application data is unclearable. The value **true** means that the application data is unclearable, and **false** means the opposite.
 
 **Type:** boolean
 
@@ -134,9 +130,7 @@ Whether the application is running in debug mode. **true** if in debug mode, **f
 readonly description: string
 ```
 
-Description of the application. It corresponds to the **description** field in
-[app.json5](../../../../quick-start/app-configuration-file.md). For details about **description**, see the
-**descriptionResource** field in this table.
+Description of the application. It corresponds to the **description** field in [app.json5](../../../../quick-start/app-configuration-file.md). For details about **description**, see the **descriptionResource** field in this table.
 
 **Type:** string
 
@@ -152,8 +146,7 @@ Description of the application. It corresponds to the **description** field in
 readonly descriptionId: number
 ```
 
-Resource ID of the application description. It is automatically generated during compilation and build based on
-the description configured for the application.
+Resource ID of the application description. It is automatically generated during compilation and build based on the description configured for the application.
 
 **Type:** number
 
@@ -169,8 +162,7 @@ the description configured for the application.
 readonly descriptionResource: Resource
 ```
 
-Resource information of the application description, including the bundle name, module name, and ID of the
-resource.
+Resource information of the application description, including the bundle name, module name, and ID of the resource.
 
 **Type:** Resource
 
@@ -202,9 +194,7 @@ Whether the application is enabled. **true** if enabled, **false** otherwise.
 readonly icon: string
 ```
 
-Application icon. It corresponds to the **icon** field in the
-[app.json5](../../../../quick-start/app-configuration-file.md) file. For details about **icon**, see the
-**iconResource** field in this table.
+Application icon. It corresponds to the **icon** field in the [app.json5](../../../../quick-start/app-configuration-file.md) file. For details about **icon**, see the **iconResource** field in this table.
 
 **Type:** string
 
@@ -236,8 +226,7 @@ Application icon, which is in Base64 encoding format.
 readonly iconId: number
 ```
 
-Resource ID of the application icon. It is automatically generated during compilation and build based on the icon
-configured for the application.
+Resource ID of the application icon. It is automatically generated during compilation and build based on the icon configured for the application.
 
 **Type:** number
 
@@ -269,13 +258,7 @@ Resource information of the application icon, including the bundle name, module 
 readonly installSource: string
 ```
 
-Installation source of the application. The options are as follows:
-
-- **pre-installed**: The application is a preset application installed at initial device startup.
-- **ota**: The application is a preset application added during system upgrade.
-- **recovery**: The preset application is uninstalled and then restored.
-- **bundleName**: The application corresponding to the bundle name is installed.
-- **unknown**: The installation source is unknown.
+Installation source of the application. The options are as follows: - **pre-installed**: The application is a preset application installed at initial device startup. - **ota**: The application is a preset application added during system upgrade. - **recovery**: The preset application is uninstalled and then restored. - **bundleName**: The application corresponding to the bundle name is installed. - **unknown**: The installation source is unknown.
 
 **Type:** string
 
@@ -307,8 +290,7 @@ Application label.
 readonly labelId: number
 ```
 
-Resource ID of the application label. It is automatically generated during compilation and build based on the
-label configured for the application.
+Resource ID of the application label. It is automatically generated during compilation and build based on the label configured for the application.
 
 **Type:** number
 
@@ -340,8 +322,7 @@ Resource information of the application label, including the bundle name, module
 readonly name: string
 ```
 
-Name of the application bundle. It corresponds to the **bundleName** field in the
-[app.json5](../../../../quick-start/app-configuration-file.md) file.
+Name of the application bundle. It corresponds to the **bundleName** field in the [app.json5](../../../../quick-start/app-configuration-file.md) file.
 
 **Type:** string
 
@@ -389,11 +370,7 @@ Process name.
 readonly releaseType: string
 ```
 
-Release type of the SDK used for application packing. Currently, the SDK release types include Canary, Beta, and
-Release. Each of the Canary and Beta releases can be distinguished by a sequential number, such as Canary1,
-Canary2, Beta1, and Beta2. You can compare the SDK release type on which application packaging depends and the OS
-release type (specified by [deviceInfo.distributionOSReleaseType](../../apis-basic-service-kit/arkts-apis/arkts-deviceinfo.md)) to
-determine the compatibility.
+Release type of the SDK used for application packing. Currently, the SDK release types include Canary, Beta, and Release. Each of the Canary and Beta releases can be distinguished by a sequential number, such as Canary1, Canary2, Beta1, and Beta2. You can compare the SDK release type on which application packaging depends and the OS release type (specified by [deviceInfo.distributionOSReleaseType](../../apis-basic-service-kit/arkts-apis/arkts-deviceinfo.md)) to determine the compatibility.
 
 **Type:** string
 

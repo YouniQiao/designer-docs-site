@@ -1,7 +1,6 @@
 # KVManagerConfig
 
-Provides the **KVManager** instance configuration, including the bundle name of the invoker and the application
-context.
+Provides the **KVManager** instance configuration, including the bundle name of the invoker and the application context.
 
 **Since:** 9
 
@@ -35,16 +34,7 @@ Bundle name.
 context: BaseContext
 ```
 
-Application context.
-
-For details about the application context of the FA model, see
-[Context](../apis-ability-kit/js-apis-inner-app-context.md).
-
-For details about the application context of the stage model, see
-[Context](../apis-ability-kit/js-apis-inner-application-uiAbilityContext.md).
-
-Since API version 10, the parameter type of context is
-[BaseContext](../apis-ability-kit/js-apis-inner-application-baseContext.md).
+Application context. For details about the application context of the FA model, see [Context](../apis-ability-kit/js-apis-inner-app-context.md). For details about the application context of the stage model, see [Context](../apis-ability-kit/js-apis-inner-application-uiAbilityContext.md). Since API version 10, the parameter type of context is [BaseContext](../apis-ability-kit/js-apis-inner-application-baseContext.md).
 
 **Type:** BaseContext
 

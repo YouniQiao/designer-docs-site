@@ -14,8 +14,7 @@ Enumerates the screenshot display intent type.
 CANONICAL = 0
 ```
 
-Specifies that the screenshot renders with canonical display attributes optimizing output for
-presentation on the HDR display.
+Specifies that the screenshot renders with canonical display attributes optimizing output for presentation on the HDR display.
 
 **Since:** 26.0.0
 
@@ -31,8 +30,7 @@ presentation on the HDR display.
 LOCAL = 1
 ```
 
-Specifies that the screenshot renders with local display attributes optimizing output for
-presentation on the capture display.
+Specifies that the screenshot renders with local display attributes optimizing output for presentation on the capture display.
 
 **Since:** 26.0.0
 

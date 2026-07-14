@@ -4,10 +4,7 @@
 declare type OnUIPickerComponentCallback = (selectedIndex: number) => void
 ```
 
-Defines the callback types for the [onChange](UIPickerComponentAttribute#onChange) and
-[onScrollStop](UIPickerComponentAttribute#onScrollStop) events.
-
-Value range: an integer in the range of [0, Number of child components – 1].
+Defines the callback types for the [onChange](UIPickerComponentAttribute#onChange) and [onScrollStop](UIPickerComponentAttribute#onScrollStop) events. Value range: an integer in the range of [0, Number of child components – 1].
 
 **Since:** 22
 

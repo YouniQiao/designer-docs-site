@@ -12,10 +12,7 @@ import { power } from '@kit.BasicServicesKit';
 function refreshActivity(reason: string): void
 ```
 
-Refreshes the device activity status (for example, resetting the screen-off time).
-
-This API takes effect only when the device is active. For details about the device activity status, see
-[power.isActive](arkts-basicservices-isactive-f.md#isactive-1).
+Refreshes the device activity status (for example, resetting the screen-off time). This API takes effect only when the device is active. For details about the device activity status, see [power.isActive](arkts-basicservices-isactive-f.md#isactive-1).
 
 **Since:** 20
 

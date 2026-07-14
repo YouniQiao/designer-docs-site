@@ -22,8 +22,7 @@ import { camera } from '@kit.CameraKit';
 getFocusDistance(): number
 ```
 
-Gets current focus distance, ranging from 0.0 to 1.0, with 0.0 being shortest
-distance at which the lens can focus and 1.0 the furthest. The default value is 1.0.
+Gets current focus distance, ranging from 0.0 to 1.0, with 0.0 being shortest distance at which the lens can focus and 1.0 the furthest. The default value is 1.0.
 
 **Since:** 24
 
@@ -53,8 +52,7 @@ distance at which the lens can focus and 1.0 the furthest. The default value is 
 setFocusDistance(distance: number): void
 ```
 
-Sets focus distance. Possible distance values range from 0.0 to 1.0, with 0.0 being shortest
-distance at which the lens can focus and 1.0 the furthest. The default value is 1.0.
+Sets focus distance. Possible distance values range from 0.0 to 1.0, with 0.0 being shortest distance at which the lens can focus and 1.0 the furthest. The default value is 1.0.
 
 **Since:** 24
 

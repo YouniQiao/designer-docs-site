@@ -1,6 +1,6 @@
 # MediaAssetChangeRequest
 
-Defines the class of media asset change request.
+Represents a media asset change request.
 
 **Inheritance/Implementation:** MediaAssetChangeRequest implements [MediaChangeRequest](arkts-medialibrary-mediachangerequest-i.md)
 
@@ -20,7 +20,7 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 addResource(type: ResourceType, fileUri: string): void
 ```
 
-Adds a resource using fileUri.
+Adds resources from the application sandbox based on the file URI. For details about the data source, see [@ohos.file.fileuri (File URI)](../../apis-core-file-kit/arkts-apis/arkts-file-fileuri.md). > **NOTE** > > For the same asset change request, this API cannot be repeatedly called after the resource is successfully > added. For a moving photo, you can call this API twice to add the image and video resources.
 
 **Since:** 11
 
@@ -33,13 +33,13 @@ Adds a resource using fileUri.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | ResourceType | Yes | Type of the resource to add. |
-| fileUri | string | Yes | Data source of the resource to be added, which is specified by a URI in the application sandbox directory. |
+| fileUri | string | Yes | Data source of the resource to be added, which is specified by a URI in theapplication sandbox directory. Example:**'file://com.example.temptest/data/storage/el2/base/haps/entry/files/test.jpg'**. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 13900002 | The file corresponding to the URI is not in the app sandbox. |
 | 14000011 | System inner fail |
 | 14000016 | Operation Not Support |
@@ -50,7 +50,7 @@ Adds a resource using fileUri.
 addResource(type: ResourceType, data: ArrayBuffer): void
 ```
 
-Adds a resource using ArrayBuffer data.
+Adds a resource using **ArrayBuffer** data. > **NOTE** > > For the same asset change request, this API cannot be repeatedly called after the resource is successfully > added. For a moving photo, you can call this API twice to add the image and video resources.
 
 **Since:** 11
 
@@ -69,7 +69,7 @@ Adds a resource using ArrayBuffer data.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | System inner fail |
 | 14000016 | Operation Not Support |
 
@@ -81,7 +81,7 @@ constructor(asset: PhotoAsset)
 
 Constructor used to initialize an asset change request.
 
-**Since:** 12
+**Since:** 11
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -97,7 +97,7 @@ Constructor used to initialize an asset change request.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | System inner fail |
 
 ## createAssetRequest
@@ -119,22 +119,22 @@ Create an asset change request based on the file type and filename extension.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | context | Context | Yes | Context of the ability instance. |
-| photoType | PhotoType | Yes | Type of the file to create, which can be IMAGE or VIDEO. |
-| extension | string | Yes | File name extension, for example, 'jpg'. |
-| options | CreateOptions | No | Options for creating the image or video asset, for example, {title: 'testPhoto'}. |
+| photoType | PhotoType | Yes | Type of the file to create, which can be **IMAGE** or **VIDEO**. |
+| extension | string | Yes | File name extension, for example, **'jpg'**. |
+| options | CreateOptions | No | Options for creating the image or video asset, for example,**{title: 'testPhoto'}**.<br>The file name must not contain any invalid characters, which are:.. \ / : * ? " ' ` &lt; &gt; \| { } [ ] |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| MediaAssetChangeRequest | - Returns a MediaAssetChangeRequest instance |
+| MediaAssetChangeRequest | **MediaAssetChangeRequest** created. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
-| 14000011 | System inner fail@static |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
+| 14000011 | System inner fail |
 
 ## createImageAssetRequest
 
@@ -142,9 +142,9 @@ Create an asset change request based on the file type and filename extension.
 static createImageAssetRequest(context: Context, fileUri: string): MediaAssetChangeRequest
 ```
 
-Creates an image asset change request.
+Creates an image asset change request. For details about data source of the asset to be created, see [@ohos.file.fileuri (File URI)](../../apis-core-file-kit/arkts-apis/arkts-file-fileuri.md).
 
-**Since:** 12
+**Since:** 11
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -155,21 +155,21 @@ Creates an image asset change request.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | context | Context | Yes | Context of the ability instance. |
-| fileUri | string | Yes | Data source of the image asset, which is specified by a URI in the application sandbox directory. |
+| fileUri | string | Yes | Data source of the image asset, which is specified by a URI in the applicationsandbox directory. Example: **'file://com.example.temptest/data/storage/el2/base/haps/entry/files/test.jpg'**. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| MediaAssetChangeRequest | - Returns a MediaAssetChangeRequest instance |
+| MediaAssetChangeRequest | **MediaAssetChangeRequest** created. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 13900002 | The file corresponding to the URI is not in the app sandbox. |
-| 14000011 | System inner fail@static |
+| 14000011 | System inner fail |
 
 ## createVideoAssetRequest
 
@@ -177,7 +177,7 @@ Creates an image asset change request.
 static createVideoAssetRequest(context: Context, fileUri: string): MediaAssetChangeRequest
 ```
 
-Creates a video asset change request.
+Creates a video asset change request. For details about data source of the asset to be created, see [@ohos.file.fileuri (File URI)](../../apis-core-file-kit/arkts-apis/arkts-file-fileuri.md).
 
 **Since:** 11
 
@@ -188,21 +188,21 @@ Creates a video asset change request.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | context | Context | Yes | Context of the ability instance. |
-| fileUri | string | Yes | Data source of the video asset, which is specified by a URI in the application sandbox directory. |
+| fileUri | string | Yes | Data source of the video asset, which is specified by a URI in the applicationsandbox directory. Example: **'file://com.example.temptest/data/storage/el2/base/haps/entry/files/test.mp4'**. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| MediaAssetChangeRequest | - Returns a MediaAssetChangeRequest instance |
+| MediaAssetChangeRequest | **MediaAssetChangeRequest** created. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 13900002 | The file corresponding to the URI is not in the app sandbox. |
-| 14000011 | System inner fail@static |
+| 14000011 | System inner fail |
 
 ## deleteAssets
 
@@ -210,7 +210,7 @@ Creates a video asset change request.
 static deleteAssets(context: Context, assets: Array<PhotoAsset>): Promise<void>
 ```
 
-Deletes media assets. This API uses a promise to return the result. The deleted assets are moved to the trash.
+Deletes media assets. The deleted assets are moved to the trash. This API uses a promise to return the result.
 
 **Since:** 11
 
@@ -223,21 +223,21 @@ Deletes media assets. This API uses a promise to return the result. The deleted 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | context | Context | Yes | Context of the ability instance. |
-| assets | Array&lt;PhotoAsset&gt; | Yes | Array of assets to delete. |
+| assets | Array&lt;PhotoAsset&gt; | Yes | Array of media assets to delete. The array can contain a maximum of 300elements. &lt;!--Del--&gt;System applications are not subject to this limitation.&lt;!--DelEnd--&gt; |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | - Returns void |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
-| 14000011 | System inner fail@static |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
+| 14000011 | System inner fail |
 
 ## deleteAssets
 
@@ -245,7 +245,7 @@ Deletes media assets. This API uses a promise to return the result. The deleted 
 static deleteAssets(context: Context, uriList: Array<string>): Promise<void>
 ```
 
-Deletes media assets. This API uses a promise to return the result. The deleted assets are moved to the trash.
+Deletes media assets. The deleted assets are moved to the trash. This API uses a promise to return the result.
 
 **Since:** 11
 
@@ -258,22 +258,22 @@ Deletes media assets. This API uses a promise to return the result. The deleted 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | context | Context | Yes | Context of the ability instance. |
-| uriList | Array&lt;string&gt; | Yes | URIs of the media files to delete. |
+| uriList | Array&lt;string&gt; | Yes | URIs of the media assets to delete. The array can contain a maximum of 300elements. &lt;!--Del--&gt;System applications are not subject to this limitation.&lt;!--DelEnd--&gt; |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | - Returns void |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000002 | The uri format is incorrect or does not exist. |
-| 14000011 | System inner fail@static |
+| 14000011 | System inner fail |
 
 ## discardCameraPhoto
 
@@ -300,9 +300,9 @@ Discards the photo taken by the camera.
 getAsset(): PhotoAsset
 ```
 
-Obtains the asset in this asset change request.
+Obtains the asset in this asset change request. > **NOTE** > > For the change request used to create an asset, this API returns **null** before > [applyChanges](arkts-medialibrary-photoaccesshelper-i.md#applychanges-1) is called > to apply the changes.
 
-**Since:** 12
+**Since:** 11
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -312,13 +312,13 @@ Obtains the asset in this asset change request.
 
 | Type | Description |
 | --- | --- |
-| PhotoAsset | - Returns the asset |
+| PhotoAsset | Asset obtained. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 | 14000011 | System inner fail |
 
 ## getWriteCacheHandler
@@ -327,7 +327,7 @@ Obtains the asset in this asset change request.
 getWriteCacheHandler(): Promise<number>
 ```
 
-Obtains the handler used for writing a file to cache.
+Obtains the handler used for writing a file to cache. This API uses a promise to return the result. > **NOTE** > > For the same asset change request, this API cannot be repeatedly called after a temporary file write handle is > successfully obtained.
 
 **Since:** 11
 
@@ -339,15 +339,15 @@ Obtains the handler used for writing a file to cache.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;number&gt; | Returns the write cache handler |
+| Promise&lt;number&gt; | Promise used to return the write handle obtained. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
-| 14000011 | System inner fail |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
+| 14000011 | System inner fail. Possible causes:<br>1. The database is corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 | 14000016 | Operation Not Support |
 
 ## saveCameraPhoto
@@ -410,13 +410,13 @@ Sets the orientation of this image.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| orientation | number | Yes | Rotation angle of the image to set. The value can only be 0, 90, 180, or 270. |
+| orientation | number | Yes | Rotation angle of the image to set. The value can only be **0**, **90**, **180**, or**270**. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | Internal system error |
 
 ## setTitle
@@ -427,7 +427,7 @@ setTitle(title: string): void
 
 Sets the media asset title.
 
-**Since:** 12
+**Since:** 11
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -443,7 +443,7 @@ Sets the media asset title.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | System inner fail |
 
 ## comment

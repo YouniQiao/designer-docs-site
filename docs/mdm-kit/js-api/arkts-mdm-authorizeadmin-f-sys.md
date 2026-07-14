@@ -12,8 +12,7 @@ import { adminManager } from '@kit.MDMKit';
 function authorizeAdmin(admin: Want, bundleName: string, callback: AsyncCallback<void>): void
 ```
 
-Authorizes the administrator permission to a specified application. This API uses an asynchronous callback to
-return the result.
+Authorizes the administrator permission to a specified application. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 

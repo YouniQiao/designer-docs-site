@@ -7,9 +7,7 @@ function queryExtensionAbilityInfoSync(want: Want, extensionAbilityType: Extensi
     extensionAbilityFlags: number, userId?: number): Array<ExtensionAbilityInfo>
 ```
 
-以同步方法根据给定的want、extensionAbilityType、extensionAbilityFlags和userId获取ExtensionAbilityInfo。
-
-获取调用方自身的信息时不需要权限。
+以同步方法根据给定的want、extensionAbilityType、extensionAbilityFlags和userId获取ExtensionAbilityInfo。 获取调用方自身的信息时不需要权限。
 
 **起始版本：** 10
 
@@ -105,9 +103,7 @@ function queryExtensionAbilityInfoSync(want: Want, extensionAbilityType: string,
     extensionAbilityFlags: number, userId?: number): Array<ExtensionAbilityInfo>
 ```
 
-根据给定的want、extensionAbilityType、extensionAbilityFlags和userId获取ExtensionAbilityInfo，使用同步方式返回结果。
-
-获取调用方自身的信息时不需要权限。
+根据给定的want、extensionAbilityType、extensionAbilityFlags和userId获取ExtensionAbilityInfo，使用同步方式返回结果。 获取调用方自身的信息时不需要权限。
 
 **起始版本：** 11
 
@@ -203,9 +199,7 @@ function queryExtensionAbilityInfoSync(extensionAbilityType: string, extensionAb
     userId?: number): Array<ExtensionAbilityInfo>
 ```
 
-根据给定的extensionAbilityType、extensionAbilityFlags和userId获取ExtensionAbilityInfo。
-
-获取调用方自身的信息时不需要权限。
+根据给定的extensionAbilityType、extensionAbilityFlags和userId获取ExtensionAbilityInfo。 获取调用方自身的信息时不需要权限。
 
 **起始版本：** 11
 

@@ -1,7 +1,6 @@
 # ArcListAttribute
 
-In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the
-following attributes are supported.
+In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following attributes are supported.
 
 **Inheritance/Implementation:** ArcListAttribute extends [CommonMethod<ArcListAttribute>](CommonMethod<ArcListAttribute>)
 
@@ -21,14 +20,7 @@ import { ArcListItemAttribute, ArcList, ArcListItem, ArcListAttribute } from '@k
 cachedCount(count: Optional<number>): ArcListAttribute
 ```
 
-Sets the number of arc list items to be preloaded (cached). In a lazy loading scenario,
-only the content equivalent to **cachedCount** outside the visible area of the arc list is
-preloaded. In a non-lazy loading scenario, all items are loaded at once. For both lazy and
-non-lazy loading, only the content within the visible area of the arc list plus the content
-equivalent to **cachedCount** outside the visible area is laid out.
-When **cachedCount** is set for the arc list, the system preloads and lays out the
-**cachedCount**-specified number of rows of arc list items both above and below the
-currently visible area of the arc list.
+Sets the number of arc list items to be preloaded (cached). In a lazy loading scenario, only the content equivalent to **cachedCount** outside the visible area of the arc list is preloaded. In a non-lazy loading scenario, all items are loaded at once. For both lazy and non-lazy loading, only the content within the visible area of the arc list plus the content equivalent to **cachedCount** outside the visible area is laid out. When **cachedCount** is set for the arc list, the system preloads and lays out the **cachedCount**-specified number of rows of arc list items both above and below the currently visible area of the arc list.
 
 **Since:** 18
 
@@ -54,14 +46,7 @@ currently visible area of the arc list.
 chainAnimation(enable: Optional<boolean>): ArcListAttribute
 ```
 
-Sets whether to enable chained animations, which provide a visually connected, or
-"chained," effect when the **ArcList** component is scrolled or its top or bottom edge is
-dragged.
-The list items are separated with even space, and one item animation starts after the
-previous animation during basic sliding interactions. The chained animation effect is
-similar with spring physics.
-For chained animations to work properly, the edge scrolling effect of the **ArcList**
-component must be set to **EdgeEffect.Spring**.
+Sets whether to enable chained animations, which provide a visually connected, or "chained," effect when the **ArcList** component is scrolled or its top or bottom edge is dragged. The list items are separated with even space, and one item animation starts after the previous animation during basic sliding interactions. The chained animation effect is similar with spring physics. For chained animations to work properly, the edge scrolling effect of the **ArcList** component must be set to **EdgeEffect.Spring**.
 
 **Since:** 18
 
@@ -87,8 +72,7 @@ component must be set to **EdgeEffect.Spring**.
 childrenMainSize(size: Optional<ChildrenMainSize>): ArcListAttribute
 ```
 
-Sets the size information of the child components of the **ArcList** component along the
-main axis.
+Sets the size information of the child components of the **ArcList** component along the main axis.
 
 **Since:** 18
 
@@ -192,8 +176,7 @@ Sets whether to enable the edge fading effect.
 flingSpeedLimit(speed: Optional<number>): ArcListAttribute
 ```
 
-Sets the maximum initial speed for inertial scrolling after a fling gesture. If this
-attribute is set to a value less than or equal to 0, the default value is used.
+Sets the maximum initial speed for inertial scrolling after a fling gesture. If this attribute is set to a value less than or equal to 0, the default value is used.
 
 **Since:** 18
 
@@ -219,9 +202,7 @@ attribute is set to a value less than or equal to 0, the default value is used.
 friction(friction: Optional<number>): ArcListAttribute
 ```
 
-Sets the friction coefficient. It applies only to gestures in the scrolling area, and it
-affects only the inertial scrolling process. If this attribute is set to a value less than
-or equal to 0, the default value is used.
+Sets the friction coefficient. It applies only to gestures in the scrolling area, and it affects only the inertial scrolling process. If this attribute is set to a value less than or equal to 0, the default value is used.
 
 **Since:** 18
 
@@ -247,8 +228,7 @@ or equal to 0, the default value is used.
 onDidScroll(handler: Optional<OnScrollCallback>): ArcListAttribute
 ```
 
-Triggered when the list scrolls. The return value is the offset amount by which the list
-has scrolled and the current scroll state.
+Triggered when the list scrolls. The return value is the offset amount by which the list has scrolled and the current scroll state.
 
 **Since:** 18
 
@@ -274,9 +254,7 @@ has scrolled and the current scroll state.
 onReachEnd(handler: Optional<VoidCallback>): ArcListAttribute
 ```
 
-Triggered when the list reaches the end position.
-If the edge scrolling effect is set to spring, this event is triggered when scrolling past
-the end position and again when bouncing back to it.
+Triggered when the list reaches the end position. If the edge scrolling effect is set to spring, this event is triggered when scrolling past the end position and again when bouncing back to it.
 
 **Since:** 18
 
@@ -302,11 +280,7 @@ the end position and again when bouncing back to it.
 onReachStart(handler: Optional<VoidCallback>): ArcListAttribute
 ```
 
-Triggered when the list reaches the start position.
-This event is triggered during initialization of the **ArcList** component if
-**initialIndex** is set to **0**, and whenever the list scrolls to the start position.
-If the edge scrolling effect is set to spring, this event is triggered when scrolling past
-the start position and again when bouncing back to it.
+Triggered when the list reaches the start position. This event is triggered during initialization of the **ArcList** component if **initialIndex** is set to **0**, and whenever the list scrolls to the start position. If the edge scrolling effect is set to spring, this event is triggered when scrolling past the start position and again when bouncing back to it.
 
 **Since:** 18
 
@@ -332,12 +306,7 @@ the start position and again when bouncing back to it.
 onScrollIndex(handler: Optional<ArcScrollIndexHandler>): ArcListAttribute
 ```
 
-Triggered when a child component enters or leaves the visible area of the **ArcList**
-component. This event is triggered during initialization of the **ArcList** component and
-when the index of the first or last child component in the visible area changes, or when
-the center child component changes.
-If the edge scrolling effect of the **ArcList** component is set to spring, this event is
-not triggered during continued scrolling at the edge or during the bounce-back process.
+Triggered when a child component enters or leaves the visible area of the **ArcList** component. This event is triggered during initialization of the **ArcList** component and when the index of the first or last child component in the visible area changes, or when the center child component changes. If the edge scrolling effect of the **ArcList** component is set to spring, this event is not triggered during continued scrolling at the edge or during the bounce-back process.
 
 **Since:** 18
 
@@ -363,9 +332,7 @@ not triggered during continued scrolling at the edge or during the bounce-back p
 onScrollStart(handler: Optional<VoidCallback>): ArcListAttribute
 ```
 
-Triggered when the list starts scrolling initiated by the user's finger dragging the list
-or its scrollbar. This event is also triggered when the animation contained in the
-scrolling triggered by **Scroller** starts.
+Triggered when the list starts scrolling initiated by the user's finger dragging the list or its scrollbar. This event is also triggered when the animation contained in the scrolling triggered by **Scroller** starts.
 
 **Since:** 18
 
@@ -391,9 +358,7 @@ scrolling triggered by **Scroller** starts.
 onScrollStop(handler: Optional<VoidCallback>): ArcListAttribute
 ```
 
-Triggered when the list stops scrolling after the user's finger leaves the screen.
-This event is also triggered when the animation contained in the scrolling triggered by
-**Scroller** stops.
+Triggered when the list stops scrolling after the user's finger leaves the screen. This event is also triggered when the animation contained in the scrolling triggered by **Scroller** stops.
 
 **Since:** 18
 
@@ -419,9 +384,7 @@ This event is also triggered when the animation contained in the scrolling trigg
 onWillScroll(handler: Optional<OnWillScrollCallback>): ArcListAttribute
 ```
 
-Triggered before each frame during list scrolling. The callback returns the offset amount
-by which the list will scroll and the current scroll state. The returned offset is a
-calculated value, not the actual offset.
+Triggered before each frame during list scrolling. The callback returns the offset amount by which the list will scroll and the current scroll state. The returned offset is a calculated value, not the actual offset.
 
 **Since:** 18
 
@@ -499,8 +462,7 @@ Sets the color of the scrollbar.
 scrollBarWidth(width: Optional<LengthMetrics>): ArcListAttribute
 ```
 
-Sets the width of the scrollbar. Once the width is set, the scrollbar will use this
-width in its pressed state.
+Sets the width of the scrollbar. Once the width is set, the scrollbar will use this width in its pressed state.
 
 **Since:** 18
 

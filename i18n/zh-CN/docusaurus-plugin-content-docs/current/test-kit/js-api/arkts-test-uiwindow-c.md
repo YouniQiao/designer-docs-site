@@ -1,7 +1,6 @@
 # UiWindow
 
-UiWindow代表了UI界面上的一个窗口，提供窗口属性获取，窗口拖动、调整窗口大小等能力。
-该类提供的所有方法都使用Promise方式作为异步方法，需使用await方式调用。
+UiWindow代表了UI界面上的一个窗口，提供窗口属性获取，窗口拖动、调整窗口大小等能力。 该类提供的所有方法都使用Promise方式作为异步方法，需使用await方式调用。
 
 **起始版本：** 9
 
@@ -348,11 +347,7 @@ async function demo() {
 isActived(): Promise<boolean>
 ```
 
-判断窗口是否为用户正在交互窗口。使用Promise异步回调。
-
-> **说明：**
->
-> 从API version 9开始支持，从API version 11开始废弃，建议使用[isActive<sup>11+</sup>](arkts-test-uiwindow-c.md#isactive-1)替代。
+判断窗口是否为用户正在交互窗口。使用Promise异步回调。 > **说明：** > > 从API version 9开始支持，从API version 11开始废弃，建议使用[isActive<sup>11+</sup>](arkts-test-uiwindow-c.md#isactive-1)替代。
 
 **起始版本：** 9
 

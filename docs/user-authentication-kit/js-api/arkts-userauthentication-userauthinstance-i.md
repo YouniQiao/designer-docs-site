@@ -1,17 +1,6 @@
 # UserAuthInstance
 
-Provides APIs for user authentication. The user authentication widget is supported. This API provides complete user
-authentication capabilities, including subscribing to authentication results and intermediate states, and starting
-and canceling authentication. The unified authentication widget provides users with a standardized authentication
-UI and consistent authentication experience.
-
-Before using the APIs of **UserAuthInstance**, you must obtain a **UserAuthInstance** instance by using
-[getUserAuthInstance](arkts-userauthentication-getuserauthinstance-f.md#getuserauthinstance-1).
-
-> **NOTE**
-
-> Each **UserAuthInstance** can be used for only one authentication process. To perform authentication again, you
-> must obtain a new **UserAuthInstance** instance.
+Provides APIs for user authentication. The user authentication widget is supported. This API provides complete user authentication capabilities, including subscribing to authentication results and intermediate states, and starting and canceling authentication. The unified authentication widget provides users with a standardized authentication UI and consistent authentication experience. Before using the APIs of **UserAuthInstance**, you must obtain a **UserAuthInstance** instance by using [getUserAuthInstance](arkts-userauthentication-getuserauthinstance-f.md#getuserauthinstance-1). > **NOTE** > Each **UserAuthInstance** can be used for only one authentication process. To perform authentication again, you > must obtain a new **UserAuthInstance** instance.
 
 **Since:** 10
 
@@ -29,11 +18,7 @@ import { userAuth } from '@kit.UserAuthenticationKit';
 cancel(): void
 ```
 
-Cancels this authentication.
-
-> **NOTE**
-
-> **UserAuthInstance** must be the instance being authenticated.
+Cancels this authentication. > **NOTE** > **UserAuthInstance** must be the instance being authenticated.
 
 **Since:** 10
 
@@ -101,12 +86,7 @@ try {
 off(type: 'result', callback?: IAuthCallback): void
 ```
 
-Unsubscribes from the user authentication result.
-
-> **NOTE**
-
-> The [UserAuthInstance](arkts-userauthentication-userauthinstance-i.md) instance used to invoke this API must be the one used
-> to subscribe to the event.
+Unsubscribes from the user authentication result. > **NOTE** > The [UserAuthInstance](arkts-userauthentication-userauthinstance-i.md) instance used to invoke this API must be the one used > to subscribe to the event.
 
 **Since:** 10
 
@@ -179,12 +159,7 @@ try {
 off(type: 'authTip', callback?: AuthTipCallback): void
 ```
 
-Unsubscribes from the event for intermediate authentication status.
-
-> **NOTE**
-
-> The [UserAuthInstance](arkts-userauthentication-userauthinstance-i.md) instance used to invoke this API must be the one used
-> to subscribe to the event.
+Unsubscribes from the event for intermediate authentication status. > **NOTE** > The [UserAuthInstance](arkts-userauthentication-userauthinstance-i.md) instance used to invoke this API must be the one used > to subscribe to the event.
 
 **Since:** 20
 
@@ -254,22 +229,7 @@ try {
 on(type: 'result', callback: IAuthCallback): void
 ```
 
-Subscribes to the user authentication result. This API is used to obtain the final identity authentication result
-after the user completes identity authentication interaction with the authentication component. Before the
-authentication widget disappears, the intermediate authentication failures will not be returned through this API.
-Only the final authentication result (success or failure) is returned through this API. To perceive each
-authentication failure and intermediate status during the entire authentication process, use the
-[on('authTip')](arkts-userauthentication-userauthinstance-i.md#on-2) API for
-subscription.
-
-> **NOTE**
-
-> On PCs/2-in-1 devices, if an application initiates authentication in an application modal dialog (that is, a
-> valid **uiContext** is passed when the user API parameter [widgetParam](arkts-userauthentication-widgetparam-i.md) is
-> configured) and receives the authentication result, and if other windows need to be displayed, the application
-> needs to obtain the flag message released by the component pop-up window and subscribe to the component release
-> message (**authTipInfo.tipCode = UserAuthTipCode.WIDGET_RELEASED**) through the
-> [on('authTip')](arkts-userauthentication-userauthinstance-i.md#on-2) API.
+Subscribes to the user authentication result. This API is used to obtain the final identity authentication result after the user completes identity authentication interaction with the authentication component. Before the authentication widget disappears, the intermediate authentication failures will not be returned through this API. Only the final authentication result (success or failure) is returned through this API. To perceive each authentication failure and intermediate status during the entire authentication process, use the [on('authTip')](arkts-userauthentication-userauthinstance-i.md#on-2) API for subscription. > **NOTE** > On PCs/2-in-1 devices, if an application initiates authentication in an application modal dialog (that is, a > valid **uiContext** is passed when the user API parameter [widgetParam](arkts-userauthentication-widgetparam-i.md) is > configured) and receives the authentication result, and if other windows need to be displayed, the application > needs to obtain the flag message released by the component pop-up window and subscribe to the component release > message (**authTipInfo.tipCode = UserAuthTipCode.WIDGET_RELEASED**) through the > [on('authTip')](arkts-userauthentication-userauthinstance-i.md#on-2) API.
 
 **Since:** 10
 
@@ -297,17 +257,7 @@ subscription.
 on(type: 'authTip', callback: AuthTipCallback): void
 ```
 
-Subscribes to authentication tip information. This API is used to obtain the widget startup and exit messages and
-each authentication failure. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
-
-> On PCs/2-in-1 devices, if an application initiates authentication in an application modal dialog (that is, a
-> valid **uiContext** is passed when the user API parameter [widgetParam](arkts-userauthentication-widgetparam-i.md) is
-> configured) and receives the authentication result, and if other windows need to be displayed, the application
-> needs to obtain the flag message released by the component pop-up window and subscribe to the component release
-> message (**authTipInfo.tipCode = UserAuthTipCode.WIDGET_RELEASED**) through the
-> [on('authTip')](arkts-userauthentication-userauthinstance-i.md#on-2) API.
+Subscribes to authentication tip information. This API is used to obtain the widget startup and exit messages and each authentication failure. This API uses an asynchronous callback to return the result. > **NOTE** > On PCs/2-in-1 devices, if an application initiates authentication in an application modal dialog (that is, a > valid **uiContext** is passed when the user API parameter [widgetParam](arkts-userauthentication-widgetparam-i.md) is > configured) and receives the authentication result, and if other windows need to be displayed, the application > needs to obtain the flag message released by the component pop-up window and subscribe to the component release > message (**authTipInfo.tipCode = UserAuthTipCode.WIDGET_RELEASED**) through the > [on('authTip')](arkts-userauthentication-userauthinstance-i.md#on-2) API.
 
 **Since:** 20
 
@@ -380,11 +330,7 @@ try {
 start(): void
 ```
 
-Starts authentication.
-
-> **NOTE**
-
-> Each **UserAuthInstance** can be used for authentication only once.
+Starts authentication. > **NOTE** > Each **UserAuthInstance** can be used for authentication only once.
 
 **Since:** 10
 

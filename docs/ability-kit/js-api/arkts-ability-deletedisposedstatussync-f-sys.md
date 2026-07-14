@@ -12,8 +12,7 @@ import { appControl } from '@kit.AbilityKit';
 function deleteDisposedStatusSync(appId: string, appIndex?: number): void
 ```
 
-Deletes the disposed status for an application or an application clone. This API returns the result synchronously.
-If the operation is successful, **null** is returned. If the operation fails, an error message is returned.
+Deletes the disposed status for an application or an application clone. This API returns the result synchronously. If the operation is successful, **null** is returned. If the operation fails, an error message is returned.
 
 **Since:** 10
 

@@ -13,8 +13,7 @@ function findMatchingWlan(
       wlanBssidArray: Array<string>, rssiThreshold: number, needStartScan: boolean): Promise<Array<MatchingWlanInfo>>
 ```
 
-Check whether the WLAN scan results match the WLAN BSSID list,
-return information about the WLAN device that is successfully matched.
+Check whether the WLAN scan results match the WLAN BSSID list, return information about the WLAN device that is successfully matched.
 
 **Since:** 26.0.0
 

@@ -12,8 +12,7 @@ import { advertising } from '@kit.AdsKit';
 function getAdRequestBody(adParams: AdRequestParams[], adOptions: AdOptions): Promise<string>
 ```
 
-Obtains the body of an ad request. This API uses a promise to return the result
-(this API is only open to some pre-installed system applications).
+Obtains the body of an ad request. This API uses a promise to return the result (this API is only open to some pre-installed system applications).
 
 **Since:** 12
 

@@ -1,9 +1,6 @@
 # DataShareHelper (System API)
 
-Provides a **DataShareHelper** instance to access or manage data on the server. Before calling an API provided by
-**DataShareHelper**, you must create a **DataShareHelper** instance using
-[createDataShareHelper](arkts-arkdata-createdatasharehelper-f-sys.md#createdatasharehelper-1)
-.
+Provides a **DataShareHelper** instance to access or manage data on the server. Before calling an API provided by **DataShareHelper**, you must create a **DataShareHelper** instance using [createDataShareHelper](arkts-arkdata-createdatasharehelper-f-sys.md#createdatasharehelper-1) .
 
 **Since:** 9
 
@@ -23,10 +20,7 @@ import { dataShare } from '@kit.ArkData';
 addTemplate(uri: string, subscriberId: string, template: Template): void
 ```
 
-Adds a data template with the specified subscriber. Only silent access is supported.
-
-In silent scenarios, the total size of the **uri**, **subscriberId**, and **template** parameters passed in this
-API cannot exceed 200 KB. If the size exceeds the limit, the operation fails or an exception is thrown.
+Adds a data template with the specified subscriber. Only silent access is supported. In silent scenarios, the total size of the **uri**, **subscriberId**, and **template** parameters passed in this API cannot exceed 200 KB. If the size exceeds the limit, the operation fails or an exception is thrown.
 
 **Since:** 10
 
@@ -82,11 +76,7 @@ if (dataShareHelper != undefined) {
 batchInsert(uri: string, values: Array<ValuesBucket>, callback: AsyncCallback<number>): void
 ```
 
-Batch inserts data into the database. This API uses an asynchronous callback to return the result. Silent access
-is not supported currently.
-
-In non-silent scenarios, the size of the **values** parameter and the **uri** parameter passed in this API cannot
-exceed 128 MB and 900 KB, respectively. Otherwise, the operation fails or an exception is thrown.
+Batch inserts data into the database. This API uses an asynchronous callback to return the result. Silent access is not supported currently. In non-silent scenarios, the size of the **values** parameter and the **uri** parameter passed in this API cannot exceed 128 MB and 900 KB, respectively. Otherwise, the operation fails or an exception is thrown.
 
 **Since:** 9
 
@@ -147,11 +137,7 @@ try {
 batchInsert(uri: string, values: Array<ValuesBucket>): Promise<number>
 ```
 
-Batch inserts data into the database. This API uses a promise to return the result. Silent access is not
-supported currently.
-
-In non-silent scenarios, the size of the **values** parameter and the **uri** parameter passed in this API cannot
-exceed 128 MB and 900 KB, respectively. Otherwise, the operation fails or an exception is thrown.
+Batch inserts data into the database. This API uses a promise to return the result. Silent access is not supported currently. In non-silent scenarios, the size of the **values** parameter and the **uri** parameter passed in this API cannot exceed 128 MB and 900 KB, respectively. Otherwise, the operation fails or an exception is thrown.
 
 **Since:** 9
 
@@ -215,12 +201,7 @@ try {
 batchUpdate(operations: Record<string, Array<UpdateOperation>>): Promise<Record<string, Array<number>>>
 ```
 
-Batch updates data in the database. The total number of objects for operations (that is, KV pairs of the objects)
-cannot exceed 4000. If the number exceeds 4000, the update will fail. The transaction of this API depends on the
-data provider. This API uses a promise to return the result. Silent access is not supported currently.
-
-In non-silent scenarios, the size of the **operations** parameter passed in this API called cannot exceed 900 KB.
-Otherwise, the operation fails or an exception is thrown.
+Batch updates data in the database. The total number of objects for operations (that is, KV pairs of the objects) cannot exceed 4000. If the number exceeds 4000, the update will fail. The transaction of this API depends on the data provider. This API uses a promise to return the result. Silent access is not supported currently. In non-silent scenarios, the size of the **operations** parameter passed in this API called cannot exceed 900 KB. Otherwise, the operation fails or an exception is thrown.
 
 **Since:** 12
 
@@ -316,8 +297,7 @@ try {
 close(): Promise<void>
 ```
 
-Closes the **DataShareHelper** instance. After this API is called, the instance becomes invalid. This API uses a
-promise to return the result.
+Closes the **DataShareHelper** instance. After this API is called, the instance becomes invalid. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -355,10 +335,7 @@ if (dataShareHelper != undefined) {
 delTemplate(uri: string, subscriberId: string): void
 ```
 
-Deletes a data template based on the specified subscriber. Only silent access is supported.
-
-In silent scenarios, the total size of the **uri** and **subscriberId** parameters passed in this API cannot
-exceed 200 KB. Otherwise, the operation fails or an exception is thrown.
+Deletes a data template based on the specified subscriber. Only silent access is supported. In silent scenarios, the total size of the **uri** and **subscriberId** parameters passed in this API cannot exceed 200 KB. Otherwise, the operation fails or an exception is thrown.
 
 **Since:** 10
 
@@ -413,13 +390,7 @@ if (dataShareHelper != undefined) {
 delete(uri: string, predicates: dataSharePredicates.DataSharePredicates, callback: AsyncCallback<number>): void
 ```
 
-Deletes one or more data records from the database. This API uses an asynchronous callback to return the result.
-
-In non-silent scenarios, the total size of the **uri** and **predicates** parameters passed in this API cannot
-exceed 900 KB. Otherwise, the operation fails or an exception is thrown.
-
-In silent scenarios, the total size of the **uri** and **predicates** parameters passed in this API cannot exceed
-200 KB. Otherwise, the operation fails or an exception is thrown.
+Deletes one or more data records from the database. This API uses an asynchronous callback to return the result. In non-silent scenarios, the total size of the **uri** and **predicates** parameters passed in this API cannot exceed 900 KB. Otherwise, the operation fails or an exception is thrown. In silent scenarios, the total size of the **uri** and **predicates** parameters passed in this API cannot exceed 200 KB. Otherwise, the operation fails or an exception is thrown.
 
 **Since:** 9
 
@@ -478,13 +449,7 @@ try {
 delete(uri: string, predicates: dataSharePredicates.DataSharePredicates): Promise<number>
 ```
 
-Deletes one or more data records from the database. This API uses a promise to return the result.
-
-In non-silent scenarios, the total size of the **uri** and **predicates** parameters passed in this API cannot
-exceed 900 KB. Otherwise, the operation fails or an exception is thrown.
-
-In silent scenarios, the total size of the **uri** and **predicates** parameters passed in this API cannot exceed
-200 KB. Otherwise, the operation fails or an exception is thrown.
+Deletes one or more data records from the database. This API uses a promise to return the result. In non-silent scenarios, the total size of the **uri** and **predicates** parameters passed in this API cannot exceed 900 KB. Otherwise, the operation fails or an exception is thrown. In silent scenarios, the total size of the **uri** and **predicates** parameters passed in this API cannot exceed 200 KB. Otherwise, the operation fails or an exception is thrown.
 
 **Since:** 9
 
@@ -546,8 +511,7 @@ try {
 denormalizeUri(uri: string, callback: AsyncCallback<string>): void
 ```
 
-Denormalizes a URI. This API uses an asynchronous callback to return the result. Silent access is not supported
-currently.
+Denormalizes a URI. This API uses an asynchronous callback to return the result. Silent access is not supported currently.
 
 **Since:** 9
 
@@ -648,11 +612,7 @@ if (dataShareHelper != undefined) {
 getPublishedData(bundleName: string, callback: AsyncCallback<Array<PublishedItem>>): void
 ```
 
-Obtains the published data of an application. Only silent access is supported. This API uses an asynchronous
-callback to return the result.
-
-In silent scenarios, the size of the **bundleName** parameter passed in this API cannot exceed 200 KB. Otherwise,
-the operation fails or an exception is thrown.
+Obtains the published data of an application. Only silent access is supported. This API uses an asynchronous callback to return the result. In silent scenarios, the size of the **bundleName** parameter passed in this API cannot exceed 200 KB. Otherwise, the operation fails or an exception is thrown.
 
 **Since:** 10
 
@@ -698,11 +658,7 @@ if (dataShareHelper != undefined) {
 getPublishedData(bundleName: string): Promise<Array<PublishedItem>>
 ```
 
-Obtains the published data of an application. Only silent access is supported. This API uses a promise to return
-the result.
-
-In silent scenarios, the size of the **bundleName** parameter passed in this API cannot exceed 200 KB. Otherwise,
-the operation fails or an exception is thrown.
+Obtains the published data of an application. Only silent access is supported. This API uses a promise to return the result. In silent scenarios, the size of the **bundleName** parameter passed in this API cannot exceed 200 KB. Otherwise, the operation fails or an exception is thrown.
 
 **Since:** 10
 
@@ -748,13 +704,7 @@ if (dataShareHelper != undefined) {
 insert(uri: string, value: ValuesBucket, callback: AsyncCallback<number>): void
 ```
 
-Inserts a single data record into the database. This API uses an asynchronous callback to return the result.
-
-In non-silent scenarios, the total size of the **uri** and **value** parameters passed in this API cannot exceed
-900 KB. Otherwise, the operation fails or an exception is thrown.
-
-In silent scenarios, the total size of the **uri** and **value** parameters passed in this API cannot exceed 200
-KB. Otherwise, the operation fails or an exception is thrown.
+Inserts a single data record into the database. This API uses an asynchronous callback to return the result. In non-silent scenarios, the total size of the **uri** and **value** parameters passed in this API cannot exceed 900 KB. Otherwise, the operation fails or an exception is thrown. In silent scenarios, the total size of the **uri** and **value** parameters passed in this API cannot exceed 200 KB. Otherwise, the operation fails or an exception is thrown.
 
 **Since:** 9
 
@@ -822,13 +772,7 @@ try {
 insert(uri: string, value: ValuesBucket): Promise<number>
 ```
 
-Inserts a single data record into the database. This API uses a promise to return the result.
-
-In non-silent scenarios, the total size of the **uri** and **value** parameters passed in this API cannot exceed
-900 KB. Otherwise, the operation fails or an exception is thrown.
-
-In silent scenarios, the total size of the **uri** and **value** parameters passed in this API cannot exceed 200
-KB. Otherwise, the operation fails or an exception is thrown.
+Inserts a single data record into the database. This API uses a promise to return the result. In non-silent scenarios, the total size of the **uri** and **value** parameters passed in this API cannot exceed 900 KB. Otherwise, the operation fails or an exception is thrown. In silent scenarios, the total size of the **uri** and **value** parameters passed in this API cannot exceed 200 KB. Otherwise, the operation fails or an exception is thrown.
 
 **Since:** 9
 
@@ -899,9 +843,7 @@ try {
 normalizeUri(uri: string, callback: AsyncCallback<string>): void
 ```
 
-Normalizes a **DataShare** URI. The **DataShare** URI can be used only by the local device, but the normalized
-URI can be used across devices. This API uses an asynchronous callback to return the result. Silent access is not
-supported currently.
+Normalizes a **DataShare** URI. The **DataShare** URI can be used only by the local device, but the normalized URI can be used across devices. This API uses an asynchronous callback to return the result. Silent access is not supported currently.
 
 **Since:** 9
 
@@ -950,9 +892,7 @@ if (dataShareHelper != undefined) {
 normalizeUri(uri: string): Promise<string>
 ```
 
-Normalizes a **DataShare** URI. The **DataShare** URI can be used only by the local device, but the normalized
-URI can be used across devices. This API uses a promise to return the result. Silent access is not supported
-currently.
+Normalizes a **DataShare** URI. The **DataShare** URI can be used only by the local device, but the normalized URI can be used across devices. This API uses a promise to return the result. Silent access is not supported currently.
 
 **Since:** 9
 
@@ -1004,11 +944,7 @@ if (dataShareHelper != undefined) {
 notifyChange(uri: string, callback: AsyncCallback<void>): void
 ```
 
-Notifies the registered observer of data changes. This API uses an asynchronous callback to return the result.
-Silent access is not supported currently.
-
-In non-silent scenarios, the size of the **uri** parameter passed in this API called cannot exceed 200 KB.
-Otherwise, the operation fails or an exception is thrown.
+Notifies the registered observer of data changes. This API uses an asynchronous callback to return the result. Silent access is not supported currently. In non-silent scenarios, the size of the **uri** parameter passed in this API called cannot exceed 200 KB. Otherwise, the operation fails or an exception is thrown.
 
 **Since:** 9
 
@@ -1051,11 +987,7 @@ if (dataShareHelper != undefined) {
 notifyChange(uri: string): Promise<void>
 ```
 
-Notifies the registered observer of data changes. This API uses a promise to return the result. Silent access is
-not supported currently.
-
-In non-silent scenarios, the size of the **uri** parameter passed in this API called cannot exceed 200 KB.
-Otherwise, the operation fails or an exception is thrown.
+Notifies the registered observer of data changes. This API uses a promise to return the result. Silent access is not supported currently. In non-silent scenarios, the size of the **uri** parameter passed in this API called cannot exceed 200 KB. Otherwise, the operation fails or an exception is thrown.
 
 **Since:** 9
 
@@ -1101,11 +1033,7 @@ if (dataShareHelper != undefined) {
 notifyChange(data: ChangeInfo): Promise<void>
 ```
 
-Notifies the observer of the data change of the specified URI. This API uses a promise to return the result.
-Silent access is not supported currently.
-
-In non-silent scenarios, the size of the **data** parameter passed in this API called cannot exceed 200 KB.
-Otherwise, the operation fails or an exception is thrown.
+Notifies the observer of the data change of the specified URI. This API uses a promise to return the result. Silent access is not supported currently. In non-silent scenarios, the size of the **data** parameter passed in this API called cannot exceed 200 KB. Otherwise, the operation fails or an exception is thrown.
 
 **Since:** 12
 
@@ -1160,8 +1088,7 @@ if (dataShareHelper != undefined) {
 off(type: 'dataChange', uri: string, callback?: AsyncCallback<void>): void
 ```
 
-Unsubscribes from the data change of the specified URI. This API corresponds to the
-[on](arkts-arkdata-datasharehelper-i-sys.md#on-1) API.
+Unsubscribes from the data change of the specified URI. This API corresponds to the [on](arkts-arkdata-datasharehelper-i-sys.md#on-1) API.
 
 **Since:** 9
 
@@ -1207,9 +1134,7 @@ if (dataShareHelper != undefined) {
 off(event: 'dataChange', type:SubscriptionType, uri: string, callback?: AsyncCallback<ChangeInfo>): void
 ```
 
-Unsubscribes from the data change of the specified URI. This API corresponds to the
-[on](arkts-arkdata-datasharehelper-i-sys.md#on-2)
-API.
+Unsubscribes from the data change of the specified URI. This API corresponds to the [on](arkts-arkdata-datasharehelper-i-sys.md#on-2) API.
 
 **Since:** 12
 
@@ -1263,8 +1188,7 @@ off(
      ): Array<OperationResult>
 ```
 
-Unsubscribes from the changes of the data corresponding to the specified URI and template. Only silent access is
-supported.
+Unsubscribes from the changes of the data corresponding to the specified URI and template. Only silent access is supported.
 
 **Since:** 10
 
@@ -1374,14 +1298,7 @@ if (dataShareHelper != undefined) {
 on(type: 'dataChange', uri: string, callback: AsyncCallback<void>): void
 ```
 
-Subscribes to the data change of the specified URI. After an observer is registered, the subscriber will receive
-a notification when the **notifyChange** API is called. This API uses an asynchronous callback to return the
-result. This function does not support cross-user notification subscription. An application can subscribe to a
-single URI for a maximum of 51 times.
-
-Notification triggering: In non-silent scenarios, a notification is published if the
-[notifyChange](arkts-arkdata-datasharehelper-i-sys.md#notifychange-2) method is called. In silent scenarios,
-a notification is automatically published if data is modified via silent access.
+Subscribes to the data change of the specified URI. After an observer is registered, the subscriber will receive a notification when the **notifyChange** API is called. This API uses an asynchronous callback to return the result. This function does not support cross-user notification subscription. An application can subscribe to a single URI for a maximum of 51 times. Notification triggering: In non-silent scenarios, a notification is published if the [notifyChange](arkts-arkdata-datasharehelper-i-sys.md#notifychange-2) method is called. In silent scenarios, a notification is automatically published if data is modified via silent access.
 
 **Since:** 9
 
@@ -1426,16 +1343,7 @@ if (dataShareHelper !== undefined) {
 on(event: 'dataChange', type:SubscriptionType, uri: string, callback: AsyncCallback<ChangeInfo>): void
 ```
 
-Subscribes to the data change of the specified URI. After a change notification is registered, the subscriber
-will receive a notification when the **notifyChange** API is called. The change notification contains the data
-change type, URI of the data changed, and the changed data. This API uses an asynchronous callback to return the
-result. This function does not support cross-user notification subscription. An application can subscribe to a
-single URI for a maximum of 51 times.
-
-Notification triggering: In non-silent scenarios, a notification is published if the
-[notifyChange](arkts-arkdata-datasharehelper-i-sys.md#notifychange-3) method is called. In silent
-scenarios, a notification is automatically published if data is modified via silent access, but **changeInfo** in
-the callback is invalid.
+Subscribes to the data change of the specified URI. After a change notification is registered, the subscriber will receive a notification when the **notifyChange** API is called. The change notification contains the data change type, URI of the data changed, and the changed data. This API uses an asynchronous callback to return the result. This function does not support cross-user notification subscription. An application can subscribe to a single URI for a maximum of 51 times. Notification triggering: In non-silent scenarios, a notification is published if the [notifyChange](arkts-arkdata-datasharehelper-i-sys.md#notifychange-3) method is called. In silent scenarios, a notification is automatically published if data is modified via silent access, but **changeInfo** in the callback is invalid.
 
 **Since:** 12
 
@@ -1488,8 +1396,7 @@ on(
      ): Array<OperationResult>
 ```
 
-Subscribes to the changes of the data corresponding to the specified URI and template. Only silent access is
-supported. This function does not support cross-user notification subscription.
+Subscribes to the changes of the data corresponding to the specified URI and template. Only silent access is supported. This function does not support cross-user notification subscription.
 
 **Since:** 10
 
@@ -1559,8 +1466,7 @@ on(
      ): Array<OperationResult>
 ```
 
-Subscribes to the change of the published data. Only silent access is supported. This function does not support
-cross-user notification subscription.
+Subscribes to the change of the published data. Only silent access is supported. This function does not support cross-user notification subscription.
 
 **Since:** 10
 
@@ -1630,12 +1536,7 @@ publish(
      ): void
 ```
 
-Publishes data to the database. You should pass in the version of the data to be published. If the passed version
-is later than the version recorded in the current database, the operation is successful. Only silent access is
-supported. This API uses an asynchronous callback to return the result.
-
-In silent scenarios, the total size of the **data** and **bundleName** parameters passed in this API cannot
-exceed 200 KB. Otherwise, the operation fails or an exception is thrown.
+Publishes data to the database. You should pass in the version of the data to be published. If the passed version is later than the version recorded in the current database, the operation is successful. Only silent access is supported. This API uses an asynchronous callback to return the result. In silent scenarios, the total size of the **data** and **bundleName** parameters passed in this API cannot exceed 200 KB. Otherwise, the operation fails or an exception is thrown.
 
 **Since:** 10
 
@@ -1695,11 +1596,7 @@ publish(
      ): void
 ```
 
-Publishes data to the database. Only silent access is supported. This API uses an asynchronous callback to return
-the result.
-
-In silent scenarios, the total size of the **data** and **bundleName** parameters passed in this API cannot
-exceed 200 KB. Otherwise, the operation fails or an exception is thrown.
+Publishes data to the database. Only silent access is supported. This API uses an asynchronous callback to return the result. In silent scenarios, the total size of the **data** and **bundleName** parameters passed in this API cannot exceed 200 KB. Otherwise, the operation fails or an exception is thrown.
 
 **Since:** 10
 
@@ -1750,12 +1647,7 @@ if (dataShareHelper != undefined) {
 publish(data: Array<PublishedItem>, bundleName: string, version?: number): Promise<Array<OperationResult>>
 ```
 
-Publishes data to the database. You should pass in the version of the data to be published. If the passed version
-is later than the version recorded in the current database, the operation is successful. Only silent access is
-supported. This API uses a promise to return the result.
-
-In silent scenarios, the total size of the **data** and **bundleName** parameters passed in this API cannot
-exceed 200 KB. Otherwise, the operation fails or an exception is thrown.
+Publishes data to the database. You should pass in the version of the data to be published. If the passed version is later than the version recorded in the current database, the operation is successful. Only silent access is supported. This API uses a promise to return the result. In silent scenarios, the total size of the **data** and **bundleName** parameters passed in this API cannot exceed 200 KB. Otherwise, the operation fails or an exception is thrown.
 
 **Since:** 10
 
@@ -1812,21 +1704,7 @@ query(
      ): void
 ```
 
-Queries data in the database. This API uses an asynchronous callback to return the result.
-
-In non-silent scenarios, the size of the **predicates** parameter and the total size of the **uri** and
-**columns** parameters passed in this API cannot exceed 128 MB and 200 KB, respectively. Otherwise, the operation
-fails or an exception is thrown.
-
-In silent scenarios, the total size of the **uri**, **predicates**, and **columns** parameters passed in this API
-cannot exceed 200 KB. If the size exceeds the limit, the operation fails or an exception is thrown.
-
-When this API is used to query database data, if the query content exceeds the resource limit, the operation
-fails and an error is returned. You can retry the operation based on the scenario. For details about the resource
-limit, see [Silent Access via DatamgrService](../../../../database/share-data-by-silent-access-sys.md#constraints)
-and
-[Sharing Data Using DataShareExtensionAbility](../../../../database/share-data-by-datashareextensionability-sys.md#constraints)
-.
+Queries data in the database. This API uses an asynchronous callback to return the result. In non-silent scenarios, the size of the **predicates** parameter and the total size of the **uri** and **columns** parameters passed in this API cannot exceed 128 MB and 200 KB, respectively. Otherwise, the operation fails or an exception is thrown. In silent scenarios, the total size of the **uri**, **predicates**, and **columns** parameters passed in this API cannot exceed 200 KB. If the size exceeds the limit, the operation fails or an exception is thrown. When this API is used to query database data, if the query content exceeds the resource limit, the operation fails and an error is returned. You can retry the operation based on the scenario. For details about the resource limit, see [Silent Access via DatamgrService](../../../../database/share-data-by-silent-access-sys.md#constraints) and [Sharing Data Using DataShareExtensionAbility](../../../../database/share-data-by-datashareextensionability-sys.md#constraints) .
 
 **Since:** 9
 
@@ -1891,22 +1769,7 @@ query(
      ): Promise<DataShareResultSet>
 ```
 
-Queries data in the database. This API uses a promise to return the result.
-
-In non-silent scenarios, the size of the **predicates** parameter and the total size of the **uri** and
-**columns** parameters passed in this API cannot exceed 128 MB and 200 KB, respectively. Otherwise, the operation
-fails or an exception is thrown.
-
-In silent scenarios, the total size of the **uri**, **predicates**, and **columns** parameters passed in this API
-cannot exceed 200 KB. If the size exceeds the limit, the operation fails or an exception is thrown.
-
-When this API is used to query database data, if the query content exceeds the resource limit, the operation
-fails and an error is returned. You can retry the operation based on the scenario. For details about the resource
-limit, see
-[Silent Access via DatamgrService (ArkTS) (for System Applications Only)](../../../../database/share-data-by-silent-access-sys.md#constraints)
-and
-[Sharing Data Using DataShareExtensionAbility (ArkTS) (for System Applications Only)](../../../../database/share-data-by-datashareextensionability-sys.md#constraints)
-.
+Queries data in the database. This API uses a promise to return the result. In non-silent scenarios, the size of the **predicates** parameter and the total size of the **uri** and **columns** parameters passed in this API cannot exceed 128 MB and 200 KB, respectively. Otherwise, the operation fails or an exception is thrown. In silent scenarios, the total size of the **uri**, **predicates**, and **columns** parameters passed in this API cannot exceed 200 KB. If the size exceeds the limit, the operation fails or an exception is thrown. When this API is used to query database data, if the query content exceeds the resource limit, the operation fails and an error is returned. You can retry the operation based on the scenario. For details about the resource limit, see [Silent Access via DatamgrService (ArkTS) (for System Applications Only)](../../../../database/share-data-by-silent-access-sys.md#constraints) and [Sharing Data Using DataShareExtensionAbility (ArkTS) (for System Applications Only)](../../../../database/share-data-by-datashareextensionability-sys.md#constraints) .
 
 **Since:** 9
 
@@ -1975,13 +1838,7 @@ update(
      ): void
 ```
 
-Updates data in the database. This API uses an asynchronous callback to return the result.
-
-In non-silent scenarios, the total size of the **uri**, **predicates**, and **value** parameters passed in this
-API cannot exceed 900 KB. Otherwise, the operation fails or an exception is thrown.
-
-In silent scenarios, the total size of the **uri**, **predicates**, and **value** parameters passed when this API
-is called cannot exceed 200 KB. Otherwise, the operation fails or an exception is thrown.
+Updates data in the database. This API uses an asynchronous callback to return the result. In non-silent scenarios, the total size of the **uri**, **predicates**, and **value** parameters passed in this API cannot exceed 900 KB. Otherwise, the operation fails or an exception is thrown. In silent scenarios, the total size of the **uri**, **predicates**, and **value** parameters passed when this API is called cannot exceed 200 KB. Otherwise, the operation fails or an exception is thrown.
 
 **Since:** 9
 
@@ -2052,13 +1909,7 @@ try {
 update(uri: string, predicates: dataSharePredicates.DataSharePredicates, value: ValuesBucket): Promise<number>
 ```
 
-Updates data in the database. This API uses a promise to return the result.
-
-In non-silent scenarios, the total size of the **uri**, **predicates**, and **value** parameters passed in this
-API cannot exceed 900 KB. Otherwise, the operation fails or an exception is thrown.
-
-In silent scenarios, the total size of the **uri**, **predicates**, and **value** parameters passed when this API
-is called cannot exceed 200 KB. Otherwise, the operation fails or an exception is thrown.
+Updates data in the database. This API uses a promise to return the result. In non-silent scenarios, the total size of the **uri**, **predicates**, and **value** parameters passed in this API cannot exceed 900 KB. Otherwise, the operation fails or an exception is thrown. In silent scenarios, the total size of the **uri**, **predicates**, and **value** parameters passed when this API is called cannot exceed 200 KB. Otherwise, the operation fails or an exception is thrown.
 
 **Since:** 9
 

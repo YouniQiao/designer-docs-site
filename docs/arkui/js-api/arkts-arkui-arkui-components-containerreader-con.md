@@ -6,8 +6,7 @@
 export declare const ContainerReader: ContainerReaderInterface
 ```
 
-Defines ContainerReader Component.
-A component that analyzes container dimensions and provides breakpoint information for responsive layouts.
+Defines ContainerReader Component. A component that analyzes container dimensions and provides breakpoint information for responsive layouts.
 
 **Since:** 26.0.0
 
@@ -25,8 +24,7 @@ A component that analyzes container dimensions and provides breakpoint informati
 export declare const ContainerReaderInstance: ContainerReaderAttribute
 ```
 
-Defines ContainerReader Component instance.
-Provides access to ContainerReader component methods for container dimension analysis and breakpoint detection.
+Defines ContainerReader Component instance. Provides access to ContainerReader component methods for container dimension analysis and breakpoint detection.
 
 **Since:** 26.0.0
 

@@ -12,7 +12,7 @@ import { notificationManager } from '@kit.NotificationKit';
 function setDoNotDisturbDate(date: DoNotDisturbDate, callback: AsyncCallback<void>): void
 ```
 
-Sets the DND time. This API uses an asynchronous callback to return the result.
+Sets the DND time. This API uses an asynchronous callback to return the result. This API can be properly called on devices other than wearables and TVs. If it is called on wearables and TVs, error code 801 is returned.
 
 **Since:** 9
 
@@ -72,7 +72,7 @@ notificationManager.setDoNotDisturbDate(doNotDisturbDate, setDoNotDisturbDateCal
 function setDoNotDisturbDate(date: DoNotDisturbDate): Promise<void>
 ```
 
-Sets the DND time. This API uses a promise to return the result.
+Sets the DND time. This API uses a promise to return the result. This API can be properly called on devices other than wearables and TVs. If it is called on wearables and TVs, error code 801 is returned.
 
 **Since:** 9
 
@@ -132,7 +132,7 @@ notificationManager.setDoNotDisturbDate(doNotDisturbDate).then(() => {
 function setDoNotDisturbDate(date: DoNotDisturbDate, userId: number, callback: AsyncCallback<void>): void
 ```
 
-Sets the DND time for a specified user. This API uses an asynchronous callback to return the result.
+Sets the DND time for a specified user. This API uses an asynchronous callback to return the result. This API can be properly called on devices other than wearables and TVs. If it is called on wearables and TVs, error code 801 is returned.
 
 **Since:** 9
 
@@ -197,7 +197,7 @@ notificationManager.setDoNotDisturbDate(doNotDisturbDate, userId, setDoNotDistur
 function setDoNotDisturbDate(date: DoNotDisturbDate, userId: number): Promise<void>
 ```
 
-Sets the DND time for a specified user. This API uses a promise to return the result.
+Sets the DND time for a specified user. This API uses a promise to return the result. This API can be properly called on devices other than wearables and TVs. If it is called on wearables and TVs, error code 801 is returned.
 
 **Since:** 9
 

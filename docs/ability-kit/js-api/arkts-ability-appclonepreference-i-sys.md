@@ -14,10 +14,7 @@ Defines the application clone preference configuration.
 appIndex?: number
 ```
 
-Index of the application clone.
-This value is valid only when the mode is CLONE_APP.
-The value ranges from 1 to 5 (maximum 5 clones are supported).
-The value should be an integer.
+Index of the application clone. This value is valid only when the mode is CLONE_APP. The value ranges from 1 to 5 (maximum 5 clones are supported). The value should be an integer.
 
 **Type:** number
 

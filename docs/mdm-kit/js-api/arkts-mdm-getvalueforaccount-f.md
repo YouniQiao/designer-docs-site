@@ -12,8 +12,7 @@ import { deviceSettings } from '@kit.MDMKit';
 function getValueForAccount(admin: Want, item: SettingsItem, accountId: number): string
 ```
 
-Obtains the device policy of a specified user. This API allows you to obtain a specific parameter of a given user,
-such as obtaining the device name of user 100.
+Obtains the device policy of a specified user. This API allows you to obtain a specific parameter of a given user, such as obtaining the device name of user 100.
 
 **Since:** 24
 

@@ -18,8 +18,7 @@ import { abilityConnectionManager } from '@kit.DistributedServiceKit';
 needSendData?: boolean
 ```
 
-Whether to send data. The value **true** indicates that data needs to be sent, and the value **false** indicates
-the opposite.
+Whether to send data. The value **true** indicates that data needs to be sent, and the value **false** indicates the opposite.
 
 **Type:** boolean
 

@@ -12,11 +12,7 @@
 action?: Action
 ```
 
-任务操作选项。
-
-- UPLOAD表示上传任务。
-- DOWNLOAD表示下载任务。
-- 如果未填写，则查询所有任务。
+任务操作选项。 - UPLOAD表示上传任务。 - DOWNLOAD表示下载任务。 - 如果未填写，则查询所有任务。
 
 **类型：** Action
 
@@ -58,11 +54,7 @@ before?: number
 mode?: Mode
 ```
 
-任务模式。
-
-- FOREGROUND表示前台任务。
-- BACKGROUND表示后台任务。
-- 如果未填写，则查询所有任务。
+任务模式。 - FOREGROUND表示前台任务。 - BACKGROUND表示后台任务。 - 如果未填写，则查询所有任务。
 
 **类型：** Mode
 

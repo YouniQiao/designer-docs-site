@@ -1,7 +1,6 @@
 # WebExtensionConnectionCallback
 
-As an input parameter when connecting a web native messaging extension, it is used to receive
-state changes during the connection.
+As an input parameter when connecting a web native messaging extension, it is used to receive state changes during the connection.
 
 **Since:** 21
 

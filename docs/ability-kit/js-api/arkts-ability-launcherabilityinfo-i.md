@@ -1,10 +1,6 @@
 # LauncherAbilityInfo
 
-The module describes the ability information of the launcher application. The information can be obtained by calling
-[getLauncherAbilityInfoSync](arkts-ability-getlauncherabilityinfosync-f.md#getlauncherabilityinfosync-1)
-<!--Del--> or
-[getLauncherAbilityInfo](./../@ohos.bundle.launcherBundleManager:launcherBundleManager.getLauncherAbilityInfo(bundleName: string, userId: int, callback: AsyncCallback<Array<LauncherAbilityInfo>>))
-<!--DelEnd-->.
+The module describes the ability information of the launcher application. The information can be obtained by calling [getLauncherAbilityInfoSync](arkts-ability-getlauncherabilityinfosync-f.md#getlauncherabilityinfosync-1) <!--Del--> or [getLauncherAbilityInfo](./../@ohos.bundle.launcherBundleManager:launcherBundleManager.getLauncherAbilityInfo(bundleName: string, userId: int, callback: AsyncCallback<Array<LauncherAbilityInfo>>)) <!--DelEnd-->.
 
 **Since:** 18
 

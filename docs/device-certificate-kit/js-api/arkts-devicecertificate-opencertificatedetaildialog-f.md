@@ -12,9 +12,7 @@ import { certificateManagerDialog } from '@kit.DeviceCertificateKit';
 function openCertificateDetailDialog(context: common.Context,cert: Uint8Array, property: CertificateDialogProperty): Promise<void>
 ```
 
-Opens the Certificate Management dialog box to display the certificate details. After the interface is invoked
-successfully, detailed information about the certificate, such as the basic information, validity period, issuer,
-and user, is displayed. Use Promise asynchronous callback.
+Opens the Certificate Management dialog box to display the certificate details. After the interface is invoked successfully, detailed information about the certificate, such as the basic information, validity period, issuer, and user, is displayed. Use Promise asynchronous callback.
 
 **Since:** 18
 

@@ -12,8 +12,7 @@ Enum of line break strategy
 GREEDY = 0
 ```
 
-By default. Display as many characters as possible on each line until no more characters
-can be displayed on that line, and do not automatically add hyphens under this strategy
+By default. Display as many characters as possible on each line until no more characters can be displayed on that line, and do not automatically add hyphens under this strategy
 
 **起始版本：** 12
 
@@ -29,8 +28,7 @@ can be displayed on that line, and do not automatically add hyphens under this s
 HIGH_QUALITY = 1
 ```
 
-High quality folding. Optimize the layout of the entire text's line breaks and automatically
-add hyphens if necessary.
+High quality folding. Optimize the layout of the entire text's line breaks and automatically add hyphens if necessary.
 
 **起始版本：** 12
 
@@ -46,8 +44,7 @@ add hyphens if necessary.
 BALANCED = 2
 ```
 
-Balanced folding. We will try our best to ensure that the width of each line in a paragraph
-is the same, and if necessary, we will add conjunction
+Balanced folding. We will try our best to ensure that the width of each line in a paragraph is the same, and if necessary, we will add conjunction
 
 **起始版本：** 12
 

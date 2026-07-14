@@ -1,29 +1,6 @@
 # CustomDialogControllerOptions
 
-Defines the style of the custom dialog box.
-
-> **NOTE**
->
-> - Pressing the Back or ESC key closes the dialog box.
->
-> - If the dialog box reaches its maximum allowable height on the screen when avoiding the soft keyboard, it reduces
-> its height to fit.
-> > It should be noted that this height adjustment is applied to the outermost container. If a child component
-> within this container has been assigned a larger fixed height, since the container does not clip its content by
-> default, parts of the dialog box may still be displayed off-screen.
->
-> - Use the custom dialog box to contain simple alert messages only. Do not use it as a page. When the dialog box
-> avoids the soft keyboard, there is a 16 vp safe spacing between the two.
->
-> - For optimal visual experience, dialog box display and closing include default animations, though the animation
-> duration may vary by device.
-> > Note: During animation playback, the page does not respond to touch, swipe, or click interactions. To disable
-> default dialog box animations, set **duration** of both **openAnimation** and **closeAnimation** to **0**.
->
-> - In ArkUI, dialog boxes do not close automatically when you switch pages unless you manually call **close**. To
-> enable a dialog box to be dismissed during page navigation, consider using the
-> [navigation subpage displayed in dialog mode](../../../../ui/arkts-navigation-navdestination.md#page-display-mode) or
-> [page-level dialog box](../../../../ui/arkts-embedded-dialog.md).
+Defines the style of the custom dialog box. > **NOTE** > > - Pressing the Back or ESC key closes the dialog box. > > - If the dialog box reaches its maximum allowable height on the screen when avoiding the soft keyboard, it reduces > its height to fit. > > It should be noted that this height adjustment is applied to the outermost container. If a child component > within this container has been assigned a larger fixed height, since the container does not clip its content by > default, parts of the dialog box may still be displayed off-screen. > > - Use the custom dialog box to contain simple alert messages only. Do not use it as a page. When the dialog box > avoids the soft keyboard, there is a 16 vp safe spacing between the two. > > - For optimal visual experience, dialog box display and closing include default animations, though the animation > duration may vary by device. > > Note: During animation playback, the page does not respond to touch, swipe, or click interactions. To disable > default dialog box animations, set **duration** of both **openAnimation** and **closeAnimation** to **0**. > > - In ArkUI, dialog boxes do not close automatically when you switch pages unless you manually call **close**. To > enable a dialog box to be dismissed during page navigation, consider using the > [navigation subpage displayed in dialog mode](../../../../ui/arkts-navigation-navdestination.md#page-display-mode) or > [page-level dialog box](../../../../ui/arkts-embedded-dialog.md).
 
 **Since:** 7
 
@@ -35,9 +12,7 @@ Defines the style of the custom dialog box.
 alignment?: DialogAlignment
 ```
 
-Alignment mode of the dialog box in the vertical direction.
-
-Default value: **DialogAlignment.Default**
+Alignment mode of the dialog box in the vertical direction. Default value: **DialogAlignment.Default**
 
 **Type:** DialogAlignment
 
@@ -53,10 +28,7 @@ Default value: **DialogAlignment.Default**
 autoCancel?: boolean
 ```
 
-Whether to close the dialog box when the mask is touched. The value **true** means to close the dialog box when the
-mask is touched, and **false** means the opposite.
-
-Default value: **true**
+Whether to close the dialog box when the mask is touched. The value **true** means to close the dialog box when the mask is touched, and **false** means the opposite. Default value: **true**
 
 **Type:** boolean
 
@@ -72,15 +44,7 @@ Default value: **true**
 backgroundBlurStyle?: BlurStyle
 ```
 
-Background blur style of the dialog box.
-
-Default value: **BlurStyle.COMPONENT_ULTRA_THICK**
-
-**NOTE**
-
-Setting this parameter to **BlurStyle.NONE** disables the background blur. When **backgroundBlurStyle** is set to a
-value other than **NONE**, do not set **backgroundColor**. If you do, the color display may not produce the
-expected visual effect.
+Background blur style of the dialog box. Default value: **BlurStyle.COMPONENT_ULTRA_THICK** **NOTE** Setting this parameter to **BlurStyle.NONE** disables the background blur. When **backgroundBlurStyle** is set to a value other than **NONE**, do not set **backgroundColor**. If you do, the color display may not produce the expected visual effect.
 
 **Type:** BlurStyle
 
@@ -100,8 +64,7 @@ expected visual effect.
 backgroundBlurStyleOptions?: BackgroundBlurStyleOptions
 ```
 
-Options for customizing the background blur style. For details about the default value, see
-**BackgroundBlurStyleOptions**.
+Options for customizing the background blur style. For details about the default value, see **BackgroundBlurStyleOptions**.
 
 **Type:** BackgroundBlurStyleOptions
 
@@ -119,18 +82,7 @@ Options for customizing the background blur style. For details about the default
 backgroundColor?: ResourceColor
 ```
 
-Background color of the dialog box.
-
-Default value: **Color.Transparent**
-
-**NOTE**
-
-If the content builder also has the background color set, the background color set here will be overridden by the
-background color of the content builder.
-
-The background color will be visually combined with the blur effect when both properties are set. If the resulting
-effect does not match your design requirements, you can disable the blur effect entirely by explicitly setting the
-**backgroundBlurStyle** property to **BlurStyle.NONE**.
+Background color of the dialog box. Default value: **Color.Transparent** **NOTE** If the content builder also has the background color set, the background color set here will be overridden by the background color of the content builder. The background color will be visually combined with the blur effect when both properties are set. If the resulting effect does not match your design requirements, you can disable the blur effect entirely by explicitly setting the **backgroundBlurStyle** property to **BlurStyle.NONE**.
 
 **Type:** ResourceColor
 
@@ -148,8 +100,7 @@ effect does not match your design requirements, you can disable the blur effect 
 backgroundEffect?: BackgroundEffectOptions
 ```
 
-Options for customizing the background effect. For details about the default value, see
-**BackgroundEffectOptions**.
+Options for customizing the background effect. For details about the default value, see **BackgroundEffectOptions**.
 
 **Type:** BackgroundEffectOptions
 
@@ -167,11 +118,7 @@ Options for customizing the background effect. For details about the default val
 borderColor?: ResourceColor | EdgeColors
 ```
 
-Border color of the dialog box.
-
-Default value: **Color.Black**
-
-**borderColor** must be used with **borderWidth** in pairs.
+Border color of the dialog box. Default value: **Color.Black** **borderColor** must be used with **borderWidth** in pairs.
 
 **Type:** ResourceColor | EdgeColors
 
@@ -189,11 +136,7 @@ Default value: **Color.Black**
 borderStyle?: BorderStyle | EdgeStyles
 ```
 
-Border style of the dialog box.
-
-Default value: **BorderStyle.Solid**
-
-**borderStyle** must be used with **borderWidth** in pairs.
+Border style of the dialog box. Default value: **BorderStyle.Solid** **borderStyle** must be used with **borderWidth** in pairs.
 
 **Type:** BorderStyle | EdgeStyles
 
@@ -211,16 +154,7 @@ Default value: **BorderStyle.Solid**
 borderWidth?: Dimension | EdgeWidths
 ```
 
-Border width of the dialog box.
-
-You can set the width for all four sides or set separate widths for individual sides.
-
-Default value: **0**
-
-When set to a percentage, the value defines the border width as a percentage of the parent dialog box's width.
-
-If the left and right borders are greater than its width, or the top and bottom borders are greater than its
-height, the dialog box may not display as expected.
+Border width of the dialog box. You can set the width for all four sides or set separate widths for individual sides. Default value: **0** When set to a percentage, the value defines the border width as a percentage of the parent dialog box's width. If the left and right borders are greater than its width, or the top and bottom borders are greater than its height, the dialog box may not display as expected.
 
 **Type:** Dimension | EdgeWidths
 
@@ -238,14 +172,7 @@ height, the dialog box may not display as expected.
 builder: any
 ```
 
-Builder of the custom dialog box content.
-
-**NOTE**
-
-If the builder uses a callback as the input parameter, as in **builder: custombuilder({ callback: ()=> {...}})**,
-pay attention to the binding of **this**.
-
-To listen for data changes in the builder, use the @Link or @Consume decorator; other decorators, such as @Prop and
+Builder of the custom dialog box content. **NOTE** If the builder uses a callback as the input parameter, as in **builder: custombuilder({ callback: ()=> {...}})**, pay attention to the binding of **this**. To listen for data changes in the builder, use the @Link or @Consume decorator; other decorators, such as @Prop and
 
 **Type:** any
 
@@ -277,18 +204,7 @@ Callback invoked when the dialog box is closed after the Back button or mask is 
 closeAnimation?: AnimateParam
 ```
 
-Parameters for defining the close animation of the dialog box.
-
-**NOTE**
-
-**tempo**: The default value is **1**; a value less than or equal to 0 is handled as the default value.
-
-**iterations**: The default value is **1**, indicating that the animation is played once; any other value is
-handled as the default value.
-
-**playMode**: The default value is **PlayMode.Normal**; any other value is handled as the default value.
-
-For page transition, you are advised to use the default close animation.
+Parameters for defining the close animation of the dialog box. **NOTE** **tempo**: The default value is **1**; a value less than or equal to 0 is handled as the default value. **iterations**: The default value is **1**, indicating that the animation is played once; any other value is handled as the default value. **playMode**: The default value is **PlayMode.Normal**; any other value is handled as the default value. For page transition, you are advised to use the default close animation.
 
 **Type:** AnimateParam
 
@@ -306,15 +222,7 @@ For page transition, you are advised to use the default close animation.
 cornerRadius?: Dimension | BorderRadiuses
 ```
 
-Rounded corner radius of the background.
-
-You can set separate radii for the four corners.
-
-Default value: **{ topLeft: '32vp', topRight: '32vp', bottomLeft: '32vp', bottomRight: '32vp' }**
-
-Note: The default corner radius of the background is 32 vp. This attribute must be used together with the
-[borderRadius](arkts-arkui-commonmethod-c.md#borderradius-1)
-attribute.
+Rounded corner radius of the background. You can set separate radii for the four corners. Default value: **{ topLeft: '32vp', topRight: '32vp', bottomLeft: '32vp', bottomRight: '32vp' }** Note: The default corner radius of the background is 32 vp. This attribute must be used together with the [borderRadius](arkts-arkui-commonmethod-c.md#borderradius-1) attribute.
 
 **Type:** Dimension | BorderRadiuses
 
@@ -332,23 +240,7 @@ attribute.
 customStyle?: boolean
 ```
 
-Whether to use a custom style for the dialog box. **true** means a custom style cannot be used for the dialog box,
-and **false** means the opposite.
-
-Default value: **false**
-
-When this parameter is set to **false**:
-
-1. The default rounded corner radius is 32 vp.
-2. If the width and height of the dialog box are not set, the dialog box automatically adapts its width to the grid system and its height to the custom content node.
-3. The set width of the dialog box cannot exceed the maximum width in the default style (100% width for a custom node), and the set height cannot exceed the maximum height (100% height for a custom node).
-4. Due to safe area constraints, the dialog box display area excludes safe areas. For example, on PC/2-in-1 devices, it avoids screen edges and window title bars.
-
-When this parameter is set to **true**:
-
-1. The rounded corner radius is 0, and the background color is transparent.
-2. The width, height, border width, border style, border color, and shadow width cannot be set for the dialog box.
-3. The dialog box display area covers the entire screen.
+Whether to use a custom style for the dialog box. **true** means a custom style cannot be used for the dialog box, and **false** means the opposite. Default value: **false** When this parameter is set to **false**: 1. The default rounded corner radius is 32 vp. 2. If the width and height of the dialog box are not set, the dialog box automatically adapts its width to the grid system and its height to the custom content node. 3. The set width of the dialog box cannot exceed the maximum width in the default style (100% width for a custom node), and the set height cannot exceed the maximum height (100% height for a custom node). 4. Due to safe area constraints, the dialog box display area excludes safe areas. For example, on PC/2-in-1 devices, it avoids screen edges and window title bars. When this parameter is set to **true**: 1. The rounded corner radius is 0, and the background color is transparent. 2. The width, height, border width, border style, border color, and shadow width cannot be set for the dialog box. 3. The dialog box display area covers the entire screen.
 
 **Type:** boolean
 
@@ -384,18 +276,7 @@ Defines the dialog display mode when show in subwindow.
 enableHoverMode?: boolean
 ```
 
-Whether to respond when the device is in semi-folded mode. The value **true** means to respond when the device is
-in semi-folded mode.
-
-Default value: **false**, meaning not to enable the hover state.
-
-**NOTE**
-
-For a PC or 2-in-1 device, the dialog box is displayed on the upper half of the screen by default when
-**enableHoverMode** is set to **true**. You can set **hoverModeArea** to display the dialog box on the lower half
-of the screen. For other devices, the dialog box is displayed on the lower half of the screen by default when
-**enableHoverMode** is set to **true**. You can set **hoverModeArea** to display the dialog box on the upper half
-of the screen.
+Whether to respond when the device is in semi-folded mode. The value **true** means to respond when the device is in semi-folded mode. Default value: **false**, meaning not to enable the hover state. **NOTE** For a PC or 2-in-1 device, the dialog box is displayed on the upper half of the screen by default when **enableHoverMode** is set to **true**. You can set **hoverModeArea** to display the dialog box on the lower half of the screen. For other devices, the dialog box is displayed on the lower half of the screen by default when **enableHoverMode** is set to **true**. You can set **hoverModeArea** to display the dialog box on the upper half of the screen.
 
 **Type:** boolean
 
@@ -415,14 +296,7 @@ of the screen.
 focusable?: boolean
 ```
 
-Whether the dialog box can gain focus. **true**: The dialog box can gain focus. **false**: The dialog box cannot
-gain focus.
-
-Default value: **true**
-
-**NOTE**
-
-Only dialog boxes that are displayed on top of the current window can gain focus.
+Whether the dialog box can gain focus. **true**: The dialog box can gain focus. **false**: The dialog box cannot gain focus. Default value: **true** **NOTE** Only dialog boxes that are displayed on top of the current window can gain focus.
 
 **Type:** boolean
 
@@ -442,12 +316,7 @@ Only dialog boxes that are displayed on top of the current window can gain focus
 gridCount?: number
 ```
 
-Number of [grid columns](../../../../ui/arkts-layout-development-grid-layout.md) occupied by the dialog box.
-
-The default value is subject to the window size, and the maximum value is the maximum number of columns supported
-by the system. If this parameter is set to an invalid value, the default value is used.
-
-Value range: an integer no less than 0
+Number of [grid columns](../../../../ui/arkts-layout-development-grid-layout.md) occupied by the dialog box. The default value is subject to the window size, and the maximum value is the maximum number of columns supported by the system. If this parameter is set to an invalid value, the default value is used. Value range: an integer no less than 0
 
 **Type:** number
 
@@ -463,13 +332,7 @@ Value range: an integer no less than 0
 height?: Dimension
 ```
 
-Height of the dialog box.
-
-**NOTE**
-
-- Default maximum height of the dialog box: 0.9 x (Window height – Safe area)
-- When this parameter is set to a percentage, the reference height of the dialog box is the height of the window
-where the dialog box is located minus the safe area. You can decrease or increase the height as needed.
+Height of the dialog box. **NOTE** - Default maximum height of the dialog box: 0.9 x (Window height – Safe area) - When this parameter is set to a percentage, the reference height of the dialog box is the height of the window where the dialog box is located minus the safe area. You can decrease or increase the height as needed.
 
 **Type:** Dimension
 
@@ -487,9 +350,7 @@ where the dialog box is located minus the safe area. You can decrease or increas
 hoverModeArea?: HoverModeAreaType
 ```
 
-Display area of the dialog box in the hover state.
-
-Default value: **HoverModeAreaType.BOTTOM_SCREEN**
+Display area of the dialog box in the hover state. Default value: **HoverModeAreaType.BOTTOM_SCREEN**
 
 **Type:** HoverModeAreaType
 
@@ -509,12 +370,7 @@ Default value: **HoverModeAreaType.BOTTOM_SCREEN**
 immersiveMode?: ImmersiveMode
 ```
 
-Overlay effect for the page-level dialog box.
-
-**NOTE**
-
-- Default value: **ImmersiveMode.DEFAULT**
-- This parameter takes effect only when **levelMode** is set to **LevelMode.EMBEDDED**.
+Overlay effect for the page-level dialog box. **NOTE** - Default value: **ImmersiveMode.DEFAULT** - This parameter takes effect only when **levelMode** is set to **LevelMode.EMBEDDED**.
 
 **Type:** ImmersiveMode
 
@@ -534,14 +390,7 @@ Overlay effect for the page-level dialog box.
 isModal?: boolean
 ```
 
-Whether the dialog box is a modal, which has a mask applied and does not allow for interaction with other
-components around the menu.
-
-**true**: The dialog box is a modal.
-
-**false**: The dialog box is not a modal.
-
-Default value: **true**
+Whether the dialog box is a modal, which has a mask applied and does not allow for interaction with other components around the menu. **true**: The dialog box is a modal. **false**: The dialog box is not a modal. Default value: **true**
 
 **Type:** boolean
 
@@ -561,13 +410,7 @@ Default value: **true**
 keyboardAvoidDistance?: LengthMetrics
 ```
 
-Distance between the dialog box and the keyboard after keyboard avoidance is applied.
-
-**NOTE**
-
-- Default value: **16vp**
-- Default unit: vp
-- This parameter takes effect only when **keyboardAvoidMode** is set to **DEFAULT**.
+Distance between the dialog box and the keyboard after keyboard avoidance is applied. **NOTE** - Default value: **16vp** - Default unit: vp - This parameter takes effect only when **keyboardAvoidMode** is set to **DEFAULT**.
 
 **Type:** LengthMetrics
 
@@ -585,9 +428,7 @@ Distance between the dialog box and the keyboard after keyboard avoidance is app
 keyboardAvoidMode?: KeyboardAvoidMode
 ```
 
-How the dialog box avoids the soft keyboard when it is brought up.
-
-Default value: **KeyboardAvoidMode.DEFAULT**
+How the dialog box avoids the soft keyboard when it is brought up. Default value: **KeyboardAvoidMode.DEFAULT**
 
 **Type:** KeyboardAvoidMode
 
@@ -607,12 +448,7 @@ Default value: **KeyboardAvoidMode.DEFAULT**
 levelMode?: LevelMode
 ```
 
-Display level of the dialog box.
-
-**NOTE**
-
-- Default value: **LevelMode.OVERLAY.**
-- This parameter takes effect only when **showInSubWindow** is set to **false**.
+Display level of the dialog box. **NOTE** - Default value: **LevelMode.OVERLAY.** - This parameter takes effect only when **showInSubWindow** is set to **false**.
 
 **Type:** LevelMode
 
@@ -632,12 +468,7 @@ Display level of the dialog box.
 levelOrder?: LevelOrder
 ```
 
-Display order of the dialog box.
-
-**NOTE**
-
-- Default value: **LevelOrder.clamp(0)**
-- Dynamic updating is not supported.
+Display order of the dialog box. **NOTE** - Default value: **LevelOrder.clamp(0)** - Dynamic updating is not supported.
 
 **Type:** LevelOrder
 
@@ -657,14 +488,7 @@ Display order of the dialog box.
 levelUniqueId?: number
 ```
 
-[Unique ID](../arkts-apis/arkts-arkui-framenode-c.md#getuniqueid-1) of the node under the display level for the page-level dialog
-box.
-
-Value range: a number no less than 0
-
-**NOTE**
-
-- This parameter takes effect only when **levelMode** is set to **LevelMode.EMBEDDED**.
+[Unique ID](../arkts-apis/arkts-arkui-framenode-c.md#getuniqueid-1) of the node under the display level for the page-level dialog box. Value range: a number no less than 0 **NOTE** - This parameter takes effect only when **levelMode** is set to **LevelMode.EMBEDDED**.
 
 **Type:** number
 
@@ -682,9 +506,7 @@ Value range: a number no less than 0
 maskColor?: ResourceColor
 ```
 
-Custom mask color.
-
-Default value: **0x33000000**.
+Custom mask color. Default value: **0x33000000**.
 
 **Type:** ResourceColor
 
@@ -702,14 +524,7 @@ Default value: **0x33000000**.
 maskRect?: Rectangle
 ```
 
-Mask area of the dialog box. Events outside the mask area are transparently transmitted, and events within the mask
-area are not.
-
-Default value: **{ x: 0, y: 0, width: '100%', height: '100%' }**
-
-**NOTE**
-
-**maskRect** does not take effect when **showInSubWindow** is set to **true**.
+Mask area of the dialog box. Events outside the mask area are transparently transmitted, and events within the mask area are not. Default value: **{ x: 0, y: 0, width: '100%', height: '100%' }** **NOTE** **maskRect** does not take effect when **showInSubWindow** is set to **true**.
 
 **Type:** Rectangle
 
@@ -727,9 +542,7 @@ Default value: **{ x: 0, y: 0, width: '100%', height: '100%' }**
 offset?: Offset
 ```
 
-Offset of the dialog box relative to the alignment position.
-
-Default value: **{dx: 0, dy: 0}**
+Offset of the dialog box relative to the alignment position. Default value: **{dx: 0, dy: 0}**
 
 **Type:** Offset
 
@@ -745,14 +558,7 @@ Default value: **{dx: 0, dy: 0}**
 onDidAppear?: Callback<void>
 ```
 
-Event callback after the dialog box appears.
-
-**NOTE**
-
-1. The normal timing sequence is as follows: onWillAppear > onDidAppear > onWillDisappear > onDidDisappear.
-2. You can set the callback event for changing the dialog box display effect in **onDidAppear**. The settings take effect next time the dialog box appears.
-3. When a dialog box is dismissed immediately after being shown, **onWillDisappear** may be triggered before **onDidAppear**.
-4. If the dialog box is dismissed before its entrance animation is finished, the animation will be interrupted, and **onDidAppear** will not be triggered.
+Event callback after the dialog box appears. **NOTE** 1. The normal timing sequence is as follows: onWillAppear > onDidAppear > onWillDisappear > onDidDisappear. 2. You can set the callback event for changing the dialog box display effect in **onDidAppear**. The settings take effect next time the dialog box appears. 3. When a dialog box is dismissed immediately after being shown, **onWillDisappear** may be triggered before **onDidAppear**. 4. If the dialog box is dismissed before its entrance animation is finished, the animation will be interrupted, and **onDidAppear** will not be triggered.
 
 **Type:** Callback<void>
 
@@ -770,11 +576,7 @@ Event callback after the dialog box appears.
 onDidDisappear?: Callback<void>
 ```
 
-Event callback after the dialog box disappears.
-
-**NOTE**
-
-1. The normal timing sequence is as follows: onWillAppear > onDidAppear > onWillDisappear > onDidDisappear.
+Event callback after the dialog box disappears. **NOTE** 1. The normal timing sequence is as follows: onWillAppear > onDidAppear > onWillDisappear > onDidDisappear.
 
 **Type:** Callback<void>
 
@@ -792,12 +594,7 @@ Event callback after the dialog box disappears.
 onWillAppear?: Callback<void>
 ```
 
-Event callback when the dialog box is about to appear.
-
-**NOTE**
-
-1. The normal timing sequence is as follows: onWillAppear > onDidAppear > onWillDisappear > onDidDisappear.
-2. You can set the callback event for changing the dialog box display effect in **onWillAppear**. The settings take effect next time the dialog box appears.
+Event callback when the dialog box is about to appear. **NOTE** 1. The normal timing sequence is as follows: onWillAppear > onDidAppear > onWillDisappear > onDidDisappear. 2. You can set the callback event for changing the dialog box display effect in **onWillAppear**. The settings take effect next time the dialog box appears.
 
 **Type:** Callback<void>
 
@@ -815,11 +612,7 @@ Event callback when the dialog box is about to appear.
 onWillDisappear?: Callback<void>
 ```
 
-Event callback when the dialog box is about to disappear.
-
-**NOTE**
-
-1. The normal timing sequence is as follows: onWillAppear > onDidAppear > onWillDisappear > onDidDisappear.
+Event callback when the dialog box is about to disappear. **NOTE** 1. The normal timing sequence is as follows: onWillAppear > onDidAppear > onWillDisappear > onDidDisappear.
 
 **Type:** Callback<void>
 
@@ -837,12 +630,7 @@ Event callback when the dialog box is about to disappear.
 onWillDismiss?: Callback<DismissDialogAction>
 ```
 
-Callback for interactive closure of the dialog box.
-
-**NOTE**
-
-1. If this callback is registered, the dialog box will not be dismissed immediately after the user touches the mask or the Back button, presses the Esc key, or swipes left or right on the screen. The **reason** parameter in the callback is used to determine whether the dialog box can be closed. The reason returned by the component does not support the value **CLOSE_BUTTON**.
-2. In the **onWillDismiss** callback, another **onWillDismiss** callback is not allowed.
+Callback for interactive closure of the dialog box. **NOTE** 1. If this callback is registered, the dialog box will not be dismissed immediately after the user touches the mask or the Back button, presses the Esc key, or swipes left or right on the screen. The **reason** parameter in the callback is used to determine whether the dialog box can be closed. The reason returned by the component does not support the value **CLOSE_BUTTON**. 2. In the **onWillDismiss** callback, another **onWillDismiss** callback is not allowed.
 
 **Type:** Callback<DismissDialogAction>
 
@@ -860,16 +648,7 @@ Callback for interactive closure of the dialog box.
 openAnimation?: AnimateParam
 ```
 
-Parameters for defining the open animation of the dialog box.
-
-**NOTE**
-
-**tempo**: The default value is **1**; a value less than or equal to 0 is handled as the default value.
-
-**iterations**: The default value is **1**, indicating that the animation is played once; any other value is
-handled as the default value.
-
-**playMode**: The default value is **PlayMode.Normal**; any other value is handled as the default value.
+Parameters for defining the open animation of the dialog box. **NOTE** **tempo**: The default value is **1**; a value less than or equal to 0 is handled as the default value. **iterations**: The default value is **1**, indicating that the animation is played once; any other value is handled as the default value. **playMode**: The default value is **PlayMode.Normal**; any other value is handled as the default value.
 
 **Type:** AnimateParam
 
@@ -887,10 +666,7 @@ handled as the default value.
 shadow?: ShadowOptions | ShadowStyle
 ```
 
-Shadow of the dialog box.
-
-Default value on 2-in-1 devices: **ShadowStyle.OUTER_FLOATING_MD** when the dialog box is focused and
-**ShadowStyle.OUTER_FLOATING_SM** otherwise On other devices, the dialog box has no shadow by default.
+Shadow of the dialog box. Default value on 2-in-1 devices: **ShadowStyle.OUTER_FLOATING_MD** when the dialog box is focused and **ShadowStyle.OUTER_FLOATING_SM** otherwise On other devices, the dialog box has no shadow by default.
 
 **Type:** ShadowOptions | ShadowStyle
 
@@ -908,17 +684,7 @@ Default value on 2-in-1 devices: **ShadowStyle.OUTER_FLOATING_MD** when the dial
 showInSubWindow?: boolean
 ```
 
-Whether to show the dialog box in a subwindow when the dialog box needs to be displayed outside the main window.
-**true**: The dialog box is shown in a subwindow.
-
-Default value: **false**
-
-**NOTE**
-
-A dialog box whose **showInSubWindow** attribute is **true** cannot trigger the display of another dialog box whose
-**showInSubWindow** attribute is also **true**. Avoid using the **CalendarPicker**, **CalendarPickerDialog**,
-**DatePickerDialog**, **TextPickerDialog**, **TimePickerDialog**, and **Toast** components in the dialog box where
-**showInSubWindow** is set to **true**, as the dialog box may affect the behavior of these components.
+Whether to show the dialog box in a subwindow when the dialog box needs to be displayed outside the main window. **true**: The dialog box is shown in a subwindow. Default value: **false** **NOTE** A dialog box whose **showInSubWindow** attribute is **true** cannot trigger the display of another dialog box whose **showInSubWindow** attribute is also **true**. Avoid using the **CalendarPicker**, **CalendarPickerDialog**, **DatePickerDialog**, **TextPickerDialog**, **TimePickerDialog**, and **Toast** components in the dialog box where **showInSubWindow** is set to **true**, as the dialog box may affect the behavior of these components.
 
 **Type:** boolean
 
@@ -938,8 +704,7 @@ A dialog box whose **showInSubWindow** attribute is **true** cannot trigger the 
 systemMaterial?: SystemUiMaterial
 ```
 
-System material of the dialog box. Different materials have different effects and can affect visual attributes such
-as the background color, border, and shadow of the dialog box.
+System material of the dialog box. Different materials have different effects and can affect visual attributes such as the background color, border, and shadow of the dialog box.
 
 **Type:** SystemUiMaterial
 
@@ -957,13 +722,7 @@ as the background color, border, and shadow of the dialog box.
 width?: Dimension
 ```
 
-Width of the dialog box.
-
-**NOTE**
-
-- Default maximum width of the dialog box: 400 vp
-- When this parameter is set to a percentage, the reference width of the dialog box is the width of the window
-where the dialog box is located. You can decrease or increase the width as needed.
+Width of the dialog box. **NOTE** - Default maximum width of the dialog box: 400 vp - When this parameter is set to a percentage, the reference width of the dialog box is the width of the window where the dialog box is located. You can decrease or increase the width as needed.
 
 **Type:** Dimension
 

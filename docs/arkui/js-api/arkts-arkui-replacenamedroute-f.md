@@ -12,14 +12,7 @@ import { router } from '@kit.ArkUI';
 function replaceNamedRoute(options: NamedRouterOptions, callback: AsyncCallback<void>): void
 ```
 
-Replaces the current page with another one using the named route and destroys the current page.
-
-> **NOTE**
->
-> - Since API version 10, you can use the
-> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in
-> [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated
-> with the current UI context.
+Replaces the current page with another one using the named route and destroys the current page. > **NOTE** > > - Since API version 10, you can use the > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in > [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated > with the current UI context.
 
 **Since:** 10
 
@@ -51,6 +44,8 @@ Replaces the current page with another one using the named route and destroys th
 **Example**
 
 ```TypeScript
+import { router } from '@kit.ArkUI';
+
 class RouterParams {
   data1: string;
 
@@ -64,7 +59,7 @@ router.replaceNamedRoute({
   params: new RouterParams('message')
 }, (err) => {
   if (err) {
-    console.error(`replaceNamedRoute failed, code is ${err.code}, message is ${err.message}`);
+    console.error(`replaceNamedRoute failed. Code: ${err.code}, message: ${err.message}`);
     return;
   }
   console.info('replaceNamedRoute success');
@@ -79,14 +74,7 @@ router.replaceNamedRoute({
 function replaceNamedRoute(options: NamedRouterOptions): Promise<void>
 ```
 
-Replaces the current page with another one using the named route and destroys the current page.
-
-> **NOTE**
->
-> - Since API version 10, you can use the
-> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in
-> [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated
-> with the current UI context.
+Replaces the current page with another one using the named route and destroys the current page. > **NOTE** > > - Since API version 10, you can use the > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in > [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated > with the current UI context.
 
 **Since:** 10
 
@@ -123,6 +111,8 @@ Replaces the current page with another one using the named route and destroys th
 **Example**
 
 ```TypeScript
+import { router } from '@kit.ArkUI';
+
 import { BusinessError } from '@kit.BasicServicesKit';
 
 class RouterParams {
@@ -140,8 +130,8 @@ router.replaceNamedRoute({
   .then(() => {
     console.info(`replaceNamedRoute finish`);
   })
-  .catch((err: ESObject) => {
-    console.error(`replaceNamedRoute failed, code is ${(err as BusinessError).code}, message is ${(err as BusinessError).message}`);
+  .catch((err: BusinessError) => {
+    console.error(`replaceNamedRoute failed. Code: ${err.code}, message: ${err.message}`);
   })
 
 ```
@@ -153,14 +143,7 @@ router.replaceNamedRoute({
 function replaceNamedRoute(options: NamedRouterOptions, mode: RouterMode, callback: AsyncCallback<void>): void
 ```
 
-Replaces the current page with another one using the named route and destroys the current page.
-
-> **NOTE**
->
-> - Since API version 10, you can use the
-> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in
-> [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated
-> with the current UI context.
+Replaces the current page with another one using the named route and destroys the current page. > **NOTE** > > - Since API version 10, you can use the > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in > [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated > with the current UI context.
 
 **Since:** 10
 
@@ -193,6 +176,8 @@ Replaces the current page with another one using the named route and destroys th
 **Example**
 
 ```TypeScript
+import { router } from '@kit.ArkUI';
+
 class RouterParams {
   data1: string;
 
@@ -206,7 +191,7 @@ router.replaceNamedRoute({
   params: new RouterParams('message')
 }, router.RouterMode.Standard, (err) => {
   if (err) {
-    console.error(`replaceNamedRoute failed, code is ${err.code}, message is ${err.message}`);
+    console.error(`replaceNamedRoute failed. Code: ${err.code}, message: ${err.message}`);
     return;
   }
   console.info('replaceNamedRoute success');
@@ -221,14 +206,7 @@ router.replaceNamedRoute({
 function replaceNamedRoute(options: NamedRouterOptions, mode: RouterMode): Promise<void>
 ```
 
-Replaces the current page with another one using the named route and destroys the current page.
-
-> **NOTE**
->
-> - Since API version 10, you can use the
-> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in
-> [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated
-> with the current UI context.
+Replaces the current page with another one using the named route and destroys the current page. > **NOTE** > > - Since API version 10, you can use the > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in > [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated > with the current UI context.
 
 **Since:** 10
 
@@ -266,6 +244,8 @@ Replaces the current page with another one using the named route and destroys th
 **Example**
 
 ```TypeScript
+import { router } from '@kit.ArkUI';
+
 import { BusinessError } from '@kit.BasicServicesKit';
 
 class RouterParams {
@@ -283,8 +263,8 @@ router.replaceNamedRoute({
   .then(() => {
     console.info(`replaceNamedRoute finish`);
   })
-  .catch((err: ESObject) => {
-    console.error(`replaceNamedRoute failed, code is ${(err as BusinessError).code}, message is ${(err as BusinessError).message}`);
+  .catch((err: BusinessError) => {
+    console.error(`replaceNamedRoute failed. Code: ${err.code}, message: ${err.message}`);
   })
 
 ```

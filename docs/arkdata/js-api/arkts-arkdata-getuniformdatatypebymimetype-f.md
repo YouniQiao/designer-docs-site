@@ -12,8 +12,7 @@ import { uniformTypeDescriptor } from '@kit.ArkData';
 function getUniformDataTypeByMIMEType(mimeType: string, belongsTo?: string): string
 ```
 
-Obtains the uniform data type ID based on the given MIME type and data type. If there are multiple uniform data
-type IDs matching the conditions, the first one is returned.
+Obtains the uniform data type ID based on the given MIME type and data type. If there are multiple uniform data type IDs matching the conditions, the first one is returned.
 
 **Since:** 11
 

@@ -1,7 +1,6 @@
 # LocalStorage
 
-For details about how to use LocalStorage on the UI, see
-[LocalStorage: UI State Storage](../../../../ui/state-management/arkts-localstorage.md).
+For details about how to use LocalStorage on the UI, see [LocalStorage: UI State Storage](../../../../ui/state-management/arkts-localstorage.md).
 
 **Since:** 9
 
@@ -13,8 +12,7 @@ For details about how to use LocalStorage on the UI, see
 static GetShared(): LocalStorage
 ```
 
-Obtains the [LocalStorage](../../../../ui/state-management/arkts-localstorage.md) instance shared across the current
-stage.
+Obtains the [LocalStorage](../../../../ui/state-management/arkts-localstorage.md) instance shared across the current stage.
 
 **Since:** 9
 
@@ -40,12 +38,7 @@ stage.
 clear(): boolean
 ```
 
-Deletes all properties from [LocalStorage](../../../../ui/state-management/arkts-localstorage.md). The deletion is
-only successful if none of the properties in LocalStorage have any subscribers. If there are subscribers, this API
-does not take effect and **false** is returned. If there are no subscribers, the deletion is successful and
-**true** is returned.
-
-For details about the subscriber, see [delete](arkts-arkui-localstorage-c.md#delete-1).
+Deletes all properties from [LocalStorage](../../../../ui/state-management/arkts-localstorage.md). The deletion is only successful if none of the properties in LocalStorage have any subscribers. If there are subscribers, this API does not take effect and **false** is returned. If there are no subscribers, the deletion is successful and **true** is returned. For details about the subscriber, see [delete](arkts-arkui-localstorage-c.md#delete-1).
 
 **Since:** 9
 
@@ -67,8 +60,7 @@ For details about the subscriber, see [delete](arkts-arkui-localstorage-c.md#del
 constructor(initializingProperties?: Object)
 ```
 
-Creates a [LocalStorage](../../../../ui/state-management/arkts-localstorage.md) instance and initializes it using the
-properties and values returned by **Object.keys(initializingProperties)**.
+Creates a [LocalStorage](../../../../ui/state-management/arkts-localstorage.md) instance and initializes it using the properties and values returned by **Object.keys(initializingProperties)**.
 
 **Since:** 9
 
@@ -90,29 +82,7 @@ properties and values returned by **Object.keys(initializingProperties)**.
 delete(propName: string): boolean
 ```
 
-Deletes the property corresponding to **propName** from
-[LocalStorage](../../../../ui/state-management/arkts-localstorage.md). The deletion is only successful if the
-property has no subscribers. If there is a subscriber, the deletion fails and **false** is returned. If there are
-no subscribers, the deletion is successful and **true** is returned.
-
-The property subscribers include the following:
-
-1. Variables decorated by
-[\@LocalStorageLink](../../../../ui/state-management/arkts-localstorage.md#localstoragelink) or
-[\@LocalStorageProp](../../../../ui/state-management/arkts-localstorage.md#localstorageprop)
-
-2. Instances of [SubscribedAbstractProperty](arkts-arkui-subscribedabstractproperty-c.md)
-returned by [link](arkts-arkui-localstorage-c.md#link-1), [prop](arkts-arkui-localstorage-c.md#prop-1),
-[setAndLink](arkts-arkui-localstorage-c.md#setandlink-1), or [setAndProp](arkts-arkui-localstorage-c.md#setandprop-1)
-
-To delete these subscribers:
-
-1. Remove the custom component containing \@LocalStorageLink or \@LocalStorageProp.
-For details, see
-[Custom Component Deletion](../../../../ui/state-management/arkts-page-custom-components-lifecycle.md#custom-component-deletion).
-
-2. Call the [aboutToBeDeleted](arkts-arkui-subscribedabstractproperty-c.md#abouttobedeleted-1) API on instances
-of **SubscribedAbstractProperty** returned by **link**, **prop**, **setAndLink**, or **setAndProp**.
+Deletes the property corresponding to **propName** from [LocalStorage](../../../../ui/state-management/arkts-localstorage.md). The deletion is only successful if the property has no subscribers. If there is a subscriber, the deletion fails and **false** is returned. If there are no subscribers, the deletion is successful and **true** is returned. The property subscribers include the following: 1. Variables decorated by [\@LocalStorageLink](../../../../ui/state-management/arkts-localstorage.md#localstoragelink) or [\@LocalStorageProp](../../../../ui/state-management/arkts-localstorage.md#localstorageprop) 2. Instances of [SubscribedAbstractProperty](arkts-arkui-subscribedabstractproperty-c.md) returned by [link](arkts-arkui-localstorage-c.md#link-1), [prop](arkts-arkui-localstorage-c.md#prop-1), [setAndLink](arkts-arkui-localstorage-c.md#setandlink-1), or [setAndProp](arkts-arkui-localstorage-c.md#setandprop-1) To delete these subscribers: 1. Remove the custom component containing \@LocalStorageLink or \@LocalStorageProp. For details, see [Custom Component Deletion](../../../../ui/state-management/arkts-page-custom-components-lifecycle.md#custom-component-deletion). 2. Call the [aboutToBeDeleted](arkts-arkui-subscribedabstractproperty-c.md#abouttobedeleted-1) API on instances of **SubscribedAbstractProperty** returned by **link**, **prop**, **setAndLink**, or **setAndProp**.
 
 **Since:** 9
 
@@ -140,8 +110,7 @@ of **SubscribedAbstractProperty** returned by **link**, **prop**, **setAndLink**
 get<T>(propName: string): T | undefined
 ```
 
-Obtains the value of the property corresponding to **propName** from
-[LocalStorage](../../../../ui/state-management/arkts-localstorage.md).
+Obtains the value of the property corresponding to **propName** from [LocalStorage](../../../../ui/state-management/arkts-localstorage.md).
 
 **Since:** 9
 
@@ -169,14 +138,7 @@ Obtains the value of the property corresponding to **propName** from
 static getShared(): LocalStorage
 ```
 
-Obtains the [LocalStorage](../../../../ui/state-management/arkts-localstorage.md) instance shared across the current
-stage.
-
-> **NOTE**
-
-> Since API version 12, you can use the
-> [getSharedLocalStorage](@link getSharedLocalStorage)
-> API in [UIContext](../arkts-apis/arkts-arkui-uicontext.md) to specify the UI execution context.
+Obtains the [LocalStorage](../../../../ui/state-management/arkts-localstorage.md) instance shared across the current stage. > **NOTE** > Since API version 12, you can use the > [getSharedLocalStorage](@link getSharedLocalStorage) > API in [UIContext](../arkts-apis/arkts-arkui-uicontext.md) to specify the UI execution context.
 
 **Since:** 10
 
@@ -204,8 +166,7 @@ stage.
 has(propName: string): boolean
 ```
 
-Checks whether the property corresponding to **propName** exists in
-[LocalStorage](../../../../ui/state-management/arkts-localstorage.md).
+Checks whether the property corresponding to **propName** exists in [LocalStorage](../../../../ui/state-management/arkts-localstorage.md).
 
 **Since:** 9
 
@@ -255,14 +216,7 @@ Obtains all property names in [LocalStorage](../../../../ui/state-management/ark
 link<T>(propName: string): SubscribedAbstractProperty<T>
 ```
 
-Establishes a two-way data binding with the property corresponding to **propName** in
-[LocalStorage](../../../../ui/state-management/arkts-localstorage.md). If the given property exists in LocalStorage,
-this API returns the two-way bound data for the property.
-
-Any update of the data is synchronized back to LocalStorage, which then synchronizes the update to all data and
-components bound to the property.
-
-If the given property does not exist in LocalStorage, **undefined** is returned.
+Establishes a two-way data binding with the property corresponding to **propName** in [LocalStorage](../../../../ui/state-management/arkts-localstorage.md). If the given property exists in LocalStorage, this API returns the two-way bound data for the property. Any update of the data is synchronized back to LocalStorage, which then synchronizes the update to all data and components bound to the property. If the given property does not exist in LocalStorage, **undefined** is returned.
 
 **Since:** 9
 
@@ -290,10 +244,7 @@ If the given property does not exist in LocalStorage, **undefined** is returned.
 prop<S>(propName: string): SubscribedAbstractProperty<S>
 ```
 
-Establishes a one-way data binding with the property corresponding to **propName** in
-[LocalStorage](../../../../ui/state-management/arkts-localstorage.md). If the given property exists in LocalStorage,
-this API returns the one-way bound data for the property. If the given property does not exist in LocalStorage,
-**undefined** is returned. Updates of the one-way bound data are not synchronized back to LocalStorage.
+Establishes a one-way data binding with the property corresponding to **propName** in [LocalStorage](../../../../ui/state-management/arkts-localstorage.md). If the given property exists in LocalStorage, this API returns the one-way bound data for the property. If the given property does not exist in LocalStorage, **undefined** is returned. Updates of the one-way bound data are not synchronized back to LocalStorage.
 
 **Since:** 9
 
@@ -321,12 +272,7 @@ this API returns the one-way bound data for the property. If the given property 
 public ref<T>(propName: string): AbstractProperty<T> | undefined
 ```
 
-Returns a reference to the property corresponding to **propName** in
-[LocalStorage](../../../../ui/state-management/arkts-localstorage.md). If the provided **propName** does not exist,
-this API returns **undefined**.
-
-This API is similar to [link](arkts-arkui-localstorage-c.md#link-1) but does not require manually releasing the returned
-variable of the [AbstractProperty](arkts-arkui-abstractproperty-i.md) type.
+Returns a reference to the property corresponding to **propName** in [LocalStorage](../../../../ui/state-management/arkts-localstorage.md). If the provided **propName** does not exist, this API returns **undefined**. This API is similar to [link](arkts-arkui-localstorage-c.md#link-1) but does not require manually releasing the returned variable of the [AbstractProperty](arkts-arkui-abstractproperty-i.md) type.
 
 **Since:** 12
 
@@ -352,19 +298,7 @@ variable of the [AbstractProperty](arkts-arkui-abstractproperty-i.md) type.
 set<T>(propName: string, newValue: T): boolean
 ```
 
-Sets the value of the property corresponding to **propName** in
-[LocalStorage](../../../../ui/state-management/arkts-localstorage.md). If the value of **newValue** is the same as
-the current value of the property, no assignment is performed, and the state variable does not instruct the UI to
-update the value of the property.
-
-> **NOTE**
-
-> Since API version 12, LocalStorage supports
-> [Map](../../../../ui/state-management/arkts-localstorage.md#decorating-variables-of-the-map-type),
-> [Set](../../../../ui/state-management/arkts-localstorage.md#decorating-variables-of-the-set-type),
-> [Date](../../../../ui/state-management/arkts-localstorage.md#decorating-variables-of-the-date-type), **null**,
-> **undefined**, and [union](../../../../ui/state-management/arkts-localstorage.md#using-union-types-in-localstorage)
-> types.
+Sets the value of the property corresponding to **propName** in [LocalStorage](../../../../ui/state-management/arkts-localstorage.md). If the value of **newValue** is the same as the current value of the property, no assignment is performed, and the state variable does not instruct the UI to update the value of the property. > **NOTE** > Since API version 12, LocalStorage supports > [Map](../../../../ui/state-management/arkts-localstorage.md#decorating-variables-of-the-map-type), > [Set](../../../../ui/state-management/arkts-localstorage.md#decorating-variables-of-the-set-type), > [Date](../../../../ui/state-management/arkts-localstorage.md#decorating-variables-of-the-date-type), **null**, > **undefined**, and [union](../../../../ui/state-management/arkts-localstorage.md#using-union-types-in-localstorage) > types.
 
 **Since:** 9
 
@@ -393,20 +327,7 @@ update the value of the property.
 setAndLink<T>(propName: string, defaultValue: T): SubscribedAbstractProperty<T>
 ```
 
-Similar to the [link](arkts-arkui-localstorage-c.md#link-1) API, establishes a two-way data binding with the property
-corresponding to **propName** in [LocalStorage](../../../../ui/state-management/arkts-localstorage.md). If the given
-property exists in LocalStorage, this API returns the two-way bound data for the property. If the given property
-does not exist, this API creates and initializes the property in LocalStorage using **defaultValue** and returns
-its two-way bound data.
-
-> **NOTE**
-
-> Since API version 12, LocalStorage supports
-> [Map](../../../../ui/state-management/arkts-localstorage.md#decorating-variables-of-the-map-type),
-> [Set](../../../../ui/state-management/arkts-localstorage.md#decorating-variables-of-the-set-type),
-> [Date](../../../../ui/state-management/arkts-localstorage.md#decorating-variables-of-the-date-type), **null**,
-> **undefined**, and [union](../../../../ui/state-management/arkts-localstorage.md#using-union-types-in-localstorage)
-> types.
+Similar to the [link](arkts-arkui-localstorage-c.md#link-1) API, establishes a two-way data binding with the property corresponding to **propName** in [LocalStorage](../../../../ui/state-management/arkts-localstorage.md). If the given property exists in LocalStorage, this API returns the two-way bound data for the property. If the given property does not exist, this API creates and initializes the property in LocalStorage using **defaultValue** and returns its two-way bound data. > **NOTE** > Since API version 12, LocalStorage supports > [Map](../../../../ui/state-management/arkts-localstorage.md#decorating-variables-of-the-map-type), > [Set](../../../../ui/state-management/arkts-localstorage.md#decorating-variables-of-the-set-type), > [Date](../../../../ui/state-management/arkts-localstorage.md#decorating-variables-of-the-date-type), **null**, > **undefined**, and [union](../../../../ui/state-management/arkts-localstorage.md#using-union-types-in-localstorage) > types.
 
 **Since:** 9
 
@@ -435,20 +356,7 @@ its two-way bound data.
 setAndProp<S>(propName: string, defaultValue: S): SubscribedAbstractProperty<S>
 ```
 
-Similar to the [prop](arkts-arkui-localstorage-c.md#prop-1) API, establishes a one-way data binding with the property
-corresponding to **propName** in [LocalStorage](../../../../ui/state-management/arkts-localstorage.md). If the given
-property exists in LocalStorage, this API returns the one-way bound data for the property. If the given property
-does not exist, this API creates and initializes the property in LocalStorage using **defaultValue** and returns
-its one-way bound data.
-
-> **NOTE**
-
-> Since API version 12, LocalStorage supports
-> [Map](../../../../ui/state-management/arkts-localstorage.md#decorating-variables-of-the-map-type),
-> [Set](../../../../ui/state-management/arkts-localstorage.md#decorating-variables-of-the-set-type),
-> [Date](../../../../ui/state-management/arkts-localstorage.md#decorating-variables-of-the-date-type), **null**,
-> **undefined**, and [union](../../../../ui/state-management/arkts-localstorage.md#using-union-types-in-localstorage)
-> types.
+Similar to the [prop](arkts-arkui-localstorage-c.md#prop-1) API, establishes a one-way data binding with the property corresponding to **propName** in [LocalStorage](../../../../ui/state-management/arkts-localstorage.md). If the given property exists in LocalStorage, this API returns the one-way bound data for the property. If the given property does not exist, this API creates and initializes the property in LocalStorage using **defaultValue** and returns its one-way bound data. > **NOTE** > Since API version 12, LocalStorage supports > [Map](../../../../ui/state-management/arkts-localstorage.md#decorating-variables-of-the-map-type), > [Set](../../../../ui/state-management/arkts-localstorage.md#decorating-variables-of-the-set-type), > [Date](../../../../ui/state-management/arkts-localstorage.md#decorating-variables-of-the-date-type), **null**, > **undefined**, and [union](../../../../ui/state-management/arkts-localstorage.md#using-union-types-in-localstorage) > types.
 
 **Since:** 9
 
@@ -477,21 +385,7 @@ its one-way bound data.
 public setAndRef<T>(propName: string, defaultValue: T): AbstractProperty<T>
 ```
 
-Similar to the [ref](arkts-arkui-appstorage-c.md#ref-1) API, returns a reference to the property corresponding to **propName**
-in [LocalStorage](../../../../ui/state-management/arkts-localstorage.md). If the given property does not exist, this
-API creates and initializes the property in LocalStorage using **defaultValue** and returns its reference.
-
-This API is similar to [setAndLink](arkts-arkui-localstorage-c.md#setandlink-1) but does not require manually releasing the
-returned variable of the [AbstractProperty](arkts-arkui-abstractproperty-i.md) type.
-
-> **NOTE**
-
-> Since API version 12, LocalStorage supports
-> [Map](../../../../ui/state-management/arkts-localstorage.md#decorating-variables-of-the-map-type),
-> [Set](../../../../ui/state-management/arkts-localstorage.md#decorating-variables-of-the-set-type),
-> [Date](../../../../ui/state-management/arkts-localstorage.md#decorating-variables-of-the-date-type), **null**,
-> **undefined**, and [union](../../../../ui/state-management/arkts-localstorage.md#using-union-types-in-localstorage)
-> types.
+Similar to the [ref](arkts-arkui-appstorage-c.md#ref-1) API, returns a reference to the property corresponding to **propName** in [LocalStorage](../../../../ui/state-management/arkts-localstorage.md). If the given property does not exist, this API creates and initializes the property in LocalStorage using **defaultValue** and returns its reference. This API is similar to [setAndLink](arkts-arkui-localstorage-c.md#setandlink-1) but does not require manually releasing the returned variable of the [AbstractProperty](arkts-arkui-abstractproperty-i.md) type. > **NOTE** > Since API version 12, LocalStorage supports > [Map](../../../../ui/state-management/arkts-localstorage.md#decorating-variables-of-the-map-type), > [Set](../../../../ui/state-management/arkts-localstorage.md#decorating-variables-of-the-set-type), > [Date](../../../../ui/state-management/arkts-localstorage.md#decorating-variables-of-the-date-type), **null**, > **undefined**, and [union](../../../../ui/state-management/arkts-localstorage.md#using-union-types-in-localstorage) > types.
 
 **Since:** 12
 
@@ -518,23 +412,7 @@ returned variable of the [AbstractProperty](arkts-arkui-abstractproperty-i.md) t
 setOrCreate<T>(propName: string, newValue: T): boolean
 ```
 
-Sets the value of the property corresponding to **propName** in
-[LocalStorage](../../../../ui/state-management/arkts-localstorage.md) to a new value, if the property exists and the
-new value is different from the current value. If the new value is the same as the current value of the property,
-no assignment is performed, and the state variable does not instruct the UI to update the value of the property.
-
-If the property does not exist, this API creates it with the value of **newValue**. This **setOrCreate** API can
-create only one LocalStorage key-value pair each time. To create multiple key-value pairs, call this API multiple
-times.
-
-> **NOTE**
-
-> Since API version 12, LocalStorage supports
-> [Map](../../../../ui/state-management/arkts-localstorage.md#decorating-variables-of-the-map-type),
-> [Set](../../../../ui/state-management/arkts-localstorage.md#decorating-variables-of-the-set-type),
-> [Date](../../../../ui/state-management/arkts-localstorage.md#decorating-variables-of-the-date-type), **null**,
-> **undefined**, and [union](../../../../ui/state-management/arkts-localstorage.md#using-union-types-in-localstorage)
-> types.
+Sets the value of the property corresponding to **propName** in [LocalStorage](../../../../ui/state-management/arkts-localstorage.md) to a new value, if the property exists and the new value is different from the current value. If the new value is the same as the current value of the property, no assignment is performed, and the state variable does not instruct the UI to update the value of the property. If the property does not exist, this API creates it with the value of **newValue**. This **setOrCreate** API can create only one LocalStorage key-value pair each time. To create multiple key-value pairs, call this API multiple times. > **NOTE** > Since API version 12, LocalStorage supports > [Map](../../../../ui/state-management/arkts-localstorage.md#decorating-variables-of-the-map-type), > [Set](../../../../ui/state-management/arkts-localstorage.md#decorating-variables-of-the-set-type), > [Date](../../../../ui/state-management/arkts-localstorage.md#decorating-variables-of-the-date-type), **null**, > **undefined**, and [union](../../../../ui/state-management/arkts-localstorage.md#using-union-types-in-localstorage) > types.
 
 **Since:** 9
 

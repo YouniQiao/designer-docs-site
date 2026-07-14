@@ -1,7 +1,6 @@
 # InsightIntentInfoFilter (System API)
 
-Defines an intent filter, which specifies the criteria for selecting target intents. It is used to filter intents
-on the device that meet these criteria.
+Defines an intent filter, which specifies the criteria for selecting target intents. It is used to filter intents on the device that meet these criteria.
 
 **Since:** 23
 
@@ -39,9 +38,7 @@ Bundle name of the application to which the intent belongs.
 intentFlags: number
 ```
 
-Flag of the intent information ([InsightIntentInfo](arkts-ability-insightintentinfo-i-sys.md)). It is used to
-query full or brief intent information. For details, see
-[GetInsightIntentFlag](arkts-ability-getinsightintentflag-e-sys.md).
+Flag of the intent information ([InsightIntentInfo](arkts-ability-insightintentinfo-i-sys.md)). It is used to query full or brief intent information. For details, see [GetInsightIntentFlag](arkts-ability-getinsightintentflag-e-sys.md).
 
 **Type:** number
 
@@ -95,12 +92,7 @@ Module name of the application to which the intent belongs.
 userId?: number
 ```
 
-ID of the user to which the intent belongs.
-
-**NOTE**
-
-If the user ID of the calling application is different from the user ID of the intent, the calling application
-must request the ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS permission.
+ID of the user to which the intent belongs. **NOTE** If the user ID of the calling application is different from the user ID of the intent, the calling application must request the ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS permission.
 
 **Type:** number
 

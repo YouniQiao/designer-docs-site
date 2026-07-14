@@ -1,7 +1,6 @@
 # ColorReservation (System API)
 
-ColorReservation extends [ColorReservationQuery](arkts-camera-colorreservationquery-i-sys.md)
-Provides API for obtaining and setting a color reservation type.
+ColorReservation extends [ColorReservationQuery](arkts-camera-colorreservationquery-i-sys.md) Provides API for obtaining and setting a color reservation type.
 
 **Inheritance/Implementation:** ColorReservation extends [ColorReservationQuery](arkts-camera-colorreservationquery-i-sys.md)
 
@@ -69,9 +68,7 @@ function getColorReservation(session: camera.VideoSessionForSys): camera.ColorRe
 setColorReservation(type: ColorReservationType): void
 ```
 
-Sets a color reservation type. Before the setting, call
-[getSupportedColorReservationTypes](arkts-camera-colorreservationquery-i-sys.md#getsupportedcolorreservationtypes-1) to
-obtain the supported color reservation types.
+Sets a color reservation type. Before the setting, call [getSupportedColorReservationTypes](arkts-camera-colorreservationquery-i-sys.md#getsupportedcolorreservationtypes-1) to obtain the supported color reservation types.
 
 **Since:** 15
 

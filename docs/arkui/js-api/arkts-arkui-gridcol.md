@@ -2,7 +2,6 @@
 
 Defines the the new version of grid-container child component.
 
-
 ## GridCol
 
 ```TypeScript

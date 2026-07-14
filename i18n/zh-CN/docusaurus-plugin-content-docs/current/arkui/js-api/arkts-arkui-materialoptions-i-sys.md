@@ -14,9 +14,7 @@
 type?: MaterialType
 ```
 
-材质类型。
-
-默认值：MaterialType.NONE
+材质类型。 默认值：MaterialType.NONE
 
 **类型：** MaterialType
 

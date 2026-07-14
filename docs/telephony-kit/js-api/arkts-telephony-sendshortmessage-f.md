@@ -12,10 +12,7 @@ import { sms } from '@kit.TelephonyKit';
 function sendShortMessage(options: SendMessageOptions, callback: AsyncCallback<void>): void
 ```
 
-Sends a text or data SMS message.
-
-<p>This method checks whether the length of an SMS message exceeds the maximum length. If the
-maximum length is exceeded, the SMS message is split into multiple parts and sent separately.
+Sends a text or data SMS message. <p>This method checks whether the length of an SMS message exceeds the maximum length. If the maximum length is exceeded, the SMS message is split into multiple parts and sent separately.
 
 **Since:** 10
 
@@ -75,10 +72,7 @@ sms.sendShortMessage(options, (err: BusinessError) => {
 function sendShortMessage(options: SendMessageOptions): Promise<void>
 ```
 
-Sends a text or data SMS message.
-
-<p>This method checks whether the length of an SMS message exceeds the maximum length. If the
-maximum length is exceeded, the SMS message is split into multiple parts and sent separately.
+Sends a text or data SMS message. <p>This method checks whether the length of an SMS message exceeds the maximum length. If the maximum length is exceeded, the SMS message is split into multiple parts and sent separately.
 
 **Since:** 10
 

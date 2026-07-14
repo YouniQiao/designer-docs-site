@@ -25,9 +25,7 @@ buttons: [
         ]
 ```
 
-Array of menu item buttons.
-The array structure is **{text:'button', color: '\#666666'}**.
-Up to six buttons are supported. If there are more than six buttons, only the first six buttons will be displayed.
+Array of menu item buttons. The array structure is **{text:'button', color: '\#666666'}**. Up to six buttons are supported. If there are more than six buttons, only the first six buttons will be displayed.
 
 **Type:** [
             Button,
@@ -50,10 +48,7 @@ Up to six buttons are supported. If there are more than six buttons, only the fi
 immersiveMode?: ImmersiveMode
 ```
 
-Overlay effect for the page-level menu.
-<br>**NOTE**
-<br>- Default value: **ImmersiveMode.DEFAULT**
-<br>- This parameter takes effect only when **levelMode** is set to **LevelMode.EMBEDDED**.
+Overlay effect for the page-level menu. <br>**NOTE** <br>- Default value: **ImmersiveMode.DEFAULT** <br>- This parameter takes effect only when **levelMode** is set to **LevelMode.EMBEDDED**.
 
 **Type:** ImmersiveMode
 
@@ -73,10 +68,7 @@ Overlay effect for the page-level menu.
 isModal?: boolean
 ```
 
-Whether the menu is a modal, which has a mask applied and does not allow for interaction with other components
-around the menu. <br>**true**: The menu is a modal.
-<br>**false**: The menu is not a modal.
-<br>Default value: **true**.
+Whether the menu is a modal, which has a mask applied and does not allow for interaction with other components around the menu. <br>**true**: The menu is a modal. <br>**false**: The menu is not a modal. <br>Default value: **true**.
 
 **Type:** boolean
 
@@ -96,10 +88,7 @@ around the menu. <br>**true**: The menu is a modal.
 levelMode?: LevelMode
 ```
 
-Display level mode of the menu.
-<br>**NOTE**
-<br>- Default value: **LevelMode.OVERLAY**
-<br>- This parameter takes effect only when **showInSubWindow** is set to **false**.
+Display level mode of the menu. <br>**NOTE** <br>- Default value: **LevelMode.OVERLAY** <br>- This parameter takes effect only when **showInSubWindow** is set to **false**.
 
 **Type:** LevelMode
 
@@ -119,10 +108,7 @@ Display level mode of the menu.
 levelUniqueId?: number
 ```
 
-[Unique ID](js-apis-arkui-frameNode.md#getuniqueid12) of the node under the display level for the page-level menu.
-<br>Value range: a number no less than 0
-<br>**NOTE**
-<br>- This parameter takes effect only when **levelMode** is set to **LevelMode.EMBEDDED**.
+[Unique ID](js-apis-arkui-frameNode.md#getuniqueid12) of the node under the display level for the page-level menu. <br>Value range: a number no less than 0 <br>**NOTE** <br>- This parameter takes effect only when **levelMode** is set to **LevelMode.EMBEDDED**.
 
 **Type:** number
 
@@ -140,10 +126,7 @@ levelUniqueId?: number
 onDidAppear?: Callback<void>
 ```
 
-Callback invoked after the menu appears.
-<br>**NOTE**
-<br>1. The normal timing sequence is as follows: onWillAppear > onDidAppear > onWillDisappear > onDidDisappear.
-<br>2. When a menu is dismissed immediately after being shown, **onWillDisappear** may be triggered before **onDidAppear**.
+Callback invoked after the menu appears. <br>**NOTE** <br>1. The normal timing sequence is as follows: onWillAppear > onDidAppear > onWillDisappear > onDidDisappear. <br>2. When a menu is dismissed immediately after being shown, **onWillDisappear** may be triggered before **onDidAppear**.
 
 **Type:** Callback<void>
 
@@ -161,9 +144,7 @@ Callback invoked after the menu appears.
 onDidDisappear?: Callback<void>
 ```
 
-Callback invoked after the menu disappears.
-<br>**NOTE**
-<br>1. The normal timing sequence is as follows: onWillAppear > onDidAppear > onWillDisappear > onDidDisappear.
+Callback invoked after the menu disappears. <br>**NOTE** <br>1. The normal timing sequence is as follows: onWillAppear > onDidAppear > onWillDisappear > onDidDisappear.
 
 **Type:** Callback<void>
 
@@ -181,8 +162,7 @@ Callback invoked after the menu disappears.
 onWillAppear?: Callback<void>
 ```
 
-Callback invoked before the menu appearance animation.<br>**NOTE**
-<br>1. The normal timing sequence is as follows: onWillAppear > onDidAppear > onWillDisappear > onDidDisappear.
+Callback invoked before the menu appearance animation.<br>**NOTE** <br>1. The normal timing sequence is as follows: onWillAppear > onDidAppear > onWillDisappear > onDidDisappear.
 
 **Type:** Callback<void>
 
@@ -200,9 +180,7 @@ Callback invoked before the menu appearance animation.<br>**NOTE**
 onWillDisappear?: Callback<void>
 ```
 
-Callback invoked before the menu disappearance animation.
-<br>**NOTE**
-<br>1. The normal timing sequence is as follows: onWillAppear > onDidAppear > onWillDisappear > onDidDisappear.
+Callback invoked before the menu disappearance animation. <br>**NOTE** <br>1. The normal timing sequence is as follows: onWillAppear > onDidAppear > onWillDisappear > onDidDisappear.
 
 **Type:** Callback<void>
 
@@ -220,13 +198,7 @@ Callback invoked before the menu disappearance animation.
 showInSubWindow?: boolean
 ```
 
-Whether to show the menu in a subwindow when the menu needs to be displayed outside the main window.
-<br>**true**: The menu is shown in a subwindow.
-<br>Default value: **false**, indicating that the dialog box is not displayed in a subwindow.<br>**NOTE**
-<br> - A menu whose **showInSubWindow** attribute is **true** cannot trigger the display of another menu
-whose **showInSubWindow** attribute is also **true**.
-<br> - If **showInSubWindow** is set to **true** in **UIExtension**, the menu is aligned with the host window
-based on **UIExtension**.
+Whether to show the menu in a subwindow when the menu needs to be displayed outside the main window. <br>**true**: The menu is shown in a subwindow. <br>Default value: **false**, indicating that the dialog box is not displayed in a subwindow.<br>**NOTE** <br> - A menu whose **showInSubWindow** attribute is **true** cannot trigger the display of another menu whose **showInSubWindow** attribute is also **true**. <br> - If **showInSubWindow** is set to **true** in **UIExtension**, the menu is aligned with the host window based on **UIExtension**.
 
 **Type:** boolean
 
@@ -246,8 +218,7 @@ based on **UIExtension**.
 systemMaterial?: SystemUiMaterial
 ```
 
-System material of the dialog box. Different materials have different effects and can affect visual attributes
-such as the background color, border, and shadow of the dialog box.
+System material of the dialog box. Different materials have different effects and can affect visual attributes such as the background color, border, and shadow of the dialog box.
 
 **Type:** SystemUiMaterial
 

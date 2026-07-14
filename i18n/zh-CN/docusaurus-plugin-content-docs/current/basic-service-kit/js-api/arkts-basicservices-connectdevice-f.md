@@ -6,10 +6,7 @@
 function connectDevice(device: USBDevice): Readonly<USBDevicePipe>
 ```
 
-根据getDevices()返回的设备信息打开USB设备。如果USB服务异常，可能返回`undefined`，注意需要对接口返回值做判空处理。
-
-1. 需要调用[usbManager.getDevices](arkts-basicservices-getdevices-f.md#getdevices-1)获取设备信息以及device;
-2. 调用[usbManager.requestRight](arkts-basicservices-requestright-f.md#requestright-1)请求使用该设备的权限。
+根据getDevices()返回的设备信息打开USB设备。如果USB服务异常，可能返回`undefined`，注意需要对接口返回值做判空处理。 1. 需要调用[usbManager.getDevices](arkts-basicservices-getdevices-f.md#getdevices-1)获取设备信息以及device; 2. 调用[usbManager.requestRight](arkts-basicservices-requestright-f.md#requestright-1)请求使用该设备的权限。
 
 **起始版本：** 9
 
@@ -40,7 +37,7 @@ function connectDevice(device: USBDevice): Readonly<USBDevicePipe>
 **示例：**
 
 ```TypeScript
-function connectDevice() {
+async function connectDevice() {
   let devicesList: Array<usbManager.USBDevice> = usbManager.getDevices();
   if (!devicesList || devicesList.length == 0) {
     console.info(`device list is empty`);
@@ -48,7 +45,7 @@ function connectDevice() {
   }
 
   let device: usbManager.USBDevice = devicesList?.[0];
-  usbManager.requestRight(device.name);
+  await usbManager.requestRight(device.name);
   let devicepipe: usbManager.USBDevicePipe = usbManager.connectDevice(device);
   console.info(`devicepipe = ${devicepipe}`);
   usbManager.closePipe(devicepipe);

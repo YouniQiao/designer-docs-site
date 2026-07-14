@@ -73,14 +73,7 @@ try {
 function disableDynamicIcon(bundleName: string, option?: BundleOptions): Promise<void>
 ```
 
-Disables the dynamic icon based on the given bundle name and bundle options. This API uses a promise to return the
-result.
-
-To disable the dynamic icon for the current user, you must request the ohos.permission.ACCESS_DYNAMIC_ICON
-permission.
-
-To disable the dynamic icon for another user, you must request the ohos.permission.ACCESS_DYNAMIC_ICON and
-ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS permissions.
+Disables the dynamic icon based on the given bundle name and bundle options. This API uses a promise to return the result. To disable the dynamic icon for the current user, you must request the ohos.permission.ACCESS_DYNAMIC_ICON permission. To disable the dynamic icon for another user, you must request the ohos.permission.ACCESS_DYNAMIC_ICON and ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS permissions.
 
 **Since:** 20
 

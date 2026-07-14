@@ -14,10 +14,7 @@
 isProxy?: boolean
 ```
 
-默认为false，如果为true，则要创建的[DataShareHelper](arkts-arkdata-datasharehelperoptions-i-sys.md)处于代理模式，所有操作都不会打开数据提供者APP，除非数据库不存在，
-当数据库不存在时，
-[createDataShareHelper](dataShare.createDataShareHelper(context: Context, uri: string, options: DataShareHelperOptions, callback: AsyncCallback<DataShareHelper>))
-会拉起数据提供者创建数据库。
+默认为false，如果为true，则要创建的[DataShareHelper](arkts-arkdata-datasharehelperoptions-i-sys.md)处于代理模式，所有操作都不会打开数据提供者APP，除非数据库不存在， 当数据库不存在时， [createDataShareHelper](dataShare.createDataShareHelper(context: Context, uri: string, options: DataShareHelperOptions, callback: AsyncCallback<DataShareHelper>)) 会拉起数据提供者创建数据库。
 
 **类型：** boolean
 

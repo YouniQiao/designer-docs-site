@@ -52,9 +52,7 @@ Text color of the styled string.
 readonly fontConfigs?: FontConfigs
 ```
 
-Font configuration of the styled string.
-
-Default value: **undefined**, indicating that fontConfigs is not set.
+Font configuration of the styled string. Default value: **undefined**, indicating that fontConfigs is not set.
 
 **Type:** FontConfigs
 
@@ -72,9 +70,7 @@ Default value: **undefined**, indicating that fontConfigs is not set.
 readonly fontFamily?: string
 ```
 
-Font family of the styled string.
-
-Returns **undefined** by default.
+Font family of the styled string. Returns **undefined** by default.
 
 **Type:** string
 
@@ -92,9 +88,7 @@ Returns **undefined** by default.
 readonly fontSize?: number
 ```
 
-Font size of the styled string.
-
-Unit: [vp](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
+Font size of the styled string. Unit: [vp](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
 
 **Type:** number
 
@@ -130,11 +124,7 @@ Font style of the styled string.
 readonly fontVariations?: Array<FontVariation>
 ```
 
-Array of variable font attributes.
-
-Default value: **undefined**, indicating that variable font attributes are not set.
-
-**Since**: 26.0.0
+Array of variable font attributes. Default value: **undefined**, indicating that variable font attributes are not set. **Since**: 26.0.0
 
 **Type:** Array<FontVariation>
 
@@ -170,9 +160,7 @@ Font weight of the styled string.
 readonly strokeColor?: ResourceColor
 ```
 
-Text stroke color of the styled string.
-
-Default value: same as the text color.
+Text stroke color of the styled string. Default value: same as the text color.
 
 **Type:** ResourceColor
 
@@ -190,11 +178,7 @@ Default value: same as the text color.
 readonly strokeJoinStyle?: StrokeJoinStyle
 ```
 
-Text stroke join style of the styled string.
-
-Default value: **StrokeJoinStyle.MITER_JOIN**.
-
-**Since**: 26.0.0.
+Text stroke join style of the styled string. Default value: **StrokeJoinStyle.MITER_JOIN**. **Since**: 26.0.0.
 
 **Type:** StrokeJoinStyle
 
@@ -212,9 +196,7 @@ Default value: **StrokeJoinStyle.MITER_JOIN**.
 readonly strokeWidth?: number
 ```
 
-Text stroke width of the styled string.
-
-Default value: **0**, in [vp](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md).
+Text stroke width of the styled string. Default value: **0**, in [vp](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md).
 
 **Type:** number
 
@@ -232,9 +214,7 @@ Default value: **0**, in [vp](../../apis-ability-kit/arkts-apis/arkts-app-abilit
 readonly superscript?: SuperscriptStyle
 ```
 
-Superscript or subscript for the styled string.
-
-Default value: **SuperscriptStyle.NORMAL**.
+Superscript or subscript for the styled string. Default value: **SuperscriptStyle.NORMAL**.
 
 **Type:** SuperscriptStyle
 

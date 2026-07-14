@@ -14,8 +14,7 @@ Permission query information.
 callerTokenId?: number
 ```
 
-Caller token ID.
-Value range: (-∞,+∞).
+Caller token ID. Value range: (-∞,+∞).
 
 **Type:** number
 
@@ -79,8 +78,7 @@ Operation information list.
 ticketExpireTimeMs?: number
 ```
 
-Ticket expiration time in milliseconds.
-Unit: milliseconds. The value must be greater than 0. Value constraint: Greater than 0.
+Ticket expiration time in milliseconds. Unit: milliseconds. The value must be greater than 0. Value constraint: Greater than 0.
 
 **Type:** number
 

@@ -1,6 +1,6 @@
 # MediaAlbumChangeRequest
 
-Defines the class of media album change request.
+Provides APIs for managing the media album change request.
 
 **Inheritance/Implementation:** MediaAlbumChangeRequest implements [MediaChangeRequest](arkts-medialibrary-mediachangerequest-i.md)
 
@@ -20,7 +20,7 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 static createAlbumRequest(context: Context, name: string): MediaAlbumChangeRequest
 ```
 
-Creates a MediaAlbumChangeRequest instance.
+Creates a MediaAlbumChangeRequest instance. The album name must meet the following requirements: - The total length of the album name must be between 1 and 255 characters. - It must not contain any invalid characters, which are: . .. \ / : * ? " ' ` < > | { } [ ] - The characters are case insensitive. - Duplicate album names are not allowed.
 
 **Since:** 11
 
@@ -39,15 +39,15 @@ Creates a MediaAlbumChangeRequest instance.
 
 | Type | Description |
 | --- | --- |
-| MediaAlbumChangeRequest | - Returns a MediaAlbumChangeRequest instance |
+| MediaAlbumChangeRequest | MediaAlbumChangeRequest instance created. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
-| 14000011 | System inner fail@static |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
+| 14000011 | System inner fail |
 
 **Example**
 
@@ -74,7 +74,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
 static deleteAlbums(context: Context, albums: Array<Album>): Promise<void>
 ```
 
-Deletes albums. This API uses a promise to return the result.
+Deletes user albums. This API uses a promise to return the result.
 
 **Since:** 11
 
@@ -95,7 +95,7 @@ Deletes albums. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | - Returns void |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -103,8 +103,8 @@ Deletes albums. This API uses a promise to return the result.
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
-| 14000011 | System inner fail@static |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
+| 14000011 | System inner fail |
 
 **Example**
 
@@ -138,7 +138,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
 static deleteAlbumsWithUri(context: Context, albumUris: Array<string>): Promise<void>
 ```
 
-Delete albums With Uri.
+Deletes user albums by URI. This API uses a promise to return the result.
 
 **Since:** 19
 
@@ -152,14 +152,14 @@ Delete albums With Uri.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| context | Context | Yes | Hap context information |
-| albumUris | Array&lt;string&gt; | Yes | Uris of albums to delete |
+| context | Context | Yes | Context of the ability instance. |
+| albumUris | Array&lt;string&gt; | Yes | Array of URIs of the albums to be deleted. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | - Returns void |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -168,7 +168,7 @@ Delete albums With Uri.
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
 | 13900020 | Invalid argument |
-| 14000011 | Internal system error. It is recommended to retry and check the logs.<br>Possible causes: 1. Database corrupted; 2. The file system is abnormal; 3. The IPC request timed out;@static |
+| 14000011 | Internal system error. It is recommended to retry and check the logs.<br>Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out; |
 
 **Example**
 
@@ -191,7 +191,7 @@ async function example(context: Context, albumUri: string) {
 deleteAssets(assets: Array<PhotoAsset>): void
 ```
 
-Permanently deletes assets from the trash.
+Permanently deletes assets from the trash. > **NOTE** > > This operation is irreversible. The assets deleted cannot be restored. Exercise caution when performing this > operation.
 
 **Since:** 11
 
@@ -210,7 +210,7 @@ Permanently deletes assets from the trash.
 | Error Code ID | Error Message |
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | System inner fail |
 | 14000016 | Operation Not Support |
 
@@ -259,7 +259,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 deleteAssetsWithUri(assetUris: Array<string>): void
 ```
 
-Delete assets permanently from the trash album.
+Permanently deletes assets from the trash. > **NOTE** > > This operation is irreversible. The assets deleted cannot be restored. Exercise caution when performing this > operation.
 
 **Since:** 19
 
@@ -271,7 +271,7 @@ Delete assets permanently from the trash album.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| assetUris | Array&lt;string&gt; | Yes | Uris of assets to be deleted permanently |
+| assetUris | Array&lt;string&gt; | Yes | Array of URIs of the assets to be permanently deleted. |
 
 **Error codes:**
 
@@ -279,7 +279,7 @@ Delete assets permanently from the trash album.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
 | 13900020 | Invalid argument |
-| 14000011 | Internal system error. It is recommended to retry and check the logs.<br>Possible causes: 1. Database corrupted; 2. The file system is abnormal; 3. The IPC request timed out. |
+| 14000011 | Internal system error. It is recommended to retry and check the logs.<br>Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 | 14000016 | Operation Not Support |
 
 ## dismiss
@@ -301,7 +301,7 @@ Removes this group photo album.
 | Error Code ID | Error Message |
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 | 14000011 | System inner fail |
 
 **Example**
@@ -334,7 +334,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 dismissAssets(assets: Array<PhotoAsset>): void
 ```
 
-Remove assets from the smart album
+Removes assets from this portrait album or group photo album.
 
 **Since:** 11
 
@@ -353,7 +353,7 @@ Remove assets from the smart album
 | Error Code ID | Error Message |
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | System inner fail |
 | 14000016 | Operation Not Support |
 
@@ -400,7 +400,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 mergeAlbum(target: Album): void
 ```
 
-Merge two portrait albums
+Merges two portrait albums.
 
 **Since:** 11
 
@@ -419,7 +419,7 @@ Merge two portrait albums
 | Error Code ID | Error Message |
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | System inner fail |
 | 14000016 | Operation Not Support |
 
@@ -484,7 +484,7 @@ Moves assets to another album.
 | Error Code ID | Error Message |
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | System inner fail |
 | 14000016 | Operation Not Support |
 
@@ -530,7 +530,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 moveAssetsWithUri(assetUris: Array<string>, targetAlbum: Album): void
 ```
 
-Move assets to the target album.
+Moves assets in an album to another album.
 
 **Since:** 19
 
@@ -542,8 +542,8 @@ Move assets to the target album.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| assetUris | Array&lt;string&gt; | Yes | Uris of assets to move |
-| targetAlbum | Album | Yes | target album |
+| assetUris | Array&lt;string&gt; | Yes | Array of URIs of the assets to move. |
+| targetAlbum | Album | Yes | Album to which the assets are to be moved. |
 
 **Error codes:**
 
@@ -551,7 +551,7 @@ Move assets to the target album.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
 | 13900020 | Invalid argument |
-| 14000011 | Internal system error. It is recommended to retry and check the logs.<br>Possible causes: 1. Database corrupted; 2. The file system is abnormal; 3. The IPC request timed out. |
+| 14000011 | Internal system error. It is recommended to retry and check the logs.<br>Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 | 14000016 | Operation Not Support |
 
 ## operateAttribute
@@ -647,14 +647,14 @@ Places this album before an album.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| album | Album | Yes | Target album. To place this album to the end, set album to null. |
+| album | Album | Yes | Target album. To place this album to the end, set **album** to null. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | System inner fail |
 
 **Example**
@@ -689,7 +689,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 recoverAssets(assets: Array<PhotoAsset>): void
 ```
 
-Recovers assets from the trash.
+Restores the assets corresponding to the specified PhotoAsset object array from the trash.
 
 **Since:** 11
 
@@ -708,7 +708,7 @@ Recovers assets from the trash.
 | Error Code ID | Error Message |
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | System inner fail |
 | 14000016 | Operation Not Support |
 
@@ -749,7 +749,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 recoverAssetsWithUri(assetUris: Array<string>): void
 ```
 
-Recover assets from the trash album.
+Restores the assets corresponding to the specified URI string array from the trash.
 
 **Since:** 19
 
@@ -761,7 +761,7 @@ Recover assets from the trash album.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| assetUris | Array&lt;string&gt; | Yes | Uris of assets to recover |
+| assetUris | Array&lt;string&gt; | Yes | Array of URIs of the assets to recover. |
 
 **Error codes:**
 
@@ -769,7 +769,7 @@ Recover assets from the trash album.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
 | 13900020 | Invalid argument |
-| 14000011 | Internal system error. It is recommended to retry and check the logs.<br>Possible causes: 1. Database corrupted; 2. The file system is abnormal; 3. The IPC request timed out. |
+| 14000011 | Internal system error. It is recommended to retry and check the logs.<br>Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 | 14000016 | Operation Not Support |
 
 ## resetCoverUri
@@ -791,7 +791,7 @@ Resets the cover.
 | Error Code ID | Error Message |
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error.It is recommended to retry and check the logs.<br>Possible causes:1. Database corrupted.2. The file system is abnormal.3. The IPC request timed out. |
+| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error.It is recommended to retry and check the logs.<br>Possible causes:<br>1. Database corrupted.<br>2. The file system is abnormal.<br>3. The IPC request timed out. |
 
 **Example**
 
@@ -904,7 +904,7 @@ Sets the album cover.
 | Error Code ID | Error Message |
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | System inner fail |
 
 **Example**
@@ -951,7 +951,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 setDisplayLevel(displayLevel: number): void
 ```
 
-Set display level of the portrait album
+Sets the display level of the portrait album.
 
 **Since:** 11
 
@@ -963,14 +963,14 @@ Set display level of the portrait album
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| displayLevel | number | Yes | The level of display interface for portrait albums, such as homepage and more pages |
+| displayLevel | number | Yes | Display level to set. The options are as follows:<br>**0**: unfavorite the portrait album.<br>**1**: set the portrait album as the first to display.<br>**2**: do not display the portrait album as the first one.<br>**3**: favorite the portrait album. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | System inner fail |
 
 **Example**
@@ -1004,7 +1004,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 ## setHiddenAttribute
 
 ```TypeScript
-setHiddenAttribute(hiddenState: boolean, isInherited: boolean):void
+setHiddenAttribute(hiddenState: boolean, isInherited:boolean):void
 ```
 
 set hidden state of album.
@@ -1066,7 +1066,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 setIsMe(): void
 ```
 
-Set portrait album to me
+Sets the relationship between people in the portrait album to **Me**.
 
 **Since:** 11
 
@@ -1079,7 +1079,7 @@ Set portrait album to me
 | Error Code ID | Error Message |
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 | 14000011 | System inner fail |
 
 **Example**
@@ -1116,7 +1116,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 static setUploadStatus(context: Context, albums: Album[], allowUpload: boolean): Promise<void>
 ```
 
-Set albums cloud or hdc upload status
+Sets whether the albums can be synced to cloud storage or family storage. This API uses a promise to return the result.
 
 **Since:** 22
 
@@ -1130,15 +1130,15 @@ Set albums cloud or hdc upload status
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| context | Context | Yes | Hap context information |
-| albums | Album[] | Yes | Album array which will to be set cloud or hdc upload status |
-| allowUpload | boolean | Yes | True means upload these albums and their assets to cloud or hdc, false means do not upload these albums and their assets to cloud or hdc |
+| context | Context | Yes | Context of the ability instance. |
+| albums | Album[] | Yes | Array of albums whose sync status is to be set. You can set the sync status for useralbums and source albums. The array can contain a maximum of 500 elements. |
+| allowUpload | boolean | Yes | Whether the albums can be synced to cloud storage or family storage. **true** ifthey can be synced, **false** otherwise. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | - Returns void |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1146,8 +1146,8 @@ Set albums cloud or hdc upload status
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) | The scenario parameter verification fails. Possible causes:1. The context is empty;2. Album array size is bigger than 500. |
-| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.Possible causes: 1.Database corrupted; 2.The file system is abnormal; 3.The IPC request timed out;@static |
+| [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) | The scenario parameter verification fails. Possible causes:<br>1. The context is empty;<br>2. Album array size is bigger than 500. |
+| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.Possible causes:<br>1.Database corrupted;<br>2.The file system is abnormal;<br>3.The IPC request timed out; |
 
 **Example**
 

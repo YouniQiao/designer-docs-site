@@ -25,8 +25,8 @@
 | [decompressFile](arkts-basicservices-decompressfile-f.md#decompressfile-2) | 解压文件，解压的结果。使用callback异步回调。 |
 | [decompressFile](arkts-basicservices-decompressfile-f.md#decompressfile-3) | 解压文件，解压的结果。使用Promise异步回调。 |
 | [getOriginalSize](arkts-basicservices-getoriginalsize-f.md#getoriginalsize-1) | 获取压缩文件的原始大小。使用Promise异步回调。 |
-| [unzipFile](arkts-basicservices-unzipfile-f.md#unzipfile-1) | 解压文件，解压完成后返回执行结果。使用Promise异步回调。@link zlib.decompressFile(inFile: string, outFile: string, options: Options, callback: AsyncCallback&lt;void&gt;)}&gt; 替代。&gt;&gt; 传入的压缩包内部文件或者文件夹名称不能包含“../”，否则会返回-1错误码。 |
-| [zipFile](arkts-basicservices-zipfile-f.md#zipfile-1) | 压缩接口，压缩完成后返回执行结果。使用Promise异步回调。@link zlib.compressFile(inFile: string, outFile: string, options: Options, callback: AsyncCallback&lt;void&gt;)}&gt; 替代。 |
+| [unzipFile](arkts-basicservices-unzipfile-f.md#unzipfile-1) | 解压文件，解压完成后返回执行结果。使用Promise异步回调。 @link zlib.decompressFile(inFile: string, outFile: string, options: Options, callback: AsyncCallback&lt;void&gt;)} &gt; 替代。 &gt; &gt; 传入的压缩包内部文件或者文件夹名称不能包含“../”，否则会返回-1错误码。 |
+| [zipFile](arkts-basicservices-zipfile-f.md#zipfile-1) | 压缩接口，压缩完成后返回执行结果。使用Promise异步回调。 @link zlib.compressFile(inFile: string, outFile: string, options: Options, callback: AsyncCallback&lt;void&gt;)} &gt; 替代。 |
 
 ### 接口
 

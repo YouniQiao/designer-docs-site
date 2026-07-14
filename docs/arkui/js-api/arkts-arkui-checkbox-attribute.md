@@ -1,8 +1,6 @@
 # Checkbox properties/events
 
-In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following attributes are supported.
-
-In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following events are supported.
+In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following attributes are supported. In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following events are supported.
 
 **Inheritance/Implementation:** CheckboxAttribute extends [CommonMethod<CheckboxAttribute>](CommonMethod<CheckboxAttribute>)
 
@@ -16,8 +14,7 @@ In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-ap
 contentModifier(modifier: ContentModifier<CheckBoxConfiguration>)
 ```
 
-Creates a content modifier for the **Checkbox** component. Setting this attribute will invalidate other attribute
-settings.
+Creates a content modifier for the **Checkbox** component. Setting this attribute will invalidate other attribute settings.
 
 **Since:** 12
 
@@ -39,10 +36,7 @@ settings.
 contentModifier(modifier: Optional<ContentModifier<CheckBoxConfiguration>>)
 ```
 
-Creates a content modifier for the **Checkbox** component. Compared with
-[contentModifier](CheckboxAttribute#contentModifier(modifier: ContentModifier<CheckBoxConfiguration>))<sup>12
-+</sup>, this API supports the **undefined** type for the **modifier** parameter. Setting this attribute will
-invalidate other attribute settings.
+Creates a content modifier for the **Checkbox** component. Compared with [contentModifier](CheckboxAttribute#contentModifier(modifier: ContentModifier<CheckBoxConfiguration>))<sup>12 +</sup>, this API supports the **undefined** type for the **modifier** parameter. Setting this attribute will invalidate other attribute settings.
 
 **Since:** 18
 
@@ -86,8 +80,7 @@ Sets the check mark style of the check box.
 mark(style: Optional<MarkStyle>)
 ```
 
-Sets the check mark style of the check box. Compared with [mark](CheckboxAttribute#mark(value: MarkStyle))<
-sup>10+</sup>, this API supports the **undefined** type for the **style** parameter.
+Sets the check mark style of the check box. Compared with [mark](CheckboxAttribute#mark(value: MarkStyle))< sup>10+</sup>, this API supports the **undefined** type for the **style** parameter.
 
 **Since:** 18
 
@@ -131,9 +124,7 @@ Invoked when the selected state of the check box changes.
 onChange(callback: Optional<OnCheckboxChangeCallback>)
 ```
 
-Invoked when the selected state of the check box changes. Compared with
-[onChange](CheckboxAttribute#onChange(callback: OnCheckboxChangeCallback)), this API supports the
-**undefined** type for the **callback** parameter.
+Invoked when the selected state of the check box changes. Compared with [onChange](CheckboxAttribute#onChange(callback: OnCheckboxChangeCallback)), this API supports the **undefined** type for the **callback** parameter.
 
 **Since:** 18
 
@@ -157,13 +148,7 @@ Invoked when the selected state of the check box changes. Compared with
 select(value: boolean)
 ```
 
-Sets whether the check box is selected.
-
-Since API version 10, this attribute supports two-way binding through
-[$$](../../../../ui/state-management/arkts-two-way-sync.md).
-
-Since API version 18, this attribute supports two-way binding through
-[!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
+Sets whether the check box is selected. Since API version 10, this attribute supports two-way binding through [$$](../../../../ui/state-management/arkts-two-way-sync.md). Since API version 18, this attribute supports two-way binding through [!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
 
 **Since:** 8
 
@@ -185,11 +170,7 @@ Since API version 18, this attribute supports two-way binding through
 select(isSelected: Optional<boolean>)
 ```
 
-Sets whether the check box is selected. Compared with [select](CheckboxAttribute#select(value: boolean)),
-this API supports the **undefined** type for the **isSelected** parameter.
-
-This attribute supports two-way binding through [$$](../../../../ui/state-management/arkts-two-way-sync.md) and
-[!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
+Sets whether the check box is selected. Compared with [select](CheckboxAttribute#select(value: boolean)), this API supports the **undefined** type for the **isSelected** parameter. This attribute supports two-way binding through [$$](../../../../ui/state-management/arkts-two-way-sync.md) and [!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
 
 **Since:** 18
 
@@ -235,9 +216,7 @@ Sets the color of the check box when it is selected.
 selectedColor(resColor: Optional<ResourceColor>)
 ```
 
-Sets the color of the check box when it is selected. Compared with
-[selectedColor](CheckboxAttribute#selectedColor(value: ResourceColor)), this API supports the **undefined**
-type for the **resColor** parameter.
+Sets the color of the check box when it is selected. Compared with [selectedColor](CheckboxAttribute#selectedColor(value: ResourceColor)), this API supports the **undefined** type for the **resColor** parameter.
 
 **Since:** 18
 
@@ -261,8 +240,7 @@ type for the **resColor** parameter.
 shape(value: CheckBoxShape)
 ```
 
-Sets the check box shape. To adjust the style of the current check box, use
-[contentModifier](CheckboxAttribute#contentModifier(modifier: ContentModifier<CheckBoxConfiguration>)).
+Sets the check box shape. To adjust the style of the current check box, use [contentModifier](CheckboxAttribute#contentModifier(modifier: ContentModifier<CheckBoxConfiguration>)).
 
 **Since:** 11
 
@@ -286,9 +264,7 @@ Sets the check box shape. To adjust the style of the current check box, use
 shape(shape: Optional<CheckBoxShape>)
 ```
 
-Sets the check box shape. Compared with [shape](CheckboxAttribute#shape(value: CheckBoxShape))<sup>11+</sup>,
-this API supports the **undefined** type for the **shape** parameter. To adjust the style of the current check box,
-use [contentModifier](CheckboxAttribute#contentModifier(modifier: ContentModifier<CheckBoxConfiguration>)).
+Sets the check box shape. Compared with [shape](CheckboxAttribute#shape(value: CheckBoxShape))<sup>11+</sup>, this API supports the **undefined** type for the **shape** parameter. To adjust the style of the current check box, use [contentModifier](CheckboxAttribute#contentModifier(modifier: ContentModifier<CheckBoxConfiguration>)).
 
 **Since:** 18
 
@@ -334,9 +310,7 @@ Sets the border color of the check box when it is not selected.
 unselectedColor(resColor: Optional<ResourceColor>)
 ```
 
-Sets the border color of the check box when it is not selected. Compared with
-[unselectedColor](CheckboxAttribute#unselectedColor(value: ResourceColor))<sup>10+</sup>, this API supports
-the **undefined** type for the **resColor** parameter.
+Sets the border color of the check box when it is not selected. Compared with [unselectedColor](CheckboxAttribute#unselectedColor(value: ResourceColor))<sup>10+</sup>, this API supports the **undefined** type for the **resColor** parameter.
 
 **Since:** 18
 

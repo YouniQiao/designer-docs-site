@@ -68,8 +68,7 @@ Is it the top priority session
 outputDevice: OutputDeviceInfo
 ```
 
-The current output device information.
-It will be undefined if this is a local session.
+The current output device information. It will be undefined if this is a local session.
 
 **Type:** OutputDeviceInfo
 

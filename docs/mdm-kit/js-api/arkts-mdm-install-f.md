@@ -12,18 +12,7 @@ import { bundleManager } from '@kit.MDMKit';
 function install(admin: Want, hapFilePaths: Array<string>, installParam?: InstallParam): Promise<void>
 ```
 
-Installs specified applications. This API uses a promise to return the result.
-
-This API can be used to install only applications of the **enterprise_mdm** (MDM application) or
-**enterprise_normal** (common enterprise application) distribution type. You can call the
-[getBundleInfoForSelf](../../apis-ability-kit/arkts-apis/arkts-ability-getbundleinfoforself-f.md#getbundleinfoforself-1) API
-to query the [BundleInfo](../../apis-ability-kit/arkts-apis/arkts-ability-bundleinfo-i.md) of an application, where
-**BundleInfo.appInfo.appDistributionType** indicates the distribution type.
-
-> **NOTE**
->
-> This API is time-consuming. Subsequent calls to other synchronous APIs in the application main thread must wait
-> for the asynchronous return of this API.
+Installs specified applications. This API uses a promise to return the result. This API can be used to install only applications of the **enterprise_mdm** (MDM application) or **enterprise_normal** (common enterprise application) distribution type. You can call the [getBundleInfoForSelf](../../apis-ability-kit/arkts-apis/arkts-ability-getbundleinfoforself-f.md#getbundleinfoforself-1) API to query the [BundleInfo](../../apis-ability-kit/arkts-apis/arkts-ability-bundleinfo-i.md) of an application, where **BundleInfo.appInfo.appDistributionType** indicates the distribution type. > **NOTE** > > This API is time-consuming. Subsequent calls to other synchronous APIs in the application main thread must wait > for the asynchronous return of this API.
 
 **Since:** 12
 

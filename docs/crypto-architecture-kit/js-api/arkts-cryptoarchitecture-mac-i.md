@@ -1,7 +1,6 @@
 # Mac
 
-Provides APIs for message authentication code (MAC) operations. Before using any API of the **Mac** class, you must
-create a **Mac** instance by using [createMac](arkts-cryptoarchitecture-createmac-f.md#createmac-1).
+Provides APIs for message authentication code (MAC) operations. Before using any API of the **Mac** class, you must create a **Mac** instance by using [createMac](arkts-cryptoarchitecture-createmac-f.md#createmac-1).
 
 **Since:** 9
 
@@ -21,8 +20,7 @@ import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 doFinal(callback: AsyncCallback<DataBlob>): void
 ```
 
-Finishes the MAC computation and obtains the MAC computation result. This API uses an asynchronous callback to
-return the result.
+Finishes the MAC computation and obtains the MAC computation result. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -77,8 +75,7 @@ function hmacByCallback() {
 doFinal(): Promise<DataBlob>
 ```
 
-Finishes the MAC computation and obtains the MAC computation result. This API uses a promise to return the
-result.
+Finishes the MAC computation and obtains the MAC computation result. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -129,12 +126,7 @@ async function hmacByPromise() {
 doFinalSync(): DataBlob
 ```
 
-Finishes the MAC computation. This API returns the result synchronously.
-
-<br><br>**NOTE**
-<br>It is recommended to prioritize the use of asynchronous API, {@link doFinal}. Synchronous API may
-take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore,
-it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
+Finishes the MAC computation. This API returns the result synchronously. <br><br>**NOTE** <br>It is recommended to prioritize the use of asynchronous API, {@link doFinal}. Synchronous API may take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore, it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
 
 **Since:** 12
 
@@ -251,9 +243,7 @@ function testGetMacLength() {
 init(key: SymKey, callback: AsyncCallback<void>): void
 ```
 
-Initializes the MAC computation using a symmetric key. This API uses an asynchronous callback to return the
-result. **init**, **update**, and **doFinal** must be used together. **init** and **doFinal** are mandatory, and
-**update** is optional.
+Initializes the MAC computation using a symmetric key. This API uses an asynchronous callback to return the result. **init**, **update**, and **doFinal** must be used together. **init** and **doFinal** are mandatory, and **update** is optional.
 
 **Since:** 9
 
@@ -284,9 +274,7 @@ result. **init**, **update**, and **doFinal** must be used together. **init** an
 init(key: SymKey): Promise<void>
 ```
 
-Initializes the MAC computation using a symmetric key. This API uses a promise to return the result. **init**,
-**update**, and **doFinal** must be used together. **init** and **doFinal** are mandatory, and **update** is
-optional.
+Initializes the MAC computation using a symmetric key. This API uses a promise to return the result. **init**, **update**, and **doFinal** must be used together. **init** and **doFinal** are mandatory, and **update** is optional.
 
 **Since:** 9
 
@@ -322,14 +310,7 @@ optional.
 initSync(key: SymKey): void
 ```
 
-Initializes the MAC computation using a symmetric key. This API returns the result synchronously. **initSync**,
-**updateSync**, and **doFinalSync** must be used together. **initSync** and **doFinalSync** are mandatory, and
-**updateSync** is optional.
-
-<br><br>**NOTE**
-<br>It is recommended to prioritize the use of asynchronous API, {@link init}. Synchronous API may
-take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore,
-it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
+Initializes the MAC computation using a symmetric key. This API returns the result synchronously. **initSync**, **updateSync**, and **doFinalSync** must be used together. **initSync** and **doFinalSync** are mandatory, and **updateSync** is optional. <br><br>**NOTE** <br>It is recommended to prioritize the use of asynchronous API, {@link init}. Synchronous API may take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore, it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
 
 **Since:** 12
 
@@ -357,13 +338,7 @@ it is advised to invoke synchronous API within a child thread to avoid blocking 
 update(input: DataBlob, callback: AsyncCallback<void>): void
 ```
 
-Updates the MAC status. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> For details about the sample code for calling **update** multiple times in an HMAC operation, see
-> [Generating an HMAC by Passing In Data by Segment](../../../../security/CryptoArchitectureKit/crypto-compute-hmac.md#generating-an-hmac-by-passing-in-data-by-segment)
-> .
+Updates the MAC status. This API uses an asynchronous callback to return the result. > **NOTE** > > For details about the sample code for calling **update** multiple times in an HMAC operation, see > [Generating an HMAC by Passing In Data by Segment](../../../../security/CryptoArchitectureKit/crypto-compute-hmac.md#generating-an-hmac-by-passing-in-data-by-segment) > .
 
 **Since:** 9
 
@@ -394,13 +369,7 @@ Updates the MAC status. This API uses an asynchronous callback to return the res
 update(input: DataBlob): Promise<void>
 ```
 
-Updates the MAC status. This API uses a promise to return the result.
-
-> **NOTE**
->
-> For details about the sample code for calling **update** multiple times in an HMAC operation, see
-> [Generating an HMAC by Passing In Data by Segment](../../../../security/CryptoArchitectureKit/crypto-compute-hmac.md#generating-an-hmac-by-passing-in-data-by-segment)
-> .
+Updates the MAC status. This API uses a promise to return the result. > **NOTE** > > For details about the sample code for calling **update** multiple times in an HMAC operation, see > [Generating an HMAC by Passing In Data by Segment](../../../../security/CryptoArchitectureKit/crypto-compute-hmac.md#generating-an-hmac-by-passing-in-data-by-segment) > .
 
 **Since:** 9
 
@@ -436,18 +405,7 @@ Updates the MAC status. This API uses a promise to return the result.
 updateSync(input: DataBlob): void
 ```
 
-Updates the MAC status. This API returns the result synchronously.
-
-> **NOTE**
->
-> For details about the sample code for calling **updateSync** multiple times in an HMAC operation, see
-> [Generating an HMAC by Passing In Data by Segment](../../../../security/CryptoArchitectureKit/crypto-compute-hmac.md#generating-an-hmac-by-passing-in-data-by-segment)
-> .
-
-<br><br>**NOTE**
-<br>It is recommended to prioritize the use of asynchronous API, {@link update}. Synchronous API may
-take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore,
-it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
+Updates the MAC status. This API returns the result synchronously. > **NOTE** > > For details about the sample code for calling **updateSync** multiple times in an HMAC operation, see > [Generating an HMAC by Passing In Data by Segment](../../../../security/CryptoArchitectureKit/crypto-compute-hmac.md#generating-an-hmac-by-passing-in-data-by-segment) > . <br><br>**NOTE** <br>It is recommended to prioritize the use of asynchronous API, {@link update}. Synchronous API may take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore, it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
 
 **Since:** 12
 

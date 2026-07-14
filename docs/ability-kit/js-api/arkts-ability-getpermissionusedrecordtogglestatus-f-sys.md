@@ -12,9 +12,7 @@ import { privacyManager } from '@kit.AbilityKit';
 function getPermissionUsedRecordToggleStatus(): Promise<boolean>
 ```
 
-A system application can call this API to obtain the current user's permission usage record toggle status, for
-example, to display the current toggle setting status on the permission management interface. This API uses a
-promise to return the result.
+A system application can call this API to obtain the current user's permission usage record toggle status, for example, to display the current toggle setting status on the permission management interface. This API uses a promise to return the result.
 
 **Since:** 18
 

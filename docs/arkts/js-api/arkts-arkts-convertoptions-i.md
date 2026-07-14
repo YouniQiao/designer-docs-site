@@ -114,8 +114,7 @@ Name of the attribute key for **elements** in the output object.
 ignoreAttributes?: boolean
 ```
 
-Whether to ignore the element's attribute information. The value **true** means to ignore the element's attribute
-information, and **false** means the opposite. The default value is **false**.
+Whether to ignore the element's attribute information. The value **true** means to ignore the element's attribute information, and **false** means the opposite. The default value is **false**.
 
 **Type:** boolean
 
@@ -131,8 +130,7 @@ information, and **false** means the opposite. The default value is **false**.
 ignoreCDATA?: boolean
 ```
 
-Whether to ignore the element's CDATA information. The value **true** means to ignore the element's CDATA
-information, and **false** means the opposite. The default value is **false**.
+Whether to ignore the element's CDATA information. The value **true** means to ignore the element's CDATA information, and **false** means the opposite. The default value is **false**.
 
 **Type:** boolean
 
@@ -148,8 +146,7 @@ information, and **false** means the opposite. The default value is **false**.
 ignoreComment?: boolean
 ```
 
-Whether to ignore element comments. The value **true** means to ignore element comments, and **false** means the
-opposite. The default value is **false**.
+Whether to ignore element comments. The value **true** means to ignore element comments, and **false** means the opposite. The default value is **false**.
 
 **Type:** boolean
 
@@ -165,8 +162,7 @@ opposite. The default value is **false**.
 ignoreDeclaration?: boolean
 ```
 
-Whether to ignore the XML declaration. The value **true** means to ignore the XML declaration, and **false**
-means the opposite. The default value is **false**.
+Whether to ignore the XML declaration. The value **true** means to ignore the XML declaration, and **false** means the opposite. The default value is **false**.
 
 **Type:** boolean
 
@@ -182,8 +178,7 @@ means the opposite. The default value is **false**.
 ignoreDoctype?: boolean
 ```
 
-Whether to ignore the element's Doctype information. The value **true** means to ignore the element's Doctype
-information, and **false** means the opposite. The default value is **false**.
+Whether to ignore the element's Doctype information. The value **true** means to ignore the element's Doctype information, and **false** means the opposite. The default value is **false**.
 
 **Type:** boolean
 
@@ -199,8 +194,7 @@ information, and **false** means the opposite. The default value is **false**.
 ignoreInstruction?: boolean
 ```
 
-Whether to ignore the XML processing instruction. The value **true** means to ignore the XML processing
-instruction, and **false** means the opposite. The default value is **false**.
+Whether to ignore the XML processing instruction. The value **true** means to ignore the XML processing instruction, and **false** means the opposite. The default value is **false**.
 
 **Type:** boolean
 
@@ -216,8 +210,7 @@ instruction, and **false** means the opposite. The default value is **false**.
 ignoreText?: boolean
 ```
 
-Whether to ignore the element's text information. The value **true** means to ignore the element's text
-information, and **false** means the opposite. The default value is **false**.
+Whether to ignore the element's text information. The value **true** means to ignore the element's text information, and **false** means the opposite. The default value is **false**.
 
 **Type:** boolean
 
@@ -297,8 +290,7 @@ Name of the attribute key for **text** in the output object.
 trim: boolean
 ```
 
-Whether to trim the whitespace characters before and after the text. The value **true** means to trim the
-whitespace characters before and after the text, and **false** means to keep them.
+Whether to trim the whitespace characters before and after the text. The value **true** means to trim the whitespace characters before and after the text, and **false** means to keep them.
 
 **Type:** boolean
 

@@ -66,8 +66,7 @@ Detail name.
 icon?: image.PixelMap
 ```
 
-The icon of the app associated with the QR code,
-such as a QR code for logging in via WeChat, should be the WeChat icon.
+The icon of the app associated with the QR code, such as a QR code for logging in via WeChat, should be the WeChat icon.
 
 **Type:** image.PixelMap
 
@@ -83,9 +82,7 @@ such as a QR code for logging in via WeChat, should be the WeChat icon.
 id: string
 ```
 
-A QR code session used to uniquely identify a user login.
-When the QR code expires,
-MediaUI will use this ID to query and update a new QR code from the third party.
+A QR code session used to uniquely identify a user login. When the QR code expires, MediaUI will use this ID to query and update a new QR code from the third party.
 
 **Type:** string
 
@@ -149,9 +146,7 @@ Title name.
 validPeriod: number
 ```
 
-QR code validity period (unit: seconds).
-When the QR code expires,
-the QR code ID will be used to query and obtain a new QR code again.
+QR code validity period (unit: seconds). When the QR code expires, the QR code ID will be used to query and obtain a new QR code again.
 
 **Type:** number
 

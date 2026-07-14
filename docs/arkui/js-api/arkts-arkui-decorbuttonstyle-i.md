@@ -66,8 +66,7 @@ Size of the button icon. The value ranges from 16 vp to 24 vp. The default value
 closeButtonRightMargin? : number
 ```
 
-Margin between the rightmost edge of the close button and the window. The value ranges from 6 vp to 22 vp. The
-default value is 20 vp.
+Margin between the rightmost edge of the close button and the window. The value ranges from 6 vp to 22 vp. The default value is 20 vp.
 
 **Type:** number
 
@@ -83,8 +82,7 @@ default value is 20 vp.
 colorMode?: ConfigurationConstant.ColorMode
 ```
 
-Color mode. Buttons automatically adapt to light colors in dark mode and to dark colors in light mode. If this
-parameter is not set, they will automatically match the system color mode.
+Color mode. Buttons automatically adapt to light colors in dark mode and to dark colors in light mode. If this parameter is not set, they will automatically match the system color mode.
 
 **Type:** ConfigurationConstant.ColorMode
 

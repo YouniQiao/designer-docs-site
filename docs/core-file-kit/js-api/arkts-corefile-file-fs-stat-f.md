@@ -57,8 +57,7 @@ Obtains detailed attribute information of a file or directory. This API uses a p
 declare function stat(file: string | number, callback: AsyncCallback<Stat>): void
 ```
 
-Obtains detailed attribute information of a file or directory. This API uses an asynchronous callback to return the
-result.
+Obtains detailed attribute information of a file or directory. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 

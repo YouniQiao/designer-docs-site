@@ -12,9 +12,7 @@ Defines the CustomSpanMetrics interface.
 height?: number
 ```
 
-Height of the custom span.
-
-Unit: [vp](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
+Height of the custom span. Unit: [vp](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
 
 **Type:** number
 
@@ -32,9 +30,7 @@ Unit: [vp](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
 width: number
 ```
 
-Width of the custom span.
-
-Unit: [vp](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
+Width of the custom span. Unit: [vp](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
 
 **Type:** number
 

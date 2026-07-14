@@ -18,8 +18,7 @@ import { vibrator } from '@kit.SensorServiceKit';
 isEffectSupported: boolean
 ```
 
-Whether the preset effect is supported. The value **true** indicates that the preset effect is supported, and the
-value **false** indicates the opposite.
+Whether the preset effect is supported. The value **true** indicates that the preset effect is supported, and the value **false** indicates the opposite.
 
 **Type:** boolean
 

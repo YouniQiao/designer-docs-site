@@ -20,8 +20,7 @@ import { sensor } from '@kit.SensorServiceKit';
 scalar: number
 ```
 
-Pedometer detection. This parameter specifies whether a user takes a step. The value **0** means that the user
-does not take a step, and **1** means that the user takes a step.
+Pedometer detection. This parameter specifies whether a user takes a step. The value **0** means that the user does not take a step, and **1** means that the user takes a step.
 
 **Type:** number
 

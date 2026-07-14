@@ -1,8 +1,6 @@
 # NumberStyleOptions
 
-NumberStyleOptions定义了列表型和紧凑型Counter的属性和事件。
-
-继承于[InlineStyleOptions](arkts-arkui-inlinestyleoptions-c.md)。
+NumberStyleOptions定义了列表型和紧凑型Counter的属性和事件。 继承于[InlineStyleOptions](arkts-arkui-inlinestyleoptions-c.md)。
 
 **继承/实现关系：** NumberStyleOptions extends [InlineStyleOptions](arkts-arkui-inlinestyleoptions-c.md)
 
@@ -16,11 +14,7 @@ NumberStyleOptions定义了列表型和紧凑型Counter的属性和事件。
 label?: ResourceStr
 ```
 
-设置Counter的说明文本。
-
-默认值：' '
-
-值为undefined时，按默认值处理。
+设置Counter的说明文本。 默认值：' ' 值为undefined时，按默认值处理。
 
 **类型：** ResourceStr
 
@@ -38,11 +32,7 @@ label?: ResourceStr
 onBlurDecrease?: () => void
 ```
 
-当前Counter组件的减小按钮失去焦点时触发的回调。
-
-默认值：不触发减少按钮失去焦点时的回调。
-
-值为undefined时，按默认值处理。
+当前Counter组件的减小按钮失去焦点时触发的回调。 默认值：不触发减少按钮失去焦点时的回调。 值为undefined时，按默认值处理。
 
 **类型：** () => void
 
@@ -60,11 +50,7 @@ onBlurDecrease?: () => void
 onBlurIncrease?: () => void
 ```
 
-当前Counter组件的增加按钮失去焦点时触发的回调。
-
-默认值：不触发增加按钮失去焦点时的回调。
-
-值为undefined时，按默认值处理。
+当前Counter组件的增加按钮失去焦点时触发的回调。 默认值：不触发增加按钮失去焦点时的回调。 值为undefined时，按默认值处理。
 
 **类型：** () => void
 
@@ -82,11 +68,7 @@ onBlurIncrease?: () => void
 onFocusDecrease?: () => void
 ```
 
-当前Counter组件的减小按钮获取焦点时触发的回调。
-
-默认值：不触发减少按钮获取焦点时的回调。
-
-值为undefined时，按默认值处理。
+当前Counter组件的减小按钮获取焦点时触发的回调。 默认值：不触发减少按钮获取焦点时的回调。 值为undefined时，按默认值处理。
 
 **类型：** () => void
 
@@ -104,11 +86,7 @@ onFocusDecrease?: () => void
 onFocusIncrease?: () => void
 ```
 
-当前Counter组件的增加按钮获取焦点时触发的回调。
-
-默认值：不触发增加按钮获取焦点时的回调。
-
-值为undefined时，按默认值处理。
+当前Counter组件的增加按钮获取焦点时触发的回调。 默认值：不触发增加按钮获取焦点时的回调。 值为undefined时，按默认值处理。
 
 **类型：** () => void
 

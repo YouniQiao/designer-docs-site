@@ -12,15 +12,7 @@ Navigation configuration options.
 stackSizeLimit?: number
 ```
 
-Navigation page stack size limit.
-
-Description:
-- Limits to maximum number of active page nodes in Navigation page stack.
-- When limit is exceeded, oldest page nodes are automatically destroyed
-in FIFO (First-In-First-Out) order.
-- NavPathInfo of pages is completely retained, supporting page recreation.
-- value <=0 No limit on page stack size (default value).
-- value >0 Limit stack size to specified value.
+Navigation page stack size limit. Description: - Limits to maximum number of active page nodes in Navigation page stack. - When limit is exceeded, oldest page nodes are automatically destroyed in FIFO (First-In-First-Out) order. - NavPathInfo of pages is completely retained, supporting page recreation. - value <=0 No limit on page stack size (default value). - value >0 Limit stack size to specified value.
 
 **Type:** number
 

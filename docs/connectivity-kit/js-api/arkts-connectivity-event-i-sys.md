@@ -8,16 +8,19 @@ Describes the SSAP event.
 
 **System API:** This is a system API.
 
+## Modules to Import
+
+```TypeScript
+import { ssap } from '@kit.ConnectivityKit';
+```
+
 ## eventUuid
 
 ```TypeScript
 eventUuid: string
 ```
 
-The UUID of a event instance.
-The length must be 36, The value consists of 36 hexadecimal digits and hyphens (-),
-for example, FFFFFFFF-1234-5678-ABCD-000000001234, indicating a 128-bit identifier.
-<br>NearLink standard UUIDs are not allowed.
+The UUID of a event instance. The length must be 36, The value consists of 36 hexadecimal digits and hyphens (-), for example, FFFFFFFF-1234-5678-ABCD-000000001234, indicating a 128-bit identifier. <br>NearLink standard UUIDs are not allowed.
 
 **Type:** string
 
@@ -53,10 +56,7 @@ The parameter of a event instance.
 serviceUuid: string
 ```
 
-The UUID of the {@link Service} instance to which the event belongs
-The length must be 36, The value consists of 36 hexadecimal digits and hyphens (-),
-for example, FFFFFFFF-1234-5678-ABCD-000000001234, indicating a 128-bit identifier.
-<br>NearLink standard UUIDs are not allowed.
+The UUID of the {@link Service} instance to which the event belongs The length must be 36, The value consists of 36 hexadecimal digits and hyphens (-), for example, FFFFFFFF-1234-5678-ABCD-000000001234, indicating a 128-bit identifier. <br>NearLink standard UUIDs are not allowed.
 
 **Type:** string
 

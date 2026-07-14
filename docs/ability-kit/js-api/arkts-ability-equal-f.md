@@ -12,9 +12,7 @@ import { WantAgent } from '@kit.AbilityKit';
 function equal(agent: WantAgent, otherAgent: WantAgent, callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether two WantAgent objects are equal, so as to determine whether the same operation is from the
-same application.
-This API uses an asynchronous callback to return the result.
+Checks whether two WantAgent objects are equal, so as to determine whether the same operation is from the same application. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -112,9 +110,7 @@ try {
 function equal(agent: WantAgent, otherAgent: WantAgent): Promise<boolean>
 ```
 
-Checks whether two WantAgent objects are equal, so as to determine whether the same operation is from the
-same application.
-This API uses a promise to return the result.
+Checks whether two WantAgent objects are equal, so as to determine whether the same operation is from the same application. This API uses a promise to return the result.
 
 **Since:** 9
 

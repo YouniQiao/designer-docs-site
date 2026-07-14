@@ -14,9 +14,7 @@ In addition to the [universal attributes](arkts-arkui-commonmethod-c.md), the fo
 fill(value: ResourceColor | ColorMetrics)
 ```
 
-Sets the color of the fill area.
-An invalid value is handled as the default value.
-If this attribute and the universal attribute foregroundColor are both set, whichever is set later takes effect.
+Sets the color of the fill area. An invalid value is handled as the default value. If this attribute and the universal attribute foregroundColor are both set, whichever is set later takes effect.
 
 **Since:** 26.0.0
 
@@ -38,8 +36,7 @@ If this attribute and the universal attribute foregroundColor are both set, whic
 stroke(value: ResourceColor | ColorMetrics)
 ```
 
-Sets the stroke color. This attribute can be dynamically set using attributeModifier. If this attribute is not set,
-the default stroke opacity is 0, meaning no stroke is displayed.
+Sets the stroke color. This attribute can be dynamically set using attributeModifier. If this attribute is not set, the default stroke opacity is 0, meaning no stroke is displayed.
 
 **Since:** 26.0.0
 

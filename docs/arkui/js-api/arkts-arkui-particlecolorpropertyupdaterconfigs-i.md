@@ -12,8 +12,7 @@ Defines the particle color property updater configs.
 [ParticleUpdater.CURVE]: Array<ParticlePropertyAnimation<ResourceColor>>
 ```
 
-The color changes with the animation curve. The array type indicates that multiple animation segments can be set
-for the current property, for example, 0–3000 ms, 3000–5000 ms, and 5000–8000 ms.
+The color changes with the animation curve. The array type indicates that multiple animation segments can be set for the current property, for example, 0–3000 ms, 3000–5000 ms, and 5000–8000 ms.
 
 **Type:** Array<ParticlePropertyAnimation<ResourceColor>>
 
@@ -49,9 +48,7 @@ The color does not change.
 [ParticleUpdater.RANDOM]: ParticleColorOptions
 ```
 
-The color changes randomly, with the per-second change difference being a value randomly generated from the range.
-The target color is obtained by applying the change difference to the current color value of each of the R, G, B, A
-channels.
+The color changes randomly, with the per-second change difference being a value randomly generated from the range. The target color is obtained by applying the change difference to the current color value of each of the R, G, B, A channels.
 
 **Type:** ParticleColorOptions
 

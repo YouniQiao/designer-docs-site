@@ -18,9 +18,7 @@ import { avSession } from '@kit.AVSessionKit';
 authenticationStatus?: number
 ```
 
-Define different authentication status.
-0: Device not authenticated.
-1: Device already authenticated.
+Define different authentication status. 0: Device not authenticated. 1: Device already authenticated.
 
 **Type:** number
 
@@ -36,8 +34,7 @@ Define different authentication status.
 hiPlayDeviceInfo?: HiPlayDeviceInfo
 ```
 
-HiPlayDeviceInfo is used to obtain device-specific information for HiPlay.
-transmit info during casting.
+HiPlayDeviceInfo is used to obtain device-specific information for HiPlay. transmit info during casting.
 
 **Type:** HiPlayDeviceInfo
 
@@ -87,9 +84,7 @@ Indicates the current device is legacy or not.
 mediumTypes?: number
 ```
 
-Medium types used to discover devices.
-1: BLE
-2: COAP
+Medium types used to discover devices. 1: BLE 2: COAP
 
 **Type:** number
 

@@ -12,11 +12,7 @@ Defines the ImageAttachment Layout Style.
 borderRadius?: LengthMetrics | BorderRadiuses
 ```
 
-Radius of the image border corners.
-
-Default value: **0**.
-
-Unit: [vp](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
+Radius of the image border corners. Default value: **0**. Unit: [vp](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
 
 **Type:** LengthMetrics | BorderRadiuses
 
@@ -34,11 +30,7 @@ Unit: [vp](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
 margin?: LengthMetrics | Margin
 ```
 
-Image margin.
-
-Default value: **0**.
-
-Unit: [vp](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
+Image margin. Default value: **0**. Unit: [vp](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
 
 **Type:** LengthMetrics | Margin
 
@@ -56,11 +48,7 @@ Unit: [vp](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
 padding?: LengthMetrics | Padding
 ```
 
-Image padding.
-
-Default value: **0**.
-
-Unit: [vp](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
+Image padding. Default value: **0**. Unit: [vp](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
 
 **Type:** LengthMetrics | Padding
 

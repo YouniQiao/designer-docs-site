@@ -12,10 +12,7 @@ Describes the span style.
 length: number
 ```
 
-Length of the styled string style.
-
-If the value is less than 0 or exceeds the difference between the string length and the value of **start**, it is
-treated as the difference between the string length and the value of **start**.
+Length of the styled string style. If the value is less than 0 or exceeds the difference between the string length and the value of **start**, it is treated as the difference between the string length and the value of **start**.
 
 **Type:** number
 

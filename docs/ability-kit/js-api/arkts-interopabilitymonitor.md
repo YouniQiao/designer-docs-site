@@ -6,7 +6,7 @@
 
 | Name | Description |
 | --- | --- |
-| [InteropAbilityMonitor](arkts-ability-interopabilitymonitor-i.md) | Provide methods for matching monitored Ability objects that meet specified conditions.The most recently matched Ability objects will be saved in the InteropAbilityMonitor object. |
+| [InteropAbilityMonitor](arkts-ability-interopabilitymonitor-i.md) | Provide methods for matching monitored Ability objects that meet specified conditions. The most recently matched Ability objects will be saved in the InteropAbilityMonitor object. |
 
 ### Types
 

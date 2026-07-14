@@ -1,7 +1,6 @@
 # RenderContext
 
-Render context defines the context for all rendering resources. Resources within the same render context
-may be shared between scenes created within the same render context.
+Render context defines the context for all rendering resources. Resources within the same render context may be shared between scenes created within the same render context.
 
 **Since:** 20
 

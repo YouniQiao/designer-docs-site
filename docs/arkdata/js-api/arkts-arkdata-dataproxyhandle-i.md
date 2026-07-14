@@ -1,8 +1,6 @@
 # DataProxyHandle
 
-Defines the data proxy handle, which can be used to access or manage shared configuration information. Before
-calling an API provided by **DataProxyHandle**, you must create a **DataProxyHandle** instance using
-[createDataProxyHandle](arkts-arkdata-createdataproxyhandle-f.md#createdataproxyhandle-1).
+Defines the data proxy handle, which can be used to access or manage shared configuration information. Before calling an API provided by **DataProxyHandle**, you must create a **DataProxyHandle** instance using [createDataProxyHandle](arkts-arkdata-createdataproxyhandle-f.md#createdataproxyhandle-1).
 
 **Since:** 20
 
@@ -20,8 +18,7 @@ import { dataShare } from '@kit.ArkData';
 delete(uris: string[], config: DataProxyConfig): Promise<DataProxyResult[]>
 ```
 
-Deletes the specified shared configuration items based on URIs. This API uses a promise to return the result.
-Only the publisher is allowed to delete shared configuration items.
+Deletes the specified shared configuration items based on URIs. This API uses a promise to return the result. Only the publisher is allowed to delete shared configuration items.
 
 **Since:** 20
 
@@ -73,8 +70,7 @@ dataProxyHandle.delete(urisToDelete, config).then((results: dataShare.DataProxyR
 deleteMyPublishedData(config: DataProxyConfig): Promise<DataProxyResult[]>
 ```
 
-Deletes all the data published by the publisher.
-Only the data publisher can delete the data.
+Deletes all the data published by the publisher. Only the data publisher can delete the data.
 
 **Since:** 26.0.0
 
@@ -123,8 +119,7 @@ dataProxyHandle.deleteMyPublishedData(config).then((results: dataShare.DataProxy
 get(uris: string[], config: DataProxyConfig): Promise<DataProxyGetResult[]>
 ```
 
-Obtains a specified shared configuration item based on the URI. This API uses a promise to return the result.
-Only the publisher and applications in the allowed list can access the shared configuration item.
+Obtains a specified shared configuration item based on the URI. This API uses a promise to return the result. Only the publisher and applications in the allowed list can access the shared configuration item.
 
 **Since:** 20
 
@@ -176,9 +171,7 @@ dataProxyHandle.get(urisToGet, config).then((results: dataShare.DataProxyGetResu
 getValues(uri: string, config: DataProxyConfig): Promise<ValueType[]>
 ```
 
-Obtains all multi-value data under a specified URI. Only the publisher and the applications in the
-[allowList](arkts-arkdata-proxydata-i.md#allowlist) can obtain the data. This API uses a promise to return the
-result.
+Obtains all multi-value data under a specified URI. Only the publisher and the applications in the [allowList](arkts-arkdata-proxydata-i.md#allowlist) can obtain the data. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 
@@ -316,16 +309,7 @@ on(
     ): DataProxyResult[]
 ```
 
-Subscribes to the change event of the shared configuration corresponding to a specified URI. If the change event
-is subscribed, the subscriber will receive a callback notification that carries the data change type, changed URI
-, and changed content when the publisher modifies the configuration. This API uses an asynchronous callback to
-return the result. This function does not support cross-user notification subscription or subscription to
-unpublished configurations. If the permission is revoked after the subscription is successful, the subscriber
-will not be notified consequently.
-
-When the publisher calls the [publish](arkts-arkdata-dataproxyhandle-i.md#publish-1) or
-[delete](arkts-arkdata-dataproxyhandle-i.md#delete-1) API to publish or
-delete a configuration, a notification is automatically triggered.
+Subscribes to the change event of the shared configuration corresponding to a specified URI. If the change event is subscribed, the subscriber will receive a callback notification that carries the data change type, changed URI , and changed content when the publisher modifies the configuration. This API uses an asynchronous callback to return the result. This function does not support cross-user notification subscription or subscription to unpublished configurations. If the permission is revoked after the subscription is successful, the subscriber will not be notified consequently. When the publisher calls the [publish](arkts-arkdata-dataproxyhandle-i.md#publish-1) or [delete](arkts-arkdata-dataproxyhandle-i.md#delete-1) API to publish or delete a configuration, a notification is automatically triggered.
 
 **Since:** 20
 
@@ -385,12 +369,7 @@ results.forEach((result) => {
 publish(data: ProxyData[], config: DataProxyConfig): Promise<DataProxyResult[]>
 ```
 
-Publishes shared configuration items. This API uses a promise to return the result. After shared configuration
-items are published, the publisher and the applications in the allowlist can access these items. If the URI to be
-published already exists, the corresponding shared configuration item is updated. If any URI in the configuration
-item to be published exceeds the maximum length or fails the format verification, the current publish operation
-fails. Only the publisher can update shared configuration items. Each application supports a maximum of 32 shared
-configurations.
+Publishes shared configuration items. This API uses a promise to return the result. After shared configuration items are published, the publisher and the applications in the allowlist can access these items. If the URI to be published already exists, the corresponding shared configuration item is updated. If any URI in the configuration item to be published exceeds the maximum length or fails the format verification, the current publish operation fails. Only the publisher can update shared configuration items. Each application supports a maximum of 32 shared configurations.
 
 **Since:** 20
 
@@ -449,13 +428,7 @@ dataProxyHandle.publish(newConfigData, config).then((results: dataShare.DataProx
 putValue(uri: string, key: number, value: ValueType, config: DataProxyConfig): Promise<void>
 ```
 
-Puts a value into the published data. This operation can be performed only on multi-value type data. If the
-input **key** does not exist, a new value is added. If the input **key** already exists, the value corresponding
-to the key is updated. By default, a maximum of 10 values can be added to a single data record (that is, a URI)
-for a single application, and the maximum length of each value is 4096 bytes. In addition, the total length of
-all values in a single data record is limited by the value of the **maxValueLength** parameter that is specified
-during data publishing. Note that the **maxValueLength** parameter does not take effect in this API. This API
-uses a promise to return the result.
+Puts a value into the published data. This operation can be performed only on multi-value type data. If the input **key** does not exist, a new value is added. If the input **key** already exists, the value corresponding to the key is updated. By default, a maximum of 10 values can be added to a single data record (that is, a URI) for a single application, and the maximum length of each value is 4096 bytes. In addition, the total length of all values in a single data record is limited by the value of the **maxValueLength** parameter that is specified during data publishing. Note that the **maxValueLength** parameter does not take effect in this API. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 
@@ -525,8 +498,7 @@ try {
 removeValue(uri: string, key: number, config: DataProxyConfig): Promise<void>
 ```
 
-Removes the value corresponding to the key. This operation can be performed only on multi-value type data. Only
-values added by this application can be removed. This API uses a promise to return the result.
+Removes the value corresponding to the key. This operation can be performed only on multi-value type data. Only values added by this application can be removed. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 

@@ -1,7 +1,6 @@
 # GestureGroupInterface
 
-Combined gestures integrate two or more gestures into a compound gesture, supporting sequential recognition, parallel
-recognition, and exclusive recognition.
+Combined gestures integrate two or more gestures into a compound gesture, supporting sequential recognition, parallel recognition, and exclusive recognition.
 
 **Since:** 7
 

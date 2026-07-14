@@ -6,9 +6,7 @@
 function combine(options: Matrix4Transit): Matrix4Transit
 ```
 
-Matrix的叠加函数，可以将两个矩阵的效果叠加起来生成一个新的矩阵对象。
-
-> **说明：**
+Matrix的叠加函数，可以将两个矩阵的效果叠加起来生成一个新的矩阵对象。 > **说明：**
 
 **起始版本：** 7
 

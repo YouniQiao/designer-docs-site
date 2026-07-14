@@ -18,9 +18,7 @@ import { media } from '@kit.MediaKit';
 height?: number
 ```
 
-height of the video resolution.
-The value should be an integer.Value constraint:The value must be a positive integer.
-<br>Unit:Pixel.
+height of the video resolution. The value should be an integer.Value constraint:The value must be a positive integer. <br>Unit:Pixel.
 
 **Type:** number
 
@@ -36,9 +34,7 @@ The value should be an integer.Value constraint:The value must be a positive int
 width?: number
 ```
 
-width of the video resolution.
-The value should be an integer.Value constraint:The value must be a positive integer.
-<br>Unit:Pixel.
+width of the video resolution. The value should be an integer.Value constraint:The value must be a positive integer. <br>Unit:Pixel.
 
 **Type:** number
 

@@ -12,14 +12,7 @@ import { asset } from '@kit.AssetStoreKit';
 function querySync(query: AssetMap): Array<AssetMap>
 ```
 
-Queries one or more assets. If user authentication is required for the access to the asset, call
-[asset.preQuerySync](arkts-assetstore-prequerysync-f.md#prequerysync-1) before this API and call
-[asset.postQuerySync](arkts-assetstore-postquerysync-f.md#postquerysync-1) after this API. For details about the development procedure, see
-[Development Guidance](../../../../security/AssetStoreKit/asset-js-query-auth.md).
-This API returns the result synchronously.
-
-If no asset is found, an exception indicating that no asset is found is thrown instead of returning
-an empty query result list.
+Queries one or more assets. If user authentication is required for the access to the asset, call [asset.preQuerySync](arkts-assetstore-prequerysync-f.md#prequerysync-1) before this API and call [asset.postQuerySync](arkts-assetstore-postquerysync-f.md#postquerysync-1) after this API. For details about the development procedure, see [Development Guidance](../../../../security/AssetStoreKit/asset-js-query-auth.md). This API returns the result synchronously. If no asset is found, an exception indicating that no asset is found is thrown instead of returning an empty query result list.
 
 **Since:** 12
 

@@ -256,29 +256,7 @@ Set a single cookie (key-value pair) for the given URL Asynchronously.
 static configCookieSync(url: string, value: string, incognito?: boolean): void
 ```
 
-Set a single cookie (key-value pair) for the given URL.
-
-> **NOTE**
->
-> You can set **url** in **configCookieSync** to a domain name so that the cookie is attached to the requests on
-> the page.
->
-> Cookies are periodically saved to the disk every 30s. You can also use the
-> **saveCookieAsync** API to forcibly save cookies to the disk.
->
-> The **value** parameter must comply with the format of the Set-Cookie HTTP response header. The value is in the
-> format of "key=value", followed by a list of cookie attributes separated by semicolons, for example,
-> **"key=value;Max-Age=100"**.
->
-> If a cookie with the same host, path, and name exists, it will be replaced by the new cookie. If the cookie has
-> expired, it will not be stored. To set multiple cookies, call this method multiple times.
->
-> If **configCookieSync()** is used to set cookies for two or more times, the cookies set each time are separated
-> by semicolons.
->
-> If the specified value contains the **Secure** attribute, the URL must use the **https://** protocol.
->
-> To override HttpOnly cookies, the HttpOnly attribute must be specified in the value.
+Set a single cookie (key-value pair) for the given URL. > **NOTE** > > You can set **url** in **configCookieSync** to a domain name so that the cookie is attached to the requests on > the page. > > Cookies are periodically saved to the disk every 30s. You can also use the > **saveCookieAsync** API to forcibly save cookies to the disk. > > The **value** parameter must comply with the format of the Set-Cookie HTTP response header. The value is in the > format of "key=value", followed by a list of cookie attributes separated by semicolons, for example, > **"key=value;Max-Age=100"**. > > If a cookie with the same host, path, and name exists, it will be replaced by the new cookie. If the cookie has > expired, it will not be stored. To set multiple cookies, call this method multiple times. > > If **configCookieSync()** is used to set cookies for two or more times, the cookies set each time are separated > by semicolons. > > If the specified value contains the **Secure** attribute, the URL must use the **https://** protocol. > > To override HttpOnly cookies, the HttpOnly attribute must be specified in the value.
 
 **Since:** 11
 
@@ -308,29 +286,7 @@ Set a single cookie (key-value pair) for the given URL.
 static configCookieSync(url: string, value: string, incognito: boolean, includeHttpOnly: boolean): void
 ```
 
-Set a single cookie (key-value pair) for the given URL.
-
-> **NOTE**
->
-> You can set **url** in **configCookieSync** to a domain name so that the cookie is attached to the requests on
-> the page.
->
-> It is recommended that cookie syncing be completed before the **Web** component is loaded.
->
-> Cookies are periodically saved to the disk every 30s. You can also use the
-> **saveCookieAsync** API to forcibly save cookies to the disk.
->
-> The **value** parameter must comply with the format of the Set-Cookie HTTP response header. The value is in the
-> format of "key=value", followed by a list of cookie attributes separated by semicolons, for example,
-> **"key=value;Max-Age=100"**.
->
-> If a cookie with the same host, path, and name exists, it will be replaced by the new cookie. If the cookie has
-> expired, it will not be stored. To set multiple cookies, call this method multiple times.
->
-> If **configCookieSync()** is used to set cookies for two or more times, the cookies set each time are separated
-> by semicolons.
->
-> If the specified value contains the **Secure** attribute, the URL must use the **https://** protocol.
+Set a single cookie (key-value pair) for the given URL. > **NOTE** > > You can set **url** in **configCookieSync** to a domain name so that the cookie is attached to the requests on > the page. > > It is recommended that cookie syncing be completed before the **Web** component is loaded. > > Cookies are periodically saved to the disk every 30s. You can also use the > **saveCookieAsync** API to forcibly save cookies to the disk. > > The **value** parameter must comply with the format of the Set-Cookie HTTP response header. The value is in the > format of "key=value", followed by a list of cookie attributes separated by semicolons, for example, > **"key=value;Max-Age=100"**. > > If a cookie with the same host, path, and name exists, it will be replaced by the new cookie. If the cookie has > expired, it will not be stored. To set multiple cookies, call this method multiple times. > > If **configCookieSync()** is used to set cookies for two or more times, the cookies set each time are separated > by semicolons. > > If the specified value contains the **Secure** attribute, the URL must use the **https://** protocol.
 
 **Since:** 14
 
@@ -568,13 +524,7 @@ Gets all cookies for the given URL Asynchronously.
 static fetchCookieSync(url: string, incognito?: boolean): string
 ```
 
-Gets all cookies for the given URL.
-
-<p><strong>API Note</strong>:<br>
-
-**fetchCookieSync()** is used to obtain all cookie values. Cookie values are separated by semicolons. However,
-a specific cookie value cannot be obtained separately.
-</p>
+Gets all cookies for the given URL. <p><strong>API Note</strong>:<br> **fetchCookieSync()** is used to obtain all cookie values. Cookie values are separated by semicolons. However, a specific cookie value cannot be obtained separately. </p>
 
 **Since:** 11
 
@@ -608,12 +558,7 @@ a specific cookie value cannot be obtained separately.
 static fetchCookieSync(url: string, incognito?: boolean, includePartitionedCookies?: boolean): string
 ```
 
-Gets all cookies for the given URL.
-
-<strong>API Note</strong>:<br>
-
-**fetchCookieSync()** is used to obtain all cookie values. Cookie values are separated by semicolons. However,
-a specific cookie value cannot be obtained separately.
+Gets all cookies for the given URL. <strong>API Note</strong>:<br> **fetchCookieSync()** is used to obtain all cookie values. Cookie values are separated by semicolons. However, a specific cookie value cannot be obtained separately.
 
 **Since:** 26.0.0
 
@@ -722,8 +667,7 @@ Get whether the instance can send and accept thirdparty cookies.
 static putAcceptCookieEnabled(accept: boolean): void
 ```
 
-Set whether the instance should send and accept cookies.
-By default this is set to be true.
+Set whether the instance should send and accept cookies. By default this is set to be true.
 
 **Since:** 9
 
@@ -749,8 +693,7 @@ By default this is set to be true.
 static putAcceptThirdPartyCookieEnabled(accept: boolean): void
 ```
 
-Set whether the instance should send and accept thirdparty cookies.
-By default this is set to be false.
+Set whether the instance should send and accept thirdparty cookies. By default this is set to be false.
 
 **Since:** 9
 
@@ -828,15 +771,7 @@ Save the cookies Asynchronously.
 static saveCookieSync(): void
 ```
 
-Save the cookies synchronously.
-
-<p><strong>API Note</strong>:<br>
-**saveCookieSync** is used to forcibly write cookies that need to be persisted to disks. Session cookies are
-not persisted on PCs, 2-in-1 devices, or tablets, even if **saveCookieSync** is invoked.
-
-**saveCookieSync** blocks the caller until the operation is complete. During this period, I/O operations may be
-performed.
-</p>
+Save the cookies synchronously. <p><strong>API Note</strong>:<br> **saveCookieSync** is used to forcibly write cookies that need to be persisted to disks. Session cookies are not persisted on PCs, 2-in-1 devices, or tablets, even if **saveCookieSync** is invoked. **saveCookieSync** blocks the caller until the operation is complete. During this period, I/O operations may be performed. </p>
 
 **Since:** 15
 
@@ -879,10 +814,7 @@ Set a single cookie (key-value pair) for the given URL.
 static setLazyInitializeWebEngine(lazy: boolean): void
 ```
 
-Delays the initialization of the web engine. By default, the web engine is initialized when the CookieManager
-interface is called. By setting the 'lazy' parameter to true, the web engine will not be initialized when the
-CookieManager interface is called. Instead, the web engine will be initialized either when the web component is
-created or when initializeWebEngine is called.
+Delays the initialization of the web engine. By default, the web engine is initialized when the CookieManager interface is called. By setting the 'lazy' parameter to true, the web engine will not be initialized when the CookieManager interface is called. Instead, the web engine will be initialized either when the web component is created or when initializeWebEngine is called.
 
 **Since:** 22
 

@@ -1,10 +1,6 @@
 # CommonEventPublishData
 
-包含公共事件内容和属性。
-
-> **说明：**
->
-> 如果不加限制，任何应用都可以订阅公共事件并读取相关信息，应避免在公共事件中携带敏感信息。通过本模块的subscriberPermissions和bundleName参数，可以限制公共事件接收方的范围。
+包含公共事件内容和属性。 > **说明：** > > 如果不加限制，任何应用都可以订阅公共事件并读取相关信息，应避免在公共事件中携带敏感信息。通过本模块的subscriberPermissions和bundleName参数，可以限制公共事件接收方的范围。
 
 **起始版本：** 7
 
@@ -66,10 +62,7 @@ data?: string
 isOrdered?: boolean
 ```
 
-表示是否是有序事件。默认为false。
-
-- true：有序公共事件，根据订阅者设置的优先级等级，优先将公共事件发送给优先级较高的订阅者，等待其成功接收该公共事件之后再将事件发送给优先级较低的订阅者。如果有多个订阅者具有相同的优先级，则他们将随机接收到公共事件。
-- false：无序公共事件，不考虑订阅者是否接收到该事件，也不保证订阅者接收到该事件的顺序与其订阅顺序一致。
+表示是否是有序事件。默认为false。 - true：有序公共事件，根据订阅者设置的优先级等级，优先将公共事件发送给优先级较高的订阅者，等待其成功接收该公共事件之后再将事件发送给优先级较低的订阅者。如果有多个订阅者具有相同的优先级，则他们将随机接收到公共事件。 - false：无序公共事件，不考虑订阅者是否接收到该事件，也不保证订阅者接收到该事件的顺序与其订阅顺序一致。
 
 **类型：** boolean
 
@@ -85,14 +78,7 @@ isOrdered?: boolean
 isSticky?: boolean
 ```
 
-表示是否是粘性事件。默认为false。
-
-- true：粘性公共事件，能够让订阅者收到在订阅前已经发送的公共事件。
-- false：普通公共事件，只能让订阅者收到在订阅后才发送的公共事件。
-
-仅系统应用或系统服务允许发送粘性事件。
-
-[ohos.permission.COMMONEVENT_STICKY](../../../../security/AccessToken/permissions-for-all.md#ohospermissioncommonevent_sticky)
+表示是否是粘性事件。默认为false。 - true：粘性公共事件，能够让订阅者收到在订阅前已经发送的公共事件。 - false：普通公共事件，只能让订阅者收到在订阅后才发送的公共事件。 仅系统应用或系统服务允许发送粘性事件。 [ohos.permission.COMMONEVENT_STICKY](../../../../security/AccessToken/permissions-for-all.md#ohospermissioncommonevent_sticky)
 
 **类型：** boolean
 

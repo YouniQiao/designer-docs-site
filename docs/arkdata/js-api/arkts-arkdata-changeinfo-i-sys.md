@@ -1,7 +1,6 @@
 # ChangeInfo (System API)
 
-Represents the data change information, including the data change type, URI of the data changed, and changed data
-content.
+Represents the data change information, including the data change type, URI of the data changed, and changed data content.
 
 **Since:** 12
 

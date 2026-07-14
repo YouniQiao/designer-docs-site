@@ -1,9 +1,6 @@
 # MediaInfo
 
-Represents a **MediaInfo** object used as a parameter of the
-[CreateNativeMediaPlayerCallback](arkts-arkweb-createnativemediaplayercallback-t.md) callback. The
-object contains information about media on the web page. The application may create, based on the information, a
-player that takes over media playback of the web page.
+Represents a **MediaInfo** object used as a parameter of the [CreateNativeMediaPlayerCallback](arkts-arkweb-createnativemediaplayercallback-t.md) callback. The object contains information about media on the web page. The application may create, based on the information, a player that takes over media playback of the web page.
 
 **Since:** 12
 
@@ -51,10 +48,7 @@ Value of the **controlslist** attribute in **<video>** or **<audio>**.
 controlsShown: boolean
 ```
 
-Whether the **controls** attribute exists in **<video>** or **<audio>**.
-
-The value **true** means that the **controls** attribute exists in **<video>** or **<audio>**, and **false**
-means the opposite.
+Whether the **controls** attribute exists in **<video>** or **<audio>**. The value **true** means that the **controls** attribute exists in **<video>** or **<audio>**, and **false** means the opposite.
 
 **Type:** boolean
 
@@ -130,9 +124,7 @@ Type of the media.
 muted: boolean
 ```
 
-Whether to mute the player.
-
-The value **true** means to mute the player, and **false** means the opposite.
+Whether to mute the player. The value **true** means to mute the player, and **false** means the opposite.
 
 **Type:** boolean
 

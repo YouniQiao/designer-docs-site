@@ -12,9 +12,7 @@ import { print } from '@kit.BasicServicesKit';
 function startDiscoverPrinter(extensionList: Array<string>, callback: AsyncCallback<void>): void
 ```
 
-Discovers printers by specifying the extension list. The discovered printers contain the specified print extension
-abilities. If an empty extension list is specified, all extension abilities are loaded. This API uses an
-asynchronous callback to return the result.
+Discovers printers by specifying the extension list. The discovered printers contain the specified print extension abilities. If an empty extension list is specified, all extension abilities are loaded. This API uses an asynchronous callback to return the result.
 
 **Since:** 20
 
@@ -67,9 +65,7 @@ print.startDiscoverPrinter(extensionList, (err: BusinessError) => {
 function startDiscoverPrinter(extensionList: Array<string>): Promise<void>
 ```
 
-Discovers printers by specifying the extension list. The discovered printers contain the specified print extension
-abilities. If an empty extension list is specified, all extension abilities are loaded. This API uses a promise to
-return the result.
+Discovers printers by specifying the extension list. The discovered printers contain the specified print extension abilities. If an empty extension list is specified, all extension abilities are loaded. This API uses a promise to return the result.
 
 **Since:** 20
 

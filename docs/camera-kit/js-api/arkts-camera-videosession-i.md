@@ -1,9 +1,6 @@
 # VideoSession
 
-VideoSession extends Session, Flash, AutoExposure, Focus, Zoom, Stabilization, ColorManagement
-Implements a video session, which sets the parameters of the normal video mode and saves all
-[CameraInput](arkts-camera-camerainput-i.md) and [CameraOutput](arkts-camera-cameraoutput-i.md)
-instances required to run the camera. It inherits from [Session](arkts-camera-session-i.md).
+VideoSession extends Session, Flash, AutoExposure, Focus, Zoom, Stabilization, ColorManagement Implements a video session, which sets the parameters of the normal video mode and saves all [CameraInput](arkts-camera-camerainput-i.md) and [CameraOutput](arkts-camera-cameraoutput-i.md) instances required to run the camera. It inherits from [Session](arkts-camera-session-i.md).
 
 **Inheritance/Implementation:** VideoSession extends [Session](arkts-camera-session-i.md), [Flash](arkts-camera-flash-i.md), [AutoExposure](arkts-camera-autoexposure-i.md), [WhiteBalance](arkts-camera-whitebalance-i.md), [Focus](arkts-camera-focus-i.md), [Zoom](arkts-camera-zoom-i.md), [Stabilization](arkts-camera-stabilization-i.md), [ColorManagement](arkts-camera-colormanagement-i.md), [ControlCenter](arkts-camera-controlcenter-i.md), [AutoDeviceSwitch](arkts-camera-autodeviceswitch-i.md), [Macro](arkts-camera-macro-i-sys.md), [ManualExposure](arkts-camera-manualexposure-i.md), [ManualFocus](arkts-camera-manualfocus-i-sys.md), [ManualIso](arkts-camera-manualiso-i-sys.md), [OIS](arkts-camera-ois-i.md), [Aperture](arkts-camera-aperture-i-sys.md)
 
@@ -226,11 +223,7 @@ Unsubscribes from ISO info change event callback.
 on(type: 'error', callback: ErrorCallback): void
 ```
 
-Subscribes to **PhotoSession** error events. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
+Subscribes to **PhotoSession** error events. This API uses an asynchronous callback to return the result. > **NOTE** > > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
 
 **Since:** 11
 
@@ -251,11 +244,7 @@ Subscribes to **PhotoSession** error events. This API uses an asynchronous callb
 on(type: 'focusStateChange', callback: AsyncCallback<FocusState>): void
 ```
 
-Subscribes to focus state change events. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
+Subscribes to focus state change events. This API uses an asynchronous callback to return the result. > **NOTE** > > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
 
 **Since:** 11
 
@@ -276,11 +265,7 @@ Subscribes to focus state change events. This API uses an asynchronous callback 
 on(type: 'smoothZoomInfoAvailable', callback: AsyncCallback<SmoothZoomInfo>): void
 ```
 
-Subscribes to smooth zoom state change events. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
+Subscribes to smooth zoom state change events. This API uses an asynchronous callback to return the result. > **NOTE** > > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
 
 **Since:** 11
 
@@ -301,12 +286,7 @@ Subscribes to smooth zoom state change events. This API uses an asynchronous cal
 on(type: 'controlCenterEffectStatusChange', callback: AsyncCallback<ControlCenterStatusInfo>): void
 ```
 
-Subscribes to events indicating that the camera controller effect status changes. This API uses an asynchronous
-callback to return the result.
-
-> **NOTE**
->
-> Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
+Subscribes to events indicating that the camera controller effect status changes. This API uses an asynchronous callback to return the result. > **NOTE** > > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
 
 **Since:** 20
 
@@ -327,12 +307,7 @@ callback to return the result.
 on(type: 'autoDeviceSwitchStatusChange', callback: AsyncCallback<AutoDeviceSwitchStatus>): void
 ```
 
-Subscribes to automatic camera switch status change events. This API uses an asynchronous callback to return the
-result.
-
-> **NOTE**
->
-> Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
+Subscribes to automatic camera switch status change events. This API uses an asynchronous callback to return the result. > **NOTE** > > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
 
 **Since:** 13
 
@@ -353,11 +328,7 @@ result.
 on(type: 'systemPressureLevelChange', callback: AsyncCallback<SystemPressureLevel>): void
 ```
 
-Subscribes to system pressure level change events. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
+Subscribes to system pressure level change events. This API uses an asynchronous callback to return the result. > **NOTE** > > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
 
 **Since:** 20
 
@@ -378,8 +349,7 @@ Subscribes to system pressure level change events. This API uses an asynchronous
 onExposureInfoChange(callback: Callback<ExposureInfo>): void
 ```
 
-Subscribes exposure info change event callback.
-After exposure parameters are changed, the system will returns the updated exposure infos.
+Subscribes exposure info change event callback. After exposure parameters are changed, the system will returns the updated exposure infos.
 
 **Since:** 26.0.0
 
@@ -450,16 +420,7 @@ Preconfigures this session.
 setQualityPrioritization(quality: QualityPrioritization): void
 ```
 
-Sets the priority level for video recording quality.
-
-> **NOTE**
->
-> - The default value is **HIGH_QUALITY**. Switching to **POWER_BALANCE** will compromise video recording quality
-> to achieve lower power usage. The extent of power conservation achieved varies depending on the platform.
->
-> - It is recommended that this API be called between
-> [commitConfig](arkts-camera-session-i.md#commitconfig-1) and
-> [start](arkts-camera-session-i.md#start-2).
+Sets the priority level for video recording quality. > **NOTE** > > - The default value is **HIGH_QUALITY**. Switching to **POWER_BALANCE** will compromise video recording quality > to achieve lower power usage. The extent of power conservation achieved varies depending on the platform. > > - It is recommended that this API be called between > [commitConfig](arkts-camera-session-i.md#commitconfig-1) and > [start](arkts-camera-session-i.md#start-2).
 
 **Since:** 14
 

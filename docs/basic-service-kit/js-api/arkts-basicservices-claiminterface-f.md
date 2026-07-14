@@ -12,14 +12,7 @@ import { usbManager } from '@kit.BasicServicesKit';
 function claimInterface(pipe: USBDevicePipe, iface: USBInterface, force?: boolean): number
 ```
 
-Claims a USB device interface.
-
-> **NOTE**
->
-> In USB programming, **claimInterface** is a common operation, which indicates that an application requests the
-> operating system to release a USB interface from the kernel driver and hand over the USB interface to a user
-> space program for control.<br>
-> > All the **claim** communication interfaces used below refer to the claim interface operations.
+Claims a USB device interface. > **NOTE** > > In USB programming, **claimInterface** is a common operation, which indicates that an application requests the > operating system to release a USB interface from the kernel driver and hand over the USB interface to a user > space program for control.<br> > > All the **claim** communication interfaces used below refer to the claim interface operations.
 
 **Since:** 9
 

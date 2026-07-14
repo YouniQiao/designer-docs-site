@@ -12,8 +12,7 @@ Represents the callback invoked when the first content paint occurs on the web p
 firstContentfulPaintMs: number
 ```
 
-Time between navigation and when the content is first rendered.
-Unit: milliseconds.
+Time between navigation and when the content is first rendered. Unit: milliseconds.
 
 **Type:** number
 
@@ -29,8 +28,7 @@ Unit: milliseconds.
 navigationStartTick: number
 ```
 
-Navigation start time, in microseconds.
-Unit: microseconds.
+Navigation start time, in microseconds. Unit: microseconds.
 
 **Type:** number
 

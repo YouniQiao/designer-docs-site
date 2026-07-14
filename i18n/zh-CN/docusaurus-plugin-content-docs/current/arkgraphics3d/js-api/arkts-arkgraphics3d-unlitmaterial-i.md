@@ -14,8 +14,7 @@
 baseColor: MaterialProperty
 ```
 
-无光照材质的基础颜色因子.
-factor.xyzw的值定义rgba颜色.
+无光照材质的基础颜色因子. factor.xyzw的值定义rgba颜色.
 
 **类型：** MaterialProperty
 

@@ -1,7 +1,6 @@
 # ShortcutWant (System API)
 
-Describes a collection of target [Wants](../../../../quick-start/module-configuration-file.md#wants) information
-defined within a shortcut.
+Describes a collection of target [Wants](../../../../quick-start/module-configuration-file.md#wants) information defined within a shortcut.
 
 **Since:** 20
 
@@ -15,8 +14,7 @@ defined within a shortcut.
 parameters?: Array<ParameterItem>
 ```
 
-Custom data for launching the shortcut. The data must be strings. Both keys and values can be strings up to 1024
-characters long.
+Custom data for launching the shortcut. The data must be strings. Both keys and values can be strings up to 1024 characters long.
 
 **Type:** Array<ParameterItem>
 

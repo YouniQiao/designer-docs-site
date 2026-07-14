@@ -6,10 +6,7 @@
 function stopUsingPermission(tokenID: number, permissionName: Permissions): Promise<void>
 ```
 
-系统应用调用此接口，标记不再使用指定权限。调用成功后，隐私服务将此状态变化通知所有该权限使用状态变更事件的订阅者。
-适用于应用完成敏感操作后或退出前台时，通知系统权限使用结束。使用Promise异步回调。
-
-该接口需与[startUsingPermission](arkts-ability-startusingpermission-f-sys.md#startusingpermission-1)配套使用。
+系统应用调用此接口，标记不再使用指定权限。调用成功后，隐私服务将此状态变化通知所有该权限使用状态变更事件的订阅者。 适用于应用完成敏感操作后或退出前台时，通知系统权限使用结束。使用Promise异步回调。 该接口需与[startUsingPermission](arkts-ability-startusingpermission-f-sys.md#startusingpermission-1)配套使用。
 
 **起始版本：** 9
 
@@ -68,10 +65,7 @@ privacyManager.stopUsingPermission(tokenID, 'ohos.permission.READ_AUDIO').then((
 function stopUsingPermission(tokenID: number, permissionName: Permissions, callback: AsyncCallback<void>): void
 ```
 
-系统应用调用此接口，标记不再使用指定权限。调用成功后，隐私服务将此状态变化通知所有该权限使用状态变更事件的订阅者。
-适用于应用完成敏感操作后或退出前台时，通知系统权限使用结束。使用callback异步回调。
-
-该接口需与[startUsingPermission](arkts-ability-startusingpermission-f-sys.md#startusingpermission-1)配套使用。
+系统应用调用此接口，标记不再使用指定权限。调用成功后，隐私服务将此状态变化通知所有该权限使用状态变更事件的订阅者。 适用于应用完成敏感操作后或退出前台时，通知系统权限使用结束。使用callback异步回调。 该接口需与[startUsingPermission](arkts-ability-startusingpermission-f-sys.md#startusingpermission-1)配套使用。
 
 **起始版本：** 9
 
@@ -132,10 +126,7 @@ function stopUsingPermission(
   ): Promise<void>
 ```
 
-系统应用调用此接口，标记不再使用指定权限。调用成功后，隐私服务将此状态变化通知所有该权限使用状态变更事件的订阅者。
-适用于应用完成敏感操作后或退出前台时，通知系统权限使用结束。使用Promise异步回调。
-
-pid需要与[startUsingPermission](arkts-ability-startusingpermission-f-sys.md#startusingpermission-1)传入的pid相同。
+系统应用调用此接口，标记不再使用指定权限。调用成功后，隐私服务将此状态变化通知所有该权限使用状态变更事件的订阅者。 适用于应用完成敏感操作后或退出前台时，通知系统权限使用结束。使用Promise异步回调。 pid需要与[startUsingPermission](arkts-ability-startusingpermission-f-sys.md#startusingpermission-1)传入的pid相同。
 
 **起始版本：** 26.0.0
 
@@ -218,11 +209,7 @@ function stopUsingPermission(
   ): Promise<void>
 ```
 
-系统应用调用此接口，标记不再使用指定权限。调用成功后，隐私服务将此状态变化通知所有该权限使用状态变更事件的订阅者。适用于应用完成敏感操作后或退出前台时，通知系统权限使用结束。使用Promise异步回调。
-
-pid需要与
-[startUsingPermission](privacyManager.startUsingPermission(tokenID: int, permissionName: Permissions, pid?: int, usedType?: PermissionUsedType))
-传入的pid相同。
+系统应用调用此接口，标记不再使用指定权限。调用成功后，隐私服务将此状态变化通知所有该权限使用状态变更事件的订阅者。适用于应用完成敏感操作后或退出前台时，通知系统权限使用结束。使用Promise异步回调。 pid需要与 [startUsingPermission](privacyManager.startUsingPermission(tokenID: int, permissionName: Permissions, pid?: int, usedType?: PermissionUsedType)) 传入的pid相同。
 
 **起始版本：** 18
 

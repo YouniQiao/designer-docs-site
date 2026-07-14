@@ -33,17 +33,18 @@ hide(): Promise<void>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [33600001](../../apis-basic-services-kit/errorcode-selection.md#33600001-划词服务异常) | Selection service exception. |
-| [33600002](../../apis-basic-services-kit/errorcode-selection.md#33600002-此划词窗口已被销毁) | This selection window has been destroyed. |
+| [33600002](../../apis-basic-services-kit/errorcode-selection.md#33600002-划词窗口已被销毁) | This selection window has been destroyed. |
 
 **示例：**
 
 ```TypeScript
-import { selectionManager, BusinessError } from '@kit.BasicServicesKit';
+import { BusinessError } from '@kit.BasicServicesKit';
 
+// 隐藏划词面板。selectionPanel为createPanel创建出的panel实例
 selectionPanel.hide().then(() => {
   console.info('Succeeded in hiding the panel.');
 }).catch((err: BusinessError) => {
-  console.error(`Failed to hide panel: ${err.code}, error message: ${err.message}`);
+  console.error(`Failed to hide panel. Error code: ${err.code}, error message: ${err.message}`);
 });
 
 ```
@@ -54,11 +55,7 @@ selectionPanel.hide().then(() => {
 moveTo(x: number, y: number): Promise<void>
 ```
 
-移动划词面板至屏幕指定位置。使用Promise异步回调。
-
-> **说明：**
-> 从API version 20开始支持，从API version 24开始废弃。建议使用
-> [moveToGlobalDisplay](arkts-basicservices-panel-i.md#movetoglobaldisplay-1)替代。
+移动划词面板至屏幕指定位置。使用Promise异步回调。 > **说明：** > 从API version 20开始支持，从API version 24开始废弃。建议使用 > [moveToGlobalDisplay](arkts-basicservices-panel-i.md#movetoglobaldisplay-1)替代。
 
 **起始版本：** 20
 
@@ -88,21 +85,22 @@ moveTo(x: number, y: number): Promise<void>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [33600001](../../apis-basic-services-kit/errorcode-selection.md#33600001-划词服务异常) | Selection service exception. |
-| [33600002](../../apis-basic-services-kit/errorcode-selection.md#33600002-此划词窗口已被销毁) | This selection window has been destroyed. |
+| [33600002](../../apis-basic-services-kit/errorcode-selection.md#33600002-划词窗口已被销毁) | This selection window has been destroyed. |
 
 **示例：**
 
 ```TypeScript
-import { selectionManager, BusinessError } from '@kit.BasicServicesKit';
+import { BusinessError } from '@kit.BasicServicesKit';
 
 try {
+  // 移动划词面板至屏幕指定位置。selectionPanel为createPanel创建出的panel实例
   selectionPanel.moveTo(200, 200).then(() => {
     console.info('Succeeded in moving the panel.');
   }).catch((err: BusinessError) => {
-    console.error(`Failed to move panel: ${err.code}, error message: ${err.message}`);
+    console.error(`Failed to move panel. Error code: ${err.code}, error message: ${err.message}`);
   });
 } catch (err) {
-  console.error(`Failed to move panel: ${err.code}, error message: ${err.message}`);
+  console.error(`Failed to move panel. Error code: ${err.code}, error message: ${err.message}`);
 }
 
 ```
@@ -131,12 +129,11 @@ off(type: 'destroyed', callback?: Callback<void>): void
 **示例：**
 
 ```TypeScript
-import { selectionManager, BusinessError } from '@kit.BasicServicesKit';
-
 try {
+  // 取消订阅划词面板销毁事件。selectionPanel为createPanel创建出的panel实例
   selectionPanel.off('destroyed');
 } catch (err) {
-  console.error(`Failed to unregister destroyed: ${err.code}, error message: ${err.message}`);
+  console.error(`Failed to unregister destroyed. Error code: ${err.code}, error message: ${err.message}`);
 }
 
 ```
@@ -165,12 +162,11 @@ off(type: 'hidden', callback?: Callback<void>): void
 **示例：**
 
 ```TypeScript
-import { selectionManager, BusinessError } from '@kit.BasicServicesKit';
-
 try {
+  // 取消订阅划词面板隐藏事件。selectionPanel为createPanel创建出的panel实例
   selectionPanel.off('hidden');
 } catch (err) {
-  console.error(`Failed to unregister hidden: ${err.code}, error message: ${err.message}`);
+  console.error(`Failed to unregister hidden. Error code: ${err.code}, error message: ${err.message}`);
 }
 
 ```
@@ -199,14 +195,13 @@ on(type: 'destroyed', callback: Callback<void>): void
 **示例：**
 
 ```TypeScript
-import { selectionManager, BusinessError } from '@kit.BasicServicesKit';
-
 try {
+  // 订阅划词面板销毁事件。selectionPanel为createPanel创建出的panel实例
   selectionPanel.on('destroyed', () => {
     console.info('Panel has been destroyed.');
   });
 } catch (err) {
-  console.error(`Failed to register destroyed callback: ${err.code}, error message: ${err.message}`);
+  console.error(`Failed to register destroyed callback. Error code: ${err.code}, error message: ${err.message}`);
 }
 
 ```
@@ -235,14 +230,13 @@ on(type: 'hidden', callback: Callback<void>): void
 **示例：**
 
 ```TypeScript
-import { selectionManager, BusinessError } from '@kit.BasicServicesKit';
-
 try {
+  // 订阅划词面板隐藏事件。selectionPanel为createPanel创建出的panel实例
   selectionPanel.on('hidden', () => {
     console.info('Panel has been hidden.');
   });
 } catch (err) {
-  console.error(`Failed to register hidden callback: ${err.code}, error message: ${err.message}`);
+  console.error(`Failed to register hidden callback. Error code: ${err.code}, error message: ${err.message}`);
 }
 
 ```
@@ -280,21 +274,22 @@ setUiContent(path: string): Promise<void>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [33600001](../../apis-basic-services-kit/errorcode-selection.md#33600001-划词服务异常) | Selection service exception. |
-| [33600002](../../apis-basic-services-kit/errorcode-selection.md#33600002-此划词窗口已被销毁) | This selection window has been destroyed. |
+| [33600002](../../apis-basic-services-kit/errorcode-selection.md#33600002-划词窗口已被销毁) | This selection window has been destroyed. |
 
 **示例：**
 
 ```TypeScript
-import { selectionManager, BusinessError } from '@kit.BasicServicesKit';
+import { BusinessError } from '@kit.BasicServicesKit';
 
 try {
+  // 为划词面板加载页面内容。selectionPanel为createPanel创建出的panel实例
   selectionPanel.setUiContent('pages/Index').then(() => {
     console.info('Succeeded in setting the content.');
   }).catch((err: BusinessError) => {
-    console.error(`Failed to setUiContent: ${err.code}, error message: ${err.message}`);
+    console.error(`Failed to setUiContent. Error code: ${err.code}, error message: ${err.message}`);
   });
 } catch (err) {
-  console.error(`Failed to setUiContent: ${err.code}, error message: ${err.message}`);
+  console.error(`Failed to setUiContent. Error code: ${err.code}, error message: ${err.message}`);
 }
 
 ```
@@ -326,17 +321,18 @@ show(): Promise<void>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [33600001](../../apis-basic-services-kit/errorcode-selection.md#33600001-划词服务异常) | Selection service exception. |
-| [33600002](../../apis-basic-services-kit/errorcode-selection.md#33600002-此划词窗口已被销毁) | This selection window has been destroyed. |
+| [33600002](../../apis-basic-services-kit/errorcode-selection.md#33600002-划词窗口已被销毁) | This selection window has been destroyed. |
 
 **示例：**
 
 ```TypeScript
-import { selectionManager, BusinessError } from '@kit.BasicServicesKit';
+import { BusinessError } from '@kit.BasicServicesKit';
 
+// 显示划词面板。selectionPanel为createPanel创建出的panel实例
 selectionPanel.show().then(() => {
   console.info('Succeeded in showing the panel.');
 }).catch((err: BusinessError) => {
-  console.error(`Failed to show panel: ${err.code}, error message: ${err.message}`);
+  console.error(`Failed to show panel. Error code: ${err.code}, error message: ${err.message}`);
 });
 
 ```
@@ -368,12 +364,12 @@ startMoving(): Promise<void>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [33600001](../../apis-basic-services-kit/errorcode-selection.md#33600001-划词服务异常) | Selection service exception. |
-| [33600002](../../apis-basic-services-kit/errorcode-selection.md#33600002-此划词窗口已被销毁) | This selection window has been destroyed. |
+| [33600002](../../apis-basic-services-kit/errorcode-selection.md#33600002-划词窗口已被销毁) | This selection window has been destroyed. |
 
 **示例：**
 
 ```TypeScript
-import { selectionManager, BusinessError } from '@kit.BasicServicesKit';
+import { BusinessError } from '@kit.BasicServicesKit';
 
 RelativeContainer() {
   /* 
@@ -383,10 +379,11 @@ RelativeContainer() {
 .onTouch((event: TouchEvent) => {
   if (event.type === TouchType.Down) {
     if (selectionPanel !== undefined) {
-      selectionPanel.startMoving().then(() => {   // selectionPanel为createPanel创建出的panel实例
+      // 使划词面板可随鼠标拖动位置。selectionPanel为createPanel创建出的panel实例
+      selectionPanel.startMoving().then(() => {
         console.info('Succeeded in startMoving the panel.');
       }).catch((err: BusinessError) => {
-        console.error(`Failed to startMoving panel: ${err.code}, error message: ${err.message}`);
+        console.error(`Failed to startMoving panel. Error code: ${err.code}, error message: ${err.message}`);
       });
     }
   }

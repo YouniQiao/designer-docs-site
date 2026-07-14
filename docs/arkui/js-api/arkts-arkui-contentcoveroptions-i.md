@@ -1,8 +1,6 @@
 # ContentCoverOptions
 
-Inherited from [BindOptions](arkts-arkui-bindoptions-i.md).
-
-Provides content options of the modal.
+Inherited from [BindOptions](arkts-arkui-bindoptions-i.md). Provides content options of the modal.
 
 **Inheritance/Implementation:** ContentCoverOptions extends [BindOptions](arkts-arkui-bindoptions-i.md)
 
@@ -16,9 +14,7 @@ Provides content options of the modal.
 enableSafeArea?: boolean
 ```
 
-Whether the full-screen modal adapts to the safe area. **true** indicates the full-screen modal adapts to the safe
-area, restricting content within the safe area and avoiding the navigation and status bars. **false** indicates no
-processing is applied, maintaining the same style as before. The default value is **false**.
+Whether the full-screen modal adapts to the safe area. **true** indicates the full-screen modal adapts to the safe area, restricting content within the safe area and avoiding the navigation and status bars. **false** indicates no processing is applied, maintaining the same style as before. The default value is **false**.
 
 **Type:** boolean
 
@@ -38,13 +34,7 @@ processing is applied, maintaining the same style as before. The default value i
 modalTransition?: ModalTransition
 ```
 
-System transition mode of the modal.
-
-Default value: **ModalTransition.DEFAULT**.
-
-**NOTE**
-
-This property has no effect when it is set together with **transition**.
+System transition mode of the modal. Default value: **ModalTransition.DEFAULT**. **NOTE** This property has no effect when it is set together with **transition**.
 
 **Type:** ModalTransition
 
@@ -64,13 +54,7 @@ This property has no effect when it is set together with **transition**.
 onWillDismiss?: Callback<DismissContentCoverAction>
 ```
 
-Callback invoked to prevent a user attempt to dismiss the modal.
-
-**NOTE**
-
-After this callback is registered, touching the back button does not immediately dismiss the modal. You can use the
-**reason** parameter to determine the type of operation that triggers the dismiss and decide whether to dismiss the
-modal based on the reason. Nesting **onWillDismiss** callbacks is not allowed.
+Callback invoked to prevent a user attempt to dismiss the modal. **NOTE** After this callback is registered, touching the back button does not immediately dismiss the modal. You can use the **reason** parameter to determine the type of operation that triggers the dismiss and decide whether to dismiss the modal based on the reason. Nesting **onWillDismiss** callbacks is not allowed.
 
 **Type:** Callback<DismissContentCoverAction>
 

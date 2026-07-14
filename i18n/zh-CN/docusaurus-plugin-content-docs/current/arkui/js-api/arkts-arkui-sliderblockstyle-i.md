@@ -12,9 +12,7 @@ Slider组件滑块形状参数。
 image?: ResourceStr
 ```
 
-设置滑块图片资源。
-
-图片显示区域大小由blockSize属性控制，请勿输入尺寸过大的图片。
+设置滑块图片资源。 图片显示区域大小由blockSize属性控制，请勿输入尺寸过大的图片。
 
 **类型：** ResourceStr
 
@@ -50,9 +48,7 @@ shape?: CircleAttribute | EllipseAttribute | PathAttribute | RectAttribute
 type: SliderBlockType
 ```
 
-设置滑块形状。
-
-默认值：SliderBlockType.DEFAULT，使用圆形滑块。
+设置滑块形状。 默认值：SliderBlockType.DEFAULT，使用圆形滑块。
 
 **类型：** SliderBlockType
 

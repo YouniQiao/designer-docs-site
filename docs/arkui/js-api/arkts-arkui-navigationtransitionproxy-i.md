@@ -12,8 +12,7 @@ Implements a custom transition animation proxy.
 cancelTransition?(): void
 ```
 
-Cancels this interactive transition animation, restoring the routing stack to its state before page redirection. (
-Non-interactive transition animations cannot be canceled.)
+Cancels this interactive transition animation, restoring the routing stack to its state before page redirection. ( Non-interactive transition animations cannot be canceled.)
 
 **Since:** 12
 
@@ -29,8 +28,7 @@ Non-interactive transition animations cannot be canceled.)
 finishTransition(): void
 ```
 
-Finishes this custom transition animation. This API must be manually called to end the animation. Otherwise, the
-system ends the animation when the timeout expires.
+Finishes this custom transition animation. This API must be manually called to end the animation. Otherwise, the system ends the animation when the timeout expires.
 
 **Since:** 11
 
@@ -46,14 +44,7 @@ system ends the animation when the timeout expires.
 updateTransition?(progress: number): void
 ```
 
-Updates the progress of this interactive transition animation. (Non-interactive animations do not support setting
-the animation progress).
-
-> **NOTE**
->
-> You are not advised to use stack operations in [aboutToAppear](arkts-arkui-basecustomcomponent-c.md#abouttoappear-1), as the
-> page has not yet finished building at this stage, which may lead to issues such as white screens or navigation
-> failures.
+Updates the progress of this interactive transition animation. (Non-interactive animations do not support setting the animation progress). > **NOTE** > > You are not advised to use stack operations in [aboutToAppear](arkts-arkui-basecustomcomponent-c.md#abouttoappear-1), as the > page has not yet finished building at this stage, which may lead to issues such as white screens or navigation > failures.
 
 **Since:** 12
 
@@ -93,11 +84,7 @@ Information about the exit page.
 isInteractive?: boolean
 ```
 
-Whether the transition animation is interactive.
-
-**true**: yes; **false**: no
-
-Default value: **false**
+Whether the transition animation is interactive. **true**: yes; **false**: no Default value: **false**
 
 **Type:** boolean
 

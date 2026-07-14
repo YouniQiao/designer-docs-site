@@ -12,9 +12,7 @@ import { inputDevice } from '@kit.InputKit';
 function getKeyboardType(deviceId: number, callback: AsyncCallback<KeyboardType>): void
 ```
 
-Obtains the keyboard type of the input device, such as full keyboard and numeric keypad. The keyboard type of the
-input device is subject to the result returned by this API. This API uses an asynchronous callback to return the
-result.
+Obtains the keyboard type of the input device, such as full keyboard and numeric keypad. The keyboard type of the input device is subject to the result returned by this API. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 

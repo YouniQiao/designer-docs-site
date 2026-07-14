@@ -1,13 +1,6 @@
 # EventResult
 
-通知Web组件同层事件消费结果，支持的事件：[触摸事件的类型](../../apis-arkui/arkts-components/arkts-arkui-touchtype-e.md)和[鼠标事件的类型](../../apis-arkui/arkts-components/arkts-arkui-mouseaction-e.md)，鼠标仅支持
-[左中右按键](../../apis-arkui/arkts-components/arkts-arkui-mousebutton-e.md)。
-
-如果应用不消费该事件，则应设置消费结果为false，事件将会被Web组件消费；反之如果应用消费了该事件，则应将消费结果设置为true，Web组件将不消费该事件。若应用设置消费结果不符合以上使用规格，将产生与开发者预期不匹配的现象。
-
-触摸事件示例代码参考[onNativeEmbedGestureEvent事件](web:WebAttribute.onNativeEmbedGestureEvent)。
-
-鼠标事件示例代码参考[onNativeEmbedMouseEvent事件](web:WebAttribute.onNativeEmbedMouseEvent)。
+通知Web组件同层事件消费结果，支持的事件：[触摸事件的类型](../../apis-arkui/arkts-components/arkts-arkui-touchtype-e.md)和[鼠标事件的类型](../../apis-arkui/arkts-components/arkts-arkui-mouseaction-e.md)，鼠标仅支持 [左中右按键](../../apis-arkui/arkts-components/arkts-arkui-mousebutton-e.md)。 如果应用不消费该事件，则应设置消费结果为false，事件将会被Web组件消费；反之如果应用消费了该事件，则应将消费结果设置为true，Web组件将不消费该事件。若应用设置消费结果不符合以上使用规格，将产生与开发者预期不匹配的现象。 触摸事件示例代码参考[onNativeEmbedGestureEvent事件](web:WebAttribute.onNativeEmbedGestureEvent)。 鼠标事件示例代码参考[onNativeEmbedMouseEvent事件](web:WebAttribute.onNativeEmbedMouseEvent)。
 
 **起始版本：** 12
 

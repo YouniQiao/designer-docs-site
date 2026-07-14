@@ -12,9 +12,7 @@ import { privacyManager } from '@kit.AbilityKit';
 function getPermissionUsedRecord(request: PermissionUsedRequest): Promise<PermissionUsedResponse>
 ```
 
-Obtains historical permission usage records, which can be used in permission auditing or security monitoring
-scenarios, such as checking an application's usage of sensitive permissions within a specified time period.
-This API uses a promise to return the result.
+Obtains historical permission usage records, which can be used in permission auditing or security monitoring scenarios, such as checking an application's usage of sensitive permissions within a specified time period. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -81,9 +79,7 @@ function getPermissionUsedRecord(
     callback: AsyncCallback<PermissionUsedResponse>): void
 ```
 
-Obtains historical permission usage records, which can be used in permission auditing or security monitoring
-scenarios, such as checking an application's usage of sensitive permissions within a specified time period.
-This API uses an asynchronous callback to return the result.
+Obtains historical permission usage records, which can be used in permission auditing or security monitoring scenarios, such as checking an application's usage of sensitive permissions within a specified time period. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 

@@ -92,10 +92,7 @@ Name of the intent displayed in the InsightIntent framework.
 readonly domain: string
 ```
 
-Vertical domain of the intent. It is used to categorize intents by vertical fields (for example, video, music,
-and games). For details about the value range, see the vertical domain fields in
-[smart distribution features in different vertical domains](https://developer.huawei.com/consumer/en/doc/service/intents-ai-distribution-characteristic-0000001901922213#section2656133582215)
-.
+Vertical domain of the intent. It is used to categorize intents by vertical fields (for example, video, music, and games). For details about the value range, see the vertical domain fields in [smart distribution features in different vertical domains](https://developer.huawei.com/consumer/en/doc/service/intents-ai-distribution-characteristic-0000001901922213#section2656133582215) .
 
 **Type:** string
 
@@ -167,12 +164,7 @@ Intent name.
 readonly intentType: InsightIntentType
 ```
 
-Type of intent defined by the intent decorator.
-
-**NOTE**
-
-For intents developed using a configuration file, the return value of this field is
-[@InsightIntentEntry](./js-apis-app-ability-InsightIntentDecorator.md#insightintententry) by default.
+Type of intent defined by the intent decorator. **NOTE** For intents developed using a configuration file, the return value of this field is [@InsightIntentEntry](./js-apis-app-ability-InsightIntentDecorator.md#insightintententry) by default.
 
 **Type:** InsightIntentType
 
@@ -298,8 +290,7 @@ Execution result returned.
 readonly schema: string
 ```
 
-Standard intent name. If an intent in the standard intent list matches both the **schema** and **intentVersion**
-fields, it is processed as a standard intent.
+Standard intent name. If an intent in the standard intent list matches both the **schema** and **intentVersion** fields, it is processed as a standard intent.
 
 **Type:** string
 
@@ -317,12 +308,7 @@ fields, it is processed as a standard intent.
 readonly subIntentInfo: LinkIntentInfo | PageIntentInfo | FunctionIntentInfo | FormIntentInfo | EntryIntentInfo
 ```
 
-Intent information for specific intent decorators.
-
-**NOTE**
-
-For intents developed using a configuration file, the return value of this field is
-[EntryIntentInfo](#entryintentinfo20) by default.
+Intent information for specific intent decorators. **NOTE** For intents developed using a configuration file, the return value of this field is [EntryIntentInfo](#entryintentinfo20) by default.
 
 **Type:** LinkIntentInfo | PageIntentInfo | FunctionIntentInfo | FormIntentInfo | EntryIntentInfo
 

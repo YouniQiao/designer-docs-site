@@ -2095,7 +2095,7 @@ Obtains the event type through a custom component event.
 
 | Type | Description |
 | -- | -- |
-| [ArkUI_NodeCustomEventType](capi-custom-attributes-h.md#arkui_nodecustomeventtype) | Returns the type of the custom component event. |
+| ArkUI_NodeCustomEventType | Returns the type of the custom component event. |
 
 ### OH_ArkUI_NodeCustomEvent_GetCustomSpanMeasureInfo()
 

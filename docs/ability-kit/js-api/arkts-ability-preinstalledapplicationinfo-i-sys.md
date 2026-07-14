@@ -80,8 +80,7 @@ Label ID of the application.
 readonly moduleName: string
 ```
 
-Module name of the application. The value is **moduleName** configured for the entry module. If the entry module
-does not exist, the value is **moduleName** configured for the feature module.
+Module name of the application. The value is **moduleName** configured for the entry module. If the entry module does not exist, the value is **moduleName** configured for the feature module.
 
 **Type:** string
 

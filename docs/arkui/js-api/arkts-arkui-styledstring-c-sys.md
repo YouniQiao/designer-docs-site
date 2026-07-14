@@ -12,8 +12,7 @@ StyledString
 static marshalling(styledString: StyledString, callback: StyledStringMarshallCallback): ArrayBuffer
 ```
 
-Marshals a styled string by defining a callback to marshal
-[StyledStringMarshallingValue](arkts-arkui-styledstringmarshallingvalue-t-sys.md).
+Marshals a styled string by defining a callback to marshal [StyledStringMarshallingValue](arkts-arkui-styledstringmarshallingvalue-t-sys.md).
 
 **Since:** 19
 
@@ -70,8 +69,7 @@ Marshals a styled string.
 static unmarshalling(buffer: ArrayBuffer, callback: StyledStringUnmarshallCallback): Promise<StyledString>
 ```
 
-Unmarshals a styled string by defining a callback to
-[StyledStringMarshallingValue](arkts-arkui-styledstringmarshallingvalue-t-sys.md).
+Unmarshals a styled string by defining a callback to [StyledStringMarshallingValue](arkts-arkui-styledstringmarshallingvalue-t-sys.md).
 
 **Since:** 19
 

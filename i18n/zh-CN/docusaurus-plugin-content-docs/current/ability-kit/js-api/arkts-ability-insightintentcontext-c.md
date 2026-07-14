@@ -1,8 +1,6 @@
 # InsightIntentContext
 
-本模块提供意图执行上下文，是[意图执行基类](arkts-ability-insightintentexecutor-c.md)和
-[@InsightIntentEntry的意图执行基类](arkts-ability-insightintententryexecutor-c.md)的属性，为意图执行提
-供基础能力，例如启动本应用内的[UIAbility组件](arkts-app-ability-uiability.md)。
+本模块提供意图执行上下文，是[意图执行基类](arkts-ability-insightintentexecutor-c.md)和 [@InsightIntentEntry的意图执行基类](arkts-ability-insightintententryexecutor-c.md)的属性，为意图执行提 供基础能力，例如启动本应用内的[UIAbility组件](arkts-app-ability-uiability.md)。
 
 **起始版本：** 11
 
@@ -58,9 +56,8 @@ export default class InsightIntentExecutorUI extends InsightIntentExecutor {
     try {
       this.context.setReturnModeForUIAbilityForeground(insightIntent.ReturnMode.FUNCTION);
     } catch (error) {
-      let code = (error as BusinessError).code;
-      let msg = (error as BusinessError).message;
-      console.error(`testTag setReturnModeForUIAbilityForeground fail, error code: ${code}, err msg: ${msg}.`);
+      const err: BusinessError = error as BusinessError;
+      console.error(`Failed to setReturnModeForUIAbilityForeground. Code: ${err.code}, message: ${err.message}`);
     }
 
     let localStorageData: Record<string, number> = {
@@ -141,9 +138,8 @@ export default class InsightIntentExecutorUI extends InsightIntentExecutor {
       storage.setOrCreate('session', pageLoader);
       pageLoader.loadContent('pages/UIExtensionPage', storage);
     } catch (err) {
-      let code = (err as BusinessError).code;
-      let msg = (err as BusinessError).message;
-      console.info(`testTag loadContent error code: ${code}, error msg: ${msg}.`);
+      const err: BusinessError = err as BusinessError;
+      console.error(`Failed to loadContent. Code: ${err.code}, message: ${err.message}`);
     }
     return result;
   }
@@ -219,7 +215,8 @@ export default class IntentExecutorImpl extends InsightIntentExecutor {
         }
       })
     } catch (error) {
-      hilog.error(0x0000, 'testTag', 'Start ability error caught %{public}s', JSON.stringify(error));
+      const err: BusinessError = error as BusinessError;
+      console.error(`Failed to start ability. Code: ${err.code}, message: ${err.message}`);
     }
 
     let result: insightIntent.ExecuteResult = {
@@ -302,7 +299,8 @@ export default class IntentExecutorImpl extends InsightIntentExecutor {
       await this.context.startAbility(want);
       hilog.info(0x0000, 'testTag', '%{public}s', 'Start ability finished');
     } catch (error) {
-      hilog.error(0x0000, 'testTag', 'Start ability error caught %{public}s', JSON.stringify(error));
+      const err: BusinessError = error as BusinessError;
+      console.error(`Failed to start ability. Code: ${err.code}, message: ${err.message}`);
     }
 
     let result: insightIntent.ExecuteResult = {
@@ -323,11 +321,7 @@ export default class IntentExecutorImpl extends InsightIntentExecutor {
 instanceId: number
 ```
 
-意图实例唯一ID。用于通过
-[insightIntentProvider.sendExecuteResult接口]
-{@link @ohos.app.ability.insightIntentProvider:insightIntentProvider.sendExecuteResult} 和
-[insightIntentProvider.sendIntentResult接口]
-{@link @ohos.app.ability.insightIntentProvider:insightIntentProvider.sendIntentResult}返回指定意图的执行结果。
+意图实例唯一ID。用于通过 [insightIntentProvider.sendExecuteResult接口] {@link @ohos.app.ability.insightIntentProvider:insightIntentProvider.sendExecuteResult} 和 [insightIntentProvider.sendIntentResult接口] {@link @ohos.app.ability.insightIntentProvider:insightIntentProvider.sendIntentResult}返回指定意图的执行结果。
 
 **类型：** number
 

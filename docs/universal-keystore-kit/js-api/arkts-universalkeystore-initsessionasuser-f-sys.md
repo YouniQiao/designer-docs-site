@@ -12,8 +12,7 @@ import { huks } from '@kit.UniversalKeystoreKit';
 function initSessionAsUser(userId: number, keyAlias: string, huksOptions: HuksOptions): Promise<HuksSessionHandle>
 ```
 
-Initialize a key session for the specified user. This API uses a promise to return the result.
-**huks.initSessionAsUser**, **huks.updateSession**, and **huks.finishSession** must be used together.
+Initialize a key session for the specified user. This API uses a promise to return the result. **huks.initSessionAsUser**, **huks.updateSession**, and **huks.finishSession** must be used together.
 
 **Since:** 12
 

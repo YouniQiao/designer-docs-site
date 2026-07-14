@@ -1,8 +1,6 @@
 # Divider属性/事件
 
-除支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持以下属性：
-
-支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)。
+除支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持以下属性： 支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)。
 
 **继承/实现关系：** DividerAttribute extends [CommonMethod<DividerAttribute>](CommonMethod<DividerAttribute>)
 
@@ -60,18 +58,7 @@ lineCap(value: LineCapStyle)
 strokeWidth(value: number | string)
 ```
 
-设置分割线的宽度，支持[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)动态设置属性方法。
-
-> **说明：**
->
-> - 分割线的宽度不支持百分比设置。
->
-> - 使用水平分割线时，strokeWidth控制高度，优先级低于通用属性[height](arkts-arkui-commonmethod-c.md#height-1)；使用垂直分割线时，strokeWidth控制宽度，优
-> 先级低于通用属性[width](arkts-arkui-commonmethod-c.md#width-1)。
->
-> - 超过通用属性设置大小时，按照通用属性进行裁切。
->
-> - 如果设备硬件存在1像素取整后分割线不显示问题，建议使用2像素。
+设置分割线的宽度，支持[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)动态设置属性方法。 > **说明：** > > - 分割线的宽度不支持百分比设置。 > > - 使用水平分割线时，strokeWidth控制高度，优先级低于通用属性[height](arkts-arkui-commonmethod-c.md#height-1)；使用垂直分割线时，strokeWidth控制宽度，优 > 先级低于通用属性[width](arkts-arkui-commonmethod-c.md#width-1)。 > > - 超过通用属性设置大小时，按照通用属性进行裁切。 > > - 如果设备硬件存在1像素取整后分割线不显示问题，建议使用2像素。
 
 **起始版本：** 7
 

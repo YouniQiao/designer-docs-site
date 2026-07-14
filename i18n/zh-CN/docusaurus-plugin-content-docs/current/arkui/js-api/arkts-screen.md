@@ -41,8 +41,8 @@
 | [setScreenPrivacyMaskImage](arkts-arkui-setscreenprivacymaskimage-f-sys.md#setscreenprivacymaskimage-1) | 设置屏幕的隐私蒙版图片，使用Promise异步回调。 |
 | [setScreenRotationLocked](arkts-arkui-setscreenrotationlocked-f-sys.md#setscreenrotationlocked-1) | 设置自动转屏开关是否锁定，使用callback异步回调。 |
 | [setScreenRotationLocked](arkts-arkui-setscreenrotationlocked-f-sys.md#setscreenrotationlocked-2) | 设置自动转屏开关是否锁定，使用Promise异步回调。 |
-| [setVirtualScreenSurface](arkts-arkui-setvirtualscreensurface-f-sys.md#setvirtualscreensurface-1) | 设置虚拟屏幕的surface，表示当前虚拟屏用于显示对应surface中的内容，使用callback异步回调。 |
-| [setVirtualScreenSurface](arkts-arkui-setvirtualscreensurface-f-sys.md#setvirtualscreensurface-2) | 设置虚拟屏幕的surface，表示当前虚拟屏用于显示对应surface中的内容，使用Promise异步回调。 |
+| [setVirtualScreenSurface](arkts-arkui-setvirtualscreensurface-f-sys.md#setvirtualscreensurface-1) | 设置虚拟屏幕的surface，使用callback异步回调。 |
+| [setVirtualScreenSurface](arkts-arkui-setvirtualscreensurface-f-sys.md#setvirtualscreensurface-2) | 设置虚拟屏幕的surface，使用Promise异步回调。 |
 | [stopExpand](arkts-arkui-stopexpand-f-sys.md#stopexpand-1) | 停止屏幕的扩展模式，使用callback异步回调。 |
 | [stopExpand](arkts-arkui-stopexpand-f-sys.md#stopexpand-2) | 停止屏幕的扩展模式，使用Promise异步回调。 |
 | [stopMirror](arkts-arkui-stopmirror-f-sys.md#stopmirror-1) | 停止屏幕的镜像模式，使用callback异步回调。 |
@@ -58,7 +58,7 @@
 | [MultiScreenPositionOptions](arkts-arkui-multiscreenpositionoptions-i-sys.md) | 屏幕位置信息。 |
 | [OrientationOptions](arkts-arkui-orientationoptions-i-sys.md) | 设置旋转行为的参数 |
 | [Rect](arkts-arkui-rect-i-sys.md) | 矩形信息。 |
-| [Screen](arkts-arkui-screen-i-sys.md) | [物理屏](../../../../displaymanager/display-terminology.md#物理屏)屏幕实例。下列API示例中都需先使用[getAllScreens()](arkts-arkui-getallscreens-f-sys.md#getallscreens-1)、[createVirtualScreen()](arkts-arkui-createvirtualscreen-f-sys.md#createvirtualscreen-1)中的任一方法获取到Screen实例，再通过此实例调用对应方法。 |
+| [Screen](arkts-arkui-screen-i-sys.md) | [物理屏](../../../../displaymanager/display-terminology.md#物理屏)屏幕实例。 下列API示例中都需先使用[getAllScreens()](arkts-arkui-getallscreens-f-sys.md#getallscreens-1)、 [createVirtualScreen()](arkts-arkui-createvirtualscreen-f-sys.md#createvirtualscreen-1) 中的任一方法获取到Screen实例，再通过此实例调用对应方法。 |
 | [ScreenModeInfo](arkts-arkui-screenmodeinfo-i-sys.md) | 屏幕显示模式信息。 |
 | [VirtualScreenOption](arkts-arkui-virtualscreenoption-i-sys.md) | 创建虚拟屏幕的参数。 |
 <!--DelEnd-->

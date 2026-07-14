@@ -12,8 +12,7 @@ import { metadataBinding } from '@kit.MultimodalAwarenessKit';
 function notifyMetadataBindingEvent(bundleName: string): Promise<string>
 ```
 
-Transfers metadata to the application or service that calls the encoding API. This API uses a promise to return the
-result.
+Transfers metadata to the application or service that calls the encoding API. This API uses a promise to return the result.
 
 **Since:** 18
 

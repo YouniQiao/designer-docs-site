@@ -14,11 +14,7 @@ Inherits from [BadgeParam](arkts-arkui-badgeparam-i.md) and has all attributes o
 value: ResourceStr
 ```
 
-Text string of the badge content.
-
-**NOTE**
-
-The ResourceStr type is supported since API version 20.
+Text string of the badge content. **NOTE** The ResourceStr type is supported since API version 20.
 
 **Type:** ResourceStr
 

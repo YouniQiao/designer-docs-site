@@ -62,11 +62,7 @@ signerCerts?: Array<X509Cert>
 trustCerts: Array<X509Cert>
 ```
 
-信任证书。
-
-> **说明：**
->
-> 需要配置所有签名者的信任证书。
+信任证书。 > **说明：** > > 需要配置所有签名者的信任证书。
 
 **类型：** Array<X509Cert>
 

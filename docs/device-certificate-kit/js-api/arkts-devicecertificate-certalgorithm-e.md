@@ -24,8 +24,7 @@ International cryptographic algorithm, such as RSA and NIST ECC.
 SM = 2
 ```
 
-Indicates the commercial cryptographic algorithm, such as SM2 and SM4.
-Devices outside China do not support certificates using this algorithm.
+Indicates the commercial cryptographic algorithm, such as SM2 and SM4. Devices outside China do not support certificates using this algorithm.
 
 **Since:** 20
 

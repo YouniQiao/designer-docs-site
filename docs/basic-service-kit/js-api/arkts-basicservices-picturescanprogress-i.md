@@ -18,8 +18,7 @@ import { scan } from '@kit.BasicServicesKit';
 isFinal: boolean
 ```
 
-Whether the picture is the last one to be scanned. The value **true** indicates that the picture is the last
-one to be scanned, and **false** indicates that the picture is not the last one.
+Whether the picture is the last one to be scanned. The value **true** indicates that the picture is the last one to be scanned, and **false** indicates that the picture is not the last one.
 
 **Type:** boolean
 

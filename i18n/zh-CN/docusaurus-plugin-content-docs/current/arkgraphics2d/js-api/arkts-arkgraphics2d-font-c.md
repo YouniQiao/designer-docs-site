@@ -1,12 +1,6 @@
 # Font
 
-描述字型绘制时所使用的属性，如大小、字体等。
-
-> **说明：**
->
-> - 本模块使用屏幕物理像素单位px。
->
-> - 本模块为单线程模型策略，需要调用方自行管理线程安全和上下文状态的切换。
+描述字型绘制时所使用的属性，如大小、字体等。 > **说明：** > > - 本模块使用屏幕物理像素单位px。 > > - 本模块为单线程模型策略，需要调用方自行管理线程安全和上下文状态的切换。
 
 **起始版本：** 11
 
@@ -592,12 +586,7 @@ measureSingleCharacterWithFeatures(text: string, features: Array<FontFeature>): 
 measureText(text: string, encoding: TextEncoding): number
 ```
 
-测量文本的宽度。
-
-> **说明：**
->
-> 此接口用于测量原始字符串的文本宽度，若想测量排版后的文本宽度，建议使用
-> [measure.measureText](../../../../reference/apis-arkui/arkts-apis-uicontext-measureutils.md#measuretext12)替代。
+测量文本的宽度。 > **说明：** > > 此接口用于测量原始字符串的文本宽度，若想测量排版后的文本宽度，建议使用 > [measure.measureText](../../../../reference/apis-arkui/arkts-apis-uicontext-measureutils.md#measuretext12)替代。
 
 **起始版本：** 11
 

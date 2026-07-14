@@ -270,9 +270,7 @@ Elliptic curve field type in the ECC algorithm. Currently, only the **Fp** field
 ECC_FIELD_SIZE_NUM = 212
 ```
 
-Size of the field in the ECC algorithm, in bits.
-
-Note: The size of the **Fp** field is the length of the prime **p**, in bits.
+Size of the field in the ECC algorithm, in bits. Note: The size of the **Fp** field is the length of the prime **p**, in bits.
 
 **Since:** 10
 

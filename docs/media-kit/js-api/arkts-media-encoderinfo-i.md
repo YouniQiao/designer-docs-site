@@ -32,9 +32,7 @@ Bit rate range of the encoder, with the minimum and maximum bit rates specified,
 channels?: Range
 ```
 
-Number of audio channels for the audio capturer, with the minimum and maximum numbers of audio channels
-specified.
-This parameter is available only for audio encoders.
+Number of audio channels for the audio capturer, with the minimum and maximum numbers of audio channels specified. This parameter is available only for audio encoders.
 
 **Type:** Range
 
@@ -48,8 +46,7 @@ This parameter is available only for audio encoders.
 frameRate?: Range
 ```
 
-Video frame rate range, with the minimum and maximum frame rates specified, in fps.
-This parameter is available only for video encoders.
+Video frame rate range, with the minimum and maximum frame rates specified, in fps. This parameter is available only for video encoders.
 
 **Type:** Range
 
@@ -63,8 +60,7 @@ This parameter is available only for video encoders.
 height?: Range
 ```
 
-Video frame height range, with the minimum and maximum heights specified, in px.
-This parameter is available only for video encoders.
+Video frame height range, with the minimum and maximum heights specified, in px. This parameter is available only for video encoders.
 
 **Type:** Range
 
@@ -92,8 +88,7 @@ MIME type of the encoder.
 sampleRate?: Array<number>
 ```
 
-Audio sampling rate, including all available audio sampling rates, in Hz. The value depends on the encoder type,
-and this parameter is available only for audio encoders.
+Audio sampling rate, including all available audio sampling rates, in Hz. The value depends on the encoder type, and this parameter is available only for audio encoders.
 
 **Type:** Array<number>
 
@@ -121,8 +116,7 @@ Encoder type. The value **audio** means an audio encoder, and **video** means a 
 width?: Range
 ```
 
-Video frame width range, with the minimum and maximum widths specified, in px.
-This parameter is available only for video encoders.
+Video frame width range, with the minimum and maximum widths specified, in px. This parameter is available only for video encoders.
 
 **Type:** Range
 

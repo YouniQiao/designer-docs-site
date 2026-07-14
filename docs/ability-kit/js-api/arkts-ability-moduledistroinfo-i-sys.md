@@ -14,8 +14,7 @@ ModuleDistroInfo: the bundle info summary class.
 readonly deliveryWithInstall: boolean
 ```
 
-Whether it should be installed together with the application. **true** if it should be installed together with the
-application, **false** otherwise.
+Whether it should be installed together with the application. **true** if it should be installed together with the application, **false** otherwise.
 
 **Type:** boolean
 
@@ -31,8 +30,7 @@ application, **false** otherwise.
 readonly installationFree: boolean
 ```
 
-Whether the HAP file supports the installation-free feature. **true** if the HAP file supports the installation-
-free feature and meets installation-free constraints, **false** otherwise.
+Whether the HAP file supports the installation-free feature. **true** if the HAP file supports the installation- free feature and meets installation-free constraints, **false** otherwise.
 
 **Type:** boolean
 

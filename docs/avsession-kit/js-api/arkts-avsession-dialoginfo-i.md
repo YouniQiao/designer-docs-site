@@ -82,10 +82,7 @@ Type of the dialog.
 qrCodes?: QrCodeInfo[]
 ```
 
-QR code of the dialog.
-Once the QR code information is set,
-this pop-up will be recognized as a QR code pop-up and will display the QR code information with priority.
-A maximum of two can be set.
+QR code of the dialog. Once the QR code information is set, this pop-up will be recognized as a QR code pop-up and will display the QR code information with priority. A maximum of two can be set.
 
 **Type:** QrCodeInfo[]
 

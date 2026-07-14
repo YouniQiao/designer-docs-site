@@ -2,7 +2,6 @@
 
 Provides an interface to set transition style when a page enters.
 
-
 ## PageTransitionEnter
 
 ```TypeScript
@@ -29,8 +28,7 @@ Sets the page entrance animation.
 PageTransitionEnter(event: PageTransitionCallback)
 ```
 
-Invoked on a per-frame basis until the entrance animation is complete, with the **progress** parameter changing
-from 0 to 1.
+Invoked on a per-frame basis until the entrance animation is complete, with the **progress** parameter changing from 0 to 1.
 
 **Since:** 7
 

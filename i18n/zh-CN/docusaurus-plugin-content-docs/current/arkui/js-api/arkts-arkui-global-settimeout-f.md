@@ -6,9 +6,7 @@
 export declare function setTimeout(handler: Function | string, delay?: number, ...arguments: any[]): number
 ```
 
-Sets a timer for the system to call a function after the timer goes off.
-The timer is automatically deleted after callback execution, or you may manually delete it via the **clearTimeout()**
-API.
+Sets a timer for the system to call a function after the timer goes off. The timer is automatically deleted after callback execution, or you may manually delete it via the **clearTimeout()** API.
 
 **起始版本：** 7
 

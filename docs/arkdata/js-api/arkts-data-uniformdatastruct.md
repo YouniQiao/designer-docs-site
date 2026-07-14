@@ -1,10 +1,6 @@
 # @ohos.data.uniformDataStruct
 
-As a part of the Unified Data Management Framework (UDMF), the **uniformDataStruct** module provides data structs
-corresponding to certain
-[UniformDataTypes](arkts-arkdata-uniformdatatype-e.md) for service
-scenarios of many-to-many data sharing across applications. It helps simplify data interaction and reduce the data
-type adaptation workload.
+As a part of the Unified Data Management Framework (UDMF), the **uniformDataStruct** module provides data structs corresponding to certain [UniformDataTypes](arkts-arkdata-uniformdatatype-e.md) for service scenarios of many-to-many data sharing across applications. It helps simplify data interaction and reduce the data type adaptation workload.
 
 **Since:** 12
 

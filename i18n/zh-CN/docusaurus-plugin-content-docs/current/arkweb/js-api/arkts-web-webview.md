@@ -24,22 +24,22 @@ This module provides the capability to manage web modules.
 | [GeolocationPermissions](arkts-arkweb-geolocationpermissions-c.md) | Provides a method for managing web geographic location permissions. |
 | [JsMessageExt](arkts-arkweb-jsmessageext-c.md) | 该消息用于指示JavaScript代码执行结果的状态。 |
 | [MediaSourceInfo](arkts-arkweb-mediasourceinfo-c.md) | 表示媒体源的信息。 |
-| [NativeMediaPlayerSurfaceInfo](arkts-arkweb-nativemediaplayersurfaceinfo-c.md) | [应用接管网页媒体播放功能](../../../../reference/apis-arkweb/arkts-basic-components-web-attributes.md#enablenativemediaplayer12)中用于同层渲染的 surface 信息。 |
+| [NativeMediaPlayerSurfaceInfo](arkts-arkweb-nativemediaplayersurfaceinfo-c.md) | [应用接管网页媒体播放功能](../../../../reference/apis-arkweb/arkts-basic-components-web-attributes.md#enablenativemediaplayer12)中 用于同层渲染的 surface 信息。 |
 | [PdfData](arkts-arkweb-pdfdata-c.md) | Defines the callback of createPdf, related to {@link createPDF} method. |
 | [PrefetchOptions](arkts-arkweb-prefetchoptions-c.md) | Defines the PrefetchOptions class. |
 | [ProxyConfig](arkts-arkweb-proxyconfig-c.md) | The ProxyConfig used by applyProxyOverride. |
 | [ProxyController](arkts-arkweb-proxycontroller-c.md) | This class is used for set proxy for ArkWeb. |
 | [ProxyRule](arkts-arkweb-proxyrule-c.md) | The ProxyRule used by insertProxyRule. |
-| [UserAgentBrandVersion](arkts-arkweb-useragentbrandversion-c.md) | Class that holds brand name, major version and full version. Brand name and major version used to generatedUser-Agent client hints sec-cu-ua. Brand name and full version used to generated user-agent client hintsec-ch-ua-full-version-list. |
+| [UserAgentBrandVersion](arkts-arkweb-useragentbrandversion-c.md) | Class that holds brand name, major version and full version. Brand name and major version used to generated User-Agent client hints sec-cu-ua. Brand name and full version used to generated user-agent client hint sec-ch-ua-full-version-list. |
 | [UserAgentMetadata](arkts-arkweb-useragentmetadata-c.md) | Holds User-Agent metadata information and uses to generate User-Agent client hints. |
 | [WebCookieManager](arkts-arkweb-webcookiemanager-c.md) | 提供了用于管理网页Cookie的方法。 |
 | [WebDataBase](arkts-arkweb-webdatabase-c.md) | Web组件数据库管理对象。 |
 | [WebDownloadDelegate](arkts-arkweb-webdownloaddelegate-c.md) | 下载任务的状态会通过该类的回调接口通知给用户。 |
-| [WebDownloadItem](arkts-arkweb-webdownloaditem-c.md) | 表示下载任务，您可以使用此对象来操作相应的下载任务。当前WebDownloadItem支持的下载文件名最长长度为255字节。 |
+| [WebDownloadItem](arkts-arkweb-webdownloaditem-c.md) | 表示下载任务，您可以使用此对象来操作相应的下载任务。 当前WebDownloadItem支持的下载文件名最长长度为255字节。 |
 | [WebDownloadManager](arkts-arkweb-webdownloadmanager-c.md) | 可以通过该类提供的接口来恢复失败的下载任务。 |
 | [WebHttpBodyStream](arkts-arkweb-webhttpbodystream-c.md) | The http body stream of the request. |
 | [WebMessageExt](arkts-arkweb-webmessageext-c.md) | The message received or sent from web message port. |
-| [WebResourceHandler](arkts-arkweb-webresourcehandler-c.md) | Used to intercept url requests. Response headers and body can be sent throughWebResourceHandler. |
+| [WebResourceHandler](arkts-arkweb-webresourcehandler-c.md) | Used to intercept url requests. Response headers and body can be sent through WebResourceHandler. |
 | [WebSchemeHandler](arkts-arkweb-webschemehandler-c.md) | This class is used to intercept requests for a specified scheme. |
 | [WebSchemeHandlerRequest](arkts-arkweb-webschemehandlerrequest-c.md) | 通过WebSchemeHandler拦截到的请求。 |
 | [WebSchemeHandlerResponse](arkts-arkweb-webschemehandlerresponse-c.md) | 请求的响应，可以为被拦截的请求创建一个Response并填充自定义的内容返回给Web组件。 |
@@ -51,16 +51,16 @@ This module provides the capability to manage web modules.
 | 名称 | 说明 |
 | --- | --- |
 | [BackForwardList](arkts-arkweb-backforwardlist-i.md) | Provides back and forward history list information method. related to {@link HistoryItem}. |
-| [BlanklessFrameInterpolationInfo](arkts-arkweb-blanklessframeinterpolationinfo-i.md) | 1.定义插帧状态信息2.ArkWeb使能白屏插帧优化的场景设备行为差异:仅支持手机平台，其他平台返回801 |
+| [BlanklessFrameInterpolationInfo](arkts-arkweb-blanklessframeinterpolationinfo-i.md) | 1.定义插帧状态信息 2.ArkWeb使能白屏插帧优化的场景 设备行为差异:仅支持手机平台，其他平台返回801 |
 | [BlanklessInfo](arkts-arkweb-blanklessinfo-i.md) | 页面首屏加载预测信息，主要包括首屏相似度预测值，首屏加载耗时预测值，预测错误码，应用需根据此信息来决策是否启用无白屏加载插帧方案。 |
-| [BlanklessLoadingParam](arkts-arkweb-blanklessloadingparam-i.md) | 1.插帧加载参数设备行为差异:仅支持手机平台，其他平台返回801 |
+| [BlanklessLoadingParam](arkts-arkweb-blanklessloadingparam-i.md) | 1.插帧加载参数 设备行为差异:仅支持手机平台，其他平台返回801 |
 | [CacheOptions](arkts-arkweb-cacheoptions-i.md) | Web组件预编译JavaScript生成字节码缓存的配置对象，用于控制字节码缓存更新。 |
 | [HistoryItem](arkts-arkweb-historyitem-i.md) | Provides information for history item in BackForwardList. |
-| [HitTestValue](arkts-arkweb-hittestvalue-i.md) | 提供点击区域的元素信息。示例代码参考[getLastHitTest](arkts-arkweb-webviewcontroller-c.md#getlasthittest-1). |
-| [MediaInfo](arkts-arkweb-mediainfo-i.md) | [CreateNativeMediaPlayerCallback](arkts-arkweb-createnativemediaplayercallback-t.md)回调函数的一个参数。包含了网页中媒体的信息。应用可以根据这些信息来创建接管网页媒体播放的播放器。 |
-| [NativeMediaPlayerBridge](arkts-arkweb-nativemediaplayerbridge-i.md) | [CreateNativeMediaPlayerCallback](arkts-arkweb-createnativemediaplayercallback-t.md)回调函数的返回值类型。接管网页媒体的播放器和ArkWeb内核之间的一个接口类。ArkWeb内核通过该接口类的实例对象来控制应用创建的用来接管网页媒体的播放器。 |
-| [NativeMediaPlayerHandler](arkts-arkweb-nativemediaplayerhandler-i.md) | [CreateNativeMediaPlayerCallback](arkts-arkweb-createnativemediaplayercallback-t.md)回调函数的参数。应用通过该对象，将播放器的状态通知给 ArkWeb 内核。 |
-| [OfflineResourceMap](arkts-arkweb-offlineresourcemap-i.md) | 本地离线资源配置对象，用于配置将被[injectOfflineResources](arkts-arkweb-webviewcontroller-c.md#injectofflineresources-1)接口注入到内存缓存的本地离线资源的相关信息，内核会根据此信息生成资源缓存，并据此控制缓存的有效期。 |
+| [HitTestValue](arkts-arkweb-hittestvalue-i.md) | 提供点击区域的元素信息。示例代码参考 [getLastHitTest](arkts-arkweb-webviewcontroller-c.md#getlasthittest-1). |
+| [MediaInfo](arkts-arkweb-mediainfo-i.md) | [CreateNativeMediaPlayerCallback](arkts-arkweb-createnativemediaplayercallback-t.md)回调函数的一个参数。包含了网页中媒 体的信息。应用可以根据这些信息来创建接管网页媒体播放的播放器。 |
+| [NativeMediaPlayerBridge](arkts-arkweb-nativemediaplayerbridge-i.md) | [CreateNativeMediaPlayerCallback](arkts-arkweb-createnativemediaplayercallback-t.md)回调函数的返回值类型。接管网页媒体 的播放器和ArkWeb内核之间的一个接口类。 ArkWeb内核通过该接口类的实例对象来控制应用创建的用来接管网页媒体的播放器。 |
+| [NativeMediaPlayerHandler](arkts-arkweb-nativemediaplayerhandler-i.md) | [CreateNativeMediaPlayerCallback](arkts-arkweb-createnativemediaplayercallback-t.md)回调函数的参数。应用通过该对象，将 播放器的状态通知给 ArkWeb 内核。 |
+| [OfflineResourceMap](arkts-arkweb-offlineresourcemap-i.md) | 本地离线资源配置对象，用于配置将被[injectOfflineResources](arkts-arkweb-webviewcontroller-c.md#injectofflineresources-1) 接口注入到内存缓存的本地离线资源的相关信息，内核会根据此信息生成资源缓存，并据此控制缓存的有效期。 |
 | [PdfConfiguration](arkts-arkweb-pdfconfiguration-i.md) | Defines the configuration of creating pdf, related to {@Link createPdf} method. |
 | [RectEvent](arkts-arkweb-rectevent-i.md) | 矩形定义。 |
 | [RequestInfo](arkts-arkweb-requestinfo-i.md) | Web组件发送的资源请求信息。 |
@@ -70,7 +70,7 @@ This module provides the capability to manage web modules.
 | [SnapshotResult](arkts-arkweb-snapshotresult-i.md) | 全量绘制回调结果。 |
 | [WebCustomScheme](arkts-arkweb-webcustomscheme-i.md) | Defines the configuration of web custom scheme, related to {@link customizeSchemes} method. |
 | [WebHeader](arkts-arkweb-webheader-i.md) | Web组件返回的请求/响应头对象。 |
-| [WebHttpCookie](arkts-arkweb-webhttpcookie-i.md) | Defines the Web's HTTPCookie.&lt;p&gt;<strong>API Note</strong>:<br>The maximum length allowed for each attribute value in a cookie string is 1024.&lt;/p&gt; |
+| [WebHttpCookie](arkts-arkweb-webhttpcookie-i.md) | Defines the Web's HTTPCookie. &lt;p&gt;<strong>API Note</strong>:<br> The maximum length allowed for each attribute value in a cookie string is 1024. &lt;/p&gt; |
 | [WebMessagePort](arkts-arkweb-webmessageport-i.md) | Define html web message port. |
 | [WebStorageOrigin](arkts-arkweb-webstorageorigin-i.md) | 提供Web SQL数据库的使用信息。 |
 
@@ -78,8 +78,8 @@ This module provides the capability to manage web modules.
 
 | 名称 | 说明 |
 | --- | --- |
-| [ArkWebEngineVersion](arkts-arkweb-arkwebengineversion-e.md) | ArkWeb内核版本，请参考[M114内核在OpenHarmony 6.0系统上的适配指导](https://gitcode.com/openharmony-tpc/chromium_src/blob/master/web/ReleaseNote/CompatibleWithLegacyWebEngine_6.0.md)，[M132内核在OpenHarmony 7.0系统上的适配指导](https://gitcode.com/openharmony-tpc/chromium_src/blob/master/web/ReleaseNote/CompatibleWithLegacyWebEngine_7.0.md)。 |
-| [BlanklessFrameInterpolationState](arkts-arkweb-blanklessframeinterpolationstate-e.md) | 定义当前插帧状态设备行为差异:仅支持手机平台，其他平台返回801 |
+| [ArkWebEngineVersion](arkts-arkweb-arkwebengineversion-e.md) | ArkWeb内核版本，请参考 [M114内核在OpenHarmony 6.0系统上的适配指导](https://gitcode.com/openharmony-tpc/chromium_src/blob/master/web/ReleaseNote/CompatibleWithLegacyWebEngine_6.0.md) ， [M132内核在OpenHarmony 7.0系统上的适配指导](https://gitcode.com/openharmony-tpc/chromium_src/blob/master/web/ReleaseNote/CompatibleWithLegacyWebEngine_7.0.md) 。 |
+| [BlanklessFrameInterpolationState](arkts-arkweb-blanklessframeinterpolationstate-e.md) | 定义当前插帧状态 设备行为差异:仅支持手机平台，其他平台返回801 |
 | [ControllerAttachState](arkts-arkweb-controllerattachstate-e.md) | 表示controller的绑定状态枚举 |
 | [JsMessageType](arkts-arkweb-jsmessagetype-e.md) | Enum type supplied to {@link runJavaScriptExt} for indicating the result of JavaScript code execution. |
 | [MediaError](arkts-arkweb-mediaerror-e.md) | 播放器的错误类型。 |
@@ -87,7 +87,7 @@ This module provides the capability to manage web modules.
 | [MediaType](arkts-arkweb-mediatype-e.md) | 表示媒体类型。 |
 | [NetworkState](arkts-arkweb-networkstate-e.md) | 播放器的网络状态。 |
 | [OfflineResourceType](arkts-arkweb-offlineresourcetype-e.md) | [OfflineResourceMap](arkts-arkweb-offlineresourcemap-i.md)对象对应的本地离线资源的接口类型。 |
-| [PlaybackStatus](arkts-arkweb-playbackstatus-e.md) | [handleStatusChanged](arkts-arkweb-nativemediaplayerhandler-i.md#handlestatuschanged-1) 接口参数， 用于表示播放器的播放状态。 |
+| [PlaybackStatus](arkts-arkweb-playbackstatus-e.md) | [handleStatusChanged](arkts-arkweb-nativemediaplayerhandler-i.md#handlestatuschanged-1) 接口参数， 用于表示播放器的播 放状态。 |
 | [Preload](arkts-arkweb-preload-e.md) | 播放器预加载媒体数据。 |
 | [PressureLevel](arkts-arkweb-pressurelevel-e.md) | 内存压力等级。在应用主动清理Web组件占用的缓存时，Web内核会根据内存压力等级，进行缓存释放。 |
 | [ProxySchemeFilter](arkts-arkweb-proxyschemefilter-e.md) | Enum type supplied to {@link insertProxyRule} for indicating the scheme filter for proxy. |
@@ -115,7 +115,7 @@ This module provides the capability to manage web modules.
 
 | 名称 | 说明 |
 | --- | --- |
-| [CreateNativeMediaPlayerCallback](arkts-arkweb-createnativemediaplayercallback-t.md) | [onCreateNativeMediaPlayer](arkts-arkweb-webviewcontroller-c.md#oncreatenativemediaplayer-1)方法的参数。一个回调函数，创建一个播放器，用于接管网页中的媒体播放。 |
+| [CreateNativeMediaPlayerCallback](arkts-arkweb-createnativemediaplayercallback-t.md) | [onCreateNativeMediaPlayer](arkts-arkweb-webviewcontroller-c.md#oncreatenativemediaplayer-1) 方法的参数。一个回调函数，创建一个播放器，用于接管网页中的媒体播放。 |
 | [OnProxyConfigChangeCallback](arkts-arkweb-onproxyconfigchangecallback-t.md) | The callback for proxy changed. |
 | [WebMessage](arkts-arkweb-webmessage-t.md) | 用于描述{@link onMessageEventExt}所支持的数据类型。 |
 

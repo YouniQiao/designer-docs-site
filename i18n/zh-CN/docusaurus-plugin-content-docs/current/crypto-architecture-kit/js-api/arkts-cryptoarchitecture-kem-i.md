@@ -73,11 +73,7 @@ async function kemDecapsulate() {
 decapsulateSync(priKey: PriKey, wrappedKey: Uint8Array): Uint8Array
 ```
 
-密钥解封装操作。使用接收方的私钥，由接收方执行，从密文中解封装出共享密钥。使用同步回调。
-
-<br><br>**说明：**
-<br>建议优先使用异步API{@link decapsulate}。同步API可能因系统繁忙、高负载等原因耗时较长而阻塞主线程。
-因此建议在子线程中调用同步API，以避免阻塞主线程。
+密钥解封装操作。使用接收方的私钥，由接收方执行，从密文中解封装出共享密钥。使用同步回调。 <br><br>**说明：** <br>建议优先使用异步API{@link decapsulate}。同步API可能因系统繁忙、高负载等原因耗时较长而阻塞主线程。 因此建议在子线程中调用同步API，以避免阻塞主线程。
 
 **起始版本：** 26.0.0
 
@@ -199,11 +195,7 @@ async function kemEncapsulate() {
 encapsulateSync(pubKey: PubKey, ikme: Uint8Array | null): KemEncapResult
 ```
 
-密钥封装操作。使用接收方的公钥，由发送方执行，生成并封装一个共享密钥。使用同步回调。
-
-<br><br>**说明：**
-<br>建议优先使用异步API{@link encapsulate}。同步API可能因系统繁忙、高负载等原因耗时较长而阻塞主线程。
-因此建议在子线程中调用同步API，以避免阻塞主线程。
+密钥封装操作。使用接收方的公钥，由发送方执行，生成并封装一个共享密钥。使用同步回调。 <br><br>**说明：** <br>建议优先使用异步API{@link encapsulate}。同步API可能因系统繁忙、高负载等原因耗时较长而阻塞主线程。 因此建议在子线程中调用同步API，以避免阻塞主线程。
 
 **起始版本：** 26.0.0
 

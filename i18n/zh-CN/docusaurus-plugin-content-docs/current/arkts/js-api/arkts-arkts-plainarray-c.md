@@ -1,7 +1,6 @@
 # PlainArray
 
-PlainArray可用于存储具有关联关系的key-value键值对集合，其中key值唯一且类型为number，每个key对应一个value。
-PlainArray依据泛型定义，采用轻量级结构。
+PlainArray可用于存储具有关联关系的key-value键值对集合，其中key值唯一且类型为number，每个key对应一个value。 PlainArray依据泛型定义，采用轻量级结构。
 
 **起始版本：** 8
 
@@ -237,11 +236,11 @@ plainArray.forEach((value: string, index: number) => {
 ```TypeScript
 // 不建议在forEach中使用add、remove、removeAt方法，因其可能导致迭代过程中的状态异常，建议使用for循环来进行安全的插入与删除操作。
 let plainArray = new PlainArray<string>();
-for(let i = 0; i < 10; i++) {
-  plainArray.add(i,"123");
+for (let i = 0; i < 10; i++) {
+  plainArray.add(i, "123");
 }
 
-for(let i = 0; i < 10; i++) {
+for (let i = 0; i < 10; i++) {
   plainArray.remove(i);
 }
 
@@ -329,7 +328,7 @@ let plainArray = new PlainArray<string>();
 plainArray.add(1, "squirrel");
 plainArray.add(2, "sparrow");
 let result = plainArray.getIndexOfKey(2);
-console.info("result = ", result); // result = 1
+console.info("result:", result); // result: 1
 
 ```
 
@@ -415,7 +414,7 @@ let plainArray = new PlainArray<string>();
 plainArray.add(1, "squirrel");
 plainArray.add(2, "sparrow");
 let result = plainArray.getKeyAt(1);
-console.info("result = ", result); // result = 2
+console.info("result:", result); // result: 2
 
 ```
 
@@ -501,7 +500,7 @@ has(key: number): boolean
 let plainArray = new PlainArray<string>();
 plainArray.add(1, "squirrel");
 let result = plainArray.has(1);
-console.info("result = ", result); // result = true
+console.info("result:", result); // result: true
 
 ```
 
@@ -534,9 +533,9 @@ isEmpty(): boolean
 **示例：**
 
 ```TypeScript
-const plainArray = new PlainArray<string>();
+let plainArray = new PlainArray<string>();
 let result = plainArray.isEmpty();
-console.info("result = ", result); // result =  true
+console.info("result:", result); // result: true
 
 ```
 
@@ -666,6 +665,7 @@ removeRangeFrom(index: number, size: number): number
 let plainArray = new PlainArray<string>();
 plainArray.add(1, "squirrel");
 plainArray.add(2, "sparrow");
+// 从下标1开始删除元素
 let result = plainArray.removeRangeFrom(1, 3);
 console.info("result:", result);  // result: 1
 
@@ -705,7 +705,9 @@ setValueAt(index: number, value: T): void
 let plainArray = new PlainArray<string | number>();
 plainArray.add(1, "squirrel");
 plainArray.add(2, "sparrow");
+// 替换plainArray中下标为1的键值对中的value值为3546
 plainArray.setValueAt(1, 3546);
+// 获取并打印plainArray中下标为1的键值对中的value值
 let result = plainArray.getValueAt(1);
 console.info("result:", result);  // result: 3546
 

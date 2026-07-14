@@ -12,9 +12,7 @@ Style of the placeholder text.
 font?: Font
 ```
 
-Style of the placeholder text.
-
-The default value follows the theme.
+Style of the placeholder text. The default value follows the theme.
 
 **Type:** Font
 
@@ -32,9 +30,7 @@ The default value follows the theme.
 fontColor?: ResourceColor
 ```
 
-Color of the placeholder text.
-
-The default value follows the theme.
+Color of the placeholder text. The default value follows the theme.
 
 **Type:** ResourceColor
 

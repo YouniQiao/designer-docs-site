@@ -28,8 +28,7 @@ If the drag is not finished and the result is not set by receiver, return DragRe
 DRAG_SUCCESSFUL = 0
 ```
 
-The drag is successful. This value applies to
-[onDrop](arkts-arkui-commonmethod-c.md#ondrop-1).
+The drag is successful. This value applies to [onDrop](arkts-arkui-commonmethod-c.md#ondrop-1).
 
 **Since:** 10
 
@@ -45,8 +44,7 @@ The drag is successful. This value applies to
 DRAG_FAILED = 1
 ```
 
-The drag fails. This value applies to
-[onDrop](arkts-arkui-commonmethod-c.md#ondrop-1).
+The drag fails. This value applies to [onDrop](arkts-arkui-commonmethod-c.md#ondrop-1).
 
 **Since:** 10
 
@@ -62,8 +60,7 @@ The drag fails. This value applies to
 DRAG_CANCELED = 2
 ```
 
-The drag is canceled. This value applies to
-[onDrop](arkts-arkui-commonmethod-c.md#ondrop-1).
+The drag is canceled. This value applies to [onDrop](arkts-arkui-commonmethod-c.md#ondrop-1).
 
 **Since:** 10
 
@@ -79,8 +76,7 @@ The drag is canceled. This value applies to
 DROP_ENABLED = 3
 ```
 
-The component allows dropping. This value applies to [onDragEnter](arkts-arkui-commonmethod-c.md#ondragenter-1),
-[onDragMove](arkts-arkui-commonmethod-c.md#ondragmove-1), and [onDragLeave](arkts-arkui-commonmethod-c.md#ondragleave-1).
+The component allows dropping. This value applies to [onDragEnter](arkts-arkui-commonmethod-c.md#ondragenter-1), [onDragMove](arkts-arkui-commonmethod-c.md#ondragmove-1), and [onDragLeave](arkts-arkui-commonmethod-c.md#ondragleave-1).
 
 **Since:** 10
 
@@ -96,8 +92,7 @@ The component allows dropping. This value applies to [onDragEnter](arkts-arkui-c
 DROP_DISABLED = 4
 ```
 
-The component does not allow dropping. This value applies to [onDragEnter](arkts-arkui-commonmethod-c.md#ondragenter-1),
-[onDragMove](arkts-arkui-commonmethod-c.md#ondragmove-1), and [onDragLeave](arkts-arkui-commonmethod-c.md#ondragleave-1).
+The component does not allow dropping. This value applies to [onDragEnter](arkts-arkui-commonmethod-c.md#ondragenter-1), [onDragMove](arkts-arkui-commonmethod-c.md#ondragmove-1), and [onDragLeave](arkts-arkui-commonmethod-c.md#ondragleave-1).
 
 **Since:** 10
 

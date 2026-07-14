@@ -12,10 +12,7 @@ import { hiAppEvent } from '@kit.PerformanceAnalysisKit';
 function addProcessor(processor: Processor): number
 ```
 
-Adds the configuration information of the data processor, such as name of the data processor.
-
-This is a synchronous API and involves time-consuming operations. To ensure performance, you are advised to use the
-asynchronous API [addProcessorFromConfig](arkts-performanceanalysis-addprocessorfromconfig-f.md#addprocessorfromconfig-1) or use a child thread.
+Adds the configuration information of the data processor, such as name of the data processor. This is a synchronous API and involves time-consuming operations. To ensure performance, you are advised to use the asynchronous API [addProcessorFromConfig](arkts-performanceanalysis-addprocessorfromconfig-f.md#addprocessorfromconfig-1) or use a child thread.
 
 **Since:** 11
 

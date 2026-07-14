@@ -1,8 +1,6 @@
 # DialogCustomOptions
 
-自定义样式对话框的选项。
-对话内容作为present()方法的第一个参数提供。
-不在此选项对象中。
+自定义样式对话框的选项。 对话内容作为present()方法的第一个参数提供。 不在此选项对象中。
 
 **继承/实现关系：** DialogCustomOptions extends [DialogBaseOptions](arkts-arkui-dialogbaseoptions-i.md)
 

@@ -12,8 +12,7 @@ import { vibrator } from '@kit.SensorServiceKit';
 function startVibration(effect: VibrateEffect, attribute: VibrateAttribute, callback: AsyncCallback<void>): void
 ```
 
-Starts vibration based on a specified effect and attribute. This API uses an asynchronous callback to return the
-result.
+Starts vibration based on a specified effect and attribute. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 

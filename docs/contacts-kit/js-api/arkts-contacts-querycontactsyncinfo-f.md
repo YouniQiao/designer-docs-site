@@ -12,10 +12,7 @@ import { contact } from '@kit.ContactsKit';
 function queryContactSyncInfo(context: Context): Promise<Array<ContactSyncInfo>>
 ```
 
-Queries information about ongoing contact synchronization for the calling application.
-
-If the returned contact synchronization information is empty, the invoking party does not synchronize contacts or
-the contact synchronization is complete.
+Queries information about ongoing contact synchronization for the calling application. If the returned contact synchronization information is empty, the invoking party does not synchronize contacts or the contact synchronization is complete.
 
 **Since:** 26.0.0
 

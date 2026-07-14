@@ -6,9 +6,7 @@
 function getAppProvisionInfoSync(bundleName: string, userId?: number): AppProvisionInfo
 ```
 
-以同步方法根据bundleName和userId获取应用的provision配置文件信息并返回结果。
-
-获取调用方自身的信息时不需要权限。
+以同步方法根据bundleName和userId获取应用的provision配置文件信息并返回结果。 获取调用方自身的信息时不需要权限。
 
 **起始版本：** 10
 

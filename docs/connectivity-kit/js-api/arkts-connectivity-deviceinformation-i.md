@@ -6,14 +6,19 @@ Describes the remote device information.
 
 **System capability:** SystemCapability.Communication.NearLink.Base
 
+## Modules to Import
+
+```TypeScript
+import { remoteDevice } from '@kit.ConnectivityKit';
+```
+
 ## manufacturerData
 
 ```TypeScript
 manufacturerData: string
 ```
 
-The manufacturer data of the remote device.
-The maximum length is 255.
+The manufacturer data of the remote device. The maximum length is 255.
 
 **Type:** string
 
@@ -29,8 +34,7 @@ The maximum length is 255.
 modelData: string
 ```
 
-The model data of the remote device.
-The maximum length is 255.
+The model data of the remote device. The maximum length is 255.
 
 **Type:** string
 

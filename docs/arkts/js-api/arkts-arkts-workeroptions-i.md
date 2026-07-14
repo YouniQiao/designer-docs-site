@@ -66,8 +66,7 @@ Whether sharing of the Worker instance is enabled. Currently, sharing is not sup
 type?: 'classic' | 'module'
 ```
 
-Mode in which the Worker instance executes the script. The module type is not supported yet. The default value is
-classic.
+Mode in which the Worker instance executes the script. The module type is not supported yet. The default value is classic.
 
 **Type:** 'classic' | 'module'
 

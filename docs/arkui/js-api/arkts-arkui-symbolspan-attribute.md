@@ -1,8 +1,6 @@
 # SymbolSpan properties/events
 
-The [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) are not supported. Only the following attributes are supported.
-
-The [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) are not supported.
+The [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) are not supported. Only the following attributes are supported. The [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) are not supported.
 
 **Inheritance/Implementation:** SymbolSpanAttribute extends [CommonMethod<SymbolSpanAttribute>](CommonMethod<SymbolSpanAttribute>)
 
@@ -38,11 +36,7 @@ Creates an attribute modifier.
 effectStrategy(value: SymbolEffectStrategy)
 ```
 
-Sets the symbol effect of the symbol span.
-
-> **NOTE**
->
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
+Sets the symbol effect of the symbol span. > **NOTE** > > This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
 
 **Since:** 11
 
@@ -66,11 +60,7 @@ Sets the symbol effect of the symbol span.
 fontColor(value: Array<ResourceColor>)
 ```
 
-Sets the color of the symbol span.
-
-> **NOTE**
->
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
+Sets the color of the symbol span. > **NOTE** > > This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
 
 **Since:** 11
 
@@ -94,12 +84,7 @@ Sets the color of the symbol span.
 fontSize(value: number | string | Resource)
 ```
 
-Sets the size of the symbol span. When using the string type, numeric string values with optional units, for
-example, **"10"** or **"10fp"**, are supported.
-
-> **NOTE**
->
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
+Sets the size of the symbol span. When using the string type, numeric string values with optional units, for example, **"10"** or **"10fp"**, are supported. > **NOTE** > > This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
 
 **Since:** 11
 
@@ -123,16 +108,7 @@ example, **"10"** or **"10fp"**, are supported.
 fontWeight(value: number | FontWeight | string)
 ```
 
-Sets the weight of the symbol span. For the number type, the value ranges from 100 to 900, at an interval of 100. A
-larger value indicates a heavier font weight. The default value is **400**. For the string type, only strings of
-the number type are supported, for example, **"400"**, **"bold"**, **"bolder"**, **"lighter"**, **"regular"**, and
-**"medium"**, which correspond to the enumerated values in **FontWeight**.
-
-The **sys.symbol.ohos_lungs** icon does not support font weight setting.
-
-> **NOTE**
->
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
+Sets the weight of the symbol span. For the number type, the value ranges from 100 to 900, at an interval of 100. A larger value indicates a heavier font weight. The default value is **400**. For the string type, only strings of the number type are supported, for example, **"400"**, **"bold"**, **"bolder"**, **"lighter"**, **"regular"**, and **"medium"**, which correspond to the enumerated values in **FontWeight**. The **sys.symbol.ohos_lungs** icon does not support font weight setting. > **NOTE** > > This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
 
 **Since:** 11
 
@@ -181,11 +157,7 @@ Used to set the font weight of SymbolSpan.
 renderingStrategy(value: SymbolRenderingStrategy)
 ```
 
-Sets the rendering strategy of the symbol span.
-
-> **NOTE**
->
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
+Sets the rendering strategy of the symbol span. > **NOTE** > > This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
 
 **Since:** 11
 

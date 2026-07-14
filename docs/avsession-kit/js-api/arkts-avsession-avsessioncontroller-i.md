@@ -785,8 +785,7 @@ Get output device information
 getRealPlaybackPositionSync(): number
 ```
 
-Get the adjusted playback position. The time automatically calculated by the system
-taking into account factors such as playback status, playback speed, and application update time.
+Get the adjusted playback position. The time automatically calculated by the system taking into account factors such as playback status, playback speed, and application update time.
 
 **Since:** 10
 

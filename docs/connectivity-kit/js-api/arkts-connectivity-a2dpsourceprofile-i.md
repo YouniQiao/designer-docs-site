@@ -24,9 +24,7 @@ import { bluetoothManager } from '@kit.ConnectivityKit';
 connect(device: string): void
 ```
 
-Connect to device with a2dp.
-On API 10 and above, the permission required by this interface is changed from DISCOVER_BLUETOOTH to
-ACCESS_BLUETOOTH.
+Connect to device with a2dp. On API 10 and above, the permission required by this interface is changed from DISCOVER_BLUETOOTH to ACCESS_BLUETOOTH.
 
 **Since:** 9
 
@@ -64,9 +62,7 @@ ACCESS_BLUETOOTH.
 disconnect(device: string): void
 ```
 
-Disconnect to device with a2dp.
-On API 10 and above, the permission required by this interface is changed from DISCOVER_BLUETOOTH to
-ACCESS_BLUETOOTH.
+Disconnect to device with a2dp. On API 10 and above, the permission required by this interface is changed from DISCOVER_BLUETOOTH to ACCESS_BLUETOOTH.
 
 **Since:** 9
 
@@ -104,8 +100,7 @@ ACCESS_BLUETOOTH.
 getPlayingState(device: string): PlayingState
 ```
 
-Obtains the playing state of device.
-On API 10 and above, the permission required by this interface is changed to ACCESS_BLUETOOTH.
+Obtains the playing state of device. On API 10 and above, the permission required by this interface is changed to ACCESS_BLUETOOTH.
 
 **Since:** 9
 
@@ -147,8 +142,7 @@ On API 10 and above, the permission required by this interface is changed to ACC
 off(type: 'connectionStateChange', callback?: Callback<StateChangeParam>): void
 ```
 
-Unsubscribe the event reported when the profile connection state changes.
-On API 10 and above, the permission required by this interface is changed to ACCESS_BLUETOOTH.
+Unsubscribe the event reported when the profile connection state changes. On API 10 and above, the permission required by this interface is changed to ACCESS_BLUETOOTH.
 
 **Since:** 9
 
@@ -181,8 +175,7 @@ On API 10 and above, the permission required by this interface is changed to ACC
 on(type: 'connectionStateChange', callback: Callback<StateChangeParam>): void
 ```
 
-Subscribe the event reported when the profile connection state changes.
-On API 10 and above, the permission required by this interface is changed to ACCESS_BLUETOOTH.
+Subscribe the event reported when the profile connection state changes. On API 10 and above, the permission required by this interface is changed to ACCESS_BLUETOOTH.
 
 **Since:** 9
 

@@ -18,13 +18,7 @@ import { SourceType, ToolType, TouchEvent, FixedMode, KeyAction, Touch } from '@
 globalX?: number
 ```
 
-X coordinate of the touch event in the global coordinate system with the upper-left corner of the primary screen as
-the origin, in px. <!--Del--> When being used as an input parameter, this parameter is mandatory if the value of
-[TouchEventData.useGlobalCoordinate](arkts-input-toucheventdata-i-sys.md)
-is **true**, and its value can only be an integer. Otherwise, you do not need to set this parameter. In this case,
-the X coordinate of the relative coordinate system with the upper left corner of the specified screen as the origin
-is used to calculate the injected event. <!--DelEnd-->When being used as an output parameter, its value is reported
-by the system.
+X coordinate of the touch event in the global coordinate system with the upper-left corner of the primary screen as the origin, in px. <!--Del--> When being used as an input parameter, this parameter is mandatory if the value of [TouchEventData.useGlobalCoordinate](arkts-input-toucheventdata-i-sys.md) is **true**, and its value can only be an integer. Otherwise, you do not need to set this parameter. In this case, the X coordinate of the relative coordinate system with the upper left corner of the specified screen as the origin is used to calculate the injected event. <!--DelEnd-->When being used as an output parameter, its value is reported by the system.
 
 **Type:** number
 
@@ -38,13 +32,7 @@ by the system.
 globalY?: number
 ```
 
-Y coordinate of the touch event in the global coordinate system with the upper-left corner of the primary screen as
-the origin, in px. <!--Del--> When being used as an input parameter, this parameter is mandatory if the value of
-[TouchEventData.useGlobalCoordinate](arkts-input-toucheventdata-i-sys.md)
-is **true**, and its value can only be an integer. Otherwise, you do not need to set this parameter. In this case,
-the Y coordinate of the relative coordinate system with the upper left corner of the specified screen as the origin
-is used to calculate the injected event. <!--DelEnd-->When being used as an output parameter, its value is reported
-by the system.
+Y coordinate of the touch event in the global coordinate system with the upper-left corner of the primary screen as the origin, in px. <!--Del--> When being used as an input parameter, this parameter is mandatory if the value of [TouchEventData.useGlobalCoordinate](arkts-input-toucheventdata-i-sys.md) is **true**, and its value can only be an integer. Otherwise, you do not need to set this parameter. In this case, the Y coordinate of the relative coordinate system with the upper left corner of the specified screen as the origin is used to calculate the injected event. <!--DelEnd-->When being used as an output parameter, its value is reported by the system.
 
 **Type:** number
 
@@ -142,8 +130,7 @@ Y coordinate of the input device. Currently, only integers are supported. The un
 screenX: number
 ```
 
-X coordinate of the touch event in the relative coordinate system with the upper-left corner of the specified
-screen as the origin. Currently, only integers are supported. The unit is pixels.
+X coordinate of the touch event in the relative coordinate system with the upper-left corner of the specified screen as the origin. Currently, only integers are supported. The unit is pixels.
 
 **Type:** number
 
@@ -157,8 +144,7 @@ screen as the origin. Currently, only integers are supported. The unit is pixels
 screenY: number
 ```
 
-Y coordinate of the touch event in the relative coordinate system with the upper-left corner of the specified
-screen as the origin. Currently, only integers are supported. The unit is pixels.
+Y coordinate of the touch event in the relative coordinate system with the upper-left corner of the specified screen as the origin. Currently, only integers are supported. The unit is pixels.
 
 **Type:** number
 
@@ -172,8 +158,7 @@ screen as the origin. Currently, only integers are supported. The unit is pixels
 tiltX: number
 ```
 
-Angle relative to the YZ plane, in degrees. The value range is [-90, 90]. A positive value indicates a rightward
-tilt.
+Angle relative to the YZ plane, in degrees. The value range is [-90, 90]. A positive value indicates a rightward tilt.
 
 **Type:** number
 
@@ -187,8 +172,7 @@ tilt.
 tiltY: number
 ```
 
-Angle relative to the XZ plane, in degrees. The value range is [-90, 90]. A positive value indicates a downward
-tilt.
+Angle relative to the XZ plane, in degrees. The value range is [-90, 90]. A positive value indicates a downward tilt.
 
 **Type:** number
 
@@ -244,8 +228,7 @@ Width of the tool area, in pixels. The value can only be an integer.
 toolX: number
 ```
 
-X coordinate of the tool area center in the relative coordinate system with the upper-left corner of the specified
-screen as the origin. Currently, only integers are supported. The unit is pixels.
+X coordinate of the tool area center in the relative coordinate system with the upper-left corner of the specified screen as the origin. Currently, only integers are supported. The unit is pixels.
 
 **Type:** number
 
@@ -259,8 +242,7 @@ screen as the origin. Currently, only integers are supported. The unit is pixels
 toolY: number
 ```
 
-Y coordinate of the tool area center in the relative coordinate system with the upper-left corner of the specified
-screen as the origin. Currently, only integers are supported. The unit is pixels.
+Y coordinate of the tool area center in the relative coordinate system with the upper-left corner of the specified screen as the origin. Currently, only integers are supported. The unit is pixels.
 
 **Type:** number
 
@@ -288,8 +270,7 @@ Width of the touch area, in pixels. The value can only be an integer.
 windowX: number
 ```
 
-X coordinate in the relative coordinate system with the upper-left corner of the window where the touch is located
-as the origin. Currently, only integers are supported. The unit is pixels.
+X coordinate in the relative coordinate system with the upper-left corner of the window where the touch is located as the origin. Currently, only integers are supported. The unit is pixels.
 
 **Type:** number
 
@@ -303,8 +284,7 @@ as the origin. Currently, only integers are supported. The unit is pixels.
 windowY: number
 ```
 
-Y coordinate in the relative coordinate system with the upper-left corner of the window where the touch is located
-as the origin. Currently, only integers are supported. The unit is pixels.
+Y coordinate in the relative coordinate system with the upper-left corner of the window where the touch is located as the origin. Currently, only integers are supported. The unit is pixels.
 
 **Type:** number
 

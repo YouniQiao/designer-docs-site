@@ -1,32 +1,6 @@
 # Transaction
 
-Provides APIs for managing databases in transaction mode. A transaction object is created by using
-[createTransaction](arkts-arkdata-rdbstore-i.md#createtransaction-1). Operations on
-different transaction objects are isolated. For details about the transaction types, see
-[TransactionType](arkts-arkdata-transactiontype-e.md).
-
-Currently, an RDB store supports only one write transaction at a time. If the current
-[RdbStore](arkts-data-relationalstore.md) has a write transaction that is not released, creating
-an **IMMEDIATE** or **EXCLUSIVE** transaction object will return error 14800024. If a **DEFERRED** transaction
-object is created, error 14800024 may be returned when it is used to invoke a write operation for the first time.
-After a write transaction is created using **IMMEDIATE** or **EXCLUSIVE**, or a **DEFERRED** transaction is
-upgraded to a write transaction, write operations in the
-[RdbStore](arkts-data-relationalstore.md) will also return error 14800024.
-
-When the number of concurrent transactions is large and the write transaction duration is long, the frequency of
-returning error 14800024 may increase. You can reduce the occurrence of error 14800024 by shortening the
-transaction duration or by handling the error 14800024 through retries.
-
-Before using the following APIs, you should obtain a **Transaction** instance by calling the
-[createTransaction](arkts-arkdata-rdbstore-i.md#createtransaction-1) method and then
-call the corresponding method through the instance.
-
-**System capability**: SystemCapability.DistributedDataManager.RelationalStore.Core
-
-**Example**:
-
-For details about the definition of **this.context** in the sample code, see the application
-[context](../../apis-ability-kit/arkts-apis/arkts-ability-context-c.md) of the stage model.
+Provides APIs for managing databases in transaction mode. A transaction object is created by using [createTransaction](arkts-arkdata-rdbstore-i.md#createtransaction-1). Operations on different transaction objects are isolated. For details about the transaction types, see [TransactionType](arkts-arkdata-transactiontype-e.md). Currently, an RDB store supports only one write transaction at a time. If the current [RdbStore](arkts-data-relationalstore.md) has a write transaction that is not released, creating an **IMMEDIATE** or **EXCLUSIVE** transaction object will return error 14800024. If a **DEFERRED** transaction object is created, error 14800024 may be returned when it is used to invoke a write operation for the first time. After a write transaction is created using **IMMEDIATE** or **EXCLUSIVE**, or a **DEFERRED** transaction is upgraded to a write transaction, write operations in the [RdbStore](arkts-data-relationalstore.md) will also return error 14800024. When the number of concurrent transactions is large and the write transaction duration is long, the frequency of returning error 14800024 may increase. You can reduce the occurrence of error 14800024 by shortening the transaction duration or by handling the error 14800024 through retries. Before using the following APIs, you should obtain a **Transaction** instance by calling the [createTransaction](arkts-arkdata-rdbstore-i.md#createtransaction-1) method and then call the corresponding method through the instance. **System capability**: SystemCapability.DistributedDataManager.RelationalStore.Core **Example**: For details about the definition of **this.context** in the sample code, see the application [context](../../apis-ability-kit/arkts-apis/arkts-ability-context-c.md) of the stage model.
 
 **Since:** 14
 
@@ -44,15 +18,7 @@ import { relationalStore } from '@kit.ArkData';
 batchInsert(table: string, values: Array<ValuesBucket>): Promise<number>
 ```
 
-Inserts data into a table in batches. This API uses a promise to return the result.
-
-Data is written in batches of up to 32,766 parameters each with the
-[ConflictResolution.ON_CONFLICT_REPLACE](arkts-arkdata-conflictresolution-e.md)
-policy. The total number of parameters is calculated as the number of inserted data records multiplied by the
-size of the union set of all fields in the inserted data. If the operation fails, an error is returned.
-
-A single string field supports a maximum of 8 MB data. If the data exceeds 8 MB, only the first 8 MB data is
-retained. For data storage requirements exceeding 8 MB, the Blob type is recommended.
+Inserts data into a table in batches. This API uses a promise to return the result. Data is written in batches of up to 32,766 parameters each with the [ConflictResolution.ON_CONFLICT_REPLACE](arkts-arkdata-conflictresolution-e.md) policy. The total number of parameters is calculated as the number of inserted data records multiplied by the size of the union set of all fields in the inserted data. If the operation fails, an error is returned. A single string field supports a maximum of 8 MB data. If the data exceeds 8 MB, only the first 8 MB data is retained. For data storage requirements exceeding 8 MB, the Blob type is recommended.
 
 **Since:** 14
 
@@ -97,15 +63,7 @@ retained. For data storage requirements exceeding 8 MB, the Blob type is recomme
 batchInsertSync(table: string, values: Array<ValuesBucket>): number
 ```
 
-Inserts data into a table in batches. This API returns the result synchronously.
-
-Data is written in batches of up to 32,766 parameters each with the
-[ConflictResolution.ON_CONFLICT_REPLACE](arkts-arkdata-conflictresolution-e.md)
-policy. The total number of parameters is calculated as the number of inserted data records multiplied by the
-size of the union set of all fields in the inserted data. If the operation fails, an error is returned.
-
-A single string field supports a maximum of 8 MB data. If the data exceeds 8 MB, only the first 8 MB data is
-retained. For data storage requirements exceeding 8 MB, the Blob type is recommended.
+Inserts data into a table in batches. This API returns the result synchronously. Data is written in batches of up to 32,766 parameters each with the [ConflictResolution.ON_CONFLICT_REPLACE](arkts-arkdata-conflictresolution-e.md) policy. The total number of parameters is calculated as the number of inserted data records multiplied by the size of the union set of all fields in the inserted data. If the operation fails, an error is returned. A single string field supports a maximum of 8 MB data. If the data exceeds 8 MB, only the first 8 MB data is retained. For data storage requirements exceeding 8 MB, the Blob type is recommended.
 
 **Since:** 14
 
@@ -154,19 +112,7 @@ batchInsertWithConflictResolution(
     ): Promise<number>
 ```
 
-Inserts data into a table with conflict resolutions in batches. You can use the **conflict** parameter to specify
-[ConflictResolution](arkts-arkdata-conflictresolution-e.md). This API uses a
-promise to return the result.
-
-A maximum of 32,766 parameters can be inserted at a time. If the number of parameters exceeds this limit, the
-error code 14800000 is returned. The number of inserted data records multiplied by the size of the union across
-all fields in the inserted data equals the number of parameters.
-
-For example, if the size of the union set is 10, a maximum of 3,276 data records can be inserted (3276 × 10 = 327
-60).
-
-Ensure that your application complies with this constraint when calling this API to avoid errors caused by
-excessive parameters.
+Inserts data into a table with conflict resolutions in batches. You can use the **conflict** parameter to specify [ConflictResolution](arkts-arkdata-conflictresolution-e.md). This API uses a promise to return the result. A maximum of 32,766 parameters can be inserted at a time. If the number of parameters exceeds this limit, the error code 14800000 is returned. The number of inserted data records multiplied by the size of the union across all fields in the inserted data equals the number of parameters. For example, if the size of the union set is 10, a maximum of 3,276 data records can be inserted (3276 × 10 = 327 60). Ensure that your application complies with this constraint when calling this API to avoid errors caused by excessive parameters.
 
 **Since:** 18
 
@@ -216,21 +162,7 @@ batchInsertWithConflictResolutionSync(table: string, values: Array<ValuesBucket>
       conflict: ConflictResolution): number
 ```
 
-Inserts data into a table with conflict resolutions in batches. You can use the **conflict** parameter to specify
-[ConflictResolution](arkts-arkdata-conflictresolution-e.md).
-
-A maximum of 32,766 parameters can be inserted at a time. If the number of parameters exceeds this limit, the
-error code 14800000 is returned. The number of inserted data records multiplied by the size of the union across
-all fields in the inserted data equals the number of parameters.
-
-For example, if the size of the union set is 10, a maximum of 3,276 data records can be inserted (3276 × 10 = 327
-60).
-
-Ensure that your application complies with this constraint when calling this API to avoid errors caused by
-excessive parameters.
-
-A single string field supports a maximum of 8 MB data. If the data exceeds 8 MB, only the first 8 MB data is
-retained. For data storage requirements exceeding 8 MB, the Blob type is recommended.
+Inserts data into a table with conflict resolutions in batches. You can use the **conflict** parameter to specify [ConflictResolution](arkts-arkdata-conflictresolution-e.md). A maximum of 32,766 parameters can be inserted at a time. If the number of parameters exceeds this limit, the error code 14800000 is returned. The number of inserted data records multiplied by the size of the union across all fields in the inserted data equals the number of parameters. For example, if the size of the union set is 10, a maximum of 3,276 data records can be inserted (3276 × 10 = 327 60). Ensure that your application complies with this constraint when calling this API to avoid errors caused by excessive parameters. A single string field supports a maximum of 8 MB data. If the data exceeds 8 MB, only the first 8 MB data is retained. For data storage requirements exceeding 8 MB, the Blob type is recommended.
 
 **Since:** 18
 
@@ -280,26 +212,7 @@ batchInsertWithReturning(table: string, values: Array<ValuesBucket>, config: Ret
       conflict?: ConflictResolution): Promise<Result>
 ```
 
-Inserts data into a table in batches. You can use the **conflict** parameter to specify
-[ConflictResolution](arkts-arkdata-conflictresolution-e.md), and
-[Result](arkts-arkdata-result-i.md) is returned. This API uses a promise to return
-the result.
-
-A maximum of 32,766 parameters can be inserted at a time. If the number of parameters exceeds this limit, the
-error code 14800001 is returned. The number of inserted data records multiplied by the size of the union across
-all fields in the inserted data equals the number of parameters.
-
-For example, if the size of the union set is 10, a maximum of 3,276 data records can be inserted (3276 × 10 = 327
-60).
-
-Ensure that your application complies with this constraint when calling this API to avoid errors caused by
-excessive parameters.
-
-It is not recommended to use the **ON_CONFLICT_FAIL** policy for the **conflict** parameter, as this may prevent
-the return of correct results.
-
-A single string field supports a maximum of 8 MB data. If the data exceeds 8 MB, only the first 8 MB data is
-retained. For data storage requirements exceeding 8 MB, the Blob type is recommended.
+Inserts data into a table in batches. You can use the **conflict** parameter to specify [ConflictResolution](arkts-arkdata-conflictresolution-e.md), and [Result](arkts-arkdata-result-i.md) is returned. This API uses a promise to return the result. A maximum of 32,766 parameters can be inserted at a time. If the number of parameters exceeds this limit, the error code 14800001 is returned. The number of inserted data records multiplied by the size of the union across all fields in the inserted data equals the number of parameters. For example, if the size of the union set is 10, a maximum of 3,276 data records can be inserted (3276 × 10 = 327 60). Ensure that your application complies with this constraint when calling this API to avoid errors caused by excessive parameters. It is not recommended to use the **ON_CONFLICT_FAIL** policy for the **conflict** parameter, as this may prevent the return of correct results. A single string field supports a maximum of 8 MB data. If the data exceeds 8 MB, only the first 8 MB data is retained. For data storage requirements exceeding 8 MB, the Blob type is recommended.
 
 **Since:** 23
 
@@ -345,25 +258,7 @@ batchInsertWithReturningSync(table: string, values: Array<ValuesBucket>, config:
       conflict?: ConflictResolution): Result
 ```
 
-Inserts data into a table in batches. You can use the **conflict** parameter to specify
-[ConflictResolution](arkts-arkdata-conflictresolution-e.md), and
-[Result](arkts-arkdata-result-i.md) is returned.
-
-A maximum of 32,766 parameters can be inserted at a time. If the number of parameters exceeds this limit, the
-error code 14800001 is returned. The number of inserted data records multiplied by the size of the union across
-all fields in the inserted data equals the number of parameters.
-
-For example, if the size of the union set is 10, a maximum of 3,276 data records can be inserted (3276 × 10 = 327
-60).
-
-Ensure that your application complies with this constraint when calling this API to avoid errors caused by
-excessive parameters.
-
-It is not recommended to use the **ON_CONFLICT_FAIL** policy for the **conflict** parameter, as this may prevent
-the return of correct results.
-
-A single string field supports a maximum of 8 MB data. If the data exceeds 8 MB, only the first 8 MB data is
-retained. For data storage requirements exceeding 8 MB, the Blob type is recommended.
+Inserts data into a table in batches. You can use the **conflict** parameter to specify [ConflictResolution](arkts-arkdata-conflictresolution-e.md), and [Result](arkts-arkdata-result-i.md) is returned. A maximum of 32,766 parameters can be inserted at a time. If the number of parameters exceeds this limit, the error code 14800001 is returned. The number of inserted data records multiplied by the size of the union across all fields in the inserted data equals the number of parameters. For example, if the size of the union set is 10, a maximum of 3,276 data records can be inserted (3276 × 10 = 327 60). Ensure that your application complies with this constraint when calling this API to avoid errors caused by excessive parameters. It is not recommended to use the **ON_CONFLICT_FAIL** policy for the **conflict** parameter, as this may prevent the return of correct results. A single string field supports a maximum of 8 MB data. If the data exceeds 8 MB, only the first 8 MB data is retained. For data storage requirements exceeding 8 MB, the Blob type is recommended.
 
 **Since:** 23
 
@@ -408,10 +303,7 @@ retained. For data storage requirements exceeding 8 MB, the Blob type is recomme
 commit(): Promise<void>
 ```
 
-Commits this executed SQL statement. This API uses a promise to return the result. When using asynchronous APIs
-to execute SQL statements, ensure that **commit()** is called after the asynchronous API execution is completed.
-Otherwise, the SQL operations may be lost. After **commit()** is called, the transaction object and the created
-**ResultSet** object will be closed.
+Commits this executed SQL statement. This API uses a promise to return the result. When using asynchronous APIs to execute SQL statements, ensure that **commit()** is called after the asynchronous API execution is completed. Otherwise, the SQL operations may be lost. After **commit()** is called, the transaction object and the created **ResultSet** object will be closed.
 
 **Since:** 14
 
@@ -443,8 +335,7 @@ Otherwise, the SQL operations may be lost. After **commit()** is called, the tra
 delete(predicates: RdbPredicates): Promise<number>
 ```
 
-Deletes data from the RDB store based on the specified **RdbPredicates** object. This API uses a promise to
-return the result.
+Deletes data from the RDB store based on the specified **RdbPredicates** object. This API uses a promise to return the result.
 
 **Since:** 14
 
@@ -488,8 +379,7 @@ return the result.
 deleteSync(predicates: RdbPredicates): number
 ```
 
-Deletes data from the RDB store based on the specified **RdbPredicates** object. This API returns the result
-synchronously.
+Deletes data from the RDB store based on the specified **RdbPredicates** object. This API returns the result synchronously.
 
 **Since:** 14
 
@@ -533,8 +423,7 @@ synchronously.
 deleteWithReturning(predicates: RdbPredicates, config: ReturningConfig): Promise<Result>
 ```
 
-Deletes data from the RDB store based on the specified **RdbPredicates** object and returns
-[Result](arkts-arkdata-result-i.md). This API uses a promise to return the result.
+Deletes data from the RDB store based on the specified **RdbPredicates** object and returns [Result](arkts-arkdata-result-i.md). This API uses a promise to return the result.
 
 **Since:** 23
 
@@ -577,8 +466,7 @@ Deletes data from the RDB store based on the specified **RdbPredicates** object 
 deleteWithReturningSync(predicates: RdbPredicates, config: ReturningConfig): Result
 ```
 
-Deletes data from the RDB store based on the specified **RdbPredicates** object and returns
-[Result](arkts-arkdata-result-i.md).
+Deletes data from the RDB store based on the specified **RdbPredicates** object and returns [Result](arkts-arkdata-result-i.md).
 
 **Since:** 23
 
@@ -621,19 +509,7 @@ Deletes data from the RDB store based on the specified **RdbPredicates** object 
 execute(sql: string, args?: Array<ValueType>): Promise<ValueType>
 ```
 
-Executes an SQL statement that contains parameters but does not return data. This API returns the result
-synchronously. The SQL statement can be used to create, delete, query, and modify a table. The type of the return
-value varies, depending on the execution result.
-
-This API does not support query, database attachment, and transaction operations. You can use
-[querySql](arkts-arkdata-transaction-i.md#querysql-1) or [query](arkts-arkdata-transaction-i.md#query-1) to
-query data, and use [attach]
-{@link @ohos.data.relationalStore:relationalStore.RdbStore.attach(fullPath: string, attachName: string)} to
-attach a database.
-
-Statements separated by semicolons (\;) are not supported.
-
-Statements starting with comments are not supported.
+Executes an SQL statement that contains parameters but does not return data. This API returns the result synchronously. The SQL statement can be used to create, delete, query, and modify a table. The type of the return value varies, depending on the execution result. This API does not support query, database attachment, and transaction operations. You can use [querySql](arkts-arkdata-transaction-i.md#querysql-1) or [query](arkts-arkdata-transaction-i.md#query-1) to query data, and use [attach] {@link @ohos.data.relationalStore:relationalStore.RdbStore.attach(fullPath: string, attachName: string)} to attach a database. Statements separated by semicolons (\;) are not supported. Statements starting with comments are not supported.
 
 **Since:** 14
 
@@ -679,22 +555,7 @@ Statements starting with comments are not supported.
 executeSync(sql: string, args?: Array<ValueType>): ValueType
 ```
 
-Executes an SQL statement that contains specified arguments. The number of relational operators between
-expressions and operators in the statement cannot exceed 1,000. This API returns a value of the **ValueType**
-type.
-
-This API can be used to add, delete, and modify data, run SQL statements of the PRAGMA syntax, and create,
-delete, and modify a table. The type of the return value varies, depending on the execution result.
-
-This API does not support query, database attachment, and transaction operations. You can use
-[querySql](arkts-arkdata-transaction-i.md#querysql-1) or [query](arkts-arkdata-transaction-i.md#query-1) to
-query data, and use [attach]
-{@link @ohos.data.relationalStore:relationalStore.RdbStore.attach(fullPath: string, attachName: string)} to
-attach a database.
-
-Statements separated by semicolons (\;) are not supported.
-
-Statements starting with comments are not supported.
+Executes an SQL statement that contains specified arguments. The number of relational operators between expressions and operators in the statement cannot exceed 1,000. This API returns a value of the **ValueType** type. This API can be used to add, delete, and modify data, run SQL statements of the PRAGMA syntax, and create, delete, and modify a table. The type of the return value varies, depending on the execution result. This API does not support query, database attachment, and transaction operations. You can use [querySql](arkts-arkdata-transaction-i.md#querysql-1) or [query](arkts-arkdata-transaction-i.md#query-1) to query data, and use [attach] {@link @ohos.data.relationalStore:relationalStore.RdbStore.attach(fullPath: string, attachName: string)} to attach a database. Statements separated by semicolons (\;) are not supported. Statements starting with comments are not supported.
 
 **Since:** 14
 
@@ -740,16 +601,7 @@ Statements starting with comments are not supported.
 insert(table: string, values: ValuesBucket, conflict?: ConflictResolution): Promise<number>
 ```
 
-Inserts a row of data into a table. This API uses a promise to return the result. Due to the limit of the shared
-memory, the size of a single data record cannot exceed 2 MB. Otherwise, data cannot be obtained using the **get**
-methods such as [getValue](arkts-arkdata-resultset-i.md#getvalue-1) and
-[getString](arkts-arkdata-resultset-i.md#getstring-1) after **ResultSet** is obtained
-through the [query](@ohos.data.relationalStore:relationalStore.RdbStore.query(predicates: RdbPredicates))
-or [querySql](arkts-arkdata-rdbstore-i.md#querysqlwithoutrowcount-1) API of
-**RdbStore**. As a result, the operation may fail or an exception may be thrown.
-
-A single string field supports a maximum of 8 MB data. If the data exceeds 8 MB, only the first 8 MB data is
-retained. For data storage requirements exceeding 8 MB, the Blob type is recommended.
+Inserts a row of data into a table. This API uses a promise to return the result. Due to the limit of the shared memory, the size of a single data record cannot exceed 2 MB. Otherwise, data cannot be obtained using the **get** methods such as [getValue](arkts-arkdata-resultset-i.md#getvalue-1) and [getString](arkts-arkdata-resultset-i.md#getstring-1) after **ResultSet** is obtained through the [query](@ohos.data.relationalStore:relationalStore.RdbStore.query(predicates: RdbPredicates)) or [querySql](arkts-arkdata-rdbstore-i.md#querysqlwithoutrowcount-1) API of **RdbStore**. As a result, the operation may fail or an exception may be thrown. A single string field supports a maximum of 8 MB data. If the data exceeds 8 MB, only the first 8 MB data is retained. For data storage requirements exceeding 8 MB, the Blob type is recommended.
 
 **Since:** 14
 
@@ -796,16 +648,7 @@ insertSync(table: string, values: ValuesBucket | sendableRelationalStore.ValuesB
       conflict?: ConflictResolution): number
 ```
 
-Inserts a row of data into a table. This API returns the result synchronously. Due to the limit of the shared
-memory, the size of a single data record cannot exceed 2 MB. Otherwise, data cannot be obtained using the **get**
-methods such as [getValue](arkts-arkdata-resultset-i.md#getvalue-1) and
-[getString](arkts-arkdata-resultset-i.md#getstring-1) after **ResultSet** is obtained
-through the [query](@ohos.data.relationalStore:relationalStore.RdbStore.query(predicates: RdbPredicates))
-or [querySql](arkts-arkdata-rdbstore-i.md#querysqlwithoutrowcount-1) API of
-**RdbStore**. As a result, the operation may fail or an exception may be thrown.
-
-A single string field supports a maximum of 8 MB data. If the data exceeds 8 MB, only the first 8 MB data is
-retained. For data storage requirements exceeding 8 MB, the Blob type is recommended.
+Inserts a row of data into a table. This API returns the result synchronously. Due to the limit of the shared memory, the size of a single data record cannot exceed 2 MB. Otherwise, data cannot be obtained using the **get** methods such as [getValue](arkts-arkdata-resultset-i.md#getvalue-1) and [getString](arkts-arkdata-resultset-i.md#getstring-1) after **ResultSet** is obtained through the [query](@ohos.data.relationalStore:relationalStore.RdbStore.query(predicates: RdbPredicates)) or [querySql](arkts-arkdata-rdbstore-i.md#querysqlwithoutrowcount-1) API of **RdbStore**. As a result, the operation may fail or an exception may be thrown. A single string field supports a maximum of 8 MB data. If the data exceeds 8 MB, only the first 8 MB data is retained. For data storage requirements exceeding 8 MB, the Blob type is recommended.
 
 **Since:** 14
 
@@ -891,8 +734,7 @@ Queries data from the RDB store based on specified conditions. This API uses a p
 querySql(sql: string, args?: Array<ValueType>): Promise<ResultSet>
 ```
 
-Queries data in the RDB store using the specified SQL statement. The number of relational operators between
-expressions and operators in the SQL statement cannot exceed 1,000. This API uses a promise to return the result.
+Queries data in the RDB store using the specified SQL statement. The number of relational operators between expressions and operators in the SQL statement cannot exceed 1,000. This API uses a promise to return the result.
 
 **Since:** 14
 
@@ -933,10 +775,7 @@ expressions and operators in the SQL statement cannot exceed 1,000. This API use
 querySqlSync(sql: string, args?: Array<ValueType>): ResultSet
 ```
 
-Queries data in the RDB store using the specified SQL statement. The number of relational operators between
-expressions and operators in the SQL statement cannot exceed 1,000. If complex logic and a large number of loops
-are involved in the operations on the **resultSet** obtained by **querySync**, the freeze problem may occur. You
-are advised to perform this operation in the [taskpool](../../apis-arkts/arkts-apis/arkts-taskpool.md) thread.
+Queries data in the RDB store using the specified SQL statement. The number of relational operators between expressions and operators in the SQL statement cannot exceed 1,000. If complex logic and a large number of loops are involved in the operations on the **resultSet** obtained by **querySync**, the freeze problem may occur. You are advised to perform this operation in the [taskpool](../../apis-arkts/arkts-apis/arkts-taskpool.md) thread.
 
 **Since:** 14
 
@@ -977,10 +816,7 @@ are advised to perform this operation in the [taskpool](../../apis-arkts/arkts-a
 querySqlWithoutRowCount(sql: string, bindArgs?: Array<ValueType>): Promise<LiteResultSet>
 ```
 
-Queries data from the RDB store based on specified conditions without calculating the row count. This API uses a
-promise to return the result and delivers better performance than the
-[querySql](arkts-arkdata-transaction-i.md#querysql-1) API. The number of relational operators between
-expressions and operators in the SQL statement cannot exceed 1,000.
+Queries data from the RDB store based on specified conditions without calculating the row count. This API uses a promise to return the result and delivers better performance than the [querySql](arkts-arkdata-transaction-i.md#querysql-1) API. The number of relational operators between expressions and operators in the SQL statement cannot exceed 1,000.
 
 **Since:** 23
 
@@ -1014,11 +850,7 @@ expressions and operators in the SQL statement cannot exceed 1,000.
 querySqlWithoutRowCountSync(sql: string, bindArgs?: Array<ValueType>): LiteResultSet
 ```
 
-Queries data from the RDB store based on specified SQL statements without calculating the row count. The number
-of relational operators between expressions and operators in the SQL statement cannot exceed 1,000. If complex
-logic and a large number of loops are involved in the operations on the **LiteResultSet** obtained by
-**querySqlWithoutRowCountSync**, the freeze problem may occur. You are advised to perform this operation in the
-[taskpool](../../apis-arkts/arkts-apis/arkts-taskpool.md) thread.
+Queries data from the RDB store based on specified SQL statements without calculating the row count. The number of relational operators between expressions and operators in the SQL statement cannot exceed 1,000. If complex logic and a large number of loops are involved in the operations on the **LiteResultSet** obtained by **querySqlWithoutRowCountSync**, the freeze problem may occur. You are advised to perform this operation in the [taskpool](../../apis-arkts/arkts-apis/arkts-taskpool.md) thread.
 
 **Since:** 23
 
@@ -1052,10 +884,7 @@ logic and a large number of loops are involved in the operations on the **LiteRe
 querySync(predicates: RdbPredicates, columns?: Array<string>): ResultSet
 ```
 
-Queries data in a database based on specified conditions. This API returns the result synchronously. If complex
-logic and a large number of loops are involved in the operations on the **resultSet** obtained by **querySync**,
-the freeze problem may occur. You are advised to perform this operation in the
-[taskpool](../../apis-arkts/arkts-apis/arkts-taskpool.md) thread.
+Queries data in a database based on specified conditions. This API returns the result synchronously. If complex logic and a large number of loops are involved in the operations on the **resultSet** obtained by **querySync**, the freeze problem may occur. You are advised to perform this operation in the [taskpool](../../apis-arkts/arkts-apis/arkts-taskpool.md) thread.
 
 **Since:** 14
 
@@ -1096,9 +925,7 @@ the freeze problem may occur. You are advised to perform this operation in the
 queryWithoutRowCount(predicates: RdbPredicates, columns?: Array<string>): Promise<LiteResultSet>
 ```
 
-Queries data from the RDB store based on specified conditions without calculating the row count. This API
-delivers better performance than the [query](arkts-arkdata-transaction-i.md#query-1) API. This API uses a
-promise to return the result.
+Queries data from the RDB store based on specified conditions without calculating the row count. This API delivers better performance than the [query](arkts-arkdata-transaction-i.md#query-1) API. This API uses a promise to return the result.
 
 **Since:** 23
 
@@ -1131,10 +958,7 @@ promise to return the result.
 queryWithoutRowCountSync(predicates: RdbPredicates, columns?: Array<string>): LiteResultSet
 ```
 
-Queries data from the RDB store based on specified conditions without calculating the row count. If complex logic
-and a large number of loops are involved in the operations on the **LiteResultSet** obtained by
-**queryWithoutRowCountSync**, the freeze problem may occur. You are advised to perform this operation in the
-[taskpool](../../apis-arkts/arkts-apis/arkts-taskpool.md) thread.
+Queries data from the RDB store based on specified conditions without calculating the row count. If complex logic and a large number of loops are involved in the operations on the **LiteResultSet** obtained by **queryWithoutRowCountSync**, the freeze problem may occur. You are advised to perform this operation in the [taskpool](../../apis-arkts/arkts-apis/arkts-taskpool.md) thread.
 
 **Since:** 23
 
@@ -1167,8 +991,7 @@ and a large number of loops are involved in the operations on the **LiteResultSe
 rollback(): Promise<void>
 ```
 
-Rolls back this executed SQL statement. This API uses a promise to return the result. After **rollback()** is
-called, the transaction object and the created **ResultSet** object will be closed.
+Rolls back this executed SQL statement. This API uses a promise to return the result. After **rollback()** is called, the transaction object and the created **ResultSet** object will be closed.
 
 **Since:** 14
 
@@ -1200,14 +1023,7 @@ called, the transaction object and the created **ResultSet** object will be clos
 update(values: ValuesBucket, predicates: RdbPredicates, conflict?: ConflictResolution): Promise<number>
 ```
 
-Updates data based on the specified **RdbPredicates** object. This API uses a promise to return the result. Due
-to the limit of the shared memory, the size of a single data record cannot exceed 2 MB. Otherwise, data cannot be
-obtained using the **get** methods such as
-[getValue](arkts-arkdata-resultset-i.md#getvalue-1) and
-[getString](arkts-arkdata-resultset-i.md#getstring-1) after **ResultSet** is obtained
-through the [query](@ohos.data.relationalStore:relationalStore.RdbStore.query(predicates: RdbPredicates))
-or [querySql](arkts-arkdata-rdbstore-i.md#querysqlwithoutrowcount-1) API of
-**RdbStore**. As a result, the operation may fail or an exception may be thrown.
+Updates data based on the specified **RdbPredicates** object. This API uses a promise to return the result. Due to the limit of the shared memory, the size of a single data record cannot exceed 2 MB. Otherwise, data cannot be obtained using the **get** methods such as [getValue](arkts-arkdata-resultset-i.md#getvalue-1) and [getString](arkts-arkdata-resultset-i.md#getstring-1) after **ResultSet** is obtained through the [query](@ohos.data.relationalStore:relationalStore.RdbStore.query(predicates: RdbPredicates)) or [querySql](arkts-arkdata-rdbstore-i.md#querysqlwithoutrowcount-1) API of **RdbStore**. As a result, the operation may fail or an exception may be thrown.
 
 **Since:** 14
 
@@ -1253,14 +1069,7 @@ or [querySql](arkts-arkdata-rdbstore-i.md#querysqlwithoutrowcount-1) API of
 updateSync(values: ValuesBucket, predicates: RdbPredicates, conflict?: ConflictResolution): number
 ```
 
-Updates data in the RDB store based on the specified **RdbPredicates** object. This API returns the result
-synchronously. Due to the limit of the shared memory, the size of a single data record cannot exceed 2 MB.
-Otherwise, data cannot be obtained using the **get** methods such as
-[getValue](arkts-arkdata-resultset-i.md#getvalue-1) and
-[getString](arkts-arkdata-resultset-i.md#getstring-1) after **ResultSet** is obtained
-through the [query](@ohos.data.relationalStore:relationalStore.RdbStore.query(predicates: RdbPredicates))
-or [querySql](arkts-arkdata-rdbstore-i.md#querysqlwithoutrowcount-1) API of
-**RdbStore**. As a result, the operation may fail or an exception may be thrown.
+Updates data in the RDB store based on the specified **RdbPredicates** object. This API returns the result synchronously. Due to the limit of the shared memory, the size of a single data record cannot exceed 2 MB. Otherwise, data cannot be obtained using the **get** methods such as [getValue](arkts-arkdata-resultset-i.md#getvalue-1) and [getString](arkts-arkdata-resultset-i.md#getstring-1) after **ResultSet** is obtained through the [query](@ohos.data.relationalStore:relationalStore.RdbStore.query(predicates: RdbPredicates)) or [querySql](arkts-arkdata-rdbstore-i.md#querysqlwithoutrowcount-1) API of **RdbStore**. As a result, the operation may fail or an exception may be thrown.
 
 **Since:** 14
 
@@ -1307,14 +1116,7 @@ updateWithReturning(values: ValuesBucket, predicates: RdbPredicates, config: Ret
       conflict?: ConflictResolution): Promise<Result>
 ```
 
-Updates data in the RDB store based on the specified **RdbPredicates** instance object. You can use the
-**conflict** parameter to specify
-[ConflictResolution](arkts-arkdata-conflictresolution-e.md), and
-[Result](arkts-arkdata-result-i.md) is returned. This API uses a promise to return
-the result.
-
-It is not recommended to use the **ON_CONFLICT_FAIL** policy for the **conflict** parameter, as this may prevent
-the return of correct results.
+Updates data in the RDB store based on the specified **RdbPredicates** instance object. You can use the **conflict** parameter to specify [ConflictResolution](arkts-arkdata-conflictresolution-e.md), and [Result](arkts-arkdata-result-i.md) is returned. This API uses a promise to return the result. It is not recommended to use the **ON_CONFLICT_FAIL** policy for the **conflict** parameter, as this may prevent the return of correct results.
 
 **Since:** 23
 
@@ -1360,13 +1162,7 @@ updateWithReturningSync(values: ValuesBucket, predicates: RdbPredicates, config:
       conflict?: ConflictResolution): Result
 ```
 
-Updates data in the RDB store based on the specified **RdbPredicates** instance object. You can use the
-**conflict** parameter to specify
-[ConflictResolution](arkts-arkdata-conflictresolution-e.md), and
-[Result](arkts-arkdata-result-i.md) is returned.
-
-It is not recommended to use the **ON_CONFLICT_FAIL** policy for the **conflict** parameter, as this may prevent
-the return of correct results.
+Updates data in the RDB store based on the specified **RdbPredicates** instance object. You can use the **conflict** parameter to specify [ConflictResolution](arkts-arkdata-conflictresolution-e.md), and [Result](arkts-arkdata-result-i.md) is returned. It is not recommended to use the **ON_CONFLICT_FAIL** policy for the **conflict** parameter, as this may prevent the return of correct results.
 
 **Since:** 23
 

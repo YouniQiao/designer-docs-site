@@ -12,8 +12,7 @@ import { bundle } from '@kit.AbilityKit';
 function getLaunchWantForBundle(bundleName: string, callback: AsyncCallback<Want>): void
 ```
 
-Obtains the Want object that launches the specified application. This API uses an asynchronous callback to return
-the result.
+Obtains the Want object that launches the specified application. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 

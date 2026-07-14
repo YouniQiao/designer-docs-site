@@ -1,7 +1,6 @@
 # ControlCenter
 
-ControlCenter inherits from [ControlCenterQuery](arkts-camera-controlcenterquery-i.md).
-It is used to enable the camera controller.
+ControlCenter inherits from [ControlCenterQuery](arkts-camera-controlcenterquery-i.md). It is used to enable the camera controller.
 
 **Inheritance/Implementation:** ControlCenter extends [ControlCenterQuery](arkts-camera-controlcenterquery-i.md)
 

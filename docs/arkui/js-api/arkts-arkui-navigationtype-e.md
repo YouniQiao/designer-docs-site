@@ -16,12 +16,7 @@ Navigation type.
 Push
 ```
 
-Navigates to the specified page in the application.
-
-**NOTE**
-
-This API is supported since API version 7 and deprecated since API version 13. You are advised to use
-[pushPath](arkts-arkui-navpathstack-c.md#pushpath-1) instead.
+Navigates to the specified page in the application. **NOTE** This API is supported since API version 7 and deprecated since API version 13. You are advised to use [pushPath](arkts-arkui-navpathstack-c.md#pushpath-1) instead.
 
 **Since:** 7
 
@@ -39,13 +34,7 @@ This API is supported since API version 7 and deprecated since API version 13. Y
 Back
 ```
 
-Returns to the specified page. If the specified page does not exist in the stack, no response is returned. If no
-page is specified, the previous page is returned to.
-
-**NOTE**
-
-This API is supported since API version 7 and deprecated since API version 13. You are advised to use
-[pop](NavPathStack#pop(animated?: boolean)) instead.
+Returns to the specified page. If the specified page does not exist in the stack, no response is returned. If no page is specified, the previous page is returned to. **NOTE** This API is supported since API version 7 and deprecated since API version 13. You are advised to use [pop](NavPathStack#pop(animated?: boolean)) instead.
 
 **Since:** 7
 
@@ -63,12 +52,7 @@ This API is supported since API version 7 and deprecated since API version 13. Y
 Replace
 ```
 
-Replaces the current page with another one in the application and destroys the current page.
-
-**NOTE**
-
-This API is supported since API version 7 and deprecated since API version 13. You are advised to use
-[replacePath](arkts-arkui-navpathstack-c.md#replacepath-1) instead.
+Replaces the current page with another one in the application and destroys the current page. **NOTE** This API is supported since API version 7 and deprecated since API version 13. You are advised to use [replacePath](arkts-arkui-navpathstack-c.md#replacepath-1) instead.
 
 **Since:** 7
 

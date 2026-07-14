@@ -12,10 +12,7 @@ import { companionDeviceAuth } from '@kit.UserAuthenticationKit';
 function registerDeviceSelectCallback(callback: DeviceSelectCallback): void
 ```
 
-Registers a callback for companion device selection. When the system requires the user to select a companion
-device, this callback is triggered. The application needs to return the information about the selected device in
-the callback. Through this callback, the application can implement custom device selection logic, for example,
-displaying a device selection screen for the user to select a device.
+Registers a callback for companion device selection. When the system requires the user to select a companion device, this callback is triggered. The application needs to return the information about the selected device in the callback. Through this callback, the application can implement custom device selection logic, for example, displaying a device selection screen for the user to select a device.
 
 **Since:** 23
 

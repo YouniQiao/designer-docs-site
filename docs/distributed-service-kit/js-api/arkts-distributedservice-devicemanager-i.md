@@ -1,8 +1,6 @@
 # DeviceManager
 
-Provides APIs to obtain information about trusted devices and local devices. Before calling any API in
-**DeviceManager**, you must use **createDeviceManager** to create a **DeviceManager** instance, for example,
-**dmInstance**.
+Provides APIs to obtain information about trusted devices and local devices. Before calling any API in **DeviceManager**, you must use **createDeviceManager** to create a **DeviceManager** instance, for example, **dmInstance**.
 
 **Since:** 10
 
@@ -327,8 +325,7 @@ try {
 getLocalDeviceId(): string
 ```
 
-Obtains the local device ID. The value is the result of obfuscating the udid-hash (hash value of the UDID),
-**appid**, and salt using the SHA-256 algorithm.
+Obtains the local device ID. The value is the result of obfuscating the udid-hash (hash value of the UDID), **appid**, and salt using the SHA-256 algorithm.
 
 **Since:** 10
 
@@ -715,8 +712,7 @@ try {
 off(type: 'serviceDie', callback?: Callback<{}>): void
 ```
 
-Unsubscribes from the dead events of the **DeviceManager** service. This API uses an asynchronous callback to
-return the result.
+Unsubscribes from the dead events of the **DeviceManager** service. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -762,8 +758,7 @@ try {
 on(type: 'deviceStateChange', callback: Callback<{ action: DeviceStateChange; device: DeviceBasicInfo; }>): void
 ```
 
-Subscribes to the device state changes. The application (identified by the bundle name) will be notified when the
-device state changes. This API uses an asynchronous callback to return the result.
+Subscribes to the device state changes. The application (identified by the bundle name) will be notified when the device state changes. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -819,8 +814,7 @@ try {
 on(type: 'discoverSuccess', callback: Callback<{ device: DeviceBasicInfo; }>): void
 ```
 
-Subscribes to the **'discoverSuccess'** event. The application will be notified when a device is successfully
-discovered. This API uses an asynchronous callback to return the result.
+Subscribes to the **'discoverSuccess'** event. The application will be notified when a device is successfully discovered. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -875,8 +869,7 @@ try {
 on(type: 'deviceNameChange', callback: Callback<{ deviceName: string; }>): void
 ```
 
-Subscribes to device name changes. The application will be notified when the name of a device is changed. This
-API uses an asynchronous callback to return the result.
+Subscribes to device name changes. The application will be notified when the name of a device is changed. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -926,8 +919,7 @@ try {
 on(type: 'discoverFailure', callback: Callback<{ reason: number; }>): void
 ```
 
-Subscribes to the **'discoverFailure'** event. The application will be notified when a device fails to be
-discovered. This API uses an asynchronous callback to return the result.
+Subscribes to the **'discoverFailure'** event. The application will be notified when a device fails to be discovered. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -977,9 +969,7 @@ try {
 on(type: 'serviceDie', callback?: Callback<{}>): void
 ```
 
-Subscribes to the dead events of the **DeviceManager** service. The application will be notified when the
-**DeviceManager** service is terminated unexpectedly. This API uses an asynchronous callback to return the
-result.
+Subscribes to the dead events of the **DeviceManager** service. The application will be notified when the **DeviceManager** service is terminated unexpectedly. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -1025,8 +1015,7 @@ try {
 startDiscovering(discoverParam: { [key: string]: Object; }, filterOptions?: { [key: string]: Object; }): void
 ```
 
-Starts to discover devices nearby. The discovery process takes 2 minutes. A maximum of 99 devices can be
-discovered. In Wi-Fi scenarios, only the devices in the same LAN can be discovered.
+Starts to discover devices nearby. The discovery process takes 2 minutes. A maximum of 99 devices can be discovered. In Wi-Fi scenarios, only the devices in the same LAN can be discovered.
 
 **Since:** 10
 

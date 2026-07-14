@@ -12,9 +12,7 @@ Defines the options of translate.
 x?: number | string
 ```
 
-Translation distance along the x-axis.
-For the number type, the unit is VP, and the value range is (-∞, +∞).
-For the string type, the value follows the format of length string type.
+Translation distance along the x-axis. For the number type, the unit is VP, and the value range is (-∞, +∞). For the string type, the value follows the format of length string type.
 
 **类型：** number | string
 

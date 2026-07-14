@@ -12,8 +12,7 @@ import { FaultLogger } from '@kit.PerformanceAnalysisKit';
 function querySelfFaultLog(faultType: FaultType, callback: AsyncCallback<Array<FaultLogInfo>>): void
 ```
 
-Obtains the fault information about the current application. This API uses an asynchronous callback to return the
-fault information array obtained, which contains a maximum of 10 pieces of fault information.
+Obtains the fault information about the current application. This API uses an asynchronous callback to return the fault information array obtained, which contains a maximum of 10 pieces of fault information.
 
 **Since:** 8
 
@@ -66,8 +65,7 @@ FaultLogger.querySelfFaultLog(FaultLogger.FaultType.JS_CRASH, queryFaultLogCallb
 function querySelfFaultLog(faultType: FaultType): Promise<Array<FaultLogInfo>>
 ```
 
-Obtains the fault information about the current application. This API uses a promise to return the fault
-information array obtained, which contains a maximum of 10 pieces of fault information.
+Obtains the fault information about the current application. This API uses a promise to return the fault information array obtained, which contains a maximum of 10 pieces of fault information.
 
 **Since:** 8
 

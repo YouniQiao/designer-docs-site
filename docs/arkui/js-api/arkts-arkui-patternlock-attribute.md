@@ -1,11 +1,6 @@
 # PatternLock properties/events
 
-In addition to the
-[universal attributes](../../../../reference/apis-arkui/arkui-ts/ts-component-general-attributes.md), the following
-attributes are supported.
-
-In addition to the [universal events](../../../../reference/apis-arkui/arkui-ts/ts-component-general-events.md), the
-following events are supported.
+In addition to the [universal attributes](../../../../reference/apis-arkui/arkui-ts/ts-component-general-attributes.md), the following attributes are supported. In addition to the [universal events](../../../../reference/apis-arkui/arkui-ts/ts-component-general-events.md), the following events are supported.
 
 **Inheritance/Implementation:** PatternLockAttribute extends [CommonMethod<PatternLockAttribute>](CommonMethod<PatternLockAttribute>)
 
@@ -61,8 +56,7 @@ Sets the fill color of the grid dot in the activated state, which is when the do
 autoReset(value: boolean)
 ```
 
-Sets whether to allow the user to reset the component status (that is, clear the input) by touching the component
-again after the input is complete.
+Sets whether to allow the user to reset the component status (that is, clear the input) by touching the component again after the input is complete.
 
 **Since:** 9
 
@@ -82,11 +76,7 @@ again after the input is complete.
 backgroundColor(value: ResourceColor)
 ```
 
-Sets the background color.
-
-> **NOTE**
->
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
+Sets the background color. > **NOTE** > > This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
 
 **Since:** 9
 
@@ -106,8 +96,7 @@ Sets the background color.
 circleRadius(value: Length)
 ```
 
-Sets the radius of the dots in a grid. If this attribute is set to **0** or a negative value, the default value is
-used.
+Sets the radius of the dots in a grid. If this attribute is set to **0** or a negative value, the default value is used.
 
 **Since:** 9
 
@@ -127,15 +116,7 @@ used.
 onDotConnect(callback: import('../api/@ohos.base').Callback<number>)
 ```
 
-Invoked when a grid dot is connected during pattern password input.
-
-The callback parameter is an array of digits, where each digit represents the index of a selected grid dot, listed
-in the order they were connected. Grid dots are indexed row-wise from top to bottom, left to right: The first row
-contains indices 0, 1, 2; the second row 3, 4, 5; and the third row 6, 7, 8.
-
-> **NOTE**
->
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
+Invoked when a grid dot is connected during pattern password input. The callback parameter is an array of digits, where each digit represents the index of a selected grid dot, listed in the order they were connected. Grid dots are indexed row-wise from top to bottom, left to right: The first row contains indices 0, 1, 2; the second row 3, 4, 5; and the third row 6, 7, 8. > **NOTE** > > This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
 
 **Since:** 11
 
@@ -197,8 +178,7 @@ Sets the path color.
 pathStrokeWidth(value: number | string)
 ```
 
-Sets the width of the path stroke. If this attribute is set to **0** or a negative value, the path stroke is not
-displayed.
+Sets the width of the path stroke. If this attribute is set to **0** or a negative value, the path stroke is not displayed.
 
 **Since:** 9
 
@@ -258,14 +238,7 @@ Fill color of the grid dot in the selected state.
 sideLength(value: Length)
 ```
 
-Sets the width and height (same value) of the component. If this attribute is set to **0** or a negative number,
-the component is not displayed.
-
-> **NOTE**
->
-> When the **PatternLock** component has the universal attribute [aspectRatio](arkts-arkui-commonmethod-c.md#aspectratio-1) set
-> and the ratio is not equal to 1 (the component is constrained to a rectangle), the nine‑grid pattern is still
-> drawn as a square, which exceeds the component's bounds.
+Sets the width and height (same value) of the component. If this attribute is set to **0** or a negative number, the component is not displayed. > **NOTE** > > When the **PatternLock** component has the universal attribute [aspectRatio](arkts-arkui-commonmethod-c.md#aspectratio-1) set > and the ratio is not equal to 1 (the component is constrained to a rectangle), the nine‑grid pattern is still > drawn as a square, which exceeds the component's bounds.
 
 **Since:** 9
 

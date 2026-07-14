@@ -12,16 +12,7 @@ import { formHost } from '@kit.FormKit';
 function setRouterProxy(formIds: Array<string>, proxy: Callback<Want>, callback: AsyncCallback<void>): void
 ```
 
-Sets a router proxy for widgets and obtains the Want information required for redirection. This API uses an
-asynchronous callback to return the result.
-
-> **NOTE**
->
-> Generally, for a widget added to the home screen, in the case of router-based redirection, the widget framework
-> checks whether the destination is proper and whether the widget has the redirection permission, and then
-> triggers redirection accordingly. For a widget that is added to a widget host and has a router proxy configured,
-> in the case of router-based redirection, the widget framework does not trigger redirection for the widget.
-> - Only one router proxy can be set for a widget. If multiple proxies are set, only the last proxy takes effect.
+Sets a router proxy for widgets and obtains the Want information required for redirection. This API uses an asynchronous callback to return the result. > **NOTE** > > Generally, for a widget added to the home screen, in the case of router-based redirection, the widget framework > checks whether the destination is proper and whether the widget has the redirection permission, and then > triggers redirection accordingly. For a widget that is added to a widget host and has a router proxy configured, > in the case of router-based redirection, the widget framework does not trigger redirection for the widget. > - Only one router proxy can be set for a widget. If multiple proxies are set, only the last proxy takes effect.
 
 **Since:** 11
 
@@ -58,17 +49,7 @@ asynchronous callback to return the result.
 function setRouterProxy(formIds: Array<string>, proxy: Callback<Want>): Promise<void>
 ```
 
-Sets a router proxy for widgets and obtains the Want information required for redirection. This API uses a promise
-to return the result. This API uses a promise to return the result.
-
-> **NOTE**
->
-> - Generally, for a widget added to the home screen, in the case of router-based redirection, the widget framework
-> checks whether the destination is proper and whether the widget has the redirection permission, and then
-> triggers redirection accordingly. For a widget that is added to a widget host and has a router proxy configured,
-> in the case of router-based redirection, the widget framework does not trigger redirection for the widget.
->
-> - Only one router proxy can be set for a widget. If multiple proxies are set, only the last proxy takes effect.
+Sets a router proxy for widgets and obtains the Want information required for redirection. This API uses a promise to return the result. This API uses a promise to return the result. > **NOTE** > > - Generally, for a widget added to the home screen, in the case of router-based redirection, the widget framework > checks whether the destination is proper and whether the widget has the redirection permission, and then > triggers redirection accordingly. For a widget that is added to a widget host and has a router proxy configured, > in the case of router-based redirection, the widget framework does not trigger redirection for the widget. > > - Only one router proxy can be set for a widget. If multiple proxies are set, only the last proxy takes effect.
 
 **Since:** 11
 

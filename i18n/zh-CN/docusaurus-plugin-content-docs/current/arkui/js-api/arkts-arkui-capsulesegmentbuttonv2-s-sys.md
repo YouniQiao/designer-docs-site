@@ -10,11 +10,7 @@
 readonly backgroundSystemMaterial?: uiMaterial.Material
 ```
 
-分段按钮组件的背景板的系统材质。不同系统材质包含不同的属性影响效果。传入材质后，SegmentButtonV2的动效发生改变。
-
-默认值：无材质效果。
-
-该成员只读，不支持更改。
+分段按钮组件的背景板的系统材质。不同系统材质包含不同的属性影响效果。传入材质后，SegmentButtonV2的动效发生改变。 默认值：无材质效果。 该成员只读，不支持更改。
 
 **类型：** uiMaterial.Material
 

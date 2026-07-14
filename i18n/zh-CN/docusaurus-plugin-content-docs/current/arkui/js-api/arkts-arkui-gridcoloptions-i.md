@@ -1,10 +1,6 @@
 # GridColOptions
 
-设置栅格列布局组件布局选项。
-
-`span`、`offset`、`order`属性按照`xs`、`sm`、`md`、`lg`、`xl`、`xxl`的顺序具有“继承性”，未设置值的断点将会从前一个断点取值。
-
-API version 20之后，`span`的继承规则见[GridColColumnOption](arkts-arkui-gridcolcolumnoption-i.md)。
+设置栅格列布局组件布局选项。 `span`、`offset`、`order`属性按照`xs`、`sm`、`md`、`lg`、`xl`、`xxl`的顺序具有“继承性”，未设置值的断点将会从前一个断点取值。 API version 20之后，`span`的继承规则见[GridColColumnOption](arkts-arkui-gridcolcolumnoption-i.md)。
 
 **起始版本：** 9
 
@@ -16,11 +12,7 @@ API version 20之后，`span`的继承规则见[GridColColumnOption](arkts-arkui
 offset?: number | GridColColumnOption
 ```
 
-栅格子组件相对于原本位置偏移的列数。
-
-取值为非负整数，默认值为0
-
-非法值：按默认值处理。
+栅格子组件相对于原本位置偏移的列数。 取值为非负整数，默认值为0 非法值：按默认值处理。
 
 **类型：** number | GridColColumnOption
 
@@ -38,17 +30,7 @@ offset?: number | GridColColumnOption
 order?: number | GridColColumnOption
 ```
 
-元素的序号，根据栅格子组件的序号，从小到大对栅格子组件做排序。
-
-取值为非负整数，默认值为0。
-
-非法值：按默认值处理。
-
-**说明：**
-
-当子组件不设置order或者设置相同的order，子组件按照代码顺序展示。
-
-当子组件部分设置order，部分不设置order时，未设置order的子组件依次排序靠前，设置了order的子组件按照数值从小到大排列。
+元素的序号，根据栅格子组件的序号，从小到大对栅格子组件做排序。 取值为非负整数，默认值为0。 非法值：按默认值处理。 **说明：** 当子组件不设置order或者设置相同的order，子组件按照代码顺序展示。 当子组件部分设置order，部分不设置order时，未设置order的子组件依次排序靠前，设置了order的子组件按照数值从小到大排列。
 
 **类型：** number | GridColColumnOption
 
@@ -66,11 +48,7 @@ order?: number | GridColColumnOption
 span?: number | GridColColumnOption
 ```
 
-栅格子组件占用栅格容器组件的列数。span为0表示该元素不参与布局计算，即不会被渲染。
-
-取值为非负整数，默认值为1
-
-非法值：按默认值处理。
+栅格子组件占用栅格容器组件的列数。span为0表示该元素不参与布局计算，即不会被渲染。 取值为非负整数，默认值为1 非法值：按默认值处理。
 
 **类型：** number | GridColColumnOption
 

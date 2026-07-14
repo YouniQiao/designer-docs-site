@@ -12,8 +12,7 @@ import { notificationManager } from '@kit.NotificationKit';
 function getActiveNotificationByFilter(filter: NotificationFilter, callback: AsyncCallback<NotificationRequest>): void
 ```
 
-Obtains information about the common live view that matches the specified filter criteria. This API uses an
-asynchronous callback to return the result.
+Obtains information about the common live view that matches the specified filter criteria. This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -74,8 +73,7 @@ notificationManager.getActiveNotificationByFilter(filter, getActiveNotificationB
 function getActiveNotificationByFilter(filter: NotificationFilter): Promise<NotificationRequest>
 ```
 
-Obtains information about the common live view that matches the specified filter criteria. This API uses a promise
-to return the result.
+Obtains information about the common live view that matches the specified filter criteria. This API uses a promise to return the result.
 
 **Since:** 11
 

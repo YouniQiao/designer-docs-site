@@ -12,8 +12,7 @@ import { bundleManager } from '@kit.AbilityKit';
 function getAllPluginInfo(hostBundleName: string, userId?: number): Promise<Array<PluginBundleInfo>>
 ```
 
-Obtains all the plugin information in the system based on the given host bundle name and user ID. This API uses a
-promise to return the result.
+Obtains all the plugin information in the system based on the given host bundle name and user ID. This API uses a promise to return the result.
 
 **Since:** 19
 

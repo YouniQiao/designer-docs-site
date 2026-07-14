@@ -1,7 +1,6 @@
 # GattClientDevice
 
-Manages GATT client. Before calling an Gatt client method, you must use {@link createGattClientDevice} to create an
-GattClientDevice instance.
+Manages GATT client. Before calling an Gatt client method, you must use {@link createGattClientDevice} to create an GattClientDevice instance.
 
 **Since:** 9
 
@@ -23,10 +22,7 @@ import { bluetoothManager } from '@kit.ConnectivityKit';
 close(): void
 ```
 
-Disables a BLE peripheral device.
-
-This method unregisters the device and clears the registered callbacks and handles.
-On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
+Disables a BLE peripheral device. This method unregisters the device and clears the registered callbacks and handles. On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
 
 **Since:** 9
 
@@ -69,10 +65,7 @@ try {
 connect(): void
 ```
 
-Connects to a BLE peripheral device.
-
-The 'BLEConnectionStateChange' event is subscribed to return the connection state.
-On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
+Connects to a BLE peripheral device. The 'BLEConnectionStateChange' event is subscribed to return the connection state. On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
 
 **Since:** 9
 
@@ -115,8 +108,7 @@ try {
 disconnect(): void
 ```
 
-Disconnects from or stops an ongoing connection to a BLE peripheral device.
-On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
+Disconnects from or stops an ongoing connection to a BLE peripheral device. On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
 
 **Since:** 9
 
@@ -159,8 +151,7 @@ try {
 getDeviceName(callback: AsyncCallback<string>): void
 ```
 
-Obtains the name of BLE peripheral device.
-On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
+Obtains the name of BLE peripheral device. On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
 
 **Since:** 9
 
@@ -214,8 +205,7 @@ try {
 getDeviceName(): Promise<string>
 ```
 
-Obtains the name of BLE peripheral device.
-On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
+Obtains the name of BLE peripheral device. On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
 
 **Since:** 9
 
@@ -268,8 +258,7 @@ try {
 getRssiValue(callback: AsyncCallback<number>): void
 ```
 
-Get the RSSI value of this BLE peripheral device.
-On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
+Get the RSSI value of this BLE peripheral device. On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
 
 **Since:** 9
 
@@ -322,8 +311,7 @@ try {
 getRssiValue(): Promise<number>
 ```
 
-Get the RSSI value of this BLE peripheral device.
-On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
+Get the RSSI value of this BLE peripheral device. On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
 
 **Since:** 9
 
@@ -374,8 +362,7 @@ try {
 getServices(callback: AsyncCallback<Array<GattService>>): void
 ```
 
-Starts discovering services.
-On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
+Starts discovering services. On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
 
 **Since:** 9
 
@@ -438,8 +425,7 @@ try {
 getServices(): Promise<Array<GattService>>
 ```
 
-Starts discovering services.
-On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
+Starts discovering services. On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
 
 **Since:** 9
 
@@ -492,8 +478,7 @@ try {
 off(type: 'BLECharacteristicChange', callback?: Callback<BLECharacteristic>): void
 ```
 
-Unsubscribe characteristic value changed event.
-On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
+Unsubscribe characteristic value changed event. On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
 
 **Since:** 9
 
@@ -540,8 +525,7 @@ try {
 off(type: 'BLEConnectionStateChange', callback?: Callback<BLEConnectChangedState>): void
 ```
 
-Unsubscribe client connection state changed event.
-On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
+Unsubscribe client connection state changed event. On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
 
 **Since:** 9
 
@@ -588,8 +572,7 @@ try {
 on(type: 'BLECharacteristicChange', callback: Callback<BLECharacteristic>): void
 ```
 
-Subscribe characteristic value changed event.
-On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
+Subscribe characteristic value changed event. On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
 
 **Since:** 9
 
@@ -641,8 +624,7 @@ try {
 on(type: 'BLEConnectionStateChange', callback: Callback<BLEConnectChangedState>): void
 ```
 
-Subscribe client connection state changed event.
-On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
+Subscribe client connection state changed event. On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
 
 **Since:** 9
 
@@ -693,8 +675,7 @@ try {
 readCharacteristicValue(characteristic: BLECharacteristic, callback: AsyncCallback<BLECharacteristic>): void
 ```
 
-Reads the characteristic of a BLE peripheral device.
-On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
+Reads the characteristic of a BLE peripheral device. On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
 
 **Since:** 9
 
@@ -770,8 +751,7 @@ try {
 readCharacteristicValue(characteristic: BLECharacteristic): Promise<BLECharacteristic>
 ```
 
-Reads the characteristic of a BLE peripheral device.
-On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
+Reads the characteristic of a BLE peripheral device. On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
 
 **Since:** 9
 
@@ -843,8 +823,7 @@ try {
 readDescriptorValue(descriptor: BLEDescriptor, callback: AsyncCallback<BLEDescriptor>): void
 ```
 
-Reads the descriptor of a BLE peripheral device.
-On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
+Reads the descriptor of a BLE peripheral device. On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
 
 **Since:** 9
 
@@ -912,8 +891,7 @@ try {
 readDescriptorValue(descriptor: BLEDescriptor): Promise<BLEDescriptor>
 ```
 
-Reads the descriptor of a BLE peripheral device.
-On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
+Reads the descriptor of a BLE peripheral device. On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
 
 **Since:** 9
 
@@ -978,8 +956,7 @@ try {
 setBLEMtuSize(mtu: number): void
 ```
 
-Set the mtu size of a BLE peripheral device.
-On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
+Set the mtu size of a BLE peripheral device. On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
 
 **Since:** 9
 
@@ -1028,8 +1005,7 @@ try {
 setNotifyCharacteristicChanged(characteristic: BLECharacteristic, enable: boolean): void
 ```
 
-Enables or disables notification of a characteristic when value changed.
-On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
+Enables or disables notification of a characteristic when value changed. On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
 
 **Since:** 9
 
@@ -1096,8 +1072,7 @@ try {
 writeCharacteristicValue(characteristic: BLECharacteristic): void
 ```
 
-Writes the characteristic of a BLE peripheral device.
-On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
+Writes the characteristic of a BLE peripheral device. On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
 
 **Since:** 9
 
@@ -1162,8 +1137,7 @@ try {
 writeDescriptorValue(descriptor: BLEDescriptor): void
 ```
 
-Writes the descriptor of a BLE peripheral device.
-On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
+Writes the descriptor of a BLE peripheral device. On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
 
 **Since:** 9
 

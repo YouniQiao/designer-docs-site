@@ -12,15 +12,7 @@ import { zlib } from '@kit.BasicServicesKit';
 function decompressFile(inFile: string, outFile: string, options: Options, callback: AsyncCallback<void>): void
 ```
 
-Decompresses a file. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> To avoid path traversal, the input parameters of **inFile** and **outFile** cannot contain two consecutive
-> periods and a slash (../) since API version 13. Otherwise, error codes 900001 and 900002 are returned.
->
-> The name of the zipped file or zipped folder cannot contain two consecutive periods and a slash (../). Otherwise,
-> the error code 900003 is returned.
+Decompresses a file. This API uses an asynchronous callback to return the result. > **NOTE** > > To avoid path traversal, the input parameters of **inFile** and **outFile** cannot contain two consecutive > periods and a slash (../) since API version 13. Otherwise, error codes 900001 and 900002 are returned. > > The name of the zipped file or zipped folder cannot contain two consecutive periods and a slash (../). Otherwise, > the error code 900003 is returned.
 
 **Since:** 9
 
@@ -82,15 +74,7 @@ try {
 function decompressFile(inFile: string, outFile: string, callback: AsyncCallback<void>): void
 ```
 
-Decompresses a file. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> To avoid path traversal, the input parameters of **inFile** and **outFile** cannot contain two consecutive
-> periods and a slash (../) since API version 13. Otherwise, error codes 900001 and 900002 are returned.
->
-> The name of the zipped file or zipped folder cannot contain two consecutive periods and a slash (../). Otherwise,
-> the error code 900003 is returned.
+Decompresses a file. This API uses an asynchronous callback to return the result. > **NOTE** > > To avoid path traversal, the input parameters of **inFile** and **outFile** cannot contain two consecutive > periods and a slash (../) since API version 13. Otherwise, error codes 900001 and 900002 are returned. > > The name of the zipped file or zipped folder cannot contain two consecutive periods and a slash (../). Otherwise, > the error code 900003 is returned.
 
 **Since:** 10
 
@@ -147,15 +131,7 @@ try {
 function decompressFile(inFile: string, outFile: string, options?: Options): Promise<void>
 ```
 
-Decompresses a file. This API uses a promise to return the result.
-
-> **NOTE**
->
-> To avoid path traversal, the input parameters of **inFile** and **outFile** cannot contain two consecutive
-> periods and a slash (../) since API version 13. Otherwise, error codes 900001 and 900002 are returned.
->
-> The name of the zipped file or zipped folder cannot contain two consecutive periods and a slash (../). Otherwise,
-> the error code 900003 is returned.
+Decompresses a file. This API uses a promise to return the result. > **NOTE** > > To avoid path traversal, the input parameters of **inFile** and **outFile** cannot contain two consecutive > periods and a slash (../) since API version 13. Otherwise, error codes 900001 and 900002 are returned. > > The name of the zipped file or zipped folder cannot contain two consecutive periods and a slash (../). Otherwise, > the error code 900003 is returned.
 
 **Since:** 9
 

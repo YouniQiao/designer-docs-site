@@ -50,8 +50,7 @@ Address of the ranging device.
 handle?: number
 ```
 
-Indicates the handle number of ranging monitoring.
-The value should be an integer.
+Indicates the handle number of ranging monitoring. The value should be an integer.
 
 **Type:** number
 

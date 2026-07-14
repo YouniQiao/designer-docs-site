@@ -12,8 +12,7 @@ import { avSession } from '@kit.AVSessionKit';
 function startDeviceLogging(url: string, maxSize?: number): Promise<void>
 ```
 
-Begin to write device logs into a file descriptor for the purpose of problem locating.
-If the logs exceed max file size, no logs will be written and DEVICE_LOG_FULL event will be omitted.
+Begin to write device logs into a file descriptor for the purpose of problem locating. If the logs exceed max file size, no logs will be written and DEVICE_LOG_FULL event will be omitted.
 
 **Since:** 13
 

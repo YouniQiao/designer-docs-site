@@ -6,8 +6,7 @@
 function getKioskStatus(): Promise<KioskStatus>
 ```
 
-获取系统Kiosk模式的状态信息（包括当前系统是否处于Kiosk模式、进入Kiosk模式应用的名称和UID）。使用Promise异步回调。
-该接口仅在Phone、PC/2in1和Tablet设备中可正常调用，在其他设备中返回801错误码。
+获取系统Kiosk模式的状态信息（包括当前系统是否处于Kiosk模式、进入Kiosk模式应用的名称和UID）。使用Promise异步回调。 该接口仅在Phone、PC/2in1和Tablet设备中可正常调用，在其他设备中返回801错误码。
 
 **起始版本：** 20
 
@@ -45,12 +44,13 @@ struct Index {
     Column() {
       Button('getKioskInfo').margin({ top: 10 })
         .onClick(() => {
+          // 获取Kiosk模式状态信息
           kioskManager.getKioskStatus()
             .then((data: kioskManager.KioskStatus) => {
-              hilog.info(0x0000, 'testTag', '%{public}s', `getKioskinfo success: ${JSON.stringify(data)}`);
+              hilog.info(0x0000, 'testTag', '%{public}s', `getKioskStatus success: ${JSON.stringify(data)}`);
             })
             .catch((error: BusinessError) => {
-              hilog.error(0x0000, 'testTag', '%{public}s', `getKioskinfo failed:${JSON.stringify(error)}`);
+              hilog.error(0x0000, 'testTag', '%{public}s', `getKioskStatus failed. Code: ${error.code}, message: ${error.message}`);
             });
         })
     }

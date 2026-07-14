@@ -6,14 +6,7 @@
 function usbCancelTransfer(transfer: UsbDataTransferParams): void
 ```
 
-取消异步传输请求。
-
-> **说明：**
->
-> 该接口的主要作用是主动取消尚未完成的USB数据传输请求（如usbSubmitTransfer提交的传输）。<br>
-> > 在调用该接口前需要通过
-> [usbManager.claimInterface](arkts-basicservices-claiminterface-f.md#claiminterface-1)
-> claim通信接口。
+取消异步传输请求。 > **说明：** > > 该接口的主要作用是主动取消尚未完成的USB数据传输请求（如usbSubmitTransfer提交的传输）。<br> > > 在调用该接口前需要通过 > [usbManager.claimInterface](arkts-basicservices-claiminterface-f.md#claiminterface-1) > claim通信接口。
 
 **起始版本：** 18
 
@@ -43,14 +36,14 @@ function usbCancelTransfer(transfer: UsbDataTransferParams): void
 // usbManager.getDevices 接口返回数据集合，取其中一个设备对象，并获取权限。
 // 把获取到的设备对象作为参数传入usbManager.connectDevice;当usbManager.connectDevice接口成功返回之后；
 // 才可以调用第三个接口usbManager.claimInterface.当usbManager.claimInterface 调用成功以后,再调用该接口。
-function usbCancelTransfer() {
+async function usbCancelTransfer() {
   let devicesList: Array<usbManager.USBDevice> = usbManager.getDevices();
   if (!devicesList || devicesList.length == 0) {
     console.info(`device list is empty`);
     return;
   }
   let device: usbManager.USBDevice = devicesList?.[0];
-  usbManager.requestRight(device.name);
+  await usbManager.requestRight(device.name);
   let devicepipe: usbManager.USBDevicePipe = usbManager.connectDevice(device);
   if (devicepipe === undefined) {
     console.info(`connect device fail`);

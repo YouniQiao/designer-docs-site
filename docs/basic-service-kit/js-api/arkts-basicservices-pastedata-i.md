@@ -1,12 +1,6 @@
 # PasteData
 
-Implements a **PasteData** object. PasteData contains one or more data records (
-[PasteDataRecord](arkts-basicservices-pastedatarecord-i.md)) and property description objects (
-[PasteDataProperty](arkts-basicservices-pastedataproperty-i.md)).
-Before calling any API in **PasteData**, you must use **
-[createData()](arkts-basicservices-createdata-f.md#createdata-1)** or **
-[getData()](arkts-basicservices-systempasteboard-i.md#getdata-1)** to create a
-**PasteData** object.
+Implements a **PasteData** object. PasteData contains one or more data records ( [PasteDataRecord](arkts-basicservices-pastedatarecord-i.md)) and property description objects ( [PasteDataProperty](arkts-basicservices-pastedataproperty-i.md)). Before calling any API in **PasteData**, you must use ** [createData()](arkts-basicservices-createdata-f.md#createdata-1)** or ** [getData()](arkts-basicservices-systempasteboard-i.md#getdata-1)** to create a **PasteData** object.
 
 **Since:** 6
 
@@ -24,9 +18,7 @@ import { pasteboard } from '@kit.BasicServicesKit';
 addHtmlRecord(htmlText: string): void
 ```
 
-Adds an HTML record to the PasteData, and adds **MIMETYPE_TEXT_HTML** to **mimeTypes** in
-[PasteDataProperty](arkts-basicservices-pastedataproperty-i.md). The parameters cannot be empty. Otherwise, the operation
-fails.
+Adds an HTML record to the PasteData, and adds **MIMETYPE_TEXT_HTML** to **mimeTypes** in [PasteDataProperty](arkts-basicservices-pastedataproperty-i.md). The parameters cannot be empty. Otherwise, the operation fails.
 
 **Since:** 7
 
@@ -57,9 +49,7 @@ pasteData.addHtmlRecord(html);
 addRecord(record: PasteDataRecord): void
 ```
 
-Adds a data record to the PasteData, and adds its type to **mimeTypes** in
-[PasteDataProperty](arkts-basicservices-pastedataproperty-i.md). The parameters cannot be empty. Otherwise, the operation
-fails.
+Adds a data record to the PasteData, and adds its type to **mimeTypes** in [PasteDataProperty](arkts-basicservices-pastedataproperty-i.md). The parameters cannot be empty. Otherwise, the operation fails.
 
 **Since:** 7
 
@@ -93,9 +83,7 @@ pasteData.addRecord(htmlRecord);
 addRecord(mimeType: string, value: ValueType): void
 ```
 
-Adds a data record to the PasteData, and adds its type to **mimeTypes** in
-[PasteDataProperty](arkts-basicservices-pastedataproperty-i.md). The parameters cannot be empty. Otherwise, the operation
-fails.
+Adds a data record to the PasteData, and adds its type to **mimeTypes** in [PasteDataProperty](arkts-basicservices-pastedataproperty-i.md). The parameters cannot be empty. Otherwise, the operation fails.
 
 **Since:** 9
 
@@ -133,9 +121,7 @@ pasteData.addRecord('app/xml', dataXml);
 addTextRecord(text: string): void
 ```
 
-Adds a plain text record to the PasteData, and adds **MIMETYPE_TEXT_PLAIN** to **mimeTypes** in
-[PasteDataProperty](arkts-basicservices-pastedataproperty-i.md). The parameters cannot be empty. Otherwise, the operation
-fails.
+Adds a plain text record to the PasteData, and adds **MIMETYPE_TEXT_PLAIN** to **mimeTypes** in [PasteDataProperty](arkts-basicservices-pastedataproperty-i.md). The parameters cannot be empty. Otherwise, the operation fails.
 
 **Since:** 7
 
@@ -165,9 +151,7 @@ pasteData.addTextRecord('good');
 addUriRecord(uri: string): void
 ```
 
-Adds a URI record to the PasteData, and adds **MIMETYPE_TEXT_URI** to **mimeTypes** in
-[PasteDataProperty](arkts-basicservices-pastedataproperty-i.md). The parameters cannot be empty. Otherwise, the operation
-fails.
+Adds a URI record to the PasteData, and adds **MIMETYPE_TEXT_URI** to **mimeTypes** in [PasteDataProperty](arkts-basicservices-pastedataproperty-i.md). The parameters cannot be empty. Otherwise, the operation fails.
 
 **Since:** 7
 
@@ -197,9 +181,7 @@ pasteData.addUriRecord('dataability:///com.example.myapplication1/user.txt');
 addWantRecord(want: Want): void
 ```
 
-Adds a Want record to the PasteData, and adds **MIMETYPE_TEXT_WANT** to **mimeTypes** in
-[PasteDataProperty](arkts-basicservices-pastedataproperty-i.md). The parameters cannot be empty. Otherwise, the operation
-fails.
+Adds a Want record to the PasteData, and adds **MIMETYPE_TEXT_WANT** to **mimeTypes** in [PasteDataProperty](arkts-basicservices-pastedataproperty-i.md). The parameters cannot be empty. Otherwise, the operation fails.
 
 **Since:** 7
 

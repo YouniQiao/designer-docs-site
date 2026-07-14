@@ -14,8 +14,7 @@ Enum for rotate event.
 UNCHANGED = -1
 ```
 
-Indicates the device has rotated, but the movement is insufficient
-to change the current orientation. The orientation remains the same as before.
+Indicates the device has rotated, but the movement is insufficient to change the current orientation. The orientation remains the same as before.
 
 **Since:** 26.0.0
 

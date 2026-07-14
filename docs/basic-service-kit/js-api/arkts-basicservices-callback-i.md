@@ -1,7 +1,6 @@
 # Callback
 
-Defines a common callback. You can set **data** to customize the data type of the information returned by the
-callback.
+Defines a common callback. You can set **data** to customize the data type of the information returned by the callback.
 
 **Since:** 6
 

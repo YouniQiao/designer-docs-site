@@ -1,8 +1,6 @@
 # LaunchParam
 
-Describes the launch parameters, which mainly include the ability launch reasons and reasons for the last exit. The
-parameter values are automatically passed in by the system when the ability is launched. You do not need to change
-the values.
+Describes the launch parameters, which mainly include the ability launch reasons and reasons for the last exit. The parameter values are automatically passed in by the system when the ability is launched. You do not need to change the values.
 
 **Since:** 9
 
@@ -20,8 +18,7 @@ import { AbilityConstant } from '@kit.AbilityKit';
 lastExitDetailInfo?: LastExitDetailInfo
 ```
 
-Key runtime information for the last exit of the ability (including process ID, exit timestamp, and RSS memory
-value).
+Key runtime information for the last exit of the ability (including process ID, exit timestamp, and RSS memory value).
 
 **Type:** LastExitDetailInfo
 
@@ -75,8 +72,7 @@ An enumerated value indicating the reason for the last exit of the ability.
 launchReason: LaunchReason
 ```
 
-An enumerated value indicating the reason for ability launch (for example, recovery from a fault, intent
-invocation, or atomic service sharing). For details, see [LaunchReason](arkts-ability-launchreason-e.md).
+An enumerated value indicating the reason for ability launch (for example, recovery from a fault, intent invocation, or atomic service sharing). For details, see [LaunchReason](arkts-ability-launchreason-e.md).
 
 **Type:** LaunchReason
 
@@ -112,14 +108,7 @@ Detailed message that describes the reason for the ability launch.
 launchUTCTime?: number
 ```
 
-UTC timestamp when the UIAbility starts, in milliseconds.
-
-This API can be used in atomic services since API version 23.
-
-**Constraints**:
-
-This feature takes effect only when the UIAbility is started. For other types of abilities (for example,
-UIExtensionAbility), the obtained start time is the default value **0**.
+UTC timestamp when the UIAbility starts, in milliseconds. This API can be used in atomic services since API version 23. **Constraints**: This feature takes effect only when the UIAbility is started. For other types of abilities (for example, UIExtensionAbility), the obtained start time is the default value **0**.
 
 **Type:** number
 
@@ -137,12 +126,7 @@ UIExtensionAbility), the obtained start time is the default value **0**.
 launchUptime?: number
 ```
 
-System uptime (the time elapsed since the system booted up) when the UIAbility starts, in milliseconds.
-
-**Constraints**:
-
-This feature takes effect only when the UIAbility is started. For other types of abilities (for example,
-UIExtensionAbility), the obtained start time is the default value **0**.
+System uptime (the time elapsed since the system booted up) when the UIAbility starts, in milliseconds. **Constraints**: This feature takes effect only when the UIAbility is started. For other types of abilities (for example, UIExtensionAbility), the obtained start time is the default value **0**.
 
 **Type:** number
 

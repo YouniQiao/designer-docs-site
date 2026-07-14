@@ -12,12 +12,7 @@ import { userAuth } from '@kit.UserAuthenticationKit';
 function getAvailableStatus(authType: UserAuthType, authTrustLevel: AuthTrustLevel): void
 ```
 
-Checks whether the specified authentication capability is supported. This API is used to check whether the current
-device supports the specified authentication type and authentication trust level. It helps an application determine
-whether the authentication capability is available before initiating authentication, thereby avoiding unnecessary
-authentication failures. If the query is successful (no error is thrown), the authentication capability is
-available. If an error is thrown, the application should determine the cause based on the error code and take
-appropriate measures.
+Checks whether the specified authentication capability is supported. This API is used to check whether the current device supports the specified authentication type and authentication trust level. It helps an application determine whether the authentication capability is available before initiating authentication, thereby avoiding unnecessary authentication failures. If the query is successful (no error is thrown), the authentication capability is available. If an error is thrown, the application should determine the cause based on the error code and take appropriate measures.
 
 **Since:** 9
 

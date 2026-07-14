@@ -6,11 +6,7 @@
 function getDomainFilterRules(admin: Want): Array<DomainFilterRule>
 ```
 
-查询设备域名过滤规则。
-
-API version 21及之前版本，仅支持IPv4。从API version 22开始，支持IPv4和IPv6。
-
-从API version 23开始，支持[LogType](arkts-mdm-logtype-e.md)。
+查询设备域名过滤规则。 API version 21及之前版本，仅支持IPv4。从API version 22开始，支持IPv4和IPv6。 从API version 23开始，支持[LogType](arkts-mdm-logtype-e.md)。
 
 **起始版本：** 12
 

@@ -2,7 +2,7 @@
 
 Configuring parameters in GNSS geofence requests.
 
-**Since:** 22
+**Since:** 12
 
 **System capability:** SystemCapability.Location.Location.Geofence
 
@@ -36,7 +36,7 @@ Circular fence information.
 
 **Type:** Geofence
 
-**Since:** 22
+**Since:** 12
 
 **System capability:** SystemCapability.Location.Location.Geofence
 
@@ -50,7 +50,7 @@ Indicates the callback for reporting the geofence transition status.
 
 **Type:** AsyncCallback<GeofenceTransition>
 
-**Since:** 22
+**Since:** 12
 
 **System capability:** SystemCapability.Location.Location.Geofence
 
@@ -60,9 +60,7 @@ Indicates the callback for reporting the geofence transition status.
 loiterTimeMs?: number
 ```
 
-Indicates time for which a device is dwelling in the geofence, in milliseconds.
-If the device dwelling time reaches the value specified by this parameter,
-a GEOFENCE_TRANSITION_EVENT_DWELL event is reported.
+Indicates time for which a device is dwelling in the geofence, in milliseconds. If the device dwelling time reaches the value specified by this parameter, a GEOFENCE_TRANSITION_EVENT_DWELL event is reported. The value should be an integer.
 
 **Type:** number
 
@@ -80,7 +78,7 @@ Indicates geofence transition status monitored.
 
 **Type:** Array<GeofenceTransitionEvent>
 
-**Since:** 22
+**Since:** 12
 
 **System capability:** SystemCapability.Location.Location.Geofence
 
@@ -94,7 +92,7 @@ Indicates the geofence notifications to publish.
 
 **Type:** Array<NotificationRequest>
 
-**Since:** 22
+**Since:** 12
 
 **System capability:** SystemCapability.Location.Location.Geofence
 

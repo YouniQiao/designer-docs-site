@@ -6,8 +6,7 @@
 function setCustomWallpaper(source: string, wallpaperType: WallpaperType, callback: AsyncCallback<void>): void
 ```
 
-将指定的zip资源包设置为桌面或锁屏的壁纸资源，仅当com.ohos.sceneboard存在时，支持使用该接口。且具有ohos.permission.GET_WALLPAPER权限的应用可以访问/data/wallpaper/目
-录获取设置的资源。使用callback异步回调。
+将指定的zip资源包设置为桌面或锁屏的壁纸资源，仅当com.ohos.sceneboard存在时，支持使用该接口。且具有ohos.permission.GET_WALLPAPER权限的应用可以访问/data/wallpaper/目 录获取设置的资源。使用callback异步回调。
 
 **起始版本：** 10
 
@@ -61,8 +60,7 @@ try {
 function setCustomWallpaper(source: string, wallpaperType: WallpaperType): Promise<void>
 ```
 
-将指定的zip资源包设置为桌面或锁屏的壁纸资源，仅当com.ohos.sceneboard存在时，支持使用该接口。且具有ohos.permission.GET_WALLPAPER权限的应用可以访问/data/wallpaper/目
-录获取设置的资源。使用Promise异步回调。
+将指定的zip资源包设置为桌面或锁屏的壁纸资源，仅当com.ohos.sceneboard存在时，支持使用该接口。且具有ohos.permission.GET_WALLPAPER权限的应用可以访问/data/wallpaper/目 录获取设置的资源。使用Promise异步回调。
 
 **起始版本：** 10
 

@@ -12,8 +12,7 @@ import { bundleManager } from '@kit.AbilityKit';
 function getBundleArchiveInfoSync(hapFilePath: string, bundleFlags: number): BundleInfo
 ```
 
-Obtains the bundle information based on the given HAP file path and bundle flags. This API returns the result
-synchronously.
+Obtains the bundle information based on the given HAP file path and bundle flags. This API returns the result synchronously.
 
 **Since:** 10
 

@@ -68,9 +68,7 @@ Credential ID, which is left blank by default.
 isAbandoned?: boolean
 ```
 
-Whether the credential is abandoned. The abandoned credential may be stored as a backup credential for a period
-of time. The value **true** indicates that the credential is abandoned, and the value **false** indicates the
-opposite. The default value is **undefined**.
+Whether the credential is abandoned. The abandoned credential may be stored as a backup credential for a period of time. The value **true** indicates that the credential is abandoned, and the value **false** indicates the opposite. The default value is **undefined**.
 
 **Type:** boolean
 

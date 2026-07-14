@@ -1,7 +1,6 @@
 # ProgressSignal
 
-Defines a function for canceling the paste task. This parameter is valid only when
-[ProgressIndicator](arkts-basicservices-progressindicator-e.md) is set to **NONE**.
+Defines a function for canceling the paste task. This parameter is valid only when [ProgressIndicator](arkts-basicservices-progressindicator-e.md) is set to **NONE**.
 
 **Since:** 15
 

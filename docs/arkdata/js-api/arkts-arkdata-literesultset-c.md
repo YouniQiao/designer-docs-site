@@ -1,20 +1,6 @@
 # LiteResultSet
 
-Defines APIs to access the result set obtained by querying the RDB store. This result set is the collection of
-results returned with the **query()** method called.
-
-The **LiteResultSet** instance is not refreshed in real time. After using the result set, if the data in the
-database is changed (by being added, deleted, or modified), you need to query the result set again to obtain the
-latest data.
-
-In the following API examples, you need to obtain an **LiteResultSet** instance by using a query method, such as
-[queryWithoutRowCount](arkts-arkdata-rdbstore-i.md#querywithoutrowcount-1) or
-[querySqlWithoutRowCount](arkts-arkdata-rdbstore-i.md#querysqlwithoutrowcount-1), and
-then call the corresponding method through this instance.
-
-> **NOTE**
->
-> - The initial APIs of this class are supported since API version 23.
+Defines APIs to access the result set obtained by querying the RDB store. This result set is the collection of results returned with the **query()** method called. The **LiteResultSet** instance is not refreshed in real time. After using the result set, if the data in the database is changed (by being added, deleted, or modified), you need to query the result set again to obtain the latest data. In the following API examples, you need to obtain an **LiteResultSet** instance by using a query method, such as [queryWithoutRowCount](arkts-arkdata-rdbstore-i.md#querywithoutrowcount-1) or [querySqlWithoutRowCount](arkts-arkdata-rdbstore-i.md#querysqlwithoutrowcount-1), and then call the corresponding method through this instance. > **NOTE** > > - The initial APIs of this class are supported since API version 23.
 
 **Since:** 23
 
@@ -46,12 +32,7 @@ Closes this **resultSet** to release memory. If the **resultSet** is not closed,
 getAsset(columnIndex: number): Asset
 ```
 
-Obtains the value in the specified column in the current row as an
-[Asset](arkts-arkdata-asset-i.md).
-
-If the data type of the current column is Asset, the value is returned as an Asset. If the value in the current
-column is **null**, **null** is returned. If the data type of the current column is not Asset, 14800041 is
-returned.
+Obtains the value in the specified column in the current row as an [Asset](arkts-arkdata-asset-i.md). If the data type of the current column is Asset, the value is returned as an Asset. If the value in the current column is **null**, **null** is returned. If the data type of the current column is not Asset, 14800041 is returned.
 
 **Since:** 23
 
@@ -86,12 +67,7 @@ returned.
 getAssets(columnIndex: number): Assets
 ```
 
-Obtains the value in the specified column in the current row as
-[Assets](arkts-arkdata-assets-t.md).
-
-If the data type of the current column is Assets, the value is returned as Assets. If the value in the current
-column is **null**, **null** is returned. If the data type of the current column is not Assets, 14800041 is
-returned.
+Obtains the value in the specified column in the current row as [Assets](arkts-arkdata-assets-t.md). If the data type of the current column is Assets, the value is returned as Assets. If the value in the current column is **null**, **null** is returned. If the data type of the current column is not Assets, 14800041 is returned.
 
 **Since:** 23
 
@@ -126,12 +102,7 @@ returned.
 getBlob(columnIndex: number): Uint8Array
 ```
 
-Obtains the value in the specified column in the current row as a byte array.
-
-If the data type of the current column is INTEGER, DOUBLE, TEXT, or BLOB, the data is converted to a byte array
-and returned. If the content of the column is null/empty, an empty byte array is returned.
-
-If the data type of the current column is ASSET, ASSETS, FLOATVECTOR, or BIGINT, 14800041 is returned.
+Obtains the value in the specified column in the current row as a byte array. If the data type of the current column is INTEGER, DOUBLE, TEXT, or BLOB, the data is converted to a byte array and returned. If the content of the column is null/empty, an empty byte array is returned. If the data type of the current column is ASSET, ASSETS, FLOATVECTOR, or BIGINT, 14800041 is returned.
 
 **Since:** 23
 
@@ -245,10 +216,7 @@ Obtains the column name based on the column index.
 getColumnNames(): Array<string>
 ```
 
-Obtains the names of all columns in the result set.
-
-The column names are returned in a string array. The sequence of strings in the array is the same as that of
-columns in the result set.
+Obtains the names of all columns in the result set. The column names are returned in a string array. The sequence of strings in the array is the same as that of columns in the result set.
 
 **Since:** 23
 
@@ -281,8 +249,7 @@ columns in the result set.
 getColumnType(columnIdentifier: number | string): Promise<ColumnType>
 ```
 
-Obtains the column type based on the specified column index or column name. This API uses a promise to return the
-result.
+Obtains the column type based on the specified column index or column name. This API uses a promise to return the result.
 
 **Since:** 23
 
@@ -398,13 +365,7 @@ Obtains the values of all columns in this row.
 getDouble(columnIndex: number): number
 ```
 
-Obtains the value in the specified column in the current row as a Double.
-
-If the data type of the current column is INTEGER, DOUBLE, or TEXT, the value is converted to the Double type and
-returned. Non-numeric TEXT and BLOB types return **0.0**. If the content of the column is null/empty, **0.0** is
-returned.
-
-If the data type of the current column is ASSET, ASSETS, FLOATVECTOR, or BIGINT, 14800041 is returned.
+Obtains the value in the specified column in the current row as a Double. If the data type of the current column is INTEGER, DOUBLE, or TEXT, the value is converted to the Double type and returned. Non-numeric TEXT and BLOB types return **0.0**. If the content of the column is null/empty, **0.0** is returned. If the data type of the current column is ASSET, ASSETS, FLOATVECTOR, or BIGINT, 14800041 is returned.
 
 **Since:** 23
 
@@ -439,16 +400,7 @@ If the data type of the current column is ASSET, ASSETS, FLOATVECTOR, or BIGINT,
 getLong(columnIndex: number): number
 ```
 
-Obtains the value from the specified column in the current row, and returns a value of Long type.
-
-If the data type of the current column is INTEGER, DOUBLE, TEXT, or BLOB, a value of Long type is returned. If
-the column is null, **0** is returned. If the data type is INTEGER and the value is greater than
-**Number.MAX_SAFE_INTEGER** or less than **Number.MIN_SAFE_INTEGER**, you are advised to use the
-[getString](arkts-arkdata-literesultset-c.md#getstring-1) API to obtain the value without losing precision. If
-the data type in the specified column is DOUBLE, you are advised to use the
-[getDouble](arkts-arkdata-literesultset-c.md#getdouble-1) API to obtain the value without precision loss.
-
-If the data type of the current column is ASSET, ASSETS, FLOATVECTOR, or BIGINT, 14800041 is returned.
+Obtains the value from the specified column in the current row, and returns a value of Long type. If the data type of the current column is INTEGER, DOUBLE, TEXT, or BLOB, a value of Long type is returned. If the column is null, **0** is returned. If the data type is INTEGER and the value is greater than **Number.MAX_SAFE_INTEGER** or less than **Number.MIN_SAFE_INTEGER**, you are advised to use the [getString](arkts-arkdata-literesultset-c.md#getstring-1) API to obtain the value without losing precision. If the data type in the specified column is DOUBLE, you are advised to use the [getDouble](arkts-arkdata-literesultset-c.md#getdouble-1) API to obtain the value without precision loss. If the data type of the current column is ASSET, ASSETS, FLOATVECTOR, or BIGINT, 14800041 is returned.
 
 **Since:** 23
 
@@ -517,9 +469,7 @@ Obtains data for the current row.
 getRows(maxCount: number, position?: number): Promise<Array<ValuesBucket>>
 ```
 
-Obtains a specified amount of data from the result set. This API uses a promise to return the result. Do not call
-this API concurrently with other APIs of [LiteResultSet](arkts-data-relationalstore.md).
-Otherwise, unexpected data may be obtained.
+Obtains a specified amount of data from the result set. This API uses a promise to return the result. Do not call this API concurrently with other APIs of [LiteResultSet](arkts-data-relationalstore.md). Otherwise, unexpected data may be obtained.
 
 **Since:** 23
 
@@ -561,9 +511,7 @@ Otherwise, unexpected data may be obtained.
 getRowsData(maxCount: number, position?: number): Promise<RowsData>
 ```
 
-Obtains data of a specified number of rows from the specified position. This API uses a promise to return the
-result. Do not call this API concurrently with other APIs of
-[ResultSet](arkts-data-relationalstore.md). Otherwise, unexpected data may be obtained.
+Obtains data of a specified number of rows from the specified position. This API uses a promise to return the result. Do not call this API concurrently with other APIs of [ResultSet](arkts-data-relationalstore.md). Otherwise, unexpected data may be obtained.
 
 **Since:** 23
 
@@ -605,15 +553,7 @@ result. Do not call this API concurrently with other APIs of
 getString(columnIndex: number): string
 ```
 
-Obtains the value in the specified column in the current row as a string.
-
-If the data type of the current column is INTEGER, DOUBLE, TEXT, or BLOB type, the value is returned as a string.
-If the content of the column is null/empty, an empty string **""** is returned.
-
-If the data type of the current column is DOUBLE, precision loss may occur. You are advised to use
-[getDouble](arkts-arkdata-literesultset-c.md#getdouble-1) API to obtain the value.
-
-If the data type of the current column is ASSET, ASSETS, FLOATVECTOR, or BIGINT, 14800041 is returned.
+Obtains the value in the specified column in the current row as a string. If the data type of the current column is INTEGER, DOUBLE, TEXT, or BLOB type, the value is returned as a string. If the content of the column is null/empty, an empty string **""** is returned. If the data type of the current column is DOUBLE, precision loss may occur. You are advised to use [getDouble](arkts-arkdata-literesultset-c.md#getdouble-1) API to obtain the value. If the data type of the current column is ASSET, ASSETS, FLOATVECTOR, or BIGINT, 14800041 is returned.
 
 **Since:** 23
 
@@ -648,11 +588,7 @@ If the data type of the current column is ASSET, ASSETS, FLOATVECTOR, or BIGINT,
 getValue(columnIndex: number): ValueType
 ```
 
-Obtains the value of the specified column in the current row.
-
-If the value type is INTEGER and the value is greater than **Number.MAX_SAFE_INTEGER** or less than
-**Number.MIN_SAFE_INTEGER**, you are advised to use the
-[getString](arkts-arkdata-literesultset-c.md#getstring-1) API to obtain the value without precision loss.
+Obtains the value of the specified column in the current row. If the value type is INTEGER and the value is greater than **Number.MAX_SAFE_INTEGER** or less than **Number.MIN_SAFE_INTEGER**, you are advised to use the [getString](arkts-arkdata-literesultset-c.md#getstring-1) API to obtain the value without precision loss.
 
 **Since:** 23
 

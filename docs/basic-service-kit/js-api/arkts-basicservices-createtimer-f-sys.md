@@ -12,13 +12,7 @@ import { systemTimer } from '@kit.BasicServicesKit';
 function createTimer(options: TimerOptions, callback: AsyncCallback<number>): void
 ```
 
-Creates a timer. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> This API must be used together with
-> [systemTimer.destroyTimer](arkts-basicservices-destroytimer-f-sys.md#destroytimer-1). Otherwise
-> , memory leakage occurs.
+Creates a timer. This API uses an asynchronous callback to return the result. > **NOTE** > > This API must be used together with > [systemTimer.destroyTimer](arkts-basicservices-destroytimer-f-sys.md#destroytimer-1). Otherwise > , memory leakage occurs.
 
 **Since:** 7
 
@@ -71,13 +65,7 @@ try {
 function createTimer(options: TimerOptions): Promise<number>
 ```
 
-Creates a timer. This API uses a promise to return the timer ID.
-
-> **NOTE**
->
-> This API must be used together with
-> [systemTimer.destroyTimer](arkts-basicservices-destroytimer-f-sys.md#destroytimer-1). Otherwise
-> , memory leakage occurs.
+Creates a timer. This API uses a promise to return the timer ID. > **NOTE** > > This API must be used together with > [systemTimer.destroyTimer](arkts-basicservices-destroytimer-f-sys.md#destroytimer-1). Otherwise > , memory leakage occurs.
 
 **Since:** 7
 

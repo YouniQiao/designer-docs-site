@@ -12,8 +12,7 @@ import { display } from '@kit.ArkUI';
 function addVirtualScreenBlocklist(windowIds: Array<number>): Promise<void>
 ```
 
-Adds windows to the list of windows that are not allowed to be displayed during casting. This API takes effect only
-for the main window of an application or system windows. This API uses a promise to return the result.
+Adds windows to the list of windows that are not allowed to be displayed during casting. This API takes effect only for the main window of an application or system windows. This API uses a promise to return the result.
 
 **Since:** 18
 

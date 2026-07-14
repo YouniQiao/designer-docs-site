@@ -1,12 +1,6 @@
 # AudioStreamManager
 
-音频流管理。
-
-在使用AudioStreamManager的接口之前，需先通过[getStreamManager](arkts-audio-audiomanager-i.md#getstreammanager-1)获取AudioStreamManager实例。
-
-> **说明：**
->
-> - 本Interface首批接口从API version 9开始支持。
+音频流管理。 在使用AudioStreamManager的接口之前，需先通过[getStreamManager](arkts-audio-audiomanager-i.md#getstreammanager-1)获取AudioStreamManager实例。 > **说明：** > > - 本Interface首批接口从API version 9开始支持。
 
 **起始版本：** 9
 
@@ -106,11 +100,7 @@ getAudioEffectInfoArraySync(usage: StreamUsage): AudioEffectInfoArray
 getCurrentAudioCapturerInfoArray(callback: AsyncCallback<AudioCapturerChangeInfoArray>): void
 ```
 
-获取当前音频采集器的信息。使用callback异步回调。
-
-> **说明：**
->
-> 该接口返回的音频采集器信息，可能包含系统内部音频录制流，如语音唤醒、蜂窝通话等。
+获取当前音频采集器的信息。使用callback异步回调。 > **说明：** > > 该接口返回的音频采集器信息，可能包含系统内部音频录制流，如语音唤醒、蜂窝通话等。
 
 **起始版本：** 9
 
@@ -128,11 +118,7 @@ getCurrentAudioCapturerInfoArray(callback: AsyncCallback<AudioCapturerChangeInfo
 getCurrentAudioCapturerInfoArray(): Promise<AudioCapturerChangeInfoArray>
 ```
 
-获取当前音频采集器的信息。使用Promise异步回调。
-
-> **说明：**
->
-> 该接口返回的音频采集器信息，可能包含系统内部音频录制流，如语音唤醒、蜂窝通话等。
+获取当前音频采集器的信息。使用Promise异步回调。 > **说明：** > > 该接口返回的音频采集器信息，可能包含系统内部音频录制流，如语音唤醒、蜂窝通话等。
 
 **起始版本：** 9
 
@@ -150,11 +136,7 @@ getCurrentAudioCapturerInfoArray(): Promise<AudioCapturerChangeInfoArray>
 getCurrentAudioCapturerInfoArraySync(): AudioCapturerChangeInfoArray
 ```
 
-获取当前音频采集器的信息。同步返回结果。
-
-> **说明：**
->
-> 该接口返回的音频采集器信息，可能包含系统内部音频录制流，如语音唤醒、蜂窝通话等。
+获取当前音频采集器的信息。同步返回结果。 > **说明：** > > 该接口返回的音频采集器信息，可能包含系统内部音频录制流，如语音唤醒、蜂窝通话等。
 
 **起始版本：** 10
 
@@ -172,11 +154,7 @@ getCurrentAudioCapturerInfoArraySync(): AudioCapturerChangeInfoArray
 getCurrentAudioRendererInfoArray(callback: AsyncCallback<AudioRendererChangeInfoArray>): void
 ```
 
-获取当前音频渲染器的信息。使用callback异步回调。
-
-> **说明：**
->
-> 该接口返回的音频渲染器信息，可能包含系统内部音频播放流，如蜂窝通话、超声波等。
+获取当前音频渲染器的信息。使用callback异步回调。 > **说明：** > > 该接口返回的音频渲染器信息，可能包含系统内部音频播放流，如蜂窝通话、超声波等。
 
 **起始版本：** 9
 
@@ -194,11 +172,7 @@ getCurrentAudioRendererInfoArray(callback: AsyncCallback<AudioRendererChangeInfo
 getCurrentAudioRendererInfoArray(): Promise<AudioRendererChangeInfoArray>
 ```
 
-获取当前音频渲染器的信息。使用Promise异步回调。
-
-> **说明：**
->
-> 该接口返回的音频渲染器信息，可能包含系统内部音频播放流，如蜂窝通话、超声波等。
+获取当前音频渲染器的信息。使用Promise异步回调。 > **说明：** > > 该接口返回的音频渲染器信息，可能包含系统内部音频播放流，如蜂窝通话、超声波等。
 
 **起始版本：** 9
 
@@ -216,11 +190,7 @@ getCurrentAudioRendererInfoArray(): Promise<AudioRendererChangeInfoArray>
 getCurrentAudioRendererInfoArraySync(): AudioRendererChangeInfoArray
 ```
 
-获取当前音频渲染器的信息。同步返回结果。
-
-> **说明：**
->
-> 该接口返回的音频渲染器信息，可能包含系统内部音频播放流，如蜂窝通话、超声波等。
+获取当前音频渲染器的信息。同步返回结果。 > **说明：** > > 该接口返回的音频渲染器信息，可能包含系统内部音频播放流，如蜂窝通话、超声波等。
 
 **起始版本：** 10
 
@@ -609,11 +579,7 @@ isStreamActive(streamUsage: StreamUsage): boolean
 off(type: 'audioRendererChange', callback?: Callback<AudioRendererChangeInfoArray>): void
 ```
 
-取消监听音频渲染器更改事件。使用callback异步回调。
-
-> **说明：**
->
-> 该接口返回的音频渲染器信息，可能包含系统内部音频播放流，如蜂窝通话、超声波等。
+取消监听音频渲染器更改事件。使用callback异步回调。 > **说明：** > > 该接口返回的音频渲染器信息，可能包含系统内部音频播放流，如蜂窝通话、超声波等。
 
 **起始版本：** 9
 
@@ -638,11 +604,7 @@ off(type: 'audioRendererChange', callback?: Callback<AudioRendererChangeInfoArra
 off(type: 'audioCapturerChange', callback?: Callback<AudioCapturerChangeInfoArray>): void
 ```
 
-取消监听音频采集器更改事件。使用callback异步回调。
-
-> **说明：**
->
-> 该接口返回的音频采集器信息，可能包含系统内部音频录制流，如语音唤醒、蜂窝通话等。
+取消监听音频采集器更改事件。使用callback异步回调。 > **说明：** > > 该接口返回的音频采集器信息，可能包含系统内部音频录制流，如语音唤醒、蜂窝通话等。
 
 **起始版本：** 9
 
@@ -667,11 +629,7 @@ off(type: 'audioCapturerChange', callback?: Callback<AudioCapturerChangeInfoArra
 on(type: 'audioRendererChange', callback: Callback<AudioRendererChangeInfoArray>): void
 ```
 
-监听音频渲染器更改事件（当音频播放流状态变化或设备变化时触发）。使用callback异步回调。
-
-> **说明：**
->
-> 该接口返回的音频渲染器信息，可能包含系统内部音频播放流，如蜂窝通话、超声波等。
+监听音频渲染器更改事件（当音频播放流状态变化或设备变化时触发）。使用callback异步回调。 > **说明：** > > 该接口返回的音频渲染器信息，可能包含系统内部音频播放流，如蜂窝通话、超声波等。
 
 **起始版本：** 9
 
@@ -697,11 +655,7 @@ on(type: 'audioRendererChange', callback: Callback<AudioRendererChangeInfoArray>
 on(type: 'audioCapturerChange', callback: Callback<AudioCapturerChangeInfoArray>): void
 ```
 
-监听音频采集器更改事件（当音频录制流状态变化或设备变化时触发）。使用callback异步回调。
-
-> **说明：**
->
-> 该接口返回的音频采集器信息，可能包含系统内部音频录制流，如语音唤醒、蜂窝通话等。
+监听音频采集器更改事件（当音频录制流状态变化或设备变化时触发）。使用callback异步回调。 > **说明：** > > 该接口返回的音频采集器信息，可能包含系统内部音频录制流，如语音唤醒、蜂窝通话等。
 
 **起始版本：** 9
 

@@ -1,7 +1,6 @@
 # List
 
-List is implemented based on the singly linked list. Each node has a reference pointing to the next element.
-When querying an element, the system traverses the list from the beginning.
+List is implemented based on the singly linked list. Each node has a reference pointing to the next element. When querying an element, the system traverses the list from the beginning.
 
 **Since:** 8
 
@@ -546,8 +545,7 @@ console.info("result:", result); // result: 5
 getSubList(fromIndex: number, toIndex: number): List<T>
 ```
 
-Obtains elements within a range in this List, including the element at the start position but not that at the end
-position, and returns these elements as a new **List** instance.
+Obtains elements within a range in this List, including the element at the start position but not that at the end position, and returns these elements as a new **List** instance.
 
 **Since:** 8
 

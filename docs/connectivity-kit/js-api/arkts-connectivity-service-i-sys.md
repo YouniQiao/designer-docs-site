@@ -6,14 +6,19 @@ Describes the SSAP service.
 
 **System capability:** SystemCapability.Communication.NearLink.Base
 
+## Modules to Import
+
+```TypeScript
+import { ssap } from '@kit.ConnectivityKit';
+```
+
 ## events
 
 ```TypeScript
 events?: Event[]
 ```
 
-The events belong to this service.
-<br>This field is not supported in [addService](arkts-connectivity-server-i.md#addservice-1) method.
+The events belong to this service. <br>This field is not supported in [addService](arkts-connectivity-server-i.md#addservice-1) method.
 
 **Type:** Event[]
 
@@ -31,8 +36,7 @@ The events belong to this service.
 methods?: Method[]
 ```
 
-The methods belong to this service.
-<br>This field is not supported in [addService](arkts-connectivity-server-i.md#addservice-1) method.
+The methods belong to this service. <br>This field is not supported in [addService](arkts-connectivity-server-i.md#addservice-1) method.
 
 **Type:** Method[]
 

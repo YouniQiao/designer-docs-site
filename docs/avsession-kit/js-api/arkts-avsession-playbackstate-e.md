@@ -26,8 +26,7 @@ Initial state. The initial state of media file
 PLAYBACK_STATE_PREPARE = 1
 ```
 
-Preparing state. Indicates that the media file is not ready to play,
-the media is loading or buffering
+Preparing state. Indicates that the media file is not ready to play, the media is loading or buffering
 
 **Since:** 10
 

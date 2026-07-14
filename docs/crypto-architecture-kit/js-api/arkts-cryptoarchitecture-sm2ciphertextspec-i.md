@@ -1,17 +1,6 @@
 # SM2CipherTextSpec
 
-Represents the SM2 ciphertext parameters. You can use this object to generate SM2 ciphertext in ASN.1 format or
-obtain SM2 parameters from the SM2 ciphertext in ASN.1 format.
-
-> **NOTE**
->
-> - **hashData** is a value obtained by applying the SM3 algorithm to the plaintext. It has a fixed length of 256
-> bits.
->
-> - **cipherTextData** is the ciphertext with the same length as the plaintext.
->
-> - During the generation of ciphertext in C1C3C2 format, if the length of x (**C1_X**) or y (**C1_Y**) is less
-> than 32 bytes, zeros must be added to the high-order bits to extend them to 32 bytes.
+Represents the SM2 ciphertext parameters. You can use this object to generate SM2 ciphertext in ASN.1 format or obtain SM2 parameters from the SM2 ciphertext in ASN.1 format. > **NOTE** > > - **hashData** is a value obtained by applying the SM3 algorithm to the plaintext. It has a fixed length of 256 > bits. > > - **cipherTextData** is the ciphertext with the same length as the plaintext. > > - During the generation of ciphertext in C1C3C2 format, if the length of x (**C1_X**) or y (**C1_Y**) is less > than 32 bytes, zeros must be added to the high-order bits to extend them to 32 bytes.
 
 **Since:** 12
 

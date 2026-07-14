@@ -20,11 +20,7 @@ import { imageGeneration } from '@kit.ArkUI';
 image?: image.PixelMap
 ```
 
-Image decoding information for preview in the page of ImageGeneratorDialog.
-
-<p>**NOTE**:
-Displayed within the canvas in the ImageGeneratorDialog; if not provided, the image will be decoded from the url.
-</p>
+Image decoding information for preview in the page of ImageGeneratorDialog. <p>**NOTE**: Displayed within the canvas in the ImageGeneratorDialog; if not provided, the image will be decoded from the url. </p>
 
 **Type:** image.PixelMap
 
@@ -42,11 +38,7 @@ Displayed within the canvas in the ImageGeneratorDialog; if not provided, the im
 isHandwrite?: boolean
 ```
 
-whether the image type is a hand-drawn line art.
-
-<p>**NOTE**:
-it is recommended to be provided in Hand-drawn line art scenarios to achieve better results.
-</p>
+whether the image type is a hand-drawn line art. <p>**NOTE**: it is recommended to be provided in Hand-drawn line art scenarios to achieve better results. </p>
 
 **Type:** boolean
 
@@ -64,11 +56,7 @@ it is recommended to be provided in Hand-drawn line art scenarios to achieve bet
 rect?: common2D.Rect
 ```
 
-The size and position of the container used to display images in the preview canvas.
-
-<p>**NOTE**:
-it is recommended to be provided in multi-image fusion scenarios to achieve better results.
-</p>
+The size and position of the container used to display images in the preview canvas. <p>**NOTE**: it is recommended to be provided in multi-image fusion scenarios to achieve better results. </p>
 
 **Type:** common2D.Rect
 
@@ -86,11 +74,7 @@ it is recommended to be provided in multi-image fusion scenarios to achieve bett
 rotation?: componentUtils.Rotation2D
 ```
 
-The rotation of the container used to display images in the preview canvas.
-
-<p>**NOTE**:
-it is recommended to be provided in multi-image fusion scenarios to achieve better results.
-</p>
+The rotation of the container used to display images in the preview canvas. <p>**NOTE**: it is recommended to be provided in multi-image fusion scenarios to achieve better results. </p>
 
 **Type:** componentUtils.Rotation2D
 
@@ -108,12 +92,7 @@ it is recommended to be provided in multi-image fusion scenarios to achieve bett
 url?: ResourceStr
 ```
 
-Original image path information for image generation;
-
-<p>**NOTE**:
-for high-resolution scenarios, it is best to provide the original image path; if not provided, the image.PixelMap
-will be used for image generation.
-</p>
+Original image path information for image generation; <p>**NOTE**: for high-resolution scenarios, it is best to provide the original image path; if not provided, the image.PixelMap will be used for image generation. </p>
 
 **Type:** ResourceStr
 
@@ -131,11 +110,7 @@ will be used for image generation.
 zIndex?: number
 ```
 
-In scenarios with multiple images, information about image rendering hierarchy.
-
-<p>**NOTE**:
-it is recommended to be provided in multi-image fusion scenarios to achieve better results.
-</p>
+In scenarios with multiple images, information about image rendering hierarchy. <p>**NOTE**: it is recommended to be provided in multi-image fusion scenarios to achieve better results. </p>
 
 **Type:** number
 

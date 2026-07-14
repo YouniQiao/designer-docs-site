@@ -1,11 +1,16 @@
 # Client
 
-Manages SSAP client. Before calling a SSAP client method,
-you must use {@link createClient} to create a ssap client instance.
+Manages SSAP client. Before calling a SSAP client method, you must use {@link createClient} to create a ssap client instance.
 
 **Since:** 26.0.0
 
 **System capability:** SystemCapability.Communication.NearLink.Base
+
+## Modules to Import
+
+```TypeScript
+import { ssap } from '@kit.ConnectivityKit';
+```
 
 ## callMethod
 
@@ -76,9 +81,7 @@ Unsubscribes from event notifications.
 onEventNotify(callback: Callback<Event>): void
 ```
 
-Subscribes to event notifications.
-
-This event is accessible only to system applications that granted the ohos.permission.NEARLINK_ACCESS permission.
+Subscribes to event notifications. This event is accessible only to system applications that granted the ohos.permission.NEARLINK_ACCESS permission.
 
 **Since:** 26.0.0
 
@@ -184,11 +187,7 @@ Enables or disables indication of a property when value changed.
 writeDescriptor(descriptor: PropertyDescriptor): Promise<void>
 ```
 
-Writes the descriptor of a server.
-
-This method does not support writing client property configuration descriptors. To write client property
-configuration descriptors, call [setPropertyNotification](arkts-connectivity-client-i.md#setpropertynotification-1) or
-[setPropertyIndication](arkts-connectivity-client-i-sys.md#setpropertyindication-1) instead.
+Writes the descriptor of a server. This method does not support writing client property configuration descriptors. To write client property configuration descriptors, call [setPropertyNotification](arkts-connectivity-client-i.md#setpropertynotification-1) or [setPropertyIndication](arkts-connectivity-client-i-sys.md#setpropertyindication-1) instead.
 
 **Since:** 26.0.0
 

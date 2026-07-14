@@ -28,9 +28,7 @@ origin: string
 quota: number
 ```
 
-指定源的存储配额。
-
-单位：byte。
+指定源的存储配额。 单位：byte。
 
 **类型：** number
 
@@ -46,9 +44,7 @@ quota: number
 usage: number
 ```
 
-指定源的存储量。
-
-单位：byte。
+指定源的存储量。 单位：byte。
 
 **类型：** number
 

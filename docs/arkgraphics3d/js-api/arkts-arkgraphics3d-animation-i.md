@@ -184,8 +184,7 @@ Whether the animation is running.
 speed?: number
 ```
 
-Animation speed factor
-A negative value runs the animation in reverse using the given speed factor
+Animation speed factor A negative value runs the animation in reverse using the given speed factor
 
 **Type:** number
 

@@ -1,18 +1,6 @@
 # @ohos.update
 
-The **update** module implements update of the entire system, including built-in resources and preset applications,
-but not third-party applications.
-
-There are three types of updates: SD card update, over the air (OTA) update, and factory reset update.
-
-- The SD card update depends on the update packages and SD cards.
-- The OTA update depends on the server deployed by the device manufacturer for managing update packages. The OTA
-server IP address is passed by the caller. The request interface is fixed and developed by the device manufacturer.
-- The factory reset update object provides the API for restoring factory settings.
-
-> **NOTE**
->
-> The APIs provided by this module are system APIs.
+The **update** module implements update of the entire system, including built-in resources and preset applications, but not third-party applications. There are three types of updates: SD card update, over the air (OTA) update, and factory reset update. - The SD card update depends on the update packages and SD cards. - The OTA update depends on the server deployed by the device manufacturer for managing update packages. The OTA server IP address is passed by the caller. The request interface is fixed and developed by the device manufacturer. - The factory reset update object provides the API for restoring factory settings. > **NOTE** > > The APIs provided by this module are system APIs.
 
 **Since:** 9
 

@@ -1,8 +1,8 @@
 # FetchOptions
 
-Defines the options for fetching media files.
+Defines the retrieval options.
 
-**Since:** 20
+**Since:** 10
 
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -18,11 +18,11 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 fetchColumns: Array<string>
 ```
 
-Indicates the members to query.
+Names of the columns specified for query. If this parameter is left blank for photos, photos are fetched by **'uri'**, **'media_type'**, **'subtype'**, and **'display_name'** by default. An error will be thrown if [get](arkts-medialibrary-photoasset-i.md#get-1) is used to obtain other attributes of this object. Example: **fetchColumns: ['uri', 'title']**. If this parameter is left blank for albums, albums are fetched by **'uri'** and **'album_name'** by default.
 
 **Type:** Array<string>
 
-**Since:** 20
+**Since:** 10
 
 **Atomic service API:** This API can be used in atomic services since API version 20.
 
@@ -38,7 +38,7 @@ Predicates that specify the fetch criteria.
 
 **Type:** dataSharePredicates.DataSharePredicates
 
-**Since:** 20
+**Since:** 10
 
 **Atomic service API:** This API can be used in atomic services since API version 20.
 

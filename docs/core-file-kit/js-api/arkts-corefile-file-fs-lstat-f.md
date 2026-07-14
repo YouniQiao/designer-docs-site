@@ -12,8 +12,7 @@ import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventList
 declare function lstat(path: string): Promise<Stat>
 ```
 
-Obtains information about a symbolic link that is used to refer to a file or directory. This API uses a promise to
-return the result.
+Obtains information about a symbolic link that is used to refer to a file or directory. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -53,8 +52,7 @@ return the result.
 declare function lstat(path: string, callback: AsyncCallback<Stat>): void
 ```
 
-Obtains information about a symbolic link that is used to refer to a file or directory. This API uses an asynchronous
-callback to return the result.
+Obtains information about a symbolic link that is used to refer to a file or directory. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 

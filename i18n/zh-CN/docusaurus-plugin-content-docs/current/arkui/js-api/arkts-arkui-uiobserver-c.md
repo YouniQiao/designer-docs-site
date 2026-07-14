@@ -1,13 +1,6 @@
 # UIObserver
 
-提供UI组件行为变化的无感监听能力。
-
-> **说明：**
-
-> - 以下API需先使用UIContext中的[getUIObserver()](arkts-arkui-uicontext-c.md#getuiobserver-1)方法获取到UIObserver对象，再通过该对象调用对应方法。
->
-> - UIObserver仅能监听到本进程内的相关信息，不支持获取<!--Del-->[UIExtensionComponent](ui_extension_component)等<!--DelEnd-->跨进程场景的信
-> 息。
+提供UI组件行为变化的无感监听能力。 > **说明：** > - 以下API需先使用UIContext中的[getUIObserver()](arkts-arkui-uicontext-c.md#getuiobserver-1)方法获取到UIObserver对象，再通过该对象调用对应方法。 > > - UIObserver仅能监听到本进程内的相关信息，不支持获取<!--Del-->[UIExtensionComponent](../arkts-components/arkts-arkui-uiextensioncomponent.md)等<!--DelEnd-->跨进程场景的信 > 息。
 
 **起始版本：** 11
 
@@ -398,8 +391,7 @@ Removes a callback function to be called after tapGesture is called.
 off(type: 'beforePanStart', callback?: PanListenerCallback): void
 ```
 
-取消[on('beforePanStart')](arkts-arkui-uiobserver-c.md#on-16)监听Pan手势
-[onActionStart](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionstart-1)事件执行前的callback回调。
+取消[on('beforePanStart')](arkts-arkui-uiobserver-c.md#on-16)监听Pan手势 [onActionStart](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionstart-1)事件执行前的callback回调。
 
 **起始版本：** 19
 
@@ -422,8 +414,7 @@ off(type: 'beforePanStart', callback?: PanListenerCallback): void
 off(type: 'beforePanEnd', callback?: PanListenerCallback): void
 ```
 
-取消[on('beforePanEnd')](arkts-arkui-uiobserver-c.md#on-17)监听Pan手势
-[onActionEnd](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionend-1)事件执行前的callback回调。
+取消[on('beforePanEnd')](arkts-arkui-uiobserver-c.md#on-17)监听Pan手势 [onActionEnd](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionend-1)事件执行前的callback回调。
 
 **起始版本：** 19
 
@@ -446,8 +437,7 @@ off(type: 'beforePanEnd', callback?: PanListenerCallback): void
 off(type: 'afterPanStart', callback?: PanListenerCallback): void
 ```
 
-取消[on('afterPanStart')](arkts-arkui-uiobserver-c.md#on-18)监听Pan手势
-[onActionStart](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionstart-1)事件执行后的callback回调。
+取消[on('afterPanStart')](arkts-arkui-uiobserver-c.md#on-18)监听Pan手势 [onActionStart](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionstart-1)事件执行后的callback回调。
 
 **起始版本：** 19
 
@@ -470,8 +460,7 @@ off(type: 'afterPanStart', callback?: PanListenerCallback): void
 off(type: 'afterPanEnd', callback?: PanListenerCallback): void
 ```
 
-取消[on('afterPanEnd')](arkts-arkui-uiobserver-c.md#on-19)监听Pan手势
-[onActionEnd](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionend-1)事件执行后的callback回调。
+取消[on('afterPanEnd')](arkts-arkui-uiobserver-c.md#on-19)监听Pan手势 [onActionEnd](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionend-1)事件执行后的callback回调。
 
 **起始版本：** 19
 
@@ -1148,8 +1137,7 @@ Registers a callback function to be called after tapGesture is called.
 on(type: 'beforePanStart', callback: PanListenerCallback): void
 ```
 
-监听Pan手势[onActionStart](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionstart-1)事件，在
-[onActionStart](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionstart-1)事件执行之前执行callback回调。支持手指滑动、鼠标滑动、鼠标滚轮和触摸板拖动，暂不支持屏幕朗读触控模式。
+监听Pan手势[onActionStart](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionstart-1)事件，在 [onActionStart](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionstart-1)事件执行之前执行callback回调。支持手指滑动、鼠标滑动、鼠标滚轮和触摸板拖动，暂不支持屏幕朗读触控模式。
 
 **起始版本：** 19
 
@@ -1172,8 +1160,7 @@ on(type: 'beforePanStart', callback: PanListenerCallback): void
 on(type: 'beforePanEnd', callback: PanListenerCallback): void
 ```
 
-监听Pan手势[onActionEnd](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionend-1)事件执行前的指令下发情况，在
-[onActionEnd](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionend-1)事件执行之前执行callback回调。支持手指滑动、鼠标滑动、鼠标滚轮和触摸板拖动，暂不支持屏幕朗读触控模式。
+监听Pan手势[onActionEnd](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionend-1)事件执行前的指令下发情况，在 [onActionEnd](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionend-1)事件执行之前执行callback回调。支持手指滑动、鼠标滑动、鼠标滚轮和触摸板拖动，暂不支持屏幕朗读触控模式。
 
 **起始版本：** 19
 
@@ -1196,8 +1183,7 @@ on(type: 'beforePanEnd', callback: PanListenerCallback): void
 on(type: 'afterPanStart', callback: PanListenerCallback): void
 ```
 
-监听Pan手势[onActionStart](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionstart-1)事件执行后的指令下发情况，在
-[onActionStart](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionstart-1)事件执行之后执行callback回调。支持手指滑动、鼠标滑动、鼠标滚轮和触摸板拖动，暂不支持屏幕朗读触控模式。
+监听Pan手势[onActionStart](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionstart-1)事件执行后的指令下发情况，在 [onActionStart](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionstart-1)事件执行之后执行callback回调。支持手指滑动、鼠标滑动、鼠标滚轮和触摸板拖动，暂不支持屏幕朗读触控模式。
 
 **起始版本：** 19
 
@@ -1220,8 +1206,7 @@ on(type: 'afterPanStart', callback: PanListenerCallback): void
 on(type: 'afterPanEnd', callback: PanListenerCallback): void
 ```
 
-监听Pan手势[onActionEnd](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionend-1)事件执行后的指令下发情况，在
-[onActionEnd](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionend-1)事件执行之后执行callback回调。支持手指滑动、鼠标滑动、鼠标滚轮和触摸板拖动，暂不支持屏幕朗读触控模式。
+监听Pan手势[onActionEnd](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionend-1)事件执行后的指令下发情况，在 [onActionEnd](../arkts-components/arkts-arkui-pangestureinterface-i.md#onactionend-1)事件执行之后执行callback回调。支持手指滑动、鼠标滑动、鼠标滚轮和触摸板拖动，暂不支持屏幕朗读触控模式。
 
 **起始版本：** 19
 
@@ -1361,13 +1346,7 @@ on(type: 'windowSizeLayoutBreakpointChange', callback: Callback<observer.WindowS
 on(type: 'nodeRenderState', nodeIdentity: NodeIdentity, callback: NodeRenderStateChangeCallback): void
 ```
 
-注册一个回调函数，以便在特定节点的渲染状态发生变化时调用，当注册成功时，此回调将立即执行一次。
-
-注意节点数量的限制。出于性能考虑，在单个UI实例中，注册节点太多，将会抛出异常。
-
-通常，当组件被移动到屏幕外时，会收到RENDER_OUT的通知。但在某些情况下，即使组件移动到屏幕外也不会触发RENDER_OUT通知。例如，具有缓存功能的组件[Swiper](../arkts-components/arkts-arkui-swiper.md)，即使
-[cachedCount](SwiperAttribute#cachedCount(count: number, isShown: boolean))属性中的参数isShown配置为true，也不会触发
-RENDER_OUT通知。
+注册一个回调函数，以便在特定节点的渲染状态发生变化时调用，当注册成功时，此回调将立即执行一次。 注意节点数量的限制。出于性能考虑，在单个UI实例中，注册节点太多，将会抛出异常。 通常，当组件被移动到屏幕外时，会收到RENDER_OUT的通知。但在某些情况下，即使组件移动到屏幕外也不会触发RENDER_OUT通知。例如，具有缓存功能的组件[Swiper](../arkts-components/arkts-arkui-swiper.md)，即使 [cachedCount](SwiperAttribute#cachedCount(count: number, isShown: boolean))属性中的参数isShown配置为true，也不会触发 RENDER_OUT通知。
 
 **起始版本：** 20
 

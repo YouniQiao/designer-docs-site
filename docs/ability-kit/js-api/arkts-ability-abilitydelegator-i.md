@@ -1,17 +1,6 @@
 # AbilityDelegator
 
-The **AbilityDelegator** module can listen for and manage the lifecycle changes of
-[UIAbility](arkts-app-ability-uiability.md) through
-[AbilityMonitor](arkts-ability-abilitymonitor-i.md) instances. For example, you can obtain the
-current state of a UIAbility (for example, whether the UIAbility has been created or is in the foreground), obtain
-the UIAbility that currently has the focus, wait for the UIAbility to enter a lifecycle node (for example, the
-**onForeground** state), start a specified UIAbility, and set the timeout mechanism.
-You can obtain **AbilityDelegator** by calling
-[getAbilityDelegator](../../apis-test-kit/arkts-apis/arkts-test-getabilitydelegator-f.md#getabilitydelegator-1).
-
-> **NOTE**
->
-> The APIs of this module can be used only in [JsUnit](../../../../application-test/unittest-guidelines.md).
+The **AbilityDelegator** module can listen for and manage the lifecycle changes of [UIAbility](arkts-app-ability-uiability.md) through [AbilityMonitor](arkts-ability-abilitymonitor-i.md) instances. For example, you can obtain the current state of a UIAbility (for example, whether the UIAbility has been created or is in the foreground), obtain the UIAbility that currently has the focus, wait for the UIAbility to enter a lifecycle node (for example, the **onForeground** state), start a specified UIAbility, and set the timeout mechanism. You can obtain **AbilityDelegator** by calling [getAbilityDelegator](../../apis-test-kit/arkts-apis/arkts-test-getabilitydelegator-f.md#getabilitydelegator-1). > **NOTE** > > The APIs of this module can be used only in [JsUnit](../../../../application-test/unittest-guidelines.md).
 
 **Since:** 9
 
@@ -23,8 +12,7 @@ You can obtain **AbilityDelegator** by calling
 addAbilityMonitor(monitor: AbilityMonitor, callback: AsyncCallback<void>): void
 ```
 
-Adds an **AbilityMonitor** instance. This API uses an asynchronous callback to return the result. Multi-thread
-concurrent calls are not supported.
+Adds an **AbilityMonitor** instance. This API uses an asynchronous callback to return the result. Multi-thread concurrent calls are not supported.
 
 **Since:** 9
 
@@ -52,8 +40,7 @@ concurrent calls are not supported.
 addAbilityMonitor(monitor: AbilityMonitor): Promise<void>
 ```
 
-Adds an **AbilityMonitor** instance. This API uses a promise to return the result. Multi-thread concurrent calls
-are not supported.
+Adds an **AbilityMonitor** instance. This API uses a promise to return the result. Multi-thread concurrent calls are not supported.
 
 **Since:** 9
 
@@ -86,8 +73,7 @@ are not supported.
 addAbilityMonitorSync(monitor: AbilityMonitor): void
 ```
 
-Adds an **AbilityMonitor** instance. This API returns the result synchronously. Multi-thread concurrent calls are
-not supported.
+Adds an **AbilityMonitor** instance. This API returns the result synchronously. Multi-thread concurrent calls are not supported.
 
 **Since:** 10
 
@@ -114,8 +100,7 @@ not supported.
 addAbilityStageMonitor(monitor: AbilityStageMonitor, callback: AsyncCallback<void>): void
 ```
 
-Adds an **AbilityStageMonitor** instance to monitor the lifecycle state changes of an ability stage. This API uses
-an asynchronous callback to return the result.
+Adds an **AbilityStageMonitor** instance to monitor the lifecycle state changes of an ability stage. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -143,8 +128,7 @@ an asynchronous callback to return the result.
 addAbilityStageMonitor(monitor: AbilityStageMonitor): Promise<void>
 ```
 
-Adds an **AbilityStageMonitor** instance to monitor the lifecycle state changes of an ability stage. This API uses
-a promise to return the result.
+Adds an **AbilityStageMonitor** instance to monitor the lifecycle state changes of an ability stage. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -177,8 +161,7 @@ a promise to return the result.
 addAbilityStageMonitorSync(monitor: AbilityStageMonitor): void
 ```
 
-Adds an **AbilityStageMonitor** instance to monitor the lifecycle state changes of an ability stage. This API
-returns the result synchronously.
+Adds an **AbilityStageMonitor** instance to monitor the lifecycle state changes of an ability stage. This API returns the result synchronously.
 
 **Since:** 10
 
@@ -205,8 +188,7 @@ returns the result synchronously.
 addInteropAbilityMonitorSync(monitor: InteropAbilityMonitor): void
 ```
 
-Add an InteropAbilityMonitor object for monitoring the lifecycle state changes of the specified ability
-in this process.
+Add an InteropAbilityMonitor object for monitoring the lifecycle state changes of the specified ability in this process.
 
 **Since:** 26.0.0
 
@@ -234,8 +216,7 @@ in this process.
 doAbilityBackground(ability: UIAbility, callback: AsyncCallback<void>): void
 ```
 
-Schedules the lifecycle state of an ability to **Background**. This API uses an asynchronous callback to return the
-result.
+Schedules the lifecycle state of an ability to **Background**. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -296,8 +277,7 @@ Schedules the lifecycle state of an ability to **Background**. This API uses a p
 doAbilityForeground(ability: UIAbility, callback: AsyncCallback<void>): void
 ```
 
-Schedules the lifecycle state of an ability to **Foreground**. This API uses an asynchronous callback to return the
-result.
+Schedules the lifecycle state of an ability to **Foreground**. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -358,9 +338,7 @@ Schedules the lifecycle state of an ability to **Foreground**. This API uses a p
 executeShellCommand(cmd: string, callback: AsyncCallback<ShellCmdResult>): void
 ```
 
-Executes a shell command. This API uses an asynchronous callback to return the result.
-Only the following shell commands are supported: aa, bm, cp, mkdir, rm, uinput, hilog, ppwd, echo, uitest, acm,
-hidumper, wukong, pkill, ps, and pidof.
+Executes a shell command. This API uses an asynchronous callback to return the result. Only the following shell commands are supported: aa, bm, cp, mkdir, rm, uinput, hilog, ppwd, echo, uitest, acm, hidumper, wukong, pkill, ps, and pidof.
 
 **Since:** 9
 
@@ -381,10 +359,7 @@ hidumper, wukong, pkill, ps, and pidof.
 executeShellCommand(cmd: string, timeoutSecs: number, callback: AsyncCallback<ShellCmdResult>): void
 ```
 
-Executes a shell command with the timeout period specified. This API uses an asynchronous callback to return the
-result.
-Only the following shell commands are supported: aa, bm, cp, mkdir, rm, uinput, hilog, ppwd, echo, uitest, acm,
-hidumper, wukong, pkill, ps, and pidof.
+Executes a shell command with the timeout period specified. This API uses an asynchronous callback to return the result. Only the following shell commands are supported: aa, bm, cp, mkdir, rm, uinput, hilog, ppwd, echo, uitest, acm, hidumper, wukong, pkill, ps, and pidof.
 
 **Since:** 9
 
@@ -406,9 +381,7 @@ hidumper, wukong, pkill, ps, and pidof.
 executeShellCommand(cmd: string, timeoutSecs?: number): Promise<ShellCmdResult>
 ```
 
-Executes a shell command with the timeout period specified. This API uses a promise to return the result.
-Only the following shell commands are supported: aa, bm, cp, mkdir, rm, uinput, hilog, ppwd, echo, uitest, acm,
-hidumper, wukong, pkill, ps, and pidof.
+Executes a shell command with the timeout period specified. This API uses a promise to return the result. Only the following shell commands are supported: aa, bm, cp, mkdir, rm, uinput, hilog, ppwd, echo, uitest, acm, hidumper, wukong, pkill, ps, and pidof.
 
 **Since:** 9
 
@@ -435,8 +408,7 @@ hidumper, wukong, pkill, ps, and pidof.
 finishTest(msg: string, code: number, callback: AsyncCallback<void>): void
 ```
 
-Finishes the test and prints log information to the unit test console. This API uses an asynchronous callback to
-return the result.
+Finishes the test and prints log information to the unit test console. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -465,8 +437,7 @@ return the result.
 finishTest(msg: string, code: number): Promise<void>
 ```
 
-Finishes the test and prints log information to the unit test console. This API uses a promise to return the
-result.
+Finishes the test and prints log information to the unit test console. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -552,8 +523,7 @@ Obtains the application context.
 getCurrentTopAbility(callback: AsyncCallback<UIAbility>): void
 ```
 
-Obtains the top ability of this application. This API uses an asynchronous callback to return the result. It cannot
-be called in the worker thread.
+Obtains the top ability of this application. This API uses an asynchronous callback to return the result. It cannot be called in the worker thread.
 
 **Since:** 9
 
@@ -580,8 +550,7 @@ be called in the worker thread.
 getCurrentTopAbility(): Promise<UIAbility>
 ```
 
-Obtains the top ability of this application. This API uses a promise to return the result. It cannot be called in
-the worker thread.
+Obtains the top ability of this application. This API uses a promise to return the result. It cannot be called in the worker thread.
 
 **Since:** 9
 
@@ -708,8 +677,7 @@ Removes an **AbilityMonitor** instance. This API uses an asynchronous callback t
 removeAbilityMonitor(monitor: AbilityMonitor): Promise<void>
 ```
 
-Removes an **AbilityMonitor** instance. This API uses a promise to return the result. Multi-thread concurrent calls
-are not supported.
+Removes an **AbilityMonitor** instance. This API uses a promise to return the result. Multi-thread concurrent calls are not supported.
 
 **Since:** 9
 
@@ -742,8 +710,7 @@ are not supported.
 removeAbilityMonitorSync(monitor: AbilityMonitor): void
 ```
 
-Removes an **AbilityMonitor** instance. This API returns the result synchronously. Multi-thread concurrent calls
-are not supported.
+Removes an **AbilityMonitor** instance. This API returns the result synchronously. Multi-thread concurrent calls are not supported.
 
 **Since:** 10
 
@@ -770,8 +737,7 @@ are not supported.
 removeAbilityStageMonitor(monitor: AbilityStageMonitor, callback: AsyncCallback<void>): void
 ```
 
-Removes an **AbilityStageMonitor** instance from the application memory. This API uses an asynchronous callback to
-return the result.
+Removes an **AbilityStageMonitor** instance from the application memory. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -799,8 +765,7 @@ return the result.
 removeAbilityStageMonitor(monitor: AbilityStageMonitor): Promise<void>
 ```
 
-Removes an **AbilityStageMonitor** instance from the application memory. This API uses a promise to return the
-result.
+Removes an **AbilityStageMonitor** instance from the application memory. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -1004,9 +969,7 @@ Starts an ability. This API uses a promise to return the result.
 waitAbilityMonitor(monitor: AbilityMonitor, callback: AsyncCallback<UIAbility>): void
 ```
 
-Waits for the **Ability** instance that matches the **AbilityMonitor** instance to reach the **onCreate** lifecycle
-state and returns the **Ability** instance. This API uses an asynchronous callback to return the result. Multi-
-thread concurrent calls are not supported.
+Waits for the **Ability** instance that matches the **AbilityMonitor** instance to reach the **onCreate** lifecycle state and returns the **Ability** instance. This API uses an asynchronous callback to return the result. Multi- thread concurrent calls are not supported.
 
 **Since:** 9
 
@@ -1034,9 +997,7 @@ thread concurrent calls are not supported.
 waitAbilityMonitor(monitor: AbilityMonitor, timeout: number, callback: AsyncCallback<UIAbility>): void
 ```
 
-Waits a period of time for the **Ability** instance that matches the **AbilityMonitor** instance to reach the
-**onCreate** lifecycle state and returns the **Ability** instance. This API uses an asynchronous callback to return
-the result. Multi-thread concurrent calls are not supported.
+Waits a period of time for the **Ability** instance that matches the **AbilityMonitor** instance to reach the **onCreate** lifecycle state and returns the **Ability** instance. This API uses an asynchronous callback to return the result. Multi-thread concurrent calls are not supported.
 
 **Since:** 9
 
@@ -1065,9 +1026,7 @@ the result. Multi-thread concurrent calls are not supported.
 waitAbilityMonitor(monitor: AbilityMonitor, timeout?: number): Promise<UIAbility>
 ```
 
-Waits a period of time for the **Ability** instance that matches the **AbilityMonitor** instance to reach the
-**onCreate** lifecycle state and returns the **Ability** instance. This API uses a promise to return the result.
-Multi-thread concurrent calls are not supported.
+Waits a period of time for the **Ability** instance that matches the **AbilityMonitor** instance to reach the **onCreate** lifecycle state and returns the **Ability** instance. This API uses a promise to return the result. Multi-thread concurrent calls are not supported.
 
 **Since:** 9
 
@@ -1101,8 +1060,7 @@ Multi-thread concurrent calls are not supported.
 waitAbilityStageMonitor(monitor: AbilityStageMonitor, callback: AsyncCallback<AbilityStage>): void
 ```
 
-Returns an **AbilityStage** instance that matches the conditions set in an **AbilityStageMonitor** instance. This
-API uses an asynchronous callback to return the result.
+Returns an **AbilityStage** instance that matches the conditions set in an **AbilityStageMonitor** instance. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -1130,8 +1088,7 @@ API uses an asynchronous callback to return the result.
 waitAbilityStageMonitor(monitor: AbilityStageMonitor, timeout: number, callback: AsyncCallback<AbilityStage>): void
 ```
 
-Returns an **AbilityStage** instance that matches the conditions set in an **AbilityStageMonitor** instance within
-the specified timeout period. This API uses an asynchronous callback to return the result.
+Returns an **AbilityStage** instance that matches the conditions set in an **AbilityStageMonitor** instance within the specified timeout period. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -1160,8 +1117,7 @@ the specified timeout period. This API uses an asynchronous callback to return t
 waitAbilityStageMonitor(monitor: AbilityStageMonitor, timeout?: number): Promise<AbilityStage>
 ```
 
-Returns an **AbilityStage** instance that matches the conditions set in an **AbilityStageMonitor** instance. You
-can specify the timeout period. This API uses a promise to return the result.
+Returns an **AbilityStage** instance that matches the conditions set in an **AbilityStageMonitor** instance. You can specify the timeout period. This API uses a promise to return the result.
 
 **Since:** 9
 

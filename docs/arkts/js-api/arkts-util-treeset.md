@@ -12,5 +12,5 @@ import { TreeSet } from '@kit.ArkTS';
 
 | Name | Description |
 | --- | --- |
-| [TreeSet](arkts-arkts-treeset-c.md) | TreeSet is implemented based on TreeMap. In TreeSet, only value objects are processed.TreeSet can be used to store values, each of which must be unique. |
+| [TreeSet](arkts-arkts-treeset-c.md) | TreeSet is implemented based on TreeMap. In TreeSet, only value objects are processed. TreeSet can be used to store values, each of which must be unique. |
 

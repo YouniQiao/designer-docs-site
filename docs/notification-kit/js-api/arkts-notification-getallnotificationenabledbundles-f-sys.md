@@ -62,8 +62,7 @@ notificationManager.getAllNotificationEnabledBundles().then((data: Array<notific
 function getAllNotificationEnabledBundles(userId: number): Promise<Array<BundleOption>>
 ```
 
-Obtains the list of applications that are allowed to publish notifications by a specified user. This API uses a
-promise to return the result.
+Obtains the list of applications that are allowed to publish notifications by a specified user. This API uses a promise to return the result.
 
 **Since:** 23
 

@@ -6,8 +6,7 @@
 const REASON_MESSAGE_DESKTOP_SHORTCUT = 'ReasonMessage_DesktopShortcut'
 ```
 
-通过桌面快捷方式启动。开发者如果从[LaunchParam](arkts-ability-launchparam-i.md)的launchReasonMessage属性中获取到该字符串，表示UIAbility是通过点击桌面快
-捷方式启动的。
+通过桌面快捷方式启动。开发者如果从[LaunchParam](arkts-ability-launchparam-i.md)的launchReasonMessage属性中获取到该字符串，表示UIAbility是通过点击桌面快 捷方式启动的。
 
 **起始版本：** 20
 

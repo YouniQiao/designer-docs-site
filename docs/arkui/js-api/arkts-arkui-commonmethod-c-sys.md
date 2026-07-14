@@ -12,9 +12,7 @@ CommonMethod.
 advancedBlendMode(effect: BlendMode | Blender, type?: BlendApplyType): T
 ```
 
-Defines how the component's content (including the content of it child components) is blended with the existing
-content on the canvas (possibly offscreen canvas) below. This API cannot be used with
-[blendMode](arkts-arkui-commonmethod-c.md#blendmode-1).
+Defines how the component's content (including the content of it child components) is blended with the existing content on the canvas (possibly offscreen canvas) below. This API cannot be used with [blendMode](arkts-arkui-commonmethod-c.md#blendmode-1).
 
 **Since:** 13
 
@@ -61,13 +59,7 @@ constructor.
 edgeLight(params: EdgeLightParams | undefined): T
 ```
 
-Sets the edge light effect for the component.
-
-<p><strong>NOTE</strong>:
-<br>The edge light effect creates a glowing light effect along the component's edges,
-starting from the specified position and extending along the edge.
-<br>This effect can enhance the visual appeal and highlight important components.
-</p>
+Sets the edge light effect for the component. <p><strong>NOTE</strong>: <br>The edge light effect creates a glowing light effect along the component's edges, starting from the specified position and extending along the edge. <br>This effect can enhance the visual appeal and highlight important components. </p>
 
 **Since:** 26.0.0
 
@@ -95,30 +87,7 @@ starting from the specified position and extending along the edge.
 excludeFromRenderGroup(exclude: boolean | undefined): T
 ```
 
-Sets whether the current component and its child components are removed from the render group of the ancestor
-component. If this attribute is used alone, no effect is achieved. It must be used with the
-[renderGroup](arkts-arkui-commonmethod-c.md#rendergroup-2) attribute of the ancestor component.
-
-Removing the current component and its children from the render group does not affect the offscreen canvas of the
-ancestor component, and the cache of the render group is still valid. In this way, the render group cache can be
-reused. If the display area of the current component occupies only a part of the display area of the render group
-drawing content, and the display effect of the current component and its children is frequently updated, setting
-**excludeFromRenderGroup** helps optimize the drawing performance.
-
-If this attribute is not set, the current component and its children are not removed from the render group of the
-ancestor component by default.
-
-> **NOTE**
->
-> The drawing content of the component with **excludeFromRenderGroup** set to **true** and its children cannot the
-> component's own boundary range. Otherwise, the displayed content may be clipped. For example, if the child
-> component exceeds the boundary range of the current component due to attributes such as
-> [translate](arkts-arkui-commonmethod-c.md#translate-1) or
-> [scale](arkts-arkui-commonmethod-c.md#scale-1), or the drawing content extend beyond its boundaries
-> because the current component has attributes such as
-> [shadow](arkts-arkui-commonmethod-c.md#shadow-1) and
-> [pixelStretchEffect](arkts-arkui-commonmethod-c.md#pixelstretcheffect-1), the displayed
-> content may be clipped. In such scenarios, **excludeFromRenderGroup** should not be set to **true**.
+Sets whether the current component and its child components are removed from the render group of the ancestor component. If this attribute is used alone, no effect is achieved. It must be used with the [renderGroup](arkts-arkui-commonmethod-c.md#rendergroup-2) attribute of the ancestor component. Removing the current component and its children from the render group does not affect the offscreen canvas of the ancestor component, and the cache of the render group is still valid. In this way, the render group cache can be reused. If the display area of the current component occupies only a part of the display area of the render group drawing content, and the display effect of the current component and its children is frequently updated, setting **excludeFromRenderGroup** helps optimize the drawing performance. If this attribute is not set, the current component and its children are not removed from the render group of the ancestor component by default. > **NOTE** > > The drawing content of the component with **excludeFromRenderGroup** set to **true** and its children cannot the > component's own boundary range. Otherwise, the displayed content may be clipped. For example, if the child > component exceeds the boundary range of the current component due to attributes such as > [translate](arkts-arkui-commonmethod-c.md#translate-1) or > [scale](arkts-arkui-commonmethod-c.md#scale-1), or the drawing content extend beyond its boundaries > because the current component has attributes such as > [shadow](arkts-arkui-commonmethod-c.md#shadow-1) and > [pixelStretchEffect](arkts-arkui-commonmethod-c.md#pixelstretcheffect-1), the displayed > content may be clipped. In such scenarios, **excludeFromRenderGroup** should not be set to **true**.
 
 **Since:** 22
 
@@ -176,12 +145,7 @@ Applies a spatial effect to component.
 systemMaterial(material: SystemUiMaterial | undefined): T
 ```
 
-Sets the system material for a component. Different system materials have different attribute effects. This API
-affects the background color ([backgroundColor](arkts-arkui-commonmethod-c.md#backgroundcolor-1)), border
-color ([borderColor](arkts-arkui-commonmethod-c.md#bordercolor-1)), border width ([borderWidth](arkts-arkui-commonmethod-c.md#borderwidth-1)
-), and shadow ([shadow](arkts-arkui-commonmethod-c.md#shadow-1)). You are advised not to use
-this API together with the aforementioned APIs. For details about the example, see
-[Setting the System Material](../../../../reference/apis-arkui/arkts-apis-uimaterial-sys.md#example-1-setting-the-system-material).
+Sets the system material for a component. Different system materials have different attribute effects. This API affects the background color ([backgroundColor](arkts-arkui-commonmethod-c.md#backgroundcolor-1)), border color ([borderColor](arkts-arkui-commonmethod-c.md#bordercolor-1)), border width ([borderWidth](arkts-arkui-commonmethod-c.md#borderwidth-1) ), and shadow ([shadow](arkts-arkui-commonmethod-c.md#shadow-1)). You are advised not to use this API together with the aforementioned APIs. For details about the example, see [Setting the System Material](../../../../reference/apis-arkui/arkts-apis-uimaterial-sys.md#example-1-setting-the-system-material).
 
 **Since:** 26.0.0
 
@@ -213,8 +177,7 @@ this API together with the aforementioned APIs. For details about the example, s
 useUnionEffect(value: boolean | undefined): T
 ```
 
-Specify whether the current component participates in the fusion effect of the ancestor component
-UnionEffectContainer
+Specify whether the current component participates in the fusion effect of the ancestor component UnionEffectContainer
 
 **Since:** 23
 

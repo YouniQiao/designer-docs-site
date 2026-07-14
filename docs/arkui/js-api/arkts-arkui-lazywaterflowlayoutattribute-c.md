@@ -104,8 +104,7 @@ Sets the header of the lazy waterflow layout.
 onVisibleIndexesChange(callback: OnVisibleIndexesChangeCallback | undefined): T
 ```
 
-Called when the first or last item displayed in the component changes.
-It is triggered once when the component is initialized.
+Called when the first or last item displayed in the component changes. It is triggered once when the component is initialized.
 
 **Since:** 26.0.0
 

@@ -67,8 +67,7 @@ setPropertyValue(propertyName: string, value: Object | undefined): boolean
 readonly effectId: string
 ```
 
-特效的ID.
-这是用于创建特效的ID.
+特效的ID. 这是用于创建特效的ID.
 
 **类型：** string
 

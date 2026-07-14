@@ -6,16 +6,7 @@
 function on(type: 'accessibilityStateChange', callback: Callback<boolean>): void
 ```
 
-监听辅助应用启用状态变化事件，使用callback异步回调。如需获取系统内辅助应用信息，推荐使用
-[accessibility.getAccessibilityExtensionListSync](arkts-accessibility-getaccessibilityextensionlistsync-f.md#getaccessibilityextensionlistsync-1)。
-
-> **说明：**
->
-> - 注册监听的callback参数应使用具名函数而非匿名函数，否则每次调用时会创建一个新的底层对象，引起内存泄漏问题。
->
-> - 调用此方法后，务必在对象生命周期结束前使用
-> [accessibility.off('accessibilityStateChange')](arkts-accessibility-off-f.md#off-1)
-> 取消监听，否则可能会导致崩溃。
+监听辅助应用启用状态变化事件，使用callback异步回调。如需获取系统内辅助应用信息，推荐使用 [accessibility.getAccessibilityExtensionListSync](arkts-accessibility-getaccessibilityextensionlistsync-f.md#getaccessibilityextensionlistsync-1)。 > **说明：** > > - 注册监听的callback参数应使用具名函数而非匿名函数，否则每次调用时会创建一个新的底层对象，引起内存泄漏问题。 > > - 调用此方法后，务必在对象生命周期结束前使用 > [accessibility.off('accessibilityStateChange')](arkts-accessibility-off-f.md#off-1) > 取消监听，否则可能会导致崩溃。
 
 **起始版本：** 7
 
@@ -59,16 +50,7 @@ accessibility.on('accessibilityStateChange', (data: boolean) => {
 function on(type: 'touchGuideStateChange', callback: Callback<boolean>): void
 ```
 
-监听触摸浏览功能启用状态变化事件，使用callback异步回调。如需获取系统内辅助应用信息，推荐使用
-[accessibility.getAccessibilityExtensionListSync](arkts-accessibility-getaccessibilityextensionlistsync-f.md#getaccessibilityextensionlistsync-1)。
-
-> **说明：**
->
-> - 注册监听的callback参数应使用具名函数而非匿名函数，否则每次调用时会创建一个新的底层对象，引起内存泄漏问题。
->
-> - 调用此方法后，务必在对象生命周期结束前使用
-> [accessibility.off('touchGuideStateChange')](arkts-accessibility-off-f.md#off-2)
-> 取消监听，否则可能会导致崩溃。
+监听触摸浏览功能启用状态变化事件，使用callback异步回调。如需获取系统内辅助应用信息，推荐使用 [accessibility.getAccessibilityExtensionListSync](arkts-accessibility-getaccessibilityextensionlistsync-f.md#getaccessibilityextensionlistsync-1)。 > **说明：** > > - 注册监听的callback参数应使用具名函数而非匿名函数，否则每次调用时会创建一个新的底层对象，引起内存泄漏问题。 > > - 调用此方法后，务必在对象生命周期结束前使用 > [accessibility.off('touchGuideStateChange')](arkts-accessibility-off-f.md#off-2) > 取消监听，否则可能会导致崩溃。
 
 **起始版本：** 7
 
@@ -112,15 +94,7 @@ accessibility.on('touchGuideStateChange', (data: boolean) => {
 function on(type: 'screenReaderStateChange', callback: Callback<boolean>): void
 ```
 
-监听屏幕朗读功能启用状态变化事件，使用callback异步回调。
-
-> **说明：**
->
-> - 注册监听的callback参数应使用具名函数而非匿名函数，否则每次调用时会创建一个新的底层对象，引起内存泄漏问题。
->
-> - 调用此方法后，务必在对象生命周期结束前使用
-> [accessibility.off('screenReaderStateChange')](arkts-accessibility-off-f.md#off-3)
-> 取消监听，否则可能会导致崩溃。
+监听屏幕朗读功能启用状态变化事件，使用callback异步回调。 > **说明：** > > - 注册监听的callback参数应使用具名函数而非匿名函数，否则每次调用时会创建一个新的底层对象，引起内存泄漏问题。 > > - 调用此方法后，务必在对象生命周期结束前使用 > [accessibility.off('screenReaderStateChange')](arkts-accessibility-off-f.md#off-3) > 取消监听，否则可能会导致崩溃。
 
 **起始版本：** 18
 
@@ -161,15 +135,7 @@ accessibility.on('screenReaderStateChange', (data: boolean) => {
 function on(type: 'touchModeChange', callback: Callback<string>): void
 ```
 
-监听触摸浏览功能下的单击/双击操作模式变化事件，使用callback异步回调。
-
-> **说明：**
->
-> - 注册监听的callback参数应使用具名函数而非匿名函数，否则每次调用时会创建一个新的底层对象，引起内存泄漏问题。
->
-> - 调用此方法后，务必在对象生命周期结束前使用
-> [accessibility.off('touchModeChange')](arkts-accessibility-off-f.md#off-4)
-> 取消监听，否则可能会导致崩溃。
+监听触摸浏览功能下的单击/双击操作模式变化事件，使用callback异步回调。 > **说明：** > > - 注册监听的callback参数应使用具名函数而非匿名函数，否则每次调用时会创建一个新的底层对象，引起内存泄漏问题。 > > - 调用此方法后，务必在对象生命周期结束前使用 > [accessibility.off('touchModeChange')](arkts-accessibility-off-f.md#off-4) > 取消监听，否则可能会导致崩溃。
 
 **起始版本：** 20
 

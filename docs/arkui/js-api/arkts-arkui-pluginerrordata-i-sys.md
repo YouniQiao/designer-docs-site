@@ -1,7 +1,6 @@
 # PluginErrorData (System API)
 
-Data provided when an error occurs.
-AnonyMous Object Rectification
+Data provided when an error occurs. AnonyMous Object Rectification
 
 **Since:** 18
 
@@ -15,8 +14,7 @@ AnonyMous Object Rectification
 errcode: number
 ```
 
-Error code.
-AnonyMous Object Rectification
+Error code. AnonyMous Object Rectification
 
 **Type:** number
 
@@ -32,8 +30,7 @@ AnonyMous Object Rectification
 msg: string
 ```
 
-Error message.
-AnonyMous Object Rectification
+Error message. AnonyMous Object Rectification
 
 **Type:** string
 

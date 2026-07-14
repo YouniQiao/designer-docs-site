@@ -50,8 +50,7 @@ End position of the entity the input string.
 type: string
 ```
 
-Entity type. The value can be **phone_number** or **date**. **phone_number** indicates that the entity is a phone
-number, and **date** indicates that the entity is a date.
+Entity type. The value can be **phone_number** or **date**. **phone_number** indicates that the entity is a phone number, and **date** indicates that the entity is a date.
 
 **Type:** string
 

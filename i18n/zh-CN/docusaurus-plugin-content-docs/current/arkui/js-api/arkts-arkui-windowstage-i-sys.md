@@ -1,9 +1,6 @@
 # WindowStage
 
-窗口管理器。管理各个基本窗口单元，即[Window](arkts-window.md)实例。
-
-下列API示例中都需在[onWindowStageCreate()](../../apis-ability-kit/arkts-apis/arkts-ability-uiability-c.md#onwindowstagecreate-1)函数中使用WindowStage
-的实例调用对应方法。
+窗口管理器。管理各个基本窗口单元，即[Window](arkts-window.md)实例。 下列API示例中都需在[onWindowStageCreate()](../../apis-ability-kit/arkts-apis/arkts-ability-uiability-c.md#onwindowstagecreate-1)函数中使用WindowStage 的实例调用对应方法。
 
 **起始版本：** 9
 
@@ -15,10 +12,7 @@
 disableWindowDecor(): void
 ```
 
-禁止窗口装饰。
-
-禁止窗口装饰后，当主窗口进入全屏沉浸状态时，此时鼠标Hover到上方窗口标题栏热区上会显示悬浮标题栏。若想禁用悬浮标题栏显示，请使用
-[setTitleAndDockHoverShown()](arkts-arkui-window-i.md#settitleanddockhovershown-1)接口。
+禁止窗口装饰。 禁止窗口装饰后，当主窗口进入全屏沉浸状态时，此时鼠标Hover到上方窗口标题栏热区上会显示悬浮标题栏。若想禁用悬浮标题栏显示，请使用 [setTitleAndDockHoverShown()](arkts-arkui-window-i.md#settitleanddockhovershown-1)接口。
 
 **起始版本：** 9
 
@@ -94,11 +88,7 @@ removeImageForRecent(): Promise<void>
 setImageForRecent(imageResource: number | image.PixelMap, value: ImageFit): Promise<void>
 ```
 
-设置应用在多任务中和Dock栏悬停时显示的图片，使用Promise异步回调。
-> **说明：**
->
-> 调用该接口前，建议先通过[loadContent](#loadcontent9)方法或者[setUIContent](arkts-apis-window-Window.md#setuicontent9-1)
-> 方法完成页面加载。如果应用窗口未完成页面加载就直接调用该接口，功能将不会生效。此时多任务中只显示应用启动页。
+设置应用在多任务中和Dock栏悬停时显示的图片，使用Promise异步回调。 > **说明：** > > 调用该接口前，建议先通过[loadContent](#loadcontent9)方法或者[setUIContent](arkts-apis-window-Window.md#setuicontent9-1) > 方法完成页面加载。如果应用窗口未完成页面加载就直接调用该接口，功能将不会生效。此时多任务中只显示应用启动页。
 
 **起始版本：** 22
 
@@ -141,11 +131,7 @@ setImageForRecent(imageResource: number | image.PixelMap, value: ImageFit): Prom
 setImageForRecent(imgResourceId: number, value: ImageFit): Promise<void>
 ```
 
-设置应用在多任务中和Dock栏悬停时显示的图片，使用Promise异步回调。
-> **说明：**
->
-> 调用该接口前，建议先通过[loadContent](#loadcontent9)方法或者[setUIContent](arkts-apis-window-Window.md#setuicontent9-1)
-> 方法完成页面加载。如果应用窗口未完成页面加载就直接调用该接口，功能将不会生效。此时多任务中只显示应用启动页。
+设置应用在多任务中和Dock栏悬停时显示的图片，使用Promise异步回调。 > **说明：** > > 调用该接口前，建议先通过[loadContent](#loadcontent9)方法或者[setUIContent](arkts-apis-window-Window.md#setuicontent9-1) > 方法完成页面加载。如果应用窗口未完成页面加载就直接调用该接口，功能将不会生效。此时多任务中只显示应用启动页。
 
 **起始版本：** 19
 

@@ -12,13 +12,7 @@
 reason: string
 ```
 
-标准悬浮窗矩形区域变化的原因。原因和对应含义如下：
-
-"POSITION_CHANGE"：位置变化
-
-"SIZE_CHANGE"：大小变化
-
-"RECT_CHANGE"：位置大小同时变化
+标准悬浮窗矩形区域变化的原因。原因和对应含义如下： "POSITION_CHANGE"：位置变化 "SIZE_CHANGE"：大小变化 "RECT_CHANGE"：位置大小同时变化
 
 **类型：** string
 

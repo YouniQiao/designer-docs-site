@@ -12,8 +12,7 @@ import { hichecker } from '@kit.PerformanceAnalysisKit';
 function addCheckRule(rule: bigint) : void
 ```
 
-Adds one or more check rules. HiChecker detects unexpected operations or gives feedback based on the added rules.
-You can use **grep HiChecker** to check for the application running information in the hilog.
+Adds one or more check rules. HiChecker detects unexpected operations or gives feedback based on the added rules. You can use **grep HiChecker** to check for the application running information in the hilog.
 
 **Since:** 9
 

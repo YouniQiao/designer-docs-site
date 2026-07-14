@@ -1,7 +1,6 @@
 # AuthOptions (System API)
 
-Represents a set of optional parameters for
-[auth](arkts-basicservices-userauth-c-sys.md#auth-2).
+Represents a set of optional parameters for [auth](arkts-basicservices-userauth-c-sys.md#auth-2).
 
 **Since:** 12
 

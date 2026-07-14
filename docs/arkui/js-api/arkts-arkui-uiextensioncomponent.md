@@ -1,8 +1,6 @@
 # UIExtensionComponent
 
-Provide an interface for the UIExtensionComponent, which is used
-<br/>to render UI of a remote UIExtensionAbility
-
+Provide an interface for the UIExtensionComponent, which is used <br/>to render UI of a remote UIExtensionAbility
 
 ## UIExtensionComponent
 
@@ -12,8 +10,7 @@ UIExtensionComponent(
   )
 ```
 
-Construct the UIExtensionComponent.<br/>
-Called when the UIExtensionComponent is used.
+Construct the UIExtensionComponent.<br/> Called when the UIExtensionComponent is used.
 
 **Since:** 11
 

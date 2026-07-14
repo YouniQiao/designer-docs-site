@@ -1,12 +1,6 @@
 # Base64Helper
 
-Provides encoding and decoding for Base64 and Base64URL. The Base64 encoding table contains 64 characters, which
-are the uppercase letters (A-Z), lowercase letters (a-z), digits (0-9), and the special characters plus sign (+)
-and slash (/). During encoding, the original data is divided into groups of three bytes, and each group contains a
-6-bit number. Then, the corresponding characters in the Base64 encoding table are used to represent these numbers.
-If the last group contains only one or two bytes, the equal sign (=) is used for padding. The Base64URL encoding
-table contains 64 characters, which are the uppercase letters (A-Z), lowercase letters (a-z), digits (0-9), and the
-special characters plus sign (+) and slash (/). The Base64URL encoding result does not contain equal signs (=).
+Provides encoding and decoding for Base64 and Base64URL. The Base64 encoding table contains 64 characters, which are the uppercase letters (A-Z), lowercase letters (a-z), digits (0-9), and the special characters plus sign (+) and slash (/). During encoding, the original data is divided into groups of three bytes, and each group contains a 6-bit number. Then, the corresponding characters in the Base64 encoding table are used to represent these numbers. If the last group contains only one or two bytes, the equal sign (=) is used for padding. The Base64URL encoding table contains 64 characters, which are the uppercase letters (A-Z), lowercase letters (a-z), digits (0-9), and the special characters plus sign (+) and slash (/). The Base64URL encoding result does not contain equal signs (=).
 
 **Since:** 9
 
@@ -173,9 +167,7 @@ Encodes the input content into a string. This API uses a promise to return the r
 encodeToStringSync(src: Uint8Array, options?: Type): string
 ```
 
-Performs Base64 encoding on the input Uint8Array byte array and returns a string. This method supports multiple
-encoding formats, including standard Base64 encoding, MIME-compliant Base64 encoding (with line breaks), and URL-
-safe Base64 encoding.
+Performs Base64 encoding on the input Uint8Array byte array and returns a string. This method supports multiple encoding formats, including standard Base64 encoding, MIME-compliant Base64 encoding (with line breaks), and URL- safe Base64 encoding.
 
 **Since:** 9
 

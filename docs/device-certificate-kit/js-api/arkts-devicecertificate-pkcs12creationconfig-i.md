@@ -34,8 +34,7 @@ Algorithm parameters for encrypting the certificate.
 encryptCert?: boolean
 ```
 
-Whether to encrypt the certificate. The default value is **true**. **true** means to encrypt the certificate;
-**false** otherwise.
+Whether to encrypt the certificate. The default value is **true**. **true** means to encrypt the certificate; **false** otherwise.
 
 **Type:** boolean
 
@@ -87,8 +86,7 @@ MAC digest algorithm for the P12. The default value is **SHA256**.
 macIterations?: number
 ```
 
-Number of P12 MAC iterations. The default value is **2048**.
-The value must be a positive integer.
+Number of P12 MAC iterations. The default value is **2048**. The value must be a positive integer.
 
 **Type:** number
 
@@ -106,8 +104,7 @@ The value must be a positive integer.
 macSaltLen?: number
 ```
 
-Length of the salt value of the P12 MAC. The minimum value is **8**, and the default value is **16**.
-The value must be an integer greater than or equal to 8.
+Length of the salt value of the P12 MAC. The minimum value is **8**, and the default value is **16**. The value must be an integer greater than or equal to 8.
 
 **Type:** number
 

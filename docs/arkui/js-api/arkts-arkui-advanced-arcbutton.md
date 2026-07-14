@@ -19,7 +19,7 @@ import { ArcButtonPosition, ArcButton, ArcButtonStatus, ArcButtonStyleMode, ArcB
 
 | Name | Description |
 | --- | --- |
-| [ArcButton](arkts-arkui-arcbutton-s.md) | The **ArcButton** component offers various button styles, such as emphasized, normal, and warning. It is recommended for devices with circular screens.&gt; **NOTE**&gt; - This component can be used on phones, PCs, 2-in-1 devices, tablets, TVs, and wearables. In API version 22 and &gt; earlier versions, a compilation warning will be reported when this component is used on phones, PCs, 2-in-1 &gt; devices, tablets, and TVs, but the component can still run properly. |
+| [ArcButton](arkts-arkui-arcbutton-s.md) | The **ArcButton** component offers various button styles, such as emphasized, normal, and warning. It is recommended for devices with circular screens. &gt; **NOTE** &gt; - This component can be used on phones, PCs, 2-in-1 devices, tablets, TVs, and wearables. In API version 22 and &gt; earlier versions, a compilation warning will be reported when this component is used on phones, PCs, 2-in-1 &gt; devices, tablets, and TVs, but the component can still run properly. |
 
 ### Interfaces
 

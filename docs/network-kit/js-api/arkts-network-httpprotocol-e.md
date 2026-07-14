@@ -40,9 +40,7 @@ Protocol http2
 HTTP3
 ```
 
-Protocol http3 for https only.
-Cause error if using http only or not supporting http3 on this device.
-Fallback to http2 or http1.1 if needed.
+Protocol http3 for https only. Cause error if using http only or not supporting http3 on this device. Fallback to http2 or http1.1 if needed.
 
 **Since:** 12
 

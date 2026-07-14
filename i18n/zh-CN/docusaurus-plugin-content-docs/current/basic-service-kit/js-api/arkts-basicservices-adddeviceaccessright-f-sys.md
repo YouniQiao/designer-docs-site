@@ -6,8 +6,7 @@
 function addDeviceAccessRight(tokenId: string, deviceName: string): boolean
 ```
 
-添加软件包访问设备的权限。系统应用默认拥有访问设备权限，调用此接口不会产生影响。
-[usbManager.requestRight]{(@link usbManager.requestRight)}会触发弹框请求用户授权；addDeviceAccessRight不会触发弹框，而是直接添加软件包访问设备的权限。
+添加软件包访问设备的权限。系统应用默认拥有访问设备权限，调用此接口不会产生影响。 [usbManager.requestRight]{(@link usbManager.requestRight)}会触发弹框请求用户授权；addDeviceAccessRight不会触发弹框，而是直接添加软件包访问设备的权限。
 
 **起始版本：** 12
 

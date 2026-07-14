@@ -1,8 +1,6 @@
 # ScaleRingStyleOptions
 
-环形有刻度样式选项。
-
-继承自[CommonProgressStyleOptions](arkts-arkui-commonprogressstyleoptions-i.md)。
+环形有刻度样式选项。 继承自[CommonProgressStyleOptions](arkts-arkui-commonprogressstyleoptions-i.md)。
 
 **继承/实现关系：** ScaleRingStyleOptions extends [CommonProgressStyleOptions](arkts-arkui-commonprogressstyleoptions-i.md)
 
@@ -16,11 +14,7 @@
 scaleCount?: number
 ```
 
-设置环形进度条总刻度数。
-
-默认值：120
-
-取值范围：[2, min(width, height)/scaleWidth/2/π]，超出取值范围时，样式显示为环形无刻度进度条。默认情况下宽高最小为77vp。
+设置环形进度条总刻度数。 默认值：120 取值范围：[2, min(width, height)/scaleWidth/2/π]，超出取值范围时，样式显示为环形无刻度进度条。默认情况下宽高最小为77vp。
 
 **类型：** number
 
@@ -38,9 +32,7 @@ scaleCount?: number
 scaleWidth?: Length
 ```
 
-设置环形进度条刻度粗细（不支持百分比设置）。刻度粗细大于进度条宽度时，为系统默认粗细。
-
-默认值：2.0vp
+设置环形进度条刻度粗细（不支持百分比设置）。刻度粗细大于进度条宽度时，为系统默认粗细。 默认值：2.0vp
 
 **类型：** Length
 
@@ -58,9 +50,7 @@ scaleWidth?: Length
 strokeWidth?: Length
 ```
 
-设置进度条宽度（不支持百分比设置）。当宽度大于等于半径时，宽度默认修改为半径值的二分之一。
-
-默认值：4.0vp
+设置进度条宽度（不支持百分比设置）。当宽度大于等于半径时，宽度默认修改为半径值的二分之一。 默认值：4.0vp
 
 **类型：** Length
 

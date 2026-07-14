@@ -12,5 +12,5 @@ import { AbilityLifecycleCallback } from '@kit.AbilityKit';
 
 | Name | Description |
 | --- | --- |
-| [AbilityLifecycleCallback](arkts-ability-abilitylifecyclecallback-c.md) | The lifecycle of a [UIAbility](arkts-app-ability-uiability.md) dynamically changes from creation todestruction.The AbilityLifecycleCallback module provides the capability to listen for these lifecycle changes, which can be usedfor scenarios such as tracking the runtime duration of each UIAbility and performing data loading decoupled from theservice logic of UIAbility. |
+| [AbilityLifecycleCallback](arkts-ability-abilitylifecyclecallback-c.md) | The lifecycle of a [UIAbility](arkts-app-ability-uiability.md) dynamically changes from creation to destruction. The AbilityLifecycleCallback module provides the capability to listen for these lifecycle changes, which can be used for scenarios such as tracking the runtime duration of each UIAbility and performing data loading decoupled from the service logic of UIAbility. |
 

@@ -12,8 +12,7 @@ import { cardEmulation } from '@kit.ConnectivityKit';
 function isSupported(feature: number): boolean
 ```
 
-Checks whether a specified type of card emulation is supported.
-<p>This method is used to check Whether the host or secure element supports card emulation.
+Checks whether a specified type of card emulation is supported. <p>This method is used to check Whether the host or secure element supports card emulation.
 
 **Since:** 6
 

@@ -12,8 +12,7 @@ import { certificateManager } from '@kit.DeviceCertificateKit';
 function grantPublicCertificate(keyUri: string, clientAppUid: number) : Promise<CMResult>
 ```
 
-Grants the permission for an application to use the public credentials of a user. This API is called only by the
-certificate management application. This API uses a promise to return the result.
+Grants the permission for an application to use the public credentials of a user. This API is called only by the certificate management application. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 

@@ -12,8 +12,7 @@ import { distributedBundleManager } from '@kit.AbilityKit';
 function getRemoteBundleVersionCode(deviceId: string, bundleName: string): Promise<number>
 ```
 
-Obtains the version information of an app with a specified bundle name on a specified remote device.
-This API uses a promise to return the result.
+Obtains the version information of an app with a specified bundle name on a specified remote device. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 

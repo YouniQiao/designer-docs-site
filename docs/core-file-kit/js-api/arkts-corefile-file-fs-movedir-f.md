@@ -12,11 +12,7 @@ import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventList
 declare function moveDir(src: string, dest: string, mode?: number): Promise<void>
 ```
 
-Moves the source directory to the destination directory. This API uses a promise to return the result.
-
-> **NOTE**
->
-> This API is not supported in a distributed directory.
+Moves the source directory to the destination directory. This API uses a promise to return the result. > **NOTE** > > This API is not supported in a distributed directory.
 
 **Since:** 10
 
@@ -111,14 +107,7 @@ Moves the source directory to the destination directory. This API uses an asynch
 declare function moveDir(src: string, dest: string, callback: AsyncCallback<void, Array<ConflictFiles>>): void
 ```
 
-Moves the source directory to the destination directory. This API uses an asynchronous callback to return the result.
-
-An exception will be thrown if a directory conflict occurs, that is, the destination directory contains a directory
-with the same name as the source directory.
-
-> **NOTE**
->
-> This API is not supported in a distributed directory.
+Moves the source directory to the destination directory. This API uses an asynchronous callback to return the result. An exception will be thrown if a directory conflict occurs, that is, the destination directory contains a directory with the same name as the source directory. > **NOTE** > > This API is not supported in a distributed directory.
 
 **Since:** 10
 
@@ -145,8 +134,7 @@ with the same name as the source directory.
 declare function moveDir(src: string, dest: string, mode: number, callback: AsyncCallback<void>): void
 ```
 
-Moves the source directory to the destination directory. You can set the move mode.
-This API uses an asynchronous callback to return the result.
+Moves the source directory to the destination directory. You can set the move mode. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -191,12 +179,7 @@ This API uses an asynchronous callback to return the result.
 declare function moveDir(src: string, dest: string, mode: number, callback: AsyncCallback<void, Array<ConflictFiles>>): void
 ```
 
-Moves the source directory to the destination directory. You can set the move mode. This API uses an asynchronous
-callback to return the result.
-
-> **NOTE**
->
-> This API is not supported in a distributed directory.
+Moves the source directory to the destination directory. You can set the move mode. This API uses an asynchronous callback to return the result. > **NOTE** > > This API is not supported in a distributed directory.
 
 **Since:** 10
 

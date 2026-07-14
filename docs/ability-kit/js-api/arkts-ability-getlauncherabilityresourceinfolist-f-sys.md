@@ -12,8 +12,7 @@ import { bundleResourceManager } from '@kit.AbilityKit';
 function getLauncherAbilityResourceInfoList(optionsList: Array<BundleOptions>, resourceFlags: number): Promise<Array<LauncherAbilityResourceInfo>>
 ```
 
-Obtains the launcher ability resource information of each application corresponding to the **BundleOptions**
-element in **optionsList**. This API uses a promise to return the result.
+Obtains the launcher ability resource information of each application corresponding to the **BundleOptions** element in **optionsList**. This API uses a promise to return the result.
 
 **Since:** 23
 

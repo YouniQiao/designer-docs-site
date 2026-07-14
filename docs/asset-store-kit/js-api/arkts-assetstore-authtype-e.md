@@ -26,8 +26,7 @@ No user authentication is required before the asset is accessed.
 ANY = 0xFF
 ```
 
-The asset can be accessed if any user authentication (such as PIN, facial, or fingerprint authentication) is
-successful.
+The asset can be accessed if any user authentication (such as PIN, facial, or fingerprint authentication) is successful.
 
 **Since:** 11
 

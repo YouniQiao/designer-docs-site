@@ -6,9 +6,7 @@
 function exitKioskMode(context: UIAbilityContext): Promise<void>
 ```
 
-退出Kiosk模式。使用Promise异步回调。
-该接口仅对已进入Kiosk模式的应用生效。
-该接口仅在Phone、PC/2in1和Tablet设备中可正常调用，在其他设备中返回801错误码。
+退出Kiosk模式。使用Promise异步回调。 该接口仅对已进入Kiosk模式的应用生效。 该接口仅在Phone、PC/2in1和Tablet设备中可正常调用，在其他设备中返回801错误码。
 
 **起始版本：** 20
 
@@ -59,7 +57,7 @@ struct Index {
               hilog.info(0x0000, 'testTag', '%{public}s', 'exitKioskMode success');
             })
             .catch((error: BusinessError) => {
-              hilog.error(0x0000, 'testTag', '%{public}s', `exitKioskMode failed:${JSON.stringify(error)}`);
+              hilog.error(0x0000, 'testTag', '%{public}s', `exitKioskMode failed. Code: ${error.code}, message: ${error.message}`);
             });
         })
     }

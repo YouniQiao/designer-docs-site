@@ -6,9 +6,7 @@
 export function grantToolPermissionsByUser(userAuthResult: UserAuthResult[]): Promise<TicketInfo[]>
 ```
 
-Grants tool permissions based on user authorization results.
-This function grants permissions for tools (CLI commands or APIs) according to the user's authorization decisions.
-After successful authorization, tickets are generated which can be used for permission verification.
+Grants tool permissions based on user authorization results. This function grants permissions for tools (CLI commands or APIs) according to the user's authorization decisions. After successful authorization, tickets are generated which can be used for permission verification.
 
 **Since:** 26.0.0
 

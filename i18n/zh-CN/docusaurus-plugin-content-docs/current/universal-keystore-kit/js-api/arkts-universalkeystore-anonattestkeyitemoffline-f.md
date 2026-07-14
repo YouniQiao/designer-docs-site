@@ -6,21 +6,7 @@
 function anonAttestKeyItemOffline(keyAlias: string, params: HuksParam[]): Promise<HuksReturnResult>
 ```
 
-离线模式下获取匿名化密钥证书。使用Promise异步回调。
-
-> **说明：**
->
-> - 离线密钥证明依赖网络，需要定期联网使用该接口以更新离线证书，推荐优先使用离线匿名密钥证明。
->
-> - 离线匿名密钥证明需保证本地时间是准确的，否则可能导致对端校验证书超期失败。
-
-> **说明**
-> >
-> - Offline key attestation depends on the network. You need to periodically connect to the network to use this API
-> to update the offline certificate. Offline anonymous key attestation is recommended.
-> >
-> - Offline anonymous key attestation requires that the local time be accurate. Otherwise, the peer end may fail to
-> verify the certificate expiration。
+离线模式下获取匿名化密钥证书。使用Promise异步回调。 > **说明：** > > - 离线密钥证明依赖网络，需要定期联网使用该接口以更新离线证书，推荐优先使用离线匿名密钥证明。 > > - 离线匿名密钥证明需保证本地时间是准确的，否则可能导致对端校验证书超期失败。 > **说明** > > > - Offline key attestation depends on the network. You need to periodically connect to the network to use this API > to update the offline certificate. Offline anonymous key attestation is recommended. > > > - Offline anonymous key attestation requires that the local time be accurate. Otherwise, the peer end may fail to > verify the certificate expiration。
 
 **起始版本：** 26.0.0
 

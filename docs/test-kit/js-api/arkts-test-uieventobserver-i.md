@@ -110,9 +110,7 @@ async function demo() {
 once(type: 'windowChange', windowChangeType: WindowChangeType, options: WindowChangeOptions, callback: Callback<UIElementInfo>): void
 ```
 
-Starts listening for window change events of the specified type with extended configuration supported. This API
-triggers a callback when a specified window change event is detected.
-This API can be used only in [free windows](../../../../windowmanager/window-terminology.md#free-windows) mode.
+Starts listening for window change events of the specified type with extended configuration supported. This API triggers a callback when a specified window change event is detected. This API can be used only in [free windows](../../../../windowmanager/window-terminology.md#free-windows) mode.
 
 **Since:** 22
 
@@ -167,8 +165,7 @@ async function demo() {
 once(type: 'componentEventOccur', componentEventType: ComponentEventType, options: ComponentEventOptions, callback: Callback<UIElementInfo>): void
 ```
 
-Starts listening for component operation events of the specified type with extended configuration supported. This
-API triggers a callback when a specified component operation event is detected.
+Starts listening for component operation events of the specified type with extended configuration supported. This API triggers a callback when a specified component operation event is detected.
 
 **Since:** 22
 

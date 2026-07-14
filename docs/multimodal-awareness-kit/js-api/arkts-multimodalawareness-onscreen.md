@@ -1,9 +1,6 @@
 # @ohos.multimodalAwareness.onScreen
 
-This module provides the onscreen awareness capability.
-
-> **NOTE**
->
+This module provides the onscreen awareness capability. > **NOTE** >
 
 **Since:** 20
 
@@ -39,7 +36,7 @@ import { onScreen } from '@kit.MultimodalAwarenessKit';
 
 | Name | Description |
 | --- | --- |
-| [AwarenessItem](arkts-multimodalawareness-awarenessitem-i-sys.md) | Provides page information, which includes:* Basic page information, such as page content, links, and screenshots.* Page entity information, such as the title and body of a page article.* Page interaction information, such as clicks and scrolling. |
+| [AwarenessItem](arkts-multimodalawareness-awarenessitem-i-sys.md) | Provides page information, which includes: * Basic page information, such as page content, links, and screenshots. * Page entity information, such as the title and body of a page article. * Page interaction information, such as clicks and scrolling. |
 | [ContentOptions](arkts-multimodalawareness-contentoptions-i-sys.md) | Defines the options for obtaining the onscreen content. |
 | [ControlEvent](arkts-multimodalawareness-controlevent-i-sys.md) | Defines a control event. |
 | [EntityInfo](arkts-multimodalawareness-entityinfo-i-sys.md) | Provides entity information perceived, including content, links, images, and other types of entities. |

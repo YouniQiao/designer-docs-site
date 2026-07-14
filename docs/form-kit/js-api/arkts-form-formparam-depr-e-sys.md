@@ -16,9 +16,7 @@ Enumerates the widget parameters.
 IDENTITY_KEY = 'ohos.extra.param.key.form_identity'
 ```
 
-Widget ID.
-
-This is a system API.
+Widget ID. This is a system API.
 
 **Since:** 8
 

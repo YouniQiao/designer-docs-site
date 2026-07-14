@@ -26,9 +26,7 @@ The float view has been started and displayed.
 HIDDEN = 2
 ```
 
-The float view has been hidden. This event is triggered when the user swipes up to enter the multitasking screen
-or when the [setFloatViewVisibilityInApp](arkts-arkui-floatviewcontroller-i.md#setfloatviewvisibilityinapp-1) API is
-called to hide the float view when the application is in the foreground and the application is in the foreground.
+The float view has been hidden. This event is triggered when the user swipes up to enter the multitasking screen or when the [setFloatViewVisibilityInApp](arkts-arkui-floatviewcontroller-i.md#setfloatviewvisibilityinapp-1) API is called to hide the float view when the application is in the foreground and the application is in the foreground.
 
 **Since:** 26.0.0
 

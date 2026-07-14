@@ -42,15 +42,7 @@ Locale ID, including the language, script, and region.
 numberingSystem: string
 ```
 
-Numbering system. The value can be:
-
-**adlm**, **ahom**, **arab**, **arabext**, **bali**, **beng**, **bhks**, **brah**, **cakm**, **cham**, **deva**,
-**diak**, **fullwide**, **gong**, **gonm**, **gujr**, **guru**, **hanidec**, **hmng**, **hmnp**, **java**,
-**kali**, **khmr**, **knda**, **lana**, **lanatham**, **laoo**, **latn**, **lepc**, **limb**, **mathbold**,
-**mathdbl**, **mathmono**, **mathsanb**, **mathsans**, **mlym**, **modi**, **mong**, **mroo**, **mtei**, **mymr**
-, **mymrshan**, **mymrtlng**, **newa**, **nkoo**, **olck**, **orya**, **osma**, **rohg**, **saur**, **segment**,
-**shrd**, **sind**, **sinh**, **sora**, **sund**, **takr**, **talu**, **tamldec**, **telu**, **thai**, **tibt**,
-**tirh**, **vaii**, **wara**, or **wcho**.
+Numbering system. The value can be: **adlm**, **ahom**, **arab**, **arabext**, **bali**, **beng**, **bhks**, **brah**, **cakm**, **cham**, **deva**, **diak**, **fullwide**, **gong**, **gonm**, **gujr**, **guru**, **hanidec**, **hmng**, **hmnp**, **java**, **kali**, **khmr**, **knda**, **lana**, **lanatham**, **laoo**, **latn**, **lepc**, **limb**, **mathbold**, **mathdbl**, **mathmono**, **mathsanb**, **mathsans**, **mlym**, **modi**, **mong**, **mroo**, **mtei**, **mymr** , **mymrshan**, **mymrtlng**, **newa**, **nkoo**, **olck**, **orya**, **osma**, **rohg**, **saur**, **segment**, **shrd**, **sind**, **sinh**, **sora**, **sund**, **takr**, **talu**, **tamldec**, **telu**, **thai**, **tibt**, **tirh**, **vaii**, **wara**, or **wcho**.
 
 **Type:** string
 
@@ -70,11 +62,7 @@ Numbering system. The value can be:
 numeric: string
 ```
 
-Format of the output result. It determines whether numeric values are used to represent relative dates or times
-in the formatting result. The value can be **always** or **auto**.
-
-For details about their display effects, see
-[Table 23](../../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
+Format of the output result. It determines whether numeric values are used to represent relative dates or times in the formatting result. The value can be **always** or **auto**. For details about their display effects, see [Table 23](../../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
 
 **Type:** string
 
@@ -94,10 +82,7 @@ For details about their display effects, see
 style: string
 ```
 
-Length of an internationalized message. The value can be **long**, **short**, or **narrow**.
-
-For details about their display effects, see
-[Table 24](../../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
+Length of an internationalized message. The value can be **long**, **short**, or **narrow**. For details about their display effects, see [Table 24](../../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
 
 **Type:** string
 

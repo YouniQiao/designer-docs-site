@@ -38,8 +38,7 @@ Error code returned when the API fails to be called.
 data?: T
 ```
 
-Error message returned when the API fails to be called. If this parameter is left empty, the error object does
-not contain additional data.
+Error message returned when the API fails to be called. If this parameter is left empty, the error object does not contain additional data.
 
 **Type:** T
 

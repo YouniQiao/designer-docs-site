@@ -12,10 +12,7 @@ import { i18n } from '@kit.LocalizationKit';
 export function getSimpleDateTimeFormatBySkeleton(skeleton: string, locale?: Intl.Locale): SimpleDateTimeFormat
 ```
 
-Obtains a **SimpleDateTimeFormat** object based on the specified skeleton. For details about the difference between
-the objects obtained by this API and
-[getSimpleDateTimeFormatByPattern](arkts-localization-getsimpledatetimeformatbypattern-f.md#getsimpledatetimeformatbypattern-1)
-, see the examples in [SimpleDateTimeFormat.format](arkts-localization-simpledatetimeformat-c.md#format-1).
+Obtains a **SimpleDateTimeFormat** object based on the specified skeleton. For details about the difference between the objects obtained by this API and [getSimpleDateTimeFormatByPattern](arkts-localization-getsimpledatetimeformatbypattern-f.md#getsimpledatetimeformatbypattern-1) , see the examples in [SimpleDateTimeFormat.format](arkts-localization-simpledatetimeformat-c.md#format-1).
 
 **Since:** 20
 
@@ -49,10 +46,7 @@ the objects obtained by this API and
 export function getSimpleDateTimeFormatBySkeleton(skeleton: string, locale?: intl.Locale): SimpleDateTimeFormat
 ```
 
-Obtains a **SimpleDateTimeFormat** object based on the specified skeleton. For details about the difference between
-the objects obtained by this API and
-[getSimpleDateTimeFormatByPattern](arkts-localization-getsimpledatetimeformatbypattern-f.md#getsimpledatetimeformatbypattern-2)
-, see the examples in [SimpleDateTimeFormat.format](arkts-localization-simpledatetimeformat-c.md#format-1).
+Obtains a **SimpleDateTimeFormat** object based on the specified skeleton. For details about the difference between the objects obtained by this API and [getSimpleDateTimeFormatByPattern](arkts-localization-getsimpledatetimeformatbypattern-f.md#getsimpledatetimeformatbypattern-2) , see the examples in [SimpleDateTimeFormat.format](arkts-localization-simpledatetimeformat-c.md#format-1).
 
 **Since:** 18
 

@@ -160,10 +160,7 @@ Checks whether the collaborative playback is supported for the specified device.
 setCollaborativePlaybackEnabledForDevice(deviceDescriptor: AudioDeviceDescriptor, enabled: boolean): Promise<void>
 ```
 
-Enables or disables collaborative playback for the specified device.
-Currently, only A2DP audio devices support collaborative playback.
-If the system is using the specified device for audio output,
-the audio will be played from both the local speaker and the specified device after this API is called.
+Enables or disables collaborative playback for the specified device. Currently, only A2DP audio devices support collaborative playback. If the system is using the specified device for audio output, the audio will be played from both the local speaker and the specified device after this API is called.
 
 **Since:** 20
 

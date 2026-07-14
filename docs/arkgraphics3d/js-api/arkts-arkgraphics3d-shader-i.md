@@ -14,8 +14,7 @@ Shader resource.
 setShaderInputs(inputs: Record<string, number | Vec2 | Vec3 | Vec4 | Image>): void
 ```
 
-Set shader inputs. Offers the same functionality for setting shader inputs as the property version,
-but with better performance.
+Set shader inputs. Offers the same functionality for setting shader inputs as the property version, but with better performance.
 
 **Since:** 23
 

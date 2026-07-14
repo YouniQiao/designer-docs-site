@@ -12,8 +12,7 @@ Describes the gutter sizes for different device width types.
 lg?: Length
 ```
 
-Gutter size for large device width.
-Unit: vp. Default value: **0vp**.
+Gutter size for large device width. Unit: vp. Default value: **0vp**.
 
 **Type:** Length
 
@@ -31,8 +30,7 @@ Unit: vp. Default value: **0vp**.
 md?: Length
 ```
 
-Gutter size for medium device width.
-Unit: vp. Default value: **0vp**.
+Gutter size for medium device width. Unit: vp. Default value: **0vp**.
 
 **Type:** Length
 
@@ -50,8 +48,7 @@ Unit: vp. Default value: **0vp**.
 sm?: Length
 ```
 
-Gutter size for small device width.
-Unit: vp. Default value: **0vp**.
+Gutter size for small device width. Unit: vp. Default value: **0vp**.
 
 **Type:** Length
 
@@ -69,8 +66,7 @@ Unit: vp. Default value: **0vp**.
 xl?: Length
 ```
 
-Gutter size for extra large device width.
-Unit: vp. Default value: **0vp**.
+Gutter size for extra large device width. Unit: vp. Default value: **0vp**.
 
 **Type:** Length
 
@@ -88,8 +84,7 @@ Unit: vp. Default value: **0vp**.
 xs?: Length
 ```
 
-Gutter size for minimum device width.
-Unit: vp. Default value: **0vp**.
+Gutter size for minimum device width. Unit: vp. Default value: **0vp**.
 
 **Type:** Length
 
@@ -107,8 +102,7 @@ Unit: vp. Default value: **0vp**.
 xxl?: Length
 ```
 
-Gutter size for extra extra large device width.
-Unit: vp. Default value: **0vp**.
+Gutter size for extra extra large device width. Unit: vp. Default value: **0vp**.
 
 **Type:** Length
 

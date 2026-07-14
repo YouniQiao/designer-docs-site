@@ -58,8 +58,7 @@ If **path** points to a symbolic link, throw an exception.
 const NONBLOCK = 0o4000
 ```
 
-If **path** points to a named pipe (FIFO), block special file, or character special
-file, perform non-blocking operations on the open file and in subsequent I/Os.
+If **path** points to a named pipe (FIFO), block special file, or character special file, perform non-blocking operations on the open file and in subsequent I/Os.
 
 **Since:** 9
 
@@ -111,8 +110,7 @@ Open the file in synchronous I/O mode.
 const TRUNC = 0o1000
 ```
 
-If the file exists and is opened in write-only or read/write mode, truncate the file
-length to 0.
+If the file exists and is opened in write-only or read/write mode, truncate the file length to 0.
 
 **Since:** 9
 

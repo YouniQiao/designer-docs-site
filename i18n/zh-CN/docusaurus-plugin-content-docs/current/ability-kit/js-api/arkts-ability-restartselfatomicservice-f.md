@@ -6,16 +6,7 @@
 function restartSelfAtomicService(context: Context): void
 ```
 
-重启当前原子化服务。
-
-> **说明：**
->
-> - 当前仅支持以独立窗口方式拉起原子化服务。
->
-> - 在调用本接口成功后的3秒内，再次调用本接口、
-> [ApplicationContext.restartApp()](arkts-ability-applicationcontext-c.md#restartapp-1)或
-> [UIAbilityContext.restartApp()](arkts-ability-uiabilitycontext-c.md#restartapp-1)接口中的任一接口，系统将返回错误码1
-> 6000064。
+重启当前原子化服务。 > **说明：** > > - 当前仅支持以独立窗口方式拉起原子化服务。 > > - 在调用本接口成功后的3秒内，再次调用本接口、 > [ApplicationContext.restartApp()](arkts-ability-applicationcontext-c.md#restartapp-1)或 > [UIAbilityContext.restartApp()](arkts-ability-uiabilitycontext-c.md#restartapp-1)接口中的任一接口，系统将返回错误码1 > 6000064。
 
 **起始版本：** 20
 
@@ -50,6 +41,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 export default class EntryAbility extends EmbeddableUIAbility {
   onCreate(want: Want, launchParam: AbilityConstant.LaunchParam): void {
     try {
+      // 重启当前原子化服务
       abilityManager.restartSelfAtomicService(this.context);
     } catch (e) {
       console.error(`restartSelfAtomicService error: ${JSON.stringify(e as BusinessError)}`);

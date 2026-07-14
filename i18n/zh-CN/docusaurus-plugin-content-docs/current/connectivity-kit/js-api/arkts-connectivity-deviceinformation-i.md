@@ -12,8 +12,7 @@
 manufacturerData: string
 ```
 
-远端设备的制造商数据
-最大长度为255。
+远端设备的制造商数据 最大长度为255。
 
 **类型：** string
 
@@ -29,8 +28,7 @@ manufacturerData: string
 modelData: string
 ```
 
-远程设备的模型数据。
-最大长度为255。
+远程设备的模型数据。 最大长度为255。
 
 **类型：** string
 

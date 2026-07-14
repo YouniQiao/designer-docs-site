@@ -28,9 +28,7 @@ Sets the controller of the Web.
 emulateTouchFromMouseEvent? : boolean
 ```
 
-设定鼠标事件是否被转换成触摸事件。
-
-默认值：false。
+设定鼠标事件是否被转换成触摸事件。 默认值：false。
 
 **类型：** boolean
 
@@ -44,9 +42,7 @@ emulateTouchFromMouseEvent? : boolean
 incognitoMode? : boolean
 ```
 
-Sets the incognito mode of the Web, the parameter is optional and default value is false.
-When the Web is in incognito mode, cookies, records of websites, geolocation permissions
-will not save in persistent files.
+Sets the incognito mode of the Web, the parameter is optional and default value is false. When the Web is in incognito mode, cookies, records of websites, geolocation permissions will not save in persistent files.
 
 **类型：** boolean
 
@@ -78,11 +74,7 @@ Sets the render mode of the web.
 sharedRenderProcessToken? : string
 ```
 
-Sets the shared render process token of the web.
-When the web is in multiprocess mode, web with the same
-sharedRenderProcessToken will attempt to reuse the same render process.
-The shared render process will remain active until all associated
-web are destroyed.
+Sets the shared render process token of the web. When the web is in multiprocess mode, web with the same sharedRenderProcessToken will attempt to reuse the same render process. The shared render process will remain active until all associated web are destroyed.
 
 **类型：** string
 

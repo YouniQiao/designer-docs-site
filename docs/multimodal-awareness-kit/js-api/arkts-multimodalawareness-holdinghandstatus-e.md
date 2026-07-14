@@ -1,7 +1,6 @@
 # HoldingHandStatus
 
-Represents the holding hand status. The holding hand status is returned if listening for holding hand status
-changes is enabled.
+Represents the holding hand status. The holding hand status is returned if listening for holding hand status changes is enabled.
 
 **Since:** 20
 

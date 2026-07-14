@@ -12,8 +12,7 @@ Fill fail result.
 errCode: number
 ```
 
-errcode.
-The value should be an integer.
+errcode. The value should be an integer.
 
 **Type:** number
 

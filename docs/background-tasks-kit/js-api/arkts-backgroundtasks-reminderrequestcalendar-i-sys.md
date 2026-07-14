@@ -1,8 +1,6 @@
 # ReminderRequestCalendar
 
-ReminderRequestCalendar extends ReminderRequest
-
-Defines a reminder for a calendar event.
+ReminderRequestCalendar extends ReminderRequest Defines a reminder for a calendar event.
 
 **Inheritance/Implementation:** ReminderRequestCalendar extends [ReminderRequest](arkts-backgroundtasks-reminderrequest-i.md)
 

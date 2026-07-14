@@ -12,8 +12,7 @@ import { notificationManager } from '@kit.NotificationKit';
 function getSlotNumByBundle(bundle: BundleOption, callback: AsyncCallback<number>): void
 ```
 
-Obtains the number of notification slots of a specified application. This API uses an asynchronous callback to
-return the result.
+Obtains the number of notification slots of a specified application. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 

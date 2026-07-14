@@ -1,13 +1,6 @@
 # ColorFilter
 
-Defines a color filter.
-
-> **NOTE**
->
-> - This module uses the physical pixel unit, px.
->
-> - This module operates under a single-threaded model. The caller needs to manage thread safety and context state
-> transitions.
+Defines a color filter. > **NOTE** > > - This module uses the physical pixel unit, px. > > - This module operates under a single-threaded model. The caller needs to manage thread safety and context state > transitions.
 
 **Since:** 11
 
@@ -118,8 +111,7 @@ Creates a **ColorFilter** object by combining another two color filters.
 static createLightingColorFilter(mutColor: common2D.Color | number, addColor: common2D.Color | number): ColorFilter
 ```
 
-Creates a lighting color filter. It multiplies the RGB channel values by one color and then adds another color
-value. The final output stays between 0 and 255.
+Creates a lighting color filter. It multiplies the RGB channel values by one color and then adds another color value. The final output stays between 0 and 255.
 
 **Since:** 20
 
@@ -162,8 +154,7 @@ Creates a **ColorFilter** object that applies the sRGB gamma curve to the RGB ch
 static createLumaColorFilter(): ColorFilter
 ```
 
-Creates a **ColorFilter** object that multiplies the luma into the alpha channel and sets the RGB channels to
-zero.
+Creates a **ColorFilter** object that multiplies the luma into the alpha channel and sets the RGB channels to zero.
 
 **Since:** 11
 

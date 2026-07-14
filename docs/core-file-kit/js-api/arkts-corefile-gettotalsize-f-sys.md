@@ -12,8 +12,7 @@ import { storageStatistics } from '@kit.CoreFileKit';
 function getTotalSize(callback: AsyncCallback<number>): void
 ```
 
-Obtains the total size (in bytes) of the built-in storage. This API uses an asynchronous callback to return the
-result.
+Obtains the total size (in bytes) of the built-in storage. This API uses an asynchronous callback to return the result.
 
 **Since:** 15
 

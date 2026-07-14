@@ -1,10 +1,6 @@
 # ImageBitmap
 
-An **ImageBitmap** object stores pixel data rendered on a canvas. Since API version 11,
-when an application creates a
-[worker thread](../../../../arkts-utils/worker-introduction.md), it can use **postMessage**
-to transfer the **ImageBitmap** instance to the worker thread for drawing, and use
-**onmessage** to receive the drawing results sent by the worker thread for display.
+An **ImageBitmap** object stores pixel data rendered on a canvas. Since API version 11, when an application creates a [worker thread](../../../../arkts-utils/worker-introduction.md), it can use **postMessage** to transfer the **ImageBitmap** instance to the worker thread for drawing, and use **onmessage** to receive the drawing results sent by the worker thread for display.
 
 **Since:** 8
 
@@ -16,8 +12,7 @@ to transfer the **ImageBitmap** instance to the worker thread for drawing, and u
 close(): void
 ```
 
-Releases all graphics resources associated with this **ImageBitmap** object and sets
-its width and height to **0**.
+Releases all graphics resources associated with this **ImageBitmap** object and sets its width and height to **0**.
 
 **Since:** 8
 
@@ -55,8 +50,7 @@ Creates an **ImageBitmap** object using an **ImageSrc** object.
 constructor(src: string, unit: LengthMetricsUnit)
 ```
 
-Creates an **ImageBitmap** object using an **ImageSrc** object. The unit mode of the
-Path2D object can be configured using **unit**.
+Creates an **ImageBitmap** object using an **ImageSrc** object. The unit mode of the Path2D object can be configured using **unit**.
 
 **Since:** 12
 
@@ -101,8 +95,7 @@ Creates an **ImageBitmap** object using a **PixelMap** object.
 constructor(data: PixelMap, unit: LengthMetricsUnit)
 ```
 
-Creates an **ImageBitmap** object using a **PixelMap** object. The unit mode of the
-Path2D object can be configured using **unit**.
+Creates an **ImageBitmap** object using a **PixelMap** object. The unit mode of the Path2D object can be configured using **unit**.
 
 **Since:** 12
 
@@ -148,9 +141,7 @@ Transfer a Resource object to construct an ImageBitmap object.
 readonly height: number
 ```
 
-Pixel height of the **ImageBitmap** object.
-
-Default unit: vp
+Pixel height of the **ImageBitmap** object. Default unit: vp
 
 **Type:** number
 
@@ -168,9 +159,7 @@ Default unit: vp
 readonly width: number
 ```
 
-Pixel width of the **ImageBitmap** object.
-
-Default unit: vp
+Pixel width of the **ImageBitmap** object. Default unit: vp
 
 **Type:** number
 

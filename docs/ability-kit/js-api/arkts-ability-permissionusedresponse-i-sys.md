@@ -20,8 +20,7 @@ import { privacyManager } from '@kit.AbilityKit';
 beginTime: number
 ```
 
-Start time of the query.
-Unit: milliseconds.
+Start time of the query. Unit: milliseconds.
 
 **Type:** number
 
@@ -37,8 +36,7 @@ Unit: milliseconds.
 bundleRecords: Array<BundleUsedRecord>
 ```
 
-Each element represents the permission access record under an application dimension. Developers can further
-traverse permissionRecords to obtain specific permission usage details.
+Each element represents the permission access record under an application dimension. Developers can further traverse permissionRecords to obtain specific permission usage details.
 
 **Type:** Array<BundleUsedRecord>
 
@@ -54,8 +52,7 @@ traverse permissionRecords to obtain specific permission usage details.
 endTime: number
 ```
 
-End time of the query.
-Unit: milliseconds.
+End time of the query. Unit: milliseconds.
 
 **Type:** number
 

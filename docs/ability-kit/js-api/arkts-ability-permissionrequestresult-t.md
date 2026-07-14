@@ -4,8 +4,7 @@
 export type PermissionRequestResult = _PermissionRequestResult
 ```
 
-Permission request result object, containing information such as the list of requested permission names, the
-authorization result of each permission, the dialog box display result, and the failure reason.
+Permission request result object, containing information such as the list of requested permission names, the authorization result of each permission, the dialog box display result, and the failure reason.
 
 **Since:** 10
 

@@ -18,22 +18,7 @@ import { uiExtension } from '@kit.ArkUI';
 hideNonSecureWindows(shouldHide: boolean): Promise<void>
 ```
 
-Sets whether to hide non-secure windows. This API uses a promise to return the result.
-
-> **NOTE**
->
-> - A non-secure window refers to any window that may obstruct the
-> [EmbeddedComponent](./@internal/component/ets/embedded_component) or
-> [UIExtensionComponent](./@internal/component/ets/ui_extension_component), such as global floating windows
-> , host subwindows, and dialog box windows created by the host application (excluding windows of these types
-> created by system applications).
->
-> - When using the **EmbeddedComponent** or **UIExtensionComponent** to display sensitive information, call this
-> API to hide non-secure windows and prevent information obstruction. Hidden non-secure windows will reappear
-> when the **EmbeddedComponent** or **UIExtensionComponent** is hidden or destroyed.
->
-> - On PCs/2-in-1 devices, global floating windows within non-secure windows remain visible when
-> **hideNonSecureWindows(true)** is called.
+Sets whether to hide non-secure windows. This API uses a promise to return the result. > **NOTE** > > - A non-secure window refers to any window that may obstruct the > [EmbeddedComponent](./@internal/component/ets/embedded_component) or > [UIExtensionComponent](./@internal/component/ets/ui_extension_component), such as global floating windows > , host subwindows, and dialog box windows created by the host application (excluding windows of these types > created by system applications). > > - When using the **EmbeddedComponent** or **UIExtensionComponent** to display sensitive information, call this > API to hide non-secure windows and prevent information obstruction. Hidden non-secure windows will reappear > when the **EmbeddedComponent** or **UIExtensionComponent** is hidden or destroyed. > > - On PCs/2-in-1 devices, global floating windows within non-secure windows remain visible when > **hideNonSecureWindows(true)** is called.
 
 **Since:** 12
 
@@ -104,12 +89,7 @@ export default class EntryAbility extends UIExtensionAbility {
 setWaterMarkFlag(enable: boolean): Promise<void>
 ```
 
-Adds or deletes the watermark flag for this window. This API uses a promise to return the result.
-
-> **NOTE**
->
-> With the watermark flag added, the watermark is applied on the full screen when the window is in the foreground
-> , regardless of whether the window is displayed in full screen, floating, and split screen mode.
+Adds or deletes the watermark flag for this window. This API uses a promise to return the result. > **NOTE** > > With the watermark flag added, the watermark is applied on the full screen when the window is in the foreground > , regardless of whether the window is displayed in full screen, floating, and split screen mode.
 
 **Since:** 12
 

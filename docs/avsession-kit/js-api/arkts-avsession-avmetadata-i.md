@@ -212,10 +212,7 @@ The duration of this media, used to automatically calculate playback position, d
 fastForwardSkipIntervals?: SkipIntervals
 ```
 
-The supported skipIntervals when doing fast forward operation, the default is {@link SECONDS_15}.
-The system will use this value for fastforward skip intervals instead of {@link skipIntervals}.
-If not set, the fast forward skip intervals still use {@link skipIntervals}.
-See {@link SkipIntervals}
+The supported skipIntervals when doing fast forward operation, the default is {@link SECONDS_15}. The system will use this value for fastforward skip intervals instead of {@link skipIntervals}. If not set, the fast forward skip intervals still use {@link skipIntervals}. See {@link SkipIntervals}
 
 **Type:** SkipIntervals
 
@@ -231,8 +228,7 @@ See {@link SkipIntervals}
 filter?: number
 ```
 
-The protocols supported by this session, if not set, the default is {@link TYPE_CAST_PLUS_STREAM}.
-See {@link ProtocolType}
+The protocols supported by this session, if not set, the default is {@link TYPE_CAST_PLUS_STREAM}. See {@link ProtocolType}
 
 **Type:** number
 
@@ -262,8 +258,7 @@ The lyric of the media, it should be in standard lyric format
 mediaImage?: image.PixelMap | string
 ```
 
-The image of the media as a {@link PixelMap} or an uri formatted String,
-used to display in media center.
+The image of the media as a {@link PixelMap} or an uri formatted String, used to display in media center.
 
 **Type:** image.PixelMap | string
 
@@ -279,8 +274,7 @@ used to display in media center.
 nextAssetId?: string
 ```
 
-The next playable media id.
-Used to tell the controller if there is a next playable media
+The next playable media id. Used to tell the controller if there is a next playable media
 
 **Type:** string
 
@@ -296,8 +290,7 @@ Used to tell the controller if there is a next playable media
 previousAssetId?: string
 ```
 
-The previous playable media id.
-Used to tell the controller if there is a previous playable media
+The previous playable media id. Used to tell the controller if there is a previous playable media
 
 **Type:** string
 
@@ -327,10 +320,7 @@ The publishDate of the media
 rewindSkipIntervals?: SkipIntervals
 ```
 
-The supported skipIntervals when doing rewind operation, the default is {@link SECONDS_15}.
-The system will use this value for rewind skip intervals instead of {@link skipIntervals}.
-If not set, the rewind skip intervals still use {@link skipIntervals}.
-See {@link SkipIntervals}
+The supported skipIntervals when doing rewind operation, the default is {@link SECONDS_15}. The system will use this value for rewind skip intervals instead of {@link skipIntervals}. If not set, the rewind skip intervals still use {@link skipIntervals}. See {@link SkipIntervals}
 
 **Type:** SkipIntervals
 
@@ -362,8 +352,7 @@ The single lyric text of the media, not including time prefix
 skipIntervals?: SkipIntervals
 ```
 
-The supported skipIntervals when doing fast forward and rewind operation, the default is {@link SECONDS_15}.
-See {@link SkipIntervals}
+The supported skipIntervals when doing fast forward and rewind operation, the default is {@link SECONDS_15}. See {@link SkipIntervals}
 
 **Type:** SkipIntervals
 

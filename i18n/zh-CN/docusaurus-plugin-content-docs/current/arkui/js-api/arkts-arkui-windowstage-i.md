@@ -1,9 +1,6 @@
 # WindowStage
 
-窗口管理器。管理各个基本窗口单元，即[Window](arkts-window.md)实例。
-
-下列API示例中都需在[onWindowStageCreate()](../../apis-ability-kit/arkts-apis/arkts-ability-uiability-c.md#onwindowstagecreate-1)函数中使用WindowStage
-的实例调用对应方法。
+窗口管理器。管理各个基本窗口单元，即[Window](arkts-window.md)实例。 下列API示例中都需在[onWindowStageCreate()](../../apis-ability-kit/arkts-apis/arkts-ability-uiability-c.md#onwindowstagecreate-1)函数中使用WindowStage 的实例调用对应方法。
 
 **起始版本：** 9
 
@@ -15,9 +12,7 @@
 createSubWindow(name: string): Promise<Window>
 ```
 
-创建该WindowStage实例下的子窗口，使用Promise异步回调。
-
-子窗口创建后默认是[沉浸式布局](../../windowmanager/window-terminology.md#沉浸式布局)。
+创建该WindowStage实例下的子窗口，使用Promise异步回调。 子窗口创建后默认是[沉浸式布局](../../windowmanager/window-terminology.md#沉浸式布局)。
 
 **起始版本：** 9
 
@@ -53,9 +48,7 @@ createSubWindow(name: string): Promise<Window>
 createSubWindow(name: string, callback: AsyncCallback<Window>): void
 ```
 
-创建该WindowStage实例下的子窗口，使用callback异步回调。
-
-子窗口创建后默认是[沉浸式布局](../../windowmanager/window-terminology.md#沉浸式布局)。
+创建该WindowStage实例下的子窗口，使用callback异步回调。 子窗口创建后默认是[沉浸式布局](../../windowmanager/window-terminology.md#沉浸式布局)。
 
 **起始版本：** 9
 
@@ -86,11 +79,7 @@ createSubWindow(name: string, callback: AsyncCallback<Window>): void
 createSubWindowWithOptions(name: string, options: SubWindowOptions): Promise<Window>
 ```
 
-创建该WindowStage实例下的子窗口，使用Promise异步回调。
-
-非[自由窗口](../../windowmanager/window-terminology.md#自由窗口)状态下，子窗口创建后默认是[沉浸式布局](../../windowmanager/window-terminology.md#沉浸式布局)。
-
-自由窗口状态下，子窗口参数[decorEnabled](arkts-apis-window-i.md#subwindowoptions11)为false时，子窗口创建后为沉浸式布局；子窗口参数decorEnabled为true，子窗口创建后为非沉浸式布局。
+创建该WindowStage实例下的子窗口，使用Promise异步回调。 非[自由窗口](../../windowmanager/window-terminology.md#自由窗口)状态下，子窗口创建后默认是[沉浸式布局](../../windowmanager/window-terminology.md#沉浸式布局)。 自由窗口状态下，子窗口参数[decorEnabled](arkts-apis-window-i.md#subwindowoptions11)为false时，子窗口创建后为沉浸式布局；子窗口参数decorEnabled为true，子窗口创建后为非沉浸式布局。
 
 **起始版本：** 11
 
@@ -128,9 +117,7 @@ createSubWindowWithOptions(name: string, options: SubWindowOptions): Promise<Win
 getMainWindow(): Promise<Window>
 ```
 
-获取该WindowStage实例下的主窗口，使用Promise异步回调。
-
-调用该接口前，建议先通过[loadContent](../apis-arkui/arkts-apis-window-WindowStage.md#loadcontent9)方法或者[setUIContent](arkts-apis-window-Window.md#setuicontent9-1)方法完成页面加载。
+获取该WindowStage实例下的主窗口，使用Promise异步回调。 调用该接口前，建议先通过[loadContent](../apis-arkui/arkts-apis-window-WindowStage.md#loadcontent9)方法或者[setUIContent](arkts-apis-window-Window.md#setuicontent9-1)方法完成页面加载。
 
 **起始版本：** 9
 
@@ -159,9 +146,7 @@ getMainWindow(): Promise<Window>
 getMainWindow(callback: AsyncCallback<Window>): void
 ```
 
-获取该WindowStage实例下的主窗口，使用callback异步回调。
-
-调用该接口前，建议先通过[loadContent](../apis-arkui/arkts-apis-window-WindowStage.md#loadcontent9)方法或者[setUIContent](arkts-apis-window-Window.md#setuicontent9-1)方法完成页面加载。
+获取该WindowStage实例下的主窗口，使用callback异步回调。 调用该接口前，建议先通过[loadContent](../apis-arkui/arkts-apis-window-WindowStage.md#loadcontent9)方法或者[setUIContent](arkts-apis-window-Window.md#setuicontent9-1)方法完成页面加载。
 
 **起始版本：** 9
 
@@ -305,11 +290,7 @@ isWindowRectAutoSave(): Promise<boolean>
 loadContent(path: string, storage: LocalStorage, callback: AsyncCallback<void>): void
 ```
 
-根据当前工程中指定的页面路径为窗口加载具体页面内容，通过LocalStorage传递状态属性给加载的页面，使用callback异步回调。
-
-建议在UIAbility启动过程中使用该接口，重复调用将先销毁旧的页面内容（即UIContent）再加载新的页面内容，请谨慎使用。
-
-当前UI的执行上下文可能不明确，所以不建议在本接口的回调函数中做UI相关的操作。
+根据当前工程中指定的页面路径为窗口加载具体页面内容，通过LocalStorage传递状态属性给加载的页面，使用callback异步回调。 建议在UIAbility启动过程中使用该接口，重复调用将先销毁旧的页面内容（即UIContent）再加载新的页面内容，请谨慎使用。 当前UI的执行上下文可能不明确，所以不建议在本接口的回调函数中做UI相关的操作。
 
 **起始版本：** 9
 
@@ -341,9 +322,7 @@ loadContent(path: string, storage: LocalStorage, callback: AsyncCallback<void>):
 loadContent(path: string, storage?: LocalStorage): Promise<void>
 ```
 
-根据当前工程中指定的页面路径为WindowStage的主窗口加载具体页面内容，通过LocalStorage传递状态属性给加载的页面，使用Promise异步回调。
-
-建议在UIAbility启动过程中调用该接口，重复调用将首先销毁旧的页面内容（即UIContent）再加载新页面内容，请谨慎使用。当前UI的执行上下文可能不明确，所以不建议在回调函数中做UI相关的操作。
+根据当前工程中指定的页面路径为WindowStage的主窗口加载具体页面内容，通过LocalStorage传递状态属性给加载的页面，使用Promise异步回调。 建议在UIAbility启动过程中调用该接口，重复调用将首先销毁旧的页面内容（即UIContent）再加载新页面内容，请谨慎使用。当前UI的执行上下文可能不明确，所以不建议在回调函数中做UI相关的操作。
 
 **起始版本：** 9
 
@@ -379,11 +358,7 @@ loadContent(path: string, storage?: LocalStorage): Promise<void>
 loadContent(path: string, callback: AsyncCallback<void>): void
 ```
 
-为当前窗口加载具体页面内容，使用callback异步回调。
-
-建议在UIAbility启动过程中使用该接口，多次调用该接口会先销毁旧的页面内容（即UIContent）再加载新的页面内容，请谨慎使用。
-
-当前UI的执行上下文可能不明确，所以不建议在本接口的回调函数中做UI相关的操作。
+为当前窗口加载具体页面内容，使用callback异步回调。 建议在UIAbility启动过程中使用该接口，多次调用该接口会先销毁旧的页面内容（即UIContent）再加载新的页面内容，请谨慎使用。 当前UI的执行上下文可能不明确，所以不建议在本接口的回调函数中做UI相关的操作。
 
 **起始版本：** 9
 
@@ -445,11 +420,7 @@ Loads content by named router
 loadContentByName(name: string, callback: AsyncCallback<void>): void
 ```
 
-根据指定路由页面名称为当前窗口加载[命名路由](../../ui/arkts-routing.md#命名路由)页面，使用callback异步回调。
-
-建议在UIAbility启动过程中使用该接口，重复调用该接口将先销毁旧的页面内容（即UIContent）再加载新的页面内容，请谨慎使用。
-
-当前UI的执行上下文可能不明确，所以不建议在本接口的回调函数中做UI相关的操作。
+根据指定路由页面名称为当前窗口加载[命名路由](../../ui/arkts-routing.md#命名路由)页面，使用callback异步回调。 建议在UIAbility启动过程中使用该接口，重复调用该接口将先销毁旧的页面内容（即UIContent）再加载新的页面内容，请谨慎使用。 当前UI的执行上下文可能不明确，所以不建议在本接口的回调函数中做UI相关的操作。
 
 **起始版本：** 11
 
@@ -515,11 +486,7 @@ Loads content by named router
 off(eventType: 'windowStageEvent', callback?: Callback<WindowStageEventType>): void
 ```
 
-关闭WindowStage生命周期变化的监听。
-
-用于关闭[on('windowStageEvent')](#onwindowstageevent9)接口对WindowStage生命周期变化的监听。
-
-如果没有调用[on('windowStageEvent')](#onwindowstageevent9)接口开启监听就关闭，程序正常执行不会抛出异常。
+关闭WindowStage生命周期变化的监听。 用于关闭[on('windowStageEvent')](#onwindowstageevent9)接口对WindowStage生命周期变化的监听。 如果没有调用[on('windowStageEvent')](#onwindowstageevent9)接口开启监听就关闭，程序正常执行不会抛出异常。
 
 **起始版本：** 9
 
@@ -727,13 +694,7 @@ releaseUIContent(): Promise<void>
 removeStartingWindow(): Promise<void>
 ```
 
-支持应用控制启动页消失时机。
-
-此接口只对应用主窗口生效，且需要在module.json5配置文件abilities标签中的metadata标签下配置"enable.remove.starting.window"为"true"才会生效。
-
-在标签配置为"true"的情况下，系统提供了启动页超时保护机制，若5s内未调用此接口，系统将自动移除启动页。
-
-若标签配置为"false"或未配置标签，则此接口不生效，启动页将会在应用首帧渲染完成后自动移除。
+支持应用控制启动页消失时机。 此接口只对应用主窗口生效，且需要在module.json5配置文件abilities标签中的metadata标签下配置"enable.remove.starting.window"为"true"才会生效。 在标签配置为"true"的情况下，系统提供了启动页超时保护机制，若5s内未调用此接口，系统将自动移除启动页。 若标签配置为"false"或未配置标签，则此接口不生效，启动页将会在应用首帧渲染完成后自动移除。
 
 **起始版本：** 14
 
@@ -763,12 +724,7 @@ removeStartingWindow(): Promise<void>
 setCustomDensity(density: number): void
 ```
 
-支持应用主窗口自定义其显示大小缩放系数。
-
-已创建的子窗和系统窗口不会立即跟随主窗的customDensity变化重新布局，而是在子窗或系统窗口下一次位置、大小、系统缩放大小等
-窗口布局信息变化时跟随主窗的customDensity变化重新布局。
-
-当存在同时使用该接口和setDefaultDensityEnabled(true)的情况时，以最后调用的设置效果为准。
+支持应用主窗口自定义其显示大小缩放系数。 已创建的子窗和系统窗口不会立即跟随主窗的customDensity变化重新布局，而是在子窗或系统窗口下一次位置、大小、系统缩放大小等 窗口布局信息变化时跟随主窗的customDensity变化重新布局。 当存在同时使用该接口和setDefaultDensityEnabled(true)的情况时，以最后调用的设置效果为准。
 
 **起始版本：** 15
 
@@ -799,12 +755,7 @@ setCustomDensity(density: number): void
 setCustomDensity(density: number, applyToSubWindow?: boolean): void
 ```
 
-支持应用主窗口自定义其显示大小缩放系数。
-
-已创建的子窗和系统窗口不会立即跟随主窗的customDensity变化重新布局，而是在子窗或系统窗口下一次位置、大小、系统缩放大小等
-窗口布局信息变化时跟随主窗的customDensity变化重新布局。
-
-当存在同时使用该接口和setDefaultDensityEnabled(true)的情况时，以最后调用的设置效果为准。
+支持应用主窗口自定义其显示大小缩放系数。 已创建的子窗和系统窗口不会立即跟随主窗的customDensity变化重新布局，而是在子窗或系统窗口下一次位置、大小、系统缩放大小等 窗口布局信息变化时跟随主窗的customDensity变化重新布局。 当存在同时使用该接口和setDefaultDensityEnabled(true)的情况时，以最后调用的设置效果为准。
 
 **起始版本：** 20
 
@@ -833,11 +784,7 @@ setCustomDensity(density: number, applyToSubWindow?: boolean): void
 setDefaultDensityEnabled(enabled: boolean): void
 ```
 
-设置应用主窗口是否使用系统默认Density，子窗和系统窗口会跟随主窗生效。调用此接口前，需先调用WindowStage.loadContent()初始化布局，确保接口调用时序正确。
-
-不调用此接口进行设置，则表示不使用系统默认Density。
-
-不使用系统默认Density时，若调用过setCustomDensity()，则窗口会跟随用户自定义的显示大小变化重新布局，否则跟随系统显示大小变化重新布局。
+设置应用主窗口是否使用系统默认Density，子窗和系统窗口会跟随主窗生效。调用此接口前，需先调用WindowStage.loadContent()初始化布局，确保接口调用时序正确。 不调用此接口进行设置，则表示不使用系统默认Density。 不使用系统默认Density时，若调用过setCustomDensity()，则窗口会跟随用户自定义的显示大小变化重新布局，否则跟随系统显示大小变化重新布局。
 
 **起始版本：** 12
 
@@ -978,20 +925,7 @@ Set the application modality of the windowStage.
 setWindowRectAutoSave(enabled: boolean): Promise<void>
 ```
 
-设置是否启用最后关闭的主窗尺寸的记忆功能，使用Promise异步回调。
-
-启用记忆功能后，在同一个UIAbility下，记忆最后关闭的主窗口的尺寸；此主窗口再次启动时，以记忆的尺寸按照规则进行打开。
-层叠规则：1、当前实例是自由窗口时，打开下一实例窗口层叠时，大小要跟随。2、当前实例是最大化或全屏窗口时，打开下一个实例窗
-口层叠时，保持最大化。
-
-记忆规则：
-|上一次窗口状态|记忆规则|
-|-------------|-------|
-|自由窗口|保留自由窗口的大小/位置，超出工作区回弹|
-|二分屏窗口|保留二分屏之前自由窗口的大小/位置|
-|最大化窗口|保留最大化|
-|沉浸式窗口|保留沉浸式之前自由窗口的大小/位置|
-|最小化窗口|保留最小化之前自由窗口的大小/位置|
+设置是否启用最后关闭的主窗尺寸的记忆功能，使用Promise异步回调。 启用记忆功能后，在同一个UIAbility下，记忆最后关闭的主窗口的尺寸；此主窗口再次启动时，以记忆的尺寸按照规则进行打开。 层叠规则：1、当前实例是自由窗口时，打开下一实例窗口层叠时，大小要跟随。2、当前实例是最大化或全屏窗口时，打开下一个实例窗 口层叠时，保持最大化。 记忆规则： |上一次窗口状态|记忆规则| |-------------|-------| |自由窗口|保留自由窗口的大小/位置，超出工作区回弹| |二分屏窗口|保留二分屏之前自由窗口的大小/位置| |最大化窗口|保留最大化| |沉浸式窗口|保留沉浸式之前自由窗口的大小/位置| |最小化窗口|保留最小化之前自由窗口的大小/位置|
 
 **起始版本：** 14
 
@@ -1028,21 +962,7 @@ setWindowRectAutoSave(enabled: boolean): Promise<void>
 setWindowRectAutoSave(enabled: boolean, isSaveBySpecifiedFlag: boolean): Promise<void>
 ```
 
-设置是否启用主窗的尺寸记忆功能，使用Promise异步回调。
-
-在同一个UIAbility下，可记忆最后关闭的主窗口尺寸，也可针对每个主窗口尺寸单独进行记忆。只有在UIAbility启动模式为
-specified，且isSaveBySpecifiedFlag设置为true时，才能针对每个主窗口尺寸进行单独记忆。
-
-启用记忆功能后，记忆主窗口关闭时的尺寸；对应主窗口再次启动时，以记忆的尺寸按照规则进行打开。
-
-记忆规则：
-|上一次窗口状态|记忆规则|
-|-------------|-------|
-|自由窗口|保留自由窗口的大小/位置，超出工作区回弹。|
-|二分屏窗口|保留二分屏之前自由窗口的大小/位置。|
-|最大化窗口|保留最大化。|
-|沉浸式窗口|保留沉浸式之前自由窗口的大小/位置。|
-|最小化窗口|保留最小化之前自由窗口的大小/位置。|
+设置是否启用主窗的尺寸记忆功能，使用Promise异步回调。 在同一个UIAbility下，可记忆最后关闭的主窗口尺寸，也可针对每个主窗口尺寸单独进行记忆。只有在UIAbility启动模式为 specified，且isSaveBySpecifiedFlag设置为true时，才能针对每个主窗口尺寸进行单独记忆。 启用记忆功能后，记忆主窗口关闭时的尺寸；对应主窗口再次启动时，以记忆的尺寸按照规则进行打开。 记忆规则： |上一次窗口状态|记忆规则| |-------------|-------| |自由窗口|保留自由窗口的大小/位置，超出工作区回弹。| |二分屏窗口|保留二分屏之前自由窗口的大小/位置。| |最大化窗口|保留最大化。| |沉浸式窗口|保留沉浸式之前自由窗口的大小/位置。| |最小化窗口|保留最小化之前自由窗口的大小/位置。|
 
 **起始版本：** 17
 

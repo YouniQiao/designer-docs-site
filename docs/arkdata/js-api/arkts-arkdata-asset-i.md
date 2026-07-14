@@ -1,10 +1,6 @@
 # Asset
 
-Represent the asset (such as a document, image, or video). **Asset** inherits from
-[lang.ISendable](../../apis-arkts/arkts-apis/arkts-arkts-isendable-i.md) and is used to implement cross-thread transfer of asset data.
-The asset data does not support **Datashare** APIs. Use
-[sendableRelationalStore.toSendableAsset](arkts-arkdata-tosendableasset-f.md#tosendableasset-1) to create an **Asset**
-instance.
+Represent the asset (such as a document, image, or video). **Asset** inherits from [lang.ISendable](../../apis-arkts/arkts-apis/arkts-arkts-isendable-i.md) and is used to implement cross-thread transfer of asset data. The asset data does not support **Datashare** APIs. Use [sendableRelationalStore.toSendableAsset](arkts-arkdata-tosendableasset-f.md#tosendableasset-1) to create an **Asset** instance.
 
 **Inheritance/Implementation:** Asset extends [lang.ISendable](../../apis-arkts/arkts-apis/arkts-arkts-isendable-i.md)
 
@@ -94,9 +90,7 @@ Size of the asset.
 status?: number
 ```
 
-Asset status. For details, see
-[relationalStore.AssetStatus](arkts-arkdata-assetstatus-e.md). The default value is
-**relationalStore.AssetStatus.ASSET_NORMAL**.
+Asset status. For details, see [relationalStore.AssetStatus](arkts-arkdata-assetstatus-e.md). The default value is **relationalStore.AssetStatus.ASSET_NORMAL**.
 
 **Type:** number
 

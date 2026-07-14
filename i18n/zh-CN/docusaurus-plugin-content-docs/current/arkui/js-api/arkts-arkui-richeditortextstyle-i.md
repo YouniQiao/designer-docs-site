@@ -12,15 +12,7 @@
 decoration?: DecorationStyleInterface
 ```
 
-设置文本装饰线的样式、颜色和粗细。
-
-type默认值：TextDecorationType.None
-
-color默认值：跟随字体颜色。
-
-style默认值：TextDecorationStyle.SOLID
-
-thicknessScale默认值：1.0
+设置文本装饰线的样式、颜色和粗细。 type默认值：TextDecorationType.None color默认值：跟随字体颜色。 style默认值：TextDecorationStyle.SOLID thicknessScale默认值：1.0
 
 **类型：** DecorationStyleInterface
 
@@ -146,11 +138,7 @@ fontWeight?: number | FontWeight | string
 halfLeading?: boolean
 ```
 
-文本是否将行间距平分至行的顶部与底部。
-
-true表示将行间距平分至行的顶部与底部，false则不平分。
-
-默认值：false。
+文本是否将行间距平分至行的顶部与底部。 true表示将行间距平分至行的顶部与底部，false则不平分。 默认值：false。
 
 **类型：** boolean
 
@@ -204,11 +192,7 @@ lineHeight?: number | string | Resource
 strokeColor?: ResourceColor
 ```
 
-文本描边颜色。
-
-默认值：跟随字体颜色。
-
-设置异常值时跟随字体颜色。
+文本描边颜色。 默认值：跟随字体颜色。 设置异常值时跟随字体颜色。
 
 **类型：** ResourceColor
 
@@ -226,11 +210,7 @@ strokeColor?: ResourceColor
 strokeJoinStyle?: StrokeJoinStyle
 ```
 
-文本描边拐角样式。
-
-默认值：StrokeJoinStyle.MITER_JOIN。
-
-**模型约束：** 此接口仅可在Stage模型下使用。
+文本描边拐角样式。 默认值：StrokeJoinStyle.MITER_JOIN。 **模型约束：** 此接口仅可在Stage模型下使用。
 
 **类型：** StrokeJoinStyle
 
@@ -248,17 +228,7 @@ strokeJoinStyle?: StrokeJoinStyle
 strokeWidth?: LengthMetrics | number
 ```
 
-文本描边宽度。如果LengthMetrics的unit值是[PERCENT](../arkts-apis/arkts-arkui-lengthunit-e.md)，当前设置不生效，作为0处理。
-
-值小于0时为实体字，大于0时为轮廓字，等于0时无描边效果。
-
-默认值：0vp。
-
-单位：LengthMetrics类型时跟随LengthMetrics，number类型时是vp。
-
-取值范围：(-∞, +∞)
-
-**模型约束：** 此接口仅可在Stage模型下使用。
+文本描边宽度。如果LengthMetrics的unit值是[PERCENT](../arkts-apis/arkts-arkui-lengthunit-e.md)，当前设置不生效，作为0处理。 值小于0时为实体字，大于0时为轮廓字，等于0时无描边效果。 默认值：0vp。 单位：LengthMetrics类型时跟随LengthMetrics，number类型时是vp。 取值范围：(-∞, +∞) **模型约束：** 此接口仅可在Stage模型下使用。
 
 **类型：** LengthMetrics | number
 
@@ -294,11 +264,7 @@ textBackgroundStyle?: TextBackgroundStyle
 textShadow?: ShadowOptions | Array<ShadowOptions>
 ```
 
-设置文字阴影效果。该接口支持以数组形式入参，实现多重文字阴影。
-
-**说明：**
-
-仅支持设置阴影模糊半径、颜色和偏移量，不支持智能取色。
+设置文字阴影效果。该接口支持以数组形式入参，实现多重文字阴影。 **说明：** 仅支持设置阴影模糊半径、颜色和偏移量，不支持智能取色。
 
 **类型：** ShadowOptions | Array<ShadowOptions>
 

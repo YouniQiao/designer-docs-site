@@ -12,11 +12,7 @@ import { usbManager } from '@kit.BasicServicesKit';
 function closePipe(pipe: USBDevicePipe): number
 ```
 
-Closes a USB device pipe.
-
-1. Call [usbManager.getDevices](arkts-basicservices-getdevices-f.md#getdevices-1) to obtain the USB device list.
-2. Call [usbManager.requestRight](arkts-basicservices-requestright-f.md#requestright-1) to request the device access permission.
-3. Call [usbManager.connectDevice](arkts-basicservices-connectdevice-f.md#connectdevice-1) to obtain **devicepipe** as an input parameter.
+Closes a USB device pipe. 1. Call [usbManager.getDevices](arkts-basicservices-getdevices-f.md#getdevices-1) to obtain the USB device list. 2. Call [usbManager.requestRight](arkts-basicservices-requestright-f.md#requestright-1) to request the device access permission. 3. Call [usbManager.connectDevice](arkts-basicservices-connectdevice-f.md#connectdevice-1) to obtain **devicepipe** as an input parameter.
 
 **Since:** 9
 

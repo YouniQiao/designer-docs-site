@@ -1,9 +1,6 @@
 # SystemTonePlayer (System API)
 
-The module provides APIs for playing and configuring SMS tones and notification tones and obtaining related
-information. Before calling any API in SystemTonePlayer, you must use
-[getSystemTonePlayer](arkts-audio-systemsoundmanager-i-sys.md#getsystemtoneplayer-1)
-to create a SystemTonePlayer instance.
+The module provides APIs for playing and configuring SMS tones and notification tones and obtaining related information. Before calling any API in SystemTonePlayer, you must use [getSystemTonePlayer](arkts-audio-systemsoundmanager-i-sys.md#getsystemtoneplayer-1) to create a SystemTonePlayer instance.
 
 **Since:** 11
 
@@ -124,8 +121,7 @@ Obtains the title of a system tone. This API uses a promise to return the result
 off(type: 'playFinished', callback?: Callback<number>): void
 ```
 
-Unsubscribes from the event indicating that the ringtone playback is finished. This API uses an asynchronous
-callback to return the result.
+Unsubscribes from the event indicating that the ringtone playback is finished. This API uses an asynchronous callback to return the result.
 
 **Since:** 18
 
@@ -153,8 +149,7 @@ callback to return the result.
 off(type: 'error', callback?: ErrorCallback): void
 ```
 
-Unsubscribes from error events that occur during ringtone playback. This API uses an asynchronous callback to
-return the result.
+Unsubscribes from error events that occur during ringtone playback. This API uses an asynchronous callback to return the result.
 
 **Since:** 18
 
@@ -182,11 +177,7 @@ return the result.
 on(type: 'playFinished', streamId: number, callback: Callback<number>): void
 ```
 
-Subscribes to the event indicating that the ringtone playback is finished. This API uses an asynchronous callback
-to return the result.
-
-The object to listen for is an audio stream specified by **streamId**. If **streamId** is set to **0**, this API
-subscribes to the playback complete event of all audio streams of the player.
+Subscribes to the event indicating that the ringtone playback is finished. This API uses an asynchronous callback to return the result. The object to listen for is an audio stream specified by **streamId**. If **streamId** is set to **0**, this API subscribes to the playback complete event of all audio streams of the player.
 
 **Since:** 18
 
@@ -215,8 +206,7 @@ subscribes to the playback complete event of all audio streams of the player.
 on(type: 'error', callback: ErrorCallback): void
 ```
 
-Subscribes to error events that occur during ringtone playback. This API uses an asynchronous callback to return
-the result.
+Subscribes to error events that occur during ringtone playback. This API uses an asynchronous callback to return the result.
 
 **Since:** 18
 
@@ -327,10 +317,7 @@ Sets the scale of the audio volume. No result is returned.
 setHapticsFeature(hapticsFeature: systemSoundManager.ToneHapticsFeature): void
 ```
 
-Sets a haptics style of the ringtone.
-
-Before calling this API, call [getSupportedHapticsFeatures](arkts-audio-systemtoneplayer-i-sys.md#getsupportedhapticsfeatures-1) to
-obtain the supported haptics styles. The setting fails if the haptics style to set is not supported.
+Sets a haptics style of the ringtone. Before calling this API, call [getSupportedHapticsFeatures](arkts-audio-systemtoneplayer-i-sys.md#getsupportedhapticsfeatures-1) to obtain the supported haptics styles. The setting fails if the haptics style to set is not supported.
 
 **Since:** 13
 
@@ -359,8 +346,7 @@ obtain the supported haptics styles. The setting fails if the haptics style to s
 start(toneOptions?: SystemToneOptions): Promise<number>
 ```
 
-Start playing the system tone. By default, the audio and haptic will not be muted. Using tone options to mute audio
-or haptics. If haptics is needed, caller should have the permission of ohos.permission.VIBRATE.
+Start playing the system tone. By default, the audio and haptic will not be muted. Using tone options to mute audio or haptics. If haptics is needed, caller should have the permission of ohos.permission.VIBRATE.
 
 **Since:** 11
 

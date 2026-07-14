@@ -13,6 +13,6 @@ import { ServiceExtensionAbility } from '@kit.AbilityKit';
 
 | Name | Description |
 | --- | --- |
-| [ServiceExtensionAbility](arkts-ability-serviceextensionability-c-sys.md) | The ServiceExtensionAbility module provides extended capabilities for background services, including lifecyclecallbacks for creating, destroying, connecting, and disconnecting background services. |
+| [ServiceExtensionAbility](arkts-ability-serviceextensionability-c-sys.md) | The ServiceExtensionAbility module provides extended capabilities for background services, including lifecycle callbacks for creating, destroying, connecting, and disconnecting background services. |
 <!--DelEnd-->
 

@@ -1,7 +1,6 @@
 # EventPolicy
 
-Defines the system event configuration policy, which is set by calling
-[configEventPolicy](arkts-performanceanalysis-configeventpolicy-f.md#configeventpolicy-1).
+Defines the system event configuration policy, which is set by calling [configEventPolicy](arkts-performanceanalysis-configeventpolicy-f.md#configeventpolicy-1).
 
 **Since:** 22
 

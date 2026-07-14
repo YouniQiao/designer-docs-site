@@ -1,7 +1,6 @@
 # Focus
 
-Focus extends [FocusQuery](arkts-camera-focusquery-i.md)
-Provides APIs to obtain and set the camera focus mode and focus position.
+Focus extends [FocusQuery](arkts-camera-focusquery-i.md) Provides APIs to obtain and set the camera focus mode and focus position.
 
 **Inheritance/Implementation:** Focus extends [FocusQuery](arkts-camera-focusquery-i.md)
 
@@ -157,9 +156,7 @@ function getFocusRange(session: camera.VideoSessionForSys): camera.FocusRangeTyp
 setFocusAssist(enabled: boolean): void
 ```
 
-Sets the focus assist. Before the setting, call
-[isFocusAssistSupported](arkts-camera-focusquery-i-sys.md#isfocusassistsupported-1) to check whether the device supports the
-focus assist.
+Sets the focus assist. Before the setting, call [isFocusAssistSupported](arkts-camera-focusquery-i-sys.md#isfocusassistsupported-1) to check whether the device supports the focus assist.
 
 **Since:** 12
 
@@ -204,9 +201,7 @@ function setFocusAssist(professionalPhotoSession: camera.ProfessionalPhotoSessio
 setFocusDriven(type: FocusDrivenType): void
 ```
 
-Sets a focus drive type. Before the setting, call
-[isFocusDrivenTypeSupported](arkts-camera-focusquery-i-sys.md#isfocusdriventypesupported-1) to check whether the focus drive
-type is supported.
+Sets a focus drive type. Before the setting, call [isFocusDrivenTypeSupported](arkts-camera-focusquery-i-sys.md#isfocusdriventypesupported-1) to check whether the focus drive type is supported.
 
 **Since:** 15
 
@@ -253,9 +248,7 @@ function setFocusDriven(session: camera.VideoSessionForSys, type: camera.FocusDr
 setFocusRange(type: FocusRangeType): void
 ```
 
-Sets a focus range type. Before the setting, call
-[isFocusRangeTypeSupported](arkts-camera-focusquery-i-sys.md#isfocusrangetypesupported-1) to check whether the focus range
-type is supported.
+Sets a focus range type. Before the setting, call [isFocusRangeTypeSupported](arkts-camera-focusquery-i-sys.md#isfocusrangetypesupported-1) to check whether the focus range type is supported.
 
 **Since:** 15
 

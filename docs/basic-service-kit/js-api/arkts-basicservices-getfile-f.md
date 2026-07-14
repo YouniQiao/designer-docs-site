@@ -12,8 +12,7 @@ import { wallpaper } from '@kit.BasicServicesKit';
 function getFile(wallpaperType: WallpaperType, callback: AsyncCallback<number>): void
 ```
 
-Obtains a file of the wallpaper of the specified type. Returns the file descriptor.
-When usage is complete, the caller needs to close the file descriptor in time.
+Obtains a file of the wallpaper of the specified type. Returns the file descriptor. When usage is complete, the caller needs to close the file descriptor in time.
 
 **Since:** 8
 
@@ -52,8 +51,7 @@ wallpaper.getFile(wallpaper.WallpaperType.WALLPAPER_SYSTEM, (error: BusinessErro
 function getFile(wallpaperType: WallpaperType): Promise<number>
 ```
 
-Obtains a file of the wallpaper of the specified type. Returns the file descriptor.
-When usage is complete, the caller needs to close the file descriptor in time.
+Obtains a file of the wallpaper of the specified type. Returns the file descriptor. When usage is complete, the caller needs to close the file descriptor in time.
 
 **Since:** 8
 

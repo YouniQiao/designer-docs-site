@@ -6,11 +6,7 @@
 function setPointerColor(color: number, callback: AsyncCallback<void>): void
 ```
 
-设置鼠标光标颜色，使用callback异步回调。
-
-> **说明**：
->
-> 设置和调试时，需连接外部设备，如鼠标、蓝牙等。
+设置鼠标光标颜色，使用callback异步回调。 > **说明**： > > 设置和调试时，需连接外部设备，如鼠标、蓝牙等。
 
 **起始版本：** 10
 
@@ -46,7 +42,7 @@ struct Index {
       Text()
         .onClick(() => {
           try {
-            // 设置鼠标指针颜色
+            // 设置鼠标光标颜色
             pointer.setPointerColor(0xF6C800, (error: BusinessError) => {
               if (error) {
                 console.error(`Failed to set pointer color, Code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message}.`);
@@ -71,11 +67,7 @@ struct Index {
 function setPointerColor(color: number): Promise<void>
 ```
 
-设置鼠标光标颜色，使用Promise异步回调。
-
-> **说明**：
->
-> 设置和调试时，需连接外部设备，如鼠标、蓝牙等。
+设置鼠标光标颜色，使用Promise异步回调。 > **说明**： > > 设置和调试时，需连接外部设备，如鼠标、蓝牙等。
 
 **起始版本：** 10
 

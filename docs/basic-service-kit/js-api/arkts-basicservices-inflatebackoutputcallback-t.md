@@ -4,8 +4,7 @@
 type InflateBackOutputCallback = (outDesc: object, buf: ArrayBuffer, length: number) => number
 ```
 
-The output data provided by the user is written into the callback function. Whenever decompressed data is
-ready for output, zlib calls this function to write the data from the buffer to the target location.
+The output data provided by the user is written into the callback function. Whenever decompressed data is ready for output, zlib calls this function to write the data from the buffer to the target location.
 
 **Since:** 12
 

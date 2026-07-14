@@ -6,8 +6,7 @@
 function isRamConstrainedDevice(): Promise<boolean>
 ```
 
-Checks whether the current device is a RAM-constrained device (a device with severely limited memory resources).
-This API uses a promise to return the result.
+Checks whether the current device is a RAM-constrained device (a device with severely limited memory resources). This API uses a promise to return the result.
 
 **Since:** 7
 
@@ -44,8 +43,7 @@ appManager.isRamConstrainedDevice().then((data) => {
 function isRamConstrainedDevice(callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether the current device is a RAM-constrained device (a device with severely limited memory resources).
-This API uses an asynchronous callback to return the result.
+Checks whether the current device is a RAM-constrained device (a device with severely limited memory resources). This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 

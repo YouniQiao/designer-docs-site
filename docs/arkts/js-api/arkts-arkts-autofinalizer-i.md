@@ -1,7 +1,6 @@
 # AutoFinalizer
 
-Provides an interface that can be implemented for releasing a resource
-which is managed by developers through a developer-defined callback.
+Provides an interface that can be implemented for releasing a resource which is managed by developers through a developer-defined callback.
 
 **Since:** 22
 

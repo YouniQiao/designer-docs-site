@@ -12,8 +12,7 @@ import { bundleManager } from '@kit.AbilityKit';
 function getRecoverableApplicationInfo(callback: AsyncCallback<Array<RecoverableApplicationInfo>>): void
 ```
 
-Obtains information about all preinstalled applications that can be restored. This API uses an asynchronous
-callback to return the result.
+Obtains information about all preinstalled applications that can be restored. This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -65,8 +64,7 @@ try {
 function getRecoverableApplicationInfo(): Promise<Array<RecoverableApplicationInfo>>
 ```
 
-Obtains information about all preinstalled applications that can be restored. This API uses a promise to return the
-result.
+Obtains information about all preinstalled applications that can be restored. This API uses a promise to return the result.
 
 **Since:** 11
 

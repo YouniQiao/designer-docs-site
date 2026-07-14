@@ -12,8 +12,7 @@ import { bundleResourceManager } from '@kit.AbilityKit';
 function getExtensionAbilityResourceInfo(bundleName: string, extensionAbilityType: bundleManager.ExtensionAbilityType, resourceFlags: number, appIndex?: number): Array<LauncherAbilityResourceInfo>
 ```
 
-Obtains the ExtensionAbility resource information of an application based on the bundle name, ExtensionAbility type
-, resource flags, and clone ID. This API returns the result synchronously.
+Obtains the ExtensionAbility resource information of an application based on the bundle name, ExtensionAbility type , resource flags, and clone ID. This API returns the result synchronously.
 
 **Since:** 20
 

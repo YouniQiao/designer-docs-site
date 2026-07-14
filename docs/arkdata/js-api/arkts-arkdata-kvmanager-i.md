@@ -1,7 +1,6 @@
 # KVManager
 
-Provides an instance to obtain information about a distributed KV store. Before calling any API in **KVManager**,
-you must use [createKVManager](arkts-arkdata-createkvmanager-f.md#createkvmanager-1) to create a **KVManager** instance.
+Provides an instance to obtain information about a distributed KV store. Before calling any API in **KVManager**, you must use [createKVManager](arkts-arkdata-createkvmanager-f.md#createkvmanager-1) to create a **KVManager** instance.
 
 **Since:** 9
 
@@ -58,8 +57,8 @@ const options: distributedKVStore.Options = {
 }
 try {
   kvManager.getKVStore('storeId', options, async (err: BusinessError, store: distributedKVStore.SingleKVStore | null) => {
-    if (err != undefined) {
-      console.error(`Failed to get KVStore.code is ${err.code},message is ${err.message}`);
+    if (err) {
+      console.error(`Failed to get KVStore. Code: ${err.code}, message: ${err.message}`);
       return;
     }
     console.info('Succeeded in getting KVStore');
@@ -69,17 +68,17 @@ try {
     if (kvManager != undefined) {
       // appId is the one in createKVManager.
       kvManager.closeKVStore(appId, 'storeId', (err: BusinessError)=> {
-        if (err != undefined) {
-          console.error(`Failed to close KVStore.code is ${err.code},message is ${err.message}`);
+        if (err) {
+          console.error(`Failed to close KVStore. Code: ${err.code}, message: ${err.message}`);
           return;
         }
         console.info('Succeeded in closing KVStore');
       });
     }
   });
-} catch (e) {
-  let error = e as BusinessError;
-  console.error(`An unexpected error occurred.code is ${error.code},message is ${error.message}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`An unexpected error occurred. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -117,6 +116,48 @@ Closes a distributed KV store. This API uses a promise to return the result.
 | Error Code ID | Error Message |
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error.Possible causes:1.Mandatory parameters are left unspecified;<br>2.Parameter verification failed. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let kvStore: distributedKVStore.SingleKVStore | null = null;
+
+const options: distributedKVStore.Options = {
+  createIfMissing: true,
+  encrypt: false,
+  backup: false,
+  autoSync: false,
+  kvStoreType: distributedKVStore.KVStoreType.SINGLE_VERSION,
+  schema: undefined,
+  securityLevel: distributedKVStore.SecurityLevel.S3,
+  // From API version 24, you can use rootDir to specify the database storage path.
+  rootDir: "/data/storage/el2/database/entry"
+}
+try {
+  kvManager.getKVStore<distributedKVStore.SingleKVStore>('storeId', options).then(async (store: distributedKVStore.SingleKVStore | null) => {
+    console.info('Succeeded in getting KVStore');
+    kvStore = store;
+    kvStore = null;
+    store = null;
+    if (kvManager != undefined) {
+      // appId refers to the appId in createKVManager. If rootDir is not configured in options, the closeKVStore does not require the options parameter.
+      kvManager.closeKVStore(appId, 'storeId', options).then(() => {
+        console.info('Succeeded in closing KVStore');
+      }).catch((err: BusinessError) => {
+        console.error(`Failed to close KVStore. Code: ${err.code}, message: ${err.message}`);
+      });
+    }
+  }).catch((err: BusinessError) => {
+    console.error(`Failed to get KVStore. Code: ${err.code}, message: ${err.message}`);
+  });
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to close KVStore. Code: ${error.code}, message: ${error.message}`);
+}
+
+```
 
 ## deleteKVStore
 
@@ -165,8 +206,8 @@ const options: distributedKVStore.Options = {
 }
 try {
   kvManager.getKVStore('storeId', options, async (err: BusinessError, store: distributedKVStore.SingleKVStore | null) => {
-    if (err != undefined) {
-      console.error(`Failed to get KVStore.code is ${err.code},message is ${err.message}`);
+    if (err) {
+      console.error(`Failed to get KVStore. Code: ${err.code}, message: ${err.message}`);
       return;
     }
     console.info('Succeeded in getting KVStore');
@@ -176,17 +217,17 @@ try {
     if (kvManager != undefined) {
       // appId is the one in createKVManager.
       kvManager.deleteKVStore(appId, 'storeId', (err: BusinessError) => {
-        if (err != undefined) {
-          console.error(`Failed to delete KVStore.code is ${err.code},message is ${err.message}`);
+        if (err) {
+          console.error(`Failed to delete KVStore. Code: ${err.code}, message: ${err.message}`);
           return;
         }
         console.info(`Succeeded in deleting KVStore`);
       });
     }
   });
-} catch (e) {
-  let error = e as BusinessError;
-  console.error(`Failed to delete KVStore.code is ${error.code},message is ${error.message}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to delete KVStore. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -226,17 +267,55 @@ Deletes a distributed KV store. This API uses a promise to return the result.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error.Possible causes:1.Mandatory parameters are left unspecified;<br>2.Parameter verification failed. |
 | [15100004](../errorcode-distributedKVStore.md#15100004-failed-to-find-data) | Not found. |
 
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let kvStore: distributedKVStore.SingleKVStore | null = null;
+
+const options: distributedKVStore.Options = {
+  createIfMissing: true,
+  encrypt: false,
+  backup: false,
+  autoSync: false,
+  kvStoreType: distributedKVStore.KVStoreType.SINGLE_VERSION,
+  schema: undefined,
+  securityLevel: distributedKVStore.SecurityLevel.S3,
+  // From API version 24, you can use rootDir to specify the database storage path.
+  rootDir: "/data/storage/el2/database/entry"
+}
+try {
+  kvManager.getKVStore<distributedKVStore.SingleKVStore>('storeId', options).then(async (store: distributedKVStore.SingleKVStore | null) => {
+    console.info('Succeeded in getting KVStore');
+    kvStore = store;
+    kvStore = null;
+    store = null;
+    if (kvManager != undefined) {
+      // appId refers to the appId in createKVManager. If rootDir is not configured in options, the deleteKVStore does not require the options parameter.
+      kvManager.deleteKVStore(appId, 'storeId', options).then(() => {
+        console.info('Succeeded in deleting KVStore');
+      }).catch((err: BusinessError) => {
+        console.error(`Failed to delete KVStore. Code: ${err.code}, message: ${err.message}`);
+      });
+    }
+  }).catch((err: BusinessError) => {
+    console.error(`Failed to get KVStore. Code: ${err.code}, message: ${err.message}`);
+  });
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to delete KVStore. Code: ${error.code}, message: ${error.message}`);
+}
+
+```
+
 ## getAllKVStoreId
 
 ```TypeScript
 getAllKVStoreId(appId: string, callback: AsyncCallback<string[]>): void
 ```
 
-Obtains the IDs of all distributed KV stores that are created by
-[getKVStore](arkts-arkdata-kvmanager-i.md#getkvstore-1)
-and have not been deleted by
-[deleteKVStore](arkts-arkdata-kvmanager-i.md#deletekvstore-1)
-. This API uses an asynchronous callback to return the result.
+Obtains the IDs of all distributed KV stores that are created by [getKVStore](arkts-arkdata-kvmanager-i.md#getkvstore-1) and have not been deleted by [deleteKVStore](arkts-arkdata-kvmanager-i.md#deletekvstore-1) . This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -265,16 +344,16 @@ import { BusinessError } from '@kit.BasicServicesKit';
 try {
   // appId is the one in createKVManager.
   kvManager.getAllKVStoreId(appId, (err: BusinessError, data: string[]) => {
-    if (err != undefined) {
-      console.error(`Failed to get AllKVStoreId.code is ${err.code},message is ${err.message}`);
+    if (err) {
+      console.error(`Failed to get AllKVStoreId. Code: ${err.code}, message: ${err.message}`);
       return;
     }
     console.info('Succeeded in getting AllKVStoreId');
     console.info(`GetAllKVStoreId size = ${data.length}`);
   });
-} catch (e) {
-  let error = e as BusinessError;
-  console.error(`Failed to get AllKVStoreId.code is ${error.code},message is ${error.message}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to get AllKVStoreId. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -285,11 +364,7 @@ try {
 getAllKVStoreId(appId: string): Promise<string[]>
 ```
 
-Obtains the IDs of all distributed KV stores that are created by
-[getKVStore](arkts-arkdata-kvmanager-i.md#getkvstore-1)
-and have not been deleted by
-[deleteKVStore](arkts-arkdata-kvmanager-i.md#deletekvstore-1)
-. This API uses a promise to return the result.
+Obtains the IDs of all distributed KV stores that are created by [getKVStore](arkts-arkdata-kvmanager-i.md#getkvstore-1) and have not been deleted by [deleteKVStore](arkts-arkdata-kvmanager-i.md#deletekvstore-1) . This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -327,11 +402,11 @@ try {
     console.info('Succeeded in getting AllKVStoreId');
     console.info(`GetAllKVStoreId size = ${data.length}`);
   }).catch((err: BusinessError) => {
-    console.error(`Failed to get AllKVStoreId.code is ${err.code},message is ${err.message}`);
+    console.error(`Failed to get AllKVStoreId. Code: ${err.code}, message: ${err.message}`);
   });
-} catch (e) {
-  let error = e as BusinessError;
-  console.error(`Failed to get AllKVStoreId.code is ${error.code},message is ${error.message}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to get AllKVStoreId. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -342,16 +417,7 @@ try {
 getKVStore<T>(storeId: string, options: Options, callback: AsyncCallback<T>): void
 ```
 
-Creates and obtains a distributed KV store based on the specified **options** and **storeId**. This API uses an
-asynchronous callback to return the result.
-
-> **NOTE**
->
-> If the database file cannot be opened (for example, the file header is damaged) when an existing distributed KV
-> store is obtained, the automatic rebuild logic will be triggered to return a newly created distributed KV
-> store instance. For important data that cannot be regenerated, you are advised to use the backup and restore
-> feature to prevent data loss. For details, see
-> [Database Backup and Restoration](../../../../database/data-backup-and-restore.md).
+Creates and obtains a distributed KV store based on the specified **options** and **storeId**. This API uses an asynchronous callback to return the result. > **NOTE** > > If the database file cannot be opened (for example, the file header is damaged) when an existing distributed KV > store is obtained, the automatic rebuild logic will be triggered to return a newly created distributed KV > store instance. For important data that cannot be regenerated, you are advised to use the backup and restore > feature to prevent data loss. For details, see > [Database Backup and Restoration](../../../../database/data-backup-and-restore.md).
 
 **Since:** 9
 
@@ -392,19 +458,19 @@ try {
   };
   kvManager.getKVStore('storeId', options, (err: BusinessError, store: distributedKVStore.SingleKVStore) => {
     if (err) {
-      console.error(`Failed to get KVStore.code is ${err.code},message is ${err.message}`);
+      console.error(`Failed to get KVStore. Code: ${err.code}, message: ${err.message}`);
       return;
     }
-    console.info("Succeeded in getting KVStore");
+    console.info('Succeeded in getting KVStore');
     kvStore = store;
     if (kvStore !== null) {
        // Perform subsequent data operations, such as adding, deleting, modifying, and querying data, and subscribing to data changes.
        // ...
     }
   });
-} catch (e) {
-  let error = e as BusinessError;
-  console.error(`An unexpected error occurred.code is ${error.code},message is ${error.message}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`An unexpected error occurred. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -415,16 +481,7 @@ try {
 getKVStore<T>(storeId: string, options: Options): Promise<T>
 ```
 
-Creates and obtains a distributed KV store based on the specified **options** and **storeId**. This API uses a
-promise to return the result.
-
-> **NOTE**
->
-> If the database file cannot be opened (for example, the file header is damaged) when an existing distributed KV
-> store is obtained, the automatic rebuild logic will be triggered to return a newly created distributed KV
-> store instance. For important data that cannot be regenerated, you are advised to use the backup and restore
-> feature to prevent data loss. For details, see
-> [Database Backup and Restoration](../../../../database/data-backup-and-restore.md).
+Creates and obtains a distributed KV store based on the specified **options** and **storeId**. This API uses a promise to return the result. > **NOTE** > > If the database file cannot be opened (for example, the file header is damaged) when an existing distributed KV > store is obtained, the automatic rebuild logic will be triggered to return a newly created distributed KV > store instance. For important data that cannot be regenerated, you are advised to use the backup and restore > feature to prevent data loss. For details, see > [Database Backup and Restoration](../../../../database/data-backup-and-restore.md).
 
 **Since:** 9
 
@@ -466,17 +523,19 @@ try {
     backup: false,
     autoSync: false,
     kvStoreType: distributedKVStore.KVStoreType.SINGLE_VERSION,
-    securityLevel: distributedKVStore.SecurityLevel.S3
+    securityLevel: distributedKVStore.SecurityLevel.S3,
+    // From API version 24, you can use rootDir to specify the database storage path.
+    rootDir: "/data/storage/el2/database/entry"
   };
   kvManager.getKVStore<distributedKVStore.SingleKVStore>('storeId', options).then((store: distributedKVStore.SingleKVStore) => {
-    console.info("Succeeded in getting KVStore");
+    console.info('Succeeded in getting KVStore');
     kvStore = store;
   }).catch((err: BusinessError) => {
-    console.error(`Failed to get KVStore.code is ${err.code},message is ${err.message}`);
+    console.error(`Failed to get KVStore. Code: ${err.code}, message: ${err.message}`);
   });
-} catch (e) {
-  let error = e as BusinessError;
-  console.error(`An unexpected error occurred.code is ${error.code},message is ${error.message}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`An unexpected error occurred. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -487,9 +546,7 @@ try {
 off(event: 'distributedDataServiceDie', deathCallback?: Callback<void>): void
 ```
 
-Unsubscribes from the termination (death) of the distributed data service. The **deathCallback** parameter must
-be a callback registered for subscribing to the termination of the distributed data service. Otherwise, the
-unsubscription will fail.
+Unsubscribes from the termination (death) of the distributed data service. The **deathCallback** parameter must be a callback registered for subscribing to the termination of the distributed data service. Otherwise, the unsubscription will fail.
 
 **Since:** 9
 
@@ -519,9 +576,9 @@ try {
     console.info('death callback call');
   }
   kvManager.off('distributedDataServiceDie', deathCallback);
-} catch (e) {
-  let error = e as BusinessError;
-  console.error(`An unexpected error occurred.code is ${error.code},message is ${error.message}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`An unexpected error occurred. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -532,9 +589,7 @@ try {
 on(event: 'distributedDataServiceDie', deathCallback: Callback<void>): void
 ```
 
-Subscribes to the termination (death) of the distributed data service. If the service is terminated, you need to
-register the callbacks for data change notifications and cross-device sync completion notifications again. In
-addition, an error will be returned for a sync operation.
+Subscribes to the termination (death) of the distributed data service. If the service is terminated, you need to register the callbacks for data change notifications and cross-device sync completion notifications again. In addition, an error will be returned for a sync operation.
 
 **Since:** 9
 
@@ -564,9 +619,9 @@ try {
     console.info('death callback call');
   }
   kvManager.on('distributedDataServiceDie', deathCallback);
-} catch (e) {
-  let error = e as BusinessError;
-  console.error(`An unexpected error occurred.code is ${error.code},message is ${error.message}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`An unexpected error occurred. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```

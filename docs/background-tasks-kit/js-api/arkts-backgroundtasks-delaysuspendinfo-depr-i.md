@@ -16,10 +16,7 @@ Provides the information about the suspension delay.
 actualDelayTime: number
 ```
 
-Actual suspension delay duration of the application, in milliseconds.
-
-The default duration is 180000 when the battery level is higher than or equal to the broadcast low battery level
-and 60000 when the battery level is lower than the broadcast low battery level.
+Actual suspension delay duration of the application, in milliseconds. The default duration is 180000 when the battery level is higher than or equal to the broadcast low battery level and 60000 when the battery level is lower than the broadcast low battery level.
 
 **Type:** number
 

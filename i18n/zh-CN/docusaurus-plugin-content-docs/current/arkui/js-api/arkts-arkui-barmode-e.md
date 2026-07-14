@@ -12,8 +12,7 @@ TabBar布局模式枚举。
 Scrollable = 0
 ```
 
-每一个TabBar均使用实际布局宽度，超过总长度（横向Tabs的[barWidth](TabsAttribute#barWidth)，纵向Tabs的
-[barHeight](TabsAttribute#barHeight(value: Length))）后可滑动。
+每一个TabBar均使用实际布局宽度，超过总长度（横向Tabs的[barWidth](TabsAttribute#barWidth)，纵向Tabs的 [barHeight](TabsAttribute#barHeight(value: Length))）后可滑动。
 
 **起始版本：** 7
 

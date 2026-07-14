@@ -269,9 +269,7 @@ server.getState().then((data: socket.SocketStateBase) => {
 listen(address: LocalAddress): Promise<void>
 ```
 
-Binds the Local address.
-<p>Listens for a LocalSocket connection to be made to this socket and accepts it. This interface uses multiple threads
-for accept processing and uses poll multiplex to process client connections.</p>
+Binds the Local address. <p>Listens for a LocalSocket connection to be made to this socket and accepts it. This interface uses multiple threads for accept processing and uses poll multiplex to process client connections.</p>
 
 **Since:** 12
 

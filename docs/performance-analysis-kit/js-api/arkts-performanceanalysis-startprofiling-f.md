@@ -12,9 +12,7 @@ import { hidebug } from '@kit.PerformanceAnalysisKit';
 function startProfiling(filename: string): void
 ```
 
-Starts the VM profiling method. **startProfiling(filename: string)** and **stopProfiling()** are called in pairs.
-**startProfiling(filename: string)** always occurs before **stopProfiling()**. You are advised not to call either
-of these methods repeatedly. Otherwise, an exception may occur.
+Starts the VM profiling method. **startProfiling(filename: string)** and **stopProfiling()** are called in pairs. **startProfiling(filename: string)** always occurs before **stopProfiling()**. You are advised not to call either of these methods repeatedly. Otherwise, an exception may occur.
 
 **Since:** 8
 

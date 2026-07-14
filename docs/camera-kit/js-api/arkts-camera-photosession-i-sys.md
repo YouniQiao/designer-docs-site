@@ -1,8 +1,6 @@
 # PhotoSession
 
-Implements a photo session, which sets the parameters of the normal photo mode and saves all
-[CameraInput](arkts-camera-camerainput-i.md) and [CameraOutput](arkts-camera-cameraoutput-i.md)
-instances required to run the camera. It inherits from [Session](arkts-camera-session-i.md).
+Implements a photo session, which sets the parameters of the normal photo mode and saves all [CameraInput](arkts-camera-camerainput-i.md) and [CameraOutput](arkts-camera-cameraoutput-i.md) instances required to run the camera. It inherits from [Session](arkts-camera-session-i.md).
 
 **Inheritance/Implementation:** PhotoSession extends [Session](arkts-camera-session-i.md), [Flash](arkts-camera-flash-i.md), [AutoExposure](arkts-camera-autoexposure-i.md), [WhiteBalance](arkts-camera-whitebalance-i.md), [Focus](arkts-camera-focus-i.md), [Zoom](arkts-camera-zoom-i.md), [ColorManagement](arkts-camera-colormanagement-i.md), [AutoDeviceSwitch](arkts-camera-autodeviceswitch-i.md), [Macro](arkts-camera-macro-i-sys.md), [ManualExposure](arkts-camera-manualexposure-i.md), [ManualFocus](arkts-camera-manualfocus-i-sys.md), [ManualIso](arkts-camera-manualiso-i-sys.md), [OIS](arkts-camera-ois-i.md), [Aperture](arkts-camera-aperture-i-sys.md)
 
@@ -233,8 +231,7 @@ Subscribes to macro state change events. This API uses an asynchronous callback 
 on(type: 'featureDetection', featureType: SceneFeatureType, callback: AsyncCallback<SceneFeatureDetectionResult>): void
 ```
 
-Subscribe to scene feature detection status change events. This API uses an asynchronous callback to return the
-result.
+Subscribe to scene feature detection status change events. This API uses an asynchronous callback to return the result.
 
 **Since:** 12
 

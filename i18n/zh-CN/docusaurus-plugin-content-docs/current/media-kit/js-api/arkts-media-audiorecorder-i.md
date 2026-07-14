@@ -1,11 +1,6 @@
 # AudioRecorder
 
-> **说明：**
->
-> 从API version 6开始支持，从API version 9开始废弃，建议使用[AVRecorder](arkts-media-media-n.md)替代。
-
-音频录制管理类，用于录制音频媒体。在调用AudioRecorder的方法前，需要先通过
-[createAudioRecorder()](arkts-media-createaudiorecorder-f.md#createaudiorecorder-1) 构建一个AudioRecorder实例。
+> **说明：** > > 从API version 6开始支持，从API version 9开始废弃，建议使用[AVRecorder](arkts-media-media-n.md)替代。 音频录制管理类，用于录制音频媒体。在调用AudioRecorder的方法前，需要先通过 [createAudioRecorder()](arkts-media-createaudiorecorder-f.md#createaudiorecorder-1) 构建一个AudioRecorder实例。
 
 **起始版本：** 6
 
@@ -21,12 +16,7 @@
 on(type: 'prepare' | 'start' | 'pause' | 'resume' | 'stop' | 'release' | 'reset', callback: () => void): void
 ```
 
-开始订阅音频录制事件。
-
-> **说明：**
-> > 从API version 6开始支持，从API version 9开始废弃，建议使用
-> [AVRecorder.on('stateChange')](@ohos.multimedia.media:media.AVRecorder.on(type: 'stateChange', callback: OnAVRecorderStateChangeHandler))
-> 替代。
+开始订阅音频录制事件。 > **说明：** > > 从API version 6开始支持，从API version 9开始废弃，建议使用 > [AVRecorder.on('stateChange')](@ohos.multimedia.media:media.AVRecorder.on(type: 'stateChange', callback: OnAVRecorderStateChangeHandler)) > 替代。
 
 **起始版本：** 6
 
@@ -49,12 +39,7 @@ on(type: 'prepare' | 'start' | 'pause' | 'resume' | 'stop' | 'release' | 'reset'
 on(type: 'prepare' | 'start' | 'pause' | 'resume' | 'stop' | 'release' | 'reset', callback: () => void): void
 ```
 
-开始订阅音频录制事件。
-
-> **说明：**
-> > 从API version 6开始支持，从API version 9开始废弃，建议使用
-> [AVRecorder.on('stateChange')](@ohos.multimedia.media:media.AVRecorder.on(type: 'stateChange', callback: OnAVRecorderStateChangeHandler))
-> 替代。
+开始订阅音频录制事件。 > **说明：** > > 从API version 6开始支持，从API version 9开始废弃，建议使用 > [AVRecorder.on('stateChange')](@ohos.multimedia.media:media.AVRecorder.on(type: 'stateChange', callback: OnAVRecorderStateChangeHandler)) > 替代。
 
 **起始版本：** 6
 
@@ -77,12 +62,7 @@ on(type: 'prepare' | 'start' | 'pause' | 'resume' | 'stop' | 'release' | 'reset'
 on(type: 'prepare' | 'start' | 'pause' | 'resume' | 'stop' | 'release' | 'reset', callback: () => void): void
 ```
 
-开始订阅音频录制事件。
-
-> **说明：**
-> > 从API version 6开始支持，从API version 9开始废弃，建议使用
-> [AVRecorder.on('stateChange')](@ohos.multimedia.media:media.AVRecorder.on(type: 'stateChange', callback: OnAVRecorderStateChangeHandler))
-> 替代。
+开始订阅音频录制事件。 > **说明：** > > 从API version 6开始支持，从API version 9开始废弃，建议使用 > [AVRecorder.on('stateChange')](@ohos.multimedia.media:media.AVRecorder.on(type: 'stateChange', callback: OnAVRecorderStateChangeHandler)) > 替代。
 
 **起始版本：** 6
 
@@ -105,12 +85,7 @@ on(type: 'prepare' | 'start' | 'pause' | 'resume' | 'stop' | 'release' | 'reset'
 on(type: 'prepare' | 'start' | 'pause' | 'resume' | 'stop' | 'release' | 'reset', callback: () => void): void
 ```
 
-开始订阅音频录制事件。
-
-> **说明：**
-> > 从API version 6开始支持，从API version 9开始废弃，建议使用
-> [AVRecorder.on('stateChange')](@ohos.multimedia.media:media.AVRecorder.on(type: 'stateChange', callback: OnAVRecorderStateChangeHandler))
-> 替代。
+开始订阅音频录制事件。 > **说明：** > > 从API version 6开始支持，从API version 9开始废弃，建议使用 > [AVRecorder.on('stateChange')](@ohos.multimedia.media:media.AVRecorder.on(type: 'stateChange', callback: OnAVRecorderStateChangeHandler)) > 替代。
 
 **起始版本：** 6
 
@@ -133,12 +108,7 @@ on(type: 'prepare' | 'start' | 'pause' | 'resume' | 'stop' | 'release' | 'reset'
 on(type: 'prepare' | 'start' | 'pause' | 'resume' | 'stop' | 'release' | 'reset', callback: () => void): void
 ```
 
-开始订阅音频录制事件。
-
-> **说明：**
-> > 从API version 6开始支持，从API version 9开始废弃，建议使用
-> [AVRecorder.on('stateChange')](@ohos.multimedia.media:media.AVRecorder.on(type: 'stateChange', callback: OnAVRecorderStateChangeHandler))
-> 替代。
+开始订阅音频录制事件。 > **说明：** > > 从API version 6开始支持，从API version 9开始废弃，建议使用 > [AVRecorder.on('stateChange')](@ohos.multimedia.media:media.AVRecorder.on(type: 'stateChange', callback: OnAVRecorderStateChangeHandler)) > 替代。
 
 **起始版本：** 6
 
@@ -161,12 +131,7 @@ on(type: 'prepare' | 'start' | 'pause' | 'resume' | 'stop' | 'release' | 'reset'
 on(type: 'prepare' | 'start' | 'pause' | 'resume' | 'stop' | 'release' | 'reset', callback: () => void): void
 ```
 
-开始订阅音频录制事件。
-
-> **说明：**
-> > 从API version 6开始支持，从API version 9开始废弃，建议使用
-> [AVRecorder.on('stateChange')](@ohos.multimedia.media:media.AVRecorder.on(type: 'stateChange', callback: OnAVRecorderStateChangeHandler))
-> 替代。
+开始订阅音频录制事件。 > **说明：** > > 从API version 6开始支持，从API version 9开始废弃，建议使用 > [AVRecorder.on('stateChange')](@ohos.multimedia.media:media.AVRecorder.on(type: 'stateChange', callback: OnAVRecorderStateChangeHandler)) > 替代。
 
 **起始版本：** 6
 
@@ -189,12 +154,7 @@ on(type: 'prepare' | 'start' | 'pause' | 'resume' | 'stop' | 'release' | 'reset'
 on(type: 'prepare' | 'start' | 'pause' | 'resume' | 'stop' | 'release' | 'reset', callback: () => void): void
 ```
 
-开始订阅音频录制事件。
-
-> **说明：**
-> > 从API version 6开始支持，从API version 9开始废弃，建议使用
-> [AVRecorder.on('stateChange')](@ohos.multimedia.media:media.AVRecorder.on(type: 'stateChange', callback: OnAVRecorderStateChangeHandler))
-> 替代。
+开始订阅音频录制事件。 > **说明：** > > 从API version 6开始支持，从API version 9开始废弃，建议使用 > [AVRecorder.on('stateChange')](@ohos.multimedia.media:media.AVRecorder.on(type: 'stateChange', callback: OnAVRecorderStateChangeHandler)) > 替代。
 
 **起始版本：** 6
 
@@ -217,12 +177,7 @@ on(type: 'prepare' | 'start' | 'pause' | 'resume' | 'stop' | 'release' | 'reset'
 on(type: 'error', callback: ErrorCallback): void
 ```
 
-开始订阅音频录制错误事件，当上报error错误事件后，用户需处理error事件，退出录制操作。
-
-> **说明：**
-> > 从API version 6开始支持，从API version 9开始废弃，建议使用
-> [AVRecorder.on('error')](@ohos.multimedia.media:media.AVRecorder.on(type: 'error', callback: ErrorCallback))
-> 替代。
+开始订阅音频录制错误事件，当上报error错误事件后，用户需处理error事件，退出录制操作。 > **说明：** > > 从API version 6开始支持，从API version 9开始废弃，建议使用 > [AVRecorder.on('error')](@ohos.multimedia.media:media.AVRecorder.on(type: 'error', callback: ErrorCallback)) > 替代。
 
 **起始版本：** 6
 
@@ -245,11 +200,7 @@ on(type: 'error', callback: ErrorCallback): void
 pause(): void
 ```
 
-暂停录制，需要在'start'事件成功触发后，才能调用pause方法。
-
-> **说明：**
-> > 从API version 6开始支持，从API version 9开始废弃，建议使用
-> [AVRecorder.pause](@ohos.multimedia.media:media.AVRecorder.pause(callback: AsyncCallback<void>))替代。
+暂停录制，需要在'start'事件成功触发后，才能调用pause方法。 > **说明：** > > 从API version 6开始支持，从API version 9开始废弃，建议使用 > [AVRecorder.pause](@ohos.multimedia.media:media.AVRecorder.pause(callback: AsyncCallback<void>))替代。
 
 **起始版本：** 6
 
@@ -265,12 +216,7 @@ pause(): void
 prepare(config: AudioRecorderConfig): void
 ```
 
-录音准备。
-
-> **说明：**
-> > 从API version 6开始支持，从API version 9开始废弃，建议使用
-> [AVRecorder.prepare](@ohos.multimedia.media:media.AVRecorder.prepare(config: AVRecorderConfig, callback: AsyncCallback<void>))
-> 替代。
+录音准备。 > **说明：** > > 从API version 6开始支持，从API version 9开始废弃，建议使用 > [AVRecorder.prepare](@ohos.multimedia.media:media.AVRecorder.prepare(config: AVRecorderConfig, callback: AsyncCallback<void>)) > 替代。
 
 **起始版本：** 6
 
@@ -300,11 +246,7 @@ prepare(config: AudioRecorderConfig): void
 release(): void
 ```
 
-释放录音资源。
-
-> **说明：**
-> > 从API version 6开始支持，从API version 9开始废弃，建议使用
-> [AVRecorder.release](@ohos.multimedia.media:media.AVRecorder.release(callback: AsyncCallback<void>))替代。
+释放录音资源。 > **说明：** > > 从API version 6开始支持，从API version 9开始废弃，建议使用 > [AVRecorder.release](@ohos.multimedia.media:media.AVRecorder.release(callback: AsyncCallback<void>))替代。
 
 **起始版本：** 6
 
@@ -320,13 +262,7 @@ release(): void
 reset(): void
 ```
 
-重置录音。
-
-进行重置录音之前，需要先调用stop()停止录音。重置录音之后，需要调用prepare()设置录音参数项，才能再次进行录音。
-
-> **说明：**
-> > 从API version 6开始支持，从API version 9开始废弃，建议使用
-> [AVRecorder.reset](@ohos.multimedia.media:media.AVRecorder.reset(callback: AsyncCallback<void>))替代。
+重置录音。 进行重置录音之前，需要先调用stop()停止录音。重置录音之后，需要调用prepare()设置录音参数项，才能再次进行录音。 > **说明：** > > 从API version 6开始支持，从API version 9开始废弃，建议使用 > [AVRecorder.reset](@ohos.multimedia.media:media.AVRecorder.reset(callback: AsyncCallback<void>))替代。
 
 **起始版本：** 6
 
@@ -342,11 +278,7 @@ reset(): void
 resume(): void
 ```
 
-恢复录制，需要在'pause'事件成功触发后，才能调用resume方法。
-
-> **说明：**
-> > 从API version 6开始支持，从API version 9开始废弃，建议使用
-> [AVRecorder.resume](@ohos.multimedia.media:media.AVRecorder.resume(callback: AsyncCallback<void>))替代。
+恢复录制，需要在'pause'事件成功触发后，才能调用resume方法。 > **说明：** > > 从API version 6开始支持，从API version 9开始废弃，建议使用 > [AVRecorder.resume](@ohos.multimedia.media:media.AVRecorder.resume(callback: AsyncCallback<void>))替代。
 
 **起始版本：** 6
 
@@ -362,11 +294,7 @@ resume(): void
 start(): void
 ```
 
-开始录制，需在'prepare'事件成功触发后，才能调用start方法。
-
-> **说明：**
-> > 从API version 6开始支持，从API version 9开始废弃，建议使用
-> [AVRecorder.start](@ohos.multimedia.media:media.AVRecorder.start(callback: AsyncCallback<void>))替代。
+开始录制，需在'prepare'事件成功触发后，才能调用start方法。 > **说明：** > > 从API version 6开始支持，从API version 9开始废弃，建议使用 > [AVRecorder.start](@ohos.multimedia.media:media.AVRecorder.start(callback: AsyncCallback<void>))替代。
 
 **起始版本：** 6
 
@@ -382,11 +310,7 @@ start(): void
 stop(): void
 ```
 
-停止录音。
-
-> **说明：**
-> > 从API version 6开始支持，从API version 9开始废弃，建议使用
-> [AVRecorder.stop](@ohos.multimedia.media:media.AVRecorder.stop(callback: AsyncCallback<void>))替代。
+停止录音。 > **说明：** > > 从API version 6开始支持，从API version 9开始废弃，建议使用 > [AVRecorder.stop](@ohos.multimedia.media:media.AVRecorder.stop(callback: AsyncCallback<void>))替代。
 
 **起始版本：** 6
 

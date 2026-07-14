@@ -12,8 +12,7 @@ import { appControl } from '@kit.AbilityKit';
 function deleteDisposedStatus(appId: string, callback: AsyncCallback<void>): void
 ```
 
-Deletes the disposed status for an application. This API uses an asynchronous callback to return the result. If the
-operation is successful, **null** is returned. If the operation fails, an error message is returned.
+Deletes the disposed status for an application. This API uses an asynchronous callback to return the result. If the operation is successful, **null** is returned. If the operation fails, an error message is returned.
 
 **Since:** 9
 
@@ -69,8 +68,7 @@ try {
 function deleteDisposedStatus(appId: string): Promise<void>
 ```
 
-Deletes the disposed status for an application. This API uses a promise to return the result. If the operation is
-successful, **null** is returned. If the operation fails, an error message is returned.
+Deletes the disposed status for an application. This API uses a promise to return the result. If the operation is successful, **null** is returned. If the operation fails, an error message is returned.
 
 **Since:** 9
 

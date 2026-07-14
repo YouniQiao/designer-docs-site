@@ -12,7 +12,7 @@ import { notificationManager } from '@kit.NotificationKit';
 function getNotificationSetting(): Promise<NotificationSetting>
 ```
 
-Obtains the notification settings of an application. This API uses a promise to return the result.
+Obtains the notification settings of the application, including the switch statuses for lock screen notifications, banner notifications, desktop badges, vibration, and ringtone. This API uses a promise to return the result.
 
 **Since:** 20
 

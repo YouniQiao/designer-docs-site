@@ -1,7 +1,6 @@
 # Intention
 
-Enumerates the data channel types supported by the UDMF. It is used to identify different service scenarios, to
-which the UDMF data channels apply.
+Enumerates the data channel types supported by the UDMF. It is used to identify different service scenarios, to which the UDMF data channels apply.
 
 **Since:** 10
 
@@ -13,9 +12,7 @@ which the UDMF data channels apply.
 DRAG = 'Drag'
 ```
 
-Channel in which data can be dragged and dropped.
-
-**Use scenario**: This API is used to share data across applications in drag-and-drop scenarios.
+Channel in which data can be dragged and dropped. **Use scenario**: This API is used to share data across applications in drag-and-drop scenarios.
 
 **Since:** 14
 

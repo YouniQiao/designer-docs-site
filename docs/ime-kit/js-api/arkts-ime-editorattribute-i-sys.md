@@ -1,8 +1,6 @@
 # EditorAttribute
 
-In the following API examples, you must first use
-[getKeyboardDelegate](arkts-ime-getkeyboarddelegate-f.md#getkeyboarddelegate-1) to obtain a **KeyboardDelegate** instance, and
-then call the APIs using the obtained instance.
+In the following API examples, you must first use [getKeyboardDelegate](arkts-ime-getkeyboarddelegate-f.md#getkeyboarddelegate-1) to obtain a **KeyboardDelegate** instance, and then call the APIs using the obtained instance.
 
 **Since:** 8
 
@@ -20,10 +18,7 @@ import { inputMethodEngine } from '@kit.IMEKit';
 readonly fluidLightMode?: FluidLightMode
 ```
 
-Fluid light mode. If this attribute is not specified or is set to an invalid value, the fluid light mode is not
-used by default.
-
-This attribute is available only to system applications.
+Fluid light mode. If this attribute is not specified or is set to an invalid value, the fluid light mode is not used by default. This attribute is available only to system applications.
 
 **Type:** FluidLightMode
 

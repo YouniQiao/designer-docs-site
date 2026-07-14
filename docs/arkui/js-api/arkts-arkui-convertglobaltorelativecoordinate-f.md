@@ -12,10 +12,7 @@ import { display } from '@kit.ArkUI';
 function convertGlobalToRelativeCoordinate(position: Position, displayId?: number): RelativePosition
 ```
 
-Converts global coordinates (based on the top-left corner of the primary screen) into relative coordinates (based
-on the top-left corner of the screen specified by **displayId**). If **displayId** is not passed, the coordinates
-are converted relative to the screen where the global coordinates are located. If the global coordinates are not on
-any screen, the coordinates are converted relative to the primary screen by default.
+Converts global coordinates (based on the top-left corner of the primary screen) into relative coordinates (based on the top-left corner of the screen specified by **displayId**). If **displayId** is not passed, the coordinates are converted relative to the screen where the global coordinates are located. If the global coordinates are not on any screen, the coordinates are converted relative to the primary screen by default.
 
 **Since:** 20
 

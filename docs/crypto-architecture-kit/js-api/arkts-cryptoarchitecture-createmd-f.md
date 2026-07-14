@@ -12,11 +12,7 @@ import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 function createMd(algName: string): Md
 ```
 
-Creates an **Md** instance for message digest operations.
-
-For details about the supported specifications, see
-[Supported Algorithms and Specifications](../../../../security/CryptoArchitectureKit/crypto-generate-message-digest-overview.md#supported-algorithms-and-specifications)
-.
+Creates an **Md** instance for message digest operations. For details about the supported specifications, see [Supported Algorithms and Specifications](../../../../security/CryptoArchitectureKit/crypto-generate-message-digest-overview.md#supported-algorithms-and-specifications) .
 
 **Since:** 9
 

@@ -1,11 +1,6 @@
 # Calendar
 
-In the following API examples, you need to use
-[createCalendar()](calendarManager.CalendarManager.createCalendar(calendarAccount: CalendarAccount,
-callback: AsyncCallback<Calendar>)) or [getCalendar()](calendarManager.CalendarManager.getCalendar
-(callback: AsyncCallback<Calendar>)) to obtain
-
-a **Calendar** object before calling related APIs.
+In the following API examples, you need to use [createCalendar()](arkts-calendar-calendarmanager-i.md#createcalendar-2) or [getCalendar()](calendarManager.CalendarManager.getCalendar (callback: AsyncCallback<Calendar>)) to obtain a **Calendar** object before calling related APIs.
 
 **Since:** 10
 
@@ -23,8 +18,7 @@ import { calendarManager } from '@kit.CalendarKit';
 addEvent(event: Event): Promise<number>
 ```
 
-Adds an event, with no event ID, instanceStartTime, and instanceEndTime specified in Event.
-This API uses a promise to return the result.
+Adds an event, with no event ID, instanceStartTime, and instanceEndTime specified in Event. This API uses a promise to return the result.
 
 **Since:** 10
 
@@ -93,8 +87,7 @@ calendarMgr?.getCalendar((err: BusinessError, data:calendarManager.Calendar) => 
 addEvent(event: Event, callback: AsyncCallback<number>): void
 ```
 
-Adds an event, with no event ID, instanceStartTime, and instanceEndTime specified in Event.
-This API uses an asynchronous callback to return the result.
+Adds an event, with no event ID, instanceStartTime, and instanceEndTime specified in Event. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -158,8 +151,7 @@ calendarMgr?.getCalendar().then((data: calendarManager.Calendar) => {
 addEvents(events: Event[]): Promise<void>
 ```
 
-Adds events in batches, with no event ID, instanceStartTime, and instanceEndTime specified in Event.
-This API uses a promise to return the result.
+Adds events in batches, with no event ID, instanceStartTime, and instanceEndTime specified in Event. This API uses a promise to return the result.
 
 **Since:** 10
 
@@ -233,8 +225,7 @@ calendarMgr?.getCalendar((err: BusinessError, data:calendarManager.Calendar) => 
 addEvents(events: Event[], callback: AsyncCallback<void>): void
 ```
 
-Adds events in batches, with no event ID, instanceStartTime, and instanceEndTime specified in Event.
-This API uses an asynchronous callback to return the result.
+Adds events in batches, with no event ID, instanceStartTime, and instanceEndTime specified in Event. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -671,9 +662,7 @@ calendarMgr?.getCalendar((err: BusinessError, data:calendarManager.Calendar) => 
 getEvents(eventFilter?: EventFilter, eventKey?: (keyof Event)[]): Promise<Event[]>
 ```
 
-Obtains all events in a calendar that match the filter criteria. This API uses a promise to return the result.
-If there is only one input parameter, the filter criteria, corresponding to the type EventFilter, must be set as the parameter.
-If no input parameter is specified, all events under the specified calendar account can be queried.
+Obtains all events in a calendar that match the filter criteria. This API uses a promise to return the result. If there is only one input parameter, the filter criteria, corresponding to the type EventFilter, must be set as the parameter. If no input parameter is specified, all events under the specified calendar account can be queried.
 
 **Since:** 10
 
@@ -750,8 +739,7 @@ calendarMgr?.getCalendar(async (err: BusinessError, data:calendarManager.Calenda
 getEvents(eventFilter: EventFilter, eventKey: (keyof Event)[], callback: AsyncCallback<Event[]>):void
 ```
 
-Obtains all events in a calendar that match the filter criteria. This API uses an asynchronous
-callback to return the result.
+Obtains all events in a calendar that match the filter criteria. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -836,12 +824,7 @@ calendarMgr?.getCalendar(async (err: BusinessError, data:calendarManager.Calenda
 getEvents(callback: AsyncCallback<Event[]>):void
 ```
 
-Obtains all events in the current calendar. This API uses an asynchronous callback to return the result.
-
-For versions earlier than API version 20, the default fields to be obtained include id, type, title, startTime,
-endTime, isAllDay, description, timeZone, location, service, attendee, and reminderTime. Since API version 20,
-the default fields to be obtained include id, type, title, startTime, endTime, isAllDay, description, timeZone,
-location, service, attendee, reminderTime, and identifier. The field is not returned if it is empty.
+Obtains all events in the current calendar. This API uses an asynchronous callback to return the result. For versions earlier than API version 20, the default fields to be obtained include id, type, title, startTime, endTime, isAllDay, description, timeZone, location, service, attendee, and reminderTime. Since API version 20, the default fields to be obtained include id, type, title, startTime, endTime, isAllDay, description, timeZone, location, service, attendee, reminderTime, and identifier. The field is not returned if it is empty.
 
 **Since:** 10
 
@@ -1315,9 +1298,7 @@ calendarMgr?.getCalendar(async (err: BusinessError, data:calendarManager.Calenda
 readonly id: number
 ```
 
-Calendar account ID, which is the unique identifier of a calendar account and is the auto-increment primary
-key of the database. If the value is less than 0, the account creation fails;
-if the value is greater than 0, the account creation succeeds.
+Calendar account ID, which is the unique identifier of a calendar account and is the auto-increment primary key of the database. If the value is less than 0, the account creation fails; if the value is greater than 0, the account creation succeeds.
 
 **Type:** number
 

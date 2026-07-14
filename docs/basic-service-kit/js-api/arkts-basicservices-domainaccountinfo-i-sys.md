@@ -18,9 +18,7 @@ import { osAccount } from '@kit.BasicServicesKit';
 accountId?: string
 ```
 
-Domain account ID.
-
-This is a system API and is **undefined** by default.
+Domain account ID. This is a system API and is **undefined** by default.
 
 **Type:** string
 
@@ -36,10 +34,7 @@ This is a system API and is **undefined** by default.
 isAuthenticated?: boolean
 ```
 
-Whether the domain account has been authenticated. The value **true** means that the specified domain account has
-been authenticated; the value **false** means the opposite.
-
-This is a system API. The default value is **false**.
+Whether the domain account has been authenticated. The value **true** means that the specified domain account has been authenticated; the value **false** means the opposite. This is a system API. The default value is **false**.
 
 **Type:** boolean
 

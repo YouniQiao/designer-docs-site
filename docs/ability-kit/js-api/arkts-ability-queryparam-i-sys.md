@@ -110,10 +110,7 @@ Indicates the param for query entity.
 userId?: number
 ```
 
-Indicates the target user ID.
-
-If the user ID of the caller application is different from the target user ID, you need to apply for permission:
-ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS.
+Indicates the target user ID. If the user ID of the caller application is different from the target user ID, you need to apply for permission: ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS.
 
 **Type:** number
 

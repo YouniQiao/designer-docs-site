@@ -12,12 +12,7 @@ import { zlib } from '@kit.BasicServicesKit';
 function compressFile(inFile: string, outFile: string, options: Options, callback: AsyncCallback<void>): void
 ```
 
-Compresses a file. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> To avoid path traversal, the input parameters of **inFile** and **outFile** cannot contain two consecutive
-> periods and a slash (../) since API version 13. Otherwise, error codes 900001 and 900002 are returned.
+Compresses a file. This API uses an asynchronous callback to return the result. > **NOTE** > > To avoid path traversal, the input parameters of **inFile** and **outFile** cannot contain two consecutive > periods and a slash (../) since API version 13. Otherwise, error codes 900001 and 900002 are returned.
 
 **Since:** 9
 
@@ -79,12 +74,7 @@ try {
 function compressFile(inFile: string, outFile: string, options: Options): Promise<void>
 ```
 
-Compresses a file. This API uses a promise to return the result.
-
-> **NOTE**
->
-> To avoid path traversal, the input parameters of **inFile** and **outFile** cannot contain two consecutive
-> periods and a slash (../) since API version 13. Otherwise, error codes 900001 and 900002 are returned.
+Compresses a file. This API uses a promise to return the result. > **NOTE** > > To avoid path traversal, the input parameters of **inFile** and **outFile** cannot contain two consecutive > periods and a slash (../) since API version 13. Otherwise, error codes 900001 and 900002 are returned.
 
 **Since:** 9
 

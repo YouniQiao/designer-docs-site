@@ -6,9 +6,7 @@
 function getFontDescriptorByFullName(fullName: string, fontType: SystemFontType): Promise<FontDescriptor>
 ```
 
-根据字体名称和类型获取字体描述符，使用Promise异步回调。
-
-字体描述符是描述字体特征的数据结构，包含字体外观和属性的详细信息。
+根据字体名称和类型获取字体描述符，使用Promise异步回调。 字体描述符是描述字体特征的数据结构，包含字体外观和属性的详细信息。
 
 **起始版本：** 14
 

@@ -16,8 +16,7 @@
 baseColor: MaterialProperty
 ```
 
-UnlitShadowAlphaMaterial的基础颜色因子.
-factor.xyzw的值定义rgba颜色
+UnlitShadowAlphaMaterial的基础颜色因子. factor.xyzw的值定义rgba颜色
 
 **类型：** MaterialProperty
 

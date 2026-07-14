@@ -1,8 +1,6 @@
 # AudioManager
 
-音频音量和设备管理。
-
-在使用AudioManager的接口之前，需先通过[getAudioManager](arkts-audio-getaudiomanager-f.md#getaudiomanager-1)获取AudioManager实例。
+音频音量和设备管理。 在使用AudioManager的接口之前，需先通过[getAudioManager](arkts-audio-getaudiomanager-f.md#getaudiomanager-1)获取AudioManager实例。
 
 **起始版本：** 7
 
@@ -264,8 +262,7 @@ audioManager.on('ringerModeChange', (ringerMode: audio.AudioRingMode) => {
 setAudioScene(scene: AudioScene, callback: AsyncCallback<void> ): void
 ```
 
-Sets the audio scene mode to change audio strategies. This method uses an asynchronous callback to return the
-result.
+Sets the audio scene mode to change audio strategies. This method uses an asynchronous callback to return the result.
 
 **起始版本：** 8
 

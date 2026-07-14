@@ -12,8 +12,7 @@ import { i18n } from '@kit.LocalizationKit';
 export function isRTL(locale: string): boolean
 ```
 
-Checks whether a language is an RTL language. For an RTL language,
-[UI mirroring](../../../../internationalization/i18n-ui-design.md#ui-mirroring) is required.
+Checks whether a language is an RTL language. For an RTL language, [UI mirroring](../../../../internationalization/i18n-ui-design.md#ui-mirroring) is required.
 
 **Since:** 7
 

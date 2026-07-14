@@ -1,21 +1,6 @@
 # OffscreenCanvas
 
-The **OffscreenCanvas** component is used to draw custom graphics.
-
-When the
-[Canvas](Canvas)
-component or **CanvasRenderingContext2D** object is used, rendering, animation,
-and user interaction usually occur on the main thread of the application.
-Calculations related to canvas animation and rendering may affect application
-performance. **OffscreenCanvas** allows for rendering off the screen. This means
-that some tasks can be run in a separate thread to reduce the load on the main thread.
-
-> **NOTE**
->
-> **OffscreenCanvas** cannot be used in ServiceExtensionAbility. It is recommended
-> that you use the
-> [drawing module](../../../../reference/apis-arkgraphics2d/arkts-apis-graphics-drawing.md)
-> for offscreen drawing in ServiceExtensionAbility.
+The **OffscreenCanvas** component is used to draw custom graphics. When the [Canvas](Canvas) component or **CanvasRenderingContext2D** object is used, rendering, animation, and user interaction usually occur on the main thread of the application. Calculations related to canvas animation and rendering may affect application performance. **OffscreenCanvas** allows for rendering off the screen. This means that some tasks can be run in a separate thread to reduce the load on the main thread. > **NOTE** > > **OffscreenCanvas** cannot be used in ServiceExtensionAbility. It is recommended > that you use the > [drawing module](../../../../reference/apis-arkgraphics2d/arkts-apis-graphics-drawing.md) > for offscreen drawing in ServiceExtensionAbility.
 
 **Since:** 8
 
@@ -50,8 +35,7 @@ Constructs an OffscreenCanvas for creating an offscreen canvas object.
 constructor(width: number, height: number, unit: LengthMetricsUnit)
 ```
 
-Constructs an **OffscreenCanvas** object for creating an offscreen canvas object.
-The unit mode is configurable for the **OffscreenCanvas** object.
+Constructs an **OffscreenCanvas** object for creating an offscreen canvas object. The unit mode is configurable for the **OffscreenCanvas** object.
 
 **Since:** 12
 
@@ -106,8 +90,7 @@ Obtains the drawing context of the offscreen canvas.
 transferToImageBitmap(): ImageBitmap
 ```
 
-Creates an **ImageBitmap** object from the most recently rendered image of the
-offscreen canvas.
+Creates an **ImageBitmap** object from the most recently rendered image of the offscreen canvas.
 
 **Since:** 8
 
@@ -129,9 +112,7 @@ offscreen canvas.
 height: number
 ```
 
-Height of the offscreen canvas.
-
-Default unit: vp
+Height of the offscreen canvas. Default unit: vp
 
 **Type:** number
 
@@ -149,9 +130,7 @@ Default unit: vp
 width: number
 ```
 
-Width of the offscreen canvas.
-
-Default unit: vp
+Width of the offscreen canvas. Default unit: vp
 
 **Type:** number
 

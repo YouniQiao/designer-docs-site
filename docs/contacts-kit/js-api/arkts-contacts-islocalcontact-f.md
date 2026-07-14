@@ -12,8 +12,7 @@ import { contact } from '@kit.ContactsKit';
 function isLocalContact(id: number, callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether the ID of this contact is in the local address book. This API uses an asynchronous callback to
-return the result.
+Checks whether the ID of this contact is in the local address book. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 
@@ -56,8 +55,7 @@ contact.isLocalContact(1, (err: BusinessError, data) => {
 function isLocalContact(context: Context, id: number, callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether the ID of this contact is in the local address book. This API uses an asynchronous callback to
-return the result.
+Checks whether the ID of this contact is in the local address book. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 

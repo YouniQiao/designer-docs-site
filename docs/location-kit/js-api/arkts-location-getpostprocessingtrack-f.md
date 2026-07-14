@@ -12,15 +12,7 @@ import { geoLocationManager } from '@kit.LocationKit';
 function getPostProcessingTrack(sportsType: SportsType): Promise<Array<Location>>
 ```
 
-Obtain post-processing trajectory information under specific sport mode. Only
-[SKIING](arkts-location-sportstype-e.md#skiing) is supported currently.
-
-Before calling this API, you need to call
-[on('locationChange')](geoLocationManager.on('locationChange')) and set the input parameter
-[sportsType](arkts-location-continuouslocationrequest-i-sys.md#sportstype) to the specific sport mode to start
-tracking.
-
-Returns data within 24 hours since tracking started; Subsequent calls return only new records.
+Obtain post-processing trajectory information under specific sport mode. Only [SKIING](arkts-location-sportstype-e.md#skiing) is supported currently. Before calling this API, you need to call [on('locationChange')](geoLocationManager.on('locationChange')) and set the input parameter [sportsType](arkts-location-continuouslocationrequest-i-sys.md#sportstype) to the specific sport mode to start tracking. Returns data within 24 hours since tracking started; Subsequent calls return only new records.
 
 **Since:** 26.0.0
 

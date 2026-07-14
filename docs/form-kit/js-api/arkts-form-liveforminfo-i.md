@@ -18,8 +18,7 @@ import { LiveFormInfo } from '@kit.FormKit';
 borderRadius: number
 ```
 
-The form border radius.
-Unit: vp, The value must be greater than or equal to 0.
+The form border radius. Unit: vp, The value must be greater than or equal to 0.
 
 **Type:** number
 

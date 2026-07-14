@@ -1,8 +1,6 @@
 # MultiNavPathStack
 
-Implements a navigation stack of the **MultiNavigation** component. Currently, this stack can be created only by the
-user and cannot be obtained through callbacks. Do not use events or APIs such as **onReady** of **NavDestination** to
-obtain the navigation stack and perform stack operations, as this may lead to unpredictable issues.
+Implements a navigation stack of the **MultiNavigation** component. Currently, this stack can be created only by the user and cannot be obtained through callbacks. Do not use events or APIs such as **onReady** of **NavDestination** to obtain the navigation stack and perform stack operations, as this may lead to unpredictable issues.
 
 **Inheritance/Implementation:** MultiNavPathStack extends [NavPathStack](../arkts-components/arkts-arkui-navpathstack-c.md)
 
@@ -22,12 +20,7 @@ import { MultiNavPathStack, MultiNavigation, SplitPolicy } from '@kit.ArkUI';
 clear(animated?: boolean): void
 ```
 
-Clears the navigation stack.
-
-> **NOTE**
-
-> If [keepBottomPage](arkts-arkui-multinavpathstack-c.md#keepbottompage-1) is called with **true**, the bottom page of the
-> navigation stack is retained.
+Clears the navigation stack. > **NOTE** > If [keepBottomPage](arkts-arkui-multinavpathstack-c.md#keepbottompage-1) is called with **true**, the bottom page of the > navigation stack is retained.
 
 **Since:** 14
 
@@ -193,14 +186,7 @@ Obtains the parameter information of all the navigation destination pages that m
 keepBottomPage(keepBottom: boolean): void
 ```
 
-Sets whether to retain the bottom page when the **pop** or **clear** APIs is called.
-
-> **NOTE**
-
-> **MultiNavigation** treats the home page as a navigation destination page in the stack. By default, calling
-> **pop** or **clear** will also remove the bottom page.
-> > If this API is called with **TRUE**, **MultiNavigation** will retain the bottom page when the **pop** or
-> **clear** API is called.
+Sets whether to retain the bottom page when the **pop** or **clear** APIs is called. > **NOTE** > **MultiNavigation** treats the home page as a navigation destination page in the stack. By default, calling > **pop** or **clear** will also remove the bottom page. > > If this API is called with **TRUE**, **MultiNavigation** will retain the bottom page when the **pop** or > **clear** API is called.
 
 **Since:** 14
 
@@ -222,11 +208,7 @@ Sets whether to retain the bottom page when the **pop** or **clear** APIs is cal
 moveIndexToTop(index: number, animated?: boolean): void
 ```
 
-Moves the navigation destination page specified by **index** to the top of the navigation stack.
-
-> **NOTE**
-
-> Depending on the type of page found, **MultiNavigation** performs different actions:
+Moves the navigation destination page specified by **index** to the top of the navigation stack. > **NOTE** > Depending on the type of page found, **MultiNavigation** performs different actions:
 
 **Since:** 14
 
@@ -249,12 +231,7 @@ Moves the navigation destination page specified by **index** to the top of the n
 moveToTop(name: string, animated?: boolean): number
 ```
 
-Moves the first navigation destination page that matches **name** from the bottom of the navigation stack to the
-top of the stack.
-
-> **NOTE**
-
-> Depending on the type of page found, **MultiNavigation** performs different actions:
+Moves the first navigation destination page that matches **name** from the bottom of the navigation stack to the top of the stack. > **NOTE** > Depending on the type of page found, **MultiNavigation** performs different actions:
 
 **Since:** 14
 
@@ -283,12 +260,7 @@ top of the stack.
 pop(animated?: boolean): NavPathInfo | undefined
 ```
 
-Pops the top element out of the navigation stack.
-
-> **NOTE**
-
-> If [keepBottomPage](arkts-arkui-multinavpathstack-c.md#keepbottompage-1) is called with **true**, the bottom page of the
-> navigation stack is retained.
+Pops the top element out of the navigation stack. > **NOTE** > If [keepBottomPage](arkts-arkui-multinavpathstack-c.md#keepbottompage-1) is called with **true**, the bottom page of the > navigation stack is retained.
 
 **Since:** 14
 
@@ -316,13 +288,7 @@ Pops the top element out of the navigation stack.
 pop(result?: Object, animated?: boolean): NavPathInfo | undefined
 ```
 
-Pops the top element out of the navigation stack and invokes the **onPop** callback to pass the page processing
-result.
-
-> **NOTE**
-
-> If [keepBottomPage](arkts-arkui-multinavpathstack-c.md#keepbottompage-1) is called with **true**, the bottom page of the
-> navigation stack is retained.
+Pops the top element out of the navigation stack and invokes the **onPop** callback to pass the page processing result. > **NOTE** > If [keepBottomPage](arkts-arkui-multinavpathstack-c.md#keepbottompage-1) is called with **true**, the bottom page of the > navigation stack is retained.
 
 **Since:** 14
 
@@ -374,8 +340,7 @@ Returns the navigation stack to the page specified by **index**.
 popToIndex(index: number, result: Object, animated?: boolean): void
 ```
 
-Returns the navigation stack to the page specified by **index** and invokes the **onPop** callback to pass the page
-processing result.
+Returns the navigation stack to the page specified by **index** and invokes the **onPop** callback to pass the page processing result.
 
 **Since:** 14
 
@@ -399,8 +364,7 @@ processing result.
 popToName(name: string, animated?: boolean): number
 ```
 
-Pops pages until the first navigation destination page that matches **name** from the bottom of the navigation
-stack is at the top of the stack.
+Pops pages until the first navigation destination page that matches **name** from the bottom of the navigation stack is at the top of the stack.
 
 **Since:** 14
 
@@ -429,8 +393,7 @@ stack is at the top of the stack.
 popToName(name: string, result: Object, animated?: boolean): number
 ```
 
-Pops pages until the first navigation destination page that matches **name** from the bottom of the navigation
-stack is at the top of the stack. This API uses the **onPop** callback to pass in the page processing result.
+Pops pages until the first navigation destination page that matches **name** from the bottom of the navigation stack is at the top of the stack. This API uses the **onPop** callback to pass in the page processing result.
 
 **Since:** 14
 
@@ -484,8 +447,7 @@ Pushes the specified navigation destination page to the navigation stack.
 pushPath(info: NavPathInfo, options?: NavigationOptions, policy?: SplitPolicy): void
 ```
 
-Pushes the specified navigation destination page to the navigation stack, with stack operation settings through
-**NavigationOptions**.
+Pushes the specified navigation destination page to the navigation stack, with stack operation settings through **NavigationOptions**.
 
 **Since:** 14
 
@@ -509,8 +471,7 @@ Pushes the specified navigation destination page to the navigation stack, with s
 pushPathByName(name: string, param: Object, animated?: boolean, policy?: SplitPolicy): void
 ```
 
-Pushes the navigation destination page specified by **name** to the navigation stack, passing the data specified by
-**param**.
+Pushes the navigation destination page specified by **name** to the navigation stack, passing the data specified by **param**.
 
 **Since:** 14
 
@@ -536,9 +497,7 @@ pushPathByName(
     name: string, param: Object, onPop?: base.Callback<PopInfo>, animated?: boolean, policy?: SplitPolicy): void
 ```
 
-Pushes the navigation destination page specified by **name** to the navigation stack, passing the data specified by
-**param**. This API uses the **onPop** callback to handle the result returned when the page is popped out of the
-stack.
+Pushes the navigation destination page specified by **name** to the navigation stack, passing the data specified by **param**. This API uses the **onPop** callback to handle the result returned when the page is popped out of the stack.
 
 **Since:** 14
 
@@ -620,8 +579,7 @@ Removes the navigation destination page specified by **name** from the navigatio
 replacePath(info: NavPathInfo, animated?: boolean): void
 ```
 
-Replaces the current top page on the stack with the specified navigation destination page. The new page inherits
-the split policy of the original top page.
+Replaces the current top page on the stack with the specified navigation destination page. The new page inherits the split policy of the original top page.
 
 **Since:** 14
 
@@ -644,8 +602,7 @@ the split policy of the original top page.
 replacePath(info: NavPathInfo, options?: NavigationOptions): void
 ```
 
-Replaces the current top page on the stack with the specified navigation destination page, with stack operation
-settings through **NavigationOptions**. The new page inherits the split policy of the original top page.
+Replaces the current top page on the stack with the specified navigation destination page, with stack operation settings through **NavigationOptions**. The new page inherits the split policy of the original top page.
 
 **Since:** 14
 
@@ -668,8 +625,7 @@ settings through **NavigationOptions**. The new page inherits the split policy o
 replacePathByName(name: string, param: Object, animated?: boolean): void
 ```
 
-Replaces the current top page on the stack with the navigation destination page specified by **name**. The new page
-inherits the split policy of the original top page.
+Replaces the current top page on the stack with the navigation destination page specified by **name**. The new page inherits the split policy of the original top page.
 
 **Since:** 14
 
@@ -716,20 +672,7 @@ Sets the draggable range for the home page width. If not set, the width defaults
 setPlaceholderPage(info: NavPathInfo): void
 ```
 
-Sets a placeholder page.
-
-> **NOTE**
-
-> The placeholder page is a special page type. When set, it forms a default split-screen effect with the home page
-> on some large-screen devices, that is, the left side is the home page, and the right side is the placeholder
-> page.
-
-> In scenarios where the application's drawable area is less than 600 vp, or when a foldable screen switches from
-> the expanded state to the folded state, or when a tablet switches from landscape to portrait mode, the
-> placeholder page will be automatically removed, resulting in only the home page being shown.
-> > Conversely, when the application's drawable area is greater than or equal to 600 vp, or when a foldable screen
-> switches from the folded state to the expanded state, or when a tablet switches from portrait to landscape mode,
-> the placeholder page will be automatically added to form a split-screen.
+Sets a placeholder page. > **NOTE** > The placeholder page is a special page type. When set, it forms a default split-screen effect with the home page > on some large-screen devices, that is, the left side is the home page, and the right side is the placeholder > page. > In scenarios where the application's drawable area is less than 600 vp, or when a foldable screen switches from > the expanded state to the folded state, or when a tablet switches from landscape to portrait mode, the > placeholder page will be automatically removed, resulting in only the home page being shown. > > Conversely, when the application's drawable area is greater than or equal to 600 vp, or when a foldable screen > switches from the folded state to the expanded state, or when a tablet switches from portrait to landscape mode, > the placeholder page will be automatically added to form a split-screen.
 
 **Since:** 14
 

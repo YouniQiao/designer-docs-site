@@ -1,16 +1,6 @@
 # @ohos.enterprise.browser
 
-The **browser** module provides browser management, including setting, canceling, and obtaining browser policies.
-
-Browser policies are a collection of rules and settings that govern how a browser behaves, ensuring security,
-compliance, performance optimization, and a consistent user experience.
-
-> **NOTE**
->
-> The APIs of this module can be used only in the stage model.
->
-> The APIs of this module can be called only by a device administrator application that is enabled. For details, see
-> [MDM Kit Development](../../../../mdm/mdm-kit-guide.md).
+The **browser** module provides browser management, including setting, canceling, and obtaining browser policies. Browser policies are a collection of rules and settings that govern how a browser behaves, ensuring security, compliance, performance optimization, and a consistent user experience. > **NOTE** > > The APIs of this module can be used only in the stage model. > > The APIs of this module can be called only by a device administrator application that is enabled. For details, see > [MDM Kit Development](../../../../mdm/mdm-kit-guide.md).
 
 **Since:** 10
 
@@ -32,7 +22,7 @@ import { browser } from '@kit.MDMKit';
 | [getPoliciesSync](arkts-mdm-getpoliciessync-f.md#getpoliciessync-1) | Obtains the browser policy by app ID. |
 | [getSelfManagedBrowserPolicy](arkts-mdm-getselfmanagedbrowserpolicy-f.md#getselfmanagedbrowserpolicy-1) | Obtains the browser policy of the current device. |
 | [getSelfManagedBrowserPolicyVersion](arkts-mdm-getselfmanagedbrowserpolicyversion-f.md#getselfmanagedbrowserpolicyversion-1) | Obtains the policy version of a specified browser. |
-| [setManagedBrowserPolicy](arkts-mdm-setmanagedbrowserpolicy-f.md#setmanagedbrowserpolicy-1) | Sets the browser policy. After the setting is successful, the system common event[COMMON_EVENT_MANAGED_BROWSER_POLICY_CHANGED](../../../../reference/apis-basic-services-kit/common_event/commonEventManager-definitions.md#common_event_managed_browser_policy_changed)is released. |
+| [setManagedBrowserPolicy](arkts-mdm-setmanagedbrowserpolicy-f.md#setmanagedbrowserpolicy-1) | Sets the browser policy. After the setting is successful, the system common event [COMMON_EVENT_MANAGED_BROWSER_POLICY_CHANGED](../../../../reference/apis-basic-services-kit/common_event/commonEventManager-definitions.md#common_event_managed_browser_policy_changed) is released. |
 | [setPolicySync](arkts-mdm-setpolicysync-f.md#setpolicysync-1) | Sets the sub-policy for a specified browser. |
 
 <!--Del-->

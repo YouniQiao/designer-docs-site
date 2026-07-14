@@ -12,8 +12,7 @@ import { bundleManager } from '@kit.AbilityKit';
 function enableDynamicIcon(bundleName: string, moduleName: string): Promise<void>
 ```
 
-Enables the dynamic icon based on the given bundle name and module name. This API uses a promise to return the
-result.
+Enables the dynamic icon based on the given bundle name and module name. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -78,14 +77,7 @@ try {
 function enableDynamicIcon(bundleName: string, moduleName: string, option?: BundleOptions): Promise<void>
 ```
 
-Enables the dynamic icon based on the given bundle name, module name, and bundle options. This API uses a promise
-to return the result.
-
-To enable the dynamic icon for the current user, you must request the ohos.permission.ACCESS_DYNAMIC_ICON
-permission.
-
-To enable the dynamic icon for another user, you must request the ohos.permission.ACCESS_DYNAMIC_ICON and
-ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS permissions.
+Enables the dynamic icon based on the given bundle name, module name, and bundle options. This API uses a promise to return the result. To enable the dynamic icon for the current user, you must request the ohos.permission.ACCESS_DYNAMIC_ICON permission. To enable the dynamic icon for another user, you must request the ohos.permission.ACCESS_DYNAMIC_ICON and ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS permissions.
 
 **Since:** 20
 

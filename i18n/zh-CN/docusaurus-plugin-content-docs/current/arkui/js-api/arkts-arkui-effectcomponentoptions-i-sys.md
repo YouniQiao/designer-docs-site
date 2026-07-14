@@ -14,9 +14,7 @@
 effectLayer?: EffectLayer
 ```
 
-EffectComponent的渲染层级。
-
-默认值：EffectLayer.NONE
+EffectComponent的渲染层级。 默认值：EffectLayer.NONE
 
 **类型：** EffectLayer
 

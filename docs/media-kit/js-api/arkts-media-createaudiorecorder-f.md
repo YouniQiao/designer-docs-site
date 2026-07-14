@@ -12,8 +12,7 @@ import { media } from '@kit.MediaKit';
 function createAudioRecorder(): AudioRecorder
 ```
 
-Creates an AudioRecorder instance to control audio recording. Only one AudioRecorder instance can be created per
-device.
+Creates an AudioRecorder instance to control audio recording. Only one AudioRecorder instance can be created per device.
 
 **Since:** 6
 

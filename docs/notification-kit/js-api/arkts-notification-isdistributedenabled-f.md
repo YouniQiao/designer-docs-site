@@ -12,8 +12,7 @@ import { notificationManager } from '@kit.NotificationKit';
 function isDistributedEnabled(callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether the device supports cross-device notifications. This API uses an asynchronous callback to return the
-result.
+Checks whether the device supports cross-device notifications. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 

@@ -6,19 +6,7 @@
 function pushNamedRoute(options: NamedRouterOptions, callback: AsyncCallback<void>): void
 ```
 
-跳转到指定的命名路由页面。
-
-> **说明：**
->
-> - 从API version 10开始支持，从API version 18开始废弃，建议使用
-> [pushNamedRoute](arkts-arkui-router-c.md#pushnamedroute-1)
-> 替代。pushNamedRoute需先通过[UIContext](arkts-arkui-uicontext.md)中的
-> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter)获取
-> [Router](arkts-arkui-uicontext.md)实例，然后通过该实例进行调用。
->
-> - 从API version 10开始，可以通过使用[UIContext](arkts-arkui-uicontext.md)中的
-> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter)方法获取当前UI上下文关联的
-> [Router](arkts-arkui-uicontext.md)对象。
+跳转到指定的命名路由页面。 > **说明：** > > - 从API version 10开始支持，从API version 18开始废弃，建议使用 > [pushNamedRoute](arkts-arkui-router-c.md#pushnamedroute-1) > 替代。pushNamedRoute需先通过[UIContext](arkts-arkui-uicontext.md)中的 > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter)获取 > [Router](arkts-arkui-uicontext.md)实例，然后通过该实例进行调用。 > > - 从API version 10开始，可以通过使用[UIContext](arkts-arkui-uicontext.md)中的 > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter)方法获取当前UI上下文关联的 > [Router](arkts-arkui-uicontext.md)对象。
 
 **起始版本：** 10
 
@@ -51,6 +39,8 @@ function pushNamedRoute(options: NamedRouterOptions, callback: AsyncCallback<voi
 **示例：**
 
 ```TypeScript
+import { router } from '@kit.ArkUI';
+
 class innerParams {
   data3: number[];
 
@@ -74,7 +64,7 @@ router.pushNamedRoute({
   params: new RouterParams('message', [123, 456, 789])
 }, (err) => {
   if (err) {
-    console.error(`pushNamedRoute failed, code is ${err.code}, message is ${err.message}`);
+    console.error(`pushNamedRoute failed. Code: ${err.code}, message: ${err.message}`);
     return;
   }
   console.info('pushNamedRoute success');
@@ -89,19 +79,7 @@ router.pushNamedRoute({
 function pushNamedRoute(options: NamedRouterOptions): Promise<void>
 ```
 
-跳转到指定的命名路由页面。
-
-> **说明：**
->
-> - 从API version 10开始支持，从API version 18开始废弃，建议使用
-> [pushNamedRoute](arkts-arkui-router-c.md#pushnamedroute-2)替代。
-> pushNamedRoute需先通过[UIContext](arkts-arkui-uicontext.md)中的
-> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter)获取
-> [Router](arkts-arkui-uicontext.md)实例，然后通过该实例进行调用。
->
-> - 从API version 10开始，可以通过使用[UIContext](arkts-arkui-uicontext.md)中的
-> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter)方法获取当前UI上下文关联的
-> [Router](arkts-arkui-uicontext.md)对象。
+跳转到指定的命名路由页面。 > **说明：** > > - 从API version 10开始支持，从API version 18开始废弃，建议使用 > [pushNamedRoute](arkts-arkui-router-c.md#pushnamedroute-2)替代。 > pushNamedRoute需先通过[UIContext](arkts-arkui-uicontext.md)中的 > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter)获取 > [Router](arkts-arkui-uicontext.md)实例，然后通过该实例进行调用。 > > - 从API version 10开始，可以通过使用[UIContext](arkts-arkui-uicontext.md)中的 > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter)方法获取当前UI上下文关联的 > [Router](arkts-arkui-uicontext.md)对象。
 
 **起始版本：** 10
 
@@ -139,6 +117,8 @@ function pushNamedRoute(options: NamedRouterOptions): Promise<void>
 **示例：**
 
 ```TypeScript
+import { router } from '@kit.ArkUI';
+
 import { BusinessError } from '@kit.BasicServicesKit';
 
 class innerParams {
@@ -166,8 +146,8 @@ router.pushNamedRoute({
   .then(() => {
     console.info(`pushNamedRoute finish`);
   })
-  .catch((err: ESObject) => {
-    console.error(`pushNamedRoute failed, code is ${(err as BusinessError).code}, message is ${(err as BusinessError).message}`);
+  .catch((err: BusinessError) => {
+    console.error(`pushNamedRoute failed. Code: ${err.code}, message: ${err.message}`);
   })
 
 ```
@@ -179,19 +159,7 @@ router.pushNamedRoute({
 function pushNamedRoute(options: NamedRouterOptions, mode: RouterMode, callback: AsyncCallback<void>): void
 ```
 
-跳转到指定的命名路由页面。
-
-> **说明：**
->
-> - 从API version 10开始支持，从API version 18开始废弃，建议使用
-> [pushNamedRoute](arkts-arkui-router-c.md#pushnamedroute-3)
-> 替代。pushNamedRoute需先通过[UIContext](arkts-arkui-uicontext.md)中的
-> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter)获取
-> [Router](arkts-arkui-uicontext.md)实例，然后通过该实例进行调用。
->
-> - 从API version 10开始，可以通过使用[UIContext](arkts-arkui-uicontext.md)中的
-> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter)方法获取当前UI上下文关联的
-> [Router](arkts-arkui-uicontext.md)对象。
+跳转到指定的命名路由页面。 > **说明：** > > - 从API version 10开始支持，从API version 18开始废弃，建议使用 > [pushNamedRoute](arkts-arkui-router-c.md#pushnamedroute-3) > 替代。pushNamedRoute需先通过[UIContext](arkts-arkui-uicontext.md)中的 > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter)获取 > [Router](arkts-arkui-uicontext.md)实例，然后通过该实例进行调用。 > > - 从API version 10开始，可以通过使用[UIContext](arkts-arkui-uicontext.md)中的 > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter)方法获取当前UI上下文关联的 > [Router](arkts-arkui-uicontext.md)对象。
 
 **起始版本：** 10
 
@@ -225,6 +193,8 @@ function pushNamedRoute(options: NamedRouterOptions, mode: RouterMode, callback:
 **示例：**
 
 ```TypeScript
+import { router } from '@kit.ArkUI';
+
 class innerParams {
   data3: number[];
 
@@ -248,7 +218,7 @@ router.pushNamedRoute({
   params: new RouterParams('message', [123, 456, 789])
 }, router.RouterMode.Standard, (err) => {
   if (err) {
-    console.error(`pushNamedRoute failed, code is ${err.code}, message is ${err.message}`);
+    console.error(`pushNamedRoute failed. Code: ${err.code}, message: ${err.message}`);
     return;
   }
   console.info('pushNamedRoute success');
@@ -263,19 +233,7 @@ router.pushNamedRoute({
 function pushNamedRoute(options: NamedRouterOptions, mode: RouterMode): Promise<void>
 ```
 
-跳转到指定的命名路由页面。
-
-> **说明：**
->
-> - 从API version 10开始支持，从API version 18开始废弃，建议使用
-> [pushNamedRoute](arkts-arkui-router-c.md#pushnamedroute-4)
-> 替代。pushNamedRoute需先通过[UIContext](arkts-arkui-uicontext.md)中的
-> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter)获取
-> [Router](arkts-arkui-uicontext.md)实例，然后通过该实例进行调用。
->
-> - 从API version 10开始，可以通过使用[UIContext](arkts-arkui-uicontext.md)中的
-> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter)方法获取当前UI上下文关联的
-> [Router](arkts-arkui-uicontext.md)对象。
+跳转到指定的命名路由页面。 > **说明：** > > - 从API version 10开始支持，从API version 18开始废弃，建议使用 > [pushNamedRoute](arkts-arkui-router-c.md#pushnamedroute-4) > 替代。pushNamedRoute需先通过[UIContext](arkts-arkui-uicontext.md)中的 > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter)获取 > [Router](arkts-arkui-uicontext.md)实例，然后通过该实例进行调用。 > > - 从API version 10开始，可以通过使用[UIContext](arkts-arkui-uicontext.md)中的 > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter)方法获取当前UI上下文关联的 > [Router](arkts-arkui-uicontext.md)对象。
 
 **起始版本：** 10
 
@@ -314,6 +272,8 @@ function pushNamedRoute(options: NamedRouterOptions, mode: RouterMode): Promise<
 **示例：**
 
 ```TypeScript
+import { router } from '@kit.ArkUI';
+
 import { BusinessError } from '@kit.BasicServicesKit';
 
 class innerParams {
@@ -341,8 +301,8 @@ router.pushNamedRoute({
   .then(() => {
     console.info(`pushNamedRoute finish`);
   })
-  .catch((err: ESObject) => {
-    console.error(`pushNamedRoute failed, code is ${(err as BusinessError).code}, message is ${(err as BusinessError).message}`);
+  .catch((err: BusinessError) => {
+    console.error(`pushNamedRoute failed. Code: ${err.code}, message: ${err.message}`);
   })
 
 ```

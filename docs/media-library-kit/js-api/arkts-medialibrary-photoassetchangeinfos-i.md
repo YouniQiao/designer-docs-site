@@ -1,6 +1,6 @@
 # PhotoAssetChangeInfos
 
-Defines the photo asset change infos.
+Describes the notification information about the change of a media asset.
 
 **Since:** 20
 
@@ -18,7 +18,7 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 assetChangeDatas: PhotoAssetChangeData[] | null
 ```
 
-The changed asset datas.
+Array of changed media assets. If all media assets need to be queried again, **assetChangeDatas** is null.
 
 **Type:** PhotoAssetChangeData[] | null
 
@@ -32,8 +32,7 @@ The changed asset datas.
 isForRecheck: boolean
 ```
 
-Whether the application needs to requery. This flag helps address abnormal scenarios like abnormal
-service restarts by enabling the application to refresh the page correctly through proactive querying.
+Whether the application should query all media assets again. **true** if the application should query all assets again, **false** otherwise. **NOTE** In scenarios involving bulk asset operations or abnormal notifications, **isForRecheck** will be **true**. In this case, the application should query all assets again.
 
 **Type:** boolean
 
@@ -47,7 +46,7 @@ service restarts by enabling the application to refresh the page correctly throu
 type: NotifyChangeType
 ```
 
-Notification type of photo asset.
+Type of the media asset change.
 
 **Type:** NotifyChangeType
 

@@ -1,9 +1,6 @@
 # WebHttpCookie
 
-Defines the Web's HTTPCookie.
-<p><strong>API Note</strong>:<br>
-The maximum length allowed for each attribute value in a cookie string is 1024.
-</p>
+Defines the Web's HTTPCookie. <p><strong>API Note</strong>:<br> The maximum length allowed for each attribute value in a cookie string is 1024. </p>
 
 **起始版本：** 23
 

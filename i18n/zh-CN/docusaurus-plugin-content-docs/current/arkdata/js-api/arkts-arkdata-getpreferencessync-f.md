@@ -6,9 +6,7 @@
 function getPreferencesSync(context: Context, options: Options): Preferences
 ```
 
-获取Preferences实例，此为同步接口。
-
-应用首次调用该接口获取某个Preferences实例后，该实例会被缓存起来，后续再次调用时不会再次从持久化文件中读取，直接从缓存中获取Preferences实例。
+获取Preferences实例，此为同步接口。 应用首次调用该接口获取某个Preferences实例后，该实例会被缓存起来，后续再次调用时不会再次从持久化文件中读取，直接从缓存中获取Preferences实例。
 
 **起始版本：** 12
 

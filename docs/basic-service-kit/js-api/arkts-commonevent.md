@@ -1,7 +1,6 @@
 # @ohos.commonEvent
 
-The **CommonEvent** module provides capabilities to publish, subscribe to, and unsubscribe from common events, as
-well as obtain and modify the common event result code and result data.
+The **CommonEvent** module provides capabilities to publish, subscribe to, and unsubscribe from common events, as well as obtain and modify the common event result code and result data.
 
 **Since:** 7
 
@@ -30,12 +29,12 @@ well as obtain and modify the common event result code and result data.
 | Name | Description |
 | --- | --- |
 | [publishAsUser](arkts-basicservices-publishasuser-depr-f-sys.md#publishasuser-1) | Publishes a common event to a specific user. This API uses an asynchronous callback to return the result. |
-| [publishAsUser](arkts-basicservices-publishasuser-depr-f-sys.md#publishasuser-2) | Publishes a common event with given properties to a specific user. This API uses an asynchronous callback to returnthe result. |
+| [publishAsUser](arkts-basicservices-publishasuser-depr-f-sys.md#publishasuser-2) | Publishes a common event with given properties to a specific user. This API uses an asynchronous callback to return the result. |
 <!--DelEnd-->
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [Support](arkts-basicservices-support-depr-e.md) | A system common event is an event that is published by a system service or system application and requires specificpermissions to subscribe to. To publish or subscribe to this type of event, you must follow the event-specific definitions. |
+| [Support](arkts-basicservices-support-depr-e.md) | A system common event is an event that is published by a system service or system application and requires specific permissions to subscribe to. To publish or subscribe to this type of event, you must follow the event-specific definitions. |
 

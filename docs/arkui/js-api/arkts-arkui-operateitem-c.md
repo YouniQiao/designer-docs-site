@@ -1,8 +1,8 @@
 # OperateItem
 
-Declare OperateItem
+Defines the type of the element on the right of the **ComposeListItem** component.
 
-**Since:** 20
+**Since:** 10
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -18,15 +18,15 @@ import { OperateCheck, OperateIcon, ComposeListItem, OperateItem, IconType, Cont
 arrow?: OperateIcon
 ```
 
-Sets the arrow.
+Arrow with a size of 12 x 24 vp. If this parameter is not set or is set to **undefined**, the arrow is not displayed.
 
 **Type:** OperateIcon
 
-**Since:** 20
+**Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -36,15 +36,15 @@ Sets the arrow.
 button?: OperateButton
 ```
 
-Sets the button.
+Button. If this parameter is not set or is set to **undefined**, the button is not displayed.
 
 **Type:** OperateButton
 
-**Since:** 20
+**Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -54,15 +54,15 @@ Sets the button.
 checkbox?: OperateCheck
 ```
 
-Sets the checkBox.
+Check box with a size of 24 x 24 vp. If this parameter is not set or is set to **undefined**, the check box is not displayed.
 
 **Type:** OperateCheck
 
-**Since:** 20
+**Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -72,15 +72,15 @@ Sets the checkBox.
 icon?: OperateIcon
 ```
 
-Sets the icon.
+First icon with a size of 24 x 24 vp. If this parameter is not set or is set to **undefined**, the icon is not displayed.
 
 **Type:** OperateIcon
 
-**Since:** 20
+**Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -90,15 +90,15 @@ Sets the icon.
 image?: ResourceStr
 ```
 
-Sets the image.
+Image with a size of 48 x 48 vp. If this parameter is not set or is set to **undefined**, the image is not displayed.
 
 **Type:** ResourceStr
 
-**Since:** 20
+**Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -108,15 +108,15 @@ Sets the image.
 radio?: OperateCheck
 ```
 
-Sets the radio.
+Radio button with a size of 24 x 24 vp. If this parameter is not set or is set to **undefined**, the radio button is not displayed.
 
 **Type:** OperateCheck
 
-**Since:** 20
+**Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -126,15 +126,15 @@ Sets the radio.
 subIcon?: OperateIcon
 ```
 
-Sets the subIcon.
+Second icon with a size of 24 x 24 vp. If this parameter is not set or is set to **undefined**, the icon is not displayed.
 
 **Type:** OperateIcon
 
-**Since:** 20
+**Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -144,15 +144,15 @@ Sets the subIcon.
 switch?: OperateCheck
 ```
 
-Sets the switch.
+Switch. If this parameter is not set or is set to **undefined**, the switch is not displayed.
 
 **Type:** OperateCheck
 
-**Since:** 20
+**Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -162,15 +162,15 @@ Sets the switch.
 symbolStyle?: SymbolGlyphModifier
 ```
 
-Sets the symbolStyle.
+Symbol icon with a size of 48 x 48 vp. If this parameter is not set or is set to **undefined**, the symbol icon is not displayed.
 
 **Type:** SymbolGlyphModifier
 
-**Since:** 20
+**Since:** 18
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** This API can be used in atomic services since API version 18.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -180,15 +180,15 @@ Sets the symbolStyle.
 text?: ResourceStr
 ```
 
-Sets the text.
+Text. If this parameter is not set or is set to **undefined**, the text is not displayed.
 
 **Type:** ResourceStr
 
-**Since:** 20
+**Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

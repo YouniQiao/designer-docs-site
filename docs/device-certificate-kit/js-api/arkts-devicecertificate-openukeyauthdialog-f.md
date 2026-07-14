@@ -12,11 +12,7 @@ import { certificateManagerDialog } from '@kit.DeviceCertificateKit';
 function openUkeyAuthDialog(context: common.Context, ukeyAuthRequest: UkeyAuthRequest): Promise<void>
 ```
 
-Opens the PIN authentication dialog box of the USB Key credential. On the displayed page, the user can enter the
-PIN to
-authorize the USB credential. After the call is successful, the USB key credential will be unlocked. The app can
-use the credential to perform operations such as signing and encryption. This API uses a promise to return the
-result.
+Opens the PIN authentication dialog box of the USB Key credential. On the displayed page, the user can enter the PIN to authorize the USB credential. After the call is successful, the USB key credential will be unlocked. The app can use the credential to perform operations such as signing and encryption. This API uses a promise to return the result.
 
 **Since:** 22
 

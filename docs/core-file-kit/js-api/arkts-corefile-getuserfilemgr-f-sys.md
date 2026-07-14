@@ -12,7 +12,7 @@ import { userFileManager } from '@kit.CoreFileKit';
 function getUserFileMgr(context: Context): UserFileManager
 ```
 
-Returns an instance of UserFileManager
+Obtains a **UserFileManager** instance. This instance can be used to access and modify user media data (such as audio and video assets, images, and documents).
 
 **Since:** 9
 
@@ -30,13 +30,13 @@ Returns an instance of UserFileManager
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| context | Context | Yes | Hap context information |
+| context | Context | Yes | Context of the ability instance. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| UserFileManager | Instance of UserFileManager |
+| UserFileManager | **UserFileManager** instance obtained. |
 
 **Example**
 

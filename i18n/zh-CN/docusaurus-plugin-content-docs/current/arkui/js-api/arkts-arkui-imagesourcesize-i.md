@@ -1,12 +1,6 @@
 # ImageSourceSize
 
-图片解码尺寸。
-
-> **说明：**
->
-> 为规范匿名对象的定义，API 18版本修改了此处的元素定义。其中，保留了历史匿名对象的起始版本信息，
-会出现外层元素@since版本号高于内层元素版本号
-的情况，但这不影响接口的使用。
+图片解码尺寸。 > **说明：** > > 为规范匿名对象的定义，API 18版本修改了此处的元素定义。其中，保留了历史匿名对象的起始版本信息， 会出现外层元素@since版本号高于内层元素版本号 的情况，但这不影响接口的使用。
 
 **起始版本：** 18
 
@@ -18,8 +12,7 @@
 height: number
 ```
 
-Set height.
-Anonymous Object Rectification.
+Set height. Anonymous Object Rectification.
 
 **类型：** number
 
@@ -37,9 +30,7 @@ Anonymous Object Rectification.
 width: number
 ```
 
-Set width.
-
-Anonymous Object Rectification.
+Set width. Anonymous Object Rectification.
 
 **类型：** number
 

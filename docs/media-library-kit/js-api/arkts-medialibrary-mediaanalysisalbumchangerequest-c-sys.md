@@ -1,6 +1,6 @@
 # MediaAnalysisAlbumChangeRequest (System API)
 
-Defines the class of media analysis album change request.
+Provides APIs for managing the analysis album change request.
 
 **Inheritance/Implementation:** MediaAnalysisAlbumChangeRequest extends [MediaAlbumChangeRequest](arkts-medialibrary-mediaalbumchangerequest-c.md)
 
@@ -22,7 +22,7 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 constructor(album: Album)
 ```
 
-The constructor to create a MediaAnalysisAlbumChangeRequest instance.
+Constructor.
 
 **Since:** 18
 
@@ -34,14 +34,14 @@ The constructor to create a MediaAnalysisAlbumChangeRequest instance.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| album | Album | Yes | Album |
+| album | Album | Yes | **Highlights** album. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 
 **Example**
 
@@ -79,7 +79,7 @@ static createAnalysisAlbumRequest(
     ): MediaAnalysisAlbumChangeRequest
 ```
 
-Creates a MediaAnalysisAlbumChangeRequest instance.
+Creates a change request for the **Analysis** album. > **NOTE** > > The album name must meet the following requirements: > > - The album name string length ranges from 1 to 255. > > - The album name cannot contain any of the following characters:.. \ / : * ? " ' ` < > | { } [ ]
 
 **Since:** 23
 
@@ -101,15 +101,15 @@ Creates a MediaAnalysisAlbumChangeRequest instance.
 
 | Type | Description |
 | --- | --- |
-| MediaAnalysisAlbumChangeRequest | - Returns a MediaAnalysisAlbumChangeRequest instance. |
+| MediaAnalysisAlbumChangeRequest | MediaAnalysisAlbumChangeRequest instance created. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application. |
-| [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) | The scenario parameter verification fails.<br>Possible causes: 1. The input parameter is not within the valid range. |
-| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.<br>Possible causes: 1. Database corrupted; 2.The file system is abnormal; 3. The IPC request timed out.@static |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
+| [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) | The scenario parameter verification fails.<br>Possible causes:<br>1. The input parameter is not within the valid range. |
+| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.<br>Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
 **Example**
 
@@ -136,7 +136,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
 setDefaultCoverUri(coverUri: string): void
 ```
 
-Sets the default analysis album cover.
+Sets the default cover image for the smart album.
 
 **Since:** 24
 
@@ -150,15 +150,15 @@ Sets the default analysis album cover.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| coverUri | string | Yes | URI of the file to be set as the default analysis album cover. |
+| coverUri | string | Yes | URI of the file to be set as the default cover image of the smart album. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application. |
-| [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) | The scenario parameter verification fails.<br>Possible causes: 1. The input parameter is not within the valid range. |
-| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.<br>Possible causes: 1. Database corrupted; 2.The file system is abnormal; 3. The IPC request timed out. |
+| [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) | The scenario parameter verification fails.<br>Possible causes:<br>1. The input parameter is not within the valid range. |
+| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.<br>Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
 **Example**
 
@@ -215,7 +215,7 @@ async function example(context: Context) {
 setOrderPosition(assets: Array<PhotoAsset>, position: Array<number>): void
 ```
 
-Set order positions of assets in the album
+Sets the sequence of assets in the **Analysis** album.
 
 **Since:** 18
 
@@ -238,8 +238,8 @@ Set order positions of assets in the album
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
-| 14000011 | Internal system error. It is recommended to retry and check the logs.<br>Possible causes: 1. Database corrupted; 2. The file system is abnormal; 3. The IPC request timed out. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
+| 14000011 | Internal system error. It is recommended to retry and check the logs.<br>Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
 **Example**
 
@@ -292,7 +292,7 @@ async function example(context: Context) {
 setRelationship(relationship: string): Promise<void>
 ```
 
-Set the relationship in the album with the phone owner
+Sets the relationships of a person in the portrait album. The supported relationship names include: | Unique ID | Description | | ---------- | ------- | | me | Me| | son | Son| | daughter | Daughter| | wife | Wife| | husband | Husband| | father | Father| | mother | Mother| | colleague | Colleague| | friend | Friend| | classmate | Classmate| | best_friend_female | Best female friend| | boyfriend | Boyfriend| | girlfriend | Girlfriend| | family | Family| | maternal_grandfather | Maternal grandfather| | maternal_grandmother | Maternal grandmother| | paternal_grandfather | Paternal grandfather| | paternal_grandmother | Paternal grandmother| | older_brother | Older brother| | older_sister | Older sister| | younger_brother | Younger brother| | younger_sister | Younger sister| | relative | Relative| | other | Other|
 
 **Since:** 21
 
@@ -306,13 +306,13 @@ Set the relationship in the album with the phone owner
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| relationship | string | Yes | The relationship with the phone owner |
+| relationship | string | Yes | Name of the relationship to set.<br>You can set it to an empty string to remove the current relationship setting. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Returns void |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -320,8 +320,8 @@ Set the relationship in the album with the phone owner
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) | The scenario parameter verification fails.<br>Possible causes: 1. The input parameter is not within the valid range. |
-| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.<br>Possible causes: 1. Database corrupted; 2. The file system is abnormal; 3. The IPC request timed out. |
+| [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) | The scenario parameter verification fails.<br>Possible causes:<br>1. The input parameter is not within the valid range. |
+| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.<br>Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
 **Example**
 

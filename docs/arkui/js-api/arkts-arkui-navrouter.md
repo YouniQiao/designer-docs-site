@@ -1,8 +1,6 @@
 # NavRouter
 
-The **NavRouter** component provides default processing logic for responding to clicks, eliminating the need for
-manual logic definition.
-
+The **NavRouter** component provides default processing logic for responding to clicks, eliminating the need for manual logic definition.
 
 ## NavRouter
 
@@ -28,8 +26,7 @@ Constructor.
 NavRouter(value: RouteInfo)
 ```
 
-Provides route information so that clicking the **NavRouter** component redirects the user to the specified
-navigation destination page.
+Provides route information so that clicking the **NavRouter** component redirects the user to the specified navigation destination page.
 
 **Since:** 10
 

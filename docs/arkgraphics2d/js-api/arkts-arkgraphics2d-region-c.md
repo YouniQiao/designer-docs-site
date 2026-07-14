@@ -1,15 +1,6 @@
 # Region
 
-Describes a region, which is used to describe the region where the shape can be drawn.
-
-> **NOTE**
->
-> - The initial APIs of this class are supported since API version 12.
->
-> - This module uses the physical pixel unit, px.
->
-> - This module operates under a single-threaded model. The caller needs to manage thread safety and context state
-> transitions.
+Describes a region, which is used to describe the region where the shape can be drawn. > **NOTE** > > - The initial APIs of this class are supported since API version 12. > > - This module uses the physical pixel unit, px. > > - This module operates under a single-threaded model. The caller needs to manage thread safety and context state > transitions.
 
 **Since:** 12
 
@@ -274,8 +265,7 @@ Translates a region.
 op(region: Region, regionOp: RegionOp): boolean
 ```
 
-Performs an operation on this region and another region, and stores the resulting region in this **Region**
-object.
+Performs an operation on this region and another region, and stores the resulting region in this **Region** object.
 
 **Since:** 12
 
@@ -335,8 +325,7 @@ Checks whether this region is the same as a single rectangle and contains the sp
 quickReject(left: number, top: number, right: number, bottom: number): boolean
 ```
 
-Checks whether a rectangle do not intersect with this region. Actually, this API determines whether the rectangle
-does not intersect with the bounding rectangle of the region, and therefore the result may not be accurate.
+Checks whether a rectangle do not intersect with this region. Actually, this API determines whether the rectangle does not intersect with the bounding rectangle of the region, and therefore the result may not be accurate.
 
 **Since:** 12
 
@@ -369,8 +358,7 @@ does not intersect with the bounding rectangle of the region, and therefore the 
 quickRejectRegion(region: Region): boolean
 ```
 
-Checks whether the existing region does not intersect with another region. Actually, the outer rectangles of the
-two regions are compared to determine whether they do not intersect. Therefore, there may be an error.
+Checks whether the existing region does not intersect with another region. Actually, the outer rectangles of the two regions are compared to determine whether they do not intersect. Therefore, there may be an error.
 
 **Since:** 20
 

@@ -12,8 +12,7 @@
 constructor()
 ```
 
-Constructs a two-dimensional transformation matrix object.
-The default value is a matrix whose attributes are all 0.
+Constructs a two-dimensional transformation matrix object. The default value is a matrix whose attributes are all 0.
 
 **Since:** 10
 
@@ -31,8 +30,7 @@ The default value is a matrix whose attributes are all 0.
 constructor(unit: LengthMetricsUnit)
 ```
 
-Constructs a two-dimensional transformation matrix object.
-The default value is a matrix whose attributes are all 0. The unit mode of the Matrix2D object can be configured.
+Constructs a two-dimensional transformation matrix object. The default value is a matrix whose attributes are all 0. The unit mode of the Matrix2D object can be configured.
 
 **Since:** 12
 
@@ -56,8 +54,7 @@ The default value is a matrix whose attributes are all 0. The unit mode of the M
 identity(): Matrix2D
 ```
 
-Transforms the current 2D matrix back to the identity matrix (i.e., without any rotational
-translation scaling effect)
+Transforms the current 2D matrix back to the identity matrix (i.e., without any rotational translation scaling effect)
 
 **Since:** 8
 
@@ -79,8 +76,7 @@ translation scaling effect)
 invert(): Matrix2D
 ```
 
-Transform the current 2D matrix into an inverse matrix (that is, the transformation effect
-is the opposite effect of the original)
+Transform the current 2D matrix into an inverse matrix (that is, the transformation effect is the opposite effect of the original)
 
 **Since:** 8
 
@@ -102,8 +98,7 @@ is the opposite effect of the original)
 multiply(other?: Matrix2D): Matrix2D
 ```
 
-The matrix is superimposed in right multiplication mode. When the input parameter is empty,
-the matrix is superimposed.
+The matrix is superimposed in right multiplication mode. When the input parameter is empty, the matrix is superimposed.
 
 **Since:** 8
 
@@ -252,8 +247,7 @@ Performs a left multiplication translation operation on this matrix.
 rotateX?: number
 ```
 
-Horizontal skew coefficient. The value range is not limited.<br>If the value is undefined, it is regarded as an
-invalid value. If the value is NaN or Infinity, the Matrix2D will be abnormal.
+Horizontal skew coefficient. The value range is not limited.<br>If the value is undefined, it is regarded as an invalid value. If the value is NaN or Infinity, the Matrix2D will be abnormal.
 
 **Type:** number
 
@@ -271,8 +265,7 @@ invalid value. If the value is NaN or Infinity, the Matrix2D will be abnormal.
 rotateY?: number
 ```
 
-Vertical skew coefficient. The value range is not limited.<br>If the value is undefined, it is regarded as an
-invalid value. If the value is NaN or Infinity, the Matrix2D will be abnormal.
+Vertical skew coefficient. The value range is not limited.<br>If the value is undefined, it is regarded as an invalid value. If the value is NaN or Infinity, the Matrix2D will be abnormal.
 
 **Type:** number
 
@@ -290,8 +283,7 @@ invalid value. If the value is NaN or Infinity, the Matrix2D will be abnormal.
 scaleX?: number
 ```
 
-Horizontal scaling coefficient. The value range is not limited.<br>If the value is undefined, it is regarded as an
-invalid value. If the value is NaN or Infinity, the Matrix2D will be abnormal.
+Horizontal scaling coefficient. The value range is not limited.<br>If the value is undefined, it is regarded as an invalid value. If the value is NaN or Infinity, the Matrix2D will be abnormal.
 
 **Type:** number
 
@@ -309,8 +301,7 @@ invalid value. If the value is NaN or Infinity, the Matrix2D will be abnormal.
 scaleY?: number
 ```
 
-Vertical scaling coefficient. The value range is not limited.<br>If the value is undefined, it is regarded as an
-invalid value. If the value is NaN or Infinity, the Matrix2D will be abnormal.
+Vertical scaling coefficient. The value range is not limited.<br>If the value is undefined, it is regarded as an invalid value. If the value is NaN or Infinity, the Matrix2D will be abnormal.
 
 **Type:** number
 
@@ -328,9 +319,7 @@ invalid value. If the value is NaN or Infinity, the Matrix2D will be abnormal.
 translateX?: number
 ```
 
-Horizontal translation distance. The value range is unlimited. <br>The abnormal value undefined is processed as an
-invalid value. NaN and Infinity will cause Matrix2D exceptions. After the setting, the drawn content is not
-displayed. <br>Default unit: vp.
+Horizontal translation distance. The value range is unlimited. <br>The abnormal value undefined is processed as an invalid value. NaN and Infinity will cause Matrix2D exceptions. After the setting, the drawn content is not displayed. <br>Default unit: vp.
 
 **Type:** number
 
@@ -348,9 +337,7 @@ displayed. <br>Default unit: vp.
 translateY?: number
 ```
 
-Vertical translation distance. The value range is unlimited. <br>The abnormal value undefined is processed as an
-invalid value. NaN and Infinity will cause Matrix2D exceptions. After the setting, the drawn content is not
-displayed. <br>Default unit: vp.
+Vertical translation distance. The value range is unlimited. <br>The abnormal value undefined is processed as an invalid value. NaN and Infinity will cause Matrix2D exceptions. After the setting, the drawn content is not displayed. <br>Default unit: vp.
 
 **Type:** number
 

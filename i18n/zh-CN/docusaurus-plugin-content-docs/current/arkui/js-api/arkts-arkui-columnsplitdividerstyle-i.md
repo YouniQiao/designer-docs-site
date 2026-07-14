@@ -1,12 +1,6 @@
 # ColumnSplitDividerStyle
 
-设置子组件与上下分割线的距离。
-
-> **说明：**
->
-> 与[RowSplit](arkts-arkui-rowsplit.md)相同，ColumnSplit的分割线可调整上下两侧子组件的高度，子组件的高度调整范围受其最大最小高度限制。
->
-> 支持[clip](arkts-arkui-commonmethod-c.md#clip-1)、[margin](arkts-arkui-commonmethod-c.md#margin-1)等通用属性，未设置clip属性时，其默认值为true。
+设置子组件与上下分割线的距离。 > **说明：** > > 与[RowSplit](arkts-arkui-rowsplit.md)相同，ColumnSplit的分割线可调整上下两侧子组件的高度，子组件的高度调整范围受其最大最小高度限制。 > > 支持[clip](arkts-arkui-commonmethod-c.md#clip-1)、[margin](arkts-arkui-commonmethod-c.md#margin-1)等通用属性，未设置clip属性时，其默认值为true。
 
 **起始版本：** 10
 
@@ -18,13 +12,7 @@
 endMargin?: Dimension
 ```
 
-子组件与其下方分割线的距离。
-
-默认值：0vp
-
-非法值：按默认值处理，此时
-[getInspectorByKey()](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-component-id.md#getinspectorbykey9)
-接口获取到的属性值为undefined。
+子组件与其下方分割线的距离。 默认值：0vp 非法值：按默认值处理，此时 [getInspectorByKey()](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-component-id.md#getinspectorbykey9) 接口获取到的属性值为undefined。
 
 **类型：** Dimension
 
@@ -44,13 +32,7 @@ endMargin?: Dimension
 startMargin?: Dimension
 ```
 
-子组件与其上方分割线的距离。
-
-默认值：0vp
-
-非法值：按默认值处理，此时
-[getInspectorByKey()](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-component-id.md#getinspectorbykey9)
-接口获取到的属性值为undefined。
+子组件与其上方分割线的距离。 默认值：0vp 非法值：按默认值处理，此时 [getInspectorByKey()](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-component-id.md#getinspectorbykey9) 接口获取到的属性值为undefined。
 
 **类型：** Dimension
 

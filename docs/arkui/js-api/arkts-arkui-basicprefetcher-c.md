@@ -1,11 +1,6 @@
 # BasicPrefetcher
 
-**BasicPrefetcher** is a fundamental implementation of **IPrefetcher**. It offers an intelligent data prefetching
-algorithm that decides the data items to prefetch based on real-time changes in the visible area on the screen and
-variations in the prefetch duration. It can also determine the prefetch requests to be canceled based on the user's
-scrolling actions.
-
-**BasicPrefetcher** objects do not support JSON serialization.
+**BasicPrefetcher** is a fundamental implementation of **IPrefetcher**. It offers an intelligent data prefetching algorithm that decides the data items to prefetch based on real-time changes in the visible area on the screen and variations in the prefetch duration. It can also determine the prefetch requests to be canceled based on the user's scrolling actions. **BasicPrefetcher** objects do not support JSON serialization.
 
 **Inheritance/Implementation:** BasicPrefetcher implements [IPrefetcher](arkts-arkui-iprefetcher-i.md)
 
@@ -69,8 +64,7 @@ Sets the prefetching-capable data source to bind to the **Prefetcher**.
 visibleAreaChanged(minVisible: number, maxVisible: number): void
 ```
 
-Called when the boundaries of the visible area change. This API works with the **List**, **Grid**, **WaterFlow**,
-and **Swiper** components.
+Called when the boundaries of the visible area change. This API works with the **List**, **Grid**, **WaterFlow**, and **Swiper** components.
 
 **Since:** 12
 

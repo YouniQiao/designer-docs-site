@@ -1,7 +1,6 @@
 # PartnerAgentExtensionAbility
 
-Class for the PartnerAgentExtensionAbility.
-Applications can use this ability to discover devices.
+Class for the PartnerAgentExtensionAbility. Applications can use this ability to discover devices.
 
 **Inheritance/Implementation:** PartnerAgentExtensionAbility extends [ExtensionAbility](../../apis-ability-kit/arkts-apis/arkts-ability-extensionability-c.md)
 
@@ -21,8 +20,7 @@ import { PartnerAgentExtensionAbility } from '@kit.ConnectivityKit';
 onDestroyWithReason(reason: PartnerAgentExtensionAbilityDestroyReason): void
 ```
 
-Called when the PartnerAgentExtensionAbility is to be destroyed.
-Applications can clean up resources in this callback function.
+Called when the PartnerAgentExtensionAbility is to be destroyed. Applications can clean up resources in this callback function.
 
 **Since:** 23
 

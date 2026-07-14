@@ -6,8 +6,7 @@
 function removeStorageFromCacheSync(path: string): void
 ```
 
-Removes the singleton **Storage** instance of a file from the cache. The removed instance cannot be used for data
-operations. Otherwise, data inconsistency will occur.
+Removes the singleton **Storage** instance of a file from the cache. The removed instance cannot be used for data operations. Otherwise, data inconsistency will occur.
 
 **Since:** 6
 

@@ -1,7 +1,6 @@
 # AudioPersonalizedSpatialEnabledChangeForAnyDevice (System API)
 
-This interface is used to notify the listener of personalized spatialization enabled
-state change of any device.
+This interface is used to notify the listener of personalized spatialization enabled state change of any device.
 
 **Since:** 26.0.0
 

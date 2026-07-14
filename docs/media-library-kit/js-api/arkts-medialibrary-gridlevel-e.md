@@ -12,7 +12,7 @@ Enumeration type of grid level.
 SPACIOUS = 0
 ```
 
-SPACIOUS indicates that a grid layout with one fewer column than the standard grid level.
+Spacious grid level. This level is the number of standard grid columns minus 1.
 
 **Since:** 23
 
@@ -28,7 +28,7 @@ SPACIOUS indicates that a grid layout with one fewer column than the standard gr
 STANDARD = 1
 ```
 
-STANDARD indicates that the standard grid level across different forms or states.
+Standard grid level. The number of standard grid columns varies with the device size. If no number of standard grid columns is configured, the system uses the default number of columns.
 
 **Since:** 23
 
@@ -44,7 +44,7 @@ STANDARD indicates that the standard grid level across different forms or states
 COMPACT = 2
 ```
 
-COMPACT indicates that a grid layout with one more column than the standard grid level.
+Compact grid level. This level is the number of standard grid columns plus 1.
 
 **Since:** 23
 

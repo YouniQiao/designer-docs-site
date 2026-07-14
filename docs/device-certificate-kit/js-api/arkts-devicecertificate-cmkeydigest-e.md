@@ -12,8 +12,7 @@ Enumerates the digest algorithms that can be used for signing and signature veri
 CM_DIGEST_NONE = 0
 ```
 
-When this option is selected, it indicates that the application performs a digest calculation on the data to be
-signed or verified.
+When this option is selected, it indicates that the application performs a digest calculation on the data to be signed or verified.
 
 **Since:** 11
 

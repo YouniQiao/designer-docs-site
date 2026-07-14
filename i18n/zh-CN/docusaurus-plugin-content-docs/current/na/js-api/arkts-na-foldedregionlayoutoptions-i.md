@@ -12,9 +12,7 @@
 verticalSplitRatio?: number
 ```
 
-主要区域与次要区域之间的高度比例。
-
-默认值：[PresetSplitRatio](arkts-na-presetsplitratio-e.md).LAYOUT_1V1
+主要区域与次要区域之间的高度比例。 默认值：[PresetSplitRatio](arkts-na-presetsplitratio-e.md).LAYOUT_1V1
 
 **类型：** number
 

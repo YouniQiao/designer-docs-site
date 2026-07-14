@@ -1,8 +1,6 @@
 # GenericsTask
 
-表示泛型任务。**GenericsTask**继承自
-[Task](arkts-arkts-execute-f.md#execute-1)。
-相比创建Task，创建GenericsTask可以在编译阶段校验并发函数的传参和返回值类型。其余行为与Task相同。
+表示泛型任务。**GenericsTask**继承自 [Task](arkts-arkts-execute-f.md#execute-1)。 相比创建Task，创建GenericsTask可以在编译阶段校验并发函数的传参和返回值类型。其余行为与Task相同。
 
 **继承/实现关系：** GenericsTask extends [Task](arkts-arkts-task-c.md)
 

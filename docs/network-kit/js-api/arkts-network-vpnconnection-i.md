@@ -280,8 +280,7 @@ export default class MyVpnExtAbility extends VpnExtensionAbility {
 protect(socketFd: number): Promise<void>
 ```
 
-Protect a socket from VPN connections. After protecting, data sent through this socket will go directly to the
-underlying network so its traffic will not be forwarded through the VPN.
+Protect a socket from VPN connections. After protecting, data sent through this socket will go directly to the underlying network so its traffic will not be forwarded through the VPN.
 
 **Since:** 11
 
@@ -348,9 +347,7 @@ export default class MyVpnExtAbility extends VpnExtensionAbility {
 protectProcessNet(): Promise<void>
 ```
 
-Protect all socket of the VPN process. After executing this function,
-all sockets subsequently created by the current process will be protected,
-while previously created sockets will not be protected.
+Protect all socket of the VPN process. After executing this function, all sockets subsequently created by the current process will be protected, while previously created sockets will not be protected.
 
 **Since:** 22
 

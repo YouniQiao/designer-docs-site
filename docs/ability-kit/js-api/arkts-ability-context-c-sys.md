@@ -1,8 +1,6 @@
 # Context
 
-Context is the context base class of the stage model. It is used to access application-specific resources and perform
-callbacks for application-level operations.
-docroot://
+Context is the context base class of the stage model. It is used to access application-specific resources and perform callbacks for application-level operations. docroot://
 
 **Inheritance/Implementation:** Context extends [BaseContext](arkts-ability-basecontext-c.md)
 
@@ -16,17 +14,7 @@ docroot://
 createBundleContext(bundleName: string): Context
 ```
 
-Creates the context based on the bundle name.
-
-> **NOTE**
->
-> If there are multiple modules in the stage model, resource ID conflicts may occur. You are advised to use
-> [application.createModuleContext](arkts-ability-createmodulecontext-f-sys.md#createmodulecontext-2)
-> instead.
->
-> This API has been supported since API version 9 and deprecated since API version 12. You are advised to use
-> [application.createBundleContext](arkts-ability-createbundlecontext-f-sys.md#createbundlecontext-1)
-> instead.
+Creates the context based on the bundle name. > **NOTE** > > If there are multiple modules in the stage model, resource ID conflicts may occur. You are advised to use > [application.createModuleContext](arkts-ability-createmodulecontext-f-sys.md#createmodulecontext-2) > instead. > > This API has been supported since API version 9 and deprecated since API version 12. You are advised to use > [application.createBundleContext](arkts-ability-createbundlecontext-f-sys.md#createbundlecontext-1) > instead.
 
 **Since:** 9
 
@@ -68,13 +56,7 @@ Creates the context based on the bundle name.
 createModuleContext(bundleName: string, moduleName: string): Context
 ```
 
-Creates the context based on the bundle name and module name.
-
-> **NOTE**
->
-> This API has been supported since API version 9 and deprecated since API version 12. You are advised to use
-> [application.createModuleContext](arkts-ability-createmodulecontext-f-sys.md#createmodulecontext-2)
-> instead.
+Creates the context based on the bundle name and module name. > **NOTE** > > This API has been supported since API version 9 and deprecated since API version 12. You are advised to use > [application.createModuleContext](arkts-ability-createmodulecontext-f-sys.md#createmodulecontext-2) > instead.
 
 **Since:** 9
 
@@ -152,9 +134,7 @@ Creates a resource management object for a module.
 createSystemHspModuleResourceManager(bundleName: string, moduleName: string): resmgr.ResourceManager
 ```
 
-Creates a
-[resource manager](../../apis-localization-kit/arkts-apis/arkts-localization-getresourcemanager-f.md#getresourcemanager-1)
-for an OEM-preset [system-level HSP](../../../../quick-start/application-package-glossary.md#system-level-hsp).
+Creates a [resource manager](../../apis-localization-kit/arkts-apis/arkts-localization-getresourcemanager-f.md#getresourcemanager-1) for an OEM-preset [system-level HSP](../../../../quick-start/application-package-glossary.md#system-level-hsp).
 
 **Since:** 12
 

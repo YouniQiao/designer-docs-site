@@ -54,9 +54,7 @@ A finger moves on the screen in pressed state.
 Cancel
 ```
 
-A touch event is canceled. Examples: 1. touching the home button to return to the home screen while keeping a
-finger on the screen; 2. folding a foldable phone to switch to the external screen while keeping a finger on the
-screen.
+A touch event is canceled. Examples: 1. touching the home button to return to the home screen while keeping a finger on the screen; 2. folding a foldable phone to switch to the external screen while keeping a finger on the screen.
 
 **Since:** 7
 

@@ -22,8 +22,7 @@ import { bluetoothManager } from '@kit.ConnectivityKit';
 getConnectionDevices(): Array<string>
 ```
 
-Obtains the connected devices list of profile.
-On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
+Obtains the connected devices list of profile. On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
 
 **Since:** 9
 
@@ -73,8 +72,7 @@ try {
 getDeviceState(device: string): ProfileConnectionState
 ```
 
-Obtains the profile state of device.
-On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
+Obtains the profile state of device. On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
 
 **Since:** 9
 

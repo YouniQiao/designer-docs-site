@@ -12,16 +12,7 @@ import { bundleManager } from '@kit.AbilityKit';
 function getProfileByAbility(moduleName: string, abilityName: string, metadataName: string, callback: AsyncCallback<Array<string>>): void
 ```
 
-Obtains the JSON string array of the current application's configuration file based on the given module name,
-ability name, and metadata name (name configured under **metadata** in
-[abilities](../../../../quick-start/module-configuration-file.md#abilities) of the **module.json5** file). This API
-uses an asynchronous callback to return the result.
-
-> NOTE
->
-> If the profile uses the resource reference format, the return value retains this format (for example,
-> **$string:res_id**). You can obtain the referenced resources through related APIs of the
-> [resource manager module](../../apis-localization-kit/arkts-apis/arkts-resourcemanager.md).
+Obtains the JSON string array of the current application's configuration file based on the given module name, ability name, and metadata name (name configured under **metadata** in [abilities](../../../../quick-start/module-configuration-file.md#abilities) of the **module.json5** file). This API uses an asynchronous callback to return the result. > NOTE > > If the profile uses the resource reference format, the return value retains this format (for example, > **$string:res_id**). You can obtain the referenced resources through related APIs of the > [resource manager module](../../apis-localization-kit/arkts-apis/arkts-resourcemanager.md).
 
 **Since:** 9
 
@@ -81,16 +72,7 @@ try {
 function getProfileByAbility(moduleName: string, abilityName: string, metadataName?: string): Promise<Array<string>>
 ```
 
-Obtains the JSON string array of the current application's configuration file based on the given module name,
-ability name, and metadata name (name configured under **metadata** in
-[abilities](../../../../quick-start/module-configuration-file.md#abilities) of the **module.json5** file). This API
-uses a promise to return the result.
-
-> NOTE
->
-> If the profile uses the resource reference format, the return value retains this format (for example,
-> **$string:res_id**). You can obtain the referenced resources through related APIs of the
-> [resource manager module](../../apis-localization-kit/arkts-apis/arkts-resourcemanager.md).
+Obtains the JSON string array of the current application's configuration file based on the given module name, ability name, and metadata name (name configured under **metadata** in [abilities](../../../../quick-start/module-configuration-file.md#abilities) of the **module.json5** file). This API uses a promise to return the result. > NOTE > > If the profile uses the resource reference format, the return value retains this format (for example, > **$string:res_id**). You can obtain the referenced resources through related APIs of the > [resource manager module](../../apis-localization-kit/arkts-apis/arkts-resourcemanager.md).
 
 **Since:** 9
 

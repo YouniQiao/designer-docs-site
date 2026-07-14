@@ -14,9 +14,7 @@
 distortionMode?: DistortionMode
 ```
 
-设置对话框的形变动画模式。
-
-默认值：DistortionMode.DISTORTION_AUTO
+设置对话框的形变动画模式。 默认值：DistortionMode.DISTORTION_AUTO
 
 **类型：** DistortionMode
 
@@ -36,9 +34,7 @@ distortionMode?: DistortionMode
 edgeLightMode?: EdgeLightMode
 ```
 
-设置对话框的边缘光动画模式。
-
-默认值：EdgeLightMode.EDGELIGHT_AUTO
+设置对话框的边缘光动画模式。 默认值：EdgeLightMode.EDGELIGHT_AUTO
 
 **类型：** EdgeLightMode
 

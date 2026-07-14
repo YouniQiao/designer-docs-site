@@ -18,8 +18,7 @@ import { BundleVersion } from '@kit.CoreFileKit';
 onBackup(): void
 ```
 
-Callback to be called when the backup procedure is started.
-Developer could override this method to build files to be backup.
+Callback to be called when the backup procedure is started. Developer could override this method to build files to be backup.
 
 **Since:** 10
 
@@ -44,8 +43,7 @@ class BackupExt extends BackupExtensionAbility {
 onBackupEx(backupInfo: string): string | Promise<string>
 ```
 
-Callback to be called when the backup procedure is started.
-Developer could override this method to restore.
+Callback to be called when the backup procedure is started. Developer could override this method to restore.
 
 **Since:** 12
 
@@ -136,8 +134,7 @@ class BackupExt extends BackupExtensionAbility {
 onProcess(): string
 ```
 
-Callback to be called when getting backup/restore process info.
-Developer could override this method to provide the backup/restore process info.
+Callback to be called when getting backup/restore process info. Developer could override this method to provide the backup/restore process info.
 
 **Since:** 12
 
@@ -234,8 +231,7 @@ function appJob(progressInfo: MigrateProgressInfo, args: number) : string {
 onRelease(scenario: number): Promise<void>
 ```
 
-Callback to be called before extension ability exits.
-Developer could override this method to clean abnormal data.
+Callback to be called before extension ability exits. Developer could override this method to clean abnormal data.
 
 **Since:** 20
 
@@ -295,8 +291,7 @@ class BackupExt extends BackupExtensionAbility {
 onRestore(bundleVersion: BundleVersion): void
 ```
 
-Callback to be called when the restore procedure is started.
-Developer could override this method to restore from copies for various bundle versions.
+Callback to be called when the restore procedure is started. Developer could override this method to restore from copies for various bundle versions.
 
 **Since:** 10
 
@@ -329,8 +324,7 @@ class BackupExt extends BackupExtensionAbility {
 onRestoreEx(bundleVersion: BundleVersion, restoreInfo: string): string | Promise<string>
 ```
 
-Callback to be called when the restore procedure is started.
-Developer could override this method to restore.
+Callback to be called when the restore procedure is started. Developer could override this method to restore.
 
 **Since:** 12
 

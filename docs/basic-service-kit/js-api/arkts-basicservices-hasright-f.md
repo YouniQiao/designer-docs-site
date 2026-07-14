@@ -12,9 +12,7 @@ import { usbManager } from '@kit.BasicServicesKit';
 function hasRight(deviceName: string): boolean
 ```
 
-Checks whether the application has the permission to access the device.
-Checks whether the user, for example, the application or system, has the device access permissions. The value **
-true** is returned if the user has the device access permissions; the value **false** is returned otherwise.
+Checks whether the application has the permission to access the device. Checks whether the user, for example, the application or system, has the device access permissions. The value ** true** is returned if the user has the device access permissions; the value **false** is returned otherwise.
 
 **Since:** 9
 

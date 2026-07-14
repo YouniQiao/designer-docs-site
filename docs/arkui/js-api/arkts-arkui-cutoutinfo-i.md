@@ -18,8 +18,7 @@ import { display } from '@kit.ArkUI';
 readonly boundingRects: Array<Rect>
 ```
 
-Unusable areas (bounding rectangles) designed for punch holes and notches. If there are no punch holes or notches
-, an empty array is returned.
+Unusable areas (bounding rectangles) designed for punch holes and notches. If there are no punch holes or notches , an empty array is returned.
 
 **Type:** Array<Rect>
 

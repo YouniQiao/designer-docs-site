@@ -12,15 +12,7 @@ import { backgroundProcessManager } from '@kit.BackgroundTasksKit';
 function setPowerSaveMode(pid: number, powerSaveMode: PowerSaveMode): Promise<void>
 ```
 
-Sets the power saving mode for a process. This API uses a promise to return the result.
-
-You can set to enter the power saving mode when:
-
-- The application is not focused, and there are no audio operations or UI updates.
-- The application cannot obtain the power lock through the system framework.
-- The application needs to perform time-consuming computing tasks, such as compression, decompression, and
-compilation, which are significantly restricted by CPU resources. (In this case, the power saving mode will be
-enabled forcibly.)
+Sets the power saving mode for a process. This API uses a promise to return the result. You can set to enter the power saving mode when: - The application is not focused, and there are no audio operations or UI updates. - The application cannot obtain the power lock through the system framework. - The application needs to perform time-consuming computing tasks, such as compression, decompression, and compilation, which are significantly restricted by CPU resources. (In this case, the power saving mode will be enabled forcibly.)
 
 **Since:** 20
 

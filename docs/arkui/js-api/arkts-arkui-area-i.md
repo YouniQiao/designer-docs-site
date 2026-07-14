@@ -30,9 +30,7 @@ Position of the top-left corner of the target element in the current window coor
 height: Length
 ```
 
-Height of the target element.
-
-Unit: vp
+Height of the target element. Unit: vp
 
 **Type:** Length
 
@@ -50,8 +48,7 @@ Unit: vp
 position: Position
 ```
 
-Position of the top-left corner of the target element in the
-[component coordinate system](../../../../ui/arkui-glossary.md#component-coordinate-system) of the parent element.
+Position of the top-left corner of the target element in the [component coordinate system](../../../../ui/arkui-glossary.md#component-coordinate-system) of the parent element.
 
 **Type:** Position
 
@@ -69,9 +66,7 @@ Position of the top-left corner of the target element in the
 width: Length
 ```
 
-Width of the target element.
-
-Unit: vp
+Width of the target element. Unit: vp
 
 **Type:** Length
 

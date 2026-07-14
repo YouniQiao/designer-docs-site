@@ -1,12 +1,6 @@
 # QRCode
 
-The **QRCode** component is used to display a QR code.
-
-> **NOTE**
-
-> The pixel count of the **QRCode** component is subject to the content. If the component size is not large enough,
-> the content may fail to be displayed. In this case, you need to resize the component.
-
+The **QRCode** component is used to display a QR code. > **NOTE** > The pixel count of the **QRCode** component is subject to the content. If the component size is not large enough, > the content may fail to be displayed. In this case, you need to resize the component.
 
 ## QRCode
 

@@ -22,12 +22,7 @@ import { userAuth } from '@kit.UserAuthenticationKit';
 cancel: () => void
 ```
 
-Cancels this authentication.
-
-> **NOTE**
->
-> Use the [AuthInstance](arkts-userauthentication-authinstance-i.md) instance obtained to call this API. The
-> [AuthInstance](arkts-userauthentication-authinstance-i.md) instance must be the instance being authenticated.
+Cancels this authentication. > **NOTE** > > Use the [AuthInstance](arkts-userauthentication-authinstance-i.md) instance obtained to call this API. The > [AuthInstance](arkts-userauthentication-authinstance-i.md) instance must be the instance being authenticated.
 
 **Type:** () => void
 
@@ -47,16 +42,7 @@ Cancels this authentication.
 off: (name: AuthEventKey) => void
 ```
 
-Unsubscribes from the user authentication events of the specified type.
-
-- **name**: indicates the authentication event type. The value **result** means to unsubscribe from the
-authentication result, and the value **tip** means to unsubscribe from the authentication tip information. For
-details, see [AuthEventKey](arkts-userauthentication-autheventkey-t.md).
-
-> **NOTE**
->
-> The [AuthInstance](arkts-userauthentication-authinstance-i.md) instance used to invoke this API must be the one used to
-> subscribe to the event.
+Unsubscribes from the user authentication events of the specified type. - **name**: indicates the authentication event type. The value **result** means to unsubscribe from the authentication result, and the value **tip** means to unsubscribe from the authentication tip information. For details, see [AuthEventKey](arkts-userauthentication-autheventkey-t.md). > **NOTE** > > The [AuthInstance](arkts-userauthentication-authinstance-i.md) instance used to invoke this API must be the one used to > subscribe to the event.
 
 **Type:** (name: AuthEventKey) => void
 
@@ -74,17 +60,7 @@ details, see [AuthEventKey](arkts-userauthentication-autheventkey-t.md).
 on: (name: AuthEventKey, callback: AuthEvent) => void
 ```
 
-Subscribes to the user authentication events of the specified type.
-
-- **name**: indicates the authentication event type. The value **result** means that the callback returns the
-authentication result, and the value **tip** means that the callback returns the authentication tip information.
-For details, see [AuthEventKey](arkts-userauthentication-autheventkey-t.md).
-- **callback**: callback used to return the authentication result or tip information. For details, see
-[AuthEvent](arkts-userauthentication-authevent-i.md).
-
-> **NOTE**
->
-> Use the [AuthInstance](arkts-userauthentication-authinstance-i.md) instance obtained to call this API.
+Subscribes to the user authentication events of the specified type. - **name**: indicates the authentication event type. The value **result** means that the callback returns the authentication result, and the value **tip** means that the callback returns the authentication tip information. For details, see [AuthEventKey](arkts-userauthentication-autheventkey-t.md). - **callback**: callback used to return the authentication result or tip information. For details, see [AuthEvent](arkts-userauthentication-authevent-i.md). > **NOTE** > > Use the [AuthInstance](arkts-userauthentication-authinstance-i.md) instance obtained to call this API.
 
 **Type:** (name: AuthEventKey, callback: AuthEvent) => void
 
@@ -102,11 +78,7 @@ For details, see [AuthEventKey](arkts-userauthentication-autheventkey-t.md).
 start: () => void
 ```
 
-Starts authentication.
-
-> **NOTE**
->
-> Use the [AuthInstance](arkts-userauthentication-authinstance-i.md) instance obtained to call this API.
+Starts authentication. > **NOTE** > > Use the [AuthInstance](arkts-userauthentication-authinstance-i.md) instance obtained to call this API.
 
 **Type:** () => void
 

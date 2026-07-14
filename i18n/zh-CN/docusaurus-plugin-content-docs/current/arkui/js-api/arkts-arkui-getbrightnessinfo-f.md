@@ -6,8 +6,7 @@
 function getBrightnessInfo(displayId: number): BrightnessInfo
 ```
 
-获取指定displayId对应屏幕的亮度信息。如果屏幕不支持HDR，返回的[BrightnessInfo](arkts-arkui-brightnessinfo-i.md)对象中的currentHeadroom和maxHeadroom
-为默认值。虚拟屏的BrightnessInfo对象中sdrNits为默认值。
+获取指定displayId对应屏幕的亮度信息。如果屏幕不支持HDR，返回的[BrightnessInfo](arkts-arkui-brightnessinfo-i.md)对象中的currentHeadroom和maxHeadroom 为默认值。虚拟屏的BrightnessInfo对象中sdrNits为默认值。
 
 **起始版本：** 22
 

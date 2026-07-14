@@ -20,16 +20,7 @@ import { camera } from '@kit.CameraKit';
 enableBandwidthCompression(enabled: boolean): void
 ```
 
-Enables preview bandwidth compression.
-Before enabling this feature, you can call
-[isBandwidthCompressionSupported](arkts-camera-previewoutput-i.md#isbandwidthcompressionsupported-1) to check whether
-the device supports preview bandwidth compression.
-
-> **NOTE**
->
-> This function must be called prior to
-> [Session.commitConfig](arkts-camera-session-i.md#commitconfig-1).
-> Otherwise, the preview output stream format will be affected.
+Enables preview bandwidth compression. Before enabling this feature, you can call [isBandwidthCompressionSupported](arkts-camera-previewoutput-i.md#isbandwidthcompressionsupported-1) to check whether the device supports preview bandwidth compression. > **NOTE** > > This function must be called prior to > [Session.commitConfig](arkts-camera-session-i.md#commitconfig-1). > Otherwise, the preview output stream format will be affected.
 
 **Since:** 23
 
@@ -57,9 +48,7 @@ the device supports preview bandwidth compression.
 getActiveFrameRate(): FrameRateRange
 ```
 
-Obtains the configured frame rate range.
-This API is valid only after [setFrameRate](arkts-camera-previewoutput-i.md#setframerate-1) is called to set a frame
-rate range for preview streams.
+Obtains the configured frame rate range. This API is valid only after [setFrameRate](arkts-camera-previewoutput-i.md#setframerate-1) is called to set a frame rate range for preview streams.
 
 **Since:** 12
 
@@ -105,15 +94,7 @@ Obtains the profile that takes effect currently.
 getPreviewRotation(displayRotation?: number): ImageRotation
 ```
 
-Obtains the preview rotation angle.
-
-- Device's natural orientation: the default orientation for using a device. For example, the default orientation
-of the bar-type phone is in portrait mode, with the charging port facing downward.
-- Camera lens angle: equivalent to the angle at which the camera is rotated clockwise to match the device's
-natural orientation. For example, the rear camera sensor of a bar-type phone is installed in landscape mode.
-Therefore, it needs to be rotated by 90 degrees clockwise to match the device's natural orientation.
-- [Screen rotation](https://developer.huawei.com/consumer/en/doc/best-practices/bpta-multi-device-window-direction#section15598121101615)
-: indicates the clockwise rotation angle of the device screen.
+Obtains the preview rotation angle. - Device's natural orientation: the default orientation for using a device. For example, the default orientation of the bar-type phone is in portrait mode, with the charging port facing downward. - Camera lens angle: equivalent to the angle at which the camera is rotated clockwise to match the device's natural orientation. For example, the rear camera sensor of a bar-type phone is installed in landscape mode. Therefore, it needs to be rotated by 90 degrees clockwise to match the device's natural orientation. - [Screen rotation](https://developer.huawei.com/consumer/en/doc/best-practices/bpta-multi-device-window-direction#section15598121101615) : indicates the clockwise rotation angle of the device screen.
 
 **Since:** 12
 
@@ -168,8 +149,7 @@ Obtains the supported frame rates.
 isBandwidthCompressionSupported(): boolean
 ```
 
-Checks whether preview bandwidth compression is supported. This involves reducing data volume through encoding to
-minimize bandwidth usage during transmission.
+Checks whether preview bandwidth compression is supported. This involves reducing data volume through encoding to minimize bandwidth usage during transmission.
 
 **Since:** 23
 
@@ -274,11 +254,7 @@ Unsubscribes from PreviewOutput error events.
 on(type: 'frameStart', callback: AsyncCallback<void>): void
 ```
 
-Subscribes to preview frame start events. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
+Subscribes to preview frame start events. This API uses an asynchronous callback to return the result. > **NOTE** > > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
 
 **Since:** 10
 
@@ -299,11 +275,7 @@ Subscribes to preview frame start events. This API uses an asynchronous callback
 on(type: 'frameEnd', callback: AsyncCallback<void>): void
 ```
 
-Subscribes to preview frame end events. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
+Subscribes to preview frame end events. This API uses an asynchronous callback to return the result. > **NOTE** > > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
 
 **Since:** 10
 
@@ -324,11 +296,7 @@ Subscribes to preview frame end events. This API uses an asynchronous callback t
 on(type: 'error', callback: ErrorCallback): void
 ```
 
-Subscribes to PreviewOutput error events. This API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
+Subscribes to PreviewOutput error events. This API uses an asynchronous callback to return the result. > **NOTE** > > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
 
 **Since:** 10
 
@@ -349,13 +317,7 @@ Subscribes to PreviewOutput error events. This API uses an asynchronous callback
 setFrameRate(minFps: number, maxFps: number): void
 ```
 
-Sets a frame rate range for preview streams. The range must be within the supported frame rate range, which can
-be obtained by calling [getSupportedFrameRates](arkts-camera-previewoutput-i.md#getsupportedframerates-1).
-
-> **NOTE**
->
-> This API is valid only in [PhotoSession](arkts-camera-photosession-i.md) or
-> [VideoSession](arkts-camera-videosession-i.md) mode.
+Sets a frame rate range for preview streams. The range must be within the supported frame rate range, which can be obtained by calling [getSupportedFrameRates](arkts-camera-previewoutput-i.md#getsupportedframerates-1). > **NOTE** > > This API is valid only in [PhotoSession](arkts-camera-photosession-i.md) or > [VideoSession](arkts-camera-videosession-i.md) mode.
 
 **Since:** 12
 
@@ -383,9 +345,7 @@ be obtained by calling [getSupportedFrameRates](arkts-camera-previewoutput-i.md#
 setLogViewAssistEnable(enable: boolean): void
 ```
 
-Log video view assistance toggle. Before enabling this feature, you can call
-[isLogViewAssistSupported](arkts-camera-previewoutput-i.md#islogviewassistsupported-1) to check whether
-the device supports log video view assistance.
+Log video view assistance toggle. Before enabling this feature, you can call [isLogViewAssistSupported](arkts-camera-previewoutput-i.md#islogviewassistsupported-1) to check whether the device supports log video view assistance.
 
 **Since:** 26.0.0
 

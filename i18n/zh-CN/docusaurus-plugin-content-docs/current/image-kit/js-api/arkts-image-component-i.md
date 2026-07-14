@@ -54,8 +54,7 @@ readonly pixelStride: number
 readonly rowStride: number
 ```
 
-行距。单位：字节（Byte）。读取相机预览流数据时，需要按stride进行读取，使用详情请参考
-[相机预览花屏解决方案](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-deal-stride-solution)。
+行距。单位：字节（Byte）。读取相机预览流数据时，需要按stride进行读取，使用详情请参考 [相机预览花屏解决方案](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-deal-stride-solution)。
 
 **类型：** number
 

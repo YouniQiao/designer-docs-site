@@ -188,11 +188,7 @@ offPropertyWrite(callback?: Callback<PropertyWriteRequest>): void
 onConnectionStateChange(callback: Callback<ConnectionChangeState>): void
 ```
 
-订阅服务器连接状态更改事件。
-
-只有授予了ohos.permission.NEARLINK_ACCESS权限的应用程序才能访问此事件。
-如果应用被赋予了ohos.permission.GET_NEARLINK_PEER_MAC权限。
-回调返回真实设备地址，否则返回随机设备地址。
+订阅服务器连接状态更改事件。 只有授予了ohos.permission.NEARLINK_ACCESS权限的应用程序才能访问此事件。 如果应用被赋予了ohos.permission.GET_NEARLINK_PEER_MAC权限。 回调返回真实设备地址，否则返回随机设备地址。
 
 **起始版本：** 26.0.0
 
@@ -212,9 +208,7 @@ onConnectionStateChange(callback: Callback<ConnectionChangeState>): void
 onMtuChange(callback: Callback<number>): void
 ```
 
-订阅MTU变化事件。
-
-只有授予了ohos.permission.NEARLINK_ACCESS权限的应用程序才能访问此事件。
+订阅MTU变化事件。 只有授予了ohos.permission.NEARLINK_ACCESS权限的应用程序才能访问此事件。
 
 **起始版本：** 26.0.0
 
@@ -234,11 +228,7 @@ onMtuChange(callback: Callback<number>): void
 onPropertyRead(callback: Callback<PropertyReadRequest>): void
 ```
 
-从客户端订阅属性读取事件。
-
-只有授予了ohos.permission.NEARLINK_ACCESS权限的应用程序才能访问此事件。
-如果应用被赋予了ohos.permission.GET_NEARLINK_PEER_MAC权限。
-回调返回真实设备地址，否则返回随机设备地址。
+从客户端订阅属性读取事件。 只有授予了ohos.permission.NEARLINK_ACCESS权限的应用程序才能访问此事件。 如果应用被赋予了ohos.permission.GET_NEARLINK_PEER_MAC权限。 回调返回真实设备地址，否则返回随机设备地址。
 
 **起始版本：** 26.0.0
 
@@ -258,11 +248,7 @@ onPropertyRead(callback: Callback<PropertyReadRequest>): void
 onPropertyWrite(callback: Callback<PropertyWriteRequest>): void
 ```
 
-从客户端订阅属性写入事件。
-
-只有授予了ohos.permission.NEARLINK_ACCESS权限的应用程序才能访问此事件。
-如果应用被赋予了ohos.permission.GET_NEARLINK_PEER_MAC权限。
-回调返回真实设备地址，否则返回随机设备地址。
+从客户端订阅属性写入事件。 只有授予了ohos.permission.NEARLINK_ACCESS权限的应用程序才能访问此事件。 如果应用被赋予了ohos.permission.GET_NEARLINK_PEER_MAC权限。 回调返回真实设备地址，否则返回随机设备地址。
 
 **起始版本：** 26.0.0
 

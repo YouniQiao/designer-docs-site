@@ -12,8 +12,7 @@ Represents the callback invoked when the audio playback status on the web page c
 playing: boolean
 ```
 
-Audio playback status on the current page. The value **true** means that audio is being played, and **false** means
-the opposite.
+Audio playback status on the current page. The value **true** means that audio is being played, and **false** means the opposite.
 
 **Type:** boolean
 

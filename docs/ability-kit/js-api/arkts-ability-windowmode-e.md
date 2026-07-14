@@ -1,8 +1,6 @@
 # WindowMode
 
-Enumerates the window modes in which a UIAbility can be displayed at startup. It can be used in
-[startAbility](arkts-ability-uiabilitycontext-c.md#startability-3)
-.
+Enumerates the window modes in which a UIAbility can be displayed at startup. It can be used in [startAbility](arkts-ability-uiabilitycontext-c.md#startability-3) .
 
 **Since:** 12
 
@@ -28,8 +26,7 @@ Full-screen mode. It takes effect only on 2-in-1 devices and tablets.
 WINDOW_MODE_SPLIT_PRIMARY = 100
 ```
 
-Primary screen (left screen in the case of horizontal orientation) in split-screen mode. It is valid only in
-intra-app redirection scenarios. It takes effect only on foldable devices and tablets.
+Primary screen (left screen in the case of horizontal orientation) in split-screen mode. It is valid only in intra-app redirection scenarios. It takes effect only on foldable devices and tablets.
 
 **Since:** 12
 
@@ -43,8 +40,7 @@ intra-app redirection scenarios. It takes effect only on foldable devices and ta
 WINDOW_MODE_SPLIT_SECONDARY = 101
 ```
 
-Secondary screen (right screen in the case of horizontal orientation) in split-screen mode. It is valid only in
-intra-app redirection scenarios. It takes effect only on foldable devices and tablets.
+Secondary screen (right screen in the case of horizontal orientation) in split-screen mode. It is valid only in intra-app redirection scenarios. It takes effect only on foldable devices and tablets.
 
 **Since:** 12
 
@@ -58,8 +54,7 @@ intra-app redirection scenarios. It takes effect only on foldable devices and ta
 WINDOW_MODE_SPLIT = 105
 ```
 
-The ability is displayed in split-screen mode. It is valid only in intra-app redirection scenarios.
-It takes effect only on foldable devices and tablets.
+The ability is displayed in split-screen mode. It is valid only in intra-app redirection scenarios. It takes effect only on foldable devices and tablets.
 
 **Since:** 26.0.0
 

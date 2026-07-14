@@ -12,8 +12,7 @@ Defines the notification flags.
 bannerEnabled?: NotificationFlagStatus
 ```
 
-Settings of banner for the notification. The default value is **TYPE_NONE**. Only
-[TYPE_CLOSE](arkts-notification-notificationflagstatus-e-sys.md) takes effect.
+Settings of banner for the notification. The default value is **TYPE_NONE**. Only TYPE_CLOSE takes effect.
 
 **Type:** NotificationFlagStatus
 
@@ -27,8 +26,7 @@ Settings of banner for the notification. The default value is **TYPE_NONE**. Onl
 lockScreenEnabled?: NotificationFlagStatus
 ```
 
-Settings of screen lock for the notification. The default value is **TYPE_NONE**. Only
-[TYPE_CLOSE](arkts-notification-notificationflagstatus-e-sys.md) takes effect.
+Settings of screen lock for the notification. The default value is **TYPE_NONE**. Only TYPE_CLOSE takes effect.
 
 **Type:** NotificationFlagStatus
 
@@ -42,8 +40,7 @@ Settings of screen lock for the notification. The default value is **TYPE_NONE**
 soundEnabled?: NotificationFlagStatus
 ```
 
-Settings of sound for the notification. The default value is **TYPE_NONE**. This parameter becomes writable
-starting from API version 23. Only [TYPE_CLOSE](arkts-notification-notificationflagstatus-e-sys.md) takes effect.
+Settings of sound for the notification. The default value is **TYPE_NONE**. This parameter becomes writable starting from API version 23. Only TYPE_CLOSE takes effect.
 
 **Type:** NotificationFlagStatus
 
@@ -57,8 +54,7 @@ starting from API version 23. Only [TYPE_CLOSE](arkts-notification-notificationf
 vibrationEnabled?: NotificationFlagStatus
 ```
 
-Settings of vibration for the notification. The default value is **TYPE_NONE**. This parameter becomes writable
-starting from API version 23. Only [TYPE_CLOSE](arkts-notification-notificationflagstatus-e-sys.md) takes effect.
+Settings of vibration for the notification. The default value is **TYPE_NONE**. This parameter becomes writable starting from API version 23. Only TYPE_CLOSE takes effect.
 
 **Type:** NotificationFlagStatus
 

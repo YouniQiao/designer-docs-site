@@ -9,7 +9,7 @@ Defines selection menu options for SelectionContainer.
 ## Modules to Import
 
 ```TypeScript
-import { SelectionContainerInstance, SelectionContainer, OnMenuItemClickWithTextCallback, SelectionContainerAttribute, SelectionContainerEditMenuOptions, SelectionContainerTextJoinStyle, SelectionContainerMenuOptions } from '@kit.ArkUI';
+import { SelectionContainerInstance, SelectionContainer, OnMenuItemClickWithTextCallback, SelectionContainerOptions, SelectionContainerAttribute, SelectionContainerEditMenuOptions, SelectionContainerTextJoinStyle, SelectionContainerController, SelectionContainerMenuOptions } from '@kit.ArkUI';
 ```
 
 ## onAppear
@@ -18,8 +18,7 @@ import { SelectionContainerInstance, SelectionContainer, OnMenuItemClickWithText
 onAppear?: Callback<string>
 ```
 
-Called when the selection menu appears.
-The callback parameter is the selected text concatenated in the visual order of Text components.
+Called when the selection menu appears. The callback parameter is the selected text concatenated in the visual order of Text components.
 
 **Type:** Callback<string>
 
@@ -55,8 +54,7 @@ Called when the selection menu disappears.
 onMenuHide?: Callback<string>
 ```
 
-Called when the selection menu is hidden.
-The callback parameter is the selected text concatenated in the visual order of Text components.
+Called when the selection menu is hidden. The callback parameter is the selected text concatenated in the visual order of Text components.
 
 **Type:** Callback<string>
 
@@ -74,8 +72,7 @@ The callback parameter is the selected text concatenated in the visual order of 
 onMenuShow?: Callback<string>
 ```
 
-Called when the selection menu is displayed.
-The callback parameter is the selected text concatenated in the visual order of Text components.
+Called when the selection menu is displayed. The callback parameter is the selected text concatenated in the visual order of Text components.
 
 **Type:** Callback<string>
 

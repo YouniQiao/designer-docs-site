@@ -12,9 +12,7 @@
 color?: ResourceColor
 ```
 
-自定义交互反馈光感的颜色。
-
-默认值：Color.White
+自定义交互反馈光感的颜色。 默认值：Color.White
 
 **类型：** ResourceColor
 

@@ -12,10 +12,7 @@
 HUKS_CRYPTO_EXTENSION_ERR_EXTENSION_FAIL = 34800000
 ```
 
-密钥扩展错误。可能的原因：
-
-1. 输入参数无效。
-2. 密钥扩展出现无法解决的错误状态。
+密钥扩展错误。可能的原因： 1. 输入参数无效。 2. 密钥扩展出现无法解决的错误状态。
 
 **起始版本：** 22
 
@@ -29,10 +26,7 @@ HUKS_CRYPTO_EXTENSION_ERR_EXTENSION_FAIL = 34800000
 HUKS_CRYPTO_EXTENSION_ERR_UKEY_NOT_EXIST = 34800001
 ```
 
-UKey不存在。可能的原因：
-
-1. UKey已被移除。
-2. 密钥扩展陷入错误的UKey状态。
+UKey不存在。可能的原因： 1. UKey已被移除。 2. 密钥扩展陷入错误的UKey状态。
 
 **起始版本：** 22
 
@@ -74,10 +68,7 @@ UKey PIN码未认证，需要先认证Ukey PIN码。
 HUKS_CRYPTO_EXTENSION_ERR_HANDLE_NOT_EXIST = 34800004
 ```
 
-句柄不存在。可能的原因：
-
-1. 句柄无效。
-2. HUKS服务和密钥扩展的状态不一致。由于异常情况，HUKS服务持有的句柄未能释放。
+句柄不存在。可能的原因： 1. 句柄无效。 2. HUKS服务和密钥扩展的状态不一致。由于异常情况，HUKS服务持有的句柄未能释放。
 
 **起始版本：** 22
 
@@ -91,9 +82,7 @@ HUKS_CRYPTO_EXTENSION_ERR_HANDLE_NOT_EXIST = 34800004
 HUKS_CRYPTO_EXTENSION_ERR_HANDLE_UNAVAILABLE = 34800005
 ```
 
-句柄不可用。可能的原因：
-
-密钥扩展和Ukey的状态不一致。
+句柄不可用。可能的原因： 密钥扩展和Ukey的状态不一致。
 
 **起始版本：** 22
 
@@ -121,9 +110,7 @@ UKey PIN码错误，需要检查输入的PIN码。
 HUKS_CRYPTO_EXTENSION_ERR_PIN_LOCKED = 34800007
 ```
 
-UKey PIN码被锁。可能的原因：
-
-PIN码输入错误次数过多。
+UKey PIN码被锁。可能的原因： PIN码输入错误次数过多。
 
 **起始版本：** 22
 

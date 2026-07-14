@@ -28,8 +28,7 @@ The Flex container has a single row/column layout of elements, and children are 
 Wrap
 ```
 
-The elements of the Flex container are arranged in multiple rows or columns, and the sub-items are allowed to
-exceed the container.
+The elements of the Flex container are arranged in multiple rows or columns, and the sub-items are allowed to exceed the container.
 
 **Since:** 7
 
@@ -45,8 +44,7 @@ exceed the container.
 WrapReverse
 ```
 
-The elements of the Flex container are arranged in reverse multiple rows/columns, and children are allowed to
-exceed the container.
+The elements of the Flex container are arranged in reverse multiple rows/columns, and children are allowed to exceed the container.
 
 **Since:** 7
 

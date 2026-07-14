@@ -1,7 +1,6 @@
 # FileMapping
 
-File mapping object. Before invoking the FileMapping method, you need to use the mmap() method (synchronous or
-asynchronous) to construct a FileMapping instance.
+File mapping object. Before invoking the FileMapping method, you need to use the mmap() method (synchronous or asynchronous) to construct a FileMapping instance.
 
 **Since:** 26.0.0
 
@@ -41,14 +40,26 @@ Obtains the capacity of the file mapping area.
 | 13900050 | Internal resource error |
 | 13900052 | Mmap buffer released |
 
+**Example**
+
+```TypeScript
+let filePath = pathDir + "/test.txt";
+let file = fileIo.openSync(filePath, fileIo.OpenMode.READ_WRITE | fileIo.OpenMode.CREATE);
+let mapping = fileIo.mmapSync(file, fileIo.MappingMode.READ_WRITE, 0, 1024);
+let cap = mapping.capacity();
+console.info(`Succeeded in getting capacity, the capacity is: ${cap}`);
+mapping.unmapSync();
+fileIo.closeSync(file);
+
+```
+
 ## flip
 
 ```TypeScript
 flip(): void
 ```
 
-Mode reversal. That is, the limit attribute is set to the current position, and then the current position is set
-to 0.
+Mode reversal. That is, the limit attribute is set to the current position, and then the current position is set to 0.
 
 **Since:** 26.0.0
 
@@ -63,6 +74,26 @@ to 0.
 | 13900020 | Invalid argument |
 | 13900050 | Internal resource error |
 | 13900052 | Mmap buffer released |
+
+**Example**
+
+```TypeScript
+let filePath = pathDir + "/test.txt";
+let file = fileIo.openSync(filePath, fileIo.OpenMode.READ_WRITE | fileIo.OpenMode.CREATE);
+let mapping = fileIo.mmapSync(file, fileIo.MappingMode.READ_WRITE, 0, 1024);
+
+let writeData = new ArrayBuffer(50);
+mapping.write(writeData);
+mapping.flip(); // limit=50, position=0
+console.info("Succeeded in flip.");
+
+let readBuffer = new ArrayBuffer(50);
+mapping.read(readBuffer);
+
+mapping.unmapSync();
+fileIo.closeSync(file);
+
+```
 
 ## getLimit
 
@@ -92,6 +123,19 @@ Obtains the upper bound of the readable and writable area of the file mapping ar
 | 13900050 | Internal resource error |
 | 13900052 | Mmap buffer released |
 
+**Example**
+
+```TypeScript
+let filePath = pathDir + "/test.txt";
+let file = fileIo.openSync(filePath, fileIo.OpenMode.READ_WRITE | fileIo.OpenMode.CREATE);
+let mapping = fileIo.mmapSync(file, fileIo.MappingMode.READ_WRITE, 0, 1024);
+let lim = mapping.getLimit();
+console.info(`Succeeded in getting limit, the limit is: ${lim}`);
+mapping.unmapSync();
+fileIo.closeSync(file);
+
+```
+
 ## getPosition
 
 ```TypeScript
@@ -120,16 +164,26 @@ Gets the current location of the file mapping area.
 | 13900050 | Internal resource error |
 | 13900052 | Mmap buffer released |
 
+**Example**
+
+```TypeScript
+let filePath = pathDir + "/test.txt";
+let file = fileIo.openSync(filePath, fileIo.OpenMode.READ_WRITE | fileIo.OpenMode.CREATE);
+let mapping = fileIo.mmapSync(file, fileIo.MappingMode.READ_WRITE, 0, 1024);
+let pos = mapping.getPosition();
+console.info(`Succeeded in getting position, the position is: ${pos}`);
+mapping.unmapSync();
+fileIo.closeSync(file);
+
+```
+
 ## msync
 
 ```TypeScript
 msync(): Promise<void>
 ```
 
-Synchronizes the dirty page data in the entire file mapping area to the disk file and uses the promise
-asynchronous callback function.
-Note: If the file is not stored on the local device, calling this API does not ensure that all changes are
-stored persistently.
+Synchronizes the dirty page data in the entire file mapping area to the disk file and uses the promise asynchronous callback function. Note: If the file is not stored on the local device, calling this API does not ensure that all changes are stored persistently.
 
 **Since:** 26.0.0
 
@@ -153,6 +207,29 @@ stored persistently.
 | 13900050 | Internal resource error |
 | 13900052 | Mmap buffer released |
 | 13900055 | Mmap operation not supported |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let filePath = pathDir + "/test.txt";
+let file = fileIo.openSync(filePath, fileIo.OpenMode.READ_WRITE | fileIo.OpenMode.CREATE);
+let mapping = fileIo.mmapSync(file, fileIo.MappingMode.READ_WRITE, 0, 1024);
+
+let buffer = new ArrayBuffer(11);
+mapping.write(buffer);
+
+mapping.msync().then(() => {
+  console.info("Succeeded in msync.");
+}).catch((err: BusinessError) => {
+  console.error(`Failed to msync. Code: ${err.code}, message: ${err.message}`);
+}).finally(() => {
+  mapping.unmapSync();
+  fileIo.closeSync(file);
+});
+
+```
 
 ## msync
 
@@ -160,10 +237,7 @@ stored persistently.
 msync(position: number, length: number): Promise<void>
 ```
 
-Synchronizes the dirty page data in the specified range of the file mapping area to the disk file and uses the
-promise asynchronous callback function.
-Note: If the file is not stored on the local device, calling this API does not ensure that all changes are
-stored persistently.
+Synchronizes the dirty page data in the specified range of the file mapping area to the disk file and uses the promise asynchronous callback function. Note: If the file is not stored on the local device, calling this API does not ensure that all changes are stored persistently.
 
 **Since:** 26.0.0
 
@@ -195,16 +269,36 @@ stored persistently.
 | 13900052 | Mmap buffer released |
 | 13900055 | Mmap operation not supported |
 
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let filePath = pathDir + "/test.txt";
+let file = fileIo.openSync(filePath, fileIo.OpenMode.READ_WRITE | fileIo.OpenMode.CREATE);
+let mapping = fileIo.mmapSync(file, fileIo.MappingMode.READ_WRITE, 0, 1024);
+
+let buffer = new ArrayBuffer(11);
+mapping.write(50, buffer);
+
+mapping.msync(50, buffer.byteLength).then(() => {
+  console.info("Succeeded in msync.");
+}).catch((err: BusinessError) => {
+  console.error(`Failed to msync. Code: ${err.code}, message: ${err.message}`);
+}).finally(() => {
+  mapping.unmapSync();
+  fileIo.closeSync(file);
+});
+
+```
+
 ## msyncSync
 
 ```TypeScript
 msyncSync(): void
 ```
 
-Synchronizes the dirty page data of the entire file mapping area to the disk file by using the synchronization
-method.
-Note: If the file is not stored on the local device, calling this API does not ensure that all changes are
-stored persistently.
+Synchronizes the dirty page data of the entire file mapping area to the disk file by using the synchronization method. Note: If the file is not stored on the local device, calling this API does not ensure that all changes are stored persistently.
 
 **Since:** 26.0.0
 
@@ -223,16 +317,33 @@ stored persistently.
 | 13900052 | Mmap buffer released |
 | 13900055 | Mmap operation not supported |
 
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let filePath = pathDir + "/test.txt";
+let file = fileIo.openSync(filePath, fileIo.OpenMode.READ_WRITE | fileIo.OpenMode.CREATE);
+let mapping = fileIo.mmapSync(file, fileIo.MappingMode.READ_WRITE, 0, 1024);
+
+let buffer = new ArrayBuffer(11);
+mapping.write(buffer);
+
+mapping.msyncSync();
+console.info("Succeeded in msync.");
+
+mapping.unmapSync();
+fileIo.closeSync(file);
+
+```
+
 ## msyncSync
 
 ```TypeScript
 msyncSync(position: number, length: number): void
 ```
 
-Synchronize the dirty page data in the specified range of the file mapping area to the disk file by using the
-synchronization method.
-Note: If the file is not stored on the local device, calling this API does not ensure that all changes are
-stored persistently.
+Synchronize the dirty page data in the specified range of the file mapping area to the disk file by using the synchronization method. Note: If the file is not stored on the local device, calling this API does not ensure that all changes are stored persistently.
 
 **Since:** 26.0.0
 
@@ -257,6 +368,26 @@ stored persistently.
 | 13900050 | Internal resource error |
 | 13900052 | Mmap buffer released |
 | 13900055 | Mmap operation not supported |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let filePath = pathDir + "/test.txt";
+let file = fileIo.openSync(filePath, fileIo.OpenMode.READ_WRITE | fileIo.OpenMode.CREATE);
+let mapping = fileIo.mmapSync(file, fileIo.MappingMode.READ_WRITE, 0, 1024);
+
+let buffer = new ArrayBuffer(11);
+mapping.write(50, buffer);
+
+mapping.msyncSync(50, buffer.byteLength);
+console.info("Succeeded in msync.");
+
+mapping.unmapSync();
+fileIo.closeSync(file);
+
+```
 
 ## read
 
@@ -294,6 +425,22 @@ Reads data from the current position and moves the position backward by the numb
 | 13900051 | Buffer read/write out of bounds |
 | 13900052 | Mmap buffer released |
 | 13900054 | Mmap buffer is inaccessible |
+
+**Example**
+
+```TypeScript
+let filePath = pathDir + "/test.txt";
+let file = fileIo.openSync(filePath, fileIo.OpenMode.READ_WRITE | fileIo.OpenMode.CREATE);
+let mapping = fileIo.mmapSync(file, fileIo.MappingMode.READ_WRITE, 0, 1024);
+
+let buffer = new ArrayBuffer(100);
+let bytesRead = mapping.read(buffer);
+console.info(`Succeeded in reading data, size is: ${bytesRead}`);
+
+mapping.unmapSync();
+fileIo.closeSync(file);
+
+```
 
 ## read
 
@@ -333,14 +480,29 @@ Reads data from the specified location without affecting the current location.
 | 13900052 | Mmap buffer released |
 | 13900054 | Mmap buffer is inaccessible |
 
+**Example**
+
+```TypeScript
+let filePath = pathDir + "/test.txt";
+let file = fileIo.openSync(filePath, fileIo.OpenMode.READ_WRITE | fileIo.OpenMode.CREATE);
+let mapping = fileIo.mmapSync(file, fileIo.MappingMode.READ_WRITE, 0, 1024);
+
+let buffer = new ArrayBuffer(100);
+let bytesRead = mapping.read(50, buffer, 50);
+console.info(`Succeeded in reading data, size is: ${bytesRead}`);
+
+mapping.unmapSync();
+fileIo.closeSync(file);
+
+```
+
 ## remaining
 
 ```TypeScript
 remaining(): number
 ```
 
-Obtains the number of remaining bytes between the current position (position) and the upper bound (limit) of the
-readable and writable area.
+Obtains the number of remaining bytes between the current position (position) and the upper bound (limit) of the readable and writable area.
 
 **Since:** 26.0.0
 
@@ -362,14 +524,29 @@ readable and writable area.
 | 13900050 | Internal resource error |
 | 13900052 | Mmap buffer released |
 
+**Example**
+
+```TypeScript
+let filePath = pathDir + "/test.txt";
+let file = fileIo.openSync(filePath, fileIo.OpenMode.READ_WRITE | fileIo.OpenMode.CREATE);
+let mapping = fileIo.mmapSync(file, fileIo.MappingMode.READ_WRITE, 0, 1024);
+
+mapping.setPosition(100);
+let remaining = mapping.remaining();
+console.info(`Succeeded in getting remaining, the remaining is: ${remaining}`);
+
+mapping.unmapSync();
+fileIo.closeSync(file);
+
+```
+
 ## setLimit
 
 ```TypeScript
 setLimit(limit: number): void
 ```
 
-Sets the upper bound of the readable and writable area of the file mapping area. The upper bound does not exceed
-the total capacity of the mapping area (0 <= limit <= capacity).
+Sets the upper bound of the readable and writable area of the file mapping area. The upper bound does not exceed the total capacity of the mapping area (0 <= limit <= capacity).
 
 **Since:** 26.0.0
 
@@ -390,6 +567,19 @@ the total capacity of the mapping area (0 <= limit <= capacity).
 | 13900020 | Invalid argument |
 | 13900050 | Internal resource error |
 | 13900052 | Mmap buffer released |
+
+**Example**
+
+```TypeScript
+let filePath = pathDir + "/test.txt";
+let file = fileIo.openSync(filePath, fileIo.OpenMode.READ_WRITE | fileIo.OpenMode.CREATE);
+let mapping = fileIo.mmapSync(file, fileIo.MappingMode.READ_WRITE, 0, 1024);
+mapping.setLimit(512);
+console.info("Succeeded in setLimit.");
+mapping.unmapSync();
+fileIo.closeSync(file);
+
+```
 
 ## setPosition
 
@@ -419,6 +609,19 @@ Sets the current location of the file mapping area.
 | 13900050 | Internal resource error |
 | 13900052 | Mmap buffer released |
 
+**Example**
+
+```TypeScript
+let filePath = pathDir + "/test.txt";
+let file = fileIo.openSync(filePath, fileIo.OpenMode.READ_WRITE | fileIo.OpenMode.CREATE);
+let mapping = fileIo.mmapSync(file, fileIo.MappingMode.READ_WRITE, 0, 1024);
+mapping.setPosition(100);
+console.info("Succeeded in setPosition.");
+mapping.unmapSync();
+fileIo.closeSync(file);
+
+```
+
 ## unmap
 
 ```TypeScript
@@ -446,6 +649,27 @@ Releases the file mapping area and use the promise asynchronous callback functio
 | 13900020 | Invalid argument |
 | 13900050 | Internal resource error |
 
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let filePath = pathDir + "/test.txt";
+let file = fileIo.openSync(filePath, fileIo.OpenMode.READ_WRITE | fileIo.OpenMode.CREATE);
+let mapping = fileIo.mmapSync(file, fileIo.MappingMode.READ_WRITE, 0, 1024);
+
+let buffer = new ArrayBuffer(11);
+mapping.write(buffer);
+mapping.unmap().then(() => {
+  console.info("Succeeded in unmap.");
+}).catch((err: BusinessError) => {
+  console.error(`Failed to unmap. Code: ${err.code}, message: ${err.message}`);
+}).finally(() => {
+  fileIo.closeSync(file);
+});
+
+```
+
 ## unmapSync
 
 ```TypeScript
@@ -466,6 +690,21 @@ Releases the file mapping area by using the synchronization method.
 | --- | --- |
 | 13900020 | Invalid argument |
 | 13900050 | Internal resource error |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let filePath = pathDir + "/test.txt";
+let file = fileIo.openSync(filePath, fileIo.OpenMode.READ_WRITE | fileIo.OpenMode.CREATE);
+let mapping = fileIo.mmapSync(file, fileIo.MappingMode.READ_WRITE, 0, 1024);
+
+mapping.unmapSync();
+console.info("Succeeded in unmap.");
+fileIo.closeSync(file);
+
+```
 
 ## write
 
@@ -505,6 +744,23 @@ Writes data from the current location and moves the location backward by the num
 | 13900053 | Read-only mmap buffer |
 | 13900054 | Mmap buffer is inaccessible |
 
+**Example**
+
+```TypeScript
+let filePath = pathDir + "/test.txt";
+let file = fileIo.openSync(filePath, fileIo.OpenMode.READ_WRITE | fileIo.OpenMode.CREATE);
+let mapping = fileIo.mmapSync(file, fileIo.MappingMode.READ_WRITE, 0, 1024);
+
+let buffer = new ArrayBuffer(11);
+let bytesWritten = mapping.write(buffer);
+console.info(`Succeeded in writing data to file, size is: ${bytesWritten}`);
+
+mapping.msyncSync();
+mapping.unmapSync();
+fileIo.closeSync(file);
+
+```
+
 ## write
 
 ```TypeScript
@@ -543,4 +799,21 @@ Writes data from the specified location without affecting the current location.
 | 13900052 | Mmap buffer released |
 | 13900053 | Read-only mmap buffer |
 | 13900054 | Mmap buffer is inaccessible |
+
+**Example**
+
+```TypeScript
+let filePath = pathDir + "/test.txt";
+let file = fileIo.openSync(filePath, fileIo.OpenMode.READ_WRITE | fileIo.OpenMode.CREATE);
+let mapping = fileIo.mmapSync(file, fileIo.MappingMode.READ_WRITE, 0, 1024);
+
+let buffer = new ArrayBuffer(11);
+let bytesWritten = mapping.write(50, buffer);
+console.info(`Succeeded in writing data to file, size is: ${bytesWritten}`);
+
+mapping.msyncSync();
+mapping.unmapSync();
+fileIo.closeSync(file);
+
+```
 

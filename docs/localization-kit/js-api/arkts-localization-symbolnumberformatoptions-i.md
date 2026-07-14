@@ -1,7 +1,6 @@
 # SymbolNumberFormatOptions
 
-Represents optional configuration items for the SymbolNumberFormat object.
-Define the symbol element and value that need to be replaced.
+Represents optional configuration items for the SymbolNumberFormat object. Define the symbol element and value that need to be replaced.
 
 **Inheritance/Implementation:** SymbolNumberFormatOptions extends [Intl.NumberFormatOptions](../../apis-na/arkts-apis/arkts-na-numberformatoptions-i.md)
 

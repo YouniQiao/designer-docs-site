@@ -6,9 +6,7 @@
 function wrapKeyItem(keyAlias: string, params: HuksOptions): Promise<HuksReturnResult>
 ```
 
-加密导出密钥。使用Promise异步回调。
-
-<!--Del-->该功能暂不支持。<!--DelEnd-->
+加密导出密钥。使用Promise异步回调。 > **说明：** > > 加密导出[HuksKeySecurityLevel](arkts-universalkeystore-hukskeysecuritylevel-e.md)中定义的SE安全级别密钥需要ohos.permission.ACCESS_SE_KEY权限。 <!--Del-->该功能暂不支持。<!--DelEnd-->
 
 **起始版本：** 20
 
@@ -33,6 +31,7 @@ function wrapKeyItem(keyAlias: string, params: HuksOptions): Promise<HuksReturnR
 
 | 错误码ID | 错误信息 |
 | --- | --- |
+| [201](../../errorcode-universal.md#201-权限校验失败) | The application permissions are insufficient, possibly becausethe ohos.permission.ACCESS_SE_KEY permission is missing.<br>**适用版本：** 26.0.0+ |
 | [801](../../errorcode-universal.md#801-该设备不支持此api) | api is not supported |
 | [12000004](../errorcode-huks.md#12000004-文件错误) | operating file failed |
 | [12000005](../errorcode-huks.md#12000005-进程通信错误) | IPC communication failed |

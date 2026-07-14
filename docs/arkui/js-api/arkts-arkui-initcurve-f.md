@@ -12,8 +12,7 @@ import { curves } from '@kit.ArkUI';
 function initCurve(curve?: Curve): ICurve
 ```
 
-Implements initialization for the interpolation curve, which is used to create an interpolation curve based on the
-input parameter.
+Implements initialization for the interpolation curve, which is used to create an interpolation curve based on the input parameter.
 
 **Since:** 9
 

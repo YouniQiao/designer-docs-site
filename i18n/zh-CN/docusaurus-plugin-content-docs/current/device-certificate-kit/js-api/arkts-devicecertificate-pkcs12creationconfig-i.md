@@ -80,8 +80,7 @@ macDigestAlgorithm?: Pkcs12MacDigestAlgorithm
 macIterations?: number
 ```
 
-表示P12的MAC的迭代次数。默认为2048。
-取值应为正整数。
+表示P12的MAC的迭代次数。默认为2048。 取值应为正整数。
 
 **类型：** number
 
@@ -99,8 +98,7 @@ macIterations?: number
 macSaltLen?: number
 ```
 
-表示P12的MAC的盐值长度。最小值为8，默认为16。
-取值应为≥8的整数。
+表示P12的MAC的盐值长度。最小值为8，默认为16。 取值应为≥8的整数。
 
 **类型：** number
 

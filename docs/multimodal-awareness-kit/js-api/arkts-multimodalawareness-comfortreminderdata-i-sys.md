@@ -22,8 +22,7 @@ import { userStatus } from '@kit.MultimodalAwarenessKit';
 eventType: number
 ```
 
-Event type.
-The value ranges from 0 to 1. 0: Gaze event, 1: Ambient sound event..
+Event type. The value ranges from 0 to 1. 0: Gaze event, 1: Ambient sound event..
 
 **Type:** number
 

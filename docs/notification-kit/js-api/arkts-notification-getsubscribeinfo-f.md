@@ -12,8 +12,7 @@ import { notificationExtensionSubscription } from '@kit.NotificationKit';
 function getSubscribeInfo(): Promise<NotificationExtensionSubscriptionInfo[]>
 ```
 
-Obtains the subscription information about the notification extension of this application. This API uses a promise
-to return the result.
+Obtains the subscription information about the notification extension of this application. This API uses a promise to return the result.
 
 **Since:** 22
 

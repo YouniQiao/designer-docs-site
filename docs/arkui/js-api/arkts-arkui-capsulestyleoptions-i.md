@@ -1,9 +1,6 @@
 # CapsuleStyleOptions
 
-Capsule style options.
-
-Inherits from [ScanEffectOptions](arkts-arkui-scaneffectoptions-i.md) and
-[CommonProgressStyleOptions](arkts-arkui-commonprogressstyleoptions-i.md).
+Capsule style options. Inherits from [ScanEffectOptions](arkts-arkui-scaneffectoptions-i.md) and [CommonProgressStyleOptions](arkts-arkui-commonprogressstyleoptions-i.md).
 
 **Inheritance/Implementation:** CapsuleStyleOptions extends [ScanEffectOptions](arkts-arkui-scaneffectoptions-i.md), [CommonProgressStyleOptions](arkts-arkui-commonprogressstyleoptions-i.md)
 
@@ -17,13 +14,7 @@ Inherits from [ScanEffectOptions](arkts-arkui-scaneffectoptions-i.md) and
 borderColor?: ResourceColor
 ```
 
-Border color.
-
-Default value:
-
-API version 10: **'#33006cde'**
-
-API version 11 or later: **'#33007dff'**
+Border color. Default value: API version 10: **'#33006cde'** API version 11 or later: **'#33007dff'**
 
 **Type:** ResourceColor
 
@@ -41,13 +32,7 @@ API version 11 or later: **'#33007dff'**
 borderRadius?: LengthMetrics
 ```
 
-Border radius. Percentage values are not supported.
-
-Value range: [0, min(width, height)/2]
-
-Default value: min(width, height)/2
-
-If an invalid value is set, the default value is used.
+Border radius. Percentage values are not supported. Value range: [0, min(width, height)/2] Default value: min(width, height)/2 If an invalid value is set, the default value is used.
 
 **Type:** LengthMetrics
 
@@ -67,9 +52,7 @@ If an invalid value is set, the default value is used.
 borderWidth?: Length
 ```
 
-Border width. Percentage values are not supported.
-
-Default value: **1vp**
+Border width. Percentage values are not supported. Default value: **1vp**
 
 **Type:** Length
 
@@ -105,13 +88,7 @@ Text content, which can be customized.
 font?: Font
 ```
 
-Text style.
-
-Default value:
-
-Font size (percentage values are not supported): **12fp**
-
-Other text parameters are subject to the theme values of the [Text](../../apis-arkgraphics2d/arkts-apis/arkts-graphics-text.md) component.
+Text style. Default value: Font size (percentage values are not supported): **12fp** Other text parameters are subject to the theme values of the [Text](../../apis-arkgraphics2d/arkts-apis/arkts-graphics-text.md) component.
 
 **Type:** Font
 
@@ -129,9 +106,7 @@ Other text parameters are subject to the theme values of the [Text](../../apis-a
 fontColor?: ResourceColor
 ```
 
-Font color.
-
-Default value: **'#ff182431'**
+Font color. Default value: **'#ff182431'**
 
 **Type:** ResourceColor
 
@@ -149,12 +124,7 @@ Default value: **'#ff182431'**
 showDefaultPercentage?: boolean
 ```
 
-Whether to display the percentage text. After this feature is enabled, the progress percentage is displayed on the
-progress indicator. This property does not take effect when **content** is set.
-
-**true**: The percentage text is displayed. **false**: The percentage text is not displayed.
-
-Default value: **false**
+Whether to display the percentage text. After this feature is enabled, the progress percentage is displayed on the progress indicator. This property does not take effect when **content** is set. **true**: The percentage text is displayed. **false**: The percentage text is not displayed. Default value: **false**
 
 **Type:** boolean
 

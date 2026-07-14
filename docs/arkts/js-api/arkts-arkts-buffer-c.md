@@ -77,8 +77,7 @@ console.info(buf1.compare(buf2, 5, 6, 5).toString());
 copy(target: Buffer | Uint8Array, targetStart?: number, sourceStart?: number, sourceEnd?: number): number
 ```
 
-Copies data at the specified position in this **Buffer** object to the specified position in another **Buffer**
-object.
+Copies data at the specified position in this **Buffer** object to the specified position in another **Buffer** object.
 
 **Since:** 9
 
@@ -285,8 +284,7 @@ Checks whether this **Buffer** object contains the specified value.
 indexOf(value: string | number | number | number | Buffer | Uint8Array, byteOffset?: number, encoding?: BufferEncoding): number
 ```
 
-Obtains the index of the first occurrence of the specified value in this **Buffer** object. If no match is found,
-**-1** is returned.
+Obtains the index of the first occurrence of the specified value in this **Buffer** object. If no match is found, **-1** is returned.
 
 **Since:** 9
 
@@ -355,8 +353,7 @@ Output: 0
 lastIndexOf(value: string | number | number | number | Buffer | Uint8Array, byteOffset?: number, encoding?: BufferEncoding): number
 ```
 
-Obtains the index of the last occurrence of the specified value in this **Buffer** object. If no match is found,
-**-1** is returned.
+Obtains the index of the last occurrence of the specified value in this **Buffer** object. If no match is found, **-1** is returned.
 
 **Since:** 9
 
@@ -579,8 +576,7 @@ console.info("result = " + result);
 readDoubleBE(offset?: number): number
 ```
 
-Reads a 64-bit, big-endian, double-precision floating-point number from this **Buffer** object at the specified
-offset.
+Reads a 64-bit, big-endian, double-precision floating-point number from this **Buffer** object at the specified offset.
 
 **Since:** 9
 
@@ -627,8 +623,7 @@ console.info("result = " + result);
 readDoubleLE(offset?: number): number
 ```
 
-Reads a 64-bit, little-endian, double-precision floating-point number from this **Buffer** object at the
-specified offset.
+Reads a 64-bit, little-endian, double-precision floating-point number from this **Buffer** object at the specified offset.
 
 **Since:** 9
 
@@ -675,8 +670,7 @@ console.info("result = " + result);
 readFloatBE(offset?: number): number
 ```
 
-Reads a 32-bit, big-endian, single-precision floating-point number from this **Buffer** object at the specified
-offset.
+Reads a 32-bit, big-endian, single-precision floating-point number from this **Buffer** object at the specified offset.
 
 **Since:** 9
 
@@ -723,8 +717,7 @@ console.info("result = " + result);
 readFloatLE(offset?: number): number
 ```
 
-Reads a 32-bit, little-endian, single-precision floating-point number from this **Buffer** object at the
-specified offset.
+Reads a 32-bit, little-endian, single-precision floating-point number from this **Buffer** object at the specified offset.
 
 **Since:** 9
 
@@ -1008,8 +1001,7 @@ console.info("result = " + result);
 readIntBE(offset: number, byteLength: number): number
 ```
 
-Reads the specified number of bytes from this **Buffer** object at the specified offset, and interprets the
-result as a big-endian, two's complement signed value that supports up to 48 bits of precision.
+Reads the specified number of bytes from this **Buffer** object at the specified offset, and interprets the result as a big-endian, two's complement signed value that supports up to 48 bits of precision.
 
 **Since:** 9
 
@@ -1058,8 +1050,7 @@ console.info("result = " + result);
 readIntLE(offset: number, byteLength: number): number
 ```
 
-Reads the specified number of bytes from this **Buffer** object at the specified offset and interprets the result
-as a little-endian, two's complement signed value that supports up to 48 bits of precision.
+Reads the specified number of bytes from this **Buffer** object at the specified offset and interprets the result as a little-endian, two's complement signed value that supports up to 48 bits of precision.
 
 **Since:** 9
 
@@ -1348,8 +1339,7 @@ console.info("result = " + result);
 readUIntBE(offset: number, byteLength: number): number
 ```
 
-Reads the specified number of bytes from this **Buffer** object at the specified offset, and interprets the
-result as an unsigned, big-endian integer that supports up to 48 bits of precision.
+Reads the specified number of bytes from this **Buffer** object at the specified offset, and interprets the result as an unsigned, big-endian integer that supports up to 48 bits of precision.
 
 **Since:** 9
 
@@ -1397,8 +1387,7 @@ console.info("result = " + result);
 readUIntLE(offset: number, byteLength: number): number
 ```
 
-Reads the specified number of bytes from this **Buffer** object at the specified offset, and interprets the
-result as an unsigned, little-endian integer that supports up to 48 bits of precision.
+Reads the specified number of bytes from this **Buffer** object at the specified offset, and interprets the result as an unsigned, little-endian integer that supports up to 48 bits of precision.
 
 **Since:** 9
 
@@ -1641,8 +1630,7 @@ console.info(JSON.stringify(obj));
 toString(encoding?: string, start?: number, end?: number): string
 ```
 
-Converts the data at the specified position in this **Buffer** object into a string in the specified encoding
-format.
+Converts the data at the specified position in this **Buffer** object into a string in the specified encoding format.
 
 **Since:** 9
 
@@ -1727,8 +1715,7 @@ while (!next.done) {
 write(str: string, offset?: number, length?: number, encoding?: string): number
 ```
 
-Writes a string of the specified length to this **Buffer** object at the specified position in the given encoding
-format.
+Writes a string of the specified length to this **Buffer** object at the specified position in the given encoding format.
 
 **Since:** 9
 
@@ -1960,8 +1947,7 @@ console.info("result = " + result);
 writeDoubleBE(value: number, offset?: number): number
 ```
 
-Writes a 64-bit, big-endian, double-precision floating-point number to this **Buffer** object at the specified
-offset.
+Writes a 64-bit, big-endian, double-precision floating-point number to this **Buffer** object at the specified offset.
 
 **Since:** 9
 
@@ -2006,8 +1992,7 @@ console.info("result = " + result);
 writeDoubleLE(value: number, offset?: number): number
 ```
 
-Writes a 64-bit, little-endian, double-precision floating-point number to this **Buffer** object at the specified
-offset.
+Writes a 64-bit, little-endian, double-precision floating-point number to this **Buffer** object at the specified offset.
 
 **Since:** 9
 
@@ -2052,8 +2037,7 @@ console.info("result = " + result);
 writeFloatBE(value: number, offset?: number): number
 ```
 
-Writes a 32-bit, big-endian, single-precision floating-point number to this **Buffer** object at the specified
-offset.
+Writes a 32-bit, big-endian, single-precision floating-point number to this **Buffer** object at the specified offset.
 
 **Since:** 9
 
@@ -2098,8 +2082,7 @@ console.info("result = " + result);
 writeFloatLE(value: number, offset?: number): number
 ```
 
-Writes a 32-bit, little-endian, single-precision floating-point number to this **Buffer** object at the specified
-offset.
+Writes a 32-bit, little-endian, single-precision floating-point number to this **Buffer** object at the specified offset.
 
 **Since:** 9
 

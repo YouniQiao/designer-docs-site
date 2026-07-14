@@ -36,8 +36,7 @@ ChipV2 item background color.
 backgroundSystemMaterial?: uiMaterial.Material
 ```
 
-Set system-styled materials for the component. Different materials have different effects, which can influence
-the backgroundColor, border, shadow, and other visual attributes of the component.
+Set system-styled materials for the component. Different materials have different effects, which can influence the backgroundColor, border, shadow, and other visual attributes of the component.
 
 **Type:** uiMaterial.Material
 
@@ -91,8 +90,7 @@ Selected ChipV2 item background color.
 selectedBackgroundSystemMaterial?: uiMaterial.Material
 ```
 
-Set system-styled materials for the component when selected. Different materials have different effects,
-which can influence the backgroundColor, border, shadow, and other visual attributes of the component.
+Set system-styled materials for the component when selected. Different materials have different effects, which can influence the backgroundColor, border, shadow, and other visual attributes of the component.
 
 **Type:** uiMaterial.Material
 

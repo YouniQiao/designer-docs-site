@@ -1,6 +1,6 @@
 # SlotType
 
-Enumerates the notification slot types.
+Enumerates the notification slot types. Different types correspond to different [SlotLevel](arkts-notification-slotlevel-e.md) values, determining the reminder behavior of the notification.
 
 **Since:** 9
 

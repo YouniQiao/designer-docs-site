@@ -138,8 +138,7 @@ indicator(value: IndicatorStyle): SubTabBarStyle
 indicator(value: IndicatorStyle | DrawableTabBarIndicator): SubTabBarStyle
 ```
 
-����ѡ����ҳǩ���»��߷����[indicator](arkts-arkui-subtabbarstyle-c.md#indicator-1)��ȣ�������ͼƬ��ʽ���»��߷��ͼƬ����ʾЧ������
-[ImageFit.Cover](arkts-arkui-imagefit-e.md)����ҳǩ���»��߷�����ˮƽģʽ����Ч��
+����ѡ����ҳǩ���»��߷����[indicator](arkts-arkui-subtabbarstyle-c.md#indicator-1)��ȣ�������ͼƬ��ʽ���»��߷��ͼƬ����ʾЧ������ [ImageFit.Cover](arkts-arkui-imagefit-e.md)����ҳǩ���»��߷�����ˮƽģʽ����Ч��
 
 **起始版本：** 22
 

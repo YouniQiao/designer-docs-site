@@ -4,8 +4,7 @@
 declare type CanvasLineJoin = "bevel" | "miter" | "round"
 ```
 
-Defines the type of join between two non-zero-length segments (lines, arcs, and curves). The value type is a union of
-the types listed in the table below.
+Defines the type of join between two non-zero-length segments (lines, arcs, and curves). The value type is a union of the types listed in the table below.
 
 **Since:** 8
 

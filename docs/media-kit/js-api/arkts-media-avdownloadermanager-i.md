@@ -220,9 +220,7 @@ Deregisters a specified function's listening on task status change events.
 onProgressChange(callback: OnAVDownloadProgressChangeHandle): void
 ```
 
-Registers a function to listen to the progress change value of an offline download task.
-The progress change of the offline download task exceeds 1% compared with that of the last time.
-The event is triggered after the interval exceeds 500 ms.
+Registers a function to listen to the progress change value of an offline download task. The progress change of the offline download task exceeds 1% compared with that of the last time. The event is triggered after the interval exceeds 500 ms.
 
 **Since:** 26.0.0
 

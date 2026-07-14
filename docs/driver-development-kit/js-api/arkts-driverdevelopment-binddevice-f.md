@@ -13,9 +13,7 @@ function bindDevice(deviceId: number, onDisconnect: AsyncCallback<number>,
     callback: AsyncCallback<{deviceId: number; remote: rpc.IRemoteObject;}>): void
 ```
 
-Binds a peripheral device based on the device information returned by **queryDevices()**.
-You need to use [deviceManager.queryDevices()](arkts-driverdevelopment-querydevices-f.md#querydevices-1) to obtain the peripheral device
-information and device.
+Binds a peripheral device based on the device information returned by **queryDevices()**. You need to use [deviceManager.queryDevices()](arkts-driverdevelopment-querydevices-f.md#querydevices-1) to obtain the peripheral device information and device.
 
 **Since:** 10
 
@@ -80,10 +78,7 @@ function bindDevice(deviceId: number, onDisconnect: AsyncCallback<number>): Prom
     remote: rpc.IRemoteObject;}>
 ```
 
-Binds a peripheral device based on the device information returned by **queryDevices()**. This API uses a promise
-to return the result.
-You need to use [deviceManager.queryDevices](arkts-driverdevelopment-querydevices-f.md#querydevices-1) to obtain the peripheral device
-information and device.
+Binds a peripheral device based on the device information returned by **queryDevices()**. This API uses a promise to return the result. You need to use [deviceManager.queryDevices](arkts-driverdevelopment-querydevices-f.md#querydevices-1) to obtain the peripheral device information and device.
 
 **Since:** 10
 

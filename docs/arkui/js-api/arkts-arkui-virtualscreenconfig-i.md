@@ -60,8 +60,7 @@ Name of the virtual screen, which can be customized.
 supportsFocus?: boolean
 ```
 
-Whether the virtual screen is focusable. **true** if focusable, **false** otherwise. The default value is
-**true**.
+Whether the virtual screen is focusable. **true** if focusable, **false** otherwise. The default value is **true**.
 
 **Type:** boolean
 
@@ -75,8 +74,7 @@ Whether the virtual screen is focusable. **true** if focusable, **false** otherw
 surfaceId: string
 ```
 
-Surface ID of the virtual screen, which can be customized. The maximum length for this parameter is 4096 bytes.
-If it goes beyond that, only the first 4096 bytes are used.
+Surface ID of the virtual screen, which can be customized. The maximum length for this parameter is 4096 bytes. If it goes beyond that, only the first 4096 bytes are used.
 
 **Type:** string
 

@@ -113,9 +113,7 @@ inactiveColor?: ResourceColor
 policy?: BlurStyleActivePolicy
 ```
 
-模糊激活策略。
-
-默认值：BlurStyleActivePolicy.ALWAYS_ACTIVE
+模糊激活策略。 默认值：BlurStyleActivePolicy.ALWAYS_ACTIVE
 
 **类型：** BlurStyleActivePolicy
 

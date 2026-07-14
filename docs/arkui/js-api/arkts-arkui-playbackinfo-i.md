@@ -1,12 +1,6 @@
 # PlaybackInfo
 
-Describes the current progress of video playback.
-
-> **NOTE**
->
-> To standardize anonymous object definitions, the element definitions here have been revised in API version 18.
-> While historical version information is preserved for anonymous objects, there may be cases where the outer
-> element's @since version number is higher than inner elements'. This does not affect interface usability.
+Describes the current progress of video playback. > **NOTE** > > To standardize anonymous object definitions, the element definitions here have been revised in API version 18. > While historical version information is preserved for anonymous objects, there may be cases where the outer > element's @since version number is higher than inner elements'. This does not affect interface usability.
 
 **Since:** 18
 
@@ -18,11 +12,7 @@ Describes the current progress of video playback.
 time: number
 ```
 
-Callback that provides the current playback progress.
-
-Unit: second
-
-Value range: [0, +∞)
+Callback that provides the current playback progress. Unit: second Value range: [0, +∞)
 
 **Type:** number
 

@@ -22,12 +22,7 @@ import { VibrateOptions } from '@kit.SensorServiceKit';
 static vibrate(options?: VibrateOptions): void
 ```
 
-Triggers device vibration.
-
-> **NOTE**
->
-> Except for lite wearables. You are advised to use
-> [vibrator.startVibration()](arkts-sensorservice-startvibration-f.md#startvibration-1) since API version 8.
+Triggers device vibration. > **NOTE** > > Except for lite wearables. You are advised to use > [vibrator.startVibration()](arkts-sensorservice-startvibration-f.md#startvibration-1) since API version 8.
 
 **Since:** 3
 

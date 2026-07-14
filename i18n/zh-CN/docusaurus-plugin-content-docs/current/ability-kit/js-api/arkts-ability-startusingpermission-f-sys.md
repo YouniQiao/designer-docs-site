@@ -6,9 +6,7 @@
 function startUsingPermission(tokenID: number, permissionName: Permissions): Promise<void>
 ```
 
-系统应用调用此接口，能够向系统上报应用在前后台的权限使用状态。隐私服务将此状态通知所有该权限使用状态变更事件的订阅者（订阅方法参考[on](privacyManager.on)）。使用Promise异步回调。
-
-开始使用权限后，需要在权限使用结束时调用[stopUsingPermission](arkts-ability-stopusingpermission-f-sys.md#stopusingpermission-1)停止使用权限。
+系统应用调用此接口，能够向系统上报应用在前后台的权限使用状态。隐私服务将此状态通知所有该权限使用状态变更事件的订阅者（订阅方法参考[on](privacyManager.on)）。使用Promise异步回调。 开始使用权限后，需要在权限使用结束时调用[stopUsingPermission](arkts-ability-stopusingpermission-f-sys.md#stopusingpermission-1)停止使用权限。
 
 **起始版本：** 9
 
@@ -73,13 +71,7 @@ function startUsingPermission(
   ): Promise<void>
 ```
 
-系统应用调用此接口，能够向系统上报应用在前后台的权限使用状态。隐私服务将此状态通知所有该权限使用状态变更事件的订阅者（订阅方法参考
-[on](arkts-ability-on-f-sys.md#on-1)）。
-使用Promise异步回调。
-
-开始使用权限后，需要在权限使用结束时调用
-[stopUsingPermission](privacyManager.stopUsingPermission(tokenID: int, permissionName: Permissions, pid?: int))
-停止使用权限。
+系统应用调用此接口，能够向系统上报应用在前后台的权限使用状态。隐私服务将此状态通知所有该权限使用状态变更事件的订阅者（订阅方法参考 [on](arkts-ability-on-f-sys.md#on-1)）。 使用Promise异步回调。 开始使用权限后，需要在权限使用结束时调用 [stopUsingPermission](privacyManager.stopUsingPermission(tokenID: int, permissionName: Permissions, pid?: int)) 停止使用权限。
 
 **起始版本：** 18
 
@@ -168,20 +160,7 @@ function startUsingPermission(
    ): Promise<void>
 ```
 
-系统应用调用此接口，能够向系统上报应用在前后台的权限使用状态。隐私服务将此状态通知所有该权限使用状态变更事件的订阅者（订阅方法参考
-[on](privacyManager.on(type: 'activeStateChange', permissionList: Array<Permissions>, callback:
-Callback<ActiveChangeResponse>))
-）。使用Promise异步回调。
-
-开始使用权限后，需要在权限使用结束时调用
-[stopUsingPermission](privacyManager.stopUsingPermission(tokenID: int, permissionName: Permissions, pid?:
-int, options?: PermissionUsingOptions))
-停止使用权限。
-
-当传入pid时，pid需要与
-[stopUsingPermission](privacyManager.stopUsingPermission(tokenID: int, permissionName: Permissions, pid?:
-int, options?: PermissionUsingOptions))
-传入的pid相同，不满足配套关系返回错误码12100004。
+系统应用调用此接口，能够向系统上报应用在前后台的权限使用状态。隐私服务将此状态通知所有该权限使用状态变更事件的订阅者（订阅方法参考 [on](arkts-ability-on-f-sys.md#on-1) ）。使用Promise异步回调。 开始使用权限后，需要在权限使用结束时调用 [stopUsingPermission](privacyManager.stopUsingPermission(tokenID: int, permissionName: Permissions, pid?: int, options?: PermissionUsingOptions)) 停止使用权限。 当传入pid时，pid需要与 [stopUsingPermission](privacyManager.stopUsingPermission(tokenID: int, permissionName: Permissions, pid?: int, options?: PermissionUsingOptions)) 传入的pid相同，不满足配套关系返回错误码12100004。
 
 **起始版本：** 26.0.0
 
@@ -276,13 +255,7 @@ function startUsingPermission(
   ): void
 ```
 
-系统应用调用此接口，能够向系统上报应用在前后台的权限使用状态。隐私服务将此状态通知所有该权限使用状态变更事件的订阅者（订阅方法参考
-[on](arkts-ability-on-f-sys.md#on-1)
-）。使用callback异步回调。
-
-开始使用权限后，需要在权限使用结束时调用
-[stopUsingPermission](arkts-ability-stopusingpermission-f-sys.md#stopusingpermission-1)
-停止使用权限。
+系统应用调用此接口，能够向系统上报应用在前后台的权限使用状态。隐私服务将此状态通知所有该权限使用状态变更事件的订阅者（订阅方法参考 [on](arkts-ability-on-f-sys.md#on-1) ）。使用callback异步回调。 开始使用权限后，需要在权限使用结束时调用 [stopUsingPermission](arkts-ability-stopusingpermission-f-sys.md#stopusingpermission-1) 停止使用权限。
 
 **起始版本：** 9
 

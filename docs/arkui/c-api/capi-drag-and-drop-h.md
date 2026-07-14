@@ -348,7 +348,7 @@ Set drag data for a drag event.
 | Parameter | Description |
 | -- | -- |
 | [ArkUI_DragEvent](capi-arkui-nativemodule-arkui-dragevent.md)* event | Pointer to the target **ArkUI_DragEvent** object. |
-| [OH_UdmfData](../ArkData/capi-udmf-oh-udmfdata.md)* data | Drag data configuration. |
+| OH_UdmfData* data | Drag data configuration. |
 
 **Returns**:
 
@@ -373,7 +373,7 @@ This API provides data loading parameters to the system instead of directly prov
 | Parameter | Description |
 | -- | -- |
 | [ArkUI_DragEvent](capi-arkui-nativemodule-arkui-dragevent.md)* event | Pointer to the target **ArkUI_DragEvent** object. |
-| [OH_UdmfDataLoadParams](../ArkData/capi-udmf-oh-udmfdataloadparams.md)* dataLoadParams | Data loading parameters used during a drop operation. |
+| OH_UdmfDataLoadParams* dataLoadParams | Data loading parameters used during a drop operation. |
 
 **Returns**:
 
@@ -398,7 +398,7 @@ Obtains the default drag data from a drag event.
 | Parameter | Description |
 | -- | -- |
 | [ArkUI_DragEvent](capi-arkui-nativemodule-arkui-dragevent.md)* event | Pointer to the target **ArkUI_DragEvent** object. |
-| [OH_UdmfData](../ArkData/capi-udmf-oh-udmfdata.md) *data | Pointer to an **OH_UdmfData** object. The application needs to create a pointer for receiving data byusing the [OH_UdmfData_Create](../ArkData/capi-udmf-h.md#oh_udmfdata_create) API. |
+| OH_UdmfData *data | Pointer to an **OH_UdmfData** object. The application needs to create a pointer for receiving data byusing the [OH_UdmfData_Create](../ArkData/capi-udmf-h.md#oh_udmfdata_create) API. |
 
 **Returns**:
 
@@ -938,7 +938,7 @@ Starts data synchronization using the specified synchronization parameters.
 | Parameter | Description |
 | -- | -- |
 | [ArkUI_DragEvent](capi-arkui-nativemodule-arkui-dragevent.md)* event | Pointer to the target **ArkUI_DragEvent** object. |
-| [OH_UdmfGetDataParams](../ArkData/capi-udmf-oh-udmfgetdataparams.md)* options | Pointer to the **OH_UdmfGetDataParams** object. |
+| OH_UdmfGetDataParams* options | Pointer to the **OH_UdmfGetDataParams** object. |
 | char* key | Key value returned after successful data setting. The length of the string must be no less than{@link UDMF_KEY_BUFFER_LEN}. |
 | unsigned int keyLen | Length of the **key** string. |
 
@@ -1164,7 +1164,7 @@ Sets a custom drag preview for the specified component.
 | Parameter | Description |
 | -- | -- |
 | ArkUI_NodeHandle node | Pointer to the component node. |
-| OH_PixelmapNative* preview | Custom drag preview, which is a pixel map. |
+| [OH_PixelmapNative](../ImageKit/capi-image-nativemodule-oh-pixelmapnative.md)* preview | Custom drag preview, which is a pixel map. |
 
 **Returns**:
 
@@ -1491,7 +1491,7 @@ Sets the drag previews for a drag action. Only pixel map objects are supported.
 | Parameter | Description |
 | -- | -- |
 | [ArkUI_DragAction](capi-arkui-nativemodule-arkui-dragaction.md)* dragAction | Pointer to the target drag action object. |
-| OH_PixelmapNative* pixelmapArray[] | Indicates the array of the drag previews to set, which must be pixel maps. |
+| [OH_PixelmapNative](../ImageKit/capi-image-nativemodule-oh-pixelmapnative.md)* pixelmapArray[] | Indicates the array of the drag previews to set, which must be pixel maps. |
 | int32_t size | Number of drag previews. |
 
 **Returns**:
@@ -1567,7 +1567,7 @@ Sets the drag data.
 | Parameter | Description |
 | -- | -- |
 | [ArkUI_DragAction](capi-arkui-nativemodule-arkui-dragaction.md)* dragAction | Pointer to the target drag action object. |
-| [OH_UdmfData](../ArkData/capi-udmf-oh-udmfdata.md)* data | Drag data configuration. |
+| OH_UdmfData* data | Drag data configuration. |
 
 **Returns**:
 
@@ -1592,7 +1592,7 @@ This API provides data loading parameters to the system instead of directly prov
 | Parameter | Description |
 | -- | -- |
 | [ArkUI_DragAction](capi-arkui-nativemodule-arkui-dragaction.md)* dragAction | Pointer to the target drag action object. |
-| [OH_UdmfDataLoadParams](../ArkData/capi-udmf-oh-udmfdataloadparams.md)* dataLoadParams | Data loading parameters used during a drop operation. |
+| OH_UdmfDataLoadParams* dataLoadParams | Data loading parameters used during a drop operation. |
 
 **Returns**:
 

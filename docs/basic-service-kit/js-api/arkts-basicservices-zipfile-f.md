@@ -12,8 +12,7 @@ import { zlib } from '@kit.BasicServicesKit';
 function zipFile(inFile: string, outFile: string, options: Options): Promise<void>
 ```
 
-Zips a file. The execution result is returned after the compression is complete. This API uses a promise to return
-the result.
+Zips a file. The execution result is returned after the compression is complete. This API uses a promise to return the result.
 
 **Since:** 7
 

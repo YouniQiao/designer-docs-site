@@ -1,11 +1,6 @@
 # BitVector
 
-一种线性数据结构，底层基于数组实现。BitVector 中存储的元素为 bit 值，能够存储和处理 bit 级别的操作。
-
-> **NOTE**
->
-> - 此模块仅支持在 ArkTS 文件（文件后缀为 .ets）中导入使用。
-> **装饰器**：\@Sendable
+一种线性数据结构，底层基于数组实现。BitVector 中存储的元素为 bit 值，能够存储和处理 bit 级别的操作。 > **NOTE** > > - 此模块仅支持在 ArkTS 文件（文件后缀为 .ets）中导入使用。 > **装饰器**：\@Sendable
 
 **起始版本：** 12
 
@@ -361,9 +356,7 @@ push(element: number): boolean
 resize(size: number): void
 ```
 
-改变 BitVector 的长度。
-如果 **size** 大于原 BitVector 的长度，则扩充原 BitVector 的长度，多出部分的元素设置为 0。
-如果 **size** 小于等于原 BitVector 的长度，则将原 BitVector 按 size 长度大小裁剪。
+改变 BitVector 的长度。 如果 **size** 大于原 BitVector 的长度，则扩充原 BitVector 的长度，多出部分的元素设置为 0。 如果 **size** 小于等于原 BitVector 的长度，则将原 BitVector 按 size 长度大小裁剪。
 
 **起始版本：** 12
 

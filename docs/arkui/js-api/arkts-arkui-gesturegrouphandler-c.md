@@ -36,8 +36,7 @@ Constructor used to create a gesture group handler instance.
 onCancel(event: Callback<void>): GestureGroupHandler
 ```
 
-Sets the cancellation callback for the gesture group handler. The callback is triggered when a sequence gesture (
-[GestureMode](arkts-arkui-gesturemode-e.md).Sequence) is cancelled.
+Sets the cancellation callback for the gesture group handler. The callback is triggered when a sequence gesture ( [GestureMode](arkts-arkui-gesturemode-e.md).Sequence) is cancelled.
 
 **Since:** 12
 

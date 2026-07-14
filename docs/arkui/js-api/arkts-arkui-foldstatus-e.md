@@ -1,15 +1,6 @@
 # FoldStatus
 
-Enumerates the fold statuses of a foldable device. For dual-fold axis devices, when oriented with the charging port
-at the bottom, the hinges are identified from right to left as the first and second fold axes, respectively.
-
-> **NOTE**
-
-> Devices with only one fold axis can be in the **FOLD_STATUS_EXPANDED**, **FOLD_STATUS_FOLDED**, or
-> **FOLD_STATUS_HALF_FOLDED** state.
-
-> Devices with two fold axes can be in any of the states provided in the table above, except for
-> **FOLD_STATUS_UNKNOWN**, which indicates an unusable fold status.
+Enumerates the fold statuses of a foldable device. For dual-fold axis devices, when oriented with the charging port at the bottom, the hinges are identified from right to left as the first and second fold axes, respectively. > **NOTE** > Devices with only one fold axis can be in the **FOLD_STATUS_EXPANDED**, **FOLD_STATUS_FOLDED**, or > **FOLD_STATUS_HALF_FOLDED** state. > Devices with two fold axes can be in any of the states provided in the table above, except for > **FOLD_STATUS_UNKNOWN**, which indicates an unusable fold status.
 
 **Since:** 10
 
@@ -35,8 +26,7 @@ The fold status of the device is unknown or the device cannot be folded.
 FOLD_STATUS_EXPANDED = 1
 ```
 
-The device is fully open. For dual-fold axis devices, the first fold axis is fully open, and the second fold axis
-is folded.
+The device is fully open. For dual-fold axis devices, the first fold axis is fully open, and the second fold axis is folded.
 
 **Since:** 10
 
@@ -50,8 +40,7 @@ is folded.
 FOLD_STATUS_FOLDED = 2
 ```
 
-The device is folded (completely closed). For dual-fold axis devices, both the first and second fold axes are
-folded.
+The device is folded (completely closed). For dual-fold axis devices, both the first and second fold axes are folded.
 
 **Since:** 10
 
@@ -65,8 +54,7 @@ folded.
 FOLD_STATUS_HALF_FOLDED = 3
 ```
 
-The device is half-folded, somehow between fully open and completely closed. For dual-fold axis devices, the
-first fold axis is half-folded, and the second fold axis is folded.
+The device is half-folded, somehow between fully open and completely closed. For dual-fold axis devices, the first fold axis is half-folded, and the second fold axis is folded.
 
 **Since:** 10
 

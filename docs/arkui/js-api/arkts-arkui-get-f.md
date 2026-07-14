@@ -12,17 +12,7 @@ import { componentSnapshot } from '@kit.ArkUI';
 function get(id: string, callback: AsyncCallback<image.PixelMap>, options?: SnapshotOptions): void
 ```
 
-Obtains the snapshot of a component that has been loaded based on the provided [component ID](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md). This
-API uses an asynchronous callback to return the result.
-
-> **NOTE**
->
-> - Since API version 12, you can use the [getComponentSnapshot](arkts-arkui-uicontext-c.md#getcomponentsnapshot-1)
-> API in [UIContext](arkts-arkui-uicontext.md) to obtain the [ComponentSnapshot](arkts-arkui-componentsnapshot-c.md)
-> object associated with the current UI context.
->
-> - The snapshot captures content rendered in the last frame. If this API is called when the component triggers an
-> update, the re-rendered content will not be included in the obtained snapshot.
+Obtains the snapshot of a component that has been loaded based on the provided [component ID](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md). This API uses an asynchronous callback to return the result. > **NOTE** > > - Since API version 12, you can use the [getComponentSnapshot](arkts-arkui-uicontext-c.md#getcomponentsnapshot-1) > API in [UIContext](arkts-arkui-uicontext.md) to obtain the [ComponentSnapshot](arkts-arkui-componentsnapshot-c.md) > object associated with the current UI context. > > - The snapshot captures content rendered in the last frame. If this API is called when the component triggers an > update, the re-rendered content will not be included in the obtained snapshot.
 
 **Since:** 10
 
@@ -102,17 +92,7 @@ struct SnapshotExample {
 function get(id: string, options?: SnapshotOptions): Promise<image.PixelMap>
 ```
 
-Obtains the snapshot of a component that has been loaded based on the provided [component ID](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md). This
-API uses a promise to return the result.
-
-> **NOTE**
->
-> - Since API version 12, you can use the [getComponentSnapshot](arkts-arkui-uicontext-c.md#getcomponentsnapshot-1)
-> API in [UIContext](arkts-arkui-uicontext.md) to obtain the [ComponentSnapshot](arkts-arkui-componentsnapshot-c.md)
-> object associated with the current UI context.
->
-> - The snapshot captures content rendered in the last frame. If this API is called when the component triggers an
-> update, the re-rendered content will not be included in the obtained snapshot.
+Obtains the snapshot of a component that has been loaded based on the provided [component ID](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md). This API uses a promise to return the result. > **NOTE** > > - Since API version 12, you can use the [getComponentSnapshot](arkts-arkui-uicontext-c.md#getcomponentsnapshot-1) > API in [UIContext](arkts-arkui-uicontext.md) to obtain the [ComponentSnapshot](arkts-arkui-componentsnapshot-c.md) > object associated with the current UI context. > > - The snapshot captures content rendered in the last frame. If this API is called when the component triggers an > update, the re-rendered content will not be included in the obtained snapshot.
 
 **Since:** 10
 

@@ -1,7 +1,6 @@
 # InputMethodListDialog
 
-InputMethodListDialog({controller: CustomDialogController, patternOptions?: PatternOptions})
-Implements a dialog box showing the input method list.
+InputMethodListDialog({controller: CustomDialogController, patternOptions?: PatternOptions}) Implements a dialog box showing the input method list.
 
 **Since:** 11
 

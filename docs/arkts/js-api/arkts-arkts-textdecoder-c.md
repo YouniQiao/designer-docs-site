@@ -1,7 +1,6 @@
 # TextDecoder
 
-Provides APIs to decode byte arrays into strings. It supports multiple formats, including UTF-8, UTF-16LE, UTF-16BE
-, ISO-8859, and Windows-1251.
+Provides APIs to decode byte arrays into strings. It supports multiple formats, including UTF-8, UTF-16LE, UTF-16BE , ISO-8859, and Windows-1251.
 
 **Since:** 7
 
@@ -262,11 +261,7 @@ console.info("retStr = " + retStr);
 readonly encoding: string
 ```
 
-Encoding format.<br>The following formats are supported: utf-8, ibm866, iso-8859-2, iso-8859-3, iso-8859-4, iso-8
-859-5, iso-8859-6, iso-8859-7, iso-8859-8, iso-8859-8-i, iso-8859-10, iso-8859-13, iso-8859-14, iso-8859-15, koi8
--r, koi8-u, macintosh, windows-874, windows-1250, windows-1251, windows-1252, windows-1253, windows-1254, windows
--1255, windows-1256, windows-1257, windows-1258, x-mac-cyrillic, gbk, gb18030, big5, euc-jp, iso-2022-jp,
-shift_jis, euc-kr, utf-16be, utf-16le, gb2312, and iso-8859-1.
+Encoding format.<br>The following formats are supported: utf-8, ibm866, iso-8859-2, iso-8859-3, iso-8859-4, iso-8 859-5, iso-8859-6, iso-8859-7, iso-8859-8, iso-8859-8-i, iso-8859-10, iso-8859-13, iso-8859-14, iso-8859-15, koi8 -r, koi8-u, macintosh, windows-874, windows-1250, windows-1251, windows-1252, windows-1253, windows-1254, windows -1255, windows-1256, windows-1257, windows-1258, x-mac-cyrillic, gbk, gb18030, big5, euc-jp, iso-2022-jp, shift_jis, euc-kr, utf-16be, utf-16le, gb2312, and iso-8859-1.
 
 **Type:** string
 
@@ -282,8 +277,7 @@ shift_jis, euc-kr, utf-16be, utf-16le, gb2312, and iso-8859-1.
 readonly fatal: boolean
 ```
 
-Whether to display fatal errors. The value **true** means to display fatal errors, and **false** means the
-opposite.
+Whether to display fatal errors. The value **true** means to display fatal errors, and **false** means the opposite.
 
 **Type:** boolean
 
@@ -299,8 +293,7 @@ opposite.
 readonly ignoreBOM = false
 ```
 
-Whether to ignore the byte order marker (BOM). The default value is **false**, which indicates that the result
-contains the BOM.
+Whether to ignore the byte order marker (BOM). The default value is **false**, which indicates that the result contains the BOM.
 
 **Type:** false
 

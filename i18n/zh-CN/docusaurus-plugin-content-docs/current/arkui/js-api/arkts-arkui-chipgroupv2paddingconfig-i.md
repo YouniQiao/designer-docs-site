@@ -12,13 +12,7 @@ ChipGroupV2PaddingConfig定义了ChipGroupV2的上下内边距配置，用于控
 bottom: Length
 ```
 
-ChipGroupV2的下方内边距（不支持百分比）。
-
-默认值：14
-
-单位：vp
-
-值为undefined时，按默认值处理。
+ChipGroupV2的下方内边距（不支持百分比）。 默认值：14 单位：vp 值为undefined时，按默认值处理。
 
 **类型：** Length
 
@@ -36,13 +30,7 @@ ChipGroupV2的下方内边距（不支持百分比）。
 top: Length
 ```
 
-ChipGroupV2的上方内边距（不支持百分比）。
-
-默认值：14
-
-单位：vp
-
-值为undefined时，按默认值处理。
+ChipGroupV2的上方内边距（不支持百分比）。 默认值：14 单位：vp 值为undefined时，按默认值处理。
 
 **类型：** Length
 

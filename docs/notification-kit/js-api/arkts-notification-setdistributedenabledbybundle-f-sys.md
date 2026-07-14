@@ -12,8 +12,7 @@ import { notificationManager } from '@kit.NotificationKit';
 function setDistributedEnabledByBundle(bundle: BundleOption, deviceType: string, enable: boolean): Promise<void>
 ```
 
-Sets whether a specified application enables cross-device collaboration. This API uses a promise to return the
-result.
+Sets whether a specified application enables cross-device collaboration. This API uses a promise to return the result. This API can be properly called on devices other than wearables and TVs. If it is called on wearables and TVs, error code 801 is returned.
 
 **Since:** 12
 

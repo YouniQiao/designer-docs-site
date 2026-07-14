@@ -6,9 +6,7 @@
 function getJsonProfile(profileType: ProfileType, bundleName: string, moduleName?: string, userId?: number): string
 ```
 
-以同步的方法根据给定的profileType、bundleName和moduleName查询相应配置文件的JSON字符串。
-
-获取调用方自己的配置文件时不需要权限。
+以同步的方法根据给定的profileType、bundleName和moduleName查询相应配置文件的JSON字符串。 获取调用方自己的配置文件时不需要权限。
 
 **起始版本：** 11
 

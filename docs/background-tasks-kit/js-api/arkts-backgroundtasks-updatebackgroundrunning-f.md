@@ -12,20 +12,7 @@ import { backgroundTaskManager } from '@kit.BackgroundTasksKit';
 function updateBackgroundRunning(context: Context, bgModes: string[]): Promise<ContinuousTaskNotification>
 ```
 
-Updates continuous tasks of multiple types. This API uses a promise to return the result. After a continuous task
-is successfully updated, there will be a notification message without prompt tone.
-
-Before updating a continuous task, you can call
-[getAllContinuousTasks](arkts-backgroundtasks-getallcontinuoustasks-f.md#getallcontinuoustasks-1) to retrieve
-information about all existing continuous tasks. If there are no continuous tasks, the update will fail.
-
-This API can only be used to update continuous tasks that were requested via the following APIs:
-
-[startBackgroundRunning(context: Context, bgMode: BackgroundMode, wantAgent: WantAgent, callback: AsyncCallback&lt;void&gt;): void](arkts-backgroundtasks-startbackgroundrunning-f.md#startbackgroundrunning-1)
-
-[startBackgroundRunning(context: Context, bgMode: BackgroundMode, wantAgent: WantAgent): Promise&lt;void&gt;](arkts-backgroundtasks-startbackgroundrunning-f.md#startbackgroundrunning-2)
-
-[startBackgroundRunning(context: Context, bgModes: string[], wantAgent: WantAgent): Promise&lt;ContinuousTaskNotification&gt;]{@link backgroundTaskManager.startBackgroundRunning(context: Context, bgModes: string[], wantAgent: WantAgent)}
+Updates continuous tasks of multiple types. This API uses a promise to return the result. After a continuous task is successfully updated, there will be a notification message without prompt tone. Before updating a continuous task, you can call [getAllContinuousTasks](arkts-backgroundtasks-getallcontinuoustasks-f.md#getallcontinuoustasks-1) to retrieve information about all existing continuous tasks. If there are no continuous tasks, the update will fail. This API can only be used to update continuous tasks that were requested via the following APIs: [startBackgroundRunning(context: Context, bgMode: BackgroundMode, wantAgent: WantAgent, callback: AsyncCallback&lt;void&gt;): void](arkts-backgroundtasks-startbackgroundrunning-f.md#startbackgroundrunning-1) [startBackgroundRunning(context: Context, bgMode: BackgroundMode, wantAgent: WantAgent): Promise&lt;void&gt;](arkts-backgroundtasks-startbackgroundrunning-f.md#startbackgroundrunning-2) [startBackgroundRunning(context: Context, bgModes: string[], wantAgent: WantAgent): Promise&lt;ContinuousTaskNotification&gt;]{@link backgroundTaskManager.startBackgroundRunning(context: Context, bgModes: string[], wantAgent: WantAgent)}
 
 **Since:** 12
 
@@ -94,18 +81,7 @@ export default class EntryAbility extends UIAbility {
 function updateBackgroundRunning(context: Context, request: ContinuousTaskRequest): Promise<ContinuousTaskNotification>
 ```
 
-Updates a continuous task. This API uses a promise to return the result. After a continuous task is successfully
-updated, there will be a notification message without prompt tone.
-
-The following restrictions apply when updating a continuous task:
-
-1. This API can only update continuous tasks requested via
-[startBackgroundRunning(context: Context, request: ContinuousTaskRequest): Promise&lt;ContinuousTaskNotification&gt;](arkts-backgroundtasks-startbackgroundrunning-f.md#startbackgroundrunning-4).
-2. If the main type and subtype of the background tasks are the same,
-only the wants information (such as **abilityName**) in **ContinuousTaskRequest.wantAgent** can be updated.
-If the types are different, the update fails.
-3. If the continuous task to be updated or the specified update type contains the data transmission type,
-a failure message is returned.
+Updates a continuous task. This API uses a promise to return the result. After a continuous task is successfully updated, there will be a notification message without prompt tone. The following restrictions apply when updating a continuous task: 1. This API can only update continuous tasks requested via [startBackgroundRunning(context: Context, request: ContinuousTaskRequest): Promise&lt;ContinuousTaskNotification&gt;](arkts-backgroundtasks-startbackgroundrunning-f.md#startbackgroundrunning-4). 2. If the main type and subtype of the background tasks are the same, only the wants information (such as **abilityName**) in **ContinuousTaskRequest.wantAgent** can be updated. If the types are different, the update fails. 3. If the continuous task to be updated or the specified update type contains the data transmission type, a failure message is returned.
 
 **Since:** 21
 

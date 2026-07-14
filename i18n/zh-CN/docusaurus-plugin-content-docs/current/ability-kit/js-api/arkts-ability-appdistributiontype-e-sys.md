@@ -56,9 +56,7 @@ ENTERPRISE_NORMAL = 3
 ENTERPRISE_MDM = 4
 ```
 
-企业MDM应用，只能安装在企业设备上。需要被激活
-[adminManager.enableAdmin](../../apis-mdm-kit/arkts-apis/arkts-mdm-enableadmin-f-sys.md#enableadmin-1)
-后，才能安装普通企业应用。
+企业MDM应用，只能安装在企业设备上。需要被激活 [adminManager.enableAdmin](../../apis-mdm-kit/arkts-apis/arkts-mdm-enableadmin-f-sys.md#enableadmin-1) 后，才能安装普通企业应用。
 
 **起始版本：** 12
 

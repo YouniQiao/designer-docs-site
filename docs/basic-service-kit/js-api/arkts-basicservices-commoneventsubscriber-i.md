@@ -12,9 +12,7 @@ The **CommonEventSubscriber** module provides APIs for describing the common eve
 abortCommonEvent(callback: AsyncCallback<void>): void
 ```
 
-Aborts an ordered common event. This API is used with
-[finishCommonEvent](arkts-basicservices-commoneventsubscriber-i.md#finishcommonevent-1). After the abort,
-the common event is not sent to the next subscriber. This API uses an asynchronous callback to return the result.
+Aborts an ordered common event. This API is used with [finishCommonEvent](arkts-basicservices-commoneventsubscriber-i.md#finishcommonevent-1). After the abort, the common event is not sent to the next subscriber. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 
@@ -38,9 +36,7 @@ the common event is not sent to the next subscriber. This API uses an asynchrono
 abortCommonEvent(): Promise<void>
 ```
 
-Aborts this ordered common event. This API is used with
-[finishCommonEvent](arkts-basicservices-commoneventsubscriber-i.md#finishcommonevent-1). After the abort,
-the common event is not sent to the next subscriber. This API uses a promise to return the result.
+Aborts this ordered common event. This API is used with [finishCommonEvent](arkts-basicservices-commoneventsubscriber-i.md#finishcommonevent-1). After the abort, the common event is not sent to the next subscriber. This API uses a promise to return the result.
 
 **Since:** 7
 
@@ -58,9 +54,7 @@ the common event is not sent to the next subscriber. This API uses a promise to 
 abortCommonEventSync(): void
 ```
 
-Aborts this ordered common event synchronously. This API is used with
-[finishCommonEvent](arkts-basicservices-commoneventsubscriber-i.md#finishcommonevent-1). After the abort,
-the common event is not sent to the next subscriber.
+Aborts this ordered common event synchronously. This API is used with [finishCommonEvent](arkts-basicservices-commoneventsubscriber-i.md#finishcommonevent-1). After the abort, the common event is not sent to the next subscriber.
 
 **Since:** 10
 
@@ -72,9 +66,7 @@ the common event is not sent to the next subscriber.
 clearAbortCommonEvent(callback: AsyncCallback<void>): void
 ```
 
-Clears the abort state of an ordered common event. Use this API together with
-[finishCommonEvent](arkts-basicservices-commoneventsubscriber-i.md#finishcommonevent-1), and the common
-event can be passed to the next subscriber. This API uses an asynchronous callback to return the result.
+Clears the abort state of an ordered common event. Use this API together with [finishCommonEvent](arkts-basicservices-commoneventsubscriber-i.md#finishcommonevent-1), and the common event can be passed to the next subscriber. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 
@@ -98,9 +90,7 @@ event can be passed to the next subscriber. This API uses an asynchronous callba
 clearAbortCommonEvent(): Promise<void>
 ```
 
-Clears the abort state of this ordered common event. Use this API together with
-[finishCommonEvent](arkts-basicservices-commoneventsubscriber-i.md#finishcommonevent-1), and the common
-event can be passed to the next subscriber. This API uses a promise to return the result.
+Clears the abort state of this ordered common event. Use this API together with [finishCommonEvent](arkts-basicservices-commoneventsubscriber-i.md#finishcommonevent-1), and the common event can be passed to the next subscriber. This API uses a promise to return the result.
 
 **Since:** 7
 
@@ -118,9 +108,7 @@ event can be passed to the next subscriber. This API uses a promise to return th
 clearAbortCommonEventSync(): void
 ```
 
-Clears the abort state of this ordered common event. Use this API together with
-[finishCommonEvent](arkts-basicservices-commoneventsubscriber-i.md#finishcommonevent-1), and the common
-event can be passed to the next subscriber.
+Clears the abort state of this ordered common event. Use this API together with [finishCommonEvent](arkts-basicservices-commoneventsubscriber-i.md#finishcommonevent-1), and the common event can be passed to the next subscriber.
 
 **Since:** 10
 
@@ -174,8 +162,7 @@ Finishes this ordered common event. This API uses a promise to return the result
 getAbortCommonEvent(callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether this ordered common event should be aborted. This API uses an asynchronous callback to return the
-result.
+Checks whether this ordered common event should be aborted. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 
@@ -235,8 +222,7 @@ Checks whether this ordered common event should be aborted.
 getCode(callback: AsyncCallback<number>): void
 ```
 
-Obtains the result code (number type) of an ordered common event. This API uses an asynchronous callback to return
-the result.
+Obtains the result code (number type) of an ordered common event. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 
@@ -302,8 +288,7 @@ Obtains the result code (number type) of an ordered common event.
 getData(callback: AsyncCallback<string>): void
 ```
 
-Obtains the result data (string type) of an ordered common event. This API uses an asynchronous callback to return
-the result.
+Obtains the result data (string type) of an ordered common event. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 
@@ -435,8 +420,7 @@ Obtains the subscriber information.
 isOrderedCommonEvent(callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether the current common event is an ordered common event. This API uses an asynchronous callback to
-return the result.
+Checks whether the current common event is an ordered common event. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 
@@ -556,8 +540,7 @@ Checks whether a common event is a sticky one.
 setCode(code: number, callback: AsyncCallback<void>): void
 ```
 
-Sets the result code (number type) of an ordered common event. This API uses an asynchronous callback to return the
-result.
+Sets the result code (number type) of an ordered common event. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 
@@ -616,8 +599,7 @@ Sets the result code (number type) of an ordered common event. This API uses a p
 setCodeAndData(code: number, data: string, callback: AsyncCallback<void>): void
 ```
 
-Sets the result code and data of an ordered common event. This API uses an asynchronous callback to return the
-result.
+Sets the result code and data of an ordered common event. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 
@@ -731,8 +713,7 @@ Sets the result code (number type) of an ordered common event.
 setData(data: string, callback: AsyncCallback<void>): void
 ```
 
-Sets the result data (string type) of an ordered common event. This API uses an asynchronous callback to return the
-result.
+Sets the result data (string type) of an ordered common event. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 

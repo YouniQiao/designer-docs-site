@@ -1,11 +1,6 @@
 # TextResponseType
 
-Response type of the menu.
-
-> **NOTE**
->
-> The system follows the priority order below when determining the menu type to display during text interactions:
->
+Response type of the menu. > **NOTE** > > The system follows the priority order below when determining the menu type to display during text interactions: >
 
 **Since:** 11
 
@@ -65,9 +60,7 @@ The menu is displayed when the component is selected.
 DEFAULT = 3
 ```
 
-When this type is registered but **RIGHT_CLICK**, **LONG_PRESS**, or **SELECT** types are not registered, this type
-will be triggered and displayed for right-click, long press, mouse selection, and
-[selection](TextAttribute#selection) API calls.
+When this type is registered but **RIGHT_CLICK**, **LONG_PRESS**, or **SELECT** types are not registered, this type will be triggered and displayed for right-click, long press, mouse selection, and [selection](TextAttribute#selection) API calls.
 
 **Since:** 15
 

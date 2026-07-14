@@ -1,12 +1,6 @@
 # MediaSource
 
-媒体数据信息。来源于
-[createMediaSourceWithUrl](arkts-media-createmediasourcewithurl-f.md#createmediasourcewithurl-1)
-。
-
-> **说明：**
->
-> - 本Interface首批接口从API version 12开始支持。
+媒体数据信息。来源于 [createMediaSourceWithUrl](arkts-media-createmediasourcewithurl-f.md#createmediasourcewithurl-1) 。 > **说明：** > > - 本Interface首批接口从API version 12开始支持。
 
 **起始版本：** 12
 
@@ -118,10 +112,7 @@ setMimeType(mimeType: AVMimeTypes): void
 setTrackSelectionFilter(filter: TrackSelectionFilter): void
 ```
 
-Set the audio and video feature filtering items of the MediaSource,
-After the user defines the audio and video filtering items of the MediaSource,
-When playing or downloading MediaSource data offline,
-Preferentially perform a corresponding operation in the filtering feature.
+Set the audio and video feature filtering items of the MediaSource, After the user defines the audio and video filtering items of the MediaSource, When playing or downloading MediaSource data offline, Preferentially perform a corresponding operation in the filtering feature.
 
 **起始版本：** 26.0.0
 

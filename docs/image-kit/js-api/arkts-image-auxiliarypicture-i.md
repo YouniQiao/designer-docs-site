@@ -1,16 +1,6 @@
 # AuxiliaryPicture
 
-The **AuxiliaryPicture** class is used to read or write auxiliary picture data of an image and obtain auxiliary
-picture information of an image. The supported types of auxiliary pictures can be found in
-[AuxiliaryPictureType](arkts-image-auxiliarypicturetype-e.md).
-
-Before calling any API in AuxiliaryPicture, you must create an AuxiliaryPicture instance using
-[image.createAuxiliaryPicture](arkts-image-createauxiliarypicture-f.md#createauxiliarypicture-1) or
-[getAuxiliaryPicture](arkts-image-picture-i.md#getauxiliarypicture-1) in Picture.
-
-Images occupy a large amount of memory. When you finish using an AuxiliaryPicture instance, call
-[release](arkts-image-auxiliarypicture-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure
-that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
+The **AuxiliaryPicture** class is used to read or write auxiliary picture data of an image and obtain auxiliary picture information of an image. The supported types of auxiliary pictures can be found in [AuxiliaryPictureType](arkts-image-auxiliarypicturetype-e.md). Before calling any API in AuxiliaryPicture, you must create an AuxiliaryPicture instance using [image.createAuxiliaryPicture](arkts-image-createauxiliarypicture-f.md#createauxiliarypicture-1) or [getAuxiliaryPicture](arkts-image-picture-i.md#getauxiliarypicture-1) in Picture. Images occupy a large amount of memory. When you finish using an AuxiliaryPicture instance, call [release](arkts-image-auxiliarypicture-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
 
 **Since:** 13
 
@@ -95,8 +85,7 @@ Obtains the type of this auxiliary picture.
 readPixelsToBuffer(): Promise<ArrayBuffer>
 ```
 
-Reads pixels of this auxiliary picture and writes the data to an ArrayBuffer. This API uses a promise to return
-the result.
+Reads pixels of this auxiliary picture and writes the data to an ArrayBuffer. This API uses a promise to return the result.
 
 **Since:** 13
 
@@ -114,13 +103,7 @@ the result.
 release():void
 ```
 
-Releases this AuxiliaryPicture object. No value is returned.
-
-Images occupy a large amount of memory. When you finish using an AuxiliaryPicture instance, call this API to free
-the memory promptly.
-
-Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished
-and the instance is no longer needed.
+Releases this AuxiliaryPicture object. No value is returned. Images occupy a large amount of memory. When you finish using an AuxiliaryPicture instance, call this API to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
 
 **Since:** 13
 
@@ -188,8 +171,7 @@ Sets the metadata for this auxiliary picture. This API uses a promise to return 
 writePixelsFromBuffer(data: ArrayBuffer): Promise<void>
 ```
 
-Reads pixels from an ArrayBuffer and writes the data to this AuxiliaryPicture object. This API uses a promise to
-return the result.
+Reads pixels from an ArrayBuffer and writes the data to this AuxiliaryPicture object. This API uses a promise to return the result.
 
 **Since:** 13
 

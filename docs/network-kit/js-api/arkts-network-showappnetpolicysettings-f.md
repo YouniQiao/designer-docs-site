@@ -12,8 +12,7 @@ import { policy } from '@kit.NetworkKit';
 function showAppNetPolicySettings(context: Context): Promise<void>
 ```
 
-Open the network settings interface of the application, which is presented in a semi-modal form and can
-be used to configure the network connection method. This API uses a promise to return the result.
+Open the network settings interface of the application, which is presented in a semi-modal form and can be used to configure the network connection method. This API uses a promise to return the result.
 
 **Since:** 22
 

@@ -12,9 +12,7 @@ import { certificateManager } from '@kit.DeviceCertificateKit';
 function init(authUri: string, spec: CMSignatureSpec, callback: AsyncCallback<CMHandle>): void
 ```
 
-Indicates the initialization of signature and signature verification using credentials. This is the first step in
-the signature verification process. Later, the update and finish interfaces need to be invoked in sequence to
-complete the operations. Use Callback to return the result asynchronously.
+Indicates the initialization of signature and signature verification using credentials. This is the first step in the signature verification process. Later, the update and finish interfaces need to be invoked in sequence to complete the operations. Use Callback to return the result asynchronously.
 
 **Since:** 11
 
@@ -72,8 +70,7 @@ try {
 function init(authUri: string, spec: CMSignatureSpec): Promise<CMHandle>
 ```
 
-Initializes the signing or signature verification operation using the specified credential. This API uses a promise
-to return the result.
+Initializes the signing or signature verification operation using the specified credential. This API uses a promise to return the result.
 
 **Since:** 11
 

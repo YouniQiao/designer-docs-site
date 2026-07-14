@@ -13,26 +13,7 @@ function bind(floatViewController: FloatViewController, floatingBallController: 
     floatingBallParams: floatingBall.FloatingBallParams): Promise<void>
 ```
 
-Binds the float view and floating ball. You need to create the
-[float view controller](arkts-arkui-floatviewcontroller-i.md) and
-[floating ball controller](arkts-arkui-floatingballcontroller-i.md) first, and neither
-of them has been started. This API uses a promise to return the result.
-
-> **NOTE**
->
-> - After the binding is successful, calling [start()](arkts-arkui-floatviewcontroller-i.md#start-1) or
-> [startFloatingBall()](arkts-arkui-floatingballcontroller-i.md#startfloatingball-1) will
-> create both a float view and the floating ball window, and trigger the status callback registered for the
-> corresponding window. However, only one window is displayed at a time, and the display sequence depends on which
-> controller's start API is called first.
->
-> - After the binding is successful, users can switch between the float view and the floating ball window by
-> clicking.
->
-> - After the binding is successful, calling the stop API ([stop()](arkts-arkui-floatviewcontroller-i.md#stop-1) or
-> [stopFloatingBall()](arkts-arkui-floatingballcontroller-i.md#stopfloatingball-1)) of
-> either controller will destroy both the float view and the floating ball window, and trigger the status callback
-> registered for the corresponding window.
+Binds the float view and floating ball. You need to create the [float view controller](arkts-arkui-floatviewcontroller-i.md) and [floating ball controller](arkts-arkui-floatingballcontroller-i.md) first, and neither of them has been started. This API uses a promise to return the result. > **NOTE** > > - After the binding is successful, calling [start()](arkts-arkui-floatviewcontroller-i.md#start-1) or > [startFloatingBall()](arkts-arkui-floatingballcontroller-i.md#startfloatingball-1) will > create both a float view and the floating ball window, and trigger the status callback registered for the > corresponding window. However, only one window is displayed at a time, and the display sequence depends on which > controller's start API is called first. > > - After the binding is successful, users can switch between the float view and the floating ball window by > clicking. > > - After the binding is successful, calling the stop API ([stop()](arkts-arkui-floatviewcontroller-i.md#stop-1) or > [stopFloatingBall()](arkts-arkui-floatingballcontroller-i.md#stopfloatingball-1)) of > either controller will destroy both the float view and the floating ball window, and trigger the status callback > registered for the corresponding window.
 
 **Since:** 26.0.0
 

@@ -1,16 +1,6 @@
 # Path2D
 
-路径对象，支持通过对象的接口进行路径的描述，并通过Canvas的stroke接口或者fill接口进行绘制。
-
-> **说明：**
->
-> Path2D对象不支持重置已设置的路径，如需新路径可重新创建一个空的Path2D对象。
->
-> Path2D对象的方法无法对
-> [CanvasRenderingContext2D](../../../../reference/apis-arkui/arkui-ts/ts-canvasrenderingcontext2d.md)
-> 和
-> [OffscreenCanvasRenderingContext2D](../../../../reference/apis-arkui/arkui-ts/ts-offscreencanvasrenderingcontext2d.md)
-> 对象中设置的路径生效。
+路径对象，支持通过对象的接口进行路径的描述，并通过Canvas的stroke接口或者fill接口进行绘制。 > **说明：** > > Path2D对象不支持重置已设置的路径，如需新路径可重新创建一个空的Path2D对象。 > > Path2D对象的方法无法对 > [CanvasRenderingContext2D](../../../../reference/apis-arkui/arkui-ts/ts-canvasrenderingcontext2d.md) > 和 > [OffscreenCanvasRenderingContext2D](../../../../reference/apis-arkui/arkui-ts/ts-offscreencanvasrenderingcontext2d.md) > 对象中设置的路径生效。
 
 **继承/实现关系：** Path2D extends [CanvasPath](arkts-arkui-canvaspath-c.md)
 

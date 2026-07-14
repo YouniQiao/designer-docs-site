@@ -1,9 +1,6 @@
 # UIListEvent
 
-frameNode中[getEvent('List')](FrameNode:typeNode.getEvent(node: FrameNode, nodeType: 'List'))方法的返回值，可用于给List节点设置
-滚动事件。
-
-UIListEvent继承于[UIScrollableCommonEvent](arkts-arkui-uiscrollablecommonevent-i.md)。
+frameNode中[getEvent('List')](FrameNode:typeNode.getEvent(node: FrameNode, nodeType: 'List'))方法的返回值，可用于给List节点设置 滚动事件。 UIListEvent继承于[UIScrollableCommonEvent](arkts-arkui-uiscrollablecommonevent-i.md)。
 
 **继承/实现关系：** UIListEvent extends [UIScrollableCommonEvent](arkts-arkui-uiscrollablecommonevent-i.md)
 
@@ -17,9 +14,7 @@ UIListEvent继承于[UIScrollableCommonEvent](arkts-arkui-uiscrollablecommoneven
 setOnDidScroll(callback: OnScrollCallback | undefined): void
 ```
 
-设置[onDidScroll](../../../../reference/apis-arkui/arkui-ts/ts-container-scrollable-common.md#ondidscroll12)事件的回调。
-
-方法入参为undefined时，会重置事件回调。
+设置[onDidScroll](../../../../reference/apis-arkui/arkui-ts/ts-container-scrollable-common.md#ondidscroll12)事件的回调。 方法入参为undefined时，会重置事件回调。
 
 **起始版本：** 19
 
@@ -41,9 +36,7 @@ setOnDidScroll(callback: OnScrollCallback | undefined): void
 setOnScrollIndex(callback: OnListScrollIndexCallback | undefined): void
 ```
 
-设置[onScrollIndex](../../../../reference/apis-arkui/arkui-ts/ts-container-list.md#onscrollindex)事件的回调。
-
-方法入参为undefined时，会重置事件回调。
+设置[onScrollIndex](../../../../reference/apis-arkui/arkui-ts/ts-container-list.md#onscrollindex)事件的回调。 方法入参为undefined时，会重置事件回调。
 
 **起始版本：** 19
 
@@ -65,9 +58,7 @@ setOnScrollIndex(callback: OnListScrollIndexCallback | undefined): void
 setOnScrollVisibleContentChange(callback: OnScrollVisibleContentChangeCallback | undefined): void
 ```
 
-设置[onScrollVisibleContentChange](ListAttribute#onScrollVisibleContentChange)事件的回调。
-
-方法入参为undefined时，会重置事件回调。
+设置[onScrollVisibleContentChange](ListAttribute#onScrollVisibleContentChange)事件的回调。 方法入参为undefined时，会重置事件回调。
 
 **起始版本：** 19
 
@@ -89,9 +80,7 @@ setOnScrollVisibleContentChange(callback: OnScrollVisibleContentChangeCallback |
 setOnWillScroll(callback: OnWillScrollCallback | undefined): void
 ```
 
-设置[onWillScroll](../../../../reference/apis-arkui/arkui-ts/ts-container-scrollable-common.md#onwillscroll12)事件的回调。
-
-方法入参为undefined时，会重置事件回调。
+设置[onWillScroll](../../../../reference/apis-arkui/arkui-ts/ts-container-scrollable-common.md#onwillscroll12)事件的回调。 方法入参为undefined时，会重置事件回调。
 
 **起始版本：** 19
 

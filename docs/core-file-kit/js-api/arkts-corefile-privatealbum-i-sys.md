@@ -1,6 +1,6 @@
 # PrivateAlbum (System API)
 
-Defines the private album
+Provides APIs for managing the system albums. This API will be deprecated. Use [Album](arkts-corefile-album-i-sys.md) instead.
 
 **Inheritance/Implementation:** PrivateAlbum extends [AbsAlbum](arkts-corefile-absalbum-i-sys.md)
 
@@ -26,7 +26,7 @@ import { userFileManager } from '@kit.CoreFileKit';
 delete(uri: string, callback: AsyncCallback<void>): void
 ```
 
-Delete asset permanently from Trash bin, only support the Trash album
+Deletes a file from the system album. Only the files in the trash can be deleted. This API uses an asynchronous callback to return the result. This API will be deprecated. Use [Album.deletePhotoAssets](arkts-corefile-album-i-sys.md#deletephotoassets-1) instead.
 
 **Since:** 9
 
@@ -44,8 +44,8 @@ Delete asset permanently from Trash bin, only support the Trash album
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uri | string | Yes | uri of asset |
-| callback | AsyncCallback&lt;void&gt; | Yes | No value returned |
+| uri | string | Yes | File URI. |
+| callback | AsyncCallback&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Example**
 
@@ -83,7 +83,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 delete(uri: string): Promise<void>
 ```
 
-Delete asset permanently from Trash bin, only support the Trash album
+Deletes a file from the system album. Only the files in the trash can be deleted. This API uses a promise to return the result. This API will be deprecated. Use [Album.deletePhotoAssets](arkts-corefile-album-i-sys.md#deletephotoassets-1) instead.
 
 **Since:** 9
 
@@ -101,13 +101,13 @@ Delete asset permanently from Trash bin, only support the Trash album
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uri | string | Yes | Uri of asset |
+| uri | string | Yes | File URI. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | A Promise instance, no value returned |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 
@@ -144,7 +144,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 recover(uri: string, callback: AsyncCallback<void>): void
 ```
 
-Recover asset from Trash bin, only support the Trash album
+Recovers a file in the system album. Only the files in the trash can be recovered. This API uses an asynchronous callback to return the result. This API will be deprecated. Use [Album.recoverPhotoAssets](arkts-corefile-album-i-sys.md#recoverphotoassets-1) instead.
 
 **Since:** 9
 
@@ -162,8 +162,8 @@ Recover asset from Trash bin, only support the Trash album
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uri | string | Yes | Uri of asset |
-| callback | AsyncCallback&lt;void&gt; | Yes | No value returned |
+| uri | string | Yes | File URI. |
+| callback | AsyncCallback&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Example**
 
@@ -209,7 +209,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 recover(uri: string): Promise<void>
 ```
 
-Recover asset from Trash bin, only support the Trash album
+Recovers a file in the system album. Only the files in the trash can be recovered. This API uses a promise to return the result. This API will be deprecated. Use [Album.recoverPhotoAssets](arkts-corefile-album-i-sys.md#recoverphotoassets-1) instead.
 
 **Since:** 9
 
@@ -227,13 +227,13 @@ Recover asset from Trash bin, only support the Trash album
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uri | string | Yes | Uri of asset |
+| uri | string | Yes | File URI. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | A Promise instance, no value returned |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 

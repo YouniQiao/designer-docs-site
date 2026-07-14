@@ -36,8 +36,7 @@ Coordinate correction mode.
 isInject?: boolean
 ```
 
-Whether the touch event is an injection event. For details about injection events, see
-[@ohos.multimodalInput.inputEventClient](arkts-multimodalinput-inputeventclient.md).
+Whether the touch event is an injection event. For details about injection events, see [@ohos.multimodalInput.inputEventClient](arkts-multimodalinput-inputeventclient.md).
 
 **Type:** boolean
 

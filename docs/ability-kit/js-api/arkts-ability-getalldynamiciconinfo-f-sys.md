@@ -12,15 +12,7 @@ import { bundleManager } from '@kit.AbilityKit';
 function getAllDynamicIconInfo(userId?: number): Promise<Array<DynamicIconInfo>>
 ```
 
-Obtains the dynamic icon information of all applications and all application clones of a specified user. This API
-uses a promise to return the result.
-
-To obtain the dynamic icon information of all applications and all application clones of the current user, you must
-request the ohos.permission.GET_BUNDLE_INFO_PRIVILEGED permission.
-
-To obtain the dynamic icon information of all applications and all application clones of other users or all users,
-you must request the ohos.permission.GET_BUNDLE_INFO_PRIVILEGED and ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS
-permissions.
+Obtains the dynamic icon information of all applications and all application clones of a specified user. This API uses a promise to return the result. To obtain the dynamic icon information of all applications and all application clones of the current user, you must request the ohos.permission.GET_BUNDLE_INFO_PRIVILEGED permission. To obtain the dynamic icon information of all applications and all application clones of other users or all users, you must request the ohos.permission.GET_BUNDLE_INFO_PRIVILEGED and ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS permissions.
 
 **Since:** 20
 

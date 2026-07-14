@@ -1,10 +1,6 @@
 # LauncherAbilityInfo
 
-桌面应用的Ability信息，可以通过
-[getLauncherAbilityInfoSync](arkts-ability-getlauncherabilityinfosync-f.md#getlauncherabilityinfosync-1)
-<!--Del-->或者
-[getLauncherAbilityInfo](./../@ohos.bundle.launcherBundleManager:launcherBundleManager.getLauncherAbilityInfo(bundleName: string, userId: int, callback: AsyncCallback<Array<LauncherAbilityInfo>>))
-<!--DelEnd-->获取。
+桌面应用的Ability信息，可以通过 [getLauncherAbilityInfoSync](arkts-ability-getlauncherabilityinfosync-f.md#getlauncherabilityinfosync-1) <!--Del-->或者 [getLauncherAbilityInfo](./../@ohos.bundle.launcherBundleManager:launcherBundleManager.getLauncherAbilityInfo(bundleName: string, userId: int, callback: AsyncCallback<Array<LauncherAbilityInfo>>)) <!--DelEnd-->获取。
 
 **起始版本：** 18
 

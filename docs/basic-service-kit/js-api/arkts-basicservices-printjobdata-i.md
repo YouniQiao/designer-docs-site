@@ -130,8 +130,7 @@ FD list of files to print.
 isAutoRotate?: boolean
 ```
 
-Whether to automatically rotate the page. The value **true** means to automatically rotate the page, and
-**false** means the opposite. Default value: **true**.
+Whether to automatically rotate the page. The value **true** means to automatically rotate the page, and **false** means the opposite. Default value: **true**.
 
 **Type:** boolean
 
@@ -147,8 +146,7 @@ Whether to automatically rotate the page. The value **true** means to automatica
 isBorderless?: boolean
 ```
 
-Whether to print without margins. The value **true** means to print without margins, and **false** means the
-opposite. Default value: **true**.
+Whether to print without margins. The value **true** means to print without margins, and **false** means the opposite. Default value: **true**.
 
 **Type:** boolean
 
@@ -164,8 +162,7 @@ opposite. Default value: **true**.
 isCollate?: boolean
 ```
 
-Whether pages are printed uncollated. The value **true** means that pages are printed uncollated, and **false**
-means the opposite. Default value: **true**.
+Whether pages are printed uncollated. The value **true** means that pages are printed uncollated, and **false** means the opposite. Default value: **true**.
 
 **Type:** boolean
 
@@ -181,8 +178,7 @@ means the opposite. Default value: **true**.
 isLandscape: boolean
 ```
 
-Whether pages are printed in landscape mode. The value **true** indicates that pages are printed in landscape
-mode, and **false** indicates that pages are printed in portrait mode. The default value is **false**.
+Whether pages are printed in landscape mode. The value **true** indicates that pages are printed in landscape mode, and **false** indicates that pages are printed in portrait mode. The default value is **false**.
 
 **Type:** boolean
 
@@ -198,8 +194,7 @@ mode, and **false** indicates that pages are printed in portrait mode. The defau
 isReverse?: boolean
 ```
 
-Whether pages are printed in reverse order. The value **true** means that pages are printed in reverse order, and
-**false** means that pages are printed in normal order. The default value is **false**.
+Whether pages are printed in reverse order. The value **true** means that pages are printed in reverse order, and **false** means that pages are printed in normal order. The default value is **false**.
 
 **Type:** boolean
 

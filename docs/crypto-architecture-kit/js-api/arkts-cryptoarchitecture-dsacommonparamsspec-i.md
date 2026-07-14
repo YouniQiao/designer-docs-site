@@ -1,10 +1,6 @@
 # DSACommonParamsSpec
 
-Defines a child class of [AsyKeySpec](arkts-cryptoarchitecture-asykeyspec-i.md) used to specify the common parameters of
-the public and private keys in the DSA algorithm. It can be used to randomly generate a public or private key.
-
-To generate a key based on key parameters, pass it to
-[createAsyKeyGeneratorBySpec()](arkts-cryptoarchitecture-createasykeygeneratorbyspec-f.md#createasykeygeneratorbyspec-1) to create a key generator.
+Defines a child class of [AsyKeySpec](arkts-cryptoarchitecture-asykeyspec-i.md) used to specify the common parameters of the public and private keys in the DSA algorithm. It can be used to randomly generate a public or private key. To generate a key based on key parameters, pass it to [createAsyKeyGeneratorBySpec()](arkts-cryptoarchitecture-createasykeygeneratorbyspec-f.md#createasykeygeneratorbyspec-1) to create a key generator.
 
 **Inheritance/Implementation:** DSACommonParamsSpec extends [AsyKeySpec](arkts-cryptoarchitecture-asykeyspec-i.md)
 

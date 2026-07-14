@@ -12,12 +12,7 @@ import { dlpPermission } from '@kit.DataProtectionKit';
 function setSandboxAppConfig(configInfo: string): Promise<void>
 ```
 
-Sets the configuration information of the sandbox application. The configuration information is in JSON string
-format and can be set by the application. After the API is successfully called, the sandbox application runs
-based on the configuration information. This API uses a promise to return the result.
-
-This API sets the sandbox application configuration so that the application can pass custom parameters as
-required.
+Sets the configuration information of the sandbox application. The configuration information is in JSON string format and can be set by the application. After the API is successfully called, the sandbox application runs based on the configuration information. This API uses a promise to return the result. This API sets the sandbox application configuration so that the application can pass custom parameters as required.
 
 **Since:** 11
 
@@ -27,7 +22,7 @@ required.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| configInfo | string | Yes | Sandbox application configuration. The value contains a maximum of 4,194,304bytes. If the value is out of range, error code 19100001 is thrown. |
+| configInfo | string | Yes | Sandbox application configuration. The value contains a maximum of 4,194,304bytes. If the value is out of range, error code 401 is thrown. |
 
 **Return value:**
 

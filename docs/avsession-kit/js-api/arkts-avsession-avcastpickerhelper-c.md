@@ -101,10 +101,7 @@ Register picker state change callback.
 resetCommunicationDevice(): Promise<void>
 ```
 
-Reset audio device to be default set by the platform which is used for communication use cases
-including voice or video calls.
-For example, the audio output device will be switched to earpiece for voice call and
-to speaker for video call on phone.
+Reset audio device to be default set by the platform which is used for communication use cases including voice or video calls. For example, the audio output device will be switched to earpiece for voice call and to speaker for video call on phone.
 
 **Since:** 21
 

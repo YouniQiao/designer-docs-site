@@ -12,8 +12,7 @@ Enumerates the IP address types.
 STATIC = 0
 ```
 
-Static IP address, which is used in scenarios where a fixed IP address is required, for example, a fixed IP
-address of an office printer.
+Static IP address, which is used in scenarios where a fixed IP address is required, for example, a fixed IP address of an office printer.
 
 **Since:** 12
 
@@ -27,8 +26,7 @@ address of an office printer.
 DHCP = 1
 ```
 
-Dynamic Host Configuration Protocol (DHCP), which is a service that automatically allocates IP addresses and
-other network configuration information to devices on a network.
+Dynamic Host Configuration Protocol (DHCP), which is a service that automatically allocates IP addresses and other network configuration information to devices on a network.
 
 **Since:** 12
 

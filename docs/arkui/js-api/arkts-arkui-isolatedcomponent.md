@@ -2,7 +2,6 @@
 
 Defines IsolatedComponent Component instance.
 
-
 ## Summary
 
 - [IsolatedOptions](arkts-arkui-isolatedcomponent-isolatedoptions-i-sys.md)

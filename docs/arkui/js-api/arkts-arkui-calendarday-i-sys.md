@@ -56,8 +56,7 @@ Day.
 dayMarkValue: string
 ```
 
-Indicates the off-duty flag information. The options are work and off.By default, the off-duty flag information is
-not required.
+Indicates the off-duty flag information. The options are work and off.By default, the off-duty flag information is not required.
 
 **Type:** string
 
@@ -77,8 +76,7 @@ not required.
 hasSchedule: boolean
 ```
 
-Indicates whether to display has Schedule.
-The week sequence is one, two, three, four, five, six.
+Indicates whether to display has Schedule. The week sequence is one, two, three, four, five, six.
 
 **Type:** boolean
 
@@ -98,8 +96,7 @@ The week sequence is one, two, three, four, five, six.
 index: number
 ```
 
-Indicates the sequence number of the 7 x 7 (7 x 6) grid layout on a calendar page by row.
-The week sequence is one, two, three, four, five, six.
+Indicates the sequence number of the 7 x 7 (7 x 6) grid layout on a calendar page by row. The week sequence is one, two, three, four, five, six.
 
 **Type:** number
 
@@ -159,8 +156,7 @@ Lunar day.
 lunarMonth: string
 ```
 
-Lunar moon.
-The week sequence is one, two, three, four, five, six.
+Lunar moon. The week sequence is one, two, three, four, five, six.
 
 **Type:** string
 

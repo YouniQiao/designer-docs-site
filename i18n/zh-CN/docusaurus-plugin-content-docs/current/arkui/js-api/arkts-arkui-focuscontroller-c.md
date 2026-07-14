@@ -1,10 +1,6 @@
 # FocusController
 
-提供控制焦点的能力，如清除、移动和激活焦点等功能。
-
-> **说明：**
->
-> 以下API需先使用UIContext中的[getFocusController()](arkts-arkui-uicontext-c.md#getfocuscontroller-1)方法获取FocusController实例，再通过该实例调用对应方法。
+提供控制焦点的能力，如清除、移动和激活焦点等功能。 > **说明：** > > 以下API需先使用UIContext中的[getFocusController()](arkts-arkui-uicontext-c.md#getfocuscontroller-1)方法获取FocusController实例，再通过该实例调用对应方法。
 
 **起始版本：** 12
 
@@ -55,9 +51,7 @@ clearFocus(): void
 isActive(): boolean
 ```
 
-返回UI实例的焦点激活态。
-
-焦点激活态可参考[基础概念：焦点激活态](../../../../ui/arkts-common-events-focus-event.md#基础概念)。
+返回UI实例的焦点激活态。 焦点激活态可参考[基础概念：焦点激活态](../../../../ui/arkts-common-events-focus-event.md#基础概念)。
 
 **起始版本：** 20
 

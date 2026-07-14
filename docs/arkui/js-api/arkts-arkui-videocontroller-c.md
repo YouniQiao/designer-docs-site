@@ -74,8 +74,7 @@ Requests full-screen playback.
 reset(): void
 ```
 
-Resets the **AVPlayer** instance of this component, which displays the current frame and sets the playback to start
-from the beginning for subsequent playbacks.
+Resets the **AVPlayer** instance of this component, which displays the current frame and sets the playback to start from the beginning for subsequent playbacks.
 
 **Since:** 12
 
@@ -91,12 +90,7 @@ from the beginning for subsequent playbacks.
 setCurrentTime(value: number)
 ```
 
-Sets the video playback position.
-
-> **NOTE**
->
-> To start playback from a specific position, disable autoplay, wait for video preparation to complete, and then
-> seek to the target position.
+Sets the video playback position. > **NOTE** > > To start playback from a specific position, disable autoplay, wait for video preparation to complete, and then > seek to the target position.
 
 **Since:** 7
 

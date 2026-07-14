@@ -76,8 +76,7 @@ The span type is BuilderSpan.
 DEFAULT = 4
 ```
 
-When this type is registered but **TEXT**, **IMAGE**, **MIXED**, or **BUILDER** types are not registered, this type
-will be triggered and displayed for those registered types.
+When this type is registered but **TEXT**, **IMAGE**, **MIXED**, or **BUILDER** types are not registered, this type will be triggered and displayed for those registered types.
 
 **Since:** 15
 

@@ -92,8 +92,7 @@ Element In the Flex container, the cross-axis direction text baseline is aligned
 Stretch
 ```
 
-Element In a Flex container, the fill is stretched across the axis and, when no dimension is set, to the container
-size.
+Element In a Flex container, the fill is stretched across the axis and, when no dimension is set, to the container size.
 
 **Since:** 7
 

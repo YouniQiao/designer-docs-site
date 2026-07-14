@@ -1,14 +1,6 @@
 # AudioVolumeManager
 
-This interface implements audio volume management.
-
-Before calling any API in AudioVolumeManager, you must use
-[getVolumeManager](arkts-audio-audiomanager-i.md#getvolumemanager-1) to obtain an
-AudioVolumeManager instance.
-
-> **NOTE**
->
-> - The initial APIs of this interface are supported since API version 9.
+This interface implements audio volume management. Before calling any API in AudioVolumeManager, you must use [getVolumeManager](arkts-audio-audiomanager-i.md#getvolumemanager-1) to obtain an AudioVolumeManager instance. > **NOTE** > > - The initial APIs of this interface are supported since API version 9.
 
 **Since:** 9
 
@@ -26,8 +18,7 @@ import { audio } from '@kit.AudioKit';
 getAppVolumePercentage(): Promise<number>
 ```
 
-Obtains the volume of the application. (The volume range is 0 to 100.) This API uses a promise to return the
-result.
+Obtains the volume of the application. (The volume range is 0 to 100.) This API uses a promise to return the result.
 
 **Since:** 19
 
@@ -311,8 +302,7 @@ Unsubscribes from the system volume change event. This API uses an asynchronous 
 off(type: 'appVolumeChange', callback?: Callback<VolumeEvent>): void
 ```
 
-Unsubscribes from the application-level volume change event of the application. This API uses an asynchronous
-callback to return the result.
+Unsubscribes from the application-level volume change event of the application. This API uses an asynchronous callback to return the result.
 
 **Since:** 19
 
@@ -337,8 +327,7 @@ callback to return the result.
 off(type: 'streamVolumeChange', callback?: Callback<StreamVolumeEvent>): void
 ```
 
-Unsubscribes from the system audio volume change event, which is triggered when the system audio volume is
-changed. This API uses an asynchronous callback to return the result.
+Unsubscribes from the system audio volume change event, which is triggered when the system audio volume is changed. This API uses an asynchronous callback to return the result.
 
 **Since:** 20
 
@@ -357,8 +346,7 @@ changed. This API uses an asynchronous callback to return the result.
 on(type: 'volumeChange', callback: Callback<VolumeEvent>): void
 ```
 
-Subscribes to the system volume change event, which is triggered when the system volume is changed. This API uses
-an asynchronous callback to return the result.
+Subscribes to the system volume change event, which is triggered when the system volume is changed. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -388,8 +376,7 @@ an asynchronous callback to return the result.
 on(type: 'appVolumeChange', callback: Callback<VolumeEvent>): void
 ```
 
-Subscribes to the application-level volume change event of the application (triggered when the application-level
-volume is changed). This API uses an asynchronous callback to return the result.
+Subscribes to the application-level volume change event of the application (triggered when the application-level volume is changed). This API uses an asynchronous callback to return the result.
 
 **Since:** 19
 
@@ -414,8 +401,7 @@ volume is changed). This API uses an asynchronous callback to return the result.
 on(type: 'streamVolumeChange', streamUsage: StreamUsage, callback: Callback<StreamVolumeEvent>): void
 ```
 
-Subscribes to the system audio volume change event, which is triggered when the system audio volume is changed.
-This API uses an asynchronous callback to return the result.
+Subscribes to the system audio volume change event, which is triggered when the system audio volume is changed. This API uses an asynchronous callback to return the result.
 
 **Since:** 20
 

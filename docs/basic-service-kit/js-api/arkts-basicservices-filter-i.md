@@ -18,11 +18,7 @@ import { request } from '@kit.BasicServicesKit';
 action?: Action
 ```
 
-Task action.
-
-- **UPLOAD**: Upload tasks.
-- **DOWNLOAD**: Download tasks.
-- If this parameter is not set, all tasks are queried.
+Task action. - **UPLOAD**: Upload tasks. - **DOWNLOAD**: Download tasks. - If this parameter is not set, all tasks are queried.
 
 **Type:** Action
 
@@ -64,11 +60,7 @@ Unix timestamp of the end time, in milliseconds. The default value is the invoki
 mode?: Mode
 ```
 
-Task mode.
-
-- **FOREGROUND**: foreground task.
-- **BACKGROUND**: background task.
-- If this parameter is not set, all tasks are queried.
+Task mode. - **FOREGROUND**: foreground task. - **BACKGROUND**: background task. - If this parameter is not set, all tasks are queried.
 
 **Type:** Mode
 

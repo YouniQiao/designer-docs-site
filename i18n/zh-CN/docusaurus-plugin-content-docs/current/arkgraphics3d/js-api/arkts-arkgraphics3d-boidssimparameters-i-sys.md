@@ -176,8 +176,7 @@ gravityWeight?: number
 initialPosition?: Vec3
 ```
 
-boid的初始位置. 未设置时，使用实体的当前变换位置.
-默认值：(NaN, NaN, NaN).
+boid的初始位置. 未设置时，使用实体的当前变换位置. 默认值：(NaN, NaN, NaN).
 
 **类型：** Vec3
 
@@ -195,8 +194,7 @@ boid的初始位置. 未设置时，使用实体的当前变换位置.
 initialRotation?: Quaternion
 ```
 
-boid的初始旋转. 未设置时，使用实体的当前变换旋转.
-默认值：(NaN, NaN, NaN, NaN).
+boid的初始旋转. 未设置时，使用实体的当前变换旋转. 默认值：(NaN, NaN, NaN, NaN).
 
 **类型：** Quaternion
 
@@ -250,8 +248,7 @@ boid每模拟帧可达到的最大加速度. 取值范围：[0, +∞). 默认值
 maxTurnRate?: Vec3
 ```
 
-每模拟帧每轴最大转向速率. 取值范围：[0, +∞) per axis.
-默认值：每轴约为0.0377.
+每模拟帧每轴最大转向速率. 取值范围：[0, +∞) per axis. 默认值：每轴约为0.0377.
 
 **类型：** Vec3
 

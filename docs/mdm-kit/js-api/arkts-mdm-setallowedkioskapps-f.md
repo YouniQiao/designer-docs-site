@@ -12,11 +12,7 @@ import { applicationManager } from '@kit.MDMKit';
 function setAllowedKioskApps(admin: Want, appIdentifiers: Array<string>): void
 ```
 
-Sets applications allowed to run in kiosk mode.
-
-Kiosk mode is a system-level runtime mode that restricts a device to a single application or a set of applications.
-It controls the lock screen, status bar, gestures, and key features to prevent users from launching other
-applications or performing other operations on the device.
+Sets applications allowed to run in kiosk mode. Kiosk mode is a system-level runtime mode that restricts a device to a single application or a set of applications. It controls the lock screen, status bar, gestures, and key features to prevent users from launching other applications or performing other operations on the device.
 
 **Since:** 20
 

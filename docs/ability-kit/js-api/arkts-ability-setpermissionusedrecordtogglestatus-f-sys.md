@@ -12,13 +12,7 @@ import { privacyManager } from '@kit.AbilityKit';
 function setPermissionUsedRecordToggleStatus(status: boolean): Promise<void>
 ```
 
-Sets whether to record the permission usage of this user. Sets the permission usage record switch for this user.
-This API uses a promise to return the result.
-
-When **status** is **true**, the [addPermissionUsedRecord](arkts-ability-addpermissionusedrecord-f-sys.md#addpermissionusedrecord-1) API can
-add usage records normally; when **status** is **false**, the
-[addPermissionUsedRecord](arkts-ability-addpermissionusedrecord-f-sys.md#addpermissionusedrecord-1) API does not generate permission usage
-records, and deletes the current user's historical records.
+Sets whether to record the permission usage of this user. Sets the permission usage record switch for this user. This API uses a promise to return the result. When **status** is **true**, the [addPermissionUsedRecord](arkts-ability-addpermissionusedrecord-f-sys.md#addpermissionusedrecord-1) API can add usage records normally; when **status** is **false**, the [addPermissionUsedRecord](arkts-ability-addpermissionusedrecord-f-sys.md#addpermissionusedrecord-1) API does not generate permission usage records, and deletes the current user's historical records.
 
 **Since:** 18
 

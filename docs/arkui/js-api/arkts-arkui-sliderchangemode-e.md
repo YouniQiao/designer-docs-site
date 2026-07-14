@@ -44,12 +44,7 @@ The user is dragging the slider.
 End
 ```
 
-The user stops dragging the slider by lifting their finger or releasing the mouse device.
-
-**NOTE**
-
-The trigger occurs when an invalid value is restored to the default value, that is, when the value is set to less
-than **min** or greater than **max**.
+The user stops dragging the slider by lifting their finger or releasing the mouse device. **NOTE** The trigger occurs when an invalid value is restored to the default value, that is, when the value is set to less than **min** or greater than **max**.
 
 **Since:** 7
 

@@ -12,8 +12,7 @@ import { adminManager } from '@kit.MDMKit';
 function isByodAdmin(admin: Want): boolean
 ```
 
-Checks whether the current application is activated as a BYOD device administrator application based on the
-**EnterpriseAdminExtensionAbility** component.
+Checks whether the current application is activated as a BYOD device administrator application based on the **EnterpriseAdminExtensionAbility** component.
 
 **Since:** 20
 

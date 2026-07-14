@@ -1,8 +1,6 @@
 # HeifsMetadata
 
-HeifsMetadata implements Metadata
-
-HEIF序列图像元数据类，用于存储图像的元数据。
+HeifsMetadata implements Metadata HEIF序列图像元数据类，用于存储图像的元数据。
 
 **继承/实现关系：** HeifsMetadata implements [Metadata](arkts-image-metadata-i.md)
 
@@ -56,9 +54,7 @@ static createInstance(): HeifsMetadata
 getAllProperties(): Promise<Record<string, string | null>>
 ```
 
-获取图片中所有元数据的属性的值。使用Promise异步回调。
-
-要查询的属性的具体信息请参考[HeifsPropertyKey](arkts-image-heifspropertykey-e.md)。
+获取图片中所有元数据的属性的值。使用Promise异步回调。 要查询的属性的具体信息请参考[HeifsPropertyKey](arkts-image-heifspropertykey-e.md)。
 
 **起始版本：** 23
 
@@ -98,9 +94,7 @@ getBlob(): Promise<ArrayBuffer>
 getProperties(key: Array<string>): Promise<Record<string, string | null>>
 ```
 
-获取图像元数据的属性值。使用Promise异步回调。
-
-要查询的属性的具体信息请参考[HeifsPropertyKey](arkts-image-heifspropertykey-e.md)。
+获取图像元数据的属性值。使用Promise异步回调。 要查询的属性的具体信息请参考[HeifsPropertyKey](arkts-image-heifspropertykey-e.md)。
 
 **起始版本：** 23
 
@@ -164,9 +158,7 @@ setBlob(blob: ArrayBuffer): Promise<void>
 setProperties(records: Record<string, string | null>): Promise<void>
 ```
 
-批量设置图片元数据中的指定属性的值。使用Promise异步回调。
-
-要查询的属性的具体信息请参考[HeifsPropertyKey](arkts-image-heifspropertykey-e.md)。
+批量设置图片元数据中的指定属性的值。使用Promise异步回调。 要查询的属性的具体信息请参考[HeifsPropertyKey](arkts-image-heifspropertykey-e.md)。
 
 **起始版本：** 23
 
@@ -198,11 +190,7 @@ setProperties(records: Record<string, string | null>): Promise<void>
 readonly heifsCanvasHeight?: number
 ```
 
-HEIF序列图片的画布高度。
-
-单位为像素（px）。
-
-该值为正整数。
+HEIF序列图片的画布高度。 单位为像素（px）。 该值为正整数。
 
 **类型：** number
 
@@ -218,11 +206,7 @@ HEIF序列图片的画布高度。
 readonly heifsCanvasWidth?: number
 ```
 
-HEIF序列图片的画布宽度。
-
-单位为像素（px）。
-
-该值为正整数。
+HEIF序列图片的画布宽度。 单位为像素（px）。 该值为正整数。
 
 **类型：** number
 
@@ -254,11 +238,7 @@ HEIF序列图片的每帧播放时长。单位为毫秒（ms）。
 readonly heifsUnclampedDelayTime?: number
 ```
 
-HEIF序列图片每帧未钳制的延迟时长。
-
-单位为毫秒（ms）。
-
-该值为正整数。
+HEIF序列图片每帧未钳制的延迟时长。 单位为毫秒（ms）。 该值为正整数。
 
 **类型：** number
 

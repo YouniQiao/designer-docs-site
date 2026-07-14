@@ -12,9 +12,7 @@ Describes the options of the circle.
 height?: Length
 ```
 
-Height.
-Unit: vp, The value must be greater than or equal to 0, Default The **undefined**, **null**, **NaN**, and
-**Infinity** values are invalid and treated as the default value. Default value: **0**.
+Height. Unit: vp, The value must be greater than or equal to 0, Default The **undefined**, **null**, **NaN**, and **Infinity** values are invalid and treated as the default value. Default value: **0**.
 
 **Type:** Length
 
@@ -32,9 +30,7 @@ Unit: vp, The value must be greater than or equal to 0, Default The **undefined*
 width?: Length
 ```
 
-Width.
-Unit: vp, The value must be greater than or equal to 0, Default The **undefined**, **null**, **NaN**, and
-**Infinity** values are invalid and treated as the default value. Default value: **0**.
+Width. Unit: vp, The value must be greater than or equal to 0, Default The **undefined**, **null**, **NaN**, and **Infinity** values are invalid and treated as the default value. Default value: **0**.
 
 **Type:** Length
 

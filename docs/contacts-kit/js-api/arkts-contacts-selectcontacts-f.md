@@ -90,8 +90,7 @@ promise.then((data) => {
 function selectContacts(options: ContactSelectionOptions, callback: AsyncCallback<Array<Contact>>): void
 ```
 
-Selects a contact. (Filter criteria can be transferred during contact selection.) This API uses an asynchronous
-callback to return the result.
+Selects a contact. (Filter criteria can be transferred during contact selection.) This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -138,8 +137,7 @@ contact.selectContacts({
 function selectContacts(options: ContactSelectionOptions): Promise<Array<Contact>>
 ```
 
-Selects a contact. (Filter criteria can be transferred during contact selection.) This API uses a promise to return
-the result.
+Selects a contact. (Filter criteria can be transferred during contact selection.) This API uses a promise to return the result.
 
 **Since:** 10
 

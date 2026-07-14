@@ -32,9 +32,7 @@ The region influenced by the velocity field.
 velocity?: Vector2T<number>
 ```
 
-The velocity values in each direction of the velocity field. Particles only acquire this velocity when within
-the range of the velocity field; once they leave the range of the velocity field, they are no longer influenced
-by it and do not gain this additional velocity.
+The velocity values in each direction of the velocity field. Particles only acquire this velocity when within the range of the velocity field; once they leave the range of the velocity field, they are no longer influenced by it and do not gain this additional velocity.
 
 **类型：** Vector2T<number>
 

@@ -18,8 +18,7 @@ import { window } from '@kit.ArkUI';
 windowAlpha?: number
 ```
 
-The window's alpha fade level. This number is in the range 0.0 to 1.0,
-where 0.0 is fully transparent and 1.0 is fully opaque.
+The window's alpha fade level. This number is in the range 0.0 to 1.0, where 0.0 is fully transparent and 1.0 is fully opaque.
 
 **Type:** number
 

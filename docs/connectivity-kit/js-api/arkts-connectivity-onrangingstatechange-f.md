@@ -12,9 +12,7 @@ import { ranging } from '@kit.ConnectivityKit';
 function onRangingStateChange(callback: Callback<RangingStateChangeInfo>): void
 ```
 
-Registers a callback to receive ranging state change notifications.
-
-Notifies state changes for both active ranging and passive ranging operations.
+Registers a callback to receive ranging state change notifications. Notifies state changes for both active ranging and passive ranging operations.
 
 **Since:** 26.0.0
 

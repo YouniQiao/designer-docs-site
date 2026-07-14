@@ -110,13 +110,7 @@ try {
 queryOsAccountDistributedInfo(callback: AsyncCallback<DistributedInfo>): void
 ```
 
-获取分布式账号信息。使用callback异步回调。
-
-> **说明：**
->
-> 从API version 7开始支持，从API version 9开始废弃。建议使用
-> [getOsAccountDistributedInfo](arkts-basicservices-distributedaccountability-i.md#getosaccountdistributedinfo-1)
-> 替代。
+获取分布式账号信息。使用callback异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [getOsAccountDistributedInfo](arkts-basicservices-distributedaccountability-i.md#getosaccountdistributedinfo-1) > 替代。
 
 **起始版本：** 7
 
@@ -158,13 +152,7 @@ accountAbility.queryOsAccountDistributedInfo(
 queryOsAccountDistributedInfo(): Promise<DistributedInfo>
 ```
 
-获取分布式账号信息。使用Promise异步回调。
-
-> **说明：**
->
-> 从API version 7开始支持，从API version 9开始废弃。建议使用
-> [getOsAccountDistributedInfo](arkts-basicservices-distributedaccountability-i.md#getosaccountdistributedinfo-2)
-> 替代。
+获取分布式账号信息。使用Promise异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [getOsAccountDistributedInfo](arkts-basicservices-distributedaccountability-i.md#getosaccountdistributedinfo-2) > 替代。
 
 **起始版本：** 7
 
@@ -203,8 +191,7 @@ accountAbility.queryOsAccountDistributedInfo().then((data: distributedAccount.Di
 setOsAccountDistributedInfo(accountInfo: DistributedInfo, callback: AsyncCallback<void>): void
 ```
 
-更新分布式账号信息。使用callback异步回调。
-该接口仅限系统应用调用。
+更新分布式账号信息。使用callback异步回调。 该接口仅限系统应用调用。
 
 **起始版本：** 9
 
@@ -260,8 +247,7 @@ try {
 setOsAccountDistributedInfo(accountInfo: DistributedInfo): Promise<void>
 ```
 
-更新分布式账号信息。使用Promise异步回调。
-该接口仅限系统应用调用。
+更新分布式账号信息。使用Promise异步回调。 该接口仅限系统应用调用。
 
 **起始版本：** 9
 
@@ -320,13 +306,7 @@ try {
 updateOsAccountDistributedInfo(accountInfo: DistributedInfo, callback: AsyncCallback<void>): void
 ```
 
-更新分布式账号信息。使用callback异步回调。
-
-> **说明：**
->
-> 从API version 7开始支持，从API version 9开始废弃。建议使用
-> [setOsAccountDistributedInfo](arkts-basicservices-distributedaccountability-i.md#setosaccountdistributedinfo-1)
-> 替代。
+更新分布式账号信息。使用callback异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [setOsAccountDistributedInfo](arkts-basicservices-distributedaccountability-i.md#setosaccountdistributedinfo-1) > 替代。
 
 **起始版本：** 7
 
@@ -371,13 +351,7 @@ accountAbility.updateOsAccountDistributedInfo(accountInfo, (err: BusinessError) 
 updateOsAccountDistributedInfo(accountInfo: DistributedInfo): Promise<void>
 ```
 
-更新分布式账号信息。使用Promise异步回调。
-
-> **说明：**
->
-> 从API version 7开始支持，从API version 9开始废弃。建议使用
-> [setOsAccountDistributedInfo](arkts-basicservices-distributedaccountability-i.md#setosaccountdistributedinfo-2)
-> 替代。
+更新分布式账号信息。使用Promise异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [setOsAccountDistributedInfo](arkts-basicservices-distributedaccountability-i.md#setosaccountdistributedinfo-2) > 替代。
 
 **起始版本：** 7
 

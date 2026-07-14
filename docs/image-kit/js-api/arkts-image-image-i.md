@@ -1,14 +1,6 @@
 # Image
 
-Provides APIs for basic image operations, including obtaining image information and reading and writing image data.
-
-An Image instance is returned when [readNextImage](arkts-image-imagereceiver-i.md#readnextimage-1) and
-[readLatestImage](arkts-image-imagereceiver-i.md#readlatestimage-1) are called. This class inherits from
-[ISendable](../../../../arkts-utils/arkts-sendable.md#isendable).
-
-Images occupy a large amount of memory. When you finish using an Image instance, call
-[release](arkts-image-pixelmap-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure
-that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
+Provides APIs for basic image operations, including obtaining image information and reading and writing image data. An Image instance is returned when [readNextImage](arkts-image-imagereceiver-i.md#readnextimage-1) and [readLatestImage](arkts-image-imagereceiver-i.md#readlatestimage-1) are called. This class inherits from [ISendable](../../../../arkts-utils/arkts-sendable.md#isendable). Images occupy a large amount of memory. When you finish using an Image instance, call [release](arkts-image-pixelmap-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
 
 **Inheritance/Implementation:** Image extends [lang.ISendable](../../apis-arkts/arkts-apis/arkts-arkts-isendable-i.md)
 
@@ -28,8 +20,7 @@ import { sendableImage } from '@kit.ImageKit';
 getComponent(componentType: image.ComponentType): Promise<image.Component>
 ```
 
-Obtains the component buffer from the Image instance based on the color component type. This API uses a promise
-to return the result. The thread that runs **getComponent** is insecure.
+Obtains the component buffer from the Image instance based on the color component type. This API uses a promise to return the result. The thread that runs **getComponent** is insecure.
 
 **Since:** 12
 
@@ -76,15 +67,7 @@ async function Demo() {
 release(): Promise<void>
 ```
 
-Releases this Image instance. This API uses a promise to return the result.
-
-The corresponding resources must be released before another image arrives.
-
-Images occupy a large amount of memory. When you finish using an Image instance, call this API to free the memory
-promptly.
-
-Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished
-and the instance is no longer needed.
+Releases this Image instance. This API uses a promise to return the result. The corresponding resources must be released before another image arrives. Images occupy a large amount of memory. When you finish using an Image instance, call this API to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
 
 **Since:** 12
 
@@ -139,8 +122,7 @@ Image area to be cropped.
 readonly format: number
 ```
 
-Image format. For details, see
-[OH_NativeBuffer_Format](../../../../reference/apis-arkgraphics2d/c-apis/capi-buffer-common-h.md#oh_nativebuffer_format).
+Image format. For details, see [OH_NativeBuffer_Format](../../../../reference/apis-arkgraphics2d/c-apis/capi-buffer-common-h.md#oh_nativebuffer_format).
 
 **Type:** number
 
@@ -154,20 +136,7 @@ Image format. For details, see
 readonly size: Size
 ```
 
-Image size.
-
-If the Image object stores camera preview stream data (YUV image data), the width and height in **size**
-reflect the dimensions of the YUV image.
-
-If the Image object stores camera capture stream data (JPEG image data), given that it is an encoded file,
-the width in **size** is the size of the JPEG file, while the height is set to **1**.
-
-The type of data stored in the Image object depends on whether the application passes the surface ID in the
-receiver to a previewOutput or captureOutput object of the camera.
-
-For details about the best practices of camera preview and photo capture, see
-[Dual-Channel Preview (ArkTS)](../../../../media/camera/camera-dual-channel-preview.md) and
-[Photo Capture Sample (ArkTS)](../../../../media/camera/camera-shooting-case.md).
+Image size. If the Image object stores camera preview stream data (YUV image data), the width and height in **size** reflect the dimensions of the YUV image. If the Image object stores camera capture stream data (JPEG image data), given that it is an encoded file, the width in **size** is the size of the JPEG file, while the height is set to **1**. The type of data stored in the Image object depends on whether the application passes the surface ID in the receiver to a previewOutput or captureOutput object of the camera. For details about the best practices of camera preview and photo capture, see [Dual-Channel Preview (ArkTS)](../../../../media/camera/camera-dual-channel-preview.md) and [Photo Capture Sample (ArkTS)](../../../../media/camera/camera-shooting-case.md).
 
 **Type:** Size
 
@@ -181,13 +150,7 @@ For details about the best practices of camera preview and photo capture, see
 readonly timestamp: number
 ```
 
-Image timestamp. Timestamps, measured in nanoseconds, are usually monotonically increasing. The specific meaning
-and baseline of these timestamps are determined by the image producer, which is the camera in the camera preview
-and photo scenarios. As a result, images from different producers may carry timestamps with distinct meanings and
-baselines, making direct comparison between them infeasible. To obtain the generation time of a photo, you can
-use
-[getImageProperty](arkts-image-imagesource-i.md#getimageproperty-1)
-to read the related Exif information.
+Image timestamp. Timestamps, measured in nanoseconds, are usually monotonically increasing. The specific meaning and baseline of these timestamps are determined by the image producer, which is the camera in the camera preview and photo scenarios. As a result, images from different producers may carry timestamps with distinct meanings and baselines, making direct comparison between them infeasible. To obtain the generation time of a photo, you can use [getImageProperty](arkts-image-imagesource-i.md#getimageproperty-1) to read the related Exif information.
 
 **Type:** number
 

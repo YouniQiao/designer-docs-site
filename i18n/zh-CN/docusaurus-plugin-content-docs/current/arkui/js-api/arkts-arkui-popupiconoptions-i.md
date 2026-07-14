@@ -12,9 +12,7 @@ PopupIconOptions定义图标的属性。
 borderRadius?: Length | BorderRadiuses
 ```
 
-设置图标圆角。
-
-默认值：`$r('sys.float.ohos_id_corner_radius_default_s')`
+设置图标圆角。 默认值：`$r('sys.float.ohos_id_corner_radius_default_s')`
 
 **类型：** Length | BorderRadiuses
 
@@ -32,9 +30,7 @@ borderRadius?: Length | BorderRadiuses
 fillColor?: ResourceColor
 ```
 
-设置图标填充颜色。仅针对svg图源生效。
-
-默认不改变图标颜色。
+设置图标填充颜色。仅针对svg图源生效。 默认不改变图标颜色。
 
 **类型：** ResourceColor
 
@@ -52,9 +48,7 @@ fillColor?: ResourceColor
 height?: Dimension
 ```
 
-设置图标高度。
-
-默认值：32VP
+设置图标高度。 默认值：32VP
 
 **类型：** Dimension
 
@@ -90,9 +84,7 @@ image: ResourceStr
 width?: Dimension
 ```
 
-设置图标宽度。
-
-默认值：32VP
+设置图标宽度。 默认值：32VP
 
 **类型：** Dimension
 

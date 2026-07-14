@@ -16,8 +16,7 @@ function changePrivilege(
     ): void
 ```
 
-Changes the privilege on the shared data.
-This API uses an asynchronous callback to return the result.
+Changes the privilege on the shared data. This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -69,7 +68,6 @@ cloudData.sharing.changePrivilege('sharing_resource_test', participants, ((err: 
   console.info(`change privilege succeeded, result: ${result}`);
 }))
 
-
 ```
 
 
@@ -82,8 +80,7 @@ function changePrivilege(
     ): Promise<Result<Array<Result<Participant>>>>
 ```
 
-Changes the privilege on the shared data.
-This API uses a promise to return the result.
+Changes the privilege on the shared data. This API uses a promise to return the result.
 
 **Since:** 11
 
@@ -137,7 +134,6 @@ cloudData.sharing.changePrivilege('sharing_resource_test', participants).then((r
 }).catch((err: BusinessError) => {
   console.error(`change privilege failed, code is ${err.code},message is ${err.message}`);
 })
-
 
 ```
 

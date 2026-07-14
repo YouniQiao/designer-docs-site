@@ -1,7 +1,6 @@
 # MultiNavPathStack
 
-当前，MultiNavigation的路由栈仅支持由使用方自行创建，不支持通过回调方式获取。请勿使用[NavDestination](../arkts-components/arkts-arkui-navdestination.md)的
-[onReady](NavDestinationAttribute#onReady)等类似事件或接口来获取NavPathStack并进行栈操作，因为这可能会导致不可预知的问题。
+当前，MultiNavigation的路由栈仅支持由使用方自行创建，不支持通过回调方式获取。请勿使用[NavDestination](../arkts-components/arkts-arkui-navdestination.md)的 [onReady](NavDestinationAttribute#onReady)等类似事件或接口来获取NavPathStack并进行栈操作，因为这可能会导致不可预知的问题。
 
 **继承/实现关系：** MultiNavPathStack extends [NavPathStack](../arkts-components/arkts-arkui-navpathstack-c.md)
 
@@ -15,11 +14,7 @@
 clear(animated?: boolean): void
 ```
 
-清除栈中所有页面。
-
-> **说明：**
-
-> 当调用[keepBottomPage](arkts-arkui-multinavpathstack-c.md#keepbottompage-1)接口并设置为true时，会保留栈底页面。
+清除栈中所有页面。 > **说明：** > 当调用[keepBottomPage](arkts-arkui-multinavpathstack-c.md#keepbottompage-1)接口并设置为true时，会保留栈底页面。
 
 **起始版本：** 14
 
@@ -185,12 +180,7 @@ getParamByName(name: string): Array<Object>
 keepBottomPage(keepBottom: boolean): void
 ```
 
-设置在调用pop和clear接口时是否保留栈底页面。
-
-> **说明：**
-
-> MultiNavigation将主页也当作了NavDestination页面入栈，所以调用pop或clear接口时会将栈底页面也出栈。
-> > 应用调用此接口并设置为true时，MultiNavigation会在调用pop和clear接口时保留栈底页面。
+设置在调用pop和clear接口时是否保留栈底页面。 > **说明：** > MultiNavigation将主页也当作了NavDestination页面入栈，所以调用pop或clear接口时会将栈底页面也出栈。 > > 应用调用此接口并设置为true时，MultiNavigation会在调用pop和clear接口时保留栈底页面。
 
 **起始版本：** 14
 
@@ -212,21 +202,7 @@ keepBottomPage(keepBottom: boolean): void
 moveIndexToTop(index: number, animated?: boolean): void
 ```
 
-将指定index的NavDestination页面移到栈顶。
-
-> **说明：**
-
-> 根据找到的第一个名为name的页面的不同，MultiNavigation会进行不同的处理：
-
-> 1)当找到的是最上层主页或者全屏页，此时不做任何处理；
-
-> 2)当找到的是最上层主页对应的详情页，则会将对应的详情页移到栈顶；
-
-> 3)当找到的是非最上层的主页，则会将主页和对应所有详情页移到栈顶，详情页相对栈关系不变；
-
-> 4)当找到的是非最上层的详情页，则会将主页和对应所有详情页移到栈顶，且将目标详情页移动到对应所有详情页的栈顶；
-
-> 5)当找到的是非最上层的全屏页，则会将全屏页移动到栈顶。
+将指定index的NavDestination页面移到栈顶。 > **说明：** > 根据找到的第一个名为name的页面的不同，MultiNavigation会进行不同的处理： > 1)当找到的是最上层主页或者全屏页，此时不做任何处理； > 2)当找到的是最上层主页对应的详情页，则会将对应的详情页移到栈顶； > 3)当找到的是非最上层的主页，则会将主页和对应所有详情页移到栈顶，详情页相对栈关系不变； > 4)当找到的是非最上层的详情页，则会将主页和对应所有详情页移到栈顶，且将目标详情页移动到对应所有详情页的栈顶； > 5)当找到的是非最上层的全屏页，则会将全屏页移动到栈顶。
 
 **起始版本：** 14
 
@@ -249,21 +225,7 @@ moveIndexToTop(index: number, animated?: boolean): void
 moveToTop(name: string, animated?: boolean): number
 ```
 
-将由栈底开始第一个名为name的NavDestination页面移到栈顶。
-
-> **说明：**
-
-> 根据找到的第一个名为name的页面的不同，MultiNavigation会进行不同的处理：
-
-> 1)当找到的是最上层主页或者全屏页，此时不做任何处理；
-
-> 2)当找到的是最上层主页对应的详情页，则会将对应的详情页移到栈顶；
-
-> 3)当找到的是非最上层的主页，则会将主页和对应所有详情页移到栈顶，详情页相对栈关系不变；
-
-> 4)当找到的是非最上层的详情页，则会将主页和对应所有详情页移到栈顶，且将目标详情页移动到对应所有详情页的栈顶；
-
-> 5)当找到的是非最上层的全屏页，则会将全屏页移动到栈顶。
+将由栈底开始第一个名为name的NavDestination页面移到栈顶。 > **说明：** > 根据找到的第一个名为name的页面的不同，MultiNavigation会进行不同的处理： > 1)当找到的是最上层主页或者全屏页，此时不做任何处理； > 2)当找到的是最上层主页对应的详情页，则会将对应的详情页移到栈顶； > 3)当找到的是非最上层的主页，则会将主页和对应所有详情页移到栈顶，详情页相对栈关系不变； > 4)当找到的是非最上层的详情页，则会将主页和对应所有详情页移到栈顶，且将目标详情页移动到对应所有详情页的栈顶； > 5)当找到的是非最上层的全屏页，则会将全屏页移动到栈顶。
 
 **起始版本：** 14
 
@@ -292,11 +254,7 @@ moveToTop(name: string, animated?: boolean): number
 pop(animated?: boolean): NavPathInfo | undefined
 ```
 
-弹出路由栈栈顶元素。
-
-> **说明：**
-
-> 当调用[keepBottomPage](arkts-arkui-multinavpathstack-c.md#keepbottompage-1)接口并设置为true时，会保留栈底页面。
+弹出路由栈栈顶元素。 > **说明：** > 当调用[keepBottomPage](arkts-arkui-multinavpathstack-c.md#keepbottompage-1)接口并设置为true时，会保留栈底页面。
 
 **起始版本：** 14
 
@@ -324,11 +282,7 @@ pop(animated?: boolean): NavPathInfo | undefined
 pop(result?: Object, animated?: boolean): NavPathInfo | undefined
 ```
 
-弹出路由栈栈顶元素，并触发onPop回调传入页面处理结果。
-
-> **说明：**
-
-> 当调用[keepBottomPage](arkts-arkui-multinavpathstack-c.md#keepbottompage-1)接口并设置为true时，会保留栈底页面。
+弹出路由栈栈顶元素，并触发onPop回调传入页面处理结果。 > **说明：** > 当调用[keepBottomPage](arkts-arkui-multinavpathstack-c.md#keepbottompage-1)接口并设置为true时，会保留栈底页面。
 
 **起始版本：** 14
 
@@ -712,14 +666,7 @@ setHomeWidthRange(minPercent: number, maxPercent: number): void
 setPlaceholderPage(info: NavPathInfo): void
 ```
 
-设置占位页面。
-
-> **说明**
-
-> 占位页面为特殊页面类型，当应用设置后，在一些大屏设备上会和主页默认形成左右分栏的效果，即左边主页，右边占位页。
-
-> 当应用可绘制区域小于600vp、折叠屏由展开态切换为折叠态及平板横屏转竖屏等场景时，会自动将占位页出栈，只显示主页；
-> > 而当应用可绘制区域大于等于600vp、折叠屏由折叠态切换为展开态及平板竖屏转横屏等场景时，会自动补充占位页，形成分栏。
+设置占位页面。 > **说明** > 占位页面为特殊页面类型，当应用设置后，在一些大屏设备上会和主页默认形成左右分栏的效果，即左边主页，右边占位页。 > 当应用可绘制区域小于600vp、折叠屏由展开态切换为折叠态及平板横屏转竖屏等场景时，会自动将占位页出栈，只显示主页； > > 而当应用可绘制区域大于等于600vp、折叠屏由折叠态切换为展开态及平板竖屏转横屏等场景时，会自动补充占位页，形成分栏。
 
 **起始版本：** 14
 

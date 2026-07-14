@@ -6,9 +6,7 @@
 function off(type: 'openDLPFile', listener?: Callback<AccessedDLPFileInfo>): void
 ```
 
-取消监听打开DLP文件。仅支持在非DLP沙箱应用中调用。调用成功后，将不再接收DLP文件打开事件的通知。
-
-该接口通常在页面销毁或不再需要监听时调用以释放资源。
+取消监听打开DLP文件。仅支持在非DLP沙箱应用中调用。调用成功后，将不再接收DLP文件打开事件的通知。 该接口通常在页面销毁或不再需要监听时调用以释放资源。
 
 **起始版本：** 10
 

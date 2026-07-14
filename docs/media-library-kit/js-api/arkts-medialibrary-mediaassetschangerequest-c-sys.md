@@ -1,10 +1,10 @@
 # MediaAssetsChangeRequest (System API)
 
-Defines the class of media assets change request.
+Represents a request for changing multiple assets.
 
 **Inheritance/Implementation:** MediaAssetsChangeRequest implements [MediaChangeRequest](arkts-medialibrary-mediachangerequest-i.md)
 
-**Since:** 11
+**Since:** 26.0.0
 
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -24,7 +24,7 @@ constructor(assets: Array<PhotoAsset>)
 
 Constructor.
 
-**Since:** 11
+**Since:** 26.0.0
 
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -40,8 +40,6 @@ Constructor.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
 | 14000011 | System inner fail |
 
 **Example**
@@ -71,9 +69,9 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 setFavorite(favoriteState: boolean): void
 ```
 
-Set favorite state of the assets.
+Favorites or unfavorites this file asset.
 
-**Since:** 11
+**Since:** 26.0.0
 
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -83,14 +81,12 @@ Set favorite state of the assets.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| favoriteState | boolean | Yes | true: Put the assets into favorite album; false: Remove the assets from favorite album. |
+| favoriteState | boolean | Yes | Whether to favorite the file. **true** to favorite, **false** otherwise. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
 | 14000011 | System inner fail |
 
 **Example**
@@ -127,7 +123,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 setHidden(hiddenState: boolean): void
 ```
 
-Set hidden state of the assets.
+Hides this file.
 
 **Since:** 11
 
@@ -139,14 +135,14 @@ Set hidden state of the assets.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| hiddenState | boolean | Yes | true: Put the assets into hidden album; false: Recover the assets from hidden album. |
+| hiddenState | boolean | Yes | Whether to hide the file. **true** to hide, **false** otherwise. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | System inner fail |
 
 **Example**
@@ -183,7 +179,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 setIsRecentShow(isRencentShow: boolean): void
 ```
 
-Sets whether this asset is displayed in the Recent list.
+Sets whether this asset is displayed in the **Recent** list.
 
 **Since:** 18
 
@@ -195,14 +191,14 @@ Sets whether this asset is displayed in the Recent list.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| isRencentShow | boolean | Yes | Whether this asset is displayed in the Recent list.<br>The value true means this asset is displayed in the Recent list, and false means the opposite. |
+| isRencentShow | boolean | Yes | Whether this asset is displayed in the **Recent** list. **true** if displayed,**false** otherwise. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | System inner fail |
 
 **Example**
@@ -239,7 +235,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 setUserComment(userComment: string): void
 ```
 
-Set user comment of the assets.
+Sets the user comment information of this media asset.
 
 **Since:** 11
 
@@ -251,14 +247,14 @@ Set user comment of the assets.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| userComment | string | Yes | user comment info |
+| userComment | string | Yes | Comment information to set, which cannot exceed 420 characters. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | System inner fail |
 
 **Example**
@@ -295,7 +291,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 readonly comment: string
 ```
 
-A readonly member for type checking.
+Used to verify the [MediaChangeRequest](arkts-medialibrary-mediachangerequest-i.md) type. <br>If a class (such as **MediaAssetsChangeRequest**) object can be accessed, it is an implementation class of **MediaChangeRequest**.
 
 **Type:** string
 

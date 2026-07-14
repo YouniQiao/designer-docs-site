@@ -20,8 +20,7 @@ import { cloudExtension } from '@kit.ArkData';
 hasMore: boolean
 ```
 
-Whether there is data to be queried on the server.
-The value true means there is data to be queried on the server; the value false means the opposite.
+Whether there is data to be queried on the server. The value true means there is data to be queried on the server; the value false means the opposite.
 
 **Type:** boolean
 

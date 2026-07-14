@@ -18,8 +18,7 @@ Declare navigator properties.
 active(value: boolean)
 ```
 
-Sets whether the **Navigator** component is activated. If the component is activated, the corresponding navigation
-takes effect.
+Sets whether the **Navigator** component is activated. If the component is activated, the corresponding navigation takes effect.
 
 **Since:** 7
 
@@ -67,8 +66,7 @@ Sets the data that needs to be passed to the target page during redirection.
 target(value: string)
 ```
 
-Sets the path of the target page to be redirected to. The target page must be added to the **main_pages.json**
-file.
+Sets the path of the target page to be redirected to. The target page must be added to the **main_pages.json** file.
 
 **Since:** 7
 

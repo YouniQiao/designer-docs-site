@@ -12,14 +12,7 @@ Defines the options of geometry transition.
 hierarchyStrategy?: TransitionHierarchyStrategy
 ```
 
-Strategy for the hierarchical position movement of **in** / **out** components in the component tree during the
-shared element transition process. Default value: **TransitionHierarchyStrategy.ADAPTIVE**.
-
-The setting significantly affects the front-to-back overlap relationship of the **in** / **out** components in
-comparison to other components. Exercise caution with it under normal conditions.
-
-You are advised to adjust this setting only when there is an error in the component overlap relationship observed
-during the shared element transition process.
+Strategy for the hierarchical position movement of **in** / **out** components in the component tree during the shared element transition process. Default value: **TransitionHierarchyStrategy.ADAPTIVE**. The setting significantly affects the front-to-back overlap relationship of the **in** / **out** components in comparison to other components. Exercise caution with it under normal conditions. You are advised to adjust this setting only when there is an error in the component overlap relationship observed during the shared element transition process.
 
 **Type:** TransitionHierarchyStrategy
 

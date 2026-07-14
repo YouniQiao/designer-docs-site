@@ -1,12 +1,6 @@
 # USBEndpoint
 
-通过USB发送和接收数据的端口。通过[USBInterface](arkts-basicservices-usbinterface-i.md)获取。
-
-> **说明：**
->
-> 主机控制器按照Endpoint类型调度。
->
-> 协议层打包时依赖type决定传输特性。
+通过USB发送和接收数据的端口。通过[USBInterface](arkts-basicservices-usbinterface-i.md)获取。 > **说明：** > > 主机控制器按照Endpoint类型调度。 > > 协议层打包时依赖type决定传输特性。
 
 **起始版本：** 9
 

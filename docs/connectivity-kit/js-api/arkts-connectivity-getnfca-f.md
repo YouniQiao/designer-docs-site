@@ -12,9 +12,7 @@ import { tag } from '@kit.ConnectivityKit';
 function getNfcA(tagInfo: TagInfo): NfcATag
 ```
 
-Obtains an {@link NfcATag} object based on the tag information.
-During tag reading, if the tag supports the NFC-A technology, an {@link NfcATag} object
-will be created based on the tag information.
+Obtains an {@link NfcATag} object based on the tag information. During tag reading, if the tag supports the NFC-A technology, an {@link NfcATag} object will be created based on the tag information.
 
 **Since:** 12
 

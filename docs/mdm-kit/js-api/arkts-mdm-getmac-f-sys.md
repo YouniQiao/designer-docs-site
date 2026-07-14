@@ -12,8 +12,7 @@ import { networkManager } from '@kit.MDMKit';
 function getMac(admin: Want, networkInterface: string, callback: AsyncCallback<string>): void
 ```
 
-Obtains the MAC address of a device based on the network interface. This API uses an asynchronous callback to
-return the result.
+Obtains the MAC address of a device based on the network interface. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 

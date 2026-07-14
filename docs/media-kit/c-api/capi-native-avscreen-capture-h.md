@@ -90,7 +90,7 @@ Creates an OH_AVScreenCapture instance.You can release the instance by calling [
 
 | Type | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture *](capi-avscreencapture-oh-avscreencapture.md) | Pointer to the OH_AVScreenCapture instance. |
+| struct OH_AVScreenCapture * | Pointer to the OH_AVScreenCapture instance. |
 
 ### OH_AVScreenCapture_Init()
 
@@ -108,8 +108,8 @@ Initializes parameters related to an [OH_AVScreenCapture](capi-avscreencapture-o
 
 | Parameter | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture](capi-avscreencapture-oh-avscreencapture.md) *capture | Pointer to the OH_AVScreenCapture instance. |
-| [OH_AVScreenCaptureConfig](capi-avscreencapture-oh-avscreencaptureconfig.md) config | Parameters related to screen capture initialization. |
+| struct OH_AVScreenCapture *capture | Pointer to the OH_AVScreenCapture instance. |
+| OH_AVScreenCaptureConfig config | Parameters related to screen capture initialization. |
 
 **Returns**:
 
@@ -133,7 +133,7 @@ Starts screen capture and collects original streams.After this function is calle
 
 | Parameter | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture](capi-avscreencapture-oh-avscreencapture.md) *capture | Pointer to an OH_AVScreenCapture instance |
+| struct OH_AVScreenCapture *capture | Pointer to an OH_AVScreenCapture instance |
 
 **Returns**:
 
@@ -157,7 +157,7 @@ Stops screen capture. This function is used in pair with [OH_AVScreenCapture_Sta
 
 | Parameter | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture](capi-avscreencapture-oh-avscreencapture.md) *capture | Pointer to the OH_AVScreenCapture instance. |
+| struct OH_AVScreenCapture *capture | Pointer to the OH_AVScreenCapture instance. |
 
 **Returns**:
 
@@ -181,7 +181,7 @@ Starts screen recording, with recordings saved in files.
 
 | Parameter | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture](capi-avscreencapture-oh-avscreencapture.md) *capture | Pointer to an OH_AVScreenCapture instance |
+| struct OH_AVScreenCapture *capture | Pointer to an OH_AVScreenCapture instance |
 
 **Returns**:
 
@@ -205,7 +205,7 @@ Stops screen recording. This function is used in pair with [OH_AVScreenCapture_S
 
 | Parameter | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture](capi-avscreencapture-oh-avscreencapture.md) *capture | Pointer to the OH_AVScreenCapture instance. |
+| struct OH_AVScreenCapture *capture | Pointer to the OH_AVScreenCapture instance. |
 
 **Returns**:
 
@@ -229,9 +229,9 @@ Obtains an audio buffer. When calling this function, the application must alloca
 
 | Parameter | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture](capi-avscreencapture-oh-avscreencapture.md) *capture | Pointer to the OH_AVScreenCapture instance. |
-| [OH_AudioBuffer](capi-avscreencapture-oh-audiobuffer.md) **audiobuffer | Pointer to the struct for storing the audio buffer. This struct is used to obtain the informationabout the audio buffer and the timestamp of the buffer. |
-| [OH_AudioCaptureSourceType](capi-native-avscreen-capture-base-h.md#oh_audiocapturesourcetype) type | Type of the audio buffer, which is used to distinguish external streams recorded by the microphone frominternal streams played by the system. |
+| struct OH_AVScreenCapture *capture | Pointer to the OH_AVScreenCapture instance. |
+| OH_AudioBuffer **audiobuffer | Pointer to the struct for storing the audio buffer. This struct is used to obtain the informationabout the audio buffer and the timestamp of the buffer. |
+| OH_AudioCaptureSourceType type | Type of the audio buffer, which is used to distinguish external streams recorded by the microphone frominternal streams played by the system. |
 
 **Returns**:
 
@@ -255,16 +255,16 @@ Obtains a video buffer. The application can call this function to obtain informa
 
 | Parameter | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture](capi-avscreencapture-oh-avscreencapture.md) *capture | Pointer to the OH_AVScreenCapture instance. |
+| struct OH_AVScreenCapture *capture | Pointer to the OH_AVScreenCapture instance. |
 | int32_t *fence | Pointer to parameters for synchronization display. |
 | int64_t *timestamp | Pointer to the timestamp of the video frame, in nanosecond. |
-| [struct OH_Rect](capi-avscreencapture-oh-rect.md) *region | Pointer to the coordinates related to video display. |
+| struct OH_Rect *region | Pointer to the coordinates related to video display. |
 
 **Returns**:
 
 | Type | Description |
 | -- | -- |
-| [OH_NativeBuffer*](capi-avscreencapture-oh-nativebuffer.md) | OH_NativeBuffer object if the operation is successful. The application can call the APIs provided by the<br> OH_NativeBuffer object to obtain information such as the video buffer and resolution. |
+| OH_NativeBuffer* | OH_NativeBuffer object if the operation is successful. The application can call the APIs provided by the<br> OH_NativeBuffer object to obtain information such as the video buffer and resolution. |
 
 ### OH_AVScreenCapture_ReleaseAudioBuffer()
 
@@ -282,8 +282,8 @@ Releases an audio buffer. When an audio buffer is no longer needed, call this fu
 
 | Parameter | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture](capi-avscreencapture-oh-avscreencapture.md) *capture | Pointer to the OH_AVScreenCapture instance. |
-| [OH_AudioCaptureSourceType](capi-native-avscreen-capture-base-h.md#oh_audiocapturesourcetype) type | Type of the audio buffer, which is used to distinguish external streams recorded by the microphone frominternal streams played by the system. |
+| struct OH_AVScreenCapture *capture | Pointer to the OH_AVScreenCapture instance. |
+| OH_AudioCaptureSourceType type | Type of the audio buffer, which is used to distinguish external streams recorded by the microphone frominternal streams played by the system. |
 
 **Returns**:
 
@@ -307,7 +307,7 @@ Releases a video buffer. When a video buffer is no longer needed, call this func
 
 | Parameter | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture](capi-avscreencapture-oh-avscreencapture.md) *capture | Pointer to the OH_AVScreenCapture instance. |
+| struct OH_AVScreenCapture *capture | Pointer to the OH_AVScreenCapture instance. |
 
 **Returns**:
 
@@ -331,8 +331,8 @@ Sets a callback to listen for available video buffers and audio buffers and erro
 
 | Parameter | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture](capi-avscreencapture-oh-avscreencapture.md) *capture | Pointer to the OH_AVScreenCapture instance. |
-| [struct OH_AVScreenCaptureCallback](capi-avscreencapture-oh-avscreencapturecallback.md) callback | OH_AVScreenCaptureCallback struct, which stores related callback function pointers. |
+| struct OH_AVScreenCapture *capture | Pointer to the OH_AVScreenCapture instance. |
+| struct OH_AVScreenCaptureCallback callback | OH_AVScreenCaptureCallback struct, which stores related callback function pointers. |
 
 **Returns**:
 
@@ -356,7 +356,7 @@ Releases an OH_AVScreenCapture instance. This function is used in pair with [OH_
 
 | Parameter | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture](capi-avscreencapture-oh-avscreencapture.md) *capture | Pointer to the OH_AVScreenCapture instance. |
+| struct OH_AVScreenCapture *capture | Pointer to the OH_AVScreenCapture instance. |
 
 **Returns**:
 
@@ -380,7 +380,7 @@ Enables or disables the microphone.When **isMicrophone** is set to **true**, the
 
 | Parameter | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture](capi-avscreencapture-oh-avscreencapture.md) *capture | Pointer to the OH_AVScreenCapture instance. |
+| struct OH_AVScreenCapture *capture | Pointer to the OH_AVScreenCapture instance. |
 | bool isMicrophone | Whether to enable the microphone.**true** to enable, **false** to disable.The default value is **true**. |
 
 **Returns**:
@@ -405,8 +405,8 @@ Sets a state change callback. This function must be called before screen capture
 
 | Parameter | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture](capi-avscreencapture-oh-avscreencapture.md) *capture | Pointer to the OH_AVScreenCapture instance. |
-| [OH_AVScreenCapture_OnStateChange](capi-native-avscreen-capture-base-h.md#oh_avscreencapture_onstatechange) callback | State change callback. |
+| struct OH_AVScreenCapture *capture | Pointer to the OH_AVScreenCapture instance. |
+| OH_AVScreenCapture_OnStateChange callback | State change callback. |
 | void *userData | Pointer to the user-defined data. The data is returned as an input parameter when the state changecallback is triggered. |
 
 **Returns**:
@@ -431,8 +431,8 @@ Sets a data processing callback. This function must be called before screen capt
 
 | Parameter | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture](capi-avscreencapture-oh-avscreencapture.md) *capture | Pointer to the OH_AVScreenCapture instance. |
-| [OH_AVScreenCapture_OnBufferAvailable](capi-native-avscreen-capture-base-h.md#oh_avscreencapture_onbufferavailable) callback | Data processing callback. |
+| struct OH_AVScreenCapture *capture | Pointer to the OH_AVScreenCapture instance. |
+| OH_AVScreenCapture_OnBufferAvailable callback | Data processing callback. |
 | void *userData | Pointer to the user-defined data. The data is returned as an input parameter when the dataprocessing callback is triggered. |
 
 **Returns**:
@@ -457,8 +457,8 @@ Sets an error processing callback. This function must be called before screen ca
 
 | Parameter | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture](capi-avscreencapture-oh-avscreencapture.md) *capture | Pointer to the OH_AVScreenCapture instance. |
-| [OH_AVScreenCapture_OnError](capi-native-avscreen-capture-base-h.md#oh_avscreencapture_onerror) callback | Error processing callback. |
+| struct OH_AVScreenCapture *capture | Pointer to the OH_AVScreenCapture instance. |
+| OH_AVScreenCapture_OnError callback | Error processing callback. |
 | void *userData | Pointer to the user-defined data. The data is returned as an input parameter when the errorprocessing callback is triggered. |
 
 **Returns**:
@@ -483,8 +483,8 @@ Sets the callback for screen capture content changes. This function must be call
 
 | Parameter | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture](capi-avscreencapture-oh-avscreencapture.md) *capture | Pointer to the OH_AVScreenCapture instance. |
-| [OH_AVScreenCapture_OnCaptureContentChanged](capi-native-avscreen-capture-base-h.md#oh_avscreencapture_oncapturecontentchanged) callback | Pointer to the callback method instance for the screen capture content change event. |
+| struct OH_AVScreenCapture *capture | Pointer to the OH_AVScreenCapture instance. |
+| OH_AVScreenCapture_OnCaptureContentChanged callback | Pointer to the callback method instance for the screen capture content change event. |
 | void *userData | Pointer to the user-defined data. The data is returned as an input parameter when the errorprocessing callback is triggered. |
 
 **Returns**:
@@ -509,8 +509,8 @@ Starts screen capture in surface mode.
 
 | Parameter | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture](capi-avscreencapture-oh-avscreencapture.md) *capture | Pointer to an OH_AVScreenCapture instance. |
-| OHNativeWindow *window | Pointer to an OHNativeWindow instance. |
+| struct OH_AVScreenCapture *capture | Pointer to an OH_AVScreenCapture instance. |
+| [OHNativeWindow](../ArkGraphics2D/capi-nativewindow-nativewindow.md) *window | Pointer to an OHNativeWindow instance. |
 
 **Returns**:
 
@@ -534,7 +534,7 @@ Sets whether the captured screen data should rotate.When **canvasRotation** is s
 
 | Parameter | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture](capi-avscreencapture-oh-avscreencapture.md) *capture | Pointer to an OH_AVScreenCapture instance |
+| struct OH_AVScreenCapture *capture | Pointer to an OH_AVScreenCapture instance |
 | bool canvasRotation | whether to rotate the canvas |
 
 **Returns**:
@@ -559,7 +559,7 @@ Creates a content filter.
 
 | Type | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture_ContentFilter *](capi-avscreencapture-oh-avscreencapture-contentfilter.md) | OH_AVScreenCapture_ContentFilter instance if the operation is successful; nullptr otherwise. |
+| struct OH_AVScreenCapture_ContentFilter * | OH_AVScreenCapture_ContentFilter instance if the operation is successful; nullptr otherwise. |
 
 ### OH_AVScreenCapture_ReleaseContentFilter()
 
@@ -577,7 +577,7 @@ Releases a content filter.
 
 | Parameter | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture_ContentFilter](capi-avscreencapture-oh-avscreencapture-contentfilter.md) *filter | Pointer to the OH_AVScreenCapture_ContentFilter instance. |
+| struct OH_AVScreenCapture_ContentFilter *filter | Pointer to the OH_AVScreenCapture_ContentFilter instance. |
 
 **Returns**:
 
@@ -601,8 +601,8 @@ Adds audio content to a content filter.
 
 | Parameter | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture_ContentFilter](capi-avscreencapture-oh-avscreencapture-contentfilter.md) *filter | Pointer to the OH_AVScreenCapture_ContentFilter instance. |
-| [OH_AVScreenCaptureFilterableAudioContent](capi-native-avscreen-capture-base-h.md#oh_avscreencapturefilterableaudiocontent) content | Pointer to the OH_AVScreenCaptureFilterableAudioContent instance. |
+| struct OH_AVScreenCapture_ContentFilter *filter | Pointer to the OH_AVScreenCapture_ContentFilter instance. |
+| OH_AVScreenCaptureFilterableAudioContent content | Pointer to the OH_AVScreenCaptureFilterableAudioContent instance. |
 
 **Returns**:
 
@@ -626,8 +626,8 @@ Sets a content filter for an OH_AVScreenCapture instance.
 
 | Parameter | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture](capi-avscreencapture-oh-avscreencapture.md) *capture | Pointer to the OH_AVScreenCapture instance. |
-| [struct OH_AVScreenCapture_ContentFilter](capi-avscreencapture-oh-avscreencapture-contentfilter.md) *filter | Pointer to the OH_AVScreenCapture_ContentFilter instance. |
+| struct OH_AVScreenCapture *capture | Pointer to the OH_AVScreenCapture instance. |
+| struct OH_AVScreenCapture_ContentFilter *filter | Pointer to the OH_AVScreenCapture_ContentFilter instance. |
 
 **Returns**:
 
@@ -651,7 +651,7 @@ Adds a list of window IDs to a ContentFilter instance.
 
 | Parameter | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture_ContentFilter](capi-avscreencapture-oh-avscreencapture-contentfilter.md) *filter | Pointer to the OH_AVScreenCapture_ContentFilter instance. |
+| struct OH_AVScreenCapture_ContentFilter *filter | Pointer to the OH_AVScreenCapture_ContentFilter instance. |
 | int32_t *windowIDs | Pointer to the window IDs. |
 | int32_t windowCount | Length of the window ID list. |
 
@@ -677,7 +677,7 @@ Adjusts the screen resolution.This function is used to set the resolution of scr
 
 | Parameter | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture](capi-avscreencapture-oh-avscreencapture.md) *capture | Pointer to an OH_AVScreenCapture instance |
+| struct OH_AVScreenCapture *capture | Pointer to an OH_AVScreenCapture instance |
 | int32_t width | Video frame width of avscreeencapture, in px. |
 | int32_t height | Video frame height of avscreeencapture, in px. |
 
@@ -703,7 +703,7 @@ Exempts privacy windows during screen capture.Currently, all the IDs of the subw
 
 | Parameter | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture](capi-avscreencapture-oh-avscreencapture.md) *capture | Pointer to an OH_AVScreenCapture instance |
+| struct OH_AVScreenCapture *capture | Pointer to an OH_AVScreenCapture instance |
 | int32_t *windowIDs | Pointer of windowID list |
 | int32_t windowCount | length of windowID list |
 
@@ -729,7 +729,7 @@ Sets the maximum frame rate for screen capture.This function must be called afte
 
 | Parameter | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture](capi-avscreencapture-oh-avscreencapture.md) *capture | Pointer to an OH_AVScreenCapture instance |
+| struct OH_AVScreenCapture *capture | Pointer to an OH_AVScreenCapture instance |
 | int32_t frameRate | max frame rate of video, in fps. |
 
 **Returns**:
@@ -754,7 +754,7 @@ Sets whether to show the cursor.
 
 | Parameter | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture](capi-avscreencapture-oh-avscreencapture.md) *capture | Pointer to an OH_AVScreenCapture instance |
+| struct OH_AVScreenCapture *capture | Pointer to an OH_AVScreenCapture instance |
 | bool showCursor | The switch of the cursor |
 
 **Returns**:
@@ -779,9 +779,9 @@ Sets or updates the capture area.This function can be called before or after scr
 
 | Parameter | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture](capi-avscreencapture-oh-avscreencapture.md) *capture | capture Pointer to an OH_AVScreenCapture instance |
+| struct OH_AVScreenCapture *capture | capture Pointer to an OH_AVScreenCapture instance |
 | uint64_t displayId | Indicates the screen index for setting area recording |
-| [OH_Rect](capi-avscreencapture-oh-rect.md)* area | Pointer to an object describing the location and size of the region |
+| OH_Rect* area | Pointer to an object describing the location and size of the region |
 
 **Returns**:
 
@@ -805,8 +805,8 @@ Sets the highlight style for the screen capture area.
 
 | Parameter | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture](capi-avscreencapture-oh-avscreencapture.md) *capture | Pointer to OH_AVScreenCapture which want to set highlight style. |
-| [OH_AVScreenCaptureHighlightConfig](capi-avscreencapture-oh-avscreencapturehighlightconfig.md) config | the highlight parameters are to be set for this screen capture. |
+| struct OH_AVScreenCapture *capture | Pointer to OH_AVScreenCapture which want to set highlight style. |
+| OH_AVScreenCaptureHighlightConfig config | the highlight parameters are to be set for this screen capture. |
 
 **Returns**:
 
@@ -830,8 +830,8 @@ Registers a callback to handle user selection results on the manual confirmation
 
 | Parameter | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture](capi-avscreencapture-oh-avscreencapture.md) *capture | Pointer to OH_AVScreenCapture which want to handle user selection info |
-| [OH_AVScreenCapture_OnUserSelected](capi-native-avscreen-capture-base-h.md#oh_avscreencapture_onuserselected) callback | user selection callback function, see [OH_AVScreenCapture_OnUserSelected](capi-native-avscreen-capture-base-h.md#oh_avscreencapture_onuserselected) |
+| struct OH_AVScreenCapture *capture | Pointer to OH_AVScreenCapture which want to handle user selection info |
+| OH_AVScreenCapture_OnUserSelected callback | user selection callback function, see [OH_AVScreenCapture_OnUserSelected](capi-native-avscreen-capture-base-h.md#oh_avscreencapture_onuserselected) |
 | void *userData | The control block pointer passed by the application is carried to the application when it isreturned |
 
 **Returns**:
@@ -856,7 +856,7 @@ Obtains the screen capture object type selected by the user on the confirmation 
 
 | Parameter | Description |
 | -- | -- |
-| [OH_AVScreenCapture_UserSelectionInfo](capi-avscreencapture-oh-avscreencapture-userselectioninfo.md) *selection | Pointer to an OH_AVScreenCapture_UserSelectionInfo instance |
+| OH_AVScreenCapture_UserSelectionInfo *selection | Pointer to an OH_AVScreenCapture_UserSelectionInfo instance |
 | int32_t* type | The capture object type selected by the user,0: represents the screen, 1: represents the window, 2: represents the app. |
 
 **Returns**:
@@ -881,7 +881,7 @@ Obtains the display ID of the screen selected by the user for capture. This func
 
 | Parameter | Description |
 | -- | -- |
-| [OH_AVScreenCapture_UserSelectionInfo](capi-avscreencapture-oh-avscreencapture-userselectioninfo.md) *selection | Pointer to an OH_AVScreenCapture_UserSelectionInfo instance |
+| OH_AVScreenCapture_UserSelectionInfo *selection | Pointer to an OH_AVScreenCapture_UserSelectionInfo instance |
 | uint64_t* displayId | Returns the screen ID value selected by the user |
 
 **Returns**:
@@ -906,7 +906,7 @@ Creates a screen capture strategy.
 
 | Type | Description |
 | -- | -- |
-| [OH_AVScreenCapture_CaptureStrategy*](capi-avscreencapture-oh-avscreencapture-capturestrategy.md) | OH_AVScreenCapture_CaptureStrategy instance if the operation is successful; nullptr otherwise. |
+| OH_AVScreenCapture_CaptureStrategy* | OH_AVScreenCapture_CaptureStrategy instance if the operation is successful; nullptr otherwise. |
 
 ### OH_AVScreenCapture_ReleaseCaptureStrategy()
 
@@ -924,7 +924,7 @@ Releases a screen capture strategy.
 
 | Parameter | Description |
 | -- | -- |
-| [OH_AVScreenCapture_CaptureStrategy](capi-avscreencapture-oh-avscreencapture-capturestrategy.md)* strategy | Pointer to an OH_AVScreenCapture_CaptureStrategy instance |
+| OH_AVScreenCapture_CaptureStrategy* strategy | Pointer to an OH_AVScreenCapture_CaptureStrategy instance |
 
 **Returns**:
 
@@ -949,8 +949,8 @@ Sets a screen capture strategy for an OH_AVScreenCapture instance.This function 
 
 | Parameter | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture](capi-avscreencapture-oh-avscreencapture.md) *capture | Pointer to an OH_AVScreenCapture which need to be setted. |
-| [OH_AVScreenCapture_CaptureStrategy](capi-avscreencapture-oh-avscreencapture-capturestrategy.md) *strategy | Pointer to an OH_AVScreenCapture_CaptureStrategy which want toset. |
+| struct OH_AVScreenCapture *capture | Pointer to an OH_AVScreenCapture which need to be setted. |
+| OH_AVScreenCapture_CaptureStrategy *strategy | Pointer to an OH_AVScreenCapture_CaptureStrategy which want toset. |
 
 **Returns**:
 
@@ -974,7 +974,7 @@ Sets whether to keep screen capture during a cellular call.When **value** is set
 
 | Parameter | Description |
 | -- | -- |
-| [OH_AVScreenCapture_CaptureStrategy](capi-avscreencapture-oh-avscreencapture-capturestrategy.md) *strategy | Pointer to an OH_AVScreenCapture_CaptureStrategy instance |
+| OH_AVScreenCapture_CaptureStrategy *strategy | Pointer to an OH_AVScreenCapture_CaptureStrategy instance |
 | bool value | The default value is false, which means that screen recording is not allowed during cellularcalls. |
 
 **Returns**:
@@ -999,7 +999,7 @@ Set the fill mode for screen capture when a privacy window exists
 
 | Parameter | Description |
 | -- | -- |
-| [OH_AVScreenCapture_CaptureStrategy](capi-avscreencapture-oh-avscreencapture-capturestrategy.md) *strategy | Pointer to an OH_AVScreenCapture_CaptureStrategy instance |
+| OH_AVScreenCapture_CaptureStrategy *strategy | Pointer to an OH_AVScreenCapture_CaptureStrategy instance |
 | int32_t value | If set to 0, it means that when there is a privacy window interface, the output screen image is completely black. If set to 1, it means that when there is a privacy window interface, only the privacy window area of the output screen becomes black, and other values returns an error. |
 
 **Returns**:
@@ -1024,7 +1024,7 @@ Sets whether to enable B-frame encoding for a CaptureStrategy instance to reduce
 
 | Parameter | Description |
 | -- | -- |
-| [OH_AVScreenCapture_CaptureStrategy](capi-avscreencapture-oh-avscreencapture-capturestrategy.md) *strategy | Pointer to an OH_AVScreenCapture_CaptureStrategy instance |
+| OH_AVScreenCapture_CaptureStrategy *strategy | Pointer to an OH_AVScreenCapture_CaptureStrategy instance |
 | value | The default value is false, which means B frames  encoding are disabled. |
 
 **Returns**:
@@ -1049,7 +1049,7 @@ Sets the automatic rotation following configuration for screen capture. If the v
 
 | Parameter | Description |
 | -- | -- |
-| [OH_AVScreenCapture_CaptureStrategy](capi-avscreencapture-oh-avscreencapture-capturestrategy.md) *strategy | Pointer to an OH_AVScreenCapture_CaptureStrategy instance |
+| OH_AVScreenCapture_CaptureStrategy *strategy | Pointer to an OH_AVScreenCapture_CaptureStrategy instance |
 | bool value | The default value is False, which means that the width and height of the VirtualDisplayremain the initial settings. If set to True, it means that the width and height of the VirtualDisplay rotateswith the rotation of the screen.. |
 
 **Returns**:
@@ -1074,7 +1074,7 @@ Sets whether to display the screen capture picker.
 
 | Parameter | Description |
 | -- | -- |
-| [OH_AVScreenCapture_CaptureStrategy](capi-avscreencapture-oh-avscreencapture-capturestrategy.md) *strategy | Pointer to an OH_AVScreenCapture_CaptureStrategy instance |
+| OH_AVScreenCapture_CaptureStrategy *strategy | Pointer to an OH_AVScreenCapture_CaptureStrategy instance |
 | valueIf | set to false, it means that the APP don't need to pop up the Picker after screen capture starts;If set to True, the Picker will pop up uniformly after screen capture starts;If not set, it means using the system recommended behavior. |
 
 **Returns**:
@@ -1099,8 +1099,8 @@ Sets the fill mode of the captured image in the target region.
 
 | Parameter | Description |
 | -- | -- |
-| [OH_AVScreenCapture_CaptureStrategy](capi-avscreencapture-oh-avscreencapture-capturestrategy.md) *strategy | Pointer to an OH_AVScreenCapture_CaptureStrategy instance |
-| [OH_AVScreenCapture_FillMode](capi-native-avscreen-capture-base-h.md#oh_avscreencapture_fillmode) mode | Value of the captured image fill mode |
+| OH_AVScreenCapture_CaptureStrategy *strategy | Pointer to an OH_AVScreenCapture_CaptureStrategy instance |
+| OH_AVScreenCapture_FillMode mode | Value of the captured image fill mode |
 
 **Returns**:
 
@@ -1124,8 +1124,8 @@ Sets a callback function for obtaining the display ID.
 
 | Parameter | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture](capi-avscreencapture-oh-avscreencapture.md) *capture | Pointer to the OH_AVScreenCapture instance. |
-| [OH_AVScreenCapture_OnDisplaySelected](capi-native-avscreen-capture-base-h.md#oh_avscreencapture_ondisplayselected) callback | Callback function for returning the display ID. |
+| struct OH_AVScreenCapture *capture | Pointer to the OH_AVScreenCapture instance. |
+| OH_AVScreenCapture_OnDisplaySelected callback | Callback function for returning the display ID. |
 | void *userData | Pointer to the user-defined data. The data is returned as an input parameter when the state changecallback is triggered. |
 
 **Returns**:
@@ -1150,7 +1150,7 @@ Hides the specified window in the picker. This function is called before the pic
 
 | Parameter | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture](capi-avscreencapture-oh-avscreencapture.md) *capture | Pointer to the OH_AVScreenCapture instance. |
+| struct OH_AVScreenCapture *capture | Pointer to the OH_AVScreenCapture instance. |
 | const int32_t *excludedWindowIDs | Array of IDs of the windows to be hidden (existing windows). |
 | uint32_t windowCount | Size of the array. |
 
@@ -1176,8 +1176,8 @@ Sets the display mode of the picker. You can define the content type displayed i
 
 | Parameter | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture](capi-avscreencapture-oh-avscreencapture.md) *capture | Pointer to the OH_AVScreenCapture instance. |
-| [OH_CapturePickerMode](capi-native-avscreen-capture-base-h.md#oh_capturepickermode) pickerMode | Display mode of the picker. For details, see **OH_CapturePickerMode**. |
+| struct OH_AVScreenCapture *capture | Pointer to the OH_AVScreenCapture instance. |
+| OH_CapturePickerMode pickerMode | Display mode of the picker. For details, see **OH_CapturePickerMode**. |
 
 **Returns**:
 
@@ -1201,7 +1201,7 @@ Displays the picker once more after the screen capture starts, allowing for dyna
 
 | Parameter | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture](capi-avscreencapture-oh-avscreencapture.md) *capture | Pointer to the OH_AVScreenCapture instance. |
+| struct OH_AVScreenCapture *capture | Pointer to the OH_AVScreenCapture instance. |
 
 **Returns**:
 
@@ -1225,10 +1225,10 @@ Obtains the multi-screen recording capability information and determines whether
 
 | Parameter | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture](capi-avscreencapture-oh-avscreencapture.md) *capture | Pointer to the OH_AVScreenCapture instance. |
+| struct OH_AVScreenCapture *capture | Pointer to the OH_AVScreenCapture instance. |
 | uint64_t *displayIds | Pointer to the array of display IDs selected by the user. |
 | size_t count | Number of display IDs selected by the user. |
-| [OH_MultiDisplayCapability](capi-avscreencapture-oh-multidisplaycapability.md) *capability | Pointer to the **OH_MultiDisplayCapability** instance. |
+| OH_MultiDisplayCapability *capability | Pointer to the **OH_MultiDisplayCapability** instance. |
 
 **Returns**:
 
@@ -1252,7 +1252,7 @@ Obtains the list of display IDs selected by the user for recording on the picker
 
 | Parameter | Description |
 | -- | -- |
-| [OH_AVScreenCapture_UserSelectionInfo](capi-avscreencapture-oh-avscreencapture-userselectioninfo.md) *selection | Pointer to the OH_AVScreenCapture_UserSelectionInfo instance. |
+| OH_AVScreenCapture_UserSelectionInfo *selection | Pointer to the OH_AVScreenCapture_UserSelectionInfo instance. |
 | uint64_t **displayIds | Double pointer to the array of display IDs selected by the user. The memory of the **displayIdsparameter is managed by **OH_AVScreenCapture_UserSelectionInfo** and does not need to be manually released. |
 | size_t *count | Pointer to the number of display IDs selected by the user. |
 
@@ -1278,8 +1278,8 @@ Sets a privacy protection callback so that the application can respond to privac
 
 | Parameter | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture](capi-avscreencapture-oh-avscreencapture.md) *capture | Pointer to the OH_AVScreenCapture instance. |
-| [OH_AVScreenCapture_OnPrivacyProtect](capi-native-avscreen-capture-base-h.md#oh_avscreencapture_onprivacyprotect) callback | Privacy protection callback function. |
+| struct OH_AVScreenCapture *capture | Pointer to the OH_AVScreenCapture instance. |
+| OH_AVScreenCapture_OnPrivacyProtect callback | Privacy protection callback function. |
 | void *userData | Pointer to the user-defined data. The data is returned as an input parameter when the state changecallback is triggered. |
 
 **Returns**:
@@ -1304,7 +1304,7 @@ Allow to pause screen capture
 
 | Parameter | Description |
 | -- | -- |
-| [OH_AVScreenCapture_CaptureStrategy](capi-avscreencapture-oh-avscreencapture-capturestrategy.md) *strategy | Pointer to an OH_AVScreenCapture_CaptureStrategy instance. |
+| OH_AVScreenCapture_CaptureStrategy *strategy | Pointer to an OH_AVScreenCapture_CaptureStrategy instance. |
 | bool value | The default value is false, which means that screen recording is not allowed to pause |
 
 **Returns**:
@@ -1329,7 +1329,7 @@ Pause screen capture
 
 | Parameter | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture](capi-avscreencapture-oh-avscreencapture.md) *capture | Initialized screen capture instance. |
+| struct OH_AVScreenCapture *capture | Initialized screen capture instance. |
 
 **Returns**:
 
@@ -1353,7 +1353,7 @@ Resume screen capture
 
 | Parameter | Description |
 | -- | -- |
-| [struct OH_AVScreenCapture](capi-avscreencapture-oh-avscreencapture.md) *capture | Initialized screen capture instance. |
+| struct OH_AVScreenCapture *capture | Initialized screen capture instance. |
 
 **Returns**:
 

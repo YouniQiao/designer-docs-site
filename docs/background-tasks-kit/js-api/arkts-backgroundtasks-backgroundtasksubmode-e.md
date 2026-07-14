@@ -1,8 +1,6 @@
 # BackgroundTaskSubmode
 
-Defines the subtype of a continuous task. It is usually used together with the main type
-[BackgroundTaskMode](arkts-backgroundtasks-backgroundtaskmode-e.md). For details, see the mapping table. The two
-types are newly added in API version 21 for requesting and updating continuous tasks.
+Defines the subtype of a continuous task. It is usually used together with the main type [BackgroundTaskMode](arkts-backgroundtasks-backgroundtaskmode-e.md). For details, see the mapping table. The two types are newly added in API version 21 for requesting and updating continuous tasks.
 
 **Since:** 21
 
@@ -52,8 +50,7 @@ Live view notification.
 SUBMODE_AUDIO_PLAYBACK_NORMAL_NOTIFICATION = 4
 ```
 
-Audio and video playback. It is of the normal text notification type.
-You can access [AVSession](../../../../media/avsession/avsession-overview.md) as needed.
+Audio and video playback. It is of the normal text notification type. You can access [AVSession](../../../../media/avsession/avsession-overview.md) as needed.
 
 **Since:** 22
 
@@ -67,8 +64,7 @@ You can access [AVSession](../../../../media/avsession/avsession-overview.md) as
 SUBMODE_AVSESSION_AUDIO_PLAYBACK = 5
 ```
 
-Audio and video playback scenario where [AVSession](../../../../media/avsession/avsession-overview.md) is accessed.
-It is of the normal text notification type.
+Audio and video playback scenario where [AVSession](../../../../media/avsession/avsession-overview.md) is accessed. It is of the normal text notification type.
 
 **Since:** 22
 
@@ -118,8 +114,7 @@ Call. It is of the normal text notification type.
 SUBMODE_MEDIA_PROCESS_NORMAL_NOTIFICATION = 9
 ```
 
-Media processing. For example, an application exports media files in the background. It is of the normal text
-notification type.
+Media processing. For example, an application exports media files in the background. It is of the normal text notification type.
 
 **Since:** 22
 
@@ -131,8 +126,7 @@ notification type.
 SUBMODE_VIDEO_BROADCAST_NORMAL_NOTIFICATION = 10
 ```
 
-Video casting. For example, an application uses a third-party casting component to cast a video in the
-background, and the notification type is common text notification.
+Video casting. For example, an application uses a third-party casting component to cast a video in the background, and the notification type is common text notification.
 
 **Since:** 22
 
@@ -144,8 +138,7 @@ background, and the notification type is common text notification.
 SUBMODE_WORK_OUT_NORMAL_NOTIFICATION = 11
 ```
 
-Exercise. For example, an application has an indoor running scenario in the background, and the notification type
-is common text notification.
+Exercise. For example, an application has an indoor running scenario in the background, and the notification type is common text notification.
 
 **Since:** 23
 

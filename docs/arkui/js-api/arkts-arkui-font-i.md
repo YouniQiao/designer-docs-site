@@ -12,9 +12,7 @@ Sets the text style.
 family?: string | Resource
 ```
 
-Font family. <br>To specify multiple fonts, separate them with commas (,), and fonts are applied in priority order.
-Example: **'Arial, HarmonyOS Sans'**.
-Default value: 'HarmonyOS Sans'.
+Font family. <br>To specify multiple fonts, separate them with commas (,), and fonts are applied in priority order. Example: **'Arial, HarmonyOS Sans'**. Default value: 'HarmonyOS Sans'.
 
 **Type:** string | Resource
 
@@ -30,8 +28,7 @@ Default value: 'HarmonyOS Sans'.
 size?: Length
 ```
 
-Font size. If the value is of the number type, the unit fp is used. Percentage strings are not supported.
-Default value: 16fp.
+Font size. If the value is of the number type, the unit fp is used. Percentage strings are not supported. Default value: 16fp.
 
 **Type:** Length
 
@@ -47,8 +44,7 @@ Default value: 16fp.
 style?: FontStyle
 ```
 
-Font style.
-Default value: FontStyle.Normal.
+Font style. Default value: FontStyle.Normal.
 
 **Type:** FontStyle
 
@@ -64,9 +60,7 @@ Default value: FontStyle.Normal.
 weight?: FontWeight | number | string
 ```
 
-Font weight. For the number type, the value ranges from 100 to 900, at an interval of 100. A larger value indicates
-a thicker font.
-Default value: FontWeight.Normal.
+Font weight. For the number type, the value ranges from 100 to 900, at an interval of 100. A larger value indicates a thicker font. Default value: FontWeight.Normal.
 
 **Type:** FontWeight | number | string
 

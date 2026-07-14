@@ -38,9 +38,7 @@ AppearSymbolEffect的构造函数，出现动效。
 scope?: EffectScope
 ```
 
-动效范围。
-
-默认值：EffectScope.LAYER
+动效范围。 默认值：EffectScope.LAYER
 
 **类型：** EffectScope
 

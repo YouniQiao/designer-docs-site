@@ -1,11 +1,6 @@
 # Progress properties/events
 
-In addition to the
-[universal attributes](../../../../reference/apis-arkui/arkui-ts/ts-component-general-attributes.md), the following
-attributes are supported.
-
-The [universal events][universal events](../../../../reference/apis-arkui/arkui-ts/ts-component-general-events.md) are
-supported.
+In addition to the [universal attributes](../../../../reference/apis-arkui/arkui-ts/ts-component-general-attributes.md), the following attributes are supported. The [universal events][universal events](../../../../reference/apis-arkui/arkui-ts/ts-component-general-events.md) are supported.
 
 **Inheritance/Implementation:** ProgressAttribute extends [CommonMethod<ProgressAttribute<Type>>](CommonMethod<ProgressAttribute<Type>>)
 
@@ -19,16 +14,7 @@ supported.
 color(value: ResourceColor | LinearGradient)
 ```
 
-Sets the foreground color of the progress indicator.
-
-Since API version 10, [LinearGradient](arkts-arkui-lineargradient-i.md) can be used to set a gradient color for the ring
-style. Setting opacity is not recommended for the ring type. If opacity is required, use
-[DataPanel](arkts-arkui-datapanel.md).
-
-Since API version 23, [LinearGradient](arkts-arkui-lineargradient-i.md) can be used to set gradient colors for the linear and
-capsule styles. In API version 22 and earlier versions, setting gradient colors via **LinearGradient** for the
-**Linear** and **Capsule** styles will not render the custom colors; the system's default theme colors will be used
-instead.
+Sets the foreground color of the progress indicator. Since API version 10, [LinearGradient](arkts-arkui-lineargradient-i.md) can be used to set a gradient color for the ring style. Setting opacity is not recommended for the ring type. If opacity is required, use [DataPanel](arkts-arkui-datapanel.md). Since API version 23, [LinearGradient](arkts-arkui-lineargradient-i.md) can be used to set gradient colors for the linear and capsule styles. In API version 22 and earlier versions, setting gradient colors via **LinearGradient** for the **Linear** and **Capsule** styles will not render the custom colors; the system's default theme colors will be used instead.
 
 **Since:** 7
 
@@ -72,11 +58,7 @@ Creates a content modifier.
 privacySensitive(isPrivacySensitiveMode: Optional<boolean>)
 ```
 
-Sets whether to enable privacy-sensitive mode.
-
-> **NOTE**
->
-> This API can be called in [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
+Sets whether to enable privacy-sensitive mode. > **NOTE** > > This API can be called in [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
 
 **Since:** 12
 
@@ -122,8 +104,7 @@ Sets the component style.
 value(value: number)
 ```
 
-Current progress. Values less than 0 are adjusted to **0**, and values greater than the **total** value are capped
-at the **total** value. Invalid values do not take effect.
+Current progress. Values less than 0 are adjusted to **0**, and values greater than the **total** value are capped at the **total** value. Invalid values do not take effect.
 
 **Since:** 7
 

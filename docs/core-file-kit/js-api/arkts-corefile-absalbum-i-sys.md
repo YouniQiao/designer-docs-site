@@ -24,7 +24,7 @@ import { userFileManager } from '@kit.CoreFileKit';
 getPhotoAssets(options: FetchOptions, callback: AsyncCallback<FetchResult<FileAsset>>): void
 ```
 
-Obtains files in an album. This method uses an asynchronous callback to return the files.
+Obtains image and video assets. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -43,7 +43,7 @@ Obtains files in an album. This method uses an asynchronous callback to return t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | FetchOptions | Yes | Retrieval options. |
-| callback | AsyncCallback&lt;FetchResult&lt;FileAsset&gt;&gt; | Yes | Callback used to return the files in the format of a FetchResult instance. |
+| callback | AsyncCallback&lt;FetchResult&lt;FileAsset&gt;&gt; | Yes | Callback used to return the image and video assetsobtained. |
 
 **Error codes:**
 
@@ -57,7 +57,7 @@ Obtains files in an album. This method uses an asynchronous callback to return t
 getPhotoAssets(options: FetchOptions): Promise<FetchResult<FileAsset>>
 ```
 
-Obtains files in an album. This method uses a promise to return the files.
+Obtains image and video assets. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -81,7 +81,7 @@ Obtains files in an album. This method uses a promise to return the files.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;FetchResult&lt;FileAsset&gt;&gt; | A Promise instance used to return the files in the format of a FetchResult instance. |
+| Promise&lt;FetchResult&lt;FileAsset&gt;&gt; | Promise that returns the image and video assets obtained. |
 
 **Error codes:**
 
@@ -95,7 +95,7 @@ Obtains files in an album. This method uses a promise to return the files.
 albumName: string
 ```
 
-Album name.
+Name of the album. > **NOTE** > > The user album is writable, but the system album is not writable.
 
 **Type:** string
 
@@ -115,7 +115,7 @@ Album name.
 readonly albumSubType: AlbumSubType
 ```
 
-Album subtype
+Subtype of the album.
 
 **Type:** AlbumSubType
 
@@ -135,7 +135,7 @@ Album subtype
 readonly albumType: AlbumType
 ```
 
-Album type
+Type of the album to obtain.
 
 **Type:** AlbumType
 
@@ -155,7 +155,7 @@ Album type
 readonly albumUri: string
 ```
 
-Album uri.
+URI of the album.
 
 **Type:** string
 
@@ -175,7 +175,7 @@ Album uri.
 readonly count: number
 ```
 
-File count for the album
+Number of files in the album.
 
 **Type:** number
 
@@ -195,7 +195,7 @@ File count for the album
 coverUri: string
 ```
 
-CoverUri for the album
+URI of the cover file of the album. > **NOTE** > > The user album is writable, but the system album is not writable.
 
 **Type:** string
 
@@ -215,8 +215,7 @@ CoverUri for the album
 readonly dateModified: number
 ```
 
-Time when the album was modified.
-Unit: ms, The value must be an integer greater than or equal to 0.
+Time when the album was modified. Unit: ms, The value must be an integer greater than or equal to 0.
 
 **Type:** number
 

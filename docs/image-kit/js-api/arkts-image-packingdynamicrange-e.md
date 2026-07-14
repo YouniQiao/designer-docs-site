@@ -12,9 +12,7 @@ Enumerates the desired dynamic range of an image during encoding.
 AUTO = 0
 ```
 
-Adaptive. The [pixelmap](arkts-image-pixelmap-i.md) is encoded based on the format. If the
-PixelMap is in HDR format, it is encoded based on the HDR content; otherwise, it is encoded based on the SDR
-content.
+Adaptive. The [pixelmap](arkts-image-pixelmap-i.md) is encoded based on the format. If the PixelMap is in HDR format, it is encoded based on the HDR content; otherwise, it is encoded based on the SDR content.
 
 **Since:** 12
 

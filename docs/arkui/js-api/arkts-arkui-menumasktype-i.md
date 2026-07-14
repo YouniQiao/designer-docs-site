@@ -12,9 +12,7 @@ Sets the mask type.
 backgroundBlurStyle?: BlurStyle
 ```
 
-Blur material of the mask.
-
-Default value: **BlurStyle.BACKGROUND_THIN**
+Blur material of the mask. Default value: **BlurStyle.BACKGROUND_THIN**
 
 **Type:** BlurStyle
 
@@ -34,9 +32,7 @@ Default value: **BlurStyle.BACKGROUND_THIN**
 color?: ResourceColor
 ```
 
-Mask color.
-
-Default value: **$r('sys.color.ohos_id_color_mask_thin')**
+Mask color. Default value: **$r('sys.color.ohos_id_color_mask_thin')**
 
 **Type:** ResourceColor
 

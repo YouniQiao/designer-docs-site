@@ -86,8 +86,7 @@ Bundle name.
 readonly canUserModify?: boolean
 ```
 
-Whether the developer is allowed to modify the auto-startup status of this application. The options include
-**true** (yes) and **false** (no).
+Whether the developer is allowed to modify the auto-startup status of this application. The options include **true** (yes) and **false** (no).
 
 **Type:** boolean
 
@@ -141,8 +140,7 @@ User ID of the person who set the application to automatically start upon system
 readonly userId?: number
 ```
 
-User ID associated with the application, used to differentiate applications belonging to different user accounts on
-the same device.
+User ID associated with the application, used to differentiate applications belonging to different user accounts on the same device.
 
 **Type:** number
 

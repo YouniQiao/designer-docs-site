@@ -12,8 +12,7 @@ import { advertising } from '@kit.AdsKit';
 function deleteWebAdInterface(controller: web_webview.WebviewController, needRefresh: boolean): void
 ```
 
-Deletes the ad JavaScript object injected through **registerWebAdInterface**
-(this API is only open to some pre-installed system applications).
+Deletes the ad JavaScript object injected through **registerWebAdInterface** (this API is only open to some pre-installed system applications).
 
 **Since:** 16
 

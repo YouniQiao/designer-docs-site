@@ -6,11 +6,7 @@
 declare function symlinkSync(target: string, srcPath: string): void
 ```
 
-以同步的方法基于文件路径创建符号链接。
-
-> **说明：**
->
-> 从API version 11开始，不支持三方应用使用。
+以同步的方法基于文件路径创建符号链接。 > **说明：** > > 从API version 11开始，不支持三方应用使用。
 
 **起始版本：** 9
 

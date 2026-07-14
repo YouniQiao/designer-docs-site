@@ -2,7 +2,6 @@
 
 Defines the interface of Screen.
 
-
 ## Screen
 
 ```TypeScript

@@ -1,7 +1,6 @@
 # TouchTestInfo
 
-Provides information about the coordinate system, ID, and size of the component where the current touch point is
-located.
+Provides information about the coordinate system, ID, and size of the component where the current touch point is located.
 
 **Since:** 11
 
@@ -31,9 +30,7 @@ Unique ID of the child component.
 parentX: number
 ```
 
-X-coordinate of the touch point relative to the upper left corner of the parent component.
-
-Unit: vp.
+X-coordinate of the touch point relative to the upper left corner of the parent component. Unit: vp.
 
 **Type:** number
 
@@ -51,9 +48,7 @@ Unit: vp.
 parentY: number
 ```
 
-Y-coordinate of the touch point relative to the upper left corner of the parent component.
-
-Unit: vp.
+Y-coordinate of the touch point relative to the upper left corner of the parent component. Unit: vp.
 
 **Type:** number
 
@@ -89,9 +84,7 @@ Position, width, and height of the child component.
 windowX: number
 ```
 
-X-coordinate of the touch point relative to the upper left corner of the window.
-
-Unit: vp.
+X-coordinate of the touch point relative to the upper left corner of the window. Unit: vp.
 
 **Type:** number
 
@@ -109,9 +102,7 @@ Unit: vp.
 windowY: number
 ```
 
-Y-coordinate of the touch point relative to the upper left corner of the window.
-
-Unit: vp.
+Y-coordinate of the touch point relative to the upper left corner of the window. Unit: vp.
 
 **Type:** number
 
@@ -129,9 +120,7 @@ Unit: vp.
 x: number
 ```
 
-X-coordinate of the touch point relative to the upper left corner of the child component.
-
-Unit: vp.
+X-coordinate of the touch point relative to the upper left corner of the child component. Unit: vp.
 
 **Type:** number
 
@@ -149,9 +138,7 @@ Unit: vp.
 y: number
 ```
 
-Y-coordinate of the touch point relative to the upper left corner of the child component.
-
-Unit: vp.
+Y-coordinate of the touch point relative to the upper left corner of the child component. Unit: vp.
 
 **Type:** number
 

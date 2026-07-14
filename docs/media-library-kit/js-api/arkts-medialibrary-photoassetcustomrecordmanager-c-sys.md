@@ -1,6 +1,6 @@
 # PhotoAssetCustomRecordManager (System API)
 
-Defines the class of media asset custom record manager.
+Provides APIs for custom user behavior recording for Gallery.
 
 **Since:** 20
 
@@ -20,8 +20,7 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 addLcdJumpCount(ids: Array<number>): Promise<Array<number>>
 ```
 
-Add lcd jump count which fileId is in ids
-A maximum of 500 ids can be add at once.
+Increases the value of **LcdJumpCount** by 1 for the data in the database based on **fileId** in [PhotoAssetCustomRecord](arkts-medialibrary-photoassetcustomrecord-i-sys.md). This API uses a promise to return the result.
 
 **Since:** 20
 
@@ -33,21 +32,21 @@ A maximum of 500 ids can be add at once.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| ids | Array&lt;number&gt; | Yes | ids which need to add share count. |
+| ids | Array&lt;number&gt; | Yes | Array of file IDs in[PhotoAssetCustomRecord](arkts-medialibrary-photoassetcustomrecord-i-sys.md). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Array&lt;number&gt;&gt; | Returns list of fileId which add failed |
+| Promise&lt;Array&lt;number&gt;&gt; | Promise used to return the file ID in the custom user behavior recordings thatfail to be updated. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) | Scenario parameters fail to pass the verification.Possible causes:<br>1. The ids list is empty. 2. The number of ids lists exceeds 500. |
-| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.<br>Possible causes: 1. Database corrupted; 2. The file system is abnormal; 3. The IPC request timed out. |
+| [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) | Scenario parameters fail to pass the verification.Possible causes:<br>1. The ids list is empty.<br>2. The number of ids lists exceeds 500. |
+| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.<br>Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
 ## addShareCount
 
@@ -55,8 +54,7 @@ A maximum of 500 ids can be add at once.
 addShareCount(ids: Array<number>): Promise<Array<number>>
 ```
 
-Add share count which fileId is in ids
-A maximum of 500 ids can be add at once.
+Increases the value of **shareCount** by 1 for the data in the database based on **fileId** in [PhotoAssetCustomRecord](arkts-medialibrary-photoassetcustomrecord-i-sys.md). This API uses a promise to return the result.
 
 **Since:** 20
 
@@ -68,13 +66,13 @@ A maximum of 500 ids can be add at once.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| ids | Array&lt;number&gt; | Yes | ids which need to add share count. |
+| ids | Array&lt;number&gt; | Yes | Array of file IDs in[PhotoAssetCustomRecord](arkts-medialibrary-photoassetcustomrecord-i-sys.md). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Array&lt;number&gt;&gt; | Returns list of fileId which add failed |
+| Promise&lt;Array&lt;number&gt;&gt; | Promise used to return the file ID in the custom user behavior recordings thatfail to be updated. |
 
 **Error codes:**
 
@@ -82,7 +80,7 @@ A maximum of 500 ids can be add at once.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
 | [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) | Scenario parameters fail to pass the verification.Possible causes:<br>1. The ids list is empty. 2. The number of ids lists exceeds 500. |
-| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.<br>Possible causes: 1. Database corrupted; 2. The file system is abnormal; 3. The IPC request timed out. |
+| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.<br>Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
 ## createCustomRecords
 
@@ -90,8 +88,7 @@ A maximum of 500 ids can be add at once.
 createCustomRecords(customRecords: Array<PhotoAssetCustomRecord>): Promise<void>
 ```
 
-Creates custom records.
-A maximum of 200 custom records can be created at once.
+Adds custom user behavior recordings. This API uses a promise to return the result.
 
 **Since:** 20
 
@@ -103,21 +100,21 @@ A maximum of 200 custom records can be created at once.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| customRecords | Array&lt;PhotoAssetCustomRecord&gt; | Yes | Custom records. |
+| customRecords | Array&lt;PhotoAssetCustomRecord&gt; | Yes | Custom user behavior recordings. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Returns void |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) | Scenario parameters fail to pass the verification. Possible causes:<br>1. The value range of mandatory parameters in photoAssetCustomRecord does not meet the requirements.<br>2. The transferred record already exists. 3. The number of transferred records exceeds 200. |
-| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.<br>Possible causes: 1. Database corrupted; 2. The file system is abnormal; 3. The IPC request timed out. |
+| [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) | Scenario parameters fail to pass the verification.Possible causes:<br>1. The value range of mandatory parameters in photoAssetCustomRecord does not meet the requirements.<br>2. The transferred record already exists. 3. The number of transferred records exceeds 200. |
+| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.<br>Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
 **Example**
 
@@ -145,7 +142,7 @@ async function example(context: Context) {
 static getCustomRecordManagerInstance(context: Context): PhotoAssetCustomRecordManager
 ```
 
-Get media asset custom record manager instance.
+Obtains an instance of custom user behavior recording for Gallery.
 
 **Since:** 20
 
@@ -163,14 +160,14 @@ Get media asset custom record manager instance.
 
 | Type | Description |
 | --- | --- |
-| PhotoAssetCustomRecordManager | Returns media asset custom record manager instance |
+| PhotoAssetCustomRecordManager | Custom user behavior recording instance. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [23800107](../errorcode-medialibrary.md#23800107-context-is-empty-or-invalid) | Context is invalid@static |
+| [23800107](../errorcode-medialibrary.md#23800107-context-is-empty-or-invalid) | Context is invalid |
 
 **Example**
 
@@ -195,7 +192,7 @@ async function example(context: Context) {
 getCustomRecords(optionCheck: FetchOptions): Promise<FetchResult<PhotoAssetCustomRecord>>
 ```
 
-Get custom records.
+Obtains custom user behavior recordings based on retrieval options. This API uses a promise to return the result.
 
 **Since:** 20
 
@@ -207,13 +204,13 @@ Get custom records.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| optionCheck | FetchOptions | Yes | Options to fetch custom records. |
+| optionCheck | FetchOptions | Yes | Retrieval options. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;FetchResult&lt;PhotoAssetCustomRecord&gt;&gt; | Returns fetchResult of PhotoAssetCustomRecord |
+| Promise&lt;FetchResult&lt;PhotoAssetCustomRecord&gt;&gt; | Promise used to return the collection of custom userbehavior recordings. |
 
 **Error codes:**
 
@@ -221,7 +218,7 @@ Get custom records.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
 | [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) | Scenario parameters fail to pass the verification.Possible causes:1. The filter criteria or fetchColumns that are not supported by options are transferred. |
-| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.<br>Possible causes: 1. Database corrupted; 2. The file system is abnormal; 3. The IPC request timed out. |
+| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.<br>Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
 **Example**
 
@@ -254,7 +251,7 @@ async function example(context: Context) {
 removeCustomRecords(optionCheck: FetchOptions): Promise<void>
 ```
 
-Remove custom records.
+Removes custom user behavior recordings based on retrieval options. This API uses a promise to return the result.
 
 **Since:** 20
 
@@ -266,13 +263,13 @@ Remove custom records.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| optionCheck | FetchOptions | Yes | Options to remove custom records. |
+| optionCheck | FetchOptions | Yes | Retrieval options. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Returns void |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -280,7 +277,7 @@ Remove custom records.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
 | [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) | Scenario parameters fail to pass the verification.Possible causes:<br>1. The filter criteria or fetchColumns that are not supported by options are transferred. |
-| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.<br>Possible causes: 1. Database corrupted; 2. The file system is abnormal; 3. The IPC request timed out. |
+| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.<br>Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
 **Example**
 
@@ -312,8 +309,7 @@ async function example(context: Context) {
 setCustomRecords(customRecords: Array<PhotoAssetCustomRecord>): Promise<Array<number>>
 ```
 
-Set custom records.
-A maximum of 200 custom records can be set at once.
+Updates the existing database fields based on custom user behavior recordings. This API uses a promise to return the result.
 
 **Since:** 20
 
@@ -325,13 +321,13 @@ A maximum of 200 custom records can be set at once.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| customRecords | Array&lt;PhotoAssetCustomRecord&gt; | Yes | Custom records. |
+| customRecords | Array&lt;PhotoAssetCustomRecord&gt; | Yes | Custom user behavior recordings. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Array&lt;number&gt;&gt; | Returns list of fileId in photoAssetCustomRecord which set failed |
+| Promise&lt;Array&lt;number&gt;&gt; | Promise used to return the file ID in the custom user behavior recordings thatfail to be updated. |
 
 **Error codes:**
 
@@ -339,7 +335,7 @@ A maximum of 200 custom records can be set at once.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
 | [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) | Scenario parameters fail to pass the verification.Possible causes:<br>1. The value range of mandatory parameters in photoAssetCustomRecord does not meet the requirements.<br>2. The number of transferred records exceeds 200. |
-| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.<br>Possible causes: 1. Database corrupted; 2. The file system is abnormal; 3. The IPC request timed out. |
+| [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.<br>Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
 **Example**
 

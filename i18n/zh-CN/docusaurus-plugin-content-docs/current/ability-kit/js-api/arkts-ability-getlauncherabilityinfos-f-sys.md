@@ -7,13 +7,7 @@ function getLauncherAbilityInfos(bundleName: string,
     userId: number, callback: AsyncCallback<Array<LauncherAbilityInfo>>): void
 ```
 
-根据给定的Bundle名称获取LauncherAbilityInfos，使用callback异步回调。
-
-> **说明：**
->
-> 从API version 8开始支持，从API version 9开始废弃，建议使用
-> [getLauncherAbilityInfo](@ohos.bundle.launcherBundleManager:launcherBundleManager.getLauncherAbilityInfo(bundleName: string, userId: int, callback: AsyncCallback<Array<LauncherAbilityInfo>>))
-> 替代。
+根据给定的Bundle名称获取LauncherAbilityInfos，使用callback异步回调。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃，建议使用 > [getLauncherAbilityInfo](@ohos.bundle.launcherBundleManager:launcherBundleManager.getLauncherAbilityInfo(bundleName: string, userId: int, callback: AsyncCallback<Array<LauncherAbilityInfo>>)) > 替代。
 
 **起始版本：** 8
 
@@ -42,13 +36,7 @@ function getLauncherAbilityInfos(bundleName: string,
 function getLauncherAbilityInfos(bundleName: string, userId: number): Promise<Array<LauncherAbilityInfo>>
 ```
 
-根据给定的Bundle名称获取LauncherAbilityInfos，使用Promise异步回调。
-
-> **说明：**
->
-> 从API version 8开始支持，从API version 9开始废弃，建议使用
-> [getLauncherAbilityInfo](@ohos.bundle.launcherBundleManager:launcherBundleManager.getLauncherAbilityInfo(bundleName: string, userId: int, callback: AsyncCallback<Array<LauncherAbilityInfo>>))
-> 替代。
+根据给定的Bundle名称获取LauncherAbilityInfos，使用Promise异步回调。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃，建议使用 > [getLauncherAbilityInfo](@ohos.bundle.launcherBundleManager:launcherBundleManager.getLauncherAbilityInfo(bundleName: string, userId: int, callback: AsyncCallback<Array<LauncherAbilityInfo>>)) > 替代。
 
 **起始版本：** 8
 

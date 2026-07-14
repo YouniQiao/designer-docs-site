@@ -19,7 +19,7 @@ import { ArkTSUtils } from '@kit.ArkTS';
 | Name | Description |
 | --- | --- |
 | [parse](arkts-arkts-parse-f.md#parse-1) | Converts a JavaScript Object Notation (JSON) string into an ArkTS Value. |
-| [stringify](arkts-arkts-stringify-f.md#stringify-1) | Converts an ArkTS value to a JavaScript Object Notation (JSON) string.Extra supports Map and Set. |
+| [stringify](arkts-arkts-stringify-f.md#stringify-1) | Converts an ArkTS value to a JavaScript Object Notation (JSON) string. Extra supports Map and Set. |
 
 ### Interfaces
 

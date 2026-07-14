@@ -12,7 +12,7 @@ import { notificationManager } from '@kit.NotificationKit';
 function getBadgeNumber(): Promise<number>
 ```
 
-获取当前应用角标数量。使用Promise异步回调。
+获取当前应用角标数量。使用Promise异步回调。 用于查询当前应用桌面图标上显示的角标数字。
 
 **起始版本：** 22
 

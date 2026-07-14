@@ -1,8 +1,8 @@
 # GridObjectSortComponent
 
-Declare struct GridObjectSortComponent.
+**GridObjectSortComponent** is a grid object organizer that you can use to edit, drag to sort, add, and delete grid objects. > **NOTE** > > - This component can be used only in the stage model. > > - If the **GridObjectSortComponent** component has [universal attributes](./@internal/component/ets/common) > and [universal events](./@internal/component/ets/common) configured, the compiler toolchain automatically > generates an additional **__Common__** node and mounts the universal attributes and universal events on this node > rather than the **GridObjectSortComponent** component itself. As a result, the configured universal attributes and > universal events may fail to take effect or behave as intended. For this reason, avoid using universal attributes > and events with the **GridObjectSortComponent** component.
 
-**Since:** 12
+**Since:** 11
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -20,7 +20,7 @@ build(): void
 
 Build function of GridObjectSortComponent.
 
-**Since:** 12
+**Since:** 11
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -34,11 +34,11 @@ Build function of GridObjectSortComponent.
 dataList: Array<GridObjectSortComponentItem>
 ```
 
-Data list of GridObjectSortComponent.
+Data to pass. The maximum data length is 50 characters. If it is exceeded, only the first 50 characters are used.
 
 **Type:** Array<GridObjectSortComponentItem>
 
-**Since:** 12
+**Since:** 11
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -52,11 +52,11 @@ Data list of GridObjectSortComponent.
 onCancel: () => void
 ```
 
-Cancel callback for saving data.
+Callback invoked when changes are canceled.
 
 **Type:** () => void
 
-**Since:** 12
+**Since:** 11
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -70,11 +70,11 @@ Cancel callback for saving data.
 onSave: (select: Array<GridObjectSortComponentItem>, unselect: Array<GridObjectSortComponentItem>) => void
 ```
 
-Callback when Obtain edited data.
+Callback invoked when changes are saved. The data after the changes is returned.
 
 **Type:** (select: Array<GridObjectSortComponentItem>, unselect: Array<GridObjectSortComponentItem>) => void
 
-**Since:** 12
+**Since:** 11
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -88,11 +88,11 @@ Callback when Obtain edited data.
 options: GridObjectSortComponentOptions
 ```
 
-Component types and parameters of the GridObjectSortComponent.
+Component configuration.
 
 **Type:** GridObjectSortComponentOptions
 
-**Since:** 12
+**Since:** 11
 
 **Decorator:** @Prop
 

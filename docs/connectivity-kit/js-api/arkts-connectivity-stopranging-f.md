@@ -12,12 +12,7 @@ import { ranging } from '@kit.ConnectivityKit';
 function stopRanging(callback: Callback<RangingResult>, params?: RangingParams): void
 ```
 
-Stops ongoing ranging operations.
-If no target device is specified, stops ranging for all devices associated with the callback.
-If a target device is specified, only stops ranging for that specific device.
-This method also releases all occupied resources. For proper resource management,
-stopRanging must be called after startRanging to avoid resource leaks.
-State changes are notified via the onRangingStateChange callback.
+Stops ongoing ranging operations. If no target device is specified, stops ranging for all devices associated with the callback. If a target device is specified, only stops ranging for that specific device. This method also releases all occupied resources. For proper resource management, stopRanging must be called after startRanging to avoid resource leaks. State changes are notified via the onRangingStateChange callback.
 
 **Since:** 26.0.0
 

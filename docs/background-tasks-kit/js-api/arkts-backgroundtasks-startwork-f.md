@@ -12,8 +12,7 @@ import { workScheduler } from '@kit.BackgroundTasksKit';
 function startWork(work: WorkInfo): void
 ```
 
-Requests a deferred task. Upon successful request, the deferred task is added to the execution queue and will be
-executed by the system once the trigger conditions are met.
+Requests a deferred task. Upon successful request, the deferred task is added to the execution queue and will be executed by the system once the trigger conditions are met.
 
 **Since:** 9
 

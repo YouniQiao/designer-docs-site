@@ -1,22 +1,6 @@
 # Sign
 
-Sign类，使用Sign方法之前需要创建该类的实例进行操作，通过
-[createSign(algName: string): Sign](arkts-cryptoarchitecture-createsign-f.md#createsign-1)方法构造此实例。按序调用本类中的init、update、sign
-方法完成签名操作。签名操作的示例代码详见
-[签名验签开发指导](../../../../security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1.md)。
-
-Sign类不支持重复初始化，当业务方需要使用新密钥签名时，需要重新创建新Sign对象并调用init初始化。
-
-业务方使用时，调用createSign接口确定签名的模式，调用init接口设置密钥。
-
-当待签名数据长度较短时，可在初始化后直接调用sign接口传入数据进行签名，无需调用update。
-
-当待签名数据较长时，可通过update接口分段传入切分后的原文数据，最后调用sign接口对整体原文数据进行签名。
-
-当使用update分段传入原文时，sign接口API 10之前只支持传入DataBlob， API 10之后增加支持null。业务方可在循环中调用update接口，循环
-结束后调用sign进行签名。
-
-使用DSA算法签名时，如果摘要算法设置为NoHash，则不支持update操作，调用update接口将返回错误码ERR_CRYPTO_OPERATION。
+Sign类，使用Sign方法之前需要创建该类的实例进行操作，通过 [createSign(algName: string): Sign](arkts-cryptoarchitecture-createsign-f.md#createsign-1)方法构造此实例。按序调用本类中的init、update、sign 方法完成签名操作。签名操作的示例代码详见 [签名验签开发指导](../../../../security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1.md)。 Sign类不支持重复初始化，当业务方需要使用新密钥签名时，需要重新创建新Sign对象并调用init初始化。 业务方使用时，调用createSign接口确定签名的模式，调用init接口设置密钥。 当待签名数据长度较短时，可在初始化后直接调用sign接口传入数据进行签名，无需调用update。 当待签名数据较长时，可通过update接口分段传入切分后的原文数据，最后调用sign接口对整体原文数据进行签名。 当使用update分段传入原文时，sign接口API 10之前只支持传入DataBlob， API 10之后增加支持null。业务方可在循环中调用update接口，循环 结束后调用sign进行签名。 使用DSA算法签名时，如果摘要算法设置为NoHash，则不支持update操作，调用update接口将返回错误码ERR_CRYPTO_OPERATION。
 
 **起始版本：** 9
 
@@ -82,9 +66,7 @@ function testGetSignSpec() {
 init(priKey: PriKey, callback: AsyncCallback<void>): void
 ```
 
-使用私钥初始化Sign对象。使用callback异步回调。init、update、sign为三段式接口，需要成组使用。其中init和sign必选，update可选。
-
-Sign类不支持重复初始化。
+使用私钥初始化Sign对象。使用callback异步回调。init、update、sign为三段式接口，需要成组使用。其中init和sign必选，update可选。 Sign类不支持重复初始化。
 
 **起始版本：** 9
 
@@ -117,9 +99,7 @@ Sign类不支持重复初始化。
 init(priKey: PriKey): Promise<void>
 ```
 
-使用私钥初始化Sign对象。使用Promise异步回调。init、update、sign为三段式接口，需要成组使用。其中init和sign必选，update可选。
-
-Sign类不支持重复初始化。
+使用私钥初始化Sign对象。使用Promise异步回调。init、update、sign为三段式接口，需要成组使用。其中init和sign必选，update可选。 Sign类不支持重复初始化。
 
 **起始版本：** 9
 
@@ -157,14 +137,7 @@ Sign类不支持重复初始化。
 initSync(priKey: PriKey): void
 ```
 
-使用私钥初始化Sign对象，通过同步方式获取结果。initSync、updateSync、signSync为三段式接口，需要成组使用。其中initSync和signSync
-必选，updateSync可选。
-
-Sign类不支持重复调用initSync。
-
-<br><br>**说明：**
-<br>建议优先使用异步API{@link init}。同步API可能因系统繁忙、高负载等原因耗时较长而阻塞主线程。
-因此建议在子线程中调用同步API，以避免阻塞主线程。
+使用私钥初始化Sign对象，通过同步方式获取结果。initSync、updateSync、signSync为三段式接口，需要成组使用。其中initSync和signSync 必选，updateSync可选。 Sign类不支持重复调用initSync。 <br><br>**说明：** <br>建议优先使用异步API{@link init}。同步API可能因系统繁忙、高负载等原因耗时较长而阻塞主线程。 因此建议在子线程中调用同步API，以避免阻塞主线程。
 
 **起始版本：** 12
 
@@ -194,9 +167,7 @@ Sign类不支持重复调用initSync。
 setSignSpec(itemType: SignSpecItem, itemValue: number): void
 ```
 
-设置签名参数。常用签名参数可通过 [createSign](arkts-cryptoarchitecture-createsign-f.md#createsign-1) 指定，其他参数则通过本接口设置。
-
-当前仅支持RSA算法、SM2算法，从API version11开始，支持SM2算法设置签名参数。
+设置签名参数。常用签名参数可通过 [createSign](arkts-cryptoarchitecture-createsign-f.md#createsign-1) 指定，其他参数则通过本接口设置。 当前仅支持RSA算法、SM2算法，从API version11开始，支持SM2算法设置签名参数。
 
 **起始版本：** 10
 
@@ -277,8 +248,7 @@ setSignSpec(itemType: SignSpecItem, itemValue: number | Uint8Array): void
 setSignSpec(itemType: SignSpecItem, itemValue: number | Uint8Array | boolean): void
 ```
 
-为Sign对象设置指定参数。当前仅支持RSA算法中的PSS_SALT_LEN参数、SM2算法中的USER_ID参数以及ML-DSA算法中的
-ML_DSA_DETERMINISTIC、ML_DSA_MU和ML_DSA_CONTEXT参数。
+为Sign对象设置指定参数。当前仅支持RSA算法中的PSS_SALT_LEN参数、SM2算法中的USER_ID参数以及ML-DSA算法中的 ML_DSA_DETERMINISTIC、ML_DSA_MU和ML_DSA_CONTEXT参数。
 
 **起始版本：** 26.0.0
 
@@ -466,11 +436,7 @@ sign(data: DataBlob | null): Promise<DataBlob>
 signSync(data: DataBlob | null): DataBlob
 ```
 
-对数据进行签名，通过同步方式返回签名结果。
-
-<br><br>**说明：**
-<br>建议优先使用异步API{@link sign}。同步API可能因系统繁忙、高负载等原因耗时较长而阻塞主线程。
-因此建议在子线程中调用同步API，以避免阻塞主线程。
+对数据进行签名，通过同步方式返回签名结果。 <br><br>**说明：** <br>建议优先使用异步API{@link sign}。同步API可能因系统繁忙、高负载等原因耗时较长而阻塞主线程。 因此建议在子线程中调用同步API，以避免阻塞主线程。
 
 **起始版本：** 12
 
@@ -701,26 +667,7 @@ function signBySync() {
 update(data: DataBlob, callback: AsyncCallback<void>): void
 ```
 
-追加待签名数据，使用callback异步回调完成更新。
-
-必须在对[Sign](arkts-cryptoarchitecture-sign-i.md)实例使用[init](arkts-cryptoarchitecture-sign-i.md#init-1)或
-[initSync](arkts-cryptoarchitecture-sign-i.md#initsync-1)初始化后，才能使用本函数。
-
-> **说明：**
->
-> 根据数据量，可以不调用update（即[init](arkts-cryptoarchitecture-sign-i.md#init-1)完成后直接调用
-> [sign](arkts-cryptoarchitecture-sign-i.md)）或多次调用update。
->
-> 算法库目前没有对update（单次或累计）的数据量设置大小限制，建议对于大数据量的签名操作，采用多次update的方式传入数据，避免一次性申请
-> 过大内存。
->
-> 签名使用多次update操作的示例代码详见
-> [使用RSA密钥对分段签名验签](../../../../security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1-by-segment.md)，
-> 其余算法操作类似。
-
-> OnlySign模式下，不支持update操作，需要直接使用sign传入数据。
-
-> 当使用DSA算法进行签名，并设置了摘要算法为NoHash时，则不支持update操作，update接口会返回错误码ERR_CRYPTO_OPERATION。
+追加待签名数据，使用callback异步回调完成更新。 必须在对[Sign](arkts-cryptoarchitecture-sign-i.md)实例使用[init](arkts-cryptoarchitecture-sign-i.md#init-1)或 [initSync](arkts-cryptoarchitecture-sign-i.md#initsync-1)初始化后，才能使用本函数。 > **说明：** > > 根据数据量，可以不调用update（即[init](arkts-cryptoarchitecture-sign-i.md#init-1)完成后直接调用 > [sign](arkts-cryptoarchitecture-sign-i.md)）或多次调用update。 > > 算法库目前没有对update（单次或累计）的数据量设置大小限制，建议对于大数据量的签名操作，采用多次update的方式传入数据，避免一次性申请 > 过大内存。 > > 签名使用多次update操作的示例代码详见 > [使用RSA密钥对分段签名验签](../../../../security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1-by-segment.md)， > 其余算法操作类似。 > OnlySign模式下，不支持update操作，需要直接使用sign传入数据。 > 当使用DSA算法进行签名，并设置了摘要算法为NoHash时，则不支持update操作，update接口会返回错误码ERR_CRYPTO_OPERATION。
 
 **起始版本：** 9
 
@@ -753,26 +700,7 @@ update(data: DataBlob, callback: AsyncCallback<void>): void
 update(data: DataBlob): Promise<void>
 ```
 
-追加待签名数据，使用Promise异步回调方式完成更新。
-
-在使用本函数前，必须先使用[init](arkts-cryptoarchitecture-sign-i.md#init-1)对
-[Sign](arkts-cryptoarchitecture-sign-i.md)实例进行初始化。
-
-> **说明：**
->
-> 根据数据量，可以不调用update（即[init](arkts-cryptoarchitecture-sign-i.md#init-1)
-> 完成后直接调用[sign](arkts-cryptoarchitecture-sign-i.md#sign-2)）
-> 或多次调用update。
->
-> 算法库不对单次或累计的update数据量设置大小限制。建议在处理大数据量的签名操作时，采用多次update方式传入数据，以避免一次性申请过大内
-> 存。
-> 签名使用多次update操作的示例代码详见
-> [使用RSA密钥对分段签名验签](../../../../security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1-by-segment.md)，
-> 其余算法操作类似。
->
-> OnlySign模式下，不支持update操作，需要直接使用sign传入数据。
->
-> 当使用DSA算法进行签名，并设置了摘要算法为NoHash时，则不支持update操作，update接口会返回错误码ERR_CRYPTO_OPERATION。
+追加待签名数据，使用Promise异步回调方式完成更新。 在使用本函数前，必须先使用[init](arkts-cryptoarchitecture-sign-i.md#init-1)对 [Sign](arkts-cryptoarchitecture-sign-i.md)实例进行初始化。 > **说明：** > > 根据数据量，可以不调用update（即[init](arkts-cryptoarchitecture-sign-i.md#init-1) > 完成后直接调用[sign](arkts-cryptoarchitecture-sign-i.md#sign-2)） > 或多次调用update。 > > 算法库不对单次或累计的update数据量设置大小限制。建议在处理大数据量的签名操作时，采用多次update方式传入数据，以避免一次性申请过大内 > 存。 > 签名使用多次update操作的示例代码详见 > [使用RSA密钥对分段签名验签](../../../../security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1-by-segment.md)， > 其余算法操作类似。 > > OnlySign模式下，不支持update操作，需要直接使用sign传入数据。 > > 当使用DSA算法进行签名，并设置了摘要算法为NoHash时，则不支持update操作，update接口会返回错误码ERR_CRYPTO_OPERATION。
 
 **起始版本：** 9
 
@@ -810,30 +738,7 @@ update(data: DataBlob): Promise<void>
 updateSync(data: DataBlob): void
 ```
 
-追加待签名数据，通过同步方式完成更新。
-
-必须在对[Sign](arkts-cryptoarchitecture-sign-i.md)实例使用[initSync()](arkts-cryptoarchitecture-sign-i.md#initsync-1)初始化
-后，才能使用本函数。
-
-> **说明：**
->
-> 根据数据量，可以不调用updateSync（即[initSync](arkts-cryptoarchitecture-sign-i.md#initsync-1)完成后直接调用
-> [signSync](arkts-cryptoarchitecture-sign-i.md#signsync-1)）或多次调用updateSync。
->
-> 算法库目前没有对updateSync（单次或累计）的数据量设置大小限制，建议对于大数据量的签名操作，采用多次updateSync的方式传入数据，避免
-> 一次性申请过大内存。
->
-> 签名使用多次updateSync操作的示例代码详见
-> [使用RSA密钥对分段签名验签](../../../../security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1-by-segment.md)，
-> 其余算法操作类似。
->
-> OnlySign模式下，不支持updateSync操作，需要直接使用signSync传入数据。
->
-> 当使用DSA算法进行签名，并设置了摘要算法为NoHash时，则不支持updateSync操作，updateSync接口会返回错误码ERR_CRYPTO_OPERATION。
-
-<br><br>**说明：**
-<br>建议优先使用异步API{@link update}。同步API可能因系统繁忙、高负载等原因耗时较长而阻塞主线程。
-因此建议在子线程中调用同步API，以避免阻塞主线程。
+追加待签名数据，通过同步方式完成更新。 必须在对[Sign](arkts-cryptoarchitecture-sign-i.md)实例使用[initSync()](arkts-cryptoarchitecture-sign-i.md#initsync-1)初始化 后，才能使用本函数。 > **说明：** > > 根据数据量，可以不调用updateSync（即[initSync](arkts-cryptoarchitecture-sign-i.md#initsync-1)完成后直接调用 > [signSync](arkts-cryptoarchitecture-sign-i.md#signsync-1)）或多次调用updateSync。 > > 算法库目前没有对updateSync（单次或累计）的数据量设置大小限制，建议对于大数据量的签名操作，采用多次updateSync的方式传入数据，避免 > 一次性申请过大内存。 > > 签名使用多次updateSync操作的示例代码详见 > [使用RSA密钥对分段签名验签](../../../../security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1-by-segment.md)， > 其余算法操作类似。 > > OnlySign模式下，不支持updateSync操作，需要直接使用signSync传入数据。 > > 当使用DSA算法进行签名，并设置了摘要算法为NoHash时，则不支持updateSync操作，updateSync接口会返回错误码ERR_CRYPTO_OPERATION。 <br><br>**说明：** <br>建议优先使用异步API{@link update}。同步API可能因系统繁忙、高负载等原因耗时较长而阻塞主线程。 因此建议在子线程中调用同步API，以避免阻塞主线程。
 
 **起始版本：** 12
 

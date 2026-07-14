@@ -616,8 +616,7 @@ Replaces the current page with another one in the application. The current page 
 replaceNamedRoute(options: router.NamedRouterOptions, mode: router.RouterMode): Promise<void>
 ```
 
-用指定的命名路由页面替换当前页面，并销毁被替换的页面，使用Promise异步回调。与[replaceNamedRoute](Router#replaceNamedRoute(options:
-router.NamedRouterOptions))相比，新增了mode参数，即支持设置跳转页面使用的模式。
+用指定的命名路由页面替换当前页面，并销毁被替换的页面，使用Promise异步回调。与[replaceNamedRoute](arkts-arkui-router-c.md#replacenamedroute-2)相比，新增了mode参数，即支持设置跳转页面使用的模式。
 
 **起始版本：** 10
 

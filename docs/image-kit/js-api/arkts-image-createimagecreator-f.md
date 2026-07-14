@@ -12,10 +12,7 @@ import { image } from '@kit.ImageKit';
 function createImageCreator(width: number, height: number, format: number, capacity: number): ImageCreator
 ```
 
-Creates an ImageCreator instance by specifying the image width, height, format, and capacity.
-Images occupy a large amount of memory. When you finish using an ImageCreator instance, call
-[release](arkts-image-imagecreator-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure
-that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
+Creates an ImageCreator instance by specifying the image width, height, format, and capacity. Images occupy a large amount of memory. When you finish using an ImageCreator instance, call [release](arkts-image-imagecreator-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
 
 **Since:** 9
 
@@ -54,10 +51,7 @@ let creator: image.ImageCreator = image.createImageCreator(8192, 8192, image.Ima
 function createImageCreator(size: Size, format: ImageFormat, capacity: number): ImageCreator
 ```
 
-Creates an ImageCreator instance by specifying the image size, format, and capacity.
-Images occupy a large amount of memory. When you finish using an ImageCreator instance, call
-[release](arkts-image-imagecreator-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure
-that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
+Creates an ImageCreator instance by specifying the image size, format, and capacity. Images occupy a large amount of memory. When you finish using an ImageCreator instance, call [release](arkts-image-imagecreator-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
 
 **Since:** 11
 

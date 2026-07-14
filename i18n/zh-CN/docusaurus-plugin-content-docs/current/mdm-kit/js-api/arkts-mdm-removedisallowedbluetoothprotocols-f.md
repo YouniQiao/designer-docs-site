@@ -6,8 +6,7 @@
 function removeDisallowedBluetoothProtocols(admin: Want, accountId: number, protocols: Array<Protocol>): void
 ```
 
-移除蓝牙协议禁用名单。若移除禁用名单中某个用户的部分蓝牙协议，则该用户不能使用禁用名单内剩余的蓝牙协议向其他设备外发文件。若移除禁用名单中某个用户的所有蓝牙协议，则该用户可以使用任意蓝牙协议向其他设备外发文件。若移除禁用名单中不存
-在的蓝牙协议，接口可调用成功，但不会移除禁用名单中不存在的蓝牙协议。
+移除蓝牙协议禁用名单。若移除禁用名单中某个用户的部分蓝牙协议，则该用户不能使用禁用名单内剩余的蓝牙协议向其他设备外发文件。若移除禁用名单中某个用户的所有蓝牙协议，则该用户可以使用任意蓝牙协议向其他设备外发文件。若移除禁用名单中不存 在的蓝牙协议，接口可调用成功，但不会移除禁用名单中不存在的蓝牙协议。
 
 **起始版本：** 20
 
@@ -39,15 +38,18 @@ function removeDisallowedBluetoothProtocols(admin: Want, accountId: number, prot
 import { Want } from '@kit.AbilityKit';
 import { bluetoothManager } from '@kit.MDMKit';
 
+// 创建企业设备管理扩展组件
 let wantTemp: Want = {
   // 需根据实际情况进行替换
   bundleName: 'com.example.myapplication',
   abilityName: 'EnterpriseAdminAbility'
 };
-// 需根据实际情况进行替换
+// 定义用户ID（需根据实际情况进行替换）
 let accountId: number = 100;
+// 定义蓝牙协议数组（需根据实际情况进行替换）
 let protocols: Array<bluetoothManager.Protocol> = [bluetoothManager.Protocol.GATT, bluetoothManager.Protocol.SPP];
 try {
+  // 移除蓝牙协议禁用名单
   bluetoothManager.removeDisallowedBluetoothProtocols(wantTemp, accountId, protocols);
   console.info('Succeeded in removing disallowed bluetooth protocols policy.');
 } catch (err) {
@@ -63,10 +65,7 @@ try {
 function removeDisallowedBluetoothProtocols(admin: Want, accountId: number, protocols: Array<Protocol>, policy: TransferPolicy): void
 ```
 
-从禁用名单中移除蓝牙协议。移除后，指定用户将不再受该传输策略的限制，可以正常使用这些蓝牙协议。
-
-> **说明：**
->
+从禁用名单中移除蓝牙协议。移除后，指定用户将不再受该传输策略的限制，可以正常使用这些蓝牙协议。 > **说明：** >
 
 **起始版本：** 26.0.0
 
@@ -100,13 +99,16 @@ function removeDisallowedBluetoothProtocols(admin: Want, accountId: number, prot
 import { Want } from '@kit.AbilityKit';
 import { bluetoothManager } from '@kit.MDMKit';
 
+// 创建企业设备管理扩展组件
 let wantTemp: Want = {
   // 需根据实际情况进行替换
   bundleName: 'com.example.myapplication',
   abilityName: 'EnterpriseAdminAbility'
 };
 
+// 定义用户ID
 let accountId: number = 100;
+// 定义蓝牙协议数组
 let protocols: Array<bluetoothManager.Protocol> = [
   bluetoothManager.Protocol.GATT,
   bluetoothManager.Protocol.SPP,
@@ -114,6 +116,7 @@ let protocols: Array<bluetoothManager.Protocol> = [
 ];
 
 try {
+  // 移除蓝牙协议禁用名单，指定传输策略为禁止发送和接收
   bluetoothManager.removeDisallowedBluetoothProtocols(wantTemp, accountId, protocols, bluetoothManager.TransferPolicy.RECEIVE_SEND);
   console.info('Succeeded in removing disallowed bluetooth protocols.');
 } catch (err) {

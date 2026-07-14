@@ -214,9 +214,7 @@ AES key of 256 bits.
 HUKS_AES_KEY_SIZE_512 = 512
 ```
 
-AES key of 512 bits.
-
-Note: This parameter is supported since API version 8 and deprecated since API version 11.
+AES key of 512 bits. Note: This parameter is supported since API version 8 and deprecated since API version 11.
 
 **Since:** 8
 

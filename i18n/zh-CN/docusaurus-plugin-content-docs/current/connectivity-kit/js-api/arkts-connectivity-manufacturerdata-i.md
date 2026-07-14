@@ -28,8 +28,7 @@ manufacturerData: ArrayBuffer
 manufacturerId: number
 ```
 
-厂商ID。
-取值范围为全体整数。
+厂商ID。 取值范围为全体整数。
 
 **类型：** number
 

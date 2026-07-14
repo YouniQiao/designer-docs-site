@@ -36,8 +36,7 @@ Context of the router page that invokes the lifecycle callback.
 index: number
 ```
 
-Position of the router page that invokes the lifecycle callback, in the navigation stack.
-The value must be greater than or equal to 0.
+Position of the router page that invokes the lifecycle callback, in the navigation stack. The value must be greater than or equal to 0.
 
 **Type:** number
 

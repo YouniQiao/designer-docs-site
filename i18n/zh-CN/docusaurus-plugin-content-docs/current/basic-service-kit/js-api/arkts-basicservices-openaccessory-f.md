@@ -6,9 +6,7 @@
 function openAccessory(accessory: USBAccessory): USBAccessoryHandle
 ```
 
-获取配件句柄并打开配件文件描述符。之后可以通过CoreFileKit提供的read/write接口和配件进行通信。
-需要调用[usbManager.getAccessoryList](arkts-basicservices-getaccessorylist-f.md#getaccessorylist-1)获取配件列表，得到
-[USBAccessory](arkts-basicservices-usbaccessory-i.md)作为参数。
+获取配件句柄并打开配件文件描述符。之后可以通过CoreFileKit提供的read/write接口和配件进行通信。 需要调用[usbManager.getAccessoryList](arkts-basicservices-getaccessorylist-f.md#getaccessorylist-1)获取配件列表，得到 [USBAccessory](arkts-basicservices-usbaccessory-i.md)作为参数。
 
 **起始版本：** 14
 

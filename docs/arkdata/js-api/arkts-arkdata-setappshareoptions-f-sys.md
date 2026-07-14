@@ -12,8 +12,7 @@ import { unifiedDataChannel } from '@kit.ArkData';
 function setAppShareOptions(intention: Intention, shareOptions: ShareOptions): void
 ```
 
-Sets the [ShareOptions](arkts-arkdata-shareoptions-e.md) for the application data. Currently, only the drag-
-and-drop data channel is supported.
+Sets the [ShareOptions](arkts-arkdata-shareoptions-e.md) for the application data. Currently, only the drag- and-drop data channel is supported.
 
 **Since:** 14
 

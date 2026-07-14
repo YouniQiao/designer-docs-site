@@ -295,9 +295,7 @@ fileSync.start((err: BusinessError) => {
 stop(): Promise<void>
 ```
 
-异步方法停止云盘端云同步。使用Promise异步回调。
-
-调用stop接口，同步流程会停止。再次调用[start](arkts-corefile-filesync-c.md#start-1)接口会继续同步。
+异步方法停止云盘端云同步。使用Promise异步回调。 调用stop接口，同步流程会停止。再次调用[start](arkts-corefile-filesync-c.md#start-1)接口会继续同步。
 
 **起始版本：** 12
 
@@ -337,9 +335,7 @@ fileSync.stop().then(() => {
 stop(callback: AsyncCallback<void>): void
 ```
 
-异步方法停止云盘端云同步。使用callback异步回调。
-
-调用stop接口，同步流程会停止。再次调用[start](arkts-corefile-filesync-c.md#start-1)接口会继续同步。
+异步方法停止云盘端云同步。使用callback异步回调。 调用stop接口，同步流程会停止。再次调用[start](arkts-corefile-filesync-c.md#start-1)接口会继续同步。
 
 **起始版本：** 12
 

@@ -1,18 +1,6 @@
 # @ohos.distributedsched.proxyChannelManager
 
-DSoftBus provides stable and reliable underlying channels for cross-device communication. This module is developed
-based on DSoftBus. It supports efficient data exchange between phones and wearables, providing users with a seamless
-device interconnection experience. During collaboration between the phone application and watch application, if the
-phone application is not running in the foreground, its downlink messages are forwarded to the notification server
-and then sent to the watch through the proxy module. The core functions of this module include proxy channel
-management, data route management, application state awareness and wakeup, and link state monitoring.
-
-- Proxy channel management: Manages bidirectional data channels established between phones and wearables via the
-Bluetooth Basic Rate (BR) protocol.
-- Data route management: Accurately forwards data of wearables based on the specified service UUID.
-- Application state awareness and wakeup: After a proxy channel is enabled, dynamically analyzes and wakes up the
-corresponding application process on the phone after receiving data sent by the wearable.
-- Link state monitoring: Monitors the channel connection state in real time through callback.
+DSoftBus provides stable and reliable underlying channels for cross-device communication. This module is developed based on DSoftBus. It supports efficient data exchange between phones and wearables, providing users with a seamless device interconnection experience. During collaboration between the phone application and watch application, if the phone application is not running in the foreground, its downlink messages are forwarded to the notification server and then sent to the watch through the proxy module. The core functions of this module include proxy channel management, data route management, application state awareness and wakeup, and link state monitoring. - Proxy channel management: Manages bidirectional data channels established between phones and wearables via the Bluetooth Basic Rate (BR) protocol. - Data route management: Accurately forwards data of wearables based on the specified service UUID. - Application state awareness and wakeup: After a proxy channel is enabled, dynamically analyzes and wakes up the corresponding application process on the phone after receiving data sent by the wearable. - Link state monitoring: Monitors the channel connection state in real time through callback.
 
 **Since:** 20
 

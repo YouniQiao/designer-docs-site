@@ -131,8 +131,7 @@ workerInstance.on("alert", () => {
 once(type: string, listener: EventListener): void
 ```
 
-Adds an event listener to the worker
-and removes the event listener automatically after it is invoked once.
+Adds an event listener to the worker and removes the event listener automatically after it is invoked once.
 
 **Since:** 7
 
@@ -168,8 +167,7 @@ workerInstance.once("alert", () => {
 postMessage(message: Object, transfer: ArrayBuffer[]): void
 ```
 
-Sends a message to the worker thread.
-The data is transferred using the structured clone algorithm.
+Sends a message to the worker thread. The data is transferred using the structured clone algorithm.
 
 **Since:** 7
 
@@ -205,8 +203,7 @@ workerInstance.postMessage(buffer, [buffer]);
 postMessage(message: Object, options?: PostMessageOptions): void
 ```
 
-Sends a message to the worker thread.
-The data is transferred using the structured clone algorithm.
+Sends a message to the worker thread. The data is transferred using the structured clone algorithm.
 
 **Since:** 7
 
@@ -271,9 +268,7 @@ workerInstance.terminate();
 onerror?: (err: ErrorEvent) => void
 ```
 
-The onerror attribute of the worker specifies the event handler to be called
-when an exception occurs during worker execution.
-The event handler is executed in the host thread.
+The onerror attribute of the worker specifies the event handler to be called when an exception occurs during worker execution. The event handler is executed in the host thread.
 
 **Type:** (err: ErrorEvent) => void
 
@@ -291,8 +286,7 @@ The event handler is executed in the host thread.
 onexit?: (code: number) => void
 ```
 
-Called when the Worker thread exits. The event handler is executed in the host thread. In the callback function,
-the code value is of the number type, where the value 1 indicates abnormal exit and 0 indicates normal exit.The default value is undefined.
+Called when the Worker thread exits. The event handler is executed in the host thread. In the callback function, the code value is of the number type, where the value 1 indicates abnormal exit and 0 indicates normal exit.The default value is undefined.
 
 **Type:** (code: number) => void
 
@@ -310,10 +304,7 @@ the code value is of the number type, where the value 1 indicates abnormal exit 
 onmessage?: (event: MessageEvent) => void
 ```
 
-The onmessage attribute of the worker specifies the event handler
-to be called then the host thread receives a message created by itself
-and sent by the worker through the parentPort.postMessage.
-The event handler is executed in the host thread.
+The onmessage attribute of the worker specifies the event handler to be called then the host thread receives a message created by itself and sent by the worker through the parentPort.postMessage. The event handler is executed in the host thread.
 
 **Type:** (event: MessageEvent) => void
 
@@ -331,9 +322,7 @@ The event handler is executed in the host thread.
 onmessageerror?: (event: MessageEvent) => void
 ```
 
-The onmessage attribute of the worker specifies the event handler
-when the worker receives a message that cannot be serialized.
-The event handler is executed in the host thread.
+The onmessage attribute of the worker specifies the event handler when the worker receives a message that cannot be serialized. The event handler is executed in the host thread.
 
 **Type:** (event: MessageEvent) => void
 

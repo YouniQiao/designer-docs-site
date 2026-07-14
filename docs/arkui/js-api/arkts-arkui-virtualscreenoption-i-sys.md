@@ -68,8 +68,7 @@ Name of a virtual screen.
 supportsFocus?: boolean
 ```
 
-Whether the virtual screen is focusable. **true** if focusable; **false** otherwise. The default value is
-**true**.
+Whether the virtual screen is focusable. **true** if focusable; **false** otherwise. The default value is **true**.
 
 **Type:** boolean
 

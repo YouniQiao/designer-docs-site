@@ -12,9 +12,7 @@ import { errorManager } from '@kit.AbilityKit';
 function setDefaultResourceUsageObserver(defaultObserver?: ResourceUsageObserver): ResourceUsageObserver
 ```
 
-Set the default resource usage observer. You can use it to implement chain calls.
-If an empty observer is set for a certain module, it will cause the call chain to be interrupted.
-This API must be called on the main thread.
+Set the default resource usage observer. You can use it to implement chain calls. If an empty observer is set for a certain module, it will cause the call chain to be interrupted. This API must be called on the main thread.
 
 **Since:** 24
 

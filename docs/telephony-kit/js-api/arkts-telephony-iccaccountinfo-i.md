@@ -102,8 +102,7 @@ Indicates the sim Id for card.
 slotIndex: number
 ```
 
-Indicates the card slot index number,
-ranging from 0 to the maximum card slot index number supported by the device.
+Indicates the card slot index number, ranging from 0 to the maximum card slot index number supported by the device.
 
 **Type:** number
 

@@ -42,9 +42,7 @@ Specifies whether anti-aliasing is enabled.
 fill(value: ResourceColor): T
 ```
 
-Sets the color of the fill area.
-An invalid value is handled as the default value.
-If this attribute and the universal attribute foregroundColor are both set, whichever is set later takes effect.
+Sets the color of the fill area. An invalid value is handled as the default value. If this attribute and the universal attribute foregroundColor are both set, whichever is set later takes effect.
 
 **Since:** 11
 
@@ -72,10 +70,7 @@ If this attribute and the universal attribute foregroundColor are both set, whic
 fillOpacity(value: number | string | Resource): T
 ```
 
-Sets the opacity of the fill area.
-The value range is [0.0, 1.0].
-A value less than 0.0 evaluates to the value 0.0. A value greater than 1.0 evaluates to the value 1.0.
-Any other value evaluates to the value 1.0.
+Sets the opacity of the fill area. The value range is [0.0, 1.0]. A value less than 0.0 evaluates to the value 0.0. A value greater than 1.0 evaluates to the value 1.0. Any other value evaluates to the value 1.0.
 
 **Since:** 11
 
@@ -103,9 +98,7 @@ Any other value evaluates to the value 1.0.
 stroke(value: ResourceColor): T
 ```
 
-Sets the stroke color.
-If this attribute is not set, the component does not have any stroke.
-If the value is invalid, no stroke will be drawn.
+Sets the stroke color. If this attribute is not set, the component does not have any stroke. If the value is invalid, no stroke will be drawn.
 
 **Since:** 11
 
@@ -133,8 +126,7 @@ If the value is invalid, no stroke will be drawn.
 strokeDashArray(value: Array<any>): T
 ```
 
-Sets stroke dashes.
-The value must be greater than or equal to 0. Invalid values are treated as the default value.
+Sets stroke dashes. The value must be greater than or equal to 0. Invalid values are treated as the default value.
 
 **Since:** 11
 
@@ -162,8 +154,7 @@ The value must be greater than or equal to 0. Invalid values are treated as the 
 strokeDashOffset(value: number | string): T
 ```
 
-Sets the offset of the start point for drawing the stroke.
-An invalid value is handled as the default value.
+Sets the offset of the start point for drawing the stroke. An invalid value is handled as the default value.
 
 **Since:** 11
 
@@ -219,8 +210,7 @@ Sets the cap style of the stroke.
 strokeLineJoin(value: LineJoinStyle): T
 ```
 
-Sets the join style of the stroke.
-This attribute does not work for the Circle component, which does not have corners.
+Sets the join style of the stroke. This attribute does not work for the Circle component, which does not have corners.
 
 **Since:** 11
 
@@ -276,10 +266,7 @@ Limits for drawing acute angles as bevels
 strokeOpacity(value: number | string | Resource): T
 ```
 
-Sets the stroke opacity.
-The value range is [0.0, 1.0].
-A value less than 0.0 evaluates to the value 0.0. A value greater than 1.0 evaluates to the value 1.0.
-Any other value evaluates to the value 1.0.
+Sets the stroke opacity. The value range is [0.0, 1.0]. A value less than 0.0 evaluates to the value 0.0. A value greater than 1.0 evaluates to the value 1.0. Any other value evaluates to the value 1.0.
 
 **Since:** 11
 
@@ -307,8 +294,7 @@ Any other value evaluates to the value 1.0.
 strokeWidth(value: Length): T
 ```
 
-Sets the stroke width.
-If this attribute is of the string type, percentage values are not supported and will be treated as 1 px.
+Sets the stroke width. If this attribute is of the string type, percentage values are not supported and will be treated as 1 px.
 
 **Since:** 11
 

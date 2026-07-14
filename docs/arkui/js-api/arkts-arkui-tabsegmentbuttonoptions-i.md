@@ -1,7 +1,6 @@
 # TabSegmentButtonOptions
 
-Provides configuration options for tab-style segmented buttons. Inherits from
-[TabSegmentButtonConstructionOptions](arkts-arkui-tabsegmentbuttonconstructionoptions-i.md).
+Provides configuration options for tab-style segmented buttons. Inherits from [TabSegmentButtonConstructionOptions](arkts-arkui-tabsegmentbuttonconstructionoptions-i.md).
 
 **Inheritance/Implementation:** TabSegmentButtonOptions extends [TabSegmentButtonConstructionOptions](arkts-arkui-tabsegmentbuttonconstructionoptions-i.md)
 
@@ -21,13 +20,7 @@ import { CommonSegmentButtonOptions, SegmentButtonItemOptionsConstructorOptions,
 type: "tab"
 ```
 
-Type of the **SegmentButton** component.
-
-**NOTE**
-
-**"tab"**: tab-style segmented buttons, designed for page or content section switching.
-
-**"capsule"**: capsule-style segmented buttons, suitable for single or multiple selection scenarios.
+Type of the **SegmentButton** component. **NOTE** **"tab"**: tab-style segmented buttons, designed for page or content section switching. **"capsule"**: capsule-style segmented buttons, suitable for single or multiple selection scenarios.
 
 **Type:** "tab"
 

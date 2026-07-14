@@ -1,12 +1,6 @@
 # VelocityOptions
 
-Defines velocity options.
-
-* > **NOTE**
->
-> To standardize anonymous object definitions, the element definitions here have been revised in API version 18.
-> While historical version information is preserved for anonymous objects, there may be cases where the outer
-> element's @since version number is higher than inner elements'. This does not affect interface usability.
+Defines velocity options. * > **NOTE** > > To standardize anonymous object definitions, the element definitions here have been revised in API version 18. > While historical version information is preserved for anonymous objects, there may be cases where the outer > element's @since version number is higher than inner elements'. This does not affect interface usability.
 
 **Since:** 18
 
@@ -18,8 +12,7 @@ Defines velocity options.
 angle: ParticleTuple<number, number>
 ```
 
-Direction (in angles) in which the particle moves, with the geometric center of the element as the coordinate
-origin and the horizontal direction as the x-axis. A positive number indicates clockwise rotation.
+Direction (in angles) in which the particle moves, with the geometric center of the element as the coordinate origin and the horizontal direction as the x-axis. A positive number indicates clockwise rotation.
 
 **Type:** ParticleTuple<number, number>
 

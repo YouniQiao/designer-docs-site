@@ -54,8 +54,7 @@ Websites with security risks.
 THREAT_WARNING = 3
 ```
 
-Websites suspected of containing unhealthy content.
-ArkWeb will not intercept this type of website and apps could handle it themselves.
+Websites suspected of containing unhealthy content. ArkWeb will not intercept this type of website and apps could handle it themselves.
 
 **Since:** 11
 

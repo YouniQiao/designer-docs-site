@@ -18,13 +18,7 @@ import { AnimatorOptions, SimpleAnimatorOptions, AnimatorResult } from '@kit.Ark
 static create(options: AnimatorOptions): AnimatorResult
 ```
 
-Creates an **AnimatorResult** object for animations.
-
-> **NOTE**
->
-> - Since API version 10, you can use the
-> [createAnimator](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#createanimator) API in
-> [UIContext](arkts-arkui-uicontext.md), which ensures that the object is created in the intended UI instance.
+Creates an **AnimatorResult** object for animations. > **NOTE** > > - Since API version 10, you can use the > [createAnimator](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#createanimator) API in > [UIContext](arkts-arkui-uicontext.md), which ensures that the object is created in the intended UI instance.
 
 **Since:** 9
 
@@ -81,9 +75,7 @@ animator.create(options); // You are advised to use UIContext.createAnimator().
 static create(options: AnimatorOptions | SimpleAnimatorOptions): AnimatorResult
 ```
 
-Creates an **AnimatorResult** object for animations. Compared with
-[create](Animator.create(options: AnimatorOptions)), this API accepts parameters of the
-[SimpleAnimatorOptions](arkts-arkui-simpleanimatoroptions-c.md) type.
+Creates an **AnimatorResult** object for animations. Compared with [create](Animator.create(options: AnimatorOptions)), this API accepts parameters of the [SimpleAnimatorOptions](arkts-arkui-simpleanimatoroptions-c.md) type.
 
 **Since:** 18
 

@@ -1,9 +1,6 @@
 # PermissionActiveStatus (System API)
 
-Enumerates the types of permission usage status changes. It is used to describe the change type of permission
-usage status, returned in the callback of subscribing to permission usage status change events (via
-[on('activeStateChange')](privacyManager.on)), helping system applications sense the status switch of a
-permission from unused to foreground use and background use.
+Enumerates the types of permission usage status changes. It is used to describe the change type of permission usage status, returned in the callback of subscribing to permission usage status change events (via [on('activeStateChange')](privacyManager.on)), helping system applications sense the status switch of a permission from unused to foreground use and background use.
 
 **Since:** 9
 

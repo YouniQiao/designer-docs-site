@@ -12,9 +12,7 @@ import { uiAppearance } from '@kit.ArkUI';
 function setFontScale(fontScale: number): Promise<void>
 ```
 
-Sets the system font scale.
-
-**Permission required**: ohos.permission.UPDATE_CONFIGURATION
+Sets the system font scale. **Permission required**: ohos.permission.UPDATE_CONFIGURATION
 
 **Since:** 12
 
@@ -51,17 +49,17 @@ Sets the system font scale.
 import { uiAppearance } from '@kit.ArkUI';
 import { BusinessError } from '@kit.BasicServicesKit';
 
-let fontScale = 10;
+let fontScale = 1.5;
 
 try {
-    uiAppearance.setFontScale(fontScale).then(() => {
-      console.info('Set fontScale successfully.');
-    }).catch((error:Error) => {
-      console.error('Set fontScale failed, ' + error.message);
-    });
+  uiAppearance.setFontScale(fontScale).then(() => {
+    console.info('Set fontScale successfully.');
+  }).catch((error: BusinessError) => {
+    console.error(`Set fontScale failed. Code: ${error.code}, message: ${error.message}`);
+  });
 } catch (error) {
-    let message = (error as BusinessError).message;
-    console.error('Set fontScale failed, ' + message);
+  let err = error as BusinessError;
+  console.error(`Set fontScale failed. Code: ${err.code}, message: ${err.message}`);
 }
 
 ```

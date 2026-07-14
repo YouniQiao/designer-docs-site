@@ -13,9 +13,7 @@ function getWindowsByCoordinate(displayId: number, windowNumber?: number, x?: nu
       Promise<Array<Window>>
 ```
 
-Obtains visible windows at the specified coordinates within the current application, sorted by their current layer
-order. The window at the topmost layer corresponds to index 0 of the array. This API uses a promise to return the
-result.
+Obtains visible windows at the specified coordinates within the current application, sorted by their current layer order. The window at the topmost layer corresponds to index 0 of the array. This API uses a promise to return the result.
 
 **Since:** 14
 

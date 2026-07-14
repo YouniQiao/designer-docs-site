@@ -52,8 +52,7 @@ UID of the driver matching the device.
 isDriverMatched: boolean
 ```
 
-Whether the device matches the driver. The value `true` indicates the device matches the driver, and the value
-`false` indicates the opposite.
+Whether the device matches the driver. The value `true` indicates the device matches the driver, and the value `false` indicates the opposite.
 
 **Type:** boolean
 

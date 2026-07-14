@@ -1,10 +1,6 @@
 # ExpandedMenuItemOptions
 
-> **说明：**
->
-> 从API version 12开始支持，从API version 20开始废弃，建议使用
-> [editMenuOptions](WebAttribute#editmenuoptions)替代。
-> 自定义菜单扩展项。
+> **说明：** > > 从API version 12开始支持，从API version 20开始废弃，建议使用 > [editMenuOptions](WebAttribute#editmenuoptions)替代。 > 自定义菜单扩展项。
 
 **起始版本：** 12
 

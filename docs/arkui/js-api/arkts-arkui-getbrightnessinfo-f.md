@@ -12,10 +12,7 @@ import { display } from '@kit.ArkUI';
 function getBrightnessInfo(displayId: number): BrightnessInfo
 ```
 
-Obtains the screen brightness information of a display. If the screen does not support HDR, the
-**currentHeadroom** and **maxHeadroom** fields in the returned [BrightnessInfo](arkts-arkui-brightnessinfo-i.md)
-object use the default values. For virtual screens, the **sdrNits** field in the BrightnessInfo object uses the
-default value.
+Obtains the screen brightness information of a display. If the screen does not support HDR, the **currentHeadroom** and **maxHeadroom** fields in the returned [BrightnessInfo](arkts-arkui-brightnessinfo-i.md) object use the default values. For virtual screens, the **sdrNits** field in the BrightnessInfo object uses the default value.
 
 **Since:** 22
 

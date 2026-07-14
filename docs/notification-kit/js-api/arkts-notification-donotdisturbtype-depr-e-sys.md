@@ -1,8 +1,6 @@
 # DoNotDisturbType (System API)
 
-> **NOTE**<br>
-> This API is supported since API version 8 and deprecated since API version 9. You are advised to use
-> [notificationManager.DoNotDisturbType](arkts-notification-donotdisturbtype-e-sys.md) instead.
+> **NOTE**<br> > This API is supported since API version 8 and deprecated since API version 9. You are advised to use > [notificationManager.DoNotDisturbType](arkts-notification-donotdisturbtype-e-sys.md) instead.
 
 **Since:** 8
 

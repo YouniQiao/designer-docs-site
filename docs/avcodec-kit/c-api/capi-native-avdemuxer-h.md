@@ -91,7 +91,7 @@ Creates an OH_AVDemuxer instance based on a source instance.For details about ho
 
 | Parameter | Description |
 | -- | -- |
-| OH_AVSource *source | Pointer to an OH_AVSource instance. |
+| [OH_AVSource](capi-avsource-oh-avsource.md) *source | Pointer to an OH_AVSource instance. |
 
 **Returns**:
 
@@ -121,7 +121,7 @@ Destroys an OH_AVDemuxer instance and clears internal resources. An instance can
 
 | Type | Description |
 | -- | -- |
-| OH_AVErrCode | [AV_ERR_OK](capi-native-averrors-h.md#oh_averrcode): The operation is successful.<br>     <br>[AV_ERR_INVALID_VAL](capi-native-averrors-h.md#oh_averrcode): The value of demuxer is nullptr or does not point to a demuxer instance. |
+| [OH_AVErrCode](capi-native-averrors-h.md#oh_averrcode) | [AV_ERR_OK](capi-native-averrors-h.md#oh_averrcode): The operation is successful.<br>     <br>[AV_ERR_INVALID_VAL](capi-native-averrors-h.md#oh_averrcode): The value of demuxer is nullptr or does not point to a demuxer instance. |
 
 ### OH_AVDemuxer_SelectTrackByID()
 
@@ -146,7 +146,7 @@ Selects a track from which the demuxer reads sample data.You can select multiple
 
 | Type | Description |
 | -- | -- |
-| OH_AVErrCode | [AV_ERR_OK](capi-native-averrors-h.md#oh_averrcode): The operation is successful.<br>     <br>[AV_ERR_INVALID_VAL](capi-native-averrors-h.md#oh_averrcode):<br>     <br>1. The value of demuxer is nullptr or does not point to a demuxer instance.<br>     <br>2. The track index is out of range.<br>     <br>3. Track reading is not supported.<br>     <br>[AV_ERR_OPERATE_NOT_PERMIT](capi-native-averrors-h.md#oh_averrcode): The demuxer is not correctly initialized. |
+| [OH_AVErrCode](capi-native-averrors-h.md#oh_averrcode) | [AV_ERR_OK](capi-native-averrors-h.md#oh_averrcode): The operation is successful.<br>     <br>[AV_ERR_INVALID_VAL](capi-native-averrors-h.md#oh_averrcode):<br>     <br>1. The value of demuxer is nullptr or does not point to a demuxer instance.<br>     <br>2. The track index is out of range.<br>     <br>3. Track reading is not supported.<br>     <br>[AV_ERR_OPERATE_NOT_PERMIT](capi-native-averrors-h.md#oh_averrcode): The demuxer is not correctly initialized. |
 
 ### OH_AVDemuxer_UnselectTrackByID()
 
@@ -171,7 +171,7 @@ Deselects a track. The demuxer no longer reads sample data from a track after it
 
 | Type | Description |
 | -- | -- |
-| OH_AVErrCode | [AV_ERR_OK](capi-native-averrors-h.md#oh_averrcode): The operation is successful.<br>     <br>[AV_ERR_INVALID_VAL](capi-native-averrors-h.md#oh_averrcode): The value of demuxer is nullptr or does not point to a demuxer instance.<br>     <br>[AV_ERR_OPERATE_NOT_PERMIT](capi-native-averrors-h.md#oh_averrcode): The demuxer is not correctly initialized. |
+| [OH_AVErrCode](capi-native-averrors-h.md#oh_averrcode) | [AV_ERR_OK](capi-native-averrors-h.md#oh_averrcode): The operation is successful.<br>     <br>[AV_ERR_INVALID_VAL](capi-native-averrors-h.md#oh_averrcode): The value of demuxer is nullptr or does not point to a demuxer instance.<br>     <br>[AV_ERR_OPERATE_NOT_PERMIT](capi-native-averrors-h.md#oh_averrcode): The demuxer is not correctly initialized. |
 
 ### OH_AVDemuxer_ReadSample()
 
@@ -195,14 +195,14 @@ Reads the sample and related information from the specified track.You must selec
 | -- | -- |
 | [OH_AVDemuxer](capi-avdemuxer-oh-avdemuxer.md) *demuxer | Pointer to an OH_AVDemuxer instance. |
 | uint32_t trackIndex | Index of the track from which the compressed frame is to be read. |
-| [OH_AVMemory](capi-core-oh-avmemory.md) *sample | Pointer to the OH_AVMemory instance for storing the compressed frame data. |
+| OH_AVMemory *sample | Pointer to the OH_AVMemory instance for storing the compressed frame data. |
 | OH_AVCodecBufferAttr *info | Pointer to the OH_AVCodecBufferAttr instance for storing the compressed frame information. |
 
 **Returns**:
 
 | Type | Description |
 | -- | -- |
-| OH_AVErrCode | [AV_ERR_OK](capi-native-averrors-h.md#oh_averrcode): The operation is successful.<br>     <br>[AV_ERR_INVALID_VAL](capi-native-averrors-h.md#oh_averrcode):<br>     <br>1. The value of demuxer is nullptr or does not point to a demuxer instance.<br>     <br>2. The track index is out of range.<br>     <br>3. Track reading is not supported.<br>     <br>4. The value of sample is null.<br>     <br>5. The value of info is null.<br>     <br>[AV_ERR_OPERATE_NOT_PERMIT](capi-native-averrors-h.md#oh_averrcode):<br>     <br>1. The track with the specified index is not selected.<br>     <br>2. The demuxer is not correctly initialized.<br>     <br>[AV_ERR_NO_MEMORY](capi-native-averrors-h.md#oh_averrcode): The sample capacity is insufficient to store all frame data.<br>     <br>[AV_ERR_UNKNOWN](capi-native-averrors-h.md#oh_averrcode): Failed to read or parse the frame from the file. |
+| [OH_AVErrCode](capi-native-averrors-h.md#oh_averrcode) | [AV_ERR_OK](capi-native-averrors-h.md#oh_averrcode): The operation is successful.<br>     <br>[AV_ERR_INVALID_VAL](capi-native-averrors-h.md#oh_averrcode):<br>     <br>1. The value of demuxer is nullptr or does not point to a demuxer instance.<br>     <br>2. The track index is out of range.<br>     <br>3. Track reading is not supported.<br>     <br>4. The value of sample is null.<br>     <br>5. The value of info is null.<br>     <br>[AV_ERR_OPERATE_NOT_PERMIT](capi-native-averrors-h.md#oh_averrcode):<br>     <br>1. The track with the specified index is not selected.<br>     <br>2. The demuxer is not correctly initialized.<br>     <br>[AV_ERR_NO_MEMORY](capi-native-averrors-h.md#oh_averrcode): The sample capacity is insufficient to store all frame data.<br>     <br>[AV_ERR_UNKNOWN](capi-native-averrors-h.md#oh_averrcode): Failed to read or parse the frame from the file. |
 
 ### OH_AVDemuxer_ReadSampleBuffer()
 
@@ -222,13 +222,13 @@ Reads the sample and related information from the specified track.You can use [O
 | -- | -- |
 | [OH_AVDemuxer](capi-avdemuxer-oh-avdemuxer.md) *demuxer | Pointer to an OH_AVDemuxer instance. |
 | uint32_t trackIndex | Index of the track from which the compressed frame is to be read. |
-| [OH_AVBuffer](capi-core-oh-avbuffer.md) *sample | Pointer to the OH_AVBuffer instance for storing the compressed frame data and related information. |
+| OH_AVBuffer *sample | Pointer to the OH_AVBuffer instance for storing the compressed frame data and related information. |
 
 **Returns**:
 
 | Type | Description |
 | -- | -- |
-| OH_AVErrCode | [AV_ERR_OK](capi-native-averrors-h.md#oh_averrcode): The operation is successful.<br>     <br>[AV_ERR_INVALID_VAL](capi-native-averrors-h.md#oh_averrcode):<br>     <br>1. The value of demuxer is nullptr or does not point to a demuxer instance.<br>     <br>2. The value of sample is nullptr.<br>     <br>3. The track index is out of range.<br>     <br>4. The value of sample is null.<br>     <br>[AV_ERR_OPERATE_NOT_PERMIT](capi-native-averrors-h.md#oh_averrcode):<br>     <br>1. The track with the specified index is not selected.<br>     <br>2. The demuxer is not correctly initialized.<br>     <br>[AV_ERR_NO_MEMORY](capi-native-averrors-h.md#oh_averrcode): The sample capacity is insufficient to store all frame data.<br>     <br>[AV_ERR_UNKNOWN](capi-native-averrors-h.md#oh_averrcode): Failed to read or parse the frame from the file. |
+| [OH_AVErrCode](capi-native-averrors-h.md#oh_averrcode) | [AV_ERR_OK](capi-native-averrors-h.md#oh_averrcode): The operation is successful.<br>     <br>[AV_ERR_INVALID_VAL](capi-native-averrors-h.md#oh_averrcode):<br>     <br>1. The value of demuxer is nullptr or does not point to a demuxer instance.<br>     <br>2. The value of sample is nullptr.<br>     <br>3. The track index is out of range.<br>     <br>4. The value of sample is null.<br>     <br>[AV_ERR_OPERATE_NOT_PERMIT](capi-native-averrors-h.md#oh_averrcode):<br>     <br>1. The track with the specified index is not selected.<br>     <br>2. The demuxer is not correctly initialized.<br>     <br>[AV_ERR_NO_MEMORY](capi-native-averrors-h.md#oh_averrcode): The sample capacity is insufficient to store all frame data.<br>     <br>[AV_ERR_UNKNOWN](capi-native-averrors-h.md#oh_averrcode): Failed to read or parse the frame from the file. |
 
 ### OH_AVDemuxer_SeekToTime()
 
@@ -254,7 +254,7 @@ Seeks to the specified time for all the selected tracks based on a seek mode.
 
 | Type | Description |
 | -- | -- |
-| OH_AVErrCode | [AV_ERR_OK](capi-native-averrors-h.md#oh_averrcode): The operation is successful.<br>     <br>[AV_ERR_INVALID_VAL](capi-native-averrors-h.md#oh_averrcode):<br>     <br>1. The value of demuxer is nullptr or does not point to a demuxer instance.<br>     <br>2. The value of millisecond is out of range.<br>     <br>[AV_ERR_OPERATE_NOT_PERMIT](capi-native-averrors-h.md#oh_averrcode):<br>     <br>1. The track with the specified index is not selected.<br>     <br>2. The demuxer is not correctly initialized.<br>     <br>3. The seek operation cannot be performed on the resource.<br>     <br>[AV_ERR_UNKNOWN](capi-native-averrors-h.md#oh_averrcode):<br>     <br>1. The seek operation fails.<br>     <br>2. OH_AVSeekMode is set to SEEK_MODE_NEXT_SYNC and there is no I-frame<br>     following the specified position. |
+| [OH_AVErrCode](capi-native-averrors-h.md#oh_averrcode) | [AV_ERR_OK](capi-native-averrors-h.md#oh_averrcode): The operation is successful.<br>     <br>[AV_ERR_INVALID_VAL](capi-native-averrors-h.md#oh_averrcode):<br>     <br>1. The value of demuxer is nullptr or does not point to a demuxer instance.<br>     <br>2. The value of millisecond is out of range.<br>     <br>[AV_ERR_OPERATE_NOT_PERMIT](capi-native-averrors-h.md#oh_averrcode):<br>     <br>1. The track with the specified index is not selected.<br>     <br>2. The demuxer is not correctly initialized.<br>     <br>3. The seek operation cannot be performed on the resource.<br>     <br>[AV_ERR_UNKNOWN](capi-native-averrors-h.md#oh_averrcode):<br>     <br>1. The seek operation fails.<br>     <br>2. OH_AVSeekMode is set to SEEK_MODE_NEXT_SYNC and there is no I-frame<br>     following the specified position. |
 
 ### OH_AVDemuxer_SetMediaKeySystemInfoCallback()
 
@@ -283,7 +283,7 @@ Sets a callback for obtaining the media key system information.
 
 | Type | Description |
 | -- | -- |
-| OH_AVErrCode | [AV_ERR_OK](capi-native-averrors-h.md#oh_averrcode): The operation is successful.<br>     <br>[AV_ERR_OPERATE_NOT_PERMIT](capi-native-averrors-h.md#oh_averrcode): The demuxer is not correctly initialized.<br>     <br>[AV_ERR_INVALID_VAL](capi-native-averrors-h.md#oh_averrcode): The value of demuxer is nullptr or does not point to a demuxer instance. |
+| [OH_AVErrCode](capi-native-averrors-h.md#oh_averrcode) | [AV_ERR_OK](capi-native-averrors-h.md#oh_averrcode): The operation is successful.<br>     <br>[AV_ERR_OPERATE_NOT_PERMIT](capi-native-averrors-h.md#oh_averrcode): The demuxer is not correctly initialized.<br>     <br>[AV_ERR_INVALID_VAL](capi-native-averrors-h.md#oh_averrcode): The value of demuxer is nullptr or does not point to a demuxer instance. |
 
 ### OH_AVDemuxer_SetDemuxerMediaKeySystemInfoCallback()
 
@@ -308,7 +308,7 @@ Sets a callback for obtaining the media key system information.
 
 | Type | Description |
 | -- | -- |
-| OH_AVErrCode | [AV_ERR_OK](capi-native-averrors-h.md#oh_averrcode): The operation is successful.<br>     <br>[AV_ERR_OPERATE_NOT_PERMIT](capi-native-averrors-h.md#oh_averrcode): The demuxer is not correctly initialized.<br>     <br>[AV_ERR_INVALID_VAL](capi-native-averrors-h.md#oh_averrcode): The value of demuxer is nullptr or does not point to a demuxer instance. |
+| [OH_AVErrCode](capi-native-averrors-h.md#oh_averrcode) | [AV_ERR_OK](capi-native-averrors-h.md#oh_averrcode): The operation is successful.<br>     <br>[AV_ERR_OPERATE_NOT_PERMIT](capi-native-averrors-h.md#oh_averrcode): The demuxer is not correctly initialized.<br>     <br>[AV_ERR_INVALID_VAL](capi-native-averrors-h.md#oh_averrcode): The value of demuxer is nullptr or does not point to a demuxer instance. |
 
 ### OH_AVDemuxer_GetMediaKeySystemInfo()
 
@@ -333,6 +333,6 @@ Obtains the media key system information. The media key system information can b
 
 | Type | Description |
 | -- | -- |
-| OH_AVErrCode | [AV_ERR_OK](capi-native-averrors-h.md#oh_averrcode): The operation is successful.<br>     <br>[AV_ERR_OPERATE_NOT_PERMIT](capi-native-averrors-h.md#oh_averrcode): The demuxer engine is not initialized or fails to be initialized.<br>     <br>[AV_ERR_INVALID_VAL](capi-native-averrors-h.md#oh_averrcode):<br>     <br>1. The value of demuxer is nullptr or does not point to a demuxer instance.<br>     <br>2. The value of mediaKeySystemInfo is nullptr. |
+| [OH_AVErrCode](capi-native-averrors-h.md#oh_averrcode) | [AV_ERR_OK](capi-native-averrors-h.md#oh_averrcode): The operation is successful.<br>     <br>[AV_ERR_OPERATE_NOT_PERMIT](capi-native-averrors-h.md#oh_averrcode): The demuxer engine is not initialized or fails to be initialized.<br>     <br>[AV_ERR_INVALID_VAL](capi-native-averrors-h.md#oh_averrcode):<br>     <br>1. The value of demuxer is nullptr or does not point to a demuxer instance.<br>     <br>2. The value of mediaKeySystemInfo is nullptr. |
 
 

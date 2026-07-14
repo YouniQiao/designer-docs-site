@@ -38,7 +38,7 @@ brightness.getMode({
       console.info('success get mode:' + data.mode);
     },
     fail: (data: string, code: number) => {
-      console.error('handling get mode fail, code:' + code + ', data: ' + data);
+      console.error(`Failed to get brightness mode. Code: ${code}, message: ${data}`);
     }
 });
 
@@ -81,14 +81,14 @@ export default {
         mode: ''
     },
     getMode() {
-        let TAG = 'get_mode_success_test';
+        const TAG = 'get_mode_success_test';
         brightness.getMode({
             success: (brightnessModeResponse) => {
                 this.mode = brightnessModeResponse.mode;
                 console.info(`${TAG} brightnessModeResponse mode: ${brightnessModeResponse.mode}`);
             },
             fail: (data, code) => {
-                console.error(`${TAG} fail data: ${data}, code: ${code}`);
+                console.error(`Failed to get brightness mode. Code: ${code}, message: ${data}`);
             },
             complete: () => {
                 console.info(`${TAG} getMode complete`);
@@ -129,7 +129,7 @@ brightness.getValue({
       console.info('success get brightness value:' + data.value);
     },
     fail: (data: string, code: number) => {
-      console.error('get brightness fail, code: ' + code + ', data: ' + data);
+      console.error(`Failed to get brightness value. Code: ${code}, message: ${data}`);
     }
 });
 
@@ -172,14 +172,14 @@ export default {
         value: ''
     },
     getValue() {
-        let TAG = 'get_value_success_test';
+        const TAG = 'get_value_success_test';
         brightness.getValue({
             success: (brightnessResponse) => {
                 this.value = brightnessResponse.value;
                 console.info(`${TAG} brightnessResponse.value: ${brightnessResponse.value}`);
             },
             fail: (data, code) => {
-                console.error(`${TAG} fail data: ${data}, code: ${code}`);
+                console.error(`Failed to get brightness value. Code: ${code}, message: ${data}`);
             },
             complete: () => {
                 console.info(`${TAG} getValue complete`);
@@ -196,13 +196,7 @@ export default {
 static setKeepScreenOn(options?: SetKeepScreenOnOptions): void
 ```
 
-设置屏幕是否保持常亮状态，开启常亮模式推荐在onShow()阶段调用。
-
-注意：
-
-- 除Lite Wearable外，从API version 7开始不再维护，建议使用[window.setWindowKeepScreenOn()](../../../../reference/apis-arkui/arkts-apis-window-Window.md#setwindowkeepscreenon9)替代。
-
-- 在Lite Wearable上，该接口仅能阻止系统无活动超时灭屏（自动），无法阻止用户主动操作（如盖屏）、常亮时刻结束等导致的灭屏。
+设置屏幕是否保持常亮状态，开启常亮模式推荐在onShow()阶段调用。 注意： - 除Lite Wearable外，从API version 7开始不再维护，建议使用[window.setWindowKeepScreenOn()](../../../../reference/apis-arkui/arkts-apis-window-Window.md#setwindowkeepscreenon9)替代。 - 在Lite Wearable上，该接口仅能阻止系统无活动超时灭屏（自动），无法阻止用户主动操作（如盖屏）、常亮时刻结束等导致的灭屏。
 
 **起始版本：** 3
 
@@ -229,7 +223,7 @@ brightness.setKeepScreenOn({
       console.info('handling set keep screen on success.');
     },
     fail: (data: string, code: number) => {
-      console.error('handling set keep screen on fail, code:' + code + ', data: ' + data);
+      console.error(`Failed to set keep screen on. Code: ${code}, message: ${data}`);
     }
 });
 
@@ -272,14 +266,14 @@ export default {
         keepScreenOn: true
     },
     setKeepScreenOn() {
-        let TAG = 'set_keep_screen_on_success_test';
+        const TAG = 'set_keep_screen_on_success_test';
         brightness.setKeepScreenOn({
             keepScreenOn: this.keepScreenOn,
             success: () => {
                 console.info(`${TAG} setKeepScreenOn success`);
             },
             fail: (data, code) => {
-                console.error(`${TAG} fail data: ${data}, code: ${code}`);
+                console.error(`Failed to set keep screen on. Code: ${code}, message: ${data}`);
             },
             complete: () => {
                 console.info(`${TAG} setKeepScreenOn complete`);
@@ -321,7 +315,7 @@ brightness.setMode({
       console.info('handling set mode success.');
     },
     fail: (data: string, code: number) => {
-      console.error('handling set mode fail, code:' + code + ', data: ' + data);
+      console.error(`Failed to set brightness mode. Code: ${code}, message: ${data}`);
     }
 });
 
@@ -364,14 +358,14 @@ export default {
         mode: 1
     },
     setMode() {
-        let TAG = 'set_mode_success_test';
+        const TAG = 'set_mode_success_test';
         brightness.setMode({
             mode: this.mode,
             success: () => {
                 console.info(`${TAG} setMode success`);
             },
             fail: (data, code) => {
-                console.error(`${TAG} fail data: ${data}, code: ${code}`);
+                console.error(`Failed to set brightness mode. Code: ${code}, message: ${data}`);
             },
             complete: () => {
                 console.info(`${TAG} setMode complete`);
@@ -415,7 +409,7 @@ brightness.setValue({
       console.info('handling set brightness success.');
     },
     fail: (data: string, code: number) => {
-      console.error('handling set brightness value fail, code:' + code + ', data: ' + data);
+      console.error(`Failed to set brightness value. Code: ${code}, message: ${data}`);
     }
 });
 
@@ -458,14 +452,14 @@ export default {
         value: 100
     },
     setValue() {
-        let TAG = 'set_value_success_test';
+        const TAG = 'set_value_success_test';
         brightness.setValue({
             value: this.value,
             success: () => {
                 console.info(`${TAG} setValue success!`);
             },
             fail: (data, code) => {
-                console.error(`${TAG} fail data: ${data}, code: ${code}`);
+                console.error(`Failed to set brightness value. Code: ${code}, message: ${data}`);
             },
             complete: () => {
                 console.info(`${TAG} setValue complete`);

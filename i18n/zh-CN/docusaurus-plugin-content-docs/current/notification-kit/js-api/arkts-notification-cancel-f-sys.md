@@ -12,9 +12,7 @@ import { notificationManager } from '@kit.NotificationKit';
 function cancel(representativeBundle: BundleOption, id: number): Promise<void>
 ```
 
-代理取消当前用户其他应用的通知。使用Promise异步回调。
-
-需要当前应用与其他应用存在代理关系，或者当前应用有ohos.permission.NOTIFICATION_AGENT_CONTROLLER权限。
+代理取消当前用户其他应用的通知。使用Promise异步回调。 需要当前应用与其他应用存在代理关系，或者当前应用有ohos.permission.NOTIFICATION_AGENT_CONTROLLER权限。
 
 **起始版本：** 12
 

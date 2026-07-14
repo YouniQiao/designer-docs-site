@@ -19,8 +19,8 @@
 | [getConnectionState](arkts-connectivity-getconnectionstate-f.md#getconnectionstate-1) | 获取数据传输的连接状态。 |
 | [offConnectionStateChanged](arkts-connectivity-offconnectionstatechanged-f.md#offconnectionstatechanged-1) | 取消订阅连接状态变更事件。 |
 | [offReadData](arkts-connectivity-offreaddata-f.md#offreaddata-1) | 取消订阅从端口读取数据的事件。 |
-| [onConnectionStateChanged](arkts-connectivity-onconnectionstatechanged-f.md#onconnectionstatechanged-1) | 订阅连接状态变化事件。只有授予了ohos.permission.NEARLINK_ACCESS权限的应用程序才能访问此事件。 |
-| [onReadData](arkts-connectivity-onreaddata-f.md#onreaddata-1) | 订阅从端口读取数据事件。只有授予了ohos.permission.NEARLINK_ACCESS权限的应用程序才能访问此事件。 |
+| [onConnectionStateChanged](arkts-connectivity-onconnectionstatechanged-f.md#onconnectionstatechanged-1) | 订阅连接状态变化事件。 只有授予了ohos.permission.NEARLINK_ACCESS权限的应用程序才能访问此事件。 |
+| [onReadData](arkts-connectivity-onreaddata-f.md#onreaddata-1) | 订阅从端口读取数据事件。 只有授予了ohos.permission.NEARLINK_ACCESS权限的应用程序才能访问此事件。 |
 | [writeData](arkts-connectivity-writedata-f.md#writedata-1) | 根据地址和UUID写入数据。 |
 
 ### 接口

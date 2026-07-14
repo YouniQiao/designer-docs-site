@@ -12,9 +12,7 @@ The module defines the HAP module information.
 readonly abilitiesInfo: Array<AbilityInfo>
 ```
 
-Information about all ability components of the current module. The information can be obtained by passing in
-**GET_BUNDLE_INFO_WITH_HAP_MODULE** and **GET_BUNDLE_INFO_WITH_ABILITY** to the **bundleFlags** parameter of
-[getBundleInfoForSelf](arkts-ability-getbundleinfoforself-f.md#getbundleinfoforself-1).
+Information about all ability components of the current module. The information can be obtained by passing in **GET_BUNDLE_INFO_WITH_HAP_MODULE** and **GET_BUNDLE_INFO_WITH_ABILITY** to the **bundleFlags** parameter of [getBundleInfoForSelf](arkts-ability-getbundleinfoforself-f.md#getbundleinfoforself-1).
 
 **Type:** Array<AbilityInfo>
 
@@ -94,8 +92,7 @@ ID of the module description.
 readonly deviceTypes: Array<string>
 ```
 
-Array of [device types](../../../../quick-start/module-configuration-file.md#devicetypes) that the module supports
-for installation and running.
+Array of [device types](../../../../quick-start/module-configuration-file.md#devicetypes) that the module supports for installation and running.
 
 **Type:** Array<string>
 
@@ -111,10 +108,7 @@ for installation and running.
 readonly extensionAbilitiesInfo: Array<ExtensionAbilityInfo>
 ```
 
-Information about all ExtensionAbility components of the current module. The information can be obtained by passing
-in **GET_BUNDLE_INFO_WITH_HAP_MODULE** and **GET_BUNDLE_INFO_WITH_EXTENSION_ABILITY** to the **bundleFlags**
-parameter of
-[getBundleInfoForSelf](arkts-ability-getbundleinfoforself-f.md#getbundleinfoforself-1).
+Information about all ExtensionAbility components of the current module. The information can be obtained by passing in **GET_BUNDLE_INFO_WITH_HAP_MODULE** and **GET_BUNDLE_INFO_WITH_EXTENSION_ABILITY** to the **bundleFlags** parameter of [getBundleInfoForSelf](arkts-ability-getbundleinfoforself-f.md#getbundleinfoforself-1).
 
 **Type:** Array<ExtensionAbilityInfo>
 
@@ -130,9 +124,7 @@ parameter of
 readonly fileContextMenuConfig: string
 ```
 
-File menu configuration of the module. The information can be obtained by passing in
-**GET_BUNDLE_INFO_WITH_HAP_MODULE** and **GET_BUNDLE_INFO_WITH_MENU** to the **bundleFlags** parameter of
-[getBundleInfoForSelf](arkts-ability-getbundleinfoforself-f.md#getbundleinfoforself-1).
+File menu configuration of the module. The information can be obtained by passing in **GET_BUNDLE_INFO_WITH_HAP_MODULE** and **GET_BUNDLE_INFO_WITH_MENU** to the **bundleFlags** parameter of [getBundleInfoForSelf](arkts-ability-getbundleinfoforself-f.md#getbundleinfoforself-1).
 
 **Type:** string
 
@@ -164,11 +156,7 @@ Hash value of the module.
 readonly icon: string
 ```
 
-[Icon](../../../../quick-start/layered-image.md) for the entry ability of the current module. It is the index of the
-icon resource file and should match the value of **icon** in the
-[abilities](../../../../quick-start/module-configuration-file.md#abilities) or
-[extensionAbilities](../../../../quick-start/module-configuration-file.md#extensionabilities) field in the module
-configuration file. If no entry ability is configured, this parameter is left empty.
+[Icon](../../../../quick-start/layered-image.md) for the entry ability of the current module. It is the index of the icon resource file and should match the value of **icon** in the [abilities](../../../../quick-start/module-configuration-file.md#abilities) or [extensionAbilities](../../../../quick-start/module-configuration-file.md#extensionabilities) field in the module configuration file. If no entry ability is configured, this parameter is left empty.
 
 **Type:** string
 
@@ -184,8 +172,7 @@ configuration file. If no entry ability is configured, this parameter is left em
 readonly iconId: number
 ```
 
-[Resource ID](../../../../quick-start/resource-categories-and-access.md#resource-directories) of the icon for the
-entry ability of the current module. If no entry ability is configured, this parameter is left empty.
+[Resource ID](../../../../quick-start/resource-categories-and-access.md#resource-directories) of the icon for the entry ability of the current module. If no entry ability is configured, this parameter is left empty.
 
 **Type:** number
 
@@ -201,9 +188,7 @@ entry ability of the current module. If no entry ability is configured, this par
 readonly installationFree: boolean
 ```
 
-Whether the module supports the installation-free feature. Installation-free means that the module does not need to
-be explicitly installed through an app market. **true** if the module supports installation-free, **false**
-otherwise.
+Whether the module supports the installation-free feature. Installation-free means that the module does not need to be explicitly installed through an app market. **true** if the module supports installation-free, **false** otherwise.
 
 **Type:** boolean
 
@@ -219,10 +204,7 @@ otherwise.
 readonly label: string
 ```
 
-Label of the entry ability of the current module. It is the index of a string resource and should match the value
-of **label** in the [abilities](../../../../quick-start/module-configuration-file.md#abilities) or
-[extensionAbilities](../../../../quick-start/module-configuration-file.md#extensionabilities) field in the module
-configuration file. If no entry ability is configured, this parameter is left empty.
+Label of the entry ability of the current module. It is the index of a string resource and should match the value of **label** in the [abilities](../../../../quick-start/module-configuration-file.md#abilities) or [extensionAbilities](../../../../quick-start/module-configuration-file.md#extensionabilities) field in the module configuration file. If no entry ability is configured, this parameter is left empty.
 
 **Type:** string
 
@@ -238,8 +220,7 @@ configuration file. If no entry ability is configured, this parameter is left em
 readonly labelId: number
 ```
 
-[Resource ID](../../../../quick-start/resource-categories-and-access.md#resource-directories) of the label for the
-entry ability of the current module. If no entry ability is configured, this parameter is left empty.
+[Resource ID](../../../../quick-start/resource-categories-and-access.md#resource-directories) of the label for the entry ability of the current module. If no entry ability is configured, this parameter is left empty.
 
 **Type:** number
 
@@ -271,9 +252,7 @@ Name of the UIAbility or ExtensionAbility that serves as the entry of the curren
 readonly metadata: Array<Metadata>
 ```
 
-Metadata of the current module. The information can be obtained by passing in **GET_BUNDLE_INFO_WITH_HAP_MODULE**
-and **GET_BUNDLE_INFO_WITH_METADATA** to the **bundleFlags** parameter of
-[getBundleInfoForSelf](arkts-ability-getbundleinfoforself-f.md#getbundleinfoforself-1).
+Metadata of the current module. The information can be obtained by passing in **GET_BUNDLE_INFO_WITH_HAP_MODULE** and **GET_BUNDLE_INFO_WITH_METADATA** to the **bundleFlags** parameter of [getBundleInfoForSelf](arkts-ability-getbundleinfoforself-f.md#getbundleinfoforself-1).
 
 **Type:** Array<Metadata>
 
@@ -335,10 +314,7 @@ Preloaded modules in the atomic service.
 readonly routerMap: Array<RouterItem>
 ```
 
-[Router table configuration of the module](../../../../quick-start/module-configuration-file.md#routermap). The
-information can be obtained by passing in **GET_BUNDLE_INFO_WITH_HAP_MODULE** and
-**GET_BUNDLE_INFO_WITH_ROUTER_MAP** to the **bundleFlags** parameter of
-[getBundleInfoForSelf](arkts-ability-getbundleinfoforself-f.md#getbundleinfoforself-1).
+[Router table configuration of the module](../../../../quick-start/module-configuration-file.md#routermap). The information can be obtained by passing in **GET_BUNDLE_INFO_WITH_HAP_MODULE** and **GET_BUNDLE_INFO_WITH_ROUTER_MAP** to the **bundleFlags** parameter of [getBundleInfoForSelf](arkts-ability-getbundleinfoforself-f.md#getbundleinfoforself-1).
 
 **Type:** Array<RouterItem>
 

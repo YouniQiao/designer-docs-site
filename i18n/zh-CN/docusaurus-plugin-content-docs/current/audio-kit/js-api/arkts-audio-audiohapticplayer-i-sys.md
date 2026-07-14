@@ -1,8 +1,6 @@
 # AudioHapticPlayer
 
-音振播放器，提供音振协同播放功能。在调用AudioHapticPlayer的接口前，需要先通过
-[createPlayer](arkts-audio-audiohapticmanager-i.md#createplayer-1)创建
-实例。
+音振播放器，提供音振协同播放功能。在调用AudioHapticPlayer的接口前，需要先通过 [createPlayer](arkts-audio-audiohapticmanager-i.md#createplayer-1)创建 实例。
 
 **起始版本：** 11
 
@@ -14,8 +12,7 @@
 enableHapticsInSilentMode(enable: boolean): void
 ```
 
-Enable haptics when the ringer mode is silent mode.
-这个方法只能在播放器start前，或stop后release前调用
+Enable haptics when the ringer mode is silent mode. 这个方法只能在播放器start前，或stop后release前调用
 
 **起始版本：** 20
 
@@ -94,8 +91,7 @@ Check whether the device supports haptics intensity ramp effect.
 setHapticsIntensity(intensity: number): Promise<void>
 ```
 
-Set haptics intensity for this player. This method uses a promise to return the result.
-这个方法只能在播放器释放前调用，并且每次播放过程只能设置一次。
+Set haptics intensity for this player. This method uses a promise to return the result. 这个方法只能在播放器释放前调用，并且每次播放过程只能设置一次。
 
 **起始版本：** 20
 
@@ -130,8 +126,7 @@ Set haptics intensity for this player. This method uses a promise to return the 
 setHapticsRamp(duration: number, startIntensity: number, endIntensity: number): Promise<void>
 ```
 
-Set haptics intensity ramp effect for this player. This method uses a promise to return the result.
-这个方法只能在播放器start前，或stop后release前调用
+Set haptics intensity ramp effect for this player. This method uses a promise to return the result. 这个方法只能在播放器start前，或stop后release前调用
 
 **起始版本：** 20
 

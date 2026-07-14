@@ -1,8 +1,6 @@
 # WantAgentInfo
 
-定义触发WantAgent所需要的信息，可以作为
-[getWantAgent](../../../../reference/apis-ability-kit/js-apis-app-ability-wantAgent.md#wantagentgetwantagent)的入参创建指定的
-WantAgent对象。
+定义触发WantAgent所需要的信息，可以作为 [getWantAgent](../../../../reference/apis-ability-kit/js-apis-app-ability-wantAgent.md#wantagentgetwantagent)的入参创建指定的 WantAgent对象。
 
 **起始版本：** 7
 
@@ -78,9 +76,7 @@ extraInfos?: Record<string, Object>
 operationType?: wantAgent.OperationType
 ```
 
-动作类型。
-
-从API version 7 开始支持，从API version 11 开始废弃，建议使用actionType<sup>11+</sup>替代。
+动作类型。 从API version 7 开始支持，从API version 11 开始废弃，建议使用actionType<sup>11+</sup>替代。
 
 **类型：** wantAgent.OperationType
 
@@ -116,9 +112,7 @@ requestCode: number
 wantAgentFlags?: Array<wantAgent.WantAgentFlags>
 ```
 
-动作执行属性。
-
-从API version 7 开始支持，从API version 11 开始废弃，建议使用actionFlags<sup>11+</sup>替代。
+动作执行属性。 从API version 7 开始支持，从API version 11 开始废弃，建议使用actionFlags<sup>11+</sup>替代。
 
 **类型：** Array<wantAgent.WantAgentFlags>
 

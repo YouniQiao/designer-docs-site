@@ -1,8 +1,6 @@
 # PrefixIconOptions
 
-Defines the prefix icon options.
-
-Inherits from [IconCommonOptions](arkts-arkui-iconcommonoptions-i.md).
+Defines the prefix icon options. Inherits from [IconCommonOptions](arkts-arkui-iconcommonoptions-i.md).
 
 **Inheritance/Implementation:** PrefixIconOptions extends [IconCommonOptions](arkts-arkui-iconcommonoptions-i.md)
 

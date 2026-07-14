@@ -12,9 +12,7 @@
 commands: string
 ```
 
-路径绘制的指令字符串。像素单位的转换方法请参考[像素单位](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)。
-
-单位：px
+路径绘制的指令字符串。像素单位的转换方法请参考[像素单位](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)。 单位：px
 
 **类型：** string
 
