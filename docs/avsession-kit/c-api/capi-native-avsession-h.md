@@ -373,7 +373,7 @@ Request to set av metadata.
 | Parameter | Description |
 | -- | -- |
 | [OH_AVSession](capi-ohavsession-oh-avsession.md)* avsession | The avsession instance pointer |
-| OH_AVMetadata* avmetadata | The metadata to set |
+| [OH_AVMetadata](capi-ohavsession-oh-avmetadatastruct.md)* avmetadata | The metadata to set |
 
 **Returns**:
 
@@ -423,7 +423,7 @@ Request to set playback position.
 | Parameter | Description |
 | -- | -- |
 | [OH_AVSession](capi-ohavsession-oh-avsession.md)* avsession | The avsession instance pointer |
-| [AVSession_PlaybackPosition](capi-ohavsession-avsession-playbackposition.md)* playbackPosition | The playbackPosition to set |
+| AVSession_PlaybackPosition* playbackPosition | The playbackPosition to set |
 
 **Returns**:
 

@@ -12,7 +12,9 @@
 accessibilitySpanOptions?: AccessibilitySpanOptions
 ```
 
-无障碍朗读功能属性。缺省时，取[AccessibilitySpanOptions](arkts-arkui-accessibilityspanoptions-i.md)的默认值。 **模型约束：** 此接口仅可在Stage模型下使用。
+无障碍朗读功能属性。缺省时，取[AccessibilitySpanOptions](arkts-arkui-accessibilityspanoptions-i.md)的默认值。
+
+**模型约束：** 此接口仅可在Stage模型下使用。
 
 **类型：** AccessibilitySpanOptions
 

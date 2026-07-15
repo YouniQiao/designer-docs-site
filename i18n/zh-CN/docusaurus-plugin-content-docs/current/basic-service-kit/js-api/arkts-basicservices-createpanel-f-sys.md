@@ -6,7 +6,9 @@
 function createPanel(ctx: Context, info: PanelInfo): Promise<Panel>
 ```
 
-创建划词面板。使用Promise异步回调。 单个划词应用仅允许创建一个[MENU_PANEL](arkts-selectioninput-selectionpanel.md)和一个 [MAIN_PANEL](arkts-selectioninput-selectionpanel.md)。
+创建划词面板。使用Promise异步回调。
+单个划词应用仅允许创建一个[MENU_PANEL](arkts-selectioninput-selectionpanel.md)和一个
+[MAIN_PANEL](arkts-selectioninput-selectionpanel.md)。
 
 **起始版本：** 24
 

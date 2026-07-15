@@ -402,7 +402,7 @@ Set the Surface to the image effect, this interface must be called before
 | Parameter | Description |
 | -- | -- |
 | [OH_ImageEffect](capi-imageeffect-oh-imageeffect.md) *imageEffect | Encapsulate OH_ImageEffect structure instance pointer |
-| [OHNativeWindow](../ArkGraphics2D/capi-nativewindow-nativewindow.md) *nativeWindow | A pointer to a OHNativeWindow instance, see [OHNativeWindow](../ArkGraphics2D/capi-nativewindow-nativewindow.md) |
+| OHNativeWindow *nativeWindow | A pointer to a OHNativeWindow instance, see [OHNativeWindow](../ArkGraphics2D/capi-nativewindow-nativewindow.md) |
 
 **Returns**:
 
@@ -429,7 +429,7 @@ Get the input Surface from the image effect, this interface must be called after
 | Parameter | Description |
 | -- | -- |
 | [OH_ImageEffect](capi-imageeffect-oh-imageeffect.md) *imageEffect | Encapsulate OH_ImageEffect structure instance pointer |
-| [OHNativeWindow](../ArkGraphics2D/capi-nativewindow-nativewindow.md) **nativeWindow | A pointer to a OHNativeWindow instance, see [OHNativeWindow](../ArkGraphics2D/capi-nativewindow-nativewindow.md) |
+| OHNativeWindow **nativeWindow | A pointer to a OHNativeWindow instance, see [OHNativeWindow](../ArkGraphics2D/capi-nativewindow-nativewindow.md) |
 
 **Returns**:
 
@@ -456,7 +456,7 @@ Set input pixelmap that contains the image information. It should be noted that 
 | Parameter | Description |
 | -- | -- |
 | [OH_ImageEffect](capi-imageeffect-oh-imageeffect.md) *imageEffect | Encapsulate OH_ImageEffect structure instance pointer |
-| OH_PixelmapNative *pixelmap | Indicates the OH_PixelmapNative that contains the image information |
+| [OH_PixelmapNative](capi-image-nativemodule-oh-pixelmapnative.md) *pixelmap | Indicates the OH_PixelmapNative that contains the image information |
 
 **Returns**:
 
@@ -483,7 +483,7 @@ Set output pixelmap that contains the image information
 | Parameter | Description |
 | -- | -- |
 | [OH_ImageEffect](capi-imageeffect-oh-imageeffect.md) *imageEffect | Encapsulate OH_ImageEffect structure instance pointer |
-| OH_PixelmapNative *pixelmap | Indicates the OH_PixelmapNative that contains the image information |
+| [OH_PixelmapNative](capi-image-nativemodule-oh-pixelmapnative.md) *pixelmap | Indicates the OH_PixelmapNative that contains the image information |
 
 **Returns**:
 
@@ -510,7 +510,7 @@ Set input NativeBuffer that contains the image information. It should be noted t
 | Parameter | Description |
 | -- | -- |
 | [OH_ImageEffect](capi-imageeffect-oh-imageeffect.md) *imageEffect | Encapsulate OH_ImageEffect structure instance pointer |
-| OH_NativeBuffer *nativeBuffer | Indicates the NativeBuffer that contains the image information |
+| [OH_NativeBuffer](capi-image-nativemodule-oh-nativebuffer.md) *nativeBuffer | Indicates the NativeBuffer that contains the image information |
 
 **Returns**:
 
@@ -537,7 +537,7 @@ Set output NativeBuffer that contains the image information
 | Parameter | Description |
 | -- | -- |
 | [OH_ImageEffect](capi-imageeffect-oh-imageeffect.md) *imageEffect | Encapsulate OH_ImageEffect structure instance pointer |
-| OH_NativeBuffer *nativeBuffer | Indicates the NativeBuffer that contains the image information |
+| [OH_NativeBuffer](capi-image-nativemodule-oh-nativebuffer.md) *nativeBuffer | Indicates the NativeBuffer that contains the image information |
 
 **Returns**:
 
@@ -618,7 +618,7 @@ Set input picture that contains the image information. It should be noted that t
 | Parameter | Description |
 | -- | -- |
 | [OH_ImageEffect](capi-imageeffect-oh-imageeffect.md) *imageEffect | Encapsulate OH_ImageEffect structure instance pointer |
-| OH_PictureNative *picture | Indicates the OH_PictureNative that contains the image information |
+| [OH_PictureNative](capi-image-nativemodule-oh-picturenative.md) *picture | Indicates the OH_PictureNative that contains the image information |
 
 **Returns**:
 
@@ -645,7 +645,7 @@ Set output picture that contains the image information
 | Parameter | Description |
 | -- | -- |
 | [OH_ImageEffect](capi-imageeffect-oh-imageeffect.md) *imageEffect | Encapsulate OH_ImageEffect structure instance pointer |
-| OH_PictureNative *picture | Indicates the OH_PictureNative that contains the image information |
+| [OH_PictureNative](capi-image-nativemodule-oh-picturenative.md) *picture | Indicates the OH_PictureNative that contains the image information |
 
 **Returns**:
 

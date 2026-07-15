@@ -178,7 +178,7 @@ Notify cursor update.
 | Parameter | Description |
 | -- | -- |
 | [InputMethod_InputMethodProxy](capi-inputmethod-inputmethod-inputmethodproxy.md) *inputMethodProxy | Represents a pointer to an [InputMethod_InputMethodProxy](capi-inputmethod-inputmethod-inputmethodproxy.md) instance.The inputMethodProxy is obtained from {@link OH_InputMethodController_Attach}. |
-| InputMethod_CursorInfo *cursorInfo | Represents a pointer to an [InputMethod_CursorInfo](capi-inputmethod-inputmethod-cursorinfo.md) instance.The cursor information. |
+| [InputMethod_CursorInfo](capi-inputmethod-inputmethod-cursorinfo.md) *cursorInfo | Represents a pointer to an [InputMethod_CursorInfo](capi-inputmethod-inputmethod-cursorinfo.md) instance.The cursor information. |
 
 **Returns**:
 
@@ -203,7 +203,7 @@ Send private command.
 | Parameter | Description |
 | -- | -- |
 | [InputMethod_InputMethodProxy](capi-inputmethod-inputmethod-inputmethodproxy.md) *inputMethodProxy | Represents a pointer to an [InputMethod_InputMethodProxy](capi-inputmethod-inputmethod-inputmethodproxy.md) instance.The inputMethodProxy is obtained from {@link OH_InputMethodController_Attach}. |
-| [InputMethod_PrivateCommand](capi-inputmethod-inputmethod-privatecommand.md) *privateCommand[] | The private commands, which is defined in [InputMethod_PrivateCommand](capi-inputmethod-inputmethod-privatecommand.md). Max size 32KB. |
+| InputMethod_PrivateCommand *privateCommand[] | The private commands, which is defined in [InputMethod_PrivateCommand](capi-inputmethod-inputmethod-privatecommand.md). Max size 32KB. |
 | size_t size | The size of privateCommand. Max is 5. |
 
 **Returns**:

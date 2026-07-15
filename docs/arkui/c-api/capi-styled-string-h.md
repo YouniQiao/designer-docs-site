@@ -351,8 +351,8 @@ Creates a pointer to the ArkUI_StyledString object.
 
 | Parameter | Description |
 | -- | -- |
-| [OH_Drawing_TypographyStyle](capi-drawing-oh-drawing-typographystyle.md)* style | A pointer to OH_Drawing_TypographyStyle, obtained by [OH_Drawing_CreateTypographyStyle](../ArkGraphics2D/capi-drawing-text-typography-h.md#oh_drawing_createtypographystyle). |
-| [OH_Drawing_FontCollection](capi-drawing-oh-drawing-fontcollection.md)* collection | A pointer to OH_Drawing_FontCollection, obtained by {@link OH_Drawing_CreateFontCollection}. |
+| [OH_Drawing_TypographyStyle](../ArkGraphics2D/capi-drawing-oh-drawing-typographystyle.md)* style | A pointer to OH_Drawing_TypographyStyle, obtained by [OH_Drawing_CreateTypographyStyle](../ArkGraphics2D/capi-drawing-text-typography-h.md#oh_drawing_createtypographystyle). |
+| [OH_Drawing_FontCollection](../ArkGraphics2D/capi-drawing-oh-drawing-fontcollection.md)* collection | A pointer to OH_Drawing_FontCollection, obtained by {@link OH_Drawing_CreateFontCollection}. |
 
 **Returns**:
 
@@ -395,7 +395,7 @@ Sets the new layout style to the top of the current format string style stack.
 | Parameter | Description |
 | -- | -- |
 | [ArkUI_StyledString](capi-arkui-nativemodule-arkui-styledstring.md)* handle | A pointer to the ArkUI_StyledString object. |
-| [OH_Drawing_TextStyle](capi-drawing-oh-drawing-textstyle.md)* style | A pointer to the OH_Drawing_TextStyle object. |
+| [OH_Drawing_TextStyle](../ArkGraphics2D/capi-drawing-oh-drawing-textstyle.md)* style | A pointer to the OH_Drawing_TextStyle object. |
 
 ### OH_ArkUI_StyledString_AddText()
 
@@ -456,7 +456,7 @@ Creates a pointer to an OH_Drawing_Typography object based on a format string ob
 
 | Type | Description |
 | -- | -- |
-| [OH_Drawing_Typography*](capi-drawing-oh-drawing-typography.md) | A pointer to the OH_Drawing_Typography object. If the object returns a null pointer,<br>         the creation fails because the handle parameter is abnormal, such as a null pointer. |
+| [OH_Drawing_Typography*](../ArkGraphics2D/capi-drawing-oh-drawing-typography.md) | A pointer to the OH_Drawing_Typography object. If the object returns a null pointer,<br>         the creation fails because the handle parameter is abnormal, such as a null pointer. |
 
 ### OH_ArkUI_StyledString_AddPlaceholder()
 
@@ -475,7 +475,7 @@ Set the placeholder.
 | Parameter | Description |
 | -- | -- |
 | [ArkUI_StyledString](capi-arkui-nativemodule-arkui-styledstring.md)* handle | A pointer to the ArkUI_StyledString object. |
-| [OH_Drawing_PlaceholderSpan](../ArkGraphics2D/capi-drawing-oh-drawing-placeholderspan.md)* placeholder | A pointer to the OH_Drawing_PlaceholderSpan object. |
+| OH_Drawing_PlaceholderSpan* placeholder | A pointer to the OH_Drawing_PlaceholderSpan object. |
 
 ### OH_ArkUI_StyledString_Descriptor_Create()
 
@@ -5925,7 +5925,7 @@ Sets the image drawing color filter in the image style.
 | Parameter | Description |
 | -- | -- |
 | [OH_ArkUI_ImageAttachment](capi-arkui-nativemodule-oh-arkui-imageattachment.md)* imageAttachment | Pointer to the [OH_ArkUI_ImageAttachment](capi-arkui-nativemodule-oh-arkui-imageattachment.md) object. |
-| [const OH_Drawing_ColorFilter](capi-drawing-oh-drawing-colorfilter.md)* drawingColorFilter | Pointer to the image drawing color filter. |
+| [const OH_Drawing_ColorFilter](../ArkGraphics2D/capi-drawing-oh-drawing-colorfilter.md)* drawingColorFilter | Pointer to the image drawing color filter. |
 
 **Returns**:
 
@@ -5953,7 +5953,7 @@ Obtains the image drawing color filter in the image style.
 | Parameter | Description |
 | -- | -- |
 | [const OH_ArkUI_ImageAttachment](capi-arkui-nativemodule-oh-arkui-imageattachment.md)* imageAttachment | Pointer to the [OH_ArkUI_ImageAttachment](capi-arkui-nativemodule-oh-arkui-imageattachment.md) object. |
-| [OH_Drawing_ColorFilter](capi-drawing-oh-drawing-colorfilter.md)* drawingColorFilter | Pointer to the image drawing color filter. |
+| [OH_Drawing_ColorFilter](../ArkGraphics2D/capi-drawing-oh-drawing-colorfilter.md)* drawingColorFilter | Pointer to the image drawing color filter. |
 
 **Returns**:
 
@@ -6092,7 +6092,7 @@ Obtains the range of the content to be replaced in the text change information.
 
 | Parameter | Description |
 | -- | -- |
-| const OH_ArkUI_TextEditorChangeEvent* event | Pointer to the [OH_ArkUI_TextEditorChangeEvent](capi-arkui-nativemodule-oh-arkui-texteditorchangeevent.md) object. |
+| [const OH_ArkUI_TextEditorChangeEvent](capi-arkui-nativemodule-oh-arkui-texteditorchangeevent.md)* event | Pointer to the [OH_ArkUI_TextEditorChangeEvent](capi-arkui-nativemodule-oh-arkui-texteditorchangeevent.md) object. |
 | uint32_t* start | Pointer to the start index of the range of the content to be replaced. |
 | uint32_t* end | Pointer to the end index of the range of the content to be replaced. |
 
@@ -6121,7 +6121,7 @@ Obtains the styled string used for replacement in the text change information.
 
 | Parameter | Description |
 | -- | -- |
-| const OH_ArkUI_TextEditorChangeEvent* event | Pointer to the [OH_ArkUI_TextEditorChangeEvent](capi-arkui-nativemodule-oh-arkui-texteditorchangeevent.md) object. |
+| [const OH_ArkUI_TextEditorChangeEvent](capi-arkui-nativemodule-oh-arkui-texteditorchangeevent.md)* event | Pointer to the [OH_ArkUI_TextEditorChangeEvent](capi-arkui-nativemodule-oh-arkui-texteditorchangeevent.md) object. |
 | ArkUI_StyledString_Descriptor* descriptor | Pointer to the [ArkUI_StyledString_Descriptor](capi-arkui-nativemodule-arkui-styledstring-descriptor.md) object. |
 
 **Returns**:
@@ -6149,7 +6149,7 @@ Obtains the styled string of the previewed content in the text change informatio
 
 | Parameter | Description |
 | -- | -- |
-| const OH_ArkUI_TextEditorChangeEvent* event | Pointer to the [OH_ArkUI_TextEditorChangeEvent](capi-arkui-nativemodule-oh-arkui-texteditorchangeevent.md) object. |
+| [const OH_ArkUI_TextEditorChangeEvent](capi-arkui-nativemodule-oh-arkui-texteditorchangeevent.md)* event | Pointer to the [OH_ArkUI_TextEditorChangeEvent](capi-arkui-nativemodule-oh-arkui-texteditorchangeevent.md) object. |
 | ArkUI_StyledString_Descriptor* descriptor | Pointer to the [ArkUI_StyledString_Descriptor](capi-arkui-nativemodule-arkui-styledstring-descriptor.md) object. |
 
 **Returns**:
@@ -6220,9 +6220,9 @@ Gets the rects for range.
 | [ArkUI_TextLayoutManager](capi-arkui-nativemodule-arkui-textlayoutmanager.md)* layoutManager | Indicates the pointer to an <b>ArkUI_TextLayoutManager</b> object. |
 | int32_t start | Indicates the start of range to set. |
 | int32_t end | Indicates the end of range to set. |
-| [OH_Drawing_RectWidthStyle](../ArkGraphics2D/capi-drawing-text-typography-h.md#oh_drawing_rectwidthstyle) widthStyle | Indicates the width style to set.For details, see the enum <b>OH_Drawing_RectWidthStyle</b>. |
-| [OH_Drawing_RectHeightStyle](../ArkGraphics2D/capi-drawing-text-typography-h.md#oh_drawing_rectheightstyle) heightStyle | Indicates the height style to set.For details, see the enum <b>OH_Drawing_RectHeightStyle</b>. |
-| [OH_Drawing_TextBox](capi-drawing-oh-drawing-textbox.md)** outTextBoxes | Returns the array of rects for range. |
+| OH_Drawing_RectWidthStyle widthStyle | Indicates the width style to set.For details, see the enum <b>OH_Drawing_RectWidthStyle</b>. |
+| OH_Drawing_RectHeightStyle heightStyle | Indicates the height style to set.For details, see the enum <b>OH_Drawing_RectHeightStyle</b>. |
+| [OH_Drawing_TextBox](../ArkGraphics2D/capi-drawing-oh-drawing-textbox.md)** outTextBoxes | Returns the array of rects for range. |
 
 **Returns**:
 
@@ -6249,7 +6249,7 @@ Gets the glyph position at coordinate.
 | [ArkUI_TextLayoutManager](capi-arkui-nativemodule-arkui-textlayoutmanager.md)* layoutManager | Indicates the pointer to an <b>ArkUI_TextLayoutManager</b> object. |
 | double dx | Indicates the positionX of typography to set. |
 | double dy | Indicates the positionY of typography to set. |
-| [OH_Drawing_PositionAndAffinity](capi-drawing-oh-drawing-positionandaffinity.md)** outPos | Returns the glyph position at coordinate. |
+| [OH_Drawing_PositionAndAffinity](../ArkGraphics2D/capi-drawing-oh-drawing-positionandaffinity.md)** outPos | Returns the glyph position at coordinate. |
 
 **Returns**:
 
@@ -6275,7 +6275,7 @@ Get line metrics information.
 | -- | -- |
 | [ArkUI_TextLayoutManager](capi-arkui-nativemodule-arkui-textlayoutmanager.md)* layoutManager | Indicates the pointer to a typography object <b>ArkUI_TextLayoutManager</b>. |
 | int32_t lineNumber | Indicates the number of line. |
-| [OH_Drawing_LineMetrics](../ArkGraphics2D/capi-drawing-oh-drawing-linemetrics.md)* outMetrics | Indicates the pointer to a line metrics object <b>OH_Drawing_LineMetrics</b>. |
+| OH_Drawing_LineMetrics* outMetrics | Indicates the pointer to a line metrics object <b>OH_Drawing_LineMetrics</b>. |
 
 **Returns**:
 
@@ -6302,7 +6302,7 @@ Gets the character position at coordinate.
 | [ArkUI_TextLayoutManager](capi-arkui-nativemodule-arkui-textlayoutmanager.md)* layoutManager | Indicates the pointer to an <b>ArkUI_TextLayoutManager</b> object. |
 | double dx | Indicates the positionX of typography to set. |
 | double dy | Indicates the positionY of typography to set. |
-| [OH_Drawing_PositionAndAffinity](capi-drawing-oh-drawing-positionandaffinity.md)** outPos | Returns the character position at coordinate. |
+| [OH_Drawing_PositionAndAffinity](../ArkGraphics2D/capi-drawing-oh-drawing-positionandaffinity.md)** outPos | Returns the character position at coordinate. |
 
 **Returns**:
 
@@ -6327,9 +6327,9 @@ Get the glyph range produced by the specified range of characters.
 | Parameter | Description |
 | -- | -- |
 | [ArkUI_TextLayoutManager](capi-arkui-nativemodule-arkui-textlayoutmanager.md)* layoutManager | Indicates the pointer to an <b>ArkUI_TextLayoutManager</b> object. |
-| [OH_Drawing_Range](capi-drawing-oh-drawing-range.md)* charRange | The character range. |
-| [OH_Drawing_Range](capi-drawing-oh-drawing-range.md)** outGlyphRange | The range of glyphs generated by charRange. |
-| [OH_Drawing_Range](capi-drawing-oh-drawing-range.md)** outActualCharRange | If not null, specifies the actual character range that fully defines the returnedglyph range, which may match or slightly exceed the requested range. |
+| [OH_Drawing_Range](../ArkGraphics2D/capi-drawing-oh-drawing-range.md)* charRange | The character range. |
+| [OH_Drawing_Range](../ArkGraphics2D/capi-drawing-oh-drawing-range.md)** outGlyphRange | The range of glyphs generated by charRange. |
+| [OH_Drawing_Range](../ArkGraphics2D/capi-drawing-oh-drawing-range.md)** outActualCharRange | If not null, specifies the actual character range that fully defines the returnedglyph range, which may match or slightly exceed the requested range. |
 
 **Returns**:
 
@@ -6354,9 +6354,9 @@ Get the character range that maps to the glyphs in the given glyph range.
 | Parameter | Description |
 | -- | -- |
 | [ArkUI_TextLayoutManager](capi-arkui-nativemodule-arkui-textlayoutmanager.md)* layoutManager | Indicates the pointer to an <b>ArkUI_TextLayoutManager</b> object. |
-| [OH_Drawing_Range](capi-drawing-oh-drawing-range.md)* glyphRange | The glyph range. |
-| [OH_Drawing_Range](capi-drawing-oh-drawing-range.md)** outCharRange | The range of characters generated by glyphRange. |
-| [OH_Drawing_Range](capi-drawing-oh-drawing-range.md)** outActualGlyphRange | If not null, specifies the full glyph range generated by the returned character range,which may match or slightly exceed the requested glyph range. |
+| [OH_Drawing_Range](../ArkGraphics2D/capi-drawing-oh-drawing-range.md)* glyphRange | The glyph range. |
+| [OH_Drawing_Range](../ArkGraphics2D/capi-drawing-oh-drawing-range.md)** outCharRange | The range of characters generated by glyphRange. |
+| [OH_Drawing_Range](../ArkGraphics2D/capi-drawing-oh-drawing-range.md)** outActualGlyphRange | If not null, specifies the full glyph range generated by the returned character range,which may match or slightly exceed the requested glyph range. |
 
 **Returns**:
 
@@ -6384,7 +6384,7 @@ Set linear gradient of paragraph style.
 | Parameter | Description |
 | -- | -- |
 | [OH_ArkUI_ParagraphStyle](capi-arkui-nativemodule-oh-arkui-paragraphstyle.md)* paragraphStyle | Pointer to the <b>OH_ArkUI_ParagraphStyle</b> object. |
-| const OH_ArkUI_LinearGradientOptions* linearGradient | Pointer to the <b>OH_ArkUI_LinearGradientOptions</b> object. |
+| [const OH_ArkUI_LinearGradientOptions](capi-arkui-nativemodule-oh-arkui-lineargradientoptions.md)* linearGradient | Pointer to the <b>OH_ArkUI_LinearGradientOptions</b> object. |
 
 **Returns**:
 
@@ -6412,7 +6412,7 @@ Get linear gradient of paragraph style.
 | Parameter | Description |
 | -- | -- |
 | [const OH_ArkUI_ParagraphStyle](capi-arkui-nativemodule-oh-arkui-paragraphstyle.md)* paragraphStyle | Pointer to the <b>OH_ArkUI_ParagraphStyle</b> object. |
-| OH_ArkUI_LinearGradientOptions* linearGradient | Pointer to the <b>OH_ArkUI_LinearGradientOptions</b> object. |
+| [OH_ArkUI_LinearGradientOptions](capi-arkui-nativemodule-oh-arkui-lineargradientoptions.md)* linearGradient | Pointer to the <b>OH_ArkUI_LinearGradientOptions</b> object. |
 
 **Returns**:
 
@@ -6440,7 +6440,7 @@ Set radial gradient of paragraph style.
 | Parameter | Description |
 | -- | -- |
 | [OH_ArkUI_ParagraphStyle](capi-arkui-nativemodule-oh-arkui-paragraphstyle.md)* paragraphStyle | Pointer to the <b>OH_ArkUI_ParagraphStyle</b> object. |
-| const OH_ArkUI_RadialGradientOptions* radialGradient | Pointer to the <b>OH_ArkUI_RadialGradientOptions</b> object. |
+| [const OH_ArkUI_RadialGradientOptions](capi-arkui-nativemodule-oh-arkui-radialgradientoptions.md)* radialGradient | Pointer to the <b>OH_ArkUI_RadialGradientOptions</b> object. |
 
 **Returns**:
 
@@ -6468,7 +6468,7 @@ Get radial gradient of paragraph style.
 | Parameter | Description |
 | -- | -- |
 | [const OH_ArkUI_ParagraphStyle](capi-arkui-nativemodule-oh-arkui-paragraphstyle.md)* paragraphStyle | Pointer to the <b>OH_ArkUI_ParagraphStyle</b> object. |
-| OH_ArkUI_RadialGradientOptions* radialGradient | Pointer to the <b>OH_ArkUI_RadialGradientOptions</b> object. |
+| [OH_ArkUI_RadialGradientOptions](capi-arkui-nativemodule-oh-arkui-radialgradientoptions.md)* radialGradient | Pointer to the <b>OH_ArkUI_RadialGradientOptions</b> object. |
 
 **Returns**:
 

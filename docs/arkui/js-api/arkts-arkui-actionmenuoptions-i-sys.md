@@ -9,7 +9,7 @@ Describes the options for showing the action menu.
 ## Modules to Import
 
 ```TypeScript
-import { LevelMode, ImmersiveMode, LevelOrder } from '@ohos.promptAction';
+import { LevelMode, ImmersiveMode, LevelOrder } from '@kit.ArkUI';
 ```
 
 ## distortionMode

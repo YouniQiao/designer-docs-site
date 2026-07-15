@@ -2,6 +2,7 @@
 
 提供编写文本的接口。
 
+
 ## RichEditor
 
 ```TypeScript

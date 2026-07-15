@@ -54,7 +54,7 @@ Callback invoked when a modular object extension is started for initialization.
 | Parameter | Description |
 | -- | -- |
 | (OH_AbilityRuntime_ModObjExtensionInstanceHandle instance | Points to an [OH_AbilityRuntime_ModObjExtensionInstance](capi-abilityruntime-oh-abilityruntime-modularobjectextensioninstance.md) instance. |
-| [AbilityBase_Want](capi-abilitybase-abilitybase-want.md) \*want | Indicates the want of created modular object extension.For details, see [AbilityBase_Want](capi-abilitybase-abilitybase-want.md). |
+| AbilityBase_Want \*want | Indicates the want of created modular object extension.For details, see [AbilityBase_Want](capi-abilitybase-abilitybase-want.md). |
 
 ### OH_AbilityRuntime_ModObjExtensionAbility_OnDestroyFunc()
 
@@ -91,7 +91,7 @@ Callback invoked when a modular object extension is connected to an ability.
 | Parameter | Description |
 | -- | -- |
 | (OH_AbilityRuntime_ModObjExtensionInstanceHandle instance | Points to an [OH_AbilityRuntime_ModObjExtensionInstance](capi-abilityruntime-oh-abilityruntime-modularobjectextensioninstance.md) instance. |
-| [AbilityBase_Want](capi-abilitybase-abilitybase-want.md) \*want | Indicates the want of created modular object extension. |
+| AbilityBase_Want \*want | Indicates the want of created modular object extension. |
 
 ### OH_AbilityRuntime_ModObjExtensionAbility_OnDisconnectFunc()
 
@@ -228,7 +228,7 @@ Gets the extension context from the modular object extension instance.
 | Parameter | Description |
 | -- | -- |
 | OH_AbilityRuntime_ModObjExtensionInstanceHandle instance | Points to an [OH_AbilityRuntime_ModObjExtensionInstance](capi-abilityruntime-oh-abilityruntime-modularobjectextensioninstance.md) instance. |
-| [OH_AbilityRuntime_ModObjExtensionContextHandle](capi-abilityruntime-oh-abilityruntime-modularobjectextensioncontext8h.md)* context | Represents a pointer to the modular object extension ability context. |
+| OH_AbilityRuntime_ModObjExtensionContextHandle* context | Represents a pointer to the modular object extension ability context. |
 
 **Returns**:
 
@@ -252,7 +252,7 @@ Gets the modular object extension instance from a base extension instance.
 
 | Parameter | Description |
 | -- | -- |
-| AbilityRuntime_ExtensionInstanceHandle baseExtensionInstance | Represents a pointer to a {@linkAbilityRuntime_ExtensionInstance} base extension instance. |
+| [AbilityRuntime_ExtensionInstanceHandle](capi-abilityruntime-abilityruntime-extensioninstance8h.md) baseExtensionInstance | Represents a pointer to a {@linkAbilityRuntime_ExtensionInstance} base extension instance. |
 | OH_AbilityRuntime_ModObjExtensionInstanceHandle* modObjExtensionInstance | Represents a pointer to an {@linkOH_AbilityRuntime_ModObjExtensionInstanceHandle} instance that is an output parameter. |
 
 **Returns**:

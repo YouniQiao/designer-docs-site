@@ -212,7 +212,7 @@ OH_AVErrCode OH_AVPlayer_SetDataSource(OH_AVPlayer *player, OH_AVDataSourceExt* 
 | 参数项 | 描述 |
 | -- | -- |
 | OH_AVPlayer *player | Pointer to an OH_AVPlayer instance |
-| OH_AVDataSourceExt* datasrc | Pointer to an OH_AVDataSourceExt instance |
+| [OH_AVDataSourceExt](../AVCodecKit/capi-codecbase-oh-avdatasourceext.md)* datasrc | Pointer to an OH_AVDataSourceExt instance |
 | void* userData | The handle passed in by the user is used to pass in the callback |
 
 **返回：**
@@ -757,7 +757,7 @@ OH_AVErrCode  OH_AVPlayer_SetVideoSurface(OH_AVPlayer *player, OHNativeWindow *w
 | 参数项 | 描述 |
 | -- | -- |
 | OH_AVPlayer *player | 指向OH_AVPlayer实例的指针。 |
-| [OHNativeWindow](../ArkGraphics2D/capi-nativewindow-nativewindow.md) *window | 指向OHNativeWindow实例的指针。 |
+| [OHNativeWindow](../AVCodecKit/capi-codecbase-nativewindow.md) *window | 指向OHNativeWindow实例的指针。 |
 
 **返回：**
 
@@ -1314,7 +1314,7 @@ OH_AVErrCode OH_AVPlayer_SetMediaMuted(OH_AVPlayer *player, OH_MediaType mediaTy
 | 参数项 | 描述 |
 | -- | -- |
 | OH_AVPlayer *player | 指向OH_AVPlayer实例的指针。 |
-| OH_MediaType mediaType | 指定的媒体类型，参见{@link native_avcodec_base.h}中的[OH_MediaType](../AVCodecKit/capi-native-avcodec-base-h.md#oh_mediatype)。 |
+| [OH_MediaType](../AVCodecKit/capi-native-avcodec-base-h.md#oh_mediatype) mediaType | 指定的媒体类型，参见{@link native_avcodec_base.h}中的[OH_MediaType](../AVCodecKit/capi-native-avcodec-base-h.md#oh_mediatype)。 |
 | bool muted | true表示静音，false表示取消静音。 |
 
 **返回：**
@@ -1760,7 +1760,7 @@ OH_AVErrCode OH_AVPlaybackStrategy_SetMutedMediaType(OH_AVPlaybackStrategy *stra
 | 参数项 | 描述 |
 | -- | -- |
 | OH_AVPlaybackStrategy *strategy | 指向OH_AVPlaybackStrategy的指针。 |
-| OH_MediaType mediaType | 要静音的媒体类型。 |
+| [OH_MediaType](../AVCodecKit/capi-native-avcodec-base-h.md#oh_mediatype) mediaType | 要静音的媒体类型。 |
 
 **返回：**
 
@@ -2033,7 +2033,7 @@ Method to set video decoded frame output callback. This API can be called onlywh
 | 参数项 | 描述 |
 | -- | -- |
 | OH_AVPlayer *player | Pointer to an OH_AVPlayer instance. |
-| [OHNativeWindow](../ArkGraphics2D/capi-nativewindow-nativewindow.md) *window | A pointer to a OHNativeWindow instance, see [OHNativeWindow](../ArkGraphics2D/capi-nativewindow-nativewindow.md) |
+| [OHNativeWindow](../AVCodecKit/capi-codecbase-nativewindow.md) *window | A pointer to a OHNativeWindow instance, see [OHNativeWindow](../AVCodecKit/capi-codecbase-nativewindow.md) |
 
 **返回：**
 

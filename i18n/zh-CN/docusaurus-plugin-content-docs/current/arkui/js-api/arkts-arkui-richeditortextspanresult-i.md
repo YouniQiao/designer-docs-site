@@ -120,7 +120,9 @@ textStyle: RichEditorTextStyleResult
 urlStyle?: RichEditorUrlStyle
 ```
 
-url信息。 默认值：undefined
+url信息。
+
+默认值：undefined
 
 **类型：** RichEditorUrlStyle
 

@@ -1,5 +1,10 @@
 # ArkTS API<!--arkts-performanceanalysiskit-->
 
+- [@ohos.faultLogger](arkts-faultlogger.md)
+  - [query](arkts-performanceanalysis-query-f.md)
+  - [querySelfFaultLog](arkts-performanceanalysis-queryselffaultlog-f.md)
+  - [FaultLogInfo](arkts-performanceanalysis-faultloginfo-i.md)
+  - [FaultType](arkts-performanceanalysis-faulttype-e.md)
 - [@ohos.hiSysEvent](arkts-hisysevent.md)<!--Del-->
   - [addWatcher(系统接口)](arkts-performanceanalysis-addwatcher-f-sys.md)<!--DelEnd--><!--Del-->
   - [exportSysEvents(系统接口)](arkts-performanceanalysis-exportsysevents-f-sys.md)<!--DelEnd--><!--Del-->
@@ -93,6 +98,10 @@
   - [warn](arkts-performanceanalysis-warn-f.md)
   - [LogLevel](arkts-performanceanalysis-loglevel-e.md)
   - [PreferStrategy](arkts-performanceanalysis-preferstrategy-e.md)
+- [@ohos.hiviewdfx.FaultLogExtensionAbility](arkts-hiviewdfx-faultlogextensionability.md)
+  - [FaultLogExtensionAbility](arkts-performanceanalysis-faultlogextensionability-c.md)
+- [@ohos.hiviewdfx.FaultLogExtensionContext](arkts-hiviewdfx-faultlogextensioncontext.md)
+  - [FaultLogExtensionContext](arkts-performanceanalysis-faultlogextensioncontext-c.md)
 - [@ohos.hiviewdfx.hiRetrieval](arkts-hiviewdfx-hiretrieval.md)
   - [getCurrentConfig](arkts-performanceanalysis-getcurrentconfig-f.md)
   - [getLastParticipationTimestamp](arkts-performanceanalysis-getlastparticipationtimestamp-f.md)

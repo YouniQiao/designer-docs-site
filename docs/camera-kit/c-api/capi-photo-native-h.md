@@ -53,7 +53,7 @@ Obtains a full-quality image.
 
 | Type | Description |
 | -- | -- |
-| Camera_ErrorCode | CAMERA_OK: The operation is successful.<br>     <br>CAMERA_INVALID_ARGUMENT: A parameter is missing or the parameter type is incorrect. |
+| [Camera_ErrorCode](capi-camera-h.md#camera_errorcode) | CAMERA_OK: The operation is successful.<br>     <br>CAMERA_INVALID_ARGUMENT: A parameter is missing or the parameter type is incorrect. |
 
 ### OH_PhotoNative_GetUncompressedImage()
 
@@ -78,7 +78,7 @@ Obtains an uncompressed image.
 
 | Type | Description |
 | -- | -- |
-| Camera_ErrorCode | CAMERA_OK: The operation is successful.<br>     <br>CAMERA_INVALID_ARGUMENT: A parameter is missing or the parameter type is incorrect. |
+| [Camera_ErrorCode](capi-camera-h.md#camera_errorcode) | CAMERA_OK: The operation is successful.<br>     <br>CAMERA_INVALID_ARGUMENT: A parameter is missing or the parameter type is incorrect. |
 
 ### OH_PhotoNative_Release()
 
@@ -102,6 +102,6 @@ Releases a full-quality image.
 
 | Type | Description |
 | -- | -- |
-| Camera_ErrorCode | CAMERA_OK: The operation is successful.<br>     <br>CAMERA_INVALID_ARGUMENT: A parameter is missing or the parameter type is incorrect. |
+| [Camera_ErrorCode](capi-camera-h.md#camera_errorcode) | CAMERA_OK: The operation is successful.<br>     <br>CAMERA_INVALID_ARGUMENT: A parameter is missing or the parameter type is incorrect. |
 
 

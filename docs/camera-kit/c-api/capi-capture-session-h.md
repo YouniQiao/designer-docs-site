@@ -80,7 +80,7 @@ The file declares the capture session concepts.
 | [Camera_ErrorCode OH_CaptureSession_SetExposureMeteringMode(const Camera_CaptureSession* session, OH_Camera_ExposureMeteringMode exposureMeteringMode)](#oh_capturesession_setexposuremeteringmode) | - | Set exposure metering mode. |
 | [Camera_ErrorCode OH_CaptureSession_GetSupportedISORange(const Camera_CaptureSession* session, int32_t *minIsoValue, int32_t *maxIsoValue)](#oh_capturesession_getsupportedisorange) | - | Query the iso range. |
 | [Camera_ErrorCode OH_CaptureSession_GetIso(const Camera_CaptureSession* session, int32_t* isoValue)](#oh_capturesession_getiso) | - | Get current iso sensitivity value, as defined in ISO 12232:2006. |
-| [Camera_ErrorCode OH_CaptureSession_SetIso(const Camera_CaptureSession* session, int32_t isoValue)](#oh_capturesession_setiso) | - | Sets ISO sensitivity value, within the range of getSupportedIsoRange. This control is only effective ifExposureMode is set to EXPOSURE_MODE_LOCKED. |
+| [Camera_ErrorCode OH_CaptureSession_SetIso(const Camera_CaptureSession* session, int32_t isoValue)](#oh_capturesession_setiso) | - | Sets ISO sensitivity value, within the range of getSupportedIsoRange. This control can not effective ifExposureMode is set to EXPOSURE_MODE_LOCKED. |
 | [typedef void (\*OH_CaptureSession_OnIsoChange)(Camera_CaptureSession* session, int32_t isoValue)](#oh_capturesession_onisochange) | OH_CaptureSession_OnIsoChange | Defines the callback used to listen for ISO changes in a camera session. |
 | [Camera_ErrorCode OH_CaptureSession_RegisterIsoChangeCallback(Camera_CaptureSession* session, OH_CaptureSession_OnIsoChange isoChange)](#oh_capturesession_registerisochangecallback) | - | Registers a callback to listen for ISO changes. |
 | [Camera_ErrorCode OH_CaptureSession_UnregisterIsoChangeCallback(Camera_CaptureSession* session, OH_CaptureSession_OnIsoChange isoChange)](#oh_capturesession_unregisterisochangecallback) | - | Unregisters the callback used to listen for ISO changes. |
@@ -92,7 +92,7 @@ The file declares the capture session concepts.
 | [Camera_ErrorCode OH_CaptureSession_SetExposureBias(Camera_CaptureSession* session, float exposureBias)](#oh_capturesession_setexposurebias) | - | Sets an exposure compensation value for the device. |
 | [Camera_ErrorCode OH_CaptureSession_GetExposureBias(Camera_CaptureSession* session, float* exposureBias)](#oh_capturesession_getexposurebias) | - | Obtains the exposure compensation value in use. |
 | [Camera_ErrorCode OH_CaptureSession_GetSupportedExposureDurationRange(const Camera_CaptureSession* session, int32_t* minExposureDuration, int32_t* maxExposureDuration)](#oh_capturesession_getsupportedexposuredurationrange) | - | Get the supported range of exposure durations. Units: Microseconds. |
-| [Camera_ErrorCode OH_CaptureSession_SetExposureDuration(const Camera_CaptureSession* session, int32_t exposureDuration)](#oh_capturesession_setexposureduration) | - | Set exposure duration. Units: Microseconds.If the sensor can't expose this duration exactly, it will shorten the duration to the nearest supported value, which isreporeted by Callback [OH_CaptureSession_OnExposureDurationChange](capi-capture-session-h.md#oh_capturesession_onexposuredurationchange). |
+| [Camera_ErrorCode OH_CaptureSession_SetExposureDuration(const Camera_CaptureSession* session, int32_t exposureDuration)](#oh_capturesession_setexposureduration) | - | Set exposure duration. Units: Microseconds.This control is only effective ifExposureMode is set to EXPOSURE_MODE_MANUAL.If the sensor can't expose this duration exactly, it will shorten the duration to the nearest supported value, which isreporeted by Callback [OH_CaptureSession_OnExposureDurationChange](capi-capture-session-h.md#oh_capturesession_onexposuredurationchange). |
 | [Camera_ErrorCode OH_CaptureSession_GetExposureDuration(const Camera_CaptureSession* session, int32_t* exposureDuration)](#oh_capturesession_getexposureduration) | - | Get current exposure duration. Units: Microseconds. |
 | [typedef void (\*OH_CaptureSession_OnExposureDurationChange)(const Camera_CaptureSession* session, int32_t exposureDuration)](#oh_capturesession_onexposuredurationchange) | OH_CaptureSession_OnExposureDurationChange | Capture session exposure duration change callback. |
 | [Camera_ErrorCode OH_CaptureSession_RegisterExposureInfoChangeCallback(const Camera_CaptureSession* session, OH_CaptureSession_OnExposureDurationChange exposureDurationChange)](#oh_capturesession_registerexposureinfochangecallback) | - | Register exposure info change event callback.After exposure parameters are changed, the system will returns the updated exposure infos. |
@@ -625,7 +625,7 @@ Adds a **VideoOutput** instance to a session.
 | Parameter | Description |
 | -- | -- |
 | [Camera_CaptureSession](capi-oh-camera-camera-capturesession.md)* session | Pointer to the target Camera_CaptureSession instance. |
-| Camera_VideoOutput* videoOutput | Pointer to the **VideoOutput** instance to add. |
+| [Camera_VideoOutput](capi-oh-camera-camera-videooutput.md)* videoOutput | Pointer to the **VideoOutput** instance to add. |
 
 **Returns**:
 
@@ -650,7 +650,7 @@ Removes a VideoOutput instance from a session.
 | Parameter | Description |
 | -- | -- |
 | [Camera_CaptureSession](capi-oh-camera-camera-capturesession.md)* session | Pointer to the target Camera_CaptureSession instance. |
-| Camera_VideoOutput* videoOutput | Pointer to the VideoOutput instance to remove. |
+| [Camera_VideoOutput](capi-oh-camera-camera-videooutput.md)* videoOutput | Pointer to the VideoOutput instance to remove. |
 
 **Returns**:
 
@@ -675,7 +675,7 @@ Adds a MetadataOutput instance to a session.
 | Parameter | Description |
 | -- | -- |
 | [Camera_CaptureSession](capi-oh-camera-camera-capturesession.md)* session | Pointer to the target Camera_CaptureSession instance. |
-| [Camera_MetadataOutput](capi-oh-camera-camera-metadataoutput.md)* metadataOutput | Pointer to the MetadataOutput instance to add. |
+| Camera_MetadataOutput* metadataOutput | Pointer to the MetadataOutput instance to add. |
 
 **Returns**:
 
@@ -700,7 +700,7 @@ Removes a MetadataOutput instance from a session.
 | Parameter | Description |
 | -- | -- |
 | [Camera_CaptureSession](capi-oh-camera-camera-capturesession.md)* session | Pointer to the target Camera_CaptureSession instance. |
-| [Camera_MetadataOutput](capi-oh-camera-camera-metadataoutput.md)* metadataOutput | Pointer to the MetadataOutput instance to remove. |
+| Camera_MetadataOutput* metadataOutput | Pointer to the MetadataOutput instance to remove. |
 
 **Returns**:
 
@@ -1510,7 +1510,7 @@ Camera_ErrorCode OH_CaptureSession_SetIso(const Camera_CaptureSession* session, 
 
 **Description**
 
-Sets ISO sensitivity value, within the range of getSupportedIsoRange. This control is only effective ifExposureMode is set to EXPOSURE_MODE_LOCKED.
+Sets ISO sensitivity value, within the range of getSupportedIsoRange. This control can not effective ifExposureMode is set to EXPOSURE_MODE_LOCKED.
 
 **Since**: 24
 
@@ -1809,7 +1809,7 @@ Camera_ErrorCode OH_CaptureSession_SetExposureDuration(const Camera_CaptureSessi
 
 **Description**
 
-Set exposure duration. Units: Microseconds.If the sensor can't expose this duration exactly, it will shorten the duration to the nearest supported value, which isreporeted by Callback [OH_CaptureSession_OnExposureDurationChange](capi-capture-session-h.md#oh_capturesession_onexposuredurationchange).
+Set exposure duration. Units: Microseconds.This control is only effective ifExposureMode is set to EXPOSURE_MODE_MANUAL.If the sensor can't expose this duration exactly, it will shorten the duration to the nearest supported value, which isreporeted by Callback [OH_CaptureSession_OnExposureDurationChange](capi-capture-session-h.md#oh_capturesession_onexposuredurationchange).
 
 **Since**: 24
 
@@ -2293,7 +2293,7 @@ Checks whether a **VideoOutput** instance can be added to a session.
 | Parameter | Description |
 | -- | -- |
 | [Camera_CaptureSession](capi-oh-camera-camera-capturesession.md)* session | Pointer to the target Camera_CaptureSession instance. |
-| Camera_VideoOutput* cameraOutput | Pointer to the **VideoOutput** instance to check. |
+| [Camera_VideoOutput](capi-oh-camera-camera-videooutput.md)* cameraOutput | Pointer to the **VideoOutput** instance to check. |
 | bool* isSuccessful | Pointer to the check result for whether the VideoOutput instance can be added to the session. true** if it can be added to the session, **false** otherwise. |
 
 **Returns**:

@@ -1,6 +1,12 @@
 # RichEditorController
 
-RichEditor组件的控制器，继承自[RichEditorBaseController](arkts-arkui-richeditorbasecontroller-c.md)。 > **说明：** > > 当内容的长度超过组件显示区域的高度时，调用插入接口（例如[addTextSpan](arkts-arkui-richeditorcontroller-c.md#addtextspan-1)、 > [addImageSpan](arkts-arkui-richeditorcontroller-c.md#addimagespan-1)、[addBuilderSpan](arkts-arkui-richeditorcontroller-c.md#addbuilderspan-1) > 、[addSymbolSpan](arkts-arkui-richeditorcontroller-c.md#addsymbolspan-1)），组件会自动滚动内容使得插入内容末尾可见。
+RichEditor组件的控制器，继承自[RichEditorBaseController](arkts-arkui-richeditorbasecontroller-c.md)。
+
+> **说明：**
+>
+> 当内容的长度超过组件显示区域的高度时，调用插入接口（例如[addTextSpan](arkts-arkui-richeditorcontroller-c.md#addtextspan-1)、
+> [addImageSpan](arkts-arkui-richeditorcontroller-c.md#addimagespan-1)、[addBuilderSpan](arkts-arkui-richeditorcontroller-c.md#addbuilderspan-1)
+> 、[addSymbolSpan](arkts-arkui-richeditorcontroller-c.md#addsymbolspan-1)），组件会自动滚动内容使得插入内容末尾可见。
 
 **继承/实现关系：** RichEditorController extends [RichEditorBaseController](arkts-arkui-richeditorbasecontroller-c.md)
 
@@ -14,7 +20,72 @@ RichEditor组件的控制器，继承自[RichEditorBaseController](arkts-arkui-r
 addBuilderSpan(value: CustomBuilder, options?: RichEditorBuilderSpanOptions): number
 ```
 
-在RichEditor中添加用户自定义布局（BuilderSpan）。 > **说明：** > > - RichEditor组件添加占位Span，占位Span调用系统的measure方法计算真实的长宽和位置。 > > - 可通过[RichEditorBuilderSpanOptions](arkts-arkui-richeditorbuilderspanoptions-i.md)设置此builder在RichEditor中的index（一个文字为一个单位）。 > > - 此占位Span不可获焦，支持拖拽，支持部分通用属性，占位、删除等能力等同于ImageSpan，长度视为一个文字。 > > - 支持通过[bindSelectionMenu](RichEditorAttribute.bindSelectionMenu)设置自定义菜单。 > > - 不支持通过[getSpans](arkts-arkui-richeditorcontroller-c.md#getspans-1)，[getSelection](arkts-arkui-richeditorcontroller-c.md#getselection-1)， > [onSelect](RichEditorAttribute.onSelect)，[aboutToDelete](RichEditorAttribute.aboutToDelete)获取 > builderSpan信息。 > > - 不支持通过[updateSpanStyle](arkts-arkui-richeditorcontroller-c.md#updatespanstyle-1)， > [updateParagraphStyle](arkts-arkui-richeditorcontroller-c.md#updateparagraphstyle-1)等方式更新builder。 > > - 对此builder节点进行复制或粘贴不生效。 > > - builder的布局约束由RichEditor传入，如果builder里最外层组件不设置大小，则会用RichEditor的大小作为maxSize。 > > - builder的手势相关事件机制与通用手势事件相同，如果builder中未设置透传，则仅有builder中的子组件响应。 > > - 如果组件光标闪烁，插入后光标位置更新为新插入builder的后面。 通用属性仅支持[size](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-size.md#size)、 [padding](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-size.md#padding)、 [margin](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-size.md#margin)、 [aspectRatio](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-layout-constraints.md#aspectratio)、 [borderStyle](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-border.md#borderstyle)、 [borderWidth](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-border.md#borderwidth)、 [borderColor](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-border.md#bordercolor)、 [borderRadius](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-border.md#borderradius)、 [backgroundColor](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-background.md#backgroundcolor)、 [backgroundBlurStyle](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-background.md#backgroundblurstyle9) 、[opacity](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)、 [blur](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-image-effect.md#blur)、 [backdropBlur](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-background.md#backdropblur)、 [shadow](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-image-effect.md#shadow)、 [grayscale](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-image-effect.md#grayscale)、 [brightness](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-image-effect.md#brightness)、 [saturate](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-image-effect.md#saturate)、 [contrast](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-image-effect.md#contrast)、 [invert](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-image-effect.md#invert)、 [sepia](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-image-effect.md#sepia)、 [hueRotate](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-image-effect.md#huerotate)、 [colorBlend](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-image-effect.md#colorblend)、 [linearGradientBlur](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-image-effect.md#lineargradientblur12) 、[clip](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-sharp-clipping.md#clip12)、 [mask](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-sharp-clipping.md#mask12)、 [foregroundBlurStyle](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-foreground-blur-style.md#foregroundblurstyle) 、 [accessibilityGroup](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-accessibility.md#accessibilitygroup) 、 [accessibilityText](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-accessibility.md#accessibilitytext) 、 [accessibilityDescription](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-accessibility.md#accessibilitydescription) 、 [accessibilityLevel](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-accessibility.md#accessibilitylevel) 、 [sphericalEffect](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-image-effect.md#sphericaleffect12) 、[lightUpEffect](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-image-effect.md#lightupeffect12)、 [pixelStretchEffect](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-image-effect.md#pixelstretcheffect12) 。
+在RichEditor中添加用户自定义布局（BuilderSpan）。
+
+> **说明：**
+>
+> - RichEditor组件添加占位Span，占位Span调用系统的measure方法计算真实的长宽和位置。
+>
+> - 可通过[RichEditorBuilderSpanOptions](arkts-arkui-richeditorbuilderspanoptions-i.md)设置此builder在RichEditor中的index（一个文字为一个单位）。
+>
+> - 此占位Span不可获焦，支持拖拽，支持部分通用属性，占位、删除等能力等同于ImageSpan，长度视为一个文字。
+>
+> - 支持通过[bindSelectionMenu](RichEditorAttribute.bindSelectionMenu)设置自定义菜单。
+>
+> - 不支持通过[getSpans](arkts-arkui-richeditorcontroller-c.md#getspans-1)，[getSelection](arkts-arkui-richeditorcontroller-c.md#getselection-1)，
+> [onSelect](RichEditorAttribute.onSelect)，[aboutToDelete](RichEditorAttribute.aboutToDelete)获取
+> builderSpan信息。
+>
+> - 不支持通过[updateSpanStyle](arkts-arkui-richeditorcontroller-c.md#updatespanstyle-1)，
+> [updateParagraphStyle](arkts-arkui-richeditorcontroller-c.md#updateparagraphstyle-1)等方式更新builder。
+>
+> - 对此builder节点进行复制或粘贴不生效。
+>
+> - builder的布局约束由RichEditor传入，如果builder里最外层组件不设置大小，则会用RichEditor的大小作为maxSize。
+>
+> - builder的手势相关事件机制与通用手势事件相同，如果builder中未设置透传，则仅有builder中的子组件响应。
+>
+> - 如果组件光标闪烁，插入后光标位置更新为新插入builder的后面。
+
+通用属性仅支持[size](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-size.md#size)、
+[padding](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-size.md#padding)、
+[margin](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-size.md#margin)、
+[aspectRatio](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-layout-constraints.md#aspectratio)、
+[borderStyle](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-border.md#borderstyle)、
+[borderWidth](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-border.md#borderwidth)、
+[borderColor](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-border.md#bordercolor)、
+[borderRadius](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-border.md#borderradius)、
+[backgroundColor](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-background.md#backgroundcolor)、
+[backgroundBlurStyle](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-background.md#backgroundblurstyle9)
+、[opacity](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)、
+[blur](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-image-effect.md#blur)、
+[backdropBlur](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-background.md#backdropblur)、
+[shadow](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-image-effect.md#shadow)、
+[grayscale](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-image-effect.md#grayscale)、
+[brightness](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-image-effect.md#brightness)、
+[saturate](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-image-effect.md#saturate)、
+[contrast](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-image-effect.md#contrast)、
+[invert](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-image-effect.md#invert)、
+[sepia](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-image-effect.md#sepia)、
+[hueRotate](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-image-effect.md#huerotate)、
+[colorBlend](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-image-effect.md#colorblend)、
+[linearGradientBlur](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-image-effect.md#lineargradientblur12)
+、[clip](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-sharp-clipping.md#clip12)、
+[mask](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-sharp-clipping.md#mask12)、
+[foregroundBlurStyle](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-foreground-blur-style.md#foregroundblurstyle)
+、
+[accessibilityGroup](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-accessibility.md#accessibilitygroup)
+、
+[accessibilityText](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-accessibility.md#accessibilitytext)
+、
+[accessibilityDescription](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-accessibility.md#accessibilitydescription)
+、
+[accessibilityLevel](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-accessibility.md#accessibilitylevel)
+、
+[sphericalEffect](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-image-effect.md#sphericaleffect12)
+、[lightUpEffect](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-image-effect.md#lightupeffect12)、
+[pixelStretchEffect](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-image-effect.md#pixelstretcheffect12)
+。
 
 **起始版本：** 11
 
@@ -43,7 +114,9 @@ addBuilderSpan(value: CustomBuilder, options?: RichEditorBuilderSpanOptions): nu
 addImageSpan(value: PixelMap | ResourceStr, options?: RichEditorImageSpanOptions): number
 ```
 
-添加图片内容，如果组件光标闪烁，插入后光标位置更新为新插入图片的后面。 该接口为同步接口，在弱网环境下，直接添加网络图片可能会阻塞UI线程造成冻屏问题。不建议直接添加网络图片。
+添加图片内容，如果组件光标闪烁，插入后光标位置更新为新插入图片的后面。
+
+该接口为同步接口，在弱网环境下，直接添加网络图片可能会阻塞UI线程造成冻屏问题。不建议直接添加网络图片。
 
 **起始版本：** 10
 
@@ -72,7 +145,9 @@ addImageSpan(value: PixelMap | ResourceStr, options?: RichEditorImageSpanOptions
 addSymbolSpan(value: Resource, options?: RichEditorSymbolSpanOptions ): number
 ```
 
-在RichEditor中添加图标小符号（SymbolSpan），如果组件光标闪烁，插入后光标位置更新为新插入SymbolSpan的后面。 暂不支持手势、复制、拖拽处理。
+在RichEditor中添加图标小符号（SymbolSpan），如果组件光标闪烁，插入后光标位置更新为新插入SymbolSpan的后面。
+
+暂不支持手势、复制、拖拽处理。
 
 **起始版本：** 11
 
@@ -320,7 +395,11 @@ updateParagraphStyle(value: RichEditorParagraphStyleOptions): void
 updateSpanStyle(value: RichEditorUpdateTextSpanStyleOptions | RichEditorUpdateImageSpanStyleOptions | RichEditorUpdateSymbolSpanStyleOptions): void
 ```
 
-更新文本、图片或SymbolSpan样式。 若只更新了一个Span的部分内容，则会根据更新部分、未更新部分将该Span拆分为多个Span。 使用该接口更新文本、图片或SymbolSpan样式时默认不会关闭自定义文本选择菜单。
+更新文本、图片或SymbolSpan样式。
+
+若只更新了一个Span的部分内容，则会根据更新部分、未更新部分将该Span拆分为多个Span。
+
+使用该接口更新文本、图片或SymbolSpan样式时默认不会关闭自定义文本选择菜单。
 
 **起始版本：** 10
 

@@ -3426,7 +3426,7 @@ bool OH_Drawing_TextStyleGetFontMetrics(OH_Drawing_Typography* typography, OH_Dr
 | -- | -- |
 | OH_Drawing_Typography* typography | 指向文本对象[OH_Drawing_Typography](capi-drawing-oh-drawing-typography.md)的指针，由[OH_Drawing_CreateTypography](capi-drawing-text-typography-h.md#oh_drawing_createtypography)获取。 |
 | OH_Drawing_TextStyle* style | 指向文本样式对象[OH_Drawing_TextStyle](capi-drawing-oh-drawing-textstyle.md)的指针，由[OH_Drawing_CreateTextStyle](capi-drawing-text-typography-h.md#oh_drawing_createtextstyle)获取。 |
-| OH_Drawing_Font_Metrics* fontmetrics | 指向字体属性对象[OH_Drawing_Font_Metrics](capi-drawing-oh-drawing-font-metrics.md)的指针，由[OH_Drawing_Font_Metrics](capi-drawing-oh-drawing-font-metrics.md)获取。 |
+| [OH_Drawing_Font_Metrics](capi-drawing-oh-drawing-font-metrics.md)* fontmetrics | 指向字体属性对象[OH_Drawing_Font_Metrics](capi-drawing-oh-drawing-font-metrics.md)的指针，由[OH_Drawing_Font_Metrics](capi-drawing-oh-drawing-font-metrics.md)获取。 |
 
 **返回：**
 
@@ -5134,7 +5134,7 @@ OH_Drawing_Font_Metrics* OH_Drawing_TypographyGetLineFontMetrics(OH_Drawing_Typo
 
 | 类型 | 说明 |
 | -- | -- |
-| OH_Drawing_Font_Metrics* | 返回当前行的所有字体度量信息。 |
+| [OH_Drawing_Font_Metrics*](capi-drawing-oh-drawing-font-metrics.md) | 返回当前行的所有字体度量信息。 |
 
 ### OH_Drawing_TypographyDestroyLineFontMetrics()
 
@@ -5154,7 +5154,7 @@ void OH_Drawing_TypographyDestroyLineFontMetrics(OH_Drawing_Font_Metrics* lineFo
 
 | 参数项 | 描述 |
 | -- | -- |
-| OH_Drawing_Font_Metrics* lineFontMetric | 指示要释放空间的指定行所有字体度量结构体集合的第一个地址。 |
+| [OH_Drawing_Font_Metrics](capi-drawing-oh-drawing-font-metrics.md)* lineFontMetric | 指示要释放空间的指定行所有字体度量结构体集合的第一个地址。 |
 
 ### OH_Drawing_TypographyMarkDirty()
 

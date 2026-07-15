@@ -3443,7 +3443,7 @@ Obtains the font metrics of a text style.
 | -- | -- |
 | OH_Drawing_Typography* typography | Pointer to the [OH_Drawing_Typography](capi-drawing-oh-drawing-typography.md) object, which is obtained from[OH_Drawing_CreateTypography](capi-drawing-text-typography-h.md#oh_drawing_createtypography). |
 | OH_Drawing_TextStyle* style | Pointer to the [OH_Drawing_TextStyle](capi-drawing-oh-drawing-textstyle.md) object, which is obtained from[OH_Drawing_CreateTextStyle](capi-drawing-text-typography-h.md#oh_drawing_createtextstyle). |
-| OH_Drawing_Font_Metrics* fontmetrics | Pointer to the [OH_Drawing_Font_Metrics](capi-drawing-oh-drawing-font-metrics.md) object, which is obtained from[OH_Drawing_Font_Metrics](capi-drawing-oh-drawing-font-metrics.md). |
+| [OH_Drawing_Font_Metrics](capi-drawing-oh-drawing-font-metrics.md)* fontmetrics | Pointer to the [OH_Drawing_Font_Metrics](capi-drawing-oh-drawing-font-metrics.md) object, which is obtained from[OH_Drawing_Font_Metrics](capi-drawing-oh-drawing-font-metrics.md). |
 
 **Returns**:
 
@@ -5151,7 +5151,7 @@ Obtains all font metrics from a given line in a typography object. This function
 
 | Type | Description |
 | -- | -- |
-| OH_Drawing_Font_Metrics* | Returns all the font metrics. |
+| [OH_Drawing_Font_Metrics*](capi-drawing-oh-drawing-font-metrics.md) | Returns all the font metrics. |
 
 ### OH_Drawing_TypographyDestroyLineFontMetrics()
 
@@ -5171,7 +5171,7 @@ Reclaims the memory occupied by the struct array that holds all the font metrics
 
 | Parameter | Description |
 | -- | -- |
-| OH_Drawing_Font_Metrics* lineFontMetric | Pointer to the first address of the struct array. |
+| [OH_Drawing_Font_Metrics](capi-drawing-oh-drawing-font-metrics.md)* lineFontMetric | Pointer to the first address of the struct array. |
 
 ### OH_Drawing_TypographyMarkDirty()
 

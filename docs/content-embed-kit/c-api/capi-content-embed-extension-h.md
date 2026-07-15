@@ -107,7 +107,7 @@ Obtains the AbilityRuntime context from the OE Extension context.
 | Parameter | Description |
 | -- | -- |
 | [ContentEmbed_ExtensionContextHandle](capi-contentembed-contentembed-extensioncontext8h.md) ceContext | Pointer to the OE Extension context object. |
-| [AbilityRuntime_ContextHandle](../AbilityKit/capi-abilityruntime-abilityruntime-context8h.md) *context | Output parameter. After the call is successful, this pointer points to the[AbilityRuntime_Context](../AbilityKit/capi-abilityruntime-abilityruntime-context.md) context object. |
+| AbilityRuntime_ContextHandle *context | Output parameter. After the call is successful, this pointer points to the[AbilityRuntime_Context](../AbilityKit/capi-abilityruntime-abilityruntime-context.md) context object. |
 
 **Returns**:
 
@@ -131,7 +131,7 @@ Obtains the corresponding OE Extension instance from the ExtensionAbility base c
 
 | Parameter | Description |
 | -- | -- |
-| AbilityRuntime_ExtensionInstanceHandle baseInstance | [AbilityRuntime_ExtensionInstance](../AbilityKit/capi-abilityruntime-abilityruntime-extensioninstance.md) instance. |
+| [AbilityRuntime_ExtensionInstanceHandle](../AbilityKit/capi-abilityruntime-abilityruntime-extensioninstance8h.md) baseInstance | [AbilityRuntime_ExtensionInstance](../AbilityKit/capi-abilityruntime-abilityruntime-extensioninstance.md) instance. |
 | [ContentEmbed_ExtensionInstanceHandle](capi-contentembed-contentembed-extensioninstance8h.md) *ceInstance | Output parameter. After the call is successful, this pointer points to the OE Extension instanceobject. |
 
 **Returns**:

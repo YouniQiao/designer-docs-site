@@ -300,7 +300,7 @@ Callback function when the dialog is displayed.
 
 | Parameter | Description |
 | -- | -- |
-| (int32_t errorCode | the error code.[ARKUI_ERROR_CODE_NO_ERROR](capi-error-code-h.md#arkui_errorcode) The operation is successful.[ARKUI_ERROR_CODE_PARAM_INVALID](capi-error-code-h.md#arkui_errorcode) A parameter error occurs.{@link ARKUI_ERROR_CODE_DIALOG_CANNOT_BE_OPENED_BY_MODAL_UEC_WINDOW} The dialog cannot be opened by the modal UEC window. |
+| (int32_t errorCode | the error code.[ARKUI_ERROR_CODE_NO_ERROR](capi-error-code-h.md#arkui_errorcode) The operation is successful.[ARKUI_ERROR_CODE_PARAM_INVALID](capi-error-code-h.md#arkui_errorcode) A parameter error occurs.[ARKUI_ERROR_CODE_DIALOG_NODE_MOUNT_FAILURE](capi-error-code-h.md#arkui_errorcode) The dialog cannot be opened due to node mount failure.[ARKUI_ERROR_CODE_DIALOG_SUBWINDOW_CREATE_FAILURE](capi-error-code-h.md#arkui_errorcode) The dialog cannot be opened due to subwindow create failure. |
 | int32_t dialogId | Dialog id. Returns -1 when the dialog cannot be displayed. |
 | void\* userData | Indicates the pointer to the custom data. |
 

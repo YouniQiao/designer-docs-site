@@ -385,7 +385,7 @@ Queries data in the database based on specified conditions without row count.
 
 | Type | Description |
 | -- | -- |
-| OH_Cursor * | If the operation is successful, a pointer to the instance of the OH_Cursor structure is returned.<br> If database has closed or the database does not respond, nullptr is returned. |
+| [OH_Cursor *](capi-rdb-oh-cursor.md) | If the operation is successful, a pointer to the instance of the OH_Cursor structure is returned.<br> If database has closed or the database does not respond, nullptr is returned. |
 
 ### OH_RdbTrans_Query()
 
@@ -412,7 +412,7 @@ Queries data in the database based on specified conditions.
 
 | Type | Description |
 | -- | -- |
-| OH_Cursor * | If the operation is successful, a pointer to the instance of the OH_Cursor structure is returned.<br> If database has closed or the database does not respond, nullptr is returned. |
+| [OH_Cursor *](capi-rdb-oh-cursor.md) | If the operation is successful, a pointer to the instance of the OH_Cursor structure is returned.<br> If database has closed or the database does not respond, nullptr is returned. |
 
 ### OH_RdbTrans_QuerySql()
 
@@ -432,13 +432,13 @@ Queries data in the database based on SQL statement.
 | -- | -- |
 | [OH_Rdb_Transaction](capi-rdb-oh-rdb-transaction.md) *trans | Represents a pointer to an instance of OH_Rdb_Transaction. |
 | const char *sql | Represents the SQL statement to execute. |
-| [const OH_Data_Values](capi-rdb-oh-data-values.md) *args | Represents a pointer to an instance of OH_Data_Values and  it is the selection arguments. |
+| const OH_Data_Values *args | Represents a pointer to an instance of OH_Data_Values and  it is the selection arguments. |
 
 **Returns**:
 
 | Type | Description |
 | -- | -- |
-| OH_Cursor * | If the operation is successful, a pointer to the instance of the OH_Cursor structure is returned.<br> If database has closed or the database does not respond, nullptr is returned. |
+| [OH_Cursor *](capi-rdb-oh-cursor.md) | If the operation is successful, a pointer to the instance of the OH_Cursor structure is returned.<br> If database has closed or the database does not respond, nullptr is returned. |
 
 ### OH_RdbTrans_QuerySqlWithoutRowCount()
 
@@ -458,13 +458,13 @@ Queries data in the database based on SQL statement without row count.
 | -- | -- |
 | [OH_Rdb_Transaction](capi-rdb-oh-rdb-transaction.md) *trans | Represents a pointer to an instance of OH_Rdb_Transaction. |
 | const char *sql | Represents the SQL statement to execute. |
-| [const OH_Data_Values](capi-rdb-oh-data-values.md) *args | Represents a pointer to an instance of OH_Data_Values and  it is the selection arguments. |
+| const OH_Data_Values *args | Represents a pointer to an instance of OH_Data_Values and  it is the selection arguments. |
 
 **Returns**:
 
 | Type | Description |
 | -- | -- |
-| OH_Cursor * | If the operation is successful, a pointer to the instance of the OH_Cursor structure is returned.<br> If database has closed or the database does not respond, nullptr is returned. |
+| [OH_Cursor *](capi-rdb-oh-cursor.md) | If the operation is successful, a pointer to the instance of the OH_Cursor structure is returned.<br> If database has closed or the database does not respond, nullptr is returned. |
 
 ### OH_RdbTrans_Execute()
 
@@ -484,7 +484,7 @@ Executes an SQL statement that contains specified parameters.
 | -- | -- |
 | [OH_Rdb_Transaction](capi-rdb-oh-rdb-transaction.md) *trans | Represents a pointer to an instance of OH_Rdb_Transaction. |
 | const char *sql | Represents the SQL statement to execute. |
-| [const OH_Data_Values](capi-rdb-oh-data-values.md) *args | Represents the values of the parameters in the SQL statement. |
+| const OH_Data_Values *args | Represents the values of the parameters in the SQL statement. |
 | [OH_Data_Value](capi-rdb-oh-data-value.md) **result | Represents a pointer to OH_Data_Value instance when the execution is successful.The memory must be released through the OH_Value_Destroy interface after the use is complete. |
 
 **Returns**:

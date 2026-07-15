@@ -77,7 +77,7 @@ Starts the self UIAbility.
 | Parameter | Description |
 | -- | -- |
 | [OH_AbilityRuntime_ModObjExtensionContextHandle](capi-abilityruntime-oh-abilityruntime-modularobjectextensioncontext8h.md) context | Represents a pointer to a modular object extension ability context. |
-| [const AbilityBase_Want](capi-abilitybase-abilitybase-want.md) *want | The arguments passed to start the self UIAbility.For details, see [AbilityBase_Want](capi-abilitybase-abilitybase-want.md). |
+| const AbilityBase_Want *want | The arguments passed to start the self UIAbility.For details, see [AbilityBase_Want](capi-abilitybase-abilitybase-want.md). |
 
 **Returns**:
 
@@ -104,7 +104,7 @@ Starts the self UIAbility with start options.
 | Parameter | Description |
 | -- | -- |
 | [OH_AbilityRuntime_ModObjExtensionContextHandle](capi-abilityruntime-oh-abilityruntime-modularobjectextensioncontext8h.md) context | Represents a pointer to a modular object extension ability context. |
-| [const AbilityBase_Want](capi-abilitybase-abilitybase-want.md) *want | The arguments passed to start the self UIAbility.For details, see [AbilityBase_Want](capi-abilitybase-abilitybase-want.md). |
+| const AbilityBase_Want *want | The arguments passed to start the self UIAbility.For details, see [AbilityBase_Want](capi-abilitybase-abilitybase-want.md). |
 | const AbilityRuntime_StartOptions *options | The start options passed to start the self UIAbility.For details, see {@link AbilityRuntime_StartOptions}. |
 
 **Returns**:
@@ -155,15 +155,15 @@ Creates an <b>OHIPCRemoteStub</b> object with callbacks running on the extension
 | -- | -- |
 | [OH_AbilityRuntime_ModObjExtensionContextHandle](capi-abilityruntime-oh-abilityruntime-modularobjectextensioncontext8h.md) context | Represents a pointer to a modular object extension ability context. |
 | const char *descriptor | Pointer to the descriptor of the <b>OHIPCRemoteStub</b> object to create. It cannot be NULL.The string is copied internally during creation, so the caller may release the descriptorafter this function returns. |
-| OH_OnRemoteRequestCallback requestCallback | Callback used to process the data request. It cannot be NULL. |
-| OH_OnRemoteDestroyCallback destroyCallback | Callback to be invoked when the object is destroyed. It can be NULL. |
+| [OH_OnRemoteRequestCallback](../IPCKit/capi-ipc-cremote-object-h.md#oh_onremoterequestcallback) requestCallback | Callback used to process the data request. It cannot be NULL. |
+| [OH_OnRemoteDestroyCallback](../IPCKit/capi-ipc-cremote-object-h.md#oh_onremotedestroycallback) destroyCallback | Callback to be invoked when the object is destroyed. It can be NULL. |
 | void *userData | Pointer to the user data. It can be NULL. Must remain valid before the object is destroyed. |
 
 **Returns**:
 
 | Type | Description |
 | -- | -- |
-| OHIPCRemoteStub* | Returns the pointer to the <b>OHIPCRemoteStub</b> object created if the operation is successful;<br> returns NULL otherwise. |
+| [OHIPCRemoteStub*](capi-ohipcparcel-ohipcremotestub.md) | Returns the pointer to the <b>OHIPCRemoteStub</b> object created if the operation is successful;<br> returns NULL otherwise. |
 
 ### OH_AbilityRuntime_ModObjExtensionContext_DestroyIPCRemoteStub()
 
@@ -182,6 +182,6 @@ Destroys an <b>OHIPCRemoteStub</b> object.
 | Parameter | Description |
 | -- | -- |
 | [OH_AbilityRuntime_ModObjExtensionContextHandle](capi-abilityruntime-oh-abilityruntime-modularobjectextensioncontext8h.md) context | Represents a pointer to a modular object extension ability context. |
-| OHIPCRemoteStub *stub | Pointer to the <b>OHIPCRemoteStub</b> object to destroy. |
+| [OHIPCRemoteStub](capi-ohipcparcel-ohipcremotestub.md) *stub | Pointer to the <b>OHIPCRemoteStub</b> object to destroy. |
 
 

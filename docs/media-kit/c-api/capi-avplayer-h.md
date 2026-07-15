@@ -215,7 +215,7 @@ Sets the media source of the AVPlayer. The data of this media source is provided
 | Parameter | Description |
 | -- | -- |
 | OH_AVPlayer *player | Pointer to an OH_AVPlayer instance |
-| OH_AVDataSourceExt* datasrc | Pointer to an OH_AVDataSourceExt instance |
+| [OH_AVDataSourceExt](../AVCodecKit/capi-codecbase-oh-avdatasourceext.md)* datasrc | Pointer to an OH_AVDataSourceExt instance |
 | void* userData | The handle passed in by the user is used to pass in the callback |
 
 **Returns**:
@@ -660,7 +660,7 @@ Sets the audio stream type for an AVPlayer.
 | Parameter | Description |
 | -- | -- |
 | OH_AVPlayer *player | Pointer to the OH_AVPlayer instance. |
-| [OH_AudioStream_Usage](../AudioKit/capi-native-audiostream-base-h.md#oh_audiostream_usage) streamUsage | Audio stream type. |
+| OH_AudioStream_Usage streamUsage | Audio stream type. |
 
 **Returns**:
 
@@ -685,7 +685,7 @@ Sets the audio interruption mode for an AVPlayer.
 | Parameter | Description |
 | -- | -- |
 | OH_AVPlayer *player | Pointer to the OH_AVPlayer instance. |
-| [OH_AudioInterrupt_Mode](../AudioKit/capi-native-audiostream-base-h.md#oh_audiointerrupt_mode) interruptMode | Audio interruption mode. |
+| OH_AudioInterrupt_Mode interruptMode | Audio interruption mode. |
 
 **Returns**:
 
@@ -710,7 +710,7 @@ Sets the audio effect mode for an AVPlayer.
 | Parameter | Description |
 | -- | -- |
 | OH_AVPlayer *player | Pointer to the OH_AVPlayer instance. |
-| [OH_AudioStream_AudioEffectMode](../AudioKit/capi-native-audiostream-base-h.md#oh_audiostream_audioeffectmode) effectMode | Audio effect mode. |
+| OH_AudioStream_AudioEffectMode effectMode | Audio effect mode. |
 
 **Returns**:
 
@@ -760,7 +760,7 @@ Sets a playback window.This function must be called after **SetSource** and befo
 | Parameter | Description |
 | -- | -- |
 | OH_AVPlayer *player | Pointer to the OH_AVPlayer instance. |
-| OHNativeWindow *window | Pointer to the OHNativeWindow instance. |
+| [OHNativeWindow](../AVCodecKit/capi-codecbase-nativewindow.md) *window | Pointer to the OHNativeWindow instance. |
 
 **Returns**:
 
@@ -1141,7 +1141,7 @@ Sets the audio volume mode for an AVPlayer.
 | Parameter | Description |
 | -- | -- |
 | OH_AVPlayer *player | Pointer to the OH_AVPlayer instance. |
-| [OH_AudioStream_VolumeMode](../AudioKit/capi-native-audiostream-base-h.md#oh_audiostream_volumemode) volumeMode | Volume mode of the audio stream. |
+| OH_AudioStream_VolumeMode volumeMode | Volume mode of the audio stream. |
 
 **Returns**:
 
@@ -1317,7 +1317,7 @@ OH_AVErrCode OH_AVPlayer_SetMediaMuted(OH_AVPlayer *player, OH_MediaType mediaTy
 | Parameter | Description |
 | -- | -- |
 | OH_AVPlayer *player | Pointer to the OH_AVPlayer instance. |
-| OH_MediaType mediaType | Media type. For details, see [OH_MediaType](../AVCodecKit/capi-native-avcodec-base-h.md#oh_mediatype) in {@link native_avcodec_base.h}. |
+| [OH_MediaType](../AVCodecKit/capi-native-avcodec-base-h.md#oh_mediatype) mediaType | Media type. For details, see [OH_MediaType](../AVCodecKit/capi-native-avcodec-base-h.md#oh_mediatype) in {@link native_avcodec_base.h}. |
 | bool muted | **true** indicates that the audio is muted, and **false** indicates that the audio is unmuted. |
 
 **Returns**:
@@ -1763,7 +1763,7 @@ Sets the media type to be muted during playback.
 | Parameter | Description |
 | -- | -- |
 | OH_AVPlaybackStrategy *strategy | Pointer to **OH_AVPlaybackStrategy**. |
-| OH_MediaType mediaType | Type of the media to be muted. |
+| [OH_MediaType](../AVCodecKit/capi-native-avcodec-base-h.md#oh_mediatype) mediaType | Type of the media to be muted. |
 
 **Returns**:
 
@@ -2062,7 +2062,7 @@ Method to set video decoded frame output callback. This API can be called onlywh
 | Parameter | Description |
 | -- | -- |
 | OH_AVPlayer *player | Pointer to an OH_AVPlayer instance. |
-| OHNativeWindow *window | A pointer to a OHNativeWindow instance, see [OHNativeWindow](../ArkGraphics2D/capi-nativewindow-nativewindow.md) |
+| [OHNativeWindow](../AVCodecKit/capi-codecbase-nativewindow.md) *window | A pointer to a OHNativeWindow instance, see [OHNativeWindow](../AVCodecKit/capi-codecbase-nativewindow.md) |
 
 **Returns**:
 

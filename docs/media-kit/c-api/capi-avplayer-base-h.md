@@ -300,7 +300,7 @@ Called when the AVPlayer receives a message. If this callback is successfully se
 | -- | -- |
 | (OH_AVPlayer \*player | Pointer to an OH_AVPlayer instance. |
 | [AVPlayerOnInfoType](capi-avplayer-base-h.md#avplayeroninfotype) type | Message type. For details about the available options, see [AVPlayerOnInfoType](capi-avplayer-base-h.md#avplayeroninfotype). |
-| [OH_AVFormat](capi-core-oh-avformat.md)\* infoBody | Pointer to the message. The pointer is valid only in this callback. |
+| [OH_AVFormat](../AVCodecKit/capi-core-oh-avformat.md)\* infoBody | Pointer to the message. The pointer is valid only in this callback. |
 | void \*userData | Pointer to the instance provided by the caller when setting the callback function. |
 
 ### OH_AVPlayerOnError()

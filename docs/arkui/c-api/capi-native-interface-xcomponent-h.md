@@ -844,7 +844,7 @@ Obtains the action of the key event.
 | Parameter | Description |
 | -- | -- |
 | [OH_NativeXComponent_KeyEvent](capi-oh-nativexcomponent-native-xcomponent-oh-nativexcomponent-keyevent.md)* keyEvent | Indicates the pointer to this <b>OH_NativeXComponent_KeyEvent</b> instance. |
-| OH_NativeXComponent_KeyAction* action | Indicates the action of the <b>OH_NativeXComponent_KeyEvent</b> instance. |
+| [OH_NativeXComponent_KeyAction](capi-native-xcomponent-key-event-h.md#oh_nativexcomponent_keyaction)* action | Indicates the action of the <b>OH_NativeXComponent_KeyEvent</b> instance. |
 
 **Returns**:
 
@@ -869,7 +869,7 @@ Obtains the keyCode of the key event.
 | Parameter | Description |
 | -- | -- |
 | [OH_NativeXComponent_KeyEvent](capi-oh-nativexcomponent-native-xcomponent-oh-nativexcomponent-keyevent.md)* keyEvent | Indicates the pointer to this <b>OH_NativeXComponent_KeyEvent</b> instance. |
-| OH_NativeXComponent_KeyCode* code | Indicates the keyCode of the <b>OH_NativeXComponent_KeyEvent</b> instance. |
+| [OH_NativeXComponent_KeyCode](capi-native-xcomponent-key-event-h.md#oh_nativexcomponent_keycode)* code | Indicates the keyCode of the <b>OH_NativeXComponent_KeyEvent</b> instance. |
 
 **Returns**:
 

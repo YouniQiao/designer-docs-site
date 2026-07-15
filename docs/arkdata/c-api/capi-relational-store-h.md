@@ -801,7 +801,7 @@ Creates an [OH_VObject](capi-rdb-oh-vobject.md) instance.
 
 | Type | Description |
 | -- | -- |
-| [OH_VObject *](capi-rdb-oh-vobject.md) | If the creation is successful, a pointer to the instance of the @link OH_VObject} structure is returned,<br> otherwise NULL is returned. |
+| OH_VObject * | If the creation is successful, a pointer to the instance of the @link OH_VObject} structure is returned,<br> otherwise NULL is returned. |
 
 **Reference**:
 
@@ -853,7 +853,7 @@ Creates an [OH_Predicates](capi-rdb-oh-predicates.md) instance.
 
 | Type | Description |
 | -- | -- |
-| [OH_Predicates *](capi-rdb-oh-predicates.md) | If the creation is successful, a pointer to the instance of the @link OH_Predicates} structure is returned.<br>         If the table name is nullptr, Nullptr is returned. |
+| OH_Predicates * | If the creation is successful, a pointer to the instance of the @link OH_Predicates} structure is returned.<br>         If the table name is nullptr, Nullptr is returned. |
 
 **Reference**:
 
@@ -1112,7 +1112,7 @@ Updates data in the database based on specified conditions.
 | -- | -- |
 | [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) *store | Represents a pointer to an [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) instance. |
 | OH_VBucket *valuesBucket | Indicates the row of data [OH_VBucket](capi-rdb-oh-vbucket.md) to be updated in the database |
-| [OH_Predicates](capi-rdb-oh-predicates.md) *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance.Indicates the specified update condition. |
+| OH_Predicates *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance.Indicates the specified update condition. |
 
 **Returns**:
 
@@ -1143,7 +1143,7 @@ Updates data in the database based on specified conditions and support conflict 
 | -- | -- |
 | [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) *store | Represents a pointer to an OH_Rdb_Store instance. |
 | OH_VBucket *row | Represents the row data to be inserted into the table. |
-| [OH_Predicates](capi-rdb-oh-predicates.md) *predicates | Represents  a pointer to an link OH_Predicates instance. |
+| OH_Predicates *predicates | Represents  a pointer to an link OH_Predicates instance. |
 | Rdb_ConflictResolution resolution | Represents the resolution when conflict occurs. |
 | int64_t *changes | Represents the number of successful update. |
 
@@ -1170,7 +1170,7 @@ Deletes data from the database based on specified conditions.
 | Parameter | Description |
 | -- | -- |
 | [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) *store | Represents a pointer to an [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) instance. |
-| [OH_Predicates](capi-rdb-oh-predicates.md) *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance.Indicates the specified delete condition. |
+| OH_Predicates *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance.Indicates the specified delete condition. |
 
 **Returns**:
 
@@ -1200,7 +1200,7 @@ Queries data in the database based on specified conditions.
 | Parameter | Description |
 | -- | -- |
 | [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) *store | Represents a pointer to an [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) instance. |
-| [OH_Predicates](capi-rdb-oh-predicates.md) *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance.Indicates the specified query condition. |
+| OH_Predicates *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance.Indicates the specified query condition. |
 | const char *const *columnNames | Indicates the columns to query. If the value is empty array, the query applies to all columns. |
 | int length | Indicates the length of columnNames. |
 
@@ -1208,7 +1208,7 @@ Queries data in the database based on specified conditions.
 
 | Type | Description |
 | -- | -- |
-| OH_Cursor * | If the query is successful, a pointer to the instance of the @link OH_Cursor} structure is returned.<br>         If Get store failed or resultSet is nullptr, nullptr is returned. |
+| [OH_Cursor *](capi-rdb-oh-cursor.md) | If the query is successful, a pointer to the instance of the @link OH_Cursor} structure is returned.<br>         If Get store failed or resultSet is nullptr, nullptr is returned. |
 
 **Reference**:
 
@@ -1232,7 +1232,7 @@ Queries data in the database based on specified conditions without row count.
 | Parameter | Description |
 | -- | -- |
 | [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) *store | Represents a pointer to an [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) instance. |
-| [OH_Predicates](capi-rdb-oh-predicates.md) *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance.Indicates the specified query condition. |
+| OH_Predicates *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance.Indicates the specified query condition. |
 | const char * const columns[] | Indicates the columns to query. If the value is empty array, the query applies to all columns. |
 | int length | Indicates the length of columns. |
 
@@ -1240,7 +1240,7 @@ Queries data in the database based on specified conditions without row count.
 
 | Type | Description |
 | -- | -- |
-| OH_Cursor * | If the query is successful, a pointer to the instance of the [OH_Cursor](capi-rdb-oh-cursor.md) structure is returned.<br>         If Get store failed or resultSet is nullptr, nullptr is returned. |
+| [OH_Cursor *](capi-rdb-oh-cursor.md) | If the query is successful, a pointer to the instance of the [OH_Cursor](capi-rdb-oh-cursor.md) structure is returned.<br>         If Get store failed or resultSet is nullptr, nullptr is returned. |
 
 **Reference**:
 
@@ -1265,13 +1265,13 @@ Queries data in the database based on an SQL statement without row count.
 | -- | -- |
 | [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) *store | Represents a pointer to an [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) instance. |
 | const char *sql | Indicates the SQL statement to execute. |
-| [const OH_Data_Values](capi-rdb-oh-data-values.md) *args | Represents a pointer to an instance of OH_Data_Values and  it is the selection arguments. |
+| const OH_Data_Values *args | Represents a pointer to an instance of OH_Data_Values and  it is the selection arguments. |
 
 **Returns**:
 
 | Type | Description |
 | -- | -- |
-| OH_Cursor * | If the query is successful, a pointer to the instance of the [OH_Cursor](capi-rdb-oh-cursor.md) structure is returned.<br>         If sql statement is invalid or the memory allocate failed, nullptr is returned. |
+| [OH_Cursor *](capi-rdb-oh-cursor.md) | If the query is successful, a pointer to the instance of the [OH_Cursor](capi-rdb-oh-cursor.md) structure is returned.<br>         If sql statement is invalid or the memory allocate failed, nullptr is returned. |
 
 **Reference**:
 
@@ -1326,8 +1326,8 @@ Executes an SQL statement.
 | -- | -- |
 | [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) *store | Represents a pointer to an [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) instance. |
 | const char *sql | Indicates the SQL statement to execute. |
-| [const OH_Data_Values](capi-rdb-oh-data-values.md) *args | Represents the values of the parameters in the SQL statement. |
-| OH_Data_Value **result | Represents a pointer to OH_Data_Value instance when the execution is successful.The memory must be released through the OH_Value_Destroy interface after the use is complete. |
+| const OH_Data_Values *args | Represents the values of the parameters in the SQL statement. |
+| [OH_Data_Value](capi-rdb-oh-data-value.md) **result | Represents a pointer to OH_Data_Value instance when the execution is successful.The memory must be released through the OH_Value_Destroy interface after the use is complete. |
 
 **Returns**:
 
@@ -1394,7 +1394,7 @@ Queries data in the database based on an SQL statement.
 
 | Type | Description |
 | -- | -- |
-| OH_Cursor * | If the query is successful, a pointer to the instance of the @link OH_Cursor} structure is returned.<br>         If Get store failed,sql is nullptr or resultSet is nullptr, nullptr is returned. |
+| [OH_Cursor *](capi-rdb-oh-cursor.md) | If the query is successful, a pointer to the instance of the @link OH_Cursor} structure is returned.<br>         If Get store failed,sql is nullptr or resultSet is nullptr, nullptr is returned. |
 
 **Reference**:
 
@@ -1419,13 +1419,13 @@ Queries data in the database based on an SQL statement.
 | -- | -- |
 | [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) *store | Represents a pointer to an [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) instance. |
 | const char *sql | Indicates the SQL statement to execute. |
-| [const OH_Data_Values](capi-rdb-oh-data-values.md) *args | Represents a pointer to an instance of OH_Data_Values and  it is the selection arguments. |
+| const OH_Data_Values *args | Represents a pointer to an instance of OH_Data_Values and  it is the selection arguments. |
 
 **Returns**:
 
 | Type | Description |
 | -- | -- |
-| OH_Cursor * | If the query is successful, a pointer to the instance of the @link OH_Cursor} structure is returned.<br>         If sql statement is invalid or the memory allocate failed, nullptr is returned. |
+| [OH_Cursor *](capi-rdb-oh-cursor.md) | If the query is successful, a pointer to the instance of the @link OH_Cursor} structure is returned.<br>         If sql statement is invalid or the memory allocate failed, nullptr is returned. |
 
 **Reference**:
 
@@ -1782,13 +1782,13 @@ Set table to be distributed table.
 | [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) *store | Represents a pointer to an [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) instance. |
 | const char *tableName | Indicates the name of the table to check. |
 | const char *columnName | Indicates the name of the column corresponding to the primary key.If the table has no primary key , please pass in "rowid". |
-| [OH_VObject](capi-rdb-oh-vobject.md) *values | Indicates the primary keys of the rows to check.If the table has no primary key , please pass in the row-ids of the rows to check. |
+| OH_VObject *values | Indicates the primary keys of the rows to check.If the table has no primary key , please pass in the row-ids of the rows to check. |
 
 **Returns**:
 
 | Type | Description |
 | -- | -- |
-| OH_Cursor * | If the operation is successful, a pointer to the instance of the @link OH_Cursor} structure is returned.<br>         If Get store failed, NULL is returned.<br> There are two columns, "data_key" and "timestamp". Otherwise NULL is returned. |
+| [OH_Cursor *](capi-rdb-oh-cursor.md) | If the operation is successful, a pointer to the instance of the @link OH_Cursor} structure is returned.<br>         If Get store failed, NULL is returned.<br> There are two columns, "data_key" and "timestamp". Otherwise NULL is returned. |
 
 **Reference**:
 
@@ -2097,7 +2097,7 @@ Lock data from the database based on specified conditions.
 | Parameter | Description |
 | -- | -- |
 | [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) *store | Represents a pointer to an [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) instance. |
-| [OH_Predicates](capi-rdb-oh-predicates.md) *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance.Indicates the specified lock condition. |
+| OH_Predicates *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance.Indicates the specified lock condition. |
 
 **Returns**:
 
@@ -2127,7 +2127,7 @@ Unlock data from the database based on specified conditions.
 | Parameter | Description |
 | -- | -- |
 | [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) *store | Represents a pointer to an [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) instance. |
-| [OH_Predicates](capi-rdb-oh-predicates.md) *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance.Indicates the specified unlock condition. |
+| OH_Predicates *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance.Indicates the specified unlock condition. |
 
 **Returns**:
 
@@ -2157,7 +2157,7 @@ Queries locked data in the database based on specified conditions.
 | Parameter | Description |
 | -- | -- |
 | [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) *store | Represents a pointer to an [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) instance. |
-| [OH_Predicates](capi-rdb-oh-predicates.md) *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance.Indicates the specified query condition. |
+| OH_Predicates *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance.Indicates the specified query condition. |
 | const char *const *columnNames | Indicates the columns to query. If the value is empty array, the query applies to all columns. |
 | int length | Indicates the length of columnNames. |
 
@@ -2165,7 +2165,7 @@ Queries locked data in the database based on specified conditions.
 
 | Type | Description |
 | -- | -- |
-| OH_Cursor * | If the query is successful, a pointer to the instance of the @link OH_Cursor} structure is returned.<br>         If Get store failed or resultSet is nullptr, nullptr is returned. |
+| [OH_Cursor *](capi-rdb-oh-cursor.md) | If the query is successful, a pointer to the instance of the @link OH_Cursor} structure is returned.<br>         If Get store failed or resultSet is nullptr, nullptr is returned. |
 
 **Reference**:
 
@@ -2451,7 +2451,7 @@ Updates data in the database based on specified conditions and output change inf
 | -- | -- |
 | [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) *store | Represents a pointer to an [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) instance. |
 | OH_VBucket *row | Represents the row data to be updated into the table. |
-| [OH_Predicates](capi-rdb-oh-predicates.md) *predicates | Represents  a pointer to an {link OH_Predicates} instance. |
+| OH_Predicates *predicates | Represents  a pointer to an {link OH_Predicates} instance. |
 | Rdb_ConflictResolution resolution | Represents the resolution when conflict occurs. |
 | OH_RDB_ReturningContext *context | Represents a pointer to a pointer to an [OH_RDB_ReturningContext](capi-rdb-oh-rdb-returningcontext.md) instance. |
 
@@ -2483,7 +2483,7 @@ Deletes data from the database based on specified conditions and output change i
 | Parameter | Description |
 | -- | -- |
 | [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) *store | Represents a pointer to an [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) instance. |
-| [OH_Predicates](capi-rdb-oh-predicates.md) *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance. |
+| OH_Predicates *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance. |
 | OH_RDB_ReturningContext *context | Represents a pointer to an [OH_RDB_ReturningContext](capi-rdb-oh-rdb-returningcontext.md) instance. |
 
 **Returns**:

@@ -269,7 +269,7 @@ Defines the callback invoked when a high-resolution photo is available.
 | Parameter | Description |
 | -- | -- |
 | (Camera_PhotoOutput\* photoOutput | Pointer to the PhotoOutput instance that transfers the callback. |
-| [OH_PhotoNative](capi-oh-camera-oh-photonative.md)\* photo | Pointer to OH_PhotoNative passed by the callback. |
+| OH_PhotoNative\* photo | Pointer to OH_PhotoNative passed by the callback. |
 
 ### OH_PhotoOutput_PhotoAssetAvailable()
 
@@ -288,7 +288,7 @@ Defines the callback invoked when a photo asset is available.
 | Parameter | Description |
 | -- | -- |
 | (Camera_PhotoOutput\* photoOutput | Pointer to the PhotoOutput instance that transfers the callback. |
-| OH_MediaAsset\* photoAsset | Pointer to the media asset passed by the callback. |
+| [OH_MediaAsset](../MediaLibraryKit/capi-mediaassetmanager-oh-mediaasset.md)\* photoAsset | Pointer to the media asset passed by the callback. |
 
 ### OH_PhotoOutput_RegisterCallback()
 
