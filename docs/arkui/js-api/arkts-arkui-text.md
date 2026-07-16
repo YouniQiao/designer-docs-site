@@ -2,6 +2,7 @@
 
 The **Text** component is used to display a piece of textual information.
 
+
 ## Text
 
 ```TypeScript

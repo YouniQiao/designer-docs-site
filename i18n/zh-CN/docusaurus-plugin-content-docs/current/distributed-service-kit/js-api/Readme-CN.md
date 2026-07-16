@@ -1,5 +1,9 @@
 # ArkTS API<!--arkts-distributedservicekit-->
 
+- [@ohos.application.DistributedExtensionAbility](arkts-application-distributedextensionability.md)
+  - [DistributedExtensionAbility](arkts-distributedservice-distributedextensionability-c.md)
+- [@ohos.application.DistributedExtensionContext](arkts-application-distributedextensioncontext.md)
+  - [DistributedExtensionContext](arkts-distributedservice-distributedextensioncontext-c.md)
 - [@ohos.cooperate](arkts-cooperate.md)<!--Del-->
   - [activate(系统接口)](arkts-distributedservice-activate-f-sys.md)<!--DelEnd--><!--Del-->
   - [activateCooperate(系统接口)](arkts-distributedservice-activatecooperate-f-sys.md)<!--DelEnd--><!--Del-->
@@ -49,6 +53,54 @@
   - [ExchangeFreq(系统接口)](arkts-distributedservice-exchangefreq-e-sys.md)<!--DelEnd--><!--Del-->
   - [ExchangeMedium(系统接口)](arkts-distributedservice-exchangemedium-e-sys.md)<!--DelEnd--><!--Del-->
   - [SubscribeCap(系统接口)](arkts-distributedservice-subscribecap-e-sys.md)<!--DelEnd-->
+- [@ohos.distributedHardware.hardwareManager](arkts-distributedhardware-hardwaremanager.md)<!--Del-->
+  - [pauseDistributedHardware(系统接口)](arkts-distributedservice-pausedistributedhardware-f-sys.md)<!--DelEnd--><!--Del-->
+  - [resumeDistributedHardware(系统接口)](arkts-distributedservice-resumedistributedhardware-f-sys.md)<!--DelEnd--><!--Del-->
+  - [stopDistributedHardware(系统接口)](arkts-distributedservice-stopdistributedhardware-f-sys.md)<!--DelEnd--><!--Del-->
+  - [HardwareDescriptor(系统接口)](arkts-distributedservice-hardwaredescriptor-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DistributedHardwareErrorCode(系统接口)](arkts-distributedservice-distributedhardwareerrorcode-e-sys.md)<!--DelEnd--><!--Del-->
+  - [DistributedHardwareType(系统接口)](arkts-distributedservice-distributedhardwaretype-e-sys.md)<!--DelEnd-->
+- [@ohos.distributedsched.abilityConnectionManager](arkts-distributedsched-abilityconnectionmanager.md)
+  - [acceptConnect](arkts-distributedservice-acceptconnect-f.md)
+  - [connect](arkts-distributedservice-connect-f.md)
+  - [createAbilityConnectionSession](arkts-distributedservice-createabilityconnectionsession-f.md)<!--Del-->
+  - [createStream(系统接口)](arkts-distributedservice-createstream-f-sys.md)<!--DelEnd-->
+  - [destroyAbilityConnectionSession](arkts-distributedservice-destroyabilityconnectionsession-f.md)<!--Del-->
+  - [destroyStream(系统接口)](arkts-distributedservice-destroystream-f-sys.md)<!--DelEnd-->
+  - [disconnect](arkts-distributedservice-disconnect-f.md)
+  - [getPeerInfoById](arkts-distributedservice-getpeerinfobyid-f.md)<!--Del-->
+  - [getSurfaceId(系统接口)](arkts-distributedservice-getsurfaceid-f-sys.md)<!--DelEnd-->
+  - [off](arkts-distributedservice-off-f.md)<!--Del-->
+  - [off(系统接口)](arkts-distributedservice-off-f-sys.md)<!--DelEnd-->
+  - [on](arkts-distributedservice-on-f.md)<!--Del-->
+  - [on(系统接口)](arkts-distributedservice-on-f-sys.md)<!--DelEnd-->
+  - [reject](arkts-distributedservice-reject-f.md)
+  - [sendData](arkts-distributedservice-senddata-f.md)<!--Del-->
+  - [sendImage(系统接口)](arkts-distributedservice-sendimage-f-sys.md)<!--DelEnd-->
+  - [sendMessage](arkts-distributedservice-sendmessage-f.md)<!--Del-->
+  - [setSurfaceId(系统接口)](arkts-distributedservice-setsurfaceid-f-sys.md)<!--DelEnd--><!--Del-->
+  - [startStream(系统接口)](arkts-distributedservice-startstream-f-sys.md)<!--DelEnd--><!--Del-->
+  - [stopStream(系统接口)](arkts-distributedservice-stopstream-f-sys.md)<!--DelEnd--><!--Del-->
+  - [updateSurfaceParam(系统接口)](arkts-distributedservice-updatesurfaceparam-f-sys.md)<!--DelEnd-->
+  - [CollaborateEventInfo](arkts-distributedservice-collaborateeventinfo-i.md)
+  - [ConnectOptions](arkts-distributedservice-connectoptions-i.md)<!--Del-->
+  - [ConnectOptions(系统接口)](arkts-distributedservice-connectoptions-i-sys.md)<!--DelEnd-->
+  - [ConnectResult](arkts-distributedservice-connectresult-i.md)
+  - [EventCallbackInfo](arkts-distributedservice-eventcallbackinfo-i.md)<!--Del-->
+  - [EventCallbackInfo(系统接口)](arkts-distributedservice-eventcallbackinfo-i-sys.md)<!--DelEnd-->
+  - [PeerInfo](arkts-distributedservice-peerinfo-i.md)<!--Del-->
+  - [StreamParam(系统接口)](arkts-distributedservice-streamparam-i-sys.md)<!--DelEnd--><!--Del-->
+  - [SurfaceParam(系统接口)](arkts-distributedservice-surfaceparam-i-sys.md)<!--DelEnd-->
+  - [CollaborateEventType](arkts-distributedservice-collaborateeventtype-e.md)
+  - [CollaborationKeys](arkts-distributedservice-collaborationkeys-e.md)
+  - [CollaborationValues](arkts-distributedservice-collaborationvalues-e.md)
+  - [ConnectErrorCode](arkts-distributedservice-connecterrorcode-e.md)
+  - [DisconnectReason](arkts-distributedservice-disconnectreason-e.md)<!--Del-->
+  - [FlipOptions(系统接口)](arkts-distributedservice-flipoptions-e-sys.md)<!--DelEnd-->
+  - [StartOptionParams](arkts-distributedservice-startoptionparams-e.md)<!--Del-->
+  - [StartOptionParams(系统接口)](arkts-distributedservice-startoptionparams-e-sys.md)<!--DelEnd--><!--Del-->
+  - [StreamRole(系统接口)](arkts-distributedservice-streamrole-e-sys.md)<!--DelEnd--><!--Del-->
+  - [VideoPixelFormat(系统接口)](arkts-distributedservice-videopixelformat-e-sys.md)<!--DelEnd-->
 - [@ohos.distributedsched.linkEnhance](arkts-distributedsched-linkenhance.md)
   - [createConnection](arkts-distributedservice-createconnection-f.md)
   - [createServer](arkts-distributedservice-createserver-f.md)

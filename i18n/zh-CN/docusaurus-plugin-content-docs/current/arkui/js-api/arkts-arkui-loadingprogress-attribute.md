@@ -1,6 +1,8 @@
 # LoadingProgress属性/事件
 
-除支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持以下属性。 支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)。
+除支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持以下属性。
+
+支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)。
 
 **继承/实现关系：** LoadingProgressAttribute extends [CommonMethod<LoadingProgressAttribute>](CommonMethod<LoadingProgressAttribute>)
 
@@ -58,7 +60,9 @@ contentModifier(modifier: ContentModifier<LoadingProgressConfiguration>)
 enableLoading(value: boolean)
 ```
 
-设置LoadingProgress动画是否显示。LoadingProgress动画不显示时，该组件依旧占位。通用属性[Visibility](arkts-arkui-visibility-e.md).Hidden隐藏的是包括 [border](arkts-arkui-commonmethod-c.md#border-1)、[padding](arkts-arkui-commonmethod-c.md#padding-1)等整个组件范围，而enableLoading=false只隐藏 LoadingProgress本身动画内容，不包括border等。
+设置LoadingProgress动画是否显示。LoadingProgress动画不显示时，该组件依旧占位。通用属性[Visibility](arkts-arkui-visibility-e.md).Hidden隐藏的是包括
+[border](arkts-arkui-commonmethod-c.md#border-1)、[padding](arkts-arkui-commonmethod-c.md#padding-1)等整个组件范围，而enableLoading=false只隐藏
+LoadingProgress本身动画内容，不包括border等。
 
 **起始版本：** 10
 

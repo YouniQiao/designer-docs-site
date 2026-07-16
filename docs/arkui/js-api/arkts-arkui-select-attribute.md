@@ -14,7 +14,13 @@ In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkt
 arrowModifier(modifier: Optional<SymbolGlyphModifier>)
 ```
 
-Creates an arrow modifier to customize the drop-down arrow icon style of the **Select** button. After **arrowModifier** is applied, the drop-down arrow icon style of the **Select** button will be completely customized by the developer. > **NOTE** > > This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
+Creates an arrow modifier to customize the drop-down arrow icon style of the **Select** button. After
+**arrowModifier** is applied, the drop-down arrow icon style of the **Select** button will be completely customized
+by the developer.
+
+> **NOTE**
+>
+> This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 20
 
@@ -58,7 +64,9 @@ Sets the alignment between the text and arrow of an option.
 arrowPosition(position: Optional<ArrowPosition>)
 ```
 
-Sets the alignment between the text and arrow of an option. Compared with [arrowPosition](SelectAttribute#arrowPosition(value: ArrowPosition)), this API supports the **undefined** type for the **position** parameter.
+Sets the alignment between the text and arrow of an option. Compared with
+[arrowPosition](SelectAttribute#arrowPosition(value: ArrowPosition)), this API supports the **undefined**
+type for the **position** parameter.
 
 **Since:** 18
 
@@ -124,7 +132,9 @@ Sets the size of the **Select** component.
 controlSize(size: Optional<ControlSize>)
 ```
 
-Sets the size of the **Select** component. Compared with [controlSize](SelectAttribute#controlSize(value: ControlSize))<sup>12+</sup>, this API supports the **undefined** type for **size** parameter.
+Sets the size of the **Select** component. Compared with
+[controlSize](SelectAttribute#controlSize(value: ControlSize))<sup>12+</sup>, this API supports the
+**undefined** type for **size** parameter.
 
 **Since:** 18
 
@@ -168,7 +178,8 @@ Sets the divider style. If this attribute is not set, the divider is displayed b
 dividerStyle(style: Optional<DividerStyleOptions>)
 ```
 
-Sets the divider style. If this attribute is not set, the divider is displayed based on the default value. This attribute cannot be used together with the **divider** attribute. The last one called will take effect.
+Sets the divider style. If this attribute is not set, the divider is displayed based on the default value. This
+attribute cannot be used together with the **divider** attribute. The last one called will take effect.
 
 **Since:** 19
 
@@ -190,7 +201,8 @@ Sets the divider style. If this attribute is not set, the divider is displayed b
 font(value: Font)
 ```
 
-Sets the text style of the drop-down button. When **size** is set to **0**, the text is not displayed. When **size** is set to a negative value, the text is displayed at its default size.
+Sets the text style of the drop-down button. When **size** is set to **0**, the text is not displayed. When
+**size** is set to a negative value, the text is displayed at its default size.
 
 **Since:** 8
 
@@ -210,7 +222,10 @@ Sets the text style of the drop-down button. When **size** is set to **0**, the 
 font(selectFont: Optional<Font>)
 ```
 
-Sets the text style of the drop-down button. When **size** is set to **0**, the text is not displayed. When **size** is set to a negative value, the text is displayed at its default size. Compared with [font](SelectAttribute#font(value: Font)), this API supports the **undefined** type for the **selectFont** parameter.
+Sets the text style of the drop-down button. When **size** is set to **0**, the text is not displayed. When
+**size** is set to a negative value, the text is displayed at its default size. Compared with
+[font](SelectAttribute#font(value: Font)), this API supports the **undefined** type for the **selectFont**
+parameter.
 
 **Since:** 18
 
@@ -252,7 +267,9 @@ Sets the font color of the drop-down button.
 fontColor(resColor: Optional<ResourceColor>)
 ```
 
-Sets the font color of the drop-down button. Compared with [fontColor](SelectAttribute#fontColor(value: ResourceColor)), this API supports the **undefined** type for the **resColor** parameter.
+Sets the font color of the drop-down button. Compared with
+[fontColor](SelectAttribute#fontColor(value: ResourceColor)), this API supports the **undefined** type for
+the **resColor** parameter.
 
 **Since:** 18
 
@@ -274,7 +291,8 @@ Sets the font color of the drop-down button. Compared with [fontColor](SelectAtt
 keyboardAvoidMode(mode: Optional<MenuKeyboardAvoidMode>)
 ```
 
-Sets whether the drop-down menu avoids the soft keyboard. If this API is not used, the drop-down menu avoids the soft keyboard by default.
+Sets whether the drop-down menu avoids the soft keyboard. If this API is not used, the drop-down menu avoids the
+soft keyboard by default.
 
 **Since:** 23
 
@@ -319,7 +337,9 @@ Sets the alignment between the drop-down button and the drop-down menu.
 menuAlign(alignType: Optional<MenuAlignType>, offset?: Offset)
 ```
 
-Sets the alignment between the drop-down button and the drop-down menu. Compared with [menuAlign](SelectAttribute#menuAlign(alignType: MenuAlignType, offset?: Offset))<sup>10+</sup>, this API supports the **undefined** type for the **alignType** parameter.
+Sets the alignment between the drop-down button and the drop-down menu. Compared with
+[menuAlign](SelectAttribute#menuAlign(alignType: MenuAlignType, offset?: Offset))<sup>10+</sup>, this API
+supports the **undefined** type for the **alignType** parameter.
 
 **Since:** 18
 
@@ -342,7 +362,11 @@ Sets the alignment between the drop-down button and the drop-down menu. Compared
 menuBackgroundBlurStyle(value: BlurStyle)
 ```
 
-Sets the background blur style of the drop-down menu. > **NOTE** > > This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
+Sets the background blur style of the drop-down menu.
+
+> **NOTE**
+>
+> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
 
 **Since:** 11
 
@@ -364,7 +388,9 @@ Sets the background blur style of the drop-down menu. > **NOTE** > > This API ca
 menuBackgroundBlurStyle(style: Optional<BlurStyle>)
 ```
 
-Sets the background blur style of the drop-down menu. Compared with [menuBackgroundBlurStyle](SelectAttribute#menuBackgroundBlurStyle(value: BlurStyle))<sup>11+</sup>, this API supports the **undefined** type for the **style** parameter.
+Sets the background blur style of the drop-down menu. Compared with
+[menuBackgroundBlurStyle](SelectAttribute#menuBackgroundBlurStyle(value: BlurStyle))<sup>11+</sup>, this API
+supports the **undefined** type for the **style** parameter.
 
 **Since:** 18
 
@@ -408,7 +434,11 @@ Defines the select menu's background blur style with options
 menuBackgroundColor(value: ResourceColor)
 ```
 
-Sets the background color of the drop-down menu. > **NOTE** > > This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
+Sets the background color of the drop-down menu.
+
+> **NOTE**
+>
+> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
 
 **Since:** 11
 
@@ -430,7 +460,9 @@ Sets the background color of the drop-down menu. > **NOTE** > > This API can be 
 menuBackgroundColor(resColor: Optional<ResourceColor>)
 ```
 
-Sets the background color of the drop-down menu. Compared with [menuBackgroundColor](SelectAttribute#menuBackgroundColor(value: ResourceColor))<sup>11+</sup>, this API supports the **undefined** type for the **resColor** parameter.
+Sets the background color of the drop-down menu. Compared with
+[menuBackgroundColor](SelectAttribute#menuBackgroundColor(value: ResourceColor))<sup>11+</sup>, this API
+supports the **undefined** type for the **resColor** parameter.
 
 **Since:** 18
 
@@ -474,7 +506,13 @@ Defines the select menu's background effect with options
 menuItemContentModifier(modifier: ContentModifier<MenuItemConfiguration>)
 ```
 
-Creates a content modifier for the drop-down menu. After **menuItemContentModifier** is applied, the drop-down menu content will be completely customized by the developer, and the **Select** component's attributes, including the divider, option color, and drop-down menu font color, will not take effect. > **NOTE** > > This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
+Creates a content modifier for the drop-down menu. After **menuItemContentModifier** is applied, the drop-down menu
+content will be completely customized by the developer, and the **Select** component's attributes, including the
+divider, option color, and drop-down menu font color, will not take effect.
+
+> **NOTE**
+>
+> This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 12
 
@@ -496,7 +534,16 @@ Creates a content modifier for the drop-down menu. After **menuItemContentModifi
 menuItemContentModifier(modifier: Optional<ContentModifier<MenuItemConfiguration>>)
 ```
 
-Creates a content modifier for the drop-down menu. Compared with [menuItemContentModifier](SelectAttribute#menuItemContentModifier(modifier: ContentModifier<MenuItemConfiguration>)) <sup>12+</sup>, this API supports the **undefined** type for **modifier** parameter. After **menuItemContentModifier** is applied, the drop-down menu content will be completely customized by the developer, and the **Select** component's attributes, including the divider, option color, and drop-down menu font color, will not take effect. > **NOTE** > > This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
+Creates a content modifier for the drop-down menu. Compared with
+[menuItemContentModifier](SelectAttribute#menuItemContentModifier(modifier: ContentModifier<MenuItemConfiguration>))
+<sup>12+</sup>, this API supports the **undefined** type for **modifier** parameter. After
+**menuItemContentModifier** is applied, the drop-down menu content will be completely customized by the developer,
+and the **Select** component's attributes, including the divider, option color, and drop-down menu font color, will
+not take effect.
+
+> **NOTE**
+>
+> This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 18
 
@@ -540,7 +587,9 @@ Sets the outline style for the drop-down menu.
 minKeyboardAvoidDistance(distance: Optional<LengthMetrics>)
 ```
 
-Sets the minimum distance for the **Select** component to avoid the soft keyboard. If this API is not used, the minimum distance is 8 vp by default. This API is valid only when [keyboardAvoidMode](SelectAttribute#keyboardAvoidMode) is set to avoid the soft keyboard.
+Sets the minimum distance for the **Select** component to avoid the soft keyboard. If this API is not used, the
+minimum distance is 8 vp by default. This API is valid only when
+[keyboardAvoidMode](SelectAttribute#keyboardAvoidMode) is set to avoid the soft keyboard.
 
 **Since:** 23
 
@@ -582,7 +631,9 @@ Triggered when a drop-down menu option is selected.
 onSelect(callback: Optional<OnSelectCallback>)
 ```
 
-Triggered when a drop-down menu option is selected. Compared with [onSelect](SelectAttribute#onSelect(callback: (index: number, value: string) => void)), this API supports the **undefined** type for the **callback** parameter.
+Triggered when a drop-down menu option is selected. Compared with
+[onSelect](SelectAttribute#onSelect(callback: (index: number, value: string) => void)), this API supports the
+**undefined** type for the **callback** parameter.
 
 **Since:** 18
 
@@ -624,7 +675,9 @@ Sets the background color of options in the drop-down menu.
 optionBgColor(resColor: Optional<ResourceColor>)
 ```
 
-Sets the background color of options in the drop-down menu. Compared with [optionBgColor](SelectAttribute#optionBgColor(value: ResourceColor)), this API supports the **undefined** type for the **resColor** parameter.
+Sets the background color of options in the drop-down menu. Compared with
+[optionBgColor](SelectAttribute#optionBgColor(value: ResourceColor)), this API supports the **undefined**
+type for the **resColor** parameter.
 
 **Since:** 18
 
@@ -646,7 +699,8 @@ Sets the background color of options in the drop-down menu. Compared with [optio
 optionFont(value: Font)
 ```
 
-Sets the text font of options in the drop-down menu. When **size** is set to **0**, the text is not displayed. When **size** is set to a negative value, the text is displayed at its default size.
+Sets the text font of options in the drop-down menu. When **size** is set to **0**, the text is not displayed. When
+**size** is set to a negative value, the text is displayed at its default size.
 
 **Since:** 8
 
@@ -666,7 +720,11 @@ Sets the text font of options in the drop-down menu. When **size** is set to **0
 optionFont(selectFont: Optional<Font>)
 ```
 
-Sets the text font of options in the drop-down menu. When **size** is set to **0**, the text is not displayed. When **size** is set to a negative value, the text is displayed at its default size. Compared with [optionFont](SelectAttribute#optionFont(value: Font)), this API supports the **undefined** type for the **selectFont** parameter.
+Sets the text font of options in the drop-down menu. When **size** is set to **0**, the text is not displayed. When
+**size** is set to a negative value, the text is displayed at its default size.
+
+Compared with [optionFont](SelectAttribute#optionFont(value: Font)), this API supports the **undefined** type
+for the **selectFont** parameter.
 
 **Since:** 18
 
@@ -708,7 +766,9 @@ Sets the font color of options in the drop-down menu.
 optionFontColor(resColor: Optional<ResourceColor>)
 ```
 
-Sets the font color of options in the drop-down menu. Compared with [optionFontColor](SelectAttribute#optionFontColor(value: ResourceColor)), this API supports the **undefined** type for the **resColor** parameter.
+Sets the font color of options in the drop-down menu. Compared with
+[optionFontColor](SelectAttribute#optionFontColor(value: ResourceColor)), this API supports the **undefined**
+type for the **resColor** parameter.
 
 **Since:** 18
 
@@ -730,7 +790,13 @@ Sets the font color of options in the drop-down menu. Compared with [optionFontC
 optionHeight(value: Dimension)
 ```
 
-Sets the maximum height for the drop-down menu. Percentage values are not supported. The default maximum height is 80% of the available screen height, and any custom maximum height setting must not exceed this limit. This attribute has no effect when set to abnormal values or zero. If the actual height of all drop-down menu options is less than the set height, the menu will automatically adjust to the actual content height.
+Sets the maximum height for the drop-down menu. Percentage values are not supported. The default maximum height is
+80% of the available screen height, and any custom maximum height setting must not exceed this limit.
+
+This attribute has no effect when set to abnormal values or zero.
+
+If the actual height of all drop-down menu options is less than the set height, the menu will automatically adjust
+to the actual content height.
 
 **Since:** 11
 
@@ -752,7 +818,15 @@ Sets the maximum height for the drop-down menu. Percentage values are not suppor
 optionHeight(height: Optional<Dimension>)
 ```
 
-Sets the maximum height for the drop-down menu. Percentage values are not supported. The default maximum height is 80% of the available screen height, and any custom maximum height setting must not exceed this limit. Compared with [optionHeight](SelectAttribute#optionHeight(value: Dimension))<sup>11+</sup>, this API supports the **undefined** type for the **height** parameter. This attribute has no effect when set to abnormal values or zero. If the actual height of all drop-down menu options is less than the set height, the menu will automatically adjust to the actual content height.
+Sets the maximum height for the drop-down menu. Percentage values are not supported. The default maximum height is
+80% of the available screen height, and any custom maximum height setting must not exceed this limit. Compared with
+[optionHeight](SelectAttribute#optionHeight(value: Dimension))<sup>11+</sup>, this API supports the
+**undefined** type for the **height** parameter.
+
+This attribute has no effect when set to abnormal values or zero.
+
+If the actual height of all drop-down menu options is less than the set height, the menu will automatically adjust
+to the actual content height.
 
 **Since:** 18
 
@@ -774,7 +848,16 @@ Sets the maximum height for the drop-down menu. Percentage values are not suppor
 optionTextModifier(modifier: Optional<TextModifier>)
 ```
 
-Creates an option text modifier to customize the text style of unselected options in the drop-down menu. After **optionTextModifier** is applied, the unselected option text style will be completely customized by the developer. If both [optionFont](SelectAttribute#optionFont(value: Font)) and **Font** of **optionTextModifier** are set, [optionFont](SelectAttribute#optionFont(value: Font)) takes precedence. Any unspecified attributes in **optionFont** will use default values. > **NOTE** > > This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
+Creates an option text modifier to customize the text style of unselected options in the drop-down menu. After
+**optionTextModifier** is applied, the unselected option text style will be completely customized by the developer.
+
+If both [optionFont](SelectAttribute#optionFont(value: Font)) and **Font** of **optionTextModifier** are set,
+[optionFont](SelectAttribute#optionFont(value: Font)) takes precedence. Any unspecified attributes in
+**optionFont** will use default values.
+
+> **NOTE**
+>
+> This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 20
 
@@ -796,7 +879,15 @@ Creates an option text modifier to customize the text style of unselected option
 optionWidth(value: Dimension | OptionWidthMode )
 ```
 
-Sets the width for the drop-down menu option. Percentage values are not supported. **OptionWidthMode** specifies whether to inherit the width of the drop-down button. If an invalid value or a value less than the minimum width of 56 vp is set, the attribute has no effect. In this case, the option width uses the default value, which is the width of two columns. The **Select** component maintains 16 vp spacing from both left and right screen edges by default. This creates a 3 2 vp total horizontal margin (16 vp × 2). To prevent horizontal shifting when the drop-down menu is displayed, set the width of the component itself and its menu options to a value less than or equal to **calc(100% - 32 vp)**.
+Sets the width for the drop-down menu option. Percentage values are not supported. **OptionWidthMode** specifies
+whether to inherit the width of the drop-down button.
+
+If an invalid value or a value less than the minimum width of 56 vp is set, the attribute has no effect. In this
+case, the option width uses the default value, which is the width of two columns.
+
+The **Select** component maintains 16 vp spacing from both left and right screen edges by default. This creates a 3
+2 vp total horizontal margin (16 vp × 2). To prevent horizontal shifting when the drop-down menu is displayed, set
+the width of the component itself and its menu options to a value less than or equal to **calc(100% - 32 vp)**.
 
 **Since:** 11
 
@@ -818,7 +909,17 @@ Sets the width for the drop-down menu option. Percentage values are not supporte
 optionWidth(width: Optional<Dimension | OptionWidthMode> )
 ```
 
-Sets the width for the drop-down menu option. Percentage values are not supported. **OptionWidthMode** specifies whether to inherit the width of the drop-down button. Compared with [optionWidth](SelectAttribute#optionWidth(value: Dimension | OptionWidthMode ))<sup>11+</sup>, this API supports the **undefined** type for the **width** parameter. If an invalid value or a value less than the minimum width of 56 vp is set, the attribute has no effect. In this case, the option width uses the default value, which is the width of two columns. The **Select** component maintains 16 vp spacing from both left and right screen edges by default. This creates a 3 2 vp total horizontal margin (16 vp × 2). To prevent horizontal shifting when the drop-down menu is displayed, set the width of the component itself and its menu options to a value less than or equal to **calc(100% - 32 vp)**.
+Sets the width for the drop-down menu option. Percentage values are not supported. **OptionWidthMode** specifies
+whether to inherit the width of the drop-down button. Compared with
+[optionWidth](SelectAttribute#optionWidth(value: Dimension | OptionWidthMode ))<sup>11+</sup>, this API
+supports the **undefined** type for the **width** parameter.
+
+If an invalid value or a value less than the minimum width of 56 vp is set, the attribute has no effect. In this
+case, the option width uses the default value, which is the width of two columns.
+
+The **Select** component maintains 16 vp spacing from both left and right screen edges by default. This creates a 3
+2 vp total horizontal margin (16 vp × 2). To prevent horizontal shifting when the drop-down menu is displayed, set
+the width of the component itself and its menu options to a value less than or equal to **calc(100% - 32 vp)**.
 
 **Since:** 18
 
@@ -840,7 +941,15 @@ Sets the width for the drop-down menu option. Percentage values are not supporte
 selected(value: number | Resource)
 ```
 
-Sets the index of the initially selected option in the drop-down menu, where the first option has an index of 0. When **selected** is set to an invalid value or is not set, the default default **-1** is used, which indicates no selection. When **selected** is set to **undefined** or **null**, the first option is selected. Since API version 10, this attribute supports two-way binding through [$$](../../../../ui/state-management/arkts-two-way-sync.md). Since API version 18, this attribute supports two-way binding through [!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
+Sets the index of the initially selected option in the drop-down menu, where the first option has an index of 0.
+When **selected** is set to an invalid value or is not set, the default default **-1** is used, which indicates no
+selection. When **selected** is set to **undefined** or **null**, the first option is selected.
+
+Since API version 10, this attribute supports two-way binding through
+[$$](../../../../ui/state-management/arkts-two-way-sync.md).
+
+Since API version 18, this attribute supports two-way binding through
+[!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
 
 **Since:** 8
 
@@ -860,7 +969,12 @@ Sets the index of the initially selected option in the drop-down menu, where the
 selected(numCount: Optional<number | Resource>)
 ```
 
-Sets the index of the initially selected option in the drop-down menu, where the first option has an index of 0. When **selected** is set to an invalid value or is not set, the default default **-1** is used, which indicates no selection. When **selected** is set to **undefined** or **null**, the first option is selected. This attribute supports two-way binding through [$$](../../../../ui/state-management/arkts-two-way-sync.md) and [!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
+Sets the index of the initially selected option in the drop-down menu, where the first option has an index of 0.
+When **selected** is set to an invalid value or is not set, the default default **-1** is used, which indicates no
+selection. When **selected** is set to **undefined** or **null**, the first option is selected.
+
+This attribute supports two-way binding through [$$](../../../../ui/state-management/arkts-two-way-sync.md) and
+[!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
 
 **Since:** 18
 
@@ -902,7 +1016,9 @@ Sets the background color of the selected option in the drop-down menu.
 selectedOptionBgColor(resColor: Optional<ResourceColor>)
 ```
 
-Sets the background color of the selected option in the drop-down menu. Compared with [selectedOptionBgColor](SelectAttribute#selectedOptionBgColor(value: ResourceColor)), this API supports the **undefined** type for the **resColor** parameter.
+Sets the background color of the selected option in the drop-down menu. Compared with
+[selectedOptionBgColor](SelectAttribute#selectedOptionBgColor(value: ResourceColor)), this API supports the
+**undefined** type for the **resColor** parameter.
 
 **Since:** 18
 
@@ -924,7 +1040,8 @@ Sets the background color of the selected option in the drop-down menu. Compared
 selectedOptionFont(value: Font)
 ```
 
-Sets the text font of the selected option in the drop-down menu. When **size** is set to **0**, the text is not displayed. When **size** is set to a negative value, the text is displayed at its default size.
+Sets the text font of the selected option in the drop-down menu. When **size** is set to **0**, the text is not
+displayed. When **size** is set to a negative value, the text is displayed at its default size.
 
 **Since:** 8
 
@@ -944,7 +1061,10 @@ Sets the text font of the selected option in the drop-down menu. When **size** i
 selectedOptionFont(selectFont: Optional<Font>)
 ```
 
-Sets the text font of the selected option in the drop-down menu. When **size** is set to **0**, the text is not displayed. When **size** is set to a negative value, the text is displayed at its default size. Compared with [selectedOptionFont](SelectAttribute#selectedOptionFont(value: Font)), this API supports the **undefined** type for the **selectFont** parameter.
+Sets the text font of the selected option in the drop-down menu. When **size** is set to **0**, the text is not
+displayed. When **size** is set to a negative value, the text is displayed at its default size. Compared with
+[selectedOptionFont](SelectAttribute#selectedOptionFont(value: Font)), this API supports the **undefined**
+type for the **selectFont** parameter.
 
 **Since:** 18
 
@@ -986,7 +1106,9 @@ Sets the font color of the selected option in the drop-down menu.
 selectedOptionFontColor(resColor: Optional<ResourceColor>)
 ```
 
-Sets the font color of the selected option in the drop-down menu. Compared with [selectedOptionFontColor](SelectAttribute#selectedOptionFontColor(value: ResourceColor)), this API supports the **undefined** type for the **resColor** parameter.
+Sets the font color of the selected option in the drop-down menu. Compared with
+[selectedOptionFontColor](SelectAttribute#selectedOptionFontColor(value: ResourceColor)), this API supports
+the **undefined** type for the **resColor** parameter.
 
 **Since:** 18
 
@@ -1008,7 +1130,19 @@ Sets the font color of the selected option in the drop-down menu. Compared with 
 selectedOptionTextModifier(modifier: Optional<TextModifier>)
 ```
 
-Creates a selected-option text modifier to customize the text style of selected options in the drop-down menu. After **selectedOptionTextModifier** is applied, the selected-option text style will be completely customized by the developer. If both [selectedOptionFont](SelectAttribute#selectedOptionFont(value: Font)) and **Font** of **selectedOptionTextModifier** are set, [selectedOptionFont](SelectAttribute#selectedOptionFont(value: Font)) takes precedence. If **selectedOptionFont** is not set, [optionFont](SelectAttribute#optionFont(value: Font)) settings are applied. Any unspecified attributes in **selectedOptionFont** or **optionFont** will use default values. > **NOTE** > > This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
+Creates a selected-option text modifier to customize the text style of selected options in the drop-down menu.
+After **selectedOptionTextModifier** is applied, the selected-option text style will be completely customized by
+the developer.
+
+If both [selectedOptionFont](SelectAttribute#selectedOptionFont(value: Font)) and **Font** of
+**selectedOptionTextModifier** are set, [selectedOptionFont](SelectAttribute#selectedOptionFont(value: Font))
+takes precedence. If **selectedOptionFont** is not set, [optionFont](SelectAttribute#optionFont(value: Font))
+settings are applied. Any unspecified attributes in **selectedOptionFont** or **optionFont** will use default
+values.
+
+> **NOTE**
+>
+> This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 20
 
@@ -1052,7 +1186,8 @@ Sets whether to display the default selection icon.
 showInSubWindow(showInSubWindow: Optional<boolean>)
 ```
 
-Sets whether the drop-down menu is displayed in the subwindow. If this API is not used, the drop-down menu is not displayed in the subwindow by default.
+Sets whether the drop-down menu is displayed in the subwindow. If this API is not used, the drop-down menu is not
+displayed in the subwindow by default.
 
 **Since:** 20
 
@@ -1074,7 +1209,8 @@ Sets whether the drop-down menu is displayed in the subwindow. If this API is no
 space(value: Length)
 ```
 
-Sets the spacing between the text and arrow of a drop-down menu option. This attribute cannot be set in percentage. If the value specified is **null**, **undefined**, or less than or equal to 8, the default value is used.
+Sets the spacing between the text and arrow of a drop-down menu option. This attribute cannot be set in percentage.
+If the value specified is **null**, **undefined**, or less than or equal to 8, the default value is used.
 
 **Since:** 10
 
@@ -1096,7 +1232,8 @@ Sets the spacing between the text and arrow of a drop-down menu option. This att
 space(spaceLength: Optional<Length>)
 ```
 
-Sets the spacing between the text and arrow of a drop-down menu option. This attribute cannot be set in percentage. If the value specified is **null**, **undefined**, or less than or equal to 8, the default value is used.
+Sets the spacing between the text and arrow of a drop-down menu option. This attribute cannot be set in percentage.
+If the value specified is **null**, **undefined**, or less than or equal to 8, the default value is used.
 
 **Since:** 18
 
@@ -1118,7 +1255,12 @@ Sets the spacing between the text and arrow of a drop-down menu option. This att
 textModifier(modifier: Optional<TextModifier>)
 ```
 
-Creates a text modifier to customize the text style of the **Select** button. After **textModifier** is applied, the text style of the **Select** button will be completely customized by the developer. > **NOTE** > > This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
+Creates a text modifier to customize the text style of the **Select** button. After **textModifier** is applied,
+the text style of the **Select** button will be completely customized by the developer.
+
+> **NOTE**
+>
+> This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 20
 
@@ -1140,7 +1282,14 @@ Creates a text modifier to customize the text style of the **Select** button. Af
 value(value: ResourceStr)
 ```
 
-Sets the text content of drop-down button. After a menu option is selected, the button text will automatically update to display the selected option's text. Since API version 10, this attribute supports two-way binding through [$$](../../../../ui/state-management/arkts-two-way-sync.md). Since API version 18, this attribute supports two-way binding through [!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
+Sets the text content of drop-down button. After a menu option is selected, the button text will automatically
+update to display the selected option's text.
+
+Since API version 10, this attribute supports two-way binding through
+[$$](../../../../ui/state-management/arkts-two-way-sync.md).
+
+Since API version 18, this attribute supports two-way binding through
+[!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
 
 **Since:** 8
 
@@ -1160,7 +1309,13 @@ Sets the text content of drop-down button. After a menu option is selected, the 
 value(resStr: Optional<ResourceStr>)
 ```
 
-Sets the text content of drop-down button. After a menu option is selected, the button text will automatically update to display the selected option's text. Compared with [value](SelectAttribute#value(value: ResourceStr)), this API supports the **undefined** type for the **resStr** parameter. This attribute supports two-way binding through [$$](../../../../ui/state-management/arkts-two-way-sync.md) and [!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
+Sets the text content of drop-down button. After a menu option is selected, the button text will automatically
+update to display the selected option's text. Compared with
+[value](SelectAttribute#value(value: ResourceStr)), this API supports the **undefined** type for the
+**resStr** parameter.
+
+This attribute supports two-way binding through [$$](../../../../ui/state-management/arkts-two-way-sync.md) and
+[!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
 
 **Since:** 18
 

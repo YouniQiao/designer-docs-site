@@ -56,7 +56,8 @@ Triggered when the selected state of the list item for multiselect changes.
 selectable(value: boolean)
 ```
 
-Sets whether the list item is selectable for multiselect. This attribute takes effect only when mouse frame selection is enabled for the parent List container.
+Sets whether the list item is selectable for multiselect.
+This attribute takes effect only when mouse frame selection is enabled for the parent List container.
 
 **Since:** 8
 
@@ -78,7 +79,9 @@ Sets whether the list item is selectable for multiselect. This attribute takes e
 selected(value: boolean)
 ```
 
-Sets whether the list item is selected. This attribute supports two-way binding through $$. This attribute must be used before the polymorphic style is set. Otherwise, the style settings will not take effect.
+Sets whether the list item is selected. This attribute supports two-way binding through $$.
+This attribute must be used before the polymorphic style is set.
+Otherwise, the style settings will not take effect.
 
 **Since:** 10
 

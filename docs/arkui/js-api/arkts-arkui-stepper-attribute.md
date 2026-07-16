@@ -18,7 +18,12 @@ Defines the stepper attribute functions
 onChange(callback: (prevIndex: number, index: number) => void)
 ```
 
-Triggered when the step navigation switches by clicking [prevLabel](StepperItemAttribute#prevLabel) of the **StepperItem** component; or when clicking [nextLabel](StepperItemAttribute#nextLabel) of the current **StepperItem** component, provided that the current page is not the last **StepperItem** in the stepper and the [ItemState](../arkts-apis/arkts-arkui-itemstate-e.md) attribute is **Normal**. > **NOTE**
+Triggered when the step navigation switches by clicking [prevLabel](StepperItemAttribute#prevLabel) of the
+**StepperItem** component; or when clicking [nextLabel](StepperItemAttribute#nextLabel) of the current
+**StepperItem** component, provided that the current page is not the last **StepperItem** in the stepper and the
+[ItemState](../arkts-apis/arkts-arkui-itemstate-e.md) attribute is **Normal**.
+
+> **NOTE**
 
 **Since:** 8
 
@@ -42,7 +47,10 @@ Triggered when the step navigation switches by clicking [prevLabel](StepperItemA
 onFinish(callback: () => void)
 ```
 
-Triggered when [nextLabel](StepperItemAttribute#nextLabel) of the last [StepperItem](arkts-arkui-stepperitem.md) in the stepper is clicked and the [ItemState](../arkts-apis/arkts-arkui-itemstate-e.md) attribute is **Normal**. > **NOTE**
+Triggered when [nextLabel](StepperItemAttribute#nextLabel) of the last [StepperItem](arkts-arkui-stepperitem.md) in
+the stepper is clicked and the [ItemState](../arkts-apis/arkts-arkui-itemstate-e.md) attribute is **Normal**.
+
+> **NOTE**
 
 **Since:** 8
 
@@ -66,7 +74,11 @@ Triggered when [nextLabel](StepperItemAttribute#nextLabel) of the last [StepperI
 onNext(callback: (index: number, pendingIndex: number) => void)
 ```
 
-Triggered when switching to the next step by clicking [nextLabel](StepperItemAttribute#nextLabel) of a **StepperItem**, provided that the current page is not the last **StepperItem** in the stepper and the [ItemState](../arkts-apis/arkts-arkui-itemstate-e.md) attribute is **Normal**. > **NOTE**
+Triggered when switching to the next step by clicking [nextLabel](StepperItemAttribute#nextLabel) of a
+**StepperItem**, provided that the current page is not the last **StepperItem** in the stepper and the
+[ItemState](../arkts-apis/arkts-arkui-itemstate-e.md) attribute is **Normal**.
+
+> **NOTE**
 
 **Since:** 8
 
@@ -90,7 +102,10 @@ Triggered when switching to the next step by clicking [nextLabel](StepperItemAtt
 onPrevious(callback: (index: number, pendingIndex: number) => void)
 ```
 
-Triggered when switching to the previous step by clicking [prevLabel](StepperItemAttribute#prevLabel) of a **StepperItem**. > **NOTE**
+Triggered when switching to the previous step by clicking [prevLabel](StepperItemAttribute#prevLabel) of a
+**StepperItem**.
+
+> **NOTE**
 
 **Since:** 8
 
@@ -114,7 +129,10 @@ Triggered when switching to the previous step by clicking [prevLabel](StepperIte
 onSkip(callback: () => void)
 ```
 
-Triggered when [nextLabel](StepperItemAttribute#nextLabel) is clicked and the [StepperItem](arkts-arkui-stepperitem.md) status is **ItemState.Skip**. > **NOTE**
+Triggered when [nextLabel](StepperItemAttribute#nextLabel) is clicked and the
+[StepperItem](arkts-arkui-stepperitem.md) status is **ItemState.Skip**.
+
+> **NOTE**
 
 **Since:** 8
 

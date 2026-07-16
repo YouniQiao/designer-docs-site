@@ -6,5 +6,5 @@
 
 | Name | Description |
 | --- | --- |
-| [ContinuationExtraParams](arkts-ability-continuationextraparams-i.md) | The ContinuationExtraParams module provides the filter parameters required by the device selection module in the continuation management entry. These filter parameters can be used as an input parameter of [startContinuationDeviceManager](arkts-ability-startcontinuationdevicemanager-f.md#startcontinuationdevicemanager-1) . |
+| [ContinuationExtraParams](arkts-ability-continuationextraparams-i.md) | The ContinuationExtraParams module provides the filter parameters required by the device selection module in thecontinuation management entry. These filter parameters can be used as an input parameter of[startContinuationDeviceManager](arkts-ability-startcontinuationdevicemanager-f.md#startcontinuationdevicemanager-1). |
 

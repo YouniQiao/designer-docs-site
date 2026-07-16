@@ -1,6 +1,8 @@
 # Swiper properties/events
 
-In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following attributes are supported. In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following events are supported.
+In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following attributes are supported.
+
+In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following events are supported.
 
 **Inheritance/Implementation:** SwiperAttribute extends [CommonMethod<SwiperAttribute>](CommonMethod<SwiperAttribute>)
 
@@ -14,7 +16,12 @@ In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkt
 autoPlay(value: boolean)
 ```
 
-Sets whether to enable automatic playback for child components, with the direction from the smallest to largest index. If [loop](SwiperAttribute#loop) is set to **false**, the automatic playback stops at the last page and resumes after navigated away from the last page using gestures. If the **Swiper** component becomes invisible, the playback stops.
+Sets whether to enable automatic playback for child components, with the direction from the smallest to largest
+index.
+
+If [loop](SwiperAttribute#loop) is set to **false**, the automatic playback stops at the last page and
+resumes after navigated away from the last page using gestures. If the **Swiper** component becomes invisible, the
+playback stops.
 
 **Since:** 7
 
@@ -36,7 +43,12 @@ Sets whether to enable automatic playback for child components, with the directi
 autoPlay(autoPlay: boolean, options: AutoPlayOptions)
 ```
 
-Sets whether to enable automatic playback for child components, with **options** controlling whether child components stop automatic playback when the screen is pressed by fingers, a mouse device, or other input devices. If [loop](SwiperAttribute#loop) is set to **false**, automatic playback stops at the last page and resumes after navigated away from the last page using gestures. Automatic playback also stops when the **Swiper** component is not visible.
+Sets whether to enable automatic playback for child components, with **options** controlling whether child
+components stop automatic playback when the screen is pressed by fingers, a mouse device, or other input devices.
+
+If [loop](SwiperAttribute#loop) is set to **false**, automatic playback stops at the last page and resumes
+after navigated away from the last page using gestures. Automatic playback also stops when the **Swiper** component
+is not visible.
 
 **Since:** 18
 
@@ -61,7 +73,25 @@ Sets whether to enable automatic playback for child components, with **options**
 cachedCount(value: number)
 ```
 
-Sets the number of child components to be preloaded (cached), which are needed for the specific number of pages immediately before and after the current page. If a preceding item is deleted, the succeeding items will shift forward. For example, if **cachedCount** is set to **1**, the child components on the previous page and the next page are cached. If **swipeByGroup** in **displayCount** is set to **true**, child components are cached by group. For example, if **cachedCount** is set to **1** and **swipeByGroup** is set to **true**, the child components in the previous and next groups are cached. > **NOTE** > > - In continuous scrolling scenarios where one **Swiper** child component is displayed per screen, setting > **cachedCount** to **1** or **2** is typically sufficient. For best practices, see > [Optimizing Frame Loss During Swiper Component Loading — Caching Data Items](https://developer.huawei.com/consumer/en/doc/best-practices/bpta-swiper_high_performance_development_guide#section143504547145). > > > - This parameter takes effect only when used with > [LazyForEach](../../../../ui/rendering-control/arkts-rendering-control-lazyforeach.md) or the > [Repeat](../../../../ui/rendering-control/arkts-new-rendering-control-repeat.md) component that has virtualScroll > enabled. Child components outside the visible area and cache range will be released after this parameter takes > effect.
+Sets the number of child components to be preloaded (cached), which are needed for the specific number of pages
+immediately before and after the current page. If a preceding item is deleted, the succeeding items will shift
+forward. For example, if **cachedCount** is set to **1**, the child components on the previous page and the next
+page are cached. If **swipeByGroup** in **displayCount** is set to **true**, child components are cached by group.
+For example, if **cachedCount** is set to **1** and **swipeByGroup** is set to **true**, the child components in
+the previous and next groups are cached.
+
+> **NOTE**
+>
+> - In continuous scrolling scenarios where one **Swiper** child component is displayed per screen, setting
+> **cachedCount** to **1** or **2** is typically sufficient. For best practices, see
+> [Optimizing Frame Loss During Swiper Component Loading — Caching Data Items](https://developer.huawei.com/consumer/en/doc/best-practices/bpta-swiper_high_performance_development_guide#section143504547145).
+>
+>
+> - This parameter takes effect only when used with
+> [LazyForEach](../../../../ui/rendering-control/arkts-rendering-control-lazyforeach.md) or the
+> [Repeat](../../../../ui/rendering-control/arkts-new-rendering-control-repeat.md) component that has virtualScroll
+> enabled. Child components outside the visible area and cache range will be released after this parameter takes
+> effect.
 
 **Since:** 8
 
@@ -83,7 +113,13 @@ Sets the number of child components to be preloaded (cached), which are needed f
 cachedCount(count: number, isShown: boolean)
 ```
 
-Sets the number of child components to be cached. > **NOTE** > > - When the value of **isShown** is **true** and the value of **count** is too large, if there are insufficient > loadable nodes within the preload range, the same loadable node will only be laid out on one side in loop > scenarios.
+Sets the number of child components to be cached.
+
+> **NOTE**
+>
+> - When the value of **isShown** is **true** and the value of **count** is too large, if there are insufficient
+> loadable nodes within the preload range, the same loadable node will only be laid out on one side in loop
+> scenarios.
 
 **Since:** 15
 
@@ -108,7 +144,26 @@ Sets the number of child components to be cached. > **NOTE** > > - When the valu
 cachedCount(count: number, options: CachedCountOptions)
 ```
 
-Sets the number of child components to be prloaded and configuration options. > **NOTE** > > - When **independent** in options is set to **true**, the number of preloaded child components is calculated > based on the value of **count**, which is decoupled from the **swipeByGroup** calculation of > [displayCount](SwiperAttribute#displayCount(value: number | string | SwiperAutoFill | ItemFillPolicy, swipeByGroup?: boolean)). > For example, if the value of **count** in **cachedCount** is **1**, the previous and next child components of the > current child node are preloaded. > > - If **swipeByGroup** of **displayCount** is set to **true** and **independent** of **options** is set to > **false** (default value), the number of child components to be preloaded is calculated by group. For example, if > **count** of **cachedCount** is **1**, **value** of **displayCount** is **2**, and **swipeByGroup** of > **displayCount** is **true**, two child components of the previous group and two child components of the next > group of the current group are preloaded. > > - This parameter takes effect only when used with > [LazyForEach](../../../../ui/rendering-control/arkts-rendering-control-lazyforeach.md) or the > [Repeat](../../../../ui/rendering-control/arkts-new-rendering-control-repeat.md) component that has virtualScroll > enabled. Child components outside the cache range will be released after this parameter takes effect.
+Sets the number of child components to be prloaded and configuration options.
+
+> **NOTE**
+>
+> - When **independent** in options is set to **true**, the number of preloaded child components is calculated
+> based on the value of **count**, which is decoupled from the **swipeByGroup** calculation of
+> [displayCount](SwiperAttribute#displayCount(value: number | string | SwiperAutoFill | ItemFillPolicy, swipeByGroup?: boolean)).
+> For example, if the value of **count** in **cachedCount** is **1**, the previous and next child components of the
+> current child node are preloaded.
+>
+> - If **swipeByGroup** of **displayCount** is set to **true** and **independent** of **options** is set to
+> **false** (default value), the number of child components to be preloaded is calculated by group. For example, if
+> **count** of **cachedCount** is **1**, **value** of **displayCount** is **2**, and **swipeByGroup** of
+> **displayCount** is **true**, two child components of the previous group and two child components of the next
+> group of the current group are preloaded.
+>
+> - This parameter takes effect only when used with
+> [LazyForEach](../../../../ui/rendering-control/arkts-rendering-control-lazyforeach.md) or the
+> [Repeat](../../../../ui/rendering-control/arkts-new-rendering-control-repeat.md) component that has virtualScroll
+> enabled. Child components outside the cache range will be released after this parameter takes effect.
 
 **Since:** 24
 
@@ -133,7 +188,9 @@ Sets the number of child components to be prloaded and configuration options. > 
 curve(value: Curve | string | ICurve)
 ```
 
-Sets the animation curve. The interpolating spring curve is used by default. For details about common curves, see [Curve](arkts-arkui-curve-e.md). You can also create custom curves (interpolation curve objects) by using the API provided by the [interpolation calculation](../arkts-apis/arkts-curves.md) module.
+Sets the animation curve. The interpolating spring curve is used by default. For details about common curves, see
+[Curve](arkts-arkui-curve-e.md). You can also create custom curves (interpolation curve objects) by using the API provided by
+the [interpolation calculation](../arkts-apis/arkts-curves.md) module.
 
 **Since:** 8
 
@@ -155,7 +212,28 @@ Sets the animation curve. The interpolating spring curve is used by default. For
 customContentTransition(transition: SwiperContentAnimatedTransition)
 ```
 
-Defines a custom page transition animation. During finger-following swipes and post-release transition animations, this triggers a frame-by-frame callback for all pages in the viewport, allowing you to customize animations by modifying properties like opacity, scale, and translation. Instructions: 1. This API does not work when **prevMargin** and **nextMargin** are set in such a way that the **Swiper** frontend and backend display the same page during loop playback. 2. During finger-following swipes and post-release transition animations, the [SwiperContentTransitionProxy](arkts-arkui-swipercontenttransitionproxy-i.md) callback is invoked for all pages in the viewport on a frame-by-frame basis. For example, when there are two pages whose subscripts are 0 and 1 in the viewport, two callbacks whose indexes are 0 and 1 are invoked in each frame. 3. When the **swipeByGroup** parameter of the **displayCount** attribute is set to **true**, the callback is invoked for all pages in a group if any page in the group is within the viewport; and all pages in a group are removed from the render tree if none of them are within the viewport. 4. During finger-following swipes and post-release transition animations, the default animation (page scrolling) is still effective. If you do not want the page to scroll, you can set the **translate** property on the main axis to offset the page scrolling. For example, if the value of **displayCount** is **2** and there are two pages whose subscripts are 0 and 1 within the viewport, you can set the **translate** property on the main axis to the following on a frame-by-frame basis: **translate** for page 0 = **-position** x **mainAxisLength**; **translate** for page 1 = **-(position - 1)** x **mainAxisLength**
+Defines a custom page transition animation. During finger-following swipes and post-release transition animations,
+this triggers a frame-by-frame callback for all pages in the viewport, allowing you to customize animations by
+modifying properties like opacity, scale, and translation.
+
+Instructions:
+
+1. This API does not work when **prevMargin** and **nextMargin** are set in such a way that the **Swiper**
+frontend and backend display the same page during loop playback.
+2. During finger-following swipes and post-release transition animations,
+the [SwiperContentTransitionProxy](arkts-arkui-swipercontenttransitionproxy-i.md) callback is invoked for all pages
+in the viewport on a frame-by-frame basis. For example, when there are two pages whose subscripts are 0 and 1
+in the viewport, two callbacks whose indexes are 0 and 1 are invoked in each frame.
+3. When the **swipeByGroup** parameter of the **displayCount** attribute is set to **true**,
+the callback is invoked for all pages in a group if any page in the group is within the viewport;
+and all pages in a group are removed from the render tree if none of them are within the viewport.
+4. During finger-following swipes and post-release transition animations, the default animation (page scrolling)
+is still effective. If you do not want the page to scroll, you can set the **translate** property
+on the main axis to offset the page scrolling. For example, if the value of **displayCount** is **2** and
+there are two pages whose subscripts are 0 and 1 within the viewport, you can set the **translate** property
+on the main axis to the following on a frame-by-frame basis:
+**translate** for page 0 = **-position** x **mainAxisLength**; **translate** for page 1
+= **-(position - 1)** x **mainAxisLength**
 
 **Since:** 12
 
@@ -201,7 +279,12 @@ Sets whether to disable the swipe feature.
 displayArrow(value: ArrowStyle | boolean, isHoverShow?: boolean)
 ```
 
-Sets the arrow style of the navigation indicator. > **NOTE** > > When all child nodes fit within the viewport, resulting in only one screen's worth of content being visible, the > **Swiper** component displays only that screen without any left or right page-turning arrows.
+Sets the arrow style of the navigation indicator.
+
+> **NOTE**
+>
+> When all child nodes fit within the viewport, resulting in only one screen's worth of content being visible, the
+> **Swiper** component displays only that screen without any left or right page-turning arrows.
 
 **Since:** 10
 
@@ -224,7 +307,66 @@ Sets the arrow style of the navigation indicator. > **NOTE** > > When all child 
 displayCount(value: number | string | SwiperAutoFill, swipeByGroup?: boolean)
 ```
 
-Sets the number of elements to display per page. **number** type: Child elements' main-axis width adapts to the **Swiper** component's main-axis width. The child elements are stretched or shrunk to equally divide the **Swiper** component's width (minus **displayCount-1** times **itemSpace**). Values less than or equal to 0 are treated as the default value **1**. **string** type: Only **'auto'** is supported. Child elements are laid out linearly based on their main-axis width without adapting to the **Swiper** component's width. [customContentTransition](SwiperAttribute#customContentTransition) and [onContentDidScroll](SwiperAttribute#onContentDidScroll) events are disabled. **SwiperAutoFill** type: Child elements' main-axis width adapts to the **Swiper** component's main-axis width. The system automatically works out the number of elements per page based on the width and **minSize** settings of the **Swiper** component. If **minSize** is left empty or set to a value less than or equal to 0, the **Swiper** component displays one column. > **NOTE** > > - When turning pages by group is used, the drag distance threshold for turning pages is half of the width of the > **Swiper** component (50% of the child elements width if turning pages by child element is used). If the number > of child elements in the last group is less than the value of **displayCount**, placeholders are used, but they > show the **Swiper** background style directly and do not display any content. > > - When **displayCount** is set to **'auto'** and **loop** is set to **false**, the position of the selected > navigation indicator aligns with the first page in the viewport. If the first page is only partially displayed in > the viewport after switching, the selected navigation indicator remains aligned with the page's position, between > two unselected indicators. In this case, you are advised to hide the navigation indicators. > > - If the navigation indicator is in dot style, the number of displayed navigation dots equals the number of child > elements when the number of child elements displayed in the viewport is 1 (single-page scenario) or > **displayCount** is set to **'auto'**. > > - If **displayCount** is set to **'auto'** and **swipeByGroup** is set to **true**, each child element will be > treated as a group for page switching, allowing only one page to be switched at a time. In this case, you are > advised not to set **swipeByGroup** or set **swipeByGroup** to **false**. > > - This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 18. When the navigation indicator is set to dot style and the number of child elements displayed in the viewport is greater than 1 (multi-page scenario)<!--RP1--><!--RP1End-->, the number of displayed navigation dots follows the rules below. | Total Children Count > Visible Children Count|Swiping by Group Enabled|Loop Status|Number of Navigation Dots Displayed| Description| | ------------------------------------------ | ------------ | --------------- | ------------------------- ----------------------------------- | ---------------------------------------- | | Yes | Yes | **loop** set to **true** | Equals the number of groups (calculated by dividing the total number of child elements by the number of visible child elements, with rounding up if there is a remainder).| Not effective when **displayCount** is set to **'auto'**.| | Yes | Yes | **loop** set to **false**| Equals the number of groups (calculated by dividing the total number of child elements by the number of visible child elements, with rounding up if there is a remainder).| Not effective when **displayCount** is set to **'auto'**.| | Yes | No | **loop** set to **true** | Equals the actual number of page turns available (that is, the total number of child elements).| —— | | Yes | No | **loop** set to **false**| Equals the actual number of page turns available (calculated as total number of child elements minus the number of visible child elements, plus 1).| Not effective when **displayCount** is set to **'auto'**.| | No (while the total number of child elements is greater than 0)| —— | —— | 1 | Not effective when **displayCount** is set to **'auto'**.| | No (while the total number of child elements is 0)| —— | —— | 0| —— |
+Sets the number of elements to display per page.
+
+**number** type: Child elements' main-axis width adapts to the **Swiper** component's main-axis width. The child
+elements are stretched or shrunk to equally divide the **Swiper** component's width (minus **displayCount-1** times
+**itemSpace**). Values less than or equal to 0 are treated as the default value **1**.
+
+**string** type: Only **'auto'** is supported. Child elements are laid out linearly based on their main-axis width
+without adapting to the **Swiper** component's width.
+[customContentTransition](SwiperAttribute#customContentTransition) and
+[onContentDidScroll](SwiperAttribute#onContentDidScroll) events are disabled.
+
+**SwiperAutoFill** type: Child elements' main-axis width adapts to the **Swiper** component's main-axis width. The
+system automatically works out the number of elements per page based on the width and **minSize** settings of the
+**Swiper** component. If **minSize** is left empty or set to a value less than or equal to 0, the **Swiper**
+component displays one column.
+
+> **NOTE**
+>
+> - When turning pages by group is used, the drag distance threshold for turning pages is half of the width of the
+> **Swiper** component (50% of the child elements width if turning pages by child element is used). If the number
+> of child elements in the last group is less than the value of **displayCount**, placeholders are used, but they
+> show the **Swiper** background style directly and do not display any content.
+>
+> - When **displayCount** is set to **'auto'** and **loop** is set to **false**, the position of the selected
+> navigation indicator aligns with the first page in the viewport. If the first page is only partially displayed in
+> the viewport after switching, the selected navigation indicator remains aligned with the page's position, between
+> two unselected indicators. In this case, you are advised to hide the navigation indicators.
+>
+> - If the navigation indicator is in dot style, the number of displayed navigation dots equals the number of child
+> elements when the number of child elements displayed in the viewport is 1 (single-page scenario) or
+> **displayCount** is set to **'auto'**.
+>
+> - If **displayCount** is set to **'auto'** and **swipeByGroup** is set to **true**, each child element will be
+> treated as a group for page switching, allowing only one page to be switched at a time. In this case, you are
+> advised not to set **swipeByGroup** or set **swipeByGroup** to **false**.
+>
+> - This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 18.
+
+When the navigation indicator is set to dot style and the number of child elements displayed in the viewport is
+greater than 1 (multi-page scenario)<!--RP1--><!--RP1End-->, the number of displayed navigation dots follows the
+rules below.
+
+| Total Children Count > Visible Children Count|Swiping by Group Enabled|Loop Status|Number of Navigation
+Dots Displayed| Description|
+| ------------------------------------------ | ------------ | --------------- | -------------------------
+----------------------------------- | ---------------------------------------- |
+| Yes | Yes | **loop** set to **true** | Equals the number of groups
+(calculated by dividing the total number of child elements by the number of visible child elements,
+with rounding up if there is a remainder).| Not effective when **displayCount** is set to **'auto'**.|
+| Yes | Yes | **loop** set to **false**| Equals the number of groups (calculated by dividing the total number
+of child elements by the number of visible child elements, with rounding up if there is a remainder).|
+Not effective when **displayCount** is set to **'auto'**.|
+| Yes | No | **loop** set to **true** | Equals the actual number of page turns available
+(that is, the total number of child elements).| —— |
+| Yes | No | **loop** set to **false**| Equals the actual number of page turns available
+(calculated as total number of child elements minus the number of visible child elements, plus 1).|
+Not effective when **displayCount** is set to **'auto'**.|
+| No (while the total number of child elements is greater than 0)| —— | —— | 1 |
+Not effective when **displayCount** is set to **'auto'**.|
+| No (while the total number of child elements is 0)| —— | —— | 0| —— |
 
 **Since:** 8
 
@@ -247,7 +389,30 @@ Sets the number of elements to display per page. **number** type: Child elements
 displayCount(value: number | string | SwiperAutoFill | ItemFillPolicy, swipeByGroup?: boolean)
 ```
 
-Sets the number of elements to display per page. **number** type: Child elements' main-axis width adapts to the **Swiper** component's main-axis width. The child elements are stretched or shrunk to equally divide the **Swiper** component's width (minus **displayCount-1** times **itemSpace**). Values less than or equal to 0 are treated as the default value **1**. **string** type: Only **'auto'** is supported. Child elements are laid out linearly based on their main-axis width without adapting to the **Swiper** component's width. [customContentTransition](SwiperAttribute#customContentTransition) and [onContentDidScroll](SwiperAttribute#onContentDidScroll) events are disabled. **SwiperAutoFill** type: Child elements' main-axis width adapts to the **Swiper** component's main-axis width. The system automatically works out the number of elements per page based on the width and **minSize** settings of the **Swiper** component. If **minSize** is left empty or set to a value less than or equal to 0, the **Swiper** component displays one column. **ItemFillPolicy** type: Child elements' main-axis width adapts to the **Swiper** component's main-axis width. The number of displayed elements is determined based on the breakpoint type corresponding to the **Swiper** component's width. For example, if the breakpoint type is set to **ItemFillPolicy.BREAKPOINT_DEFAULT**, one column is displayed when the component width falls within the sm or smaller breakpoint range, two columns are displayed for the md breakpoint range, and three columns are displayed for the lg or a larger breakpoint range. For details about the parameter, see [displayCount](SwiperAttribute#displayCount(value: number | string | SwiperAutoFill, swipeByGroup?: boolean)).
+Sets the number of elements to display per page.
+
+**number** type: Child elements' main-axis width adapts to the **Swiper** component's main-axis width. The child
+elements are stretched or shrunk to equally divide the **Swiper** component's width (minus **displayCount-1** times
+**itemSpace**). Values less than or equal to 0 are treated as the default value **1**.
+
+**string** type: Only **'auto'** is supported. Child elements are laid out linearly based on their main-axis width
+without adapting to the **Swiper** component's width.
+[customContentTransition](SwiperAttribute#customContentTransition) and
+[onContentDidScroll](SwiperAttribute#onContentDidScroll) events are disabled.
+
+**SwiperAutoFill** type: Child elements' main-axis width adapts to the **Swiper** component's main-axis width. The
+system automatically works out the number of elements per page based on the width and **minSize** settings of the
+**Swiper** component. If **minSize** is left empty or set to a value less than or equal to 0, the **Swiper**
+component displays one column.
+
+**ItemFillPolicy** type: Child elements' main-axis width adapts to the **Swiper** component's main-axis width. The
+number of displayed elements is determined based on the breakpoint type corresponding to the **Swiper** component's
+width. For example, if the breakpoint type is set to **ItemFillPolicy.BREAKPOINT_DEFAULT**, one column is displayed
+when the component width falls within the sm or smaller breakpoint range, two columns are displayed for the md
+breakpoint range, and three columns are displayed for the lg or a larger breakpoint range.
+
+For details about the parameter, see
+[displayCount](SwiperAttribute#displayCount(value: number | string | SwiperAutoFill, swipeByGroup?: boolean)).
 
 **Since:** 22
 
@@ -272,7 +437,9 @@ Sets the number of elements to display per page. **number** type: Child elements
 displayMode(value: SwiperDisplayMode)
 ```
 
-Sets the mode in which elements are displayed along the main axis. This API takes effect only when [displayCount](SwiperAttribute#displayCount(value: number | string | SwiperAutoFill, swipeByGroup?: boolean)) is not set.
+Sets the mode in which elements are displayed along the main axis. This API takes effect only when
+[displayCount](SwiperAttribute#displayCount(value: number | string | SwiperAutoFill, swipeByGroup?: boolean))
+is not set.
 
 **Since:** 7
 
@@ -294,7 +461,18 @@ Sets the mode in which elements are displayed along the main axis. This API take
 duration(value: number)
 ```
 
-Sets the duration of the animation for child component switching. **duration** must be used in conjunction with [curve](SwiperAttribute#curve). The default curve for the animation is [interpolatingSpring](../arkts-apis/arkts-arkui-interpolatingspring-f.md#interpolatingspring-1). When this curve is applied, the duration of the animation is determined solely by the parameters of the curve itself and is no longer governed by the **duration** setting. For curves that are not governed by the **duration** setting, see [Interpolation Calculation](../arkts-apis/arkts-curves.md). Among others, [springMotion](../arkts-apis/arkts-arkui-springmotion-f.md#springmotion-1), [responsiveSpringMotion](../arkts-apis/arkts-arkui-responsivespringmotion-f.md#responsivespringmotion-1), and interpolatingSpring do not respect the **duration** setting. To have the animation duration managed by **duration**, you should select a different curve for the **curve** attribute.
+Sets the duration of the animation for child component switching.
+
+**duration** must be used in conjunction with [curve](SwiperAttribute#curve).
+
+The default curve for the animation is [interpolatingSpring](../arkts-apis/arkts-arkui-interpolatingspring-f.md#interpolatingspring-1). When
+this curve is applied, the duration of the animation is determined solely by the parameters of the curve itself and
+is no longer governed by the **duration** setting. For curves that are not governed by the **duration** setting,
+see [Interpolation Calculation](../arkts-apis/arkts-curves.md). Among others,
+[springMotion](../arkts-apis/arkts-arkui-springmotion-f.md#springmotion-1),
+[responsiveSpringMotion](../arkts-apis/arkts-arkui-responsivespringmotion-f.md#responsivespringmotion-1), and interpolatingSpring do not respect
+the **duration** setting. To have the animation duration managed by **duration**, you should select a different
+curve for the **curve** attribute.
 
 **Since:** 7
 
@@ -314,7 +492,12 @@ Sets the duration of the animation for child component switching. **duration** m
 effectMode(value: EdgeEffect)
 ```
 
-Edge sliding effect. This parameter takes effect only when [loop](SwiperAttribute#loop) is set to **false** or all child nodes are displayed on one screen in the **Swiper** viewport. When the [SwiperController.changeIndex()](arkts-arkui-swipercontroller-c.md#changeindex-1), [SwiperController.showNext()](arkts-arkui-swipercontroller-c.md#shownext-1), or [SwiperController.showPrevious()](arkts-arkui-swipercontroller-c.md#showprevious-1) API is called to go to the first or last page, the rebound effect does not take effect.
+Edge sliding effect. This parameter takes effect only when [loop](SwiperAttribute#loop) is set to **false**
+or all child nodes are displayed on one screen in the **Swiper** viewport. When the
+[SwiperController.changeIndex()](arkts-arkui-swipercontroller-c.md#changeindex-1),
+[SwiperController.showNext()](arkts-arkui-swipercontroller-c.md#shownext-1), or
+[SwiperController.showPrevious()](arkts-arkui-swipercontroller-c.md#showprevious-1) API is called to go to the first or last
+page, the rebound effect does not take effect.
 
 **Since:** 8
 
@@ -336,7 +519,10 @@ Edge sliding effect. This parameter takes effect only when [loop](SwiperAttribut
 index(value: number)
 ```
 
-Sets the index of the child component currently displayed in the container. Since API version 10, this attribute supports two-way binding through [$$](../../../../ui/state-management/arkts-two-way-sync.md).
+Sets the index of the child component currently displayed in the container.
+
+Since API version 10, this attribute supports two-way binding through
+[$$](../../../../ui/state-management/arkts-two-way-sync.md).
 
 **Since:** 7
 
@@ -380,7 +566,13 @@ Sets the style of the navigation indicator.
 indicator(indicator: IndicatorComponentController | DotIndicator | DigitIndicator | boolean)
 ```
 
-Sets the navigation indicator for the component. > **NOTE** > > An externally bound navigation indicator component can be used together if it is set. The display position and > size can be customized for the external navigation indicator. For details, see > [Indicator](arkts-arkui-indicatorcomponent.md).
+Sets the navigation indicator for the component.
+
+> **NOTE**
+>
+> An externally bound navigation indicator component can be used together if it is set. The display position and
+> size can be customized for the external navigation indicator. For details, see
+> [Indicator](arkts-arkui-indicatorcomponent.md).
 
 **Since:** 15
 
@@ -470,7 +662,10 @@ Sets the interval for automatic playback.
 itemSpace(value: number | string)
 ```
 
-Sets the space between child components. Percentage values are not supported. If the type is number, the default unit is vp. If the type is string, the pixel unit must be explicitly specified, for example, **'10px'**; if the unit is not specified, for example, **'10'**, the default unit vp is used.
+Sets the space between child components. Percentage values are not supported.
+
+If the type is number, the default unit is vp. If the type is string, the pixel unit must be explicitly specified,
+for example, **'10px'**; if the unit is not specified, for example, **'10'**, the default unit vp is used.
 
 **Since:** 7
 
@@ -492,7 +687,8 @@ Sets the space between child components. Percentage values are not supported. If
 loop(value: boolean)
 ```
 
-Sets whether to enable loop playback. In **LazyForEach** mode, it is recommended that the number of loaded components be greater than 5.
+Sets whether to enable loop playback. In **LazyForEach** mode, it is recommended that the number of loaded
+components be greater than 5.
 
 **Since:** 7
 
@@ -514,7 +710,18 @@ Sets whether to enable loop playback. In **LazyForEach** mode, it is recommended
 maintainVisibleContentPosition(enabled: boolean)
 ```
 
-Sets whether to maintain the visible content position when data is inserted or deleted above or ahead of the viewport. This applies to **Swiper** components using a single [LazyForEach](../../../../ui/rendering-control/arkts-rendering-control-lazyforeach.md) as the child node, where the data source is modified using **LazyForEach** API such as [onDataAdd](arkts-arkui-datachangelistener-i.md#ondataadd-1) or [onDataDelete](arkts-arkui-datachangelistener-i.md#ondatadelete-1). In other scenarios, the position of the visible content changes when data is inserted or deleted above or before the display area. When **swipeByGroup** in [displayCount](SwiperAttribute#displayCount(value: number | string | SwiperAutoFill, swipeByGroup?: boolean)) is set to **true**, the visible content position remains unchanged only if the amount of data inserted or deleted above or before the display area is a multiple of the group size. Otherwise, the visible content position may change during group recalculation.
+Sets whether to maintain the visible content position when data is inserted or deleted above or ahead of the
+viewport. This applies to **Swiper** components using a single
+[LazyForEach](../../../../ui/rendering-control/arkts-rendering-control-lazyforeach.md) as the child node, where the
+data source is modified using **LazyForEach** API such as [onDataAdd](arkts-arkui-datachangelistener-i.md#ondataadd-1) or
+[onDataDelete](arkts-arkui-datachangelistener-i.md#ondatadelete-1). In other scenarios, the position of the visible content
+changes when data is inserted or deleted above or before the display area.
+
+When **swipeByGroup** in
+[displayCount](SwiperAttribute#displayCount(value: number | string | SwiperAutoFill, swipeByGroup?: boolean))
+is set to **true**, the visible content position remains unchanged only if the amount of data inserted or deleted
+above or before the display area is a multiple of the group size. Otherwise, the visible content position may
+change during group recalculation.
 
 **Since:** 20
 
@@ -538,7 +745,17 @@ Sets whether to maintain the visible content position when data is inserted or d
 nestedScroll(value: SwiperNestedScrollMode)
 ```
 
-Sets the nested scrolling mode of the **Swiper** component and its parent container. When [loop](SwiperAttribute#loop) is set to **true**, the **Swiper** component has no edge effect and does not trigger nested scrolling of its parent container. > **NOTE** > > The **Swiper** component's flick animation logic differs from other scrollable components, as **Swiper** can only > slide one page at a time and performs a page-flip animation during a flick. When a **Swiper** component is nested > with other scrollable components, it will not accept the scroll offset values transmitted by its child nodes > after its page-turning animation has already started. At this point, the page-turning animation of the **Swiper** > and the edge effect animation of the child node will be executed simultaneously.
+Sets the nested scrolling mode of the **Swiper** component and its parent container. When
+[loop](SwiperAttribute#loop) is set to **true**, the **Swiper** component has no edge effect and does not
+trigger nested scrolling of its parent container.
+
+> **NOTE**
+>
+> The **Swiper** component's flick animation logic differs from other scrollable components, as **Swiper** can only
+> slide one page at a time and performs a page-flip animation during a flick. When a **Swiper** component is nested
+> with other scrollable components, it will not accept the scroll offset values transmitted by its child nodes
+> after its page-turning animation has already started. At this point, the page-turning animation of the **Swiper**
+> and the edge effect animation of the child node will be executed simultaneously.
 
 **Since:** 11
 
@@ -560,7 +777,25 @@ Sets the nested scrolling mode of the **Swiper** component and its parent contai
 nextMargin(value: Length, ignoreBlank?: boolean)
 ```
 
-Sets the trailing margin to reveal a portion of the next item. For the implementation example, see [Example 1: Setting the Navigation Indicator Interaction and Page Turning Effect](../../../../reference/apis-arkui/arkui-ts/ts-container-swiper.md#example-1-setting-the-navigation-indicator-interaction-and-page-turning-effect). This attribute is effective only when the layout mode of the child components in **Swiper** is set to stretch, which mainly includes two scenarios: 1. **displayMode** is set to **SwiperDisplayMode.STRETCH**; 2. **displayCount** is assigned a numeric value. When the main axis runs horizontally and either **nextMargin** or **prevMargin** is greater than the measured width of the child component, both margins are hidden. When the main axis runs vertically and either **nextMargin** or **prevMargin** is greater than the measured height of the child component, both margins are hidden. When using the **nextMargin** or **prevMargin** API, avoid applying [size constraints](arkts-arkui-commonmethod-c.md#constraintsize-1) to child components. Otherwise, the main axis of the child nodes will not be stretched to the expected length, causing the margins to lose their effect. > **NOTE** > > This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
+Sets the trailing margin to reveal a portion of the next item. For the implementation example, see
+[Example 1: Setting the Navigation Indicator Interaction and Page Turning Effect](../../../../reference/apis-arkui/arkui-ts/ts-container-swiper.md#example-1-setting-the-navigation-indicator-interaction-and-page-turning-effect).
+This attribute is effective only when the layout mode of the child components in **Swiper** is set to stretch,
+which mainly includes two scenarios: 1. **displayMode** is set to **SwiperDisplayMode.STRETCH**; 2.
+**displayCount** is assigned a numeric value.
+
+When the main axis runs horizontally and either **nextMargin** or **prevMargin** is greater than the measured width
+of the child component, both margins are hidden.
+
+When the main axis runs vertically and either **nextMargin** or **prevMargin** is greater than the measured height
+of the child component, both margins are hidden.
+
+When using the **nextMargin** or **prevMargin** API, avoid applying
+[size constraints](arkts-arkui-commonmethod-c.md#constraintsize-1) to child components. Otherwise, the main axis of the child
+nodes will not be stretched to the expected length, causing the margins to lose their effect.
+
+> **NOTE**
+>
+> This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 10
 
@@ -583,7 +818,10 @@ Sets the trailing margin to reveal a portion of the next item. For the implement
 onAnimationEnd(event: OnSwiperAnimationEndCallback)
 ```
 
-Triggered when the page transition animation ends. This event is triggered when the switching animation of the **Swiper** component ends, whether it is caused by gesture interruption or by calling **finishAnimation** through **SwiperController**.
+Triggered when the page transition animation ends.
+
+This event is triggered when the switching animation of the **Swiper** component ends, whether it is caused by
+gesture interruption or by calling **finishAnimation** through **SwiperController**.
 
 **Since:** 9
 
@@ -605,7 +843,19 @@ Triggered when the page transition animation ends. This event is triggered when 
 onAnimationStart(event: OnSwiperAnimationStartCallback)
 ```
 
-Triggered when the page transition animation starts. > **NOTE** > > - When this callback is invoked, the page transition animation logic is executed in the rendering thread, > allowing the idle main thread to load resources required by child components. This reduces preloading time for > nodes within the **cachedCount** range. For best practices, see > [Optimizing Frame Loss During Swiper Component Loading — Preloading Data](https://developer.huawei.com/consumer/en/doc/best-practices/bpta-swiper_high_performance_development_guide#section8783121513246). > > > - When the duration of the page transition animation is set to **0**, this callback is triggered only in the > following scenarios: swiping to turn pages, automatic playback, calling **SwiperController.showNext()** or > **SwiperController.showPrevious()**, and touching navigation indicators to navigate.
+Triggered when the page transition animation starts.
+
+> **NOTE**
+>
+> - When this callback is invoked, the page transition animation logic is executed in the rendering thread,
+> allowing the idle main thread to load resources required by child components. This reduces preloading time for
+> nodes within the **cachedCount** range. For best practices, see
+> [Optimizing Frame Loss During Swiper Component Loading — Preloading Data](https://developer.huawei.com/consumer/en/doc/best-practices/bpta-swiper_high_performance_development_guide#section8783121513246).
+>
+>
+> - When the duration of the page transition animation is set to **0**, this callback is triggered only in the
+> following scenarios: swiping to turn pages, automatic playback, calling **SwiperController.showNext()** or
+> **SwiperController.showPrevious()**, and touching navigation indicators to navigate.
 
 **Since:** 9
 
@@ -627,7 +877,15 @@ Triggered when the page transition animation starts. > **NOTE** > > - When this 
 onChange(event: Callback<number>)
 ```
 
-Triggered when the index of the currently displayed element changes. The return value is the index of the currently displayed element. When the **Swiper** component is used together with **LazyForEach**, the subpage UI update cannot be triggered in the **onChange** event. > **NOTE** > > If the index change is caused by an animation, this callback is triggered when the animation ends.
+Triggered when the index of the currently displayed element changes. The return value is the index of the currently
+displayed element.
+
+When the **Swiper** component is used together with **LazyForEach**, the subpage UI update cannot be triggered in
+the **onChange** event.
+
+> **NOTE**
+>
+> If the index change is caused by an animation, this callback is triggered when the animation ends.
 
 **Since:** 7
 
@@ -649,7 +907,17 @@ Triggered when the index of the currently displayed element changes. The return 
 onContentDidScroll(handler: ContentDidScrollCallback)
 ```
 
-Triggered when content in the **Swiper** component scrolls. Instructions: 1. This API does not work when **prevMargin** and **nextMargin** are set in such a way that the **Swiper** frontend and backend display the same page during loop playback. 2. During page scrolling, the [ContentDidScrollCallback](arkts-arkui-contentdidscrollcallback-t.md) callback is invoked for all pages in the viewport on a frame-by-frame basis. For example, when there are two pages whose subscripts are 0 and 1 in the viewport, two callbacks whose indexes are 0 and 1 are invoked in each frame. 3. When the **swipeByGroup** parameter of the **displayCount** attribute is set to **true**, the callback is invoked for all pages in a group if any page in the group is within the viewport.
+Triggered when content in the **Swiper** component scrolls.
+
+Instructions:
+
+1. This API does not work when **prevMargin** and **nextMargin** are set in such a way that the **Swiper**
+frontend and backend display the same page during loop playback.
+2. During page scrolling, the [ContentDidScrollCallback](arkts-arkui-contentdidscrollcallback-t.md) callback is invoked for
+all pages in the viewport on a frame-by-frame basis. For example, when there are two pages whose subscripts
+are 0 and 1 in the viewport, two callbacks whose indexes are 0 and 1 are invoked in each frame.
+3. When the **swipeByGroup** parameter of the **displayCount** attribute is set to **true**,
+the callback is invoked for all pages in a group if any page in the group is within the viewport.
 
 **Since:** 12
 
@@ -671,7 +939,21 @@ Triggered when content in the **Swiper** component scrolls. Instructions: 1. Thi
 onContentWillScroll(handler: ContentWillScrollCallback)
 ```
 
-Triggered when the **Swiper** component is about to scroll. This event allows you to intercept and control the scrolling behavior of the component. The component determines whether to allow the scroll action based on the return value. If **true** is returned, the scroll action is allowed, and the pages in the **Swiper** component will follow the scrolling. If **false** is returned, the scroll action is disallowed, and the pages will remain stationary. 1. This event is only triggered by gesture operations, including finger swipes, scrolling the mouse wheel, and moving focus using keyboard arrow keys. 2. During finger swipes, the event is triggered for each frame. The system uses the return value of the event to determine whether to respond to the swipe for each frame. 3. For scrolling the mouse wheel and moving focus using keyboard arrow keys, the event is triggered once per page turning. The system uses the return value to decide whether to allow the page turning.
+Triggered when the **Swiper** component is about to scroll. This event allows you to intercept and control the
+scrolling behavior of the component. The component determines whether to allow the scroll action based on the
+return value. If **true** is returned, the scroll action is allowed, and the pages in the **Swiper** component will
+follow the scrolling. If **false** is returned, the scroll action is disallowed, and the pages will remain
+stationary.
+
+1. This event is only triggered by gesture operations, including finger swipes,
+scrolling the mouse wheel, and moving focus using keyboard arrow keys.
+
+2. During finger swipes, the event is triggered for each frame.
+The system uses the return value of the event to determine whether to respond to the swipe for each frame.
+
+3. For scrolling the mouse wheel and moving focus using keyboard arrow keys,
+the event is triggered once per page turning.
+The system uses the return value to decide whether to allow the page turning.
 
 **Since:** 15
 
@@ -717,7 +999,8 @@ Triggered on a frame-by-frame basis when the page is turned by a swipe.
 onScrollStateChanged(event: Callback<ScrollState>)
 ```
 
-Defines the callback of the swipe state change event for the **Swiper** component. This callback is triggered when the swipe state changes across the followings: scrolling with the touch, animating after release, and stopped.
+Defines the callback of the swipe state change event for the **Swiper** component. This callback is triggered when
+the swipe state changes across the followings: scrolling with the touch, animating after release, and stopped.
 
 **Since:** 20
 
@@ -789,7 +1072,8 @@ Triggered when the selected element changes. The index of the element that is ab
 pageFlipMode(mode: Optional<PageFlipMode>)
 ```
 
-Sets the mode for flipping pages using the mouse wheel. If this API is not used, the continuous page flipping mode (specified by value **PageFlipMode.CONTINUOUS**) is used by default.
+Sets the mode for flipping pages using the mouse wheel. If this API is not used, the continuous page flipping mode
+(specified by value **PageFlipMode.CONTINUOUS**) is used by default.
 
 **Since:** 15
 
@@ -813,7 +1097,25 @@ Sets the mode for flipping pages using the mouse wheel. If this API is not used,
 prevMargin(value: Length, ignoreBlank?: boolean)
 ```
 
-Sets the leading margin to reveal a portion of the previous item. For the implementation example, see [Example 1: Setting the Navigation Indicator Interaction and Page Turning Effect](../../../../reference/apis-arkui/arkui-ts/ts-container-swiper.md#example-1-setting-the-navigation-indicator-interaction-and-page-turning-effect). This attribute is effective only when the layout mode of the child components in **Swiper** is set to stretch, which mainly includes two scenarios: 1. **displayMode** is set to **SwiperDisplayMode.STRETCH**; 2. **displayCount** is assigned a numeric value. When the main axis runs horizontally and either **nextMargin** or **prevMargin** is greater than the measured width of the child component, both margins are hidden. When the main axis runs vertically and either **nextMargin** or **prevMargin** is greater than the measured height of the child component, both margins are hidden. When using the **nextMargin** or **prevMargin** API, avoid applying [size constraints](arkts-arkui-commonmethod-c.md#constraintsize-1) to child components. Otherwise, the main axis of the child nodes will not be stretched to the expected length, causing the margins to lose their effect. > **NOTE** > > This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
+Sets the leading margin to reveal a portion of the previous item. For the implementation example, see
+[Example 1: Setting the Navigation Indicator Interaction and Page Turning Effect](../../../../reference/apis-arkui/arkui-ts/ts-container-swiper.md#example-1-setting-the-navigation-indicator-interaction-and-page-turning-effect).
+This attribute is effective only when the layout mode of the child components in **Swiper** is set to stretch,
+which mainly includes two scenarios: 1. **displayMode** is set to **SwiperDisplayMode.STRETCH**; 2.
+**displayCount** is assigned a numeric value.
+
+When the main axis runs horizontally and either **nextMargin** or **prevMargin** is greater than the measured width
+of the child component, both margins are hidden.
+
+When the main axis runs vertically and either **nextMargin** or **prevMargin** is greater than the measured height
+of the child component, both margins are hidden.
+
+When using the **nextMargin** or **prevMargin** API, avoid applying
+[size constraints](arkts-arkui-commonmethod-c.md#constraintsize-1) to child components. Otherwise, the main axis of the child
+nodes will not be stretched to the expected length, causing the margins to lose their effect.
+
+> **NOTE**
+>
+> This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 10
 

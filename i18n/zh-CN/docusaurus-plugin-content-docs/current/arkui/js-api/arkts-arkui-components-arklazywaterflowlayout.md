@@ -1,30 +1,24 @@
 # @ohos.arkui.components.ArkLazyWaterFlowLayout
 
-## 导入模块
-
-```TypeScript
-import { LazyVWaterFlowLayout,LazyWaterFlowLayoutAttribute,LazyVWaterFlowLayoutAttribute } from '@kit.ArkUI';
-```
-
 ## 汇总
 
 ### 类
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| [LazyVWaterFlowLayoutAttribute](arkts-lazyvwaterflowlayoutattribute-c.md) | Defines the lazy vertical waterflow layout attribute. |
-| [LazyWaterFlowLayoutAttribute](arkts-lazywaterflowlayoutattribute-c.md) | Defines the lazy waterflow layout attribute. |
+| [LazyVWaterFlowLayoutAttribute](arkts-arkui-lazyvwaterflowlayoutattribute-c.md) | 定义懒加载垂直瀑布流布局属性。 |
+| [LazyWaterFlowLayoutAttribute](arkts-arkui-lazywaterflowlayoutattribute-c.md) | 定义懒加载瀑布流布局属性。 |
 
 ### 接口
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| [LazyVWaterFlowLayoutInterface](arkts-lazyvwaterflowlayoutinterface-i.md) | Defines the lazy vertical waterflow layout component. |
+| [LazyVWaterFlowLayoutInterface](arkts-arkui-lazyvwaterflowlayoutinterface-i.md) | 定义懒加载垂直瀑布流布局组件。 |
 
 ### 常量
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| [LazyVWaterFlowLayout](arkts-arkui-components-arklazywaterflowlayout-con.md#LazyVWaterFlowLayout) | Defines LazyVWaterFlowLayout Component. |
-| [LazyVWaterFlowLayoutInstance](arkts-arkui-components-arklazywaterflowlayout-con.md#LazyVWaterFlowLayoutInstance) | Defines LazyVWaterFlowLayout Component instance. |
+| [LazyVWaterFlowLayout](arkts-arkui-arkui-components-arklazywaterflowlayout-con.md#lazyvwaterflowlayout) | 定义LazyVWaterFlowLayout组件。 |
+| [LazyVWaterFlowLayoutInstance](arkts-arkui-arkui-components-arklazywaterflowlayout-con.md#lazyvwaterflowlayoutinstance) | 定义LazyVWaterFlowLayout组件实例。 |
 

@@ -19,7 +19,7 @@
 
 | 名称 | 说明 |
 | --- | --- |
-| [ColorSpaceManager](arkts-arkgraphics2d-colorspacemanager-i.md) | 当前可共享的色彩管理实例。 下列API示例中都需先使用[create()](arkts-arkgraphics2d-create-f.md#create-1)获取到 ColorSpaceManager实例，再通过此实例调用对应方法。 |
+| [ColorSpaceManager](arkts-arkgraphics2d-colorspacemanager-i.md) | 当前可共享的色彩管理实例。下列API示例中都需先使用[create()](arkts-arkgraphics2d-create-f.md#create-1)获取到ColorSpaceManager实例，再通过此实例调用对应方法。 |
 
 ### 类型
 

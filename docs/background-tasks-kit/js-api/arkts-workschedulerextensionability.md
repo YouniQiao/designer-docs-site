@@ -12,11 +12,11 @@ import { WorkSchedulerExtensionContext } from '@kit.BackgroundTasksKit';
 
 | Name | Description |
 | --- | --- |
-| [WorkSchedulerExtensionAbility](arkts-workschedulerextensionability-c.md) | 延迟任务回调，当满足调度条件或调度结束时，系统会回调应用WorkSchedulerExtensionAbility中 [onWorkStart()]{@link WorkSchedulerExtensionAbility.onWorkStart}或 [onWorkStop()]{@link WorkSchedulerExtensionAbility.onWorkStop}的方法。 |
+| [WorkSchedulerExtensionAbility](arkts-backgroundtasks-workschedulerextensionability-c.md) | Provides callbacks to be invoked when the scheduling conditions are met or the scheduling ends, for example, [onWorkStart()](arkts-backgroundtasks-workschedulerextensionability-c.md#onworkstart-1) or [onWorkStop()](arkts-backgroundtasks-workschedulerextensionability-c.md#onworkstop-1) in WorkSchedulerExtensionAbility. |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [WorkSchedulerExtensionContext](arkts-workschedulerextensioncontext-t.md) | WorkSchedulerExtensionContext是WorkSchedulerExtensionAbility的上下文环境，继承自 [ExtensionContext]{@link ./application/ExtensionContext:ExtensionContext}。 |
+| [WorkSchedulerExtensionContext](arkts-backgroundtasks-workschedulerextensioncontext-t.md) | WorkSchedulerExtensionContext represents the context of WorkSchedulerExtensionAbility and is inherited from [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md). |
 

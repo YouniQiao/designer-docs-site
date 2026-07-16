@@ -1,28 +1,22 @@
 # @ohos.arkui.components.ArkLazyDynamicLayout
 
-## 导入模块
-
-```TypeScript
-import { LazyDynamicLayoutAttribute,LazyDynamicLayout } from '@kit.ArkUI';
-```
-
 ## 汇总
 
 ### 函数
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| [LazyDynamicLayout](arkts-arkui-components-arklazydynamiclayout-lazydynamiclayout-f.md#LazyDynamicLayout-1) | Defines LazyDynamicLayout Component. |
+| [LazyDynamicLayout](arkts-arkui-arkui-components-arklazydynamiclayout-lazydynamiclayout-f.md#lazydynamiclayout-1) | 定义LazyDynamicLayout组件。 |
 
 ### 类
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| [LazyDynamicLayoutAttribute](arkts-lazydynamiclayoutattribute-c.md) | Defines the LazyDynamicLayout attribute functions. |
+| [LazyDynamicLayoutAttribute](arkts-arkui-lazydynamiclayoutattribute-c.md) | 定义LazyDynamicLayout组件。 |
 
 ### 常量
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| [LazyDynamicLayoutInstance](arkts-arkui-components-arklazydynamiclayout-con.md#LazyDynamicLayoutInstance) | Defines LazyDynamicLayout Component instance. |
+| [LazyDynamicLayoutInstance](arkts-arkui-arkui-components-arklazydynamiclayout-con.md#lazydynamiclayoutinstance) | 定义LazyDynamicLayout组件实例。 |
 

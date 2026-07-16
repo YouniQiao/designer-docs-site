@@ -18,19 +18,19 @@ import { commonType } from '@kit.ArkData';
 
 | Name | Description |
 | --- | --- |
-| [Asset](arkts-commontype-asset-i.md) | Represents asset (such as a file, image, or video) information. |
-
-### Types
-
-| Name | Description |
-| --- | --- |
-| [Assets](arkts-commontype-assets-t.md) | Represents an array of Assets. |
-| [ValuesBucket](arkts-commontype-valuesbucket-t.md) | Defines the types of the key and value in a KV pair. |
-| [ValueType](arkts-commontype-valuetype-t.md) | Enumerates the value types, which vary with the parameter function. |
+| [Asset](arkts-arkdata-asset-i.md) | Represents asset (such as a file, image, or video) information. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [AssetStatus](arkts-commontype-assetstatus-e.md) | Enumerates the asset statuses. |
+| [AssetStatus](arkts-arkdata-assetstatus-e.md) | Enumerates the asset statuses. |
+
+### Types
+
+| Name | Description |
+| --- | --- |
+| [Assets](arkts-arkdata-assets-t.md) | Represents an array of Assets. |
+| [ValueType](arkts-arkdata-valuetype-t.md) | Enumerates the value types, which vary with the parameter function. |
+| [ValuesBucket](arkts-arkdata-valuesbucket-t.md) | Defines the types of the key and value in a KV pair. |
 

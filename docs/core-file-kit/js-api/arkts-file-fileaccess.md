@@ -1,6 +1,14 @@
 # @ohos.file.fileAccess
 
-The **fileAccess** module provides a framework for accessing and operating user files based on [extension](../../../../application-models/extensionability-overview.md). This module interacts with a variety of file management services, such as the storage management service, and provides a set of unified file access and management APIs for system applications. The storage management service manages both the directories of the built-in storage and resources on external devices, such as shared disks, USB flash drives, and SD cards. > **NOTE** > > - Currently, the APIs of this module can be called only by **FilePicker** and **FileManager**.
+The **fileAccess** module provides a framework for accessing and operating user files based on
+[extension](../../../../application-models/extensionability-overview.md). This module interacts with a variety of file
+management services, such as the storage management service, and provides a set of unified file access and management
+APIs for system applications. The storage management service manages both the directories of the built-in storage and
+resources on external devices, such as shared disks, USB flash drives, and SD cards.
+
+> **NOTE**
+>
+> - Currently, the APIs of this module can be called only by **FilePicker** and **FileManager**.
 
 **Since:** 9
 

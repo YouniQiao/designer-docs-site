@@ -6,5 +6,5 @@
 
 | Name | Description |
 | --- | --- |
-| [CommonEventData](arkts-commoneventdata-i.md) | 表示公共事件的数据。 |
+| [CommonEventData](arkts-basicservices-commoneventdata-i.md) | Describes the data of a common event. |
 

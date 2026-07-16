@@ -21,6 +21,6 @@ import { WindowExtensionContext } from '@kit.ArkUI';
 
 | Name | Description |
 | --- | --- |
-| [WindowExtensionContext](arkts-arkui-windowextensioncontext-t-sys.md) | The context of window extension. It allows access to windowExtension-specific resources. |
+| [WindowExtensionContext](arkts-arkui-windowextensioncontext-t-sys.md) | The context of window extension. It allows access towindowExtension-specific resources. |
 <!--DelEnd-->
 

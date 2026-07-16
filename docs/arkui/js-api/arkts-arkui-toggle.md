@@ -1,6 +1,9 @@
 # Toggle
 
-The **Toggle** component provides a clickable element of the checkbox, button, or switch type. > **NOTE**
+The **Toggle** component provides a clickable element of the checkbox, button, or switch type.
+
+> **NOTE**
+
 
 ## Toggle
 

@@ -8,9 +8,11 @@ import { FenceExtensionContext } from '@kit.LocationKit';
 
 ## Summary
 
-### Classes
+<!--Del-->
+### Classes（系统接口）
 
 | Name | Description |
 | --- | --- |
-| [FenceExtensionContext](arkts-fenceextensioncontext-c.md) | class of static subscriber extension context. |
+| [FenceExtensionContext](arkts-location-fenceextensioncontext-c-sys.md) | class of static subscriber extension context. |
+<!--DelEnd-->
 

@@ -128,7 +128,7 @@ Whether the tool can be executed when the screen is locked.
 
 **Default:** false
 
-**Since:** 26.1.0
+**Since:** 26.0.0
 
 **Model restriction:** This API can be used only in the stage model.
 

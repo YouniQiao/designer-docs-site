@@ -1,6 +1,6 @@
 # @ohos.graphics.hdrCapability
 
-本模块提供HDR（高动态显示范围）能力涉及到的相关枚举类型。
+The hdrCapability module provides enums related to the High Dynamic Range (HDR) capability.
 
 **Since:** 11
 
@@ -18,5 +18,5 @@ import { hdrCapability } from '@kit.ArkGraphics2D';
 
 | Name | Description |
 | --- | --- |
-| [HDRFormat](arkts-hdrcapability-hdrformat-e.md) | HDR格式枚举。 |
+| [HDRFormat](arkts-arkgraphics2d-hdrformat-e.md) | Enumerates the HDR formats. |
 

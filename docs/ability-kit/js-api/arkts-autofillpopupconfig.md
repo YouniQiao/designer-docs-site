@@ -2,16 +2,20 @@
 
 ## Summary
 
-### Interfaces
+<!--Del-->
+### Interfaces（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[AutoFillPopupConfig](arkts-autofillpopupconfig-i.md) | 自动填充气泡弹窗的尺寸和位置信息。 |
-| <!--DelRow-->[PopupSize](arkts-popupsize-i.md) | 表示气泡弹窗的宽和高。 |
+| [AutoFillPopupConfig](arkts-ability-autofillpopupconfig-i-sys.md) | The module describes the size and position information of an auto-fill pop-up. |
+| [PopupSize](arkts-ability-popupsize-i-sys.md) | Describes the width and height of the auto-fill pop-up. |
+<!--DelEnd-->
 
-### Enums
+<!--Del-->
+### Enums（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[PopupPlacement](arkts-popupplacement-e.md) | 表示气泡弹窗位置的枚举。 |
+| [PopupPlacement](arkts-ability-popupplacement-e-sys.md) | Enumerates the positions of an auto-fill pop-up. |
+<!--DelEnd-->
 

@@ -6,6 +6,12 @@ The definition of nearlinkConstant.
 
 **System capability:** SystemCapability.Communication.NearLink.Base
 
+## Modules to Import
+
+```TypeScript
+import { nearlinkConstant } from '@kit.ConnectivityKit';
+```
+
 ## Summary
 
 ### Enums

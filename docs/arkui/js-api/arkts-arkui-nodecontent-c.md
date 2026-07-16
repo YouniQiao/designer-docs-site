@@ -2,7 +2,7 @@
 
 NodeContent is the entity encapsulation of the node content.
 
-**Inheritance/Implementation:** NodeContent extends [Content](arkts-arkui-content-c.md#content)
+**Inheritance/Implementation:** NodeContent extends [Content](arkts-arkui-content-c.md)
 
 **Since:** 12
 
@@ -34,7 +34,7 @@ Adds a FrameNode to this **NodeContent** object.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [100025](../errorcode-node.md#100025-invalid-parameter-value) | The parameter is invalid. Details about the invalid parameter and the reasonare included in the error message.For example: "The parameter 'node' is invalid: it cannot be adopted."<br>**Applicable version:** 22 |
+| [100025](../errorcode-node.md#100025-invalid-parameter-value) | The parameter is invalid. Details about the invalid parameter and the reasonare included in the error message.For example: "The parameter 'node' is invalid: it cannot be adopted."<br>**Applicable version:** 22 and later |
 
 ## constructor
 

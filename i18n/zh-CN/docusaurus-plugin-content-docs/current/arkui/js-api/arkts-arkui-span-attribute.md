@@ -1,6 +1,9 @@
 # Span属性/事件
 
-属性继承自[BaseSpan](arkts-arkui-basespan-c.md)。 通用事件支持[点击事件onClick](arkts-arkui-commonmethod-c.md#onclick-2)、 [悬浮事件onHover](arkts-arkui-commonmethod-c.md#onhover-1)。
+属性继承自[BaseSpan](arkts-arkui-basespan-c.md)。
+
+通用事件支持[点击事件onClick](arkts-arkui-commonmethod-c.md#onclick-2)、
+[悬浮事件onHover](arkts-arkui-commonmethod-c.md#onhover-1)。
 
 **继承/实现关系：** SpanAttribute extends [BaseSpan<SpanAttribute>](BaseSpan<SpanAttribute>)
 

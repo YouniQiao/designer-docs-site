@@ -1,5 +1,7 @@
 # @ohos.pluginComponent
 
+Plugin component manager interface.
+
 ## Modules to Import
 
 ```TypeScript
@@ -12,11 +14,11 @@ import { PluginComponentTemplate } from '@kit.ArkUI';
 
 | Name | Description |
 | --- | --- |
-| [pluginComponentManager](arkts-plugincomponentmanager-n.md) | Plugin component manager interface. |
+| [pluginComponentManager](arkts-arkui-plugincomponentmanager-n.md) | Plugin component manager interface. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [PluginComponentTemplate](arkts-plugincomponenttemplate-i.md) | Plugin component template property. |
+| [PluginComponentTemplate](arkts-arkui-plugincomponenttemplate-i.md) | Plugin component template property. |
 

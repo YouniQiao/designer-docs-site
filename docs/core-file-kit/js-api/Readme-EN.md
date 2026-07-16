@@ -1,520 +1,477 @@
-# CoreFileKit
+# ArkTS API<!--arkts-corefilekit-->
 
 - [@ohos.application.BackupExtensionAbility](arkts-application-backupextensionability.md)
-  - [BackupExtensionAbility](arkts-backupextensionability-c.md)
-  - [BundleVersion](arkts-bundleversion-i.md)
+  - [BackupExtensionAbility](arkts-corefile-backupextensionability-c.md)<!--Del-->
+  - [BackupExtensionAbility(system api)](arkts-corefile-backupextensionability-c-sys.md)<!--DelEnd-->
+  - [BundleVersion](arkts-corefile-bundleversion-i.md)
+- [@ohos.document](arkts-document.md)
+  - [document](arkts-corefile-document-depr-n.md)
+  - [choose](arkts-corefile-document-choose-f.md)
+  - [show](arkts-corefile-document-show-f.md)
 - [@ohos.file.BackupExtensionContext](arkts-file-backupextensioncontext.md)
-  - [BackupExtensionContext](arkts-backupextensioncontext-c.md)
+  - [BackupExtensionContext](arkts-corefile-backupextensioncontext-c.md)
 - [@ohos.file.backup](arkts-file-backup.md)<!--Del-->
-  - [getLocalCapabilities(system api)](arkts-backup-getlocalcapabilities-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getBackupVersion(system api)](arkts-backup-getbackupversion-f-sys.md)<!--DelEnd--><!--Del-->
-  - [updateSendRate(system api)](arkts-backup-updatesendrate-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getBackupInfo(system api)](arkts-backup-getbackupinfo-f-sys.md)<!--DelEnd--><!--Del-->
-  - [fileSystemServiceRequest(system api)](arkts-backup-filesystemservicerequest-f-sys.md)<!--DelEnd--><!--Del-->
-  - [updateTimer(system api)](arkts-backup-updatetimer-f-sys.md)<!--DelEnd--><!--Del-->
-  - [IncrementalBackupSession(system api)](arkts-backup-incrementalbackupsession-c-sys.md)<!--DelEnd--><!--Del-->
-  - [SessionBackup(system api)](arkts-backup-sessionbackup-c-sys.md)<!--DelEnd--><!--Del-->
-  - [SessionRestore(system api)](arkts-backup-sessionrestore-c-sys.md)<!--DelEnd--><!--Del-->
-  - [BackupParams(system api)](arkts-backup-backupparams-i-sys.md)<!--DelEnd--><!--Del-->
-  - [BackupPriority(system api)](arkts-backup-backuppriority-i-sys.md)<!--DelEnd--><!--Del-->
-  - [File(system api)](arkts-backup-file-i-sys.md)<!--DelEnd--><!--Del-->
-  - [FileData(system api)](arkts-backup-filedata-i-sys.md)<!--DelEnd--><!--Del-->
-  - [FileManifestData(system api)](arkts-backup-filemanifestdata-i-sys.md)<!--DelEnd--><!--Del-->
-  - [FileMeta(system api)](arkts-backup-filemeta-i-sys.md)<!--DelEnd--><!--Del-->
-  - [FileSystemRequestConfig(system api)](arkts-backup-filesystemrequestconfig-i-sys.md)<!--DelEnd--><!--Del-->
-  - [GeneralCallbacks(system api)](arkts-backup-generalcallbacks-i-sys.md)<!--DelEnd--><!--Del-->
-  - [IncrementalBackupData(system api)](arkts-backup-incrementalbackupdata-i-sys.md)<!--DelEnd--><!--Del-->
-  - [IncrementalBackupTime(system api)](arkts-backup-incrementalbackuptime-i-sys.md)<!--DelEnd--><!--Del-->
-  - [PathInfo(system api)](arkts-backup-pathinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [BundlePara(system api)](arkts-backup-bundlepara-t-sys.md)<!--DelEnd--><!--Del-->
-  - [OnBackupSizeReport(system api)](arkts-backup-onbackupsizereport-t-sys.md)<!--DelEnd--><!--Del-->
-  - [OnFileReadyBatch(system api)](arkts-backup-onfilereadybatch-t-sys.md)<!--DelEnd--><!--Del-->
-  - [OnProcess(system api)](arkts-backup-onprocess-t-sys.md)<!--DelEnd--><!--Del-->
-  - [OnResultReport(system api)](arkts-backup-onresultreport-t-sys.md)<!--DelEnd-->
+  - [fileSystemServiceRequest(system api)](arkts-corefile-filesystemservicerequest-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getBackupInfo(system api)](arkts-corefile-getbackupinfo-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getBackupVersion(system api)](arkts-corefile-getbackupversion-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getLocalCapabilities(system api)](arkts-corefile-getlocalcapabilities-f-sys.md)<!--DelEnd--><!--Del-->
+  - [updateSendRate(system api)](arkts-corefile-updatesendrate-f-sys.md)<!--DelEnd--><!--Del-->
+  - [updateTimer(system api)](arkts-corefile-updatetimer-f-sys.md)<!--DelEnd--><!--Del-->
+  - [IncrementalBackupSession(system api)](arkts-corefile-incrementalbackupsession-c-sys.md)<!--DelEnd--><!--Del-->
+  - [SessionBackup(system api)](arkts-corefile-sessionbackup-c-sys.md)<!--DelEnd--><!--Del-->
+  - [SessionRestore(system api)](arkts-corefile-sessionrestore-c-sys.md)<!--DelEnd--><!--Del-->
+  - [BackupParams(system api)](arkts-corefile-backupparams-i-sys.md)<!--DelEnd--><!--Del-->
+  - [BackupPriority(system api)](arkts-corefile-backuppriority-i-sys.md)<!--DelEnd-->
+  - [File](arkts-corefile-file-i.md)<!--Del-->
+  - [FileData(system api)](arkts-corefile-filedata-i-sys.md)<!--DelEnd--><!--Del-->
+  - [FileManifestData(system api)](arkts-corefile-filemanifestdata-i-sys.md)<!--DelEnd--><!--Del-->
+  - [FileMeta(system api)](arkts-corefile-filemeta-i-sys.md)<!--DelEnd--><!--Del-->
+  - [FileSystemRequestConfig(system api)](arkts-corefile-filesystemrequestconfig-i-sys.md)<!--DelEnd--><!--Del-->
+  - [GeneralCallbacks(system api)](arkts-corefile-generalcallbacks-i-sys.md)<!--DelEnd-->
+  - [IncrementalBackupData](arkts-corefile-incrementalbackupdata-i.md)<!--Del-->
+  - [IncrementalBackupTime(system api)](arkts-corefile-incrementalbackuptime-i-sys.md)<!--DelEnd--><!--Del-->
+  - [PathInfo(system api)](arkts-corefile-pathinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [OnBackupSizeReport(system api)](arkts-corefile-onbackupsizereport-t-sys.md)<!--DelEnd--><!--Del-->
+  - [OnFileReadyBatch(system api)](arkts-corefile-onfilereadybatch-t-sys.md)<!--DelEnd-->
 - [@ohos.file.cloudDiskManager](arkts-file-clouddiskmanager.md)<!--Del-->
-  - [SyncFolderAccessor(system api)](arkts-clouddiskmanager-syncfolderaccessor-c-sys.md)<!--DelEnd--><!--Del-->
-  - [SyncFolder(system api)](arkts-clouddiskmanager-syncfolder-i-sys.md)<!--DelEnd--><!--Del-->
-  - [SyncFolderState(system api)](arkts-clouddiskmanager-syncfolderstate-e-sys.md)<!--DelEnd-->
-- [@ohos.file.cloudDiskManager](arkts-file-clouddiskmanager.md)<!--Del-->
-  - [SyncFolderAccessor(system api)](arkts-clouddiskmanager-syncfolderaccessor-c-sys.md)<!--DelEnd--><!--Del-->
-  - [SyncFolder(system api)](arkts-clouddiskmanager-syncfolder-i-sys.md)<!--DelEnd--><!--Del-->
-  - [SyncFolderState(system api)](arkts-clouddiskmanager-syncfolderstate-e-sys.md)<!--DelEnd-->
+  - [SyncFolderAccessor(system api)](arkts-corefile-syncfolderaccessor-c-sys.md)<!--DelEnd--><!--Del-->
+  - [SyncFolder(system api)](arkts-corefile-syncfolder-i-sys.md)<!--DelEnd--><!--Del-->
+  - [SyncFolderState(system api)](arkts-corefile-syncfolderstate-e-sys.md)<!--DelEnd-->
 - [@ohos.file.cloudSync](arkts-file-cloudsync.md)
-  - [registerChange](arkts-cloudsync-registerchange-f.md)
-  - [getCoreFileSyncState](arkts-cloudsync-getcorefilesyncstate-f.md)<!--Del-->
-  - [stopOptimizeSpace(system api)](arkts-cloudsync-stopoptimizespace-f-sys.md)<!--DelEnd-->
-  - [unregisterChange](arkts-cloudsync-unregisterchange-f.md)<!--Del-->
-  - [optimizeStorage(system api)](arkts-cloudsync-optimizestorage-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getFileSyncState(system api)](arkts-cloudsync-getfilesyncstate-f-sys.md)<!--DelEnd--><!--Del-->
-  - [startOptimizeSpace(system api)](arkts-cloudsync-startoptimizespace-f-sys.md)<!--DelEnd-->
-  - [CloudFileCache](arkts-cloudsync-cloudfilecache-c.md)<!--Del-->
-  - [Download(system api)](arkts-cloudsync-download-c-sys.md)<!--DelEnd-->
-  - [FileSync](arkts-cloudsync-filesync-c.md)
-  - [FileVersion](arkts-cloudsync-fileversion-c.md)<!--Del-->
-  - [GallerySync(system api)](arkts-cloudsync-gallerysync-c-sys.md)<!--DelEnd-->
-  - [MultiDownloadProgress](arkts-cloudsync-multidownloadprogress-c.md)
-  - [ChangeData](arkts-cloudsync-changedata-i.md)
-  - [DownloadProgress](arkts-cloudsync-downloadprogress-i.md)
-  - [FailedFileInfo](arkts-cloudsync-failedfileinfo-i.md)
-  - [HistoryVersion](arkts-cloudsync-historyversion-i.md)<!--Del-->
-  - [OptimizeSpaceParam(system api)](arkts-cloudsync-optimizespaceparam-i-sys.md)<!--DelEnd--><!--Del-->
-  - [OptimizeSpaceProgress(system api)](arkts-cloudsync-optimizespaceprogress-i-sys.md)<!--DelEnd-->
-  - [SyncProgress](arkts-cloudsync-syncprogress-i.md)<!--Del-->
-  - [UploadProgress(system api)](arkts-cloudsync-uploadprogress-i-sys.md)<!--DelEnd-->
-  - [VersionDownloadProgress](arkts-cloudsync-versiondownloadprogress-i.md)
-  - [DownloadErrorType](arkts-cloudsync-downloaderrortype-e.md)
-  - [DownloadFileType](arkts-cloudsync-downloadfiletype-e.md)
-  - [ErrorType](arkts-cloudsync-errortype-e.md)
-  - [FileState](arkts-cloudsync-filestate-e.md)<!--Del-->
-  - [FileSyncState(system api)](arkts-cloudsync-filesyncstate-e-sys.md)<!--DelEnd-->
-  - [NotifyType](arkts-cloudsync-notifytype-e.md)<!--Del-->
-  - [OptimizeState(system api)](arkts-cloudsync-optimizestate-e-sys.md)<!--DelEnd-->
-  - [State](arkts-cloudsync-state-e.md)
-  - [SyncState](arkts-cloudsync-syncstate-e.md)<!--Del-->
-  - [UploadState(system api)](arkts-cloudsync-uploadstate-e-sys.md)<!--DelEnd-->
-- [@ohos.file.cloudSync](arkts-file-cloudsync.md)
-  - [registerChange](arkts-cloudsync-registerchange-f.md)
-  - [getCoreFileSyncState](arkts-cloudsync-getcorefilesyncstate-f.md)<!--Del-->
-  - [stopOptimizeSpace(system api)](arkts-cloudsync-stopoptimizespace-f-sys.md)<!--DelEnd-->
-  - [unregisterChange](arkts-cloudsync-unregisterchange-f.md)<!--Del-->
-  - [optimizeStorage(system api)](arkts-cloudsync-optimizestorage-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getFileSyncState(system api)](arkts-cloudsync-getfilesyncstate-f-sys.md)<!--DelEnd--><!--Del-->
-  - [startOptimizeSpace(system api)](arkts-cloudsync-startoptimizespace-f-sys.md)<!--DelEnd-->
-  - [CloudFileCache](arkts-cloudsync-cloudfilecache-c.md)<!--Del-->
-  - [Download(system api)](arkts-cloudsync-download-c-sys.md)<!--DelEnd-->
-  - [FileSync](arkts-cloudsync-filesync-c.md)
-  - [FileVersion](arkts-cloudsync-fileversion-c.md)<!--Del-->
-  - [GallerySync(system api)](arkts-cloudsync-gallerysync-c-sys.md)<!--DelEnd-->
-  - [MultiDownloadProgress](arkts-cloudsync-multidownloadprogress-c.md)
-  - [ChangeData](arkts-cloudsync-changedata-i.md)
-  - [DownloadProgress](arkts-cloudsync-downloadprogress-i.md)
-  - [FailedFileInfo](arkts-cloudsync-failedfileinfo-i.md)
-  - [HistoryVersion](arkts-cloudsync-historyversion-i.md)<!--Del-->
-  - [OptimizeSpaceParam(system api)](arkts-cloudsync-optimizespaceparam-i-sys.md)<!--DelEnd--><!--Del-->
-  - [OptimizeSpaceProgress(system api)](arkts-cloudsync-optimizespaceprogress-i-sys.md)<!--DelEnd-->
-  - [SyncProgress](arkts-cloudsync-syncprogress-i.md)<!--Del-->
-  - [UploadProgress(system api)](arkts-cloudsync-uploadprogress-i-sys.md)<!--DelEnd-->
-  - [VersionDownloadProgress](arkts-cloudsync-versiondownloadprogress-i.md)
-  - [DownloadErrorType](arkts-cloudsync-downloaderrortype-e.md)
-  - [DownloadFileType](arkts-cloudsync-downloadfiletype-e.md)
-  - [ErrorType](arkts-cloudsync-errortype-e.md)
-  - [FileState](arkts-cloudsync-filestate-e.md)<!--Del-->
-  - [FileSyncState(system api)](arkts-cloudsync-filesyncstate-e-sys.md)<!--DelEnd-->
-  - [NotifyType](arkts-cloudsync-notifytype-e.md)<!--Del-->
-  - [OptimizeState(system api)](arkts-cloudsync-optimizestate-e-sys.md)<!--DelEnd-->
-  - [State](arkts-cloudsync-state-e.md)
-  - [SyncState](arkts-cloudsync-syncstate-e.md)<!--Del-->
-  - [UploadState(system api)](arkts-cloudsync-uploadstate-e-sys.md)<!--DelEnd-->
+  - [getCoreFileSyncState](arkts-corefile-getcorefilesyncstate-f.md)<!--Del-->
+  - [getFileSyncState(system api)](arkts-corefile-getfilesyncstate-f-sys.md)<!--DelEnd--><!--Del-->
+  - [optimizeStorage(system api)](arkts-corefile-optimizestorage-f-sys.md)<!--DelEnd-->
+  - [registerChange](arkts-corefile-registerchange-f.md)<!--Del-->
+  - [startOptimizeSpace(system api)](arkts-corefile-startoptimizespace-f-sys.md)<!--DelEnd--><!--Del-->
+  - [stopOptimizeSpace(system api)](arkts-corefile-stopoptimizespace-f-sys.md)<!--DelEnd-->
+  - [unregisterChange](arkts-corefile-unregisterchange-f.md)
+  - [CloudFileCache](arkts-corefile-cloudfilecache-c.md)<!--Del-->
+  - [CloudFileCache(system api)](arkts-corefile-cloudfilecache-c-sys.md)<!--DelEnd--><!--Del-->
+  - [Download(system api)](arkts-corefile-download-c-sys.md)<!--DelEnd-->
+  - [FileSync](arkts-corefile-filesync-c.md)<!--Del-->
+  - [FileSync(system api)](arkts-corefile-filesync-c-sys.md)<!--DelEnd-->
+  - [FileVersion](arkts-corefile-fileversion-c.md)<!--Del-->
+  - [GallerySync(system api)](arkts-corefile-gallerysync-c-sys.md)<!--DelEnd-->
+  - [MultiDownloadProgress](arkts-corefile-multidownloadprogress-c.md)
+  - [ChangeData](arkts-corefile-changedata-i.md)
+  - [DownloadProgress](arkts-corefile-downloadprogress-i.md)
+  - [FailedFileInfo](arkts-corefile-failedfileinfo-i.md)
+  - [HistoryVersion](arkts-corefile-historyversion-i.md)<!--Del-->
+  - [OptimizeSpaceParam(system api)](arkts-corefile-optimizespaceparam-i-sys.md)<!--DelEnd--><!--Del-->
+  - [OptimizeSpaceProgress(system api)](arkts-corefile-optimizespaceprogress-i-sys.md)<!--DelEnd-->
+  - [SyncProgress](arkts-corefile-syncprogress-i.md)<!--Del-->
+  - [UploadProgress(system api)](arkts-corefile-uploadprogress-i-sys.md)<!--DelEnd-->
+  - [VersionDownloadProgress](arkts-corefile-versiondownloadprogress-i.md)
+  - [DownloadErrorType](arkts-corefile-downloaderrortype-e.md)
+  - [DownloadFileType](arkts-corefile-downloadfiletype-e.md)
+  - [ErrorType](arkts-corefile-errortype-e.md)<!--Del-->
+  - [ErrorType(system api)](arkts-corefile-errortype-e-sys.md)<!--DelEnd-->
+  - [FileState](arkts-corefile-filestate-e.md)<!--Del-->
+  - [FileSyncState(system api)](arkts-corefile-filesyncstate-e-sys.md)<!--DelEnd-->
+  - [NotifyType](arkts-corefile-notifytype-e.md)<!--Del-->
+  - [OptimizeState(system api)](arkts-corefile-optimizestate-e-sys.md)<!--DelEnd-->
+  - [State](arkts-corefile-state-e.md)<!--Del-->
+  - [State(system api)](arkts-corefile-state-e-sys.md)<!--DelEnd-->
+  - [SyncState](arkts-corefile-syncstate-e.md)<!--Del-->
+  - [UploadState(system api)](arkts-corefile-uploadstate-e-sys.md)<!--DelEnd-->
 - [@ohos.file.cloudSyncManager](arkts-file-cloudsyncmanager.md)<!--Del-->
-  - [getDowngradeDownloadTaskState(system api)](arkts-cloudsyncmanager-getdowngradedownloadtaskstate-f-sys.md)<!--DelEnd--><!--Del-->
-  - [changeAppCloudSwitch(system api)](arkts-cloudsyncmanager-changeappcloudswitch-f-sys.md)<!--DelEnd--><!--Del-->
-  - [disableCloud(system api)](arkts-cloudsyncmanager-disablecloud-f-sys.md)<!--DelEnd--><!--Del-->
-  - [enableCloud(system api)](arkts-cloudsyncmanager-enablecloud-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getBundlesLocalFilePresentStatus(system api)](arkts-cloudsyncmanager-getbundleslocalfilepresentstatus-f-sys.md)<!--DelEnd--><!--Del-->
-  - [clean(system api)](arkts-cloudsyncmanager-clean-f-sys.md)<!--DelEnd--><!--Del-->
-  - [notifyDataChange(system api)](arkts-cloudsyncmanager-notifydatachange-f-sys.md)<!--DelEnd--><!--Del-->
-  - [DowngradeDownload(system api)](arkts-cloudsyncmanager-downgradedownload-c-sys.md)<!--DelEnd-->
-  - [DownloadProgress](arkts-cloudsyncmanager-downloadprogress-c.md)
-  - [CloudFileInfo](arkts-cloudsyncmanager-cloudfileinfo-i.md)<!--Del-->
-  - [ExtraData(system api)](arkts-cloudsyncmanager-extradata-i-sys.md)<!--DelEnd--><!--Del-->
-  - [LocalFilePresentStatus(system api)](arkts-cloudsyncmanager-localfilepresentstatus-i-sys.md)<!--DelEnd--><!--Del-->
-  - [TransferProgress(system api)](arkts-cloudsyncmanager-transferprogress-i-sys.md)<!--DelEnd--><!--Del-->
-  - [Action(system api)](arkts-cloudsyncmanager-action-e-sys.md)<!--DelEnd-->
-  - [DownloadState](arkts-cloudsyncmanager-downloadstate-e.md)
-  - [DownloadStopReason](arkts-cloudsyncmanager-downloadstopreason-e.md)<!--Del-->
-  - [TransferState(system api)](arkts-cloudsyncmanager-transferstate-e-sys.md)<!--DelEnd--><!--Del-->
-  - [TransferStopReason(system api)](arkts-cloudsyncmanager-transferstopreason-e-sys.md)<!--DelEnd-->
-- [@ohos.file.cloudSyncManager](arkts-file-cloudsyncmanager.md)<!--Del-->
-  - [getDowngradeDownloadTaskState(system api)](arkts-cloudsyncmanager-getdowngradedownloadtaskstate-f-sys.md)<!--DelEnd--><!--Del-->
-  - [changeAppCloudSwitch(system api)](arkts-cloudsyncmanager-changeappcloudswitch-f-sys.md)<!--DelEnd--><!--Del-->
-  - [disableCloud(system api)](arkts-cloudsyncmanager-disablecloud-f-sys.md)<!--DelEnd--><!--Del-->
-  - [enableCloud(system api)](arkts-cloudsyncmanager-enablecloud-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getBundlesLocalFilePresentStatus(system api)](arkts-cloudsyncmanager-getbundleslocalfilepresentstatus-f-sys.md)<!--DelEnd--><!--Del-->
-  - [clean(system api)](arkts-cloudsyncmanager-clean-f-sys.md)<!--DelEnd--><!--Del-->
-  - [notifyDataChange(system api)](arkts-cloudsyncmanager-notifydatachange-f-sys.md)<!--DelEnd--><!--Del-->
-  - [DowngradeDownload(system api)](arkts-cloudsyncmanager-downgradedownload-c-sys.md)<!--DelEnd-->
-  - [DownloadProgress](arkts-cloudsyncmanager-downloadprogress-c.md)
-  - [CloudFileInfo](arkts-cloudsyncmanager-cloudfileinfo-i.md)<!--Del-->
-  - [ExtraData(system api)](arkts-cloudsyncmanager-extradata-i-sys.md)<!--DelEnd--><!--Del-->
-  - [LocalFilePresentStatus(system api)](arkts-cloudsyncmanager-localfilepresentstatus-i-sys.md)<!--DelEnd--><!--Del-->
-  - [TransferProgress(system api)](arkts-cloudsyncmanager-transferprogress-i-sys.md)<!--DelEnd--><!--Del-->
-  - [Action(system api)](arkts-cloudsyncmanager-action-e-sys.md)<!--DelEnd-->
-  - [DownloadState](arkts-cloudsyncmanager-downloadstate-e.md)
-  - [DownloadStopReason](arkts-cloudsyncmanager-downloadstopreason-e.md)<!--Del-->
-  - [TransferState(system api)](arkts-cloudsyncmanager-transferstate-e-sys.md)<!--DelEnd--><!--Del-->
-  - [TransferStopReason(system api)](arkts-cloudsyncmanager-transferstopreason-e-sys.md)<!--DelEnd-->
+  - [changeAppCloudSwitch(system api)](arkts-corefile-changeappcloudswitch-f-sys.md)<!--DelEnd--><!--Del-->
+  - [clean(system api)](arkts-corefile-clean-f-sys.md)<!--DelEnd--><!--Del-->
+  - [disableCloud(system api)](arkts-corefile-disablecloud-f-sys.md)<!--DelEnd--><!--Del-->
+  - [enableCloud(system api)](arkts-corefile-enablecloud-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getBundlesLocalFilePresentStatus(system api)](arkts-corefile-getbundleslocalfilepresentstatus-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getDowngradeDownloadTaskState(system api)](arkts-corefile-getdowngradedownloadtaskstate-f-sys.md)<!--DelEnd--><!--Del-->
+  - [notifyDataChange(system api)](arkts-corefile-notifydatachange-f-sys.md)<!--DelEnd--><!--Del-->
+  - [DowngradeDownload(system api)](arkts-corefile-downgradedownload-c-sys.md)<!--DelEnd-->
+  - [DownloadProgress](arkts-corefile-downloadprogress-c.md)
+  - [CloudFileInfo](arkts-corefile-cloudfileinfo-i.md)<!--Del-->
+  - [ExtraData(system api)](arkts-corefile-extradata-i-sys.md)<!--DelEnd--><!--Del-->
+  - [LocalFilePresentStatus(system api)](arkts-corefile-localfilepresentstatus-i-sys.md)<!--DelEnd--><!--Del-->
+  - [TransferProgress(system api)](arkts-corefile-transferprogress-i-sys.md)<!--DelEnd--><!--Del-->
+  - [Action(system api)](arkts-corefile-action-e-sys.md)<!--DelEnd-->
+  - [DownloadState](arkts-corefile-downloadstate-e.md)<!--Del-->
+  - [DownloadState(system api)](arkts-corefile-downloadstate-e-sys.md)<!--DelEnd-->
+  - [DownloadStopReason](arkts-corefile-downloadstopreason-e.md)<!--Del-->
+  - [TransferState(system api)](arkts-corefile-transferstate-e-sys.md)<!--DelEnd--><!--Del-->
+  - [TransferStopReason(system api)](arkts-corefile-transferstopreason-e-sys.md)<!--DelEnd-->
 - [@ohos.file.encryptedVolumeManager](arkts-file-encryptedvolumemanager.md)<!--Del-->
-  - [unlock(system api)](arkts-encryptedvolumemanager-unlock-f-sys.md)<!--DelEnd--><!--Del-->
-  - [verifyCryptPasswd(system api)](arkts-encryptedvolumemanager-verifycryptpasswd-f-sys.md)<!--DelEnd--><!--Del-->
-  - [bindRecoverKeyToPasswd(system api)](arkts-encryptedvolumemanager-bindrecoverkeytopasswd-f-sys.md)<!--DelEnd--><!--Del-->
-  - [updateCryptPasswd(system api)](arkts-encryptedvolumemanager-updatecryptpasswd-f-sys.md)<!--DelEnd--><!--Del-->
-  - [encrypt(system api)](arkts-encryptedvolumemanager-encrypt-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getCryptUuidById(system api)](arkts-encryptedvolumemanager-getcryptuuidbyid-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getCryptProgressById(system api)](arkts-encryptedvolumemanager-getcryptprogressbyid-f-sys.md)<!--DelEnd--><!--Del-->
-  - [resetCryptPasswd(system api)](arkts-encryptedvolumemanager-resetcryptpasswd-f-sys.md)<!--DelEnd--><!--Del-->
-  - [decrypt(system api)](arkts-encryptedvolumemanager-decrypt-f-sys.md)<!--DelEnd-->
+  - [bindRecoverKeyToPasswd(system api)](arkts-corefile-bindrecoverkeytopasswd-f-sys.md)<!--DelEnd--><!--Del-->
+  - [decrypt(system api)](arkts-corefile-decrypt-f-sys.md)<!--DelEnd--><!--Del-->
+  - [encrypt(system api)](arkts-corefile-encrypt-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getCryptProgressById(system api)](arkts-corefile-getcryptprogressbyid-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getCryptUuidById(system api)](arkts-corefile-getcryptuuidbyid-f-sys.md)<!--DelEnd--><!--Del-->
+  - [resetCryptPasswd(system api)](arkts-corefile-resetcryptpasswd-f-sys.md)<!--DelEnd--><!--Del-->
+  - [unlock(system api)](arkts-corefile-unlock-f-sys.md)<!--DelEnd--><!--Del-->
+  - [updateCryptPasswd(system api)](arkts-corefile-updatecryptpasswd-f-sys.md)<!--DelEnd--><!--Del-->
+  - [verifyCryptPasswd(system api)](arkts-corefile-verifycryptpasswd-f-sys.md)<!--DelEnd-->
 - [@ohos.file.environment](arkts-file-environment.md)<!--Del-->
-  - [getUserHomeDir(system api)](arkts-environment-getuserhomedir-f-sys.md)<!--DelEnd-->
-  - [getUserDownloadDir](arkts-environment-getuserdownloaddir-f.md)
-  - [getUserDocumentDir](arkts-environment-getuserdocumentdir-f.md)
-  - [getUserDesktopDir](arkts-environment-getuserdesktopdir-f.md)<!--Del-->
-  - [getExternalStorageDir(system api)](arkts-environment-getexternalstoragedir-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getStorageDataDir(system api)](arkts-environment-getstoragedatadir-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getUserDataDir(system api)](arkts-environment-getuserdatadir-f-sys.md)<!--DelEnd-->
-- [@ohos.file.environment](arkts-file-environment.md)<!--Del-->
-  - [getUserHomeDir(system api)](arkts-environment-getuserhomedir-f-sys.md)<!--DelEnd-->
-  - [getUserDownloadDir](arkts-environment-getuserdownloaddir-f.md)
-  - [getUserDocumentDir](arkts-environment-getuserdocumentdir-f.md)
-  - [getUserDesktopDir](arkts-environment-getuserdesktopdir-f.md)<!--Del-->
-  - [getExternalStorageDir(system api)](arkts-environment-getexternalstoragedir-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getStorageDataDir(system api)](arkts-environment-getstoragedatadir-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getUserDataDir(system api)](arkts-environment-getuserdatadir-f-sys.md)<!--DelEnd-->
+  - [getExternalStorageDir(system api)](arkts-corefile-getexternalstoragedir-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getStorageDataDir(system api)](arkts-corefile-getstoragedatadir-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getUserDataDir(system api)](arkts-corefile-getuserdatadir-f-sys.md)<!--DelEnd-->
+  - [getUserDesktopDir](arkts-corefile-getuserdesktopdir-f.md)
+  - [getUserDocumentDir](arkts-corefile-getuserdocumentdir-f.md)
+  - [getUserDownloadDir](arkts-corefile-getuserdownloaddir-f.md)<!--Del-->
+  - [getUserHomeDir(system api)](arkts-corefile-getuserhomedir-f-sys.md)<!--DelEnd-->
 - [@ohos.file.fileAccess](arkts-file-fileaccess.md)<!--Del-->
-  - [getFileAccessAbilityInfo(system api)](arkts-fileaccess-getfileaccessabilityinfo-f-sys.md)<!--DelEnd--><!--Del-->
-  - [createFileAccessHelper(system api)](arkts-fileaccess-createfileaccesshelper-f-sys.md)<!--DelEnd--><!--Del-->
-  - [CopyResult(system api)](arkts-fileaccess-copyresult-i-sys.md)<!--DelEnd--><!--Del-->
-  - [FileAccessHelper(system api)](arkts-fileaccess-fileaccesshelper-i-sys.md)<!--DelEnd--><!--Del-->
-  - [FileInfo(system api)](arkts-fileaccess-fileinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [FileIterator(system api)](arkts-fileaccess-fileiterator-i-sys.md)<!--DelEnd--><!--Del-->
-  - [MoveResult(system api)](arkts-fileaccess-moveresult-i-sys.md)<!--DelEnd--><!--Del-->
-  - [NotifyMessage(system api)](arkts-fileaccess-notifymessage-i-sys.md)<!--DelEnd--><!--Del-->
-  - [RootInfo(system api)](arkts-fileaccess-rootinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [RootIterator(system api)](arkts-fileaccess-rootiterator-i-sys.md)<!--DelEnd--><!--Del-->
-  - [FileKey(system api)](arkts-fileaccess-filekey-e-sys.md)<!--DelEnd--><!--Del-->
-  - [NotifyType(system api)](arkts-fileaccess-notifytype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [OPENFLAGS(system api)](arkts-fileaccess-openflags-e-sys.md)<!--DelEnd--><!--Del-->
-  - [Constants(system api)](arkts-fileaccess-con-sys.md)<!--DelEnd-->
-- [@ohos.file.fileAccess](arkts-file-fileaccess.md)<!--Del-->
-  - [getFileAccessAbilityInfo(system api)](arkts-fileaccess-getfileaccessabilityinfo-f-sys.md)<!--DelEnd--><!--Del-->
-  - [createFileAccessHelper(system api)](arkts-fileaccess-createfileaccesshelper-f-sys.md)<!--DelEnd--><!--Del-->
-  - [CopyResult(system api)](arkts-fileaccess-copyresult-i-sys.md)<!--DelEnd--><!--Del-->
-  - [FileAccessHelper(system api)](arkts-fileaccess-fileaccesshelper-i-sys.md)<!--DelEnd--><!--Del-->
-  - [FileInfo(system api)](arkts-fileaccess-fileinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [FileIterator(system api)](arkts-fileaccess-fileiterator-i-sys.md)<!--DelEnd--><!--Del-->
-  - [MoveResult(system api)](arkts-fileaccess-moveresult-i-sys.md)<!--DelEnd--><!--Del-->
-  - [NotifyMessage(system api)](arkts-fileaccess-notifymessage-i-sys.md)<!--DelEnd--><!--Del-->
-  - [RootInfo(system api)](arkts-fileaccess-rootinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [RootIterator(system api)](arkts-fileaccess-rootiterator-i-sys.md)<!--DelEnd--><!--Del-->
-  - [FileKey(system api)](arkts-fileaccess-filekey-e-sys.md)<!--DelEnd--><!--Del-->
-  - [NotifyType(system api)](arkts-fileaccess-notifytype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [OPENFLAGS(system api)](arkts-fileaccess-openflags-e-sys.md)<!--DelEnd--><!--Del-->
-  - [Constants(system api)](arkts-fileaccess-con-sys.md)<!--DelEnd-->
-- [@ohos.file.fileExtensionInfo](arkts-file-fileextensioninfo.md)<!--Del-->
-  - [DeviceFlag(system api)](arkts-deviceflag-sta-n.md)<!--DelEnd--><!--Del-->
-   - [Constants(system api)](arkts-deviceflag-con-sys.md)<!--DelEnd--><!--Del-->
-  - [DocumentFlag(system api)](arkts-documentflag-sta-n.md)<!--DelEnd--><!--Del-->
-   - [Constants(system api)](arkts-documentflag-con-sys.md)<!--DelEnd--><!--Del-->
-  - [fileExtensionInfo(system api)](arkts-fileextensioninfo-sta-n.md)<!--DelEnd--><!--Del-->
-   - [DeviceType(system api)](arkts-devicetype-e-sys.md)<!--DelEnd-->
-- [@ohos.file.fileExtensionInfo](arkts-file-fileextensioninfo.md)<!--Del-->
-  - [DeviceFlag(system api)](arkts-deviceflag-sta-n.md)<!--DelEnd--><!--Del-->
-   - [Constants(system api)](arkts-deviceflag-con-sys.md)<!--DelEnd--><!--Del-->
-  - [DocumentFlag(system api)](arkts-documentflag-sta-n.md)<!--DelEnd--><!--Del-->
-   - [Constants(system api)](arkts-documentflag-con-sys.md)<!--DelEnd--><!--Del-->
-  - [fileExtensionInfo(system api)](arkts-fileextensioninfo-sta-n.md)<!--DelEnd--><!--Del-->
-   - [DeviceType(system api)](arkts-devicetype-e-sys.md)<!--DelEnd-->
+  - [createFileAccessHelper(system api)](arkts-corefile-createfileaccesshelper-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getFileAccessAbilityInfo(system api)](arkts-corefile-getfileaccessabilityinfo-f-sys.md)<!--DelEnd--><!--Del-->
+  - [CopyResult(system api)](arkts-corefile-copyresult-i-sys.md)<!--DelEnd--><!--Del-->
+  - [FileAccessHelper(system api)](arkts-corefile-fileaccesshelper-i-sys.md)<!--DelEnd--><!--Del-->
+  - [FileInfo(system api)](arkts-corefile-fileinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [FileIterator(system api)](arkts-corefile-fileiterator-i-sys.md)<!--DelEnd--><!--Del-->
+  - [MoveResult(system api)](arkts-corefile-moveresult-i-sys.md)<!--DelEnd--><!--Del-->
+  - [NotifyMessage(system api)](arkts-corefile-notifymessage-i-sys.md)<!--DelEnd--><!--Del-->
+  - [RootInfo(system api)](arkts-corefile-rootinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [RootIterator(system api)](arkts-corefile-rootiterator-i-sys.md)<!--DelEnd--><!--Del-->
+  - [FileKey(system api)](arkts-corefile-filekey-e-sys.md)<!--DelEnd--><!--Del-->
+  - [NotifyType(system api)](arkts-corefile-notifytype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [OPENFLAGS(system api)](arkts-corefile-openflags-e-sys.md)<!--DelEnd--><!--Del-->
+  - [Constants(system api)](arkts-corefile-fileaccess-con-sys.md)<!--DelEnd-->
+- [@ohos.file.fileExtensionInfo](arkts-file-fileextensioninfo.md)
+  - [fileExtensionInfo](arkts-corefile-fileextensioninfo-n.md)
+    - [DeviceFlag](arkts-corefile-deviceflag-n.md)<!--Del-->
+      - [Constants(system api)](arkts-corefile-deviceflag-con-sys.md)<!--DelEnd-->
+    - [DocumentFlag](arkts-corefile-documentflag-n.md)<!--Del-->
+      - [Constants(system api)](arkts-corefile-documentflag-con-sys.md)<!--DelEnd--><!--Del-->
+    - [DeviceType(system api)](arkts-corefile-devicetype-e-sys.md)<!--DelEnd-->
 - [@ohos.file.fileuri](arkts-file-fileuri.md)
-  - [getUriFromPath](arkts-fileuri-geturifrompath-f.md)
-  - [FileUri](arkts-fileuri-fileuri-c.md)
+  - [getUriFromPath](arkts-corefile-geturifrompath-f.md)
+  - [FileUri](arkts-corefile-fileuri-c.md)
 - [@ohos.file.fs](arkts-file-fs.md)
-  - [fileIo](arkts-fileio-n.md)
-  - [OpenMode](arkts-openmode-n.md)   - [Constants](arkts-openmode-con.md)  - [moveFileSync](arkts-file-fs-movefilesync-f.md)  - [statSync](arkts-file-fs-statsync-f.md)  - [rmdir](arkts-file-fs-rmdir-f.md)  - [copyDir](arkts-file-fs-copydir-f.md)  - [closeSync](arkts-file-fs-closesync-f.md)  - [mkdtemp](arkts-file-fs-mkdtemp-f.md)  - [renameSync](arkts-file-fs-renamesync-f.md)  - [lstatSync](arkts-file-fs-lstatsync-f.md)  - [truncate](arkts-file-fs-truncate-f.md)  - [listFile](arkts-file-fs-listfile-f.md)  - [copyFileSync](arkts-file-fs-copyfilesync-f.md)  - [createStream](arkts-file-fs-createstream-f.md)  - [readLines](arkts-file-fs-readlines-f.md)  - [getxattrSync](arkts-file-fs-getxattrsync-f.md)  - [readSync](arkts-file-fs-readsync-f.md)  - [write](arkts-file-fs-write-f.md)  - [mkdir](arkts-file-fs-mkdir-f.md)  - [mkdirSync](arkts-file-fs-mkdirsync-f.md)  - [read](arkts-file-fs-read-f.md)  - [createWatcher](arkts-file-fs-createwatcher-f.md)  - [connectDfs](arkts-file-fs-connectdfs-f.md)  - [fdopenStreamSync](arkts-file-fs-fdopenstreamsync-f.md)  - [listFileExt](arkts-file-fs-listfileext-f.md)  - [readText](arkts-file-fs-readtext-f.md)  - [createReadStream](arkts-file-fs-createreadstream-f.md)  - [moveFile](arkts-file-fs-movefile-f.md)  - [fsyncSync](arkts-file-fs-fsyncsync-f.md)  - [listFileSync](arkts-file-fs-listfilesync-f.md)  - [mmapSync](arkts-file-fs-mmapsync-f.md)  - [writeSync](arkts-file-fs-writesync-f.md)  - [symlinkSync](arkts-file-fs-symlinksync-f.md)  - [copyFile](arkts-file-fs-copyfile-f.md)  - [lseek](arkts-file-fs-lseek-f.md)  - [access](arkts-file-fs-access-f.md)  - [utimes](arkts-file-fs-utimes-f.md)  - [fdopenStream](arkts-file-fs-fdopenstream-f.md)  - [rmdirSync](arkts-file-fs-rmdirsync-f.md)  - [createStreamSync](arkts-file-fs-createstreamsync-f.md)  - [fsync](arkts-file-fs-fsync-f.md)  - [createRandomAccessFileSync](arkts-file-fs-createrandomaccessfilesync-f.md)  - [symlink](arkts-file-fs-symlink-f.md)  - [fdatasyncSync](arkts-file-fs-fdatasyncsync-f.md)  - [copy](arkts-file-fs-copy-f.md)  - [listFileExtSync](arkts-file-fs-listfileextsync-f.md)  - [close](arkts-file-fs-close-f.md)  - [fdatasync](arkts-file-fs-fdatasync-f.md)  - [stat](arkts-file-fs-stat-f.md)  - [moveDir](arkts-file-fs-movedir-f.md)  - [lstat](arkts-file-fs-lstat-f.md)  - [unlinkSync](arkts-file-fs-unlinksync-f.md)  - [mkdtempSync](arkts-file-fs-mkdtempsync-f.md)  - [createWriteStream](arkts-file-fs-createwritestream-f.md)  - [truncateSync](arkts-file-fs-truncatesync-f.md)  - [setxattrSync](arkts-file-fs-setxattrsync-f.md)  - [moveDirSync](arkts-file-fs-movedirsync-f.md)  - [createRandomAccessFile](arkts-file-fs-createrandomaccessfile-f.md)  - [openSync](arkts-file-fs-opensync-f.md)  - [setxattr](arkts-file-fs-setxattr-f.md)  - [readLinesSync](arkts-file-fs-readlinessync-f.md)  - [accessSync](arkts-file-fs-accesssync-f.md)  - [readTextSync](arkts-file-fs-readtextsync-f.md)  - [unlink](arkts-file-fs-unlink-f.md)  - [rename](arkts-file-fs-rename-f.md)  - [copyDirSync](arkts-file-fs-copydirsync-f.md)  - [getxattr](arkts-file-fs-getxattr-f.md)  - [mmap](arkts-file-fs-mmap-f.md)  - [disconnectDfs](arkts-file-fs-disconnectdfs-f.md)  - [open](arkts-file-fs-open-f.md)  - [dup](arkts-file-fs-dup-f.md)
-  - [AtomicFile](arkts-atomicfile-c.md)
-  - [ReadStream](arkts-readstream-c.md)
-  - [TaskSignal](arkts-tasksignal-c.md)
-  - [WriteStream](arkts-writestream-c.md)
-  - [ConflictFiles](arkts-conflictfiles-i.md)
-  - [CopyOptions](arkts-copyoptions-i.md)
-  - [DfsListeners](arkts-dfslisteners-i.md)
-  - [File](arkts-file-i.md)
-  - [FileFilter](arkts-filefilter-i.md)
-  - [FileMapping](arkts-filemapping-i.md)
-  - [Filter](arkts-filter-i.md)
-  - [ListFileExtOptions](arkts-listfileextoptions-i.md)
-  - [ListFileOptions](arkts-listfileoptions-i.md)
-  - [Options](arkts-options-i.md)
-  - [Progress](arkts-progress-i.md)
-  - [RandomAccessFile](arkts-randomaccessfile-i.md)
-  - [RandomAccessFileOptions](arkts-randomaccessfileoptions-i.md)
-  - [ReaderIterator](arkts-readeriterator-i.md)
-  - [ReaderIteratorResult](arkts-readeriteratorresult-i.md)
-  - [ReadOptions](arkts-readoptions-i.md)
-  - [ReadStreamOptions](arkts-readstreamoptions-i.md)
-  - [ReadTextOptions](arkts-readtextoptions-i.md)
-  - [Stat](arkts-stat-i.md)
-  - [Stream](arkts-stream-i.md)
-  - [Watcher](arkts-watcher-i.md)
-  - [WatchEvent](arkts-watchevent-i.md)
-  - [WatchEventListener](arkts-watcheventlistener-i.md)
-  - [WriteOptions](arkts-writeoptions-i.md)
-  - [WriteStreamOptions](arkts-writestreamoptions-i.md)
-  - [ProgressListener](arkts-progresslistener-t.md)
-  - [AccessFlagType](arkts-accessflagtype-e.md)
-  - [AccessModeType](arkts-accessmodetype-e.md)
-  - [LocationType](arkts-locationtype-e.md)
-  - [MappingMode](arkts-mappingmode-e.md)
-  - [WhenceType](arkts-whencetype-e.md)
-- [@ohos.file.fs](arkts-file-fs.md)
-  - [fileIo](arkts-fileio-n.md)
-  - [OpenMode](arkts-openmode-n.md)   - [Constants](arkts-openmode-con.md)  - [moveFileSync](arkts-file-fs-movefilesync-f.md)  - [statSync](arkts-file-fs-statsync-f.md)  - [rmdir](arkts-file-fs-rmdir-f.md)  - [copyDir](arkts-file-fs-copydir-f.md)  - [closeSync](arkts-file-fs-closesync-f.md)  - [mkdtemp](arkts-file-fs-mkdtemp-f.md)  - [renameSync](arkts-file-fs-renamesync-f.md)  - [lstatSync](arkts-file-fs-lstatsync-f.md)  - [truncate](arkts-file-fs-truncate-f.md)  - [listFile](arkts-file-fs-listfile-f.md)  - [copyFileSync](arkts-file-fs-copyfilesync-f.md)  - [createStream](arkts-file-fs-createstream-f.md)  - [readLines](arkts-file-fs-readlines-f.md)  - [getxattrSync](arkts-file-fs-getxattrsync-f.md)  - [readSync](arkts-file-fs-readsync-f.md)  - [write](arkts-file-fs-write-f.md)  - [mkdir](arkts-file-fs-mkdir-f.md)  - [mkdirSync](arkts-file-fs-mkdirsync-f.md)  - [read](arkts-file-fs-read-f.md)  - [createWatcher](arkts-file-fs-createwatcher-f.md)  - [connectDfs](arkts-file-fs-connectdfs-f.md)  - [fdopenStreamSync](arkts-file-fs-fdopenstreamsync-f.md)  - [listFileExt](arkts-file-fs-listfileext-f.md)  - [readText](arkts-file-fs-readtext-f.md)  - [createReadStream](arkts-file-fs-createreadstream-f.md)  - [moveFile](arkts-file-fs-movefile-f.md)  - [fsyncSync](arkts-file-fs-fsyncsync-f.md)  - [listFileSync](arkts-file-fs-listfilesync-f.md)  - [mmapSync](arkts-file-fs-mmapsync-f.md)  - [writeSync](arkts-file-fs-writesync-f.md)  - [symlinkSync](arkts-file-fs-symlinksync-f.md)  - [copyFile](arkts-file-fs-copyfile-f.md)  - [lseek](arkts-file-fs-lseek-f.md)  - [access](arkts-file-fs-access-f.md)  - [utimes](arkts-file-fs-utimes-f.md)  - [fdopenStream](arkts-file-fs-fdopenstream-f.md)  - [rmdirSync](arkts-file-fs-rmdirsync-f.md)  - [createStreamSync](arkts-file-fs-createstreamsync-f.md)  - [fsync](arkts-file-fs-fsync-f.md)  - [createRandomAccessFileSync](arkts-file-fs-createrandomaccessfilesync-f.md)  - [symlink](arkts-file-fs-symlink-f.md)  - [fdatasyncSync](arkts-file-fs-fdatasyncsync-f.md)  - [copy](arkts-file-fs-copy-f.md)  - [listFileExtSync](arkts-file-fs-listfileextsync-f.md)  - [close](arkts-file-fs-close-f.md)  - [fdatasync](arkts-file-fs-fdatasync-f.md)  - [stat](arkts-file-fs-stat-f.md)  - [moveDir](arkts-file-fs-movedir-f.md)  - [lstat](arkts-file-fs-lstat-f.md)  - [unlinkSync](arkts-file-fs-unlinksync-f.md)  - [mkdtempSync](arkts-file-fs-mkdtempsync-f.md)  - [createWriteStream](arkts-file-fs-createwritestream-f.md)  - [truncateSync](arkts-file-fs-truncatesync-f.md)  - [setxattrSync](arkts-file-fs-setxattrsync-f.md)  - [moveDirSync](arkts-file-fs-movedirsync-f.md)  - [createRandomAccessFile](arkts-file-fs-createrandomaccessfile-f.md)  - [openSync](arkts-file-fs-opensync-f.md)  - [setxattr](arkts-file-fs-setxattr-f.md)  - [readLinesSync](arkts-file-fs-readlinessync-f.md)  - [accessSync](arkts-file-fs-accesssync-f.md)  - [readTextSync](arkts-file-fs-readtextsync-f.md)  - [unlink](arkts-file-fs-unlink-f.md)  - [rename](arkts-file-fs-rename-f.md)  - [copyDirSync](arkts-file-fs-copydirsync-f.md)  - [getxattr](arkts-file-fs-getxattr-f.md)  - [mmap](arkts-file-fs-mmap-f.md)  - [disconnectDfs](arkts-file-fs-disconnectdfs-f.md)  - [open](arkts-file-fs-open-f.md)  - [dup](arkts-file-fs-dup-f.md)
-  - [AtomicFile](arkts-atomicfile-c.md)
-  - [ReadStream](arkts-readstream-c.md)
-  - [TaskSignal](arkts-tasksignal-c.md)
-  - [WriteStream](arkts-writestream-c.md)
-  - [ConflictFiles](arkts-conflictfiles-i.md)
-  - [CopyOptions](arkts-copyoptions-i.md)
-  - [DfsListeners](arkts-dfslisteners-i.md)
-  - [File](arkts-file-i.md)
-  - [FileFilter](arkts-filefilter-i.md)
-  - [FileMapping](arkts-filemapping-i.md)
-  - [Filter](arkts-filter-i.md)
-  - [ListFileExtOptions](arkts-listfileextoptions-i.md)
-  - [ListFileOptions](arkts-listfileoptions-i.md)
-  - [Options](arkts-options-i.md)
-  - [Progress](arkts-progress-i.md)
-  - [RandomAccessFile](arkts-randomaccessfile-i.md)
-  - [RandomAccessFileOptions](arkts-randomaccessfileoptions-i.md)
-  - [ReaderIterator](arkts-readeriterator-i.md)
-  - [ReaderIteratorResult](arkts-readeriteratorresult-i.md)
-  - [ReadOptions](arkts-readoptions-i.md)
-  - [ReadStreamOptions](arkts-readstreamoptions-i.md)
-  - [ReadTextOptions](arkts-readtextoptions-i.md)
-  - [Stat](arkts-stat-i.md)
-  - [Stream](arkts-stream-i.md)
-  - [Watcher](arkts-watcher-i.md)
-  - [WatchEvent](arkts-watchevent-i.md)
-  - [WatchEventListener](arkts-watcheventlistener-i.md)
-  - [WriteOptions](arkts-writeoptions-i.md)
-  - [WriteStreamOptions](arkts-writestreamoptions-i.md)
-  - [ProgressListener](arkts-progresslistener-t.md)
-  - [AccessFlagType](arkts-accessflagtype-e.md)
-  - [AccessModeType](arkts-accessmodetype-e.md)
-  - [LocationType](arkts-locationtype-e.md)
-  - [MappingMode](arkts-mappingmode-e.md)
-  - [WhenceType](arkts-whencetype-e.md)
+  - [fileIo](arkts-corefile-fileio-n.md)
+    - [OpenMode](arkts-corefile-openmode-n.md)
+      - [Constants](arkts-corefile-openmode-con.md)
+  - [access](arkts-corefile-file-fs-access-f.md)
+  - [accessSync](arkts-corefile-file-fs-accesssync-f.md)
+  - [close](arkts-corefile-file-fs-close-f.md)
+  - [closeSync](arkts-corefile-file-fs-closesync-f.md)
+  - [connectDfs](arkts-corefile-file-fs-connectdfs-f.md)
+  - [copy](arkts-corefile-file-fs-copy-f.md)
+  - [copyDir](arkts-corefile-file-fs-copydir-f.md)
+  - [copyDirSync](arkts-corefile-file-fs-copydirsync-f.md)
+  - [copyFile](arkts-corefile-file-fs-copyfile-f.md)
+  - [copyFileSync](arkts-corefile-file-fs-copyfilesync-f.md)
+  - [createRandomAccessFile](arkts-corefile-file-fs-createrandomaccessfile-f.md)
+  - [createRandomAccessFileSync](arkts-corefile-file-fs-createrandomaccessfilesync-f.md)
+  - [createReadStream](arkts-corefile-file-fs-createreadstream-f.md)
+  - [createStream](arkts-corefile-file-fs-createstream-f.md)
+  - [createStreamSync](arkts-corefile-file-fs-createstreamsync-f.md)
+  - [createWatcher](arkts-corefile-file-fs-createwatcher-f.md)
+  - [createWriteStream](arkts-corefile-file-fs-createwritestream-f.md)
+  - [disconnectDfs](arkts-corefile-file-fs-disconnectdfs-f.md)
+  - [dup](arkts-corefile-file-fs-dup-f.md)
+  - [fdatasync](arkts-corefile-file-fs-fdatasync-f.md)
+  - [fdatasyncSync](arkts-corefile-file-fs-fdatasyncsync-f.md)
+  - [fdopenStream](arkts-corefile-file-fs-fdopenstream-f.md)
+  - [fdopenStreamSync](arkts-corefile-file-fs-fdopenstreamsync-f.md)
+  - [fsync](arkts-corefile-file-fs-fsync-f.md)
+  - [fsyncSync](arkts-corefile-file-fs-fsyncsync-f.md)
+  - [getxattr](arkts-corefile-file-fs-getxattr-f.md)
+  - [getxattrSync](arkts-corefile-file-fs-getxattrsync-f.md)
+  - [listFile](arkts-corefile-file-fs-listfile-f.md)
+  - [listFileExt](arkts-corefile-file-fs-listfileext-f.md)
+  - [listFileExtSync](arkts-corefile-file-fs-listfileextsync-f.md)
+  - [listFileSync](arkts-corefile-file-fs-listfilesync-f.md)
+  - [lseek](arkts-corefile-file-fs-lseek-f.md)
+  - [lstat](arkts-corefile-file-fs-lstat-f.md)
+  - [lstatSync](arkts-corefile-file-fs-lstatsync-f.md)
+  - [mkdir](arkts-corefile-file-fs-mkdir-f.md)
+  - [mkdirSync](arkts-corefile-file-fs-mkdirsync-f.md)
+  - [mkdtemp](arkts-corefile-file-fs-mkdtemp-f.md)
+  - [mkdtempSync](arkts-corefile-file-fs-mkdtempsync-f.md)
+  - [mmap](arkts-corefile-file-fs-mmap-f.md)
+  - [mmapSync](arkts-corefile-file-fs-mmapsync-f.md)
+  - [moveDir](arkts-corefile-file-fs-movedir-f.md)
+  - [moveDirSync](arkts-corefile-file-fs-movedirsync-f.md)
+  - [moveFile](arkts-corefile-file-fs-movefile-f.md)
+  - [moveFileSync](arkts-corefile-file-fs-movefilesync-f.md)
+  - [open](arkts-corefile-file-fs-open-f.md)
+  - [openSync](arkts-corefile-file-fs-opensync-f.md)
+  - [read](arkts-corefile-file-fs-read-f.md)
+  - [readLines](arkts-corefile-file-fs-readlines-f.md)
+  - [readLinesSync](arkts-corefile-file-fs-readlinessync-f.md)
+  - [readSync](arkts-corefile-file-fs-readsync-f.md)
+  - [readText](arkts-corefile-file-fs-readtext-f.md)
+  - [readTextSync](arkts-corefile-file-fs-readtextsync-f.md)
+  - [rename](arkts-corefile-file-fs-rename-f.md)
+  - [renameSync](arkts-corefile-file-fs-renamesync-f.md)
+  - [rmdir](arkts-corefile-file-fs-rmdir-f.md)
+  - [rmdirSync](arkts-corefile-file-fs-rmdirsync-f.md)
+  - [setxattr](arkts-corefile-file-fs-setxattr-f.md)
+  - [setxattrSync](arkts-corefile-file-fs-setxattrsync-f.md)
+  - [stat](arkts-corefile-file-fs-stat-f.md)
+  - [statSync](arkts-corefile-file-fs-statsync-f.md)
+  - [symlink](arkts-corefile-file-fs-symlink-f.md)
+  - [symlinkSync](arkts-corefile-file-fs-symlinksync-f.md)
+  - [truncate](arkts-corefile-file-fs-truncate-f.md)
+  - [truncateSync](arkts-corefile-file-fs-truncatesync-f.md)
+  - [unlink](arkts-corefile-file-fs-unlink-f.md)
+  - [unlinkSync](arkts-corefile-file-fs-unlinksync-f.md)
+  - [utimes](arkts-corefile-file-fs-utimes-f.md)
+  - [write](arkts-corefile-file-fs-write-f.md)
+  - [writeSync](arkts-corefile-file-fs-writesync-f.md)
+  - [AtomicFile](arkts-corefile-atomicfile-c.md)
+  - [ReadStream](arkts-corefile-readstream-c.md)
+  - [TaskSignal](arkts-corefile-tasksignal-c.md)
+  - [WriteStream](arkts-corefile-writestream-c.md)
+  - [ConflictFiles](arkts-corefile-conflictfiles-i.md)
+  - [CopyOptions](arkts-corefile-copyoptions-i.md)
+  - [DfsListeners](arkts-corefile-dfslisteners-i.md)
+  - [File](arkts-corefile-file-i.md)
+  - [FileFilter](arkts-corefile-filefilter-i.md)
+  - [FileMapping](arkts-corefile-filemapping-i.md)
+  - [Filter](arkts-corefile-filter-i.md)
+  - [ListFileExtOptions](arkts-corefile-listfileextoptions-i.md)
+  - [ListFileOptions](arkts-corefile-listfileoptions-i.md)
+  - [Options](arkts-corefile-options-i.md)
+  - [Progress](arkts-corefile-progress-i.md)
+  - [RandomAccessFile](arkts-corefile-randomaccessfile-i.md)
+  - [RandomAccessFileOptions](arkts-corefile-randomaccessfileoptions-i.md)
+  - [ReaderIterator](arkts-corefile-readeriterator-i.md)
+  - [ReaderIteratorResult](arkts-corefile-readeriteratorresult-i.md)
+  - [ReadOptions](arkts-corefile-readoptions-i.md)
+  - [ReadStreamOptions](arkts-corefile-readstreamoptions-i.md)
+  - [ReadTextOptions](arkts-corefile-readtextoptions-i.md)
+  - [Stat](arkts-corefile-stat-i.md)
+  - [Stream](arkts-corefile-stream-i.md)
+  - [Watcher](arkts-corefile-watcher-i.md)
+  - [WatchEvent](arkts-corefile-watchevent-i.md)
+  - [WatchEventListener](arkts-corefile-watcheventlistener-i.md)
+  - [WriteOptions](arkts-corefile-writeoptions-i.md)
+  - [WriteStreamOptions](arkts-corefile-writestreamoptions-i.md)
+  - [ProgressListener](arkts-corefile-progresslistener-t.md)
+  - [AccessFlagType](arkts-corefile-accessflagtype-e.md)
+  - [AccessModeType](arkts-corefile-accessmodetype-e.md)
+  - [LocationType](arkts-corefile-locationtype-e.md)
+  - [MappingMode](arkts-corefile-mappingmode-e.md)
+  - [WhenceType](arkts-corefile-whencetype-e.md)
 - [@ohos.file.hash](arkts-file-hash.md)
-  - [createHash](arkts-hash-createhash-f.md)
-  - [hash](arkts-hash-f.md)
-  - [HashStream](arkts-hash-hashstream-c.md)
-- [@ohos.file.hash](arkts-file-hash.md)
-  - [createHash](arkts-hash-createhash-f.md)
-  - [hash](arkts-hash-f.md)
-  - [HashStream](arkts-hash-hashstream-c.md)
+  - [createHash](arkts-corefile-createhash-f.md)
+  - [hash](arkts-corefile-hash-f.md)
+  - [HashStream](arkts-corefile-hashstream-c.md)
 - [@ohos.file.keyManager](arkts-file-keymanager.md)<!--Del-->
-  - [deactivateUserKey(system api)](arkts-keymanager-deactivateuserkey-f-sys.md)<!--DelEnd-->
-- [@ohos.file.keyManager](arkts-file-keymanager.md)<!--Del-->
-  - [deactivateUserKey(system api)](arkts-keymanager-deactivateuserkey-f-sys.md)<!--DelEnd-->
+  - [deactivateUserKey(system api)](arkts-corefile-deactivateuserkey-f-sys.md)<!--DelEnd-->
 - [@ohos.file.picker](arkts-file-picker.md)
-  - [AudioSaveOptions](arkts-picker-audiosaveoptions-c.md)
-  - [AudioSelectOptions](arkts-picker-audioselectoptions-c.md)
-  - [AudioViewPicker](arkts-picker-audioviewpicker-c.md)
-  - [DocumentSaveOptions](arkts-picker-documentsaveoptions-c.md)
-  - [DocumentSelectOptions](arkts-picker-documentselectoptions-c.md)
-  - [DocumentViewPicker](arkts-picker-documentviewpicker-c.md)
-  - [PhotoSaveOptions](arkts-picker-photosaveoptions-c.md)
-  - [PhotoSelectOptions](arkts-picker-photoselectoptions-c.md)
-  - [PhotoSelectResult](arkts-picker-photoselectresult-c.md)
-  - [PhotoViewPicker](arkts-picker-photoviewpicker-c.md)
-  - [AudioSaveOptions](arkts-picker-audiosaveoptions-i.md)
-  - [AudioSelectOptions](arkts-picker-audioselectoptions-i.md)
-  - [DocumentSaveOptions](arkts-picker-documentsaveoptions-i.md)
-  - [DocumentSelectOptions](arkts-picker-documentselectoptions-i.md)
-  - [DocumentPickerMode](arkts-picker-documentpickermode-e.md)
-  - [DocumentSelectMode](arkts-picker-documentselectmode-e.md)
-  - [MergeTypeMode](arkts-picker-mergetypemode-e.md)
-  - [PhotoViewMIMETypes](arkts-picker-photoviewmimetypes-e.md)
-- [@ohos.file.picker](arkts-file-picker.md)
-  - [AudioSaveOptions](arkts-picker-audiosaveoptions-c.md)
-  - [AudioSelectOptions](arkts-picker-audioselectoptions-c.md)
-  - [AudioViewPicker](arkts-picker-audioviewpicker-c.md)
-  - [DocumentSaveOptions](arkts-picker-documentsaveoptions-c.md)
-  - [DocumentSelectOptions](arkts-picker-documentselectoptions-c.md)
-  - [DocumentViewPicker](arkts-picker-documentviewpicker-c.md)
-  - [PhotoSaveOptions](arkts-picker-photosaveoptions-c.md)
-  - [PhotoSelectOptions](arkts-picker-photoselectoptions-c.md)
-  - [PhotoSelectResult](arkts-picker-photoselectresult-c.md)
-  - [PhotoViewPicker](arkts-picker-photoviewpicker-c.md)
-  - [AudioSaveOptions](arkts-picker-audiosaveoptions-i.md)
-  - [AudioSelectOptions](arkts-picker-audioselectoptions-i.md)
-  - [DocumentSaveOptions](arkts-picker-documentsaveoptions-i.md)
-  - [DocumentSelectOptions](arkts-picker-documentselectoptions-i.md)
-  - [DocumentPickerMode](arkts-picker-documentpickermode-e.md)
-  - [DocumentSelectMode](arkts-picker-documentselectmode-e.md)
-  - [MergeTypeMode](arkts-picker-mergetypemode-e.md)
-  - [PhotoViewMIMETypes](arkts-picker-photoviewmimetypes-e.md)
+  - [AudioSaveOptions](arkts-corefile-audiosaveoptions-c.md)
+  - [AudioSelectOptions](arkts-corefile-audioselectoptions-c.md)
+  - [AudioViewPicker](arkts-corefile-audioviewpicker-c.md)
+  - [DocumentSaveOptions](arkts-corefile-documentsaveoptions-c.md)<!--Del-->
+  - [DocumentSaveOptions(system api)](arkts-corefile-documentsaveoptions-c-sys.md)<!--DelEnd-->
+  - [DocumentSelectOptions](arkts-corefile-documentselectoptions-c.md)<!--Del-->
+  - [DocumentSelectOptions(system api)](arkts-corefile-documentselectoptions-c-sys.md)<!--DelEnd-->
+  - [DocumentViewPicker](arkts-corefile-documentviewpicker-c.md)
+  - [PhotoSaveOptions](arkts-corefile-photosaveoptions-c.md)
+  - [PhotoSelectOptions](arkts-corefile-photoselectoptions-c.md)
+  - [PhotoSelectResult](arkts-corefile-photoselectresult-c.md)
+  - [PhotoViewPicker](arkts-corefile-photoviewpicker-c.md)
+  - [DocumentPickerMode](arkts-corefile-documentpickermode-e.md)
+  - [DocumentSelectMode](arkts-corefile-documentselectmode-e.md)
+  - [MergeTypeMode](arkts-corefile-mergetypemode-e.md)
+  - [PhotoViewMIMETypes](arkts-corefile-photoviewmimetypes-e.md)
 - [@ohos.file.recent](arkts-file-recent.md)<!--Del-->
-  - [add(system api)](arkts-recent-add-f-sys.md)<!--DelEnd--><!--Del-->
-  - [listFile(system api)](arkts-recent-listfile-f-sys.md)<!--DelEnd--><!--Del-->
-  - [remove(system api)](arkts-recent-remove-f-sys.md)<!--DelEnd--><!--Del-->
-  - [FileInfo(system api)](arkts-recent-fileinfo-i-sys.md)<!--DelEnd-->
-- [@ohos.file.recent](arkts-file-recent.md)<!--Del-->
-  - [add(system api)](arkts-recent-add-f-sys.md)<!--DelEnd--><!--Del-->
-  - [listFile(system api)](arkts-recent-listfile-f-sys.md)<!--DelEnd--><!--Del-->
-  - [remove(system api)](arkts-recent-remove-f-sys.md)<!--DelEnd--><!--Del-->
-  - [FileInfo(system api)](arkts-recent-fileinfo-i-sys.md)<!--DelEnd-->
+  - [add(system api)](arkts-corefile-add-f-sys.md)<!--DelEnd--><!--Del-->
+  - [listFile(system api)](arkts-corefile-listfile-f-sys.md)<!--DelEnd--><!--Del-->
+  - [remove(system api)](arkts-corefile-remove-f-sys.md)<!--DelEnd--><!--Del-->
+  - [FileInfo(system api)](arkts-corefile-fileinfo-i-sys.md)<!--DelEnd-->
 - [@ohos.file.securityLabel](arkts-file-securitylabel.md)
-  - [getSecurityLabelSync](arkts-securitylabel-getsecuritylabelsync-f.md)
-  - [setSecurityLabel](arkts-securitylabel-setsecuritylabel-f.md)
-  - [getSecurityLabel](arkts-securitylabel-getsecuritylabel-f.md)
-  - [setSecurityLabelSync](arkts-securitylabel-setsecuritylabelsync-f.md)
-  - [DataLevel](arkts-securitylabel-datalevel-t.md)
-- [@ohos.file.securityLabel](arkts-file-securitylabel.md)
-  - [getSecurityLabelSync](arkts-securitylabel-getsecuritylabelsync-f.md)
-  - [setSecurityLabel](arkts-securitylabel-setsecuritylabel-f.md)
-  - [getSecurityLabel](arkts-securitylabel-getsecuritylabel-f.md)
-  - [setSecurityLabelSync](arkts-securitylabel-setsecuritylabelsync-f.md)
-  - [DataLevel](arkts-securitylabel-datalevel-t.md)
+  - [getSecurityLabel](arkts-corefile-getsecuritylabel-f.md)
+  - [getSecurityLabelSync](arkts-corefile-getsecuritylabelsync-f.md)
+  - [setSecurityLabel](arkts-corefile-setsecuritylabel-f.md)
+  - [setSecurityLabelSync](arkts-corefile-setsecuritylabelsync-f.md)
+  - [DataLevel](arkts-corefile-datalevel-t.md)
 - [@ohos.file.statvfs](arkts-file-statvfs.md)
-  - [getTotalSizeSync](arkts-statfs-gettotalsizesync-f.md)
-  - [getTotalSize](arkts-statfs-gettotalsize-f.md)
-  - [getFreeSize](arkts-statfs-getfreesize-f.md)
-  - [getFreeSizeSync](arkts-statfs-getfreesizesync-f.md)
-- [@ohos.file.statvfs](arkts-file-statvfs.md)
-  - [getTotalSizeSync](arkts-statfs-gettotalsizesync-f.md)
-  - [getTotalSize](arkts-statfs-gettotalsize-f.md)
-  - [getFreeSize](arkts-statfs-getfreesize-f.md)
-  - [getFreeSizeSync](arkts-statfs-getfreesizesync-f.md)
+  - [getFreeSize](arkts-corefile-getfreesize-f.md)
+  - [getFreeSizeSync](arkts-corefile-getfreesizesync-f.md)
+  - [getTotalSize](arkts-corefile-gettotalsize-f.md)
+  - [getTotalSizeSync](arkts-corefile-gettotalsizesync-f.md)
 - [@ohos.file.storageStatistics](arkts-file-storagestatistics.md)<!--Del-->
-  - [setExtBundleStats(system api)](arkts-storagestatistics-setextbundlestats-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getAllExtBundleStats(system api)](arkts-storagestatistics-getallextbundlestats-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getTotalSizeSync(system api)](arkts-storagestatistics-gettotalsizesync-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getUserStorageStats(system api)](arkts-storagestatistics-getuserstoragestats-f-sys.md)<!--DelEnd--><!--Del-->
-  - [listUserdataDirInfo(system api)](arkts-storagestatistics-listuserdatadirinfo-f-sys.md)<!--DelEnd-->
-  - [getFreeSize](arkts-storagestatistics-getfreesize-f.md)<!--Del-->
-  - [getFreeSize(system api)](arkts-storagestatistics-getfreesize-f-sys.md)<!--DelEnd-->
-  - [getTotalSize](arkts-storagestatistics-gettotalsize-f.md)<!--Del-->
-  - [getTotalSize(system api)](arkts-storagestatistics-gettotalsize-f-sys.md)<!--DelEnd-->
-  - [getTotalInodes](arkts-storagestatistics-gettotalinodes-f.md)<!--Del-->
-  - [getBundleStats(system api)](arkts-storagestatistics-getbundlestats-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getTotalSizeOfVolume(system api)](arkts-storagestatistics-gettotalsizeofvolume-f-sys.md)<!--DelEnd-->
-  - [getCurrentBundleInodes](arkts-storagestatistics-getcurrentbundleinodes-f.md)
-  - [getFreeInodes](arkts-storagestatistics-getfreeinodes-f.md)<!--Del-->
-  - [getSystemSize(system api)](arkts-storagestatistics-getsystemsize-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getFreeSizeOfVolume(system api)](arkts-storagestatistics-getfreesizeofvolume-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getExtBundleStats(system api)](arkts-storagestatistics-getextbundlestats-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getSystemDataSize(system api)](arkts-storagestatistics-getsystemdatasize-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getFreeSizeSync(system api)](arkts-storagestatistics-getfreesizesync-f-sys.md)<!--DelEnd-->
-  - [getCurrentBundleStats](arkts-storagestatistics-getcurrentbundlestats-f.md)
-  - [BundleStats](arkts-storagestatistics-bundlestats-i.md)<!--Del-->
-  - [ExtBundleStats(system api)](arkts-storagestatistics-extbundlestats-i-sys.md)<!--DelEnd--><!--Del-->
-  - [StorageStats(system api)](arkts-storagestatistics-storagestats-i-sys.md)<!--DelEnd--><!--Del-->
-  - [UserdataDirInfo(system api)](arkts-storagestatistics-userdatadirinfo-i-sys.md)<!--DelEnd-->
-- [@ohos.file.storageStatistics](arkts-file-storagestatistics.md)<!--Del-->
-  - [setExtBundleStats(system api)](arkts-storagestatistics-setextbundlestats-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getAllExtBundleStats(system api)](arkts-storagestatistics-getallextbundlestats-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getTotalSizeSync(system api)](arkts-storagestatistics-gettotalsizesync-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getUserStorageStats(system api)](arkts-storagestatistics-getuserstoragestats-f-sys.md)<!--DelEnd--><!--Del-->
-  - [listUserdataDirInfo(system api)](arkts-storagestatistics-listuserdatadirinfo-f-sys.md)<!--DelEnd-->
-  - [getFreeSize](arkts-storagestatistics-getfreesize-f.md)<!--Del-->
-  - [getFreeSize(system api)](arkts-storagestatistics-getfreesize-f-sys.md)<!--DelEnd-->
-  - [getTotalSize](arkts-storagestatistics-gettotalsize-f.md)<!--Del-->
-  - [getTotalSize(system api)](arkts-storagestatistics-gettotalsize-f-sys.md)<!--DelEnd-->
-  - [getTotalInodes](arkts-storagestatistics-gettotalinodes-f.md)<!--Del-->
-  - [getBundleStats(system api)](arkts-storagestatistics-getbundlestats-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getTotalSizeOfVolume(system api)](arkts-storagestatistics-gettotalsizeofvolume-f-sys.md)<!--DelEnd-->
-  - [getCurrentBundleInodes](arkts-storagestatistics-getcurrentbundleinodes-f.md)
-  - [getFreeInodes](arkts-storagestatistics-getfreeinodes-f.md)<!--Del-->
-  - [getSystemSize(system api)](arkts-storagestatistics-getsystemsize-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getFreeSizeOfVolume(system api)](arkts-storagestatistics-getfreesizeofvolume-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getExtBundleStats(system api)](arkts-storagestatistics-getextbundlestats-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getSystemDataSize(system api)](arkts-storagestatistics-getsystemdatasize-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getFreeSizeSync(system api)](arkts-storagestatistics-getfreesizesync-f-sys.md)<!--DelEnd-->
-  - [getCurrentBundleStats](arkts-storagestatistics-getcurrentbundlestats-f.md)
-  - [BundleStats](arkts-storagestatistics-bundlestats-i.md)<!--Del-->
-  - [ExtBundleStats(system api)](arkts-storagestatistics-extbundlestats-i-sys.md)<!--DelEnd--><!--Del-->
-  - [StorageStats(system api)](arkts-storagestatistics-storagestats-i-sys.md)<!--DelEnd--><!--Del-->
-  - [UserdataDirInfo(system api)](arkts-storagestatistics-userdatadirinfo-i-sys.md)<!--DelEnd-->
+  - [getAllExtBundleStats(system api)](arkts-corefile-getallextbundlestats-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getBundleStats(system api)](arkts-corefile-getbundlestats-f-sys.md)<!--DelEnd-->
+  - [getCurrentBundleInodes](arkts-corefile-getcurrentbundleinodes-f.md)
+  - [getCurrentBundleStats](arkts-corefile-getcurrentbundlestats-f.md)<!--Del-->
+  - [getExtBundleStats(system api)](arkts-corefile-getextbundlestats-f-sys.md)<!--DelEnd-->
+  - [getFreeInodes](arkts-corefile-getfreeinodes-f.md)
+  - [getFreeSize](arkts-corefile-getfreesize-f.md)<!--Del-->
+  - [getFreeSize(system api)](arkts-corefile-getfreesize-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getFreeSizeOfVolume(system api)](arkts-corefile-getfreesizeofvolume-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getFreeSizeSync(system api)](arkts-corefile-getfreesizesync-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getSystemDataSize(system api)](arkts-corefile-getsystemdatasize-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getSystemSize(system api)](arkts-corefile-getsystemsize-f-sys.md)<!--DelEnd-->
+  - [getTotalInodes](arkts-corefile-gettotalinodes-f.md)
+  - [getTotalSize](arkts-corefile-gettotalsize-f.md)<!--Del-->
+  - [getTotalSize(system api)](arkts-corefile-gettotalsize-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getTotalSizeOfVolume(system api)](arkts-corefile-gettotalsizeofvolume-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getTotalSizeSync(system api)](arkts-corefile-gettotalsizesync-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getUserStorageStats(system api)](arkts-corefile-getuserstoragestats-f-sys.md)<!--DelEnd--><!--Del-->
+  - [listUserdataDirInfo(system api)](arkts-corefile-listuserdatadirinfo-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setExtBundleStats(system api)](arkts-corefile-setextbundlestats-f-sys.md)<!--DelEnd-->
+  - [BundleStats](arkts-corefile-bundlestats-i.md)<!--Del-->
+  - [ExtBundleStats(system api)](arkts-corefile-extbundlestats-i-sys.md)<!--DelEnd--><!--Del-->
+  - [StorageStats(system api)](arkts-corefile-storagestats-i-sys.md)<!--DelEnd--><!--Del-->
+  - [UserdataDirInfo(system api)](arkts-corefile-userdatadirinfo-i-sys.md)<!--DelEnd-->
 - [@ohos.file.trash](arkts-file-trash.md)<!--Del-->
-  - [recover(system api)](arkts-trash-recover-f-sys.md)<!--DelEnd--><!--Del-->
-  - [listFile(system api)](arkts-trash-listfile-f-sys.md)<!--DelEnd--><!--Del-->
-  - [completelyDelete(system api)](arkts-trash-completelydelete-f-sys.md)<!--DelEnd--><!--Del-->
-  - [FileInfo(system api)](arkts-trash-fileinfo-i-sys.md)<!--DelEnd-->
-- [@ohos.file.trash](arkts-file-trash.md)<!--Del-->
-  - [recover(system api)](arkts-trash-recover-f-sys.md)<!--DelEnd--><!--Del-->
-  - [listFile(system api)](arkts-trash-listfile-f-sys.md)<!--DelEnd--><!--Del-->
-  - [completelyDelete(system api)](arkts-trash-completelydelete-f-sys.md)<!--DelEnd--><!--Del-->
-  - [FileInfo(system api)](arkts-trash-fileinfo-i-sys.md)<!--DelEnd-->
+  - [completelyDelete(system api)](arkts-corefile-completelydelete-f-sys.md)<!--DelEnd--><!--Del-->
+  - [listFile(system api)](arkts-corefile-listfile-f-sys.md)<!--DelEnd--><!--Del-->
+  - [recover(system api)](arkts-corefile-recover-f-sys.md)<!--DelEnd--><!--Del-->
+  - [FileInfo(system api)](arkts-corefile-fileinfo-i-sys.md)<!--DelEnd-->
 - [@ohos.file.volumeManager](arkts-file-volumemanager.md)<!--Del-->
-  - [burn(system api)](arkts-volumemanager-burn-f-sys.md)<!--DelEnd--><!--Del-->
-  - [erase(system api)](arkts-volumemanager-erase-f-sys.md)<!--DelEnd--><!--Del-->
-  - [unmount(system api)](arkts-volumemanager-unmount-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getAllDisks(system api)](arkts-volumemanager-getalldisks-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setVolumeDescription(system api)](arkts-volumemanager-setvolumedescription-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getVolumeByUuid(system api)](arkts-volumemanager-getvolumebyuuid-f-sys.md)<!--DelEnd--><!--Del-->
-  - [isVolumeInUse(system api)](arkts-volumemanager-isvolumeinuse-f-sys.md)<!--DelEnd--><!--Del-->
-  - [deletePartition(system api)](arkts-volumemanager-deletepartition-f-sys.md)<!--DelEnd--><!--Del-->
-  - [format(system api)](arkts-volumemanager-format-f-sys.md)<!--DelEnd--><!--Del-->
-  - [createPartition(system api)](arkts-volumemanager-createpartition-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getVolumeById(system api)](arkts-volumemanager-getvolumebyid-f-sys.md)<!--DelEnd--><!--Del-->
-  - [mount(system api)](arkts-volumemanager-mount-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getPartitionTable(system api)](arkts-volumemanager-getpartitiontable-f-sys.md)<!--DelEnd--><!--Del-->
-  - [eject(system api)](arkts-volumemanager-eject-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getAllVolumes(system api)](arkts-volumemanager-getallvolumes-f-sys.md)<!--DelEnd--><!--Del-->
-  - [partition(system api)](arkts-volumemanager-partition-f-sys.md)<!--DelEnd--><!--Del-->
-  - [createIsoImage(system api)](arkts-volumemanager-createisoimage-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getDiskById(system api)](arkts-volumemanager-getdiskbyid-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getOpProcess(system api)](arkts-volumemanager-getopprocess-f-sys.md)<!--DelEnd--><!--Del-->
-  - [formatPartition(system api)](arkts-volumemanager-formatpartition-f-sys.md)<!--DelEnd--><!--Del-->
-  - [Disk(system api)](arkts-volumemanager-disk-i-sys.md)<!--DelEnd--><!--Del-->
-  - [FormatParams(system api)](arkts-volumemanager-formatparams-i-sys.md)<!--DelEnd--><!--Del-->
-  - [PartitionInfo(system api)](arkts-volumemanager-partitioninfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [PartitionParams(system api)](arkts-volumemanager-partitionparams-i-sys.md)<!--DelEnd--><!--Del-->
-  - [PartitionTableInfo(system api)](arkts-volumemanager-partitiontableinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [Volume(system api)](arkts-volumemanager-volume-i-sys.md)<!--DelEnd--><!--Del-->
-  - [DiskType(system api)](arkts-volumemanager-disktype-e-sys.md)<!--DelEnd-->
-- [@ohos.file.volumeManager](arkts-file-volumemanager.md)<!--Del-->
-  - [unmount(system api)](arkts-volumemanager-unmount-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getAllVolumes(system api)](arkts-volumemanager-getallvolumes-f-sys.md)<!--DelEnd--><!--Del-->
-  - [partition(system api)](arkts-volumemanager-partition-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setVolumeDescription(system api)](arkts-volumemanager-setvolumedescription-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getVolumeByUuid(system api)](arkts-volumemanager-getvolumebyuuid-f-sys.md)<!--DelEnd--><!--Del-->
-  - [format(system api)](arkts-volumemanager-format-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getVolumeById(system api)](arkts-volumemanager-getvolumebyid-f-sys.md)<!--DelEnd--><!--Del-->
-  - [mount(system api)](arkts-volumemanager-mount-f-sys.md)<!--DelEnd--><!--Del-->
-  - [Volume(system api)](arkts-volumemanager-volume-i-sys.md)<!--DelEnd-->
+  - [burn(system api)](arkts-corefile-burn-f-sys.md)<!--DelEnd--><!--Del-->
+  - [createIsoImage(system api)](arkts-corefile-createisoimage-f-sys.md)<!--DelEnd--><!--Del-->
+  - [createPartition(system api)](arkts-corefile-createpartition-f-sys.md)<!--DelEnd--><!--Del-->
+  - [deletePartition(system api)](arkts-corefile-deletepartition-f-sys.md)<!--DelEnd--><!--Del-->
+  - [eject(system api)](arkts-corefile-eject-f-sys.md)<!--DelEnd--><!--Del-->
+  - [erase(system api)](arkts-corefile-erase-f-sys.md)<!--DelEnd--><!--Del-->
+  - [format(system api)](arkts-corefile-format-f-sys.md)<!--DelEnd--><!--Del-->
+  - [formatPartition(system api)](arkts-corefile-formatpartition-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getAllDisks(system api)](arkts-corefile-getalldisks-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getAllVolumes(system api)](arkts-corefile-getallvolumes-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getDiskById(system api)](arkts-corefile-getdiskbyid-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getOpProcess(system api)](arkts-corefile-getopprocess-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getPartitionTable(system api)](arkts-corefile-getpartitiontable-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getVolumeById(system api)](arkts-corefile-getvolumebyid-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getVolumeByUuid(system api)](arkts-corefile-getvolumebyuuid-f-sys.md)<!--DelEnd--><!--Del-->
+  - [isVolumeInUse(system api)](arkts-corefile-isvolumeinuse-f-sys.md)<!--DelEnd--><!--Del-->
+  - [mount(system api)](arkts-corefile-mount-f-sys.md)<!--DelEnd--><!--Del-->
+  - [partition(system api)](arkts-corefile-partition-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setVolumeDescription(system api)](arkts-corefile-setvolumedescription-f-sys.md)<!--DelEnd--><!--Del-->
+  - [unmount(system api)](arkts-corefile-unmount-f-sys.md)<!--DelEnd--><!--Del-->
+  - [Disk(system api)](arkts-corefile-disk-i-sys.md)<!--DelEnd--><!--Del-->
+  - [FormatParams(system api)](arkts-corefile-formatparams-i-sys.md)<!--DelEnd--><!--Del-->
+  - [PartitionInfo(system api)](arkts-corefile-partitioninfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [PartitionParams(system api)](arkts-corefile-partitionparams-i-sys.md)<!--DelEnd--><!--Del-->
+  - [PartitionTableInfo(system api)](arkts-corefile-partitiontableinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [Volume(system api)](arkts-corefile-volume-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DiskType(system api)](arkts-corefile-disktype-e-sys.md)<!--DelEnd-->
+- [@ohos.fileio](arkts-fileio.md)
+  - [fileIO](arkts-corefile-fileio-depr-n.md)
+  - [access](arkts-corefile-fileio-access-f.md)
+  - [accessSync](arkts-corefile-fileio-accesssync-f.md)
+  - [chmod](arkts-corefile-fileio-chmod-f.md)
+  - [chmodSync](arkts-corefile-fileio-chmodsync-f.md)
+  - [chown](arkts-corefile-fileio-chown-f.md)
+  - [chownSync](arkts-corefile-fileio-chownsync-f.md)
+  - [close](arkts-corefile-fileio-close-f.md)
+  - [closeSync](arkts-corefile-fileio-closesync-f.md)
+  - [copyFile](arkts-corefile-fileio-copyfile-f.md)
+  - [copyFileSync](arkts-corefile-fileio-copyfilesync-f.md)
+  - [createStream](arkts-corefile-fileio-createstream-f.md)
+  - [createStreamSync](arkts-corefile-fileio-createstreamsync-f.md)
+  - [createWatcher](arkts-corefile-fileio-createwatcher-f.md)
+  - [fchmod](arkts-corefile-fileio-fchmod-f.md)
+  - [fchmodSync](arkts-corefile-fileio-fchmodsync-f.md)
+  - [fchown](arkts-corefile-fileio-fchown-f.md)
+  - [fchownSync](arkts-corefile-fileio-fchownsync-f.md)
+  - [fdatasync](arkts-corefile-fileio-fdatasync-f.md)
+  - [fdatasyncSync](arkts-corefile-fileio-fdatasyncsync-f.md)
+  - [fdopenStream](arkts-corefile-fileio-fdopenstream-f.md)
+  - [fdopenStreamSync](arkts-corefile-fileio-fdopenstreamsync-f.md)
+  - [fstat](arkts-corefile-fileio-fstat-f.md)
+  - [fstatSync](arkts-corefile-fileio-fstatsync-f.md)
+  - [fsync](arkts-corefile-fileio-fsync-f.md)
+  - [fsyncSync](arkts-corefile-fileio-fsyncsync-f.md)
+  - [ftruncate](arkts-corefile-fileio-ftruncate-f.md)
+  - [ftruncateSync](arkts-corefile-fileio-ftruncatesync-f.md)
+  - [hash](arkts-corefile-fileio-hash-f.md)
+  - [lchown](arkts-corefile-fileio-lchown-f.md)
+  - [lchownSync](arkts-corefile-fileio-lchownsync-f.md)
+  - [lstat](arkts-corefile-fileio-lstat-f.md)
+  - [lstatSync](arkts-corefile-fileio-lstatsync-f.md)
+  - [mkdir](arkts-corefile-fileio-mkdir-f.md)
+  - [mkdirSync](arkts-corefile-fileio-mkdirsync-f.md)
+  - [mkdtemp](arkts-corefile-fileio-mkdtemp-f.md)
+  - [mkdtempSync](arkts-corefile-fileio-mkdtempsync-f.md)
+  - [open](arkts-corefile-fileio-open-f.md)
+  - [opendir](arkts-corefile-fileio-opendir-f.md)
+  - [opendirSync](arkts-corefile-fileio-opendirsync-f.md)
+  - [openSync](arkts-corefile-fileio-opensync-f.md)
+  - [read](arkts-corefile-fileio-read-f.md)
+  - [readSync](arkts-corefile-fileio-readsync-f.md)
+  - [readText](arkts-corefile-fileio-readtext-f.md)
+  - [readTextSync](arkts-corefile-fileio-readtextsync-f.md)
+  - [rename](arkts-corefile-fileio-rename-f.md)
+  - [renameSync](arkts-corefile-fileio-renamesync-f.md)
+  - [rmdir](arkts-corefile-fileio-rmdir-f.md)
+  - [rmdirSync](arkts-corefile-fileio-rmdirsync-f.md)
+  - [stat](arkts-corefile-fileio-stat-f.md)
+  - [statSync](arkts-corefile-fileio-statsync-f.md)
+  - [symlink](arkts-corefile-fileio-symlink-f.md)
+  - [symlinkSync](arkts-corefile-fileio-symlinksync-f.md)
+  - [truncate](arkts-corefile-fileio-truncate-f.md)
+  - [truncateSync](arkts-corefile-fileio-truncatesync-f.md)
+  - [unlink](arkts-corefile-fileio-unlink-f.md)
+  - [unlinkSync](arkts-corefile-fileio-unlinksync-f.md)
+  - [write](arkts-corefile-fileio-write-f.md)
+  - [writeSync](arkts-corefile-fileio-writesync-f.md)
+  - [Dir](arkts-corefile-dir-depr-i.md)
+  - [Dirent](arkts-corefile-dirent-depr-i.md)
+  - [ReadOut](arkts-corefile-readout-depr-i.md)
+  - [Stat](arkts-corefile-stat-depr-i.md)
+  - [Stream](arkts-corefile-stream-depr-i.md)
+  - [Watcher](arkts-corefile-watcher-depr-i.md)
 - [@ohos.filemanagement.userFileManager](arkts-filemanagement-userfilemanager.md)<!--Del-->
-  - [getUserFileMgr(system api)](arkts-userfilemanager-getuserfilemgr-f-sys.md)<!--DelEnd--><!--Del-->
-  - [AbsAlbum(system api)](arkts-userfilemanager-absalbum-i-sys.md)<!--DelEnd--><!--Del-->
-  - [Album(system api)](arkts-userfilemanager-album-i-sys.md)<!--DelEnd--><!--Del-->
-  - [AlbumFetchOptions(system api)](arkts-userfilemanager-albumfetchoptions-i-sys.md)<!--DelEnd--><!--Del-->
-  - [ChangeData(system api)](arkts-userfilemanager-changedata-i-sys.md)<!--DelEnd--><!--Del-->
-  - [FetchOptions(system api)](arkts-userfilemanager-fetchoptions-i-sys.md)<!--DelEnd--><!--Del-->
-  - [FetchResult(system api)](arkts-userfilemanager-fetchresult-i-sys.md)<!--DelEnd--><!--Del-->
-  - [FileAsset(system api)](arkts-userfilemanager-fileasset-i-sys.md)<!--DelEnd--><!--Del-->
-  - [PeerInfo(system api)](arkts-userfilemanager-peerinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [PhotoCreateOptions(system api)](arkts-userfilemanager-photocreateoptions-i-sys.md)<!--DelEnd--><!--Del-->
-  - [PrivateAlbum(system api)](arkts-userfilemanager-privatealbum-i-sys.md)<!--DelEnd--><!--Del-->
-  - [UserFileManager(system api)](arkts-userfilemanager-userfilemanager-i-sys.md)<!--DelEnd--><!--Del-->
-  - [ChangeEvent(system api)](arkts-userfilemanager-changeevent-t-sys.md)<!--DelEnd--><!--Del-->
-  - [MemberType(system api)](arkts-userfilemanager-membertype-t-sys.md)<!--DelEnd--><!--Del-->
-  - [AlbumKey(system api)](arkts-userfilemanager-albumkey-e-sys.md)<!--DelEnd--><!--Del-->
-  - [AlbumSubType(system api)](arkts-userfilemanager-albumsubtype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [AlbumType(system api)](arkts-userfilemanager-albumtype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [AudioKey(system api)](arkts-userfilemanager-audiokey-e-sys.md)<!--DelEnd--><!--Del-->
-  - [DefaultChangeUri(system api)](arkts-userfilemanager-defaultchangeuri-e-sys.md)<!--DelEnd--><!--Del-->
-  - [FileType(system api)](arkts-userfilemanager-filetype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [ImageVideoKey(system api)](arkts-userfilemanager-imagevideokey-e-sys.md)<!--DelEnd--><!--Del-->
-  - [NotifyType(system api)](arkts-userfilemanager-notifytype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [PhotoSubType(system api)](arkts-userfilemanager-photosubtype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [PositionType(system api)](arkts-userfilemanager-positiontype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [PrivateAlbumType(system api)](arkts-userfilemanager-privatealbumtype-e-sys.md)<!--DelEnd-->
-- [@ohos.fileshare](arkts-fileshare.md)<!--Del-->
-  - [revokeSharedDirectoryPermission(system api)](arkts-fileshare-revokeshareddirectorypermission-f-sys.md)<!--DelEnd--><!--Del-->
-  - [checkPathPermission(system api)](arkts-fileshare-checkpathpermission-f-sys.md)<!--DelEnd-->
-  - [activatePermission](arkts-fileshare-activatepermission-f.md)
-  - [deactivatePermission](arkts-fileshare-deactivatepermission-f.md)
-  - [checkPersistentPermission](arkts-fileshare-checkpersistentpermission-f.md)<!--Del-->
-  - [getSharedDirectoryInfo(system api)](arkts-fileshare-getshareddirectoryinfo-f-sys.md)<!--DelEnd-->
-  - [revokePermission](arkts-fileshare-revokepermission-f.md)<!--Del-->
-  - [revokePermission(system api)](arkts-fileshare-revokepermission-f-sys.md)<!--DelEnd--><!--Del-->
-  - [grantSharedDirectoryPermission(system api)](arkts-fileshare-grantshareddirectorypermission-f-sys.md)<!--DelEnd-->
-  - [persistPermission](arkts-fileshare-persistpermission-f.md)<!--Del-->
-  - [grantUriPermission(system api)](arkts-fileshare-granturipermission-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getPersistentPolicy(system api)](arkts-fileshare-getpersistentpolicy-f-sys.md)<!--DelEnd-->
-  - [PathPolicyInfo](arkts-fileshare-pathpolicyinfo-i.md)
-  - [PolicyErrorResult](arkts-fileshare-policyerrorresult-i.md)
-  - [PolicyInfo](arkts-fileshare-policyinfo-i.md)<!--Del-->
-  - [SharedDirectoryInfo(system api)](arkts-fileshare-shareddirectoryinfo-i-sys.md)<!--DelEnd-->
-  - [OperationMode](arkts-fileshare-operationmode-e.md)
-  - [PolicyErrorCode](arkts-fileshare-policyerrorcode-e.md)
-  - [PolicyType](arkts-fileshare-policytype-e.md)
+  - [getUserFileMgr(system api)](arkts-corefile-getuserfilemgr-f-sys.md)<!--DelEnd--><!--Del-->
+  - [AbsAlbum(system api)](arkts-corefile-absalbum-i-sys.md)<!--DelEnd--><!--Del-->
+  - [Album(system api)](arkts-corefile-album-i-sys.md)<!--DelEnd--><!--Del-->
+  - [AlbumFetchOptions(system api)](arkts-corefile-albumfetchoptions-i-sys.md)<!--DelEnd--><!--Del-->
+  - [ChangeData(system api)](arkts-corefile-changedata-i-sys.md)<!--DelEnd--><!--Del-->
+  - [FetchOptions(system api)](arkts-corefile-fetchoptions-i-sys.md)<!--DelEnd--><!--Del-->
+  - [FetchResult(system api)](arkts-corefile-fetchresult-i-sys.md)<!--DelEnd--><!--Del-->
+  - [FileAsset(system api)](arkts-corefile-fileasset-i-sys.md)<!--DelEnd--><!--Del-->
+  - [PeerInfo(system api)](arkts-corefile-peerinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [PhotoCreateOptions(system api)](arkts-corefile-photocreateoptions-i-sys.md)<!--DelEnd--><!--Del-->
+  - [PrivateAlbum(system api)](arkts-corefile-privatealbum-i-sys.md)<!--DelEnd--><!--Del-->
+  - [UserFileManager(system api)](arkts-corefile-userfilemanager-i-sys.md)<!--DelEnd--><!--Del-->
+  - [ChangeEvent(system api)](arkts-corefile-changeevent-t-sys.md)<!--DelEnd--><!--Del-->
+  - [MemberType(system api)](arkts-corefile-membertype-t-sys.md)<!--DelEnd--><!--Del-->
+  - [AlbumKey(system api)](arkts-corefile-albumkey-e-sys.md)<!--DelEnd--><!--Del-->
+  - [AlbumSubType(system api)](arkts-corefile-albumsubtype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [AlbumType(system api)](arkts-corefile-albumtype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [AudioKey(system api)](arkts-corefile-audiokey-e-sys.md)<!--DelEnd--><!--Del-->
+  - [DefaultChangeUri(system api)](arkts-corefile-defaultchangeuri-e-sys.md)<!--DelEnd--><!--Del-->
+  - [FileType(system api)](arkts-corefile-filetype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [ImageVideoKey(system api)](arkts-corefile-imagevideokey-e-sys.md)<!--DelEnd--><!--Del-->
+  - [NotifyType(system api)](arkts-corefile-notifytype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [PhotoSubType(system api)](arkts-corefile-photosubtype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [PositionType(system api)](arkts-corefile-positiontype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [PrivateAlbumType(system api)](arkts-corefile-privatealbumtype-e-sys.md)<!--DelEnd-->
+- [@ohos.fileshare](arkts-fileshare.md)
+  - [activatePermission](arkts-corefile-activatepermission-f.md)<!--Del-->
+  - [checkPathPermission(system api)](arkts-corefile-checkpathpermission-f-sys.md)<!--DelEnd-->
+  - [checkPersistentPermission](arkts-corefile-checkpersistentpermission-f.md)
+  - [deactivatePermission](arkts-corefile-deactivatepermission-f.md)<!--Del-->
+  - [getPersistentPolicy(system api)](arkts-corefile-getpersistentpolicy-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getSharedDirectoryInfo(system api)](arkts-corefile-getshareddirectoryinfo-f-sys.md)<!--DelEnd--><!--Del-->
+  - [grantSharedDirectoryPermission(system api)](arkts-corefile-grantshareddirectorypermission-f-sys.md)<!--DelEnd--><!--Del-->
+  - [grantUriPermission(system api)](arkts-corefile-granturipermission-f-sys.md)<!--DelEnd-->
+  - [persistPermission](arkts-corefile-persistpermission-f.md)
+  - [revokePermission](arkts-corefile-revokepermission-f.md)<!--Del-->
+  - [revokePermission(system api)](arkts-corefile-revokepermission-f-sys.md)<!--DelEnd--><!--Del-->
+  - [revokeSharedDirectoryPermission(system api)](arkts-corefile-revokeshareddirectorypermission-f-sys.md)<!--DelEnd-->
+  - [PathPolicyInfo](arkts-corefile-pathpolicyinfo-i.md)
+  - [PolicyErrorResult](arkts-corefile-policyerrorresult-i.md)
+  - [PolicyInfo](arkts-corefile-policyinfo-i.md)<!--Del-->
+  - [SharedDirectoryInfo(system api)](arkts-corefile-shareddirectoryinfo-i-sys.md)<!--DelEnd-->
+  - [OperationMode](arkts-corefile-operationmode-e.md)
+  - [PolicyErrorCode](arkts-corefile-policyerrorcode-e.md)
+  - [PolicyType](arkts-corefile-policytype-e.md)
+- [@ohos.statfs](arkts-statfs.md)
+  - [getFreeBytes](arkts-corefile-getfreebytes-depr-f.md)
+  - [getTotalBytes](arkts-corefile-gettotalbytes-depr-f.md)
+- [@system.file](arkts-file.md)
+  - [File](arkts-corefile-file-depr-c.md)
+  - [FileAccessOption](arkts-corefile-fileaccessoption-depr-i.md)
+  - [FileCopyOption](arkts-corefile-filecopyoption-depr-i.md)
+  - [FileDeleteOption](arkts-corefile-filedeleteoption-depr-i.md)
+  - [FileGetOption](arkts-corefile-filegetoption-depr-i.md)
+  - [FileListOption](arkts-corefile-filelistoption-depr-i.md)
+  - [FileListResponse](arkts-corefile-filelistresponse-depr-i.md)
+  - [FileMkdirOption](arkts-corefile-filemkdiroption-depr-i.md)
+  - [FileMoveOption](arkts-corefile-filemoveoption-depr-i.md)
+  - [FileReadArrayBufferOption](arkts-corefile-filereadarraybufferoption-depr-i.md)
+  - [FileReadArrayBufferResponse](arkts-corefile-filereadarraybufferresponse-depr-i.md)
+  - [FileReadTextOption](arkts-corefile-filereadtextoption-depr-i.md)
+  - [FileReadTextResponse](arkts-corefile-filereadtextresponse-depr-i.md)
+  - [FileResponse](arkts-corefile-fileresponse-depr-i.md)
+  - [FileRmdirOption](arkts-corefile-filermdiroption-depr-i.md)
+  - [FileWriteArrayBufferOption](arkts-corefile-filewritearraybufferoption-depr-i.md)
+  - [FileWriteTextOption](arkts-corefile-filewritetextoption-depr-i.md)

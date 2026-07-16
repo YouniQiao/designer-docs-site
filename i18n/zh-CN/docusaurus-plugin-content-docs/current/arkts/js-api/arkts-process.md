@@ -13,7 +13,7 @@
 | 名称 | 说明 |
 | --- | --- |
 | [abort](arkts-arkts-abort-f.md#abort-1) | 中止进程并生成核心文件。该方法会导致进程立即退出，请谨慎使用。 |
-| [exit](arkts-arkts-exit-f.md#exit-1) | 终止程序。 请谨慎使用此接口。调用此接口后应用将退出。如果输入参数非 0，可能会导致数据丢失或出现异常。 |
+| [exit](arkts-arkts-exit-f.md#exit-1) | 终止程序。请谨慎使用此接口。调用此接口后应用将退出。如果输入参数非 0，可能会导致数据丢失或出现异常。 |
 | [getEnvironmentVar](arkts-arkts-getenvironmentvar-f.md#getenvironmentvar-1) | 获取环境变量名对应的值。 |
 | [getPastCpuTime](arkts-arkts-getpastcputime-f.md#getpastcputime-1) | 获取进程启动到当前时间的 CPU 时间（以毫秒为单位）。 |
 | [getStartRealtime](arkts-arkts-getstartrealtime-f.md#getstartrealtime-1) | 获取系统启动到进程启动的实时时间（以毫秒为单位，不包含系统休眠时间）。 |
@@ -42,7 +42,7 @@
 
 | 名称 | 说明 |
 | --- | --- |
-| [ProcessManager](arkts-arkts-processmanager-c.md) | 提供进程管理相关接口，包括进程 UID 判断、用户信息查询、线程优先级获取、环境变量获取、进程退出和信号发送等功能。 通过 `new process.ProcessManager()` 构造 ProcessManager 对象。 |
+| [ProcessManager](arkts-arkts-processmanager-c.md) | 提供进程管理相关接口，包括进程 UID 判断、用户信息查询、线程优先级获取、环境变量获取、进程退出和信号发送等功能。通过 `new process.ProcessManager()` 构造 ProcessManager 对象。 |
 
 <!--Del-->
 ### 接口（系统接口）

@@ -12,11 +12,11 @@ import { MeasureOptions } from '@kit.ArkUI';
 
 | Name | Description |
 | --- | --- |
-| [MeasureText](arkts-measuretext-c.md) | 定义测算文本相关接口。 |
+| [MeasureText](arkts-arkui-measuretext-c.md) | Defines the Measure interface. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [MeasureOptions](arkts-measureoptions-i.md) | 被计算文本属性。 |
+| [MeasureOptions](arkts-arkui-measureoptions-i.md) | Provides attributes of the measured text. |
 

@@ -1,6 +1,10 @@
 # @ohos.hichecker
 
-The HiChecker module allows you to check issues that may be easily ignored during development of applications ( including system-built and third-party applications). Such issues include calling of time-consuming functions by key application threads, event distribution and execution timeout in application processes, and ability resource leakage in application processes. The issues are recorded in logs or lead to process crashes explicitly so that you can find and rectify them.
+The HiChecker module allows you to check issues that may be easily ignored during development of applications (
+including system-built and third-party applications). Such issues include calling of time-consuming functions by key
+application threads, event distribution and execution timeout in application processes, and ability resource leakage
+in application processes. The issues are recorded in logs or lead to process crashes explicitly so that you can find
+and rectify them.
 
 **Since:** 8
 
@@ -18,10 +22,10 @@ import { hichecker } from '@kit.PerformanceAnalysisKit';
 
 | Name | Description |
 | --- | --- |
-| [addCheckRule](arkts-performanceanalysis-addcheckrule-f.md#addcheckrule-1) | Adds one or more check rules. HiChecker detects unexpected operations or gives feedback based on the added rules. You can use **grep HiChecker** to check for the application running information in the hilog. |
+| [addCheckRule](arkts-performanceanalysis-addcheckrule-f.md#addcheckrule-1) | Adds one or more check rules. HiChecker detects unexpected operations or gives feedback based on the added rules.You can use **grep HiChecker** to check for the application running information in the hilog. |
 | [addRule](arkts-performanceanalysis-addrule-f.md#addrule-1) | Adds one or more rules. HiChecker detects unexpected operations or gives feedback based on the added rules. |
-| [contains](arkts-performanceanalysis-contains-f.md#contains-1) | Checks whether the specified rule exists in the collection of added rules. If the rule is of the thread level, this operation is performed only on the current thread. |
-| [containsCheckRule](arkts-performanceanalysis-containscheckrule-f.md#containscheckrule-1) | Checks whether the specified rule exists in the collection of added rules. If the rule is of the thread level, this operation is performed only on the current thread. |
+| [contains](arkts-performanceanalysis-contains-f.md#contains-1) | Checks whether the specified rule exists in the collection of added rules. If the rule is of the thread level, thisoperation is performed only on the current thread. |
+| [containsCheckRule](arkts-performanceanalysis-containscheckrule-f.md#containscheckrule-1) | Checks whether the specified rule exists in the collection of added rules. If the rule is of the thread level, thisoperation is performed only on the current thread. |
 | [getRule](arkts-performanceanalysis-getrule-f.md#getrule-1) | Obtains a collection of thread, process, and alarm rules that have been added. |
 | [removeCheckRule](arkts-performanceanalysis-removecheckrule-f.md#removecheckrule-1) | Removes one or more rules. The removed rules will become ineffective. |
 | [removeRule](arkts-performanceanalysis-removerule-f.md#removerule-1) | Removes one or more rules. The removed rules will become ineffective. |

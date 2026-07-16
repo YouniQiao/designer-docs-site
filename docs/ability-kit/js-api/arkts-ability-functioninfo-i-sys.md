@@ -2,7 +2,7 @@
 
 FunctionInfo describes the basic information of a CLI function.
 
-**Since:** 26.1.0
+**Since:** 26.0.0
 
 **System capability:** SystemCapability.Ability.AgentRuntime.Core
 
@@ -18,7 +18,7 @@ Human-readable function description, used for AI Agent decision-making.
 
 **Type:** string
 
-**Since:** 26.1.0
+**Since:** 26.0.0
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -36,7 +36,7 @@ The name of the function.
 
 **Type:** string
 
-**Since:** 26.1.0
+**Since:** 26.0.0
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -54,7 +54,7 @@ The namespace of the function.
 
 **Type:** string
 
-**Since:** 26.1.0
+**Since:** 26.0.0
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -72,7 +72,7 @@ Input parameter JSON Schema, describes the structure of parameters accepted by t
 
 **Type:** string
 
-**Since:** 26.1.0
+**Since:** 26.0.0
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -90,7 +90,7 @@ Output result JSON Schema (optional), describes the structure of the function re
 
 **Type:** string
 
-**Since:** 26.1.0
+**Since:** 26.0.0
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -108,7 +108,7 @@ The version of the function (format defined by provider, e.g., "1.0.0").
 
 **Type:** string
 
-**Since:** 26.1.0
+**Since:** 26.0.0
 
 **Model restriction:** This API can be used only in the stage model.
 

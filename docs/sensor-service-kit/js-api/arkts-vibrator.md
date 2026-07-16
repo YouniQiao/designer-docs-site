@@ -12,11 +12,11 @@ import { VibrateOptions } from '@kit.SensorServiceKit';
 
 | Name | Description |
 | --- | --- |
-| [Vibrator](arkts-vibrator-c.md) |  |
+| [Vibrator](arkts-sensorservice-vibrator-c.md) |  |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [VibrateOptions](arkts-vibrateoptions-i.md) | Defines the vibration options. |
+| [VibrateOptions](arkts-sensorservice-vibrateoptions-i.md) | Defines the vibration options. |
 

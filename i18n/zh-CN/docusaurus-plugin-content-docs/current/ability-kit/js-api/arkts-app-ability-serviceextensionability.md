@@ -1,16 +1,12 @@
 # @ohos.app.ability.ServiceExtensionAbility
 
-## 导入模块
-
-```TypeScript
-import { ServiceExtensionAbility } from '@kit.AbilityKit';
-```
-
 ## 汇总
 
-### 类
+<!--Del-->
+### 类（系统接口）
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| <!--DelRow-->[ServiceExtensionAbility](arkts-serviceextensionability-c.md) | ServiceExtensionAbility模块提供后台服务相关扩展能力，提供后台服务创建、销毁、连接、断开等生命周期回调。 |
+| [ServiceExtensionAbility](arkts-ability-serviceextensionability-c-sys.md) | ServiceExtensionAbility模块提供后台服务相关扩展能力，提供后台服务创建、销毁、连接、断开等生命周期回调。 |
+<!--DelEnd-->
 

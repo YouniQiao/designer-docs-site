@@ -34,7 +34,9 @@ contentModifier(modifier: ContentModifier<RatingConfiguration>)
 contentModifier(modifier: Optional<ContentModifier<RatingConfiguration>>)
 ```
 
-定制Rating内容区的方法。与 [contentModifier](RatingAttribute#contentModifier(modifier: ContentModifier<RatingConfiguration>))相比，modifier 参数新增了对undefined类型的支持。
+定制Rating内容区的方法。与
+[contentModifier](RatingAttribute#contentModifier(modifier: ContentModifier<RatingConfiguration>))相比，modifier
+参数新增了对undefined类型的支持。
 
 **起始版本：** 18
 
@@ -78,7 +80,8 @@ onChange(callback: (value: number) => void)
 onChange(callback: Optional<OnRatingChangeCallback>)
 ```
 
-当评分条的评星变化时触发该回调。与[onChange](RatingAttribute#onChange(callback: (value: number) => void))相比，callback参数新增了对 undefined类型的支持。
+当评分条的评星变化时触发该回调。与[onChange](RatingAttribute#onChange(callback: (value: number) => void))相比，callback参数新增了对
+undefined类型的支持。
 
 **起始版本：** 18
 
@@ -102,7 +105,11 @@ onChange(callback: Optional<OnRatingChangeCallback>)
 starStyle(options: StarStyleOptions)
 ```
 
-设置评分的样式。该属性所支持的图片类型能力参考[Image](../../apis-image-kit/arkts-apis/arkts-multimedia-image.md)组件。 支持加载本地图片和网络图片，暂不支持PixelMap类型。 默认图片加载方式为异步，暂不支持同步加载。
+设置评分的样式。该属性所支持的图片类型能力参考[Image](../../apis-image-kit/arkts-apis/arkts-multimedia-image.md)组件。
+
+支持加载本地图片和网络图片，暂不支持PixelMap类型。
+
+默认图片加载方式为异步，暂不支持同步加载。
 
 **起始版本：** 7
 
@@ -124,7 +131,13 @@ starStyle(options: StarStyleOptions)
 starStyle(options: Optional<StarStyleOptions>)
 ```
 
-设置评分的样式。该属性所支持的图片类型能力参考[Image](../../apis-image-kit/arkts-apis/arkts-multimedia-image.md)组件。 支持加载本地图片和网络图片，暂不支持PixelMap类型。 默认图片加载方式为异步，暂不支持同步加载。 与[starStyle](RatingAttribute#starStyle(options: StarStyleOptions))相比，options参数新增了对undefined类型的支持。
+设置评分的样式。该属性所支持的图片类型能力参考[Image](../../apis-image-kit/arkts-apis/arkts-multimedia-image.md)组件。
+
+支持加载本地图片和网络图片，暂不支持PixelMap类型。
+
+默认图片加载方式为异步，暂不支持同步加载。
+
+与[starStyle](RatingAttribute#starStyle(options: StarStyleOptions))相比，options参数新增了对undefined类型的支持。
 
 **起始版本：** 18
 

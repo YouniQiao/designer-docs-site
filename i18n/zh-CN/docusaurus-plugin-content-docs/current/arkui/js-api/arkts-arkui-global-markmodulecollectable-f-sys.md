@@ -26,5 +26,5 @@ Mark moduleNamespace which loaded by dynamic-import is collectable.
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | if type of object is not moduleNameSpace. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | if type of object is not moduleNameSpace. |
 

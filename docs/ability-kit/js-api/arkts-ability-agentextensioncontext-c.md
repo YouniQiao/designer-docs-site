@@ -2,7 +2,7 @@
 
 The context of the agent service extension. It provides resources and methods that developers can access.
 
-**Inheritance/Implementation:** AgentExtensionContext extends [ExtensionContext](arkts-ability-extensioncontext-c.md#extensioncontext)
+**Inheritance/Implementation:** AgentExtensionContext extends [ExtensionContext](arkts-ability-extensioncontext-c.md)
 
 **Since:** 24
 

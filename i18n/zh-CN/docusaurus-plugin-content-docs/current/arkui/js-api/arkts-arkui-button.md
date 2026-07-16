@@ -1,6 +1,9 @@
 # Button
 
-按钮组件，可快速创建不同样式的按钮。 > **说明：**
+按钮组件，可快速创建不同样式的按钮。
+
+> **说明：**
+
 
 ## Button
 
@@ -46,7 +49,9 @@ Button(options: ButtonOptions)
 Button(label: ResourceStr, options?: ButtonOptions)
 ```
 
-使用文本内容创建相应的按钮组件，此时Button无法包含子组件。 文本内容默认单行显示。
+使用文本内容创建相应的按钮组件，此时Button无法包含子组件。
+
+文本内容默认单行显示。
 
 **起始版本：** 7
 

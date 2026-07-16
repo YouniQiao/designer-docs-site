@@ -45,7 +45,7 @@ import { Rect, TouchPosition, AccessibilityVirtualNode, ElementAttributeKeys, Fo
 | [ElementAttributeKeys](arkts-accessibility-elementattributekeys-t.md) | Describes the attribute name of [ElementAttributeValues](arkts-accessibility-elementattributevalues-i.md). |
 | [ElementAttributeValues](arkts-accessibility-elementattributevalues-t.md) | Provides attribute names and value types of a node element. For details, see [ElementAttributeValues](arkts-accessibility-elementattributevalues-i.md). |
 | [FocusDirection](arkts-accessibility-focusdirection-t.md) | Enumerates the focus directions. For details, see [FocusDirection](arkts-accessibility-focusdirection-t.md). |
-| [FocusType](arkts-accessibility-focustype-t.md) | Enumerates the focus types. For details, see [FocusType](arkts-accessibility-focustype-t.md) . |
+| [FocusType](arkts-accessibility-focustype-t.md) | Enumerates the focus types. For details, see [FocusType](arkts-accessibility-focustype-t.md). |
 | [GestureType](arkts-accessibility-gesturetype-t.md) | Enumerates gesture types. |
 | [PageUpdateType](arkts-accessibility-pageupdatetype-t.md) | Enumerates the page update types. |
 | [Rect](arkts-accessibility-rect-t.md) | Defines a rectangle. For details, see [Rect](arkts-accessibility-rect-i.md). |

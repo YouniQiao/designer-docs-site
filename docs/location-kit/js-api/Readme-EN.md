@@ -5,7 +5,8 @@
 - [@ohos.app.ability.FenceExtensionContext](arkts-app-ability-fenceextensioncontext.md)<!--Del-->
   - [FenceExtensionContext(system api)](arkts-location-fenceextensioncontext-c-sys.md)<!--DelEnd-->
 - [@ohos.geoLocationManager](arkts-geolocationmanager.md)
-  - [addBeaconFence](arkts-location-addbeaconfence-f.md)
+  - [addBeaconFence](arkts-location-addbeaconfence-f.md)<!--Del-->
+  - [addFusionFence(system api)](arkts-location-addfusionfence-f-sys.md)<!--DelEnd-->
   - [addGnssGeofence](arkts-location-addgnssgeofence-f.md)<!--Del-->
   - [disableLocation(system api)](arkts-location-disablelocation-f-sys.md)<!--DelEnd--><!--Del-->
   - [disableLocationByUserId(system api)](arkts-location-disablelocationbyuserid-f-sys.md)<!--DelEnd--><!--Del-->
@@ -33,7 +34,8 @@
   - [getPoiInfo](arkts-location-getpoiinfo-f.md)
   - [getPostProcessingTrack](arkts-location-getpostprocessingtrack-f.md)
   - [isBeaconFenceSupported](arkts-location-isbeaconfencesupported-f.md)
-  - [isCachedGnssServiceSupported](arkts-location-iscachedgnssservicesupported-f.md)
+  - [isCachedGnssServiceSupported](arkts-location-iscachedgnssservicesupported-f.md)<!--Del-->
+  - [isFusionFenceSupported(system api)](arkts-location-isfusionfencesupported-f-sys.md)<!--DelEnd-->
   - [isGeocoderAvailable](arkts-location-isgeocoderavailable-f.md)
   - [isGnssFenceServiceSupported](arkts-location-isgnssfenceservicesupported-f.md)
   - [isGnssServiceSupported](arkts-location-isgnssservicesupported-f.md)
@@ -48,7 +50,8 @@
   - [on](arkts-location-on-f.md)<!--Del-->
   - [on(system api)](arkts-location-on-f-sys.md)<!--DelEnd-->
   - [onLocationChange](arkts-location-onlocationchange-f.md)
-  - [removeBeaconFence](arkts-location-removebeaconfence-f.md)
+  - [removeBeaconFence](arkts-location-removebeaconfence-f.md)<!--Del-->
+  - [removeFusionFence(system api)](arkts-location-removefusionfence-f-sys.md)<!--DelEnd-->
   - [removeGnssGeofence](arkts-location-removegnssgeofence-f.md)
   - [sendCommand](arkts-location-sendcommand-f.md)<!--Del-->
   - [setLocationPrivacyConfirmStatus(system api)](arkts-location-setlocationprivacyconfirmstatus-f-sys.md)<!--DelEnd--><!--Del-->
@@ -62,41 +65,52 @@
   - [BeaconManufactureData](arkts-location-beaconmanufacturedata-i.md)<!--Del-->
   - [BluetoothScanInfo(system api)](arkts-location-bluetoothscaninfo-i-sys.md)<!--DelEnd-->
   - [BluetoothScanResult](arkts-location-bluetoothscanresult-i.md)
-  - [BluetoothSearchRequest](arkts-location-bluetoothsearchrequest-i.md)
+  - [BluetoothSearchRequestParams](arkts-location-bluetoothsearchrequestparams-i.md)
   - [CachedGnssLocationsRequest](arkts-location-cachedgnsslocationsrequest-i.md)<!--Del-->
+  - [CellFence(system api)](arkts-location-cellfence-i-sys.md)<!--DelEnd--><!--Del-->
   - [CellInfo(system api)](arkts-location-cellinfo-i-sys.md)<!--DelEnd-->
   - [ContinuousLocationRequest](arkts-location-continuouslocationrequest-i.md)<!--Del-->
   - [ContinuousLocationRequest(system api)](arkts-location-continuouslocationrequest-i-sys.md)<!--DelEnd-->
   - [CountryCode](arkts-location-countrycode-i.md)
   - [CurrentLocationRequest](arkts-location-currentlocationrequest-i.md)
   - [DistrictInfo](arkts-location-districtinfo-i.md)
-  - [DistrictRequestParams](arkts-location-districtrequestparams-i.md)
+  - [DistrictRequestParams](arkts-location-districtrequestparams-i.md)<!--Del-->
+  - [FusionFenceRequestParams(system api)](arkts-location-fusionfencerequestparams-i-sys.md)<!--DelEnd--><!--Del-->
+  - [FusionFenceTransition(system api)](arkts-location-fusionfencetransition-i-sys.md)<!--DelEnd-->
   - [GeoAddress](arkts-location-geoaddress-i.md)<!--Del-->
   - [GeoAddress(system api)](arkts-location-geoaddress-i-sys.md)<!--DelEnd-->
   - [GeoCodeRequest](arkts-location-geocoderequest-i.md)
   - [Geofence](arkts-location-geofence-i.md)
   - [GeofenceRequest](arkts-location-geofencerequest-i.md)
-  - [GeofenceTransition](arkts-location-geofencetransition-i.md)
+  - [GeofenceTransition](arkts-location-geofencetransition-i.md)<!--Del-->
+  - [GnssFence(system api)](arkts-location-gnssfence-i-sys.md)<!--DelEnd-->
   - [GnssGeofenceRequest](arkts-location-gnssgeofencerequest-i.md)<!--Del-->
   - [LocatingRequiredData(system api)](arkts-location-locatingrequireddata-i-sys.md)<!--DelEnd--><!--Del-->
   - [LocatingRequiredDataConfig(system api)](arkts-location-locatingrequireddataconfig-i-sys.md)<!--DelEnd-->
-  - [Location](arkts-location-location-i.md)
+  - [Location](arkts-location-location-i.md)<!--Del-->
+  - [Location(system api)](arkts-location-location-i-sys.md)<!--DelEnd-->
   - [LocationCommand](arkts-location-locationcommand-i.md)<!--Del-->
   - [LocationMockConfig(system api)](arkts-location-locationmockconfig-i-sys.md)<!--DelEnd-->
   - [LocationRequest](arkts-location-locationrequest-i.md)
   - [MatchingWlanInfo](arkts-location-matchingwlaninfo-i.md)
   - [Poi](arkts-location-poi-i.md)
   - [PoiInfo](arkts-location-poiinfo-i.md)
+  - [Point](arkts-location-point-i.md)
   - [ReverseGeoCodeRequest](arkts-location-reversegeocoderequest-i.md)<!--Del-->
   - [ReverseGeocodingMockInfo(system api)](arkts-location-reversegeocodingmockinfo-i-sys.md)<!--DelEnd-->
   - [SatelliteStatusInfo](arkts-location-satellitestatusinfo-i.md)
   - [SingleLocationRequest](arkts-location-singlelocationrequest-i.md)<!--Del-->
-  - [WifiScanInfo(system api)](arkts-location-wifiscaninfo-i-sys.md)<!--DelEnd-->
+  - [WifiFence(system api)](arkts-location-wififence-i-sys.md)<!--DelEnd--><!--Del-->
+  - [WifiScanInfo(system api)](arkts-location-wifiscaninfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [WirelessSignalFeature(system api)](arkts-location-wirelesssignalfeature-i-sys.md)<!--DelEnd-->
   - [BeaconFenceInfoType](arkts-location-beaconfenceinfotype-e.md)
   - [CoordinateSystemType](arkts-location-coordinatesystemtype-e.md)
-  - [CountryCodeType](arkts-location-countrycodetype-e.md)
+  - [CountryCodeType](arkts-location-countrycodetype-e.md)<!--Del-->
+  - [FusionFenceScene(system api)](arkts-location-fusionfencescene-e-sys.md)<!--DelEnd--><!--Del-->
+  - [FusionFenceType(system api)](arkts-location-fusionfencetype-e-sys.md)<!--DelEnd-->
   - [GeofenceTransitionEvent](arkts-location-geofencetransitionevent-e.md)<!--Del-->
-  - [GeofenceTransitionEvent(system api)](arkts-location-geofencetransitionevent-e-sys.md)<!--DelEnd-->
+  - [GeofenceTransitionEvent(system api)](arkts-location-geofencetransitionevent-e-sys.md)<!--DelEnd--><!--Del-->
+  - [GnssFenceType(system api)](arkts-location-gnssfencetype-e-sys.md)<!--DelEnd-->
   - [LocatingPriority](arkts-location-locatingpriority-e.md)<!--Del-->
   - [LocatingRequiredDataType(system api)](arkts-location-locatingrequireddatatype-e-sys.md)<!--DelEnd-->
   - [LocationError](arkts-location-locationerror-e.md)<!--Del-->
@@ -109,7 +123,8 @@
   - [SatelliteAdditionalInfo](arkts-location-satelliteadditionalinfo-e.md)
   - [SatelliteConstellationCategory](arkts-location-satelliteconstellationcategory-e.md)
   - [SportsType](arkts-location-sportstype-e.md)
-  - [UserActivityScenario](arkts-location-useractivityscenario-e.md)
+  - [UserActivityScenario](arkts-location-useractivityscenario-e.md)<!--Del-->
+  - [WifiFingerprintType(system api)](arkts-location-wififingerprinttype-e-sys.md)<!--DelEnd-->
 - [@ohos.geolocation](arkts-geolocation.md)
   - [flushCachedGnssLocations](arkts-location-flushcachedgnsslocations-f.md)
   - [getAddressesFromLocation](arkts-location-getaddressesfromlocation-f.md)

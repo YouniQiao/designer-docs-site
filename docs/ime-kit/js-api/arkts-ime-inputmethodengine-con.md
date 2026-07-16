@@ -303,10 +303,10 @@ Email edit box.
 ## PATTERN_NEW_PASSWORD
 
 ```TypeScript
-const PATTERN_NEW_PASSWORD = 11
+const PATTERN_NEW_PASSWORD: number
 ```
 
-New password edit box.
+New password edit box. The value is fixed at 11.
 
 **Since:** 20
 
@@ -341,10 +341,10 @@ Number edit box.
 ## PATTERN_NUMBER_DECIMAL
 
 ```TypeScript
-const PATTERN_NUMBER_DECIMAL = 12
+const PATTERN_NUMBER_DECIMAL: number
 ```
 
-Edit box for numbers with decimal points.
+Edit box for numbers with decimal points. The value is fixed at 12.
 
 **Since:** 20
 
@@ -355,10 +355,10 @@ Edit box for numbers with decimal points.
 ## PATTERN_ONE_TIME_CODE
 
 ```TypeScript
-const PATTERN_ONE_TIME_CODE = 13
+const PATTERN_ONE_TIME_CODE: number
 ```
 
-Verification code edit box.
+Verification code edit box. The value is fixed at 13.
 
 **Since:** 20
 
@@ -441,10 +441,10 @@ URI edit box.
 ## PATTERN_USER_NAME
 
 ```TypeScript
-const PATTERN_USER_NAME = 10
+const PATTERN_USER_NAME: number
 ```
 
-User name edit box.
+User name edit box. The value is fixed at 10.
 
 **Since:** 20
 

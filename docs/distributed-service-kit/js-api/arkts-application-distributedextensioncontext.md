@@ -12,5 +12,5 @@ import { DistributedExtensionContext } from '@kit.DistributedServiceKit';
 
 | Name | Description |
 | --- | --- |
-| [DistributedExtensionContext](arkts-distributedextensioncontext-c.md) | Class inherited for the distributed extension function. |
+| [DistributedExtensionContext](arkts-distributedservice-distributedextensioncontext-c.md) | Class inherited for the distributed extension function. |
 

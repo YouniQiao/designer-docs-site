@@ -4,7 +4,8 @@
 declare type ContentWillScrollCallback = (result: SwiperContentWillScrollResult) => boolean
 ```
 
-Defines the callback triggered when the **Swiper** component is about to scroll. The return value indicates whether the scroll action is allowed.
+Defines the callback triggered when the **Swiper** component is about to scroll. The return value indicates whether
+the scroll action is allowed.
 
 **Since:** 15
 

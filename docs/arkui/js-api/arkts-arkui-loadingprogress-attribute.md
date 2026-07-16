@@ -1,6 +1,10 @@
 # LoadingProgress properties/events
 
-In addition to the [universal attributes](../../../../reference/apis-arkui/arkui-ts/ts-component-general-attributes.md), the following attributes are supported. The [universal events](../../../../reference/apis-arkui/arkui-ts/ts-component-general-events.md) are supported.
+In addition to the
+[universal attributes](../../../../reference/apis-arkui/arkui-ts/ts-component-general-attributes.md), the following
+attributes are supported.
+
+The [universal events](../../../../reference/apis-arkui/arkui-ts/ts-component-general-events.md) are supported.
 
 **Inheritance/Implementation:** LoadingProgressAttribute extends [CommonMethod<LoadingProgressAttribute>](CommonMethod<LoadingProgressAttribute>)
 
@@ -58,7 +62,11 @@ Creates a content modifier.
 enableLoading(value: boolean)
 ```
 
-Sets whether to display the LoadingProgress animation. The component still takes up space in the layout when the loading animation is not shown. The universal attribute [Visibility](arkts-arkui-visibility-e.md).Hidden hides the entire component area, including the regions specified by [border](arkts-arkui-commonmethod-c.md#border-1) and [padding](arkts-arkui-commonmethod-c.md#padding-1). In contrast, when the value of **enableLoading** is set to **false**, only the loading animation itself is hidden without affecting the borders or other elements.
+Sets whether to display the LoadingProgress animation. The component still takes up space in the layout when the
+loading animation is not shown. The universal attribute [Visibility](arkts-arkui-visibility-e.md).Hidden hides the entire
+component area, including the regions specified by [border](arkts-arkui-commonmethod-c.md#border-1) and
+[padding](arkts-arkui-commonmethod-c.md#padding-1). In contrast, when the value of **enableLoading** is set to **false**, only
+the loading animation itself is hidden without affecting the borders or other elements.
 
 **Since:** 10
 

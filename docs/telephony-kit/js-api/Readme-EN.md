@@ -358,6 +358,7 @@
   - [updateIccDiallingNumbers(system api)](arkts-telephony-updateiccdiallingnumbers-f-sys.md)<!--DelEnd--><!--Del-->
   - [DiallingNumbersInfo(system api)](arkts-telephony-diallingnumbersinfo-i-sys.md)<!--DelEnd-->
   - [IccAccountInfo](arkts-telephony-iccaccountinfo-i.md)<!--Del-->
+  - [IccAccountInfo(system api)](arkts-telephony-iccaccountinfo-i-sys.md)<!--DelEnd--><!--Del-->
   - [LockInfo(system api)](arkts-telephony-lockinfo-i-sys.md)<!--DelEnd--><!--Del-->
   - [LockStatusResponse(system api)](arkts-telephony-lockstatusresponse-i-sys.md)<!--DelEnd--><!--Del-->
   - [OperatorConfig(system api)](arkts-telephony-operatorconfig-i-sys.md)<!--DelEnd--><!--Del-->

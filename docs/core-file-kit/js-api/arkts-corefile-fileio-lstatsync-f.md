@@ -6,7 +6,8 @@
 declare function lstatSync(path: string): Stat
 ```
 
-Obtains information about a symbolic link that is used to refer to a file or directory. This API returns the result synchronously.
+Obtains information about a symbolic link that is used to refer to a file or directory. This API returns the result
+synchronously.
 
 **Since:** 7
 

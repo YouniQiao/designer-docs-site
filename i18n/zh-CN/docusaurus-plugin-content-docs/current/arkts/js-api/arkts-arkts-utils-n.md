@@ -10,8 +10,8 @@
 
 | 名称 | 说明 |
 | --- | --- |
-| [locks](arkts-arkts-utils-locks-n.md) | 异步锁。 |
-| [ASON](arkts-arkts-utils-ason-n.md) | ArkTS JSON工具。 |
+| [locks](arkts-arkts-locks-n.md) | 异步锁。 |
+| [ASON](arkts-arkts-ason-n.md) | ArkTS JSON工具。 |
 
 ### 函数
 

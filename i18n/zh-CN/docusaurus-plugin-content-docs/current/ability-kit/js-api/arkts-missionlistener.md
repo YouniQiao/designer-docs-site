@@ -2,9 +2,11 @@
 
 ## 汇总
 
-### 接口
+<!--Del-->
+### 接口（系统接口）
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| <!--DelRow-->[MissionListener](arkts-missionlistener-i.md) | 定义系统任务状态监听，可以通过[on]{@link @ohos.app.ability.missionManager:missionManager.on_mission}注册。 |
+| [MissionListener](arkts-ability-missionlistener-i-sys.md) | 定义系统任务状态监听，可以通过[on](arkts-ability-on-f-sys.md#on-1)注册。 |
+<!--DelEnd-->
 

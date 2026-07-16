@@ -2,30 +2,34 @@
 
 ## Summary
 
-### Functions
+<!--Del-->
+### Functions（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[extendViewModel](arkts-viewmodel-extendviewmodel-f-sys.md#extendViewModel-1) |  |
+| [extendViewModel](arkts-arkui-viewmodel-extendviewmodel-f-sys.md#extendviewmodel-1) |  |
+<!--DelEnd-->
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [ElementReferences](arkts-elementreferences-i.md) | Element References |
-| [FocusParamObj](arkts-focusparamobj-i.md) | Defines the focus param. |
-| [ImageAnimatorElement](arkts-imageanimatorelement-i.md) | Image animator element |
-| [ListElement](arkts-listelement-i.md) | List element |
-| [ListScrollToOptions](arkts-listscrolltooptions-i.md) | List scroll to options |
-| [Options](arkts-options-i.md) | Options type |
-| [PickerElement](arkts-pickerelement-i.md) | The <picker> component supports common, date, time, and multi-column text. |
-| [SwiperElement](arkts-swiperelement-i.md) | The <swiper> component provides a swiper container. |
-| [ViewModel](arkts-viewmodel-i.md) | View model |
+| [ElementReferences](arkts-arkui-elementreferences-i.md) | Element References |
+| [FocusParamObj](arkts-arkui-focusparamobj-i.md) | Defines the focus param. |
+| [ImageAnimatorElement](arkts-arkui-imageanimatorelement-i.md) | Image animator element |
+| [ListElement](arkts-arkui-listelement-i.md) | List element |
+| [ListScrollToOptions](arkts-arkui-listscrolltooptions-i.md) | List scroll to options |
+| [Options](arkts-arkui-options-i.md) | Options type |
+| [PickerElement](arkts-arkui-pickerelement-i.md) | The &lt;picker&gt; component supports common, date, time, and multi-column text. |
+| [SwiperElement](arkts-arkui-swiperelement-i.md) | The &lt;swiper&gt; component provides a swiper container. |
+| [ViewModel](arkts-arkui-viewmodel-i.md) | View model |
 
-### Types
+<!--Del-->
+### Types（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[CombinedOptions](arkts-combinedoptions-t.md) | Used for ide. |
-| <!--DelRow-->[DefaultData](arkts-defaultdata-t.md) | Used for ide. |
+| [CombinedOptions](arkts-arkui-combinedoptions-t-sys.md) | Used for ide. |
+| [DefaultData](arkts-arkui-defaultdata-t-sys.md) | Used for ide. |
+<!--DelEnd-->
 

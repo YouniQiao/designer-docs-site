@@ -12,5 +12,5 @@ import { WebNetErrorList } from '@kit.ArkWeb';
 
 | Name | Description |
 | --- | --- |
-| [WebNetErrorList](arkts-webneterrorlist-e.md) | Web net error list. |
+| [WebNetErrorList](arkts-arkweb-webneterrorlist-e.md) | Web net error list. |
 

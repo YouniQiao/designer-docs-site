@@ -6,7 +6,11 @@
 declare function moveFileSync(src: string, dest: string, mode?: number): void
 ```
 
-以同步方式移动文件。 > **说明：** > > 该接口不支持在分布式文件路径下操作。
+以同步方式移动文件。
+
+> **说明：**
+>
+> 该接口不支持在分布式文件路径下操作。
 
 **起始版本：** 9
 

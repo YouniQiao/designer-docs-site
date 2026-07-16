@@ -6,5 +6,5 @@
 
 | Name | Description |
 | --- | --- |
-| [Advertisement](arkts-advertisement-i.md) | 本模块为请求的广告内容。 |
+| [Advertisement](arkts-ads-advertisement-i.md) | This module provides the requested ad content. |
 

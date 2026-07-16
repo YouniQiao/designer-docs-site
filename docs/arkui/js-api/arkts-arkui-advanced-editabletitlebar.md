@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { EditableTitleBarOptions,EditableTitleBarMenuItem,EditableTitleBarItem,EditableLeftIconType,EditableTitleBar } from '@kit.ArkUI';
+import { EditableTitleBarOptions, EditableTitleBarMenuItem, EditableTitleBarItem, EditableLeftIconType, EditableTitleBar } from '@kit.ArkUI';
 ```
 
 ## Summary
@@ -12,23 +12,29 @@ import { EditableTitleBarOptions,EditableTitleBarMenuItem,EditableTitleBarItem,E
 
 | Name | Description |
 | --- | --- |
-| [EditableTitleBarMenuItem](arkts-editabletitlebarmenuitem-c.md) | Declaration of the menu item on the right side. |
+| [EditableTitleBarMenuItem](arkts-arkui-editabletitlebarmenuitem-c.md) | Declaration of the menu item on the right side. |
+
+### Structs
+
+| Name | Description |
+| --- | --- |
+| [EditableTitleBar](arkts-arkui-editabletitlebar-s.md) | Declaration of the editable title bar. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [EditableTitleBarOptions](arkts-editabletitlebaroptions-i.md) | Indicates the options of the editable title bar. |
+| [EditableTitleBarOptions](arkts-arkui-editabletitlebaroptions-i.md) | Indicates the options of the editable title bar. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [EditableLeftIconType](arkts-editablelefticontype-e.md) | Declaration of the left icon type. |
+| [EditableLeftIconType](arkts-arkui-editablelefticontype-e.md) | Declaration of the left icon type. |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [EditableTitleBarItem](arkts-editabletitlebaritem-t.md) | Declaration of the image item. |
+| [EditableTitleBarItem](arkts-arkui-editabletitlebaritem-t.md) | Declaration of the image item. |
 

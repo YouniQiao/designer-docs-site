@@ -1,6 +1,7 @@
 # @ohos.hiSysEvent
 
-The **hiSysEvent** module provides the system event logging functions, such as configuring trace points, subscribing to system events, and querying system events written to the event file.
+The **hiSysEvent** module provides the system event logging functions, such as configuring trace points, subscribing
+to system events, and querying system events written to the event file.
 
 **Since:** 9
 
@@ -22,10 +23,10 @@ import { hiSysEvent } from '@kit.PerformanceAnalysisKit';
 | Name | Description |
 | --- | --- |
 | [addWatcher](arkts-performanceanalysis-addwatcher-f-sys.md#addwatcher-1) | Adds a watcher for event subscription. |
-| [exportSysEvents](arkts-performanceanalysis-exportsysevents-f-sys.md#exportsysevents-1) | Exports system events in batches and writes them as a file to the fixed directory of the application sandbox (that is, /data/storage/el2/base/cache/hiview/event/). |
+| [exportSysEvents](arkts-performanceanalysis-exportsysevents-f-sys.md#exportsysevents-1) | Exports system events in batches and writes them as a file to the fixed directory of the application sandbox (thatis, /data/storage/el2/base/cache/hiview/event/). |
 | [query](arkts-performanceanalysis-query-f-sys.md#query-1) | Queries system events. |
 | [removeWatcher](arkts-performanceanalysis-removewatcher-f-sys.md#removewatcher-1) | Removes a watcher used for event subscription. |
-| [subscribe](arkts-performanceanalysis-subscribe-f-sys.md#subscribe-1) | Subscribes to real-time system events that occur occasionally or occur in a low frequency. These events are written as a file to the fixed directory of the application sandbox (that is, /data/storage/el2/base/cache/hiview/event/). |
+| [subscribe](arkts-performanceanalysis-subscribe-f-sys.md#subscribe-1) | Subscribes to real-time system events that occur occasionally or occur in a low frequency. These events are writtenas a file to the fixed directory of the application sandbox (that is,/data/storage/el2/base/cache/hiview/event/). |
 | [unsubscribe](arkts-performanceanalysis-unsubscribe-f-sys.md#unsubscribe-1) | Unsubscribes from system events. |
 | [write](arkts-performanceanalysis-write-f-sys.md#write-1) | Writes event information to the event file. This API uses a promise to return the result. |
 | [write](arkts-performanceanalysis-write-f-sys.md#write-2) | Writes event information to the event file. This API uses an asynchronous callback to return the result. |

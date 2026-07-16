@@ -1,6 +1,13 @@
 # @ohos.distributedDeviceManager
 
-The **distributedDeviceManager** module provides APIs for distributed device management. Applications can call the APIs to: - Subscribe to or unsubscribe from device state changes. - Discover devices nearby. - Authenticate or deauthenticate a device. - Query the trusted device list. - Query local device information, including the device name, type, and ID.
+The **distributedDeviceManager** module provides APIs for distributed device management.
+Applications can call the APIs to:
+
+- Subscribe to or unsubscribe from device state changes.
+- Discover devices nearby.
+- Authenticate or deauthenticate a device.
+- Query the trusted device list.
+- Query local device information, including the device name, type, and ID.
 
 **Since:** 10
 
@@ -18,7 +25,7 @@ import { distributedDeviceManager } from '@kit.DistributedServiceKit';
 
 | Name | Description |
 | --- | --- |
-| [createDeviceManager](arkts-distributedservice-createdevicemanager-f.md#createdevicemanager-1) | Creates a **DeviceManager** instance. The **DeviceManager** instance is the entry for invoking the APIs for distributed device management. It can be used to obtain information about trusted devices and local devices. |
+| [createDeviceManager](arkts-distributedservice-createdevicemanager-f.md#createdevicemanager-1) | Creates a **DeviceManager** instance. The **DeviceManager** instance is the entry for invoking the APIs fordistributed device management. It can be used to obtain information about trusted devices and local devices. |
 | [releaseDeviceManager](arkts-distributedservice-releasedevicemanager-f.md#releasedevicemanager-1) | Releases a **DeviceManager** instance that is no longer used. |
 
 ### Interfaces
@@ -26,7 +33,7 @@ import { distributedDeviceManager } from '@kit.DistributedServiceKit';
 | Name | Description |
 | --- | --- |
 | [DeviceBasicInfo](arkts-distributedservice-devicebasicinfo-i.md) | Represents the basic information about a distributed device. |
-| [DeviceManager](arkts-distributedservice-devicemanager-i.md) | Provides APIs to obtain information about trusted devices and local devices. Before calling any API in **DeviceManager**, you must use **createDeviceManager** to create a **DeviceManager** instance, for example, **dmInstance**. |
+| [DeviceManager](arkts-distributedservice-devicemanager-i.md) | Provides APIs to obtain information about trusted devices and local devices. Before calling any API in**DeviceManager**, you must use **createDeviceManager** to create a **DeviceManager** instance, for example,**dmInstance**. |
 
 <!--Del-->
 ### Interfaces（系统接口）
@@ -36,7 +43,7 @@ import { distributedDeviceManager } from '@kit.DistributedServiceKit';
 | [DeviceIconInfo](arkts-distributedservice-deviceiconinfo-i-sys.md) | Defines the device icon information. |
 | [DeviceIconInfoFilterOptions](arkts-distributedservice-deviceiconinfofilteroptions-i-sys.md) | Defines the device icon information filter options. |
 | [DeviceIdentification](arkts-distributedservice-deviceidentification-i-sys.md) | Struct for distributed device identification. |
-| [DeviceManager](arkts-distributedservice-devicemanager-i-sys.md) | Provides APIs to obtain information about trusted devices and local devices. Before calling any API in **DeviceManager**, you must use **createDeviceManager** to create a **DeviceManager** instance, for example, **dmInstance**. |
+| [DeviceManager](arkts-distributedservice-devicemanager-i-sys.md) | Provides APIs to obtain information about trusted devices and local devices. Before calling any API in**DeviceManager**, you must use **createDeviceManager** to create a **DeviceManager** instance, for example,**dmInstance**. |
 | [DeviceProfileInfo](arkts-distributedservice-deviceprofileinfo-i-sys.md) | Defines the device profile information. |
 | [DeviceProfileInfoFilterOptions](arkts-distributedservice-deviceprofileinfofilteroptions-i-sys.md) | Defines device profile information filter options. |
 | [NetworkIdQueryFilter](arkts-distributedservice-networkidqueryfilter-i-sys.md) | Defines the network ID filter options. |

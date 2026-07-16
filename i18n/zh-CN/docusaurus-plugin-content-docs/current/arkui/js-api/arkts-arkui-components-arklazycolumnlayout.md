@@ -1,29 +1,23 @@
 # @ohos.arkui.components.ArkLazyColumnLayout
 
-## 导入模块
-
-```TypeScript
-import { LazyColumnLayoutAttribute,LazyColumnLayout } from '@kit.ArkUI';
-```
-
 ## 汇总
 
 ### 类
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| [LazyColumnLayoutAttribute](arkts-lazycolumnlayoutattribute-c.md) | Defines the lazy column layout attribute. |
+| [LazyColumnLayoutAttribute](arkts-arkui-lazycolumnlayoutattribute-c.md) | 定义懒加载列布局属性。 |
 
 ### 接口
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| [LazyColumnLayoutInterface](arkts-lazycolumnlayoutinterface-i.md) | Defines the lazy column layout component. |
+| [LazyColumnLayoutInterface](arkts-arkui-lazycolumnlayoutinterface-i.md) | 定义懒加载列布局组件。 |
 
 ### 常量
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| [LazyColumnLayout](arkts-arkui-components-arklazycolumnlayout-con.md#LazyColumnLayout) | Defines the lazy column layout component. |
-| [LazyColumnLayoutInstance](arkts-arkui-components-arklazycolumnlayout-con.md#LazyColumnLayoutInstance) | Defines the lazy column layout component instance. |
+| [LazyColumnLayout](arkts-arkui-arkui-components-arklazycolumnlayout-con.md#lazycolumnlayout) | 定义懒式列布局组件。 |
+| [LazyColumnLayoutInstance](arkts-arkui-arkui-components-arklazycolumnlayout-con.md#lazycolumnlayoutinstance) | 定义懒加载列布局组件实例。 |
 

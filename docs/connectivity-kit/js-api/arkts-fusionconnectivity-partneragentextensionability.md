@@ -12,7 +12,7 @@ import { PartnerAgentExtensionAbility } from '@kit.ConnectivityKit';
 
 | Name | Description |
 | --- | --- |
-| [PartnerAgentExtensionAbility](arkts-connectivity-partneragentextensionability-c.md) | Class for the PartnerAgentExtensionAbility. Applications can use this ability to discover devices. |
+| [PartnerAgentExtensionAbility](arkts-connectivity-partneragentextensionability-c.md) | Class for the PartnerAgentExtensionAbility.Applications can use this ability to discover devices. |
 
 ### Types
 

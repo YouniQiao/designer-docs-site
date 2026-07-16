@@ -12,11 +12,5 @@ import { LightWeightSet } from '@kit.ArkTS';
 
 | Name | Description |
 | --- | --- |
-| [LightWeightSet](arkts-lightweightset-c.md) | LightWeightSet可用于存储一系列值的集合，存储元素中value值唯一。 |
-
-### Types
-
-| Name | Description |
-| --- | --- |
-| [LightWeightSetForEachCb](arkts-lightweightsetforeachcb-t.md) | LightWeightSet的回调函数类型。 |
+| [LightWeightSet](arkts-arkts-lightweightset-c.md) | LightWeightSet stores a set of values, each of which must be unique. |
 

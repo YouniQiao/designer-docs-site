@@ -1,6 +1,8 @@
 # OverlayModuleInfo
 
-The module provides information about a module with the overlay feature. An application can obtain such information through [overlay.getOverlayModuleInfo](arkts-ability-getoverlaymoduleinfo-f.md#getoverlaymoduleinfo-2).
+The module provides information about a module with the overlay feature. An application can obtain such information
+through
+[overlay.getOverlayModuleInfo](arkts-ability-getoverlaymoduleinfo-f.md#getoverlaymoduleinfo-2).
 
 **Since:** 10
 
@@ -40,7 +42,8 @@ Name of the module with the overlay feature.
 readonly priority: number
 ```
 
-Priority of the module with the overlay feature. The value is an integer ranging from 1 to 100. A larger value indicates a higher priority.
+Priority of the module with the overlay feature. The value is an integer ranging from 1 to 100. A larger value
+indicates a higher priority.
 
 **Type:** number
 
@@ -54,7 +57,9 @@ Priority of the module with the overlay feature. The value is an integer ranging
 readonly state: number
 ```
 
-Whether the module with the overlay feature is [disabled](arkts-ability-setoverlayenabled-f.md#setoverlayenabled-2). The value **0** means that the module with the overlay feature is disabled, and **1** means the opposite.
+Whether the module with the overlay feature is
+[disabled](arkts-ability-setoverlayenabled-f.md#setoverlayenabled-2). The
+value **0** means that the module with the overlay feature is disabled, and **1** means the opposite.
 
 **Type:** number
 
@@ -68,7 +73,8 @@ Whether the module with the overlay feature is [disabled](arkts-ability-setoverl
 readonly targetModuleName: string
 ```
 
-Name of the target module specified by the overlay feature, that is, the name of the module whose resources are to be replaced by the overlay package.
+Name of the target module specified by the overlay feature, that is, the name of the module whose resources are to
+be replaced by the overlay package.
 
 **Type:** string
 

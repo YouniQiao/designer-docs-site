@@ -1,6 +1,16 @@
 # @ohos.distributedHardware.deviceManager
 
-The APIs of this module are deprecated. You are advised to use [@ohos.distributedDeviceManager](arkts-distributeddevicemanager.md). The **deviceManager** module provides APIs for distributed device management. System applications can call the APIs to do the following: - Subscribe to or unsubscribe from device state changes. - Discover devices nearby. - Authenticate or deauthenticate a device. - Query the trusted device list. - Query local device information, including the device name, type, and ID. - Publishes device information for discovery purposes.
+The APIs of this module are deprecated. You are advised to use
+[@ohos.distributedDeviceManager](arkts-distributeddevicemanager.md).
+The **deviceManager** module provides APIs for distributed device management.
+System applications can call the APIs to do the following:
+
+- Subscribe to or unsubscribe from device state changes.
+- Discover devices nearby.
+- Authenticate or deauthenticate a device.
+- Query the trusted device list.
+- Query local device information, including the device name, type, and ID.
+- Publishes device information for discovery purposes.
 
 **Since:** 7
 
@@ -34,7 +44,7 @@ import { deviceManager } from '@kit.DistributedServiceKit';
 | [AuthInfo](arkts-distributedservice-authinfo-i-sys.md) | Defines authentication information. |
 | [AuthParam](arkts-distributedservice-authparam-i-sys.md) | Defines the authentication parameters. |
 | [DeviceInfo](arkts-distributedservice-deviceinfo-i-sys.md) | Defines device information. |
-| [DeviceManager](arkts-distributedservice-devicemanager-i-sys.md) | Provides APIs to obtain information about trusted devices and local devices. Before calling any API in **DeviceManager**, you must use **createDeviceManager** to create a **DeviceManager** instance, for example, **dmInstance**. |
+| [DeviceManager](arkts-distributedservice-devicemanager-i-sys.md) | Provides APIs to obtain information about trusted devices and local devices. Before calling any API in**DeviceManager**, you must use **createDeviceManager** to create a **DeviceManager** instance, for example,**dmInstance**. |
 | [PublishInfo](arkts-distributedservice-publishinfo-i-sys.md) | Defines published device information. |
 | [SubscribeInfo](arkts-distributedservice-subscribeinfo-i-sys.md) | Defines subscription information. |
 <!--DelEnd-->

@@ -1,6 +1,7 @@
 # @ohos.multimodalInput.infraredEmitter
 
-The **infraredEmitter** module generates IR signals of the specified frequency and size, and queries the frequency range supported by the device.
+The **infraredEmitter** module generates IR signals of the specified frequency and size, and queries the frequency
+range supported by the device.
 
 **Since:** 12
 

@@ -1,6 +1,7 @@
 # @ohos.multimodalAwareness.userStatus
 
-The **UserStatus** module, designed for user state awareness, empowers the system to perceive specific conditions of users, such as determining their age group or recognizing environmental sounds, among other functions.
+The **UserStatus** module, designed for user state awareness, empowers the system to perceive specific conditions of
+users, such as determining their age group or recognizing environmental sounds, among other functions.
 
 **Since:** 20
 
@@ -18,8 +19,8 @@ import { userStatus } from '@kit.MultimodalAwarenessKit';
 
 | Name | Description |
 | --- | --- |
-| [off](arkts-multimodalawareness-off-f.md#off-1) | Disables the age group detection function. &gt; **NOTE** &gt; &gt; This API is supported only on some phones. Error code **33900003** is returned if it is called on unsupported &gt; phones. |
-| [on](arkts-multimodalawareness-on-f.md#on-1) | Enables the age group detection function. When the function is enabled, the application can recommend content based on the age group detection result. &gt; **NOTE** &gt; &gt; This API is supported only on some phones. Error code **801** is returned if it is called on unsupported phones. |
+| [off](arkts-multimodalawareness-off-f.md#off-1) | Disables the age group detection function.&gt; **NOTE**&gt;&gt; This API is supported only on some phones. Error code **33900003** is returned if it is called on unsupported &gt; phones. |
+| [on](arkts-multimodalawareness-on-f.md#on-1) | Enables the age group detection function.When the function is enabled, the application can recommend content based on the age group detection result.&gt; **NOTE**&gt;&gt; This API is supported only on some phones. Error code **801** is returned if it is called on unsupported phones. |
 
 <!--Del-->
 ### Functions（系统接口）

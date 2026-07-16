@@ -6,5 +6,5 @@
 
 | Name | Description |
 | --- | --- |
-| [ErrorObserver](arkts-errorobserver-c.md) | 定义异常监听，可以作为 [errorManager.on('error')]{@link ./../@ohos.app.ability.errorManager:errorManager.on(type: 'error', observer: ErrorObserver)} 的入参监听当前应用发生的异常。 |
+| [ErrorObserver](arkts-ability-errorobserver-c.md) | The ErrorObserver module defines an observer to listen for application errors. It can be used as an input parameter in [ErrorManager.on](arkts-ability-on-f.md#on-1) to listen for errors that occur in the current application. |
 

@@ -1,6 +1,8 @@
 # DatePicker properties/events
 
-In addition to the [universal attributes](./common), the following attributes are supported. In addition to the [universal events](./common), the following events are supported.
+In addition to the [universal attributes](./common), the following attributes are supported.
+
+In addition to the [universal events](./common), the following events are supported.
 
 **Inheritance/Implementation:** DatePickerAttribute extends [CommonMethod<DatePickerAttribute>](CommonMethod<DatePickerAttribute>)
 
@@ -80,7 +82,9 @@ Sets the text style for edge items (the second item above or below the selected 
 disappearTextStyle(style: Optional<PickerTextStyle>)
 ```
 
-Sets the text style for edge items (the second item above or below the selected item). Compared to [disappearTextStyle<sup>10+</sup>](DatePickerAttribute#disappearTextStyle(value: PickerTextStyle)), this API supports the **undefined** type for the **style** parameter.
+Sets the text style for edge items (the second item above or below the selected item). Compared to
+[disappearTextStyle<sup>10+</sup>](DatePickerAttribute#disappearTextStyle(value: PickerTextStyle)), this API
+supports the **undefined** type for the **style** parameter.
 
 **Since:** 18
 
@@ -144,7 +148,9 @@ Sets whether to display dates in lunar calendar format.
 lunar(isLunar: Optional<boolean>)
 ```
 
-Sets whether to display dates in lunar calendar format. Compared to [lunar](DatePickerAttribute#lunar(value: boolean)), the **isLunar** parameter supports the **undefined** type.
+Sets whether to display dates in lunar calendar format. Compared to
+[lunar](DatePickerAttribute#lunar(value: boolean)), the **isLunar** parameter supports the **undefined**
+type.
 
 **Since:** 18
 
@@ -166,7 +172,11 @@ Sets whether to display dates in lunar calendar format. Compared to [lunar](Date
 onChange(callback: (value: DatePickerResult) => void)
 ```
 
-Triggered when the date picker snaps to the selected item. This event cannot be triggered by two-way bound state variables. This API is supported since API version 8 and deprecated since API version 10. You are advised to use [onDateChange](DatePickerAttribute#onDateChange(callback: Callback<Date>)) instead.
+Triggered when the date picker snaps to the selected item. This event cannot be triggered by two-way bound state
+variables.
+
+This API is supported since API version 8 and deprecated since API version 10. You are advised to use
+[onDateChange](DatePickerAttribute#onDateChange(callback: Callback<Date>)) instead.
 
 **Since:** 8
 
@@ -188,7 +198,8 @@ Triggered when the date picker snaps to the selected item. This event cannot be 
 onDateChange(callback: Callback<Date>)
 ```
 
-Triggered when the date picker snaps to the selected item. This event cannot be triggered by two-way bound state variables.
+Triggered when the date picker snaps to the selected item. This event cannot be triggered by two-way bound state
+variables.
 
 **Since:** 10
 
@@ -210,7 +221,14 @@ Triggered when the date picker snaps to the selected item. This event cannot be 
 onDateChange(callback: Optional<Callback<Date>>)
 ```
 
-Triggered when the date picker snaps to the selected item. This event cannot be triggered by two-way bound state variables. Compared to [onDateChange<sup>10+</sup>](DatePickerAttribute#onDateChange(callback: Callback<Date>)), this API supports the **undefined** type for the **callback** parameter. > **NOTE** > > This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
+Triggered when the date picker snaps to the selected item. This event cannot be triggered by two-way bound state
+variables. Compared to
+[onDateChange<sup>10+</sup>](DatePickerAttribute#onDateChange(callback: Callback<Date>)), this API supports
+the **undefined** type for the **callback** parameter.
+
+> **NOTE**
+>
+> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
 
 **Since:** 18
 
@@ -254,7 +272,9 @@ Sets the text style for the selected item.
 selectedTextStyle(style: Optional<PickerTextStyle>)
 ```
 
-Sets the text style for the selected item. Compared to [selectedTextStyle<sup>10+</sup>](DatePickerAttribute#selectedTextStyle(value: PickerTextStyle)), this API supports the **undefined** type for the **style** parameter.
+Sets the text style for the selected item. Compared to
+[selectedTextStyle<sup>10+</sup>](DatePickerAttribute#selectedTextStyle(value: PickerTextStyle)), this API
+supports the **undefined** type for the **style** parameter.
 
 **Since:** 18
 
@@ -298,7 +318,9 @@ Sets the text style for candidate items (the first item immediately above or bel
 textStyle(style: Optional<PickerTextStyle>)
 ```
 
-Sets the text style for candidate items (the first item immediately above or below the selected item). Compared to [textStyle<sup>10+</sup>](DatePickerAttribute#textStyle(value: PickerTextStyle)), this API supports the **undefined** type for the **style** parameter.
+Sets the text style for candidate items (the first item immediately above or below the selected item). Compared to
+[textStyle<sup>10+</sup>](DatePickerAttribute#textStyle(value: PickerTextStyle)), this API supports the
+**undefined** type for the **style** parameter.
 
 **Since:** 18
 

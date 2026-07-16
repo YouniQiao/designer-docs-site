@@ -1,6 +1,10 @@
 # Span properties/events
 
-Inherited from [BaseSpan](arkts-arkui-basespan-c.md). Among universal events, only [onClick](arkts-arkui-commonmethod-c.md#onclick-2) click events and [onHover](arkts-arkui-commonmethod-c.md#onhover-1) hover events are supported.
+Inherited from [BaseSpan](arkts-arkui-basespan-c.md).
+
+Among universal events, only
+[onClick](arkts-arkui-commonmethod-c.md#onclick-2) click events and
+[onHover](arkts-arkui-commonmethod-c.md#onhover-1) hover events are supported.
 
 **Inheritance/Implementation:** SpanAttribute extends [BaseSpan<SpanAttribute>](BaseSpan<SpanAttribute>)
 
@@ -238,7 +242,9 @@ Called when the font weight is set.
 letterSpacing(value: number | ResourceStr)
 ```
 
-Sets the letter spacing. A negative value tightens the spacing; a positive value loosens the spacing, and the letters are spread farther apart with the value. For the string type, numeric string values with optional units, for example, **"10"** or **"10fp"**, are supported.
+Sets the letter spacing. A negative value tightens the spacing; a positive value loosens the spacing, and the
+letters are spread farther apart with the value. For the string type, numeric string values with optional units,
+for example, **"10"** or **"10fp"**, are supported.
 
 **Since:** 7
 
@@ -304,7 +310,8 @@ Sets the text case.
 textShadow(value: ShadowOptions | Array<ShadowOptions>)
 ```
 
-Text shadow. It supports input parameters in an array to implement multiple text shadows. This API does not work with the **fill** attribute or coloring strategy.
+Text shadow. It supports input parameters in an array to implement multiple text shadows. This API does not work
+with the **fill** attribute or coloring strategy.
 
 **Since:** 11
 

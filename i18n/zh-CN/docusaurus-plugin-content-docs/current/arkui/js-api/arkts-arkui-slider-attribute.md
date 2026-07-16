@@ -1,6 +1,8 @@
 # Slider属性/事件
 
-支持除触摸热区以外的[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)。 除支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持以下事件：
+支持除触摸热区以外的[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)。
+
+除支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持以下事件：
 
 **继承/实现关系：** SliderAttribute extends [CommonMethod<SliderAttribute>](CommonMethod<SliderAttribute>)
 
@@ -14,7 +16,13 @@
 blockBorderColor(value: ResourceColor)
 ```
 
-设置滑块描边颜色。 当滑块形状设置为SliderBlockType.DEFAULT时，blockBorderColor可设置默认圆形滑块描边颜色。 当滑块形状设置为SliderBlockType.IMAGE时，滑块无描边，设置blockBorderColor不生效。 当滑块形状设置为SliderBlockType.SHAPE时，blockBorderColor可设置自定义形状中线的颜色。
+设置滑块描边颜色。
+
+当滑块形状设置为SliderBlockType.DEFAULT时，blockBorderColor可设置默认圆形滑块描边颜色。
+
+当滑块形状设置为SliderBlockType.IMAGE时，滑块无描边，设置blockBorderColor不生效。
+
+当滑块形状设置为SliderBlockType.SHAPE时，blockBorderColor可设置自定义形状中线的颜色。
 
 **起始版本：** 10
 
@@ -36,7 +44,13 @@ blockBorderColor(value: ResourceColor)
 blockBorderWidth(value: Length)
 ```
 
-设置滑块描边粗细。 当滑块形状设置为SliderBlockType.DEFAULT时，blockBorderWidth可设置默认圆形滑块描边粗细。 当滑块形状设置为SliderBlockType.IMAGE时，滑块无描边，设置blockBorderWidth不生效。 当滑块形状设置为SliderBlockType.SHAPE时，blockBorderWidth可设置自定义形状中线的粗细。
+设置滑块描边粗细。
+
+当滑块形状设置为SliderBlockType.DEFAULT时，blockBorderWidth可设置默认圆形滑块描边粗细。
+
+当滑块形状设置为SliderBlockType.IMAGE时，滑块无描边，设置blockBorderWidth不生效。
+
+当滑块形状设置为SliderBlockType.SHAPE时，blockBorderWidth可设置自定义形状中线的粗细。
 
 **起始版本：** 10
 
@@ -58,7 +72,13 @@ blockBorderWidth(value: Length)
 blockColor(value: ResourceColor)
 ```
 
-设置滑块的颜色。 当滑块形状设置为SliderBlockType.DEFAULT时，blockColor可设置默认圆形滑块颜色。 当滑块形状设置为SliderBlockType.IMAGE时，滑块无填充，设置blockColor不生效。 当滑块形状设置为SliderBlockType.SHAPE时，blockColor可设置自定义形状的填充颜色。
+设置滑块的颜色。
+
+当滑块形状设置为SliderBlockType.DEFAULT时，blockColor可设置默认圆形滑块颜色。
+
+当滑块形状设置为SliderBlockType.IMAGE时，滑块无填充，设置blockColor不生效。
+
+当滑块形状设置为SliderBlockType.SHAPE时，blockColor可设置自定义形状的填充颜色。
 
 **起始版本：** 7
 
@@ -80,7 +100,13 @@ blockColor(value: ResourceColor)
 blockColor(value: ResourceColor | LinearGradient)
 ```
 
-设置Slider滑块的颜色，支持渐变色。 当滑块形状设置为SliderBlockType.DEFAULT时，blockColor可设置默认圆形滑块颜色。 当滑块形状设置为SliderBlockType.IMAGE时，滑块无填充，设置blockColor不生效。 当滑块形状设置为SliderBlockType.SHAPE时，blockColor可设置自定义形状的填充颜色。
+设置Slider滑块的颜色，支持渐变色。
+
+当滑块形状设置为SliderBlockType.DEFAULT时，blockColor可设置默认圆形滑块颜色。
+
+当滑块形状设置为SliderBlockType.IMAGE时，滑块无填充，设置blockColor不生效。
+
+当滑块形状设置为SliderBlockType.SHAPE时，blockColor可设置自定义形状的填充颜色。
 
 **起始版本：** 21
 
@@ -104,7 +130,13 @@ blockColor(value: ResourceColor | LinearGradient)
 blockSize(value: SizeOptions)
 ```
 
-设置滑块大小。 当滑块形状设置为SliderBlockType.DEFAULT时，取宽高的最小值作为圆形半径。 当滑块形状设置为SliderBlockType.IMAGE时，用于设置图片的尺寸大小，图片采用ObjectFit.Cover策略进行缩放。 当滑块形状设置为SliderBlockType.SHAPE时，用于设置自定义形状的大小，自定义形状也会采用ObjectFit.Cover策略进行缩放。
+设置滑块大小。
+
+当滑块形状设置为SliderBlockType.DEFAULT时，取宽高的最小值作为圆形半径。
+
+当滑块形状设置为SliderBlockType.IMAGE时，用于设置图片的尺寸大小，图片采用ObjectFit.Cover策略进行缩放。
+
+当滑块形状设置为SliderBlockType.SHAPE时，用于设置自定义形状的大小，自定义形状也会采用ObjectFit.Cover策略进行缩放。
 
 **起始版本：** 10
 
@@ -170,7 +202,11 @@ contentModifier(modifier: ContentModifier<SliderConfiguration>)
 digitalCrownSensitivity(sensitivity: Optional<CrownSensitivity>)
 ```
 
-设置旋转表冠的灵敏度。 > **说明：** > > 该接口不支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+设置旋转表冠的灵敏度。
+
+> **说明：**
+>
+> 该接口不支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 18
 
@@ -192,7 +228,10 @@ digitalCrownSensitivity(sensitivity: Optional<CrownSensitivity>)
 enableHapticFeedback(enabled: boolean)
 ```
 
-设置是否开启触控反馈。 开启触控反馈时，需要在工程的[module.json5](../../../../quick-start/module-configuration-file.md)中配置requestPermissions字段开启振动权限，配置如 下：
+设置是否开启触控反馈。
+
+开启触控反馈时，需要在工程的[module.json5](../../../../quick-start/module-configuration-file.md)中配置requestPermissions字段开启振动权限，配置如
+下：
 
 **起始版本：** 18
 
@@ -214,7 +253,11 @@ enableHapticFeedback(enabled: boolean)
 maxLabel(value: string)
 ```
 
-设置最大值。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃，建议使用max替代。max是[SliderOptions](arkts-arkui-slideroptions-i.md)中的属性。
+设置最大值。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃，建议使用max替代。max是[SliderOptions](arkts-arkui-slideroptions-i.md)中的属性。
 
 **起始版本：** 7
 
@@ -236,7 +279,11 @@ maxLabel(value: string)
 minLabel(value: string)
 ```
 
-设置最小值。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃，建议使用min替代。min是[SliderOptions](arkts-arkui-slideroptions-i.md)中的属性。
+设置最小值。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃，建议使用min替代。min是[SliderOptions](arkts-arkui-slideroptions-i.md)中的属性。
 
 **起始版本：** 7
 
@@ -280,7 +327,11 @@ minResponsiveDistance(value: number)
 onChange(callback: (value: number, mode: SliderChangeMode) => void)
 ```
 
-Slider拖动或点击时触发事件回调。 Begin和End状态当手势点击时都会触发，Moving和Click状态当value值发生变化时触发。 当连贯动作为拖动动作时，不触发Click状态。
+Slider拖动或点击时触发事件回调。
+
+Begin和End状态当手势点击时都会触发，Moving和Click状态当value值发生变化时触发。
+
+当连贯动作为拖动动作时，不触发Click状态。
 
 **起始版本：** 7
 
@@ -415,7 +466,11 @@ showSteps(value: boolean)
 showSteps(value: boolean, options?: SliderShowStepOptions)
 ```
 
-设置当前是否显示步长刻度值。 支持设置每个刻度点的无障碍文本信息，不设置时默认使用当前刻度点的值作为无障碍文本信息。 当显示步长时，设置的刻度点无障碍文本信息生效。
+设置当前是否显示步长刻度值。
+
+支持设置每个刻度点的无障碍文本信息，不设置时默认使用当前刻度点的值作为无障碍文本信息。
+
+当显示步长时，设置的刻度点无障碍文本信息生效。
 
 **起始版本：** 20
 
@@ -440,7 +495,12 @@ showSteps(value: boolean, options?: SliderShowStepOptions)
 showTips(value: boolean, content?: ResourceStr)
 ```
 
-设置滑动时是否显示气泡提示。 当direction的值为Axis.Horizontal时，tip显示在滑块上方，如果上方空间不够，则在下方显示。当值为Axis.Vertical时，tip显示在滑块左边，如果左边空间不够，则在右边显示。当不设置周边边距或者周边边 距比较小时，tip会被截断。 tip的绘制区域为Slider自身节点的overlay。
+设置滑动时是否显示气泡提示。
+
+当direction的值为Axis.Horizontal时，tip显示在滑块上方，如果上方空间不够，则在下方显示。当值为Axis.Vertical时，tip显示在滑块左边，如果左边空间不够，则在右边显示。当不设置周边边距或者周边边
+距比较小时，tip会被截断。
+
+tip的绘制区域为Slider自身节点的overlay。
 
 **起始版本：** 7
 
@@ -596,7 +656,9 @@ trackBorderRadius(value: Length)
 trackColor(value: ResourceColor | LinearGradient)
 ```
 
-设置滑轨的背景颜色。 从API version 12开始支持利用LinearGradient设置滑轨的渐变色。
+设置滑轨的背景颜色。
+
+从API version 12开始支持利用LinearGradient设置滑轨的渐变色。
 
 **起始版本：** 7
 
@@ -640,7 +702,18 @@ trackColorMetrics(color: ColorMetricsLinearGradient)
 trackThickness(value: Length)
 ```
 
-设置滑轨的粗细。设置小于等于0的值时，取默认值。 为保证滑块和滑轨的[SliderStyle](arkts-arkui-sliderstyle-e.md)样式，[blockSize](SliderAttribute#blockSize)跟随trackThickness同比例增减。 当style为[SliderStyle](arkts-arkui-sliderstyle-e.md).OutSet时，trackThickness ：[blockSize](SliderAttribute#blockSize) = 1 ： 4，当style为[SliderStyle](arkts-arkui-sliderstyle-e.md).InSet时，trackThickness ：[blockSize](SliderAttribute#blockSize) = 5 ： 3。 trackThickness或[blockSize](SliderAttribute#blockSize)的大小超过Slider组件的宽度或高度时，取默认值。 当[SliderStyle](arkts-arkui-sliderstyle-e.md)设置为OutSet时，尽管trackThickness的大小没超过Slider组件的宽度或高度，但是 [blockSize](SliderAttribute#blockSize)超过了，取默认值。
+设置滑轨的粗细。设置小于等于0的值时，取默认值。
+
+为保证滑块和滑轨的[SliderStyle](arkts-arkui-sliderstyle-e.md)样式，[blockSize](SliderAttribute#blockSize)跟随trackThickness同比例增减。
+
+当style为[SliderStyle](arkts-arkui-sliderstyle-e.md).OutSet时，trackThickness ：[blockSize](SliderAttribute#blockSize) = 1 ：
+4，当style为[SliderStyle](arkts-arkui-sliderstyle-e.md).InSet时，trackThickness ：[blockSize](SliderAttribute#blockSize) = 5 ：
+3。
+
+trackThickness或[blockSize](SliderAttribute#blockSize)的大小超过Slider组件的宽度或高度时，取默认值。
+
+当[SliderStyle](arkts-arkui-sliderstyle-e.md)设置为OutSet时，尽管trackThickness的大小没超过Slider组件的宽度或高度，但是
+[blockSize](SliderAttribute#blockSize)超过了，取默认值。
 
 **起始版本：** 8
 

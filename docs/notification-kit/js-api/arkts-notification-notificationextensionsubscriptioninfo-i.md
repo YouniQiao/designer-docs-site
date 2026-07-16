@@ -1,6 +1,7 @@
 # NotificationExtensionSubscriptionInfo
 
-The **NotificationExtensionSubscriptionInfo** module describes the information about notification extension subscription.
+The **NotificationExtensionSubscriptionInfo** module describes the information about notification extension
+subscription.
 
 **Since:** 22
 
@@ -26,7 +27,8 @@ MAC address, which is a unique identifier of the device. Example: 11:22:33:AA:BB
 type: notificationExtensionSubscription.SubscribeType
 ```
 
-Subscription type, specifying the subscription method for notification extension. Currently, only **SubscribeType.BLUETOOTH** is supported, indicating subscription to notifications via Bluetooth.
+Subscription type, specifying the subscription method for notification extension. Currently, only
+**SubscribeType.BLUETOOTH** is supported, indicating subscription to notifications via Bluetooth.
 
 **Type:** notificationExtensionSubscription.SubscribeType
 

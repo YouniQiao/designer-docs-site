@@ -9,7 +9,7 @@ Plugin component manager interface.
 ## Modules to Import
 
 ```TypeScript
-import { PluginComponentTemplate } from '@ohos.pluginComponent';
+import { PluginComponentTemplate } from '@kit.ArkUI';
 ```
 
 ## Summary

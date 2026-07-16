@@ -1,6 +1,8 @@
 # Flex properties/events
 
-The [universal attributes](arkts-arkui-commonmethod-c.md) are supported. The [universal events](arkts-arkui-commonmethod-c.md) are supported.
+The [universal attributes](arkts-arkui-commonmethod-c.md) are supported.
+
+The [universal events](arkts-arkui-commonmethod-c.md) are supported.
 
 **Inheritance/Implementation:** FlexAttribute extends [CommonMethod<FlexAttribute>](CommonMethod<FlexAttribute>)
 

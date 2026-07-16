@@ -112,7 +112,8 @@
   - [AudioLoopbackMode](arkts-audio-audioloopbackmode-e.md)
   - [AudioLoopbackReverbPreset](arkts-audio-audioloopbackreverbpreset-e.md)
   - [AudioLoopbackStatus](arkts-audio-audioloopbackstatus-e.md)
-  - [AudioPlaybackCaptureMode](arkts-audio-audioplaybackcapturemode-e.md)
+  - [AudioPlaybackCaptureMode](arkts-audio-audioplaybackcapturemode-e.md)<!--Del-->
+  - [AudioPlaybackCaptureMode(system api)](arkts-audio-audioplaybackcapturemode-e-sys.md)<!--DelEnd-->
   - [AudioPrivacyType](arkts-audio-audioprivacytype-e.md)
   - [AudioRendererRate](arkts-audio-audiorendererrate-e.md)
   - [AudioRingMode](arkts-audio-audioringmode-e.md)

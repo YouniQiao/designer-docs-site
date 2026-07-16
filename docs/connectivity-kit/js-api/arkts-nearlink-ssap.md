@@ -25,13 +25,13 @@ import { ssap } from '@kit.ConnectivityKit';
 
 | Name | Description |
 | --- | --- |
-| [Client](arkts-connectivity-client-i.md) | Manages SSAP client. Before calling a SSAP client method, you must use {@link createClient} to create a ssap client instance. |
+| [Client](arkts-connectivity-client-i.md) | Manages SSAP client. Before calling a SSAP client method,you must use {@link createClient} to create a ssap client instance. |
 | [ConnectionChangeState](arkts-connectivity-connectionchangestate-i.md) | Describes SSAP connection state. |
 | [Property](arkts-connectivity-property-i.md) | Describes the SSAP property. |
 | [PropertyDescriptor](arkts-connectivity-propertydescriptor-i.md) | Describes the SSAP descriptor for property. |
 | [PropertyReadRequest](arkts-connectivity-propertyreadrequest-i.md) | Describes the parameters of the SSAP client's property read request. |
 | [PropertyWriteRequest](arkts-connectivity-propertywriterequest-i.md) | Describes the parameters of the SSAP client's property write request. |
-| [Server](arkts-connectivity-server-i.md) | Manages SSAP server. Before calling a SSAP server method, you must use {@link createServer} to create a SSAP server instance. |
+| [Server](arkts-connectivity-server-i.md) | Manages SSAP server. Before calling a SSAP server method,you must use {@link createServer} to create a SSAP server instance. |
 | [ServerResponse](arkts-connectivity-serverresponse-i.md) | Describes the parameters of a response send by the server to a specified read or write request. |
 | [Service](arkts-connectivity-service-i.md) | Describes the SSAP service. |
 
@@ -40,7 +40,7 @@ import { ssap } from '@kit.ConnectivityKit';
 
 | Name | Description |
 | --- | --- |
-| [Client](arkts-connectivity-client-i-sys.md) | Manages SSAP client. Before calling a SSAP client method, you must use {@link createClient} to create a ssap client instance. |
+| [Client](arkts-connectivity-client-i-sys.md) | Manages SSAP client. Before calling a SSAP client method,you must use {@link createClient} to create a ssap client instance. |
 | [Event](arkts-connectivity-event-i-sys.md) | Describes the SSAP event. |
 | [Method](arkts-connectivity-method-i-sys.md) | Describes the SSAP method. |
 | [Service](arkts-connectivity-service-i-sys.md) | Describes the SSAP service. |

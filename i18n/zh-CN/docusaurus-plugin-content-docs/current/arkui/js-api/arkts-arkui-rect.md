@@ -1,6 +1,12 @@
 # Rect
 
-矩形绘制组件。 > **说明：** > 该组件从API version 20开始支持使用[AttributeUpdater]{@link AttributeUpdater}类的 > [updateConstructorParams](docroot://reference/apis-arkui/js-apis-arkui-AttributeUpdater.md#属性)接口更新构造参数。
+矩形绘制组件。
+
+> **说明：**
+
+> 该组件从API version 20开始支持使用[AttributeUpdater]{@link AttributeUpdater}类的
+> [updateConstructorParams](docroot://reference/apis-arkui/js-apis-arkui-AttributeUpdater.md#属性)接口更新构造参数。
+
 
 ## Rect
 
@@ -10,7 +16,8 @@ Rect(
     )
 ```
 
-Use new function to create Rect. Anonymous Object Rectification.
+Use new function to create Rect.
+Anonymous Object Rectification.
 
 **起始版本：** 7
 

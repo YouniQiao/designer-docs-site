@@ -1,12 +1,12 @@
-# MindSporeLiteKit
+# ArkTS API<!--arkts-mindsporelitekit-->
 
 - [@ohos.ai.mindSporeLite](arkts-ai-mindsporelite.md)
-  - [loadTrainModelFromBuffer](arkts-mindsporelite-loadtrainmodelfrombuffer-f.md)
-  - [loadModelFromBuffer](arkts-mindsporelite-loadmodelfrombuffer-f.md)
   - [getAllNNRTDeviceDescriptions](arkts-mindsporelite-getallnnrtdevicedescriptions-f.md)
-  - [loadTrainModelFromFd](arkts-mindsporelite-loadtrainmodelfromfd-f.md)
-  - [loadModelFromFile](arkts-mindsporelite-loadmodelfromfile-f.md)
+  - [loadModelFromBuffer](arkts-mindsporelite-loadmodelfrombuffer-f.md)
   - [loadModelFromFd](arkts-mindsporelite-loadmodelfromfd-f.md)
+  - [loadModelFromFile](arkts-mindsporelite-loadmodelfromfile-f.md)
+  - [loadTrainModelFromBuffer](arkts-mindsporelite-loadtrainmodelfrombuffer-f.md)
+  - [loadTrainModelFromFd](arkts-mindsporelite-loadtrainmodelfromfd-f.md)
   - [loadTrainModelFromFile](arkts-mindsporelite-loadtrainmodelfromfile-f.md)
   - [Context](arkts-mindsporelite-context-i.md)
   - [CpuDevice](arkts-mindsporelite-cpudevice-i.md)

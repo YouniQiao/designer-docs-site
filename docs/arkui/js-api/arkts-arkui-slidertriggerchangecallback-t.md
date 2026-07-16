@@ -18,6 +18,6 @@ Defines the callback type used in **SliderConfiguration**.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | number | Yes | Current progress.<br>Value range: [[min](arkts-arkui-slideroptions-i.md#slideroptions), [max](arkts-arkui-slideroptions-i.md#slideroptions)] |
+| value | number | Yes | Current progress.<br>Value range: [[min](arkts-arkui-slideroptions-i.md), [max](arkts-arkui-slideroptions-i.md)] |
 | mode | SliderChangeMode | Yes | State triggered by the event. |
 

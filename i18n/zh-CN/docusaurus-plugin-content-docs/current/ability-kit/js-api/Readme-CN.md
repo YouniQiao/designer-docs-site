@@ -373,6 +373,11 @@
   - [ProcessMode](arkts-ability-processmode-e.md)
   - [Scenarios](arkts-ability-scenarios-e.md)
   - [StartupVisibility](arkts-ability-startupvisibility-e.md)
+- [@ohos.app.ability.continueManager](arkts-app-ability-continuemanager.md)
+  - [off](arkts-ability-off-f.md)
+  - [on](arkts-ability-on-f.md)
+  - [ContinueResultInfo](arkts-ability-continueresultinfo-i.md)
+  - [ContinueStateCode](arkts-ability-continuestatecode-e.md)
 - [@ohos.app.ability.dataUriUtils](arkts-app-ability-datauriutils.md)
   - [attachId](arkts-ability-attachid-f.md)
   - [deleteId](arkts-ability-deleteid-f.md)
@@ -846,9 +851,41 @@
   - [ParameterItem(系统接口)](arkts-ability-parameteritem-t-sys.md)<!--DelEnd--><!--Del-->
   - [ShortcutInfo(系统接口)](arkts-ability-shortcutinfo-t-sys.md)<!--DelEnd--><!--Del-->
   - [ShortcutWant(系统接口)](arkts-ability-shortcutwant-t-sys.md)<!--DelEnd-->
+- [@ohos.continuation.continuationManager](arkts-continuation-continuationmanager.md)
+  - [off](arkts-ability-off-f.md)
+  - [on](arkts-ability-on-f.md)
+  - [register](arkts-ability-register-f.md)
+  - [registerContinuation](arkts-ability-registercontinuation-f.md)
+  - [startContinuationDeviceManager](arkts-ability-startcontinuationdevicemanager-f.md)
+  - [startDeviceManager](arkts-ability-startdevicemanager-f.md)
+  - [unregister](arkts-ability-unregister-f.md)
+  - [unregisterContinuation](arkts-ability-unregistercontinuation-f.md)
+  - [updateConnectStatus](arkts-ability-updateconnectstatus-f.md)
+  - [updateContinuationState](arkts-ability-updatecontinuationstate-f.md)
+  - [ContinuationExtraParams](arkts-ability-continuationextraparams-t.md)
+  - [ContinuationResult](arkts-ability-continuationresult-t.md)
+  - [ContinuationMode](arkts-ability-continuationmode-e.md)
+  - [DeviceConnectState](arkts-ability-deviceconnectstate-e.md)
 - [@ohos.distributedBundle](arkts-distributedbundle.md)<!--Del-->
   - [getRemoteAbilityInfo(系统接口)](arkts-ability-getremoteabilityinfo-f-sys.md)<!--DelEnd--><!--Del-->
   - [getRemoteAbilityInfos(系统接口)](arkts-ability-getremoteabilityinfos-f-sys.md)<!--DelEnd-->
+- [@ohos.distributedMissionManager](arkts-distributedmissionmanager.md)<!--Del-->
+  - [continueMission(系统接口)](arkts-ability-continuemission-f-sys.md)<!--DelEnd--><!--Del-->
+  - [off(系统接口)](arkts-ability-off-f-sys.md)<!--DelEnd--><!--Del-->
+  - [on(系统接口)](arkts-ability-on-f-sys.md)<!--DelEnd--><!--Del-->
+  - [registerMissionListener(系统接口)](arkts-ability-registermissionlistener-f-sys.md)<!--DelEnd--><!--Del-->
+  - [startSyncRemoteMissions(系统接口)](arkts-ability-startsyncremotemissions-f-sys.md)<!--DelEnd--><!--Del-->
+  - [stopSyncRemoteMissions(系统接口)](arkts-ability-stopsyncremotemissions-f-sys.md)<!--DelEnd--><!--Del-->
+  - [unRegisterMissionListener(系统接口)](arkts-ability-unregistermissionlistener-f-sys.md)<!--DelEnd--><!--Del-->
+  - [ContinueCallbackInfo(系统接口)](arkts-ability-continuecallbackinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [ContinuableInfo(系统接口)](arkts-ability-continuableinfo-t-sys.md)<!--DelEnd--><!--Del-->
+  - [ContinueCallback(系统接口)](arkts-ability-continuecallback-t-sys.md)<!--DelEnd--><!--Del-->
+  - [ContinueDeviceInfo(系统接口)](arkts-ability-continuedeviceinfo-t-sys.md)<!--DelEnd--><!--Del-->
+  - [ContinueMissionInfo(系统接口)](arkts-ability-continuemissioninfo-t-sys.md)<!--DelEnd--><!--Del-->
+  - [MissionCallback(系统接口)](arkts-ability-missioncallback-t-sys.md)<!--DelEnd--><!--Del-->
+  - [MissionDeviceInfo(系统接口)](arkts-ability-missiondeviceinfo-t-sys.md)<!--DelEnd--><!--Del-->
+  - [MissionParameter(系统接口)](arkts-ability-missionparameter-t-sys.md)<!--DelEnd--><!--Del-->
+  - [ContinueState(系统接口)](arkts-ability-continuestate-e-sys.md)<!--DelEnd-->
 - [@ohos.privacyManager](arkts-privacymanager.md)<!--Del-->
   - [addPermissionUsedRecord(系统接口)](arkts-ability-addpermissionusedrecord-f-sys.md)<!--DelEnd--><!--Del-->
   - [checkPermissionInUse(系统接口)](arkts-ability-checkpermissioninuse-f-sys.md)<!--DelEnd--><!--Del-->
@@ -949,6 +986,15 @@
   - [Context](arkts-context.md)
     - [Context](arkts-ability-context-c.md)<!--Del-->
     - [Context(系统接口)](arkts-ability-context-c-sys.md)<!--DelEnd-->
+  - [ContinuableInfo](arkts-continuableinfo.md)<!--Del-->
+    - [ContinuableInfo(系统接口)](arkts-ability-continuableinfo-i-sys.md)<!--DelEnd-->
+  - [ContinueCallback](arkts-continuecallback.md)<!--Del-->
+    - [ContinueCallback(系统接口)](arkts-ability-continuecallback-i-sys.md)<!--DelEnd--><!--Del-->
+    - [OnContinueDoneCallback(系统接口)](arkts-ability-oncontinuedonecallback-t-sys.md)<!--DelEnd-->
+  - [ContinueDeviceInfo](arkts-continuedeviceinfo.md)<!--Del-->
+    - [ContinueDeviceInfo(系统接口)](arkts-ability-continuedeviceinfo-i-sys.md)<!--DelEnd-->
+  - [ContinueMissionInfo](arkts-continuemissioninfo.md)<!--Del-->
+    - [ContinueMissionInfo(系统接口)](arkts-ability-continuemissioninfo-i-sys.md)<!--DelEnd-->
   - [CustomData](arkts-customdata.md)<!--Del-->
     - [CustomData(系统接口)](arkts-ability-customdata-i-sys.md)<!--DelEnd-->
   - [EmbeddableUIAbilityContext](arkts-embeddableuiabilitycontext.md)
@@ -965,10 +1011,19 @@
     - [KioskStatus](arkts-ability-kioskstatus-i.md)
   - [LoopObserver](arkts-loopobserver.md)
     - [LoopObserver](arkts-ability-loopobserver-i.md)
+  - [MissionCallbacks](arkts-missioncallbacks.md)<!--Del-->
+    - [MissionCallback(系统接口)](arkts-ability-missioncallback-i-sys.md)<!--DelEnd--><!--Del-->
+    - [NotifyMissionsChangedCallback(系统接口)](arkts-ability-notifymissionschangedcallback-t-sys.md)<!--DelEnd--><!--Del-->
+    - [NotifyNetDisconnectCallback(系统接口)](arkts-ability-notifynetdisconnectcallback-t-sys.md)<!--DelEnd--><!--Del-->
+    - [NotifySnapshotCallback(系统接口)](arkts-ability-notifysnapshotcallback-t-sys.md)<!--DelEnd-->
+  - [MissionDeviceInfo](arkts-missiondeviceinfo.md)<!--Del-->
+    - [MissionDeviceInfo(系统接口)](arkts-ability-missiondeviceinfo-i-sys.md)<!--DelEnd-->
   - [MissionInfo](arkts-missioninfo.md)<!--Del-->
     - [MissionInfo(系统接口)](arkts-ability-missioninfo-i-sys.md)<!--DelEnd-->
   - [MissionListener](arkts-missionlistener.md)<!--Del-->
     - [MissionListener(系统接口)](arkts-ability-missionlistener-i-sys.md)<!--DelEnd-->
+  - [MissionParameter](arkts-missionparameter.md)<!--Del-->
+    - [MissionParameter(系统接口)](arkts-ability-missionparameter-i-sys.md)<!--DelEnd-->
   - [MissionSnapshot](arkts-missionsnapshot.md)<!--Del-->
     - [MissionSnapshot(系统接口)](arkts-ability-missionsnapshot-i-sys.md)<!--DelEnd-->
   - [MultiAppMode](arkts-multiappmode.md)<!--Del-->
@@ -1144,6 +1199,11 @@
     - [PermissionRequestResult](arkts-ability-permissionrequestresult-depr-i.md)
   - [processInfo](arkts-processinfo.md)
     - [ProcessInfo](arkts-ability-processinfo-depr-i.md)
+- continuation<!--arkts-abilitykit-continuation-->
+  - [continuationExtraParams](arkts-continuationextraparams.md)
+    - [ContinuationExtraParams](arkts-ability-continuationextraparams-i.md)
+  - [continuationResult](arkts-continuationresult.md)
+    - [ContinuationResult](arkts-ability-continuationresult-i.md)
 - wantAgent<!--arkts-abilitykit-wantAgent-->
   - [triggerInfo](arkts-triggerinfo.md)
     - [TriggerInfo](arkts-ability-triggerinfo-i.md)<!--Del-->

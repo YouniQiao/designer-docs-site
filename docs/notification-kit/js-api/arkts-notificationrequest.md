@@ -7,7 +7,7 @@
 | Name | Description |
 | --- | --- |
 | [DistributedOptions](arkts-notification-distributedoptions-i.md) | Describes options for cross-device notifications. Not supported currently. |
-| [NotificationParameters](arkts-notification-notificationparameters-i.md) | Describes part of the **wantAgent** information about in [NotificationRequest](arkts-notification-notificationrequest-i.md). |
+| [NotificationParameters](arkts-notification-notificationparameters-i.md) | Describes part of the **wantAgent** information in NotificationRequest. |
 | [NotificationRequest](arkts-notification-notificationrequest-i.md) | The **NotificationRequest** module provides APIs for defining the notification request. |
 
 <!--Del-->

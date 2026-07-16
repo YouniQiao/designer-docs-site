@@ -4,7 +4,11 @@
 declare type SizeChangeCallback = (oldValue: SizeOptions, newValue: SizeOptions) => void
 ```
 
-组件区域变化时的回调类型。 oldValue表示目标元素变化之前的宽高。 newValue表示目标元素变化之后的宽高。
+组件区域变化时的回调类型。
+
+oldValue表示目标元素变化之前的宽高。
+
+newValue表示目标元素变化之后的宽高。
 
 **起始版本：** 12
 

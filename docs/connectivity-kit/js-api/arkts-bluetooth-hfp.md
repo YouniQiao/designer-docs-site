@@ -18,19 +18,21 @@ import { hfp } from '@kit.ConnectivityKit';
 
 | Name | Description |
 | --- | --- |
-| [createHfpAgProfile](arkts-hfp-createhfpagprofile-f.md#createHfpAgProfile-1) | create the instance of hfp profile. |
-| [createHfpHfProfile](arkts-hfp-createhfphfprofile-f.md#createHfpHfProfile-1) | create the instance of HF(Hands-Free Unit) for HFP(Hands-Free Profile). |
+| [createHfpAgProfile](arkts-connectivity-createhfpagprofile-f.md#createhfpagprofile-1) | create the instance of hfp profile. |
+| [createHfpHfProfile](arkts-connectivity-createhfphfprofile-f.md#createhfphfprofile-1) | create the instance of HF(Hands-Free Unit) for HFP(Hands-Free Profile). |
 
-### Interfaces
+<!--Del-->
+### Interfaces（系统接口）
 
 | Name | Description |
 | --- | --- |
-| [HandsFreeAudioGatewayProfile](arkts-hfp-handsfreeaudiogatewayprofile-i.md) | Manager hfp source profile. |
-| [HandsFreeHfProfile](arkts-hfp-handsfreehfprofile-i.md) | Manage hfp sink profile. |
+| [HandsFreeAudioGatewayProfile](arkts-connectivity-handsfreeaudiogatewayprofile-i-sys.md) | Manager hfp source profile. |
+| [HandsFreeHfProfile](arkts-connectivity-handsfreehfprofile-i-sys.md) | Manage hfp sink profile. |
+<!--DelEnd-->
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [BaseProfile](arkts-hfp-baseprofile-t.md) | Base interface of profile. |
+| [BaseProfile](arkts-connectivity-baseprofile-t.md) | Base interface of profile. |
 

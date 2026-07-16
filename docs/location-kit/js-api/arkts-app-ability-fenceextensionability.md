@@ -12,5 +12,5 @@ import { FenceExtensionAbility } from '@kit.LocationKit';
 
 | Name | Description |
 | --- | --- |
-| [FenceExtensionAbility](arkts-fenceextensionability-c.md) | Class of fence extension ability. |
+| [FenceExtensionAbility](arkts-location-fenceextensionability-c.md) | Class of fence extension ability. |
 

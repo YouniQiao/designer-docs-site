@@ -13,6 +13,6 @@ import { AutoFillExtensionAbility } from '@kit.AbilityKit';
 
 | Name | Description |
 | --- | --- |
-| [AutoFillExtensionAbility](arkts-ability-autofillextensionability-c-sys.md) | The AutoFillExtensionAbility module provides APIs for automatically filling in and saving accounts and passwords. It inherits from [ExtensionAbility](arkts-ability-extensionability-c.md). |
+| [AutoFillExtensionAbility](arkts-ability-autofillextensionability-c-sys.md) | The AutoFillExtensionAbility module provides APIs for automatically filling in and saving accounts and passwords. Itinherits from [ExtensionAbility](arkts-ability-extensionability-c.md). |
 <!--DelEnd-->
 

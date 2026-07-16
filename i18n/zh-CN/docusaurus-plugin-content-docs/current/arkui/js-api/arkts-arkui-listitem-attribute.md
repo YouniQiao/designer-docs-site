@@ -78,7 +78,8 @@ selectable(value: boolean)
 selected(value: boolean)
 ```
 
-设置当前ListItem选中状态。该属性支持$$双向绑定变量。 该属性需要在设置多态样式前使用才能生效选中态样式。
+设置当前ListItem选中状态。该属性支持$$双向绑定变量。
+该属性需要在设置多态样式前使用才能生效选中态样式。
 
 **起始版本：** 10
 

@@ -5,7 +5,9 @@ declare type DataOperation =
   DataAddOperation | DataDeleteOperation | DataChangeOperation | DataMoveOperation | DataExchangeOperation | DataReloadOperation
 ```
 
-All data operation types. > **NOTE**
+All data operation types.
+
+> **NOTE**
 
 **Since:** 12
 

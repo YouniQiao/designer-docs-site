@@ -1,6 +1,14 @@
 # @ohos.userIAM.faceAuth
 
-The **faceAuth** module is an important part of the OpenHarmony user identity and access management (UserIAM) and is used to manage face enrollment. This module provides core APIs for face authentication management, enabling developers to enroll and manage face information within their applications. This module applies to the following scenarios: - Applications that need to implement the face enrollment function. - Scenarios where the system-level identity authentication service needs to be integrated. - Applications that need to customize the face preview page.
+The **faceAuth** module is an important part of the OpenHarmony user identity and access management (UserIAM) and is
+used to manage face enrollment. This module provides core APIs for face authentication management, enabling
+developers to enroll and manage face information within their applications.
+
+This module applies to the following scenarios:
+
+- Applications that need to implement the face enrollment function.
+- Scenarios where the system-level identity authentication service needs to be integrated.
+- Applications that need to customize the face preview page.
 
 **Since:** 9
 
@@ -19,6 +27,6 @@ import { faceAuth } from '@kit.UserAuthenticationKit';
 
 | Name | Description |
 | --- | --- |
-| [FaceAuthManager](arkts-userauthentication-faceauthmanager-c-sys.md) | Provides APIs for facial authentication management. It provides management features during face enrollment, including setting the surface ID of the face preview page. |
+| [FaceAuthManager](arkts-userauthentication-faceauthmanager-c-sys.md) | Provides APIs for facial authentication management. It provides management features during face enrollment,including setting the surface ID of the face preview page. |
 <!--DelEnd-->
 

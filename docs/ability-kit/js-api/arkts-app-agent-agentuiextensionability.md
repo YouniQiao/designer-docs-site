@@ -12,5 +12,5 @@ import { AgentUIExtensionAbility } from '@kit.AbilityKit';
 
 | Name | Description |
 | --- | --- |
-| [AgentUIExtensionAbility](arkts-agentuiextensionability-c.md) | The class of agent UI extension ability. This class cannot be used in Harmony Archive(HAR). |
+| [AgentUIExtensionAbility](arkts-ability-agentuiextensionability-c.md) | The class of agent UI extension ability. This class cannot be used in Harmony Archive(HAR). |
 

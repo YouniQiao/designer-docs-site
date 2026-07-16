@@ -12,5 +12,13 @@ import { PrintExtensionAbility } from '@kit.BasicServicesKit';
 
 | Name | Description |
 | --- | --- |
-| [PrintExtensionAbility](arkts-printextensionability-c.md) | class of print extensionAbility. |
+| [PrintExtensionAbility](arkts-basicservices-printextensionability-c.md) | class of print extensionAbility. |
+
+<!--Del-->
+### Classes（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [PrintExtensionAbility](arkts-basicservices-printextensionability-c-sys.md) | class of print extensionAbility. |
+<!--DelEnd-->
 

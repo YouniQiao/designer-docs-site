@@ -6,17 +6,11 @@
 
 **系统能力：** SystemCapability.Graphic.Graphic2D.ColorManager.Core
 
-## 导入模块
-
-```TypeScript
-import { hdrCapability } from '@kit.ArkGraphics2D';
-```
-
 ## 汇总
 
 ### 枚举
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| [HDRFormat](arkts-hdrcapability-hdrformat-e.md) | HDR格式枚举。 |
+| [HDRFormat](arkts-arkgraphics2d-hdrformat-e.md) | HDR格式枚举。 |
 

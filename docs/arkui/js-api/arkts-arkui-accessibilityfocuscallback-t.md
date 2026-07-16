@@ -4,7 +4,8 @@
 declare type AccessibilityFocusCallback = (isFocus: boolean) => void
 ```
 
-Defines the callback type used in accessibility focus. The value of isFocus indicates whether the current component is focused
+Defines the callback type used in accessibility focus. The value of isFocus indicates whether the current component
+is focused
 
 **Since:** 18
 

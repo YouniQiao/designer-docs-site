@@ -8,7 +8,7 @@ Define the attribute functions of ability component.
 
 **Deprecated since:** 10
 
-**Substitutes:** [UIExtensionComponentAttribute](arkts-arkui-uiextensioncomponent-attribute.md#uiextensioncomponentattribute)
+**Substitutes:** [UIExtensionComponentAttribute](arkts-arkui-uiextensioncomponent-attribute.md)
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

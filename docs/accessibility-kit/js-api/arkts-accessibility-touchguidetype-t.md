@@ -1,7 +1,7 @@
 # TouchGuideType
 
 ```TypeScript
-type TouchGuideType = 'touchBegin' | 'touchEnd'
+type TouchGuideType = 'touchBegin' | 'touchEnd' | 'touchGuideGesture'
 ```
 
 Enumerates the touch guide event types.
@@ -14,4 +14,5 @@ Enumerates the touch guide event types.
 | --- | --- |
 | 'touchBegin' | Start of touch. |
 | 'touchEnd' | End of touch. |
+| 'touchGuideGesture' | Event indicating the touchGuide gesture. [since 26.0.0] |
 

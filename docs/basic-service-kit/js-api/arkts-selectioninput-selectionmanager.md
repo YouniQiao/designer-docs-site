@@ -1,6 +1,11 @@
 # @ohos.selectionInput.selectionManager
 
-This module provides word selection management capabilities, including creating, displaying, moving, hiding, and destroying windows, listening for word selection events, and retrieving the selected text. > **NOTE** > - This module is supported only on PCs/2-in-1 devices. > - APIs of this module can be called only by applications that integrate the ExtensionAbility for word selection.
+This module provides word selection management capabilities, including creating, displaying, moving, hiding, and
+destroying windows, listening for word selection events, and retrieving the selected text.
+
+> **NOTE**
+> - This module is supported only on PCs/2-in-1 devices.
+> - APIs of this module can be called only by applications that integrate the ExtensionAbility for word selection.
 
 **Since:** 24
 
@@ -21,7 +26,7 @@ import { selectionManager } from '@kit.BasicServicesKit';
 
 | Name | Description |
 | --- | --- |
-| [createPanel](arkts-basicservices-createpanel-f-sys.md#createpanel-1) | Creates a word selection panel. This API uses a promise to return the result. Only one [MENU_PANEL](arkts-selectioninput-selectionpanel.md) and one [MAIN_PANEL](arkts-selectioninput-selectionpanel.md) can be created for one word selection application. |
+| [createPanel](arkts-basicservices-createpanel-f-sys.md#createpanel-1) | Creates a word selection panel. This API uses a promise to return the result.Only one [MENU_PANEL](arkts-selectioninput-selectionpanel.md) and one [MAIN_PANEL](arkts-selectioninput-selectionpanel.md) can be created for one word selection application. |
 | [destroyPanel](arkts-basicservices-destroypanel-f-sys.md#destroypanel-1) | Destroys the word selection panel. This API uses a promise to return the result. |
 | [getSelectionContent](arkts-basicservices-getselectioncontent-f-sys.md#getselectioncontent-1) | Obtains this selected text content. This API uses a promise to return the result. |
 | [off](arkts-basicservices-off-f-sys.md#off-1) | Unregisters the callback used to listen for the word selection completion event. This API uses an asynchronous callback to return the result. |

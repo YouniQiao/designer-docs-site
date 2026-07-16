@@ -1,6 +1,14 @@
 # SymbolSpan
 
-As a child component of the **Text** component, the **SymbolSpan** component is used to display small icons. > **NOTE** > - This component can inherit attribute settings from its parent component **Text**. This means that, if an > attribute is not set in this component, it takes the value of the attribute (if set) from its parent component. > > - The **SymbolSpan** component is not dimmed when dragged.
+As a child component of the **Text** component, the **SymbolSpan** component is used to display small icons.
+
+> **NOTE**
+
+> - This component can inherit attribute settings from its parent component **Text**. This means that, if an
+> attribute is not set in this component, it takes the value of the attribute (if set) from its parent component.
+>
+> - The **SymbolSpan** component is not dimmed when dragged.
+
 
 ## SymbolSpan
 

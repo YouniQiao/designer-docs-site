@@ -15,8 +15,8 @@ The namespace of abilityToolAccessCtrl
 
 | Name | Description |
 | --- | --- |
-| [grantToolPermissionsByUser](arkts-ability-granttoolpermissionsbyuser-f-sys.md#granttoolpermissionsbyuser-1) | Grants tool permissions based on user authorization results. This function grants permissions for tools (CLI commands or APIs) according to the user's authorization decisions. After successful authorization, tickets are generated which can be used for permission verification. |
-| [requestToolPermissions](arkts-ability-requesttoolpermissions-f-sys.md#requesttoolpermissions-1) | Queries tool permissions based on the specified operations. This function checks the permission status for CLI commands or APIs specified in permissionQuery.operationInfo. For each operation, it returns the permission status, authorization status, and whether a user dialog is required. When needTicket is set to true, a ticket will be generated for remote authorization. |
+| [grantToolPermissionsByUser](arkts-ability-granttoolpermissionsbyuser-f-sys.md#granttoolpermissionsbyuser-1) | Grants tool permissions based on user authorization results.This function grants permissions for tools (CLI commands or APIs) according to the user's authorization decisions.After successful authorization, tickets are generated which can be used for permission verification. |
+| [requestToolPermissions](arkts-ability-requesttoolpermissions-f-sys.md#requesttoolpermissions-1) | Queries tool permissions based on the specified operations.This function checks the permission status for CLI commands or APIs specified in permissionQuery.operationInfo.For each operation, it returns the permission status, authorization status, and whether a user dialog is required.When needTicket is set to true, a ticket will be generated for remote authorization. |
 <!--DelEnd-->
 
 <!--Del-->

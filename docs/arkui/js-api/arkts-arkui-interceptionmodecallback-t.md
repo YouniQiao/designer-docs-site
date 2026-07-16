@@ -4,7 +4,8 @@
 declare type InterceptionModeCallback = (mode: NavigationMode) => void
 ```
 
-Implements an interception callback invoked when the display mode of the **Navigation** component switches between single-column and split-column.
+Implements an interception callback invoked when the display mode of the **Navigation** component switches between
+single-column and split-column.
 
 **Since:** 12
 

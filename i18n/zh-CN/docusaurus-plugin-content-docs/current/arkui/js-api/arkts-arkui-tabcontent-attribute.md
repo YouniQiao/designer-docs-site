@@ -1,6 +1,8 @@
 # TabContent属性/事件
 
-��֧��[ͨ������](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)�⣬��֧���������ԣ� ��֧��[ͨ���¼�](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)�⣬��֧�������¼���
+��֧��[ͨ������](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)�⣬��֧���������ԣ�
+
+��֧��[ͨ���¼�](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)�⣬��֧�������¼���
 
 **继承/实现关系：** TabContentAttribute extends [CommonMethod<TabContentAttribute>](CommonMethod<TabContentAttribute>)
 
@@ -14,7 +16,11 @@
 onWillHide(event: VoidCallback)
 ```
 
-�߼��ص���TabContent��Ҫ���ص�ʱ�򴥷��ûص�����������TabContent�л���ҳ���л�������ǰ��̨�л��� > **˵����** > ��API version 20��ʼ���ýӿ�֧����[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)�е��á�
+�߼��ص���TabContent��Ҫ���ص�ʱ�򴥷��ûص�����������TabContent�л���ҳ���л�������ǰ��̨�л���
+
+> **˵����**
+
+> ��API version 20��ʼ���ýӿ�֧����[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)�е��á�
 
 **起始版本：** 12
 
@@ -36,7 +42,11 @@ onWillHide(event: VoidCallback)
 onWillShow(event: VoidCallback)
 ```
 
-�߼��ص���TabContent��Ҫ��ʾ��ʱ�򴥷��ûص�����������TabContent�״���ʾ��TabContent�л���ҳ���л�������ǰ��̨�л��� > **˵����** > ��API version 20��ʼ���ýӿ�֧����[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)�е��á�
+�߼��ص���TabContent��Ҫ��ʾ��ʱ�򴥷��ûص�����������TabContent�״���ʾ��TabContent�л���ҳ���л�������ǰ��̨�л���
+
+> **˵����**
+
+> ��API version 20��ʼ���ýӿ�֧����[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)�е��á�
 
 **起始版本：** 12
 
@@ -58,7 +68,11 @@ onWillShow(event: VoidCallback)
 tabBar(options: string | Resource | CustomBuilder | TabBarOptions)
 ```
 
-����TabBar����ʾ���ݡ� ���icon����svg��ʽͼԴ����ɾ��svgͼԴ���õĿ�������ֵ������icon��С��ʹ��svgͼԴ���õĿ�������ֵ�� ���õ����ݳ���tabBarҳǩʱ���в��С�
+����TabBar����ʾ���ݡ�
+
+���icon����svg��ʽͼԴ����ɾ��svgͼԴ���õĿ�������ֵ������icon��С��ʹ��svgͼԴ���õĿ�������ֵ��
+
+���õ����ݳ���tabBarҳǩʱ���в��С�
 
 **起始版本：** 7
 
@@ -78,7 +92,15 @@ tabBar(options: string | Resource | CustomBuilder | TabBarOptions)
 tabBar(value: SubTabBarStyle | BottomTabBarStyle)
 ```
 
-����TabBar����ʾ���ݡ��ײ���ʽû���»���Ч����icon�쳣ʱ��ʾ��ɫͼ�顣 > **˵����** > - ��ҳǩ��[SubTabBarStyle](arkts-arkui-subtabbarstyle-c.md)����ʽ��ͨ��Ϊ����+�»��ߣ�����+�����ҳǩ������������ı���ʽ����������ڶ������ߵײ�ʹ�á��л�ҳǩʱĬ��֧�ֶ�����תЧ������������Ѷ > ��Ӧ�õĶ������ࣨ��"��ע����Ƶ������"��������ģ��Ķ������������� > > - �ײ�ҳǩ/���ҳǩ��[BottomTabBarStyle](arkts-arkui-bottomtabbarstyle-c.md)����ʽ�����»��ߺͱ���Ч����ҳǩ��ʽͨ��Ϊͼ��+���ֵ���Ϸ�ʽ���л�ҳǩʱĬ���޶�����תЧ�����ײ�ҳǩͨ������Ӧ�� > ������������ҳ�����֡��Ƽ��������ҳǩ�����ڿ���������������vertical(true)�������򲼾֣���ҳǩ�ڲ����ʾ��Ĭ�������ʾ��
+����TabBar����ʾ���ݡ��ײ���ʽû���»���Ч����icon�쳣ʱ��ʾ��ɫͼ�顣
+
+> **˵����**
+
+> - ��ҳǩ��[SubTabBarStyle](arkts-arkui-subtabbarstyle-c.md)����ʽ��ͨ��Ϊ����+�»��ߣ�����+�����ҳǩ������������ı���ʽ����������ڶ������ߵײ�ʹ�á��л�ҳǩʱĬ��֧�ֶ�����תЧ������������Ѷ
+> ��Ӧ�õĶ������ࣨ��"��ע����Ƶ������"��������ģ��Ķ�������������
+>
+> - �ײ�ҳǩ/���ҳǩ��[BottomTabBarStyle](arkts-arkui-bottomtabbarstyle-c.md)����ʽ�����»��ߺͱ���Ч����ҳǩ��ʽͨ��Ϊͼ��+���ֵ���Ϸ�ʽ���л�ҳǩʱĬ���޶�����תЧ�����ײ�ҳǩͨ������Ӧ��
+> ������������ҳ�����֡��Ƽ��������ҳǩ�����ڿ���������������vertical(true)�������򲼾֣���ҳǩ�ڲ����ʾ��Ĭ�������ʾ��
 
 **起始版本：** 9
 
@@ -99,7 +121,12 @@ tabBar(content: ComponentContent | SubTabBarStyle | BottomTabBarStyle | string |
     TabBarOptions)
 ```
 
-����TabBar����ʾ���ݡ� ʹ��BottomTabBarStyle��TabBarOptions������Ϊ��β�����icon��icon�쳣ʱ��ʾ��ɫͼ�顣���icon����svg��ʽͼԴ����ɾ��svgͼԴ���õĿ�������ֵ������icon��С��ʹ��svgͼԴ���õĿ� ������ֵ�� ���õ����ݳ���TabBarҳǩʱ���в��С�
+����TabBar����ʾ���ݡ�
+
+ʹ��BottomTabBarStyle��TabBarOptions������Ϊ��β�����icon��icon�쳣ʱ��ʾ��ɫͼ�顣���icon����svg��ʽͼԴ����ɾ��svgͼԴ���õĿ�������ֵ������icon��С��ʹ��svgͼԴ���õĿ�
+������ֵ��
+
+���õ����ݳ���TabBarҳǩʱ���в��С�
 
 **起始版本：** 18
 

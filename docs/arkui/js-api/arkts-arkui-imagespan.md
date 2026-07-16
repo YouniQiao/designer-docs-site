@@ -1,6 +1,8 @@
 # ImageSpan
 
-As a child of the [Text]{@link text} and [ContainerSpan]{@link container_span} components, the **ImageSpan** component is used to display inline images.
+As a child of the [Text]{@link text} and [ContainerSpan]{@link container_span} components, the **ImageSpan**
+component is used to display inline images.
+
 
 ## ImageSpan
 

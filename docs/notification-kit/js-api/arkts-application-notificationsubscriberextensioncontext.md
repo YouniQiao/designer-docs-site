@@ -12,5 +12,5 @@ import { NotificationSubscriberExtensionContext } from '@kit.NotificationKit';
 
 | Name | Description |
 | --- | --- |
-| [NotificationSubscriberExtensionContext](arkts-notification-notificationsubscriberextensioncontext-c.md) | The **NotificationSubscriberExtensionContext** module provides the context for the **NotificationSubscriberExtensionAbility**. &gt; **NOTE** &gt; &gt; The APIs of this module can be used only in the stage model. |
+| [NotificationSubscriberExtensionContext](arkts-notification-notificationsubscriberextensioncontext-c.md) | The **NotificationSubscriberExtensionContext** module provides the contextfor the **NotificationSubscriberExtensionAbility**.&gt; **NOTE**&gt; &gt; The APIs of this module can be used only in the stage model. |
 

@@ -20,6 +20,6 @@
 | [IconItemOptions](arkts-arkui-iconitemoptions-i.md) | 定义了尾部builder接口，针对背板大小及颜色设置限制。 |
 | [IconOptions](arkts-arkui-iconoptions-i.md) | IconOptions定义图标的共通属性。 |
 | [LabelOptions](arkts-arkui-labeloptions-i.md) | Label定义图标属性。 |
-| [SuffixImageIconOptions](arkts-arkui-suffiximageiconoptions-i.md) | 后缀图标选项的类型。 继承自[IconOptions](arkts-arkui-iconoptions-i.md)。 |
+| [SuffixImageIconOptions](arkts-arkui-suffiximageiconoptions-i.md) | 后缀图标选项的类型。继承自[IconOptions](arkts-arkui-iconoptions-i.md)。 |
 | [SymbolItemOptions](arkts-arkui-symbolitemoptions-i.md) | ChipGroup的尾部图标选项类型。 |
 

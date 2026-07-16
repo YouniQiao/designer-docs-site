@@ -1,6 +1,8 @@
 # LoopObserver
 
-The module defines an observer to listen for event processing timeout. It can be used as an input parameter in [ErrorManager.on](arkts-ability-on-f.md#on-2) to listen for the event processing timeout of the current application's main thread.
+The module defines an observer to listen for event processing timeout. It can be used as an input parameter in
+[ErrorManager.on](arkts-ability-on-f.md#on-2)
+to listen for the event processing timeout of the current application's main thread.
 
 **Since:** 12
 

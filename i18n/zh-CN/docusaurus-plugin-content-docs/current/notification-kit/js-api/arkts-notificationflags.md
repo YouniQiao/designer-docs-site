@@ -1,4 +1,4 @@
-# notificationFlags
+# notificationFlags (Some states and flags for notifications)
 
 ## 汇总
 

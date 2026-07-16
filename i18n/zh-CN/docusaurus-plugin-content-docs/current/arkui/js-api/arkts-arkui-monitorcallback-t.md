@@ -4,7 +4,7 @@
 export declare type MonitorCallback = (monitorValue: IMonitor) => void
 ```
 
-参数为[IMonitor](../arkts-components/arkts-arkui-imonitor-i.md#imonitor)类型的监听回调函数。
+参数为[IMonitor](../arkts-components/arkts-arkui-imonitor-i.md)类型的监听回调函数。
 
 **起始版本：** 20
 

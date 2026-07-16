@@ -1,6 +1,8 @@
 # Blank properties/events
 
-In addition to the [universal attributes](arkts-arkui-commonmethod-c.md), the following attributes are supported. The [universal events](arkts-arkui-commonmethod-c.md) are supported.
+In addition to the [universal attributes](arkts-arkui-commonmethod-c.md), the following attributes are supported.
+
+The [universal events](arkts-arkui-commonmethod-c.md) are supported.
 
 **Inheritance/Implementation:** BlankAttribute extends [CommonMethod<BlankAttribute>](CommonMethod<BlankAttribute>)
 
@@ -14,7 +16,8 @@ In addition to the [universal attributes](arkts-arkui-commonmethod-c.md), the fo
 color(value: ResourceColor)
 ```
 
-Sets the fill color of the **Blank** component. This attribute can be dynamically set using [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
+Sets the fill color of the **Blank** component. This attribute can be dynamically set using
+[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 7
 

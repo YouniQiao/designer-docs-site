@@ -1,6 +1,8 @@
 # GridCol properties/events
 
-In addition to the [universal attributes](arkts-arkui-commonmethod-c.md), the following attributes are supported. The [universal events](arkts-arkui-commonmethod-c.md) are supported.
+In addition to the [universal attributes](arkts-arkui-commonmethod-c.md), the following attributes are supported.
+
+The [universal events](arkts-arkui-commonmethod-c.md) are supported.
 
 **Inheritance/Implementation:** GridColAttribute extends [CommonMethod<GridColAttribute>](CommonMethod<GridColAttribute>)
 
@@ -36,7 +38,8 @@ Sets the number of offset columns relative to the original position of the compo
 order(value: number | GridColColumnOption)
 ```
 
-Sets the display order of the grid child component. Grid child components are sorted in ascending order based on their sequence numbers.
+Sets the display order of the grid child component. Grid child components are sorted in ascending order based on
+their sequence numbers.
 
 **Since:** 9
 
@@ -58,7 +61,8 @@ Sets the display order of the grid child component. Grid child components are so
 span(value: number | GridColColumnOption)
 ```
 
-Sets the number of columns occupied by the component. If it is set to **0**, the element is not involved in layout calculation, that is, the element is not rendered.
+Sets the number of columns occupied by the component. If it is set to **0**, the element is not involved in layout
+calculation, that is, the element is not rendered.
 
 **Since:** 9
 

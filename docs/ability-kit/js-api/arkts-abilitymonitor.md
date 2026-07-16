@@ -6,5 +6,5 @@
 
 | Name | Description |
 | --- | --- |
-| [AbilityMonitor](arkts-ability-abilitymonitor-i.md) | The module provides the capability of listening for lifecycle state changes of a specified [UIAbility](arkts-app-ability-uiability.md). You can use AbilityMonitor as an input parameter of [abilityDelegator.addAbilityMonitor](arkts-ability-abilitydelegator-i.md#addabilitymonitor-1) to register a listener. |
+| [AbilityMonitor](arkts-ability-abilitymonitor-i.md) | The module provides the capability of listening for lifecycle state changes of a specified[UIAbility](arkts-app-ability-uiability.md). You can use AbilityMonitor as an input parameter of[abilityDelegator.addAbilityMonitor](arkts-ability-abilitydelegator-i.md#addabilitymonitor-1) to register a listener. |
 

@@ -1,6 +1,8 @@
 # ApplicationStateObserver
 
-The module defines an observer to listen for application state changes. It can be used as an input parameter in [on('applicationState')](arkts-ability-on-f.md#on-1) to listen for lifecycle changes of the application.
+The module defines an observer to listen for application state changes. It can be used as an input parameter in
+[on('applicationState')](arkts-ability-on-f.md#on-1)
+to listen for lifecycle changes of the application.
 
 **Since:** 14
 

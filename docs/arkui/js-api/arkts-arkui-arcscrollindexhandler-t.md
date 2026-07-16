@@ -4,7 +4,8 @@
 declare type ArcScrollIndexHandler = (start: number, end: number, center: number) => void
 ```
 
-Represents the callback triggered when a child component enters or leaves the visible area of the **ArcList** component.
+Represents the callback triggered when a child component enters or leaves the visible area
+of the **ArcList** component.
 
 **Since:** 18
 

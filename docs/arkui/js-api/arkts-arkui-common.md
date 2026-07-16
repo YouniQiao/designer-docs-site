@@ -2,6 +2,7 @@
 
 CommonInterface for ide.
 
+
 ## Common
 
 ```TypeScript

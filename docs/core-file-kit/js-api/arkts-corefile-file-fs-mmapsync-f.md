@@ -12,7 +12,10 @@ import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventList
 declare function mmapSync(file: number | File, mode: MappingMode, offset: number, size: number): FileMapping
 ```
 
-Creates a file mapping object based on a file descriptor or file object by using the synchronization method. Maps file contents to memory for efficient read and write access to files. Note: In the read/write mode (MappingMode.READ_WRITE), if the mapping range exceeds the raw file size, the file size will be automatically expanded.
+Creates a file mapping object based on a file descriptor or file object by using the synchronization method. Maps
+file contents to memory for efficient read and write access to files.
+Note: In the read/write mode (MappingMode.READ_WRITE), if the mapping range exceeds the raw file size, the file size
+will be automatically expanded.
 
 **Since:** 26.0.0
 

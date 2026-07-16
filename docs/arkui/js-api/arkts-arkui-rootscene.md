@@ -2,6 +2,7 @@
 
 Defines the interface of RootScene.
 
+
 ## RootScene
 
 ```TypeScript

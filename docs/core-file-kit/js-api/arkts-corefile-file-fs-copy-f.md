@@ -12,7 +12,13 @@ import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventList
 declare function copy(srcUri: string, destUri: string, options?: CopyOptions): Promise<void>
 ```
 
-Copies a file or directory. This API uses a promise to return the result. File copy across devices is supported. This API forcibly overwrites the file or directory. The input parameter can be the URI of the file or directory. A maximum of 10 cross-device copy tasks are allowed at the same time, and the number of files to be copied at a time cannot exceed 500.
+Copies a file or directory. This API uses a promise to return the result.
+
+File copy across devices is supported. This API forcibly overwrites the file or directory. The input parameter can be
+the URI of the file or directory.
+
+A maximum of 10 cross-device copy tasks are allowed at the same time, and the number of files to be copied at a time
+cannot exceed 500.
 
 **Since:** 11
 
@@ -70,7 +76,11 @@ Copies a file or directory. This API uses a promise to return the result. File c
 declare function copy(srcUri: string, destUri: string, callback: AsyncCallback<void>): void
 ```
 
-Copies a file or directory. This API uses an asynchronous callback to return the result. File copy across devices is supported. This API forcibly overwrites the file or directory. The input parameter can be the URI of the file or directory. A maximum of 10 cross-device copy tasks are allowed at the same time, and the number of files to be copied at a time cannot exceed 500.
+Copies a file or directory. This API uses an asynchronous callback to return the result.
+
+File copy across devices is supported. This API forcibly overwrites the file or directory.
+The input parameter can be the URI of the file or directory. A maximum of 10 cross-device copy tasks
+are allowed at the same time, and the number of files to be copied at a time cannot exceed 500.
 
 **Since:** 11
 
@@ -121,7 +131,11 @@ Copies a file or directory. This API uses an asynchronous callback to return the
 declare function copy(srcUri: string, destUri: string, options: CopyOptions, callback: AsyncCallback<void>): void
 ```
 
-Copies a file or directory. This API uses an asynchronous callback to return the result. File copy across devices is supported. This API forcibly overwrites the file or directory. The input parameter can be the URI of the file or directory. A maximum of 10 cross-device copy tasks are allowed at the same time, and the number of files to be copied at a time cannot exceed 500.
+Copies a file or directory. This API uses an asynchronous callback to return the result.
+
+File copy across devices is supported. This API forcibly overwrites the file or directory.
+The input parameter can be the URI of the file or directory. A maximum of 10 cross-device copy tasks
+are allowed at the same time, and the number of files to be copied at a time cannot exceed 500.
 
 **Since:** 11
 

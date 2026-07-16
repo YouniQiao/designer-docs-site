@@ -142,7 +142,13 @@ Sets whether to display the selected icon when the menu item is selected.
 selected(value: boolean)
 ```
 
-Sets whether the menu item is selected. Since API version 10, this parameter supports two-way binding through [$$](../../../../ui/state-management/arkts-two-way-sync.md). Since API version 18, this parameter supports two-way binding through [!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
+Sets whether the menu item is selected.
+
+Since API version 10, this parameter supports two-way binding through
+[$$](../../../../ui/state-management/arkts-two-way-sync.md).
+
+Since API version 18, this parameter supports two-way binding through
+[!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
 
 **Since:** 9
 

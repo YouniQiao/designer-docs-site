@@ -1,6 +1,8 @@
 # Progress属性/事件
 
-除支持[通用属性](../../../../reference/apis-arkui/arkui-ts/ts-component-general-attributes.md)外，还支持以下属性。 支持[通用事件](../../../../reference/apis-arkui/arkui-ts/ts-component-general-events.md)。
+除支持[通用属性](../../../../reference/apis-arkui/arkui-ts/ts-component-general-attributes.md)外，还支持以下属性。
+
+支持[通用事件](../../../../reference/apis-arkui/arkui-ts/ts-component-general-events.md)。
 
 **继承/实现关系：** ProgressAttribute extends [CommonMethod<ProgressAttribute<Type>>](CommonMethod<ProgressAttribute<Type>>)
 
@@ -14,7 +16,13 @@
 color(value: ResourceColor | LinearGradient)
 ```
 
-设置进度条前景色。 从API version 10开始支持利用[LinearGradient](arkts-arkui-lineargradient-i.md)设置Ring样式的渐变色。Ring类型不建议设置透明度，如需设置透明度，建议使用 [DataPanel](arkts-arkui-datapanel.md)。 从API version 23开始支持利用[LinearGradient](arkts-arkui-lineargradient-i.md)设置Linear样式和Capsule样式的渐变色。API version 22及之前版本利用 LinearGradient设置Linear样式和Capsule样式的渐变色时，会以默认主题色显示。
+设置进度条前景色。
+
+从API version 10开始支持利用[LinearGradient](arkts-arkui-lineargradient-i.md)设置Ring样式的渐变色。Ring类型不建议设置透明度，如需设置透明度，建议使用
+[DataPanel](arkts-arkui-datapanel.md)。
+
+从API version 23开始支持利用[LinearGradient](arkts-arkui-lineargradient-i.md)设置Linear样式和Capsule样式的渐变色。API version 22及之前版本利用
+LinearGradient设置Linear样式和Capsule样式的渐变色时，会以默认主题色显示。
 
 **起始版本：** 7
 
@@ -58,7 +66,11 @@ contentModifier(modifier: ContentModifier<ProgressConfiguration>)
 privacySensitive(isPrivacySensitiveMode: Optional<boolean>)
 ```
 
-设置隐私敏感。 > **说明：** > > 从API version 20开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+设置隐私敏感。
+
+> **说明：**
+>
+> 从API version 20开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 12
 

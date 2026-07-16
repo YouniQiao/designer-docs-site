@@ -1,6 +1,9 @@
 # GridCol
 
-栅格子组件，必须作为栅格容器组件([GridRow]{@link grid_row})的子组件使用。 > **说明：**
+栅格子组件，必须作为栅格容器组件([GridRow]{@link grid_row})的子组件使用。
+
+> **说明：**
+
 
 ## GridCol
 

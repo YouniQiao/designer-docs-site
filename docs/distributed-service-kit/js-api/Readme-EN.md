@@ -1,230 +1,127 @@
-# DistributedServiceKit
+# ArkTS API<!--arkts-distributedservicekit-->
 
 - [@ohos.application.DistributedExtensionAbility](arkts-application-distributedextensionability.md)
-  - [DistributedExtensionAbility](arkts-distributedextensionability-c.md)
+  - [DistributedExtensionAbility](arkts-distributedservice-distributedextensionability-c.md)
 - [@ohos.application.DistributedExtensionContext](arkts-application-distributedextensioncontext.md)
-  - [DistributedExtensionContext](arkts-distributedextensioncontext-c.md)
+  - [DistributedExtensionContext](arkts-distributedservice-distributedextensioncontext-c.md)
 - [@ohos.cooperate](arkts-cooperate.md)<!--Del-->
-  - [unprepare(system api)](arkts-cooperate-unprepare-f-sys.md)<!--DelEnd--><!--Del-->
-  - [prepare(system api)](arkts-cooperate-prepare-f-sys.md)<!--DelEnd--><!--Del-->
-  - [offCooperateMessage(system api)](arkts-cooperate-offcooperatemessage-f-sys.md)<!--DelEnd--><!--Del-->
-  - [onCooperateMessage(system api)](arkts-cooperate-oncooperatemessage-f-sys.md)<!--DelEnd--><!--Del-->
-  - [unprepareCooperate(system api)](arkts-cooperate-unpreparecooperate-f-sys.md)<!--DelEnd--><!--Del-->
-  - [prepareCooperate(system api)](arkts-cooperate-preparecooperate-f-sys.md)<!--DelEnd--><!--Del-->
-  - [off(system api)](arkts-cooperate-off-f-sys.md)<!--DelEnd--><!--Del-->
-  - [deactivate(system api)](arkts-cooperate-deactivate-f-sys.md)<!--DelEnd--><!--Del-->
-  - [deactivateCooperate(system api)](arkts-cooperate-deactivatecooperate-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getCrossingSwitchState(system api)](arkts-cooperate-getcrossingswitchstate-f-sys.md)<!--DelEnd--><!--Del-->
-  - [activate(system api)](arkts-cooperate-activate-f-sys.md)<!--DelEnd--><!--Del-->
-  - [onCooperateMouseEvent(system api)](arkts-cooperate-oncooperatemouseevent-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getCooperateSwitchState(system api)](arkts-cooperate-getcooperateswitchstate-f-sys.md)<!--DelEnd--><!--Del-->
-  - [offCooperateMouseEvent(system api)](arkts-cooperate-offcooperatemouseevent-f-sys.md)<!--DelEnd--><!--Del-->
-  - [activateCooperate(system api)](arkts-cooperate-activatecooperate-f-sys.md)<!--DelEnd--><!--Del-->
-  - [activateCooperateWithOptions(system api)](arkts-cooperate-activatecooperatewithoptions-f-sys.md)<!--DelEnd--><!--Del-->
-  - [on(system api)](arkts-cooperate-on-f-sys.md)<!--DelEnd--><!--Del-->
-  - [CooperateMessage(system api)](arkts-cooperate-cooperatemessage-i-sys.md)<!--DelEnd--><!--Del-->
-  - [CooperateOptions(system api)](arkts-cooperate-cooperateoptions-i-sys.md)<!--DelEnd--><!--Del-->
-  - [MouseLocation(system api)](arkts-cooperate-mouselocation-i-sys.md)<!--DelEnd--><!--Del-->
-  - [CooperateMsg(system api)](arkts-cooperate-cooperatemsg-e-sys.md)<!--DelEnd--><!--Del-->
-  - [CooperateState(system api)](arkts-cooperate-cooperatestate-e-sys.md)<!--DelEnd-->
-- [@ohos.cooperate](arkts-cooperate.md)<!--Del-->
-  - [unprepare(system api)](arkts-cooperate-unprepare-f-sys.md)<!--DelEnd--><!--Del-->
-  - [prepare(system api)](arkts-cooperate-prepare-f-sys.md)<!--DelEnd--><!--Del-->
-  - [offCooperateMessage(system api)](arkts-cooperate-offcooperatemessage-f-sys.md)<!--DelEnd--><!--Del-->
-  - [onCooperateMessage(system api)](arkts-cooperate-oncooperatemessage-f-sys.md)<!--DelEnd--><!--Del-->
-  - [unprepareCooperate(system api)](arkts-cooperate-unpreparecooperate-f-sys.md)<!--DelEnd--><!--Del-->
-  - [prepareCooperate(system api)](arkts-cooperate-preparecooperate-f-sys.md)<!--DelEnd--><!--Del-->
-  - [off(system api)](arkts-cooperate-off-f-sys.md)<!--DelEnd--><!--Del-->
-  - [deactivate(system api)](arkts-cooperate-deactivate-f-sys.md)<!--DelEnd--><!--Del-->
-  - [deactivateCooperate(system api)](arkts-cooperate-deactivatecooperate-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getCrossingSwitchState(system api)](arkts-cooperate-getcrossingswitchstate-f-sys.md)<!--DelEnd--><!--Del-->
-  - [activate(system api)](arkts-cooperate-activate-f-sys.md)<!--DelEnd--><!--Del-->
-  - [onCooperateMouseEvent(system api)](arkts-cooperate-oncooperatemouseevent-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getCooperateSwitchState(system api)](arkts-cooperate-getcooperateswitchstate-f-sys.md)<!--DelEnd--><!--Del-->
-  - [offCooperateMouseEvent(system api)](arkts-cooperate-offcooperatemouseevent-f-sys.md)<!--DelEnd--><!--Del-->
-  - [activateCooperate(system api)](arkts-cooperate-activatecooperate-f-sys.md)<!--DelEnd--><!--Del-->
-  - [activateCooperateWithOptions(system api)](arkts-cooperate-activatecooperatewithoptions-f-sys.md)<!--DelEnd--><!--Del-->
-  - [on(system api)](arkts-cooperate-on-f-sys.md)<!--DelEnd--><!--Del-->
-  - [CooperateMessage(system api)](arkts-cooperate-cooperatemessage-i-sys.md)<!--DelEnd--><!--Del-->
-  - [CooperateOptions(system api)](arkts-cooperate-cooperateoptions-i-sys.md)<!--DelEnd--><!--Del-->
-  - [MouseLocation(system api)](arkts-cooperate-mouselocation-i-sys.md)<!--DelEnd--><!--Del-->
-  - [CooperateMsg(system api)](arkts-cooperate-cooperatemsg-e-sys.md)<!--DelEnd--><!--Del-->
-  - [CooperateState(system api)](arkts-cooperate-cooperatestate-e-sys.md)<!--DelEnd-->
+  - [activate(system api)](arkts-distributedservice-activate-f-sys.md)<!--DelEnd--><!--Del-->
+  - [activateCooperate(system api)](arkts-distributedservice-activatecooperate-f-sys.md)<!--DelEnd--><!--Del-->
+  - [activateCooperateWithOptions(system api)](arkts-distributedservice-activatecooperatewithoptions-f-sys.md)<!--DelEnd--><!--Del-->
+  - [deactivate(system api)](arkts-distributedservice-deactivate-f-sys.md)<!--DelEnd--><!--Del-->
+  - [deactivateCooperate(system api)](arkts-distributedservice-deactivatecooperate-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getCooperateSwitchState(system api)](arkts-distributedservice-getcooperateswitchstate-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getCrossingSwitchState(system api)](arkts-distributedservice-getcrossingswitchstate-f-sys.md)<!--DelEnd--><!--Del-->
+  - [off(system api)](arkts-distributedservice-off-f-sys.md)<!--DelEnd--><!--Del-->
+  - [on(system api)](arkts-distributedservice-on-f-sys.md)<!--DelEnd--><!--Del-->
+  - [prepare(system api)](arkts-distributedservice-prepare-f-sys.md)<!--DelEnd--><!--Del-->
+  - [prepareCooperate(system api)](arkts-distributedservice-preparecooperate-f-sys.md)<!--DelEnd--><!--Del-->
+  - [unprepare(system api)](arkts-distributedservice-unprepare-f-sys.md)<!--DelEnd--><!--Del-->
+  - [unprepareCooperate(system api)](arkts-distributedservice-unpreparecooperate-f-sys.md)<!--DelEnd--><!--Del-->
+  - [CooperateMessage(system api)](arkts-distributedservice-cooperatemessage-i-sys.md)<!--DelEnd--><!--Del-->
+  - [CooperateOptions(system api)](arkts-distributedservice-cooperateoptions-i-sys.md)<!--DelEnd--><!--Del-->
+  - [MouseLocation(system api)](arkts-distributedservice-mouselocation-i-sys.md)<!--DelEnd--><!--Del-->
+  - [CooperateMsg(system api)](arkts-distributedservice-cooperatemsg-e-sys.md)<!--DelEnd--><!--Del-->
+  - [CooperateState(system api)](arkts-distributedservice-cooperatestate-e-sys.md)<!--DelEnd-->
 - [@ohos.distributedDeviceManager](arkts-distributeddevicemanager.md)
-  - [createDeviceManager](arkts-distributeddevicemanager-createdevicemanager-f.md)
-  - [releaseDeviceManager](arkts-distributeddevicemanager-releasedevicemanager-f.md)
-  - [BindTargetResult](arkts-distributeddevicemanager-bindtargetresult-i.md)
-  - [DeviceBasicInfo](arkts-distributeddevicemanager-devicebasicinfo-i.md)<!--Del-->
-  - [DeviceIconInfo(system api)](arkts-distributeddevicemanager-deviceiconinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [DeviceIconInfoFilterOptions(system api)](arkts-distributeddevicemanager-deviceiconinfofilteroptions-i-sys.md)<!--DelEnd--><!--Del-->
-  - [DeviceIdentification(system api)](arkts-distributeddevicemanager-deviceidentification-i-sys.md)<!--DelEnd-->
-  - [DeviceManager](arkts-distributeddevicemanager-devicemanager-i.md)
-  - [DeviceNameChangeResult](arkts-distributeddevicemanager-devicenamechangeresult-i.md)<!--Del-->
-  - [DeviceProfileInfo(system api)](arkts-distributeddevicemanager-deviceprofileinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [DeviceProfileInfoFilterOptions(system api)](arkts-distributeddevicemanager-deviceprofileinfofilteroptions-i-sys.md)<!--DelEnd-->
-  - [DeviceStateChangeResult](arkts-distributeddevicemanager-devicestatechangeresult-i.md)
-  - [DiscoveryFailureResult](arkts-distributeddevicemanager-discoveryfailureresult-i.md)
-  - [DiscoverySuccessResult](arkts-distributeddevicemanager-discoverysuccessresult-i.md)<!--Del-->
-  - [NetworkIdQueryFilter(system api)](arkts-distributeddevicemanager-networkidqueryfilter-i-sys.md)<!--DelEnd--><!--Del-->
-  - [ReplyResult(system api)](arkts-distributeddevicemanager-replyresult-i-sys.md)<!--DelEnd-->
-  - [ServiceDieData](arkts-distributeddevicemanager-servicediedata-i.md)<!--Del-->
-  - [ServiceProfileInfo(system api)](arkts-distributeddevicemanager-serviceprofileinfo-i-sys.md)<!--DelEnd-->
-  - [DeviceStateChange](arkts-distributeddevicemanager-devicestatechange-e.md)<!--Del-->
-  - [StrategyForHeartbeat(system api)](arkts-distributeddevicemanager-strategyforheartbeat-e-sys.md)<!--DelEnd-->
-- [@ohos.distributedDeviceManager](arkts-distributeddevicemanager.md)
-  - [createDeviceManager](arkts-distributeddevicemanager-createdevicemanager-f.md)
-  - [releaseDeviceManager](arkts-distributeddevicemanager-releasedevicemanager-f.md)
-  - [BindTargetResult](arkts-distributeddevicemanager-bindtargetresult-i.md)
-  - [DeviceBasicInfo](arkts-distributeddevicemanager-devicebasicinfo-i.md)<!--Del-->
-  - [DeviceIconInfo(system api)](arkts-distributeddevicemanager-deviceiconinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [DeviceIconInfoFilterOptions(system api)](arkts-distributeddevicemanager-deviceiconinfofilteroptions-i-sys.md)<!--DelEnd--><!--Del-->
-  - [DeviceIdentification(system api)](arkts-distributeddevicemanager-deviceidentification-i-sys.md)<!--DelEnd-->
-  - [DeviceManager](arkts-distributeddevicemanager-devicemanager-i.md)
-  - [DeviceNameChangeResult](arkts-distributeddevicemanager-devicenamechangeresult-i.md)<!--Del-->
-  - [DeviceProfileInfo(system api)](arkts-distributeddevicemanager-deviceprofileinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [DeviceProfileInfoFilterOptions(system api)](arkts-distributeddevicemanager-deviceprofileinfofilteroptions-i-sys.md)<!--DelEnd-->
-  - [DeviceStateChangeResult](arkts-distributeddevicemanager-devicestatechangeresult-i.md)
-  - [DiscoveryFailureResult](arkts-distributeddevicemanager-discoveryfailureresult-i.md)
-  - [DiscoverySuccessResult](arkts-distributeddevicemanager-discoverysuccessresult-i.md)<!--Del-->
-  - [NetworkIdQueryFilter(system api)](arkts-distributeddevicemanager-networkidqueryfilter-i-sys.md)<!--DelEnd--><!--Del-->
-  - [ReplyResult(system api)](arkts-distributeddevicemanager-replyresult-i-sys.md)<!--DelEnd-->
-  - [ServiceDieData](arkts-distributeddevicemanager-servicediedata-i.md)<!--Del-->
-  - [ServiceProfileInfo(system api)](arkts-distributeddevicemanager-serviceprofileinfo-i-sys.md)<!--DelEnd-->
-  - [DeviceStateChange](arkts-distributeddevicemanager-devicestatechange-e.md)<!--Del-->
-  - [StrategyForHeartbeat(system api)](arkts-distributeddevicemanager-strategyforheartbeat-e-sys.md)<!--DelEnd-->
+  - [createDeviceManager](arkts-distributedservice-createdevicemanager-f.md)
+  - [releaseDeviceManager](arkts-distributedservice-releasedevicemanager-f.md)
+  - [DeviceBasicInfo](arkts-distributedservice-devicebasicinfo-i.md)<!--Del-->
+  - [DeviceIconInfo(system api)](arkts-distributedservice-deviceiconinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DeviceIconInfoFilterOptions(system api)](arkts-distributedservice-deviceiconinfofilteroptions-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DeviceIdentification(system api)](arkts-distributedservice-deviceidentification-i-sys.md)<!--DelEnd-->
+  - [DeviceManager](arkts-distributedservice-devicemanager-i.md)<!--Del-->
+  - [DeviceManager(system api)](arkts-distributedservice-devicemanager-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DeviceProfileInfo(system api)](arkts-distributedservice-deviceprofileinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DeviceProfileInfoFilterOptions(system api)](arkts-distributedservice-deviceprofileinfofilteroptions-i-sys.md)<!--DelEnd--><!--Del-->
+  - [NetworkIdQueryFilter(system api)](arkts-distributedservice-networkidqueryfilter-i-sys.md)<!--DelEnd--><!--Del-->
+  - [ServiceProfileInfo(system api)](arkts-distributedservice-serviceprofileinfo-i-sys.md)<!--DelEnd-->
+  - [DeviceStateChange](arkts-distributedservice-devicestatechange-e.md)<!--Del-->
+  - [StrategyForHeartbeat(system api)](arkts-distributedservice-strategyforheartbeat-e-sys.md)<!--DelEnd-->
 - [@ohos.distributedHardware.deviceManager](arkts-distributedhardware-devicemanager.md)<!--Del-->
-  - [createDeviceManager(system api)](arkts-devicemanager-createdevicemanager-f-sys.md)<!--DelEnd--><!--Del-->
-  - [AuthInfo(system api)](arkts-devicemanager-authinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [AuthParam(system api)](arkts-devicemanager-authparam-i-sys.md)<!--DelEnd--><!--Del-->
-  - [DeviceInfo(system api)](arkts-devicemanager-deviceinfo-i-sys.md)<!--DelEnd-->
-  - [DeviceManager](arkts-devicemanager-devicemanager-i.md)<!--Del-->
-  - [PublishInfo(system api)](arkts-devicemanager-publishinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [SubscribeInfo(system api)](arkts-devicemanager-subscribeinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [AuthForm(system api)](arkts-devicemanager-authform-e-sys.md)<!--DelEnd--><!--Del-->
-  - [DeviceStateChangeAction(system api)](arkts-devicemanager-devicestatechangeaction-e-sys.md)<!--DelEnd--><!--Del-->
-  - [DeviceType(system api)](arkts-devicemanager-devicetype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [DiscoverMode(system api)](arkts-devicemanager-discovermode-e-sys.md)<!--DelEnd--><!--Del-->
-  - [ExchangeFreq(system api)](arkts-devicemanager-exchangefreq-e-sys.md)<!--DelEnd--><!--Del-->
-  - [ExchangeMedium(system api)](arkts-devicemanager-exchangemedium-e-sys.md)<!--DelEnd--><!--Del-->
-  - [SubscribeCap(system api)](arkts-devicemanager-subscribecap-e-sys.md)<!--DelEnd-->
-- [@ohos.distributedHardware.deviceManager](arkts-distributedhardware-devicemanager.md)<!--Del-->
-  - [createDeviceManager(system api)](arkts-devicemanager-createdevicemanager-f-sys.md)<!--DelEnd--><!--Del-->
-  - [AuthInfo(system api)](arkts-devicemanager-authinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [AuthParam(system api)](arkts-devicemanager-authparam-i-sys.md)<!--DelEnd--><!--Del-->
-  - [DeviceInfo(system api)](arkts-devicemanager-deviceinfo-i-sys.md)<!--DelEnd-->
-  - [DeviceManager](arkts-devicemanager-devicemanager-i.md)<!--Del-->
-  - [PublishInfo(system api)](arkts-devicemanager-publishinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [SubscribeInfo(system api)](arkts-devicemanager-subscribeinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [AuthForm(system api)](arkts-devicemanager-authform-e-sys.md)<!--DelEnd--><!--Del-->
-  - [DeviceStateChangeAction(system api)](arkts-devicemanager-devicestatechangeaction-e-sys.md)<!--DelEnd--><!--Del-->
-  - [DeviceType(system api)](arkts-devicemanager-devicetype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [DiscoverMode(system api)](arkts-devicemanager-discovermode-e-sys.md)<!--DelEnd--><!--Del-->
-  - [ExchangeFreq(system api)](arkts-devicemanager-exchangefreq-e-sys.md)<!--DelEnd--><!--Del-->
-  - [ExchangeMedium(system api)](arkts-devicemanager-exchangemedium-e-sys.md)<!--DelEnd--><!--Del-->
-  - [SubscribeCap(system api)](arkts-devicemanager-subscribecap-e-sys.md)<!--DelEnd-->
+  - [createDeviceManager(system api)](arkts-distributedservice-createdevicemanager-f-sys.md)<!--DelEnd--><!--Del-->
+  - [AuthInfo(system api)](arkts-distributedservice-authinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [AuthParam(system api)](arkts-distributedservice-authparam-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DeviceInfo(system api)](arkts-distributedservice-deviceinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DeviceManager(system api)](arkts-distributedservice-devicemanager-i-sys.md)<!--DelEnd--><!--Del-->
+  - [PublishInfo(system api)](arkts-distributedservice-publishinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [SubscribeInfo(system api)](arkts-distributedservice-subscribeinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [AuthForm(system api)](arkts-distributedservice-authform-e-sys.md)<!--DelEnd--><!--Del-->
+  - [DeviceStateChangeAction(system api)](arkts-distributedservice-devicestatechangeaction-e-sys.md)<!--DelEnd--><!--Del-->
+  - [DeviceType(system api)](arkts-distributedservice-devicetype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [DiscoverMode(system api)](arkts-distributedservice-discovermode-e-sys.md)<!--DelEnd--><!--Del-->
+  - [ExchangeFreq(system api)](arkts-distributedservice-exchangefreq-e-sys.md)<!--DelEnd--><!--Del-->
+  - [ExchangeMedium(system api)](arkts-distributedservice-exchangemedium-e-sys.md)<!--DelEnd--><!--Del-->
+  - [SubscribeCap(system api)](arkts-distributedservice-subscribecap-e-sys.md)<!--DelEnd-->
 - [@ohos.distributedHardware.hardwareManager](arkts-distributedhardware-hardwaremanager.md)<!--Del-->
-  - [pauseDistributedHardware(system api)](arkts-hardwaremanager-pausedistributedhardware-f-sys.md)<!--DelEnd--><!--Del-->
-  - [resumeDistributedHardware(system api)](arkts-hardwaremanager-resumedistributedhardware-f-sys.md)<!--DelEnd--><!--Del-->
-  - [stopDistributedHardware(system api)](arkts-hardwaremanager-stopdistributedhardware-f-sys.md)<!--DelEnd--><!--Del-->
-  - [HardwareDescriptor(system api)](arkts-hardwaremanager-hardwaredescriptor-i-sys.md)<!--DelEnd--><!--Del-->
-  - [DistributedHardwareErrorCode(system api)](arkts-hardwaremanager-distributedhardwareerrorcode-e-sys.md)<!--DelEnd--><!--Del-->
-  - [DistributedHardwareType(system api)](arkts-hardwaremanager-distributedhardwaretype-e-sys.md)<!--DelEnd-->
+  - [pauseDistributedHardware(system api)](arkts-distributedservice-pausedistributedhardware-f-sys.md)<!--DelEnd--><!--Del-->
+  - [resumeDistributedHardware(system api)](arkts-distributedservice-resumedistributedhardware-f-sys.md)<!--DelEnd--><!--Del-->
+  - [stopDistributedHardware(system api)](arkts-distributedservice-stopdistributedhardware-f-sys.md)<!--DelEnd--><!--Del-->
+  - [HardwareDescriptor(system api)](arkts-distributedservice-hardwaredescriptor-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DistributedHardwareErrorCode(system api)](arkts-distributedservice-distributedhardwareerrorcode-e-sys.md)<!--DelEnd--><!--Del-->
+  - [DistributedHardwareType(system api)](arkts-distributedservice-distributedhardwaretype-e-sys.md)<!--DelEnd-->
 - [@ohos.distributedSoftBus.conversation](arkts-distributedsoftbus-conversation.md)<!--Del-->
-  - [postConversationData(system api)](arkts-conversation-postconversationdata-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getTrustedDevices(system api)](arkts-conversation-gettrusteddevices-f-sys.md)<!--DelEnd--><!--Del-->
-  - [registerConversationListener(system api)](arkts-conversation-registerconversationlistener-f-sys.md)<!--DelEnd--><!--Del-->
-  - [unregisterConversationListener(system api)](arkts-conversation-unregisterconversationlistener-f-sys.md)<!--DelEnd--><!--Del-->
-  - [DeviceNodeInfo(system api)](arkts-conversation-devicenodeinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [DataCallback(system api)](arkts-conversation-datacallback-t-sys.md)<!--DelEnd-->
+  - [getTrustedDevices(system api)](arkts-distributedservice-gettrusteddevices-f-sys.md)<!--DelEnd--><!--Del-->
+  - [postConversationData(system api)](arkts-distributedservice-postconversationdata-f-sys.md)<!--DelEnd--><!--Del-->
+  - [registerConversationListener(system api)](arkts-distributedservice-registerconversationlistener-f-sys.md)<!--DelEnd--><!--Del-->
+  - [unregisterConversationListener(system api)](arkts-distributedservice-unregisterconversationlistener-f-sys.md)<!--DelEnd--><!--Del-->
+  - [DeviceNodeInfo(system api)](arkts-distributedservice-devicenodeinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DataCallback(system api)](arkts-distributedservice-datacallback-t-sys.md)<!--DelEnd-->
 - [@ohos.distributedsched.abilityConnectionManager](arkts-distributedsched-abilityconnectionmanager.md)
-  - [sendData](arkts-abilityconnectionmanager-senddata-f.md)
-  - [disconnect](arkts-abilityconnectionmanager-disconnect-f.md)<!--Del-->
-  - [onCollaborateEvent(system api)](arkts-abilityconnectionmanager-oncollaborateevent-f-sys.md)<!--DelEnd--><!--Del-->
-  - [startStream(system api)](arkts-abilityconnectionmanager-startstream-f-sys.md)<!--DelEnd-->
-  - [offDisconnect](arkts-abilityconnectionmanager-offdisconnect-f.md)<!--Del-->
-  - [offReceiveImage(system api)](arkts-abilityconnectionmanager-offreceiveimage-f-sys.md)<!--DelEnd-->
-  - [onConnect](arkts-abilityconnectionmanager-onconnect-f.md)<!--Del-->
-  - [createStream(system api)](arkts-abilityconnectionmanager-createstream-f-sys.md)<!--DelEnd-->
-  - [reject](arkts-abilityconnectionmanager-reject-f.md)
-  - [offReceiveData](arkts-abilityconnectionmanager-offreceivedata-f.md)<!--Del-->
-  - [getSurfaceId(system api)](arkts-abilityconnectionmanager-getsurfaceid-f-sys.md)<!--DelEnd-->
-  - [connect](arkts-abilityconnectionmanager-connect-f.md)
-  - [getPeerInfoById](arkts-abilityconnectionmanager-getpeerinfobyid-f.md)
-  - [on](arkts-abilityconnectionmanager-on-f.md)<!--Del-->
-  - [on(system api)](arkts-abilityconnectionmanager-on-f-sys.md)<!--DelEnd--><!--Del-->
-  - [offCollaborateEvent(system api)](arkts-abilityconnectionmanager-offcollaborateevent-f-sys.md)<!--DelEnd-->
-  - [onDisconnect](arkts-abilityconnectionmanager-ondisconnect-f.md)<!--Del-->
-  - [setSurfaceId(system api)](arkts-abilityconnectionmanager-setsurfaceid-f-sys.md)<!--DelEnd--><!--Del-->
-  - [updateSurfaceParam(system api)](arkts-abilityconnectionmanager-updatesurfaceparam-f-sys.md)<!--DelEnd-->
-  - [sendMessage](arkts-abilityconnectionmanager-sendmessage-f.md)
-  - [destroyAbilityConnectionSession](arkts-abilityconnectionmanager-destroyabilityconnectionsession-f.md)
-  - [onReceiveData](arkts-abilityconnectionmanager-onreceivedata-f.md)<!--Del-->
-  - [destroyStream(system api)](arkts-abilityconnectionmanager-destroystream-f-sys.md)<!--DelEnd-->
-  - [acceptConnect](arkts-abilityconnectionmanager-acceptconnect-f.md)
-  - [createAbilityConnectionSession](arkts-abilityconnectionmanager-createabilityconnectionsession-f.md)<!--Del-->
-  - [sendImage(system api)](arkts-abilityconnectionmanager-sendimage-f-sys.md)<!--DelEnd-->
-  - [off](arkts-abilityconnectionmanager-off-f.md)<!--Del-->
-  - [off(system api)](arkts-abilityconnectionmanager-off-f-sys.md)<!--DelEnd-->
-  - [offReceiveMessage](arkts-abilityconnectionmanager-offreceivemessage-f.md)<!--Del-->
-  - [stopStream(system api)](arkts-abilityconnectionmanager-stopstream-f-sys.md)<!--DelEnd-->
-  - [onReceiveMessage](arkts-abilityconnectionmanager-onreceivemessage-f.md)
-  - [offConnect](arkts-abilityconnectionmanager-offconnect-f.md)<!--Del-->
-  - [onReceiveImage(system api)](arkts-abilityconnectionmanager-onreceiveimage-f-sys.md)<!--DelEnd-->
-  - [CollaborateEventInfo](arkts-abilityconnectionmanager-collaborateeventinfo-i.md)
-  - [ConnectOptions](arkts-abilityconnectionmanager-connectoptions-i.md)
-  - [ConnectResult](arkts-abilityconnectionmanager-connectresult-i.md)
-  - [EventCallbackInfo](arkts-abilityconnectionmanager-eventcallbackinfo-i.md)
-  - [PeerInfo](arkts-abilityconnectionmanager-peerinfo-i.md)<!--Del-->
-  - [StreamParam(system api)](arkts-abilityconnectionmanager-streamparam-i-sys.md)<!--DelEnd--><!--Del-->
-  - [SurfaceParam(system api)](arkts-abilityconnectionmanager-surfaceparam-i-sys.md)<!--DelEnd-->
-  - [CollaborateEventType](arkts-abilityconnectionmanager-collaborateeventtype-e.md)
-  - [CollaborationKeys](arkts-abilityconnectionmanager-collaborationkeys-e.md)
-  - [CollaborationValues](arkts-abilityconnectionmanager-collaborationvalues-e.md)
-  - [ConnectErrorCode](arkts-abilityconnectionmanager-connecterrorcode-e.md)
-  - [DisconnectReason](arkts-abilityconnectionmanager-disconnectreason-e.md)<!--Del-->
-  - [FlipOptions(system api)](arkts-abilityconnectionmanager-flipoptions-e-sys.md)<!--DelEnd-->
-  - [StartOptionParams](arkts-abilityconnectionmanager-startoptionparams-e.md)<!--Del-->
-  - [StreamRole(system api)](arkts-abilityconnectionmanager-streamrole-e-sys.md)<!--DelEnd--><!--Del-->
-  - [VideoPixelFormat(system api)](arkts-abilityconnectionmanager-videopixelformat-e-sys.md)<!--DelEnd-->
+  - [acceptConnect](arkts-distributedservice-acceptconnect-f.md)
+  - [connect](arkts-distributedservice-connect-f.md)
+  - [createAbilityConnectionSession](arkts-distributedservice-createabilityconnectionsession-f.md)<!--Del-->
+  - [createStream(system api)](arkts-distributedservice-createstream-f-sys.md)<!--DelEnd-->
+  - [destroyAbilityConnectionSession](arkts-distributedservice-destroyabilityconnectionsession-f.md)<!--Del-->
+  - [destroyStream(system api)](arkts-distributedservice-destroystream-f-sys.md)<!--DelEnd-->
+  - [disconnect](arkts-distributedservice-disconnect-f.md)
+  - [getPeerInfoById](arkts-distributedservice-getpeerinfobyid-f.md)<!--Del-->
+  - [getSurfaceId(system api)](arkts-distributedservice-getsurfaceid-f-sys.md)<!--DelEnd-->
+  - [off](arkts-distributedservice-off-f.md)<!--Del-->
+  - [off(system api)](arkts-distributedservice-off-f-sys.md)<!--DelEnd-->
+  - [on](arkts-distributedservice-on-f.md)<!--Del-->
+  - [on(system api)](arkts-distributedservice-on-f-sys.md)<!--DelEnd-->
+  - [reject](arkts-distributedservice-reject-f.md)
+  - [sendData](arkts-distributedservice-senddata-f.md)<!--Del-->
+  - [sendImage(system api)](arkts-distributedservice-sendimage-f-sys.md)<!--DelEnd-->
+  - [sendMessage](arkts-distributedservice-sendmessage-f.md)<!--Del-->
+  - [setSurfaceId(system api)](arkts-distributedservice-setsurfaceid-f-sys.md)<!--DelEnd--><!--Del-->
+  - [startStream(system api)](arkts-distributedservice-startstream-f-sys.md)<!--DelEnd--><!--Del-->
+  - [stopStream(system api)](arkts-distributedservice-stopstream-f-sys.md)<!--DelEnd--><!--Del-->
+  - [updateSurfaceParam(system api)](arkts-distributedservice-updatesurfaceparam-f-sys.md)<!--DelEnd-->
+  - [CollaborateEventInfo](arkts-distributedservice-collaborateeventinfo-i.md)
+  - [ConnectOptions](arkts-distributedservice-connectoptions-i.md)<!--Del-->
+  - [ConnectOptions(system api)](arkts-distributedservice-connectoptions-i-sys.md)<!--DelEnd-->
+  - [ConnectResult](arkts-distributedservice-connectresult-i.md)
+  - [EventCallbackInfo](arkts-distributedservice-eventcallbackinfo-i.md)<!--Del-->
+  - [EventCallbackInfo(system api)](arkts-distributedservice-eventcallbackinfo-i-sys.md)<!--DelEnd-->
+  - [PeerInfo](arkts-distributedservice-peerinfo-i.md)<!--Del-->
+  - [StreamParam(system api)](arkts-distributedservice-streamparam-i-sys.md)<!--DelEnd--><!--Del-->
+  - [SurfaceParam(system api)](arkts-distributedservice-surfaceparam-i-sys.md)<!--DelEnd-->
+  - [CollaborateEventType](arkts-distributedservice-collaborateeventtype-e.md)
+  - [CollaborationKeys](arkts-distributedservice-collaborationkeys-e.md)
+  - [CollaborationValues](arkts-distributedservice-collaborationvalues-e.md)
+  - [ConnectErrorCode](arkts-distributedservice-connecterrorcode-e.md)
+  - [DisconnectReason](arkts-distributedservice-disconnectreason-e.md)<!--Del-->
+  - [FlipOptions(system api)](arkts-distributedservice-flipoptions-e-sys.md)<!--DelEnd-->
+  - [StartOptionParams](arkts-distributedservice-startoptionparams-e.md)<!--Del-->
+  - [StartOptionParams(system api)](arkts-distributedservice-startoptionparams-e-sys.md)<!--DelEnd--><!--Del-->
+  - [StreamRole(system api)](arkts-distributedservice-streamrole-e-sys.md)<!--DelEnd--><!--Del-->
+  - [VideoPixelFormat(system api)](arkts-distributedservice-videopixelformat-e-sys.md)<!--DelEnd-->
 - [@ohos.distributedsched.linkEnhance](arkts-distributedsched-linkenhance.md)
-  - [createServer](arkts-linkenhance-createserver-f.md)
-  - [createConnection](arkts-linkenhance-createconnection-f.md)
-  - [Connection](arkts-linkenhance-connection-i.md)
-  - [ConnectResult](arkts-linkenhance-connectresult-i.md)
-  - [Server](arkts-linkenhance-server-i.md)
-- [@ohos.distributedsched.linkEnhance](arkts-distributedsched-linkenhance.md)
-  - [createServer](arkts-linkenhance-createserver-f.md)
-  - [createConnection](arkts-linkenhance-createconnection-f.md)
-  - [Connection](arkts-linkenhance-connection-i.md)
-  - [ConnectResult](arkts-linkenhance-connectresult-i.md)
-  - [Server](arkts-linkenhance-server-i.md)
+  - [createConnection](arkts-distributedservice-createconnection-f.md)
+  - [createServer](arkts-distributedservice-createserver-f.md)
+  - [Connection](arkts-distributedservice-connection-i.md)
+  - [ConnectResult](arkts-distributedservice-connectresult-i.md)
+  - [Server](arkts-distributedservice-server-i.md)
 - [@ohos.distributedsched.proxyChannelManager](arkts-distributedsched-proxychannelmanager.md)
-  - [sendData](arkts-proxychannelmanager-senddata-f.md)
-  - [offReceiveData](arkts-proxychannelmanager-offreceivedata-f.md)
-  - [closeProxyChannel](arkts-proxychannelmanager-closeproxychannel-f.md)
-  - [onReceiveData](arkts-proxychannelmanager-onreceivedata-f.md)
-  - [openProxyChannel](arkts-proxychannelmanager-openproxychannel-f.md)
-  - [onChannelStateChange](arkts-proxychannelmanager-onchannelstatechange-f.md)
-  - [off](arkts-proxychannelmanager-off-f.md)
-  - [offChannelStateChange](arkts-proxychannelmanager-offchannelstatechange-f.md)
-  - [on](arkts-proxychannelmanager-on-f.md)
-  - [ChannelInfo](arkts-proxychannelmanager-channelinfo-i.md)
-  - [ChannelStateInfo](arkts-proxychannelmanager-channelstateinfo-i.md)
-  - [DataInfo](arkts-proxychannelmanager-datainfo-i.md)
-  - [ChannelState](arkts-proxychannelmanager-channelstate-e.md)
-  - [LinkType](arkts-proxychannelmanager-linktype-e.md)
-- [@ohos.distributedsched.proxyChannelManager](arkts-distributedsched-proxychannelmanager.md)
-  - [sendData](arkts-proxychannelmanager-senddata-f.md)
-  - [offReceiveData](arkts-proxychannelmanager-offreceivedata-f.md)
-  - [closeProxyChannel](arkts-proxychannelmanager-closeproxychannel-f.md)
-  - [onReceiveData](arkts-proxychannelmanager-onreceivedata-f.md)
-  - [openProxyChannel](arkts-proxychannelmanager-openproxychannel-f.md)
-  - [onChannelStateChange](arkts-proxychannelmanager-onchannelstatechange-f.md)
-  - [off](arkts-proxychannelmanager-off-f.md)
-  - [offChannelStateChange](arkts-proxychannelmanager-offchannelstatechange-f.md)
-  - [on](arkts-proxychannelmanager-on-f.md)
-  - [ChannelInfo](arkts-proxychannelmanager-channelinfo-i.md)
-  - [ChannelStateInfo](arkts-proxychannelmanager-channelstateinfo-i.md)
-  - [DataInfo](arkts-proxychannelmanager-datainfo-i.md)
-  - [ChannelState](arkts-proxychannelmanager-channelstate-e.md)
-  - [LinkType](arkts-proxychannelmanager-linktype-e.md)
+  - [closeProxyChannel](arkts-distributedservice-closeproxychannel-f.md)
+  - [off](arkts-distributedservice-off-f.md)
+  - [on](arkts-distributedservice-on-f.md)
+  - [openProxyChannel](arkts-distributedservice-openproxychannel-f.md)
+  - [sendData](arkts-distributedservice-senddata-f.md)
+  - [ChannelInfo](arkts-distributedservice-channelinfo-i.md)
+  - [ChannelStateInfo](arkts-distributedservice-channelstateinfo-i.md)
+  - [DataInfo](arkts-distributedservice-datainfo-i.md)
+  - [ChannelState](arkts-distributedservice-channelstate-e.md)
+  - [LinkType](arkts-distributedservice-linktype-e.md)

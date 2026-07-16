@@ -1,6 +1,6 @@
 # @ohos.convertxml
 
-本模块提供将XML文本转换为JavaScript对象的解析能力。
+The convertxml module provides APIs for converting XML text into JavaScript objects.
 
 **Since:** 8
 
@@ -18,11 +18,11 @@ import { convertxml } from '@kit.ArkTS';
 
 | Name | Description |
 | --- | --- |
-| [ConvertXML](arkts-xml-convertxml-c.md) | ConvertXML 表示可扩展标记语言。 |
+| [ConvertXML](arkts-arkts-convertxml-c.md) | ConvertXML representation refers to extensible markup language. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [ConvertOptions](arkts-xml-convertoptions-i.md) | 转换选项。 |
+| [ConvertOptions](arkts-arkts-convertoptions-i.md) | Options for conversion. |
 

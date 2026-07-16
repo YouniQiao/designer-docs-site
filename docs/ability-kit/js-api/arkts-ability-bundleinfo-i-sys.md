@@ -12,7 +12,7 @@ The module defines the bundle information.
 readonly sandboxCreatorBundleName?: string
 ```
 
-Bundle name of the sandbox application creator
+Bundle name of the sandbox application creator.
 
 **Type:** string
 

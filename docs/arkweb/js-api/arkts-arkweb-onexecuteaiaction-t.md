@@ -4,7 +4,8 @@
 type OnExecuteAIAction = (id: string, params: string, result: OnAISessionCallback) => void
 ```
 
-Triggered when executing an AI session action. Enables custom implementation of AI model execution.
+Triggered when executing an AI session action.
+Enables custom implementation of AI model execution.
 
 **Since:** 26.0.0
 

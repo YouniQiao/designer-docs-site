@@ -1,6 +1,13 @@
 # PermissionDef (System API)
 
-The module provides permission details defined in the [module.json5](../../../../quick-start/module-configuration-file.md) file. The information can be obtained using [bundleManager.getPermissionDef](arkts-ability-getpermissiondef-f-sys.md#getpermissiondef-1) . > **NOTE** > > The APIs provided by this module are system APIs.
+The module provides permission details defined in the
+[module.json5](../../../../quick-start/module-configuration-file.md) file. The information can be obtained using
+[bundleManager.getPermissionDef](arkts-ability-getpermissiondef-f-sys.md#getpermissiondef-1)
+.
+
+> **NOTE**
+>
+> The APIs provided by this module are system APIs.
 
 **Since:** 9
 
@@ -30,7 +37,8 @@ ID of the permission description.
 readonly grantMode: number
 ```
 
-[Grant mode of the permission](../../../../security/AccessToken/app-permission-mgmt-overview.md#authorization-mode). The value **0** means user authorization, and **1** means system authorization.
+[Grant mode of the permission](../../../../security/AccessToken/app-permission-mgmt-overview.md#authorization-mode).
+The value **0** means user authorization, and **1** means system authorization.
 
 **Type:** number
 

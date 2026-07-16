@@ -1,6 +1,8 @@
 # UIExtensionComponent
 
-提供UIExtensionComponent的接口，用于 <br/>渲染远程UIExtensionAbility的UI。
+提供UIExtensionComponent的接口，用于
+<br/>渲染远程UIExtensionAbility的UI。
+
 
 ## UIExtensionComponent
 
@@ -10,7 +12,8 @@ UIExtensionComponent(
   )
 ```
 
-构造UIExtensionComponent。<br/> 在使用UIExtensionComponent时调用。
+构造UIExtensionComponent。<br/>
+在使用UIExtensionComponent时调用。
 
 **起始版本：** 11
 

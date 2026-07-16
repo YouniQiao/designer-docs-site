@@ -2,6 +2,7 @@
 
 显示一段文本的组件。
 
+
 ## Text
 
 ```TypeScript

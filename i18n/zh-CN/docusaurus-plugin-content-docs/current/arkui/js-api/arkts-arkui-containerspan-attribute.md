@@ -1,6 +1,8 @@
 # ContainerSpan属性/事件
 
-仅支持以下属性： 不支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)。
+仅支持以下属性：
+
+不支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)。
 
 **起始版本：** 11
 

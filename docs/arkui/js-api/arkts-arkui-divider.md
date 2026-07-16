@@ -2,6 +2,7 @@
 
 Provides a divider component to separate different content blocks/content elements.
 
+
 ## Divider
 
 ```TypeScript

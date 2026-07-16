@@ -1,6 +1,13 @@
 # Tabs
 
-通过页签进行内容视图切换的容器组件，每个页签对应一个内容视图。 > **说明：** > - 该组件从API version 11开始，支持安全区域避让特性，其[expandSafeArea]{@link CommonMethod#expandSafeArea}属性的默认值为expandSafeArea( > [SafeAreaType.SYSTEM], [SafeAreaEdge.BOTTOM])。开发者可通过重写该属性覆盖默认行为。对于API version 11之前的版本，则需配合expandSafeArea属性手动实现安全区域避 > 让。
+通过页签进行内容视图切换的容器组件，每个页签对应一个内容视图。
+
+> **说明：**
+
+> - 该组件从API version 11开始，支持安全区域避让特性，其[expandSafeArea]{@link CommonMethod#expandSafeArea}属性的默认值为expandSafeArea(
+> [SafeAreaType.SYSTEM], [SafeAreaEdge.BOTTOM])。开发者可通过重写该属性覆盖默认行为。对于API version 11之前的版本，则需配合expandSafeArea属性手动实现安全区域避
+> 让。
+
 
 ## Tabs
 

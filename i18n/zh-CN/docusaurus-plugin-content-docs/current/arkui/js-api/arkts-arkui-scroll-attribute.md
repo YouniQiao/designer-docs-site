@@ -57,7 +57,8 @@ enableBouncesZoom(enable: boolean)
 enablePaging(value: boolean)
 ```
 
-设置是否支持划动翻页。如果同时设置了划动翻页enablePaging和限位滚动scrollSnap， 则scrollSnap优先生效，enablePaging不生效。
+设置是否支持划动翻页。如果同时设置了划动翻页enablePaging和限位滚动scrollSnap，
+则scrollSnap优先生效，enablePaging不生效。
 
 **起始版本：** 11
 
@@ -79,7 +80,8 @@ enablePaging(value: boolean)
 enableScrollInteraction(value: boolean)
 ```
 
-设置是否支持滚动手势。设置为false时不支持手指或鼠标滚动，但不影响控制器的滚动接口。 组件无法通过鼠标按下拖动操作进行滚动。
+设置是否支持滚动手势。设置为false时不支持手指或鼠标滚动，但不影响控制器的滚动接口。
+组件无法通过鼠标按下拖动操作进行滚动。
 
 **起始版本：** 10
 
@@ -101,7 +103,8 @@ enableScrollInteraction(value: boolean)
 friction(value: number | Resource)
 ```
 
-设置摩擦系数，手动划动滚动区域时生效，仅影响惯性滚动过程，对惯性滚动过程中的链式效果有间接影响。 设置为小于等于0的值时，按默认值处理。
+设置摩擦系数，手动划动滚动区域时生效，仅影响惯性滚动过程，对惯性滚动过程中的链式效果有间接影响。
+设置为小于等于0的值时，按默认值处理。
 
 **起始版本：** 10
 
@@ -167,7 +170,8 @@ maxZoomScale(scale: number)
 minZoomScale(scale: number)
 ```
 
-设置Scroll组件内容的最小手势缩放比例。 当maxZoomScale和minZoomScale不同时为1时，Scroll组件会启用缩放手势。
+设置Scroll组件内容的最小手势缩放比例。
+当maxZoomScale和minZoomScale不同时为1时，Scroll组件会启用缩放手势。
 
 **起始版本：** 20
 
@@ -189,7 +193,8 @@ minZoomScale(scale: number)
 nestedScroll(value: NestedScrollOptions)
 ```
 
-设置前后两个方向的嵌套滚动模式，实现与父组件的滚动联动。 Scroll设置enablePaging或者scrollSnap，并同时设置父组件优先的嵌套滚动时，嵌套滚动不生效。
+设置前后两个方向的嵌套滚动模式，实现与父组件的滚动联动。
+Scroll设置enablePaging或者scrollSnap，并同时设置父组件优先的嵌套滚动时，嵌套滚动不生效。
 
 **起始版本：** 10
 
@@ -211,7 +216,13 @@ nestedScroll(value: NestedScrollOptions)
 onDidScroll(handler: ScrollOnScrollCallback)
 ```
 
-滚动事件回调，Scroll滚动时触发。 <p><strong>说明</strong> <br>1、滚动组件触发滚动时触发，支持键鼠操作等其他触发滚动的输入设置。 <br>2、通过滚动控制器API接口调用。 <br>3、越界回弹。 </p>
+滚动事件回调，Scroll滚动时触发。
+
+<p><strong>说明</strong>
+<br>1、滚动组件触发滚动时触发，支持键鼠操作等其他触发滚动的输入设置。
+<br>2、通过滚动控制器API接口调用。
+<br>3、越界回弹。
+</p>
 
 **起始版本：** 12
 
@@ -255,7 +266,13 @@ onDidZoom(event: ScrollOnDidZoomCallback)
 onScroll(event: (xOffset: number, yOffset: number) => void)
 ```
 
-滚动事件回调，返回滚动时水平、竖直方向偏移量，单位vp。 <p><strong>说明</strong> <br>1、滚动组件触发滚动时触发，支持键鼠操作等其他触发滚动的输入设置。 <br>2、通过滚动控制器API接口调用。 <br>3、越界回弹。 </p>
+滚动事件回调，返回滚动时水平、竖直方向偏移量，单位vp。
+
+<p><strong>说明</strong>
+<br>1、滚动组件触发滚动时触发，支持键鼠操作等其他触发滚动的输入设置。
+<br>2、通过滚动控制器API接口调用。
+<br>3、越界回弹。
+</p>
 
 **起始版本：** 7
 
@@ -279,7 +296,13 @@ onScroll(event: (xOffset: number, yOffset: number) => void)
 onScrollEdge(event: OnScrollEdgeCallback)
 ```
 
-滚动到边缘事件回调。 <p><strong>说明</strong> <br>1、滚动组件滚动到边缘时触发，支持键鼠操作等其他触发滚动的输入设置。 <br>2、通过滚动控制器API接口调用。 <br>3、越界回弹。 </p>
+滚动到边缘事件回调。
+
+<p><strong>说明</strong>
+<br>1、滚动组件滚动到边缘时触发，支持键鼠操作等其他触发滚动的输入设置。
+<br>2、通过滚动控制器API接口调用。
+<br>3、越界回弹。
+</p>
 
 **起始版本：** 7
 
@@ -299,7 +322,12 @@ onScrollEdge(event: OnScrollEdgeCallback)
 onScrollEnd(event: () => void)
 ```
 
-滚动停止事件回调。 <p><strong>说明</strong> <br>1、滚动组件触发滚动后停止，支持键鼠操作等其他触发滚动的输入设置。 <br>2、通过滚动控制器API接口调用后停止，带过渡动效。 </p>
+滚动停止事件回调。
+
+<p><strong>说明</strong>
+<br>1、滚动组件触发滚动后停止，支持键鼠操作等其他触发滚动的输入设置。
+<br>2、通过滚动控制器API接口调用后停止，带过渡动效。
+</p>
 
 **起始版本：** 7
 
@@ -321,7 +349,18 @@ onScrollEnd(event: () => void)
 onScrollFrameBegin(event: OnScrollFrameBeginCallback)
 ```
 
-每帧滚动开始前触发。 <p><strong>说明</strong> <br>满足以下任一条件时触发该事件： <br>1. 用户交互（如手指滑动、键鼠操作等）触发滚动。 <br>2. Scroll惯性滚动。 <br>3. 调用fling接口触发滚动。 <br>不触发该事件的条件： <br>1. 调用除fling接口外的其他滚动控制接口。 <br>2. 越界回弹。 <br>3. 拖动滚动条。 </p>
+每帧滚动开始前触发。
+
+<p><strong>说明</strong>
+<br>满足以下任一条件时触发该事件：
+<br>1. 用户交互（如手指滑动、键鼠操作等）触发滚动。
+<br>2. Scroll惯性滚动。
+<br>3. 调用fling接口触发滚动。
+<br>不触发该事件的条件：
+<br>1. 调用除fling接口外的其他滚动控制接口。
+<br>2. 越界回弹。
+<br>3. 拖动滚动条。
+</p>
 
 **起始版本：** 9
 
@@ -341,7 +380,12 @@ onScrollFrameBegin(event: OnScrollFrameBeginCallback)
 onScrollStart(event: VoidCallback)
 ```
 
-滚动开始时触发。 <p><strong>说明</strong> <br>1、滚动组件开始滚动时触发，支持键鼠操作等其他触发滚动的输入设置。 <br>2、通过滚动控制器API接口调用后开始，带过渡动效。 </p>
+滚动开始时触发。
+
+<p><strong>说明</strong>
+<br>1、滚动组件开始滚动时触发，支持键鼠操作等其他触发滚动的输入设置。
+<br>2、通过滚动控制器API接口调用后开始，带过渡动效。
+</p>
 
 **起始版本：** 9
 
@@ -361,7 +405,12 @@ onScrollStart(event: VoidCallback)
 onScrollStop(event: VoidCallback)
 ```
 
-滚动停止时触发。 <p><strong>说明</strong> <br>1、滚动组件触发滚动后停止，支持键鼠操作等其他触发滚动的输入设置。 <br>2、通过滚动控制器API接口调用后停止，带过渡动效。 </p>
+滚动停止时触发。
+
+<p><strong>说明</strong>
+<br>1、滚动组件触发滚动后停止，支持键鼠操作等其他触发滚动的输入设置。
+<br>2、通过滚动控制器API接口调用后停止，带过渡动效。
+</p>
 
 **起始版本：** 9
 
@@ -381,7 +430,13 @@ onScrollStop(event: VoidCallback)
 onWillScroll(handler: ScrollOnWillScrollCallback)
 ```
 
-滚动事件回调，Scroll滚动前触发。 <p><strong>说明</strong> <br>1、滚动组件触发滚动时触发，支持键鼠操作等其他触发滚动的输入设置。 <br>2、通过滚动控制器API接口调用。 <br>3、越界回弹。 </p>
+滚动事件回调，Scroll滚动前触发。
+
+<p><strong>说明</strong>
+<br>1、滚动组件触发滚动时触发，支持键鼠操作等其他触发滚动的输入设置。
+<br>2、通过滚动控制器API接口调用。
+<br>3、越界回弹。
+</p>
 
 **起始版本：** 12
 
@@ -447,7 +502,9 @@ onZoomStop(event: VoidCallback)
 scrollBar(barState: BarState)
 ```
 
-设置滚动条状态。如果容器组件无法滚动，则滚动条不显示。如果容器组件的子组件大小为无穷大， 则滚动条不支持拖动和伴随滚动。从API version 10开始，当滚动组件存在圆角时，为避免滚动条被圆角截断， 滚动条会自动计算距顶部和底部的避让距离。
+设置滚动条状态。如果容器组件无法滚动，则滚动条不显示。如果容器组件的子组件大小为无穷大，
+则滚动条不支持拖动和伴随滚动。从API version 10开始，当滚动组件存在圆角时，为避免滚动条被圆角截断，
+滚动条会自动计算距顶部和底部的避让距离。
 
 **起始版本：** 7
 
@@ -551,7 +608,8 @@ scrollBarWidth(value: number | string | Resource)
 scrollSnap(value: ScrollSnapOptions)
 ```
 
-设置Scroll组件的限位滚动模式。 限位动画期间onWillScroll事件上报的滚动操作来源类型为ScrollSource.FLING。
+设置Scroll组件的限位滚动模式。
+限位动画期间onWillScroll事件上报的滚动操作来源类型为ScrollSource.FLING。
 
 **起始版本：** 10
 

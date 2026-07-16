@@ -16,10 +16,12 @@ import { appDomainVerify } from '@kit.AbilityKit';
 
 ## Summary
 
-### Functions
+<!--Del-->
+### Functions（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[queryAssociatedBundleNames](arkts-appdomainverify-queryassociatedbundlenames-f-sys.md#queryAssociatedBundleNames-1) | query bundleNames associated with domain. |
-| <!--DelRow-->[queryAssociatedDomains](arkts-appdomainverify-queryassociateddomains-f-sys.md#queryAssociatedDomains-1) | query domains verify associated with bundleName. |
+| [queryAssociatedBundleNames](arkts-ability-queryassociatedbundlenames-f-sys.md#queryassociatedbundlenames-1) | query bundleNames associated with domain. |
+| [queryAssociatedDomains](arkts-ability-queryassociateddomains-f-sys.md#queryassociateddomains-1) | query domains verify associated with bundleName. |
+<!--DelEnd-->
 

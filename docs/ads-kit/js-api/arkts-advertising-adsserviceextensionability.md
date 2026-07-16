@@ -8,15 +8,17 @@ import { RespCallback } from '@kit.AdsKit';
 
 ## Summary
 
-### Classes
+<!--Del-->
+### Classes（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[AdsServiceExtensionAbility](arkts-adsserviceextensionability-c.md) | 本模块为设备厂商提供广告扩展能力，设备厂商可自主实现单广告位请求和多广告位请求的业务逻辑。 |
+| [AdsServiceExtensionAbility](arkts-ads-adsserviceextensionability-c-sys.md) | Provides the capability of integrating advertising services with vendors. |
+<!--DelEnd-->
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [RespCallback](arkts-respcallback-i.md) | 广告请求回调。 |
+| [RespCallback](arkts-ads-respcallback-i.md) | Ad request callback. |
 

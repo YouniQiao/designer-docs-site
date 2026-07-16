@@ -2,13 +2,15 @@
 
 Provides an interface for drawing polylines.
 
+
 ## Polyline
 
 ```TypeScript
 Polyline(options?: PolylineOptions)
 ```
 
-Uses new to create Polyline. Anonymous Object Rectification.
+Uses new to create Polyline.
+Anonymous Object Rectification.
 
 **Since:** 7
 

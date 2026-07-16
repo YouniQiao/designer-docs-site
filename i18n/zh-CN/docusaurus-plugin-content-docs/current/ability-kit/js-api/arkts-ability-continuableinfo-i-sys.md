@@ -1,6 +1,7 @@
 # ContinuableInfo（系统接口）
 
-当注册应用任务流转状态监听的回调时，返回应用任务流转状态和流转信息，注册详见： [on('continueStateChange')接口](arkts-ability-on-f-sys.md#on-1)。
+当注册应用任务流转状态监听的回调时，返回应用任务流转状态和流转信息，注册详见：
+[on('continueStateChange')接口](arkts-ability-on-f-sys.md#on-1)。
 
 **起始版本：** 10
 

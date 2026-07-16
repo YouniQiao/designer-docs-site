@@ -1,6 +1,13 @@
 # @ohos.data.storage
 
-Lightweight storage provides applications with data processing capability and allows applications to perform lightweight data storage and query. Data is stored in key-value (KV) pairs. Keys are of the string type, and values can be of the number, string, or Boolean type. > **NOTE** > - The APIs of this module are no longer maintained since API version 9. You are advised to use > [@ohos.data.preferences](arkts-data-preferences.md).
+Lightweight storage provides applications with data processing capability and allows applications to perform
+lightweight data storage and query. Data is stored in key-value (KV) pairs. Keys are of the string type, and values
+can be of the number, string, or Boolean type.
+
+> **NOTE**
+
+> - The APIs of this module are no longer maintained since API version 9. You are advised to use
+> [@ohos.data.preferences](arkts-data-preferences.md).
 
 **Since:** 6
 
@@ -30,7 +37,7 @@ Lightweight storage provides applications with data processing capability and al
 
 | Name | Description |
 | --- | --- |
-| [Storage](arkts-arkdata-storage-i.md) | Provides APIs for obtaining and modifying storage data. Before calling the following APIs, use [data_storage.getStorage](arkts-arkdata-getstoragesync-f.md#getstoragesync-1) or [data_storage.getStorageSync](arkts-arkdata-getstoragesync-f.md#getstoragesync-1) to obtain the **Storage** instance. |
+| [Storage](arkts-arkdata-storage-i.md) | Provides APIs for obtaining and modifying storage data.Before calling the following APIs, use [data_storage.getStorage](arkts-arkdata-getstoragesync-f.md#getstoragesync-1) or [data_storage.getStorageSync](arkts-arkdata-getstoragesync-f.md#getstoragesync-1) to obtain the **Storage** instance. |
 | [StorageObserver](arkts-arkdata-storageobserver-i.md) | Define the change data information object. |
 
 ### Types

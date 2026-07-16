@@ -1,6 +1,7 @@
 # @ohos.telephony.esim
 
-This indicates that the eSIM card performs the profile management operation synchronously. Includes methods defined by GSMA Spec (SGP.22) and customized methods.
+This indicates that the eSIM card performs the profile management operation synchronously.
+Includes methods defined by GSMA Spec (SGP.22) and customized methods.
 
 **Since:** 18
 
@@ -26,7 +27,7 @@ import { eSIM } from '@kit.TelephonyKit';
 
 | Name | Description |
 | --- | --- |
-| [cancelSession](arkts-telephony-cancelsession-f-sys.md#cancelsession-1) | Cancel session can be used in the 1.after the response to "ES9+.AuthenticateClient" 2.after the response to "ES9+.GetBoundProfilePackage" |
+| [cancelSession](arkts-telephony-cancelsession-f-sys.md#cancelsession-1) | Cancel session can be used in the1.after the response to "ES9+.AuthenticateClient"2.after the response to "ES9+.GetBoundProfilePackage" |
 | [deleteProfile](arkts-telephony-deleteprofile-f-sys.md#deleteprofile-1) | Deletes the given profile from eUICC. |
 | [downloadProfile](arkts-telephony-downloadprofile-f-sys.md#downloadprofile-1) | Attempt to download the given downloadable Profile. |
 | [getContractInfo](arkts-telephony-getcontractinfo-f-sys.md#getcontractinfo-1) | Get contract info |

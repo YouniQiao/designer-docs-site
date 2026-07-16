@@ -14,7 +14,9 @@
 fill(value: ResourceColor | ColorMetrics)
 ```
 
-Sets the color of the fill area. An invalid value is handled as the default value. If this attribute and the universal attribute foregroundColor are both set, whichever is set later takes effect.
+Sets the color of the fill area.
+An invalid value is handled as the default value.
+If this attribute and the universal attribute foregroundColor are both set, whichever is set later takes effect.
 
 **起始版本：** 26.0.0
 
@@ -36,7 +38,9 @@ Sets the color of the fill area. An invalid value is handled as the default valu
 stroke(value: ResourceColor | ColorMetrics)
 ```
 
-Sets the stroke color. If this attribute is not set, the component does not have any stroke. If the value is invalid, no stroke will be drawn.
+Sets the stroke color.
+If this attribute is not set, the component does not have any stroke.
+If the value is invalid, no stroke will be drawn.
 
 **起始版本：** 26.0.0
 

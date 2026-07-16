@@ -15,6 +15,6 @@
 
 | 名称 | 说明 |
 | --- | --- |
-| [WindowExtensionContext](arkts-arkui-windowextensioncontext-t-sys.md) | The context of window extension. It allows access to windowExtension-specific resources. |
+| [WindowExtensionContext](arkts-arkui-windowextensioncontext-t-sys.md) | The context of window extension. It allows access towindowExtension-specific resources. |
 <!--DelEnd-->
 

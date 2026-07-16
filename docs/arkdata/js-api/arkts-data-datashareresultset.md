@@ -13,7 +13,7 @@ import { DataType } from '@kit.ArkData';
 
 | Name | Description |
 | --- | --- |
-| [DataShareResultSet](arkts-arkdata-datashareresultset-i-sys.md) | Provides APIs for accessing the result sets returned. The column or key names are returned as a string array, in which the strings are in the same order as the columns or keys in the result set. |
+| [DataShareResultSet](arkts-arkdata-datashareresultset-i-sys.md) | Provides APIs for accessing the result sets returned.The column or key names are returned as a string array, in which the strings are in the same order as the columns orkeys in the result set. |
 <!--DelEnd-->
 
 <!--Del-->

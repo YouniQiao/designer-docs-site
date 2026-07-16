@@ -1,6 +1,8 @@
 # Button properties/events
 
-In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following attributes are supported. The [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) are supported.
+In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following attributes are supported.
+
+The [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) are supported.
 
 **Inheritance/Implementation:** ButtonAttribute extends [CommonMethod<ButtonAttribute>](CommonMethod<ButtonAttribute>)
 
@@ -14,7 +16,15 @@ In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkt
 buttonStyle(value: ButtonStyleMode)
 ```
 
-Sets the style and primacy for the button. The system automatically adjusts the button background color and text color based on the enumerated value. You can also use the [backgroundColor](arkts-arkui-commonmethod-c.md#backgroundcolor-1), [fontColor](ButtonAttribute#fontColor), and [role](ButtonAttribute#role) APIs to set the background color and text color. The actual displayed effect will be determined by the last setting. > **NOTE** > > This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
+Sets the style and primacy for the button. The system automatically adjusts the button background color and text
+color based on the enumerated value. You can also use the
+[backgroundColor](arkts-arkui-commonmethod-c.md#backgroundcolor-1),
+[fontColor](ButtonAttribute#fontColor), and [role](ButtonAttribute#role) APIs to set the background
+color and text color. The actual displayed effect will be determined by the last setting.
+
+> **NOTE**
+>
+> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
 
 **Since:** 11
 
@@ -60,7 +70,11 @@ Creates a content modifier.
 controlSize(value: ControlSize)
 ```
 
-Sets the size for the button. > **NOTE** > > This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
+Sets the size for the button.
+
+> **NOTE**
+>
+> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
 
 **Since:** 11
 
@@ -260,7 +274,11 @@ Sets the minimum font scale factor for text.
 role(value: ButtonRole)
 ```
 
-Sets the role of the button. The system automatically adjusts the button background color and text color based on the enumerated value. You can also use the [backgroundColor](arkts-arkui-commonmethod-c.md#backgroundcolor-1), [fontColor](ButtonAttribute#fontColor), and [buttonStyle](ButtonAttribute#buttonStyle) APIs to set the background color and text color. The actual displayed effect will be determined by the last setting.
+Sets the role of the button. The system automatically adjusts the button background color and text color based on
+the enumerated value. You can also use the
+[backgroundColor](arkts-arkui-commonmethod-c.md#backgroundcolor-1),
+[fontColor](ButtonAttribute#fontColor), and [buttonStyle](ButtonAttribute#buttonStyle) APIs to set the
+background color and text color. The actual displayed effect will be determined by the last setting.
 
 **Since:** 12
 

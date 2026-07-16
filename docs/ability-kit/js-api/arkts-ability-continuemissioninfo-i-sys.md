@@ -1,6 +1,8 @@
 # ContinueMissionInfo (System API)
 
-The module defines the parameters required for initiating mission continuation with the bundle name specified. For details about mission continuation, see [continueMission](arkts-ability-continuemission-f-sys.md#continuemission-3)
+The module defines the parameters required for initiating mission continuation with the bundle name specified. For
+details about mission continuation, see
+[continueMission](arkts-ability-continuemission-f-sys.md#continuemission-3)
 
 **Since:** 10
 
@@ -68,7 +70,8 @@ ID of the target device.
 srcBundleName?: string
 ```
 
-Bundle name of the source application to which the mission belongs. The value is the same as that of **bundleName** by default.
+Bundle name of the source application to which the mission belongs. The value is the same as that of **bundleName**
+by default.
 
 **Type:** string
 

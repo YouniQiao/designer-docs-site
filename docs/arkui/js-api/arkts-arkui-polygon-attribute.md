@@ -14,7 +14,9 @@ In addition to the [universal attributes](arkts-arkui-commonmethod-c.md), the fo
 points(value: Array<any>)
 ```
 
-Sets the vertex coordinates of the polygon. This attribute can be dynamically set using [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) . Invalid values are treated as the default value.
+Sets the vertex coordinates of the polygon. This attribute can be dynamically set using
+[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)
+. Invalid values are treated as the default value.
 
 **Since:** 7
 

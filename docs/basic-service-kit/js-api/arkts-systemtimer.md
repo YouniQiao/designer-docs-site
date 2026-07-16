@@ -1,6 +1,7 @@
 # @ohos.systemTimer
 
-The **systemTimer** module provides system timer features. You can use the APIs of this module to implement the alarm clock and other timer services.
+The **systemTimer** module provides system timer features. You can use the APIs of this module to implement the alarm
+clock and other timer services.
 
 **Since:** 7
 
@@ -21,8 +22,8 @@ import { systemTimer } from '@kit.BasicServicesKit';
 
 | Name | Description |
 | --- | --- |
-| [createTimer](arkts-basicservices-createtimer-f-sys.md#createtimer-1) | Creates a timer. This API uses an asynchronous callback to return the result. &gt; **NOTE** &gt; &gt; This API must be used together with &gt; [systemTimer.destroyTimer](arkts-basicservices-destroytimer-f-sys.md#destroytimer-1). Otherwise &gt; , memory leakage occurs. |
-| [createTimer](arkts-basicservices-createtimer-f-sys.md#createtimer-2) | Creates a timer. This API uses a promise to return the timer ID. &gt; **NOTE** &gt; &gt; This API must be used together with &gt; [systemTimer.destroyTimer](arkts-basicservices-destroytimer-f-sys.md#destroytimer-1). Otherwise &gt; , memory leakage occurs. |
+| [createTimer](arkts-basicservices-createtimer-f-sys.md#createtimer-1) | Creates a timer. This API uses an asynchronous callback to return the result.&gt; **NOTE**&gt;&gt; This API must be used together with &gt; [systemTimer.destroyTimer](arkts-basicservices-destroytimer-f-sys.md#destroytimer-1). Otherwise&gt; , memory leakage occurs. |
+| [createTimer](arkts-basicservices-createtimer-f-sys.md#createtimer-2) | Creates a timer. This API uses a promise to return the timer ID.&gt; **NOTE**&gt;&gt; This API must be used together with &gt; [systemTimer.destroyTimer](arkts-basicservices-destroytimer-f-sys.md#destroytimer-1). Otherwise&gt; , memory leakage occurs. |
 | [destroyTimer](arkts-basicservices-destroytimer-f-sys.md#destroytimer-1) | Destroys a timer. This API uses an asynchronous callback to return the result. |
 | [destroyTimer](arkts-basicservices-destroytimer-f-sys.md#destroytimer-2) | Destroys a timer. This API uses a promise to return the result. |
 | [startTimer](arkts-basicservices-starttimer-f-sys.md#starttimer-1) | Starts a timer. This API uses an asynchronous callback to return the result. |

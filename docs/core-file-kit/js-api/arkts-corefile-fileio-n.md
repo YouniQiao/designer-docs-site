@@ -9,7 +9,7 @@ FileIO
 ## Modules to Import
 
 ```TypeScript
-import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@ohos.file.fs';
+import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
 ## Summary
@@ -18,5 +18,5 @@ import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventList
 
 | Name | Description |
 | --- | --- |
-| [OpenMode](arkts-corefile-fileio-openmode-n.md) | Mode Indicates the open flags. |
+| [OpenMode](arkts-corefile-openmode-n.md) | Mode Indicates the open flags. |
 

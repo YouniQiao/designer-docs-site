@@ -43,7 +43,7 @@
 | [queryContact](arkts-contacts-querycontact-f.md#querycontact-8) | 根据key、holder和attrs查询联系人。使用callback异步回调。 |
 | [queryContact](arkts-contacts-querycontact-f.md#querycontact-9) | 根据key、holder和attrs查询联系人。使用Promise异步回调。 |
 | [queryContact](arkts-contacts-querycontact-f.md#querycontact-10) | 根据key、holder和attrs查询联系人。使用Promise异步回调。 |
-| [queryContactSyncInfo](arkts-contacts-querycontactsyncinfo-f.md#querycontactsyncinfo-1) | 查询调用应用程序正在进行的联系人同步信息。 如果返回的联系人同步信息为空，则调用方不进行联系人同步或联系人同步已完成。 |
+| [queryContactSyncInfo](arkts-contacts-querycontactsyncinfo-f.md#querycontactsyncinfo-1) | 查询调用应用程序正在进行的联系人同步信息。如果返回的联系人同步信息为空，则调用方不进行联系人同步或联系人同步已完成。 |
 | [queryContacts](arkts-contacts-querycontacts-f.md#querycontacts-1) | 查询所有联系人。使用callback异步回调。 |
 | [queryContacts](arkts-contacts-querycontacts-f.md#querycontacts-2) | 查询所有联系人。使用callback异步回调。 |
 | [queryContacts](arkts-contacts-querycontacts-f.md#querycontacts-3) | 根据holder查询所有联系人。使用callback异步回调。 |
@@ -54,26 +54,26 @@
 | [queryContacts](arkts-contacts-querycontacts-f.md#querycontacts-8) | 根据holder和attrs查询所有联系人。使用callback异步回调。 |
 | [queryContacts](arkts-contacts-querycontacts-f.md#querycontacts-9) | 根据holder和attrs查询所有联系人。使用Promise异步回调。 |
 | [queryContacts](arkts-contacts-querycontacts-f.md#querycontacts-10) | 根据holder和attrs查询所有联系人。使用Promise异步回调。 |
-| [queryContactsByEmail](arkts-contacts-querycontactsbyemail-f.md#querycontactsbyemail-1) | 根据email查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用 [queryContact](arkts-contacts-querycontact-f.md#querycontact-8) 接口，根据该接口返回的属性key查询。 |
-| [queryContactsByEmail](arkts-contacts-querycontactsbyemail-f.md#querycontactsbyemail-2) | 根据email查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用 [queryContact](arkts-contacts-querycontact-f.md#querycontact-8) 接口，根据该接口返回的属性key查询。 |
-| [queryContactsByEmail](arkts-contacts-querycontactsbyemail-f.md#querycontactsbyemail-3) | 根据email和holder查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用 [queryContact](arkts-contacts-querycontact-f.md#querycontact-8) 接口，根据该接口返回的属性key查询。 |
-| [queryContactsByEmail](arkts-contacts-querycontactsbyemail-f.md#querycontactsbyemail-4) | 根据email和holder查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用 [queryContact](arkts-contacts-querycontact-f.md#querycontact-8) 接口，根据该接口返回的属性key查询。 |
-| [queryContactsByEmail](arkts-contacts-querycontactsbyemail-f.md#querycontactsbyemail-5) | 根据email和attrs查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用 [queryContact](arkts-contacts-querycontact-f.md#querycontact-8) 接口，根据该接口返回的属性key查询。 |
-| [queryContactsByEmail](arkts-contacts-querycontactsbyemail-f.md#querycontactsbyemail-6) | 根据email和attrs查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用 [queryContact](arkts-contacts-querycontact-f.md#querycontact-8) 接口，根据该接口返回的属性key查询。 |
-| [queryContactsByEmail](arkts-contacts-querycontactsbyemail-f.md#querycontactsbyemail-7) | 根据email、holder和attrs查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用 [queryContact](arkts-contacts-querycontact-f.md#querycontact-8) 接口，根据该接口返回的属性key查询。 |
-| [queryContactsByEmail](arkts-contacts-querycontactsbyemail-f.md#querycontactsbyemail-8) | 根据email、holder和attrs查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用 [queryContact](arkts-contacts-querycontact-f.md#querycontact-8) 接口，根据该接口返回的属性key查询。 |
-| [queryContactsByEmail](arkts-contacts-querycontactsbyemail-f.md#querycontactsbyemail-9) | 根据email、holder和attrs查询联系人。使用Promise异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用 [queryContact](arkts-contacts-querycontact-f.md#querycontact-8) 接口，根据该接口返回的属性key查询。 |
-| [queryContactsByEmail](arkts-contacts-querycontactsbyemail-f.md#querycontactsbyemail-10) | 根据email、holder和attrs查询联系人。使用Promise异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用 [queryContact](arkts-contacts-querycontact-f.md#querycontact-8) 接口，根据该接口返回的属性key查询。 |
-| [queryContactsByPhoneNumber](arkts-contacts-querycontactsbyphonenumber-f.md#querycontactsbyphonenumber-1) | 根据电话号码查询联系人。使用callback异步回调。该接口仅返回联系人信息中的id、key、phoneNumbers属性。如果要查询联系人的所有信息，建议使用 [queryContact](arkts-contacts-querycontact-f.md#querycontact-8) 接口，根据该接口返回的属性key查询。应用在后台调用此接口获取联系人信息必须要申请对应的长时任务。 |
-| [queryContactsByPhoneNumber](arkts-contacts-querycontactsbyphonenumber-f.md#querycontactsbyphonenumber-2) | 根据电话号码查询联系人。使用callback异步回调。该接口仅返回联系人信息中的id、key、phoneNumbers属性。如果要查询联系人的所有信息，建议使用 [queryContact](arkts-contacts-querycontact-f.md#querycontact-8) 接口，根据该接口返回的属性key查询。应用在后台调用此接口获取联系人信息必须要申请对应的长时任务。 |
-| [queryContactsByPhoneNumber](arkts-contacts-querycontactsbyphonenumber-f.md#querycontactsbyphonenumber-3) | 根据电话号码和holder查询联系人，使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、phoneNumbers属性。如果要查询联系人的所有信息，建议使用 [queryContact](arkts-contacts-querycontact-f.md#querycontact-8) 接口，根据该接口返回的属性key查询。应用在后台调用此接口获取联系人信息必须要申请对应的长时任务。 |
-| [queryContactsByPhoneNumber](arkts-contacts-querycontactsbyphonenumber-f.md#querycontactsbyphonenumber-4) | 根据电话号码和holder查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、phoneNumbers属性。如果要查询联系人的所有信息，建议使用 [queryContact](arkts-contacts-querycontact-f.md#querycontact-8) 接口，根据该接口返回的属性key查询。应用在后台调用此接口获取联系人信息必须要申请对应的长时任务。 |
-| [queryContactsByPhoneNumber](arkts-contacts-querycontactsbyphonenumber-f.md#querycontactsbyphonenumber-5) | 根据电话号码和attrs查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、phoneNumbers属性。如果要查询联系人的所有信息，建议使用 [queryContact](arkts-contacts-querycontact-f.md#querycontact-8) 接口，根据该接口返回的属性key查询。应用在后台调用此接口获取联系人信息必须要申请对应的长时任务。 |
-| [queryContactsByPhoneNumber](arkts-contacts-querycontactsbyphonenumber-f.md#querycontactsbyphonenumber-6) | 根据电话号码和attrs查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、phoneNumbers属性。如果要查询联系人的所有信息，建议使用 [queryContact](arkts-contacts-querycontact-f.md#querycontact-8) 接口，根据该接口返回的属性key查询。应用在后台调用此接口获取联系人信息必须要申请对应的长时任务。 |
-| [queryContactsByPhoneNumber](arkts-contacts-querycontactsbyphonenumber-f.md#querycontactsbyphonenumber-7) | 根据电话号码、holder和attrs查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、phoneNumbers属性。如果要查询联系人的所有信息，建议使用 [queryContact](arkts-contacts-querycontact-f.md#querycontact-8) 接口，根据该接口返回的属性key查询。应用在后台调用此接口获取联系人信息必须要申请对应的长时任务。 |
-| [queryContactsByPhoneNumber](arkts-contacts-querycontactsbyphonenumber-f.md#querycontactsbyphonenumber-8) | 根据电话号码、holder和attrs查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、phoneNumbers属性。如果要查询联系人的所有信息，建议使用 [queryContact](arkts-contacts-querycontact-f.md#querycontact-8) 接口，根据该接口返回的属性key查询。应用在后台调用此接口获取联系人信息必须要申请对应的长时任务。 |
-| [queryContactsByPhoneNumber](arkts-contacts-querycontactsbyphonenumber-f.md#querycontactsbyphonenumber-9) | 根据电话号码、holder和attrs查询联系人。使用Promise异步回调。该接口返回的列表仅包含联系人信息中的id、key、phoneNumbers属性。如果要查询联系人的所有信息，建议使用 [queryContact](arkts-contacts-querycontact-f.md#querycontact-8) 接口，根据该接口返回的属性key查询。应用在后台调用此接口获取联系人信息必须要申请对应的长时任务。 |
-| [queryContactsByPhoneNumber](arkts-contacts-querycontactsbyphonenumber-f.md#querycontactsbyphonenumber-10) | 根据电话号码、holder和attrs查询联系人。使用Promise异步回调。该接口返回的列表仅包含联系人信息中的id、key、phoneNumbers属性。如果要查询联系人的所有信息，建议使用 [queryContact](arkts-contacts-querycontact-f.md#querycontact-8) 接口，根据该接口返回的属性key查询。应用在后台调用此接口获取联系人信息必须要申请对应的长时任务。 |
+| [queryContactsByEmail](arkts-contacts-querycontactsbyemail-f.md#querycontactsbyemail-1) | 根据email查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用[queryContact](arkts-contacts-querycontact-f.md#querycontact-8)接口，根据该接口返回的属性key查询。 |
+| [queryContactsByEmail](arkts-contacts-querycontactsbyemail-f.md#querycontactsbyemail-2) | 根据email查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用[queryContact](arkts-contacts-querycontact-f.md#querycontact-8)接口，根据该接口返回的属性key查询。 |
+| [queryContactsByEmail](arkts-contacts-querycontactsbyemail-f.md#querycontactsbyemail-3) | 根据email和holder查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用[queryContact](arkts-contacts-querycontact-f.md#querycontact-8)接口，根据该接口返回的属性key查询。 |
+| [queryContactsByEmail](arkts-contacts-querycontactsbyemail-f.md#querycontactsbyemail-4) | 根据email和holder查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用[queryContact](arkts-contacts-querycontact-f.md#querycontact-8)接口，根据该接口返回的属性key查询。 |
+| [queryContactsByEmail](arkts-contacts-querycontactsbyemail-f.md#querycontactsbyemail-5) | 根据email和attrs查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用[queryContact](arkts-contacts-querycontact-f.md#querycontact-8)接口，根据该接口返回的属性key查询。 |
+| [queryContactsByEmail](arkts-contacts-querycontactsbyemail-f.md#querycontactsbyemail-6) | 根据email和attrs查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用[queryContact](arkts-contacts-querycontact-f.md#querycontact-8)接口，根据该接口返回的属性key查询。 |
+| [queryContactsByEmail](arkts-contacts-querycontactsbyemail-f.md#querycontactsbyemail-7) | 根据email、holder和attrs查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用[queryContact](arkts-contacts-querycontact-f.md#querycontact-8)接口，根据该接口返回的属性key查询。 |
+| [queryContactsByEmail](arkts-contacts-querycontactsbyemail-f.md#querycontactsbyemail-8) | 根据email、holder和attrs查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用[queryContact](arkts-contacts-querycontact-f.md#querycontact-8)接口，根据该接口返回的属性key查询。 |
+| [queryContactsByEmail](arkts-contacts-querycontactsbyemail-f.md#querycontactsbyemail-9) | 根据email、holder和attrs查询联系人。使用Promise异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用[queryContact](arkts-contacts-querycontact-f.md#querycontact-8)接口，根据该接口返回的属性key查询。 |
+| [queryContactsByEmail](arkts-contacts-querycontactsbyemail-f.md#querycontactsbyemail-10) | 根据email、holder和attrs查询联系人。使用Promise异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用[queryContact](arkts-contacts-querycontact-f.md#querycontact-8)接口，根据该接口返回的属性key查询。 |
+| [queryContactsByPhoneNumber](arkts-contacts-querycontactsbyphonenumber-f.md#querycontactsbyphonenumber-1) | 根据电话号码查询联系人。使用callback异步回调。该接口仅返回联系人信息中的id、key、phoneNumbers属性。如果要查询联系人的所有信息，建议使用[queryContact](arkts-contacts-querycontact-f.md#querycontact-8)接口，根据该接口返回的属性key查询。应用在后台调用此接口获取联系人信息必须要申请对应的长时任务。 |
+| [queryContactsByPhoneNumber](arkts-contacts-querycontactsbyphonenumber-f.md#querycontactsbyphonenumber-2) | 根据电话号码查询联系人。使用callback异步回调。该接口仅返回联系人信息中的id、key、phoneNumbers属性。如果要查询联系人的所有信息，建议使用[queryContact](arkts-contacts-querycontact-f.md#querycontact-8)接口，根据该接口返回的属性key查询。应用在后台调用此接口获取联系人信息必须要申请对应的长时任务。 |
+| [queryContactsByPhoneNumber](arkts-contacts-querycontactsbyphonenumber-f.md#querycontactsbyphonenumber-3) | 根据电话号码和holder查询联系人，使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、phoneNumbers属性。如果要查询联系人的所有信息，建议使用[queryContact](arkts-contacts-querycontact-f.md#querycontact-8)接口，根据该接口返回的属性key查询。应用在后台调用此接口获取联系人信息必须要申请对应的长时任务。 |
+| [queryContactsByPhoneNumber](arkts-contacts-querycontactsbyphonenumber-f.md#querycontactsbyphonenumber-4) | 根据电话号码和holder查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、phoneNumbers属性。如果要查询联系人的所有信息，建议使用[queryContact](arkts-contacts-querycontact-f.md#querycontact-8)接口，根据该接口返回的属性key查询。应用在后台调用此接口获取联系人信息必须要申请对应的长时任务。 |
+| [queryContactsByPhoneNumber](arkts-contacts-querycontactsbyphonenumber-f.md#querycontactsbyphonenumber-5) | 根据电话号码和attrs查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、phoneNumbers属性。如果要查询联系人的所有信息，建议使用[queryContact](arkts-contacts-querycontact-f.md#querycontact-8)接口，根据该接口返回的属性key查询。应用在后台调用此接口获取联系人信息必须要申请对应的长时任务。 |
+| [queryContactsByPhoneNumber](arkts-contacts-querycontactsbyphonenumber-f.md#querycontactsbyphonenumber-6) | 根据电话号码和attrs查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、phoneNumbers属性。如果要查询联系人的所有信息，建议使用[queryContact](arkts-contacts-querycontact-f.md#querycontact-8)接口，根据该接口返回的属性key查询。应用在后台调用此接口获取联系人信息必须要申请对应的长时任务。 |
+| [queryContactsByPhoneNumber](arkts-contacts-querycontactsbyphonenumber-f.md#querycontactsbyphonenumber-7) | 根据电话号码、holder和attrs查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、phoneNumbers属性。如果要查询联系人的所有信息，建议使用[queryContact](arkts-contacts-querycontact-f.md#querycontact-8)接口，根据该接口返回的属性key查询。应用在后台调用此接口获取联系人信息必须要申请对应的长时任务。 |
+| [queryContactsByPhoneNumber](arkts-contacts-querycontactsbyphonenumber-f.md#querycontactsbyphonenumber-8) | 根据电话号码、holder和attrs查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、phoneNumbers属性。如果要查询联系人的所有信息，建议使用[queryContact](arkts-contacts-querycontact-f.md#querycontact-8)接口，根据该接口返回的属性key查询。应用在后台调用此接口获取联系人信息必须要申请对应的长时任务。 |
+| [queryContactsByPhoneNumber](arkts-contacts-querycontactsbyphonenumber-f.md#querycontactsbyphonenumber-9) | 根据电话号码、holder和attrs查询联系人。使用Promise异步回调。该接口返回的列表仅包含联系人信息中的id、key、phoneNumbers属性。如果要查询联系人的所有信息，建议使用[queryContact](arkts-contacts-querycontact-f.md#querycontact-8)接口，根据该接口返回的属性key查询。应用在后台调用此接口获取联系人信息必须要申请对应的长时任务。 |
+| [queryContactsByPhoneNumber](arkts-contacts-querycontactsbyphonenumber-f.md#querycontactsbyphonenumber-10) | 根据电话号码、holder和attrs查询联系人。使用Promise异步回调。该接口返回的列表仅包含联系人信息中的id、key、phoneNumbers属性。如果要查询联系人的所有信息，建议使用[queryContact](arkts-contacts-querycontact-f.md#querycontact-8)接口，根据该接口返回的属性key查询。应用在后台调用此接口获取联系人信息必须要申请对应的长时任务。 |
 | [queryContactsCount](arkts-contacts-querycontactscount-f.md#querycontactscount-1) | 查询所有联系人的数量。使用Promise异步回调。 |
 | [queryGroups](arkts-contacts-querygroups-f.md#querygroups-1) | 查询联系人的所有群组。使用callback异步回调。 |
 | [queryGroups](arkts-contacts-querygroups-f.md#querygroups-2) | 查询联系人的所有群组。使用callback异步回调。 |
@@ -117,7 +117,7 @@
 | 名称 | 说明 |
 | --- | --- |
 | [Contact](arkts-contacts-contact-c.md) | 联系人对象类。 |
-| [ContactAttributes](arkts-contacts-contactattributes-c.md) | 联系人属性列表，一般作为入参用来标识希望查询的联系人属性。 当传入为null时，默认查询全部属性。 |
+| [ContactAttributes](arkts-contacts-contactattributes-c.md) | 联系人属性列表，一般作为入参用来标识希望查询的联系人属性。当传入为null时，默认查询全部属性。 |
 | [Email](arkts-contacts-email-c.md) | 联系人的邮箱。 |
 | [Event](arkts-contacts-event-c.md) | 联系人事件类。 |
 | [Group](arkts-contacts-group-c.md) | 联系人的群组类。 |
@@ -128,7 +128,7 @@
 | [Note](arkts-contacts-note-c.md) | 联系人的备注类。 |
 | [Organization](arkts-contacts-organization-c.md) | 联系人的组织类。 |
 | [PhoneNumber](arkts-contacts-phonenumber-c.md) | 联系人电话号码类。 |
-| [Portrait](arkts-contacts-portrait-c.md) | 联系人的头像类。 @link @ohos.multimedia.image:image.PixelMap}格式设置联系人头像资源(暂不支持通过 &gt; [addContactViaUI](arkts-contacts-addcontactviaui-f.md#addcontactviaui-1)、 &gt; [saveToExistingContactViaUI](arkts-contacts-savetoexistingcontactviaui-f.md#savetoexistingcontactviaui-1)接口设置)。 &gt; &gt; uri为可访问的联系人头像文件地址，[PixelMap](../../apis-image-kit/arkts-apis/arkts-image-pixelmap-i.md)为通过联系人头像资源生成的 &gt; [PixelMap](../../apis-image-kit/arkts-apis/arkts-image-pixelmap-i.md)对象。 &gt; &gt; 从API version 22开始，支持通过uri格式读取联系人头像资源，该格式仅支持以 &gt; [fs.open](../../apis-core-file-kit/arkts-apis/arkts-corefile-file-fs-open-f.md#open-1)方式打开，无法直接在Image组件内显示，需读取后转换为 &gt; [PixelMap](../../apis-image-kit/arkts-apis/arkts-image-pixelmap-i.md)格式显示。 |
+| [Portrait](arkts-contacts-portrait-c.md) | 联系人的头像类。@link @ohos.multimedia.image:image.PixelMap}格式设置联系人头像资源(暂不支持通过&gt; [addContactViaUI](arkts-contacts-addcontactviaui-f.md#addcontactviaui-1)、&gt; [saveToExistingContactViaUI](arkts-contacts-savetoexistingcontactviaui-f.md#savetoexistingcontactviaui-1)接口设置)。&gt; &gt; uri为可访问的联系人头像文件地址，[PixelMap](../../apis-image-kit/arkts-apis/arkts-image-pixelmap-i.md)为通过联系人头像资源生成的&gt; [PixelMap](../../apis-image-kit/arkts-apis/arkts-image-pixelmap-i.md)对象。&gt; &gt; 从API version 22开始，支持通过uri格式读取联系人头像资源，该格式仅支持以&gt; [fs.open](../../apis-core-file-kit/arkts-apis/arkts-corefile-file-fs-open-f.md#open-1)方式打开，无法直接在Image组件内显示，需读取后转换为&gt; [PixelMap](../../apis-image-kit/arkts-apis/arkts-image-pixelmap-i.md)格式显示。 |
 | [PostalAddress](arkts-contacts-postaladdress-c.md) | 联系人的邮政地址类。 |
 | [Relation](arkts-contacts-relation-c.md) | 联系人的关系类。 |
 | [SipAddress](arkts-contacts-sipaddress-c.md) | 联系人的会话发起协议(SIP)地址类。 |
@@ -141,7 +141,7 @@
 | [ContactSelectionFilter](arkts-contacts-contactselectionfilter-i.md) | 联系人查询过滤器。 |
 | [ContactSelectionOptions](arkts-contacts-contactselectionoptions-i.md) | 选择联系人条件。 |
 | [ContactSyncInfo](arkts-contacts-contactsyncinfo-i.md) | 调用应用程序相关的联系人同步的信息。 |
-| [ContactSyncProgress](arkts-contacts-contactsyncprogress-i.md) | 联系人同步进度的信息。 包含同步ID、当前批次和总批次。 |
+| [ContactSyncProgress](arkts-contacts-contactsyncprogress-i.md) | 联系人同步进度的信息。包含同步ID、当前批次和总批次。 |
 | [DataFilter](arkts-contacts-datafilter-i.md) | 联系人数据过滤项。 |
 | [FilterClause](arkts-contacts-filterclause-i.md) | 联系人过滤条件。多个筛选条件之间是“或者”的关系，如果参数是数组类型，数组最多只能包含3个元素。 |
 | [FilterOptions](arkts-contacts-filteroptions-i.md) | 联系人过滤参数。 |
@@ -150,7 +150,7 @@
 
 | 名称 | 说明 |
 | --- | --- |
-| [Attribute](arkts-contacts-attribute-e.md) | 枚举，类型为number。联系人属性列表。 通过JSON格式创建数据。 |
+| [Attribute](arkts-contacts-attribute-e.md) | 枚举，类型为number。联系人属性列表。通过JSON格式创建数据。 |
 | [ContactSyncMode](arkts-contacts-contactsyncmode-e.md) | 同步模式的类型。 |
 | [DataField](arkts-contacts-datafield-e.md) | 枚举，联系人数据字段。 |
 | [FilterCondition](arkts-contacts-filtercondition-e.md) | 枚举，过滤条件。 |

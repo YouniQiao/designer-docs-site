@@ -6,15 +6,15 @@
 
 | Name | Description |
 | --- | --- |
-| [BloomSettings](arkts-bloomsettings-i.md) | 定义泛光参数. |
-| [ColorFringeSettings](arkts-colorfringesettings-i.md) | 定义色晕参数. |
-| [PostProcessSettings](arkts-postprocesssettings-i.md) | 定义后处理设置. |
-| [ToneMappingSettings](arkts-tonemappingsettings-i.md) | 定义色调映射参数. |
-| [VignetteSettings](arkts-vignettesettings-i.md) | 定义暗角参数. |
+| [BloomSettings](arkts-arkgraphics3d-bloomsettings-i.md) | Defines bloom parameters. |
+| [ColorFringeSettings](arkts-arkgraphics3d-colorfringesettings-i.md) | Defines color fringe parameters. |
+| [PostProcessSettings](arkts-arkgraphics3d-postprocesssettings-i.md) | Defines post processing settings. |
+| [ToneMappingSettings](arkts-arkgraphics3d-tonemappingsettings-i.md) | Defines tone mapping parameters. |
+| [VignetteSettings](arkts-arkgraphics3d-vignettesettings-i.md) | Defines vignette parameters. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [ToneMappingType](arkts-tonemappingtype-e.md) | 色调映射类型枚举. |
+| [ToneMappingType](arkts-arkgraphics3d-tonemappingtype-e.md) | The enum of tone mapping type. |
 

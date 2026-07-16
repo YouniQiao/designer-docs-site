@@ -1,6 +1,10 @@
 # @ohos.batteryStatistics
 
-The **batteryStatistics** module provides APIs for querying software and hardware power consumption statistics. > **NOTE** > > - The APIs provided by this module are system APIs.
+The **batteryStatistics** module provides APIs for querying software and hardware power consumption statistics.
+
+> **NOTE**
+>
+> - The APIs provided by this module are system APIs.
 
 **Since:** 8
 

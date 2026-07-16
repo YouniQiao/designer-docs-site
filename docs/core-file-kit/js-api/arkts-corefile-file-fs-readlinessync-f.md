@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@ohos.file.fs';
+import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
 ## readLinesSync
@@ -47,5 +47,5 @@ Reads the text content of a file line by line. This API returns the result synch
 | 13900033 | Too many symbolic links encountered |
 | 13900041 | Quota exceeded |
 | 13900042 | Unknown error |
-| 13900044 | Network is unreachable<br>**Applicable version:** 12 |
+| 13900044 | Network is unreachable<br>**Applicable version:** 12 and later |
 

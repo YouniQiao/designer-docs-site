@@ -29,7 +29,7 @@ declare function getxattrSync(path: string, key: string): string
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;<br>2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;<br>2.Incorrect parameter types. |
 | 13900002 | No such file or directory |
 | 13900007 | Arg list too long |
 | 13900012 | Permission denied |

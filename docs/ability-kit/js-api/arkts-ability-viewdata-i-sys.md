@@ -52,7 +52,8 @@ Bundle name.
 isOtherAccount: boolean
 ```
 
-Whether to display other account information saved in the password box for the user to select. **true** to display, **false** otherwise.
+Whether to display other account information saved in the password box for the user to select. **true** to display,
+**false** otherwise.
 
 **Type:** boolean
 
@@ -70,7 +71,8 @@ Whether to display other account information saved in the password box for the u
 isUserSelected: boolean
 ```
 
-Whether the content to be filled is selected by the user. **true** if the content is selected by the user, and **false** otherwise.
+Whether the content to be filled is selected by the user. **true** if the content is selected by the user, and
+**false** otherwise.
 
 **Type:** boolean
 

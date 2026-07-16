@@ -4,7 +4,8 @@
 export type SystemUpdateCallback = (data: SubscribeCallbackData) => void
 ```
 
-Defines the SystemUpdateCallback callback. type SystemUpdateCallback = (data: SubscribeCallbackData) => void
+Defines the SystemUpdateCallback callback.
+type SystemUpdateCallback = (data: SubscribeCallbackData) => void
 
 **Since:** 23
 

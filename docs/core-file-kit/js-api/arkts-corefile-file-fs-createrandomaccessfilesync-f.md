@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@ohos.file.fs';
+import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
 ## createRandomAccessFileSync
@@ -63,5 +63,5 @@ Creates a **RandomAccessFile** instance based on a file path or file object.
 | 13900038 | Value too large for defined data type |
 | 13900041 | Quota exceeded |
 | 13900042 | Unknown error |
-| 13900044 | Network is unreachable<br>**Applicable version:** 12 |
+| 13900044 | Network is unreachable<br>**Applicable version:** 12 and later |
 

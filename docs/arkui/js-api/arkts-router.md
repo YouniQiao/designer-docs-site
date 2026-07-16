@@ -12,21 +12,21 @@ import { BackRouterOptions, DisableAlertBeforeBackPageOptions, RouterOptions, Ro
 
 | Name | Description |
 | --- | --- |
-| [Router](arkts-arkui-router-c.md) | Defines the Router interface. |
+| [Router](arkts-arkui-router-c.md) | The **Router** module provides APIs to access pages through URIs. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [BackRouterOptions](arkts-arkui-backrouteroptions-i.md) | Defines the option of router back. |
-| [DisableAlertBeforeBackPageOptions](arkts-arkui-disablealertbeforebackpageoptions-i.md) | Defines the option of DisableAlertBeforeBackPage. |
-| [EnableAlertBeforeBackPageOptions](arkts-arkui-enablealertbeforebackpageoptions-i.md) | Defines the option of EnableAlertBeforeBackPage. |
-| [RouterOptions](arkts-arkui-routeroptions-i.md) | Defines the option of router. |
-| [RouterState](arkts-arkui-routerstate-i.md) | Defines the state of router. |
+| [BackRouterOptions](arkts-arkui-backrouteroptions-i.md) | Defines the parameters for routing back. |
+| [DisableAlertBeforeBackPageOptions](arkts-arkui-disablealertbeforebackpageoptions-i.md) | Defines the **DisableAlertBeforeBackPage** parameter. |
+| [EnableAlertBeforeBackPageOptions](arkts-arkui-enablealertbeforebackpageoptions-i.md) | Defines the **EnableAlertBeforeBackPage** parameter. |
+| [RouterOptions](arkts-arkui-routeroptions-i.md) | Defines the page routing parameters. |
+| [RouterState](arkts-arkui-routerstate-i.md) | Defines the routing state. |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [ParamsInterface](arkts-arkui-paramsinterface-t.md) | Define ParamsInterface. |
+| [ParamsInterface](arkts-arkui-paramsinterface-t.md) | List of routing parameters. |
 

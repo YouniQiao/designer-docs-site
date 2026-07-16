@@ -4,7 +4,8 @@
 export type EnabledSilentReminderChangedCallback = (callbackData: EnabledSilentReminderCallbackData) => void
 ```
 
-Defines a callback function to listen for the enabling state changes of the application's silent reminder. type EnabledSilentReminderChangedCallback = (callbackData: EnabledSilentReminderCallbackData) => void
+Defines a callback function to listen for the enabling state changes of the application's silent reminder.
+type EnabledSilentReminderChangedCallback = (callbackData: EnabledSilentReminderCallbackData) => void
 
 **Since:** 24
 

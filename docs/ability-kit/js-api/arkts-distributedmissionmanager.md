@@ -1,6 +1,8 @@
 # @ohos.distributedMissionManager
 
-The distributedMissionManager module implements mission management across devices. You can use the APIs provided by this module to register or unregister a mission status listener, start or stop synchronizing a remote mission list, and continue a mission on a remote device by mission ID or bundle name.
+The distributedMissionManager module implements mission management across devices. You can use the APIs provided by
+this module to register or unregister a mission status listener, start or stop synchronizing a remote mission list,
+and continue a mission on a remote device by mission ID or bundle name.
 
 **Since:** 9
 
@@ -21,10 +23,10 @@ import { distributedMissionManager } from '@kit.AbilityKit';
 
 | Name | Description |
 | --- | --- |
-| [continueMission](arkts-ability-continuemission-f-sys.md#continuemission-1) | Continues a mission on a remote device, with the mission ID specified. This API uses an asynchronous callback to return the result. |
-| [continueMission](arkts-ability-continuemission-f-sys.md#continuemission-2) | Continues a mission on a remote device, with the mission ID specified. This API uses a promise to return the result. |
-| [continueMission](arkts-ability-continuemission-f-sys.md#continuemission-3) | Continues a mission on a remote device, with the bundle name specified. This API uses an asynchronous callback to return the result. |
-| [continueMission](arkts-ability-continuemission-f-sys.md#continuemission-4) | Continues a mission on a remote device, with the bundle name specified. This API uses a promise to return the result. |
+| [continueMission](arkts-ability-continuemission-f-sys.md#continuemission-1) | Continues a mission on a remote device, with the mission ID specified. This API uses an asynchronous callback toreturn the result. |
+| [continueMission](arkts-ability-continuemission-f-sys.md#continuemission-2) | Continues a mission on a remote device, with the mission ID specified. This API uses a promise to return theresult. |
+| [continueMission](arkts-ability-continuemission-f-sys.md#continuemission-3) | Continues a mission on a remote device, with the bundle name specified. This API uses an asynchronous callback toreturn the result. |
+| [continueMission](arkts-ability-continuemission-f-sys.md#continuemission-4) | Continues a mission on a remote device, with the bundle name specified. This API uses a promise to return theresult. |
 | [off](arkts-ability-off-f-sys.md#off-1) | Unsubscribes from continuation state change events of the current mission. |
 | [on](arkts-ability-on-f-sys.md#on-1) | Subscribes to continuation state change events of the current mission. |
 | [registerMissionListener](arkts-ability-registermissionlistener-f-sys.md#registermissionlistener-1) | Registers a mission status listener. This API uses an asynchronous callback to return the result. |
@@ -62,8 +64,8 @@ import { distributedMissionManager } from '@kit.AbilityKit';
 | [ContinueCallback](arkts-ability-continuecallback-t-sys.md) | ContinueCallback registered for notify continue result. |
 | [ContinueDeviceInfo](arkts-ability-continuedeviceinfo-t-sys.md) | Parameters corresponding to continue mission. |
 | [ContinueMissionInfo](arkts-ability-continuemissioninfo-t-sys.md) | Parameters corresponding to continue mission. |
-| [MissionCallback](arkts-ability-missioncallback-t-sys.md) | Defines the callback invoked after synchronization starts. It is used as an input parameter in [registerMissionListener](registerMissionListener(parameter: MissionDeviceInfo, options: MissionCallback)) . |
-| [MissionDeviceInfo](arkts-ability-missiondeviceinfo-t-sys.md) | Defines the parameters required for registering a listener. It is used as an input parameter in [registerMissionListener](registerMissionListener(parameter: MissionDeviceInfo, options: MissionCallback)) . |
-| [MissionParameter](arkts-ability-missionparameter-t-sys.md) | Defines the parameters required for mission synchronization. It is used an input parameter in [startSyncRemoteMissions](startSyncRemoteMissions(parameter: MissionParameter)) . |
+| [MissionCallback](arkts-ability-missioncallback-t-sys.md) | Defines the callback invoked after synchronization starts. It is used as an input parameter in[registerMissionListener](registerMissionListener(parameter: MissionDeviceInfo, options: MissionCallback)). |
+| [MissionDeviceInfo](arkts-ability-missiondeviceinfo-t-sys.md) | Defines the parameters required for registering a listener. It is used as an input parameter in[registerMissionListener](registerMissionListener(parameter: MissionDeviceInfo, options: MissionCallback)). |
+| [MissionParameter](arkts-ability-missionparameter-t-sys.md) | Defines the parameters required for mission synchronization. It is used an input parameter in[startSyncRemoteMissions](startSyncRemoteMissions(parameter: MissionParameter)). |
 <!--DelEnd-->
 

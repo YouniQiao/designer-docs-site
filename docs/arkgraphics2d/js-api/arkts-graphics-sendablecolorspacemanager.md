@@ -1,6 +1,7 @@
 # @ohos.graphics.sendableColorSpaceManager
 
-The **sendableColorSpaceManager** module provides APIs for creating and managing sendable color space objects and obtaining basic attributes of sendable color spaces.
+The **sendableColorSpaceManager** module provides APIs for creating and managing sendable color space objects and
+obtaining basic attributes of sendable color spaces.
 
 **Since:** 12
 
@@ -25,7 +26,7 @@ import { sendableColorSpaceManager } from '@kit.ArkGraphics2D';
 
 | Name | Description |
 | --- | --- |
-| [ColorSpaceManager](arkts-arkgraphics2d-colorspacemanager-i.md) | Implements management of color space objects. Before calling any of the following APIs, you must use [create()](arkts-arkgraphics2d-create-f.md#create-1) to create a color space manager. |
+| [ColorSpaceManager](arkts-arkgraphics2d-colorspacemanager-i.md) | Implements management of color space objects.Before calling any of the following APIs, you must use[create()](arkts-arkgraphics2d-create-f.md#create-1) to create a colorspace manager. |
 
 ### Types
 

@@ -1,6 +1,7 @@
 # @ohos.resourceschedule.deviceStandby
 
-Provides methods for managing device standby, including the methods for querying standby status and exemption list.
+Provides methods for managing device standby,
+including the methods for querying standby status and exemption list.
 
 **Since:** 10
 

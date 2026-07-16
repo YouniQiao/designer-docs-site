@@ -1,6 +1,16 @@
 # TimePicker
 
-**TimePicker** is a component that allows users to select a time from the given range through scrolling. > **NOTE** > - Avoid changing component attributes during animation processes. > > - The maximum number of rows that can be displayed varies by screen orientation: In portrait mode, the default > number of rows is 5. In landscape mode, the number of rows depends on the system configuration. If no system > configuration is set, the default is 3 rows. To check the specific system configuration value for landscape mode, > use **$r('sys.float.ohos_id_picker_show_count_landscape')**.
+**TimePicker** is a component that allows users to select a time from the given range through scrolling.
+
+> **NOTE**
+
+> - Avoid changing component attributes during animation processes.
+>
+> - The maximum number of rows that can be displayed varies by screen orientation: In portrait mode, the default
+> number of rows is 5. In landscape mode, the number of rows depends on the system configuration. If no system
+> configuration is set, the default is 3 rows. To check the specific system configuration value for landscape mode,
+> use **$r('sys.float.ohos_id_picker_show_count_landscape')**.
+
 
 ## TimePicker
 

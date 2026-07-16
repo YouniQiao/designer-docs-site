@@ -6,7 +6,7 @@
 
 **废弃版本：** 9
 
-**替代接口：** [commonEventManager:commonEventManager](arkts-commoneventmanager.md#commoneventmanager)
+**替代接口：** [commonEventManager:commonEventManager](arkts-commoneventmanager.md)
 
 **系统能力：** SystemCapability.Notification.CommonEvent
 

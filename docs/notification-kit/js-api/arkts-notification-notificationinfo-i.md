@@ -1,6 +1,7 @@
 # NotificationInfo
 
-The **NotificationInfo** module describes the notification information delivered to the onReceiveMessage callback of ExtensionAbility for notification subscriptions.
+The **NotificationInfo** module describes the notification information delivered to the onReceiveMessage callback
+of ExtensionAbility for notification subscriptions.
 
 **Since:** 22
 
@@ -110,7 +111,8 @@ Unique identifier of the notification.
 readonly notificationSlotType: notificationManager.SlotType
 ```
 
-Notification slot type, which identifies the channel category to which the notification belongs (such as social communication, service reminder, etc.). Different slot types correspond to different reminder methods.
+Notification slot type, which identifies the channel category to which the notification belongs (such as social
+communication, service reminder, etc.). Different slot types correspond to different reminder methods.
 
 **Type:** notificationManager.SlotType
 

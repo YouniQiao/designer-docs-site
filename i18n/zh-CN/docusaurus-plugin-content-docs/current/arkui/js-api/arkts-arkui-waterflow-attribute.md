@@ -1,6 +1,10 @@
 # WaterFlow属性/事件
 
-除支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)和[滚动组件通用属性](../../../../reference/apis-arkui/arkui-ts/ts-container-scrollable-common.md#属性)外，还支持 以下属性： 除支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)和[滚动组件通用事件](../../../../reference/apis-arkui/arkui-ts/ts-container-scrollable-common.md#事件)外，还支持 以下事件：
+除支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)和[滚动组件通用属性](../../../../reference/apis-arkui/arkui-ts/ts-container-scrollable-common.md#属性)外，还支持
+以下属性：
+
+除支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)和[滚动组件通用事件](../../../../reference/apis-arkui/arkui-ts/ts-container-scrollable-common.md#事件)外，还支持
+以下事件：
 
 **继承/实现关系：** WaterFlowAttribute extends [ScrollableCommonMethod<WaterFlowAttribute>](ScrollableCommonMethod<WaterFlowAttribute>)
 
@@ -14,7 +18,11 @@
 cachedCount(value: number)
 ```
 
-设置预加载的FlowItem数量。 只在[LazyForEach](../../../../ui/rendering-control/arkts-rendering-control-lazyforeach.md)和开启了 [virtualScroll](../../../../reference/apis-arkui/arkui-ts/ts-rendering-control-repeat.md#virtualscroll)开关的 [Repeat](../../../../ui/rendering-control/arkts-new-rendering-control-repeat.md)中生效，超出显示及缓存范围的FlowItem会被释放。
+设置预加载的FlowItem数量。
+
+只在[LazyForEach](../../../../ui/rendering-control/arkts-rendering-control-lazyforeach.md)和开启了
+[virtualScroll](../../../../reference/apis-arkui/arkui-ts/ts-rendering-control-repeat.md#virtualscroll)开关的
+[Repeat](../../../../ui/rendering-control/arkts-new-rendering-control-repeat.md)中生效，超出显示及缓存范围的FlowItem会被释放。
 
 **起始版本：** 11
 
@@ -36,7 +44,13 @@ cachedCount(value: number)
 cachedCount(count: number, show: boolean)
 ```
 
-设置预加载的FlowItem数量，并配置是否显示预加载节点。 配合[clip](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-sharp-clipping.md#clip12)或 [clipContent](../../../../reference/apis-arkui/arkui-ts/ts-container-scrollable-common.md#clipcontent14)属性可以显示出预加载节点。 只在[LazyForEach](../../../../ui/rendering-control/arkts-rendering-control-lazyforeach.md)和开启了virtualScroll开关的 [Repeat](../../../../ui/rendering-control/arkts-new-rendering-control-repeat.md)中生效，超出显示及缓存范围的FlowItem会被释放。
+设置预加载的FlowItem数量，并配置是否显示预加载节点。
+
+配合[clip](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-sharp-clipping.md#clip12)或
+[clipContent](../../../../reference/apis-arkui/arkui-ts/ts-container-scrollable-common.md#clipcontent14)属性可以显示出预加载节点。
+
+只在[LazyForEach](../../../../ui/rendering-control/arkts-rendering-control-lazyforeach.md)和开启了virtualScroll开关的
+[Repeat](../../../../ui/rendering-control/arkts-new-rendering-control-repeat.md)中生效，超出显示及缓存范围的FlowItem会被释放。
 
 **起始版本：** 14
 
@@ -79,7 +93,13 @@ columnsGap(value: Length)
 columnsTemplate(value: string)
 ```
 
-设置当前瀑布流组件布局列的数量，不设置时默认1列。 例如，'1fr 1fr 2fr' 是将父组件分3列，将父组件允许的宽分为4等份，第1列占1份，第2列占1份，第3列占2份。 可使用columnsTemplate('repeat(auto-fill,track-size)')根据给定的列宽track-size自动计算列数，其中repeat、auto-fill为关键字，track-size为可设置的宽度， 支持的单位包括px、vp、%或有效数字，默认单位为vp，使用方法参见 [示例2](../../../../reference/apis-arkui/arkui-ts/ts-container-waterflow.md#示例2自动计算列数)。
+设置当前瀑布流组件布局列的数量，不设置时默认1列。
+
+例如，'1fr 1fr 2fr' 是将父组件分3列，将父组件允许的宽分为4等份，第1列占1份，第2列占1份，第3列占2份。
+
+可使用columnsTemplate('repeat(auto-fill,track-size)')根据给定的列宽track-size自动计算列数，其中repeat、auto-fill为关键字，track-size为可设置的宽度，
+支持的单位包括px、vp、%或有效数字，默认单位为vp，使用方法参见
+[示例2](../../../../reference/apis-arkui/arkui-ts/ts-container-waterflow.md#示例2自动计算列数)。
 
 **起始版本：** 9
 
@@ -99,7 +119,16 @@ columnsTemplate(value: string)
 columnsTemplate(value: string | ItemFillPolicy)
 ```
 
-设置当前瀑布流组件布局列的数量，不设置时默认1列。 当value设置为string类型时，使用方法参考 [columnsTemplate(value: string)](../../../../reference/apis-arkui/arkui-ts/ts-container-waterflow.md#columnstemplate) 。 当value设置为ItemFillPolicy类型时，将根据WaterFlow组件宽度对应[断点类型](../../../../ui/arkts-layout-development-grid-layout.md#栅格容器断点)确定列 数。 例如，ItemFillPolicy.BREAKPOINT_DEFAULT在组件宽度属于sm及更小的断点区间时显示2列，属于md断点区间时显示3列，属于lg及更大的断点区间时显示5列，且每列均为1fr。
+设置当前瀑布流组件布局列的数量，不设置时默认1列。
+
+当value设置为string类型时，使用方法参考
+[columnsTemplate(value: string)](../../../../reference/apis-arkui/arkui-ts/ts-container-waterflow.md#columnstemplate)
+。
+
+当value设置为ItemFillPolicy类型时，将根据WaterFlow组件宽度对应[断点类型](../../../../ui/arkts-layout-development-grid-layout.md#栅格容器断点)确定列
+数。
+
+例如，ItemFillPolicy.BREAKPOINT_DEFAULT在组件宽度属于sm及更小的断点区间时显示2列，属于md断点区间时显示3列，属于lg及更大的断点区间时显示5列，且每列均为1fr。
 
 **起始版本：** 22
 
@@ -121,7 +150,11 @@ columnsTemplate(value: string | ItemFillPolicy)
 enableScrollInteraction(value: boolean)
 ```
 
-设置是否支持滚动手势。 > **说明：** > > 组件无法通过鼠标按下拖动操作进行滚动。
+设置是否支持滚动手势。
+
+> **说明：**
+>
+> 组件无法通过鼠标按下拖动操作进行滚动。
 
 **起始版本：** 10
 
@@ -205,7 +238,8 @@ layoutDirection(value: FlexDirection)
 nestedScroll(value: NestedScrollOptions)
 ```
 
-设置前后两个方向的嵌套滚动模式，实现与父组件的滚动联动。使用方法参考 [嵌套滚动实现方式二](../../../../reference/apis-arkui/arkui-ts/ts-container-scroll.md#示例3嵌套滚动实现方式二)。
+设置前后两个方向的嵌套滚动模式，实现与父组件的滚动联动。使用方法参考
+[嵌套滚动实现方式二](../../../../reference/apis-arkui/arkui-ts/ts-container-scroll.md#示例3嵌套滚动实现方式二)。
 
 **起始版本：** 10
 
@@ -267,7 +301,19 @@ onReachStart(event: () => void)
 onScrollFrameBegin(event: OnScrollFrameBeginCallback)
 ```
 
-该接口回调时，事件参数传入即将发生的滑动量，事件处理函数中可根据应用场景计算实际需要的滑动量并作为事件处理函数的返回值返回，瀑布流将按照返回值的实际滑动量进行滑动。 满足以下任一条件时触发该事件： 1. 用户交互（如手指滑动、键鼠操作等）触发滚动。 2. WaterFlow惯性滚动。 3. 调用[fling](arkts-arkui-scroller-c.md#fling-1)接口触发滚动。 不触发该事件的条件： 1. 调用除[fling](arkts-arkui-scroller-c.md#fling-1)接口外的其他滚动控制接口。 2. 越界回弹。 3. 拖动滚动条。
+该接口回调时，事件参数传入即将发生的滑动量，事件处理函数中可根据应用场景计算实际需要的滑动量并作为事件处理函数的返回值返回，瀑布流将按照返回值的实际滑动量进行滑动。
+
+满足以下任一条件时触发该事件：
+
+1. 用户交互（如手指滑动、键鼠操作等）触发滚动。
+2. WaterFlow惯性滚动。
+3. 调用[fling](arkts-arkui-scroller-c.md#fling-1)接口触发滚动。
+
+不触发该事件的条件：
+
+1. 调用除[fling](arkts-arkui-scroller-c.md#fling-1)接口外的其他滚动控制接口。
+2. 越界回弹。
+3. 拖动滚动条。
 
 **起始版本：** 10
 
@@ -331,7 +377,12 @@ rowsGap(value: Length)
 rowsTemplate(value: string)
 ```
 
-设置当前瀑布流组件布局行的数量，不设置时默认1行。 例如，'1fr 1fr 2fr'是将父组件分3行，将父组件允许的高分为4等份，第1行占1份，第2行占1份，第3行占2份。 可使用rowsTemplate('repeat(auto-fill,track-size)')根据给定的行高track-size自动计算行数，其中repeat、auto-fill为关键字，track-size为可设置的高度，支持的 单位包括px、vp、%或有效数字，默认单位为vp。
+设置当前瀑布流组件布局行的数量，不设置时默认1行。
+
+例如，'1fr 1fr 2fr'是将父组件分3行，将父组件允许的高分为4等份，第1行占1份，第2行占1份，第3行占2份。
+
+可使用rowsTemplate('repeat(auto-fill,track-size)')根据给定的行高track-size自动计算行数，其中repeat、auto-fill为关键字，track-size为可设置的高度，支持的
+单位包括px、vp、%或有效数字，默认单位为vp。
 
 **起始版本：** 9
 
@@ -351,7 +402,16 @@ rowsTemplate(value: string)
 supportEmptyBranchInLazyLoading(supported: boolean | undefined)
 ```
 
-设置当前WaterFlow组件是否支持在LazyForEach或Repeat中使用if/else渲染控制语法生成不包含任何子组件的空分支节点。未设置时不支持空分支节点。此属性初次赋值后不支持更新，所以赋值后无法在支持空分支、不支持 空分支行为之间切换。 > **说明：** > > 当通过[sections](../../../../reference/apis-arkui/arkui-ts/ts-container-waterflow.md#waterflowoptions对象说明)参数设置了 > [WaterFlowSections](arkts-arkui-waterflowsections-c.md)分组，或通过 > [layoutMode](../../../../reference/apis-arkui/arkui-ts/ts-container-waterflow.md#waterflowoptions对象说明)设置 > [SLIDING_WINDOW](arkts-arkui-waterflowlayoutmode-e.md)布局模式时，supportEmptyBranchInLazyLoading设为true、false、undefined或不设置 > supportEmptyBranchInLazyLoading，空分支后的FlowItem都会显示。
+设置当前WaterFlow组件是否支持在LazyForEach或Repeat中使用if/else渲染控制语法生成不包含任何子组件的空分支节点。未设置时不支持空分支节点。此属性初次赋值后不支持更新，所以赋值后无法在支持空分支、不支持
+空分支行为之间切换。
+
+> **说明：**
+>
+> 当通过[sections](../../../../reference/apis-arkui/arkui-ts/ts-container-waterflow.md#waterflowoptions对象说明)参数设置了
+> [WaterFlowSections](arkts-arkui-waterflowsections-c.md)分组，或通过
+> [layoutMode](../../../../reference/apis-arkui/arkui-ts/ts-container-waterflow.md#waterflowoptions对象说明)设置
+> [SLIDING_WINDOW](arkts-arkui-waterflowlayoutmode-e.md)布局模式时，supportEmptyBranchInLazyLoading设为true、false、undefined或不设置
+> supportEmptyBranchInLazyLoading，空分支后的FlowItem都会显示。
 
 **起始版本：** 26.0.0
 

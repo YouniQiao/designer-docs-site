@@ -1,6 +1,11 @@
 # UIServiceHostProxy（系统接口）
 
-UIServiceHostProxy提供代理能力，可以将数据从 [UIServiceExtension](arkts-ability-uiserviceextensionability-c-sys.md)服务端发送到客户端。 > **说明：** > > - 本模块接口需要在主线程中使用，不要在Worker、TaskPool等子线程中使用。
+UIServiceHostProxy提供代理能力，可以将数据从
+[UIServiceExtension](arkts-ability-uiserviceextensionability-c-sys.md)服务端发送到客户端。
+
+> **说明：**
+>
+> - 本模块接口需要在主线程中使用，不要在Worker、TaskPool等子线程中使用。
 
 **起始版本：** 14
 

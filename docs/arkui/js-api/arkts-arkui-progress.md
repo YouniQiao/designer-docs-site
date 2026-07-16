@@ -1,6 +1,8 @@
 # Progress
 
-The **Progress** component represents a progress indicator that displays the progress of content loading or an operation.
+The **Progress** component represents a progress indicator that displays the progress of content loading or an
+operation.
+
 
 ## Progress
 

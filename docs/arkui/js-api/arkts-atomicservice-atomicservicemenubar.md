@@ -8,9 +8,11 @@ import { AtomicServiceMenuBar } from '@kit.ArkUI';
 
 ## Summary
 
-### Classes
+<!--Del-->
+### Classes（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[AtomicServiceMenuBar](arkts-atomicservicemenubar-c.md) | Provide configuration capabilities for the menuBar of atomicservice |
+| [AtomicServiceMenuBar](arkts-arkui-atomicservicemenubar-c-sys.md) | Provide configuration capabilities for the menuBar of atomicservice |
+<!--DelEnd-->
 

@@ -1,6 +1,10 @@
 # AbilityStateData
 
-The AbilityStateData module defines a struct for ability state information. Once a lifecycle change listener is registered using [on](arkts-ability-on-f.md#on-1) , you can obtain an instance of this struct from the input parameter of the **onAbilityStateChanged** callback of [ApplicationStateObserver](arkts-ability-applicationstateobserver-c.md).
+The AbilityStateData module defines a struct for ability state information. Once a lifecycle change listener is
+registered using
+[on](arkts-ability-on-f.md#on-1)
+, you can obtain an instance of this struct from the input parameter of the **onAbilityStateChanged** callback of
+[ApplicationStateObserver](arkts-ability-applicationstateobserver-c.md).
 
 **Since:** 14
 
@@ -26,7 +30,9 @@ Ability name.
 abilityType: number
 ```
 
-[Ability type](../../../../reference/apis-ability-kit/js-apis-inner-application-abilityStateData.md#ability-types), which can be [UIAbility](arkts-app-ability-uiability.md) or [ExtensionAbility](arkts-ability-extensionability-c.md).
+[Ability type](../../../../reference/apis-ability-kit/js-apis-inner-application-abilityStateData.md#ability-types),
+which can be [UIAbility](arkts-app-ability-uiability.md) or
+[ExtensionAbility](arkts-ability-extensionability-c.md).
 
 **Type:** number
 
@@ -82,7 +88,11 @@ Bundle name of the application that triggers the creation of the ability.
 isAtomicService: boolean
 ```
 
-Whether the ability belongs to an atomic service. **true**: The ability belongs to an atomic service. **false**: The ability does not belong to an atomic service.
+Whether the ability belongs to an atomic service.
+
+**true**: The ability belongs to an atomic service.
+
+**false**: The ability does not belong to an atomic service.
 
 **Type:** boolean
 
@@ -124,7 +134,19 @@ Process ID.
 state: number
 ```
 
-Ability state. - [Stage model](../../../../application-models/ability-terminology.md#stage-model): For the [UIAbility](arkts-app-ability-uiability.md), see [UIAbility States](../../../../reference/apis-ability-kit/js-apis-inner-application-abilityStateData.md#uiability-states) . For the [ExtensionAbility](arkts-ability-extensionability-c.md), see [ExtensionAbility States](../../../../reference/apis-ability-kit/js-apis-inner-application-abilityStateData.md#extensionability-states) . For the [UIExtensionAbility](arkts-ability-uiextensionability-c.md), see [UIExtensionAbility States](../../../../reference/apis-ability-kit/js-apis-inner-application-abilityStateData.md#uiextensionability-states) . - [FA model](../../../../application-models/ability-terminology.md#fa-model): For the ability, see [Ability States](../../../../reference/apis-ability-kit/js-apis-inner-application-abilityStateData.md#ability-states) .
+Ability state.
+
+- [Stage model](../../../../application-models/ability-terminology.md#stage-model): For the
+[UIAbility](arkts-app-ability-uiability.md), see
+[UIAbility States](../../../../reference/apis-ability-kit/js-apis-inner-application-abilityStateData.md#uiability-states)
+. For the [ExtensionAbility](arkts-ability-extensionability-c.md), see
+[ExtensionAbility States](../../../../reference/apis-ability-kit/js-apis-inner-application-abilityStateData.md#extensionability-states)
+. For the [UIExtensionAbility](arkts-ability-uiextensionability-c.md), see
+[UIExtensionAbility States](../../../../reference/apis-ability-kit/js-apis-inner-application-abilityStateData.md#uiextensionability-states)
+.
+- [FA model](../../../../application-models/ability-terminology.md#fa-model): For the ability, see
+[Ability States](../../../../reference/apis-ability-kit/js-apis-inner-application-abilityStateData.md#ability-states)
+.
 
 **Type:** number
 

@@ -14,7 +14,9 @@ In addition to the [universal attributes](arkts-arkui-commonmethod-c.md), the fo
 commands(value: ResourceStr)
 ```
 
-Sets a string of path commands that comply with the [SVG path syntax](../../../../reference/apis-arkui/arkui-ts/ts-drawing-components-path.md#svg-path-syntax). The unit is px. For details about how to convert pixel units, see [Pixel Units](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md).
+Sets a string of path commands that comply with the
+[SVG path syntax](../../../../reference/apis-arkui/arkui-ts/ts-drawing-components-path.md#svg-path-syntax). The unit
+is px. For details about how to convert pixel units, see [Pixel Units](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md).
 
 **Since:** 7
 

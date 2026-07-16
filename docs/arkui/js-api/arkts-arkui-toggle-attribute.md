@@ -1,6 +1,8 @@
 # Toggle properties/events
 
-In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following attributes are supported. In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following events are supported.
+In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following attributes are supported.
+
+In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following events are supported.
 
 **Inheritance/Implementation:** ToggleAttribute extends [CommonMethod<ToggleAttribute>](CommonMethod<ToggleAttribute>)
 
@@ -80,7 +82,8 @@ Sets the background color of the component when it is turned on.
 switchPointColor(color: ResourceColor)
 ```
 
-Sets the color of the circular slider when the component is of the **Switch** type. This attribute is valid only when **type** is set to **ToggleType.Switch**.
+Sets the color of the circular slider when the component is of the **Switch** type. This attribute is valid only
+when **type** is set to **ToggleType.Switch**.
 
 **Since:** 8
 
@@ -102,7 +105,8 @@ Sets the color of the circular slider when the component is of the **Switch** ty
 switchStyle(value: SwitchStyle)
 ```
 
-Sets the style for the component of the **Switch** type. This attribute is valid only when **type** is set to **ToggleType.Switch**.
+Sets the style for the component of the **Switch** type. This attribute is valid only when **type** is set to
+**ToggleType.Switch**.
 
 **Since:** 12
 

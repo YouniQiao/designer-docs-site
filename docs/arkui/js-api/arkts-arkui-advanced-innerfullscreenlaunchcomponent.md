@@ -3,20 +3,32 @@
 ## Modules to Import
 
 ```TypeScript
-import { InnerFullScreenLaunchComponent,LaunchController } from '@kit.ArkUI';
+import { InnerFullScreenLaunchComponent, LaunchController } from '@kit.ArkUI';
 ```
 
 ## Summary
 
-### Classes
+<!--Del-->
+### Classes（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[LaunchController](arkts-launchcontroller-c.md) | Declare type LaunchController |
+| [LaunchController](arkts-arkui-launchcontroller-c-sys.md) | Declare type LaunchController |
+<!--DelEnd-->
 
-### Types
+<!--Del-->
+### Structs（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[LaunchAtomicServiceCallback](arkts-launchatomicservicecallback-t.md) | Callback for launch atomicservice. |
+| [InnerFullScreenLaunchComponent](arkts-arkui-innerfullscreenlaunchcomponent-s-sys.md) | Declare component InnerFullScreenLaunchComponent |
+<!--DelEnd-->
+
+<!--Del-->
+### Types（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [LaunchAtomicServiceCallback](arkts-arkui-launchatomicservicecallback-t-sys.md) | Callback for launch atomicservice. |
+<!--DelEnd-->
 

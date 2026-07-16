@@ -14,25 +14,31 @@ import { opp } from '@kit.ConnectivityKit';
 
 ## Summary
 
-### Functions
+<!--Del-->
+### Functions（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[createOppServerProfile](arkts-opp-createoppserverprofile-f-sys.md#createOppServerProfile-1) | create the instance of OPP server profile. |
+| [createOppServerProfile](arkts-connectivity-createoppserverprofile-f-sys.md#createoppserverprofile-1) | create the instance of OPP server profile. |
+<!--DelEnd-->
 
-### Interfaces
-
-| Name | Description |
-| --- | --- |
-| <!--DelRow-->[FileHolder](arkts-opp-fileholder-i-sys.md) | Describes the file info for transfer |
-| [OppServerProfile](arkts-opp-oppserverprofile-i.md) | Manager OPP server profile. |
-| <!--DelRow-->[OppTransferInformation](arkts-opp-opptransferinformation-i-sys.md) | Describes the transferred file information. |
-
-### Enums
+<!--Del-->
+### Interfaces（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[DirectionType](arkts-opp-directiontype-e-sys.md) | Enum for file transfer direction. |
-| <!--DelRow-->[TransferResult](arkts-opp-transferresult-e-sys.md) | Enum for the file transfer result. |
-| <!--DelRow-->[TransferStatus](arkts-opp-transferstatus-e-sys.md) | Enum for the file transfer status. |
+| [FileHolder](arkts-connectivity-fileholder-i-sys.md) | Describes the file info for transfer |
+| [OppServerProfile](arkts-connectivity-oppserverprofile-i-sys.md) | Manager OPP server profile. |
+| [OppTransferInformation](arkts-connectivity-opptransferinformation-i-sys.md) | Describes the transferred file information. |
+<!--DelEnd-->
+
+<!--Del-->
+### Enums（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [DirectionType](arkts-connectivity-directiontype-e-sys.md) | Enum for file transfer direction. |
+| [TransferResult](arkts-connectivity-transferresult-e-sys.md) | Enum for the file transfer result. |
+| [TransferStatus](arkts-connectivity-transferstatus-e-sys.md) | Enum for the file transfer status. |
+<!--DelEnd-->
 

@@ -6,7 +6,7 @@
 
 | 名称 | 说明 |
 | --- | --- |
-| [NotificationBasicContent](arkts-notification-notificationbasiccontent-i.md) | 描述普通文本通知，用于展示标题和正文内容，是其他通知类型的基础内容结构。 其他通知类型（如长文本、多行文本、图片、实况窗）均继承本接口，在此基础上扩展各自特有字段。 |
+| [NotificationBasicContent](arkts-notification-notificationbasiccontent-i.md) | 描述普通文本通知，用于展示标题和正文内容，是其他通知类型的基础内容结构。其他通知类型（如长文本、多行文本、图片、实况窗）均继承本接口，在此基础上扩展各自特有字段。 |
 | [NotificationButton](arkts-notification-notificationbutton-i.md) | 描述通知按钮，用于在实况窗中展示可交互的按钮。 |
 | [NotificationCapsule](arkts-notification-notificationcapsule-i.md) | 描述通知胶囊，用于在实况窗中展示胶囊形态。 |
 | [NotificationContent](arkts-notification-notificationcontent-i.md) | 通知内容。 |
@@ -14,7 +14,7 @@
 | [NotificationMultiLineContent](arkts-notification-notificationmultilinecontent-i.md) | 描述多行文本通知。继承自[NotificationBasicContent](arkts-notification-notificationbasiccontent-i.md)。 |
 | [NotificationPictureContent](arkts-notification-notificationpicturecontent-i.md) | 描述附有图片的通知。继承自[NotificationBasicContent](arkts-notification-notificationbasiccontent-i.md)。 |
 | [NotificationProgress](arkts-notification-notificationprogress-i.md) | 描述通知进度，用于在实况窗中展示进度条信息。 |
-| [NotificationSystemLiveViewContent](arkts-notification-notificationsystemliveviewcontent-i.md) | 描述系统实况窗通知内容，用于在实况窗中展示实时状态信息。 不支持三方应用直接创建该类型通知，可以由系统代理创建系统实况窗类型通知后， 三方应用发布同ID的通知来更新指定内容。 继承自[NotificationBasicContent](arkts-notification-notificationbasiccontent-i.md)。 |
+| [NotificationSystemLiveViewContent](arkts-notification-notificationsystemliveviewcontent-i.md) | 描述系统实况窗通知内容，用于在实况窗中展示实时状态信息。不支持三方应用直接创建该类型通知，可以由系统代理创建系统实况窗类型通知后，三方应用发布同ID的通知来更新指定内容。继承自[NotificationBasicContent](arkts-notification-notificationbasiccontent-i.md)。 |
 | [NotificationTime](arkts-notification-notificationtime-i.md) | 描述通知计时信息。 |
 
 <!--Del-->
@@ -22,13 +22,13 @@
 
 | 名称 | 说明 |
 | --- | --- |
-| [NotificationBasicContent](arkts-notification-notificationbasiccontent-i-sys.md) | 描述普通文本通知，用于展示标题和正文内容，是其他通知类型的基础内容结构。 其他通知类型（如长文本、多行文本、图片、实况窗）均继承本接口，在此基础上扩展各自特有字段。 |
+| [NotificationBasicContent](arkts-notification-notificationbasiccontent-i-sys.md) | 描述普通文本通知，用于展示标题和正文内容，是其他通知类型的基础内容结构。其他通知类型（如长文本、多行文本、图片、实况窗）均继承本接口，在此基础上扩展各自特有字段。 |
 | [NotificationCapsule](arkts-notification-notificationcapsule-i-sys.md) | 描述通知胶囊，用于在实况窗中展示胶囊形态。 |
 | [NotificationContent](arkts-notification-notificationcontent-i-sys.md) | 通知内容。 |
 | [NotificationIconButton](arkts-notification-notificationiconbutton-i-sys.md) | 描述系统通知按钮。 |
 | [NotificationLiveViewContent](arkts-notification-notificationliveviewcontent-i-sys.md) | 描述普通实况通知。继承自[NotificationBasicContent](arkts-notification-notificationbasiccontent-i.md)。 |
 | [NotificationMultiLineContent](arkts-notification-notificationmultilinecontent-i-sys.md) | 描述多行文本通知。继承自[NotificationBasicContent](arkts-notification-notificationbasiccontent-i.md)。 |
-| [NotificationSystemLiveViewContent](arkts-notification-notificationsystemliveviewcontent-i-sys.md) | 描述系统实况窗通知内容，用于在实况窗中展示实时状态信息。 不支持三方应用直接创建该类型通知，可以由系统代理创建系统实况窗类型通知后， 三方应用发布同ID的通知来更新指定内容。 继承自[NotificationBasicContent](arkts-notification-notificationbasiccontent-i.md)。 |
+| [NotificationSystemLiveViewContent](arkts-notification-notificationsystemliveviewcontent-i-sys.md) | 描述系统实况窗通知内容，用于在实况窗中展示实时状态信息。不支持三方应用直接创建该类型通知，可以由系统代理创建系统实况窗类型通知后，三方应用发布同ID的通知来更新指定内容。继承自[NotificationBasicContent](arkts-notification-notificationbasiccontent-i.md)。 |
 <!--DelEnd-->
 
 <!--Del-->

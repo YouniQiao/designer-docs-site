@@ -14,7 +14,10 @@ Defines XComponentAttribute.
 enableAnalyzer(enable: boolean)
 ```
 
-Sets whether to enable the AI image analyzer, which supports subject recognition, text recognition, and object lookup. For the settings to take effect, this attribute must be used together with StartImageAnalyzer and StopImageAnalyzer of XComponentController. This feature cannot be used together with the overlay attribute. If both are set, the CustomBuilder attribute in overlay has no effect. This feature also depends on device capabilities.
+Sets whether to enable the AI image analyzer, which supports subject recognition, text recognition, and object lookup.
+For the settings to take effect, this attribute must be used together with StartImageAnalyzer and StopImageAnalyzer of XComponentController.
+This feature cannot be used together with the overlay attribute.
+If both are set, the CustomBuilder attribute in overlay has no effect. This feature also depends on device capabilities.
 
 **Since:** 12
 
@@ -103,7 +106,8 @@ Set hdrBrightness for XComponent.
 onDestroy(event: VoidCallback)
 ```
 
-Triggered when the plug-in is destroyed. Anonymous Object Rectification.
+Triggered when the plug-in is destroyed.
+Anonymous Object Rectification.
 
 **Since:** 18
 
@@ -123,7 +127,8 @@ Triggered when the plug-in is destroyed. Anonymous Object Rectification.
 onLoad(callback: OnNativeLoadCallback)
 ```
 
-Triggered when the plug-in is loaded. Anonymous Object Rectification.
+Triggered when the plug-in is loaded.
+Anonymous Object Rectification.
 
 **Since:** 18
 

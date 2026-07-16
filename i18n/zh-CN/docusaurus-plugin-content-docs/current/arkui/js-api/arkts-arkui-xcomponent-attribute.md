@@ -14,7 +14,10 @@
 enableAnalyzer(enable: boolean)
 ```
 
-设置是否启用AI图像分析器，支持主体识别、文字识别和查找对象。 要使设置生效，此属性必须与XComponentController的StartImageAnalyzer和StopImageAnalyzer一起使用。 此特性不能与overlay属性同时使用。 如果两者都设置，overlay中的CustomBuilder属性将不生效。此特性还依赖于设备能力。
+设置是否启用AI图像分析器，支持主体识别、文字识别和查找对象。
+要使设置生效，此属性必须与XComponentController的StartImageAnalyzer和StopImageAnalyzer一起使用。
+此特性不能与overlay属性同时使用。
+如果两者都设置，overlay中的CustomBuilder属性将不生效。此特性还依赖于设备能力。
 
 **起始版本：** 12
 
@@ -103,7 +106,8 @@ hdrBrightness(brightness: number, type?: HdrType)
 onDestroy(event: VoidCallback)
 ```
 
-当插件销毁时触发。 Anonymous Object Rectification.
+当插件销毁时触发。
+Anonymous Object Rectification.
 
 **起始版本：** 18
 
@@ -123,7 +127,8 @@ onDestroy(event: VoidCallback)
 onLoad(callback: OnNativeLoadCallback)
 ```
 
-当插件加载时触发。 Anonymous Object Rectification.
+当插件加载时触发。
+Anonymous Object Rectification.
 
 **起始版本：** 18
 

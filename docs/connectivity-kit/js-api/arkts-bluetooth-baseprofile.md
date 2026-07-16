@@ -18,20 +18,35 @@ import { baseProfile } from '@kit.ConnectivityKit';
 
 | Name | Description |
 | --- | --- |
-| [BaseProfile](arkts-baseprofile-baseprofile-i.md) | Base interface of profile. |
-| [StateChangeParam](arkts-baseprofile-statechangeparam-i.md) | Profile state change parameters. |
+| [BaseProfile](arkts-connectivity-baseprofile-i.md) | Base interface of profile. |
+| [StateChangeParam](arkts-connectivity-statechangeparam-i.md) | Profile state change parameters. |
 
-### Types
+<!--Del-->
+### Interfaces（系统接口）
 
 | Name | Description |
 | --- | --- |
-| [ProfileConnectionState](arkts-baseprofile-profileconnectionstate-t.md) | Indicate the profile connection state. |
+| [BaseProfile](arkts-connectivity-baseprofile-i-sys.md) | Base interface of profile. |
+<!--DelEnd-->
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[ConnectionStrategy](arkts-baseprofile-connectionstrategy-e-sys.md) | Enum for connection strategy of the profile |
-| [DisconnectCause](arkts-baseprofile-disconnectcause-e.md) | Enum for cause of disconnect. |
-| [PanRole](arkts-baseprofile-panrole-e.md) | Enum for PAN profile role. |
+| [DisconnectCause](arkts-connectivity-disconnectcause-e.md) | Enum for cause of disconnect. |
+| [PanRole](arkts-connectivity-panrole-e.md) | Enum for PAN profile role. |
+
+<!--Del-->
+### Enums（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [ConnectionStrategy](arkts-connectivity-connectionstrategy-e-sys.md) | Enum for connection strategy of the profile |
+<!--DelEnd-->
+
+### Types
+
+| Name | Description |
+| --- | --- |
+| [ProfileConnectionState](arkts-connectivity-profileconnectionstate-t.md) | Indicate the profile connection state. |
 

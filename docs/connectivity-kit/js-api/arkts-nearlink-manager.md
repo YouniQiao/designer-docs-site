@@ -19,7 +19,7 @@ import { manager } from '@kit.ConnectivityKit';
 | Name | Description |
 | --- | --- |
 | [getLocalName](arkts-connectivity-getlocalname-f.md#getlocalname-1) | Gets the local device's name. |
-| [getPairedDevices](arkts-connectivity-getpaireddevices-f.md#getpaireddevices-1) | Gets the list of devices that have been paired with the current device. If the user has the ohos.permission.GET_NEARLINK_PEER_MAC permission, the real device address is returned. Otherwise, a random device address is returned. |
+| [getPairedDevices](arkts-connectivity-getpaireddevices-f.md#getpaireddevices-1) | Gets the list of devices that have been paired with the current device.If the user has the ohos.permission.GET_NEARLINK_PEER_MAC permission, the real device address is returned.Otherwise, a random device address is returned. |
 | [getState](arkts-connectivity-getstate-f.md#getstate-1) | Gets the NearLink state. |
 | [isNearLinkSupported](arkts-connectivity-isnearlinksupported-f.md#isnearlinksupported-1) | Check whether the current device supports NearLink. |
 | [offStateChange](arkts-connectivity-offstatechange-f.md#offstatechange-1) | Unsubscribes from state change events. |

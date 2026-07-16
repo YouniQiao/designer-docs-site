@@ -12,7 +12,8 @@ import { PopupV2Button, PopupV2, PopupV2InitInfo } from '@kit.ArkUI';
 export declare function PopupV2(options: PopupV2InitInfo): void
 ```
 
-Build function of PopupV2. This component is implemented based on state management V2 Compared with Popup, PopupV2 offers a higher level of observation and management over data objects.
+Build function of PopupV2. This component is implemented based on state management V2
+Compared with Popup, PopupV2 offers a higher level of observation and management over data objects.
 
 **Since:** 26.0.0
 

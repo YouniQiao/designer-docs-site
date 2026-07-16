@@ -14,17 +14,21 @@ import { deviceAttest } from '@kit.BasicServicesKit';
 
 ## Summary
 
-### Functions
+<!--Del-->
+### Functions（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[getAttestStatus](arkts-deviceattest-getatteststatus-f-sys.md#getAttestStatus-1) | Obtains the AttestResultInfo object. |
-| <!--DelRow-->[getAttestStatus](arkts-deviceattest-getatteststatus-f-sys.md#getAttestStatus-2) | Obtains the AttestResultInfo object. |
-| <!--DelRow-->[getAttestStatusSync](arkts-deviceattest-getatteststatussync-f-sys.md#getAttestStatusSync-1) | Obtains the AttestResultInfo object. |
+| [getAttestStatus](arkts-basicservices-getatteststatus-f-sys.md#getatteststatus-1) | Obtains the AttestResultInfo object. |
+| [getAttestStatus](arkts-basicservices-getatteststatus-f-sys.md#getatteststatus-2) | Obtains the AttestResultInfo object. |
+| [getAttestStatusSync](arkts-basicservices-getatteststatussync-f-sys.md#getatteststatussync-1) | Obtains the AttestResultInfo object. |
+<!--DelEnd-->
 
-### Interfaces
+<!--Del-->
+### Interfaces（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[AttestResultInfo](arkts-deviceattest-attestresultinfo-i-sys.md) | Device attest result information. |
+| [AttestResultInfo](arkts-basicservices-attestresultinfo-i-sys.md) | Device attest result information. |
+<!--DelEnd-->
 

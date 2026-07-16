@@ -3,10 +3,10 @@
 ## CAPTURE_MODE_FRONT_LENS_NIGHT_VIEW
 
 ```TypeScript
-const CAPTURE_MODE_FRONT_LENS_NIGHT_VIEW = 7
+const CAPTURE_MODE_FRONT_LENS_NIGHT_VIEW : number
 ```
 
-Capture mode: night view with front lens.
+Capture mode: night view with front lens.The value is 7.
 
 **Since:** 23
 
@@ -17,10 +17,10 @@ Capture mode: night view with front lens.
 ## CAPTURE_MODE_LIGHT_GRAFFITI
 
 ```TypeScript
-const CAPTURE_MODE_LIGHT_GRAFFITI = 10
+const CAPTURE_MODE_LIGHT_GRAFFITI : number
 ```
 
-Capture mode: light graffiti.
+Capture mode: light graffiti.The value is 10.
 
 **Since:** 23
 
@@ -31,10 +31,10 @@ Capture mode: light graffiti.
 ## CAPTURE_MODE_MOVING_PHOTO
 
 ```TypeScript
-const CAPTURE_MODE_MOVING_PHOTO = 20
+const CAPTURE_MODE_MOVING_PHOTO : number
 ```
 
-Capture mode: moving photos.
+Capture mode: moving photos.The value is 20.
 
 **Since:** 23
 
@@ -45,10 +45,10 @@ Capture mode: moving photos.
 ## CAPTURE_MODE_PANORAMA
 
 ```TypeScript
-const CAPTURE_MODE_PANORAMA = 8
+const CAPTURE_MODE_PANORAMA : number
 ```
 
-Capture mode: panorama.
+Capture mode: panorama.The value is 8.
 
 **Since:** 23
 
@@ -59,10 +59,10 @@ Capture mode: panorama.
 ## CAPTURE_MODE_PORTRAIT
 
 ```TypeScript
-const CAPTURE_MODE_PORTRAIT = 23
+const CAPTURE_MODE_PORTRAIT : number
 ```
 
-Capture mode: portrait.
+Capture mode: portrait.The value is 23.
 
 **Since:** 23
 
@@ -73,10 +73,10 @@ Capture mode: portrait.
 ## CAPTURE_MODE_PROFESSIONAL
 
 ```TypeScript
-const CAPTURE_MODE_PROFESSIONAL = 2
+const CAPTURE_MODE_PROFESSIONAL : number
 ```
 
-Capture mode: professional.
+Capture mode: professional.The value is 2.
 
 **Since:** 23
 
@@ -87,10 +87,10 @@ Capture mode: professional.
 ## CAPTURE_MODE_REAR_LENS_NIGHT_VIEW
 
 ```TypeScript
-const CAPTURE_MODE_REAR_LENS_NIGHT_VIEW = 42
+const CAPTURE_MODE_REAR_LENS_NIGHT_VIEW : number
 ```
 
-Capture mode: night view with rear lens.
+Capture mode: night view with rear lens.The value is 42.
 
 **Since:** 23
 
@@ -101,10 +101,10 @@ Capture mode: night view with rear lens.
 ## CAPTURE_MODE_SILKY_WATER
 
 ```TypeScript
-const CAPTURE_MODE_SILKY_WATER = 11
+const CAPTURE_MODE_SILKY_WATER : number
 ```
 
-Capture mode: silky water.
+Capture mode: silky water.The value is 11.
 
 **Since:** 23
 
@@ -115,10 +115,10 @@ Capture mode: silky water.
 ## CAPTURE_MODE_SNAP_SHOT
 
 ```TypeScript
-const CAPTURE_MODE_SNAP_SHOT = 62
+const CAPTURE_MODE_SNAP_SHOT : number
 ```
 
-Capture mode: snap shot.
+Capture mode: snap shot.The value is 62.
 
 **Since:** 23
 
@@ -129,10 +129,10 @@ Capture mode: snap shot.
 ## CAPTURE_MODE_STAR_TRACK
 
 ```TypeScript
-const CAPTURE_MODE_STAR_TRACK = 12
+const CAPTURE_MODE_STAR_TRACK : number
 ```
 
-Capture mode: star track.
+Capture mode: star track.The value is 12.
 
 **Since:** 23
 
@@ -143,10 +143,10 @@ Capture mode: star track.
 ## CAPTURE_MODE_SUPER_MACRO
 
 ```TypeScript
-const CAPTURE_MODE_SUPER_MACRO = 47
+const CAPTURE_MODE_SUPER_MACRO : number
 ```
 
-Capture mode: super macro.
+Capture mode: super macro.The value is 47.
 
 **Since:** 23
 
@@ -157,10 +157,10 @@ Capture mode: super macro.
 ## CAPTURE_MODE_TAIL_LIGHT
 
 ```TypeScript
-const CAPTURE_MODE_TAIL_LIGHT = 9
+const CAPTURE_MODE_TAIL_LIGHT : number
 ```
 
-Capture mode: tail light.
+Capture mode: tail light.The value is 9.
 
 **Since:** 23
 
@@ -171,10 +171,10 @@ Capture mode: tail light.
 ## CAPTURE_MODE_WIDEAPERTURE
 
 ```TypeScript
-const CAPTURE_MODE_WIDEAPERTURE = 19
+const CAPTURE_MODE_WIDEAPERTURE : number
 ```
 
-Capture mode: wide aperture.
+Capture mode: wide aperture.The value is 19.
 
 **Since:** 23
 
@@ -227,10 +227,10 @@ XMP namespace: tiff.
 ## XMAGE_WATERMARK_MODE_AT_THE_BOTTOM
 
 ```TypeScript
-const XMAGE_WATERMARK_MODE_AT_THE_BOTTOM = 9
+const XMAGE_WATERMARK_MODE_AT_THE_BOTTOM : number
 ```
 
-The XMAGE watermark is at the bottom of the photo.
+The XMAGE watermark is at the bottom of the photo.The value is 9.
 
 **Since:** 23
 
@@ -241,10 +241,10 @@ The XMAGE watermark is at the bottom of the photo.
 ## XMAGE_WATERMARK_MODE_BORDER
 
 ```TypeScript
-const XMAGE_WATERMARK_MODE_BORDER = 10
+const XMAGE_WATERMARK_MODE_BORDER : number
 ```
 
-The XMAGE watermark is around the edges of the photo.
+The XMAGE watermark is around the edges of the photo.The value is 10.
 
 **Since:** 23
 

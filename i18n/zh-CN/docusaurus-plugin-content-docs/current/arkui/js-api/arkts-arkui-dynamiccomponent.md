@@ -2,13 +2,15 @@
 
 提供DynamicComponent的接口，用于渲染其他ABC的UI。
 
+
 ## DynamicComponent
 
 ```TypeScript
 DynamicComponent(options: DynamicOptions)
 ```
 
-构造DynamicComponentInterface。<br/> 在使用DynamicComponentInterface时调用。
+构造DynamicComponentInterface。<br/>
+在使用DynamicComponentInterface时调用。
 
 **起始版本：** 26.0.0
 

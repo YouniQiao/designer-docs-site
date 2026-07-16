@@ -1,6 +1,8 @@
 # UIAbilityContext
 
-UIAbilityContext是需要保存状态的[UIAbility](arkts-app-ability-uiability.md)所对应的context，继承自[Context](arkts-ability-context-depr-i.md)，提供 UIAbility的相关配置信息以及操作UIAbility和ServiceExtensionAbility的方法，如启动UIAbility，停止当前UIAbilityContext所属的UIAbility，启动、停止、连接、断开连接 ServiceExtensionAbility等。
+UIAbilityContext是需要保存状态的[UIAbility](arkts-app-ability-uiability.md)所对应的context，继承自[Context](arkts-ability-context-depr-i.md)，提供
+UIAbility的相关配置信息以及操作UIAbility和ServiceExtensionAbility的方法，如启动UIAbility，停止当前UIAbilityContext所属的UIAbility，启动、停止、连接、断开连接
+ServiceExtensionAbility等。
 
 **继承/实现关系：** UIAbilityContext extends [Context](arkts-ability-context-t.md)
 
@@ -14,7 +16,11 @@ UIAbilityContext是需要保存状态的[UIAbility](arkts-app-ability-uiability.
 backToCallerAbilityWithResult(abilityResult: AbilityResult, requestCode: string): Promise<void>
 ```
 
-当通过 [startAbilityForResult](arkts-ability-uiabilitycontext-c.md#startabilityforresult-1) 或[openLink](arkts-ability-uiabilitycontext-c.md#openlink-1)拉起目标方UIAbility，且需要目标方返回结果时，目标方可以通过该接口将结果返回并拉起调用方。与 [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1) 不同的是，本接口在返回时不会销毁当前UIAbility。使用Promise异步回调。
+当通过
+[startAbilityForResult](arkts-ability-uiabilitycontext-c.md#startabilityforresult-1)
+或[openLink](arkts-ability-uiabilitycontext-c.md#openlink-1)拉起目标方UIAbility，且需要目标方返回结果时，目标方可以通过该接口将结果返回并拉起调用方。与
+[terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)
+不同的是，本接口在返回时不会销毁当前UIAbility。使用Promise异步回调。
 
 **起始版本：** 12
 
@@ -55,7 +61,18 @@ backToCallerAbilityWithResult(abilityResult: AbilityResult, requestCode: string)
 connectAppServiceExtensionAbility(want: Want, callback: ConnectOptions): number
 ```
 
-将当前UIAbility连接到 [AppServiceExtensionAbility](../../../../reference/apis-ability-kit/js-apis-app-ability-appServiceExtensionAbility.md) 。通过返回的proxy与AppServiceExtensionAbility进行通信，以使用AppServiceExtensionAbility对外提供的能力。仅支持在主线程调用。 该接口仅在PC/2in1设备中可正常调用，在其他设备中返回801错误码。 > **说明：** > > 如果 > [AppServiceExtensionAbility](../../../../reference/apis-ability-kit/js-apis-app-ability-appServiceExtensionAbility.md) > 实例未启动，该接口的调用方必须为AppServiceExtensionAbility所属应用或者在AppServiceExtensionAbility支持的应用清单（即 > [extensionAbilities标签](../../../../quick-start/module-configuration-file.md#extensionabilities标签)的 > appIdentifierAllowList属性）中的应用。
+将当前UIAbility连接到
+[AppServiceExtensionAbility](../../../../reference/apis-ability-kit/js-apis-app-ability-appServiceExtensionAbility.md)
+。通过返回的proxy与AppServiceExtensionAbility进行通信，以使用AppServiceExtensionAbility对外提供的能力。仅支持在主线程调用。
+该接口仅在PC/2in1设备中可正常调用，在其他设备中返回801错误码。
+
+> **说明：**
+>
+> 如果
+> [AppServiceExtensionAbility](../../../../reference/apis-ability-kit/js-apis-app-ability-appServiceExtensionAbility.md)
+> 实例未启动，该接口的调用方必须为AppServiceExtensionAbility所属应用或者在AppServiceExtensionAbility支持的应用清单（即
+> [extensionAbilities标签](../../../../quick-start/module-configuration-file.md#extensionabilities标签)的
+> appIdentifierAllowList属性）中的应用。
 
 **起始版本：** 20
 
@@ -97,7 +114,12 @@ connectAppServiceExtensionAbility(want: Want, callback: ConnectOptions): number
 connectServiceExtensionAbility(want: Want, options: ConnectOptions): number
 ```
 
-将当前UIAbility连接到一个[ServiceExtensionAbility](../../../../application-models/extensionability-overview.md)，通过返回的proxy与 ServiceExtensionAbility进行通信，以使用ServiceExtensionAbility对外提供的能力。仅支持在主线程调用。 > **说明：** > > 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
+将当前UIAbility连接到一个[ServiceExtensionAbility](../../../../application-models/extensionability-overview.md)，通过返回的proxy与
+ServiceExtensionAbility进行通信，以使用ServiceExtensionAbility对外提供的能力。仅支持在主线程调用。
+
+> **说明：**
+>
+> 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
 
 **起始版本：** 9
 
@@ -143,7 +165,12 @@ connectServiceExtensionAbility(want: Want, options: ConnectOptions): number
 connectUIServiceExtensionAbility(want: Want, callback: UIServiceExtensionConnectCallback) : Promise<UIServiceProxy>
 ```
 
-连接一个UIServiceExtensionAbility。使用Promise异步回调。 该接口仅在PC/2in1设备中可正常调用，在其他设备中返回801错误码。 > **说明：** > > 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
+连接一个UIServiceExtensionAbility。使用Promise异步回调。
+该接口仅在PC/2in1设备中可正常调用，在其他设备中返回801错误码。
+
+> **说明：**
+>
+> 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
 
 **起始版本：** 14
 
@@ -189,7 +216,11 @@ connectUIServiceExtensionAbility(want: Want, callback: UIServiceExtensionConnect
 disconnectAppServiceExtensionAbility(connection: number): Promise<void>
 ```
 
-断开与 [AppServiceExtensionAbility](../../../../reference/apis-ability-kit/js-apis-app-ability-appServiceExtensionAbility.md) 的连接。仅支持在主线程调用。使用Promise异步回调。 断开连接之后，为了防止使用可能失效的remote对象进行通信，建议将连接成功时返回的remote对象设置为null。 该接口仅在PC/2in1设备中可正常调用，在其他设备中返回801错误码。
+断开与
+[AppServiceExtensionAbility](../../../../reference/apis-ability-kit/js-apis-app-ability-appServiceExtensionAbility.md)
+的连接。仅支持在主线程调用。使用Promise异步回调。
+断开连接之后，为了防止使用可能失效的remote对象进行通信，建议将连接成功时返回的remote对象设置为null。
+该接口仅在PC/2in1设备中可正常调用，在其他设备中返回801错误码。
 
 **起始版本：** 20
 
@@ -223,7 +254,8 @@ disconnectAppServiceExtensionAbility(connection: number): Promise<void>
 disconnectServiceExtensionAbility(connection: number, callback: AsyncCallback<void>): void
 ```
 
-断开与[ServiceExtensionAbility](../../../../application-models/extensionability-overview.md)的连接，断开连接之后开发者需要将连接成功时返回的 remote对象置空。使用callback异步回调。仅支持在主线程调用。
+断开与[ServiceExtensionAbility](../../../../application-models/extensionability-overview.md)的连接，断开连接之后开发者需要将连接成功时返回的
+remote对象置空。使用callback异步回调。仅支持在主线程调用。
 
 **起始版本：** 9
 
@@ -252,7 +284,8 @@ disconnectServiceExtensionAbility(connection: number, callback: AsyncCallback<vo
 disconnectServiceExtensionAbility(connection: number): Promise<void>
 ```
 
-断开与[ServiceExtensionAbility](../../../../application-models/extensionability-overview.md)的连接，断开连接之后开发者需要将连接成功时返回的 remote对象置空。使用Promise异步回调。仅支持在主线程调用。
+断开与[ServiceExtensionAbility](../../../../application-models/extensionability-overview.md)的连接，断开连接之后开发者需要将连接成功时返回的
+remote对象置空。使用Promise异步回调。仅支持在主线程调用。
 
 **起始版本：** 9
 
@@ -286,7 +319,11 @@ disconnectServiceExtensionAbility(connection: number): Promise<void>
 disconnectUIServiceExtensionAbility(proxy: UIServiceProxy): Promise<void>
 ```
 
-断开与UIServiceExtensionAbility的连接。使用Promise异步回调。 > **说明：** > > 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
+断开与UIServiceExtensionAbility的连接。使用Promise异步回调。
+
+> **说明：**
+>
+> 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
 
 **起始版本：** 14
 
@@ -322,7 +359,9 @@ disconnectUIServiceExtensionAbility(proxy: UIServiceProxy): Promise<void>
 hideAbility(): Promise<void>
 ```
 
-隐藏当前UIAbility。使用Promise异步回调。仅支持在主线程调用。 调用此接口前要求确保应用已添加至状态栏。 该接口仅在PC/2in1设备中、或处于[自由多窗模式](../../../../windowmanager/window-terminology.md#自由多窗模式)的Tablet设备中可正常调用，在其他设备中返回801错误码。
+隐藏当前UIAbility。使用Promise异步回调。仅支持在主线程调用。
+调用此接口前要求确保应用已添加至状态栏。
+该接口仅在PC/2in1设备中、或处于[自由多窗模式](../../../../windowmanager/window-terminology.md#自由多窗模式)的Tablet设备中可正常调用，在其他设备中返回801错误码。
 
 **起始版本：** 12
 
@@ -378,7 +417,9 @@ isTerminating(): boolean
 moveAbilityToBackground(): Promise<void>
 ```
 
-将处于前台的UIAbility移动到后台。使用Promise异步回调。仅支持在主线程调用。<br/><!--RP1--><!--RP1End--> 从API version 12开始，该接口仅在Phone、Wearable和TV设备中可正常调用，在其他设备上返回16000061错误码。 从API version 13开始，该接口仅在Phone、Tablet、Wearable和TV设备中可正常调用，在其他设备上返回16000061错误码。
+将处于前台的UIAbility移动到后台。使用Promise异步回调。仅支持在主线程调用。<br/><!--RP1--><!--RP1End-->
+从API version 12开始，该接口仅在Phone、Wearable和TV设备中可正常调用，在其他设备上返回16000061错误码。
+从API version 13开始，该接口仅在Phone、Tablet、Wearable和TV设备中可正常调用，在其他设备上返回16000061错误码。
 
 **起始版本：** 12
 
@@ -410,7 +451,20 @@ moveAbilityToBackground(): Promise<void>
 openAtomicService(appId: string, options?: AtomicServiceOptions): Promise<AbilityResult>
 ```
 
-启动一个独立窗口的原子化服务。使用Promise异步回调。仅支持在主线程调用。 原子化服务被启动后，有如下情况： - 正常情况下原子化服务可以通过 [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1) 接口销毁自身，并且返回结果给调用方。 - 异常情况下比如杀死原子化服务会返回异常结果给调用方，异常结果的resultCode为-1。 - 如果不同应用多次调用该接口启动同一个原子化服务，当这个原子化服务调用 [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1) 接口销毁自身时，只将正常结果返回给最后一个调用方, 其它调用方返回异常结果，异常结果中resultCode为-1。 > **说明：** > > 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
+启动一个独立窗口的原子化服务。使用Promise异步回调。仅支持在主线程调用。
+原子化服务被启动后，有如下情况：
+
+- 正常情况下原子化服务可以通过
+[terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)
+接口销毁自身，并且返回结果给调用方。
+- 异常情况下比如杀死原子化服务会返回异常结果给调用方，异常结果的resultCode为-1。
+- 如果不同应用多次调用该接口启动同一个原子化服务，当这个原子化服务调用
+[terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)
+接口销毁自身时，只将正常结果返回给最后一个调用方, 其它调用方返回异常结果，异常结果中resultCode为-1。
+
+> **说明：**
+>
+> 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
 
 **起始版本：** 12
 
@@ -454,7 +508,22 @@ openAtomicService(appId: string, options?: AtomicServiceOptions): Promise<Abilit
 openLink(link: string, options?: OpenLinkOptions, callback?: AsyncCallback<AbilityResult>): Promise<void>
 ```
 
-通过<!--RP2-->[App Linking](../../../../application-models/app-linking-startup.md)<!--RP2End-->或 [Deep Linking](../../../../application-models/deep-linking-startup.md)方式启动UIAbility，并通过回调函数接收被拉起的UIAbility退出时的返回结果。使用 Promise异步回调。仅支持在主线程调用。 通过在link字段中传入标准格式的URL，基于隐式want匹配规则拉起目标UIAbility。目标方必须同时具备以下过滤器特征，才能处理App Linking链接： - "actions"列表中包含"ohos.want.action.viewData"。 - "entities"列表中包含"entity.system.browsable"。 - "uris"列表中包含"scheme"为"https"且"domainVerify"为true的元素。 如果希望获取被拉起方终止后的结果，可以设置callback参数，此参数的使用可参照 [startAbilityForResult](arkts-ability-uiabilitycontext-c.md#startabilityforresult-1) 接口。 传入的参数不合法时，如未设置必选参数或link字符串不是标准格式的URL，接口会直接抛出异常。参数校验通过，拉起目标方时出现的错误通过promise返回错误信息。 > **说明：** > > 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
+通过<!--RP2-->[App Linking](../../../../application-models/app-linking-startup.md)<!--RP2End-->或
+[Deep Linking](../../../../application-models/deep-linking-startup.md)方式启动UIAbility，并通过回调函数接收被拉起的UIAbility退出时的返回结果。使用
+Promise异步回调。仅支持在主线程调用。
+通过在link字段中传入标准格式的URL，基于隐式want匹配规则拉起目标UIAbility。目标方必须同时具备以下过滤器特征，才能处理App Linking链接：
+
+- "actions"列表中包含"ohos.want.action.viewData"。
+- "entities"列表中包含"entity.system.browsable"。
+- "uris"列表中包含"scheme"为"https"且"domainVerify"为true的元素。
+如果希望获取被拉起方终止后的结果，可以设置callback参数，此参数的使用可参照
+[startAbilityForResult](arkts-ability-uiabilitycontext-c.md#startabilityforresult-1)
+接口。
+传入的参数不合法时，如未设置必选参数或link字符串不是标准格式的URL，接口会直接抛出异常。参数校验通过，拉起目标方时出现的错误通过promise返回错误信息。
+
+> **说明：**
+>
+> 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
 
 **起始版本：** 12
 
@@ -535,7 +604,13 @@ reportDrawnCompleted(callback: AsyncCallback<void>): void
 requestDialogService(want: Want, result: AsyncCallback<dialogRequest.RequestResult>): void
 ```
 
-启动一个支持模态弹框的ServiceExtensionAbility。ServiceExtensionAbility被启动后，应用弹出模态弹框，通过调用 [setRequestResult](arkts-ability-requestcallback-i.md#setrequestresult-1)接口返回结果给调用者。 使用callback异步回调。仅支持在主线程调用。 > **说明：** > > 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
+启动一个支持模态弹框的ServiceExtensionAbility。ServiceExtensionAbility被启动后，应用弹出模态弹框，通过调用
+[setRequestResult](arkts-ability-requestcallback-i.md#setrequestresult-1)接口返回结果给调用者。
+使用callback异步回调。仅支持在主线程调用。
+
+> **说明：**
+>
+> 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
 
 **起始版本：** 9
 
@@ -578,7 +653,13 @@ requestDialogService(want: Want, result: AsyncCallback<dialogRequest.RequestResu
 requestDialogService(want: Want): Promise<dialogRequest.RequestResult>
 ```
 
-启动一个支持模态弹框的ServiceExtensionAbility。ServiceExtensionAbility被启动后，应用弹出模态弹框，通过调用 [setRequestResult](arkts-ability-requestcallback-i.md#setrequestresult-1)接口返回结果给调用者。 使用Promise异步回调。仅支持在主线程调用。 > **说明：** > > 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
+启动一个支持模态弹框的ServiceExtensionAbility。ServiceExtensionAbility被启动后，应用弹出模态弹框，通过调用
+[setRequestResult](arkts-ability-requestcallback-i.md#setrequestresult-1)接口返回结果给调用者。
+使用Promise异步回调。仅支持在主线程调用。
+
+> **说明：**
+>
+> 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
 
 **起始版本：** 9
 
@@ -626,7 +707,22 @@ requestDialogService(want: Want): Promise<dialogRequest.RequestResult>
 restartApp(want: Want): Promise<void>
 ```
 
-处于获焦状态的UIAbility可以通过该接口，重启当前UIAbility所在的进程，并拉起应用内的指定UIAbility。仅支持主线程调用。使用Promise异步回调。 如果指定UIAbility就是当前UIAbility，则会刷新窗口至初始状态；如果是其他UIAbility，则会跳转并打开新的UIAbility窗口。 该接口仅在Phone设备中可正常调用，在其他设备中返回801错误码。 > **说明：** > > 通过该接口重启进程时，不会触发进程中Ability的onDestroy生命周期回调。 > > 在原子化服务调用本接口成功后的3秒内，再次调用本接口、 > [restartSelfAtomicService()](arkts-ability-restartselfatomicservice-f.md#restartselfatomicservice-1)或 > [ApplicationContext.restartApp()](arkts-ability-applicationcontext-c.md#restartapp-1)接口中的任一接口，系统将 > 返回错误码16000064。 > > 在应用调用本接口成功后的3秒内，若再次调用本接口或 > [ApplicationContext.restartApp()](arkts-ability-applicationcontext-c.md#restartapp-1)接口中的任一接口，系统将 > 返回错误码16000064。
+处于获焦状态的UIAbility可以通过该接口，重启当前UIAbility所在的进程，并拉起应用内的指定UIAbility。仅支持主线程调用。使用Promise异步回调。
+如果指定UIAbility就是当前UIAbility，则会刷新窗口至初始状态；如果是其他UIAbility，则会跳转并打开新的UIAbility窗口。
+该接口仅在Phone设备中可正常调用，在其他设备中返回801错误码。
+
+> **说明：**
+>
+> 通过该接口重启进程时，不会触发进程中Ability的onDestroy生命周期回调。
+>
+> 在原子化服务调用本接口成功后的3秒内，再次调用本接口、
+> [restartSelfAtomicService()](arkts-ability-restartselfatomicservice-f.md#restartselfatomicservice-1)或
+> [ApplicationContext.restartApp()](arkts-ability-applicationcontext-c.md#restartapp-1)接口中的任一接口，系统将
+> 返回错误码16000064。
+>
+> 在应用调用本接口成功后的3秒内，若再次调用本接口或
+> [ApplicationContext.restartApp()](arkts-ability-applicationcontext-c.md#restartapp-1)接口中的任一接口，系统将
+> 返回错误码16000064。
 
 **起始版本：** 22
 
@@ -695,7 +791,8 @@ restoreWindowStage(localStorage: LocalStorage): void
 setAbilityInstanceInfo(label: string, icon: image.PixelMap): Promise<void>
 ```
 
-设置当前UIAbility实例的图标和标签信息。图标与标签信息可在任务中心和快捷栏的界面中显示。使用Promise异步回调。 该接口仅在PC/2in1设备中可正常调用，在其他设备中返回801错误码。
+设置当前UIAbility实例的图标和标签信息。图标与标签信息可在任务中心和快捷栏的界面中显示。使用Promise异步回调。
+该接口仅在PC/2in1设备中可正常调用，在其他设备中返回801错误码。
 
 **起始版本：** 15
 
@@ -734,7 +831,19 @@ setAbilityInstanceInfo(label: string, icon: image.PixelMap): Promise<void>
 setColorMode(colorMode: ConfigurationConstant.ColorMode): void
 ```
 
-设置UIAbility的深浅色模式。调用该接口前需要保证该UIAbility对应页面已完成加载。仅支持主线程调用。 > **说明**： > > - 调用该接口前，需要确保窗口已完成创建、且UIAbility对应的页面已完成加载，即在 > [onWindowStageCreate()](arkts-ability-uiability-c.md#onwindowstagecreate-1)生命周期中通过 > [loadContent](../../../../reference/apis-arkui/arkts-apis-window-WindowStage.md#loadcontent9)方法加载页面之后调用。 > > - 调用该接口后会创建新的资源管理器对象，如果此前有缓存资源管理器，需要进行更新。 > > - 深浅色模式生效的优先级：UIAbility的深浅色模式 > 应用的深浅色模式（ > [ApplicationContext.setColorMode](arkts-ability-applicationcontext-c.md#setcolormode-1)）> 系统的深浅色模 > 式。
+设置UIAbility的深浅色模式。调用该接口前需要保证该UIAbility对应页面已完成加载。仅支持主线程调用。
+
+> **说明**：
+>
+> - 调用该接口前，需要确保窗口已完成创建、且UIAbility对应的页面已完成加载，即在
+> [onWindowStageCreate()](arkts-ability-uiability-c.md#onwindowstagecreate-1)生命周期中通过
+> [loadContent](../../../../reference/apis-arkui/arkts-apis-window-WindowStage.md#loadcontent9)方法加载页面之后调用。
+>
+> - 调用该接口后会创建新的资源管理器对象，如果此前有缓存资源管理器，需要进行更新。
+>
+> - 深浅色模式生效的优先级：UIAbility的深浅色模式 > 应用的深浅色模式（
+> [ApplicationContext.setColorMode](arkts-ability-applicationcontext-c.md#setcolormode-1)）> 系统的深浅色模
+> 式。
 
 **起始版本：** 18
 
@@ -896,7 +1005,16 @@ setMissionLabel(label: string): Promise<void>
 setMissionWindowIcon(windowIcon: image.PixelMap): Promise<void>
 ```
 
-设置当前UIAbility在应用窗口、任务中心应用卡片、快捷栏窗口快照的图标。使用Promise异步回调。 该接口仅在PC/2in1设备中可正常调用，在其他设备中返回801错误码。 > **说明：** > > setMissionWindowIcon<!--Del-->、 > [setMissionIcon](arkts-ability-uiabilitycontext-c-sys.md#setmissionicon-1) > <!--DelEnd-->和 > [setAbilityInstanceInfo](arkts-ability-uiabilitycontext-c.md#setabilityinstanceinfo-1)之间不存在调用优先级关系。 > 当多个接口被依次调用时，后一次调用的接口所设置的图标信息将覆盖之前调用接口所设置的内容，最终生效的图标以最后一次调用的接口为准。
+设置当前UIAbility在应用窗口、任务中心应用卡片、快捷栏窗口快照的图标。使用Promise异步回调。
+该接口仅在PC/2in1设备中可正常调用，在其他设备中返回801错误码。
+
+> **说明：**
+>
+> setMissionWindowIcon<!--Del-->、
+> [setMissionIcon](arkts-ability-uiabilitycontext-c-sys.md#setmissionicon-1)
+> <!--DelEnd-->和
+> [setAbilityInstanceInfo](arkts-ability-uiabilitycontext-c.md#setabilityinstanceinfo-1)之间不存在调用优先级关系。
+> 当多个接口被依次调用时，后一次调用的接口所设置的图标信息将覆盖之前调用接口所设置的内容，最终生效的图标以最后一次调用的接口为准。
 
 **起始版本：** 22
 
@@ -930,7 +1048,13 @@ setMissionWindowIcon(windowIcon: image.PixelMap): Promise<void>
 setOnNewWantSkipScenarios(scenarios: number): Promise<void>
 ```
 
-在特定场景下拉起UIAbility时，如果不需要触发[onNewWant](arkts-ability-uiability-c.md#onnewwant-1)生命周期回调，可以通过该接口设置。仅支持在主线 程调用。使用Promise异步回调。 > **说明：** > > 该接口通常用于[onCreate](arkts-ability-uiability-c.md#oncreate-1)生命周期回调中。入参取值建议包含所有的 > [Scenarios](arkts-ability-scenarios-e.md)枚举值。详见下方示例代码。
+在特定场景下拉起UIAbility时，如果不需要触发[onNewWant](arkts-ability-uiability-c.md#onnewwant-1)生命周期回调，可以通过该接口设置。仅支持在主线
+程调用。使用Promise异步回调。
+
+> **说明：**
+>
+> 该接口通常用于[onCreate](arkts-ability-uiability-c.md#oncreate-1)生命周期回调中。入参取值建议包含所有的
+> [Scenarios](arkts-ability-scenarios-e.md)枚举值。详见下方示例代码。
 
 **起始版本：** 20
 
@@ -993,7 +1117,9 @@ setRestoreEnabled(enabled: boolean): void
 showAbility(): Promise<void>
 ```
 
-显示当前UIAbility。使用Promise异步回调。仅支持在主线程调用。 调用此接口前要求确保应用已添加至状态栏。 该接口仅在PC/2in1设备中、或处于[自由多窗模式](../../../../windowmanager/window-terminology.md#自由多窗模式)的Tablet设备中可正常调用，在其他设备中返回801错误码。
+显示当前UIAbility。使用Promise异步回调。仅支持在主线程调用。
+调用此接口前要求确保应用已添加至状态栏。
+该接口仅在PC/2in1设备中、或处于[自由多窗模式](../../../../windowmanager/window-terminology.md#自由多窗模式)的Tablet设备中可正常调用，在其他设备中返回801错误码。
 
 **起始版本：** 12
 
@@ -1021,7 +1147,11 @@ showAbility(): Promise<void>
 startAbility(want: Want, callback: AsyncCallback<void>): void
 ```
 
-启动一个UIAbility。使用callback异步回调。仅支持在主线程调用。 > **说明：** > > 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
+启动一个UIAbility。使用callback异步回调。仅支持在主线程调用。
+
+> **说明：**
+>
+> 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
 
 **起始版本：** 9
 
@@ -1076,7 +1206,11 @@ startAbility(want: Want, callback: AsyncCallback<void>): void
 startAbility(want: Want, options: StartOptions, callback: AsyncCallback<void>): void
 ```
 
-启动一个UIAbility。使用callback异步回调。仅支持在主线程调用。 > **说明：** > > 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
+启动一个UIAbility。使用callback异步回调。仅支持在主线程调用。
+
+> **说明：**
+>
+> 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
 
 **起始版本：** 9
 
@@ -1136,7 +1270,11 @@ startAbility(want: Want, options: StartOptions, callback: AsyncCallback<void>): 
 startAbility(want: Want, options?: StartOptions): Promise<void>
 ```
 
-启动一个UIAbility。使用Promise异步回调。仅支持在主线程调用。 > **说明：** > > 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
+启动一个UIAbility。使用Promise异步回调。仅支持在主线程调用。
+
+> **说明：**
+>
+> 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
 
 **起始版本：** 9
 
@@ -1201,7 +1339,24 @@ startAbility(want: Want, options?: StartOptions): Promise<void>
 startAbilityByCall(want: Want): Promise<Caller>
 ```
 
-该接口用于获取[Caller](arkts-ability-caller-i.md)通信对象，以便于与 [Callee](arkts-ability-callee-i.md)进行通信。如果指定UIAbility未启动，则会将UIAbility启动至前台或后台。使用Promise异步回调。仅支持在主线程调 用。 该接口不支持拉起启动模式为[specified模式](../../../../application-models/uiability-launch-type.md#specified启动模式)的UIAbility。 > **说明：** > > - 跨设备场景下，调用方与目标方必须为同一应用。 > > - 同设备场景下，要求调用方与目标方为不同应用，且调用方具备ohos.permission.ABILITY_BACKGROUND_COMMUNICATION权限（该权限仅系统应用可申请）。 > > - 此外如果应用需要在后台调用该接口，需要具备ohos.permission.START_ABILITIES_FROM_BACKGROUND（该权限仅系统应用可申请）。更多的组件启动规则详见 > [组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。 > > **说明：** > > - API version 10及之前版本，需申请ohos.permission.ABILITY_BACKGROUND_COMMUNICATION（该权限仅系统应用可用）。 > > - API version 11开始，仅需申请ohos.permission.DISTRIBUTED_DATASYNC（该权限仅当执行应用间建链操作时由软总线实施权限校验，在应用拉起阶段不做校验）。
+该接口用于获取[Caller](arkts-ability-caller-i.md)通信对象，以便于与
+[Callee](arkts-ability-callee-i.md)进行通信。如果指定UIAbility未启动，则会将UIAbility启动至前台或后台。使用Promise异步回调。仅支持在主线程调
+用。
+该接口不支持拉起启动模式为[specified模式](../../../../application-models/uiability-launch-type.md#specified启动模式)的UIAbility。
+
+> **说明：**
+>
+> - 跨设备场景下，调用方与目标方必须为同一应用。
+>
+> - 同设备场景下，要求调用方与目标方为不同应用，且调用方具备ohos.permission.ABILITY_BACKGROUND_COMMUNICATION权限（该权限仅系统应用可申请）。
+>
+> - 此外如果应用需要在后台调用该接口，需要具备ohos.permission.START_ABILITIES_FROM_BACKGROUND（该权限仅系统应用可申请）。更多的组件启动规则详见
+> [组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
+> > **说明：**
+>
+> - API version 10及之前版本，需申请ohos.permission.ABILITY_BACKGROUND_COMMUNICATION（该权限仅系统应用可用）。
+>
+> - API version 11开始，仅需申请ohos.permission.DISTRIBUTED_DATASYNC（该权限仅当执行应用间建链操作时由软总线实施权限校验，在应用拉起阶段不做校验）。
 
 **起始版本：** 9
 
@@ -1259,7 +1414,8 @@ startAbilityByType(type: string, wantParam: Record<string, Object>,
     abilityStartCallback: AbilityStartCallback, callback: AsyncCallback<void>): void
 ```
 
-通过type隐式启动[UIExtensionAbility](arkts-ability-uiextensionability-c.md)。使用callback异步回调。仅支持在主线 程调用，仅支持处于前台的应用调用。
+通过type隐式启动[UIExtensionAbility](arkts-ability-uiextensionability-c.md)。使用callback异步回调。仅支持在主线
+程调用，仅支持处于前台的应用调用。
 
 **起始版本：** 11
 
@@ -1297,7 +1453,8 @@ startAbilityByType(type: string, wantParam: Record<string, Object>,
     abilityStartCallback: AbilityStartCallback): Promise<void>
 ```
 
-通过type隐式启动[UIExtensionAbility](arkts-ability-uiextensionability-c.md)。使用Promise异步回调。仅支持在主线程 调用，仅支持处于前台的应用调用。
+通过type隐式启动[UIExtensionAbility](arkts-ability-uiextensionability-c.md)。使用Promise异步回调。仅支持在主线程
+调用，仅支持处于前台的应用调用。
 
 **起始版本：** 11
 
@@ -1339,7 +1496,21 @@ startAbilityByType(type: string, wantParam: Record<string, Object>,
 startAbilityForResult(want: Want, callback: AsyncCallback<AbilityResult>): void
 ```
 
-启动一个UIAbility，并通过回调函数接收被拉起的UIAbility退出时的返回结果。使用callback异步回调。仅支持在主线程调用。 UIAbility被启动后，有如下情况： - 正常情况下可以通过调用 [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1) 接口销毁自身，并将结果返回给调用方。 - 异常情况下比如杀死UIAbility会将异常结果返回给调用方，异常结果中resultCode为-1。 - 如果被启动的UIAbility是[单实例模式](../../../../application-models/uiability-launch-type.md#singleton启动模式)，且这个UIAbility被不同应用多次调 用该接口启动，当这个UIAbility调用 [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1) 接口销毁自身时，只将正常结果返回给最后一个调用方，其它调用方返回异常结果，异常结果中resultCode为-1。 > **说明：** > > 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
+启动一个UIAbility，并通过回调函数接收被拉起的UIAbility退出时的返回结果。使用callback异步回调。仅支持在主线程调用。
+UIAbility被启动后，有如下情况：
+
+- 正常情况下可以通过调用
+[terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)
+接口销毁自身，并将结果返回给调用方。
+- 异常情况下比如杀死UIAbility会将异常结果返回给调用方，异常结果中resultCode为-1。
+- 如果被启动的UIAbility是[单实例模式](../../../../application-models/uiability-launch-type.md#singleton启动模式)，且这个UIAbility被不同应用多次调
+用该接口启动，当这个UIAbility调用
+[terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)
+接口销毁自身时，只将正常结果返回给最后一个调用方，其它调用方返回异常结果，异常结果中resultCode为-1。
+
+> **说明：**
+>
+> 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
 
 **起始版本：** 9
 
@@ -1394,7 +1565,21 @@ startAbilityForResult(want: Want, callback: AsyncCallback<AbilityResult>): void
 startAbilityForResult(want: Want, options: StartOptions, callback: AsyncCallback<AbilityResult>): void
 ```
 
-启动一个UIAbility，并通过回调函数接收被拉起的UIAbility退出时的返回结果。使用callback异步回调。仅支持在主线程调用。 UIAbility被启动后，有如下情况： - 正常情况下可以通过调用 [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1) 接口销毁自身，并将结果返回给调用方。 - 异常情况下比如杀死UIAbility会将异常结果返回给调用方，异常结果中resultCode为-1。 - 如果被启动的UIAbility是[单实例模式](../../../../application-models/uiability-launch-type.md#singleton启动模式)，且这个UIAbility被不同应用多次调 用该接口启动，当这个UIAbility调用 [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1) 接口销毁自身时，只将正常结果返回给最后一个调用方，其它调用方返回异常结果，异常结果中resultCode为-1。 > **说明：** > > 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
+启动一个UIAbility，并通过回调函数接收被拉起的UIAbility退出时的返回结果。使用callback异步回调。仅支持在主线程调用。
+UIAbility被启动后，有如下情况：
+
+- 正常情况下可以通过调用
+[terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)
+接口销毁自身，并将结果返回给调用方。
+- 异常情况下比如杀死UIAbility会将异常结果返回给调用方，异常结果中resultCode为-1。
+- 如果被启动的UIAbility是[单实例模式](../../../../application-models/uiability-launch-type.md#singleton启动模式)，且这个UIAbility被不同应用多次调
+用该接口启动，当这个UIAbility调用
+[terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)
+接口销毁自身时，只将正常结果返回给最后一个调用方，其它调用方返回异常结果，异常结果中resultCode为-1。
+
+> **说明：**
+>
+> 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
 
 **起始版本：** 9
 
@@ -1450,7 +1635,21 @@ startAbilityForResult(want: Want, options: StartOptions, callback: AsyncCallback
 startAbilityForResult(want: Want, options?: StartOptions): Promise<AbilityResult>
 ```
 
-启动一个UIAbility，并通过回调函数接收被拉起的UIAbility退出时的返回结果。使用Promise异步回调。仅支持在主线程调用。 UIAbility被启动后，有如下情况： - 正常情况下可以通过调用 [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1) 接口销毁自身，并将结果返回给调用方。 - 异常情况下比如杀死UIAbility会将异常结果返回给调用方，异常结果中resultCode为-1。 - 如果被启动的UIAbility是[单实例模式](../../../../application-models/uiability-launch-type.md#singleton启动模式)，且这个UIAbility被不同应用多次调 用该接口启动，当这个UIAbility调用 [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1) 接口销毁自身时，只将正常结果返回给最后一个调用方，其它调用方返回异常结果，异常结果中resultCode为-1。 > **说明：** > > 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
+启动一个UIAbility，并通过回调函数接收被拉起的UIAbility退出时的返回结果。使用Promise异步回调。仅支持在主线程调用。
+UIAbility被启动后，有如下情况：
+
+- 正常情况下可以通过调用
+[terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)
+接口销毁自身，并将结果返回给调用方。
+- 异常情况下比如杀死UIAbility会将异常结果返回给调用方，异常结果中resultCode为-1。
+- 如果被启动的UIAbility是[单实例模式](../../../../application-models/uiability-launch-type.md#singleton启动模式)，且这个UIAbility被不同应用多次调
+用该接口启动，当这个UIAbility调用
+[terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)
+接口销毁自身时，只将正常结果返回给最后一个调用方，其它调用方返回异常结果，异常结果中resultCode为-1。
+
+> **说明：**
+>
+> 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
 
 **起始版本：** 9
 
@@ -1511,7 +1710,18 @@ startAbilityForResult(want: Want, options?: StartOptions): Promise<AbilityResult
 startAppServiceExtensionAbility(want: Want): Promise<void>
 ```
 
-启动 [AppServiceExtensionAbility](../../../../reference/apis-ability-kit/js-apis-app-ability-appServiceExtensionAbility.md) 实例。使用Promise异步回调。 该接口仅在PC/2in1设备中可正常调用，在其他设备中返回801错误码。 > **说明：** > > 该接口的调用方必须为 > [AppServiceExtensionAbility](../../../../reference/apis-ability-kit/js-apis-app-ability-appServiceExtensionAbility.md) > 所属应用或者在AppServiceExtensionAbility支持的应用清单（即 > [extensionAbilities标签](../../../../quick-start/module-configuration-file.md#extensionabilities标签)的 > appIdentifierAllowList属性）中的应用。
+启动
+[AppServiceExtensionAbility](../../../../reference/apis-ability-kit/js-apis-app-ability-appServiceExtensionAbility.md)
+实例。使用Promise异步回调。
+该接口仅在PC/2in1设备中可正常调用，在其他设备中返回801错误码。
+
+> **说明：**
+>
+> 该接口的调用方必须为
+> [AppServiceExtensionAbility](../../../../reference/apis-ability-kit/js-apis-app-ability-appServiceExtensionAbility.md)
+> 所属应用或者在AppServiceExtensionAbility支持的应用清单（即
+> [extensionAbilities标签](../../../../quick-start/module-configuration-file.md#extensionabilities标签)的
+> appIdentifierAllowList属性）中的应用。
 
 **起始版本：** 20
 
@@ -1555,7 +1765,26 @@ startAppServiceExtensionAbility(want: Want): Promise<void>
 startSelfUIAbilityInCurrentProcess(want: Want, specifiedFlag: string, options?: StartOptions): Promise<void>
 ```
 
-在当前进程中启动应用程序自己的UIAbility。 从API version 23开始，该接口仅在PC/2in1和Tablet设备中可正常调用，在其他设备中返回801错误码。 从API version 22开始，该接口仅在PC/2in1设备中可正常调用，在其他设备中返回801错误码。 > **说明：** > > - 只能冷启动目标UIAbility，如果目标UIAbility实例已经启动过，则启动失败。 > > - 通过该接口启动的UIAbility实例，将运行在调用方所在的进程中。其他关于目标UIAbility的进程相关的策略（例如在 > [module.json5配置文件](../../../../quick-start/module-configuration-file.md)中通过isolationProcess或isolationMode字段来指定进程），均 > 不会生效。 > **说明** > > > -目标UIAability只能是冷启动的。如果目标UIAability的实例已经 > 启动，启动失败。 > > > -通过此API启动的UIAbility实例与调用方在同一进程中运行。其他流程相关 > 目标UIAability的策略（例如通过**隔离进程**或**隔离模式**指定的策略） > [module.json5](../../../../quick-start/module-configuration-file.md)文件中的字段不生效。
+在当前进程中启动应用程序自己的UIAbility。
+从API version 23开始，该接口仅在PC/2in1和Tablet设备中可正常调用，在其他设备中返回801错误码。
+从API version 22开始，该接口仅在PC/2in1设备中可正常调用，在其他设备中返回801错误码。
+
+> **说明：**
+>
+> - 只能冷启动目标UIAbility，如果目标UIAbility实例已经启动过，则启动失败。
+>
+> - 通过该接口启动的UIAbility实例，将运行在调用方所在的进程中。其他关于目标UIAbility的进程相关的策略（例如在
+> [module.json5配置文件](../../../../quick-start/module-configuration-file.md)中通过isolationProcess或isolationMode字段来指定进程），均
+> 不会生效。
+
+> **说明**
+> >
+> -目标UIAability只能是冷启动的。如果目标UIAability的实例已经
+> 启动，启动失败。
+> >
+> -通过此API启动的UIAbility实例与调用方在同一进程中运行。其他流程相关
+> 目标UIAability的策略（例如通过**隔离进程**或**隔离模式**指定的策略）
+> [module.json5](../../../../quick-start/module-configuration-file.md)文件中的字段不生效。
 
 **起始版本：** 22
 
@@ -1600,7 +1829,12 @@ startSelfUIAbilityInCurrentProcess(want: Want, specifiedFlag: string, options?: 
 startUIServiceExtensionAbility(want: Want): Promise<void>
 ```
 
-启动一个UIServiceExtensionAbility。使用Promise异步回调。 该接口仅在PC/2in1设备中可正常调用，在其他设备中返回801错误码。 > **说明：** > > 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
+启动一个UIServiceExtensionAbility。使用Promise异步回调。
+该接口仅在PC/2in1设备中可正常调用，在其他设备中返回801错误码。
+
+> **说明：**
+>
+> 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
 
 **起始版本：** 14
 
@@ -1647,7 +1881,18 @@ startUIServiceExtensionAbility(want: Want): Promise<void>
 stopAppServiceExtensionAbility(want: Want): Promise<void>
 ```
 
-停止 [AppServiceExtensionAbility](../../../../reference/apis-ability-kit/js-apis-app-ability-appServiceExtensionAbility.md) 实例。使用Promise异步回调。 该接口仅在PC/2in1设备中可正常调用，在其他设备中返回801错误码。 > **说明：** > > 该接口的调用方必须为 > [AppServiceExtensionAbility](../../../../reference/apis-ability-kit/js-apis-app-ability-appServiceExtensionAbility.md) > 所属应用或者在AppServiceExtensionAbility支持的应用清单（即 > [extensionAbilities标签](../../../../quick-start/module-configuration-file.md#extensionabilities标签)的 > appIdentifierAllowList属性）中的应用。
+停止
+[AppServiceExtensionAbility](../../../../reference/apis-ability-kit/js-apis-app-ability-appServiceExtensionAbility.md)
+实例。使用Promise异步回调。
+该接口仅在PC/2in1设备中可正常调用，在其他设备中返回801错误码。
+
+> **说明：**
+>
+> 该接口的调用方必须为
+> [AppServiceExtensionAbility](../../../../reference/apis-ability-kit/js-apis-app-ability-appServiceExtensionAbility.md)
+> 所属应用或者在AppServiceExtensionAbility支持的应用清单（即
+> [extensionAbilities标签](../../../../quick-start/module-configuration-file.md#extensionabilities标签)的
+> appIdentifierAllowList属性）中的应用。
 
 **起始版本：** 20
 
@@ -1687,7 +1932,12 @@ stopAppServiceExtensionAbility(want: Want): Promise<void>
 terminateSelf(callback: AsyncCallback<void>): void
 ```
 
-销毁UIAbility自身。使用callback异步回调。仅支持在主线程调用。 > **说明：** > > 调用该接口后，任务中心的任务默认不会清理，如需清理，需要配置 > [removeMissionAfterTerminate](../../../../quick-start/module-configuration-file.md#abilities标签)为true。
+销毁UIAbility自身。使用callback异步回调。仅支持在主线程调用。
+
+> **说明：**
+>
+> 调用该接口后，任务中心的任务默认不会清理，如需清理，需要配置
+> [removeMissionAfterTerminate](../../../../quick-start/module-configuration-file.md#abilities标签)为true。
 
 **起始版本：** 9
 
@@ -1721,7 +1971,12 @@ terminateSelf(callback: AsyncCallback<void>): void
 terminateSelf(): Promise<void>
 ```
 
-销毁UIAbility自身。使用Promise异步回调。仅支持在主线程调用。 > **说明：** > > 调用该接口后，任务中心的任务默认不会清理，如需清理，需要配置 > [removeMissionAfterTerminate](../../../../quick-start/module-configuration-file.md#abilities标签)为true。
+销毁UIAbility自身。使用Promise异步回调。仅支持在主线程调用。
+
+> **说明：**
+>
+> 调用该接口后，任务中心的任务默认不会清理，如需清理，需要配置
+> [removeMissionAfterTerminate](../../../../quick-start/module-configuration-file.md#abilities标签)为true。
 
 **起始版本：** 9
 
@@ -1754,7 +2009,15 @@ terminateSelf(): Promise<void>
 terminateSelfWithResult(parameter: AbilityResult, callback: AsyncCallback<void>): void
 ```
 
-销毁UIAbility自身。使用callback异步回调。仅支持在主线程调用。 仅当UIAbility通过 [startAbilityForResult](arkts-ability-uiabilitycontext-c.md#startabilityforresult-1) 接口拉起时，调用terminateSelfWithResult接口销毁UIAbility，才会返回结果给调用方。 > **说明：** > > 调用该接口后，任务中心的任务默认不会清理，如需清理，需要配置 > [removeMissionAfterTerminate](../../../../quick-start/module-configuration-file.md#abilities标签)为true。
+销毁UIAbility自身。使用callback异步回调。仅支持在主线程调用。
+仅当UIAbility通过
+[startAbilityForResult](arkts-ability-uiabilitycontext-c.md#startabilityforresult-1)
+接口拉起时，调用terminateSelfWithResult接口销毁UIAbility，才会返回结果给调用方。
+
+> **说明：**
+>
+> 调用该接口后，任务中心的任务默认不会清理，如需清理，需要配置
+> [removeMissionAfterTerminate](../../../../quick-start/module-configuration-file.md#abilities标签)为true。
 
 **起始版本：** 9
 
@@ -1789,7 +2052,15 @@ terminateSelfWithResult(parameter: AbilityResult, callback: AsyncCallback<void>)
 terminateSelfWithResult(parameter: AbilityResult): Promise<void>
 ```
 
-销毁UIAbility自身。使用Promise异步回调。仅支持在主线程调用。 仅当UIAbility通过 [startAbilityForResult](arkts-ability-uiabilitycontext-c.md#startabilityforresult-1) 接口拉起时，调用terminateSelfWithResult接口销毁UIAbility，才会返回结果给调用方。 > **说明：** > > 调用该接口后，任务中心的任务默认不会清理，如需清理，需要配置 > [removeMissionAfterTerminate](../../../../quick-start/module-configuration-file.md#abilities标签)为true。
+销毁UIAbility自身。使用Promise异步回调。仅支持在主线程调用。
+仅当UIAbility通过
+[startAbilityForResult](arkts-ability-uiabilitycontext-c.md#startabilityforresult-1)
+接口拉起时，调用terminateSelfWithResult接口销毁UIAbility，才会返回结果给调用方。
+
+> **说明：**
+>
+> 调用该接口后，任务中心的任务默认不会清理，如需清理，需要配置
+> [removeMissionAfterTerminate](../../../../quick-start/module-configuration-file.md#abilities标签)为true。
 
 **起始版本：** 9
 

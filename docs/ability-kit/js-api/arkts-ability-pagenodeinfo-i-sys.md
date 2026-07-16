@@ -70,7 +70,8 @@ The auto fill flag of page node.
 id: number
 ```
 
-The id of page node. The value should be an integer
+The id of page node.
+The value should be an integer
 
 **Type:** number
 

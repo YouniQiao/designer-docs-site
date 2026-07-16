@@ -61,7 +61,7 @@
 | [AccountManager](arkts-basicservices-accountmanager-i-sys.md) | 系统账号管理类。 |
 | [AcquireAuthorizationOptions](arkts-basicservices-acquireauthorizationoptions-i-sys.md) | 表示获取授权的选项。 |
 | [AcquireAuthorizationResult](arkts-basicservices-acquireauthorizationresult-i-sys.md) | 表示获取授权的结果。 |
-| [AuthOptions](arkts-basicservices-authoptions-i-sys.md) | 表示 [认证用户](arkts-basicservices-userauth-c-sys.md#auth-2) 的可选参数集合。 |
+| [AuthOptions](arkts-basicservices-authoptions-i-sys.md) | 表示[认证用户](arkts-basicservices-userauth-c-sys.md#auth-2)的可选参数集合。 |
 | [AuthResult](arkts-basicservices-authresult-i-sys.md) | 表示认证结果的信息。 |
 | [AuthStatusInfo](arkts-basicservices-authstatusinfo-i-sys.md) | 表示认证状态信息。 |
 | [AuthorizationManager](arkts-basicservices-authorizationmanager-i-sys.md) | 系统账号授权管理类，用于管理系统账号授权。 |
@@ -78,7 +78,7 @@
 | [GetAuthInfoOptions](arkts-basicservices-getauthinfooptions-i-sys.md) | 表示[查询认证凭据信息](arkts-basicservices-useridentitymanager-c-sys.md#getauthinfo-4)的可选参数集合。 |
 | [GetDomainAccessTokenOptions](arkts-basicservices-getdomainaccesstokenoptions-i-sys.md) | 表示获取域访问令牌的选项。 |
 | [GetDomainAccountInfoOptions](arkts-basicservices-getdomainaccountinfooptions-i-sys.md) | 表示查询域账号信息的选项。 |
-| [GetDomainAccountInfoPluginOptions](arkts-basicservices-getdomainaccountinfopluginoptions-i-sys.md) | 表示插件查询域账号信息的选项。GetDomainAccountInfoPluginOptions类继承 [GetDomainAccountInfoOptions](arkts-basicservices-getdomainaccountinfooptions-i-sys.md) |
+| [GetDomainAccountInfoPluginOptions](arkts-basicservices-getdomainaccountinfopluginoptions-i-sys.md) | 表示插件查询域账号信息的选项。GetDomainAccountInfoPluginOptions类继承[GetDomainAccountInfoOptions](arkts-basicservices-getdomainaccountinfooptions-i-sys.md) |
 | [GetInputDataOptions](arkts-basicservices-getinputdataoptions-i-sys.md) | 表示[通知调用者获取数据](../../../../reference/apis-basic-services-kit/js-apis-osAccount-sys.md#ongetdata8)的可选参数集合。 |
 | [GetPropertyRequest](arkts-basicservices-getpropertyrequest-i-sys.md) | 提供获取属性请求的信息。 |
 | [IIdmCallback](arkts-basicservices-iidmcallback-i-sys.md) | 表示身份管理回调类。 |

@@ -2,25 +2,31 @@
 
 ## 汇总
 
+### 结构体
+
+| 名称 | 说明 |
+| --- | --- |
+| [FoldSplitContainer](arkts-na-foldsplitcontainer-s.md) | FoldSplitContainer分栏布局，实现折叠屏二分栏、三分栏在展开态、悬停态以及折叠态的区域控制。 |
+
 ### 接口
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| [ExpandedRegionLayoutOptions](arkts-expandedregionlayoutoptions-i.md) | 展开态布局信息。 |
-| [FoldedRegionLayoutOptions](arkts-foldedregionlayoutoptions-i.md) | 折叠态布局信息。 |
-| [HoverModeRegionLayoutOptions](arkts-hovermoderegionlayoutoptions-i.md) | 悬停态布局信息。 > **说明：** > > 1.在悬停状态下，设备存在避让区域，布局计算时需考虑该区域的影响。 > > 2.在悬停模式下，屏幕上半部分为显示区域，下半部分为操作区域。 |
-| [HoverModeStatus](arkts-hovermodestatus-i.md) | 设备或应用的折叠、旋转、窗口状态信息。 |
+| [ExpandedRegionLayoutOptions](arkts-na-expandedregionlayoutoptions-i.md) | 展开态布局信息。 |
+| [FoldedRegionLayoutOptions](arkts-na-foldedregionlayoutoptions-i.md) | 折叠态布局信息。 |
+| [HoverModeRegionLayoutOptions](arkts-na-hovermoderegionlayoutoptions-i.md) | 悬停态布局信息。 |
+| [HoverModeStatus](arkts-na-hovermodestatus-i.md) | 设备或应用的折叠、旋转、窗口状态信息。 |
 
 ### 枚举
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| [ExtraRegionPosition](arkts-extraregionposition-e.md) | 扩展区域位置信息。 |
-| [PresetSplitRatio](arkts-presetsplitratio-e.md) | 区域比例。 |
+| [ExtraRegionPosition](arkts-na-extraregionposition-e.md) | 扩展区域位置信息。 |
+| [PresetSplitRatio](arkts-na-presetsplitratio-e.md) | 区域比例。 |
 
 ### 类型
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| [OnHoverStatusChangeHandler](arkts-onhoverstatuschangehandler-t.md) | onHoverStatusChange事件处理。 |
+| [OnHoverStatusChangeHandler](arkts-na-onhoverstatuschangehandler-t.md) | onHoverStatusChange事件处理。 |
 

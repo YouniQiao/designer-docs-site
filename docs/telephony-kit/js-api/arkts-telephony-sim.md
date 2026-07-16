@@ -148,6 +148,7 @@ import { sim } from '@kit.TelephonyKit';
 | Name | Description |
 | --- | --- |
 | [DiallingNumbersInfo](arkts-telephony-diallingnumbersinfo-i-sys.md) | Defines the contact number information. |
+| [IccAccountInfo](arkts-telephony-iccaccountinfo-i-sys.md) | Defines the ICC account information. |
 | [LockInfo](arkts-telephony-lockinfo-i-sys.md) | Defines the personalized lock information. |
 | [LockStatusResponse](arkts-telephony-lockstatusresponse-i-sys.md) | Defines the personalized lock information. |
 | [OperatorConfig](arkts-telephony-operatorconfig-i-sys.md) | Defines the carrier configuration. |

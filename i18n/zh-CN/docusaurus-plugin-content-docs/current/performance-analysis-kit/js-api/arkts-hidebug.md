@@ -1,16 +1,12 @@
 # @ohos.hidebug
 
-## 导入模块
-
-```TypeScript
-import { hidebug } from '@kit.PerformanceAnalysisKit';
-```
+ΪӦ���ṩ���ֵ��ԡ����ŵķ��������������߶�λ����ƿ�����Ż�Ӧ�����ܡ���Ҫ���ܰ������ڴ����ݷ�����CPUʹ���ʼ�ء�trace�ɼ���profiler�ɼ���VM�ѿ���ת�������ڸ�ģ��Ľӿڴ��ȽϺķ����ܣ��ӿڵ��ý�Ϊ��ʱ���һ���HiDebugģ�鶨�壬��ģ���ڵĽӿڽ�������Ӧ�õ��ԡ����Ž׶�ʹ�á�����Ҫ����������ʹ��ʱ������������������õĽӿڶ�Ӧ�����ܵ�Ӱ�졣
 
 ## 汇总
 
 ### 命名空间
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| [hidebug](arkts-hidebug-n.md) | Provide interfaces related to debugger access and obtaining CPU, memory and other virtual machine information during runtime for JS programs |
+| [hidebug](arkts-performanceanalysis-hidebug-n.md) | ΪӦ���ṩ���ֵ��ԡ����ŵķ��������������߶�λ����ƿ�����Ż�Ӧ�����ܡ���Ҫ���ܰ������ڴ����ݷ�����CPUʹ���ʼ�ء�trace�ɼ���profiler�ɼ���VM�ѿ���ת�������ڸ�ģ��Ľӿڴ��ȽϺķ����ܣ��ӿڵ��ý�Ϊ��ʱ���һ���HiDebugģ�鶨�壬��ģ���ڵĽӿڽ�������Ӧ�õ��ԡ����Ž׶�ʹ�á�����Ҫ����������ʹ��ʱ������������������õĽӿڶ�Ӧ�����ܵ�Ӱ�졣 |
 

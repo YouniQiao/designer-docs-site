@@ -387,6 +387,11 @@
   - [CacheStrategy](arkts-basicservices-cachestrategy-e.md)
   - [ErrorCode](arkts-basicservices-errorcode-e.md)
   - [SslType](arkts-basicservices-ssltype-e.md)
+- [@ohos.resourceschedule.systemload](arkts-resourceschedule-systemload.md)
+  - [getLevel](arkts-basicservices-getlevel-f.md)
+  - [off](arkts-basicservices-off-f.md)
+  - [on](arkts-basicservices-on-f.md)<!--Del-->
+  - [SystemLoadLevel(系统接口)](arkts-basicservices-systemloadlevel-e.md)<!--DelEnd-->
 - [@ohos.runningLock](arkts-runninglock.md)
   - [create](arkts-basicservices-create-f.md)
   - [createRunningLock](arkts-basicservices-createrunninglock-f.md)

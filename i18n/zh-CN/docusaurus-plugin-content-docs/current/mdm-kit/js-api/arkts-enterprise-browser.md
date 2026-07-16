@@ -1,6 +1,14 @@
 # @ohos.enterprise.browser
 
-本模块提供浏览器管理能力，包括设置/取消浏览器策略、获取浏览器策略等。 浏览器策略指通过配置或管理浏览器行为的一系列规则和设置，以确保安全性、合规性、性能优化和用户体验的一致性。 > **说明：** > > 本模块接口仅可在Stage模型下使用。 > > 本模块接口仅对设备管理应用开放，且调用接口前需激活设备管理应用，具体请参考[MDM Kit开发指南](../../../../mdm/mdm-kit-guide.md)。
+本模块提供浏览器管理能力，包括设置/取消浏览器策略、获取浏览器策略等。
+
+浏览器策略指通过配置或管理浏览器行为的一系列规则和设置，以确保安全性、合规性、性能优化和用户体验的一致性。
+
+> **说明：**
+>
+> 本模块接口仅可在Stage模型下使用。
+>
+> 本模块接口仅对设备管理应用开放，且调用接口前需激活设备管理应用，具体请参考[MDM Kit开发指南](../../../../mdm/mdm-kit-guide.md)。
 
 **起始版本：** 10
 
@@ -16,7 +24,7 @@
 | [getPoliciesSync](arkts-mdm-getpoliciessync-f.md#getpoliciessync-1) | 通过appid获取指定浏览器设置的策略。 |
 | [getSelfManagedBrowserPolicy](arkts-mdm-getselfmanagedbrowserpolicy-f.md#getselfmanagedbrowserpolicy-1) | 获取当前设备浏览器策略。 |
 | [getSelfManagedBrowserPolicyVersion](arkts-mdm-getselfmanagedbrowserpolicyversion-f.md#getselfmanagedbrowserpolicyversion-1) | 获取指定浏览器的浏览器策略版本。 |
-| [setManagedBrowserPolicy](arkts-mdm-setmanagedbrowserpolicy-f.md#setmanagedbrowserpolicy-1) | 为指定的浏览器设置浏览器策略，成功后会发布系统公共事件 [COMMON_EVENT_MANAGED_BROWSER_POLICY_CHANGED](../../../../reference/apis-basic-services-kit/common_event/commonEventManager-definitions.md#common_event_managed_browser_policy_changed) 。 |
+| [setManagedBrowserPolicy](arkts-mdm-setmanagedbrowserpolicy-f.md#setmanagedbrowserpolicy-1) | 为指定的浏览器设置浏览器策略，成功后会发布系统公共事件[COMMON_EVENT_MANAGED_BROWSER_POLICY_CHANGED](../../../../reference/apis-basic-services-kit/common_event/commonEventManager-definitions.md#common_event_managed_browser_policy_changed)。 |
 | [setPolicySync](arkts-mdm-setpolicysync-f.md#setpolicysync-1) | 为指定的浏览器设置浏览器子策略。 |
 
 <!--Del-->

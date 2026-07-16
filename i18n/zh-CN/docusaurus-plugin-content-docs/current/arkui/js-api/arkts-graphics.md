@@ -62,7 +62,7 @@
 | --- | --- |
 | [BorderRadiuses](arkts-arkui-borderradiuses-t.md) | 设置四个角的圆角半径。 |
 | [CornerRadius](arkts-arkui-cornerradius-t.md) | 设置四个角的圆角x轴与y轴的半轴长。 |
-| [Matrix4](arkts-arkui-matrix4-t.md) | 设置四阶矩阵。 用于设置组件的变换信息，该类型为一个 4x4 矩阵，使用一个长度为16的`number[]`进行表示，各number取值范围：(-∞, +∞)。例如： ``` const transform: Matrix4 = [ 1, 0, 45, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ] ```。 |
+| [Matrix4](arkts-arkui-matrix4-t.md) | 设置四阶矩阵。用于设置组件的变换信息，该类型为一个 4x4 矩阵，使用一个长度为16的`number[]`进行表示，各number取值范围：(-∞, +∞)。例如：```const transform: Matrix4 = [1, 0, 45, 0,0, 1, 0, 0,0, 0, 1, 0,0, 0, 0, 1]```。 |
 | [Offset](arkts-arkui-offset-t.md) | 用于设置组件或效果的偏移。 |
 | [Pivot](arkts-arkui-pivot-t.md) | 用于设置组件的轴心坐标，轴心会作为组件的旋转/缩放中心点，影响旋转和缩放效果。轴心的x和y轴坐标为浮点数，默认值为0.5， 取值范围为[0.0, 1.0]。 |
 | [Position](arkts-arkui-position-t.md) | 用于设置或返回组件的位置。 |

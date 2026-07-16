@@ -1,6 +1,10 @@
 # NodeController
 
-Implements a NodeController instance to manage the bound {@link node_container} component. One NodeController instance can be bound to only one {@link node_container} component. For best practices, see [Dynamic Component Creation: Dynamically Adding, Updating, and Deleting Components] (https://developer.huawei.com/consumer/en/doc/best-practices/bpta-ui-dynamic-operations#section153921947151012).
+Implements a NodeController instance to manage the bound
+{@link node_container} component.
+One NodeController instance can be bound to only one {@link node_container} component.
+For best practices, see [Dynamic Component Creation: Dynamically Adding, Updating, and Deleting Components]
+(https://developer.huawei.com/consumer/en/doc/best-practices/bpta-ui-dynamic-operations#section153921947151012).
 
 **Since:** 11
 
@@ -12,7 +16,12 @@ Implements a NodeController instance to manage the bound {@link node_container} 
 aboutToAppear?(): void
 ```
 
-Called after the [NodeContainer](../arkts-components/arkts-arkui-nodecontainer.md) component bound to this **NodeController** instance is attached and about to appear. > **NOTE** > > For details about the callback timing, see [onAppear](../arkts-components/arkts-arkui-commonmethod-c.md#onappear-1).
+Called after the [NodeContainer](../arkts-components/arkts-arkui-nodecontainer.md) component bound to this **NodeController** instance is
+attached and about to appear.
+
+> **NOTE**
+>
+> For details about the callback timing, see [onAppear](../arkts-components/arkts-arkui-commonmethod-c.md#onappear-1).
 
 **Since:** 11
 
@@ -28,7 +37,12 @@ Called after the [NodeContainer](../arkts-components/arkts-arkui-nodecontainer.m
 aboutToDisappear?(): void
 ```
 
-Called when the [NodeContainer](../arkts-components/arkts-arkui-nodecontainer.md) component bound to this **NodeController** instance is destroyed. > **NOTE** > > For details about the callback timing, see [onDisAppear](../arkts-components/arkts-arkui-commonmethod-c.md#ondisappear-1).
+Called when the [NodeContainer](../arkts-components/arkts-arkui-nodecontainer.md) component bound to this **NodeController** instance is
+destroyed.
+
+> **NOTE**
+>
+> For details about the callback timing, see [onDisAppear](../arkts-components/arkts-arkui-commonmethod-c.md#ondisappear-1).
 
 **Since:** 11
 
@@ -44,7 +58,8 @@ Called when the [NodeContainer](../arkts-components/arkts-arkui-nodecontainer.md
 aboutToResize?(size: Size): void
 ```
 
-Called when the [NodeContainer](../arkts-components/arkts-arkui-nodecontainer.md) component bound to this **NodeController** instance is resized.
+Called when the [NodeContainer](../arkts-components/arkts-arkui-nodecontainer.md) component bound to this **NodeController** instance is
+resized.
 
 **Since:** 11
 
@@ -66,7 +81,20 @@ Called when the [NodeContainer](../arkts-components/arkts-arkui-nodecontainer.md
 abstract makeNode(uiContext: UIContext): FrameNode | null
 ```
 
-Called when the [NodeContainer](../arkts-components/arkts-arkui-nodecontainer.md) component bound to this **NodeController** instance is created. This callback returns a node, which will be mounted to the **NodeContainer**. This callback can also be invoked through the **rebuild()** method of **NodeController**. > **NOTE** > > [NodeContainer](../arkts-components/arkts-arkui-nodecontainer.md) does not support cross-instance reuse. If > [NodeContainer](../arkts-components/arkts-arkui-nodecontainer.md) is reused across instances and [NodeController](arkts-arkui-nodecontroller-c.md) of > [NodeContainer](../arkts-components/arkts-arkui-nodecontainer.md) triggers the [makeNode](arkts-arkui-nodecontroller-c.md#makenode-1) callback method, the > [UIContext](arkts-arkui-uicontext.md) object in the input parameter may be undefined. In this case, you need > to check whether the [UIContext](arkts-arkui-uicontext.md) object in the input parameter is undefined, which > prevents the [invalid UIContext](../../../../ui/arkts-wrong-uicontext-debug.md#identifying-uicontext-errors) when > the input parameter is used.
+Called when the [NodeContainer](../arkts-components/arkts-arkui-nodecontainer.md) component bound to this **NodeController** instance is
+created. This callback returns a node, which will be mounted to the **NodeContainer**.
+
+This callback can also be invoked through the **rebuild()** method of **NodeController**.
+
+> **NOTE**
+>
+> [NodeContainer](../arkts-components/arkts-arkui-nodecontainer.md) does not support cross-instance reuse. If
+> [NodeContainer](../arkts-components/arkts-arkui-nodecontainer.md) is reused across instances and [NodeController](arkts-arkui-nodecontroller-c.md) of
+> [NodeContainer](../arkts-components/arkts-arkui-nodecontainer.md) triggers the [makeNode](arkts-arkui-nodecontroller-c.md#makenode-1) callback method, the
+> [UIContext](arkts-arkui-uicontext.md) object in the input parameter may be undefined. In this case, you need
+> to check whether the [UIContext](arkts-arkui-uicontext.md) object in the input parameter is undefined, which
+> prevents the [invalid UIContext](../../../../ui/arkts-wrong-uicontext-debug.md#identifying-uicontext-errors) when
+> the input parameter is used.
 
 **Since:** 11
 
@@ -94,7 +122,12 @@ Called when the [NodeContainer](../arkts-components/arkts-arkui-nodecontainer.md
 onAttach?(): void
 ```
 
-Called when the [NodeContainer](../arkts-components/arkts-arkui-nodecontainer.md) component bound to this **NodeController** instance is attached to the main node tree. > **NOTE** > > For details about the callback timing, see [onAttach](../arkts-components/arkts-arkui-commonmethod-c.md#onattach-1).
+Called when the [NodeContainer](../arkts-components/arkts-arkui-nodecontainer.md) component bound to this **NodeController** instance is
+attached to the main node tree.
+
+> **NOTE**
+>
+> For details about the callback timing, see [onAttach](../arkts-components/arkts-arkui-commonmethod-c.md#onattach-1).
 
 **Since:** 18
 
@@ -132,7 +165,12 @@ Called after this **NodeController** instance is bound to a [NodeContainer](../a
 onDetach?(): void
 ```
 
-Called when the [NodeContainer](../arkts-components/arkts-arkui-nodecontainer.md) component bound to this **NodeController** instance is detached from the main node tree. > **NOTE** > > For details about the callback timing, see [onDetach](../arkts-components/arkts-arkui-commonmethod-c.md#ondetach-1).
+Called when the [NodeContainer](../arkts-components/arkts-arkui-nodecontainer.md) component bound to this **NodeController** instance is
+detached from the main node tree.
+
+> **NOTE**
+>
+> For details about the callback timing, see [onDetach](../arkts-components/arkts-arkui-commonmethod-c.md#ondetach-1).
 
 **Since:** 18
 
@@ -148,7 +186,8 @@ Called when the [NodeContainer](../arkts-components/arkts-arkui-nodecontainer.md
 onTouchEvent?(event: TouchEvent): void
 ```
 
-Called when the [NodeContainer](../arkts-components/arkts-arkui-nodecontainer.md) component bound to this **NodeController** instance receives a touch event.
+Called when the [NodeContainer](../arkts-components/arkts-arkui-nodecontainer.md) component bound to this **NodeController** instance receives
+a touch event.
 
 **Since:** 11
 
@@ -192,7 +231,8 @@ Called after this **NodeController** instance is unbound from a [NodeContainer](
 onWillBind?(containerId: number): void
 ```
 
-Called when this **NodeController** instance is about to be bound to a [NodeContainer](../arkts-components/arkts-arkui-nodecontainer.md) component.
+Called when this **NodeController** instance is about to be bound to a [NodeContainer](../arkts-components/arkts-arkui-nodecontainer.md)
+component.
 
 **Since:** 18
 
@@ -214,7 +254,8 @@ Called when this **NodeController** instance is about to be bound to a [NodeCont
 onWillUnbind?(containerId: number): void
 ```
 
-Called when this **NodeController** instance is about to be unbound from a [NodeContainer](../arkts-components/arkts-arkui-nodecontainer.md) component.
+Called when this **NodeController** instance is about to be unbound from a [NodeContainer](../arkts-components/arkts-arkui-nodecontainer.md)
+component.
 
 **Since:** 18
 
@@ -236,7 +277,18 @@ Called when this **NodeController** instance is about to be unbound from a [Node
 rebuild(): void
 ```
 
-Instructs the [NodeContainer](../arkts-components/arkts-arkui-nodecontainer.md) component bound to this **NodeController** instance to call the [makeNode](arkts-arkui-nodecontroller-c.md#makenode-1) API again to change child nodes. > **NOTE** > > Since the **rebuild** API is actively called by the application and is tied to the UI, you need to ensure that > the UI context is valid at the time of the call, that is, it must be consistent with the UI context of the bound > NodeContainer. > > In cases where the [UI context is unclear](../../../../ui/arkts-global-interface.md#ambiguous-ui-context), for > example, during event callbacks, you can use the > [runScopedTask](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#runscopedtask) method of > [UIContext](arkts-arkui-uicontext.md) to explicitly define the UI context at the time of the call.
+Instructs the [NodeContainer](../arkts-components/arkts-arkui-nodecontainer.md) component bound to this **NodeController** instance to call the
+[makeNode](arkts-arkui-nodecontroller-c.md#makenode-1) API again to change child nodes.
+
+> **NOTE**
+> > Since the **rebuild** API is actively called by the application and is tied to the UI, you need to ensure that
+> the UI context is valid at the time of the call, that is, it must be consistent with the UI context of the bound
+> NodeContainer.
+>
+> In cases where the [UI context is unclear](../../../../ui/arkts-global-interface.md#ambiguous-ui-context), for
+> example, during event callbacks, you can use the
+> [runScopedTask](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#runscopedtask) method of
+> [UIContext](arkts-arkui-uicontext.md) to explicitly define the UI context at the time of the call.
 
 **Since:** 11
 

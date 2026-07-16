@@ -1,6 +1,11 @@
 # InputMethodExtensionAbility
 
-The **InputMethodExtensionAbility** module provides APIs for developing input methods and managing the lifecycle of input method extensions. > **NOTE** > > - The APIs of this module can be used only in the stage model.
+The **InputMethodExtensionAbility** module provides APIs for developing input methods and managing the lifecycle of
+input method extensions.
+
+> **NOTE**
+>
+> - The APIs of this module can be used only in the stage model.
 
 **Since:** 9
 

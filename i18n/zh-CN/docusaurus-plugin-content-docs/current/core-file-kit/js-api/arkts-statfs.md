@@ -6,7 +6,7 @@
 
 **废弃版本：** 9
 
-**替代接口：** [statvfs:statfs](arkts-file-statvfs.md#statfs)
+**替代接口：** [statvfs:statfs](arkts-file-statvfs.md)
 
 **系统能力：** SystemCapability.FileManagement.File.FileIO
 

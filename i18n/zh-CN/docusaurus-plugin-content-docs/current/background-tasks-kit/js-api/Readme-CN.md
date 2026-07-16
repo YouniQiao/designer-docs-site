@@ -60,6 +60,7 @@
   - [DataShareUpdate(系统接口)](arkts-backgroundtasks-datashareupdate-i-sys.md)<!--DelEnd-->
   - [LocalDateTime](arkts-backgroundtasks-localdatetime-i.md)
   - [MaxScreenWantAgent](arkts-backgroundtasks-maxscreenwantagent-i.md)
+  - [NotificationRequestProxy](arkts-backgroundtasks-notificationrequestproxy-i.md)
   - [ReminderInfo](arkts-backgroundtasks-reminderinfo-i.md)
   - [ReminderRequest](arkts-backgroundtasks-reminderrequest-i.md)<!--Del-->
   - [ReminderRequest(系统接口)](arkts-backgroundtasks-reminderrequest-i-sys.md)<!--DelEnd-->
@@ -73,6 +74,7 @@
   - [ActionButtonType(系统接口)](arkts-backgroundtasks-actionbuttontype-e-sys.md)<!--DelEnd-->
   - [ReminderType](arkts-backgroundtasks-remindertype-e.md)
   - [RingChannel](arkts-backgroundtasks-ringchannel-e.md)
+  - [TimeZoneType](arkts-backgroundtasks-timezonetype-e.md)
 - [@ohos.resourceschedule.backgroundProcessManager](arkts-resourceschedule-backgroundprocessmanager.md)
   - [getPowerSaveMode](arkts-backgroundtasks-getpowersavemode-f.md)
   - [isPowerSaveMode](arkts-backgroundtasks-ispowersavemode-f.md)

@@ -1,6 +1,7 @@
 # @ohos.filemanagement.userFileManager
 
-The **userFileManager** module provides user data management capabilities, including accessing and modifying user media data.
+The **userFileManager** module provides user data management capabilities, including accessing and modifying user
+media data.
 
 **Since:** 9
 
@@ -42,7 +43,7 @@ import { userFileManager } from '@kit.CoreFileKit';
 | [FileAsset](arkts-corefile-fileasset-i-sys.md) | Provides APIs for encapsulating file asset attributes. |
 | [PeerInfo](arkts-corefile-peerinfo-i-sys.md) | Defines information about a registered device. |
 | [PhotoCreateOptions](arkts-corefile-photocreateoptions-i-sys.md) | Defines the options for creating an image or video asset. |
-| [PrivateAlbum](arkts-corefile-privatealbum-i-sys.md) | Provides APIs for managing the system albums. This API will be deprecated. Use [Album](arkts-corefile-album-i-sys.md) instead. |
+| [PrivateAlbum](arkts-corefile-privatealbum-i-sys.md) | Provides APIs for managing the system albums.This API will be deprecated. Use [Album](arkts-corefile-album-i-sys.md) instead. |
 | [UserFileManager](arkts-corefile-userfilemanager-i-sys.md) | Defines the UserFileManager class and provides functions to access the data in user file storage. |
 <!--DelEnd-->
 
@@ -61,7 +62,7 @@ import { userFileManager } from '@kit.CoreFileKit';
 | [NotifyType](arkts-corefile-notifytype-e-sys.md) | Enumerates the notification event types. |
 | [PhotoSubType](arkts-corefile-photosubtype-e-sys.md) | Enumerates the [FileAsset](arkts-corefile-fileasset-i-sys.md) types. |
 | [PositionType](arkts-corefile-positiontype-e-sys.md) | Enumerates the file location. |
-| [PrivateAlbumType](arkts-corefile-privatealbumtype-e-sys.md) | Enumerates the system album types. This API will be deprecated. Use [AlbumType](arkts-corefile-albumtype-e-sys.md) and [AlbumSubType](arkts-corefile-albumsubtype-e-sys.md) instead. |
+| [PrivateAlbumType](arkts-corefile-privatealbumtype-e-sys.md) | Enumerates the system album types.This API will be deprecated. Use [AlbumType](arkts-corefile-albumtype-e-sys.md) and [AlbumSubType](arkts-corefile-albumsubtype-e-sys.md) instead. |
 <!--DelEnd-->
 
 <!--Del-->

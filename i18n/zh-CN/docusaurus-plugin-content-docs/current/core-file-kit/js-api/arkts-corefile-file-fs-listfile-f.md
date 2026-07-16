@@ -9,7 +9,9 @@ declare function listFile(
 ): Promise<string[]>
 ```
 
-默认列出当前目录下所有文件名和目录名。支持过滤。使用promise异步回调。 可通过配置options中recursion参数实现递归列出所有文件的相对路径，相对路径以“/”开头。
+默认列出当前目录下所有文件名和目录名。支持过滤。使用promise异步回调。
+
+可通过配置options中recursion参数实现递归列出所有文件的相对路径，相对路径以“/”开头。
 
 **起始版本：** 9
 
@@ -47,7 +49,9 @@ declare function listFile(
 declare function listFile(path: string, callback: AsyncCallback<string[]>): void
 ```
 
-默认列出当前目录下所有文件名和目录名。支持过滤。使用callback异步回调。 可通过配置options中recursion参数实现递归列出所有文件的相对路径，相对路径以“/”开头。
+默认列出当前目录下所有文件名和目录名。支持过滤。使用callback异步回调。
+
+可通过配置options中recursion参数实现递归列出所有文件的相对路径，相对路径以“/”开头。
 
 **起始版本：** 9
 
@@ -83,7 +87,9 @@ declare function listFile(
 ): void
 ```
 
-默认列出当前目录下所有文件名和目录名。支持过滤。使用callback异步回调。 可通过配置options中recursion参数实现递归列出所有文件的相对路径，相对路径以“/”开头。
+默认列出当前目录下所有文件名和目录名。支持过滤。使用callback异步回调。
+
+可通过配置options中recursion参数实现递归列出所有文件的相对路径，相对路径以“/”开头。
 
 **起始版本：** 9
 

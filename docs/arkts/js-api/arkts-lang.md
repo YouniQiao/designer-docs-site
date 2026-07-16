@@ -1,9 +1,11 @@
 # @arkts.lang
 
+ArkTS language
+
 ## Modules to Import
 
 ```TypeScript
-import { Retention,RetentionPolicy } from '@kit.ArkTS';
+import { Retention, RetentionPolicy } from '@kit.ArkTS';
 ```
 
 ## Summary
@@ -12,11 +14,11 @@ import { Retention,RetentionPolicy } from '@kit.ArkTS';
 
 | Name | Description |
 | --- | --- |
-| [lang](arkts-lang-n.md) | ArkTS语言。 |
+| [lang](arkts-arkts-lang-n.md) | ArkTS language |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [RetentionPolicy](arkts-retentionpolicy-e.md) | 描述注解类型保留策略的枚举类型。其枚举值和Retention结合使用，以指定注解的生命周期。 |
+| [RetentionPolicy](arkts-arkts-retentionpolicy-e.md) | Enum for Retention annotation field type. |
 

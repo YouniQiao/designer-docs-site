@@ -1,6 +1,6 @@
 # LazyForEach属性/事件
 
-支持[拖拽排序](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common)属性。
+支持[拖拽排序](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)属性。
 
 **继承/实现关系：** LazyForEachAttribute extends [DynamicNode<LazyForEachAttribute>](DynamicNode<LazyForEachAttribute>)
 

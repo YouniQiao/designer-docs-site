@@ -1,18 +1,30 @@
 # ValueType
 
 ```TypeScript
-type ValueType = number | string | boolean
+type ValueType = number | number | number | string | boolean | image.PixelMap | Want | ArrayBuffer | object | null | undefined
 ```
 
-用于表示允许的数据字段类型。
+用于表示统一数据记录允许的数据字段类型。
 
-**起始版本：** 6
+**起始版本：** 12
 
-**废弃版本：** 9
+**模型约束：** 此接口仅可在Stage模型下使用。
+
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
+
+**系统能力：** SystemCapability.DistributedDataManager.UDMF.Core
 
 | 类型 | 说明 |
 | --- | --- |
-| number | 表示值类型为数字。 |
-| string | 表示值类型为字符串。 |
-| boolean | 表示值类型为布尔值。 |
+| int | 表示Int的类型。 |
+| long | 表示Long的类型。 |
+| double | 表示Double的类型。 |
+| string | 表示string的类型。 |
+| boolean | 表示boolean的类型。 |
+| image.PixelMap | 表示[image.PixelMap]{ |
+| Want | 表示[Want]{ |
+| ArrayBuffer | 表示ArrayBuffer的类型。 |
+| object | 表示object的类型。 |
+| null | 表示null。 |
+| undefined | 表示undefined。 |
 

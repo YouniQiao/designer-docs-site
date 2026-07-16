@@ -2,7 +2,7 @@
 
 Defines XComponent Node.
 
-**Inheritance/Implementation:** XComponentNode extends [FrameNode](arkts-arkui-framenode-c.md#framenode)
+**Inheritance/Implementation:** XComponentNode extends [FrameNode](arkts-arkui-framenode-c.md)
 
 **Since:** 11
 

@@ -2,13 +2,24 @@
 
 Defines the interface for setting a save button.
 
+
 ## SaveButton
 
 ```TypeScript
 SaveButton()
 ```
 
-Creates a **SaveButton** component with an icon, text, and background. When the user taps the save button for the first time, a dialog will pop up. Once the user grants permission, the app obtains temporary authorization to access media library APIs. No dialog box will appear for subsequent uses. <br>In API version 19 or earlier, authorization remains valid for 10 seconds. After authorization expires, existing file handles acquired during the valid period remain available for read and write operations. <br>In API version 20 or later, authorization remains valid for 1 minute. After authorization expires, existing file handles acquired during the valid period remain available for read and write operations. <br>**Description**</br> <ul><li>You may want to learn the [restrictions on security component styles](docroot://security/AccessToken/security-component-overview.md#constraints) to avoid authorization failures caused by incompliant styles.</li></ul>
+Creates a **SaveButton** component with an icon, text, and background. When the user taps the save button for the
+first time, a dialog will pop up. Once the user grants permission, the app obtains temporary authorization to
+access media library APIs. No dialog box will appear for subsequent uses.
+<br>In API version 19 or earlier, authorization remains valid for 10 seconds. After authorization expires, existing
+file handles acquired during the valid period remain available for read and write operations.
+<br>In API version 20 or later, authorization remains valid for 1 minute. After authorization expires, existing
+file handles acquired during the valid period remain available for read and write operations.
+<br>**Description**</br>
+<ul><li>You may want to learn the [restrictions on security component
+styles](docroot://security/AccessToken/security-component-overview.md#constraints) to avoid authorization failures
+caused by incompliant styles.</li></ul>
 
 **Since:** 10
 
@@ -24,7 +35,18 @@ Creates a **SaveButton** component with an icon, text, and background. When the 
 SaveButton(options: SaveButtonOptions)
 ```
 
-Creates a save button with the specified icon, text and button type. When the user taps the save button for the first time, a dialog will pop up. Once the user grants permission, the app obtains temporary authorization to access media library APIs. No dialog box will appear for subsequent uses. <br>In API version 19 or earlier, authorization remains valid for 10 seconds. After authorization expires, existing file handles acquired during the valid period remain available for read and write operations. <br>In API version 20 or later, authorization remains valid for 1 minute. After authorization expires, existing file handles acquired during the valid period remain available for read and write operations. <br>**Description**</br> <ul><li>You may want to learn the [restrictions on security component styles](docroot://security/AccessToken/security-component-overview.md#constraints) to avoid authorization failures caused by incompliant styles.</li></ul>
+Creates a save button with the specified icon, text and button type. When the user taps the save button for the
+first time, a dialog will pop up. Once the user grants permission, the app obtains temporary authorization to
+access media library APIs. No dialog box will appear for subsequent uses.
+<br>In API version 19 or earlier, authorization remains valid for 10 seconds. After authorization expires, existing
+file handles acquired during the valid period remain available for read and write operations.
+<br>In API version 20 or later, authorization remains valid for 1 minute. After authorization expires, existing
+file handles acquired during the valid period remain available for read and write operations.
+<br>**Description**</br>
+<ul><li>You may want to learn the
+[restrictions on security
+component styles](docroot://security/AccessToken/security-component-overview.md#constraints)
+to avoid authorization failures caused by incompliant styles.</li></ul>
 
 **Since:** 10
 

@@ -1,6 +1,10 @@
 # Stepper
 
-The **Stepper** component provides a step navigator, suitable for guiding users through a step-by-step task completion process. > **NOTE**
+The **Stepper** component provides a step navigator, suitable for guiding users through a step-by-step task
+completion process.
+
+> **NOTE**
+
 
 ## Stepper
 
@@ -8,7 +12,9 @@ The **Stepper** component provides a step navigator, suitable for guiding users 
 Stepper(value?: { index?: number })
 ```
 
-Creates a **Stepper** component. > **NOTE**
+Creates a **Stepper** component.
+
+> **NOTE**
 
 **Since:** 8
 

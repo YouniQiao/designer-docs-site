@@ -25,7 +25,7 @@ import { serial } from '@kit.BasicServicesKit';
 
 | Name | Description |
 | --- | --- |
-| [addPortAuthorization](arkts-basicservices-addportauthorization-f-sys.md#addportauthorization-1) | Adds the permission for applications to access the serial port. This API is open only to system applications that display a pop-up window for serial port authorization. |
+| [addPortAuthorization](arkts-basicservices-addportauthorization-f-sys.md#addportauthorization-1) | Adds the permission for applications to access the serial port.This API is open only to system applications that display a pop-up window for serial port authorization. |
 <!--DelEnd-->
 
 ### Interfaces

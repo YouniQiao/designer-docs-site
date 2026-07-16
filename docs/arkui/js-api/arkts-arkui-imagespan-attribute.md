@@ -1,6 +1,10 @@
 # ImageSpan properties/events
 
-The attributes inherit from [BaseSpan](arkts-arkui-basespan-c.md). Among the universal attributes, [size](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), [background](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), and [border](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) are supported. Among all the universal events, only the [click event](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) is supported. The following events are also supported.
+The attributes inherit from [BaseSpan](arkts-arkui-basespan-c.md). Among the universal attributes, [size](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md),
+[background](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), and [border](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) are supported.
+
+Among all the universal events, only the [click event](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) is supported. The following events are also
+supported.
 
 **Inheritance/Implementation:** ImageSpanAttribute extends [BaseSpan<ImageSpanAttribute>](BaseSpan<ImageSpanAttribute>)
 
@@ -124,7 +128,11 @@ Triggered when an error occurs during image loading.
 supportSvg2(enable: Optional<boolean>)
 ```
 
-Sets whether to enable [enhanced SVG tag parsing](../../../../reference/apis-arkui/arkui-ts/ts-image-svg2-capabilities.md). When this feature is enabled, SVG image rendering behavior changes accordingly. After the **ImageSpan** component is created, the value of this attribute cannot be dynamically changed.
+Sets whether to enable
+[enhanced SVG tag parsing](../../../../reference/apis-arkui/arkui-ts/ts-image-svg2-capabilities.md). When this
+feature is enabled, SVG image rendering behavior changes accordingly.
+
+After the **ImageSpan** component is created, the value of this attribute cannot be dynamically changed.
 
 **Since:** 22
 

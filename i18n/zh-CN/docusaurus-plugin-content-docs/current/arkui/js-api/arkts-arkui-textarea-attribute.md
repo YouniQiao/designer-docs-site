@@ -1,6 +1,8 @@
 # TextArea属性/事件
 
-除支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)，还支持以下属性： 除支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持以下事件：
+除支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)，还支持以下属性：
+
+除支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持以下事件：
 
 **继承/实现关系：** TextAreaAttribute extends [CommonMethod<TextAreaAttribute>](CommonMethod<TextAreaAttribute>)
 
@@ -100,7 +102,13 @@ caretStyle(value: CaretStyle)
 compressLeadingPunctuation(enabled: Optional<boolean>)
 ```
 
-设置是否开启行首标点符号压缩。 > **说明：** > > - 行首标点符号默认不压缩。 > > - 支持压缩的标点符号，请参考[ParagraphStyle](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-paragraphstyle-i.md)的行首压缩的标点范围。
+设置是否开启行首标点符号压缩。
+
+> **说明：**
+>
+> - 行首标点符号默认不压缩。
+>
+> - 支持压缩的标点符号，请参考[ParagraphStyle](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-paragraphstyle-i.md)的行首压缩的标点范围。
 
 **起始版本：** 23
 
@@ -144,7 +152,9 @@ contentType(contentType: ContentType)
 copyOption(value: CopyOptions)
 ```
 
-设置输入的文本是否可复制。设置CopyOptions.None时，只支持粘贴和全选。 设置CopyOptions.None时，不支持拖拽操作。
+设置输入的文本是否可复制。设置CopyOptions.None时，只支持粘贴和全选。
+
+设置CopyOptions.None时，不支持拖拽操作。
 
 **起始版本：** 9
 
@@ -164,7 +174,28 @@ copyOption(value: CopyOptions)
 customKeyboard(value: CustomBuilder | ComponentContent | undefined, options?: KeyboardOptions)
 ```
 
-设置自定义键盘。 当设置自定义键盘时，输入框激活后不会打开系统输入法，而是加载指定的自定义组件。 自定义键盘的高度可以通过自定义组件根节点的height属性设置，宽度则使用系统默认值。 自定义键盘采用覆盖原始界面的方式呈现，当没有开启避让模式或者输入框不需要避让的场景，不会对应用原始界面产生压缩或者上提。 自定义键盘无法获取焦点，但是会拦截手势事件。 默认在输入控件失去焦点时，关闭自定义键盘，开发者也可以通过[TextAreaController](arkts-arkui-textareacontroller-c.md). [stopEditing](arkts-arkui-textareacontroller-c.md#stopediting-1)方法控制键盘关闭。 当设置自定义键盘时，可以通过绑定[onKeyPreIme](arkts-arkui-commonmethod-c.md#onkeypreime-1)事件规避物理键盘的输入。 从API version 23开始，自定义键盘可以通过 [setCustomKeyboardContinueFeature](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#setcustomkeyboardcontinuefeature23) 开启接续，在切换至其他自定义键盘时，会直接切换，不会触发键盘关闭和拉起动画。 > **说明：** > > 该接口不支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+设置自定义键盘。
+
+当设置自定义键盘时，输入框激活后不会打开系统输入法，而是加载指定的自定义组件。
+
+自定义键盘的高度可以通过自定义组件根节点的height属性设置，宽度则使用系统默认值。
+
+自定义键盘采用覆盖原始界面的方式呈现，当没有开启避让模式或者输入框不需要避让的场景，不会对应用原始界面产生压缩或者上提。
+
+自定义键盘无法获取焦点，但是会拦截手势事件。
+
+默认在输入控件失去焦点时，关闭自定义键盘，开发者也可以通过[TextAreaController](arkts-arkui-textareacontroller-c.md).
+[stopEditing](arkts-arkui-textareacontroller-c.md#stopediting-1)方法控制键盘关闭。
+
+当设置自定义键盘时，可以通过绑定[onKeyPreIme](arkts-arkui-commonmethod-c.md#onkeypreime-1)事件规避物理键盘的输入。
+
+从API version 23开始，自定义键盘可以通过
+[setCustomKeyboardContinueFeature](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#setcustomkeyboardcontinuefeature23)
+开启接续，在切换至其他自定义键盘时，会直接切换，不会触发键盘关闭和拉起动画。
+
+> **说明：**
+>
+> 该接口不支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 10
 
@@ -209,7 +240,11 @@ decoration(value: TextDecorationOptions)
 editMenuOptions(editMenu: EditMenuOptions)
 ```
 
-设置自定义菜单扩展项，允许用户设置扩展项的文本内容、图标、回调方法。 调用[disableMenuItems](../../../../reference/apis-arkui/arkts-apis-uicontext-textmenucontroller.md#disablemenuitems20)或 [disableSystemServiceMenuItems](../../../../reference/apis-arkui/arkts-apis-uicontext-textmenucontroller.md#disablesystemservicemenuitems20) 接口屏蔽文本选择菜单内的系统服务菜单项时，editMenuOptions接口内回调方法[onCreateMenu](arkts-arkui-editmenuoptions-i.md#oncreatemenu-1)的入参列表中不包含被屏蔽的菜单选项。
+设置自定义菜单扩展项，允许用户设置扩展项的文本内容、图标、回调方法。
+
+调用[disableMenuItems](../../../../reference/apis-arkui/arkts-apis-uicontext-textmenucontroller.md#disablemenuitems20)或
+[disableSystemServiceMenuItems](../../../../reference/apis-arkui/arkts-apis-uicontext-textmenucontroller.md#disablesystemservicemenuitems20)
+接口屏蔽文本选择菜单内的系统服务菜单项时，editMenuOptions接口内回调方法[onCreateMenu](arkts-arkui-editmenuoptions-i.md#oncreatemenu-1)的入参列表中不包含被屏蔽的菜单选项。
 
 **起始版本：** 12
 
@@ -231,7 +266,10 @@ editMenuOptions(editMenu: EditMenuOptions)
 ellipsisMode(mode: Optional<EllipsisMode>)
 ```
 
-设置省略位置。ellipsisMode属性需要配合[textOverflow](TextAreaAttribute#textOverflow)设置为TextOverflow.Ellipsis以及 [maxLines](TextAreaAttribute#maxLines(value: number))使用，单独设置ellipsisMode属性不生效。 EllipsisMode.START和EllipsisMode.CENTER仅在[maxLines](TextAreaAttribute#maxLines(value: number))设置为1生效。
+设置省略位置。ellipsisMode属性需要配合[textOverflow](TextAreaAttribute#textOverflow)设置为TextOverflow.Ellipsis以及
+[maxLines](TextAreaAttribute#maxLines(value: number))使用，单独设置ellipsisMode属性不生效。
+
+EllipsisMode.START和EllipsisMode.CENTER仅在[maxLines](TextAreaAttribute#maxLines(value: number))设置为1生效。
 
 **起始版本：** 18
 
@@ -253,7 +291,9 @@ ellipsisMode(mode: Optional<EllipsisMode>)
 enableAutoFill(value: boolean)
 ```
 
-设置是否启用自动填充。<!--RP2--><!--RP2End--> <!--RP6--><!--RP6End-->
+设置是否启用自动填充。<!--RP2--><!--RP2End-->
+
+<!--RP6--><!--RP6End-->
 
 **起始版本：** 12
 
@@ -297,7 +337,10 @@ enableAutoSpacing(enabled: Optional<boolean>)
 enableHapticFeedback(isEnabled: boolean)
 ```
 
-设置是否开启触控反馈。 开启触控反馈时，需要在工程的[module.json5](../../../../quick-start/module-configuration-file.md)中配置requestPermissions字段以开启振动权限，配置如 下：
+设置是否开启触控反馈。
+
+开启触控反馈时，需要在工程的[module.json5](../../../../quick-start/module-configuration-file.md)中配置requestPermissions字段以开启振动权限，配置如
+下：
 
 **起始版本：** 13
 
@@ -319,7 +362,9 @@ enableHapticFeedback(isEnabled: boolean)
 enableKeyboardOnFocus(value: boolean)
 ```
 
-设置TextArea通过点击以外的方式获焦时，是否主动拉起软键盘。 从API version 10开始，获焦默认绑定输入法。
+设置TextArea通过点击以外的方式获焦时，是否主动拉起软键盘。
+
+从API version 10开始，获焦默认绑定输入法。
 
 **起始版本：** 10
 
@@ -341,7 +386,9 @@ enableKeyboardOnFocus(value: boolean)
 enablePreviewText(enable: boolean)
 ```
 
-设置是否开启输入预上屏。 预上屏内容定义为文字暂存态，目前不支持文字拦截功能。
+设置是否开启输入预上屏。
+
+预上屏内容定义为文字暂存态，目前不支持文字拦截功能。
 
 **起始版本：** 12
 
@@ -363,7 +410,11 @@ enablePreviewText(enable: boolean)
 enableSelectedDataDetector(enable: boolean | undefined)
 ```
 
-设置是否对选中文本进行实体识别。该接口依赖设备底层应具有文本识别能力，否则设置不会生效。 当enableSelectedDataDetector设置为true时，默认识别所有类型的实体。 需要[CopyOptions](../../apis-core-file-kit/arkts-apis/arkts-corefile-copyoptions-i.md)为CopyOptions.LocalDevice或CopyOptions.CROSS_DEVICE时，本功能生效。
+设置是否对选中文本进行实体识别。该接口依赖设备底层应具有文本识别能力，否则设置不会生效。
+
+当enableSelectedDataDetector设置为true时，默认识别所有类型的实体。
+
+需要[CopyOptions](../../apis-core-file-kit/arkts-apis/arkts-corefile-copyoptions-i.md)为CopyOptions.LocalDevice或CopyOptions.CROSS_DEVICE时，本功能生效。
 
 **起始版本：** 22
 
@@ -385,7 +436,11 @@ enableSelectedDataDetector(enable: boolean | undefined)
 enterKeyType(value: EnterKeyType)
 ```
 
-设置输入法回车键类型。 > **说明：** > > 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+设置输入法回车键类型。
+
+> **说明：**
+>
+> 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 11
 
@@ -469,7 +524,15 @@ fontFamily(value: ResourceStr)
 fontFeature(value: string)
 ```
 
-设置文字特性效果，比如数字等宽的特性。 格式为：normal \| \<feature-tag-value\> \<feature-tag-value\>的格式为：\<string\> \[ \<integer\> \| on \| off ] \<feature-tag-value\>的个数可以有多个，中间用','隔开。 例如，使用等宽数字的输入格式为："ss01" on。
+设置文字特性效果，比如数字等宽的特性。
+
+格式为：normal \| \<feature-tag-value\>
+
+\<feature-tag-value\>的格式为：\<string\> \[ \<integer\> \| on \| off ]
+
+\<feature-tag-value\>的个数可以有多个，中间用','隔开。
+
+例如，使用等宽数字的输入格式为："ss01" on。
 
 **起始版本：** 12
 
@@ -573,7 +636,19 @@ halfLeading(halfLeading: Optional<boolean>)
 heightAdaptivePolicy(value: TextHeightAdaptivePolicy)
 ```
 
-设置文本自适应高度的方式。 当设置为TextHeightAdaptivePolicy.MAX_LINES_FIRST时，优先使用[maxLines](TextAreaAttribute#maxLines(value: number))属性来调整文 本高度。如果使用maxLines属性的布局大小超过了布局约束，则尝试在[minFontSize](TextAreaAttribute#minFontSize)和 [maxFontSize](TextAreaAttribute#maxFontSize)的范围内缩小字体以显示更多文本。 组件设置为内联输入风格，编辑态与非编辑态存在字体大小不一致情况。 当设置为TextHeightAdaptivePolicy.MIN_FONT_SIZE_FIRST时，优先使用minFontSize属性来调整文本高度。如果使用minFontSize属性可以将文本布局在一行中，则尝试在 minFontSize和maxFontSize的范围内增大字体并使用最大可能的字体大小。 当设置为TextHeightAdaptivePolicy.LAYOUT_CONSTRAINT_FIRST时，优先使用布局约束来调整文本高度。如果布局大小超过布局约束，则尝试在minFontSize和maxFontSize的范围内缩 小字体以满足布局约束。
+设置文本自适应高度的方式。
+
+当设置为TextHeightAdaptivePolicy.MAX_LINES_FIRST时，优先使用[maxLines](TextAreaAttribute#maxLines(value: number))属性来调整文
+本高度。如果使用maxLines属性的布局大小超过了布局约束，则尝试在[minFontSize](TextAreaAttribute#minFontSize)和
+[maxFontSize](TextAreaAttribute#maxFontSize)的范围内缩小字体以显示更多文本。
+
+组件设置为内联输入风格，编辑态与非编辑态存在字体大小不一致情况。
+
+当设置为TextHeightAdaptivePolicy.MIN_FONT_SIZE_FIRST时，优先使用minFontSize属性来调整文本高度。如果使用minFontSize属性可以将文本布局在一行中，则尝试在
+minFontSize和maxFontSize的范围内增大字体并使用最大可能的字体大小。
+
+当设置为TextHeightAdaptivePolicy.LAYOUT_CONSTRAINT_FIRST时，优先使用布局约束来调整文本高度。如果布局大小超过布局约束，则尝试在minFontSize和maxFontSize的范围内缩
+小字体以满足布局约束。
 
 **起始版本：** 12
 
@@ -595,7 +670,13 @@ heightAdaptivePolicy(value: TextHeightAdaptivePolicy)
 horizontalScrolling(enabled: Optional<boolean>)
 ```
 
-设置当文本宽度超过内容区宽度时是否启用水平滚动。未通过该接口设置时，禁用水平滚动。 > **说明：** > > 以下场景不支持水平滚动：设置[内联模式](../../../../ui/arkts-common-components-text-input.md#内联模式)<!--Del-->；启用 > [voiceButton](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-textarea-sys.md#voicebutton23)<!-- > DelEnd-->。
+设置当文本宽度超过内容区宽度时是否启用水平滚动。未通过该接口设置时，禁用水平滚动。
+
+> **说明：**
+>
+> 以下场景不支持水平滚动：设置[内联模式](../../../../ui/arkts-common-components-text-input.md#内联模式)<!--Del-->；启用
+> [voiceButton](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-textarea-sys.md#voicebutton23)<!--
+> DelEnd-->。
 
 **起始版本：** 24
 
@@ -639,7 +720,11 @@ includeFontPadding(include: Optional<boolean>)
 inputFilter(value: ResourceStr, error?: (value: string) => void)
 ```
 
-通过正则表达式设置输入过滤器。匹配表达式的输入允许显示，不匹配的输入将被过滤。 单字符输入场景仅支持单字符匹配，多字符输入场景支持字符串匹配，例如粘贴。 从API version 11开始，设置inputFilter且输入的字符不为空字符，会导致[type](TextAreaAttribute#type)接口附带的文本过滤效果失效。
+通过正则表达式设置输入过滤器。匹配表达式的输入允许显示，不匹配的输入将被过滤。
+
+单字符输入场景仅支持单字符匹配，多字符输入场景支持字符串匹配，例如粘贴。
+
+从API version 11开始，设置inputFilter且输入的字符不为空字符，会导致[type](TextAreaAttribute#type)接口附带的文本过滤效果失效。
 
 **起始版本：** 8
 
@@ -682,7 +767,11 @@ keyboardAppearance(appearance: Optional<KeyboardAppearance>)
 letterSpacing(value: number | string | Resource)
 ```
 
-设置文本字符间距。设置该值为百分比时，按默认值显示。当设置该值为0时，使用默认值。string类型支持number类型取值的字符串形式，可以附带单位，例如"10"、"10fp"。 当取值为负值时，文字会发生压缩，负值过小时会将组件内容区大小压缩为0，导致无内容显示。 对每个字符生效，包括行尾字符。
+设置文本字符间距。设置该值为百分比时，按默认值显示。当设置该值为0时，使用默认值。string类型支持number类型取值的字符串形式，可以附带单位，例如"10"、"10fp"。
+
+当取值为负值时，文字会发生压缩，负值过小时会将组件内容区大小压缩为0，导致无内容显示。
+
+对每个字符生效，包括行尾字符。
 
 **起始版本：** 12
 
@@ -815,7 +904,15 @@ maxFontScale(scale: Optional<number|Resource>)
 maxFontSize(value: number | string | Resource)
 ```
 
-设置文本最大显示字号。string类型支持number类型取值的字符串形式，可以附带单位，例如"10"、"10fp"。 需配合[minFontSize](TextAreaAttribute#minFontSize)以及[maxLines](TextAreaAttribute#maxLines(value: number))或 布局大小限制使用，单独设置不生效。 自适应字号生效时，fontSize设置不生效。 maxFontSize小于等于0或者maxFontSize小于minFontSize时，自适应字号不生效，此时按照[fontSize](TextAreaAttribute#fontSize)属性的值生效，未设置时按照其 默认值生效。
+设置文本最大显示字号。string类型支持number类型取值的字符串形式，可以附带单位，例如"10"、"10fp"。
+
+需配合[minFontSize](TextAreaAttribute#minFontSize)以及[maxLines](TextAreaAttribute#maxLines(value: number))或
+布局大小限制使用，单独设置不生效。
+
+自适应字号生效时，fontSize设置不生效。
+
+maxFontSize小于等于0或者maxFontSize小于minFontSize时，自适应字号不生效，此时按照[fontSize](TextAreaAttribute#fontSize)属性的值生效，未设置时按照其
+默认值生效。
 
 **起始版本：** 12
 
@@ -859,7 +956,8 @@ maxLength(value: number)
 maxLines(value: number)
 ```
 
-配置textOverflow一起使用时，maxLines为可显示行数，超出截断；未配置textOverflow时，内联模式获焦状态下内容超出maxLines时，文本可滚动显示，内联模式非获焦状态下不生效maxLines，非内联模式 按行截断。
+配置textOverflow一起使用时，maxLines为可显示行数，超出截断；未配置textOverflow时，内联模式获焦状态下内容超出maxLines时，文本可滚动显示，内联模式非获焦状态下不生效maxLines，非内联模式
+按行截断。
 
 **起始版本：** 10
 
@@ -881,7 +979,8 @@ maxLines(value: number)
 maxLines(lines: number, options: MaxLinesOptions)
 ```
 
-配置[textOverflow](TextAreaAttribute#textOverflow)一起使用时，maxLines为可显示行数，超出可配置为截断或滚动。未配置textOverflow时，内联模式获焦状态下内容 超出maxLines时，文本可滚动显示。内联模式非获焦状态下，maxLines不生效。
+配置[textOverflow](TextAreaAttribute#textOverflow)一起使用时，maxLines为可显示行数，超出可配置为截断或滚动。未配置textOverflow时，内联模式获焦状态下内容
+超出maxLines时，文本可滚动显示。内联模式非获焦状态下，maxLines不生效。
 
 **起始版本：** 20
 
@@ -926,7 +1025,14 @@ minFontScale(scale: Optional<number|Resource>)
 minFontSize(value: number | string | Resource)
 ```
 
-设置文本最小显示字号。string类型支持number类型取值的字符串形式，可以附带单位，例如"10"、"10fp"。 需配合[maxFontSize](TextAreaAttribute#maxFontSize)以及[maxLines](TextAreaAttribute#maxLines(value: number))或 布局大小限制使用，单独设置不生效。 自适应字号生效时，fontSize设置不生效。 minFontSize小于或等于0时，自适应字号不生效，此时按照[fontSize](TextAreaAttribute#fontSize)属性的值生效，未设置时按照其默认值生效。
+设置文本最小显示字号。string类型支持number类型取值的字符串形式，可以附带单位，例如"10"、"10fp"。
+
+需配合[maxFontSize](TextAreaAttribute#maxFontSize)以及[maxLines](TextAreaAttribute#maxLines(value: number))或
+布局大小限制使用，单独设置不生效。
+
+自适应字号生效时，fontSize设置不生效。
+
+minFontSize小于或等于0时，自适应字号不生效，此时按照[fontSize](TextAreaAttribute#fontSize)属性的值生效，未设置时按照其默认值生效。
 
 **起始版本：** 12
 
@@ -948,7 +1054,8 @@ minFontSize(value: number | string | Resource)
 minLines(lines: Optional<number>)
 ```
 
-设置最小行数。组件的高度将根据lines自动调整，确保显示高度不低于lines对应的高度。如果设置了[constraintSize](arkts-arkui-commonmethod-c.md#constraintsize-1)，那么组件最后显示高度会在 [constraintSize](arkts-arkui-commonmethod-c.md#constraintsize-1)约束内。
+设置最小行数。组件的高度将根据lines自动调整，确保显示高度不低于lines对应的高度。如果设置了[constraintSize](arkts-arkui-commonmethod-c.md#constraintsize-1)，那么组件最后显示高度会在
+[constraintSize](arkts-arkui-commonmethod-c.md#constraintsize-1)约束内。
 
 **起始版本：** 20
 
@@ -970,7 +1077,10 @@ minLines(lines: Optional<number>)
 onChange(callback: EditableTextOnChangeCallback)
 ```
 
-输入内容发生变化时，触发该回调。 在本回调中，若执行了光标操作，需要开发者在预上屏场景下依据[EditableTextOnChangeCallback](arkts-arkui-editabletextonchangecallback-t.md)的previewText参数调整光标逻 辑，以适应预上屏场景。
+输入内容发生变化时，触发该回调。
+
+在本回调中，若执行了光标操作，需要开发者在预上屏场景下依据[EditableTextOnChangeCallback](arkts-arkui-editabletextonchangecallback-t.md)的previewText参数调整光标逻
+辑，以适应预上屏场景。
 
 **起始版本：** 7
 
@@ -1204,7 +1314,18 @@ onTextSelectionChange(callback: (selectionStart: number, selectionEnd: number) =
 onWillAttachIME(callback: Callback<IMEClient> | undefined)
 ```
 
-在输入框将要绑定输入法前触发该回调。 <!--Del--> 在输入框将要绑定输入法前，可以通过`UIContext`的系统接口 [setKeyboardAppearanceConfig](../arkts-apis/arkts-arkui-uicontext-c-sys.md#setkeyboardappearanceconfig-1)设置键盘的样式。<!--DelEnd- -> 从API version 22开始，调用[IMEClient](../../../../reference/apis-arkui/arkui-ts/ts-text-common.md#imeclient20对象说明)的 [setExtraConfig](arkts-arkui-imeclient-i.md#setextraconfig-1)方法可以设置输入法扩展信息。在绑定输入法成功后，输入法会收到扩展信息，输入法可以依据此信息实现自定义功能。 IMEClient仅在onWillAttachIME执行期间有效，不可进行异步调用。
+在输入框将要绑定输入法前触发该回调。
+
+<!--Del-->
+
+在输入框将要绑定输入法前，可以通过`UIContext`的系统接口
+[setKeyboardAppearanceConfig](../arkts-apis/arkts-arkui-uicontext-c-sys.md#setkeyboardappearanceconfig-1)设置键盘的样式。<!--DelEnd-
+->
+
+从API version 22开始，调用[IMEClient](../../../../reference/apis-arkui/arkui-ts/ts-text-common.md#imeclient20对象说明)的
+[setExtraConfig](arkts-arkui-imeclient-i.md#setextraconfig-1)方法可以设置输入法扩展信息。在绑定输入法成功后，输入法会收到扩展信息，输入法可以依据此信息实现自定义功能。
+
+IMEClient仅在onWillAttachIME执行期间有效，不可进行异步调用。
 
 **起始版本：** 22
 
@@ -1226,7 +1347,9 @@ onWillAttachIME(callback: Callback<IMEClient> | undefined)
 onWillChange(callback: Callback<EditableTextChangeValue, boolean>)
 ```
 
-在文本内容将要发生变化时，触发该回调。 onWillChange的回调时序晚于onWillInsert、onWillDelete，早于onDidInsert、onDidDelete。
+在文本内容将要发生变化时，触发该回调。
+
+onWillChange的回调时序晚于onWillInsert、onWillDelete，早于onDidInsert、onDidDelete。
 
 **起始版本：** 15
 
@@ -1336,7 +1459,11 @@ onWillInsert(callback: Callback<InsertValue, boolean>)
 orphanCharOptimization(enabled: Optional<boolean>)
 ```
 
-设置文本排版时是否使能孤字优化。不通过该接口设置，默认不使能孤字优化。 孤字优化通过更高效地处理孤立字符（段落尾行首字符）来改善文本布局。使能后，它会调整换行点以尽可能避免孤立字符。孤字优化特性需在[wordBreak](TextAreaAttribute#wordBreak)为非 BREAK_ALL并且待排版文本首个[TextStyle](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-textstyle-i.md)的 [locale](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-textstyle-i.md)为“zh-Hans”或“zh-Hant”时生效。
+设置文本排版时是否使能孤字优化。不通过该接口设置，默认不使能孤字优化。
+
+孤字优化通过更高效地处理孤立字符（段落尾行首字符）来改善文本布局。使能后，它会调整换行点以尽可能避免孤立字符。孤字优化特性需在[wordBreak](TextAreaAttribute#wordBreak)为非
+BREAK_ALL并且待排版文本首个[TextStyle](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-textstyle-i.md)的
+[locale](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-textstyle-i.md)为“zh-Hans”或“zh-Hant”时生效。
 
 **起始版本：** 26.0.0
 
@@ -1376,7 +1503,11 @@ placeholderColor(value: ResourceColor)
 placeholderFont(value: Font)
 ```
 
-设置placeholder文本样式，包括字体大小、字体粗细、字体族、字体风格。 > **说明：** > > 可以使用[loadFontSync](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-fontcollection-c.md#loadfontsync-1)注册自定义字体。
+设置placeholder文本样式，包括字体大小、字体粗细、字体族、字体风格。
+
+> **说明：**
+>
+> 可以使用[loadFontSync](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-fontcollection-c.md#loadfontsync-1)注册自定义字体。
 
 **起始版本：** 7
 
@@ -1506,7 +1637,13 @@ selectionMenuHidden(value: boolean)
 shaderStyle(shader: ShaderStyle | undefined)
 ```
 
-设置文本着色器效果，如线性渐变、径向渐变效果等。 > **说明：** > > 当同时设置shaderStyle和[strokeWidth](TextAreaAttribute#strokeWidth)时，shaderStyle不生效。 > > shaderStyle的优先级高于[fontColor](TextAreaAttribute#fontColor)。
+设置文本着色器效果，如线性渐变、径向渐变效果等。
+
+> **说明：**
+>
+> 当同时设置shaderStyle和[strokeWidth](TextAreaAttribute#strokeWidth)时，shaderStyle不生效。
+>
+> shaderStyle的优先级高于[fontColor](TextAreaAttribute#fontColor)。
 
 **起始版本：** 26.0.0
 
@@ -1528,7 +1665,15 @@ shaderStyle(shader: ShaderStyle | undefined)
 showCounter(value: boolean, options?: InputCounterOptions)
 ```
 
-设置当通过InputCounterOptions输入的字符数超过阈值时显示计数器。未调用showCounter接口时，默认不显示计数器。 参数value为true时，才能设置options，文本框开启计数器功能，需要配合maxLength（设置最大字符限制）一起使用。字符计数器显示的效果是当前输入字符数/最大可输入字符数。 当输入字符数大于最大字符数乘百分比值时，显示字符计数器。如果用户设置计数器时不设置InputCounterOptions，那么当前输入字符数达到最大字符数时，边框和计数器下标将变为红色。用户同时设置参数value为true和 InputCounterOptions，当thresholdPercentage数值在有效区间内，且输入字符数超过最大字符数时，边框和计数器下标将变为红色，框体抖动。highlightBorder设置为false，则不显示红色边 框，计数器默认显示红色边框。内联模式下字符计数器不显示。 [示例2（设置计数器）](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-textarea.md#示例2设置计数器)展示了设置showCounter的效果。
+设置当通过InputCounterOptions输入的字符数超过阈值时显示计数器。未调用showCounter接口时，默认不显示计数器。
+
+参数value为true时，才能设置options，文本框开启计数器功能，需要配合maxLength（设置最大字符限制）一起使用。字符计数器显示的效果是当前输入字符数/最大可输入字符数。
+
+当输入字符数大于最大字符数乘百分比值时，显示字符计数器。如果用户设置计数器时不设置InputCounterOptions，那么当前输入字符数达到最大字符数时，边框和计数器下标将变为红色。用户同时设置参数value为true和
+InputCounterOptions，当thresholdPercentage数值在有效区间内，且输入字符数超过最大字符数时，边框和计数器下标将变为红色，框体抖动。highlightBorder设置为false，则不显示红色边
+框，计数器默认显示红色边框。内联模式下字符计数器不显示。
+
+[示例2（设置计数器）](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-textarea.md#示例2设置计数器)展示了设置showCounter的效果。
 
 **起始版本：** 10
 
@@ -1661,7 +1806,17 @@ style(value: TextContentStyle)
 textAlign(value: TextAlign)
 ```
 
-设置文本在输入框中的水平对齐方式。 支持TextAlign.Start、TextAlign.Center和TextAlign.End。从API version 11开始，新增TextAlign.JUSTIFY选项。 可通过[align](arkts-arkui-commonmethod-c.md#align-1)属性控制文本段落在垂直方向上的位置，此组件中不可通过align属性控制文本段落在水平方向上的位置。 - Alignment.TopStart、Alignment.Top、Alignment.TopEnd：内容顶部对齐。 - Alignment.Start、Alignment.Center、Alignment.End：内容垂直居中。 - Alignment.BottomStart、Alignment.Bottom、Alignment.BottomEnd：内容底部对齐。 当textAlign属性设置为TextAlign.JUSTIFY时，最后一行文本不参与两端对齐，为水平对齐首部效果。
+设置文本在输入框中的水平对齐方式。
+
+支持TextAlign.Start、TextAlign.Center和TextAlign.End。从API version 11开始，新增TextAlign.JUSTIFY选项。
+
+可通过[align](arkts-arkui-commonmethod-c.md#align-1)属性控制文本段落在垂直方向上的位置，此组件中不可通过align属性控制文本段落在水平方向上的位置。
+
+- Alignment.TopStart、Alignment.Top、Alignment.TopEnd：内容顶部对齐。
+- Alignment.Start、Alignment.Center、Alignment.End：内容垂直居中。
+- Alignment.BottomStart、Alignment.Bottom、Alignment.BottomEnd：内容底部对齐。
+
+当textAlign属性设置为TextAlign.JUSTIFY时，最后一行文本不参与两端对齐，为水平对齐首部效果。
 
 **起始版本：** 7
 
@@ -1725,7 +1880,18 @@ textIndent(value: Dimension)
 textOverflow(value: TextOverflow)
 ```
 
-设置文本超长时的显示方式。 内联模式，主动配置textOverflow才会生效按[maxLines](TextAreaAttribute#maxLines(value: number))截断效果，不配置时，默认不截断。 文本截断是按字截断。例如，英文以单词为最小单位进行截断，若需要以字母为单位进行截断，[wordBreak](arkts-arkui-wordbreak-e.md)属性可设置为WordBreak.BREAK_ALL。 当textOverflow设置为TextOverflow.None、TextOverflow.Clip、TextOverflow.Ellipsis时，需配合 [maxLines](TextAreaAttribute#maxLines(value: number))使用，单独设置不生效。设置TextOverflow.None与TextOverflow.Clip效果一样。 > **说明：** > > TextArea组件不支持设置TextOverflow.MARQUEE模式，当设置为TextOverflow.MARQUEE模式时，显示为TextOverflow.Clip。
+设置文本超长时的显示方式。
+
+内联模式，主动配置textOverflow才会生效按[maxLines](TextAreaAttribute#maxLines(value: number))截断效果，不配置时，默认不截断。
+
+文本截断是按字截断。例如，英文以单词为最小单位进行截断，若需要以字母为单位进行截断，[wordBreak](arkts-arkui-wordbreak-e.md)属性可设置为WordBreak.BREAK_ALL。
+
+当textOverflow设置为TextOverflow.None、TextOverflow.Clip、TextOverflow.Ellipsis时，需配合
+[maxLines](TextAreaAttribute#maxLines(value: number))使用，单独设置不生效。设置TextOverflow.None与TextOverflow.Clip效果一样。
+
+> **说明：**
+>
+> TextArea组件不支持设置TextOverflow.MARQUEE模式，当设置为TextOverflow.MARQUEE模式时，显示为TextOverflow.Clip。
 
 **起始版本：** 12
 
@@ -1747,7 +1913,9 @@ textOverflow(value: TextOverflow)
 type(value: TextAreaType)
 ```
 
-设置输入框类型。 不同的TextAreaType会拉起对应类型的键盘，同时限制输入。
+设置输入框类型。
+
+不同的TextAreaType会拉起对应类型的键盘，同时限制输入。
 
 **起始版本：** 11
 

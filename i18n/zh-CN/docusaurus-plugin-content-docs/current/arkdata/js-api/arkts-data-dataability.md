@@ -1,34 +1,28 @@
 # @ohos.data.dataAbility
 
-The **DataAbility** module provides APIs to create predicates for querying data from relational database (RDB) stores.
+DataAbility谓词用于构造关系型数据库的谓词，提供用于实现不同查询方法的谓词。
 
 **起始版本：** 7
 
 **系统能力：** SystemCapability.DistributedDataManager.DataShare.Core
 
-## 导入模块
-
-```TypeScript
-import { dataAbility } from '@kit.ArkData';
-```
-
 ## 汇总
 
 ### 函数
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| [createRdbPredicates](arkts-dataability-createrdbpredicates-f.md#createRdbPredicates-1) | Creates an **RdbPredicates** object with a table name and **DataAbilityPredicates** object. |
+| [createRdbPredicates](arkts-arkdata-createrdbpredicates-f.md#createrdbpredicates-1) | 通过表名和DataAbility谓词对象创建Rdb谓词对象。 |
 
 ### 类
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| [DataAbilityPredicates](arkts-dataability-dataabilitypredicates-c.md) | Provides APIs for creating diverse query conditions. |
+| [DataAbilityPredicates](arkts-arkdata-dataabilitypredicates-c.md) | 提供用于实现不同查询方法的谓词。 |
 
 ### 类型
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| [ValueType](arkts-dataability-valuetype-t.md) | Defines the value types. |
+| [ValueType](arkts-arkdata-valuetype-t.md) | 用于表示允许的数据字段类型。 |
 

@@ -14,7 +14,11 @@
 arrowModifier(modifier: Optional<SymbolGlyphModifier>)
 ```
 
-定制Select按钮下拉箭头图标样式的方法，在应用arrowModifier之后，Select按钮下拉箭头的图标样式将完全由开发者自定义。 > **说明：** > > 该接口不支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+定制Select按钮下拉箭头图标样式的方法，在应用arrowModifier之后，Select按钮下拉箭头的图标样式将完全由开发者自定义。
+
+> **说明：**
+>
+> 该接口不支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 20
 
@@ -58,7 +62,8 @@ arrowPosition(value: ArrowPosition)
 arrowPosition(position: Optional<ArrowPosition>)
 ```
 
-设置下拉菜单项的文本与箭头之间的对齐方式。与[arrowPosition](SelectAttribute#arrowPosition(value: ArrowPosition))相比，position参数新增了对 undefined类型的支持。
+设置下拉菜单项的文本与箭头之间的对齐方式。与[arrowPosition](SelectAttribute#arrowPosition(value: ArrowPosition))相比，position参数新增了对
+undefined类型的支持。
 
 **起始版本：** 18
 
@@ -124,7 +129,8 @@ controlSize(value: ControlSize)
 controlSize(size: Optional<ControlSize>)
 ```
 
-设置Select组件的尺寸。与[controlSize](SelectAttribute#controlSize(value: ControlSize))<sup>12+</sup>相比，size参数新增了对 undefined类型的支持。
+设置Select组件的尺寸。与[controlSize](SelectAttribute#controlSize(value: ControlSize))<sup>12+</sup>相比，size参数新增了对
+undefined类型的支持。
 
 **起始版本：** 18
 
@@ -210,7 +216,8 @@ font(value: Font)
 font(selectFont: Optional<Font>)
 ```
 
-设置下拉按钮本身的文本样式。当size为0时，文本不显示，当size为负值时，文本的size按照默认值显示。与[font](SelectAttribute#font(value: Font))相比，selectFont 参数新增了对undefined类型的支持。
+设置下拉按钮本身的文本样式。当size为0时，文本不显示，当size为负值时，文本的size按照默认值显示。与[font](SelectAttribute#font(value: Font))相比，selectFont
+参数新增了对undefined类型的支持。
 
 **起始版本：** 18
 
@@ -319,7 +326,8 @@ menuAlign(alignType: MenuAlignType, offset?: Offset)
 menuAlign(alignType: Optional<MenuAlignType>, offset?: Offset)
 ```
 
-设置下拉按钮与下拉菜单间的对齐方式。与[menuAlign](SelectAttribute#menuAlign(alignType: MenuAlignType, offset?: Offset))<sup>10+< /sup>相比，alignType参数新增了对undefined类型的支持。
+设置下拉按钮与下拉菜单间的对齐方式。与[menuAlign](SelectAttribute#menuAlign(alignType: MenuAlignType, offset?: Offset))<sup>10+<
+/sup>相比，alignType参数新增了对undefined类型的支持。
 
 **起始版本：** 18
 
@@ -342,7 +350,11 @@ menuAlign(alignType: Optional<MenuAlignType>, offset?: Offset)
 menuBackgroundBlurStyle(value: BlurStyle)
 ```
 
-设置下拉菜单的背景模糊材质。 > **说明：** > > 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+设置下拉菜单的背景模糊材质。
+
+> **说明：**
+>
+> 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 11
 
@@ -364,7 +376,8 @@ menuBackgroundBlurStyle(value: BlurStyle)
 menuBackgroundBlurStyle(style: Optional<BlurStyle>)
 ```
 
-设置下拉菜单的背景模糊材质。与[menuBackgroundBlurStyle](SelectAttribute#menuBackgroundBlurStyle(value: BlurStyle))<sup>11+</ sup>相比，style参数新增了对undefined类型的支持。
+设置下拉菜单的背景模糊材质。与[menuBackgroundBlurStyle](SelectAttribute#menuBackgroundBlurStyle(value: BlurStyle))<sup>11+</
+sup>相比，style参数新增了对undefined类型的支持。
 
 **起始版本：** 18
 
@@ -408,7 +421,11 @@ menuBackgroundBlurStyleOptions(blurStyle: Optional<BackgroundBlurStyleOptions>)
 menuBackgroundColor(value: ResourceColor)
 ```
 
-设置下拉菜单的背景色。 > **说明：** > > 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+设置下拉菜单的背景色。
+
+> **说明：**
+>
+> 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 11
 
@@ -430,7 +447,8 @@ menuBackgroundColor(value: ResourceColor)
 menuBackgroundColor(resColor: Optional<ResourceColor>)
 ```
 
-设置下拉菜单的背景色。与[menuBackgroundColor](SelectAttribute#menuBackgroundColor(value: ResourceColor))<sup>11+</sup>相比， resColor参数新增了对undefined类型的支持。
+设置下拉菜单的背景色。与[menuBackgroundColor](SelectAttribute#menuBackgroundColor(value: ResourceColor))<sup>11+</sup>相比，
+resColor参数新增了对undefined类型的支持。
 
 **起始版本：** 18
 
@@ -474,7 +492,11 @@ menuBackgroundEffect(effect: Optional<BackgroundEffectOptions>)
 menuItemContentModifier(modifier: ContentModifier<MenuItemConfiguration>)
 ```
 
-定制Select下拉菜单项内容区的方法。在应用了menuItemContentModifier后，下拉菜单的内容将完全由开发者自定义，此时为Select组件设置的分割线、选项颜色及下拉菜单的字体颜色等属性将不再生效。 > **说明：** > > 该接口不支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+定制Select下拉菜单项内容区的方法。在应用了menuItemContentModifier后，下拉菜单的内容将完全由开发者自定义，此时为Select组件设置的分割线、选项颜色及下拉菜单的字体颜色等属性将不再生效。
+
+> **说明：**
+>
+> 该接口不支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 12
 
@@ -496,7 +518,14 @@ menuItemContentModifier(modifier: ContentModifier<MenuItemConfiguration>)
 menuItemContentModifier(modifier: Optional<ContentModifier<MenuItemConfiguration>>)
 ```
 
-定制Select下拉菜单项内容区的方法。与 [menuItemContentModifier](SelectAttribute#menuItemContentModifier(modifier: ContentModifier<MenuItemConfiguration>)) <sup>12+</sup>相比，modifier参数新增了对undefined类型的支持。在应用了menuItemContentModifier后，下拉菜单的内容将完全由开发者自定义，此时为Select组件设置的分割线、选项颜色 及下拉菜单的字体颜色等属性将不再生效。 > **说明：** > > 该接口不支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+定制Select下拉菜单项内容区的方法。与
+[menuItemContentModifier](SelectAttribute#menuItemContentModifier(modifier: ContentModifier<MenuItemConfiguration>))
+<sup>12+</sup>相比，modifier参数新增了对undefined类型的支持。在应用了menuItemContentModifier后，下拉菜单的内容将完全由开发者自定义，此时为Select组件设置的分割线、选项颜色
+及下拉菜单的字体颜色等属性将不再生效。
+
+> **说明：**
+>
+> 该接口不支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 18
 
@@ -540,7 +569,8 @@ menuOutline(outline: MenuOutlineOptions)
 minKeyboardAvoidDistance(distance: Optional<LengthMetrics>)
 ```
 
-设置Select的菜单避让软键盘的最小距离。未通过该接口设置，最小距离默认为8vp。仅当[keyboardAvoidMode](SelectAttribute#keyboardAvoidMode)设置为避让软键盘时生 效。
+设置Select的菜单避让软键盘的最小距离。未通过该接口设置，最小距离默认为8vp。仅当[keyboardAvoidMode](SelectAttribute#keyboardAvoidMode)设置为避让软键盘时生
+效。
 
 **起始版本：** 23
 
@@ -582,7 +612,8 @@ onSelect(callback: (index: number, value: string) => void)
 onSelect(callback: Optional<OnSelectCallback>)
 ```
 
-下拉菜单选中某一项时，会触发回调。与[onSelect](SelectAttribute#onSelect(callback: (index: number, value: string) => void))相比， callback参数新增了对undefined类型的支持。
+下拉菜单选中某一项时，会触发回调。与[onSelect](SelectAttribute#onSelect(callback: (index: number, value: string) => void))相比，
+callback参数新增了对undefined类型的支持。
 
 **起始版本：** 18
 
@@ -624,7 +655,8 @@ optionBgColor(value: ResourceColor)
 optionBgColor(resColor: Optional<ResourceColor>)
 ```
 
-设置下拉菜单项的背景色。与[optionBgColor](SelectAttribute#optionBgColor(value: ResourceColor))相比，resColor参数新增了对undefined类型 的支持。
+设置下拉菜单项的背景色。与[optionBgColor](SelectAttribute#optionBgColor(value: ResourceColor))相比，resColor参数新增了对undefined类型
+的支持。
 
 **起始版本：** 18
 
@@ -666,7 +698,9 @@ optionFont(value: Font)
 optionFont(selectFont: Optional<Font>)
 ```
 
-设置下拉菜单项的文本样式。当size为0的时候，文本不显示，当size为负值的时候，文本的size按照默认值显示。 与[optionFont](SelectAttribute#optionFont(value: Font))相比，selectFont参数新增了对undefined类型的支持。
+设置下拉菜单项的文本样式。当size为0的时候，文本不显示，当size为负值的时候，文本的size按照默认值显示。
+
+与[optionFont](SelectAttribute#optionFont(value: Font))相比，selectFont参数新增了对undefined类型的支持。
 
 **起始版本：** 18
 
@@ -708,7 +742,8 @@ optionFontColor(value: ResourceColor)
 optionFontColor(resColor: Optional<ResourceColor>)
 ```
 
-设置下拉菜单项的文本颜色。与[optionFontColor](SelectAttribute#optionFontColor(value: ResourceColor))相比，resColor参数新增了对 undefined类型的支持。
+设置下拉菜单项的文本颜色。与[optionFontColor](SelectAttribute#optionFontColor(value: ResourceColor))相比，resColor参数新增了对
+undefined类型的支持。
 
 **起始版本：** 18
 
@@ -730,7 +765,11 @@ optionFontColor(resColor: Optional<ResourceColor>)
 optionHeight(value: Dimension)
 ```
 
-设置下拉菜单显示的最大高度，不支持设置百分比。默认最大高度是屏幕可用高度的80%，设置的菜单最大高度不能超过默认最大高度。 当设置为异常值或零时，属性不生效。 如果下拉菜单所有选项的实际高度没有设定的高度大，下拉菜单的高度按实际高度显示。
+设置下拉菜单显示的最大高度，不支持设置百分比。默认最大高度是屏幕可用高度的80%，设置的菜单最大高度不能超过默认最大高度。
+
+当设置为异常值或零时，属性不生效。
+
+如果下拉菜单所有选项的实际高度没有设定的高度大，下拉菜单的高度按实际高度显示。
 
 **起始版本：** 11
 
@@ -752,7 +791,12 @@ optionHeight(value: Dimension)
 optionHeight(height: Optional<Dimension>)
 ```
 
-设置下拉菜单显示的最大高度，不支持设置百分比。默认最大高度是屏幕可用高度的80%，设置的菜单最大高度不能超过默认最大高度。与 [optionHeight](SelectAttribute#optionHeight(value: Dimension))<sup>11+</sup>相比，height参数新增了对undefined类型的支持。 当设置为异常值或零时，属性不生效。 如果下拉菜单所有选项的实际高度小于设定的高度，下拉菜单的高度按实际高度显示。
+设置下拉菜单显示的最大高度，不支持设置百分比。默认最大高度是屏幕可用高度的80%，设置的菜单最大高度不能超过默认最大高度。与
+[optionHeight](SelectAttribute#optionHeight(value: Dimension))<sup>11+</sup>相比，height参数新增了对undefined类型的支持。
+
+当设置为异常值或零时，属性不生效。
+
+如果下拉菜单所有选项的实际高度小于设定的高度，下拉菜单的高度按实际高度显示。
 
 **起始版本：** 18
 
@@ -774,7 +818,15 @@ optionHeight(height: Optional<Dimension>)
 optionTextModifier(modifier: Optional<TextModifier>)
 ```
 
-定制Select下拉菜单未选中项文本样式的方法，在应用optionTextModifier之后，下拉菜单未选中项的文本样式将完全由开发者自定义。 如果[optionFont](SelectAttribute#optionFont(value: Font))与optionTextModifier的Font属性同时设置，则优先使用 [optionFont](SelectAttribute#optionFont(value: Font))设置下拉菜单未选中项的文本样式； [optionFont](SelectAttribute#optionFont(value: Font))中缺省的属性将设置为对应的默认值。 > **说明：** > > 该接口不支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+定制Select下拉菜单未选中项文本样式的方法，在应用optionTextModifier之后，下拉菜单未选中项的文本样式将完全由开发者自定义。
+
+如果[optionFont](SelectAttribute#optionFont(value: Font))与optionTextModifier的Font属性同时设置，则优先使用
+[optionFont](SelectAttribute#optionFont(value: Font))设置下拉菜单未选中项的文本样式；
+[optionFont](SelectAttribute#optionFont(value: Font))中缺省的属性将设置为对应的默认值。
+
+> **说明：**
+>
+> 该接口不支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 20
 
@@ -796,7 +848,11 @@ optionTextModifier(modifier: Optional<TextModifier>)
 optionWidth(value: Dimension | OptionWidthMode )
 ```
 
-设置下拉菜单项的宽度，不支持设置百分比。OptionWidthMode类型为枚举类型，OptionWidthMode决定下拉菜单是否继承下拉按钮宽度。 当设置为异常值或小于最小宽度56vp时，属性无效，菜单项宽度设为默认值，即2栅格。 Select组件距屏幕边缘的左右间距为16vp，建议将组件本身及菜单项的宽度设置为小于等于`calc(100% - 32vp)`的值，以避免下拉菜单弹出时发生偏移。
+设置下拉菜单项的宽度，不支持设置百分比。OptionWidthMode类型为枚举类型，OptionWidthMode决定下拉菜单是否继承下拉按钮宽度。
+
+当设置为异常值或小于最小宽度56vp时，属性无效，菜单项宽度设为默认值，即2栅格。
+
+Select组件距屏幕边缘的左右间距为16vp，建议将组件本身及菜单项的宽度设置为小于等于`calc(100% - 32vp)`的值，以避免下拉菜单弹出时发生偏移。
 
 **起始版本：** 11
 
@@ -818,7 +874,13 @@ optionWidth(value: Dimension | OptionWidthMode )
 optionWidth(width: Optional<Dimension | OptionWidthMode> )
 ```
 
-设置下拉菜单项的宽度，不支持设置百分比。OptionWidthMode类型为枚举类型，OptionWidthMode决定下拉菜单是否继承下拉按钮宽度。与 [optionWidth](SelectAttribute#optionWidth(value: Dimension | OptionWidthMode ))<sup>11+</sup>相比，width参数新增了对 undefined类型的支持。 当设置为异常值或小于最小宽度56vp时，属性无效，菜单项宽度设为默认值，即2栅格。 Select组件距屏幕边缘的左右间距为16vp，建议将组件本身及菜单项的宽度设置为小于等于`calc(100% - 32vp)`的值，以避免下拉菜单弹出时发生偏移。
+设置下拉菜单项的宽度，不支持设置百分比。OptionWidthMode类型为枚举类型，OptionWidthMode决定下拉菜单是否继承下拉按钮宽度。与
+[optionWidth](SelectAttribute#optionWidth(value: Dimension | OptionWidthMode ))<sup>11+</sup>相比，width参数新增了对
+undefined类型的支持。
+
+当设置为异常值或小于最小宽度56vp时，属性无效，菜单项宽度设为默认值，即2栅格。
+
+Select组件距屏幕边缘的左右间距为16vp，建议将组件本身及菜单项的宽度设置为小于等于`calc(100% - 32vp)`的值，以避免下拉菜单弹出时发生偏移。
 
 **起始版本：** 18
 
@@ -840,7 +902,11 @@ optionWidth(width: Optional<Dimension | OptionWidthMode> )
 selected(value: number | Resource)
 ```
 
-设置下拉菜单初始选项的索引，第一项的索引为0。当不设置selected属性或设置为异常值时，默认选中值为-1，菜单项不选中；当设置为undefined、null时，选中第一项。 从API version 10开始，该属性支持[$$](../../../../ui/state-management/arkts-two-way-sync.md)双向绑定变量。 从API version 18开始，该属性支持[!!](../../../../ui/state-management/arkts-new-binding.md#系统组件参数双向绑定)双向绑定变量。
+设置下拉菜单初始选项的索引，第一项的索引为0。当不设置selected属性或设置为异常值时，默认选中值为-1，菜单项不选中；当设置为undefined、null时，选中第一项。
+
+从API version 10开始，该属性支持[$$](../../../../ui/state-management/arkts-two-way-sync.md)双向绑定变量。
+
+从API version 18开始，该属性支持[!!](../../../../ui/state-management/arkts-new-binding.md#系统组件参数双向绑定)双向绑定变量。
 
 **起始版本：** 8
 
@@ -860,7 +926,10 @@ selected(value: number | Resource)
 selected(numCount: Optional<number | Resource>)
 ```
 
-设置下拉菜单初始选项的索引，第一项的索引为0。当不设置selected属性或设置异常值时，默认选择值为-1，菜单项不选中；当设置为undefined、null时，选中第一项。 该属性支持[$$](../../../../ui/state-management/arkts-two-way-sync.md)、 [!!](../../../../ui/state-management/arkts-new-binding.md#系统组件参数双向绑定)双向绑定变量。
+设置下拉菜单初始选项的索引，第一项的索引为0。当不设置selected属性或设置异常值时，默认选择值为-1，菜单项不选中；当设置为undefined、null时，选中第一项。
+
+该属性支持[$$](../../../../ui/state-management/arkts-two-way-sync.md)、
+[!!](../../../../ui/state-management/arkts-new-binding.md#系统组件参数双向绑定)双向绑定变量。
 
 **起始版本：** 18
 
@@ -902,7 +971,8 @@ selectedOptionBgColor(value: ResourceColor)
 selectedOptionBgColor(resColor: Optional<ResourceColor>)
 ```
 
-设置下拉菜单选中项的背景色。与[selectedOptionBgColor](SelectAttribute#selectedOptionBgColor(value: ResourceColor))相比， resColor参数新增了对undefined类型的支持。
+设置下拉菜单选中项的背景色。与[selectedOptionBgColor](SelectAttribute#selectedOptionBgColor(value: ResourceColor))相比，
+resColor参数新增了对undefined类型的支持。
 
 **起始版本：** 18
 
@@ -944,7 +1014,8 @@ selectedOptionFont(value: Font)
 selectedOptionFont(selectFont: Optional<Font>)
 ```
 
-设置下拉菜单选中项的文本样式。当size为0的时候，文本不显示，当size为负值的时候，文本的size按照默认值显示。与 [selectedOptionFont](SelectAttribute#selectedOptionFont(value: Font))相比，selectFont参数新增了对undefined类型的支持。
+设置下拉菜单选中项的文本样式。当size为0的时候，文本不显示，当size为负值的时候，文本的size按照默认值显示。与
+[selectedOptionFont](SelectAttribute#selectedOptionFont(value: Font))相比，selectFont参数新增了对undefined类型的支持。
 
 **起始版本：** 18
 
@@ -986,7 +1057,8 @@ selectedOptionFontColor(value: ResourceColor)
 selectedOptionFontColor(resColor: Optional<ResourceColor>)
 ```
 
-设置下拉菜单选中项的文本颜色。与[selectedOptionFontColor](SelectAttribute#selectedOptionFontColor(value: ResourceColor))相比， resColor参数新增了对undefined类型的支持。
+设置下拉菜单选中项的文本颜色。与[selectedOptionFontColor](SelectAttribute#selectedOptionFontColor(value: ResourceColor))相比，
+resColor参数新增了对undefined类型的支持。
 
 **起始版本：** 18
 
@@ -1008,7 +1080,18 @@ selectedOptionFontColor(resColor: Optional<ResourceColor>)
 selectedOptionTextModifier(modifier: Optional<TextModifier>)
 ```
 
-定制Select下拉菜单选中项文本样式的方法，在应用selectedOptionTextModifier之后，下拉菜单选中项的文本样式将完全由开发者自定义。 如果[selectedOptionFont](SelectAttribute#selectedOptionFont(value: Font))与selectedOptionTextModifier的Font属性同时设 置，则优先使用[selectedOptionFont](SelectAttribute#selectedOptionFont(value: Font))设置下拉菜单选中项的文本样式；若未设置 [selectedOptionFont](SelectAttribute#selectedOptionFont(value: Font))，则优先使用 [optionFont](SelectAttribute#optionFont(value: Font))设置下拉菜单选中项的文本样式。其中 [selectedOptionFont](SelectAttribute#selectedOptionFont(value: Font))或者 [optionFont](SelectAttribute#optionFont(value: Font))缺省的属性将设置为对应的默认值。 > **说明：** > > 该接口不支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+定制Select下拉菜单选中项文本样式的方法，在应用selectedOptionTextModifier之后，下拉菜单选中项的文本样式将完全由开发者自定义。
+
+如果[selectedOptionFont](SelectAttribute#selectedOptionFont(value: Font))与selectedOptionTextModifier的Font属性同时设
+置，则优先使用[selectedOptionFont](SelectAttribute#selectedOptionFont(value: Font))设置下拉菜单选中项的文本样式；若未设置
+[selectedOptionFont](SelectAttribute#selectedOptionFont(value: Font))，则优先使用
+[optionFont](SelectAttribute#optionFont(value: Font))设置下拉菜单选中项的文本样式。其中
+[selectedOptionFont](SelectAttribute#selectedOptionFont(value: Font))或者
+[optionFont](SelectAttribute#optionFont(value: Font))缺省的属性将设置为对应的默认值。
+
+> **说明：**
+>
+> 该接口不支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 20
 
@@ -1118,7 +1201,11 @@ space(spaceLength: Optional<Length>)
 textModifier(modifier: Optional<TextModifier>)
 ```
 
-定制Select按钮文本样式的方法，在应用了textModifier之后，Select按钮的文本样式将完全由开发者自定义。 > **说明：** > > 该接口不支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+定制Select按钮文本样式的方法，在应用了textModifier之后，Select按钮的文本样式将完全由开发者自定义。
+
+> **说明：**
+>
+> 该接口不支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 20
 
@@ -1140,7 +1227,11 @@ textModifier(modifier: Optional<TextModifier>)
 value(value: ResourceStr)
 ```
 
-设置下拉按钮的文本内容。选中菜单项后，按钮文本将自动更新为选中的菜单项文本。 从API version 10开始，该参数支持[$$](../../../../ui/state-management/arkts-two-way-sync.md)双向绑定变量。 从API version 18开始，该参数支持[!!](../../../../ui/state-management/arkts-new-binding.md#系统组件参数双向绑定)双向绑定变量。
+设置下拉按钮的文本内容。选中菜单项后，按钮文本将自动更新为选中的菜单项文本。
+
+从API version 10开始，该参数支持[$$](../../../../ui/state-management/arkts-two-way-sync.md)双向绑定变量。
+
+从API version 18开始，该参数支持[!!](../../../../ui/state-management/arkts-new-binding.md#系统组件参数双向绑定)双向绑定变量。
 
 **起始版本：** 8
 
@@ -1160,7 +1251,11 @@ value(value: ResourceStr)
 value(resStr: Optional<ResourceStr>)
 ```
 
-设置下拉按钮的文本内容。选中菜单项后，按钮文本将自动更新为选中的菜单项文本。与[value](SelectAttribute#value(value: ResourceStr))相比，resStr参数新增了对 undefined类型的支持。 该参数支持[$$](../../../../ui/state-management/arkts-two-way-sync.md)、 [!!](../../../../ui/state-management/arkts-new-binding.md#系统组件参数双向绑定)双向绑定变量。
+设置下拉按钮的文本内容。选中菜单项后，按钮文本将自动更新为选中的菜单项文本。与[value](SelectAttribute#value(value: ResourceStr))相比，resStr参数新增了对
+undefined类型的支持。
+
+该参数支持[$$](../../../../ui/state-management/arkts-two-way-sync.md)、
+[!!](../../../../ui/state-management/arkts-new-binding.md#系统组件参数双向绑定)双向绑定变量。
 
 **起始版本：** 18
 

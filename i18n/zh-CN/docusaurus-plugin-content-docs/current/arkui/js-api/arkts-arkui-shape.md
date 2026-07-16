@@ -1,6 +1,16 @@
 # Shape
 
-绘制组件的父组件，父组件中会描述所有绘制组件均支持的通用属性。 1、绘制组件使用Shape作为父组件，实现类似SVG的效果。 2、绘制组件单独使用，用于在页面上绘制指定的图形。 > **说明：** > 该组件从API version 20开始支持使用[AttributeUpdater]{@link AttributeUpdater}类的 > [updateConstructorParams](docroot://reference/apis-arkui/js-apis-arkui-AttributeUpdater.md#属性)接口更新构造参数。
+绘制组件的父组件，父组件中会描述所有绘制组件均支持的通用属性。
+
+1、绘制组件使用Shape作为父组件，实现类似SVG的效果。
+
+2、绘制组件单独使用，用于在页面上绘制指定的图形。
+
+> **说明：**
+
+> 该组件从API version 20开始支持使用[AttributeUpdater]{@link AttributeUpdater}类的
+> [updateConstructorParams](docroot://reference/apis-arkui/js-apis-arkui-AttributeUpdater.md#属性)接口更新构造参数。
+
 
 ## Shape
 
@@ -28,7 +38,9 @@ Use the new function to create Shape.
 Shape(value: PixelMap)
 ```
 
-用于绘制Shape组件的构造函数。 从API version 9开始，该接口支持在ArkTS卡片中使用，卡片中不支持使用PixelMap对象。
+用于绘制Shape组件的构造函数。
+
+从API version 9开始，该接口支持在ArkTS卡片中使用，卡片中不支持使用PixelMap对象。
 
 **起始版本：** 7
 

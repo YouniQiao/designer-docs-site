@@ -1,6 +1,6 @@
 # @ohos.customization.customConfig
 
-本模块接口为应用提供定制配置的获取能力，如渠道号等。
+This module provides APIs for applications to obtain custom configurations, such as channel IDs.
 
 **Since:** 12
 
@@ -18,5 +18,5 @@ import { customConfig } from '@kit.BasicServicesKit';
 
 | Name | Description |
 | --- | --- |
-| [getChannelId](arkts-customconfig-getchannelid-f.md#getChannelId-1) | 获取应用的预装渠道号。 |
+| [getChannelId](arkts-basicservices-getchannelid-f.md#getchannelid-1) | Obtains a pre-installed channel ID of this application. |
 

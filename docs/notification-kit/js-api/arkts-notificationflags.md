@@ -6,11 +6,21 @@
 
 | Name | Description |
 | --- | --- |
-| [NotificationFlags](arkts-notificationflags-i.md) | 描述通知标志位。 |
+| [NotificationFlags](arkts-notification-notificationflags-i.md) | Defines the notification flags. |
 
-### Enums
+<!--Del-->
+### Interfaces（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[NotificationFlagStatus](arkts-notificationflagstatus-e.md) | 描述通知标志状态。 |
+| [NotificationFlags](arkts-notification-notificationflags-i-sys.md) | Defines the notification flags. |
+<!--DelEnd-->
+
+<!--Del-->
+### Enums（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [NotificationFlagStatus](arkts-notification-notificationflagstatus-e-sys.md) | Enumerates the notification flag states. |
+<!--DelEnd-->
 

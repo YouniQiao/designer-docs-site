@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@ohos.file.fs';
+import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
 ## copyFileSync
@@ -49,5 +49,5 @@ Copies a file. This API returns the result synchronously.
 | 13900034 | Operation would block |
 | 13900038 | Value too large for defined data type |
 | 13900042 | Unknown error |
-| 13900044 | Network is unreachable<br>**Applicable version:** 12 |
+| 13900044 | Network is unreachable<br>**Applicable version:** 12 and later |
 

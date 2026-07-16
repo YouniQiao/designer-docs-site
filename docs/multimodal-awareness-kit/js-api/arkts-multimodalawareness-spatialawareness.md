@@ -16,29 +16,35 @@ import { spatialAwareness } from '@kit.MultimodalAwarenessKit';
 
 ## Summary
 
-### Functions
+<!--Del-->
+### Functions（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[offDistanceMeasure](arkts-spatialawareness-offdistancemeasure-f-sys.md#offDistanceMeasure-1) | Unsubscribe from distance measurement result data. |
-| <!--DelRow-->[offIndoorOrOutdoorIdentify](arkts-spatialawareness-offindoororoutdooridentify-f-sys.md#offIndoorOrOutdoorIdentify-1) | Unsubscribe from the results of indoor and outdoor recognition. |
-| <!--DelRow-->[onDistanceMeasure](arkts-spatialawareness-ondistancemeasure-f-sys.md#onDistanceMeasure-1) | Subscribe to distance measurement result data. |
-| <!--DelRow-->[onIndoorOrOutdoorIdentify](arkts-spatialawareness-onindoororoutdooridentify-f-sys.md#onIndoorOrOutdoorIdentify-1) | Subscribe to the results of indoorand outdoor identification. |
+| [offDistanceMeasure](arkts-multimodalawareness-offdistancemeasure-f-sys.md#offdistancemeasure-1) | Unsubscribe from distance measurement result data. |
+| [offIndoorOrOutdoorIdentify](arkts-multimodalawareness-offindoororoutdooridentify-f-sys.md#offindoororoutdooridentify-1) | Unsubscribe from the results of indoor and outdoor recognition. |
+| [onDistanceMeasure](arkts-multimodalawareness-ondistancemeasure-f-sys.md#ondistancemeasure-1) | Subscribe to distance measurement result data. |
+| [onIndoorOrOutdoorIdentify](arkts-multimodalawareness-onindoororoutdooridentify-f-sys.md#onindoororoutdooridentify-1) | Subscribe to the results of indoorand outdoor identification. |
+<!--DelEnd-->
 
-### Interfaces
-
-| Name | Description |
-| --- | --- |
-| <!--DelRow-->[DistanceMeasurementConfigParams](arkts-spatialawareness-distancemeasurementconfigparams-i-sys.md) | Configuration parameters for the distance measurement interface |
-| <!--DelRow-->[DistanceMeasurementResponse](arkts-spatialawareness-distancemeasurementresponse-i-sys.md) | Interface for distance measurement result |
-| <!--DelRow-->[DoorPositionResponse](arkts-spatialawareness-doorpositionresponse-i-sys.md) | Interface for indoor or outdoor identify result |
-
-### Enums
+<!--Del-->
+### Interfaces（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[DistanceRank](arkts-spatialawareness-distancerank-e-sys.md) | Enum for distance rank. |
-| <!--DelRow-->[PositionRelativeToDoor](arkts-spatialawareness-positionrelativetodoor-e-sys.md) | Enum for identification result inside and outside the door |
-| <!--DelRow-->[ReportingMode](arkts-spatialawareness-reportingmode-e-sys.md) | Enum for distance measurement result reporting modes. |
-| <!--DelRow-->[TechnologyType](arkts-spatialawareness-technologytype-e-sys.md) | Enum for distance measurement technology types. |
+| [DistanceMeasurementConfigParams](arkts-multimodalawareness-distancemeasurementconfigparams-i-sys.md) | Configuration parameters for the distance measurement interface |
+| [DistanceMeasurementResponse](arkts-multimodalawareness-distancemeasurementresponse-i-sys.md) | Interface for distance measurement result |
+| [DoorPositionResponse](arkts-multimodalawareness-doorpositionresponse-i-sys.md) | Interface for indoor or outdoor identify result |
+<!--DelEnd-->
+
+<!--Del-->
+### Enums（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [DistanceRank](arkts-multimodalawareness-distancerank-e-sys.md) | Enum for distance rank. |
+| [PositionRelativeToDoor](arkts-multimodalawareness-positionrelativetodoor-e-sys.md) | Enum for identification result inside and outside the door |
+| [ReportingMode](arkts-multimodalawareness-reportingmode-e-sys.md) | Enum for distance measurement result reporting modes. |
+| [TechnologyType](arkts-multimodalawareness-technologytype-e-sys.md) | Enum for distance measurement technology types. |
+<!--DelEnd-->
 

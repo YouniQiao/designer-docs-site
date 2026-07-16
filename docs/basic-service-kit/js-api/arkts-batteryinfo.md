@@ -1,6 +1,7 @@
 # @ohos.batteryInfo
 
-The **batteryInfo** module provides APIs for querying the charger type, battery health status, and battery charging status.
+The **batteryInfo** module provides APIs for querying the charger type, battery health status, and battery charging
+status.
 
 **Since:** 6
 
@@ -43,7 +44,7 @@ import { batteryInfo } from '@kit.BasicServicesKit';
 | [batteryTemperature](arkts-basicservices-batteryinfo-con.md#batterytemperature) | Battery temperature of the device, in unit of 0.1°C. |
 | [chargingStatus](arkts-basicservices-batteryinfo-con.md#chargingstatus) | Battery charging state of the current device. |
 | [healthStatus](arkts-basicservices-batteryinfo-con.md#healthstatus) | Battery health status of the device. |
-| [isBatteryPresent](arkts-basicservices-batteryinfo-con.md#isbatterypresent) | Whether the battery is supported or present. The value **true** means that the battery is supported or present; **false** means the opposite. Default value: **false**. |
+| [isBatteryPresent](arkts-basicservices-batteryinfo-con.md#isbatterypresent) | Whether the battery is supported or present. The value **true** means that the battery is supported or present;**false** means the opposite.Default value: **false**. |
 | [nowCurrent](arkts-basicservices-batteryinfo-con.md#nowcurrent) | Battery current of the device, in unit of mA. |
 | [pluggedType](arkts-basicservices-batteryinfo-con.md#pluggedtype) | Charger type of the device. |
 | [technology](arkts-basicservices-batteryinfo-con.md#technology) | Battery technology of the device. |

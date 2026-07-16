@@ -6,5 +6,5 @@
 
 | Name | Description |
 | --- | --- |
-| [NotificationUserInput](arkts-notificationuserinput-i.md) | 保存用户输入的通知消息。 |
+| [NotificationUserInput](arkts-notification-notificationuserinput-i.md) | The **NotificationUserInput** module provides APIs for defining the notification user input. |
 

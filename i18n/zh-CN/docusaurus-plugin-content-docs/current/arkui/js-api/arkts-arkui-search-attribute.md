@@ -1,6 +1,8 @@
 # Search属性/事件
 
-除支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持以下属性： 除支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持以下事件：
+除支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持以下属性：
+
+除支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持以下事件：
 
 **继承/实现关系：** SearchAttribute extends [CommonMethod<SearchAttribute>](CommonMethod<SearchAttribute>)
 
@@ -36,7 +38,11 @@ autoCapitalizationMode(mode: AutoCapitalizationMode)
 cancelButton(value: CancelButtonOptions | CancelButtonSymbolOptions)
 ```
 
-设置右侧清除按钮样式。示例请参考 [示例2（设置搜索和删除图标）](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-search.md#示例2设置搜索和删除图标)和 [示例11（设置symbol类型清除按钮）](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-search.md#示例11设置symbol类型清除按钮)。 Wearable设备上默认图标大小为18fp。
+设置右侧清除按钮样式。示例请参考
+[示例2（设置搜索和删除图标）](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-search.md#示例2设置搜索和删除图标)和
+[示例11（设置symbol类型清除按钮）](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-search.md#示例11设置symbol类型清除按钮)。
+
+Wearable设备上默认图标大小为18fp。
 
 **起始版本：** 10
 
@@ -80,7 +86,13 @@ caretStyle(value: CaretStyle)
 compressLeadingPunctuation(enabled: Optional<boolean>)
 ```
 
-设置是否开启行首标点符号压缩。 > **说明：** > > - 行首标点符号默认不压缩。 > > - 支持压缩的标点符号，请参考[ParagraphStyle](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-paragraphstyle-i.md)的行首压缩的标点范围。
+设置是否开启行首标点符号压缩。
+
+> **说明：**
+>
+> - 行首标点符号默认不压缩。
+>
+> - 支持压缩的标点符号，请参考[ParagraphStyle](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-paragraphstyle-i.md)的行首压缩的标点范围。
 
 **起始版本：** 23
 
@@ -102,7 +114,9 @@ compressLeadingPunctuation(enabled: Optional<boolean>)
 copyOption(value: CopyOptions)
 ```
 
-设置输入的文本是否可复制。设置CopyOptions.None时，当前Search中的文字无法被复制、剪切、翻译、分享、搜索和帮写，支持粘贴和全选。 设置CopyOptions.None时，不允许拖拽。
+设置输入的文本是否可复制。设置CopyOptions.None时，当前Search中的文字无法被复制、剪切、翻译、分享、搜索和帮写，支持粘贴和全选。
+
+设置CopyOptions.None时，不允许拖拽。
 
 **起始版本：** 9
 
@@ -122,7 +136,27 @@ copyOption(value: CopyOptions)
 customKeyboard(value: CustomBuilder | ComponentContent | undefined, options?: KeyboardOptions)
 ```
 
-设置自定义键盘。 当设置自定义键盘时，输入框激活后不会打开系统输入法，而是加载指定的自定义组件。 自定义键盘的高度可以通过自定义组件根节点的height属性设置，宽度不可设置，使用系统默认值。 自定义键盘采用覆盖原始界面的方式呈现，当没有开启避让模式或者输入框不需要避让的场景不会对应用原始界面产生压缩或者上提。 自定义键盘无法获取焦点，但是会拦截手势事件。 默认在输入控件失去焦点时，关闭自定义键盘，开发者也可以通过[stopEditing](arkts-arkui-searchcontroller-c.md#stopediting-1)方法控制键盘关闭。 当设置自定义键盘时，可以通过绑定[onKeyPreIme](arkts-arkui-commonmethod-c.md#onkeypreime-1)事件规避物理键盘的输入。 从API version 23开始，自定义键盘可以通过 [setCustomKeyboardContinueFeature](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#setcustomkeyboardcontinuefeature23) 开启接续，在切换至其他自定义键盘时，会直接切换，不会触发键盘关闭和拉起动画。 > **说明：** > > 该接口不支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+设置自定义键盘。
+
+当设置自定义键盘时，输入框激活后不会打开系统输入法，而是加载指定的自定义组件。
+
+自定义键盘的高度可以通过自定义组件根节点的height属性设置，宽度不可设置，使用系统默认值。
+
+自定义键盘采用覆盖原始界面的方式呈现，当没有开启避让模式或者输入框不需要避让的场景不会对应用原始界面产生压缩或者上提。
+
+自定义键盘无法获取焦点，但是会拦截手势事件。
+
+默认在输入控件失去焦点时，关闭自定义键盘，开发者也可以通过[stopEditing](arkts-arkui-searchcontroller-c.md#stopediting-1)方法控制键盘关闭。
+
+当设置自定义键盘时，可以通过绑定[onKeyPreIme](arkts-arkui-commonmethod-c.md#onkeypreime-1)事件规避物理键盘的输入。
+
+从API version 23开始，自定义键盘可以通过
+[setCustomKeyboardContinueFeature](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#setcustomkeyboardcontinuefeature23)
+开启接续，在切换至其他自定义键盘时，会直接切换，不会触发键盘关闭和拉起动画。
+
+> **说明：**
+>
+> 该接口不支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 10
 
@@ -189,7 +223,11 @@ dividerColor(color: Optional<ColorMetrics>)
 editMenuOptions(editMenu: EditMenuOptions)
 ```
 
-设置自定义菜单扩展项，允许用户设置扩展项的文本内容、图标、回调方法。 调用[disableMenuItems](../../../../reference/apis-arkui/arkts-apis-uicontext-textmenucontroller.md#disablemenuitems20)或 [disableSystemServiceMenuItems](../../../../reference/apis-arkui/arkts-apis-uicontext-textmenucontroller.md#disablesystemservicemenuitems20) 接口屏蔽文本选择菜单内的系统服务菜单项时，editMenuOptions接口内回调方法[onCreateMenu](arkts-arkui-editmenuoptions-i.md#oncreatemenu-1)的入参列表中不包含被屏蔽的菜单选项。
+设置自定义菜单扩展项，允许用户设置扩展项的文本内容、图标、回调方法。
+
+调用[disableMenuItems](../../../../reference/apis-arkui/arkts-apis-uicontext-textmenucontroller.md#disablemenuitems20)或
+[disableSystemServiceMenuItems](../../../../reference/apis-arkui/arkts-apis-uicontext-textmenucontroller.md#disablesystemservicemenuitems20)
+接口屏蔽文本选择菜单内的系统服务菜单项时，editMenuOptions接口内回调方法[onCreateMenu](arkts-arkui-editmenuoptions-i.md#oncreatemenu-1)的入参列表中不包含被屏蔽的菜单选项。
 
 **起始版本：** 12
 
@@ -233,7 +271,10 @@ enableAutoSpacing(enabled: Optional<boolean>)
 enableHapticFeedback(isEnabled: boolean)
 ```
 
-设置是否开启触控反馈。 开启触控反馈时，需要在工程的[module.json5](../../../../quick-start/module-configuration-file.md)中配置requestPermissions字段以开启振动权限，配置如 下：
+设置是否开启触控反馈。
+
+开启触控反馈时，需要在工程的[module.json5](../../../../quick-start/module-configuration-file.md)中配置requestPermissions字段以开启振动权限，配置如
+下：
 
 **起始版本：** 13
 
@@ -255,7 +296,9 @@ enableHapticFeedback(isEnabled: boolean)
 enableKeyboardOnFocus(value: boolean)
 ```
 
-设置Search通过点击以外的方式获焦时，是否主动拉起软键盘。 从API version 10开始，获焦默认绑定输入法。
+设置Search通过点击以外的方式获焦时，是否主动拉起软键盘。
+
+从API version 10开始，获焦默认绑定输入法。
 
 **起始版本：** 10
 
@@ -277,7 +320,9 @@ enableKeyboardOnFocus(value: boolean)
 enablePreviewText(enable: boolean)
 ```
 
-设置是否开启输入预上屏。 预上屏内容定义为文字暂存态，目前不支持文字拦截功能。
+设置是否开启输入预上屏。
+
+预上屏内容定义为文字暂存态，目前不支持文字拦截功能。
 
 **起始版本：** 12
 
@@ -299,7 +344,11 @@ enablePreviewText(enable: boolean)
 enableSelectedDataDetector(enable: boolean | undefined)
 ```
 
-设置是否对选中文本进行实体识别。该接口依赖设备底层应具有文本识别能力，否则设置不会生效。 当enableSelectedDataDetector设置为true时，默认识别所有类型的实体。 需要[CopyOptions](../../apis-core-file-kit/arkts-apis/arkts-corefile-copyoptions-i.md)为CopyOptions.LocalDevice或CopyOptions.CROSS_DEVICE时，本功能生效。
+设置是否对选中文本进行实体识别。该接口依赖设备底层应具有文本识别能力，否则设置不会生效。
+
+当enableSelectedDataDetector设置为true时，默认识别所有类型的实体。
+
+需要[CopyOptions](../../apis-core-file-kit/arkts-apis/arkts-corefile-copyoptions-i.md)为CopyOptions.LocalDevice或CopyOptions.CROSS_DEVICE时，本功能生效。
 
 **起始版本：** 22
 
@@ -387,7 +436,15 @@ fontColor(value: ResourceColor)
 fontFeature(value: string)
 ```
 
-设置文字特性效果，比如数字等宽的特性。 格式为：normal \| \<feature-tag-value\> \<feature-tag-value\>的格式为：\<string\> \[ \<integer\> \| on \| off ] \<feature-tag-value\>的个数可以有多个，中间用','隔开。 例如，使用等宽数字的输入格式为："ss01" on。
+设置文字特性效果，比如数字等宽的特性。
+
+格式为：normal \| \<feature-tag-value\>
+
+\<feature-tag-value\>的格式为：\<string\> \[ \<integer\> \| on \| off ]
+
+\<feature-tag-value\>的个数可以有多个，中间用','隔开。
+
+例如，使用等宽数字的输入格式为："ss01" on。
 
 **起始版本：** 12
 
@@ -453,7 +510,11 @@ includeFontPadding(include: Optional<boolean>)
 inputFilter(value: ResourceStr, error?: Callback<string>)
 ```
 
-通过正则表达式设置输入过滤器。匹配表达式的输入允许显示，不匹配的输入将被过滤。 单字符输入场景仅支持单字符匹配，多字符输入场景支持字符串匹配，例如粘贴。 设置inputFilter且输入的字符不为空字符，会导致设置输入框类型(即type接口)附带的文本过滤效果失效。
+通过正则表达式设置输入过滤器。匹配表达式的输入允许显示，不匹配的输入将被过滤。
+
+单字符输入场景仅支持单字符匹配，多字符输入场景支持字符串匹配，例如粘贴。
+
+设置inputFilter且输入的字符不为空字符，会导致设置输入框类型(即type接口)附带的文本过滤效果失效。
 
 **起始版本：** 12
 
@@ -498,7 +559,11 @@ keyboardAppearance(appearance: Optional<KeyboardAppearance>)
 letterSpacing(value: number | string | Resource)
 ```
 
-设置文本字符间距。设置该值为百分比时，按默认值显示。设置该值为0时，按默认值显示。string类型支持number类型取值的字符串形式，可以附带单位，例如"10"、"10fp"。 当取值为负值时，文字会发生压缩，负值过小时会将组件内容区大小压缩为0，导致无内容显示。 对每个字符生效，包括行尾字符。
+设置文本字符间距。设置该值为百分比时，按默认值显示。设置该值为0时，按默认值显示。string类型支持number类型取值的字符串形式，可以附带单位，例如"10"、"10fp"。
+
+当取值为负值时，文字会发生压缩，负值过小时会将组件内容区大小压缩为0，导致无内容显示。
+
+对每个字符生效，包括行尾字符。
 
 **起始版本：** 12
 
@@ -564,7 +629,14 @@ maxFontScale(scale: Optional<number|Resource>)
 maxFontSize(value: number | string | Resource)
 ```
 
-设置文本最大显示字号。string类型支持number类型取值的字符串形式，可以附带单位，例如"10"、"10fp"。 需配合[minFontSize](SearchAttribute#minFontSize)以及布局大小限制使用，单独设置不生效。 自适应字号生效时，fontSize设置不生效。 maxFontSize小于等于0或者maxFontSize小于minFontSize时，自适应字号不生效，此时按照[textFont](SearchAttribute#textFont)属性里面size的取值生效，未设 置时按照其默认值生效。
+设置文本最大显示字号。string类型支持number类型取值的字符串形式，可以附带单位，例如"10"、"10fp"。
+
+需配合[minFontSize](SearchAttribute#minFontSize)以及布局大小限制使用，单独设置不生效。
+
+自适应字号生效时，fontSize设置不生效。
+
+maxFontSize小于等于0或者maxFontSize小于minFontSize时，自适应字号不生效，此时按照[textFont](SearchAttribute#textFont)属性里面size的取值生效，未设
+置时按照其默认值生效。
 
 **起始版本：** 12
 
@@ -630,7 +702,13 @@ minFontScale(scale: Optional<number|Resource>)
 minFontSize(value: number | string | Resource)
 ```
 
-设置文本最小显示字号。string类型支持number类型取值的字符串形式，可以附带单位，例如"10"、"10fp"。 需配合[maxFontSize](SearchAttribute#maxFontSize)以及布局大小限制使用，单独设置不生效。 自适应字号生效时，fontSize设置不生效。 minFontSize小于或等于0时，自适应字号不生效，此时按照[textFont](SearchAttribute#textFont)属性里面size的取值生效，未设置时按照其默认值生效。
+设置文本最小显示字号。string类型支持number类型取值的字符串形式，可以附带单位，例如"10"、"10fp"。
+
+需配合[maxFontSize](SearchAttribute#maxFontSize)以及布局大小限制使用，单独设置不生效。
+
+自适应字号生效时，fontSize设置不生效。
+
+minFontSize小于或等于0时，自适应字号不生效，此时按照[textFont](SearchAttribute#textFont)属性里面size的取值生效，未设置时按照其默认值生效。
 
 **起始版本：** 12
 
@@ -652,7 +730,9 @@ minFontSize(value: number | string | Resource)
 onChange(callback: EditableTextOnChangeCallback)
 ```
 
-输入内容发生变化时，触发该回调。 在本回调中，若执行了光标操作，需要开发者在预上屏场景下依据previewText参数调整光标逻辑，以适应预上屏场景。
+输入内容发生变化时，触发该回调。
+
+在本回调中，若执行了光标操作，需要开发者在预上屏场景下依据previewText参数调整光标逻辑，以适应预上屏场景。
 
 **起始版本：** 8
 
@@ -884,7 +964,22 @@ onTextSelectionChange(callback: OnTextSelectionChangeCallback)
 onWillAttachIME(callback: Callback<IMEClient>)
 ```
 
-在搜索框将要绑定输入法前触发该回调。 <!--Del--> 在搜索框将要绑定输入法前，可以通过`UIContext`的系统接口 [setKeyboardAppearanceConfig](../arkts-apis/arkts-arkui-uicontext-c-sys.md#setkeyboardappearanceconfig-1)设置键盘的样式。<!--DelEnd- -> 从API version 22开始，调用[IMEClient](../../../../reference/apis-arkui/arkui-ts/ts-text-common.md#imeclient20对象说明)的 [setExtraConfig](arkts-arkui-imeclient-i.md#setextraconfig-1)方法可以设置输入法扩展信息。在绑定输入法成功后，输入法会收到扩展信息，输入法可以依据此信息实现自定义功能。 IMEClient仅在onWillAttachIME执行期间有效，不可进行异步调用。 > **说明：** > > 该接口不支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+在搜索框将要绑定输入法前触发该回调。
+
+<!--Del-->
+
+在搜索框将要绑定输入法前，可以通过`UIContext`的系统接口
+[setKeyboardAppearanceConfig](../arkts-apis/arkts-arkui-uicontext-c-sys.md#setkeyboardappearanceconfig-1)设置键盘的样式。<!--DelEnd-
+->
+
+从API version 22开始，调用[IMEClient](../../../../reference/apis-arkui/arkui-ts/ts-text-common.md#imeclient20对象说明)的
+[setExtraConfig](arkts-arkui-imeclient-i.md#setextraconfig-1)方法可以设置输入法扩展信息。在绑定输入法成功后，输入法会收到扩展信息，输入法可以依据此信息实现自定义功能。
+
+IMEClient仅在onWillAttachIME执行期间有效，不可进行异步调用。
+
+> **说明：**
+>
+> 该接口不支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 20
 
@@ -906,7 +1001,9 @@ onWillAttachIME(callback: Callback<IMEClient>)
 onWillChange(callback: Callback<EditableTextChangeValue, boolean>)
 ```
 
-在文本内容将要发生变化时，触发该回调。 onWillChange的回调时序晚于onWillInsert、onWillDelete，早于onDidInsert、onDidDelete。
+在文本内容将要发生变化时，触发该回调。
+
+onWillChange的回调时序晚于onWillInsert、onWillDelete，早于onDidInsert、onDidDelete。
 
 **起始版本：** 15
 
@@ -1056,7 +1153,11 @@ placeholderFont(value?: Font)
 searchButton(value: ResourceStr, option?: SearchButtonOptions)
 ```
 
-设置搜索框末尾搜索按钮。 点击搜索按钮，同时触发onSubmit与onClick回调。 Wearable设备上默认字体大小为18fp。
+设置搜索框末尾搜索按钮。
+
+点击搜索按钮，同时触发onSubmit与onClick回调。
+
+Wearable设备上默认字体大小为18fp。
 
 **起始版本：** 8
 
@@ -1077,7 +1178,9 @@ searchButton(value: ResourceStr, option?: SearchButtonOptions)
 searchIcon(value: IconOptions | SymbolGlyphModifier)
 ```
 
-设置左侧搜索图标样式。 Wearable设备上默认图标大小为16vp。
+设置左侧搜索图标样式。
+
+Wearable设备上默认图标大小为16vp。
 
 **起始版本：** 10
 
@@ -1165,7 +1268,13 @@ selectionMenuHidden(value: boolean)
 shaderStyle(shader: ShaderStyle | undefined)
 ```
 
-设置文本着色器效果，如线性渐变、径向渐变效果等。 > **说明：** > > 当同时设置shaderStyle和[strokeWidth](SearchAttribute#strokeWidth)时，shaderStyle不生效。 > > shaderStyle的优先级高于[fontColor](SearchAttribute#fontColor)。
+设置文本着色器效果，如线性渐变、径向渐变效果等。
+
+> **说明：**
+>
+> 当同时设置shaderStyle和[strokeWidth](SearchAttribute#strokeWidth)时，shaderStyle不生效。
+>
+> shaderStyle的优先级高于[fontColor](SearchAttribute#fontColor)。
 
 **起始版本：** 26.0.0
 
@@ -1275,7 +1384,8 @@ strokeWidth(width: Optional<LengthMetrics>)
 textAlign(value: TextAlign)
 ```
 
-设置文本在搜索框中的对齐方式。目前支持的对齐方式有：TextAlign.Start、TextAlign.Center、TextAlign.End、TextAlign.LEFT、TextAlign.RIGHT。 TextAlign.JUSTIFY的对齐方式按照TextAlign.Start处理。
+设置文本在搜索框中的对齐方式。目前支持的对齐方式有：TextAlign.Start、TextAlign.Center、TextAlign.End、TextAlign.LEFT、TextAlign.RIGHT。
+TextAlign.JUSTIFY的对齐方式按照TextAlign.Start处理。
 
 **起始版本：** 9
 
@@ -1317,7 +1427,9 @@ textDirection(direction: TextDirection | undefined)
 textFont(value?: Font)
 ```
 
-设置搜索框内输入文本样式，包括字体大小、字体粗细、字体族、字体风格。 Wearable设备上默认字体大小为18fp。
+设置搜索框内输入文本样式，包括字体大小、字体粗细、字体族、字体风格。
+
+Wearable设备上默认字体大小为18fp。
 
 **起始版本：** 8
 
@@ -1359,7 +1471,9 @@ textIndent(value: Dimension)
 type(value: SearchType)
 ```
 
-设置输入框类型。 不同的SearchType会拉起对应类型的键盘，同时限制输入。
+设置输入框类型。
+
+不同的SearchType会拉起对应类型的键盘，同时限制输入。
 
 **起始版本：** 11
 

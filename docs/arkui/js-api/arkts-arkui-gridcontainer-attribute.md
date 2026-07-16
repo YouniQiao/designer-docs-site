@@ -2,7 +2,7 @@
 
 Defines the grid container attribute from inheritance Column
 
-**Inheritance/Implementation:** GridContainerAttribute extends [ColumnAttribute](arkts-arkui-column-attribute.md#columnattribute)
+**Inheritance/Implementation:** GridContainerAttribute extends [ColumnAttribute](arkts-arkui-column-attribute.md)
 
 **Since:** 7
 

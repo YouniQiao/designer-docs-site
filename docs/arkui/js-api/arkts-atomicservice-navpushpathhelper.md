@@ -12,5 +12,5 @@ import { NavPushPathHelper } from '@kit.ArkUI';
 
 | Name | Description |
 | --- | --- |
-| [NavPushPathHelper](arkts-navpushpathhelper-c.md) | provides a push method for the target page in the routing table. |
+| [NavPushPathHelper](arkts-arkui-navpushpathhelper-c.md) | provides a push method for the target page in the routing table. |
 

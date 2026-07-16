@@ -57,7 +57,9 @@ Enable bounces zoom scale.
 enablePaging(value: boolean)
 ```
 
-Sets whether to enable the swipe-to-turn-pages feature. If both <em>enablePaging</em> and <em>scrollSnap</em> are set, <em>scrollSnap</em> takes effect, but <em>enablePaging</em> does not.
+Sets whether to enable the swipe-to-turn-pages feature.
+If both <em>enablePaging</em> and <em>scrollSnap</em> are set, <em>scrollSnap</em> takes effect,
+but <em>enablePaging</em> does not.
 
 **Since:** 11
 
@@ -79,7 +81,9 @@ Sets whether to enable the swipe-to-turn-pages feature. If both <em>enablePaging
 enableScrollInteraction(value: boolean)
 ```
 
-Sets whether to support scroll gestures. When this attribute is set to <em>false</em>, scrolling by finger or mouse is not supported, but the scroll controller API is not affected. The component cannot be scrolled by dragging the mouse.
+Sets whether to support scroll gestures. When this attribute is set to <em>false</em>,
+scrolling by finger or mouse is not supported, but the scroll controller API is not affected.
+The component cannot be scrolled by dragging the mouse.
 
 **Since:** 10
 
@@ -101,7 +105,9 @@ Sets whether to support scroll gestures. When this attribute is set to <em>false
 friction(value: number | Resource)
 ```
 
-Sets the friction coefficient. It applies only to gestures in the scrolling area, and it affects only indirectly the scroll chaining during the inertial scrolling process. If this attribute is set to a value less than or equal to 0, the default value is used.
+Sets the friction coefficient. It applies only to gestures in the scrolling area, and
+it affects only indirectly the scroll chaining during the inertial scrolling process.
+If this attribute is set to a value less than or equal to 0, the default value is used.
 
 **Since:** 10
 
@@ -123,7 +129,9 @@ Sets the friction coefficient. It applies only to gestures in the scrolling area
 initialOffset(value: OffsetOptions)
 ```
 
-Sets the initial scrolling offset. This attribute takes effect only during the initial layout of the component. After the initial layout, dynamically changing the value of this attribute does not have any effect.
+Sets the initial scrolling offset. This attribute takes effect only during the initial layout
+of the component. After the initial layout, dynamically changing the value of this attribute
+does not have any effect.
 
 **Since:** 12
 
@@ -167,7 +175,9 @@ Set maximum zoom scale.
 minZoomScale(scale: number)
 ```
 
-Set minimum zoom scale. Setting either <em>maxZoomScale</em> and <em>minZoomScale</em> to a value other than 1 automatically enables the zoom gesture.
+Set minimum zoom scale.
+Setting either <em>maxZoomScale</em> and <em>minZoomScale</em> to a value other than 1
+automatically enables the zoom gesture.
 
 **Since:** 20
 
@@ -189,7 +199,11 @@ Set minimum zoom scale. Setting either <em>maxZoomScale</em> and <em>minZoomScal
 nestedScroll(value: NestedScrollOptions)
 ```
 
-Sets the nested scrolling options. You can set the nested scrolling mode in the forward and backward directions to implement scrolling linkage with the parent component. Nested scrolling will not take effect when both of the following conditions are met: (1) The child <em>Scroll</em> component has <em>enablePaging</em> or <em>scrollSnap</em> enabled. (2) The parent component is configured to have scrolling priority.
+Sets the nested scrolling options. You can set the nested scrolling mode in the forward and backward directions
+to implement scrolling linkage with the parent component.
+Nested scrolling will not take effect when both of the following conditions are met: (1) The child
+<em>Scroll</em> component has <em>enablePaging</em> or <em>scrollSnap</em> enabled. (2) The parent component
+is configured to have scrolling priority.
 
 **Since:** 10
 
@@ -211,7 +225,14 @@ Sets the nested scrolling options. You can set the nested scrolling mode in the 
 onDidScroll(handler: ScrollOnScrollCallback)
 ```
 
-Triggered when the Scroll component scrolls. <p><strong>NOTE</strong> <br>1. This event is triggered when scrolling is started by the <em>Scroll</em> component or other input settings, such as keyboard and mouse operations. <br>2. This event is triggered when the controller API is called. <br>3. This event supports the out-of-bounds bounce effect. </p>
+Triggered when the Scroll component scrolls.
+
+<p><strong>NOTE</strong>
+<br>1. This event is triggered when scrolling is started by the <em>Scroll</em> component or other input settings,
+such as keyboard and mouse operations.
+<br>2. This event is triggered when the controller API is called.
+<br>3. This event supports the out-of-bounds bounce effect.
+</p>
 
 **Since:** 12
 
@@ -255,7 +276,15 @@ Called when the Scroll did zoom.
 onScroll(event: (xOffset: number, yOffset: number) => void)
 ```
 
-Triggered to return the horizontal and vertical offsets, in vp, during scrolling when the specified scroll event occurs. <p><strong>NOTE</strong> <br>1. This event is triggered when scrolling is started by the <em>Scroll</em> component or other input settings, such as keyboard and mouse operations. <br>2. This event is triggered when the controller API is called. <br>3. This event supports the out-of-bounds bounce effect. </p>
+Triggered to return the horizontal and vertical offsets, in vp, during scrolling when the specified scroll event
+occurs.
+
+<p><strong>NOTE</strong>
+<br>1. This event is triggered when scrolling is started by the <em>Scroll</em> component or other input settings,
+such as keyboard and mouse operations.
+<br>2. This event is triggered when the controller API is called.
+<br>3. This event supports the out-of-bounds bounce effect.
+</p>
 
 **Since:** 7
 
@@ -279,7 +308,16 @@ Triggered to return the horizontal and vertical offsets, in vp, during scrolling
 onScrollEdge(event: OnScrollEdgeCallback)
 ```
 
-Triggered when scrolling reaches the edge. Anonymous Object Rectification. <p><strong>NOTE</strong> <br>1. This event is triggered when scrolling reaches the edge after being started by the <em>Scroll</em> component or other input settings, such as keyboard and mouse operations. <br>2. This event is triggered when the controller API is called. <br>3. This event supports the out-of-bounds bounce effect. </p>
+Triggered when scrolling reaches the edge.
+Anonymous Object Rectification.
+
+<p><strong>NOTE</strong>
+<br>1. This event is triggered when scrolling reaches the edge after being started by the <em>Scroll</em> component
+or other input settings,
+such as keyboard and mouse operations.
+<br>2. This event is triggered when the controller API is called.
+<br>3. This event supports the out-of-bounds bounce effect.
+</p>
 
 **Since:** 7
 
@@ -299,7 +337,13 @@ Triggered when scrolling reaches the edge. Anonymous Object Rectification. <p><s
 onScrollEnd(event: () => void)
 ```
 
-Triggered when scrolling stops. <p><strong>NOTE</strong> <br>1. This event is triggered when scrolling is stopped by the <em>Scroll</em> component or other input settings, such as keyboard and mouse operations. <br>2. This event is triggered when the controller API is called, accompanied by a transition animation. </p>
+Triggered when scrolling stops.
+
+<p><strong>NOTE</strong>
+<br>1. This event is triggered when scrolling is stopped by the <em>Scroll</em> component or other input settings,
+such as keyboard and mouse operations.
+<br>2. This event is triggered when the controller API is called, accompanied by a transition animation.
+</p>
 
 **Since:** 7
 
@@ -321,7 +365,19 @@ Triggered when scrolling stops. <p><strong>NOTE</strong> <br>1. This event is tr
 onScrollFrameBegin(event: OnScrollFrameBeginCallback)
 ```
 
-Triggered when each frame scrolling starts. Anonymous Object Rectification. <p><strong>NOTE</strong> <br>This event is triggered when any of the following conditions is met: <br>1. Scrolling is initiated by user interaction (for example, finger swipe, keyboard, or mouse operation). <br>2. The <em>Scroll</em> component scrolls by inertia. <br>3. Scrolling is triggered by calling the <em>fling</em> API. <br>This event is not triggered when any of the following conditions is met: <br>1. A scroll control API other than <em>fling</em> is called. <br>2. The out-of-bounds bounce effect is active. <br>3. The scrollbar is dragged. </p>
+Triggered when each frame scrolling starts.
+Anonymous Object Rectification.
+
+<p><strong>NOTE</strong>
+<br>This event is triggered when any of the following conditions is met:
+<br>1. Scrolling is initiated by user interaction (for example, finger swipe, keyboard, or mouse operation).
+<br>2. The <em>Scroll</em> component scrolls by inertia.
+<br>3. Scrolling is triggered by calling the <em>fling</em> API.
+<br>This event is not triggered when any of the following conditions is met:
+<br>1. A scroll control API other than <em>fling</em> is called.
+<br>2. The out-of-bounds bounce effect is active.
+<br>3. The scrollbar is dragged.
+</p>
 
 **Since:** 9
 
@@ -341,7 +397,14 @@ Triggered when each frame scrolling starts. Anonymous Object Rectification. <p><
 onScrollStart(event: VoidCallback)
 ```
 
-Called when scrolling start. Anonymous Object Rectification. <p><strong>NOTE</strong> <br>1. This event is triggered when scrolling is started by the <em>Scroll</em> component or other input settings, such as keyboard and mouse operations. <br>2. This event is triggered when the controller API is called, accompanied by a transition animation. </p>
+Called when scrolling start.
+Anonymous Object Rectification.
+
+<p><strong>NOTE</strong>
+<br>1. This event is triggered when scrolling is started by the <em>Scroll</em> component or other input settings,
+such as keyboard and mouse operations.
+<br>2. This event is triggered when the controller API is called, accompanied by a transition animation.
+</p>
 
 **Since:** 9
 
@@ -361,7 +424,14 @@ Called when scrolling start. Anonymous Object Rectification. <p><strong>NOTE</st
 onScrollStop(event: VoidCallback)
 ```
 
-Called when scrolling has stopped. Anonymous Object Rectification. <p><strong>NOTE</strong> <br>1. This event is triggered when scrolling is stopped by the <em>Scroll</em> component or other input settings, such as keyboard and mouse operations. <br>2. This event is triggered when the controller API is called, accompanied by a transition animation. </p>
+Called when scrolling has stopped.
+Anonymous Object Rectification.
+
+<p><strong>NOTE</strong>
+<br>1. This event is triggered when scrolling is stopped by the <em>Scroll</em> component or other input settings,
+such as keyboard and mouse operations.
+<br>2. This event is triggered when the controller API is called, accompanied by a transition animation.
+</p>
 
 **Since:** 9
 
@@ -381,7 +451,14 @@ Called when scrolling has stopped. Anonymous Object Rectification. <p><strong>NO
 onWillScroll(handler: ScrollOnWillScrollCallback)
 ```
 
-Triggered before scrolling. <p><strong>NOTE</strong> <br>1. This event is triggered when scrolling is started by the <em>Scroll</em> component or other input settings, such as keyboard and mouse operations. <br>2. This event is triggered when the controller API is called. <br>3. This event supports the out-of-bounds bounce effect. </p>
+Triggered before scrolling.
+
+<p><strong>NOTE</strong>
+<br>1. This event is triggered when scrolling is started by the <em>Scroll</em> component or other input settings,
+such as keyboard and mouse operations.
+<br>2. This event is triggered when the controller API is called.
+<br>3. This event supports the out-of-bounds bounce effect.
+</p>
 
 **Since:** 12
 
@@ -447,7 +524,12 @@ Called when zooming has stopped.
 scrollBar(barState: BarState)
 ```
 
-Sets the scrollbar state. If the container component cannot be scrolled, the scrollbar is not displayed. If the size of a child component of a container component is infinite, the scrollbar cannot be dragged or scrolled with the child component. Since API version 10, when the scrollable component has rounded corners, to prevent the scrollbar from being cut off by the corners, the scrollbar will automatically calculate the clearance distance from the top and bottom.
+Sets the scrollbar state. If the container component cannot be scrolled, the scrollbar is not displayed.
+If the size of a child component of a container component is infinite, the scrollbar cannot be dragged
+or scrolled with the child component.
+Since API version 10, when the scrollable component has rounded corners, to prevent the scrollbar from
+being cut off by the corners, the scrollbar will automatically calculate the clearance distance from
+the top and bottom.
 
 **Since:** 7
 
@@ -551,7 +633,9 @@ Sets the scrollbar width.
 scrollSnap(value: ScrollSnapOptions)
 ```
 
-Sets the scroll snapping mode. During the snap animation, the scroll operation source type reported by the <em>onWillScroll</em> event is <em>ScrollSource.FLING</em>.
+Sets the scroll snapping mode.
+During the snap animation, the scroll operation source type reported by the <em>onWillScroll</em> event
+is <em>ScrollSource.FLING</em>.
 
 **Since:** 10
 
@@ -593,7 +677,8 @@ Sets the scrolling direction. The scroll offset is reset when this value is chan
 zoomScale(scale: number)
 ```
 
-Current zoom scale. This parameter supports !! for two-way binding of variables.
+Current zoom scale.
+This parameter supports !! for two-way binding of variables.
 
 **Since:** 20
 

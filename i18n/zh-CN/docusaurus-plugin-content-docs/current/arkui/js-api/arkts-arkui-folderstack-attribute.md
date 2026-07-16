@@ -14,7 +14,11 @@
 alignContent(value: Alignment)
 ```
 
-设置子组件在容器内的对齐方式。该属性与[align](arkts-arkui-commonmethod-c.md#align-1)同时设置时，后设置的属性生效。 > **说明：** > > 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+设置子组件在容器内的对齐方式。该属性与[align](arkts-arkui-commonmethod-c.md#align-1)同时设置时，后设置的属性生效。
+
+> **说明：**
+>
+> 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 11
 
@@ -36,7 +40,11 @@ alignContent(value: Alignment)
 autoHalfFold(value: boolean)
 ```
 
-设置是否开启自动旋转，仅在系统自动旋转关闭时该属性生效。 > **说明：** > > 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+设置是否开启自动旋转，仅在系统自动旋转关闭时该属性生效。
+
+> **说明：**
+>
+> 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 11
 
@@ -58,7 +66,11 @@ autoHalfFold(value: boolean)
 enableAnimation(value: boolean)
 ```
 
-设置是否使用默认动效。 > **说明：** > > 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+设置是否使用默认动效。
+
+> **说明：**
+>
+> 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 11
 
@@ -80,7 +92,11 @@ enableAnimation(value: boolean)
 onFolderStateChange(callback: OnFoldStatusChangeCallback)
 ```
 
-当前设备的折叠状态改变时触发回调，仅在横屏状态下生效。 > **说明：** > > 从API version 20开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+当前设备的折叠状态改变时触发回调，仅在横屏状态下生效。
+
+> **说明：**
+>
+> 从API version 20开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 11
 
@@ -102,7 +118,11 @@ onFolderStateChange(callback: OnFoldStatusChangeCallback)
 onHoverStatusChange(handler: OnHoverStatusChangeCallback)
 ```
 
-当前设备的悬停状态改变时触发回调。 > **说明：** > > 从API version 20开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+当前设备的悬停状态改变时触发回调。
+
+> **说明：**
+>
+> 从API version 20开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 12
 

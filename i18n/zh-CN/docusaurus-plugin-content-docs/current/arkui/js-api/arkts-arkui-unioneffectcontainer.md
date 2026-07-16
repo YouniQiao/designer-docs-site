@@ -1,6 +1,8 @@
 # UnionEffectContainer
 
-形状融合容器，会收集该容器内所有使用[useUnionEffect]{@link CommonMethod#useUnionEffect(value: boolean | undefined)}的后代组件形状，将收集的形状融合生效在容 器上，作为该容器的绘制形状。
+形状融合容器，会收集该容器内所有使用[useUnionEffect]{@link CommonMethod#useUnionEffect(value: boolean | undefined)}的后代组件形状，将收集的形状融合生效在容
+器上，作为该容器的绘制形状。
+
 
 ## UnionEffectContainer
 

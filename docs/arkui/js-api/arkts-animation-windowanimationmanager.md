@@ -16,31 +16,24 @@ import { windowAnimationManager } from '@kit.ArkUI';
 
 ## Summary
 
-### Functions
+<!--Del-->
+### Functions（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[minimizeWindowWithAnimation](arkts-windowanimationmanager-minimizewindowwithanimation-f-sys.md#minimizeWindowWithAnimation-1) | Minimize the window target with animation. |
-| <!--DelRow-->[minimizeWindowWithAnimation](arkts-windowanimationmanager-minimizewindowwithanimation-f-sys.md#minimizeWindowWithAnimation-2) | Minimize the window target with animation. |
-| <!--DelRow-->[setController](arkts-windowanimationmanager-setcontroller-f-sys.md#setController-1) | Set the window animation controller. |
+| [minimizeWindowWithAnimation](arkts-arkui-minimizewindowwithanimation-f-sys.md#minimizewindowwithanimation-1) | Minimize the window target with animation. |
+| [minimizeWindowWithAnimation](arkts-arkui-minimizewindowwithanimation-f-sys.md#minimizewindowwithanimation-2) | Minimize the window target with animation. |
+| [setController](arkts-arkui-setcontroller-f-sys.md#setcontroller-1) | Set the window animation controller. |
+<!--DelEnd-->
 
-### Interfaces
-
-| Name | Description |
-| --- | --- |
-| <!--DelRow-->[RRect](arkts-windowanimationmanager-rrect-i-sys.md) | Round rect. |
-| <!--DelRow-->[WindowAnimationController](arkts-windowanimationmanager-windowanimationcontroller-i-sys.md) | Window animation controller. |
-| <!--DelRow-->[WindowAnimationFinishedCallback](arkts-windowanimationmanager-windowanimationfinishedcallback-i-sys.md) | Window animation finished callback. |
-| <!--DelRow-->[WindowAnimationTarget](arkts-windowanimationmanager-windowanimationtarget-i-sys.md) | Window animation target. |
-
-### Types
+<!--Del-->
+### Interfaces（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[AppStartCallback](arkts-windowanimationmanager-appstartcallback-t-sys.md) | Callback function on starting an application. |
-| <!--DelRow-->[AppTransitionCallback](arkts-windowanimationmanager-apptransitioncallback-t-sys.md) | Callback function on application transition. |
-| <!--DelRow-->[ScreenUnlockCallback](arkts-windowanimationmanager-screenunlockcallback-t-sys.md) | Callback function on unlocking the screen. |
-| <!--DelRow-->[WindowAnimationTargetsUpdationCallback](arkts-windowanimationmanager-windowanimationtargetsupdationcallback-t-sys.md) | Callback function on window animation targets update. |
-| <!--DelRow-->[WindowCloseCallback](arkts-windowanimationmanager-windowclosecallback-t-sys.md) | Callback function on closing a window. |
-| <!--DelRow-->[WindowMinimizationCallback](arkts-windowanimationmanager-windowminimizationcallback-t-sys.md) | Callback function on minimizing a window. |
+| [RRect](arkts-arkui-rrect-i-sys.md) | Round rect. |
+| [WindowAnimationController](arkts-arkui-windowanimationcontroller-i-sys.md) | Window animation controller. |
+| [WindowAnimationFinishedCallback](arkts-arkui-windowanimationfinishedcallback-i-sys.md) | Window animation finished callback. |
+| [WindowAnimationTarget](arkts-arkui-windowanimationtarget-i-sys.md) | Window animation target. |
+<!--DelEnd-->
 

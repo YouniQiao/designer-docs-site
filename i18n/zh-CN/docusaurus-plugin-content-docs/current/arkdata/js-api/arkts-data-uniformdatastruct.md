@@ -1,6 +1,8 @@
 # @ohos.data.uniformDataStruct
 
-本模块为统一数据管理框架（Unified Data Management Framework，UDMF）的组成部分，针对多对多跨应用数据共享的不同业务场景提供了部分标准化数据类型 [UniformDataType](arkts-arkdata-uniformdatatype-e.md)对应的数据结构，方便不同应用间进行数据交互， 减少数据类型适配的工作量。
+本模块为统一数据管理框架（Unified Data Management Framework，UDMF）的组成部分，针对多对多跨应用数据共享的不同业务场景提供了部分标准化数据类型
+[UniformDataType](arkts-arkdata-uniformdatatype-e.md)对应的数据结构，方便不同应用间进行数据交互，
+减少数据类型适配的工作量。
 
 **起始版本：** 12
 

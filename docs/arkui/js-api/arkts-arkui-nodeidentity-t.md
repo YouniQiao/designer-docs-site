@@ -4,7 +4,9 @@
 export declare type NodeIdentity = string | number
 ```
 
-Defines the type can be used for identiting the node, for the string type, it's the inspector id set through .[id](../arkts-components/arkts-arkui-commonmethod-c.md#id-1) attribute, and for the number type, it's the unique ID got from the FrameNode by [getUniqueId](arkts-arkui-framenode-c.md#getuniqueid-1) method.
+Defines the type can be used for identiting the node, for the string type, it's the inspector id
+set through .[id](../arkts-components/arkts-arkui-commonmethod-c.md#id-1) attribute, and for the number type, it's the unique ID got from the FrameNode by
+[getUniqueId](arkts-arkui-framenode-c.md#getuniqueid-1) method.
 
 **Since:** 20
 

@@ -1,6 +1,8 @@
 # ImageSpan属性/事件
 
-属性继承自[BaseSpan](arkts-arkui-basespan-c.md)，通用属性方法支持[尺寸设置](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)、[背景设置](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)、[边框设置](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)。 通用事件仅支持[点击控制事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)。还支持以下事件：
+属性继承自[BaseSpan](arkts-arkui-basespan-c.md)，通用属性方法支持[尺寸设置](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)、[背景设置](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)、[边框设置](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)。
+
+通用事件仅支持[点击控制事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)。还支持以下事件：
 
 **继承/实现关系：** ImageSpanAttribute extends [BaseSpan<ImageSpanAttribute>](BaseSpan<ImageSpanAttribute>)
 
@@ -124,7 +126,9 @@ onError(callback: ImageErrorCallback)
 supportSvg2(enable: Optional<boolean>)
 ```
 
-开启或关闭[SVG标签解析能力增强功能](../../../../reference/apis-arkui/arkui-ts/ts-image-svg2-capabilities.md)，开启后相关SVG图片显示效果会有变化。 ImageSpan组件创建后，不支持动态修改该属性的值。
+开启或关闭[SVG标签解析能力增强功能](../../../../reference/apis-arkui/arkui-ts/ts-image-svg2-capabilities.md)，开启后相关SVG图片显示效果会有变化。
+
+ImageSpan组件创建后，不支持动态修改该属性的值。
 
 **起始版本：** 22
 

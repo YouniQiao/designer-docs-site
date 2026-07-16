@@ -4,7 +4,8 @@
 type OnOverrideUrlLoadingCallback = (webResourceRequest: WebResourceRequest) => boolean
 ```
 
-The callback of onOverrideUrlLoading. Should not call WebviewController.loadUrl with the request's URL and then return true.
+The callback of onOverrideUrlLoading.
+Should not call WebviewController.loadUrl with the request's URL and then return true.
 
 **Since:** 12
 

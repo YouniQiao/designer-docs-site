@@ -12,7 +12,7 @@ import { DriverExtensionContext } from '@kit.DriverDevelopmentKit';
 
 | Name | Description |
 | --- | --- |
-| [DriverExtensionAbility](arkts-driverdevelopment-driverextensionability-c.md) | The **DriverExtensionAbility** module provides the ExtensionAbility related to drivers. It provides lifecycle callbacks to be invoked when a driver is created, destroyed, connected, or disconnected. |
+| [DriverExtensionAbility](arkts-driverdevelopment-driverextensionability-c.md) | The **DriverExtensionAbility** module provides the ExtensionAbility related to drivers. It provides lifecyclecallbacks to be invoked when a driver is created, destroyed, connected, or disconnected. |
 
 ### Types
 

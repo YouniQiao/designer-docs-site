@@ -1,6 +1,10 @@
 # @ohos.url
 
-URL代表的是统一资源定位符，本模块提供了常用的工具函数，实现了解析URL字符串和构造[URL](arkts-arkts-url-c.md)对象等功能。 > **说明：** > > - 本模块同时支持ArkTS-Dyn、ArkTS-Sta。
+URL代表的是统一资源定位符，本模块提供了常用的工具函数，实现了解析URL字符串和构造[URL](arkts-arkts-url-c.md)对象等功能。
+
+> **说明：**
+>
+> - 本模块同时支持ArkTS-Dyn、ArkTS-Sta。
 
 **起始版本：** 7
 

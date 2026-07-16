@@ -16,15 +16,19 @@
 - [@ohos.multimodalAwareness.motion](arkts-multimodalawareness-motion.md)
   - [getRecentOperatingHandStatus](arkts-multimodalawareness-getrecentoperatinghandstatus-f.md)
   - [off](arkts-multimodalawareness-off-f.md)<!--Del-->
+  - [offHoverHandChange(system api)](arkts-multimodalawareness-offhoverhandchange-f-sys.md)<!--DelEnd--><!--Del-->
   - [offPickupChange(system api)](arkts-multimodalawareness-offpickupchange-f-sys.md)<!--DelEnd--><!--Del-->
   - [offRotateChange(system api)](arkts-multimodalawareness-offrotatechange-f-sys.md)<!--DelEnd--><!--Del-->
   - [offSmartRotateChange(system api)](arkts-multimodalawareness-offsmartrotatechange-f-sys.md)<!--DelEnd-->
   - [on](arkts-multimodalawareness-on-f.md)<!--Del-->
+  - [onHoverHandChange(system api)](arkts-multimodalawareness-onhoverhandchange-f-sys.md)<!--DelEnd--><!--Del-->
   - [onPickupChange(system api)](arkts-multimodalawareness-onpickupchange-f-sys.md)<!--DelEnd--><!--Del-->
   - [onRotateChange(system api)](arkts-multimodalawareness-onrotatechange-f-sys.md)<!--DelEnd--><!--Del-->
   - [onSmartRotateChange(system api)](arkts-multimodalawareness-onsmartrotatechange-f-sys.md)<!--DelEnd--><!--Del-->
+  - [HoverHandDetectionArea(system api)](arkts-multimodalawareness-hoverhanddetectionarea-i-sys.md)<!--DelEnd--><!--Del-->
   - [SmartRotateEvent(system api)](arkts-multimodalawareness-smartrotateevent-i-sys.md)<!--DelEnd-->
   - [HoldingHandStatus](arkts-multimodalawareness-holdinghandstatus-e.md)<!--Del-->
+  - [HoverHandAction(system api)](arkts-multimodalawareness-hoverhandaction-e-sys.md)<!--DelEnd--><!--Del-->
   - [LogicalOrientation(system api)](arkts-multimodalawareness-logicalorientation-e-sys.md)<!--DelEnd-->
   - [OperatingHandStatus](arkts-multimodalawareness-operatinghandstatus-e.md)<!--Del-->
   - [PhysicalOrientation(system api)](arkts-multimodalawareness-physicalorientation-e-sys.md)<!--DelEnd--><!--Del-->

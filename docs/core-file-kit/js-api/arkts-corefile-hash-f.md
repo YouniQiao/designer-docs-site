@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { hash } from '@ohos.file.hash';
+import { hash } from '@kit.CoreFileKit';
 ```
 
 ## hash

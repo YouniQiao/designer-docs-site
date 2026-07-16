@@ -1,6 +1,9 @@
 # AbilityStageContext
 
-The AbilityStageContext module implements the context of an ability stage. It inherits from [Context](arkts-ability-context-depr-i.md). This module provides APIs for accessing a specific ability stage. You can use the APIs to obtain the ModuleInfo object and environment configuration of an ability stage.
+The AbilityStageContext module implements the context of an ability stage. It inherits from
+[Context](arkts-ability-context-depr-i.md).
+This module provides APIs for accessing a specific ability stage. You can use the APIs to obtain the ModuleInfo
+object and environment configuration of an ability stage.
 
 **Inheritance/Implementation:** AbilityStageContext extends [Context](arkts-ability-context-t.md)
 

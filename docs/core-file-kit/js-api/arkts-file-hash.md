@@ -18,7 +18,7 @@ import { hash } from '@kit.CoreFileKit';
 
 | Name | Description |
 | --- | --- |
-| [createHash](arkts-corefile-createhash-f.md#createhash-1) | Creates a **HashStream** instance, which can be used to generate a message digest (a hash value) using the given algorithm. |
+| [createHash](arkts-corefile-createhash-f.md#createhash-1) | Creates a **HashStream** instance, which can be used to generate a message digest (a hash value) using the givenalgorithm. |
 | [hash](arkts-corefile-hash-f.md#hash-1) | Calculates a hash value for a file. This API uses a promise to return the result. |
 | [hash](arkts-corefile-hash-f.md#hash-2) | Calculates a hash value for a file. This API uses an asynchronous callback to return the result. |
 
@@ -26,5 +26,5 @@ import { hash } from '@kit.CoreFileKit';
 
 | Name | Description |
 | --- | --- |
-| [HashStream](arkts-corefile-hashstream-c.md) | The **HashStream** class is a utility for creating a message digest of data. You can use [createHash](../../../../reference/apis-core-file-kit/js-apis-file-hash.md#hashcreatehash12) to create a **HashStream** instance. |
+| [HashStream](arkts-corefile-hashstream-c.md) | The **HashStream** class is a utility for creating a message digest of data. You can use[createHash](../../../../reference/apis-core-file-kit/js-apis-file-hash.md#hashcreatehash12) to create a**HashStream** instance. |
 

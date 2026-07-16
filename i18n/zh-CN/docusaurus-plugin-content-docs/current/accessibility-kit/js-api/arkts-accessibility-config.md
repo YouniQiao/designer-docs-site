@@ -47,9 +47,9 @@
 | 名称 | 说明 |
 | --- | --- |
 | [ClickResponseTime](arkts-accessibility-clickresponsetime-t-sys.md) | 用于不同时间长短的点击重复时间。 |
-| [DaltonizationColorFilter](arkts-accessibility-daltonizationcolorfilter-t-sys.md) | 颜色滤镜功能开启时（[daltonizationState](daltonizationState)设置为true)，颜色滤镜的配置(即设置的DaltonizationColorFilter的值)生效；颜色滤镜功能关闭 时（[daltonizationState](daltonizationState)设置为false)，显示为正常类型。 |
+| [DaltonizationColorFilter](arkts-accessibility-daltonizationcolorfilter-t-sys.md) | 颜色滤镜功能开启时（[daltonizationState](daltonizationState)设置为true)，颜色滤镜的配置(即设置的DaltonizationColorFilter的值)生效；颜色滤镜功能关闭时（[daltonizationState](daltonizationState)设置为false)，显示为正常类型。 |
 | [OnDisconnectCallback](arkts-accessibility-ondisconnectcallback-t-sys.md) | 描述AccessibilityExtensionAbility断开连接的回调接口。 |
-| [RepeatClickInterval](arkts-accessibility-repeatclickinterval-t-sys.md) | 忽略重复点击功能开启时（[ignoreRepeatClick](ignoreRepeatClick)设置为true)，忽略重复点击的配置(即设置的RepeatClickInterval的值)生效；忽略重复点击功能关闭时 （[ignoreRepeatClick](ignoreRepeatClick)设置为false)，显示为正常类型。 |
+| [RepeatClickInterval](arkts-accessibility-repeatclickinterval-t-sys.md) | 忽略重复点击功能开启时（[ignoreRepeatClick](ignoreRepeatClick)设置为true)，忽略重复点击的配置(即设置的RepeatClickInterval的值)生效；忽略重复点击功能关闭时（[ignoreRepeatClick](ignoreRepeatClick)设置为false)，显示为正常类型。 |
 <!--DelEnd-->
 
 <!--Del-->

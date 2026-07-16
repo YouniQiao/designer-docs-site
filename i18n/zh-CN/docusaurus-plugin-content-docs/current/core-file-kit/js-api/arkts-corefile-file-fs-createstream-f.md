@@ -6,7 +6,7 @@
 declare function createStream(path: string, mode: string): Promise<Stream>
 ```
 
-基于文件路径创建文件流，使用promise异步回调。需要配合[Stream](arkts-corefile-stream-i.md#stream)中的close()函数关闭文件流。
+基于文件路径创建文件流，使用promise异步回调。需要配合[Stream](arkts-corefile-stream-i.md)中的close()函数关闭文件流。
 
 **起始版本：** 9
 
@@ -57,7 +57,7 @@ declare function createStream(path: string, mode: string): Promise<Stream>
 | 13900038 | Value too large for defined data type |
 | 13900041 | Quota exceeded |
 | 13900042 | Unknown error |
-| 13900044 | Network is unreachable<br>**适用版本：** 12 |
+| 13900044 | Network is unreachable<br>**适用版本：** 12+ |
 
 
 ## createStream
@@ -66,7 +66,7 @@ declare function createStream(path: string, mode: string): Promise<Stream>
 declare function createStream(path: string, mode: string, callback: AsyncCallback<Stream>): void
 ```
 
-基于文件路径创建文件流，使用callback异步回调。需要配合[Stream](arkts-corefile-stream-i.md#stream)中的close()函数关闭文件流。
+基于文件路径创建文件流，使用callback异步回调。需要配合[Stream](arkts-corefile-stream-i.md)中的close()函数关闭文件流。
 
 **起始版本：** 9
 

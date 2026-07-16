@@ -6,7 +6,8 @@
 const MAX_BATCH_SIZE = 128
 ```
 
-max batch operation size. Maximum number of batch operations.
+max batch operation size.
+Maximum number of batch operations.
 
 **Since:** 7
 
@@ -22,7 +23,8 @@ max batch operation size. Maximum number of batch operations.
 const MAX_KEY_LENGTH = 1024
 ```
 
-max key length. Maximum length of a key in the KV store, in bytes.
+max key length.
+Maximum length of a key in the KV store, in bytes.
 
 **Since:** 7
 
@@ -38,7 +40,8 @@ max key length. Maximum length of a key in the KV store, in bytes.
 const MAX_KEY_LENGTH_DEVICE = 896
 ```
 
-max device coordinate key length. Maximum length of a device key, in bytes.
+max device coordinate key length.
+Maximum length of a device key, in bytes.
 
 **Since:** 7
 
@@ -54,7 +57,8 @@ max device coordinate key length. Maximum length of a device key, in bytes.
 const MAX_QUERY_LENGTH = 512000
 ```
 
-max query length. Maximum query length, in bytes.
+max query length.
+Maximum query length, in bytes.
 
 **Since:** 7
 
@@ -70,7 +74,8 @@ max query length. Maximum query length, in bytes.
 const MAX_STORE_ID_LENGTH = 128
 ```
 
-max store id length. Maximum length of a KV store ID, in bytes.
+max store id length.
+Maximum length of a KV store ID, in bytes.
 
 **Since:** 7
 
@@ -86,7 +91,8 @@ max store id length. Maximum length of a KV store ID, in bytes.
 const MAX_VALUE_LENGTH = 4194303
 ```
 
-max value length. Maximum length of a value in the KV store, in bytes.
+max value length.
+Maximum length of a value in the KV store, in bytes.
 
 **Since:** 7
 

@@ -29,7 +29,7 @@
 | Name | Description |
 | --- | --- |
 | [Array](arkts-na-array-i.md) |  |
-| [ArrayBuffer](arkts-na-arraybuffer-i.md) | Represents a raw buffer of binary data, which is used to store data for the different typed arrays. ArrayBuffers cannot be read from or written to directly, but can be passed to a typed array or DataView Object to interpret the raw buffer as needed. |
+| [ArrayBuffer](arkts-na-arraybuffer-i.md) | Represents a raw buffer of binary data, which is used to store data for thedifferent typed arrays. ArrayBuffers cannot be read from or written to directly,but can be passed to a typed array or DataView Object to interpret the rawbuffer as needed. |
 | [ArrayBufferConstructor](arkts-na-arraybufferconstructor-i.md) |  |
 | [ArrayBufferTypes](arkts-na-arraybuffertypes-i.md) | Allowed ArrayBuffer types for the buffer of an ArrayBufferView and related Typed Arrays. |
 | [ArrayBufferView](arkts-na-arraybufferview-i.md) |  |
@@ -47,21 +47,21 @@
 | [ErrorConstructor](arkts-na-errorconstructor-i.md) |  |
 | [EvalError](arkts-na-evalerror-i.md) |  |
 | [EvalErrorConstructor](arkts-na-evalerrorconstructor-i.md) |  |
-| [Float32Array](arkts-na-float32array-i.md) | A typed array of 32-bit float values. The contents are initialized to 0. If the requested number of bytes could not be allocated an exception is raised. |
+| [Float32Array](arkts-na-float32array-i.md) | A typed array of 32-bit float values. The contents are initialized to 0. If the requested numberof bytes could not be allocated an exception is raised. |
 | [Float32ArrayConstructor](arkts-na-float32arrayconstructor-i.md) |  |
-| [Float64Array](arkts-na-float64array-i.md) | A typed array of 64-bit float values. The contents are initialized to 0. If the requested number of bytes could not be allocated an exception is raised. |
+| [Float64Array](arkts-na-float64array-i.md) | A typed array of 64-bit float values. The contents are initialized to 0. If the requestednumber of bytes could not be allocated an exception is raised. |
 | [Float64ArrayConstructor](arkts-na-float64arrayconstructor-i.md) |  |
 | [Function](arkts-na-function-i.md) | Creates a new function. |
 | [FunctionConstructor](arkts-na-functionconstructor-i.md) |  |
 | [IArguments](arkts-na-iarguments-i.md) |  |
 | [ImportAssertions](arkts-na-importassertions-i.md) | The type for the `assert` property of the optional second argument to `import()`. |
-| [ImportCallOptions](arkts-na-importcalloptions-i.md) | The type for the optional second argument to `import()`. If your host environment supports additional options, this type may be augmented via interface merging. |
-| [ImportMeta](arkts-na-importmeta-i.md) | The type of `import.meta`. If you need to declare that a given property exists on `import.meta`, this type may be augmented via interface merging. |
-| [Int16Array](arkts-na-int16array-i.md) | A typed array of 16-bit signed integer values. The contents are initialized to 0. If the requested number of bytes could not be allocated an exception is raised. |
+| [ImportCallOptions](arkts-na-importcalloptions-i.md) | The type for the optional second argument to `import()`.If your host environment supports additional options, this type may beaugmented via interface merging. |
+| [ImportMeta](arkts-na-importmeta-i.md) | The type of `import.meta`.If you need to declare that a given property exists on `import.meta`,this type may be augmented via interface merging. |
+| [Int16Array](arkts-na-int16array-i.md) | A typed array of 16-bit signed integer values. The contents are initialized to 0. If therequested number of bytes could not be allocated an exception is raised. |
 | [Int16ArrayConstructor](arkts-na-int16arrayconstructor-i.md) |  |
-| [Int32Array](arkts-na-int32array-i.md) | A typed array of 32-bit signed integer values. The contents are initialized to 0. If the requested number of bytes could not be allocated an exception is raised. |
+| [Int32Array](arkts-na-int32array-i.md) | A typed array of 32-bit signed integer values. The contents are initialized to 0. If therequested number of bytes could not be allocated an exception is raised. |
 | [Int32ArrayConstructor](arkts-na-int32arrayconstructor-i.md) |  |
-| [Int8Array](arkts-na-int8array-i.md) | A typed array of 8-bit integer values. The contents are initialized to 0. If the requested number of bytes could not be allocated an exception is raised. |
+| [Int8Array](arkts-na-int8array-i.md) | A typed array of 8-bit integer values. The contents are initialized to 0. If the requestednumber of bytes could not be allocated an exception is raised. |
 | [Int8ArrayConstructor](arkts-na-int8arrayconstructor-i.md) |  |
 | [JSON](arkts-na-json-i.md) |  |
 | [Math](arkts-na-math-i.md) |  |
@@ -95,13 +95,13 @@
 | [TypedPropertyDescriptor](arkts-na-typedpropertydescriptor-i.md) |  |
 | [URIError](arkts-na-urierror-i.md) |  |
 | [URIErrorConstructor](arkts-na-urierrorconstructor-i.md) |  |
-| [Uint16Array](arkts-na-uint16array-i.md) | A typed array of 16-bit unsigned integer values. The contents are initialized to 0. If the requested number of bytes could not be allocated an exception is raised. |
+| [Uint16Array](arkts-na-uint16array-i.md) | A typed array of 16-bit unsigned integer values. The contents are initialized to 0. If therequested number of bytes could not be allocated an exception is raised. |
 | [Uint16ArrayConstructor](arkts-na-uint16arrayconstructor-i.md) |  |
-| [Uint32Array](arkts-na-uint32array-i.md) | A typed array of 32-bit unsigned integer values. The contents are initialized to 0. If the requested number of bytes could not be allocated an exception is raised. |
+| [Uint32Array](arkts-na-uint32array-i.md) | A typed array of 32-bit unsigned integer values. The contents are initialized to 0. If therequested number of bytes could not be allocated an exception is raised. |
 | [Uint32ArrayConstructor](arkts-na-uint32arrayconstructor-i.md) |  |
-| [Uint8Array](arkts-na-uint8array-i.md) | A typed array of 8-bit unsigned integer values. The contents are initialized to 0. If the requested number of bytes could not be allocated an exception is raised. |
+| [Uint8Array](arkts-na-uint8array-i.md) | A typed array of 8-bit unsigned integer values. The contents are initialized to 0. If therequested number of bytes could not be allocated an exception is raised. |
 | [Uint8ArrayConstructor](arkts-na-uint8arrayconstructor-i.md) |  |
-| [Uint8ClampedArray](arkts-na-uint8clampedarray-i.md) | A typed array of 8-bit unsigned integer (clamped) values. The contents are initialized to 0. If the requested number of bytes could not be allocated an exception is raised. |
+| [Uint8ClampedArray](arkts-na-uint8clampedarray-i.md) | A typed array of 8-bit unsigned integer (clamped) values. The contents are initialized to 0.If the requested number of bytes could not be allocated an exception is raised. |
 | [Uint8ClampedArrayConstructor](arkts-na-uint8clampedarrayconstructor-i.md) |  |
 
 ### Types

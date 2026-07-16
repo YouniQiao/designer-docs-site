@@ -3,20 +3,24 @@
 ## Modules to Import
 
 ```TypeScript
-import { PanelInfo,PanelType } from '@kit.BasicServicesKit';
+import { PanelInfo, PanelType } from '@kit.BasicServicesKit';
 ```
 
 ## Summary
 
-### Interfaces
+<!--Del-->
+### Interfaces（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[PanelInfo](arkts-panelinfo-i.md) | 划词面板属性信息。 |
+| [PanelInfo](arkts-basicservices-panelinfo-i-sys.md) | Describes the properties of the word selection panel. |
+<!--DelEnd-->
 
-### Enums
+<!--Del-->
+### Enums（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[PanelType](arkts-paneltype-e.md) | 划词面板类型枚举。 |
+| [PanelType](arkts-basicservices-paneltype-e-sys.md) | Enumerates the word selection panel types. |
+<!--DelEnd-->
 

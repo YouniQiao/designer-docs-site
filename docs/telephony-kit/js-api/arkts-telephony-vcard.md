@@ -18,22 +18,22 @@ import { vcard } from '@kit.TelephonyKit';
 
 | Name | Description |
 | --- | --- |
-| [exportVCard](arkts-vcard-exportvcard-f.md#exportVCard-1) | Export contact data to a vcf file. |
-| [exportVCard](arkts-vcard-exportvcard-f.md#exportVCard-2) | Export contact data to a vcf file. |
-| [exportVCard](arkts-vcard-exportvcard-f.md#exportVCard-3) | Export contact data to a vcf file. |
-| [importVCard](arkts-vcard-importvcard-f.md#importVCard-1) | Import contacts from the specified vcf file. |
-| [importVCard](arkts-vcard-importvcard-f.md#importVCard-2) | Import contacts from the specified vcf file. |
-| [importVCard](arkts-vcard-importvcard-f.md#importVCard-3) | Import contacts from the specified vcf file. |
+| [exportVCard](arkts-telephony-exportvcard-f.md#exportvcard-1) | Export contact data to a vcf file. |
+| [exportVCard](arkts-telephony-exportvcard-f.md#exportvcard-2) | Export contact data to a vcf file. |
+| [exportVCard](arkts-telephony-exportvcard-f.md#exportvcard-3) | Export contact data to a vcf file. |
+| [importVCard](arkts-telephony-importvcard-f.md#importvcard-1) | Import contacts from the specified vcf file. |
+| [importVCard](arkts-telephony-importvcard-f.md#importvcard-2) | Import contacts from the specified vcf file. |
+| [importVCard](arkts-telephony-importvcard-f.md#importvcard-3) | Import contacts from the specified vcf file. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [VCardBuilderOptions](arkts-vcard-vcardbuilderoptions-i.md) | Indicates the options for VCard export. |
+| [VCardBuilderOptions](arkts-telephony-vcardbuilderoptions-i.md) | Indicates the options for VCard export. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [VCardType](arkts-vcard-vcardtype-e.md) | Indicates the VCard types. |
+| [VCardType](arkts-telephony-vcardtype-e.md) | Indicates the VCard types. |
 

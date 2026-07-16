@@ -1,6 +1,8 @@
 # WorkSchedulerExtensionAbility
 
-延迟任务回调，当满足调度条件或调度结束时，系统会回调应用WorkSchedulerExtensionAbility中 [onWorkStart()](arkts-backgroundtasks-workschedulerextensionability-c.md#onworkstart-1)或 [onWorkStop()](arkts-backgroundtasks-workschedulerextensionability-c.md#onworkstop-1)的方法。
+延迟任务回调，当满足调度条件或调度结束时，系统会回调应用WorkSchedulerExtensionAbility中
+[onWorkStart()](arkts-backgroundtasks-workschedulerextensionability-c.md#onworkstart-1)或
+[onWorkStop()](arkts-backgroundtasks-workschedulerextensionability-c.md#onworkstop-1)的方法。
 
 **起始版本：** 9
 
@@ -47,7 +49,8 @@ export default class MyWorkSchedulerExtensionAbility extends WorkSchedulerExtens
 onWorkStop(work: workScheduler.WorkInfo): void
 ```
 
-结束延迟任务调度回调。当延迟任务2分钟超时或应用调用[stopWork](arkts-backgroundtasks-stopwork-f.md#stopwork-1) 接口取消任务时，触发该回调。
+结束延迟任务调度回调。当延迟任务2分钟超时或应用调用[stopWork](arkts-backgroundtasks-stopwork-f.md#stopwork-1)
+接口取消任务时，触发该回调。
 
 **起始版本：** 9
 

@@ -1,6 +1,7 @@
 # @ohos.multimedia.systemSoundManager
 
-This module provides basic capabilities for managing system sound effects, including defining system sound effect types and obtaining system sound effect players.
+This module provides basic capabilities for managing system sound effects, including defining system sound effect
+types and obtaining system sound effect players.
 
 **Since:** 23
 
@@ -20,7 +21,7 @@ import { systemSoundManager } from '@kit.AudioKit';
 
 | Name | Description |
 | --- | --- |
-| [createSystemSoundPlayer](arkts-audio-createsystemsoundplayer-f.md#createsystemsoundplayer-1) | Creates a SystemSoundPlayer instance. This function uses a promise to return the result. This player can be used to play some system sounds for media or camera actions. |
+| [createSystemSoundPlayer](arkts-audio-createsystemsoundplayer-f.md#createsystemsoundplayer-1) | Creates a SystemSoundPlayer instance. This function uses a promise to return the result.This player can be used to play some system sounds for media or camera actions. |
 
 <!--Del-->
 ### Functions（系统接口）

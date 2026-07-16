@@ -36,7 +36,8 @@ antiAlias(value: boolean)
 fill(value: ResourceColor)
 ```
 
-设置填充区域的颜色，支持[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)动态设置属性方法，异常值按照默认值处理。与通用属性foregroundColor同时设置时， 后设置的属性生效。
+设置填充区域的颜色，支持[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)动态设置属性方法，异常值按照默认值处理。与通用属性foregroundColor同时设置时，
+后设置的属性生效。
 
 **起始版本：** 7
 
@@ -80,7 +81,14 @@ fillOpacity(value: number | string | Resource)
 mesh(value: Array<any>, column: number, row: number)
 ```
 
-设置网格效果。将图像分割为（row + 1）* (column + 1)的网格，每个网格交点坐标存储在数组中（每两个元素表示一个交点的x、y坐标）。通过数组value中的坐标值，重新定位网格顶点位置，实现图像局部扭曲。支持 [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)动态设置属性方法。 > **说明：** > > mesh只对shape传入pixelMap时生效，且效果作用于传入的pixelMap。与[绘制模块](../../apis-arkgraphics2d/arkts-apis/arkts-graphics-drawing.md)的 > [drawPixelMapMesh<sup>12+</sup>](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-canvas-c.md#drawpixelmapmesh-1)效果一致，建议使用 > drawPixelMapMesh。
+设置网格效果。将图像分割为（row + 1）* (column + 1)的网格，每个网格交点坐标存储在数组中（每两个元素表示一个交点的x、y坐标）。通过数组value中的坐标值，重新定位网格顶点位置，实现图像局部扭曲。支持
+[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)动态设置属性方法。
+
+> **说明：**
+>
+> mesh只对shape传入pixelMap时生效，且效果作用于传入的pixelMap。与[绘制模块](../../apis-arkgraphics2d/arkts-apis/arkts-graphics-drawing.md)的
+> [drawPixelMapMesh<sup>12+</sup>](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-canvas-c.md#drawpixelmapmesh-1)效果一致，建议使用
+> drawPixelMapMesh。
 
 **起始版本：** 8
 
@@ -214,7 +222,10 @@ strokeLineJoin(value: LineJoinStyle)
 strokeMiterLimit(value: Length)
 ```
 
-设置斜接长度与边框宽度比值的极限值，支持[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)动态设置属性方法。斜接长度表示外边框外边交点到内边交点的距离，边框宽度即 strokeWidth属性的值。该属性取值需在strokeLineJoin属性取值LineJoinStyle.Miter时生效。 该属性的合法值范围应当大于等于1.0，当取值范围在[0,1)时按1.0处理，其余异常值按默认值处理。
+设置斜接长度与边框宽度比值的极限值，支持[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)动态设置属性方法。斜接长度表示外边框外边交点到内边交点的距离，边框宽度即
+strokeWidth属性的值。该属性取值需在strokeLineJoin属性取值LineJoinStyle.Miter时生效。
+
+该属性的合法值范围应当大于等于1.0，当取值范围在[0,1)时按1.0处理，其余异常值按默认值处理。
 
 **起始版本：** 7
 
@@ -236,7 +247,8 @@ strokeMiterLimit(value: Length)
 strokeOpacity(value: number | string | Resource)
 ```
 
-设置边框透明度，支持[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)动态设置属性方法。该属性的取值范围是[0.0, 1.0]，若给定值小于0.0，则取值为0.0；若 给定值大于1.0，则取值为1.0。
+设置边框透明度，支持[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)动态设置属性方法。该属性的取值范围是[0.0, 1.0]，若给定值小于0.0，则取值为0.0；若
+给定值大于1.0，则取值为1.0。
 
 **起始版本：** 7
 

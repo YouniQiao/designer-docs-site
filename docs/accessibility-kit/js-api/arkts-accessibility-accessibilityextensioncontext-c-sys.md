@@ -250,7 +250,11 @@ Holds the running lock. After the lock is held, the screen will not turn off aut
 notifyDisconnect(): void
 ```
 
-Notifies the accessibility service that the accessibility extension service can be disconnected. This API must be used together with the [on('preDisconnect')](arkts-accessibility-accessibilityextensioncontext-c-sys.md#on-1) API. If the **on('preDisconnect')** API is not called, this API does not take effect.
+Notifies the accessibility service that the accessibility extension service can be disconnected.
+
+This API must be used together with the
+[on('preDisconnect')](arkts-accessibility-accessibilityextensioncontext-c-sys.md#on-1) API.
+If the **on('preDisconnect')** API is not called, this API does not take effect.
 
 **Since:** 20
 
@@ -273,7 +277,8 @@ Notifies the accessibility service that the accessibility extension service can 
 off(type: 'preDisconnect', callback?: Callback<void>): void
 ```
 
-Unsubscribes from the pre-disconnection event of the accessibility extension service. This API is not called until the accessibility extension service is disconnected. This API uses an asynchronous callback to return the result.
+Unsubscribes from the pre-disconnection event of the accessibility extension service. This API is not called until
+the accessibility extension service is disconnected. This API uses an asynchronous callback to return the result.
 
 **Since:** 20
 
@@ -303,7 +308,12 @@ Unsubscribes from the pre-disconnection event of the accessibility extension ser
 on(type: 'preDisconnect', callback: Callback<void>): void
 ```
 
-Subscribes to the pre-disconnection event of the accessibility extension service. This API is called when the accessibility extension service is about to be disconnected. This API uses an asynchronous callback to return the result. Used together with [notifyDisconnect](arkts-accessibility-accessibilityextensioncontext-c-sys.md#notifydisconnect-1); otherwise, the accessibility extension service is automatically disconnected 30 seconds later by default.
+Subscribes to the pre-disconnection event of the accessibility extension service. This API is called when the
+accessibility extension service is about to be disconnected. This API uses an asynchronous callback to return the
+result.
+
+Used together with [notifyDisconnect](arkts-accessibility-accessibilityextensioncontext-c-sys.md#notifydisconnect-1); otherwise, the
+accessibility extension service is automatically disconnected 30 seconds later by default.
 
 **Since:** 20
 

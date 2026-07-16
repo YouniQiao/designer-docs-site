@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@ohos.file.fs';
+import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
 ## disconnectDfs
@@ -24,7 +24,7 @@ Triggers disconnection.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| networkId | string | Yes | Network ID of the device. The device network ID can be obtained from[DeviceBasicInfo](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicebasicinfo-i.md#devicebasicinfo) using therelated [distributedDeviceManager](../../apis-distributed-service-kit/arkts-apis/arkts-distributeddevicemanager.md#distributeddevicemanager) API. |
+| networkId | string | Yes | Network ID of the device. The device network ID can be obtained from[DeviceBasicInfo](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicebasicinfo-i.md) using therelated [distributedDeviceManager](../../apis-distributed-service-kit/arkts-apis/arkts-distributeddevicemanager.md) API. |
 
 **Return value:**
 

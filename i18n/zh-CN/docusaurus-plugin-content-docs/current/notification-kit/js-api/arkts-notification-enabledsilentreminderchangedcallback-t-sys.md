@@ -4,7 +4,8 @@
 export type EnabledSilentReminderChangedCallback = (callbackData: EnabledSilentReminderCallbackData) => void
 ```
 
-注册应用通知静默提醒使能状态变化的回调函数类型。 type EnabledSilentReminderChangedCallback = (callbackData: EnabledSilentReminderCallbackData) => void
+注册应用通知静默提醒使能状态变化的回调函数类型。
+type EnabledSilentReminderChangedCallback = (callbackData: EnabledSilentReminderCallbackData) => void
 
 **起始版本：** 24
 

@@ -1,6 +1,12 @@
 # InputMethodExtensionContext
 
-The **InputMethodExtensionContext** module, inherited from **ExtensionContext**, provides context for **InputMethodExtension** abilities. You can use the APIs of this module to start, terminate, connect, and disconnect abilities. > **NOTE** > > - The APIs of this module can be used only in the stage model.
+The **InputMethodExtensionContext** module, inherited from **ExtensionContext**, provides context for
+**InputMethodExtension** abilities. You can use the APIs of this module to start, terminate, connect, and disconnect
+abilities.
+
+> **NOTE**
+>
+> - The APIs of this module can be used only in the stage model.
 
 **Inheritance/Implementation:** InputMethodExtensionContext extends [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md)
 
@@ -165,7 +171,8 @@ Connects this ability to a ServiceExtensionAbility.
 disconnectAbility(connection: number, callback: AsyncCallback<void>): void
 ```
 
-Disconnects this ability from a ServiceExtensionAbility and after the successful disconnection, sets the remote object returned upon the connection to void. This API uses an asynchronous callback to return the result.
+Disconnects this ability from a ServiceExtensionAbility and after the successful disconnection, sets the remote
+object returned upon the connection to void. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -198,7 +205,8 @@ Disconnects this ability from a ServiceExtensionAbility and after the successful
 disconnectAbility(connection: number): Promise<void>
 ```
 
-Disconnects this ability from a ServiceExtensionAbility and after the successful disconnection, sets the remote object returned upon the connection to void. This API uses a promise to return the result.
+Disconnects this ability from a ServiceExtensionAbility and after the successful disconnection, sets the remote
+object returned upon the connection to void. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -236,7 +244,9 @@ Disconnects this ability from a ServiceExtensionAbility and after the successful
 disconnectServiceExtensionAbility(connection: number, callback: AsyncCallback<void>): void
 ```
 
-Disconnects this ability from a ServiceExtensionAbility and after the successful disconnection, sets the remote object returned upon the connection to void. This API can be called only on the main thread. This API uses an asynchronous callback to return the result.
+Disconnects this ability from a ServiceExtensionAbility and after the successful disconnection, sets the remote
+object returned upon the connection to void. This API can be called only on the main thread. This API uses an
+asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -269,7 +279,9 @@ Disconnects this ability from a ServiceExtensionAbility and after the successful
 disconnectServiceExtensionAbility(connection: number): Promise<void>
 ```
 
-Disconnects this ability from a ServiceExtensionAbility and after the successful disconnection, sets the remote object returned upon the connection to void. This API can be called only on the main thread. This API uses a promise to return the result.
+Disconnects this ability from a ServiceExtensionAbility and after the successful disconnection, sets the remote
+object returned upon the connection to void. This API can be called only on the main thread. This API uses a
+promise to return the result.
 
 **Since:** 9
 

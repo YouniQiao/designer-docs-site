@@ -16,24 +16,30 @@ import { bas } from '@kit.ConnectivityKit';
 
 ## Summary
 
-### Functions
+<!--Del-->
+### Functions（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[getRemoteDeviceBatteryInfo](arkts-bas-getremotedevicebatteryinfo-f-sys.md#getRemoteDeviceBatteryInfo-1) | Get remote device battery information. |
-| <!--DelRow-->[isBasSupported](arkts-bas-isbassupported-f-sys.md#isBasSupported-1) | Determine whether the local device can obtain the battery level of the remote device. |
-| <!--DelRow-->[offBatteryChange](arkts-bas-offbatterychange-f-sys.md#offBatteryChange-1) | Unsubscribe the event of battery state changes from a remote device. |
-| <!--DelRow-->[onBatteryChange](arkts-bas-onbatterychange-f-sys.md#onBatteryChange-1) | Subscribe the event of battery state changed from a remote device. |
+| [getRemoteDeviceBatteryInfo](arkts-connectivity-getremotedevicebatteryinfo-f-sys.md#getremotedevicebatteryinfo-1) | Get remote device battery information. |
+| [isBasSupported](arkts-connectivity-isbassupported-f-sys.md#isbassupported-1) | Determine whether the local device can obtain the battery level of the remote device. |
+| [offBatteryChange](arkts-connectivity-offbatterychange-f-sys.md#offbatterychange-1) | Unsubscribe the event of battery state changes from a remote device. |
+| [onBatteryChange](arkts-connectivity-onbatterychange-f-sys.md#onbatterychange-1) | Subscribe the event of battery state changed from a remote device. |
+<!--DelEnd-->
 
-### Interfaces
-
-| Name | Description |
-| --- | --- |
-| <!--DelRow-->[BatteryInfo](arkts-bas-batteryinfo-i-sys.md) | Describe the contents of the battery information. |
-
-### Types
+<!--Del-->
+### Interfaces（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[BluetoothAddress](arkts-bas-bluetoothaddress-t-sys.md) | Bluetooth device address. |
+| [BatteryInfo](arkts-connectivity-batteryinfo-i-sys.md) | Describe the contents of the battery information. |
+<!--DelEnd-->
+
+<!--Del-->
+### Types（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [BluetoothAddress](arkts-connectivity-bluetoothaddress-t-sys.md) | Bluetooth device address. |
+<!--DelEnd-->
 

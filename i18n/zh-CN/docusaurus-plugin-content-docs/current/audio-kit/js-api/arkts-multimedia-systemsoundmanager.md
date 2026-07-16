@@ -30,9 +30,9 @@
 
 | 名称 | 说明 |
 | --- | --- |
-| [SystemSoundManager](arkts-audio-systemsoundmanager-i-sys.md) | 管理系统声音。在调用SystemSoundManager的接口前，需要先 通过[getSystemSoundManager](arkts-audio-getsystemsoundmanager-f-sys.md#getsystemsoundmanager-1)创建实例。 |
-| [ToneAttrs](arkts-audio-toneattrs-i-sys.md) | 管理铃声属性。在调用ToneAttrs&lt;sup&gt;12+&lt;/sup&gt;的接口前，需要先通过 [createCustomizedToneAttrs](arkts-audio-createcustomizedtoneattrs-f-sys.md#createcustomizedtoneattrs-1)或 [getDefaultRingtoneAttrs](arkts-audio-systemsoundmanager-i-sys.md#getdefaultringtoneattrs-1)、 [getRingtoneAttrList](arkts-audio-systemsoundmanager-i-sys.md#getringtoneattrlist-1)等方法获取实例。 |
-| [ToneHapticsAttrs](arkts-audio-tonehapticsattrs-i-sys.md) | 系统铃音的振动属性。在调用ToneHapticsAttrs&lt;sup&gt;14+&lt;/sup&gt;的接口前，需要先通过 [getToneHapticsList](arkts-audio-systemsoundmanager-i-sys.md#gettonehapticslist-1)或 [getHapticsAttrsSyncedWithTone](arkts-audio-systemsoundmanager-i-sys.md#gethapticsattrssyncedwithtone-1)方法获取实例。 |
+| [SystemSoundManager](arkts-audio-systemsoundmanager-i-sys.md) | 管理系统声音。在调用SystemSoundManager的接口前，需要先通过[getSystemSoundManager](arkts-audio-getsystemsoundmanager-f-sys.md#getsystemsoundmanager-1)创建实例。 |
+| [ToneAttrs](arkts-audio-toneattrs-i-sys.md) | 管理铃声属性。在调用ToneAttrs&lt;sup&gt;12+&lt;/sup&gt;的接口前，需要先通过[createCustomizedToneAttrs](arkts-audio-createcustomizedtoneattrs-f-sys.md#createcustomizedtoneattrs-1)或[getDefaultRingtoneAttrs](arkts-audio-systemsoundmanager-i-sys.md#getdefaultringtoneattrs-1)、[getRingtoneAttrList](arkts-audio-systemsoundmanager-i-sys.md#getringtoneattrlist-1)等方法获取实例。 |
+| [ToneHapticsAttrs](arkts-audio-tonehapticsattrs-i-sys.md) | 系统铃音的振动属性。在调用ToneHapticsAttrs&lt;sup&gt;14+&lt;/sup&gt;的接口前，需要先通过[getToneHapticsList](arkts-audio-systemsoundmanager-i-sys.md#gettonehapticslist-1)或[getHapticsAttrsSyncedWithTone](arkts-audio-systemsoundmanager-i-sys.md#gethapticsattrssyncedwithtone-1)方法获取实例。 |
 | [ToneHapticsSettings](arkts-audio-tonehapticssettings-i-sys.md) | 系统铃音的振动设置。 |
 <!--DelEnd-->
 
@@ -47,8 +47,8 @@
 | [SystemSoundType](arkts-audio-systemsoundtype-e.md) | 枚举，表示系统音效类型。 |
 | [SystemToneType](arkts-audio-systemtonetype-e-sys.md) | 枚举，系统铃声类型。 |
 | [ToneCustomizedType](arkts-audio-tonecustomizedtype-e-sys.md) | 枚举，铃声自定义类型。 |
-| [ToneHapticsFeature](arkts-audio-tonehapticsfeature-e-sys.md) | 枚举，系统振动风格定义。 \| 名称 \| 值 \| 说明 \| \| ----------------------------- \| -- \| -------------------- \| \| STANDARD\| 0 \| 标准振动风格。 \| \| GENTLE \| 1 \| 轻柔振动风格。 \| |
-| [ToneHapticsMode](arkts-audio-tonehapticsmode-e-sys.md) | 枚举，系统铃音场景的振动模式。 \| 名称 \| 值 \| 说明 \| \| ----------------------------- \| -- \| -------------------- \| \| NONE \| 0 \| 无振动模式。 \| \| SYNC \| 1 \| 与铃音同步模式。 \| \| NON_SYNC \| 2 \| 非同步模式。 \| |
+| [ToneHapticsFeature](arkts-audio-tonehapticsfeature-e-sys.md) | 枚举，系统振动风格定义。\| 名称 \| 值 \| 说明 \|\| ----------------------------- \| -- \| -------------------- \|\| STANDARD\| 0 \| 标准振动风格。 \|\| GENTLE \| 1 \| 轻柔振动风格。 \| |
+| [ToneHapticsMode](arkts-audio-tonehapticsmode-e-sys.md) | 枚举，系统铃音场景的振动模式。\| 名称 \| 值 \| 说明 \|\| ----------------------------- \| -- \| -------------------- \|\| NONE \| 0 \| 无振动模式。 \|\| SYNC \| 1 \| 与铃音同步模式。 \|\| NON_SYNC \| 2 \| 非同步模式。 \| |
 | [ToneHapticsType](arkts-audio-tonehapticstype-e-sys.md) | 枚举，系统铃音的振动类型。 |
 <!--DelEnd-->
 

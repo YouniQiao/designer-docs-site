@@ -1,6 +1,8 @@
 # CalendarPicker属性/事件
 
-除支持[通用属性](./common)外，还支持以下属性： 除支持[通用事件](./common)，还支持以下事件：
+除支持[通用属性](./common)外，还支持以下属性：
+
+除支持[通用事件](./common)，还支持以下事件：
 
 **继承/实现关系：** CalendarPickerAttribute extends [CommonMethod<CalendarPickerAttribute>](CommonMethod<CalendarPickerAttribute>)
 
@@ -37,7 +39,9 @@ edgeAlign(alignType: CalendarAlign, offset?: Offset)
 edgeAlign(alignType: Optional<CalendarAlign>, offset?: Offset)
 ```
 
-设置选择器与入口组件的对齐方式。 与[edgeAlign](CalendarPickerAttribute#edgeAlign(alignType: CalendarAlign, offset?: Offset))相比， alignType参数新增了对undefined类型的支持。
+设置选择器与入口组件的对齐方式。
+与[edgeAlign](CalendarPickerAttribute#edgeAlign(alignType: CalendarAlign, offset?: Offset))相比，
+alignType参数新增了对undefined类型的支持。
 
 **起始版本：** 18
 
@@ -104,7 +108,13 @@ onChange(callback: Callback<Date>)
 onChange(callback: Optional<Callback<Date>>)
 ```
 
-选择日期时触发该事件。不能通过双向绑定的状态变量触发。 与[onChange](CalendarPickerAttribute#onChange(callback: Callback<Date>))相比， callback参数新增了对undefined类型的支持。 > **说明：** > > 从API version 20开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+选择日期时触发该事件。不能通过双向绑定的状态变量触发。
+与[onChange](CalendarPickerAttribute#onChange(callback: Callback<Date>))相比，
+callback参数新增了对undefined类型的支持。
+
+> **说明：**
+>
+> 从API version 20开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 18
 
@@ -148,7 +158,8 @@ textStyle(value: PickerTextStyle)
 textStyle(style: Optional<PickerTextStyle>)
 ```
 
-入口区的文本颜色、字号、字体粗细。与[textStyle](CalendarPickerAttribute#textStyle(value: PickerTextStyle))相比， style参数新增了对undefined类型的支持。
+入口区的文本颜色、字号、字体粗细。与[textStyle](CalendarPickerAttribute#textStyle(value: PickerTextStyle))相比，
+style参数新增了对undefined类型的支持。
 
 **起始版本：** 18
 

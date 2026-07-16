@@ -2,6 +2,9 @@
 
 路由容器组件，提供路由跳转能力。
 
+
+
+
 ## Navigator
 
 ```TypeScript
@@ -32,7 +35,9 @@ Navigator(value?: { target: string; type?: NavigationType })
 Navigator()
 ```
 
-在使用Navigator时调用。 NavigationAttribute为Navigation组件的属性。
+在使用Navigator时调用。
+
+NavigationAttribute为Navigation组件的属性。
 
 **起始版本：** 7
 

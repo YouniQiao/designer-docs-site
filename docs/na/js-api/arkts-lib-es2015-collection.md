@@ -6,14 +6,14 @@
 
 | Name | Description |
 | --- | --- |
-| [Map](arkts-map-i.md) |  |
-| [MapConstructor](arkts-mapconstructor-i.md) |  |
-| [ReadonlyMap](arkts-readonlymap-i.md) |  |
-| [ReadonlySet](arkts-readonlyset-i.md) |  |
-| [Set](arkts-set-i.md) |  |
-| [SetConstructor](arkts-setconstructor-i.md) |  |
-| [WeakMap](arkts-weakmap-i.md) |  |
-| [WeakMapConstructor](arkts-weakmapconstructor-i.md) |  |
-| [WeakSet](arkts-weakset-i.md) |  |
-| [WeakSetConstructor](arkts-weaksetconstructor-i.md) |  |
+| [Map](arkts-na-map-i.md) |  |
+| [MapConstructor](arkts-na-mapconstructor-i.md) |  |
+| [ReadonlyMap](arkts-na-readonlymap-i.md) |  |
+| [ReadonlySet](arkts-na-readonlyset-i.md) |  |
+| [Set](arkts-na-set-i.md) |  |
+| [SetConstructor](arkts-na-setconstructor-i.md) |  |
+| [WeakMap](arkts-na-weakmap-i.md) |  |
+| [WeakMapConstructor](arkts-na-weakmapconstructor-i.md) |  |
+| [WeakSet](arkts-na-weakset-i.md) |  |
+| [WeakSetConstructor](arkts-na-weaksetconstructor-i.md) |  |
 

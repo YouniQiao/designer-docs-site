@@ -1,6 +1,9 @@
 # DataPanel
 
-The **DataPanel** component is used to display proportions in a chart. > **NOTE**
+The **DataPanel** component is used to display proportions in a chart.
+
+> **NOTE**
+
 
 ## DataPanel
 

@@ -1,6 +1,16 @@
 # WaterFlow
 
-The **WaterFlow** component is a water flow container that consists of cells formed by rows and columns and arranges items of different sizes from top to bottom according to the preset rules. > **NOTE** > The **WaterFlow** component supports the waterfall layout but does not support the edit mode or dragging of child > elements. > > The component has been bound with gestures to implement functions such as following the finger. If you need to add > custom gestures, refer to [Enhanced Gesture Interception]{@link common}.
+The **WaterFlow** component is a water flow container that consists of cells formed by rows and columns and arranges
+items of different sizes from top to bottom according to the preset rules.
+
+> **NOTE**
+
+> The **WaterFlow** component supports the waterfall layout but does not support the edit mode or dragging of child
+> elements.
+>
+> The component has been bound with gestures to implement functions such as following the finger. If you need to add
+> custom gestures, refer to [Enhanced Gesture Interception]{@link common}.
+
 
 ## WaterFlow
 

@@ -1,6 +1,8 @@
 # ContainerSpan properties/events
 
-Only the following attributes are supported. The [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) are not supported.
+Only the following attributes are supported.
+
+The [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) are not supported.
 
 **Since:** 11
 

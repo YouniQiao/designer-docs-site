@@ -1,6 +1,6 @@
 # RunningMultiAppInfo (System API)
 
-The class of running multi app information.
+The RunningMultiAppInfo module defines the information of an application in multi-app mode in the running state.
 
 **Since:** 12
 
@@ -14,7 +14,7 @@ The class of running multi app information.
 bundleName: string
 ```
 
-The name of the bundle.
+Bundle name of the application.
 
 **Type:** string
 
@@ -30,7 +30,7 @@ The name of the bundle.
 mode: MultiAppMode
 ```
 
-The app multi mode.
+Multi-app mode.
 
 **Type:** MultiAppMode
 
@@ -46,7 +46,7 @@ The app multi mode.
 runningAppClones?: Array<RunningAppClone>
 ```
 
-All running app info for bundle if mode is {@link APP_CLONE}.
+Information about application clones with the specific bundle name in the running state.
 
 **Type:** Array<RunningAppClone>
 
@@ -62,7 +62,7 @@ All running app info for bundle if mode is {@link APP_CLONE}.
 runningMultiInstances?: Array<RunningMultiInstanceInfo>
 ```
 
-All running instance info for bundle if mode is {@link MULTI_INSTANCE}.
+Information about a multi-instance application with the specific bundle name in the running state.
 
 **Type:** Array<RunningMultiInstanceInfo>
 

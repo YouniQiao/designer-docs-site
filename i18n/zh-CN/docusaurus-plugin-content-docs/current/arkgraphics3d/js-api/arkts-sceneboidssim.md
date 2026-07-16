@@ -2,18 +2,22 @@
 
 ## 汇总
 
-### 类
+<!--Del-->
+### 类（系统接口）
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| <!--DelRow-->[BoidsSimPlugin](arkts-boidssimplugin-c.md) | 群组模拟插件. 提供用于管理群组模拟组件的静态方法. |
-| <!--DelRow-->[BoidsSimWorld](arkts-boidssimworld-c.md) | 群组模拟世界接口. 提供群组模拟的播放控制和组件管理. |
+| [BoidsSimPlugin](arkts-arkgraphics3d-boidssimplugin-c-sys.md) | 群组模拟插件. 提供用于管理群组模拟组件的静态方法. |
+| [BoidsSimWorld](arkts-arkgraphics3d-boidssimworld-c-sys.md) | 群组模拟世界接口. 提供群组模拟的播放控制和组件管理. |
+<!--DelEnd-->
 
-### 接口
+<!--Del-->
+### 接口（系统接口）
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| <!--DelRow-->[BoidsSimGravityParameters](arkts-boidssimgravityparameters-i.md) | Boids模拟引力场参数。 |
-| <!--DelRow-->[BoidsSimParameters](arkts-boidssimparameters-i.md) | 每个boid绑定的群组模拟参数. |
-| <!--DelRow-->[BoidsSimRepulsionParameters](arkts-boidssimrepulsionparameters-i.md) | Boids模拟斥力场参数。 |
+| [BoidsSimGravityParameters](arkts-arkgraphics3d-boidssimgravityparameters-i-sys.md) | Boids模拟引力场参数。 |
+| [BoidsSimParameters](arkts-arkgraphics3d-boidssimparameters-i-sys.md) | 每个boid绑定的群组模拟参数. |
+| [BoidsSimRepulsionParameters](arkts-arkgraphics3d-boidssimrepulsionparameters-i-sys.md) | Boids模拟斥力场参数。 |
+<!--DelEnd-->
 

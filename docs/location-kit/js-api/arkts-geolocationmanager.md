@@ -1,6 +1,7 @@
 # @ohos.geoLocationManager
 
-Provides interfaces for acquiring location information, managing location switches, geocoding, reverse geocoding, country code, fencing and other functions.
+Provides interfaces for acquiring location information, managing location switches,
+geocoding, reverse geocoding, country code, fencing and other functions.
 
 **Since:** 9
 
@@ -21,9 +22,9 @@ import { geoLocationManager } from '@kit.LocationKit';
 | --- | --- |
 | [addBeaconFence](arkts-location-addbeaconfence-f.md#addbeaconfence-1) | Add a beacon fence. |
 | [addGnssGeofence](arkts-location-addgnssgeofence-f.md#addgnssgeofence-1) | Add a geofence. |
-| [findMatchingWlan](arkts-location-findmatchingwlan-f.md#findmatchingwlan-1) | Check whether the WLAN scan results match the WLAN BSSID list, return information about the WLAN device that is successfully matched. |
-| [flushCachedGnssLocations](arkts-location-flushcachedgnsslocations-f.md#flushcachedgnsslocations-1) | All prepared GNSS locations are returned to the application through the callback function, and the bottom-layer buffer is cleared. |
-| [flushCachedGnssLocations](arkts-location-flushcachedgnsslocations-f.md#flushcachedgnsslocations-2) | All prepared GNSS locations are returned to the application, and the bottom-layer buffer is cleared. |
+| [findMatchingWlan](arkts-location-findmatchingwlan-f.md#findmatchingwlan-1) | Check whether the WLAN scan results match the WLAN BSSID list,return information about the WLAN device that is successfully matched. |
+| [flushCachedGnssLocations](arkts-location-flushcachedgnsslocations-f.md#flushcachedgnsslocations-1) | All prepared GNSS locations are returned to the application through the callback function,and the bottom-layer buffer is cleared. |
+| [flushCachedGnssLocations](arkts-location-flushcachedgnsslocations-f.md#flushcachedgnsslocations-2) | All prepared GNSS locations are returned to the application,and the bottom-layer buffer is cleared. |
 | [getActiveGeoFences](arkts-location-getactivegeofences-f.md#getactivegeofences-1) | Get all active fences. |
 | [getAddressesFromLocation](arkts-location-getaddressesfromlocation-f.md#getaddressesfromlocation-1) | Obtain address info from location. |
 | [getAddressesFromLocation](arkts-location-getaddressesfromlocation-f.md#getaddressesfromlocation-2) | Obtain address info from location. |
@@ -42,7 +43,7 @@ import { geoLocationManager } from '@kit.LocationKit';
 | [getGeofenceSupportedCoordTypes](arkts-location-getgeofencesupportedcoordtypes-f.md#getgeofencesupportedcoordtypes-1) | Obtains the coordinate system types supported by geofence. |
 | [getLastLocation](arkts-location-getlastlocation-f.md#getlastlocation-1) | Obtain last known location. |
 | [getPoiInfo](arkts-location-getpoiinfo-f.md#getpoiinfo-1) | Obtaining POI Information. |
-| [getPostProcessingTrack](arkts-location-getpostprocessingtrack-f.md#getpostprocessingtrack-1) | Obtain post-processing trajectory information under specific sport mode. Only [SKIING](arkts-location-sportstype-e.md#skiing) is supported currently. Before calling this API, you need to call [on('locationChange')](geoLocationManager.on('locationChange')) and set the input parameter [sportsType](arkts-location-continuouslocationrequest-i-sys.md#sportstype) to the specific sport mode to start tracking. Returns data within 24 hours since tracking started; Subsequent calls return only new records. |
+| [getPostProcessingTrack](arkts-location-getpostprocessingtrack-f.md#getpostprocessingtrack-1) | Obtain post-processing trajectory information under specific sport mode. Only[SKIING](arkts-location-sportstype-e.md#skiing) is supported currently.Before calling this API, you need to call[on('locationChange')](geoLocationManager.on('locationChange')) and set the input parameter[sportsType](arkts-location-continuouslocationrequest-i-sys.md#sportstype) to the specific sport mode to starttracking.Returns data within 24 hours since tracking started; Subsequent calls return only new records. |
 | [isBeaconFenceSupported](arkts-location-isbeaconfencesupported-f.md#isbeaconfencesupported-1) | Check whether the BeaconFence service is supported. |
 | [isCachedGnssServiceSupported](arkts-location-iscachedgnssservicesupported-f.md#iscachedgnssservicesupported-1) | Check whether the cached GNSS service is supported. |
 | [isGeocoderAvailable](arkts-location-isgeocoderavailable-f.md#isgeocoderavailable-1) | Obtain geocoding service status. |
@@ -51,7 +52,7 @@ import { geoLocationManager } from '@kit.LocationKit';
 | [isLocationEnabled](arkts-location-islocationenabled-f.md#islocationenabled-1) | Obtain current location switch status. |
 | [isPoiServiceSupported](arkts-location-ispoiservicesupported-f.md#ispoiservicesupported-1) | Check whether the POI service is supported. |
 | [isWlanBssidMatched](arkts-location-iswlanbssidmatched-f.md#iswlanbssidmatched-1) | Check whether the WLAN scan results match the WLAN BSSID list. |
-| [off](arkts-location-off-f.md#off-1) | Unsubscribe location changed. You are advised to use the {@link offLocationChange} instead. |
+| [off](arkts-location-off-f.md#off-1) | Unsubscribe location changed.You are advised to use the {@link offLocationChange} instead. |
 | [off](arkts-location-off-f.md#off-2) | Unsubscribe continuous location error changed. |
 | [off](arkts-location-off-f.md#off-3) | Unsubscribe location switch changed. |
 | [off](arkts-location-off-f.md#off-4) | Unsubscribe to cache GNSS locations update messages. |
@@ -61,7 +62,7 @@ import { geoLocationManager } from '@kit.LocationKit';
 | [off](arkts-location-off-f.md#off-8) | Unregistering the callback function for listening to country code changes. |
 | [off](arkts-location-off-f.md#off-11) | Stop bluetooth scanning and unregister to listen to bluetooth scanning result changes. |
 | [offLocationChange](arkts-location-offlocationchange-f.md#offlocationchange-1) | Unsubscribe location changed. |
-| [on](arkts-location-on-f.md#on-1) | Subscribe location changed. You are advised to use the {@link onLocationChange} instead. |
+| [on](arkts-location-on-f.md#on-1) | Subscribe location changed.You are advised to use the {@link onLocationChange} instead. |
 | [on](arkts-location-on-f.md#on-2) | Subscribe continuous location error changed. |
 | [on](arkts-location-on-f.md#on-3) | Subscribe location switch changed. |
 | [on](arkts-location-on-f.md#on-4) | Subscribe to cache GNSS locations update messages. |
@@ -75,7 +76,7 @@ import { geoLocationManager } from '@kit.LocationKit';
 | [removeGnssGeofence](arkts-location-removegnssgeofence-f.md#removegnssgeofence-1) | Remove a geofence. |
 | [sendCommand](arkts-location-sendcommand-f.md#sendcommand-1) | Send extended commands to location subsystem. |
 | [sendCommand](arkts-location-sendcommand-f.md#sendcommand-2) | Send extended commands to location subsystem. |
-| [startBluetoothSearch](arkts-location-startbluetoothsearch-f.md#startbluetoothsearch-1) | Starts Bluetooth scanning and matches the device ID list in the input parameter with the Bluetooth scanning result. If the matching is successful, the Bluetooth device information is returned through the callback. |
+| [startBluetoothSearch](arkts-location-startbluetoothsearch-f.md#startbluetoothsearch-1) | Starts Bluetooth scanning and matches the device ID list in the input parameterwith the Bluetooth scanning result. If the matching is successful, the Bluetoothdevice information is returned through the callback. |
 | [stopBluetoothSearch](arkts-location-stopbluetoothsearch-f.md#stopbluetoothsearch-1) | Stop Bluetooth scanning and searching. |
 
 <!--Del-->
@@ -100,7 +101,7 @@ import { geoLocationManager } from '@kit.LocationKit';
 | [isLocationPrivacyConfirmed](arkts-location-islocationprivacyconfirmed-f-sys.md#islocationprivacyconfirmed-1) | Querying location privacy protocol confirmation status. |
 | [off](arkts-location-off-f-sys.md#off-9) | Stop WiFi/BT scanning and unsubscribe from WiFi/BT scanning information changes. |
 | [off](arkts-location-off-f-sys.md#off-10) | Unsubscribe location icon status changed. |
-| [on](arkts-location-on-f-sys.md#on-9) | Subscribe to changes in WiFi/BT scanning information, and use the WiFi/BT scanning information for localization. |
+| [on](arkts-location-on-f-sys.md#on-9) | Subscribe to changes in WiFi/BT scanning information,and use the WiFi/BT scanning information for localization. |
 | [on](arkts-location-on-f-sys.md#on-10) | Subscribe location icon status changed. |
 | [removeFusionFence](arkts-location-removefusionfence-f-sys.md#removefusionfence-1) | Remove a fusion fence. |
 | [setLocationPrivacyConfirmStatus](arkts-location-setlocationprivacyconfirmstatus-f-sys.md#setlocationprivacyconfirmstatus-1) | Set location privacy protocol confirmation status. |

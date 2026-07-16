@@ -1,6 +1,8 @@
 # SymbolGlyph属性/事件
 
-支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)，不支持文本通用属性，仅支持以下特有属性： 支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)。
+支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)，不支持文本通用属性，仅支持以下特有属性：
+
+支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)。
 
 **继承/实现关系：** SymbolGlyphAttribute extends [CommonMethod<SymbolGlyphAttribute>](CommonMethod<SymbolGlyphAttribute>)
 
@@ -14,7 +16,11 @@
 effectStrategy(value: SymbolEffectStrategy)
 ```
 
-设置SymbolGlyph组件动效策略。 > **说明：** > > 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+设置SymbolGlyph组件动效策略。
+
+> **说明：**
+>
+> 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 11
 
@@ -38,7 +44,11 @@ effectStrategy(value: SymbolEffectStrategy)
 fontColor(value: Array<ResourceColor>)
 ```
 
-设置SymbolGlyph组件颜色。 > **说明：** > > 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+设置SymbolGlyph组件颜色。
+
+> **说明：**
+>
+> 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 11
 
@@ -62,7 +72,12 @@ fontColor(value: Array<ResourceColor>)
 fontColor(value: Array<ResourceColor | ColorMetrics> | undefined)
 ```
 
-设置SymbolGlyph组件的颜色，相比[fontColor](SymbolGlyphAttribute#fontColor(value: Array<ResourceColor>))接口，本接口支持传入 [ColorMetrics](../arkts-apis/arkts-arkui-colormetrics-c.md)类型参数。 > **说明：** > > 该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+设置SymbolGlyph组件的颜色，相比[fontColor](SymbolGlyphAttribute#fontColor(value: Array<ResourceColor>))接口，本接口支持传入
+[ColorMetrics](../arkts-apis/arkts-arkui-colormetrics-c.md)类型参数。
+
+> **说明：**
+>
+> 该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 26.0.0
 
@@ -86,7 +101,13 @@ fontColor(value: Array<ResourceColor | ColorMetrics> | undefined)
 fontSize(value: number | string | Resource)
 ```
 
-设置SymbolGlyph组件大小。设置string类型时，支持number类型取值的字符串形式，可以附带单位，例如"10"、"10fp"。 组件的图标显示大小由fontSize控制，设置width或height后，其他通用属性仅对组件的占位大小生效。 > **说明：** > > 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+设置SymbolGlyph组件大小。设置string类型时，支持number类型取值的字符串形式，可以附带单位，例如"10"、"10fp"。
+
+组件的图标显示大小由fontSize控制，设置width或height后，其他通用属性仅对组件的占位大小生效。
+
+> **说明：**
+>
+> 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 11
 
@@ -110,7 +131,14 @@ fontSize(value: number | string | Resource)
 fontWeight(value: number | FontWeight | string)
 ```
 
-设置SymbolGlyph组件粗细。number类型取值[100,900]，取值间隔为100，默认为400，取值越大，字体越粗。string类型仅支持number类型取值的字符串形式，例如“400”，以及“bold”、“ bolder”、“lighter”、“regular” 、“medium”分别对应FontWeight中相应的枚举值。 sys.symbol.ohos_lungs图标不支持设置fontWeight。 > **说明：** > > 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+设置SymbolGlyph组件粗细。number类型取值[100,900]，取值间隔为100，默认为400，取值越大，字体越粗。string类型仅支持number类型取值的字符串形式，例如“400”，以及“bold”、“
+bolder”、“lighter”、“regular” 、“medium”分别对应FontWeight中相应的枚举值。
+
+sys.symbol.ohos_lungs图标不支持设置fontWeight。
+
+> **说明：**
+>
+> 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 11
 
@@ -203,7 +231,11 @@ minFontScale(scale: Optional<number|Resource>)
 renderingStrategy(value: SymbolRenderingStrategy)
 ```
 
-设置SymbolGlyph组件渲染策略。 > **说明：** > > 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+设置SymbolGlyph组件渲染策略。
+
+> **说明：**
+>
+> 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 11
 
@@ -227,7 +259,11 @@ renderingStrategy(value: SymbolRenderingStrategy)
 shaderStyle(shader: Array<ShaderStyle | undefined> | ShaderStyle)
 ```
 
-设置SymbolGlyph组件的渐变色效果。 可以显示为径向渐变[RadialGradientStyle](arkts-arkui-radialgradientstyle-c.md)或线性渐变[LinearGradientStyle](arkts-arkui-lineargradientstyle-c.md)或纯色 [ColorShaderStyle](arkts-arkui-colorshaderstyle-c.md)的效果，shaderStyle的优先级高于[fontColor](SymbolSpanAttribute#fontColor)和AI识 别，纯色建议使用[fontColor](SymbolSpanAttribute#fontColor)。
+设置SymbolGlyph组件的渐变色效果。
+
+可以显示为径向渐变[RadialGradientStyle](arkts-arkui-radialgradientstyle-c.md)或线性渐变[LinearGradientStyle](arkts-arkui-lineargradientstyle-c.md)或纯色
+[ColorShaderStyle](arkts-arkui-colorshaderstyle-c.md)的效果，shaderStyle的优先级高于[fontColor](SymbolSpanAttribute#fontColor)和AI识
+别，纯色建议使用[fontColor](SymbolSpanAttribute#fontColor)。
 
 **起始版本：** 20
 

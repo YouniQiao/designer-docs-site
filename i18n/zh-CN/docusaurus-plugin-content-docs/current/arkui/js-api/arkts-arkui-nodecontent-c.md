@@ -2,7 +2,7 @@
 
 NodeContent是节点内容的实体封装。
 
-**继承/实现关系：** NodeContent extends [Content](arkts-arkui-content-c.md#content)
+**继承/实现关系：** NodeContent extends [Content](arkts-arkui-content-c.md)
 
 **起始版本：** 12
 
@@ -34,7 +34,7 @@ addFrameNode(node: FrameNode): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [100025](../errorcode-node.md#100025-传入参数不符合要求) | The parameter is invalid. Details about the invalid parameter and the reasonare included in the error message.For example: "The parameter 'node' is invalid: it cannot be adopted."<br>**适用版本：** 22 |
+| [100025](../errorcode-node.md#100025-传入参数不符合要求) | The parameter is invalid. Details about the invalid parameter and the reasonare included in the error message.For example: "The parameter 'node' is invalid: it cannot be adopted."<br>**适用版本：** 22+ |
 
 ## constructor
 

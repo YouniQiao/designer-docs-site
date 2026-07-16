@@ -1,6 +1,7 @@
 # ContinueMissionInfo（系统接口）
 
-表示发起按照包名迁移时所需参数的枚举，迁移Mission详见： [continueMission接口](arkts-ability-continuemission-f-sys.md#continuemission-3)
+表示发起按照包名迁移时所需参数的枚举，迁移Mission详见：
+[continueMission接口](arkts-ability-continuemission-f-sys.md#continuemission-3)
 
 **起始版本：** 10
 

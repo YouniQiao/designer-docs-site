@@ -31,7 +31,7 @@ import { intelligence } from '@kit.ArkData';
 | [ImageEmbedding](arkts-arkdata-imageembedding-i.md) | Describes the image embedding functions of the multi-modal embedding model. |
 | [ModelConfig](arkts-arkdata-modelconfig-i.md) | Manages configurations of the embedding model. |
 | [SplitConfig](arkts-arkdata-splitconfig-i.md) | Manages text chunk process configurations. |
-| [TextEmbedding](arkts-arkdata-textembedding-i.md) | Describes the text embedding functions of the multi-modal embedding model. Chinese and English are supported. |
+| [TextEmbedding](arkts-arkdata-textembedding-i.md) | Describes the text embedding functions of the multi-modal embedding model.Chinese and English are supported. |
 
 ### Enums
 

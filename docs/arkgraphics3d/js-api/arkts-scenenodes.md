@@ -6,19 +6,19 @@
 
 | Name | Description |
 | --- | --- |
-| [Camera](arkts-camera-i.md) | 定义相机. |
-| [Container](arkts-container-i.md) | 定义场景对象容器. |
-| [DirectionalLight](arkts-directionallight-i.md) | 定义平行光. |
-| [Geometry](arkts-geometry-i.md) | 定义Geometry接口. |
-| [LayerMask](arkts-layermask-i.md) | 定义节点的图层掩码. |
-| [Light](arkts-light-i.md) | 定义Light接口. |
-| [Node](arkts-node-i.md) | 定义Node接口. |
-| [SpotLight](arkts-spotlight-i.md) | 定义聚光灯. |
+| [Camera](arkts-arkgraphics3d-camera-i.md) | Defines camera. |
+| [Container](arkts-arkgraphics3d-container-i.md) | Defines a scene object container. |
+| [DirectionalLight](arkts-arkgraphics3d-directionallight-i.md) | Defines directional light. |
+| [Geometry](arkts-arkgraphics3d-geometry-i.md) | Defines Geometry interface. |
+| [LayerMask](arkts-arkgraphics3d-layermask-i.md) | Defines the layer mask of the node. |
+| [Light](arkts-arkgraphics3d-light-i.md) | Defines light interface. |
+| [Node](arkts-arkgraphics3d-node-i.md) | Defines Node interface. |
+| [SpotLight](arkts-arkgraphics3d-spotlight-i.md) | Defines spot light. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [LightType](arkts-lighttype-e.md) | 光源类型枚举. |
-| [NodeType](arkts-nodetype-e.md) | 节点类型枚举. |
+| [LightType](arkts-arkgraphics3d-lighttype-e.md) | The enum of light type. |
+| [NodeType](arkts-arkgraphics3d-nodetype-e.md) | The enum of node type. |
 

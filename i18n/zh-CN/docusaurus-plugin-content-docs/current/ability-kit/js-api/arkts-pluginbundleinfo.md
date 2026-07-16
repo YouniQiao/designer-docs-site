@@ -2,10 +2,12 @@
 
 ## 汇总
 
-### 接口
+<!--Del-->
+### 接口（系统接口）
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| <!--DelRow-->[PluginBundleInfo](arkts-pluginbundleinfo-i.md) | 插件信息。 |
-| <!--DelRow-->[PluginModuleInfo](arkts-pluginmoduleinfo-i.md) | 插件的模块信息。 |
+| [PluginBundleInfo](arkts-ability-pluginbundleinfo-i-sys.md) | 插件信息。 |
+| [PluginModuleInfo](arkts-ability-pluginmoduleinfo-i-sys.md) | 插件的模块信息。 |
+<!--DelEnd-->
 

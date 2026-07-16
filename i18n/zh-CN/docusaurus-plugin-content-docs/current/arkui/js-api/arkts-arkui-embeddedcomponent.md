@@ -1,6 +1,8 @@
 # EmbeddedComponent
 
-提供EmbeddedComponent的接口，用于 <br/>异步渲染UI。
+提供EmbeddedComponent的接口，用于
+<br/>异步渲染UI。
+
 
 ## EmbeddedComponent
 
@@ -10,7 +12,8 @@ EmbeddedComponent(
   )
 ```
 
-构造EmbeddedComponent。<br/> 在使用EmbeddedComponent时调用。
+构造EmbeddedComponent。<br/>
+在使用EmbeddedComponent时调用。
 
 **起始版本：** 12
 
@@ -36,7 +39,8 @@ EmbeddedComponent(
   )
 ```
 
-构造EmbeddedComponent。<br/> 在使用EmbeddedComponent时调用。
+构造EmbeddedComponent。<br/>
+在使用EmbeddedComponent时调用。
 
 **起始版本：** 26.0.0
 

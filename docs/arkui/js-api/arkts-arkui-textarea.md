@@ -1,6 +1,11 @@
 # TextArea
 
-The **TextArea** component provides multi-line text input and automatically wraps text to ensure that no line extends beyond the component's width. If the component does not have its height set, it adapts its height to the content. If the component does not have its width set, it stretches to fill the maximum available width.
+The **TextArea** component provides multi-line text input and automatically wraps text to ensure that no line extends
+beyond the component's width.
+
+If the component does not have its height set, it adapts its height to the content. If the component does not have
+its width set, it stretches to fill the maximum available width.
+
 
 ## TextArea
 

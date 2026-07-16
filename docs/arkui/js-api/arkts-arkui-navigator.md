@@ -2,6 +2,7 @@
 
 The **Navigator** component provides redirection.
 
+
 ## Navigator
 
 ```TypeScript

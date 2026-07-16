@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { LazyDynamicLayoutAttribute,LazyDynamicLayout } from '@kit.ArkUI';
+import { LazyDynamicLayoutAttribute, LazyDynamicLayout } from '@kit.ArkUI';
 ```
 
 ## Summary
@@ -12,17 +12,17 @@ import { LazyDynamicLayoutAttribute,LazyDynamicLayout } from '@kit.ArkUI';
 
 | Name | Description |
 | --- | --- |
-| [LazyDynamicLayout](arkts-arkui-components-arklazydynamiclayout-lazydynamiclayout-f.md#LazyDynamicLayout-1) | Defines LazyDynamicLayout Component. |
+| [LazyDynamicLayout](arkts-arkui-arkui-components-arklazydynamiclayout-lazydynamiclayout-f.md#lazydynamiclayout-1) | Defines LazyDynamicLayout Component. |
 
 ### Classes
 
 | Name | Description |
 | --- | --- |
-| [LazyDynamicLayoutAttribute](arkts-lazydynamiclayoutattribute-c.md) | Defines the LazyDynamicLayout attribute functions. |
+| [LazyDynamicLayoutAttribute](arkts-arkui-lazydynamiclayoutattribute-c.md) | Defines the LazyDynamicLayout attribute functions. |
 
 ### Constants
 
 | Name | Description |
 | --- | --- |
-| [LazyDynamicLayoutInstance](arkts-arkui-components-arklazydynamiclayout-con.md#LazyDynamicLayoutInstance) | Defines LazyDynamicLayout Component instance. |
+| [LazyDynamicLayoutInstance](arkts-arkui-arkui-components-arklazydynamiclayout-con.md#lazydynamiclayoutinstance) | Defines LazyDynamicLayout Component instance. |
 

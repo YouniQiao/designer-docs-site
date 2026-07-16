@@ -161,7 +161,8 @@ getResourceFactory(): SceneResourceFactory
 importNode(name: string, node: Node, parent: Node | null): Node
 ```
 
-将节点导入场景. 原始节点可能来自另一个场景. 节点将被克隆，导入后对旧节点的修改将不可见.
+将节点导入场景. 原始节点可能来自另一个场景.
+节点将被克隆，导入后对旧节点的修改将不可见.
 
 **起始版本：** 18
 
@@ -187,7 +188,8 @@ importNode(name: string, node: Node, parent: Node | null): Node
 importScene(name: string, scene: Scene, parent: Node | null): Node
 ```
 
-将场景作为节点导入场景. 节点层级将出现在父节点下. 场景中的所有动画将被复制.
+将场景作为节点导入场景. 节点层级将出现在父节点下.
+场景中的所有动画将被复制.
 
 **起始版本：** 18
 
@@ -213,7 +215,8 @@ importScene(name: string, scene: Scene, parent: Node | null): Node
 static load(uri? : ResourceStr): Promise<Scene>
 ```
 
-从ResourceStr创建新场景. 如果未提供uri，将返回空场景.
+从ResourceStr创建新场景.
+如果未提供uri，将返回空场景.
 
 **起始版本：** 12
 

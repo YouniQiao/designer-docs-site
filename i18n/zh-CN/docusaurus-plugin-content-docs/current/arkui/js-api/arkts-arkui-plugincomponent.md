@@ -2,13 +2,15 @@
 
 提供插件组件。
 
+
 ## PluginComponent
 
 ```TypeScript
 PluginComponent(options: PluginComponentOptions)
 ```
 
-设置插件时调用。 AnonyMous Object Rectification
+设置插件时调用。
+AnonyMous Object Rectification
 
 **起始版本：** 18
 

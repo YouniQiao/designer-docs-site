@@ -1,6 +1,8 @@
 # SymbolSpan属性/事件
 
-不支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)，支持以下属性： 不支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)。
+不支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)，支持以下属性：
+
+不支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)。
 
 **继承/实现关系：** SymbolSpanAttribute extends [CommonMethod<SymbolSpanAttribute>](CommonMethod<SymbolSpanAttribute>)
 
@@ -36,7 +38,11 @@ attributeModifier(modifier: AttributeModifier<SymbolSpanAttribute>)
 effectStrategy(value: SymbolEffectStrategy)
 ```
 
-设置SymbolSpan动效策略。 > **说明：** > > 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+设置SymbolSpan动效策略。
+
+> **说明：**
+>
+> 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 11
 
@@ -60,7 +66,11 @@ effectStrategy(value: SymbolEffectStrategy)
 fontColor(value: Array<ResourceColor>)
 ```
 
-设置SymbolSpan组件颜色。 > **说明：** > > 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+设置SymbolSpan组件颜色。
+
+> **说明：**
+>
+> 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 11
 
@@ -84,7 +94,11 @@ fontColor(value: Array<ResourceColor>)
 fontSize(value: number | string | Resource)
 ```
 
-设置SymbolSpan组件大小。设置string类型时，支持number类型取值的字符串形式，可以附带单位，例如"10"、"10fp"。 > **说明：** > > 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+设置SymbolSpan组件大小。设置string类型时，支持number类型取值的字符串形式，可以附带单位，例如"10"、"10fp"。
+
+> **说明：**
+>
+> 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 11
 
@@ -108,7 +122,14 @@ fontSize(value: number | string | Resource)
 fontWeight(value: number | FontWeight | string)
 ```
 
-设置SymbolSpan组件粗细。number类型取值[100,900]，取值间隔为100，默认为400，取值越大，字体越粗。string类型仅支持number类型取值的字符串形式，例如“400”，以及“bold”、“bolder ”、“lighter”、“regular” 、“medium”分别对应FontWeight中相应的枚举值。 sys.symbol.ohos_lungs图标不支持设置fontWeight。 > **说明：** > > 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+设置SymbolSpan组件粗细。number类型取值[100,900]，取值间隔为100，默认为400，取值越大，字体越粗。string类型仅支持number类型取值的字符串形式，例如“400”，以及“bold”、“bolder
+”、“lighter”、“regular” 、“medium”分别对应FontWeight中相应的枚举值。
+
+sys.symbol.ohos_lungs图标不支持设置fontWeight。
+
+> **说明：**
+>
+> 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 11
 
@@ -157,7 +178,11 @@ fontWeight(value: number | FontWeight | ResourceStr, fontWeightConfigs?: FontWei
 renderingStrategy(value: SymbolRenderingStrategy)
 ```
 
-设置SymbolSpan渲染策略。 > **说明：** > > 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+设置SymbolSpan渲染策略。
+
+> **说明：**
+>
+> 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 11
 

@@ -88,7 +88,17 @@ Releases this RenderNode immediately.
 draw(context: DrawContext): void
 ```
 
-Performs drawing. You need to implement this API. It is called when the RenderNode performs drawing. Note: The Canvas provided in the [DrawContext](arkts-arkui-drawcontext-c.md) parameter is a temporary command- recording canvas, not the actual rendering canvas of the node. For usage instructions, see [Adjusting the Transformation Matrix of the Custom Drawing Canvas](../../../../ui/arkts-user-defined-arktsNode-renderNode.md#adjusting-the-transformation-matrix-of-the-custom-drawing-canvas). > **NOTE** > > During RenderNode initialization, the **draw** method is invoked twice. The first call occurs when the FrameNode > is initially created, triggering the rendering process. The second call occurs when the modifier is initially > set, which triggers drawing. All subsequent drawing processes are triggered by the modifier.
+Performs drawing. You need to implement this API. It is called when the RenderNode performs drawing.
+
+Note: The Canvas provided in the [DrawContext](arkts-arkui-drawcontext-c.md) parameter is a temporary command-
+recording canvas, not the actual rendering canvas of the node. For usage instructions, see
+[Adjusting the Transformation Matrix of the Custom Drawing Canvas](../../../../ui/arkts-user-defined-arktsNode-renderNode.md#adjusting-the-transformation-matrix-of-the-custom-drawing-canvas).
+
+> **NOTE**
+>
+> During RenderNode initialization, the **draw** method is invoked twice. The first call occurs when the FrameNode
+> is initially created, triggering the rendering process. The second call occurs when the modifier is initially
+> set, which triggers drawing. All subsequent drawing processes are triggered by the modifier.
 
 **Since:** 11
 
@@ -249,7 +259,10 @@ Triggers the re-rendering of this RenderNode.
 isDisposed(): boolean
 ```
 
-Checks whether this RenderNode object has released its reference to its backend entity node. Frontend nodes maintain references to corresponding backend entity nodes. After a node calls the **dispose** API to release this reference, subsequent API calls may cause crashes or return default values. This API facilitates validation of node validity prior to operations, thereby mitigating risks in scenarios where calls after disposal are required.
+Checks whether this RenderNode object has released its reference to its backend entity node. Frontend nodes
+maintain references to corresponding backend entity nodes. After a node calls the **dispose** API to release this
+reference, subsequent API calls may cause crashes or return default values. This API facilitates validation of node
+validity prior to operations, thereby mitigating risks in scenarios where calls after disposal are required.
 
 **Since:** 20
 

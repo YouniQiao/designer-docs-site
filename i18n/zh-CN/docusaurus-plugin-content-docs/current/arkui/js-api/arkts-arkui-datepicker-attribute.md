@@ -1,6 +1,8 @@
 # DatePicker属性/事件
 
-除支持[通用属性](./common)外，还支持以下属性： 除支持[通用事件](./common)外，还支持以下事件：
+除支持[通用属性](./common)外，还支持以下属性：
+
+除支持[通用事件](./common)外，还支持以下事件：
 
 **继承/实现关系：** DatePickerAttribute extends [CommonMethod<DatePickerAttribute>](CommonMethod<DatePickerAttribute>)
 
@@ -80,7 +82,9 @@ disappearTextStyle(value: PickerTextStyle)
 disappearTextStyle(style: Optional<PickerTextStyle>)
 ```
 
-设置边缘项（以选中项为基准向上或向下的第二项）的文本样式。 与[disappearTextStyle(10+)](DatePickerAttribute#disappearTextStyle(value: PickerTextStyle))相比， style参数新增了对undefined类型的支持。
+设置边缘项（以选中项为基准向上或向下的第二项）的文本样式。
+与[disappearTextStyle(10+)](DatePickerAttribute#disappearTextStyle(value: PickerTextStyle))相比，
+style参数新增了对undefined类型的支持。
 
 **起始版本：** 18
 
@@ -124,7 +128,11 @@ enableHapticFeedback(enable: Optional<boolean>)
 lunar(value: boolean)
 ```
 
-设置日期是否显示为农历。 > **说明：** > > 仅在简体中文和繁体中文语言环境下生效，其他语言环境下设置该属性无效果。
+设置日期是否显示为农历。
+
+> **说明：**
+>
+> 仅在简体中文和繁体中文语言环境下生效，其他语言环境下设置该属性无效果。
 
 **起始版本：** 8
 
@@ -144,7 +152,12 @@ lunar(value: boolean)
 lunar(isLunar: Optional<boolean>)
 ```
 
-设置弹窗的日期是否显示为农历。与[lunar](DatePickerAttribute#lunar(value: boolean))相比， isLunar参数新增了对undefined类型的支持。 > **说明：** > > 仅在简体中文和繁体中文语言环境下生效，其他语言环境下设置该属性无效果。
+设置弹窗的日期是否显示为农历。与[lunar](DatePickerAttribute#lunar(value: boolean))相比，
+isLunar参数新增了对undefined类型的支持。
+
+> **说明：**
+>
+> 仅在简体中文和繁体中文语言环境下生效，其他语言环境下设置该属性无效果。
 
 **起始版本：** 18
 
@@ -210,7 +223,13 @@ onDateChange(callback: Callback<Date>)
 onDateChange(callback: Optional<Callback<Date>>)
 ```
 
-滑动DatePicker文本内容后，选项完全归位至选中项位置时，触发该回调。不能通过双向绑定的状态变量触发。与 [onDateChange<sup>10+</sup>](DatePickerAttribute#onDateChange(callback: Callback<Date>))相比， callback参数新增了对undefined类型的支持。 > **说明：** > > 从API version 20开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+滑动DatePicker文本内容后，选项完全归位至选中项位置时，触发该回调。不能通过双向绑定的状态变量触发。与
+[onDateChange<sup>10+</sup>](DatePickerAttribute#onDateChange(callback: Callback<Date>))相比，
+callback参数新增了对undefined类型的支持。
+
+> **说明：**
+>
+> 从API version 20开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 18
 
@@ -254,7 +273,8 @@ selectedTextStyle(value: PickerTextStyle)
 selectedTextStyle(style: Optional<PickerTextStyle>)
 ```
 
-设置选中项的文本样式。与[selectedTextStyle<sup>10+</sup>] {@link DatePickerAttribute#selectedTextStyle(value: PickerTextStyle)}相比，style参数新增了对undefined类型的支持。
+设置选中项的文本样式。与[selectedTextStyle<sup>10+</sup>]
+{@link DatePickerAttribute#selectedTextStyle(value: PickerTextStyle)}相比，style参数新增了对undefined类型的支持。
 
 **起始版本：** 18
 
@@ -298,7 +318,9 @@ textStyle(value: PickerTextStyle)
 textStyle(style: Optional<PickerTextStyle>)
 ```
 
-设置待选项（以选中项为基准向上或向下的第一项）的文本样式。与 [textStyle<sup>10+</sup>](DatePickerAttribute#textStyle(value: PickerTextStyle))相比， style参数新增了对undefined类型的支持。
+设置待选项（以选中项为基准向上或向下的第一项）的文本样式。与
+[textStyle<sup>10+</sup>](DatePickerAttribute#textStyle(value: PickerTextStyle))相比，
+style参数新增了对undefined类型的支持。
 
 **起始版本：** 18
 

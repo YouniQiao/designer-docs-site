@@ -16,19 +16,19 @@ import { mindSporeLite } from '@kit.MindSporeLiteKit';
 
 | Name | Description |
 | --- | --- |
-| [getAllNNRTDeviceDescriptions](arkts-mindsporelite-getallnnrtdevicedescriptions-f.md#getAllNNRTDeviceDescriptions-1) | Obtain the all device descriptions in NNRT. |
-| [loadModelFromBuffer](arkts-mindsporelite-loadmodelfrombuffer-f.md#loadModelFromBuffer-1) | Create a Model instance from buffer |
-| [loadModelFromBuffer](arkts-mindsporelite-loadmodelfrombuffer-f.md#loadModelFromBuffer-2) | Create a Model instance from buffer |
-| [loadModelFromBuffer](arkts-mindsporelite-loadmodelfrombuffer-f.md#loadModelFromBuffer-3) | Create a Model instance from buffer |
-| [loadModelFromFd](arkts-mindsporelite-loadmodelfromfd-f.md#loadModelFromFd-1) | Creates a Model instance file description |
-| [loadModelFromFd](arkts-mindsporelite-loadmodelfromfd-f.md#loadModelFromFd-2) | Create a Model instance from file description |
-| [loadModelFromFd](arkts-mindsporelite-loadmodelfromfd-f.md#loadModelFromFd-3) | Create a Model instance from file description |
-| [loadModelFromFile](arkts-mindsporelite-loadmodelfromfile-f.md#loadModelFromFile-1) | Create a Model instance from file path |
-| [loadModelFromFile](arkts-mindsporelite-loadmodelfromfile-f.md#loadModelFromFile-2) | Create a Model instance from file path. |
-| [loadModelFromFile](arkts-mindsporelite-loadmodelfromfile-f.md#loadModelFromFile-3) | Create a Model instance from file path. |
-| [loadTrainModelFromBuffer](arkts-mindsporelite-loadtrainmodelfrombuffer-f.md#loadTrainModelFromBuffer-1) | Load train model from buffer |
-| [loadTrainModelFromFd](arkts-mindsporelite-loadtrainmodelfromfd-f.md#loadTrainModelFromFd-1) | Load train model from file description |
-| [loadTrainModelFromFile](arkts-mindsporelite-loadtrainmodelfromfile-f.md#loadTrainModelFromFile-1) | Load train model from file |
+| [getAllNNRTDeviceDescriptions](arkts-mindsporelite-getallnnrtdevicedescriptions-f.md#getallnnrtdevicedescriptions-1) | Obtain the all device descriptions in NNRT. |
+| [loadModelFromBuffer](arkts-mindsporelite-loadmodelfrombuffer-f.md#loadmodelfrombuffer-1) | Create a Model instance from buffer |
+| [loadModelFromBuffer](arkts-mindsporelite-loadmodelfrombuffer-f.md#loadmodelfrombuffer-2) | Create a Model instance from buffer |
+| [loadModelFromBuffer](arkts-mindsporelite-loadmodelfrombuffer-f.md#loadmodelfrombuffer-3) | Create a Model instance from buffer |
+| [loadModelFromFd](arkts-mindsporelite-loadmodelfromfd-f.md#loadmodelfromfd-1) | Creates a Model instance file description |
+| [loadModelFromFd](arkts-mindsporelite-loadmodelfromfd-f.md#loadmodelfromfd-2) | Create a Model instance from file description |
+| [loadModelFromFd](arkts-mindsporelite-loadmodelfromfd-f.md#loadmodelfromfd-3) | Create a Model instance from file description |
+| [loadModelFromFile](arkts-mindsporelite-loadmodelfromfile-f.md#loadmodelfromfile-1) | Create a Model instance from file path |
+| [loadModelFromFile](arkts-mindsporelite-loadmodelfromfile-f.md#loadmodelfromfile-2) | Create a Model instance from file path. |
+| [loadModelFromFile](arkts-mindsporelite-loadmodelfromfile-f.md#loadmodelfromfile-3) | Create a Model instance from file path. |
+| [loadTrainModelFromBuffer](arkts-mindsporelite-loadtrainmodelfrombuffer-f.md#loadtrainmodelfrombuffer-1) | Load train model from buffer |
+| [loadTrainModelFromFd](arkts-mindsporelite-loadtrainmodelfromfd-f.md#loadtrainmodelfromfd-1) | Load train model from file description |
+| [loadTrainModelFromFile](arkts-mindsporelite-loadtrainmodelfromfile-f.md#loadtrainmodelfromfile-1) | Load train model from file |
 
 ### Interfaces
 
@@ -37,8 +37,8 @@ import { mindSporeLite } from '@kit.MindSporeLiteKit';
 | [Context](arkts-mindsporelite-context-i.md) | Provides the device configurations |
 | [CpuDevice](arkts-mindsporelite-cpudevice-i.md) | Provides the CPU device info |
 | [Extension](arkts-mindsporelite-extension-i.md) | Provides the extension information of nnrt device |
-| [Model](arkts-mindsporelite-model-i.md) | Provides manages model function. Including get inputs, predict ,resize. |
 | [MSTensor](arkts-mindsporelite-mstensor-i.md) | Provides MSTensor definition |
+| [Model](arkts-mindsporelite-model-i.md) | Provides manages model function. Including get inputs, predict ,resize. |
 | [NNRTDevice](arkts-mindsporelite-nnrtdevice-i.md) | Provides the NNRT device info |
 | [NNRTDeviceDescription](arkts-mindsporelite-nnrtdevicedescription-i.md) | Provides the nnrt device description |
 | [TrainCfg](arkts-mindsporelite-traincfg-i.md) | Provides the train configuration |

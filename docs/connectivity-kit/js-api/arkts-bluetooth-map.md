@@ -18,18 +18,27 @@ import { map } from '@kit.ConnectivityKit';
 
 | Name | Description |
 | --- | --- |
-| [createMapMseProfile](arkts-map-createmapmseprofile-f.md#createMapMseProfile-1) | create the instance of MAP MSE profile. |
+| [createMapMseProfile](arkts-connectivity-createmapmseprofile-f.md#createmapmseprofile-1) | create the instance of MAP MSE profile. |
 
-### Interfaces
+<!--Del-->
+### Interfaces（系统接口）
 
 | Name | Description |
 | --- | --- |
-| [MapMseProfile](arkts-map-mapmseprofile-i.md) | Manager MAP MSE profile. |
+| [MapMseProfile](arkts-connectivity-mapmseprofile-i-sys.md) | Manager MAP MSE profile. |
+<!--DelEnd-->
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[AccessAuthorization](arkts-map-accessauthorization-t-sys.md) | Indicate the phone book access authorization. |
-| [BaseProfile](arkts-map-baseprofile-t.md) | Base interface of profile. |
+| [BaseProfile](arkts-connectivity-baseprofile-t.md) | Base interface of profile. |
+
+<!--Del-->
+### Types（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [AccessAuthorization](arkts-connectivity-accessauthorization-t-sys.md) | Indicate the phone book access authorization. |
+<!--DelEnd-->
 

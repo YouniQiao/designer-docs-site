@@ -1,6 +1,10 @@
 # ProcessData
 
-进程数据的对象定义。使用接口 [appManager.on('applicationState')](arkts-ability-on-f.md#on-1) 注册生命周期变化监听后，当应用或组件的生命周期变化时，系统通过[ApplicationStateObserver](arkts-ability-applicationstateobserver-c.md)的 [onProcessCreated](../../../../reference/apis-ability-kit/js-apis-inner-application-applicationStateObserver.md#applicationstateobserveronprocesscreated) 等方法回调给开发者。
+进程数据的对象定义。使用接口
+[appManager.on('applicationState')](arkts-ability-on-f.md#on-1)
+注册生命周期变化监听后，当应用或组件的生命周期变化时，系统通过[ApplicationStateObserver](arkts-ability-applicationstateobserver-c.md)的
+[onProcessCreated](../../../../reference/apis-ability-kit/js-apis-inner-application-applicationStateObserver.md#applicationstateobserveronprocesscreated)
+等方法回调给开发者。
 
 **起始版本：** 14
 
@@ -68,7 +72,17 @@ pid: number
 state: number
 ```
 
-应用的状态，取值及对应的状态为： 0 - 初始化状态，进程正在初始化， 1 - 就绪状态，进程已初始化完毕， 2 - 前台， 4 - 后台， 5 - 已终止。
+应用的状态，取值及对应的状态为：
+
+0 - 初始化状态，进程正在初始化，
+
+1 - 就绪状态，进程已初始化完毕，
+
+2 - 前台，
+
+4 - 后台，
+
+5 - 已终止。
 
 **类型：** number
 

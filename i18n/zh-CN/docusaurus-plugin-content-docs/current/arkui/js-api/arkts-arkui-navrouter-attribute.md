@@ -44,7 +44,8 @@ mode(mode: NavRouteMode)
 onStateChange(callback: (isActivated: boolean) => void)
 ```
 
-组件激活状态切换时触发该回调。开发者点击激活NavRouter，加载对应的NavDestination子组件时，回调onStateChange(true)。NavRouter对应的NavDestination子组件不再显示时，回调 onStateChange(false)。
+组件激活状态切换时触发该回调。开发者点击激活NavRouter，加载对应的NavDestination子组件时，回调onStateChange(true)。NavRouter对应的NavDestination子组件不再显示时，回调
+onStateChange(false)。
 
 **起始版本：** 9
 

@@ -1,6 +1,8 @@
 # LiveFormExtensionContext
 
-**LiveFormExtensionContext**, inherited from [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md), is the context of [LiveFormExtensionAbility](arkts-app-form-liveformextensionability.md).
+**LiveFormExtensionContext**, inherited from
+[ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md), is the context of
+[LiveFormExtensionAbility](arkts-app-form-liveformextensionability.md).
 
 **Inheritance/Implementation:** LiveFormExtensionContext extends [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md)
 
@@ -14,7 +16,14 @@
 startAbilityByLiveForm(want: Want): Promise<void>
 ```
 
-Starts the widget provider (application) page. This API uses a promise to return the result. <br>This API can only be used to start the page of the interactive widget provider (application). If this API is used to start the page of another application, error code 16501011 will be reported. <br>You are advised to call this API in click event callbacks. Calling it in callbacks of other gesture events is not recommended, and direct calls in non-gesture events are not allowed. Otherwise, the error code 16501011 will be reported. <br>In addition, this API can be directly called in the click event callback but cannot be called after a delay. Otherwise, the error code 16501011 will be reported.
+Starts the widget provider (application) page. This API uses a promise to return the result.
+<br>This API can only be used to start the page of the interactive widget provider (application). If this API is used
+to start the page of another application, error code 16501011 will be reported.
+<br>You are advised to call this API in click event callbacks. Calling it in callbacks of other gesture events is not
+recommended, and direct calls in non-gesture events are not allowed. Otherwise, the error code 16501011 will be
+reported.
+<br>In addition, this API can be directly called in the click event callback but cannot be called after a delay.
+Otherwise, the error code 16501011 will be reported.
 
 **Since:** 20
 

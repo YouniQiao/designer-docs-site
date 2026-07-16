@@ -30,6 +30,6 @@ export declare function loadNativeModule(moduleName: string): Object
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The parameter check failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The parameter check failed. |
 | [10200301](../../apis-arkts/errorcode-utils.md#10200301-加载native模块失败) | Loading native module failed. |
 

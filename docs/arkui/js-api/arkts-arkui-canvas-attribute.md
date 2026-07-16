@@ -1,6 +1,10 @@
 # Canvas properties/events
 
-In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following attributes are supported. The [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) are supported.
+In addition to the
+[universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md),
+the following attributes are supported.
+
+The [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) are supported.
 
 **Inheritance/Implementation:** CanvasAttribute extends [CommonMethod<CanvasAttribute>](CommonMethod<CanvasAttribute>)
 
@@ -14,7 +18,23 @@ In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkt
 enableAnalyzer(enable: boolean)
 ```
 
-Sets whether to enable the AI image analyzer, which supports subject recognition, text recognition, and object lookup. For the settings to take effect, this attribute must be used together with [startImageAnalyzer](startImageAnalyzer) and [stopImageAnalyzer](stopImageAnalyzer) of CanvasRenderingContext2D. This attribute cannot be used together with the [overlay](arkts-arkui-commonmethod-c.md#overlay-1) attribute. If they are set at the same time, the **CustomBuilder** attribute in **overlay** has no effect. This feature depends on device capabilities. > **NOTE** > > This API can be called within > [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) > since API version 20.
+Sets whether to enable the AI image analyzer, which supports subject recognition, text recognition,
+and object lookup.
+
+For the settings to take effect, this attribute must be used together with
+[startImageAnalyzer](startImageAnalyzer) and
+[stopImageAnalyzer](stopImageAnalyzer) of CanvasRenderingContext2D.
+
+This attribute cannot be used together with the
+[overlay](arkts-arkui-commonmethod-c.md#overlay-1) attribute.
+If they are set at the same time, the **CustomBuilder** attribute in **overlay** has no effect.
+This feature depends on device capabilities.
+
+> **NOTE**
+>
+> This API can be called within
+> [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)
+> since API version 20.
 
 **Since:** 12
 
@@ -36,7 +56,15 @@ Sets whether to enable the AI image analyzer, which supports subject recognition
 onReady(event: VoidCallback)
 ```
 
-Triggered when the **Canvas** component is initialized or when its size changes. When this event is triggered, the canvas is cleared. The width and height of the **Canvas** component are then determined and can be obtained, allowing you to use APIs related to the **Canvas** component for drawing. If only the position of the canvas changes, only the [onAreaChange](arkts-arkui-commonmethod-c.md#onareachange-1) event is triggered, not the **onReady** event. The [onAreaChange](arkts-arkui-commonmethod-c.md#onareachange-1) event is triggered after the **onReady** event.
+Triggered when the **Canvas** component is initialized or when its size changes.
+
+When this event is triggered, the canvas is cleared. The width and height of the **Canvas**
+component are then determined and can be obtained, allowing you to use APIs related to the
+**Canvas** component for drawing. If only the position of the canvas changes, only the
+[onAreaChange](arkts-arkui-commonmethod-c.md#onareachange-1)
+event is triggered, not the **onReady** event. The
+[onAreaChange](arkts-arkui-commonmethod-c.md#onareachange-1)
+event is triggered after the **onReady** event.
 
 **Since:** 8
 
@@ -58,7 +86,15 @@ Triggered when the **Canvas** component is initialized or when its size changes.
 onReady(event: Callback<DrawingRenderingContext | undefined> | undefined)
 ```
 
-Triggered when the **Canvas** component is initialized or when its size changes. When this event is triggered, the canvas is cleared. The width and height of the **Canvas** component are then determined and can be obtained, allowing you to use APIs related to the **Canvas** component for drawing. If only the position of the canvas changes, only the [onAreaChange](arkts-arkui-commonmethod-c.md#onareachange-1) event is triggered, not the **onReady** event. The [onAreaChange](arkts-arkui-commonmethod-c.md#onareachange-1) event is triggered after the **onReady** event.
+Triggered when the **Canvas** component is initialized or when its size changes.
+
+When this event is triggered, the canvas is cleared. The width and height of the **Canvas**
+component are then determined and can be obtained, allowing you to use APIs related to the
+**Canvas** component for drawing. If only the position of the canvas changes, only the
+[onAreaChange](arkts-arkui-commonmethod-c.md#onareachange-1)
+event is triggered, not the **onReady** event. The
+[onAreaChange](arkts-arkui-commonmethod-c.md#onareachange-1)
+event is triggered after the **onReady** event.
 
 **Since:** 23
 

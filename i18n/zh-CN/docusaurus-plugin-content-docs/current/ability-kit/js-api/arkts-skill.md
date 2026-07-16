@@ -4,8 +4,8 @@
 
 ### 接口
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| [Skill](arkts-skill-i.md) | skill标签对象。 |
-| [SkillUri](arkts-skilluri-i.md) | Want匹配的Uri集合。 |
+| [Skill](arkts-ability-skill-i.md) | skill标签对象。 |
+| [SkillUri](arkts-ability-skilluri-i.md) | Want匹配的Uri集合。 |
 

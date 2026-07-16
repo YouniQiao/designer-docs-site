@@ -1,6 +1,8 @@
 # RelativeContainer属性/事件
 
-除支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持如下属性： 支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)。
+除支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持如下属性：
+
+支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)。
 
 **继承/实现关系：** RelativeContainerAttribute extends [CommonMethod<RelativeContainerAttribute>](CommonMethod<RelativeContainerAttribute>)
 
@@ -14,7 +16,8 @@
 barrier(value: Array<BarrierStyle>)
 ```
 
-设置RelativeContainer容器内的[屏障](../../../../ui/arkts-layout-development-relative-layout.md#多个组件的屏障)，Array中每个项目即为一条 barrier。
+设置RelativeContainer容器内的[屏障](../../../../ui/arkts-layout-development-relative-layout.md#多个组件的屏障)，Array中每个项目即为一条
+barrier。
 
 **起始版本：** 12
 
@@ -58,7 +61,8 @@ barrier(barrierStyle: Array<LocalizedBarrierStyle>)
 guideLine(value: Array<GuideLineStyle>)
 ```
 
-设置RelativeContainer容器内的[辅助线](../../../../ui/arkts-layout-development-relative-layout.md#使用辅助线辅助定位子组件)，Array中每个项目即为一条 guideLine。
+设置RelativeContainer容器内的[辅助线](../../../../ui/arkts-layout-development-relative-layout.md#使用辅助线辅助定位子组件)，Array中每个项目即为一条
+guideLine。
 
 **起始版本：** 12
 

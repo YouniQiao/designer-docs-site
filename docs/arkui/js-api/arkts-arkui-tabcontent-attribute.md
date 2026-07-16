@@ -1,6 +1,8 @@
 # TabContent properties/events
 
-In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following attributes are supported. In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following events are supported.
+In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following attributes are supported.
+
+In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following events are supported.
 
 **Inheritance/Implementation:** TabContentAttribute extends [CommonMethod<TabContentAttribute>](CommonMethod<TabContentAttribute>)
 
@@ -14,7 +16,12 @@ In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkt
 onWillHide(event: VoidCallback)
 ```
 
-Called when the tab content is about to be hidden. The scenarios include the tab switching, page switching, and window switching between the foreground and background. > **NOTE** > > This API can be called in [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
+Called when the tab content is about to be hidden. The scenarios include the tab switching, page switching, and
+window switching between the foreground and background.
+
+> **NOTE**
+>
+> This API can be called in [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
 
 **Since:** 12
 
@@ -36,7 +43,12 @@ Called when the tab content is about to be hidden. The scenarios include the tab
 onWillShow(event: VoidCallback)
 ```
 
-Called when the tab content is about to be displayed. The scenarios include the first-time display, tab switching, page switching, and window switching between the foreground and background. > **NOTE** > > This API can be called in [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
+Called when the tab content is about to be displayed. The scenarios include the first-time display, tab switching,
+page switching, and window switching between the foreground and background.
+
+> **NOTE**
+>
+> This API can be called in [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
 
 **Since:** 12
 
@@ -58,7 +70,12 @@ Called when the tab content is about to be displayed. The scenarios include the 
 tabBar(options: string | Resource | CustomBuilder | TabBarOptions)
 ```
 
-Sets the content displayed on the tab bar. If the icon uses an SVG image source, delete the width and height attribute values built in the SVG image source. Otherwise, the width and height attribute values built in the SVG image source are used. If the content exceeds the space provided by the tab bar, it will be clipped.
+Sets the content displayed on the tab bar.
+
+If the icon uses an SVG image source, delete the width and height attribute values built in the SVG image source.
+Otherwise, the width and height attribute values built in the SVG image source are used.
+
+If the content exceeds the space provided by the tab bar, it will be clipped.
 
 **Since:** 7
 
@@ -78,7 +95,21 @@ Sets the content displayed on the tab bar. If the icon uses an SVG image source,
 tabBar(value: SubTabBarStyle | BottomTabBarStyle)
 ```
 
-Sets the content displayed on the tab bar. The bottom tab style does not include an indicator. When an icon display error occurs, a gray blank block is displayed. > **NOTE** > > - [SubTabBarStyle](arkts-arkui-subtabbarstyle-c.md): text + underline or text + board. The text style can be set. It is > recommended that the subtab be placed at the top or bottom. By default, the animation transition effect is > displayed when a tab is switched. This style is applicable to the top categories (such as Following, Video, > Digital) of information apps and level-2 navigation scenarios of functional modules. > > - [BottomTabBarStyle](arkts-arkui-bottomtabbarstyle-c.md): icon + text, without underline or board. By default, no animation > transition effect is displayed when a tab is switched. Bottom tabs are usually used for the main navigation of an > app (such as Home, Discover, and Recommended). Side tabs are applicable to wide-screen scenarios. You can set > **vertical(true)** to enable the vertical layout so that the tabs are displayed on the side. By default, the tabs > are displayed on the left.
+Sets the content displayed on the tab bar. The bottom tab style does not include an indicator. When an icon display
+error occurs, a gray blank block is displayed.
+
+> **NOTE**
+>
+> - [SubTabBarStyle](arkts-arkui-subtabbarstyle-c.md): text + underline or text + board. The text style can be set. It is
+> recommended that the subtab be placed at the top or bottom. By default, the animation transition effect is
+> displayed when a tab is switched. This style is applicable to the top categories (such as Following, Video,
+> Digital) of information apps and level-2 navigation scenarios of functional modules.
+>
+> - [BottomTabBarStyle](arkts-arkui-bottomtabbarstyle-c.md): icon + text, without underline or board. By default, no animation
+> transition effect is displayed when a tab is switched. Bottom tabs are usually used for the main navigation of an
+> app (such as Home, Discover, and Recommended). Side tabs are applicable to wide-screen scenarios. You can set
+> **vertical(true)** to enable the vertical layout so that the tabs are displayed on the side. By default, the tabs
+> are displayed on the left.
 
 **Since:** 9
 
@@ -99,7 +130,13 @@ tabBar(content: ComponentContent | SubTabBarStyle | BottomTabBarStyle | string |
     TabBarOptions)
 ```
 
-Sets the content displayed on the tab bar. If **BottomTabBarStyle** or **TabBarOptions** is used and an icon is set, a gray block will be displayed if the icon is invalid. If the icon uses an SVG image source, delete the width and height attribute values built in the SVG image source. Otherwise, the width and height attribute values built in the SVG image source are used. If the content exceeds the space provided by the tab bar, it will be clipped.
+Sets the content displayed on the tab bar.
+
+If **BottomTabBarStyle** or **TabBarOptions** is used and an icon is set, a gray block will be displayed if the
+icon is invalid. If the icon uses an SVG image source, delete the width and height attribute values built in the
+SVG image source. Otherwise, the width and height attribute values built in the SVG image source are used.
+
+If the content exceeds the space provided by the tab bar, it will be clipped.
 
 **Since:** 18
 

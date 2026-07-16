@@ -12,5 +12,5 @@ import { PartnerAgentExtensionContext } from '@kit.ConnectivityKit';
 
 | Name | Description |
 | --- | --- |
-| [PartnerAgentExtensionContext](arkts-partneragentextensioncontext-c.md) | Class for the context of the PartnerAgentExtensionAbility. |
+| [PartnerAgentExtensionContext](arkts-connectivity-partneragentextensioncontext-c.md) | Class for the context of the PartnerAgentExtensionAbility. |
 

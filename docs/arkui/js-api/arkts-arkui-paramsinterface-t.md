@@ -6,7 +6,7 @@ type ParamsInterface = {
 }
 ```
 
-Define ParamsInterface.
+List of routing parameters.
 
 **Since:** 7
 

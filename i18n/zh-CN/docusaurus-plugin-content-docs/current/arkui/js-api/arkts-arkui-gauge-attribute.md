@@ -14,7 +14,17 @@
 colors(colors: ResourceColor | LinearGradient | Array<[ResourceColor | LinearGradient, number]>)
 ```
 
-设置量规图的颜色。 从API version 11开始，该接口使用以下规则： 参数类型为[ResourceColor](arkts-arkui-resourcecolor-t.md)，则圆环类型为单色环。 参数类型为[LinearGradient](arkts-arkui-lineargradient-i.md)，则圆环类型为渐变环。 参数类型为数组，则圆环类型为分段渐变环，第一个参数为颜色值，若设置为非颜色类型，则置为"0xFFE84026"。第二个参数为颜色所占比重，若设置为负数或是非数值类型，则将比重置为0。 分段渐变环最大显示段数为9段，若多于9段，则多于部分不显示。
+设置量规图的颜色。
+
+从API version 11开始，该接口使用以下规则：
+
+参数类型为[ResourceColor](arkts-arkui-resourcecolor-t.md)，则圆环类型为单色环。
+
+参数类型为[LinearGradient](arkts-arkui-lineargradient-i.md)，则圆环类型为渐变环。
+
+参数类型为数组，则圆环类型为分段渐变环，第一个参数为颜色值，若设置为非颜色类型，则置为"0xFFE84026"。第二个参数为颜色所占比重，若设置为负数或是非数值类型，则将比重置为0。
+
+分段渐变环最大显示段数为9段，若多于9段，则多于部分不显示。
 
 **起始版本：** 8
 
@@ -128,7 +138,11 @@ indicator(value: GaugeIndicatorOptions)
 privacySensitive(isPrivacySensitiveMode: Optional<boolean>)
 ```
 
-设置隐私敏感。 > **说明：** > > 从API version 20开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+设置隐私敏感。
+
+> **说明：**
+>
+> 从API version 20开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 12
 

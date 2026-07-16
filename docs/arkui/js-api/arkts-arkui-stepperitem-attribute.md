@@ -18,7 +18,10 @@ Defines StepperItem Component instance.
 nextLabel(value: string)
 ```
 
-Sets the text label of the button on the right. The default value is **Start** for the last page and **Next** for the other pages. > **NOTE**
+Sets the text label of the button on the right. The default value is **Start** for the last page and **Next** for
+the other pages.
+
+> **NOTE**
 
 **Since:** 8
 
@@ -42,7 +45,10 @@ Sets the text label of the button on the right. The default value is **Start** f
 prevLabel(value: string)
 ```
 
-Sets the text label of the button on the left, which is not displayed on the first page. When the **Stepper** contains more than one page, the default value for all pages except the first page is **Back**. > **NOTE**
+Sets the text label of the button on the left, which is not displayed on the first page. When the **Stepper**
+contains more than one page, the default value for all pages except the first page is **Back**.
+
+> **NOTE**
 
 **Since:** 8
 
@@ -66,7 +72,9 @@ Sets the text label of the button on the left, which is not displayed on the fir
 status(value?: ItemState)
 ```
 
-Sets the display status of **nextLabel** in the stepper. > **NOTE**
+Sets the display status of **nextLabel** in the stepper.
+
+> **NOTE**
 
 **Since:** 8
 

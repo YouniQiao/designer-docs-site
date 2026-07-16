@@ -16,8 +16,8 @@
 | [sendKeyEvent](arkts-arkui-global-sendkeyevent-f.md#sendkeyevent-1) | Send key event. |
 | [sendMouseEvent](arkts-arkui-global-sendmouseevent-f.md#sendmouseevent-1) | Send mouse event. |
 | [sendTouchEvent](arkts-arkui-global-sendtouchevent-f.md#sendtouchevent-1) | Send touch event. |
-| [setInterval](arkts-arkui-global-setinterval-f.md#setinterval-1) | Sets a repeating timer for the system to repeatedly call a function at a fixed interval. The timer can only be manually deleted when the **clearInterval** API is called. |
-| [setTimeout](arkts-arkui-global-settimeout-f.md#settimeout-1) | Sets a timer for the system to call a function after the timer goes off. The timer is automatically deleted after callback execution, or you may manually delete it via the **clearTimeout()** API. |
+| [setInterval](arkts-arkui-global-setinterval-f.md#setinterval-1) | Sets a repeating timer for the system to repeatedly call a function at a fixed interval.The timer can only be manually deleted when the **clearInterval** API is called. |
+| [setTimeout](arkts-arkui-global-settimeout-f.md#settimeout-1) | Sets a timer for the system to call a function after the timer goes off.The timer is automatically deleted after callback execution, or you may manually delete it via the **clearTimeout()**API. |
 
 <!--Del-->
 ### 函数（系统接口）

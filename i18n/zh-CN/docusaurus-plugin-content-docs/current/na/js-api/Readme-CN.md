@@ -9,6 +9,16 @@
   - [OnHoverStatusChangeHandler](arkts-na-onhoverstatuschangehandler-t.md)
   - [ExtraRegionPosition](arkts-na-extraregionposition-e.md)
   - [PresetSplitRatio](arkts-na-presetsplitratio-e.md)
+- [@ohos.inputMethodSystemPanelManager](arkts-inputmethodsystempanelmanager.md)<!--Del-->
+  - [connectSystemChannel(系统接口)](arkts-na-connectsystemchannel-f-sys.md)<!--DelEnd--><!--Del-->
+  - [offSystemPanelStatusChange(系统接口)](arkts-na-offsystempanelstatuschange-f-sys.md)<!--DelEnd--><!--Del-->
+  - [offSystemPrivateCommand(系统接口)](arkts-na-offsystemprivatecommand-f-sys.md)<!--DelEnd--><!--Del-->
+  - [onSystemPanelStatusChange(系统接口)](arkts-na-onsystempanelstatuschange-f-sys.md)<!--DelEnd--><!--Del-->
+  - [onSystemPrivateCommand(系统接口)](arkts-na-onsystemprivatecommand-f-sys.md)<!--DelEnd--><!--Del-->
+  - [sendPrivateCommand(系统接口)](arkts-na-sendprivatecommand-f-sys.md)<!--DelEnd--><!--Del-->
+  - [SystemPanelStatus(系统接口)](arkts-na-systempanelstatus-i-sys.md)<!--DelEnd--><!--Del-->
+  - [CommandDataType(系统接口)](arkts-na-commanddatatype-t-sys.md)<!--DelEnd--><!--Del-->
+  - [InputMethodInputType(系统接口)](arkts-na-inputmethodinputtype-e-sys.md)<!--DelEnd-->
 - [@ohos.wallpaper](arkts-wallpaper.md)
   - [getColors](arkts-na-getcolors-f.md)<!--Del-->
   - [getColorsSync(系统接口)](arkts-na-getcolorssync-f-sys.md)<!--DelEnd-->

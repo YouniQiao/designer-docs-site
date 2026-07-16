@@ -1,6 +1,8 @@
 # ImageAnimator属性/事件
 
-除支持[通用属性](./common)外，还支持以下属性： 除支持[通用事件](./common)外，还支持以下事件：
+除支持[通用属性](./common)外，还支持以下属性：
+
+除支持[通用事件](./common)外，还支持以下事件：
 
 **继承/实现关系：** ImageAnimatorAttribute extends [CommonMethod<ImageAnimatorAttribute>](CommonMethod<ImageAnimatorAttribute>)
 
@@ -36,7 +38,9 @@ duration(value: number)
 fillMode(value: FillMode)
 ```
 
-设置当前播放方向下，动画开始前和结束后的状态。动画结束后的状态由fillMode和reverse属性共同决定。 例如，fillMode为Forwards表示停止时维持动画最后一个关键帧的状态，若reverse为false则维持正播的 最后一帧，即最后一张图，若reverse为true则维持逆播的最后一帧，即第一张图。
+设置当前播放方向下，动画开始前和结束后的状态。动画结束后的状态由fillMode和reverse属性共同决定。
+例如，fillMode为Forwards表示停止时维持动画最后一个关键帧的状态，若reverse为false则维持正播的
+最后一帧，即最后一张图，若reverse为true则维持逆播的最后一帧，即第一张图。
 
 **起始版本：** 7
 
@@ -122,7 +126,10 @@ iterations(value: number)
 monitorInvisibleArea(monitorInvisibleArea: boolean) : ImageAnimatorAttribute
 ```
 
-设置组件是否通过系统 [onVisibleAreaChange] {@link CommonMethod#onVisibleAreaChange(ratios: Array<number>, event: VisibleAreaChangeCallback)} 的可见性判定，控制组件的暂停和播放。
+设置组件是否通过系统
+[onVisibleAreaChange]
+{@link CommonMethod#onVisibleAreaChange(ratios: Array<number>, event: VisibleAreaChangeCallback)}
+的可见性判定，控制组件的暂停和播放。
 
 **起始版本：** 17
 
@@ -252,7 +259,11 @@ onStart(event: () => void)
 preDecode(value: number)
 ```
 
-设置预解码的图片数量。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。当前无可替代接口。
+设置预解码的图片数量。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。当前无可替代接口。
 
 **起始版本：** 7
 

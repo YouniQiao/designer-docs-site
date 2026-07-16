@@ -13,7 +13,8 @@ declare function createRandomAccessFile(file: string | File, mode?: number,
   options?: RandomAccessFileOptions): Promise<RandomAccessFile>
 ```
 
-Creates a **RandomAccessFile** instance based on the specified file path or file object. This API uses a promise to return the result.
+Creates a **RandomAccessFile** instance based on the specified file path or file object. This API uses a promise to
+return the result.
 
 **Since:** 10
 
@@ -72,7 +73,8 @@ Creates a **RandomAccessFile** instance based on the specified file path or file
 declare function createRandomAccessFile(file: string | File, callback: AsyncCallback<RandomAccessFile>): void
 ```
 
-Creates a **RandomAccessFile** object in read-only mode based on a file path or file object. This API uses an asynchronous callback to return the result.
+Creates a **RandomAccessFile** object in read-only mode based on a file path or file object. This API uses an
+asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -123,7 +125,8 @@ Creates a **RandomAccessFile** object in read-only mode based on a file path or 
 declare function createRandomAccessFile(file: string | File, mode: number, callback: AsyncCallback<RandomAccessFile>): void
 ```
 
-Creates a **RandomAccessFile** instance based on a file path or file object. This API uses an asynchronous callback to return the result.
+Creates a **RandomAccessFile** instance based on a file path or file object. This API uses an asynchronous callback
+to return the result.
 
 **Since:** 10
 

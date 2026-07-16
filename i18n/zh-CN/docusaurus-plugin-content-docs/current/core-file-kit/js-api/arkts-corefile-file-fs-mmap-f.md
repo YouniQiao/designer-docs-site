@@ -6,7 +6,11 @@
 declare function mmap(file: number | File, mode: MappingMode, offset: number, size: number): Promise<FileMapping>
 ```
 
-基于文件描述符或文件对象创建文件映射对象，使用promise异步回调。将文件内容映射到内存，以实现文件的高效读写访问。 注意：读写模式（MappingMode.READ_WRITE）下，若映射范围超过原始文件大小，将自动扩展文件大小。 > **说明** > 注意：在读写模式（MappingMode.READ_WRITE）下，如果映射范围超过原始文件大小，则文件大小 > 将自动展开。
+基于文件描述符或文件对象创建文件映射对象，使用promise异步回调。将文件内容映射到内存，以实现文件的高效读写访问。
+注意：读写模式（MappingMode.READ_WRITE）下，若映射范围超过原始文件大小，将自动扩展文件大小。
+> **说明**
+> 注意：在读写模式（MappingMode.READ_WRITE）下，如果映射范围超过原始文件大小，则文件大小
+> 将自动展开。
 
 **起始版本：** 26.0.0
 

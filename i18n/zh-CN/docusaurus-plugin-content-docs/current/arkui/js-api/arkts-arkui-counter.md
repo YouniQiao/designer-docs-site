@@ -1,6 +1,11 @@
 # Counter
 
-计数器组件，提供相应的增加或者减少的计数操作。 > **说明：** > - 该组件从API版本26.0.0开始支持[WithTheme]{@link with_theme}。
+计数器组件，提供相应的增加或者减少的计数操作。
+
+> **说明：**
+
+> - 该组件从API版本26.0.0开始支持[WithTheme]{@link with_theme}。
+
 
 ## Counter
 

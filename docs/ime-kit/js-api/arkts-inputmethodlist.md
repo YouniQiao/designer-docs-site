@@ -12,7 +12,7 @@ import { Pattern, InputMethodListDialog, PatternOptions } from '@kit.IMEKit';
 
 | Name | Description |
 | --- | --- |
-| [InputMethodListDialog](arkts-ime-inputmethodlistdialog-s.md) | InputMethodListDialog({controller: CustomDialogController, patternOptions?: PatternOptions}) Implements a dialog box showing the input method list. |
+| [InputMethodListDialog](arkts-ime-inputmethodlistdialog-s.md) | InputMethodListDialog({controller: CustomDialogController, patternOptions?: PatternOptions})Implements a dialog box showing the input method list. |
 
 ### Interfaces
 

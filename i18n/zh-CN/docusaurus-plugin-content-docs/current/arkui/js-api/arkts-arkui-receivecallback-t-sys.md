@@ -4,7 +4,8 @@
 declare type ReceiveCallback = import('../api/@ohos.base').Callback<Record<string, Object>>
 ```
 
-从@ohos.base获取Callback。 AnonyMous Object Rectification
+从@ohos.base获取Callback。
+AnonyMous Object Rectification
 
 **起始版本：** 18
 

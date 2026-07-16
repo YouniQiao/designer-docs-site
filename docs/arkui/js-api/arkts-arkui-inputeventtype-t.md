@@ -4,7 +4,8 @@
 declare type InputEventType = TouchEvent | MouseEvent | AxisEvent
 ```
 
-Defines the type of input event to be dispatched. For details, see [postInputEvent](arkts-arkui-buildernode-c.md#postinputevent-1).
+Defines the type of input event to be dispatched. For details, see
+[postInputEvent](arkts-arkui-buildernode-c.md#postinputevent-1).
 
 **Since:** 20
 

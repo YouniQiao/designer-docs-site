@@ -12,21 +12,19 @@ import { Decimal } from '@kit.ArkTS';
 
 | Name | Description |
 | --- | --- |
-| [Decimal](arkts-decimal-c.md) | 任意精度的Decimal类型。 |
+| [Decimal](arkts-arkts-decimal-c.md) | An arbitrary-precision Decimal type |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [DecimalConfig](arkts-decimalconfig-i.md) | 提供Decimal的配置属性，可使用Decimal.set方法进行配置。 |
+| [DecimalConfig](arkts-arkts-decimalconfig-i.md) | Provides configuration for decimal. |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [Modulo](arkts-modulo-t.md) | 表示可设置的取模方法舍入类型。 |
-| [Modulo](arkts-modulo-t.md) | 表示可设置的取模方法舍入类型。 |
-| [Rounding](arkts-rounding-t.md) | 表示可设置的舍入类型。 |
-| [Rounding](arkts-rounding-t.md) | 表示可设置的舍入类型。 |
-| [Value](arkts-value-t.md) | 表示用于构建Decimal的参数类型。 |
+| [Modulo](arkts-arkts-modulo-t.md) | The type used to set modulo |
+| [Rounding](arkts-arkts-rounding-t.md) | The type used to set rounding |
+| [Value](arkts-arkts-value-t.md) | The type used to denote decimal value |
 

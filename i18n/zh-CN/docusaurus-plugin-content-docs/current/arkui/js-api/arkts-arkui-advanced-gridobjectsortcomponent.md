@@ -6,7 +6,7 @@
 
 | 名称 | 说明 |
 | --- | --- |
-| [GridObjectSortComponent](arkts-arkui-gridobjectsortcomponent-s.md) | 网格对象排序组件，用于网格对象的编辑、拖动排序、新增和删除。 @link ./@internal/component/ets/common}和 &gt; [通用事件](./@internal/component/ets/common)，编译工具链会额外生成节点__Common__，并将通用属性或通用事件挂载在__Common__上，而不是直接应用到 &gt; GridObjectSortComponent本身。这可能导致开发者设置的通用属性或通用事件不生效或不符合预期，因此，不建议GridObjectSortComponent设置通用属性和通用事件。 |
+| [GridObjectSortComponent](arkts-arkui-gridobjectsortcomponent-s.md) | 网格对象排序组件，用于网格对象的编辑、拖动排序、新增和删除。@link ./@internal/component/ets/common}和&gt; [通用事件](./@internal/component/ets/common)，编译工具链会额外生成节点__Common__，并将通用属性或通用事件挂载在__Common__上，而不是直接应用到&gt; GridObjectSortComponent本身。这可能导致开发者设置的通用属性或通用事件不生效或不符合预期，因此，不建议GridObjectSortComponent设置通用属性和通用事件。 |
 
 ### 接口
 

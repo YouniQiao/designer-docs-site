@@ -4,7 +4,9 @@
 declare type SizeChangeCallback = (oldValue: SizeOptions, newValue: SizeOptions) => void
 ```
 
-Defines the callback type used in onSizeChange. The value of oldValue is last size of the component. The value of newValue is new size of the component.
+Defines the callback type used in onSizeChange.
+The value of oldValue is last size of the component.
+The value of newValue is new size of the component.
 
 **Since:** 12
 

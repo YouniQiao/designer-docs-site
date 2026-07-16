@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { GetStatusOptions,BatteryResponse } from '@kit.BasicServicesKit';
+import { GetStatusOptions, BatteryResponse } from '@kit.BasicServicesKit';
 ```
 
 ## Summary
@@ -12,12 +12,12 @@ import { GetStatusOptions,BatteryResponse } from '@kit.BasicServicesKit';
 
 | Name | Description |
 | --- | --- |
-| [Battery](arkts-battery-c.md) | 该模块提供充电状态及剩余电量的查询功能。 |
+| [Battery](arkts-basicservices-battery-c.md) | The module allows you to query the charging status and remaining power of a device. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [BatteryResponse](arkts-batteryresponse-i.md) | 包含充电状态及剩余电量的对象。 |
-| [GetStatusOptions](arkts-getstatusoptions-i.md) | 包含接口调用结果的对象。 |
+| [BatteryResponse](arkts-basicservices-batteryresponse-i.md) | Defines a response that returns the charging status and remaining power of the device. |
+| [GetStatusOptions](arkts-basicservices-getstatusoptions-i.md) | Object that contains the API calling result. |
 

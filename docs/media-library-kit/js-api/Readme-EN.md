@@ -124,6 +124,7 @@
   - [Entity(system api)](arkts-medialibrary-entity-i-sys.md)<!--DelEnd-->
   - [FetchOptions](arkts-medialibrary-fetchoptions-i.md)
   - [FetchResult](arkts-medialibrary-fetchresult-i.md)<!--Del-->
+  - [FetchResult(system api)](arkts-medialibrary-fetchresult-i-sys.md)<!--DelEnd--><!--Del-->
   - [FormInfo(system api)](arkts-medialibrary-forminfo-i-sys.md)<!--DelEnd--><!--Del-->
   - [FusionAssetsInfo(system api)](arkts-medialibrary-fusionassetsinfo-i-sys.md)<!--DelEnd--><!--Del-->
   - [GalleryFormInfo(system api)](arkts-medialibrary-galleryforminfo-i-sys.md)<!--DelEnd-->
@@ -224,7 +225,8 @@
   - [PhotoType](arkts-medialibrary-phototype-e.md)
   - [PhotoViewMIMETypes](arkts-medialibrary-photoviewmimetypes-e.md)
   - [PlayMode](arkts-medialibrary-playmode-e.md)
-  - [PositionType](arkts-medialibrary-positiontype-e.md)
+  - [PositionType](arkts-medialibrary-positiontype-e.md)<!--Del-->
+  - [PositionType(system api)](arkts-medialibrary-positiontype-e-sys.md)<!--DelEnd-->
   - [PreferredCompatibleMode](arkts-medialibrary-preferredcompatiblemode-e.md)<!--Del-->
   - [RankingMethod(system api)](arkts-medialibrary-rankingmethod-e-sys.md)<!--DelEnd-->
   - [RecommendationType](arkts-medialibrary-recommendationtype-e.md)<!--Del-->
@@ -232,8 +234,8 @@
   - [RequestPhotoType(system api)](arkts-medialibrary-requestphototype-e-sys.md)<!--DelEnd-->
   - [ResourceType](arkts-medialibrary-resourcetype-e.md)<!--Del-->
   - [ResourceType(system api)](arkts-medialibrary-resourcetype-e-sys.md)<!--DelEnd-->
-  - [SceneType](arkts-medialibrary-scenetype-e.md)
-  - [SearchSuggestionType](arkts-medialibrary-searchsuggestiontype-e.md)
+  - [SceneType](arkts-medialibrary-scenetype-e.md)<!--Del-->
+  - [SearchSuggestionType(system api)](arkts-medialibrary-searchsuggestiontype-e-sys.md)<!--DelEnd-->
   - [SingleSelectionMode](arkts-medialibrary-singleselectionmode-e.md)<!--Del-->
   - [SourceMode(system api)](arkts-medialibrary-sourcemode-e-sys.md)<!--DelEnd--><!--Del-->
   - [StrongAssociationType(system api)](arkts-medialibrary-strongassociationtype-e-sys.md)<!--DelEnd--><!--Del-->

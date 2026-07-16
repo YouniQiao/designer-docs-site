@@ -1,6 +1,10 @@
 # RichEditor
 
-提供编写文本的接口。
+支持图文混排和文本交互式编辑的组件。
+
+> **说明：**
+>
+> - 该组件从API版本26.0.0开始支持[WithTheme]{@link ./with_theme}。
 
 
 ## RichEditor
@@ -8,8 +12,6 @@
 ```TypeScript
 RichEditor(value: RichEditorOptions)
 ```
-
-创建富文本组件时调用。
 
 **起始版本：** 10
 

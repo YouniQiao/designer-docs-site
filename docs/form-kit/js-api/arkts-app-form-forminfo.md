@@ -1,6 +1,11 @@
 # @ohos.app.form.formInfo
 
-The **formInfo** module provides types and enums related to the widget information and state. > **NOTE** > - This topic describes only system APIs provided by the module. For details about its public APIs, see > [@ohos.app.form.formInfo (formInfo)](arkts-app-form-forminfo.md).
+The **formInfo** module provides types and enums related to the widget information and state.
+
+> **NOTE**
+
+> - This topic describes only system APIs provided by the module. For details about its public APIs, see
+> [@ohos.app.form.formInfo (formInfo)](arkts-app-form-forminfo.md).
 
 **Since:** 9
 
@@ -19,7 +24,7 @@ import { formInfo } from '@kit.FormKit';
 | Name | Description |
 | --- | --- |
 | [FormInfo](arkts-form-forminfo-i.md) | Provides information about a form. |
-| [FormInfoFilter](arkts-form-forminfofilter-i.md) | The optional options used as filters to ask getFormsInfo to return formInfos from only forms that match the options. |
+| [FormInfoFilter](arkts-form-forminfofilter-i.md) | The optional options used as filters to askgetFormsInfo to return formInfos from only forms that match the options. |
 | [FormStateInfo](arkts-form-formstateinfo-i.md) | Provides state information about a form. |
 | [OverflowInfo](arkts-form-overflowinfo-i.md) | Provides OverflowInfo about funInteraction or sceneAnimation form |
 | [Rect](arkts-form-rect-i.md) | Indicates rectangle, unit is vp. |
@@ -32,7 +37,7 @@ import { formInfo } from '@kit.FormKit';
 | [ChangeSceneAnimationStateRequest](arkts-form-changesceneanimationstaterequest-i-sys.md) | ChangeSceneAnimationStateRequest |
 | [FormCustomConfig](arkts-form-formcustomconfig-i-sys.md) | FormCustomConfig |
 | [FormInfo](arkts-form-forminfo-i-sys.md) | Provides information about a form. |
-| [FormInfoFilter](arkts-form-forminfofilter-i-sys.md) | The optional options used as filters to ask getFormsInfo to return formInfos from only forms that match the options. |
+| [FormInfoFilter](arkts-form-forminfofilter-i-sys.md) | The optional options used as filters to askgetFormsInfo to return formInfos from only forms that match the options. |
 | [FormProviderFilter](arkts-form-formproviderfilter-i-sys.md) | Information about a running form. |
 | [FunInteractionParams](arkts-form-funinteractionparams-i-sys.md) | The fun interaction form params. |
 | [OverflowRequest](arkts-form-overflowrequest-i-sys.md) | Provides OverflowRequest about request/cancel form's overflow |

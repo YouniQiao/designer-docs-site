@@ -1,6 +1,8 @@
 # Badge properties/events
 
-The [universal attributes](../../../../reference/apis-arkui/arkui-ts/ts-component-general-attributes.md) are supported. The [universal events](../../../../reference/apis-arkui/arkui-ts/ts-component-general-events.md) are supported.
+The [universal attributes](../../../../reference/apis-arkui/arkui-ts/ts-component-general-attributes.md) are supported.
+
+The [universal events](../../../../reference/apis-arkui/arkui-ts/ts-component-general-events.md) are supported.
 
 **Inheritance/Implementation:** BadgeAttribute extends [CommonMethod<BadgeAttribute>](CommonMethod<BadgeAttribute>)
 

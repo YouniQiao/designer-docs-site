@@ -1,6 +1,8 @@
 # SideBarContainer properties/events
 
-In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following attributes are supported. In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following events are supported.
+In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following attributes are supported.
+
+In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following events are supported.
 
 **Inheritance/Implementation:** SideBarContainerAttribute extends [CommonMethod<SideBarContainerAttribute>](CommonMethod<SideBarContainerAttribute>)
 
@@ -14,7 +16,12 @@ In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkt
 autoHide(value: boolean)
 ```
 
-Specifies whether to automatically hide the sidebar when it is dragged to be smaller than the minimum width. The value is subject to the **minSideBarWidth** attribute method. If it is not set in **minSideBarWidth**, the default value is used. Whether the sidebar should be hidden is determined when it is being dragged. When it is dragged to be smaller than the minimum width, the damping effect is required to trigger hiding (a distance out of range).
+Specifies whether to automatically hide the sidebar when it is dragged to be smaller than the minimum width. The
+value is subject to the **minSideBarWidth** attribute method. If it is not set in **minSideBarWidth**, the default
+value is used.
+
+Whether the sidebar should be hidden is determined when it is being dragged. When it is dragged to be smaller than
+the minimum width, the damping effect is required to trigger hiding (a distance out of range).
 
 **Since:** 9
 
@@ -76,7 +83,12 @@ Sets the divider style.
 maxSideBarWidth(value: number)
 ```
 
-Sets the maximum width of the sidebar. If a value less than 0 is set, the default value is used. The value cannot exceed the width of the sidebar container. If the specified value exceeds the sidebar container width, the container width is used instead. **maxSideBarWidth**, whether it is specified or kept at the default value, takes precedence over **maxWidth** of the sidebar child components.
+Sets the maximum width of the sidebar. If a value less than 0 is set, the default value is used. The value cannot
+exceed the width of the sidebar container. If the specified value exceeds the sidebar container width, the
+container width is used instead.
+
+**maxSideBarWidth**, whether it is specified or kept at the default value, takes precedence over **maxWidth** of
+the sidebar child components.
 
 **Since:** 8
 
@@ -96,7 +108,14 @@ Sets the maximum width of the sidebar. If a value less than 0 is set, the defaul
 maxSideBarWidth(value: Length)
 ```
 
-Sets the maximum width of the sidebar. If a value less than 0 is set, the default value is used. The value cannot exceed the width of the sidebar container. If the specified value exceeds the sidebar container width, the container width is used instead. Compared with [maxSideBarWidth](SideBarContainerAttribute#maxSideBarWidth(value: number)), this API supports percentage strings and other [pixel units](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) for the **value** parameter. **maxSideBarWidth**, whether it is specified or kept at the default value, takes precedence over **maxWidth** of the sidebar child components.
+Sets the maximum width of the sidebar. If a value less than 0 is set, the default value is used. The value cannot
+exceed the width of the sidebar container. If the specified value exceeds the sidebar container width, the
+container width is used instead. Compared with
+[maxSideBarWidth](SideBarContainerAttribute#maxSideBarWidth(value: number)), this API supports percentage
+strings and other [pixel units](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) for the **value** parameter.
+
+**maxSideBarWidth**, whether it is specified or kept at the default value, takes precedence over **maxWidth** of
+the sidebar child components.
 
 **Since:** 9
 
@@ -116,7 +135,29 @@ Sets the maximum width of the sidebar. If a value less than 0 is set, the defaul
 minContentWidth(value: Dimension)
 ```
 
-Sets the minimum content area width of the sidebar container. If this attribute is set to a value less than 0, the default value **360vp** will be used. If this attribute is not set, the width of the content area can shrink to 0. In Embed mode, when the component size is increased, only the content area is enlarged; when the component size is decreased, the content area is shrunk until its width reaches the value defined by **minContentWidth**; if the component size is further decreased, while respecting the **minContentWidth** settings, the sidebar is shrunk until its width reaches the value defined by **minSideBarWidth**; if the component size is further decreased, then: - If [autoHide](SideBarContainerAttribute#autoHide) is set to **false**, while retaining the [minSideBarWidth](SideBarContainerAttribute#minSideBarWidth(value: number)) and **minContentWidth** settings, the content area has its content clipped. - If **autoHide** is set to **true**, the sidebar is hidden first, and then the content area is shrunk. After its width reaches the value defined by **minContentWidth**, the content area has its content clipped. **minContentWidth** takes precedence over the [maxSideBarWidth](SideBarContainerAttribute#maxSideBarWidth(value: number)) and **sideBarWidth** attributes of the sidebar. If **minContentWidth** is not set, **minSideBarWidth** and **maxSideBarWidth** take precedence over its default value.
+Sets the minimum content area width of the sidebar container.
+
+If this attribute is set to a value less than 0, the default value **360vp** will be used. If this attribute is not
+set, the width of the content area can shrink to 0.
+
+In Embed mode, when the component size is increased, only the content area is enlarged;
+
+when the component size is decreased, the content area is shrunk until its width reaches the value defined by
+**minContentWidth**; if the component size is further decreased, while respecting the **minContentWidth** settings,
+the sidebar is shrunk
+
+until its width reaches the value defined by **minSideBarWidth**; if the component size is further decreased, then:
+
+- If [autoHide](SideBarContainerAttribute#autoHide) is set to **false**, while retaining the
+[minSideBarWidth](SideBarContainerAttribute#minSideBarWidth(value: number)) and **minContentWidth** settings,
+the content area has its content clipped.
+- If **autoHide** is set to **true**, the sidebar is hidden first, and then the content area is shrunk. After its
+width reaches the value defined by **minContentWidth**, the content area has its content clipped.
+
+**minContentWidth** takes precedence over the
+[maxSideBarWidth](SideBarContainerAttribute#maxSideBarWidth(value: number)) and **sideBarWidth** attributes
+of the sidebar. If **minContentWidth** is not set, **minSideBarWidth** and **maxSideBarWidth** take precedence over
+its default value.
 
 **Since:** 10
 
@@ -138,7 +179,12 @@ Sets the minimum content area width of the sidebar container. If this attribute 
 minSideBarWidth(value: number)
 ```
 
-Sets the minimum width of the sidebar. If a value less than 0 is set, the default value is used. The value cannot exceed the width of the sidebar container. If the specified value exceeds the sidebar container width, the container width is used instead. **minSideBarWidth**, whether it is specified or kept at the default value, takes precedence over **minWidth** of the sidebar child components.
+Sets the minimum width of the sidebar. If a value less than 0 is set, the default value is used. The value cannot
+exceed the width of the sidebar container. If the specified value exceeds the sidebar container width, the
+container width is used instead.
+
+**minSideBarWidth**, whether it is specified or kept at the default value, takes precedence over **minWidth** of
+the sidebar child components.
 
 **Since:** 8
 
@@ -158,7 +204,14 @@ Sets the minimum width of the sidebar. If a value less than 0 is set, the defaul
 minSideBarWidth(value: Length)
 ```
 
-Sets the minimum width of the sidebar. If a value less than 0 is set, the default value is used. The value cannot exceed the width of the sidebar container. If the specified value exceeds the sidebar container width, the container width is used instead. Compared to [minSideBarWidth](SideBarContainerAttribute#minSideBarWidth(value: number)), this API supports percentage strings and other [pixel units](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) for the **value** parameter. **minSideBarWidth**, whether it is specified or kept at the default value, takes precedence over **minWidth** of the sidebar child components.
+Sets the minimum width of the sidebar. If a value less than 0 is set, the default value is used. The value cannot
+exceed the width of the sidebar container. If the specified value exceeds the sidebar container width, the
+container width is used instead. Compared to
+[minSideBarWidth](SideBarContainerAttribute#minSideBarWidth(value: number)), this API supports percentage
+strings and other [pixel units](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) for the **value** parameter.
+
+**minSideBarWidth**, whether it is specified or kept at the default value, takes precedence over **minWidth** of
+the sidebar child components.
 
 **Since:** 9
 
@@ -178,7 +231,13 @@ Sets the minimum width of the sidebar. If a value less than 0 is set, the defaul
 onChange(callback: (value: boolean) => void)
 ```
 
-Triggered when the status of the sidebar switches between shown and hidden. This event is triggered when any of the following conditions is met: 1. The value of the **showSideBar** attribute changes. 2. The adaptation of the **showSideBar** attribute changes. 3. [autoHide](SideBarContainerAttribute#autoHide) is triggered upon divider dragging.
+Triggered when the status of the sidebar switches between shown and hidden.
+
+This event is triggered when any of the following conditions is met:
+
+1. The value of the **showSideBar** attribute changes.
+2. The adaptation of the **showSideBar** attribute changes.
+3. [autoHide](SideBarContainerAttribute#autoHide) is triggered upon divider dragging.
 
 **Since:** 8
 
@@ -218,7 +277,10 @@ Specifies whether to display the sidebar control button.
 showSideBar(value: boolean)
 ```
 
-Specifies whether to display the sidebar. Since API version 10, this attribute supports two-way binding through [$$](../../../../ui/state-management/arkts-two-way-sync.md).
+Specifies whether to display the sidebar.
+
+Since API version 10, this attribute supports two-way binding through
+[$$](../../../../ui/state-management/arkts-two-way-sync.md).
 
 **Since:** 8
 
@@ -280,7 +342,11 @@ Sets the position of the sidebar.
 sideBarWidth(value: number)
 ```
 
-Sets the width of the sidebar. If a value less than 0 is set, the default value is used. The value must comply with the width constraints. If it is not within the valid range, the valid value closest to the set one is used. Since API version 18, this attribute supports two-way binding through [!!](../../../../ui/state-management/arkts-new-binding.md).
+Sets the width of the sidebar. If a value less than 0 is set, the default value is used. The value must comply with
+the width constraints. If it is not within the valid range, the valid value closest to the set one is used.
+
+Since API version 18, this attribute supports two-way binding through
+[!!](../../../../ui/state-management/arkts-new-binding.md).
 
 **Since:** 8
 
@@ -300,7 +366,13 @@ Sets the width of the sidebar. If a value less than 0 is set, the default value 
 sideBarWidth(value: Length)
 ```
 
-Sets the width of the sidebar. If a value less than 0 is set, the default value is used. The value must comply with the width constraints. If it is not within the valid range, the valid value closest to the set one is used. Compared to [sideBarWidth](SideBarContainerAttribute#sideBarWidth(value: number)), this API supports percentage strings and other [pixel units](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) for the **value** parameter. Since API version 18, this attribute supports two-way binding through [!!](../../../../ui/state-management/arkts-new-binding.md).
+Sets the width of the sidebar. If a value less than 0 is set, the default value is used. The value must comply with
+the width constraints. If it is not within the valid range, the valid value closest to the set one is used.
+Compared to [sideBarWidth](SideBarContainerAttribute#sideBarWidth(value: number)), this API supports
+percentage strings and other [pixel units](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) for the **value** parameter.
+
+Since API version 18, this attribute supports two-way binding through
+[!!](../../../../ui/state-management/arkts-new-binding.md).
 
 **Since:** 9
 

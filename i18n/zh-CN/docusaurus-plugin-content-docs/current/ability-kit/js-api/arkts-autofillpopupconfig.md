@@ -2,16 +2,20 @@
 
 ## 汇总
 
-### 接口
+<!--Del-->
+### 接口（系统接口）
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| <!--DelRow-->[AutoFillPopupConfig](arkts-autofillpopupconfig-i.md) | 自动填充气泡弹窗的尺寸和位置信息。 |
-| <!--DelRow-->[PopupSize](arkts-popupsize-i.md) | 表示气泡弹窗的宽和高。 |
+| [AutoFillPopupConfig](arkts-ability-autofillpopupconfig-i-sys.md) | 自动填充气泡弹窗的尺寸和位置信息。 |
+| [PopupSize](arkts-ability-popupsize-i-sys.md) | 表示气泡弹窗的宽和高。 |
+<!--DelEnd-->
 
-### 枚举
+<!--Del-->
+### 枚举（系统接口）
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| <!--DelRow-->[PopupPlacement](arkts-popupplacement-e.md) | 表示气泡弹窗位置的枚举。 |
+| [PopupPlacement](arkts-ability-popupplacement-e-sys.md) | 表示气泡弹窗位置的枚举。 |
+<!--DelEnd-->
 

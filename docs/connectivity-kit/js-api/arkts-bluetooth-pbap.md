@@ -18,24 +18,35 @@ import { pbap } from '@kit.ConnectivityKit';
 
 | Name | Description |
 | --- | --- |
-| [createPbapServerProfile](arkts-pbap-createpbapserverprofile-f.md#createPbapServerProfile-1) | create the instance of PBAP server profile. |
+| [createPbapServerProfile](arkts-connectivity-createpbapserverprofile-f.md#createpbapserverprofile-1) | create the instance of PBAP server profile. |
 
-### Interfaces
+<!--Del-->
+### Interfaces（系统接口）
 
 | Name | Description |
 | --- | --- |
-| [PbapServerProfile](arkts-pbap-pbapserverprofile-i.md) | Manager PBAP server profile. |
+| [PbapServerProfile](arkts-connectivity-pbapserverprofile-i-sys.md) | Manager PBAP server profile. |
+<!--DelEnd-->
+
+<!--Del-->
+### Enums（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [ShareType](arkts-connectivity-sharetype-e-sys.md) | Enum for the share type. |
+<!--DelEnd-->
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[AccessAuthorization](arkts-pbap-accessauthorization-t-sys.md) | Indicate the phone book access authorization. |
-| [BaseProfile](arkts-pbap-baseprofile-t.md) | Base interface of profile. |
+| [BaseProfile](arkts-connectivity-baseprofile-t.md) | Base interface of profile. |
 
-### Enums
+<!--Del-->
+### Types（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[ShareType](arkts-pbap-sharetype-e-sys.md) | Enum for the share type. |
+| [AccessAuthorization](arkts-connectivity-accessauthorization-t-sys.md) | Indicate the phone book access authorization. |
+<!--DelEnd-->
 

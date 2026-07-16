@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { SelectionContainerInstance, SelectionContainer, OnMenuItemClickWithTextCallback, SelectionContainerAttribute, SelectionContainerEditMenuOptions, SelectionContainerTextJoinStyle, SelectionContainerMenuOptions } from '@kit.ArkUI';
+import { SelectionContainerInstance, SelectionContainer, OnMenuItemClickWithTextCallback, SelectionContainerOptions, SelectionContainerAttribute, SelectionContainerEditMenuOptions, SelectionContainerTextJoinStyle, SelectionContainerController, SelectionContainerMenuOptions } from '@kit.ArkUI';
 ```
 
 ## Summary
@@ -13,6 +13,7 @@ import { SelectionContainerInstance, SelectionContainer, OnMenuItemClickWithText
 | Name | Description |
 | --- | --- |
 | [SelectionContainerAttribute](arkts-arkui-selectioncontainerattribute-c.md) | Defines the attributes of SelectionContainer. |
+| [SelectionContainerController](arkts-arkui-selectioncontainercontroller-c.md) | Defines the controller of the SelectionContainer component. |
 
 ### Interfaces
 
@@ -21,6 +22,7 @@ import { SelectionContainerInstance, SelectionContainer, OnMenuItemClickWithText
 | [SelectionContainerEditMenuOptions](arkts-arkui-selectioncontainereditmenuoptions-i.md) | Defines custom edit menu options for SelectionContainer. |
 | [SelectionContainerInterface](arkts-arkui-selectioncontainerinterface-i.md) | Provides a SelectionContainer component interface. |
 | [SelectionContainerMenuOptions](arkts-arkui-selectioncontainermenuoptions-i.md) | Defines selection menu options for SelectionContainer. |
+| [SelectionContainerOptions](arkts-arkui-selectioncontaineroptions-i.md) | Describes the initialization options of the SelectionContainer component. |
 
 ### Enums
 

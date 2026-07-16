@@ -1,6 +1,10 @@
 # List属性/事件
 
-除支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)和[滚动组件通用属性](../../../../reference/apis-arkui/arkui-ts/ts-container-scrollable-common.md#属性)外，还支持 以下属性： 除支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)和[滚动组件通用事件](../../../../reference/apis-arkui/arkui-ts/ts-container-scrollable-common.md#事件)外，还支持 以下事件：
+除支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)和[滚动组件通用属性](../../../../reference/apis-arkui/arkui-ts/ts-container-scrollable-common.md#属性)外，还支持
+以下属性：
+
+除支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)和[滚动组件通用事件](../../../../reference/apis-arkui/arkui-ts/ts-container-scrollable-common.md#事件)外，还支持
+以下事件：
 
 **继承/实现关系：** ListAttribute extends [ScrollableCommonMethod<ListAttribute>](ScrollableCommonMethod<ListAttribute>)
 
@@ -58,7 +62,14 @@ backPressBehavior(behavior: ListBackPressBehavior | undefined)
 cachedCount(value: number)
 ```
 
-设置列表中ListItem/ListItemGroup的预加载数量，懒加载场景只会预加载List显示区域外上下各cachedCount行的ListItem，非懒加载场景会全部加载。懒加载、非懒加载都只布局List显示区域+List 显示区域外cachedCount的内容。<!--Del-->具体使用可参考 [减少应用白块说明](../../../../performance/arkts-performance-improvement-recommendation.md#减少应用滑动白块)。<!--DelEnd--> List设置cachedCount后，显示区域外上下各会预加载并布局cachedCount行ListItem。计算ListItem行数时，会计算ListItemGroup内部的ListItem行数。如果ListItemGroup内 没有ListItem，则整个ListItemGroup算一行。 List下嵌套使用LazyForEach，并且LazyForEach下嵌套使用ListItemGroup时，LazyForEach会在List显示区域外上下各会创建cachedCount个ListItemGroup。
+设置列表中ListItem/ListItemGroup的预加载数量，懒加载场景只会预加载List显示区域外上下各cachedCount行的ListItem，非懒加载场景会全部加载。懒加载、非懒加载都只布局List显示区域+List
+显示区域外cachedCount的内容。<!--Del-->具体使用可参考
+[减少应用白块说明](../../../../performance/arkts-performance-improvement-recommendation.md#减少应用滑动白块)。<!--DelEnd-->
+
+List设置cachedCount后，显示区域外上下各会预加载并布局cachedCount行ListItem。计算ListItem行数时，会计算ListItemGroup内部的ListItem行数。如果ListItemGroup内
+没有ListItem，则整个ListItemGroup算一行。
+
+List下嵌套使用LazyForEach，并且LazyForEach下嵌套使用ListItemGroup时，LazyForEach会在List显示区域外上下各会创建cachedCount个ListItemGroup。
 
 **起始版本：** 7
 
@@ -80,7 +91,16 @@ cachedCount(value: number)
 cachedCount(count: number, show: boolean)
 ```
 
-设置列表中ListItem/ListItemGroup的预加载数量，并配置是否显示预加载节点。 List设置cachedCount后，显示区域外上下各会预加载并布局cachedCount行ListItem。计算ListItem行数时，会计算ListItemGroup内部的ListItem行数。如果ListItemGroup内 没有ListItem，则整个ListItemGroup算一行。配合裁剪[clip](arkts-arkui-commonmethod-c.md#clip-1)或内容裁剪 [clipContent](../../../../reference/apis-arkui/arkui-ts/ts-container-scrollable-common.md#clipcontent14)属性可以显示出预加载节点。 > **说明：** > > 通常建议设置cachedCount=n/2（n代表一屏显示的列表项数量），同时需考虑其他因素以实现体验和内存使用的平衡。最佳实践请参考 > [优化长列表加载慢丢帧问题-缓存列表项](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-best-practices-long-list#section11667144010222)
+设置列表中ListItem/ListItemGroup的预加载数量，并配置是否显示预加载节点。
+
+List设置cachedCount后，显示区域外上下各会预加载并布局cachedCount行ListItem。计算ListItem行数时，会计算ListItemGroup内部的ListItem行数。如果ListItemGroup内
+没有ListItem，则整个ListItemGroup算一行。配合裁剪[clip](arkts-arkui-commonmethod-c.md#clip-1)或内容裁剪
+[clipContent](../../../../reference/apis-arkui/arkui-ts/ts-container-scrollable-common.md#clipcontent14)属性可以显示出预加载节点。
+
+> **说明：**
+>
+> 通常建议设置cachedCount=n/2（n代表一屏显示的列表项数量），同时需考虑其他因素以实现体验和内存使用的平衡。最佳实践请参考
+> [优化长列表加载慢丢帧问题-缓存列表项](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-best-practices-long-list#section11667144010222)
 
 **起始版本：** 14
 
@@ -105,7 +125,24 @@ cachedCount(count: number, show: boolean)
 cachedCount(count: number | CacheCountInfo, show: boolean)
 ```
 
-设置列表中ListItem/ListItemGroup的预加载数量，并配置是否显示预加载节点。 若cachedCount属性的第一个参数为number类型，在帧间空闲时隙会在显示区域外上下各预加载并布局count行ListItem。 若cachedCount属性的第一个参数为CacheCountInfo类型，当已缓存行数小于CacheCountInfo.minCount时，会在帧间空闲时隙预加载和布局。当已缓存行数大于 CacheCountInfo.maxCount时，会将超出范围的节点销毁或回收复用。UI空闲时（无动画或用户操作），会在显示区域外上下各预加载CacheCountInfo.maxCount行ListItem。 在计算ListItem行数时，会计算ListItemGroup内部的ListItem行数。如果ListItemGroup内没有ListItem，则整个ListItemGroup算一行。配合 [clip](arkts-arkui-commonmethod-c.md#clip-1)或 [clipContent](../../../../reference/apis-arkui/arkui-ts/ts-container-scrollable-common.md#clipcontent14)属性可以显示出预加载节点。 默认行为：count参数默认为number类型，数值根据屏幕内显示的节点个数设置，最大值为16。预加载的ListItem默认不参与绘制。 > **说明：** > > 通常建议设置cachedCount=n/2（n代表一屏显示的列表项数量），同时需考虑其他因素以实现体验和内存使用的平衡。从API version 22开始，支持设置最大最小缓存数，可以将最大缓存数设置稍大，如设置为最小缓存数的 > 两倍，利用UI线程空闲时间创建节点，减少滚动过程中预加载创建节点，提升滚动流畅性。最佳实践请参考 > [优化长列表加载慢丢帧问题-缓存列表项](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-best-practices-long-list#section11667144010222)
+设置列表中ListItem/ListItemGroup的预加载数量，并配置是否显示预加载节点。
+
+若cachedCount属性的第一个参数为number类型，在帧间空闲时隙会在显示区域外上下各预加载并布局count行ListItem。
+
+若cachedCount属性的第一个参数为CacheCountInfo类型，当已缓存行数小于CacheCountInfo.minCount时，会在帧间空闲时隙预加载和布局。当已缓存行数大于
+CacheCountInfo.maxCount时，会将超出范围的节点销毁或回收复用。UI空闲时（无动画或用户操作），会在显示区域外上下各预加载CacheCountInfo.maxCount行ListItem。
+
+在计算ListItem行数时，会计算ListItemGroup内部的ListItem行数。如果ListItemGroup内没有ListItem，则整个ListItemGroup算一行。配合
+[clip](arkts-arkui-commonmethod-c.md#clip-1)或
+[clipContent](../../../../reference/apis-arkui/arkui-ts/ts-container-scrollable-common.md#clipcontent14)属性可以显示出预加载节点。
+
+默认行为：count参数默认为number类型，数值根据屏幕内显示的节点个数设置，最大值为16。预加载的ListItem默认不参与绘制。
+
+> **说明：**
+>
+> 通常建议设置cachedCount=n/2（n代表一屏显示的列表项数量），同时需考虑其他因素以实现体验和内存使用的平衡。从API version 22开始，支持设置最大最小缓存数，可以将最大缓存数设置稍大，如设置为最小缓存数的
+> 两倍，利用UI线程空闲时间创建节点，减少滚动过程中预加载创建节点，提升滚动流畅性。最佳实践请参考
+> [优化长列表加载慢丢帧问题-缓存列表项](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-best-practices-long-list#section11667144010222)
 
 **起始版本：** 22
 
@@ -130,7 +167,17 @@ cachedCount(count: number | CacheCountInfo, show: boolean)
 chainAnimation(value: boolean)
 ```
 
-设置当前List是否启用链式联动动效。 > **说明：** > > - 链式联动效果是指在手指划动过程中，手指拖动的ListItem是主动对象，相邻的ListItem为从动对象，主动对象驱动从动对象联动，驱动效果遵循弹簧物理动效。 > > - 链式动效的驱动效果体现在ListItem之间的间距上。静止状态下的间距可以通过List组件space参数设置，如果不设置space参数并且启用了链式动效，该间距默认为20vp。 > > - 链式动效启用后，List的分割线不显示。 > > - 链式动效生效的前提是List处于单列模式并且边缘效果为EdgeEffect.Spring类型。
+设置当前List是否启用链式联动动效。
+
+> **说明：**
+>
+> - 链式联动效果是指在手指划动过程中，手指拖动的ListItem是主动对象，相邻的ListItem为从动对象，主动对象驱动从动对象联动，驱动效果遵循弹簧物理动效。
+>
+> - 链式动效的驱动效果体现在ListItem之间的间距上。静止状态下的间距可以通过List组件space参数设置，如果不设置space参数并且启用了链式动效，该间距默认为20vp。
+>
+> - 链式动效启用后，List的分割线不显示。
+>
+> - 链式动效生效的前提是List处于单列模式并且边缘效果为EdgeEffect.Spring类型。
 
 **起始版本：** 7
 
@@ -152,7 +199,21 @@ chainAnimation(value: boolean)
 childrenMainSize(value: ChildrenMainSize)
 ```
 
-设置List组件的子组件在主轴方向的大小信息。 > **说明：** > > - 该属性通过向List组件提供所有子组件在主轴方向的大小信息，确保在面对子组件主轴大小不一致、增删子组件、使用[scrollToIndex](arkts-arkui-scroller-c.md#scrolltoindex-1)等场景时，List组件能 > 够维护其滑动位置准确性。这样，[scrollTo](arkts-arkui-scroller-c.md#scrollto-1)可以准确的跳转到指定位置，[currentOffset](arkts-arkui-scroller-c.md#currentoffset-1)可以获取到 > 当前准确的滑动位置，内置滚动条可以实现平滑移动无跳变。 > > - 当子组件是ListItemGroup时，需要根据ListItemGroup的列数、ListItemGroup中ListItem在主轴方向的间距以及ListItemGroup中header、footer和ListItem的大 > 小，来准确计算出ListItemGroup在主轴方向的整体大小，并传递给List组件。 > > - 如果子组件有ListItemGroup，必须为每一个ListItemGroup设置[childrenMainSize](ListItemGroupAttribute#childrenMainSize)属性。 > List组件和每一个ListItemGroup组件都要通过childrenMainSize属性接口一对一绑定一个ChildrenMainSize对象。 > > - 多列场景使用LazyForEach生成子组件时，需确保LazyForEach全部生成ListItemGroup组件或者全部生成ListItem组件。
+设置List组件的子组件在主轴方向的大小信息。
+
+> **说明：**
+>
+> - 该属性通过向List组件提供所有子组件在主轴方向的大小信息，确保在面对子组件主轴大小不一致、增删子组件、使用[scrollToIndex](arkts-arkui-scroller-c.md#scrolltoindex-1)等场景时，List组件能
+> 够维护其滑动位置准确性。这样，[scrollTo](arkts-arkui-scroller-c.md#scrollto-1)可以准确的跳转到指定位置，[currentOffset](arkts-arkui-scroller-c.md#currentoffset-1)可以获取到
+> 当前准确的滑动位置，内置滚动条可以实现平滑移动无跳变。
+>
+> - 当子组件是ListItemGroup时，需要根据ListItemGroup的列数、ListItemGroup中ListItem在主轴方向的间距以及ListItemGroup中header、footer和ListItem的大
+> 小，来准确计算出ListItemGroup在主轴方向的整体大小，并传递给List组件。
+>
+> - 如果子组件有ListItemGroup，必须为每一个ListItemGroup设置[childrenMainSize](ListItemGroupAttribute#childrenMainSize)属性。
+> List组件和每一个ListItemGroup组件都要通过childrenMainSize属性接口一对一绑定一个ChildrenMainSize对象。
+>
+> - 多列场景使用LazyForEach生成子组件时，需确保LazyForEach全部生成ListItemGroup组件或者全部生成ListItem组件。
 
 **起始版本：** 12
 
@@ -174,7 +235,9 @@ childrenMainSize(value: ChildrenMainSize)
 contentEndOffset(value: number)
 ```
 
-设置内容区末尾偏移量。列表滚动到末尾位置时，列表内容与列表显示区域边界保留指定距离。 contentStartOffset + contentEndOffset超过List内容区长度后contentStartOffset和contentEndOffset会置0。
+设置内容区末尾偏移量。列表滚动到末尾位置时，列表内容与列表显示区域边界保留指定距离。
+
+contentStartOffset + contentEndOffset超过List内容区长度后contentStartOffset和contentEndOffset会置0。
 
 **起始版本：** 11
 
@@ -196,7 +259,11 @@ contentEndOffset(value: number)
 contentEndOffset(offset: number | Resource)
 ```
 
-设置内容区末尾偏移量。列表滚动到末尾位置时，列表内容与列表显示区域边界保留指定距离。与 [contentEndOffset<sup>11+</sup>](ListAttribute#contentEndOffset(value: number))相比，参数名改为offset，并开始支持Resource类 型。 contentStartOffset + contentEndOffset超过List内容区长度后contentStartOffset和contentEndOffset会置0。
+设置内容区末尾偏移量。列表滚动到末尾位置时，列表内容与列表显示区域边界保留指定距离。与
+[contentEndOffset<sup>11+</sup>](ListAttribute#contentEndOffset(value: number))相比，参数名改为offset，并开始支持Resource类
+型。
+
+contentStartOffset + contentEndOffset超过List内容区长度后contentStartOffset和contentEndOffset会置0。
 
 **起始版本：** 22
 
@@ -218,7 +285,9 @@ contentEndOffset(offset: number | Resource)
 contentStartOffset(value: number)
 ```
 
-设置内容区域起始偏移量。列表滚动到起始位置时，列表内容与列表显示区域边界保留指定距离。 contentStartOffset + contentEndOffset超过List内容区长度后contentStartOffset和contentEndOffset会置0。
+设置内容区域起始偏移量。列表滚动到起始位置时，列表内容与列表显示区域边界保留指定距离。
+
+contentStartOffset + contentEndOffset超过List内容区长度后contentStartOffset和contentEndOffset会置0。
 
 **起始版本：** 11
 
@@ -240,7 +309,11 @@ contentStartOffset(value: number)
 contentStartOffset(offset: number | Resource)
 ```
 
-设置内容区域起始偏移量。列表滚动到起始位置时，列表内容与列表显示区域边界保留指定距离。与 [contentStartOffset<sup>11+</sup>](ListAttribute#contentStartOffset(value: number))相比，参数名改为offset，并开始支持 Resource类型。 contentStartOffset + contentEndOffset超过List内容区长度后contentStartOffset和contentEndOffset会置0。
+设置内容区域起始偏移量。列表滚动到起始位置时，列表内容与列表显示区域边界保留指定距离。与
+[contentStartOffset<sup>11+</sup>](ListAttribute#contentStartOffset(value: number))相比，参数名改为offset，并开始支持
+Resource类型。
+
+contentStartOffset + contentEndOffset超过List内容区长度后contentStartOffset和contentEndOffset会置0。
 
 **起始版本：** 22
 
@@ -264,7 +337,13 @@ divider(
   )
 ```
 
-设置ListItem分割线样式，默认无分割线。 List的分割线画在主轴方向两个子组件之间，第一个子组件上方和最后一个子组件下方不会绘制分割线。 多列模式下，ListItem与ListItem之间的分割线起始边距从每一列的交叉轴方向起始边开始计算，单列模式从List交叉轴方向起始边开始计算。 ListItem设置[多态样式](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)时，被按压的子组件上下的分割线不绘制。
+设置ListItem分割线样式，默认无分割线。
+
+List的分割线画在主轴方向两个子组件之间，第一个子组件上方和最后一个子组件下方不会绘制分割线。
+
+多列模式下，ListItem与ListItem之间的分割线起始边距从每一列的交叉轴方向起始边开始计算，单列模式从List交叉轴方向起始边开始计算。
+
+ListItem设置[多态样式](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)时，被按压的子组件上下的分割线不绘制。
 
 **起始版本：** 7
 
@@ -286,7 +365,11 @@ divider(
 edgeEffect(value: EdgeEffect, options?: EdgeEffectOptions)
 ```
 
-设置边缘滑动效果。 > **说明：** > > 当List组件的内容区小于一屏时，默认没有回弹效果。若要启用回弹效果，可以通过设置edgeEffect属性的options参数为{ alwaysEnabled: true }来实现。
+设置边缘滑动效果。
+
+> **说明：**
+>
+> 当List组件的内容区小于一屏时，默认没有回弹效果。若要启用回弹效果，可以通过设置edgeEffect属性的options参数为{ alwaysEnabled: true }来实现。
 
 **起始版本：** 7
 
@@ -309,7 +392,11 @@ edgeEffect(value: EdgeEffect, options?: EdgeEffectOptions)
 editMode(value: boolean)
 ```
 
-设置当前List组件是否处于可编辑模式。可参考[示例3](../../../../reference/apis-arkui/arkui-ts/ts-container-list.md#示例3设置编辑模式)实现删除选中的list项。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃，无替代接口。
+设置当前List组件是否处于可编辑模式。可参考[示例3](../../../../reference/apis-arkui/arkui-ts/ts-container-list.md#示例3设置编辑模式)实现删除选中的list项。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃，无替代接口。
 
 **起始版本：** 7
 
@@ -439,7 +526,16 @@ friction(value: number | Resource)
 lanes(value: number | LengthConstrain, gutter?: Dimension)
 ```
 
-设置List组件的布局列数或行数（List垂直滚动时表示列数，水平滚动时表示行数）。 以列数作为示例，介绍设置规则如下： - value为number类型时，根据number类型数值指定列数。 - value为LengthConstrain类型时，LengthConstrain中的minLength表示最小列宽，List组件会根据自身宽度在满足最小列宽情况下计算最大列数。同时，LengthConstrain会作为最大最小 布局宽度约束传递给List的子组件，子组件没有设置宽度时会生效该最大最小布局约束。 - &nbsp;ListItemGroup在多列模式下也是独占一行，ListItemGroup中的ListItem按照List组件的lanes属性设置值来布局。 - value为LengthConstrain类型时，计算ListItemGroup中的列数时会按照ListItemGroup的自身宽度计算。因此ListItemGroup宽度与List宽度不一致时，ListItemGroup中的 列数与List中的列数可能不一样。
+设置List组件的布局列数或行数（List垂直滚动时表示列数，水平滚动时表示行数）。
+
+以列数作为示例，介绍设置规则如下：
+
+- value为number类型时，根据number类型数值指定列数。
+- value为LengthConstrain类型时，LengthConstrain中的minLength表示最小列宽，List组件会根据自身宽度在满足最小列宽情况下计算最大列数。同时，LengthConstrain会作为最大最小
+布局宽度约束传递给List的子组件，子组件没有设置宽度时会生效该最大最小布局约束。
+- &nbsp;ListItemGroup在多列模式下也是独占一行，ListItemGroup中的ListItem按照List组件的lanes属性设置值来布局。
+- value为LengthConstrain类型时，计算ListItemGroup中的列数时会按照ListItemGroup的自身宽度计算。因此ListItemGroup宽度与List宽度不一致时，ListItemGroup中的
+列数与List中的列数可能不一样。
 
 **起始版本：** 9
 
@@ -677,7 +773,17 @@ onItemDragMove(event: (event: ItemDragInfo, itemIndex: number, insertIndex: numb
 onItemDragStart(event: OnItemDragStartCallback)
 ```
 
-开始拖拽列表元素时触发。 不支持拖动到List边缘时触发List的自动滚动，可以使用ForEach、LazyForEach、Repeat的 [onMove](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-drag-sorting.md#onmove)接口实现该效果，参考 [示例12（使用OnMove进行拖拽）](../../../../reference/apis-arkui/arkui-ts/ts-container-list.md#示例12使用onmove进行拖拽)。但需注意 [onMove](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-drag-sorting.md#onmove)接口不支持跨ListItemGroup 拖拽。 > **说明：** > > 从API version 14开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+开始拖拽列表元素时触发。
+
+不支持拖动到List边缘时触发List的自动滚动，可以使用ForEach、LazyForEach、Repeat的
+[onMove](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-drag-sorting.md#onmove)接口实现该效果，参考
+[示例12（使用OnMove进行拖拽）](../../../../reference/apis-arkui/arkui-ts/ts-container-list.md#示例12使用onmove进行拖拽)。但需注意
+[onMove](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-drag-sorting.md#onmove)接口不支持跨ListItemGroup
+拖拽。
+
+> **说明：**
+>
+> 从API version 14开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 8
 
@@ -697,7 +803,8 @@ onItemDragStart(event: OnItemDragStartCallback)
 onItemDrop(event: (event: ItemDragInfo, itemIndex: number, insertIndex: number, isSuccess: boolean) => void)
 ```
 
-绑定该事件的列表可作为拖拽释放目标，当在列表范围内停止拖拽时触发。 跨List拖拽时，当拖拽释放的位置绑定了onItemDrop时isSuccess为true，否则为false。List内部拖拽时，isSuccess为onItemMove事件的返回值。
+绑定该事件的列表可作为拖拽释放目标，当在列表范围内停止拖拽时触发。
+跨List拖拽时，当拖拽释放的位置绑定了onItemDrop时isSuccess为true，否则为false。List内部拖拽时，isSuccess为onItemMove事件的返回值。
 
 **起始版本：** 8
 
@@ -737,7 +844,11 @@ onItemMove(event: (from: number, to: number) => boolean)
 onReachEnd(event: () => void)
 ```
 
-列表到达末尾位置时触发事件。当最后一个子组件因滚动或内容/布局变化出现在列表视窗中时，触发此回调。 当子组件未撑满列表，无须滚动即可直接在列表内完整展示时，首次加载也会触发此事件。 List边缘效果为弹簧效果时，划动经过末尾位置时触发一次，回弹回末尾位置时再触发一次。
+列表到达末尾位置时触发事件。当最后一个子组件因滚动或内容/布局变化出现在列表视窗中时，触发此回调。
+
+当子组件未撑满列表，无须滚动即可直接在列表内完整展示时，首次加载也会触发此事件。
+
+List边缘效果为弹簧效果时，划动经过末尾位置时触发一次，回弹回末尾位置时再触发一次。
 
 **起始版本：** 7
 
@@ -759,7 +870,9 @@ onReachEnd(event: () => void)
 onReachStart(event: () => void)
 ```
 
-列表到达起始位置时触发。 List初始化时如果initialIndex为0会触发一次，List滚动到起始位置时触发一次。List边缘效果为弹簧效果时，划动经过起始位置时触发一次，回弹回起始位置时再触发一次。
+列表到达起始位置时触发。
+
+List初始化时如果initialIndex为0会触发一次，List滚动到起始位置时触发一次。List边缘效果为弹簧效果时，划动经过起始位置时触发一次，回弹回起始位置时再触发一次。
 
 **起始版本：** 7
 
@@ -781,7 +894,12 @@ onReachStart(event: () => void)
 onScroll(event: (scrollOffset: number, scrollState: ScrollState) => void)
 ```
 
-列表滑动时触发。 > **说明：** > > 从API version 7开始支持，从API version 12开始废弃，建议使用 > [onDidScroll](../../../../reference/apis-arkui/arkui-ts/ts-container-scrollable-common.md#ondidscroll12)替代。
+列表滑动时触发。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 12开始废弃，建议使用
+> [onDidScroll](../../../../reference/apis-arkui/arkui-ts/ts-container-scrollable-common.md#ondidscroll12)替代。
 
 **起始版本：** 7
 
@@ -807,7 +925,21 @@ onScroll(event: (scrollOffset: number, scrollState: ScrollState) => void)
 onScrollFrameBegin(event: OnScrollFrameBeginCallback)
 ```
 
-该接口回调时，事件参数传入即将发生的滑动量，事件处理函数中可根据应用场景计算实际需要的滑动量并作为事件处理函数的返回值返回，列表将按照返回值的实际滑动量进行滑动。 当listDirection的值为Axis.Vertical时，返回垂直方向滑动量，当listDirection的值为Axis.Horizontal时，返回水平方向滑动量。 满足以下任一条件时触发该事件： 1. 用户交互（如手指滑动、键鼠操作等）触发滚动。 2. List惯性滚动。 3. 调用[fling](arkts-arkui-scroller-c.md#fling-1)接口触发滚动。 不触发该事件的条件： 1. 调用除[fling](arkts-arkui-scroller-c.md#fling-1)接口外的其他滚动控制接口。 2. 越界回弹。 3. 拖动滚动条。
+该接口回调时，事件参数传入即将发生的滑动量，事件处理函数中可根据应用场景计算实际需要的滑动量并作为事件处理函数的返回值返回，列表将按照返回值的实际滑动量进行滑动。
+
+当listDirection的值为Axis.Vertical时，返回垂直方向滑动量，当listDirection的值为Axis.Horizontal时，返回水平方向滑动量。
+
+满足以下任一条件时触发该事件：
+
+1. 用户交互（如手指滑动、键鼠操作等）触发滚动。
+2. List惯性滚动。
+3. 调用[fling](arkts-arkui-scroller-c.md#fling-1)接口触发滚动。
+
+不触发该事件的条件：
+
+1. 调用除[fling](arkts-arkui-scroller-c.md#fling-1)接口外的其他滚动控制接口。
+2. 越界回弹。
+3. 拖动滚动条。
 
 **起始版本：** 9
 
@@ -829,7 +961,11 @@ onScrollFrameBegin(event: OnScrollFrameBeginCallback)
 onScrollIndex(event: (start: number, end: number, center: number) => void)
 ```
 
-有子组件划入或划出List显示区域时触发。计算索引值时，ListItemGroup作为一个整体占一个索引值，不计算ListItemGroup内部ListItem的索引值。 List的边缘效果为弹簧效果时，在List划动到边缘继续划动和松手回弹过程不会触发onScrollIndex事件。 触发该事件的条件：列表初始化时会触发一次，List显示区域内第一个子组件的索引值或最后一个子组件的索引值有变化时会触发。
+有子组件划入或划出List显示区域时触发。计算索引值时，ListItemGroup作为一个整体占一个索引值，不计算ListItemGroup内部ListItem的索引值。
+
+List的边缘效果为弹簧效果时，在List划动到边缘继续划动和松手回弹过程不会触发onScrollIndex事件。
+
+触发该事件的条件：列表初始化时会触发一次，List显示区域内第一个子组件的索引值或最后一个子组件的索引值有变化时会触发。
 
 **起始版本：** 7
 
@@ -895,7 +1031,11 @@ onScrollStop(event: () => void)
 onScrollVisibleContentChange(handler: OnScrollVisibleContentChangeCallback)
 ```
 
-有子组件划入或划出List显示区域时触发。计算触发条件时，每一个ListItem、ListItemGroup中的header或footer都算一个子组件。 List的边缘效果为弹簧效果时，在List划动到边缘继续划动和松手回弹过程不会触发onScrollVisibleContentChange事件。 触发该事件的条件：列表初始化时会触发一次，List显示区域内第一个子组件的索引值或最后一个子组件的索引值有变化时会触发。
+有子组件划入或划出List显示区域时触发。计算触发条件时，每一个ListItem、ListItemGroup中的header或footer都算一个子组件。
+
+List的边缘效果为弹簧效果时，在List划动到边缘继续划动和松手回弹过程不会触发onScrollVisibleContentChange事件。
+
+触发该事件的条件：列表初始化时会触发一次，List显示区域内第一个子组件的索引值或最后一个子组件的索引值有变化时会触发。
 
 **起始版本：** 12
 
@@ -939,7 +1079,11 @@ scrollBar(value: BarState)
 scrollSnapAlign(value: ScrollSnapAlign)
 ```
 
-设置列表项滚动结束对齐效果。 只支持item等高场景限位，不等高场景可能存在不准确的情况。对齐动画期间 [onWillScroll](../../../../reference/apis-arkui/arkui-ts/ts-container-scrollable-common.md#onwillscroll12)事件上报的滚动操作来源 类型为ScrollSource.FLING。
+设置列表项滚动结束对齐效果。
+
+只支持item等高场景限位，不等高场景可能存在不准确的情况。对齐动画期间
+[onWillScroll](../../../../reference/apis-arkui/arkui-ts/ts-container-scrollable-common.md#onwillscroll12)事件上报的滚动操作来源
+类型为ScrollSource.FLING。
 
 **起始版本：** 10
 
@@ -1005,7 +1149,13 @@ stackFromEnd(enabled: boolean)
 sticky(value: StickyStyle)
 ```
 
-配合[ListItemGroup](arkts-arkui-listitemgroup.md)组件使用，设置ListItemGroup中header是否要吸顶或footer是否要吸底。sticky属性可以设置为 StickyStyle.Header \| StickyStyle.Footer 以同时支持header吸顶和footer吸底。从API version 20开始，sticky属性也可以设置为StickyStyle.BOTH，以同 时支持header吸顶和footer吸底。 > **说明：** > > 由于浮点数计算精度，设置sticky后，在List滑动过程中小概率产生缝隙，可以通过[pixelRound](arkts-arkui-commonmethod-c.md#pixelround-1)指定当前组件向下像素取整解决该问题。
+配合[ListItemGroup](arkts-arkui-listitemgroup.md)组件使用，设置ListItemGroup中header是否要吸顶或footer是否要吸底。sticky属性可以设置为
+StickyStyle.Header \| StickyStyle.Footer 以同时支持header吸顶和footer吸底。从API version 20开始，sticky属性也可以设置为StickyStyle.BOTH，以同
+时支持header吸顶和footer吸底。
+
+> **说明：**
+>
+> 由于浮点数计算精度，设置sticky后，在List滑动过程中小概率产生缝隙，可以通过[pixelRound](arkts-arkui-commonmethod-c.md#pixelround-1)指定当前组件向下像素取整解决该问题。
 
 **起始版本：** 9
 
@@ -1027,7 +1177,8 @@ sticky(value: StickyStyle)
 supportEmptyBranchInLazyLoading(supported: boolean | undefined)
 ```
 
-设置当前List组件是否支持在LazyForEach或Repeat中使用if/else渲染控制语法生成不包含任何子组件的空分支节点。未设置时不支持空分支节点。此属性初次赋值后不支持更新，所以赋值后无法在支持空分支、不支持空分支行为 之间切换。
+设置当前List组件是否支持在LazyForEach或Repeat中使用if/else渲染控制语法生成不包含任何子组件的空分支节点。未设置时不支持空分支节点。此属性初次赋值后不支持更新，所以赋值后无法在支持空分支、不支持空分支行为
+之间切换。
 
 **起始版本：** 23
 

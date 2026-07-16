@@ -4,7 +4,8 @@
 export type Context = _Context.default
 ```
 
-Defines the context base class for the [stage model](../../../../application-models/ability-terminology.md#stage-model).
+Defines the context base class for the
+[stage model](../../../../application-models/ability-terminology.md#stage-model).
 
 **Since:** 9
 

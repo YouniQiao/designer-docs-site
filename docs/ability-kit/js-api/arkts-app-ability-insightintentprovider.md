@@ -18,7 +18,6 @@ import { insightIntentProvider } from '@kit.AbilityKit';
 
 | Name | Description |
 | --- | --- |
-| [sendExecuteResult](arkts-insightintentprovider-sendexecuteresult-f.md#sendExecuteResult-1) | Send execute result. |
-| [sendIntentResult](arkts-insightintentprovider-sendintentresult-f.md#sendIntentResult-1) | Send intent result. |
-| [sendIntentResult](arkts-insightintentprovider-sendintentresult-f.md#sendIntentResult-2) | Send intent result. |
+| [sendExecuteResult](arkts-ability-sendexecuteresult-f.md#sendexecuteresult-1) | Send execute result. |
+| [sendIntentResult](arkts-ability-sendintentresult-f.md#sendintentresult-1) | Send intent result. |
 

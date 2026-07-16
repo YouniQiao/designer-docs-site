@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { KeyEvent,Action,Key } from '@kit.InputKit';
+import { KeyEvent, Action, Key } from '@kit.InputKit';
 ```
 
 ## Summary
@@ -12,12 +12,12 @@ import { KeyEvent,Action,Key } from '@kit.InputKit';
 
 | Name | Description |
 | --- | --- |
-| [Key](arkts-key-i.md) | 按键。 |
-| [KeyEvent](arkts-keyevent-i.md) | 按键事件。 |
+| [Key](arkts-input-key-i.md) | Defines a key. |
+| [KeyEvent](arkts-input-keyevent-i.md) | Key event. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [Action](arkts-action-e.md) | 按键事件类型。 |
+| [Action](arkts-input-action-e.md) | Key event type. |
 

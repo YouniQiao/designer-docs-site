@@ -1,206 +1,103 @@
-# UniversalKeystoreKit
+# ArkTS API<!--arkts-universalkeystorekit-->
 
 - [@ohos.security.CryptoExtensionAbility](arkts-security-cryptoextensionability.md)
-  - [CryptoExtensionAbility](arkts-cryptoextensionability-c.md)
-  - [HuksCryptoExtensionCertInfo](arkts-hukscryptoextensioncertinfo-i.md)
-  - [HuksCryptoExtensionParam](arkts-hukscryptoextensionparam-i.md)
-  - [HuksCryptoExtensionParams](arkts-hukscryptoextensionparams-i.md)
-  - [HuksCryptoExtensionResult](arkts-hukscryptoextensionresult-i.md)
-  - [HuksCryptoExtensionResultCode](arkts-hukscryptoextensionresultcode-e.md)
-- [@ohos.security.CryptoExtensionAbility](arkts-security-cryptoextensionability.md)
-  - [CryptoExtensionAbility](arkts-cryptoextensionability-c.md)
-  - [HuksCryptoExtensionCertInfo](arkts-hukscryptoextensioncertinfo-i.md)
-  - [HuksCryptoExtensionParam](arkts-hukscryptoextensionparam-i.md)
-  - [HuksCryptoExtensionParams](arkts-hukscryptoextensionparams-i.md)
-  - [HuksCryptoExtensionResult](arkts-hukscryptoextensionresult-i.md)
-  - [HuksCryptoExtensionResultCode](arkts-hukscryptoextensionresultcode-e.md)
-- [@ohos.security.huks](arkts-security-huks.md)<!--Del-->
-  - [attestKeyItemAsUser(system api)](arkts-huks-attestkeyitemasuser-f-sys.md)<!--DelEnd--><!--Del-->
-  - [anonAttestKeyItemAsUser(system api)](arkts-huks-anonattestkeyitemasuser-f-sys.md)<!--DelEnd-->
-  - [getKeyItemProperties](arkts-huks-getkeyitemproperties-f.md)<!--Del-->
-  - [hasKeyItemAsUser(system api)](arkts-huks-haskeyitemasuser-f-sys.md)<!--DelEnd--><!--Del-->
-  - [importWrappedKeyItemAsUser(system api)](arkts-huks-importwrappedkeyitemasuser-f-sys.md)<!--DelEnd-->
-  - [update](arkts-huks-update-f.md)
-  - [exportKeyItem](arkts-huks-exportkeyitem-f.md)
-  - [decapsulate](arkts-huks-decapsulate-f.md)
-  - [isKeyExist](arkts-huks-iskeyexist-f.md)
-  - [importKeyItem](arkts-huks-importkeyitem-f.md)
-  - [deleteKeyItem](arkts-huks-deletekeyitem-f.md)<!--Del-->
-  - [anonAttestKeyItemOfflineAsUser(system api)](arkts-huks-anonattestkeyitemofflineasuser-f-sys.md)<!--DelEnd-->
-  - [getKeyProperties](arkts-huks-getkeyproperties-f.md)<!--Del-->
-  - [initSessionAsUser(system api)](arkts-huks-initsessionasuser-f-sys.md)<!--DelEnd--><!--Del-->
-  - [generateKeyItemAsUser(system api)](arkts-huks-generatekeyitemasuser-f-sys.md)<!--DelEnd--><!--Del-->
-  - [exportKeyItemAsUser(system api)](arkts-huks-exportkeyitemasuser-f-sys.md)<!--DelEnd-->
-  - [attestKeyItem](arkts-huks-attestkeyitem-f.md)
-  - [generateKeyItem](arkts-huks-generatekeyitem-f.md)
-  - [listAliases](arkts-huks-listaliases-f.md)
-  - [anonAttestKeyItem](arkts-huks-anonattestkeyitem-f.md)
-  - [initSession](arkts-huks-initsession-f.md)
-  - [finish](arkts-huks-finish-f.md)
-  - [hasKeyItem](arkts-huks-haskeyitem-f.md)
-  - [importWrappedKeyItem](arkts-huks-importwrappedkeyitem-f.md)
-  - [init](arkts-huks-init-f.md)<!--Del-->
-  - [importKeyItemAsUser(system api)](arkts-huks-importkeyitemasuser-f-sys.md)<!--DelEnd-->
-  - [wrapKeyItem](arkts-huks-wrapkeyitem-f.md)
-  - [exportKey](arkts-huks-exportkey-f.md)
-  - [anonAttestKeyItemOffline](arkts-huks-anonattestkeyitemoffline-f.md)
-  - [unwrapKeyItem](arkts-huks-unwrapkeyitem-f.md)
-  - [deleteKey](arkts-huks-deletekey-f.md)
-  - [updateSession](arkts-huks-updatesession-f.md)
-  - [importKey](arkts-huks-importkey-f.md)<!--Del-->
-  - [getKeyItemPropertiesAsUser(system api)](arkts-huks-getkeyitempropertiesasuser-f-sys.md)<!--DelEnd--><!--Del-->
-  - [deleteKeyItemAsUser(system api)](arkts-huks-deletekeyitemasuser-f-sys.md)<!--DelEnd-->
-  - [generateKey](arkts-huks-generatekey-f.md)
-  - [getSdkVersion](arkts-huks-getsdkversion-f.md)
-  - [abort](arkts-huks-abort-f.md)
-  - [finishSession](arkts-huks-finishsession-f.md)
-  - [abortSession](arkts-huks-abortsession-f.md)
-  - [isKeyItemExist](arkts-huks-iskeyitemexist-f.md)
-  - [encapsulate](arkts-huks-encapsulate-f.md)
-  - [HuksHandle](arkts-huks-hukshandle-i.md)
-  - [HuksListAliasesReturnResult](arkts-huks-hukslistaliasesreturnresult-i.md)
-  - [HuksOptions](arkts-huks-huksoptions-i.md)
-  - [HuksParam](arkts-huks-huksparam-i.md)
-  - [HuksResult](arkts-huks-huksresult-i.md)
-  - [HuksReturnResult](arkts-huks-huksreturnresult-i.md)
-  - [HuksSessionHandle](arkts-huks-hukssessionhandle-i.md)
-  - [HuksAuthAccessType](arkts-huks-huksauthaccesstype-e.md)
-  - [HuksAuthStorageLevel](arkts-huks-huksauthstoragelevel-e.md)
-  - [HuksChallengePosition](arkts-huks-hukschallengeposition-e.md)
-  - [HuksChallengeType](arkts-huks-hukschallengetype-e.md)
-  - [HuksCipherMode](arkts-huks-huksciphermode-e.md)
-  - [HuksErrorCode](arkts-huks-hukserrorcode-e.md)
-  - [HuksExceptionErrCode](arkts-huks-huksexceptionerrcode-e.md)
-  - [HuksImportKeyType](arkts-huks-huksimportkeytype-e.md)
-  - [HuksKeyAlg](arkts-huks-hukskeyalg-e.md)
-  - [HuksKeyClassType](arkts-huks-hukskeyclasstype-e.md)
-  - [HuksKeyDigest](arkts-huks-hukskeydigest-e.md)
-  - [HuksKeyFlag](arkts-huks-hukskeyflag-e.md)
-  - [HuksKeyGenerateType](arkts-huks-hukskeygeneratetype-e.md)
-  - [HuksKeyPadding](arkts-huks-hukskeypadding-e.md)
-  - [HuksKeyPurpose](arkts-huks-hukskeypurpose-e.md)
-  - [HuksKeySecurityLevel](arkts-huks-hukskeysecuritylevel-e.md)
-  - [HuksKeySize](arkts-huks-hukskeysize-e.md)
-  - [HuksKeyStorageType](arkts-huks-hukskeystoragetype-e.md)
-  - [HuksKeyWrapType](arkts-huks-hukskeywraptype-e.md)
-  - [HuksRsaPssSaltLenType](arkts-huks-huksrsapsssaltlentype-e.md)
-  - [HuksSecureSignType](arkts-huks-hukssecuresigntype-e.md)
-  - [HuksSendType](arkts-huks-hukssendtype-e.md)
-  - [HuksTag](arkts-huks-hukstag-e.md)
-  - [HuksTagType](arkts-huks-hukstagtype-e.md)
-  - [HuksUnwrapSuite](arkts-huks-huksunwrapsuite-e.md)
-  - [HuksUserAuthMode](arkts-huks-huksuserauthmode-e.md)
-  - [HuksUserAuthType](arkts-huks-huksuserauthtype-e.md)
+  - [CryptoExtensionAbility](arkts-universalkeystore-cryptoextensionability-c.md)
+  - [HuksCryptoExtensionCertInfo](arkts-universalkeystore-hukscryptoextensioncertinfo-i.md)
+  - [HuksCryptoExtensionParam](arkts-universalkeystore-hukscryptoextensionparam-i.md)
+  - [HuksCryptoExtensionParams](arkts-universalkeystore-hukscryptoextensionparams-i.md)
+  - [HuksCryptoExtensionResult](arkts-universalkeystore-hukscryptoextensionresult-i.md)
+  - [HuksCryptoExtensionResultCode](arkts-universalkeystore-hukscryptoextensionresultcode-e.md)
 - [@ohos.security.huks](arkts-security-huks.md)
-  - [huks](arkts-huks-n.md)<!--Del-->
-   - [attestKeyItemAsUser(system api)](arkts-huks-attestkeyitemasuser-f-sys.md)<!--DelEnd--><!--Del-->
-   - [anonAttestKeyItemAsUser(system api)](arkts-huks-anonattestkeyitemasuser-f-sys.md)<!--DelEnd-->
-   - [getKeyItemProperties](arkts-huks-getkeyitemproperties-f.md)<!--Del-->
-   - [hasKeyItemAsUser(system api)](arkts-huks-haskeyitemasuser-f-sys.md)<!--DelEnd--><!--Del-->
-   - [importWrappedKeyItemAsUser(system api)](arkts-huks-importwrappedkeyitemasuser-f-sys.md)<!--DelEnd-->
-   - [update](arkts-huks-update-f.md)
-   - [exportKeyItem](arkts-huks-exportkeyitem-f.md)
-   - [decapsulate](arkts-huks-decapsulate-f.md)
-   - [isKeyExist](arkts-huks-iskeyexist-f.md)
-   - [importKeyItem](arkts-huks-importkeyitem-f.md)
-   - [deleteKeyItem](arkts-huks-deletekeyitem-f.md)<!--Del-->
-   - [anonAttestKeyItemOfflineAsUser(system api)](arkts-huks-anonattestkeyitemofflineasuser-f-sys.md)<!--DelEnd-->
-   - [getKeyProperties](arkts-huks-getkeyproperties-f.md)<!--Del-->
-   - [initSessionAsUser(system api)](arkts-huks-initsessionasuser-f-sys.md)<!--DelEnd--><!--Del-->
-   - [generateKeyItemAsUser(system api)](arkts-huks-generatekeyitemasuser-f-sys.md)<!--DelEnd--><!--Del-->
-   - [exportKeyItemAsUser(system api)](arkts-huks-exportkeyitemasuser-f-sys.md)<!--DelEnd-->
-   - [attestKeyItem](arkts-huks-attestkeyitem-f.md)
-   - [generateKeyItem](arkts-huks-generatekeyitem-f.md)
-   - [listAliases](arkts-huks-listaliases-f.md)
-   - [anonAttestKeyItem](arkts-huks-anonattestkeyitem-f.md)
-   - [initSession](arkts-huks-initsession-f.md)
-   - [finish](arkts-huks-finish-f.md)
-   - [hasKeyItem](arkts-huks-haskeyitem-f.md)
-   - [importWrappedKeyItem](arkts-huks-importwrappedkeyitem-f.md)
-   - [init](arkts-huks-init-f.md)<!--Del-->
-   - [importKeyItemAsUser(system api)](arkts-huks-importkeyitemasuser-f-sys.md)<!--DelEnd-->
-   - [wrapKeyItem](arkts-huks-wrapkeyitem-f.md)
-   - [exportKey](arkts-huks-exportkey-f.md)
-   - [anonAttestKeyItemOffline](arkts-huks-anonattestkeyitemoffline-f.md)
-   - [unwrapKeyItem](arkts-huks-unwrapkeyitem-f.md)
-   - [deleteKey](arkts-huks-deletekey-f.md)
-   - [updateSession](arkts-huks-updatesession-f.md)
-   - [importKey](arkts-huks-importkey-f.md)<!--Del-->
-   - [getKeyItemPropertiesAsUser(system api)](arkts-huks-getkeyitempropertiesasuser-f-sys.md)<!--DelEnd--><!--Del-->
-   - [deleteKeyItemAsUser(system api)](arkts-huks-deletekeyitemasuser-f-sys.md)<!--DelEnd-->
-   - [generateKey](arkts-huks-generatekey-f.md)
-   - [getSdkVersion](arkts-huks-getsdkversion-f.md)
-   - [finishSession](arkts-huks-finishsession-f.md)
-   - [abort](arkts-huks-abort-f.md)
-   - [abortSession](arkts-huks-abortsession-f.md)
-   - [isKeyItemExist](arkts-huks-iskeyitemexist-f.md)
-   - [encapsulate](arkts-huks-encapsulate-f.md)
-   - [HuksHandle](arkts-hukshandle-i.md)
-   - [HuksListAliasesReturnResult](arkts-hukslistaliasesreturnresult-i.md)
-   - [HuksOptions](arkts-huksoptions-i.md)
-   - [HuksParam](arkts-huksparam-i.md)
-   - [HuksResult](arkts-huksresult-i.md)
-   - [HuksReturnResult](arkts-huksreturnresult-i.md)
-   - [HuksSessionHandle](arkts-hukssessionhandle-i.md)
-   - [HuksAuthAccessType](arkts-huksauthaccesstype-e.md)
-   - [HuksAuthStorageLevel](arkts-huksauthstoragelevel-e.md)
-   - [HuksChallengePosition](arkts-hukschallengeposition-e.md)
-   - [HuksChallengeType](arkts-hukschallengetype-e.md)
-   - [HuksCipherMode](arkts-huksciphermode-e.md)
-   - [HuksErrorCode](arkts-hukserrorcode-e.md)
-   - [HuksExceptionErrCode](arkts-huksexceptionerrcode-e.md)
-   - [HuksImportKeyType](arkts-huksimportkeytype-e.md)
-   - [HuksKeyAlg](arkts-hukskeyalg-e.md)
-   - [HuksKeyClassType](arkts-hukskeyclasstype-e.md)
-   - [HuksKeyDigest](arkts-hukskeydigest-e.md)
-   - [HuksKeyFlag](arkts-hukskeyflag-e.md)
-   - [HuksKeyGenerateType](arkts-hukskeygeneratetype-e.md)
-   - [HuksKeyPadding](arkts-hukskeypadding-e.md)
-   - [HuksKeyPurpose](arkts-hukskeypurpose-e.md)
-   - [HuksKeySecurityLevel](arkts-hukskeysecuritylevel-e.md)
-   - [HuksKeySize](arkts-hukskeysize-e.md)
-   - [HuksKeyStorageType](arkts-hukskeystoragetype-e.md)
-   - [HuksKeyWrapType](arkts-hukskeywraptype-e.md)
-   - [HuksRsaPssSaltLenType](arkts-huksrsapsssaltlentype-e.md)
-   - [HuksSecureSignType](arkts-hukssecuresigntype-e.md)
-   - [HuksSendType](arkts-hukssendtype-e.md)
-   - [HuksTag](arkts-hukstag-e.md)
-   - [HuksTagType](arkts-hukstagtype-e.md)
-   - [HuksUnwrapSuite](arkts-huksunwrapsuite-e.md)
-   - [HuksUserAuthMode](arkts-huksuserauthmode-e.md)
-   - [HuksUserAuthType](arkts-huksuserauthtype-e.md)
-  - [huks](arkts-huks-n.md)
-- [@ohos.security.huksExternalCrypto](arkts-security-huksexternalcrypto.md)
-  - [getProperty](arkts-huksexternalcrypto-getproperty-f.md)
-  - [openResource](arkts-huksexternalcrypto-openresource-f.md)
-  - [getResourceId](arkts-huksexternalcrypto-getresourceid-f.md)
-  - [unregisterProvider](arkts-huksexternalcrypto-unregisterprovider-f.md)
-  - [getUkeyPinAuthState](arkts-huksexternalcrypto-getukeypinauthstate-f.md)
-  - [setProperty](arkts-huksexternalcrypto-setproperty-f.md)<!--Del-->
-  - [authUkeyPin(system api)](arkts-huksexternalcrypto-authukeypin-f-sys.md)<!--DelEnd-->
-  - [clearUkeyPinAuthState](arkts-huksexternalcrypto-clearukeypinauthstate-f.md)
-  - [registerProvider](arkts-huksexternalcrypto-registerprovider-f.md)
-  - [getErrorInfo](arkts-huksexternalcrypto-geterrorinfo-f.md)
-  - [closeResource](arkts-huksexternalcrypto-closeresource-f.md)
-  - [HuksExternalCryptoParam](arkts-huksexternalcrypto-huksexternalcryptoparam-i.md)
-  - [HuksExternalErrorInfo](arkts-huksexternalcrypto-huksexternalerrorinfo-i.md)
-  - [HuksExternalCryptoTag](arkts-huksexternalcrypto-huksexternalcryptotag-e.md)
-  - [HuksExternalCryptoTagType](arkts-huksexternalcrypto-huksexternalcryptotagtype-e.md)
-  - [HuksExternalPinAuthState](arkts-huksexternalcrypto-huksexternalpinauthstate-e.md)
-- [@ohos.security.huksExternalCrypto](arkts-security-huksexternalcrypto.md)
-  - [getProperty](arkts-huksexternalcrypto-getproperty-f.md)
-  - [openResource](arkts-huksexternalcrypto-openresource-f.md)
-  - [getResourceId](arkts-huksexternalcrypto-getresourceid-f.md)
-  - [unregisterProvider](arkts-huksexternalcrypto-unregisterprovider-f.md)
-  - [getUkeyPinAuthState](arkts-huksexternalcrypto-getukeypinauthstate-f.md)
-  - [setProperty](arkts-huksexternalcrypto-setproperty-f.md)<!--Del-->
-  - [authUkeyPin(system api)](arkts-huksexternalcrypto-authukeypin-f-sys.md)<!--DelEnd-->
-  - [clearUkeyPinAuthState](arkts-huksexternalcrypto-clearukeypinauthstate-f.md)
-  - [registerProvider](arkts-huksexternalcrypto-registerprovider-f.md)
-  - [getErrorInfo](arkts-huksexternalcrypto-geterrorinfo-f.md)
-  - [closeResource](arkts-huksexternalcrypto-closeresource-f.md)
-  - [HuksExternalCryptoParam](arkts-huksexternalcrypto-huksexternalcryptoparam-i.md)
-  - [HuksExternalErrorInfo](arkts-huksexternalcrypto-huksexternalerrorinfo-i.md)
-  - [HuksExternalCryptoTag](arkts-huksexternalcrypto-huksexternalcryptotag-e.md)
-  - [HuksExternalCryptoTagType](arkts-huksexternalcrypto-huksexternalcryptotagtype-e.md)
-  - [HuksExternalPinAuthState](arkts-huksexternalcrypto-huksexternalpinauthstate-e.md)
+  - [abort](arkts-universalkeystore-abort-f.md)
+  - [abortSession](arkts-universalkeystore-abortsession-f.md)
+  - [anonAttestKeyItem](arkts-universalkeystore-anonattestkeyitem-f.md)<!--Del-->
+  - [anonAttestKeyItemAsUser(system api)](arkts-universalkeystore-anonattestkeyitemasuser-f-sys.md)<!--DelEnd-->
+  - [anonAttestKeyItemOffline](arkts-universalkeystore-anonattestkeyitemoffline-f.md)<!--Del-->
+  - [anonAttestKeyItemOfflineAsUser(system api)](arkts-universalkeystore-anonattestkeyitemofflineasuser-f-sys.md)<!--DelEnd-->
+  - [attestKeyItem](arkts-universalkeystore-attestkeyitem-f.md)<!--Del-->
+  - [attestKeyItemAsUser(system api)](arkts-universalkeystore-attestkeyitemasuser-f-sys.md)<!--DelEnd-->
+  - [decapsulate](arkts-universalkeystore-decapsulate-f.md)
+  - [deleteKey](arkts-universalkeystore-deletekey-f.md)
+  - [deleteKeyItem](arkts-universalkeystore-deletekeyitem-f.md)<!--Del-->
+  - [deleteKeyItemAsUser(system api)](arkts-universalkeystore-deletekeyitemasuser-f-sys.md)<!--DelEnd-->
+  - [encapsulate](arkts-universalkeystore-encapsulate-f.md)
+  - [exportKey](arkts-universalkeystore-exportkey-f.md)
+  - [exportKeyItem](arkts-universalkeystore-exportkeyitem-f.md)<!--Del-->
+  - [exportKeyItemAsUser(system api)](arkts-universalkeystore-exportkeyitemasuser-f-sys.md)<!--DelEnd-->
+  - [finish](arkts-universalkeystore-finish-f.md)
+  - [finishSession](arkts-universalkeystore-finishsession-f.md)
+  - [generateKey](arkts-universalkeystore-generatekey-f.md)
+  - [generateKeyItem](arkts-universalkeystore-generatekeyitem-f.md)<!--Del-->
+  - [generateKeyItemAsUser(system api)](arkts-universalkeystore-generatekeyitemasuser-f-sys.md)<!--DelEnd-->
+  - [getKeyItemProperties](arkts-universalkeystore-getkeyitemproperties-f.md)<!--Del-->
+  - [getKeyItemPropertiesAsUser(system api)](arkts-universalkeystore-getkeyitempropertiesasuser-f-sys.md)<!--DelEnd-->
+  - [getKeyProperties](arkts-universalkeystore-getkeyproperties-f.md)
+  - [getSdkVersion](arkts-universalkeystore-getsdkversion-f.md)
+  - [hasKeyItem](arkts-universalkeystore-haskeyitem-f.md)<!--Del-->
+  - [hasKeyItemAsUser(system api)](arkts-universalkeystore-haskeyitemasuser-f-sys.md)<!--DelEnd-->
+  - [importKey](arkts-universalkeystore-importkey-f.md)
+  - [importKeyItem](arkts-universalkeystore-importkeyitem-f.md)<!--Del-->
+  - [importKeyItemAsUser(system api)](arkts-universalkeystore-importkeyitemasuser-f-sys.md)<!--DelEnd-->
+  - [importWrappedKeyItem](arkts-universalkeystore-importwrappedkeyitem-f.md)<!--Del-->
+  - [importWrappedKeyItemAsUser(system api)](arkts-universalkeystore-importwrappedkeyitemasuser-f-sys.md)<!--DelEnd-->
+  - [init](arkts-universalkeystore-init-f.md)
+  - [initSession](arkts-universalkeystore-initsession-f.md)<!--Del-->
+  - [initSessionAsUser(system api)](arkts-universalkeystore-initsessionasuser-f-sys.md)<!--DelEnd-->
+  - [isKeyExist](arkts-universalkeystore-iskeyexist-f.md)
+  - [isKeyItemExist](arkts-universalkeystore-iskeyitemexist-f.md)
+  - [listAliases](arkts-universalkeystore-listaliases-f.md)
+  - [unwrapKeyItem](arkts-universalkeystore-unwrapkeyitem-f.md)
+  - [update](arkts-universalkeystore-update-f.md)
+  - [updateSession](arkts-universalkeystore-updatesession-f.md)
+  - [wrapKeyItem](arkts-universalkeystore-wrapkeyitem-f.md)
+  - [HuksHandle](arkts-universalkeystore-hukshandle-i.md)
+  - [HuksListAliasesReturnResult](arkts-universalkeystore-hukslistaliasesreturnresult-i.md)
+  - [HuksOptions](arkts-universalkeystore-huksoptions-i.md)
+  - [HuksParam](arkts-universalkeystore-huksparam-i.md)
+  - [HuksResult](arkts-universalkeystore-huksresult-i.md)
+  - [HuksReturnResult](arkts-universalkeystore-huksreturnresult-i.md)
+  - [HuksSessionHandle](arkts-universalkeystore-hukssessionhandle-i.md)
+  - [HuksAuthAccessType](arkts-universalkeystore-huksauthaccesstype-e.md)
+  - [HuksAuthStorageLevel](arkts-universalkeystore-huksauthstoragelevel-e.md)
+  - [HuksChallengePosition](arkts-universalkeystore-hukschallengeposition-e.md)
+  - [HuksChallengeType](arkts-universalkeystore-hukschallengetype-e.md)
+  - [HuksCipherMode](arkts-universalkeystore-huksciphermode-e.md)
+  - [HuksErrorCode](arkts-universalkeystore-hukserrorcode-e.md)
+  - [HuksExceptionErrCode](arkts-universalkeystore-huksexceptionerrcode-e.md)
+  - [HuksImportKeyType](arkts-universalkeystore-huksimportkeytype-e.md)
+  - [HuksKeyAlg](arkts-universalkeystore-hukskeyalg-e.md)
+  - [HuksKeyClassType](arkts-universalkeystore-hukskeyclasstype-e.md)
+  - [HuksKeyDigest](arkts-universalkeystore-hukskeydigest-e.md)
+  - [HuksKeyFlag](arkts-universalkeystore-hukskeyflag-e.md)
+  - [HuksKeyGenerateType](arkts-universalkeystore-hukskeygeneratetype-e.md)
+  - [HuksKeyPadding](arkts-universalkeystore-hukskeypadding-e.md)
+  - [HuksKeyPurpose](arkts-universalkeystore-hukskeypurpose-e.md)
+  - [HuksKeySecurityLevel](arkts-universalkeystore-hukskeysecuritylevel-e.md)
+  - [HuksKeySize](arkts-universalkeystore-hukskeysize-e.md)
+  - [HuksKeyStorageType](arkts-universalkeystore-hukskeystoragetype-e.md)
+  - [HuksKeyWrapType](arkts-universalkeystore-hukskeywraptype-e.md)
+  - [HuksRsaPssSaltLenType](arkts-universalkeystore-huksrsapsssaltlentype-e.md)
+  - [HuksSecureSignType](arkts-universalkeystore-hukssecuresigntype-e.md)
+  - [HuksSendType](arkts-universalkeystore-hukssendtype-e.md)
+  - [HuksTag](arkts-universalkeystore-hukstag-e.md)
+  - [HuksTagType](arkts-universalkeystore-hukstagtype-e.md)
+  - [HuksUnwrapSuite](arkts-universalkeystore-huksunwrapsuite-e.md)
+  - [HuksUserAuthMode](arkts-universalkeystore-huksuserauthmode-e.md)
+  - [HuksUserAuthType](arkts-universalkeystore-huksuserauthtype-e.md)
+- [@ohos.security.huksExternalCrypto](arkts-security-huksexternalcrypto.md)<!--Del-->
+  - [authUkeyPin(system api)](arkts-universalkeystore-authukeypin-f-sys.md)<!--DelEnd-->
+  - [clearUkeyPinAuthState](arkts-universalkeystore-clearukeypinauthstate-f.md)
+  - [closeResource](arkts-universalkeystore-closeresource-f.md)
+  - [getErrorInfo](arkts-universalkeystore-geterrorinfo-f.md)
+  - [getProperty](arkts-universalkeystore-getproperty-f.md)
+  - [getResourceId](arkts-universalkeystore-getresourceid-f.md)
+  - [getUkeyPinAuthState](arkts-universalkeystore-getukeypinauthstate-f.md)
+  - [openResource](arkts-universalkeystore-openresource-f.md)
+  - [registerProvider](arkts-universalkeystore-registerprovider-f.md)
+  - [setProperty](arkts-universalkeystore-setproperty-f.md)
+  - [unregisterProvider](arkts-universalkeystore-unregisterprovider-f.md)
+  - [HuksExternalCryptoParam](arkts-universalkeystore-huksexternalcryptoparam-i.md)
+  - [HuksExternalErrorInfo](arkts-universalkeystore-huksexternalerrorinfo-i.md)
+  - [HuksExternalCryptoTag](arkts-universalkeystore-huksexternalcryptotag-e.md)
+  - [HuksExternalCryptoTagType](arkts-universalkeystore-huksexternalcryptotagtype-e.md)
+  - [HuksExternalPinAuthState](arkts-universalkeystore-huksexternalpinauthstate-e.md)

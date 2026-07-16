@@ -12,7 +12,8 @@ The **NotificationExtensionContent** module describes the notification extension
 text: string
 ```
 
-Notification body content. It cannot be an empty string. The size cannot exceed 3072 bytes, and any excess will be truncated.
+Notification body content. It cannot be an empty string. The size cannot exceed 3072 bytes, and any excess
+will be truncated.
 
 **Type:** string
 
@@ -26,7 +27,8 @@ Notification body content. It cannot be an empty string. The size cannot exceed 
 title: string
 ```
 
-Notification title. It cannot be an empty string. The size cannot exceed 1024 bytes, and any excess will be truncated.
+Notification title. It cannot be an empty string. The size cannot exceed 1024 bytes, and any excess will be
+truncated.
 
 **Type:** string
 

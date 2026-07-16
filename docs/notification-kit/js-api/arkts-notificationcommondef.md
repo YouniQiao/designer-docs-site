@@ -6,7 +6,7 @@
 
 | Name | Description |
 | --- | --- |
-| [BundleOption](arkts-bundleoption-i.md) | 描述BundleOption信息，即应用的包信息。 |
-| [GrantedBundleInfo](arkts-grantedbundleinfo-i.md) | 描述已授权的包信息。 |
-| [UserGrantSetting](arkts-usergrantsetting-i.md) | 描述用户授权的设置信息。 |
+| [BundleOption](arkts-notification-bundleoption-i.md) | Describes the **BundleOption** information, that is, the bundle information of an application. |
+| [GrantedBundleInfo](arkts-notification-grantedbundleinfo-i.md) | Describes the authorized bundle information. |
+| [UserGrantSetting](arkts-notification-usergrantsetting-i.md) | Describes the user authorization settings. |
 

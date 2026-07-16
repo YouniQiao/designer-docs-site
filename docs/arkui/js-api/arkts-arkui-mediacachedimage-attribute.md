@@ -2,7 +2,7 @@
 
 Attributes of MediaCachedImage inherited from ImageAttribute.
 
-**Inheritance/Implementation:** MediaCachedImageAttribute extends [ImageAttribute](arkts-arkui-image-attribute.md#imageattribute)
+**Inheritance/Implementation:** MediaCachedImageAttribute extends [ImageAttribute](arkts-arkui-image-attribute.md)
 
 **Since:** 12
 

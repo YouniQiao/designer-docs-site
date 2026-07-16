@@ -1,6 +1,6 @@
 # LazyForEach properties/events
 
-The [drag-and-drop sorting](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common) attribute is supported.
+The [drag-and-drop sorting](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) attribute is supported.
 
 **Inheritance/Implementation:** LazyForEachAttribute extends [DynamicNode<LazyForEachAttribute>](DynamicNode<LazyForEachAttribute>)
 

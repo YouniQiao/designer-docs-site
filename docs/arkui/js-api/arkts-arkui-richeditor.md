@@ -2,6 +2,7 @@
 
 Provides an interface for writing texts.
 
+
 ## RichEditor
 
 ```TypeScript

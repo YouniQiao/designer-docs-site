@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { AVCastPickerColorMode,AVCastPickerState,AVCastPickerStyle } from '@kit.AVSessionKit';
+import { AVCastPickerColorMode, AVCastPickerState, AVCastPickerStyle } from '@kit.AVSessionKit';
 ```
 
 ## Summary
@@ -12,7 +12,7 @@ import { AVCastPickerColorMode,AVCastPickerState,AVCastPickerStyle } from '@kit.
 
 | Name | Description |
 | --- | --- |
-| [AVCastPickerColorMode](arkts-avcastpickercolormode-e.md) | Definition of color mode of picker |
-| [AVCastPickerState](arkts-avcastpickerstate-e.md) | Definition of av cast picker state |
-| [AVCastPickerStyle](arkts-avcastpickerstyle-e.md) | Definition of av cast picker style |
+| [AVCastPickerColorMode](arkts-avsession-avcastpickercolormode-e.md) | Definition of color mode of picker |
+| [AVCastPickerState](arkts-avsession-avcastpickerstate-e.md) | Definition of av cast picker state |
+| [AVCastPickerStyle](arkts-avsession-avcastpickerstyle-e.md) | Definition of av cast picker style |
 

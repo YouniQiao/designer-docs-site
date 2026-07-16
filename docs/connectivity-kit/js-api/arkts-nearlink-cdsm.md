@@ -24,7 +24,7 @@ import { cdsm } from '@kit.ConnectivityKit';
 
 | Name | Description |
 | --- | --- |
-| [CdsmClient](arkts-connectivity-cdsmclient-i.md) | Manages a CDSM client instance. Before invoking any CDSM client method, you must use {@link createCdsmClient} to create a CDSM client instance. |
+| [CdsmClient](arkts-connectivity-cdsmclient-i.md) | Manages a CDSM client instance. Before invoking any CDSM client method,you must use {@link createCdsmClient} to create a CDSM client instance. |
 | [CdsmInfo](arkts-connectivity-cdsminfo-i.md) | Describes the coordinated devices set information. |
 | [CdsmMemberInfo](arkts-connectivity-cdsmmemberinfo-i.md) | Describes the member information of coordinated devices set. |
 

@@ -56,8 +56,8 @@
 | [ContinueCallback](arkts-ability-continuecallback-t-sys.md) | ContinueCallback registered for notify continue result. |
 | [ContinueDeviceInfo](arkts-ability-continuedeviceinfo-t-sys.md) | Parameters corresponding to continue mission. |
 | [ContinueMissionInfo](arkts-ability-continuemissioninfo-t-sys.md) | Parameters corresponding to continue mission. |
-| [MissionCallback](arkts-ability-missioncallback-t-sys.md) | 作为可以 [registerMissionListener](registerMissionListener(parameter: MissionDeviceInfo, options: MissionCallback, callback: AsyncCallback&lt;void&gt;)) 的入参，表示开始同步后，建立的回调函数。 |
-| [MissionDeviceInfo](arkts-ability-missiondeviceinfo-t-sys.md) | 可以作为 [registerMissionListener](registerMissionListener(parameter: MissionDeviceInfo, options: MissionCallback, callback: AsyncCallback&lt;void&gt;)) 的入参，表示注册监听时所需参数的枚举。 |
-| [MissionParameter](arkts-ability-missionparameter-t-sys.md) | 作为 [startSyncRemoteMissions](startSyncRemoteMissions(parameter: MissionParameter, callback: AsyncCallback&lt;void&gt;)) 的入参，表示同步时所需参数的枚举。 |
+| [MissionCallback](arkts-ability-missioncallback-t-sys.md) | 作为可以[registerMissionListener](registerMissionListener(parameter: MissionDeviceInfo, options: MissionCallback, callback: AsyncCallback&lt;void&gt;))的入参，表示开始同步后，建立的回调函数。 |
+| [MissionDeviceInfo](arkts-ability-missiondeviceinfo-t-sys.md) | 可以作为[registerMissionListener](registerMissionListener(parameter: MissionDeviceInfo, options: MissionCallback, callback: AsyncCallback&lt;void&gt;))的入参，表示注册监听时所需参数的枚举。 |
+| [MissionParameter](arkts-ability-missionparameter-t-sys.md) | 作为[startSyncRemoteMissions](startSyncRemoteMissions(parameter: MissionParameter, callback: AsyncCallback&lt;void&gt;))的入参，表示同步时所需参数的枚举。 |
 <!--DelEnd-->
 

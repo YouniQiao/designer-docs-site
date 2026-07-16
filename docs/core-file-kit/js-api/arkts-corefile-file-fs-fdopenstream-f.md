@@ -12,7 +12,8 @@ import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventList
 declare function fdopenStream(fd: number, mode: string): Promise<Stream>
 ```
 
-Opens a stream based on an FD. This API uses a promise to return the result. To close the stream, use **close()** of [Stream](arkts-corefile-stream-i.md).
+Opens a stream based on an FD. This API uses a promise to return the result. To close the stream, use **close()** of
+[Stream](arkts-corefile-stream-i.md).
 
 **Since:** 9
 
@@ -72,7 +73,8 @@ Opens a stream based on an FD. This API uses a promise to return the result. To 
 declare function fdopenStream(fd: number, mode: string, callback: AsyncCallback<Stream>): void
 ```
 
-Opens a stream based on an FD. This API uses an asynchronous callback to return the result. To close the stream, use **close()** of [Stream](arkts-corefile-stream-i.md).
+Opens a stream based on an FD. This API uses an asynchronous callback to return the result. To close the stream, use
+**close()** of [Stream](arkts-corefile-stream-i.md).
 
 **Since:** 9
 

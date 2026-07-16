@@ -1,6 +1,11 @@
 # Rating
 
-提供在给定范围内选择评分的组件。 > **说明：** > - 当Rating的父节点有指定宽高时，需为Rating组件指定宽高，或为父节点设置值为true的[clip]{@link CommonMethod#clip(clip: Optional<boolean>)}属性。
+提供在给定范围内选择评分的组件。
+
+> **说明：**
+
+> - 当Rating的父节点有指定宽高时，需为Rating组件指定宽高，或为父节点设置值为true的[clip]{@link CommonMethod#clip(clip: Optional<boolean>)}属性。
+
 
 ## Rating
 

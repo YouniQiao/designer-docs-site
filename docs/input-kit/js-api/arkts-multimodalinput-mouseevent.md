@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { MouseAction,AxisValue,MouseEvent,Button,MouseToolType,Axis } from '@kit.InputKit';
+import { MouseAction, AxisValue, MouseEvent, Button, MouseToolType, Axis } from '@kit.InputKit';
 ```
 
 ## Summary
@@ -12,15 +12,15 @@ import { MouseAction,AxisValue,MouseEvent,Button,MouseToolType,Axis } from '@kit
 
 | Name | Description |
 | --- | --- |
-| [AxisValue](arkts-axisvalue-i.md) | 鼠标轴类型和轴的值。 |
-| [MouseEvent](arkts-mouseevent-i.md) | 鼠标事件。 |
+| [AxisValue](arkts-input-axisvalue-i.md) | Defines the mouse axis type and axis value. |
+| [MouseEvent](arkts-input-mouseevent-i.md) | Defines the mouse event. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [Action](arkts-action-e.md) | 鼠标事件类型。 |
-| [Axis](arkts-axis-e.md) | 鼠标轴类型。 |
-| [Button](arkts-button-e.md) | 鼠标按键。 |
-| [ToolType](arkts-tooltype-e.md) | 工具类型。 |
+| [Action](arkts-input-action-e.md) | Enumerates mouse event types. |
+| [Axis](arkts-input-axis-e.md) | Enumerates mouse axis types. |
+| [Button](arkts-input-button-e.md) | Enumerates mouse buttons. |
+| [ToolType](arkts-input-tooltype-e.md) | Enumerates tool types. |
 

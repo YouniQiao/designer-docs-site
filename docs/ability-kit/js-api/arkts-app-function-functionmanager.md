@@ -2,7 +2,7 @@
 
 The module provides the capability to manage and invoke functions in the system.
 
-**Since:** 26.1.0
+**Since:** 26.0.0
 
 **System capability:** SystemCapability.Ability.AgentRuntime.Core
 

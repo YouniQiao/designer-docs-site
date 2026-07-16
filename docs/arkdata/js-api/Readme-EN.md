@@ -1,454 +1,391 @@
-# ArkData
+# ArkTS API<!--arkts-arkdata-->
 
 - [@ohos.application.DataShareExtensionAbility](arkts-application-datashareextensionability.md)<!--Del-->
-  - [DataShareExtensionAbility(system api)](arkts-datashareextensionability-c-sys.md)<!--DelEnd--><!--Del-->
-  - [BatchInsertFn(system api)](arkts-batchinsertfn-t-sys.md)<!--DelEnd--><!--Del-->
-  - [BatchUpdateFn(system api)](arkts-batchupdatefn-t-sys.md)<!--DelEnd--><!--Del-->
-  - [DeleteFn(system api)](arkts-deletefn-t-sys.md)<!--DelEnd--><!--Del-->
-  - [DenormalizeUriFn(system api)](arkts-denormalizeurifn-t-sys.md)<!--DelEnd--><!--Del-->
-  - [InsertFn(system api)](arkts-insertfn-t-sys.md)<!--DelEnd--><!--Del-->
-  - [NormalizeUriFn(system api)](arkts-normalizeurifn-t-sys.md)<!--DelEnd--><!--Del-->
-  - [OnCreateFn(system api)](arkts-oncreatefn-t-sys.md)<!--DelEnd--><!--Del-->
-  - [QueryFn(system api)](arkts-queryfn-t-sys.md)<!--DelEnd--><!--Del-->
-  - [UpdateFn(system api)](arkts-updatefn-t-sys.md)<!--DelEnd--><!--Del-->
-  - [UpdateOperation(system api)](arkts-updateoperation-t-sys.md)<!--DelEnd-->
+  - [DataShareExtensionAbility(system api)](arkts-arkdata-datashareextensionability-c-sys.md)<!--DelEnd--><!--Del-->
+  - [UpdateOperation(system api)](arkts-arkdata-updateoperation-t-sys.md)<!--DelEnd-->
 - [@ohos.data.DataShareResultSet](arkts-data-datashareresultset.md)<!--Del-->
-  - [DataShareResultSet(system api)](arkts-datashareresultset-i-sys.md)<!--DelEnd--><!--Del-->
-  - [DataType(system api)](arkts-datatype-e-sys.md)<!--DelEnd-->
+  - [DataShareResultSet(system api)](arkts-arkdata-datashareresultset-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DataType(system api)](arkts-arkdata-datatype-e-sys.md)<!--DelEnd-->
 - [@ohos.data.UdmfComponents](arkts-data-udmfcomponents.md)
-  - [FormType](arkts-formtype-e.md)
+  - [ContentFormCard](arkts-arkdata-contentformcard-s.md)
+  - [FormType](arkts-arkdata-formtype-e.md)
 - [@ohos.data.ValuesBucket](arkts-data-valuesbucket.md)
-  - [ValuesBucket](arkts-valuesbucket-t.md)
-  - [ValueType](arkts-valuetype-t.md)
+  - [ValuesBucket](arkts-arkdata-valuesbucket-t.md)
+  - [ValueType](arkts-arkdata-valuetype-t.md)
 - [@ohos.data.cloudData](arkts-data-clouddata.md)
-  - [cloudData](arkts-clouddata-n.md)
-   - [offAutoSyncTrigger](arkts-clouddata-offautosynctrigger-f.md)
-   - [setCloudStrategy](arkts-clouddata-setcloudstrategy-f.md)
-   - [onAutoSyncTrigger](arkts-clouddata-onautosynctrigger-f.md)<!--Del-->
-   - [Config(system api)](arkts-config-c-sys.md)<!--DelEnd-->
-   - [AutoSyncTriggerInfo](arkts-autosynctriggerinfo-i.md)<!--Del-->
-   - [BundleInfo(system api)](arkts-bundleinfo-i-sys.md)<!--DelEnd--><!--Del-->
-   - [ClearConfig(system api)](arkts-clearconfig-i-sys.md)<!--DelEnd--><!--Del-->
-   - [DBActionInfo(system api)](arkts-dbactioninfo-i-sys.md)<!--DelEnd--><!--Del-->
-   - [DBSwitchInfo(system api)](arkts-dbswitchinfo-i-sys.md)<!--DelEnd--><!--Del-->
-   - [ExtraData(system api)](arkts-extradata-i-sys.md)<!--DelEnd--><!--Del-->
-   - [StatisticInfo(system api)](arkts-statisticinfo-i-sys.md)<!--DelEnd--><!--Del-->
-   - [SwitchConfig(system api)](arkts-switchconfig-i-sys.md)<!--DelEnd--><!--Del-->
-   - [SyncInfo(system api)](arkts-syncinfo-i-sys.md)<!--DelEnd-->
-   - [AutoSyncTriggerMode](arkts-autosynctriggermode-e.md)<!--Del-->
-   - [ClearAction(system api)](arkts-clearaction-e-sys.md)<!--DelEnd-->
-   - [NetWorkStrategy](arkts-networkstrategy-e.md)
-   - [StrategyType](arkts-strategytype-e.md)<!--Del-->
-   - [SyncStatus(system api)](arkts-syncstatus-e-sys.md)<!--DelEnd--><!--Del-->
-   - [Constants(system api)](arkts-clouddata-con-sys.md)<!--DelEnd--><!--Del-->
-  - [sharing(system api)](arkts-sharing-sta-n.md)<!--DelEnd--><!--Del-->
-   - [exit(system api)](arkts-sharing-exit-f-sys.md)<!--DelEnd--><!--Del-->
-   - [allocResourceAndShare(system api)](arkts-sharing-allocresourceandshare-f-sys.md)<!--DelEnd--><!--Del-->
-   - [changeConfirmation(system api)](arkts-sharing-changeconfirmation-f-sys.md)<!--DelEnd--><!--Del-->
-   - [unshare(system api)](arkts-sharing-unshare-f-sys.md)<!--DelEnd--><!--Del-->
-   - [changePrivilege(system api)](arkts-sharing-changeprivilege-f-sys.md)<!--DelEnd--><!--Del-->
-   - [confirmInvitation(system api)](arkts-sharing-confirminvitation-f-sys.md)<!--DelEnd--><!--Del-->
-   - [queryParticipantsByInvitation(system api)](arkts-sharing-queryparticipantsbyinvitation-f-sys.md)<!--DelEnd--><!--Del-->
-   - [share(system api)](arkts-sharing-share-f-sys.md)<!--DelEnd--><!--Del-->
-   - [queryParticipants(system api)](arkts-sharing-queryparticipants-f-sys.md)<!--DelEnd--><!--Del-->
-   - [Participant(system api)](arkts-participant-i-sys.md)<!--DelEnd--><!--Del-->
-   - [Privilege(system api)](arkts-privilege-i-sys.md)<!--DelEnd--><!--Del-->
-   - [Result(system api)](arkts-result-i-sys.md)<!--DelEnd--><!--Del-->
-   - [Role(system api)](arkts-role-e-sys.md)<!--DelEnd--><!--Del-->
-   - [SharingCode(system api)](arkts-sharingcode-e-sys.md)<!--DelEnd--><!--Del-->
-   - [State(system api)](arkts-state-e-sys.md)<!--DelEnd-->
-- [@ohos.data.cloudData](arkts-data-clouddata.md)
-  - [cloudData](arkts-clouddata-n.md)
-   - [offAutoSyncTrigger](arkts-clouddata-offautosynctrigger-f.md)
-   - [setCloudStrategy](arkts-clouddata-setcloudstrategy-f.md)
-   - [onAutoSyncTrigger](arkts-clouddata-onautosynctrigger-f.md)<!--Del-->
-   - [Config(system api)](arkts-config-c-sys.md)<!--DelEnd-->
-   - [AutoSyncTriggerInfo](arkts-autosynctriggerinfo-i.md)<!--Del-->
-   - [BundleInfo(system api)](arkts-bundleinfo-i-sys.md)<!--DelEnd--><!--Del-->
-   - [ClearConfig(system api)](arkts-clearconfig-i-sys.md)<!--DelEnd--><!--Del-->
-   - [DBActionInfo(system api)](arkts-dbactioninfo-i-sys.md)<!--DelEnd--><!--Del-->
-   - [DBSwitchInfo(system api)](arkts-dbswitchinfo-i-sys.md)<!--DelEnd--><!--Del-->
-   - [ExtraData(system api)](arkts-extradata-i-sys.md)<!--DelEnd--><!--Del-->
-   - [StatisticInfo(system api)](arkts-statisticinfo-i-sys.md)<!--DelEnd--><!--Del-->
-   - [SwitchConfig(system api)](arkts-switchconfig-i-sys.md)<!--DelEnd--><!--Del-->
-   - [SyncInfo(system api)](arkts-syncinfo-i-sys.md)<!--DelEnd-->
-   - [AutoSyncTriggerMode](arkts-autosynctriggermode-e.md)<!--Del-->
-   - [ClearAction(system api)](arkts-clearaction-e-sys.md)<!--DelEnd-->
-   - [NetWorkStrategy](arkts-networkstrategy-e.md)
-   - [StrategyType](arkts-strategytype-e.md)<!--Del-->
-   - [SyncStatus(system api)](arkts-syncstatus-e-sys.md)<!--DelEnd--><!--Del-->
-   - [Constants(system api)](arkts-clouddata-con-sys.md)<!--DelEnd--><!--Del-->
-  - [sharing(system api)](arkts-sharing-sta-n.md)<!--DelEnd--><!--Del-->
-   - [exit(system api)](arkts-sharing-exit-f-sys.md)<!--DelEnd--><!--Del-->
-   - [allocResourceAndShare(system api)](arkts-sharing-allocresourceandshare-f-sys.md)<!--DelEnd--><!--Del-->
-   - [changeConfirmation(system api)](arkts-sharing-changeconfirmation-f-sys.md)<!--DelEnd--><!--Del-->
-   - [unshare(system api)](arkts-sharing-unshare-f-sys.md)<!--DelEnd--><!--Del-->
-   - [changePrivilege(system api)](arkts-sharing-changeprivilege-f-sys.md)<!--DelEnd--><!--Del-->
-   - [confirmInvitation(system api)](arkts-sharing-confirminvitation-f-sys.md)<!--DelEnd--><!--Del-->
-   - [queryParticipantsByInvitation(system api)](arkts-sharing-queryparticipantsbyinvitation-f-sys.md)<!--DelEnd--><!--Del-->
-   - [share(system api)](arkts-sharing-share-f-sys.md)<!--DelEnd--><!--Del-->
-   - [queryParticipants(system api)](arkts-sharing-queryparticipants-f-sys.md)<!--DelEnd--><!--Del-->
-   - [Participant(system api)](arkts-participant-i-sys.md)<!--DelEnd--><!--Del-->
-   - [Privilege(system api)](arkts-privilege-i-sys.md)<!--DelEnd--><!--Del-->
-   - [Result(system api)](arkts-result-i-sys.md)<!--DelEnd--><!--Del-->
-   - [Role(system api)](arkts-role-e-sys.md)<!--DelEnd--><!--Del-->
-   - [SharingCode(system api)](arkts-sharingcode-e-sys.md)<!--DelEnd--><!--Del-->
-   - [State(system api)](arkts-state-e-sys.md)<!--DelEnd-->
+  - [cloudData](arkts-arkdata-clouddata-n.md)
+    - [sharing](arkts-arkdata-sharing-n.md)<!--Del-->
+      - [allocResourceAndShare(system api)](arkts-arkdata-allocresourceandshare-f-sys.md)<!--DelEnd--><!--Del-->
+      - [changeConfirmation(system api)](arkts-arkdata-changeconfirmation-f-sys.md)<!--DelEnd--><!--Del-->
+      - [changePrivilege(system api)](arkts-arkdata-changeprivilege-f-sys.md)<!--DelEnd--><!--Del-->
+      - [confirmInvitation(system api)](arkts-arkdata-confirminvitation-f-sys.md)<!--DelEnd--><!--Del-->
+      - [exit(system api)](arkts-arkdata-exit-f-sys.md)<!--DelEnd--><!--Del-->
+      - [queryParticipants(system api)](arkts-arkdata-queryparticipants-f-sys.md)<!--DelEnd--><!--Del-->
+      - [queryParticipantsByInvitation(system api)](arkts-arkdata-queryparticipantsbyinvitation-f-sys.md)<!--DelEnd--><!--Del-->
+      - [share(system api)](arkts-arkdata-share-f-sys.md)<!--DelEnd--><!--Del-->
+      - [unshare(system api)](arkts-arkdata-unshare-f-sys.md)<!--DelEnd--><!--Del-->
+      - [Participant(system api)](arkts-arkdata-participant-i-sys.md)<!--DelEnd--><!--Del-->
+      - [Privilege(system api)](arkts-arkdata-privilege-i-sys.md)<!--DelEnd--><!--Del-->
+      - [Result(system api)](arkts-arkdata-result-i-sys.md)<!--DelEnd--><!--Del-->
+      - [Role(system api)](arkts-arkdata-role-e-sys.md)<!--DelEnd--><!--Del-->
+      - [SharingCode(system api)](arkts-arkdata-sharingcode-e-sys.md)<!--DelEnd--><!--Del-->
+      - [State(system api)](arkts-arkdata-state-e-sys.md)<!--DelEnd-->
+    - [offAutoSyncTrigger](arkts-arkdata-offautosynctrigger-f.md)
+    - [onAutoSyncTrigger](arkts-arkdata-onautosynctrigger-f.md)
+    - [setCloudStrategy](arkts-arkdata-setcloudstrategy-f.md)<!--Del-->
+    - [Config(system api)](arkts-arkdata-config-c-sys.md)<!--DelEnd-->
+    - [AutoSyncTriggerInfo](arkts-arkdata-autosynctriggerinfo-i.md)<!--Del-->
+    - [BundleInfo(system api)](arkts-arkdata-bundleinfo-i-sys.md)<!--DelEnd--><!--Del-->
+    - [ClearConfig(system api)](arkts-arkdata-clearconfig-i-sys.md)<!--DelEnd--><!--Del-->
+    - [DBActionInfo(system api)](arkts-arkdata-dbactioninfo-i-sys.md)<!--DelEnd--><!--Del-->
+    - [DBSwitchInfo(system api)](arkts-arkdata-dbswitchinfo-i-sys.md)<!--DelEnd--><!--Del-->
+    - [ExtraData(system api)](arkts-arkdata-extradata-i-sys.md)<!--DelEnd--><!--Del-->
+    - [StatisticInfo(system api)](arkts-arkdata-statisticinfo-i-sys.md)<!--DelEnd--><!--Del-->
+    - [SwitchConfig(system api)](arkts-arkdata-switchconfig-i-sys.md)<!--DelEnd--><!--Del-->
+    - [SyncInfo(system api)](arkts-arkdata-syncinfo-i-sys.md)<!--DelEnd-->
+    - [AutoSyncTriggerMode](arkts-arkdata-autosynctriggermode-e.md)<!--Del-->
+    - [ClearAction(system api)](arkts-arkdata-clearaction-e-sys.md)<!--DelEnd-->
+    - [NetWorkStrategy](arkts-arkdata-networkstrategy-e.md)
+    - [StrategyType](arkts-arkdata-strategytype-e.md)<!--Del-->
+    - [SyncStatus(system api)](arkts-arkdata-syncstatus-e-sys.md)<!--DelEnd--><!--Del-->
+    - [Constants(system api)](arkts-arkdata-clouddata-con-sys.md)<!--DelEnd-->
 - [@ohos.data.cloudExtension](arkts-data-cloudextension.md)<!--Del-->
-  - [createCloudDBStub(system api)](arkts-cloudextension-createclouddbstub-f-sys.md)<!--DelEnd--><!--Del-->
-  - [createCloudServiceStub(system api)](arkts-cloudextension-createcloudservicestub-f-sys.md)<!--DelEnd--><!--Del-->
-  - [createShareServiceStub(system api)](arkts-cloudextension-createshareservicestub-f-sys.md)<!--DelEnd--><!--Del-->
-  - [createAssetLoaderStub(system api)](arkts-cloudextension-createassetloaderstub-f-sys.md)<!--DelEnd--><!--Del-->
-  - [AppBriefInfo(system api)](arkts-cloudextension-appbriefinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [AppSchema(system api)](arkts-cloudextension-appschema-i-sys.md)<!--DelEnd--><!--Del-->
-  - [AssetLoader(system api)](arkts-cloudextension-assetloader-i-sys.md)<!--DelEnd--><!--Del-->
-  - [CloudAsset(system api)](arkts-cloudextension-cloudasset-i-sys.md)<!--DelEnd--><!--Del-->
-  - [CloudData(system api)](arkts-cloudextension-clouddata-i-sys.md)<!--DelEnd--><!--Del-->
-  - [CloudDB(system api)](arkts-cloudextension-clouddb-i-sys.md)<!--DelEnd--><!--Del-->
-  - [CloudInfo(system api)](arkts-cloudextension-cloudinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [CloudService(system api)](arkts-cloudextension-cloudservice-i-sys.md)<!--DelEnd--><!--Del-->
-  - [Database(system api)](arkts-cloudextension-database-i-sys.md)<!--DelEnd--><!--Del-->
-  - [ExtensionValue(system api)](arkts-cloudextension-extensionvalue-i-sys.md)<!--DelEnd--><!--Del-->
-  - [Field(system api)](arkts-cloudextension-field-i-sys.md)<!--DelEnd--><!--Del-->
-  - [LockInfo(system api)](arkts-cloudextension-lockinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [Result(system api)](arkts-cloudextension-result-i-sys.md)<!--DelEnd--><!--Del-->
-  - [ServiceInfo(system api)](arkts-cloudextension-serviceinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [ShareCenter(system api)](arkts-cloudextension-sharecenter-i-sys.md)<!--DelEnd--><!--Del-->
-  - [SubscribeId(system api)](arkts-cloudextension-subscribeid-i-sys.md)<!--DelEnd--><!--Del-->
-  - [SubscribeInfo(system api)](arkts-cloudextension-subscribeinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [Table(system api)](arkts-cloudextension-table-i-sys.md)<!--DelEnd--><!--Del-->
-  - [CloudAssets(system api)](arkts-cloudextension-cloudassets-t-sys.md)<!--DelEnd--><!--Del-->
-  - [CloudType(system api)](arkts-cloudextension-cloudtype-t-sys.md)<!--DelEnd--><!--Del-->
-  - [ErrorCode(system api)](arkts-cloudextension-errorcode-e-sys.md)<!--DelEnd--><!--Del-->
-  - [FieldType(system api)](arkts-cloudextension-fieldtype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [Flag(system api)](arkts-cloudextension-flag-e-sys.md)<!--DelEnd-->
-- [@ohos.data.cloudExtension](arkts-data-cloudextension.md)<!--Del-->
-  - [createCloudDBStub(system api)](arkts-cloudextension-createclouddbstub-f-sys.md)<!--DelEnd--><!--Del-->
-  - [createCloudServiceStub(system api)](arkts-cloudextension-createcloudservicestub-f-sys.md)<!--DelEnd--><!--Del-->
-  - [createShareServiceStub(system api)](arkts-cloudextension-createshareservicestub-f-sys.md)<!--DelEnd--><!--Del-->
-  - [createAssetLoaderStub(system api)](arkts-cloudextension-createassetloaderstub-f-sys.md)<!--DelEnd--><!--Del-->
-  - [AppBriefInfo(system api)](arkts-cloudextension-appbriefinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [AppSchema(system api)](arkts-cloudextension-appschema-i-sys.md)<!--DelEnd--><!--Del-->
-  - [AssetLoader(system api)](arkts-cloudextension-assetloader-i-sys.md)<!--DelEnd--><!--Del-->
-  - [CloudAsset(system api)](arkts-cloudextension-cloudasset-i-sys.md)<!--DelEnd--><!--Del-->
-  - [CloudData(system api)](arkts-cloudextension-clouddata-i-sys.md)<!--DelEnd--><!--Del-->
-  - [CloudDB(system api)](arkts-cloudextension-clouddb-i-sys.md)<!--DelEnd--><!--Del-->
-  - [CloudInfo(system api)](arkts-cloudextension-cloudinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [CloudService(system api)](arkts-cloudextension-cloudservice-i-sys.md)<!--DelEnd--><!--Del-->
-  - [Database(system api)](arkts-cloudextension-database-i-sys.md)<!--DelEnd--><!--Del-->
-  - [ExtensionValue(system api)](arkts-cloudextension-extensionvalue-i-sys.md)<!--DelEnd--><!--Del-->
-  - [Field(system api)](arkts-cloudextension-field-i-sys.md)<!--DelEnd--><!--Del-->
-  - [LockInfo(system api)](arkts-cloudextension-lockinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [Result(system api)](arkts-cloudextension-result-i-sys.md)<!--DelEnd--><!--Del-->
-  - [ServiceInfo(system api)](arkts-cloudextension-serviceinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [ShareCenter(system api)](arkts-cloudextension-sharecenter-i-sys.md)<!--DelEnd--><!--Del-->
-  - [SubscribeId(system api)](arkts-cloudextension-subscribeid-i-sys.md)<!--DelEnd--><!--Del-->
-  - [SubscribeInfo(system api)](arkts-cloudextension-subscribeinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [Table(system api)](arkts-cloudextension-table-i-sys.md)<!--DelEnd--><!--Del-->
-  - [CloudAssets(system api)](arkts-cloudextension-cloudassets-t-sys.md)<!--DelEnd--><!--Del-->
-  - [CloudType(system api)](arkts-cloudextension-cloudtype-t-sys.md)<!--DelEnd--><!--Del-->
-  - [ErrorCode(system api)](arkts-cloudextension-errorcode-e-sys.md)<!--DelEnd--><!--Del-->
-  - [FieldType(system api)](arkts-cloudextension-fieldtype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [Flag(system api)](arkts-cloudextension-flag-e-sys.md)<!--DelEnd-->
+  - [createAssetLoaderStub(system api)](arkts-arkdata-createassetloaderstub-f-sys.md)<!--DelEnd--><!--Del-->
+  - [createCloudDBStub(system api)](arkts-arkdata-createclouddbstub-f-sys.md)<!--DelEnd--><!--Del-->
+  - [createCloudServiceStub(system api)](arkts-arkdata-createcloudservicestub-f-sys.md)<!--DelEnd--><!--Del-->
+  - [createShareServiceStub(system api)](arkts-arkdata-createshareservicestub-f-sys.md)<!--DelEnd--><!--Del-->
+  - [AppBriefInfo(system api)](arkts-arkdata-appbriefinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [AppSchema(system api)](arkts-arkdata-appschema-i-sys.md)<!--DelEnd--><!--Del-->
+  - [AssetLoader(system api)](arkts-arkdata-assetloader-i-sys.md)<!--DelEnd--><!--Del-->
+  - [CloudAsset(system api)](arkts-arkdata-cloudasset-i-sys.md)<!--DelEnd--><!--Del-->
+  - [CloudData(system api)](arkts-arkdata-clouddata-i-sys.md)<!--DelEnd--><!--Del-->
+  - [CloudDB(system api)](arkts-arkdata-clouddb-i-sys.md)<!--DelEnd--><!--Del-->
+  - [CloudInfo(system api)](arkts-arkdata-cloudinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [CloudService(system api)](arkts-arkdata-cloudservice-i-sys.md)<!--DelEnd--><!--Del-->
+  - [Database(system api)](arkts-arkdata-database-i-sys.md)<!--DelEnd--><!--Del-->
+  - [ExtensionValue(system api)](arkts-arkdata-extensionvalue-i-sys.md)<!--DelEnd--><!--Del-->
+  - [Field(system api)](arkts-arkdata-field-i-sys.md)<!--DelEnd--><!--Del-->
+  - [LockInfo(system api)](arkts-arkdata-lockinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [Result(system api)](arkts-arkdata-result-i-sys.md)<!--DelEnd--><!--Del-->
+  - [ServiceInfo(system api)](arkts-arkdata-serviceinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [ShareCenter(system api)](arkts-arkdata-sharecenter-i-sys.md)<!--DelEnd--><!--Del-->
+  - [SubscribeId(system api)](arkts-arkdata-subscribeid-i-sys.md)<!--DelEnd--><!--Del-->
+  - [SubscribeInfo(system api)](arkts-arkdata-subscribeinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [Table(system api)](arkts-arkdata-table-i-sys.md)<!--DelEnd--><!--Del-->
+  - [CloudAssets(system api)](arkts-arkdata-cloudassets-t-sys.md)<!--DelEnd--><!--Del-->
+  - [CloudType(system api)](arkts-arkdata-cloudtype-t-sys.md)<!--DelEnd--><!--Del-->
+  - [ErrorCode(system api)](arkts-arkdata-errorcode-e-sys.md)<!--DelEnd--><!--Del-->
+  - [FieldType(system api)](arkts-arkdata-fieldtype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [Flag(system api)](arkts-arkdata-flag-e-sys.md)<!--DelEnd-->
 - [@ohos.data.commonType](arkts-data-commontype.md)
-  - [Asset](arkts-commontype-asset-i.md)
-  - [Assets](arkts-commontype-assets-t.md)
-  - [ValuesBucket](arkts-commontype-valuesbucket-t.md)
-  - [ValueType](arkts-commontype-valuetype-t.md)
-  - [AssetStatus](arkts-commontype-assetstatus-e.md)
+  - [Asset](arkts-arkdata-asset-i.md)
+  - [Assets](arkts-arkdata-assets-t.md)
+  - [ValuesBucket](arkts-arkdata-valuesbucket-t.md)
+  - [ValueType](arkts-arkdata-valuetype-t.md)
+  - [AssetStatus](arkts-arkdata-assetstatus-e.md)
 - [@ohos.data.dataAbility](arkts-data-dataability.md)
-  - [createRdbPredicates](arkts-dataability-createrdbpredicates-f.md)
-  - [DataAbilityPredicates](arkts-dataability-dataabilitypredicates-c.md)
-  - [ValueType](arkts-dataability-valuetype-t.md)
-- [@ohos.data.dataShare](arkts-data-datashare.md)<!--Del-->
-  - [enableSilentProxy(system api)](arkts-datashare-enablesilentproxy-f-sys.md)<!--DelEnd--><!--Del-->
-  - [createDataShareHelper(system api)](arkts-datashare-createdatasharehelper-f-sys.md)<!--DelEnd-->
-  - [createDataProxyHandle](arkts-datashare-createdataproxyhandle-f.md)<!--Del-->
-  - [disableSilentProxy(system api)](arkts-datashare-disablesilentproxy-f-sys.md)<!--DelEnd--><!--Del-->
-  - [ChangeInfo(system api)](arkts-datashare-changeinfo-i-sys.md)<!--DelEnd-->
-  - [DataProxyChangeInfo](arkts-datashare-dataproxychangeinfo-i.md)
-  - [DataProxyConfig](arkts-datashare-dataproxyconfig-i.md)
-  - [DataProxyGetResult](arkts-datashare-dataproxygetresult-i.md)
-  - [DataProxyHandle](arkts-datashare-dataproxyhandle-i.md)
-  - [DataProxyResult](arkts-datashare-dataproxyresult-i.md)<!--Del-->
-  - [DataShareHelper(system api)](arkts-datashare-datasharehelper-i-sys.md)<!--DelEnd--><!--Del-->
-  - [DataShareHelperOptions(system api)](arkts-datashare-datasharehelperoptions-i-sys.md)<!--DelEnd--><!--Del-->
-  - [OperationResult(system api)](arkts-datashare-operationresult-i-sys.md)<!--DelEnd-->
-  - [ProxyData](arkts-datashare-proxydata-i.md)<!--Del-->
-  - [PublishedDataChangeNode(system api)](arkts-datashare-publisheddatachangenode-i-sys.md)<!--DelEnd--><!--Del-->
-  - [PublishedItem(system api)](arkts-datashare-publisheditem-i-sys.md)<!--DelEnd--><!--Del-->
-  - [RdbDataChangeNode(system api)](arkts-datashare-rdbdatachangenode-i-sys.md)<!--DelEnd--><!--Del-->
-  - [Template(system api)](arkts-datashare-template-i-sys.md)<!--DelEnd--><!--Del-->
-  - [TemplateId(system api)](arkts-datashare-templateid-i-sys.md)<!--DelEnd--><!--Del-->
-  - [UpdateOperation(system api)](arkts-datashare-updateoperation-i-sys.md)<!--DelEnd--><!--Del-->
-  - [ChangeType(system api)](arkts-datashare-changetype-e-sys.md)<!--DelEnd-->
-  - [DataProxyErrorCode](arkts-datashare-dataproxyerrorcode-e.md)
-  - [DataProxyMaxValueLength](arkts-datashare-dataproxymaxvaluelength-e.md)
-  - [DataProxyType](arkts-datashare-dataproxytype-e.md)<!--Del-->
-  - [SubscriptionType(system api)](arkts-datashare-subscriptiontype-e-sys.md)<!--DelEnd-->
-- [@ohos.data.dataSharePredicates](arkts-data-datasharepredicates.md)<!--Del-->
-  - [DataSharePredicates(system api)](arkts-datasharepredicates-datasharepredicates-c-sys.md)<!--DelEnd-->
+  - [createRdbPredicates](arkts-arkdata-createrdbpredicates-f.md)
+  - [DataAbilityPredicates](arkts-arkdata-dataabilitypredicates-c.md)
+  - [ValueType](arkts-arkdata-valuetype-t.md)
+- [@ohos.data.dataShare](arkts-data-datashare.md)
+  - [createDataProxyHandle](arkts-arkdata-createdataproxyhandle-f.md)<!--Del-->
+  - [createDataShareHelper(system api)](arkts-arkdata-createdatasharehelper-f-sys.md)<!--DelEnd--><!--Del-->
+  - [disableSilentProxy(system api)](arkts-arkdata-disablesilentproxy-f-sys.md)<!--DelEnd--><!--Del-->
+  - [enableSilentProxy(system api)](arkts-arkdata-enablesilentproxy-f-sys.md)<!--DelEnd--><!--Del-->
+  - [ChangeInfo(system api)](arkts-arkdata-changeinfo-i-sys.md)<!--DelEnd-->
+  - [DataProxyChangeInfo](arkts-arkdata-dataproxychangeinfo-i.md)
+  - [DataProxyConfig](arkts-arkdata-dataproxyconfig-i.md)
+  - [DataProxyGetResult](arkts-arkdata-dataproxygetresult-i.md)
+  - [DataProxyHandle](arkts-arkdata-dataproxyhandle-i.md)
+  - [DataProxyResult](arkts-arkdata-dataproxyresult-i.md)<!--Del-->
+  - [DataShareHelper(system api)](arkts-arkdata-datasharehelper-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DataShareHelperOptions(system api)](arkts-arkdata-datasharehelperoptions-i-sys.md)<!--DelEnd--><!--Del-->
+  - [OperationResult(system api)](arkts-arkdata-operationresult-i-sys.md)<!--DelEnd-->
+  - [ProxyData](arkts-arkdata-proxydata-i.md)<!--Del-->
+  - [PublishedDataChangeNode(system api)](arkts-arkdata-publisheddatachangenode-i-sys.md)<!--DelEnd--><!--Del-->
+  - [PublishedItem(system api)](arkts-arkdata-publisheditem-i-sys.md)<!--DelEnd--><!--Del-->
+  - [RdbDataChangeNode(system api)](arkts-arkdata-rdbdatachangenode-i-sys.md)<!--DelEnd--><!--Del-->
+  - [Template(system api)](arkts-arkdata-template-i-sys.md)<!--DelEnd--><!--Del-->
+  - [TemplateId(system api)](arkts-arkdata-templateid-i-sys.md)<!--DelEnd--><!--Del-->
+  - [UpdateOperation(system api)](arkts-arkdata-updateoperation-i-sys.md)<!--DelEnd--><!--Del-->
+  - [ChangeType(system api)](arkts-arkdata-changetype-e-sys.md)<!--DelEnd-->
+  - [DataProxyErrorCode](arkts-arkdata-dataproxyerrorcode-e.md)
+  - [DataProxyMaxValueLength](arkts-arkdata-dataproxymaxvaluelength-e.md)
+  - [DataProxyType](arkts-arkdata-dataproxytype-e.md)<!--Del-->
+  - [SubscriptionType(system api)](arkts-arkdata-subscriptiontype-e-sys.md)<!--DelEnd-->
+- [@ohos.data.dataSharePredicates](arkts-data-datasharepredicates.md)
+  - [DataSharePredicates](arkts-arkdata-datasharepredicates-c.md)<!--Del-->
+  - [DataSharePredicates(system api)](arkts-arkdata-datasharepredicates-c-sys.md)<!--DelEnd-->
 - [@ohos.data.distributedData](arkts-data-distributeddata.md)
-  - [Constants](arkts-constants-n.md)   - [Constants](arkts-constants-con.md)
-  - [distributedData](arkts-distributeddata-n.md)
-   - [createKVManager](arkts-distributeddata-createkvmanager-f.md)
-   - [FieldNode](arkts-fieldnode-c.md)
-   - [Query](arkts-query-c.md)
-   - [Schema](arkts-schema-c.md)
-   - [ChangeNotification](arkts-changenotification-i.md)
-   - [DeviceKVStore](arkts-devicekvstore-i.md)
-   - [Entry](arkts-entry-i.md)
-   - [KVManager](arkts-kvmanager-i.md)
-   - [KVManagerConfig](arkts-kvmanagerconfig-i.md)
-   - [KVStore](arkts-kvstore-i.md)
-   - [KvStoreResultSet](arkts-kvstoreresultset-i.md)
-   - [Options](arkts-options-i.md)
-   - [SingleKVStore](arkts-singlekvstore-i.md)
-   - [UserInfo](arkts-userinfo-i.md)
-   - [Value](arkts-value-i.md)
-   - [KVStoreType](arkts-kvstoretype-e.md)
-   - [SecurityLevel](arkts-securitylevel-e.md)
-   - [SubscribeType](arkts-subscribetype-e.md)
-   - [SyncMode](arkts-syncmode-e.md)
-   - [UserType](arkts-usertype-e.md)
-   - [ValueType](arkts-valuetype-e.md)
+  - [distributedData](arkts-arkdata-distributeddata-n.md)
+    - [Constants](arkts-arkdata-constants-n.md)
+      - [Constants](arkts-arkdata-constants-con.md)
+    - [createKVManager](arkts-arkdata-createkvmanager-f.md)
+    - [FieldNode](arkts-arkdata-fieldnode-c.md)
+    - [Query](arkts-arkdata-query-c.md)
+    - [Schema](arkts-arkdata-schema-c.md)
+    - [ChangeNotification](arkts-arkdata-changenotification-i.md)
+    - [DeviceKVStore](arkts-arkdata-devicekvstore-i.md)
+    - [Entry](arkts-arkdata-entry-i.md)
+    - [KVManager](arkts-arkdata-kvmanager-i.md)
+    - [KVManagerConfig](arkts-arkdata-kvmanagerconfig-i.md)
+    - [KVStore](arkts-arkdata-kvstore-i.md)
+    - [KvStoreResultSet](arkts-arkdata-kvstoreresultset-i.md)
+    - [Options](arkts-arkdata-options-i.md)
+    - [SingleKVStore](arkts-arkdata-singlekvstore-i.md)
+    - [UserInfo](arkts-arkdata-userinfo-i.md)
+    - [Value](arkts-arkdata-value-i.md)
+    - [KVStoreType](arkts-arkdata-kvstoretype-e.md)
+    - [SecurityLevel](arkts-arkdata-securitylevel-e.md)
+    - [SubscribeType](arkts-arkdata-subscribetype-e.md)
+    - [SyncMode](arkts-arkdata-syncmode-e.md)
+    - [UserType](arkts-arkdata-usertype-e.md)
+    - [ValueType](arkts-arkdata-valuetype-e.md)
 - [@ohos.data.distributedDataObject](arkts-data-distributeddataobject.md)
-  - [create](arkts-distributeddataobject-create-f.md)
-  - [createDistributedObject](arkts-distributeddataobject-createdistributedobject-f.md)
-  - [genSessionId](arkts-distributeddataobject-gensessionid-f.md)
-  - [BindInfo](arkts-distributeddataobject-bindinfo-i.md)
-  - [DataObject](arkts-distributeddataobject-dataobject-i.md)
-  - [DistributedObject](arkts-distributeddataobject-distributedobject-i.md)
-  - [RevokeSaveSuccessResponse](arkts-distributeddataobject-revokesavesuccessresponse-i.md)
-  - [SaveSuccessResponse](arkts-distributeddataobject-savesuccessresponse-i.md)
-  - [DataObserver](arkts-distributeddataobject-dataobserver-t.md)
-  - [ProgressObserver](arkts-distributeddataobject-progressobserver-t.md)
-  - [StatusObserver](arkts-distributeddataobject-statusobserver-t.md)
+  - [create](arkts-arkdata-create-f.md)
+  - [createDistributedObject](arkts-arkdata-createdistributedobject-f.md)
+  - [genSessionId](arkts-arkdata-gensessionid-f.md)
+  - [BindInfo](arkts-arkdata-bindinfo-i.md)
+  - [DataObject](arkts-arkdata-dataobject-i.md)
+  - [DistributedObject](arkts-arkdata-distributedobject-i.md)
+  - [RevokeSaveSuccessResponse](arkts-arkdata-revokesavesuccessresponse-i.md)
+  - [SaveSuccessResponse](arkts-arkdata-savesuccessresponse-i.md)
+  - [DataObserver](arkts-arkdata-dataobserver-t.md)
+  - [ProgressObserver](arkts-arkdata-progressobserver-t.md)
+  - [StatusObserver](arkts-arkdata-statusobserver-t.md)
 - [@ohos.data.distributedKVStore](arkts-data-distributedkvstore.md)
-  - [createKVManager](arkts-distributedkvstore-createkvmanager-f.md)
-  - [FieldNode](arkts-distributedkvstore-fieldnode-c.md)
-  - [Query](arkts-distributedkvstore-query-c.md)
-  - [Schema](arkts-distributedkvstore-schema-c.md)
-  - [BackupConfig](arkts-distributedkvstore-backupconfig-i.md)
-  - [ChangeNotification](arkts-distributedkvstore-changenotification-i.md)
-  - [Constants](arkts-distributedkvstore-constants-i.md)
-  - [DeviceKVStore](arkts-distributedkvstore-devicekvstore-i.md)
-  - [Entry](arkts-distributedkvstore-entry-i.md)
-  - [KVManager](arkts-distributedkvstore-kvmanager-i.md)
-  - [KVManagerConfig](arkts-distributedkvstore-kvmanagerconfig-i.md)
-  - [KVStoreResultSet](arkts-distributedkvstore-kvstoreresultset-i.md)
-  - [Options](arkts-distributedkvstore-options-i.md)
-  - [SingleKVStore](arkts-distributedkvstore-singlekvstore-i.md)
-  - [Value](arkts-distributedkvstore-value-i.md)
-  - [Constants](arkts-distributedkvstore-constants-e.md)
-  - [KVStoreType](arkts-distributedkvstore-kvstoretype-e.md)
-  - [SecurityLevel](arkts-distributedkvstore-securitylevel-e.md)
-  - [SubscribeType](arkts-distributedkvstore-subscribetype-e.md)
-  - [SyncMode](arkts-distributedkvstore-syncmode-e.md)
-  - [ValueType](arkts-distributedkvstore-valuetype-e.md)
+  - [createKVManager](arkts-arkdata-createkvmanager-f.md)
+  - [FieldNode](arkts-arkdata-fieldnode-c.md)
+  - [Query](arkts-arkdata-query-c.md)
+  - [Schema](arkts-arkdata-schema-c.md)
+  - [BackupConfig](arkts-arkdata-backupconfig-i.md)
+  - [ChangeNotification](arkts-arkdata-changenotification-i.md)
+  - [Constants](arkts-arkdata-constants-i.md)
+  - [DeviceKVStore](arkts-arkdata-devicekvstore-i.md)<!--Del-->
+  - [DeviceKVStore(system api)](arkts-arkdata-devicekvstore-i-sys.md)<!--DelEnd-->
+  - [Entry](arkts-arkdata-entry-i.md)
+  - [KVManager](arkts-arkdata-kvmanager-i.md)
+  - [KVManagerConfig](arkts-arkdata-kvmanagerconfig-i.md)
+  - [KVStoreResultSet](arkts-arkdata-kvstoreresultset-i.md)
+  - [Options](arkts-arkdata-options-i.md)
+  - [SingleKVStore](arkts-arkdata-singlekvstore-i.md)<!--Del-->
+  - [SingleKVStore(system api)](arkts-arkdata-singlekvstore-i-sys.md)<!--DelEnd-->
+  - [Value](arkts-arkdata-value-i.md)
+  - [KVStoreType](arkts-arkdata-kvstoretype-e.md)
+  - [SecurityLevel](arkts-arkdata-securitylevel-e.md)
+  - [SubscribeType](arkts-arkdata-subscribetype-e.md)
+  - [SyncMode](arkts-arkdata-syncmode-e.md)
+  - [ValueType](arkts-arkdata-valuetype-e.md)
 - [@ohos.data.intelligence](arkts-data-intelligence.md)
-  - [getImageEmbeddingModel](arkts-intelligence-getimageembeddingmodel-f.md)
-  - [getTextEmbeddingModel](arkts-intelligence-gettextembeddingmodel-f.md)
-  - [getSupportedCloudModel](arkts-intelligence-getsupportedcloudmodel-f.md)
-  - [splitText](arkts-intelligence-splittext-f.md)
-  - [CloudModelInfo](arkts-intelligence-cloudmodelinfo-i.md)
-  - [ImageEmbedding](arkts-intelligence-imageembedding-i.md)
-  - [ModelConfig](arkts-intelligence-modelconfig-i.md)
-  - [SplitConfig](arkts-intelligence-splitconfig-i.md)
-  - [TextEmbedding](arkts-intelligence-textembedding-i.md)
-  - [Image](arkts-intelligence-image-t.md)
-  - [ModelVersion](arkts-intelligence-modelversion-e.md)
-  - [NetworkPolicy](arkts-intelligence-networkpolicy-e.md)
+  - [getImageEmbeddingModel](arkts-arkdata-getimageembeddingmodel-f.md)
+  - [getSupportedCloudModel](arkts-arkdata-getsupportedcloudmodel-f.md)
+  - [getTextEmbeddingModel](arkts-arkdata-gettextembeddingmodel-f.md)
+  - [splitText](arkts-arkdata-splittext-f.md)
+  - [CloudModelInfo](arkts-arkdata-cloudmodelinfo-i.md)
+  - [ImageEmbedding](arkts-arkdata-imageembedding-i.md)
+  - [ModelConfig](arkts-arkdata-modelconfig-i.md)
+  - [SplitConfig](arkts-arkdata-splitconfig-i.md)
+  - [TextEmbedding](arkts-arkdata-textembedding-i.md)
+  - [Image](arkts-arkdata-image-t.md)
+  - [ModelVersion](arkts-arkdata-modelversion-e.md)
+  - [NetworkPolicy](arkts-arkdata-networkpolicy-e.md)
 - [@ohos.data.preferences](arkts-data-preferences.md)
-  - [removePreferencesFromCache](arkts-preferences-removepreferencesfromcache-f.md)
-  - [getPreferencesSync](arkts-preferences-getpreferencessync-f.md)
-  - [isStorageTypeSupported](arkts-preferences-isstoragetypesupported-f.md)
-  - [getPreferences](arkts-preferences-getpreferences-f.md)
-  - [removePreferencesFromCacheSync](arkts-preferences-removepreferencesfromcachesync-f.md)
-  - [deletePreferences](arkts-preferences-deletepreferences-f.md)
-  - [Options](arkts-preferences-options-i.md)
-  - [Preferences](arkts-preferences-preferences-i.md)
-  - [RecordData](arkts-preferences-recorddata-t.md)
-  - [ValueType](arkts-preferences-valuetype-t.md)
-  - [ValueType](arkts-preferences-valuetype-t.md)
-  - [StorageType](arkts-preferences-storagetype-e.md)
-  - [Constants](arkts-preferences-con.md)
+  - [deletePreferences](arkts-arkdata-deletepreferences-f.md)
+  - [getPreferences](arkts-arkdata-getpreferences-f.md)
+  - [getPreferencesSync](arkts-arkdata-getpreferencessync-f.md)
+  - [isStorageTypeSupported](arkts-arkdata-isstoragetypesupported-f.md)
+  - [removePreferencesFromCache](arkts-arkdata-removepreferencesfromcache-f.md)
+  - [removePreferencesFromCacheSync](arkts-arkdata-removepreferencesfromcachesync-f.md)
+  - [Options](arkts-arkdata-options-i.md)
+  - [Preferences](arkts-arkdata-preferences-i.md)
+  - [ValueType](arkts-arkdata-valuetype-t.md)
+  - [StorageType](arkts-arkdata-storagetype-e.md)
+  - [Constants](arkts-arkdata-preferences-con.md)
 - [@ohos.data.rdb](arkts-data-rdb.md)
-  - [getRdbStore](arkts-rdb-getrdbstore-f.md)
-  - [deleteRdbStore](arkts-rdb-deleterdbstore-f.md)
-  - [RdbPredicates](arkts-rdb-rdbpredicates-c.md)
-  - [RdbStore](arkts-rdb-rdbstore-i.md)
-  - [StoreConfig](arkts-rdb-storeconfig-i.md)
-  - [ResultSet](arkts-rdb-resultset-t.md)
-  - [ValuesBucket](arkts-rdb-valuesbucket-t.md)
-  - [ValueType](arkts-rdb-valuetype-t.md)
-  - [SubscribeType](arkts-rdb-subscribetype-e.md)
-  - [SyncMode](arkts-rdb-syncmode-e.md)
+  - [deleteRdbStore](arkts-arkdata-deleterdbstore-f.md)
+  - [getRdbStore](arkts-arkdata-getrdbstore-f.md)
+  - [RdbPredicates](arkts-arkdata-rdbpredicates-c.md)
+  - [RdbStore](arkts-arkdata-rdbstore-i.md)
+  - [StoreConfig](arkts-arkdata-storeconfig-i.md)
+  - [ResultSet](arkts-arkdata-resultset-t.md)
+  - [ValuesBucket](arkts-arkdata-valuesbucket-t.md)
+  - [ValueType](arkts-arkdata-valuetype-t.md)
+  - [SubscribeType](arkts-arkdata-subscribetype-e.md)
+  - [SyncMode](arkts-arkdata-syncmode-e.md)
 - [@ohos.data.relationalStore](arkts-data-relationalstore.md)
-  - [isVectorSupported](arkts-relationalstore-isvectorsupported-f.md)
-  - [getRdbStore](arkts-relationalstore-getrdbstore-f.md)
-  - [deleteRdbStore](arkts-relationalstore-deleterdbstore-f.md)
-  - [getUpdateSqlInfo](arkts-relationalstore-getupdatesqlinfo-f.md)
-  - [getInsertSqlInfo](arkts-relationalstore-getinsertsqlinfo-f.md)
-  - [getQuerySqlInfo](arkts-relationalstore-getquerysqlinfo-f.md)
-  - [getDeleteSqlInfo](arkts-relationalstore-getdeletesqlinfo-f.md)
-  - [getRdbStoreSync](arkts-relationalstore-getrdbstoresync-f.md)
-  - [isTokenizerSupported](arkts-relationalstore-istokenizersupported-f.md)
-  - [LiteResultSet](arkts-relationalstore-literesultset-c.md)
-  - [RdbPredicates](arkts-relationalstore-rdbpredicates-c.md)
-  - [Asset](arkts-relationalstore-asset-i.md)
-  - [ChangeInfo](arkts-relationalstore-changeinfo-i.md)
-  - [CloudSyncConfig](arkts-relationalstore-cloudsyncconfig-i.md)
-  - [CryptoParam](arkts-relationalstore-cryptoparam-i.md)
-  - [DistributedConfig](arkts-relationalstore-distributedconfig-i.md)<!--Del-->
-  - [DistributedInfo(system api)](arkts-relationalstore-distributedinfo-i-sys.md)<!--DelEnd-->
-  - [ExceptionMessage](arkts-relationalstore-exceptionmessage-i.md)
-  - [ProgressDetails](arkts-relationalstore-progressdetails-i.md)
-  - [RdbStore](arkts-relationalstore-rdbstore-i.md)<!--Del-->
-  - [Reference(system api)](arkts-relationalstore-reference-i-sys.md)<!--DelEnd-->
-  - [Result](arkts-relationalstore-result-i.md)
-  - [ResultSet](arkts-relationalstore-resultset-i.md)
-  - [ReturningConfig](arkts-relationalstore-returningconfig-i.md)
-  - [SqlExecutionInfo](arkts-relationalstore-sqlexecutioninfo-i.md)
-  - [SqlInfo](arkts-relationalstore-sqlinfo-i.md)
-  - [Statistic](arkts-relationalstore-statistic-i.md)
-  - [StoreConfig](arkts-relationalstore-storeconfig-i.md)
-  - [SyncResult](arkts-relationalstore-syncresult-i.md)
-  - [TableDetails](arkts-relationalstore-tabledetails-i.md)
-  - [Transaction](arkts-relationalstore-transaction-i.md)
-  - [TransactionOptions](arkts-relationalstore-transactionoptions-i.md)
-  - [Assets](arkts-relationalstore-assets-t.md)
-  - [ModifyTime](arkts-relationalstore-modifytime-t.md)
-  - [PRIKeyType](arkts-relationalstore-prikeytype-t.md)
-  - [RowData](arkts-relationalstore-rowdata-t.md)
-  - [RowsData](arkts-relationalstore-rowsdata-t.md)
-  - [UTCTime](arkts-relationalstore-utctime-t.md)
-  - [ValuesBucket](arkts-relationalstore-valuesbucket-t.md)
-  - [ValueType](arkts-relationalstore-valuetype-t.md)
-  - [AssetConflictPolicy](arkts-relationalstore-assetconflictpolicy-e.md)
-  - [AssetStatus](arkts-relationalstore-assetstatus-e.md)
-  - [ChangeType](arkts-relationalstore-changetype-e.md)
-  - [ColumnType](arkts-relationalstore-columntype-e.md)
-  - [ConflictResolution](arkts-relationalstore-conflictresolution-e.md)<!--Del-->
-  - [DistributedField(system api)](arkts-relationalstore-distributedfield-e-sys.md)<!--DelEnd--><!--Del-->
-  - [DistributedOrigin(system api)](arkts-relationalstore-distributedorigin-e-sys.md)<!--DelEnd-->
-  - [DistributedTableType](arkts-relationalstore-distributedtabletype-e.md)
-  - [DistributedType](arkts-relationalstore-distributedtype-e.md)
-  - [EncryptionAlgo](arkts-relationalstore-encryptionalgo-e.md)
-  - [Field](arkts-relationalstore-field-e.md)<!--Del-->
-  - [HAMode(system api)](arkts-relationalstore-hamode-e-sys.md)<!--DelEnd-->
-  - [HmacAlgo](arkts-relationalstore-hmacalgo-e.md)
-  - [KdfAlgo](arkts-relationalstore-kdfalgo-e.md)
-  - [Origin](arkts-relationalstore-origin-e.md)
-  - [Progress](arkts-relationalstore-progress-e.md)
-  - [ProgressCode](arkts-relationalstore-progresscode-e.md)
-  - [RebuildType](arkts-relationalstore-rebuildtype-e.md)
-  - [SecurityLevel](arkts-relationalstore-securitylevel-e.md)
-  - [SubscribeType](arkts-relationalstore-subscribetype-e.md)
-  - [SyncMode](arkts-relationalstore-syncmode-e.md)
-  - [SyncResultCode](arkts-relationalstore-syncresultcode-e.md)
-  - [Tokenizer](arkts-relationalstore-tokenizer-e.md)
-  - [TransactionType](arkts-relationalstore-transactiontype-e.md)
+  - [deleteRdbStore](arkts-arkdata-deleterdbstore-f.md)
+  - [getDeleteSqlInfo](arkts-arkdata-getdeletesqlinfo-f.md)
+  - [getInsertSqlInfo](arkts-arkdata-getinsertsqlinfo-f.md)
+  - [getQuerySqlInfo](arkts-arkdata-getquerysqlinfo-f.md)
+  - [getRdbStore](arkts-arkdata-getrdbstore-f.md)
+  - [getRdbStoreSync](arkts-arkdata-getrdbstoresync-f.md)
+  - [getUpdateSqlInfo](arkts-arkdata-getupdatesqlinfo-f.md)
+  - [isTokenizerSupported](arkts-arkdata-istokenizersupported-f.md)
+  - [isVectorSupported](arkts-arkdata-isvectorsupported-f.md)
+  - [LiteResultSet](arkts-arkdata-literesultset-c.md)<!--Del-->
+  - [LiteResultSet(system api)](arkts-arkdata-literesultset-c-sys.md)<!--DelEnd-->
+  - [RdbPredicates](arkts-arkdata-rdbpredicates-c.md)
+  - [Asset](arkts-arkdata-asset-i.md)
+  - [ChangeInfo](arkts-arkdata-changeinfo-i.md)
+  - [CloudSyncConfig](arkts-arkdata-cloudsyncconfig-i.md)<!--Del-->
+  - [CloudSyncConfig(system api)](arkts-arkdata-cloudsyncconfig-i-sys.md)<!--DelEnd-->
+  - [CryptoParam](arkts-arkdata-cryptoparam-i.md)
+  - [DistributedConfig](arkts-arkdata-distributedconfig-i.md)<!--Del-->
+  - [DistributedConfig(system api)](arkts-arkdata-distributedconfig-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DistributedInfo(system api)](arkts-arkdata-distributedinfo-i-sys.md)<!--DelEnd-->
+  - [ExceptionMessage](arkts-arkdata-exceptionmessage-i.md)
+  - [ProgressDetails](arkts-arkdata-progressdetails-i.md)
+  - [RdbStore](arkts-arkdata-rdbstore-i.md)<!--Del-->
+  - [RdbStore(system api)](arkts-arkdata-rdbstore-i-sys.md)<!--DelEnd--><!--Del-->
+  - [Reference(system api)](arkts-arkdata-reference-i-sys.md)<!--DelEnd-->
+  - [Result](arkts-arkdata-result-i.md)
+  - [ResultSet](arkts-arkdata-resultset-i.md)<!--Del-->
+  - [ResultSet(system api)](arkts-arkdata-resultset-i-sys.md)<!--DelEnd-->
+  - [ReturningConfig](arkts-arkdata-returningconfig-i.md)
+  - [SqlExecutionInfo](arkts-arkdata-sqlexecutioninfo-i.md)
+  - [SqlInfo](arkts-arkdata-sqlinfo-i.md)
+  - [Statistic](arkts-arkdata-statistic-i.md)
+  - [StoreConfig](arkts-arkdata-storeconfig-i.md)<!--Del-->
+  - [StoreConfig(system api)](arkts-arkdata-storeconfig-i-sys.md)<!--DelEnd-->
+  - [SyncResult](arkts-arkdata-syncresult-i.md)
+  - [TableDetails](arkts-arkdata-tabledetails-i.md)
+  - [Transaction](arkts-arkdata-transaction-i.md)
+  - [TransactionOptions](arkts-arkdata-transactionoptions-i.md)
+  - [Assets](arkts-arkdata-assets-t.md)
+  - [ModifyTime](arkts-arkdata-modifytime-t.md)
+  - [PRIKeyType](arkts-arkdata-prikeytype-t.md)
+  - [RowData](arkts-arkdata-rowdata-t.md)
+  - [RowsData](arkts-arkdata-rowsdata-t.md)
+  - [UTCTime](arkts-arkdata-utctime-t.md)
+  - [ValuesBucket](arkts-arkdata-valuesbucket-t.md)
+  - [ValueType](arkts-arkdata-valuetype-t.md)
+  - [AssetConflictPolicy](arkts-arkdata-assetconflictpolicy-e.md)
+  - [AssetStatus](arkts-arkdata-assetstatus-e.md)
+  - [ChangeType](arkts-arkdata-changetype-e.md)
+  - [ColumnType](arkts-arkdata-columntype-e.md)
+  - [ConflictResolution](arkts-arkdata-conflictresolution-e.md)<!--Del-->
+  - [DistributedField(system api)](arkts-arkdata-distributedfield-e-sys.md)<!--DelEnd--><!--Del-->
+  - [DistributedOrigin(system api)](arkts-arkdata-distributedorigin-e-sys.md)<!--DelEnd-->
+  - [DistributedTableType](arkts-arkdata-distributedtabletype-e.md)
+  - [DistributedType](arkts-arkdata-distributedtype-e.md)
+  - [EncryptionAlgo](arkts-arkdata-encryptionalgo-e.md)
+  - [Field](arkts-arkdata-field-e.md)<!--Del-->
+  - [HAMode(system api)](arkts-arkdata-hamode-e-sys.md)<!--DelEnd-->
+  - [HmacAlgo](arkts-arkdata-hmacalgo-e.md)
+  - [KdfAlgo](arkts-arkdata-kdfalgo-e.md)
+  - [Origin](arkts-arkdata-origin-e.md)
+  - [Progress](arkts-arkdata-progress-e.md)
+  - [ProgressCode](arkts-arkdata-progresscode-e.md)
+  - [RebuildType](arkts-arkdata-rebuildtype-e.md)
+  - [SecurityLevel](arkts-arkdata-securitylevel-e.md)
+  - [SubscribeType](arkts-arkdata-subscribetype-e.md)
+  - [SyncMode](arkts-arkdata-syncmode-e.md)
+  - [SyncResultCode](arkts-arkdata-syncresultcode-e.md)
+  - [Tokenizer](arkts-arkdata-tokenizer-e.md)
+  - [TransactionType](arkts-arkdata-transactiontype-e.md)
 - [@ohos.data.sendablePreferences](arkts-data-sendablepreferences.md)
-  - [removePreferencesFromCache](arkts-sendablepreferences-removepreferencesfromcache-f.md)
-  - [getPreferencesSync](arkts-sendablepreferences-getpreferencessync-f.md)
-  - [getPreferences](arkts-sendablepreferences-getpreferences-f.md)
-  - [removePreferencesFromCacheSync](arkts-sendablepreferences-removepreferencesfromcachesync-f.md)
-  - [deletePreferences](arkts-sendablepreferences-deletepreferences-f.md)
-  - [Options](arkts-sendablepreferences-options-i.md)
-  - [Preferences](arkts-sendablepreferences-preferences-i.md)
-  - [Constants](arkts-sendablepreferences-con.md)
+  - [deletePreferences](arkts-arkdata-deletepreferences-f.md)
+  - [getPreferences](arkts-arkdata-getpreferences-f.md)
+  - [getPreferencesSync](arkts-arkdata-getpreferencessync-f.md)
+  - [removePreferencesFromCache](arkts-arkdata-removepreferencesfromcache-f.md)
+  - [removePreferencesFromCacheSync](arkts-arkdata-removepreferencesfromcachesync-f.md)
+  - [Options](arkts-arkdata-options-i.md)
+  - [Preferences](arkts-arkdata-preferences-i.md)
+  - [Constants](arkts-arkdata-sendablepreferences-con.md)
 - [@ohos.data.sendableRelationalStore](arkts-data-sendablerelationalstore.md)
-  - [toSendableAsset](arkts-sendablerelationalstore-tosendableasset-f.md)
-  - [fromSendableValues](arkts-sendablerelationalstore-fromsendablevalues-f.md)
-  - [fromSendableAsset](arkts-sendablerelationalstore-fromsendableasset-f.md)
-  - [fromSendableValuesBucket](arkts-sendablerelationalstore-fromsendablevaluesbucket-f.md)
-  - [toSendableValues](arkts-sendablerelationalstore-tosendablevalues-f.md)
-  - [toSendableValuesBucket](arkts-sendablerelationalstore-tosendablevaluesbucket-f.md)
-  - [Asset](arkts-sendablerelationalstore-asset-i.md)
-  - [Assets](arkts-sendablerelationalstore-assets-t.md)
-  - [NonSendableAsset](arkts-sendablerelationalstore-nonsendableasset-t.md)
-  - [NonSendableBucket](arkts-sendablerelationalstore-nonsendablebucket-t.md)
-  - [NonSendableValues](arkts-sendablerelationalstore-nonsendablevalues-t.md)
-  - [ValuesBucket](arkts-sendablerelationalstore-valuesbucket-t.md)
-  - [ValueType](arkts-sendablerelationalstore-valuetype-t.md)
+  - [fromSendableAsset](arkts-arkdata-fromsendableasset-f.md)
+  - [fromSendableValues](arkts-arkdata-fromsendablevalues-f.md)
+  - [fromSendableValuesBucket](arkts-arkdata-fromsendablevaluesbucket-f.md)
+  - [toSendableAsset](arkts-arkdata-tosendableasset-f.md)
+  - [toSendableValues](arkts-arkdata-tosendablevalues-f.md)
+  - [toSendableValuesBucket](arkts-arkdata-tosendablevaluesbucket-f.md)
+  - [Asset](arkts-arkdata-asset-i.md)
+  - [Assets](arkts-arkdata-assets-t.md)
+  - [NonSendableAsset](arkts-arkdata-nonsendableasset-t.md)
+  - [NonSendableBucket](arkts-arkdata-nonsendablebucket-t.md)
+  - [NonSendableValues](arkts-arkdata-nonsendablevalues-t.md)
+  - [ValuesBucket](arkts-arkdata-valuesbucket-t.md)
+  - [ValueType](arkts-arkdata-valuetype-t.md)
 - [@ohos.data.storage](arkts-data-storage.md)
-  - [removeStorageFromCacheSync](arkts-storage-removestoragefromcachesync-f.md)
-  - [getStorageSync](arkts-storage-getstoragesync-f.md)
-  - [removeStorageFromCache](arkts-storage-removestoragefromcache-f.md)
-  - [deleteStorageSync](arkts-storage-deletestoragesync-f.md)
-  - [getStorage](arkts-storage-getstorage-f.md)
-  - [deleteStorage](arkts-storage-deletestorage-f.md)
-  - [Storage](arkts-storage-storage-i.md)
-  - [StorageObserver](arkts-storage-storageobserver-i.md)
-  - [ValueType](arkts-storage-valuetype-t.md)
-  - [Constants](arkts-storage-con.md)
+  - [deleteStorage](arkts-arkdata-deletestorage-f.md)
+  - [deleteStorageSync](arkts-arkdata-deletestoragesync-f.md)
+  - [getStorage](arkts-arkdata-getstorage-f.md)
+  - [getStorageSync](arkts-arkdata-getstoragesync-f.md)
+  - [removeStorageFromCache](arkts-arkdata-removestoragefromcache-f.md)
+  - [removeStorageFromCacheSync](arkts-arkdata-removestoragefromcachesync-f.md)
+  - [Storage](arkts-arkdata-storage-i.md)
+  - [StorageObserver](arkts-arkdata-storageobserver-i.md)
+  - [ValueType](arkts-arkdata-valuetype-t.md)
+  - [Constants](arkts-arkdata-storage-con.md)
 - [@ohos.data.unifiedDataChannel](arkts-data-unifieddatachannel.md)
-  - [convertRecordsToEntries](arkts-unifieddatachannel-convertrecordstoentries-f.md)
-  - [deleteData](arkts-unifieddatachannel-deletedata-f.md)<!--Del-->
-  - [setAppShareOptions(system api)](arkts-unifieddatachannel-setappshareoptions-f-sys.md)<!--DelEnd-->
-  - [updateData](arkts-unifieddatachannel-updatedata-f.md)
-  - [queryData](arkts-unifieddatachannel-querydata-f.md)
-  - [insertData](arkts-unifieddatachannel-insertdata-f.md)<!--Del-->
-  - [removeAppShareOptions(system api)](arkts-unifieddatachannel-removeappshareoptions-f-sys.md)<!--DelEnd-->
-  - [ApplicationDefinedRecord](arkts-unifieddatachannel-applicationdefinedrecord-c.md)
-  - [Audio](arkts-unifieddatachannel-audio-c.md)
-  - [File](arkts-unifieddatachannel-file-c.md)
-  - [Folder](arkts-unifieddatachannel-folder-c.md)
-  - [HTML](arkts-unifieddatachannel-html-c.md)
-  - [Hyperlink](arkts-unifieddatachannel-hyperlink-c.md)
-  - [Image](arkts-unifieddatachannel-image-c.md)
-  - [PlainText](arkts-unifieddatachannel-plaintext-c.md)
-  - [Summary](arkts-unifieddatachannel-summary-c.md)
-  - [SystemDefinedAppItem](arkts-unifieddatachannel-systemdefinedappitem-c.md)
-  - [SystemDefinedForm](arkts-unifieddatachannel-systemdefinedform-c.md)
-  - [SystemDefinedPixelMap](arkts-unifieddatachannel-systemdefinedpixelmap-c.md)
-  - [SystemDefinedRecord](arkts-unifieddatachannel-systemdefinedrecord-c.md)
-  - [Text](arkts-unifieddatachannel-text-c.md)
-  - [UnifiedData](arkts-unifieddatachannel-unifieddata-c.md)
-  - [UnifiedDataProperties](arkts-unifieddatachannel-unifieddataproperties-c.md)
-  - [UnifiedRecord](arkts-unifieddatachannel-unifiedrecord-c.md)
-  - [Video](arkts-unifieddatachannel-video-c.md)
-  - [DataLoadInfo](arkts-unifieddatachannel-dataloadinfo-i.md)
-  - [DataLoadParams](arkts-unifieddatachannel-dataloadparams-i.md)
-  - [GetDataParams](arkts-unifieddatachannel-getdataparams-i.md)
-  - [Options](arkts-unifieddatachannel-options-i.md)
-  - [ProgressInfo](arkts-unifieddatachannel-progressinfo-i.md)
-  - [DataLoadHandler](arkts-unifieddatachannel-dataloadhandler-t.md)
-  - [DataProgressListener](arkts-unifieddatachannel-dataprogresslistener-t.md)
-  - [DelayedDataLoadHandler](arkts-unifieddatachannel-delayeddataloadhandler-t.md)
-  - [GetDelayData](arkts-unifieddatachannel-getdelaydata-t.md)
-  - [ValueType](arkts-unifieddatachannel-valuetype-t.md)
-  - [ValueType](arkts-unifieddatachannel-valuetype-t.md)
-  - [FileConflictOptions](arkts-unifieddatachannel-fileconflictoptions-e.md)
-  - [Intention](arkts-unifieddatachannel-intention-e.md)
-  - [ListenerStatus](arkts-unifieddatachannel-listenerstatus-e.md)
-  - [ProgressIndicator](arkts-unifieddatachannel-progressindicator-e.md)
-  - [ShareOptions](arkts-unifieddatachannel-shareoptions-e.md)
-  - [UriPermission](arkts-unifieddatachannel-uripermission-e.md)
-  - [Visibility](arkts-unifieddatachannel-visibility-e.md)
+  - [convertRecordsToEntries](arkts-arkdata-convertrecordstoentries-f.md)
+  - [deleteData](arkts-arkdata-deletedata-f.md)
+  - [insertData](arkts-arkdata-insertdata-f.md)
+  - [queryData](arkts-arkdata-querydata-f.md)<!--Del-->
+  - [removeAppShareOptions(system api)](arkts-arkdata-removeappshareoptions-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setAppShareOptions(system api)](arkts-arkdata-setappshareoptions-f-sys.md)<!--DelEnd-->
+  - [updateData](arkts-arkdata-updatedata-f.md)
+  - [ApplicationDefinedRecord](arkts-arkdata-applicationdefinedrecord-c.md)
+  - [Audio](arkts-arkdata-audio-c.md)
+  - [File](arkts-arkdata-file-c.md)
+  - [Folder](arkts-arkdata-folder-c.md)
+  - [HTML](arkts-arkdata-html-c.md)
+  - [Hyperlink](arkts-arkdata-hyperlink-c.md)
+  - [Image](arkts-arkdata-image-c.md)
+  - [PlainText](arkts-arkdata-plaintext-c.md)
+  - [Summary](arkts-arkdata-summary-c.md)<!--Del-->
+  - [SystemDefinedAppItem(system api)](arkts-arkdata-systemdefinedappitem-c.md)<!--DelEnd--><!--Del-->
+  - [SystemDefinedForm(system api)](arkts-arkdata-systemdefinedform-c.md)<!--DelEnd--><!--Del-->
+  - [SystemDefinedPixelMap(system api)](arkts-arkdata-systemdefinedpixelmap-c.md)<!--DelEnd--><!--Del-->
+  - [SystemDefinedRecord(system api)](arkts-arkdata-systemdefinedrecord-c.md)<!--DelEnd-->
+  - [Text](arkts-arkdata-text-c.md)
+  - [UnifiedData](arkts-arkdata-unifieddata-c.md)
+  - [UnifiedDataProperties](arkts-arkdata-unifieddataproperties-c.md)
+  - [UnifiedRecord](arkts-arkdata-unifiedrecord-c.md)
+  - [Video](arkts-arkdata-video-c.md)
+  - [DataLoadInfo](arkts-arkdata-dataloadinfo-i.md)
+  - [DataLoadParams](arkts-arkdata-dataloadparams-i.md)
+  - [GetDataParams](arkts-arkdata-getdataparams-i.md)
+  - [Options](arkts-arkdata-options-i.md)
+  - [ProgressInfo](arkts-arkdata-progressinfo-i.md)
+  - [DataLoadHandler](arkts-arkdata-dataloadhandler-t.md)
+  - [DataProgressListener](arkts-arkdata-dataprogresslistener-t.md)
+  - [DelayedDataLoadHandler](arkts-arkdata-delayeddataloadhandler-t.md)
+  - [GetDelayData](arkts-arkdata-getdelaydata-t.md)
+  - [ValueType](arkts-arkdata-valuetype-t.md)
+  - [FileConflictOptions](arkts-arkdata-fileconflictoptions-e.md)
+  - [Intention](arkts-arkdata-intention-e.md)<!--Del-->
+  - [Intention(system api)](arkts-arkdata-intention-e-sys.md)<!--DelEnd-->
+  - [ListenerStatus](arkts-arkdata-listenerstatus-e.md)
+  - [ProgressIndicator](arkts-arkdata-progressindicator-e.md)
+  - [ShareOptions](arkts-arkdata-shareoptions-e.md)
+  - [UriPermission](arkts-arkdata-uripermission-e.md)
+  - [Visibility](arkts-arkdata-visibility-e.md)
 - [@ohos.data.uniformDataStruct](arkts-data-uniformdatastruct.md)
-  - [ContentForm](arkts-uniformdatastruct-contentform-i.md)
-  - [FileUri](arkts-uniformdatastruct-fileuri-i.md)
-  - [Form](arkts-uniformdatastruct-form-i.md)
-  - [HTML](arkts-uniformdatastruct-html-i.md)
-  - [Hyperlink](arkts-uniformdatastruct-hyperlink-i.md)
-  - [OpenHarmonyAppItem](arkts-uniformdatastruct-openharmonyappitem-i.md)
-  - [PixelMap](arkts-uniformdatastruct-pixelmap-i.md)
-  - [PlainText](arkts-uniformdatastruct-plaintext-i.md)
+  - [ContentForm](arkts-arkdata-contentform-i.md)
+  - [FileUri](arkts-arkdata-fileuri-i.md)
+  - [Form](arkts-arkdata-form-i.md)
+  - [HTML](arkts-arkdata-html-i.md)
+  - [Hyperlink](arkts-arkdata-hyperlink-i.md)
+  - [OpenHarmonyAppItem](arkts-arkdata-openharmonyappitem-i.md)
+  - [PixelMap](arkts-arkdata-pixelmap-i.md)
+  - [PlainText](arkts-arkdata-plaintext-i.md)
 - [@ohos.data.uniformTypeDescriptor](arkts-data-uniformtypedescriptor.md)
-  - [getUniformDataTypeByMIMEType](arkts-uniformtypedescriptor-getuniformdatatypebymimetype-f.md)
-  - [getTypeDescriptor](arkts-uniformtypedescriptor-gettypedescriptor-f.md)<!--Del-->
-  - [unregisterTypeDescriptors(system api)](arkts-uniformtypedescriptor-unregistertypedescriptors-f-sys.md)<!--DelEnd-->
-  - [getUniformDataTypesByFilenameExtension](arkts-uniformtypedescriptor-getuniformdatatypesbyfilenameextension-f.md)<!--Del-->
-  - [registerTypeDescriptors(system api)](arkts-uniformtypedescriptor-registertypedescriptors-f-sys.md)<!--DelEnd-->
-  - [getUniformDataTypeByFilenameExtension](arkts-uniformtypedescriptor-getuniformdatatypebyfilenameextension-f.md)
-  - [getUniformDataTypesByMIMEType](arkts-uniformtypedescriptor-getuniformdatatypesbymimetype-f.md)
-  - [TypeDescriptor](arkts-uniformtypedescriptor-typedescriptor-c.md)
-  - [UniformDataType](arkts-uniformtypedescriptor-uniformdatatype-e.md)
+  - [getTypeDescriptor](arkts-arkdata-gettypedescriptor-f.md)
+  - [getUniformDataTypeByFilenameExtension](arkts-arkdata-getuniformdatatypebyfilenameextension-f.md)
+  - [getUniformDataTypeByMIMEType](arkts-arkdata-getuniformdatatypebymimetype-f.md)
+  - [getUniformDataTypesByFilenameExtension](arkts-arkdata-getuniformdatatypesbyfilenameextension-f.md)
+  - [getUniformDataTypesByMIMEType](arkts-arkdata-getuniformdatatypesbymimetype-f.md)<!--Del-->
+  - [registerTypeDescriptors(system api)](arkts-arkdata-registertypedescriptors-f-sys.md)<!--DelEnd--><!--Del-->
+  - [unregisterTypeDescriptors(system api)](arkts-arkdata-unregistertypedescriptors-f-sys.md)<!--DelEnd-->
+  - [TypeDescriptor](arkts-arkdata-typedescriptor-c.md)
+  - [UniformDataType](arkts-arkdata-uniformdatatype-e.md)
 - [@system.storage](arkts-storage.md)
-  - [Storage](arkts-storage-c.md)
-  - [ClearStorageOptions](arkts-clearstorageoptions-i.md)
-  - [DeleteStorageOptions](arkts-deletestorageoptions-i.md)
-  - [GetStorageOptions](arkts-getstorageoptions-i.md)
-  - [SetStorageOptions](arkts-setstorageoptions-i.md)
+  - [Storage](arkts-arkdata-storage-c.md)
+  - [ClearStorageOptions](arkts-arkdata-clearstorageoptions-i.md)
+  - [DeleteStorageOptions](arkts-arkdata-deletestorageoptions-i.md)
+  - [GetStorageOptions](arkts-arkdata-getstorageoptions-i.md)
+  - [SetStorageOptions](arkts-arkdata-setstorageoptions-i.md)
+- data<!--arkts-arkdata-data-->
+  - [resultSet](arkts-resultset.md)
+    - [ResultSet](arkts-arkdata-resultset-depr-i.md)

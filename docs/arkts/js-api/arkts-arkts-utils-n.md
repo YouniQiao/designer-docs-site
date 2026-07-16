@@ -7,7 +7,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { ArkTSUtils } from '@arkts.utils';
+import { ArkTSUtils } from '@kit.ArkTS';
 ```
 
 ## Summary
@@ -16,8 +16,8 @@ import { ArkTSUtils } from '@arkts.utils';
 
 | Name | Description |
 | --- | --- |
-| [locks](arkts-arkts-utils-locks-n.md) | Asynchronous lock. |
-| [ASON](arkts-arkts-utils-ason-n.md) | ArkTS JSON utils. |
+| [locks](arkts-arkts-locks-n.md) | Asynchronous lock. |
+| [ASON](arkts-arkts-ason-n.md) | ArkTS JSON utils. |
 
 ### Functions
 

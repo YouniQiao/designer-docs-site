@@ -8,9 +8,11 @@ import { StaticSubscriberExtensionAbility } from '@kit.BasicServicesKit';
 
 ## Summary
 
-### Classes
+<!--Del-->
+### Classes（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[StaticSubscriberExtensionAbility](arkts-staticsubscriberextensionability-c.md) | StaticSubscriberExtensionAbility模块提供静态订阅者ExtensionAbility类别的能力。 |
+| [StaticSubscriberExtensionAbility](arkts-basicservices-staticsubscriberextensionability-c-sys.md) | The **StaticSubscriberExtensionAbility** module provides Extension abilities for static subscribers. |
+<!--DelEnd-->
 
