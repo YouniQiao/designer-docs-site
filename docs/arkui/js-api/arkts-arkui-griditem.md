@@ -25,6 +25,9 @@ The **GridItem** component provides a single item in a grid.
 > position of **GridItem** components. For best practices, see
 > [Optimizing Frame Loss for Grid Component Loading](https://developer.huawei.com/consumer/en/doc/best-practices/bpta-improve_grid_performance).
 
+## Child Components
+
+This component can contain a single child component.
 
 ## GridItem
 
@@ -37,6 +40,8 @@ Creates a **GridItem** component.
 **Since:** 7
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-GridItemInterface-(value?: GridItemOptions): GridItemAttribute--><!--Device-GridItemInterface-(value?: GridItemOptions): GridItemAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

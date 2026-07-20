@@ -1,6 +1,6 @@
 # PluginComponent
 
-提供插件组件。
+定义PluginComponent组件。
 
 
 ## PluginComponent
@@ -9,10 +9,11 @@
 PluginComponent(options: PluginComponentOptions)
 ```
 
-设置插件时调用。
-AnonyMous Object Rectification
+设置插件时调用。AnonyMous Object Rectification
 
 **起始版本：** 18
+
+<!--Device-PluginComponentInterface-(options: PluginComponentOptions): PluginComponentAttribute--><!--Device-PluginComponentInterface-(options: PluginComponentOptions): PluginComponentAttribute-End-->
 
 **系统能力：** SystemCapability.ArkUI.ArkUI.Full
 

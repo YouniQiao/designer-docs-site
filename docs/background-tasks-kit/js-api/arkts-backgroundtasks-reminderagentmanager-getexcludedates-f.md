@@ -1,0 +1,59 @@
+# getExcludeDates
+
+## Modules to Import
+
+```TypeScript
+import { reminderAgentManager } from '@kit.BackgroundTasksKit';
+```
+
+## getExcludeDates
+
+```TypeScript
+function getExcludeDates(reminderId: number): Promise<Array<Date>>
+```
+
+Obtains all non-reminder dates for a recurring calendar reminder with a specific ID. This API uses a promise to return the result.
+
+**Since:** 12
+
+<!--Device-reminderAgentManager-function getExcludeDates(reminderId: int): Promise<Array<Date>>--><!--Device-reminderAgentManager-function getExcludeDates(reminderId: int): Promise<Array<Date>>-End-->
+
+**System capability:** SystemCapability.Notification.ReminderAgent
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| reminderId | number | Yes | ID of the agent-powered reminder to be queried.The reminder ID is returned when the [publishReminder](arkts-backgroundtasks-reminderagentmanager-publishreminder-f.md#publishreminder-1)API is called. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<Date>> | Promise used to return all the non-reminder dates. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
+| [1700003](../../apis-backgroundtasks-kit/errorcode-reminderAgentManager.md#1700003-nonexistent-reminder) | The reminder does not exist. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+import { reminderAgentManager } from '@kit.BackgroundTasksKit';
+
+let reminderId: number = 1;
+reminderAgentManager.getExcludeDates(reminderId).then((dates) => {
+  console.info("getExcludeDates promise length: " + dates.length);
+  for (let i = 0; i < dates.length; i++) {
+    console.info("getExcludeDates promise date is: " + dates[i].toString());
+  }
+}).catch((err: BusinessError) => {
+  console.error("promise err code:" + err.code + " message:" + err.message);
+});
+
+```
+

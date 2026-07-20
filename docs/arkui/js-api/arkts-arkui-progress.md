@@ -3,6 +3,9 @@
 The **Progress** component represents a progress indicator that displays the progress of content loading or an
 operation.
 
+## Child Components
+
+Not supported
 
 ## Progress
 
@@ -17,6 +20,8 @@ Creates a progress indicator.
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
+
+<!--Device-ProgressInterface-<Type extends keyof ProgressStyleMap>(options: ProgressOptions<Type>): ProgressAttribute<Type>--><!--Device-ProgressInterface-<Type extends keyof ProgressStyleMap>(options: ProgressOptions<Type>): ProgressAttribute<Type>-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

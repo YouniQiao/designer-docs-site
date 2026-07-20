@@ -52,10 +52,10 @@ callMethod(method: Method): Promise<Method>
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Non-system applications are not allowed to use system APIs. |
-| 36100003 | NearLink disabled. |
-| 36100043 | Invalid UUID. |
-| 36100044 | NearLink standard UUID not allowed. |
-| 36100099 | Operation failed. |
+| [36100003](../errorcode-nearlink.md#36100003--星闪关闭) | NearLink disabled. |
+| [36100043](../errorcode-nearlink.md#36100043-无效uuid) | Invalid UUID. |
+| [36100044](../errorcode-nearlink.md#36100044-禁止使用星闪标准服务uuid) | NearLink standard UUID not allowed. |
+| [36100099](../errorcode-nearlink.md#36100099-操作失败) | Operation failed. |
 
 ## offEventNotify
 
@@ -145,10 +145,10 @@ readDescriptor(descriptor: PropertyDescriptor): Promise<PropertyDescriptor>
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Non-system applications are not allowed to use system APIs. |
-| 36100003 | NearLink disabled. |
-| 36100043 | Invalid UUID in descriptor. |
-| 36100044 | NearLink standard UUID not allowed. |
-| 36100099 | Operation failed. |
+| [36100003](../errorcode-nearlink.md#36100003--星闪关闭) | NearLink disabled. |
+| [36100043](../errorcode-nearlink.md#36100043-无效uuid) | Invalid UUID in descriptor. |
+| [36100044](../errorcode-nearlink.md#36100044-禁止使用星闪标准服务uuid) | NearLink standard UUID not allowed. |
+| [36100099](../errorcode-nearlink.md#36100099-操作失败) | Operation failed. |
 
 ## setPropertyIndication
 
@@ -189,11 +189,11 @@ setPropertyIndication(property: Property, enable: boolean): Promise<void>
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Non-system applications are not allowed to use system APIs. |
-| 36100003 | NearLink disabled. |
+| [36100003](../errorcode-nearlink.md#36100003--星闪关闭) | NearLink disabled. |
 | 36100030 | The connection is not established. |
-| 36100043 | Invalid UUID in property. |
-| 36100044 | NearLink standard UUID not allowed. |
-| 36100099 | Operation failed. |
+| [36100043](../errorcode-nearlink.md#36100043-无效uuid) | Invalid UUID in property. |
+| [36100044](../errorcode-nearlink.md#36100044-禁止使用星闪标准服务uuid) | NearLink standard UUID not allowed. |
+| [36100099](../errorcode-nearlink.md#36100099-操作失败) | Operation failed. |
 
 ## writeDescriptor
 
@@ -235,8 +235,8 @@ writeDescriptor(descriptor: PropertyDescriptor): Promise<void>
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Non-system applications are not allowed to use system APIs. |
-| 36100003 | NearLink disabled. |
-| 36100043 | Invalid UUID in descriptor. |
-| 36100044 | NearLink standard UUID not allowed. |
-| 36100099 | Operation failed. |
+| [36100003](../errorcode-nearlink.md#36100003--星闪关闭) | NearLink disabled. |
+| [36100043](../errorcode-nearlink.md#36100043-无效uuid) | Invalid UUID in descriptor. |
+| [36100044](../errorcode-nearlink.md#36100044-禁止使用星闪标准服务uuid) | NearLink standard UUID not allowed. |
+| [36100099](../errorcode-nearlink.md#36100099-操作失败) | Operation failed. |
 

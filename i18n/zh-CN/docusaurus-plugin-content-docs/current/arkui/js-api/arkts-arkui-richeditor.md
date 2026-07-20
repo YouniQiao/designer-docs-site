@@ -6,6 +6,9 @@
 >
 > - 该组件从API版本26.0.0开始支持[WithTheme]{@link ./with_theme}。
 
+## 子组件
+
+不包含子组件。
 
 ## RichEditor
 
@@ -17,7 +20,9 @@ RichEditor(value: RichEditorOptions)
 
 **模型约束：** 此接口仅可在Stage模型下使用。
 
-**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API版本11开始，该接口支持在原子化服务API中使用。
+
+<!--Device-RichEditorInterface-(value: RichEditorOptions): RichEditorAttribute--><!--Device-RichEditorInterface-(value: RichEditorOptions): RichEditorAttribute-End-->
 
 **系统能力：** SystemCapability.ArkUI.ArkUI.Full
 
@@ -39,7 +44,9 @@ RichEditor(options: RichEditorStyledStringOptions)
 
 **模型约束：** 此接口仅可在Stage模型下使用。
 
-**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API版本12开始，该接口支持在原子化服务API中使用。
+
+<!--Device-RichEditorInterface-(options: RichEditorStyledStringOptions): RichEditorAttribute--><!--Device-RichEditorInterface-(options: RichEditorStyledStringOptions): RichEditorAttribute-End-->
 
 **系统能力：** SystemCapability.ArkUI.ArkUI.Full
 

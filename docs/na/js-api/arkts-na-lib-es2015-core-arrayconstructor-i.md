@@ -1,0 +1,72 @@
+# ArrayConstructor
+
+<!--Device-unnamed-interface ArrayConstructor--><!--Device-unnamed-interface ArrayConstructor-End-->
+
+## from
+
+```TypeScript
+from<T>(arrayLike: ArrayLike<T>): T[]
+```
+
+Creates an array from an array-like object.
+
+<!--Device-ArrayConstructor-from<T>(arrayLike: ArrayLike<T>): T[]--><!--Device-ArrayConstructor-from<T>(arrayLike: ArrayLike<T>): T[]-End-->
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| arrayLike | [ArrayLike](arkts-na-lib-es5-arraylike-i.md)<T> | Yes |  |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| T[] |  |
+
+## from
+
+```TypeScript
+from<T, U>(arrayLike: ArrayLike<T>, mapfn: (v: T, k: number) => U, thisArg?: any): U[]
+```
+
+Creates an array from an iterable object.
+
+<!--Device-ArrayConstructor-from<T, U>(arrayLike: ArrayLike<T>, mapfn: (v: T, k: number) => U, thisArg?: any): U[]--><!--Device-ArrayConstructor-from<T, U>(arrayLike: ArrayLike<T>, mapfn: (v: T, k: number) => U, thisArg?: any): U[]-End-->
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| arrayLike | [ArrayLike](arkts-na-lib-es5-arraylike-i.md)<T> | Yes |  |
+| mapfn | (v: T, k: number) => U | Yes |  |
+| thisArg | any | No |  |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| U[] |  |
+
+## of
+
+```TypeScript
+of<T>(...items: T[]): T[]
+```
+
+Returns a new array from a set of elements.
+
+<!--Device-ArrayConstructor-of<T>(...items: T[]): T[]--><!--Device-ArrayConstructor-of<T>(...items: T[]): T[]-End-->
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| items | T[] | Yes |  |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| T[] |  |
+

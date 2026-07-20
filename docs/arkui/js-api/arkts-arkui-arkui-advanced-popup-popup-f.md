@@ -20,11 +20,13 @@ export declare function Popup(options: PopupOptions): void
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-unnamed-export declare function Popup(options: PopupOptions): void--><!--Device-unnamed-export declare function Popup(options: PopupOptions): void-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| options | PopupOptions | Yes | Parameters of the popup. |
+| options | [PopupOptions](../arkts-components/arkts-arkui-common-popupoptions-i.md) | Yes | Parameters of the popup. |
 

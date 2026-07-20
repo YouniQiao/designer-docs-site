@@ -16,6 +16,8 @@ Sets an extended attribute of a file or directory. This API uses a promise to re
 
 **Since:** 12
 
+<!--Device-unnamed-declare function setxattr(path: string, key: string, value: string): Promise<void>--><!--Device-unnamed-declare function setxattr(path: string, key: string, value: string): Promise<void>-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
@@ -23,14 +25,14 @@ Sets an extended attribute of a file or directory. This API uses a promise to re
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Application sandbox path of the file or directory. |
-| key | string | Yes | Key of the extended attribute to obtain. The value is a string of less than 256 bytes and cancontain only the **user.** prefix. |
+| key | string | Yes | Key of the extended attribute to obtain. The value is a string of less than 256 bytes and can contain only the **user.** prefix. |
 | value | string | Yes | Value of the extended attribute to set. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 

@@ -1,10 +1,12 @@
 # GridRow properties/events
 
-In addition to the [universal events](arkts-arkui-commonmethod-c.md), the following events are supported.
+In addition to the [universal events](arkts-arkui-common-commonmethod-c.md), the following events are supported.
 
 **Inheritance/Implementation:** GridRowAttribute extends [CommonMethod<GridRowAttribute>](CommonMethod<GridRowAttribute>)
 
 **Since:** 9
+
+<!--Device-unnamed-declare class GridRowAttribute extends CommonMethod<GridRowAttribute>--><!--Device-unnamed-declare class GridRowAttribute extends CommonMethod<GridRowAttribute>-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -14,9 +16,7 @@ In addition to the [universal events](arkts-arkui-commonmethod-c.md), the follow
 alignItems(value: ItemAlign)
 ```
 
-Sets the alignment mode of the **GridCol** components along the vertical main axis of the **GridRow** component.
-The alignment mode of the **GridCol** component can also be set using **alignSelf(ItemAlign)**. If both of the
-preceding methods are used, the setting of **alignSelf(ItemAlign)** prevails.
+Sets the alignment mode of the **GridCol** components along the vertical main axis of the **GridRow** component.The alignment mode of the **GridCol** component can also be set using **alignSelf(ItemAlign)**. If both of the preceding methods are used, the setting of **alignSelf(ItemAlign)** prevails.
 
 **Since:** 10
 
@@ -26,13 +26,15 @@ preceding methods are used, the setting of **alignSelf(ItemAlign)** prevails.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 10.
 
+<!--Device-GridRowAttribute-alignItems(value: ItemAlign): GridRowAttribute--><!--Device-GridRowAttribute-alignItems(value: ItemAlign): GridRowAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ItemAlign | Yes | Alignment mode of the **GridCol** components along the vertical main axis of the**GridRow** component.<br>Default value: **ItemAlign.Start**<br>Invalid values are treated as the defaultvalue.<br><br>**NOTE**<br>**ItemAlign** supports the following enums: **ItemAlign.Start**, **ItemAlign.Center**,**ItemAlign.End**, and **ItemAlign.Stretch**. |
+| value | [ItemAlign](../arkts-apis/arkts-arkui-enums-itemalign-e.md) | Yes | Alignment mode of the **GridCol** components along the vertical main axis of the **GridRow** component.<br>Default value: **ItemAlign.Start**<br>Invalid values are treated as the default value.<br><br>**NOTE**<br>**ItemAlign** supports the following enums: **ItemAlign.Start**, **ItemAlign.Center**,**ItemAlign.End**, and **ItemAlign.Stretch**. |
 
 ## onBreakpointChange
 
@@ -42,10 +44,10 @@ onBreakpointChange(callback: (breakpoints: string) => void)
 
 Triggered when the breakpoint changes.
 
-> **NOTE**
-> >
-> When [breakpointsreference](#breakpointsreference) is set to **BreakpointsReference.ComponentSize**, you are not
-> advised to dynamically change the [padding](arkts-arkui-commonmethod-c.md#padding-1) or [margin](arkts-arkui-commonmethod-c.md#margin-1)
+> **NOTE**  
+> >  
+> When [breakpointsreference](#breakpointsreference) is set to **BreakpointsReference.ComponentSize**, you are not  
+> advised to dynamically change the [padding](arkts-arkui-common-commonmethod-c.md#padding-1) or [margin](arkts-arkui-common-commonmethod-c.md#margin-1)  
 > attribute value of the **GridRow** component in the **onBreakpointChange** callback.
 
 **Since:** 9
@@ -54,11 +56,13 @@ Triggered when the breakpoint changes.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-GridRowAttribute-onBreakpointChange(callback: (breakpoints: string) => void): GridRowAttribute--><!--Device-GridRowAttribute-onBreakpointChange(callback: (breakpoints: string) => void): GridRowAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (breakpoints: string) =&gt; void | Yes | Breakpoint change. The value can be**"xs"**, **"sm"**, **"md"**, **"lg"**, **"xl"**, or **"xxl"**. |
+| callback | (breakpoints: string) => void | Yes | Breakpoint change. The value can be **"xs"**, **"sm"**, **"md"**, **"lg"**, **"xl"**, or **"xxl"**. |
 

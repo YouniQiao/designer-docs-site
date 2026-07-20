@@ -1,14 +1,12 @@
 # UIExtensionContext
 
-UIExtensionContext provides the context environment for
-[UIExtensionAbility](arkts-ability-uiextensionability-c.md). It inherits from
-[ExtensionContext](arkts-ability-extensioncontext-c.md) and provides UIExtensionAbility-related
-configuration and APIs for operating the UIExtensionAbility. For example, you can use the APIs to start a
-UIExtensionAbility.
+UIExtensionContext provides the context environment for [UIExtensionAbility](arkts-ability-app-ability-uiextensionability-uiextensionability-c.md). It inherits from [ExtensionContext](arkts-ability-extensioncontext-c.md) and provides UIExtensionAbility-related configuration and APIs for operating the UIExtensionAbility. For example, you can use the APIs to start a UIExtensionAbility.
 
 **Inheritance/Implementation:** UIExtensionContext extends [ExtensionContext](arkts-ability-extensioncontext-c.md)
 
 **Since:** 10
+
+<!--Device-unnamed-declare class UIExtensionContext extends ExtensionContext--><!--Device-unnamed-declare class UIExtensionContext extends ExtensionContext-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -18,21 +16,18 @@ UIExtensionAbility.
 connectServiceExtensionAbility(want: Want, options: ConnectOptions): number
 ```
 
-Connects this UIExtensionAbility to a ServiceExtensionAbility. It enables communication with the
-ServiceExtensionAbility via a proxy, allowing access to the capabilities exposed by the ServiceExtensionAbility.
-ServiceExtensionAbility is a special type of
-[ExtensionAbility](../../../../application-models/extensionability-overview.md) provided by the system. It is
-designed to offer background services for specific scenarios and is not customizable by developers. It can be
-connected to by other components and handles requests in the background based on the caller information.
+Connects this UIExtensionAbility to a ServiceExtensionAbility. It enables communication with the ServiceExtensionAbility via a proxy, allowing access to the capabilities exposed by the ServiceExtensionAbility.ServiceExtensionAbility is a special type of [ExtensionAbility](../../../../application-models/extensionability-overview.md) provided by the system. It is designed to offer background services for specific scenarios and is not customizable by developers. It can be connected to by other components and handles requests in the background based on the caller information.
 
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
+> **NOTE**  
+>  
+> For details about the startup rules for the components in the stage model, see  
 > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
 
 **Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-UIExtensionContext-connectServiceExtensionAbility(want: Want, options: ConnectOptions): long--><!--Device-UIExtensionContext-connectServiceExtensionAbility(want: Want, options: ConnectOptions): long-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -40,14 +35,14 @@ connected to by other components and handles requests in the background based on
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want information required for connecting to the ServiceExtensionAbility, including the abilityname and bundle name. |
-| options | ConnectOptions | Yes | Callback used to return the information indicating that the connection is successful, failed, or interrupted. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information required for connecting to the ServiceExtensionAbility, including the ability name and bundle name. |
+| options | [ConnectOptions](arkts-ability-ability-connectoptions-t.md) | Yes | Callback used to return the information indicating that the connection is successful, failed, or interrupted. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| number | Connection ID. The client can call[disconnectServiceExtensionAbility](arkts-ability-uiextensioncontext-c.md#disconnectserviceextensionability-2)with this ID for disconnection. |
+| number | Connection ID. The client can call [disconnectServiceExtensionAbility](arkts-ability-uiextensioncontext-c.md#disconnectserviceextensionability-2)with this ID for disconnection. |
 
 **Error codes:**
 
@@ -77,14 +72,16 @@ connectUIServiceExtensionAbility(want: Want, callback: UIServiceExtensionConnect
 
 Connects to a UIServiceExtensionAbility. This API uses a promise to return the result.
 
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
+> **NOTE**  
+>  
+> For details about the startup rules for the components in the stage model, see  
 > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
 
 **Since:** 14
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-UIExtensionContext-connectUIServiceExtensionAbility(want: Want, callback: UIServiceExtensionConnectCallback) : Promise<UIServiceProxy>--><!--Device-UIExtensionContext-connectUIServiceExtensionAbility(want: Want, callback: UIServiceExtensionConnectCallback) : Promise<UIServiceProxy>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -92,14 +89,14 @@ Connects to a UIServiceExtensionAbility. This API uses a promise to return the r
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want information used for connection. |
-| callback | UIServiceExtensionConnectCallback | Yes | Callback for connecting to the UIServiceExtensionAbility. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information used for connection. |
+| callback | [UIServiceExtensionConnectCallback](arkts-ability-common-uiserviceextensionconnectcallback-t.md) | Yes | Callback for connecting to the UIServiceExtensionAbility. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;UIServiceProxy&gt; | Promise used to return a[UIServiceProxy](arkts-ability-uiserviceproxy-i.md) object when the UIServiceExtensionAbility isconnected. This object can be used to send data to the UIServiceExtensionAbility. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<UIServiceProxy> | Promise used to return a [UIServiceProxy](arkts-ability-uiserviceproxy-i.md) object when the UIServiceExtensionAbility is connected. This object can be used to send data to the UIServiceExtensionAbility. |
 
 **Error codes:**
 
@@ -124,16 +121,13 @@ Connects to a UIServiceExtensionAbility. This API uses a promise to return the r
 disconnectServiceExtensionAbility(connection: number, callback: AsyncCallback<void>): void
 ```
 
-Disconnects from a ServiceExtensionAbility. Once the connection is terminated, set the remote object, which is
-returned when the connection is established, to null. This API uses an asynchronous callback to return the result.
-ServiceExtensionAbility is a special type of
-[ExtensionAbility](../../../../application-models/extensionability-overview.md) provided by the system. It is
-designed to offer background services for specific scenarios and is not customizable by developers. It can be
-connected to by other components and handles requests in the background based on the caller information.
+Disconnects from a ServiceExtensionAbility. Once the connection is terminated, set the remote object, which is returned when the connection is established, to null. This API uses an asynchronous callback to return the result.ServiceExtensionAbility is a special type of [ExtensionAbility](../../../../application-models/extensionability-overview.md) provided by the system. It is designed to offer background services for specific scenarios and is not customizable by developers. It can be connected to by other components and handles requests in the background based on the caller information.
 
 **Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-UIExtensionContext-disconnectServiceExtensionAbility(connection: long, callback: AsyncCallback<void>): void--><!--Device-UIExtensionContext-disconnectServiceExtensionAbility(connection: long, callback: AsyncCallback<void>): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -141,8 +135,8 @@ connected to by other components and handles requests in the background based on
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| connection | number | Yes | ID of the connected ServiceExtensionAbility, that is, **connectionId** returned by**connectServiceExtensionAbility**. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the disconnection is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| connection | number | Yes | ID of the connected ServiceExtensionAbility, that is, **connectionId** returned by **connectServiceExtensionAbility**. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the disconnection is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -158,16 +152,13 @@ connected to by other components and handles requests in the background based on
 disconnectServiceExtensionAbility(connection: number): Promise<void>
 ```
 
-Disconnects from a ServiceExtensionAbility. Once the connection is terminated, set the remote object, which is
-returned when the connection is established, to null. This API uses a promise to return the result.
-ServiceExtensionAbility is a special type of
-[ExtensionAbility](../../../../application-models/extensionability-overview.md) provided by the system. It is
-designed to offer background services for specific scenarios and is not customizable by developers. It can be
-connected to by other components and handles requests in the background based on the caller information.
+Disconnects from a ServiceExtensionAbility. Once the connection is terminated, set the remote object, which is returned when the connection is established, to null. This API uses a promise to return the result.ServiceExtensionAbility is a special type of [ExtensionAbility](../../../../application-models/extensionability-overview.md) provided by the system. It is designed to offer background services for specific scenarios and is not customizable by developers. It can be connected to by other components and handles requests in the background based on the caller information.
 
 **Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-UIExtensionContext-disconnectServiceExtensionAbility(connection: long): Promise<void>--><!--Device-UIExtensionContext-disconnectServiceExtensionAbility(connection: long): Promise<void>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -175,13 +166,13 @@ connected to by other components and handles requests in the background based on
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| connection | number | Yes | ID of the connected ServiceExtensionAbility, that is, **connectionId** returned by[connectServiceExtensionAbility](arkts-ability-uiextensioncontext-c.md#connectserviceextensionability-1). |
+| connection | number | Yes | ID of the connected ServiceExtensionAbility, that is, **connectionId** returned by [connectServiceExtensionAbility](arkts-ability-uiextensioncontext-c.md#connectserviceextensionability-1). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -203,19 +194,21 @@ Disconnects from a UIServiceExtensionAbility. This API uses a promise to return 
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-UIExtensionContext-disconnectUIServiceExtensionAbility(proxy: UIServiceProxy): Promise<void>--><!--Device-UIExtensionContext-disconnectUIServiceExtensionAbility(proxy: UIServiceProxy): Promise<void>-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| proxy | UIServiceProxy | Yes | Proxy used returned by calling[connectUIServiceExtensionAbility](arkts-ability-uiextensioncontext-c.md#connectuiserviceextensionability-1). |
+| proxy | [UIServiceProxy](arkts-ability-common-uiserviceproxy-t.md) | Yes | Proxy used returned by calling [connectUIServiceExtensionAbility](arkts-ability-uiextensioncontext-c.md#connectuiserviceextensionability-1). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -231,28 +224,22 @@ Disconnects from a UIServiceExtensionAbility. This API uses a promise to return 
 openAtomicService(appId: string, options?: AtomicServiceOptions): Promise<AbilityResult>
 ```
 
-Opens an atomic service in an independent window and returns the result. This API uses a promise to return the
-result.
-The following situations may be possible for a started atomic service:
+Opens an atomic service in an independent window and returns the result. This API uses a promise to return the result.The following situations may be possible for a started atomic service:
 
-- Normally, you can call
-[terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)
-to terminate the atomic service. The result is returned to the caller.
-- If an exception occurs, for example, the atomic service is killed, an error message, in which **resultCode** is
-**-1**, is returned to the caller.
-- If different applications call this API to start an atomic service and then call
-[terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)
-to terminate the atomic service, the normal result is returned to the last caller, and an exception message, in
-which **resultCode** is **-1**, is returned to others.
+- Normally, you can call [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)to terminate the atomic service. The result is returned to the caller.  
+- If an exception occurs, for example, the atomic service is killed, an error message, in which **resultCode** is **-1**, is returned to the caller.  
+- If different applications call this API to start an atomic service and then call [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)to terminate the atomic service, the normal result is returned to the last caller, and an exception message, in which **resultCode** is **-1**, is returned to others.
 
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
+> **NOTE**  
+>  
+> For details about the startup rules for the components in the stage model, see  
 > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
 
 **Since:** 12
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-UIExtensionContext-openAtomicService(appId: string, options?: AtomicServiceOptions): Promise<AbilityResult>--><!--Device-UIExtensionContext-openAtomicService(appId: string, options?: AtomicServiceOptions): Promise<AbilityResult>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -261,13 +248,13 @@ which **resultCode** is **-1**, is returned to others.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | appId | string | Yes | Unique ID of the application, which is allocated by the cloud. |
-| options | AtomicServiceOptions | No | Parameter carried in the request for starting the atomic service. |
+| options | [AtomicServiceOptions](arkts-ability-app-ability-atomicserviceoptions-atomicserviceoptions-c.md) | No | Parameter carried in the request for starting the atomic service. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;AbilityResult&gt; | Promise used to return the information to the caller. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AbilityResult> | Promise used to return the information to the caller. |
 
 **Error codes:**
 
@@ -289,30 +276,22 @@ which **resultCode** is **-1**, is returned to others.
 openLink(link: string, options?: OpenLinkOptions, callback?: AsyncCallback<AbilityResult>): Promise<void>
 ```
 
-Starts a UIAbility by using App Linking or Deep Linking. This API uses a promise to return the result.
-A URL in the standard format is passed in to the **link** field to start the target UIAbility based on the implicit
-Want matching rules. The target UIAbility must have the following filter characteristics to process links of App
-Linking:
+Starts a UIAbility by using App Linking or Deep Linking. This API uses a promise to return the result.A URL in the standard format is passed in to the **link** field to start the target UIAbility based on the implicit Want matching rules. The target UIAbility must have the following filter characteristics to process links of App Linking:
 
-- The **actions** field must contain **ohos.want.action.viewData**.
-- The **entities** field must contain **entity.system.browsable**.
-- The **uris** field must contain elements whose **scheme** is **https** and **domainVerify** is **true**.
-If you want to obtain the result after the started UIAbility is terminated, set the **callback** parameter. For
-details about how to use this parameter, see
-[startAbilityForResult](arkts-ability-uiextensioncontext-c.md#startabilityforresult-1)
-.
-If an input parameter is invalid, for example, a mandatory parameter is not set or the URL set in **link** is not
-in the standard format, an exception is thrown. If the parameter verification is successful but an error occurs
-when starting the target UIAbility, the error information is returned through promise.
+- The **actions** field must contain **ohos.want.action.viewData**.  
+- The **entities** field must contain **entity.system.browsable**.  
+- The **uris** field must contain elements whose **scheme** is **https** and **domainVerify** is **true**.If you want to obtain the result after the started UIAbility is terminated, set the **callback** parameter. For details about how to use this parameter, see [startAbilityForResult](arkts-ability-uiextensioncontext-c.md#startabilityforresult-1).If an input parameter is invalid, for example, a mandatory parameter is not set or the URL set in **link** is not in the standard format, an exception is thrown. If the parameter verification is successful but an error occurs when starting the target UIAbility, the error information is returned through promise.
 
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
+> **NOTE**  
+>  
+> For details about the startup rules for the components in the stage model, see  
 > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
 
 **Since:** 12
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-UIExtensionContext-openLink(link: string, options?: OpenLinkOptions, callback?: AsyncCallback<AbilityResult>): Promise<void>--><!--Device-UIExtensionContext-openLink(link: string, options?: OpenLinkOptions, callback?: AsyncCallback<AbilityResult>): Promise<void>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -321,14 +300,14 @@ when starting the target UIAbility, the error information is returned through pr
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | link | string | Yes | URL to open, which must be in the standard format. |
-| options | OpenLinkOptions | No | Options of the URL. |
-| callback | AsyncCallback&lt;AbilityResult&gt; | No | Callback used to return the result. |
+| options | [OpenLinkOptions](arkts-ability-app-ability-openlinkoptions-openlinkoptions-i.md) | No | Options of the URL. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<AbilityResult> | No | Callback used to return the result. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | that returns no value. |
 
 **Error codes:**
 
@@ -359,13 +338,13 @@ when starting the target UIAbility, the error information is returned through pr
 reportDrawnCompleted(callback: AsyncCallback<void>): void
 ```
 
-Called when the window content associated with the UIExtensionAbility finishes drawing. The system uses the
-information to optimize resource allocation, thereby enhancing the efficiency of application startup and display.
-This API uses an asynchronous callback to return the result.
+Called when the window content associated with the UIExtensionAbility finishes drawing. The system uses the information to optimize resource allocation, thereby enhancing the efficiency of application startup and display.This API uses an asynchronous callback to return the result.
 
 **Since:** 12
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-UIExtensionContext-reportDrawnCompleted(callback: AsyncCallback<void>): void--><!--Device-UIExtensionContext-reportDrawnCompleted(callback: AsyncCallback<void>): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -373,7 +352,7 @@ This API uses an asynchronous callback to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the event is reported, **err** is**undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the event is reported, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -388,22 +367,23 @@ This API uses an asynchronous callback to return the result.
 setColorMode(colorMode: ConfigurationConstant.ColorMode): void
 ```
 
-Sets the dark/light color mode for this UIExtensionAbility. Before calling this API, ensure that the page
-corresponding to the UIExtensionContext has been loaded. This API can be called only by the main thread.
+Sets the dark/light color mode for this UIExtensionAbility. Before calling this API, ensure that the page corresponding to the UIExtensionContext has been loaded. This API can be called only by the main thread.
 
-> **NOTE**
->
-> - After this API is called, a new resource manager object is created. If a resource manager was previously cached
-> , it should be updated accordingly.
->
-> - The priority of the dark/light color mode is as follows: UIExtensionAbility dark/light color mode > Application
-> dark/light color mode (set via
-> [ApplicationContext.setColorMode](arkts-ability-applicationcontext-c.md#setcolormode-1)) > System
+> **NOTE**  
+>  
+> - After this API is called, a new resource manager object is created. If a resource manager was previously cached  
+> , it should be updated accordingly.  
+>  
+> - The priority of the dark/light color mode is as follows: UIExtensionAbility dark/light color mode > Application  
+> dark/light color mode (set via  
+> [ApplicationContext.setColorMode](arkts-ability-applicationcontext-c.md#setcolormode-1)) > System  
 > dark/light color mode.
 
 **Since:** 18
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-UIExtensionContext-setColorMode(colorMode: ConfigurationConstant.ColorMode): void--><!--Device-UIExtensionContext-setColorMode(colorMode: ConfigurationConstant.ColorMode): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -411,7 +391,7 @@ corresponding to the UIExtensionContext has been loaded. This API can be called 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| colorMode | ConfigurationConstant.ColorMode | Yes | Color mode. The options are as follows:<br> - **COLOR_MODE_DARK**: dark mode.<br> - **COLOR_MODE_LIGHT**: light mode.<br> - **COLOR_MODE_NOT_SET**: not set (following the system orapplication). |
+| colorMode | ConfigurationConstant.ColorMode | Yes | Color mode. The options are as follows:<br> - **COLOR_MODE_DARK**: dark mode.<br> - **COLOR_MODE_LIGHT**: light mode.<br> - **COLOR_MODE_NOT_SET**: not set (following the system or application). |
 
 **Error codes:**
 
@@ -427,14 +407,16 @@ startAbility(want: Want, callback: AsyncCallback<void>): void
 
 Starts a UIAbility. This API uses an asynchronous callback to return the result.
 
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
+> **NOTE**  
+>  
+> For details about the startup rules for the components in the stage model, see  
 > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
 
 **Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-UIExtensionContext-startAbility(want: Want, callback: AsyncCallback<void>): void--><!--Device-UIExtensionContext-startAbility(want: Want, callback: AsyncCallback<void>): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -442,8 +424,8 @@ Starts a UIAbility. This API uses an asynchronous callback to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want required for starting the UIAbility, which contains information such as the name of theUIAbility to start. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the UIAbility is started, **err** is**undefined**; otherwise, **err** is an error object. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want required for starting the UIAbility, which contains information such as the name of the UIAbility to start. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the UIAbility is started, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -466,7 +448,7 @@ Starts a UIAbility. This API uses an asynchronous callback to return the result.
 | [16000053](../errorcode-ability.md#16000053-ability-is-not-on-top-of-ui) | The ability is not on the top of the UI. |
 | [16000055](../errorcode-ability.md#16000055-installationfree-timeout) | Installation-free timed out. |
 | [16200001](../errorcode-ability.md#16200001-caller-released) | The caller has been released. |
-| [16000018](../errorcode-ability.md#16000018-restricting-redirection-to-thirdparty-applications-of-api-version-11-or-later) | Redirection to a third-party application is not allowed in API versiongreater than 11.<br>**Applicable version:** 12 and later |
+| [16000018](../errorcode-ability.md#16000018-restricting-redirection-to-thirdparty-applications-of-api-version-11-or-later) | Redirection to a third-party application is not allowed in API version greater than 11.<br>**Applicable version:** 12 and later |
 | [16000019](../errorcode-ability.md#16000019-no-matching-ability-is-found-during-implicit-startup) | No matching ability is found.<br>**Applicable version:** 12 and later |
 | [16000069](../errorcode-ability.md#16000069-extensionability-fails-to-start-a-thirdparty-application-in-strict-mode) | The extension cannot start the third party application.<br>**Applicable version:** 12 and later |
 | [16000070](../errorcode-ability.md#16000070-extensionability-fails-to-start-a-serviceextensionability-in-strict-mode) | The extension cannot start the service.<br>**Applicable version:** 12 and later |
@@ -487,14 +469,16 @@ startAbility(want: Want, options: StartOptions, callback: AsyncCallback<void>): 
 
 Starts a UIAbility. This API uses an asynchronous callback to return the result.
 
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
+> **NOTE**  
+>  
+> For details about the startup rules for the components in the stage model, see  
 > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
 
 **Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-UIExtensionContext-startAbility(want: Want, options: StartOptions, callback: AsyncCallback<void>): void--><!--Device-UIExtensionContext-startAbility(want: Want, options: StartOptions, callback: AsyncCallback<void>): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -502,9 +486,9 @@ Starts a UIAbility. This API uses an asynchronous callback to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want required for starting the UIAbility, which contains information such as the name of theUIAbility to start. |
-| options | StartOptions | Yes | Extra parameters used for starting the UIAbility. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the UIAbility is started, **err** is**undefined**; otherwise, **err** is an error object. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want required for starting the UIAbility, which contains information such as the name of the UIAbility to start. |
+| options | [StartOptions](arkts-ability-app-ability-startoptions-startoptions-c.md) | Yes | Extra parameters used for starting the UIAbility. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the UIAbility is started, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -525,7 +509,7 @@ Starts a UIAbility. This API uses an asynchronous callback to return the result.
 | [16000053](../errorcode-ability.md#16000053-ability-is-not-on-top-of-ui) | The ability is not on the top of the UI. |
 | [16000055](../errorcode-ability.md#16000055-installationfree-timeout) | Installation-free timed out. |
 | [16200001](../errorcode-ability.md#16200001-caller-released) | The caller has been released. |
-| [16000018](../errorcode-ability.md#16000018-restricting-redirection-to-thirdparty-applications-of-api-version-11-or-later) | Redirection to a third-party application is not allowed in API versiongreater than 11.<br>**Applicable version:** 12 and later |
+| [16000018](../errorcode-ability.md#16000018-restricting-redirection-to-thirdparty-applications-of-api-version-11-or-later) | Redirection to a third-party application is not allowed in API version greater than 11.<br>**Applicable version:** 12 and later |
 | [16000019](../errorcode-ability.md#16000019-no-matching-ability-is-found-during-implicit-startup) | No matching ability is found.<br>**Applicable version:** 12 and later |
 | [16000069](../errorcode-ability.md#16000069-extensionability-fails-to-start-a-thirdparty-application-in-strict-mode) | The extension cannot start the third party application.<br>**Applicable version:** 12 and later |
 | [16000070](../errorcode-ability.md#16000070-extensionability-fails-to-start-a-serviceextensionability-in-strict-mode) | The extension cannot start the service.<br>**Applicable version:** 12 and later |
@@ -546,14 +530,16 @@ startAbility(want: Want, options?: StartOptions): Promise<void>
 
 Starts a UIAbility. This API uses a promise to return the result.
 
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
+> **NOTE**  
+>  
+> For details about the startup rules for the components in the stage model, see  
 > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
 
 **Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-UIExtensionContext-startAbility(want: Want, options?: StartOptions): Promise<void>--><!--Device-UIExtensionContext-startAbility(want: Want, options?: StartOptions): Promise<void>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -561,14 +547,14 @@ Starts a UIAbility. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want required for starting the UIAbility, which contains information such as the name of theUIAbility to start. |
-| options | StartOptions | No | Extra parameters used for starting the UIAbility. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want required for starting the UIAbility, which contains information such as the name of the UIAbility to start. |
+| options | [StartOptions](arkts-ability-app-ability-startoptions-startoptions-c.md) | No | Extra parameters used for starting the UIAbility. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -591,7 +577,7 @@ Starts a UIAbility. This API uses a promise to return the result.
 | [16000053](../errorcode-ability.md#16000053-ability-is-not-on-top-of-ui) | The ability is not on the top of the UI. |
 | [16000055](../errorcode-ability.md#16000055-installationfree-timeout) | Installation-free timed out. |
 | [16200001](../errorcode-ability.md#16200001-caller-released) | The caller has been released. |
-| [16000018](../errorcode-ability.md#16000018-restricting-redirection-to-thirdparty-applications-of-api-version-11-or-later) | Redirection to a third-party application is not allowed in API versiongreater than 11.<br>**Applicable version:** 12 and later |
+| [16000018](../errorcode-ability.md#16000018-restricting-redirection-to-thirdparty-applications-of-api-version-11-or-later) | Redirection to a third-party application is not allowed in API version greater than 11.<br>**Applicable version:** 12 and later |
 | [16000019](../errorcode-ability.md#16000019-no-matching-ability-is-found-during-implicit-startup) | No matching ability is found.<br>**Applicable version:** 12 and later |
 | [16000069](../errorcode-ability.md#16000069-extensionability-fails-to-start-a-thirdparty-application-in-strict-mode) | The extension cannot start the third party application.<br>**Applicable version:** 12 and later |
 | [16000070](../errorcode-ability.md#16000070-extensionability-fails-to-start-a-serviceextensionability-in-strict-mode) | The extension cannot start the service.<br>**Applicable version:** 12 and later |
@@ -610,27 +596,22 @@ Starts a UIAbility. This API uses a promise to return the result.
 startAbilityForResult(want: Want, callback: AsyncCallback<AbilityResult>): void
 ```
 
-Starts a UIAbility and returns the exit result of the launched UIAbility via a callback. This API uses an
-asynchronous callback to return the result. The following situations may be possible for a started UIAbility:
+Starts a UIAbility and returns the exit result of the launched UIAbility via a callback. This API uses an asynchronous callback to return the result. The following situations may be possible for a started UIAbility:
 
-- Normally, you can call
-[terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)
-to terminate the UIAbility. The result is returned to the caller.
-- If an exception occurs, for example, the UIAbility is killed, an error message, in which **resultCode** is **-1**
-, is returned to the initiator UIAbility.
-- If different applications call this API to start a UIAbility that uses the singleton mode and then call
-[terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)
-to terminate the UIAbility, the normal result is returned to the last caller, and an exception message, in which
-**resultCode** is **-1**, is returned to others.
+- Normally, you can call [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)to terminate the UIAbility. The result is returned to the caller.  
+- If an exception occurs, for example, the UIAbility is killed, an error message, in which **resultCode** is **-1**, is returned to the initiator UIAbility.  
+- If different applications call this API to start a UIAbility that uses the singleton mode and then call [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)to terminate the UIAbility, the normal result is returned to the last caller, and an exception message, in which **resultCode** is **-1**, is returned to others.
 
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
+> **NOTE**  
+>  
+> For details about the startup rules for the components in the stage model, see  
 > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
 
 **Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-UIExtensionContext-startAbilityForResult(want: Want, callback: AsyncCallback<AbilityResult>): void--><!--Device-UIExtensionContext-startAbilityForResult(want: Want, callback: AsyncCallback<AbilityResult>): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -638,8 +619,8 @@ to terminate the UIAbility, the normal result is returned to the last caller, an
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want required for starting the UIAbility, which contains information such as the name of theUIAbility to start. |
-| callback | AsyncCallback&lt;AbilityResult&gt; | Yes | Callback used to return the result. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want required for starting the UIAbility, which contains information such as the name of the UIAbility to start. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<AbilityResult> | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -662,7 +643,7 @@ to terminate the UIAbility, the normal result is returned to the last caller, an
 | [16000053](../errorcode-ability.md#16000053-ability-is-not-on-top-of-ui) | The ability is not on the top of the UI. |
 | [16000055](../errorcode-ability.md#16000055-installationfree-timeout) | Installation-free timed out. |
 | [16200001](../errorcode-ability.md#16200001-caller-released) | The caller has been released. |
-| [16000018](../errorcode-ability.md#16000018-restricting-redirection-to-thirdparty-applications-of-api-version-11-or-later) | Redirection to a third-party application is not allowed in API versiongreater than 11.<br>**Applicable version:** 12 and later |
+| [16000018](../errorcode-ability.md#16000018-restricting-redirection-to-thirdparty-applications-of-api-version-11-or-later) | Redirection to a third-party application is not allowed in API version greater than 11.<br>**Applicable version:** 12 and later |
 | [16000019](../errorcode-ability.md#16000019-no-matching-ability-is-found-during-implicit-startup) | No matching ability is found.<br>**Applicable version:** 12 and later |
 | [16000069](../errorcode-ability.md#16000069-extensionability-fails-to-start-a-thirdparty-application-in-strict-mode) | The extension cannot start the third party application.<br>**Applicable version:** 12 and later |
 | [16000070](../errorcode-ability.md#16000070-extensionability-fails-to-start-a-serviceextensionability-in-strict-mode) | The extension cannot start the service.<br>**Applicable version:** 12 and later |
@@ -681,27 +662,22 @@ to terminate the UIAbility, the normal result is returned to the last caller, an
 startAbilityForResult(want: Want, options: StartOptions, callback: AsyncCallback<AbilityResult>): void
 ```
 
-Starts a UIAbility and returns the exit result of the launched UIAbility via a callback. This API uses an
-asynchronous callback to return the result. The following situations may be possible for a started UIAbility:
+Starts a UIAbility and returns the exit result of the launched UIAbility via a callback. This API uses an asynchronous callback to return the result. The following situations may be possible for a started UIAbility:
 
-- Normally, you can call
-[terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)
-to terminate the UIAbility. The result is returned to the caller.
-- If an exception occurs, for example, the UIAbility is killed, an error message, in which **resultCode** is **-1**
-, is returned to the initiator UIAbility.
-- If different applications call this API to start a UIAbility that uses the singleton mode and then call
-[terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)
-to terminate the UIAbility, the normal result is returned to the last caller, and an exception message, in which
-**resultCode** is **-1**, is returned to others.
+- Normally, you can call [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)to terminate the UIAbility. The result is returned to the caller.  
+- If an exception occurs, for example, the UIAbility is killed, an error message, in which **resultCode** is **-1**, is returned to the initiator UIAbility.  
+- If different applications call this API to start a UIAbility that uses the singleton mode and then call [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)to terminate the UIAbility, the normal result is returned to the last caller, and an exception message, in which **resultCode** is **-1**, is returned to others.
 
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
+> **NOTE**  
+>  
+> For details about the startup rules for the components in the stage model, see  
 > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
 
 **Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-UIExtensionContext-startAbilityForResult(want: Want, options: StartOptions, callback: AsyncCallback<AbilityResult>): void--><!--Device-UIExtensionContext-startAbilityForResult(want: Want, options: StartOptions, callback: AsyncCallback<AbilityResult>): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -709,9 +685,9 @@ to terminate the UIAbility, the normal result is returned to the last caller, an
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want required for starting the UIAbility, which contains information such as the name of theUIAbility to start. |
-| options | StartOptions | Yes | Extra parameters used for starting the UIAbility. |
-| callback | AsyncCallback&lt;AbilityResult&gt; | Yes | Callback used to return the result. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want required for starting the UIAbility, which contains information such as the name of the UIAbility to start. |
+| options | [StartOptions](arkts-ability-app-ability-startoptions-startoptions-c.md) | Yes | Extra parameters used for starting the UIAbility. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<AbilityResult> | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -732,7 +708,7 @@ to terminate the UIAbility, the normal result is returned to the last caller, an
 | [16000053](../errorcode-ability.md#16000053-ability-is-not-on-top-of-ui) | The ability is not on the top of the UI. |
 | [16000055](../errorcode-ability.md#16000055-installationfree-timeout) | Installation-free timed out. |
 | [16200001](../errorcode-ability.md#16200001-caller-released) | The caller has been released. |
-| [16000018](../errorcode-ability.md#16000018-restricting-redirection-to-thirdparty-applications-of-api-version-11-or-later) | Redirection to a third-party application is not allowed in API versiongreater than 11.<br>**Applicable version:** 12 and later |
+| [16000018](../errorcode-ability.md#16000018-restricting-redirection-to-thirdparty-applications-of-api-version-11-or-later) | Redirection to a third-party application is not allowed in API version greater than 11.<br>**Applicable version:** 12 and later |
 | [16000019](../errorcode-ability.md#16000019-no-matching-ability-is-found-during-implicit-startup) | No matching ability is found.<br>**Applicable version:** 12 and later |
 | [16000069](../errorcode-ability.md#16000069-extensionability-fails-to-start-a-thirdparty-application-in-strict-mode) | The extension cannot start the third party application.<br>**Applicable version:** 12 and later |
 | [16000070](../errorcode-ability.md#16000070-extensionability-fails-to-start-a-serviceextensionability-in-strict-mode) | The extension cannot start the service.<br>**Applicable version:** 12 and later |
@@ -751,27 +727,22 @@ to terminate the UIAbility, the normal result is returned to the last caller, an
 startAbilityForResult(want: Want, options?: StartOptions): Promise<AbilityResult>
 ```
 
-Starts a UIAbility and returns the exit result of the launched UIAbility via a callback. This API uses a promise to
-return the result. The following situations may be possible for a started UIAbility:
+Starts a UIAbility and returns the exit result of the launched UIAbility via a callback. This API uses a promise to return the result. The following situations may be possible for a started UIAbility:
 
-- Normally, you can call
-[terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)
-to terminate the UIAbility. The result is returned to the caller.
-- If an exception occurs, for example, the UIAbility is killed, an error message, in which **resultCode** is **-1**
-, is returned to the initiator UIAbility.
-- If different applications call this API to start a UIAbility that uses the singleton mode and then call
-[terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)
-to terminate the UIAbility, the normal result is returned to the last caller, and an exception message, in which
-**resultCode** is **-1**, is returned to others.
+- Normally, you can call [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)to terminate the UIAbility. The result is returned to the caller.  
+- If an exception occurs, for example, the UIAbility is killed, an error message, in which **resultCode** is **-1**, is returned to the initiator UIAbility.  
+- If different applications call this API to start a UIAbility that uses the singleton mode and then call [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)to terminate the UIAbility, the normal result is returned to the last caller, and an exception message, in which **resultCode** is **-1**, is returned to others.
 
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
+> **NOTE**  
+>  
+> For details about the startup rules for the components in the stage model, see  
 > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
 
 **Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-UIExtensionContext-startAbilityForResult(want: Want, options?: StartOptions): Promise<AbilityResult>--><!--Device-UIExtensionContext-startAbilityForResult(want: Want, options?: StartOptions): Promise<AbilityResult>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -779,14 +750,14 @@ to terminate the UIAbility, the normal result is returned to the last caller, an
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want required for starting the UIAbility, which contains information such as the name of theUIAbility to start. |
-| options | StartOptions | No | Extra parameters used for starting the UIAbility. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want required for starting the UIAbility, which contains information such as the name of the UIAbility to start. |
+| options | [StartOptions](arkts-ability-app-ability-startoptions-startoptions-c.md) | No | Extra parameters used for starting the UIAbility. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;AbilityResult&gt; | Promise used to return the exit result of the launched UIAbility. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AbilityResult> | Promise used to return the exit result of the launched UIAbility. |
 
 **Error codes:**
 
@@ -809,7 +780,7 @@ to terminate the UIAbility, the normal result is returned to the last caller, an
 | [16000053](../errorcode-ability.md#16000053-ability-is-not-on-top-of-ui) | The ability is not on the top of the UI. |
 | [16000055](../errorcode-ability.md#16000055-installationfree-timeout) | Installation-free timed out. |
 | [16200001](../errorcode-ability.md#16200001-caller-released) | The caller has been released. |
-| [16000018](../errorcode-ability.md#16000018-restricting-redirection-to-thirdparty-applications-of-api-version-11-or-later) | Redirection to a third-party application is not allowed in API versiongreater than 11.<br>**Applicable version:** 12 and later |
+| [16000018](../errorcode-ability.md#16000018-restricting-redirection-to-thirdparty-applications-of-api-version-11-or-later) | Redirection to a third-party application is not allowed in API version greater than 11.<br>**Applicable version:** 12 and later |
 | [16000019](../errorcode-ability.md#16000019-no-matching-ability-is-found-during-implicit-startup) | No matching ability is found.<br>**Applicable version:** 12 and later |
 | [16000069](../errorcode-ability.md#16000069-extensionability-fails-to-start-a-thirdparty-application-in-strict-mode) | The extension cannot start the third party application.<br>**Applicable version:** 12 and later |
 | [16000070](../errorcode-ability.md#16000070-extensionability-fails-to-start-a-serviceextensionability-in-strict-mode) | The extension cannot start the service.<br>**Applicable version:** 12 and later |
@@ -830,14 +801,16 @@ startUIServiceExtensionAbility(want: Want): Promise<void>
 
 Starts a UIServiceExtensionAbility. This API uses a promise to return the result.
 
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
+> **NOTE**  
+>  
+> For details about the startup rules for the components in the stage model, see  
 > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
 
 **Since:** 14
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-UIExtensionContext-startUIServiceExtensionAbility(want: Want): Promise<void>--><!--Device-UIExtensionContext-startUIServiceExtensionAbility(want: Want): Promise<void>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -845,13 +818,13 @@ Starts a UIServiceExtensionAbility. This API uses a promise to return the result
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want for starting the UIServiceExtensionAbility. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want for starting the UIServiceExtensionAbility. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -878,12 +851,13 @@ Starts a UIServiceExtensionAbility. This API uses a promise to return the result
 terminateSelf(callback: AsyncCallback<void>): void
 ```
 
-Destroys this UIExtensionAbility and closes the corresponding window. This API uses an asynchronous callback to
-return the result.
+Destroys this UIExtensionAbility and closes the corresponding window. This API uses an asynchronous callback to return the result.
 
 **Since:** 12
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-UIExtensionContext-terminateSelf(callback: AsyncCallback<void>): void--><!--Device-UIExtensionContext-terminateSelf(callback: AsyncCallback<void>): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -891,7 +865,7 @@ return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is**undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -911,13 +885,15 @@ Destroys this UIExtensionAbility and closes the corresponding window. This API u
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-UIExtensionContext-terminateSelf(): Promise<void>--><!--Device-UIExtensionContext-terminateSelf(): Promise<void>-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 ## terminateSelfWithResult
 
@@ -925,12 +901,13 @@ Destroys this UIExtensionAbility and closes the corresponding window. This API u
 terminateSelfWithResult(parameter: AbilityResult, callback: AsyncCallback<void>): void
 ```
 
-Destroys this UIExtensionAbility, closes the corresponding window, and returns the result to the caller of the
-UIExtensionAbility (usually a system service). This API uses an asynchronous callback to return the result.
+Destroys this UIExtensionAbility, closes the corresponding window, and returns the result to the caller of the UIExtensionAbility (usually a system service). This API uses an asynchronous callback to return the result.
 
 **Since:** 12
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-UIExtensionContext-terminateSelfWithResult(parameter: AbilityResult, callback: AsyncCallback<void>): void--><!--Device-UIExtensionContext-terminateSelfWithResult(parameter: AbilityResult, callback: AsyncCallback<void>): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -938,8 +915,8 @@ UIExtensionAbility (usually a system service). This API uses an asynchronous cal
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| parameter | AbilityResult | Yes | Information returned to the caller of the UIExtensionAbility. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is**undefined**; otherwise, **err** is an error object. |
+| parameter | [AbilityResult](arkts-ability-abilityresult-abilityresult-i.md) | Yes | Information returned to the caller of the UIExtensionAbility. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -953,12 +930,13 @@ UIExtensionAbility (usually a system service). This API uses an asynchronous cal
 terminateSelfWithResult(parameter: AbilityResult): Promise<void>
 ```
 
-Destroys this UIExtensionAbility, closes the corresponding window, and returns the result to the caller of the
-UIExtensionAbility (usually a system service). This API uses a promise to return the result.
+Destroys this UIExtensionAbility, closes the corresponding window, and returns the result to the caller of the UIExtensionAbility (usually a system service). This API uses a promise to return the result.
 
 **Since:** 12
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-UIExtensionContext-terminateSelfWithResult(parameter: AbilityResult): Promise<void>--><!--Device-UIExtensionContext-terminateSelfWithResult(parameter: AbilityResult): Promise<void>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -966,13 +944,13 @@ UIExtensionAbility (usually a system service). This API uses a promise to return
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| parameter | AbilityResult | Yes | Information returned to the caller of the UIExtensionAbility. |
+| parameter | [AbilityResult](arkts-ability-abilityresult-abilityresult-i.md) | Yes | Information returned to the caller of the UIExtensionAbility. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 

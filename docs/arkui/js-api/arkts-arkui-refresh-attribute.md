@@ -8,6 +8,8 @@ In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-ap
 
 **Since:** 8
 
+<!--Device-unnamed-declare class RefreshAttribute extends CommonMethod<RefreshAttribute>--><!--Device-unnamed-declare class RefreshAttribute extends CommonMethod<RefreshAttribute>-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 ## maxPullDownDistance
@@ -24,13 +26,15 @@ Sets the maximum pull-down distance.
 
 **Atomic service API:** This API can be used in atomic services since API version 20.
 
+<!--Device-RefreshAttribute-maxPullDownDistance(distance: Optional<number>): RefreshAttribute--><!--Device-RefreshAttribute-maxPullDownDistance(distance: Optional<number>): RefreshAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| distance | Optional&lt;number&gt; | Yes | Maximum pull-down distance. The minimum value for the maximum pull-downdistance is 0. Values less than 0 are treated as **0**. If this value is less than the refresh offset (**refreshOffset**), the refresh action will not be triggered when the pull-down gesture is released.<br>If setto **undefined** or **null**, this parameter is considered not set.<br>Default value: **undefined**.<br>Unit:vp |
+| distance | [Optional](arkts-arkui-optional-t.md)<number> | Yes | Maximum pull-down distance. The minimum value for the maximum pull-down distance is 0. Values less than 0 are treated as **0**. If this value is less than the refresh offset (**refreshOffset**), the refresh action will not be triggered when the pull-down gesture is released.<br>If set to **undefined** or **null**, this parameter is considered not set.<br>Default value: **undefined**.<br>Unit:vp |
 
 ## maxPullDownDistance
 
@@ -48,13 +52,15 @@ If this API is not set, the maximum pull-down distance is **undefined**.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 
+<!--Device-RefreshAttribute-maxPullDownDistance(distance: number | Resource | undefined): RefreshAttribute--><!--Device-RefreshAttribute-maxPullDownDistance(distance: number | Resource | undefined): RefreshAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| distance | number \| Resource \| undefined | Yes | Maximum pull-down distance.<br>Default value: **undefined**.<br>Unit: vp<br>Value range:[0, +∞). If the value is less than 0, **0** is used.If this value is less than the[refreshOffset](../../../../reference/apis-arkui/arkui-ts/ts-container-refresh.md#refreshoffset12),the refresh action will not be triggered when the pull-down gesture is released.<br>If this parameter is set to **undefined** or **null**,it is considered that this attribute is not set, meaning there is no limit on the maximum pull-down distance. |
+| distance | number \| Resource \| undefined | Yes | Maximum pull-down distance.<br>Default value: **undefined**.<br  >Unit: vp<br>Value range:[0, +∞). If the value is less than 0, **0** is used.If this value is less than the [refreshOffset](../../../../reference/apis-arkui/arkui-ts/ts-container-refresh.md#refreshoffset12),the refresh action will not be triggered when the pull-down gesture is released.<br>If this parameter is set to **undefined** or **null**,it is considered that this attribute is not set, meaning there is no limit on the maximum pull-down distance. |
 
 ## onOffsetChange
 
@@ -64,9 +70,9 @@ onOffsetChange(callback: Callback<number>)
 
 Called when the pull-down distance changes.
 
-> **NOTE**
->
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
+> **NOTE**  
+>  
+> This API can be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1) since API version 20.
 
 **Since:** 12
 
@@ -74,13 +80,15 @@ Called when the pull-down distance changes.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-RefreshAttribute-onOffsetChange(callback: Callback<number>): RefreshAttribute--><!--Device-RefreshAttribute-onOffsetChange(callback: Callback<number>): RefreshAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Callback&lt;number&gt; | Yes | Callback used to listen for the pull-down distance changes. It is triggeredwhen the pull-down distance changes and returns the current pull-down distance.<br>Unit: vp |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<number> | Yes | Callback used to listen for the pull-down distance changes. It is triggered when the pull-down distance changes and returns the current pull-down distance.<br>Unit: vp |
 
 ## onRefreshing
 
@@ -94,13 +102,15 @@ Called when the component starts refreshing.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-RefreshAttribute-onRefreshing(callback: () => void): RefreshAttribute--><!--Device-RefreshAttribute-onRefreshing(callback: () => void): RefreshAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | () =&gt; void | Yes | Callback triggered when the component enters the refresh state. |
+| callback | () => void | Yes | Callback triggered when the component enters the refresh state. |
 
 ## onStateChange
 
@@ -114,13 +124,15 @@ Called when the refresh status changes.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-RefreshAttribute-onStateChange(callback: (state: RefreshStatus) => void): RefreshAttribute--><!--Device-RefreshAttribute-onStateChange(callback: (state: RefreshStatus) => void): RefreshAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (state: RefreshStatus) =&gt; void | Yes |  |
+| callback | (state: RefreshStatus) => void | Yes |  |
 
 ## pullDownRatio
 
@@ -136,13 +148,15 @@ Sets the pull-down ratio.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-RefreshAttribute-pullDownRatio(ratio: Optional<number>): RefreshAttribute--><!--Device-RefreshAttribute-pullDownRatio(ratio: Optional<number>): RefreshAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| ratio | Optional&lt;number&gt; | Yes | Pull-down ratio. A larger value indicates higher responsiveness to the pull-down gesture. The value **0** indicates that the pull-down does not follow the gesture, and **1** indicatesthat the pull-down follows the gesture proportionally.<br>If this parameter is not set or is set to**undefined**, a dynamic pull-down ratio is used. That is, the larger the pull-down distance, the smaller theratio.<br>The value ranges from 0 to 1. A value less than 0 is handled as **0**, and a value greater than 1 ishandled as **1**. |
+| ratio | [Optional](arkts-arkui-optional-t.md)<number> | Yes | Pull-down ratio. A larger value indicates higher responsiveness to the pull-down gesture. The value **0** indicates that the pull-down does not follow the gesture, and **1** indicates that the pull-down follows the gesture proportionally.<br>If this parameter is not set or is set to **undefined**, a dynamic pull-down ratio is used. That is, the larger the pull-down distance, the smaller the ratio.<br>The value ranges from 0 to 1. A value less than 0 is handled as **0**, and a value greater than 1 is handled as **1**. |
 
 ## pullToRefresh
 
@@ -150,8 +164,7 @@ Sets the pull-down ratio.
 pullToRefresh(value: boolean)
 ```
 
-Sets whether to initiate a refresh when the pull-down distance exceeds the value of
-[refreshOffset](RefreshAttribute#refreshOffset(value: number)).
+Sets whether to initiate a refresh when the pull-down distance exceeds the value of [refreshOffset](RefreshAttribute#refreshOffset(value: number)).
 
 **Since:** 12
 
@@ -159,13 +172,15 @@ Sets whether to initiate a refresh when the pull-down distance exceeds the value
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-RefreshAttribute-pullToRefresh(value: boolean): RefreshAttribute--><!--Device-RefreshAttribute-pullToRefresh(value: boolean): RefreshAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | boolean | Yes | Whether to initiate a refresh when the pull-down distance exceeds the value of[refreshOffset](RefreshAttribute#refreshOffset(value: number)). The value **true** means to initiate arefresh, and **false** means the opposite.<br>Default value: **true** |
+| value | boolean | Yes | Whether to initiate a refresh when the pull-down distance exceeds the value of [refreshOffset](RefreshAttribute#refreshOffset(value: number)). The value **true** means to initiate a refresh, and **false** means the opposite.<br>Default value: **true** |
 
 ## pullUpToCancelRefresh
 
@@ -181,6 +196,8 @@ Sets whether to enable the pull-up-to-cancel gesture for refreshing operations.
 
 **Atomic service API:** This API can be used in atomic services since API version 23.
 
+<!--Device-RefreshAttribute-pullUpToCancelRefresh(enabled: boolean | undefined): RefreshAttribute--><!--Device-RefreshAttribute-pullUpToCancelRefresh(enabled: boolean | undefined): RefreshAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
@@ -195,8 +212,7 @@ Sets whether to enable the pull-up-to-cancel gesture for refreshing operations.
 refreshOffset(value: number)
 ```
 
-Sets the minimum pull-down offset required to trigger a refresh. If the distance pulled down is less than the value
-specified by this attribute, releasing the gesture does not trigger a refresh.
+Sets the minimum pull-down offset required to trigger a refresh. If the distance pulled down is less than the value specified by this attribute, releasing the gesture does not trigger a refresh.
 
 **Since:** 12
 
@@ -204,13 +220,15 @@ specified by this attribute, releasing the gesture does not trigger a refresh.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-RefreshAttribute-refreshOffset(value: number): RefreshAttribute--><!--Device-RefreshAttribute-refreshOffset(value: number): RefreshAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | number | Yes | Pull-down offset, in vp.<br>Default value: 96 vp when [promptText](arkts-arkui-refreshoptions-i.md)is set and 64 vp when [promptText](arkts-arkui-refreshoptions-i.md) is not set.<br>If the value specified is 0 or lessthan 0, the default value is used. |
+| value | number | Yes | Pull-down offset, in vp.<br>Default value: 96 vp when [promptText](arkts-arkui-refresh-refreshoptions-i.md)is set and 64 vp when [promptText](arkts-arkui-refresh-refreshoptions-i.md) is not set.<br>If the value specified is 0 or less than 0, the default value is used. |
 
 ## refreshOffset
 
@@ -218,11 +236,9 @@ specified by this attribute, releasing the gesture does not trigger a refresh.
 refreshOffset(value: number | Resource)
 ```
 
-Sets the pull-down offset that triggers the refresh. When the pull-down distance is less than the value of this
-attribute, releasing the pull-down gesture does not trigger the refresh. The resource type is supported.
+Sets the pull-down offset that triggers the refresh. When the pull-down distance is less than the value of this attribute, releasing the pull-down gesture does not trigger the refresh. The resource type is supported.
 
-If this API and [promptText](arkts-arkui-refreshoptions-i.md) are not set, the default offset is 64 vp. If
-[promptText](arkts-arkui-refreshoptions-i.md) is set, the default offset is 96 vp.
+If this API and [promptText](arkts-arkui-refresh-refreshoptions-i.md) are not set, the default offset is 64 vp. If [promptText](arkts-arkui-refresh-refreshoptions-i.md) is set, the default offset is 96 vp.
 
 **Since:** 26.0.0
 
@@ -230,11 +246,13 @@ If this API and [promptText](arkts-arkui-refreshoptions-i.md) are not set, the d
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 
+<!--Device-RefreshAttribute-refreshOffset(value: number | Resource): RefreshAttribute--><!--Device-RefreshAttribute-refreshOffset(value: number | Resource): RefreshAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | number \| Resource | Yes | Pull-down offset.<br>Unit: vp<br>Value range: (0, +∞). If the value is 0 or anegative number, the default value will be used. |
+| value | number \| Resource | Yes | Pull-down offset.<br>Unit: vp<br>Value range: (0, +∞). If the value is 0 or a negative number, the default value will be used. |
 

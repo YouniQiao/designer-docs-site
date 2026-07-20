@@ -6,6 +6,8 @@
 
 **起始版本：** 15
 
+<!--Device-unnamed-declare class IndicatorComponentAttribute extends CommonMethod<IndicatorComponentAttribute>--><!--Device-unnamed-declare class IndicatorComponentAttribute extends CommonMethod<IndicatorComponentAttribute>-End-->
+
 **系统能力：** SystemCapability.ArkUI.ArkUI.Full
 
 ## count
@@ -22,9 +24,11 @@ count(totalCount: number)
 
 **模型约束：** 此接口仅可在Stage模型下使用。
 
-**元服务API：** 从API版本15开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API版本15开始，该接口支持在原子化服务API中使用。
 
 **卡片能力：** 从API版本15开始，该接口支持在ArkTS卡片中使用。
+
+<!--Device-IndicatorComponentAttribute-count(totalCount: number): IndicatorComponentAttribute--><!--Device-IndicatorComponentAttribute-count(totalCount: number): IndicatorComponentAttribute-End-->
 
 **系统能力：** SystemCapability.ArkUI.ArkUI.Full
 
@@ -48,9 +52,11 @@ initialIndex(index: number)
 
 **模型约束：** 此接口仅可在Stage模型下使用。
 
-**元服务API：** 从API版本15开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API版本15开始，该接口支持在原子化服务API中使用。
 
 **卡片能力：** 从API版本15开始，该接口支持在ArkTS卡片中使用。
+
+<!--Device-IndicatorComponentAttribute-initialIndex(index: number): IndicatorComponentAttribute--><!--Device-IndicatorComponentAttribute-initialIndex(index: number): IndicatorComponentAttribute-End-->
 
 **系统能力：** SystemCapability.ArkUI.ArkUI.Full
 
@@ -74,9 +80,11 @@ loop(isLoop: boolean)
 
 **模型约束：** 此接口仅可在Stage模型下使用。
 
-**元服务API：** 从API版本15开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API版本15开始，该接口支持在原子化服务API中使用。
 
 **卡片能力：** 从API版本15开始，该接口支持在ArkTS卡片中使用。
+
+<!--Device-IndicatorComponentAttribute-loop(isLoop: boolean): IndicatorComponentAttribute--><!--Device-IndicatorComponentAttribute-loop(isLoop: boolean): IndicatorComponentAttribute-End-->
 
 **系统能力：** SystemCapability.ArkUI.ArkUI.Full
 
@@ -98,9 +106,11 @@ Called when the index value changes.
 
 **模型约束：** 此接口仅可在Stage模型下使用。
 
-**元服务API：** 从API版本15开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API版本15开始，该接口支持在原子化服务API中使用。
 
 **卡片能力：** 从API版本15开始，该接口支持在ArkTS卡片中使用。
+
+<!--Device-IndicatorComponentAttribute-onChange(event: Callback<number>): IndicatorComponentAttribute--><!--Device-IndicatorComponentAttribute-onChange(event: Callback<number>): IndicatorComponentAttribute-End-->
 
 **系统能力：** SystemCapability.ArkUI.ArkUI.Full
 
@@ -108,7 +118,7 @@ Called when the index value changes.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| event | Callback&lt;number&gt; | 是 |  |
+| event | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<number> | 是 |  |
 
 ## style
 
@@ -122,9 +132,11 @@ style(indicatorStyle: DotIndicator | DigitIndicator)
 
 **模型约束：** 此接口仅可在Stage模型下使用。
 
-**元服务API：** 从API版本15开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API版本15开始，该接口支持在原子化服务API中使用。
 
 **卡片能力：** 从API版本15开始，该接口支持在ArkTS卡片中使用。
+
+<!--Device-IndicatorComponentAttribute-style(indicatorStyle: DotIndicator | DigitIndicator): IndicatorComponentAttribute--><!--Device-IndicatorComponentAttribute-style(indicatorStyle: DotIndicator | DigitIndicator): IndicatorComponentAttribute-End-->
 
 **系统能力：** SystemCapability.ArkUI.ArkUI.Full
 
@@ -148,9 +160,11 @@ vertical(isVertical: boolean)
 
 **模型约束：** 此接口仅可在Stage模型下使用。
 
-**元服务API：** 从API版本15开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API版本15开始，该接口支持在原子化服务API中使用。
 
 **卡片能力：** 从API版本15开始，该接口支持在ArkTS卡片中使用。
+
+<!--Device-IndicatorComponentAttribute-vertical(isVertical: boolean): IndicatorComponentAttribute--><!--Device-IndicatorComponentAttribute-vertical(isVertical: boolean): IndicatorComponentAttribute-End-->
 
 **系统能力：** SystemCapability.ArkUI.ArkUI.Full
 

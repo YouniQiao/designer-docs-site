@@ -1,14 +1,14 @@
 # WorkSchedulerExtensionContext
 
-The **WorkSchedulerExtensionContext** module, inherited from
-[ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md), provides a context environment for the
-**WorkSchedulerExtensionAbility**.
+The **WorkSchedulerExtensionContext** module, inherited from [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md), provides a context environment for the **WorkSchedulerExtensionAbility**.
 
 This module provides APIs for accessing the resources of a **WorkSchedulerExtensionAbility**.
 
 **Inheritance/Implementation:** WorkSchedulerExtensionContext extends [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md)
 
 **Since:** 10
+
+<!--Device-unnamed-declare class WorkSchedulerExtensionContext extends ExtensionContext--><!--Device-unnamed-declare class WorkSchedulerExtensionContext extends ExtensionContext-End-->
 
 **System capability:** SystemCapability.ResourceSchedule.WorkScheduler
 
@@ -24,6 +24,8 @@ Starts a **ServiceExtensionAbility**. This API uses a promise to return the resu
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-WorkSchedulerExtensionContext-startServiceExtensionAbility(want: Want): Promise<void>--><!--Device-WorkSchedulerExtensionContext-startServiceExtensionAbility(want: Want): Promise<void>-End-->
+
 **System capability:** SystemCapability.ResourceSchedule.WorkScheduler
 
 **System API:** This is a system API.
@@ -32,13 +34,13 @@ Starts a **ServiceExtensionAbility**. This API uses a promise to return the resu
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Information about the **Want** used for starting an ability. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Information about the **Want** used for starting an ability. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -71,6 +73,8 @@ Stops a **ServiceExtensionAbility**. This API uses a promise to return the resul
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-WorkSchedulerExtensionContext-stopServiceExtensionAbility(want: Want): Promise<void>--><!--Device-WorkSchedulerExtensionContext-stopServiceExtensionAbility(want: Want): Promise<void>-End-->
+
 **System capability:** SystemCapability.ResourceSchedule.WorkScheduler
 
 **System API:** This is a system API.
@@ -79,13 +83,13 @@ Stops a **ServiceExtensionAbility**. This API uses a promise to return the resul
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Information about the **Want** used for stopping an ability. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Information about the **Want** used for stopping an ability. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 

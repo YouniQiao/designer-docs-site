@@ -2,11 +2,13 @@
 
 The **dragInteraction** module provides the APIs to enable and disable listening for dragging status changes.
 
-> **NOTE**
->
+> **NOTE**  
+>  
 > - The APIs provided by this module are system APIs.
 
 **Since:** 10
+
+<!--Device-unnamed-declare namespace dragInteraction--><!--Device-unnamed-declare namespace dragInteraction-End-->
 
 **System capability:** SystemCapability.Msdp.DeviceStatus.Drag
 
@@ -25,9 +27,9 @@ import { dragInteraction } from '@kit.ArkUI';
 
 | Name | Description |
 | --- | --- |
-| [getDataSummary](arkts-arkui-getdatasummary-f-sys.md#getdatasummary-1) | Obtains the data summary of all dragged objects. |
-| [off](arkts-arkui-off-f-sys.md#off-1) | Disables listening for dragging status changes. |
-| [on](arkts-arkui-on-f-sys.md#on-1) | Enables listening for dragging status changes. |
+| [getDataSummary](arkts-arkui-draginteraction-getdatasummary-f-sys.md#getdatasummary-1) | Obtains the data summary of all dragged objects. |
+| [off](arkts-arkui-draginteraction-off-f-sys.md#off-1) | Disables listening for dragging status changes. |
+| [on](arkts-arkui-draginteraction-on-f-sys.md#on-1) | Enables listening for dragging status changes. |
 <!--DelEnd-->
 
 <!--Del-->
@@ -35,7 +37,7 @@ import { dragInteraction } from '@kit.ArkUI';
 
 | Name | Description |
 | --- | --- |
-| [Summary](arkts-arkui-summary-i-sys.md) | Defines the data summary of the dragged object. |
+| [Summary](arkts-arkui-draginteraction-summary-i-sys.md) | Defines the data summary of the dragged object. |
 <!--DelEnd-->
 
 <!--Del-->
@@ -43,6 +45,6 @@ import { dragInteraction } from '@kit.ArkUI';
 
 | Name | Description |
 | --- | --- |
-| [DragState](arkts-arkui-dragstate-e-sys.md) | Enumerates dragging states. |
+| [DragState](arkts-arkui-draginteraction-dragstate-e-sys.md) | Enumerates dragging states. |
 <!--DelEnd-->
 

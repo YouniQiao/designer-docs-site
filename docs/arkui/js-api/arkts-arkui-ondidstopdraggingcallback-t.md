@@ -14,6 +14,8 @@ On scroll callback using in scrollable onDidStopDragging.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 21.
 
+<!--Device-unnamed-declare type OnDidStopDraggingCallback = (willFling: boolean) => void--><!--Device-unnamed-declare type OnDidStopDraggingCallback = (willFling: boolean) => void-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**

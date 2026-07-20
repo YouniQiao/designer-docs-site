@@ -1,0 +1,416 @@
+# CloudService (System API)
+
+Provides APIs for interacting with the cloud sync service.You need to inherit this class and implement APIs of this class.The system calls these APIs to connect to the cloud and use the cloud sync service.
+
+**Since:** 11
+
+<!--Device-cloudExtension-export interface CloudService--><!--Device-cloudExtension-export interface CloudService-End-->
+
+**System capability:** SystemCapability.DistributedDataManager.CloudSync.Server
+
+**System API:** This is a system API.
+
+## Modules to Import
+
+```TypeScript
+import { cloudExtension } from '@kit.ArkData';
+```
+
+## connectAssetLoader
+
+```TypeScript
+connectAssetLoader(bundleName: string, database: Database): Promise<rpc.RemoteObject>
+```
+
+Connects to an asset loader by obtaining a RemoteObject instance of AssetLoader,which is created by using createAssetLoaderStub. This API uses a promise to return the result.You can use this API to connect to the asset loader.
+
+**Since:** 11
+
+<!--Device-CloudService-connectAssetLoader(bundleName: string, database: Database): Promise<rpc.RemoteObject>--><!--Device-CloudService-connectAssetLoader(bundleName: string, database: Database): Promise<rpc.RemoteObject>-End-->
+
+**System capability:** SystemCapability.DistributedDataManager.CloudSync.Server
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| bundleName | string | Yes | Bundle name of the application. |
+| database | [Database](arkts-arkdata-cloudextension-database-i-sys.md) | Yes | Database to connect. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<rpc.RemoteObject> | Promise used to return the RemoteObject instance of AssetLoader. |
+
+**Example**
+
+```TypeScript
+import { rpc } from '@kit.IPCKit';
+
+class MyAssetLoader implements cloudExtension.AssetLoader {
+  // ...
+}
+
+class MyCloudService implements cloudExtension.CloudService {
+  constructor() {}
+  async connectAssetLoader(bundleName: string, database: cloudExtension.Database): Promise<rpc.RemoteObject> {
+    // ...
+    console.info(`connect asset loader, bundle: ${bundleName}`);
+    return cloudExtension.createAssetLoaderStub(new MyAssetLoader());
+  }
+}
+
+```
+
+## connectDB
+
+```TypeScript
+connectDB(bundleName: string, database: Database): Promise<rpc.RemoteObject>
+```
+
+Connects to a cloud database by obtaining a RemoteObject instance of CloudDB,which is created by using createCloudDBStub. This API uses a promise to return the result.
+
+**Since:** 11
+
+<!--Device-CloudService-connectDB(bundleName: string, database: Database): Promise<rpc.RemoteObject>--><!--Device-CloudService-connectDB(bundleName: string, database: Database): Promise<rpc.RemoteObject>-End-->
+
+**System capability:** SystemCapability.DistributedDataManager.CloudSync.Server
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| bundleName | string | Yes | Bundle name of the application. |
+| database | [Database](arkts-arkdata-cloudextension-database-i-sys.md) | Yes | Database to connect. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<rpc.RemoteObject> | Promise used to return the RemoteObject instance of CloudDB. |
+
+**Example**
+
+```TypeScript
+import { rpc } from '@kit.IPCKit';
+
+class MyCloudDB implements cloudExtension.CloudDB {
+  // ...
+}
+
+class MyCloudService implements cloudExtension.CloudService {
+  constructor() {}
+    // ...
+  async connectDB(bundleName: string, database: cloudExtension.Database): Promise<rpc.RemoteObject> {
+    console.info(`connect DB, bundleName: ${bundleName}`);
+    return cloudExtension.createCloudDBStub(new MyCloudDB());
+  }
+}
+
+```
+
+## connectShareCenter
+
+```TypeScript
+connectShareCenter(userId: number, bundleName: string): Promise<rpc.RemoteObject>
+```
+
+Connects to ShareCenter by obtaining a RemoteObject instance of ShareCenter,which is created by using createShareServiceStub. This API uses a promise to return the result.
+
+**Since:** 11
+
+<!--Device-CloudService-connectShareCenter(userId: int, bundleName: string): Promise<rpc.RemoteObject>--><!--Device-CloudService-connectShareCenter(userId: int, bundleName: string): Promise<rpc.RemoteObject>-End-->
+
+**System capability:** SystemCapability.DistributedDataManager.CloudSync.Server
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| userId | number | Yes | User ID. |
+| bundleName | string | Yes | Bundle name of the application. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<rpc.RemoteObject> | Promise used to return the RemoteObject instance of ShareCenter. |
+
+**Example**
+
+```TypeScript
+import { rpc } from '@kit.IPCKit';
+
+class MyShareCenter implements cloudExtension.ShareCenter {
+  constructor() {}
+  // ...
+}
+
+class MyCloudService implements cloudExtension.CloudService {
+  constructor() {}
+  async connectShareCenter(userId: number, bundleName: string): Promise<rpc.RemoteObject> {
+    console.info(`connect share center, bundle: ${bundleName}`);
+    return cloudExtension.createShareServiceStub(new MyShareCenter());
+  }
+}
+
+```
+
+## getAppBriefInfo
+
+```TypeScript
+getAppBriefInfo(): Promise<Record<string, AppBriefInfo>>
+```
+
+Obtains brief application information. This API uses a promise to return the result.
+
+**Since:** 11
+
+<!--Device-CloudService-getAppBriefInfo(): Promise<Record<string, AppBriefInfo>>--><!--Device-CloudService-getAppBriefInfo(): Promise<Record<string, AppBriefInfo>>-End-->
+
+**System capability:** SystemCapability.DistributedDataManager.CloudSync.Server
+
+**System API:** This is a system API.
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Record<string, AppBriefInfo>> | Promise used to return bundleName and AppBriefInfo,in KV pairs. |
+
+**Example**
+
+```TypeScript
+class MyCloudService implements cloudExtension.CloudService {
+  constructor() {}
+  // ...
+  async getAppBriefInfo(): Promise<Record<string, cloudExtension.AppBriefInfo>> {
+    console.info(`get app brief info`);
+    // ...
+    return {
+      "test_bundle":
+      {
+        appId: "test_appID",
+        bundleName: "test_bundlename",
+        cloudSwitch: true,
+        instanceId: 0,
+      }
+    };
+  }
+}
+
+```
+
+## getAppSchema
+
+```TypeScript
+getAppSchema(bundleName: string): Promise<Result<AppSchema>>
+```
+
+Obtains the application database schema information. This API uses a promise to return the result.
+
+**Since:** 11
+
+<!--Device-CloudService-getAppSchema(bundleName: string): Promise<Result<AppSchema>>--><!--Device-CloudService-getAppSchema(bundleName: string): Promise<Result<AppSchema>>-End-->
+
+**System capability:** SystemCapability.DistributedDataManager.CloudSync.Server
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| bundleName | string | Yes | Bundle name of the application. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Result<AppSchema>> | Promise used to return the schema information obtained. |
+
+**Example**
+
+```TypeScript
+class MyCloudService implements cloudExtension.CloudService {
+  constructor() {
+  }
+  // ...
+  async getAppSchema(bundleName: string): Promise<cloudExtension.Result<cloudExtension.AppSchema>> {
+    console.info(`get app schema, bundleName:${bundleName}`);
+    // ...
+    return {
+      code: cloudExtension.ErrorCode.SUCCESS,
+      description: "get app schema success",
+      value: {
+        bundleName: "test_bundleName",
+        version: 1,
+        databases: []
+      }
+    };
+  }
+}
+
+```
+
+## getServiceInfo
+
+```TypeScript
+getServiceInfo(): Promise<ServiceInfo>
+```
+
+Obtains the server information. This API uses a promise to return the result.
+
+**Since:** 11
+
+<!--Device-CloudService-getServiceInfo(): Promise<ServiceInfo>--><!--Device-CloudService-getServiceInfo(): Promise<ServiceInfo>-End-->
+
+**System capability:** SystemCapability.DistributedDataManager.CloudSync.Server
+
+**System API:** This is a system API.
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ServiceInfo> | Promise used to return the server information obtained. |
+
+**Example**
+
+```TypeScript
+import { rpc } from '@kit.IPCKit';
+
+let testSpace: number = 100;
+let testUserId: number = 1;
+
+class MyCloudService implements cloudExtension.CloudService {
+  constructor() {}
+  // ...
+  async getServiceInfo(): Promise<cloudExtension.ServiceInfo> {
+    console.info(`get service info`);
+    // ...
+    return {
+      enableCloud: true,
+      id: "test_id",
+      totalSpace: testSpace,
+      remainingSpace: testSpace,
+      user: testUserId,
+    };
+  }
+}
+
+```
+
+## subscribe
+
+```TypeScript
+subscribe(
+      subInfo: Record<string, Array<Database>>,
+      expirationTime: number
+    ): Promise<Result<SubscribeInfo>>
+```
+
+Subscribes to data. This API uses a promise to return the result.
+
+**Since:** 11
+
+<!--Device-CloudService-subscribe(
+      subInfo: Record<string, Array<Database>>,
+      expirationTime: long
+    ): Promise<Result<SubscribeInfo>>--><!--Device-CloudService-subscribe(
+      subInfo: Record<string, Array<Database>>,
+      expirationTime: long
+    ): Promise<Result<SubscribeInfo>>-End-->
+
+**System capability:** SystemCapability.DistributedDataManager.CloudSync.Server
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| subInfo | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Array<Database>> | Yes | Data to be subscribed to,in KV pairs of the application bundle name and database information. |
+| expirationTime | number | Yes | Subscription expiration time, in ms. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Result<SubscribeInfo>> | Promise used to return the result,including the subscription expiration time and subscription information. |
+
+**Example**
+
+```TypeScript
+let testTime: number = 10;
+class MyCloudService implements cloudExtension.CloudService {
+  constructor() {
+  }
+  // ...
+  async subscribe(subInfo: Record<string, Array<cloudExtension.Database>>, expirationTime: number): Promise<cloudExtension.Result<cloudExtension.SubscribeInfo>> {
+    console.info(`subscribe expirationTime: ${expirationTime}`);
+    // ...
+    return {
+      code: cloudExtension.ErrorCode.SUCCESS,
+      description: "subscribe success",
+      value: {
+        expirationTime: testTime,
+        subscribe: {}
+      }
+    };
+  }
+}
+
+```
+
+## unsubscribe
+
+```TypeScript
+unsubscribe(unsubscribeInfo: Record<string, Array<string>>): Promise<number>
+```
+
+Unsubscribes from data changes in the cloud. This API uses a promise to return the result.
+
+**Since:** 11
+
+<!--Device-CloudService-unsubscribe(unsubscribeInfo: Record<string, Array<string>>): Promise<int>--><!--Device-CloudService-unsubscribe(unsubscribeInfo: Record<string, Array<string>>): Promise<int>-End-->
+
+**System capability:** SystemCapability.DistributedDataManager.CloudSync.Server
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| unsubscribeInfo | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Array<string>> | Yes | Data to be unsubscribed from,in an array of KV pairs consisting of the application bundle name and database information. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result. |
+
+**Example**
+
+```TypeScript
+class MyCloudService implements cloudExtension.CloudService {
+  constructor() {
+  }
+  // ...
+  async unsubscribe(unsubscribeInfo: Record<string, Array<string>>): Promise<number> {
+    console.info(`unsubscribe`);
+    // ...
+    return cloudExtension.ErrorCode.SUCCESS;
+  }
+}
+
+```
+

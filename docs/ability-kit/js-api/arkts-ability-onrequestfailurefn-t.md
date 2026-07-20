@@ -12,6 +12,8 @@ Defines the callback for failed ability launches.
 
 **Atomic service API:** This API can be used in atomic services since API version 21.
 
+<!--Device-unnamed-export type OnRequestFailureFn = (name: string, failureCode: AbilityStartFailureCode, failureMessage: string) => void--><!--Device-unnamed-export type OnRequestFailureFn = (name: string, failureCode: AbilityStartFailureCode, failureMessage: string) => void-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Parameters:**

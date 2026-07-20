@@ -16,6 +16,8 @@ Changes the time when the file was last modified.
 
 **Since:** 11
 
+<!--Device-unnamed-declare function utimes(path: string, mtime: number): void--><!--Device-unnamed-declare function utimes(path: string, mtime: number): void-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
@@ -23,7 +25,7 @@ Changes the time when the file was last modified.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Application sandbox path of the file. |
-| mtime | number | Yes | New timestamp. The value is the number of milliseconds elapsed since the Epochtime (00:00:00 UTC on January 1, 1970). Only the time when the file was last modified can be changed. |
+| mtime | number | Yes | New timestamp. The value is the number of milliseconds elapsed since the Epoch time (00:00:00 UTC on January 1, 1970). Only the time when the file was last modified can be changed. |
 
 **Error codes:**
 

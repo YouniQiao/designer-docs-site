@@ -1,0 +1,394 @@
+# ServiceExtensionAbility (System API)
+
+The ServiceExtensionAbility module provides extended capabilities for background services, including lifecycle callbacks for creating, destroying, connecting, and disconnecting background services.
+
+**Since:** 9
+
+<!--Device-unnamed-declare class ServiceExtensionAbility--><!--Device-unnamed-declare class ServiceExtensionAbility-End-->
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.Core
+
+**System API:** This is a system API.
+
+## Modules to Import
+
+```TypeScript
+import { ServiceExtensionAbility } from '@kit.AbilityKit';
+```
+
+## onConfigurationUpdate
+
+```TypeScript
+onConfigurationUpdate(newConfig: Configuration): void
+```
+
+Called when the configuration of this ServiceExtensionAbility is updated.
+
+**Since:** 9
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionAbility-onConfigurationUpdate(newConfig: Configuration): void--><!--Device-ServiceExtensionAbility-onConfigurationUpdate(newConfig: Configuration): void-End-->
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| newConfig | [Configuration](../../apis-arkui/arkts-components/arkts-arkui-common-configuration-i.md) | Yes | New configuration. |
+
+**Example**
+
+```TypeScript
+import { ServiceExtensionAbility, Configuration } from '@kit.AbilityKit';
+
+class ServiceExt extends ServiceExtensionAbility {
+  onConfigurationUpdate(newConfig: Configuration) {
+    console.info(`onConfigurationUpdate, config: ${JSON.stringify(newConfig)}`);
+  }
+}
+
+```
+
+## onConnect
+
+```TypeScript
+onConnect(want: Want): rpc.RemoteObject | Promise<rpc.RemoteObject>
+```
+
+Called following **onCreate()** when a ServiceExtensionAbility is started by calling **connectAbility()**. A RemoteObject is returned for communication between the server and client.
+
+**Since:** 9
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionAbility-onConnect(want: Want): rpc.RemoteObject | Promise<rpc.RemoteObject>--><!--Device-ServiceExtensionAbility-onConnect(want: Want): rpc.RemoteObject | Promise<rpc.RemoteObject>-End-->
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information related to this ServiceExtensionAbility, including the ability name and bundle name. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| rpc.RemoteObject | RemoteObject or Promise used to return a RemoteObject,which is used for communication between the client and server. |
+
+**Example**
+
+```TypeScript
+import { ServiceExtensionAbility, Want } from '@kit.AbilityKit';
+import { rpc } from '@kit.IPCKit';
+
+class StubTest extends rpc.RemoteObject{
+  constructor(des: string) {
+    super(des);
+  }
+  onConnect(code: number, data: rpc.MessageSequence, reply: rpc.MessageSequence, option: rpc.MessageOption) {
+  }
+}
+class ServiceExt extends ServiceExtensionAbility {
+  onConnect(want: Want) {
+    console.info('onConnect , want: ${want.abilityName}');
+    return new StubTest('test');
+  }
+}
+
+```
+
+If the returned RemoteObject depends on an asynchronous API, you can use the asynchronous lifecycle.
+
+```TypeScript
+import { ServiceExtensionAbility, Want } from '@kit.AbilityKit';
+import { rpc } from '@kit.IPCKit';
+
+class StubTest extends rpc.RemoteObject{
+  constructor(des: string) {
+    super(des);
+  }
+  onConnect(code: number, data: rpc.MessageSequence, reply: rpc.MessageSequence, option: rpc.MessageOption) {
+  }
+}
+async function getDescriptor() {
+  // Call the asynchronous function.
+  return "asyncTest"
+}
+class ServiceExt extends ServiceExtensionAbility {
+  async onConnect(want: Want) {
+    console.info(`onConnect , want: ${want.abilityName}`);
+    let descriptor = await getDescriptor();
+    return new StubTest(descriptor);
+  }
+}
+
+```
+
+## onCreate
+
+```TypeScript
+onCreate(want: Want): void
+```
+
+Called to initialize the service logic when a ServiceExtensionAbility is being created.
+
+**Since:** 9
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionAbility-onCreate(want: Want): void--><!--Device-ServiceExtensionAbility-onCreate(want: Want): void-End-->
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information related to this ServiceExtensionAbility, including the ability name and bundle name. |
+
+**Example**
+
+```TypeScript
+import { ServiceExtensionAbility, Want } from '@kit.AbilityKit';
+
+class ServiceExt extends ServiceExtensionAbility {
+  onCreate(want: Want) {
+    console.info(`onCreate, want: ${want.abilityName}`);
+  }
+}
+
+```
+
+## onDestroy
+
+```TypeScript
+onDestroy(): void
+```
+
+Called to clear resources when this ServiceExtensionAbility is being destroyed.
+
+**Since:** 9
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionAbility-onDestroy(): void--><!--Device-ServiceExtensionAbility-onDestroy(): void-End-->
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.Core
+
+**System API:** This is a system API.
+
+**Example**
+
+```TypeScript
+import { ServiceExtensionAbility } from '@kit.AbilityKit';
+
+class ServiceExt extends ServiceExtensionAbility {
+  onDestroy() {
+    console.info('onDestroy');
+  }
+}
+
+```
+
+## onDisconnect
+
+```TypeScript
+onDisconnect(want: Want): void | Promise<void>
+```
+
+Called when a client is disconnected from this ServiceExtensionAbility.This API returns the result synchronously or uses a promise to return the result.
+
+**Since:** 9
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionAbility-onDisconnect(want: Want): void | Promise<void>--><!--Device-ServiceExtensionAbility-onDisconnect(want: Want): void | Promise<void>-End-->
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information related to this ServiceExtensionAbility, including the ability name and bundle name. |
+
+**Example**
+
+A synchronous callback example is as follows:
+
+```TypeScript
+import { ServiceExtensionAbility, Want } from '@kit.AbilityKit';
+
+class ServiceExt extends ServiceExtensionAbility {
+  onDisconnect(want: Want) {
+    console.info(`onDisconnect, want: ${want.abilityName}`);
+  }
+}
+
+```
+
+A promise asynchronous callback example is as follows:
+
+```TypeScript
+import { ServiceExtensionAbility, Want } from '@kit.AbilityKit';
+
+class ServiceExt extends ServiceExtensionAbility {
+  async onDisconnect(want: Want) {
+    console.info(`onDisconnect, want: ${want.abilityName}`);
+    // Call the asynchronous function.
+  }
+}
+
+```
+
+## onDump
+
+```TypeScript
+onDump(params: Array<string>): Array<string>
+```
+
+Dumps the client information.
+
+**Since:** 9
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionAbility-onDump(params: Array<string>): Array<string>--><!--Device-ServiceExtensionAbility-onDump(params: Array<string>): Array<string>-End-->
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| params | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Parameters in the form of a command. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Array of client information. |
+
+**Example**
+
+```TypeScript
+import { ServiceExtensionAbility } from '@kit.AbilityKit';
+
+class ServiceExt extends ServiceExtensionAbility {
+  onDump(params: Array<string>) {
+    console.info(`dump, params: ${JSON.stringify(params)}`);
+    return ['params'];
+  }
+}
+
+```
+
+## onReconnect
+
+```TypeScript
+onReconnect(want: Want): void
+```
+
+Called when a new client attempts to connect to this ServiceExtensionAbility after all previous clients are disconnected. This capability is reserved.
+
+**Since:** 9
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionAbility-onReconnect(want: Want): void--><!--Device-ServiceExtensionAbility-onReconnect(want: Want): void-End-->
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information related to this ServiceExtensionAbility, including the ability name and bundle name. |
+
+**Example**
+
+```TypeScript
+import { ServiceExtensionAbility, Want } from '@kit.AbilityKit';
+
+class ServiceExt extends ServiceExtensionAbility {
+  onReconnect(want: Want) {
+    console.info('onReconnect, want: ${want.abilityName}');
+  }
+}
+
+```
+
+## onRequest
+
+```TypeScript
+onRequest(want: Want, startId: number): void
+```
+
+Called following **onCreate()** when a ServiceExtensionAbility is started by calling **startAbility()** or **startServiceExtensionAbility()**. The value of **startId** is incremented for each ServiceExtensionAbility that is started.
+
+**Since:** 9
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionAbility-onRequest(want: Want, startId: int): void--><!--Device-ServiceExtensionAbility-onRequest(want: Want, startId: int): void-End-->
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information related to this ServiceExtensionAbility, including the ability name and bundle name. |
+| startId | number | Yes | Number of times the instance has been started. The initial value is **1** for the first start, and it increments automatically for subsequent starts. |
+
+**Example**
+
+```TypeScript
+import { ServiceExtensionAbility, Want } from '@kit.AbilityKit';
+
+class ServiceExt extends ServiceExtensionAbility {
+  onRequest(want: Want, startId: number) {
+    console.info('onRequest, want: ${want.abilityName}');
+  }
+}
+
+```
+
+## context
+
+```TypeScript
+context: ServiceExtensionContext
+```
+
+Context of the ServiceExtensionAbility. This context inherits from **ExtensionContext**.
+
+**Type:** ServiceExtensionContext
+
+**Since:** 9
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionAbility-context: ServiceExtensionContext--><!--Device-ServiceExtensionAbility-context: ServiceExtensionContext-End-->
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.Core
+
+**System API:** This is a system API.
+

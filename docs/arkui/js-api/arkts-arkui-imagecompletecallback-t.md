@@ -12,6 +12,8 @@ Defines the callback triggered when the image is successfully loaded or decoded.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-unnamed-type ImageCompleteCallback = (result: ImageLoadResult) => void--><!--Device-unnamed-type ImageCompleteCallback = (result: ImageLoadResult) => void-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**

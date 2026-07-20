@@ -66,6 +66,9 @@ behavior is the same as that of **ForEach**.
 > - The **ListItemGroup** ignores the **direction** attribute for setting the layout direction; instead, it adopts
 > the layout direction of its parent **List** component.
 
+## Child Components
+
+Contains the [ListItem]{@link list_item} child component. Child components can be dynamically generated using rendering control types [if/else](docroot://ui/rendering-control/arkts-rendering-control-ifelse.md),[ForEach](docroot://ui/rendering-control/arkts-rendering-control-foreach.md),[LazyForEach](docroot://ui/rendering-control/arkts-rendering-control-lazyforeach.md), and [Repeat](docroot://ui/rendering-control/arkts-new-rendering-control-repeat.md). **LazyForEach** or **Repeat** is recommended to optimize performance.
 
 ## ListItemGroup
 
@@ -78,6 +81,8 @@ Creates a **ListItemGroup** component.
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-ListItemGroupInterface-(options?: ListItemGroupOptions): ListItemGroupAttribute--><!--Device-ListItemGroupInterface-(options?: ListItemGroupOptions): ListItemGroupAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

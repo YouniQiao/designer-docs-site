@@ -4,6 +4,8 @@ Provides interfaces to get system capability.
 
 **Since:** 9
 
+<!--Device-unnamed-declare namespace systemCapability--><!--Device-unnamed-declare namespace systemCapability-End-->
+
 **System capability:** SystemCapability.Developtools.Syscap
 
 **System API:** This is a system API.
@@ -21,7 +23,7 @@ import { systemCapability } from '@kit.BasicServicesKit';
 
 | Name | Description |
 | --- | --- |
-| [querySystemCapabilities](arkts-basicservices-querysystemcapabilities-f-sys.md#querysystemcapabilities-1) | Get System Capability. |
-| [querySystemCapabilities](arkts-basicservices-querysystemcapabilities-f-sys.md#querysystemcapabilities-2) | Get System Capability. |
+| [querySystemCapabilities](arkts-basicservices-systemcapability-querysystemcapabilities-f-sys.md#querysystemcapabilities-1) | Get System Capability. |
+| [querySystemCapabilities](arkts-basicservices-systemcapability-querysystemcapabilities-f-sys.md#querysystemcapabilities-2) | Get System Capability. |
 <!--DelEnd-->
 

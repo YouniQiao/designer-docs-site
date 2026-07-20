@@ -7,6 +7,9 @@ When the component is invisible, the time change stops. The visible status of a 
 [onVisibleAreaChange]{@link CommonMethod#onVisibleAreaChange(ratios: Array<number>, event: VisibleAreaChangeCallback)}.
 If the visible threshold **ratios** is greater than 0, the component is visible.
 
+## Child Components
+
+Not supported
 
 ## TextClock
 
@@ -21,6 +24,8 @@ Create TextClock component.
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 11.
+
+<!--Device-TextClockInterface-(options?: TextClockOptions): TextClockAttribute--><!--Device-TextClockInterface-(options?: TextClockOptions): TextClockAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

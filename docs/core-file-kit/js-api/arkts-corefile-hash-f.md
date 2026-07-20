@@ -18,6 +18,8 @@ Calculates a hash value for a file. This API uses a promise to return the result
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-hash-function hash(path: string, algorithm: string): Promise<string>--><!--Device-hash-function hash(path: string, algorithm: string): Promise<string>-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
@@ -25,13 +27,13 @@ Calculates a hash value for a file. This API uses a promise to return the result
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Path of the file in the application sandbox. |
-| algorithm | string | Yes | Algorithm used to calculate the hash value. The value can be **md5**, **sha1**, or**sha256**. **sha256** is recommended for security purposes. |
+| algorithm | string | Yes | Algorithm used to calculate the hash value. The value can be **md5**, **sha1**, or **sha256**. **sha256** is recommended for security purposes. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;string&gt; | Promise used to return the hash value. The hash value is a hexadecimal stringconsisting of digits and uppercase letters. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the hash value. The hash value is a hexadecimal string consisting of digits and uppercase letters. |
 
 **Error codes:**
 
@@ -66,6 +68,8 @@ Calculates a hash value for a file. This API uses an asynchronous callback to re
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-hash-function hash(path: string, algorithm: string, callback: AsyncCallback<string>): void--><!--Device-hash-function hash(path: string, algorithm: string, callback: AsyncCallback<string>): void-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
@@ -73,8 +77,8 @@ Calculates a hash value for a file. This API uses an asynchronous callback to re
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Path of the file in the application sandbox. |
-| algorithm | string | Yes | Algorithm used to calculate the hash value. The value can be **md5**, **sha1**, or**sha256**. **sha256** is recommended for security purposes. |
-| callback | AsyncCallback&lt;string&gt; | Yes | Callback used to return the hash value obtained. The hash value is ahexadecimal string consisting of digits and uppercase letters. |
+| algorithm | string | Yes | Algorithm used to calculate the hash value. The value can be **md5**, **sha1**, or **sha256**. **sha256** is recommended for security purposes. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the hash value obtained. The hash value is a hexadecimal string consisting of digits and uppercase letters. |
 
 **Error codes:**
 

@@ -1,0 +1,95 @@
+# AdLoadListener
+
+Enumerates the callbacks used for the request for loading an ad.
+
+**Since:** 11
+
+<!--Device-advertising-export interface AdLoadListener--><!--Device-advertising-export interface AdLoadListener-End-->
+
+**System capability:** SystemCapability.Advertising.Ads
+
+## Modules to Import
+
+```TypeScript
+import { advertising } from '@kit.AdsKit';
+```
+
+## onAdLoadFailure
+
+```TypeScript
+onAdLoadFailure(errorCode: number, errorMsg: string): void
+```
+
+Called when an ad request fails.
+
+**Since:** 11
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-AdLoadListener-onAdLoadFailure(errorCode: number, errorMsg: string): void--><!--Device-AdLoadListener-onAdLoadFailure(errorCode: number, errorMsg: string): void-End-->
+
+**System capability:** SystemCapability.Advertising.Ads
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| errorCode | number | Yes | Error code for the ad request failure. |
+| errorMsg | string | Yes | Error message for the ad request failure. |
+
+**Example**
+
+```TypeScript
+import { advertising } from '@kit.AdsKit';
+import { hilog } from '@kit.PerformanceAnalysisKit';
+
+const adLoaderListener: advertising.AdLoadListener = {
+  onAdLoadFailure: (errorCode: number, errorMsg: string) => {
+    hilog.error(0x0000, 'testTag', `Failed to load ad. Code is ${errorCode}, message is ${errorMsg}`);
+  },
+  onAdLoadSuccess: (ads: Array<advertising.Advertisement>) => {
+    hilog.info(0x0000, 'testTag', 'Succeeded in loading ad');
+  }
+}
+
+```
+
+## onAdLoadSuccess
+
+```TypeScript
+onAdLoadSuccess(ads: Array<Advertisement>): void
+```
+
+Called when an ad request is successful.
+
+**Since:** 11
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-AdLoadListener-onAdLoadSuccess(ads: Array<Advertisement>): void--><!--Device-AdLoadListener-onAdLoadSuccess(ads: Array<Advertisement>): void-End-->
+
+**System capability:** SystemCapability.Advertising.Ads
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| ads | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Advertisement> | Yes | Ad data. |
+
+**Example**
+
+```TypeScript
+import { advertising } from '@kit.AdsKit';
+import { hilog } from '@kit.PerformanceAnalysisKit';
+
+const adLoaderListener: advertising.AdLoadListener = {
+  onAdLoadFailure: (errorCode: number, errorMsg: string) => {
+    hilog.error(0x0000, 'testTag', `Failed to load ad. Code is ${errorCode}, message is ${errorMsg}`);
+  },
+  onAdLoadSuccess: (ads: Array<advertising.Advertisement>) => {
+    hilog.info(0x0000, 'testTag', 'Succeeded in loading ad');
+  }
+}
+
+```
+

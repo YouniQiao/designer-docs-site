@@ -6,6 +6,8 @@
 
 **起始版本：** 12
 
+<!--Device-unnamed-declare class EmbeddedComponentAttribute extends CommonMethod<EmbeddedComponentAttribute>--><!--Device-unnamed-declare class EmbeddedComponentAttribute extends CommonMethod<EmbeddedComponentAttribute>-End-->
+
 **系统能力：** SystemCapability.ArkUI.ArkUI.Full
 
 ## onDrawReady
@@ -20,7 +22,9 @@ EmbeddedUIExtensionAbility绘制首帧时的回调。
 
 **模型约束：** 此接口仅可在Stage模型下使用。
 
-**元服务API：** 从API版本26.0.0开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API版本26.0.0开始，该接口支持在原子化服务API中使用。
+
+<!--Device-EmbeddedComponentAttribute-onDrawReady(callback: Callback<void>): EmbeddedComponentAttribute--><!--Device-EmbeddedComponentAttribute-onDrawReady(callback: Callback<void>): EmbeddedComponentAttribute-End-->
 
 **系统能力：** SystemCapability.ArkUI.ArkUI.Full
 
@@ -28,7 +32,7 @@ EmbeddedUIExtensionAbility绘制首帧时的回调。
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | Callback&lt;void&gt; | 是 |  |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<void> | 是 |  |
 
 ## onError
 
@@ -42,7 +46,9 @@ onError(callback: import('../api/@ohos.base').ErrorCallback)
 
 **模型约束：** 此接口仅可在Stage模型下使用。
 
-**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API版本12开始，该接口支持在原子化服务API中使用。
+
+<!--Device-EmbeddedComponentAttribute-onError(callback: import('../api/@ohos.base').ErrorCallback): EmbeddedComponentAttribute--><!--Device-EmbeddedComponentAttribute-onError(callback: import('../api/@ohos.base').ErrorCallback): EmbeddedComponentAttribute-End-->
 
 **系统能力：** SystemCapability.ArkUI.ArkUI.Full
 
@@ -64,7 +70,9 @@ onTerminated(callback: import('../api/@ohos.base').Callback<TerminationInfo>)
 
 **模型约束：** 此接口仅可在Stage模型下使用。
 
-**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API版本12开始，该接口支持在原子化服务API中使用。
+
+<!--Device-EmbeddedComponentAttribute-onTerminated(callback: import('../api/@ohos.base').Callback<TerminationInfo>): EmbeddedComponentAttribute--><!--Device-EmbeddedComponentAttribute-onTerminated(callback: import('../api/@ohos.base').Callback<TerminationInfo>): EmbeddedComponentAttribute-End-->
 
 **系统能力：** SystemCapability.ArkUI.ArkUI.Full
 
@@ -72,5 +80,5 @@ onTerminated(callback: import('../api/@ohos.base').Callback<TerminationInfo>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | import('../api/@ohos.base').Callback&lt;TerminationInfo&gt; | 是 |  |
+| callback | import('../api/@ohos.base').Callback<TerminationInfo> | 是 |  |
 

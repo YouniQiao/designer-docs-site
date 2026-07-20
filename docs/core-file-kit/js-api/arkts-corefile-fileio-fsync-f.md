@@ -14,6 +14,8 @@ Synchronizes a file. This API uses a promise to return the result.
 
 **Substitutes:** [fs:fsync](arkts-corefile-file-fs-fsync-f.md#fsync-1)
 
+<!--Device-unnamed-declare function fsync(fd: number): Promise<void>--><!--Device-unnamed-declare function fsync(fd: number): Promise<void>-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
@@ -26,7 +28,7 @@ Synchronizes a file. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 
 ## fsync
@@ -43,6 +45,8 @@ Synchronizes a file. This API uses an asynchronous callback to return the result
 
 **Substitutes:** [fs:fsync](arkts-corefile-file-fs-fsync-f.md#fsync-1)
 
+<!--Device-unnamed-declare function fsync(fd: number, callback: AsyncCallback<void>): void--><!--Device-unnamed-declare function fsync(fd: number, callback: AsyncCallback<void>): void-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
@@ -50,5 +54,5 @@ Synchronizes a file. This API uses an asynchronous callback to return the result
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | fd | number | Yes | File descriptor of the file to synchronize. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback invoked when the file is synchronized in asynchronous mode. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback invoked when the file is synchronized in asynchronous mode. |
 

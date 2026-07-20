@@ -1,15 +1,14 @@
 # PatternLock properties/events
 
-In addition to the
-[universal attributes](../../../../reference/apis-arkui/arkui-ts/ts-component-general-attributes.md), the following
-attributes are supported.
+In addition to the [universal attributes](../../../../reference/apis-arkui/arkui-ts/ts-component-general-attributes.md), the following attributes are supported.
 
-In addition to the [universal events](../../../../reference/apis-arkui/arkui-ts/ts-component-general-events.md), the
-following events are supported.
+In addition to the [universal events](../../../../reference/apis-arkui/arkui-ts/ts-component-general-events.md), the following events are supported.
 
 **Inheritance/Implementation:** PatternLockAttribute extends [CommonMethod<PatternLockAttribute>](CommonMethod<PatternLockAttribute>)
 
 **Since:** 9
+
+<!--Device-unnamed-declare class PatternLockAttribute extends CommonMethod<PatternLockAttribute>--><!--Device-unnamed-declare class PatternLockAttribute extends CommonMethod<PatternLockAttribute>-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -27,13 +26,15 @@ Sets the background circle style for the dots in a grid when they are in the act
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-PatternLockAttribute-activateCircleStyle(options: Optional<CircleStyleOptions>): PatternLockAttribute--><!--Device-PatternLockAttribute-activateCircleStyle(options: Optional<CircleStyleOptions>): PatternLockAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| options | Optional&lt;CircleStyleOptions&gt; | Yes | Background circle style of the dots in the activated state. |
+| options | [Optional](arkts-arkui-optional-t.md)<CircleStyleOptions> | Yes | Background circle style of the dots in the activated state. |
 
 ## activeColor
 
@@ -47,13 +48,15 @@ Sets the fill color of the grid dot in the activated state, which is when the do
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-PatternLockAttribute-activeColor(value: ResourceColor): PatternLockAttribute--><!--Device-PatternLockAttribute-activeColor(value: ResourceColor): PatternLockAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ResourceColor | Yes | Fill color of the grid dot in the activated state.<br>Default value:**'#ff182431'** |
+| value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Fill color of the grid dot in the activated state.<br>Default value:**'#ff182431'** |
 
 ## autoReset
 
@@ -61,12 +64,13 @@ Sets the fill color of the grid dot in the activated state, which is when the do
 autoReset(value: boolean)
 ```
 
-Sets whether to allow the user to reset the component status (that is, clear the input) by touching the component
-again after the input is complete.
+Sets whether to allow the user to reset the component status (that is, clear the input) by touching the component again after the input is complete.
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-PatternLockAttribute-autoReset(value: boolean): PatternLockAttribute--><!--Device-PatternLockAttribute-autoReset(value: boolean): PatternLockAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -74,7 +78,7 @@ again after the input is complete.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | boolean | Yes | Whether to allow the user to reset the component status (that is, clear the input) bytouching the component again after the input is complete.<br>**true**: yes; **false**: no<br>Default value:**true** |
+| value | boolean | Yes | Whether to allow the user to reset the component status (that is, clear the input) by touching the component again after the input is complete.<br>**true**: yes; **false**: no<br>Default value:**true** |
 
 ## backgroundColor
 
@@ -84,13 +88,15 @@ backgroundColor(value: ResourceColor)
 
 Sets the background color.
 
-> **NOTE**
->
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
+> **NOTE**  
+>  
+> This API can be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1) since API version 20.
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-PatternLockAttribute-backgroundColor(value: ResourceColor): PatternLockAttribute--><!--Device-PatternLockAttribute-backgroundColor(value: ResourceColor): PatternLockAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -98,7 +104,7 @@ Sets the background color.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ResourceColor | Yes | Background color. |
+| value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Background color. |
 
 ## circleRadius
 
@@ -106,12 +112,13 @@ Sets the background color.
 circleRadius(value: Length)
 ```
 
-Sets the radius of the dots in a grid. If this attribute is set to **0** or a negative value, the default value is
-used.
+Sets the radius of the dots in a grid. If this attribute is set to **0** or a negative value, the default value is used.
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-PatternLockAttribute-circleRadius(value: Length): PatternLockAttribute--><!--Device-PatternLockAttribute-circleRadius(value: Length): PatternLockAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -119,7 +126,7 @@ used.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | Length | Yes | Radius of the dots in a grid.<br>Default value: **6vp**<br>Value range: (0, sideLength/11]. If the value is less than or equal to **0**, the default value is used. If the value exceeds the maximumvalue, the maximum value is used. |
+| value | [Length](../arkts-apis/arkts-arkui-length-t.md) | Yes | Radius of the dots in a grid.<br>Default value: **6vp**<br>Value range: (0, sideLength/11]. If the value is less than or equal to **0**, the default value is used. If the value exceeds the maximum value, the maximum value is used. |
 
 ## onDotConnect
 
@@ -129,13 +136,11 @@ onDotConnect(callback: import('../api/@ohos.base').Callback<number>)
 
 Invoked when a grid dot is connected during pattern password input.
 
-The callback parameter is an array of digits, where each digit represents the index of a selected grid dot, listed
-in the order they were connected. Grid dots are indexed row-wise from top to bottom, left to right: The first row
-contains indices 0, 1, 2; the second row 3, 4, 5; and the third row 6, 7, 8.
+The callback parameter is an array of digits, where each digit represents the index of a selected grid dot, listed in the order they were connected. Grid dots are indexed row-wise from top to bottom, left to right: The first row contains indices 0, 1, 2; the second row 3, 4, 5; and the third row 6, 7, 8.
 
-> **NOTE**
->
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
+> **NOTE**  
+>  
+> This API can be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1) since API version 20.
 
 **Since:** 11
 
@@ -143,13 +148,15 @@ contains indices 0, 1, 2; the second row 3, 4, 5; and the third row 6, 7, 8.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-PatternLockAttribute-onDotConnect(callback: import('../api/@ohos.base').Callback<number>): PatternLockAttribute--><!--Device-PatternLockAttribute-onDotConnect(callback: import('../api/@ohos.base').Callback<number>): PatternLockAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | import('../api/@ohos.base').Callback&lt;number&gt; | Yes | Invoked when a grid dot is connected duringpattern password input. |
+| callback | import('../api/@ohos.base').Callback<number> | Yes | Invoked when a grid dot is connected during pattern password input. |
 
 ## onPatternComplete
 
@@ -163,13 +170,15 @@ Invoked when the pattern password input is complete.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-PatternLockAttribute-onPatternComplete(callback: (input: Array<number>) => void): PatternLockAttribute--><!--Device-PatternLockAttribute-onPatternComplete(callback: (input: Array<number>) => void): PatternLockAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (input: Array&lt;number&gt;) =&gt; void | Yes | Array of digits representing the indices of the selected grid dots, in the orderthey were connected. Grid dots are indexed row-wise from top to bottom, left to right: The first row containsindices 0, 1, 2; the second row 3, 4, 5; and the third row 6, 7, 8. |
+| callback | (input: Array<number>) => void | Yes | Array of digits representing the indices of the selected grid dots, in the order they were connected. Grid dots are indexed row-wise from top to bottom, left to right: The first row contains indices 0, 1, 2; the second row 3, 4, 5; and the third row 6, 7, 8. |
 
 ## pathColor
 
@@ -183,13 +192,15 @@ Sets the path color.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-PatternLockAttribute-pathColor(value: ResourceColor): PatternLockAttribute--><!--Device-PatternLockAttribute-pathColor(value: ResourceColor): PatternLockAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ResourceColor | Yes | Path color.<br>Default value: **'#33182431'** |
+| value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Path color.<br>Default value: **'#33182431'** |
 
 ## pathStrokeWidth
 
@@ -197,12 +208,13 @@ Sets the path color.
 pathStrokeWidth(value: number | string)
 ```
 
-Sets the width of the path stroke. If this attribute is set to **0** or a negative value, the path stroke is not
-displayed.
+Sets the width of the path stroke. If this attribute is set to **0** or a negative value, the path stroke is not displayed.
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-PatternLockAttribute-pathStrokeWidth(value: number | string): PatternLockAttribute--><!--Device-PatternLockAttribute-pathStrokeWidth(value: number | string): PatternLockAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -224,13 +236,15 @@ Sets the fill color of the grid dot in the unselected state.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-PatternLockAttribute-regularColor(value: ResourceColor): PatternLockAttribute--><!--Device-PatternLockAttribute-regularColor(value: ResourceColor): PatternLockAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ResourceColor | Yes | Fill color of the grid dot in the unselected state.<br>Default value:**'#ff182431'** |
+| value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Fill color of the grid dot in the unselected state.<br>Default value:**'#ff182431'** |
 
 ## selectedColor
 
@@ -244,13 +258,15 @@ Fill color of the grid dot in the selected state.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-PatternLockAttribute-selectedColor(value: ResourceColor): PatternLockAttribute--><!--Device-PatternLockAttribute-selectedColor(value: ResourceColor): PatternLockAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ResourceColor | Yes | Fill color of the grid dot in the selected state.<br>Default value:**'#ff182431'** |
+| value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Fill color of the grid dot in the selected state.<br>Default value:**'#ff182431'** |
 
 ## sideLength
 
@@ -258,18 +274,19 @@ Fill color of the grid dot in the selected state.
 sideLength(value: Length)
 ```
 
-Sets the width and height (same value) of the component. If this attribute is set to **0** or a negative number,
-the component is not displayed.
+Sets the width and height (same value) of the component. If this attribute is set to **0** or a negative number,the component is not displayed.
 
-> **NOTE**
->
-> When the **PatternLock** component has the universal attribute [aspectRatio](arkts-arkui-commonmethod-c.md#aspectratio-1) set
-> and the ratio is not equal to 1 (the component is constrained to a rectangle), the nine‑grid pattern is still
+> **NOTE**  
+>  
+> When the **PatternLock** component has the universal attribute [aspectRatio](arkts-arkui-common-commonmethod-c.md#aspectratio-1) set  
+> and the ratio is not equal to 1 (the component is constrained to a rectangle), the nine‑grid pattern is still  
 > drawn as a square, which exceeds the component's bounds.
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-PatternLockAttribute-sideLength(value: Length): PatternLockAttribute--><!--Device-PatternLockAttribute-sideLength(value: Length): PatternLockAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -277,7 +294,7 @@ the component is not displayed.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | Length | Yes | Width and height of the component. Default value: **288vp** |
+| value | [Length](../arkts-apis/arkts-arkui-length-t.md) | Yes | Width and height of the component. Default value: **288vp** |
 
 ## skipUnselectedPoint
 
@@ -293,11 +310,13 @@ Sets whether unselected dots in the grid are automatically skipped when the pass
 
 **Atomic service API:** This API can be used in atomic services since API version 15.
 
+<!--Device-PatternLockAttribute-skipUnselectedPoint(skipped: boolean): PatternLockAttribute--><!--Device-PatternLockAttribute-skipUnselectedPoint(skipped: boolean): PatternLockAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| skipped | boolean | Yes | Whether unselected dots in the grid are automatically skipped when the password pathpasses over them.<br>**true** to skip the unselected dots when the password path passes over them; **false**otherwise. Default value: **false** |
+| skipped | boolean | Yes | Whether unselected dots in the grid are automatically skipped when the password path passes over them.<br>**true** to skip the unselected dots when the password path passes over them; **false** otherwise. Default value: **false** |
 

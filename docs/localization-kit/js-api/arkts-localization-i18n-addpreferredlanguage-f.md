@@ -1,0 +1,39 @@
+# addPreferredLanguage
+
+## Modules to Import
+
+```TypeScript
+import { i18n } from '@kit.LocalizationKit';
+```
+
+## addPreferredLanguage
+
+```TypeScript
+export function addPreferredLanguage(language: string, index?: number): boolean
+```
+
+Adds a preferred language to the specified position on the preferred language list.
+
+**Since:** 8
+
+**Deprecated since:** 9
+
+**Required permissions:** ohos.permission.UPDATE_CONFIGURATION
+
+<!--Device-i18n-export function addPreferredLanguage(language: string, index?: int): boolean--><!--Device-i18n-export function addPreferredLanguage(language: string, index?: int): boolean-End-->
+
+**System capability:** SystemCapability.Global.I18n
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| language | string | Yes | Preferred language to add. |
+| index | number | No | Position to which the preferred language is added. The default value is the length of the preferred language list. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| boolean | **true** if the operation is successful, and **false** otherwise. |
+

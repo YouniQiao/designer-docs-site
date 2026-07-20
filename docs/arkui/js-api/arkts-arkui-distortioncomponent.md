@@ -1,6 +1,6 @@
 # DistortionComponent
 
-Create DistortionComponent.
+Defines DistortionComponent.
 
 
 ## DistortionComponent
@@ -14,6 +14,8 @@ Creates a DistortionComponent with content.
 **Since:** 26.0.0
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-DistortionComponentInterface-(options?: DistortionComponentOptions): DistortionComponentAttribute--><!--Device-DistortionComponentInterface-(options?: DistortionComponentOptions): DistortionComponentAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

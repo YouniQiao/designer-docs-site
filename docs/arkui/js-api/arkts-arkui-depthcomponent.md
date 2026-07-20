@@ -1,6 +1,6 @@
 # DepthComponent
 
-DepthComponentInterface
+Defines DepthComponent Component.
 
 
 ## DepthComponent
@@ -16,6 +16,8 @@ Defines the DepthComponent constructor.
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+<!--Device-DepthComponentInterface-(background: ResourceStr | PixelMap, options?: DepthComponentOptions): DepthComponentAttribute--><!--Device-DepthComponentInterface-(background: ResourceStr | PixelMap, options?: DepthComponentOptions): DepthComponentAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

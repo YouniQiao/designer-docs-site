@@ -9,6 +9,9 @@ As a child component of the **Text** component, the **SymbolSpan** component is 
 >
 > - The **SymbolSpan** component is not dimmed when dragged.
 
+## Child Components
+
+Not supported
 
 ## SymbolSpan
 
@@ -25,6 +28,8 @@ Defines the constructor of SymbolSpan.
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 12.
+
+<!--Device-SymbolSpanInterface-(value: Resource): SymbolSpanAttribute--><!--Device-SymbolSpanInterface-(value: Resource): SymbolSpanAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

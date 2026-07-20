@@ -12,6 +12,8 @@ Defines a callback used to set a value.
 
 **Atomic service API:** This API can be used in atomic services since API version 20.
 
+<!--Device-unnamed-export declare type SetterCallback<T> = (newValue: T) => void--><!--Device-unnamed-export declare type SetterCallback<T> = (newValue: T) => void-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**

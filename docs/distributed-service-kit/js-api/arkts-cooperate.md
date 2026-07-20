@@ -1,9 +1,10 @@
 # @ohos.cooperate
 
-The **cooperate** module implements screen hopping for two or more networked devices to share the keyboard and mouse
-for collaborative operations.
+The **cooperate** module implements screen hopping for two or more networked devices to share the keyboard and mouse for collaborative operations.
 
 **Since:** 10
+
+<!--Device-unnamed-declare namespace cooperate--><!--Device-unnamed-declare namespace cooperate-End-->
 
 **System capability:** SystemCapability.Msdp.DeviceStatus.Cooperate
 
@@ -22,33 +23,33 @@ import { cooperate } from '@kit.DistributedServiceKit';
 
 | Name | Description |
 | --- | --- |
-| [activate](arkts-distributedservice-activate-f-sys.md#activate-1) | Starts screen hopping. This API uses an asynchronous callback to return the result. |
-| [activate](arkts-distributedservice-activate-f-sys.md#activate-2) | Starts screen hopping. This API uses a promise to return the result. |
-| [activateCooperate](arkts-distributedservice-activatecooperate-f-sys.md#activatecooperate-1) | Starts screen hopping. This API uses an asynchronous callback to return the result. |
-| [activateCooperate](arkts-distributedservice-activatecooperate-f-sys.md#activatecooperate-2) | Starts screen hopping. This API uses a promise to return the result. |
-| [activateCooperateWithOptions](arkts-distributedservice-activatecooperatewithoptions-f-sys.md#activatecooperatewithoptions-1) | Starts screen hopping based on the specified options. This API uses a promise to return the result. |
-| [deactivate](arkts-distributedservice-deactivate-f-sys.md#deactivate-1) | Stops screen hopping. This API uses an asynchronous callback to return the result. |
-| [deactivate](arkts-distributedservice-deactivate-f-sys.md#deactivate-2) | Stops screen hopping. This API uses a promise to return the result. |
-| [deactivateCooperate](arkts-distributedservice-deactivatecooperate-f-sys.md#deactivatecooperate-1) | Stops screen hopping. This API uses an asynchronous callback to return the result. |
-| [deactivateCooperate](arkts-distributedservice-deactivatecooperate-f-sys.md#deactivatecooperate-2) | Stops screen hopping. This API uses a promise to return the result. |
-| [getCooperateSwitchState](arkts-distributedservice-getcooperateswitchstate-f-sys.md#getcooperateswitchstate-1) | Obtains the screen hopping status of the target device. This API uses an asynchronous callback to return the result. |
-| [getCooperateSwitchState](arkts-distributedservice-getcooperateswitchstate-f-sys.md#getcooperateswitchstate-2) | Obtains the screen hopping status of the target device. This API uses a promise to return the result. |
-| [getCrossingSwitchState](arkts-distributedservice-getcrossingswitchstate-f-sys.md#getcrossingswitchstate-1) | Obtains the screen hopping status of the target device. This API uses an asynchronous callback to return the result. |
-| [getCrossingSwitchState](arkts-distributedservice-getcrossingswitchstate-f-sys.md#getcrossingswitchstate-2) | Obtains the screen hopping status of the target device. This API uses a promise to return the result. |
-| [off](arkts-distributedservice-off-f-sys.md#off-1) | Disables listening for screen hopping status change events. |
-| [off](arkts-distributedservice-off-f-sys.md#off-2) | Disables listening for screen hopping status change events. |
-| [off](arkts-distributedservice-off-f-sys.md#off-3) | Unregisters the listener for the mouse cursor position of a device. |
-| [on](arkts-distributedservice-on-f-sys.md#on-1) | Enables listening for screen hopping status change events. |
-| [on](arkts-distributedservice-on-f-sys.md#on-2) | Enables listening for screen hopping status change events. |
-| [on](arkts-distributedservice-on-f-sys.md#on-3) | Registers a listener for the mouse cursor position of a device. |
-| [prepare](arkts-distributedservice-prepare-f-sys.md#prepare-1) | Prepares for screen hopping. This API uses an asynchronous callback to return the result. |
-| [prepare](arkts-distributedservice-prepare-f-sys.md#prepare-2) | Prepares for screen hopping. This API uses a promise to return the result. |
-| [prepareCooperate](arkts-distributedservice-preparecooperate-f-sys.md#preparecooperate-1) | Prepares for screen hopping. This API uses an asynchronous callback to return the result. |
-| [prepareCooperate](arkts-distributedservice-preparecooperate-f-sys.md#preparecooperate-2) | Prepares for screen hopping. This API uses a promise to return the result. |
-| [unprepare](arkts-distributedservice-unprepare-f-sys.md#unprepare-1) | Cancels the preparation for screen hopping. This API uses an asynchronous callback to return the result. |
-| [unprepare](arkts-distributedservice-unprepare-f-sys.md#unprepare-2) | Cancels the preparation for screen hopping. This API uses a promise to return the result. |
-| [unprepareCooperate](arkts-distributedservice-unpreparecooperate-f-sys.md#unpreparecooperate-1) | Cancels the preparation for screen hopping. This API uses an asynchronous callback to return the result. |
-| [unprepareCooperate](arkts-distributedservice-unpreparecooperate-f-sys.md#unpreparecooperate-2) | Cancels the preparation for screen hopping. This API uses a promise to return the result. |
+| [activate](arkts-distributedservice-cooperate-activate-f-sys.md#activate-1) | Starts screen hopping. This API uses an asynchronous callback to return the result. |
+| [activate](arkts-distributedservice-cooperate-activate-f-sys.md#activate-2) | Starts screen hopping. This API uses a promise to return the result. |
+| [activateCooperate](arkts-distributedservice-cooperate-activatecooperate-f-sys.md#activatecooperate-1) | Starts screen hopping. This API uses an asynchronous callback to return the result. |
+| [activateCooperate](arkts-distributedservice-cooperate-activatecooperate-f-sys.md#activatecooperate-2) | Starts screen hopping. This API uses a promise to return the result. |
+| [activateCooperateWithOptions](arkts-distributedservice-cooperate-activatecooperatewithoptions-f-sys.md#activatecooperatewithoptions-1) | Starts screen hopping based on the specified options. This API uses a promise to return the result. |
+| [deactivate](arkts-distributedservice-cooperate-deactivate-f-sys.md#deactivate-1) | Stops screen hopping. This API uses an asynchronous callback to return the result. |
+| [deactivate](arkts-distributedservice-cooperate-deactivate-f-sys.md#deactivate-2) | Stops screen hopping. This API uses a promise to return the result. |
+| [deactivateCooperate](arkts-distributedservice-cooperate-deactivatecooperate-f-sys.md#deactivatecooperate-1) | Stops screen hopping. This API uses an asynchronous callback to return the result. |
+| [deactivateCooperate](arkts-distributedservice-cooperate-deactivatecooperate-f-sys.md#deactivatecooperate-2) | Stops screen hopping. This API uses a promise to return the result. |
+| [getCooperateSwitchState](arkts-distributedservice-cooperate-getcooperateswitchstate-f-sys.md#getcooperateswitchstate-1) | Obtains the screen hopping status of the target device. This API uses an asynchronous callback to return the result. |
+| [getCooperateSwitchState](arkts-distributedservice-cooperate-getcooperateswitchstate-f-sys.md#getcooperateswitchstate-2) | Obtains the screen hopping status of the target device. This API uses a promise to return the result. |
+| [getCrossingSwitchState](arkts-distributedservice-cooperate-getcrossingswitchstate-f-sys.md#getcrossingswitchstate-1) | Obtains the screen hopping status of the target device. This API uses an asynchronous callback to return the result. |
+| [getCrossingSwitchState](arkts-distributedservice-cooperate-getcrossingswitchstate-f-sys.md#getcrossingswitchstate-2) | Obtains the screen hopping status of the target device. This API uses a promise to return the result. |
+| [off](arkts-distributedservice-cooperate-off-f-sys.md#off-1) | Disables listening for screen hopping status change events. |
+| [off](arkts-distributedservice-cooperate-off-f-sys.md#off-2) | Disables listening for screen hopping status change events. |
+| [off](arkts-distributedservice-cooperate-off-f-sys.md#off-3) | Unregisters the listener for the mouse cursor position of a device. |
+| [on](arkts-distributedservice-cooperate-on-f-sys.md#on-1) | Enables listening for screen hopping status change events. |
+| [on](arkts-distributedservice-cooperate-on-f-sys.md#on-2) | Enables listening for screen hopping status change events. |
+| [on](arkts-distributedservice-cooperate-on-f-sys.md#on-3) | Registers a listener for the mouse cursor position of a device. |
+| [prepare](arkts-distributedservice-cooperate-prepare-f-sys.md#prepare-1) | Prepares for screen hopping. This API uses an asynchronous callback to return the result. |
+| [prepare](arkts-distributedservice-cooperate-prepare-f-sys.md#prepare-2) | Prepares for screen hopping. This API uses a promise to return the result. |
+| [prepareCooperate](arkts-distributedservice-cooperate-preparecooperate-f-sys.md#preparecooperate-1) | Prepares for screen hopping. This API uses an asynchronous callback to return the result. |
+| [prepareCooperate](arkts-distributedservice-cooperate-preparecooperate-f-sys.md#preparecooperate-2) | Prepares for screen hopping. This API uses a promise to return the result. |
+| [unprepare](arkts-distributedservice-cooperate-unprepare-f-sys.md#unprepare-1) | Cancels the preparation for screen hopping. This API uses an asynchronous callback to return the result. |
+| [unprepare](arkts-distributedservice-cooperate-unprepare-f-sys.md#unprepare-2) | Cancels the preparation for screen hopping. This API uses a promise to return the result. |
+| [unprepareCooperate](arkts-distributedservice-cooperate-unpreparecooperate-f-sys.md#unpreparecooperate-1) | Cancels the preparation for screen hopping. This API uses an asynchronous callback to return the result. |
+| [unprepareCooperate](arkts-distributedservice-cooperate-unpreparecooperate-f-sys.md#unpreparecooperate-2) | Cancels the preparation for screen hopping. This API uses a promise to return the result. |
 <!--DelEnd-->
 
 <!--Del-->
@@ -56,9 +57,9 @@ import { cooperate } from '@kit.DistributedServiceKit';
 
 | Name | Description |
 | --- | --- |
-| [CooperateMessage](arkts-distributedservice-cooperatemessage-i-sys.md) | Defines a screen hopping status change event. |
-| [CooperateOptions](arkts-distributedservice-cooperateoptions-i-sys.md) | Screen hopping options, such as the exit position. |
-| [MouseLocation](arkts-distributedservice-mouselocation-i-sys.md) | Defines the mouse pointer position for screen hopping. |
+| [CooperateMessage](arkts-distributedservice-cooperate-cooperatemessage-i-sys.md) | Defines a screen hopping status change event. |
+| [CooperateOptions](arkts-distributedservice-cooperate-cooperateoptions-i-sys.md) | Screen hopping options, such as the exit position. |
+| [MouseLocation](arkts-distributedservice-cooperate-mouselocation-i-sys.md) | Defines the mouse pointer position for screen hopping. |
 <!--DelEnd-->
 
 <!--Del-->
@@ -66,7 +67,7 @@ import { cooperate } from '@kit.DistributedServiceKit';
 
 | Name | Description |
 | --- | --- |
-| [CooperateMsg](arkts-distributedservice-cooperatemsg-e-sys.md) | Represents a screen hopping message notification. |
-| [CooperateState](arkts-distributedservice-cooperatestate-e-sys.md) | Enumerates the screen hopping states. |
+| [CooperateMsg](arkts-distributedservice-cooperate-cooperatemsg-e-sys.md) | Represents a screen hopping message notification. |
+| [CooperateState](arkts-distributedservice-cooperate-cooperatestate-e-sys.md) | Enumerates the screen hopping states. |
 <!--DelEnd-->
 

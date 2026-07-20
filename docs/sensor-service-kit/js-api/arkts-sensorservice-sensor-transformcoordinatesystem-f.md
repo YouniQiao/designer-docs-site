@@ -1,0 +1,107 @@
+# transformCoordinateSystem
+
+## Modules to Import
+
+```TypeScript
+import { sensor } from '@kit.SensorServiceKit';
+```
+
+## transformCoordinateSystem
+
+```TypeScript
+function transformCoordinateSystem(inRotationVector: Array<number>, coordinates: CoordinatesOptions,
+    callback: AsyncCallback<Array<number>>): void
+```
+
+Rotates a rotation vector so that it can represent the coordinate system in different ways. This API uses an asynchronous callback to return the result.
+
+**Since:** 8
+
+**Deprecated since:** 9
+
+**Substitutes:** transformRotationMatrix(inRotationVector:
+
+<!--Device-sensor-function transformCoordinateSystem(inRotationVector: Array<number>, coordinates: CoordinatesOptions,
+    callback: AsyncCallback<Array<number>>): void--><!--Device-sensor-function transformCoordinateSystem(inRotationVector: Array<number>, coordinates: CoordinatesOptions,
+    callback: AsyncCallback<Array<number>>): void-End-->
+
+**System capability:** SystemCapability.Sensors.Sensor
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| inRotationVector | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Rotation vector. |
+| coordinates | [CoordinatesOptions](arkts-sensorservice-sensor-coordinatesoptions-i.md) | Yes | Direction of the coordinate system. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<number>> | Yes | Callback used to return the rotation vector after being rotated. |
+
+**Example**
+
+```TypeScript
+import { sensor } from '@kit.SensorServiceKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+sensor.transformCoordinateSystem([1, 0, 0, 0, 1, 0, 0, 0, 1], { x: 2, y: 3 }, 
+                                 (err: BusinessError, data: Array<number>) => {
+  if (err) {
+    console.error(`Failed to operate. Code: ${err.code}, message: ${err.message}`);
+    return;
+  }
+  console.info("Succeeded in starting Operation. Data obtained: " + data);
+  for (let i = 0; i < data.length; i++) {
+    console.info("Succeeded in getting transformCoordinateSystem data[ " + i + "] = " + data[i]);
+  }
+})
+
+```
+
+
+## transformCoordinateSystem
+
+```TypeScript
+function transformCoordinateSystem(inRotationVector: Array<number>, coordinates: CoordinatesOptions): Promise<Array<number>>
+```
+
+Rotates a rotation vector so that it can represent the coordinate system in different ways. This API uses a promise to return the result.
+
+**Since:** 8
+
+**Deprecated since:** 9
+
+**Substitutes:** transformRotationMatrix(inRotationVector:
+
+<!--Device-sensor-function transformCoordinateSystem(inRotationVector: Array<number>, coordinates: CoordinatesOptions): Promise<Array<number>>--><!--Device-sensor-function transformCoordinateSystem(inRotationVector: Array<number>, coordinates: CoordinatesOptions): Promise<Array<number>>-End-->
+
+**System capability:** SystemCapability.Sensors.Sensor
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| inRotationVector | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Rotation vector. |
+| coordinates | [CoordinatesOptions](arkts-sensorservice-sensor-coordinatesoptions-i.md) | Yes | Direction of the coordinate system. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<number>> | Promise used to return the rotation vector after being rotated. |
+
+**Example**
+
+```TypeScript
+import { sensor } from '@kit.SensorServiceKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+const promise = sensor.transformCoordinateSystem([1, 0, 0, 0, 1, 0, 0, 0, 1], { x: 2, y: 3 });
+promise.then((data: Array<number>) => {
+  console.info("Succeeded in starting Operation");
+  for (let i = 0; i < data.length; i++) {
+    console.info("Succeeded in getting transformCoordinateSystem data[ " + i + "] = " + data[i]);
+  }
+}).catch((err: BusinessError) => {
+  console.error(`Failed to operate.`);
+})
+
+```
+

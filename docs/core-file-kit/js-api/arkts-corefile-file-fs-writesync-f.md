@@ -22,6 +22,16 @@ Writes data to a file. This API returns the result synchronously.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-unnamed-declare function writeSync(
+  fd: number,
+  buffer: ArrayBuffer | string,
+  options?: WriteOptions
+): number--><!--Device-unnamed-declare function writeSync(
+  fd: number,
+  buffer: ArrayBuffer | string,
+  options?: WriteOptions
+): number-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
@@ -30,7 +40,7 @@ Writes data to a file. This API returns the result synchronously.
 | --- | --- | --- | --- |
 | fd | number | Yes | FD of the file. |
 | buffer | ArrayBuffer \| string | Yes | Data to write. It can be a string or data from a buffer. |
-| options | WriteOptions | No | The options are as follows:<br>- **offset** (number): start position to write thedata in the file, in bytes. This parameter is optional. By default, data is written from the current position.<br>- **length** (number): length of the data to write, in bytes. This parameter is optional. The default value isthe buffer length.<br>- **encoding** (string): format of the data to be encoded when the data is a string. Thedefault value is **'utf-8'**, which is the only value supported currently.<br>**Since:** 11 |
+| options | [WriteOptions](arkts-corefile-file-fs-writeoptions-i.md) | No | The options are as follows:<br>- **offset** (number): start position to write the data in the file, in bytes. This parameter is optional. By default, data is written from the current position.<br  >- **length** (number): length of the data to write, in bytes. This parameter is optional. The default value is the buffer length.<br>- **encoding** (string): format of the data to be encoded when the data is a string. The default value is **'utf-8'**, which is the only value supported currently.<br>**Since:** 11 |
 
 **Return value:**
 

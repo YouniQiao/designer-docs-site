@@ -1,0 +1,180 @@
+# execute (System API)
+
+## Modules to Import
+
+```TypeScript
+import { insightIntentDriver } from '@kit.AbilityKit';
+```
+
+## execute
+
+```TypeScript
+function execute(param: ExecuteParam, callback: AsyncCallback<insightIntent.ExecuteResult>): void
+```
+
+Executes a call to an intent. This API uses an asynchronous callback to return the result.When the caller is in the background, the ohos.permission.START_ABILITIES_FROM_BACKGROUND permission is required.When [ExecuteMode](arkts-ability-insightintent-executemode-e.md) of the intent call is set to **UI_ABILITY_BACKGROUND**, the ohos.permission.ABILITY_BACKGROUND_COMMUNICATION permission is required.On API 26.0.0 and above, intent can be executed across devices. When the intent call is cross-device,the ohos.permission.EXECUTE_DISTRIBUTED_INTENT permission is required.
+
+**Since:** 11
+
+**Required permissions:** ohos.permission.EXECUTE_INSIGHT_INTENT
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-insightIntentDriver-function execute(param: ExecuteParam, callback: AsyncCallback<insightIntent.ExecuteResult>): void--><!--Device-insightIntentDriver-function execute(param: ExecuteParam, callback: AsyncCallback<insightIntent.ExecuteResult>): void-End-->
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| param | [ExecuteParam](arkts-ability-insightintentdriver-executeparam-i-sys.md) | Yes | Parameter used to execute the intent call. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<insightIntent.ExecuteResult> | Yes | Callback used to return the intent call execution result. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system application. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
+| [16000001](../errorcode-ability.md#16000001-ability-name-does-not-exist) | The specified ability does not exist. |
+| [16000002](../errorcode-ability.md#16000002-incorrect-ability-type) | Incorrect ability type. |
+| [16000004](../errorcode-ability.md#16000004-visibility-verification-failure) | Cannot start an invisible component. |
+| [16000005](../errorcode-ability.md#16000005-process-permission-verification-failure) | The specified process does not have the permission. |
+| [16000006](../errorcode-ability.md#16000006-crossuser-operation-is-not-allowed) | Cross-user operations are not allowed. |
+| [16000008](../errorcode-ability.md#16000008-crowdtesting-application-expires) | The crowdtesting application expires. |
+| [16000009](../errorcode-ability.md#16000009-ability-start-or-stop-failure-in-wukong-mode) | An ability cannot be started or stopped in Wukong mode. |
+| [16000010](../errorcode-ability.md#16000010-continuation-flag-is-forbidden) | The call with the continuation and prepare continuation flag is forbidden. |
+| [16000011](../errorcode-ability.md#16000011-context-does-not-exist) | The context does not exist. |
+| [16000012](../errorcode-ability.md#16000012-application-under-control) | The application is controlled. |
+| [16000013](../errorcode-ability.md#16000013-application-controlled-by-edm) | The application is controlled by EDM. |
+| [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
+| [16000053](../errorcode-ability.md#16000053-ability-is-not-on-top-of-ui) | The ability is not on the top of the UI. |
+| [16000055](../errorcode-ability.md#16000055-installationfree-timeout) | Installation-free timed out. |
+| 16000137 | Cross-device execution failed due to a connection error.<br>**Applicable version:** 26.0.0 and later |
+| 16000138 | Device disconnected during cross-device intent execution.<br>**Applicable version:** 26.0.0 and later |
+
+**Example**
+
+```TypeScript
+  import { insightIntentDriver, insightIntent } from '@kit.AbilityKit';
+  import { hilog } from '@kit.PerformanceAnalysisKit';
+
+  function executeInsightIntentAsync() {
+    let param: insightIntentDriver.ExecuteParam = {
+      bundleName: 'com.ohos.intentexecutedemo',
+      moduleName: 'entry',
+      abilityName: 'EntryAbility',
+      insightIntentName: 'PlayMusic',
+      insightIntentParam: {
+        songName: 'City Of Stars',
+      },
+      executeMode: insightIntent.ExecuteMode.UI_ABILITY_FOREGROUND,
+    };
+
+    try {
+      insightIntentDriver.execute(param, (error, data: insightIntent.ExecuteResult) => {
+        if (error) {
+          hilog.error(0x0000, 'testTag', 'execute insight intent failed with %{public}s', JSON.stringify(error));
+        } else {
+          hilog.info(0x0000, 'testTag', '%{public}s', 'execute insight intent succeed');
+        }
+        hilog.info(0x0000, 'testTag', 'execute insight intent return %{public}d', data.code);
+        hilog.info(0x0000, 'testTag', 'execute insight intent result %{public}s', JSON.stringify(data.result));
+      })
+    } catch (error) {
+      hilog.error(0x0000, 'testTag', 'execute insight intent error caught %{public}s', JSON.stringify(error));
+    }
+  }
+
+```
+
+
+## execute
+
+```TypeScript
+function execute(param: ExecuteParam): Promise<insightIntent.ExecuteResult>
+```
+
+Executes a call to an intent. This API uses a promise to return the result.When the caller is in the background, the ohos.permission.START_ABILITIES_FROM_BACKGROUND permission is required.When [ExecuteMode](arkts-ability-insightintent-executemode-e.md) of the intent call is set to **UI_ABILITY_BACKGROUND**, the ohos.permission.ABILITY_BACKGROUND_COMMUNICATION permission is required.When the intent call is cross-device, the ohos.permission.EXECUTE_DISTRIBUTED_INTENT permission is required.On API 26.0.0 and above, intent can be executed across devices. When the intent call is cross-device,the ohos.permission.EXECUTE_DISTRIBUTED_INTENT permission is required.
+
+**Since:** 11
+
+**Required permissions:** ohos.permission.EXECUTE_INSIGHT_INTENT
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-insightIntentDriver-function execute(param: ExecuteParam): Promise<insightIntent.ExecuteResult>--><!--Device-insightIntentDriver-function execute(param: ExecuteParam): Promise<insightIntent.ExecuteResult>-End-->
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| param | [ExecuteParam](arkts-ability-insightintentdriver-executeparam-i-sys.md) | Yes | Parameter used to execute the intent call. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<insightIntent.ExecuteResult> | Promise used to return the intent call execution result. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system application. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
+| [16000001](../errorcode-ability.md#16000001-ability-name-does-not-exist) | The specified ability does not exist. |
+| [16000002](../errorcode-ability.md#16000002-incorrect-ability-type) | Incorrect ability type. |
+| [16000004](../errorcode-ability.md#16000004-visibility-verification-failure) | Cannot start an invisible component. |
+| [16000005](../errorcode-ability.md#16000005-process-permission-verification-failure) | The specified process does not have the permission. |
+| [16000006](../errorcode-ability.md#16000006-crossuser-operation-is-not-allowed) | Cross-user operations are not allowed. |
+| [16000008](../errorcode-ability.md#16000008-crowdtesting-application-expires) | The crowdtesting application expires. |
+| [16000009](../errorcode-ability.md#16000009-ability-start-or-stop-failure-in-wukong-mode) | An ability cannot be started or stopped in Wukong mode. |
+| [16000010](../errorcode-ability.md#16000010-continuation-flag-is-forbidden) | The call with the continuation and prepare continuation flag is forbidden. |
+| [16000011](../errorcode-ability.md#16000011-context-does-not-exist) | The context does not exist. |
+| [16000012](../errorcode-ability.md#16000012-application-under-control) | The application is controlled. |
+| [16000013](../errorcode-ability.md#16000013-application-controlled-by-edm) | The application is controlled by EDM. |
+| [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
+| [16000053](../errorcode-ability.md#16000053-ability-is-not-on-top-of-ui) | The ability is not on the top of the UI. |
+| [16000055](../errorcode-ability.md#16000055-installationfree-timeout) | Installation-free timed out. |
+| 16000137 | Cross-device execution failed due to a connection error.<br>**Applicable version:** 26.0.0 and later |
+| 16000138 | Device disconnected during cross-device intent execution.<br>**Applicable version:** 26.0.0 and later |
+
+**Example**
+
+```TypeScript
+  import { insightIntentDriver, insightIntent } from '@kit.AbilityKit';
+  import { hilog } from '@kit.PerformanceAnalysisKit';
+
+  async function executeSearchMusicIntentPromise() {
+    let param: insightIntentDriver.ExecuteParam = {
+      bundleName: 'com.ohos.intentexecutedemo',
+      moduleName: 'entry',
+      abilityName: 'EntryAbility',
+      insightIntentName: 'PlayMusic',
+      insightIntentParam: {
+        songName: 'City Of Stars',
+      },
+      executeMode: insightIntent.ExecuteMode.UI_ABILITY_FOREGROUND,
+    };
+
+    try {
+      let resultData: insightIntent.ExecuteResult = await insightIntentDriver.execute(param);
+      hilog.info(0x0000, 'testTag', 'execute insight intent return %{public}d', resultData.code);
+      hilog.info(0x0000, 'testTag', 'execute insight intent result %{public}s', JSON.stringify(resultData.result));
+    } catch (error) {
+      hilog.error(0x0000, 'testTag', 'execute insight intent error caught %{public}s', JSON.stringify(error));
+    }
+  }
+
+```
+

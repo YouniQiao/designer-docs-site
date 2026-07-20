@@ -4,6 +4,8 @@
 
 **Since:** 12
 
+<!--Device-unnamed-declare class Component3DAttribute extends CommonMethod<Component3DAttribute>--><!--Device-unnamed-declare class Component3DAttribute extends CommonMethod<Component3DAttribute>-End-->
+
 **System capability:** SystemCapability.ArkUi.Graphics3D
 
 ## customRender
@@ -18,13 +20,15 @@ Set render pipeline of 3D scene render.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-Component3DAttribute-customRender(uri: ResourceStr, selfRenderUpdate: boolean): Component3DAttribute--><!--Device-Component3DAttribute-customRender(uri: ResourceStr, selfRenderUpdate: boolean): Component3DAttribute-End-->
+
 **System capability:** SystemCapability.ArkUi.Graphics3D
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uri | ResourceStr | Yes | The path of Render pipeline config file |
+| uri | [ResourceStr](../arkts-apis/arkts-arkui-resourcestr-t.md) | Yes | The path of Render pipeline config file |
 | selfRenderUpdate | boolean | Yes | Trigger rendering every frame |
 
 ## environment
@@ -39,13 +43,15 @@ Load 3D model environment resource.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-Component3DAttribute-environment(uri: ResourceStr): Component3DAttribute--><!--Device-Component3DAttribute-environment(uri: ResourceStr): Component3DAttribute-End-->
+
 **System capability:** SystemCapability.ArkUi.Graphics3D
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uri | ResourceStr | Yes | The path of 3D environment resource |
+| uri | [ResourceStr](../arkts-apis/arkts-arkui-resourcestr-t.md) | Yes | The path of 3D environment resource |
 
 ## renderHeight
 
@@ -59,13 +65,15 @@ Set render height resolution.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-Component3DAttribute-renderHeight(value: Dimension): Component3DAttribute--><!--Device-Component3DAttribute-renderHeight(value: Dimension): Component3DAttribute-End-->
+
 **System capability:** SystemCapability.ArkUi.Graphics3D
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | Dimension | Yes | Height of gpu render target, target would upscale or downscale to view's height. |
+| value | [Dimension](../arkts-apis/arkts-arkui-dimension-t.md) | Yes | Height of gpu render target, target would upscale or downscale to view's height. |
 
 ## renderWidth
 
@@ -79,13 +87,15 @@ Set render width resolution.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-Component3DAttribute-renderWidth(value: Dimension): Component3DAttribute--><!--Device-Component3DAttribute-renderWidth(value: Dimension): Component3DAttribute-End-->
+
 **System capability:** SystemCapability.ArkUi.Graphics3D
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | Dimension | Yes | Width of gpu render target, target would upscale or downscale to view's width. |
+| value | [Dimension](../arkts-apis/arkts-arkui-dimension-t.md) | Yes | Width of gpu render target, target would upscale or downscale to view's width. |
 
 ## shader
 
@@ -99,13 +109,15 @@ Load shader uri.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-Component3DAttribute-shader(uri: ResourceStr): Component3DAttribute--><!--Device-Component3DAttribute-shader(uri: ResourceStr): Component3DAttribute-End-->
+
 **System capability:** SystemCapability.ArkUi.Graphics3D
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uri | ResourceStr | Yes | The path of custom shader |
+| uri | [ResourceStr](../arkts-apis/arkts-arkui-resourcestr-t.md) | Yes | The path of custom shader |
 
 ## shaderImageTexture
 
@@ -119,13 +131,15 @@ Load shader texture uri.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-Component3DAttribute-shaderImageTexture(uri: ResourceStr): Component3DAttribute--><!--Device-Component3DAttribute-shaderImageTexture(uri: ResourceStr): Component3DAttribute-End-->
+
 **System capability:** SystemCapability.ArkUi.Graphics3D
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uri | ResourceStr | Yes | The path of texture used by shader |
+| uri | [ResourceStr](../arkts-apis/arkts-arkui-resourcestr-t.md) | Yes | The path of texture used by shader |
 
 ## shaderInputBuffer
 
@@ -139,11 +153,13 @@ Buffer input for shader animation
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-Component3DAttribute-shaderInputBuffer(buffer: Array<number>): Component3DAttribute--><!--Device-Component3DAttribute-shaderInputBuffer(buffer: Array<number>): Component3DAttribute-End-->
+
 **System capability:** SystemCapability.ArkUi.Graphics3D
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| buffer | Array&lt;number&gt; | Yes | The uniform buffer of shader input |
+| buffer | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | The uniform buffer of shader input |
 

@@ -1,0 +1,148 @@
+# moveMissionsToBackground (System API)
+
+## Modules to Import
+
+```TypeScript
+import { missionManager } from '@kit.AbilityKit';
+```
+
+## moveMissionsToBackground
+
+```TypeScript
+function moveMissionsToBackground(missionIds: Array<number>, callback: AsyncCallback<Array<number>>): void
+```
+
+Switches a batch of missions to the background. The mission IDs returned are sorted by mission level when the missions are switched. This API uses an asynchronous callback to return the result.
+
+**Since:** 10
+
+**Required permissions:** ohos.permission.MANAGE_MISSIONS
+
+<!--Device-missionManager-function moveMissionsToBackground(missionIds: Array<int>, callback: AsyncCallback<Array<int>>): void--><!--Device-missionManager-function moveMissionsToBackground(missionIds: Array<int>, callback: AsyncCallback<Array<int>>): void-End-->
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.Mission
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| missionIds | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Array holding the mission IDs. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<number>> | Yes | Callback used to return the result. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system application. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
+
+**Example**
+
+```TypeScript
+import { abilityManager, missionManager } from '@kit.AbilityKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+try {
+  missionManager.getMissionInfos("", 10, (error: BusinessError, missionInfos: Array<missionManager.MissionInfo>) => {
+    if (error.code) {
+      console.error(`getMissionInfos failed, error code: ${error.code}, error msg: ${error.message}`);
+      return;
+    }
+
+    let toHides = new Array<number>();
+    for (let missionInfo of missionInfos) {
+      if (missionInfo.abilityState == abilityManager.AbilityState.FOREGROUND) {
+        toHides.push(missionInfo.missionId);
+      }
+    }
+    missionManager.moveMissionsToBackground(toHides, (err: BusinessError, data: Array<number>) => {
+      if (err) {
+        console.error(`moveMissionsToBackground failed: ${err.message}`);
+      } else {
+        console.info(`moveMissionsToBackground successfully: ${JSON.stringify(data)}`);
+      }
+    });
+  });
+} catch (paramError) {
+  let code = (paramError as BusinessError).code;
+  let message = (paramError as BusinessError).message;
+  console.error(`error: ${code}, ${message} `);
+}
+
+```
+
+
+## moveMissionsToBackground
+
+```TypeScript
+function moveMissionsToBackground(missionIds: Array<number>): Promise<Array<number>>
+```
+
+Switches a batch of missions to the background. The mission IDs returned are sorted by mission level when the missions are switched. This API uses a promise to return the result.
+
+**Since:** 10
+
+**Required permissions:** ohos.permission.MANAGE_MISSIONS
+
+<!--Device-missionManager-function moveMissionsToBackground(missionIds: Array<int>): Promise<Array<int>>--><!--Device-missionManager-function moveMissionsToBackground(missionIds: Array<int>): Promise<Array<int>>-End-->
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.Mission
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| missionIds | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Array holding the mission IDs. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<number>> | Promise used to return an array of mission IDs. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system application. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
+
+**Example**
+
+```TypeScript
+import { abilityManager, missionManager } from '@kit.AbilityKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+try {
+  missionManager.getMissionInfos("", 10, (error: BusinessError, missionInfos: Array<missionManager.MissionInfo>) => {
+    if (error.code) {
+      console.error(`getMissionInfos failed, error code: ${error.code}, error msg: ${error.message}`);
+      return;
+    }
+
+    let toHides = new Array<number>();
+    for (let missionInfo of missionInfos) {
+      if (missionInfo.abilityState == abilityManager.AbilityState.FOREGROUND) {
+        toHides.push(missionInfo.missionId);
+      }
+    }
+    missionManager.moveMissionsToBackground(toHides).then((hideRes: Array<number>) => {
+      console.info(`moveMissionsToBackground is called, res: ${JSON.stringify(hideRes)}`);
+    });
+  });
+} catch (paramError) {
+  let code = (paramError as BusinessError).code;
+  let message = (paramError as BusinessError).message;
+  console.error(`error: ${code}, ${message} `);
+}
+
+```
+

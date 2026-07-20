@@ -7,6 +7,9 @@ The **Radio** component allows users to select from a set of mutually exclusive 
 > Since API version 12, the default indicator type for the **Radio** component changes from 
 > **RadioIndicatorType.DOT** to **RadioIndicatorType.TICK**.
 
+## Child Components
+
+Not supported
 
 ## Radio
 
@@ -21,6 +24,8 @@ Creates a radio button.
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
+
+<!--Device-RadioInterface-(options: RadioOptions): RadioAttribute--><!--Device-RadioInterface-(options: RadioOptions): RadioAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

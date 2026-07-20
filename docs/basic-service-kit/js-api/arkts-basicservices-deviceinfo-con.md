@@ -16,8 +16,7 @@ Uninstall and reinstall all applications with the same **developerId** on one de
 
 An ODID is generated based on the following rules:
 
-The value is generated based on the **groupId** parsed from the **developerId** in the signature information. As
-**groupId.developerId** is the rule, if no **groupId** exists, the **developerId** is used as the **groupId**.
+The value is generated based on the **groupId** parsed from the **developerId** in the signature information. As **groupId.developerId** is the rule, if no **groupId** exists, the **developerId** is used as the **groupId**.
 
 Applications with the same **developerId** use the same ODID on one device.
 
@@ -35,6 +34,8 @@ Example: 1234a567-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 
 **Since:** 12
 
+<!--Device-deviceInfo-const ODID: string--><!--Device-deviceInfo-const ODID: string-End-->
+
 **System capability:** SystemCapability.Startup.SystemInfo
 
 ## abiList
@@ -49,6 +50,8 @@ Example: arm64-v8a
 
 **Since:** 6
 
+<!--Device-deviceInfo-const abiList: string--><!--Device-deviceInfo-const abiList: string-End-->
+
 **System capability:** SystemCapability.Startup.SystemInfo
 
 ## bootCount
@@ -60,6 +63,8 @@ const bootCount: number
 Obtains boot count since the device starts running
 
 **Since:** 21
+
+<!--Device-deviceInfo-const bootCount: number--><!--Device-deviceInfo-const bootCount: number-End-->
 
 **System capability:** SystemCapability.Startup.SystemInfo
 
@@ -74,6 +79,8 @@ Bootloader version.
 Example: bootloader
 
 **Since:** 6
+
+<!--Device-deviceInfo-const bootloaderVersion: string--><!--Device-deviceInfo-const bootloaderVersion: string-End-->
 
 **System capability:** SystemCapability.Startup.SystemInfo
 
@@ -91,6 +98,8 @@ Example: HUAWEI
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-deviceInfo-const brand: string--><!--Device-deviceInfo-const brand: string-End-->
+
 **System capability:** SystemCapability.Startup.SystemInfo
 
 ## buildHost
@@ -104,6 +113,8 @@ Build host.
 Example: default
 
 **Since:** 6
+
+<!--Device-deviceInfo-const buildHost: string--><!--Device-deviceInfo-const buildHost: string-End-->
 
 **System capability:** SystemCapability.Startup.SystemInfo
 
@@ -119,6 +130,8 @@ Example: default
 
 **Since:** 6
 
+<!--Device-deviceInfo-const buildRootHash: string--><!--Device-deviceInfo-const buildRootHash: string-End-->
+
 **System capability:** SystemCapability.Startup.SystemInfo
 
 ## buildTime
@@ -132,6 +145,8 @@ Build time.
 Example: default
 
 **Since:** 6
+
+<!--Device-deviceInfo-const buildTime: string--><!--Device-deviceInfo-const buildTime: string-End-->
 
 **System capability:** SystemCapability.Startup.SystemInfo
 
@@ -147,6 +162,8 @@ Example: default
 
 **Since:** 6
 
+<!--Device-deviceInfo-const buildType: string--><!--Device-deviceInfo-const buildType: string-End-->
+
 **System capability:** SystemCapability.Startup.SystemInfo
 
 ## buildUser
@@ -161,6 +178,8 @@ Example: default
 
 **Since:** 6
 
+<!--Device-deviceInfo-const buildUser: string--><!--Device-deviceInfo-const buildUser: string-End-->
+
 **System capability:** SystemCapability.Startup.SystemInfo
 
 ## buildVersion
@@ -169,13 +188,13 @@ Example: default
 const buildVersion: number
 ```
 
-Build version number. The value is the fourth digit in **osFullName**. You are advised to use
-**deviceInfo.buildVersion** instead of parsing **osFullName** to obtain the value, facilitating efficiency
-improvement.
+Build version number. The value is the fourth digit in **osFullName**. You are advised to use **deviceInfo.buildVersion** instead of parsing **osFullName** to obtain the value, facilitating efficiency improvement.
 
 Example: 1
 
 **Since:** 6
+
+<!--Device-deviceInfo-const buildVersion: number--><!--Device-deviceInfo-const buildVersion: number-End-->
 
 **System capability:** SystemCapability.Startup.SystemInfo
 
@@ -188,6 +207,8 @@ const chipType: string
 Obtains the device CPU chipType by a string.
 
 **Since:** 21
+
+<!--Device-deviceInfo-const chipType: string--><!--Device-deviceInfo-const chipType: string-End-->
 
 **System capability:** SystemCapability.Startup.SystemInfo
 
@@ -202,6 +223,8 @@ Obtain the device color represented by a string. If it cannot be obtained, retur
 **Since:** 26.0.0
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-deviceInfo-const deviceColor: string--><!--Device-deviceInfo-const deviceColor: string-End-->
 
 **System capability:** SystemCapability.Startup.SystemInfo
 
@@ -218,6 +241,8 @@ Example: <!--RP1-->wearable<!--RP1End-->
 **Since:** 6
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-deviceInfo-const deviceType: string--><!--Device-deviceInfo-const deviceType: string-End-->
 
 **System capability:** SystemCapability.Startup.SystemInfo
 
@@ -241,6 +266,8 @@ Example: 2502EM400567
 
 **Required permissions:** ohos.permission.ACCESS_DISK_PHY_INFO
 
+<!--Device-deviceInfo-const diskSN: string--><!--Device-deviceInfo-const diskSN: string-End-->
+
 **System capability:** SystemCapability.Startup.SystemInfo
 
 ## displayVersion
@@ -255,6 +282,8 @@ Example: <!--RP8-->XXX X.X.X.X<!--RP8End-->
 
 **Since:** 6
 
+<!--Device-deviceInfo-const displayVersion: string--><!--Device-deviceInfo-const displayVersion: string-End-->
+
 **System capability:** SystemCapability.Startup.SystemInfo
 
 ## distributionOSApiName
@@ -266,6 +295,8 @@ const distributionOSApiName: string
 Distribution OS API name.<!--Del--> It is defined by the issuer.<!--DelEnd-->
 
 **Since:** 13
+
+<!--Device-deviceInfo-const distributionOSApiName: string--><!--Device-deviceInfo-const distributionOSApiName: string-End-->
 
 **System capability:** SystemCapability.Startup.SystemInfo
 
@@ -281,6 +312,8 @@ Example: 50001
 
 **Since:** 10
 
+<!--Device-deviceInfo-const distributionOSApiVersion: number--><!--Device-deviceInfo-const distributionOSApiVersion: number-End-->
+
 **System capability:** SystemCapability.Startup.SystemInfo
 
 ## distributionOSName
@@ -294,6 +327,8 @@ Distribution OS name.<!--Del--> It is defined by the issuer.<!--DelEnd-->
 Example: OpenHarmony
 
 **Since:** 10
+
+<!--Device-deviceInfo-const distributionOSName: string--><!--Device-deviceInfo-const distributionOSName: string-End-->
 
 **System capability:** SystemCapability.Startup.SystemInfo
 
@@ -309,6 +344,8 @@ Example: Release
 
 **Since:** 10
 
+<!--Device-deviceInfo-const distributionOSReleaseType: string--><!--Device-deviceInfo-const distributionOSReleaseType: string-End-->
+
 **System capability:** SystemCapability.Startup.SystemInfo
 
 ## distributionOSVersion
@@ -323,6 +360,8 @@ Example: 5.0.0
 
 **Since:** 10
 
+<!--Device-deviceInfo-const distributionOSVersion: string--><!--Device-deviceInfo-const distributionOSVersion: string-End-->
+
 **System capability:** SystemCapability.Startup.SystemInfo
 
 ## featureVersion
@@ -331,13 +370,13 @@ Example: 5.0.0
 const featureVersion: number
 ```
 
-Feature version number. The value is the third digit in **osFullName**. You are advised to use
-**deviceInfo.featureVersion** instead of parsing **osFullName** to obtain the value, facilitating efficiency
-improvement.
+Feature version number. The value is the third digit in **osFullName**. You are advised to use **deviceInfo.featureVersion** instead of parsing **osFullName** to obtain the value, facilitating efficiency improvement.
 
 Example: 0
 
 **Since:** 6
+
+<!--Device-deviceInfo-const featureVersion: number--><!--Device-deviceInfo-const featureVersion: number-End-->
 
 **System capability:** SystemCapability.Startup.SystemInfo
 
@@ -353,6 +392,8 @@ Example: 3
 
 **Since:** 6
 
+<!--Device-deviceInfo-const firstApiVersion: number--><!--Device-deviceInfo-const firstApiVersion: number-End-->
+
 **System capability:** SystemCapability.Startup.SystemInfo
 
 ## hardwareModel
@@ -366,6 +407,8 @@ Hardware model.
 Example: <!--RP6-->TASA00CVN1<!--RP6End-->
 
 **Since:** 6
+
+<!--Device-deviceInfo-const hardwareModel: string--><!--Device-deviceInfo-const hardwareModel: string-End-->
 
 **System capability:** SystemCapability.Startup.SystemInfo
 
@@ -387,6 +430,8 @@ Example: default
 
 **Deprecated since:** 9
 
+<!--Device-deviceInfo-const hardwareProfile: string--><!--Device-deviceInfo-const hardwareProfile: string-End-->
+
 **System capability:** SystemCapability.Startup.SystemInfo
 
 ## incrementalVersion
@@ -401,6 +446,8 @@ Example: default
 
 **Since:** 6
 
+<!--Device-deviceInfo-const incrementalVersion: string--><!--Device-deviceInfo-const incrementalVersion: string-End-->
+
 **System capability:** SystemCapability.Startup.SystemInfo
 
 ## majorVersion
@@ -409,13 +456,13 @@ Example: default
 const majorVersion: number
 ```
 
-Major version number, which increments with the main version. The value is the first digit in **osFullName**. You
-are advised to use **deviceInfo.majorVersion** instead of parsing **osFullName** to obtain the value, facilitating
-efficiency improvement.
+Major version number, which increments with the main version. The value is the first digit in **osFullName**. You are advised to use **deviceInfo.majorVersion** instead of parsing **osFullName** to obtain the value, facilitating efficiency improvement.
 
 Example: 5
 
 **Since:** 6
+
+<!--Device-deviceInfo-const majorVersion: number--><!--Device-deviceInfo-const majorVersion: number-End-->
 
 **System capability:** SystemCapability.Startup.SystemInfo
 
@@ -431,6 +478,8 @@ Example: HUAWEI
 
 **Since:** 6
 
+<!--Device-deviceInfo-const manufacture: string--><!--Device-deviceInfo-const manufacture: string-End-->
+
 **System capability:** SystemCapability.Startup.SystemInfo
 
 ## marketName
@@ -444,6 +493,8 @@ Marketing name.
 Example: <!--RP2-->Mate XX<!--RP2End-->
 
 **Since:** 6
+
+<!--Device-deviceInfo-const marketName: string--><!--Device-deviceInfo-const marketName: string-End-->
 
 **System capability:** SystemCapability.Startup.SystemInfo
 
@@ -461,6 +512,8 @@ Example: <!--RP10-->Openharmony-5.0.0.1<!--RP10End-->
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-deviceInfo-const osFullName: string--><!--Device-deviceInfo-const osFullName: string-End-->
+
 **System capability:** SystemCapability.Startup.SystemInfo
 
 ## osReleaseType
@@ -471,15 +524,15 @@ const osReleaseType: string
 
 OS release type. The options are as follows:
 
-- **Canary**: Preliminary release open only to specific developers. This release does not promise API stability
-and may require tolerance of instability.
-- **Beta**: Release open to all developers. This release does not promise API stability and may require tolerance
-of instability.
+- **Canary**: Preliminary release open only to specific developers. This release does not promise API stability and may require tolerance of instability.  
+- **Beta**: Release open to all developers. This release does not promise API stability and may require tolerance of instability.  
 - **Release**: Official release open to all developers. This release promises that all APIs are stable.
 
 Example: <!--RP9-->Canary/Beta/Release<!--RP9End-->
 
 **Since:** 6
+
+<!--Device-deviceInfo-const osReleaseType: string--><!--Device-deviceInfo-const osReleaseType: string-End-->
 
 **System capability:** SystemCapability.Startup.SystemInfo
 
@@ -492,6 +545,8 @@ const performanceClass: PerformanceClassLevel
 Device capability level.
 
 **Since:** 19
+
+<!--Device-deviceInfo-const performanceClass: PerformanceClassLevel--><!--Device-deviceInfo-const performanceClass: PerformanceClassLevel-End-->
 
 **System capability:** SystemCapability.Startup.SystemInfo
 
@@ -509,6 +564,8 @@ Example: <!--RP4-->TAS-AL00<!--RP4End-->
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-deviceInfo-const productModel: string--><!--Device-deviceInfo-const productModel: string-End-->
+
 **System capability:** SystemCapability.Startup.SystemInfo
 
 ## productModelAlias
@@ -525,6 +582,8 @@ Example: TAS-AL00
 
 **Atomic service API:** This API can be used in atomic services since API version 14.
 
+<!--Device-deviceInfo-const productModelAlias: string--><!--Device-deviceInfo-const productModelAlias: string-End-->
+
 **System capability:** SystemCapability.Startup.SystemInfo
 
 ## productSeries
@@ -538,6 +597,8 @@ Product series.
 Example: <!--RP3-->TAS<!--RP3End-->
 
 **Since:** 6
+
+<!--Device-deviceInfo-const productSeries: string--><!--Device-deviceInfo-const productSeries: string-End-->
 
 **System capability:** SystemCapability.Startup.SystemInfo
 
@@ -555,6 +616,8 @@ Example: 12
 
 **Atomic service API:** This API can be used in atomic services since API version 14.
 
+<!--Device-deviceInfo-const sdkApiVersion: number--><!--Device-deviceInfo-const sdkApiVersion: number-End-->
+
 **System capability:** SystemCapability.Startup.SystemInfo
 
 ## sdkMinorApiVersion
@@ -570,6 +633,8 @@ Obtains the SDK Minor API version.
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+<!--Device-deviceInfo-const sdkMinorApiVersion: number--><!--Device-deviceInfo-const sdkMinorApiVersion: number-End-->
 
 **System capability:** SystemCapability.Startup.SystemInfo
 
@@ -587,6 +652,8 @@ Obtains the SDK Patch API version.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 
+<!--Device-deviceInfo-const sdkPatchApiVersion: number--><!--Device-deviceInfo-const sdkPatchApiVersion: number-End-->
+
 **System capability:** SystemCapability.Startup.SystemInfo
 
 ## securityPatchTag
@@ -601,6 +668,8 @@ Example: <!--RP7-->2021/01/01<!--RP7End-->
 
 **Since:** 6
 
+<!--Device-deviceInfo-const securityPatchTag: string--><!--Device-deviceInfo-const securityPatchTag: string-End-->
+
 **System capability:** SystemCapability.Startup.SystemInfo
 
 ## seniorVersion
@@ -609,13 +678,13 @@ Example: <!--RP7-->2021/01/01<!--RP7End-->
 const seniorVersion: number
 ```
 
-Senior version number, which increments with architecture and feature updates. The value is the second digit in
-**osFullName**. You are advised to use **deviceInfo.seniorVersion** instead of parsing **osFullName** to obtain
-the value, facilitating efficiency improvement.
+Senior version number, which increments with architecture and feature updates. The value is the second digit in **osFullName**. You are advised to use **deviceInfo.seniorVersion** instead of parsing **osFullName** to obtain the value, facilitating efficiency improvement.
 
 Example: 0
 
 **Since:** 6
+
+<!--Device-deviceInfo-const seniorVersion: number--><!--Device-deviceInfo-const seniorVersion: number-End-->
 
 **System capability:** SystemCapability.Startup.SystemInfo
 
@@ -639,6 +708,8 @@ Example: The SN varies with the device.
 
 **Required permissions:** ohos.permission.sec.ACCESS_UDID
 
+<!--Device-deviceInfo-const serial: string--><!--Device-deviceInfo-const serial: string-End-->
+
 **System capability:** SystemCapability.Startup.SystemInfo
 
 ## softwareModel
@@ -652,6 +723,8 @@ Software model.
 Example: <!--RP5-->TAS-AL00<!--RP5End-->
 
 **Since:** 6
+
+<!--Device-deviceInfo-const softwareModel: string--><!--Device-deviceInfo-const softwareModel: string-End-->
 
 **System capability:** SystemCapability.Startup.SystemInfo
 
@@ -675,6 +748,8 @@ Example: 9D6AABD147XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXE5536412
 
 **Required permissions:** ohos.permission.sec.ACCESS_UDID
 
+<!--Device-deviceInfo-const udid: string--><!--Device-deviceInfo-const udid: string-End-->
+
 **System capability:** SystemCapability.Startup.SystemInfo
 
 ## versionId
@@ -683,12 +758,13 @@ Example: 9D6AABD147XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXE5536412
 const versionId: string
 ```
 
-Version ID. It consists of the following fields: **deviceType**, **manufacture**, **brand**, **productSeries**,
-**osFullName**, **productModel**, **softwareModel**, **sdkApiVersion**, **incrementalVersion**, and **buildType**.
+Version ID. It consists of the following fields: **deviceType**, **manufacture**, **brand**, **productSeries**,**osFullName**, **productModel**, **softwareModel**, **sdkApiVersion**, **incrementalVersion**, and **buildType**.
 
 Example: wearable/HUAWEI/HUAWEI/TAS/OpenHarmony-5.0.0.1/TAS-AL00/TAS-AL00/12/default/release:nolog
 
 **Since:** 6
+
+<!--Device-deviceInfo-const versionId: string--><!--Device-deviceInfo-const versionId: string-End-->
 
 **System capability:** SystemCapability.Startup.SystemInfo
 

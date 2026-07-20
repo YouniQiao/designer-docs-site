@@ -4,8 +4,7 @@
 declare type ContentWillScrollCallback = (result: SwiperContentWillScrollResult) => boolean
 ```
 
-Defines the callback triggered when the **Swiper** component is about to scroll. The return value indicates whether
-the scroll action is allowed.
+Defines the callback triggered when the **Swiper** component is about to scroll. The return value indicates whether the scroll action is allowed.
 
 **Since:** 15
 
@@ -14,6 +13,8 @@ the scroll action is allowed.
 **Atomic service API:** This API can be used in atomic services since API version 15.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 15.
+
+<!--Device-unnamed-declare type ContentWillScrollCallback = (result: SwiperContentWillScrollResult) => boolean--><!--Device-unnamed-declare type ContentWillScrollCallback = (result: SwiperContentWillScrollResult) => boolean-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

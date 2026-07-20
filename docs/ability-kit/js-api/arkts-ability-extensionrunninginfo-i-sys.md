@@ -1,10 +1,10 @@
 # ExtensionRunningInfo (System API)
 
-The ExtensionRunningInfo module encapsulates ExtensionAbility running information, which can be obtained through
-[getExtensionRunningInfos](arkts-ability-getextensionrunninginfos-f-sys.md#getextensionrunninginfos-2)
-.
+The ExtensionRunningInfo module encapsulates ExtensionAbility running information, which can be obtained through [getExtensionRunningInfos](arkts-ability-abilitymanager-getextensionrunninginfos-f-sys.md#getextensionrunninginfos-2).
 
 **Since:** 9
+
+<!--Device-unnamed-export interface ExtensionRunningInfo--><!--Device-unnamed-export interface ExtensionRunningInfo-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -24,6 +24,8 @@ Names of all packages in the process.
 
 **Since:** 9
 
+<!--Device-ExtensionRunningInfo-clientPackage: Array<String>--><!--Device-ExtensionRunningInfo-clientPackage: Array<String>-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **System API:** This is a system API.
@@ -41,6 +43,8 @@ ExtensionAbility information.
 **Default:** Indicates the extension of the extension info
 
 **Since:** 9
+
+<!--Device-ExtensionRunningInfo-extension: ElementName--><!--Device-ExtensionRunningInfo-extension: ElementName-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -60,6 +64,8 @@ Process ID.
 
 **Since:** 9
 
+<!--Device-ExtensionRunningInfo-pid: int--><!--Device-ExtensionRunningInfo-pid: int-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **System API:** This is a system API.
@@ -77,6 +83,8 @@ Process name.
 **Default:** the name of the process
 
 **Since:** 9
+
+<!--Device-ExtensionRunningInfo-processName: string--><!--Device-ExtensionRunningInfo-processName: string-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -96,6 +104,8 @@ Timestamp when the ExtensionAbility is started.
 
 **Since:** 9
 
+<!--Device-ExtensionRunningInfo-startTime: long--><!--Device-ExtensionRunningInfo-startTime: long-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **System API:** This is a system API.
@@ -114,6 +124,8 @@ ExtensionAbility type.
 
 **Since:** 9
 
+<!--Device-ExtensionRunningInfo-type: bundle.ExtensionAbilityType--><!--Device-ExtensionRunningInfo-type: bundle.ExtensionAbilityType-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **System API:** This is a system API.
@@ -131,6 +143,8 @@ UID of the application.
 **Default:** user id
 
 **Since:** 9
+
+<!--Device-ExtensionRunningInfo-uid: int--><!--Device-ExtensionRunningInfo-uid: int-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 

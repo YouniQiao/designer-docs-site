@@ -1,0 +1,103 @@
+# PropertyKey
+
+Enumerates the types of Exchangeable Image File Format (Exif) data of an image.
+
+- The key in the format example is **image.PropertyKey.*XXX*** (where *XXX* is the name of an enumeration name, for example, **image.PropertyKey.NEW_SUBFILE_TYPE**).  
+- The format example is used only to show how to modify values and read results. For details about how to use them,see [modifyImageProperty](arkts-image-image-imagesource-i.md#modifyimageproperty-1)(to modify a single Exif field),[modifyImageProperties](arkts-image-image-imagesource-i.md#modifyimageproperties-1)(to modify multiple Exif fields),[getImageProperty](arkts-image-image-imagesource-i.md#getimageproperty-1)(to read a single Exif field), and [getImageProperties](@ohos.multimedia.image:image.ImageSource.getImageProperties(key: Array<PropertyKey>)) (to read multiple Exif fields).
+
+**Since:** 7
+
+<!--Device-image-enum PropertyKey--><!--Device-image-enum PropertyKey-End-->
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## XTSTYLE_TEMPLATE_NAME
+
+```TypeScript
+XTSTYLE_TEMPLATE_NAME = 'HwMnoteXtStyleTemplateName'
+```
+
+Describes xtstyle template name.
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-PropertyKey-XTSTYLE_TEMPLATE_NAME = 'HwMnoteXtStyleTemplateName'--><!--Device-PropertyKey-XTSTYLE_TEMPLATE_NAME = 'HwMnoteXtStyleTemplateName'-End-->
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+**System API:** This is a system API.
+
+## XTSTYLE_CUSTOM_LIGHT_AND_SHADOW
+
+```TypeScript
+XTSTYLE_CUSTOM_LIGHT_AND_SHADOW = 'HwMnoteXtStyleCustomLightAndShadow'
+```
+
+Describes xtstyle custom light and shadow.
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-PropertyKey-XTSTYLE_CUSTOM_LIGHT_AND_SHADOW = 'HwMnoteXtStyleCustomLightAndShadow'--><!--Device-PropertyKey-XTSTYLE_CUSTOM_LIGHT_AND_SHADOW = 'HwMnoteXtStyleCustomLightAndShadow'-End-->
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+**System API:** This is a system API.
+
+## XTSTYLE_CUSTOM_SATURATION
+
+```TypeScript
+XTSTYLE_CUSTOM_SATURATION = 'HwMnoteXtStyleCustomSaturation'
+```
+
+Describes xtstyle custom saturation.
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-PropertyKey-XTSTYLE_CUSTOM_SATURATION = 'HwMnoteXtStyleCustomSaturation'--><!--Device-PropertyKey-XTSTYLE_CUSTOM_SATURATION = 'HwMnoteXtStyleCustomSaturation'-End-->
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+**System API:** This is a system API.
+
+## XTSTYLE_CUSTOM_HUE
+
+```TypeScript
+XTSTYLE_CUSTOM_HUE = 'HwMnoteXtStyleCustomHue'
+```
+
+Describes xtstyle custom hue.
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-PropertyKey-XTSTYLE_CUSTOM_HUE = 'HwMnoteXtStyleCustomHue'--><!--Device-PropertyKey-XTSTYLE_CUSTOM_HUE = 'HwMnoteXtStyleCustomHue'-End-->
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+**System API:** This is a system API.
+
+## XTSTYLE_EXPOSURE_PARAM
+
+```TypeScript
+XTSTYLE_EXPOSURE_PARAM = 'HwMnoteXtStyleExposureParam'
+```
+
+Describes xtstyle exposure param.
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-PropertyKey-XTSTYLE_EXPOSURE_PARAM = 'HwMnoteXtStyleExposureParam'--><!--Device-PropertyKey-XTSTYLE_EXPOSURE_PARAM = 'HwMnoteXtStyleExposureParam'-End-->
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+**System API:** This is a system API.
+

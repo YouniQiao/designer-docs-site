@@ -1,0 +1,170 @@
+# DragInfo
+
+Defines the attributes required for initiating a drag action and information carried in the dragging process.
+
+**Since:** 10
+
+<!--Device-dragController-interface DragInfo--><!--Device-dragController-interface DragInfo-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## Modules to Import
+
+```TypeScript
+import { dragController } from '@kit.ArkUI';
+```
+
+## autoHideComponentUniqueIds
+
+```TypeScript
+autoHideComponentUniqueIds?: number | number[]
+```
+
+Unique ID of the component that is automatically hidden by the system during proactive dragging. A single unique ID or an array of unique IDs can be passed.
+
+After the proactive dragging is successfully initiated, the system automatically hides the target component before displaying the drag preview window.
+
+If the proactive dragging source also needs to be hidden, its unique ID must be passed as well.
+
+The unique ID of a component can be obtained by using [UIContext.getFrameNodeById()](arkts-arkui-arkui-uicontext-uicontext-c.md#getframenodebyid-1)together with [FrameNode.getUniqueId()](arkts-arkui-framenode-c.md#getuniqueid-1).
+
+You need to restore the component display status as required in the drag end callback.
+
+**Type:** number | number[]
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+<!--Device-DragInfo-autoHideComponentUniqueIds?: int | int[]--><!--Device-DragInfo-autoHideComponentUniqueIds?: int | int[]-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## data
+
+```TypeScript
+data?: unifiedDataChannel.UnifiedData
+```
+
+Data carried in the dragging process.
+
+The default value is null.
+
+**Type:** unifiedDataChannel.UnifiedData
+
+**Since:** 10
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-DragInfo-data?: unifiedDataChannel.UnifiedData--><!--Device-DragInfo-data?: unifiedDataChannel.UnifiedData-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## dataLoadParams
+
+```TypeScript
+dataLoadParams?: unifiedDataChannel.DataLoadParams
+```
+
+Parameters for deferred data loading from the drag source. This API provides data loading parameters to the system instead of directly providing complete data objects. When the user drops data on the target application,the system will use these parameters to request the actual data from the drag source. If set together with **data**, **dataLoadParams** takes effect.
+
+The default value is null.
+
+**Type:** unifiedDataChannel.DataLoadParams
+
+**Since:** 20
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 20.
+
+<!--Device-DragInfo-dataLoadParams?: unifiedDataChannel.DataLoadParams--><!--Device-DragInfo-dataLoadParams?: unifiedDataChannel.DataLoadParams-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## extraParams
+
+```TypeScript
+extraParams?: string
+```
+
+Additional information about the drag action. Not supported currently.
+
+The default value is null.
+
+**Type:** string
+
+**Since:** 10
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-DragInfo-extraParams?: string--><!--Device-DragInfo-extraParams?: string-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## pointerId
+
+```TypeScript
+pointerId: number
+```
+
+ID of the touch point on the screen when dragging is started. The value is an integer in the [0, 9] range.
+
+**Type:** number
+
+**Since:** 10
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-DragInfo-pointerId: number--><!--Device-DragInfo-pointerId: number-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## previewOptions
+
+```TypeScript
+previewOptions?: DragPreviewOptions
+```
+
+Processing mode of the drag preview and the display of the number badge during dragging.
+
+**Type:** DragPreviewOptions
+
+**Since:** 11
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-DragInfo-previewOptions?: DragPreviewOptions--><!--Device-DragInfo-previewOptions?: DragPreviewOptions-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## touchPoint
+
+```TypeScript
+touchPoint?: TouchPoint
+```
+
+Coordinates of the touch point. If this parameter is not set, the touch point is centered horizontally and shifted downward by 20% from the top.
+
+**Type:** TouchPoint
+
+**Since:** 11
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-DragInfo-touchPoint?: TouchPoint--><!--Device-DragInfo-touchPoint?: TouchPoint-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+

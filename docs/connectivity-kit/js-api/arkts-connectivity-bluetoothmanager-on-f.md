@@ -1,0 +1,284 @@
+# on
+
+## Modules to Import
+
+```TypeScript
+import { bluetoothManager } from '@kit.ConnectivityKit';
+```
+
+## on('bluetoothDeviceFind')
+
+```TypeScript
+function on(type: 'bluetoothDeviceFind', callback: Callback<Array<string>>): void
+```
+
+Subscribe the event reported when a remote Bluetooth device is discovered.On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
+
+**Since:** 9
+
+**Deprecated since:** 10
+
+**Substitutes:** event:bluetoothDeviceFind
+
+**Required permissions:** 
+- API version 10+: ohos.permission.ACCESS_BLUETOOTH
+- API version 9: ohos.permission.USE_BLUETOOTH
+
+<!--Device-bluetoothManager-function on(type: 'bluetoothDeviceFind', callback: Callback<Array<string>>): void--><!--Device-bluetoothManager-function on(type: 'bluetoothDeviceFind', callback: Callback<Array<string>>): void-End-->
+
+**System capability:** SystemCapability.Communication.Bluetooth.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| type | 'bluetoothDeviceFind' | Yes | Type of the discovering event to listen for. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<string>> | Yes | Callback used to listen for the discovering event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Invalid parameter. Possible causes: 1. Mandatory parameters are left unspecified.2. Incorrect parameter types. 3. Parameter verification failed. |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
+| 2900099 | Operation failed. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@ohos.base';
+function onReceiveEvent(data: Array<string>) { // data is an array of Bluetooth device addresses.
+    console.info('bluetooth device find = '+ JSON.stringify(data));
+}
+try {
+    bluetoothManager.on('bluetoothDeviceFind', onReceiveEvent);
+} catch (err) {
+    console.error("errCode:" + (err as BusinessError).code + ",errMessage:" + (err as BusinessError).message);
+}
+
+```
+
+
+## on('bondStateChange')
+
+```TypeScript
+function on(type: 'bondStateChange', callback: Callback<BondStateParam>): void
+```
+
+Subscribe the event reported when a remote Bluetooth device is bonded.On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
+
+**Since:** 9
+
+**Deprecated since:** 10
+
+**Substitutes:** event:bondStateChange
+
+**Required permissions:** 
+- API version 10+: ohos.permission.ACCESS_BLUETOOTH
+- API version 9: ohos.permission.USE_BLUETOOTH
+
+<!--Device-bluetoothManager-function on(type: 'bondStateChange', callback: Callback<BondStateParam>): void--><!--Device-bluetoothManager-function on(type: 'bondStateChange', callback: Callback<BondStateParam>): void-End-->
+
+**System capability:** SystemCapability.Communication.Bluetooth.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| type | 'bondStateChange' | Yes | Type of the bond state event to listen for. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<BondStateParam> | Yes | Callback used to listen for the bond state event,{@link BondStateParam}. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Invalid parameter. Possible causes: 1. Mandatory parameters are left unspecified.2. Incorrect parameter types. 3. Parameter verification failed. |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
+| 2900099 | Operation failed. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@ohos.base';
+function onReceiveEvent(data: bluetoothManager.BondStateParam) { // data, as the input parameter of the callback, indicates the pairing state.
+    console.info('pair state = '+ JSON.stringify(data));
+}
+try {
+    bluetoothManager.on('bondStateChange', onReceiveEvent);
+} catch (err) {
+    console.error("errCode:" + (err as BusinessError).code + ",errMessage:" + (err as BusinessError).message);
+}
+
+```
+
+
+## on('pinRequired')
+
+```TypeScript
+function on(type: 'pinRequired', callback: Callback<PinRequiredParam>): void
+```
+
+Subscribe the event of a pairing request from a remote Bluetooth device.On API 10 and above, the permission required by this interface is changed from DISCOVER_BLUETOOTH to ACCESS_BLUETOOTH.
+
+**Since:** 9
+
+**Deprecated since:** 10
+
+**Substitutes:** event:pinRequired
+
+**Required permissions:** 
+- API version 10+: ohos.permission.ACCESS_BLUETOOTH
+- API version 9: ohos.permission.DISCOVER_BLUETOOTH
+
+<!--Device-bluetoothManager-function on(type: 'pinRequired', callback: Callback<PinRequiredParam>): void--><!--Device-bluetoothManager-function on(type: 'pinRequired', callback: Callback<PinRequiredParam>): void-End-->
+
+**System capability:** SystemCapability.Communication.Bluetooth.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| type | 'pinRequired' | Yes | Type of the pairing request event to listen for. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<PinRequiredParam> | Yes | Callback used to listen for the pairing request event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Invalid parameter. Possible causes: 1. Mandatory parameters are left unspecified.2. Incorrect parameter types. 3. Parameter verification failed. |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
+| 2900099 | Operation failed. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@ohos.base';
+function onReceiveEvent(data: bluetoothManager.PinRequiredParam) { // data is the pairing request parameter.
+    console.info('pin required = '+ JSON.stringify(data));
+}
+try {
+    bluetoothManager.on('pinRequired', onReceiveEvent);
+} catch (err) {
+    console.error("errCode:" + (err as BusinessError).code + ",errMessage:" + (err as BusinessError).message);
+}
+
+```
+
+
+## on('stateChange')
+
+```TypeScript
+function on(type: 'stateChange', callback: Callback<BluetoothState>): void
+```
+
+Subscribe the event reported when the Bluetooth state changes.On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
+
+**Since:** 9
+
+**Deprecated since:** 10
+
+**Substitutes:** event:stateChange
+
+**Required permissions:** 
+- API version 10+: ohos.permission.ACCESS_BLUETOOTH
+- API version 9: ohos.permission.USE_BLUETOOTH
+
+<!--Device-bluetoothManager-function on(type: 'stateChange', callback: Callback<BluetoothState>): void--><!--Device-bluetoothManager-function on(type: 'stateChange', callback: Callback<BluetoothState>): void-End-->
+
+**System capability:** SystemCapability.Communication.Bluetooth.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| type | 'stateChange' | Yes | Type of the Bluetooth state changes event to listen for. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<BluetoothState> | Yes | Callback used to listen for the Bluetooth state event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Invalid parameter. Possible causes: 1. Mandatory parameters are left unspecified.2. Incorrect parameter types. 3. Parameter verification failed. |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
+| 2900099 | Operation failed. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@ohos.base';
+function onReceiveEvent(data: bluetoothManager.BluetoothState) {
+    console.info('bluetooth state = '+ JSON.stringify(data));
+}
+try {
+    bluetoothManager.on('stateChange', onReceiveEvent);
+} catch (err) {
+    console.error("errCode:" + (err as BusinessError).code + ",errMessage:" + (err as BusinessError).message);
+}
+
+```
+
+
+## on('sppRead')
+
+```TypeScript
+function on(type: 'sppRead', clientSocket: number, callback: Callback<ArrayBuffer>): void
+```
+
+Subscribe the event reported when data is read from the socket.
+
+**Since:** 9
+
+**Deprecated since:** 10
+
+**Substitutes:** event:sppRead
+
+<!--Device-bluetoothManager-function on(type: 'sppRead', clientSocket: number, callback: Callback<ArrayBuffer>): void--><!--Device-bluetoothManager-function on(type: 'sppRead', clientSocket: number, callback: Callback<ArrayBuffer>): void-End-->
+
+**System capability:** SystemCapability.Communication.Bluetooth.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| type | 'sppRead' | Yes | Type of the spp read event to listen for. |
+| clientSocket | number | Yes | Client socket ID, which is obtained by sppAccept or sppConnect. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ArrayBuffer> | Yes | Callback used to listen for the spp read event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Invalid parameter. Possible causes: 1. Mandatory parameters are left unspecified.2. Incorrect parameter types. |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
+| 2901054 | IO error. |
+| 2900099 | Operation failed. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+let clientNumber = -1;
+function clientSocket(code: BusinessError, number: number) {
+  if (code == null || code.code != 0) {
+    return;
+  }
+  console.info(`bluetooth serverSocket Number: ${number}`);
+  // The obtained clientNumber is used as the socket ID for subsequent read/write operations on the client.
+  clientNumber = number;
+}
+function dataRead(dataBuffer: ArrayBuffer) {
+  let data = new Uint8Array(dataBuffer);
+  console.info(`bluetooth data is: ${data[0]}`);
+}
+try {
+    bluetoothManager.on('sppRead', clientNumber, dataRead);
+} catch (err) {
+    console.error(`errCode: ${err.code}, errMessage: ${err.message}`);
+}
+
+```
+

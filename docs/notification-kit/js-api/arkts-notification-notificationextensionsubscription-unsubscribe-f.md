@@ -1,0 +1,50 @@
+# unsubscribe
+
+## Modules to Import
+
+```TypeScript
+import { notificationExtensionSubscription } from '@kit.NotificationKit';
+```
+
+## unsubscribe
+
+```TypeScript
+function unsubscribe(): Promise<void>
+```
+
+Unsubscribes from the notification extension. This API uses a promise to return the result.
+
+**Since:** 22
+
+**Required permissions:** ohos.permission.SUBSCRIBE_NOTIFICATION
+
+<!--Device-notificationExtensionSubscription-function unsubscribe(): Promise<void>--><!--Device-notificationExtensionSubscription-function unsubscribe(): Promise<void>-End-->
+
+**System capability:** SystemCapability.Notification.Notification
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied or current device not supported. |
+| [1600001](../errorcode-notification.md#1600001-internal-error) | Internal error. |
+| [1600003](../errorcode-notification.md#1600003-failed-to-connect-to-the-notification-service) | Failed to connect to the service. |
+
+**Example**
+
+```TypeScript
+
+notificationExtensionSubscription.unsubscribe().then(() => {
+  console.info(`unsubscribe success`);
+}).catch((err: BusinessError) => {
+  console.error(`unsubscribe fail: ${JSON.stringify(err)}`);
+});
+
+```
+

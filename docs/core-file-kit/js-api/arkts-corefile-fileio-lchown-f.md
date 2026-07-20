@@ -6,12 +6,13 @@
 declare function lchown(path: string, uid: number, gid: number): Promise<void>
 ```
 
-Changes the file owner (owner of the symbolic link, not the file referred to by the symbolic link) based on the file
-path. This API uses a promise to return the result.
+Changes the file owner (owner of the symbolic link, not the file referred to by the symbolic link) based on the file path. This API uses a promise to return the result.
 
 **Since:** 7
 
 **Deprecated since:** 9
+
+<!--Device-unnamed-declare function lchown(path: string, uid: number, gid: number): Promise<void>--><!--Device-unnamed-declare function lchown(path: string, uid: number, gid: number): Promise<void>-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
@@ -27,7 +28,7 @@ path. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 
 ## lchown
@@ -36,12 +37,13 @@ path. This API uses a promise to return the result.
 declare function lchown(path: string, uid: number, gid: number, callback: AsyncCallback<void>): void
 ```
 
-Changes the file owner (owner of the symbolic link, not the file referred to by the symbolic link) based on a file
-path. This API uses an asynchronous callback to return the result.
+Changes the file owner (owner of the symbolic link, not the file referred to by the symbolic link) based on a file path. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 
 **Deprecated since:** 9
+
+<!--Device-unnamed-declare function lchown(path: string, uid: number, gid: number, callback: AsyncCallback<void>): void--><!--Device-unnamed-declare function lchown(path: string, uid: number, gid: number, callback: AsyncCallback<void>): void-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
@@ -52,5 +54,5 @@ path. This API uses an asynchronous callback to return the result.
 | path | string | Yes | Application sandbox path of the file. |
 | uid | number | Yes | New UID. |
 | gid | number | Yes | New GID. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback invoked when the file owner is changed asynchronously. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback invoked when the file owner is changed asynchronously. |
 

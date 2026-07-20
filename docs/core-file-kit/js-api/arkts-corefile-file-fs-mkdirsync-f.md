@@ -18,6 +18,8 @@ Creates a directory. This API returns the result synchronously.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-unnamed-declare function mkdirSync(path: string): void--><!--Device-unnamed-declare function mkdirSync(path: string): void-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
@@ -53,12 +55,13 @@ Creates a directory. This API returns the result synchronously.
 declare function mkdirSync(path: string, recursion: boolean): void
 ```
 
-Creates a directory. This API returns the result synchronously. The value **true** means to create a directory
-recursively.
+Creates a directory. This API returns the result synchronously. The value **true** means to create a directory recursively.
 
 **Since:** 11
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-unnamed-declare function mkdirSync(path: string, recursion: boolean): void--><!--Device-unnamed-declare function mkdirSync(path: string, recursion: boolean): void-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
@@ -67,7 +70,7 @@ recursively.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Application sandbox path of the directory. |
-| recursion | boolean | Yes | Whether to create a directory recursively.<br> The value **true** means to create adirectory recursively. The value **false** means to create a single-level directory. |
+| recursion | boolean | Yes | Whether to create a directory recursively.<br> The value **true** means to create a directory recursively. The value **false** means to create a single-level directory. |
 
 **Error codes:**
 

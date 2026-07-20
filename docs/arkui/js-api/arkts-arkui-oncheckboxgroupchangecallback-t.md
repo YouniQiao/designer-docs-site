@@ -14,6 +14,8 @@ Information about the check box group.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 18.
 
+<!--Device-unnamed-declare type OnCheckboxGroupChangeCallback = (value: CheckboxGroupResult) => void--><!--Device-unnamed-declare type OnCheckboxGroupChangeCallback = (value: CheckboxGroupResult) => void-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**

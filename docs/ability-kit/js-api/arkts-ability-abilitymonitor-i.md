@@ -1,11 +1,10 @@
 # AbilityMonitor
 
-The module provides the capability of listening for lifecycle state changes of a specified
-[UIAbility](arkts-app-ability-uiability.md). You can use AbilityMonitor as an input parameter of
-[abilityDelegator.addAbilityMonitor](arkts-ability-abilitydelegator-i.md#addabilitymonitor-1)
-to register a listener.
+The module provides the capability of listening for lifecycle state changes of a specified [UIAbility](arkts-app-ability-uiability.md). You can use AbilityMonitor as an input parameter of [abilityDelegator.addAbilityMonitor](arkts-ability-abilitydelegator-i.md#addabilitymonitor-1)to register a listener.
 
 **Since:** 9
+
+<!--Device-unnamed-export interface AbilityMonitor--><!--Device-unnamed-export interface AbilityMonitor-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -23,6 +22,8 @@ Name of the UIAbility object to be listened.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-AbilityMonitor-abilityName: string--><!--Device-AbilityMonitor-abilityName: string-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 ## moduleName
@@ -38,6 +39,8 @@ Module name of the UIAbility object.
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityMonitor-moduleName?: string--><!--Device-AbilityMonitor-moduleName?: string-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -55,6 +58,8 @@ Callback invoked when the UIAbility object transitions to the background.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-AbilityMonitor-onAbilityBackground?: (ability: UIAbility) => void--><!--Device-AbilityMonitor-onAbilityBackground?: (ability: UIAbility) => void-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 ## onAbilityCreate
@@ -70,6 +75,8 @@ Callback invoked when the UIAbility object is created.
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityMonitor-onAbilityCreate?: (ability: UIAbility) => void--><!--Device-AbilityMonitor-onAbilityCreate?: (ability: UIAbility) => void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -87,6 +94,8 @@ Callback invoked when the UIAbility object is destroyed.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-AbilityMonitor-onAbilityDestroy?: (ability: UIAbility) => void--><!--Device-AbilityMonitor-onAbilityDestroy?: (ability: UIAbility) => void-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 ## onAbilityForeground
@@ -102,6 +111,8 @@ Callback invoked when the UIAbility object transitions to the foreground.
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityMonitor-onAbilityForeground?: (ability: UIAbility) => void--><!--Device-AbilityMonitor-onAbilityForeground?: (ability: UIAbility) => void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -119,6 +130,8 @@ Callback invoked when a WindowStage instance is created.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-AbilityMonitor-onWindowStageCreate?: (ability: UIAbility) => void--><!--Device-AbilityMonitor-onWindowStageCreate?: (ability: UIAbility) => void-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 ## onWindowStageDestroy
@@ -135,6 +148,8 @@ Callback invoked when the WindowStage instance is destroyed.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-AbilityMonitor-onWindowStageDestroy?: (ability: UIAbility) => void--><!--Device-AbilityMonitor-onWindowStageDestroy?: (ability: UIAbility) => void-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 ## onWindowStageRestore
@@ -150,6 +165,8 @@ Callback invoked when the page stack is restored for the target UIAbility during
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityMonitor-onWindowStageRestore?: (ability: UIAbility) => void--><!--Device-AbilityMonitor-onWindowStageRestore?: (ability: UIAbility) => void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 

@@ -15,6 +15,6 @@
 
 | Name | Description |
 | --- | --- |
-| [ToolEventType](arkts-ability-tooleventtype-e-sys.md) | Enum for query entity mode. |
+| [ToolEventType](arkts-ability-clitoolevent-tooleventtype-e-sys.md) | Enum for query entity mode. |
 <!--DelEnd-->
 

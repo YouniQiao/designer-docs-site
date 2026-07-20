@@ -14,17 +14,19 @@ Generates a border style object with the specified border style color for all bo
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-unnamed-export function borderStyles(all: BorderStyle): Edges<BorderStyle>--><!--Device-unnamed-export function borderStyles(all: BorderStyle): Edges<BorderStyle>-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| all | BorderStyle | Yes | Border style. |
+| all | [BorderStyle](arkts-arkui-enums-borderstyle-e.md) | Yes | Border style. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Edges&lt;BorderStyle&gt; | **borderStyles** object whose borders are all in the specified style. |
+| [Edges](arkts-arkui-graphics-edges-i.md)<BorderStyle> | **borderStyles** object whose borders are all in the specified style. |
 

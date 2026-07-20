@@ -1,0 +1,79 @@
+# switchInputMethod (System API)
+
+## Modules to Import
+
+```TypeScript
+import { inputMethod } from '@kit.IMEKit';
+```
+
+## switchInputMethod
+
+```TypeScript
+function switchInputMethod(bundleName: string, subtypeId?: string): Promise<void>
+```
+
+Switches to another input method. This API uses a promise to return the result.
+
+**Since:** 11
+
+**Required permissions:** ohos.permission.CONNECT_IME_ABILITY
+
+<!--Device-inputMethod-function switchInputMethod(bundleName: string, subtypeId?: string): Promise<void>--><!--Device-inputMethod-function switchInputMethod(bundleName: string, subtypeId?: string): Promise<void>-End-->
+
+**System capability:** SystemCapability.MiscServices.InputMethodFramework
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| bundleName | string | Yes | Bundle name of the target input method. |
+| subtypeId | string | No | Input method subtype. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | permissions check fails. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | not system application. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3.Parameter verification failed. |
+| [12800005](../errorcode-inputmethod-framework.md#12800005-configuration-persistence-error) | configuration persistence error. |
+| [12800008](../errorcode-inputmethod-framework.md#12800008-input-method-manager-service-error) | input method manager service error. Possible cause:a system error, such as null pointer, IPC exception. |
+
+**Example**
+
+```TypeScript
+import { InputMethodSubtype } from '@kit.IMEKit';
+
+async function switchInputMethodWithSubtype() {
+  // 1. Obtain the current input method.
+  const currentIme: inputMethod.InputMethodProperty = inputMethod.getCurrentInputMethod();
+  if (!currentIme) {
+    console.error("Failed to get current input method");
+    return;
+  }
+  // 2. Switch the input method.
+  await inputMethod.switchInputMethod(currentIme.name);
+  console.info('Succeeded in switching inputmethod.');
+  // 3. Obtain the current input method subtype.
+  const currentSubtype: InputMethodSubtype = inputMethod.getCurrentInputMethodSubtype();
+  if (!currentSubtype) {
+    console.error("Failed to get current input subtype");
+    return;
+  }
+  // 4. Switch the input method subtype.
+  await inputMethod.switchInputMethod(currentIme.name, currentSubtype.id);
+  console.info('Succeeded in switching inputmethod.');
+}
+
+switchInputMethodWithSubtype();
+
+```
+

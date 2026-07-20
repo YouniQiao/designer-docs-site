@@ -13,6 +13,9 @@ The ListItem component displays specific items in the list. It must be used toge
 > When this component is used with if/else or ForEach, or when the parent component is List or ListItemGroup,
 > its child components are created when it is laid out.
 
+## Child Components
+
+This component can contain a single child component.
 
 ## ListItem
 
@@ -29,6 +32,8 @@ Creates a ListItem component.
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 10.
+
+<!--Device-ListItemInterface-(value?: ListItemOptions): ListItemAttribute--><!--Device-ListItemInterface-(value?: ListItemOptions): ListItemAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -53,6 +58,8 @@ Creates a ListItem component.
 **Substitutes:** <!--SUBSTITUTE_API-->listItem/ListItemInterface<!--/SUBSTITUTE_API-->
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
+
+<!--Device-ListItemInterface-(value?: string): ListItemAttribute--><!--Device-ListItemInterface-(value?: string): ListItemAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

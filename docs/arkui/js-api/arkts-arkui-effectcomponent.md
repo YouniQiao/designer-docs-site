@@ -25,6 +25,8 @@ Creates an **EffectComponent** component.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-EffectComponentInterface-(): EffectComponentAttribute--><!--Device-EffectComponentInterface-(): EffectComponentAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **System API:** This is a system API.
@@ -35,13 +37,13 @@ Creates an **EffectComponent** component.
 EffectComponent(options?: EffectComponentOptions)
 ```
 
-Creates an effect drawing and combination component. If no parameter is passed or the parameter is
-EffectLayer.None, the background blur effect of child components is combined. If a parameter is specified, the
-current rendering layer is placed on a special layer.
+Creates an effect drawing and combination component. If no parameter is passed or the parameter is EffectLayer.None, the background blur effect of child components is combined. If a parameter is specified, the current rendering layer is placed on a special layer.
 
 **Since:** 20
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-EffectComponentInterface-(options?: EffectComponentOptions): EffectComponentAttribute--><!--Device-EffectComponentInterface-(options?: EffectComponentOptions): EffectComponentAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

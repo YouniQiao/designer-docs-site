@@ -1,0 +1,71 @@
+# stopDistributedHardware (System API)
+
+## Modules to Import
+
+```TypeScript
+import { hardwareManager } from '@kit.DistributedServiceKit';
+```
+
+## stopDistributedHardware
+
+```TypeScript
+function stopDistributedHardware(description: HardwareDescriptor): Promise<void>
+```
+
+Stops the distributed hardware service on the controlled device. This API uses a promise to return the result.
+
+**Since:** 11
+
+**Required permissions:** ohos.permission.ACCESS_DISTRIBUTED_HARDWARE
+
+<!--Device-hardwareManager-function stopDistributedHardware(description: HardwareDescriptor): Promise<void>--><!--Device-hardwareManager-function stopDistributedHardware(description: HardwareDescriptor): Promise<void>-End-->
+
+**System capability:** SystemCapability.DistributedHardware.DistributedHardwareFWK
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| description | [HardwareDescriptor](arkts-distributedservice-hardwaremanager-hardwaredescriptor-i-sys.md) | Yes | Hardware information. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission denied, non-system app called system api. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Input parameter error. |
+| 24200101 | The specified distributed hardware is not started. |
+| 24200102 | The specified source device is not connected. |
+
+**Example**
+
+```TypeScript
+import { hardwareManager } from '@kit.DistributedServiceKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+try {
+  let description: hardwareManager.HardwareDescriptor = {
+    type: 1,
+    srcNetworkId: '1111'
+  };
+  hardwareManager.stopDistributedHardware(description).then(() => {
+    console.info('stop distributed hardware successfully');
+  }).catch((error: BusinessError) => {
+    console.error('stop distributed hardware failed, cause:' + error);
+  })
+  console.info('stop distributed hardware successfully');
+} catch (error) {
+  console.error('stop distributed hardware failed:' + error);
+}
+
+```
+

@@ -14,6 +14,8 @@ Renames a file. This API returns the result synchronously.
 
 **Substitutes:** [fs:renameSync](arkts-corefile-file-fs-renamesync-f.md#renamesync-1)
 
+<!--Device-unnamed-declare function renameSync(oldPath: string, newPath: string): void--><!--Device-unnamed-declare function renameSync(oldPath: string, newPath: string): void-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**

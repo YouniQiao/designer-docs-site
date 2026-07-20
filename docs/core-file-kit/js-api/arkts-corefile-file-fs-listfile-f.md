@@ -15,15 +15,21 @@ declare function listFile(
 ): Promise<string[]>
 ```
 
-Lists the names of all files and directories in the current path. Filtering is supported. This API uses a promise to
-return the result.
+Lists the names of all files and directories in the current path. Filtering is supported. This API uses a promise to return the result.
 
-You can configure the **recursion** parameter in **options** to recursively list the relative paths of all files. The
-relative path starts with a slash (/).
+You can configure the **recursion** parameter in **options** to recursively list the relative paths of all files. The relative path starts with a slash (/).
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-unnamed-declare function listFile(
+  path: string,
+  options?: ListFileOptions
+): Promise<string[]>--><!--Device-unnamed-declare function listFile(
+  path: string,
+  options?: ListFileOptions
+): Promise<string[]>-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
@@ -32,13 +38,13 @@ relative path starts with a slash (/).
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Application sandbox path of the directory. |
-| options | ListFileOptions | No | Options for filtering files. The files are not filtered by default.<br>**Since:** 11 |
+| options | [ListFileOptions](arkts-corefile-file-fs-listfileoptions-i.md) | No | Options for filtering files. The files are not filtered by default.<br>**Since:** 11 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;string[]&gt; | Promise used to return the file name array, which is encoded in UTF-8 format bydefault. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string[]> | Promise used to return the file name array, which is encoded in UTF-8 format by default. |
 
 **Error codes:**
 
@@ -57,15 +63,15 @@ relative path starts with a slash (/).
 declare function listFile(path: string, callback: AsyncCallback<string[]>): void
 ```
 
-Lists the names of all files and directories in the current path. Filtering is supported. This API uses an
-asynchronous callback to return the result.
+Lists the names of all files and directories in the current path. Filtering is supported. This API uses an asynchronous callback to return the result.
 
-You can configure the **recursion** parameter in **options** to recursively list the relative paths of all files. The
-relative path starts with a slash (/).
+You can configure the **recursion** parameter in **options** to recursively list the relative paths of all files. The relative path starts with a slash (/).
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-unnamed-declare function listFile(path: string, callback: AsyncCallback<string[]>): void--><!--Device-unnamed-declare function listFile(path: string, callback: AsyncCallback<string[]>): void-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
@@ -74,7 +80,7 @@ relative path starts with a slash (/).
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Application sandbox path of the directory. |
-| callback | AsyncCallback&lt;string[]&gt; | Yes | Callback used to return the file names listed. The files are encoded inUTF-8 by default. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string[]> | Yes | Callback used to return the file names listed. The files are encoded in UTF-8 by default. |
 
 **Error codes:**
 
@@ -97,15 +103,23 @@ declare function listFile(
 ): void
 ```
 
-Lists the names of all files and directories in the current path. Filtering is supported. This API uses an
-asynchronous callback to return the result.
+Lists the names of all files and directories in the current path. Filtering is supported. This API uses an asynchronous callback to return the result.
 
-You can configure the **recursion** parameter in **options** to recursively list the relative paths of all files. The
-relative path starts with a slash (/).
+You can configure the **recursion** parameter in **options** to recursively list the relative paths of all files. The relative path starts with a slash (/).
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-unnamed-declare function listFile(
+  path: string,
+  options: ListFileOptions,
+  callback: AsyncCallback<string[]>
+): void--><!--Device-unnamed-declare function listFile(
+  path: string,
+  options: ListFileOptions,
+  callback: AsyncCallback<string[]>
+): void-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
@@ -114,8 +128,8 @@ relative path starts with a slash (/).
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Application sandbox path of the directory. |
-| options | ListFileOptions | Yes | Options for filtering files. The files are not filtered by default.<br>**Since:** 11 |
-| callback | AsyncCallback&lt;string[]&gt; | Yes | Callback used to return the file names listed. The files are encoded inUTF-8 by default. |
+| options | [ListFileOptions](arkts-corefile-file-fs-listfileoptions-i.md) | Yes | Options for filtering files. The files are not filtered by default.<br>**Since:** 11 |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string[]> | Yes | Callback used to return the file names listed. The files are encoded in UTF-8 by default. |
 
 **Error codes:**
 

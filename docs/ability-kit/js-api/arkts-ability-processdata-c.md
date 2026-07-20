@@ -1,13 +1,10 @@
 # ProcessData
 
-The module defines process data. If a lifecycle change listener is registered by calling
-[appManager.on('applicationState')](arkts-ability-on-f.md#on-1)
-, the
-[onProcessCreated](../../../../reference/apis-ability-kit/js-apis-inner-application-applicationStateObserver.md#applicationstateobserveronprocesscreated)
-callback in [ApplicationStateObserver](arkts-ability-applicationstateobserver-c.md) is invoked when the lifecycle of
-an application or ability changes.
+The module defines process data. If a lifecycle change listener is registered by calling [appManager.on('applicationState')](arkts-ability-appmanager-on-f.md#on-1), the [onProcessCreated](../../../../reference/apis-ability-kit/js-apis-inner-application-applicationStateObserver.md#applicationstateobserveronprocesscreated)callback in [ApplicationStateObserver](arkts-ability-applicationstateobserver-c.md) is invoked when the lifecycle of an application or ability changes.
 
 **Since:** 14
+
+<!--Device-unnamed-declare class ProcessData--><!--Device-unnamed-declare class ProcessData-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -23,6 +20,8 @@ Bundle name of the application.
 
 **Since:** 14
 
+<!--Device-ProcessData-bundleName: string--><!--Device-ProcessData-bundleName: string-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 ## isContinuousTask
@@ -36,6 +35,8 @@ Whether the task is a continuous task. **true** if yes, **false** otherwise.
 **Type:** boolean
 
 **Since:** 14
+
+<!--Device-ProcessData-isContinuousTask: boolean--><!--Device-ProcessData-isContinuousTask: boolean-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -51,6 +52,8 @@ Whether the process is a resident task. **true** if yes, **false** otherwise.
 
 **Since:** 14
 
+<!--Device-ProcessData-isKeepAlive: boolean--><!--Device-ProcessData-isKeepAlive: boolean-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 ## pid
@@ -64,6 +67,8 @@ Process ID.
 **Type:** number
 
 **Since:** 14
+
+<!--Device-ProcessData-pid: int--><!--Device-ProcessData-pid: int-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -89,6 +94,8 @@ Application state. The options are as follows:
 
 **Since:** 14
 
+<!--Device-ProcessData-state: int--><!--Device-ProcessData-state: int-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 ## uid
@@ -102,6 +109,8 @@ UID of the application.
 **Type:** number
 
 **Since:** 14
+
+<!--Device-ProcessData-uid: int--><!--Device-ProcessData-uid: int-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 

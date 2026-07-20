@@ -18,19 +18,21 @@ Obtains detailed attribute information of a file or directory. This API returns 
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-unnamed-declare function statSync(file: string | number): Stat--><!--Device-unnamed-declare function statSync(file: string | number): Stat-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| file | string \| number | Yes | Application sandbox path, URI, or FD of the file or directory.<br>**Note**: URIscan be passed since API version 22. |
+| file | string \| number | Yes | Application sandbox path, URI, or FD of the file or directory.<br>**Note**: URIs can be passed since API version 22. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Stat | Detailed information of a file or directory. |
+| [Stat](arkts-corefile-file-fs-stat-i.md) | Detailed information of a file or directory. |
 
 **Error codes:**
 

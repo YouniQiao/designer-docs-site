@@ -1,6 +1,6 @@
 # PluginComponent
 
-Provides plugin component.
+Defines PluginComponent Component.
 
 
 ## PluginComponent
@@ -9,10 +9,11 @@ Provides plugin component.
 PluginComponent(options: PluginComponentOptions)
 ```
 
-Called when setting the plugin.
-AnonyMous Object Rectification
+Called when setting the plugin.AnonyMous Object Rectification
 
 **Since:** 18
+
+<!--Device-PluginComponentInterface-(options: PluginComponentOptions): PluginComponentAttribute--><!--Device-PluginComponentInterface-(options: PluginComponentOptions): PluginComponentAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

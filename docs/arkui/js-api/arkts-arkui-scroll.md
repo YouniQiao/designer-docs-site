@@ -1,6 +1,6 @@
 # Scroll
 
-Provides interfaces for scrollable containers.
+Defines Scroll Component.
 
 
 ## Scroll
@@ -14,6 +14,8 @@ Called when a scrollable container is set.
 **Since:** 7
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-ScrollInterface-(scroller?: Scroller): ScrollAttribute--><!--Device-ScrollInterface-(scroller?: Scroller): ScrollAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

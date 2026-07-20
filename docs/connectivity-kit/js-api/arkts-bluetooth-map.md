@@ -4,6 +4,8 @@ Provides methods to accessing bluetooth MAP(Message Access Profile)-related capa
 
 **Since:** 11
 
+<!--Device-unnamed-declare namespace map--><!--Device-unnamed-declare namespace map-End-->
+
 **System capability:** SystemCapability.Communication.Bluetooth.Core
 
 ## Modules to Import
@@ -18,27 +20,27 @@ import { map } from '@kit.ConnectivityKit';
 
 | Name | Description |
 | --- | --- |
-| [createMapMseProfile](arkts-connectivity-createmapmseprofile-f.md#createmapmseprofile-1) | create the instance of MAP MSE profile. |
+| [createMapMseProfile](arkts-connectivity-map-createmapmseprofile-f.md#createmapmseprofile-1) | create the instance of MAP MSE profile. |
 
 <!--Del-->
 ### Interfaces（系统接口）
 
 | Name | Description |
 | --- | --- |
-| [MapMseProfile](arkts-connectivity-mapmseprofile-i-sys.md) | Manager MAP MSE profile. |
+| [MapMseProfile](arkts-connectivity-map-mapmseprofile-i-sys.md) | Manager MAP MSE profile. |
 <!--DelEnd-->
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [BaseProfile](arkts-connectivity-baseprofile-t.md) | Base interface of profile. |
+| [BaseProfile](arkts-connectivity-map-baseprofile-t.md) | Base interface of profile. |
 
 <!--Del-->
 ### Types（系统接口）
 
 | Name | Description |
 | --- | --- |
-| [AccessAuthorization](arkts-connectivity-accessauthorization-t-sys.md) | Indicate the phone book access authorization. |
+| [AccessAuthorization](arkts-connectivity-map-accessauthorization-t-sys.md) | Indicate the phone book access authorization. |
 <!--DelEnd-->
 

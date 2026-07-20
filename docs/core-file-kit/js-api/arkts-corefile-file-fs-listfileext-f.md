@@ -15,13 +15,19 @@ declare function listFileExt(
 ): Promise<string[]>
 ```
 
-Lists all file names in a directory. This API uses a promise to return the result.
-This API supports recursive listing of all file names and custom file name filtering.
-The returned result starts with a slash (/) and contains the subdirectory.
+Lists all file names in a directory. This API uses a promise to return the result.This API supports recursive listing of all file names and custom file name filtering.The returned result starts with a slash (/) and contains the subdirectory.
 
 **Since:** 26.0.0
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-unnamed-declare function listFileExt(
+  path: string,
+  options?: ListFileExtOptions
+): Promise<string[]>--><!--Device-unnamed-declare function listFileExt(
+  path: string,
+  options?: ListFileExtOptions
+): Promise<string[]>-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
@@ -30,13 +36,13 @@ The returned result starts with a slash (/) and contains the subdirectory.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Application sandbox path of the directory. |
-| options | ListFileExtOptions | No | Options for filtering files. The files are not filtered by default. |
+| options | [ListFileExtOptions](arkts-corefile-file-fs-listfileextoptions-i.md) | No | Options for filtering files. The files are not filtered by default. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;string[]&gt; | Promise used to return the file names listed. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string[]> | Promise used to return the file names listed. |
 
 **Error codes:**
 

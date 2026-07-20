@@ -1,0 +1,101 @@
+# publishReminder
+
+## Modules to Import
+
+```TypeScript
+import { reminderAgent } from '@kit.BackgroundTasksKit';
+```
+
+## publishReminder
+
+```TypeScript
+function publishReminder(reminderReq: ReminderRequest, callback: AsyncCallback<number>): void
+```
+
+Publishes a reminder through the reminder agent. This API uses an asynchronous callback to return the result. It can be called only when notification is enabled for the application through [Notification.requestEnableNotification](../../apis-notification-kit/arkts-apis/arkts-notification-notification-requestenablenotification-depr-f.md#requestenablenotification-1)
+
+**Since:** 7
+
+**Deprecated since:** 9
+
+**Substitutes:** [publishReminder](arkts-backgroundtasks-reminderagentmanager-publishreminder-f.md#publishreminder-1)
+
+**Required permissions:** ohos.permission.PUBLISH_AGENT_REMINDER
+
+<!--Device-reminderAgent-function publishReminder(reminderReq: ReminderRequest, callback: AsyncCallback<number>): void--><!--Device-reminderAgent-function publishReminder(reminderReq: ReminderRequest, callback: AsyncCallback<number>): void-End-->
+
+**System capability:** SystemCapability.Notification.ReminderAgent
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| reminderReq | [ReminderRequest](arkts-backgroundtasks-reminderagentmanager-reminderrequest-i.md) | Yes | Reminder to be published. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the published reminder's ID. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@ohos.base';
+import reminderAgent from '@ohos.reminderAgent';
+
+let timer:reminderAgent.ReminderRequestTimer = {
+  reminderType: reminderAgent.ReminderType.REMINDER_TYPE_TIMER,
+  triggerTimeInSeconds: 10
+}
+
+reminderAgent.publishReminder(timer, (err: BusinessError, reminderId: number) => {
+  console.info("callback, reminderId = " + reminderId);
+});
+
+```
+
+
+## publishReminder
+
+```TypeScript
+function publishReminder(reminderReq: ReminderRequest): Promise<number>
+```
+
+Publishes a reminder through the reminder agent. This API uses a promise to return the result. It can be called only when notification is enabled for the application through [Notification.requestEnableNotification](../../apis-notification-kit/arkts-apis/arkts-notification-notification-requestenablenotification-depr-f.md#requestenablenotification-1)
+
+**Since:** 7
+
+**Deprecated since:** 9
+
+**Substitutes:** [publishReminder](arkts-backgroundtasks-reminderagentmanager-publishreminder-f.md#publishreminder-1)
+
+**Required permissions:** ohos.permission.PUBLISH_AGENT_REMINDER
+
+<!--Device-reminderAgent-function publishReminder(reminderReq: ReminderRequest): Promise<number>--><!--Device-reminderAgent-function publishReminder(reminderReq: ReminderRequest): Promise<number>-End-->
+
+**System capability:** SystemCapability.Notification.ReminderAgent
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| reminderReq | [ReminderRequest](arkts-backgroundtasks-reminderagentmanager-reminderrequest-i.md) | Yes | Indicates the reminder instance to publish. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | reminder id. |
+
+**Example**
+
+```TypeScript
+import reminderAgent from '@ohos.reminderAgent';
+
+let timer:reminderAgent.ReminderRequestTimer = {
+  reminderType: reminderAgent.ReminderType.REMINDER_TYPE_TIMER,
+  triggerTimeInSeconds: 10
+}
+
+reminderAgent.publishReminder(timer).then((reminderId: number) => {
+  console.info("promise, reminderId = " + reminderId);
+});
+
+```
+

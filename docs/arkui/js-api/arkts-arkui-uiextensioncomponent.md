@@ -1,7 +1,6 @@
 # UIExtensionComponent
 
-Provide an interface for the UIExtensionComponent, which is used
-<br/>to render UI of a remote UIExtensionAbility
+Defines UIExtensionComponent Component.
 
 
 ## UIExtensionComponent
@@ -12,12 +11,17 @@ UIExtensionComponent(
   )
 ```
 
-Construct the UIExtensionComponent.<br/>
-Called when the UIExtensionComponent is used.
+Construct the UIExtensionComponent.<br/>Called when the UIExtensionComponent is used.
 
 **Since:** 11
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-UIExtensionComponentInterface-(
+    want: import('../api/options?: UIExtensionOptions
+  ): UIExtensionComponentAttribute--><!--Device-UIExtensionComponentInterface-(
+    want: import('../api/options?: UIExtensionOptions
+  ): UIExtensionComponentAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

@@ -8,6 +8,8 @@ In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-ap
 
 **Since:** 8
 
+<!--Device-unnamed-declare class ToggleAttribute extends CommonMethod<ToggleAttribute>--><!--Device-unnamed-declare class ToggleAttribute extends CommonMethod<ToggleAttribute>-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 ## contentModifier
@@ -24,13 +26,15 @@ Creates a content modifier.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-ToggleAttribute-contentModifier(modifier: ContentModifier<ToggleConfiguration>): ToggleAttribute--><!--Device-ToggleAttribute-contentModifier(modifier: ContentModifier<ToggleConfiguration>): ToggleAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| modifier | ContentModifier&lt;ToggleConfiguration&gt; | Yes | Content modifier to apply to the current component.<br>**modifier**: content modifier. You need a custom class to implement the **ContentModifier** API. |
+| modifier | [ContentModifier](arkts-arkui-common-contentmodifier-i.md)<ToggleConfiguration> | Yes | Content modifier to apply to the current component.<br>**modifier**: content modifier. You need a custom class to implement the **ContentModifier** API. |
 
 ## onChange
 
@@ -46,13 +50,15 @@ Triggered when the toggle status changes.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-ToggleAttribute-onChange(callback: (isOn: boolean) => void): ToggleAttribute--><!--Device-ToggleAttribute-onChange(callback: (isOn: boolean) => void): ToggleAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (isOn: boolean) =&gt; void | Yes |  |
+| callback | (isOn: boolean) => void | Yes |  |
 
 ## selectedColor
 
@@ -68,13 +74,15 @@ Sets the background color of the component when it is turned on.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-ToggleAttribute-selectedColor(value: ResourceColor): ToggleAttribute--><!--Device-ToggleAttribute-selectedColor(value: ResourceColor): ToggleAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ResourceColor | Yes | Background color of the component when it is turned on.<br>Default value:<br>When**ToggleType** is set to **Switch**, the default value is **$r('sys.color.ohos_id_color_emphasize')**.<br>When**ToggleType** is set to **Checkbox**, the default value is **$r('sys.color.ohos_id_color_emphasize')**.<br>When **ToggleType** is set to **Button**, the default value is **$r('sys.color.ohos_id_color_emphasize')** withthe opacity of **$r('sys.float.ohos_id_alpha_highlight_bg')**. |
+| value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Background color of the component when it is turned on.<br>Default value:<br>When **ToggleType** is set to **Switch**, the default value is **$r('sys.color.ohos_id_color_emphasize')**.<br>When **ToggleType** is set to **Checkbox**, the default value is **$r('sys.color.ohos_id_color_emphasize')**.<br>When **ToggleType** is set to **Button**, the default value is **$r('sys.color.ohos_id_color_emphasize')** with the opacity of **$r('sys.float.ohos_id_alpha_highlight_bg')**. |
 
 ## switchPointColor
 
@@ -82,8 +90,7 @@ Sets the background color of the component when it is turned on.
 switchPointColor(color: ResourceColor)
 ```
 
-Sets the color of the circular slider when the component is of the **Switch** type. This attribute is valid only
-when **type** is set to **ToggleType.Switch**.
+Sets the color of the circular slider when the component is of the **Switch** type. This attribute is valid only when **type** is set to **ToggleType.Switch**.
 
 **Since:** 8
 
@@ -91,13 +98,15 @@ when **type** is set to **ToggleType.Switch**.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-ToggleAttribute-switchPointColor(color: ResourceColor): ToggleAttribute--><!--Device-ToggleAttribute-switchPointColor(color: ResourceColor): ToggleAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| color | ResourceColor | Yes | Color of the circular slider when the component is of the **Switch** type.<br>Default value: **$r('sys.color.ohos_id_color_foreground_contrary')** |
+| color | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Color of the circular slider when the component is of the **Switch** type.<br>Default value: **$r('sys.color.ohos_id_color_foreground_contrary')** |
 
 ## switchStyle
 
@@ -105,8 +114,7 @@ when **type** is set to **ToggleType.Switch**.
 switchStyle(value: SwitchStyle)
 ```
 
-Sets the style for the component of the **Switch** type. This attribute is valid only when **type** is set to
-**ToggleType.Switch**.
+Sets the style for the component of the **Switch** type. This attribute is valid only when **type** is set to **ToggleType.Switch**.
 
 **Since:** 12
 
@@ -114,11 +122,13 @@ Sets the style for the component of the **Switch** type. This attribute is valid
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-ToggleAttribute-switchStyle(value: SwitchStyle): ToggleAttribute--><!--Device-ToggleAttribute-switchStyle(value: SwitchStyle): ToggleAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | SwitchStyle | Yes | Style of the component of the **Switch** type. |
+| value | [SwitchStyle](arkts-arkui-toggle-switchstyle-i.md) | Yes | Style of the component of the **Switch** type. |
 

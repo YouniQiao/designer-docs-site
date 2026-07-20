@@ -1,0 +1,34 @@
+# DistributedConfig
+
+Defines a struct for distributed configuration of a table.
+
+**Since:** 10
+
+<!--Device-relationalStore-interface DistributedConfig--><!--Device-relationalStore-interface DistributedConfig-End-->
+
+**System capability:** SystemCapability.DistributedDataManager.RelationalStore.Core
+
+## Modules to Import
+
+```TypeScript
+import { relationalStore } from '@kit.ArkData';
+```
+
+## references
+
+```TypeScript
+references?: Array<Reference>
+```
+
+Specifies the reference relationships between tables.
+
+**Type:** Array<Reference>
+
+**Since:** 11
+
+<!--Device-DistributedConfig-references?: Array<Reference>--><!--Device-DistributedConfig-references?: Array<Reference>-End-->
+
+**System capability:** SystemCapability.DistributedDataManager.RelationalStore.Core
+
+**System API:** This is a system API.
+

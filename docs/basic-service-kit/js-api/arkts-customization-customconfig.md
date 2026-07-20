@@ -4,6 +4,8 @@ This module provides APIs for applications to obtain custom configurations, such
 
 **Since:** 12
 
+<!--Device-unnamed-declare namespace customConfig--><!--Device-unnamed-declare namespace customConfig-End-->
+
 **System capability:** SystemCapability.Customization.CustomConfig
 
 ## Modules to Import
@@ -18,5 +20,5 @@ import { customConfig } from '@kit.BasicServicesKit';
 
 | Name | Description |
 | --- | --- |
-| [getChannelId](arkts-basicservices-getchannelid-f.md#getchannelid-1) | Obtains a pre-installed channel ID of this application. |
+| [getChannelId](arkts-basicservices-customconfig-getchannelid-f.md#getchannelid-1) | Obtains a pre-installed channel ID of this application. |
 

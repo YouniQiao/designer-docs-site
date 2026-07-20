@@ -1,0 +1,80 @@
+# isRamConstrainedDevice
+
+## isRamConstrainedDevice
+
+```TypeScript
+function isRamConstrainedDevice(): Promise<boolean>
+```
+
+Checks whether the current device is a RAM-constrained device (a device with severely limited memory resources).This API uses a promise to return the result.
+
+**Since:** 7
+
+**Deprecated since:** 9
+
+**Substitutes:** isRamConstrainedDevice
+
+<!--Device-appManager-function isRamConstrainedDevice(): Promise<boolean>--><!--Device-appManager-function isRamConstrainedDevice(): Promise<boolean>-End-->
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.Core
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the API call result and the result indicating whether the device is RAM-constrained. You can perform error handling or custom processing in this callback. **true** if the device is RAM  -constrained, **false** otherwise. |
+
+**Example**
+
+```TypeScript
+import appManager from '@ohos.application.appManager';
+import { BusinessError } from '@ohos.base';
+
+appManager.isRamConstrainedDevice().then((data) => {
+  console.info(`The result of isRamConstrainedDevice is: ${JSON.stringify(data)}`);
+}).catch((error: BusinessError) => {
+  console.error(`error: ${JSON.stringify(error)}`);
+});
+
+```
+
+
+## isRamConstrainedDevice
+
+```TypeScript
+function isRamConstrainedDevice(callback: AsyncCallback<boolean>): void
+```
+
+Checks whether the current device is a RAM-constrained device (a device with severely limited memory resources).This API uses an asynchronous callback to return the result.
+
+**Since:** 7
+
+**Deprecated since:** 9
+
+**Substitutes:** isRamConstrainedDevice
+
+<!--Device-appManager-function isRamConstrainedDevice(callback: AsyncCallback<boolean>): void--><!--Device-appManager-function isRamConstrainedDevice(callback: AsyncCallback<boolean>): void-End-->
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the API call result and the result indicating whether the device is RAM-constrained. You can perform error handling or custom processing in this callback.**true** if the device is RAM-constrained, **false** otherwise. |
+
+**Example**
+
+```TypeScript
+import appManager from '@ohos.application.appManager';
+
+appManager.isRamConstrainedDevice((error, data) => {
+  if (error && error.code !== 0) {
+    console.error(`isRamConstrainedDevice fail, error: ${JSON.stringify(error)}`);
+  } else {
+    console.info(`The result of isRamConstrainedDevice is: ${JSON.stringify(data)}`);
+  }
+});
+
+```
+

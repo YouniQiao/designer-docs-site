@@ -1,0 +1,60 @@
+# unsubscribeReminderState
+
+## Modules to Import
+
+```TypeScript
+import { reminderAgentManager } from '@kit.BackgroundTasksKit';
+```
+
+## unsubscribeReminderState
+
+```TypeScript
+function unsubscribeReminderState(callback?: Callback<Array<ReminderState>>): Promise<void>
+```
+
+Unsubscribes from agent-powered reminder state changes. This API uses a promise to return the result.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-reminderAgentManager-function unsubscribeReminderState(callback?: Callback<Array<ReminderState>>): Promise<void>--><!--Device-reminderAgentManager-function unsubscribeReminderState(callback?: Callback<Array<ReminderState>>): Promise<void>-End-->
+
+**System capability:** SystemCapability.Notification.ReminderAgent
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<ReminderState>> | No | Callback used to return the result. If the **callback** parameter is not passed, all subscriptions are canceled. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [1700007](../../apis-backgroundtasks-kit/errorcode-reminderAgentManager.md#1700007-invalid-parameter) | If the input parameter is not valid parameter. |
+
+**Example**
+
+```TypeScript
+import { reminderAgentManager } from '@kit.BackgroundTasksKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+function reminderStateCallback(states: Array<reminderAgentManager.ReminderState>) {
+  console.info('length is : ' + states.length);
+}
+
+reminderAgentManager.unsubscribeReminderState(reminderStateCallback).then(() => {
+  console.info('unsubscribe succeed');
+}).catch((err: BusinessError) => {
+  console.error('promise err code:' + err.code + ' message:' + err.message);
+});
+
+```
+

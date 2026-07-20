@@ -1,11 +1,10 @@
 # SystemSoundPlayer
 
-Implements a system sound player that provides functions for loading, unloading, playing system sounds.
-Before using these functions, application must call
-[createSystemSoundPlayer](#systemSoundManager.createSystemSoundPlayer) to create a
-SystemSoundPlayer instance first.
+Implements a system sound player that provides functions for loading, unloading, playing system sounds.Before using these functions, application must call [createSystemSoundPlayer](#systemSoundManager.createSystemSoundPlayer) to create a SystemSoundPlayer instance first.
 
 **Since:** 23
+
+<!--Device-unnamed-export interface SystemSoundPlayer--><!--Device-unnamed-export interface SystemSoundPlayer-End-->
 
 **System capability:** SystemCapability.Multimedia.SystemSound.Core
 
@@ -21,6 +20,8 @@ Loads a system sound.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-SystemSoundPlayer-load(soundType: systemSoundManager.SystemSoundType): Promise<void>--><!--Device-SystemSoundPlayer-load(soundType: systemSoundManager.SystemSoundType): Promise<void>-End-->
+
 **System capability:** SystemCapability.Multimedia.SystemSound.Core
 
 **Parameters:**
@@ -33,7 +34,7 @@ Loads a system sound.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -55,6 +56,8 @@ Plays a system sound.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-SystemSoundPlayer-play(soundType: systemSoundManager.SystemSoundType): Promise<void>--><!--Device-SystemSoundPlayer-play(soundType: systemSoundManager.SystemSoundType): Promise<void>-End-->
+
 **System capability:** SystemCapability.Multimedia.SystemSound.Core
 
 **Parameters:**
@@ -67,7 +70,7 @@ Plays a system sound.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -89,13 +92,15 @@ Releases this system sound player instance.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-SystemSoundPlayer-release(): Promise<void>--><!--Device-SystemSoundPlayer-release(): Promise<void>-End-->
+
 **System capability:** SystemCapability.Multimedia.SystemSound.Core
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -115,6 +120,8 @@ Unloads a system sound that has been loaded before.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-SystemSoundPlayer-unload(soundType: systemSoundManager.SystemSoundType): Promise<void>--><!--Device-SystemSoundPlayer-unload(soundType: systemSoundManager.SystemSoundType): Promise<void>-End-->
+
 **System capability:** SystemCapability.Multimedia.SystemSound.Core
 
 **Parameters:**
@@ -127,7 +134,7 @@ Unloads a system sound that has been loaded before.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 

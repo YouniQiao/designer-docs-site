@@ -1,0 +1,72 @@
+# GlobalScope
+
+Implements the running environment of the Worker thread. The GlobalScope class inherits from WorkerEventTarget.
+
+**Inheritance/Implementation:** GlobalScope extends [WorkerEventTarget](arkts-arkts-worker-workereventtarget-i.md)
+
+**Since:** 9
+
+<!--Device-unnamed-declare interface GlobalScope extends WorkerEventTarget--><!--Device-unnamed-declare interface GlobalScope extends WorkerEventTarget-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+## Modules to Import
+
+```TypeScript
+import { MessageEvents, PostMessageOptions, MessageEvent, Priority, WorkerEventTarget, ThreadWorkerPriority, ThreadWorkerGlobalScope, DedicatedWorkerGlobalScope, ErrorEvent, Event, EventListener, WorkerOptions, EventTarget, WorkerEventListener } from '@kit.ArkTS';
+```
+
+## name
+
+```TypeScript
+readonly name: string
+```
+
+Worker instance specified when there is a new Worker instance.
+
+**Type:** string
+
+**Since:** 9
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-GlobalScope-readonly name: string--><!--Device-GlobalScope-readonly name: string-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+## onerror
+
+```TypeScript
+onerror?: (ev: ErrorEvent) => void
+```
+
+Called when an exception occurs during worker execution. The event handler is executed in the Worker thread.In the callback function, the ev type is ErrorEvent, indicating the received abnormal data.
+
+**Type:** (ev: ErrorEvent) => void
+
+**Since:** 9
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-GlobalScope-onerror?: (ev: ErrorEvent) => void--><!--Device-GlobalScope-onerror?: (ev: ErrorEvent) => void-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+## self
+
+```TypeScript
+readonly self: GlobalScope & typeof globalThis
+```
+
+GlobalScope itself.
+
+**Type:** GlobalScope & typeof globalThis
+
+**Since:** 9
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-GlobalScope-readonly self: GlobalScope & typeof globalThis--><!--Device-GlobalScope-readonly self: GlobalScope & typeof globalThis-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+

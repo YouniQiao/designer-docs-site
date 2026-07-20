@@ -1,0 +1,35 @@
+# getAbilityDelegator
+
+## getAbilityDelegator
+
+```TypeScript
+function getAbilityDelegator(): AbilityDelegator
+```
+
+Obtains the **AbilityDelegator** object of the application.
+
+**Since:** 8
+
+**Deprecated since:** 9
+
+**Substitutes:** [getAbilityDelegator](arkts-test-abilitydelegatorregistry-getabilitydelegator-f.md#getabilitydelegator-1)
+
+<!--Device-abilityDelegatorRegistry-function getAbilityDelegator(): AbilityDelegator--><!--Device-abilityDelegatorRegistry-function getAbilityDelegator(): AbilityDelegator-End-->
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.Core
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [AbilityDelegator](arkts-test-abilitydelegatorregistry-abilitydelegator-t.md) | [AbilityDelegator](../../apis-ability-kit/arkts-apis/arkts-ability-abilitydelegator-i.md) object,which can be used to schedule functions related to the test framework. |
+
+**Example**
+
+```TypeScript
+import AbilityDelegatorRegistry from '@ohos.application.abilityDelegatorRegistry';
+
+let abilityDelegator = AbilityDelegatorRegistry.getAbilityDelegator();
+
+```
+

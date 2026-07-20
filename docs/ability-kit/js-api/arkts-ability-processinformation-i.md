@@ -1,10 +1,10 @@
 # ProcessInformation
 
-The module defines the process information. The information can be obtained through
-[getRunningProcessInformation](arkts-ability-getrunningprocessinformation-f.md#getrunningprocessinformation-1) of
-appManager.
+The module defines the process information. The information can be obtained through [getRunningProcessInformation](arkts-ability-appmanager-getrunningprocessinformation-f.md#getrunningprocessinformation-1) of appManager.
 
 **Since:** 9
+
+<!--Device-unnamed-export interface ProcessInformation--><!--Device-unnamed-export interface ProcessInformation-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -21,6 +21,8 @@ Index of an application clone.
 **Since:** 12
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-ProcessInformation-appCloneIndex?: int--><!--Device-ProcessInformation-appCloneIndex?: int-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -40,6 +42,8 @@ Names of all running bundles in the process.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-ProcessInformation-bundleNames: Array<string>--><!--Device-ProcessInformation-bundleNames: Array<string>-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 ## bundleType
@@ -56,6 +60,8 @@ Type of the bundle running in the process.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-ProcessInformation-bundleType: bundleManager.BundleType--><!--Device-ProcessInformation-bundleType: bundleManager.BundleType-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 ## isPreload
@@ -66,7 +72,7 @@ isPreload?: boolean
 
 Indicates whether the process is in the preload state.
 
-- `true`: The process is currently in the preload state.
+- `true`: The process is currently in the preload state.  
 - `false`: The process is either not a preload process, or its preload state has been consumed.
 
 **Type:** boolean
@@ -76,6 +82,8 @@ Indicates whether the process is in the preload state.
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+<!--Device-ProcessInformation-isPreload?: boolean--><!--Device-ProcessInformation-isPreload?: boolean-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -95,6 +103,8 @@ Process ID.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-ProcessInformation-pid: int--><!--Device-ProcessInformation-pid: int-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 ## processName
@@ -113,6 +123,8 @@ Process name.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-ProcessInformation-processName: string--><!--Device-ProcessInformation-processName: string-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 ## state
@@ -128,6 +140,8 @@ Running status of the process.
 **Since:** 10
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-ProcessInformation-state: appManager.ProcessState--><!--Device-ProcessInformation-state: appManager.ProcessState-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -146,6 +160,8 @@ UID of the application.
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-ProcessInformation-uid: int--><!--Device-ProcessInformation-uid: int-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 

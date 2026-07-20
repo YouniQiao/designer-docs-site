@@ -14,6 +14,8 @@ Checks whether this process can access a file. This API uses a promise to return
 
 **Substitutes:** [fs:access](arkts-corefile-file-fs-access-f.md#access-1)
 
+<!--Device-unnamed-declare function access(path: string, mode?: number): Promise<void>--><!--Device-unnamed-declare function access(path: string, mode?: number): Promise<void>-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
@@ -21,13 +23,13 @@ Checks whether this process can access a file. This API uses a promise to return
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Application sandbox path of the file. |
-| mode | number | No | Options for accessing the file. You can specify multiple options, separated with a bitwiseOR operator (\|). The default value is **0**.<br>The options are as follows:<br>- **0**: Check whether the fileexists.<br>- **1**: Check whether the process has the execute permission on the file.<br>- **2**: Check whetherthe process has the write permission on the file.<br>- **4**: Check whether the process has the read permissionon the file. |
+| mode | number | No | Options for accessing the file. You can specify multiple options, separated with a bitwise OR operator (\|). The default value is **0**.<br>The options are as follows:<br>- **0**: Check whether the file exists.<br>- **1**: Check whether the process has the execute permission on the file.<br>- **2**: Check whether the process has the write permission on the file.<br>- **4**: Check whether the process has the read permission on the file. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 
 ## access
@@ -44,6 +46,8 @@ Checks whether this process can access a file. This API uses an asynchronous cal
 
 **Substitutes:** [fs:access](arkts-corefile-file-fs-access-f.md#access-1)
 
+<!--Device-unnamed-declare function access(path: string, callback: AsyncCallback<void>): void--><!--Device-unnamed-declare function access(path: string, callback: AsyncCallback<void>): void-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
@@ -51,7 +55,7 @@ Checks whether this process can access a file. This API uses an asynchronous cal
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Application sandbox path of the file. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback invoked when the file is asynchronously checked. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback invoked when the file is asynchronously checked. |
 
 
 ## access
@@ -68,6 +72,8 @@ Checks whether this process can access a file. This API uses an asynchronous cal
 
 **Substitutes:** [fs:access](arkts-corefile-file-fs-access-f.md#access-1)
 
+<!--Device-unnamed-declare function access(path: string, mode: number, callback: AsyncCallback<void>): void--><!--Device-unnamed-declare function access(path: string, mode: number, callback: AsyncCallback<void>): void-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
@@ -75,6 +81,6 @@ Checks whether this process can access a file. This API uses an asynchronous cal
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Application sandbox path of the file. |
-| mode | number | Yes | Options for accessing the file. You can specify multiple options, separated with a bitwiseOR operator (\|). The default value is **0**.<br>The options are as follows:<br>- **0**: Check whether the fileexists.<br>- **1**: Check whether the process has the execute permission on the file.<br>- **2**: Check whetherthe process has the write permission on the file.<br>- **4**: Check whether the process has the read permissionon the file. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback invoked when the file is asynchronously checked. |
+| mode | number | Yes | Options for accessing the file. You can specify multiple options, separated with a bitwise OR operator (\|). The default value is **0**.<br>The options are as follows:<br>- **0**: Check whether the file exists.<br>- **1**: Check whether the process has the execute permission on the file.<br>- **2**: Check whether the process has the write permission on the file.<br>- **4**: Check whether the process has the read permission on the file. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback invoked when the file is asynchronously checked. |
 

@@ -4,6 +4,8 @@ This module provides system focus modes and Do Not Disturb data access abilities
 
 **Since:** 23
 
+<!--Device-unnamed-declare namespace intelligentScene--><!--Device-unnamed-declare namespace intelligentScene-End-->
+
 **System capability:** SystemCapability.Applications.IntelligentScene
 
 ## Modules to Import
@@ -18,6 +20,6 @@ import { intelligentScene } from '@kit.BasicServicesKit';
 
 | Name | Description |
 | --- | --- |
-| [isDoNotDisturbEnabled](arkts-basicservices-isdonotdisturbenabled-f.md#isdonotdisturbenabled-1) | Checks whether Do Not Disturb is enabled on this device.The Do Not Disturb state defines if notifications are allowed to interruptthe user (e.g. via sound & vibration) and is applied globally. |
-| [isNotifyAllowedInDoNotDisturb](arkts-basicservices-isnotifyallowedindonotdisturb-f.md#isnotifyallowedindonotdisturb-1) | Checks whether calling bundle is allow notify(e.g. sound & vibration) when systemDo Not Disturb is on. |
+| [isDoNotDisturbEnabled](arkts-basicservices-intelligentscene-isdonotdisturbenabled-f.md#isdonotdisturbenabled-1) | Checks whether Do Not Disturb is enabled on this device.The Do Not Disturb state defines if notifications are allowed to interrupt the user (e.g. via sound & vibration) and is applied globally. |
+| [isNotifyAllowedInDoNotDisturb](arkts-basicservices-intelligentscene-isnotifyallowedindonotdisturb-f.md#isnotifyallowedindonotdisturb-1) | Checks whether calling bundle is allow notify(e.g. sound & vibration) when system Do Not Disturb is on. |
 

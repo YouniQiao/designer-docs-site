@@ -4,6 +4,8 @@ Defines a vertical domain panel manager.
 
 **Since:** 20
 
+<!--Device-unnamed-declare namespace verticalPanelManager--><!--Device-unnamed-declare namespace verticalPanelManager-End-->
+
 **System capability:** SystemCapability.Ability.AppExtension.VerticalPanel
 
 **System API:** This is a system API.
@@ -21,7 +23,7 @@ import { verticalPanelManager } from '@kit.AbilityKit';
 
 | Name | Description |
 | --- | --- |
-| [startVerticalPanel](arkts-ability-startverticalpanel-f-sys.md#startverticalpanel-1) | Starts the vertical domain picker with panel config.If the target ability is visible, you can start the target ability; If the target ability is invisible,you need to apply for permission:ohos.permission.START_INVISIBLE_ABILITY to start target invisible ability.If the caller application is in the background, it is not allowed to call this interface. |
+| [startVerticalPanel](arkts-ability-verticalpanelmanager-startverticalpanel-f-sys.md#startverticalpanel-1) | Starts the vertical domain picker with panel config.If the target ability is visible, you can start the target ability; If the target ability is invisible,you need to apply for permission:ohos.permission.START_INVISIBLE_ABILITY to start target invisible ability.If the caller application is in the background, it is not allowed to call this interface. |
 <!--DelEnd-->
 
 <!--Del-->
@@ -29,8 +31,8 @@ import { verticalPanelManager } from '@kit.AbilityKit';
 
 | Name | Description |
 | --- | --- |
-| [PanelConfig](arkts-ability-panelconfig-i-sys.md) | Indicates the panel config |
-| [PanelStartCallback](arkts-ability-panelstartcallback-i-sys.md) | The callback of start vertical panel. |
+| [PanelConfig](arkts-ability-verticalpanelmanager-panelconfig-i-sys.md) | Indicates the panel config |
+| [PanelStartCallback](arkts-ability-verticalpanelmanager-panelstartcallback-i-sys.md) | The callback of start vertical panel. |
 <!--DelEnd-->
 
 <!--Del-->
@@ -38,7 +40,7 @@ import { verticalPanelManager } from '@kit.AbilityKit';
 
 | Name | Description |
 | --- | --- |
-| [VerticalType](arkts-ability-verticaltype-e-sys.md) | Provides vertical type definition. |
+| [VerticalType](arkts-ability-verticalpanelmanager-verticaltype-e-sys.md) | Provides vertical type definition. |
 <!--DelEnd-->
 
 <!--Del-->

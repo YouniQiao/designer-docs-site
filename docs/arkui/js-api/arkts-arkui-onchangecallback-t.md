@@ -12,6 +12,8 @@ Callback function when operate the checkbox/switch/radio.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 
+<!--Device-unnamed-declare type OnChangeCallback = (value: boolean) => void--><!--Device-unnamed-declare type OnChangeCallback = (value: boolean) => void-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**

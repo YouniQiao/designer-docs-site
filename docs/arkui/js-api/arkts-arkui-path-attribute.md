@@ -1,10 +1,12 @@
 # Path properties/events
 
-In addition to the [universal attributes](arkts-arkui-commonmethod-c.md), the following attributes are supported.
+In addition to the [universal attributes](arkts-arkui-common-commonmethod-c.md), the following attributes are supported.
 
 **Inheritance/Implementation:** PathAttribute extends [CommonShapeMethod<PathAttribute>](CommonShapeMethod<PathAttribute>)
 
 **Since:** 7
+
+<!--Device-unnamed-declare class PathAttribute extends CommonShapeMethod<PathAttribute>--><!--Device-unnamed-declare class PathAttribute extends CommonShapeMethod<PathAttribute>-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -14,9 +16,7 @@ In addition to the [universal attributes](arkts-arkui-commonmethod-c.md), the fo
 commands(value: ResourceStr)
 ```
 
-Sets a string of path commands that comply with the
-[SVG path syntax](../../../../reference/apis-arkui/arkui-ts/ts-drawing-components-path.md#svg-path-syntax). The unit
-is px. For details about how to convert pixel units, see [Pixel Units](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md).
+Sets a string of path commands that comply with the [SVG path syntax](../../../../reference/apis-arkui/arkui-ts/ts-drawing-components-path.md#svg-path-syntax). The unit is px. For details about how to convert pixel units, see [Pixel Units](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md).
 
 **Since:** 7
 
@@ -24,11 +24,13 @@ is px. For details about how to convert pixel units, see [Pixel Units](../../api
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-PathAttribute-commands(value: ResourceStr): PathAttribute--><!--Device-PathAttribute-commands(value: ResourceStr): PathAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ResourceStr | Yes | Path for drawing a line.<br>The default value is an empty string.<br>Default unit:px<br>The **undefined** and **null** values are invalid and treated as the default value.<br>**Since:** 20 |
+| value | [ResourceStr](../arkts-apis/arkts-arkui-resourcestr-t.md) | Yes | Path for drawing a line.<br>The default value is an empty string.<br>Default unit:px<br>The **undefined** and **null** values are invalid and treated as the default value.<br>**Since:** 20 |
 

@@ -1,16 +1,16 @@
 # InputMethodExtensionContext
 
-The **InputMethodExtensionContext** module, inherited from **ExtensionContext**, provides context for
-**InputMethodExtension** abilities. You can use the APIs of this module to start, terminate, connect, and disconnect
-abilities.
+The **InputMethodExtensionContext** module, inherited from **ExtensionContext**, provides context for **InputMethodExtension** abilities. You can use the APIs of this module to start, terminate, connect, and disconnect abilities.
 
-> **NOTE**
->
+> **NOTE**  
+>  
 > - The APIs of this module can be used only in the stage model.
 
 **Inheritance/Implementation:** InputMethodExtensionContext extends [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md)
 
 **Since:** 9
+
+<!--Device-unnamed-declare class InputMethodExtensionContext extends ExtensionContext--><!--Device-unnamed-declare class InputMethodExtensionContext extends ExtensionContext-End-->
 
 **System capability:** SystemCapability.MiscServices.InputMethodFramework
 
@@ -34,6 +34,8 @@ Connects this ability to a ServiceExtensionAbility.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-InputMethodExtensionContext-connectAbility(want: Want, options: ConnectOptions): number--><!--Device-InputMethodExtensionContext-connectAbility(want: Want, options: ConnectOptions): number-End-->
+
 **System capability:** SystemCapability.MiscServices.InputMethodFramework
 
 **System API:** This is a system API.
@@ -42,8 +44,8 @@ Connects this ability to a ServiceExtensionAbility.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want information about the target ability, such as the ability name and bundle name. |
-| options | ConnectOptions | Yes | Callback used to return the information indicating that the connection issuccessful, interrupted, or failed. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target ability, such as the ability name and bundle name. |
+| options | [ConnectOptions](../../apis-ability-kit/arkts-apis/arkts-ability-ability-connectoptions-t.md) | Yes | Callback used to return the information indicating that the connection is successful, interrupted, or failed. |
 
 **Return value:**
 
@@ -83,6 +85,8 @@ Connects to a ServiceExtensionAbility with a specified account.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-InputMethodExtensionContext-connectAbilityWithAccount(want: Want, accountId: number): number--><!--Device-InputMethodExtensionContext-connectAbilityWithAccount(want: Want, accountId: number): number-End-->
+
 **System capability:** SystemCapability.MiscServices.InputMethodFramework
 
 **System API:** This is a system API.
@@ -91,7 +95,7 @@ Connects to a ServiceExtensionAbility with a specified account.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want information about the target ability. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target ability. |
 | accountId | number | Yes | ID of the target system account. |
 
 **Return value:**
@@ -132,6 +136,8 @@ Connects this ability to a ServiceExtensionAbility.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-InputMethodExtensionContext-connectServiceExtensionAbility(want: Want, options: ConnectOptions): number--><!--Device-InputMethodExtensionContext-connectServiceExtensionAbility(want: Want, options: ConnectOptions): number-End-->
+
 **System capability:** SystemCapability.MiscServices.InputMethodFramework
 
 **System API:** This is a system API.
@@ -140,8 +146,8 @@ Connects this ability to a ServiceExtensionAbility.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want information about the target ability, such as the ability name and bundle name. |
-| options | ConnectOptions | Yes | Callback used to return the information indicating that the connection issuccessful, interrupted, or failed. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target ability, such as the ability name and bundle name. |
+| options | [ConnectOptions](../../apis-ability-kit/arkts-apis/arkts-ability-ability-connectoptions-t.md) | Yes | Callback used to return the information indicating that the connection is successful, interrupted, or failed. |
 
 **Return value:**
 
@@ -171,14 +177,15 @@ Connects this ability to a ServiceExtensionAbility.
 disconnectAbility(connection: number, callback: AsyncCallback<void>): void
 ```
 
-Disconnects this ability from a ServiceExtensionAbility and after the successful disconnection, sets the remote
-object returned upon the connection to void. This API uses an asynchronous callback to return the result.
+Disconnects this ability from a ServiceExtensionAbility and after the successful disconnection, sets the remote object returned upon the connection to void. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
 **Deprecated since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-InputMethodExtensionContext-disconnectAbility(connection: number, callback: AsyncCallback<void>): void--><!--Device-InputMethodExtensionContext-disconnectAbility(connection: number, callback: AsyncCallback<void>): void-End-->
 
 **System capability:** SystemCapability.MiscServices.InputMethodFramework
 
@@ -189,7 +196,7 @@ object returned upon the connection to void. This API uses an asynchronous callb
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | connection | number | Yes | Number returned after **connectServiceExtensionAbility** is called. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If disconnection is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If disconnection is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -205,14 +212,15 @@ object returned upon the connection to void. This API uses an asynchronous callb
 disconnectAbility(connection: number): Promise<void>
 ```
 
-Disconnects this ability from a ServiceExtensionAbility and after the successful disconnection, sets the remote
-object returned upon the connection to void. This API uses a promise to return the result.
+Disconnects this ability from a ServiceExtensionAbility and after the successful disconnection, sets the remote object returned upon the connection to void. This API uses a promise to return the result.
 
 **Since:** 9
 
 **Deprecated since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-InputMethodExtensionContext-disconnectAbility(connection: number): Promise<void>--><!--Device-InputMethodExtensionContext-disconnectAbility(connection: number): Promise<void>-End-->
 
 **System capability:** SystemCapability.MiscServices.InputMethodFramework
 
@@ -228,7 +236,7 @@ object returned upon the connection to void. This API uses a promise to return t
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -244,15 +252,15 @@ object returned upon the connection to void. This API uses a promise to return t
 disconnectServiceExtensionAbility(connection: number, callback: AsyncCallback<void>): void
 ```
 
-Disconnects this ability from a ServiceExtensionAbility and after the successful disconnection, sets the remote
-object returned upon the connection to void. This API can be called only on the main thread. This API uses an
-asynchronous callback to return the result.
+Disconnects this ability from a ServiceExtensionAbility and after the successful disconnection, sets the remote object returned upon the connection to void. This API can be called only on the main thread. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
 **Deprecated since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-InputMethodExtensionContext-disconnectServiceExtensionAbility(connection: number, callback: AsyncCallback<void>): void--><!--Device-InputMethodExtensionContext-disconnectServiceExtensionAbility(connection: number, callback: AsyncCallback<void>): void-End-->
 
 **System capability:** SystemCapability.MiscServices.InputMethodFramework
 
@@ -263,7 +271,7 @@ asynchronous callback to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | connection | number | Yes | Number returned after **connectServiceExtensionAbility** is called. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If disconnection is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If disconnection is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -279,15 +287,15 @@ asynchronous callback to return the result.
 disconnectServiceExtensionAbility(connection: number): Promise<void>
 ```
 
-Disconnects this ability from a ServiceExtensionAbility and after the successful disconnection, sets the remote
-object returned upon the connection to void. This API can be called only on the main thread. This API uses a
-promise to return the result.
+Disconnects this ability from a ServiceExtensionAbility and after the successful disconnection, sets the remote object returned upon the connection to void. This API can be called only on the main thread. This API uses a promise to return the result.
 
 **Since:** 9
 
 **Deprecated since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-InputMethodExtensionContext-disconnectServiceExtensionAbility(connection: number): Promise<void>--><!--Device-InputMethodExtensionContext-disconnectServiceExtensionAbility(connection: number): Promise<void>-End-->
 
 **System capability:** SystemCapability.MiscServices.InputMethodFramework
 
@@ -303,7 +311,7 @@ promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -329,6 +337,8 @@ Starts an ability with a specified account. This API uses an asynchronous callba
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-InputMethodExtensionContext-startAbilityWithAccount(want: Want, accountId: number, callback: AsyncCallback<void>): void--><!--Device-InputMethodExtensionContext-startAbilityWithAccount(want: Want, accountId: number, callback: AsyncCallback<void>): void-End-->
+
 **System capability:** SystemCapability.MiscServices.InputMethodFramework
 
 **System API:** This is a system API.
@@ -337,9 +347,9 @@ Starts an ability with a specified account. This API uses an asynchronous callba
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want information about the target ability. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target ability. |
 | accountId | number | Yes | ID of the target system account. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the starting is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the starting is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -380,6 +390,8 @@ Starts an ability with a specified account. This API uses a promise to return th
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-InputMethodExtensionContext-startAbilityWithAccount(want: Want, accountId: number): Promise<void>--><!--Device-InputMethodExtensionContext-startAbilityWithAccount(want: Want, accountId: number): Promise<void>-End-->
+
 **System capability:** SystemCapability.MiscServices.InputMethodFramework
 
 **System API:** This is a system API.
@@ -388,14 +400,14 @@ Starts an ability with a specified account. This API uses a promise to return th
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want information about the target ability. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target ability. |
 | accountId | number | Yes | ID of the target system account. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -436,6 +448,8 @@ Destroys this input method extension. This API uses an asynchronous callback to 
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-InputMethodExtensionContext-terminateSelf(callback: AsyncCallback<void>): void--><!--Device-InputMethodExtensionContext-terminateSelf(callback: AsyncCallback<void>): void-End-->
+
 **System capability:** SystemCapability.MiscServices.InputMethodFramework
 
 **System API:** This is a system API.
@@ -444,7 +458,7 @@ Destroys this input method extension. This API uses an asynchronous callback to 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 ## terminateSelf
 
@@ -462,6 +476,8 @@ Destroys this input method extension. This API uses a promise to return the resu
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-InputMethodExtensionContext-terminateSelf(): Promise<void>--><!--Device-InputMethodExtensionContext-terminateSelf(): Promise<void>-End-->
+
 **System capability:** SystemCapability.MiscServices.InputMethodFramework
 
 **System API:** This is a system API.
@@ -470,5 +486,5 @@ Destroys this input method extension. This API uses a promise to return the resu
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 

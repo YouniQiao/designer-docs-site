@@ -1,0 +1,105 @@
+# isRunningInStabilityTest
+
+## Modules to Import
+
+```TypeScript
+import { appManager } from '@kit.AbilityKit';
+```
+
+## isRunningInStabilityTest
+
+```TypeScript
+function isRunningInStabilityTest(callback: AsyncCallback<boolean>): void
+```
+
+Checks whether the system is undergoing a stability test. This API uses an asynchronous callback to return the result.
+
+> **NOTE**  
+>  
+> A stability test scenario refers to a specific testing environment designed to verify application reliability  
+> under complex, extreme, or long-term operating conditions.
+
+**Since:** 9
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-appManager-function isRunningInStabilityTest(callback: AsyncCallback<boolean>): void--><!--Device-appManager-function isRunningInStabilityTest(callback: AsyncCallback<boolean>): void-End-->
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. If the API call is successful, **err** is **undefined** and **data** is the check result for whether the system is undergoing a stability test. Otherwise,**err** is an error object. You can perform error handling or other custom processing.<br>**true** is returned if the system is undergoing a stability test; **false** is returned otherwise. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
+
+**Example**
+
+```TypeScript
+import { appManager } from '@kit.AbilityKit';
+
+appManager.isRunningInStabilityTest((err, flag) => {
+  if (err) {
+    console.error(`isRunningInStabilityTest fail, err: ${JSON.stringify(err)}`);
+  } else {
+    console.info(`The result of isRunningInStabilityTest is: ${JSON.stringify(flag)}`);
+  }
+});
+
+```
+
+
+## isRunningInStabilityTest
+
+```TypeScript
+function isRunningInStabilityTest(): Promise<boolean>
+```
+
+Checks whether the system is undergoing a stability test. This API uses a promise to return the result.
+
+> **NOTE**  
+>  
+> A stability test scenario refers to a specific testing environment designed to verify application reliability  
+> under complex, extreme, or long-term operating conditions.
+
+**Since:** 9
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-appManager-function isRunningInStabilityTest(): Promise<boolean>--><!--Device-appManager-function isRunningInStabilityTest(): Promise<boolean>-End-->
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.Core
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the API call result and the result **true** or **false**. You can perform error handling or custom processing in this callback.* **true** is returned if the system is undergoing a stability test; **false** is returned otherwise. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
+
+**Example**
+
+```TypeScript
+import { appManager } from '@kit.AbilityKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+appManager.isRunningInStabilityTest().then((flag) => {
+  console.info(`The result of isRunningInStabilityTest is: ${JSON.stringify(flag)}`);
+}).catch((error: BusinessError) => {
+  console.error(`error: ${JSON.stringify(error)}`);
+});
+
+```
+

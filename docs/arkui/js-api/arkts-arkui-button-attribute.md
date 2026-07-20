@@ -8,6 +8,8 @@ The [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-commo
 
 **Since:** 7
 
+<!--Device-unnamed-declare class ButtonAttribute extends CommonMethod<ButtonAttribute>--><!--Device-unnamed-declare class ButtonAttribute extends CommonMethod<ButtonAttribute>-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 ## buttonStyle
@@ -16,15 +18,11 @@ The [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-commo
 buttonStyle(value: ButtonStyleMode)
 ```
 
-Sets the style and primacy for the button. The system automatically adjusts the button background color and text
-color based on the enumerated value. You can also use the
-[backgroundColor](arkts-arkui-commonmethod-c.md#backgroundcolor-1),
-[fontColor](ButtonAttribute#fontColor), and [role](ButtonAttribute#role) APIs to set the background
-color and text color. The actual displayed effect will be determined by the last setting.
+Sets the style and primacy for the button. The system automatically adjusts the button background color and text color based on the enumerated value. You can also use the [backgroundColor](arkts-arkui-common-commonmethod-c.md#backgroundcolor-1),[fontColor](ButtonAttribute#fontColor), and [role](ButtonAttribute#role) APIs to set the background color and text color. The actual displayed effect will be determined by the last setting.
 
-> **NOTE**
->
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
+> **NOTE**  
+>  
+> This API can be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1) since API version 12.
 
 **Since:** 11
 
@@ -34,13 +32,15 @@ color and text color. The actual displayed effect will be determined by the last
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 11.
 
+<!--Device-ButtonAttribute-buttonStyle(value: ButtonStyleMode): ButtonAttribute--><!--Device-ButtonAttribute-buttonStyle(value: ButtonStyleMode): ButtonAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ButtonStyleMode | Yes | Style and primacy of the button<br>Default value: **ButtonStyleMode.EMPHASIZED** |
+| value | [ButtonStyleMode](arkts-arkui-button-buttonstylemode-e.md) | Yes | Style and primacy of the button<br>Default value: **ButtonStyleMode.EMPHASIZED** |
 
 ## contentModifier
 
@@ -56,13 +56,15 @@ Creates a content modifier.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-ButtonAttribute-contentModifier(modifier: ContentModifier<ButtonConfiguration>): ButtonAttribute--><!--Device-ButtonAttribute-contentModifier(modifier: ContentModifier<ButtonConfiguration>): ButtonAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| modifier | ContentModifier&lt;ButtonConfiguration&gt; | Yes | Content modifier to apply to the button.<br>**modifier**: content modifier. You need a custom class to implement the **ContentModifier** API. |
+| modifier | [ContentModifier](arkts-arkui-common-contentmodifier-i.md)<ButtonConfiguration> | Yes | Content modifier to apply to the button.<br>**modifier**: content modifier. You need a custom class to implement the **ContentModifier** API. |
 
 ## controlSize
 
@@ -72,9 +74,9 @@ controlSize(value: ControlSize)
 
 Sets the size for the button.
 
-> **NOTE**
->
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
+> **NOTE**  
+>  
+> This API can be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1) since API version 12.
 
 **Since:** 11
 
@@ -84,13 +86,15 @@ Sets the size for the button.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 11.
 
+<!--Device-ButtonAttribute-controlSize(value: ControlSize): ButtonAttribute--><!--Device-ButtonAttribute-controlSize(value: ControlSize): ButtonAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ControlSize | Yes | Size of the button.<br>Default value: **ControlSize.NORMAL** |
+| value | [ControlSize](arkts-arkui-button-controlsize-e.md) | Yes | Size of the button.<br>Default value: **ControlSize.NORMAL** |
 
 ## fontColor
 
@@ -106,13 +110,15 @@ Sets the font color for the button.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-ButtonAttribute-fontColor(value: ResourceColor): ButtonAttribute--><!--Device-ButtonAttribute-fontColor(value: ResourceColor): ButtonAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ResourceColor | Yes | Font color of the button.<br>Default value: **$r('sys.color.font_on_primary')**,which means white |
+| value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Font color of the button.<br>Default value: **$r('sys.color.font_on_primary')**,which means white |
 
 ## fontFamily
 
@@ -128,13 +134,15 @@ Sets the font family.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-ButtonAttribute-fontFamily(value: string | Resource): ButtonAttribute--><!--Device-ButtonAttribute-fontFamily(value: string | Resource): ButtonAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | string \| Resource | Yes | Font family. The 'HarmonyOS Sans' font and[registered custom fonts](../arkts-apis/arkts-font.md) are supported. |
+| value | string \| Resource | Yes | Font family. The 'HarmonyOS Sans' font and [registered custom fonts](../arkts-apis/arkts-font.md) are supported. |
 
 ## fontSize
 
@@ -150,13 +158,15 @@ Sets the font size for the button.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-ButtonAttribute-fontSize(value: Length): ButtonAttribute--><!--Device-ButtonAttribute-fontSize(value: Length): ButtonAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | Length | Yes | Font size of the button.<br>Default value:<br>**$r('sys.float.Body_L')** when**controlSize** is set to **ControlSize.NORMAL**<br>**$r('sys.float.Body_S')** when **controlSize** is set to**ControlSize.SMALL**<br>Note: For the string type, percentage values are not supported. |
+| value | [Length](../arkts-apis/arkts-arkui-length-t.md) | Yes | Font size of the button.<br>Default value:<br>**$r('sys.float.Body_L')** when **controlSize** is set to **ControlSize.NORMAL**<br>**$r('sys.float.Body_S')** when **controlSize** is set to **ControlSize.SMALL**<br>Note: For the string type, percentage values are not supported. |
 
 ## fontStyle
 
@@ -172,13 +182,15 @@ Sets the font style for the button.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-ButtonAttribute-fontStyle(value: FontStyle): ButtonAttribute--><!--Device-ButtonAttribute-fontStyle(value: FontStyle): ButtonAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | FontStyle | Yes | Font style of the button.<br>Default value: **FontStyle.Normal** |
+| value | [FontStyle](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-text-fontstyle-e.md) | Yes | Font style of the button.<br>Default value: **FontStyle.Normal** |
 
 ## fontWeight
 
@@ -194,13 +206,15 @@ Sets the font weight for the button.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-ButtonAttribute-fontWeight(value: number | FontWeight | string): ButtonAttribute--><!--Device-ButtonAttribute-fontWeight(value: number | FontWeight | string): ButtonAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | number \| FontWeight \| string | Yes | Font weight of the button. For the number type, the value rangesfrom 100 to 900, at an interval of 100. A larger value indicates a thicker font.<br>Default value: **500**<br>For the string type, only strings that represent a number, for example, **'400'**, and the following enumeratedvalues of **FontWeight** are supported: **'bold'**, **'bolder'**, **'lighter'**, **'regular'**, and**'medium'**.<br>If the value is abnormal or invalid, the font weight defaults to 400. |
+| value | number \| FontWeight \| string | Yes | Font weight of the button. For the number type, the value ranges from 100 to 900, at an interval of 100. A larger value indicates a thicker font.<br>Default value: **500**<br>For the string type, only strings that represent a number, for example, **'400'**, and the following enumerated values of **FontWeight** are supported: **'bold'**, **'bolder'**, **'lighter'**, **'regular'**, and **'medium'**.<br>If the value is abnormal or invalid, the font weight defaults to 400. |
 
 ## labelStyle
 
@@ -216,13 +230,15 @@ Sets the label style for the button.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-ButtonAttribute-labelStyle(value: LabelStyle): ButtonAttribute--><!--Device-ButtonAttribute-labelStyle(value: LabelStyle): ButtonAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | LabelStyle | Yes | Label style of the button. |
+| value | [LabelStyle](arkts-arkui-button-labelstyle-i.md) | Yes | Label style of the button. |
 
 ## maxFontScale
 
@@ -237,6 +253,8 @@ Sets the maximum font scale factor for text.
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
+
+<!--Device-ButtonAttribute-maxFontScale(scale: number | Resource): ButtonAttribute--><!--Device-ButtonAttribute-maxFontScale(scale: number | Resource): ButtonAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -260,13 +278,15 @@ Sets the minimum font scale factor for text.
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
 
+<!--Device-ButtonAttribute-minFontScale(scale: number | Resource): ButtonAttribute--><!--Device-ButtonAttribute-minFontScale(scale: number | Resource): ButtonAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| scale | number \| Resource | Yes | Minimum font scale factor for text.<br>Value range: [0, 1]<br>**NOTE**<br>Avalue less than 0 is handled as **0**. A value greater than 1 is handled as **1**. Abnormal values areineffective by default. |
+| scale | number \| Resource | Yes | Minimum font scale factor for text.<br>Value range: [0, 1]<br>**NOTE**<br>A value less than 0 is handled as **0**. A value greater than 1 is handled as **1**. Abnormal values are ineffective by default. |
 
 ## role
 
@@ -274,11 +294,7 @@ Sets the minimum font scale factor for text.
 role(value: ButtonRole)
 ```
 
-Sets the role of the button. The system automatically adjusts the button background color and text color based on
-the enumerated value. You can also use the
-[backgroundColor](arkts-arkui-commonmethod-c.md#backgroundcolor-1),
-[fontColor](ButtonAttribute#fontColor), and [buttonStyle](ButtonAttribute#buttonStyle) APIs to set the
-background color and text color. The actual displayed effect will be determined by the last setting.
+Sets the role of the button. The system automatically adjusts the button background color and text color based on the enumerated value. You can also use the [backgroundColor](arkts-arkui-common-commonmethod-c.md#backgroundcolor-1),[fontColor](ButtonAttribute#fontColor), and [buttonStyle](ButtonAttribute#buttonStyle) APIs to set the background color and text color. The actual displayed effect will be determined by the last setting.
 
 **Since:** 12
 
@@ -288,13 +304,15 @@ background color and text color. The actual displayed effect will be determined 
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 12.
 
+<!--Device-ButtonAttribute-role(value: ButtonRole): ButtonAttribute--><!--Device-ButtonAttribute-role(value: ButtonRole): ButtonAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ButtonRole | Yes | Role of the button.<br>Default value: **ButtonRole.NORMAL** |
+| value | [ButtonRole](arkts-arkui-button-buttonrole-e.md) | Yes | Role of the button.<br>Default value: **ButtonRole.NORMAL** |
 
 ## stateEffect
 
@@ -310,13 +328,15 @@ Specifies whether to enable the pressed state effect when the button is clicked.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-ButtonAttribute-stateEffect(value: boolean): ButtonAttribute--><!--Device-ButtonAttribute-stateEffect(value: boolean): ButtonAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | boolean | Yes | Whether to enable the pressed state effect when the button is clicked.<br>**true**: Thepressed state effect is enabled. **false**: The pressed state effect is disabled.<br>Default value: **true** |
+| value | boolean | Yes | Whether to enable the pressed state effect when the button is clicked.<br>**true**: The pressed state effect is enabled. **false**: The pressed state effect is disabled.<br>Default value: **true** |
 
 ## type
 
@@ -332,11 +352,13 @@ Sets the button type.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-ButtonAttribute-type(value: ButtonType): ButtonAttribute--><!--Device-ButtonAttribute-type(value: ButtonType): ButtonAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ButtonType | Yes | Button type.<br>API version 18 and later: The default value is**ButtonType.ROUNDED_RECTANGLE**. |
+| value | [ButtonType](arkts-arkui-button-buttontype-e.md) | Yes | Button type.<br>API version 18 and later: The default value is **ButtonType.ROUNDED_RECTANGLE**. |
 

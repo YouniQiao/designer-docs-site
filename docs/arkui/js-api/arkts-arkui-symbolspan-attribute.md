@@ -8,6 +8,8 @@ The [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-commo
 
 **Since:** 11
 
+<!--Device-unnamed-declare class SymbolSpanAttribute extends CommonMethod<SymbolSpanAttribute>--><!--Device-unnamed-declare class SymbolSpanAttribute extends CommonMethod<SymbolSpanAttribute>-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 ## attributeModifier
@@ -24,13 +26,15 @@ Creates an attribute modifier.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-SymbolSpanAttribute-attributeModifier(modifier: AttributeModifier<SymbolSpanAttribute>): SymbolSpanAttribute--><!--Device-SymbolSpanAttribute-attributeModifier(modifier: AttributeModifier<SymbolSpanAttribute>): SymbolSpanAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| modifier | AttributeModifier&lt;SymbolSpanAttribute&gt; | Yes | Modifier for dynamically setting attributes on thecurrent component. |
+| modifier | [AttributeModifier](arkts-arkui-common-attributemodifier-i.md)<SymbolSpanAttribute> | Yes | Modifier for dynamically setting attributes on the current component. |
 
 ## effectStrategy
 
@@ -40,9 +44,9 @@ effectStrategy(value: SymbolEffectStrategy)
 
 Sets the symbol effect of the symbol span.
 
-> **NOTE**
->
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
+> **NOTE**  
+>  
+> This API can be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1) since API version 12.
 
 **Since:** 11
 
@@ -52,13 +56,15 @@ Sets the symbol effect of the symbol span.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 12.
 
+<!--Device-SymbolSpanAttribute-effectStrategy(value: SymbolEffectStrategy): SymbolSpanAttribute--><!--Device-SymbolSpanAttribute-effectStrategy(value: SymbolEffectStrategy): SymbolSpanAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | SymbolEffectStrategy | Yes | Symbol effect of the symbol span.<br>Default value:**SymbolEffectStrategy.NONE** |
+| value | [SymbolEffectStrategy](arkts-arkui-symbolglyph-symboleffectstrategy-e.md) | Yes | Symbol effect of the symbol span.<br>Default value:**SymbolEffectStrategy.NONE** |
 
 ## fontColor
 
@@ -68,9 +74,9 @@ fontColor(value: Array<ResourceColor>)
 
 Sets the color of the symbol span.
 
-> **NOTE**
->
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
+> **NOTE**  
+>  
+> This API can be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1) since API version 12.
 
 **Since:** 11
 
@@ -79,6 +85,8 @@ Sets the color of the symbol span.
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 12.
+
+<!--Device-SymbolSpanAttribute-fontColor(value: Array<ResourceColor>): SymbolSpanAttribute--><!--Device-SymbolSpanAttribute-fontColor(value: Array<ResourceColor>): SymbolSpanAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -86,7 +94,7 @@ Sets the color of the symbol span.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | Array&lt;ResourceColor&gt; | Yes | Color of the symbol span.<br> Default value: depending on the renderingstrategy |
+| value | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ResourceColor> | Yes | Color of the symbol span.<br> Default value: depending on the rendering strategy |
 
 ## fontSize
 
@@ -94,12 +102,11 @@ Sets the color of the symbol span.
 fontSize(value: number | string | Resource)
 ```
 
-Sets the size of the symbol span. When using the string type, numeric string values with optional units, for
-example, **"10"** or **"10fp"**, are supported.
+Sets the size of the symbol span. When using the string type, numeric string values with optional units, for example, **"10"** or **"10fp"**, are supported.
 
-> **NOTE**
->
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
+> **NOTE**  
+>  
+> This API can be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1) since API version 12.
 
 **Since:** 11
 
@@ -108,6 +115,8 @@ example, **"10"** or **"10fp"**, are supported.
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 12.
+
+<!--Device-SymbolSpanAttribute-fontSize(value: number | string | Resource): SymbolSpanAttribute--><!--Device-SymbolSpanAttribute-fontSize(value: number | string | Resource): SymbolSpanAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -123,16 +132,13 @@ example, **"10"** or **"10fp"**, are supported.
 fontWeight(value: number | FontWeight | string)
 ```
 
-Sets the weight of the symbol span. For the number type, the value ranges from 100 to 900, at an interval of 100. A
-larger value indicates a heavier font weight. The default value is **400**. For the string type, only strings of
-the number type are supported, for example, **"400"**, **"bold"**, **"bolder"**, **"lighter"**, **"regular"**, and
-**"medium"**, which correspond to the enumerated values in **FontWeight**.
+Sets the weight of the symbol span. For the number type, the value ranges from 100 to 900, at an interval of 100. A larger value indicates a heavier font weight. The default value is **400**. For the string type, only strings of the number type are supported, for example, **"400"**, **"bold"**, **"bolder"**, **"lighter"**, **"regular"**, and **"medium"**, which correspond to the enumerated values in **FontWeight**.
 
 The **sys.symbol.ohos_lungs** icon does not support font weight setting.
 
-> **NOTE**
->
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
+> **NOTE**  
+>  
+> This API can be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1) since API version 12.
 
 **Since:** 11
 
@@ -141,6 +147,8 @@ The **sys.symbol.ohos_lungs** icon does not support font weight setting.
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 12.
+
+<!--Device-SymbolSpanAttribute-fontWeight(value: number | FontWeight | string): SymbolSpanAttribute--><!--Device-SymbolSpanAttribute-fontWeight(value: number | FontWeight | string): SymbolSpanAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -166,6 +174,8 @@ Used to set the font weight of SymbolSpan.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 26.0.0.
 
+<!--Device-SymbolSpanAttribute-fontWeight(value: number | FontWeight | ResourceStr, fontWeightConfigs?: FontWeightConfigs): SymbolSpanAttribute--><!--Device-SymbolSpanAttribute-fontWeight(value: number | FontWeight | ResourceStr, fontWeightConfigs?: FontWeightConfigs): SymbolSpanAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
@@ -173,7 +183,7 @@ Used to set the font weight of SymbolSpan.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | value | number \| FontWeight \| ResourceStr | Yes | the SymbolSpan font weight. |
-| fontWeightConfigs | FontWeightConfigs | No | the configuration of font weight. |
+| fontWeightConfigs | [FontWeightConfigs](../arkts-apis/arkts-arkui-text-common-fontweightconfigs-i.md) | No | the configuration of font weight. |
 
 ## renderingStrategy
 
@@ -183,9 +193,9 @@ renderingStrategy(value: SymbolRenderingStrategy)
 
 Sets the rendering strategy of the symbol span.
 
-> **NOTE**
->
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
+> **NOTE**  
+>  
+> This API can be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1) since API version 12.
 
 **Since:** 11
 
@@ -195,11 +205,13 @@ Sets the rendering strategy of the symbol span.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 12.
 
+<!--Device-SymbolSpanAttribute-renderingStrategy(value: SymbolRenderingStrategy): SymbolSpanAttribute--><!--Device-SymbolSpanAttribute-renderingStrategy(value: SymbolRenderingStrategy): SymbolSpanAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | SymbolRenderingStrategy | Yes | Rendering strategy of the symbol span.<br>Default value:**SymbolRenderingStrategy.SINGLE** |
+| value | [SymbolRenderingStrategy](arkts-arkui-symbolglyph-symbolrenderingstrategy-e.md) | Yes | Rendering strategy of the symbol span.<br>Default value:**SymbolRenderingStrategy.SINGLE** |
 

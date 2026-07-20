@@ -10,6 +10,8 @@ Defines the stepper attribute functions
 
 **Substitutes:** SwiperAttribute
 
+<!--Device-unnamed-declare class StepperAttribute extends CommonMethod<StepperAttribute>--><!--Device-unnamed-declare class StepperAttribute extends CommonMethod<StepperAttribute>-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 ## onChange
@@ -18,10 +20,7 @@ Defines the stepper attribute functions
 onChange(callback: (prevIndex: number, index: number) => void)
 ```
 
-Triggered when the step navigation switches by clicking [prevLabel](StepperItemAttribute#prevLabel) of the
-**StepperItem** component; or when clicking [nextLabel](StepperItemAttribute#nextLabel) of the current
-**StepperItem** component, provided that the current page is not the last **StepperItem** in the stepper and the
-[ItemState](../arkts-apis/arkts-arkui-itemstate-e.md) attribute is **Normal**.
+Triggered when the step navigation switches by clicking [prevLabel](StepperItemAttribute#prevLabel) of the **StepperItem** component; or when clicking [nextLabel](StepperItemAttribute#nextLabel) of the current **StepperItem** component, provided that the current page is not the last **StepperItem** in the stepper and the [ItemState](../arkts-apis/arkts-arkui-arkui-advanced-toolbar-itemstate-e.md) attribute is **Normal**.
 
 > **NOTE**
 
@@ -33,13 +32,15 @@ Triggered when the step navigation switches by clicking [prevLabel](StepperItemA
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-StepperAttribute-onChange(callback: (prevIndex: number, index: number) => void): StepperAttribute--><!--Device-StepperAttribute-onChange(callback: (prevIndex: number, index: number) => void): StepperAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (prevIndex: number, index: number) =&gt; void | Yes | Callback triggered when the page is switched.<br/>prevIndex: Index of the step pagebefore the switching.<br>Value range:[0, +∞).<br/>index: Index of the step page after the switching, that is, index of the previous or next page.<br>Value range: [0, +∞). |
+| callback | (prevIndex: number, index: number) => void | Yes | Callback triggered when the page is switched.<br/>prevIndex: Index of the step page before the switching.<br>Value range:[0, +∞).<br/>index: Index of the step page after the switching, that is, index of the previous or next page.<br>Value range: [0, +∞). |
 
 ## onFinish
 
@@ -47,8 +48,7 @@ Triggered when the step navigation switches by clicking [prevLabel](StepperItemA
 onFinish(callback: () => void)
 ```
 
-Triggered when [nextLabel](StepperItemAttribute#nextLabel) of the last [StepperItem](arkts-arkui-stepperitem.md) in
-the stepper is clicked and the [ItemState](../arkts-apis/arkts-arkui-itemstate-e.md) attribute is **Normal**.
+Triggered when [nextLabel](StepperItemAttribute#nextLabel) of the last [StepperItem](arkts-arkui-stepperitem.md) in the stepper is clicked and the [ItemState](../arkts-apis/arkts-arkui-arkui-advanced-toolbar-itemstate-e.md) attribute is **Normal**.
 
 > **NOTE**
 
@@ -60,13 +60,15 @@ the stepper is clicked and the [ItemState](../arkts-apis/arkts-arkui-itemstate-e
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-StepperAttribute-onFinish(callback: () => void): StepperAttribute--><!--Device-StepperAttribute-onFinish(callback: () => void): StepperAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | () =&gt; void | Yes | Invoked when the **nextLabel** of the last **StepperItem** in the **Stepper** isclicked and the **ItemState** attribute is set to **Normal**. |
+| callback | () => void | Yes | Invoked when the **nextLabel** of the last **StepperItem** in the **Stepper** is clicked and the **ItemState** attribute is set to **Normal**. |
 
 ## onNext
 
@@ -74,9 +76,7 @@ the stepper is clicked and the [ItemState](../arkts-apis/arkts-arkui-itemstate-e
 onNext(callback: (index: number, pendingIndex: number) => void)
 ```
 
-Triggered when switching to the next step by clicking [nextLabel](StepperItemAttribute#nextLabel) of a
-**StepperItem**, provided that the current page is not the last **StepperItem** in the stepper and the
-[ItemState](../arkts-apis/arkts-arkui-itemstate-e.md) attribute is **Normal**.
+Triggered when switching to the next step by clicking [nextLabel](StepperItemAttribute#nextLabel) of a **StepperItem**, provided that the current page is not the last **StepperItem** in the stepper and the [ItemState](../arkts-apis/arkts-arkui-arkui-advanced-toolbar-itemstate-e.md) attribute is **Normal**.
 
 > **NOTE**
 
@@ -88,13 +88,15 @@ Triggered when switching to the next step by clicking [nextLabel](StepperItemAtt
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-StepperAttribute-onNext(callback: (index: number, pendingIndex: number) => void): StepperAttribute--><!--Device-StepperAttribute-onNext(callback: (index: number, pendingIndex: number) => void): StepperAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (index: number, pendingIndex: number) =&gt; void | Yes | Callback triggered when the page is switched.<br/>index: Index of the current steppage.<br/>pendingIndex: Index of the next step page. |
+| callback | (index: number, pendingIndex: number) => void | Yes | Callback triggered when the page is switched.<br/>index: Index of the current step page.<br/>pendingIndex: Index of the next step page. |
 
 ## onPrevious
 
@@ -102,8 +104,7 @@ Triggered when switching to the next step by clicking [nextLabel](StepperItemAtt
 onPrevious(callback: (index: number, pendingIndex: number) => void)
 ```
 
-Triggered when switching to the previous step by clicking [prevLabel](StepperItemAttribute#prevLabel) of a
-**StepperItem**.
+Triggered when switching to the previous step by clicking [prevLabel](StepperItemAttribute#prevLabel) of a **StepperItem**.
 
 > **NOTE**
 
@@ -115,13 +116,15 @@ Triggered when switching to the previous step by clicking [prevLabel](StepperIte
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-StepperAttribute-onPrevious(callback: (index: number, pendingIndex: number) => void): StepperAttribute--><!--Device-StepperAttribute-onPrevious(callback: (index: number, pendingIndex: number) => void): StepperAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (index: number, pendingIndex: number) =&gt; void | Yes | Callback triggered when the page is switched.<br/>index: Index of the current steppage.<br/>pendingIndex: Index of the next step page. |
+| callback | (index: number, pendingIndex: number) => void | Yes | Callback triggered when the page is switched.<br/>index: Index of the current step page.<br/>pendingIndex: Index of the next step page. |
 
 ## onSkip
 
@@ -129,8 +132,7 @@ Triggered when switching to the previous step by clicking [prevLabel](StepperIte
 onSkip(callback: () => void)
 ```
 
-Triggered when [nextLabel](StepperItemAttribute#nextLabel) is clicked and the
-[StepperItem](arkts-arkui-stepperitem.md) status is **ItemState.Skip**.
+Triggered when [nextLabel](StepperItemAttribute#nextLabel) is clicked and the [StepperItem](arkts-arkui-stepperitem.md) status is **ItemState.Skip**.
 
 > **NOTE**
 
@@ -142,11 +144,13 @@ Triggered when [nextLabel](StepperItemAttribute#nextLabel) is clicked and the
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-StepperAttribute-onSkip(callback: () => void): StepperAttribute--><!--Device-StepperAttribute-onSkip(callback: () => void): StepperAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | () =&gt; void | Yes | Invoked when the current **StepperItem** is **ItemState.Skip** and the **nextLabel**is clicked. |
+| callback | () => void | Yes | Invoked when the current **StepperItem** is **ItemState.Skip** and the **nextLabel** is clicked. |
 

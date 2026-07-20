@@ -1,0 +1,99 @@
+# toggleShownStateForAllAppWindows (System API)
+
+## Modules to Import
+
+```TypeScript
+import { window } from '@kit.ArkUI';
+```
+
+## toggleShownStateForAllAppWindows
+
+```TypeScript
+function toggleShownStateForAllAppWindows(callback: AsyncCallback<void>): void
+```
+
+Hides or restores the application's windows during quick multi-window switching. This API uses an asynchronous callback to return the result.
+
+**Since:** 9
+
+<!--Device-window-function toggleShownStateForAllAppWindows(callback: AsyncCallback<void>): void--><!--Device-window-function toggleShownStateForAllAppWindows(callback: AsyncCallback<void>): void-End-->
+
+**System capability:** SystemCapability.WindowManager.WindowManager.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API.<br>**Applicable version:** 12 and later |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. Failed to call the API due to limited device capabilities.<br>**Applicable version:** 12 and later |
+| [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+window.toggleShownStateForAllAppWindows((err: BusinessError) => {
+  const errCode: number = err.code;
+  if (errCode) {
+    console.error(`Failed to toggle shown state for all app windows. Cause code: ${err.code}, message: ${err.message}`);
+    return;
+  }
+  console.info('Succeeded in toggling shown state for all app windows.');
+});
+
+```
+
+
+## toggleShownStateForAllAppWindows
+
+```TypeScript
+function toggleShownStateForAllAppWindows(): Promise<void>
+```
+
+Hides or restores the application's windows during quick multi-window switching. This API uses a promise to return the result.
+
+**Since:** 9
+
+<!--Device-window-function toggleShownStateForAllAppWindows(): Promise<void>--><!--Device-window-function toggleShownStateForAllAppWindows(): Promise<void>-End-->
+
+**System capability:** SystemCapability.WindowManager.WindowManager.Core
+
+**System API:** This is a system API.
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API.<br>**Applicable version:** 12 and later |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. Failed to call the API due to limited device capabilities.<br>**Applicable version:** 12 and later |
+| [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let promise = window.toggleShownStateForAllAppWindows();
+promise.then(() => {
+  console.info('Succeeded in toggling shown state for all app windows.');
+}).catch((err: BusinessError) => {
+  console.error(`Failed to toggle shown state for all app windows. Cause code: ${err.code}, message: ${err.message}`);
+});
+
+```
+

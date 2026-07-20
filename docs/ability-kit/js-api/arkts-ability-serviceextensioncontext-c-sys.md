@@ -1,17 +1,18 @@
 # ServiceExtensionContext (System API)
 
-The ServiceExtensionContext module provides the context environment for the ServiceExtensionAbility. It inherits from
-ExtensionContext.
+The ServiceExtensionContext module provides the context environment for the ServiceExtensionAbility. It inherits from ExtensionContext.
 
 You can use the APIs of this module to start, terminate, connect, and disconnect an ability.
 
-> **NOTE**
->
+> **NOTE**  
+>  
 > - The APIs of this module must be used on the main thread, but not in child threads such as Worker and TaskPool.
 
 **Inheritance/Implementation:** ServiceExtensionContext extends [ExtensionContext](arkts-ability-extensioncontext-c.md)
 
 **Since:** 9
+
+<!--Device-unnamed-declare class ServiceExtensionContext extends ExtensionContext--><!--Device-unnamed-declare class ServiceExtensionContext extends ExtensionContext-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -25,14 +26,16 @@ connectServiceExtensionAbility(want: Want, options: ConnectOptions): number
 
 Connects this ability to a ServiceExtensionAbility. This API can be called only on the main thread.
 
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
+> **NOTE**  
+>  
+> For details about the startup rules for the components in the stage model, see  
 > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
 
 **Since:** 9
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionContext-connectServiceExtensionAbility(want: Want, options: ConnectOptions): long--><!--Device-ServiceExtensionContext-connectServiceExtensionAbility(want: Want, options: ConnectOptions): long-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -42,8 +45,8 @@ Connects this ability to a ServiceExtensionAbility. This API can be called only 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want information about the target ability, such as the ability name and bundle name. |
-| options | ConnectOptions | Yes | Callback used to return the information indicating that the connection issuccessful, interrupted, or failed. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target ability, such as the ability name and bundle name. |
+| options | [ConnectOptions](arkts-ability-ability-connectoptions-t.md) | Yes | Callback used to return the information indicating that the connection is successful, interrupted, or failed. |
 
 **Return value:**
 
@@ -76,16 +79,14 @@ Connects this ability to a ServiceExtensionAbility. This API can be called only 
 connectServiceExtensionAbilityWithAccount(want: Want, accountId: number, options: ConnectOptions): number
 ```
 
-Connects this ability to a ServiceExtensionAbility of a given account. This API can be called only on the main
-thread.
+Connects this ability to a ServiceExtensionAbility of a given account. This API can be called only on the main thread.
 
-This API can be properly called on phones and tablets. If it is called on other devices, error code 16000006 is
-returned.
+This API can be properly called on phones and tablets. If it is called on other devices, error code 16000006 is returned.
 
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
-> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
+> **NOTE**  
+>  
+> For details about the startup rules for the components in the stage model, see  
+> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).  
 > > Permission verification is not required when **accountId** specifies the current user.
 
 **Since:** 9
@@ -93,6 +94,8 @@ returned.
 **Required permissions:** ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionContext-connectServiceExtensionAbilityWithAccount(want: Want, accountId: int, options: ConnectOptions): long--><!--Device-ServiceExtensionContext-connectServiceExtensionAbilityWithAccount(want: Want, accountId: int, options: ConnectOptions): long-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -102,9 +105,9 @@ returned.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want information about the target ability. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target ability. |
 | accountId | number | Yes | ID of the target system account. |
-| options | ConnectOptions | Yes | Remote object instance. |
+| options | [ConnectOptions](arkts-ability-ability-connectoptions-t.md) | Yes | Remote object instance. |
 
 **Return value:**
 
@@ -138,13 +141,13 @@ returned.
 disconnectServiceExtensionAbility(connection: number, callback: AsyncCallback<void>): void
 ```
 
-Disconnects this ability from a ServiceExtensionAbility and after the successful disconnection, sets the remote
-object returned upon the connection to void. This API can be called only on the main thread. It uses an
-asynchronous callback to return the result.
+Disconnects this ability from a ServiceExtensionAbility and after the successful disconnection, sets the remote object returned upon the connection to void. This API can be called only on the main thread. It uses an asynchronous callback to return the result.
 
 **Since:** 9
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionContext-disconnectServiceExtensionAbility(connection: long, callback: AsyncCallback<void>): void--><!--Device-ServiceExtensionContext-disconnectServiceExtensionAbility(connection: long, callback: AsyncCallback<void>): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -155,7 +158,7 @@ asynchronous callback to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | connection | number | Yes | Number returned after **connectServiceExtensionAbility** is called. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the ability is disconnected,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the ability is disconnected,**err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -171,13 +174,13 @@ asynchronous callback to return the result.
 disconnectServiceExtensionAbility(connection: number): Promise<void>
 ```
 
-Disconnects this ability from a ServiceExtensionAbility and after the successful disconnection, sets the remote
-object returned upon the connection to void. This API can be called only on the main thread. It uses a promise to
-return the result asynchronously.
+Disconnects this ability from a ServiceExtensionAbility and after the successful disconnection, sets the remote object returned upon the connection to void. This API can be called only on the main thread. It uses a promise to return the result asynchronously.
 
 **Since:** 9
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionContext-disconnectServiceExtensionAbility(connection: long): Promise<void>--><!--Device-ServiceExtensionContext-disconnectServiceExtensionAbility(connection: long): Promise<void>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -193,7 +196,7 @@ return the result asynchronously.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -211,14 +214,16 @@ openAtomicService(appId: string, options?: AtomicServiceOptions): Promise<void>
 
 Starts an atomic service based on an application ID. This API uses a promise to return the result asynchronously.
 
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
+> **NOTE**  
+>  
+> For details about the startup rules for the components in the stage model, see  
 > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
 
 **Since:** 18
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionContext-openAtomicService(appId: string, options?: AtomicServiceOptions): Promise<void>--><!--Device-ServiceExtensionContext-openAtomicService(appId: string, options?: AtomicServiceOptions): Promise<void>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -229,13 +234,13 @@ Starts an atomic service based on an application ID. This API uses a promise to 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | appId | string | Yes | Unique ID of the application, which is allocated by the cloud. |
-| options | AtomicServiceOptions | No | Parameter carried in the request for starting the atomic service injump-out mode. |
+| options | [AtomicServiceOptions](arkts-ability-app-ability-atomicserviceoptions-atomicserviceoptions-c.md) | No | Parameter carried in the request for starting the atomic service in jump-out mode. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -256,29 +261,26 @@ Starts an atomic service based on an application ID. This API uses a promise to 
 openLink(link: string, options?: OpenLinkOptions): Promise<void>
 ```
 
-Starts a UIAbility through App Linking. This API can be called only on the main thread. It uses a promise to return
-the result asynchronously.
+Starts a UIAbility through App Linking. This API can be called only on the main thread. It uses a promise to return the result asynchronously.
 
-A URL in the standard format is passed in to the **link** field to start the target UIAbility based on the implicit
-Want matching rules. The target UIAbility must have the following filter characteristics to process links of App
-Linking:
+A URL in the standard format is passed in to the **link** field to start the target UIAbility based on the implicit Want matching rules. The target UIAbility must have the following filter characteristics to process links of App Linking:
 
-- The **actions** field must contain **ohos.want.action.viewData**.
-- The **entities** field must contain **entity.system.browsable**.
+- The **actions** field must contain **ohos.want.action.viewData**.  
+- The **entities** field must contain **entity.system.browsable**.  
 - The **uris** field must contain elements whose **scheme** is **https** and **domainVerify** is **true**.
 
-If an input parameter is invalid, for example, a mandatory parameter is not set or the URL set in **link** is not
-in the standard format, an exception is thrown. If the parameter verification is successful but an error occurs
-when starting the target UIAbility, the error information is returned through promise.
+If an input parameter is invalid, for example, a mandatory parameter is not set or the URL set in **link** is not in the standard format, an exception is thrown. If the parameter verification is successful but an error occurs when starting the target UIAbility, the error information is returned through promise.
 
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
+> **NOTE**  
+>  
+> For details about the startup rules for the components in the stage model, see  
 > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
 
 **Since:** 12
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionContext-openLink(link: string, options?: OpenLinkOptions): Promise<void>--><!--Device-ServiceExtensionContext-openLink(link: string, options?: OpenLinkOptions): Promise<void>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -289,13 +291,13 @@ when starting the target UIAbility, the error information is returned through pr
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | link | string | Yes | URL to open, which must be in the standard format. |
-| options | OpenLinkOptions | No | Options of the URL. |
+| options | [OpenLinkOptions](arkts-ability-app-ability-openlinkoptions-openlinkoptions-i.md) | No | Options of the URL. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -325,17 +327,17 @@ when starting the target UIAbility, the error information is returned through pr
 preStartMission(bundleName: string, moduleName: string, abilityName: string, startTime: string): Promise<void>
 ```
 
-Starts an atomic service and pre-opens the window, with the loading box skipped. This API uses a promise to return
-the result.
+Starts an atomic service and pre-opens the window, with the loading box skipped. This API uses a promise to return the result.
 
-If parameter verification is successful but the atomic service fails to start, you need to implement an exception
-mechanism to capture the error.
+If parameter verification is successful but the atomic service fails to start, you need to implement an exception mechanism to capture the error.
 
 **Since:** 12
 
 **Required permissions:** ohos.permission.PRE_START_ATOMIC_SERVICE
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionContext-preStartMission(bundleName: string, moduleName: string, abilityName: string, startTime: string): Promise<void>--><!--Device-ServiceExtensionContext-preStartMission(bundleName: string, moduleName: string, abilityName: string, startTime: string): Promise<void>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -354,7 +356,7 @@ mechanism to capture the error.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -373,26 +375,20 @@ mechanism to capture the error.
 requestModalUIExtension(pickerWant: Want, callback: AsyncCallback<void>): void
 ```
 
-Requests the specified focused application to start the UIExtensionAbility of the corresponding type. The focused
-application is specified by **bundleName** in **want.parameters**. If **bundleName** is left unspecified, or if the
-specified application does not gain focus, the UIExtensionAbility is directly started on the system UI. The
-UIExtensionAbility to start is determined by the combination of the **bundleName**, **abilityName**, and
-**moduleName** fields in **Want**, and its type is determined by the **ability.want.params.uiExtensionType** field
-in **want.parameters**. This API can be called only on the main thread. It uses an asynchronous callback to return
-the result.
+Requests the specified focused application to start the UIExtensionAbility of the corresponding type. The focused application is specified by **bundleName** in **want.parameters**. If **bundleName** is left unspecified, or if the specified application does not gain focus, the UIExtensionAbility is directly started on the system UI. The UIExtensionAbility to start is determined by the combination of the **bundleName**, **abilityName**, and **moduleName** fields in **Want**, and its type is determined by the **ability.want.params.uiExtensionType** field in **want.parameters**. This API can be called only on the main thread. It uses an asynchronous callback to return the result.
 
-Before starting the UIExtensionAbility, ensure that the focused application has finished page initialization.
-Otherwise, the UIExtensionAbility fails to start. The application can determine the time to start the
-UIExtensionAbility by listening for the page loading status.
+Before starting the UIExtensionAbility, ensure that the focused application has finished page initialization.Otherwise, the UIExtensionAbility fails to start. The application can determine the time to start the UIExtensionAbility by listening for the page loading status.
 
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
+> **NOTE**  
+>  
+> For details about the startup rules for the components in the stage model, see  
 > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
 
 **Since:** 11
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionContext-requestModalUIExtension(pickerWant: Want, callback: AsyncCallback<void>): void--><!--Device-ServiceExtensionContext-requestModalUIExtension(pickerWant: Want, callback: AsyncCallback<void>): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -402,8 +398,8 @@ UIExtensionAbility by listening for the page loading status.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| pickerWant | Want | Yes | Want information used to start the UIExtensionAbility. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the UIExtensionAbility is started,**err** is **undefined**; otherwise, **err** is an error object. |
+| pickerWant | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information used to start the UIExtensionAbility. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the UIExtensionAbility is started,**err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -424,26 +420,20 @@ UIExtensionAbility by listening for the page loading status.
 requestModalUIExtension(pickerWant: Want): Promise<void>
 ```
 
-Requests the specified focused application to start the UIExtensionAbility of the corresponding type. The focused
-application is specified by **bundleName** in **want.parameters**. If **bundleName** is left unspecified, or if the
-specified application does not gain focus, the UIExtensionAbility is directly started on the system UI. The
-UIExtensionAbility to start is determined by the combination of the **bundleName**, **abilityName**, and
-**moduleName** fields in **Want**, and its type is determined by the **ability.want.params.uiExtensionType** field
-in **want.parameters**. This API can be called only on the main thread. It uses a promise to return the result
-asynchronously.
+Requests the specified focused application to start the UIExtensionAbility of the corresponding type. The focused application is specified by **bundleName** in **want.parameters**. If **bundleName** is left unspecified, or if the specified application does not gain focus, the UIExtensionAbility is directly started on the system UI. The UIExtensionAbility to start is determined by the combination of the **bundleName**, **abilityName**, and **moduleName** fields in **Want**, and its type is determined by the **ability.want.params.uiExtensionType** field in **want.parameters**. This API can be called only on the main thread. It uses a promise to return the result asynchronously.
 
-Before starting the UIExtensionAbility, ensure that the focused application has finished page initialization.
-Otherwise, the UIExtensionAbility fails to start. The application can determine the time to start the
-UIExtensionAbility by listening for the page loading status.
+Before starting the UIExtensionAbility, ensure that the focused application has finished page initialization.Otherwise, the UIExtensionAbility fails to start. The application can determine the time to start the UIExtensionAbility by listening for the page loading status.
 
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
+> **NOTE**  
+>  
+> For details about the startup rules for the components in the stage model, see  
 > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
 
 **Since:** 11
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionContext-requestModalUIExtension(pickerWant: Want): Promise<void>--><!--Device-ServiceExtensionContext-requestModalUIExtension(pickerWant: Want): Promise<void>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -453,13 +443,13 @@ UIExtensionAbility by listening for the page loading status.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| pickerWant | Want | Yes | Want information used to start the UIExtensionAbility. |
+| pickerWant | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information used to start the UIExtensionAbility. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -480,21 +470,13 @@ UIExtensionAbility by listening for the page loading status.
 requestModalUIExtensionWithAccount(pickerWant: Want, accountId: number): Promise<void>
 ```
 
-Requests the specified focused application to start the UIExtensionAbility of the corresponding type for the
-specified user. The focused application is specified by **bundleName** in **want.parameters**. If **bundleName**
-is left unspecified, or if the specified application does not gain focus, the UIExtensionAbility is directly
-started on the system UI. The UIExtensionAbility to start is determined by the combination of the **bundleName**,
-**abilityName**, and **moduleName** fields in **Want**, and its type is determined by the
-**ability.want.params.uiExtensionType** field in **want.parameters**. This API can be called only on the main thread.
-It uses a promise to return the result asynchronously.
+Requests the specified focused application to start the UIExtensionAbility of the corresponding type for the specified user. The focused application is specified by **bundleName** in **want.parameters**. If **bundleName** is left unspecified, or if the specified application does not gain focus, the UIExtensionAbility is directly started on the system UI. The UIExtensionAbility to start is determined by the combination of the **bundleName**,**abilityName**, and **moduleName** fields in **Want**, and its type is determined by the **ability.want.params.uiExtensionType** field in **want.parameters**. This API can be called only on the main thread.It uses a promise to return the result asynchronously.
 
-Before starting the UIExtensionAbility, ensure that the focused application has finished page initialization.
-Otherwise, the UIExtensionAbility fails to start. The application can determine the time to start the
-UIExtensionAbility by listening for the page loading status.
+Before starting the UIExtensionAbility, ensure that the focused application has finished page initialization.Otherwise, the UIExtensionAbility fails to start. The application can determine the time to start the UIExtensionAbility by listening for the page loading status.
 
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
+> **NOTE**  
+>  
+> For details about the startup rules for the components in the stage model, see  
 > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
 
 **Since:** 26.0.0
@@ -502,6 +484,8 @@ UIExtensionAbility by listening for the page loading status.
 **Required permissions:** ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionContext-requestModalUIExtensionWithAccount(pickerWant: Want, accountId: int): Promise<void>--><!--Device-ServiceExtensionContext-requestModalUIExtensionWithAccount(pickerWant: Want, accountId: int): Promise<void>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -511,14 +495,14 @@ UIExtensionAbility by listening for the page loading status.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| pickerWant | Want | Yes | Want information used to start the UIExtensionAbility. |
+| pickerWant | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information used to start the UIExtensionAbility. |
 | accountId | number | Yes | The account to request. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -534,12 +518,13 @@ UIExtensionAbility by listening for the page loading status.
 startAbility(want: Want, callback: AsyncCallback<void>): void
 ```
 
-Starts an ability. This API can be called only on the main thread. It uses an asynchronous callback to return the
-result.
+Starts an ability. This API can be called only on the main thread. It uses an asynchronous callback to return the result.
 
 **Since:** 9
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionContext-startAbility(want: Want, callback: AsyncCallback<void>): void--><!--Device-ServiceExtensionContext-startAbility(want: Want, callback: AsyncCallback<void>): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -549,8 +534,8 @@ result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want information about the target ability, such as the ability name and bundle name. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the ability is started, **err** is**undefined**; otherwise, **err** is an error object. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target ability, such as the ability name and bundle name. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the ability is started, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -589,12 +574,13 @@ result.
 startAbility(want: Want, options: StartOptions, callback: AsyncCallback<void>): void
 ```
 
-Starts an ability. This API can be called only on the main thread. It uses an asynchronous callback to return the
-result.
+Starts an ability. This API can be called only on the main thread. It uses an asynchronous callback to return the result.
 
 **Since:** 9
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionContext-startAbility(want: Want, options: StartOptions, callback: AsyncCallback<void>): void--><!--Device-ServiceExtensionContext-startAbility(want: Want, options: StartOptions, callback: AsyncCallback<void>): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -604,9 +590,9 @@ result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want information about the target ability. |
-| options | StartOptions | Yes | Parameters used for starting the ability. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the ability is started, **err** is**undefined**; otherwise, **err** is an error object. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target ability. |
+| options | [StartOptions](arkts-ability-app-ability-startoptions-startoptions-c-sys.md) | Yes | Parameters used for starting the ability. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the ability is started, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -620,7 +606,7 @@ result.
 | [16000006](../errorcode-ability.md#16000006-crossuser-operation-is-not-allowed) | Cross-user operations are not allowed. |
 | [16000008](../errorcode-ability.md#16000008-crowdtesting-application-expires) | The crowdtesting application expires. |
 | [16000009](../errorcode-ability.md#16000009-ability-start-or-stop-failure-in-wukong-mode) | An ability cannot be started or stopped in Wukong mode. |
-| [16000010](../errorcode-ability.md#16000010-continuation-flag-is-forbidden) | The call with the continuation and prepare continuation flag isforbidden. |
+| [16000010](../errorcode-ability.md#16000010-continuation-flag-is-forbidden) | The call with the continuation and prepare continuation flag is forbidden. |
 | [16000011](../errorcode-ability.md#16000011-context-does-not-exist) | The context does not exist. |
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 | [16000053](../errorcode-ability.md#16000053-ability-is-not-on-top-of-ui) | The ability is not on the top of the UI. |
@@ -645,12 +631,13 @@ result.
 startAbility(want: Want, options?: StartOptions): Promise<void>
 ```
 
-Starts an ability. This API can be called only on the main thread. It uses a promise to return the result
-asynchronously.
+Starts an ability. This API can be called only on the main thread. It uses a promise to return the result asynchronously.
 
 **Since:** 9
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionContext-startAbility(want: Want, options?: StartOptions): Promise<void>--><!--Device-ServiceExtensionContext-startAbility(want: Want, options?: StartOptions): Promise<void>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -660,14 +647,14 @@ asynchronously.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want information about the target ability, such as the ability name and bundle name. |
-| options | StartOptions | No | Parameters used for starting the ability. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target ability, such as the ability name and bundle name. |
+| options | [StartOptions](arkts-ability-app-ability-startoptions-startoptions-c-sys.md) | No | Parameters used for starting the ability. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -706,21 +693,18 @@ asynchronously.
 startAbilityAsCaller(want: Want, callback: AsyncCallback<void>): void
 ```
 
-Starts an ability with the caller information specified. The caller information is carried in **Want** and
-identified at the system service layer. The ability can obtain the caller information from the **Want** parameter
-in the **onCreate** lifecycle callback. When this API is used to start an ability, the caller information carried
-in **Want** is not overwritten by the current application information. The system service layer can obtain the
-initial caller information. This API can be called only on the main thread. It uses an asynchronous callback to
-return the result.
+Starts an ability with the caller information specified. The caller information is carried in **Want** and identified at the system service layer. The ability can obtain the caller information from the **Want** parameter in the **onCreate** lifecycle callback. When this API is used to start an ability, the caller information carried in **Want** is not overwritten by the current application information. The system service layer can obtain the initial caller information. This API can be called only on the main thread. It uses an asynchronous callback to return the result.
 
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
+> **NOTE**  
+>  
+> For details about the startup rules for the components in the stage model, see  
 > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
 
 **Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionContext-startAbilityAsCaller(want: Want, callback: AsyncCallback<void>): void--><!--Device-ServiceExtensionContext-startAbilityAsCaller(want: Want, callback: AsyncCallback<void>): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -730,8 +714,8 @@ return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want information about the target ability. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the ability is started, **err** is**undefined**; otherwise, **err** is an error object. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target ability. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the ability is started, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -770,21 +754,18 @@ return the result.
 startAbilityAsCaller(want: Want, options: StartOptions, callback: AsyncCallback<void>): void
 ```
 
-Starts an ability with the caller information and start options specified. The caller information is carried in
-**Want** and identified at the system service layer. The ability can obtain the caller information from the
-**Want** parameter in the **onCreate** lifecycle callback. When this API is used to start an ability, the caller
-information carried in **Want** is not overwritten by the current application information. The system service layer
-can obtain the initial caller information. This API can be called only on the main thread. It uses an asynchronous
-callback to return the result.
+Starts an ability with the caller information and start options specified. The caller information is carried in **Want** and identified at the system service layer. The ability can obtain the caller information from the **Want** parameter in the **onCreate** lifecycle callback. When this API is used to start an ability, the caller information carried in **Want** is not overwritten by the current application information. The system service layer can obtain the initial caller information. This API can be called only on the main thread. It uses an asynchronous callback to return the result.
 
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
+> **NOTE**  
+>  
+> For details about the startup rules for the components in the stage model, see  
 > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
 
 **Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionContext-startAbilityAsCaller(want: Want, options: StartOptions, callback: AsyncCallback<void>): void--><!--Device-ServiceExtensionContext-startAbilityAsCaller(want: Want, options: StartOptions, callback: AsyncCallback<void>): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -794,9 +775,9 @@ callback to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want information about the target ability. |
-| options | StartOptions | Yes | Parameters used for starting the ability. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the ability is started, **err** is**undefined**; otherwise, **err** is an error object. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target ability. |
+| options | [StartOptions](arkts-ability-app-ability-startoptions-startoptions-c-sys.md) | Yes | Parameters used for starting the ability. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the ability is started, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -833,21 +814,18 @@ callback to return the result.
 startAbilityAsCaller(want: Want, options?: StartOptions): Promise<void>
 ```
 
-Starts an ability with the start options specified. The caller information is carried in **Want** and identified at
-the system service layer. The ability can obtain the caller information from the **Want** parameter in the
-**onCreate** lifecycle callback. When this API is used to start an ability, the caller information carried in
-**Want** is not overwritten by the current application information. The system service layer can obtain the initial
-caller information. This API can be called only on the main thread. It uses a promise to return the result
-asynchronously.
+Starts an ability with the start options specified. The caller information is carried in **Want** and identified at the system service layer. The ability can obtain the caller information from the **Want** parameter in the **onCreate** lifecycle callback. When this API is used to start an ability, the caller information carried in **Want** is not overwritten by the current application information. The system service layer can obtain the initial caller information. This API can be called only on the main thread. It uses a promise to return the result asynchronously.
 
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
+> **NOTE**  
+>  
+> For details about the startup rules for the components in the stage model, see  
 > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
 
 **Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionContext-startAbilityAsCaller(want: Want, options?: StartOptions): Promise<void>--><!--Device-ServiceExtensionContext-startAbilityAsCaller(want: Want, options?: StartOptions): Promise<void>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -857,14 +835,14 @@ asynchronously.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want information about the target ability. |
-| options | StartOptions | No | Parameters used for starting the ability. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target ability. |
+| options | [StartOptions](arkts-ability-app-ability-startoptions-startoptions-c-sys.md) | No | Parameters used for starting the ability. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -903,26 +881,23 @@ asynchronously.
 startAbilityByCall(want: Want): Promise<Caller>
 ```
 
-Starts an ability in the foreground or background and obtains the caller object for communicating with the ability.
-This API can be called only on the main thread. It uses a promise to return the result asynchronously.
+Starts an ability in the foreground or background and obtains the caller object for communicating with the ability.This API can be called only on the main thread. It uses a promise to return the result asynchronously.
 
-This API cannot be used to start the UIAbility with the launch type set to
-[specified](../../../../application-models/uiability-launch-type.md#specified).
+This API cannot be used to start the UIAbility with the launch type set to [specified](../../../../application-models/uiability-launch-type.md#specified).
 
 Observe the following when using this API:
 
-- If an application running in the background needs to call this API to start an ability, it must have the
-ohos.permission.START_ABILITIES_FROM_BACKGROUND permission.
-- If **exported** of the target ability is **false** in cross-application scenarios, the caller must have the
-ohos.permission.START_INVISIBLE_ABILITY permission.
-- The rules for using this API in the same-device and cross-device scenarios are different. For details, see
-[Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
+- If an application running in the background needs to call this API to start an ability, it must have the ohos.permission.START_ABILITIES_FROM_BACKGROUND permission.  
+- If **exported** of the target ability is **false** in cross-application scenarios, the caller must have the ohos.permission.START_INVISIBLE_ABILITY permission.  
+- The rules for using this API in the same-device and cross-device scenarios are different. For details, see [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
 
 **Since:** 9
 
 **Required permissions:** ohos.permission.ABILITY_BACKGROUND_COMMUNICATION
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionContext-startAbilityByCall(want: Want): Promise<Caller>--><!--Device-ServiceExtensionContext-startAbilityByCall(want: Want): Promise<Caller>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -932,13 +907,13 @@ ohos.permission.START_INVISIBLE_ABILITY permission.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Information about the ability to start, including **abilityName**, **moduleName**,**bundleName**, **deviceId**, and **parameters** (optional). If **parameters** is left blank or null, theability is started in the background. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Information about the ability to start, including **abilityName**, **moduleName**,**bundleName**, **deviceId**, and **parameters** (optional). If **parameters** is left blank or null, the ability is started in the background. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Caller&gt; | Promise used to return the caller object to communicate with. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Caller> | Promise used to return the caller object to communicate with. |
 
 **Error codes:**
 
@@ -962,28 +937,24 @@ ohos.permission.START_INVISIBLE_ABILITY permission.
 startAbilityByCallWithAccount(want: Want, accountId: number): Promise<Caller>
 ```
 
-Starts an ability with the account ID specified and obtains the caller object for communicating with the ability.
-This API can be called only on the main thread. It uses a promise to return the result asynchronously.
+Starts an ability with the account ID specified and obtains the caller object for communicating with the ability.This API can be called only on the main thread. It uses a promise to return the result asynchronously.
 
-This API cannot be used to start the UIAbility with the launch type set to
-[specified](../../../../application-models/uiability-launch-type.md#specified).
+This API cannot be used to start the UIAbility with the launch type set to [specified](../../../../application-models/uiability-launch-type.md#specified).
 
 Observe the following when using this API:
 
-- If an application needs to call this API to start an ability that belongs to another user, it must have the
-ohos.permission.ABILITY_BACKGROUND_COMMUNICATION and ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS permissions.
-- If an application running in the background needs to call this API to start an ability, it must have the
-ohos.permission.START_ABILITIES_FROM_BACKGROUND permission.
-- If **exported** of the target ability is **false** in cross-application scenarios, the caller must have the
-ohos.permission.START_INVISIBLE_ABILITY permission.
-- The rules for using this API in the same-device and cross-device scenarios are different. For details, see
-[Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
+- If an application needs to call this API to start an ability that belongs to another user, it must have the ohos.permission.ABILITY_BACKGROUND_COMMUNICATION and ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS permissions.  
+- If an application running in the background needs to call this API to start an ability, it must have the ohos.permission.START_ABILITIES_FROM_BACKGROUND permission.  
+- If **exported** of the target ability is **false** in cross-application scenarios, the caller must have the ohos.permission.START_INVISIBLE_ABILITY permission.  
+- The rules for using this API in the same-device and cross-device scenarios are different. For details, see [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
 
 **Since:** 10
 
 **Required permissions:** ohos.permission.ABILITY_BACKGROUND_COMMUNICATION and ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionContext-startAbilityByCallWithAccount(want: Want, accountId: int): Promise<Caller>--><!--Device-ServiceExtensionContext-startAbilityByCallWithAccount(want: Want, accountId: int): Promise<Caller>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -993,14 +964,14 @@ ohos.permission.START_INVISIBLE_ABILITY permission.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Information about the ability to start, including **abilityName**, **moduleName**,**bundleName**, **deviceId** (optional), and **parameters** (optional). If **deviceId** is left blank or null,the local ability is started. If **parameters** is left blank or null, the ability is started in thebackground. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Information about the ability to start, including **abilityName**, **moduleName**,**bundleName**, **deviceId** (optional), and **parameters** (optional). If **deviceId** is left blank or null,the local ability is started. If **parameters** is left blank or null, the ability is started in the background. |
 | accountId | number | Yes | ID of the target system account. The value **-1** indicates the current user. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Caller&gt; | Promise used to return the caller object to communicate with. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Caller> | Promise used to return the caller object to communicate with. |
 
 **Error codes:**
 
@@ -1027,12 +998,11 @@ ohos.permission.START_INVISIBLE_ABILITY permission.
 startAbilityWithAccount(want: Want, accountId: number, callback: AsyncCallback<void>): void
 ```
 
-Starts an ability with the account ID specified. This API can be called only on the main thread. It uses an
-asynchronous callback to return the result.
+Starts an ability with the account ID specified. This API can be called only on the main thread. It uses an asynchronous callback to return the result.
 
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
+> **NOTE**  
+>  
+> For details about the startup rules for the components in the stage model, see  
 > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
 
 **Since:** 9
@@ -1040,6 +1010,8 @@ asynchronous callback to return the result.
 **Required permissions:** ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionContext-startAbilityWithAccount(want: Want, accountId: int, callback: AsyncCallback<void>): void--><!--Device-ServiceExtensionContext-startAbilityWithAccount(want: Want, accountId: int, callback: AsyncCallback<void>): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -1049,9 +1021,9 @@ asynchronous callback to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want information about the target ability. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target ability. |
 | accountId | number | Yes | ID of the target system account. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the ability is started, **err** is**undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the ability is started, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1091,12 +1063,11 @@ asynchronous callback to return the result.
 startAbilityWithAccount(want: Want, accountId: number, options: StartOptions, callback: AsyncCallback<void>): void
 ```
 
-Starts an ability with the account ID and start options specified. This API can be called only on the main thread.
-It uses an asynchronous callback to return the result.
+Starts an ability with the account ID and start options specified. This API can be called only on the main thread.It uses an asynchronous callback to return the result.
 
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
+> **NOTE**  
+>  
+> For details about the startup rules for the components in the stage model, see  
 > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
 
 **Since:** 9
@@ -1104,6 +1075,8 @@ It uses an asynchronous callback to return the result.
 **Required permissions:** ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionContext-startAbilityWithAccount(want: Want, accountId: int, options: StartOptions, callback: AsyncCallback<void>): void--><!--Device-ServiceExtensionContext-startAbilityWithAccount(want: Want, accountId: int, options: StartOptions, callback: AsyncCallback<void>): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -1113,10 +1086,10 @@ It uses an asynchronous callback to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want information about the target ability. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target ability. |
 | accountId | number | Yes | ID of the target system account. |
-| options | StartOptions | Yes | Parameters used for starting the ability. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the ability is started, **err** is**undefined**; otherwise, **err** is an error object. |
+| options | [StartOptions](arkts-ability-app-ability-startoptions-startoptions-c-sys.md) | Yes | Parameters used for starting the ability. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the ability is started, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1132,7 +1105,7 @@ It uses an asynchronous callback to return the result.
 | [16000006](../errorcode-ability.md#16000006-crossuser-operation-is-not-allowed) | Cross-user operations are not allowed. |
 | [16000008](../errorcode-ability.md#16000008-crowdtesting-application-expires) | The crowdtesting application expires. |
 | [16000009](../errorcode-ability.md#16000009-ability-start-or-stop-failure-in-wukong-mode) | An ability cannot be started or stopped in Wukong mode. |
-| [16000010](../errorcode-ability.md#16000010-continuation-flag-is-forbidden) | The call with the continuation and prepare continuation flag isforbidden.<br>**Applicable version:** 9 and later |
+| [16000010](../errorcode-ability.md#16000010-continuation-flag-is-forbidden) | The call with the continuation and prepare continuation flag is forbidden.<br>**Applicable version:** 9 and later |
 | [16000011](../errorcode-ability.md#16000011-context-does-not-exist) | The context does not exist. |
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 | [16000053](../errorcode-ability.md#16000053-ability-is-not-on-top-of-ui) | The ability is not on the top of the UI. |
@@ -1156,12 +1129,11 @@ It uses an asynchronous callback to return the result.
 startAbilityWithAccount(want: Want, accountId: number, options?: StartOptions): Promise<void>
 ```
 
-Starts an ability with the account ID specified. This API can be called only on the main thread. It uses a promise
-to return the result asynchronously.
+Starts an ability with the account ID specified. This API can be called only on the main thread. It uses a promise to return the result asynchronously.
 
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
+> **NOTE**  
+>  
+> For details about the startup rules for the components in the stage model, see  
 > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
 
 **Since:** 9
@@ -1169,6 +1141,8 @@ to return the result asynchronously.
 **Required permissions:** ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionContext-startAbilityWithAccount(want: Want, accountId: int, options?: StartOptions): Promise<void>--><!--Device-ServiceExtensionContext-startAbilityWithAccount(want: Want, accountId: int, options?: StartOptions): Promise<void>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -1178,15 +1152,15 @@ to return the result asynchronously.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want information about the target ability. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target ability. |
 | accountId | number | Yes | ID of the target system account. |
-| options | StartOptions | No | Parameters used for starting the ability. |
+| options | [StartOptions](arkts-ability-app-ability-startoptions-startoptions-c-sys.md) | No | Parameters used for starting the ability. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1226,17 +1200,18 @@ to return the result asynchronously.
 startRecentAbility(want: Want, callback: AsyncCallback<void>): void
 ```
 
-Starts an ability. If the ability has multiple instances, the latest instance is started. This API can be called
-only on the main thread. It uses an asynchronous callback to return the result.
+Starts an ability. If the ability has multiple instances, the latest instance is started. This API can be called only on the main thread. It uses an asynchronous callback to return the result.
 
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
+> **NOTE**  
+>  
+> For details about the startup rules for the components in the stage model, see  
 > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
 
 **Since:** 9
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionContext-startRecentAbility(want: Want, callback: AsyncCallback<void>): void--><!--Device-ServiceExtensionContext-startRecentAbility(want: Want, callback: AsyncCallback<void>): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -1246,8 +1221,8 @@ only on the main thread. It uses an asynchronous callback to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want information about the target ability. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the ability is started, **err** is**undefined**; otherwise, **err** is an error object. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target ability. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the ability is started, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1284,19 +1259,20 @@ only on the main thread. It uses an asynchronous callback to return the result.
 startRecentAbility(want: Want, options: StartOptions, callback: AsyncCallback<void>): void
 ```
 
-Starts an ability. If the ability has multiple instances, the latest instance is started. This API can be called
-only on the main thread. It uses an asynchronous callback to return the result.
+Starts an ability. If the ability has multiple instances, the latest instance is started. This API can be called only on the main thread. It uses an asynchronous callback to return the result.
 
 You can use this API to carry start options.
 
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
+> **NOTE**  
+>  
+> For details about the startup rules for the components in the stage model, see  
 > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
 
 **Since:** 9
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionContext-startRecentAbility(want: Want, options: StartOptions, callback: AsyncCallback<void>): void--><!--Device-ServiceExtensionContext-startRecentAbility(want: Want, options: StartOptions, callback: AsyncCallback<void>): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -1306,9 +1282,9 @@ You can use this API to carry start options.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want information about the target ability. |
-| options | StartOptions | Yes | Parameters used for starting the ability. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the ability is started, **err** is**undefined**; otherwise, **err** is an error object. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target ability. |
+| options | [StartOptions](arkts-ability-app-ability-startoptions-startoptions-c-sys.md) | Yes | Parameters used for starting the ability. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the ability is started, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1322,7 +1298,7 @@ You can use this API to carry start options.
 | [16000006](../errorcode-ability.md#16000006-crossuser-operation-is-not-allowed) | Cross-user operations are not allowed. |
 | [16000008](../errorcode-ability.md#16000008-crowdtesting-application-expires) | The crowdtesting application expires. |
 | [16000009](../errorcode-ability.md#16000009-ability-start-or-stop-failure-in-wukong-mode) | An ability cannot be started or stopped in Wukong mode. |
-| [16000010](../errorcode-ability.md#16000010-continuation-flag-is-forbidden) | The call with the continuation and prepare continuation flag isforbidden.<br>**Applicable version:** 9 and later |
+| [16000010](../errorcode-ability.md#16000010-continuation-flag-is-forbidden) | The call with the continuation and prepare continuation flag is forbidden.<br>**Applicable version:** 9 and later |
 | [16000011](../errorcode-ability.md#16000011-context-does-not-exist) | The context does not exist. |
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 | [16000053](../errorcode-ability.md#16000053-ability-is-not-on-top-of-ui) | The ability is not on the top of the UI. |
@@ -1345,17 +1321,18 @@ You can use this API to carry start options.
 startRecentAbility(want: Want, options?: StartOptions): Promise<void>
 ```
 
-Starts an ability. If the ability has multiple instances, the latest instance is started. This API uses a promise
-to return the result asynchronously. It can be called only on the main thread.
+Starts an ability. If the ability has multiple instances, the latest instance is started. This API uses a promise to return the result asynchronously. It can be called only on the main thread.
 
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
+> **NOTE**  
+>  
+> For details about the startup rules for the components in the stage model, see  
 > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
 
 **Since:** 9
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionContext-startRecentAbility(want: Want, options?: StartOptions): Promise<void>--><!--Device-ServiceExtensionContext-startRecentAbility(want: Want, options?: StartOptions): Promise<void>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -1365,14 +1342,14 @@ to return the result asynchronously. It can be called only on the main thread.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want information about the target ability. |
-| options | StartOptions | No | Parameters used for starting the ability. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target ability. |
+| options | [StartOptions](arkts-ability-app-ability-startoptions-startoptions-c-sys.md) | No | Parameters used for starting the ability. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | The promise returned by the function. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
 
 **Error codes:**
 
@@ -1415,6 +1392,8 @@ Starts a ServiceExtensionAbility. This API uses an asynchronous callback to retu
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-ServiceExtensionContext-startServiceExtensionAbility(want: Want, callback: AsyncCallback<void>): void--><!--Device-ServiceExtensionContext-startServiceExtensionAbility(want: Want, callback: AsyncCallback<void>): void-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **System API:** This is a system API.
@@ -1423,8 +1402,8 @@ Starts a ServiceExtensionAbility. This API uses an asynchronous callback to retu
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want information about the target ability. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the ServiceExtensionAbility isstarted, **err** is **undefined**; otherwise, **err** is an error object. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target ability. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the ServiceExtensionAbility is started, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1458,6 +1437,8 @@ Starts a ServiceExtensionAbility. This API uses a promise to return the result a
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-ServiceExtensionContext-startServiceExtensionAbility(want: Want): Promise<void>--><!--Device-ServiceExtensionContext-startServiceExtensionAbility(want: Want): Promise<void>-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **System API:** This is a system API.
@@ -1466,13 +1447,13 @@ Starts a ServiceExtensionAbility. This API uses a promise to return the result a
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want information about the target ability. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target ability. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1500,13 +1481,12 @@ Starts a ServiceExtensionAbility. This API uses a promise to return the result a
 startServiceExtensionAbilityWithAccount(want: Want, accountId: number, callback: AsyncCallback<void>): void
 ```
 
-Starts a ServiceExtensionAbility with the account ID specified. This API uses an asynchronous callback to return
-the result.
+Starts a ServiceExtensionAbility with the account ID specified. This API uses an asynchronous callback to return the result.
 
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
-> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
+> **NOTE**  
+>  
+> For details about the startup rules for the components in the stage model, see  
+> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).  
 > > Permission verification is not required when **accountId** specifies the current user.
 
 **Since:** 9
@@ -1514,6 +1494,8 @@ the result.
 **Required permissions:** ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionContext-startServiceExtensionAbilityWithAccount(want: Want, accountId: int, callback: AsyncCallback<void>): void--><!--Device-ServiceExtensionContext-startServiceExtensionAbilityWithAccount(want: Want, accountId: int, callback: AsyncCallback<void>): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -1523,9 +1505,9 @@ the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want information about the target ability. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target ability. |
 | accountId | number | Yes | ID of the target system account. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the ServiceExtensionAbility isstarted, **err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the ServiceExtensionAbility is started, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1553,13 +1535,12 @@ the result.
 startServiceExtensionAbilityWithAccount(want: Want, accountId: number): Promise<void>
 ```
 
-Starts a ServiceExtensionAbility with the account ID specified. This API uses a promise to return the result
-asynchronously.
+Starts a ServiceExtensionAbility with the account ID specified. This API uses a promise to return the result asynchronously.
 
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
-> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
+> **NOTE**  
+>  
+> For details about the startup rules for the components in the stage model, see  
+> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).  
 > > Permission verification is not required when **accountId** specifies the current user.
 
 **Since:** 9
@@ -1567,6 +1548,8 @@ asynchronously.
 **Required permissions:** ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionContext-startServiceExtensionAbilityWithAccount(want: Want, accountId: int): Promise<void>--><!--Device-ServiceExtensionContext-startServiceExtensionAbilityWithAccount(want: Want, accountId: int): Promise<void>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -1576,14 +1559,14 @@ asynchronously.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want information about the target ability. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target ability. |
 | accountId | number | Yes | ID of the target system account. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1613,22 +1596,20 @@ startUIAbilities(wantList: Array<Want>): Promise<void>
 
 Starts multiple UIAbility components simultaneously. This API uses a promise to return the result asynchronously.
 
-You can pass the Want information of multiple UIAbility instances, which can point to one or more applications. If
-all the UIAbility instances can be started successfully, the system displays these UIAbility instances in multiple
-windows simultaneously. Depending on the window handling, different devices may have varying display effects (
-including window shape, quantity, and layout).
+You can pass the Want information of multiple UIAbility instances, which can point to one or more applications. If all the UIAbility instances can be started successfully, the system displays these UIAbility instances in multiple windows simultaneously. Depending on the window handling, different devices may have varying display effects (including window shape, quantity, and layout).
 
-This API can be properly called on phones and tablets. If it is called on other devices, error code 801 is
-returned.
+This API can be properly called on phones and tablets. If it is called on other devices, error code 801 is returned.
 
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
+> **NOTE**  
+>  
+> For details about the startup rules for the components in the stage model, see  
 > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
 
 **Since:** 20
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionContext-startUIAbilities(wantList: Array<Want>): Promise<void>--><!--Device-ServiceExtensionContext-startUIAbilities(wantList: Array<Want>): Promise<void>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -1638,13 +1619,13 @@ returned.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| wantList | Array&lt;Want&gt; | Yes | List of launch parameters for multiple UIAbility components to be startedsimultaneously. A maximum of four Want objects can be passed. The **Want** parameter does not support implicitlaunch, cross-user launch, distributed launch, instant installation, or on-demand loading. By default, the mainapplication is launched unless specified otherwise. |
+| wantList | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Want> | Yes | List of launch parameters for multiple UIAbility components to be started simultaneously. A maximum of four Want objects can be passed. The **Want** parameter does not support implicit launch, cross-user launch, distributed launch, instant installation, or on-demand loading. By default, the main application is launched unless specified otherwise. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1667,7 +1648,7 @@ returned.
 | [16000080](../errorcode-ability.md#16000080-new-instances-cannot-be-created) | Creating a new instance is not supported. |
 | [16000120](../errorcode-ability.md#16000120-number-of-elements-in-wantlist-exceeds-4-or-is-less-than-1) | A maximum of four UIAbility instances can be started simultaneously.The current parameter exceeds the maximum number or is less than 1. |
 | [16000121](../errorcode-ability.md#16000121-target-component-is-not-a-uiability) | The target component type is not a UIAbility. |
-| [16000122](../errorcode-ability.md#16000122-target-component-is-intercepted-by-the-system-control-module) | The target component is blocked by the system module anddoes not support startup. |
+| [16000122](../errorcode-ability.md#16000122-target-component-is-intercepted-by-the-system-control-module) | The target component is blocked by the system module and does not support startup. |
 | [16000123](../errorcode-ability.md#16000123-implicit-startup-is-not-supported) | Implicit startup is not supported. |
 | [16000124](../errorcode-ability.md#16000124-starting-a-distributed-uiability-is-not-supported) | Starting a remote UIAbility is not supported. |
 | [16000125](../errorcode-ability.md#16000125-starting-a-plugin-is-not-supported) | Starting a plugin UIAbility is not supported. |
@@ -1679,18 +1660,18 @@ returned.
 startUIServiceExtensionAbility(want: Want): Promise<void>
 ```
 
-Starts a new
-[UIServiceExtensionAbility](arkts-ability-uiserviceextensionability-c-sys.md). This
-API uses a promise to return the result asynchronously.
+Starts a new [UIServiceExtensionAbility](arkts-ability-app-ability-uiserviceextensionability-uiserviceextensionability-c-sys.md). This API uses a promise to return the result asynchronously.
 
-> **NOTE**
->
-> For details about the startup rules for the components in the stage model, see
+> **NOTE**  
+>  
+> For details about the startup rules for the components in the stage model, see  
 > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
 
 **Since:** 14
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionContext-startUIServiceExtensionAbility(want: Want): Promise<void>--><!--Device-ServiceExtensionContext-startUIServiceExtensionAbility(want: Want): Promise<void>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -1700,13 +1681,13 @@ API uses a promise to return the result asynchronously.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Indicates the want info to start. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Indicates the want info to start. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1740,6 +1721,8 @@ Stops a ServiceExtensionAbility. This API uses an asynchronous callback to retur
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-ServiceExtensionContext-stopServiceExtensionAbility(want: Want, callback: AsyncCallback<void>): void--><!--Device-ServiceExtensionContext-stopServiceExtensionAbility(want: Want, callback: AsyncCallback<void>): void-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **System API:** This is a system API.
@@ -1748,8 +1731,8 @@ Stops a ServiceExtensionAbility. This API uses an asynchronous callback to retur
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want information about the target ability. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the ServiceExtensionAbility isstopped, **err** is **undefined**; otherwise, **err** is an error object. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target ability. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the ServiceExtensionAbility is stopped, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1779,6 +1762,8 @@ Stops a ServiceExtensionAbility. This API uses a promise to return the result as
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-ServiceExtensionContext-stopServiceExtensionAbility(want: Want): Promise<void>--><!--Device-ServiceExtensionContext-stopServiceExtensionAbility(want: Want): Promise<void>-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **System API:** This is a system API.
@@ -1787,13 +1772,13 @@ Stops a ServiceExtensionAbility. This API uses a promise to return the result as
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want information about the target ability. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target ability. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1817,11 +1802,10 @@ Stops a ServiceExtensionAbility. This API uses a promise to return the result as
 stopServiceExtensionAbilityWithAccount(want: Want, accountId: number, callback: AsyncCallback<void>): void
 ```
 
-Stops a ServiceExtensionAbility with the specified account. This API uses an asynchronous callback to return the
-result.
+Stops a ServiceExtensionAbility with the specified account. This API uses an asynchronous callback to return the result.
 
-> **NOTE**
->
+> **NOTE**  
+>  
 > Permission verification is not required when **accountId** specifies the current user.
 
 **Since:** 9
@@ -1829,6 +1813,8 @@ result.
 **Required permissions:** ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionContext-stopServiceExtensionAbilityWithAccount(want: Want, accountId: int, callback: AsyncCallback<void>): void--><!--Device-ServiceExtensionContext-stopServiceExtensionAbilityWithAccount(want: Want, accountId: int, callback: AsyncCallback<void>): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -1838,9 +1824,9 @@ result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want information about the target ability. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target ability. |
 | accountId | number | Yes | ID of the target system account. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the ServiceExtensionAbility isstopped, **err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the ServiceExtensionAbility is stopped, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1864,11 +1850,10 @@ result.
 stopServiceExtensionAbilityWithAccount(want: Want, accountId: number): Promise<void>
 ```
 
-Stops a ServiceExtensionAbility with the specified account. This API uses a promise to return the result
-asynchronously.
+Stops a ServiceExtensionAbility with the specified account. This API uses a promise to return the result asynchronously.
 
-> **NOTE**
->
+> **NOTE**  
+>  
 > Permission verification is not required when **accountId** specifies the current user.
 
 **Since:** 9
@@ -1876,6 +1861,8 @@ asynchronously.
 **Required permissions:** ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionContext-stopServiceExtensionAbilityWithAccount(want: Want, accountId: int): Promise<void>--><!--Device-ServiceExtensionContext-stopServiceExtensionAbilityWithAccount(want: Want, accountId: int): Promise<void>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -1885,14 +1872,14 @@ asynchronously.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want information about the target ability. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target ability. |
 | accountId | number | Yes | ID of the target system account. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1916,12 +1903,13 @@ asynchronously.
 terminateSelf(callback: AsyncCallback<void>): void
 ```
 
-Terminates this ability. This API can be called only on the main thread. It uses an asynchronous callback to return
-the result.
+Terminates this ability. This API can be called only on the main thread. It uses an asynchronous callback to return the result.
 
 **Since:** 9
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionContext-terminateSelf(callback: AsyncCallback<void>): void--><!--Device-ServiceExtensionContext-terminateSelf(callback: AsyncCallback<void>): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -1931,7 +1919,7 @@ the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the ability is terminated, **err**is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the ability is terminated, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1951,12 +1939,13 @@ the result.
 terminateSelf(): Promise<void>
 ```
 
-Terminates this ability. This API can be called only on the main thread. It uses a promise to return the result
-asynchronously.
+Terminates this ability. This API can be called only on the main thread. It uses a promise to return the result asynchronously.
 
 **Since:** 9
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ServiceExtensionContext-terminateSelf(): Promise<void>--><!--Device-ServiceExtensionContext-terminateSelf(): Promise<void>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -1966,7 +1955,7 @@ asynchronously.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 

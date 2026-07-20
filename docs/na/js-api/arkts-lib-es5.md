@@ -28,81 +28,81 @@
 
 | Name | Description |
 | --- | --- |
-| [Array](arkts-na-array-i.md) |  |
-| [ArrayBuffer](arkts-na-arraybuffer-i.md) | Represents a raw buffer of binary data, which is used to store data for thedifferent typed arrays. ArrayBuffers cannot be read from or written to directly,but can be passed to a typed array or DataView Object to interpret the rawbuffer as needed. |
-| [ArrayBufferConstructor](arkts-na-arraybufferconstructor-i.md) |  |
-| [ArrayBufferTypes](arkts-na-arraybuffertypes-i.md) | Allowed ArrayBuffer types for the buffer of an ArrayBufferView and related Typed Arrays. |
-| [ArrayBufferView](arkts-na-arraybufferview-i.md) |  |
-| [ArrayConstructor](arkts-na-arrayconstructor-i.md) |  |
-| [ArrayLike](arkts-na-arraylike-i.md) |  |
-| [Boolean](arkts-na-boolean-i.md) |  |
-| [BooleanConstructor](arkts-na-booleanconstructor-i.md) |  |
-| [CallableFunction](arkts-na-callablefunction-i.md) |  |
-| [ConcatArray](arkts-na-concatarray-i.md) |  |
-| [DataView](arkts-na-dataview-i.md) |  |
-| [DataViewConstructor](arkts-na-dataviewconstructor-i.md) |  |
-| [Date](arkts-na-date-i.md) |  |
-| [DateConstructor](arkts-na-dateconstructor-i.md) |  |
-| [Error](arkts-na-error-i.md) |  |
-| [ErrorConstructor](arkts-na-errorconstructor-i.md) |  |
-| [EvalError](arkts-na-evalerror-i.md) |  |
-| [EvalErrorConstructor](arkts-na-evalerrorconstructor-i.md) |  |
-| [Float32Array](arkts-na-float32array-i.md) | A typed array of 32-bit float values. The contents are initialized to 0. If the requested numberof bytes could not be allocated an exception is raised. |
-| [Float32ArrayConstructor](arkts-na-float32arrayconstructor-i.md) |  |
-| [Float64Array](arkts-na-float64array-i.md) | A typed array of 64-bit float values. The contents are initialized to 0. If the requestednumber of bytes could not be allocated an exception is raised. |
-| [Float64ArrayConstructor](arkts-na-float64arrayconstructor-i.md) |  |
-| [Function](arkts-na-function-i.md) | Creates a new function. |
-| [FunctionConstructor](arkts-na-functionconstructor-i.md) |  |
-| [IArguments](arkts-na-iarguments-i.md) |  |
-| [ImportAssertions](arkts-na-importassertions-i.md) | The type for the `assert` property of the optional second argument to `import()`. |
-| [ImportCallOptions](arkts-na-importcalloptions-i.md) | The type for the optional second argument to `import()`.If your host environment supports additional options, this type may beaugmented via interface merging. |
-| [ImportMeta](arkts-na-importmeta-i.md) | The type of `import.meta`.If you need to declare that a given property exists on `import.meta`,this type may be augmented via interface merging. |
-| [Int16Array](arkts-na-int16array-i.md) | A typed array of 16-bit signed integer values. The contents are initialized to 0. If therequested number of bytes could not be allocated an exception is raised. |
-| [Int16ArrayConstructor](arkts-na-int16arrayconstructor-i.md) |  |
-| [Int32Array](arkts-na-int32array-i.md) | A typed array of 32-bit signed integer values. The contents are initialized to 0. If therequested number of bytes could not be allocated an exception is raised. |
-| [Int32ArrayConstructor](arkts-na-int32arrayconstructor-i.md) |  |
-| [Int8Array](arkts-na-int8array-i.md) | A typed array of 8-bit integer values. The contents are initialized to 0. If the requestednumber of bytes could not be allocated an exception is raised. |
-| [Int8ArrayConstructor](arkts-na-int8arrayconstructor-i.md) |  |
-| [JSON](arkts-na-json-i.md) |  |
-| [Math](arkts-na-math-i.md) |  |
-| [NewableFunction](arkts-na-newablefunction-i.md) |  |
-| [Number](arkts-na-number-i.md) |  |
-| [NumberConstructor](arkts-na-numberconstructor-i.md) |  |
-| [Object](arkts-na-object-i.md) |  |
-| [ObjectConstructor](arkts-na-objectconstructor-i.md) |  |
-| [Promise](arkts-na-promise-i.md) | Represents the completion of an asynchronous operation |
-| [PromiseLike](arkts-na-promiselike-i.md) |  |
-| [PropertyDescriptor](arkts-na-propertydescriptor-i.md) |  |
-| [PropertyDescriptorMap](arkts-na-propertydescriptormap-i.md) |  |
-| [RangeError](arkts-na-rangeerror-i.md) |  |
-| [RangeErrorConstructor](arkts-na-rangeerrorconstructor-i.md) |  |
-| [ReadonlyArray](arkts-na-readonlyarray-i.md) |  |
-| [ReferenceError](arkts-na-referenceerror-i.md) |  |
-| [ReferenceErrorConstructor](arkts-na-referenceerrorconstructor-i.md) |  |
-| [RegExp](arkts-na-regexp-i.md) |  |
-| [RegExpConstructor](arkts-na-regexpconstructor-i.md) |  |
-| [RegExpExecArray](arkts-na-regexpexecarray-i.md) |  |
-| [RegExpMatchArray](arkts-na-regexpmatcharray-i.md) |  |
-| [String](arkts-na-string-i.md) |  |
-| [StringConstructor](arkts-na-stringconstructor-i.md) |  |
-| [Symbol](arkts-na-symbol-i.md) |  |
-| [SyntaxError](arkts-na-syntaxerror-i.md) |  |
-| [SyntaxErrorConstructor](arkts-na-syntaxerrorconstructor-i.md) |  |
-| [TemplateStringsArray](arkts-na-templatestringsarray-i.md) |  |
-| [ThisType](arkts-na-thistype-i.md) | Marker for contextual 'this' type |
-| [TypeError](arkts-na-typeerror-i.md) |  |
-| [TypeErrorConstructor](arkts-na-typeerrorconstructor-i.md) |  |
-| [TypedPropertyDescriptor](arkts-na-typedpropertydescriptor-i.md) |  |
-| [URIError](arkts-na-urierror-i.md) |  |
-| [URIErrorConstructor](arkts-na-urierrorconstructor-i.md) |  |
-| [Uint16Array](arkts-na-uint16array-i.md) | A typed array of 16-bit unsigned integer values. The contents are initialized to 0. If therequested number of bytes could not be allocated an exception is raised. |
-| [Uint16ArrayConstructor](arkts-na-uint16arrayconstructor-i.md) |  |
-| [Uint32Array](arkts-na-uint32array-i.md) | A typed array of 32-bit unsigned integer values. The contents are initialized to 0. If therequested number of bytes could not be allocated an exception is raised. |
-| [Uint32ArrayConstructor](arkts-na-uint32arrayconstructor-i.md) |  |
-| [Uint8Array](arkts-na-uint8array-i.md) | A typed array of 8-bit unsigned integer values. The contents are initialized to 0. If therequested number of bytes could not be allocated an exception is raised. |
-| [Uint8ArrayConstructor](arkts-na-uint8arrayconstructor-i.md) |  |
-| [Uint8ClampedArray](arkts-na-uint8clampedarray-i.md) | A typed array of 8-bit unsigned integer (clamped) values. The contents are initialized to 0.If the requested number of bytes could not be allocated an exception is raised. |
-| [Uint8ClampedArrayConstructor](arkts-na-uint8clampedarrayconstructor-i.md) |  |
+| [Array](arkts-na-lib-es5-array-i.md) |  |
+| [ArrayBuffer](arkts-na-lib-es5-arraybuffer-i.md) | Represents a raw buffer of binary data, which is used to store data for the different typed arrays. ArrayBuffers cannot be read from or written to directly,but can be passed to a typed array or DataView Object to interpret the raw buffer as needed. |
+| [ArrayBufferConstructor](arkts-na-lib-es5-arraybufferconstructor-i.md) |  |
+| [ArrayBufferTypes](arkts-na-lib-es5-arraybuffertypes-i.md) | Allowed ArrayBuffer types for the buffer of an ArrayBufferView and related Typed Arrays. |
+| [ArrayBufferView](arkts-na-lib-es5-arraybufferview-i.md) |  |
+| [ArrayConstructor](arkts-na-lib-es5-arrayconstructor-i.md) |  |
+| [ArrayLike](arkts-na-lib-es5-arraylike-i.md) |  |
+| [Boolean](arkts-na-lib-es5-boolean-i.md) |  |
+| [BooleanConstructor](arkts-na-lib-es5-booleanconstructor-i.md) |  |
+| [CallableFunction](arkts-na-lib-es5-callablefunction-i.md) |  |
+| [ConcatArray](arkts-na-lib-es5-concatarray-i.md) |  |
+| [DataView](arkts-na-lib-es5-dataview-i.md) |  |
+| [DataViewConstructor](arkts-na-lib-es5-dataviewconstructor-i.md) |  |
+| [Date](arkts-na-lib-es5-date-i.md) |  |
+| [DateConstructor](arkts-na-lib-es5-dateconstructor-i.md) |  |
+| [Error](arkts-na-lib-es5-error-i.md) |  |
+| [ErrorConstructor](arkts-na-lib-es5-errorconstructor-i.md) |  |
+| [EvalError](arkts-na-lib-es5-evalerror-i.md) |  |
+| [EvalErrorConstructor](arkts-na-lib-es5-evalerrorconstructor-i.md) |  |
+| [Float32Array](arkts-na-lib-es5-float32array-i.md) | A typed array of 32-bit float values. The contents are initialized to 0. If the requested number of bytes could not be allocated an exception is raised. |
+| [Float32ArrayConstructor](arkts-na-lib-es5-float32arrayconstructor-i.md) |  |
+| [Float64Array](arkts-na-lib-es5-float64array-i.md) | A typed array of 64-bit float values. The contents are initialized to 0. If the requested number of bytes could not be allocated an exception is raised. |
+| [Float64ArrayConstructor](arkts-na-lib-es5-float64arrayconstructor-i.md) |  |
+| [Function](arkts-na-lib-es5-function-i.md) | Creates a new function. |
+| [FunctionConstructor](arkts-na-lib-es5-functionconstructor-i.md) |  |
+| [IArguments](arkts-na-lib-es5-iarguments-i.md) |  |
+| [ImportAssertions](arkts-na-lib-es5-importassertions-i.md) | The type for the `assert` property of the optional second argument to `import()`. |
+| [ImportCallOptions](arkts-na-lib-es5-importcalloptions-i.md) | The type for the optional second argument to `import()`.If your host environment supports additional options, this type may be augmented via interface merging. |
+| [ImportMeta](arkts-na-lib-es5-importmeta-i.md) | The type of `import.meta`.If you need to declare that a given property exists on `import.meta`,this type may be augmented via interface merging. |
+| [Int16Array](arkts-na-lib-es5-int16array-i.md) | A typed array of 16-bit signed integer values. The contents are initialized to 0. If the requested number of bytes could not be allocated an exception is raised. |
+| [Int16ArrayConstructor](arkts-na-lib-es5-int16arrayconstructor-i.md) |  |
+| [Int32Array](arkts-na-lib-es5-int32array-i.md) | A typed array of 32-bit signed integer values. The contents are initialized to 0. If the requested number of bytes could not be allocated an exception is raised. |
+| [Int32ArrayConstructor](arkts-na-lib-es5-int32arrayconstructor-i.md) |  |
+| [Int8Array](arkts-na-lib-es5-int8array-i.md) | A typed array of 8-bit integer values. The contents are initialized to 0. If the requested number of bytes could not be allocated an exception is raised. |
+| [Int8ArrayConstructor](arkts-na-lib-es5-int8arrayconstructor-i.md) |  |
+| [JSON](arkts-na-lib-es5-json-i.md) |  |
+| [Math](arkts-na-lib-es5-math-i.md) |  |
+| [NewableFunction](arkts-na-lib-es5-newablefunction-i.md) |  |
+| [Number](arkts-na-lib-es5-number-i.md) |  |
+| [NumberConstructor](arkts-na-lib-es5-numberconstructor-i.md) |  |
+| [Object](arkts-na-lib-es5-object-i.md) |  |
+| [ObjectConstructor](arkts-na-lib-es5-objectconstructor-i.md) |  |
+| [Promise](arkts-na-lib-es5-promise-i.md) | Represents the completion of an asynchronous operation |
+| [PromiseLike](arkts-na-lib-es5-promiselike-i.md) |  |
+| [PropertyDescriptor](arkts-na-lib-es5-propertydescriptor-i.md) |  |
+| [PropertyDescriptorMap](arkts-na-lib-es5-propertydescriptormap-i.md) |  |
+| [RangeError](arkts-na-lib-es5-rangeerror-i.md) |  |
+| [RangeErrorConstructor](arkts-na-lib-es5-rangeerrorconstructor-i.md) |  |
+| [ReadonlyArray](arkts-na-lib-es5-readonlyarray-i.md) |  |
+| [ReferenceError](arkts-na-lib-es5-referenceerror-i.md) |  |
+| [ReferenceErrorConstructor](arkts-na-lib-es5-referenceerrorconstructor-i.md) |  |
+| [RegExp](arkts-na-lib-es5-regexp-i.md) |  |
+| [RegExpConstructor](arkts-na-lib-es5-regexpconstructor-i.md) |  |
+| [RegExpExecArray](arkts-na-lib-es5-regexpexecarray-i.md) |  |
+| [RegExpMatchArray](arkts-na-lib-es5-regexpmatcharray-i.md) |  |
+| [String](arkts-na-lib-es5-string-i.md) |  |
+| [StringConstructor](arkts-na-lib-es5-stringconstructor-i.md) |  |
+| [Symbol](arkts-na-lib-es5-symbol-i.md) |  |
+| [SyntaxError](arkts-na-lib-es5-syntaxerror-i.md) |  |
+| [SyntaxErrorConstructor](arkts-na-lib-es5-syntaxerrorconstructor-i.md) |  |
+| [TemplateStringsArray](arkts-na-lib-es5-templatestringsarray-i.md) |  |
+| [ThisType](arkts-na-lib-es5-thistype-i.md) | Marker for contextual 'this' type |
+| [TypeError](arkts-na-lib-es5-typeerror-i.md) |  |
+| [TypeErrorConstructor](arkts-na-lib-es5-typeerrorconstructor-i.md) |  |
+| [TypedPropertyDescriptor](arkts-na-lib-es5-typedpropertydescriptor-i.md) |  |
+| [URIError](arkts-na-lib-es5-urierror-i.md) |  |
+| [URIErrorConstructor](arkts-na-lib-es5-urierrorconstructor-i.md) |  |
+| [Uint16Array](arkts-na-lib-es5-uint16array-i.md) | A typed array of 16-bit unsigned integer values. The contents are initialized to 0. If the requested number of bytes could not be allocated an exception is raised. |
+| [Uint16ArrayConstructor](arkts-na-lib-es5-uint16arrayconstructor-i.md) |  |
+| [Uint32Array](arkts-na-lib-es5-uint32array-i.md) | A typed array of 32-bit unsigned integer values. The contents are initialized to 0. If the requested number of bytes could not be allocated an exception is raised. |
+| [Uint32ArrayConstructor](arkts-na-lib-es5-uint32arrayconstructor-i.md) |  |
+| [Uint8Array](arkts-na-lib-es5-uint8array-i.md) | A typed array of 8-bit unsigned integer values. The contents are initialized to 0. If the requested number of bytes could not be allocated an exception is raised. |
+| [Uint8ArrayConstructor](arkts-na-lib-es5-uint8arrayconstructor-i.md) |  |
+| [Uint8ClampedArray](arkts-na-lib-es5-uint8clampedarray-i.md) | A typed array of 8-bit unsigned integer (clamped) values. The contents are initialized to 0.If the requested number of bytes could not be allocated an exception is raised. |
+| [Uint8ClampedArrayConstructor](arkts-na-lib-es5-uint8clampedarrayconstructor-i.md) |  |
 
 ### Types
 

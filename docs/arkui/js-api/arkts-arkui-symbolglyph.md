@@ -2,6 +2,11 @@
 
 The **SymbolGlyph** component represents a symbol glyph.<!--RP1--><!--RP1End-->
 
+> **NOTE**
+
+## Child Components
+
+Not supported
 
 ## SymbolGlyph
 
@@ -18,6 +23,8 @@ Defines the constructor of SymbolGlyph.
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 12.
+
+<!--Device-SymbolGlyphInterface-(value?: Resource): SymbolGlyphAttribute--><!--Device-SymbolGlyphInterface-(value?: Resource): SymbolGlyphAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

@@ -14,17 +14,19 @@ Defining mutableBuilder function.
 
 **Atomic service API:** This API can be used in atomic services since API version 22.
 
+<!--Device-unnamed-declare function mutableBuilder<Args extends Object[]>(builder: BuilderCallback): MutableBuilder<Args>--><!--Device-unnamed-declare function mutableBuilder<Args extends Object[]>(builder: BuilderCallback): MutableBuilder<Args>-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| builder | BuilderCallback | Yes |  |
+| builder | [BuilderCallback](arkts-arkui-buildercallback-t.md) | Yes |  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| MutableBuilder&lt;Args&gt; | @syscap SystemCapability.ArkUI.ArkUI.Full@stagemodelonly@crossplatform@atomicservice |
+| [MutableBuilder](arkts-arkui-common-mutablebuilder-c.md)<Args> | @syscap SystemCapability.ArkUI.ArkUI.Full@stagemodelonly@crossplatform@atomicservice |
 

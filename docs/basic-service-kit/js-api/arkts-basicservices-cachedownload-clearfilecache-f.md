@@ -1,0 +1,31 @@
+# clearFileCache
+
+## Modules to Import
+
+```TypeScript
+import { cacheDownload } from '@kit.BasicServicesKit';
+```
+
+## clearFileCache
+
+```TypeScript
+function clearFileCache(): void
+```
+
+Clears this file cache.
+
+**Since:** 23
+
+<!--Device-cacheDownload-function clearFileCache(): void--><!--Device-cacheDownload-function clearFileCache(): void-End-->
+
+**System capability:** SystemCapability.Request.FileTransferAgent
+
+**Example**
+
+```TypeScript
+import { cacheDownload } from '@kit.BasicServicesKit';
+  
+cacheDownload.clearFileCache();
+
+```
+

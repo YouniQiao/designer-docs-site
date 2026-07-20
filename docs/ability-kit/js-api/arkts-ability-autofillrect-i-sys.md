@@ -4,6 +4,8 @@ AutoFillRect describes the rectangle used for auto-fill.
 
 **Since:** 26.0.0
 
+<!--Device-unnamed-export default interface AutoFillRect--><!--Device-unnamed-export default interface AutoFillRect-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
 **System API:** This is a system API.
@@ -23,6 +25,8 @@ Height of the AutoFill form or page node.
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+<!--Device-AutoFillRect-height: double--><!--Device-AutoFillRect-height: double-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
@@ -44,6 +48,8 @@ Distance between the AutoFill form or page node and the left boundary of the pag
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 
+<!--Device-AutoFillRect-left: double--><!--Device-AutoFillRect-left: double-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
 **System API:** This is a system API.
@@ -64,6 +70,8 @@ Distance between the AutoFill form or page node and the upper boundary of the pa
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 
+<!--Device-AutoFillRect-top: double--><!--Device-AutoFillRect-top: double-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
 **System API:** This is a system API.
@@ -83,6 +91,8 @@ Width of the AutoFill form or page node.
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+<!--Device-AutoFillRect-width: double--><!--Device-AutoFillRect-width: double-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 

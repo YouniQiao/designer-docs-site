@@ -8,6 +8,19 @@ The **Rating** component provides a rating bar.
 > for the **Rating** component, or set its parent node's [clip]{@link CommonMethod#clip(clip: Optional<boolean>)} 
 > attribute to **true**.
 
+## Child Components
+
+Not supported
+
+## Sequential Keyboard Navigation Specifications
+
+| Key | Description |  
+|------------|-----------------------------|  
+| Tab | Switch the focus between components. |  
+| Left and right arrow keys | Increase or decrease the rating on preview at the specified step, without changing the actual rating.|  
+| Home | Move the focus to the first star, without changing the actual rating. |  
+| End | Move the focus to the last star, without changing the actual rating. |  
+| Space/Enter | Submit the rating result based on the current rating. |
 
 ## Rating
 
@@ -20,6 +33,8 @@ Rating(options?: RatingOptions)
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
+
+<!--Device-RatingInterface-(options?: RatingOptions): RatingAttribute--><!--Device-RatingInterface-(options?: RatingOptions): RatingAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

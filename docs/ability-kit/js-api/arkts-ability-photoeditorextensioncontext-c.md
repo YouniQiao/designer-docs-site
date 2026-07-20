@@ -6,6 +6,8 @@ The context of Photo Editor extension. It allows access to PhotoEditorExtension-
 
 **Since:** 12
 
+<!--Device-unnamed-declare class PhotoEditorExtensionContext extends ExtensionContext--><!--Device-unnamed-declare class PhotoEditorExtensionContext extends ExtensionContext-End-->
+
 **System capability:** SystemCapability.Ability.AppExtension.PhotoEditorExtension
 
 ## saveEditedContentWithImage
@@ -17,6 +19,8 @@ saveEditedContentWithImage(pixeMap: image.PixelMap, option: image.PackingOption)
 Save image data by image pixmap.
 
 **Since:** 12
+
+<!--Device-PhotoEditorExtensionContext-saveEditedContentWithImage(pixeMap: image.PixelMap, option: image.PackingOption): Promise<AbilityResult>--><!--Device-PhotoEditorExtensionContext-saveEditedContentWithImage(pixeMap: image.PixelMap, option: image.PackingOption): Promise<AbilityResult>-End-->
 
 **System capability:** SystemCapability.Ability.AppExtension.PhotoEditorExtension
 
@@ -31,7 +35,7 @@ Save image data by image pixmap.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;AbilityResult&gt; | Returns the result of save. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AbilityResult> | Returns the result of save. |
 
 **Error codes:**
 
@@ -52,6 +56,8 @@ Save image data by uri.
 
 **Since:** 12
 
+<!--Device-PhotoEditorExtensionContext-saveEditedContentWithUri(uri: string): Promise<AbilityResult>--><!--Device-PhotoEditorExtensionContext-saveEditedContentWithUri(uri: string): Promise<AbilityResult>-End-->
+
 **System capability:** SystemCapability.Ability.AppExtension.PhotoEditorExtension
 
 **Parameters:**
@@ -64,7 +70,7 @@ Save image data by uri.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;AbilityResult&gt; | Returns the result of save. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AbilityResult> | Returns the result of save. |
 
 **Error codes:**
 

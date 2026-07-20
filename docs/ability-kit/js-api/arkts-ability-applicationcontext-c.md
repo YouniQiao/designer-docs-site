@@ -1,15 +1,16 @@
 # ApplicationContext
 
-ApplicationContext inherits from [Context](arkts-ability-context-depr-i.md) and provides application-level management
-capabilities, such as application lifecycle listening, process management, and application environment setting.
+ApplicationContext inherits from [Context](arkts-ability-context-context-depr-i.md) and provides application-level management capabilities, such as application lifecycle listening, process management, and application environment setting.
 
-> **NOTE**
->
+> **NOTE**  
+>  
 > The APIs of this module can be used only in the stage model.
 
 **Inheritance/Implementation:** ApplicationContext extends [Context](arkts-ability-context-t.md)
 
 **Since:** 9
+
+<!--Device-unnamed-declare class ApplicationContext extends Context--><!--Device-unnamed-declare class ApplicationContext extends Context-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -19,22 +20,23 @@ capabilities, such as application lifecycle listening, process management, and a
 clearUpApplicationData(): Promise<void>
 ```
 
-Clears up all data in the application file path and revokes the permissions that the application has requested from
-users. This API uses a promise to return the result. It can be called only on the main thread.
+Clears up all data in the application file path and revokes the permissions that the application has requested from users. This API uses a promise to return the result. It can be called only on the main thread.
 
-> **NOTE**
->
-> For details about the application file path, see
-> [Application File Directory and Application File Path](../../../../file-management/app-sandbox-directory.md#application-file-directory-and-application-file-path)
-> . The figure shows only the application file paths in the EL1 and EL2 directories. For the application file paths
-> in other directories, refer to EL1.
->
-> This API stops the application process. After the application process is stopped, all subsequent callbacks will
+> **NOTE**  
+>  
+> For details about the application file path, see  
+> [Application File Directory and Application File Path](../../../../file-management/app-sandbox-directory.md#application-file-directory-and-application-file-path)  
+> . The figure shows only the application file paths in the EL1 and EL2 directories. For the application file paths  
+> in other directories, refer to EL1.  
+>  
+> This API stops the application process. After the application process is stopped, all subsequent callbacks will  
 > not be triggered.
 
 **Since:** 11
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ApplicationContext-clearUpApplicationData(): Promise<void>--><!--Device-ApplicationContext-clearUpApplicationData(): Promise<void>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -42,7 +44,7 @@ users. This API uses a promise to return the result. It can be called only on th
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -57,22 +59,23 @@ users. This API uses a promise to return the result. It can be called only on th
 clearUpApplicationData(callback: AsyncCallback<void>): void
 ```
 
-Clears up all data in the application file path and revokes the permissions that the application has requested from
-users. This API uses an asynchronous callback to return the result. It can be called only on the main thread.
+Clears up all data in the application file path and revokes the permissions that the application has requested from users. This API uses an asynchronous callback to return the result. It can be called only on the main thread.
 
-> **NOTE**
->
-> For details about the application file path, see
-> [Application File Directory and Application File Path](../../../../file-management/app-sandbox-directory.md#application-file-directory-and-application-file-path)
-> . The figure shows only the application file paths in the EL1 and EL2 directories. For the application file paths
-> in other directories, refer to EL1.
->
-> This API stops the application process. After the application process is stopped, all subsequent callbacks will
+> **NOTE**  
+>  
+> For details about the application file path, see  
+> [Application File Directory and Application File Path](../../../../file-management/app-sandbox-directory.md#application-file-directory-and-application-file-path)  
+> . The figure shows only the application file paths in the EL1 and EL2 directories. For the application file paths  
+> in other directories, refer to EL1.  
+>  
+> This API stops the application process. After the application process is stopped, all subsequent callbacks will  
 > not be triggered.
 
 **Since:** 11
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ApplicationContext-clearUpApplicationData(callback: AsyncCallback<void>): void--><!--Device-ApplicationContext-clearUpApplicationData(callback: AsyncCallback<void>): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -80,7 +83,7 @@ users. This API uses an asynchronous callback to return the result. It can be ca
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the application data is clearedup, <code>error</code> is <code>undefined</code>; otherwise, <code>error</code> is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the application data is cleared up, <code>error</code> is <code>undefined</code>; otherwise, <code>error</code> is an error object. |
 
 **Error codes:**
 
@@ -98,13 +101,13 @@ disableDelayedProcessExit(): Promise<void>
 
 Disables delayed process exit for the current process.
 
-<p><b>NOTE</b>:
-<br>This API can be called only by the main thread.
-<br>Calling this API cancels the effect of {@link enableDelayedProcessExit}.</p>
+<p><b>NOTE</b>:<br>This API can be called only by the main thread.<br>Calling this API cancels the effect of {@link enableDelayedProcessExit}.</p>
 
 **Since:** 26.0.0
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ApplicationContext-disableDelayedProcessExit(): Promise<void>--><!--Device-ApplicationContext-disableDelayedProcessExit(): Promise<void>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -112,7 +115,7 @@ Disables delayed process exit for the current process.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | The promise returned by the function. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
 
 **Error codes:**
 
@@ -128,17 +131,13 @@ Disables delayed process exit for the current process.
 enableDelayedProcessExit(): Promise<void>
 ```
 
-Enable delayed exit for the current process.
-<p>**NOTE**:
-<br>It can be called only by the main thread.
-<br>Under normal circumstances, the process exits after the last UIAbility within the application process
-has exited. After calling this interface, the process will delay its exit for 10 seconds after the last
-UIAbility exits. If a new Ability is started within the 10 seconds in the current process, the process
-no longer exits.</p>
+Enable delayed exit for the current process.<p>**NOTE**:<br>It can be called only by the main thread.<br>Under normal circumstances, the process exits after the last UIAbility within the application process has exited. After calling this interface, the process will delay its exit for 10 seconds after the last UIAbility exits. If a new Ability is started within the 10 seconds in the current process, the process no longer exits.</p>
 
 **Since:** 26.0.0
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ApplicationContext-enableDelayedProcessExit(): Promise<void>--><!--Device-ApplicationContext-enableDelayedProcessExit(): Promise<void>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -146,7 +145,7 @@ no longer exits.</p>
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | The promise returned by the function. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
 
 **Error codes:**
 
@@ -162,12 +161,13 @@ no longer exits.</p>
 getAllRunningInstanceKeys(): Promise<Array<string>>
 ```
 
-Obtains the unique instance IDs of all multi-instances of this application. This API uses a promise to return the
-result. It can be called only on the main thread.
+Obtains the unique instance IDs of all multi-instances of this application. This API uses a promise to return the result. It can be called only on the main thread.
 
 **Since:** 14
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ApplicationContext-getAllRunningInstanceKeys(): Promise<Array<string>>--><!--Device-ApplicationContext-getAllRunningInstanceKeys(): Promise<Array<string>>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -175,7 +175,7 @@ result. It can be called only on the main thread.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return the unique instance IDs of all multi-instances of theapplication. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Promise used to return the unique instance IDs of all multi-instances of the application. |
 
 **Error codes:**
 
@@ -191,12 +191,9 @@ result. It can be called only on the main thread.
 getAllWindowStages(): Promise<Array<window.WindowStage>>
 ```
 
-Obtains all WindowStage objects in the current application process. This API uses a promise to return the result.
-It can be called only on the main thread.
+Obtains all WindowStage objects in the current application process. This API uses a promise to return the result.It can be called only on the main thread.
 
-This API is used to manage multiple windows in an application that contains several UIAbility components, for
-example, managing the states of different WindowStage objects, or synchronizing state or data between multiple
-windows within the same application.
+This API is used to manage multiple windows in an application that contains several UIAbility components, for example, managing the states of different WindowStage objects, or synchronizing state or data between multiple windows within the same application.
 
 **Since:** 23
 
@@ -204,13 +201,15 @@ windows within the same application.
 
 **Atomic service API:** This API can be used in atomic services since API version 23.
 
+<!--Device-ApplicationContext-getAllWindowStages(): Promise<Array<window.WindowStage>>--><!--Device-ApplicationContext-getAllWindowStages(): Promise<Array<window.WindowStage>>-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Array&lt;window.WindowStage&gt;&gt; | Promise used to return all WindowStage objects in the currentapplication process. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<window.WindowStage>> | Promise used to return all WindowStage objects in the current application process. |
 
 ## getCurrentAppCloneIndex
 
@@ -225,6 +224,8 @@ Obtains the index of the current application clone.
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-ApplicationContext-getCurrentAppCloneIndex(): int--><!--Device-ApplicationContext-getCurrentAppCloneIndex(): int-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -249,12 +250,13 @@ getCurrentInstanceKey(): string
 
 Obtains the unique instance ID of this application. This API can be called only on the main thread.
 
-This API can be properly called only on 2-in-1 devices. If it is called on other device types, error code 16000078
-is returned.
+This API can be properly called only on 2-in-1 devices. If it is called on other device types, error code 16000078is returned.
 
 **Since:** 14
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ApplicationContext-getCurrentInstanceKey(): string--><!--Device-ApplicationContext-getCurrentInstanceKey(): string-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -285,13 +287,15 @@ Obtains the information about running processes. This API uses a promise to retu
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-ApplicationContext-getRunningProcessInformation(): Promise<Array<ProcessInformation>>--><!--Device-ApplicationContext-getRunningProcessInformation(): Promise<Array<ProcessInformation>>-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Array&lt;ProcessInformation&gt;&gt; | Promise used to return the API call result and the process runninginformation. You can perform error handling or custom processing in this callback. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<ProcessInformation>> | Promise used to return the API call result and the process running information. You can perform error handling or custom processing in this callback. |
 
 **Error codes:**
 
@@ -315,13 +319,15 @@ Obtains the information about running processes. This API uses an asynchronous c
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-ApplicationContext-getRunningProcessInformation(callback: AsyncCallback<Array<ProcessInformation>>): void--><!--Device-ApplicationContext-getRunningProcessInformation(callback: AsyncCallback<Array<ProcessInformation>>): void-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;Array&lt;ProcessInformation&gt;&gt; | Yes | Callback used to return the information about therunning processes. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<ProcessInformation>> | Yes | Callback used to return the information about the running processes. |
 
 **Error codes:**
 
@@ -339,13 +345,13 @@ getUIAbilityByInstanceId(instanceId: string): UIAbility
 
 Get the UIAbility instance by the instance Id.
 
-<p>**NOTE**:
-<br>It can be called only by the main thread.
-</p>
+<p>**NOTE**:<br>It can be called only by the main thread.</p>
 
 **Since:** 26.0.0
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ApplicationContext-getUIAbilityByInstanceId(instanceId: string): UIAbility--><!--Device-ApplicationContext-getUIAbilityByInstanceId(instanceId: string): UIAbility-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -359,7 +365,7 @@ Get the UIAbility instance by the instance Id.
 
 | Type | Description |
 | --- | --- |
-| UIAbility | The UIAbility instance. |
+| [UIAbility](arkts-ability-app-ability-uiability-uiability-c.md) | The UIAbility instance. |
 
 **Error codes:**
 
@@ -375,12 +381,11 @@ Get the UIAbility instance by the instance Id.
 killAllProcesses(): Promise<void>
 ```
 
-Kills all processes of this application. The application will not execute the normal lifecycle when exiting. This
-API uses a promise to return the result. It can be called only on the main thread.
+Kills all processes of this application. The application will not execute the normal lifecycle when exiting. This API uses a promise to return the result. It can be called only on the main thread.
 
-> **NOTE**
->
-> This API is used to forcibly exit an application in abnormal scenarios. To exit an application properly, call
+> **NOTE**  
+>  
+> This API is used to forcibly exit an application in abnormal scenarios. To exit an application properly, call  
 > [terminateSelf()](arkts-ability-uiabilitycontext-c.md#terminateself-2).
 
 **Since:** 9
@@ -389,13 +394,15 @@ API uses a promise to return the result. It can be called only on the main threa
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-ApplicationContext-killAllProcesses(): Promise<void>--><!--Device-ApplicationContext-killAllProcesses(): Promise<void>-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -410,12 +417,11 @@ API uses a promise to return the result. It can be called only on the main threa
 killAllProcesses(clearPageStack: boolean): Promise<void>
 ```
 
-Kills all processes of this application. The application will not execute the normal lifecycle when exiting. This
-API uses a promise to return the result. It can be called only on the main thread.
+Kills all processes of this application. The application will not execute the normal lifecycle when exiting. This API uses a promise to return the result. It can be called only on the main thread.
 
-> **NOTE**
->
-> This API is used to forcibly exit an application in abnormal scenarios. To exit an application properly, call
+> **NOTE**  
+>  
+> This API is used to forcibly exit an application in abnormal scenarios. To exit an application properly, call  
 > [terminateSelf()](arkts-ability-uiabilitycontext-c.md#terminateself-2).
 
 **Since:** 14
@@ -423,6 +429,8 @@ API uses a promise to return the result. It can be called only on the main threa
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 14.
+
+<!--Device-ApplicationContext-killAllProcesses(clearPageStack: boolean): Promise<void>--><!--Device-ApplicationContext-killAllProcesses(clearPageStack: boolean): Promise<void>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -436,7 +444,7 @@ API uses a promise to return the result. It can be called only on the main threa
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -451,12 +459,11 @@ API uses a promise to return the result. It can be called only on the main threa
 killAllProcesses(callback: AsyncCallback<void>): void
 ```
 
-Kills all processes of this application. The application will not execute the normal lifecycle when exiting. This
-API uses an asynchronous callback to return the result. It can be called only on the main thread.
+Kills all processes of this application. The application will not execute the normal lifecycle when exiting. This API uses an asynchronous callback to return the result. It can be called only on the main thread.
 
-> **NOTE**
->
-> This API is used to forcibly exit an application in abnormal scenarios. To exit an application properly, call
+> **NOTE**  
+>  
+> This API is used to forcibly exit an application in abnormal scenarios. To exit an application properly, call  
 > [terminateSelf()](arkts-ability-uiabilitycontext-c.md#terminateself-2).
 
 **Since:** 9
@@ -465,13 +472,15 @@ API uses an asynchronous callback to return the result. It can be called only on
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-ApplicationContext-killAllProcesses(callback: AsyncCallback<void>): void--><!--Device-ApplicationContext-killAllProcesses(callback: AsyncCallback<void>): void-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If all the processes are killed,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If all the processes are killed,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -486,8 +495,7 @@ API uses an asynchronous callback to return the result. It can be called only on
 off(type: 'abilityLifecycle', callbackId: number, callback: AsyncCallback<void>): void
 ```
 
-Unregisters a listener for the lifecycle of a UIAbility within the application. This API uses an asynchronous
-callback to return the result. It can be called only on the main thread.
+Unregisters a listener for the lifecycle of a UIAbility within the application. This API uses an asynchronous callback to return the result. It can be called only on the main thread.
 
 **Since:** 9
 
@@ -495,15 +503,17 @@ callback to return the result. It can be called only on the main thread.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-ApplicationContext-off(type: 'abilityLifecycle', callbackId: number, callback: AsyncCallback<void>): void--><!--Device-ApplicationContext-off(type: 'abilityLifecycle', callbackId: number, callback: AsyncCallback<void>): void-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'abilityLifecycle' | Yes | Lifecycle of the UIAbility within the application. The value is fixed at**'abilityLifecycle'**. |
-| callbackId | number | Yes | ID returned when the[ApplicationContext.on('abilityLifecycle')](arkts-ability-applicationcontext-c.md#on-1)API is called to register a listener for the lifecycle of a UIAbility within the application. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the deregistration is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| type | 'abilityLifecycle' | Yes | Lifecycle of the UIAbility within the application. The value is fixed at **'abilityLifecycle'**. |
+| callbackId | number | Yes | ID returned when the [ApplicationContext.on('abilityLifecycle')](arkts-ability-applicationcontext-c.md#on-1)API is called to register a listener for the lifecycle of a UIAbility within the application. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the deregistration is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -517,8 +527,7 @@ callback to return the result. It can be called only on the main thread.
 off(type: 'abilityLifecycle', callbackId: number): Promise<void>
 ```
 
-Unregisters a listener for the lifecycle of a UIAbility within the application. This API uses a promise to return
-the result. It can be called only on the main thread.
+Unregisters a listener for the lifecycle of a UIAbility within the application. This API uses a promise to return the result. It can be called only on the main thread.
 
 **Since:** 9
 
@@ -526,20 +535,22 @@ the result. It can be called only on the main thread.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-ApplicationContext-off(type: 'abilityLifecycle', callbackId: number): Promise<void>--><!--Device-ApplicationContext-off(type: 'abilityLifecycle', callbackId: number): Promise<void>-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'abilityLifecycle' | Yes | Lifecycle of the UIAbility within the application. The value is fixed at**'abilityLifecycle'**. |
-| callbackId | number | Yes | ID returned when the[ApplicationContext.on('abilityLifecycle')](arkts-ability-applicationcontext-c.md#on-1)API is called to register a listener for the lifecycle of a UIAbility within the application. |
+| type | 'abilityLifecycle' | Yes | Lifecycle of the UIAbility within the application. The value is fixed at **'abilityLifecycle'**. |
+| callbackId | number | Yes | ID returned when the [ApplicationContext.on('abilityLifecycle')](arkts-ability-applicationcontext-c.md#on-1)API is called to register a listener for the lifecycle of a UIAbility within the application. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -553,8 +564,7 @@ the result. It can be called only on the main thread.
 off(type: 'environment', callbackId: number, callback: AsyncCallback<void>): void
 ```
 
-Unregisters the listener for system environment changes. This API uses an asynchronous callback to return the
-result. It can be called only on the main thread.
+Unregisters the listener for system environment changes. This API uses an asynchronous callback to return the result. It can be called only on the main thread.
 
 **Since:** 9
 
@@ -562,15 +572,17 @@ result. It can be called only on the main thread.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-ApplicationContext-off(type: 'environment', callbackId: number, callback: AsyncCallback<void>): void--><!--Device-ApplicationContext-off(type: 'environment', callbackId: number, callback: AsyncCallback<void>): void-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'environment' | Yes | System environment change, for example, system dark/light color mode change. Thevalue is fixed at **'environment'**. |
-| callbackId | number | Yes | ID returned when the[ApplicationContext.on('environment')](arkts-ability-applicationcontext-c.md#on-2)API is called to register a listener for system environment changes. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the deregistration is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| type | 'environment' | Yes | System environment change, for example, system dark/light color mode change. The value is fixed at **'environment'**. |
+| callbackId | number | Yes | ID returned when the [ApplicationContext.on('environment')](arkts-ability-applicationcontext-c.md#on-2)API is called to register a listener for system environment changes. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the deregistration is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -584,8 +596,7 @@ result. It can be called only on the main thread.
 off(type: 'environment', callbackId: number): Promise<void>
 ```
 
-Unregisters the listener for system environment changes. This API uses a promise to return the result. It can be
-called only on the main thread.
+Unregisters the listener for system environment changes. This API uses a promise to return the result. It can be called only on the main thread.
 
 **Since:** 9
 
@@ -593,20 +604,22 @@ called only on the main thread.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-ApplicationContext-off(type: 'environment', callbackId: number): Promise<void>--><!--Device-ApplicationContext-off(type: 'environment', callbackId: number): Promise<void>-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'environment' | Yes | System environment change, for example, system dark/light color mode change. Thevalue is fixed at **'environment'**. |
-| callbackId | number | Yes | ID returned when the[ApplicationContext.on('environment')](arkts-ability-applicationcontext-c.md#on-2)API is called to register a listener for system environment changes. |
+| type | 'environment' | Yes | System environment change, for example, system dark/light color mode change. The value is fixed at **'environment'**. |
+| callbackId | number | Yes | ID returned when the [ApplicationContext.on('environment')](arkts-ability-applicationcontext-c.md#on-2)API is called to register a listener for system environment changes. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -620,8 +633,7 @@ called only on the main thread.
 off(type: 'applicationStateChange', callback?: ApplicationStateChangeCallback): void
 ```
 
-Unregisters the listener for application process state changes. This API uses an asynchronous callback to return
-the result. It can be called only on the main thread.
+Unregisters the listener for application process state changes. This API uses an asynchronous callback to return the result. It can be called only on the main thread.
 
 **Since:** 10
 
@@ -629,14 +641,16 @@ the result. It can be called only on the main thread.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-ApplicationContext-off(type: 'applicationStateChange', callback?: ApplicationStateChangeCallback): void--><!--Device-ApplicationContext-off(type: 'applicationStateChange', callback?: ApplicationStateChangeCallback): void-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'applicationStateChange' | Yes | Application process state change. The value is fixed at**'applicationStateChange'**. |
-| callback | ApplicationStateChangeCallback | No | Callback used to return the result. The value can be acallback defined by[ApplicationContext.on('applicationStateChange')](arkts-ability-applicationcontext-c.md#on-3)or empty.<br>- If a defined callback is passed in, the listener for that callback is unregistered.<br>- If novalue is passed in, all the listeners for the corresponding event are unregistered. |
+| type | 'applicationStateChange' | Yes | Application process state change. The value is fixed at **'applicationStateChange'**. |
+| callback | [ApplicationStateChangeCallback](arkts-ability-app-ability-applicationstatechangecallback-applicationstatechangecallback-c.md) | No | Callback used to return the result. The value can be a callback defined by [ApplicationContext.on('applicationStateChange')](arkts-ability-applicationcontext-c.md#on-3)or empty.<br>- If a defined callback is passed in, the listener for that callback is unregistered.<br>- If no value is passed in, all the listeners for the corresponding event are unregistered. |
 
 **Error codes:**
 
@@ -652,15 +666,15 @@ offSystemConfigurationUpdated(callback?: systemConfiguration.UpdatedCallback): v
 
 unregisters a listener for system configuration updated.
 
-<p>**NOTE**:
-<br>It can be called only by the main thread.
-</p>
+<p>**NOTE**:<br>It can be called only by the main thread.</p>
 
 **Since:** 24
 
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 24.
+
+<!--Device-ApplicationContext-offSystemConfigurationUpdated(callback?: systemConfiguration.UpdatedCallback): void--><!--Device-ApplicationContext-offSystemConfigurationUpdated(callback?: systemConfiguration.UpdatedCallback): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -676,8 +690,7 @@ unregisters a listener for system configuration updated.
 on(type: 'abilityLifecycle', callback: AbilityLifecycleCallback): number
 ```
 
-Registers a listener for the lifecycle of a UIAbility within the application. This API uses an asynchronous
-callback to return the result. It can be called only on the main thread.
+Registers a listener for the lifecycle of a UIAbility within the application. This API uses an asynchronous callback to return the result. It can be called only on the main thread.
 
 **Since:** 9
 
@@ -685,20 +698,22 @@ callback to return the result. It can be called only on the main thread.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-ApplicationContext-on(type: 'abilityLifecycle', callback: AbilityLifecycleCallback): number--><!--Device-ApplicationContext-on(type: 'abilityLifecycle', callback: AbilityLifecycleCallback): number-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'abilityLifecycle' | Yes | Lifecycle of the UIAbility within the application. The value is fixed at**'abilityLifecycle'**. |
-| callback | AbilityLifecycleCallback | Yes | Callback triggered when the UIAbility lifecycle changes. |
+| type | 'abilityLifecycle' | Yes | Lifecycle of the UIAbility within the application. The value is fixed at **'abilityLifecycle'**. |
+| callback | [AbilityLifecycleCallback](arkts-ability-app-ability-abilitylifecyclecallback-abilitylifecyclecallback-c.md) | Yes | Callback triggered when the UIAbility lifecycle changes. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| number | ID of the callback registered. This ID is used to unregister the corresponding callback in[ApplicationContext.off('abilityLifecycle')](arkts-ability-applicationcontext-c.md#off-1). |
+| number | ID of the callback registered. This ID is used to unregister the corresponding callback in [ApplicationContext.off('abilityLifecycle')](arkts-ability-applicationcontext-c.md#off-1). |
 
 **Error codes:**
 
@@ -712,24 +727,23 @@ callback to return the result. It can be called only on the main thread.
 on(type: 'environment', callback: EnvironmentCallback): number
 ```
 
-Registers a listener for system environment changes. This API uses an asynchronous callback to return the result.
-It can be called only on the main thread.
+Registers a listener for system environment changes. This API uses an asynchronous callback to return the result.It can be called only on the main thread.
 
-> **NOTE**
->
-> - You can also use [onConfigurationUpdate](arkts-ability-ability-c.md#onconfigurationupdate-1) to
-> listen for system environment changes. Unlike
-> [onConfigurationUpdate](arkts-ability-ability-c.md#onconfigurationupdate-1) of **Ability**, this
-> API offers greater flexibility. It can be used both within application components and pages. However, the
-> environment variables that can be subscribed to are different from those of
-> [onConfigurationUpdate](arkts-ability-ability-c.md#onconfigurationupdate-1). For example, this
-> API cannot be used to subscribe to direction, screen density, and display ID changes. For details, see the
-> description of each environment variable in
-> [Configuration](arkts-ability-configuration-i.md).
->
-> - There are certain restrictions when this API is triggered. For example, if you set the application language by
-> calling [setLanguage](arkts-ability-applicationcontext-c.md#setlanguage-1), the system does not trigger the
-> callback for the current API even if the system language changes. For details, see
+> **NOTE**  
+>  
+> - You can also use [onConfigurationUpdate](arkts-ability-app-ability-ability-ability-c.md#onconfigurationupdate-1) to  
+> listen for system environment changes. Unlike  
+> [onConfigurationUpdate](arkts-ability-app-ability-ability-ability-c.md#onconfigurationupdate-1) of **Ability**, this  
+> API offers greater flexibility. It can be used both within application components and pages. However, the  
+> environment variables that can be subscribed to are different from those of  
+> [onConfigurationUpdate](arkts-ability-app-ability-ability-ability-c.md#onconfigurationupdate-1). For example, this  
+> API cannot be used to subscribe to direction, screen density, and display ID changes. For details, see the  
+> description of each environment variable in  
+> [Configuration](arkts-ability-app-ability-configuration-configuration-i.md).  
+>  
+> - There are certain restrictions when this API is triggered. For example, if you set the application language by  
+> calling [setLanguage](arkts-ability-applicationcontext-c.md#setlanguage-1), the system does not trigger the  
+> callback for the current API even if the system language changes. For details, see  
 > [When to Use](../../../../application-models/subscribe-system-environment-variable-changes.md#when-to-use).
 
 **Since:** 9
@@ -738,20 +752,22 @@ It can be called only on the main thread.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-ApplicationContext-on(type: 'environment', callback: EnvironmentCallback): number--><!--Device-ApplicationContext-on(type: 'environment', callback: EnvironmentCallback): number-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'environment' | Yes | System environment change, for example, system dark/light color mode change. Thevalue is fixed at **'environment'**. |
-| callback | EnvironmentCallback | Yes | Callback triggered when the system environment changes. |
+| type | 'environment' | Yes | System environment change, for example, system dark/light color mode change. The value is fixed at **'environment'**. |
+| callback | [EnvironmentCallback](arkts-ability-app-ability-environmentcallback-environmentcallback-c.md) | Yes | Callback triggered when the system environment changes. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| number | ID of the callback registered. This ID is used to unregister the corresponding callback in[ApplicationContext.off('environment')](arkts-ability-applicationcontext-c.md#off-3). |
+| number | ID of the callback registered. This ID is used to unregister the corresponding callback in [ApplicationContext.off('environment')](arkts-ability-applicationcontext-c.md#off-3). |
 
 **Error codes:**
 
@@ -765,8 +781,7 @@ It can be called only on the main thread.
 on(type: 'applicationStateChange', callback: ApplicationStateChangeCallback): void
 ```
 
-Registers a listener for application process state changes. This API uses an asynchronous callback to return the
-result. It can be called only on the main thread.
+Registers a listener for application process state changes. This API uses an asynchronous callback to return the result. It can be called only on the main thread.
 
 **Since:** 10
 
@@ -774,14 +789,16 @@ result. It can be called only on the main thread.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-ApplicationContext-on(type: 'applicationStateChange', callback: ApplicationStateChangeCallback): void--><!--Device-ApplicationContext-on(type: 'applicationStateChange', callback: ApplicationStateChangeCallback): void-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'applicationStateChange' | Yes | Application process state change. The value is fixed at**'applicationStateChange'**. |
-| callback | ApplicationStateChangeCallback | Yes | Callback triggered when the application process state ischanged. |
+| type | 'applicationStateChange' | Yes | Application process state change. The value is fixed at **'applicationStateChange'**. |
+| callback | [ApplicationStateChangeCallback](arkts-ability-app-ability-applicationstatechangecallback-applicationstatechangecallback-c.md) | Yes | Callback triggered when the application process state is changed. |
 
 **Error codes:**
 
@@ -797,15 +814,15 @@ onSystemConfigurationUpdated(callback: systemConfiguration.UpdatedCallback): voi
 
 Registers a listener for system configuration updated.
 
-<p>**NOTE**:
-<br>It can be called only by the main thread.
-</p>
+<p>**NOTE**:<br>It can be called only by the main thread.</p>
 
 **Since:** 24
 
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 24.
+
+<!--Device-ApplicationContext-onSystemConfigurationUpdated(callback: systemConfiguration.UpdatedCallback): void--><!--Device-ApplicationContext-onSystemConfigurationUpdated(callback: systemConfiguration.UpdatedCallback): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -821,21 +838,20 @@ Registers a listener for system configuration updated.
 restartApp(want: Want): void
 ```
 
-Restarts the application and starts the specified UIAbility. This API can be called only by the main thread, and
-the application to restart must be active.
+Restarts the application and starts the specified UIAbility. This API can be called only by the main thread, and the application to restart must be active.
 
-> **NOTE**
->
-> When this API is called to restart the application, the **onDestroy** lifecycle callback of the ability in the
-> application is not triggered.
->
-> If an atomic service calls this API,
-> [restartSelfAtomicService()](arkts-ability-restartselfatomicservice-f.md#restartselfatomicservice-1)
-> , or [UIAbilityContext.restartApp()](arkts-ability-uiabilitycontext-c.md#restartapp-1) within 3 seconds after a
-> successful call to this API, the system returns error code 16000064.
->
-> If an application calls this API or
-> [UIAbilityContext.restartApp()](arkts-ability-uiabilitycontext-c.md#restartapp-1) within 3 seconds after a
+> **NOTE**  
+>  
+> When this API is called to restart the application, the **onDestroy** lifecycle callback of the ability in the  
+> application is not triggered.  
+>  
+> If an atomic service calls this API,  
+> [restartSelfAtomicService()](arkts-ability-abilitymanager-restartselfatomicservice-f.md#restartselfatomicservice-1)  
+> , or [UIAbilityContext.restartApp()](arkts-ability-uiabilitycontext-c.md#restartapp-1) within 3 seconds after a  
+> successful call to this API, the system returns error code 16000064.  
+>  
+> If an application calls this API or  
+> [UIAbilityContext.restartApp()](arkts-ability-uiabilitycontext-c.md#restartapp-1) within 3 seconds after a  
 > successful call to this API, the system returns error code 16000064.
 
 **Since:** 12
@@ -844,13 +860,15 @@ the application to restart must be active.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-ApplicationContext-restartApp(want: Want): void--><!--Device-ApplicationContext-restartApp(want: Want): void-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want information about the UIAbility to start. No verification is performed on the bundlename passed in. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the UIAbility to start. No verification is performed on the bundle name passed in. |
 
 **Error codes:**
 
@@ -859,7 +877,7 @@ the application to restart must be active.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 | [16000053](../errorcode-ability.md#16000053-ability-is-not-on-top-of-ui) | The ability is not on the top of the UI. |
-| [16000063](../errorcode-ability.md#16000063-invalid-ability-during-application-restart) | The target to restart does not belong to the current application or is not aUIAbility. |
+| [16000063](../errorcode-ability.md#16000063-invalid-ability-during-application-restart) | The target to restart does not belong to the current application or is not a UIAbility. |
 | [16000064](../errorcode-ability.md#16000064-frequent-application-restart) | Restart too frequently. Try again at least 3s later. |
 
 ## setColorMode
@@ -870,18 +888,20 @@ setColorMode(colorMode: ConfigurationConstant.ColorMode): void
 
 Sets the dark/light color mode for the application. This API can be called only on the main thread.
 
-> **NOTE**
->
-> Before calling this API, ensure that the window has been created and the page corresponding to the UIAbility has
-> been loaded (using the
-> [loadContent](../../../../reference/apis-arkui/arkts-apis-window-WindowStage.md#loadcontent9) API in the
-> [onWindowStageCreate()](arkts-ability-uiability-c.md#onwindowstagecreate-1) lifecycle).
+> **NOTE**  
+>  
+> Before calling this API, ensure that the window has been created and the page corresponding to the UIAbility has  
+> been loaded (using the  
+> [loadContent](../../../../reference/apis-arkui/arkts-apis-window-WindowStage.md#loadcontent9) API in the  
+> [onWindowStageCreate()](arkts-ability-app-ability-uiability-uiability-c.md#onwindowstagecreate-1) lifecycle).
 
 **Since:** 11
 
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-ApplicationContext-setColorMode(colorMode: ConfigurationConstant.ColorMode): void--><!--Device-ApplicationContext-setColorMode(colorMode: ConfigurationConstant.ColorMode): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -906,16 +926,18 @@ setFont(font: string): void
 
 Sets the font for this application. This API can be called only on the main thread.
 
-> **NOTE**
->
-> Before calling this API, ensure that the window has been created and the page corresponding to the UIAbility has
-> been loaded (using the
-> [loadContent](../../../../reference/apis-arkui/arkts-apis-window-WindowStage.md#loadcontent9) API in the
-> [onWindowStageCreate()](arkts-ability-uiability-c.md#onwindowstagecreate-1) lifecycle).
+> **NOTE**  
+>  
+> Before calling this API, ensure that the window has been created and the page corresponding to the UIAbility has  
+> been loaded (using the  
+> [loadContent](../../../../reference/apis-arkui/arkts-apis-window-WindowStage.md#loadcontent9) API in the  
+> [onWindowStageCreate()](arkts-ability-app-ability-uiability-uiability-c.md#onwindowstagecreate-1) lifecycle).
 
 **Since:** 12
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ApplicationContext-setFont(font: string): void--><!--Device-ApplicationContext-setFont(font: string): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -923,7 +945,7 @@ Sets the font for this application. This API can be called only on the main thre
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| font | string | Yes | Font, which can be registered by calling[UIContext.registerFont](../../../../reference/apis-arkui/arkts-apis-uicontext-font.md#registerfont). |
+| font | string | Yes | Font, which can be registered by calling [UIContext.registerFont](../../../../reference/apis-arkui/arkts-apis-uicontext-font.md#registerfont). |
 
 **Error codes:**
 
@@ -946,13 +968,15 @@ Sets the scale ratio for the font size of this application. This API can be call
 
 **Atomic service API:** This API can be used in atomic services since API version 13.
 
+<!--Device-ApplicationContext-setFontSizeScale(fontSizeScale: double): void--><!--Device-ApplicationContext-setFontSizeScale(fontSizeScale: double): void-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| fontSizeScale | number | Yes | Font scale ratio. The value is a non-negative number. When the application's[fontSizeScale](../../../../quick-start/app-configuration-file.md#configuration) is set to **followSystem** andthe value set here exceeds the value of[fontSizeMaxScale](../../../../quick-start/app-configuration-file.md#configuration), the value of[fontSizeMaxScale](../../../../quick-start/app-configuration-file.md#configuration) takes effect. |
+| fontSizeScale | number | Yes | Font scale ratio. The value is a non-negative number. When the application's [fontSizeScale](../../../../quick-start/app-configuration-file.md#configuration) is set to **followSystem** and the value set here exceeds the value of [fontSizeMaxScale](../../../../quick-start/app-configuration-file.md#configuration), the value of [fontSizeMaxScale](../../../../quick-start/app-configuration-file.md#configuration) takes effect. |
 
 ## setLanguage
 
@@ -962,12 +986,12 @@ setLanguage(language: string): void
 
 Sets the language for the application. This API can be called only on the main thread.
 
-> **NOTE**
->
-> Before calling this API, ensure that the window has been created and the page corresponding to the UIAbility has
-> been loaded (using the
-> [loadContent](../../../../reference/apis-arkui/arkts-apis-window-WindowStage.md#loadcontent9) API in the
-> [onWindowStageCreate()](arkts-ability-uiability-c.md#onwindowstagecreate-1) lifecycle).
+> **NOTE**  
+>  
+> Before calling this API, ensure that the window has been created and the page corresponding to the UIAbility has  
+> been loaded (using the  
+> [loadContent](../../../../reference/apis-arkui/arkts-apis-window-WindowStage.md#loadcontent9) API in the  
+> [onWindowStageCreate()](arkts-ability-app-ability-uiability-uiability-c.md#onwindowstagecreate-1) lifecycle).
 
 **Since:** 11
 
@@ -975,13 +999,15 @@ Sets the language for the application. This API can be called only on the main t
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-ApplicationContext-setLanguage(language: string): void--><!--Device-ApplicationContext-setLanguage(language: string): void-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| language | string | Yes | Target language. The list of supported languages can be obtained by calling[getSystemLanguages()](../../apis-localization-kit/arkts-apis/arkts-localization-system-c.md#getsystemlanguages-1). |
+| language | string | Yes | Target language. The list of supported languages can be obtained by calling [getSystemLanguages()](../../apis-localization-kit/arkts-apis/arkts-localization-i18n-system-c.md#getsystemlanguages-1). |
 
 **Error codes:**
 
@@ -995,31 +1021,30 @@ Sets the language for the application. This API can be called only on the main t
 setSupportedProcessCache(isSupported : boolean): void
 ```
 
-Sets whether the current application's process supports resource caching, so that the cached process resources can
-be reused when the application is started again. This API can be called only on the main thread.
+Sets whether the current application's process supports resource caching, so that the cached process resources can be reused when the application is started again. This API can be called only on the main thread.
 
-This setting applies only to the current process instance and does not affect others. If the application process
-instance is terminated, the previously set state will not be preserved and must be reset.
+This setting applies only to the current process instance and does not affect others. If the application process instance is terminated, the previously set state will not be preserved and must be reset.
 
-This API can be properly called only on phones and 2-in-1 devices. If it is called on other device types, error
-code 801 is returned.
+This API can be properly called only on phones and 2-in-1 devices. If it is called on other device types, error code 801 is returned.
 
-> **NOTE**
->
-> - This API only sets the application to be ready for quick startup after caching. It does not mean that quick
-> startup will be triggered. Other conditions must be considered to determine whether to trigger quick startup.
->
-> - To ensure that this API is effective before the process exits, it should be called as soon as possible. You are
-> advised to call this API within the **onCreate()** callback of the
-> [AbilityStage](arkts-ability-abilitystage-c.md).
->
-> - If this API is called multiple times within the same process, the outcome of the final call is used. In cases
-> where there are multiple AbilityStage instances, to achieve the desired result, this API must be called and
+> **NOTE**  
+>  
+> - This API only sets the application to be ready for quick startup after caching. It does not mean that quick  
+> startup will be triggered. Other conditions must be considered to determine whether to trigger quick startup.  
+>  
+> - To ensure that this API is effective before the process exits, it should be called as soon as possible. You are  
+> advised to call this API within the **onCreate()** callback of the  
+> [AbilityStage](arkts-ability-app-ability-abilitystage-abilitystage-c.md).  
+>  
+> - If this API is called multiple times within the same process, the outcome of the final call is used. In cases  
+> where there are multiple AbilityStage instances, to achieve the desired result, this API must be called and  
 > configured with the same value in each AbilityStage.
 
 **Since:** 12
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ApplicationContext-setSupportedProcessCache(isSupported : boolean): void--><!--Device-ApplicationContext-setSupportedProcessCache(isSupported : boolean): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -1027,7 +1052,7 @@ code 801 is returned.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| isSupported | boolean | Yes | Whether process cache is supported. The value <code>true</code> means thatprocess cache is supported, and <code>false</code> means the opposite. |
+| isSupported | boolean | Yes | Whether process cache is supported. The value <code>true</code> means that process cache is supported, and <code>false</code> means the opposite. |
 
 **Error codes:**
 
@@ -1050,19 +1075,21 @@ Starts a UIAbility of the current application during the delayed-exit window.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-ApplicationContext-startSelfUIAbility(want: Want): Promise<void>--><!--Device-ApplicationContext-startSelfUIAbility(want: Want): Promise<void>-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Indicates the UIAbility to start. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Indicates the UIAbility to start. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | The promise returned by the function. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
 
 **Error codes:**
 

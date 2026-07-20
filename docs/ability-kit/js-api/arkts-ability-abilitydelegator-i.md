@@ -1,19 +1,14 @@
 # AbilityDelegator
 
-The **AbilityDelegator** module can listen for and manage the lifecycle changes of
-[UIAbility](arkts-app-ability-uiability.md) through
-[AbilityMonitor](arkts-ability-abilitymonitor-i.md) instances. For example, you can obtain the
-current state of a UIAbility (for example, whether the UIAbility has been created or is in the foreground), obtain
-the UIAbility that currently has the focus, wait for the UIAbility to enter a lifecycle node (for example, the
-**onForeground** state), start a specified UIAbility, and set the timeout mechanism.
-You can obtain **AbilityDelegator** by calling
-[getAbilityDelegator](../../apis-test-kit/arkts-apis/arkts-test-getabilitydelegator-f.md#getabilitydelegator-1).
+The **AbilityDelegator** module can listen for and manage the lifecycle changes of [UIAbility](arkts-app-ability-uiability.md) through [AbilityMonitor](arkts-ability-abilitymonitor-i.md) instances. For example, you can obtain the current state of a UIAbility (for example, whether the UIAbility has been created or is in the foreground), obtain the UIAbility that currently has the focus, wait for the UIAbility to enter a lifecycle node (for example, the **onForeground** state), start a specified UIAbility, and set the timeout mechanism.You can obtain **AbilityDelegator** by calling [getAbilityDelegator](../../apis-test-kit/arkts-apis/arkts-test-abilitydelegatorregistry-getabilitydelegator-f.md#getabilitydelegator-1).
 
-> **NOTE**
->
+> **NOTE**  
+>  
 > The APIs of this module can be used only in [JsUnit](../../../../application-test/unittest-guidelines.md).
 
 **Since:** 9
+
+<!--Device-unnamed-export interface AbilityDelegator--><!--Device-unnamed-export interface AbilityDelegator-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -23,12 +18,13 @@ You can obtain **AbilityDelegator** by calling
 addAbilityMonitor(monitor: AbilityMonitor, callback: AsyncCallback<void>): void
 ```
 
-Adds an **AbilityMonitor** instance. This API uses an asynchronous callback to return the result. Multi-thread
-concurrent calls are not supported.
+Adds an **AbilityMonitor** instance. This API uses an asynchronous callback to return the result. Multi-thread concurrent calls are not supported.
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityDelegator-addAbilityMonitor(monitor: AbilityMonitor, callback: AsyncCallback<void>): void--><!--Device-AbilityDelegator-addAbilityMonitor(monitor: AbilityMonitor, callback: AsyncCallback<void>): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -36,8 +32,8 @@ concurrent calls are not supported.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitor | AbilityMonitor | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md) instance. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the **AbilityMonitor** instance isadded, **err** is **undefined**. Otherwise, **err** is an error object. |
+| monitor | [AbilityMonitor](../../apis-test-kit/arkts-apis/arkts-test-abilitydelegatorregistry-abilitymonitor-t.md) | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md) instance. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the **AbilityMonitor** instance is added, **err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -52,12 +48,13 @@ concurrent calls are not supported.
 addAbilityMonitor(monitor: AbilityMonitor): Promise<void>
 ```
 
-Adds an **AbilityMonitor** instance. This API uses a promise to return the result. Multi-thread concurrent calls
-are not supported.
+Adds an **AbilityMonitor** instance. This API uses a promise to return the result. Multi-thread concurrent calls are not supported.
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityDelegator-addAbilityMonitor(monitor: AbilityMonitor): Promise<void>--><!--Device-AbilityDelegator-addAbilityMonitor(monitor: AbilityMonitor): Promise<void>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -65,13 +62,13 @@ are not supported.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitor | AbilityMonitor | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md) instance. |
+| monitor | [AbilityMonitor](../../apis-test-kit/arkts-apis/arkts-test-abilitydelegatorregistry-abilitymonitor-t.md) | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md) instance. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -86,12 +83,13 @@ are not supported.
 addAbilityMonitorSync(monitor: AbilityMonitor): void
 ```
 
-Adds an **AbilityMonitor** instance. This API returns the result synchronously. Multi-thread concurrent calls are
-not supported.
+Adds an **AbilityMonitor** instance. This API returns the result synchronously. Multi-thread concurrent calls are not supported.
 
 **Since:** 10
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityDelegator-addAbilityMonitorSync(monitor: AbilityMonitor): void--><!--Device-AbilityDelegator-addAbilityMonitorSync(monitor: AbilityMonitor): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -99,7 +97,7 @@ not supported.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitor | AbilityMonitor | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md) instance. |
+| monitor | [AbilityMonitor](../../apis-test-kit/arkts-apis/arkts-test-abilitydelegatorregistry-abilitymonitor-t.md) | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md) instance. |
 
 **Error codes:**
 
@@ -114,12 +112,13 @@ not supported.
 addAbilityStageMonitor(monitor: AbilityStageMonitor, callback: AsyncCallback<void>): void
 ```
 
-Adds an **AbilityStageMonitor** instance to monitor the lifecycle state changes of an ability stage. This API uses
-an asynchronous callback to return the result.
+Adds an **AbilityStageMonitor** instance to monitor the lifecycle state changes of an ability stage. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityDelegator-addAbilityStageMonitor(monitor: AbilityStageMonitor, callback: AsyncCallback<void>): void--><!--Device-AbilityDelegator-addAbilityStageMonitor(monitor: AbilityStageMonitor, callback: AsyncCallback<void>): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -127,8 +126,8 @@ an asynchronous callback to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitor | AbilityStageMonitor | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) instance. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the **AbilityStageMonitor** instance isadded, **err** is undefined. Otherwise, **err** is an error object. |
+| monitor | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) instance. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the **AbilityStageMonitor** instance is added, **err** is undefined. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -143,12 +142,13 @@ an asynchronous callback to return the result.
 addAbilityStageMonitor(monitor: AbilityStageMonitor): Promise<void>
 ```
 
-Adds an **AbilityStageMonitor** instance to monitor the lifecycle state changes of an ability stage. This API uses
-a promise to return the result.
+Adds an **AbilityStageMonitor** instance to monitor the lifecycle state changes of an ability stage. This API uses a promise to return the result.
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityDelegator-addAbilityStageMonitor(monitor: AbilityStageMonitor): Promise<void>--><!--Device-AbilityDelegator-addAbilityStageMonitor(monitor: AbilityStageMonitor): Promise<void>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -156,13 +156,13 @@ a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitor | AbilityStageMonitor | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) instance. |
+| monitor | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) instance. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -177,12 +177,13 @@ a promise to return the result.
 addAbilityStageMonitorSync(monitor: AbilityStageMonitor): void
 ```
 
-Adds an **AbilityStageMonitor** instance to monitor the lifecycle state changes of an ability stage. This API
-returns the result synchronously.
+Adds an **AbilityStageMonitor** instance to monitor the lifecycle state changes of an ability stage. This API returns the result synchronously.
 
 **Since:** 10
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityDelegator-addAbilityStageMonitorSync(monitor: AbilityStageMonitor): void--><!--Device-AbilityDelegator-addAbilityStageMonitorSync(monitor: AbilityStageMonitor): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -190,7 +191,7 @@ returns the result synchronously.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitor | AbilityStageMonitor | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) instance. |
+| monitor | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) instance. |
 
 **Error codes:**
 
@@ -205,8 +206,7 @@ returns the result synchronously.
 addInteropAbilityMonitorSync(monitor: InteropAbilityMonitor): void
 ```
 
-Add an InteropAbilityMonitor object for monitoring the lifecycle state changes of the specified ability
-in this process.
+Add an InteropAbilityMonitor object for monitoring the lifecycle state changes of the specified ability in this process.
 
 **Since:** 26.0.0
 
@@ -214,13 +214,15 @@ in this process.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 
+<!--Device-AbilityDelegator-addInteropAbilityMonitorSync(monitor: InteropAbilityMonitor): void--><!--Device-AbilityDelegator-addInteropAbilityMonitorSync(monitor: InteropAbilityMonitor): void-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitor | InteropAbilityMonitor | Yes | InteropAbilityMonitor object. |
+| monitor | [InteropAbilityMonitor](../../apis-test-kit/arkts-apis/arkts-test-abilitydelegatorregistry-interopabilitymonitor-t.md) | Yes | InteropAbilityMonitor object. |
 
 **Error codes:**
 
@@ -234,12 +236,13 @@ in this process.
 doAbilityBackground(ability: UIAbility, callback: AsyncCallback<void>): void
 ```
 
-Schedules the lifecycle state of an ability to **Background**. This API uses an asynchronous callback to return the
-result.
+Schedules the lifecycle state of an ability to **Background**. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityDelegator-doAbilityBackground(ability: UIAbility, callback: AsyncCallback<void>): void--><!--Device-AbilityDelegator-doAbilityBackground(ability: UIAbility, callback: AsyncCallback<void>): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -247,8 +250,8 @@ result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| ability | UIAbility | Yes | Target ability. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the ability lifecycle state is changedto **Background**, **err** is **undefined**. Otherwise, **err** is an error object. |
+| ability | [UIAbility](arkts-ability-app-ability-uiability-uiability-c.md) | Yes | Target ability. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the ability lifecycle state is changed to **Background**, **err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -269,19 +272,21 @@ Schedules the lifecycle state of an ability to **Background**. This API uses a p
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-AbilityDelegator-doAbilityBackground(ability: UIAbility): Promise<void>--><!--Device-AbilityDelegator-doAbilityBackground(ability: UIAbility): Promise<void>-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| ability | UIAbility | Yes | Target ability. |
+| ability | [UIAbility](arkts-ability-app-ability-uiability-uiability-c.md) | Yes | Target ability. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -296,12 +301,13 @@ Schedules the lifecycle state of an ability to **Background**. This API uses a p
 doAbilityForeground(ability: UIAbility, callback: AsyncCallback<void>): void
 ```
 
-Schedules the lifecycle state of an ability to **Foreground**. This API uses an asynchronous callback to return the
-result.
+Schedules the lifecycle state of an ability to **Foreground**. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityDelegator-doAbilityForeground(ability: UIAbility, callback: AsyncCallback<void>): void--><!--Device-AbilityDelegator-doAbilityForeground(ability: UIAbility, callback: AsyncCallback<void>): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -309,8 +315,8 @@ result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| ability | UIAbility | Yes | Target ability. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the ability lifecycle state is changedto **Foreground**, **err** is **undefined**. Otherwise, **err** is an error object. |
+| ability | [UIAbility](arkts-ability-app-ability-uiability-uiability-c.md) | Yes | Target ability. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the ability lifecycle state is changed to **Foreground**, **err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -331,19 +337,21 @@ Schedules the lifecycle state of an ability to **Foreground**. This API uses a p
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-AbilityDelegator-doAbilityForeground(ability: UIAbility): Promise<void>--><!--Device-AbilityDelegator-doAbilityForeground(ability: UIAbility): Promise<void>-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| ability | UIAbility | Yes | Target ability. |
+| ability | [UIAbility](arkts-ability-app-ability-uiability-uiability-c.md) | Yes | Target ability. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -358,13 +366,13 @@ Schedules the lifecycle state of an ability to **Foreground**. This API uses a p
 executeShellCommand(cmd: string, callback: AsyncCallback<ShellCmdResult>): void
 ```
 
-Executes a shell command. This API uses an asynchronous callback to return the result.
-Only the following shell commands are supported: aa, bm, cp, mkdir, rm, uinput, hilog, ppwd, echo, uitest, acm,
-hidumper, wukong, pkill, ps, and pidof.
+Executes a shell command. This API uses an asynchronous callback to return the result.Only the following shell commands are supported: aa, bm, cp, mkdir, rm, uinput, hilog, ppwd, echo, uitest, acm,hidumper, wukong, pkill, ps, and pidof.
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityDelegator-executeShellCommand(cmd: string, callback: AsyncCallback<ShellCmdResult>): void--><!--Device-AbilityDelegator-executeShellCommand(cmd: string, callback: AsyncCallback<ShellCmdResult>): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -373,7 +381,7 @@ hidumper, wukong, pkill, ps, and pidof.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | cmd | string | Yes | Shell command string. |
-| callback | AsyncCallback&lt;ShellCmdResult&gt; | Yes | Callback used to return the result. If the shell command is executed, **err** is **undefined** and **data** is the execution result obtained. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ShellCmdResult> | Yes | Callback used to return the result. If the shell command is executed, **err** is **undefined** and **data** is the execution result obtained. Otherwise, **err** is an error object. |
 
 ## executeShellCommand
 
@@ -381,14 +389,13 @@ hidumper, wukong, pkill, ps, and pidof.
 executeShellCommand(cmd: string, timeoutSecs: number, callback: AsyncCallback<ShellCmdResult>): void
 ```
 
-Executes a shell command with the timeout period specified. This API uses an asynchronous callback to return the
-result.
-Only the following shell commands are supported: aa, bm, cp, mkdir, rm, uinput, hilog, ppwd, echo, uitest, acm,
-hidumper, wukong, pkill, ps, and pidof.
+Executes a shell command with the timeout period specified. This API uses an asynchronous callback to return the result.Only the following shell commands are supported: aa, bm, cp, mkdir, rm, uinput, hilog, ppwd, echo, uitest, acm,hidumper, wukong, pkill, ps, and pidof.
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityDelegator-executeShellCommand(cmd: string, timeoutSecs: long, callback: AsyncCallback<ShellCmdResult>): void--><!--Device-AbilityDelegator-executeShellCommand(cmd: string, timeoutSecs: long, callback: AsyncCallback<ShellCmdResult>): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -398,7 +405,7 @@ hidumper, wukong, pkill, ps, and pidof.
 | --- | --- | --- | --- |
 | cmd | string | Yes | Shell command string. |
 | timeoutSecs | number | Yes | Command timeout period, in seconds. |
-| callback | AsyncCallback&lt;ShellCmdResult&gt; | Yes | Callback used to return the result. If the shell command is executed, **err** is **undefined** and **data** is the execution result obtained. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ShellCmdResult> | Yes | Callback used to return the result. If the shell command is executed, **err** is **undefined** and **data** is the execution result obtained. Otherwise, **err** is an error object. |
 
 ## executeShellCommand
 
@@ -406,13 +413,13 @@ hidumper, wukong, pkill, ps, and pidof.
 executeShellCommand(cmd: string, timeoutSecs?: number): Promise<ShellCmdResult>
 ```
 
-Executes a shell command with the timeout period specified. This API uses a promise to return the result.
-Only the following shell commands are supported: aa, bm, cp, mkdir, rm, uinput, hilog, ppwd, echo, uitest, acm,
-hidumper, wukong, pkill, ps, and pidof.
+Executes a shell command with the timeout period specified. This API uses a promise to return the result.Only the following shell commands are supported: aa, bm, cp, mkdir, rm, uinput, hilog, ppwd, echo, uitest, acm,hidumper, wukong, pkill, ps, and pidof.
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityDelegator-executeShellCommand(cmd: string, timeoutSecs?: long): Promise<ShellCmdResult>--><!--Device-AbilityDelegator-executeShellCommand(cmd: string, timeoutSecs?: long): Promise<ShellCmdResult>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -421,13 +428,13 @@ hidumper, wukong, pkill, ps, and pidof.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | cmd | string | Yes | Shell command string. |
-| timeoutSecs | number | No | Command timeout period, in seconds. The default value is **0**, indicating that thetimeout period is not set. |
+| timeoutSecs | number | No | Command timeout period, in seconds. The default value is **0**, indicating that the timeout period is not set. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;ShellCmdResult&gt; | Promise used to return a[ShellCmdResult](arkts-ability-shellcmdresult-i.md) object. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ShellCmdResult> | Promise used to return a [ShellCmdResult](arkts-ability-shellcmdresult-shellcmdresult-i.md) object. |
 
 ## finishTest
 
@@ -435,12 +442,13 @@ hidumper, wukong, pkill, ps, and pidof.
 finishTest(msg: string, code: number, callback: AsyncCallback<void>): void
 ```
 
-Finishes the test and prints log information to the unit test console. This API uses an asynchronous callback to
-return the result.
+Finishes the test and prints log information to the unit test console. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityDelegator-finishTest(msg: string, code: long, callback: AsyncCallback<void>): void--><!--Device-AbilityDelegator-finishTest(msg: string, code: long, callback: AsyncCallback<void>): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -450,7 +458,7 @@ return the result.
 | --- | --- | --- | --- |
 | msg | string | Yes | Log string. |
 | code | number | Yes | Log code. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the test finishes and the loginformation is printed to the unit test console, **err** is undefined. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the test finishes and the log information is printed to the unit test console, **err** is undefined. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -465,12 +473,13 @@ return the result.
 finishTest(msg: string, code: number): Promise<void>
 ```
 
-Finishes the test and prints log information to the unit test console. This API uses a promise to return the
-result.
+Finishes the test and prints log information to the unit test console. This API uses a promise to return the result.
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityDelegator-finishTest(msg: string, code: long): Promise<void>--><!--Device-AbilityDelegator-finishTest(msg: string, code: long): Promise<void>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -485,7 +494,7 @@ result.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -506,19 +515,21 @@ Obtains the lifecycle state of an ability.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-AbilityDelegator-getAbilityState(ability: UIAbility): int--><!--Device-AbilityDelegator-getAbilityState(ability: UIAbility): int-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| ability | UIAbility | Yes | Target ability. |
+| ability | [UIAbility](arkts-ability-app-ability-uiability-uiability-c.md) | Yes | Target ability. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| number | Lifecycle state of the ability, For details about the state values, see[AbilityLifecycleState](../../apis-test-kit/arkts-apis/arkts-test-abilitylifecyclestate-e.md). |
+| number | Lifecycle state of the ability, For details about the state values, see [AbilityLifecycleState](../../apis-test-kit/arkts-apis/arkts-test-abilitydelegatorregistry-abilitylifecyclestate-e.md). |
 
 **Error codes:**
 
@@ -538,13 +549,15 @@ Obtains the application context.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-AbilityDelegator-getAppContext(): Context--><!--Device-AbilityDelegator-getAppContext(): Context-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Context | [Context](arkts-ability-context-depr-i.md). |
+| [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | [Context](arkts-ability-context-context-depr-i.md). |
 
 ## getCurrentTopAbility
 
@@ -552,12 +565,13 @@ Obtains the application context.
 getCurrentTopAbility(callback: AsyncCallback<UIAbility>): void
 ```
 
-Obtains the top ability of this application. This API uses an asynchronous callback to return the result. It cannot
-be called in the worker thread.
+Obtains the top ability of this application. This API uses an asynchronous callback to return the result. It cannot be called in the worker thread.
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityDelegator-getCurrentTopAbility(callback: AsyncCallback<UIAbility>): void--><!--Device-AbilityDelegator-getCurrentTopAbility(callback: AsyncCallback<UIAbility>): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -565,7 +579,7 @@ be called in the worker thread.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;UIAbility&gt; | Yes | Callback used to return the result. If the top ability is obtained,**err** is **undefined** and **data** is the **Ability** instance obtained. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<UIAbility> | Yes | Callback used to return the result. If the top ability is obtained,**err** is **undefined** and **data** is the **Ability** instance obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -580,12 +594,13 @@ be called in the worker thread.
 getCurrentTopAbility(): Promise<UIAbility>
 ```
 
-Obtains the top ability of this application. This API uses a promise to return the result. It cannot be called in
-the worker thread.
+Obtains the top ability of this application. This API uses a promise to return the result. It cannot be called in the worker thread.
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityDelegator-getCurrentTopAbility(): Promise<UIAbility>--><!--Device-AbilityDelegator-getCurrentTopAbility(): Promise<UIAbility>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -593,7 +608,7 @@ the worker thread.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;UIAbility&gt; | Promise used to return the top ability. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<UIAbility> | Promise used to return the top ability. |
 
 **Error codes:**
 
@@ -613,6 +628,8 @@ Prints log information to the unit test console. This API uses an asynchronous c
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-AbilityDelegator-print(msg: string, callback: AsyncCallback<void>): void--><!--Device-AbilityDelegator-print(msg: string, callback: AsyncCallback<void>): void-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Parameters:**
@@ -620,7 +637,7 @@ Prints log information to the unit test console. This API uses an asynchronous c
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | msg | string | Yes | Log string. The value contains a maximum of 10,000 characters. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the log information is printed to theunit test console, **err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the log information is printed to the unit test console, **err** is **undefined**. Otherwise, **err** is an error object. |
 
 ## print
 
@@ -634,6 +651,8 @@ Prints log information to the unit test console. This API uses a promise to retu
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-AbilityDelegator-print(msg: string): Promise<void>--><!--Device-AbilityDelegator-print(msg: string): Promise<void>-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Parameters:**
@@ -646,7 +665,7 @@ Prints log information to the unit test console. This API uses a promise to retu
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 ## printSync
 
@@ -659,6 +678,8 @@ Prints log information to the unit test console.
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityDelegator-printSync(msg: string): void--><!--Device-AbilityDelegator-printSync(msg: string): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -686,14 +707,16 @@ Removes an **AbilityMonitor** instance. This API uses an asynchronous callback t
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-AbilityDelegator-removeAbilityMonitor(monitor: AbilityMonitor, callback: AsyncCallback<void>): void--><!--Device-AbilityDelegator-removeAbilityMonitor(monitor: AbilityMonitor, callback: AsyncCallback<void>): void-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitor | AbilityMonitor | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md) instance. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the **AbilityMonitor** instance isremoved, **err** is **undefined**. Otherwise, **err** is an error object. |
+| monitor | [AbilityMonitor](../../apis-test-kit/arkts-apis/arkts-test-abilitydelegatorregistry-abilitymonitor-t.md) | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md) instance. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the **AbilityMonitor** instance is removed, **err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -708,12 +731,13 @@ Removes an **AbilityMonitor** instance. This API uses an asynchronous callback t
 removeAbilityMonitor(monitor: AbilityMonitor): Promise<void>
 ```
 
-Removes an **AbilityMonitor** instance. This API uses a promise to return the result. Multi-thread concurrent calls
-are not supported.
+Removes an **AbilityMonitor** instance. This API uses a promise to return the result. Multi-thread concurrent calls are not supported.
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityDelegator-removeAbilityMonitor(monitor: AbilityMonitor): Promise<void>--><!--Device-AbilityDelegator-removeAbilityMonitor(monitor: AbilityMonitor): Promise<void>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -721,13 +745,13 @@ are not supported.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitor | AbilityMonitor | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md) instance. |
+| monitor | [AbilityMonitor](../../apis-test-kit/arkts-apis/arkts-test-abilitydelegatorregistry-abilitymonitor-t.md) | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md) instance. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -742,12 +766,13 @@ are not supported.
 removeAbilityMonitorSync(monitor: AbilityMonitor): void
 ```
 
-Removes an **AbilityMonitor** instance. This API returns the result synchronously. Multi-thread concurrent calls
-are not supported.
+Removes an **AbilityMonitor** instance. This API returns the result synchronously. Multi-thread concurrent calls are not supported.
 
 **Since:** 10
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityDelegator-removeAbilityMonitorSync(monitor: AbilityMonitor): void--><!--Device-AbilityDelegator-removeAbilityMonitorSync(monitor: AbilityMonitor): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -755,7 +780,7 @@ are not supported.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitor | AbilityMonitor | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md) instance. |
+| monitor | [AbilityMonitor](../../apis-test-kit/arkts-apis/arkts-test-abilitydelegatorregistry-abilitymonitor-t.md) | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md) instance. |
 
 **Error codes:**
 
@@ -770,12 +795,13 @@ are not supported.
 removeAbilityStageMonitor(monitor: AbilityStageMonitor, callback: AsyncCallback<void>): void
 ```
 
-Removes an **AbilityStageMonitor** instance from the application memory. This API uses an asynchronous callback to
-return the result.
+Removes an **AbilityStageMonitor** instance from the application memory. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityDelegator-removeAbilityStageMonitor(monitor: AbilityStageMonitor, callback: AsyncCallback<void>): void--><!--Device-AbilityDelegator-removeAbilityStageMonitor(monitor: AbilityStageMonitor, callback: AsyncCallback<void>): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -783,8 +809,8 @@ return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitor | AbilityStageMonitor | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) instance. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the **AbilityStageMonitor** instance isremoved, **err** is undefined. Otherwise, **err** is an error object. |
+| monitor | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) instance. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the **AbilityStageMonitor** instance is removed, **err** is undefined. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -799,12 +825,13 @@ return the result.
 removeAbilityStageMonitor(monitor: AbilityStageMonitor): Promise<void>
 ```
 
-Removes an **AbilityStageMonitor** instance from the application memory. This API uses a promise to return the
-result.
+Removes an **AbilityStageMonitor** instance from the application memory. This API uses a promise to return the result.
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityDelegator-removeAbilityStageMonitor(monitor: AbilityStageMonitor): Promise<void>--><!--Device-AbilityDelegator-removeAbilityStageMonitor(monitor: AbilityStageMonitor): Promise<void>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -812,13 +839,13 @@ result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitor | AbilityStageMonitor | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) instance. |
+| monitor | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) instance. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -839,13 +866,15 @@ Removes an **AbilityStageMonitor** instance from the application memory. This AP
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-AbilityDelegator-removeAbilityStageMonitorSync(monitor: AbilityStageMonitor): void--><!--Device-AbilityDelegator-removeAbilityStageMonitorSync(monitor: AbilityStageMonitor): void-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitor | AbilityStageMonitor | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) instance. |
+| monitor | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) instance. |
 
 **Error codes:**
 
@@ -868,13 +897,15 @@ Remove a specified InteropAbilityMonitor object from the application memory.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 
+<!--Device-AbilityDelegator-removeInteropAbilityMonitorSync(monitor: InteropAbilityMonitor): void--><!--Device-AbilityDelegator-removeInteropAbilityMonitorSync(monitor: InteropAbilityMonitor): void-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitor | InteropAbilityMonitor | Yes | InteropAbilityMonitor object. |
+| monitor | [InteropAbilityMonitor](../../apis-test-kit/arkts-apis/arkts-test-abilitydelegatorregistry-interopabilitymonitor-t.md) | Yes | InteropAbilityMonitor object. |
 
 **Error codes:**
 
@@ -894,13 +925,15 @@ Sets a list of mock data.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-AbilityDelegator-setMockList(mockList: Record<string, string>): void--><!--Device-AbilityDelegator-setMockList(mockList: Record<string, string>): void-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| mockList | Record&lt;string, string&gt; | Yes | Key-value object of the mock, where **key** is the target path to bereplaced and **value** is the path of the mock implementation to be used for the replacement. |
+| mockList | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, string> | Yes | Key-value object of the mock, where **key** is the target path to be replaced and **value** is the path of the mock implementation to be used for the replacement. |
 
 **Error codes:**
 
@@ -921,14 +954,16 @@ Starts an ability. This API uses an asynchronous callback to return the result.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-AbilityDelegator-startAbility(want: Want, callback: AsyncCallback<void>): void--><!--Device-AbilityDelegator-startAbility(want: Want, callback: AsyncCallback<void>): void-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | **Want** parameter for starting the ability. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the ability is started, **err** is**undefined**. Otherwise, **err** is an error object. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | **Want** parameter for starting the ability. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the ability is started, **err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -963,19 +998,21 @@ Starts an ability. This API uses a promise to return the result.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-AbilityDelegator-startAbility(want: Want): Promise<void>--><!--Device-AbilityDelegator-startAbility(want: Want): Promise<void>-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | **Want** parameter for starting the ability. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | **Want** parameter for starting the ability. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1004,13 +1041,13 @@ Starts an ability. This API uses a promise to return the result.
 waitAbilityMonitor(monitor: AbilityMonitor, callback: AsyncCallback<UIAbility>): void
 ```
 
-Waits for the **Ability** instance that matches the **AbilityMonitor** instance to reach the **onCreate** lifecycle
-state and returns the **Ability** instance. This API uses an asynchronous callback to return the result. Multi-
-thread concurrent calls are not supported.
+Waits for the **Ability** instance that matches the **AbilityMonitor** instance to reach the **onCreate** lifecycle state and returns the **Ability** instance. This API uses an asynchronous callback to return the result. Multi-thread concurrent calls are not supported.
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityDelegator-waitAbilityMonitor(monitor: AbilityMonitor, callback: AsyncCallback<UIAbility>): void--><!--Device-AbilityDelegator-waitAbilityMonitor(monitor: AbilityMonitor, callback: AsyncCallback<UIAbility>): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -1018,8 +1055,8 @@ thread concurrent calls are not supported.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitor | AbilityMonitor | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md) instance. |
-| callback | AsyncCallback&lt;UIAbility&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the **Ability** instance obtained. Otherwise, **err** is an error object. |
+| monitor | [AbilityMonitor](../../apis-test-kit/arkts-apis/arkts-test-abilitydelegatorregistry-abilitymonitor-t.md) | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md) instance. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<UIAbility> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the **Ability** instance obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1034,13 +1071,13 @@ thread concurrent calls are not supported.
 waitAbilityMonitor(monitor: AbilityMonitor, timeout: number, callback: AsyncCallback<UIAbility>): void
 ```
 
-Waits a period of time for the **Ability** instance that matches the **AbilityMonitor** instance to reach the
-**onCreate** lifecycle state and returns the **Ability** instance. This API uses an asynchronous callback to return
-the result. Multi-thread concurrent calls are not supported.
+Waits a period of time for the **Ability** instance that matches the **AbilityMonitor** instance to reach the **onCreate** lifecycle state and returns the **Ability** instance. This API uses an asynchronous callback to return the result. Multi-thread concurrent calls are not supported.
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityDelegator-waitAbilityMonitor(monitor: AbilityMonitor, timeout: long, callback: AsyncCallback<UIAbility>): void--><!--Device-AbilityDelegator-waitAbilityMonitor(monitor: AbilityMonitor, timeout: long, callback: AsyncCallback<UIAbility>): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -1048,9 +1085,9 @@ the result. Multi-thread concurrent calls are not supported.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitor | AbilityMonitor | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md) instance. |
+| monitor | [AbilityMonitor](../../apis-test-kit/arkts-apis/arkts-test-abilitydelegatorregistry-abilitymonitor-t.md) | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md) instance. |
 | timeout | number | Yes | Maximum waiting time, in milliseconds. The default value is 5000 ms. |
-| callback | AsyncCallback&lt;UIAbility&gt; | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<UIAbility> | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -1065,13 +1102,13 @@ the result. Multi-thread concurrent calls are not supported.
 waitAbilityMonitor(monitor: AbilityMonitor, timeout?: number): Promise<UIAbility>
 ```
 
-Waits a period of time for the **Ability** instance that matches the **AbilityMonitor** instance to reach the
-**onCreate** lifecycle state and returns the **Ability** instance. This API uses a promise to return the result.
-Multi-thread concurrent calls are not supported.
+Waits a period of time for the **Ability** instance that matches the **AbilityMonitor** instance to reach the **onCreate** lifecycle state and returns the **Ability** instance. This API uses a promise to return the result.Multi-thread concurrent calls are not supported.
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityDelegator-waitAbilityMonitor(monitor: AbilityMonitor, timeout?: long): Promise<UIAbility>--><!--Device-AbilityDelegator-waitAbilityMonitor(monitor: AbilityMonitor, timeout?: long): Promise<UIAbility>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -1079,14 +1116,14 @@ Multi-thread concurrent calls are not supported.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitor | AbilityMonitor | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md) instance. |
+| monitor | [AbilityMonitor](../../apis-test-kit/arkts-apis/arkts-test-abilitydelegatorregistry-abilitymonitor-t.md) | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md) instance. |
 | timeout | number | No | Maximum waiting time, in milliseconds. The default value is 5000 ms. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;UIAbility&gt; | Promise used to return the **Ability** instance obtained. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<UIAbility> | Promise used to return the **Ability** instance obtained. |
 
 **Error codes:**
 
@@ -1101,12 +1138,13 @@ Multi-thread concurrent calls are not supported.
 waitAbilityStageMonitor(monitor: AbilityStageMonitor, callback: AsyncCallback<AbilityStage>): void
 ```
 
-Returns an **AbilityStage** instance that matches the conditions set in an **AbilityStageMonitor** instance. This
-API uses an asynchronous callback to return the result.
+Returns an **AbilityStage** instance that matches the conditions set in an **AbilityStageMonitor** instance. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityDelegator-waitAbilityStageMonitor(monitor: AbilityStageMonitor, callback: AsyncCallback<AbilityStage>): void--><!--Device-AbilityDelegator-waitAbilityStageMonitor(monitor: AbilityStageMonitor, callback: AsyncCallback<AbilityStage>): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -1114,8 +1152,8 @@ API uses an asynchronous callback to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitor | AbilityStageMonitor | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) instance. |
-| callback | AsyncCallback&lt;AbilityStage&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is undefined and data is the [AbilityStage](arkts-ability-abilitystage-c.md)instance obtained. Otherwise, **err** is an error object. |
+| monitor | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) instance. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<AbilityStage> | Yes | Callback used to return the result. If the operation is successful,**err** is undefined and data is the [AbilityStage](arkts-ability-app-ability-abilitystage-abilitystage-c.md)instance obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1130,12 +1168,13 @@ API uses an asynchronous callback to return the result.
 waitAbilityStageMonitor(monitor: AbilityStageMonitor, timeout: number, callback: AsyncCallback<AbilityStage>): void
 ```
 
-Returns an **AbilityStage** instance that matches the conditions set in an **AbilityStageMonitor** instance within
-the specified timeout period. This API uses an asynchronous callback to return the result.
+Returns an **AbilityStage** instance that matches the conditions set in an **AbilityStageMonitor** instance within the specified timeout period. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityDelegator-waitAbilityStageMonitor(monitor: AbilityStageMonitor, timeout: long, callback: AsyncCallback<AbilityStage>): void--><!--Device-AbilityDelegator-waitAbilityStageMonitor(monitor: AbilityStageMonitor, timeout: long, callback: AsyncCallback<AbilityStage>): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -1143,9 +1182,9 @@ the specified timeout period. This API uses an asynchronous callback to return t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitor | AbilityStageMonitor | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) instance. |
+| monitor | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) instance. |
 | timeout | number | Yes | Maximum waiting time, in milliseconds. The default value is 5000 ms. |
-| callback | AsyncCallback&lt;AbilityStage&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is undefined and data is the [AbilityStage](arkts-ability-abilitystage-c.md)instance obtained. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<AbilityStage> | Yes | Callback used to return the result. If the operation is successful,**err** is undefined and data is the [AbilityStage](arkts-ability-app-ability-abilitystage-abilitystage-c.md)instance obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1160,12 +1199,13 @@ the specified timeout period. This API uses an asynchronous callback to return t
 waitAbilityStageMonitor(monitor: AbilityStageMonitor, timeout?: number): Promise<AbilityStage>
 ```
 
-Returns an **AbilityStage** instance that matches the conditions set in an **AbilityStageMonitor** instance. You
-can specify the timeout period. This API uses a promise to return the result.
+Returns an **AbilityStage** instance that matches the conditions set in an **AbilityStageMonitor** instance. You can specify the timeout period. This API uses a promise to return the result.
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityDelegator-waitAbilityStageMonitor(monitor: AbilityStageMonitor, timeout?: long): Promise<AbilityStage>--><!--Device-AbilityDelegator-waitAbilityStageMonitor(monitor: AbilityStageMonitor, timeout?: long): Promise<AbilityStage>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -1173,14 +1213,14 @@ can specify the timeout period. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitor | AbilityStageMonitor | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) instance. |
+| monitor | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) instance. |
 | timeout | number | No | Maximum waiting time, in milliseconds. The default value is 5000 ms. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;AbilityStage&gt; | Promise used to return the[AbilityStage](arkts-ability-abilitystage-c.md) instance. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AbilityStage> | Promise used to return the [AbilityStage](arkts-ability-app-ability-abilitystage-abilitystage-c.md) instance. |
 
 **Error codes:**
 

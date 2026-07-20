@@ -1,0 +1,442 @@
+# AVMediaDescription
+
+The description of the media for an item in the playlist of the session
+
+**Since:** 10
+
+<!--Device-avSession-interface AVMediaDescription--><!--Device-avSession-interface AVMediaDescription-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## Modules to Import
+
+```TypeScript
+import { avSession } from '@kit.AVSessionKit';
+```
+
+## albumCoverUri
+
+```TypeScript
+albumCoverUri?: string
+```
+
+The album cover uri of this media
+
+**Type:** string
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-AVMediaDescription-albumCoverUri?: string--><!--Device-AVMediaDescription-albumCoverUri?: string-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## albumTitle
+
+```TypeScript
+albumTitle?: string
+```
+
+The album title of this media
+
+**Type:** string
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-AVMediaDescription-albumTitle?: string--><!--Device-AVMediaDescription-albumTitle?: string-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## appName
+
+```TypeScript
+appName?: string
+```
+
+Application name.
+
+**Type:** string
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-AVMediaDescription-appName?: string--><!--Device-AVMediaDescription-appName?: string-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## artist
+
+```TypeScript
+artist?: string
+```
+
+The artist of this media.
+
+**Type:** string
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-AVMediaDescription-artist?: string--><!--Device-AVMediaDescription-artist?: string-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## assetId
+
+```TypeScript
+assetId: string
+```
+
+Unique ID used to represent this media.
+
+**Type:** string
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-AVMediaDescription-assetId: string--><!--Device-AVMediaDescription-assetId: string-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## creditsPosition
+
+```TypeScript
+creditsPosition?: number
+```
+
+Media credits position, described by milliseconds.
+
+**Type:** number
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-AVMediaDescription-creditsPosition?: int--><!--Device-AVMediaDescription-creditsPosition?: int-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## dataSrc
+
+```TypeScript
+dataSrc?: media.AVDataSrcDescriptor
+```
+
+DataSource descriptor. The caller ensures the fileSize and callback are valid.
+
+**Type:** media.AVDataSrcDescriptor
+
+**Since:** 12
+
+<!--Device-AVMediaDescription-dataSrc?: media.AVDataSrcDescriptor--><!--Device-AVMediaDescription-dataSrc?: media.AVDataSrcDescriptor-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## description
+
+```TypeScript
+description?: string
+```
+
+The description of this media
+
+**Type:** string
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-AVMediaDescription-description?: string--><!--Device-AVMediaDescription-description?: string-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## displayTags
+
+```TypeScript
+displayTags?: number
+```
+
+The display tags supported by application to be displayed on media center
+
+**Type:** number
+
+**Since:** 11
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-AVMediaDescription-displayTags?: int--><!--Device-AVMediaDescription-displayTags?: int-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## drmScheme
+
+```TypeScript
+drmScheme?: string
+```
+
+The drm scheme supported by this resource which is represented by uuid.
+
+**Type:** string
+
+**Since:** 12
+
+<!--Device-AVMediaDescription-drmScheme?: string--><!--Device-AVMediaDescription-drmScheme?: string-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## duration
+
+```TypeScript
+duration?: number
+```
+
+The duration of this media, described by milliseconds.
+
+**Type:** number
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-AVMediaDescription-duration?: int--><!--Device-AVMediaDescription-duration?: int-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## extras
+
+```TypeScript
+extras?: {[key: string]: Object}
+```
+
+Any additional attributes that can be represented as key-value pairs
+
+**Type:** {[key: string]: Object}
+
+**Since:** 10
+
+<!--Device-AVMediaDescription-extras?: {[key: string]: Object}--><!--Device-AVMediaDescription-extras?: {[key: string]: Object}-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## fdSrc
+
+```TypeScript
+fdSrc?: media.AVFileDescriptor
+```
+
+Media file descriptor.
+
+**Type:** media.AVFileDescriptor
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-AVMediaDescription-fdSrc?: media.AVFileDescriptor--><!--Device-AVMediaDescription-fdSrc?: media.AVFileDescriptor-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## launchClientData
+
+```TypeScript
+launchClientData?: string
+```
+
+Custom data sent by the application to the receiver during casting.
+
+**Type:** string
+
+**Since:** 20
+
+**Atomic service API:** This API can be used in atomic services since API version 20.
+
+<!--Device-AVMediaDescription-launchClientData?: string--><!--Device-AVMediaDescription-launchClientData?: string-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVCast
+
+## lyricContent
+
+```TypeScript
+lyricContent?: string
+```
+
+The lyric content of the media, it should be in standard lyric format
+
+**Type:** string
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-AVMediaDescription-lyricContent?: string--><!--Device-AVMediaDescription-lyricContent?: string-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## lyricUri
+
+```TypeScript
+lyricUri?: string
+```
+
+The lyric uri of the media.
+
+**Type:** string
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-AVMediaDescription-lyricUri?: string--><!--Device-AVMediaDescription-lyricUri?: string-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## mediaImage
+
+```TypeScript
+mediaImage?: image.PixelMap | string
+```
+
+The image of this media asset displayed in the media center.It can be a {@link PixelMap} or a URI formatted string,
+
+**Type:** image.PixelMap | string
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-AVMediaDescription-mediaImage?: image.PixelMap | string--><!--Device-AVMediaDescription-mediaImage?: image.PixelMap | string-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## mediaSize
+
+```TypeScript
+mediaSize?: number
+```
+
+The size of this media.
+
+**Type:** number
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-AVMediaDescription-mediaSize?: int--><!--Device-AVMediaDescription-mediaSize?: int-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## mediaType
+
+```TypeScript
+mediaType?: string
+```
+
+The type of this media, such as video, audio and so on.
+
+**Type:** string
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-AVMediaDescription-mediaType?: string--><!--Device-AVMediaDescription-mediaType?: string-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## mediaUri
+
+```TypeScript
+mediaUri?: string
+```
+
+The uri of the media, used to locate the media in some special cases
+
+**Type:** string
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-AVMediaDescription-mediaUri?: string--><!--Device-AVMediaDescription-mediaUri?: string-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## pcmSrc
+
+```TypeScript
+pcmSrc?: boolean
+```
+
+Source type that supports PCM casting.The application can send PCM data directly to the system through audio APIs, without using AVSession to set data.
+
+**Type:** boolean
+
+**Since:** 20
+
+**Atomic service API:** This API can be used in atomic services since API version 20.
+
+<!--Device-AVMediaDescription-pcmSrc?: boolean--><!--Device-AVMediaDescription-pcmSrc?: boolean-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## startPosition
+
+```TypeScript
+startPosition?: number
+```
+
+Media start position, described by milliseconds.
+
+**Type:** number
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-AVMediaDescription-startPosition?: int--><!--Device-AVMediaDescription-startPosition?: int-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## subtitle
+
+```TypeScript
+subtitle?: string
+```
+
+The subtitle of the media, used for display
+
+**Type:** string
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-AVMediaDescription-subtitle?: string--><!--Device-AVMediaDescription-subtitle?: string-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## title
+
+```TypeScript
+title?: string
+```
+
+The title of this media, for display in media center.
+
+**Type:** string
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-AVMediaDescription-title?: string--><!--Device-AVMediaDescription-title?: string-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+

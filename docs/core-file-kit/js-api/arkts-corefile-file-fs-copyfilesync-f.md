@@ -18,6 +18,8 @@ Copies a file. This API returns the result synchronously.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-unnamed-declare function copyFileSync(src: string | number, dest: string | number, mode?: number): void--><!--Device-unnamed-declare function copyFileSync(src: string | number, dest: string | number, mode?: number): void-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
@@ -26,7 +28,7 @@ Copies a file. This API returns the result synchronously.
 | --- | --- | --- | --- |
 | src | string \| number | Yes | Path or FD of the file to copy. |
 | dest | string \| number | Yes | Destination path of the file or FD of the file created. |
-| mode | number | No | Whether to overwrite the file with the same name in the destination directory. The defaultvalue is **0**, which is the only value supported.<br>**0**: overwrite the file with the same name and truncatethe part that is not overwritten. |
+| mode | number | No | Whether to overwrite the file with the same name in the destination directory. The default value is **0**, which is the only value supported.<br>**0**: overwrite the file with the same name and truncate the part that is not overwritten. |
 
 **Error codes:**
 

@@ -12,5 +12,5 @@ import { StartupListener } from '@kit.AbilityKit';
 
 | Name | Description |
 | --- | --- |
-| [StartupListener](arkts-ability-startuplistener-c.md) | The module defines the task listener used in [App Startup](../../../../application-models/app-startup.md). |
+| [StartupListener](arkts-ability-app-appstartup-startuplistener-startuplistener-c.md) | The module defines the task listener used in [App Startup](../../../../application-models/app-startup.md). |
 

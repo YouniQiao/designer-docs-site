@@ -12,14 +12,13 @@ import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventList
 declare function mmapSync(file: number | File, mode: MappingMode, offset: number, size: number): FileMapping
 ```
 
-Creates a file mapping object based on a file descriptor or file object by using the synchronization method. Maps
-file contents to memory for efficient read and write access to files.
-Note: In the read/write mode (MappingMode.READ_WRITE), if the mapping range exceeds the raw file size, the file size
-will be automatically expanded.
+Creates a file mapping object based on a file descriptor or file object by using the synchronization method. Maps file contents to memory for efficient read and write access to files.Note: In the read/write mode (MappingMode.READ_WRITE), if the mapping range exceeds the raw file size, the file size will be automatically expanded.
 
 **Since:** 26.0.0
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-unnamed-declare function mmapSync(file: number | File, mode: MappingMode, offset: number, size: number): FileMapping--><!--Device-unnamed-declare function mmapSync(file: number | File, mode: MappingMode, offset: number, size: number): FileMapping-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
@@ -28,7 +27,7 @@ will be automatically expanded.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | file | number \| File | Yes | File object or open file descriptor fd that has been opened. |
-| mode | MappingMode | Yes | Option to create a file memory-mapped object. You must specify one of the followingoptions:<br>MappingMode.READ_ONLY(0): read-only mode. The file mapping area is not writable. An exception is thrownwhen the file mapping area is modified.<br>MappingMode.READ_WRITE(1): read/write mode. The modification is written to the file mapping area and thensynchronized to the file by the operating system (non-real-time).<br>MappingMode.PRIVATE(2): private mode. It is a copy-on-write mapping mechanism. Modifications to the mappingarea are visible only to the current process and do not affect the original file. |
+| mode | [MappingMode](arkts-corefile-file-fs-mappingmode-e.md) | Yes | Option to create a file memory-mapped object. You must specify one of the following options:<br>MappingMode.READ_ONLY(0): read-only mode. The file mapping area is not writable. An exception is thrown when the file mapping area is modified.<br>MappingMode.READ_WRITE(1): read/write mode. The modification is written to the file mapping area and then synchronized to the file by the operating system (non-real-time).<br>MappingMode.PRIVATE(2): private mode. It is a copy-on-write mapping mechanism. Modifications to the mapping area are visible only to the current process and do not affect the original file. |
 | offset | number | Yes | Start position of the file mapping area, in bytes. |
 | size | number | Yes | Size of the file mapping area, in bytes. |
 
@@ -36,7 +35,7 @@ will be automatically expanded.
 
 | Type | Description |
 | --- | --- |
-| FileMapping | - FileMapping object. |
+| [FileMapping](arkts-corefile-file-fs-filemapping-i.md) | - FileMapping object. |
 
 **Error codes:**
 

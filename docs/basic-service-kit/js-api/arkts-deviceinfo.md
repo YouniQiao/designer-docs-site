@@ -2,15 +2,17 @@
 
 The **deviceInfo** module provides terminal device information query, which cannot be configured by developers.
 
-> **NOTE**
->
-> The initial APIs of this module are supported since API version 6. Newly added APIs
-> will be marked with a superscript to indicate their earliest API version.
-> Some parameters whose return value is the default value are not yet available.
-> The APIs of this module return information about device constants. You are not expected to call these APIs
+> **NOTE**  
+>  
+> The initial APIs of this module are supported since API version 6. Newly added APIs  
+> will be marked with a superscript to indicate their earliest API version.  
+> Some parameters whose return value is the default value are not yet available.  
+> The APIs of this module return information about device constants. You are not expected to call these APIs  
 > frequently.
 
 **Since:** 6
+
+<!--Device-unnamed-declare namespace deviceInfo--><!--Device-unnamed-declare namespace deviceInfo-End-->
 
 **System capability:** SystemCapability.Startup.SystemInfo
 
@@ -26,20 +28,20 @@ import { deviceInfo } from '@kit.BasicServicesKit';
 
 | Name | Description |
 | --- | --- |
-| [apiAvailable](arkts-basicservices-apiavailable-f.md#apiavailable-1) | Checks whether a specified API version is available on the current device.This API provides compatibility check across different OpenHarmony/distributed OS versions.A suitable version check method is automatically selected based on the input format and supported API versions. |
+| [apiAvailable](arkts-basicservices-deviceinfo-apiavailable-f.md#apiavailable-1) | Checks whether a specified API version is available on the current device.This API provides compatibility check across different OpenHarmony/distributed OS versions.A suitable version check method is automatically selected based on the input format and supported API versions. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [DeviceTypes](arkts-basicservices-devicetypes-e.md) | Enumerates device types, which can be used to verify the return value of **deviceType**. |
-| [PerformanceClassLevel](arkts-basicservices-performanceclasslevel-e.md) | Enumerates the device capability levels. |
+| [DeviceTypes](arkts-basicservices-deviceinfo-devicetypes-e.md) | Enumerates device types, which can be used to verify the return value of **deviceType**. |
+| [PerformanceClassLevel](arkts-basicservices-deviceinfo-performanceclasslevel-e.md) | Enumerates the device capability levels. |
 
 ### Constants
 
 | Name | Description |
 | --- | --- |
-| [ODID](arkts-basicservices-deviceinfo-con.md#odid) | Open device identifier.An ODID will be regenerated in the following scenarios:Restore a phone to its factory settings.Uninstall and reinstall all applications with the same **developerId** on one device.An ODID is generated based on the following rules:The value is generated based on the **groupId** parsed from the **developerId** in the signature information. As**groupId.developerId** is the rule, if no **groupId** exists, the **developerId** is used as the **groupId**.Applications with the same **developerId** use the same ODID on one device.Applications with different **developerId**s use different ODIDs on one device.Applications with the same **developerId** use different ODIDs on different devices.Applications with different **developerId**s use different ODIDs on different devices.**NOTE**The data length is 37 bytes.Example: 1234a567-XXXX-XXXX-XXXX-XXXXXXXXXXXX |
+| [ODID](arkts-basicservices-deviceinfo-con.md#odid) | Open device identifier.An ODID will be regenerated in the following scenarios:Restore a phone to its factory settings.Uninstall and reinstall all applications with the same **developerId** on one device.An ODID is generated based on the following rules:The value is generated based on the **groupId** parsed from the **developerId** in the signature information. As **groupId.developerId** is the rule, if no **groupId** exists, the **developerId** is used as the **groupId**.Applications with the same **developerId** use the same ODID on one device.Applications with different **developerId**s use different ODIDs on one device.Applications with the same **developerId** use different ODIDs on different devices.Applications with different **developerId**s use different ODIDs on different devices. |
 | [abiList](arkts-basicservices-deviceinfo-con.md#abilist) | Application binary interface (Abi) list.Example: arm64-v8a |
 | [bootCount](arkts-basicservices-deviceinfo-con.md#bootcount) | Obtains boot count since the device starts running |
 | [bootloaderVersion](arkts-basicservices-deviceinfo-con.md#bootloaderversion) | Bootloader version.Example: bootloader |
@@ -53,7 +55,7 @@ import { deviceInfo } from '@kit.BasicServicesKit';
 | [chipType](arkts-basicservices-deviceinfo-con.md#chiptype) | Obtains the device CPU chipType by a string. |
 | [deviceColor](arkts-basicservices-deviceinfo-con.md#devicecolor) | Obtain the device color represented by a string. If it cannot be obtained, return an empty string |
 | [deviceType](arkts-basicservices-deviceinfo-con.md#devicetype) | Device type. For details, see [deviceTypes tag](../../../../quick-start/module-configuration-file.md#devicetypes).Example: &lt;!--RP1--&gt;wearable&lt;!--RP1End--&gt; |
-| [diskSN](arkts-basicservices-deviceinfo-con.md#disksn) | Disk SN.**NOTE**This field can be queried only on the 2-in-1 device. For other devices, the query result is empty.ohos.permission.ACCESS_DISK_PHY_INFOExample: 2502EM400567 |
+| [diskSN](arkts-basicservices-deviceinfo-con.md#disksn) | Disk SN. |
 | [displayVersion](arkts-basicservices-deviceinfo-con.md#displayversion) | Product version.Example: &lt;!--RP8--&gt;XXX X.X.X.X&lt;!--RP8End--&gt; |
 | [distributionOSApiName](arkts-basicservices-deviceinfo-con.md#distributionosapiname) | Distribution OS API name.&lt;!--Del--&gt; It is defined by the issuer.&lt;!--DelEnd--&gt; |
 | [distributionOSApiVersion](arkts-basicservices-deviceinfo-con.md#distributionosapiversion) | Distribution OS API version.&lt;!--Del--&gt; It is defined by the issuer.&lt;!--DelEnd--&gt;Example: 50001 |
@@ -63,13 +65,13 @@ import { deviceInfo } from '@kit.BasicServicesKit';
 | [featureVersion](arkts-basicservices-deviceinfo-con.md#featureversion) | Feature version number. The value is the third digit in **osFullName**. You are advised to use **deviceInfo.featureVersion** instead of parsing **osFullName** to obtain the value, facilitating efficiency improvement.Example: 0 |
 | [firstApiVersion](arkts-basicservices-deviceinfo-con.md#firstapiversion) | First API version.Example: 3 |
 | [hardwareModel](arkts-basicservices-deviceinfo-con.md#hardwaremodel) | Hardware model.Example: &lt;!--RP6--&gt;TASA00CVN1&lt;!--RP6End--&gt; |
-| [hardwareProfile](arkts-basicservices-deviceinfo-con.md#hardwareprofile) | Hardware profile.**NOTE**This API is supported since API version 6 and deprecated since API version 9.Example: default |
+| [hardwareProfile](arkts-basicservices-deviceinfo-con.md#hardwareprofile) | Hardware profile. |
 | [incrementalVersion](arkts-basicservices-deviceinfo-con.md#incrementalversion) | Incremental version.Example: default |
-| [majorVersion](arkts-basicservices-deviceinfo-con.md#majorversion) | Major version number, which increments with the main version. The value is the first digit in **osFullName**. Youare advised to use **deviceInfo.majorVersion** instead of parsing **osFullName** to obtain the value, facilitatingefficiency improvement.Example: 5 |
+| [majorVersion](arkts-basicservices-deviceinfo-con.md#majorversion) | Major version number, which increments with the main version. The value is the first digit in **osFullName**. You are advised to use **deviceInfo.majorVersion** instead of parsing **osFullName** to obtain the value, facilitating efficiency improvement.Example: 5 |
 | [manufacture](arkts-basicservices-deviceinfo-con.md#manufacture) | Device manufacturer.Example: HUAWEI |
 | [marketName](arkts-basicservices-deviceinfo-con.md#marketname) | Marketing name.Example: &lt;!--RP2--&gt;Mate XX&lt;!--RP2End--&gt; |
 | [osFullName](arkts-basicservices-deviceinfo-con.md#osfullname) | System version. The version number is in the format of **OpenHarmony-x.x.x.x**, where **x** is a digit.Example: &lt;!--RP10--&gt;Openharmony-5.0.0.1&lt;!--RP10End--&gt; |
-| [osReleaseType](arkts-basicservices-deviceinfo-con.md#osreleasetype) | OS release type. The options are as follows:- **Canary**: Preliminary release open only to specific developers. This release does not promise API stabilityand may require tolerance of instability.- **Beta**: Release open to all developers. This release does not promise API stability and may require tolerance of instability.- **Release**: Official release open to all developers. This release promises that all APIs are stable.Example: &lt;!--RP9--&gt;Canary/Beta/Release&lt;!--RP9End--&gt; |
+| [osReleaseType](arkts-basicservices-deviceinfo-con.md#osreleasetype) | OS release type. The options are as follows:- **Canary**: Preliminary release open only to specific developers. This release does not promise API stability and may require tolerance of instability. - **Beta**: Release open to all developers. This release does not promise API stability and may require tolerance of instability. - **Release**: Official release open to all developers. This release promises that all APIs are stable.Example: &lt;!--RP9--&gt;Canary/Beta/Release&lt;!--RP9End--&gt; |
 | [performanceClass](arkts-basicservices-deviceinfo-con.md#performanceclass) | Device capability level. |
 | [productModel](arkts-basicservices-deviceinfo-con.md#productmodel) | Product model.Example: &lt;!--RP4--&gt;TAS-AL00&lt;!--RP4End--&gt; |
 | [productModelAlias](arkts-basicservices-deviceinfo-con.md#productmodelalias) | Product model alias.Example: TAS-AL00 |
@@ -78,9 +80,9 @@ import { deviceInfo } from '@kit.BasicServicesKit';
 | [sdkMinorApiVersion](arkts-basicservices-deviceinfo-con.md#sdkminorapiversion) | Obtains the SDK Minor API version. |
 | [sdkPatchApiVersion](arkts-basicservices-deviceinfo-con.md#sdkpatchapiversion) | Obtains the SDK Patch API version. |
 | [securityPatchTag](arkts-basicservices-deviceinfo-con.md#securitypatchtag) | Security patch tag.Example: &lt;!--RP7--&gt;2021/01/01&lt;!--RP7End--&gt; |
-| [seniorVersion](arkts-basicservices-deviceinfo-con.md#seniorversion) | Senior version number, which increments with architecture and feature updates. The value is the second digit in**osFullName**. You are advised to use **deviceInfo.seniorVersion** instead of parsing **osFullName** to obtainthe value, facilitating efficiency improvement.Example: 0 |
-| [serial](arkts-basicservices-deviceinfo-con.md#serial) | Device serial number (SN).**NOTE**The device SN can be used as the unique identifier of a device.**Required permission**: ohos.permission.sec.ACCESS_UDID (for system applications and enterprise applications only)Example: The SN varies with the device. |
+| [seniorVersion](arkts-basicservices-deviceinfo-con.md#seniorversion) | Senior version number, which increments with architecture and feature updates. The value is the second digit in **osFullName**. You are advised to use **deviceInfo.seniorVersion** instead of parsing **osFullName** to obtain the value, facilitating efficiency improvement.Example: 0 |
+| [serial](arkts-basicservices-deviceinfo-con.md#serial) | Device serial number (SN). |
 | [softwareModel](arkts-basicservices-deviceinfo-con.md#softwaremodel) | Software model.Example: &lt;!--RP5--&gt;TAS-AL00&lt;!--RP5End--&gt; |
-| [udid](arkts-basicservices-deviceinfo-con.md#udid) | Device UDID.**NOTE**The data length is 65 bytes. The UDID can be used as the unique identifier of a device.**Required permission**: ohos.permission.sec.ACCESS_UDID (for system applications and enterprise applications only)Example: 9D6AABD147XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXE5536412 |
-| [versionId](arkts-basicservices-deviceinfo-con.md#versionid) | Version ID. It consists of the following fields: **deviceType**, **manufacture**, **brand**, **productSeries**, **osFullName**, **productModel**, **softwareModel**, **sdkApiVersion**, **incrementalVersion**, and **buildType**.Example: wearable/HUAWEI/HUAWEI/TAS/OpenHarmony-5.0.0.1/TAS-AL00/TAS-AL00/12/default/release:nolog |
+| [udid](arkts-basicservices-deviceinfo-con.md#udid) | Device UDID. |
+| [versionId](arkts-basicservices-deviceinfo-con.md#versionid) | Version ID. It consists of the following fields: **deviceType**, **manufacture**, **brand**, **productSeries**,**osFullName**, **productModel**, **softwareModel**, **sdkApiVersion**, **incrementalVersion**, and **buildType**.Example: wearable/HUAWEI/HUAWEI/TAS/OpenHarmony-5.0.0.1/TAS-AL00/TAS-AL00/12/default/release:nolog |
 

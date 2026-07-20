@@ -1,6 +1,15 @@
 # Rect
 
-Provides an interface for drawing rectangles.
+The **Rect** component is used to draw a rectangle.
+> **NOTE**
+>
+> This component supports dynamic constructor parameter updates using the
+> [updateConstructorParams](docroot://reference/apis-arkui/js-apis-arkui-AttributeUpdater.md#properties) API of the
+> [AttributeUpdater](docroot://reference/apis-arkui/js-apis-arkui-AttributeUpdater.md) class since API version 20.
+>
+> **Child Components**
+>
+> None
 
 
 ## Rect
@@ -11,14 +20,19 @@ Rect(
   )
 ```
 
-Use new function to create Rect.
-Anonymous Object Rectification.
+Use new function to create Rect.Anonymous Object Rectification.
 
 **Since:** 7
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
+
+<!--Device-RectInterface-new (
+    options?: RectOptions | RoundedRectOptions,
+  ): RectAttribute--><!--Device-RectInterface-new (
+    options?: RectOptions | RoundedRectOptions,
+  ): RectAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -43,6 +57,12 @@ Defines the constructor of Rect component.
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
+
+<!--Device-RectInterface-(
+    options?: RectOptions | RoundedRectOptions,
+  ): RectAttribute--><!--Device-RectInterface-(
+    options?: RectOptions | RoundedRectOptions,
+  ): RectAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

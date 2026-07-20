@@ -1,15 +1,14 @@
 # TextTimer properties/events
 
-In addition to the
-[universal attributes](../../../../reference/apis-arkui/arkui-ts/ts-component-general-attributes.md), the following
-attributes are supported.
+In addition to the [universal attributes](../../../../reference/apis-arkui/arkui-ts/ts-component-general-attributes.md), the following attributes are supported.
 
-In addition to the [universal events](../../../../reference/apis-arkui/arkui-ts/ts-component-general-events.md), the
-following events are supported.
+In addition to the [universal events](../../../../reference/apis-arkui/arkui-ts/ts-component-general-events.md), the following events are supported.
 
 **Inheritance/Implementation:** TextTimerAttribute extends [CommonMethod<TextTimerAttribute>](CommonMethod<TextTimerAttribute>)
 
 **Since:** 8
+
+<!--Device-unnamed-declare class TextTimerAttribute extends CommonMethod<TextTimerAttribute>--><!--Device-unnamed-declare class TextTimerAttribute extends CommonMethod<TextTimerAttribute>-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -27,13 +26,15 @@ Creates a content modifier.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-TextTimerAttribute-contentModifier(modifier: ContentModifier<TextTimerConfiguration>): TextTimerAttribute--><!--Device-TextTimerAttribute-contentModifier(modifier: ContentModifier<TextTimerConfiguration>): TextTimerAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| modifier | ContentModifier&lt;TextTimerConfiguration&gt; | Yes | Content modifier to apply to the **TextTimer**component.<br>**modifier**: content modifier. You need a custom class to implement the **ContentModifier** API. |
+| modifier | [ContentModifier](arkts-arkui-common-contentmodifier-i.md)<TextTimerConfiguration> | Yes | Content modifier to apply to the **TextTimer** component.<br>**modifier**: content modifier. You need a custom class to implement the **ContentModifier** API. |
 
 ## fontColor
 
@@ -49,13 +50,15 @@ Sets the font color.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 10.
 
+<!--Device-TextTimerAttribute-fontColor(value: ResourceColor): TextTimerAttribute--><!--Device-TextTimerAttribute-fontColor(value: ResourceColor): TextTimerAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ResourceColor | Yes | Font color.<br>Default value on wearable devices: **'#c5ffffff'**, indicating thatthe text is displayed in white.<br>Default value on other devices: **'#e6182431'**, indicating that the text isdisplayed in black. |
+| value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Font color.<br>Default value on wearable devices: **'#c5ffffff'**, indicating that the text is displayed in white.<br>Default value on other devices: **'#e6182431'**, indicating that the text is displayed in black. |
 
 ## fontFamily
 
@@ -71,13 +74,15 @@ Sets the font family.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 10.
 
+<!--Device-TextTimerAttribute-fontFamily(value: ResourceStr): TextTimerAttribute--><!--Device-TextTimerAttribute-fontFamily(value: ResourceStr): TextTimerAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ResourceStr | Yes | Font family. The default font is **'HarmonyOS Sans'**.<br>The 'HarmonyOS Sans' fontand [registered custom fonts](../arkts-apis/arkts-font.md) are supported for applications.<br>Only the 'HarmonyOSSans' font is supported for widgets. |
+| value | [ResourceStr](../arkts-apis/arkts-arkui-resourcestr-t.md) | Yes | Font family. The default font is **'HarmonyOS Sans'**.<br>The 'HarmonyOS Sans' font and [registered custom fonts](../arkts-apis/arkts-font.md) are supported for applications.<br>Only the 'HarmonyOS Sans' font is supported for widgets. |
 
 ## fontSize
 
@@ -93,13 +98,15 @@ Sets the font size.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 10.
 
+<!--Device-TextTimerAttribute-fontSize(value: Length): TextTimerAttribute--><!--Device-TextTimerAttribute-fontSize(value: Length): TextTimerAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | Length | Yes | Font size. When the value is of the number type in Length, the unit is fp. The defaultfont size is 16 fp. When the value is of the string type in Length:<br>- If the string does not start with adigit, it is treated as 0 fp.<br>- If the string starts with a digit and contains characters other than[pixel units](../../../../reference/apis-arkui/arkui-ts/ts-pixel-units.md) (such as letters or specialcharacters), the leading numeric part is extracted as the value and the unit is fp. For example, the value**"abc"** is treated as **0fp**, **"10vp"** is treated as **10vp**, and **"10vp11abc"** is treated as **10fp**.The value cannot be a percentage. |
+| value | [Length](../arkts-apis/arkts-arkui-length-t.md) | Yes | Font size. When the value is of the number type in Length, the unit is fp. The default font size is 16 fp. When the value is of the string type in Length:<br>- If the string does not start with a digit, it is treated as 0 fp.<br>- If the string starts with a digit and contains characters other than [pixel units](../../../../reference/apis-arkui/arkui-ts/ts-pixel-units.md) (such as letters or special characters), the leading numeric part is extracted as the value and the unit is fp. For example, the value **"abc"** is treated as **0fp**, **"10vp"** is treated as **10vp**, and **"10vp11abc"** is treated as **10fp**.The value cannot be a percentage. |
 
 ## fontStyle
 
@@ -115,13 +122,15 @@ Sets the font style.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 10.
 
+<!--Device-TextTimerAttribute-fontStyle(value: FontStyle): TextTimerAttribute--><!--Device-TextTimerAttribute-fontStyle(value: FontStyle): TextTimerAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | FontStyle | Yes | Font style, for example, italic.<br>Default value: **FontStyle.Normal** |
+| value | [FontStyle](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-text-fontstyle-e.md) | Yes | Font style, for example, italic.<br>Default value: **FontStyle.Normal** |
 
 ## fontWeight
 
@@ -137,13 +146,15 @@ Sets the font weight of the text. If the value is too large, the text in differe
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 10.
 
+<!--Device-TextTimerAttribute-fontWeight(value: number | FontWeight | ResourceStr): TextTimerAttribute--><!--Device-TextTimerAttribute-fontWeight(value: number | FontWeight | ResourceStr): TextTimerAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | number \| FontWeight \| ResourceStr | Yes | Font weight of the text. The value range of the number type is[100, 900]. The value interval is 100. A larger value indicates a wider font. If the value of the number typeis not within the value range, the default value is **400**. The [ResourceStr](arkts-arkui-resourcestr-t.md) type supportsonly strings of the number type, such as **"400"**, **"bold"**, **"bolder"**, **"lighter"**, **"regular"**, and**"medium"**, corresponding to the enums in **FontWeight**.<br>Default value: **FontWeight.Normal**<br>TheResource type is supported since API version 20.<br>**Since:** 20 |
+| value | number \| FontWeight \| ResourceStr | Yes | Font weight of the text. The value range of the number type is [100, 900]. The value interval is 100. A larger value indicates a wider font. If the value of the number type is not within the value range, the default value is **400**. The [ResourceStr](../arkts-apis/arkts-arkui-resourcestr-t.md) type supports only strings of the number type, such as **"400"**, **"bold"**, **"bolder"**, **"lighter"**, **"regular"**, and **"medium"**, corresponding to the enums in **FontWeight**.<br>Default value: **FontWeight.Normal**<br>The Resource type is supported since API version 20.<br>**Since:** 20 |
 
 ## format
 
@@ -151,17 +162,17 @@ Sets the font weight of the text. If the value is too large, the text in differe
 format(value: string)
 ```
 
-Sets the custom format. The value must contain at least one of the following keywords: **HH**, **mm**, **ss**, and
-**SS**. If the date format is yy, MM, or dd, the default value is used.
+Sets the custom format. The value must contain at least one of the following keywords: **HH**, **mm**, **ss**, and **SS**. If the date format is yy, MM, or dd, the default value is used.
 
-The timer update frequency is in the minimum unit of **format**. For example, if **format** is set to **'HH:mm'**,
-the update frequency is one minute.
+The timer update frequency is in the minimum unit of **format**. For example, if **format** is set to **'HH:mm'**,the update frequency is one minute.
 
 **Since:** 8
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 10.
+
+<!--Device-TextTimerAttribute-format(value: string): TextTimerAttribute--><!--Device-TextTimerAttribute-format(value: string): TextTimerAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -177,9 +188,7 @@ the update frequency is one minute.
 onTimer(event: (utc: number, elapsedTime: number) => void)
 ```
 
-Event triggered when the time text changes. This event is not triggered when the screen is locked or the
-application is running in the background. When high-precision [format](TextTimerAttribute#format)s (such as
-**SS**) are used, the callback interval may vary.
+Event triggered when the time text changes. This event is not triggered when the screen is locked or the application is running in the background. When high-precision [format](TextTimerAttribute#format)s (such as **SS**) are used, the callback interval may vary.
 
 **Since:** 8
 
@@ -187,13 +196,15 @@ application is running in the background. When high-precision [format](TextTimer
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 10.
 
+<!--Device-TextTimerAttribute-onTimer(event: (utc: number, elapsedTime: number) => void): TextTimerAttribute--><!--Device-TextTimerAttribute-onTimer(event: (utc: number, elapsedTime: number) => void): TextTimerAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | (utc: number, elapsedTime: number) =&gt; void | Yes | utc: Linux timestamp, which is the amount of time that has elapsed since January 1, 1970, in the minimum unit of the format.<br>elapsedTime: Elapsed time of the timer, in the minimum unit of theformat. |
+| event | (utc: number, elapsedTime: number) => void | Yes | utc: Linux timestamp, which is the amount of time that has elapsed since January 1, 1970, in the minimum unit of the format.<br>elapsedTime: Elapsed time of the timer, in the minimum unit of the format. |
 
 ## textShadow
 
@@ -201,12 +212,11 @@ application is running in the background. When high-precision [format](TextTimer
 textShadow(value: ShadowOptions | Array<ShadowOptions>)
 ```
 
-Sets the text shadow. It supports input parameters in an array to implement multiple text shadows. This API does
-not work with the **fill** attribute or coloring strategy.
+Sets the text shadow. It supports input parameters in an array to implement multiple text shadows. This API does not work with the **fill** attribute or coloring strategy.
 
-> **NOTE**
->
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
+> **NOTE**  
+>  
+> This API can be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1) since API version 12.
 
 **Since:** 11
 
@@ -214,11 +224,13 @@ not work with the **fill** attribute or coloring strategy.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-TextTimerAttribute-textShadow(value: ShadowOptions | Array<ShadowOptions>): TextTimerAttribute--><!--Device-TextTimerAttribute-textShadow(value: ShadowOptions | Array<ShadowOptions>): TextTimerAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ShadowOptions \| Array&lt;ShadowOptions&gt; | Yes | Parameters of the text shadow effect, including the color,blur radius, and offset. |
+| value | ShadowOptions \| Array<ShadowOptions> | Yes | Parameters of the text shadow effect, including the color,blur radius, and offset. |
 

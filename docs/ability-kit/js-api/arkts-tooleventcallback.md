@@ -2,15 +2,19 @@
 
 ## Summary
 
-### Interfaces
+<!--Del-->
+### Interfaces（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[ToolEventCallback](arkts-tooleventcallback-i.md) | This interface is used to receive cli event when the cli tool process is running. |
+| [ToolEventCallback](arkts-ability-tooleventcallback-i-sys.md) | This interface is used to receive cli event when the cli tool process is running. |
+<!--DelEnd-->
 
-### Types
+<!--Del-->
+### Types（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[OnEventFn](arkts-oneventfn-t.md) | Define cli event callback function. |
+| [OnEventFn](arkts-ability-oneventfn-t-sys.md) | Define cli event callback function. |
+<!--DelEnd-->
 

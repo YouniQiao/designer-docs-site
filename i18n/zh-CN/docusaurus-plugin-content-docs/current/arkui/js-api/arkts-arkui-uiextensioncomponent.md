@@ -1,7 +1,6 @@
 # UIExtensionComponent
 
-提供UIExtensionComponent的接口，用于
-<br/>渲染远程UIExtensionAbility的UI。
+定义UIExtensionComponent组件。
 
 
 ## UIExtensionComponent
@@ -12,12 +11,17 @@ UIExtensionComponent(
   )
 ```
 
-构造UIExtensionComponent。<br/>
-在使用UIExtensionComponent时调用。
+构造UIExtensionComponent。<br/>在使用UIExtensionComponent时调用。
 
 **起始版本：** 11
 
 **模型约束：** 此接口仅可在Stage模型下使用。
+
+<!--Device-UIExtensionComponentInterface-(
+    want: import('../api/options?: UIExtensionOptions
+  ): UIExtensionComponentAttribute--><!--Device-UIExtensionComponentInterface-(
+    want: import('../api/options?: UIExtensionOptions
+  ): UIExtensionComponentAttribute-End-->
 
 **系统能力：** SystemCapability.ArkUI.ArkUI.Full
 

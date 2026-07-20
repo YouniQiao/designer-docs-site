@@ -10,6 +10,8 @@ Defines XComponent Node.
 
 **Substitutes:** XComponent
 
+<!--Device-unnamed-export declare class XComponentNode extends FrameNode--><!--Device-unnamed-export declare class XComponentNode extends FrameNode-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 ## changeRenderType
@@ -28,13 +30,15 @@ Set the render type of the builderNode.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-XComponentNode-changeRenderType(type: NodeRenderType): boolean--><!--Device-XComponentNode-changeRenderType(type: NodeRenderType): boolean-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | NodeRenderType | Yes | render type |
+| type | [NodeRenderType](arkts-arkui-buildernode-noderendertype-e.md) | Yes | render type |
 
 **Return value:**
 
@@ -59,16 +63,20 @@ constructor.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-XComponentNode-constructor(uiContext: UIContext, options: RenderOptions,
+    id: string, type: XComponentType, libraryName?: string)--><!--Device-XComponentNode-constructor(uiContext: UIContext, options: RenderOptions,
+    id: string, type: XComponentType, libraryName?: string)-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uiContext | UIContext | Yes | UIContext used to create the FrameNode |
-| options | RenderOptions | Yes | Render options of the Builder Node |
+| uiContext | [UIContext](../arkts-components/arkts-arkui-uicontext-t.md) | Yes | UIContext used to create the FrameNode |
+| options | [RenderOptions](arkts-arkui-buildernode-renderoptions-i.md) | Yes | Render options of the Builder Node |
 | id | string | Yes | XComponent id defined by the application |
-| type | XComponentType | Yes | XComponent type |
+| type | [XComponentType](arkts-arkui-enums-xcomponenttype-e.md) | Yes | XComponent type |
 | libraryName | string | No | The name of the library to be loaded by XComponent |
 
 ## onCreate
@@ -87,13 +95,15 @@ Called when the XComponent surface has been created.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-XComponentNode-onCreate(event?: Object): void--><!--Device-XComponentNode-onCreate(event?: Object): void-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | Object | No | event from native when the library loaded |
+| event | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | No | event from native when the library loaded |
 
 ## onDestroy
 
@@ -110,6 +120,8 @@ Called when the XComponent surface has been destroyed.
 **Substitutes:** onDestroy
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-XComponentNode-onDestroy(): void--><!--Device-XComponentNode-onDestroy(): void-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

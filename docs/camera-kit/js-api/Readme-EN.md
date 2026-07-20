@@ -154,7 +154,8 @@
   - [VideoSession(system api)](arkts-camera-camera-videosession-i-sys.md)<!--DelEnd-->
   - [VideoSessionForSys](arkts-camera-camera-videosessionforsys-i.md)
   - [WhiteBalance](arkts-camera-camera-whitebalance-i.md)<!--Del-->
-  - [WhiteBalance(system api)](arkts-camera-camera-whitebalance-i-sys.md)<!--DelEnd-->
+  - [WhiteBalance(system api)](arkts-camera-camera-whitebalance-i-sys.md)<!--DelEnd--><!--Del-->
+  - [WhiteBalanceGains(system api)](arkts-camera-camera-whitebalancegains-i-sys.md)<!--DelEnd-->
   - [WhiteBalanceQuery](arkts-camera-camera-whitebalancequery-i.md)<!--Del-->
   - [WhiteBalanceQuery(system api)](arkts-camera-camera-whitebalancequery-i-sys.md)<!--DelEnd-->
   - [Zoom](arkts-camera-camera-zoom-i.md)<!--Del-->

@@ -4,12 +4,13 @@
 type OnOverrideUrlLoadingCallback = (webResourceRequest: WebResourceRequest) => boolean
 ```
 
-The callback of onOverrideUrlLoading.
-Should not call WebviewController.loadUrl with the request's URL and then return true.
+The callback of onOverrideUrlLoading.Should not call WebviewController.loadUrl with the request's URL and then return true.
 
 **Since:** 12
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-unnamed-type OnOverrideUrlLoadingCallback = (webResourceRequest: WebResourceRequest) => boolean--><!--Device-unnamed-type OnOverrideUrlLoadingCallback = (webResourceRequest: WebResourceRequest) => boolean-End-->
 
 **System capability:** SystemCapability.Web.Webview.Core
 

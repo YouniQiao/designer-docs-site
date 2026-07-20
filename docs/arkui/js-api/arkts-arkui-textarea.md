@@ -6,6 +6,11 @@ beyond the component's width.
 If the component does not have its height set, it adapts its height to the content. If the component does not have
 its width set, it stretches to fill the maximum available width.
 
+> **NOTE**
+
+## Child Components
+
+Not supported
 
 ## TextArea
 
@@ -18,6 +23,8 @@ Defines the constructor of TextArea.
 **Since:** 7
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-TextAreaInterface-(value?: TextAreaOptions): TextAreaAttribute--><!--Device-TextAreaInterface-(value?: TextAreaOptions): TextAreaAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

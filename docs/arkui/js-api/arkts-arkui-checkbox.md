@@ -6,6 +6,9 @@
 >
 > Since API version 11, the default style of the **Checkbox** component is changed from rounded square to circle.
 
+## Child Components
+
+Not supported
 
 ## Checkbox
 
@@ -20,6 +23,8 @@ Creates a check box.
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
+
+<!--Device-CheckboxInterface-(options?: CheckboxOptions): CheckboxAttribute--><!--Device-CheckboxInterface-(options?: CheckboxOptions): CheckboxAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

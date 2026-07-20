@@ -1,6 +1,6 @@
 # RemoteWindow
 
-Provides an interface for controlling the remote window.
+Defines RemoteWindow Component.
 
 
 ## RemoteWindow
@@ -12,6 +12,8 @@ RemoteWindow(target: WindowAnimationTarget)
 Called when the remote window interface is used.
 
 **Since:** 9
+
+<!--Device-RemoteWindowInterface-(target: WindowAnimationTarget): RemoteWindowAttribute--><!--Device-RemoteWindowInterface-(target: WindowAnimationTarget): RemoteWindowAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

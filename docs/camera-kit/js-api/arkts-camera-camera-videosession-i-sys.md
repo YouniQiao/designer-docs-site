@@ -269,6 +269,36 @@ function handleLightStatusOff(mSession: camera.VideoSessionForSys): void {
 
 ```
 
+## offApertureInfoChange
+
+```TypeScript
+offApertureInfoChange(callback?: Callback<ApertureInfo>): void
+```
+
+Unsubscribes from aperture info event callback.
+
+**Since:** 26.1.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-VideoSession-offApertureInfoChange(callback?: Callback<ApertureInfo>): void--><!--Device-VideoSession-offApertureInfoChange(callback?: Callback<ApertureInfo>): void-End-->
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ApertureInfo> | No | Callback used to get the aperture info. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+
 ## on('macroStatusChanged')
 
 ```TypeScript
@@ -477,4 +507,34 @@ function handleLightStatusOn(mSession: camera.VideoSessionForSys): void {
 }
 
 ```
+
+## onApertureInfoChange
+
+```TypeScript
+onApertureInfoChange(callback: Callback<ApertureInfo>): void
+```
+
+Subscribes aperture info event callback.
+
+**Since:** 26.1.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-VideoSession-onApertureInfoChange(callback: Callback<ApertureInfo>): void--><!--Device-VideoSession-onApertureInfoChange(callback: Callback<ApertureInfo>): void-End-->
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ApertureInfo> | Yes | Callback used to get the aperture info. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 

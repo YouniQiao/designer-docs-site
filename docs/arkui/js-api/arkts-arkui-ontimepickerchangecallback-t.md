@@ -12,6 +12,8 @@ Triggered when a time is selected.
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
 
+<!--Device-unnamed-declare type OnTimePickerChangeCallback = (result: TimePickerResult) => void--><!--Device-unnamed-declare type OnTimePickerChangeCallback = (result: TimePickerResult) => void-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**

@@ -22,6 +22,16 @@ Writes data into a file. This API uses a promise to return the result.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-unnamed-declare function write(
+  fd: number,
+  buffer: ArrayBuffer | string,
+  options?: WriteOptions
+): Promise<number>--><!--Device-unnamed-declare function write(
+  fd: number,
+  buffer: ArrayBuffer | string,
+  options?: WriteOptions
+): Promise<number>-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
@@ -30,13 +40,13 @@ Writes data into a file. This API uses a promise to return the result.
 | --- | --- | --- | --- |
 | fd | number | Yes | FD of the file. |
 | buffer | ArrayBuffer \| string | Yes | Data to write. It can be a string or data from a buffer. |
-| options | WriteOptions | No | The options are as follows:<br>- **offset** (number): start position to write thedata in the file, in bytes. This parameter is optional. By default, data is written from the current position.<br>- **length** (number): length of the data to write, in bytes. This parameter is optional. The default value isthe buffer length.<br>- **encoding** (string): format of the data to be encoded when the data is a string. Thedefault value is **'utf-8'**, which is the only value supported currently.<br>**Since:** 11 |
+| options | [WriteOptions](arkts-corefile-file-fs-writeoptions-i.md) | No | The options are as follows:<br>- **offset** (number): start position to write the data in the file, in bytes. This parameter is optional. By default, data is written from the current position.<br  >- **length** (number): length of the data to write, in bytes. This parameter is optional. The default value is the buffer length.<br>- **encoding** (string): format of the data to be encoded when the data is a string. The default value is **'utf-8'**, which is the only value supported currently.<br>**Since:** 11 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;number&gt; | Promise used to return the length of the data written, in bytes. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the length of the data written, in bytes. |
 
 **Error codes:**
 
@@ -68,6 +78,8 @@ Writes data to a file. This API uses an asynchronous callback to return the resu
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-unnamed-declare function write(fd: number, buffer: ArrayBuffer | string, callback: AsyncCallback<number>): void--><!--Device-unnamed-declare function write(fd: number, buffer: ArrayBuffer | string, callback: AsyncCallback<number>): void-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
@@ -76,7 +88,7 @@ Writes data to a file. This API uses an asynchronous callback to return the resu
 | --- | --- | --- | --- |
 | fd | number | Yes | FD of the file. |
 | buffer | ArrayBuffer \| string | Yes | Data to write. It can be a string or data from a buffer. |
-| callback | AsyncCallback&lt;number&gt; | Yes | Callback used to return the result. The callback returns the length ofthe data written, in bytes. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. The callback returns the length of the data written, in bytes. |
 
 **Error codes:**
 
@@ -113,6 +125,18 @@ Writes data to a file. This API uses an asynchronous callback to return the resu
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-unnamed-declare function write(
+  fd: number,
+  buffer: ArrayBuffer | string,
+  options: WriteOptions,
+  callback: AsyncCallback<number>
+): void--><!--Device-unnamed-declare function write(
+  fd: number,
+  buffer: ArrayBuffer | string,
+  options: WriteOptions,
+  callback: AsyncCallback<number>
+): void-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
@@ -121,8 +145,8 @@ Writes data to a file. This API uses an asynchronous callback to return the resu
 | --- | --- | --- | --- |
 | fd | number | Yes | FD of the file. |
 | buffer | ArrayBuffer \| string | Yes | Data to write. It can be a string or data from a buffer. |
-| options | WriteOptions | Yes | The options are as follows:<br>- **offset** (number): start position to write thedata in the file, in bytes. This parameter is optional. By default, data is written from the current position.<br>- **length** (number): length of the data to write, in bytes. This parameter is optional. The default value isthe buffer length.<br>- **encoding** (string): format of the data to be encoded when the data is a string. Thedefault value is **'utf-8'**, which is the only value supported currently.<br>**Since:** 11 |
-| callback | AsyncCallback&lt;number&gt; | Yes | Callback used to return the result. The callback returns the length ofthe data written, in bytes. |
+| options | [WriteOptions](arkts-corefile-file-fs-writeoptions-i.md) | Yes | The options are as follows:<br>- **offset** (number): start position to write the data in the file, in bytes. This parameter is optional. By default, data is written from the current position.<br  >- **length** (number): length of the data to write, in bytes. This parameter is optional. The default value is the buffer length.<br>- **encoding** (string): format of the data to be encoded when the data is a string. The default value is **'utf-8'**, which is the only value supported currently.<br>**Since:** 11 |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. The callback returns the length of the data written, in bytes. |
 
 **Error codes:**
 

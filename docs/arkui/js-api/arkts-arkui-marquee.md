@@ -15,6 +15,9 @@ content width is greater than or equal to the component's width.
 > If the text width is less than the **Marquee** component width, use the [property animation]{@link common} to
 > implement scrolling.
 
+## Child Components
+
+Not supported
 
 ## Marquee
 
@@ -29,6 +32,8 @@ Creates a marquee.
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
+
+<!--Device-MarqueeInterface-(options: MarqueeOptions): MarqueeAttribute--><!--Device-MarqueeInterface-(options: MarqueeOptions): MarqueeAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

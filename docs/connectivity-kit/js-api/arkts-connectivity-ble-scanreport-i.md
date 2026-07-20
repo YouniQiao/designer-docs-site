@@ -1,0 +1,56 @@
+# ScanReport
+
+Describes the contents of the scan report.
+
+**Since:** 15
+
+<!--Device-ble-interface ScanReport--><!--Device-ble-interface ScanReport-End-->
+
+**System capability:** SystemCapability.Communication.Bluetooth.Core
+
+## Modules to Import
+
+```TypeScript
+import { ble } from '@kit.ConnectivityKit';
+```
+
+## reportType
+
+```TypeScript
+reportType: ScanReportType
+```
+
+The type of scan report
+
+**Type:** ScanReportType
+
+**Since:** 15
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 15.
+
+<!--Device-ScanReport-reportType: ScanReportType--><!--Device-ScanReport-reportType: ScanReportType-End-->
+
+**System capability:** SystemCapability.Communication.Bluetooth.Core
+
+## scanResult
+
+```TypeScript
+scanResult: Array<ScanResult>
+```
+
+Describes the contents of the scan results.
+
+**Type:** Array<ScanResult>
+
+**Since:** 15
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 15.
+
+<!--Device-ScanReport-scanResult: Array<ScanResult>--><!--Device-ScanReport-scanResult: Array<ScanResult>-End-->
+
+**System capability:** SystemCapability.Communication.Bluetooth.Core
+

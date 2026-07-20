@@ -14,6 +14,8 @@ Creates a directory. This API returns the result synchronously.
 
 **Substitutes:** [fs:mkdirSync](arkts-corefile-file-fs-mkdirsync-f.md#mkdirsync-1)
 
+<!--Device-unnamed-declare function mkdirSync(path: string, mode?: number): void--><!--Device-unnamed-declare function mkdirSync(path: string, mode?: number): void-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
@@ -21,5 +23,5 @@ Creates a directory. This API returns the result synchronously.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Application sandbox path of the directory. |
-| mode | number | No | Permission on the directory to create. You can specify multiple permissions, separatedusing a bitwise OR operator (\|). The default value is **0o775**.<br>- **0o775**: The owner has the read, write,and execute permissions, and other users have the read and execute permissions.<br>- **0o700**: The owner has theread, write, and execute permissions.<br>- **0o400**: The owner has the read permission.<br>- **0o200**: Theowner has the write permission.<br>- **0o100**: The owner has the execute permission.<br>- **0o070**: The usergroup has the read, write, and execute permissions.<br>- **0o040**: The user group has the read permission.<br>-**0o020**: The user group has the write permission.<br>- **0o010**: The user group has the execute permission.<br>- **0o007**: Other users have the read, write, and execute permissions.<br>- **0o004**: Other users have theread permission.<br>- **0o002**: Other users have the write permission.<br>- **0o001**: Other users have theexecute permission. |
+| mode | number | No | Permission on the directory to create. You can specify multiple permissions, separated using a bitwise OR operator (\|). The default value is **0o775**.<br>- **0o775**: The owner has the read, write,and execute permissions, and other users have the read and execute permissions.<br>- **0o700**: The owner has the read, write, and execute permissions.<br>- **0o400**: The owner has the read permission.<br>- **0o200**: The owner has the write permission.<br>- **0o100**: The owner has the execute permission.<br>- **0o070**: The user group has the read, write, and execute permissions.<br>- **0o040**: The user group has the read permission.<br>-**0o020**: The user group has the write permission.<br>- **0o010**: The user group has the execute permission.<br  >- **0o007**: Other users have the read, write, and execute permissions.<br>- **0o004**: Other users have the read permission.<br>- **0o002**: Other users have the write permission.<br>- **0o001**: Other users have the execute permission. |
 

@@ -1,0 +1,80 @@
+# UIEnvWindowAvoidAreaInfoVP
+
+Describes [environment variable](../../../../ui/arkts-env-system-property.md) data types for window avoidance areas of different types. All types of window avoidance areas are measured in vp.
+
+**Since:** 23
+
+<!--Device-window-interface UIEnvWindowAvoidAreaInfoVP--><!--Device-window-interface UIEnvWindowAvoidAreaInfoVP-End-->
+
+**System capability:** SystemCapability.Window.SessionManager
+
+## Modules to Import
+
+```TypeScript
+import { window } from '@kit.ArkUI';
+```
+
+## cutout
+
+```TypeScript
+cutout: UIEnvAvoidAreaVP
+```
+
+Avoidance area whose [AvoidAreaType](arkts-arkui-window-avoidareatype-e.md) is **TYPE_CUTOUT** type, in vp.
+
+**Type:** UIEnvAvoidAreaVP
+
+**Since:** 23
+
+<!--Device-UIEnvWindowAvoidAreaInfoVP-cutout: UIEnvAvoidAreaVP--><!--Device-UIEnvWindowAvoidAreaInfoVP-cutout: UIEnvAvoidAreaVP-End-->
+
+**System capability:** SystemCapability.Window.SessionManager
+
+## keyboard
+
+```TypeScript
+keyboard: UIEnvAvoidAreaVP
+```
+
+Avoidance area whose [AvoidAreaType](arkts-arkui-window-avoidareatype-e.md) is **TYPE_KEYBOARD** type, in vp.
+
+**Type:** UIEnvAvoidAreaVP
+
+**Since:** 23
+
+<!--Device-UIEnvWindowAvoidAreaInfoVP-keyboard: UIEnvAvoidAreaVP--><!--Device-UIEnvWindowAvoidAreaInfoVP-keyboard: UIEnvAvoidAreaVP-End-->
+
+**System capability:** SystemCapability.Window.SessionManager
+
+## navigationIndicator
+
+```TypeScript
+navigationIndicator: UIEnvAvoidAreaVP
+```
+
+Avoidance area whose [AvoidAreaType](arkts-arkui-window-avoidareatype-e.md) is **TYPE_NAVIGATION_INDICATOR** type, in vp.
+
+**Type:** UIEnvAvoidAreaVP
+
+**Since:** 23
+
+<!--Device-UIEnvWindowAvoidAreaInfoVP-navigationIndicator: UIEnvAvoidAreaVP--><!--Device-UIEnvWindowAvoidAreaInfoVP-navigationIndicator: UIEnvAvoidAreaVP-End-->
+
+**System capability:** SystemCapability.Window.SessionManager
+
+## statusBar
+
+```TypeScript
+statusBar: UIEnvAvoidAreaVP
+```
+
+Avoidance area whose [AvoidAreaType](arkts-arkui-window-avoidareatype-e.md) is **TYPE_SYSTEM** type, in vp.
+
+**Type:** UIEnvAvoidAreaVP
+
+**Since:** 23
+
+<!--Device-UIEnvWindowAvoidAreaInfoVP-statusBar: UIEnvAvoidAreaVP--><!--Device-UIEnvWindowAvoidAreaInfoVP-statusBar: UIEnvAvoidAreaVP-End-->
+
+**System capability:** SystemCapability.Window.SessionManager
+

@@ -4,14 +4,13 @@
 type OnCreateAISession = (id: string, params: string, result: OnAISessionCallback) => boolean
 ```
 
-Triggered when an AI session is created.
-Allows custom model initialization and result handling.
-Return `true` to bypass the default system behavior;
-return `false` to proceed with the default logic.
+Triggered when an AI session is created.Allows custom model initialization and result handling.Return `true` to bypass the default system behavior;return `false` to proceed with the default logic.
 
 **Since:** 26.0.0
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-unnamed-type OnCreateAISession = (id: string, params: string, result: OnAISessionCallback) => boolean--><!--Device-unnamed-type OnCreateAISession = (id: string, params: string, result: OnAISessionCallback) => boolean-End-->
 
 **System capability:** SystemCapability.Web.Webview.Core
 

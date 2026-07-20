@@ -21,14 +21,21 @@ LazyForEach(
   )
 ```
 
-**LazyForEach** iterates over provided data sources and creates corresponding components during each iteration.
-When **LazyForEach** is used in a scrolling container, the framework creates components as required within the
-visible area of the scrolling container. When a component is out of the visible area, the framework destroys and
-reclaims the component to reduce memory usage.
+**LazyForEach** iterates over provided data sources and creates corresponding components during each iteration.When **LazyForEach** is used in a scrolling container, the framework creates components as required within the visible area of the scrolling container. When a component is out of the visible area, the framework destroys and reclaims the component to reduce memory usage.
 
 **Since:** 7
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-LazyForEachInterface-(
+    dataSource: IDataSource,
+    itemGenerator: (item: any, index: number) => void,
+    keyGenerator?: (item: any, index: number) => string
+  ): LazyForEachAttribute--><!--Device-LazyForEachInterface-(
+    dataSource: IDataSource,
+    itemGenerator: (item: any, index: number) => void,
+    keyGenerator?: (item: any, index: number) => string
+  ): LazyForEachAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -58,6 +65,18 @@ Enter the value to obtain the LazyForEach.
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+<!--Device-LazyForEachInterface-(
+    dataSource: IDataSource,
+    itemGenerator: (item: any, index: number) => void,
+    keyGenerator?: (item: any, index: number) => string,
+    options?: LazyForEachOptions
+  ): LazyForEachAttribute--><!--Device-LazyForEachInterface-(
+    dataSource: IDataSource,
+    itemGenerator: (item: any, index: number) => void,
+    keyGenerator?: (item: any, index: number) => string,
+    options?: LazyForEachOptions
+  ): LazyForEachAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

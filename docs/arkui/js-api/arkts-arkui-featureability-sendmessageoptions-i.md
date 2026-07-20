@@ -1,0 +1,136 @@
+# SendMessageOptions
+
+**Since:** 5
+
+**Deprecated since:** 8
+
+<!--Device-unnamed-export interface SendMessageOptions--><!--Device-unnamed-export interface SendMessageOptions-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Lite
+
+## abilityName
+
+```TypeScript
+abilityName: string
+```
+
+Destination ability name, which is case sensitive.
+
+**Type:** string
+
+**Since:** 5
+
+**Deprecated since:** 8
+
+<!--Device-SendMessageOptions-abilityName: string--><!--Device-SendMessageOptions-abilityName: string-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Lite
+
+## bundleName
+
+```TypeScript
+bundleName: string
+```
+
+Name of the destination bundle where the ability has been located. The name is case sensitive.
+
+**Type:** string
+
+**Since:** 5
+
+**Deprecated since:** 8
+
+<!--Device-SendMessageOptions-bundleName: string--><!--Device-SendMessageOptions-bundleName: string-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Lite
+
+## complete
+
+```TypeScript
+complete?: () => void
+```
+
+Called when the execution is completed.
+
+**Type:** () => void
+
+**Since:** 5
+
+**Deprecated since:** 8
+
+<!--Device-SendMessageOptions-complete?: () => void--><!--Device-SendMessageOptions-complete?: () => void-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Lite
+
+## deviceId
+
+```TypeScript
+deviceId: string
+```
+
+Destination device ID.
+
+**Type:** string
+
+**Since:** 5
+
+**Deprecated since:** 8
+
+<!--Device-SendMessageOptions-deviceId: string--><!--Device-SendMessageOptions-deviceId: string-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Lite
+
+## fail
+
+```TypeScript
+fail?: (data: string, code: number) => void
+```
+
+Called when the messages fail to be sent.
+
+**Type:** (data: string, code: number) => void
+
+**Since:** 5
+
+**Deprecated since:** 8
+
+<!--Device-SendMessageOptions-fail?: (data: string, code: number) => void--><!--Device-SendMessageOptions-fail?: (data: string, code: number) => void-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Lite
+
+## message
+
+```TypeScript
+message?: string
+```
+
+Messages sent to the destination device.A maximum of 1 KB of data can be transmitted at a time.If more than 1 KB of data needs to be transmitted, split the messages into multiple parts to transmit.
+
+**Type:** string
+
+**Since:** 5
+
+**Deprecated since:** 8
+
+<!--Device-SendMessageOptions-message?: string--><!--Device-SendMessageOptions-message?: string-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Lite
+
+## success
+
+```TypeScript
+success?: () => void
+```
+
+Called when the messages are sent successfully.
+
+**Type:** () => void
+
+**Since:** 5
+
+**Deprecated since:** 8
+
+<!--Device-SendMessageOptions-success?: () => void--><!--Device-SendMessageOptions-success?: () => void-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Lite
+

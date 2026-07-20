@@ -12,5 +12,7 @@ The [universal events](../../../../reference/apis-arkui/arkui-ts/ts-component-ge
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-unnamed-declare class NodeContainerAttribute extends CommonMethod<NodeContainerAttribute>--><!--Device-unnamed-declare class NodeContainerAttribute extends CommonMethod<NodeContainerAttribute>-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

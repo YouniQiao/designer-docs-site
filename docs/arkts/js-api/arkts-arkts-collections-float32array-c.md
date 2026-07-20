@@ -1,0 +1,1353 @@
+# Float32Array
+
+A linear data structure that is implemented on [ArkTS ArrayBuffer](arkts-collections.md).
+
+> **NOTE**  
+>  
+> - This module can be imported only to ArkTS files (with the file name extension .ets).  
+> **Decorator**: \@Sendable
+
+**Since:** 12
+
+**Decorator:** @Sendable
+
+<!--Device-collections-class Float32Array--><!--Device-collections-class Float32Array-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+## Modules to Import
+
+```TypeScript
+import { collections } from '@kit.ArkTS';
+```
+
+## [Symbol.iterator]
+
+```TypeScript
+[Symbol.iterator](): IterableIterator<number>
+```
+
+Returns an iterator that iterates over numbers.
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-Float32Array-[Symbol.iterator](): IterableIterator<number>--><!--Device-Float32Array-[Symbol.iterator](): IterableIterator<number>-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<number> | Iterator object that yields numbers. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The Symbol.iterator method cannot be bound. |
+
+## at
+
+```TypeScript
+at(index: number): number | undefined
+```
+
+Returns the element at the given index. If no element is found, **undefined** is returned.
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-Float32Array-at(index: number): number | undefined--><!--Device-Float32Array-at(index: number): number | undefined-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| index | number | Yes | The zero-based index of the desired code unit.<br/>A negative index will count back from the last item. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| number | Element obtained. If no element is found, **undefined** is returned. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The at method cannot be bound. |
+| [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
+
+## constructor
+
+```TypeScript
+constructor()
+```
+
+A constructor used to create an empty ArkTS Float32Array.
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-Float32Array-constructor()--><!--Device-Float32Array-constructor()-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [10200012](../errorcode-utils.md#10200012-constructor-calling-failure) | The Float32Array's constructor cannot be directly invoked. |
+
+## constructor
+
+```TypeScript
+constructor(length: number)
+```
+
+A constructor used to create an ArkTS Float32Array of a given length.
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-Float32Array-constructor(length: number)--><!--Device-Float32Array-constructor(length: number)-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| length | number | Yes | Length of the ArkTS Float32Array. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [10200012](../errorcode-utils.md#10200012-constructor-calling-failure) | The Float32Array's constructor cannot be directly invoked. |
+
+## constructor
+
+```TypeScript
+constructor(elements: Iterable<number>)
+```
+
+A constructor that creates an ArkTS Float32Array from an iterable object.
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-Float32Array-constructor(elements: Iterable<number>)--><!--Device-Float32Array-constructor(elements: Iterable<number>)-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| elements | [Iterable](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterable-i.md)<number> | Yes | An iterable collection of numbers used to construct an ArkTS Float32Array object. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [10200012](../errorcode-utils.md#10200012-constructor-calling-failure) | The Float32Array's constructor cannot be directly invoked. |
+
+## constructor
+
+```TypeScript
+constructor(array: ArrayLike<number> | ArrayBuffer)
+```
+
+A constructor that creates an ArkTS Float32Array from an array-like object or ArkTS ArrayBuffer.
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-Float32Array-constructor(array: ArrayLike<number> | ArrayBuffer)--><!--Device-Float32Array-constructor(array: ArrayLike<number> | ArrayBuffer)-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| array | [ArrayLike](../../apis-na/arkts-apis/arkts-na-lib-es5-arraylike-i.md)<number> \| ArrayBuffer | Yes | Object used to construct the ArkTS Float32Array. When the parameter type is ArrayBuffer, the number of bytes occupied by the buffer must be an integer multiple of 4. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [10200012](../errorcode-utils.md#10200012-constructor-calling-failure) | The Float32Array's constructor cannot be directly invoked. |
+
+## constructor
+
+```TypeScript
+constructor(buffer: ArrayBuffer, byteOffset?: number, length?: number)
+```
+
+A constructor that creates an ArkTS Float32Array from an ArrayBuffer.
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-Float32Array-constructor(buffer: ArrayBuffer, byteOffset?: number, length?: number)--><!--Device-Float32Array-constructor(buffer: ArrayBuffer, byteOffset?: number, length?: number)-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| buffer | [ArrayBuffer](arkts-arkts-collections-arraybuffer-c.md) | Yes | ArrayBuffer object used to construct the ArkTS Float32Array. The number of bytes occupied by the buffer must be an integer multiple of 4. |
+| byteOffset | number | No | Byte offset of the buffer, beginning at 0. The default value is **0**. |
+| length | number | No | Length of the ArkTS Float32Array. The default value is **0**. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [10200012](../errorcode-utils.md#10200012-constructor-calling-failure) | The Float32Array's constructor cannot be directly invoked. |
+
+## copyWithin
+
+```TypeScript
+copyWithin(target: number, start: number, end?: number): Float32Array
+```
+
+Copies elements within a given range from this ArkTS Float32Array to another position in sequence.
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-Float32Array-copyWithin(target: number, start: number, end?: number): Float32Array--><!--Device-Float32Array-copyWithin(target: number, start: number, end?: number): Float32Array-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| target | number | Yes | Start index of the range. If a negative number is passed in, it refers to the index of`target + array.length`. |
+| start | number | Yes | Start index of the range. If a negative number is passed in, it refers to the index of`start + Float32Array.length`. |
+| end | number | No | End index of the range (exclusive). If a negative number is passed in, it refers to the index of `end + Float32Array.length`. The default value is the length of the ArkTS Float32Array. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Float32Array](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-float32array-i.md) | ArkTS Float32Array after being modified. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The copyWithin method cannot be bound. |
+| [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
+
+## entries
+
+```TypeScript
+entries(): IterableIterator<[number, number]>
+```
+
+Returns an iterator object that contains the key-value pair of each element in this ArkTS Float32Array.
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-Float32Array-entries(): IterableIterator<[number, number]>--><!--Device-Float32Array-entries(): IterableIterator<[number, number]>-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<[number, number]> | Iterator object. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The entries method cannot be bound. |
+| [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
+
+## every
+
+```TypeScript
+every(predicate: TypedArrayPredicateFn<number, Float32Array>): boolean
+```
+
+Checks whether all elements in this ArkTS Float32Array meet a given condition.
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-Float32Array-every(predicate: TypedArrayPredicateFn<number, Float32Array>): boolean--><!--Device-Float32Array-every(predicate: TypedArrayPredicateFn<number, Float32Array>): boolean-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| predicate | [TypedArrayPredicateFn](arkts-arkts-collections-typedarraypredicatefn-t.md)<number, Float32Array> | Yes | Assertion function used for the test. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| boolean | Check result. The value **true** is returned if all elements meet the given condition;otherwise, **false** is returned. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The every method cannot be bound. |
+| [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
+
+## fill
+
+```TypeScript
+fill(value: number, start?: number, end?: number): Float32Array
+```
+
+Fills all elements in a given range in this ArkTS Float32Array with a value.
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-Float32Array-fill(value: number, start?: number, end?: number): Float32Array--><!--Device-Float32Array-fill(value: number, start?: number, end?: number): Float32Array-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| value | number | Yes | Value to fill in. |
+| start | number | No | Start index of the range. If a negative number is passed in, it refers to the index of `start + Float32Array.length`. The default value is **0**. |
+| end | number | No | End index of the range (exclusive). If a negative number is passed in, it refers to the index of `end + Float32Array.length`. The default value is the length of the ArkTS Float32Array. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Float32Array](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-float32array-i.md) | Filled ArkTS Float32Array. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The fill method cannot be bound. |
+| [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
+
+## filter
+
+```TypeScript
+filter(predicate: TypedArrayPredicateFn<number, Float32Array>): Float32Array
+```
+
+Returns a new ArkTS Float32Array that contains all elements that meet the given condition.
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-Float32Array-filter(predicate: TypedArrayPredicateFn<number, Float32Array>): Float32Array--><!--Device-Float32Array-filter(predicate: TypedArrayPredicateFn<number, Float32Array>): Float32Array-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| predicate | [TypedArrayPredicateFn](arkts-arkts-collections-typedarraypredicatefn-t.md)<number, Float32Array> | Yes | Assertion function used for the test. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Float32Array](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-float32array-i.md) | Filtered ArkTS Float32Array. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The filter method cannot be bound. |
+| [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
+
+## find
+
+```TypeScript
+find(predicate: TypedArrayPredicateFn<number, Float32Array>): number | undefined
+```
+
+Returns the value of the first element that passes a test provided by a callback function. If none of the elements pass the test, **undefined** is returned.
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-Float32Array-find(predicate: TypedArrayPredicateFn<number, Float32Array>): number | undefined--><!--Device-Float32Array-find(predicate: TypedArrayPredicateFn<number, Float32Array>): number | undefined-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| predicate | [TypedArrayPredicateFn](arkts-arkts-collections-typedarraypredicatefn-t.md)<number, Float32Array> | Yes | Assertion function used for the test. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| number | Value of the first element that passes the test. If none of the elements pass the test, **undefined** is returned. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The find method cannot be bound. |
+| [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
+
+## findIndex
+
+```TypeScript
+findIndex(predicate: TypedArrayPredicateFn<number, Float32Array>): number
+```
+
+Returns the index of the first element that passes a test provided by a callback function. If none of the elements pass the test, **-1** is returned.
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-Float32Array-findIndex(predicate: TypedArrayPredicateFn<number, Float32Array>): number--><!--Device-Float32Array-findIndex(predicate: TypedArrayPredicateFn<number, Float32Array>): number-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| predicate | [TypedArrayPredicateFn](arkts-arkts-collections-typedarraypredicatefn-t.md)<number, Float32Array> | Yes | Assertion function used for the test. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| number | Index of the first element that passes the test. If none of the elements pass the test,**-1** is returned. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The findIndex method cannot be bound. |
+| [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
+
+## forEach
+
+```TypeScript
+forEach(callbackFn: TypedArrayForEachCallback<number, Float32Array>): void
+```
+
+Calls a callback function for each element in this ArkTS Float32Array.
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-Float32Array-forEach(callbackFn: TypedArrayForEachCallback<number, Float32Array>): void--><!--Device-Float32Array-forEach(callbackFn: TypedArrayForEachCallback<number, Float32Array>): void-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callbackFn | [TypedArrayForEachCallback](arkts-arkts-collections-typedarrayforeachcallback-t.md)<number, Float32Array> | Yes | Callback function to run for each element. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The forEach method cannot be bound. |
+| [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
+
+## from
+
+```TypeScript
+static from(arrayLike: ArrayLike<number>): Float32Array
+```
+
+Creates an ArkTS Float32Array from an array-like or iterator object.
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-Float32Array-static from(arrayLike: ArrayLike<number>): Float32Array--><!--Device-Float32Array-static from(arrayLike: ArrayLike<number>): Float32Array-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| arrayLike | [ArrayLike](../../apis-na/arkts-apis/arkts-na-lib-es5-arraylike-i.md)<number> | Yes | Array-like object used to construct the ArkTS Float32Array. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Float32Array](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-float32array-i.md) | New ArkTS Float32Array generated. |
+
+## from
+
+```TypeScript
+static from<T>(arrayLike: ArrayLike<T>, mapFn: TypedArrayFromMapFn<T, number>): Float32Array
+```
+
+Creates an ArkTS Float32Array from an array-like object.
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-Float32Array-static from<T>(arrayLike: ArrayLike<T>, mapFn: TypedArrayFromMapFn<T, number>): Float32Array--><!--Device-Float32Array-static from<T>(arrayLike: ArrayLike<T>, mapFn: TypedArrayFromMapFn<T, number>): Float32Array-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| arrayLike | [ArrayLike](../../apis-na/arkts-apis/arkts-na-lib-es5-arraylike-i.md)<T> | Yes | An array-like object to convert to an Float32Array. |
+| mapFn | [TypedArrayFromMapFn](arkts-arkts-collections-typedarrayfrommapfn-t.md)<T, number> | Yes | A mapping function to call on every element of the array. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Float32Array](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-float32array-i.md) | New ArkTS Float32Array generated. |
+
+## from
+
+```TypeScript
+static from(arrayLike: Iterable<number>, mapFn?: TypedArrayFromMapFn<number, number>): Float32Array
+```
+
+Creates an ArkTS Float32Array from an iterator object.
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-Float32Array-static from(arrayLike: Iterable<number>, mapFn?: TypedArrayFromMapFn<number, number>): Float32Array--><!--Device-Float32Array-static from(arrayLike: Iterable<number>, mapFn?: TypedArrayFromMapFn<number, number>): Float32Array-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| arrayLike | [Iterable](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterable-i.md)<number> | Yes | An iterable object to convert to an Float32Array. |
+| mapFn | [TypedArrayFromMapFn](arkts-arkts-collections-typedarrayfrommapfn-t.md)<number, number> | No | A mapping function to call on every element of the array. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Float32Array](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-float32array-i.md) | New ArkTS Float32Array generated. |
+
+## includes
+
+```TypeScript
+includes(searchElement: number, fromIndex?: number): boolean
+```
+
+Checks whether elements are contained in this ArkTS Float32Array.
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-Float32Array-includes(searchElement: number, fromIndex?: number): boolean--><!--Device-Float32Array-includes(searchElement: number, fromIndex?: number): boolean-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| searchElement | number | Yes | The element to search for. |
+| fromIndex | number | No | The position in this array at which to begin searching for searchElement. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| boolean | Check result. The value **true** is returned if the element exists; otherwise, **false** is returned. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The includes method cannot be bound. |
+| [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
+
+## indexOf
+
+```TypeScript
+indexOf(searchElement: number, fromIndex?: number): number
+```
+
+Returns the index of the first occurrence of a value in this ArkTS Float32Array. If the value is not found,**-1** is returned.
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-Float32Array-indexOf(searchElement: number, fromIndex?: number): number--><!--Device-Float32Array-indexOf(searchElement: number, fromIndex?: number): number-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| searchElement | number | Yes | Value to search for. |
+| fromIndex | number | No | Index from which the search starts. The default value is **0**. If the index is greater than or equal to the length of the ArkTS Float32Array, **-1** is returned. If a negative number is passed in, the search starts from the end of the ArkTS Float32Array. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| number | Index of the first occurrence of the value. If the value is not found, **-1** is returned. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The indexOf method cannot be bound. |
+| [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
+
+## join
+
+```TypeScript
+join(separator?: string): string
+```
+
+Concatenates all elements in this ArkTS Float32Array into a string, with a given separator.
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-Float32Array-join(separator?: string): string--><!--Device-Float32Array-join(separator?: string): string-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| separator | string | No | Separator to be used. If no value is passed in, a comma (,) is used as the separator. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| string | String obtained. If the array is empty, an empty string is returned. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The join method cannot be bound. |
+| [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
+
+## keys
+
+```TypeScript
+keys(): IterableIterator<number>
+```
+
+Returns an iterator object that contains the key (index) of each element in this ArkTS Float32Array.
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-Float32Array-keys(): IterableIterator<number>--><!--Device-Float32Array-keys(): IterableIterator<number>-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<number> | Iterator object. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The keys method cannot be bound. |
+| [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
+
+## lastIndexOf
+
+```TypeScript
+lastIndexOf(searchElement: number, fromIndex?: number): number
+```
+
+Obtains the index of the last occurrence of the specified value in this ArkTS Float32Array.
+
+**Since:** 18
+
+**Atomic service API:** This API can be used in atomic services since API version 18.
+
+<!--Device-Float32Array-lastIndexOf(searchElement: number, fromIndex?: number): number--><!--Device-Float32Array-lastIndexOf(searchElement: number, fromIndex?: number): number-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| searchElement | number | Yes | Value to search for. |
+| fromIndex | number | No | Index from which the search starts. The default value is **0**. If the index is greater than or equal to the length of the ArkTS Float32Array, **-1** is returned. If a negative number is passed in, the search starts from the end of the ArkTS Float32Array. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| number | Index of the last occurrence of the value. If the value is not found, **-1** is returned. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The lastIndexOf method cannot be bound. |
+| [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
+
+## map
+
+```TypeScript
+map(callbackFn: TypedArrayMapCallback<number, Float32Array>): Float32Array
+```
+
+Applies a callback function to each element in this ArkTS Float32Array and uses the result to create an ArkTS Float32Array.
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-Float32Array-map(callbackFn: TypedArrayMapCallback<number, Float32Array>): Float32Array--><!--Device-Float32Array-map(callbackFn: TypedArrayMapCallback<number, Float32Array>): Float32Array-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callbackFn | [TypedArrayMapCallback](arkts-arkts-collections-typedarraymapcallback-t.md)<number, Float32Array> | Yes | A function that accepts up to three arguments.The map method calls the callbackfn function one time for each element in the array. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Float32Array](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-float32array-i.md) | New ArkTS Float32Array. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The map method cannot be bound. |
+| [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
+
+## of
+
+```TypeScript
+static of(...items: number[]): Float32Array
+```
+
+Creates an ArkTS Float32Array with a variable number of parameters.
+
+**Since:** 18
+
+**Atomic service API:** This API can be used in atomic services since API version 18.
+
+<!--Device-Float32Array-static of(...items: number[]): Float32Array--><!--Device-Float32Array-static of(...items: number[]): Float32Array-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| items | number[] | Yes | Array of elements used to create the array. The number of elements can be zero, one,or more. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Float32Array](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-float32array-i.md) | New ArkTS Float32Array instance. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+
+## reduce
+
+```TypeScript
+reduce(callbackFn: TypedArrayReduceCallback<number, number, Float32Array>): number
+```
+
+Applies a reduce function on each element in this ArkTS Float32Array and returns the final reduction result.
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-Float32Array-reduce(callbackFn: TypedArrayReduceCallback<number, number, Float32Array>): number--><!--Device-Float32Array-reduce(callbackFn: TypedArrayReduceCallback<number, number, Float32Array>): number-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callbackFn | [TypedArrayReduceCallback](arkts-arkts-collections-typedarrayreducecallback-t.md)<number, number, Float32Array> | Yes | A function that accepts up to four arguments.The reduce method calls the callbackfn function one time for each element in the array. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| number | Final result obtained from the last call of the reduce function. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The reduce method cannot be bound. |
+| [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
+
+## reduce
+
+```TypeScript
+reduce<U = number>(callbackFn: TypedArrayReduceCallback<U, number, Float32Array>, initialValue: U): U
+```
+
+Applies a reduce function for each element in this ArkTS Float32Array, receives an initial value as the parameter called by the reduce function for the first time, and returns the final reduction result.
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-Float32Array-reduce<U = number>(callbackFn: TypedArrayReduceCallback<U, number, Float32Array>, initialValue: U): U--><!--Device-Float32Array-reduce<U = number>(callbackFn: TypedArrayReduceCallback<U, number, Float32Array>, initialValue: U): U-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callbackFn | [TypedArrayReduceCallback](arkts-arkts-collections-typedarrayreducecallback-t.md)<U, number, Float32Array> | Yes | A function that accepts up to four arguments.The reduce method calls the callbackfn function one time for each element in the array. |
+| initialValue | U | Yes | If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| U | Final result obtained from the last call of the reduce function. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The reduce method cannot be bound. |
+| [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
+
+## reduceRight
+
+```TypeScript
+reduceRight<U = number>(callbackFn: TypedArrayReduceCallback<U, number, Float32Array>, initialValue: U): U
+```
+
+Reversely traverses this ArkTS Float32Array, applies a reduce function for each element in the array, receives an initial value as the parameter called by the reduce function for the first time, and returns the final reduction result.
+
+**Since:** 18
+
+**Atomic service API:** This API can be used in atomic services since API version 18.
+
+<!--Device-Float32Array-reduceRight<U = number>(callbackFn: TypedArrayReduceCallback<U, number, Float32Array>, initialValue: U): U--><!--Device-Float32Array-reduceRight<U = number>(callbackFn: TypedArrayReduceCallback<U, number, Float32Array>, initialValue: U): U-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callbackFn | [TypedArrayReduceCallback](arkts-arkts-collections-typedarrayreducecallback-t.md)<U, number, Float32Array> | Yes | A function that is called for each element in the Float32Array. |
+| initialValue | U | Yes | A value to use as the first argument to the first call of the callback.<br>If no initial value is provided, the last element of the Float32Array will be used,<br>and the callback will start with the second-to-last element. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| U | Final result obtained from the last call of the reduce function. Possible causes:1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The reduceRight method cannot be bound. |
+| [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
+
+## reduceRight
+
+```TypeScript
+reduceRight(callbackFn: TypedArrayReduceCallback<number, number, Float32Array>): number
+```
+
+Reversely traverses this ArkTS Float32Array, applies a reduce function on each element in the array, and returns the final reduction result.
+
+**Since:** 18
+
+**Atomic service API:** This API can be used in atomic services since API version 18.
+
+<!--Device-Float32Array-reduceRight(callbackFn: TypedArrayReduceCallback<number, number, Float32Array>): number--><!--Device-Float32Array-reduceRight(callbackFn: TypedArrayReduceCallback<number, number, Float32Array>): number-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callbackFn | [TypedArrayReduceCallback](arkts-arkts-collections-typedarrayreducecallback-t.md)<number, number, Float32Array> | Yes | A function that is called for each element in the Float32Array. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| number | Final result obtained from the last call of the reduce function. Possible causes:1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The reduceRight method cannot be bound. |
+| [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
+
+## reverse
+
+```TypeScript
+reverse(): Float32Array
+```
+
+Reverses this ArkTS Float32Array.
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-Float32Array-reverse(): Float32Array--><!--Device-Float32Array-reverse(): Float32Array-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Float32Array](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-float32array-i.md) | Reversed ArkTS Float32Array. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The reverse method cannot be bound. |
+| [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
+
+## set
+
+```TypeScript
+set(array: ArrayLike<number>, offset?: number): void
+```
+
+Writes the elements in an array-like object to the given start position in sequence.
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-Float32Array-set(array: ArrayLike<number>, offset?: number): void--><!--Device-Float32Array-set(array: ArrayLike<number>, offset?: number): void-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| array | [ArrayLike](../../apis-na/arkts-apis/arkts-na-lib-es5-arraylike-i.md)<number> | Yes | A typed or untyped array of values to set. |
+| offset | number | No | The index in the current array at which the values are to be written. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The set method cannot be bound. |
+| [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
+
+## slice
+
+```TypeScript
+slice(start?: number, end?: number): Float32Array
+```
+
+Selects a range of elements in this ArkTS Float32Array to create an ArkTS Float32Array.
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-Float32Array-slice(start?: number, end?: number): Float32Array--><!--Device-Float32Array-slice(start?: number, end?: number): Float32Array-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| start | number | No | Start index of the range. If a negative number is passed in, it refers to the index of `start + Float32Array.length`. The default value is **0**. |
+| end | number | No | End index of the range (exclusive). If a negative number is passed in, it refers to the index of `end + Float32Array.length`. The default value is the length of the ArkTS Float32Array. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Float32Array](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-float32array-i.md) | New ArkTS Float32Array. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The slice method cannot be bound. |
+| [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
+
+## some
+
+```TypeScript
+some(predicate: TypedArrayPredicateFn<number, Float32Array>): boolean
+```
+
+Checks whether any element in this ArkTS Float32Array meets a given condition.
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-Float32Array-some(predicate: TypedArrayPredicateFn<number, Float32Array>): boolean--><!--Device-Float32Array-some(predicate: TypedArrayPredicateFn<number, Float32Array>): boolean-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| predicate | [TypedArrayPredicateFn](arkts-arkts-collections-typedarraypredicatefn-t.md)<number, Float32Array> | Yes | Assertion function used for the test. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| boolean | Check result. The value **true** is returned if an element meeting the given condition exists; otherwise, **false** is returned. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The some method cannot be bound. |
+| [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
+
+## sort
+
+```TypeScript
+sort(compareFn?: TypedArrayCompareFn<number>): Float32Array
+```
+
+Sorts elements in this ArkTS Float32Array and returns the sorted ArkTS Float32Array.
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-Float32Array-sort(compareFn?: TypedArrayCompareFn<number>): Float32Array--><!--Device-Float32Array-sort(compareFn?: TypedArrayCompareFn<number>): Float32Array-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| compareFn | [TypedArrayCompareFn](arkts-arkts-collections-typedarraycomparefn-t.md)<number> | No | Function that determines the sort order. By default,elements are sorted in ascending order. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Float32Array](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-float32array-i.md) | Sorted ArkTS Float32Array. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The sort method cannot be bound. |
+| [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
+
+## subarray
+
+```TypeScript
+subarray(begin?: number, end?: number): Float32Array
+```
+
+Truncates an array from a specified position and returns a new ArkTS Float32Array based on the same ArkTS ArrayBuffer.
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-Float32Array-subarray(begin?: number, end?: number): Float32Array--><!--Device-Float32Array-subarray(begin?: number, end?: number): Float32Array-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| begin | number | No | Start index of the range. If a negative number is passed in, it refers to the index of `begin + Float32Array.length`. The default value is **0**. |
+| end | number | No | End index of the range (exclusive). If a negative number is passed in, it refers to the index of `end + Float32Array.length`. The default value is the length of the ArkTS Float32Array. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Float32Array](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-float32array-i.md) | New ArkTS Float32Array. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The subarray method cannot be bound. |
+| [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
+
+## toLocaleString
+
+```TypeScript
+toLocaleString(): string
+```
+
+Generates a string of digits that matches the cultural conventions of the current system locale. Each element converts its digits to a string via its **toLocaleString** API, and these strings are then joined in sequence with commas (,).
+
+**Since:** 18
+
+**Atomic service API:** This API can be used in atomic services since API version 18.
+
+<!--Device-Float32Array-toLocaleString(): string--><!--Device-Float32Array-toLocaleString(): string-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| string | A string that contains all elements of the array. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The toLocaleString method cannot be bound. |
+| [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
+
+## toString
+
+```TypeScript
+toString(): string
+```
+
+Converts an ArkTS Float32Array into a string.
+
+**Since:** 18
+
+**Atomic service API:** This API can be used in atomic services since API version 18.
+
+<!--Device-Float32Array-toString(): string--><!--Device-Float32Array-toString(): string-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| string | A string that contains all elements of the array. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The toString method cannot be bound. |
+| [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
+
+## values
+
+```TypeScript
+values(): IterableIterator<number>
+```
+
+Returns an iterator object that contains the value of each element in this ArkTS Float32Array.
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-Float32Array-values(): IterableIterator<number>--><!--Device-Float32Array-values(): IterableIterator<number>-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<number> | Iterator object. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The values method cannot be bound. |
+| [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
+
+## BYTES_PER_ELEMENT
+
+```TypeScript
+static readonly BYTES_PER_ELEMENT: number
+```
+
+Number of bytes occupied by each element in the ArkTS Float32Array.
+
+**Type:** number
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-Float32Array-static readonly BYTES_PER_ELEMENT: number--><!--Device-Float32Array-static readonly BYTES_PER_ELEMENT: number-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+## buffer
+
+```TypeScript
+readonly buffer: ArrayBuffer
+```
+
+Bottom-layer buffer used by an ArkTS Float32Array.
+
+**Type:** ArrayBuffer
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-Float32Array-readonly buffer: ArrayBuffer--><!--Device-Float32Array-readonly buffer: ArrayBuffer-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+## byteLength
+
+```TypeScript
+readonly byteLength: number
+```
+
+Number of bytes occupied by an ArkTS Float32Array.
+
+**Type:** number
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-Float32Array-readonly byteLength: number--><!--Device-Float32Array-readonly byteLength: number-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+## byteOffset
+
+```TypeScript
+readonly byteOffset: number
+```
+
+Offset between the ArkTS Float32Array and the start position of the ArrayBuffer.
+
+**Type:** number
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-Float32Array-readonly byteOffset: number--><!--Device-Float32Array-readonly byteOffset: number-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+## index
+
+```TypeScript
+[index: number]: number
+```
+
+Returns the item at that index.
+
+**Type:** number
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-Float32Array-[index: number]: number--><!--Device-Float32Array-[index: number]: number-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+## length
+
+```TypeScript
+readonly length: number
+```
+
+Number of elements in an ArkTS Float32Array.
+
+**Type:** number
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-Float32Array-readonly length: number--><!--Device-Float32Array-readonly length: number-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+

@@ -4,6 +4,8 @@ The module defines the ability information.
 
 **Since:** 9
 
+<!--Device-unnamed-export interface AbilityInfo--><!--Device-unnamed-export interface AbilityInfo-End-->
+
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
 ## appIndex
@@ -18,6 +20,8 @@ Index of an application clone. It takes effect only for [application clones](../
 
 **Since:** 12
 
+<!--Device-AbilityInfo-readonly appIndex: int--><!--Device-AbilityInfo-readonly appIndex: int-End-->
+
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
 ## applicationInfo
@@ -26,23 +30,17 @@ Index of an application clone. It takes effect only for [application clones](../
 readonly applicationInfo: ApplicationInfo
 ```
 
-Application configuration information <!--Del-->. The information can be obtained by passing in
-**GET_ABILITY_INFO_WITH_APPLICATION** to the **abilityFlags** parameter of
-[queryAbilityInfo](arkts-ability-queryabilityinfo-f-sys.md#queryabilityinfo-2)
-<!--DelEnd-->.
+Application configuration information <!--Del-->. The information can be obtained by passing in **GET_ABILITY_INFO_WITH_APPLICATION** to the **abilityFlags** parameter of [queryAbilityInfo](arkts-ability-bundlemanager-queryabilityinfo-f-sys.md#queryabilityinfo-2)<!--DelEnd-->.
 
-This field is not returned when the
-[getBundleInfoForSelf](arkts-ability-getbundleinfoforself-f.md#getbundleinfoforself-1)
-or
-[getBundleInfo](arkts-ability-getbundleinfo-f.md#getbundleinfo-2)
-is used to obtain ability information. You can obtain the related information by obtaining the
-[bundleInfo](arkts-ability-bundleinfo-i.md).appInfo object.
+This field is not returned when the [getBundleInfoForSelf](arkts-ability-bundlemanager-getbundleinfoforself-f.md#getbundleinfoforself-1)or [getBundleInfo](arkts-ability-bundlemanager-getbundleinfo-f.md#getbundleinfo-2)is used to obtain ability information. You can obtain the related information by obtaining the [bundleInfo](arkts-ability-bundleinfo-i.md).appInfo object.
 
 **Type:** ApplicationInfo
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityInfo-readonly applicationInfo: ApplicationInfo--><!--Device-AbilityInfo-readonly applicationInfo: ApplicationInfo-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
@@ -60,6 +58,8 @@ Bundle name.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-AbilityInfo-readonly bundleName: string--><!--Device-AbilityInfo-readonly bundleName: string-End-->
+
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
 ## description
@@ -68,15 +68,15 @@ Bundle name.
 readonly description: string
 ```
 
-Ability description, which describes the content and functions of the current ability. It corresponds to the
-**description** field under **abilities** in the [module.json5](../../../../quick-start/module-configuration-file.md)
-file.
+Ability description, which describes the content and functions of the current ability. It corresponds to the **description** field under **abilities** in the [module.json5](../../../../quick-start/module-configuration-file.md)file.
 
 **Type:** string
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityInfo-readonly description: string--><!--Device-AbilityInfo-readonly description: string-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
@@ -86,14 +86,15 @@ file.
 readonly descriptionId: number
 ```
 
-Resource ID of the ability description. It is automatically generated during compilation and build based on the
-description configured in **abilities** of the application.
+Resource ID of the ability description. It is automatically generated during compilation and build based on the description configured in **abilities** of the application.
 
 **Type:** number
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityInfo-readonly descriptionId: long--><!--Device-AbilityInfo-readonly descriptionId: long-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
@@ -103,14 +104,15 @@ description configured in **abilities** of the application.
 readonly deviceTypes: Array<string>
 ```
 
-Device types supported by the ability. The value is derived from that of
-[deviceTypes](../../../../quick-start/module-configuration-file.md#devicetypes) in the **module.json5** file.
+Device types supported by the ability. The value is derived from that of [deviceTypes](../../../../quick-start/module-configuration-file.md#devicetypes) in the **module.json5** file.
 
 **Type:** Array<string>
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityInfo-readonly deviceTypes: Array<string>--><!--Device-AbilityInfo-readonly deviceTypes: Array<string>-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
@@ -120,16 +122,15 @@ Device types supported by the ability. The value is derived from that of
 readonly enabled: boolean
 ```
 
-Whether the ability is available, that is, whether it can be started or queried. **true** if available, **false**
-otherwise. If the ability is unavailable, you must call
-[getAbilityInfo](arkts-ability-getabilityinfo-f.md#getabilityinfo-1) with **AbilityFlag** set to
-**GET_ABILITY_INFO_WITH_DISABLE** to query the ability.
+Whether the ability is available, that is, whether it can be started or queried. **true** if available, **false** otherwise. If the ability is unavailable, you must call [getAbilityInfo](arkts-ability-bundlemanager-getabilityinfo-f.md#getabilityinfo-1) with **AbilityFlag** set to **GET_ABILITY_INFO_WITH_DISABLE** to query the ability.
 
 **Type:** boolean
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityInfo-readonly enabled: boolean--><!--Device-AbilityInfo-readonly enabled: boolean-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
@@ -139,8 +140,7 @@ otherwise. If the ability is unavailable, you must call
 readonly excludeFromDock: boolean
 ```
 
-Whether the ability icon can be hidden in the dock area. **true** if the ability icon can be hidden in the dock
-area, **false** otherwise.
+Whether the ability icon can be hidden in the dock area. **true** if the ability icon can be hidden in the dock area, **false** otherwise.
 
 Note: This field does not take effect.
 
@@ -150,6 +150,8 @@ Note: This field does not take effect.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-AbilityInfo-readonly excludeFromDock: boolean--><!--Device-AbilityInfo-readonly excludeFromDock: boolean-End-->
+
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
 ## exported
@@ -158,14 +160,15 @@ Note: This field does not take effect.
 readonly exported: boolean
 ```
 
-Whether the ability can be launched by other applications. **true** if the ability can be launched by other
-applications, **false** otherwise.
+Whether the ability can be launched by other applications. **true** if the ability can be launched by other applications, **false** otherwise.
 
 **Type:** boolean
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityInfo-readonly exported: boolean--><!--Device-AbilityInfo-readonly exported: boolean-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
@@ -175,14 +178,15 @@ applications, **false** otherwise.
 readonly icon: string
 ```
 
-Resource descriptor of the ability icon. It corresponds to the **icon** field under **abilities** in the
-[module.json5](../../../../quick-start/module-configuration-file.md) file.
+Resource descriptor of the ability icon. It corresponds to the **icon** field under **abilities** in the [module.json5](../../../../quick-start/module-configuration-file.md) file.
 
 **Type:** string
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityInfo-readonly icon: string--><!--Device-AbilityInfo-readonly icon: string-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
@@ -192,14 +196,15 @@ Resource descriptor of the ability icon. It corresponds to the **icon** field un
 readonly iconId: number
 ```
 
-Resource ID of the ability icon. It is automatically generated during compilation and build based on the icon
-configured in **abilities** of the application.
+Resource ID of the ability icon. It is automatically generated during compilation and build based on the icon configured in **abilities** of the application.
 
 **Type:** number
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityInfo-readonly iconId: long--><!--Device-AbilityInfo-readonly iconId: long-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
@@ -209,18 +214,17 @@ configured in **abilities** of the application.
 readonly label: string
 ```
 
-Resource descriptor of the ability name visible to users. It corresponds to the **label** field under **abilities**
-in the [module.json5](../../../../quick-start/module-configuration-file.md) file.
+Resource descriptor of the ability name visible to users. It corresponds to the **label** field under **abilities** in the [module.json5](../../../../quick-start/module-configuration-file.md) file.
 
-Note: Starting from API version 20, if
-[bundleManager.getAbilityInfo](arkts-ability-getabilityinfo-f.md#getabilityinfo-1) is used to
-obtain ability information, this field is the ability name visible to users.
+Note: Starting from API version 20, if [bundleManager.getAbilityInfo](arkts-ability-bundlemanager-getabilityinfo-f.md#getabilityinfo-1) is used to obtain ability information, this field is the ability name visible to users.
 
 **Type:** string
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityInfo-readonly label: string--><!--Device-AbilityInfo-readonly label: string-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
@@ -230,14 +234,15 @@ obtain ability information, this field is the ability name visible to users.
 readonly labelId: number
 ```
 
-Resource ID of the ability label. It is automatically generated during compilation and build based on the label
-configured in **abilities** of the application.
+Resource ID of the ability label. It is automatically generated during compilation and build based on the label configured in **abilities** of the application.
 
 **Type:** number
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityInfo-readonly labelId: long--><!--Device-AbilityInfo-readonly labelId: long-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
@@ -247,14 +252,15 @@ configured in **abilities** of the application.
 readonly launchType: bundleManager.LaunchType
 ```
 
-Ability launch mode, that is, whether it can be started in multiton mode. For details, see
-[LaunchType](arkts-ability-launchtype-e.md).
+Ability launch mode, that is, whether it can be started in multiton mode. For details, see [LaunchType](arkts-ability-bundlemanager-launchtype-e.md).
 
 **Type:** bundleManager.LaunchType
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityInfo-readonly launchType: bundleManager.LaunchType--><!--Device-AbilityInfo-readonly launchType: bundleManager.LaunchType-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
@@ -264,19 +270,15 @@ Ability launch mode, that is, whether it can be started in multiton mode. For de
 readonly metadata: Array<Metadata>
 ```
 
-Metadata of the ability. You can configure the system-defined parameters to use the capabilities provided by the
-system, for example, [shortcuts](../../../../quick-start/module-configuration-file.md#shortcuts) and
-[window metadata configuration](../../../../windowmanager/window-config-m.md). You can also customize the parameters
-and call
-[getBundleInfoForSelf](arkts-ability-getbundleinfoforself-f.md#getbundleinfoforself-1)
-to obtain the parameters by passing **GET_BUNDLE_INFO_WITH_HAP_MODULE**, **GET_BUNDLE_INFO_WITH_ABILITY**, and
-**GET_BUNDLE_INFO_WITH_METADATA** to **bundleFlags**.
+Metadata of the ability. You can configure the system-defined parameters to use the capabilities provided by the system, for example, [shortcuts](../../../../quick-start/module-configuration-file.md#shortcuts) and [window metadata configuration](../../../../windowmanager/window-config-m.md). You can also customize the parameters and call [getBundleInfoForSelf](arkts-ability-bundlemanager-getbundleinfoforself-f.md#getbundleinfoforself-1)to obtain the parameters by passing **GET_BUNDLE_INFO_WITH_HAP_MODULE**, **GET_BUNDLE_INFO_WITH_ABILITY**, and **GET_BUNDLE_INFO_WITH_METADATA** to **bundleFlags**.
 
 **Type:** Array<Metadata>
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityInfo-readonly metadata: Array<Metadata>--><!--Device-AbilityInfo-readonly metadata: Array<Metadata>-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
@@ -294,6 +296,8 @@ Module name to which the ability belongs.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-AbilityInfo-readonly moduleName: string--><!--Device-AbilityInfo-readonly moduleName: string-End-->
+
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
 ## name
@@ -310,6 +314,8 @@ Ability name.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-AbilityInfo-readonly name: string--><!--Device-AbilityInfo-readonly name: string-End-->
+
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
 ## orientation
@@ -318,17 +324,15 @@ Ability name.
 readonly orientation: bundleManager.DisplayOrientation
 ```
 
-Ability display orientation. It is derived from the **orientation** field under **abilities** in the
-[module.json5](../../../../quick-start/module-configuration-file.md) file. If **orientation** in the file is set to
-an enumerated value, this property is a non-zero value. For details about the available values, see
-[displayOrientation](arkts-ability-displayorientation-e.md). If **orientation** in
-the file is set to a resource index, the value of this property is **0**.
+Ability display orientation. It is derived from the **orientation** field under **abilities** in the [module.json5](../../../../quick-start/module-configuration-file.md) file. If **orientation** in the file is set to an enumerated value, this property is a non-zero value. For details about the available values, see [displayOrientation](arkts-ability-bundlemanager-displayorientation-e.md). If **orientation** in the file is set to a resource index, the value of this property is **0**.
 
 **Type:** bundleManager.DisplayOrientation
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityInfo-readonly orientation: bundleManager.DisplayOrientation--><!--Device-AbilityInfo-readonly orientation: bundleManager.DisplayOrientation-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
@@ -338,19 +342,15 @@ the file is set to a resource index, the value of this property is **0**.
 readonly orientationId: number
 ```
 
-Resource ID of the ability display mode. It is derived from the **orientation** field under **abilities** in the
-[module.json5](../../../../quick-start/module-configuration-file.md) file. If the **orientation** field in the file
-is set to an enumerated value, **orientationId** is **0**. If the **orientation** field is set to a resource index,
-**orientationId** is a non-zero value, which is the resource ID generated during building. If **orientationId** is
-set to a value other than **0**, the current display mode is customized, and this ID must be used to obtain the
-corresponding resource from the resource manager module. If **orientationId** is set to **0**, no resource is
-configured.
+Resource ID of the ability display mode. It is derived from the **orientation** field under **abilities** in the [module.json5](../../../../quick-start/module-configuration-file.md) file. If the **orientation** field in the file is set to an enumerated value, **orientationId** is **0**. If the **orientation** field is set to a resource index,**orientationId** is a non-zero value, which is the resource ID generated during building. If **orientationId** is set to a value other than **0**, the current display mode is customized, and this ID must be used to obtain the corresponding resource from the resource manager module. If **orientationId** is set to **0**, no resource is configured.
 
 **Type:** number
 
 **Since:** 14
 
 **Atomic service API:** This API can be used in atomic services since API version 14.
+
+<!--Device-AbilityInfo-readonly orientationId: long--><!--Device-AbilityInfo-readonly orientationId: long-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
@@ -360,15 +360,15 @@ configured.
 readonly permissions: Array<string>
 ```
 
-Array of permissions that other applications must request to start or access this ability. The system checks
-whether the caller has these permissions only if the **exported** property in **AbilityInfo** is **true** (meaning
-that the ability allows itself to be started by other applications).
+Array of permissions that other applications must request to start or access this ability. The system checks whether the caller has these permissions only if the **exported** property in **AbilityInfo** is **true** (meaning that the ability allows itself to be started by other applications).
 
 **Type:** Array<string>
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityInfo-readonly permissions: Array<string>--><!--Device-AbilityInfo-readonly permissions: Array<string>-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
@@ -385,6 +385,8 @@ Process name of the ability.
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityInfo-readonly process: string--><!--Device-AbilityInfo-readonly process: string-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
@@ -404,6 +406,8 @@ Permission required for reading the ability data.
 
 **Model restriction:** This API can be used only in the FA model.
 
+<!--Device-AbilityInfo-readonly readPermission: string--><!--Device-AbilityInfo-readonly readPermission: string-End-->
+
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
 ## skills
@@ -412,14 +416,15 @@ Permission required for reading the ability data.
 readonly skills: Array<Skill>
 ```
 
-Skills information of the ability. It represents the feature set of
-[wants](../../../../application-models/want-overview.md) that can be received by the UIAbility or ExtensionAbility.
+Skills information of the ability. It represents the feature set of [wants](../../../../application-models/want-overview.md) that can be received by the UIAbility or ExtensionAbility.
 
 **Type:** Array<Skill>
 
 **Since:** 12
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-AbilityInfo-readonly skills: Array<Skill>--><!--Device-AbilityInfo-readonly skills: Array<Skill>-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
@@ -436,6 +441,8 @@ Window modes supported by the ability.
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityInfo-readonly supportWindowModes: Array<bundleManager.SupportWindowMode>--><!--Device-AbilityInfo-readonly supportWindowModes: Array<bundleManager.SupportWindowMode>-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
@@ -455,6 +462,8 @@ Ability type.
 
 **Model restriction:** This API can be used only in the FA model.
 
+<!--Device-AbilityInfo-readonly type: bundleManager.AbilityType--><!--Device-AbilityInfo-readonly type: bundleManager.AbilityType-End-->
+
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
 ## uri
@@ -473,6 +482,8 @@ URI of the ability.
 
 **Model restriction:** This API can be used only in the FA model.
 
+<!--Device-AbilityInfo-readonly uri: string--><!--Device-AbilityInfo-readonly uri: string-End-->
+
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
 ## windowSize
@@ -488,6 +499,8 @@ Window size.
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-AbilityInfo-readonly windowSize: WindowSize--><!--Device-AbilityInfo-readonly windowSize: WindowSize-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
@@ -506,6 +519,8 @@ Permission required for writing data to the ability.
 **Since:** 9
 
 **Model restriction:** This API can be used only in the FA model.
+
+<!--Device-AbilityInfo-readonly writePermission: string--><!--Device-AbilityInfo-readonly writePermission: string-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 

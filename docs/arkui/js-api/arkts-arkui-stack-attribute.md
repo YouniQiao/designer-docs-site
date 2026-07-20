@@ -1,12 +1,14 @@
 # Stack properties/events
 
-In addition to the [universal attributes](arkts-arkui-commonmethod-c.md), the following attributes are supported.
+In addition to the [universal attributes](arkts-arkui-common-commonmethod-c.md), the following attributes are supported.
 
-The [universal events](arkts-arkui-commonmethod-c.md) are supported.
+The [universal events](arkts-arkui-common-commonmethod-c.md) are supported.
 
 **Inheritance/Implementation:** StackAttribute extends [CommonMethod<StackAttribute>](CommonMethod<StackAttribute>)
 
 **Since:** 7
+
+<!--Device-unnamed-declare class StackAttribute extends CommonMethod<StackAttribute>--><!--Device-unnamed-declare class StackAttribute extends CommonMethod<StackAttribute>-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -16,9 +18,7 @@ The [universal events](arkts-arkui-commonmethod-c.md) are supported.
 alignContent(value: Alignment)
 ```
 
-Sets the alignment of child components in the container. When both this attribute and the
-[align](arkts-arkui-commonmethod-c.md#align-1) attribute are set, whichever is set last takes effect. When this attribute and
-the constructor input parameters are set simultaneously, the attribute setting prevails.
+Sets the alignment of child components in the container. When both this attribute and the [align](arkts-arkui-common-commonmethod-c.md#align-1) attribute are set, whichever is set last takes effect. When this attribute and the constructor input parameters are set simultaneously, the attribute setting prevails.
 
 **Since:** 7
 
@@ -26,13 +26,15 @@ the constructor input parameters are set simultaneously, the attribute setting p
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-StackAttribute-alignContent(value: Alignment): StackAttribute--><!--Device-StackAttribute-alignContent(value: Alignment): StackAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | Alignment | Yes | Alignment of child components in the container<br>Default value: **Alignment.Center**.<br>Invalid values are treated as the default value. |
+| value | [Alignment](../arkts-apis/arkts-arkui-enums-alignment-e.md) | Yes | Alignment of child components in the container<br>Default value: **Alignment.Center**.<br>Invalid values are treated as the default value. |
 
 ## syncLoad
 
@@ -47,6 +49,8 @@ Set whether to synchronously load child nodes within one frame.
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+<!--Device-StackAttribute-syncLoad(enable: boolean): StackAttribute--><!--Device-StackAttribute-syncLoad(enable: boolean): StackAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

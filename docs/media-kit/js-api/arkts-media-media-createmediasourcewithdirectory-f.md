@@ -1,0 +1,42 @@
+# createMediaSourceWithDirectory
+
+## Modules to Import
+
+```TypeScript
+import { media } from '@kit.MediaKit';
+```
+
+## createMediaSourceWithDirectory
+
+```TypeScript
+function createMediaSourceWithDirectory(path: string): Promise< MediaSource | undefined>
+```
+
+Create a MediaSource object from the given directory.
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-media-function createMediaSourceWithDirectory(path: string): Promise< MediaSource | undefined>--><!--Device-media-function createMediaSourceWithDirectory(path: string): Promise< MediaSource | undefined>-End-->
+
+**System capability:** SystemCapability.Multimedia.Media.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| path | string | Yes | Buffer path information for creating a media source |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)< MediaSource \| undefined> | If success, an MediaSource is returned. Otherwise returns null. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [5411007](../errorcode-media.md#5411007-no-resource-available) | The directory specified by the path parameter does not exist or unaccessed. |
+

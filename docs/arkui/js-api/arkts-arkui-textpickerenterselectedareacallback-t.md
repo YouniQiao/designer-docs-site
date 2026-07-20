@@ -12,6 +12,8 @@ Defines the **onEnterSelectedArea** event callback signature.
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
 
+<!--Device-unnamed-declare type TextPickerEnterSelectedAreaCallback = (value: string | string[], index: number | number[]) => void--><!--Device-unnamed-declare type TextPickerEnterSelectedAreaCallback = (value: string | string[], index: number | number[]) => void-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**

@@ -14,6 +14,8 @@ Generates a **borderRadiuses** object with the specified radius for all border c
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-unnamed-export function borderRadiuses(all: number): BorderRadiuses--><!--Device-unnamed-export function borderRadiuses(all: number): BorderRadiuses-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
@@ -26,5 +28,5 @@ Generates a **borderRadiuses** object with the specified radius for all border c
 
 | Type | Description |
 | --- | --- |
-| BorderRadiuses | **borderRadiuses** object whose border corners all have the specified radius. |
+| [BorderRadiuses](arkts-arkui-borderradiuses-t.md) | **borderRadiuses** object whose border corners all have the specified radius. |
 

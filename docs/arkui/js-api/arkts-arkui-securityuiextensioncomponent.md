@@ -1,7 +1,6 @@
 # SecurityUIExtensionComponent
 
-Provide an interface for the UIExtensionComponent, which is used
-<br/>to render UI of a remote UIExtensionAbility
+Defines SecurityUIExtensionComponent Component.
 
 
 ## SecurityUIExtensionComponent
@@ -12,12 +11,17 @@ SecurityUIExtensionComponent(
   )
 ```
 
-Construct the UIExtensionComponent.<br/>
-Called when the UIExtensionComponent is used.
+Construct the UIExtensionComponent.<br/>Called when the UIExtensionComponent is used.
 
 **Since:** 26.0.0
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-SecurityUIExtensionComponentInterface-(
+    want: import('../api/options?: SecurityUIExtensionOptions
+  ): SecurityUIExtensionComponentAttribute--><!--Device-SecurityUIExtensionComponentInterface-(
+    want: import('../api/options?: SecurityUIExtensionOptions
+  ): SecurityUIExtensionComponentAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

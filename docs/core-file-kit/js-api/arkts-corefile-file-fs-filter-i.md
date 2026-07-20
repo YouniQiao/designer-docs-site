@@ -1,0 +1,126 @@
+# Filter
+
+Defines the file filtering configuration used by **listFile()**.
+
+**Since:** 10
+
+<!--Device-unnamed-export interface Filter--><!--Device-unnamed-export interface Filter-End-->
+
+**System capability:** SystemCapability.FileManagement.File.FileIO
+
+## Modules to Import
+
+```TypeScript
+import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
+```
+
+## displayName
+
+```TypeScript
+displayName?: Array<string>
+```
+
+Locate files that fuzzy match the specified file names, which are of the OR relationship. Currently, only the wildcard * is supported.
+
+**Type:** Array<string>
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-Filter-displayName?: Array<string>--><!--Device-Filter-displayName?: Array<string>-End-->
+
+**System capability:** SystemCapability.FileManagement.File.FileIO
+
+## excludeMedia
+
+```TypeScript
+excludeMedia?: boolean
+```
+
+Whether to exclude the files already in **Media**.
+
+The value **true** means to exclude the files already in **Media**; the value **false** means not to exclude the files already in **Media**.
+
+**Type:** boolean
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-Filter-excludeMedia?: boolean--><!--Device-Filter-excludeMedia?: boolean-End-->
+
+**System capability:** SystemCapability.FileManagement.File.FileIO
+
+## fileSizeOver
+
+```TypeScript
+fileSizeOver?: number
+```
+
+Locate files that are greater than the specified size, in bytes.
+
+**Type:** number
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-Filter-fileSizeOver?: number--><!--Device-Filter-fileSizeOver?: number-End-->
+
+**System capability:** SystemCapability.FileManagement.File.FileIO
+
+## lastModifiedAfter
+
+```TypeScript
+lastModifiedAfter?: number
+```
+
+Locate files whose last modification time is the same or later than the specified time.
+
+**Type:** number
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-Filter-lastModifiedAfter?: number--><!--Device-Filter-lastModifiedAfter?: number-End-->
+
+**System capability:** SystemCapability.FileManagement.File.FileIO
+
+## mimeType
+
+```TypeScript
+mimeType?: Array<string>
+```
+
+Locate files that fully match the specified MIME types, which are of the OR relationship. This parameter is reserved.
+
+**Type:** Array<string>
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-Filter-mimeType?: Array<string>--><!--Device-Filter-mimeType?: Array<string>-End-->
+
+**System capability:** SystemCapability.FileManagement.File.FileIO
+
+## suffix
+
+```TypeScript
+suffix?: Array<string>
+```
+
+Locate files that fully match the specified file name extensions, which are of the OR relationship.
+
+**Type:** Array<string>
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-Filter-suffix?: Array<string>--><!--Device-Filter-suffix?: Array<string>-End-->
+
+**System capability:** SystemCapability.FileManagement.File.FileIO
+

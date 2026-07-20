@@ -1,0 +1,64 @@
+# resetMemory (System API)
+
+## Modules to Import
+
+```TypeScript
+import { eSIM } from '@kit.TelephonyKit';
+```
+
+## resetMemory
+
+```TypeScript
+function resetMemory(slotId: number, options?:ResetOption): Promise<ResultCode>
+```
+
+Erase all specific profiles and reset the eUICC.
+
+**Since:** 18
+
+**Required permissions:** ohos.permission.SET_TELEPHONY_ESIM_STATE
+
+<!--Device-eSIM-function resetMemory(slotId: int, options?:ResetOption): Promise<ResultCode>--><!--Device-eSIM-function resetMemory(slotId: int, options?:ResetOption): Promise<ResultCode>-End-->
+
+**System capability:** SystemCapability.Telephony.CoreService.Esim
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| slotId | number | Yes | Indicates the card slot index number. |
+| options | [ResetOption](arkts-telephony-esim-resetoption-e-sys.md) | No | Options for resetting eUICC memory. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ResultCode> | Returns the result of the reset operation. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Non-system applications use system APIs. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified.2. Incorrect parameter types.3. Parameter verification failed. |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
+| [3120001](../errorcode-telephony.md#3120001-service-connection-error) | Service connection failed. |
+| [3120002](../errorcode-telephony.md#3120002-system-internal-error) | System internal error. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+import { eSIM } from '@kit.TelephonyKit';
+
+eSIM.resetMemory(1).then(() => {
+    console.info(`resetMemory invoking succeeded.`);
+}).catch((err: BusinessError<void>) => {
+    console.error(`resetMemory, ErrorState: err->${JSON.stringify(err)}`);
+});
+
+```
+

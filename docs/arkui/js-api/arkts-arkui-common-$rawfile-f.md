@@ -14,6 +14,8 @@ global $rawfile function
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 11.
 
+<!--Device-unnamed-declare function $rawfile(value: string): Resource--><!--Device-unnamed-declare function $rawfile(value: string): Resource-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
@@ -26,5 +28,5 @@ global $rawfile function
 
 | Type | Description |
 | --- | --- |
-| Resource | @syscap SystemCapability.ArkUI.ArkUI.Full@crossplatform@form@atomicservice |
+| [Resource](../../apis-localization-kit/arkts-apis/arkts-localization-resource-resource-i.md) | @syscap SystemCapability.ArkUI.ArkUI.Full@crossplatform@form@atomicservice |
 

@@ -15,13 +15,19 @@ declare function listFileExtSync(
 ): string[]
 ```
 
-Lists all file names in a directory. This API returns the result synchronously.
-This API supports recursive listing of all file names and custom file name filtering.
-The returned result starts with a slash (/) and contains the subdirectory.
+Lists all file names in a directory. This API returns the result synchronously.This API supports recursive listing of all file names and custom file name filtering.The returned result starts with a slash (/) and contains the subdirectory.
 
 **Since:** 26.0.0
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-unnamed-declare function listFileExtSync(
+  path: string,
+  options?: ListFileExtOptions
+): string[]--><!--Device-unnamed-declare function listFileExtSync(
+  path: string,
+  options?: ListFileExtOptions
+): string[]-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
@@ -30,7 +36,7 @@ The returned result starts with a slash (/) and contains the subdirectory.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Application sandbox path of the directory. |
-| options | ListFileExtOptions | No | Options for filtering files. The files are not filtered by default. |
+| options | [ListFileExtOptions](arkts-corefile-file-fs-listfileextoptions-i.md) | No | Options for filtering files. The files are not filtered by default. |
 
 **Return value:**
 

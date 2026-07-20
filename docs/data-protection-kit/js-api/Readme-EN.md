@@ -24,7 +24,8 @@
   - [off(system api)](arkts-dataprotection-dlppermission-off-f-sys.md)<!--DelEnd-->
   - [on](arkts-dataprotection-dlppermission-on-f.md)<!--Del-->
   - [on(system api)](arkts-dataprotection-dlppermission-on-f-sys.md)<!--DelEnd--><!--Del-->
-  - [openDLPFile(system api)](arkts-dataprotection-dlppermission-opendlpfile-f-sys.md)<!--DelEnd--><!--Del-->
+  - [openDLPFile(system api)](arkts-dataprotection-dlppermission-opendlpfile-f-sys.md)<!--DelEnd-->
+  - [processPluginCommand](arkts-dataprotection-dlppermission-processplugincommand-f.md)<!--Del-->
   - [queryDlpPolicy(system api)](arkts-dataprotection-dlppermission-querydlppolicy-f-sys.md)<!--DelEnd-->
   - [queryOpenedEnterpriseDlpFiles](arkts-dataprotection-dlppermission-queryopenedenterprisedlpfiles-f.md)
   - [setControlledAppLists](arkts-dataprotection-dlppermission-setcontrolledapplists-f.md)
@@ -55,6 +56,7 @@
   - [ActionType(system api)](arkts-dataprotection-dlppermission-actiontype-e-sys.md)<!--DelEnd-->
   - [DLPFileAccess](arkts-dataprotection-dlppermission-dlpfileaccess-e.md)<!--Del-->
   - [GatheringPolicyType(system api)](arkts-dataprotection-dlppermission-gatheringpolicytype-e-sys.md)<!--DelEnd-->
+  - [PluginCmd](arkts-dataprotection-dlppermission-plugincmd-e.md)
 - [@ohos.dlpSetDlpFeature](arkts-dlpsetdlpfeature.md)<!--Del-->
   - [setDlpFeature(system api)](arkts-dataprotection-dlpsetdlpfeature-setdlpfeature-f-sys.md)<!--DelEnd--><!--Del-->
   - [DLPFeatureInfo(system api)](arkts-dataprotection-dlpsetdlpfeature-dlpfeatureinfo-i-sys.md)<!--DelEnd--><!--Del-->

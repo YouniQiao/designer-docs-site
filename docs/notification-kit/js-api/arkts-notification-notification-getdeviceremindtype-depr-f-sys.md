@@ -1,0 +1,59 @@
+# getDeviceRemindType (System API)
+
+## getDeviceRemindType
+
+```TypeScript
+function getDeviceRemindType(callback: AsyncCallback<DeviceRemindType>): void
+```
+
+Obtains the notification reminder type. This API uses an asynchronous callback to return the result.
+
+**Since:** 8
+
+**Deprecated since:** 9
+
+**Substitutes:** getDeviceRemindType
+
+**Required permissions:** ohos.permission.NOTIFICATION_CONTROLLER
+
+<!--Device-notification-function getDeviceRemindType(callback: AsyncCallback<DeviceRemindType>): void--><!--Device-notification-function getDeviceRemindType(callback: AsyncCallback<DeviceRemindType>): void-End-->
+
+**System capability:** SystemCapability.Notification.Notification
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<DeviceRemindType> | Yes | Callback used to return the result. |
+
+
+## getDeviceRemindType
+
+```TypeScript
+function getDeviceRemindType(): Promise<DeviceRemindType>
+```
+
+Obtains the notification reminder type. This API uses a promise to return the result.
+
+**Since:** 8
+
+**Deprecated since:** 9
+
+**Substitutes:** getDeviceRemindType
+
+**Required permissions:** ohos.permission.NOTIFICATION_CONTROLLER
+
+<!--Device-notification-function getDeviceRemindType(): Promise<DeviceRemindType>--><!--Device-notification-function getDeviceRemindType(): Promise<DeviceRemindType>-End-->
+
+**System capability:** SystemCapability.Notification.Notification
+
+**System API:** This is a system API.
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DeviceRemindType> | Promise used to return the result. |
+

@@ -1,0 +1,440 @@
+# BaseSelectOptions
+
+Defines the basic options for selecting media files from Gallery.
+
+**Since:** 12
+
+<!--Device-photoAccessHelper-export class BaseSelectOptions--><!--Device-photoAccessHelper-export class BaseSelectOptions-End-->
+
+**System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
+
+## Modules to Import
+
+```TypeScript
+import { photoAccessHelper } from '@kit.MediaLibraryKit';
+```
+
+## MIMEType
+
+```TypeScript
+MIMEType?: PhotoViewMIMETypes
+```
+
+Available media file types. **IMAGE_VIDEO_TYPE** is used by default.
+
+**Type:** PhotoViewMIMETypes
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-BaseSelectOptions-MIMEType?: PhotoViewMIMETypes--><!--Device-BaseSelectOptions-MIMEType?: PhotoViewMIMETypes-End-->
+
+**System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
+
+## assetCompatibleCapability
+
+```TypeScript
+assetCompatibleCapability?: AssetCompatibleCapability
+```
+
+Configuration for asset compatibility capabilities.
+
+**Type:** AssetCompatibleCapability
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 24.
+
+<!--Device-BaseSelectOptions-assetCompatibleCapability?: AssetCompatibleCapability--><!--Device-BaseSelectOptions-assetCompatibleCapability?: AssetCompatibleCapability-End-->
+
+**System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
+
+## assetFilter
+
+```TypeScript
+assetFilter?: Array<OperationItem>
+```
+
+Media asset filter, with a maximum length of 50 items. If the limit is exceeded, only the first 50 items are used.
+
+**NOTE**
+
+1. When this filter is applied, other filters become invalid.2. When setting multiple conditions, enclose the filter conditions in parentheses to prevent conflicts with internal filter items.
+
+**Type:** Array<OperationItem>
+
+**Since:** 22
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 22.
+
+<!--Device-BaseSelectOptions-assetFilter?: Array<OperationItem>--><!--Device-BaseSelectOptions-assetFilter?: Array<OperationItem>-End-->
+
+**System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
+
+## autoPlayScenes
+
+```TypeScript
+autoPlayScenes?: Array<AutoPlayScene>
+```
+
+Playback mode of the moving photo. The maximum array length is 2. If this limit is exceeded, the first two elements are used, and the extra ones are automatically ignored.
+
+**Type:** Array<AutoPlayScene>
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 23.
+
+<!--Device-BaseSelectOptions-autoPlayScenes?: Array<AutoPlayScene>--><!--Device-BaseSelectOptions-autoPlayScenes?: Array<AutoPlayScene>-End-->
+
+**System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
+
+## combinedMediaTypeFilter
+
+```TypeScript
+combinedMediaTypeFilter?: Array<string>
+```
+
+A string array of filter criteria, supporting combinations of various types.
+
+The string format is as follows: **photoType | photoSubType1,photoSubType2, ... | mimeType1,mimeType2, ...**
+
+- The first part specifies a single **photoType**, which is fixed at **image** or **video**.  
+- The second part lists 1 to *N* photoSubTypes, separated by commas, with an OR relationship. Currently, the maximum value of *N* is **1**. Options include **movingPhoto** or "*" (ignore).  
+- The third part lists 1 to *N* mimeTypes, separated by commas, with an OR relationship. Currently, the maximum value of *N* is **10**. The format is similar to [MimeTypeFilter](arkts-medialibrary-photoaccesshelper-mimetypefilter-c.md).
+
+Filters are combined using intersection logic.
+
+The NOT logic is supported. To exclude types, use parentheses. Each string can have only one set.
+
+If the filter string does not match the specifications, the result is empty.
+
+Only the first three array elements are used; **MIMETypes** and **mimeTypeFilter** are ignored.
+
+**Type:** Array<string>
+
+**Since:** 20
+
+**Atomic service API:** This API can be used in atomic services since API version 20.
+
+<!--Device-BaseSelectOptions-combinedMediaTypeFilter?: Array<string>--><!--Device-BaseSelectOptions-combinedMediaTypeFilter?: Array<string>-End-->
+
+**System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
+
+## fileSizeFilter
+
+```TypeScript
+fileSizeFilter?: FileSizeFilter
+```
+
+Configuration for file size filtering.
+
+When this parameter is set, only media files within the specified size range are displayed. You are advised to notify users that only images or videos of the specified size can be selected.
+
+**Type:** FileSizeFilter
+
+**Since:** 19
+
+**Atomic service API:** This API can be used in atomic services since API version 19.
+
+<!--Device-BaseSelectOptions-fileSizeFilter?: FileSizeFilter--><!--Device-BaseSelectOptions-fileSizeFilter?: FileSizeFilter-End-->
+
+**System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
+
+## globalMovingPhotoState
+
+```TypeScript
+globalMovingPhotoState?: MovingPhotoBadgeStateType
+```
+
+Global effect of the moving photo. Currently, only **MOVING_PHOTO_ENABLED** and **MOVING_PHOTO_DISABLED** are supported. The default value is **MOVING_PHOTO_ENABLED**.
+
+**Type:** MovingPhotoBadgeStateType
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 23.
+
+<!--Device-BaseSelectOptions-globalMovingPhotoState?: MovingPhotoBadgeStateType--><!--Device-BaseSelectOptions-globalMovingPhotoState?: MovingPhotoBadgeStateType-End-->
+
+**System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
+
+## gridPinchMode
+
+```TypeScript
+gridPinchMode?: GridPinchMode
+```
+
+Pinch mode of the grid in the picker.
+
+**Type:** GridPinchMode
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 23.
+
+<!--Device-BaseSelectOptions-gridPinchMode?: GridPinchMode--><!--Device-BaseSelectOptions-gridPinchMode?: GridPinchMode-End-->
+
+**System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
+
+## isMovingPhotoBadgeShown
+
+```TypeScript
+isMovingPhotoBadgeShown?: boolean
+```
+
+Whether the moving photo badge is displayed in the photo browser page. **true** to display the badge, **false** to hide it. The default is **false**.
+
+If this parameter is set to **true**, [Photoselectresult](arkts-medialibrary-photoaccesshelper-photoselectresult-c.md) returns the **movingPhotoBadgeStates** array. The default status of a moving photo is [MOVING_PHOTO_ENABLED](arkts-medialibrary-photoaccesshelper-movingphotobadgestatetype-e.md).
+
+Note: Use both **isMovingPhotoBadgeShown** and **MovingPhotoBadgeStateType** to determine whether a photo is a moving photo.
+
+**Type:** boolean
+
+**Since:** 22
+
+**Atomic service API:** This API can be used in atomic services since API version 22.
+
+<!--Device-BaseSelectOptions-isMovingPhotoBadgeShown?: boolean--><!--Device-BaseSelectOptions-isMovingPhotoBadgeShown?: boolean-End-->
+
+**System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
+
+## isPhotoTakingSupported
+
+```TypeScript
+isPhotoTakingSupported?: boolean
+```
+
+Whether photo taking is supported. **true** if supported, **false** otherwise.
+
+**Type:** boolean
+
+**Since:** 11
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-BaseSelectOptions-isPhotoTakingSupported?: boolean--><!--Device-BaseSelectOptions-isPhotoTakingSupported?: boolean-End-->
+
+**System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
+
+## isPreviewForSingleSelectionSupported
+
+```TypeScript
+isPreviewForSingleSelectionSupported?: boolean
+```
+
+Whether to enable full image preview if a single image is selected. **true** to enable, **false** otherwise. The default value is **true**.
+
+**Type:** boolean
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-BaseSelectOptions-isPreviewForSingleSelectionSupported?: boolean--><!--Device-BaseSelectOptions-isPreviewForSingleSelectionSupported?: boolean-End-->
+
+**System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
+
+## isSearchSupported
+
+```TypeScript
+isSearchSupported?: boolean
+```
+
+Whether the image is searchable. **true** if searchable, **false** otherwise.
+
+**Type:** boolean
+
+**Since:** 11
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-BaseSelectOptions-isSearchSupported?: boolean--><!--Device-BaseSelectOptions-isSearchSupported?: boolean-End-->
+
+**System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
+
+## maxSelectNumber
+
+```TypeScript
+maxSelectNumber?: number
+```
+
+Maximum number of media files that can be selected. The maximum value is **500**, and the default value is **50**.
+
+**Type:** number
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-BaseSelectOptions-maxSelectNumber?: int--><!--Device-BaseSelectOptions-maxSelectNumber?: int-End-->
+
+**System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
+
+## mimeTypeFilter
+
+```TypeScript
+mimeTypeFilter?: MimeTypeFilter
+```
+
+Configuration for file type filtering. Multiple types can be specified.
+
+When this parameter is set, the **MIMEType** configuration automatically becomes invalid.
+
+When this parameter is set, only media files of the configured filter type are displayed. You are advised to notify users that only images or videos of the specified type can be selected.
+
+**Type:** MimeTypeFilter
+
+**Since:** 19
+
+**Atomic service API:** This API can be used in atomic services since API version 19.
+
+<!--Device-BaseSelectOptions-mimeTypeFilter?: MimeTypeFilter--><!--Device-BaseSelectOptions-mimeTypeFilter?: MimeTypeFilter-End-->
+
+**System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
+
+## photoViewMimeTypeFileSizeFilters
+
+```TypeScript
+photoViewMimeTypeFileSizeFilters?: Array<PhotoViewMimeTypeFileSizeFilter>
+```
+
+An array used to filter media files by type and size.
+
+Only the first three array elements are used; **MIMETypes** and **fileSizeFilter** are ignored.
+
+**Type:** Array<PhotoViewMimeTypeFileSizeFilter>
+
+**Since:** 20
+
+**Atomic service API:** This API can be used in atomic services since API version 20.
+
+<!--Device-BaseSelectOptions-photoViewMimeTypeFileSizeFilters?: Array<PhotoViewMimeTypeFileSizeFilter>--><!--Device-BaseSelectOptions-photoViewMimeTypeFileSizeFilters?: Array<PhotoViewMimeTypeFileSizeFilter>-End-->
+
+**System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
+
+## preferredCompatibleMode
+
+```TypeScript
+preferredCompatibleMode?: PreferredCompatibleMode
+```
+
+Preferred compatibility mode.
+
+**Type:** PreferredCompatibleMode
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+<!--Device-BaseSelectOptions-preferredCompatibleMode?: PreferredCompatibleMode--><!--Device-BaseSelectOptions-preferredCompatibleMode?: PreferredCompatibleMode-End-->
+
+**System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
+
+## preselectedUris
+
+```TypeScript
+preselectedUris?: Array<string>
+```
+
+URI of the preselected image.
+
+**Type:** Array<string>
+
+**Since:** 11
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-BaseSelectOptions-preselectedUris?: Array<string>--><!--Device-BaseSelectOptions-preselectedUris?: Array<string>-End-->
+
+**System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
+
+## recommendationOptions
+
+```TypeScript
+recommendationOptions?: RecommendationOptions
+```
+
+Image recommendation parameters.
+
+**Type:** RecommendationOptions
+
+**Since:** 11
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-BaseSelectOptions-recommendationOptions?: RecommendationOptions--><!--Device-BaseSelectOptions-recommendationOptions?: RecommendationOptions-End-->
+
+**System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
+
+## showDateOnScrollbar
+
+```TypeScript
+showDateOnScrollbar?: boolean
+```
+
+Whether to display the date group information when the scroll bar is dragged. **true**: yes; **false**: no. The default value is **false**.
+
+**Type:** boolean
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 24.
+
+<!--Device-BaseSelectOptions-showDateOnScrollbar?: boolean--><!--Device-BaseSelectOptions-showDateOnScrollbar?: boolean-End-->
+
+**System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
+
+## singleSelectionMode
+
+```TypeScript
+singleSelectionMode?: SingleSelectionMode
+```
+
+Single selection mode. The default value is **SingleSelectionMode.BROWSER_MODE**.
+
+**Type:** SingleSelectionMode
+
+**Since:** 18
+
+**Atomic service API:** This API can be used in atomic services since API version 18.
+
+<!--Device-BaseSelectOptions-singleSelectionMode?: SingleSelectionMode--><!--Device-BaseSelectOptions-singleSelectionMode?: SingleSelectionMode-End-->
+
+**System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
+
+## videoDurationFilter
+
+```TypeScript
+videoDurationFilter?: VideoDurationFilter
+```
+
+Configuration for video duration filtering.
+
+When this parameter is set, only media files within the specified duration range are displayed. You are advised to notify users that only videos of the specified length can be selected.
+
+**Type:** VideoDurationFilter
+
+**Since:** 19
+
+**Atomic service API:** This API can be used in atomic services since API version 19.
+
+<!--Device-BaseSelectOptions-videoDurationFilter?: VideoDurationFilter--><!--Device-BaseSelectOptions-videoDurationFilter?: VideoDurationFilter-End-->
+
+**System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
+

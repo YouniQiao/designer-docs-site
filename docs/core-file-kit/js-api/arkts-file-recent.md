@@ -2,13 +2,15 @@
 
 The **file.recent** module provides APIs for managing the list of recently accessed files.
 
-> **NOTE**
->
+> **NOTE**  
+>  
 > - Currently, the APIs of this module can be called only by **FileManager**.
 
 **Since:** 10
 
 **Deprecated since:** 23
+
+<!--Device-unnamed-declare namespace recent--><!--Device-unnamed-declare namespace recent-End-->
 
 **System capability:** SystemCapability.FileManagement.UserFileService
 
@@ -27,9 +29,9 @@ import { recent } from '@kit.CoreFileKit';
 
 | Name | Description |
 | --- | --- |
-| [add](arkts-corefile-add-f-sys.md#add-1) | Adds the file of the specified URI to the recent file list. |
-| [listFile](arkts-corefile-listfile-f-sys.md#listfile-1) | Lists the files that are accessed recently. |
-| [remove](arkts-corefile-remove-f-sys.md#remove-1) | Removes the file of the specified URI from the recent file list. |
+| [add](arkts-corefile-recent-add-f-sys.md#add-1) | Adds the file of the specified URI to the recent file list. |
+| [listFile](arkts-corefile-recent-listfile-f-sys.md#listfile-1) | Lists the files that are accessed recently. |
+| [remove](arkts-corefile-recent-remove-f-sys.md#remove-1) | Removes the file of the specified URI from the recent file list. |
 <!--DelEnd-->
 
 <!--Del-->
@@ -37,6 +39,6 @@ import { recent } from '@kit.CoreFileKit';
 
 | Name | Description |
 | --- | --- |
-| [FileInfo](arkts-corefile-fileinfo-i-sys.md) | Represents information about the recent file list. |
+| [FileInfo](arkts-corefile-recent-fileinfo-i-sys.md) | Represents information about the recent file list. |
 <!--DelEnd-->
 

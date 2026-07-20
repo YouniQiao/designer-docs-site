@@ -10,6 +10,8 @@ The callback of onRecentPhotoCheckResult event
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-unnamed-export type RecentPhotoCheckResultCallback = (recentPhotoExists: boolean) => void--><!--Device-unnamed-export type RecentPhotoCheckResultCallback = (recentPhotoExists: boolean) => void-End-->
+
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
 
 **Parameters:**

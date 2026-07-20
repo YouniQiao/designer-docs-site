@@ -8,6 +8,8 @@ In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-ap
 
 **Since:** 8
 
+<!--Device-unnamed-declare class CheckboxGroupAttribute extends CommonMethod<CheckboxGroupAttribute>--><!--Device-unnamed-declare class CheckboxGroupAttribute extends CommonMethod<CheckboxGroupAttribute>-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 ## checkboxShape
@@ -26,13 +28,15 @@ Sets the check box shape of the check box group.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 12.
 
+<!--Device-CheckboxGroupAttribute-checkboxShape(value: CheckBoxShape): CheckboxGroupAttribute--><!--Device-CheckboxGroupAttribute-checkboxShape(value: CheckBoxShape): CheckboxGroupAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | CheckBoxShape | Yes | Check box shape of the check box group.<br>Default value:**CheckBoxShape.CIRCLE**.<br>**NOTE**<br>The **CheckboxGroup** component is displayed according to the setshape.<br>All check boxes in the **CheckboxGroup** component that do not have their shape individually set willinherit the shape of the **CheckboxGroup**.<br>Check boxes in the **CheckboxGroup** component that have theirshape individually set will prioritize their own shape setting over the shape of the **CheckboxGroup**. |
+| value | [CheckBoxShape](../arkts-apis/arkts-arkui-enums-checkboxshape-e.md) | Yes | Check box shape of the check box group.<br>Default value:**CheckBoxShape.CIRCLE**.<br>**NOTE**<br>The **CheckboxGroup** component is displayed according to the set shape.<br>All check boxes in the **CheckboxGroup** component that do not have their shape individually set will inherit the shape of the **CheckboxGroup**.<br>Check boxes in the **CheckboxGroup** component that have their shape individually set will prioritize their own shape setting over the shape of the **CheckboxGroup**. |
 
 ## checkboxShape
 
@@ -40,9 +44,7 @@ Sets the check box shape of the check box group.
 checkboxShape(shape: Optional<CheckBoxShape>)
 ```
 
-Sets the check box shape of the check box group. Compared with
-[checkboxShape](CheckboxGroupAttribute#checkboxShape(value: CheckBoxShape))<sup>12+</sup>, this API supports
-the **undefined** type for the **shape** parameter.
+Sets the check box shape of the check box group. Compared with [checkboxShape](CheckboxGroupAttribute#checkboxShape(value: CheckBoxShape))<sup>12+</sup>, this API supports the **undefined** type for the **shape** parameter.
 
 **Since:** 18
 
@@ -52,13 +54,15 @@ the **undefined** type for the **shape** parameter.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 18.
 
+<!--Device-CheckboxGroupAttribute-checkboxShape(shape: Optional<CheckBoxShape>): CheckboxGroupAttribute--><!--Device-CheckboxGroupAttribute-checkboxShape(shape: Optional<CheckBoxShape>): CheckboxGroupAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| shape | Optional&lt;CheckBoxShape&gt; | Yes | Check box shape of the check box group.<br>If **shape** is set to**undefined**, the default value **CheckBoxShape.CIRCLE** is used.<br>**NOTE**<br>The **CheckboxGroup**component is displayed according to the set shape.<br>All check boxes in the **CheckboxGroup** component thatdo not have their shape individually set will inherit the shape of the **CheckboxGroup**.<br>Check boxes in the**CheckboxGroup** component that have their shape individually set will prioritize their own shape setting overthe shape of the **CheckboxGroup**. |
+| shape | [Optional](arkts-arkui-optional-t.md)<CheckBoxShape> | Yes | Check box shape of the check box group.<br>If **shape** is set to **undefined**, the default value **CheckBoxShape.CIRCLE** is used.<br>**NOTE**<br>The **CheckboxGroup** component is displayed according to the set shape.<br>All check boxes in the **CheckboxGroup** component that do not have their shape individually set will inherit the shape of the **CheckboxGroup**.<br>Check boxes in the **CheckboxGroup** component that have their shape individually set will prioritize their own shape setting over the shape of the **CheckboxGroup**. |
 
 ## contentModifier
 
@@ -66,12 +70,11 @@ the **undefined** type for the **shape** parameter.
 contentModifier(modifier: Optional<ContentModifier<CheckBoxGroupConfiguration>>)
 ```
 
-Customize the CheckboxGroup content area. When this attribute is set, the settings of other attributes become
-invalid.
+Customize the CheckboxGroup content area. When this attribute is set, the settings of other attributes become invalid.
 
-> **NOTE**
->
-> This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
+> **NOTE**  
+>  
+> This API cannot be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 21
 
@@ -79,13 +82,15 @@ invalid.
 
 **Atomic service API:** This API can be used in atomic services since API version 21.
 
+<!--Device-CheckboxGroupAttribute-contentModifier(modifier: Optional<ContentModifier<CheckBoxGroupConfiguration>>): CheckboxGroupAttribute--><!--Device-CheckboxGroupAttribute-contentModifier(modifier: Optional<ContentModifier<CheckBoxGroupConfiguration>>): CheckboxGroupAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| modifier | Optional&lt;ContentModifier&lt;CheckBoxGroupConfiguration&gt;&gt; | Yes | Content modifier to apply to the**TextTimer** component.<br>modifier: content modifier. You need to customize a class to implement theContentModifier interface.<br>If **modifier** is set to **undefined**, no content modifier is used. |
+| modifier | [Optional](arkts-arkui-optional-t.md)<ContentModifier<CheckBoxGroupConfiguration>> | Yes | Content modifier to apply to the **TextTimer** component.<br>modifier: content modifier. You need to customize a class to implement the ContentModifier interface.<br>If **modifier** is set to **undefined**, no content modifier is used. |
 
 ## mark
 
@@ -101,13 +106,15 @@ Sets the check mark style of the check box.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-CheckboxGroupAttribute-mark(value: MarkStyle): CheckboxGroupAttribute--><!--Device-CheckboxGroupAttribute-mark(value: MarkStyle): CheckboxGroupAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | MarkStyle | Yes | Check mark style of the check box. |
+| value | [MarkStyle](../arkts-apis/arkts-arkui-units-markstyle-i.md) | Yes | Check mark style of the check box. |
 
 ## mark
 
@@ -115,9 +122,7 @@ Sets the check mark style of the check box.
 mark(style: Optional<MarkStyle>)
 ```
 
-Sets the check mark style of the check box. Compared with
-[mark](CheckboxGroupAttribute#mark(value: MarkStyle))<sup>10+</sup>, this API supports the **undefined** type
-for the **style** parameter.
+Sets the check mark style of the check box. Compared with [mark](CheckboxGroupAttribute#mark(value: MarkStyle))<sup>10+</sup>, this API supports the **undefined** type for the **style** parameter.
 
 **Since:** 18
 
@@ -125,13 +130,15 @@ for the **style** parameter.
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
 
+<!--Device-CheckboxGroupAttribute-mark(style: Optional<MarkStyle>): CheckboxGroupAttribute--><!--Device-CheckboxGroupAttribute-mark(style: Optional<MarkStyle>): CheckboxGroupAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| style | Optional&lt;MarkStyle&gt; | Yes | Check mark style of the check box.<br>If **style** is set to **undefined**,the previous value is retained. |
+| style | [Optional](arkts-arkui-optional-t.md)<MarkStyle> | Yes | Check mark style of the check box.<br>If **style** is set to **undefined**,the previous value is retained. |
 
 ## onChange
 
@@ -147,13 +154,15 @@ Triggered when the selected status of the check box group or any check box where
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-CheckboxGroupAttribute-onChange(callback: OnCheckboxGroupChangeCallback): CheckboxGroupAttribute--><!--Device-CheckboxGroupAttribute-onChange(callback: OnCheckboxGroupChangeCallback): CheckboxGroupAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | OnCheckboxGroupChangeCallback | Yes | Information about the check box group.<br>**Since:** 18 |
+| callback | [OnCheckboxGroupChangeCallback](arkts-arkui-oncheckboxgroupchangecallback-t.md) | Yes | Information about the check box group.<br>**Since:** 18 |
 
 ## onChange
 
@@ -161,9 +170,7 @@ Triggered when the selected status of the check box group or any check box where
 onChange(callback: Optional<OnCheckboxGroupChangeCallback>)
 ```
 
-Triggered when the selected status of the check box group or any check box wherein changes. Compared with
-[onChange](CheckboxGroupAttribute#onChange(callback: OnCheckboxGroupChangeCallback)), this API supports the
-**undefined** type for the **callback** parameter.
+Triggered when the selected status of the check box group or any check box wherein changes. Compared with [onChange](CheckboxGroupAttribute#onChange(callback: OnCheckboxGroupChangeCallback)), this API supports the **undefined** type for the **callback** parameter.
 
 **Since:** 18
 
@@ -173,13 +180,15 @@ Triggered when the selected status of the check box group or any check box where
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 18.
 
+<!--Device-CheckboxGroupAttribute-onChange(callback: Optional<OnCheckboxGroupChangeCallback>): CheckboxGroupAttribute--><!--Device-CheckboxGroupAttribute-onChange(callback: Optional<OnCheckboxGroupChangeCallback>): CheckboxGroupAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Optional&lt;OnCheckboxGroupChangeCallback&gt; | Yes | Information about the check box group.<br>If**callback** is set to **undefined**, the callback function is not used. |
+| callback | [Optional](arkts-arkui-optional-t.md)<OnCheckboxGroupChangeCallback> | Yes | Information about the check box group.<br>If **callback** is set to **undefined**, the callback function is not used. |
 
 ## selectAll
 
@@ -187,17 +196,13 @@ Triggered when the selected status of the check box group or any check box where
 selectAll(value: boolean)
 ```
 
-Sets whether to select all check boxes in the group. If the **select** attribute is set for a
-[Checkbox](arkts-arkui-checkbox.md) component in the same group, the setting of the **Checkbox** has a higher priority.
+Sets whether to select all check boxes in the group. If the **select** attribute is set for a [Checkbox](arkts-arkui-checkbox.md) component in the same group, the setting of the **Checkbox** has a higher priority.
 
-When used with components that have caching functionality (such as [List](arkts-arkui-list.md)), the selection state of
-uncreated check boxes must be controlled by the developer.
+When used with components that have caching functionality (such as [List](arkts-arkui-list.md)), the selection state of uncreated check boxes must be controlled by the developer.
 
-Since API version 10, this attribute supports two-way binding through
-[$$](../../../../ui/state-management/arkts-two-way-sync.md).
+Since API version 10, this attribute supports two-way binding through [$$](../../../../ui/state-management/arkts-two-way-sync.md).
 
-Since API version 18, this attribute supports two-way binding through
-[!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
+Since API version 18, this attribute supports two-way binding through [!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
 
 **Since:** 8
 
@@ -205,13 +210,15 @@ Since API version 18, this attribute supports two-way binding through
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-CheckboxGroupAttribute-selectAll(value: boolean): CheckboxGroupAttribute--><!--Device-CheckboxGroupAttribute-selectAll(value: boolean): CheckboxGroupAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | boolean | Yes | Whether to select all.<br>Default value: **false**.<br>The value **true** means toselect all check boxes in the group, and **false** means to deselect all check boxes in the group. |
+| value | boolean | Yes | Whether to select all.<br>Default value: **false**.<br>The value **true** means to select all check boxes in the group, and **false** means to deselect all check boxes in the group. |
 
 ## selectAll
 
@@ -219,16 +226,11 @@ Since API version 18, this attribute supports two-way binding through
 selectAll(isAllSelected: Optional<boolean>)
 ```
 
-Sets whether to select all. If the **select** attribute is set for a [Checkbox](arkts-arkui-checkbox.md) component in the
-same group, the setting of the **Checkbox** has a higher priority. Compared with
-[selectAll](CheckboxGroupAttribute#selectAll(value: boolean)), this API supports the **undefined** type for
-the **isAllSelected** parameter.
+Sets whether to select all. If the **select** attribute is set for a [Checkbox](arkts-arkui-checkbox.md) component in the same group, the setting of the **Checkbox** has a higher priority. Compared with [selectAll](CheckboxGroupAttribute#selectAll(value: boolean)), this API supports the **undefined** type for the **isAllSelected** parameter.
 
-When used with components that have caching functionality (such as [List](arkts-arkui-list.md)), the selection state of
-uncreated check boxes must be controlled by the developer.
+When used with components that have caching functionality (such as [List](arkts-arkui-list.md)), the selection state of uncreated check boxes must be controlled by the developer.
 
-This attribute supports two-way binding through [$$](../../../../ui/state-management/arkts-two-way-sync.md) and
-[!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
+This attribute supports two-way binding through [$$](../../../../ui/state-management/arkts-two-way-sync.md) and [!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
 
 **Since:** 18
 
@@ -238,13 +240,15 @@ This attribute supports two-way binding through [$$](../../../../ui/state-manage
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 18.
 
+<!--Device-CheckboxGroupAttribute-selectAll(isAllSelected: Optional<boolean>): CheckboxGroupAttribute--><!--Device-CheckboxGroupAttribute-selectAll(isAllSelected: Optional<boolean>): CheckboxGroupAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| isAllSelected | Optional&lt;boolean&gt; | Yes | Whether to select all.<br>If **isAllSelected** is set to**undefined**, the default value **false** is used.<br>The value **true** means to select all check boxes inthe group, and **false** means to deselect all check boxes in the group. |
+| isAllSelected | [Optional](arkts-arkui-optional-t.md)<boolean> | Yes | Whether to select all.<br>If **isAllSelected** is set to **undefined**, the default value **false** is used.<br>The value **true** means to select all check boxes in the group, and **false** means to deselect all check boxes in the group. |
 
 ## selectedColor
 
@@ -260,13 +264,15 @@ Sets the color of the selected check box.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-CheckboxGroupAttribute-selectedColor(value: ResourceColor): CheckboxGroupAttribute--><!--Device-CheckboxGroupAttribute-selectedColor(value: ResourceColor): CheckboxGroupAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ResourceColor | Yes | Color of the selected check box.<br>Default value:**$r('sys.color.ohos_id_color_text_primary_activated')**<br>An invalid value is handled as the default value. |
+| value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Color of the selected check box.<br>Default value:**$r('sys.color.ohos_id_color_text_primary_activated')**<br>An invalid value is handled as the default value. |
 
 ## selectedColor
 
@@ -274,9 +280,7 @@ Sets the color of the selected check box.
 selectedColor(resColor: Optional<ResourceColor>)
 ```
 
-Sets the color of the selected check box. Compared with
-[selectedColor](CheckboxGroupAttribute#selectedColor(value: ResourceColor)), this API supports the
-**undefined** type for the **resColor** parameter.
+Sets the color of the selected check box. Compared with [selectedColor](CheckboxGroupAttribute#selectedColor(value: ResourceColor)), this API supports the **undefined** type for the **resColor** parameter.
 
 **Since:** 18
 
@@ -286,13 +290,15 @@ Sets the color of the selected check box. Compared with
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 18.
 
+<!--Device-CheckboxGroupAttribute-selectedColor(resColor: Optional<ResourceColor>): CheckboxGroupAttribute--><!--Device-CheckboxGroupAttribute-selectedColor(resColor: Optional<ResourceColor>): CheckboxGroupAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| resColor | Optional&lt;ResourceColor&gt; | Yes | Color of the selected check box.<br>If **resColor** is set to**undefined**, the default value **$r('sys.color.ohos_id_color_text_primary_activated')** is used.<br>Aninvalid value is handled as the default value. |
+| resColor | [Optional](arkts-arkui-optional-t.md)<ResourceColor> | Yes | Color of the selected check box.<br>If **resColor** is set to **undefined**, the default value **$r('sys.color.ohos_id_color_text_primary_activated')** is used.<br>An invalid value is handled as the default value. |
 
 ## unselectedColor
 
@@ -308,13 +314,15 @@ Sets the border color of the check box when it is not selected.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-CheckboxGroupAttribute-unselectedColor(value: ResourceColor): CheckboxGroupAttribute--><!--Device-CheckboxGroupAttribute-unselectedColor(value: ResourceColor): CheckboxGroupAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ResourceColor | Yes | Border color of the check box when it is not selected.<br>Default value:**$r('sys.color.ohos_id_color_switch_outline_off')** |
+| value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Border color of the check box when it is not selected.<br>Default value:**$r('sys.color.ohos_id_color_switch_outline_off')** |
 
 ## unselectedColor
 
@@ -322,9 +330,7 @@ Sets the border color of the check box when it is not selected.
 unselectedColor(resColor: Optional<ResourceColor>)
 ```
 
-Sets the border color of the check box when it is not selected. Compared with
-[unselectedColor](CheckboxGroupAttribute#unselectedColor(value: ResourceColor))<sup>10+</sup>, this API
-supports the **undefined** type for the **resColor** parameter.
+Sets the border color of the check box when it is not selected. Compared with [unselectedColor](CheckboxGroupAttribute#unselectedColor(value: ResourceColor))<sup>10+</sup>, this API supports the **undefined** type for the **resColor** parameter.
 
 **Since:** 18
 
@@ -332,11 +338,13 @@ supports the **undefined** type for the **resColor** parameter.
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
 
+<!--Device-CheckboxGroupAttribute-unselectedColor(resColor: Optional<ResourceColor>): CheckboxGroupAttribute--><!--Device-CheckboxGroupAttribute-unselectedColor(resColor: Optional<ResourceColor>): CheckboxGroupAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| resColor | Optional&lt;ResourceColor&gt; | Yes | Border color of the check box when it is not selected.<br>If**resColor** is set to **undefined**, the default value **$r('sys.color.ohos_id_color_switch_outline_off')** isused. |
+| resColor | [Optional](arkts-arkui-optional-t.md)<ResourceColor> | Yes | Border color of the check box when it is not selected.<br>If **resColor** is set to **undefined**, the default value **$r('sys.color.ohos_id_color_switch_outline_off')** is used. |
 

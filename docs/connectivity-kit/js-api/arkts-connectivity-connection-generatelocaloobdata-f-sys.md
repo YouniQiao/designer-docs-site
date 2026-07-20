@@ -1,0 +1,67 @@
+# generateLocalOobData (System API)
+
+## Modules to Import
+
+```TypeScript
+import { connection } from '@kit.ConnectivityKit';
+```
+
+## generateLocalOobData
+
+```TypeScript
+function generateLocalOobData(transport: BluetoothTransport): Promise<OobData>
+```
+
+Generate out-of-band data of the local device.
+
+**Since:** 23
+
+**Required permissions:** ohos.permission.ACCESS_BLUETOOTH
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-connection-function generateLocalOobData(transport: BluetoothTransport): Promise<OobData>--><!--Device-connection-function generateLocalOobData(transport: BluetoothTransport): Promise<OobData>-End-->
+
+**System capability:** SystemCapability.Communication.Bluetooth.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| transport | [BluetoothTransport](arkts-connectivity-connection-bluetoothtransport-e.md) | Yes | Indicates the transport of a remote Bluetooth device. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<OobData> | Returns the out-of-band data. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Non-system applications are not allowed to use system APIs. |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
+| 2900003 | Bluetooth disabled. |
+| 2900099 | Operation failed. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+try {
+    let transport: connection.BluetoothTransport = connection.BluetoothTransport.TRANSPORT_LE;
+    connection.generateLocalOobData(transport).then((oobData: connection.OobData) => {
+        console.info(`generateLocalOobData: ${JSON.stringify(oobData)}`);
+    }, (err: BusinessError) => {
+        console.error(`errCode: ${err.code}, errMessage: ${err.message}`);
+    });
+} catch (err) {
+    console.error(`errCode: ${err.code}, errMessage: ${err.message}`);
+}
+
+```
+

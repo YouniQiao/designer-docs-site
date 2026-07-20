@@ -1,0 +1,67 @@
+# createKeyboardController
+
+## Modules to Import
+
+```TypeScript
+import { inputEventClient } from '@kit.InputKit';
+```
+
+## createKeyboardController
+
+```TypeScript
+function createKeyboardController(): Promise<KeyboardController>
+```
+
+Creates a keyboard controller for simulating key operations. This API uses a promise to return the result.
+
+**Since:** 26.0.0
+
+**Required permissions:** ohos.permission.CONTROL_DEVICE
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-inputEventClient-function createKeyboardController(): Promise<KeyboardController>--><!--Device-inputEventClient-function createKeyboardController(): Promise<KeyboardController>-End-->
+
+**System capability:** SystemCapability.MultimodalInput.Input.InputSimulator
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<KeyboardController> | Promise used to return the keyboard controller instance. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed.The application does not have the permission required to call the API. |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
+| [3800001](../errorcode-infraredemitter.md#3800001-multimodal-input-service-internal-error) | Input service exception. |
+
+**Example**
+
+```TypeScript
+import { inputEventClient } from '@kit.InputKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+@Entry
+@Component
+struct Index {
+  build() {
+    RelativeContainer() {
+      Text()
+        .onClick(() => {
+          inputEventClient.createKeyboardController()
+            .then(keyboardController => {
+              console.info('Succeeded in creating keyboard controller');
+            })
+            .catch((error: BusinessError) => {
+              console.error(`Failed to create keyboard controller. Code: ${error.code}, message: ${error.message}.`);
+            });
+        })
+    }
+  }
+}
+
+```
+

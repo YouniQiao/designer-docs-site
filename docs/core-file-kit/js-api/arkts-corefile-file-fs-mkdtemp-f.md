@@ -16,19 +16,21 @@ Creates a temporary directory. This API uses a promise to return the result.
 
 **Since:** 9
 
+<!--Device-unnamed-declare function mkdtemp(prefix: string): Promise<string>--><!--Device-unnamed-declare function mkdtemp(prefix: string): Promise<string>-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| prefix | string | Yes | String to be replaced with six randomly generated characters to create a unique temporarydirectory. |
+| prefix | string | Yes | String to be replaced with six randomly generated characters to create a unique temporary directory. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;string&gt; | Promise used to return the directory created. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the directory created. |
 
 **Error codes:**
 
@@ -61,14 +63,16 @@ Creates a temporary directory. This API uses an asynchronous callback to return 
 
 **Since:** 9
 
+<!--Device-unnamed-declare function mkdtemp(prefix: string, callback: AsyncCallback<string>): void--><!--Device-unnamed-declare function mkdtemp(prefix: string, callback: AsyncCallback<string>): void-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| prefix | string | Yes | String to be replaced with six randomly generated characters to create a unique temporarydirectory. |
-| callback | AsyncCallback&lt;string&gt; | Yes | Callback used to return the result. |
+| prefix | string | Yes | String to be replaced with six randomly generated characters to create a unique temporary directory. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the result. |
 
 **Error codes:**
 

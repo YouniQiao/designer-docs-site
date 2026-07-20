@@ -1,0 +1,1952 @@
+# AVMusicTemplate
+
+AVMusicTemplate interface
+
+**Since:** 23
+
+<!--Device-avMusicTemplate-class AVMusicTemplate--><!--Device-avMusicTemplate-class AVMusicTemplate-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+## Modules to Import
+
+```TypeScript
+import { avMusicTemplate } from '@kit.AVSessionKit';
+```
+
+## destroy
+
+```TypeScript
+destroy(): Promise<void>
+```
+
+Destroy the AVMusicTemplate instance.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-destroy(): Promise<void>--><!--Device-AVMusicTemplate-destroy(): Promise<void>-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function destroy can not work correctly due to limited device capabilities. |
+
+## offClearSearchHistory
+
+```TypeScript
+offClearSearchHistory(callback?: ClearSearchHistoryEvent): void
+```
+
+Unregister clear search history callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-offClearSearchHistory(callback?: ClearSearchHistoryEvent): void--><!--Device-AVMusicTemplate-offClearSearchHistory(callback?: ClearSearchHistoryEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [ClearSearchHistoryEvent](arkts-avsession-avmusictemplate-clearsearchhistoryevent-t.md) | No | The callback used to handle ('clearSearchHistory') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function offClearSearchHistory can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## offDownloadMediaEntity
+
+```TypeScript
+offDownloadMediaEntity(callback?: DownloadMediaEntityEvent): void
+```
+
+Unregister download media entity callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-offDownloadMediaEntity(callback?: DownloadMediaEntityEvent): void--><!--Device-AVMusicTemplate-offDownloadMediaEntity(callback?: DownloadMediaEntityEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [DownloadMediaEntityEvent](arkts-avsession-avmusictemplate-downloadmediaentityevent-t.md) | No | The callback used to handle ('downloadMediaEntity') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function offDownloadMediaEntity can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## offExecuteAction
+
+```TypeScript
+offExecuteAction(callback?: ExecuteActionEvent): void
+```
+
+Unregister execute action callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-offExecuteAction(callback?: ExecuteActionEvent): void--><!--Device-AVMusicTemplate-offExecuteAction(callback?: ExecuteActionEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [ExecuteActionEvent](arkts-avsession-avmusictemplate-executeactionevent-t.md) | No | The callback used to handle ('executeAction') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function offExecuteAction can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## offFavoriteMediaEntity
+
+```TypeScript
+offFavoriteMediaEntity(callback?: FavoriteMediaEntityEvent): void
+```
+
+Unregister favorite media entity callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-offFavoriteMediaEntity(callback?: FavoriteMediaEntityEvent): void--><!--Device-AVMusicTemplate-offFavoriteMediaEntity(callback?: FavoriteMediaEntityEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [FavoriteMediaEntityEvent](arkts-avsession-avmusictemplate-favoritemediaentityevent-t.md) | No | The callback used to handle ('favoriteMediaEntity') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function offFavoriteMediaEntity can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## offHandleMemberPurchase
+
+```TypeScript
+offHandleMemberPurchase(callback?: HandleMemberPurchaseEvent): void
+```
+
+Unregister handle member purchase callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-offHandleMemberPurchase(callback?: HandleMemberPurchaseEvent): void--><!--Device-AVMusicTemplate-offHandleMemberPurchase(callback?: HandleMemberPurchaseEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [HandleMemberPurchaseEvent](arkts-avsession-avmusictemplate-handlememberpurchaseevent-t.md) | No | The callback used to handle ('handleMemberPurchase') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function offHandleMemberPurchase can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## offLogin
+
+```TypeScript
+offLogin(callback?: LoginEvent): void
+```
+
+Unregister login callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-offLogin(callback?: LoginEvent): void--><!--Device-AVMusicTemplate-offLogin(callback?: LoginEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [LoginEvent](arkts-avsession-avmusictemplate-loginevent-t.md) | No | The callback used to handle ('login') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function offLogin can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## offPlayForSearch
+
+```TypeScript
+offPlayForSearch(callback?: PlayForSearchEvent): void
+```
+
+Unregister play for search callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-offPlayForSearch(callback?: PlayForSearchEvent): void--><!--Device-AVMusicTemplate-offPlayForSearch(callback?: PlayForSearchEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [PlayForSearchEvent](arkts-avsession-avmusictemplate-playforsearchevent-t.md) | No | The callback used to handle ('playForSearch') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function offPlayForSearch can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## offPlayMediaEntity
+
+```TypeScript
+offPlayMediaEntity(callback?: PlayMediaEntityEvent): void
+```
+
+Unregister play media entity callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-offPlayMediaEntity(callback?: PlayMediaEntityEvent): void--><!--Device-AVMusicTemplate-offPlayMediaEntity(callback?: PlayMediaEntityEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [PlayMediaEntityEvent](arkts-avsession-avmusictemplate-playmediaentityevent-t.md) | No | The callback used to handle ('playMediaEntity') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function offPlayMediaEntity can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## offProblemAndAdvice
+
+```TypeScript
+offProblemAndAdvice(callback?: ProblemAndAdviceEvent): void
+```
+
+Unregister problem and advice callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-offProblemAndAdvice(callback?: ProblemAndAdviceEvent): void--><!--Device-AVMusicTemplate-offProblemAndAdvice(callback?: ProblemAndAdviceEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [ProblemAndAdviceEvent](arkts-avsession-avmusictemplate-problemandadviceevent-t.md) | No | The callback used to handle ('problemAndAdvice') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function offProblemAndAdvice can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## offQueryCompilation
+
+```TypeScript
+offQueryCompilation(callback?: QueryCompilationEvent): void
+```
+
+Unregister query compilation callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-offQueryCompilation(callback?: QueryCompilationEvent): void--><!--Device-AVMusicTemplate-offQueryCompilation(callback?: QueryCompilationEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [QueryCompilationEvent](arkts-avsession-avmusictemplate-querycompilationevent-t.md) | No | The callback used to handle ('queryCompilation') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function offQueryCompilation can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## offQueryCompilationByKeyword
+
+```TypeScript
+offQueryCompilationByKeyword(callback?: QueryCompilationByKeywordEvent): void
+```
+
+Unregister query compilation by keyword callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-offQueryCompilationByKeyword(callback?: QueryCompilationByKeywordEvent): void--><!--Device-AVMusicTemplate-offQueryCompilationByKeyword(callback?: QueryCompilationByKeywordEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [QueryCompilationByKeywordEvent](arkts-avsession-avmusictemplate-querycompilationbykeywordevent-t.md) | No | The callback used to handle ('queryCompilationByKeyword') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function offQueryCompilationByKeyword can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## offQueryCurrentSingle
+
+```TypeScript
+offQueryCurrentSingle(callback?: QueryCurrentSingleEvent): void
+```
+
+Unregister query current single callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-offQueryCurrentSingle(callback?: QueryCurrentSingleEvent): void--><!--Device-AVMusicTemplate-offQueryCurrentSingle(callback?: QueryCurrentSingleEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [QueryCurrentSingleEvent](arkts-avsession-avmusictemplate-querycurrentsingleevent-t.md) | No | The callback used to handle ('queryCurrentSingle') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function offQueryCurrentSingle can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## offQueryCustomContent
+
+```TypeScript
+offQueryCustomContent(callback?: QueryCustomContentEvent): void
+```
+
+Unregister query custom content callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-offQueryCustomContent(callback?: QueryCustomContentEvent): void--><!--Device-AVMusicTemplate-offQueryCustomContent(callback?: QueryCustomContentEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [QueryCustomContentEvent](arkts-avsession-avmusictemplate-querycustomcontentevent-t.md) | No | The callback used to handle ('queryCustomContent') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function offQueryCustomContent can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## offQueryHotWords
+
+```TypeScript
+offQueryHotWords(callback?: QueryHotWordsEvent): void
+```
+
+Unregister query hot words callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-offQueryHotWords(callback?: QueryHotWordsEvent): void--><!--Device-AVMusicTemplate-offQueryHotWords(callback?: QueryHotWordsEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [QueryHotWordsEvent](arkts-avsession-avmusictemplate-queryhotwordsevent-t.md) | No | The callback used to handle ('queryHotWords') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function offQueryHotWords can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## offQueryMainTabs
+
+```TypeScript
+offQueryMainTabs(callback?: QueryMainTabsEvent): void
+```
+
+Unregister query main tabs callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-offQueryMainTabs(callback?: QueryMainTabsEvent): void--><!--Device-AVMusicTemplate-offQueryMainTabs(callback?: QueryMainTabsEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [QueryMainTabsEvent](arkts-avsession-avmusictemplate-querymaintabsevent-t.md) | No | The callback used to handle ('queryMainTabs') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function offQueryMainTabs can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## offQueryMediaEntity
+
+```TypeScript
+offQueryMediaEntity(callback?: QueryMediaEntityEvent): void
+```
+
+Unregister query media entity callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-offQueryMediaEntity(callback?: QueryMediaEntityEvent): void--><!--Device-AVMusicTemplate-offQueryMediaEntity(callback?: QueryMediaEntityEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [QueryMediaEntityEvent](arkts-avsession-avmusictemplate-querymediaentityevent-t.md) | No | The callback used to handle ('queryMediaEntity') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function offQueryMediaEntity can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## offQueryMediaEntityByKeyword
+
+```TypeScript
+offQueryMediaEntityByKeyword(callback?: QueryMediaEntityByKeywordEvent): void
+```
+
+Unregister query media entity by keyword callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-offQueryMediaEntityByKeyword(callback?: QueryMediaEntityByKeywordEvent): void--><!--Device-AVMusicTemplate-offQueryMediaEntityByKeyword(callback?: QueryMediaEntityByKeywordEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [QueryMediaEntityByKeywordEvent](arkts-avsession-avmusictemplate-querymediaentitybykeywordevent-t.md) | No | The callback used to handle ('queryMediaEntityByKeyword') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function offQueryMediaEntityByKeyword can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## offQueryMediaTabContent
+
+```TypeScript
+offQueryMediaTabContent(callback?: QueryMediaTabContentEvent): void
+```
+
+Unregister query media tab content callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-offQueryMediaTabContent(callback?: QueryMediaTabContentEvent): void--><!--Device-AVMusicTemplate-offQueryMediaTabContent(callback?: QueryMediaTabContentEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [QueryMediaTabContentEvent](arkts-avsession-avmusictemplate-querymediatabcontentevent-t.md) | No | The callback used to handle ('queryMediaTabContent') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function offQueryMediaTabContent can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## offQueryMemberPurchase
+
+```TypeScript
+offQueryMemberPurchase(callback?: QueryMemberPurchaseEvent): void
+```
+
+Unregister query member purchase callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-offQueryMemberPurchase(callback?: QueryMemberPurchaseEvent): void--><!--Device-AVMusicTemplate-offQueryMemberPurchase(callback?: QueryMemberPurchaseEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [QueryMemberPurchaseEvent](arkts-avsession-avmusictemplate-querymemberpurchaseevent-t.md) | No | The callback used to handle ('queryMemberPurchase') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function offQueryMemberPurchase can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## offQueryPlaylist
+
+```TypeScript
+offQueryPlaylist(callback?: QueryPlaylistEvent): void
+```
+
+Unregister query playlist callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-offQueryPlaylist(callback?: QueryPlaylistEvent): void--><!--Device-AVMusicTemplate-offQueryPlaylist(callback?: QueryPlaylistEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [QueryPlaylistEvent](arkts-avsession-avmusictemplate-queryplaylistevent-t.md) | No | The callback used to handle ('queryPlaylist') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function offQueryPlaylist can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## offQueryRecommendMediaEntityList
+
+```TypeScript
+offQueryRecommendMediaEntityList(callback?: QueryRecommendMediaEntityListEvent): void
+```
+
+Unregister query recommend media entity list callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-offQueryRecommendMediaEntityList(callback?: QueryRecommendMediaEntityListEvent): void--><!--Device-AVMusicTemplate-offQueryRecommendMediaEntityList(callback?: QueryRecommendMediaEntityListEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [QueryRecommendMediaEntityListEvent](arkts-avsession-avmusictemplate-queryrecommendmediaentitylistevent-t.md) | No | The callback used to handle ('queryRecommendMediaEntityList') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function offQueryRecommendMediaEntityList can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## offQuerySearchHistory
+
+```TypeScript
+offQuerySearchHistory(callback?: QuerySearchHistoryEvent): void
+```
+
+Unregister query search history callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-offQuerySearchHistory(callback?: QuerySearchHistoryEvent): void--><!--Device-AVMusicTemplate-offQuerySearchHistory(callback?: QuerySearchHistoryEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [QuerySearchHistoryEvent](arkts-avsession-avmusictemplate-querysearchhistoryevent-t.md) | No | The callback used to handle ('querySearchHistory') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function offQuerySearchHistory can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## offRequestDialogInfo
+
+```TypeScript
+offRequestDialogInfo(callback?: RequestDialogInfoEvent): void
+```
+
+Unregister request dialog info callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-offRequestDialogInfo(callback?: RequestDialogInfoEvent): void--><!--Device-AVMusicTemplate-offRequestDialogInfo(callback?: RequestDialogInfoEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [RequestDialogInfoEvent](arkts-avsession-avmusictemplate-requestdialoginfoevent-t.md) | No | The callback used to handle ('requestDialogInfo') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function offRequestDialogInfo can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## offSettingsChange
+
+```TypeScript
+offSettingsChange(callback?: SettingsChangeEvent): void
+```
+
+Unregister settings change callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-offSettingsChange(callback?: SettingsChangeEvent): void--><!--Device-AVMusicTemplate-offSettingsChange(callback?: SettingsChangeEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [SettingsChangeEvent](arkts-avsession-avmusictemplate-settingschangeevent-t.md) | No | The callback used to handle ('settingsChange') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function offSettingsChange can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## onClearSearchHistory
+
+```TypeScript
+onClearSearchHistory(callback: ClearSearchHistoryEvent): void
+```
+
+Register clear search history callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-onClearSearchHistory(callback: ClearSearchHistoryEvent): void--><!--Device-AVMusicTemplate-onClearSearchHistory(callback: ClearSearchHistoryEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [ClearSearchHistoryEvent](arkts-avsession-avmusictemplate-clearsearchhistoryevent-t.md) | Yes | The callback used to handle ('clearSearchHistory') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function onClearSearchHistory can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## onDownloadMediaEntity
+
+```TypeScript
+onDownloadMediaEntity(callback: DownloadMediaEntityEvent): void
+```
+
+Register download media entity callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-onDownloadMediaEntity(callback: DownloadMediaEntityEvent): void--><!--Device-AVMusicTemplate-onDownloadMediaEntity(callback: DownloadMediaEntityEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [DownloadMediaEntityEvent](arkts-avsession-avmusictemplate-downloadmediaentityevent-t.md) | Yes | The callback used to handle ('downloadMediaEntity') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function onDownloadMediaEntity can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## onExecuteAction
+
+```TypeScript
+onExecuteAction(callback: ExecuteActionEvent): void
+```
+
+Register execute action callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-onExecuteAction(callback: ExecuteActionEvent): void--><!--Device-AVMusicTemplate-onExecuteAction(callback: ExecuteActionEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [ExecuteActionEvent](arkts-avsession-avmusictemplate-executeactionevent-t.md) | Yes | The callback used to handle ('executeAction') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function onExecuteAction can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## onFavoriteMediaEntity
+
+```TypeScript
+onFavoriteMediaEntity(callback: FavoriteMediaEntityEvent): void
+```
+
+Register favorite media entity callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-onFavoriteMediaEntity(callback: FavoriteMediaEntityEvent): void--><!--Device-AVMusicTemplate-onFavoriteMediaEntity(callback: FavoriteMediaEntityEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [FavoriteMediaEntityEvent](arkts-avsession-avmusictemplate-favoritemediaentityevent-t.md) | Yes | The callback used to handle ('favoriteMediaEntity') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function onFavoriteMediaEntity can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## onHandleMemberPurchase
+
+```TypeScript
+onHandleMemberPurchase(callback: HandleMemberPurchaseEvent): void
+```
+
+Register handle member purchase callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-onHandleMemberPurchase(callback: HandleMemberPurchaseEvent): void--><!--Device-AVMusicTemplate-onHandleMemberPurchase(callback: HandleMemberPurchaseEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [HandleMemberPurchaseEvent](arkts-avsession-avmusictemplate-handlememberpurchaseevent-t.md) | Yes | The callback used to handle ('handleMemberPurchase') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function onHandleMemberPurchase can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## onLogin
+
+```TypeScript
+onLogin(callback: LoginEvent): void
+```
+
+Register login callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-onLogin(callback: LoginEvent): void--><!--Device-AVMusicTemplate-onLogin(callback: LoginEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [LoginEvent](arkts-avsession-avmusictemplate-loginevent-t.md) | Yes | The callback used to handle ('login') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function onLogin can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## onPlayForSearch
+
+```TypeScript
+onPlayForSearch(callback: PlayForSearchEvent): void
+```
+
+Register play for search callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-onPlayForSearch(callback: PlayForSearchEvent): void--><!--Device-AVMusicTemplate-onPlayForSearch(callback: PlayForSearchEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [PlayForSearchEvent](arkts-avsession-avmusictemplate-playforsearchevent-t.md) | Yes | The callback used to handle ('playForSearch') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function onPlayForSearch can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## onPlayMediaEntity
+
+```TypeScript
+onPlayMediaEntity(callback: PlayMediaEntityEvent): void
+```
+
+Register play media entity callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-onPlayMediaEntity(callback: PlayMediaEntityEvent): void--><!--Device-AVMusicTemplate-onPlayMediaEntity(callback: PlayMediaEntityEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [PlayMediaEntityEvent](arkts-avsession-avmusictemplate-playmediaentityevent-t.md) | Yes | The callback used to handle ('playMediaEntity') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function onPlayMediaEntity can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## onProblemAndAdvice
+
+```TypeScript
+onProblemAndAdvice(callback: ProblemAndAdviceEvent): void
+```
+
+Register problem and advice callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-onProblemAndAdvice(callback: ProblemAndAdviceEvent): void--><!--Device-AVMusicTemplate-onProblemAndAdvice(callback: ProblemAndAdviceEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [ProblemAndAdviceEvent](arkts-avsession-avmusictemplate-problemandadviceevent-t.md) | Yes | The callback used to handle ('problemAndAdvice') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function onProblemAndAdvice can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## onQueryCompilation
+
+```TypeScript
+onQueryCompilation(callback: QueryCompilationEvent): void
+```
+
+Register query compilation callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-onQueryCompilation(callback: QueryCompilationEvent): void--><!--Device-AVMusicTemplate-onQueryCompilation(callback: QueryCompilationEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [QueryCompilationEvent](arkts-avsession-avmusictemplate-querycompilationevent-t.md) | Yes | The callback used to handle ('queryCompilation') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function onQueryCompilation can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## onQueryCompilationByKeyword
+
+```TypeScript
+onQueryCompilationByKeyword(callback: QueryCompilationByKeywordEvent): void
+```
+
+Register query compilation by keyword callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-onQueryCompilationByKeyword(callback: QueryCompilationByKeywordEvent): void--><!--Device-AVMusicTemplate-onQueryCompilationByKeyword(callback: QueryCompilationByKeywordEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [QueryCompilationByKeywordEvent](arkts-avsession-avmusictemplate-querycompilationbykeywordevent-t.md) | Yes | The callback used to handle ('queryCompilationByKeyword') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function onQueryCompilationByKeyword can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## onQueryCurrentSingle
+
+```TypeScript
+onQueryCurrentSingle(callback: QueryCurrentSingleEvent): void
+```
+
+Register query current single callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-onQueryCurrentSingle(callback: QueryCurrentSingleEvent): void--><!--Device-AVMusicTemplate-onQueryCurrentSingle(callback: QueryCurrentSingleEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [QueryCurrentSingleEvent](arkts-avsession-avmusictemplate-querycurrentsingleevent-t.md) | Yes | The callback used to handle ('queryCurrentSingle') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function onQueryCurrentSingle can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## onQueryCustomContent
+
+```TypeScript
+onQueryCustomContent(callback: QueryCustomContentEvent): void
+```
+
+Register query custom content callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-onQueryCustomContent(callback: QueryCustomContentEvent): void--><!--Device-AVMusicTemplate-onQueryCustomContent(callback: QueryCustomContentEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [QueryCustomContentEvent](arkts-avsession-avmusictemplate-querycustomcontentevent-t.md) | Yes | The callback used to handle ('queryCustomContent') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function onQueryCustomContent can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## onQueryHotWords
+
+```TypeScript
+onQueryHotWords(callback: QueryHotWordsEvent): void
+```
+
+Register query hot words callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-onQueryHotWords(callback: QueryHotWordsEvent): void--><!--Device-AVMusicTemplate-onQueryHotWords(callback: QueryHotWordsEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [QueryHotWordsEvent](arkts-avsession-avmusictemplate-queryhotwordsevent-t.md) | Yes | The callback used to handle ('queryHotWords') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function onQueryHotWords can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## onQueryMainTabs
+
+```TypeScript
+onQueryMainTabs(callback: QueryMainTabsEvent): void
+```
+
+Register query main tabs callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-onQueryMainTabs(callback: QueryMainTabsEvent): void--><!--Device-AVMusicTemplate-onQueryMainTabs(callback: QueryMainTabsEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [QueryMainTabsEvent](arkts-avsession-avmusictemplate-querymaintabsevent-t.md) | Yes | The callback used to handle ('queryMainTabs') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function onQueryMainTabs can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## onQueryMediaEntity
+
+```TypeScript
+onQueryMediaEntity(callback: QueryMediaEntityEvent): void
+```
+
+Register query media entity callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-onQueryMediaEntity(callback: QueryMediaEntityEvent): void--><!--Device-AVMusicTemplate-onQueryMediaEntity(callback: QueryMediaEntityEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [QueryMediaEntityEvent](arkts-avsession-avmusictemplate-querymediaentityevent-t.md) | Yes | The callback used to handle ('queryMediaEntity') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function onQueryMediaEntity can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## onQueryMediaEntityByKeyword
+
+```TypeScript
+onQueryMediaEntityByKeyword(callback: QueryMediaEntityByKeywordEvent): void
+```
+
+Register query media entity by keyword callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-onQueryMediaEntityByKeyword(callback: QueryMediaEntityByKeywordEvent): void--><!--Device-AVMusicTemplate-onQueryMediaEntityByKeyword(callback: QueryMediaEntityByKeywordEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [QueryMediaEntityByKeywordEvent](arkts-avsession-avmusictemplate-querymediaentitybykeywordevent-t.md) | Yes | The callback used to handle ('queryMediaEntityByKeyword') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function onQueryMediaEntityByKeyword can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## onQueryMediaTabContent
+
+```TypeScript
+onQueryMediaTabContent(callback: QueryMediaTabContentEvent): void
+```
+
+Register query media tab content callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-onQueryMediaTabContent(callback: QueryMediaTabContentEvent): void--><!--Device-AVMusicTemplate-onQueryMediaTabContent(callback: QueryMediaTabContentEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [QueryMediaTabContentEvent](arkts-avsession-avmusictemplate-querymediatabcontentevent-t.md) | Yes | The callback used to handle ('queryMediaTabContent') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function onQueryMediaTabContent can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## onQueryMemberPurchase
+
+```TypeScript
+onQueryMemberPurchase(callback: QueryMemberPurchaseEvent): void
+```
+
+Register query member purchase callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-onQueryMemberPurchase(callback: QueryMemberPurchaseEvent): void--><!--Device-AVMusicTemplate-onQueryMemberPurchase(callback: QueryMemberPurchaseEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [QueryMemberPurchaseEvent](arkts-avsession-avmusictemplate-querymemberpurchaseevent-t.md) | Yes | The callback used to handle ('queryMemberPurchase') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function onQueryMemberPurchase can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## onQueryPlaylist
+
+```TypeScript
+onQueryPlaylist(callback: QueryPlaylistEvent): void
+```
+
+Register query playlist callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-onQueryPlaylist(callback: QueryPlaylistEvent): void--><!--Device-AVMusicTemplate-onQueryPlaylist(callback: QueryPlaylistEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [QueryPlaylistEvent](arkts-avsession-avmusictemplate-queryplaylistevent-t.md) | Yes | The callback used to handle ('queryPlaylist') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function onQueryPlaylist can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## onQueryRecommendMediaEntityList
+
+```TypeScript
+onQueryRecommendMediaEntityList(callback: QueryRecommendMediaEntityListEvent): void
+```
+
+Register query recommend media entity list callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-onQueryRecommendMediaEntityList(callback: QueryRecommendMediaEntityListEvent): void--><!--Device-AVMusicTemplate-onQueryRecommendMediaEntityList(callback: QueryRecommendMediaEntityListEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [QueryRecommendMediaEntityListEvent](arkts-avsession-avmusictemplate-queryrecommendmediaentitylistevent-t.md) | Yes | The callback used to handle ('queryRecommendMediaEntityList') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function onQueryRecommendMediaEntityList can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## onQuerySearchHistory
+
+```TypeScript
+onQuerySearchHistory(callback: QuerySearchHistoryEvent): void
+```
+
+Register query search history callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-onQuerySearchHistory(callback: QuerySearchHistoryEvent): void--><!--Device-AVMusicTemplate-onQuerySearchHistory(callback: QuerySearchHistoryEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [QuerySearchHistoryEvent](arkts-avsession-avmusictemplate-querysearchhistoryevent-t.md) | Yes | The callback used to handle ('querySearchHistory') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function onQuerySearchHistory can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## onRequestDialogInfo
+
+```TypeScript
+onRequestDialogInfo(callback: RequestDialogInfoEvent): void
+```
+
+Register request dialog info callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-onRequestDialogInfo(callback: RequestDialogInfoEvent): void--><!--Device-AVMusicTemplate-onRequestDialogInfo(callback: RequestDialogInfoEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [RequestDialogInfoEvent](arkts-avsession-avmusictemplate-requestdialoginfoevent-t.md) | Yes | The callback used to handle ('requestDialogInfo') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function onRequestDialogInfo can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## onSettingsChange
+
+```TypeScript
+onSettingsChange(callback: SettingsChangeEvent): void
+```
+
+Register settings change callback.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-onSettingsChange(callback: SettingsChangeEvent): void--><!--Device-AVMusicTemplate-onSettingsChange(callback: SettingsChangeEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [SettingsChangeEvent](arkts-avsession-avmusictemplate-settingschangeevent-t.md) | Yes | The callback used to handle ('settingsChange') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function onSettingsChange can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## reportExecuteAction
+
+```TypeScript
+reportExecuteAction(actionType: string, params: string): Promise<void>
+```
+
+Report execute action information to MediaUI.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-reportExecuteAction(actionType: string, params: string): Promise<void>--><!--Device-AVMusicTemplate-reportExecuteAction(actionType: string, params: string): Promise<void>-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| actionType | string | Yes | action type |
+| params | string | Yes | params value |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function reportExecuteAction can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000011 | The data write error, data is invalid. |
+
+## setCurrentSingle
+
+```TypeScript
+setCurrentSingle(single: Single): Promise<void>
+```
+
+Report current single song to MediaUI.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-setCurrentSingle(single: Single): Promise<void>--><!--Device-AVMusicTemplate-setCurrentSingle(single: Single): Promise<void>-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| single | [Single](arkts-avsession-avmusictemplate-single-i.md) | Yes | single information |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function setCurrentSingle can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000011 | The data write error, data is invalid. |
+
+## setCustomElements
+
+```TypeScript
+setCustomElements(actionType: ActionType, customType: CustomType,
+      customElement: CustomElement): Promise<void>
+```
+
+Report custom elements change information to MediaUI.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-setCustomElements(actionType: ActionType, customType: CustomType,
+      customElement: CustomElement): Promise<void>--><!--Device-AVMusicTemplate-setCustomElements(actionType: ActionType, customType: CustomType,
+      customElement: CustomElement): Promise<void>-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| actionType | [ActionType](arkts-avsession-avmusictemplate-actiontype-t.md) | Yes | action type |
+| customType | [CustomType](arkts-avsession-avmusictemplate-customtype-t.md) | Yes | custom type |
+| customElement | [CustomElement](arkts-avsession-avmusictemplate-customelement-i.md) | Yes | custom element |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function setCustomElements can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000011 | The data write error, data is invalid. |
+
+## setDialogCommand
+
+```TypeScript
+setDialogCommand(type: DialogControlType, dialogInfo: DialogInfo): Promise<void>
+```
+
+Report dialog command to MediaUI.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-setDialogCommand(type: DialogControlType, dialogInfo: DialogInfo): Promise<void>--><!--Device-AVMusicTemplate-setDialogCommand(type: DialogControlType, dialogInfo: DialogInfo): Promise<void>-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| type | [DialogControlType](arkts-avsession-avmusictemplate-dialogcontroltype-t.md) | Yes | dialog control type |
+| dialogInfo | [DialogInfo](arkts-avsession-avmusictemplate-dialoginfo-i.md) | Yes | dialog information |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function setDialogCommand can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000011 | The data write error, data is invalid. |
+
+## setDownloadMediaEntityStatus
+
+```TypeScript
+setDownloadMediaEntityStatus(single: MediaEntity): Promise<void>
+```
+
+Report single download status information to MediaUI.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-setDownloadMediaEntityStatus(single: MediaEntity): Promise<void>--><!--Device-AVMusicTemplate-setDownloadMediaEntityStatus(single: MediaEntity): Promise<void>-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| single | [MediaEntity](arkts-avsession-avmusictemplate-mediaentity-i.md) | Yes | single information |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function setDownloadMediaEntityStatus can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000011 | The data write error, data is invalid. |
+
+## setExtensionAbility
+
+```TypeScript
+setExtensionAbility(want: WantAgent): Promise<void>
+```
+
+Report execute extension ability to MediaUI.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-setExtensionAbility(want: WantAgent): Promise<void>--><!--Device-AVMusicTemplate-setExtensionAbility(want: WantAgent): Promise<void>-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| want | [WantAgent](../../apis-background-tasks-kit/arkts-apis/arkts-backgroundtasks-reminderagent-wantagent-i.md) | Yes | ability info |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | capability not supported. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000011 | The data write error, data is invalid. |
+
+## setMediaEntities
+
+```TypeScript
+setMediaEntities(entities: MediaEntity[]): Promise<void>
+```
+
+Report media resource change information to MediaUI.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-setMediaEntities(entities: MediaEntity[]): Promise<void>--><!--Device-AVMusicTemplate-setMediaEntities(entities: MediaEntity[]): Promise<void>-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| entities | [MediaEntity](arkts-avsession-avmusictemplate-mediaentity-i.md)[] | Yes | media resource information |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function setMediaEntities can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000011 | The data write error, data is invalid. |
+
+## setPlaylist
+
+```TypeScript
+setPlaylist(playlist: PageMediaEntity): Promise<void>
+```
+
+Report play list information to MediaUI.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-setPlaylist(playlist: PageMediaEntity): Promise<void>--><!--Device-AVMusicTemplate-setPlaylist(playlist: PageMediaEntity): Promise<void>-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| playlist | [PageMediaEntity](arkts-avsession-avmusictemplate-pagemediaentity-i.md) | Yes | play list information |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function setPlaylist can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000011 | The data write error, data is invalid. |
+
+## setSettings
+
+```TypeScript
+setSettings(settingItems: SettingItem[]): Promise<void>
+```
+
+Report settings information to MediaUI.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-setSettings(settingItems: SettingItem[]): Promise<void>--><!--Device-AVMusicTemplate-setSettings(settingItems: SettingItem[]): Promise<void>-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| settingItems | [SettingItem](arkts-avsession-avmusictemplate-settingitem-i.md)[] | Yes | setting items |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function setSettings can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000011 | The data write error, data is invalid. |
+
+## setTabContent
+
+```TypeScript
+setTabContent(tabId: string, tabContent: MediaTabContent): Promise<void>
+```
+
+Report tab page content information to MediaUI.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-setTabContent(tabId: string, tabContent: MediaTabContent): Promise<void>--><!--Device-AVMusicTemplate-setTabContent(tabId: string, tabContent: MediaTabContent): Promise<void>-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| tabId | string | Yes | tab page id |
+| tabContent | [MediaTabContent](arkts-avsession-avmusictemplate-mediatabcontent-i.md) | Yes | tab page content |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function setTabContent can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000011 | The data write error, data is invalid. |
+
+## setUserInfo
+
+```TypeScript
+setUserInfo(userInfo: UserInfo): Promise<void>
+```
+
+Report user infomation to MediaUI.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-setUserInfo(userInfo: UserInfo): Promise<void>--><!--Device-AVMusicTemplate-setUserInfo(userInfo: UserInfo): Promise<void>-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| userInfo | [UserInfo](../../apis-arkdata/arkts-apis/arkts-arkdata-distributeddata-userinfo-i.md) | Yes | user information |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function setUserInfo can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000011 | The data write error, data is invalid. |
+
+## startTemplate
+
+```TypeScript
+startTemplate(): Promise<OperResult>
+```
+
+Start media center template interface.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-startTemplate(): Promise<OperResult>--><!--Device-AVMusicTemplate-startTemplate(): Promise<OperResult>-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<OperResult> | (OperResult) returned through promise |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | capability not supported. |
+
+## sessionId
+
+```TypeScript
+sessionId: string
+```
+
+Unique AVMusicTemplate descriptor.
+
+**Type:** string
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-sessionId: string--><!--Device-AVMusicTemplate-sessionId: string-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+## sessionTag
+
+```TypeScript
+sessionTag: string
+```
+
+AVMusicTemplate tag.
+
+**Type:** string
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-sessionTag: string--><!--Device-AVMusicTemplate-sessionTag: string-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+

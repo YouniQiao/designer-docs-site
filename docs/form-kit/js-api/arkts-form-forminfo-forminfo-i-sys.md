@@ -1,0 +1,242 @@
+# FormInfo
+
+Provides information about a form.
+
+**Since:** 9
+
+<!--Device-formInfo-interface FormInfo--><!--Device-formInfo-interface FormInfo-End-->
+
+**System capability:** SystemCapability.Ability.Form
+
+## Modules to Import
+
+```TypeScript
+import { formInfo } from '@kit.FormKit';
+```
+
+## enableBlurBackground
+
+```TypeScript
+readonly enableBlurBackground?: boolean
+```
+
+Indicates whether the form uses a blur background provided by the form host.
+
+**Type:** boolean
+
+**Since:** 18
+
+<!--Device-FormInfo-readonly enableBlurBackground?: boolean--><!--Device-FormInfo-readonly enableBlurBackground?: boolean-End-->
+
+**System capability:** SystemCapability.Ability.Form
+
+**System API:** This is a system API.
+
+## funInteractionParams
+
+```TypeScript
+readonly funInteractionParams?: FunInteractionParams
+```
+
+Indicates the fun interaction form params
+
+**Type:** FunInteractionParams
+
+**Since:** 20
+
+<!--Device-FormInfo-readonly funInteractionParams?: FunInteractionParams--><!--Device-FormInfo-readonly funInteractionParams?: FunInteractionParams-End-->
+
+**System capability:** SystemCapability.Ability.Form
+
+**System API:** This is a system API.
+
+## groupId
+
+```TypeScript
+readonly groupId?: string
+```
+
+Obtains the group id of the form.
+
+**Type:** string
+
+**Since:** 20
+
+<!--Device-FormInfo-readonly groupId?: string--><!--Device-FormInfo-readonly groupId?: string-End-->
+
+**System capability:** SystemCapability.Ability.Form
+
+**System API:** This is a system API.
+
+## isFontScaleFollowSystem
+
+```TypeScript
+isFontScaleFollowSystem?: boolean
+```
+
+Obtains whether the font scaling factor follows system settings.<br>Default value:The default value is true.
+
+**Type:** boolean
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-FormInfo-isFontScaleFollowSystem?: boolean--><!--Device-FormInfo-isFontScaleFollowSystem?: boolean-End-->
+
+**System capability:** SystemCapability.Ability.Form
+
+**System API:** This is a system API.
+
+## isPrivacySensitive
+
+```TypeScript
+readonly isPrivacySensitive?: boolean
+```
+
+Obtains whether the form is privacy sensitive.
+
+**Type:** boolean
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-FormInfo-readonly isPrivacySensitive?: boolean--><!--Device-FormInfo-readonly isPrivacySensitive?: boolean-End-->
+
+**System capability:** SystemCapability.Ability.Form
+
+**System API:** This is a system API.
+
+## isStandbyAdapted
+
+```TypeScript
+readonly isStandbyAdapted?: boolean
+```
+
+Obtains whether the form is adapted for standby.
+
+**Type:** boolean
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-FormInfo-readonly isStandbyAdapted?: boolean--><!--Device-FormInfo-readonly isStandbyAdapted?: boolean-End-->
+
+**System capability:** SystemCapability.Ability.Form
+
+**System API:** This is a system API.
+
+## isStandbySupported
+
+```TypeScript
+readonly isStandbySupported?: boolean
+```
+
+Obtains whether the form supports standby.
+
+**Type:** boolean
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-FormInfo-readonly isStandbySupported?: boolean--><!--Device-FormInfo-readonly isStandbySupported?: boolean-End-->
+
+**System capability:** SystemCapability.Ability.Form
+
+**System API:** This is a system API.
+
+## isTemplateForm
+
+```TypeScript
+readonly isTemplateForm?: boolean
+```
+
+Obtains whether the form is template form.
+
+**Type:** boolean
+
+**Since:** 23
+
+<!--Device-FormInfo-readonly isTemplateForm?: boolean--><!--Device-FormInfo-readonly isTemplateForm?: boolean-End-->
+
+**System capability:** SystemCapability.Ability.Form
+
+**System API:** This is a system API.
+
+## previewImages
+
+```TypeScript
+readonly previewImages?: Array<number>
+```
+
+Indicates the form previewImage IDs map corresponds to the \"supportDimensions\". The maximum length is +∞,positive integer.
+
+**Type:** Array<number>
+
+**Since:** 18
+
+**Atomic service API:** This API can be used in atomic services since API version 18.
+
+<!--Device-FormInfo-readonly previewImages?: Array<int>--><!--Device-FormInfo-readonly previewImages?: Array<int>-End-->
+
+**System capability:** SystemCapability.Ability.Form
+
+**System API:** This is a system API.
+
+## renderingMode
+
+```TypeScript
+readonly renderingMode?: RenderingMode
+```
+
+Obtains the rendering mode of the form.
+
+**Type:** RenderingMode
+
+**Since:** 18
+
+<!--Device-FormInfo-readonly renderingMode?: RenderingMode--><!--Device-FormInfo-readonly renderingMode?: RenderingMode-End-->
+
+**System capability:** SystemCapability.Ability.Form
+
+**System API:** This is a system API.
+
+## resizable
+
+```TypeScript
+readonly resizable?: boolean
+```
+
+Obtains the resizable of the form.
+
+**Type:** boolean
+
+**Since:** 20
+
+<!--Device-FormInfo-readonly resizable?: boolean--><!--Device-FormInfo-readonly resizable?: boolean-End-->
+
+**System capability:** SystemCapability.Ability.Form
+
+**System API:** This is a system API.
+
+## sceneAnimationParams
+
+```TypeScript
+readonly sceneAnimationParams?: SceneAnimationParams
+```
+
+Indicates the scene animation form params
+
+**Type:** SceneAnimationParams
+
+**Since:** 20
+
+<!--Device-FormInfo-readonly sceneAnimationParams?: SceneAnimationParams--><!--Device-FormInfo-readonly sceneAnimationParams?: SceneAnimationParams-End-->
+
+**System capability:** SystemCapability.Ability.Form
+
+**System API:** This is a system API.
+

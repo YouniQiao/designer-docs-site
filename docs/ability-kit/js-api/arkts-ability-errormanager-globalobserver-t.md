@@ -1,0 +1,22 @@
+# GlobalObserver
+
+```TypeScript
+export type GlobalObserver = (reason: GlobalError) => void
+```
+
+Defines an exception observer that can be used as an input parameter for [errorManager.on('globalErrorOccurred')](arkts-ability-errormanager-on-f.md#on-6)and [errorManager.on('globalUnhandledRejectionDetected')](arkts-ability-errormanager-on-f.md#on-4)to monitor event processing on the main thread of the current application.
+
+**Since:** 18
+
+**Atomic service API:** This API can be used in atomic services since API version 18.
+
+<!--Device-errorManager-export type GlobalObserver = (reason: GlobalError) => void--><!--Device-errorManager-export type GlobalObserver = (reason: GlobalError) => void-End-->
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| reason | GlobalError | Yes | Object related to the exception event name, message, error stack information,exception thread name, and exception thread type. |
+

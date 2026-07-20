@@ -1,0 +1,40 @@
+# AwarenessItem (System API)
+
+Provides page information, which includes:
+
+* Basic page information, such as page content, links, and screenshots.* Page entity information, such as the title and body of a page article.* Page interaction information, such as clicks and scrolling.
+
+**Since:** 23
+
+<!--Device-onScreen-export interface AwarenessItem--><!--Device-onScreen-export interface AwarenessItem-End-->
+
+**System capability:** SystemCapability.MultimodalAwareness.OnScreenAwareness
+
+**System API:** This is a system API.
+
+## Modules to Import
+
+```TypeScript
+import { onScreen } from '@kit.MultimodalAwarenessKit';
+```
+
+## itemInfo
+
+```TypeScript
+itemInfo: Record<string, Object>
+```
+
+Entity information of the awareness result, including the content, links, screenshots, and other entity information.
+
+**Type:** Record<string, Object>
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AwarenessItem-itemInfo: Record<string, Object>--><!--Device-AwarenessItem-itemInfo: Record<string, Object>-End-->
+
+**System capability:** SystemCapability.MultimodalAwareness.OnScreenAwareness
+
+**System API:** This is a system API.
+

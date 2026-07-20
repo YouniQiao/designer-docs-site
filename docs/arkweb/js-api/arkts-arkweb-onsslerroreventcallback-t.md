@@ -10,6 +10,8 @@ The callback of ssl error event.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-unnamed-type OnSslErrorEventCallback = (sslErrorEvent: SslErrorEvent) => void--><!--Device-unnamed-type OnSslErrorEventCallback = (sslErrorEvent: SslErrorEvent) => void-End-->
+
 **System capability:** SystemCapability.Web.Webview.Core
 
 **Parameters:**

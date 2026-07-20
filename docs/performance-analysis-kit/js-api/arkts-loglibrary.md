@@ -4,6 +4,8 @@ The **logLibrary** module provides APIs for obtaining various system maintenance
 
 **Since:** 10
 
+<!--Device-unnamed-declare namespace logLibrary--><!--Device-unnamed-declare namespace logLibrary-End-->
+
 **System capability:** SystemCapability.HiviewDFX.Hiview.LogLibrary
 
 **System API:** This is a system API.
@@ -21,12 +23,12 @@ import { logLibrary } from '@kit.PerformanceAnalysisKit';
 
 | Name | Description |
 | --- | --- |
-| [copy](arkts-performanceanalysis-copy-f-sys.md#copy-1) | Copies log files of the specified type to the target application directory. This API uses a promise to return theresult. |
-| [copy](arkts-performanceanalysis-copy-f-sys.md#copy-2) | Copies log files of the specified type to the target application directory. This API uses an asynchronous callbackto return the result. |
-| [list](arkts-performanceanalysis-list-f-sys.md#list-1) | Obtains the list of log files of the specified type in synchronous mode. This API accepts objects of the stringtype as input parameters and returns a list log files of the specified type. |
-| [move](arkts-performanceanalysis-move-f-sys.md#move-1) | Moves log files of the specified type to the target application directory. This API uses a promise to return theresult. |
-| [move](arkts-performanceanalysis-move-f-sys.md#move-2) | Moves log files of the specified type to the target application directory. This API uses an asynchronous callbackto return the result. |
-| [remove](arkts-performanceanalysis-remove-f-sys.md#remove-1) | Deletes log files of the specified type in synchronous mode. |
+| [copy](arkts-performanceanalysis-loglibrary-copy-f-sys.md#copy-1) | Copies log files of the specified type to the target application directory. This API uses a promise to return the result. |
+| [copy](arkts-performanceanalysis-loglibrary-copy-f-sys.md#copy-2) | Copies log files of the specified type to the target application directory. This API uses an asynchronous callback to return the result. |
+| [list](arkts-performanceanalysis-loglibrary-list-f-sys.md#list-1) | Obtains the list of log files of the specified type in synchronous mode. This API accepts objects of the string type as input parameters and returns a list log files of the specified type. |
+| [move](arkts-performanceanalysis-loglibrary-move-f-sys.md#move-1) | Moves log files of the specified type to the target application directory. This API uses a promise to return the result. |
+| [move](arkts-performanceanalysis-loglibrary-move-f-sys.md#move-2) | Moves log files of the specified type to the target application directory. This API uses an asynchronous callback to return the result. |
+| [remove](arkts-performanceanalysis-loglibrary-remove-f-sys.md#remove-1) | Deletes log files of the specified type in synchronous mode. |
 <!--DelEnd-->
 
 <!--Del-->
@@ -34,6 +36,6 @@ import { logLibrary } from '@kit.PerformanceAnalysisKit';
 
 | Name | Description |
 | --- | --- |
-| [LogEntry](arkts-performanceanalysis-logentry-i-sys.md) | Defines a **LogEntry** object. |
+| [LogEntry](arkts-performanceanalysis-loglibrary-logentry-i-sys.md) | Defines a **LogEntry** object. |
 <!--DelEnd-->
 

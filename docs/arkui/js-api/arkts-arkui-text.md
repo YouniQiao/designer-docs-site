@@ -2,6 +2,14 @@
 
 The **Text** component is used to display a piece of textual information.
 
+## Child Components
+
+This component can contain the [Span]{@link span}, [ImageSpan]{@link image_span}, [SymbolSpan]{@link symbol_span},and [ContainerSpan]{@link container_span} child components.
+
+> **NOTE**  
+>  
+> Use [child components](docroot://reference/apis-arkui/arkui-ts/ts-basic-components-text.md#child-components) to  
+> implement [text and image layout](docroot://ui/arkts-text-image-layout.md) scenarios.
 
 ## Text
 
@@ -16,6 +24,8 @@ Defines the constructor of Text.
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
+
+<!--Device-TextInterface-(content?: string | Resource, value?: TextOptions): TextAttribute--><!--Device-TextInterface-(content?: string | Resource, value?: TextOptions): TextAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

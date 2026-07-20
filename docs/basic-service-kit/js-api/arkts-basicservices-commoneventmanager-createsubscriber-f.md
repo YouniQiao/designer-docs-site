@@ -1,0 +1,132 @@
+# createSubscriber
+
+## Modules to Import
+
+```TypeScript
+import { commonEventManager } from '@kit.BasicServicesKit';
+```
+
+## createSubscriber
+
+```TypeScript
+function createSubscriber(
+    subscribeInfo: CommonEventSubscribeInfo,
+    callback: AsyncCallback<CommonEventSubscriber>
+  ): void
+```
+
+Creates a subscriber. This API uses an asynchronous callback to return the result.
+
+**Since:** 9
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-commonEventManager-function createSubscriber(
+    subscribeInfo: CommonEventSubscribeInfo,
+    callback: AsyncCallback<CommonEventSubscriber>
+  ): void--><!--Device-commonEventManager-function createSubscriber(
+    subscribeInfo: CommonEventSubscribeInfo,
+    callback: AsyncCallback<CommonEventSubscriber>
+  ): void-End-->
+
+**System capability:** SystemCapability.Notification.CommonEvent
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| subscribeInfo | [CommonEventSubscribeInfo](arkts-basicservices-commoneventmanager-commoneventsubscribeinfo-t.md) | Yes | Subscriber information. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<CommonEventSubscriber> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**; otherwise, **err** is an error object. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+// Define a subscriber to save the created subscriber object for subsequent subscription and unsubscription.
+let subscriber: commonEventManager.CommonEventSubscriber | null = null;
+// Subscriber information.
+let subscribeInfo: commonEventManager.CommonEventSubscribeInfo = {
+  events: ['event']
+};
+
+// Create a subscriber.
+try {
+  commonEventManager.createSubscriber(subscribeInfo,
+    (err: BusinessError, commonEventSubscriber: commonEventManager.CommonEventSubscriber) => {
+      if (!err) {
+        console.info(`Succeeded in creating subscriber.`);
+        subscriber = commonEventSubscriber;
+        return;
+      }
+      console.error(`Failed to create subscriber. Code is ${err.code}, message is ${err.message}`);
+    });
+} catch (error) {
+  let err: BusinessError = error as BusinessError;
+  console.error(`Failed to create subscriber. Code is ${err.code}, message is ${err.message}`);
+}
+
+```
+
+
+## createSubscriber
+
+```TypeScript
+function createSubscriber(subscribeInfo: CommonEventSubscribeInfo): Promise<CommonEventSubscriber>
+```
+
+Creates a subscriber. This API uses a promise to return the result.
+
+**Since:** 9
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-commonEventManager-function createSubscriber(subscribeInfo: CommonEventSubscribeInfo): Promise<CommonEventSubscriber>--><!--Device-commonEventManager-function createSubscriber(subscribeInfo: CommonEventSubscribeInfo): Promise<CommonEventSubscriber>-End-->
+
+**System capability:** SystemCapability.Notification.CommonEvent
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| subscribeInfo | [CommonEventSubscribeInfo](arkts-basicservices-commoneventmanager-commoneventsubscribeinfo-t.md) | Yes | Subscriber information. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<CommonEventSubscriber> | Promise used to return the created subscriber object. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+// Define a subscriber to save the created subscriber object for subsequent subscription and unsubscription.
+let subscriber: commonEventManager.CommonEventSubscriber | null = null;
+// Subscriber information.
+let subscribeInfo: commonEventManager.CommonEventSubscribeInfo = {
+  events: ['event']
+};
+// Create a subscriber.
+commonEventManager.createSubscriber(subscribeInfo).then((commonEventSubscriber: commonEventManager.CommonEventSubscriber) => {
+  console.info(`Succeeded in creating subscriber.`);
+  subscriber = commonEventSubscriber;
+}).catch((err: BusinessError) => {
+  console.error(`Failed to create subscriber. Code is ${err.code}, message is ${err.message}`);
+});
+
+```
+

@@ -16,6 +16,8 @@ Creates a **Watcher** object to listen for file or directory changes.
 
 **Since:** 10
 
+<!--Device-unnamed-declare function createWatcher(path: string, events: number, listener: WatchEventListener): Watcher--><!--Device-unnamed-declare function createWatcher(path: string, events: number, listener: WatchEventListener): Watcher-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
@@ -24,13 +26,13 @@ Creates a **Watcher** object to listen for file or directory changes.
 | --- | --- | --- | --- |
 | path | string | Yes | Application sandbox path of the file or directory to observe. |
 | events | number | Yes | Events to observe. Multiple events can be separated by vertical bars ( |
-| listener | WatchEventListener | Yes | Callback invoked when an observed event occurs. The callback will be invokedeach time an observed event occurs. |
+| listener | [WatchEventListener](arkts-corefile-file-fs-watcheventlistener-i.md) | Yes | Callback invoked when an observed event occurs. The callback will be invoked each time an observed event occurs. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Watcher | **Watcher** object created. |
+| [Watcher](arkts-corefile-file-fs-watcher-i.md) | **Watcher** object created. |
 
 **Error codes:**
 

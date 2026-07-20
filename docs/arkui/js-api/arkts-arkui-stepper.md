@@ -5,6 +5,9 @@ completion process.
 
 > **NOTE**
 
+## Child Components
+
+Only the child component [StepperItem]{@link stepper_item} is supported.
 
 ## Stepper
 
@@ -23,6 +26,8 @@ Creates a **Stepper** component.
 **Substitutes:** <!--SUBSTITUTE_API-->Swiper.SwiperAttribute#index<!--/SUBSTITUTE_API-->
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-StepperInterface-(value?: { index?: number }): StepperAttribute--><!--Device-StepperInterface-(value?: { index?: number }): StepperAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

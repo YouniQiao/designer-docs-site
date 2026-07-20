@@ -1,14 +1,14 @@
 # Gauge properties/events
 
-In addition to the
-[universal attributes](../../../../reference/apis-arkui/arkui-ts/ts-component-general-attributes.md), the following
-attributes are supported.
+In addition to the [universal attributes](../../../../reference/apis-arkui/arkui-ts/ts-component-general-attributes.md), the following attributes are supported.
 
 The [universal events](../../../../reference/apis-arkui/arkui-ts/ts-component-general-events.md) are supported.
 
 **Inheritance/Implementation:** GaugeAttribute extends [CommonMethod<GaugeAttribute>](CommonMethod<GaugeAttribute>)
 
 **Since:** 8
+
+<!--Device-unnamed-declare class GaugeAttribute extends CommonMethod<GaugeAttribute>--><!--Device-unnamed-declare class GaugeAttribute extends CommonMethod<GaugeAttribute>-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -22,16 +22,13 @@ Sets the colors of the gauge.
 
 Since API version 11, this API follows the following rules:
 
-If the data type is [ResourceColor](arkts-arkui-resourcecolor-t.md), the ring is of the monochrome type.
+If the data type is [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md), the ring is of the monochrome type.
 
-If the data type is [LinearGradient](arkts-arkui-lineargradient-i.md), the ring is of the gradient type.
+If the data type is [LinearGradient](arkts-arkui-common-lineargradient-i.md), the ring is of the gradient type.
 
-If the data type is Array, the ring is of the gradient type. The first parameter indicates the color value. If it
-is set to a non-color value, the color of 0xFFE84026 is used. The second parameter indicates the color weight. If
-it is set to a negative number or a non-numeric value, the color weight is 0.
+If the data type is Array, the ring is of the gradient type. The first parameter indicates the color value. If it is set to a non-color value, the color of 0xFFE84026 is used. The second parameter indicates the color weight. If it is set to a negative number or a non-numeric value, the color weight is 0.
 
-A ring of the gradient type contains a maximum of nine color segments. If there are more than nine segments, the
-excess is not displayed.
+A ring of the gradient type contains a maximum of nine color segments. If there are more than nine segments, the excess is not displayed.
 
 **Since:** 8
 
@@ -39,13 +36,15 @@ excess is not displayed.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-GaugeAttribute-colors(colors: ResourceColor | LinearGradient | Array<[ResourceColor | LinearGradient, number]>): GaugeAttribute--><!--Device-GaugeAttribute-colors(colors: ResourceColor | LinearGradient | Array<[ResourceColor | LinearGradient, number]>): GaugeAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| colors | ResourceColor \| LinearGradient \| Array&lt;[ResourceColor \| LinearGradient, number]&gt; | Yes | Colors of thegauge. You can set colors for individual segments.<br>Default value in API version 9: **Color.Black**<br>Default value in API version 11:<br>If no color is provided or the array is empty, the ring color will be agradient consisting of the following colors: 0xFF64BB5C, 0xFFF7CE00, and 0xFFE84026.<br>If a color value isprovided but invalid, the ring will be in the color of 0xFFE84026.<br>Colors with a weight of 0 are notdisplayed in the ring. If all weights are 0, the ring is not displayed.<br>**Since:** 11 |
+| colors | ResourceColor \| LinearGradient \| Array<[ResourceColor \| LinearGradient, number]> | Yes | Colors of the gauge. You can set colors for individual segments.<br>Default value in API version 9: **Color.Black**<br>Default value in API version 11:<br>If no color is provided or the array is empty, the ring color will be a gradient consisting of the following colors: 0xFF64BB5C, 0xFFF7CE00, and 0xFFE84026.<br>If a color value is provided but invalid, the ring will be in the color of 0xFFE84026.<br>Colors with a weight of 0 are not displayed in the ring. If all weights are 0, the ring is not displayed.<br>**Since:** 11 |
 
 ## contentModifier
 
@@ -61,13 +60,15 @@ Creates a content modifier.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-GaugeAttribute-contentModifier(modifier: ContentModifier<GaugeConfiguration>): GaugeAttribute--><!--Device-GaugeAttribute-contentModifier(modifier: ContentModifier<GaugeConfiguration>): GaugeAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| modifier | ContentModifier&lt;GaugeConfiguration&gt; | Yes | Content modifier to apply to the current component.<br>**modifier**: content modifier. You need a custom class to implement the **ContentModifier** API. |
+| modifier | [ContentModifier](arkts-arkui-common-contentmodifier-i.md)<GaugeConfiguration> | Yes | Content modifier to apply to the current component.<br>**modifier**: content modifier. You need a custom class to implement the **ContentModifier** API. |
 
 ## description
 
@@ -85,13 +86,15 @@ Sets the description of the gauge.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 23.
 
+<!--Device-GaugeAttribute-description(value: CustomBuilder): GaugeAttribute--><!--Device-GaugeAttribute-description(value: CustomBuilder): GaugeAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | CustomBuilder | Yes | Description.<br>**NOTE**<br>You need to customize the content – text or imageryrecommended – in @Builder.<br>If the width and height of the custom content are in percentage, the referencerange is a rectangle that is 44.4% of the diameter of the ring horizontally and 25.4% vertically (for images,it is 28.6% both horizontally and vertically), positioned 0 vp away from the bottom of the ring and centeredhorizontally.<br>If this parameter is set to null, no description is displayed.<br>If this parameter is notset, what's displayed is subject to the maximum and minimum value settings.<br>If either or both of the maximumand minimum values are set, they are displayed.<br>If neither maximum nor minimum values are set, nodescription is displayed.<br>The maximum and minimum values are displayed at the bottom of the ring and cannotbe relocated. They may be blocked by the ring if the ring's start and end angles are not set properly. |
+| value | [CustomBuilder](arkts-arkui-custombuilder-t.md) | Yes | Description.<br>**NOTE**<br>You need to customize the content – text or imagery recommended – in @Builder.<br>If the width and height of the custom content are in percentage, the reference range is a rectangle that is 44.4% of the diameter of the ring horizontally and 25.4% vertically (for images,it is 28.6% both horizontally and vertically), positioned 0 vp away from the bottom of the ring and centered horizontally.<br>If this parameter is set to null, no description is displayed.<br>If this parameter is not set, what's displayed is subject to the maximum and minimum value settings.<br>If either or both of the maximum and minimum values are set, they are displayed.<br>If neither maximum nor minimum values are set, no description is displayed.<br>The maximum and minimum values are displayed at the bottom of the ring and cannot be relocated. They may be blocked by the ring if the ring's start and end angles are not set properly. |
 
 ## endAngle
 
@@ -99,9 +102,7 @@ Sets the description of the gauge.
 endAngle(angle: number)
 ```
 
-Sets the end angle of the gauge. Ensure an appropriate difference between the start angle and end angle. If this
-difference is too small, the drawn chart may be abnormal. You are advised to use a monochrome ring to set the
-**value** attribute of the **Gauge**. You can also use **setTimeout** to delay value loading.
+Sets the end angle of the gauge. Ensure an appropriate difference between the start angle and end angle. If this difference is too small, the drawn chart may be abnormal. You are advised to use a monochrome ring to set the **value** attribute of the **Gauge**. You can also use **setTimeout** to delay value loading.
 
 **Since:** 8
 
@@ -109,13 +110,15 @@ difference is too small, the drawn chart may be abnormal. You are advised to use
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-GaugeAttribute-endAngle(angle: number): GaugeAttribute--><!--Device-GaugeAttribute-endAngle(angle: number): GaugeAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| angle | number | Yes | End angle of the gauge. The 0 o'clock is defined as 0 degrees. Clockwise rotationrepresents positive angles, and counterclockwise rotation represents negative angles. Values exceeding 360degrees are equivalent to the remainder after division by 360 degrees.<br>Default value: **360**<br>Drawingfrom the start position to the end position is performed only in the clockwise direction. |
+| angle | number | Yes | End angle of the gauge. The 0 o'clock is defined as 0 degrees. Clockwise rotation represents positive angles, and counterclockwise rotation represents negative angles. Values exceeding 360degrees are equivalent to the remainder after division by 360 degrees.<br>Default value: **360**<br>Drawing from the start position to the end position is performed only in the clockwise direction. |
 
 ## indicator
 
@@ -133,13 +136,15 @@ Sets the indicator style of the gauge.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 23.
 
+<!--Device-GaugeAttribute-indicator(value: GaugeIndicatorOptions): GaugeAttribute--><!--Device-GaugeAttribute-indicator(value: GaugeIndicatorOptions): GaugeAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | GaugeIndicatorOptions | Yes | Indicator style.<br>**NOTE**<br>If this attribute is set to **null**, noindicator is displayed. |
+| value | [GaugeIndicatorOptions](arkts-arkui-gauge-gaugeindicatoroptions-i.md) | Yes | Indicator style.<br>**NOTE**<br>If this attribute is set to **null**, no indicator is displayed. |
 
 ## privacySensitive
 
@@ -149,9 +154,9 @@ privacySensitive(isPrivacySensitiveMode: Optional<boolean>)
 
 Sets whether to enable privacy mode.
 
-> **NOTE**
->
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
+> **NOTE**  
+>  
+> This API can be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1) since API version 20.
 
 **Since:** 12
 
@@ -161,13 +166,15 @@ Sets whether to enable privacy mode.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 12.
 
+<!--Device-GaugeAttribute-privacySensitive(isPrivacySensitiveMode: Optional<boolean>): GaugeAttribute--><!--Device-GaugeAttribute-privacySensitive(isPrivacySensitiveMode: Optional<boolean>): GaugeAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| isPrivacySensitiveMode | Optional&lt;boolean&gt; | Yes | Whether to enable privacy mode. In privacy mode, the gaugeindicator points to **0**, the maximum and minimum values are masked, and the scale range is displayed in grayor the background color. The value **true** means to enable privacy mode, and **false** means the opposite.<br>Default value: **false**.&lt;!--Del--&gt;<br>For widgets, this property must be used with[FormComponent](arkts-arkui-formcomponent.md) and the [obscured](arkts-arkui-commonmethod-c.md#obscured-1) attribute to displayprivacy masking effects.&lt;!--DelEnd--&gt;. |
+| isPrivacySensitiveMode | [Optional](arkts-arkui-optional-t.md)<boolean> | Yes | Whether to enable privacy mode. In privacy mode, the gauge indicator points to **0**, the maximum and minimum values are masked, and the scale range is displayed in gray or the background color. The value **true** means to enable privacy mode, and **false** means the opposite.<br>Default value: **false**.&lt;!--Del--&gt;<br>For widgets, this property must be used with [FormComponent](arkts-arkui-formcomponent.md) and the [obscured](arkts-arkui-common-commonmethod-c.md#obscured-1) attribute to display privacy masking effects.&lt;!--DelEnd--&gt;. |
 
 ## startAngle
 
@@ -183,13 +190,15 @@ Sets the start angle of the gauge.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-GaugeAttribute-startAngle(angle: number): GaugeAttribute--><!--Device-GaugeAttribute-startAngle(angle: number): GaugeAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| angle | number | Yes | Start angle of the gauge. The 0 o'clock is defined as 0 degrees. Clockwise rotationrepresents positive angles, and counterclockwise rotation represents negative angles. Values exceeding 360degrees are equivalent to the remainder after division by 360 degrees.<br>Default value: **0**<br>Drawing fromthe start position to the end position is performed only in the clockwise direction. |
+| angle | number | Yes | Start angle of the gauge. The 0 o'clock is defined as 0 degrees. Clockwise rotation represents positive angles, and counterclockwise rotation represents negative angles. Values exceeding 360degrees are equivalent to the remainder after division by 360 degrees.<br>Default value: **0**<br>Drawing from the start position to the end position is performed only in the clockwise direction. |
 
 ## strokeWidth
 
@@ -205,13 +214,15 @@ Sets the stroke width of the gauge.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-GaugeAttribute-strokeWidth(length: Length): GaugeAttribute--><!--Device-GaugeAttribute-strokeWidth(length: Length): GaugeAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| length | Length | Yes | Stroke width of the gauge.<br>Default value: **4**<br>Unit: vp<br>**NOTE**<br>A valueless than or equal to 0 is handled as the default value.<br>If the value exceeds the maximum value, the radiusof the gauge, the maximum value is used.<br>The value cannot be in percentage. |
+| length | [Length](../arkts-apis/arkts-arkui-length-t.md) | Yes | Stroke width of the gauge.<br>Default value: **4**<br>Unit: vp<br>**NOTE**<br>A value less than or equal to 0 is handled as the default value.<br>If the value exceeds the maximum value, the radius of the gauge, the maximum value is used.<br>The value cannot be in percentage. |
 
 ## trackShadow
 
@@ -229,13 +240,15 @@ Sets the shadow style of the gauge.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 23.
 
+<!--Device-GaugeAttribute-trackShadow(value: GaugeShadowOptions): GaugeAttribute--><!--Device-GaugeAttribute-trackShadow(value: GaugeShadowOptions): GaugeAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | GaugeShadowOptions | Yes | Shadow effect. You can specify the blur radius, and the offset along the Xand Y axes.<br>**NOTE**<br>The shadow color is the same as the ring color.<br>If this attribute is set to**null**, the shadow effect is disabled. |
+| value | [GaugeShadowOptions](arkts-arkui-gauge-gaugeshadowoptions-i.md) | Yes | Shadow effect. You can specify the blur radius, and the offset along the X and Y axes.<br>**NOTE**<br>The shadow color is the same as the ring color.<br>If this attribute is set to **null**, the shadow effect is disabled. |
 
 ## value
 
@@ -250,6 +263,8 @@ Sets the value of the gauge.
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
+
+<!--Device-GaugeAttribute-value(value: number): GaugeAttribute--><!--Device-GaugeAttribute-value(value: number): GaugeAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

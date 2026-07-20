@@ -6,6 +6,8 @@ In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkt
 
 **Since:** 9
 
+<!--Device-unnamed-declare class MenuItemAttribute extends CommonMethod<MenuItemAttribute>--><!--Device-unnamed-declare class MenuItemAttribute extends CommonMethod<MenuItemAttribute>-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 ## contentFont
@@ -22,13 +24,15 @@ Sets the font style of the menu item content.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-MenuItemAttribute-contentFont(value: Font): MenuItemAttribute--><!--Device-MenuItemAttribute-contentFont(value: Font): MenuItemAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | Font | Yes | Font style of the menu item content. |
+| value | [Font](../arkts-apis/arkts-arkui-arkui-uicontext-font-c.md) | Yes | Font style of the menu item content. |
 
 ## contentFontColor
 
@@ -44,13 +48,15 @@ Sets the font color of the menu item content.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-MenuItemAttribute-contentFontColor(value: ResourceColor): MenuItemAttribute--><!--Device-MenuItemAttribute-contentFontColor(value: ResourceColor): MenuItemAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ResourceColor | Yes | Font color of the menu item content.<br>Default value: **'#E5000000'** |
+| value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Font color of the menu item content.<br>Default value: **'#E5000000'** |
 
 ## labelFont
 
@@ -66,13 +72,15 @@ Sets the font style of the menu item label.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-MenuItemAttribute-labelFont(value: Font): MenuItemAttribute--><!--Device-MenuItemAttribute-labelFont(value: Font): MenuItemAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | Font | Yes | Font style of the menu item label. |
+| value | [Font](../arkts-apis/arkts-arkui-arkui-uicontext-font-c.md) | Yes | Font style of the menu item label. |
 
 ## labelFontColor
 
@@ -88,13 +96,15 @@ Sets the font color of the menu item label.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-MenuItemAttribute-labelFontColor(value: ResourceColor): MenuItemAttribute--><!--Device-MenuItemAttribute-labelFontColor(value: ResourceColor): MenuItemAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ResourceColor | Yes | Font color of the menu item label.<br>Default value: **'#99000000'** |
+| value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Font color of the menu item label.<br>Default value: **'#99000000'** |
 
 ## onChange
 
@@ -108,13 +118,15 @@ Triggered when the selection status of the menu item is changed manually.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-MenuItemAttribute-onChange(callback: (selected: boolean) => void): MenuItemAttribute--><!--Device-MenuItemAttribute-onChange(callback: (selected: boolean) => void): MenuItemAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (selected: boolean) =&gt; void | Yes | Invoked when the selected status changes.<br>**true**: selected; **false**:unselected. |
+| callback | (selected: boolean) => void | Yes | Invoked when the selected status changes.<br>**true**: selected; **false**:unselected. |
 
 ## selectIcon
 
@@ -128,13 +140,15 @@ Sets whether to display the selected icon when the menu item is selected.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-MenuItemAttribute-selectIcon(value: boolean | ResourceStr | SymbolGlyphModifier): MenuItemAttribute--><!--Device-MenuItemAttribute-selectIcon(value: boolean | ResourceStr | SymbolGlyphModifier): MenuItemAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | boolean \| ResourceStr \| SymbolGlyphModifier | Yes | Whether to display the selected icon when the menuitem is selected.<br>**true**: Display the default check mark icon. **false**: Hide the selected state icon.<br>**ResourceStr**: Display the specified custom icon resource.<br>**SymbolGlyphModifier**: Display the specifiedHMSymbol icon.<br>Default value: **false**.<br>**Since:** 12 |
+| value | boolean \| ResourceStr \| SymbolGlyphModifier | Yes | Whether to display the selected icon when the menu item is selected.<br>**true**: Display the default check mark icon. **false**: Hide the selected state icon.<br  >**ResourceStr**: Display the specified custom icon resource.<br>**SymbolGlyphModifier**: Display the specified HMSymbol icon.<br>Default value: **false**.<br>**Since:** 12 |
 
 ## selected
 
@@ -144,15 +158,15 @@ selected(value: boolean)
 
 Sets whether the menu item is selected.
 
-Since API version 10, this parameter supports two-way binding through
-[$$](../../../../ui/state-management/arkts-two-way-sync.md).
+Since API version 10, this parameter supports two-way binding through [$$](../../../../ui/state-management/arkts-two-way-sync.md).
 
-Since API version 18, this parameter supports two-way binding through
-[!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
+Since API version 18, this parameter supports two-way binding through [!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-MenuItemAttribute-selected(value: boolean): MenuItemAttribute--><!--Device-MenuItemAttribute-selected(value: boolean): MenuItemAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -176,11 +190,13 @@ Create the submenu for custom menu item.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 
+<!--Device-MenuItemAttribute-subMenuBuilder(builder: CustomBuilder): MenuItemAttribute--><!--Device-MenuItemAttribute-subMenuBuilder(builder: CustomBuilder): MenuItemAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| builder | CustomBuilder | Yes | Indicates the builder function for submenu. |
+| builder | [CustomBuilder](arkts-arkui-custombuilder-t.md) | Yes | Indicates the builder function for submenu. |
 

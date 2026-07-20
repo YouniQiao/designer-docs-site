@@ -4,6 +4,8 @@ The **process** module provides process management APIs, for example, APIs for o
 
 **Since:** 7
 
+<!--Device-unnamed-declare namespace process--><!--Device-unnamed-declare namespace process-End-->
+
 **System capability:** SystemCapability.Utils.Lang
 
 ## Modules to Import
@@ -18,52 +20,52 @@ import { process } from '@kit.ArkTS';
 
 | Name | Description |
 | --- | --- |
-| [abort](arkts-arkts-abort-f.md#abort-1) | Aborts a process and generates a core file. This method will cause a process to exit immediately. Exercisecaution when using this method. |
-| [exit](arkts-arkts-exit-f.md#exit-1) | Terminates this process.Exercise caution when using this API. After this API is called, the application exits. If the input parameter isnot 0, data loss or exceptions may occur. |
-| [getEnvironmentVar](arkts-arkts-getenvironmentvar-f.md#getenvironmentvar-1) | Obtains the value of an environment variable. |
-| [getPastCpuTime](arkts-arkts-getpastcputime-f.md#getpastcputime-1) | Obtains the CPU time (in milliseconds) from the time the process starts to the current time. |
-| [getStartRealtime](arkts-arkts-getstartrealtime-f.md#getstartrealtime-1) | Obtains the duration (excluding the system sleep time), in milliseconds, from the time the system starts to thetime the process starts. |
-| [getSystemConfig](arkts-arkts-getsystemconfig-f.md#getsystemconfig-1) | Obtains the system configuration. |
-| [getThreadPriority](arkts-arkts-getthreadpriority-f.md#getthreadpriority-1) | Obtains the thread priority based on the specified TID. |
-| [getUidForName](arkts-arkts-getuidforname-f.md#getuidforname-1) | Obtains the UID of a user from the user database of the system based on the specified user name. |
-| [is64Bit](arkts-arkts-is64bit-f.md#is64bit-1) | Checks whether this process is running in a 64-bit environment. |
-| [isAppUid](arkts-arkts-isappuid-f.md#isappuid-1) | Checks whether a UID belongs to this application. |
-| [isIsolatedProcess](arkts-arkts-isisolatedprocess-f.md#isisolatedprocess-1) | Checks whether this process is isolated. |
-| [kill](arkts-arkts-kill-f.md#kill-1) | Sends a signal to a specified process to terminate it. |
-| [uptime](arkts-arkts-uptime-f.md#uptime-1) | Obtains the running time of the current system, in seconds. |
+| [abort](arkts-arkts-process-abort-f.md#abort-1) | Aborts a process and generates a core file. This method will cause a process to exit immediately. Exercise caution when using this method. |
+| [exit](arkts-arkts-process-exit-f.md#exit-1) | Terminates this process.Exercise caution when using this API. After this API is called, the application exits. If the input parameter is not 0, data loss or exceptions may occur. |
+| [getEnvironmentVar](arkts-arkts-process-getenvironmentvar-f.md#getenvironmentvar-1) | Obtains the value of an environment variable. |
+| [getPastCpuTime](arkts-arkts-process-getpastcputime-f.md#getpastcputime-1) | Obtains the CPU time (in milliseconds) from the time the process starts to the current time. |
+| [getStartRealtime](arkts-arkts-process-getstartrealtime-f.md#getstartrealtime-1) | Obtains the duration (excluding the system sleep time), in milliseconds, from the time the system starts to the time the process starts. |
+| [getSystemConfig](arkts-arkts-process-getsystemconfig-f.md#getsystemconfig-1) | Obtains the system configuration. |
+| [getThreadPriority](arkts-arkts-process-getthreadpriority-f.md#getthreadpriority-1) | Obtains the thread priority based on the specified TID. |
+| [getUidForName](arkts-arkts-process-getuidforname-f.md#getuidforname-1) | Obtains the UID of a user from the user database of the system based on the specified user name. |
+| [is64Bit](arkts-arkts-process-is64bit-f.md#is64bit-1) | Checks whether this process is running in a 64-bit environment. |
+| [isAppUid](arkts-arkts-process-isappuid-f.md#isappuid-1) | Checks whether a UID belongs to this application. |
+| [isIsolatedProcess](arkts-arkts-process-isisolatedprocess-f.md#isisolatedprocess-1) | Checks whether this process is isolated. |
+| [kill](arkts-arkts-process-kill-f.md#kill-1) | Sends a signal to a specified process to terminate it. |
+| [uptime](arkts-arkts-process-uptime-f.md#uptime-1) | Obtains the running time of the current system, in seconds. |
 
 <!--Del-->
 ### Functions（系统接口）
 
 | Name | Description |
 | --- | --- |
-| [chdir](arkts-arkts-chdir-f-sys.md#chdir-1) | Change current directory |
-| [cwd](arkts-arkts-cwd-f-sys.md#cwd-1) | Return the current work directory; |
-| [off](arkts-arkts-off-f-sys.md#off-1) | Remove registered event |
-| [on](arkts-arkts-on-f-sys.md#on-1) | Register for an event |
-| [runCmd](arkts-arkts-runcmd-f-sys.md#runcmd-1) | Returns a child process object and spawns a new ChildProcess to run the command. |
+| [chdir](arkts-arkts-process-chdir-f-sys.md#chdir-1) | Change current directory |
+| [cwd](arkts-arkts-process-cwd-f-sys.md#cwd-1) | Return the current work directory; |
+| [off](arkts-arkts-process-off-f-sys.md#off-1) | Remove registered event |
+| [on](arkts-arkts-process-on-f-sys.md#on-1) | Register for an event |
+| [runCmd](arkts-arkts-process-runcmd-f-sys.md#runcmd-1) | Returns a child process object and spawns a new ChildProcess to run the command. |
 <!--DelEnd-->
 
 ### Classes
 
 | Name | Description |
 | --- | --- |
-| [ProcessManager](arkts-arkts-processmanager-c.md) | Provides APIs for throwing exceptions during the addition of a process.Construct a **ProcessManager** object. |
+| [ProcessManager](arkts-arkts-process-processmanager-c.md) | Provides APIs for throwing exceptions during the addition of a process.Construct a **ProcessManager** object. |
 
 <!--Del-->
 ### Interfaces（系统接口）
 
 | Name | Description |
 | --- | --- |
-| [ChildProcess](arkts-arkts-childprocess-i-sys.md) | The childprocess object can be used to create a new process. |
-| [ConditionType](arkts-arkts-conditiontype-i-sys.md) | Provides the ConditionType type,including timeout, killSignal, maxBuffer. |
+| [ChildProcess](arkts-arkts-process-childprocess-i-sys.md) | The childprocess object can be used to create a new process. |
+| [ConditionType](arkts-arkts-process-conditiontype-i-sys.md) | Provides the ConditionType type,including timeout, killSignal, maxBuffer. |
 <!--DelEnd-->
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [EventListener](arkts-arkts-eventlistener-t.md) | Event to store. |
+| [EventListener](arkts-arkts-process-eventlistener-t.md) | Event to store. |
 
 ### Constants
 

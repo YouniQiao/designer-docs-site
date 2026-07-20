@@ -4,6 +4,9 @@ The **Slider** component is used to quickly adjust settings, such as the volume 
 
 > **NOTE**
 
+## Child Components
+
+Not supported
 
 ## Slider
 
@@ -16,6 +19,8 @@ Slider(options?: SliderOptions)
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
+
+<!--Device-SliderInterface-(options?: SliderOptions): SliderAttribute--><!--Device-SliderInterface-(options?: SliderOptions): SliderAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

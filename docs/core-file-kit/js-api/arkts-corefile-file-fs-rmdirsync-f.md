@@ -14,13 +14,15 @@ declare function rmdirSync(path: string): void
 
 Removes a directory and all its subdirectories and files synchronously.
 
-> **NOTE**
->
+> **NOTE**  
+>  
 > This API can be used to remove a single file. However, you are advised to use **unlinkSync** instead.
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-unnamed-declare function rmdirSync(path: string): void--><!--Device-unnamed-declare function rmdirSync(path: string): void-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 

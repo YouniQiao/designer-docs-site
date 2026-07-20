@@ -24,13 +24,23 @@ Build function of AddFormMenuItem.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-unnamed-export declare function AddFormMenuItem(
+  want: Want,
+  componentId: string,
+  options?: AddFormOptions
+): void--><!--Device-unnamed-export declare function AddFormMenuItem(
+  want: Want,
+  componentId: string,
+  options?: AddFormOptions
+): void-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | The want of the form to publish. |
+| want | [Want](arkts-arkui-want-t-sys.md) | Yes | The want of the form to publish. |
 | componentId | string | Yes | The id of the component used to get form snapshot. |
-| options | AddFormOptions | No | Add form options. |
+| options | [AddFormOptions](arkts-arkui-arkui-advanced-formmenu-addformoptions-i.md) | No | Add form options. |
 

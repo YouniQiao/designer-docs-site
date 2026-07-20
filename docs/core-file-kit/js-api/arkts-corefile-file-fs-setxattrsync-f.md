@@ -16,6 +16,8 @@ Sets an extended attribute of a file or directory.
 
 **Since:** 12
 
+<!--Device-unnamed-declare function setxattrSync(path: string, key: string, value: string): void--><!--Device-unnamed-declare function setxattrSync(path: string, key: string, value: string): void-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
@@ -23,7 +25,7 @@ Sets an extended attribute of a file or directory.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Application sandbox path of the file or directory. |
-| key | string | Yes | Key of the extended attribute to obtain. The value is a string of less than 256 bytes and cancontain only the **user.** prefix. |
+| key | string | Yes | Key of the extended attribute to obtain. The value is a string of less than 256 bytes and can contain only the **user.** prefix. |
 | value | string | Yes | Value of the extended attribute to set. |
 
 **Error codes:**

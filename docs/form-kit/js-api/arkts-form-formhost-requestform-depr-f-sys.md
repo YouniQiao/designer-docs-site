@@ -1,0 +1,66 @@
+# requestForm (System API)
+
+## requestForm
+
+```TypeScript
+function requestForm(formId: string, callback: AsyncCallback<void>): void
+```
+
+Requests a widget update. This API uses an asynchronous callback to return the result.
+
+**Since:** 8
+
+**Deprecated since:** 9
+
+**Substitutes:** [requestForm](arkts-form-formhost-requestform-f-sys.md#requestform-1)
+
+**Required permissions:** ohos.permission.REQUIRE_FORM
+
+<!--Device-formHost-function requestForm(formId: string, callback: AsyncCallback<void>): void--><!--Device-formHost-function requestForm(formId: string, callback: AsyncCallback<void>): void-End-->
+
+**System capability:** SystemCapability.Ability.Form
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| formId | string | Yes | Widget ID. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the widget is updated,**error** is undefined; otherwise, **error** is an error object. |
+
+
+## requestForm
+
+```TypeScript
+function requestForm(formId: string): Promise<void>
+```
+
+Requests a widget update. This API uses a promise to return the result.
+
+**Since:** 8
+
+**Deprecated since:** 9
+
+**Substitutes:** [requestForm](arkts-form-formhost-requestform-f-sys.md#requestform-1)
+
+**Required permissions:** ohos.permission.REQUIRE_FORM
+
+<!--Device-formHost-function requestForm(formId: string): Promise<void>--><!--Device-formHost-function requestForm(formId: string): Promise<void>-End-->
+
+**System capability:** SystemCapability.Ability.Form
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| formId | string | Yes | Widget ID. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+

@@ -12,6 +12,8 @@ Callback invoked when the depth map resource is loaded.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 
+<!--Device-unnamed-declare type DepthMapCallback = (error: BusinessError<void>) => void--><!--Device-unnamed-declare type DepthMapCallback = (error: BusinessError<void>) => void-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **System API:** This is a system API.

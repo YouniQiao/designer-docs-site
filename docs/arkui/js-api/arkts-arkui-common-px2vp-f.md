@@ -6,9 +6,7 @@
 declare function px2vp(value: number): number
 ```
 
-Converts a number in units of px to a number in units of vp.
-By default, the virtual pixel ratio of the screen where the current UI instance is located is used for conversion.
-If no UI instance is available, the virtual pixel ratio of the default screen is used instead.
+Converts a number in units of px to a number in units of vp.By default, the virtual pixel ratio of the screen where the current UI instance is located is used for conversion.If no UI instance is available, the virtual pixel ratio of the default screen is used instead.
 
 **Since:** 11
 
@@ -19,6 +17,8 @@ If no UI instance is available, the virtual pixel ratio of the default screen is
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 11.
+
+<!--Device-unnamed-declare function px2vp(value: number): number--><!--Device-unnamed-declare function px2vp(value: number): number-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

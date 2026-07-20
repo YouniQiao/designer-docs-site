@@ -1,6 +1,9 @@
 # Ellipse
 
-Ellipse drawing.
+The **Ellipse** component is used to draw an ellipse.
+> **Child Components**
+>
+> None
 
 
 ## Ellipse
@@ -9,14 +12,15 @@ Ellipse drawing.
 Ellipse(options?: EllipseOptions)
 ```
 
-use new function to set the value.
-Anonymous Object Rectification.
+use new function to set the value.Anonymous Object Rectification.
 
 **Since:** 7
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
+
+<!--Device-EllipseInterface-new (options?: EllipseOptions): EllipseAttribute--><!--Device-EllipseInterface-new (options?: EllipseOptions): EllipseAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -39,6 +43,8 @@ Set the value.
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
+
+<!--Device-EllipseInterface-(options?: EllipseOptions): EllipseAttribute--><!--Device-EllipseInterface-(options?: EllipseOptions): EllipseAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

@@ -12,6 +12,8 @@ The change callback of the inline CounterV2.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 
+<!--Device-unnamed-export type OnInlineCounterV2Change = (value: int) => void--><!--Device-unnamed-export type OnInlineCounterV2Change = (value: int) => void-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**

@@ -1,9 +1,10 @@
 # @ohos.accessibility.config
 
-The **accessibility.config** module provides APIs for configuring system accessibility features, including
-accessibility extension, high-contrast text, mouse buttons, and captions.
+The **accessibility.config** module provides APIs for configuring system accessibility features, including accessibility extension, high-contrast text, mouse buttons, and captions.
 
 **Since:** 9
+
+<!--Device-unnamed-declare namespace config--><!--Device-unnamed-declare namespace config-End-->
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
@@ -22,22 +23,22 @@ import { config } from '@kit.AccessibilityKit';
 
 | Name | Description |
 | --- | --- |
-| [disableAbility](arkts-accessibility-disableability-f-sys.md#disableability-1) | Disables an accessibility extension ability. This API uses a promise to return the result. |
-| [disableAbility](arkts-accessibility-disableability-f-sys.md#disableability-2) | Disables an accessibility extension ability. This API uses an asynchronous callback to return the result. |
-| [enableAbility](arkts-accessibility-enableability-f-sys.md#enableability-1) | Enables an accessibility extension ability. This API uses a promise to return the result. |
-| [enableAbility](arkts-accessibility-enableability-f-sys.md#enableability-2) | Enables an accessibility extension ability. This API uses an asynchronous callback to return the result. |
-| [enableAbilityWithCallback](arkts-accessibility-enableabilitywithcallback-f-sys.md#enableabilitywithcallback-1) | Enables the auxiliary extension ability and specifies [ConnectCallback](ConnectCallback) to be invoked whenthe state of an auxiliary extension ability changes. This API uses a promise to return the result. |
-| [getSeniorModeStateForApp](arkts-accessibility-getseniormodestateforapp-f-sys.md#getseniormodestateforapp-1) | Get the senior mode state for app. |
-| [off](arkts-accessibility-off-f-sys.md#off-1) | Cancels a listener for changes in the list of enabled accessibility extension abilities. This API uses an asynchronous callback to return the result. |
-| [off](arkts-accessibility-off-f-sys.md#off-2) | Cancels a listener for changes in the list of installed accessibility extension abilities. This API uses an asynchronous callback to return the result. |
-| [offSeniorModeStateChangeForApp](arkts-accessibility-offseniormodestatechangeforapp-f-sys.md#offseniormodestatechangeforapp-1) | Unregister the observer for application's senior mode state changes. |
-| [on](arkts-accessibility-on-f-sys.md#on-1) | Adds a listener for changes in the list of enabled accessibility extension abilities. This API uses an asynchronouscallback to return the result. |
-| [on](arkts-accessibility-on-f-sys.md#on-2) | Adds a listener for changes in the list of installed accessibility extension abilities. This API uses an asynchronous callback to return the result. |
-| [onSeniorModeStateChangeForApp](arkts-accessibility-onseniormodestatechangeforapp-f-sys.md#onseniormodestatechangeforapp-1) | Register an observer for anyone application's senior mode state changes. |
-| [setMagnificationState](arkts-accessibility-setmagnificationstate-f-sys.md#setmagnificationstate-1) | Sets the magnification state. Ensure that magnification is enabled before calling this API. |
-| [setSeniorModeStateForApp](arkts-accessibility-setseniormodestateforapp-f-sys.md#setseniormodestateforapp-1) | Set the senior mode state for app. |
-| [startBlinking](arkts-accessibility-startblinking-f-sys.md#startblinking-1) | Enable the flash or screen to blink for flash alert. |
-| [stopBlinking](arkts-accessibility-stopblinking-f-sys.md#stopblinking-1) | Stop the flash or screen to blink for flash alert. |
+| [disableAbility](arkts-accessibility-config-disableability-f-sys.md#disableability-1) | Disables an accessibility extension ability. This API uses a promise to return the result. |
+| [disableAbility](arkts-accessibility-config-disableability-f-sys.md#disableability-2) | Disables an accessibility extension ability. This API uses an asynchronous callback to return the result. |
+| [enableAbility](arkts-accessibility-config-enableability-f-sys.md#enableability-1) | Enables an accessibility extension ability. This API uses a promise to return the result. |
+| [enableAbility](arkts-accessibility-config-enableability-f-sys.md#enableability-2) | Enables an accessibility extension ability. This API uses an asynchronous callback to return the result. |
+| [enableAbilityWithCallback](arkts-accessibility-config-enableabilitywithcallback-f-sys.md#enableabilitywithcallback-1) | Enables the auxiliary extension ability and specifies [ConnectCallback](ConnectCallback) to be invoked when the state of an auxiliary extension ability changes. This API uses a promise to return the result. |
+| [getSeniorModeStateForApp](arkts-accessibility-config-getseniormodestateforapp-f-sys.md#getseniormodestateforapp-1) | Get the senior mode state for app. |
+| [off](arkts-accessibility-config-off-f-sys.md#off-1) | Cancels a listener for changes in the list of enabled accessibility extension abilities. This API uses an asynchronous callback to return the result. |
+| [off](arkts-accessibility-config-off-f-sys.md#off-2) | Cancels a listener for changes in the list of installed accessibility extension abilities. This API uses an asynchronous callback to return the result. |
+| [offSeniorModeStateChangeForApp](arkts-accessibility-config-offseniormodestatechangeforapp-f-sys.md#offseniormodestatechangeforapp-1) | Unregister the observer for application's senior mode state changes. |
+| [on](arkts-accessibility-config-on-f-sys.md#on-1) | Adds a listener for changes in the list of enabled accessibility extension abilities. This API uses an asynchronous callback to return the result. |
+| [on](arkts-accessibility-config-on-f-sys.md#on-2) | Adds a listener for changes in the list of installed accessibility extension abilities. This API uses an asynchronous callback to return the result. |
+| [onSeniorModeStateChangeForApp](arkts-accessibility-config-onseniormodestatechangeforapp-f-sys.md#onseniormodestatechangeforapp-1) | Register an observer for anyone application's senior mode state changes. |
+| [setMagnificationState](arkts-accessibility-config-setmagnificationstate-f-sys.md#setmagnificationstate-1) | Sets the magnification state. Ensure that magnification is enabled before calling this API. |
+| [setSeniorModeStateForApp](arkts-accessibility-config-setseniormodestateforapp-f-sys.md#setseniormodestateforapp-1) | Set the senior mode state for app. |
+| [startBlinking](arkts-accessibility-config-startblinking-f-sys.md#startblinking-1) | Enable the flash or screen to blink for flash alert. |
+| [stopBlinking](arkts-accessibility-config-stopblinking-f-sys.md#stopblinking-1) | Stop the flash or screen to blink for flash alert. |
 <!--DelEnd-->
 
 <!--Del-->
@@ -45,9 +46,9 @@ import { config } from '@kit.AccessibilityKit';
 
 | Name | Description |
 | --- | --- |
-| [AppSeniorModeInfo](arkts-accessibility-appseniormodeinfo-i-sys.md) | Indicates the senior mode information of an application. |
-| [Config](arkts-accessibility-config-i-sys.md) | Implements configuration, acquisition, and listening for properties. |
-| [ConnectCallback](arkts-accessibility-connectcallback-i-sys.md) | Callback provided when the [enableAbilityWithCallback](arkts-accessibility-enableabilitywithcallback-f-sys.md#enableabilitywithcallback-1) API is called to enable an accessibility extension ability. This callback will be invoked when the connection to an auxiliary extension ability is disconnected. |
+| [AppSeniorModeInfo](arkts-accessibility-config-appseniormodeinfo-i-sys.md) | Indicates the senior mode information of an application. |
+| [Config](arkts-accessibility-config-config-i-sys.md) | Implements configuration, acquisition, and listening for properties. |
+| [ConnectCallback](arkts-accessibility-config-connectcallback-i-sys.md) | Callback provided when the [enableAbilityWithCallback](arkts-accessibility-config-enableabilitywithcallback-f-sys.md#enableabilitywithcallback-1) API is called to enable an accessibility extension ability. This callback will be invoked when the connection to an auxiliary extension ability is disconnected. |
 <!--DelEnd-->
 
 <!--Del-->
@@ -55,9 +56,9 @@ import { config } from '@kit.AccessibilityKit';
 
 | Name | Description |
 | --- | --- |
-| [BlinkResultCode](arkts-accessibility-blinkresultcode-e-sys.md) | Enumerates the result codes for blinking operations. |
-| [BlinkingMode](arkts-accessibility-blinkingmode-e-sys.md) | Blinking Mode Enumeration |
-| [BlinkingScenario](arkts-accessibility-blinkingscenario-e-sys.md) | Blinking Scenario Enumeration |
+| [BlinkResultCode](arkts-accessibility-config-blinkresultcode-e-sys.md) | Enumerates the result codes for blinking operations. |
+| [BlinkingMode](arkts-accessibility-config-blinkingmode-e-sys.md) | Blinking Mode Enumeration |
+| [BlinkingScenario](arkts-accessibility-config-blinkingscenario-e-sys.md) | Blinking Scenario Enumeration |
 <!--DelEnd-->
 
 <!--Del-->
@@ -65,10 +66,10 @@ import { config } from '@kit.AccessibilityKit';
 
 | Name | Description |
 | --- | --- |
-| [ClickResponseTime](arkts-accessibility-clickresponsetime-t-sys.md) | Defines the length of time for a click. |
-| [DaltonizationColorFilter](arkts-accessibility-daltonizationcolorfilter-t-sys.md) | Enumerates the daltonization filters.The configuration of **DaltonizationColorFilter** takes effect only when[daltonizationState](daltonizationState) is set to **true**; the normal type is used when[daltonizationState](daltonizationState) is set to **false**. |
-| [OnDisconnectCallback](arkts-accessibility-ondisconnectcallback-t-sys.md) | Describes the callback to be invoked when the connection to **AccessibilityExtensionAbility** is disconnected. |
-| [RepeatClickInterval](arkts-accessibility-repeatclickinterval-t-sys.md) | Defines the interval between repeated clicks.The configuration of **RepeatClickInterval** takes effect when [ignoreRepeatClick](ignoreRepeatClick) is setto **true**; the normal type is used when [ignoreRepeatClick](ignoreRepeatClick) is set to **false**. |
+| [ClickResponseTime](arkts-accessibility-config-clickresponsetime-t-sys.md) | Defines the length of time for a click. |
+| [DaltonizationColorFilter](arkts-accessibility-config-daltonizationcolorfilter-t-sys.md) | Enumerates the daltonization filters.The configuration of **DaltonizationColorFilter** takes effect only when [daltonizationState](daltonizationState) is set to **true**; the normal type is used when [daltonizationState](daltonizationState) is set to **false**. |
+| [OnDisconnectCallback](arkts-accessibility-config-ondisconnectcallback-t-sys.md) | Describes the callback to be invoked when the connection to **AccessibilityExtensionAbility** is disconnected. |
+| [RepeatClickInterval](arkts-accessibility-config-repeatclickinterval-t-sys.md) | Defines the interval between repeated clicks.The configuration of **RepeatClickInterval** takes effect when [ignoreRepeatClick](ignoreRepeatClick) is set to **true**; the normal type is used when [ignoreRepeatClick](ignoreRepeatClick) is set to **false**. |
 <!--DelEnd-->
 
 <!--Del-->

@@ -10,6 +10,8 @@ Declare navigator properties.
 
 **Substitutes:** Navigation
 
+<!--Device-unnamed-declare class NavigatorAttribute extends CommonMethod<NavigatorAttribute>--><!--Device-unnamed-declare class NavigatorAttribute extends CommonMethod<NavigatorAttribute>-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 ## active
@@ -18,8 +20,7 @@ Declare navigator properties.
 active(value: boolean)
 ```
 
-Sets whether the **Navigator** component is activated. If the component is activated, the corresponding navigation
-takes effect.
+Sets whether the **Navigator** component is activated. If the component is activated, the corresponding navigation takes effect.
 
 **Since:** 7
 
@@ -29,13 +30,15 @@ takes effect.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-NavigatorAttribute-active(value: boolean): NavigatorAttribute--><!--Device-NavigatorAttribute-active(value: boolean): NavigatorAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | boolean | Yes | Whether the **Navigator** component is activated. The value **true** means that thecomponent is activated, and **false** means the opposite. |
+| value | boolean | Yes | Whether the **Navigator** component is activated. The value **true** means that the component is activated, and **false** means the opposite. |
 
 ## params
 
@@ -49,9 +52,11 @@ Sets the data that needs to be passed to the target page during redirection.
 
 **Deprecated since:** 13
 
-**Substitutes:** [param](arkts-arkui-navpathinfo-c.md#param)
+**Substitutes:** [param](arkts-arkui-navigation-navpathinfo-c.md#param)
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-NavigatorAttribute-params(value: object): NavigatorAttribute--><!--Device-NavigatorAttribute-params(value: object): NavigatorAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -59,7 +64,7 @@ Sets the data that needs to be passed to the target page during redirection.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | object | Yes | Data that needs to be passed to the target page during redirection. You can use[router.getParams()](../arkts-apis/arkts-arkui-getparams-f.md#getparams-1) to obtain the data on the target page. |
+| value | object | Yes | Data that needs to be passed to the target page during redirection. You can use [router.getParams()](../arkts-apis/arkts-arkui-router-getparams-f.md#getparams-1) to obtain the data on the target page. |
 
 ## target
 
@@ -67,8 +72,7 @@ Sets the data that needs to be passed to the target page during redirection.
 target(value: string)
 ```
 
-Sets the path of the target page to be redirected to. The target page must be added to the **main_pages.json**
-file.
+Sets the path of the target page to be redirected to. The target page must be added to the **main_pages.json** file.
 
 **Since:** 7
 
@@ -77,6 +81,8 @@ file.
 **Substitutes:** Navigation
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-NavigatorAttribute-target(value: string): NavigatorAttribute--><!--Device-NavigatorAttribute-target(value: string): NavigatorAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -102,11 +108,13 @@ Sets the navigation type.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-NavigatorAttribute-type(value: NavigationType): NavigatorAttribute--><!--Device-NavigatorAttribute-type(value: NavigationType): NavigatorAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | NavigationType | Yes | Navigation type.<br>Default value: **NavigationType.Push** |
+| value | [NavigationType](arkts-arkui-navigator-navigationtype-e.md) | Yes | Navigation type.<br>Default value: **NavigationType.Push** |
 

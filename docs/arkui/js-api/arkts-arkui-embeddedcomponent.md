@@ -1,7 +1,6 @@
 # EmbeddedComponent
 
-Provide an interface for the EmbeddedComponent, which is used
-<br/>to render UI asynchronously
+Defines EmbeddedComponent Component.
 
 
 ## EmbeddedComponent
@@ -12,14 +11,19 @@ EmbeddedComponent(
   )
 ```
 
-Construct the EmbeddedComponent.<br/>
-Called when the EmbeddedComponent is used.
+Construct the EmbeddedComponent.<br/>Called when the EmbeddedComponent is used.
 
 **Since:** 12
 
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-EmbeddedComponentInterface-(
+    loader: import('../api/type: EmbeddedType
+  ): EmbeddedComponentAttribute--><!--Device-EmbeddedComponentInterface-(
+    loader: import('../api/type: EmbeddedType
+  ): EmbeddedComponentAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -39,14 +43,21 @@ EmbeddedComponent(
   )
 ```
 
-Construct the EmbeddedComponent.<br/>
-Called when the EmbeddedComponent is used.
+Construct the EmbeddedComponent.<br/>Called when the EmbeddedComponent is used.
 
 **Since:** 26.0.0
 
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+<!--Device-EmbeddedComponentInterface-(
+    loader: import('../api/type: EmbeddedType,
+    options?: EmbeddedOptions
+  ): EmbeddedComponentAttribute--><!--Device-EmbeddedComponentInterface-(
+    loader: import('../api/type: EmbeddedType,
+    options?: EmbeddedOptions
+  ): EmbeddedComponentAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

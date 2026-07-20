@@ -1,0 +1,464 @@
+# AVMetadata
+
+The metadata of the current media.Used to set the properties of the current media file
+
+**Since:** 10
+
+<!--Device-avSession-interface AVMetadata--><!--Device-avSession-interface AVMetadata-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## Modules to Import
+
+```TypeScript
+import { avSession } from '@kit.AVSessionKit';
+```
+
+## album
+
+```TypeScript
+album?: string
+```
+
+The album of this media
+
+**Type:** string
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-AVMetadata-album?: string--><!--Device-AVMetadata-album?: string-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## artist
+
+```TypeScript
+artist?: string
+```
+
+The artist of this media
+
+**Type:** string
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-AVMetadata-artist?: string--><!--Device-AVMetadata-artist?: string-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## assetId
+
+```TypeScript
+assetId: string
+```
+
+Unique ID used to represent this media.
+
+**Type:** string
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-AVMetadata-assetId: string--><!--Device-AVMetadata-assetId: string-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## author
+
+```TypeScript
+author?: string
+```
+
+The author of this media
+
+**Type:** string
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-AVMetadata-author?: string--><!--Device-AVMetadata-author?: string-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## avQueueId
+
+```TypeScript
+avQueueId?: string
+```
+
+The id of play list which current media belongs to, it should be an unique identifier in the application.
+
+**Type:** string
+
+**Since:** 11
+
+<!--Device-AVMetadata-avQueueId?: string--><!--Device-AVMetadata-avQueueId?: string-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## avQueueImage
+
+```TypeScript
+avQueueImage?: image.PixelMap | string
+```
+
+The artwork of play list as a {@link PixelMap} or an uri formatted String,
+
+**Type:** image.PixelMap | string
+
+**Since:** 11
+
+<!--Device-AVMetadata-avQueueImage?: image.PixelMap | string--><!--Device-AVMetadata-avQueueImage?: image.PixelMap | string-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## avQueueName
+
+```TypeScript
+avQueueName?: string
+```
+
+The name of play list which current media belongs to
+
+**Type:** string
+
+**Since:** 12
+
+<!--Device-AVMetadata-avQueueName?: string--><!--Device-AVMetadata-avQueueName?: string-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## bundleIcon
+
+```TypeScript
+readonly bundleIcon?: image.PixelMap
+```
+
+The image of the bundle icon as a {@link PixelMap}, no need to be set by application.
+
+**Type:** image.PixelMap
+
+**Since:** 18
+
+<!--Device-AVMetadata-readonly bundleIcon?: image.PixelMap--><!--Device-AVMetadata-readonly bundleIcon?: image.PixelMap-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## composer
+
+```TypeScript
+composer?: string
+```
+
+The composer of this media
+
+**Type:** string
+
+**Since:** 10
+
+<!--Device-AVMetadata-composer?: string--><!--Device-AVMetadata-composer?: string-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## description
+
+```TypeScript
+description?: string
+```
+
+The description of the media, used for display
+
+**Type:** string
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-AVMetadata-description?: string--><!--Device-AVMetadata-description?: string-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## displayTags
+
+```TypeScript
+displayTags?: number
+```
+
+The display tags supported by application to be displayed on media center
+
+**Type:** number
+
+**Since:** 11
+
+<!--Device-AVMetadata-displayTags?: int--><!--Device-AVMetadata-displayTags?: int-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## drmSchemes
+
+```TypeScript
+drmSchemes?: Array<string>
+```
+
+The drm schemes supported by this session which are represented by uuid.
+
+**Type:** Array<string>
+
+**Since:** 12
+
+<!--Device-AVMetadata-drmSchemes?: Array<string>--><!--Device-AVMetadata-drmSchemes?: Array<string>-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## duration
+
+```TypeScript
+duration?: number
+```
+
+The duration of this media, used to automatically calculate playback position, described by milliseconds.
+
+**Type:** number
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-AVMetadata-duration?: long--><!--Device-AVMetadata-duration?: long-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## fastForwardSkipIntervals
+
+```TypeScript
+fastForwardSkipIntervals?: SkipIntervals
+```
+
+The supported skipIntervals when doing fast forward operation, the default is {@link SECONDS_15}.The system will use this value for fastforward skip intervals instead of {@link skipIntervals}.If not set, the fast forward skip intervals still use {@link skipIntervals}.See {@link SkipIntervals}
+
+**Type:** SkipIntervals
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMetadata-fastForwardSkipIntervals?: SkipIntervals--><!--Device-AVMetadata-fastForwardSkipIntervals?: SkipIntervals-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## filter
+
+```TypeScript
+filter?: number
+```
+
+The protocols supported by this session, if not set, the default is {@link TYPE_CAST_PLUS_STREAM}.See {@link ProtocolType}
+
+**Type:** number
+
+**Since:** 11
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-AVMetadata-filter?: int--><!--Device-AVMetadata-filter?: int-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## lyric
+
+```TypeScript
+lyric?: string
+```
+
+The lyric of the media, it should be in standard lyric format
+
+**Type:** string
+
+**Since:** 10
+
+<!--Device-AVMetadata-lyric?: string--><!--Device-AVMetadata-lyric?: string-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## mediaImage
+
+```TypeScript
+mediaImage?: image.PixelMap | string
+```
+
+The image of the media as a {@link PixelMap} or an uri formatted String,used to display in media center.
+
+**Type:** image.PixelMap | string
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-AVMetadata-mediaImage?: image.PixelMap | string--><!--Device-AVMetadata-mediaImage?: image.PixelMap | string-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## nextAssetId
+
+```TypeScript
+nextAssetId?: string
+```
+
+The next playable media id.Used to tell the controller if there is a next playable media
+
+**Type:** string
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-AVMetadata-nextAssetId?: string--><!--Device-AVMetadata-nextAssetId?: string-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## previousAssetId
+
+```TypeScript
+previousAssetId?: string
+```
+
+The previous playable media id.Used to tell the controller if there is a previous playable media
+
+**Type:** string
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-AVMetadata-previousAssetId?: string--><!--Device-AVMetadata-previousAssetId?: string-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## publishDate
+
+```TypeScript
+publishDate?: Date
+```
+
+The publishDate of the media
+
+**Type:** Date
+
+**Since:** 10
+
+<!--Device-AVMetadata-publishDate?: Date--><!--Device-AVMetadata-publishDate?: Date-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## rewindSkipIntervals
+
+```TypeScript
+rewindSkipIntervals?: SkipIntervals
+```
+
+The supported skipIntervals when doing rewind operation, the default is {@link SECONDS_15}.The system will use this value for rewind skip intervals instead of {@link skipIntervals}.If not set, the rewind skip intervals still use {@link skipIntervals}.See {@link SkipIntervals}
+
+**Type:** SkipIntervals
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMetadata-rewindSkipIntervals?: SkipIntervals--><!--Device-AVMetadata-rewindSkipIntervals?: SkipIntervals-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## singleLyricText
+
+```TypeScript
+singleLyricText?: string
+```
+
+The single lyric text of the media, not including time prefix
+
+**Type:** string
+
+**Since:** 17
+
+**Atomic service API:** This API can be used in atomic services since API version 17.
+
+<!--Device-AVMetadata-singleLyricText?: string--><!--Device-AVMetadata-singleLyricText?: string-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## skipIntervals
+
+```TypeScript
+skipIntervals?: SkipIntervals
+```
+
+The supported skipIntervals when doing fast forward and rewind operation, the default is {@link SECONDS_15}.See {@link SkipIntervals}
+
+**Type:** SkipIntervals
+
+**Since:** 11
+
+<!--Device-AVMetadata-skipIntervals?: SkipIntervals--><!--Device-AVMetadata-skipIntervals?: SkipIntervals-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## subtitle
+
+```TypeScript
+subtitle?: string
+```
+
+The subtitle of the media, used for display
+
+**Type:** string
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-AVMetadata-subtitle?: string--><!--Device-AVMetadata-subtitle?: string-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## title
+
+```TypeScript
+title?: string
+```
+
+The title of this media, for display in media center.
+
+**Type:** string
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-AVMetadata-title?: string--><!--Device-AVMetadata-title?: string-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## writer
+
+```TypeScript
+writer?: string
+```
+
+The writer of this media
+
+**Type:** string
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-AVMetadata-writer?: string--><!--Device-AVMetadata-writer?: string-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+

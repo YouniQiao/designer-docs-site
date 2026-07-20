@@ -11,6 +11,10 @@
 > configuration is set, the default is 3 rows. To check the specific system configuration value for landscape mode,
 > use **$r('sys.float.ohos_id_picker_show_count_landscape')**.
 
+Child Components
+
+Not supported
+
 
 ## DatePicker
 
@@ -23,6 +27,8 @@ Creates a date picker in the given date range.
 **Since:** 8
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-DatePickerInterface-(options?: DatePickerOptions): DatePickerAttribute--><!--Device-DatePickerInterface-(options?: DatePickerOptions): DatePickerAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

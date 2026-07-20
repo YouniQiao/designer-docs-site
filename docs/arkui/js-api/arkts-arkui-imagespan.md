@@ -3,6 +3,11 @@
 As a child of the [Text]{@link text} and [ContainerSpan]{@link container_span} components, the **ImageSpan**
 component is used to display inline images.
 
+> **NOTE**
+
+## Child Components
+
+Not supported
 
 ## ImageSpan
 
@@ -17,6 +22,8 @@ Defines the constructor of ImageSpan.
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-ImageSpanInterface-(value: ResourceStr | PixelMap): ImageSpanAttribute--><!--Device-ImageSpanInterface-(value: ResourceStr | PixelMap): ImageSpanAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

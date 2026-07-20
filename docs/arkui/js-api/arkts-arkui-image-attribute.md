@@ -1,41 +1,40 @@
 # Image properties/events
 
-The **Image** component is usually used to display images in applications. It supports data sources of the following
-types: [PixelMap](../../apis-image-kit/arkts-apis/arkts-image-pixelmap-i.md), [ResourceStr](arkts-arkui-resourcestr-t.md), and
-[DrawableDescriptor](arkts-arkui-drawabledescriptor-t.md). Supported image formats include PNG, JPG, JPEG, BMP, SVG, WEBP, GIF,
-HEIF, and TIFF. Note that the APNG and SVGA formats are not supported.
+The **Image** component is usually used to display images in applications. It supports data sources of the following types: [PixelMap](../../apis-image-kit/arkts-apis/arkts-image-image-pixelmap-i.md), [ResourceStr](../arkts-apis/arkts-arkui-resourcestr-t.md), and [DrawableDescriptor](arkts-arkui-drawabledescriptor-t.md). Supported image formats include PNG, JPG, JPEG, BMP, SVG, WEBP, GIF,HEIF, and TIFF. Note that the APNG and SVGA formats are not supported.
 
 > **NOTE**
 
-> - This component supports the TIFF image format since API version 23.
->
-> - When keyboard shortcuts are used to copy an **Image** component, the **Image** component must be in a focused
-> state. For instructions on how to set focus, see
-> [Setting Whether a Component Is Focusable](../../../../ui/arkts-common-events-focus-event.md#setting-whether-a-component-is-focusable).
-> By default, the **Image** component is not focusable. To enable it to gain focus, set both the
-> [focusable](arkts-arkui-commonmethod-c.md#focusable-1) and [focusOnTouch](arkts-arkui-commonmethod-c.md#focusontouch-1) attributes to
-> **true**.
->
-> - The **Image** component supports SVG image sources. For details about SVG tags, see [SVG Tags](./common).
->
-> - For animated images, animation playback is disabled by default and depends on the visibility of the **Image**
-> component. When the component is visible, the animation is started through the callback. When the component is
-> invisible, the animation is stopped. The visibility status of the **Image** component can be identified through the
->
-> [onVisibleAreaChange]
-> {@link CommonMethod#onVisibleAreaChange(ratios: Array<number>, event: VisibleAreaChangeCallback)}
-> event. If the value of **ratios** is greater than 0, the component is visible.
->
-> - For details about how to resolve white block issues during image loading, see
-> [Solution to White Image Blocks]
-> (https://developer.huawei.com/consumer/en/doc/best-practices/bpta-image-white-lump-solution).
-> For details about how to address slow image loading, see
-> [Optimizing Preset Image Loading](https://developer.huawei.com/consumer/en/doc/best-practices/bpta-texture-> compression-improve-performance#section91526132216).
+> - This component supports the TIFF image format since API version 23.  
+>  
+> - When keyboard shortcuts are used to copy an **Image** component, the **Image** component must be in a focused  
+> state. For instructions on how to set focus, see  
+> [Setting Whether a Component Is Focusable](../../../../ui/arkts-common-events-focus-event.md#setting-whether-a-component-is-focusable).  
+> By default, the **Image** component is not focusable. To enable it to gain focus, set both the  
+> [focusable](arkts-arkui-common-commonmethod-c.md#focusable-1) and [focusOnTouch](arkts-arkui-common-commonmethod-c.md#focusontouch-1) attributes to  
+> **true**.  
+>  
+> - The **Image** component supports SVG image sources. For details about SVG tags, see [SVG Tags](./common).  
+>  
+> - For animated images, animation playback is disabled by default and depends on the visibility of the **Image**  
+> component. When the component is visible, the animation is started through the callback. When the component is  
+> invisible, the animation is stopped. The visibility status of the **Image** component can be identified through the  
+>  
+> [onVisibleAreaChange]  
+> {@link CommonMethod#onVisibleAreaChange(ratios: Array<number>, event: VisibleAreaChangeCallback)}  
+> event. If the value of **ratios** is greater than 0, the component is visible.  
+>  
+> - For details about how to resolve white block issues during image loading, see  
+> [Solution to White Image Blocks]  
+> (https://developer.huawei.com/consumer/en/doc/best-practices/bpta-image-white-lump-solution).  
+> For details about how to address slow image loading, see  
+> [Optimizing Preset Image Loading](https://developer.huawei.com/consumer/en/doc/best-practices/bpta-texture-> compression-improve-performance#section91526132216).  
 >
 
 **Inheritance/Implementation:** ImageAttribute extends [CommonMethod<ImageAttribute>](CommonMethod<ImageAttribute>)
 
 **Since:** 7
+
+<!--Device-unnamed-declare class ImageAttribute extends CommonMethod<ImageAttribute>--><!--Device-unnamed-declare class ImageAttribute extends CommonMethod<ImageAttribute>-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -47,11 +46,9 @@ alt(value: string | Resource | PixelMap)
 
 Sets the placeholder image displayed during image loading.
 
-The placeholder image supports configuration of [objectFit](ImageAttribute#objectFit) for setting the fill
-effect, which is consistent with the fill effect of the image.
+The placeholder image supports configuration of [objectFit](ImageAttribute#objectFit) for setting the fill effect, which is consistent with the fill effect of the image.
 
-This attribute does not take effect when the parameter type of the component is
-[AnimatedDrawableDescriptor](../arkts-apis/arkts-arkui-animateddrawabledescriptor-c.md).
+This attribute does not take effect when the parameter type of the component is [AnimatedDrawableDescriptor](../arkts-apis/arkts-arkui-arkui-drawabledescriptor-animateddrawabledescriptor-c.md).
 
 **Since:** 7
 
@@ -59,13 +56,15 @@ This attribute does not take effect when the parameter type of the component is
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-ImageAttribute-alt(value: string | Resource | PixelMap): ImageAttribute--><!--Device-ImageAttribute-alt(value: string | Resource | PixelMap): ImageAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | string \| Resource \| PixelMap | Yes | Placeholder image displayed during loading. Local images (in PNG,JPG, BMP, SVG, GIF, or HEIF format) and [PixelMap](../../apis-image-kit/arkts-apis/arkts-image-pixelmap-i.md) objects aresupported, but online images are not.<br>- Base64 strings are supported.<br>- Strings prefixed with the**file://** path are supported (application sandbox URI: **file://&lt;bundleName&gt;/&lt;sandboxPath&gt;**). For detailsabout how to construct the application sandbox path URI, see[constructor](../../apis-core-file-kit/arkts-apis/arkts-corefile-fileuri-c.md#constructor-1). The sandbox path must be converted to anapplication sandbox URI using the[fileUri.getUriFromPath(path)](../../apis-core-file-kit/arkts-apis/arkts-corefile-geturifrompath-f.md#geturifrompath-1) API before being passed in fordisplay. In addition, ensure that the application has the read permission to the files in the specified path.&lt;br&gt;Default value: **null**<br>When the value is switched from a valid one (an image resource that can be parsedand loaded correctly) to an invalid one (an image path that cannot be parsed or loaded), the component retainsthe previously successfully loaded image content without clearing or resetting it.<br>**Since:** 12 |
+| value | string \| Resource \| PixelMap | Yes | Placeholder image displayed during loading. Local images (in PNG,JPG, BMP, SVG, GIF, or HEIF format) and [PixelMap](../../apis-image-kit/arkts-apis/arkts-image-image-pixelmap-i.md) objects are supported, but online images are not.<br>- Base64 strings are supported.<br>- Strings prefixed with the **file://** path are supported (application sandbox URI: **file://&lt;bundleName&gt;/&lt;sandboxPath&gt;**). For details about how to construct the application sandbox path URI, see [constructor](../../apis-core-file-kit/arkts-apis/arkts-corefile-fileuri-fileuri-c.md#constructor-1). The sandbox path must be converted to an application sandbox URI using the [fileUri.getUriFromPath(path)](../../apis-core-file-kit/arkts-apis/arkts-corefile-fileuri-geturifrompath-f.md#geturifrompath-1) API before being passed in for display. In addition, ensure that the application has the read permission to the files in the specified path.<br>Default value: **null**<br>When the value is switched from a valid one (an image resource that can be parsed and loaded correctly) to an invalid one (an image path that cannot be parsed or loaded), the component retains the previously successfully loaded image content without clearing or resetting it.<br>**Since:** 12 |
 
 ## alt
 
@@ -75,17 +74,15 @@ alt(src: ResourceStr | PixelMap | ImageAlt)
 
 Sets the placeholder image displayed during image loading and when image loading fails.
 
-> **NOTE**
->
-> When a placeholder image is configured via [ImageAlt](arkts-arkui-imagealt-i.md), **Image** takes effect based on the
-> placeholder image sources configured for the loading and load-failure states. If no placeholder image is
+> **NOTE**  
+>  
+> When a placeholder image is configured via [ImageAlt](arkts-arkui-image-imagealt-i.md), **Image** takes effect based on the  
+> placeholder image sources configured for the loading and load-failure states. If no placeholder image is  
 > configured, it is not displayed by default.
 
-The placeholder image supports configuration of [objectFit](ImageAttribute#objectFit) for setting the fill
-effect, which is consistent with the fill effect of the image.
+The placeholder image supports configuration of [objectFit](ImageAttribute#objectFit) for setting the fill effect, which is consistent with the fill effect of the image.
 
-This attribute does not take effect when the parameter type of the component is
-[AnimatedDrawableDescriptor](../arkts-apis/arkts-arkui-animateddrawabledescriptor-c.md).
+This attribute does not take effect when the parameter type of the component is [AnimatedDrawableDescriptor](../arkts-apis/arkts-arkui-arkui-drawabledescriptor-animateddrawabledescriptor-c.md).
 
 **Since:** 22
 
@@ -95,13 +92,15 @@ This attribute does not take effect when the parameter type of the component is
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 22.
 
+<!--Device-ImageAttribute-alt(src: ResourceStr | PixelMap | ImageAlt): ImageAttribute--><!--Device-ImageAttribute-alt(src: ResourceStr | PixelMap | ImageAlt): ImageAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| src | ResourceStr \| PixelMap \| ImageAlt | Yes | Placeholder image displayed during loading or in case of loadingfailure. Local images (in PNG, JPG, BMP, SVG, GIF, or HEIF format) and[PixelMap](../../apis-image-kit/arkts-apis/arkts-image-pixelmap-i.md) objects are supported, but online images are not.<br>-Base64 strings are supported.<br>- Strings prefixed with the **file://** path are supported (applicationsandbox URI: **file://&lt;bundleName&gt;/&lt;sandboxPath&gt;**). For details about how to construct the application sandboxpath URI, see [constructor](../../apis-core-file-kit/arkts-apis/arkts-corefile-fileuri-c.md#constructor-1). The sandbox path must beconverted to an application sandbox URI using the[fileUri.getUriFromPath(path)](../../apis-core-file-kit/arkts-apis/arkts-corefile-geturifrompath-f.md#geturifrompath-1) API before being passed in fordisplay. In addition, ensure that the application has the read permission to the files in the specified path. |
+| src | ResourceStr \| PixelMap \| ImageAlt | Yes | Placeholder image displayed during loading or in case of loading failure. Local images (in PNG, JPG, BMP, SVG, GIF, or HEIF format) and [PixelMap](../../apis-image-kit/arkts-apis/arkts-image-image-pixelmap-i.md) objects are supported, but online images are not.<br>-Base64 strings are supported.<br>- Strings prefixed with the **file://** path are supported (application sandbox URI: **file://&lt;bundleName&gt;/&lt;sandboxPath&gt;**). For details about how to construct the application sandbox path URI, see [constructor](../../apis-core-file-kit/arkts-apis/arkts-corefile-fileuri-fileuri-c.md#constructor-1). The sandbox path must be converted to an application sandbox URI using the [fileUri.getUriFromPath(path)](../../apis-core-file-kit/arkts-apis/arkts-corefile-fileuri-geturifrompath-f.md#geturifrompath-1) API before being passed in for display. In addition, ensure that the application has the read permission to the files in the specified path. |
 
 ## antialiased
 
@@ -109,15 +108,14 @@ This attribute does not take effect when the parameter type of the component is
 antialiased(isAntialiased: Optional<boolean>)
 ```
 
-Sets whether to enable anti-aliasing for the edges of a pixel map image. If the attribute is not set, anti-aliasing
-is disabled by default. This attribute is not applicable to SVG images.
+Sets whether to enable anti-aliasing for the edges of a pixel map image. If the attribute is not set, anti-aliasing is disabled by default. This attribute is not applicable to SVG images.
 
-> **NOTE**
->
-> If the [backgroundColor](arkts-arkui-commonmethod-c.md#backgroundcolor-1) attribute is set for an image,
-> setting the **antialiased** attribute of the image to **true** does not affect the aliasing effect of the
-> background color.
->
+> **NOTE**  
+>  
+> If the [backgroundColor](arkts-arkui-common-commonmethod-c.md#backgroundcolor-1) attribute is set for an image,  
+> setting the **antialiased** attribute of the image to **true** does not affect the aliasing effect of the  
+> background color.  
+>  
 > This attribute does not take effect when used together with [resizable](ImageAttribute#resizable).
 
 **Since:** 23
@@ -126,13 +124,15 @@ is disabled by default. This attribute is not applicable to SVG images.
 
 **Atomic service API:** This API can be used in atomic services since API version 23.
 
+<!--Device-ImageAttribute-antialiased(isAntialiased: Optional<boolean>): ImageAttribute--><!--Device-ImageAttribute-antialiased(isAntialiased: Optional<boolean>): ImageAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| isAntialiased | Optional&lt;boolean&gt; | Yes | Sets whether to enable anti-aliasing for the edges of a pixel mapimage.<br> **true**: Enable edge anti-aliasing.<br>**false**: Disable edge anti-aliasing.<br>When thisparameter is set to **undefined**, edge anti-aliasing is disabled. |
+| isAntialiased | [Optional](arkts-arkui-optional-t.md)<boolean> | Yes | Sets whether to enable anti-aliasing for the edges of a pixel map image.<br> **true**: Enable edge anti-aliasing.<br>**false**: Disable edge anti-aliasing.<br>When this parameter is set to **undefined**, edge anti-aliasing is disabled. |
 
 ## autoResize
 
@@ -140,21 +140,15 @@ is disabled by default. This attribute is not applicable to SVG images.
 autoResize(value: boolean)
 ```
 
-Specifies whether to resize the image source based on the size of the display area during image decoding. As
-downsampling images results in some loss of information, it may reduce the image quality, causing issues such as
-aliasing. To retain the original image quality, set **autoResize** to **false**, but this may increase the memory
-usage.
+Specifies whether to resize the image source based on the size of the display area during image decoding. As downsampling images results in some loss of information, it may reduce the image quality, causing issues such as aliasing. To retain the original image quality, set **autoResize** to **false**, but this may increase the memory usage.
 
-If the original image size does not match the display size, the image may be distorted or blurred. Recommended
-configuration for the optimal definition:
+If the original image size does not match the display size, the image may be distorted or blurred. Recommended configuration for the optimal definition:
 
 When the image is scaled down: .autoResize(false) + .interpolation(.Medium)
 
 When the image is scaled up: .interpolation(.High)
 
-This attribute does not take effect when the parameter type of the component is
-[AnimatedDrawableDescriptor](../arkts-apis/arkts-arkui-animateddrawabledescriptor-c.md) or the image format
-is SVG.
+This attribute does not take effect when the parameter type of the component is [AnimatedDrawableDescriptor](../arkts-apis/arkts-arkui-arkui-drawabledescriptor-animateddrawabledescriptor-c.md) or the image format is SVG.
 
 **Since:** 7
 
@@ -162,13 +156,15 @@ is SVG.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-ImageAttribute-autoResize(value: boolean): ImageAttribute--><!--Device-ImageAttribute-autoResize(value: boolean): ImageAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | boolean | Yes | Whether to resize the image source based on the size of the display area during imagedecoding. This resizing can help reduce the memory usage. For example, if the original image size is 800 x 1200and the display area size is 200 x 200, the image will be decoded to 200 x 300 at a downsampled resolution (theactual result may vary depending on the scaling and fill type configurations used in the calculation), greatlyreducing the memory occupied by the image.<br>Default value: **false**<br>**true**: Enable resizing.<br>**false**: Disable resizing. |
+| value | boolean | Yes | Whether to resize the image source based on the size of the display area during image decoding. This resizing can help reduce the memory usage. For example, if the original image size is 800 x 1200and the display area size is 200 x 200, the image will be decoded to 200 x 300 at a downsampled resolution (the actual result may vary depending on the scaling and fill type configurations used in the calculation), greatly reducing the memory occupied by the image.<br>Default value: **false**<br>**true**: Enable resizing.<br>**false**: Disable resizing. |
 
 ## colorFilter
 
@@ -186,13 +182,15 @@ When this attribute is set, [renderMode](ImageAttribute#renderMode) is not effec
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-ImageAttribute-colorFilter(value: ColorFilter | DrawingColorFilter): ImageAttribute--><!--Device-ImageAttribute-colorFilter(value: ColorFilter | DrawingColorFilter): ImageAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ColorFilter \| DrawingColorFilter | Yes | 1. Color filter of the image. The input parameter is a 4 x 5RGBA transformation matrix.<br>2. The ColorFilter type of **@ohos.graphics.drawing** can be used as an inputparameter since API version 12.<br>**NOTE**<br>This parameter is not available for SVG images in API version 11and earlier versions.<br>The DrawingColorfilter type can be used in atomic services since API version 12. ForSVG sources, the effect only applies when the **stroke** property is set (regardless of the value).<br>SinceAPI version 21, when [supportSvg2](ImageAttribute#supportSvg2) is set to **true**, **colorFilter** takeseffect on the entire SVG image source.<br>**Since:** 12 |
+| value | ColorFilter \| DrawingColorFilter | Yes | 1. Color filter of the image. The input parameter is a 4 x 5RGBA transformation matrix.<br>2. The ColorFilter type of **@ohos.graphics.drawing** can be used as an input parameter since API version 12.<br>**NOTE**<br>This parameter is not available for SVG images in API version 11and earlier versions.<br>The DrawingColorfilter type can be used in atomic services since API version 12. For SVG sources, the effect only applies when the **stroke** property is set (regardless of the value).<br>Since API version 21, when [supportSvg2](ImageAttribute#supportSvg2) is set to **true**, **colorFilter** takes effect on the entire SVG image source.<br>**Since:** 12 |
 
 ## colorFilter
 
@@ -202,10 +200,7 @@ colorFilter(value: ColorFilter | DrawingColorFilter | ResourceColor)
 
 Sets the color filter for the image.
 
-<p><strong>NOTE</strong>:
-<br>When this attribute is set, renderMode is not effective.
-<br>When value is ResourceColor type, it will be converted to ColorFilter with blend mode.
-</p>
+<p><strong>NOTE</strong>:<br>When this attribute is set, renderMode is not effective.<br>When value is ResourceColor type, it will be converted to ColorFilter with blend mode.</p>
 
 **Since:** 26.0.0
 
@@ -214,6 +209,8 @@ Sets the color filter for the image.
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 26.0.0.
+
+<!--Device-ImageAttribute-colorFilter(value: ColorFilter | DrawingColorFilter | ResourceColor): ImageAttribute--><!--Device-ImageAttribute-colorFilter(value: ColorFilter | DrawingColorFilter | ResourceColor): ImageAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -237,13 +234,15 @@ Triggers transition animations when the image content changes.
 
 **Atomic service API:** This API can be used in atomic services since API version 21.
 
+<!--Device-ImageAttribute-contentTransition(transition: ContentTransitionEffect): ImageAttribute--><!--Device-ImageAttribute-contentTransition(transition: ContentTransitionEffect): ImageAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| transition | ContentTransitionEffect | Yes | Type of transition animation.<br>The value**ContentTransitionEffect.OPACITY** indicates the fade-in/fade-out effect, and the value**ContentTransitionEffect.IDENTITY** indicates no animation effect.<br>Default value:**ContentTransitionEffect.IDENTITY**<br>When this parameter is set to **undefined** or **null**, the valuedefaults to **ContentTransitionEffect.IDENTITY**.<br>Note: This parameter does not take effect for dynamicimage resources. |
+| transition | [ContentTransitionEffect](arkts-arkui-common-contenttransitioneffect-c.md) | Yes | Type of transition animation.<br>The value **ContentTransitionEffect.OPACITY** indicates the fade-in/fade-out effect, and the value **ContentTransitionEffect.IDENTITY** indicates no animation effect.<br>Default value:**ContentTransitionEffect.IDENTITY**<br>When this parameter is set to **undefined** or **null**, the value defaults to **ContentTransitionEffect.IDENTITY**.<br>Note: This parameter does not take effect for dynamic image resources. |
 
 ## copyOption
 
@@ -251,12 +250,9 @@ Triggers transition animations when the image content changes.
 copyOption(value: CopyOptions)
 ```
 
-Specifies whether the image can be copied. When **copyOption** is set to a value other than **CopyOptions.None**,
-the image can be copied through multiple interactions, such as long press, right-click, or Ctrl+C. SVG images
-cannot be copied.
+Specifies whether the image can be copied. When **copyOption** is set to a value other than **CopyOptions.None**,the image can be copied through multiple interactions, such as long press, right-click, or Ctrl+C. SVG images cannot be copied.
 
-This attribute does not take effect when the parameter type of the component is
-[AnimatedDrawableDescriptor](../arkts-apis/arkts-arkui-animateddrawabledescriptor-c.md).
+This attribute does not take effect when the parameter type of the component is [AnimatedDrawableDescriptor](../arkts-apis/arkts-arkui-arkui-drawabledescriptor-animateddrawabledescriptor-c.md).
 
 **Since:** 9
 
@@ -264,13 +260,15 @@ This attribute does not take effect when the parameter type of the component is
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-ImageAttribute-copyOption(value: CopyOptions): ImageAttribute--><!--Device-ImageAttribute-copyOption(value: CopyOptions): ImageAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | CopyOptions | Yes | Specifies whether the image can be copied.<br>Default value: **CopyOptions.None** |
+| value | [CopyOptions](../arkts-apis/arkts-arkui-enums-copyoptions-e.md) | Yes | Specifies whether the image can be copied.<br>Default value: **CopyOptions.None** |
 
 ## draggable
 
@@ -284,13 +282,15 @@ Specifies whether the image is draggable.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-ImageAttribute-draggable(value: boolean): ImageAttribute--><!--Device-ImageAttribute-draggable(value: boolean): ImageAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | boolean | Yes | Whether the image is draggable. The value **true** means that the image is draggable, inwhich case the bound long press gesture will not take effect.<br>Default value:<br>API version 9 and earlier:**false**<br> Since API version 10: **true**<br> To bind custom gestures to the component, set **draggable** to**false**. With the value **false**, drag-related events are not triggered. |
+| value | boolean | Yes | Whether the image is draggable. The value **true** means that the image is draggable, in which case the bound long press gesture will not take effect.<br>Default value:<br>API version 9 and earlier:**false**<br> Since API version 10: **true**<br> To bind custom gestures to the component, set **draggable** to **false**. With the value **false**, drag-related events are not triggered. |
 
 ## dynamicRangeMode
 
@@ -300,8 +300,7 @@ dynamicRangeMode(value: DynamicRangeMode)
 
 Sets the dynamic range of the image to be displayed. This attribute is not applicable to SVG images.
 
-**Device behavior difference**: This API takes effect on mobile phones, PCs, 2-in-1 devices, and tablets, but not
-on other device types.
+**Device behavior difference**: This API takes effect on mobile phones, PCs, 2-in-1 devices, and tablets, but not on other device types.
 
 **Since:** 12
 
@@ -309,13 +308,15 @@ on other device types.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-ImageAttribute-dynamicRangeMode(value: DynamicRangeMode): ImageAttribute--><!--Device-ImageAttribute-dynamicRangeMode(value: DynamicRangeMode): ImageAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | DynamicRangeMode | Yes | Dynamic range of the image.<br>Default value: **DynamicRangeMode.STANDARD** |
+| value | [DynamicRangeMode](arkts-arkui-image-dynamicrangemode-e.md) | Yes | Dynamic range of the image.<br>Default value: **DynamicRangeMode.STANDARD** |
 
 ## enableAnalyzer
 
@@ -323,42 +324,23 @@ on other device types.
 enableAnalyzer(enable: boolean)
 ```
 
-Sets whether to enable the AI image analyzer, which supports subject recognition, text recognition,
-and object lookup.
+Sets whether to enable the AI image analyzer, which supports subject recognition, text recognition,and object lookup.
 
-This attribute cannot be used together with the
-[overlay](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-overlay.md#overlay) attribute. If they
-are set at the same time, the [CustomBuilder](../../../../reference/apis-arkui/arkui-ts/ts-types.md#custombuilder8)
-attribute in **overlay** has no effect. This feature also depends on device capabilities.
+This attribute cannot be used together with the [overlay](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-overlay.md#overlay) attribute. If they are set at the same time, the [CustomBuilder](../../../../reference/apis-arkui/arkui-ts/ts-types.md#custombuilder8)attribute in **overlay** has no effect. This feature also depends on device capabilities.
 
-Images to be analyzed must be static, non-vector images. That is, SVG and GIF images cannot be analyzed.
-[Pixel maps](../../apis-image-kit/arkts-apis/arkts-image-pixelmap-i.md) in
-[RGBA_8888](../../apis-image-kit/arkts-apis/arkts-image-pixelmapformat-e.md) format can be passed in for analysis. For details,
-see
-[Example 5: Enabling the AI Image Analyzer]
-(../../../../reference/apis-arkui/arkui-ts/ts-basic-components-image.md#example-5-enabling-the-ai-image-analyzer).
+Images to be analyzed must be static, non-vector images. That is, SVG and GIF images cannot be analyzed.[Pixel maps](../../apis-image-kit/arkts-apis/arkts-image-image-pixelmap-i.md) in [RGBA_8888](../../apis-image-kit/arkts-apis/arkts-image-image-pixelmapformat-e.md) format can be passed in for analysis. For details,see [Example 5: Enabling the AI Image Analyzer](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-image.md#example-5-enabling-the-ai-image-analyzer).
 
-The [alt](ImageAttribute#alt(value: string | Resource | PixelMap)) placeholder image does not support
-analysis. The [objectRepeat](ImageAttribute#objectRepeat) attribute supports analysis only when it is set to
-**ImageRepeat.NoRepeat**. Analysis is not supported when the [obscured](arkts-arkui-commonmethod-c.md#obscured-1) attribute is
-enabled.
+The [alt](ImageAttribute#alt(value: string | Resource | PixelMap)) placeholder image does not support analysis. The [objectRepeat](ImageAttribute#objectRepeat) attribute supports analysis only when it is set to **ImageRepeat.NoRepeat**. Analysis is not supported when the [obscured](arkts-arkui-common-commonmethod-c.md#obscured-1) attribute is enabled.
 
-Analysis is performed based on the complete original image. Even if the settings of the
-[clip](arkts-arkui-commonmethod-c.md#clip-1), [margin](arkts-arkui-commonmethod-c.md#margin-1),
-[borderRadius](arkts-arkui-commonmethod-c.md#borderradius-1),
-[position](arkts-arkui-commonmethod-c.md#position-1), and [objectFit](ImageAttribute#objectFit) attributes cause
-incomplete image display, or if a mask layer is set via [renderMode](ImageAttribute#renderMode), analysis
-will still be conducted on the complete original image. The [copyOption](ImageAttribute#copyOption) attribute
-does not affect the AI image analyzer functionality.
+Analysis is performed based on the complete original image. Even if the settings of the [clip](arkts-arkui-common-commonmethod-c.md#clip-1), [margin](arkts-arkui-common-commonmethod-c.md#margin-1),[borderRadius](arkts-arkui-common-commonmethod-c.md#borderradius-1),[position](arkts-arkui-common-commonmethod-c.md#position-1), and [objectFit](ImageAttribute#objectFit) attributes cause incomplete image display, or if a mask layer is set via [renderMode](ImageAttribute#renderMode), analysis will still be conducted on the complete original image. The [copyOption](ImageAttribute#copyOption) attribute does not affect the AI image analyzer functionality.
 
-This attribute does not take effect when the parameter type of the component is
-[AnimatedDrawableDescriptor](../arkts-apis/arkts-arkui-animateddrawabledescriptor-c.md).
+This attribute does not take effect when the parameter type of the component is [AnimatedDrawableDescriptor](../arkts-apis/arkts-arkui-arkui-drawabledescriptor-animateddrawabledescriptor-c.md).
 
-> **NOTE**
->
-> - The **ohos.permission.INTERNET** permission is required.
->
-> - This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
+> **NOTE**  
+>  
+> - The **ohos.permission.INTERNET** permission is required.  
+>  
+> - This API can be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1) since API version 12.
 
 **Since:** 11
 
@@ -366,13 +348,15 @@ This attribute does not take effect when the parameter type of the component is
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-ImageAttribute-enableAnalyzer(enable: boolean): ImageAttribute--><!--Device-ImageAttribute-enableAnalyzer(enable: boolean): ImageAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| enable | boolean | Yes | Whether the **Image** component supports AI analysis.<br>When this parameter is set to**true**, the **Image** component supports AI analysis. When this parameter is set to **false**, the **Image**component does not support AI analysis.<br>Default value: **false** |
+| enable | boolean | Yes | Whether the **Image** component supports AI analysis.<br>When this parameter is set to **true**, the **Image** component supports AI analysis. When this parameter is set to **false**, the **Image** component does not support AI analysis.<br>Default value: **false** |
 
 ## fillColor
 
@@ -380,12 +364,9 @@ This attribute does not take effect when the parameter type of the component is
 fillColor(value: ResourceColor)
 ```
 
-Fill color to be superimposed on the image. This attribute applies only to SVG images. Once set, the fill color
-will replace the fill colors of all drawable elements within the SVG image. To set the fill color for a PNG image,
-use [colorFilter](ImageAttribute#colorFilter(value: ColorFilter | DrawingColorFilter)).
+Fill color to be superimposed on the image. This attribute applies only to SVG images. Once set, the fill color will replace the fill colors of all drawable elements within the SVG image. To set the fill color for a PNG image,use [colorFilter](ImageAttribute#colorFilter(value: ColorFilter | DrawingColorFilter)).
 
-This attribute does not take effect when the parameter type of the component is
-[AnimatedDrawableDescriptor](../arkts-apis/arkts-arkui-animateddrawabledescriptor-c.md).
+This attribute does not take effect when the parameter type of the component is [AnimatedDrawableDescriptor](../arkts-apis/arkts-arkui-arkui-drawabledescriptor-animateddrawabledescriptor-c.md).
 
 **Since:** 7
 
@@ -393,13 +374,15 @@ This attribute does not take effect when the parameter type of the component is
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-ImageAttribute-fillColor(value: ResourceColor): ImageAttribute--><!--Device-ImageAttribute-fillColor(value: ResourceColor): ImageAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ResourceColor | Yes | Fill color to be superimposed on the image.<br>**NOTE**<br> By default, no fillcolor is applied. If an invalid value is passed, the system uses the default theme color: black in light modeand white in dark mode.<br>Since API version 21, when [supportSvg2](ImageAttribute#supportSvg2) is set to**true**, **fillColor** depends on the **fill** attribute configuration in the SVG image source. If the**fill** attribute in the SVG image source is set to **'none'**, **fillColor** does not take effect. When**supportSvg2** is set to **false**, **fillColor** takes effect and replaces the fill colors of all drawableelements in the SVG image. |
+| value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Fill color to be superimposed on the image.<br>**NOTE**<br> By default, no fill color is applied. If an invalid value is passed, the system uses the default theme color: black in light mode and white in dark mode.<br>Since API version 21, when [supportSvg2](ImageAttribute#supportSvg2) is set to **true**, **fillColor** depends on the **fill** attribute configuration in the SVG image source. If the **fill** attribute in the SVG image source is set to **'none'**, **fillColor** does not take effect. When **supportSvg2** is set to **false**, **fillColor** takes effect and replaces the fill colors of all drawable elements in the SVG image. |
 
 ## fillColor
 
@@ -407,13 +390,9 @@ This attribute does not take effect when the parameter type of the component is
 fillColor(color: ResourceColor | ColorContent)
 ```
 
-Fill color to be superimposed on the image. This attribute applies only to SVG images. Once set, the fill color
-will replace the fill colors of all drawable elements within the SVG image. To set the fill color for a PNG image,
-use [colorFilter](ImageAttribute#colorFilter(value: ColorFilter | DrawingColorFilter)). To reset the fill
-color, pass a value of the [ColorContent](arkts-arkui-colorcontent-c.md) type.
+Fill color to be superimposed on the image. This attribute applies only to SVG images. Once set, the fill color will replace the fill colors of all drawable elements within the SVG image. To set the fill color for a PNG image,use [colorFilter](ImageAttribute#colorFilter(value: ColorFilter | DrawingColorFilter)). To reset the fill color, pass a value of the [ColorContent](arkts-arkui-image-colorcontent-c.md) type.
 
-This attribute does not take effect when the parameter type of the component is
-[AnimatedDrawableDescriptor](../arkts-apis/arkts-arkui-animateddrawabledescriptor-c.md).
+This attribute does not take effect when the parameter type of the component is [AnimatedDrawableDescriptor](../arkts-apis/arkts-arkui-arkui-drawabledescriptor-animateddrawabledescriptor-c.md).
 
 **Since:** 15
 
@@ -421,13 +400,15 @@ This attribute does not take effect when the parameter type of the component is
 
 **Atomic service API:** This API can be used in atomic services since API version 15.
 
+<!--Device-ImageAttribute-fillColor(color: ResourceColor | ColorContent): ImageAttribute--><!--Device-ImageAttribute-fillColor(color: ResourceColor | ColorContent): ImageAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| color | ResourceColor \| ColorContent | Yes | Fill color to be superimposed on the image.<br>**NOTE**<br> Bydefault, no fill color is applied. If an invalid value is passed, the system uses the default theme color:black in light mode and white in dark mode.<br>Since API version 21, when[supportSvg2](ImageAttribute#supportSvg2) is set to **true**, **fillColor** depends on the **fill**attribute configuration in the SVG image source. If the **fill** attribute in the SVG image source is set to**'none'**, **fillColor** does not take effect. |
+| color | ResourceColor \| ColorContent | Yes | Fill color to be superimposed on the image.<br>**NOTE**<br> By default, no fill color is applied. If an invalid value is passed, the system uses the default theme color:black in light mode and white in dark mode.<br>Since API version 21, when [supportSvg2](ImageAttribute#supportSvg2) is set to **true**, **fillColor** depends on the **fill** attribute configuration in the SVG image source. If the **fill** attribute in the SVG image source is set to **'none'**, **fillColor** does not take effect. |
 
 ## fillColor
 
@@ -435,15 +416,9 @@ This attribute does not take effect when the parameter type of the component is
 fillColor(color: ResourceColor | ColorContent | ColorMetrics)
 ```
 
-Fill color to be superimposed on the image. This attribute applies only to SVG images. Once set, the fill color
-will replace the fill colors of all drawable elements within the SVG image. To set the fill color for a PNG image,
-use [colorFilter](ImageAttribute#colorFilter(value: ColorFilter | DrawingColorFilter)). To reset the fill
-color, pass a value of the [ColorContent](arkts-arkui-colorcontent-c.md) type. You can set P3 color gamut values by passing in
-the [ColorMetrics](../arkts-apis/arkts-arkui-colormetrics-c.md) type, which can achieve richer color performance on
-devices that support high color gamut.
+Fill color to be superimposed on the image. This attribute applies only to SVG images. Once set, the fill color will replace the fill colors of all drawable elements within the SVG image. To set the fill color for a PNG image,use [colorFilter](ImageAttribute#colorFilter(value: ColorFilter | DrawingColorFilter)). To reset the fill color, pass a value of the [ColorContent](arkts-arkui-image-colorcontent-c.md) type. You can set P3 color gamut values by passing in the [ColorMetrics](../arkts-apis/arkts-arkui-graphics-colormetrics-c.md) type, which can achieve richer color performance on devices that support high color gamut.
 
-This attribute does not take effect when the parameter type of the component is
-[AnimatedDrawableDescriptor](../arkts-apis/arkts-arkui-animateddrawabledescriptor-c.md).
+This attribute does not take effect when the parameter type of the component is [AnimatedDrawableDescriptor](../arkts-apis/arkts-arkui-arkui-drawabledescriptor-animateddrawabledescriptor-c.md).
 
 **Since:** 20
 
@@ -451,13 +426,15 @@ This attribute does not take effect when the parameter type of the component is
 
 **Atomic service API:** This API can be used in atomic services since API version 20.
 
+<!--Device-ImageAttribute-fillColor(color: ResourceColor | ColorContent | ColorMetrics): ImageAttribute--><!--Device-ImageAttribute-fillColor(color: ResourceColor | ColorContent | ColorMetrics): ImageAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| color | ResourceColor \| ColorContent \| ColorMetrics | Yes | Fill color to be superimposed on the image.<br>**NOTE**<br> By default, no fill color is applied. If an invalid value is passed, the system uses the defaulttheme color: black in light mode and white in dark mode.<br>Since API version 21, when[supportSvg2](ImageAttribute#supportSvg2) is set to **true**, **fillColor** depends on the **fill**attribute configuration in the SVG image source. If the **fill** attribute in the SVG image source is set to**'none'**, **fillColor** does not take effect. |
+| color | ResourceColor \| ColorContent \| ColorMetrics | Yes | Fill color to be superimposed on the image.<br>**NOTE**<br> By default, no fill color is applied. If an invalid value is passed, the system uses the default theme color: black in light mode and white in dark mode.<br>Since API version 21, when [supportSvg2](ImageAttribute#supportSvg2) is set to **true**, **fillColor** depends on the **fill** attribute configuration in the SVG image source. If the **fill** attribute in the SVG image source is set to **'none'**, **fillColor** does not take effect. |
 
 ## fitOriginalSize
 
@@ -469,8 +446,7 @@ Specifies whether the image display size follows the size of the image source.
 
 This attribute does not take effect when the component has the **width** and **height** attributes set.
 
-This attribute does not take effect when the parameter type of the component is
-[AnimatedDrawableDescriptor](../arkts-apis/arkts-arkui-animateddrawabledescriptor-c.md).
+This attribute does not take effect when the parameter type of the component is [AnimatedDrawableDescriptor](../arkts-apis/arkts-arkui-arkui-drawabledescriptor-animateddrawabledescriptor-c.md).
 
 **Since:** 7
 
@@ -478,13 +454,15 @@ This attribute does not take effect when the parameter type of the component is
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-ImageAttribute-fitOriginalSize(value: boolean): ImageAttribute--><!--Device-ImageAttribute-fitOriginalSize(value: boolean): ImageAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | boolean | Yes | Whether the image display size follows the size of the image source.<br>Default value:**false**<br>**NOTE**<br>**false** or not set: The image display size does not follow the size of the imagesource.<br> **true**: The image display size follows the size of the image source. |
+| value | boolean | Yes | Whether the image display size follows the size of the image source.<br>Default value:**false**<br>**NOTE**<br>**false** or not set: The image display size does not follow the size of the image source.<br> **true**: The image display size follows the size of the image source. |
 
 ## hdrBrightness
 
@@ -496,8 +474,7 @@ Sets the brightness of HDR images displayed by the component.
 
 This attribute is not applicable to SVG images.
 
-If this attribute and the [dynamicRangeMode](ImageAttribute#dynamicRangeMode) attribute are both set,
-[dynamicRangeMode](ImageAttribute#dynamicRangeMode) does not take effect.
+If this attribute and the [dynamicRangeMode](ImageAttribute#dynamicRangeMode) attribute are both set,[dynamicRangeMode](ImageAttribute#dynamicRangeMode) does not take effect.
 
 **Since:** 19
 
@@ -505,13 +482,15 @@ If this attribute and the [dynamicRangeMode](ImageAttribute#dynamicRangeMode) at
 
 **Atomic service API:** This API can be used in atomic services since API version 19.
 
+<!--Device-ImageAttribute-hdrBrightness(brightness: number): ImageAttribute--><!--Device-ImageAttribute-hdrBrightness(brightness: number): ImageAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| brightness | number | Yes | Brightness of HDR images displayed by the component. This API only takes effect forHDR image sources.<br>Default value: **1.0**<br>Value range: [0.0, 1.0]. Values less than 0 or greater than 1.0are clamped to **1.0**. **0**: The image is displayed at SDR brightness.<br>**1.0**: The image is displayed atthe highest allowed HDR brightness. |
+| brightness | number | Yes | Brightness of HDR images displayed by the component. This API only takes effect for HDR image sources.<br>Default value: **1.0**<br>Value range: [0.0, 1.0]. Values less than 0 or greater than 1.0are clamped to **1.0**. **0**: The image is displayed at SDR brightness.<br>**1.0**: The image is displayed at the highest allowed HDR brightness. |
 
 ## imageMatrix
 
@@ -519,16 +498,11 @@ If this attribute and the [dynamicRangeMode](ImageAttribute#dynamicRangeMode) at
 imageMatrix(matrix: ImageMatrix)
 ```
 
-Sets the transformation matrix of the image. This API allows you to use the functions provided by the
-[ImageMatrix](ImageAttribute#imageMatrix) object, such as translate, rotate, and scale, to achieve the
-optimal display of grid thumbnails. This attribute is not applicable to SVG images.
+Sets the transformation matrix of the image. This API allows you to use the functions provided by the [ImageMatrix](ImageAttribute#imageMatrix) object, such as translate, rotate, and scale, to achieve the optimal display of grid thumbnails. This attribute is not applicable to SVG images.
 
-This attribute does not take effect when [resizable](ImageAttribute#resizable) and
-[objectRepeat](ImageAttribute#objectRepeat) are set. This attribute only processes the image source and does
-not trigger any callback events of the **Image** component.
+This attribute does not take effect when [resizable](ImageAttribute#resizable) and [objectRepeat](ImageAttribute#objectRepeat) are set. This attribute only processes the image source and does not trigger any callback events of the **Image** component.
 
-This attribute is strongly associated with [objectFit](ImageAttribute#objectFit) and takes effect only when
-[objectFit](ImageAttribute#objectFit) is set to **ImageFit.MATRIX**.
+This attribute is strongly associated with [objectFit](ImageAttribute#objectFit) and takes effect only when [objectFit](ImageAttribute#objectFit) is set to **ImageFit.MATRIX**.
 
 **Since:** 15
 
@@ -536,13 +510,15 @@ This attribute is strongly associated with [objectFit](ImageAttribute#objectFit)
 
 **Atomic service API:** This API can be used in atomic services since API version 15.
 
+<!--Device-ImageAttribute-imageMatrix(matrix: ImageMatrix): ImageAttribute--><!--Device-ImageAttribute-imageMatrix(matrix: ImageMatrix): ImageAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| matrix | ImageMatrix | Yes | Transformation matrix of the image. |
+| matrix | [ImageMatrix](arkts-arkui-imagematrix-t.md) | Yes | Transformation matrix of the image. |
 
 ## interpolation
 
@@ -550,11 +526,9 @@ This attribute is strongly associated with [objectFit](ImageAttribute#objectFit)
 interpolation(value: ImageInterpolation)
 ```
 
-Defines the image interpolation effect. This attribute mitigates aliasing during image scaling. This attribute is
-not applicable to SVG images.
+Defines the image interpolation effect. This attribute mitigates aliasing during image scaling. This attribute is not applicable to SVG images.
 
-This attribute does not take effect when the parameter type of the component is
-[AnimatedDrawableDescriptor](../arkts-apis/arkts-arkui-animateddrawabledescriptor-c.md).
+This attribute does not take effect when the parameter type of the component is [AnimatedDrawableDescriptor](../arkts-apis/arkts-arkui-arkui-drawabledescriptor-animateddrawabledescriptor-c.md).
 
 **Since:** 7
 
@@ -562,13 +536,15 @@ This attribute does not take effect when the parameter type of the component is
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-ImageAttribute-interpolation(value: ImageInterpolation): ImageAttribute--><!--Device-ImageAttribute-interpolation(value: ImageInterpolation): ImageAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ImageInterpolation | Yes | Interpolation effect of the image.<br>Default value:**ImageInterpolation.Low**<br>When set to **undefined**, the value is treated as **ImageInterpolation.None**. |
+| value | [ImageInterpolation](arkts-arkui-image-imageinterpolation-e.md) | Yes | Interpolation effect of the image.<br>Default value:**ImageInterpolation.Low**<br>When set to **undefined**, the value is treated as **ImageInterpolation.None**. |
 
 ## matchTextDirection
 
@@ -576,11 +552,9 @@ This attribute does not take effect when the parameter type of the component is
 matchTextDirection(value: boolean)
 ```
 
-Specifies whether the image follows the system language direction, displaying a mirrored effect in a right-to-left
-(RTL) language environments.
+Specifies whether the image follows the system language direction, displaying a mirrored effect in a right-to-left(RTL) language environments.
 
-This attribute does not take effect when the parameter type of the component is
-[AnimatedDrawableDescriptor](../arkts-apis/arkts-arkui-animateddrawabledescriptor-c.md).
+This attribute does not take effect when the parameter type of the component is [AnimatedDrawableDescriptor](../arkts-apis/arkts-arkui-arkui-drawabledescriptor-animateddrawabledescriptor-c.md).
 
 **Since:** 7
 
@@ -588,13 +562,15 @@ This attribute does not take effect when the parameter type of the component is
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-ImageAttribute-matchTextDirection(value: boolean): ImageAttribute--><!--Device-ImageAttribute-matchTextDirection(value: boolean): ImageAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | boolean | Yes | Whether the image follows the system language direction, displaying a mirrored effect inan RTL language environment.<br>Default value: **false**<br>The value **true** means that the image follows thesystem language direction, displaying a mirrored effect in an RTL language environment, and **false** means theopposite. |
+| value | boolean | Yes | Whether the image follows the system language direction, displaying a mirrored effect in an RTL language environment.<br>Default value: **false**<br>The value **true** means that the image follows the system language direction, displaying a mirrored effect in an RTL language environment, and **false** means the opposite. |
 
 ## objectFit
 
@@ -602,8 +578,7 @@ This attribute does not take effect when the parameter type of the component is
 objectFit(value: ImageFit)
 ```
 
-Sets how the image is resized to fit its container. If the attribute is not set, the default value is
-**ImageFit.Cover**, which scales the image up or down while maintaining its aspect ratio.
+Sets how the image is resized to fit its container. If the attribute is not set, the default value is **ImageFit.Cover**, which scales the image up or down while maintaining its aspect ratio.
 
 **Since:** 7
 
@@ -611,13 +586,15 @@ Sets how the image is resized to fit its container. If the attribute is not set,
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-ImageAttribute-objectFit(value: ImageFit): ImageAttribute--><!--Device-ImageAttribute-objectFit(value: ImageFit): ImageAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ImageFit | Yes | How the image is resized to fit its container. |
+| value | [ImageFit](../arkts-apis/arkts-arkui-enums-imagefit-e.md) | Yes | How the image is resized to fit its container. |
 
 ## objectRepeat
 
@@ -625,11 +602,9 @@ Sets how the image is resized to fit its container. If the attribute is not set,
 objectRepeat(value: ImageRepeat)
 ```
 
-Sets how the image is repeated. When set to repeat, the image is repeated from the center to edges. The last image
-will be clipped if it does not fit in the component. This attribute is not applicable to SVG images.
+Sets how the image is repeated. When set to repeat, the image is repeated from the center to edges. The last image will be clipped if it does not fit in the component. This attribute is not applicable to SVG images.
 
-This attribute does not take effect when the parameter type of the component is
-[AnimatedDrawableDescriptor](../arkts-apis/arkts-arkui-animateddrawabledescriptor-c.md).
+This attribute does not take effect when the parameter type of the component is [AnimatedDrawableDescriptor](../arkts-apis/arkts-arkui-arkui-drawabledescriptor-animateddrawabledescriptor-c.md).
 
 **Since:** 7
 
@@ -637,13 +612,15 @@ This attribute does not take effect when the parameter type of the component is
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-ImageAttribute-objectRepeat(value: ImageRepeat): ImageAttribute--><!--Device-ImageAttribute-objectRepeat(value: ImageRepeat): ImageAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ImageRepeat | Yes | How the image is repeated.<br>Default value: **ImageRepeat.NoRepeat** |
+| value | [ImageRepeat](../arkts-apis/arkts-arkui-enums-imagerepeat-e.md) | Yes | How the image is repeated.<br>Default value: **ImageRepeat.NoRepeat** |
 
 ## onComplete
 
@@ -783,12 +760,9 @@ onComplete(
   )
 ```
 
-Triggered when an image is successfully loaded or decoded.
-The size of the image source that is successfully loaded is returned, in pixels.
+Triggered when an image is successfully loaded or decoded.The size of the image source that is successfully loaded is returned, in pixels.
 
-<p><strong>NOTE</strong>:
-<br>This event is not triggered if the parameter type of the component is AnimatedDrawableDescriptor.
-</p>
+<p><strong>NOTE</strong>:<br>This event is not triggered if the parameter type of the component is AnimatedDrawableDescriptor.</p>
 
 **Since:** 11
 
@@ -796,13 +770,279 @@ The size of the image source that is successfully loaded is returned, in pixels.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 11.
 
+<!--Device-ImageAttribute-onComplete(
+    callback: (event?: {
+      /**
+       * The width of the image source.
+       *
+       ****/
+      /**
+       * The width of the image source.
+       *
+       *****/
+      /**
+       * The width of the image source.
+       *
+       ******/
+      /**
+       * The width of the image source.
+       *
+       *******/
+      width: number;
+      /**
+       * The height of the image source.
+       *
+       ****/
+      /**
+       * The height of the image source.
+       *
+       *****/
+      /**
+       * The height of the image source.
+       *
+       ******/
+      /**
+       * The height of the image source.
+       *
+       *******/
+      height: number;
+      /**
+       * The width of the component source.
+       *
+       ****/
+      /**
+       * The width of the component source.
+       *
+       *****/
+      /**
+       * The width of the component source.
+       *
+       ******/
+      /**
+       * The width of the component source.
+       *
+       *******/
+      componentWidth: number;
+      /**
+       * The height of the component source.
+       *
+       ****/
+      /**
+       * The height of the component source.
+       *
+       *****/
+      /**
+       * The height of the component source.
+       *
+       ******/
+      /**
+       * The height of the component source.
+       *
+       *******/
+      componentHeight: number;
+      /**
+       * The value of the status of the image being loaded successfully.
+       * If the returned status value is 0, the image data is successfully loaded.
+       * If the returned status value is 1, the image is successfully decoded.
+       *
+       ****/
+      /**
+       * The value of the status of the image being loaded successfully.
+       * If the returned status value is 0, the image data is successfully loaded.
+       * If the returned status value is 1, the image is successfully decoded.
+       *
+       *****/
+      /**
+       * The value of the status of the image being loaded successfully.
+       * If the returned status value is 0, the image data is successfully loaded.
+       * If the returned status value is 1, the image is successfully decoded.
+       *
+       ******/
+      /**
+       * The value of the status of the image being loaded successfully.
+       * If the returned status value is 0, the image data is successfully loaded.
+       * If the returned status value is 1, the image is successfully decoded.
+       *
+       *******/
+      loadingStatus: number;
+      /**
+       * The width of the picture that is actually drawn.
+       *
+       *******/
+      /**
+       * The width of the picture that is actually drawn.
+       *
+       ********/
+      contentWidth: number;
+      /**
+       * The height of the picture that is actually drawn.
+       *
+       *******/
+      /**
+       * The height of the picture that is actually drawn.
+       *
+       ********/
+      contentHeight: number;
+      /**
+       * The actual draw is offset from the x-axis of the component itself.
+       *
+       *******/
+      /**
+       * The actual draw is offset from the x-axis of the component itself.
+       *
+       ********/
+      contentOffsetX: number;
+      /**
+       * The actual draw is offset from the y-axis of the component itself.
+       *
+       *******/
+      /**
+       * The actual draw is offset from the y-axis of the component itself.
+       *
+       ********/
+      contentOffsetY: number;
+    }) => void,
+  ): ImageAttribute--><!--Device-ImageAttribute-onComplete(
+    callback: (event?: {
+      /**
+       * The width of the image source.
+       *
+       ****/
+      /**
+       * The width of the image source.
+       *
+       *****/
+      /**
+       * The width of the image source.
+       *
+       ******/
+      /**
+       * The width of the image source.
+       *
+       *******/
+      width: number;
+      /**
+       * The height of the image source.
+       *
+       ****/
+      /**
+       * The height of the image source.
+       *
+       *****/
+      /**
+       * The height of the image source.
+       *
+       ******/
+      /**
+       * The height of the image source.
+       *
+       *******/
+      height: number;
+      /**
+       * The width of the component source.
+       *
+       ****/
+      /**
+       * The width of the component source.
+       *
+       *****/
+      /**
+       * The width of the component source.
+       *
+       ******/
+      /**
+       * The width of the component source.
+       *
+       *******/
+      componentWidth: number;
+      /**
+       * The height of the component source.
+       *
+       ****/
+      /**
+       * The height of the component source.
+       *
+       *****/
+      /**
+       * The height of the component source.
+       *
+       ******/
+      /**
+       * The height of the component source.
+       *
+       *******/
+      componentHeight: number;
+      /**
+       * The value of the status of the image being loaded successfully.
+       * If the returned status value is 0, the image data is successfully loaded.
+       * If the returned status value is 1, the image is successfully decoded.
+       *
+       ****/
+      /**
+       * The value of the status of the image being loaded successfully.
+       * If the returned status value is 0, the image data is successfully loaded.
+       * If the returned status value is 1, the image is successfully decoded.
+       *
+       *****/
+      /**
+       * The value of the status of the image being loaded successfully.
+       * If the returned status value is 0, the image data is successfully loaded.
+       * If the returned status value is 1, the image is successfully decoded.
+       *
+       ******/
+      /**
+       * The value of the status of the image being loaded successfully.
+       * If the returned status value is 0, the image data is successfully loaded.
+       * If the returned status value is 1, the image is successfully decoded.
+       *
+       *******/
+      loadingStatus: number;
+      /**
+       * The width of the picture that is actually drawn.
+       *
+       *******/
+      /**
+       * The width of the picture that is actually drawn.
+       *
+       ********/
+      contentWidth: number;
+      /**
+       * The height of the picture that is actually drawn.
+       *
+       *******/
+      /**
+       * The height of the picture that is actually drawn.
+       *
+       ********/
+      contentHeight: number;
+      /**
+       * The actual draw is offset from the x-axis of the component itself.
+       *
+       *******/
+      /**
+       * The actual draw is offset from the x-axis of the component itself.
+       *
+       ********/
+      contentOffsetX: number;
+      /**
+       * The actual draw is offset from the y-axis of the component itself.
+       *
+       *******/
+      /**
+       * The actual draw is offset from the y-axis of the component itself.
+       *
+       ********/
+      contentOffsetY: number;
+    }) => void,
+  ): ImageAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (event?: {      /**       * The width of the image source.       *       * @type { number }       * @syscap SystemCapability.ArkUI.ArkUI.Full       * @since 7       */      /**       * The width of the image source.       *       * @type { number }       * @syscap SystemCapability.ArkUI.ArkUI.Full       * @since 9       * @form       */      /**       * The width of the image source.       *       * @type { number }       * @syscap SystemCapability.ArkUI.ArkUI.Full       * @crossplatform       * @since 10       * @form       */      /**       * The width of the image source.       *       * @type { number }       * @syscap SystemCapability.ArkUI.ArkUI.Full       * @crossplatform       * @atomicservice       * @since 11       * @form       */      width: number;      /**       * The height of the image source.       *       * @type { number }       * @syscap SystemCapability.ArkUI.ArkUI.Full       * @since 7       */      /**       * The height of the image source.       *       * @type { number }       * @syscap SystemCapability.ArkUI.ArkUI.Full       * @since 9       * @form       */      /**       * The height of the image source.       *       * @type { number }       * @syscap SystemCapability.ArkUI.ArkUI.Full       * @crossplatform       * @since 10       * @form       */      /**       * The height of the image source.       *       * @type { number }       * @syscap SystemCapability.ArkUI.ArkUI.Full       * @crossplatform       * @atomicservice       * @since 11       * @form       */      height: number;      /**       * The width of the component source.       *       * @type { number }       * @syscap SystemCapability.ArkUI.ArkUI.Full       * @since 7       */      /**       * The width of the component source.       *       * @type { number }       * @syscap SystemCapability.ArkUI.ArkUI.Full       * @since 9       * @form       */      /**       * The width of the component source.       *       * @type { number }       * @syscap SystemCapability.ArkUI.ArkUI.Full       * @crossplatform       * @since 10       * @form       */      /**       * The width of the component source.       *       * @type { number }       * @syscap SystemCapability.ArkUI.ArkUI.Full       * @crossplatform       * @atomicservice       * @since 11       * @form       */      componentWidth: number;      /**       * The height of the component source.       *       * @type { number }       * @syscap SystemCapability.ArkUI.ArkUI.Full       * @since 7       */      /**       * The height of the component source.       *       * @type { number }       * @syscap SystemCapability.ArkUI.ArkUI.Full       * @since 9       * @form       */      /**       * The height of the component source.       *       * @type { number }       * @syscap SystemCapability.ArkUI.ArkUI.Full       * @crossplatform       * @since 10       * @form       */      /**       * The height of the component source.       *       * @type { number }       * @syscap SystemCapability.ArkUI.ArkUI.Full       * @crossplatform       * @atomicservice       * @since 11       * @form       */      componentHeight: number;      /**       * The value of the status of the image being loaded successfully.       * If the returned status value is 0, the image data is successfully loaded.       * If the returned status value is 1, the image is successfully decoded.       *       * @type { number }       * @syscap SystemCapability.ArkUI.ArkUI.Full       * @since 7       */      /**       * The value of the status of the image being loaded successfully.       * If the returned status value is 0, the image data is successfully loaded.       * If the returned status value is 1, the image is successfully decoded.       *       * @type { number }       * @syscap SystemCapability.ArkUI.ArkUI.Full       * @since 9       * @form       */      /**       * The value of the status of the image being loaded successfully.       * If the returned status value is 0, the image data is successfully loaded.       * If the returned status value is 1, the image is successfully decoded.       *       * @type { number }       * @syscap SystemCapability.ArkUI.ArkUI.Full       * @crossplatform       * @since 10       * @form       */      /**       * The value of the status of the image being loaded successfully.       * If the returned status value is 0, the image data is successfully loaded.       * If the returned status value is 1, the image is successfully decoded.       *       * @type { number }       * @syscap SystemCapability.ArkUI.ArkUI.Full       * @crossplatform       * @atomicservice       * @since 11       * @form       */      loadingStatus: number;      /**       * The width of the picture that is actually drawn.       *       * @type { number }       * @syscap SystemCapability.ArkUI.ArkUI.Full       * @stagemodelonly       * @crossplatform       * @since 10       * @form       */      /**       * The width of the picture that is actually drawn.       *       * @type { number }       * @syscap SystemCapability.ArkUI.ArkUI.Full       * @stagemodelonly       * @crossplatform       * @atomicservice       * @since 11       * @form       */      contentWidth: number;      /**       * The height of the picture that is actually drawn.       *       * @type { number }       * @syscap SystemCapability.ArkUI.ArkUI.Full       * @stagemodelonly       * @crossplatform       * @since 10       * @form       */      /**       * The height of the picture that is actually drawn.       *       * @type { number }       * @syscap SystemCapability.ArkUI.ArkUI.Full       * @stagemodelonly       * @crossplatform       * @atomicservice       * @since 11       * @form       */      contentHeight: number;      /**       * The actual draw is offset from the x-axis of the component itself.       *       * @type { number }       * @syscap SystemCapability.ArkUI.ArkUI.Full       * @stagemodelonly       * @crossplatform       * @since 10       * @form       */      /**       * The actual draw is offset from the x-axis of the component itself.       *       * @type { number }       * @syscap SystemCapability.ArkUI.ArkUI.Full       * @stagemodelonly       * @crossplatform       * @atomicservice       * @since 11       * @form       */      contentOffsetX: number;      /**       * The actual draw is offset from the y-axis of the component itself.       *       * @type { number }       * @syscap SystemCapability.ArkUI.ArkUI.Full       * @stagemodelonly       * @crossplatform       * @since 10       * @form       */      /**       * The actual draw is offset from the y-axis of the component itself.       *       * @type { number }       * @syscap SystemCapability.ArkUI.ArkUI.Full       * @stagemodelonly       * @crossplatform       * @atomicservice       * @since 11       * @form       */      contentOffsetY: number;    }) =&gt; void | Yes |  |
+| callback | (event?: {       /**        * The width of the image source.        *        * @type { number }        * @syscap SystemCapability.ArkUI.ArkUI.Full        * @since 7        */       /**        * The width of the image source.        *        * @type { number }        * @syscap SystemCapability.ArkUI.ArkUI.Full        * @since 9        * @form        */       /**        * The width of the image source.        *        * @type { number }        * @syscap SystemCapability.ArkUI.ArkUI.Full        * @crossplatform        * @since 10        * @form        */       /**        * The width of the image source.        *        * @type { number }        * @syscap SystemCapability.ArkUI.ArkUI.Full        * @crossplatform        * @atomicservice        * @since 11        * @form        */       width: number;       /**        * The height of the image source.        *        * @type { number }        * @syscap SystemCapability.ArkUI.ArkUI.Full        * @since 7        */       /**        * The height of the image source.        *        * @type { number }        * @syscap SystemCapability.ArkUI.ArkUI.Full        * @since 9        * @form        */       /**        * The height of the image source.        *        * @type { number }        * @syscap SystemCapability.ArkUI.ArkUI.Full        * @crossplatform        * @since 10        * @form        */       /**        * The height of the image source.        *        * @type { number }        * @syscap SystemCapability.ArkUI.ArkUI.Full        * @crossplatform        * @atomicservice        * @since 11        * @form        */       height: number;       /**        * The width of the component source.        *        * @type { number }        * @syscap SystemCapability.ArkUI.ArkUI.Full        * @since 7        */       /**        * The width of the component source.        *        * @type { number }        * @syscap SystemCapability.ArkUI.ArkUI.Full        * @since 9        * @form        */       /**        * The width of the component source.        *        * @type { number }        * @syscap SystemCapability.ArkUI.ArkUI.Full        * @crossplatform        * @since 10        * @form        */       /**        * The width of the component source.        *        * @type { number }        * @syscap SystemCapability.ArkUI.ArkUI.Full        * @crossplatform        * @atomicservice        * @since 11        * @form        */       componentWidth: number;       /**        * The height of the component source.        *        * @type { number }        * @syscap SystemCapability.ArkUI.ArkUI.Full        * @since 7        */       /**        * The height of the component source.        *        * @type { number }        * @syscap SystemCapability.ArkUI.ArkUI.Full        * @since 9        * @form        */       /**        * The height of the component source.        *        * @type { number }        * @syscap SystemCapability.ArkUI.ArkUI.Full        * @crossplatform        * @since 10        * @form        */       /**        * The height of the component source.        *        * @type { number }        * @syscap SystemCapability.ArkUI.ArkUI.Full        * @crossplatform        * @atomicservice        * @since 11        * @form        */       componentHeight: number;       /**        * The value of the status of the image being loaded successfully.        * If the returned status value is 0, the image data is successfully loaded.        * If the returned status value is 1, the image is successfully decoded.        *        * @type { number }        * @syscap SystemCapability.ArkUI.ArkUI.Full        * @since 7        */       /**        * The value of the status of the image being loaded successfully.        * If the returned status value is 0, the image data is successfully loaded.        * If the returned status value is 1, the image is successfully decoded.        *        * @type { number }        * @syscap SystemCapability.ArkUI.ArkUI.Full        * @since 9        * @form        */       /**        * The value of the status of the image being loaded successfully.        * If the returned status value is 0, the image data is successfully loaded.        * If the returned status value is 1, the image is successfully decoded.        *        * @type { number }        * @syscap SystemCapability.ArkUI.ArkUI.Full        * @crossplatform        * @since 10        * @form        */       /**        * The value of the status of the image being loaded successfully.        * If the returned status value is 0, the image data is successfully loaded.        * If the returned status value is 1, the image is successfully decoded.        *        * @type { number }        * @syscap SystemCapability.ArkUI.ArkUI.Full        * @crossplatform        * @atomicservice        * @since 11        * @form        */       loadingStatus: number;       /**        * The width of the picture that is actually drawn.        *        * @type { number }        * @syscap SystemCapability.ArkUI.ArkUI.Full        * @stagemodelonly        * @crossplatform        * @since 10        * @form        */       /**        * The width of the picture that is actually drawn.        *        * @type { number }        * @syscap SystemCapability.ArkUI.ArkUI.Full        * @stagemodelonly        * @crossplatform        * @atomicservice        * @since 11        * @form        */       contentWidth: number;       /**        * The height of the picture that is actually drawn.        *        * @type { number }        * @syscap SystemCapability.ArkUI.ArkUI.Full        * @stagemodelonly        * @crossplatform        * @since 10        * @form        */       /**        * The height of the picture that is actually drawn.        *        * @type { number }        * @syscap SystemCapability.ArkUI.ArkUI.Full        * @stagemodelonly        * @crossplatform        * @atomicservice        * @since 11        * @form        */       contentHeight: number;       /**        * The actual draw is offset from the x-axis of the component itself.        *        * @type { number }        * @syscap SystemCapability.ArkUI.ArkUI.Full        * @stagemodelonly        * @crossplatform        * @since 10        * @form        */       /**        * The actual draw is offset from the x-axis of the component itself.        *        * @type { number }        * @syscap SystemCapability.ArkUI.ArkUI.Full        * @stagemodelonly        * @crossplatform        * @atomicservice        * @since 11        * @form        */       contentOffsetX: number;       /**        * The actual draw is offset from the y-axis of the component itself.        *        * @type { number }        * @syscap SystemCapability.ArkUI.ArkUI.Full        * @stagemodelonly        * @crossplatform        * @since 10        * @form        */       /**        * The actual draw is offset from the y-axis of the component itself.        *        * @type { number }        * @syscap SystemCapability.ArkUI.ArkUI.Full        * @stagemodelonly        * @crossplatform        * @atomicservice        * @since 11        * @form        */       contentOffsetY: number;     }) => void | Yes |  |
 
 ## onError
 
@@ -812,8 +1052,7 @@ onError(callback: ImageErrorCallback)
 
 Triggered when an error occurs during image loading.
 
-This event is not triggered if the parameter type of the component is
-[AnimatedDrawableDescriptor](../arkts-apis/arkts-arkui-animateddrawabledescriptor-c.md).
+This event is not triggered if the parameter type of the component is [AnimatedDrawableDescriptor](../arkts-apis/arkts-arkui-arkui-drawabledescriptor-animateddrawabledescriptor-c.md).
 
 **Since:** 9
 
@@ -821,13 +1060,15 @@ This event is not triggered if the parameter type of the component is
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-ImageAttribute-onError(callback: ImageErrorCallback): ImageAttribute--><!--Device-ImageAttribute-onError(callback: ImageErrorCallback): ImageAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | ImageErrorCallback | Yes | Callback triggered when an error occurs during image loading.**NOTE**&lt;You are advised to use this callback to quickly identify the cause of image loading failures. For details,see the [ImageError](arkts-arkui-imageerror-i.md) error codes.<br>**Since:** 11 |
+| callback | [ImageErrorCallback](arkts-arkui-imageerrorcallback-t.md) | Yes | Callback triggered when an error occurs during image loading.**NOTE**&lt;You are advised to use this callback to quickly identify the cause of image loading failures. For details,see the [ImageError](arkts-arkui-image-imageerror-i.md) error codes.<br>**Since:** 11 |
 
 ## onFinish
 
@@ -835,11 +1076,9 @@ This event is not triggered if the parameter type of the component is
 onFinish(event: () => void)
 ```
 
-Triggered when the animation playback in the loaded SVG image is complete. If the animation is an infinite loop,
-this callback is not triggered.
+Triggered when the animation playback in the loaded SVG image is complete. If the animation is an infinite loop,this callback is not triggered.
 
-Only images in SVG format are supported. This event is not triggered if the parameter type of the component is
-[AnimatedDrawableDescriptor](../arkts-apis/arkts-arkui-animateddrawabledescriptor-c.md).
+Only images in SVG format are supported. This event is not triggered if the parameter type of the component is [AnimatedDrawableDescriptor](../arkts-apis/arkts-arkui-arkui-drawabledescriptor-animateddrawabledescriptor-c.md).
 
 **Since:** 7
 
@@ -847,13 +1086,15 @@ Only images in SVG format are supported. This event is not triggered if the para
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-ImageAttribute-onFinish(event: () => void): ImageAttribute--><!--Device-ImageAttribute-onFinish(event: () => void): ImageAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | () =&gt; void | Yes | Triggered when the animation playback in the loaded SVG image is complete. If theanimation is an infinite loop, this callback is not triggered. |
+| event | () => void | Yes | Triggered when the animation playback in the loaded SVG image is complete. If the animation is an infinite loop, this callback is not triggered. |
 
 ## orientation
 
@@ -863,8 +1104,7 @@ orientation(orientation: ImageRotateOrientation) : ImageAttribute
 
 Sets the display orientation of the image content.
 
-This attribute does not apply to placeholder images specified by
-[alt](ImageAttribute#alt(value: string | Resource | PixelMap)).
+This attribute does not apply to placeholder images specified by [alt](ImageAttribute#alt(value: string | Resource | PixelMap)).
 
 **Since:** 14
 
@@ -874,13 +1114,15 @@ This attribute does not apply to placeholder images specified by
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 23.
 
+<!--Device-ImageAttribute-orientation(orientation: ImageRotateOrientation) : ImageAttribute--><!--Device-ImageAttribute-orientation(orientation: ImageRotateOrientation) : ImageAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| orientation | ImageRotateOrientation | Yes | Display orientation of the image content.<br>Only static pixel mapdisplay is supported.<br>For images containing rotation or flip information, use**ImageRotateOrientation.AUTO**.<br>Default value: **ImageRotateOrientation.UP**<br>When this parameter is setto **undefined** or **null**, the value is **ImageRotateOrientation.AUTO**. |
+| orientation | [ImageRotateOrientation](arkts-arkui-image-imagerotateorientation-e.md) | Yes | Display orientation of the image content.<br>Only static pixel map display is supported.<br>For images containing rotation or flip information, use **ImageRotateOrientation.AUTO**.<br>Default value: **ImageRotateOrientation.UP**<br>When this parameter is set to **undefined** or **null**, the value is **ImageRotateOrientation.AUTO**. |
 
 ## privacySensitive
 
@@ -898,13 +1140,15 @@ Sets whether to secure sensitive information on widgets.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 12.
 
+<!--Device-ImageAttribute-privacySensitive(supported: boolean): ImageAttribute--><!--Device-ImageAttribute-privacySensitive(supported: boolean): ImageAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| supported | boolean | Yes | Whether to secure sensitive information on widgets.<br>**false** (default): Do notsecure sensitive information on widgets.<br>**true**: Secure sensitive information on widgets, obscuring theimage with a semi-transparent background style in privacy mode.<br>**NOTE**<br>If this parameter is set to**null**, the image is not obscured.<br>Privacy mode requires support from the widget framework. |
+| supported | boolean | Yes | Whether to secure sensitive information on widgets.<br>**false** (default): Do not secure sensitive information on widgets.<br>**true**: Secure sensitive information on widgets, obscuring the image with a semi-transparent background style in privacy mode.<br>**NOTE**<br>If this parameter is set to **null**, the image is not obscured.<br>Privacy mode requires support from the widget framework. |
 
 ## renderMode
 
@@ -914,11 +1158,9 @@ renderMode(value: ImageRenderMode)
 
 Sets the rendering mode of the image. This attribute is not applicable to SVG images.
 
-This attribute does not take effect when
-[ColorFilter](ImageAttribute#colorFilter(value: ColorFilter | DrawingColorFilter)) is set.
+This attribute does not take effect when [ColorFilter](ImageAttribute#colorFilter(value: ColorFilter | DrawingColorFilter)) is set.
 
-This attribute does not take effect when the parameter type of the component is
-[AnimatedDrawableDescriptor](../arkts-apis/arkts-arkui-animateddrawabledescriptor-c.md).
+This attribute does not take effect when the parameter type of the component is [AnimatedDrawableDescriptor](../arkts-apis/arkts-arkui-arkui-drawabledescriptor-animateddrawabledescriptor-c.md).
 
 **Since:** 7
 
@@ -926,13 +1168,15 @@ This attribute does not take effect when the parameter type of the component is
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-ImageAttribute-renderMode(value: ImageRenderMode): ImageAttribute--><!--Device-ImageAttribute-renderMode(value: ImageRenderMode): ImageAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ImageRenderMode | Yes | Rendering mode of the image, which can be **Original** or **Template** (monochrome).<br>Default value: **ImageRenderMode.Original** |
+| value | [ImageRenderMode](arkts-arkui-image-imagerendermode-e.md) | Yes | Rendering mode of the image, which can be **Original** or **Template** (monochrome).<br>Default value: **ImageRenderMode.Original** |
 
 ## resizable
 
@@ -942,20 +1186,15 @@ resizable(value: ResizableOptions)
 
 Sets the resizable image options. Resizing is effective for drag previews and placeholder images.
 
-When a valid [ResizableOptions](arkts-arkui-resizableoptions-i.md) is set, the **objectRepeat**, **antialiased**, and
-**orientation** attributes do not take effect.
+When a valid [ResizableOptions](arkts-arkui-image-resizableoptions-i.md) is set, the **objectRepeat**, **antialiased**, and **orientation** attributes do not take effect.
 
-When the sum of the values of **top** and **bottom** is greater than the source image height, or the sum of the
-values of **left** and **right** is greater than the source image width, the
-[ResizableOptions](arkts-arkui-resizableoptions-i.md) attribute does not take effect.
+When the sum of the values of **top** and **bottom** is greater than the source image height, or the sum of the values of **left** and **right** is greater than the source image width, the [ResizableOptions](arkts-arkui-image-resizableoptions-i.md) attribute does not take effect.
 
-This attribute does not take effect when the parameter type of the component is
-[AnimatedDrawableDescriptor](../arkts-apis/arkts-arkui-animateddrawabledescriptor-c.md) or the image format
-is SVG.
+This attribute does not take effect when the parameter type of the component is [AnimatedDrawableDescriptor](../arkts-apis/arkts-arkui-arkui-drawabledescriptor-animateddrawabledescriptor-c.md) or the image format is SVG.
 
-> **NOTE**
->
-> This API can be called in [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
+> **NOTE**  
+>  
+> This API can be called in [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1) since API version 20.
 
 **Since:** 11
 
@@ -963,13 +1202,15 @@ is SVG.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-ImageAttribute-resizable(value: ResizableOptions): ImageAttribute--><!--Device-ImageAttribute-resizable(value: ResizableOptions): ImageAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ResizableOptions | Yes | Resizable image options. |
+| value | [ResizableOptions](arkts-arkui-image-resizableoptions-i.md) | Yes | Resizable image options. |
 
 ## sourceSize
 
@@ -977,11 +1218,9 @@ is SVG.
 sourceSize(value: ImageSourceSize)
 ```
 
-Sets the decoding size of the image. This attribute works only when the target size is smaller than the source
-size. This attribute is not applicable to SVG images or **PixelMap** objects.
+Sets the decoding size of the image. This attribute works only when the target size is smaller than the source size. This attribute is not applicable to SVG images or **PixelMap** objects.
 
-This attribute does not take effect when the parameter type of the component is
-[AnimatedDrawableDescriptor](../arkts-apis/arkts-arkui-animateddrawabledescriptor-c.md).
+This attribute does not take effect when the parameter type of the component is [AnimatedDrawableDescriptor](../arkts-apis/arkts-arkui-arkui-drawabledescriptor-animateddrawabledescriptor-c.md).
 
 **Since:** 7
 
@@ -989,13 +1228,15 @@ This attribute does not take effect when the parameter type of the component is
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-ImageAttribute-sourceSize(value: ImageSourceSize): ImageAttribute--><!--Device-ImageAttribute-sourceSize(value: ImageSourceSize): ImageAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ImageSourceSize | Yes | Decoding size of the image. This parameter can be used to reduce the imageresolution when the image display size needs to be smaller than the component size. When this parameter is usedwith **ImageFit.None** of the [objectFit](ImageAttribute#objectFit) API, a small image can be displayedin the component.<br>**Since:** 18 |
+| value | [ImageSourceSize](arkts-arkui-image-imagesourcesize-i.md) | Yes | Decoding size of the image. This parameter can be used to reduce the image resolution when the image display size needs to be smaller than the component size. When this parameter is used with **ImageFit.None** of the [objectFit](ImageAttribute#objectFit) API, a small image can be displayed in the component.<br>**Since:** 18 |
 
 ## supportSvg2
 
@@ -1003,9 +1244,7 @@ This attribute does not take effect when the parameter type of the component is
 supportSvg2(enable: boolean) : ImageAttribute
 ```
 
-Sets whether to enable
-[enhanced SVG tag parsing](../../../../reference/apis-arkui/arkui-ts/ts-image-svg2-capabilities.md). When this
-feature is enabled, SVG image rendering behavior changes accordingly.
+Sets whether to enable [enhanced SVG tag parsing](../../../../reference/apis-arkui/arkui-ts/ts-image-svg2-capabilities.md). When this feature is enabled, SVG image rendering behavior changes accordingly.
 
 After the **Image** component is created, the value of this attribute cannot be dynamically changed.
 
@@ -1016,6 +1255,8 @@ After the **Image** component is created, the value of this attribute cannot be 
 **Atomic service API:** This API can be used in atomic services since API version 21.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 21.
+
+<!--Device-ImageAttribute-supportSvg2(enable: boolean) : ImageAttribute--><!--Device-ImageAttribute-supportSvg2(enable: boolean) : ImageAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -1031,16 +1272,11 @@ After the **Image** component is created, the value of this attribute cannot be 
 syncLoad(value: boolean)
 ```
 
-Specifies whether to load the image synchronously. When loading a small local image, you are advised to set
-**syncLoad** to **true** so that the image loading can be quickly completed on the main thread.
+Specifies whether to load the image synchronously. When loading a small local image, you are advised to set **syncLoad** to **true** so that the image loading can be quickly completed on the main thread.
 
-This attribute does not take effect when the parameter type of the component is
-[AnimatedDrawableDescriptor](../arkts-apis/arkts-arkui-animateddrawabledescriptor-c.md).
+This attribute does not take effect when the parameter type of the component is [AnimatedDrawableDescriptor](../arkts-apis/arkts-arkui-arkui-drawabledescriptor-animateddrawabledescriptor-c.md).
 
-If image flickering occurs during loading, set **syncLoad** to **true**. For details, see
-[Optimizing Concurrent Tasks]
-(https://developer.huawei.com/consumer/en/doc/best-practices/bpta-click-to-click-response-
-optimization#section715115119192).
+If image flickering occurs during loading, set **syncLoad** to **true**. For details, see [Optimizing Concurrent Tasks](https://developer.huawei.com/consumer/en/doc/best-practices/bpta-click-to-click-response-optimization#section715115119192).
 
 **Since:** 8
 
@@ -1048,11 +1284,13 @@ optimization#section715115119192).
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-ImageAttribute-syncLoad(value: boolean): ImageAttribute--><!--Device-ImageAttribute-syncLoad(value: boolean): ImageAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | boolean | Yes | Whether to load the image synchronously. By default, the image is loaded asynchronously.During synchronous loading, the UI thread is blocked and the placeholder image is not displayed.<br>Defaultvalue: **false**<br>**true**: Load the image synchronously.<br>**false**: Load the image asynchronously.<br>Ifthe main thread is blocked for more than 6s, AppFreeze will occur. For details, see[Application Freeze Detection](../../../../dfx/appfreeze-guidelines.md). |
+| value | boolean | Yes | Whether to load the image synchronously. By default, the image is loaded asynchronously.During synchronous loading, the UI thread is blocked and the placeholder image is not displayed.<br>Default value: **false**<br>**true**: Load the image synchronously.<br>**false**: Load the image asynchronously.<br>If the main thread is blocked for more than 6s, AppFreeze will occur. For details, see [Application Freeze Detection](../../../../dfx/appfreeze-guidelines.md). |
 

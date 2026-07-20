@@ -2,6 +2,9 @@
 
 The **Navigator** component provides redirection.
 
+## Child Components
+
+Supported
 
 ## Navigator
 
@@ -18,6 +21,8 @@ Called when the route jumps.
 **Substitutes:** <!--SUBSTITUTE_API-->NavPathInfo<!--/SUBSTITUTE_API-->
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-NavigatorInterface-(value?: { target: string; type?: NavigationType }): NavigatorAttribute--><!--Device-NavigatorInterface-(value?: { target: string; type?: NavigationType }): NavigatorAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -42,6 +47,8 @@ Called when using the navigator.
 **Substitutes:** <!--SUBSTITUTE_API-->NavigationAttribute<!--/SUBSTITUTE_API-->
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-NavigatorInterface-(): NavigatorAttribute--><!--Device-NavigatorInterface-(): NavigatorAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

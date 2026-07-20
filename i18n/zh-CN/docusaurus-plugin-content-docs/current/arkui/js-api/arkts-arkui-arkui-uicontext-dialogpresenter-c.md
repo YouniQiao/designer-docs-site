@@ -85,8 +85,8 @@ present(options?: dialog.DialogStyleOptions): Promise<DialogResult>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 103306 | The dialog cannot be opened due to node mount failure. |
-| 103308 | The dialog cannot be opened due to subwindow create failure. |
+| [103306](../errorcode-promptAction.md#103306-节点挂载失败导致无法打开弹出框) | The dialog cannot be opened due to node mount failure. |
+| [103308](../errorcode-promptAction.md#103308-子窗口创建失败导致无法打开弹出框) | The dialog cannot be opened due to subwindow create failure. |
 
 ## present
 
@@ -132,8 +132,8 @@ content参数通过联合类型接受CustomBuilder或ComponentContent：
 | --- | --- |
 | [103301](../errorcode-promptAction.md#103301-自定义弹窗内容节点错误) | Dialog content error. The ComponentContent is incorrect. |
 | [103302](../errorcode-promptAction.md#103302-内容节点对应自定义弹窗已存在) | Dialog content already exist. The ComponentContent has already been opened. |
-| 103306 | The dialog cannot be opened due to node mount failure. |
-| 103308 | The dialog cannot be opened due to subwindow create failure. |
+| [103306](../errorcode-promptAction.md#103306-节点挂载失败导致无法打开弹出框) | The dialog cannot be opened due to node mount failure. |
+| [103308](../errorcode-promptAction.md#103308-子窗口创建失败导致无法打开弹出框) | The dialog cannot be opened due to subwindow create failure. |
 
 ## update
 

@@ -1,6 +1,6 @@
 # ToolBarItem
 
-Defines the ToolBarItem Component.
+Defines ToolBarItem Component.
 
 
 ## ToolBarItem
@@ -14,6 +14,8 @@ Set the options.
 **Since:** 20
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ToolBarItemInterface-(options?: ToolBarItemOptions): ToolBarItemAttribute--><!--Device-ToolBarItemInterface-(options?: ToolBarItemOptions): ToolBarItemAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

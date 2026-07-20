@@ -1,6 +1,9 @@
 # Circle
 
-Defines circle component.
+The **Circle** component is used to draw a circle.
+> **Child Components**
+>
+> None.
 
 
 ## Circle
@@ -16,6 +19,8 @@ use new function to set the value.
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
+
+<!--Device-CircleInterface-new (value?: CircleOptions): CircleAttribute--><!--Device-CircleInterface-new (value?: CircleOptions): CircleAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -38,6 +43,8 @@ set the value.
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
+
+<!--Device-CircleInterface-(value?: CircleOptions): CircleAttribute--><!--Device-CircleInterface-(value?: CircleOptions): CircleAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

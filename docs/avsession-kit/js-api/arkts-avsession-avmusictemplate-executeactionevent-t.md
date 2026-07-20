@@ -1,0 +1,29 @@
+# ExecuteActionEvent
+
+```TypeScript
+type ExecuteActionEvent = (actionType: string, params: string) => Promise<string>
+```
+
+The execute action event.
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-avMusicTemplate-type ExecuteActionEvent = (actionType: string, params: string) => Promise<string>--><!--Device-avMusicTemplate-type ExecuteActionEvent = (actionType: string, params: string) => Promise<string>-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| actionType | string | Yes | action type |
+| params | string | Yes | params |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Promise&lt;string&gt; | (string) returned through promise |
+

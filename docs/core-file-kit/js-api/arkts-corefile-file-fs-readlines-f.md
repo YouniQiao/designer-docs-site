@@ -12,10 +12,11 @@ import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventList
 declare function readLines(filePath: string, options?: Options): Promise<ReaderIterator>
 ```
 
-Reads the text content of a file line by line. This API uses a promise to return the result. Only the files in UTF-8
-format are supported.
+Reads the text content of a file line by line. This API uses a promise to return the result. Only the files in UTF-8format are supported.
 
 **Since:** 11
+
+<!--Device-unnamed-declare function readLines(filePath: string, options?: Options): Promise<ReaderIterator>--><!--Device-unnamed-declare function readLines(filePath: string, options?: Options): Promise<ReaderIterator>-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
@@ -24,13 +25,13 @@ format are supported.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | filePath | string | Yes | Application sandbox path of the file. |
-| options | Options | No | Options for reading the text. The options are as follows:<br>- **encoding** (string):format of the data to be encoded.<br>It is valid only when the data is of the string type.<br>The default valueis **'utf-8'**, which is the only value supported. |
+| options | [Options](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-zlib-options-i.md) | No | Options for reading the text. The options are as follows:<br>- **encoding** (string):format of the data to be encoded.<br>It is valid only when the data is of the string type.<br>The default value is **'utf-8'**, which is the only value supported. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;ReaderIterator&gt; | Promise used to return a **ReaderIterator** object. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ReaderIterator> | Promise used to return a **ReaderIterator** object. |
 
 **Error codes:**
 
@@ -57,10 +58,11 @@ format are supported.
 declare function readLines(filePath: string, callback: AsyncCallback<ReaderIterator>): void
 ```
 
-Reads a file text line by line. This API uses an asynchronous callback to return the result. Only the files in UTF-8
-format are supported.
+Reads a file text line by line. This API uses an asynchronous callback to return the result. Only the files in UTF-8format are supported.
 
 **Since:** 11
+
+<!--Device-unnamed-declare function readLines(filePath: string, callback: AsyncCallback<ReaderIterator>): void--><!--Device-unnamed-declare function readLines(filePath: string, callback: AsyncCallback<ReaderIterator>): void-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
@@ -69,7 +71,7 @@ format are supported.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | filePath | string | Yes | Application sandbox path of the file. |
-| callback | AsyncCallback&lt;ReaderIterator&gt; | Yes | Callback used to return a **ReaderIterator** object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ReaderIterator> | Yes | Callback used to return a **ReaderIterator** object. |
 
 **Error codes:**
 
@@ -95,10 +97,11 @@ format are supported.
 declare function readLines(filePath: string, options: Options, callback: AsyncCallback<ReaderIterator>): void
 ```
 
-Reads a file text line by line. This API uses an asynchronous callback to return the result. Only the files in UTF-8
-format are supported.
+Reads a file text line by line. This API uses an asynchronous callback to return the result. Only the files in UTF-8format are supported.
 
 **Since:** 11
+
+<!--Device-unnamed-declare function readLines(filePath: string, options: Options, callback: AsyncCallback<ReaderIterator>): void--><!--Device-unnamed-declare function readLines(filePath: string, options: Options, callback: AsyncCallback<ReaderIterator>): void-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
@@ -107,8 +110,8 @@ format are supported.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | filePath | string | Yes | Application sandbox path of the file. |
-| options | Options | Yes | Options for reading the text. The options are as follows:<br>- **encoding** (string):format of the data to be encoded.<br>It is valid only when the data is of the string type.<br>The default valueis **'utf-8'**, which is the only value supported. |
-| callback | AsyncCallback&lt;ReaderIterator&gt; | Yes | Callback used to return a **ReaderIterator** object. |
+| options | [Options](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-zlib-options-i.md) | Yes | Options for reading the text. The options are as follows:<br>- **encoding** (string):format of the data to be encoded.<br>It is valid only when the data is of the string type.<br>The default value is **'utf-8'**, which is the only value supported. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ReaderIterator> | Yes | Callback used to return a **ReaderIterator** object. |
 
 **Error codes:**
 

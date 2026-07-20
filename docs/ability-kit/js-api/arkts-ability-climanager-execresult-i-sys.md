@@ -1,0 +1,138 @@
+# ExecResult (System API)
+
+Execute result of a tool execution.
+
+**Since:** 26.0.0
+
+<!--Device-cliManager-interface ExecResult--><!--Device-cliManager-interface ExecResult-End-->
+
+**System capability:** SystemCapability.Ability.AgentRuntime.Core
+
+**System API:** This is a system API.
+
+## Modules to Import
+
+```TypeScript
+import { cliManager } from '@kit.AbilityKit';
+```
+
+## errorText
+
+```TypeScript
+errorText?: string
+```
+
+Indicates the error output of the tool.
+
+**Type:** string
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ExecResult-errorText?: string--><!--Device-ExecResult-errorText?: string-End-->
+
+**System capability:** SystemCapability.Ability.AgentRuntime.Core
+
+**System API:** This is a system API.
+
+## executionTime
+
+```TypeScript
+executionTime: number
+```
+
+Indicates the execution duration in milliseconds.
+
+**Type:** number
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ExecResult-executionTime: long--><!--Device-ExecResult-executionTime: long-End-->
+
+**System capability:** SystemCapability.Ability.AgentRuntime.Core
+
+**System API:** This is a system API.
+
+## exitCode
+
+```TypeScript
+exitCode?: number
+```
+
+Indicates the exit code, 0 means success.
+
+**Type:** number
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ExecResult-exitCode?: int--><!--Device-ExecResult-exitCode?: int-End-->
+
+**System capability:** SystemCapability.Ability.AgentRuntime.Core
+
+**System API:** This is a system API.
+
+## outputText
+
+```TypeScript
+outputText?: string
+```
+
+Indicates the standard output of the tool.
+
+**Type:** string
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ExecResult-outputText?: string--><!--Device-ExecResult-outputText?: string-End-->
+
+**System capability:** SystemCapability.Ability.AgentRuntime.Core
+
+**System API:** This is a system API.
+
+## signalNumber
+
+```TypeScript
+signalNumber?: number
+```
+
+Indicates the termination signal (if the tool process was terminated by a signal).
+
+**Type:** number
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ExecResult-signalNumber?: int--><!--Device-ExecResult-signalNumber?: int-End-->
+
+**System capability:** SystemCapability.Ability.AgentRuntime.Core
+
+**System API:** This is a system API.
+
+## timeOut
+
+```TypeScript
+timeOut: boolean
+```
+
+Indicates whether it timed out.
+
+**Type:** boolean
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ExecResult-timeOut: boolean--><!--Device-ExecResult-timeOut: boolean-End-->
+
+**System capability:** SystemCapability.Ability.AgentRuntime.Core
+
+**System API:** This is a system API.
+

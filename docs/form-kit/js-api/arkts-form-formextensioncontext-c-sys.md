@@ -1,9 +1,6 @@
 # FormExtensionContext
 
-The FormExtensionContext module, inherited from
-[ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md), provides the context environment for the
-[FormExtensionAbility](arkts-app-form-formextensionability.md).
-You can use the APIs of this module to start a FormExtensionAbility.
+The FormExtensionContext module, inherited from [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md), provides the context environment for the [FormExtensionAbility](arkts-app-form-formextensionability.md).You can use the APIs of this module to start a FormExtensionAbility.
 
 > **NOTE**
 
@@ -12,6 +9,8 @@ You can use the APIs of this module to start a FormExtensionAbility.
 **Inheritance/Implementation:** FormExtensionContext extends [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md)
 
 **Since:** 9
+
+<!--Device-unnamed-declare class FormExtensionContext extends ExtensionContext--><!--Device-unnamed-declare class FormExtensionContext extends ExtensionContext-End-->
 
 **System capability:** SystemCapability.Ability.Form
 
@@ -27,6 +26,8 @@ Connects this ability to a ServiceExtensionAbility.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-FormExtensionContext-connectServiceExtensionAbility(want: Want, options: ConnectOptions): long--><!--Device-FormExtensionContext-connectServiceExtensionAbility(want: Want, options: ConnectOptions): long-End-->
+
 **System capability:** SystemCapability.Ability.Form
 
 **System API:** This is a system API.
@@ -35,8 +36,8 @@ Connects this ability to a ServiceExtensionAbility.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want information about the target ability, such as the ability name and bundle name. |
-| options | ConnectOptions | Yes | Callback used to return the information indicating that the connection is successful, interrupted, or failed. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target ability, such as the ability name and bundle name. |
+| options | [ConnectOptions](../../apis-ability-kit/arkts-apis/arkts-ability-ability-connectoptions-t.md) | Yes | Callback used to return the information indicating that the connection is successful, interrupted, or failed. |
 
 **Return value:**
 
@@ -67,13 +68,13 @@ Connects this ability to a ServiceExtensionAbility.
 disconnectServiceExtensionAbility(connection: number, callback: AsyncCallback<void>): void
 ```
 
-Disconnects this ability from a **ServiceExtensionAbility** and after the successful disconnection, sets the
-**remote** object returned upon the connection to void. This API uses an asynchronous callback to return the
-result.
+Disconnects this ability from a **ServiceExtensionAbility** and after the successful disconnection, sets the **remote** object returned upon the connection to void. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-FormExtensionContext-disconnectServiceExtensionAbility(connection: long, callback: AsyncCallback<void>): void--><!--Device-FormExtensionContext-disconnectServiceExtensionAbility(connection: long, callback: AsyncCallback<void>): void-End-->
 
 **System capability:** SystemCapability.Ability.Form
 
@@ -83,8 +84,8 @@ result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| connection | number | Yes | Number returned after[connectServiceExtensionAbility](arkts-form-formextensioncontext-c-sys.md#connectserviceextensionability-1) is called. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the ability is disconnected, **err** is**undefined**; otherwise, **err** is an error object. |
+| connection | number | Yes | Number returned after [connectServiceExtensionAbility](arkts-form-formextensioncontext-c-sys.md#connectserviceextensionability-1) is called. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the ability is disconnected, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -100,12 +101,13 @@ result.
 disconnectServiceExtensionAbility(connection: number): Promise<void>
 ```
 
-Disconnects this ability from a ServiceExtensionAbility and after the successful disconnection, sets the remote
-object returned upon the connection to void. This API uses a promise to return the result.
+Disconnects this ability from a ServiceExtensionAbility and after the successful disconnection, sets the remote object returned upon the connection to void. This API uses a promise to return the result.
 
 **Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-FormExtensionContext-disconnectServiceExtensionAbility(connection: long): Promise<void>--><!--Device-FormExtensionContext-disconnectServiceExtensionAbility(connection: long): Promise<void>-End-->
 
 **System capability:** SystemCapability.Ability.Form
 
@@ -115,13 +117,13 @@ object returned upon the connection to void. This API uses a promise to return t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| connection | number | Yes | Number returned after[connectServiceExtensionAbility](arkts-form-formextensioncontext-c-sys.md#connectserviceextensionability-1) is called. |
+| connection | number | Yes | Number returned after [connectServiceExtensionAbility](arkts-form-formextensioncontext-c-sys.md#connectserviceextensionability-1) is called. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -143,6 +145,8 @@ Starts an ability. This API uses an asynchronous callback to return the result.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-FormExtensionContext-startAbility(want: Want, callback: AsyncCallback<void>): void--><!--Device-FormExtensionContext-startAbility(want: Want, callback: AsyncCallback<void>): void-End-->
+
 **System capability:** SystemCapability.Ability.Form
 
 **System API:** This is a system API.
@@ -151,8 +155,8 @@ Starts an ability. This API uses an asynchronous callback to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Information about the ability to start, such as the bundle name, ability name, and customparameters. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the ability is started, **err** isundefined; otherwise, **err** is an error object. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Information about the ability to start, such as the bundle name, ability name, and custom parameters. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the ability is started, **err** is undefined; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -177,6 +181,8 @@ Starts an ability. This API uses a promise to return the result.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-FormExtensionContext-startAbility(want: Want): Promise<void>--><!--Device-FormExtensionContext-startAbility(want: Want): Promise<void>-End-->
+
 **System capability:** SystemCapability.Ability.Form
 
 **System API:** This is a system API.
@@ -185,13 +191,13 @@ Starts an ability. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Information about the ability to start, such as the bundle name, ability name, and customparameters. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Information about the ability to start, such as the bundle name, ability name, and custom parameters. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 

@@ -1,10 +1,10 @@
 # RunningMultiInstanceInfo (System API)
 
-The module defines the information of a multi-instance application in the running state. The information can be
-obtained through [getRunningMultiAppInfo](arkts-ability-getrunningmultiappinfo-f-sys.md#getrunningmultiappinfo-1)
-of appManager.
+The module defines the information of a multi-instance application in the running state. The information can be obtained through [getRunningMultiAppInfo](arkts-ability-appmanager-getrunningmultiappinfo-f-sys.md#getrunningmultiappinfo-1)of appManager.
 
 **Since:** 14
+
+<!--Device-unnamed-export interface RunningMultiInstanceInfo--><!--Device-unnamed-export interface RunningMultiInstanceInfo-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -22,6 +22,8 @@ Unique instance ID of a multi-instance application.
 
 **Since:** 14
 
+<!--Device-RunningMultiInstanceInfo-instanceKey: string--><!--Device-RunningMultiInstanceInfo-instanceKey: string-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **System API:** This is a system API.
@@ -38,6 +40,8 @@ Process ID set of the application.
 
 **Since:** 14
 
+<!--Device-RunningMultiInstanceInfo-pids: Array<int>--><!--Device-RunningMultiInstanceInfo-pids: Array<int>-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **System API:** This is a system API.
@@ -53,6 +57,8 @@ UID of the application.
 **Type:** number
 
 **Since:** 14
+
+<!--Device-RunningMultiInstanceInfo-uid: int--><!--Device-RunningMultiInstanceInfo-uid: int-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 

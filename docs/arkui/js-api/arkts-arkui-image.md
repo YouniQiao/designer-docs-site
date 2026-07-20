@@ -12,7 +12,7 @@ HEIF, and TIFF. Note that the APNG and SVGA formats are not supported.
 > - When keyboard shortcuts are used to copy an **Image** component, the **Image** component must be in a focused
 > state. For instructions on how to set focus, see
 > [Setting Whether a Component Is Focusable]
-> (docroot://ui/arkts-common-events-focus-event.md#setting-whether-a-component-is-focusable).
+>  (docroot://ui/arkts-common-events-focus-event.md#setting-whether-a-component-is-focusable).
 > By default, the **Image** component is not focusable. To enable it to gain focus, set both the
 > [focusable]{@link CommonMethod#focusable} and [focusOnTouch]{@link CommonMethod#focusOnTouch} attributes to
 > **true**.
@@ -24,17 +24,26 @@ HEIF, and TIFF. Note that the APNG and SVGA formats are not supported.
 > invisible, the animation is stopped. The visibility status of the **Image** component can be identified through the
 >
 > [onVisibleAreaChange]
-> {@link CommonMethod#onVisibleAreaChange(ratios: Array<number>, event: VisibleAreaChangeCallback)}
+>  {@link CommonMethod#onVisibleAreaChange(ratios: Array<number>, event: VisibleAreaChangeCallback)}
 > event. If the value of **ratios** is greater than 0, the component is visible.
 >
 > - For details about how to resolve white block issues during image loading, see
 > [Solution to White Image Blocks]
-> (https://developer.huawei.com/consumer/en/doc/best-practices/bpta-image-white-lump-solution).
+>  (https://developer.huawei.com/consumer/en/doc/best-practices/bpta-image-white-lump-solution).
 > For details about how to address slow image loading, see
 > [Optimizing Preset Image Loading]
-> (https://developer.huawei.com/consumer/en/doc/best-practices/
->  bpta-texture-compression-improve-performance#section91526132216).
+>  (https://developer.huawei.com/consumer/en/doc/best-practices/bpta-texture-compression-improve-
+>   performance#section91526132216).
 >
+
+Required Permissions
+
+The **ohos.permission.INTERNET** permission is required for using online images. For details about how to apply for a
+permission, see [Declaring Permissions](docroot://security/AccessToken/declare-permissions.md).
+
+Child Components
+
+Not supported
 
 
 ## Image
@@ -45,54 +54,51 @@ Image(src: PixelMap | ResourceStr | DrawableDescriptor)
 
 Obtains an image from the specified source for subsequent rendering and display.
 
-If the **Image** component fails to obtain the image or the obtained image size is 0, the **Image** component is
-automatically resized to 0 and does not follow the layout constraints of its parent component.
+If the **Image** component fails to obtain the image or the obtained image size is 0, the **Image** component is automatically resized to 0 and does not follow the layout constraints of its parent component.
 
-By default, the **Image** component crops images to keep their center. For example, if the component has the same
-width and height, it crops any image whose width and height are different, so as to keep its center.
+By default, the **Image** component crops images to keep their center. For example, if the component has the same width and height, it crops any image whose width and height are different, so as to keep its center.
 
-If the **Image** component does not have its width and height set, its size adapts to that of its parent component
-once the image is successfully loaded.
+If the **Image** component does not have its width and height set, its size adapts to that of its parent component once the image is successfully loaded.
 
-> **NOTE**
->
-> - Passing a URL directly to an **Image** component may lead to potential performance issues, such as: (1) Large
-> images cannot be downloaded in advance during loading, resulting in a long display time of white blocks; (2)
-> Small images set to load synchronously may block the UI thread in a weak network environment, causing screen
-> freezes; (3) In a rapidly scrolling waterfall flow, images that are about to be displayed cannot be downloaded in
-> advance, resulting in many white blocks during scrolling. Performance issues may manifest differently in
-> different scenarios. To minimize these issues, separate the network download part from the display of the
-> **Image** component, and download in advance or asynchronously. For details about how to resolve white block
-> issues during image loading, see
-> [Solution to White Image Blocks]
-> (https://developer.huawei.com/consumer/en/doc/best-practices/bpta-image-white-lump-solution).
-> For details about how to address slow image loading, see
-> [Optimizing Preset Image Loading]
-> (https://developer.huawei.com/consumer/en/doc/best-practices/bpta-texture-compression-improve-performance).
->
->
-> - When **src** is switched from a valid value (an image resource that can be parsed and loaded correctly) to an
-> invalid value (an image path that cannot be parsed or loaded), the component retains the previously successfully
-> loaded image content without clearing or resetting it.
->
-> - If the input parameter is of the [PixelMap]{@link @ohos.multimedia.image:image.PixelMap} type, the **Image**
-> component can detect data changes only when the **PixelMap** object is updated to point to a new instance. If
-> modifications are made to the content of the **PixelMap** object, such as pixel values, but the reference to the
-> object remains the same, the **Image** component will not recognize these modifications as a data change.
->
-> - If the input parameter of the **Image** component is a Base64 string, the standard format of the Base64 string
-> is **data:image/subtype;base64,Base64EncodedData**. In this format, **subtype** indicates the type declaration,
-> **Base64EncodedData** indicates the Base64-encoded data, and other values are fixed strings. For example, the
-> input parameter of a PNG image is **data:image/png;base64,iVBORw0KGgo...**.
-> >
-> > 1. **image/subType** declares the data type. The **Image** component does not enforce that the declared type
-> exactly matches the actual image format decoded from Base64. In some scenarios, the image may still display
-> correctly even if the declared type does not match the actual format. To prevent future behavior changes or
-> unknown issues, it is recommended that the declared type always match the actual image format.
-> >
-> > 2. The **Image** component does not support the wildcard syntax: **data:image/*;base64,Base64EncodedData**.
-> The **subType** must explicitly declare the specific image type.
-> >
+> **NOTE**  
+>  
+> - Passing a URL directly to an **Image** component may lead to potential performance issues, such as: (1) Large  
+> images cannot be downloaded in advance during loading, resulting in a long display time of white blocks; (2)  
+> Small images set to load synchronously may block the UI thread in a weak network environment, causing screen  
+> freezes; (3) In a rapidly scrolling waterfall flow, images that are about to be displayed cannot be downloaded in  
+> advance, resulting in many white blocks during scrolling. Performance issues may manifest differently in  
+> different scenarios. To minimize these issues, separate the network download part from the display of the  
+> **Image** component, and download in advance or asynchronously. For details about how to resolve white block  
+> issues during image loading, see  
+> [Solution to White Image Blocks]  
+> (https://developer.huawei.com/consumer/en/doc/best-practices/bpta-image-white-lump-solution).  
+> For details about how to address slow image loading, see  
+> [Optimizing Preset Image Loading]  
+> (https://developer.huawei.com/consumer/en/doc/best-practices/bpta-texture-compression-improve-performance).  
+>  
+>  
+> - When **src** is switched from a valid value (an image resource that can be parsed and loaded correctly) to an  
+> invalid value (an image path that cannot be parsed or loaded), the component retains the previously successfully  
+> loaded image content without clearing or resetting it.  
+>  
+> - If the input parameter is of the [PixelMap]{@link @ohos.multimedia.image:image.PixelMap} type, the **Image**  
+> component can detect data changes only when the **PixelMap** object is updated to point to a new instance. If  
+> modifications are made to the content of the **PixelMap** object, such as pixel values, but the reference to the  
+> object remains the same, the **Image** component will not recognize these modifications as a data change.  
+>  
+> - If the input parameter of the **Image** component is a Base64 string, the standard format of the Base64 string  
+> is **data:image/subtype;base64,Base64EncodedData**. In this format, **subtype** indicates the type declaration,  
+> **Base64EncodedData** indicates the Base64-encoded data, and other values are fixed strings. For example, the  
+> input parameter of a PNG image is **data:image/png;base64,iVBORw0KGgo...**.  
+> >  
+> > 1. **image/subType** declares the data type. The **Image** component does not enforce that the declared type  
+> exactly matches the actual image format decoded from Base64. In some scenarios, the image may still display  
+> correctly even if the declared type does not match the actual format. To prevent future behavior changes or  
+> unknown issues, it is recommended that the declared type always match the actual image format.  
+> >  
+> > 2. The **Image** component does not support the wildcard syntax: **data:image/*;base64,Base64EncodedData**.  
+> The **subType** must explicitly declare the specific image type.  
+> >  
 > > 3. The **Image** component does not support loading SVG images in Base64 string format.
 
 **Since:** 7
@@ -100,6 +106,8 @@ once the image is successfully loaded.
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
+
+<!--Device-ImageInterface-(src: PixelMap | ResourceStr | DrawableDescriptor): ImageAttribute--><!--Device-ImageInterface-(src: PixelMap | ResourceStr | DrawableDescriptor): ImageAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -125,6 +133,8 @@ Obtains an image. The [ImageContent]{@link ImageContent} type allows you to spec
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 12.
 
+<!--Device-ImageInterface-(src: PixelMap | ResourceStr | DrawableDescriptor | ImageContent): ImageAttribute--><!--Device-ImageInterface-(src: PixelMap | ResourceStr | DrawableDescriptor | ImageContent): ImageAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
@@ -149,6 +159,8 @@ Set src to obtain images
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 26.0.0.
 
+<!--Device-ImageInterface-(src: PixelMap | ResourceStr | DrawableDescriptor | ImageContent, reloadKey?: string): ImageAttribute--><!--Device-ImageInterface-(src: PixelMap | ResourceStr | DrawableDescriptor | ImageContent, reloadKey?: string): ImageAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
@@ -171,6 +183,8 @@ Obtains an image. The [imageAIOptions]{@link ImageAIOptions} parameter allows yo
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-ImageInterface-(src: PixelMap | ResourceStr | DrawableDescriptor, imageAIOptions: ImageAIOptions): ImageAttribute--><!--Device-ImageInterface-(src: PixelMap | ResourceStr | DrawableDescriptor, imageAIOptions: ImageAIOptions): ImageAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -195,6 +209,10 @@ Set src and ai options to obtain images
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+<!--Device-ImageInterface-(src: PixelMap | ResourceStr | DrawableDescriptor,
+      imageAIOptions?: ImageAIOptions, reloadKey?: string): ImageAttribute--><!--Device-ImageInterface-(src: PixelMap | ResourceStr | DrawableDescriptor,
+      imageAIOptions?: ImageAIOptions, reloadKey?: string): ImageAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

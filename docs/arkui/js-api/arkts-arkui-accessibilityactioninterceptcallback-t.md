@@ -4,8 +4,7 @@
 declare type AccessibilityActionInterceptCallback = (action: AccessibilityAction) => AccessibilityActionInterceptResult
 ```
 
-Defines the callback type used in accessibility action intercept.
-The value of action indicates the accessibility action type.
+Defines the callback type used in accessibility action intercept.The value of action indicates the accessibility action type.
 
 **Since:** 20
 
@@ -14,6 +13,8 @@ The value of action indicates the accessibility action type.
 **Atomic service API:** This API can be used in atomic services since API version 20.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 20.
+
+<!--Device-unnamed-declare type AccessibilityActionInterceptCallback = (action: AccessibilityAction) => AccessibilityActionInterceptResult--><!--Device-unnamed-declare type AccessibilityActionInterceptCallback = (action: AccessibilityAction) => AccessibilityActionInterceptResult-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

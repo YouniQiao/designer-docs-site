@@ -14,11 +14,13 @@ declare function symlink(target: string, srcPath: string): Promise<void>
 
 Creates a symbolic link based on a file path. This API uses a promise to return the result.
 
-> **NOTE**
->
+> **NOTE**  
+>  
 > Since API version 11, this API cannot be used by third-party applications.
 
 **Since:** 9
+
+<!--Device-unnamed-declare function symlink(target: string, srcPath: string): Promise<void>--><!--Device-unnamed-declare function symlink(target: string, srcPath: string): Promise<void>-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
@@ -33,7 +35,7 @@ Creates a symbolic link based on a file path. This API uses a promise to return 
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -63,11 +65,13 @@ declare function symlink(target: string, srcPath: string, callback: AsyncCallbac
 
 Creates a symbolic link based on the file path. This API uses an asynchronous callback to return the result.
 
-> **NOTE**
->
+> **NOTE**  
+>  
 > Since API version 11, this API cannot be used by third-party applications.
 
 **Since:** 9
+
+<!--Device-unnamed-declare function symlink(target: string, srcPath: string, callback: AsyncCallback<void>): void--><!--Device-unnamed-declare function symlink(target: string, srcPath: string, callback: AsyncCallback<void>): void-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
@@ -77,7 +81,7 @@ Creates a symbolic link based on the file path. This API uses an asynchronous ca
 | --- | --- | --- | --- |
 | target | string | Yes | Application sandbox path of the target file. |
 | srcPath | string | Yes | Application sandbox path of the symbolic link. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
 
 **Error codes:**
 

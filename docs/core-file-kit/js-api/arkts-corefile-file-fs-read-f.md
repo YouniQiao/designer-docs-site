@@ -22,6 +22,16 @@ Reads file data. This API uses a promise to return the result.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-unnamed-declare function read(
+  fd: number,
+  buffer: ArrayBuffer,
+  options?: ReadOptions
+): Promise<number>--><!--Device-unnamed-declare function read(
+  fd: number,
+  buffer: ArrayBuffer,
+  options?: ReadOptions
+): Promise<number>-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
@@ -29,14 +39,14 @@ Reads file data. This API uses a promise to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | fd | number | Yes | FD of the file. |
-| buffer | ArrayBuffer | Yes | Buffer used to store the file data read. |
-| options | ReadOptions | No | The options are as follows:<br>- **offset** (number): position of the data to readin the file, in bytes. This parameter is optional. By default, data is read from the current position.<br>-**length** (number): length of the data to read, in bytes. This parameter is optional. The default value is thebuffer length.<br>**Since:** 11 |
+| buffer | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Buffer used to store the file data read. |
+| options | [ReadOptions](arkts-corefile-file-fs-readoptions-i.md) | No | The options are as follows:<br>- **offset** (number): position of the data to read in the file, in bytes. This parameter is optional. By default, data is read from the current position.<br>-**length** (number): length of the data to read, in bytes. This parameter is optional. The default value is the buffer length.<br>**Since:** 11 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;number&gt; | Promise used to return the length of the data read, in bytes. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the length of the data read, in bytes. |
 
 **Error codes:**
 
@@ -66,6 +76,8 @@ Reads data from a file. This API uses an asynchronous callback to return the res
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-unnamed-declare function read(fd: number, buffer: ArrayBuffer, callback: AsyncCallback<number>): void--><!--Device-unnamed-declare function read(fd: number, buffer: ArrayBuffer, callback: AsyncCallback<number>): void-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
@@ -73,8 +85,8 @@ Reads data from a file. This API uses an asynchronous callback to return the res
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | fd | number | Yes | FD of the file. |
-| buffer | ArrayBuffer | Yes | Buffer used to store the file data read. |
-| callback | AsyncCallback&lt;number&gt; | Yes | Callback used to return the length of the data read, in bytes. |
+| buffer | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Buffer used to store the file data read. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the length of the data read, in bytes. |
 
 **Error codes:**
 
@@ -108,6 +120,18 @@ Reads data from a file. This API uses an asynchronous callback to return the res
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-unnamed-declare function read(
+  fd: number,
+  buffer: ArrayBuffer,
+  options: ReadOptions,
+  callback: AsyncCallback<number>
+): void--><!--Device-unnamed-declare function read(
+  fd: number,
+  buffer: ArrayBuffer,
+  options: ReadOptions,
+  callback: AsyncCallback<number>
+): void-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
@@ -115,9 +139,9 @@ Reads data from a file. This API uses an asynchronous callback to return the res
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | fd | number | Yes | FD of the file. |
-| buffer | ArrayBuffer | Yes | Buffer used to store the file data read. |
-| options | ReadOptions | Yes | The options are as follows:<br>- **offset** (number): position of the data to readin the file, in bytes. This parameter is optional. By default, data is read from the current position.<br>-**length** (number): length of the data to read, in bytes. This parameter is optional. The default value is thebuffer length.<br>**Since:** 11 |
-| callback | AsyncCallback&lt;number&gt; | Yes | Callback used to return the length of the data read, in bytes. |
+| buffer | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Buffer used to store the file data read. |
+| options | [ReadOptions](arkts-corefile-file-fs-readoptions-i.md) | Yes | The options are as follows:<br>- **offset** (number): position of the data to read in the file, in bytes. This parameter is optional. By default, data is read from the current position.<br>-**length** (number): length of the data to read, in bytes. This parameter is optional. The default value is the buffer length.<br>**Since:** 11 |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the length of the data read, in bytes. |
 
 **Error codes:**
 

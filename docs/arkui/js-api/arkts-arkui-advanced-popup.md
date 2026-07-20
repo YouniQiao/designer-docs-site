@@ -18,8 +18,8 @@ import { Popup, PopupOptions, PopupButtonOptions, PopupIconOptions, PopupTextOpt
 
 | Name | Description |
 | --- | --- |
-| [PopupButtonOptions](arkts-arkui-popupbuttonoptions-i.md) | Defines the button attributes and events. |
-| [PopupIconOptions](arkts-arkui-popupiconoptions-i.md) | Defines the icon options. |
-| [PopupOptions](arkts-arkui-popupoptions-i.md) | Defines the style parameters of the popup. |
-| [PopupTextOptions](arkts-arkui-popuptextoptions-i.md) | Provides text style settings. |
+| [PopupButtonOptions](arkts-arkui-arkui-advanced-popup-popupbuttonoptions-i.md) | Defines the button attributes and events. |
+| [PopupIconOptions](arkts-arkui-arkui-advanced-popup-popupiconoptions-i.md) | Defines the icon options. |
+| [PopupOptions](arkts-arkui-arkui-advanced-popup-popupoptions-i.md) | Defines the style parameters of the popup. |
+| [PopupTextOptions](arkts-arkui-arkui-advanced-popup-popuptextoptions-i.md) | Provides text style settings. |
 

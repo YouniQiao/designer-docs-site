@@ -13,6 +13,9 @@ screen.
 > <!--RP1End--> implements the pattern lock function using the [Canvas]{@link canvas} component. You can extend its
 > functionality as required.
 
+## Child Components
+
+Not supported
 
 ## PatternLock
 
@@ -25,6 +28,8 @@ Creates a pattern lock component.
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-PatternLockInterface-(controller?: PatternLockController): PatternLockAttribute--><!--Device-PatternLockInterface-(controller?: PatternLockController): PatternLockAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

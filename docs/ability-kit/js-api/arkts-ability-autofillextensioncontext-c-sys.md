@@ -1,11 +1,12 @@
 # AutoFillExtensionContext (System API)
 
-The AutoFillExtensionContext module provides the context environment for the AutoFillExtensionAbility. It inherits
-from [ExtensionContext](arkts-ability-extensioncontext-c.md).
+The AutoFillExtensionContext module provides the context environment for the AutoFillExtensionAbility. It inherits from [ExtensionContext](arkts-ability-extensioncontext-c.md).
 
 **Inheritance/Implementation:** AutoFillExtensionContext extends [ExtensionContext](arkts-ability-extensioncontext-c.md)
 
 **Since:** 11
+
+<!--Device-unnamed-declare class AutoFillExtensionContext extends ExtensionContext--><!--Device-unnamed-declare class AutoFillExtensionContext extends ExtensionContext-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
@@ -23,6 +24,8 @@ Reload autoFillExtension in modal window.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-AutoFillExtensionContext-reloadInModal(customData: CustomData): Promise<void>--><!--Device-AutoFillExtensionContext-reloadInModal(customData: CustomData): Promise<void>-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
 **System API:** This is a system API.
@@ -31,13 +34,13 @@ Reload autoFillExtension in modal window.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| customData | CustomData | Yes | User defined data. When the modal window of AutoFillExtensionneeds to be raised again, pass this parameter to the application framework. |
+| customData | [CustomData](arkts-ability-customdata-i-sys.md) | Yes | User defined data. When the modal window of AutoFillExtension needs to be raised again, pass this parameter to the application framework. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | The promise returned by the function. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
 
 **Error codes:**
 

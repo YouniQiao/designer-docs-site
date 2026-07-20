@@ -1,0 +1,52 @@
+# getMacAddress
+
+## Modules to Import
+
+```TypeScript
+import { ethernet } from '@kit.NetworkKit';
+```
+
+## getMacAddress
+
+```TypeScript
+function getMacAddress(): Promise<Array<MacAddressInfo>>
+```
+
+Get the ethernet mac address list.
+
+**Since:** 14
+
+**Required permissions:** ohos.permission.GET_ETHERNET_LOCAL_MAC
+
+<!--Device-ethernet-function getMacAddress(): Promise<Array<MacAddressInfo>>--><!--Device-ethernet-function getMacAddress(): Promise<Array<MacAddressInfo>>-End-->
+
+**System capability:** SystemCapability.Communication.NetManager.Ethernet
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<MacAddressInfo>> | the promise returned by the function. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
+| [2200002](../errorcode-net-sharing.md#2200002-service-connection-failure) | Operation failed. Cannot connect to service. |
+| [2201005](../errorcode-net-ethernet.md#2201005-device-information-not-exist) | Device information does not exist. |
+
+**Example**
+
+```TypeScript
+import { ethernet } from '@kit.NetworkKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+ethernet.getMacAddress().then((data: Array<ethernet.MacAddressInfo>) => {
+  console.info("getMacAddress promise data = " + JSON.stringify(data));
+}).catch((error: BusinessError) => {
+  console.error("getMacAddress promise error = " + JSON.stringify(error));
+});
+
+```
+

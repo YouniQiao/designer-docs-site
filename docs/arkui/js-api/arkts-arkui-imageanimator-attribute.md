@@ -8,6 +8,8 @@ In addition to the [universal events](./common), the following events are suppor
 
 **Since:** 7
 
+<!--Device-unnamed-declare class ImageAnimatorAttribute extends CommonMethod<ImageAnimatorAttribute>--><!--Device-unnamed-declare class ImageAnimatorAttribute extends CommonMethod<ImageAnimatorAttribute>-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 ## duration
@@ -16,8 +18,7 @@ In addition to the [universal events](./common), the following events are suppor
 duration(value: number)
 ```
 
-Sets the playback duration. This attribute does not take effect when a separate duration is set for any of the
-image frames.
+Sets the playback duration. This attribute does not take effect when a separate duration is set for any of the image frames.
 
 **Since:** 7
 
@@ -25,13 +26,15 @@ image frames.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 10.
 
+<!--Device-ImageAnimatorAttribute-duration(value: number): ImageAnimatorAttribute--><!--Device-ImageAnimatorAttribute-duration(value: number): ImageAnimatorAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | number | Yes | Playback duration.<br>If the value is **0**, no image is played.<br>If the displayduration allocated per image is shorter than a single frame interval, playback anomalies may occur.<br>If it isset to a negative value, the default value is used.<br>The value change takes effect only at the start of thenext cycle.<br>Unit: ms<br>Default value: **1000** |
+| value | number | Yes | Playback duration.<br>If the value is **0**, no image is played.<br>If the display duration allocated per image is shorter than a single frame interval, playback anomalies may occur.<br>If it is set to a negative value, the default value is used.<br>The value change takes effect only at the start of the next cycle.<br>Unit: ms<br>Default value: **1000** |
 
 ## fillMode
 
@@ -39,13 +42,7 @@ image frames.
 fillMode(value: FillMode)
 ```
 
-Sets the status before and after execution of the animation in the current playback direction. The status after
-execution of the animation is jointly determined by the **fillMode** and **reverse** attributes. For example, if
-**fillMode** is set to **Forwards**, the target will retain the state defined by the last keyframe encountered
-during execution. In this case, if **reverse** is set to **false**, the target will retain the state defined by the
-last keyframe encountered in the forward direction, that is, the last image; if **reverse** is set to **true**, the
-target will retain the state defined by the last keyframe encountered in the backward direction, that is, the first
-image.
+Sets the status before and after execution of the animation in the current playback direction. The status after execution of the animation is jointly determined by the **fillMode** and **reverse** attributes. For example, if **fillMode** is set to **Forwards**, the target will retain the state defined by the last keyframe encountered during execution. In this case, if **reverse** is set to **false**, the target will retain the state defined by the last keyframe encountered in the forward direction, that is, the last image; if **reverse** is set to **true**, the target will retain the state defined by the last keyframe encountered in the backward direction, that is, the first image.
 
 **Since:** 7
 
@@ -53,13 +50,15 @@ image.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 10.
 
+<!--Device-ImageAnimatorAttribute-fillMode(value: FillMode): ImageAnimatorAttribute--><!--Device-ImageAnimatorAttribute-fillMode(value: FillMode): ImageAnimatorAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | FillMode | Yes | Status before and after execution of the animation in the current playback direction.&lt;br&gt;Default value: **FillMode.Forwards** |
+| value | [FillMode](../arkts-apis/arkts-arkui-enums-fillmode-e.md) | Yes | Status before and after execution of the animation in the current playback direction.<br>Default value: **FillMode.Forwards** |
 
 ## fixedSize
 
@@ -75,13 +74,15 @@ Sets whether the image size is fixed at the component size.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 10.
 
+<!--Device-ImageAnimatorAttribute-fixedSize(value: boolean): ImageAnimatorAttribute--><!--Device-ImageAnimatorAttribute-fixedSize(value: boolean): ImageAnimatorAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | boolean | Yes | Whether the image size is fixed at the component size.<br> **true**: The image size isfixed at the component size. In this case, the width, height, top, and left attributes of the image areinvalid.<br> **false**: The width, height, top, and left attributes of each image must be set separately. Ifthe image size does not match the component size, the image will not be stretched.<br>Default value: **true** |
+| value | boolean | Yes | Whether the image size is fixed at the component size.<br> **true**: The image size is fixed at the component size. In this case, the width, height, top, and left attributes of the image are invalid.<br> **false**: The width, height, top, and left attributes of each image must be set separately. If the image size does not match the component size, the image will not be stretched.<br>Default value: **true** |
 
 ## images
 
@@ -97,13 +98,15 @@ Sets image frame information. Dynamic update is not supported.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 10.
 
+<!--Device-ImageAnimatorAttribute-images(value: Array<ImageFrameInfo>): ImageAnimatorAttribute--><!--Device-ImageAnimatorAttribute-images(value: Array<ImageFrameInfo>): ImageAnimatorAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | Array&lt;ImageFrameInfo&gt; | Yes | Image frame information. The information of each frame includes the path,size, position, and playback duration of an image. For details, see [ImageFrameInfo](arkts-arkui-imageframeinfo-i.md).<br>Default value: **[]**<br> Note: If the input array is too large, memory usage may increase. Therefore, as thecontroller of memory usage, be sure to assess potential memory consumption before passing in the data to avoidissues such as insufficient memory. |
+| value | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ImageFrameInfo> | Yes | Image frame information. The information of each frame includes the path,size, position, and playback duration of an image. For details, see [ImageFrameInfo](arkts-arkui-image-animator-imageframeinfo-i.md).<br>Default value: **[]**<br> Note: If the input array is too large, memory usage may increase. Therefore, as the controller of memory usage, be sure to assess potential memory consumption before passing in the data to avoid issues such as insufficient memory. |
 
 ## iterations
 
@@ -117,13 +120,15 @@ Sets the number of times that the animation is played.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-ImageAnimatorAttribute-iterations(value: number): ImageAnimatorAttribute--><!--Device-ImageAnimatorAttribute-iterations(value: number): ImageAnimatorAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | number | Yes | By default, the animation is played once. The value **-1** indicates that the animationis played for an unlimited number of times. Values less than **-1** are treated as the default value. When thevalue is a floating-point number, it is rounded down.<br>Default value: **1** |
+| value | number | Yes | By default, the animation is played once. The value **-1** indicates that the animation is played for an unlimited number of times. Values less than **-1** are treated as the default value. When the value is a floating-point number, it is rounded down.<br>Default value: **1** |
 
 ## monitorInvisibleArea
 
@@ -131,9 +136,7 @@ Sets the number of times that the animation is played.
 monitorInvisibleArea(monitorInvisibleArea: boolean) : ImageAnimatorAttribute
 ```
 
-Sets whether the component should automatically pause or resume based on its visibility, using the system's
-[onVisibleAreaChange]
-{@link CommonMethod#onVisibleAreaChange(ratios: Array<number>, event: VisibleAreaChangeCallback)} event.
+Sets whether the component should automatically pause or resume based on its visibility, using the system's [onVisibleAreaChange](arkts-arkui-common-commonmethod-c.md#onvisibleareachange-1) event.
 
 **Since:** 17
 
@@ -141,13 +144,15 @@ Sets whether the component should automatically pause or resume based on its vis
 
 **Atomic service API:** This API can be used in atomic services since API version 17.
 
+<!--Device-ImageAnimatorAttribute-monitorInvisibleArea(monitorInvisibleArea: boolean) : ImageAnimatorAttribute--><!--Device-ImageAnimatorAttribute-monitorInvisibleArea(monitorInvisibleArea: boolean) : ImageAnimatorAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitorInvisibleArea | boolean | Yes | Whether the component should automatically pause or resume based on itsvisibility, using the system's [onVisibleAreaChange](arkts-arkui-commonmethod-c.md#onvisibleareachange-1)event.<br> With the value **true**, when the component's [AnimationStatus](arkts-arkui-animationstatus-e.md) is**Running**, the component automatically pauses once it becomes invisible and resumes playback if it becomesvisible again, based on the **onVisibleAreaChange** event.<br>With the value **false**, the pause and playbackof the component are not affected by **onVisibleAreaChange**.<br>Default value: **false**<br> **NOTE**<br>Whenthis parameter is dynamically changed from **true** to **false**, the component will resume from its lastpaused state based on the current [AnimationStatus](arkts-arkui-animationstatus-e.md).<br>Changes to this propertydo not affect the custom [state](ImageAnimatorAttribute#state) value. |
+| monitorInvisibleArea | boolean | Yes | Whether the component should automatically pause or resume based on its visibility, using the system's [onVisibleAreaChange](arkts-arkui-common-commonmethod-c.md#onvisibleareachange-1)event.<br> With the value **true**, when the component's [AnimationStatus](../arkts-apis/arkts-arkui-enums-animationstatus-e.md) is **Running**, the component automatically pauses once it becomes invisible and resumes playback if it becomes visible again, based on the **onVisibleAreaChange** event.<br>With the value **false**, the pause and playback of the component are not affected by **onVisibleAreaChange**.<br>Default value: **false**<br> **NOTE**<br>When this parameter is dynamically changed from **true** to **false**, the component will resume from its last paused state based on the current [AnimationStatus](../arkts-apis/arkts-arkui-enums-animationstatus-e.md).<br>Changes to this property do not affect the custom [state](ImageAnimatorAttribute#state) value. |
 
 ## onCancel
 
@@ -163,13 +168,15 @@ Triggered when the animation playback returns to the initial state.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 10.
 
+<!--Device-ImageAnimatorAttribute-onCancel(event: () => void): ImageAnimatorAttribute--><!--Device-ImageAnimatorAttribute-onCancel(event: () => void): ImageAnimatorAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | () =&gt; void | Yes | Callback triggered when the animation playback returns to the initial state. |
+| event | () => void | Yes | Callback triggered when the animation playback returns to the initial state. |
 
 ## onFinish
 
@@ -185,13 +192,15 @@ Triggered when the animation playback completes or stops.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 10.
 
+<!--Device-ImageAnimatorAttribute-onFinish(event: () => void): ImageAnimatorAttribute--><!--Device-ImageAnimatorAttribute-onFinish(event: () => void): ImageAnimatorAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | () =&gt; void | Yes | Callback triggered when the animation playback completes or stops. |
+| event | () => void | Yes | Callback triggered when the animation playback completes or stops. |
 
 ## onPause
 
@@ -207,13 +216,15 @@ Triggered when the animation playback is paused.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 10.
 
+<!--Device-ImageAnimatorAttribute-onPause(event: () => void): ImageAnimatorAttribute--><!--Device-ImageAnimatorAttribute-onPause(event: () => void): ImageAnimatorAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | () =&gt; void | Yes | Callback triggered when the animation playback is paused. |
+| event | () => void | Yes | Callback triggered when the animation playback is paused. |
 
 ## onRepeat
 
@@ -227,13 +238,15 @@ Triggered when the animation playback is repeated.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-ImageAnimatorAttribute-onRepeat(event: () => void): ImageAnimatorAttribute--><!--Device-ImageAnimatorAttribute-onRepeat(event: () => void): ImageAnimatorAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | () =&gt; void | Yes | Callback triggered when the animation playback is repeated. |
+| event | () => void | Yes | Callback triggered when the animation playback is repeated. |
 
 ## onStart
 
@@ -249,13 +262,15 @@ Triggered when the animation starts to play.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 10.
 
+<!--Device-ImageAnimatorAttribute-onStart(event: () => void): ImageAnimatorAttribute--><!--Device-ImageAnimatorAttribute-onStart(event: () => void): ImageAnimatorAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | () =&gt; void | Yes | Callback triggered when the animation starts to play. |
+| event | () => void | Yes | Callback triggered when the animation starts to play. |
 
 ## preDecode
 
@@ -265,14 +280,16 @@ preDecode(value: number)
 
 Sets the number of images to be pre-decoded.
 
-> **NOTE**
->
-> This API is supported since API version 7 and deprecated since API version 9. Currently, no substitute is
+> **NOTE**  
+>  
+> This API is supported since API version 7 and deprecated since API version 9. Currently, no substitute is  
 > available.
 
 **Since:** 7
 
 **Deprecated since:** 9
+
+<!--Device-ImageAnimatorAttribute-preDecode(value: number): ImageAnimatorAttribute--><!--Device-ImageAnimatorAttribute-preDecode(value: number): ImageAnimatorAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -280,7 +297,7 @@ Sets the number of images to be pre-decoded.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | number | Yes | Number of images to be pre-decoded. For example, the value **2** indicates that twoimages following the currently playing one are pre-decoded.<br>Default value: **0** |
+| value | number | Yes | Number of images to be pre-decoded. For example, the value **2** indicates that two images following the currently playing one are pre-decoded.<br>Default value: **0** |
 
 ## reverse
 
@@ -296,13 +313,15 @@ Sets the playback direction.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 10.
 
+<!--Device-ImageAnimatorAttribute-reverse(value: boolean): ImageAnimatorAttribute--><!--Device-ImageAnimatorAttribute-reverse(value: boolean): ImageAnimatorAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | boolean | Yes | Playback direction.<br>The value **false** indicates that images are played from thefirst one to the last one, and **true** indicates that images are played from the last one to the first one.<br>Default value: **false** |
+| value | boolean | Yes | Playback direction.<br>The value **false** indicates that images are played from the first one to the last one, and **true** indicates that images are played from the last one to the first one.<br  >Default value: **false** |
 
 ## state
 
@@ -318,11 +337,13 @@ Sets the playback state of the animation.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 10.
 
+<!--Device-ImageAnimatorAttribute-state(value: AnimationStatus): ImageAnimatorAttribute--><!--Device-ImageAnimatorAttribute-state(value: AnimationStatus): ImageAnimatorAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | AnimationStatus | Yes | Playback state of the animation.<br>Default value: **AnimationStatus.Initial** |
+| value | [AnimationStatus](../arkts-apis/arkts-arkui-enums-animationstatus-e.md) | Yes | Playback state of the animation.<br>Default value: **AnimationStatus.Initial** |
 

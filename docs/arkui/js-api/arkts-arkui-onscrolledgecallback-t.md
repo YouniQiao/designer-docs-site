@@ -12,6 +12,8 @@ Represents the callback triggered when scrolling reaches an edge.
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
 
+<!--Device-unnamed-declare type OnScrollEdgeCallback = (side: Edge) => void--><!--Device-unnamed-declare type OnScrollEdgeCallback = (side: Edge) => void-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**

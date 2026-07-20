@@ -14,13 +14,13 @@ declare function copy(srcUri: string, destUri: string, options?: CopyOptions): P
 
 Copies a file or directory. This API uses a promise to return the result.
 
-File copy across devices is supported. This API forcibly overwrites the file or directory. The input parameter can be
-the URI of the file or directory.
+File copy across devices is supported. This API forcibly overwrites the file or directory. The input parameter can be the URI of the file or directory.
 
-A maximum of 10 cross-device copy tasks are allowed at the same time, and the number of files to be copied at a time
-cannot exceed 500.
+A maximum of 10 cross-device copy tasks are allowed at the same time, and the number of files to be copied at a time cannot exceed 500.
 
 **Since:** 11
+
+<!--Device-unnamed-declare function copy(srcUri: string, destUri: string, options?: CopyOptions): Promise<void>--><!--Device-unnamed-declare function copy(srcUri: string, destUri: string, options?: CopyOptions): Promise<void>-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
@@ -30,13 +30,13 @@ cannot exceed 500.
 | --- | --- | --- | --- |
 | srcUri | string | Yes | URI of the file or directory to copy. |
 | destUri | string | Yes | URI of the destination file or directory. |
-| options | CopyOptions | No | Callback invoked to provide the copy progress. If this parameter is not set, thecallback will not be invoked. |
+| options | [CopyOptions](../../apis-arkui/arkts-apis/arkts-arkui-enums-copyoptions-e.md) | No | Callback invoked to provide the copy progress. If this parameter is not set, the callback will not be invoked. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -78,11 +78,11 @@ declare function copy(srcUri: string, destUri: string, callback: AsyncCallback<v
 
 Copies a file or directory. This API uses an asynchronous callback to return the result.
 
-File copy across devices is supported. This API forcibly overwrites the file or directory.
-The input parameter can be the URI of the file or directory. A maximum of 10 cross-device copy tasks
-are allowed at the same time, and the number of files to be copied at a time cannot exceed 500.
+File copy across devices is supported. This API forcibly overwrites the file or directory.The input parameter can be the URI of the file or directory. A maximum of 10 cross-device copy tasks are allowed at the same time, and the number of files to be copied at a time cannot exceed 500.
 
 **Since:** 11
+
+<!--Device-unnamed-declare function copy(srcUri: string, destUri: string, callback: AsyncCallback<void>): void--><!--Device-unnamed-declare function copy(srcUri: string, destUri: string, callback: AsyncCallback<void>): void-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
@@ -92,7 +92,7 @@ are allowed at the same time, and the number of files to be copied at a time can
 | --- | --- | --- | --- |
 | srcUri | string | Yes | URI of the file or directory to copy. |
 | destUri | string | Yes | URI of the destination file or directory. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -133,11 +133,11 @@ declare function copy(srcUri: string, destUri: string, options: CopyOptions, cal
 
 Copies a file or directory. This API uses an asynchronous callback to return the result.
 
-File copy across devices is supported. This API forcibly overwrites the file or directory.
-The input parameter can be the URI of the file or directory. A maximum of 10 cross-device copy tasks
-are allowed at the same time, and the number of files to be copied at a time cannot exceed 500.
+File copy across devices is supported. This API forcibly overwrites the file or directory.The input parameter can be the URI of the file or directory. A maximum of 10 cross-device copy tasks are allowed at the same time, and the number of files to be copied at a time cannot exceed 500.
 
 **Since:** 11
+
+<!--Device-unnamed-declare function copy(srcUri: string, destUri: string, options: CopyOptions, callback: AsyncCallback<void>): void--><!--Device-unnamed-declare function copy(srcUri: string, destUri: string, options: CopyOptions, callback: AsyncCallback<void>): void-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
@@ -147,8 +147,8 @@ are allowed at the same time, and the number of files to be copied at a time can
 | --- | --- | --- | --- |
 | srcUri | string | Yes | URI of the file or directory to copy. |
 | destUri | string | Yes | URI of the destination file or directory. |
-| options | CopyOptions | Yes | Callback used to return the copy progress. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. |
+| options | [CopyOptions](../../apis-arkui/arkts-apis/arkts-arkui-enums-copyoptions-e.md) | Yes | Callback used to return the copy progress. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
 
 **Error codes:**
 

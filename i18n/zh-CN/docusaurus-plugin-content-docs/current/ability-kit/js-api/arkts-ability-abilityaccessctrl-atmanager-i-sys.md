@@ -331,6 +331,7 @@ getPermissionRequestToggleStatus(permissionName: Permissions): Promise<Permissio
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Not System App. Interface caller is not a system app. |
 | [12100001](../errorcode-access-token.md#12100001-入参错误) | Invalid parameter. The permissionName exceeds 256 characters, or the specified permission is not a user_grant permission. |
 | [12100003](../errorcode-access-token.md#12100003-权限名不存在) | The specified permission does not exist. |
+| [12100004](../errorcode-access-token.md#12100004-接口未配套使用) | This API must be used together with [setPermissionRequestToggleStatus](arkts-ability-abilityaccessctrl-atmanager-i-sys.md#setpermissionrequesttogglestatus-1).<br>**适用版本：** 26.1.0+ |
 | [12100007](../errorcode-access-token.md#12100007-系统服务工作异常) | Service exception. |
 
 **示例：**
@@ -353,6 +354,57 @@ atManager.getPermissionRequestToggleStatus(permission).then((res: abilityAccessC
 });
 
 ```
+
+## getPermissionRequestToggleStatus
+
+```TypeScript
+getPermissionRequestToggleStatus(
+      permissionName: Permissions,
+      subProfileId: number): Promise<PermissionRequestToggleStatus>
+```
+
+获取指定子身份资料下指定权限的弹窗开关状态。使用Promise异步回调。
+
+**起始版本：** 26.1.0
+
+**需要权限：** ohos.permission.GET_SENSITIVE_PERMISSIONS
+
+**模型约束：** 此接口仅可在Stage模型下使用。
+
+<!--Device-AtManager-getPermissionRequestToggleStatus(
+      permissionName: Permissions,
+      subProfileId: int): Promise<PermissionRequestToggleStatus>--><!--Device-AtManager-getPermissionRequestToggleStatus(
+      permissionName: Permissions,
+      subProfileId: int): Promise<PermissionRequestToggleStatus>-End-->
+
+**系统能力：** SystemCapability.Security.AccessToken
+
+**系统接口：** 此接口为系统接口。
+
+**参数：**
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| permissionName | Permissions | 是 | 待查询弹窗开关状态的权限名称。传入无效值时返回错误码12100001。<br>取值约束：权限名长度不能超过256个字。 |
+| subProfileId | number | 是 | 子身份资料的标识符。可以通过[OsAccountSubProfile.id](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-osaccountsubprofile-i-sys.md#id)获取。<br>取值限定为整数。取值约束：该参数必须为大于0的整数。 |
+
+**返回值：**
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise<PermissionRequestToggleStatus> | Promise对象，返回指定权限的弹窗开关状态值 |
+
+**错误码：**
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. Interface caller does not have permission specified below. |
+| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Not System App. Interface caller is not a system app. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported. |
+| [12100001](../errorcode-access-token.md#12100001-入参错误) | Invalid parameter. The permissionName exceeds 256 characters, the specified permission is not a user_grant permission, or the specified subProfileId does not exist for the current user. |
+| [12100003](../errorcode-access-token.md#12100003-权限名不存在) | The specified permission does not exist. |
+| [12100007](../errorcode-access-token.md#12100007-系统服务工作异常) | Service exception. |
+| [12100009](../errorcode-access-token.md#12100009-服务内部错误) | Common inner error. A database error occurs. |
 
 ## getPermissionsStatus
 
@@ -1333,6 +1385,7 @@ setPermissionRequestToggleStatus(permissionName: Permissions, status: Permission
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Not System App. Interface caller is not a system app. |
 | [12100001](../errorcode-access-token.md#12100001-入参错误) | Invalid parameter. The permissionName exceeds 256 characters, the specified permission is not a user_grant permission, or the status value is invalid. |
 | [12100003](../errorcode-access-token.md#12100003-权限名不存在) | The specified permission does not exist. |
+| [12100006](../errorcode-access-token.md#12100006-指定的应用不支持被授予或被取消授予指定的权限) | Operation not allowed. The toggle status of the specified permission has already been set by [setPermissionRequestToggleStatus](arkts-ability-abilityaccessctrl-atmanager-i-sys.md#setpermissionrequesttogglestatus-2).<br>**适用版本：** 26.1.0+ |
 | [12100007](../errorcode-access-token.md#12100007-系统服务工作异常) | Service exception. |
 | [12100009](../errorcode-access-token.md#12100009-服务内部错误) | Common inner error. A database error occurs. |
 
@@ -1352,4 +1405,60 @@ atManager.setPermissionRequestToggleStatus(permission, abilityAccessCtrl.Permiss
 });
 
 ```
+
+## setPermissionRequestToggleStatus
+
+```TypeScript
+setPermissionRequestToggleStatus(
+      permissionName: Permissions,
+      status: PermissionRequestToggleStatus,
+      subProfileId: number): Promise<void>
+```
+
+设置指定子身份资料下指定权限的弹窗开关状态。调用成功后，该权限的弹窗开关状态将被设置为指定值。当状态为CLOSED时，应用请求该权限时不会弹出权限弹窗；当状态为OPEN时，应用请求该权限时会正常弹出权限弹窗。使用Promise异步回调。
+
+**起始版本：** 26.1.0
+
+**需要权限：** ohos.permission.DISABLE_PERMISSION_DIALOG
+
+**模型约束：** 此接口仅可在Stage模型下使用。
+
+<!--Device-AtManager-setPermissionRequestToggleStatus(
+      permissionName: Permissions,
+      status: PermissionRequestToggleStatus,
+      subProfileId: int): Promise<void>--><!--Device-AtManager-setPermissionRequestToggleStatus(
+      permissionName: Permissions,
+      status: PermissionRequestToggleStatus,
+      subProfileId: int): Promise<void>-End-->
+
+**系统能力：** SystemCapability.Security.AccessToken
+
+**系统接口：** 此接口为系统接口。
+
+**参数：**
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| permissionName | Permissions | 是 | 待设置弹窗开关状态的权限名称。传入无效值时返回错误码12100001。<br>取值约束：权限名长度不能超过256个字符。 |
+| status | [PermissionRequestToggleStatus](arkts-ability-abilityaccessctrl-permissionrequesttogglestatus-e-sys.md) | 是 | 指定权限的弹窗开关状态值。 |
+| subProfileId | number | 是 | 子身份资料的标识符。可以通过[OsAccountSubProfile.id](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-osaccountsubprofile-i-sys.md#id)获取。<br>取值限定为整数。取值约束：该参数必须为大于0的整数。 |
+
+**返回值：**
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise<void> | Promise对象，无返回结果 |
+
+**错误码：**
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. Interface caller does not have permission specified below. |
+| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Not System App. Interface caller is not a system app. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported. |
+| [12100001](../errorcode-access-token.md#12100001-入参错误) | Invalid parameter. The permissionName exceeds 256 characters, the specified permission is not a user_grant permission, the status value is invalid, or the specified subProfileId does not exist for the current user. |
+| [12100003](../errorcode-access-token.md#12100003-权限名不存在) | The specified permission does not exist. |
+| [12100006](../errorcode-access-token.md#12100006-指定的应用不支持被授予或被取消授予指定的权限) | Operation not allowed. The toggle status of the specified permission has already been set by [setPermissionRequestToggleStatus](arkts-ability-abilityaccessctrl-atmanager-i-sys.md#setpermissionrequesttogglestatus-2). |
+| [12100007](../errorcode-access-token.md#12100007-系统服务工作异常) | Service exception. |
+| [12100009](../errorcode-access-token.md#12100009-服务内部错误) | Common inner error. A database error occurs. |
 

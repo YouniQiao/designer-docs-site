@@ -1,16 +1,16 @@
 # InputMethodExtensionContext
 
-The **InputMethodExtensionContext** module, inherited from **ExtensionContext**, provides context for
-**InputMethodExtension** abilities. You can use the APIs of this module to start, terminate, connect, and disconnect
-abilities.
+The **InputMethodExtensionContext** module, inherited from **ExtensionContext**, provides context for **InputMethodExtension** abilities. You can use the APIs of this module to start, terminate, connect, and disconnect abilities.
 
-> **NOTE**
->
+> **NOTE**  
+>  
 > - The APIs of this module can be used only in the stage model.
 
 **Inheritance/Implementation:** InputMethodExtensionContext extends [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md)
 
 **Since:** 9
+
+<!--Device-unnamed-declare class InputMethodExtensionContext extends ExtensionContext--><!--Device-unnamed-declare class InputMethodExtensionContext extends ExtensionContext-End-->
 
 **System capability:** SystemCapability.MiscServices.InputMethodFramework
 
@@ -32,13 +32,15 @@ Destroys this input method. This API uses an asynchronous callback to return the
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-InputMethodExtensionContext-destroy(callback: AsyncCallback<void>): void--><!--Device-InputMethodExtensionContext-destroy(callback: AsyncCallback<void>): void-End-->
+
 **System capability:** SystemCapability.MiscServices.InputMethodFramework
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Example**
 
@@ -77,13 +79,15 @@ Destroys this input method. This API uses a promise to return the result.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-InputMethodExtensionContext-destroy(): Promise<void>--><!--Device-InputMethodExtensionContext-destroy(): Promise<void>-End-->
+
 **System capability:** SystemCapability.MiscServices.InputMethodFramework
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Example**
 
@@ -120,19 +124,21 @@ Starts an ability. This API uses a promise to return the result.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-InputMethodExtensionContext-startAbility(want: Want): Promise<void>--><!--Device-InputMethodExtensionContext-startAbility(want: Want): Promise<void>-End-->
+
 **System capability:** SystemCapability.MiscServices.InputMethodFramework
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want information, including the ability name and bundle name of the target application. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information, including the ability name and bundle name of the target application. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 

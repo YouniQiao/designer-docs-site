@@ -1,7 +1,6 @@
 # DynamicComponent
 
-Provide an interface for the DynamicComponent, which is used to render UI of other ABC
-
+Defines DynamicComponent Component.
 
 ## DynamicComponent
 
@@ -9,12 +8,13 @@ Provide an interface for the DynamicComponent, which is used to render UI of oth
 DynamicComponent(options: DynamicOptions)
 ```
 
-Construct the DynamicComponentInterface.<br/>
-Called when the DynamicComponentInterface is used.
+Construct the DynamicComponentInterface.<br/>Called when the DynamicComponentInterface is used.
 
 **Since:** 26.0.0
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-DynamicComponentInterface-(options: DynamicOptions): DynamicComponentAttribute--><!--Device-DynamicComponentInterface-(options: DynamicOptions): DynamicComponentAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

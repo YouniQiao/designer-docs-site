@@ -1,0 +1,376 @@
+# TreeListenerV2
+
+Declare class TreeListenerV2
+
+**Since:** 26.0.0
+
+<!--Device-unnamed-export declare class TreeListenerV2--><!--Device-unnamed-export declare class TreeListenerV2-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## Modules to Import
+
+```TypeScript
+import { TreeListenerManagerV2, NodeParamV2, CallbackParamV2, TreeControllerV2, TreeViewV2, TreeListenerV2 } from '@kit.ArkUI';
+```
+
+## offNodeAdd
+
+```TypeScript
+offNodeAdd(callback?: OnChangedCallback): void
+```
+
+Destroy node add callback event.
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+<!--Device-TreeListenerV2-offNodeAdd(callback?: OnChangedCallback): void--><!--Device-TreeListenerV2-offNodeAdd(callback?: OnChangedCallback): void-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [OnChangedCallback](arkts-arkui-onchangedcallback-t.md) | No |  |
+
+## offNodeClick
+
+```TypeScript
+offNodeClick(callback?: OnChangedCallback): void
+```
+
+Destroy node click callback event.
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+<!--Device-TreeListenerV2-offNodeClick(callback?: OnChangedCallback): void--><!--Device-TreeListenerV2-offNodeClick(callback?: OnChangedCallback): void-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [OnChangedCallback](arkts-arkui-onchangedcallback-t.md) | No |  |
+
+## offNodeDelete
+
+```TypeScript
+offNodeDelete(callback?: OnChangedCallback): void
+```
+
+Destroy node delete callback event.
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+<!--Device-TreeListenerV2-offNodeDelete(callback?: OnChangedCallback): void--><!--Device-TreeListenerV2-offNodeDelete(callback?: OnChangedCallback): void-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [OnChangedCallback](arkts-arkui-onchangedcallback-t.md) | No |  |
+
+## offNodeModify
+
+```TypeScript
+offNodeModify(callback?: OnChangedCallback): void
+```
+
+Destroy node modify callback event.
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+<!--Device-TreeListenerV2-offNodeModify(callback?: OnChangedCallback): void--><!--Device-TreeListenerV2-offNodeModify(callback?: OnChangedCallback): void-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [OnChangedCallback](arkts-arkui-onchangedcallback-t.md) | No |  |
+
+## offNodeMove
+
+```TypeScript
+offNodeMove(callback?: OnChangedCallback): void
+```
+
+Destroy node move callback event.
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+<!--Device-TreeListenerV2-offNodeMove(callback?: OnChangedCallback): void--><!--Device-TreeListenerV2-offNodeMove(callback?: OnChangedCallback): void-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [OnChangedCallback](arkts-arkui-onchangedcallback-t.md) | No |  |
+
+## onNodeAdd
+
+```TypeScript
+onNodeAdd(callback: OnChangedCallback): void
+```
+
+Node add event registration and processing.The event will not be destroyed after being processed.
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+<!--Device-TreeListenerV2-onNodeAdd(callback: OnChangedCallback): void--><!--Device-TreeListenerV2-onNodeAdd(callback: OnChangedCallback): void-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [OnChangedCallback](arkts-arkui-onchangedcallback-t.md) | Yes |  |
+
+## onNodeClick
+
+```TypeScript
+onNodeClick(callback: OnChangedCallback): void
+```
+
+Node click event registration and processing.The event will not be destroyed after being processed.
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+<!--Device-TreeListenerV2-onNodeClick(callback: OnChangedCallback): void--><!--Device-TreeListenerV2-onNodeClick(callback: OnChangedCallback): void-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [OnChangedCallback](arkts-arkui-onchangedcallback-t.md) | Yes |  |
+
+## onNodeDelete
+
+```TypeScript
+onNodeDelete(callback: OnChangedCallback): void
+```
+
+Node delete event registration and processing.The event will not be destroyed after being processed.
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+<!--Device-TreeListenerV2-onNodeDelete(callback: OnChangedCallback): void--><!--Device-TreeListenerV2-onNodeDelete(callback: OnChangedCallback): void-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [OnChangedCallback](arkts-arkui-onchangedcallback-t.md) | Yes |  |
+
+## onNodeModify
+
+```TypeScript
+onNodeModify(callback: OnChangedCallback): void
+```
+
+Node modify event registration and processing.The event will not be destroyed after being processed.
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+<!--Device-TreeListenerV2-onNodeModify(callback: OnChangedCallback): void--><!--Device-TreeListenerV2-onNodeModify(callback: OnChangedCallback): void-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [OnChangedCallback](arkts-arkui-onchangedcallback-t.md) | Yes |  |
+
+## onNodeMove
+
+```TypeScript
+onNodeMove(callback: OnChangedCallback): void
+```
+
+Node move event registration and processing.The event will not be destroyed after being processed.
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+<!--Device-TreeListenerV2-onNodeMove(callback: OnChangedCallback): void--><!--Device-TreeListenerV2-onNodeMove(callback: OnChangedCallback): void-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [OnChangedCallback](arkts-arkui-onchangedcallback-t.md) | Yes |  |
+
+## onceNodeAdd
+
+```TypeScript
+onceNodeAdd(callback: OnChangedCallback): void
+```
+
+Node add event registration and processing.After the event is processed once, it will be destroyed.
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+<!--Device-TreeListenerV2-onceNodeAdd(callback: OnChangedCallback): void--><!--Device-TreeListenerV2-onceNodeAdd(callback: OnChangedCallback): void-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [OnChangedCallback](arkts-arkui-onchangedcallback-t.md) | Yes |  |
+
+## onceNodeClick
+
+```TypeScript
+onceNodeClick(callback: OnChangedCallback): void
+```
+
+Node click event registration and processing.After the event is processed once, it will be destroyed.
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+<!--Device-TreeListenerV2-onceNodeClick(callback: OnChangedCallback): void--><!--Device-TreeListenerV2-onceNodeClick(callback: OnChangedCallback): void-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [OnChangedCallback](arkts-arkui-onchangedcallback-t.md) | Yes |  |
+
+## onceNodeDelete
+
+```TypeScript
+onceNodeDelete(callback: OnChangedCallback): void
+```
+
+Node delete event registration and processing.After the event is processed once, it will be destroyed.
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+<!--Device-TreeListenerV2-onceNodeDelete(callback: OnChangedCallback): void--><!--Device-TreeListenerV2-onceNodeDelete(callback: OnChangedCallback): void-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [OnChangedCallback](arkts-arkui-onchangedcallback-t.md) | Yes |  |
+
+## onceNodeModify
+
+```TypeScript
+onceNodeModify(callback: OnChangedCallback): void
+```
+
+Node modify event registration and processing.After the event is processed once, it will be destroyed.
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+<!--Device-TreeListenerV2-onceNodeModify(callback: OnChangedCallback): void--><!--Device-TreeListenerV2-onceNodeModify(callback: OnChangedCallback): void-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [OnChangedCallback](arkts-arkui-onchangedcallback-t.md) | Yes |  |
+
+## onceNodeMove
+
+```TypeScript
+onceNodeMove(callback: OnChangedCallback): void
+```
+
+Node move event registration and processing.After the event is processed once, it will be destroyed.
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+<!--Device-TreeListenerV2-onceNodeMove(callback: OnChangedCallback): void--><!--Device-TreeListenerV2-onceNodeMove(callback: OnChangedCallback): void-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [OnChangedCallback](arkts-arkui-onchangedcallback-t.md) | Yes |  |
+

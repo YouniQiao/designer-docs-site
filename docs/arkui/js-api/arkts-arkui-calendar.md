@@ -1,6 +1,6 @@
 # Calendar
 
-Calendar Interface
+Defines Calendar Component.
 
 
 ## Calendar
@@ -22,6 +22,20 @@ Set value.
 **Deprecated since:** 20
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 10.
+
+<!--Device-CalendarInterface-(value: {
+    date: { year: number; month: number; day: number };
+    currentData: MonthData;
+    preData: MonthData;
+    nextData: MonthData;
+    controller?: CalendarController;
+  }): CalendarAttribute--><!--Device-CalendarInterface-(value: {
+    date: { year: number; month: number; day: number };
+    currentData: MonthData;
+    preData: MonthData;
+    nextData: MonthData;
+    controller?: CalendarController;
+  }): CalendarAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

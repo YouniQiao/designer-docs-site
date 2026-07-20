@@ -16,6 +16,8 @@ Obtains an extended attribute of a file or directory. This API uses a promise to
 
 **Since:** 12
 
+<!--Device-unnamed-declare function getxattr(path: string, key: string): Promise<string>--><!--Device-unnamed-declare function getxattr(path: string, key: string): Promise<string>-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
@@ -29,7 +31,7 @@ Obtains an extended attribute of a file or directory. This API uses a promise to
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;string&gt; | Promise used to return the value of the extended attribute obtained. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the value of the extended attribute obtained. |
 
 **Error codes:**
 

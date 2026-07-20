@@ -6,6 +6,8 @@
 
 **起始版本：** 12
 
+<!--Device-unnamed-declare class XComponentAttribute extends CommonMethod<XComponentAttribute>--><!--Device-unnamed-declare class XComponentAttribute extends CommonMethod<XComponentAttribute>-End-->
+
 **系统能力：** SystemCapability.ArkUI.ArkUI.Full
 
 ## enableAnalyzer
@@ -14,16 +16,15 @@
 enableAnalyzer(enable: boolean)
 ```
 
-设置是否启用AI图像分析器，支持主体识别、文字识别和查找对象。
-要使设置生效，此属性必须与XComponentController的StartImageAnalyzer和StopImageAnalyzer一起使用。
-此特性不能与overlay属性同时使用。
-如果两者都设置，overlay中的CustomBuilder属性将不生效。此特性还依赖于设备能力。
+设置是否启用AI图像分析器，支持主体识别、文字识别和查找对象。要使设置生效，此属性必须与XComponentController的StartImageAnalyzer和StopImageAnalyzer一起使用。此特性不能与overlay属性同时使用。如果两者都设置，overlay中的CustomBuilder属性将不生效。此特性还依赖于设备能力。
 
 **起始版本：** 12
 
 **模型约束：** 此接口仅可在Stage模型下使用。
 
-**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API版本12开始，该接口支持在原子化服务API中使用。
+
+<!--Device-XComponentAttribute-enableAnalyzer(enable: boolean): XComponentAttribute--><!--Device-XComponentAttribute-enableAnalyzer(enable: boolean): XComponentAttribute-End-->
 
 **系统能力：** SystemCapability.ArkUI.ArkUI.Full
 
@@ -45,7 +46,9 @@ enableSecure(isSecure: boolean)
 
 **模型约束：** 此接口仅可在Stage模型下使用。
 
-**元服务API：** 从API版本13开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API版本13开始，该接口支持在原子化服务API中使用。
+
+<!--Device-XComponentAttribute-enableSecure(isSecure: boolean): XComponentAttribute--><!--Device-XComponentAttribute-enableSecure(isSecure: boolean): XComponentAttribute-End-->
 
 **系统能力：** SystemCapability.ArkUI.ArkUI.Full
 
@@ -67,7 +70,9 @@ hdrBrightness(brightness: number)
 
 **模型约束：** 此接口仅可在Stage模型下使用。
 
-**元服务API：** 从API版本20开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API版本20开始，该接口支持在原子化服务API中使用。
+
+<!--Device-XComponentAttribute-hdrBrightness(brightness: number): XComponentAttribute--><!--Device-XComponentAttribute-hdrBrightness(brightness: number): XComponentAttribute-End-->
 
 **系统能力：** SystemCapability.ArkUI.ArkUI.Full
 
@@ -89,7 +94,9 @@ hdrBrightness(brightness: number, type?: HdrType)
 
 **模型约束：** 此接口仅可在Stage模型下使用。
 
-**元服务API：** 从API版本24开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API版本24开始，该接口支持在原子化服务API中使用。
+
+<!--Device-XComponentAttribute-hdrBrightness(brightness: number, type?: HdrType): XComponentAttribute--><!--Device-XComponentAttribute-hdrBrightness(brightness: number, type?: HdrType): XComponentAttribute-End-->
 
 **系统能力：** SystemCapability.ArkUI.ArkUI.Full
 
@@ -98,7 +105,7 @@ hdrBrightness(brightness: number, type?: HdrType)
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | brightness | number | 是 | 控制HDR视频的亮度。 |
-| type | HdrType | 否 | XComponent的HDR类型。 |
+| type | [HdrType](arkts-arkui-xcomponent-hdrtype-e.md) | 否 | XComponent的HDR类型。 |
 
 ## onDestroy
 
@@ -106,12 +113,13 @@ hdrBrightness(brightness: number, type?: HdrType)
 onDestroy(event: VoidCallback)
 ```
 
-当插件销毁时触发。
-Anonymous Object Rectification.
+当插件销毁时触发。Anonymous Object Rectification.
 
 **起始版本：** 18
 
-**元服务API：** 从API版本18开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API版本18开始，该接口支持在原子化服务API中使用。
+
+<!--Device-XComponentAttribute-onDestroy(event: VoidCallback): XComponentAttribute--><!--Device-XComponentAttribute-onDestroy(event: VoidCallback): XComponentAttribute-End-->
 
 **系统能力：** SystemCapability.ArkUI.ArkUI.Full
 
@@ -119,7 +127,7 @@ Anonymous Object Rectification.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| event | VoidCallback | 是 | XComponent销毁后的回调。 |
+| event | [VoidCallback](../arkts-apis/arkts-arkui-voidcallback-t.md) | 是 | XComponent销毁后的回调。 |
 
 ## onLoad
 
@@ -127,12 +135,13 @@ Anonymous Object Rectification.
 onLoad(callback: OnNativeLoadCallback)
 ```
 
-当插件加载时触发。
-Anonymous Object Rectification.
+当插件加载时触发。Anonymous Object Rectification.
 
 **起始版本：** 18
 
-**元服务API：** 从API版本18开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API版本18开始，该接口支持在原子化服务API中使用。
+
+<!--Device-XComponentAttribute-onLoad(callback: OnNativeLoadCallback): XComponentAttribute--><!--Device-XComponentAttribute-onLoad(callback: OnNativeLoadCallback): XComponentAttribute-End-->
 
 **系统能力：** SystemCapability.ArkUI.ArkUI.Full
 
@@ -140,5 +149,5 @@ Anonymous Object Rectification.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | OnNativeLoadCallback | 是 | XComponent所持有的surface创建完成后的回调。 |
+| callback | [OnNativeLoadCallback](arkts-arkui-onnativeloadcallback-t.md) | 是 | XComponent所持有的surface创建完成后的回调。 |
 

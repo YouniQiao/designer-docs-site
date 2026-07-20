@@ -1,13 +1,10 @@
 # AbilityFirstFrameStateData (System API)
 
-The module defines the struct reported by the callback when the first frame of an ability is rendered. After
-registering the first frame rendering completion event of an ability by using
-[on](arkts-ability-on-f-sys.md#on-5)
-, you can obtain the reported struct through the
-[onAbilityFirstFrameDrawn](arkts-ability-abilityfirstframestateobserver-i-sys.md#onabilityfirstframedrawn-1)
-callback of [AbilityFirstFrameStateObserver](arkts-ability-abilityfirstframestateobserver-i-sys.md).
+The module defines the struct reported by the callback when the first frame of an ability is rendered. After registering the first frame rendering completion event of an ability by using [on](arkts-ability-appmanager-on-f-sys.md#on-5), you can obtain the reported struct through the [onAbilityFirstFrameDrawn](arkts-ability-abilityfirstframestateobserver-i-sys.md#onabilityfirstframedrawn-1)callback of [AbilityFirstFrameStateObserver](arkts-ability-abilityfirstframestateobserver-i-sys.md).
 
 **Since:** 12
+
+<!--Device-unnamed-export interface AbilityFirstFrameStateData--><!--Device-unnamed-export interface AbilityFirstFrameStateData-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -24,6 +21,8 @@ The ability name.
 **Type:** string
 
 **Since:** 12
+
+<!--Device-AbilityFirstFrameStateData-abilityName: string--><!--Device-AbilityFirstFrameStateData-abilityName: string-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -43,6 +42,8 @@ The index of DLP sandbox.
 
 **Since:** 12
 
+<!--Device-AbilityFirstFrameStateData-appIndex: int--><!--Device-AbilityFirstFrameStateData-appIndex: int-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **System API:** This is a system API.
@@ -58,6 +59,8 @@ The bundle name.
 **Type:** string
 
 **Since:** 12
+
+<!--Device-AbilityFirstFrameStateData-bundleName: string--><!--Device-AbilityFirstFrameStateData-bundleName: string-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -77,6 +80,8 @@ The entry ability of application is cold-start return true, others false.
 
 **Since:** 12
 
+<!--Device-AbilityFirstFrameStateData-isColdStart: boolean--><!--Device-AbilityFirstFrameStateData-isColdStart: boolean-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **System API:** This is a system API.
@@ -92,6 +97,8 @@ The module name.
 **Type:** string
 
 **Since:** 12
+
+<!--Device-AbilityFirstFrameStateData-moduleName: string--><!--Device-AbilityFirstFrameStateData-moduleName: string-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 

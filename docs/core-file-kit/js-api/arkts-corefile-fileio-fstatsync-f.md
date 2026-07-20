@@ -14,6 +14,8 @@ Obtains file status based on the file descriptor. This API returns the result sy
 
 **Substitutes:** [fs:statSync](arkts-corefile-file-fs-statsync-f.md#statsync-1)
 
+<!--Device-unnamed-declare function fstatSync(fd: number): Stat--><!--Device-unnamed-declare function fstatSync(fd: number): Stat-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
@@ -26,5 +28,5 @@ Obtains file status based on the file descriptor. This API returns the result sy
 
 | Type | Description |
 | --- | --- |
-| Stat | Detailed file status obtained. |
+| [Stat](arkts-corefile-file-fs-stat-i.md) | Detailed file status obtained. |
 

@@ -1,0 +1,81 @@
+# isScreenLocked
+
+## Modules to Import
+
+```TypeScript
+import { screenLock } from '@kit.BasicServicesKit';
+```
+
+## isScreenLocked
+
+```TypeScript
+function isScreenLocked(callback: AsyncCallback<boolean>): void
+```
+
+Checks whether the screen is currently locked.
+
+**Since:** 7
+
+**Deprecated since:** 9
+
+<!--Device-screenLock-function isScreenLocked(callback: AsyncCallback<boolean>): void--><!--Device-screenLock-function isScreenLocked(callback: AsyncCallback<boolean>): void-End-->
+
+**System capability:** SystemCapability.MiscServices.ScreenLock
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | the callback of isScreenLocked. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@ohos.base';
+
+screenLock.isScreenLocked((err: BusinessError, data: Boolean)=>{      
+  if (err) {
+    console.error(`Failed to obtain whether the screen is locked, Code: ${err.code}, message: ${err.message}`);
+    return;    
+  }
+  console.info(`Succeeded in Obtaining whether the screen is locked. result: ${data}`);
+});
+
+```
+
+
+## isScreenLocked
+
+```TypeScript
+function isScreenLocked(): Promise<boolean>
+```
+
+Checks whether the screen is currently locked.
+
+**Since:** 7
+
+**Deprecated since:** 9
+
+<!--Device-screenLock-function isScreenLocked(): Promise<boolean>--><!--Device-screenLock-function isScreenLocked(): Promise<boolean>-End-->
+
+**System capability:** SystemCapability.MiscServices.ScreenLock
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | the promise returned by the function. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@ohos.base';
+
+screenLock.isScreenLocked().then((data: Boolean) => {
+  console.info(`Succeeded in Obtaining whether the screen is locked. result: ${data}`);
+}).catch((err: BusinessError) => {
+  console.error(`Failed to obtain whether the screen is locked, Code: ${err.code}, message: ${err.message}`);
+});
+
+```
+

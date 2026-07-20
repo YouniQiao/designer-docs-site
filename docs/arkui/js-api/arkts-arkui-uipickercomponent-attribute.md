@@ -8,6 +8,8 @@ In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-ap
 
 **Since:** 22
 
+<!--Device-unnamed-declare class UIPickerComponentAttribute extends CommonMethod<UIPickerComponentAttribute>--><!--Device-unnamed-declare class UIPickerComponentAttribute extends CommonMethod<UIPickerComponentAttribute>-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 ## canLoop
@@ -18,13 +20,10 @@ canLoop(isLoop: Optional<boolean>)
 
 Sets whether the option list can loop scrolling.
 
-- true: Loop scrolling is enabled.
+- true: Loop scrolling is enabled.  
 - false: Loop scrolling is disabled.
 
-Default value: true
-If the value of isLoop is undefined, the default value is used.
-If the number of child components is less than 8,
-loop scrolling will not occur regardless of whether isLoop is set to true or false.
+Default value: true If the value of isLoop is undefined, the default value is used.If the number of child components is less than 8,loop scrolling will not occur regardless of whether isLoop is set to true or false.
 
 **Since:** 22
 
@@ -32,13 +31,15 @@ loop scrolling will not occur regardless of whether isLoop is set to true or fal
 
 **Atomic service API:** This API can be used in atomic services since API version 22.
 
+<!--Device-UIPickerComponentAttribute-canLoop(isLoop: Optional<boolean>): UIPickerComponentAttribute--><!--Device-UIPickerComponentAttribute-canLoop(isLoop: Optional<boolean>): UIPickerComponentAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| isLoop | Optional&lt;boolean&gt; | Yes | Whether loop scrolling is enabled. |
+| isLoop | [Optional](arkts-arkui-optional-t.md)<boolean> | Yes | Whether loop scrolling is enabled. |
 
 ## displayedItemCount
 
@@ -54,13 +55,15 @@ Sets the total number of visible items.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 
+<!--Device-UIPickerComponentAttribute-displayedItemCount(count: Optional<int>): UIPickerComponentAttribute--><!--Device-UIPickerComponentAttribute-displayedItemCount(count: Optional<int>): UIPickerComponentAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| count | Optional&lt;number&gt; | Yes | The total number of visible items. |
+| count | [Optional](arkts-arkui-optional-t.md)<number> | Yes | The total number of visible items. |
 
 ## enableHapticFeedback
 
@@ -70,15 +73,12 @@ enableHapticFeedback(enable: Optional<boolean>)
 
 Sets whether to enable haptic feedback.
 
-To enable haptic feedback, you must declare the following permission under **requestPermissions** in **module** in
-**src/main/module.json5** of the project.
+To enable haptic feedback, you must declare the following permission under **requestPermissions** in **module** in **src/main/module.json5** of the project.
 
-- true: Enable haptic feedback.
+- true: Enable haptic feedback.  
 - false: Disable haptic feedback.
 
-Default value: true
-If the value of enable is undefined, the default value is used.
-After this function is enabled, whether haptic feedback is available depends on the hardware support of the system.
+Default value: true If the value of enable is undefined, the default value is used.After this function is enabled, whether haptic feedback is available depends on the hardware support of the system.
 
 **Since:** 22
 
@@ -86,13 +86,15 @@ After this function is enabled, whether haptic feedback is available depends on 
 
 **Atomic service API:** This API can be used in atomic services since API version 22.
 
+<!--Device-UIPickerComponentAttribute-enableHapticFeedback(enable: Optional<boolean>): UIPickerComponentAttribute--><!--Device-UIPickerComponentAttribute-enableHapticFeedback(enable: Optional<boolean>): UIPickerComponentAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| enable | Optional&lt;boolean&gt; | Yes | Whether to enable haptic feedback. |
+| enable | [Optional](arkts-arkui-optional-t.md)<boolean> | Yes | Whether to enable haptic feedback. |
 
 ## itemHeight
 
@@ -108,13 +110,15 @@ Sets the height of each item.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 
+<!--Device-UIPickerComponentAttribute-itemHeight(height: Optional<LengthMetrics>): UIPickerComponentAttribute--><!--Device-UIPickerComponentAttribute-itemHeight(height: Optional<LengthMetrics>): UIPickerComponentAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| height | Optional&lt;LengthMetrics&gt; | Yes | Height of each item. |
+| height | [Optional](arkts-arkui-optional-t.md)<LengthMetrics> | Yes | Height of each item. |
 
 ## onChange
 
@@ -130,10 +134,7 @@ NOTE
 
 - If more than half of an option's area enters the selected item area, the option becomes the selected item.
 
-- The selected item area can be identified by setting
-[selectionIndicator](UIPickerComponentAttribute#selectionIndicator). If the selected item indicator is set
-to the background, the background area is the selected item area. If the selected item indicator is set to the
-divider, the area between the center lines of the upper and lower dividers is the selected item area.
+- The selected item area can be identified by setting [selectionIndicator](UIPickerComponentAttribute#selectionIndicator). If the selected item indicator is set to the background, the background area is the selected item area. If the selected item indicator is set to the divider, the area between the center lines of the upper and lower dividers is the selected item area.
 
 **Since:** 22
 
@@ -141,13 +142,15 @@ divider, the area between the center lines of the upper and lower dividers is th
 
 **Atomic service API:** This API can be used in atomic services since API version 22.
 
+<!--Device-UIPickerComponentAttribute-onChange(callback: Optional<OnUIPickerComponentCallback>): UIPickerComponentAttribute--><!--Device-UIPickerComponentAttribute-onChange(callback: Optional<OnUIPickerComponentCallback>): UIPickerComponentAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Optional&lt;OnUIPickerComponentCallback&gt; | Yes | Callback triggered when the selected item changes. |
+| callback | [Optional](arkts-arkui-optional-t.md)<OnUIPickerComponentCallback> | Yes | Callback triggered when the selected item changes. |
 
 ## onScrollStop
 
@@ -155,9 +158,7 @@ divider, the area between the center lines of the upper and lower dividers is th
 onScrollStop(callback: Optional<OnUIPickerComponentCallback>)
 ```
 
-Triggered when the picker scrolling stops. The picker scrolling stops when the scrolling animation triggered by an
-action is complete. If a new scrolling animation is triggered before the previous one finishes, it does not count
-as scrolling stop.
+Triggered when the picker scrolling stops. The picker scrolling stops when the scrolling animation triggered by an action is complete. If a new scrolling animation is triggered before the previous one finishes, it does not count as scrolling stop.
 
 If callback is set to undefined, the callback is not used.
 
@@ -167,13 +168,15 @@ If callback is set to undefined, the callback is not used.
 
 **Atomic service API:** This API can be used in atomic services since API version 22.
 
+<!--Device-UIPickerComponentAttribute-onScrollStop(callback: Optional<OnUIPickerComponentCallback>): UIPickerComponentAttribute--><!--Device-UIPickerComponentAttribute-onScrollStop(callback: Optional<OnUIPickerComponentCallback>): UIPickerComponentAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Optional&lt;OnUIPickerComponentCallback&gt; | Yes | Callback triggered when the picker scrolling stops. |
+| callback | [Optional](arkts-arkui-optional-t.md)<OnUIPickerComponentCallback> | Yes | Callback triggered when the picker scrolling stops. |
 
 ## selectionIndicator
 
@@ -183,9 +186,7 @@ selectionIndicator(style: Optional<PickerIndicatorStyle>)
 
 Sets the style of the selected item indicator.
 
-Default value: { type: PickerIndicatorType.BACKGROUND, borderRadius: { value:12, unit:LengthUnit.vp },
-backgroundColor: 'sys.color.comp_background_tertiary' }
-If the value of style is undefined, the default value is used.
+Default value: { type: PickerIndicatorType.BACKGROUND, borderRadius: { value:12, unit:LengthUnit.vp },backgroundColor: 'sys.color.comp_background_tertiary' }If the value of style is undefined, the default value is used.
 
 **Since:** 22
 
@@ -193,11 +194,13 @@ If the value of style is undefined, the default value is used.
 
 **Atomic service API:** This API can be used in atomic services since API version 22.
 
+<!--Device-UIPickerComponentAttribute-selectionIndicator(style: Optional<PickerIndicatorStyle>): UIPickerComponentAttribute--><!--Device-UIPickerComponentAttribute-selectionIndicator(style: Optional<PickerIndicatorStyle>): UIPickerComponentAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| style | Optional&lt;PickerIndicatorStyle&gt; | Yes | Style of the selected item indicator. |
+| style | [Optional](arkts-arkui-optional-t.md)<PickerIndicatorStyle> | Yes | Style of the selected item indicator. |
 

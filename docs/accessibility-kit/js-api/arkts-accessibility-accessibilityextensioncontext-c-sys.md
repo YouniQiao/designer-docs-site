@@ -6,6 +6,8 @@ The accessibility extension context. Used to configure, query information, and i
 
 **Since:** 9
 
+<!--Device-unnamed-declare class AccessibilityExtensionContext extends ExtensionContext--><!--Device-unnamed-declare class AccessibilityExtensionContext extends ExtensionContext-End-->
+
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
 ## addAccessibilityVirtualNodes
@@ -22,6 +24,8 @@ Add accessibility virtual nodes.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-AccessibilityExtensionContext-addAccessibilityVirtualNodes(elementId: long, windowId: int, nodes: Array<AccessibilityVirtualNode>): Promise<OperateVirtualNodeResult>--><!--Device-AccessibilityExtensionContext-addAccessibilityVirtualNodes(elementId: long, windowId: int, nodes: Array<AccessibilityVirtualNode>): Promise<OperateVirtualNodeResult>-End-->
+
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
 **System API:** This is a system API.
@@ -32,19 +36,19 @@ Add accessibility virtual nodes.
 | --- | --- | --- | --- |
 | elementId | number | Yes | Indicates the id of the node to which the accessibility virtual node tree belongs |
 | windowId | number | Yes | Indicates the window id<br>The value range is all integers. |
-| nodes | Array&lt;AccessibilityVirtualNode&gt; | Yes | Indicates accessibility virtual node tree. |
+| nodes | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<AccessibilityVirtualNode> | Yes | Indicates accessibility virtual node tree. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;OperateVirtualNodeResult&gt; | Promise used to return the result code. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<OperateVirtualNodeResult> | Promise used to return the result code. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed.The application does not have the permissionrequired to call the API. |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed.The application does not have the permission required to call the API. |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 | [9300000](../errorcode-accessibility.md#9300000-accessibility-service-abnormal) | System abnormality.Possible causes:<br>1.Internal operation failed.<br>2.Failed to obtain the required service or client object (null pointer).<br>3.IPC communication failed.<br>4.Failed to obtain the accessibility service proxy.<br>5.Timed out while waiting for the result of an asynchronous operation. |
 
@@ -60,6 +64,8 @@ Obtains the element that is currently focused. This API uses a promise to return
 
 **Required permissions:** ohos.permission.ACCESSIBILITY_EXTENSION_ABILITY
 
+<!--Device-AccessibilityExtensionContext-getAccessibilityFocusedElement(): Promise<AccessibilityElement>--><!--Device-AccessibilityExtensionContext-getAccessibilityFocusedElement(): Promise<AccessibilityElement>-End-->
+
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
 **System API:** This is a system API.
@@ -68,13 +74,13 @@ Obtains the element that is currently focused. This API uses a promise to return
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;AccessibilityElement&gt; | Promise used to return the result. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AccessibilityElement> | Promise used to return the result. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed.The application does not have the permissionrequired to call the API. |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed.The application does not have the permission required to call the API. |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 | [9300003](../errorcode-accessibility.md#9300003-no-accessibility-permission-to-perform-the-operation) | No accessibility permission to perform the operation. |
 | [9300006](../errorcode-accessibility.md#9300006-failed-to-connect-the-target-application-and-accessibility-services) | The target application failed to connect to accessibility service. |
@@ -91,6 +97,8 @@ Obtains the accessibility windows.
 
 **Required permissions:** ohos.permission.ACCESSIBILITY_EXTENSION_ABILITY
 
+<!--Device-AccessibilityExtensionContext-getAccessibilityWindowsSync(displayId?: long): Array<AccessibilityElement>--><!--Device-AccessibilityExtensionContext-getAccessibilityWindowsSync(displayId?: long): Array<AccessibilityElement>-End-->
+
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
 **System API:** This is a system API.
@@ -105,13 +113,13 @@ Obtains the accessibility windows.
 
 | Type | Description |
 | --- | --- |
-| Array&lt;AccessibilityElement&gt; | List of windows. |
+| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<AccessibilityElement> | List of windows. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed.The application does not have the permissionrequired to call the API. |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed.The application does not have the permission required to call the API. |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 | [9300003](../errorcode-accessibility.md#9300003-no-accessibility-permission-to-perform-the-operation) | No accessibility permission to perform the operation. |
 
@@ -124,6 +132,8 @@ getDefaultFocusedElementIds(windowId: number): Promise<Array<number>>
 Obtains the custom default focuses of an application. This API uses a promise to return the result.
 
 **Since:** 18
+
+<!--Device-AccessibilityExtensionContext-getDefaultFocusedElementIds(windowId: int): Promise<Array<long>>--><!--Device-AccessibilityExtensionContext-getDefaultFocusedElementIds(windowId: int): Promise<Array<long>>-End-->
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
@@ -139,7 +149,7 @@ Obtains the custom default focuses of an application. This API uses a promise to
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Array&lt;number&gt;&gt; | Promise used to return the result. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<number>> | Promise used to return the result. |
 
 **Error codes:**
 
@@ -159,6 +169,8 @@ Obtains node elements in batches. This API uses a promise to return the result.
 
 **Since:** 18
 
+<!--Device-AccessibilityExtensionContext-getElements(windowId: int, elementId?: long): Promise<Array<AccessibilityElement>>--><!--Device-AccessibilityExtensionContext-getElements(windowId: int, elementId?: long): Promise<Array<AccessibilityElement>>-End-->
+
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
 **System API:** This is a system API.
@@ -168,13 +180,13 @@ Obtains node elements in batches. This API uses a promise to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | windowId | number | Yes | Window ID to be obtained. |
-| elementId | number | No | Element ID to be obtained. If this parameter is passed in, the list of all child nodesunder the current node is obtained. Otherwise, all nodes in the window are obtained. The default value is**-1**. |
+| elementId | number | No | Element ID to be obtained. If this parameter is passed in, the list of all child nodes under the current node is obtained. Otherwise, all nodes in the window are obtained. The default value is **-1**. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Array&lt;AccessibilityElement&gt;&gt; | Promise used to return the result. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<AccessibilityElement>> | Promise used to return the result. |
 
 **Error codes:**
 
@@ -196,6 +208,8 @@ Obtains the root element of an active window. This API uses a promise to return 
 
 **Required permissions:** ohos.permission.ACCESSIBILITY_EXTENSION_ABILITY
 
+<!--Device-AccessibilityExtensionContext-getRootInActiveWindow(windowId?: int): Promise<AccessibilityElement>--><!--Device-AccessibilityExtensionContext-getRootInActiveWindow(windowId?: int): Promise<AccessibilityElement>-End-->
+
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
 **System API:** This is a system API.
@@ -210,13 +224,13 @@ Obtains the root element of an active window. This API uses a promise to return 
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;AccessibilityElement&gt; | Promise used to return the result. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AccessibilityElement> | Promise used to return the result. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed.The application does not have the permissionrequired to call the API. |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed.The application does not have the permission required to call the API. |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 | [9300003](../errorcode-accessibility.md#9300003-no-accessibility-permission-to-perform-the-operation) | No accessibility permission to perform the operation. |
 | [9300006](../errorcode-accessibility.md#9300006-failed-to-connect-the-target-application-and-accessibility-services) | The target application failed to connect to accessibility service. |
@@ -233,6 +247,8 @@ Holds the running lock. After the lock is held, the screen will not turn off aut
 
 **Required permissions:** ohos.permission.ACCESSIBILITY_EXTENSION_ABILITY
 
+<!--Device-AccessibilityExtensionContext-holdRunningLockSync(): void--><!--Device-AccessibilityExtensionContext-holdRunningLockSync(): void-End-->
+
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
 **System API:** This is a system API.
@@ -241,7 +257,7 @@ Holds the running lock. After the lock is held, the screen will not turn off aut
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed.The application does not have the permissionrequired to call the API. |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed.The application does not have the permission required to call the API. |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 
 ## notifyDisconnect
@@ -252,13 +268,13 @@ notifyDisconnect(): void
 
 Notifies the accessibility service that the accessibility extension service can be disconnected.
 
-This API must be used together with the
-[on('preDisconnect')](arkts-accessibility-accessibilityextensioncontext-c-sys.md#on-1) API.
-If the **on('preDisconnect')** API is not called, this API does not take effect.
+This API must be used together with the [on('preDisconnect')](arkts-accessibility-accessibilityextensioncontext-c-sys.md#on-1) API.If the **on('preDisconnect')** API is not called, this API does not take effect.
 
 **Since:** 20
 
 **Required permissions:** ohos.permission.ACCESSIBILITY_EXTENSION_ABILITY
+
+<!--Device-AccessibilityExtensionContext-notifyDisconnect(): void--><!--Device-AccessibilityExtensionContext-notifyDisconnect(): void-End-->
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
@@ -268,7 +284,7 @@ If the **on('preDisconnect')** API is not called, this API does not take effect.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed.The application does not have the permissionrequired to call the API. |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed.The application does not have the permission required to call the API. |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 
 ## off('preDisconnect')
@@ -277,12 +293,13 @@ If the **on('preDisconnect')** API is not called, this API does not take effect.
 off(type: 'preDisconnect', callback?: Callback<void>): void
 ```
 
-Unsubscribes from the pre-disconnection event of the accessibility extension service. This API is not called until
-the accessibility extension service is disconnected. This API uses an asynchronous callback to return the result.
+Unsubscribes from the pre-disconnection event of the accessibility extension service. This API is not called until the accessibility extension service is disconnected. This API uses an asynchronous callback to return the result.
 
 **Since:** 20
 
 **Required permissions:** ohos.permission.ACCESSIBILITY_EXTENSION_ABILITY
+
+<!--Device-AccessibilityExtensionContext-off(type: 'preDisconnect', callback?: Callback<void>): void--><!--Device-AccessibilityExtensionContext-off(type: 'preDisconnect', callback?: Callback<void>): void-End-->
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
@@ -293,13 +310,13 @@ the accessibility extension service is disconnected. This API uses an asynchrono
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'preDisconnect' | Yes | Name of the event to listen for. The value is fixed at **'preDisconnect'**,indicating that the accessibility extension service is about to be disconnected. |
-| callback | Callback&lt;void&gt; | No | Callback to unregister, which must be the same as that of[on('preDisconnect')](arkts-accessibility-accessibilityextensioncontext-c-sys.md#on-1).If this parameter is not specified, listening will be disabled for all callbacks corresponding to the specifiedtype. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | No | Callback to unregister, which must be the same as that of [on('preDisconnect')](arkts-accessibility-accessibilityextensioncontext-c-sys.md#on-1).If this parameter is not specified, listening will be disabled for all callbacks corresponding to the specified type. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed.The application does not have the permissionrequired to call the API. |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed.The application does not have the permission required to call the API. |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 
 ## on('preDisconnect')
@@ -308,16 +325,15 @@ the accessibility extension service is disconnected. This API uses an asynchrono
 on(type: 'preDisconnect', callback: Callback<void>): void
 ```
 
-Subscribes to the pre-disconnection event of the accessibility extension service. This API is called when the
-accessibility extension service is about to be disconnected. This API uses an asynchronous callback to return the
-result.
+Subscribes to the pre-disconnection event of the accessibility extension service. This API is called when the accessibility extension service is about to be disconnected. This API uses an asynchronous callback to return the result.
 
-Used together with [notifyDisconnect](arkts-accessibility-accessibilityextensioncontext-c-sys.md#notifydisconnect-1); otherwise, the
-accessibility extension service is automatically disconnected 30 seconds later by default.
+Used together with [notifyDisconnect](arkts-accessibility-accessibilityextensioncontext-c-sys.md#notifydisconnect-1); otherwise, the accessibility extension service is automatically disconnected 30 seconds later by default.
 
 **Since:** 20
 
 **Required permissions:** ohos.permission.ACCESSIBILITY_EXTENSION_ABILITY
+
+<!--Device-AccessibilityExtensionContext-on(type: 'preDisconnect', callback: Callback<void>): void--><!--Device-AccessibilityExtensionContext-on(type: 'preDisconnect', callback: Callback<void>): void-End-->
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
@@ -328,13 +344,13 @@ accessibility extension service is automatically disconnected 30 seconds later b
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'preDisconnect' | Yes | Name of the event to listen for. The value is fixed at **'preDisconnect'**,indicating that the accessibility extension service is about to be disconnected. |
-| callback | Callback&lt;void&gt; | Yes | Callback to be invoked when the accessibility extension service is about to bedisconnected. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | Callback to be invoked when the accessibility extension service is about to be disconnected. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed.The application does not have the permissionrequired to call the API. |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed.The application does not have the permission required to call the API. |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 
 ## removeAccessibilityVirtualNodes
@@ -351,6 +367,8 @@ Remove accessibility virtual nodes.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-AccessibilityExtensionContext-removeAccessibilityVirtualNodes(elementId: long, windowId: int): Promise<OperateVirtualNodeResult>--><!--Device-AccessibilityExtensionContext-removeAccessibilityVirtualNodes(elementId: long, windowId: int): Promise<OperateVirtualNodeResult>-End-->
+
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
 **System API:** This is a system API.
@@ -366,13 +384,13 @@ Remove accessibility virtual nodes.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;OperateVirtualNodeResult&gt; | Promise used to return the result code. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<OperateVirtualNodeResult> | Promise used to return the result code. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed.The application does not have the permissionrequired to call the API. |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed.The application does not have the permission required to call the API. |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 | [9300000](../errorcode-accessibility.md#9300000-accessibility-service-abnormal) | System abnormality.Possible causes:<br>1.Internal operation failed.<br>2.Failed to obtain the required service or client object (null pointer).<br>3.IPC communication failed.<br>4.Failed to obtain the accessibility service proxy.<br>5.Timed out while waiting for the result of an asynchronous operation. |
 
@@ -386,6 +404,8 @@ Starts the foreground page. This API uses a promise to return the result.
 
 **Since:** 12
 
+<!--Device-AccessibilityExtensionContext-startAbility(want: Want): Promise<void>--><!--Device-AccessibilityExtensionContext-startAbility(want: Want): Promise<void>-End-->
+
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
 **System API:** This is a system API.
@@ -394,13 +414,13 @@ Starts the foreground page. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want information about the target ability, such as the ability name and bundle name. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target ability, such as the ability name and bundle name. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -421,6 +441,8 @@ Releases the running lock. After the lock is released, the screen will automatic
 
 **Required permissions:** ohos.permission.ACCESSIBILITY_EXTENSION_ABILITY
 
+<!--Device-AccessibilityExtensionContext-unholdRunningLockSync(): void--><!--Device-AccessibilityExtensionContext-unholdRunningLockSync(): void-End-->
+
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
 **System API:** This is a system API.
@@ -429,7 +451,7 @@ Releases the running lock. After the lock is released, the screen will automatic
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed.The application does not have the permissionrequired to call the API. |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed.The application does not have the permission required to call the API. |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 
 ## updateAccessibilityElementProperty
@@ -446,6 +468,8 @@ Update accessibility element property.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-AccessibilityExtensionContext-updateAccessibilityElementProperty(elementId: long, windowId: int, node: AccessibilityVirtualNode): Promise<OperateVirtualNodeResult>--><!--Device-AccessibilityExtensionContext-updateAccessibilityElementProperty(elementId: long, windowId: int, node: AccessibilityVirtualNode): Promise<OperateVirtualNodeResult>-End-->
+
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
 **System API:** This is a system API.
@@ -456,19 +480,19 @@ Update accessibility element property.
 | --- | --- | --- | --- |
 | elementId | number | Yes | Indicates the id of the accessibility element to be updated |
 | windowId | number | Yes | Indicates the window id<br>The value range is all integers. |
-| node | AccessibilityVirtualNode | Yes | Indicates accessibility virtual node to be updated. |
+| node | [AccessibilityVirtualNode](arkts-accessibility-accessibilityvirtualnode-t-sys.md) | Yes | Indicates accessibility virtual node to be updated. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;OperateVirtualNodeResult&gt; | Promise used to return the result code. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<OperateVirtualNodeResult> | Promise used to return the result code. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed.The application does not have the permissionrequired to call the API. |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed.The application does not have the permission required to call the API. |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 | [9300000](../errorcode-accessibility.md#9300000-accessibility-service-abnormal) | System abnormality.Possible causes:<br>1.Internal operation failed.<br>2.Failed to obtain the required service or client object (null pointer).<br>3.IPC communication failed.<br>4.Failed to obtain the accessibility service proxy.<br>5.Timed out while waiting for the result of an asynchronous operation. |
 

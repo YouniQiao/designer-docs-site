@@ -1,9 +1,10 @@
 # ContinueMissionInfo（系统接口）
 
-表示发起按照包名迁移时所需参数的枚举，迁移Mission详见：
-[continueMission接口](arkts-ability-continuemission-f-sys.md#continuemission-3)
+表示发起按照包名迁移时所需参数的枚举，迁移Mission详见：[continueMission接口](arkts-ability-distributedmissionmanager-continuemission-f-sys.md#continuemission-3)
 
 **起始版本：** 10
+
+<!--Device-unnamed-export interface ContinueMissionInfo--><!--Device-unnamed-export interface ContinueMissionInfo-End-->
 
 **系统能力：** SystemCapability.Ability.AbilityRuntime.Mission
 
@@ -23,6 +24,8 @@ bundleName: string
 
 **模型约束：** 此接口仅可在Stage模型下使用。
 
+<!--Device-ContinueMissionInfo-bundleName: string--><!--Device-ContinueMissionInfo-bundleName: string-End-->
+
 **系统能力：** SystemCapability.Ability.AbilityRuntime.Mission
 
 **系统接口：** 此接口为系统接口。
@@ -40,6 +43,8 @@ continueType?: string
 **起始版本：** 12
 
 **模型约束：** 此接口仅可在Stage模型下使用。
+
+<!--Device-ContinueMissionInfo-continueType?: string--><!--Device-ContinueMissionInfo-continueType?: string-End-->
 
 **系统能力：** SystemCapability.Ability.AbilityRuntime.Mission
 
@@ -59,6 +64,8 @@ dstDeviceId: string
 
 **模型约束：** 此接口仅可在Stage模型下使用。
 
+<!--Device-ContinueMissionInfo-dstDeviceId: string--><!--Device-ContinueMissionInfo-dstDeviceId: string-End-->
+
 **系统能力：** SystemCapability.Ability.AbilityRuntime.Mission
 
 **系统接口：** 此接口为系统接口。
@@ -76,6 +83,8 @@ srcBundleName?: string
 **起始版本：** 12
 
 **模型约束：** 此接口仅可在Stage模型下使用。
+
+<!--Device-ContinueMissionInfo-srcBundleName?: string--><!--Device-ContinueMissionInfo-srcBundleName?: string-End-->
 
 **系统能力：** SystemCapability.Ability.AbilityRuntime.Mission
 
@@ -95,6 +104,8 @@ srcDeviceId: string
 
 **模型约束：** 此接口仅可在Stage模型下使用。
 
+<!--Device-ContinueMissionInfo-srcDeviceId: string--><!--Device-ContinueMissionInfo-srcDeviceId: string-End-->
+
 **系统能力：** SystemCapability.Ability.AbilityRuntime.Mission
 
 **系统接口：** 此接口为系统接口。
@@ -112,6 +123,8 @@ wantParam: Record<string, Object>
 **起始版本：** 11
 
 **模型约束：** 此接口仅可在Stage模型下使用。
+
+<!--Device-ContinueMissionInfo-wantParam: Record<string, Object>--><!--Device-ContinueMissionInfo-wantParam: Record<string, Object>-End-->
 
 **系统能力：** SystemCapability.Ability.AbilityRuntime.Mission
 

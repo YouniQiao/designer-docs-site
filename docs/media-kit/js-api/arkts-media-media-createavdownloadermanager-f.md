@@ -1,0 +1,30 @@
+# createAVDownloaderManager
+
+## Modules to Import
+
+```TypeScript
+import { media } from '@kit.MediaKit';
+```
+
+## createAVDownloaderManager
+
+```TypeScript
+function createAVDownloaderManager( ): Promise<AVDownloaderManager>
+```
+
+Creating a Streaming Resource Download Task Manager
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-media-function createAVDownloaderManager( ): Promise<AVDownloaderManager>--><!--Device-media-function createAVDownloaderManager( ): Promise<AVDownloaderManager>-End-->
+
+**System capability:** SystemCapability.Multimedia.Media.Core
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AVDownloaderManager> | Returns an instance of the Offline Download Manager |
+

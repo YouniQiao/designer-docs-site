@@ -1,10 +1,12 @@
 # Circle properties/events
 
-In addition to the [universal attributes](arkts-arkui-commonmethod-c.md), the following attributes are supported.
+In addition to the [universal attributes](arkts-arkui-common-commonmethod-c.md), the following attributes are supported.
 
 **Inheritance/Implementation:** CircleAttribute extends [CommonShapeMethod<CircleAttribute>](CommonShapeMethod<CircleAttribute>)
 
 **Since:** 7
+
+<!--Device-unnamed-declare class CircleAttribute extends CommonShapeMethod<CircleAttribute>--><!--Device-unnamed-declare class CircleAttribute extends CommonShapeMethod<CircleAttribute>-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -14,15 +16,15 @@ In addition to the [universal attributes](arkts-arkui-commonmethod-c.md), the fo
 fill(value: ResourceColor | ColorMetrics)
 ```
 
-Sets the color of the fill area.
-An invalid value is handled as the default value.
-If this attribute and the universal attribute foregroundColor are both set, whichever is set later takes effect.
+Sets the color of the fill area.An invalid value is handled as the default value.If this attribute and the universal attribute foregroundColor are both set, whichever is set later takes effect.
 
 **Since:** 26.0.0
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 26.0.0.
+
+<!--Device-CircleAttribute-fill(value: ResourceColor | ColorMetrics): CircleAttribute--><!--Device-CircleAttribute-fill(value: ResourceColor | ColorMetrics): CircleAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -38,8 +40,7 @@ If this attribute and the universal attribute foregroundColor are both set, whic
 stroke(value: ResourceColor | ColorMetrics)
 ```
 
-Sets the stroke color. This attribute can be dynamically set using attributeModifier. If this attribute is not set,
-the default stroke opacity is 0, meaning no stroke is displayed.
+Sets the stroke color. This attribute can be dynamically set using attributeModifier. If this attribute is not set,the default stroke opacity is 0, meaning no stroke is displayed.
 
 **Since:** 26.0.0
 
@@ -47,11 +48,13 @@ the default stroke opacity is 0, meaning no stroke is displayed.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 26.0.0.
 
+<!--Device-CircleAttribute-stroke(value: ResourceColor | ColorMetrics): CircleAttribute--><!--Device-CircleAttribute-stroke(value: ResourceColor | ColorMetrics): CircleAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ResourceColor \| ColorMetrics | Yes | Stroke color.<br>Default value: Color.Transparent.<br>Invalidvalues **undefined** and **null** values are treated as the default value, and invalid values **NaN** and**Infinity** are treated as Color.Black. |
+| value | ResourceColor \| ColorMetrics | Yes | Stroke color.<br>Default value: Color.Transparent.<br>Invalid values **undefined** and **null** values are treated as the default value, and invalid values **NaN** and **Infinity** are treated as Color.Black. |
 

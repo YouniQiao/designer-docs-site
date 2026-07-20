@@ -4,6 +4,8 @@ The proxy object of the AgentExtensionAbility, used to send messages to the Agen
 
 **Since:** 24
 
+<!--Device-unnamed-export interface AgentProxy--><!--Device-unnamed-export interface AgentProxy-End-->
+
 **System capability:** SystemCapability.Ability.AgentRuntime.Core
 
 **System API:** This is a system API.
@@ -19,6 +21,8 @@ Send authentication to the AgentExtensionAbility.
 **Since:** 24
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AgentProxy-authorize(handshakeData: string): void--><!--Device-AgentProxy-authorize(handshakeData: string): void-End-->
 
 **System capability:** SystemCapability.Ability.AgentRuntime.Core
 
@@ -47,6 +51,8 @@ Send data to the AgentExtensionAbility.
 **Since:** 24
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AgentProxy-sendData(data: string): void--><!--Device-AgentProxy-sendData(data: string): void-End-->
 
 **System capability:** SystemCapability.Ability.AgentRuntime.Core
 

@@ -12,6 +12,8 @@ Defines the callback invoked when a drop-down menu option is selected.
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
 
+<!--Device-unnamed-declare type OnSelectCallback = (index: number, selectStr: string) => void--><!--Device-unnamed-declare type OnSelectCallback = (index: number, selectStr: string) => void-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**

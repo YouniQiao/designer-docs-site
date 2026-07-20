@@ -2,6 +2,8 @@
 
 后台预取接口
 
+**起始版本：** 26.0.0
+
 <!--Device-unnamed-declare namespace backgroundLoader--><!--Device-unnamed-declare namespace backgroundLoader-End-->
 
 **系统能力：** SystemCapability.ResourceSchedule.WorkScheduler

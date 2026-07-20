@@ -12,6 +12,8 @@ Implements a handler for the **onHoverStatusChange** event.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-unnamed-export type OnHoverStatusChangeHandler = (status: HoverModeStatus) => void--><!--Device-unnamed-export type OnHoverStatusChangeHandler = (status: HoverModeStatus) => void-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**

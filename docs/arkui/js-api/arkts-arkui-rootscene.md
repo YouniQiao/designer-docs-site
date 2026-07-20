@@ -1,6 +1,6 @@
 # RootScene
 
-Defines the interface of RootScene.
+Defines the RootScene component.
 
 
 ## RootScene
@@ -14,6 +14,8 @@ Called when the RootScene is used.
 **Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-RootSceneInterface-(session: RootSceneSession): RootSceneAttribute--><!--Device-RootSceneInterface-(session: RootSceneSession): RootSceneAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

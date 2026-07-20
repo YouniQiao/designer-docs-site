@@ -14,6 +14,8 @@ On scroll callback using in scrollable onDidScroll.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 12.
 
+<!--Device-unnamed-declare type OnScrollCallback = (scrollOffset: number, scrollState: ScrollState) => void--><!--Device-unnamed-declare type OnScrollCallback = (scrollOffset: number, scrollState: ScrollState) => void-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**

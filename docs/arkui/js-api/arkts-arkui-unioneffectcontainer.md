@@ -1,7 +1,6 @@
 # UnionEffectContainer
 
-Provides a UnionEffectContainer Component that generates a component fusion effect for descendant components with
-"useUnionEffect(true)" set inside it, when their distance is less than a certain threshold.
+Defines UnionEffectContainer Component.
 
 
 ## UnionEffectContainer
@@ -15,6 +14,8 @@ Specify the construction options for the UnionEffectContainer to create the Unio
 **Since:** 23
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-UnionEffectContainerInterface-(options?: UnionEffectContainerOptions): UnionEffectContainerAttribute--><!--Device-UnionEffectContainerInterface-(options?: UnionEffectContainerOptions): UnionEffectContainerAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

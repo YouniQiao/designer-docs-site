@@ -10,6 +10,8 @@ This type specifies the comparator of sort in comparation.
 
 **Atomic service API:** This API can be used in atomic services since API version 23.
 
+<!--Device-unnamed-export type ListComparatorFn<T> = (firstValue: T, secondValue: T) => double--><!--Device-unnamed-export type ListComparatorFn<T> = (firstValue: T, secondValue: T) => double-End-->
+
 **System capability:** SystemCapability.Utils.Lang
 
 **Parameters:**

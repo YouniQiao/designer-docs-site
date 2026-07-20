@@ -1,9 +1,10 @@
 # @ohos.batteryInfo
 
-The **batteryInfo** module provides APIs for querying the charger type, battery health status, and battery charging
-status.
+The **batteryInfo** module provides APIs for querying the charger type, battery health status, and battery charging status.
 
 **Since:** 6
+
+<!--Device-unnamed-declare namespace batteryInfo--><!--Device-unnamed-declare namespace batteryInfo-End-->
 
 **System capability:** SystemCapability.PowerManager.BatteryManager.Core
 
@@ -20,20 +21,20 @@ import { batteryInfo } from '@kit.BasicServicesKit';
 
 | Name | Description |
 | --- | --- |
-| [getBatteryConfig](arkts-basicservices-getbatteryconfig-f-sys.md#getbatteryconfig-1) | Obtains the battery configuration based on the specified scenario. |
-| [isBatteryConfigSupported](arkts-basicservices-isbatteryconfigsupported-f-sys.md#isbatteryconfigsupported-1) | Checks whether the battery configuration is enabled based on the specified scenario. |
-| [setBatteryConfig](arkts-basicservices-setbatteryconfig-f-sys.md#setbatteryconfig-1) | Sets the battery configuration based on the specified scenario. |
+| [getBatteryConfig](arkts-basicservices-batteryinfo-getbatteryconfig-f-sys.md#getbatteryconfig-1) | Obtains the battery configuration based on the specified scenario. |
+| [isBatteryConfigSupported](arkts-basicservices-batteryinfo-isbatteryconfigsupported-f-sys.md#isbatteryconfigsupported-1) | Checks whether the battery configuration is enabled based on the specified scenario. |
+| [setBatteryConfig](arkts-basicservices-batteryinfo-setbatteryconfig-f-sys.md#setbatteryconfig-1) | Sets the battery configuration based on the specified scenario. |
 <!--DelEnd-->
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [BatteryCapacityLevel](arkts-basicservices-batterycapacitylevel-e.md) | Enumerates battery levels. |
-| [BatteryChargeState](arkts-basicservices-batterychargestate-e.md) | Enumerates charging states. |
-| [BatteryHealthState](arkts-basicservices-batteryhealthstate-e.md) | Enumerates battery health states. |
-| [BatteryPluggedType](arkts-basicservices-batterypluggedtype-e.md) | Enumerates charger types. |
-| [CommonEventBatteryChangedKey](arkts-basicservices-commoneventbatterychangedkey-e.md) | Enumerates keys for querying the additional information about the **COMMON_EVENT_BATTERY_CHANGED** event. |
+| [BatteryCapacityLevel](arkts-basicservices-batteryinfo-batterycapacitylevel-e.md) | Enumerates battery levels. |
+| [BatteryChargeState](arkts-basicservices-batteryinfo-batterychargestate-e.md) | Enumerates charging states. |
+| [BatteryHealthState](arkts-basicservices-batteryinfo-batteryhealthstate-e.md) | Enumerates battery health states. |
+| [BatteryPluggedType](arkts-basicservices-batteryinfo-batterypluggedtype-e.md) | Enumerates charger types. |
+| [CommonEventBatteryChangedKey](arkts-basicservices-batteryinfo-commoneventbatterychangedkey-e.md) | Enumerates keys for querying the additional information about the **COMMON_EVENT_BATTERY_CHANGED** event. |
 
 ### Constants
 

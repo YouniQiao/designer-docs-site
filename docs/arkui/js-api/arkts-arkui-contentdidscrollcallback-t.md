@@ -4,14 +4,15 @@
 declare type ContentDidScrollCallback = (selectedIndex: number, index: number, position: number, mainAxisLength: number) => void
 ```
 
-Triggered during the swipe action of the **Swiper** component. For details about the parameters, see
-[SwiperContentTransitionProxy](arkts-arkui-swipercontenttransitionproxy-i.md).
+Triggered during the swipe action of the **Swiper** component. For details about the parameters, see [SwiperContentTransitionProxy](arkts-arkui-swiper-swipercontenttransitionproxy-i.md).
 
 **Since:** 12
 
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-unnamed-declare type ContentDidScrollCallback = (selectedIndex: number, index: number, position: number, mainAxisLength: number) => void--><!--Device-unnamed-declare type ContentDidScrollCallback = (selectedIndex: number, index: number, position: number, mainAxisLength: number) => void-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

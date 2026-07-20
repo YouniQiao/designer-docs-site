@@ -1,0 +1,120 @@
+# FileReadArrayBufferOption
+
+Defines the options used in readArrayBuffer().
+
+**Since:** 3
+
+**Deprecated since:** 10
+
+<!--Device-unnamed-export interface FileReadArrayBufferOption--><!--Device-unnamed-export interface FileReadArrayBufferOption-End-->
+
+**System capability:** SystemCapability.FileManagement.File.FileIO.Lite
+
+## complete
+
+```TypeScript
+complete?: () => void
+```
+
+Callback invoked when the API call is complete.
+
+**Type:** () => void
+
+**Since:** 3
+
+**Deprecated since:** 10
+
+<!--Device-FileReadArrayBufferOption-complete?: () => void--><!--Device-FileReadArrayBufferOption-complete?: () => void-End-->
+
+**System capability:** SystemCapability.FileManagement.File.FileIO.Lite
+
+## fail
+
+```TypeScript
+fail?: (data: string, code: number) => void
+```
+
+Callback invoked when the API call fails.**data** indicates the error information.**code** indicates the returned error code:**202**: invalid parameter **300**: I/O error **301**: file or directory not found
+
+**Type:** (data: string, code: number) => void
+
+**Since:** 3
+
+**Deprecated since:** 10
+
+<!--Device-FileReadArrayBufferOption-fail?: (data: string, code: number) => void--><!--Device-FileReadArrayBufferOption-fail?: (data: string, code: number) => void-End-->
+
+**System capability:** SystemCapability.FileManagement.File.FileIO.Lite
+
+## length
+
+```TypeScript
+length?: number
+```
+
+Length of data to read, in bytes. If this parameter is not set, the reading proceeds until the end of the file.
+
+**Type:** number
+
+**Since:** 3
+
+**Deprecated since:** 10
+
+<!--Device-FileReadArrayBufferOption-length?: number--><!--Device-FileReadArrayBufferOption-length?: number-End-->
+
+**System capability:** SystemCapability.FileManagement.File.FileIO.Lite
+
+## position
+
+```TypeScript
+position?: number
+```
+
+Position where the reading starts, in bytes. The default value is the start position of the file.
+
+**Type:** number
+
+**Since:** 3
+
+**Deprecated since:** 10
+
+<!--Device-FileReadArrayBufferOption-position?: number--><!--Device-FileReadArrayBufferOption-position?: number-End-->
+
+**System capability:** SystemCapability.FileManagement.File.FileIO.Lite
+
+## success
+
+```TypeScript
+success?: (data: FileReadArrayBufferResponse) => void
+```
+
+Callback invoked when the API call is successful. **data** is [FileReadArrayBufferResponse](arkts-corefile-file-filereadarraybufferresponse-depr-i.md).
+
+**Type:** (data: FileReadArrayBufferResponse) => void
+
+**Since:** 3
+
+**Deprecated since:** 10
+
+<!--Device-FileReadArrayBufferOption-success?: (data: FileReadArrayBufferResponse) => void--><!--Device-FileReadArrayBufferOption-success?: (data: FileReadArrayBufferResponse) => void-End-->
+
+**System capability:** SystemCapability.FileManagement.File.FileIO.Lite
+
+## uri
+
+```TypeScript
+uri: string
+```
+
+URI of the file to which the content is written. Restricted by the underlying file system of lite wearables, the value must meet the following requirements:1. The URI cannot contain the following special characters: \"*+,:;<=>?[]|\x7F.2. The value can contain a maximum of 128 characters.
+
+**Type:** string
+
+**Since:** 3
+
+**Deprecated since:** 10
+
+<!--Device-FileReadArrayBufferOption-uri: string--><!--Device-FileReadArrayBufferOption-uri: string-End-->
+
+**System capability:** SystemCapability.FileManagement.File.FileIO.Lite
+

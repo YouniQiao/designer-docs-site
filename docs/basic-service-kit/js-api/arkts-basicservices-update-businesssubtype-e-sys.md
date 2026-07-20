@@ -16,7 +16,7 @@ Represents an update type.
 FIRMWARE = 1
 ```
 
-Firmware.
+Firmware, indicating firmware upgrade,which is applicable to upgrade of the system firmware instead of the app.For details, see [Upgrading Service Terms](../../../../basic-services/update/update-kit-term.md)
 
 **Since:** 9
 

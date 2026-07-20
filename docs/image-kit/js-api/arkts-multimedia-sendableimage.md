@@ -1,10 +1,10 @@
 # @ohos.multimedia.sendableImage
 
-The module provides APIs for image processing based on the [Sendable](../../../../arkts-utils/arkts-sendable.md)
-object. You can use the APIs to create a PixelMap object with specified properties or read pixels of an image (or
-even in a region of an image).
+The module provides APIs for image processing based on the [Sendable](../../../../arkts-utils/arkts-sendable.md)object. You can use the APIs to create a PixelMap object with specified properties or read pixels of an image (or even in a region of an image).
 
 **Since:** 12
+
+<!--Device-unnamed-declare namespace sendableImage--><!--Device-unnamed-declare namespace sendableImage-End-->
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -20,31 +20,31 @@ import { sendableImage } from '@kit.ImageKit';
 
 | Name | Description |
 | --- | --- |
-| [convertFromPixelMap](arkts-image-convertfrompixelmap-f.md#convertfrompixelmap-1) | Creates a sendable image PixelMap from image PixelMap. |
-| [convertToPixelMap](arkts-image-converttopixelmap-f.md#converttopixelmap-1) | Creates a image PixelMap from sendable image PixelMap. |
-| [createImageReceiver](arkts-image-createimagereceiver-f.md#createimagereceiver-1) | Creates an ImageReceiver instance based on the specified image size, format, and capacity.Images occupy a large amount of memory. When you finish using an ImageReceiver instance, call [release](arkts-image-pixelmap-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed. |
-| [createImageSource](arkts-image-createimagesource-f.md#createimagesource-1) | Creates an ImageSource instance based on a given URI.Images occupy a large amount of memory. When you finish using an ImageSource instance, call [release](arkts-image-pixelmap-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed. |
-| [createImageSource](arkts-image-createimagesource-f.md#createimagesource-2) | Creates an ImageSource instance based on a given file descriptor.Images occupy a large amount of memory. When you finish using an ImageSource instance, call [release](arkts-image-pixelmap-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed. |
-| [createImageSource](arkts-image-createimagesource-f.md#createimagesource-3) | Creates an ImageSource instance based on buffers. The data passed by **buf** must be undecoded. Do not pass the pixel buffer data such as RBGA and YUV. If you want to create a PixelMap based on the pixel buffer data, call [sendableImage.createPixelMap](arkts-image-createpixelmap-f.md#createpixelmap-1).Images occupy a large amount of memory. When you finish using an ImageSource instance, call [release](arkts-image-pixelmap-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed. |
-| [createPixelMap](arkts-image-createpixelmap-f.md#createpixelmap-1) | Create PixelMap by data buffer. |
-| [createPixelMapFromParcel](arkts-image-createpixelmapfromparcel-f.md#createpixelmapfromparcel-1) | Creates a PixelMap object based on MessageSequence parameter. |
-| [createPixelMapFromSurface](arkts-image-createpixelmapfromsurface-f.md#createpixelmapfromsurface-1) | Creates a PixelMap object from surface id. |
-| [createPixelMapSync](arkts-image-createpixelmapsync-f.md#createpixelmapsync-1) | Create PixelMap by data buffer. |
+| [convertFromPixelMap](arkts-image-sendableimage-convertfrompixelmap-f.md#convertfrompixelmap-1) | Creates a sendable image PixelMap from image PixelMap. |
+| [convertToPixelMap](arkts-image-sendableimage-converttopixelmap-f.md#converttopixelmap-1) | Creates a image PixelMap from sendable image PixelMap. |
+| [createImageReceiver](arkts-image-sendableimage-createimagereceiver-f.md#createimagereceiver-1) | Creates an ImageReceiver instance based on the specified image size, format, and capacity.Images occupy a large amount of memory. When you finish using an ImageReceiver instance, call [release](arkts-image-sendableimage-pixelmap-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed. |
+| [createImageSource](arkts-image-sendableimage-createimagesource-f.md#createimagesource-1) | Creates an ImageSource instance based on a given URI.Images occupy a large amount of memory. When you finish using an ImageSource instance, call [release](arkts-image-sendableimage-pixelmap-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed. |
+| [createImageSource](arkts-image-sendableimage-createimagesource-f.md#createimagesource-2) | Creates an ImageSource instance based on a given file descriptor.Images occupy a large amount of memory. When you finish using an ImageSource instance, call [release](arkts-image-sendableimage-pixelmap-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed. |
+| [createImageSource](arkts-image-sendableimage-createimagesource-f.md#createimagesource-3) | Creates an ImageSource instance based on buffers. The data passed by **buf** must be undecoded. Do not pass the pixel buffer data such as RBGA and YUV. If you want to create a PixelMap based on the pixel buffer data, call [sendableImage.createPixelMap](arkts-image-sendableimage-createpixelmap-f.md#createpixelmap-1).Images occupy a large amount of memory. When you finish using an ImageSource instance, call [release](arkts-image-sendableimage-pixelmap-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed. |
+| [createPixelMap](arkts-image-sendableimage-createpixelmap-f.md#createpixelmap-1) | Create PixelMap by data buffer. |
+| [createPixelMapFromParcel](arkts-image-sendableimage-createpixelmapfromparcel-f.md#createpixelmapfromparcel-1) | Creates a PixelMap object based on MessageSequence parameter. |
+| [createPixelMapFromSurface](arkts-image-sendableimage-createpixelmapfromsurface-f.md#createpixelmapfromsurface-1) | Creates a PixelMap object from surface id. |
+| [createPixelMapSync](arkts-image-sendableimage-createpixelmapsync-f.md#createpixelmapsync-1) | Create PixelMap by data buffer. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [Image](arkts-image-image-i.md) | Provides APIs for basic image operations, including obtaining image information and reading and writing image data.An Image instance is returned when [readNextImage](arkts-image-imagereceiver-i.md#readnextimage-1) and [readLatestImage](arkts-image-imagereceiver-i.md#readlatestimage-1) are called. This class inherits from [ISendable](../../../../arkts-utils/arkts-sendable.md#isendable).Images occupy a large amount of memory. When you finish using an Image instance, call [release](arkts-image-pixelmap-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed. |
-| [ImageReceiver](arkts-image-imagereceiver-i.md) | Image receiver class. You can use it to obtain the surface ID of a component, read the latest image and the next image, and release **ImageReceiver** instances.Before calling any APIs in ImageReceiver, you must create an ImageReceiver instance. |
-| [ImageSource](arkts-image-imagesource-i.md) | Provides APIs to obtain image information. Before calling any API in ImageSource, you must use [sendableImage.createImageSource](arkts-image-createimagesource-f.md#createimagesource-1) to create an ImageSource instance.Images occupy a large amount of memory. When you finish using an ImageSource instance, call [release](arkts-image-pixelmap-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed. |
-| [PixelMap](arkts-image-pixelmap-i.md) | Sendable PixelMap instance. |
-| [Region](arkts-image-region-i.md) | Describes the region information.It inherits from [lang.ISendable](../../../../arkts-utils/arkts-sendable.md#isendable). |
-| [Size](arkts-image-size-i.md) | Describes the size of an image.It inherits from [lang.ISendable](../../../../arkts-utils/arkts-sendable.md#isendable). |
+| [Image](arkts-image-sendableimage-image-i.md) | Provides APIs for basic image operations, including obtaining image information and reading and writing image data.An Image instance is returned when [readNextImage](arkts-image-sendableimage-imagereceiver-i.md#readnextimage-1) and [readLatestImage](arkts-image-sendableimage-imagereceiver-i.md#readlatestimage-1) are called. This class inherits from [ISendable](../../../../arkts-utils/arkts-sendable.md#isendable).Images occupy a large amount of memory. When you finish using an Image instance, call [release](arkts-image-sendableimage-pixelmap-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed. |
+| [ImageReceiver](arkts-image-sendableimage-imagereceiver-i.md) | Image receiver class. You can use it to obtain the surface ID of a component, read the latest image and the next image, and release **ImageReceiver** instances.Before calling any APIs in ImageReceiver, you must create an ImageReceiver instance. |
+| [ImageSource](arkts-image-sendableimage-imagesource-i.md) | Provides APIs to obtain image information. Before calling any API in ImageSource, you must use [sendableImage.createImageSource](arkts-image-sendableimage-createimagesource-f.md#createimagesource-1) to create an ImageSource instance.Images occupy a large amount of memory. When you finish using an ImageSource instance, call [release](arkts-image-sendableimage-pixelmap-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed. |
+| [PixelMap](arkts-image-sendableimage-pixelmap-i.md) | Sendable PixelMap instance. |
+| [Region](arkts-image-sendableimage-region-i.md) | Describes the region information.It inherits from [lang.ISendable](../../../../arkts-utils/arkts-sendable.md#isendable). |
+| [Size](arkts-image-sendableimage-size-i.md) | Describes the size of an image.It inherits from [lang.ISendable](../../../../arkts-utils/arkts-sendable.md#isendable). |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [ISendable](arkts-image-isendable-t.md) | ISendable is the parent type of all sendable types except null and undefined. It does not have any necessary methods or properties. |
+| [ISendable](arkts-image-sendableimage-isendable-t.md) | ISendable is the parent type of all sendable types except null and undefined. It does not have any necessary methods or properties. |
 

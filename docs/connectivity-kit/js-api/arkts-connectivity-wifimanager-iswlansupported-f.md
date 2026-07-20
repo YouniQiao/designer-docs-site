@@ -1,0 +1,36 @@
+# isWlanSupported
+
+## Modules to Import
+
+```TypeScript
+import { wifiManager } from '@kit.ConnectivityKit';
+```
+
+## isWlanSupported
+
+```TypeScript
+function isWlanSupported(): boolean
+```
+
+Query whether Wi-Fi is available
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-wifiManager-function isWlanSupported(): boolean--><!--Device-wifiManager-function isWlanSupported(): boolean-End-->
+
+**System capability:** SystemCapability.Communication.WiFi.Core
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| boolean | Returns {@code true} if the Wi-Fi is available, returns {@code false} otherwise. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [2401000](../errorcode-wifi.md#2401000-sta-internal-error) | Operation failed. |
+

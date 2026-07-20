@@ -1,11 +1,10 @@
 # AbilityFirstFrameStateObserver (System API)
 
-The module defines the observer used to listen for the first frame rendering completion event of a given ability. It
-is used as an input parameter of
-[on](arkts-ability-on-f-sys.md#on-5)
-to listen for the completion event.
+The module defines the observer used to listen for the first frame rendering completion event of a given ability. It is used as an input parameter of [on](arkts-ability-appmanager-on-f-sys.md#on-5)to listen for the completion event.
 
 **Since:** 12
+
+<!--Device-unnamed-export interface AbilityFirstFrameStateObserver--><!--Device-unnamed-export interface AbilityFirstFrameStateObserver-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -21,6 +20,8 @@ Called when the first frame of the ability is rendered.
 
 **Since:** 12
 
+<!--Device-AbilityFirstFrameStateObserver-onAbilityFirstFrameDrawn(data: AbilityFirstFrameStateData): void--><!--Device-AbilityFirstFrameStateObserver-onAbilityFirstFrameDrawn(data: AbilityFirstFrameStateData): void-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **System API:** This is a system API.
@@ -29,5 +30,5 @@ Called when the first frame of the ability is rendered.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| data | AbilityFirstFrameStateData | Yes | Data returned after the first frame is rendered. |
+| data | [AbilityFirstFrameStateData](arkts-ability-appmanager-abilityfirstframestatedata-t-sys.md) | Yes | Data returned after the first frame is rendered. |
 

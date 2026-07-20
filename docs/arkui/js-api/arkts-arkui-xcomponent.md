@@ -1,6 +1,6 @@
 # XComponent
 
-Defines XComponent.
+Defines XComponent Component.
 
 
 ## XComponent
@@ -16,6 +16,8 @@ Constructor parameters
 **Deprecated since:** 12
 
 **Substitutes:** <!--SUBSTITUTE_API-->(value:<!--/SUBSTITUTE_API-->
+
+<!--Device-XComponentInterface-(value: { id: string; type: string; libraryname?: string; controller?: XComponentController }): XComponentAttribute--><!--Device-XComponentInterface-(value: { id: string; type: string; libraryname?: string; controller?: XComponentController }): XComponentAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -39,6 +41,8 @@ Constructor parameters
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-XComponentInterface-(value: { id: string; type: XComponentType; libraryname?: string; controller?: XComponentController }): XComponentAttribute--><!--Device-XComponentInterface-(value: { id: string; type: XComponentType; libraryname?: string; controller?: XComponentController }): XComponentAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
@@ -61,6 +65,8 @@ Constructor parameters
 
 **Atomic service API:** This API can be used in atomic services since API version 20.
 
+<!--Device-XComponentInterface-(options: XComponentOptions): XComponentAttribute--><!--Device-XComponentInterface-(options: XComponentOptions): XComponentAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
@@ -82,6 +88,8 @@ Constructor parameters
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 19.
+
+<!--Device-XComponentInterface-(params: NativeXComponentParameters): XComponentAttribute--><!--Device-XComponentInterface-(params: NativeXComponentParameters): XComponentAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

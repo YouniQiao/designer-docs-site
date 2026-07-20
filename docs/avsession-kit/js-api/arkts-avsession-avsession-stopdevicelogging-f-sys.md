@@ -1,0 +1,47 @@
+# stopDeviceLogging (System API)
+
+## Modules to Import
+
+```TypeScript
+import { avSession } from '@kit.AVSessionKit';
+```
+
+## stopDeviceLogging
+
+```TypeScript
+function stopDeviceLogging(): Promise<void>
+```
+
+Stop the current device written even the discovery is ongoing.
+
+**Since:** 13
+
+<!--Device-avSession-function stopDeviceLogging(): Promise<void>--><!--Device-avSession-function stopDeviceLogging(): Promise<void>-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVCast
+
+**System API:** This is a system API.
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise for the result |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
+| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
+
+**Example**
+
+```TypeScript
+avSession.stopDeviceLogging().then(() => {
+  console.info('Succeeded in stopping casting.');
+});
+
+```
+

@@ -1,0 +1,115 @@
+# getLocalProfileUuids (System API)
+
+## Modules to Import
+
+```TypeScript
+import { connection } from '@kit.ConnectivityKit';
+```
+
+## getLocalProfileUuids
+
+```TypeScript
+function getLocalProfileUuids(callback: AsyncCallback<Array<ProfileUuids>>): void
+```
+
+Obtains the profile UUIDs supported by the local device.
+
+**Since:** 10
+
+**Required permissions:** ohos.permission.ACCESS_BLUETOOTH
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-connection-function getLocalProfileUuids(callback: AsyncCallback<Array<ProfileUuids>>): void--><!--Device-connection-function getLocalProfileUuids(callback: AsyncCallback<Array<ProfileUuids>>): void-End-->
+
+**System capability:** SystemCapability.Communication.Bluetooth.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<ProfileUuids>> | Yes | the callback of getLocalProfileUuids. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Non-system applications are not allowed to use system APIs. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Invalid parameter. Possible causes: 1. Mandatory parameters are left unspecified.2. Incorrect parameter types. |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
+| 2900001 | Service stopped. |
+| 2900003 | Bluetooth disabled. |
+| 2900099 | Operation failed. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+try {
+    connection.getLocalProfileUuids((err: BusinessError, data: Array<connection.ProfileUuids>) => {
+        console.info('getLocalProfileUuids, err: ' + JSON.stringify(err) + ', data: ' + JSON.stringify(data));
+    });
+} catch (err) {
+    console.error('errCode: ' + (err as BusinessError).code + ', errMessage: ' + (err as BusinessError).message);
+}
+
+```
+
+
+## getLocalProfileUuids
+
+```TypeScript
+function getLocalProfileUuids(): Promise<Array<ProfileUuids>>
+```
+
+Obtains the profile UUIDs supported by the local device.
+
+**Since:** 10
+
+**Required permissions:** ohos.permission.ACCESS_BLUETOOTH
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-connection-function getLocalProfileUuids(): Promise<Array<ProfileUuids>>--><!--Device-connection-function getLocalProfileUuids(): Promise<Array<ProfileUuids>>-End-->
+
+**System capability:** SystemCapability.Communication.Bluetooth.Core
+
+**System API:** This is a system API.
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<ProfileUuids>> | Returns the promise object. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Non-system applications are not allowed to use system APIs. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Invalid parameter. Possible causes: 1. Mandatory parameters are left unspecified.2. Incorrect parameter types. 3. Parameter verification failed. |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
+| 2900001 | Service stopped. |
+| 2900003 | Bluetooth disabled. |
+| 2900099 | Operation failed. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+try {
+    connection.getLocalProfileUuids().then(() => {
+        console.info('getLocalProfileUuids');
+    }, (err: BusinessError) => {
+        console.error('getLocalProfileUuids: errCode' + (err as BusinessError).code + ', errMessage: ' + (err as BusinessError).message);
+    });
+} catch (err) {
+    console.error('errCode: ' + (err as BusinessError).code + ', errMessage: ' + (err as BusinessError).message);
+}
+
+```
+

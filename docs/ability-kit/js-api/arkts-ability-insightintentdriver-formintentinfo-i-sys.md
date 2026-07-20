@@ -1,0 +1,58 @@
+# FormIntentInfo (System API)
+
+Describes the parameters supported by the [@InsightIntentForm](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentform)decorator, such as the widget name. It also describes the widget information bound to the [intent developed using a configuration file](../../../../application-models/insight-intent-config-development.md).
+
+**Since:** 20
+
+<!--Device-insightIntentDriver-interface FormIntentInfo--><!--Device-insightIntentDriver-interface FormIntentInfo-End-->
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.Core
+
+**System API:** This is a system API.
+
+## Modules to Import
+
+```TypeScript
+import { insightIntentDriver } from '@kit.AbilityKit';
+```
+
+## abilityName
+
+```TypeScript
+readonly abilityName: string
+```
+
+Ability name.
+
+**Type:** string
+
+**Since:** 20
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-FormIntentInfo-readonly abilityName: string--><!--Device-FormIntentInfo-readonly abilityName: string-End-->
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.Core
+
+**System API:** This is a system API.
+
+## formName
+
+```TypeScript
+readonly formName: string
+```
+
+Name of the widget bound to the [FormExtensionAbility](../../apis-form-kit/arkts-apis/arkts-app-form-formextensionability.md).
+
+**Type:** string
+
+**Since:** 20
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-FormIntentInfo-readonly formName: string--><!--Device-FormIntentInfo-readonly formName: string-End-->
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.Core
+
+**System API:** This is a system API.
+

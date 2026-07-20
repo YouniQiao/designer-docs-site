@@ -1,6 +1,6 @@
 # Screen
 
-Defines the interface of Screen.
+Defines the Screen component.
 
 
 ## Screen
@@ -14,6 +14,8 @@ Called when the Screen is used.
 **Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ScreenInterface-(screenId: long): ScreenAttribute--><!--Device-ScreenInterface-(screenId: long): ScreenAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

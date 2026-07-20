@@ -4,6 +4,8 @@ PageNodeInfo defines the page node information used for auto-fill.
 
 **Since:** 26.0.0
 
+<!--Device-unnamed-export default interface PageNodeInfo--><!--Device-unnamed-export default interface PageNodeInfo-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
 **System API:** This is a system API.
@@ -24,6 +26,8 @@ The auto fill type of page node.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 
+<!--Device-PageNodeInfo-autoFillType: AutoFillType--><!--Device-PageNodeInfo-autoFillType: AutoFillType-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
 **System API:** This is a system API.
@@ -41,6 +45,8 @@ The depth of page node.
 **Since:** 11
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-PageNodeInfo-depth: int--><!--Device-PageNodeInfo-depth: int-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
@@ -60,6 +66,8 @@ The auto fill flag of page node.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-PageNodeInfo-enableAutoFill: boolean--><!--Device-PageNodeInfo-enableAutoFill: boolean-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
 **System API:** This is a system API.
@@ -70,8 +78,7 @@ The auto fill flag of page node.
 id: number
 ```
 
-The id of page node.
-The value should be an integer
+The id of page node.The value should be an integer
 
 **Type:** number
 
@@ -80,6 +87,8 @@ The value should be an integer
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+<!--Device-PageNodeInfo-id: int--><!--Device-PageNodeInfo-id: int-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
@@ -101,6 +110,8 @@ Is the page node in the focus.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 
+<!--Device-PageNodeInfo-isFocus: boolean--><!--Device-PageNodeInfo-isFocus: boolean-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
 **System API:** This is a system API.
@@ -119,6 +130,8 @@ The metadata of a node.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-PageNodeInfo-metadata?: string--><!--Device-PageNodeInfo-metadata?: string-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
 **System API:** This is a system API.
@@ -136,6 +149,8 @@ The password rules of page node.
 **Since:** 11
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-PageNodeInfo-passwordRules?: string--><!--Device-PageNodeInfo-passwordRules?: string-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
@@ -157,6 +172,8 @@ The placeholder of page node.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 
+<!--Device-PageNodeInfo-placeholder?: string--><!--Device-PageNodeInfo-placeholder?: string-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
 **System API:** This is a system API.
@@ -177,6 +194,8 @@ The rect of page node.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 
+<!--Device-PageNodeInfo-rect: AutoFillRect--><!--Device-PageNodeInfo-rect: AutoFillRect-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
 **System API:** This is a system API.
@@ -194,6 +213,8 @@ The tag of page node.
 **Since:** 11
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-PageNodeInfo-tag: string--><!--Device-PageNodeInfo-tag: string-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
@@ -214,6 +235,8 @@ The value of page node.
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+<!--Device-PageNodeInfo-value: string--><!--Device-PageNodeInfo-value: string-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 

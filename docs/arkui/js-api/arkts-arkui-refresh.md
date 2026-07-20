@@ -24,6 +24,11 @@ The **Refresh** component is a container that provides the pull-to-refresh featu
 >
 > - Pull-to-refresh cannot be triggered by mouse click-and-drag operations.
 
+## Child Components
+
+This component supports only one child component.
+
+Since API version 11, this component's child component moves down with the pull-down gesture.
 
 ## Refresh
 
@@ -36,6 +41,8 @@ Creates a **Refresh** container.
 **Since:** 8
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-RefreshInterface-(value: RefreshOptions): RefreshAttribute--><!--Device-RefreshInterface-(value: RefreshOptions): RefreshAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

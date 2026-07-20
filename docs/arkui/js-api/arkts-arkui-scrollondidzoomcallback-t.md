@@ -12,6 +12,8 @@ callback of Scroll, using in onDidZoom.
 
 **Atomic service API:** This API can be used in atomic services since API version 20.
 
+<!--Device-unnamed-declare type ScrollOnDidZoomCallback = (scale: number) => void--><!--Device-unnamed-declare type ScrollOnDidZoomCallback = (scale: number) => void-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**

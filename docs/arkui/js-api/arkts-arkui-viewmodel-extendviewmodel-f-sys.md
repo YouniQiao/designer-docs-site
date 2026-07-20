@@ -12,6 +12,12 @@ export declare function extendViewModel<T extends ViewModel, Data>(
 
 **Model restriction:** This API can be used only in the FA model.
 
+<!--Device-unnamed-export declare function extendViewModel<T extends ViewModel, Data>(
+  options: CombinedOptions<T, Data>
+): ViewModel & Data--><!--Device-unnamed-export declare function extendViewModel<T extends ViewModel, Data>(
+  options: CombinedOptions<T, Data>
+): ViewModel & Data-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Lite
 
 **System API:** This is a system API.
@@ -20,11 +26,11 @@ export declare function extendViewModel<T extends ViewModel, Data>(
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| options | CombinedOptions&lt;T, Data&gt; | Yes |  |
+| options | [CombinedOptions](arkts-arkui-combinedoptions-t-sys.md)<T, Data> | Yes |  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| ViewModel & Data | @syscap SystemCapability.ArkUI.ArkUI.Lite@systemapi@famodelonly |
+| [ViewModel](arkts-arkui-viewmodel-viewmodel-i.md) & Data | @syscap SystemCapability.ArkUI.ArkUI.Lite@systemapi@famodelonly |
 

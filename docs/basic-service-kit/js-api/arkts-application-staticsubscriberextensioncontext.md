@@ -13,6 +13,6 @@ import { StaticSubscriberExtensionContext } from '@kit.BasicServicesKit';
 
 | Name | Description |
 | --- | --- |
-| [StaticSubscriberExtensionContext](arkts-basicservices-staticsubscriberextensioncontext-c-sys.md) | The **StaticSubscriberExtensionContext** module, inherited from **StaticSubscriberExtensionAbility**, provides context for StaticSubscriberExtensionAbilities.You can use the APIs of this module to start StaticSubscriberExtensionAbilities. |
+| [StaticSubscriberExtensionContext](arkts-basicservices-application-staticsubscriberextensioncontext-staticsubscriberextensioncontext-c-sys.md) | The **StaticSubscriberExtensionContext** module, inherited from **StaticSubscriberExtensionAbility**, provides context for StaticSubscriberExtensionAbilities.You can use the APIs of this module to start StaticSubscriberExtensionAbilities. |
 <!--DelEnd-->
 

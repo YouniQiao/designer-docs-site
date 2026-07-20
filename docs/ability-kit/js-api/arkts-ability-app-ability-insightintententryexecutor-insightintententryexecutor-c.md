@@ -1,0 +1,120 @@
+# InsightIntentEntryExecutor
+
+The class of insight intent entry executor.
+
+**Since:** 20
+
+<!--Device-unnamed-declare class InsightIntentEntryExecutor<T>--><!--Device-unnamed-declare class InsightIntentEntryExecutor<T>-End-->
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.Core
+
+## Modules to Import
+
+```TypeScript
+import { InsightIntentEntryExecutor } from '@kit.AbilityKit';
+```
+
+## onExecute
+
+```TypeScript
+onExecute(): Promise<insightIntent.IntentResult<T>>
+```
+
+Called when insight intent execute.
+
+**Since:** 20
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 20.
+
+<!--Device-InsightIntentEntryExecutor-onExecute(): Promise<insightIntent.IntentResult<T>>--><!--Device-InsightIntentEntryExecutor-onExecute(): Promise<insightIntent.IntentResult<T>>-End-->
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<insightIntent.IntentResult<T>> | The result of insight intent execution, support promise. |
+
+## context
+
+```TypeScript
+context: InsightIntentContext
+```
+
+The insight intent context.
+
+**Type:** InsightIntentContext
+
+**Since:** 20
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 20.
+
+<!--Device-InsightIntentEntryExecutor-context: InsightIntentContext--><!--Device-InsightIntentEntryExecutor-context: InsightIntentContext-End-->
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.Core
+
+## executeMode
+
+```TypeScript
+executeMode: insightIntent.ExecuteMode
+```
+
+The insight intent execute mode.
+
+**Type:** insightIntent.ExecuteMode
+
+**Since:** 20
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 20.
+
+<!--Device-InsightIntentEntryExecutor-executeMode: insightIntent.ExecuteMode--><!--Device-InsightIntentEntryExecutor-executeMode: insightIntent.ExecuteMode-End-->
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.Core
+
+## uiExtensionSession
+
+```TypeScript
+uiExtensionSession?: UIExtensionContentSession
+```
+
+The UIExtension content session.
+
+**Type:** UIExtensionContentSession
+
+**Since:** 20
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 20.
+
+<!--Device-InsightIntentEntryExecutor-uiExtensionSession?: UIExtensionContentSession--><!--Device-InsightIntentEntryExecutor-uiExtensionSession?: UIExtensionContentSession-End-->
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.Core
+
+## windowStage
+
+```TypeScript
+windowStage?: window.WindowStage
+```
+
+The window stage.
+
+**Type:** window.WindowStage
+
+**Since:** 20
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 20.
+
+<!--Device-InsightIntentEntryExecutor-windowStage?: window.WindowStage--><!--Device-InsightIntentEntryExecutor-windowStage?: window.WindowStage-End-->
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.Core
+

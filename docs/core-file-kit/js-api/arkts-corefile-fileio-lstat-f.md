@@ -6,14 +6,15 @@
 declare function lstat(path: string): Promise<Stat>
 ```
 
-Obtains information about a symbolic link that is used to refer to a file or directory. This API uses a promise to
-return the result.
+Obtains information about a symbolic link that is used to refer to a file or directory. This API uses a promise to return the result.
 
 **Since:** 7
 
 **Deprecated since:** 9
 
 **Substitutes:** [fs:lstat](arkts-corefile-file-fs-lstat-f.md#lstat-1)
+
+<!--Device-unnamed-declare function lstat(path: string): Promise<Stat>--><!--Device-unnamed-declare function lstat(path: string): Promise<Stat>-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
@@ -27,7 +28,7 @@ return the result.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Stat&gt; | Promise that returns the symbolic link information obtained. For details, see **stat**. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Stat> | Promise that returns the symbolic link information obtained. For details, see **stat**. |
 
 
 ## lstat
@@ -36,14 +37,15 @@ return the result.
 declare function lstat(path: string, callback: AsyncCallback<Stat>): void
 ```
 
-Obtains information about a symbolic link that is used to refer to a file or directory. This API uses an asynchronous
-callback to return the result.
+Obtains information about a symbolic link that is used to refer to a file or directory. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 
 **Deprecated since:** 9
 
 **Substitutes:** [fs:lstat](arkts-corefile-file-fs-lstat-f.md#lstat-1)
+
+<!--Device-unnamed-declare function lstat(path: string, callback: AsyncCallback<Stat>): void--><!--Device-unnamed-declare function lstat(path: string, callback: AsyncCallback<Stat>): void-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
@@ -52,5 +54,5 @@ callback to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Application sandbox path of the target file. |
-| callback | AsyncCallback&lt;Stat&gt; | Yes | Callback used to return the symbolic link information obtained. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Stat> | Yes | Callback used to return the symbolic link information obtained. |
 

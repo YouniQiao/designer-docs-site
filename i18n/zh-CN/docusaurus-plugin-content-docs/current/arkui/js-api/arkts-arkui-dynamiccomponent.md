@@ -1,7 +1,6 @@
 # DynamicComponent
 
-提供DynamicComponent的接口，用于渲染其他ABC的UI。
-
+定义DynamicComponent组件。
 
 ## DynamicComponent
 
@@ -9,12 +8,13 @@
 DynamicComponent(options: DynamicOptions)
 ```
 
-构造DynamicComponentInterface。<br/>
-在使用DynamicComponentInterface时调用。
+构造DynamicComponentInterface。<br/>在使用DynamicComponentInterface时调用。
 
 **起始版本：** 26.0.0
 
 **模型约束：** 此接口仅可在Stage模型下使用。
+
+<!--Device-DynamicComponentInterface-(options: DynamicOptions): DynamicComponentAttribute--><!--Device-DynamicComponentInterface-(options: DynamicOptions): DynamicComponentAttribute-End-->
 
 **系统能力：** SystemCapability.ArkUI.ArkUI.Full
 

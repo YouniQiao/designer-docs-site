@@ -54,6 +54,43 @@ the same as that of **ForEach**.
 > The component has been bound with gestures to implement functions such as follow-up scrolling. If you need to add
 > custom gestures, refer to [Gesture Blocking Enhancement]{@link common}.
 
+## Child Components
+
+Only the [ListItem]{@link list_item} and [ListItemGroup]{@link list_item_group} child components and custom components are supported. When using custom components inside **List**, you are advised to wrap the custom component with a **ListItem** or **ListItemGroup** as the top-level container. Setting attributes or event methods directly on custom components is not recommended.
+
+Child components can be dynamically generated using rendering control types [if/else](docroot://ui/rendering-control/arkts-rendering-control-ifelse.md),[ForEach](docroot://ui/rendering-control/arkts-rendering-control-foreach.md),[LazyForEach](docroot://ui/rendering-control/arkts-rendering-control-lazyforeach.md), and [Repeat](docroot://ui/rendering-control/arkts-new-rendering-control-repeat.md). **LazyForEach** or **Repeat** is recommended to optimize performance.
+
+> **NOTE**  
+>  
+> If performance lag occurs when you process a large number of child components, consider using lazy loading, list  
+> item caching, dynamic preloading, component reuse, and layout optimization. For best practices, see  
+> [Optimizing Frame Loss for Long List Loading](https://developer.huawei.com/consumer/en/doc/best-practices/bpta-best-practices-long-list).  
+>  
+> Starting from API version 21, the maximum width or height for a single child component inside a **List** container  
+> is 16,777,216 px. In API version 20 and earlier versions, the limit was 1,000,000 px. If a child component exceeds  
+> the applicable size limit, scrolling or display behavior may become abnormal.  
+>  
+> Below are the rules for calculating the indexes of the child components of **List**:  
+>  
+> - The index increases in ascending order of child components.  
+>  
+> - In the **if/else** statement, only the child components for which the condition evaluates to true participate in  
+> the index calculation.  
+>  
+> - In the **ForEach**, **LazyForEach**, or **Repeat** statement, the indexes of all expanded subnodes are  
+> calculated.  
+>  
+> - After changes occur in [if/else](docroot://ui/rendering-control/arkts-rendering-control-ifelse.md),  
+> [ForEach](docroot://ui/rendering-control/arkts-rendering-control-foreach.md),  
+> [LazyForEach](docroot://ui/rendering-control/arkts-rendering-control-lazyforeach.md), and  
+> [Repeat](docroot://ui/rendering-control/arkts-new-rendering-control-repeat.md), index values are updated  
+> accordingly for child components.  
+>  
+> - Each **ListItemGroup** component is taken as a whole and assigned an index, and the indexes of the list items  
+> within are not included in the index calculation.  
+>  
+> - Child components of **List** whose **visibility** attribute is set to **Hidden** or **None** are included in the  
+> index calculation.
 
 ## List
 
@@ -68,6 +105,8 @@ Creates a list container.
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
+
+<!--Device-ListInterface-(options?: ListOptions): ListAttribute--><!--Device-ListInterface-(options?: ListOptions): ListAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

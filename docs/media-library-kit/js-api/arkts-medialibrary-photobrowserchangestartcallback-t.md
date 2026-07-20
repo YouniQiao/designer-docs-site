@@ -12,6 +12,8 @@ The callback of onPhotoBrowserChangeStart event
 
 **Atomic service API:** This API can be used in atomic services since API version 23.
 
+<!--Device-unnamed-export type PhotoBrowserChangeStartCallback = (targetPhotoInfo: BaseItemInfo) => void--><!--Device-unnamed-export type PhotoBrowserChangeStartCallback = (targetPhotoInfo: BaseItemInfo) => void-End-->
+
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
 
 **Parameters:**

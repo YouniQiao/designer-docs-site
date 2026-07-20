@@ -8,6 +8,8 @@ This component can only inherit the [universal attributes of security components
 
 **Since:** 10
 
+<!--Device-unnamed-declare class PasteButtonAttribute extends SecurityComponentMethod<PasteButtonAttribute>--><!--Device-unnamed-declare class PasteButtonAttribute extends SecurityComponentMethod<PasteButtonAttribute>-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 ## onClick
@@ -16,13 +18,11 @@ This component can only inherit the [universal attributes of security components
 onClick(event: PasteButtonCallback)
 ```
 
-Triggered when the paste button is clicked, returning the authorization result. Upon successful authorization, the
-application obtains temporary permission to read clipboard content.
+Triggered when the paste button is clicked, returning the authorization result. Upon successful authorization, the application obtains temporary permission to read clipboard content.
 
-> **NOTE**
-> - You may want to learn the
-> [restrictions on security component
-styles](../../../../security/AccessToken/security-component-overview.md#constraints)
+> **NOTE**  
+> - You may want to learn the  
+> [restrictions on security component styles](../../../../security/AccessToken/security-component-overview.md#constraints)  
 > to avoid authorization failures caused by incompliant styles.
 
 **Since:** 10
@@ -31,11 +31,13 @@ styles](../../../../security/AccessToken/security-component-overview.md#constrai
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-PasteButtonAttribute-onClick(event: PasteButtonCallback): PasteButtonAttribute--><!--Device-PasteButtonAttribute-onClick(event: PasteButtonCallback): PasteButtonAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | PasteButtonCallback | Yes | Callback for the click event, used to handle the authorization result afterthe paste button is clicked.<br>Starting from API version 18, **PasteButtonCallback** is adopted uniformly, which additionally provideserror information.<br>**Since:** 18 |
+| event | [PasteButtonCallback](arkts-arkui-pastebuttoncallback-t.md) | Yes | Callback for the click event, used to handle the authorization result after the paste button is clicked.<br>Starting from API version 18, **PasteButtonCallback** is adopted uniformly, which additionally provides error information.<br>**Since:** 18 |
 

@@ -1,0 +1,50 @@
+# startScannerDiscovery
+
+## Modules to Import
+
+```TypeScript
+import { scan } from '@kit.BasicServicesKit';
+```
+
+## startScannerDiscovery
+
+```TypeScript
+function startScannerDiscovery(): Promise<void>
+```
+
+Starts scanner discovery. This API uses a promise to return the result.
+
+**Since:** 20
+
+**Required permissions:** ohos.permission.PRINT
+
+<!--Device-scan-function startScannerDiscovery(): Promise<void>--><!--Device-scan-function startScannerDiscovery(): Promise<void>-End-->
+
+**System capability:** SystemCapability.Print.PrintFramework
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
+
+**Example**
+
+```TypeScript
+import { scan } from '@kit.BasicServicesKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+scan.startScannerDiscovery().then(() => {
+    console.info('start scanner discovery success');
+}).catch((error: BusinessError) => {
+    console.error('start scanner discovery failed: ' + JSON.stringify(error));
+})
+
+```
+

@@ -1,27 +1,27 @@
 # ArkTS API<!--arkts-medialibrarykit-->
 
 - [@ohos.file.AlbumPickerComponent](arkts-file-albumpickercomponent.md)
-  - [AlbumInfo](arkts-medialibrary-albuminfo-c.md)
-  - [AlbumPickerController](arkts-medialibrary-albumpickercontroller-c.md)
-  - [AlbumPickerOptions](arkts-medialibrary-albumpickeroptions-c.md)
-  - [AlbumPickerComponent](arkts-medialibrary-albumpickercomponent-s.md)
+  - [AlbumInfo](arkts-medialibrary-file-albumpickercomponent-albuminfo-c.md)
+  - [AlbumPickerController](arkts-medialibrary-file-albumpickercomponent-albumpickercontroller-c.md)
+  - [AlbumPickerOptions](arkts-medialibrary-file-albumpickercomponent-albumpickeroptions-c.md)
+  - [AlbumPickerComponent](arkts-medialibrary-file-albumpickercomponent-albumpickercomponent-s.md)
   - [EmptyAreaClickCallback](arkts-medialibrary-emptyareaclickcallback-t.md)
 - [@ohos.file.PhotoPickerComponent](arkts-file-photopickercomponent.md)
-  - [AnimatorParams](arkts-medialibrary-animatorparams-c.md)
-  - [BadgeConfig](arkts-medialibrary-badgeconfig-c.md)
-  - [BaseItemInfo](arkts-medialibrary-baseiteminfo-c.md)
-  - [ClickResult](arkts-medialibrary-clickresult-c.md)
-  - [CompletedResult](arkts-medialibrary-completedresult-c.md)
-  - [ItemInfo](arkts-medialibrary-iteminfo-c.md)
-  - [MaxSelected](arkts-medialibrary-maxselected-c.md)
-  - [PhotoBrowserInfo](arkts-medialibrary-photobrowserinfo-c.md)
-  - [PickerController](arkts-medialibrary-pickercontroller-c.md)
-  - [PickerError](arkts-medialibrary-pickererror-c.md)
-  - [PickerOptions](arkts-medialibrary-pickeroptions-c.md)
-  - [PreselectedInfo](arkts-medialibrary-preselectedinfo-c.md)
-  - [SingleLineConfig](arkts-medialibrary-singlelineconfig-c.md)
-  - [UpdatablePickerConfigs](arkts-medialibrary-updatablepickerconfigs-c.md)
-  - [PhotoPickerComponent](arkts-medialibrary-photopickercomponent-s.md)
+  - [AnimatorParams](arkts-medialibrary-file-photopickercomponent-animatorparams-c.md)
+  - [BadgeConfig](arkts-medialibrary-file-photopickercomponent-badgeconfig-c.md)
+  - [BaseItemInfo](arkts-medialibrary-file-photopickercomponent-baseiteminfo-c.md)
+  - [ClickResult](arkts-medialibrary-file-photopickercomponent-clickresult-c.md)
+  - [CompletedResult](arkts-medialibrary-file-photopickercomponent-completedresult-c.md)
+  - [ItemInfo](arkts-medialibrary-file-photopickercomponent-iteminfo-c.md)
+  - [MaxSelected](arkts-medialibrary-file-photopickercomponent-maxselected-c.md)
+  - [PhotoBrowserInfo](arkts-medialibrary-file-photopickercomponent-photobrowserinfo-c.md)
+  - [PickerController](arkts-medialibrary-file-photopickercomponent-pickercontroller-c.md)
+  - [PickerError](arkts-medialibrary-file-photopickercomponent-pickererror-c.md)
+  - [PickerOptions](arkts-medialibrary-file-photopickercomponent-pickeroptions-c.md)
+  - [PreselectedInfo](arkts-medialibrary-file-photopickercomponent-preselectedinfo-c.md)
+  - [SingleLineConfig](arkts-medialibrary-file-photopickercomponent-singlelineconfig-c.md)
+  - [UpdatablePickerConfigs](arkts-medialibrary-file-photopickercomponent-updatablepickerconfigs-c.md)
+  - [PhotoPickerComponent](arkts-medialibrary-file-photopickercomponent-photopickercomponent-s.md)
   - [CurrentAlbumDeletedCallback](arkts-medialibrary-currentalbumdeletedcallback-t.md)
   - [ErrorCallback](arkts-medialibrary-errorcallback-t.md)
   - [ExceedMaxSelectedCallback](arkts-medialibrary-exceedmaxselectedcallback-t.md)
@@ -34,252 +34,252 @@
   - [ScrollStopAtEndCallback](arkts-medialibrary-scrollstopatendcallback-t.md)
   - [ScrollStopAtStartCallback](arkts-medialibrary-scrollstopatstartcallback-t.md)
   - [videoPlayStateChangedCallback](arkts-medialibrary-videoplaystatechangedcallback-t.md)
-  - [BadgeType](arkts-medialibrary-badgetype-e.md)
-  - [ClickType](arkts-medialibrary-clicktype-e.md)
-  - [DataType](arkts-medialibrary-datatype-e.md)
-  - [ItemDisplayRatio](arkts-medialibrary-itemdisplayratio-e.md)
-  - [ItemType](arkts-medialibrary-itemtype-e.md)
-  - [MaxCountType](arkts-medialibrary-maxcounttype-e.md)
-  - [PhotoBrowserRange](arkts-medialibrary-photobrowserrange-e.md)
-  - [PhotoBrowserUIElement](arkts-medialibrary-photobrowseruielement-e.md)
-  - [PickerColorMode](arkts-medialibrary-pickercolormode-e.md)
-  - [PickerOrientation](arkts-medialibrary-pickerorientation-e.md)
-  - [ReminderMode](arkts-medialibrary-remindermode-e.md)
-  - [SaveMode](arkts-medialibrary-savemode-e.md)
-  - [SelectMode](arkts-medialibrary-selectmode-e.md)
-  - [VideoPlayerState](arkts-medialibrary-videoplayerstate-e.md)
+  - [BadgeType](arkts-medialibrary-file-photopickercomponent-badgetype-e.md)
+  - [ClickType](arkts-medialibrary-file-photopickercomponent-clicktype-e.md)
+  - [DataType](arkts-medialibrary-file-photopickercomponent-datatype-e.md)
+  - [ItemDisplayRatio](arkts-medialibrary-file-photopickercomponent-itemdisplayratio-e.md)
+  - [ItemType](arkts-medialibrary-file-photopickercomponent-itemtype-e.md)
+  - [MaxCountType](arkts-medialibrary-file-photopickercomponent-maxcounttype-e.md)
+  - [PhotoBrowserRange](arkts-medialibrary-file-photopickercomponent-photobrowserrange-e.md)
+  - [PhotoBrowserUIElement](arkts-medialibrary-file-photopickercomponent-photobrowseruielement-e.md)
+  - [PickerColorMode](arkts-medialibrary-file-photopickercomponent-pickercolormode-e.md)
+  - [PickerOrientation](arkts-medialibrary-file-photopickercomponent-pickerorientation-e.md)
+  - [ReminderMode](arkts-medialibrary-file-photopickercomponent-remindermode-e.md)
+  - [SaveMode](arkts-medialibrary-file-photopickercomponent-savemode-e.md)
+  - [SelectMode](arkts-medialibrary-file-photopickercomponent-selectmode-e.md)
+  - [VideoPlayerState](arkts-medialibrary-file-photopickercomponent-videoplayerstate-e.md)
 - [@ohos.file.RecentPhotoComponent](arkts-file-recentphotocomponent.md)
-  - [RecentPhotoInfo](arkts-medialibrary-recentphotoinfo-c.md)
-  - [RecentPhotoOptions](arkts-medialibrary-recentphotooptions-c.md)
-  - [RecentPhotoComponent](arkts-medialibrary-recentphotocomponent-s.md)
+  - [RecentPhotoInfo](arkts-medialibrary-file-recentphotocomponent-recentphotoinfo-c.md)
+  - [RecentPhotoOptions](arkts-medialibrary-file-recentphotocomponent-recentphotooptions-c.md)
+  - [RecentPhotoComponent](arkts-medialibrary-file-recentphotocomponent-recentphotocomponent-s.md)
   - [RecentPhotoCheckInfoCallback](arkts-medialibrary-recentphotocheckinfocallback-t.md)
   - [RecentPhotoCheckResultCallback](arkts-medialibrary-recentphotocheckresultcallback-t.md)
   - [RecentPhotoClickCallback](arkts-medialibrary-recentphotoclickcallback-t.md)
-  - [PhotoSource](arkts-medialibrary-photosource-e.md)
+  - [PhotoSource](arkts-medialibrary-file-recentphotocomponent-photosource-e.md)
 - [@ohos.file.photoAccessHelper](arkts-file-photoaccesshelper.md)
-  - [getPhotoAccessHelper](arkts-medialibrary-getphotoaccesshelper-f.md)<!--Del-->
-  - [getPhotoAccessHelper(system api)](arkts-medialibrary-getphotoaccesshelper-f-sys.md)<!--DelEnd--><!--Del-->
-  - [AnalysisAlbum(system api)](arkts-medialibrary-analysisalbum-c-sys.md)<!--DelEnd-->
-  - [AutoPlayScene](arkts-medialibrary-autoplayscene-c.md)
-  - [BaseSelectOptions](arkts-medialibrary-baseselectoptions-c.md)<!--Del-->
-  - [CloudEnhancement(system api)](arkts-medialibrary-cloudenhancement-c-sys.md)<!--DelEnd--><!--Del-->
-  - [CloudMediaAssetManager(system api)](arkts-medialibrary-cloudmediaassetmanager-c-sys.md)<!--DelEnd-->
-  - [ContextRecoveryInfo](arkts-medialibrary-contextrecoveryinfo-c.md)<!--Del-->
-  - [DefaultCoverOrderInfo(system api)](arkts-medialibrary-defaultcoverorderinfo-c-sys.md)<!--DelEnd-->
-  - [FileSizeFilter](arkts-medialibrary-filesizefilter-c.md)
-  - [GridPinchMode](arkts-medialibrary-gridpinchmode-c.md)<!--Del-->
-  - [HighlightAlbum(system api)](arkts-medialibrary-highlightalbum-c-sys.md)<!--DelEnd--><!--Del-->
-  - [KnowledgeContent(system api)](arkts-medialibrary-knowledgecontent-c-sys.md)<!--DelEnd-->
-  - [MediaAlbumChangeRequest](arkts-medialibrary-mediaalbumchangerequest-c.md)<!--Del-->
-  - [MediaAlbumChangeRequest(system api)](arkts-medialibrary-mediaalbumchangerequest-c-sys.md)<!--DelEnd--><!--Del-->
-  - [MediaAnalysisAlbumChangeRequest(system api)](arkts-medialibrary-mediaanalysisalbumchangerequest-c-sys.md)<!--DelEnd-->
-  - [MediaAssetChangeRequest](arkts-medialibrary-mediaassetchangerequest-c.md)<!--Del-->
-  - [MediaAssetChangeRequest(system api)](arkts-medialibrary-mediaassetchangerequest-c-sys.md)<!--DelEnd--><!--Del-->
-  - [MediaAssetEditData(system api)](arkts-medialibrary-mediaasseteditdata-c-sys.md)<!--DelEnd-->
-  - [MediaAssetManager](arkts-medialibrary-mediaassetmanager-c.md)<!--Del-->
-  - [MediaAssetsChangeRequest(system api)](arkts-medialibrary-mediaassetschangerequest-c-sys.md)<!--DelEnd--><!--Del-->
-  - [MediaHighlightAlbumChangeRequest(system api)](arkts-medialibrary-mediahighlightalbumchangerequest-c-sys.md)<!--DelEnd-->
-  - [MimeTypeFilter](arkts-medialibrary-mimetypefilter-c.md)
-  - [OperationItem](arkts-medialibrary-operationitem-c.md)<!--Del-->
-  - [PhotoAssetCustomRecordManager(system api)](arkts-medialibrary-photoassetcustomrecordmanager-c-sys.md)<!--DelEnd-->
-  - [PhotoSelectOptions](arkts-medialibrary-photoselectoptions-c.md)<!--Del-->
-  - [PhotoSelectOptions(system api)](arkts-medialibrary-photoselectoptions-c-sys.md)<!--DelEnd-->
-  - [PhotoSelectResult](arkts-medialibrary-photoselectresult-c.md)
-  - [PhotoViewMimeTypeFileSizeFilter](arkts-medialibrary-photoviewmimetypefilesizefilter-c.md)
-  - [PhotoViewPicker](arkts-medialibrary-photoviewpicker-c.md)
-  - [RecentPhotoInfo](arkts-medialibrary-recentphotoinfo-c.md)
-  - [RecentPhotoOptions](arkts-medialibrary-recentphotooptions-c.md)
-  - [RecommendationOptions](arkts-medialibrary-recommendationoptions-c.md)<!--Del-->
-  - [RecommendationOptions(system api)](arkts-medialibrary-recommendationoptions-c-sys.md)<!--DelEnd-->
-  - [RequestReadPermissionResult](arkts-medialibrary-requestreadpermissionresult-c.md)<!--Del-->
-  - [ResultSet(system api)](arkts-medialibrary-resultset-c-sys.md)<!--DelEnd--><!--Del-->
-  - [TaskSignal(system api)](arkts-medialibrary-tasksignal-c-sys.md)<!--DelEnd-->
-  - [VideoDurationFilter](arkts-medialibrary-videodurationfilter-c.md)
-  - [AbsAlbum](arkts-medialibrary-absalbum-i.md)<!--Del-->
-  - [AbsAlbum(system api)](arkts-medialibrary-absalbum-i-sys.md)<!--DelEnd-->
-  - [Album](arkts-medialibrary-album-i.md)<!--Del-->
-  - [Album(system api)](arkts-medialibrary-album-i-sys.md)<!--DelEnd--><!--Del-->
-  - [AlbumAttributeInfo(system api)](arkts-medialibrary-albumattributeinfo-i-sys.md)<!--DelEnd-->
-  - [AlbumChangeData](arkts-medialibrary-albumchangedata-i.md)<!--Del-->
-  - [AlbumChangeData(system api)](arkts-medialibrary-albumchangedata-i-sys.md)<!--DelEnd-->
-  - [AlbumChangeInfo](arkts-medialibrary-albumchangeinfo-i.md)<!--Del-->
-  - [AlbumChangeInfo(system api)](arkts-medialibrary-albumchangeinfo-i-sys.md)<!--DelEnd-->
-  - [AlbumChangeInfos](arkts-medialibrary-albumchangeinfos-i.md)<!--Del-->
-  - [AlbumOperation(system api)](arkts-medialibrary-albumoperation-i-sys.md)<!--DelEnd--><!--Del-->
-  - [AlbumOrder(system api)](arkts-medialibrary-albumorder-i-sys.md)<!--DelEnd--><!--Del-->
-  - [AnalysisConfig(system api)](arkts-medialibrary-analysisconfig-i-sys.md)<!--DelEnd--><!--Del-->
-  - [AnalysisResult(system api)](arkts-medialibrary-analysisresult-i-sys.md)<!--DelEnd-->
-  - [AssetCompatibleCapability](arkts-medialibrary-assetcompatiblecapability-i.md)<!--Del-->
-  - [BatchOperationOptions(system api)](arkts-medialibrary-batchoperationoptions-i-sys.md)<!--DelEnd-->
-  - [ChangeData](arkts-medialibrary-changedata-i.md)<!--Del-->
-  - [ChangeData(system api)](arkts-medialibrary-changedata-i-sys.md)<!--DelEnd--><!--Del-->
-  - [CloudAssetDownloadProgressInfo(system api)](arkts-medialibrary-cloudassetdownloadprogressinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [CloudAssetDownloadStatus(system api)](arkts-medialibrary-cloudassetdownloadstatus-i-sys.md)<!--DelEnd--><!--Del-->
-  - [CloudEnhancementTaskState(system api)](arkts-medialibrary-cloudenhancementtaskstate-i-sys.md)<!--DelEnd--><!--Del-->
-  - [CloudMediaAssetStatus(system api)](arkts-medialibrary-cloudmediaassetstatus-i-sys.md)<!--DelEnd--><!--Del-->
-  - [ContextMap(system api)](arkts-medialibrary-contextmap-i-sys.md)<!--DelEnd-->
-  - [CreateOptions](arkts-medialibrary-createoptions-i.md)
-  - [CreationSetting](arkts-medialibrary-creationsetting-i.md)<!--Del-->
-  - [DeepOptimizeSpaceProgress(system api)](arkts-medialibrary-deepoptimizespaceprogress-i-sys.md)<!--DelEnd--><!--Del-->
-  - [Entity(system api)](arkts-medialibrary-entity-i-sys.md)<!--DelEnd-->
-  - [FetchOptions](arkts-medialibrary-fetchoptions-i.md)
-  - [FetchResult](arkts-medialibrary-fetchresult-i.md)<!--Del-->
-  - [FetchResult(system api)](arkts-medialibrary-fetchresult-i-sys.md)<!--DelEnd--><!--Del-->
-  - [FormInfo(system api)](arkts-medialibrary-forminfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [FusionAssetsInfo(system api)](arkts-medialibrary-fusionassetsinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [GalleryFormInfo(system api)](arkts-medialibrary-galleryforminfo-i-sys.md)<!--DelEnd-->
-  - [MediaAssetDataHandler](arkts-medialibrary-mediaassetdatahandler-i.md)
-  - [MediaAssetProgressHandler](arkts-medialibrary-mediaassetprogresshandler-i.md)
-  - [MediaChangeRequest](arkts-medialibrary-mediachangerequest-i.md)
-  - [MediaLibraryAvailability](arkts-medialibrary-medialibraryavailability-i.md)
-  - [MovingPhoto](arkts-medialibrary-movingphoto-i.md)<!--Del-->
-  - [MovingPhoto(system api)](arkts-medialibrary-movingphoto-i-sys.md)<!--DelEnd--><!--Del-->
-  - [Options(system api)](arkts-medialibrary-options-i-sys.md)<!--DelEnd-->
-  - [PhotoAccessHelper](arkts-medialibrary-photoaccesshelper-i.md)<!--Del-->
-  - [PhotoAccessHelper(system api)](arkts-medialibrary-photoaccesshelper-i-sys.md)<!--DelEnd-->
-  - [PhotoAsset](arkts-medialibrary-photoasset-i.md)<!--Del-->
-  - [PhotoAsset(system api)](arkts-medialibrary-photoasset-i-sys.md)<!--DelEnd-->
-  - [PhotoAssetChangeData](arkts-medialibrary-photoassetchangedata-i.md)<!--Del-->
-  - [PhotoAssetChangeData(system api)](arkts-medialibrary-photoassetchangedata-i-sys.md)<!--DelEnd-->
-  - [PhotoAssetChangeInfo](arkts-medialibrary-photoassetchangeinfo-i.md)<!--Del-->
-  - [PhotoAssetChangeInfo(system api)](arkts-medialibrary-photoassetchangeinfo-i-sys.md)<!--DelEnd-->
-  - [PhotoAssetChangeInfos](arkts-medialibrary-photoassetchangeinfos-i.md)<!--Del-->
-  - [PhotoAssetCustomRecord(system api)](arkts-medialibrary-photoassetcustomrecord-i-sys.md)<!--DelEnd--><!--Del-->
-  - [PhotoCreateOptions(system api)](arkts-medialibrary-photocreateoptions-i-sys.md)<!--DelEnd-->
-  - [PhotoCreationConfig](arkts-medialibrary-photocreationconfig-i.md)<!--Del-->
-  - [PhotoCreationSource(system api)](arkts-medialibrary-photocreationsource-i-sys.md)<!--DelEnd-->
-  - [PhotoProxy](arkts-medialibrary-photoproxy-i.md)<!--Del-->
-  - [Progress(system api)](arkts-medialibrary-progress-i-sys.md)<!--DelEnd-->
-  - [QuickImageDataHandler](arkts-medialibrary-quickimagedatahandler-i.md)
-  - [RequestOptions](arkts-medialibrary-requestoptions-i.md)<!--Del-->
-  - [RequestOptions(system api)](arkts-medialibrary-requestoptions-i-sys.md)<!--DelEnd--><!--Del-->
-  - [RequestPhotoOptions(system api)](arkts-medialibrary-requestphotooptions-i-sys.md)<!--DelEnd--><!--Del-->
-  - [ResultInfo(system api)](arkts-medialibrary-resultinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [SearchSuggestionResult(system api)](arkts-medialibrary-searchsuggestionresult-i-sys.md)<!--DelEnd--><!--Del-->
-  - [SharedAlbumAsset(system api)](arkts-medialibrary-sharedalbumasset-i-sys.md)<!--DelEnd--><!--Del-->
-  - [SharedPhotoAsset(system api)](arkts-medialibrary-sharedphotoasset-i-sys.md)<!--DelEnd-->
-  - [TextContextInfo](arkts-medialibrary-textcontextinfo-i.md)
-  - [MemberType](arkts-medialibrary-membertype-t.md)
-  - [OperationValueType](arkts-medialibrary-operationvaluetype-t.md)
-  - [PhotoAssetParams](arkts-medialibrary-photoassetparams-t.md)<!--Del-->
-  - [ProgressListener(system api)](arkts-medialibrary-progresslistener-t-sys.md)<!--DelEnd--><!--Del-->
-  - [ResultListener(system api)](arkts-medialibrary-resultlistener-t-sys.md)<!--DelEnd--><!--Del-->
-  - [ValuesBucket(system api)](arkts-medialibrary-valuesbucket-t-sys.md)<!--DelEnd--><!--Del-->
-  - [ValueType(system api)](arkts-medialibrary-valuetype-t-sys.md)<!--DelEnd--><!--Del-->
-  - [AlbumAttribute(system api)](arkts-medialibrary-albumattribute-e-sys.md)<!--DelEnd-->
-  - [AlbumKeys](arkts-medialibrary-albumkeys-e.md)<!--Del-->
-  - [AlbumKeys(system api)](arkts-medialibrary-albumkeys-e-sys.md)<!--DelEnd--><!--Del-->
-  - [AlbumOperationType(system api)](arkts-medialibrary-albumoperationtype-e-sys.md)<!--DelEnd-->
-  - [AlbumSubtype](arkts-medialibrary-albumsubtype-e.md)<!--Del-->
-  - [AlbumSubtype(system api)](arkts-medialibrary-albumsubtype-e-sys.md)<!--DelEnd-->
-  - [AlbumType](arkts-medialibrary-albumtype-e.md)<!--Del-->
-  - [AlbumType(system api)](arkts-medialibrary-albumtype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [AnalysisType(system api)](arkts-medialibrary-analysistype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [AppLinkState(system api)](arkts-medialibrary-applinkstate-e-sys.md)<!--DelEnd--><!--Del-->
-  - [AssetSourceType(system api)](arkts-medialibrary-assetsourcetype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [AuthorizationMode(system api)](arkts-medialibrary-authorizationmode-e-sys.md)<!--DelEnd-->
-  - [AvailabilityStatus](arkts-medialibrary-availabilitystatus-e.md)<!--Del-->
-  - [CloudAssetDownloadCode(system api)](arkts-medialibrary-cloudassetdownloadcode-e-sys.md)<!--DelEnd--><!--Del-->
-  - [CloudAssetDownloadNotifyType(system api)](arkts-medialibrary-cloudassetdownloadnotifytype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [CloudEnhancementState(system api)](arkts-medialibrary-cloudenhancementstate-e-sys.md)<!--DelEnd--><!--Del-->
-  - [CloudEnhancementTaskStage(system api)](arkts-medialibrary-cloudenhancementtaskstage-e-sys.md)<!--DelEnd--><!--Del-->
-  - [CloudMediaAssetTaskStatus(system api)](arkts-medialibrary-cloudmediaassettaskstatus-e-sys.md)<!--DelEnd--><!--Del-->
-  - [CloudMediaDownloadType(system api)](arkts-medialibrary-cloudmediadownloadtype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [CloudMediaRetainType(system api)](arkts-medialibrary-cloudmediaretaintype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [CloudMediaTaskPauseCause(system api)](arkts-medialibrary-cloudmediataskpausecause-e-sys.md)<!--DelEnd-->
-  - [CompatibleMode](arkts-medialibrary-compatiblemode-e.md)
-  - [CompleteButtonText](arkts-medialibrary-completebuttontext-e.md)<!--Del-->
-  - [CompositeDisplayMode(system api)](arkts-medialibrary-compositedisplaymode-e-sys.md)<!--DelEnd--><!--Del-->
-  - [CoverUriSource(system api)](arkts-medialibrary-coverurisource-e-sys.md)<!--DelEnd--><!--Del-->
-  - [DeepOptimizeState(system api)](arkts-medialibrary-deepoptimizestate-e-sys.md)<!--DelEnd-->
-  - [DefaultChangeUri](arkts-medialibrary-defaultchangeuri-e.md)<!--Del-->
-  - [DefaultChangeUri(system api)](arkts-medialibrary-defaultchangeuri-e-sys.md)<!--DelEnd-->
-  - [DeliveryMode](arkts-medialibrary-deliverymode-e.md)
-  - [DynamicRangeType](arkts-medialibrary-dynamicrangetype-e.md)<!--Del-->
-  - [FieldType(system api)](arkts-medialibrary-fieldtype-e-sys.md)<!--DelEnd-->
-  - [FilterOperator](arkts-medialibrary-filteroperator-e.md)<!--Del-->
-  - [FusionAssetType(system api)](arkts-medialibrary-fusionassettype-e-sys.md)<!--DelEnd-->
-  - [GridLevel](arkts-medialibrary-gridlevel-e.md)
-  - [GridPinchModeType](arkts-medialibrary-gridpinchmodetype-e.md)<!--Del-->
-  - [HdrMode(system api)](arkts-medialibrary-hdrmode-e-sys.md)<!--DelEnd--><!--Del-->
-  - [HiddenPhotosDisplayMode(system api)](arkts-medialibrary-hiddenphotosdisplaymode-e-sys.md)<!--DelEnd--><!--Del-->
-  - [HideSensitiveType(system api)](arkts-medialibrary-hidesensitivetype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [HighlightAlbumChangeAttribute(system api)](arkts-medialibrary-highlightalbumchangeattribute-e-sys.md)<!--DelEnd--><!--Del-->
-  - [HighlightAlbumInfoType(system api)](arkts-medialibrary-highlightalbuminfotype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [HighlightUserActionType(system api)](arkts-medialibrary-highlightuseractiontype-e-sys.md)<!--DelEnd-->
-  - [ImageFileType](arkts-medialibrary-imagefiletype-e.md)
-  - [MediaAssetPermissionState](arkts-medialibrary-mediaassetpermissionstate-e.md)
-  - [MovingPhotoBadgeStateType](arkts-medialibrary-movingphotobadgestatetype-e.md)<!--Del-->
-  - [MovingPhotoEffectMode(system api)](arkts-medialibrary-movingphotoeffectmode-e-sys.md)<!--DelEnd-->
-  - [NotifyChangeType](arkts-medialibrary-notifychangetype-e.md)<!--Del-->
-  - [NotifyChangeType(system api)](arkts-medialibrary-notifychangetype-e-sys.md)<!--DelEnd-->
-  - [NotifyType](arkts-medialibrary-notifytype-e.md)
-  - [OperationType](arkts-medialibrary-operationtype-e.md)
-  - [PhotoKeys](arkts-medialibrary-photokeys-e.md)<!--Del-->
-  - [PhotoKeys(system api)](arkts-medialibrary-photokeys-e-sys.md)<!--DelEnd--><!--Del-->
-  - [PhotoPermissionType(system api)](arkts-medialibrary-photopermissiontype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [PhotoRiskStatus(system api)](arkts-medialibrary-photoriskstatus-e-sys.md)<!--DelEnd-->
-  - [PhotoSource](arkts-medialibrary-photosource-e.md)
-  - [PhotoSubtype](arkts-medialibrary-photosubtype-e.md)<!--Del-->
-  - [PhotoSubtype(system api)](arkts-medialibrary-photosubtype-e-sys.md)<!--DelEnd-->
-  - [PhotoType](arkts-medialibrary-phototype-e.md)
-  - [PhotoViewMIMETypes](arkts-medialibrary-photoviewmimetypes-e.md)
-  - [PlayMode](arkts-medialibrary-playmode-e.md)
-  - [PositionType](arkts-medialibrary-positiontype-e.md)<!--Del-->
-  - [PositionType(system api)](arkts-medialibrary-positiontype-e-sys.md)<!--DelEnd-->
-  - [PreferredCompatibleMode](arkts-medialibrary-preferredcompatiblemode-e.md)<!--Del-->
-  - [RankingMethod(system api)](arkts-medialibrary-rankingmethod-e-sys.md)<!--DelEnd-->
-  - [RecommendationType](arkts-medialibrary-recommendationtype-e.md)<!--Del-->
-  - [RecommendationType(system api)](arkts-medialibrary-recommendationtype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [RequestPhotoType(system api)](arkts-medialibrary-requestphototype-e-sys.md)<!--DelEnd-->
-  - [ResourceType](arkts-medialibrary-resourcetype-e.md)<!--Del-->
-  - [ResourceType(system api)](arkts-medialibrary-resourcetype-e-sys.md)<!--DelEnd-->
-  - [SceneType](arkts-medialibrary-scenetype-e.md)<!--Del-->
-  - [SearchSuggestionType(system api)](arkts-medialibrary-searchsuggestiontype-e-sys.md)<!--DelEnd-->
-  - [SingleSelectionMode](arkts-medialibrary-singleselectionmode-e.md)<!--Del-->
-  - [SourceMode(system api)](arkts-medialibrary-sourcemode-e-sys.md)<!--DelEnd--><!--Del-->
-  - [StrongAssociationType(system api)](arkts-medialibrary-strongassociationtype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [SupportedImageFormat(system api)](arkts-medialibrary-supportedimageformat-e-sys.md)<!--DelEnd--><!--Del-->
-  - [ThumbnailChangeStatus(system api)](arkts-medialibrary-thumbnailchangestatus-e-sys.md)<!--DelEnd--><!--Del-->
-  - [ThumbnailType(system api)](arkts-medialibrary-thumbnailtype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [ThumbnailVisibility(system api)](arkts-medialibrary-thumbnailvisibility-e-sys.md)<!--DelEnd--><!--Del-->
-  - [VideoEnhancementType(system api)](arkts-medialibrary-videoenhancementtype-e-sys.md)<!--DelEnd-->
-  - [VideoMode](arkts-medialibrary-videomode-e.md)<!--Del-->
-  - [WatermarkType(system api)](arkts-medialibrary-watermarktype-e-sys.md)<!--DelEnd-->
+  - [getPhotoAccessHelper](arkts-medialibrary-photoaccesshelper-getphotoaccesshelper-f.md)<!--Del-->
+  - [getPhotoAccessHelper(system api)](arkts-medialibrary-photoaccesshelper-getphotoaccesshelper-f-sys.md)<!--DelEnd--><!--Del-->
+  - [AnalysisAlbum(system api)](arkts-medialibrary-photoaccesshelper-analysisalbum-c-sys.md)<!--DelEnd-->
+  - [AutoPlayScene](arkts-medialibrary-photoaccesshelper-autoplayscene-c.md)
+  - [BaseSelectOptions](arkts-medialibrary-photoaccesshelper-baseselectoptions-c.md)<!--Del-->
+  - [CloudEnhancement(system api)](arkts-medialibrary-photoaccesshelper-cloudenhancement-c-sys.md)<!--DelEnd--><!--Del-->
+  - [CloudMediaAssetManager(system api)](arkts-medialibrary-photoaccesshelper-cloudmediaassetmanager-c-sys.md)<!--DelEnd-->
+  - [ContextRecoveryInfo](arkts-medialibrary-photoaccesshelper-contextrecoveryinfo-c.md)<!--Del-->
+  - [DefaultCoverOrderInfo(system api)](arkts-medialibrary-photoaccesshelper-defaultcoverorderinfo-c-sys.md)<!--DelEnd-->
+  - [FileSizeFilter](arkts-medialibrary-photoaccesshelper-filesizefilter-c.md)
+  - [GridPinchMode](arkts-medialibrary-photoaccesshelper-gridpinchmode-c.md)<!--Del-->
+  - [HighlightAlbum(system api)](arkts-medialibrary-photoaccesshelper-highlightalbum-c-sys.md)<!--DelEnd--><!--Del-->
+  - [KnowledgeContent(system api)](arkts-medialibrary-photoaccesshelper-knowledgecontent-c-sys.md)<!--DelEnd-->
+  - [MediaAlbumChangeRequest](arkts-medialibrary-photoaccesshelper-mediaalbumchangerequest-c.md)<!--Del-->
+  - [MediaAlbumChangeRequest(system api)](arkts-medialibrary-photoaccesshelper-mediaalbumchangerequest-c-sys.md)<!--DelEnd--><!--Del-->
+  - [MediaAnalysisAlbumChangeRequest(system api)](arkts-medialibrary-photoaccesshelper-mediaanalysisalbumchangerequest-c-sys.md)<!--DelEnd-->
+  - [MediaAssetChangeRequest](arkts-medialibrary-photoaccesshelper-mediaassetchangerequest-c.md)<!--Del-->
+  - [MediaAssetChangeRequest(system api)](arkts-medialibrary-photoaccesshelper-mediaassetchangerequest-c-sys.md)<!--DelEnd--><!--Del-->
+  - [MediaAssetEditData(system api)](arkts-medialibrary-photoaccesshelper-mediaasseteditdata-c-sys.md)<!--DelEnd-->
+  - [MediaAssetManager](arkts-medialibrary-photoaccesshelper-mediaassetmanager-c.md)<!--Del-->
+  - [MediaAssetsChangeRequest(system api)](arkts-medialibrary-photoaccesshelper-mediaassetschangerequest-c-sys.md)<!--DelEnd--><!--Del-->
+  - [MediaHighlightAlbumChangeRequest(system api)](arkts-medialibrary-photoaccesshelper-mediahighlightalbumchangerequest-c-sys.md)<!--DelEnd-->
+  - [MimeTypeFilter](arkts-medialibrary-photoaccesshelper-mimetypefilter-c.md)
+  - [OperationItem](arkts-medialibrary-photoaccesshelper-operationitem-c.md)<!--Del-->
+  - [PhotoAssetCustomRecordManager(system api)](arkts-medialibrary-photoaccesshelper-photoassetcustomrecordmanager-c-sys.md)<!--DelEnd-->
+  - [PhotoSelectOptions](arkts-medialibrary-photoaccesshelper-photoselectoptions-c.md)<!--Del-->
+  - [PhotoSelectOptions(system api)](arkts-medialibrary-photoaccesshelper-photoselectoptions-c-sys.md)<!--DelEnd-->
+  - [PhotoSelectResult](arkts-medialibrary-photoaccesshelper-photoselectresult-c.md)
+  - [PhotoViewMimeTypeFileSizeFilter](arkts-medialibrary-photoaccesshelper-photoviewmimetypefilesizefilter-c.md)
+  - [PhotoViewPicker](arkts-medialibrary-photoaccesshelper-photoviewpicker-c.md)
+  - [RecentPhotoInfo](arkts-medialibrary-photoaccesshelper-recentphotoinfo-c.md)
+  - [RecentPhotoOptions](arkts-medialibrary-photoaccesshelper-recentphotooptions-c.md)
+  - [RecommendationOptions](arkts-medialibrary-photoaccesshelper-recommendationoptions-c.md)<!--Del-->
+  - [RecommendationOptions(system api)](arkts-medialibrary-photoaccesshelper-recommendationoptions-c-sys.md)<!--DelEnd-->
+  - [RequestReadPermissionResult](arkts-medialibrary-photoaccesshelper-requestreadpermissionresult-c.md)<!--Del-->
+  - [ResultSet(system api)](arkts-medialibrary-photoaccesshelper-resultset-c-sys.md)<!--DelEnd--><!--Del-->
+  - [TaskSignal(system api)](arkts-medialibrary-photoaccesshelper-tasksignal-c-sys.md)<!--DelEnd-->
+  - [VideoDurationFilter](arkts-medialibrary-photoaccesshelper-videodurationfilter-c.md)
+  - [AbsAlbum](arkts-medialibrary-photoaccesshelper-absalbum-i.md)<!--Del-->
+  - [AbsAlbum(system api)](arkts-medialibrary-photoaccesshelper-absalbum-i-sys.md)<!--DelEnd-->
+  - [Album](arkts-medialibrary-photoaccesshelper-album-i.md)<!--Del-->
+  - [Album(system api)](arkts-medialibrary-photoaccesshelper-album-i-sys.md)<!--DelEnd--><!--Del-->
+  - [AlbumAttributeInfo(system api)](arkts-medialibrary-photoaccesshelper-albumattributeinfo-i-sys.md)<!--DelEnd-->
+  - [AlbumChangeData](arkts-medialibrary-photoaccesshelper-albumchangedata-i.md)<!--Del-->
+  - [AlbumChangeData(system api)](arkts-medialibrary-photoaccesshelper-albumchangedata-i-sys.md)<!--DelEnd-->
+  - [AlbumChangeInfo](arkts-medialibrary-photoaccesshelper-albumchangeinfo-i.md)<!--Del-->
+  - [AlbumChangeInfo(system api)](arkts-medialibrary-photoaccesshelper-albumchangeinfo-i-sys.md)<!--DelEnd-->
+  - [AlbumChangeInfos](arkts-medialibrary-photoaccesshelper-albumchangeinfos-i.md)<!--Del-->
+  - [AlbumOperation(system api)](arkts-medialibrary-photoaccesshelper-albumoperation-i-sys.md)<!--DelEnd--><!--Del-->
+  - [AlbumOrder(system api)](arkts-medialibrary-photoaccesshelper-albumorder-i-sys.md)<!--DelEnd--><!--Del-->
+  - [AnalysisConfig(system api)](arkts-medialibrary-photoaccesshelper-analysisconfig-i-sys.md)<!--DelEnd--><!--Del-->
+  - [AnalysisResult(system api)](arkts-medialibrary-photoaccesshelper-analysisresult-i-sys.md)<!--DelEnd-->
+  - [AssetCompatibleCapability](arkts-medialibrary-photoaccesshelper-assetcompatiblecapability-i.md)<!--Del-->
+  - [BatchOperationOptions(system api)](arkts-medialibrary-photoaccesshelper-batchoperationoptions-i-sys.md)<!--DelEnd-->
+  - [ChangeData](arkts-medialibrary-photoaccesshelper-changedata-i.md)<!--Del-->
+  - [ChangeData(system api)](arkts-medialibrary-photoaccesshelper-changedata-i-sys.md)<!--DelEnd--><!--Del-->
+  - [CloudAssetDownloadProgressInfo(system api)](arkts-medialibrary-photoaccesshelper-cloudassetdownloadprogressinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [CloudAssetDownloadStatus(system api)](arkts-medialibrary-photoaccesshelper-cloudassetdownloadstatus-i-sys.md)<!--DelEnd--><!--Del-->
+  - [CloudEnhancementTaskState(system api)](arkts-medialibrary-photoaccesshelper-cloudenhancementtaskstate-i-sys.md)<!--DelEnd--><!--Del-->
+  - [CloudMediaAssetStatus(system api)](arkts-medialibrary-photoaccesshelper-cloudmediaassetstatus-i-sys.md)<!--DelEnd--><!--Del-->
+  - [ContextMap(system api)](arkts-medialibrary-photoaccesshelper-contextmap-i-sys.md)<!--DelEnd-->
+  - [CreateOptions](arkts-medialibrary-photoaccesshelper-createoptions-i.md)
+  - [CreationSetting](arkts-medialibrary-photoaccesshelper-creationsetting-i.md)<!--Del-->
+  - [DeepOptimizeSpaceProgress(system api)](arkts-medialibrary-photoaccesshelper-deepoptimizespaceprogress-i-sys.md)<!--DelEnd--><!--Del-->
+  - [Entity(system api)](arkts-medialibrary-photoaccesshelper-entity-i-sys.md)<!--DelEnd-->
+  - [FetchOptions](arkts-medialibrary-photoaccesshelper-fetchoptions-i.md)
+  - [FetchResult](arkts-medialibrary-photoaccesshelper-fetchresult-i.md)<!--Del-->
+  - [FetchResult(system api)](arkts-medialibrary-photoaccesshelper-fetchresult-i-sys.md)<!--DelEnd--><!--Del-->
+  - [FormInfo(system api)](arkts-medialibrary-photoaccesshelper-forminfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [FusionAssetsInfo(system api)](arkts-medialibrary-photoaccesshelper-fusionassetsinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [GalleryFormInfo(system api)](arkts-medialibrary-photoaccesshelper-galleryforminfo-i-sys.md)<!--DelEnd-->
+  - [MediaAssetDataHandler](arkts-medialibrary-photoaccesshelper-mediaassetdatahandler-i.md)
+  - [MediaAssetProgressHandler](arkts-medialibrary-photoaccesshelper-mediaassetprogresshandler-i.md)
+  - [MediaChangeRequest](arkts-medialibrary-photoaccesshelper-mediachangerequest-i.md)
+  - [MediaLibraryAvailability](arkts-medialibrary-photoaccesshelper-medialibraryavailability-i.md)
+  - [MovingPhoto](arkts-medialibrary-photoaccesshelper-movingphoto-i.md)<!--Del-->
+  - [MovingPhoto(system api)](arkts-medialibrary-photoaccesshelper-movingphoto-i-sys.md)<!--DelEnd--><!--Del-->
+  - [Options(system api)](arkts-medialibrary-photoaccesshelper-options-i-sys.md)<!--DelEnd-->
+  - [PhotoAccessHelper](arkts-medialibrary-photoaccesshelper-photoaccesshelper-i.md)<!--Del-->
+  - [PhotoAccessHelper(system api)](arkts-medialibrary-photoaccesshelper-photoaccesshelper-i-sys.md)<!--DelEnd-->
+  - [PhotoAsset](arkts-medialibrary-photoaccesshelper-photoasset-i.md)<!--Del-->
+  - [PhotoAsset(system api)](arkts-medialibrary-photoaccesshelper-photoasset-i-sys.md)<!--DelEnd-->
+  - [PhotoAssetChangeData](arkts-medialibrary-photoaccesshelper-photoassetchangedata-i.md)<!--Del-->
+  - [PhotoAssetChangeData(system api)](arkts-medialibrary-photoaccesshelper-photoassetchangedata-i-sys.md)<!--DelEnd-->
+  - [PhotoAssetChangeInfo](arkts-medialibrary-photoaccesshelper-photoassetchangeinfo-i.md)<!--Del-->
+  - [PhotoAssetChangeInfo(system api)](arkts-medialibrary-photoaccesshelper-photoassetchangeinfo-i-sys.md)<!--DelEnd-->
+  - [PhotoAssetChangeInfos](arkts-medialibrary-photoaccesshelper-photoassetchangeinfos-i.md)<!--Del-->
+  - [PhotoAssetCustomRecord(system api)](arkts-medialibrary-photoaccesshelper-photoassetcustomrecord-i-sys.md)<!--DelEnd--><!--Del-->
+  - [PhotoCreateOptions(system api)](arkts-medialibrary-photoaccesshelper-photocreateoptions-i-sys.md)<!--DelEnd-->
+  - [PhotoCreationConfig](arkts-medialibrary-photoaccesshelper-photocreationconfig-i.md)<!--Del-->
+  - [PhotoCreationSource(system api)](arkts-medialibrary-photoaccesshelper-photocreationsource-i-sys.md)<!--DelEnd-->
+  - [PhotoProxy](arkts-medialibrary-photoaccesshelper-photoproxy-i.md)<!--Del-->
+  - [Progress(system api)](arkts-medialibrary-photoaccesshelper-progress-i-sys.md)<!--DelEnd-->
+  - [QuickImageDataHandler](arkts-medialibrary-photoaccesshelper-quickimagedatahandler-i.md)
+  - [RequestOptions](arkts-medialibrary-photoaccesshelper-requestoptions-i.md)<!--Del-->
+  - [RequestOptions(system api)](arkts-medialibrary-photoaccesshelper-requestoptions-i-sys.md)<!--DelEnd--><!--Del-->
+  - [RequestPhotoOptions(system api)](arkts-medialibrary-photoaccesshelper-requestphotooptions-i-sys.md)<!--DelEnd--><!--Del-->
+  - [ResultInfo(system api)](arkts-medialibrary-photoaccesshelper-resultinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [SearchSuggestionResult(system api)](arkts-medialibrary-photoaccesshelper-searchsuggestionresult-i-sys.md)<!--DelEnd--><!--Del-->
+  - [SharedAlbumAsset(system api)](arkts-medialibrary-photoaccesshelper-sharedalbumasset-i-sys.md)<!--DelEnd--><!--Del-->
+  - [SharedPhotoAsset(system api)](arkts-medialibrary-photoaccesshelper-sharedphotoasset-i-sys.md)<!--DelEnd-->
+  - [TextContextInfo](arkts-medialibrary-photoaccesshelper-textcontextinfo-i.md)
+  - [MemberType](arkts-medialibrary-photoaccesshelper-membertype-t.md)
+  - [OperationValueType](arkts-medialibrary-photoaccesshelper-operationvaluetype-t.md)
+  - [PhotoAssetParams](arkts-medialibrary-photoaccesshelper-photoassetparams-t.md)<!--Del-->
+  - [ProgressListener(system api)](arkts-medialibrary-photoaccesshelper-progresslistener-t-sys.md)<!--DelEnd--><!--Del-->
+  - [ResultListener(system api)](arkts-medialibrary-photoaccesshelper-resultlistener-t-sys.md)<!--DelEnd--><!--Del-->
+  - [ValuesBucket(system api)](arkts-medialibrary-photoaccesshelper-valuesbucket-t-sys.md)<!--DelEnd--><!--Del-->
+  - [ValueType(system api)](arkts-medialibrary-photoaccesshelper-valuetype-t-sys.md)<!--DelEnd--><!--Del-->
+  - [AlbumAttribute(system api)](arkts-medialibrary-photoaccesshelper-albumattribute-e-sys.md)<!--DelEnd-->
+  - [AlbumKeys](arkts-medialibrary-photoaccesshelper-albumkeys-e.md)<!--Del-->
+  - [AlbumKeys(system api)](arkts-medialibrary-photoaccesshelper-albumkeys-e-sys.md)<!--DelEnd--><!--Del-->
+  - [AlbumOperationType(system api)](arkts-medialibrary-photoaccesshelper-albumoperationtype-e-sys.md)<!--DelEnd-->
+  - [AlbumSubtype](arkts-medialibrary-photoaccesshelper-albumsubtype-e.md)<!--Del-->
+  - [AlbumSubtype(system api)](arkts-medialibrary-photoaccesshelper-albumsubtype-e-sys.md)<!--DelEnd-->
+  - [AlbumType](arkts-medialibrary-photoaccesshelper-albumtype-e.md)<!--Del-->
+  - [AlbumType(system api)](arkts-medialibrary-photoaccesshelper-albumtype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [AnalysisType(system api)](arkts-medialibrary-photoaccesshelper-analysistype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [AppLinkState(system api)](arkts-medialibrary-photoaccesshelper-applinkstate-e-sys.md)<!--DelEnd--><!--Del-->
+  - [AssetSourceType(system api)](arkts-medialibrary-photoaccesshelper-assetsourcetype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [AuthorizationMode(system api)](arkts-medialibrary-photoaccesshelper-authorizationmode-e-sys.md)<!--DelEnd-->
+  - [AvailabilityStatus](arkts-medialibrary-photoaccesshelper-availabilitystatus-e.md)<!--Del-->
+  - [CloudAssetDownloadCode(system api)](arkts-medialibrary-photoaccesshelper-cloudassetdownloadcode-e-sys.md)<!--DelEnd--><!--Del-->
+  - [CloudAssetDownloadNotifyType(system api)](arkts-medialibrary-photoaccesshelper-cloudassetdownloadnotifytype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [CloudEnhancementState(system api)](arkts-medialibrary-photoaccesshelper-cloudenhancementstate-e-sys.md)<!--DelEnd--><!--Del-->
+  - [CloudEnhancementTaskStage(system api)](arkts-medialibrary-photoaccesshelper-cloudenhancementtaskstage-e-sys.md)<!--DelEnd--><!--Del-->
+  - [CloudMediaAssetTaskStatus(system api)](arkts-medialibrary-photoaccesshelper-cloudmediaassettaskstatus-e-sys.md)<!--DelEnd--><!--Del-->
+  - [CloudMediaDownloadType(system api)](arkts-medialibrary-photoaccesshelper-cloudmediadownloadtype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [CloudMediaRetainType(system api)](arkts-medialibrary-photoaccesshelper-cloudmediaretaintype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [CloudMediaTaskPauseCause(system api)](arkts-medialibrary-photoaccesshelper-cloudmediataskpausecause-e-sys.md)<!--DelEnd-->
+  - [CompatibleMode](arkts-medialibrary-photoaccesshelper-compatiblemode-e.md)
+  - [CompleteButtonText](arkts-medialibrary-photoaccesshelper-completebuttontext-e.md)<!--Del-->
+  - [CompositeDisplayMode(system api)](arkts-medialibrary-photoaccesshelper-compositedisplaymode-e-sys.md)<!--DelEnd--><!--Del-->
+  - [CoverUriSource(system api)](arkts-medialibrary-photoaccesshelper-coverurisource-e-sys.md)<!--DelEnd--><!--Del-->
+  - [DeepOptimizeState(system api)](arkts-medialibrary-photoaccesshelper-deepoptimizestate-e-sys.md)<!--DelEnd-->
+  - [DefaultChangeUri](arkts-medialibrary-photoaccesshelper-defaultchangeuri-e.md)<!--Del-->
+  - [DefaultChangeUri(system api)](arkts-medialibrary-photoaccesshelper-defaultchangeuri-e-sys.md)<!--DelEnd-->
+  - [DeliveryMode](arkts-medialibrary-photoaccesshelper-deliverymode-e.md)
+  - [DynamicRangeType](arkts-medialibrary-photoaccesshelper-dynamicrangetype-e.md)<!--Del-->
+  - [FieldType(system api)](arkts-medialibrary-photoaccesshelper-fieldtype-e-sys.md)<!--DelEnd-->
+  - [FilterOperator](arkts-medialibrary-photoaccesshelper-filteroperator-e.md)<!--Del-->
+  - [FusionAssetType(system api)](arkts-medialibrary-photoaccesshelper-fusionassettype-e-sys.md)<!--DelEnd-->
+  - [GridLevel](arkts-medialibrary-photoaccesshelper-gridlevel-e.md)
+  - [GridPinchModeType](arkts-medialibrary-photoaccesshelper-gridpinchmodetype-e.md)<!--Del-->
+  - [HdrMode(system api)](arkts-medialibrary-photoaccesshelper-hdrmode-e-sys.md)<!--DelEnd--><!--Del-->
+  - [HiddenPhotosDisplayMode(system api)](arkts-medialibrary-photoaccesshelper-hiddenphotosdisplaymode-e-sys.md)<!--DelEnd--><!--Del-->
+  - [HideSensitiveType(system api)](arkts-medialibrary-photoaccesshelper-hidesensitivetype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [HighlightAlbumChangeAttribute(system api)](arkts-medialibrary-photoaccesshelper-highlightalbumchangeattribute-e-sys.md)<!--DelEnd--><!--Del-->
+  - [HighlightAlbumInfoType(system api)](arkts-medialibrary-photoaccesshelper-highlightalbuminfotype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [HighlightUserActionType(system api)](arkts-medialibrary-photoaccesshelper-highlightuseractiontype-e-sys.md)<!--DelEnd-->
+  - [ImageFileType](arkts-medialibrary-photoaccesshelper-imagefiletype-e.md)
+  - [MediaAssetPermissionState](arkts-medialibrary-photoaccesshelper-mediaassetpermissionstate-e.md)
+  - [MovingPhotoBadgeStateType](arkts-medialibrary-photoaccesshelper-movingphotobadgestatetype-e.md)<!--Del-->
+  - [MovingPhotoEffectMode(system api)](arkts-medialibrary-photoaccesshelper-movingphotoeffectmode-e-sys.md)<!--DelEnd-->
+  - [NotifyChangeType](arkts-medialibrary-photoaccesshelper-notifychangetype-e.md)<!--Del-->
+  - [NotifyChangeType(system api)](arkts-medialibrary-photoaccesshelper-notifychangetype-e-sys.md)<!--DelEnd-->
+  - [NotifyType](arkts-medialibrary-photoaccesshelper-notifytype-e.md)
+  - [OperationType](arkts-medialibrary-photoaccesshelper-operationtype-e.md)
+  - [PhotoKeys](arkts-medialibrary-photoaccesshelper-photokeys-e.md)<!--Del-->
+  - [PhotoKeys(system api)](arkts-medialibrary-photoaccesshelper-photokeys-e-sys.md)<!--DelEnd--><!--Del-->
+  - [PhotoPermissionType(system api)](arkts-medialibrary-photoaccesshelper-photopermissiontype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [PhotoRiskStatus(system api)](arkts-medialibrary-photoaccesshelper-photoriskstatus-e-sys.md)<!--DelEnd-->
+  - [PhotoSource](arkts-medialibrary-photoaccesshelper-photosource-e.md)
+  - [PhotoSubtype](arkts-medialibrary-photoaccesshelper-photosubtype-e.md)<!--Del-->
+  - [PhotoSubtype(system api)](arkts-medialibrary-photoaccesshelper-photosubtype-e-sys.md)<!--DelEnd-->
+  - [PhotoType](arkts-medialibrary-photoaccesshelper-phototype-e.md)
+  - [PhotoViewMIMETypes](arkts-medialibrary-photoaccesshelper-photoviewmimetypes-e.md)
+  - [PlayMode](arkts-medialibrary-photoaccesshelper-playmode-e.md)
+  - [PositionType](arkts-medialibrary-photoaccesshelper-positiontype-e.md)<!--Del-->
+  - [PositionType(system api)](arkts-medialibrary-photoaccesshelper-positiontype-e-sys.md)<!--DelEnd-->
+  - [PreferredCompatibleMode](arkts-medialibrary-photoaccesshelper-preferredcompatiblemode-e.md)<!--Del-->
+  - [RankingMethod(system api)](arkts-medialibrary-photoaccesshelper-rankingmethod-e-sys.md)<!--DelEnd-->
+  - [RecommendationType](arkts-medialibrary-photoaccesshelper-recommendationtype-e.md)<!--Del-->
+  - [RecommendationType(system api)](arkts-medialibrary-photoaccesshelper-recommendationtype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [RequestPhotoType(system api)](arkts-medialibrary-photoaccesshelper-requestphototype-e-sys.md)<!--DelEnd-->
+  - [ResourceType](arkts-medialibrary-photoaccesshelper-resourcetype-e.md)<!--Del-->
+  - [ResourceType(system api)](arkts-medialibrary-photoaccesshelper-resourcetype-e-sys.md)<!--DelEnd-->
+  - [SceneType](arkts-medialibrary-photoaccesshelper-scenetype-e.md)<!--Del-->
+  - [SearchSuggestionType(system api)](arkts-medialibrary-photoaccesshelper-searchsuggestiontype-e-sys.md)<!--DelEnd-->
+  - [SingleSelectionMode](arkts-medialibrary-photoaccesshelper-singleselectionmode-e.md)<!--Del-->
+  - [SourceMode(system api)](arkts-medialibrary-photoaccesshelper-sourcemode-e-sys.md)<!--DelEnd--><!--Del-->
+  - [StrongAssociationType(system api)](arkts-medialibrary-photoaccesshelper-strongassociationtype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [SupportedImageFormat(system api)](arkts-medialibrary-photoaccesshelper-supportedimageformat-e-sys.md)<!--DelEnd--><!--Del-->
+  - [ThumbnailChangeStatus(system api)](arkts-medialibrary-photoaccesshelper-thumbnailchangestatus-e-sys.md)<!--DelEnd--><!--Del-->
+  - [ThumbnailType(system api)](arkts-medialibrary-photoaccesshelper-thumbnailtype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [ThumbnailVisibility(system api)](arkts-medialibrary-photoaccesshelper-thumbnailvisibility-e-sys.md)<!--DelEnd--><!--Del-->
+  - [VideoEnhancementType(system api)](arkts-medialibrary-photoaccesshelper-videoenhancementtype-e-sys.md)<!--DelEnd-->
+  - [VideoMode](arkts-medialibrary-photoaccesshelper-videomode-e.md)<!--Del-->
+  - [WatermarkType(system api)](arkts-medialibrary-photoaccesshelper-watermarktype-e-sys.md)<!--DelEnd-->
 - [@ohos.file.sendablePhotoAccessHelper](arkts-file-sendablephotoaccesshelper.md)
-  - [getPhotoAccessHelper](arkts-medialibrary-getphotoaccesshelper-f.md)<!--Del-->
-  - [getPhotoAccessHelper(system api)](arkts-medialibrary-getphotoaccesshelper-f-sys.md)<!--DelEnd-->
-  - [AbsAlbum](arkts-medialibrary-absalbum-i.md)<!--Del-->
-  - [AbsAlbum(system api)](arkts-medialibrary-absalbum-i-sys.md)<!--DelEnd-->
-  - [Album](arkts-medialibrary-album-i.md)<!--Del-->
-  - [Album(system api)](arkts-medialibrary-album-i-sys.md)<!--DelEnd-->
-  - [FetchResult](arkts-medialibrary-fetchresult-i.md)
-  - [PhotoAccessHelper](arkts-medialibrary-photoaccesshelper-i.md)<!--Del-->
-  - [PhotoAccessHelper(system api)](arkts-medialibrary-photoaccesshelper-i-sys.md)<!--DelEnd-->
-  - [PhotoAsset](arkts-medialibrary-photoasset-i.md)<!--Del-->
-  - [PhotoAsset(system api)](arkts-medialibrary-photoasset-i-sys.md)<!--DelEnd--><!--Del-->
-  - [SharedPhotoAsset(system api)](arkts-medialibrary-sharedphotoasset-i-sys.md)<!--DelEnd-->
-  - [AlbumSubtype](arkts-medialibrary-albumsubtype-e.md)<!--Del-->
-  - [AlbumSubtype(system api)](arkts-medialibrary-albumsubtype-e-sys.md)<!--DelEnd-->
-  - [AlbumType](arkts-medialibrary-albumtype-e.md)<!--Del-->
-  - [AlbumType(system api)](arkts-medialibrary-albumtype-e-sys.md)<!--DelEnd-->
-  - [DynamicRangeType](arkts-medialibrary-dynamicrangetype-e.md)<!--Del-->
-  - [MovingPhotoEffectMode(system api)](arkts-medialibrary-movingphotoeffectmode-e-sys.md)<!--DelEnd-->
-  - [PhotoSubtype](arkts-medialibrary-photosubtype-e.md)<!--Del-->
-  - [PhotoSubtype(system api)](arkts-medialibrary-photosubtype-e-sys.md)<!--DelEnd-->
-  - [PhotoType](arkts-medialibrary-phototype-e.md)<!--Del-->
-  - [PositionType(system api)](arkts-medialibrary-positiontype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [ThumbnailVisibility(system api)](arkts-medialibrary-thumbnailvisibility-e-sys.md)<!--DelEnd-->
+  - [getPhotoAccessHelper](arkts-medialibrary-sendablephotoaccesshelper-getphotoaccesshelper-f.md)<!--Del-->
+  - [getPhotoAccessHelper(system api)](arkts-medialibrary-sendablephotoaccesshelper-getphotoaccesshelper-f-sys.md)<!--DelEnd-->
+  - [AbsAlbum](arkts-medialibrary-sendablephotoaccesshelper-absalbum-i.md)<!--Del-->
+  - [AbsAlbum(system api)](arkts-medialibrary-sendablephotoaccesshelper-absalbum-i-sys.md)<!--DelEnd-->
+  - [Album](arkts-medialibrary-sendablephotoaccesshelper-album-i.md)<!--Del-->
+  - [Album(system api)](arkts-medialibrary-sendablephotoaccesshelper-album-i-sys.md)<!--DelEnd-->
+  - [FetchResult](arkts-medialibrary-sendablephotoaccesshelper-fetchresult-i.md)
+  - [PhotoAccessHelper](arkts-medialibrary-sendablephotoaccesshelper-photoaccesshelper-i.md)<!--Del-->
+  - [PhotoAccessHelper(system api)](arkts-medialibrary-sendablephotoaccesshelper-photoaccesshelper-i-sys.md)<!--DelEnd-->
+  - [PhotoAsset](arkts-medialibrary-sendablephotoaccesshelper-photoasset-i.md)<!--Del-->
+  - [PhotoAsset(system api)](arkts-medialibrary-sendablephotoaccesshelper-photoasset-i-sys.md)<!--DelEnd--><!--Del-->
+  - [SharedPhotoAsset(system api)](arkts-medialibrary-sendablephotoaccesshelper-sharedphotoasset-i-sys.md)<!--DelEnd-->
+  - [AlbumSubtype](arkts-medialibrary-sendablephotoaccesshelper-albumsubtype-e.md)<!--Del-->
+  - [AlbumSubtype(system api)](arkts-medialibrary-sendablephotoaccesshelper-albumsubtype-e-sys.md)<!--DelEnd-->
+  - [AlbumType](arkts-medialibrary-sendablephotoaccesshelper-albumtype-e.md)<!--Del-->
+  - [AlbumType(system api)](arkts-medialibrary-sendablephotoaccesshelper-albumtype-e-sys.md)<!--DelEnd-->
+  - [DynamicRangeType](arkts-medialibrary-sendablephotoaccesshelper-dynamicrangetype-e.md)<!--Del-->
+  - [MovingPhotoEffectMode(system api)](arkts-medialibrary-sendablephotoaccesshelper-movingphotoeffectmode-e-sys.md)<!--DelEnd-->
+  - [PhotoSubtype](arkts-medialibrary-sendablephotoaccesshelper-photosubtype-e.md)<!--Del-->
+  - [PhotoSubtype(system api)](arkts-medialibrary-sendablephotoaccesshelper-photosubtype-e-sys.md)<!--DelEnd-->
+  - [PhotoType](arkts-medialibrary-sendablephotoaccesshelper-phototype-e.md)<!--Del-->
+  - [PositionType(system api)](arkts-medialibrary-sendablephotoaccesshelper-positiontype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [ThumbnailVisibility(system api)](arkts-medialibrary-sendablephotoaccesshelper-thumbnailvisibility-e-sys.md)<!--DelEnd-->
 - [@ohos.multimedia.movingphotoview](arkts-multimedia-movingphotoview.md)
-  - [MovingPhotoViewAttribute](arkts-medialibrary-movingphotoviewattribute-c.md)<!--Del-->
-  - [MovingPhotoViewAttribute(system api)](arkts-medialibrary-movingphotoviewattribute-c-sys.md)<!--DelEnd-->
-  - [MovingPhotoViewController](arkts-medialibrary-movingphotoviewcontroller-c.md)<!--Del-->
-  - [MovingPhotoViewController(system api)](arkts-medialibrary-movingphotoviewcontroller-c-sys.md)<!--DelEnd-->
-  - [MovingPhotoViewInterface](arkts-medialibrary-movingphotoviewinterface-i.md)
-  - [MovingPhotoViewOptions](arkts-medialibrary-movingphotoviewoptions-i.md)<!--Del-->
-  - [MovingPhotoViewOptions(system api)](arkts-medialibrary-movingphotoviewoptions-i-sys.md)<!--DelEnd-->
+  - [MovingPhotoViewAttribute](arkts-medialibrary-multimedia-movingphotoview-movingphotoviewattribute-c.md)<!--Del-->
+  - [MovingPhotoViewAttribute(system api)](arkts-medialibrary-multimedia-movingphotoview-movingphotoviewattribute-c-sys.md)<!--DelEnd-->
+  - [MovingPhotoViewController](arkts-medialibrary-multimedia-movingphotoview-movingphotoviewcontroller-c.md)<!--Del-->
+  - [MovingPhotoViewController(system api)](arkts-medialibrary-multimedia-movingphotoview-movingphotoviewcontroller-c-sys.md)<!--DelEnd-->
+  - [MovingPhotoViewInterface](arkts-medialibrary-multimedia-movingphotoview-movingphotoviewinterface-i.md)
+  - [MovingPhotoViewOptions](arkts-medialibrary-multimedia-movingphotoview-movingphotoviewoptions-i.md)<!--Del-->
+  - [MovingPhotoViewOptions(system api)](arkts-medialibrary-multimedia-movingphotoview-movingphotoviewoptions-i-sys.md)<!--DelEnd-->
   - [MovingPhotoViewEventCallback](arkts-medialibrary-movingphotovieweventcallback-t.md)<!--Del-->
-  - [DynamicRangeMode(system api)](arkts-medialibrary-dynamicrangemode-e-sys.md)<!--DelEnd-->
-  - [PixelMapFormat](arkts-medialibrary-pixelmapformat-e.md)<!--Del-->
-  - [PixelMapFormat(system api)](arkts-medialibrary-pixelmapformat-e-sys.md)<!--DelEnd-->
+  - [DynamicRangeMode(system api)](arkts-medialibrary-multimedia-movingphotoview-dynamicrangemode-e-sys.md)<!--DelEnd-->
+  - [PixelMapFormat](arkts-medialibrary-multimedia-movingphotoview-pixelmapformat-e.md)<!--Del-->
+  - [PixelMapFormat(system api)](arkts-medialibrary-multimedia-movingphotoview-pixelmapformat-e-sys.md)<!--DelEnd-->
   - [Constants](arkts-medialibrary-multimedia-movingphotoview-con.md)

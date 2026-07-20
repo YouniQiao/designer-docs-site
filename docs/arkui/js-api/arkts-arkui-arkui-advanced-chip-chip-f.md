@@ -22,11 +22,13 @@ Build function of Chip.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-unnamed-export declare function Chip(options: ChipOptions): void--><!--Device-unnamed-export declare function Chip(options: ChipOptions): void-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| options | ChipOptions | Yes | Parameters of the chip. |
+| options | [ChipOptions](arkts-arkui-arkui-advanced-chip-chipoptions-i.md) | Yes | Parameters of the chip. |
 

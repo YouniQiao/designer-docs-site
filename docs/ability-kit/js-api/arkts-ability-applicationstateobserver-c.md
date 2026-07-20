@@ -1,10 +1,10 @@
 # ApplicationStateObserver
 
-The module defines an observer to listen for application state changes. It can be used as an input parameter in
-[on('applicationState')](arkts-ability-on-f.md#on-1)
-to listen for lifecycle changes of the application.
+The module defines an observer to listen for application state changes. It can be used as an input parameter in [on('applicationState')](arkts-ability-appmanager-on-f.md#on-1)to listen for lifecycle changes of the application.
 
 **Since:** 14
+
+<!--Device-unnamed-export default class ApplicationStateObserver--><!--Device-unnamed-export default class ApplicationStateObserver-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -18,13 +18,15 @@ Called when the ability state changes.
 
 **Since:** 14
 
+<!--Device-ApplicationStateObserver-onAbilityStateChanged(abilityStateData: AbilityStateData): void--><!--Device-ApplicationStateObserver-onAbilityStateChanged(abilityStateData: AbilityStateData): void-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| abilityStateData | AbilityStateData | Yes | Ability state data. |
+| abilityStateData | [AbilityStateData](arkts-ability-abilitystatedata-c.md) | Yes | Ability state data. |
 
 ## onAppStarted
 
@@ -36,13 +38,15 @@ Called when the first process of the application is created.
 
 **Since:** 14
 
+<!--Device-ApplicationStateObserver-onAppStarted(appStateData: AppStateData): void--><!--Device-ApplicationStateObserver-onAppStarted(appStateData: AppStateData): void-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| appStateData | AppStateData | Yes | Application state data. |
+| appStateData | [AppStateData](arkts-ability-appmanager-appstatedata-t.md) | Yes | Application state data. |
 
 ## onAppStopped
 
@@ -54,13 +58,15 @@ Called when the last process of the application is destroyed.
 
 **Since:** 14
 
+<!--Device-ApplicationStateObserver-onAppStopped(appStateData: AppStateData): void--><!--Device-ApplicationStateObserver-onAppStopped(appStateData: AppStateData): void-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| appStateData | AppStateData | Yes | Application state data. |
+| appStateData | [AppStateData](arkts-ability-appmanager-appstatedata-t.md) | Yes | Application state data. |
 
 ## onForegroundApplicationChanged
 
@@ -72,13 +78,15 @@ Called when the foreground or background state of an application changes.
 
 **Since:** 14
 
+<!--Device-ApplicationStateObserver-onForegroundApplicationChanged(appStateData: AppStateData): void--><!--Device-ApplicationStateObserver-onForegroundApplicationChanged(appStateData: AppStateData): void-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| appStateData | AppStateData | Yes | Application state data. |
+| appStateData | [AppStateData](arkts-ability-appmanager-appstatedata-t.md) | Yes | Application state data. |
 
 ## onProcessCreated
 
@@ -90,13 +98,15 @@ Called when a process is created.
 
 **Since:** 14
 
+<!--Device-ApplicationStateObserver-onProcessCreated(processData: ProcessData): void--><!--Device-ApplicationStateObserver-onProcessCreated(processData: ProcessData): void-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| processData | ProcessData | Yes | Process data. |
+| processData | [ProcessData](arkts-ability-processdata-c.md) | Yes | Process data. |
 
 ## onProcessDied
 
@@ -108,13 +118,15 @@ Called when a process is destroyed.
 
 **Since:** 14
 
+<!--Device-ApplicationStateObserver-onProcessDied(processData: ProcessData): void--><!--Device-ApplicationStateObserver-onProcessDied(processData: ProcessData): void-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| processData | ProcessData | Yes | Process data. |
+| processData | [ProcessData](arkts-ability-processdata-c.md) | Yes | Process data. |
 
 ## onProcessStateChanged
 
@@ -126,11 +138,13 @@ Called when the process state is changed.
 
 **Since:** 14
 
+<!--Device-ApplicationStateObserver-onProcessStateChanged(processData: ProcessData): void--><!--Device-ApplicationStateObserver-onProcessStateChanged(processData: ProcessData): void-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| processData | ProcessData | Yes | Process data. |
+| processData | [ProcessData](arkts-ability-processdata-c.md) | Yes | Process data. |
 

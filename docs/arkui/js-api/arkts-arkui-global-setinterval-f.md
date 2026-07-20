@@ -16,13 +16,23 @@ Sets the interval for repeatedly calling a function.
 
 **Model restriction:** This API can be used only in the FA model.
 
+<!--Device-unnamed-export declare function setInterval(
+  handler: Function,
+  delay: number,
+  ...arguments: any[]
+): number--><!--Device-unnamed-export declare function setInterval(
+  handler: Function,
+  delay: number,
+  ...arguments: any[]
+): number-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Lite
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| handler | Function | Yes | Indicates the function to be called repeatedly at the interval. |
+| handler | [Function](../../apis-na/arkts-apis/arkts-na-lib-es2015-core-function-i.md) | Yes | Indicates the function to be called repeatedly at the interval. |
 | delay | number | Yes | Indicates the interval between each two calls, in milliseconds. The function will be called after this delay. |
 | arguments | any[] | Yes | Indicates additional arguments to pass to "handler" when the timer goes off. |
 

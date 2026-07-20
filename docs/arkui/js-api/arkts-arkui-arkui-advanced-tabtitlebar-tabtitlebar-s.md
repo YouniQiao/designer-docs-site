@@ -1,0 +1,78 @@
+# TabTitleBar
+
+Declaration of the tabbed title bar.
+
+**Since:** 22
+
+<!--Device-unnamed-export declare struct TabTitleBar--><!--Device-unnamed-export declare struct TabTitleBar-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## Modules to Import
+
+```TypeScript
+import { TabTitleBar, TabTitleBarTabItem, TabTitleBarMenuItem } from '@kit.ArkUI';
+```
+
+## menuItems
+
+```TypeScript
+menuItems?: Array<TabTitleBarMenuItem>
+```
+
+Menu items on the right side.
+
+**Type:** Array<TabTitleBarMenuItem>
+
+**Since:** 22
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 22.
+
+<!--Device-TabTitleBar-menuItems?: Array<TabTitleBarMenuItem>--><!--Device-TabTitleBar-menuItems?: Array<TabTitleBarMenuItem>-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## swiperContent
+
+```TypeScript
+swiperContent: () => void
+```
+
+Content builder. Each component corresponds to a tab item.The builder needs to be transferred.
+
+**Type:** () => void
+
+**Since:** 22
+
+**Decorator:** @BuilderParam
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 22.
+
+<!--Device-TabTitleBar-swiperContent: () => void--><!--Device-TabTitleBar-swiperContent: () => void-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## tabItems
+
+```TypeScript
+tabItems: Array<TabTitleBarTabItem>
+```
+
+Tab items on the left side.
+
+**Type:** Array<TabTitleBarTabItem>
+
+**Since:** 22
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 22.
+
+<!--Device-TabTitleBar-tabItems: Array<TabTitleBarTabItem>--><!--Device-TabTitleBar-tabItems: Array<TabTitleBarTabItem>-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+

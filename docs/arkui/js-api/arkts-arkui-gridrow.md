@@ -1,6 +1,12 @@
 # GridRow
 
-Defines the new version of grid-container component.
+The responsive grid layout provides rules for layout design and resolves issues of dynamic layout across devices with
+different sizes, thereby ensuring layout consistency across layouts on different devices.
+
+The **GridRow** component is used in a grid layout, together with its child component [GridCol]{@link GridCol}.
+> **Child Components**
+>
+> This component can contain the **GridCol** child component.
 
 
 ## GridRow
@@ -16,6 +22,8 @@ Creates a **GridRow** container.
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
+
+<!--Device-GridRowInterface-(option?: GridRowOptions): GridRowAttribute--><!--Device-GridRowInterface-(option?: GridRowOptions): GridRowAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

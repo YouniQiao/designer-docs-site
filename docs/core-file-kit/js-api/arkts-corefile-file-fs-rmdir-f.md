@@ -14,13 +14,15 @@ declare function rmdir(path: string): Promise<void>
 
 Removes a directory and all its subdirectories and files. This API uses a promise to return the result.
 
-> **NOTE**
->
+> **NOTE**  
+>  
 > This API can be used to remove a single file. However, you are advised to use **unlink()** instead.
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-unnamed-declare function rmdir(path: string): Promise<void>--><!--Device-unnamed-declare function rmdir(path: string): Promise<void>-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
@@ -34,7 +36,7 @@ Removes a directory and all its subdirectories and files. This API uses a promis
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -60,16 +62,17 @@ Removes a directory and all its subdirectories and files. This API uses a promis
 declare function rmdir(path: string, callback: AsyncCallback<void>): void
 ```
 
-Removes a directory and all its subdirectories and files. This API uses an asynchronous callback to return the
-result.
+Removes a directory and all its subdirectories and files. This API uses an asynchronous callback to return the result.
 
-> **NOTE**
->
+> **NOTE**  
+>  
 > This API can be used to remove a single file. However, you are advised to use **unlink()** instead.
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-unnamed-declare function rmdir(path: string, callback: AsyncCallback<void>): void--><!--Device-unnamed-declare function rmdir(path: string, callback: AsyncCallback<void>): void-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
@@ -78,7 +81,7 @@ result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Application sandbox path of the directory. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
 
 **Error codes:**
 

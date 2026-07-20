@@ -9,8 +9,8 @@ content (child components of **Navigation**) and non-home page content (child co
 
 > - Since API version 11, this component supports the safe area attribute by default, with the default attribute
 > value being
-> **expandSafeArea([SafeAreaType.SYSTEM, SafeAreaType.KEYBOARD, SafeAreaType.CUTOUT],
-    [SafeAreaEdge.TOP, SafeAreaEdge.BOTTOM])**.
+> **expandSafeArea([SafeAreaType.SYSTEM, SafeAreaType.KEYBOARD, SafeAreaType.CUTOUT], [SafeAreaEdge.TOP,
+   SafeAreaEdge.BOTTOM])**.
 > You can override this attribute to change the default behavior. In earlier versions, you need to use the
 > [expandSafeArea]{@link CommonMethod#expandSafeArea} attribute to implement the safe area feature.
 >
@@ -27,6 +27,13 @@ content (child components of **Navigation**) and non-home page content (child co
 > page has not yet finished building at this stage, which may lead to issues such as white screens or navigation
 > failures.
 
+## Child Components
+
+Supported
+
+Since API version 9, it is recommended that this component be used together with the [NavRouter]{@link nav_router}component.
+
+Since API version 10, it is recommended that this component be used together with the [NavPathStack]{@link NavPathStack} component and [navDestination]{@link NavigationAttribute#navDestination} attribute for page routing.
 
 ## Navigation
 
@@ -34,12 +41,13 @@ content (child components of **Navigation**) and non-home page content (child co
 Navigation()
 ```
 
-Creates a root view container for route navigation, suitable for page routing using the
-[NavRouter]{@link nav_router} component.
+Creates a root view container for route navigation, suitable for page routing using the [NavRouter]{@link nav_router} component.
 
 **Since:** 8
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-NavigationInterface-(): NavigationAttribute--><!--Device-NavigationInterface-(): NavigationAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -49,14 +57,15 @@ Creates a root view container for route navigation, suitable for page routing us
 Navigation(pathInfos: NavPathStack)
 ```
 
-Binds a navigation controller to the **Navigation** component, suitable for page routing using
-[NavPathStack]{@link NavPathStack} with the [navDestination]{@link NavigationAttribute#navDestination} attribute.
+Binds a navigation controller to the **Navigation** component, suitable for page routing using [NavPathStack]{@link NavPathStack} with the [navDestination]{@link NavigationAttribute#navDestination} attribute.
 
 **Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-NavigationInterface-(pathInfos: NavPathStack): NavigationAttribute--><!--Device-NavigationInterface-(pathInfos: NavPathStack): NavigationAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -72,17 +81,15 @@ Binds a navigation controller to the **Navigation** component, suitable for page
 Navigation(pathInfos: NavPathStack, homeDestination: HomePathInfo)
 ```
 
-Binds a routing stack to the **Navigation** component and specifies a **NavDestination** component as the
-navigation page (home page) for **Navigation**. This is suitable for page routing using
-[NavPathStack]{@link NavPathStack} with the [navDestination]{@link NavigationAttribute#navDestination} attribute or
-the system routing table. For the usage example, see
-[Example 16: Using NavDestination as a Navigation Page in Navigation](docroot://reference/apis-arkui/arkui-ts/ts-basic-components-navigation.md#example-16-using-navdestination-as-a-navigation-page-in-navigation).
+Binds a routing stack to the **Navigation** component and specifies a **NavDestination** component as the navigation page (home page) for **Navigation**. This is suitable for page routing using [NavPathStack]{@link NavPathStack} with the [navDestination]{@link NavigationAttribute#navDestination} attribute or the system routing table. For the usage example, see [Example 16: Using NavDestination as a Navigation Page in Navigation](docroot://reference/apis-arkui/arkui-ts/ts-basic-components-navigation.md#example-16-using-navdestination-as-a-navigation-page-in-navigation).
 
 **Since:** 20
 
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 20.
+
+<!--Device-NavigationInterface-(pathInfos: NavPathStack, homeDestination: HomePathInfo): NavigationAttribute--><!--Device-NavigationInterface-(pathInfos: NavPathStack, homeDestination: HomePathInfo): NavigationAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

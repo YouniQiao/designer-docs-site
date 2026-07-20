@@ -12,10 +12,11 @@ import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventList
 declare function lstatSync(path: string): Stat
 ```
 
-Obtains information about a symbolic link that is used to refer to a file or directory. This API returns the result
-synchronously.
+Obtains information about a symbolic link that is used to refer to a file or directory. This API returns the result synchronously.
 
 **Since:** 9
+
+<!--Device-unnamed-declare function lstatSync(path: string): Stat--><!--Device-unnamed-declare function lstatSync(path: string): Stat-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
@@ -23,13 +24,13 @@ synchronously.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| path | string | Yes | Application sandbox path or URI of the file.<br>**Note**: URIs can be passed since APIversion 22. |
+| path | string | Yes | Application sandbox path or URI of the file.<br>**Note**: URIs can be passed since API version 22. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Stat | File information obtained. |
+| [Stat](arkts-corefile-file-fs-stat-i.md) | File information obtained. |
 
 **Error codes:**
 

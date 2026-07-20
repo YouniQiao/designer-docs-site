@@ -14,12 +14,13 @@ declare function accessSync(path: string, mode?: AccessModeType): boolean
 
 Checks whether a file or directory exists or has the operation permission. This API returns the result synchronously.
 
-If the read, write, or read and write permission verification fails, the error code 13900012 (Permission denied) will
-be thrown.
+If the read, write, or read and write permission verification fails, the error code 13900012 (Permission denied) will be thrown.
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-unnamed-declare function accessSync(path: string, mode?: AccessModeType): boolean--><!--Device-unnamed-declare function accessSync(path: string, mode?: AccessModeType): boolean-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
@@ -28,7 +29,7 @@ be thrown.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Application sandbox path of the file or directory. |
-| mode | AccessModeType | No | Permission on the file or directory to check. If this parameter is left blank, thesystem checks whether the file or directory exists.<br>**Since:** 12 |
+| mode | [AccessModeType](arkts-corefile-file-fs-accessmodetype-e.md) | No | Permission on the file or directory to check. If this parameter is left blank, the system checks whether the file or directory exists.<br>**Since:** 12 |
 
 **Return value:**
 
@@ -60,13 +61,13 @@ be thrown.
 declare function accessSync(path: string, mode: AccessModeType, flag: AccessFlagType): boolean
 ```
 
-Checks whether a file or directory is stored locally or has the operation permission. This API returns the result
-synchronously.
+Checks whether a file or directory is stored locally or has the operation permission. This API returns the result synchronously.
 
-If the read, write, or read and write permission verification fails, the error code 13900012 (Permission denied) will
-be thrown.
+If the read, write, or read and write permission verification fails, the error code 13900012 (Permission denied) will be thrown.
 
 **Since:** 12
+
+<!--Device-unnamed-declare function accessSync(path: string, mode: AccessModeType, flag: AccessFlagType): boolean--><!--Device-unnamed-declare function accessSync(path: string, mode: AccessModeType, flag: AccessFlagType): boolean-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
@@ -75,14 +76,14 @@ be thrown.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Application sandbox path of the file to check. |
-| mode | AccessModeType | Yes | Permission on the file or directory to check. |
-| flag | AccessFlagType | Yes | Position of the file or directory to check. |
+| mode | [AccessModeType](arkts-corefile-file-fs-accessmodetype-e.md) | Yes | Permission on the file or directory to check. |
+| flag | [AccessFlagType](arkts-corefile-file-fs-accessflagtype-e.md) | Yes | Position of the file or directory to check. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| boolean | The value **true** means the file is a local file and has the related permission. The value**false** means the file does not exist or is on the cloud or a distributed device. |
+| boolean | The value **true** means the file is a local file and has the related permission. The value **false** means the file does not exist or is on the cloud or a distributed device. |
 
 **Error codes:**
 

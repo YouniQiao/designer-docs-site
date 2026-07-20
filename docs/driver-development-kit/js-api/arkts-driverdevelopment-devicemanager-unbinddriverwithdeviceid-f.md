@@ -1,0 +1,63 @@
+# unbindDriverWithDeviceId
+
+## Modules to Import
+
+```TypeScript
+import { deviceManager } from '@kit.DriverDevelopmentKit';
+```
+
+## unbindDriverWithDeviceId
+
+```TypeScript
+function unbindDriverWithDeviceId(deviceId: number): Promise<number>
+```
+
+Unbinds a peripheral device. This API uses a promise to return the result.
+
+**Since:** 19
+
+**Required permissions:** ohos.permission.ACCESS_DDK_DRIVERS
+
+<!--Device-deviceManager-function unbindDriverWithDeviceId(deviceId: long): Promise<int>--><!--Device-deviceManager-function unbindDriverWithDeviceId(deviceId: long): Promise<int>-End-->
+
+**System capability:** SystemCapability.Driver.ExternalDevice
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| deviceId | number | Yes | Device ID, which can be obtained via [queryDevices](arkts-driverdevelopment-devicemanager-querydevices-f.md#querydevices-1). |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the ID of the unbound device. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | The permission check failed. |
+| [26300001](../../apis-driverdevelopment-kit/errorcode-deviceManager.md#26300001-externaldevicemanager-service-exception) | ExternalDeviceManager service exception. |
+| [26300003](../../apis-driverdevelopment-kit/errorcode-deviceManager.md#26300003-driver-client-not-bound-to-any-driver-server) | There is no binding relationship. |
+
+**Example**
+
+```TypeScript
+import { deviceManager } from '@kit.DriverDevelopmentKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+try {
+  // For example, deviceId is 12345678. You can use queryDevices() to obtain the deviceId.
+  deviceManager.unbindDriverWithDeviceId(12345678).then((data : number) => {
+    console.info(`unbindDriverWithDeviceId success, Device_Id is ${data}.`);
+  }, (error : BusinessError) => {
+    console.error(`unbindDriverWithDeviceId async fail. Code is ${error.code}, message is ${error.message}`);
+  });
+} catch (error) {
+  console.error(`unbindDriverWithDeviceId fail. Code is ${error.code}, message is ${error.message}`);
+}
+
+```
+

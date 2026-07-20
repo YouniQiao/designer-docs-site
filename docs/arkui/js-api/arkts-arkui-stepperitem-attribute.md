@@ -10,6 +10,8 @@ Defines StepperItem Component instance.
 
 **Substitutes:** SwiperAttribute
 
+<!--Device-unnamed-declare class StepperItemAttribute extends CommonMethod<StepperItemAttribute>--><!--Device-unnamed-declare class StepperItemAttribute extends CommonMethod<StepperItemAttribute>-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 ## nextLabel
@@ -18,8 +20,7 @@ Defines StepperItem Component instance.
 nextLabel(value: string)
 ```
 
-Sets the text label of the button on the right. The default value is **Start** for the last page and **Next** for
-the other pages.
+Sets the text label of the button on the right. The default value is **Start** for the last page and **Next** for the other pages.
 
 > **NOTE**
 
@@ -30,6 +31,8 @@ the other pages.
 **Substitutes:** showNext
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-StepperItemAttribute-nextLabel(value: string): StepperItemAttribute--><!--Device-StepperItemAttribute-nextLabel(value: string): StepperItemAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -45,8 +48,7 @@ the other pages.
 prevLabel(value: string)
 ```
 
-Sets the text label of the button on the left, which is not displayed on the first page. When the **Stepper**
-contains more than one page, the default value for all pages except the first page is **Back**.
+Sets the text label of the button on the left, which is not displayed on the first page. When the **Stepper** contains more than one page, the default value for all pages except the first page is **Back**.
 
 > **NOTE**
 
@@ -57,6 +59,8 @@ contains more than one page, the default value for all pages except the first pa
 **Substitutes:** showPrevious
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-StepperItemAttribute-prevLabel(value: string): StepperItemAttribute--><!--Device-StepperItemAttribute-prevLabel(value: string): StepperItemAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -84,11 +88,13 @@ Sets the display status of **nextLabel** in the stepper.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-StepperItemAttribute-status(value?: ItemState): StepperItemAttribute--><!--Device-StepperItemAttribute-status(value?: ItemState): StepperItemAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ItemState | No | Display status of **nextLabel** in the stepper.<br>Default value: **ItemState.Normal** |
+| value | [ItemState](../arkts-apis/arkts-arkui-arkui-advanced-toolbar-itemstate-e.md) | No | Display status of **nextLabel** in the stepper.<br>Default value: **ItemState.Normal** |
 

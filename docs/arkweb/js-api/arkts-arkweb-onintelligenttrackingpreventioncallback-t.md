@@ -10,6 +10,8 @@ The callback of Intelligent Tracking Prevention.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-unnamed-type OnIntelligentTrackingPreventionCallback = (details: IntelligentTrackingPreventionDetails) => void--><!--Device-unnamed-type OnIntelligentTrackingPreventionCallback = (details: IntelligentTrackingPreventionDetails) => void-End-->
+
 **System capability:** SystemCapability.Web.Webview.Core
 
 **Parameters:**

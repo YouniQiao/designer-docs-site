@@ -6,6 +6,9 @@ The **TextInput** component provides single-line text input.
 >
 > This component supports plain text only. For rich text, use the [RichEditor]{@link rich_editor} component.
 
+## Child Components
+
+Not supported
 
 ## TextInput
 
@@ -18,6 +21,8 @@ Defines the constructor of TextInput.
 **Since:** 7
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-TextInputInterface-(value?: TextInputOptions): TextInputAttribute--><!--Device-TextInputInterface-(value?: TextInputOptions): TextInputAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

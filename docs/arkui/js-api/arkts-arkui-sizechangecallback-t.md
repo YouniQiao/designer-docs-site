@@ -4,9 +4,7 @@
 declare type SizeChangeCallback = (oldValue: SizeOptions, newValue: SizeOptions) => void
 ```
 
-Defines the callback type used in onSizeChange.
-The value of oldValue is last size of the component.
-The value of newValue is new size of the component.
+Defines the callback type used in onSizeChange.The value of oldValue is last size of the component.The value of newValue is new size of the component.
 
 **Since:** 12
 
@@ -15,6 +13,8 @@ The value of newValue is new size of the component.
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 12.
+
+<!--Device-unnamed-declare type SizeChangeCallback = (oldValue: SizeOptions, newValue: SizeOptions) => void--><!--Device-unnamed-declare type SizeChangeCallback = (oldValue: SizeOptions, newValue: SizeOptions) => void-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

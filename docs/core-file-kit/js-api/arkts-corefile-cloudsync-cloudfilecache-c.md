@@ -1,0 +1,695 @@
+# CloudFileCache
+
+Provides APIs for the file manager application to download files from the Drive Kit to a local device.
+
+**Since:** 11
+
+<!--Device-cloudSync-class CloudFileCache--><!--Device-cloudSync-class CloudFileCache-End-->
+
+**System capability:** SystemCapability.FileManagement.DistributedFileService.CloudSync.Core
+
+## Modules to Import
+
+```TypeScript
+import { cloudSync } from '@kit.CoreFileKit';
+```
+
+## cleanAllFileCache
+
+```TypeScript
+cleanAllFileCache(): Promise<void>
+```
+
+Clean all downloaded files except those not yet migrated to the cloud or those that are being written to.
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-CloudFileCache-cleanAllFileCache(): Promise<void>--><!--Device-CloudFileCache-cleanAllFileCache(): Promise<void>-End-->
+
+**System capability:** SystemCapability.FileManagement.DistributedFileService.CloudSync.Core
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 13900010 | Try again. |
+
+## cleanFileCache
+
+```TypeScript
+cleanFileCache(uri: string): void
+```
+
+Deletes a cache file. This API returns the result synchronously.
+
+**Since:** 20
+
+<!--Device-CloudFileCache-cleanFileCache(uri: string): void--><!--Device-CloudFileCache-cleanFileCache(uri: string): void-End-->
+
+**System capability:** SystemCapability.FileManagement.DistributedFileService.CloudSync.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| uri | string | Yes | URI of the cache file to delete. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 13600001 | IPC error. Possible causes:<br>1.IPC failed or timed out. 2.Failed to load the service. |
+| 13900002 | No such file or directory. |
+| 13900010 | Try again. |
+| 13900012 | Permission denied by the file system |
+| 13900020 | Invalid argument. Possible causes:<br>1.Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
+| 14000002 | Invalid URI. |
+| 22400005 | Inner error. Possible causes:<br>1.Failed to access the database or execute the SQL statement.<br>2.System error, such as a null pointer, insufficient memory or a JS engine exception. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+import { fileUri } from '@kit.CoreFileKit';
+
+let fileCache = new cloudSync.CloudFileCache();
+let path = "/data/storage/el2/cloud/1.txt";
+let uri = fileUri.getUriFromPath(path);
+
+try {
+  fileCache.cleanFileCache(uri);
+} catch (err) {
+  let error:BusinessError = err as BusinessError;
+  console.error("clean file cache failed with error message: " + err.message + ", error code: " + err.code);
+}
+
+
+```
+
+## constructor
+
+```TypeScript
+constructor()
+```
+
+A constructor used to create a **CloudFileCache** instance. Data is not shared between multiple instances.
+
+**Since:** 11
+
+<!--Device-CloudFileCache-constructor()--><!--Device-CloudFileCache-constructor()-End-->
+
+**System capability:** SystemCapability.FileManagement.DistributedFileService.CloudSync.Core
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The input parameter is invalid.Possible causes:Incorrect parameter types. |
+
+**Example**
+
+```TypeScript
+let fileCache = new cloudSync.CloudFileCache();
+
+```
+
+## getCachedTotalSize
+
+```TypeScript
+getCachedTotalSize(): Promise<number>
+```
+
+Query the total size of cached files.
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-CloudFileCache-getCachedTotalSize(): Promise<long>--><!--Device-CloudFileCache-getCachedTotalSize(): Promise<long>-End-->
+
+**System capability:** SystemCapability.FileManagement.DistributedFileService.CloudSync.Core
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | - Return the total size of cached files. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 13900010 | Try again. |
+
+## off
+
+```TypeScript
+off(event: 'progress', callback?: Callback<DownloadProgress>): void
+```
+
+Removes the specified callback from the device-cloud file cache progress.
+
+**Since:** 11
+
+<!--Device-CloudFileCache-off(event: 'progress', callback?: Callback<DownloadProgress>): void--><!--Device-CloudFileCache-off(event: 'progress', callback?: Callback<DownloadProgress>): void-End-->
+
+**System capability:** SystemCapability.FileManagement.DistributedFileService.CloudSync.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| event | 'progress' | Yes | Event type. The value is **progress**, which indicates the sync progress event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DownloadProgress> | No | Callback used to return the file download progress. If this parameter is not specified, this API unregisters all callbacks for the download progress event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The input parameter is invalid.Possible causes:1.Mandatory parameters are left unspecified;<br>2.Incorrect parameter types. |
+| 13600001 | IPC error |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let fileCache = new cloudSync.CloudFileCache();
+
+let callback = (pg: cloudSync.DownloadProgress) => {
+  console.info("download state: " + pg.state);
+}
+
+try {
+  fileCache.on('progress', callback);
+  fileCache.off('progress', callback);
+} catch (e) {
+  const error = e as BusinessError;
+  console.error(`Error code: ${error.code}, message: ${error.message}`);
+}
+
+```
+
+## off
+
+```TypeScript
+off(event: 'batchDownload', callback?: Callback<MultiDownloadProgress>): void
+```
+
+Removes the listener added via the [on](arkts-corefile-cloudsync-cloudfilecache-c.md#on-2) API for file batch downloads.
+
+**Since:** 20
+
+<!--Device-CloudFileCache-off(event: 'batchDownload', callback?: Callback<MultiDownloadProgress>): void--><!--Device-CloudFileCache-off(event: 'batchDownload', callback?: Callback<MultiDownloadProgress>): void-End-->
+
+**System capability:** SystemCapability.FileManagement.DistributedFileService.CloudSync.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| event | 'batchDownload' | Yes | Event type. The value is **'batchDownload'**, indicating the batch download event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<MultiDownloadProgress> | No | Callback used to return the download progress of a file.If this parameter is set, the specified callback will be canceled; otherwise, all currently subscribed callbacks of the same event type will be canceled. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 13900020 | Invalid argument. Possible causes:<br>1.Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
+| 22400005 | Inner error. Possible causes:<br>1.Failed to access the database or execute the SQL statement.<br>2.System error, such as a null pointer, insufficient memory or a JS engine exception. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let fileCache = new cloudSync.CloudFileCache();
+let callback = (pg: cloudSync.MultiDownloadProgress) => {
+  console.info("download state: " + pg.state);
+}
+
+try {
+  fileCache.on('batchDownload', callback);
+  fileCache.off('batchDownload', callback);
+} catch (e) {
+  let error = e as BusinessError;
+  console.error(`Failed to unregister download callback, error code: ${error.code}, message: ${error.message}`);
+}
+
+```
+
+## on
+
+```TypeScript
+on(event: 'progress', callback: Callback<DownloadProgress>): void
+```
+
+Registers a listener for the download progress of a file from the Drive Kit.
+
+**Since:** 11
+
+<!--Device-CloudFileCache-on(event: 'progress', callback: Callback<DownloadProgress>): void--><!--Device-CloudFileCache-on(event: 'progress', callback: Callback<DownloadProgress>): void-End-->
+
+**System capability:** SystemCapability.FileManagement.DistributedFileService.CloudSync.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| event | 'progress' | Yes | Event. The value is **progress**, which indicates the download progress event of a cloud file. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DownloadProgress> | Yes | Callback used to return the file download progress. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The input parameter is invalid.Possible causes:1.Mandatory parameters are left unspecified;<br>2.Incorrect parameter types. |
+| 13600001 | IPC error |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let fileCache = new cloudSync.CloudFileCache();
+let callback = (pg: cloudSync.DownloadProgress) => {
+  console.info("download state: " + pg.state);
+};
+
+try {
+  fileCache.on('progress', callback);
+} catch (e) {
+  const error = e as BusinessError;
+  console.error(`Error code: ${error.code}, message: ${error.message}`);
+}
+
+```
+
+## on
+
+```TypeScript
+on(event: 'batchDownload', callback: Callback<MultiDownloadProgress>): void
+```
+
+Registers a listener for the batch download of a file from the Drive Kit.
+
+**Since:** 20
+
+<!--Device-CloudFileCache-on(event: 'batchDownload', callback: Callback<MultiDownloadProgress>): void--><!--Device-CloudFileCache-on(event: 'batchDownload', callback: Callback<MultiDownloadProgress>): void-End-->
+
+**System capability:** SystemCapability.FileManagement.DistributedFileService.CloudSync.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| event | 'batchDownload' | Yes | Event type. The value is **'batchDownload'**, indicating the batch download event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<MultiDownloadProgress> | Yes | Callback used to return the download progress of a file. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 13900020 | Invalid argument. Possible causes:<br>1.Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
+| 22400005 | Inner error. Possible causes:<br>1.Failed to access the database or execute the SQL statement.<br>2.System error, such as a null pointer, insufficient memory or a JS engine exception. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let fileCache = new cloudSync.CloudFileCache();
+let callback = (data: cloudSync.MultiDownloadProgress) => {
+  console.info(`Batch download progress: downloadedSize: ${data.downloadedSize}, totalSize: ${data.totalSize}`);
+  if (data.state == cloudSync.State.COMPLETED) {
+    console.info('Batch download finished.');
+  } else if (data.state == cloudSync.State.FAILED) {
+    console.info(`Batch download stopped, error type: ${data.errType}.`);
+  }
+};
+
+try {
+  fileCache.on('batchDownload', callback);
+} catch (e) {
+  let error = e as BusinessError;
+  console.error(`Failed to register download callback, error code: ${error.code}, message: ${error.message}`);
+}
+
+```
+
+## start
+
+```TypeScript
+start(uri: string): Promise<void>
+```
+
+Starts downloading a file from the Drive Kit to the local device. This API uses a promise to return the result.
+
+**Since:** 11
+
+<!--Device-CloudFileCache-start(uri: string): Promise<void>--><!--Device-CloudFileCache-start(uri: string): Promise<void>-End-->
+
+**System capability:** SystemCapability.FileManagement.DistributedFileService.CloudSync.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| uri | string | Yes | URI of the file to download. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The input parameter is invalid.Possible causes:1.Mandatory parameters are left unspecified;<br>2.Incorrect parameter types. |
+| 13600001 | IPC error. |
+| 13900002 | No such file or directory. |
+| 13900025 | No space left on device. |
+| 14000002 | Invalid uri. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+import { fileUri } from '@kit.CoreFileKit';
+
+let fileCache = new cloudSync.CloudFileCache();
+let path = "/data/storage/el2/cloud/1.txt";
+let uri = fileUri.getUriFromPath(path);
+
+try {
+  fileCache.on('progress', (pg: cloudSync.DownloadProgress) => {
+    console.info("download state: " + pg.state);
+  });
+} catch (e) {
+  const error = e as BusinessError;
+  console.error(`Error code: ${error.code}, message: ${error.message}`);
+}
+
+fileCache.start(uri).then(() => {
+  console.info("start download successfully");
+}).catch((err: BusinessError) => {
+  console.error("start download failed with error message: " + err.message + ", error code: " + err.code);
+});
+
+```
+
+## start
+
+```TypeScript
+start(uri: string, callback: AsyncCallback<void>): void
+```
+
+Starts downloading a file from the Drive Kit to the local device. This API uses an asynchronous callback to return the result.
+
+**Since:** 11
+
+<!--Device-CloudFileCache-start(uri: string, callback: AsyncCallback<void>): void--><!--Device-CloudFileCache-start(uri: string, callback: AsyncCallback<void>): void-End-->
+
+**System capability:** SystemCapability.FileManagement.DistributedFileService.CloudSync.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| uri | string | Yes | URI of the file to download. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to start downloading a cloud file asynchronously. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The input parameter is invalid.Possible causes:1.Mandatory parameters are left unspecified;<br>2.Incorrect parameter types. |
+| 13600001 | IPC error. |
+| 13900002 | No such file or directory. |
+| 13900025 | No space left on device. |
+| 14000002 | Invalid uri. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+import { fileUri } from '@kit.CoreFileKit';
+
+let fileCache = new cloudSync.CloudFileCache();
+let path = "/data/storage/el2/cloud/1.txt";
+let uri = fileUri.getUriFromPath(path);
+
+fileCache.start(uri, (err: BusinessError) => {
+  if (err) {
+    console.error("start download failed with error message: " + err.message + ", error code: " + err.code);
+  } else {
+    console.info("start download successfully");
+  }
+});
+
+```
+
+## startBatch
+
+```TypeScript
+startBatch(uris: Array<string>, fileType?: DownloadFileType): Promise<number>
+```
+
+Starts the batch download of a file from the Drive Kit. This API uses a promise to return the result.
+
+Different batch download tasks can be distinguished by the task ID returned.
+
+**Since:** 20
+
+<!--Device-CloudFileCache-startBatch(uris: Array<string>, fileType?: DownloadFileType): Promise<long>--><!--Device-CloudFileCache-startBatch(uris: Array<string>, fileType?: DownloadFileType): Promise<long>-End-->
+
+**System capability:** SystemCapability.FileManagement.DistributedFileService.CloudSync.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| uris | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | URI list. A maximum of 400 URIs can be transferred at a time. An error (22400004)will be thrown if the number of URIs exceeds 400. |
+| fileType | [DownloadFileType](arkts-corefile-cloudsync-downloadfiletype-e.md) | No | File type. The default value is **CONTENT**. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the ID of the batch download task. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 13600001 | IPC error. Possible causes:<br>1.IPC failed or timed out. 2.Failed to load the service. |
+| 13900020 | Invalid argument. Possible causes:<br>1.Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
+| 14000002 | Invalid uri. |
+| 22400004 | Exceed the maximum limit. |
+| 22400005 | Inner error. Possible causes:<br>1.Failed to access the database or execute the SQL statement.<br>2.System error, such as a null pointer, insufficient memory or a JS engine exception. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let fileCache = new cloudSync.CloudFileCache();
+try {
+  fileCache.on('batchDownload', (pg: cloudSync.MultiDownloadProgress) => {
+    console.info(`batch download state: ${pg.state}`);
+  });
+} catch (e) {
+  let error = e as BusinessError;
+  console.error(`Failed to unregister download callback, error code: ${error.code}, message: ${error.message}`);
+}
+
+let uriList: Array<string> = [];
+fileCache.startBatch(uriList, cloudSync.DownloadFileType.CONTENT).then((downloadId: number) => {
+  console.info(`start batch download successfully, taskId: ${downloadId}`);
+}).catch((err: BusinessError) => {
+  console.error(`start download failed with error message: ${err.message}, error code: ${err.code}`);
+});
+
+```
+
+## stop
+
+```TypeScript
+stop(uri: string, needClean?: boolean): Promise<void>
+```
+
+Stops downloading a file from the Drive Kit to the local device. This API uses a promise to return the result.
+
+When **stop()** is called, the current file download process terminates, and downloaded files are retained by default. You can call **start()** to resume the download.
+
+**Since:** 12
+
+<!--Device-CloudFileCache-stop(uri: string, needClean?: boolean): Promise<void>--><!--Device-CloudFileCache-stop(uri: string, needClean?: boolean): Promise<void>-End-->
+
+**System capability:** SystemCapability.FileManagement.DistributedFileService.CloudSync.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| uri | string | Yes | URI of the file to download. |
+| needClean | boolean | No | Whether to delete the downloaded files. The default value **false** means not to delete the downloaded files; the value **true** means the opposite.<br>This parameter is available since API version 12.<br>**Since:** 12 |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The input parameter is invalid.Possible causes:1.Mandatory parameters are left unspecified;<br>2.Incorrect parameter types. |
+| 13600001 | IPC error. |
+| 13900002 | No such file or directory. |
+| 14000002 | Invalid uri. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+import { fileUri } from '@kit.CoreFileKit';
+
+let fileCache = new cloudSync.CloudFileCache();
+let path = "/data/storage/el2/cloud/1.txt";
+let uri = fileUri.getUriFromPath(path);
+
+fileCache.stop(uri, true).then(() => {
+  console.info("stop download successfully");
+}).catch((err: BusinessError) => {
+  console.error("stop download failed with error message: " + err.message + ", error code: " + err.code);
+});
+
+```
+
+## stop
+
+```TypeScript
+stop(uri: string, callback: AsyncCallback<void>): void
+```
+
+Stops downloading a file from the Drive Kit to the local device. This API uses an asynchronous callback to return the result.
+
+When **stop()** is called, the current file download process terminates, and downloaded files are retained. You can call **start()** to resume the download.
+
+**Since:** 11
+
+<!--Device-CloudFileCache-stop(uri: string, callback: AsyncCallback<void>): void--><!--Device-CloudFileCache-stop(uri: string, callback: AsyncCallback<void>): void-End-->
+
+**System capability:** SystemCapability.FileManagement.DistributedFileService.CloudSync.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| uri | string | Yes | URI of the file to download. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to stop downloading a cloud file asynchronously. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The input parameter is invalid.Possible causes:1.Mandatory parameters are left unspecified;<br>2.Incorrect parameter types. |
+| 13600001 | IPC error. |
+| 13900002 | No such file or directory. |
+| 14000002 | Invalid uri. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+import { fileUri } from '@kit.CoreFileKit';
+
+let fileCache = new cloudSync.CloudFileCache();
+let path = "/data/storage/el2/cloud/1.txt";
+let uri = fileUri.getUriFromPath(path);
+
+fileCache.stop(uri, (err: BusinessError) => {
+  if (err) {
+    console.error("stop download failed with error message: " + err.message + ", error code: " + err.code);
+  } else {
+    console.info("stop download successfully");
+  }
+});
+
+```
+
+## stopBatch
+
+```TypeScript
+stopBatch(downloadId: number, needClean?: boolean): Promise<void>
+```
+
+Stops the batch download task enabled by [startBatch](arkts-corefile-cloudsync-cloudfilecache-c.md#startbatch-1) of a file from the Drive Kit. This API uses a promise to return the result.
+
+When **stopBatch()** is called, the batch download terminates. The **needClean** parameter determines whether to delete incompletely downloaded files.
+
+**Since:** 20
+
+<!--Device-CloudFileCache-stopBatch(downloadId: long, needClean?: boolean): Promise<void>--><!--Device-CloudFileCache-stopBatch(downloadId: long, needClean?: boolean): Promise<void>-End-->
+
+**System capability:** SystemCapability.FileManagement.DistributedFileService.CloudSync.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| downloadId | number | Yes | ID of the download task to be stopped. |
+| needClean | boolean | No | Whether to delete incompletely downloaded files. The default value **false** means not to delete the files; the value **true** means the opposite. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 13600001 | IPC error. Possible causes:<br>1.IPC failed or timed out. 2.Failed to load the service. |
+| 13900020 | Invalid argument. Possible causes:<br>1.Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
+| 22400005 | Inner error. Possible causes:<br>1.Failed to access the database or execute the SQL statement.<br>2.System error, such as a null pointer, insufficient memory or a JS engine exception. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let taskId = -1;
+let uriList: Array<string> = [];
+let fileCache = new cloudSync.CloudFileCache();
+fileCache.startBatch(uriList, cloudSync.DownloadFileType.CONTENT).then((downloadId: number) => {
+  taskId = downloadId;
+  console.info("start batch download successfully");
+}).catch((err: BusinessError) => {
+  console.error(`start batch download failed with error message: ${err.message}, error code: ${err.code}`);
+});
+
+let needStop = true;
+if (needStop && taskId > 0) {
+  fileCache.stopBatch(taskId, true).then(() => {
+    console.info("stop batch download successfully");
+  }).catch((err: BusinessError) => {
+    console.error(`stop batch download failed with error message: ${err.message}, error code: ${err.code}`);
+  });
+}
+
+```
+

@@ -1,0 +1,88 @@
+# getColors
+
+## Modules to Import
+
+```TypeScript
+import { wallpaper } from '@kit.BasicServicesKit';
+```
+
+## getColors
+
+```TypeScript
+function getColors(wallpaperType: WallpaperType, callback: AsyncCallback<Array<RgbaColor>>): void
+```
+
+Obtains the wallpaper colors for the wallpaper of the specified type. Returns rgbaColor type of array callback function.
+
+**Since:** 7
+
+**Deprecated since:** 9
+
+<!--Device-wallpaper-function getColors(wallpaperType: WallpaperType, callback: AsyncCallback<Array<RgbaColor>>): void--><!--Device-wallpaper-function getColors(wallpaperType: WallpaperType, callback: AsyncCallback<Array<RgbaColor>>): void-End-->
+
+**System capability:** SystemCapability.MiscServices.Wallpaper
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| wallpaperType | [WallpaperType](arkts-basicservices-wallpaper-wallpapertype-e.md) | Yes | indicates the wallpaper type. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<Array<RgbaColor>> | Yes | the callback of getColors. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+wallpaper.getColors(wallpaper.WallpaperType.WALLPAPER_SYSTEM, (error: BusinessError, data: Array<wallpaper.RgbaColor>) => {
+    if (error) {
+        console.error(`failed to getColors because: ${JSON.stringify(error)}`);
+        return;
+    }
+    console.info(`success to getColors: ${JSON.stringify(data)}`);
+});
+
+```
+
+
+## getColors
+
+```TypeScript
+function getColors(wallpaperType: WallpaperType): Promise<Array<RgbaColor>>
+```
+
+Obtains the wallpaper colors for the wallpaper of the specified type. Returns rgbaColor type of array callback function.
+
+**Since:** 7
+
+**Deprecated since:** 9
+
+<!--Device-wallpaper-function getColors(wallpaperType: WallpaperType): Promise<Array<RgbaColor>>--><!--Device-wallpaper-function getColors(wallpaperType: WallpaperType): Promise<Array<RgbaColor>>-End-->
+
+**System capability:** SystemCapability.MiscServices.Wallpaper
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| wallpaperType | [WallpaperType](arkts-basicservices-wallpaper-wallpapertype-e.md) | Yes | indicates the wallpaper type. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<RgbaColor>> | the promise returned by the function. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+wallpaper.getColors(wallpaper.WallpaperType.WALLPAPER_SYSTEM).then((data: Array<wallpaper.RgbaColor>) => {
+    console.info(`success to getColors: ${JSON.stringify(data)}`);
+  }).catch((error: BusinessError) => {
+    console.error(`failed to getColors because: ${JSON.stringify(error)}`);
+});
+
+```
+

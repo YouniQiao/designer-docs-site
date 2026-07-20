@@ -6,8 +6,7 @@
 declare function Env<T>(key: SystemEnvKey<T> | SystemProperties): PropertyDecorator
 ```
 
-Defining Env PropertyDecorator.
-On API 26.0.0 and above, the parameter also supports the SystemEnvKey<T> type.
+Defining Env PropertyDecorator.On API 26.0.0 and above, the parameter also supports the SystemEnvKey<T> type.
 
 **Since:** 22
 
@@ -15,17 +14,19 @@ On API 26.0.0 and above, the parameter also supports the SystemEnvKey<T> type.
 
 **Atomic service API:** This API can be used in atomic services since API version 22.
 
+<!--Device-unnamed-declare function Env<T>(key: SystemEnvKey<T> | SystemProperties): PropertyDecorator--><!--Device-unnamed-declare function Env<T>(key: SystemEnvKey<T> | SystemProperties): PropertyDecorator-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| key | SystemEnvKey&lt;T&gt; \| SystemProperties | Yes | key value input by the user.<br>**Since:** 26.0.0 |
+| key | [SystemEnvKey](arkts-arkui-common-systemenvkey-c.md)<T> \| SystemProperties | Yes | key value input by the user.<br>**Since:** 26.0.0 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| PropertyDecorator | Env decorator |
+| [PropertyDecorator](../../apis-na/arkts-apis/arkts-na-propertydecorator-t.md) | Env decorator |
 

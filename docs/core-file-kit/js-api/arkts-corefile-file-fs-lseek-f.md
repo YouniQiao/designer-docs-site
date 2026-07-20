@@ -16,6 +16,8 @@ Adjusts the position of the file offset pointer.
 
 **Since:** 11
 
+<!--Device-unnamed-declare function lseek(fd: number, offset: number, whence?: WhenceType): number--><!--Device-unnamed-declare function lseek(fd: number, offset: number, whence?: WhenceType): number-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
@@ -24,7 +26,7 @@ Adjusts the position of the file offset pointer.
 | --- | --- | --- | --- |
 | fd | number | Yes | File descriptor. |
 | offset | number | Yes | Relative offset, in bytes. |
-| whence | WhenceType | No | Where to start the offset. If this parameter is not specified, the file startposition is used by default. |
+| whence | [WhenceType](arkts-corefile-file-fs-whencetype-e.md) | No | Where to start the offset. If this parameter is not specified, the file start position is used by default. |
 
 **Return value:**
 

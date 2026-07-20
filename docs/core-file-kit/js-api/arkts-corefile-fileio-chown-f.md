@@ -12,6 +12,8 @@ Changes the file owner based on the file path. This API uses a promise to return
 
 **Deprecated since:** 9
 
+<!--Device-unnamed-declare function chown(path: string, uid: number, gid: number): Promise<void>--><!--Device-unnamed-declare function chown(path: string, uid: number, gid: number): Promise<void>-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
@@ -26,7 +28,7 @@ Changes the file owner based on the file path. This API uses a promise to return
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 
 ## chown
@@ -41,6 +43,8 @@ Changes the file owner based on the file path. This API uses an asynchronous cal
 
 **Deprecated since:** 9
 
+<!--Device-unnamed-declare function chown(path: string, uid: number, gid: number, callback: AsyncCallback<void>): void--><!--Device-unnamed-declare function chown(path: string, uid: number, gid: number, callback: AsyncCallback<void>): void-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
@@ -50,5 +54,5 @@ Changes the file owner based on the file path. This API uses an asynchronous cal
 | path | string | Yes | Application sandbox path of the file. |
 | uid | number | Yes | New UID. |
 | gid | number | Yes | New GID. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback invoked when the file owner is changed asynchronously. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback invoked when the file owner is changed asynchronously. |
 

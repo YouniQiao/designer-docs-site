@@ -1,15 +1,16 @@
 # ApplicationContext
 
-ApplicationContext inherits from [Context](arkts-ability-context-depr-i.md) and provides application-level management
-capabilities, such as application lifecycle listening, process management, and application environment setting.
+ApplicationContext inherits from [Context](arkts-ability-context-context-depr-i.md) and provides application-level management capabilities, such as application lifecycle listening, process management, and application environment setting.
 
-> **NOTE**
->
+> **NOTE**  
+>  
 > The APIs of this module can be used only in the stage model.
 
 **Inheritance/Implementation:** ApplicationContext extends [Context](arkts-ability-context-t.md)
 
 **Since:** 9
+
+<!--Device-unnamed-declare class ApplicationContext extends Context--><!--Device-unnamed-declare class ApplicationContext extends Context-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -19,8 +20,7 @@ capabilities, such as application lifecycle listening, process management, and a
 getProcessRunningInformation(): Promise<Array<ProcessInformation>>
 ```
 
-Obtains information about the running processes.
-This API uses a promise to return the result.
+Obtains information about the running processes.This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -30,6 +30,8 @@ This API uses a promise to return the result.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-ApplicationContext-getProcessRunningInformation(): Promise<Array<ProcessInformation>>--><!--Device-ApplicationContext-getProcessRunningInformation(): Promise<Array<ProcessInformation>>-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **System API:** This is a system API.
@@ -38,7 +40,7 @@ This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Array&lt;ProcessInformation&gt;&gt; | Promise used to return the API call result and the process runninginformation. You can perform error handling or custom processing in this callback. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<ProcessInformation>> | Promise used to return the API call result and the process running information. You can perform error handling or custom processing in this callback. |
 
 **Error codes:**
 
@@ -53,8 +55,7 @@ This API uses a promise to return the result.
 getProcessRunningInformation(callback: AsyncCallback<Array<ProcessInformation>>): void
 ```
 
-Obtains information about the running processes.
-This API uses an asynchronous callback to return the result.
+Obtains information about the running processes.This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -64,6 +65,8 @@ This API uses an asynchronous callback to return the result.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-ApplicationContext-getProcessRunningInformation(callback: AsyncCallback<Array<ProcessInformation>>): void--><!--Device-ApplicationContext-getProcessRunningInformation(callback: AsyncCallback<Array<ProcessInformation>>): void-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **System API:** This is a system API.
@@ -72,7 +75,7 @@ This API uses an asynchronous callback to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;Array&lt;ProcessInformation&gt;&gt; | Yes | Callback used to return the information about therunning processes. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<ProcessInformation>> | Yes | Callback used to return the information about the running processes. |
 
 **Error codes:**
 
@@ -89,22 +92,21 @@ preloadUIExtensionAbility(want: Want): Promise<void>
 
 Preloads a UIExtensionAbility instance. This API uses a promise to return the result.
 
-The preloaded UIExtensionAbility instance is sent to the **onCreate** lifecycle of the UIExtensionAbility and waits
-to be loaded by the current application.
+The preloaded UIExtensionAbility instance is sent to the **onCreate** lifecycle of the UIExtensionAbility and waits to be loaded by the current application.
 
-A UIExtensionAbility instance can be preloaded for multiple times. Each time a preloaded UIExtensionAbility
-instance is loaded, the next preloaded UIExtensionAbility instance is sent to the **onCreate** lifecycle of the
-UIExtensionAbility.
+A UIExtensionAbility instance can be preloaded for multiple times. Each time a preloaded UIExtensionAbility instance is loaded, the next preloaded UIExtensionAbility instance is sent to the **onCreate** lifecycle of the UIExtensionAbility.
 
-| Name| Type| Mandatory| Description|
-| -------- | -------- | -------- | -------- |
-| want | [Want](arkts-ability-want-c.md) | Yes| Want information of the UIExtensionAbility.|
+| Name| Type| Mandatory| Description|  
+| -------- | -------- | -------- | -------- |  
+| want | [Want](arkts-ability-app-ability-want-want-c.md) | Yes| Want information of the UIExtensionAbility.|
 
 **Since:** 12
 
 **Required permissions:** ohos.permission.PRELOAD_UI_EXTENSION_ABILITY
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ApplicationContext-preloadUIExtensionAbility(want: Want): Promise<void>--><!--Device-ApplicationContext-preloadUIExtensionAbility(want: Want): Promise<void>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -114,13 +116,13 @@ UIExtensionAbility.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Want information of the UIExtensionAbility. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information of the UIExtensionAbility. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -141,12 +143,9 @@ UIExtensionAbility.
 registerAbilityLifecycleCallback(abilityLifecycleCallback: AbilityLifecycleCallback): number
 ```
 
-Registers a listener to monitor the ability lifecycle of the application.
-This API uses an asynchronous callback to return the result.
+Registers a listener to monitor the ability lifecycle of the application.This API uses an asynchronous callback to return the result.
 
-<p>**NOTE**:
-<br>It can be called only by the main thread.
-</p>
+<p>**NOTE**:<br>It can be called only by the main thread.</p>
 
 **Since:** 9
 
@@ -156,6 +155,8 @@ This API uses an asynchronous callback to return the result.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-ApplicationContext-registerAbilityLifecycleCallback(abilityLifecycleCallback: AbilityLifecycleCallback): number--><!--Device-ApplicationContext-registerAbilityLifecycleCallback(abilityLifecycleCallback: AbilityLifecycleCallback): number-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **System API:** This is a system API.
@@ -164,7 +165,7 @@ This API uses an asynchronous callback to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| abilityLifecycleCallback | AbilityLifecycleCallback | Yes | Callback used to return the ID of the registered listener. |
+| abilityLifecycleCallback | [AbilityLifecycleCallback](arkts-ability-app-ability-abilitylifecyclecallback-abilitylifecyclecallback-c.md) | Yes | Callback used to return the ID of the registered listener. |
 
 **Return value:**
 
@@ -188,6 +189,8 @@ Register environment callback.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-ApplicationContext-registerEnvironmentCallback(environmentCallback: EnvironmentCallback): number--><!--Device-ApplicationContext-registerEnvironmentCallback(environmentCallback: EnvironmentCallback): number-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **System API:** This is a system API.
@@ -196,7 +199,7 @@ Register environment callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| environmentCallback | EnvironmentCallback | Yes | Callback used to return the ID of the registered listener. |
+| environmentCallback | [EnvironmentCallback](arkts-ability-app-ability-environmentcallback-environmentcallback-c.md) | Yes | Callback used to return the ID of the registered listener. |
 
 **Return value:**
 
@@ -210,12 +213,9 @@ Register environment callback.
 unregisterAbilityLifecycleCallback(callbackId: number, callback: AsyncCallback<void>): void
 ```
 
-Unregisters the listener that monitors the ability lifecycle of the application.
-This API uses an asynchronous callback to return the result.
+Unregisters the listener that monitors the ability lifecycle of the application.This API uses an asynchronous callback to return the result.
 
-<p>**NOTE**:
-<br>It can be called only by the main thread.
-</p>
+<p>**NOTE**:<br>It can be called only by the main thread.</p>
 
 **Since:** 9
 
@@ -224,6 +224,8 @@ This API uses an asynchronous callback to return the result.
 **Substitutes:** off(type:
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ApplicationContext-unregisterAbilityLifecycleCallback(callbackId: number, callback: AsyncCallback<void>): void--><!--Device-ApplicationContext-unregisterAbilityLifecycleCallback(callbackId: number, callback: AsyncCallback<void>): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -234,7 +236,7 @@ This API uses an asynchronous callback to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | callbackId | number | Yes | Event type. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the ID of the registered listener. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the ID of the registered listener. |
 
 ## unregisterAbilityLifecycleCallback
 
@@ -242,12 +244,9 @@ This API uses an asynchronous callback to return the result.
 unregisterAbilityLifecycleCallback(callbackId: number): Promise<void>
 ```
 
-Unregisters a listener for the lifecycle of a UIAbility within the application. This API uses a promise to return
-the result. It can be called only on the main thread.
+Unregisters a listener for the lifecycle of a UIAbility within the application. This API uses a promise to return the result. It can be called only on the main thread.
 
-<p>**NOTE**:
-<br>It can be called only by the main thread.
-</p>
+<p>**NOTE**:<br>It can be called only by the main thread.</p>
 
 **Since:** 9
 
@@ -256,6 +255,8 @@ the result. It can be called only on the main thread.
 **Substitutes:** off(type:
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ApplicationContext-unregisterAbilityLifecycleCallback(callbackId: number): Promise<void>--><!--Device-ApplicationContext-unregisterAbilityLifecycleCallback(callbackId: number): Promise<void>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -271,7 +272,7 @@ the result. It can be called only on the main thread.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 
@@ -285,8 +286,7 @@ the result. It can be called only on the main thread.
 unregisterEnvironmentCallback(callbackId: number, envcallback: AsyncCallback<void>): void
 ```
 
-Unregisters the listener for system environment changes. This API uses an asynchronous callback to return the
-result. It can be called only on the main thread.
+Unregisters the listener for system environment changes. This API uses an asynchronous callback to return the result. It can be called only on the main thread.
 
 **Since:** 9
 
@@ -295,6 +295,8 @@ result. It can be called only on the main thread.
 **Substitutes:** off(type:
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ApplicationContext-unregisterEnvironmentCallback(callbackId: number, envcallback: AsyncCallback<void>): void--><!--Device-ApplicationContext-unregisterEnvironmentCallback(callbackId: number, envcallback: AsyncCallback<void>): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -305,7 +307,7 @@ result. It can be called only on the main thread.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | callbackId | number | Yes | Event type. |
-| envcallback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the ID of the registered listener. |
+| envcallback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the ID of the registered listener. |
 
 ## unregisterEnvironmentCallback
 
@@ -313,8 +315,7 @@ result. It can be called only on the main thread.
 unregisterEnvironmentCallback(callbackId: number): Promise<void>
 ```
 
-Unregisters the listener for system environment changes. This API uses a promise to return the result. It can be
-called only on the main thread.
+Unregisters the listener for system environment changes. This API uses a promise to return the result. It can be called only on the main thread.
 
 **Since:** 9
 
@@ -323,6 +324,8 @@ called only on the main thread.
 **Substitutes:** off(type:
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ApplicationContext-unregisterEnvironmentCallback(callbackId: number): Promise<void>--><!--Device-ApplicationContext-unregisterEnvironmentCallback(callbackId: number): Promise<void>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -338,7 +341,7 @@ called only on the main thread.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 **Error codes:**
 

@@ -21,6 +21,8 @@ Called when content is added to a placeholder component
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-ContentSlotInterface-(content: Content): ContentSlotAttribute--><!--Device-ContentSlotInterface-(content: Content): ContentSlotAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**

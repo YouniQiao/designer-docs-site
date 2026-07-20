@@ -46,8 +46,8 @@ cancelDevicePairing(): Promise<void>
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Non-system applications are not allowed to use system APIs. |
-| 36100003 | NearLink disabled. |
-| 36100099 | Operation failed. |
+| [36100003](../errorcode-nearlink.md#36100003--星闪关闭) | NearLink disabled. |
+| [36100099](../errorcode-nearlink.md#36100099-操作失败) | Operation failed. |
 
 ## connect
 
@@ -81,8 +81,8 @@ connect(): Promise<void>
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Non-system applications are not allowed to use system APIs. |
-| 36100003 | NearLink disabled. |
-| 36100099 | Operation failed. |
+| [36100003](../errorcode-nearlink.md#36100003--星闪关闭) | NearLink disabled. |
+| [36100099](../errorcode-nearlink.md#36100099-操作失败) | Operation failed. |
 
 ## disconnect
 
@@ -116,8 +116,8 @@ disconnect(): Promise<void>
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Non-system applications are not allowed to use system APIs. |
-| 36100003 | NearLink disabled. |
-| 36100099 | Operation failed. |
+| [36100003](../errorcode-nearlink.md#36100003--星闪关闭) | NearLink disabled. |
+| [36100099](../errorcode-nearlink.md#36100099-操作失败) | Operation failed. |
 
 ## getDeviceAlias
 
@@ -151,8 +151,8 @@ getDeviceAlias(): string
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Non-system applications are not allowed to use system APIs. |
-| 36100003 | NearLink disabled. |
-| 36100099 | Operation failed. |
+| [36100003](../errorcode-nearlink.md#36100003--星闪关闭) | NearLink disabled. |
+| [36100099](../errorcode-nearlink.md#36100099-操作失败) | Operation failed. |
 
 ## getDeviceModel
 
@@ -183,8 +183,8 @@ getDeviceModel(): DeviceModel
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Non-system applications are not allowed to use system APIs. |
-| 36100003 | NearLink disabled. |
-| 36100099 | Operation failed. |
+| [36100003](../errorcode-nearlink.md#36100003--星闪关闭) | NearLink disabled. |
+| [36100099](../errorcode-nearlink.md#36100099-操作失败) | Operation failed. |
 
 ## getRssiValue
 
@@ -218,8 +218,8 @@ getRssiValue(): Promise<number>
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Non-system applications are not allowed to use system APIs. |
-| 36100003 | NearLink disabled. |
-| 36100099 | Operation failed. |
+| [36100003](../errorcode-nearlink.md#36100003--星闪关闭) | NearLink disabled. |
+| [36100099](../errorcode-nearlink.md#36100099-操作失败) | Operation failed. |
 
 ## removePairedDevice
 
@@ -253,8 +253,8 @@ removePairedDevice(): Promise<void>
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Non-system applications are not allowed to use system APIs. |
-| 36100003 | NearLink disabled. |
-| 36100099 | Operation failed. |
+| [36100003](../errorcode-nearlink.md#36100003--星闪关闭) | NearLink disabled. |
+| [36100099](../errorcode-nearlink.md#36100099-操作失败) | Operation failed. |
 
 ## setConnectionInterval
 
@@ -288,8 +288,8 @@ setConnectionInterval(interval: ConnectionInterval): void
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Non-system applications are not allowed to use system APIs. |
-| 36100003 | NearLink disabled. |
-| 36100099 | Operation failed. |
+| [36100003](../errorcode-nearlink.md#36100003--星闪关闭) | NearLink disabled. |
+| [36100099](../errorcode-nearlink.md#36100099-操作失败) | Operation failed. |
 
 ## setDeviceAlias
 
@@ -323,9 +323,9 @@ setDeviceAlias(alias: string): void
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Non-system applications are not allowed to use system APIs. |
-| 36100003 | NearLink disabled. |
+| [36100003](../errorcode-nearlink.md#36100003--星闪关闭) | NearLink disabled. |
 | 36100046 | String exceeds maximum length. |
-| 36100099 | Operation failed. |
+| [36100099](../errorcode-nearlink.md#36100099-操作失败) | Operation failed. |
 
 ## setPairingConfirmation
 
@@ -359,8 +359,8 @@ setPairingConfirmation(accept: boolean): void
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Non-system applications are not allowed to use system APIs. |
-| 36100003 | NearLink disabled. |
-| 36100099 | Operation failed. |
+| [36100003](../errorcode-nearlink.md#36100003--星闪关闭) | NearLink disabled. |
+| [36100099](../errorcode-nearlink.md#36100099-操作失败) | Operation failed. |
 
 ## setPairingPasscode
 
@@ -400,9 +400,9 @@ setPairingPasscode(passcode: string): Promise<void>
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Non-system applications are not allowed to use system APIs. |
-| 36100003 | NearLink disabled. |
+| [36100003](../errorcode-nearlink.md#36100003--星闪关闭) | NearLink disabled. |
 | 36100045 | Passcode must be a 6-digit number. |
-| 36100099 | Operation failed. |
+| [36100099](../errorcode-nearlink.md#36100099-操作失败) | Operation failed. |
 
 ## startCrediblePairing
 
@@ -436,6 +436,6 @@ startCrediblePairing(): Promise<void>
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Non-system applications are not allowed to use system APIs. |
-| 36100003 | NearLink disabled. |
-| 36100099 | Operation failed. |
+| [36100003](../errorcode-nearlink.md#36100003--星闪关闭) | NearLink disabled. |
+| [36100099](../errorcode-nearlink.md#36100099-操作失败) | Operation failed. |
 

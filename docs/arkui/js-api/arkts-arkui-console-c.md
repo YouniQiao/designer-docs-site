@@ -4,6 +4,8 @@ Provide console
 
 **Since:** 3
 
+<!--Device-unnamed-export declare class console--><!--Device-unnamed-export declare class console-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Lite
 
 ## debug
@@ -17,6 +19,8 @@ Prints "debug" logs.
 **Since:** 3
 
 **Model restriction:** This API can be used only in the FA model.
+
+<!--Device-console-static debug(message: string): void--><!--Device-console-static debug(message: string): void-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Lite
 
@@ -38,6 +42,8 @@ Prints "error" logs.
 
 **Model restriction:** This API can be used only in the FA model.
 
+<!--Device-console-static error(message: string): void--><!--Device-console-static error(message: string): void-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Lite
 
 **Parameters:**
@@ -57,6 +63,8 @@ Prints "info" logs.
 **Since:** 3
 
 **Model restriction:** This API can be used only in the FA model.
+
+<!--Device-console-static info(message: string): void--><!--Device-console-static info(message: string): void-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Lite
 
@@ -78,6 +86,8 @@ Prints "log" logs.
 
 **Model restriction:** This API can be used only in the FA model.
 
+<!--Device-console-static log(message: string): void--><!--Device-console-static log(message: string): void-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Lite
 
 **Parameters:**
@@ -97,6 +107,8 @@ Prints "warn" logs.
 **Since:** 3
 
 **Model restriction:** This API can be used only in the FA model.
+
+<!--Device-console-static warn(message: string): void--><!--Device-console-static warn(message: string): void-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Lite
 

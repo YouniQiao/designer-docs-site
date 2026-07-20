@@ -1,0 +1,135 @@
+# getTotalSizeOfVolume (System API)
+
+## Modules to Import
+
+```TypeScript
+import { storageStatistics } from '@kit.CoreFileKit';
+```
+
+## getTotalSizeOfVolume
+
+```TypeScript
+function getTotalSizeOfVolume(volumeUuid: string, callback: AsyncCallback<number>): void
+```
+
+Get the total size of volume.
+
+**Since:** 8
+
+**Required permissions:** ohos.permission.STORAGE_MANAGER
+
+<!--Device-storageStatistics-function getTotalSizeOfVolume(volumeUuid: string, callback: AsyncCallback<long>): void--><!--Device-storageStatistics-function getTotalSizeOfVolume(volumeUuid: string, callback: AsyncCallback<long>): void-End-->
+
+**System capability:** SystemCapability.FileManagement.StorageService.SpatialStatistics
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| volumeUuid | string | Yes | The uuid of the volume |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | callback<br>Unit: Byte. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | The caller is not a system application. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The input parameter is invalid.Possible causes:1.Mandatory parameters are left unspecified;<br>2.Incorrect parameter types. |
+| 13600001 | IPC error. |
+| 13600008 | No such object. |
+| 13900042 | Unknown error. |
+
+**Example**
+
+```TypeScript
+import { volumeManager } from '@kit.CoreFileKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+volumeManager.getAllVolumes().then((volumes: Array<volumeManager.Volume>) => {
+  if (volumes == null || volumes.length <= 0) {
+    console.error("volumes is null or length is invalid");
+    return;
+  }
+  let uuid: string = volumes[0].uuid;
+  storageStatistics.getTotalSizeOfVolume(uuid, (error: BusinessError, number: number) => {
+    if (error) {
+      console.error("getTotalSizeOfVolume failed with error:" + JSON.stringify(error));
+    } else {
+      // Do something.
+      console.info("getTotalSizeOfVolume successfully:" + number);
+    }
+  });
+}).catch((err: BusinessError) => {
+  console.error("getAllVolumes failed with error:" + JSON.stringify(err));
+});
+
+```
+
+
+## getTotalSizeOfVolume
+
+```TypeScript
+function getTotalSizeOfVolume(volumeUuid: string): Promise<number>
+```
+
+Get the total size of volume.
+
+**Since:** 8
+
+**Required permissions:** ohos.permission.STORAGE_MANAGER
+
+<!--Device-storageStatistics-function getTotalSizeOfVolume(volumeUuid: string): Promise<long>--><!--Device-storageStatistics-function getTotalSizeOfVolume(volumeUuid: string): Promise<long>-End-->
+
+**System capability:** SystemCapability.FileManagement.StorageService.SpatialStatistics
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| volumeUuid | string | Yes | The uuid of the volume |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | return Promise (Unit: Byte) |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | The caller is not a system application. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The input parameter is invalid.Possible causes:1.Mandatory parameters are left unspecified;<br>2.Incorrect parameter types. |
+| 13600001 | IPC error. |
+| 13600008 | No such object. |
+| 13900042 | Unknown error. |
+
+**Example**
+
+```TypeScript
+import { volumeManager } from '@kit.CoreFileKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+volumeManager.getAllVolumes().then((volumes: Array<volumeManager.Volume>) => {
+  if (volumes == null || volumes.length <= 0) {
+    console.error("volumes is null or length is invalid");
+    return;
+  }
+  let uuid: string = volumes[0].uuid;
+  storageStatistics.getTotalSizeOfVolume(uuid).then((number: number) => {
+    console.info("getTotalSizeOfVolume successfully:" + number);
+  }).catch((err: BusinessError) => {
+    console.error("getTotalSizeOfVolume failed with error:" + JSON.stringify(err));
+  });
+}).catch((err: BusinessError) => {
+  console.error("getAllVolumes failed with error:" + JSON.stringify(err));
+});
+
+```
+

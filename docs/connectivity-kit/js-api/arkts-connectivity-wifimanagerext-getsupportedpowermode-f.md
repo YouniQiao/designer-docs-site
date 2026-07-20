@@ -1,0 +1,84 @@
+# getSupportedPowerMode
+
+## Modules to Import
+
+```TypeScript
+import { wifiManagerExt } from '@kit.ConnectivityKit';
+```
+
+## getSupportedPowerMode
+
+```TypeScript
+function getSupportedPowerMode(): Promise<Array<PowerMode>>
+```
+
+Obtains the supported power Mode.
+
+**Since:** 9
+
+**Required permissions:** ohos.permission.GET_WIFI_INFO
+
+<!--Device-wifiManagerExt-function getSupportedPowerMode(): Promise<Array<PowerMode>>--><!--Device-wifiManagerExt-function getSupportedPowerMode(): Promise<Array<PowerMode>>-End-->
+
+**System capability:** SystemCapability.Communication.WiFi.AP.Extension
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<PowerMode>> | Returns a list of application PowerMode. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
+| [2701000](../errorcode-wifi.md#2701000-ap-extension-module-error) | Operation failed. |
+
+
+## getSupportedPowerMode
+
+```TypeScript
+function getSupportedPowerMode(callback: AsyncCallback<Array<PowerMode>>): void
+```
+
+Obtains the supported power Mode.
+
+**Since:** 9
+
+**Required permissions:** ohos.permission.GET_WIFI_INFO
+
+<!--Device-wifiManagerExt-function getSupportedPowerMode(callback: AsyncCallback<Array<PowerMode>>): void--><!--Device-wifiManagerExt-function getSupportedPowerMode(callback: AsyncCallback<Array<PowerMode>>): void-End-->
+
+**System capability:** SystemCapability.Communication.WiFi.AP.Extension
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<PowerMode>> | Yes | the callback of model. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
+| [2701000](../errorcode-wifi.md#2701000-ap-extension-module-error) | Operation failed. |
+
+**Example**
+
+```TypeScript
+import { wifiManagerExt } from '@kit.ConnectivityKit';
+
+wifiManagerExt.getSupportedPowerMode((err, data: wifiManagerExt.PowerMode[]) => {
+    if (err) {
+        console.error("get supported power mode info error: ", err);
+        return;
+    }
+    console.info("get supported power mode info: " + JSON.stringify(data));
+});
+
+```
+

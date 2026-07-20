@@ -1,0 +1,1013 @@
+# DomainAccountManager
+
+Provides APIs for domain account management.
+
+**Since:** 18
+
+<!--Device-osAccount-class DomainAccountManager--><!--Device-osAccount-class DomainAccountManager-End-->
+
+**System capability:** SystemCapability.Account.OsAccount
+
+## Modules to Import
+
+```TypeScript
+import { osAccount } from '@kit.BasicServicesKit';
+```
+
+## auth
+
+```TypeScript
+static auth(domainAccountInfo: DomainAccountInfo, credential: Uint8Array, callback: IUserAuthCallback): void
+```
+
+Authenticates a domain account.
+
+**Since:** 10
+
+**Required permissions:** ohos.permission.ACCESS_USER_AUTH_INTERNAL
+
+<!--Device-DomainAccountManager-static auth(domainAccountInfo: DomainAccountInfo, credential: Uint8Array, callback: IUserAuthCallback): void--><!--Device-DomainAccountManager-static auth(domainAccountInfo: DomainAccountInfo, credential: Uint8Array, callback: IUserAuthCallback): void-End-->
+
+**System capability:** SystemCapability.Account.OsAccount
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| domainAccountInfo | [DomainAccountInfo](arkts-basicservices-osaccount-domainaccountinfo-i-sys.md) | Yes | Domain account information. |
+| credential | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Credentials of the domain account. |
+| callback | [IUserAuthCallback](arkts-basicservices-osaccount-iuserauthcallback-i-sys.md) | Yes | Callback used to return the authentication result. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system application. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
+| [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-system-service-abnormal) | The system service works abnormally. |
+| [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-invalid-parameter) | Invalid domainAccountInfo or credential. |
+| [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-account-not-found) | Domain account does not exist. |
+| [12300013](../../apis-basic-services-kit/errorcode-account.md#12300013-network-exception) | Network exception. |
+| [12300101](../../apis-basic-services-kit/errorcode-account.md#12300101-incorrect-credential) | Authentication failed. |
+| [12300109](../../apis-basic-services-kit/errorcode-account.md#12300109-authentication-credential-enrollment-or-update-canceled) | The authentication, enrollment, or update operation is canceled. |
+| [12300110](../../apis-basic-services-kit/errorcode-account.md#12300110-authentication-locked) | The authentication is locked. |
+| [12300111](../../apis-basic-services-kit/errorcode-account.md#12300111-authentication-timed-out) | The authentication time out. |
+| [12300112](../../apis-basic-services-kit/errorcode-account.md#12300112-authentication-service-does-not-respond) | The authentication service is busy. |
+| [12300113](../../apis-basic-services-kit/errorcode-account.md#12300113-authentication-service-not-found) | The account authentication service does not exist. |
+| [12300114](../../apis-basic-services-kit/errorcode-account.md#12300114-authentication-service-abnormal) | The account authentication service works abnormally. |
+| 12300211 | Server unreachable. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let domainAccountInfo: osAccount.DomainAccountInfo = {
+  domain: 'CHINA',
+  accountName: 'zhangsan'
+}
+let credential = new Uint8Array([0])
+try {
+  osAccount.DomainAccountManager.auth(domainAccountInfo, credential, {
+    onResult: (resultCode: number, authResult: osAccount.AuthResult) => {
+      console.info('auth resultCode = ' + resultCode);
+      console.info('auth authResult = ' + JSON.stringify(authResult));
+    }
+  });
+} catch (e) {
+  const err = e as BusinessError;
+  console.error(`auth exception = code is ${err.code}, message is ${err.message}`);
+}
+
+```
+
+## auth
+
+```TypeScript
+static auth(
+      domainAccountInfo: DomainAccountInfo,
+      credential: Uint8Array,
+      options: DomainAccountAuthOptions,
+      callback: IUserAuthCallback): void
+```
+
+Authenticates a specified domain account. You can specify authentication options, such as server parameters. This API uses an asynchronous callback to return the result.
+
+**Since:** 24
+
+**Required permissions:** ohos.permission.ACCESS_USER_AUTH_INTERNAL
+
+<!--Device-DomainAccountManager-static auth(
+      domainAccountInfo: DomainAccountInfo,
+      credential: Uint8Array,
+      options: DomainAccountAuthOptions,
+      callback: IUserAuthCallback): void--><!--Device-DomainAccountManager-static auth(
+      domainAccountInfo: DomainAccountInfo,
+      credential: Uint8Array,
+      options: DomainAccountAuthOptions,
+      callback: IUserAuthCallback): void-End-->
+
+**System capability:** SystemCapability.Account.OsAccount
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| domainAccountInfo | [DomainAccountInfo](arkts-basicservices-osaccount-domainaccountinfo-i-sys.md) | Yes | Domain account information. |
+| credential | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Credentials of the domain account. |
+| options | [DomainAccountAuthOptions](arkts-basicservices-osaccount-domainaccountauthoptions-i-sys.md) | Yes | Options for domain account authentication. |
+| callback | [IUserAuthCallback](arkts-basicservices-osaccount-iuserauthcallback-i-sys.md) | Yes | Callback used to return the authentication result. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system application. |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
+| [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-system-service-abnormal) | The system service works abnormally. |
+| [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-invalid-parameter) | Invalid domainAccountInfo or credential. |
+| [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-account-not-found) | Domain account does not exist. |
+| [12300013](../../apis-basic-services-kit/errorcode-account.md#12300013-network-exception) | Network exception. |
+| [12300101](../../apis-basic-services-kit/errorcode-account.md#12300101-incorrect-credential) | Authentication failed. |
+| [12300109](../../apis-basic-services-kit/errorcode-account.md#12300109-authentication-credential-enrollment-or-update-canceled) | The authentication, enrollment, or update operation is canceled. |
+| [12300110](../../apis-basic-services-kit/errorcode-account.md#12300110-authentication-locked) | The authentication is locked. |
+| [12300111](../../apis-basic-services-kit/errorcode-account.md#12300111-authentication-timed-out) | The authentication time out. |
+| [12300112](../../apis-basic-services-kit/errorcode-account.md#12300112-authentication-service-does-not-respond) | The authentication service is busy. |
+| [12300113](../../apis-basic-services-kit/errorcode-account.md#12300113-authentication-service-not-found) | The account authentication service does not exist. |
+| [12300114](../../apis-basic-services-kit/errorcode-account.md#12300114-authentication-service-abnormal) | The account authentication service works abnormally. |
+| 12300211 | Server unreachable. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let domainAccountInfo: osAccount.DomainAccountInfo = {
+  domain: 'CHINA',
+  accountName: 'zhangsan'
+}
+let credential = new Uint8Array([0]);
+try {
+  let serverParams: Record<string, Object> = {
+    "uri": "test.example.com",
+    "port": 100
+  }
+  let authOptions: osAccount.DomainAccountAuthOptions = {
+    serverParams: serverParams
+  }
+  osAccount.DomainAccountManager.auth(domainAccountInfo, credential, authOptions, {
+    onResult: (resultCode: number, authResult: osAccount.AuthResult) => {
+      console.info('auth resultCode = ' + resultCode);
+      console.info('auth authResult = ' + JSON.stringify(authResult));
+    }
+  });
+} catch (e) {
+  const err = e as BusinessError;
+  console.error(`auth exception = code is ${err.code}, message is ${err.message}`);
+}
+
+```
+
+## authWithPopup
+
+```TypeScript
+static authWithPopup(callback: IUserAuthCallback): void
+```
+
+Authenticates a domain account in a pop-up window.
+
+**Since:** 10
+
+**Required permissions:** 
+- API version 10: ohos.permission.ACCESS_USER_AUTH_INTERNAL
+
+<!--Device-DomainAccountManager-static authWithPopup(callback: IUserAuthCallback): void--><!--Device-DomainAccountManager-static authWithPopup(callback: IUserAuthCallback): void-End-->
+
+**System capability:** SystemCapability.Account.OsAccount
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [IUserAuthCallback](arkts-basicservices-osaccount-iuserauthcallback-i-sys.md) | Yes | Callback used to return the authentication result. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied.<br>**Applicable version:** 10 and later |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system application. |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
+| [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-system-service-abnormal) | The system service works abnormally. |
+| [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-account-not-found) | No domain account is bound. |
+| [12300013](../../apis-basic-services-kit/errorcode-account.md#12300013-network-exception) | Network exception. |
+| [12300101](../../apis-basic-services-kit/errorcode-account.md#12300101-incorrect-credential) | Authentication failed. |
+| [12300109](../../apis-basic-services-kit/errorcode-account.md#12300109-authentication-credential-enrollment-or-update-canceled) | The authentication, enrollment, or update operation is canceled. |
+| [12300110](../../apis-basic-services-kit/errorcode-account.md#12300110-authentication-locked) | The authentication is locked. |
+| [12300111](../../apis-basic-services-kit/errorcode-account.md#12300111-authentication-timed-out) | The authentication time out. |
+| [12300112](../../apis-basic-services-kit/errorcode-account.md#12300112-authentication-service-does-not-respond) | The authentication service is busy. |
+| [12300113](../../apis-basic-services-kit/errorcode-account.md#12300113-authentication-service-not-found) | The account authentication service does not exist. |
+| [12300114](../../apis-basic-services-kit/errorcode-account.md#12300114-authentication-service-abnormal) | The account authentication service works abnormally. |
+| 12300211 | Server unreachable.<br>**Applicable version:** 11 and later |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+try {
+  osAccount.DomainAccountManager.authWithPopup({
+    onResult: (resultCode: number, authResult: osAccount.AuthResult) => {
+      console.info('auth resultCode = ' + resultCode);
+      console.info('auth authResult = ' + JSON.stringify(authResult));
+    }
+  })
+} catch (e) {
+  const err = e as BusinessError;
+  console.error(`auth exception = code is ${err.code}, message is ${err.message}`);
+}
+
+```
+
+## authWithPopup
+
+```TypeScript
+static authWithPopup(localId: number, callback: IUserAuthCallback): void
+```
+
+Authenticates a domain account in a pop-up window.
+
+**Since:** 10
+
+**Required permissions:** 
+- API version 10: ohos.permission.ACCESS_USER_AUTH_INTERNAL
+
+<!--Device-DomainAccountManager-static authWithPopup(localId: int, callback: IUserAuthCallback): void--><!--Device-DomainAccountManager-static authWithPopup(localId: int, callback: IUserAuthCallback): void-End-->
+
+**System capability:** SystemCapability.Account.OsAccount
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| localId | number | Yes | Local ID of the OS account bound to the domain account. |
+| callback | [IUserAuthCallback](arkts-basicservices-osaccount-iuserauthcallback-i-sys.md) | Yes | Callback used to return the authentication result. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied.<br>**Applicable version:** 10 and later |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system application. |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
+| [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-system-service-abnormal) | The system service works abnormally. |
+| [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-invalid-parameter) | Invalid localId. |
+| [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-account-not-found) | No domain account is bound. |
+| [12300013](../../apis-basic-services-kit/errorcode-account.md#12300013-network-exception) | Network exception. |
+| [12300101](../../apis-basic-services-kit/errorcode-account.md#12300101-incorrect-credential) | Authentication failed. |
+| [12300109](../../apis-basic-services-kit/errorcode-account.md#12300109-authentication-credential-enrollment-or-update-canceled) | The authentication, enrollment, or update operation is canceled. |
+| [12300110](../../apis-basic-services-kit/errorcode-account.md#12300110-authentication-locked) | The authentication is locked. |
+| [12300111](../../apis-basic-services-kit/errorcode-account.md#12300111-authentication-timed-out) | The authentication time out. |
+| [12300112](../../apis-basic-services-kit/errorcode-account.md#12300112-authentication-service-does-not-respond) | The authentication service is busy. |
+| [12300113](../../apis-basic-services-kit/errorcode-account.md#12300113-authentication-service-not-found) | The account authentication service does not exist. |
+| [12300114](../../apis-basic-services-kit/errorcode-account.md#12300114-authentication-service-abnormal) | The account authentication service works abnormally. |
+| 12300211 | Server unreachable.<br>**Applicable version:** 11 and later |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+try {
+  osAccount.DomainAccountManager.authWithPopup(100, {
+    onResult: (resultCode: number, authResult: osAccount.AuthResult) => {
+      console.info('authWithPopup resultCode = ' + resultCode);
+      console.info('authWithPopup authResult = ' + JSON.stringify(authResult));
+    }
+  })
+} catch (e) {
+  const err = e as BusinessError;
+  console.error(`authWithPopup exception = code is ${err.code}, message is ${err.message}`);
+}
+
+```
+
+## getAccessToken
+
+```TypeScript
+static getAccessToken(businessParams: Record<string, Object>, callback: AsyncCallback<Uint8Array>): void
+```
+
+Obtains the service access token of a domain account. This API uses an asynchronous callback to return the result.
+
+**Since:** 11
+
+<!--Device-DomainAccountManager-static getAccessToken(businessParams: Record<string, Object>, callback: AsyncCallback<Uint8Array>): void--><!--Device-DomainAccountManager-static getAccessToken(businessParams: Record<string, Object>, callback: AsyncCallback<Uint8Array>): void-End-->
+
+**System capability:** SystemCapability.Account.OsAccount
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| businessParams | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Object> | Yes | Service parameters.The specific formats vary depending on the domain plug-in. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<Uint8Array> | Yes | Callback used to return the result.If the operation is successful, **err** is **null**. Otherwise, an error object is returned. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system application. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
+| [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-system-service-abnormal) | The system service works abnormally. |
+| [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-invalid-parameter) | Invalid business parameters. |
+| [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-account-not-found) | Domain account not found. |
+| [12300013](../../apis-basic-services-kit/errorcode-account.md#12300013-network-exception) | Network exception. |
+| [12300014](../../apis-basic-services-kit/errorcode-account.md#12300014-domain-account-not-authenticated) | The domain account is not authenticated. |
+| [12300111](../../apis-basic-services-kit/errorcode-account.md#12300111-authentication-timed-out) | The operation time out. |
+| [12300114](../../apis-basic-services-kit/errorcode-account.md#12300114-authentication-service-abnormal) | The authentication service works abnormally. |
+| 12300211 | Server unreachable. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let businessParams: Record<string, Object> = {
+  'clientId': 'xxx',
+  'secretId': 'yyy'
+};  // depends on the implementation of the domain plugin
+try {
+  osAccount.DomainAccountManager.getAccessToken(businessParams,
+    (err: BusinessError, result: Uint8Array) => {
+    if (err) {
+      console.error(`getAccessToken failed, code is ${err.code}, message is ${err.message}`);
+    } else {
+      console.info('getAccessToken result: ' + result);
+    }
+  });
+} catch (e) {
+  const err = e as BusinessError;
+  console.error(`getAccessToken exception = code is ${err.code}, message is ${err.message}`);
+}
+
+```
+
+## getAccessToken
+
+```TypeScript
+static getAccessToken(businessParams: Record<string, Object>): Promise<Uint8Array>
+```
+
+Obtains the service access token of a domain account. This API uses a promise to return the result.
+
+**Since:** 11
+
+<!--Device-DomainAccountManager-static getAccessToken(businessParams: Record<string, Object>): Promise<Uint8Array>--><!--Device-DomainAccountManager-static getAccessToken(businessParams: Record<string, Object>): Promise<Uint8Array>-End-->
+
+**System capability:** SystemCapability.Account.OsAccount
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| businessParams | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Object> | Yes | Service parameters.The specific formats vary depending on the domain plug-in. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Uint8Array> | Promise used to return the service access token obtained. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system application. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
+| [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-system-service-abnormal) | The system service works abnormally. |
+| [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-invalid-parameter) | Invalid business parameters. |
+| [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-account-not-found) | Domain account not found. |
+| [12300013](../../apis-basic-services-kit/errorcode-account.md#12300013-network-exception) | Network exception. |
+| [12300014](../../apis-basic-services-kit/errorcode-account.md#12300014-domain-account-not-authenticated) | The domain account is not authenticated. |
+| [12300111](../../apis-basic-services-kit/errorcode-account.md#12300111-authentication-timed-out) | The operation time out. |
+| [12300114](../../apis-basic-services-kit/errorcode-account.md#12300114-authentication-service-abnormal) | The authentication service works abnormally. |
+| 12300211 | Server unreachable. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let businessParams: Record<string, Object> = {
+  'clientId': 'xxx',
+  'secretId': 'yyy'
+};  // depends on the implementation of the domain plugin
+try {
+  osAccount.DomainAccountManager.getAccessToken(businessParams)
+    .then((result: Uint8Array) => {
+    console.info('getAccessToken result: ' + result);
+  }).catch((err: BusinessError) => {
+    console.error(`getAccessToken failed, code is ${err.code}, message is ${err.message}`);
+  });
+} catch (e) {
+  const err = e as BusinessError;
+  console.error(`getAccessToken exception = code is ${err.code}, message is ${err.message}`);
+}
+
+```
+
+## getAccountInfo
+
+```TypeScript
+static getAccountInfo(options: GetDomainAccountInfoOptions, callback: AsyncCallback<DomainAccountInfo>): void
+```
+
+Obtains information about a specified domain account. This API uses an asynchronous callback to return the result.
+
+**Since:** 10
+
+**Required permissions:** ohos.permission.GET_DOMAIN_ACCOUNTS
+
+<!--Device-DomainAccountManager-static getAccountInfo(options: GetDomainAccountInfoOptions, callback: AsyncCallback<DomainAccountInfo>): void--><!--Device-DomainAccountManager-static getAccountInfo(options: GetDomainAccountInfoOptions, callback: AsyncCallback<DomainAccountInfo>): void-End-->
+
+**System capability:** SystemCapability.Account.OsAccount
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| options | [GetDomainAccountInfoOptions](arkts-basicservices-osaccount-getdomainaccountinfooptions-i-sys.md) | Yes | Domain account information. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<DomainAccountInfo> | Yes | Callback used to return the result. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system application. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
+| [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-system-service-abnormal) | The system service works abnormally. |
+| [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-account-not-found) | Account not found. |
+| [12300013](../../apis-basic-services-kit/errorcode-account.md#12300013-network-exception) | Network exception. |
+| [12300014](../../apis-basic-services-kit/errorcode-account.md#12300014-domain-account-not-authenticated) | Not authenticated. |
+| [12300111](../../apis-basic-services-kit/errorcode-account.md#12300111-authentication-timed-out) | The operation time out. |
+| [12300114](../../apis-basic-services-kit/errorcode-account.md#12300114-authentication-service-abnormal) | The authentication service works abnormally. |
+| 12300211 | Server unreachable. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let domainAccountInfo: osAccount.GetDomainAccountInfoOptions = {
+  domain: 'CHINA',
+  accountName: 'zhangsan'
+}
+try {
+  osAccount.DomainAccountManager.getAccountInfo(domainAccountInfo,
+    (err: BusinessError, result: osAccount.DomainAccountInfo) => {
+    if (err) {
+      console.error(`call getAccountInfo failed, code is ${err.code}, message is ${err.message}`);
+    } else {
+      console.info('getAccountInfo result: ' + result);
+    }
+  });
+} catch (e) {
+  const err = e as BusinessError;
+  console.error(`getAccountInfo exception = code is ${err.code}, message is ${err.message}`);
+}
+
+```
+
+## getAccountInfo
+
+```TypeScript
+static getAccountInfo(options: GetDomainAccountInfoOptions): Promise<DomainAccountInfo>
+```
+
+Obtains information about a specified domain account. This API uses a promise to return the result.
+
+**Since:** 10
+
+**Required permissions:** ohos.permission.GET_DOMAIN_ACCOUNTS
+
+<!--Device-DomainAccountManager-static getAccountInfo(options: GetDomainAccountInfoOptions): Promise<DomainAccountInfo>--><!--Device-DomainAccountManager-static getAccountInfo(options: GetDomainAccountInfoOptions): Promise<DomainAccountInfo>-End-->
+
+**System capability:** SystemCapability.Account.OsAccount
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| options | [GetDomainAccountInfoOptions](arkts-basicservices-osaccount-getdomainaccountinfooptions-i-sys.md) | Yes | Domain account information. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DomainAccountInfo> | Promise used to return the domain account information obtained. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system application. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
+| [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-system-service-abnormal) | The system service works abnormally. |
+| [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-account-not-found) | Account not found. |
+| [12300013](../../apis-basic-services-kit/errorcode-account.md#12300013-network-exception) | Network exception. |
+| [12300014](../../apis-basic-services-kit/errorcode-account.md#12300014-domain-account-not-authenticated) | Not authenticated. |
+| [12300111](../../apis-basic-services-kit/errorcode-account.md#12300111-authentication-timed-out) | The operation time out. |
+| [12300114](../../apis-basic-services-kit/errorcode-account.md#12300114-authentication-service-abnormal) | The authentication service works abnormally. |
+| 12300211 | Server unreachable. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let domainAccountInfo: osAccount.GetDomainAccountInfoOptions = {
+  domain: 'CHINA',
+  accountName: 'zhangsan'
+}
+try {
+  osAccount.DomainAccountManager.getAccountInfo(domainAccountInfo)
+    .then((result: osAccount.DomainAccountInfo) => {
+    console.info('getAccountInfo result: ' + result);
+  }).catch((err: BusinessError) => {
+    console.error(`call getAccountInfo failed, code is ${err.code}, message is ${err.message}`);
+  });
+} catch (e) {
+  const err = e as BusinessError;
+  console.error(`getAccountInfo exception = code is ${err.code}, message is ${err.message}`);
+}
+
+```
+
+## hasAccount
+
+```TypeScript
+static hasAccount(domainAccountInfo: DomainAccountInfo, callback: AsyncCallback<boolean>): void
+```
+
+Checks whether a domain account exists. This API uses an asynchronous callback to return the result.
+
+**Since:** 10
+
+**Required permissions:** ohos.permission.MANAGE_LOCAL_ACCOUNTS
+
+<!--Device-DomainAccountManager-static hasAccount(domainAccountInfo: DomainAccountInfo, callback: AsyncCallback<boolean>): void--><!--Device-DomainAccountManager-static hasAccount(domainAccountInfo: DomainAccountInfo, callback: AsyncCallback<boolean>): void-End-->
+
+**System capability:** SystemCapability.Account.OsAccount
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| domainAccountInfo | [DomainAccountInfo](arkts-basicservices-osaccount-domainaccountinfo-i-sys.md) | Yes | Domain account information. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result.The value **true** means that the specified domain account exists; the value **false** means the opposite. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system application. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
+| [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-system-service-abnormal) | The system service works abnormally. |
+| [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-invalid-parameter) | Invalid domainAccountInfo. |
+| [12300013](../../apis-basic-services-kit/errorcode-account.md#12300013-network-exception) | Network exception. |
+| [12300014](../../apis-basic-services-kit/errorcode-account.md#12300014-domain-account-not-authenticated) | Not authenticated. |
+| [12300111](../../apis-basic-services-kit/errorcode-account.md#12300111-authentication-timed-out) | The operation time out. |
+| [12300114](../../apis-basic-services-kit/errorcode-account.md#12300114-authentication-service-abnormal) | The authentication service works abnormally. |
+| 12300211 | Server unreachable. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let domainAccountInfo: osAccount.DomainAccountInfo = {
+  domain: 'CHINA',
+  accountName: 'zhangsan'
+}
+try {
+  osAccount.DomainAccountManager.hasAccount(domainAccountInfo, (err: BusinessError, result: boolean) => {
+    if (err) {
+      console.error(`call hasAccount failed, code is ${err.code}, message is ${err.message}`);
+    } else {
+      console.info('hasAccount result: ' + result);
+    }
+  });
+} catch (e) {
+  const err = e as BusinessError;
+  console.error(`hasAccount exception = code is ${err.code}, message is ${err.message}`);
+}
+
+```
+
+## hasAccount
+
+```TypeScript
+static hasAccount(domainAccountInfo: DomainAccountInfo): Promise<boolean>
+```
+
+Checks whether a domain account exists. This API uses a promise to return the result.
+
+**Since:** 10
+
+**Required permissions:** ohos.permission.MANAGE_LOCAL_ACCOUNTS
+
+<!--Device-DomainAccountManager-static hasAccount(domainAccountInfo: DomainAccountInfo): Promise<boolean>--><!--Device-DomainAccountManager-static hasAccount(domainAccountInfo: DomainAccountInfo): Promise<boolean>-End-->
+
+**System capability:** SystemCapability.Account.OsAccount
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| domainAccountInfo | [DomainAccountInfo](arkts-basicservices-osaccount-domainaccountinfo-i-sys.md) | Yes | Domain account information. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result.The value **true** means that the specified domain account exists; the value **false** means the opposite. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system application. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
+| [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-system-service-abnormal) | The system service works abnormally. |
+| [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-invalid-parameter) | Invalid domainAccountInfo. |
+| [12300013](../../apis-basic-services-kit/errorcode-account.md#12300013-network-exception) | Network exception. |
+| [12300014](../../apis-basic-services-kit/errorcode-account.md#12300014-domain-account-not-authenticated) | Not authenticated. |
+| [12300111](../../apis-basic-services-kit/errorcode-account.md#12300111-authentication-timed-out) | The operation time out. |
+| [12300114](../../apis-basic-services-kit/errorcode-account.md#12300114-authentication-service-abnormal) | The authentication service works abnormally. |
+| 12300211 | Server unreachable. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let domainAccountInfo: osAccount.DomainAccountInfo = {
+  domain: 'CHINA',
+  accountName: 'zhangsan'
+}
+try {
+  osAccount.DomainAccountManager.hasAccount(domainAccountInfo).then((result: boolean) => {
+    console.info('hasAccount result: ' + result);
+  }).catch((err: BusinessError) => {
+      console.error(`call hasAccount failed, code is ${err.code}, message is ${err.message}`);
+  });
+} catch (e) {
+  const err = e as BusinessError;
+  console.error(`hasAccount exception = code is ${err.code}, message is ${err.message}`);
+}
+
+```
+
+## isAuthenticationExpired
+
+```TypeScript
+static isAuthenticationExpired(domainAccountInfo: DomainAccountInfo): Promise<boolean>
+```
+
+Checks whether the authentication of a domain account has expired. This API uses a promise to return the result.
+
+**Since:** 12
+
+**Required permissions:** ohos.permission.MANAGE_LOCAL_ACCOUNTS or ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS
+
+<!--Device-DomainAccountManager-static isAuthenticationExpired(domainAccountInfo: DomainAccountInfo): Promise<boolean>--><!--Device-DomainAccountManager-static isAuthenticationExpired(domainAccountInfo: DomainAccountInfo): Promise<boolean>-End-->
+
+**System capability:** SystemCapability.Account.OsAccount
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| domainAccountInfo | [DomainAccountInfo](arkts-basicservices-osaccount-domainaccountinfo-i-sys.md) | Yes | Domain account information. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** means that the specified domain account has expired; the value **false** means the opposite. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system application. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
+| [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-system-service-abnormal) | The system service works abnormally. |
+| [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-account-not-found) | Domain account not found. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let domainInfo: osAccount.DomainAccountInfo =
+  {domain: 'testDomain', accountName: 'testAccountName'};
+try {
+  osAccount.DomainAccountManager.isAuthenticationExpired(domainInfo).then((result: boolean) => {
+    console.info('isAuthenticationExpired, result: ' + result);
+  }).catch((err: BusinessError) => {
+    console.error('isAuthenticationExpired err: ' + err);
+  });
+} catch (e) {
+  const err = e as BusinessError;
+  console.error('isAuthenticationExpired exception: ' + e);
+}
+
+```
+
+## registerPlugin
+
+```TypeScript
+static registerPlugin(plugin: DomainPlugin): void
+```
+
+Registers a domain plug-in.
+
+**Since:** 9
+
+**Required permissions:** ohos.permission.MANAGE_LOCAL_ACCOUNTS
+
+<!--Device-DomainAccountManager-static registerPlugin(plugin: DomainPlugin): void--><!--Device-DomainAccountManager-static registerPlugin(plugin: DomainPlugin): void-End-->
+
+**System capability:** SystemCapability.Account.OsAccount
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| plugin | [DomainPlugin](arkts-basicservices-osaccount-domainplugin-i-sys.md) | Yes | Domain plug-in to register. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system application. |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 and later |
+| 12300201 | The domain plugin has been registered. |
+
+**Example**
+
+```TypeScript
+import { AsyncCallback, BusinessError } from '@kit.BasicServicesKit';
+
+let plugin: osAccount.DomainPlugin = {
+  auth: (domainAccountInfo: osAccount.DomainAccountInfo, credential: Uint8Array,
+       callback: osAccount.IUserAuthCallback) => {},
+  authWithPopup: (domainAccountInfo: osAccount.DomainAccountInfo,
+                callback: osAccount.IUserAuthCallback) => {},
+  authWithToken: (domainAccountInfo: osAccount.DomainAccountInfo, token: Uint8Array,
+                callback: osAccount.IUserAuthCallback) => {},
+  getAccountInfo: (options: osAccount.GetDomainAccountInfoPluginOptions,
+                 callback: AsyncCallback<osAccount.DomainAccountInfo>) => {},
+  getAuthStatusInfo: (domainAccountInfo: osAccount.DomainAccountInfo,
+                      callback: AsyncCallback<osAccount.AuthStatusInfo>) => {},
+  bindAccount: (domainAccountInfo: osAccount.DomainAccountInfo, localId: number,
+                callback: AsyncCallback<void>) => {},
+  unbindAccount: (domainAccountInfo: osAccount.DomainAccountInfo, callback: AsyncCallback<void>) => {},
+  isAccountTokenValid: (domainAccountInfo: osAccount.DomainAccountInfo, token: Uint8Array,
+                      callback: AsyncCallback<boolean>) => {},
+  getAccessToken: (options: osAccount.GetDomainAccessTokenOptions, callback: AsyncCallback<Uint8Array>) => {}
+}
+try {
+  osAccount.DomainAccountManager.registerPlugin(plugin);
+  console.info('registerPlugin success.');
+} catch (e) {
+  const err = e as BusinessError;
+  console.error(`registerPlugin code is ${err.code}, message is ${err.message}`);
+}
+
+```
+
+## unregisterPlugin
+
+```TypeScript
+static unregisterPlugin(): void
+```
+
+Unregisters this domain plug-in.
+
+**Since:** 9
+
+**Required permissions:** ohos.permission.MANAGE_LOCAL_ACCOUNTS
+
+<!--Device-DomainAccountManager-static unregisterPlugin(): void--><!--Device-DomainAccountManager-static unregisterPlugin(): void-End-->
+
+**System capability:** SystemCapability.Account.OsAccount
+
+**System API:** This is a system API.
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system application. |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 and later |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+try {
+  osAccount.DomainAccountManager.unregisterPlugin();
+  console.info('unregisterPlugin success.');
+} catch (e) {
+  const err = e as BusinessError;
+  console.error(`unregisterPlugin code is ${err.code}, message is ${err.message}`);
+}
+
+```
+
+## updateAccountToken
+
+```TypeScript
+static updateAccountToken(
+      domainAccountInfo: DomainAccountInfo,
+      token: Uint8Array,
+      callback: AsyncCallback<void>
+    ): void
+```
+
+Updates the token of a domain account. An empty token means an invalid token. This API uses an asynchronous callback to return the result.
+
+**Since:** 10
+
+**Required permissions:** ohos.permission.MANAGE_LOCAL_ACCOUNTS
+
+<!--Device-DomainAccountManager-static updateAccountToken(
+      domainAccountInfo: DomainAccountInfo,
+      token: Uint8Array,
+      callback: AsyncCallback<void>
+    ): void--><!--Device-DomainAccountManager-static updateAccountToken(
+      domainAccountInfo: DomainAccountInfo,
+      token: Uint8Array,
+      callback: AsyncCallback<void>
+    ): void-End-->
+
+**System capability:** SystemCapability.Account.OsAccount
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| domainAccountInfo | [DomainAccountInfo](arkts-basicservices-osaccount-domainaccountinfo-i-sys.md) | Yes | Domain account information. |
+| token | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | New domain account token. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result.If the operation is successful, **err** is **null**. Otherwise, **err** is an error object. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system application. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-system-service-abnormal) | The system service works abnormally. |
+| [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-invalid-parameter) | Invalid token. |
+| [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-account-not-found) | Account not found. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let domainAccountInfo: osAccount.DomainAccountInfo = {
+  domain: 'CHINA',
+  accountName: 'zhangsan',
+  accountId: '123456'
+}
+let token = new Uint8Array([0])
+try {
+  osAccount.DomainAccountManager.updateAccountToken(domainAccountInfo, token, (err: BusinessError) => {
+    if (err != null) {
+      console.error(`updateAccountToken failed, code is ${err.code}, message is ${err.message}`);
+    } else {
+      console.info('updateAccountToken successfully');
+    }
+  })
+} catch (e) {
+  const err = e as BusinessError;
+  console.error(`updateAccountToken exception = code is ${err.code}, message is ${err.message}`);
+}
+
+```
+
+## updateAccountToken
+
+```TypeScript
+static updateAccountToken(domainAccountInfo: DomainAccountInfo, token: Uint8Array): Promise<void>
+```
+
+Updates the token of a domain account. An empty token means an invalid token. This API uses a promise to return the result.
+
+**Since:** 10
+
+**Required permissions:** ohos.permission.MANAGE_LOCAL_ACCOUNTS
+
+<!--Device-DomainAccountManager-static updateAccountToken(domainAccountInfo: DomainAccountInfo, token: Uint8Array): Promise<void>--><!--Device-DomainAccountManager-static updateAccountToken(domainAccountInfo: DomainAccountInfo, token: Uint8Array): Promise<void>-End-->
+
+**System capability:** SystemCapability.Account.OsAccount
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| domainAccountInfo | [DomainAccountInfo](arkts-basicservices-osaccount-domainaccountinfo-i-sys.md) | Yes | Domain account information. |
+| token | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | New domain account token. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system application. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-system-service-abnormal) | The system service works abnormally. |
+| [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-invalid-parameter) | Invalid token. |
+| [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-account-not-found) | Account not found. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let domainAccountInfo: osAccount.DomainAccountInfo = {
+  domain: 'CHINA',
+  accountName: 'zhangsan',
+  accountId: '123456'
+}
+let token = new Uint8Array([0])
+try {
+  osAccount.DomainAccountManager.updateAccountToken(domainAccountInfo, token).then(() => {
+    console.info('updateAccountToken successfully');
+  }).catch((err: BusinessError) => {
+    console.error(`updateAccountToken failed, code is ${err.code}, message is ${err.message}`);
+  });
+} catch (e) {
+  const err = e as BusinessError;
+  console.error(`updateAccountToken exception = code is ${err.code}, message is ${err.message}`);
+}
+
+```
+

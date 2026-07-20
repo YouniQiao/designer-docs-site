@@ -1,9 +1,10 @@
 # @ohos.multimedia.systemSoundManager
 
-This module provides basic capabilities for managing system sound effects, including defining system sound effect
-types and obtaining system sound effect players.
+This module provides basic capabilities for managing system sound effects, including defining system sound effect types and obtaining system sound effect players.
 
 **Since:** 23
+
+<!--Device-unnamed-declare namespace systemSoundManager--><!--Device-unnamed-declare namespace systemSoundManager-End-->
 
 **System capability:** SystemCapability.Multimedia.SystemSound.Core
 
@@ -17,19 +18,14 @@ import { systemSoundManager } from '@kit.AudioKit';
 
 ## Summary
 
-### Functions
-
-| Name | Description |
-| --- | --- |
-| [createSystemSoundPlayer](arkts-audio-createsystemsoundplayer-f.md#createsystemsoundplayer-1) | Creates a SystemSoundPlayer instance. This function uses a promise to return the result.This player can be used to play some system sounds for media or camera actions. |
-
 <!--Del-->
 ### Functions（系统接口）
 
 | Name | Description |
 | --- | --- |
-| [createCustomizedToneAttrs](arkts-audio-createcustomizedtoneattrs-f-sys.md#createcustomizedtoneattrs-1) | Create customized tone attributes. |
-| [getSystemSoundManager](arkts-audio-getsystemsoundmanager-f-sys.md#getsystemsoundmanager-1) | Gets system sound manager for all type sound. |
+| [createCustomizedToneAttrs](arkts-audio-systemsoundmanager-createcustomizedtoneattrs-f-sys.md#createcustomizedtoneattrs-1) | Create customized tone attributes. |
+| [createSystemSoundPlayer](arkts-audio-systemsoundmanager-createsystemsoundplayer-f.md#createsystemsoundplayer-1) | Creates a SystemSoundPlayer instance. This function uses a promise to return the result.This player can be used to play some system sounds for media or camera actions. |
+| [getSystemSoundManager](arkts-audio-systemsoundmanager-getsystemsoundmanager-f-sys.md#getsystemsoundmanager-1) | Gets system sound manager for all type sound. |
 <!--DelEnd-->
 
 <!--Del-->
@@ -37,10 +33,10 @@ import { systemSoundManager } from '@kit.AudioKit';
 
 | Name | Description |
 | --- | --- |
-| [SystemSoundManager](arkts-audio-systemsoundmanager-i-sys.md) | System sound manager object. |
-| [ToneAttrs](arkts-audio-toneattrs-i-sys.md) | Tone attributes. |
-| [ToneHapticsAttrs](arkts-audio-tonehapticsattrs-i-sys.md) | Haptics attributes in tone scenario. |
-| [ToneHapticsSettings](arkts-audio-tonehapticssettings-i-sys.md) | Haptics settings in tone scenario. |
+| [SystemSoundManager](arkts-audio-systemsoundmanager-systemsoundmanager-i-sys.md) | System sound manager object. |
+| [ToneAttrs](arkts-audio-systemsoundmanager-toneattrs-i-sys.md) | Tone attributes. |
+| [ToneHapticsAttrs](arkts-audio-systemsoundmanager-tonehapticsattrs-i-sys.md) | Haptics attributes in tone scenario. |
+| [ToneHapticsSettings](arkts-audio-systemsoundmanager-tonehapticssettings-i-sys.md) | Haptics settings in tone scenario. |
 <!--DelEnd-->
 
 <!--Del-->
@@ -48,15 +44,15 @@ import { systemSoundManager } from '@kit.AudioKit';
 
 | Name | Description |
 | --- | --- |
-| [MediaType](arkts-audio-mediatype-e-sys.md) | Enum for media type. |
-| [RingtoneType](arkts-audio-ringtonetype-e-sys.md) | Enum for ringtone type. |
-| [SystemSoundError](arkts-audio-systemsounderror-e-sys.md) | Error enum for system sound. |
-| [SystemSoundType](arkts-audio-systemsoundtype-e.md) | Enumerates the system sound effect types. |
-| [SystemToneType](arkts-audio-systemtonetype-e-sys.md) | Enum for system tone type. |
-| [ToneCustomizedType](arkts-audio-tonecustomizedtype-e-sys.md) | Enum for tone customized type. |
-| [ToneHapticsFeature](arkts-audio-tonehapticsfeature-e-sys.md) | Definition of haptics feature in tone scenario. |
-| [ToneHapticsMode](arkts-audio-tonehapticsmode-e-sys.md) | Enum for haptics mode in tone scenario. |
-| [ToneHapticsType](arkts-audio-tonehapticstype-e-sys.md) | Enum for haptics in tone scenario. |
+| [MediaType](arkts-audio-systemsoundmanager-mediatype-e-sys.md) | Enum for media type. |
+| [RingtoneType](arkts-audio-systemsoundmanager-ringtonetype-e-sys.md) | Enum for ringtone type. |
+| [SystemSoundError](arkts-audio-systemsoundmanager-systemsounderror-e-sys.md) | Error enum for system sound. |
+| [SystemSoundType](arkts-audio-systemsoundmanager-systemsoundtype-e.md) | Enumerates the system sound effect types. |
+| [SystemToneType](arkts-audio-systemsoundmanager-systemtonetype-e-sys.md) | Enum for system tone type. |
+| [ToneCustomizedType](arkts-audio-systemsoundmanager-tonecustomizedtype-e-sys.md) | Enum for tone customized type. |
+| [ToneHapticsFeature](arkts-audio-systemsoundmanager-tonehapticsfeature-e-sys.md) | Definition of haptics feature in tone scenario. |
+| [ToneHapticsMode](arkts-audio-systemsoundmanager-tonehapticsmode-e-sys.md) | Enum for haptics mode in tone scenario. |
+| [ToneHapticsType](arkts-audio-systemsoundmanager-tonehapticstype-e-sys.md) | Enum for haptics in tone scenario. |
 <!--DelEnd-->
 
 <!--Del-->
@@ -64,13 +60,13 @@ import { systemSoundManager } from '@kit.AudioKit';
 
 | Name | Description |
 | --- | --- |
-| [RingtoneOptions](arkts-audio-ringtoneoptions-t-sys.md) | Interface for ringtone options. |
-| [RingtonePlayer](arkts-audio-ringtoneplayer-t-sys.md) | Ringtone player object. |
-| [SystemSoundPlayer](arkts-audio-systemsoundplayer-t.md) | Represents the system sound effect player object. |
-| [SystemToneOptions](arkts-audio-systemtoneoptions-t-sys.md) | System tone options. |
-| [SystemTonePlayer](arkts-audio-systemtoneplayer-t-sys.md) | SystemTone player object. |
-| [ToneAttrsArray](arkts-audio-toneattrsarray-t-sys.md) | Array of tone attributes. |
-| [ToneHapticsAttrsArray](arkts-audio-tonehapticsattrsarray-t-sys.md) | Type definition of tone haptics array. |
+| [RingtoneOptions](arkts-audio-systemsoundmanager-ringtoneoptions-t-sys.md) | Interface for ringtone options. |
+| [RingtonePlayer](arkts-audio-systemsoundmanager-ringtoneplayer-t-sys.md) | Ringtone player object. |
+| [SystemSoundPlayer](arkts-audio-systemsoundmanager-systemsoundplayer-t.md) | Represents the system sound effect player object. |
+| [SystemToneOptions](arkts-audio-systemsoundmanager-systemtoneoptions-t-sys.md) | System tone options. |
+| [SystemTonePlayer](arkts-audio-systemsoundmanager-systemtoneplayer-t-sys.md) | SystemTone player object. |
+| [ToneAttrsArray](arkts-audio-systemsoundmanager-toneattrsarray-t-sys.md) | Array of tone attributes. |
+| [ToneHapticsAttrsArray](arkts-audio-systemsoundmanager-tonehapticsattrsarray-t-sys.md) | Type definition of tone haptics array. |
 <!--DelEnd-->
 
 <!--Del-->

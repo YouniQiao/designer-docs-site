@@ -304,6 +304,7 @@
   - [createBundleContext(system api)](arkts-ability-application-createbundlecontext-f-sys.md)<!--DelEnd-->
   - [createModuleContext](arkts-ability-application-createmodulecontext-f.md)<!--Del-->
   - [createModuleContext(system api)](arkts-ability-application-createmodulecontext-f-sys.md)<!--DelEnd-->
+  - [createModuleContextSync](arkts-ability-application-createmodulecontextsync-f.md)
   - [createPluginModuleContext](arkts-ability-application-createpluginmodulecontext-f.md)<!--Del-->
   - [createPluginModuleContextForHostBundle(system api)](arkts-ability-application-createpluginmodulecontextforhostbundle-f-sys.md)<!--DelEnd-->
   - [demoteCurrentFromCandidateMasterProcess](arkts-ability-application-demotecurrentfromcandidatemasterprocess-f.md)

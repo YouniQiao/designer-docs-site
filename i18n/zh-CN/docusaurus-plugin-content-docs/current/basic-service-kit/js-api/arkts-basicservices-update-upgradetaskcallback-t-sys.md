@@ -6,6 +6,8 @@ export type UpgradeTaskCallback = (eventInfo: EventInfo) => void
 
 事件回调。
 
+**版本说明**： 从API version 23开始支持。
+
 **起始版本：** 9
 
 <!--Device-update-export type UpgradeTaskCallback = (eventInfo: EventInfo) => void--><!--Device-update-export type UpgradeTaskCallback = (eventInfo: EventInfo) => void-End-->

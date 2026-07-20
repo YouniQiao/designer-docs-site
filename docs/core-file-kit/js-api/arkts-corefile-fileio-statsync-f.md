@@ -14,6 +14,8 @@ Obtains file information. This API returns the result synchronously.
 
 **Substitutes:** [fs:statSync](arkts-corefile-file-fs-statsync-f.md#statsync-1)
 
+<!--Device-unnamed-declare function statSync(path: string): Stat--><!--Device-unnamed-declare function statSync(path: string): Stat-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
@@ -26,5 +28,5 @@ Obtains file information. This API returns the result synchronously.
 
 | Type | Description |
 | --- | --- |
-| Stat | File information obtained. |
+| [Stat](arkts-corefile-file-fs-stat-i.md) | File information obtained. |
 

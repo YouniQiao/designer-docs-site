@@ -1,12 +1,10 @@
 # ExtensionAbilityInfo
 
-The module defines the ExtensionAbility information. An application can obtain its own ExtensionAbility information
-through
-[bundleManager.getBundleInfoForSelf](arkts-ability-getbundleinfoforself-f.md#getbundleinfoforself-1)
-, with **GET_BUNDLE_INFO_WITH_HAP_MODULE** and **GET_BUNDLE_INFO_WITH_EXTENSION_ABILITY** passed in to
-[bundleFlags](arkts-ability-bundleflag-e.md).
+The module defines the ExtensionAbility information. An application can obtain its own ExtensionAbility information through [bundleManager.getBundleInfoForSelf](arkts-ability-bundlemanager-getbundleinfoforself-f.md#getbundleinfoforself-1), with **GET_BUNDLE_INFO_WITH_HAP_MODULE** and **GET_BUNDLE_INFO_WITH_EXTENSION_ABILITY** passed in to [bundleFlags](arkts-ability-bundlemanager-bundleflag-e.md).
 
 **Since:** 9
+
+<!--Device-unnamed-export interface ExtensionAbilityInfo--><!--Device-unnamed-export interface ExtensionAbilityInfo-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
@@ -22,6 +20,8 @@ Index of an application clone. It takes effect only for cloned applications.
 
 **Since:** 12
 
+<!--Device-ExtensionAbilityInfo-readonly appIndex: int--><!--Device-ExtensionAbilityInfo-readonly appIndex: int-End-->
+
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
 ## applicationInfo
@@ -30,23 +30,17 @@ Index of an application clone. It takes effect only for cloned applications.
 readonly applicationInfo: ApplicationInfo
 ```
 
-Application configuration information <!--Del-->. The information can be obtained by passing in
-**GET_EXTENSION_ABILITY_INFO_WITH_APPLICATION** to the **extensionAbilityFlags** parameter of
-[queryExtensionAbilityInfo](arkts-ability-queryextensionabilityinfo-f-sys.md#queryextensionabilityinfo-2)
-<!--DelEnd-->.
+Application configuration information <!--Del-->. The information can be obtained by passing in **GET_EXTENSION_ABILITY_INFO_WITH_APPLICATION** to the **extensionAbilityFlags** parameter of [queryExtensionAbilityInfo](arkts-ability-bundlemanager-queryextensionabilityinfo-f-sys.md#queryextensionabilityinfo-2)<!--DelEnd-->.
 
-This field is not returned when the
-[getBundleInfoForSelf](arkts-ability-getbundleinfoforself-f.md#getbundleinfoforself-1)
-or
-[getBundleInfo](arkts-ability-getbundleinfo-f.md#getbundleinfo-2)
-is used to obtain ExtensionAbilityInfo information. You can obtain the related information by obtaining the
-[bundleInfo](arkts-ability-bundleinfo-i.md).appInfo object.
+This field is not returned when the [getBundleInfoForSelf](arkts-ability-bundlemanager-getbundleinfoforself-f.md#getbundleinfoforself-1)or [getBundleInfo](arkts-ability-bundlemanager-getbundleinfo-f.md#getbundleinfo-2)is used to obtain ExtensionAbilityInfo information. You can obtain the related information by obtaining the [bundleInfo](arkts-ability-bundleinfo-i.md).appInfo object.
 
 **Type:** ApplicationInfo
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-ExtensionAbilityInfo-readonly applicationInfo: ApplicationInfo--><!--Device-ExtensionAbilityInfo-readonly applicationInfo: ApplicationInfo-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
@@ -64,6 +58,8 @@ Bundle name.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-ExtensionAbilityInfo-readonly bundleName: string--><!--Device-ExtensionAbilityInfo-readonly bundleName: string-End-->
+
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
 ## descriptionId
@@ -79,6 +75,8 @@ ID of the ExtensionAbility description.
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-ExtensionAbilityInfo-readonly descriptionId: long--><!--Device-ExtensionAbilityInfo-readonly descriptionId: long-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
@@ -96,6 +94,8 @@ Whether the ExtensionAbility is enabled. **true** if enabled, **false** otherwis
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-ExtensionAbilityInfo-readonly enabled: boolean--><!--Device-ExtensionAbilityInfo-readonly enabled: boolean-End-->
+
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
 ## exported
@@ -104,14 +104,15 @@ Whether the ExtensionAbility is enabled. **true** if enabled, **false** otherwis
 readonly exported: boolean
 ```
 
-Whether the ExtensionAbility can be called by other applications. **true** if the ExtensionAbility can be called by
-other applications, **false** otherwise.
+Whether the ExtensionAbility can be called by other applications. **true** if the ExtensionAbility can be called by other applications, **false** otherwise.
 
 **Type:** boolean
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-ExtensionAbilityInfo-readonly exported: boolean--><!--Device-ExtensionAbilityInfo-readonly exported: boolean-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
@@ -129,6 +130,8 @@ Type of the ExtensionAbility.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-ExtensionAbilityInfo-readonly extensionAbilityType: bundleManager.ExtensionAbilityType--><!--Device-ExtensionAbilityInfo-readonly extensionAbilityType: bundleManager.ExtensionAbilityType-End-->
+
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
 ## extensionAbilityTypeName
@@ -137,15 +140,15 @@ Type of the ExtensionAbility.
 readonly extensionAbilityTypeName: string
 ```
 
-Type of the ExtensionAbility. For details about available values, see
-[the type field under the extensionabilities tag](../../../../quick-start/module-configuration-file.md#extensionabilities)
-.
+Type of the ExtensionAbility. For details about available values, see [the type field under the extensionabilities tag](../../../../quick-start/module-configuration-file.md#extensionabilities).
 
 **Type:** string
 
 **Since:** 11
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-ExtensionAbilityInfo-readonly extensionAbilityTypeName: string--><!--Device-ExtensionAbilityInfo-readonly extensionAbilityTypeName: string-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
@@ -163,6 +166,8 @@ ID of the ExtensionAbility icon.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-ExtensionAbilityInfo-readonly iconId: long--><!--Device-ExtensionAbilityInfo-readonly iconId: long-End-->
+
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
 ## labelId
@@ -179,6 +184,8 @@ ID of the ExtensionAbility label.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-ExtensionAbilityInfo-readonly labelId: long--><!--Device-ExtensionAbilityInfo-readonly labelId: long-End-->
+
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
 ## metadata
@@ -187,16 +194,15 @@ ID of the ExtensionAbility label.
 readonly metadata: Array<Metadata>
 ```
 
-Metadata of the ExtensionAbility. The information can be obtained by passing in **GET_BUNDLE_INFO_WITH_HAP_MODULE**
-, **GET_BUNDLE_INFO_WITH_EXTENSION_ABILITY**, and **GET_BUNDLE_INFO_WITH_METADATA** to the **bundleFlags**
-parameter of
-[getBundleInfoForSelf](arkts-ability-getbundleinfoforself-f.md#getbundleinfoforself-1).
+Metadata of the ExtensionAbility. The information can be obtained by passing in **GET_BUNDLE_INFO_WITH_HAP_MODULE**, **GET_BUNDLE_INFO_WITH_EXTENSION_ABILITY**, and **GET_BUNDLE_INFO_WITH_METADATA** to the **bundleFlags** parameter of [getBundleInfoForSelf](arkts-ability-bundlemanager-getbundleinfoforself-f.md#getbundleinfoforself-1).
 
 **Type:** Array<Metadata>
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-ExtensionAbilityInfo-readonly metadata: Array<Metadata>--><!--Device-ExtensionAbilityInfo-readonly metadata: Array<Metadata>-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
@@ -214,6 +220,8 @@ Name of the HAP file to which the ExtensionAbility belongs.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-ExtensionAbilityInfo-readonly moduleName: string--><!--Device-ExtensionAbilityInfo-readonly moduleName: string-End-->
+
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
 ## name
@@ -229,6 +237,8 @@ Name of the ExtensionAbility.
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-ExtensionAbilityInfo-readonly name: string--><!--Device-ExtensionAbilityInfo-readonly name: string-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
@@ -246,6 +256,8 @@ Permissions required for other bundles to call the ExtensionAbility.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-ExtensionAbilityInfo-readonly permissions: Array<string>--><!--Device-ExtensionAbilityInfo-readonly permissions: Array<string>-End-->
+
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
 ## readPermission
@@ -261,6 +273,8 @@ Permission required for reading data from the ExtensionAbility.
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-ExtensionAbilityInfo-readonly readPermission: string--><!--Device-ExtensionAbilityInfo-readonly readPermission: string-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
@@ -278,6 +292,8 @@ Skills of the ExtensionAbility.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-ExtensionAbilityInfo-readonly skills: Array<Skill>--><!--Device-ExtensionAbilityInfo-readonly skills: Array<Skill>-End-->
+
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
 ## writePermission
@@ -293,6 +309,8 @@ Permission required for writing data to the ExtensionAbility.
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-ExtensionAbilityInfo-readonly writePermission: string--><!--Device-ExtensionAbilityInfo-readonly writePermission: string-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 

@@ -4,6 +4,9 @@ The **Select** component provides a drop-down menu that allows users to select a
 
 > **NOTE**
 
+## Child Components
+
+Not supported
 
 ## Select
 
@@ -14,6 +17,8 @@ Select(options: Array<SelectOption>)
 **Since:** 8
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-SelectInterface-(options: Array<SelectOption>): SelectAttribute--><!--Device-SelectInterface-(options: Array<SelectOption>): SelectAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

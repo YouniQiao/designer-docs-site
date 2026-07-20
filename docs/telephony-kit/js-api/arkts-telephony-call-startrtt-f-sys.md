@@ -1,0 +1,50 @@
+# startRtt (System API)
+
+## Modules to Import
+
+```TypeScript
+import { call } from '@kit.TelephonyKit';
+```
+
+## startRtt
+
+```TypeScript
+function startRtt(callId: number, type: ImsRttMode): Promise<void>
+```
+
+Start rtt.
+
+**Since:** 22
+
+**Required permissions:** ohos.permission.PLACE_CALL
+
+<!--Device-call-function startRtt(callId: int, type: ImsRttMode): Promise<void>--><!--Device-call-function startRtt(callId: int, type: ImsRttMode): Promise<void>-End-->
+
+**System capability:** SystemCapability.Telephony.CallManager
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callId | number | Yes | Indicates the identifier of the call. |
+| type | [ImsRttMode](arkts-telephony-call-imsrttmode-e-sys.md) | Yes | Indicates the type of operation. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the startRtt. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Non-system applications use system APIs. |
+| 8400001 | Invalid parameter value. |
+| 8400002 | Operation failed. Cannot connect to service. |
+| 8400003 | System internal error. |
+| 8400999 | Unknown error code. |
+

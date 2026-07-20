@@ -16,6 +16,8 @@ Creates a writeable stream. This API returns the result synchronously.
 
 **Since:** 12
 
+<!--Device-unnamed-declare function createWriteStream(path: string, options?: WriteStreamOptions): WriteStream--><!--Device-unnamed-declare function createWriteStream(path: string, options?: WriteStreamOptions): WriteStream-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
@@ -23,13 +25,13 @@ Creates a writeable stream. This API returns the result synchronously.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Path of the file. |
-| options | WriteStreamOptions | No | The options are as follows:<br>- **start** (number): start position towrite the data, in bytes. This parameter is optional. By default, data is written from the current position.<br>-**mode** (number): [mode](../../../../reference/apis-core-file-kit/js-apis-file-fs.md#openmode) for creating thewriteable stream. This parameter is optional. The default value is the write-only mode. |
+| options | [WriteStreamOptions](arkts-corefile-file-fs-writestreamoptions-i.md) | No | The options are as follows:<br>- **start** (number): start position to write the data, in bytes. This parameter is optional. By default, data is written from the current position.<br>-**mode** (number): [mode](../../../../reference/apis-core-file-kit/js-apis-file-fs.md#openmode) for creating the writeable stream. This parameter is optional. The default value is the write-only mode. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| WriteStream | **WriteStream** instance obtained. |
+| [WriteStream](arkts-corefile-file-fs-writestream-c.md) | **WriteStream** instance obtained. |
 
 **Error codes:**
 

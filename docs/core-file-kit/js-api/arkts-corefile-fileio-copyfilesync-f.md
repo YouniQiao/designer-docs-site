@@ -14,6 +14,8 @@ Copies a file. This API returns the result synchronously.
 
 **Substitutes:** [fs:copyFileSync](arkts-corefile-file-fs-copyfilesync-f.md#copyfilesync-1)
 
+<!--Device-unnamed-declare function copyFileSync(src: string | number, dest: string | number, mode?: number): void--><!--Device-unnamed-declare function copyFileSync(src: string | number, dest: string | number, mode?: number): void-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
@@ -22,5 +24,5 @@ Copies a file. This API returns the result synchronously.
 | --- | --- | --- | --- |
 | src | string \| number | Yes | Path or file descriptor of the source file to copy. |
 | dest | string \| number | Yes | Path or file descriptor of the destination file. |
-| mode | number | No | Option for overwriting the destination file. The default value is **0**, which is the onlyvalue supported.<br>**0**: Overwrite the file with the same name completely and truncate the part that is notoverwritten. |
+| mode | number | No | Option for overwriting the destination file. The default value is **0**, which is the only value supported.<br>**0**: Overwrite the file with the same name completely and truncate the part that is not overwritten. |
 

@@ -4,6 +4,10 @@ The **CalendarPicker** component provides a drop-down calendar for users to sele
 
 > **NOTE**
 
+Child Components
+
+Not supported
+
 
 ## CalendarPicker
 
@@ -18,6 +22,8 @@ Creates a calendar picker.
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-CalendarPickerInterface-(options?: CalendarOptions): CalendarPickerAttribute--><!--Device-CalendarPickerInterface-(options?: CalendarOptions): CalendarPickerAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

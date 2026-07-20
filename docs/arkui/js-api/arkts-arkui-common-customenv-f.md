@@ -14,17 +14,19 @@ Defines the custom environment PropertyDecorator.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 
+<!--Device-unnamed-declare function CustomEnv<T>(key: CustomEnvKey<T>): PropertyDecorator--><!--Device-unnamed-declare function CustomEnv<T>(key: CustomEnvKey<T>): PropertyDecorator-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| key | CustomEnvKey&lt;T&gt; | Yes | custom environment key. |
+| key | [CustomEnvKey](arkts-arkui-common-customenvkey-c.md)<T> | Yes | custom environment key. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| PropertyDecorator | CustomEnv decorator |
+| [PropertyDecorator](../../apis-na/arkts-apis/arkts-na-propertydecorator-t.md) | CustomEnv decorator |
 

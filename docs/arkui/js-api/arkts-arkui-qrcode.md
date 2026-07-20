@@ -7,6 +7,9 @@ The **QRCode** component is used to display a QR code.
 > The pixel count of the **QRCode** component is subject to the content. If the component size is not large enough,
 > the content may fail to be displayed. In this case, you need to resize the component.
 
+## Child Components
+
+Not supported
 
 ## QRCode
 
@@ -21,6 +24,8 @@ Creates a **QRCode** component. The displayed QR code can be scanned to obtain t
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
+
+<!--Device-QRCodeInterface-(value: ResourceStr): QRCodeAttribute--><!--Device-QRCodeInterface-(value: ResourceStr): QRCodeAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

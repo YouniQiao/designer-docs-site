@@ -1,0 +1,54 @@
+# removeStorageFromCache
+
+## removeStorageFromCache
+
+```TypeScript
+function removeStorageFromCache(path: string, callback: AsyncCallback<void>): void
+```
+
+Removes the singleton **Storage** instance of a file from the cache. The removed instance cannot be used for data operations. Otherwise, data inconsistency will occur. This API uses an asynchronous callback to return the result.
+
+**Since:** 6
+
+**Deprecated since:** 9
+
+**Substitutes:** removePreferencesFromCache
+
+<!--Device-storage-function removeStorageFromCache(path: string, callback: AsyncCallback<void>): void--><!--Device-storage-function removeStorageFromCache(path: string, callback: AsyncCallback<void>): void-End-->
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| path | string | Yes | Path of the target file. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+
+
+## removeStorageFromCache
+
+```TypeScript
+function removeStorageFromCache(path: string): Promise<void>
+```
+
+Removes the singleton **Storage** instance of a file from the cache. The removed instance cannot be used for data operations. Otherwise, data inconsistency will occur. This API uses a promise to return the result.
+
+**Since:** 6
+
+**Deprecated since:** 9
+
+**Substitutes:** removePreferencesFromCache
+
+<!--Device-storage-function removeStorageFromCache(path: string): Promise<void>--><!--Device-storage-function removeStorageFromCache(path: string): Promise<void>-End-->
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| path | string | Yes | Path of the target file. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+

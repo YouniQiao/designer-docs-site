@@ -12,6 +12,8 @@ Defines the callback type used in mutableBuilder.
 
 **Atomic service API:** This API can be used in atomic services since API version 22.
 
+<!--Device-unnamed-declare type BuilderCallback = (...args: Args) => void--><!--Device-unnamed-declare type BuilderCallback = (...args: Args) => void-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**

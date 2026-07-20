@@ -4,6 +4,8 @@ The dialogSession module provides APIs related to the dialog box.
 
 **Since:** 11
 
+<!--Device-unnamed-declare namespace dialogSession--><!--Device-unnamed-declare namespace dialogSession-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 **System API:** This is a system API.
@@ -21,9 +23,9 @@ import { dialogSession } from '@kit.AbilityKit';
 
 | Name | Description |
 | --- | --- |
-| [getDialogSessionInfo](arkts-ability-getdialogsessioninfo-f-sys.md#getdialogsessioninfo-1) | Obtains the session information based on the session ID. |
-| [sendDialogResult](arkts-ability-senddialogresult-f-sys.md#senddialogresult-1) | Sends a request for a dialog box. This API uses a promise to return the result. |
-| [sendDialogResult](arkts-ability-senddialogresult-f-sys.md#senddialogresult-2) | Sends a request for a dialog box. This API uses an asynchronous callback to return the result. |
+| [getDialogSessionInfo](arkts-ability-dialogsession-getdialogsessioninfo-f-sys.md#getdialogsessioninfo-1) | Obtains the session information based on the session ID. |
+| [sendDialogResult](arkts-ability-dialogsession-senddialogresult-f-sys.md#senddialogresult-1) | Sends a request for a dialog box. This API uses a promise to return the result. |
+| [sendDialogResult](arkts-ability-dialogsession-senddialogresult-f-sys.md#senddialogresult-2) | Sends a request for a dialog box. This API uses an asynchronous callback to return the result. |
 <!--DelEnd-->
 
 <!--Del-->
@@ -31,7 +33,7 @@ import { dialogSession } from '@kit.AbilityKit';
 
 | Name | Description |
 | --- | --- |
-| [DialogAbilityInfo](arkts-ability-dialogabilityinfo-i-sys.md) | Provides DialogAbility information, including the bundle name, module name, and ability name. |
-| [DialogSessionInfo](arkts-ability-dialogsessioninfo-i-sys.md) | Provides session information, including the requester information, target ability information list, and otherparameters. |
+| [DialogAbilityInfo](arkts-ability-dialogsession-dialogabilityinfo-i-sys.md) | Provides DialogAbility information, including the bundle name, module name, and ability name. |
+| [DialogSessionInfo](arkts-ability-dialogsession-dialogsessioninfo-i-sys.md) | Provides session information, including the requester information, target ability information list, and other parameters. |
 <!--DelEnd-->
 

@@ -1,12 +1,14 @@
 # Video properties/events
 
-In addition to the [universal attributes](arkts-arkui-commonmethod-c.md), the following attributes are supported.
+In addition to the [universal attributes](arkts-arkui-common-commonmethod-c.md), the following attributes are supported.
 
-In addition to the [universal events](arkts-arkui-commonmethod-c.md), the following events are supported.
+In addition to the [universal events](arkts-arkui-common-commonmethod-c.md), the following events are supported.
 
 **Inheritance/Implementation:** VideoAttribute extends [CommonMethod<VideoAttribute>](CommonMethod<VideoAttribute>)
 
 **Since:** 7
+
+<!--Device-unnamed-declare class VideoAttribute extends CommonMethod<VideoAttribute>--><!--Device-unnamed-declare class VideoAttribute extends CommonMethod<VideoAttribute>-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -16,12 +18,11 @@ In addition to the [universal events](arkts-arkui-commonmethod-c.md), the follow
 analyzerConfig(config: ImageAnalyzerConfig)
 ```
 
-Sets the AI image analysis types, including subject recognition, text recognition, and object lookup. This
-attribute can be dynamically set using [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
+Sets the AI image analysis types, including subject recognition, text recognition, and object lookup. This attribute can be dynamically set using [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1).
 
-> **NOTE**
->
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
+> **NOTE**  
+>  
+> This API can be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1) since API version 20.
 
 **Since:** 12
 
@@ -29,13 +30,15 @@ attribute can be dynamically set using [attributeModifier](arkts-arkui-commonmet
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-VideoAttribute-analyzerConfig(config: ImageAnalyzerConfig): VideoAttribute--><!--Device-VideoAttribute-analyzerConfig(config: ImageAnalyzerConfig): VideoAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| config | ImageAnalyzerConfig | Yes | AI image analysis types. |
+| config | [ImageAnalyzerConfig](../arkts-apis/arkts-arkui-image-common-imageanalyzerconfig-i.md) | Yes | AI image analysis types. |
 
 ## autoPlay
 
@@ -43,12 +46,13 @@ attribute can be dynamically set using [attributeModifier](arkts-arkui-commonmet
 autoPlay(value: boolean)
 ```
 
-Sets whether to enable autoplay. This attribute can be dynamically set using
-[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
+Sets whether to enable autoplay. This attribute can be dynamically set using [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 7
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-VideoAttribute-autoPlay(value: boolean): VideoAttribute--><!--Device-VideoAttribute-autoPlay(value: boolean): VideoAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -56,7 +60,7 @@ Sets whether to enable autoplay. This attribute can be dynamically set using
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | boolean | Yes | Whether to enable autoplay.<br>**true**: Enable autoplay.<br>**false**: Disableautoplay.<br>Default value: **false**. |
+| value | boolean | Yes | Whether to enable autoplay.<br>**true**: Enable autoplay.<br>**false**: Disable autoplay.<br>Default value: **false**. |
 
 ## controls
 
@@ -64,12 +68,13 @@ Sets whether to enable autoplay. This attribute can be dynamically set using
 controls(value: boolean)
 ```
 
-Sets whether to display the video playback control bar. This attribute can be dynamically set using
-[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
+Sets whether to display the video playback control bar. This attribute can be dynamically set using [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 7
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-VideoAttribute-controls(value: boolean): VideoAttribute--><!--Device-VideoAttribute-controls(value: boolean): VideoAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -77,7 +82,7 @@ Sets whether to display the video playback control bar. This attribute can be dy
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | boolean | Yes | Whether to display the video playback control bar.<br>**true**: Display the videoplayback control bar.<br>**false**: Do not display the video playback control bar.<br>Default value: **true** |
+| value | boolean | Yes | Whether to display the video playback control bar.<br>**true**: Display the video playback control bar.<br>**false**: Do not display the video playback control bar.<br>Default value: **true** |
 
 ## enableAnalyzer
 
@@ -85,27 +90,25 @@ Sets whether to display the video playback control bar. This attribute can be dy
 enableAnalyzer(enable: boolean)
 ```
 
-Sets whether to enable the AI image analyzer, which supports subject recognition, text recognition, and object
-lookup. This attribute can be dynamically set using [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
+Sets whether to enable the AI image analyzer, which supports subject recognition, text recognition, and object lookup. This attribute can be dynamically set using [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1).
 
-After this feature is enabled, the video automatically enters an analysis state to process the current frame when
-playback is paused, and exits the analysis state when playback is resumed.
+After this feature is enabled, the video automatically enters an analysis state to process the current frame when playback is paused, and exits the analysis state when playback is resumed.
 
-Note that if this attribute and the [overlay](arkts-arkui-commonmethod-c.md#overlay-1) attribute are both set,
-[CustomBuilder](arkts-arkui-custombuilder-t.md) specified in [overlay](arkts-arkui-commonmethod-c.md) has no effect.
+Note that if this attribute and the [overlay](arkts-arkui-common-commonmethod-c.md#overlay-1) attribute are both set,[CustomBuilder](arkts-arkui-custombuilder-t.md) specified in [overlay](arkts-arkui-common-commonmethod-c.md) has no effect.
 
-> **NOTE**
->
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
+> **NOTE**  
+>  
+> This API can be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1) since API version 20.
 
-After this feature is enabled, the video automatically enters an analysis state to process the current frame when
-playback is paused, and exits the analysis state when playback is resumed.
+After this feature is enabled, the video automatically enters an analysis state to process the current frame when playback is paused, and exits the analysis state when playback is resumed.
 
 **Since:** 12
 
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-VideoAttribute-enableAnalyzer(enable: boolean): VideoAttribute--><!--Device-VideoAttribute-enableAnalyzer(enable: boolean): VideoAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -121,12 +124,9 @@ playback is paused, and exits the analysis state when playback is resumed.
 enableShortcutKey(enabled: boolean)
 ```
 
-Sets whether the component responds to keyboard shortcuts when it has focus. This attribute can be dynamically set
-using [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
+Sets whether the component responds to keyboard shortcuts when it has focus. This attribute can be dynamically set using [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1).
 
-Currently, the component can respond to the following keys when it is in focus: spacebar for playing or pausing the
-video, up or down arrow key for adjusting the video volume, and left or right arrow key for fast forwarding or
-rewinding the video.
+Currently, the component can respond to the following keys when it is in focus: spacebar for playing or pausing the video, up or down arrow key for adjusting the video volume, and left or right arrow key for fast forwarding or rewinding the video.
 
 **Since:** 15
 
@@ -134,13 +134,15 @@ rewinding the video.
 
 **Atomic service API:** This API can be used in atomic services since API version 15.
 
+<!--Device-VideoAttribute-enableShortcutKey(enabled: boolean): VideoAttribute--><!--Device-VideoAttribute-enableShortcutKey(enabled: boolean): VideoAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| enabled | boolean | Yes | Whether the component responds to keyboard shortcuts when it has focus.<br>**true**:The component responds to keyboard shortcuts when it has focus.<br>**false**: The component does not respond tokeyboard shortcuts when it has focus.<br>Default value: **false**. |
+| enabled | boolean | Yes | Whether the component responds to keyboard shortcuts when it has focus.<br>**true**:The component responds to keyboard shortcuts when it has focus.<br>**false**: The component does not respond to keyboard shortcuts when it has focus.<br>Default value: **false**. |
 
 ## loop
 
@@ -148,12 +150,13 @@ rewinding the video.
 loop(value: boolean)
 ```
 
-Sets whether to repeat the video. This attribute can be dynamically set using
-[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
+Sets whether to repeat the video. This attribute can be dynamically set using [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 7
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-VideoAttribute-loop(value: boolean): VideoAttribute--><!--Device-VideoAttribute-loop(value: boolean): VideoAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -161,7 +164,7 @@ Sets whether to repeat the video. This attribute can be dynamically set using
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | boolean | Yes | Whether to repeat the video.<br>**true**: Repeat the video.<br>**false**: Do not repeatthe video.<br>Default value: **false**. |
+| value | boolean | Yes | Whether to repeat the video.<br>**true**: Repeat the video.<br>**false**: Do not repeat the video.<br>Default value: **false**. |
 
 ## muted
 
@@ -169,12 +172,13 @@ Sets whether to repeat the video. This attribute can be dynamically set using
 muted(value: boolean)
 ```
 
-Sets whether to mute the video. This attribute can be dynamically set using
-[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
+Sets whether to mute the video. This attribute can be dynamically set using [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 7
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-VideoAttribute-muted(value: boolean): VideoAttribute--><!--Device-VideoAttribute-muted(value: boolean): VideoAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -182,7 +186,7 @@ Sets whether to mute the video. This attribute can be dynamically set using
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | boolean | Yes | Whether to mute the video.<br>**true**: Mute the video.<br>**false**: Unmute thevideo.<br>Default value: **false**. |
+| value | boolean | Yes | Whether to mute the video.<br>**true**: Mute the video.<br>**false**: Unmute the video.<br>Default value: **false**. |
 
 ## objectFit
 
@@ -190,12 +194,13 @@ Sets whether to mute the video. This attribute can be dynamically set using
 objectFit(value: ImageFit)
 ```
 
-Sets the fill mode for the video content. This attribute can be dynamically set using
-[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
+Sets the fill mode for the video content. This attribute can be dynamically set using [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 7
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-VideoAttribute-objectFit(value: ImageFit): VideoAttribute--><!--Device-VideoAttribute-objectFit(value: ImageFit): VideoAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -203,7 +208,7 @@ Sets the fill mode for the video content. This attribute can be dynamically set 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ImageFit | Yes | Fill mode of the video content.<br>Default value: **Cover**<br>Constraints: Theenumerated value **Matrix** in **ImageFit** is not supported and will behave as **Cover**.<br>Invalid values,including **undefined**, **null**, and values outside the [ImageFit](arkts-arkui-imagefit-e.md) enumeration range,will result in an effect the same as **Cover**. |
+| value | [ImageFit](../arkts-apis/arkts-arkui-enums-imagefit-e.md) | Yes | Fill mode of the video content.<br>Default value: **Cover**<br>Constraints: The enumerated value **Matrix** in **ImageFit** is not supported and will behave as **Cover**.<br>Invalid values,including **undefined**, **null**, and values outside the [ImageFit](../arkts-apis/arkts-arkui-enums-imagefit-e.md) enumeration range,will result in an effect the same as **Cover**. |
 
 ## onError
 
@@ -216,6 +221,8 @@ Called when playback fails.
 **Since:** 7
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-VideoAttribute-onError(event: VoidCallback | import('../api/@ohos.base').ErrorCallback): VideoAttribute--><!--Device-VideoAttribute-onError(event: VoidCallback | import('../api/@ohos.base').ErrorCallback): VideoAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -231,12 +238,13 @@ Called when playback fails.
 onFinish(event: VoidCallback)
 ```
 
-Called when the video playback ends.
-Anonymous Object Rectification.
+Called when the video playback ends.Anonymous Object Rectification.
 
 **Since:** 7
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-VideoAttribute-onFinish(event: VoidCallback): VideoAttribute--><!--Device-VideoAttribute-onFinish(event: VoidCallback): VideoAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -244,7 +252,7 @@ Anonymous Object Rectification.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | VoidCallback | Yes | [since 7 - 17] |
+| event | [VoidCallback](../arkts-apis/arkts-arkui-voidcallback-t.md) | Yes | [since 7 - 17] |
 
 ## onFullscreenChange
 
@@ -252,12 +260,13 @@ Anonymous Object Rectification.
 onFullscreenChange(callback: Callback<FullscreenInfo>)
 ```
 
-Called when the video enters and exits the full screen.
-Anonymous Object Rectification.
+Called when the video enters and exits the full screen.Anonymous Object Rectification.
 
 **Since:** 7
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-VideoAttribute-onFullscreenChange(callback: Callback<FullscreenInfo>): VideoAttribute--><!--Device-VideoAttribute-onFullscreenChange(callback: Callback<FullscreenInfo>): VideoAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -265,7 +274,7 @@ Anonymous Object Rectification.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Callback&lt;FullscreenInfo&gt; | Yes | [since 7 - 17] |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<FullscreenInfo> | Yes | [since 7 - 17] |
 
 ## onPause
 
@@ -273,12 +282,13 @@ Anonymous Object Rectification.
 onPause(event: VoidCallback)
 ```
 
-Called when the video is paused.
-Anonymous Object Rectification.
+Called when the video is paused.Anonymous Object Rectification.
 
 **Since:** 7
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-VideoAttribute-onPause(event: VoidCallback): VideoAttribute--><!--Device-VideoAttribute-onPause(event: VoidCallback): VideoAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -286,7 +296,7 @@ Anonymous Object Rectification.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | VoidCallback | Yes | [since 7 - 17] |
+| event | [VoidCallback](../arkts-apis/arkts-arkui-voidcallback-t.md) | Yes | [since 7 - 17] |
 
 ## onPrepared
 
@@ -294,12 +304,13 @@ Anonymous Object Rectification.
 onPrepared(callback: Callback<PreparedInfo>)
 ```
 
-Called when the video preparation is complete.
-Anonymous Object Rectification.
+Called when the video preparation is complete.Anonymous Object Rectification.
 
 **Since:** 7
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-VideoAttribute-onPrepared(callback: Callback<PreparedInfo>): VideoAttribute--><!--Device-VideoAttribute-onPrepared(callback: Callback<PreparedInfo>): VideoAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -307,7 +318,7 @@ Anonymous Object Rectification.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Callback&lt;PreparedInfo&gt; | Yes | [since 7 - 17] |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<PreparedInfo> | Yes | [since 7 - 17] |
 
 ## onSeeked
 
@@ -315,12 +326,13 @@ Anonymous Object Rectification.
 onSeeked(callback: Callback<PlaybackInfo>)
 ```
 
-Called when the playback time information is reported after the operation progress bar is completed.
-Anonymous Object Rectification.
+Called when the playback time information is reported after the operation progress bar is completed.Anonymous Object Rectification.
 
 **Since:** 7
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-VideoAttribute-onSeeked(callback: Callback<PlaybackInfo>): VideoAttribute--><!--Device-VideoAttribute-onSeeked(callback: Callback<PlaybackInfo>): VideoAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -328,7 +340,7 @@ Anonymous Object Rectification.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Callback&lt;PlaybackInfo&gt; | Yes | [since 7 - 17] |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<PlaybackInfo> | Yes | [since 7 - 17] |
 
 ## onSeeking
 
@@ -336,12 +348,13 @@ Anonymous Object Rectification.
 onSeeking(callback: Callback<PlaybackInfo>)
 ```
 
-Called when the time information is reported when the progress bar process is operated.
-Anonymous Object Rectification.
+Called when the time information is reported when the progress bar process is operated.Anonymous Object Rectification.
 
 **Since:** 7
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-VideoAttribute-onSeeking(callback: Callback<PlaybackInfo>): VideoAttribute--><!--Device-VideoAttribute-onSeeking(callback: Callback<PlaybackInfo>): VideoAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -349,7 +362,7 @@ Anonymous Object Rectification.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Callback&lt;PlaybackInfo&gt; | Yes | [since 7 - 17] |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<PlaybackInfo> | Yes | [since 7 - 17] |
 
 ## onStart
 
@@ -357,12 +370,13 @@ Anonymous Object Rectification.
 onStart(event: VoidCallback)
 ```
 
-Called when the video is played.
-Anonymous Object Rectification.
+Called when the video is played.Anonymous Object Rectification.
 
 **Since:** 7
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-VideoAttribute-onStart(event: VoidCallback): VideoAttribute--><!--Device-VideoAttribute-onStart(event: VoidCallback): VideoAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -370,7 +384,7 @@ Anonymous Object Rectification.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | VoidCallback | Yes | [since 7 - 17] |
+| event | [VoidCallback](../arkts-apis/arkts-arkui-voidcallback-t.md) | Yes | [since 7 - 17] |
 
 ## onStop
 
@@ -386,13 +400,15 @@ Called when the video is stopped.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-VideoAttribute-onStop(event: Callback<void>): VideoAttribute--><!--Device-VideoAttribute-onStop(event: Callback<void>): VideoAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | Callback&lt;void&gt; | Yes |  |
+| event | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<void> | Yes |  |
 
 ## onUpdate
 
@@ -400,12 +416,13 @@ Called when the video is stopped.
 onUpdate(callback: Callback<PlaybackInfo>)
 ```
 
-Called when the playback progress changes.
-Anonymous Object Rectification.
+Called when the playback progress changes.Anonymous Object Rectification.
 
 **Since:** 7
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-VideoAttribute-onUpdate(callback: Callback<PlaybackInfo>): VideoAttribute--><!--Device-VideoAttribute-onUpdate(callback: Callback<PlaybackInfo>): VideoAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -413,5 +430,5 @@ Anonymous Object Rectification.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Callback&lt;PlaybackInfo&gt; | Yes | [since 7 - 17] |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<PlaybackInfo> | Yes | [since 7 - 17] |
 

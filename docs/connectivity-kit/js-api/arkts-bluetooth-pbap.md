@@ -4,6 +4,8 @@ Provides methods to accessing bluetooth PBAP(Phone Book Access Profile)-related 
 
 **Since:** 11
 
+<!--Device-unnamed-declare namespace pbap--><!--Device-unnamed-declare namespace pbap-End-->
+
 **System capability:** SystemCapability.Communication.Bluetooth.Core
 
 ## Modules to Import
@@ -18,14 +20,14 @@ import { pbap } from '@kit.ConnectivityKit';
 
 | Name | Description |
 | --- | --- |
-| [createPbapServerProfile](arkts-connectivity-createpbapserverprofile-f.md#createpbapserverprofile-1) | create the instance of PBAP server profile. |
+| [createPbapServerProfile](arkts-connectivity-pbap-createpbapserverprofile-f.md#createpbapserverprofile-1) | create the instance of PBAP server profile. |
 
 <!--Del-->
 ### Interfaces（系统接口）
 
 | Name | Description |
 | --- | --- |
-| [PbapServerProfile](arkts-connectivity-pbapserverprofile-i-sys.md) | Manager PBAP server profile. |
+| [PbapServerProfile](arkts-connectivity-pbap-pbapserverprofile-i-sys.md) | Manager PBAP server profile. |
 <!--DelEnd-->
 
 <!--Del-->
@@ -33,20 +35,20 @@ import { pbap } from '@kit.ConnectivityKit';
 
 | Name | Description |
 | --- | --- |
-| [ShareType](arkts-connectivity-sharetype-e-sys.md) | Enum for the share type. |
+| [ShareType](arkts-connectivity-pbap-sharetype-e-sys.md) | Enum for the share type. |
 <!--DelEnd-->
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [BaseProfile](arkts-connectivity-baseprofile-t.md) | Base interface of profile. |
+| [BaseProfile](arkts-connectivity-pbap-baseprofile-t.md) | Base interface of profile. |
 
 <!--Del-->
 ### Types（系统接口）
 
 | Name | Description |
 | --- | --- |
-| [AccessAuthorization](arkts-connectivity-accessauthorization-t-sys.md) | Indicate the phone book access authorization. |
+| [AccessAuthorization](arkts-connectivity-pbap-accessauthorization-t-sys.md) | Indicate the phone book access authorization. |
 <!--DelEnd-->
 

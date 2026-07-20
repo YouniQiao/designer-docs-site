@@ -292,6 +292,7 @@
   - [createBundleContext(系统接口)](arkts-ability-application-createbundlecontext-f-sys.md)<!--DelEnd-->
   - [createModuleContext](arkts-ability-application-createmodulecontext-f.md)<!--Del-->
   - [createModuleContext(系统接口)](arkts-ability-application-createmodulecontext-f-sys.md)<!--DelEnd-->
+  - [createModuleContextSync](arkts-ability-application-createmodulecontextsync-f.md)
   - [createPluginModuleContext](arkts-ability-application-createpluginmodulecontext-f.md)<!--Del-->
   - [createPluginModuleContextForHostBundle(系统接口)](arkts-ability-application-createpluginmodulecontextforhostbundle-f-sys.md)<!--DelEnd-->
   - [demoteCurrentFromCandidateMasterProcess](arkts-ability-application-demotecurrentfromcandidatemasterprocess-f.md)

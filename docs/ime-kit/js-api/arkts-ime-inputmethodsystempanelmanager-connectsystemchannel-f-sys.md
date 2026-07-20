@@ -1,0 +1,43 @@
+# connectSystemChannel (System API)
+
+## Modules to Import
+
+```TypeScript
+import { inputMethodSystemPanelManager } from '@kit.IMEKit';
+```
+
+## connectSystemChannel
+
+```TypeScript
+function connectSystemChannel(): Promise<void>
+```
+
+Connect system channel for the panel and input method.
+
+**Since:** 26.0.0
+
+**Required permissions:** ohos.permission.CONNECT_IME_ABILITY
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-inputMethodSystemPanelManager-function connectSystemChannel(): Promise<void>--><!--Device-inputMethodSystemPanelManager-function connectSystemChannel(): Promise<void>-End-->
+
+**System capability:** SystemCapability.MiscServices.InputMethodFramework
+
+**System API:** This is a system API.
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | permissions check fails. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | not system application. |
+| [12800008](../errorcode-inputmethod-framework.md#12800008-input-method-manager-service-error) | input method manager service error. Possible causes:a system error, such as null pointer, IPC exception. |
+| [12800026](../errorcode-inputmethod-framework.md#12800026-input-method-system-panel-error) | input method system panel error. Possible causes:1. the system panel not connected. 2. ipc failed due to the large amount of data transferred or other reasons.3. the caller is not system panel. |
+

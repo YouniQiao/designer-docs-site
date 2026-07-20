@@ -17,6 +17,9 @@ used to display inline text.
 > [onClick]{@link CommonMethod#onClick(event: Callback<ClickEvent>, distanceThreshold: number)} click events and
 > [onHover]{@link CommonMethod#onHover} hover events are supported.
 
+## Child Components
+
+Not supported
 
 ## Span
 
@@ -31,6 +34,8 @@ Defines the constructor of Span.
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
+
+<!--Device-SpanInterface-(value: string | Resource): SpanAttribute--><!--Device-SpanInterface-(value: string | Resource): SpanAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

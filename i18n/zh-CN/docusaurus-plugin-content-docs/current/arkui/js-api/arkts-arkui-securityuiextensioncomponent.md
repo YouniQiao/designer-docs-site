@@ -1,7 +1,6 @@
 # SecurityUIExtensionComponent
 
-提供UIExtensionComponent的接口，用于<br/>
-渲染远程UIExtensionAbility的UI。
+定义SecurityUIExtensionComponent组件。
 
 
 ## SecurityUIExtensionComponent
@@ -12,12 +11,17 @@ SecurityUIExtensionComponent(
   )
 ```
 
-构造UIExtensionComponent。<br/>
-在使用UIExtensionComponent时调用。
+构造UIExtensionComponent。<br/>在使用UIExtensionComponent时调用。
 
 **起始版本：** 26.0.0
 
 **模型约束：** 此接口仅可在Stage模型下使用。
+
+<!--Device-SecurityUIExtensionComponentInterface-(
+    want: import('../api/options?: SecurityUIExtensionOptions
+  ): SecurityUIExtensionComponentAttribute--><!--Device-SecurityUIExtensionComponentInterface-(
+    want: import('../api/options?: SecurityUIExtensionOptions
+  ): SecurityUIExtensionComponentAttribute-End-->
 
 **系统能力：** SystemCapability.ArkUI.ArkUI.Full
 

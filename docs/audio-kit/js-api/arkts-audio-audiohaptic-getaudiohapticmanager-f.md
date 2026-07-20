@@ -1,0 +1,35 @@
+# getAudioHapticManager
+
+## Modules to Import
+
+```TypeScript
+import { audioHaptic } from '@kit.AudioKit';
+```
+
+## getAudioHapticManager
+
+```TypeScript
+function getAudioHapticManager(): AudioHapticManager
+```
+
+Obtains an {@link AudioHapticManager} instance. This object is singleton in one process.
+
+**Since:** 11
+
+<!--Device-audioHaptic-function getAudioHapticManager(): AudioHapticManager--><!--Device-audioHaptic-function getAudioHapticManager(): AudioHapticManager-End-->
+
+**System capability:** SystemCapability.Multimedia.AudioHaptic.Core
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [AudioHapticManager](arkts-audio-audiohaptic-audiohapticmanager-i.md) | AudioHapticManager instance. |
+
+**Example**
+
+```TypeScript
+let audioHapticManagerInstance: audioHaptic.AudioHapticManager = audioHaptic.getAudioHapticManager();
+
+```
+

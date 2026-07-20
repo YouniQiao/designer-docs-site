@@ -12,6 +12,8 @@ Define Env Decorator type
 
 **Atomic service API:** This API can be used in atomic services since API version 22.
 
+<!--Device-unnamed-declare type EnvDecorator = (value: SystemProperties) => PropertyDecorator--><!--Device-unnamed-declare type EnvDecorator = (value: SystemProperties) => PropertyDecorator-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**

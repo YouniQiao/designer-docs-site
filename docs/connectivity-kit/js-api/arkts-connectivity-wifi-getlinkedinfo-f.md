@@ -1,0 +1,82 @@
+# getLinkedInfo
+
+## Modules to Import
+
+```TypeScript
+import { wifi } from '@kit.ConnectivityKit';
+```
+
+## getLinkedInfo
+
+```TypeScript
+function getLinkedInfo(): Promise<WifiLinkedInfo>
+```
+
+Obtains information about a Wi-Fi connection.
+
+**Since:** 6
+
+**Deprecated since:** 9
+
+**Substitutes:** getLinkedInfo
+
+**Required permissions:** ohos.permission.GET_WIFI_INFO
+
+<!--Device-wifi-function getLinkedInfo(): Promise<WifiLinkedInfo>--><!--Device-wifi-function getLinkedInfo(): Promise<WifiLinkedInfo>-End-->
+
+**System capability:** SystemCapability.Communication.WiFi.STA
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<WifiLinkedInfo> | Returns Wi-Fi linked information. |
+
+
+## getLinkedInfo
+
+```TypeScript
+function getLinkedInfo(callback: AsyncCallback<WifiLinkedInfo>): void
+```
+
+Obtains information about a Wi-Fi connection.
+
+**Since:** 6
+
+**Deprecated since:** 9
+
+**Substitutes:** getLinkedInfo
+
+**Required permissions:** ohos.permission.GET_WIFI_INFO
+
+<!--Device-wifi-function getLinkedInfo(callback: AsyncCallback<WifiLinkedInfo>): void--><!--Device-wifi-function getLinkedInfo(callback: AsyncCallback<WifiLinkedInfo>): void-End-->
+
+**System capability:** SystemCapability.Communication.WiFi.STA
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<WifiLinkedInfo> | Yes |  |
+
+**Example**
+
+```TypeScript
+import wifi from '@ohos.wifi';
+
+wifi.getLinkedInfo((err, data:wifi.WifiLinkedInfo) => {
+    if (err) {
+        console.error("get linked info error");
+        return;
+    }
+    console.info("get wifi linked info: " + JSON.stringify(data));
+});
+
+wifi.getLinkedInfo().then(data => {
+    console.info("get wifi linked info: " + JSON.stringify(data));
+}).catch((error:number) => {
+    console.info("get linked info error");
+});
+
+```
+

@@ -1,0 +1,162 @@
+# getBundleName
+
+## getBundleName
+
+```TypeScript
+function getBundleName(agent: WantAgent, callback: AsyncCallback<string>): void
+```
+
+Obtains the bundle name of a WantAgent.
+
+**Since:** 7
+
+**Deprecated since:** 9
+
+**Substitutes:** getBundleName
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-wantAgent-function getBundleName(agent: WantAgent, callback: AsyncCallback<string>): void--><!--Device-wantAgent-function getBundleName(agent: WantAgent, callback: AsyncCallback<string>): void-End-->
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| agent | [WantAgent](../../apis-background-tasks-kit/arkts-apis/arkts-backgroundtasks-reminderagent-wantagent-i.md) | Yes | whose bundle name to obtain. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | A callback method to obtain the package name of the WantAgent instance. |
+
+**Example**
+
+```TypeScript
+import wantAgent, { WantAgent as _WantAgent } from '@ohos.wantAgent';
+import { BusinessError } from '@ohos.base';
+
+// WantAgent object
+let wantAgentObj: _WantAgent;
+
+// getWantAgent callback
+function getWantAgentCallback(err: BusinessError, data: _WantAgent) {
+    console.info('==========================>getWantAgentCallback=======================>');
+    if (err.code == 0) {
+        wantAgentObj = data;
+    } else {
+        console.error('getWantAgent failed, error: ' + JSON.stringify(err));
+        return;
+    }
+
+    // getBundleName callback
+    let getBundleNameCallback = (err: BusinessError, data: string) => {
+        console.info('==========================>getBundleNameCallback=======================>');
+    }
+    wantAgent.getBundleName(wantAgentObj, getBundleNameCallback);
+}
+
+wantAgent.getWantAgent({
+    wants: [
+        {
+            deviceId: 'deviceId',
+            bundleName: 'com.neu.setResultOnAbilityResultTest1',
+            abilityName: 'com.example.test.EntryAbility',
+            action: 'action1',
+            entities: ['entity1'],
+            type: 'MIMETYPE',
+            uri: 'key={true,true,false}',
+            parameters:
+            {
+                mykey0: 2222,
+                mykey1: [1, 2, 3],
+                mykey2: '[1, 2, 3]',
+                mykey3: 'ssssssssssssssssssssssssss',
+                mykey4: [false, true, false],
+                mykey5: ['qqqqq', 'wwwwww', 'aaaaaaaaaaaaaaaaa'],
+                mykey6: true,
+            }
+        }
+    ],
+    operationType: wantAgent.OperationType.START_ABILITY,
+    requestCode: 0,
+    wantAgentFlags:[wantAgent.WantAgentFlags.UPDATE_PRESENT_FLAG]
+}, getWantAgentCallback);
+
+```
+
+
+## getBundleName
+
+```TypeScript
+function getBundleName(agent: WantAgent): Promise<string>
+```
+
+Obtains the bundle name of a WantAgent.
+
+**Since:** 7
+
+**Deprecated since:** 9
+
+**Substitutes:** getBundleName
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-wantAgent-function getBundleName(agent: WantAgent): Promise<string>--><!--Device-wantAgent-function getBundleName(agent: WantAgent): Promise<string>-End-->
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| agent | [WantAgent](../../apis-background-tasks-kit/arkts-apis/arkts-backgroundtasks-reminderagent-wantagent-i.md) | Yes | whose bundle name to obtain. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Returns the bundle name of the {@link WantAgent} if any. |
+
+**Example**
+
+```TypeScript
+import wantAgent, { WantAgent as _WantAgent } from '@ohos.wantAgent';
+
+// WantAgent object
+let wantAgentObj: _WantAgent;
+
+wantAgent.getWantAgent({
+    wants: [
+        {
+            deviceId: 'deviceId',
+            bundleName: 'com.neu.setResultOnAbilityResultTest1',
+            abilityName: 'com.example.test.EntryAbility',
+            action: 'action1',
+            entities: ['entity1'],
+            type: 'MIMETYPE',
+            uri: 'key={true,true,false}',
+            parameters:
+            {
+                mykey0: 2222,
+                mykey1: [1, 2, 3],
+                mykey2: '[1, 2, 3]',
+                mykey3: 'ssssssssssssssssssssssssss',
+                mykey4: [false, true, false],
+                mykey5: ['qqqqq', 'wwwwww', 'aaaaaaaaaaaaaaaaa'],
+                mykey6: true,
+            }
+        }
+    ],
+    operationType: wantAgent.OperationType.START_ABILITY,
+    requestCode: 0,
+    wantAgentFlags:[wantAgent.WantAgentFlags.UPDATE_PRESENT_FLAG]
+}).then((data: _WantAgent) => {
+    console.info('==========================>getWantAgentCallback=======================>');
+    wantAgentObj = data;
+    if (wantAgentObj) {
+        wantAgent.getBundleName(wantAgentObj).then((data) => {
+            console.info('==========================>getBundleNameCallback=======================>');
+        });
+    }
+});
+
+```
+

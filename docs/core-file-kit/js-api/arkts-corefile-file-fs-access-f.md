@@ -12,15 +12,15 @@ import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventList
 declare function access(path: string, mode?: AccessModeType): Promise<boolean>
 ```
 
-Checks whether the file or directory exists or has the operation permission. This API uses a promise to return the
-result.
+Checks whether the file or directory exists or has the operation permission. This API uses a promise to return the result.
 
-If the read, write, or read and write permission verification fails, the error code 13900012 (Permission denied) will
-be thrown.
+If the read, write, or read and write permission verification fails, the error code 13900012 (Permission denied) will be thrown.
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-unnamed-declare function access(path: string, mode?: AccessModeType): Promise<boolean>--><!--Device-unnamed-declare function access(path: string, mode?: AccessModeType): Promise<boolean>-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
@@ -29,13 +29,13 @@ be thrown.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Application sandbox path of the file or directory. |
-| mode | AccessModeType | No | Permission on the file or directory to check. If this parameter is left blank, thesystem checks whether the file exists.<br>**Since:** 12 |
+| mode | [AccessModeType](arkts-corefile-file-fs-accessmodetype-e.md) | No | Permission on the file or directory to check. If this parameter is left blank, the system checks whether the file exists.<br>**Since:** 12 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;boolean&gt; | Promise used to return a Boolean value. The value **true** means the file exists; thevalue **false** means the opposite. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return a Boolean value. The value **true** means the file exists; the value **false** means the opposite. |
 
 **Error codes:**
 
@@ -67,6 +67,8 @@ Checks whether a file or directory exists. This API uses an asynchronous callbac
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-unnamed-declare function access(path: string, callback: AsyncCallback<boolean>): void--><!--Device-unnamed-declare function access(path: string, callback: AsyncCallback<boolean>): void-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
@@ -74,7 +76,7 @@ Checks whether a file or directory exists. This API uses an asynchronous callbac
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Application sandbox path of the file or directory. |
-| callback | AsyncCallback&lt;boolean&gt; | Yes | Callback used to return the result. The value **true** means the fileexists; the value **false** means the opposite. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. The value **true** means the file exists; the value **false** means the opposite. |
 
 **Error codes:**
 
@@ -100,13 +102,13 @@ Checks whether a file or directory exists. This API uses an asynchronous callbac
 declare function access(path: string, mode: AccessModeType, flag: AccessFlagType): Promise<boolean>
 ```
 
-Checks whether the file or directory is stored locally or has the operation permission. This API uses a promise to
-return the result.
+Checks whether the file or directory is stored locally or has the operation permission. This API uses a promise to return the result.
 
-If the read, write, or read and write permission verification fails, the error code 13900012 (Permission denied) will
-be thrown.
+If the read, write, or read and write permission verification fails, the error code 13900012 (Permission denied) will be thrown.
 
 **Since:** 12
+
+<!--Device-unnamed-declare function access(path: string, mode: AccessModeType, flag: AccessFlagType): Promise<boolean>--><!--Device-unnamed-declare function access(path: string, mode: AccessModeType, flag: AccessFlagType): Promise<boolean>-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
@@ -115,14 +117,14 @@ be thrown.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Application sandbox path of the file or directory. |
-| mode | AccessModeType | Yes | Permission on the file or directory to check. |
-| flag | AccessFlagType | Yes | Position of the file or directory to check. |
+| mode | [AccessModeType](arkts-corefile-file-fs-accessmodetype-e.md) | Yes | Permission on the file or directory to check. |
+| flag | [AccessFlagType](arkts-corefile-file-fs-accessflagtype-e.md) | Yes | Position of the file or directory to check. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;boolean&gt; | Promise used to return a Boolean value. The value **true** means the file or directoryis a local one and has the related permission. The value **false** means the file or directory does not exist oris on the cloud or a distributed device. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return a Boolean value. The value **true** means the file or directory is a local one and has the related permission. The value **false** means the file or directory does not exist or is on the cloud or a distributed device. |
 
 **Error codes:**
 

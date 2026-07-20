@@ -8,6 +8,8 @@ In addition to the [universal events](./common), the following events are suppor
 
 **Since:** 8
 
+<!--Device-unnamed-declare class DatePickerAttribute extends CommonMethod<DatePickerAttribute>--><!--Device-unnamed-declare class DatePickerAttribute extends CommonMethod<DatePickerAttribute>-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 ## canLoop
@@ -24,13 +26,15 @@ Sets whether to enable cyclic scrolling.
 
 **Atomic service API:** This API can be used in atomic services since API version 20.
 
+<!--Device-DatePickerAttribute-canLoop(isLoop: Optional<boolean>): DatePickerAttribute--><!--Device-DatePickerAttribute-canLoop(isLoop: Optional<boolean>): DatePickerAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| isLoop | Optional&lt;boolean&gt; | Yes | Whether to enable cyclic scrolling.<br>- **true**: Cyclic scrolling isenabled, where the year values increment or decrement with month cycling, and month values increment ordecrement with day cycling.<br>- **false**: Cyclic scrolling is disabled, preventing out-of-bounds scrollingin year, month, and day columns and cross-column value synchronization.<br>Default value: **true**.<br>If thevalue of **isLoop** is **undefined**, the default value is used. |
+| isLoop | [Optional](arkts-arkui-optional-t.md)<boolean> | Yes | Whether to enable cyclic scrolling.<br>- **true**: Cyclic scrolling is enabled, where the year values increment or decrement with month cycling, and month values increment or decrement with day cycling.<br>- **false**: Cyclic scrolling is disabled, preventing out-of-bounds scrolling in year, month, and day columns and cross-column value synchronization.<br>Default value: **true**.<br>If the value of **isLoop** is **undefined**, the default value is used. |
 
 ## digitalCrownSensitivity
 
@@ -46,13 +50,15 @@ Sets the sensitivity to the digital crown rotation.
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
 
+<!--Device-DatePickerAttribute-digitalCrownSensitivity(sensitivity: Optional<CrownSensitivity>): DatePickerAttribute--><!--Device-DatePickerAttribute-digitalCrownSensitivity(sensitivity: Optional<CrownSensitivity>): DatePickerAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| sensitivity | Optional&lt;CrownSensitivity&gt; | Yes | Sensitivity to the digital crown rotation.<br>Default value:**CrownSensitivity.MEDIUM** |
+| sensitivity | [Optional](arkts-arkui-optional-t.md)<CrownSensitivity> | Yes | Sensitivity to the digital crown rotation.<br>Default value:**CrownSensitivity.MEDIUM** |
 
 ## disappearTextStyle
 
@@ -68,13 +74,15 @@ Sets the text style for edge items (the second item above or below the selected 
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-DatePickerAttribute-disappearTextStyle(value: PickerTextStyle): DatePickerAttribute--><!--Device-DatePickerAttribute-disappearTextStyle(value: PickerTextStyle): DatePickerAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | PickerTextStyle | Yes | Text color, font size, and font weight for edge items.<br>Default value:<br>{<br>color: '#ff182431',<br>font: {<br>size: '14fp', <br>weight: FontWeight.Regular<br>}<br>} |
+| value | [PickerTextStyle](arkts-arkui-common-pickertextstyle-i.md) | Yes | Text color, font size, and font weight for edge items.<br>Default value:<br>{<br  >color: '#ff182431',<br>font: {<br>size: '14fp', <br>weight: FontWeight.Regular<br>}<br>} |
 
 ## disappearTextStyle
 
@@ -82,9 +90,7 @@ Sets the text style for edge items (the second item above or below the selected 
 disappearTextStyle(style: Optional<PickerTextStyle>)
 ```
 
-Sets the text style for edge items (the second item above or below the selected item). Compared to
-[disappearTextStyle<sup>10+</sup>](DatePickerAttribute#disappearTextStyle(value: PickerTextStyle)), this API
-supports the **undefined** type for the **style** parameter.
+Sets the text style for edge items (the second item above or below the selected item). Compared to [disappearTextStyle<sup>10+</sup>](DatePickerAttribute#disappearTextStyle(value: PickerTextStyle)), this API supports the **undefined** type for the **style** parameter.
 
 **Since:** 18
 
@@ -92,13 +98,15 @@ supports the **undefined** type for the **style** parameter.
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
 
+<!--Device-DatePickerAttribute-disappearTextStyle(style: Optional<PickerTextStyle>): DatePickerAttribute--><!--Device-DatePickerAttribute-disappearTextStyle(style: Optional<PickerTextStyle>): DatePickerAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| style | Optional&lt;PickerTextStyle&gt; | Yes | Text color, font size, and font weight for edge items.<br>Defaultvalue:<br>{<br>color: '#ff182431',<br>font: {<br>size: '14fp', <br>weight: FontWeight.Regular<br>}<br>}<br>Ifthe value of **style** is **undefined**, the default value is used. |
+| style | [Optional](arkts-arkui-optional-t.md)<PickerTextStyle> | Yes | Text color, font size, and font weight for edge items.<br>Default value:<br>{<br>color: '#ff182431',<br>font: {<br>size: '14fp', <br>weight: FontWeight.Regular<br>}<br>}<br>If the value of **style** is **undefined**, the default value is used. |
 
 ## enableHapticFeedback
 
@@ -114,13 +122,15 @@ Sets whether to enable haptic feedback.
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
 
+<!--Device-DatePickerAttribute-enableHapticFeedback(enable: Optional<boolean>): DatePickerAttribute--><!--Device-DatePickerAttribute-enableHapticFeedback(enable: Optional<boolean>): DatePickerAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| enable | Optional&lt;boolean&gt; | Yes | Whether to enable haptic feedback.<br>- **true**: Enable haptic feedback.<br>- **false**: Disable haptic feedback.<br>Default value: **true**.<br>Whether this parameter takes effect afterbeing set to **true** depends on hardware support.<br>If the value of **enable** is **undefined**, the defaultvalue is used. |
+| enable | [Optional](arkts-arkui-optional-t.md)<boolean> | Yes | Whether to enable haptic feedback.<br>- **true**: Enable haptic feedback.<br>  - **false**: Disable haptic feedback.<br>Default value: **true**.<br>Whether this parameter takes effect after being set to **true** depends on hardware support.<br>If the value of **enable** is **undefined**, the default value is used. |
 
 ## lunar
 
@@ -134,13 +144,15 @@ Sets whether to display dates in lunar calendar format.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-DatePickerAttribute-lunar(value: boolean): DatePickerAttribute--><!--Device-DatePickerAttribute-lunar(value: boolean): DatePickerAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | boolean | Yes | Whether to display dates in lunar calendar format.<br>- **true**: Display dates in lunarcalendar format.<br>- **false**: Do not display dates in lunar calendar format.<br>Default value: **false** |
+| value | boolean | Yes | Whether to display dates in lunar calendar format.<br>- **true**: Display dates in lunar calendar format.<br>- **false**: Do not display dates in lunar calendar format.<br>Default value: **false** |
 
 ## lunar
 
@@ -148,9 +160,7 @@ Sets whether to display dates in lunar calendar format.
 lunar(isLunar: Optional<boolean>)
 ```
 
-Sets whether to display dates in lunar calendar format. Compared to
-[lunar](DatePickerAttribute#lunar(value: boolean)), the **isLunar** parameter supports the **undefined**
-type.
+Sets whether to display dates in lunar calendar format. Compared to [lunar](DatePickerAttribute#lunar(value: boolean)), the **isLunar** parameter supports the **undefined** type.
 
 **Since:** 18
 
@@ -158,13 +168,15 @@ type.
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
 
+<!--Device-DatePickerAttribute-lunar(isLunar: Optional<boolean>): DatePickerAttribute--><!--Device-DatePickerAttribute-lunar(isLunar: Optional<boolean>): DatePickerAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| isLunar | Optional&lt;boolean&gt; | Yes | Whether to display dates in lunar calendar format.<br>- **true**: Displaydates in lunar calendar format.<br>- **false**: Do not display dates in lunar calendar format.<br>Defaultvalue: **false**<br>If the value of **isLunar** is **undefined**, the default value is used. |
+| isLunar | [Optional](arkts-arkui-optional-t.md)<boolean> | Yes | Whether to display dates in lunar calendar format.<br>- **true**: Display dates in lunar calendar format.<br>- **false**: Do not display dates in lunar calendar format.<br>Default value: **false**<br>If the value of **isLunar** is **undefined**, the default value is used. |
 
 ## onChange
 
@@ -172,11 +184,9 @@ type.
 onChange(callback: (value: DatePickerResult) => void)
 ```
 
-Triggered when the date picker snaps to the selected item. This event cannot be triggered by two-way bound state
-variables.
+Triggered when the date picker snaps to the selected item. This event cannot be triggered by two-way bound state variables.
 
-This API is supported since API version 8 and deprecated since API version 10. You are advised to use
-[onDateChange](DatePickerAttribute#onDateChange(callback: Callback<Date>)) instead.
+This API is supported since API version 8 and deprecated since API version 10. You are advised to use [onDateChange](DatePickerAttribute#onDateChange(callback: Callback<Date>)) instead.
 
 **Since:** 8
 
@@ -184,13 +194,15 @@ This API is supported since API version 8 and deprecated since API version 10. Y
 
 **Substitutes:** onDateChange(callback:
 
+<!--Device-DatePickerAttribute-onChange(callback: (value: DatePickerResult) => void): DatePickerAttribute--><!--Device-DatePickerAttribute-onChange(callback: (value: DatePickerResult) => void): DatePickerAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (value: DatePickerResult) =&gt; void | Yes | Selected time. |
+| callback | (value: DatePickerResult) => void | Yes | Selected time. |
 
 ## onDateChange
 
@@ -198,8 +210,7 @@ This API is supported since API version 8 and deprecated since API version 10. Y
 onDateChange(callback: Callback<Date>)
 ```
 
-Triggered when the date picker snaps to the selected item. This event cannot be triggered by two-way bound state
-variables.
+Triggered when the date picker snaps to the selected item. This event cannot be triggered by two-way bound state variables.
 
 **Since:** 10
 
@@ -207,13 +218,15 @@ variables.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-DatePickerAttribute-onDateChange(callback: Callback<Date>): DatePickerAttribute--><!--Device-DatePickerAttribute-onDateChange(callback: Callback<Date>): DatePickerAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Callback&lt;Date&gt; | Yes | Selected date, where the year, month, and day portions are subject to theselection, the hour and minute portions are subject to the current system time, and the second portion isalways **00**.<br>**Since:** 18 |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<Date> | Yes | Selected date, where the year, month, and day portions are subject to the selection, the hour and minute portions are subject to the current system time, and the second portion is always **00**.<br>**Since:** 18 |
 
 ## onDateChange
 
@@ -221,14 +234,11 @@ variables.
 onDateChange(callback: Optional<Callback<Date>>)
 ```
 
-Triggered when the date picker snaps to the selected item. This event cannot be triggered by two-way bound state
-variables. Compared to
-[onDateChange<sup>10+</sup>](DatePickerAttribute#onDateChange(callback: Callback<Date>)), this API supports
-the **undefined** type for the **callback** parameter.
+Triggered when the date picker snaps to the selected item. This event cannot be triggered by two-way bound state variables. Compared to [onDateChange<sup>10+</sup>](DatePickerAttribute#onDateChange(callback: Callback<Date>)), this API supports the **undefined** type for the **callback** parameter.
 
-> **NOTE**
->
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
+> **NOTE**  
+>  
+> This API can be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1) since API version 20.
 
 **Since:** 18
 
@@ -236,13 +246,15 @@ the **undefined** type for the **callback** parameter.
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
 
+<!--Device-DatePickerAttribute-onDateChange(callback: Optional<Callback<Date>>): DatePickerAttribute--><!--Device-DatePickerAttribute-onDateChange(callback: Optional<Callback<Date>>): DatePickerAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Optional&lt;Callback&lt;Date&gt;&gt; | Yes | Selected date, where the year, month, and day portions are subjectto the selection, the hour and minute portions are subject to the current system time, and the second portionis always **00**.<br>If **callback** is set to **undefined**, the callback function is not used. |
+| callback | [Optional](arkts-arkui-optional-t.md)<Callback<Date>> | Yes | Selected date, where the year, month, and day portions are subject to the selection, the hour and minute portions are subject to the current system time, and the second portion is always **00**.<br>If **callback** is set to **undefined**, the callback function is not used. |
 
 ## selectedTextStyle
 
@@ -258,13 +270,15 @@ Sets the text style for the selected item.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-DatePickerAttribute-selectedTextStyle(value: PickerTextStyle): DatePickerAttribute--><!--Device-DatePickerAttribute-selectedTextStyle(value: PickerTextStyle): DatePickerAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | PickerTextStyle | Yes | Font color, font size, and font weight of the selected item.<br>Default value:&lt;br&gt;{<br>color: '#ff007dff',<br>font: {<br>size: '20fp', <br>weight: FontWeight.Medium<br>}<br>} |
+| value | [PickerTextStyle](arkts-arkui-common-pickertextstyle-i.md) | Yes | Font color, font size, and font weight of the selected item.<br>Default value:<br>{<br>color: '#ff007dff',<br>font: {<br>size: '20fp', <br>weight: FontWeight.Medium<br>}<br>} |
 
 ## selectedTextStyle
 
@@ -272,9 +286,7 @@ Sets the text style for the selected item.
 selectedTextStyle(style: Optional<PickerTextStyle>)
 ```
 
-Sets the text style for the selected item. Compared to
-[selectedTextStyle<sup>10+</sup>](DatePickerAttribute#selectedTextStyle(value: PickerTextStyle)), this API
-supports the **undefined** type for the **style** parameter.
+Sets the text style for the selected item. Compared to [selectedTextStyle<sup>10+</sup>](DatePickerAttribute#selectedTextStyle(value: PickerTextStyle)), this API supports the **undefined** type for the **style** parameter.
 
 **Since:** 18
 
@@ -282,13 +294,15 @@ supports the **undefined** type for the **style** parameter.
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
 
+<!--Device-DatePickerAttribute-selectedTextStyle(style: Optional<PickerTextStyle>): DatePickerAttribute--><!--Device-DatePickerAttribute-selectedTextStyle(style: Optional<PickerTextStyle>): DatePickerAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| style | Optional&lt;PickerTextStyle&gt; | Yes | Font color, font size, and font weight of the selected item.<br>Default value:<br>{<br>color: '#ff007dff',<br>font: {<br>size: '20fp', <br>weight: FontWeight.Medium<br>}<br>}&lt;br&gt;If the value of **style** is **undefined**, the default value is used. |
+| style | [Optional](arkts-arkui-optional-t.md)<PickerTextStyle> | Yes | Font color, font size, and font weight of the selected item.<br>Default value:<br>{<br>color: '#ff007dff',<br>font: {<br>size: '20fp', <br>weight: FontWeight.Medium<br>}<br>}<br>If the value of **style** is **undefined**, the default value is used. |
 
 ## textStyle
 
@@ -304,13 +318,15 @@ Sets the text style for candidate items (the first item immediately above or bel
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-DatePickerAttribute-textStyle(value: PickerTextStyle): DatePickerAttribute--><!--Device-DatePickerAttribute-textStyle(value: PickerTextStyle): DatePickerAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | PickerTextStyle | Yes | Text color, font size, and font weight for candidate items.<br>Default value:<br>{<br>color: '#ff182431',<br>font: {<br>size: '16fp', <br>weight: FontWeight.Regular<br>}<br>} |
+| value | [PickerTextStyle](arkts-arkui-common-pickertextstyle-i.md) | Yes | Text color, font size, and font weight for candidate items.<br>Default value:<br  >{<br>color: '#ff182431',<br>font: {<br>size: '16fp', <br>weight: FontWeight.Regular<br>}<br>} |
 
 ## textStyle
 
@@ -318,9 +334,7 @@ Sets the text style for candidate items (the first item immediately above or bel
 textStyle(style: Optional<PickerTextStyle>)
 ```
 
-Sets the text style for candidate items (the first item immediately above or below the selected item). Compared to
-[textStyle<sup>10+</sup>](DatePickerAttribute#textStyle(value: PickerTextStyle)), this API supports the
-**undefined** type for the **style** parameter.
+Sets the text style for candidate items (the first item immediately above or below the selected item). Compared to [textStyle<sup>10+</sup>](DatePickerAttribute#textStyle(value: PickerTextStyle)), this API supports the **undefined** type for the **style** parameter.
 
 **Since:** 18
 
@@ -328,11 +342,13 @@ Sets the text style for candidate items (the first item immediately above or bel
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
 
+<!--Device-DatePickerAttribute-textStyle(style: Optional<PickerTextStyle>): DatePickerAttribute--><!--Device-DatePickerAttribute-textStyle(style: Optional<PickerTextStyle>): DatePickerAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| style | Optional&lt;PickerTextStyle&gt; | Yes | Text color, font size, and font weight for candidate items.<br>Defaultvalue:<br>{<br>color: '#ff182431',<br>font: {<br>size: '16fp', <br>weight: FontWeight.Regular<br>}<br>}<br>Ifthe value of **style** is **undefined**, the default value is used. |
+| style | [Optional](arkts-arkui-optional-t.md)<PickerTextStyle> | Yes | Text color, font size, and font weight for candidate items.<br>Default value:<br>{<br>color: '#ff182431',<br>font: {<br>size: '16fp', <br>weight: FontWeight.Regular<br>}<br>}<br>If the value of **style** is **undefined**, the default value is used. |
 

@@ -16,6 +16,8 @@ Duplicates the file descriptor and returns the corresponding **File** object.
 
 **Since:** 10
 
+<!--Device-unnamed-declare function dup(fd: number): File--><!--Device-unnamed-declare function dup(fd: number): File-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
@@ -28,7 +30,7 @@ Duplicates the file descriptor and returns the corresponding **File** object.
 
 | Type | Description |
 | --- | --- |
-| File | File object opened. |
+| [File](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-request-file-i.md) | File object opened. |
 
 **Error codes:**
 

@@ -12,6 +12,8 @@ Changes the file permissions based on the file descriptor. This API returns the 
 
 **Deprecated since:** 9
 
+<!--Device-unnamed-declare function fchmodSync(fd: number, mode: number): void--><!--Device-unnamed-declare function fchmodSync(fd: number, mode: number): void-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
@@ -19,5 +21,5 @@ Changes the file permissions based on the file descriptor. This API returns the 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | fd | number | Yes | File descriptor of the target file. |
-| mode | number | Yes | Permissions on the file. You can specify multiple permissions, separated using a bitwise ORoperator (\|).<br>- **0o700**: The owner has the read, write, and execute permissions.<br>- **0o400**: The ownerhas the read permission.<br>- **0o200**: The owner has the write permission.<br>- **0o100**: The owner has theexecute permission.<br>- **0o070**: The user group has the read, write, and execute permissions.<br>- **0o040**:The user group has the read permission.<br>- **0o020**: The user group has the write permission.<br>- **0o010**:The user group has the execute permission.<br>- **0o007**: Other users have the read, write, and executepermissions.<br>- **0o004**: Other users have the read permission.<br>- **0o002**: Other users have the writepermission.<br>- **0o001**: Other users have the execute permission. |
+| mode | number | Yes | Permissions on the file. You can specify multiple permissions, separated using a bitwise OR operator (\|).<br>- **0o700**: The owner has the read, write, and execute permissions.<br>- **0o400**: The owner has the read permission.<br>- **0o200**: The owner has the write permission.<br>- **0o100**: The owner has the execute permission.<br>- **0o070**: The user group has the read, write, and execute permissions.<br>- **0o040**:The user group has the read permission.<br>- **0o020**: The user group has the write permission.<br>- **0o010**:The user group has the execute permission.<br>- **0o007**: Other users have the read, write, and execute permissions.<br>- **0o004**: Other users have the read permission.<br>- **0o002**: Other users have the write permission.<br>- **0o001**: Other users have the execute permission. |
 

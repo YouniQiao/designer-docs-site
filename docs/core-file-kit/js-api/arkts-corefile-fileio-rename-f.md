@@ -14,6 +14,8 @@ Renames a file. This API uses a promise to return the result.
 
 **Substitutes:** [fs:rename](arkts-corefile-file-fs-rename-f.md#rename-1)
 
+<!--Device-unnamed-declare function rename(oldPath: string, newPath: string): Promise<void>--><!--Device-unnamed-declare function rename(oldPath: string, newPath: string): Promise<void>-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
@@ -27,7 +29,7 @@ Renames a file. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 
 ## rename
@@ -44,6 +46,8 @@ Renames a file. This API uses an asynchronous callback to return the result.
 
 **Substitutes:** [fs:rename](arkts-corefile-file-fs-rename-f.md#rename-1)
 
+<!--Device-unnamed-declare function rename(oldPath: string, newPath: string, callback: AsyncCallback<void>): void--><!--Device-unnamed-declare function rename(oldPath: string, newPath: string, callback: AsyncCallback<void>): void-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
@@ -52,5 +56,5 @@ Renames a file. This API uses an asynchronous callback to return the result.
 | --- | --- | --- | --- |
 | oldPath | string | Yes | Application sandbox path of the file to rename. |
 | newPath | string | Yes | Application sandbox path of the file renamed. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback invoked when the file is asynchronously renamed. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback invoked when the file is asynchronously renamed. |
 

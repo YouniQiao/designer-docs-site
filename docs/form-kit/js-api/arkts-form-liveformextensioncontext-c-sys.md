@@ -1,12 +1,12 @@
 # LiveFormExtensionContext
 
-**LiveFormExtensionContext**, inherited from
-[ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md), is the context of
-[LiveFormExtensionAbility](arkts-app-form-liveformextensionability.md).
+**LiveFormExtensionContext**, inherited from [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md), is the context of [LiveFormExtensionAbility](arkts-app-form-liveformextensionability.md).
 
 **Inheritance/Implementation:** LiveFormExtensionContext extends [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md)
 
 **Since:** 20
+
+<!--Device-unnamed-declare class LiveFormExtensionContext extends ExtensionContext--><!--Device-unnamed-declare class LiveFormExtensionContext extends ExtensionContext-End-->
 
 **System capability:** SystemCapability.Ability.Form
 
@@ -16,13 +16,13 @@
 public connectServiceExtensionAbility(want: Want, connection: ConnectOptions): number
 ```
 
-Connect a service extension ability.The destination of the connection must be a service extension.
-You must implement the {@link ConnectOptions} interface to obtain the proxy of the target
-service extension when the Service extension is connected.
+Connect a service extension ability.The destination of the connection must be a service extension.You must implement the {@link ConnectOptions} interface to obtain the proxy of the target service extension when the Service extension is connected.
 
 **Since:** 21
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-LiveFormExtensionContext-public connectServiceExtensionAbility(want: Want, connection: ConnectOptions): long--><!--Device-LiveFormExtensionContext-public connectServiceExtensionAbility(want: Want, connection: ConnectOptions): long-End-->
 
 **System capability:** SystemCapability.Ability.Form
 
@@ -32,8 +32,8 @@ service extension when the Service extension is connected.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Indicates the service extension to connect. |
-| connection | ConnectOptions | Yes | Indicates the callback of connection. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Indicates the service extension to connect. |
+| connection | [ConnectOptions](../../apis-ability-kit/arkts-apis/arkts-ability-ability-connectoptions-t.md) | Yes | Indicates the callback of connection. |
 
 **Return value:**
 
@@ -62,6 +62,8 @@ Disconnect an ability to a service extension, in contrast to {@link connectServi
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-LiveFormExtensionContext-public disconnectServiceExtensionAbility(connectionId: long): Promise<void>--><!--Device-LiveFormExtensionContext-public disconnectServiceExtensionAbility(connectionId: long): Promise<void>-End-->
+
 **System capability:** SystemCapability.Ability.Form
 
 **System API:** This is a system API.
@@ -76,7 +78,7 @@ Disconnect an ability to a service extension, in contrast to {@link connectServi
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | The promise returned by the function. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
 
 **Error codes:**
 

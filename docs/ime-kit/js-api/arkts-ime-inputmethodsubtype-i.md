@@ -1,10 +1,10 @@
 # InputMethodSubtype
 
-The **InputMethodSubtype** module provides APIs for managing the attributes of input method subtypes. The input
-method subtype allows the input method to switch to a specific mode or language, for example, the Chinese or English
-keyboard.
+The **InputMethodSubtype** module provides APIs for managing the attributes of input method subtypes. The input method subtype allows the input method to switch to a specific mode or language, for example, the Chinese or English keyboard.
 
 **Since:** 9
+
+<!--Device-unnamed-export default interface InputMethodSubtype--><!--Device-unnamed-export default interface InputMethodSubtype-End-->
 
 **System capability:** SystemCapability.MiscServices.InputMethodFramework
 
@@ -24,12 +24,14 @@ Mandatory. Extra information of the input method subtype.
 
 **NOTE**
 
-- This parameter is optional since API version 10.
+- This parameter is optional since API version 10.  
 - This parameter is reserved and currently has no specific meaning.
 
 **Type:** object
 
 **Since:** 9
+
+<!--Device-InputMethodSubtype-extra?: object--><!--Device-InputMethodSubtype-extra?: object-End-->
 
 **System capability:** SystemCapability.MiscServices.InputMethodFramework
 
@@ -45,6 +47,8 @@ Optional. Icon of the input method subtype. It can be obtained by using **iconId
 
 **Since:** 9
 
+<!--Device-InputMethodSubtype-readonly icon?: string--><!--Device-InputMethodSubtype-readonly icon?: string-End-->
+
 **System capability:** SystemCapability.MiscServices.InputMethodFramework
 
 ## iconId
@@ -58,6 +62,8 @@ Optional. Icon ID of the input method subtype.
 **Type:** number
 
 **Since:** 9
+
+<!--Device-InputMethodSubtype-readonly iconId?: double--><!--Device-InputMethodSubtype-readonly iconId?: double-End-->
 
 **System capability:** SystemCapability.MiscServices.InputMethodFramework
 
@@ -73,6 +79,8 @@ Mandatory. ID of the input method subtype.
 
 **Since:** 9
 
+<!--Device-InputMethodSubtype-readonly id: string--><!--Device-InputMethodSubtype-readonly id: string-End-->
+
 **System capability:** SystemCapability.MiscServices.InputMethodFramework
 
 ## label
@@ -86,6 +94,8 @@ Optional. Label of the input method subtype.
 **Type:** string
 
 **Since:** 9
+
+<!--Device-InputMethodSubtype-readonly label?: string--><!--Device-InputMethodSubtype-readonly label?: string-End-->
 
 **System capability:** SystemCapability.MiscServices.InputMethodFramework
 
@@ -101,6 +111,8 @@ Optional. Label ID of the input method subtype.
 
 **Since:** 10
 
+<!--Device-InputMethodSubtype-readonly labelId?: double--><!--Device-InputMethodSubtype-readonly labelId?: double-End-->
+
 **System capability:** SystemCapability.MiscServices.InputMethodFramework
 
 ## language
@@ -114,6 +126,8 @@ Mandatory. Language of the input method subtype.
 **Type:** string
 
 **Since:** 9
+
+<!--Device-InputMethodSubtype-readonly language: string--><!--Device-InputMethodSubtype-readonly language: string-End-->
 
 **System capability:** SystemCapability.MiscServices.InputMethodFramework
 
@@ -129,6 +143,8 @@ Mandatory. Locale of the input method subtype.
 
 **Since:** 9
 
+<!--Device-InputMethodSubtype-readonly locale: string--><!--Device-InputMethodSubtype-readonly locale: string-End-->
+
 **System capability:** SystemCapability.MiscServices.InputMethodFramework
 
 ## mode
@@ -143,6 +159,8 @@ Optional. Mode of the input method subtype, including **upper** (uppercase) and 
 
 **Since:** 9
 
+<!--Device-InputMethodSubtype-readonly mode?: 'upper' | 'lower'--><!--Device-InputMethodSubtype-readonly mode?: 'upper' | 'lower'-End-->
+
 **System capability:** SystemCapability.MiscServices.InputMethodFramework
 
 ## name
@@ -156,6 +174,8 @@ Mandatory. Bundle name of the application to which the input method subtype belo
 **Type:** string
 
 **Since:** 9
+
+<!--Device-InputMethodSubtype-readonly name: string--><!--Device-InputMethodSubtype-readonly name: string-End-->
 
 **System capability:** SystemCapability.MiscServices.InputMethodFramework
 

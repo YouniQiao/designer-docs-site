@@ -6,6 +6,8 @@ In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkt
 
 **Since:** 7
 
+<!--Device-unnamed-declare class HyperlinkAttribute extends CommonMethod<HyperlinkAttribute>--><!--Device-unnamed-declare class HyperlinkAttribute extends CommonMethod<HyperlinkAttribute>-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 ## color
@@ -19,6 +21,8 @@ Sets the color of the hyperlink text.
 **Since:** 7
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-HyperlinkAttribute-color(value: Color | number | string | Resource): HyperlinkAttribute--><!--Device-HyperlinkAttribute-color(value: Color | number | string | Resource): HyperlinkAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

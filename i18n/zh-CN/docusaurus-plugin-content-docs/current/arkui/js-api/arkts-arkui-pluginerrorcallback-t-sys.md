@@ -4,12 +4,13 @@
 declare type PluginErrorCallback = (info: PluginErrorData) => void
 ```
 
-发生错误时触发的回调。
-AnonyMous Object Rectification
+发生错误时触发的回调。AnonyMous Object Rectification
 
 **起始版本：** 18
 
 **模型约束：** 此接口仅可在Stage模型下使用。
+
+<!--Device-unnamed-declare type PluginErrorCallback = (info: PluginErrorData) => void--><!--Device-unnamed-declare type PluginErrorCallback = (info: PluginErrorData) => void-End-->
 
 **系统能力：** SystemCapability.ArkUI.ArkUI.Full
 

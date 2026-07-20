@@ -1,400 +1,400 @@
 # ArkTS API<!--arkts-networkkit-->
 
 - [@ohos.app.ability.VpnExtensionAbility](arkts-app-ability-vpnextensionability.md)
-  - [VpnExtensionAbility](arkts-network-vpnextensionability-c.md)
+  - [VpnExtensionAbility](arkts-network-app-ability-vpnextensionability-vpnextensionability-c.md)
 - [@ohos.net.connection](arkts-net-connection.md)
-  - [addCustomDnsRule](arkts-network-addcustomdnsrule-f.md)<!--Del-->
-  - [addVlanIp(system api)](arkts-network-addvlanip-f-sys.md)<!--DelEnd-->
-  - [clearCustomDnsRules](arkts-network-clearcustomdnsrules-f.md)
-  - [createNetConnection](arkts-network-createnetconnection-f.md)<!--Del-->
-  - [createVlanInterface(system api)](arkts-network-createvlaninterface-f-sys.md)<!--DelEnd--><!--Del-->
-  - [deleteVlanIp(system api)](arkts-network-deletevlanip-f-sys.md)<!--DelEnd--><!--Del-->
-  - [destroyVlanInterface(system api)](arkts-network-destroyvlaninterface-f-sys.md)<!--DelEnd--><!--Del-->
-  - [disableAirplaneMode(system api)](arkts-network-disableairplanemode-f-sys.md)<!--DelEnd--><!--Del-->
-  - [enableAirplaneMode(system api)](arkts-network-enableairplanemode-f-sys.md)<!--DelEnd--><!--Del-->
-  - [factoryReset(system api)](arkts-network-factoryreset-f-sys.md)<!--DelEnd-->
-  - [findProxyForUrl](arkts-network-findproxyforurl-f.md)
-  - [getAddressesByName](arkts-network-getaddressesbyname-f.md)
-  - [getAddressesByNameWithOptions](arkts-network-getaddressesbynamewithoptions-f.md)
-  - [getAllNets](arkts-network-getallnets-f.md)
-  - [getAllNetsSync](arkts-network-getallnetssync-f.md)
-  - [getAppNet](arkts-network-getappnet-f.md)
-  - [getAppNetSync](arkts-network-getappnetsync-f.md)
-  - [getConnectionProperties](arkts-network-getconnectionproperties-f.md)
-  - [getConnectionPropertiesSync](arkts-network-getconnectionpropertiessync-f.md)
-  - [getConnectOwnerUid](arkts-network-getconnectowneruid-f.md)
-  - [getConnectOwnerUidSync](arkts-network-getconnectowneruidsync-f.md)
-  - [getDefaultHttpProxy](arkts-network-getdefaulthttpproxy-f.md)
-  - [getDefaultNet](arkts-network-getdefaultnet-f.md)
-  - [getDefaultNetSync](arkts-network-getdefaultnetsync-f.md)
-  - [getDnsAscii](arkts-network-getdnsascii-f.md)
-  - [getDnsUnicode](arkts-network-getdnsunicode-f.md)<!--Del-->
-  - [getGlobalHttpProxy(system api)](arkts-network-getglobalhttpproxy-f-sys.md)<!--DelEnd-->
-  - [getIpNeighTable](arkts-network-getipneightable-f.md)
-  - [getNetCapabilities](arkts-network-getnetcapabilities-f.md)
-  - [getNetCapabilitiesSync](arkts-network-getnetcapabilitiessync-f.md)
-  - [getNetExtAttribute](arkts-network-getnetextattribute-f.md)
-  - [getNetExtAttributeSync](arkts-network-getnetextattributesync-f.md)
-  - [getPacFileUrl](arkts-network-getpacfileurl-f.md)
-  - [getPacUrl](arkts-network-getpacurl-f.md)<!--Del-->
-  - [getProxyMode(system api)](arkts-network-getproxymode-f-sys.md)<!--DelEnd-->
-  - [getSystemNetPortStates](arkts-network-getsystemnetportstates-f.md)
-  - [hasDefaultNet](arkts-network-hasdefaultnet-f.md)
-  - [hasDefaultNetSync](arkts-network-hasdefaultnetsync-f.md)
-  - [isDefaultNetMetered](arkts-network-isdefaultnetmetered-f.md)
-  - [isDefaultNetMeteredSync](arkts-network-isdefaultnetmeteredsync-f.md)
-  - [queryProbeResult](arkts-network-queryproberesult-f.md)
-  - [queryTraceRoute](arkts-network-querytraceroute-f.md)
-  - [refreshGlobalHttpProxy](arkts-network-refreshglobalhttpproxy-f.md)
-  - [removeCustomDnsRule](arkts-network-removecustomdnsrule-f.md)
-  - [reportNetConnected](arkts-network-reportnetconnected-f.md)
-  - [reportNetDisconnected](arkts-network-reportnetdisconnected-f.md)
-  - [setAppHttpProxy](arkts-network-setapphttpproxy-f.md)
-  - [setAppNet](arkts-network-setappnet-f.md)<!--Del-->
-  - [setGlobalHttpProxy(system api)](arkts-network-setglobalhttpproxy-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setInterfaceUp(system api)](arkts-network-setinterfaceup-f-sys.md)<!--DelEnd-->
-  - [setNetExtAttribute](arkts-network-setnetextattribute-f.md)
-  - [setNetExtAttributeSync](arkts-network-setnetextattributesync-f.md)
-  - [setPacFileUrl](arkts-network-setpacfileurl-f.md)
-  - [setPacUrl](arkts-network-setpacurl-f.md)<!--Del-->
-  - [setProxyMode(system api)](arkts-network-setproxymode-f-sys.md)<!--DelEnd-->
-  - [ConnectionProperties](arkts-network-connectionproperties-i.md)
-  - [HttpProxy](arkts-network-httpproxy-i.md)
-  - [LinkAddress](arkts-network-linkaddress-i.md)
-  - [NetAddress](arkts-network-netaddress-i.md)
-  - [NetBlockStatusInfo](arkts-network-netblockstatusinfo-i.md)
-  - [NetCapabilities](arkts-network-netcapabilities-i.md)
-  - [NetCapabilityInfo](arkts-network-netcapabilityinfo-i.md)
-  - [NetConnection](arkts-network-netconnection-i.md)
-  - [NetConnectionPropertyInfo](arkts-network-netconnectionpropertyinfo-i.md)
-  - [NetHandle](arkts-network-nethandle-i.md)
-  - [NetIpMacInfo](arkts-network-netipmacinfo-i.md)
-  - [NetPortStatesInfo](arkts-network-netportstatesinfo-i.md)
-  - [NetSpecifier](arkts-network-netspecifier-i.md)
-  - [ProbeResultInfo](arkts-network-proberesultinfo-i.md)
-  - [QueryOptions](arkts-network-queryoptions-i.md)
-  - [RouteInfo](arkts-network-routeinfo-i.md)
-  - [Socks5Proxy](arkts-network-socks5proxy-i.md)
-  - [TcpNetPortStatesInfo](arkts-network-tcpnetportstatesinfo-i.md)
-  - [TraceRouteInfo](arkts-network-tracerouteinfo-i.md)
-  - [TraceRouteOptions](arkts-network-tracerouteoptions-i.md)
-  - [UdpNetPortStatesInfo](arkts-network-udpnetportstatesinfo-i.md)
-  - [HttpRequest](arkts-network-httprequest-t.md)
-  - [TCPSocket](arkts-network-tcpsocket-t.md)
-  - [UDPSocket](arkts-network-udpsocket-t.md)
-  - [ConversionProcess](arkts-network-conversionprocess-e.md)
-  - [FamilyType](arkts-network-familytype-e.md)
-  - [NetBearType](arkts-network-netbeartype-e.md)
-  - [NetCap](arkts-network-netcap-e.md)
-  - [PacketsType](arkts-network-packetstype-e.md)
-  - [ProtocolType](arkts-network-protocoltype-e.md)<!--Del-->
-  - [ProxyMode(system api)](arkts-network-proxymode-e-sys.md)<!--DelEnd-->
-  - [Socks5DnsStrategy](arkts-network-socks5dnsstrategy-e.md)
-  - [TcpState](arkts-network-tcpstate-e.md)
+  - [addCustomDnsRule](arkts-network-connection-addcustomdnsrule-f.md)<!--Del-->
+  - [addVlanIp(system api)](arkts-network-connection-addvlanip-f-sys.md)<!--DelEnd-->
+  - [clearCustomDnsRules](arkts-network-connection-clearcustomdnsrules-f.md)
+  - [createNetConnection](arkts-network-connection-createnetconnection-f.md)<!--Del-->
+  - [createVlanInterface(system api)](arkts-network-connection-createvlaninterface-f-sys.md)<!--DelEnd--><!--Del-->
+  - [deleteVlanIp(system api)](arkts-network-connection-deletevlanip-f-sys.md)<!--DelEnd--><!--Del-->
+  - [destroyVlanInterface(system api)](arkts-network-connection-destroyvlaninterface-f-sys.md)<!--DelEnd--><!--Del-->
+  - [disableAirplaneMode(system api)](arkts-network-connection-disableairplanemode-f-sys.md)<!--DelEnd--><!--Del-->
+  - [enableAirplaneMode(system api)](arkts-network-connection-enableairplanemode-f-sys.md)<!--DelEnd--><!--Del-->
+  - [factoryReset(system api)](arkts-network-connection-factoryreset-f-sys.md)<!--DelEnd-->
+  - [findProxyForUrl](arkts-network-connection-findproxyforurl-f.md)
+  - [getAddressesByName](arkts-network-connection-getaddressesbyname-f.md)
+  - [getAddressesByNameWithOptions](arkts-network-connection-getaddressesbynamewithoptions-f.md)
+  - [getAllNets](arkts-network-connection-getallnets-f.md)
+  - [getAllNetsSync](arkts-network-connection-getallnetssync-f.md)
+  - [getAppNet](arkts-network-connection-getappnet-f.md)
+  - [getAppNetSync](arkts-network-connection-getappnetsync-f.md)
+  - [getConnectionProperties](arkts-network-connection-getconnectionproperties-f.md)
+  - [getConnectionPropertiesSync](arkts-network-connection-getconnectionpropertiessync-f.md)
+  - [getConnectOwnerUid](arkts-network-connection-getconnectowneruid-f.md)
+  - [getConnectOwnerUidSync](arkts-network-connection-getconnectowneruidsync-f.md)
+  - [getDefaultHttpProxy](arkts-network-connection-getdefaulthttpproxy-f.md)
+  - [getDefaultNet](arkts-network-connection-getdefaultnet-f.md)
+  - [getDefaultNetSync](arkts-network-connection-getdefaultnetsync-f.md)
+  - [getDnsAscii](arkts-network-connection-getdnsascii-f.md)
+  - [getDnsUnicode](arkts-network-connection-getdnsunicode-f.md)<!--Del-->
+  - [getGlobalHttpProxy(system api)](arkts-network-connection-getglobalhttpproxy-f-sys.md)<!--DelEnd-->
+  - [getIpNeighTable](arkts-network-connection-getipneightable-f.md)
+  - [getNetCapabilities](arkts-network-connection-getnetcapabilities-f.md)
+  - [getNetCapabilitiesSync](arkts-network-connection-getnetcapabilitiessync-f.md)
+  - [getNetExtAttribute](arkts-network-connection-getnetextattribute-f.md)
+  - [getNetExtAttributeSync](arkts-network-connection-getnetextattributesync-f.md)
+  - [getPacFileUrl](arkts-network-connection-getpacfileurl-f.md)
+  - [getPacUrl](arkts-network-connection-getpacurl-f.md)<!--Del-->
+  - [getProxyMode(system api)](arkts-network-connection-getproxymode-f-sys.md)<!--DelEnd-->
+  - [getSystemNetPortStates](arkts-network-connection-getsystemnetportstates-f.md)
+  - [hasDefaultNet](arkts-network-connection-hasdefaultnet-f.md)
+  - [hasDefaultNetSync](arkts-network-connection-hasdefaultnetsync-f.md)
+  - [isDefaultNetMetered](arkts-network-connection-isdefaultnetmetered-f.md)
+  - [isDefaultNetMeteredSync](arkts-network-connection-isdefaultnetmeteredsync-f.md)
+  - [queryProbeResult](arkts-network-connection-queryproberesult-f.md)
+  - [queryTraceRoute](arkts-network-connection-querytraceroute-f.md)
+  - [refreshGlobalHttpProxy](arkts-network-connection-refreshglobalhttpproxy-f.md)
+  - [removeCustomDnsRule](arkts-network-connection-removecustomdnsrule-f.md)
+  - [reportNetConnected](arkts-network-connection-reportnetconnected-f.md)
+  - [reportNetDisconnected](arkts-network-connection-reportnetdisconnected-f.md)
+  - [setAppHttpProxy](arkts-network-connection-setapphttpproxy-f.md)
+  - [setAppNet](arkts-network-connection-setappnet-f.md)<!--Del-->
+  - [setGlobalHttpProxy(system api)](arkts-network-connection-setglobalhttpproxy-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setInterfaceUp(system api)](arkts-network-connection-setinterfaceup-f-sys.md)<!--DelEnd-->
+  - [setNetExtAttribute](arkts-network-connection-setnetextattribute-f.md)
+  - [setNetExtAttributeSync](arkts-network-connection-setnetextattributesync-f.md)
+  - [setPacFileUrl](arkts-network-connection-setpacfileurl-f.md)
+  - [setPacUrl](arkts-network-connection-setpacurl-f.md)<!--Del-->
+  - [setProxyMode(system api)](arkts-network-connection-setproxymode-f-sys.md)<!--DelEnd-->
+  - [ConnectionProperties](arkts-network-connection-connectionproperties-i.md)
+  - [HttpProxy](arkts-network-connection-httpproxy-i.md)
+  - [LinkAddress](arkts-network-connection-linkaddress-i.md)
+  - [NetAddress](arkts-network-connection-netaddress-i.md)
+  - [NetBlockStatusInfo](arkts-network-connection-netblockstatusinfo-i.md)
+  - [NetCapabilities](arkts-network-connection-netcapabilities-i.md)
+  - [NetCapabilityInfo](arkts-network-connection-netcapabilityinfo-i.md)
+  - [NetConnection](arkts-network-connection-netconnection-i.md)
+  - [NetConnectionPropertyInfo](arkts-network-connection-netconnectionpropertyinfo-i.md)
+  - [NetHandle](arkts-network-connection-nethandle-i.md)
+  - [NetIpMacInfo](arkts-network-connection-netipmacinfo-i.md)
+  - [NetPortStatesInfo](arkts-network-connection-netportstatesinfo-i.md)
+  - [NetSpecifier](arkts-network-connection-netspecifier-i.md)
+  - [ProbeResultInfo](arkts-network-connection-proberesultinfo-i.md)
+  - [QueryOptions](arkts-network-connection-queryoptions-i.md)
+  - [RouteInfo](arkts-network-connection-routeinfo-i.md)
+  - [Socks5Proxy](arkts-network-connection-socks5proxy-i.md)
+  - [TcpNetPortStatesInfo](arkts-network-connection-tcpnetportstatesinfo-i.md)
+  - [TraceRouteInfo](arkts-network-connection-tracerouteinfo-i.md)
+  - [TraceRouteOptions](arkts-network-connection-tracerouteoptions-i.md)
+  - [UdpNetPortStatesInfo](arkts-network-connection-udpnetportstatesinfo-i.md)
+  - [HttpRequest](arkts-network-connection-httprequest-t.md)
+  - [TCPSocket](arkts-network-connection-tcpsocket-t.md)
+  - [UDPSocket](arkts-network-connection-udpsocket-t.md)
+  - [ConversionProcess](arkts-network-connection-conversionprocess-e.md)
+  - [FamilyType](arkts-network-connection-familytype-e.md)
+  - [NetBearType](arkts-network-connection-netbeartype-e.md)
+  - [NetCap](arkts-network-connection-netcap-e.md)
+  - [PacketsType](arkts-network-connection-packetstype-e.md)
+  - [ProtocolType](arkts-network-connection-protocoltype-e.md)<!--Del-->
+  - [ProxyMode(system api)](arkts-network-connection-proxymode-e-sys.md)<!--DelEnd-->
+  - [Socks5DnsStrategy](arkts-network-connection-socks5dnsstrategy-e.md)
+  - [TcpState](arkts-network-connection-tcpstate-e.md)
 - [@ohos.net.eap](arkts-net-eap.md)
-  - [logOffEthEap](arkts-network-logoffetheap-f.md)
-  - [regCustomEapHandler](arkts-network-regcustomeaphandler-f.md)
-  - [replyCustomEapData](arkts-network-replycustomeapdata-f.md)
-  - [startEthEap](arkts-network-startetheap-f.md)
-  - [unregCustomEapHandler](arkts-network-unregcustomeaphandler-f.md)
-  - [EapData](arkts-network-eapdata-i.md)
-  - [EthEapProfile](arkts-network-etheapprofile-i.md)
-  - [CustomResult](arkts-network-customresult-e.md)
-  - [EapMethod](arkts-network-eapmethod-e.md)
-  - [Phase2Method](arkts-network-phase2method-e.md)
+  - [logOffEthEap](arkts-network-eap-logoffetheap-f.md)
+  - [regCustomEapHandler](arkts-network-eap-regcustomeaphandler-f.md)
+  - [replyCustomEapData](arkts-network-eap-replycustomeapdata-f.md)
+  - [startEthEap](arkts-network-eap-startetheap-f.md)
+  - [unregCustomEapHandler](arkts-network-eap-unregcustomeaphandler-f.md)
+  - [EapData](arkts-network-eap-eapdata-i.md)
+  - [EthEapProfile](arkts-network-eap-etheapprofile-i.md)
+  - [CustomResult](arkts-network-eap-customresult-e.md)
+  - [EapMethod](arkts-network-eap-eapmethod-e.md)
+  - [Phase2Method](arkts-network-eap-phase2method-e.md)
 - [@ohos.net.ethernet](arkts-net-ethernet.md)<!--Del-->
-  - [disableEthernetInterface(system api)](arkts-network-disableethernetinterface-f-sys.md)<!--DelEnd--><!--Del-->
-  - [enableEthernetInterface(system api)](arkts-network-enableethernetinterface-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getAllActiveIfaces(system api)](arkts-network-getallactiveifaces-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getEthernetDeviceInfos(system api)](arkts-network-getethernetdeviceinfos-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getIfaceConfig(system api)](arkts-network-getifaceconfig-f-sys.md)<!--DelEnd-->
-  - [getMacAddress](arkts-network-getmacaddress-f.md)<!--Del-->
-  - [isEthernetEnabled(system api)](arkts-network-isethernetenabled-f-sys.md)<!--DelEnd--><!--Del-->
-  - [isIfaceActive(system api)](arkts-network-isifaceactive-f-sys.md)<!--DelEnd--><!--Del-->
-  - [off(system api)](arkts-network-off-f-sys.md)<!--DelEnd--><!--Del-->
-  - [on(system api)](arkts-network-on-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setIfaceConfig(system api)](arkts-network-setifaceconfig-f-sys.md)<!--DelEnd--><!--Del-->
-  - [EthernetDeviceInfos(system api)](arkts-network-ethernetdeviceinfos-i-sys.md)<!--DelEnd--><!--Del-->
-  - [InterfaceConfiguration(system api)](arkts-network-interfaceconfiguration-i-sys.md)<!--DelEnd--><!--Del-->
-  - [InterfaceStateInfo(system api)](arkts-network-interfacestateinfo-i-sys.md)<!--DelEnd-->
-  - [MacAddressInfo](arkts-network-macaddressinfo-i.md)
-  - [HttpProxy](arkts-network-httpproxy-t.md)<!--Del-->
-  - [DeviceConnectionType(system api)](arkts-network-deviceconnectiontype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [IPSetMode(system api)](arkts-network-ipsetmode-e-sys.md)<!--DelEnd-->
+  - [disableEthernetInterface(system api)](arkts-network-ethernet-disableethernetinterface-f-sys.md)<!--DelEnd--><!--Del-->
+  - [enableEthernetInterface(system api)](arkts-network-ethernet-enableethernetinterface-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getAllActiveIfaces(system api)](arkts-network-ethernet-getallactiveifaces-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getEthernetDeviceInfos(system api)](arkts-network-ethernet-getethernetdeviceinfos-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getIfaceConfig(system api)](arkts-network-ethernet-getifaceconfig-f-sys.md)<!--DelEnd-->
+  - [getMacAddress](arkts-network-ethernet-getmacaddress-f.md)<!--Del-->
+  - [isEthernetEnabled(system api)](arkts-network-ethernet-isethernetenabled-f-sys.md)<!--DelEnd--><!--Del-->
+  - [isIfaceActive(system api)](arkts-network-ethernet-isifaceactive-f-sys.md)<!--DelEnd--><!--Del-->
+  - [off(system api)](arkts-network-ethernet-off-f-sys.md)<!--DelEnd--><!--Del-->
+  - [on(system api)](arkts-network-ethernet-on-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setIfaceConfig(system api)](arkts-network-ethernet-setifaceconfig-f-sys.md)<!--DelEnd--><!--Del-->
+  - [EthernetDeviceInfos(system api)](arkts-network-ethernet-ethernetdeviceinfos-i-sys.md)<!--DelEnd--><!--Del-->
+  - [InterfaceConfiguration(system api)](arkts-network-ethernet-interfaceconfiguration-i-sys.md)<!--DelEnd--><!--Del-->
+  - [InterfaceStateInfo(system api)](arkts-network-ethernet-interfacestateinfo-i-sys.md)<!--DelEnd-->
+  - [MacAddressInfo](arkts-network-ethernet-macaddressinfo-i.md)
+  - [HttpProxy](arkts-network-ethernet-httpproxy-t.md)<!--Del-->
+  - [DeviceConnectionType(system api)](arkts-network-ethernet-deviceconnectiontype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [IPSetMode(system api)](arkts-network-ethernet-ipsetmode-e-sys.md)<!--DelEnd-->
 - [@ohos.net.http](arkts-net-http.md)
-  - [createHttp](arkts-network-createhttp-f.md)
-  - [createHttpResponseCache](arkts-network-createhttpresponsecache-f.md)
-  - [HttpInterceptorChain](arkts-network-httpinterceptorchain-c.md)
-  - [CertificatePinning](arkts-network-certificatepinning-i.md)
-  - [ClientCert](arkts-network-clientcert-i.md)
-  - [ConnectionExtraInfo](arkts-network-connectionextrainfo-i.md)
-  - [Credential](arkts-network-credential-i.md)
-  - [DataReceiveProgressInfo](arkts-network-datareceiveprogressinfo-i.md)
-  - [DataSendProgressInfo](arkts-network-datasendprogressinfo-i.md)
-  - [HttpInterceptor](arkts-network-httpinterceptor-i.md)
-  - [HttpRequest](arkts-network-httprequest-i.md)
-  - [HttpRequestContext](arkts-network-httprequestcontext-i.md)
-  - [HttpRequestOptions](arkts-network-httprequestoptions-i.md)
-  - [HttpResponse](arkts-network-httpresponse-i.md)
-  - [HttpResponseCache](arkts-network-httpresponsecache-i.md)
-  - [MultiFormData](arkts-network-multiformdata-i.md)
-  - [PerformanceTiming](arkts-network-performancetiming-i.md)
-  - [ServerAuthentication](arkts-network-serverauthentication-i.md)
-  - [TlsConfig](arkts-network-tlsconfig-i.md)
-  - [ValidationContext](arkts-network-validationcontext-i.md)
-  - [AuthenticationType](arkts-network-authenticationtype-t.md)
-  - [ChainContinue](arkts-network-chaincontinue-t.md)
-  - [CipherSuite](arkts-network-ciphersuite-t.md)
-  - [HttpProxy](arkts-network-httpproxy-t.md)
-  - [PathPreference](arkts-network-pathpreference-t.md)
-  - [QueryParamObject](arkts-network-queryparamobject-t.md)
-  - [QueryParamValue](arkts-network-queryparamvalue-t.md)
-  - [RemoteValidation](arkts-network-remotevalidation-t.md)
-  - [Socks5Proxy](arkts-network-socks5proxy-t.md)
-  - [SslType](arkts-network-ssltype-t.md)
-  - [TlsOptions](arkts-network-tlsoptions-t.md)
-  - [TlsV10CipherSuite](arkts-network-tlsv10ciphersuite-t.md)
-  - [TlsV10SpecificCipherSuite](arkts-network-tlsv10specificciphersuite-t.md)
-  - [TlsV11CipherSuite](arkts-network-tlsv11ciphersuite-t.md)
-  - [TlsV12CipherSuite](arkts-network-tlsv12ciphersuite-t.md)
-  - [TlsV12SpecificCipherSuite](arkts-network-tlsv12specificciphersuite-t.md)
-  - [TlsV13CipherSuite](arkts-network-tlsv13ciphersuite-t.md)
-  - [TlsV13SpecificCipherSuite](arkts-network-tlsv13specificciphersuite-t.md)
-  - [ValidationCallback](arkts-network-validationcallback-t.md)
-  - [X509Cert](arkts-network-x509cert-t.md)
-  - [AddressFamily](arkts-network-addressfamily-e.md)
-  - [CertType](arkts-network-certtype-e.md)
-  - [HttpDataType](arkts-network-httpdatatype-e.md)
-  - [HttpProtocol](arkts-network-httpprotocol-e.md)
-  - [InterceptorType](arkts-network-interceptortype-e.md)
-  - [RequestMethod](arkts-network-requestmethod-e.md)
-  - [ResponseCode](arkts-network-responsecode-e.md)
-  - [TlsVersion](arkts-network-tlsversion-e.md)
+  - [createHttp](arkts-network-http-createhttp-f.md)
+  - [createHttpResponseCache](arkts-network-http-createhttpresponsecache-f.md)
+  - [HttpInterceptorChain](arkts-network-http-httpinterceptorchain-c.md)
+  - [CertificatePinning](arkts-network-http-certificatepinning-i.md)
+  - [ClientCert](arkts-network-http-clientcert-i.md)
+  - [ConnectionExtraInfo](arkts-network-http-connectionextrainfo-i.md)
+  - [Credential](arkts-network-http-credential-i.md)
+  - [DataReceiveProgressInfo](arkts-network-http-datareceiveprogressinfo-i.md)
+  - [DataSendProgressInfo](arkts-network-http-datasendprogressinfo-i.md)
+  - [HttpInterceptor](arkts-network-http-httpinterceptor-i.md)
+  - [HttpRequest](arkts-network-http-httprequest-i.md)
+  - [HttpRequestContext](arkts-network-http-httprequestcontext-i.md)
+  - [HttpRequestOptions](arkts-network-http-httprequestoptions-i.md)
+  - [HttpResponse](arkts-network-http-httpresponse-i.md)
+  - [HttpResponseCache](arkts-network-http-httpresponsecache-i.md)
+  - [MultiFormData](arkts-network-http-multiformdata-i.md)
+  - [PerformanceTiming](arkts-network-http-performancetiming-i.md)
+  - [ServerAuthentication](arkts-network-http-serverauthentication-i.md)
+  - [TlsConfig](arkts-network-http-tlsconfig-i.md)
+  - [ValidationContext](arkts-network-http-validationcontext-i.md)
+  - [AuthenticationType](arkts-network-http-authenticationtype-t.md)
+  - [ChainContinue](arkts-network-http-chaincontinue-t.md)
+  - [CipherSuite](arkts-network-http-ciphersuite-t.md)
+  - [HttpProxy](arkts-network-http-httpproxy-t.md)
+  - [PathPreference](arkts-network-http-pathpreference-t.md)
+  - [QueryParamObject](arkts-network-http-queryparamobject-t.md)
+  - [QueryParamValue](arkts-network-http-queryparamvalue-t.md)
+  - [RemoteValidation](arkts-network-http-remotevalidation-t.md)
+  - [Socks5Proxy](arkts-network-http-socks5proxy-t.md)
+  - [SslType](arkts-network-http-ssltype-t.md)
+  - [TlsOptions](arkts-network-http-tlsoptions-t.md)
+  - [TlsV10CipherSuite](arkts-network-http-tlsv10ciphersuite-t.md)
+  - [TlsV10SpecificCipherSuite](arkts-network-http-tlsv10specificciphersuite-t.md)
+  - [TlsV11CipherSuite](arkts-network-http-tlsv11ciphersuite-t.md)
+  - [TlsV12CipherSuite](arkts-network-http-tlsv12ciphersuite-t.md)
+  - [TlsV12SpecificCipherSuite](arkts-network-http-tlsv12specificciphersuite-t.md)
+  - [TlsV13CipherSuite](arkts-network-http-tlsv13ciphersuite-t.md)
+  - [TlsV13SpecificCipherSuite](arkts-network-http-tlsv13specificciphersuite-t.md)
+  - [ValidationCallback](arkts-network-http-validationcallback-t.md)
+  - [X509Cert](arkts-network-http-x509cert-t.md)
+  - [AddressFamily](arkts-network-http-addressfamily-e.md)
+  - [CertType](arkts-network-http-certtype-e.md)
+  - [HttpDataType](arkts-network-http-httpdatatype-e.md)
+  - [HttpProtocol](arkts-network-http-httpprotocol-e.md)
+  - [InterceptorType](arkts-network-http-interceptortype-e.md)
+  - [RequestMethod](arkts-network-http-requestmethod-e.md)
+  - [ResponseCode](arkts-network-http-responsecode-e.md)
+  - [TlsVersion](arkts-network-http-tlsversion-e.md)
 - [@ohos.net.mdns](arkts-net-mdns.md)
-  - [addLocalService](arkts-network-addlocalservice-f.md)
-  - [createDiscoveryService](arkts-network-creatediscoveryservice-f.md)
-  - [removeLocalService](arkts-network-removelocalservice-f.md)
-  - [resolveLocalService](arkts-network-resolvelocalservice-f.md)
-  - [DiscoveryEventInfo](arkts-network-discoveryeventinfo-i.md)
-  - [DiscoveryService](arkts-network-discoveryservice-i.md)
-  - [LocalServiceInfo](arkts-network-localserviceinfo-i.md)
-  - [ServiceAttribute](arkts-network-serviceattribute-i.md)
-  - [NetAddress](arkts-network-netaddress-t.md)
-  - [MdnsError](arkts-network-mdnserror-e.md)
+  - [addLocalService](arkts-network-mdns-addlocalservice-f.md)
+  - [createDiscoveryService](arkts-network-mdns-creatediscoveryservice-f.md)
+  - [removeLocalService](arkts-network-mdns-removelocalservice-f.md)
+  - [resolveLocalService](arkts-network-mdns-resolvelocalservice-f.md)
+  - [DiscoveryEventInfo](arkts-network-mdns-discoveryeventinfo-i.md)
+  - [DiscoveryService](arkts-network-mdns-discoveryservice-i.md)
+  - [LocalServiceInfo](arkts-network-mdns-localserviceinfo-i.md)
+  - [ServiceAttribute](arkts-network-mdns-serviceattribute-i.md)
+  - [NetAddress](arkts-network-mdns-netaddress-t.md)
+  - [MdnsError](arkts-network-mdns-mdnserror-e.md)
 - [@ohos.net.netFirewall](arkts-net-netfirewall.md)
-  - [addNetFirewallRule](arkts-network-addnetfirewallrule-f.md)<!--Del-->
-  - [getInterceptedRecords(system api)](arkts-network-getinterceptedrecords-f-sys.md)<!--DelEnd-->
-  - [getNetFirewallPolicy](arkts-network-getnetfirewallpolicy-f.md)
-  - [getNetFirewallRule](arkts-network-getnetfirewallrule-f.md)
-  - [getNetFirewallRules](arkts-network-getnetfirewallrules-f.md)
-  - [removeNetFirewallRule](arkts-network-removenetfirewallrule-f.md)
-  - [setNetFirewallPolicy](arkts-network-setnetfirewallpolicy-f.md)
-  - [updateNetFirewallRule](arkts-network-updatenetfirewallrule-f.md)
-  - [FirewallRulePage](arkts-network-firewallrulepage-i.md)<!--Del-->
-  - [InterceptedRecord(system api)](arkts-network-interceptedrecord-i-sys.md)<!--DelEnd--><!--Del-->
-  - [InterceptedRecordPage(system api)](arkts-network-interceptedrecordpage-i-sys.md)<!--DelEnd-->
-  - [NetFirewallDnsParams](arkts-network-netfirewalldnsparams-i.md)
-  - [NetFirewallDomainParams](arkts-network-netfirewalldomainparams-i.md)
-  - [NetFirewallIpParams](arkts-network-netfirewallipparams-i.md)
-  - [NetFirewallPolicy](arkts-network-netfirewallpolicy-i.md)
-  - [NetFirewallPortParams](arkts-network-netfirewallportparams-i.md)
-  - [NetFirewallRule](arkts-network-netfirewallrule-i.md)
-  - [RequestParam](arkts-network-requestparam-i.md)
-  - [FirewallRuleAction](arkts-network-firewallruleaction-e.md)
-  - [NetFirewallOrderField](arkts-network-netfirewallorderfield-e.md)
-  - [NetFirewallOrderType](arkts-network-netfirewallordertype-e.md)
-  - [NetFirewallRuleDirection](arkts-network-netfirewallruledirection-e.md)
-  - [NetFirewallRuleType](arkts-network-netfirewallruletype-e.md)
+  - [addNetFirewallRule](arkts-network-netfirewall-addnetfirewallrule-f.md)<!--Del-->
+  - [getInterceptedRecords(system api)](arkts-network-netfirewall-getinterceptedrecords-f-sys.md)<!--DelEnd-->
+  - [getNetFirewallPolicy](arkts-network-netfirewall-getnetfirewallpolicy-f.md)
+  - [getNetFirewallRule](arkts-network-netfirewall-getnetfirewallrule-f.md)
+  - [getNetFirewallRules](arkts-network-netfirewall-getnetfirewallrules-f.md)
+  - [removeNetFirewallRule](arkts-network-netfirewall-removenetfirewallrule-f.md)
+  - [setNetFirewallPolicy](arkts-network-netfirewall-setnetfirewallpolicy-f.md)
+  - [updateNetFirewallRule](arkts-network-netfirewall-updatenetfirewallrule-f.md)
+  - [FirewallRulePage](arkts-network-netfirewall-firewallrulepage-i.md)<!--Del-->
+  - [InterceptedRecord(system api)](arkts-network-netfirewall-interceptedrecord-i-sys.md)<!--DelEnd--><!--Del-->
+  - [InterceptedRecordPage(system api)](arkts-network-netfirewall-interceptedrecordpage-i-sys.md)<!--DelEnd-->
+  - [NetFirewallDnsParams](arkts-network-netfirewall-netfirewalldnsparams-i.md)
+  - [NetFirewallDomainParams](arkts-network-netfirewall-netfirewalldomainparams-i.md)
+  - [NetFirewallIpParams](arkts-network-netfirewall-netfirewallipparams-i.md)
+  - [NetFirewallPolicy](arkts-network-netfirewall-netfirewallpolicy-i.md)
+  - [NetFirewallPortParams](arkts-network-netfirewall-netfirewallportparams-i.md)
+  - [NetFirewallRule](arkts-network-netfirewall-netfirewallrule-i.md)
+  - [RequestParam](arkts-network-netfirewall-requestparam-i.md)
+  - [FirewallRuleAction](arkts-network-netfirewall-firewallruleaction-e.md)
+  - [NetFirewallOrderField](arkts-network-netfirewall-netfirewallorderfield-e.md)
+  - [NetFirewallOrderType](arkts-network-netfirewall-netfirewallordertype-e.md)
+  - [NetFirewallRuleDirection](arkts-network-netfirewall-netfirewallruledirection-e.md)
+  - [NetFirewallRuleType](arkts-network-netfirewall-netfirewallruletype-e.md)
 - [@ohos.net.networkSecurity](arkts-net-networksecurity.md)
-  - [certVerification](arkts-network-certverification-f.md)
-  - [certVerificationSync](arkts-network-certverificationsync-f.md)
-  - [isCleartextPermitted](arkts-network-iscleartextpermitted-f.md)
-  - [isCleartextPermittedByHostName](arkts-network-iscleartextpermittedbyhostname-f.md)
-  - [verifyCertChain](arkts-network-verifycertchain-f.md)
-  - [CertBlob](arkts-network-certblob-i.md)
-  - [CertType](arkts-network-certtype-e.md)
+  - [certVerification](arkts-network-networksecurity-certverification-f.md)
+  - [certVerificationSync](arkts-network-networksecurity-certverificationsync-f.md)
+  - [isCleartextPermitted](arkts-network-networksecurity-iscleartextpermitted-f.md)
+  - [isCleartextPermittedByHostName](arkts-network-networksecurity-iscleartextpermittedbyhostname-f.md)
+  - [verifyCertChain](arkts-network-networksecurity-verifycertchain-f.md)
+  - [CertBlob](arkts-network-networksecurity-certblob-i.md)
+  - [CertType](arkts-network-networksecurity-certtype-e.md)
 - [@ohos.net.policy](arkts-net-policy.md)<!--Del-->
-  - [getBackgroundPolicyByUid(system api)](arkts-network-getbackgroundpolicybyuid-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getDeviceIdleTrustlist(system api)](arkts-network-getdeviceidletrustlist-f-sys.md)<!--DelEnd-->
-  - [getNetAccessPolicy](arkts-network-getnetaccesspolicy-f.md)<!--Del-->
-  - [getNetQuotaPolicies(system api)](arkts-network-getnetquotapolicies-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getNetworkAccessPolicy(system api)](arkts-network-getnetworkaccesspolicy-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getPolicyByUid(system api)](arkts-network-getpolicybyuid-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getPowerSaveTrustlist(system api)](arkts-network-getpowersavetrustlist-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getUidsByPolicy(system api)](arkts-network-getuidsbypolicy-f-sys.md)<!--DelEnd--><!--Del-->
-  - [isBackgroundAllowed(system api)](arkts-network-isbackgroundallowed-f-sys.md)<!--DelEnd--><!--Del-->
-  - [isUidNetAllowed(system api)](arkts-network-isuidnetallowed-f-sys.md)<!--DelEnd--><!--Del-->
-  - [off(system api)](arkts-network-off-f-sys.md)<!--DelEnd--><!--Del-->
-  - [on(system api)](arkts-network-on-f-sys.md)<!--DelEnd--><!--Del-->
-  - [resetPolicies(system api)](arkts-network-resetpolicies-f-sys.md)<!--DelEnd--><!--Del-->
-  - [restoreAllPolicies(system api)](arkts-network-restoreallpolicies-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setBackgroundAllowed(system api)](arkts-network-setbackgroundallowed-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setDeviceIdleTrustlist(system api)](arkts-network-setdeviceidletrustlist-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setNetQuotaPolicies(system api)](arkts-network-setnetquotapolicies-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setNetworkAccessPolicy(system api)](arkts-network-setnetworkaccesspolicy-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setPolicyByUid(system api)](arkts-network-setpolicybyuid-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setPowerSaveTrustlist(system api)](arkts-network-setpowersavetrustlist-f-sys.md)<!--DelEnd-->
-  - [showAppNetPolicySettings](arkts-network-showappnetpolicysettings-f.md)<!--Del-->
-  - [updateRemindPolicy(system api)](arkts-network-updateremindpolicy-f-sys.md)<!--DelEnd-->
-  - [NetAccessPolicy](arkts-network-netaccesspolicy-i.md)<!--Del-->
-  - [NetQuotaPolicy(system api)](arkts-network-netquotapolicy-i-sys.md)<!--DelEnd--><!--Del-->
-  - [NetUidPolicyInfo(system api)](arkts-network-netuidpolicyinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [NetUidRuleInfo(system api)](arkts-network-netuidruleinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [NetworkAccessPolicy(system api)](arkts-network-networkaccesspolicy-i-sys.md)<!--DelEnd--><!--Del-->
-  - [NetworkMatchRule(system api)](arkts-network-networkmatchrule-i-sys.md)<!--DelEnd--><!--Del-->
-  - [QuotaPolicy(system api)](arkts-network-quotapolicy-i-sys.md)<!--DelEnd--><!--Del-->
-  - [UidNetworkAccessPolicy(system api)](arkts-network-uidnetworkaccesspolicy-i-sys.md)<!--DelEnd-->
-  - [NetBearType](arkts-network-netbeartype-t.md)<!--Del-->
-  - [LimitAction(system api)](arkts-network-limitaction-e-sys.md)<!--DelEnd--><!--Del-->
-  - [NetBackgroundPolicy(system api)](arkts-network-netbackgroundpolicy-e-sys.md)<!--DelEnd--><!--Del-->
-  - [NetUidPolicy(system api)](arkts-network-netuidpolicy-e-sys.md)<!--DelEnd--><!--Del-->
-  - [NetUidRule(system api)](arkts-network-netuidrule-e-sys.md)<!--DelEnd--><!--Del-->
-  - [RemindType(system api)](arkts-network-remindtype-e-sys.md)<!--DelEnd-->
+  - [getBackgroundPolicyByUid(system api)](arkts-network-policy-getbackgroundpolicybyuid-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getDeviceIdleTrustlist(system api)](arkts-network-policy-getdeviceidletrustlist-f-sys.md)<!--DelEnd-->
+  - [getNetAccessPolicy](arkts-network-policy-getnetaccesspolicy-f.md)<!--Del-->
+  - [getNetQuotaPolicies(system api)](arkts-network-policy-getnetquotapolicies-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getNetworkAccessPolicy(system api)](arkts-network-policy-getnetworkaccesspolicy-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getPolicyByUid(system api)](arkts-network-policy-getpolicybyuid-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getPowerSaveTrustlist(system api)](arkts-network-policy-getpowersavetrustlist-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getUidsByPolicy(system api)](arkts-network-policy-getuidsbypolicy-f-sys.md)<!--DelEnd--><!--Del-->
+  - [isBackgroundAllowed(system api)](arkts-network-policy-isbackgroundallowed-f-sys.md)<!--DelEnd--><!--Del-->
+  - [isUidNetAllowed(system api)](arkts-network-policy-isuidnetallowed-f-sys.md)<!--DelEnd--><!--Del-->
+  - [off(system api)](arkts-network-policy-off-f-sys.md)<!--DelEnd--><!--Del-->
+  - [on(system api)](arkts-network-policy-on-f-sys.md)<!--DelEnd--><!--Del-->
+  - [resetPolicies(system api)](arkts-network-policy-resetpolicies-f-sys.md)<!--DelEnd--><!--Del-->
+  - [restoreAllPolicies(system api)](arkts-network-policy-restoreallpolicies-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setBackgroundAllowed(system api)](arkts-network-policy-setbackgroundallowed-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setDeviceIdleTrustlist(system api)](arkts-network-policy-setdeviceidletrustlist-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setNetQuotaPolicies(system api)](arkts-network-policy-setnetquotapolicies-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setNetworkAccessPolicy(system api)](arkts-network-policy-setnetworkaccesspolicy-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setPolicyByUid(system api)](arkts-network-policy-setpolicybyuid-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setPowerSaveTrustlist(system api)](arkts-network-policy-setpowersavetrustlist-f-sys.md)<!--DelEnd-->
+  - [showAppNetPolicySettings](arkts-network-policy-showappnetpolicysettings-f.md)<!--Del-->
+  - [updateRemindPolicy(system api)](arkts-network-policy-updateremindpolicy-f-sys.md)<!--DelEnd-->
+  - [NetAccessPolicy](arkts-network-policy-netaccesspolicy-i.md)<!--Del-->
+  - [NetQuotaPolicy(system api)](arkts-network-policy-netquotapolicy-i-sys.md)<!--DelEnd--><!--Del-->
+  - [NetUidPolicyInfo(system api)](arkts-network-policy-netuidpolicyinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [NetUidRuleInfo(system api)](arkts-network-policy-netuidruleinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [NetworkAccessPolicy(system api)](arkts-network-policy-networkaccesspolicy-i-sys.md)<!--DelEnd--><!--Del-->
+  - [NetworkMatchRule(system api)](arkts-network-policy-networkmatchrule-i-sys.md)<!--DelEnd--><!--Del-->
+  - [QuotaPolicy(system api)](arkts-network-policy-quotapolicy-i-sys.md)<!--DelEnd--><!--Del-->
+  - [UidNetworkAccessPolicy(system api)](arkts-network-policy-uidnetworkaccesspolicy-i-sys.md)<!--DelEnd-->
+  - [NetBearType](arkts-network-policy-netbeartype-t.md)<!--Del-->
+  - [LimitAction(system api)](arkts-network-policy-limitaction-e-sys.md)<!--DelEnd--><!--Del-->
+  - [NetBackgroundPolicy(system api)](arkts-network-policy-netbackgroundpolicy-e-sys.md)<!--DelEnd--><!--Del-->
+  - [NetUidPolicy(system api)](arkts-network-policy-netuidpolicy-e-sys.md)<!--DelEnd--><!--Del-->
+  - [NetUidRule(system api)](arkts-network-policy-netuidrule-e-sys.md)<!--DelEnd--><!--Del-->
+  - [RemindType(system api)](arkts-network-policy-remindtype-e-sys.md)<!--DelEnd-->
 - [@ohos.net.sharing](arkts-net-sharing.md)<!--Del-->
-  - [getSharableRegexes(system api)](arkts-network-getsharableregexes-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getSharingIfaces(system api)](arkts-network-getsharingifaces-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getSharingState(system api)](arkts-network-getsharingstate-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getStatsRxBytes(system api)](arkts-network-getstatsrxbytes-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getStatsTotalBytes(system api)](arkts-network-getstatstotalbytes-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getStatsTxBytes(system api)](arkts-network-getstatstxbytes-f-sys.md)<!--DelEnd--><!--Del-->
-  - [isSharing(system api)](arkts-network-issharing-f-sys.md)<!--DelEnd--><!--Del-->
-  - [isSharingSupported(system api)](arkts-network-issharingsupported-f-sys.md)<!--DelEnd--><!--Del-->
-  - [off(system api)](arkts-network-off-f-sys.md)<!--DelEnd--><!--Del-->
-  - [on(system api)](arkts-network-on-f-sys.md)<!--DelEnd--><!--Del-->
-  - [startSharing(system api)](arkts-network-startsharing-f-sys.md)<!--DelEnd--><!--Del-->
-  - [stopSharing(system api)](arkts-network-stopsharing-f-sys.md)<!--DelEnd--><!--Del-->
-  - [InterfaceSharingStateInfo(system api)](arkts-network-interfacesharingstateinfo-i-sys.md)<!--DelEnd-->
-  - [NetHandle](arkts-network-nethandle-t.md)<!--Del-->
-  - [SharingIfaceState(system api)](arkts-network-sharingifacestate-e-sys.md)<!--DelEnd--><!--Del-->
-  - [SharingIfaceType(system api)](arkts-network-sharingifacetype-e-sys.md)<!--DelEnd-->
+  - [getSharableRegexes(system api)](arkts-network-sharing-getsharableregexes-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getSharingIfaces(system api)](arkts-network-sharing-getsharingifaces-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getSharingState(system api)](arkts-network-sharing-getsharingstate-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getStatsRxBytes(system api)](arkts-network-sharing-getstatsrxbytes-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getStatsTotalBytes(system api)](arkts-network-sharing-getstatstotalbytes-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getStatsTxBytes(system api)](arkts-network-sharing-getstatstxbytes-f-sys.md)<!--DelEnd--><!--Del-->
+  - [isSharing(system api)](arkts-network-sharing-issharing-f-sys.md)<!--DelEnd--><!--Del-->
+  - [isSharingSupported(system api)](arkts-network-sharing-issharingsupported-f-sys.md)<!--DelEnd--><!--Del-->
+  - [off(system api)](arkts-network-sharing-off-f-sys.md)<!--DelEnd--><!--Del-->
+  - [on(system api)](arkts-network-sharing-on-f-sys.md)<!--DelEnd--><!--Del-->
+  - [startSharing(system api)](arkts-network-sharing-startsharing-f-sys.md)<!--DelEnd--><!--Del-->
+  - [stopSharing(system api)](arkts-network-sharing-stopsharing-f-sys.md)<!--DelEnd--><!--Del-->
+  - [InterfaceSharingStateInfo(system api)](arkts-network-sharing-interfacesharingstateinfo-i-sys.md)<!--DelEnd-->
+  - [NetHandle](arkts-network-sharing-nethandle-t.md)<!--Del-->
+  - [SharingIfaceState(system api)](arkts-network-sharing-sharingifacestate-e-sys.md)<!--DelEnd--><!--Del-->
+  - [SharingIfaceType(system api)](arkts-network-sharing-sharingifacetype-e-sys.md)<!--DelEnd-->
 - [@ohos.net.socket](arkts-net-socket.md)
-  - [constructLocalSocketInstance](arkts-network-constructlocalsocketinstance-f.md)
-  - [constructLocalSocketServerInstance](arkts-network-constructlocalsocketserverinstance-f.md)
-  - [constructMulticastSocketInstance](arkts-network-constructmulticastsocketinstance-f.md)
-  - [constructTCPSocketInstance](arkts-network-constructtcpsocketinstance-f.md)
-  - [constructTCPSocketServerInstance](arkts-network-constructtcpsocketserverinstance-f.md)
-  - [constructTLSSocketInstance](arkts-network-constructtlssocketinstance-f.md)
-  - [constructTLSSocketServerInstance](arkts-network-constructtlssocketserverinstance-f.md)
-  - [constructUDPSocketInstance](arkts-network-constructudpsocketinstance-f.md)
-  - [ExtraOptionsBase](arkts-network-extraoptionsbase-i.md)
-  - [LocalAddress](arkts-network-localaddress-i.md)
-  - [LocalConnectOptions](arkts-network-localconnectoptions-i.md)
-  - [LocalSendOptions](arkts-network-localsendoptions-i.md)
-  - [LocalSocket](arkts-network-localsocket-i.md)
-  - [LocalSocketConnection](arkts-network-localsocketconnection-i.md)
-  - [LocalSocketMessageInfo](arkts-network-localsocketmessageinfo-i.md)
-  - [LocalSocketServer](arkts-network-localsocketserver-i.md)
-  - [MulticastSocket](arkts-network-multicastsocket-i.md)
-  - [ProxyOptions](arkts-network-proxyoptions-i.md)
-  - [SocketMessageInfo](arkts-network-socketmessageinfo-i.md)
-  - [SocketRemoteInfo](arkts-network-socketremoteinfo-i.md)
-  - [SocketStateBase](arkts-network-socketstatebase-i.md)
-  - [TCPConnectOptions](arkts-network-tcpconnectoptions-i.md)
-  - [TCPExtraOptions](arkts-network-tcpextraoptions-i.md)
-  - [TCPSendOptions](arkts-network-tcpsendoptions-i.md)
-  - [TCPSocket](arkts-network-tcpsocket-i.md)
-  - [TCPSocketConnection](arkts-network-tcpsocketconnection-i.md)
-  - [TCPSocketServer](arkts-network-tcpsocketserver-i.md)
-  - [TLSConnectOptions](arkts-network-tlsconnectoptions-i.md)
-  - [TLSSecureOptions](arkts-network-tlssecureoptions-i.md)
-  - [TLSSocket](arkts-network-tlssocket-i.md)
-  - [TLSSocketConnection](arkts-network-tlssocketconnection-i.md)
-  - [TLSSocketServer](arkts-network-tlssocketserver-i.md)
-  - [UDPExtraOptions](arkts-network-udpextraoptions-i.md)
-  - [UDPSendOptions](arkts-network-udpsendoptions-i.md)
-  - [UDPSocket](arkts-network-udpsocket-i.md)
-  - [X509CertRawData](arkts-network-x509certrawdata-t.md)
-  - [Protocol](arkts-network-protocol-e.md)
-  - [ProxyTypes](arkts-network-proxytypes-e.md)
+  - [constructLocalSocketInstance](arkts-network-socket-constructlocalsocketinstance-f.md)
+  - [constructLocalSocketServerInstance](arkts-network-socket-constructlocalsocketserverinstance-f.md)
+  - [constructMulticastSocketInstance](arkts-network-socket-constructmulticastsocketinstance-f.md)
+  - [constructTCPSocketInstance](arkts-network-socket-constructtcpsocketinstance-f.md)
+  - [constructTCPSocketServerInstance](arkts-network-socket-constructtcpsocketserverinstance-f.md)
+  - [constructTLSSocketInstance](arkts-network-socket-constructtlssocketinstance-f.md)
+  - [constructTLSSocketServerInstance](arkts-network-socket-constructtlssocketserverinstance-f.md)
+  - [constructUDPSocketInstance](arkts-network-socket-constructudpsocketinstance-f.md)
+  - [ExtraOptionsBase](arkts-network-socket-extraoptionsbase-i.md)
+  - [LocalAddress](arkts-network-socket-localaddress-i.md)
+  - [LocalConnectOptions](arkts-network-socket-localconnectoptions-i.md)
+  - [LocalSendOptions](arkts-network-socket-localsendoptions-i.md)
+  - [LocalSocket](arkts-network-socket-localsocket-i.md)
+  - [LocalSocketConnection](arkts-network-socket-localsocketconnection-i.md)
+  - [LocalSocketMessageInfo](arkts-network-socket-localsocketmessageinfo-i.md)
+  - [LocalSocketServer](arkts-network-socket-localsocketserver-i.md)
+  - [MulticastSocket](arkts-network-socket-multicastsocket-i.md)
+  - [ProxyOptions](arkts-network-socket-proxyoptions-i.md)
+  - [SocketMessageInfo](arkts-network-socket-socketmessageinfo-i.md)
+  - [SocketRemoteInfo](arkts-network-socket-socketremoteinfo-i.md)
+  - [SocketStateBase](arkts-network-socket-socketstatebase-i.md)
+  - [TCPConnectOptions](arkts-network-socket-tcpconnectoptions-i.md)
+  - [TCPExtraOptions](arkts-network-socket-tcpextraoptions-i.md)
+  - [TCPSendOptions](arkts-network-socket-tcpsendoptions-i.md)
+  - [TCPSocket](arkts-network-socket-tcpsocket-i.md)
+  - [TCPSocketConnection](arkts-network-socket-tcpsocketconnection-i.md)
+  - [TCPSocketServer](arkts-network-socket-tcpsocketserver-i.md)
+  - [TLSConnectOptions](arkts-network-socket-tlsconnectoptions-i.md)
+  - [TLSSecureOptions](arkts-network-socket-tlssecureoptions-i.md)
+  - [TLSSocket](arkts-network-socket-tlssocket-i.md)
+  - [TLSSocketConnection](arkts-network-socket-tlssocketconnection-i.md)
+  - [TLSSocketServer](arkts-network-socket-tlssocketserver-i.md)
+  - [UDPExtraOptions](arkts-network-socket-udpextraoptions-i.md)
+  - [UDPSendOptions](arkts-network-socket-udpsendoptions-i.md)
+  - [UDPSocket](arkts-network-socket-udpsocket-i.md)
+  - [X509CertRawData](arkts-network-socket-x509certrawdata-t.md)
+  - [Protocol](arkts-network-socket-protocol-e.md)
+  - [ProxyTypes](arkts-network-socket-proxytypes-e.md)
 - [@ohos.net.statistics](arkts-net-statistics.md)
-  - [getAllRxBytes](arkts-network-getallrxbytes-f.md)
-  - [getAllTxBytes](arkts-network-getalltxbytes-f.md)
-  - [getCellularRxBytes](arkts-network-getcellularrxbytes-f.md)
-  - [getCellularTxBytes](arkts-network-getcellulartxbytes-f.md)
-  - [getIfaceRxBytes](arkts-network-getifacerxbytes-f.md)
-  - [getIfaceTxBytes](arkts-network-getifacetxbytes-f.md)<!--Del-->
-  - [getMonthTrafficStats(system api)](arkts-network-getmonthtrafficstats-f-sys.md)<!--DelEnd-->
-  - [getSelfTrafficStats](arkts-network-getselftrafficstats-f.md)
-  - [getSockfdRxBytes](arkts-network-getsockfdrxbytes-f.md)
-  - [getSockfdTxBytes](arkts-network-getsockfdtxbytes-f.md)<!--Del-->
-  - [getTrafficStatsByIface(system api)](arkts-network-gettrafficstatsbyiface-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getTrafficStatsByNetwork(system api)](arkts-network-gettrafficstatsbynetwork-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getTrafficStatsByUid(system api)](arkts-network-gettrafficstatsbyuid-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getTrafficStatsByUidNetwork(system api)](arkts-network-gettrafficstatsbyuidnetwork-f-sys.md)<!--DelEnd-->
-  - [getUidRxBytes](arkts-network-getuidrxbytes-f.md)
-  - [getUidTxBytes](arkts-network-getuidtxbytes-f.md)<!--Del-->
-  - [off(system api)](arkts-network-off-f-sys.md)<!--DelEnd--><!--Del-->
-  - [on(system api)](arkts-network-on-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setCalibrationTraffic(system api)](arkts-network-setcalibrationtraffic-f-sys.md)<!--DelEnd--><!--Del-->
-  - [updateIfacesStats(system api)](arkts-network-updateifacesstats-f-sys.md)<!--DelEnd--><!--Del-->
-  - [updateStatsData(system api)](arkts-network-updatestatsdata-f-sys.md)<!--DelEnd--><!--Del-->
-  - [IfaceInfo(system api)](arkts-network-ifaceinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [NetStatsChangeInfo(system api)](arkts-network-netstatschangeinfo-i-sys.md)<!--DelEnd-->
-  - [NetStatsInfo](arkts-network-netstatsinfo-i.md)
-  - [NetworkInfo](arkts-network-networkinfo-i.md)<!--Del-->
-  - [UidInfo(system api)](arkts-network-uidinfo-i-sys.md)<!--DelEnd-->
-  - [NetBearType](arkts-network-netbeartype-t.md)<!--Del-->
-  - [NetStatsInfoSequence(system api)](arkts-network-netstatsinfosequence-t-sys.md)<!--DelEnd--><!--Del-->
-  - [UidNetStatsInfo(system api)](arkts-network-uidnetstatsinfo-t-sys.md)<!--DelEnd-->
+  - [getAllRxBytes](arkts-network-statistics-getallrxbytes-f.md)
+  - [getAllTxBytes](arkts-network-statistics-getalltxbytes-f.md)
+  - [getCellularRxBytes](arkts-network-statistics-getcellularrxbytes-f.md)
+  - [getCellularTxBytes](arkts-network-statistics-getcellulartxbytes-f.md)
+  - [getIfaceRxBytes](arkts-network-statistics-getifacerxbytes-f.md)
+  - [getIfaceTxBytes](arkts-network-statistics-getifacetxbytes-f.md)<!--Del-->
+  - [getMonthTrafficStats(system api)](arkts-network-statistics-getmonthtrafficstats-f-sys.md)<!--DelEnd-->
+  - [getSelfTrafficStats](arkts-network-statistics-getselftrafficstats-f.md)
+  - [getSockfdRxBytes](arkts-network-statistics-getsockfdrxbytes-f.md)
+  - [getSockfdTxBytes](arkts-network-statistics-getsockfdtxbytes-f.md)<!--Del-->
+  - [getTrafficStatsByIface(system api)](arkts-network-statistics-gettrafficstatsbyiface-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getTrafficStatsByNetwork(system api)](arkts-network-statistics-gettrafficstatsbynetwork-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getTrafficStatsByUid(system api)](arkts-network-statistics-gettrafficstatsbyuid-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getTrafficStatsByUidNetwork(system api)](arkts-network-statistics-gettrafficstatsbyuidnetwork-f-sys.md)<!--DelEnd-->
+  - [getUidRxBytes](arkts-network-statistics-getuidrxbytes-f.md)
+  - [getUidTxBytes](arkts-network-statistics-getuidtxbytes-f.md)<!--Del-->
+  - [off(system api)](arkts-network-statistics-off-f-sys.md)<!--DelEnd--><!--Del-->
+  - [on(system api)](arkts-network-statistics-on-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setCalibrationTraffic(system api)](arkts-network-statistics-setcalibrationtraffic-f-sys.md)<!--DelEnd--><!--Del-->
+  - [updateIfacesStats(system api)](arkts-network-statistics-updateifacesstats-f-sys.md)<!--DelEnd--><!--Del-->
+  - [updateStatsData(system api)](arkts-network-statistics-updatestatsdata-f-sys.md)<!--DelEnd--><!--Del-->
+  - [IfaceInfo(system api)](arkts-network-statistics-ifaceinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [NetStatsChangeInfo(system api)](arkts-network-statistics-netstatschangeinfo-i-sys.md)<!--DelEnd-->
+  - [NetStatsInfo](arkts-network-statistics-netstatsinfo-i.md)
+  - [NetworkInfo](arkts-network-statistics-networkinfo-i.md)<!--Del-->
+  - [UidInfo(system api)](arkts-network-statistics-uidinfo-i-sys.md)<!--DelEnd-->
+  - [NetBearType](arkts-network-statistics-netbeartype-t.md)<!--Del-->
+  - [NetStatsInfoSequence(system api)](arkts-network-statistics-netstatsinfosequence-t-sys.md)<!--DelEnd--><!--Del-->
+  - [UidNetStatsInfo(system api)](arkts-network-statistics-uidnetstatsinfo-t-sys.md)<!--DelEnd-->
 - [@ohos.net.vpn](arkts-net-vpn.md)<!--Del-->
-  - [addSysVpnConfig(system api)](arkts-network-addsysvpnconfig-f-sys.md)<!--DelEnd--><!--Del-->
-  - [createVpnConnection(system api)](arkts-network-createvpnconnection-f-sys.md)<!--DelEnd--><!--Del-->
-  - [deleteSysVpnConfig(system api)](arkts-network-deletesysvpnconfig-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getConnectedSysVpnConfig(system api)](arkts-network-getconnectedsysvpnconfig-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getConnectedVpnAppInfo(system api)](arkts-network-getconnectedvpnappinfo-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getSysVpnConfig(system api)](arkts-network-getsysvpnconfig-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getSysVpnConfigList(system api)](arkts-network-getsysvpnconfiglist-f-sys.md)<!--DelEnd--><!--Del-->
-  - [off(system api)](arkts-network-off-f-sys.md)<!--DelEnd--><!--Del-->
-  - [on(system api)](arkts-network-on-f-sys.md)<!--DelEnd--><!--Del-->
-  - [IpsecVpnConfig(system api)](arkts-network-ipsecvpnconfig-i-sys.md)<!--DelEnd--><!--Del-->
-  - [L2tpVpnConfig(system api)](arkts-network-l2tpvpnconfig-i-sys.md)<!--DelEnd--><!--Del-->
-  - [OpenVpnConfig(system api)](arkts-network-openvpnconfig-i-sys.md)<!--DelEnd--><!--Del-->
-  - [SysVpnConfig(system api)](arkts-network-sysvpnconfig-i-sys.md)<!--DelEnd--><!--Del-->
-  - [VpnConfig(system api)](arkts-network-vpnconfig-i-sys.md)<!--DelEnd--><!--Del-->
-  - [VpnConnection(system api)](arkts-network-vpnconnection-i-sys.md)<!--DelEnd-->
-  - [AbilityContext](arkts-network-abilitycontext-t.md)
-  - [LinkAddress](arkts-network-linkaddress-t.md)
-  - [RouteInfo](arkts-network-routeinfo-t.md)<!--Del-->
-  - [SysVpnType(system api)](arkts-network-sysvpntype-e-sys.md)<!--DelEnd-->
+  - [addSysVpnConfig(system api)](arkts-network-vpn-addsysvpnconfig-f-sys.md)<!--DelEnd--><!--Del-->
+  - [createVpnConnection(system api)](arkts-network-vpn-createvpnconnection-f-sys.md)<!--DelEnd--><!--Del-->
+  - [deleteSysVpnConfig(system api)](arkts-network-vpn-deletesysvpnconfig-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getConnectedSysVpnConfig(system api)](arkts-network-vpn-getconnectedsysvpnconfig-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getConnectedVpnAppInfo(system api)](arkts-network-vpn-getconnectedvpnappinfo-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getSysVpnConfig(system api)](arkts-network-vpn-getsysvpnconfig-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getSysVpnConfigList(system api)](arkts-network-vpn-getsysvpnconfiglist-f-sys.md)<!--DelEnd--><!--Del-->
+  - [off(system api)](arkts-network-vpn-off-f-sys.md)<!--DelEnd--><!--Del-->
+  - [on(system api)](arkts-network-vpn-on-f-sys.md)<!--DelEnd--><!--Del-->
+  - [IpsecVpnConfig(system api)](arkts-network-vpn-ipsecvpnconfig-i-sys.md)<!--DelEnd--><!--Del-->
+  - [L2tpVpnConfig(system api)](arkts-network-vpn-l2tpvpnconfig-i-sys.md)<!--DelEnd--><!--Del-->
+  - [OpenVpnConfig(system api)](arkts-network-vpn-openvpnconfig-i-sys.md)<!--DelEnd--><!--Del-->
+  - [SysVpnConfig(system api)](arkts-network-vpn-sysvpnconfig-i-sys.md)<!--DelEnd--><!--Del-->
+  - [VpnConfig(system api)](arkts-network-vpn-vpnconfig-i-sys.md)<!--DelEnd--><!--Del-->
+  - [VpnConnection(system api)](arkts-network-vpn-vpnconnection-i-sys.md)<!--DelEnd-->
+  - [AbilityContext](arkts-network-vpn-abilitycontext-t.md)
+  - [LinkAddress](arkts-network-vpn-linkaddress-t.md)
+  - [RouteInfo](arkts-network-vpn-routeinfo-t.md)<!--Del-->
+  - [SysVpnType(system api)](arkts-network-vpn-sysvpntype-e-sys.md)<!--DelEnd-->
 - [@ohos.net.vpnExtension](arkts-net-vpnextension.md)
-  - [createVpnConnection](arkts-network-createvpnconnection-f.md)
-  - [createVpnObserver](arkts-network-createvpnobserver-f.md)<!--Del-->
-  - [isAlwaysOnVpnEnabled(system api)](arkts-network-isalwaysonvpnenabled-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setAlwaysOnVpnEnabled(system api)](arkts-network-setalwaysonvpnenabled-f-sys.md)<!--DelEnd-->
-  - [startVpnExtensionAbility](arkts-network-startvpnextensionability-f.md)
-  - [stopVpnExtensionAbility](arkts-network-stopvpnextensionability-f.md)<!--Del-->
-  - [updateVpnAuthorizedState(system api)](arkts-network-updatevpnauthorizedstate-f-sys.md)<!--DelEnd-->
-  - [VpnConfig](arkts-network-vpnconfig-i.md)
-  - [VpnConnection](arkts-network-vpnconnection-i.md)
-  - [VpnObserver](arkts-network-vpnobserver-i.md)
-  - [LinkAddress](arkts-network-linkaddress-t.md)
-  - [RouteInfo](arkts-network-routeinfo-t.md)
-  - [VpnExtensionContext](arkts-network-vpnextensioncontext-t.md)
+  - [createVpnConnection](arkts-network-vpnextension-createvpnconnection-f.md)
+  - [createVpnObserver](arkts-network-vpnextension-createvpnobserver-f.md)<!--Del-->
+  - [isAlwaysOnVpnEnabled(system api)](arkts-network-vpnextension-isalwaysonvpnenabled-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setAlwaysOnVpnEnabled(system api)](arkts-network-vpnextension-setalwaysonvpnenabled-f-sys.md)<!--DelEnd-->
+  - [startVpnExtensionAbility](arkts-network-vpnextension-startvpnextensionability-f.md)
+  - [stopVpnExtensionAbility](arkts-network-vpnextension-stopvpnextensionability-f.md)<!--Del-->
+  - [updateVpnAuthorizedState(system api)](arkts-network-vpnextension-updatevpnauthorizedstate-f-sys.md)<!--DelEnd-->
+  - [VpnConfig](arkts-network-vpnextension-vpnconfig-i.md)
+  - [VpnConnection](arkts-network-vpnextension-vpnconnection-i.md)
+  - [VpnObserver](arkts-network-vpnextension-vpnobserver-i.md)
+  - [LinkAddress](arkts-network-vpnextension-linkaddress-t.md)
+  - [RouteInfo](arkts-network-vpnextension-routeinfo-t.md)
+  - [VpnExtensionContext](arkts-network-vpnextension-vpnextensioncontext-t.md)
 - [@ohos.net.webSocket](arkts-net-websocket.md)
-  - [createWebSocket](arkts-network-createwebsocket-f.md)
-  - [createWebSocketServer](arkts-network-createwebsocketserver-f.md)
-  - [ClientCert](arkts-network-clientcert-i.md)
-  - [CloseResult](arkts-network-closeresult-i.md)
-  - [ServerCert](arkts-network-servercert-i.md)
-  - [WebSocket](arkts-network-websocket-i.md)
-  - [WebSocketCloseOptions](arkts-network-websocketcloseoptions-i.md)
-  - [WebSocketConnection](arkts-network-websocketconnection-i.md)
-  - [WebSocketMessage](arkts-network-websocketmessage-i.md)
-  - [WebSocketOpenInfo](arkts-network-websocketopeninfo-i.md)
-  - [WebSocketRequestOptions](arkts-network-websocketrequestoptions-i.md)
-  - [WebSocketServer](arkts-network-websocketserver-i.md)
-  - [WebSocketServerConfig](arkts-network-websocketserverconfig-i.md)
-  - [ClientConnectionCloseCallback](arkts-network-clientconnectionclosecallback-t.md)
-  - [HttpProxy](arkts-network-httpproxy-t.md)
-  - [ProxyConfiguration](arkts-network-proxyconfiguration-t.md)
-  - [ResponseHeaders](arkts-network-responseheaders-t.md)
-  - [TlsProtocol](arkts-network-tlsprotocol-e.md)
+  - [createWebSocket](arkts-network-websocket-createwebsocket-f.md)
+  - [createWebSocketServer](arkts-network-websocket-createwebsocketserver-f.md)
+  - [ClientCert](arkts-network-websocket-clientcert-i.md)
+  - [CloseResult](arkts-network-websocket-closeresult-i.md)
+  - [ServerCert](arkts-network-websocket-servercert-i.md)
+  - [WebSocket](arkts-network-websocket-websocket-i.md)
+  - [WebSocketCloseOptions](arkts-network-websocket-websocketcloseoptions-i.md)
+  - [WebSocketConnection](arkts-network-websocket-websocketconnection-i.md)
+  - [WebSocketMessage](arkts-network-websocket-websocketmessage-i.md)
+  - [WebSocketOpenInfo](arkts-network-websocket-websocketopeninfo-i.md)
+  - [WebSocketRequestOptions](arkts-network-websocket-websocketrequestoptions-i.md)
+  - [WebSocketServer](arkts-network-websocket-websocketserver-i.md)
+  - [WebSocketServerConfig](arkts-network-websocket-websocketserverconfig-i.md)
+  - [ClientConnectionCloseCallback](arkts-network-websocket-clientconnectionclosecallback-t.md)
+  - [HttpProxy](arkts-network-websocket-httpproxy-t.md)
+  - [ProxyConfiguration](arkts-network-websocket-proxyconfiguration-t.md)
+  - [ResponseHeaders](arkts-network-websocket-responseheaders-t.md)
+  - [TlsProtocol](arkts-network-websocket-tlsprotocol-e.md)
 - [@system.fetch](arkts-fetch.md)
-  - [Fetch](arkts-network-fetch-depr-c.md)
-  - [FetchResponse](arkts-network-fetchresponse-depr-i.md)
+  - [Fetch](arkts-network-fetch-fetch-depr-c.md)
+  - [FetchResponse](arkts-network-fetch-fetchresponse-depr-i.md)
 - [@system.network](arkts-network.md)
-  - [Network](arkts-network-network-depr-c.md)
-  - [NetworkResponse](arkts-network-networkresponse-depr-i.md)
+  - [Network](arkts-network-network-network-depr-c.md)
+  - [NetworkResponse](arkts-network-network-networkresponse-depr-i.md)
 - application<!--arkts-networkkit-application-->
   - [VpnExtensionContext](arkts-vpnextensioncontext.md)
     - [VpnExtensionContext](arkts-network-vpnextensioncontext-c.md)

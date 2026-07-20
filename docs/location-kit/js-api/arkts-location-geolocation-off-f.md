@@ -1,0 +1,265 @@
+# off
+
+## Modules to Import
+
+```TypeScript
+import { geolocation } from '@kit.LocationKit';
+```
+
+## off('locationChange')
+
+```TypeScript
+function off(type: 'locationChange', callback?: Callback<Location>): void
+```
+
+Unsubscribe location changed
+
+**Since:** 7
+
+**Deprecated since:** 9
+
+**Substitutes:** event:locationChange
+
+**Required permissions:** ohos.permission.LOCATION
+
+<!--Device-geolocation-function off(type: 'locationChange', callback?: Callback<Location>): void--><!--Device-geolocation-function off(type: 'locationChange', callback?: Callback<Location>): void-End-->
+
+**System capability:** SystemCapability.Location.Location.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| type | 'locationChange' | Yes | Indicates the location service event to be subscribed to. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Location> | No | Indicates the callback for reporting the location result. |
+
+**Example**
+
+```TypeScript
+import geolocation from '@ohos.geolocation';
+let requestInfo:geolocation.LocationRequest = {'priority': 0x203, 'scenario': 0x300, 'timeInterval': 0, 'distanceInterval': 0, 'maxAccuracy': 0};
+let locationChange = (location:geolocation.Location):void => {
+    console.info('locationChanger: data: ' + JSON.stringify(location));
+};
+geolocation.on('locationChange', requestInfo, locationChange);
+geolocation.off('locationChange', locationChange);
+
+```
+
+
+## off('locationServiceState')
+
+```TypeScript
+function off(type: 'locationServiceState', callback?: Callback<boolean>): void
+```
+
+Unsubscribe location switch changed
+
+**Since:** 7
+
+**Deprecated since:** 9
+
+**Substitutes:** event:locationEnabledChange
+
+**Required permissions:** ohos.permission.LOCATION
+
+<!--Device-geolocation-function off(type: 'locationServiceState', callback?: Callback<boolean>): void--><!--Device-geolocation-function off(type: 'locationServiceState', callback?: Callback<boolean>): void-End-->
+
+**System capability:** SystemCapability.Location.Location.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| type | 'locationServiceState' | Yes | Indicates the location service event to be subscribed to. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<boolean> | No | Indicates the callback for reporting the location result. |
+
+**Example**
+
+```TypeScript
+import geolocation from '@ohos.geolocation';
+let locationServiceState = (state:boolean):void => {
+    console.info('locationServiceState: state: ' + JSON.stringify(state));
+}
+geolocation.on('locationServiceState', locationServiceState);
+geolocation.off('locationServiceState', locationServiceState);
+
+```
+
+
+## off('cachedGnssLocationsReporting')
+
+```TypeScript
+function off(type: 'cachedGnssLocationsReporting', callback?: Callback<Array<Location>>): void
+```
+
+Unsubscribe to cache GNSS locations update messages
+
+**Since:** 8
+
+**Deprecated since:** 9
+
+**Substitutes:** event:cachedGnssLocationsChange
+
+**Required permissions:** ohos.permission.LOCATION
+
+<!--Device-geolocation-function off(type: 'cachedGnssLocationsReporting', callback?: Callback<Array<Location>>): void--><!--Device-geolocation-function off(type: 'cachedGnssLocationsReporting', callback?: Callback<Array<Location>>): void-End-->
+
+**System capability:** SystemCapability.Location.Location.Gnss
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| type | 'cachedGnssLocationsReporting' | Yes | Indicates the location service event to be subscribed to. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<Location>> | No | Indicates the callback for reporting the cached gnss locations. |
+
+**Example**
+
+```TypeScript
+import geolocation from '@ohos.geolocation';
+let cachedLocationsCb = (locations:Array<geolocation.Location>):void => {
+    console.info('cachedGnssLocationsReporting: locations: ' + JSON.stringify(locations));
+}
+let requestInfo:geolocation.CachedGnssLocationsRequest = {'reportingPeriodSec': 10, 'wakeUpCacheQueueFull': true};
+geolocation.on('cachedGnssLocationsReporting', requestInfo, cachedLocationsCb);
+geolocation.off('cachedGnssLocationsReporting');
+
+```
+
+
+## off('gnssStatusChange')
+
+```TypeScript
+function off(type: 'gnssStatusChange', callback?: Callback<SatelliteStatusInfo>): void
+```
+
+Unsubscribe gnss status changed
+
+**Since:** 8
+
+**Deprecated since:** 9
+
+**Substitutes:** event:satelliteStatusChange
+
+**Required permissions:** ohos.permission.LOCATION
+
+<!--Device-geolocation-function off(type: 'gnssStatusChange', callback?: Callback<SatelliteStatusInfo>): void--><!--Device-geolocation-function off(type: 'gnssStatusChange', callback?: Callback<SatelliteStatusInfo>): void-End-->
+
+**System capability:** SystemCapability.Location.Location.Gnss
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| type | 'gnssStatusChange' | Yes | Indicates the location service event to be subscribed to. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<SatelliteStatusInfo> | No | Indicates the callback for reporting the gnss status change. |
+
+**Example**
+
+```TypeScript
+import geolocation from '@ohos.geolocation';
+let gnssStatusCb = (satelliteStatusInfo:geolocation.SatelliteStatusInfo) => {
+    console.info('gnssStatusChange: ' + JSON.stringify(satelliteStatusInfo));
+}
+geolocation.on('gnssStatusChange', gnssStatusCb);
+geolocation.off('gnssStatusChange', gnssStatusCb);
+
+```
+
+
+## off('nmeaMessageChange')
+
+```TypeScript
+function off(type: 'nmeaMessageChange', callback?: Callback<string>): void
+```
+
+Unsubscribe nmea message changed
+
+**Since:** 8
+
+**Deprecated since:** 9
+
+**Substitutes:** event:nmeaMessage
+
+**Required permissions:** ohos.permission.LOCATION
+
+<!--Device-geolocation-function off(type: 'nmeaMessageChange', callback?: Callback<string>): void--><!--Device-geolocation-function off(type: 'nmeaMessageChange', callback?: Callback<string>): void-End-->
+
+**System capability:** SystemCapability.Location.Location.Gnss
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| type | 'nmeaMessageChange' | Yes | Indicates the location service event to be subscribed to. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<string> | No | Indicates the callback for reporting the nmea message. |
+
+**Example**
+
+```TypeScript
+import geolocation from '@ohos.geolocation';
+let nmeaCb = (str:string):void => {
+    console.info('nmeaMessageChange: ' + JSON.stringify(str));
+}
+geolocation.on('nmeaMessageChange', nmeaCb);
+geolocation.off('nmeaMessageChange', nmeaCb);
+
+```
+
+
+## off('fenceStatusChange')
+
+```TypeScript
+function off(type: 'fenceStatusChange', request: GeofenceRequest, want: WantAgent): void
+```
+
+Remove a geofence and unsubscribe geo fence status changed
+
+**Since:** 8
+
+**Deprecated since:** 9
+
+**Substitutes:** event:gnssFenceStatusChange
+
+**Required permissions:** ohos.permission.LOCATION
+
+<!--Device-geolocation-function off(type: 'fenceStatusChange', request: GeofenceRequest, want: WantAgent): void--><!--Device-geolocation-function off(type: 'fenceStatusChange', request: GeofenceRequest, want: WantAgent): void-End-->
+
+**System capability:** SystemCapability.Location.Location.Geofence
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| type | 'fenceStatusChange' | Yes | Indicates the location service event to be subscribed to. |
+| request | [GeofenceRequest](arkts-location-geolocationmanager-geofencerequest-i.md) | Yes | Indicates the Geo-fence configuration parameters. |
+| want | [WantAgent](../../apis-background-tasks-kit/arkts-apis/arkts-backgroundtasks-reminderagent-wantagent-i.md) | Yes | Indicates which ability to start when the geofence event is triggered. |
+
+**Example**
+
+```TypeScript
+import geolocation from '@ohos.geolocation';
+import wantAgent from '@ohos.app.ability.wantAgent';
+
+let wantAgentInfo:wantAgent.WantAgentInfo = {
+    wants: [
+        {
+            bundleName: "com.example.myapplication",
+            abilityName: "EntryAbility",
+            action: "action1",
+        }
+    ],
+    operationType: wantAgent.OperationType.START_ABILITY,
+    requestCode: 0,
+    wantAgentFlags: [wantAgent.WantAgentFlags.UPDATE_PRESENT_FLAG]
+};
+
+wantAgent.getWantAgent(wantAgentInfo).then((wantAgentObj) => {
+  let requestInfo:geolocation.GeofenceRequest = {'priority': 0x201, 'scenario': 0x301, "geofence": {"latitude": 31.12, "longitude": 121.11, "radius": 100, "expiration": 10000}};
+  geolocation.on('fenceStatusChange', requestInfo, wantAgentObj);
+  geolocation.off('fenceStatusChange', requestInfo, wantAgentObj);
+});
+
+```
+

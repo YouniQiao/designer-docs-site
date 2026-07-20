@@ -1,6 +1,6 @@
 # GridContainer
 
-Defines the GridContainer component.
+Defines GridContainer Component.
 
 
 ## GridContainer
@@ -16,6 +16,8 @@ Defines the constructor of GridContainer.
 **Deprecated since:** 9
 
 **Substitutes:** <!--SUBSTITUTE_API-->grid_col/GridColInterface<!--/SUBSTITUTE_API-->
+
+<!--Device-GridContainerInterface-(value?: GridContainerOptions): GridContainerAttribute--><!--Device-GridContainerInterface-(value?: GridContainerOptions): GridContainerAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

@@ -18,19 +18,21 @@ Obtains detailed attribute information of a file or directory. This API uses a p
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-unnamed-declare function stat(file: string | number): Promise<Stat>--><!--Device-unnamed-declare function stat(file: string | number): Promise<Stat>-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| file | string \| number | Yes | Application sandbox path, URI, or FD of the file or directory.<br>**Note**: URIscan be passed since API version 22. |
+| file | string \| number | Yes | Application sandbox path, URI, or FD of the file or directory.<br>**Note**: URIs can be passed since API version 22. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Stat&gt; | Promise used to return the file or directory information. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Stat> | Promise used to return the file or directory information. |
 
 **Error codes:**
 
@@ -57,12 +59,13 @@ Obtains detailed attribute information of a file or directory. This API uses a p
 declare function stat(file: string | number, callback: AsyncCallback<Stat>): void
 ```
 
-Obtains detailed attribute information of a file or directory. This API uses an asynchronous callback to return the
-result.
+Obtains detailed attribute information of a file or directory. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-unnamed-declare function stat(file: string | number, callback: AsyncCallback<Stat>): void--><!--Device-unnamed-declare function stat(file: string | number, callback: AsyncCallback<Stat>): void-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
@@ -70,8 +73,8 @@ result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| file | string \| number | Yes | Application sandbox path, URI, or FD of the file or directory.<br>**Note**: URIscan be passed since API version 22. |
-| callback | AsyncCallback&lt;Stat&gt; | Yes | Callback used to return the file or directory information obtained. |
+| file | string \| number | Yes | Application sandbox path, URI, or FD of the file or directory.<br>**Note**: URIs can be passed since API version 22. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Stat> | Yes | Callback used to return the file or directory information obtained. |
 
 **Error codes:**
 

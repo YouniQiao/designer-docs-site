@@ -18,13 +18,15 @@ Closes a file or directory. This API returns the result synchronously.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-unnamed-declare function closeSync(file: number | File): void--><!--Device-unnamed-declare function closeSync(file: number | File): void-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| file | number \| File | Yes | **File** object or FD of the file to close. Once closed, the **File** object or FDcannot be used for read or write operations. |
+| file | number \| File | Yes | **File** object or FD of the file to close. Once closed, the **File** object or FD cannot be used for read or write operations. |
 
 **Error codes:**
 

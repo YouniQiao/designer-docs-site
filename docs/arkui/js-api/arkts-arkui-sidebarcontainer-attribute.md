@@ -8,6 +8,8 @@ In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-ap
 
 **Since:** 8
 
+<!--Device-unnamed-declare class SideBarContainerAttribute extends CommonMethod<SideBarContainerAttribute>--><!--Device-unnamed-declare class SideBarContainerAttribute extends CommonMethod<SideBarContainerAttribute>-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 ## autoHide
@@ -16,16 +18,15 @@ In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-ap
 autoHide(value: boolean)
 ```
 
-Specifies whether to automatically hide the sidebar when it is dragged to be smaller than the minimum width. The
-value is subject to the **minSideBarWidth** attribute method. If it is not set in **minSideBarWidth**, the default
-value is used.
+Specifies whether to automatically hide the sidebar when it is dragged to be smaller than the minimum width. The value is subject to the **minSideBarWidth** attribute method. If it is not set in **minSideBarWidth**, the default value is used.
 
-Whether the sidebar should be hidden is determined when it is being dragged. When it is dragged to be smaller than
-the minimum width, the damping effect is required to trigger hiding (a distance out of range).
+Whether the sidebar should be hidden is determined when it is being dragged. When it is dragged to be smaller than the minimum width, the damping effect is required to trigger hiding (a distance out of range).
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-SideBarContainerAttribute-autoHide(value: boolean): SideBarContainerAttribute--><!--Device-SideBarContainerAttribute-autoHide(value: boolean): SideBarContainerAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -33,7 +34,7 @@ the minimum width, the damping effect is required to trigger hiding (a distance 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | boolean | Yes | Whether to automatically hide the sidebar when it is dragged to be smaller than theminimum width.<br>**true**: The sidebar is automatically hidden.<br>**false**: The sidebar is not automaticallyhidden.<br>Default value: **true** |
+| value | boolean | Yes | Whether to automatically hide the sidebar when it is dragged to be smaller than the minimum width.<br>**true**: The sidebar is automatically hidden.<br>**false**: The sidebar is not automatically hidden.<br>Default value: **true** |
 
 ## controlButton
 
@@ -47,13 +48,15 @@ Sets the attributes of the sidebar control button.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-SideBarContainerAttribute-controlButton(value: ButtonStyle): SideBarContainerAttribute--><!--Device-SideBarContainerAttribute-controlButton(value: ButtonStyle): SideBarContainerAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ButtonStyle | Yes | Attributes of the sidebar control button. |
+| value | [ButtonStyle](arkts-arkui-sidebar-buttonstyle-i.md) | Yes | Attributes of the sidebar control button. |
 
 ## divider
 
@@ -69,13 +72,15 @@ Sets the divider style.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-SideBarContainerAttribute-divider(value: DividerStyle | null): SideBarContainerAttribute--><!--Device-SideBarContainerAttribute-divider(value: DividerStyle | null): SideBarContainerAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | DividerStyle \| null | Yes | Divider style.<br>- **DividerStyle** (default): The divider is displayed.<br>- **null** or **undefined**: No action is taken, and the divider style remains consistent with the default.<br>**NOTE**<br>In API version 11 and earlier versions, **null** results in the divider not being displayed. |
+| value | DividerStyle \| null | Yes | Divider style.<br>- **DividerStyle** (default): The divider is displayed.<br  >- **null** or **undefined**: No action is taken, and the divider style remains consistent with the default.<br  >**NOTE**<br>In API version 11 and earlier versions, **null** results in the divider not being displayed. |
 
 ## maxSideBarWidth
 
@@ -83,16 +88,15 @@ Sets the divider style.
 maxSideBarWidth(value: number)
 ```
 
-Sets the maximum width of the sidebar. If a value less than 0 is set, the default value is used. The value cannot
-exceed the width of the sidebar container. If the specified value exceeds the sidebar container width, the
-container width is used instead.
+Sets the maximum width of the sidebar. If a value less than 0 is set, the default value is used. The value cannot exceed the width of the sidebar container. If the specified value exceeds the sidebar container width, the container width is used instead.
 
-**maxSideBarWidth**, whether it is specified or kept at the default value, takes precedence over **maxWidth** of
-the sidebar child components.
+**maxSideBarWidth**, whether it is specified or kept at the default value, takes precedence over **maxWidth** of the sidebar child components.
 
 **Since:** 8
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-SideBarContainerAttribute-maxSideBarWidth(value: number): SideBarContainerAttribute--><!--Device-SideBarContainerAttribute-maxSideBarWidth(value: number): SideBarContainerAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -108,18 +112,15 @@ the sidebar child components.
 maxSideBarWidth(value: Length)
 ```
 
-Sets the maximum width of the sidebar. If a value less than 0 is set, the default value is used. The value cannot
-exceed the width of the sidebar container. If the specified value exceeds the sidebar container width, the
-container width is used instead. Compared with
-[maxSideBarWidth](SideBarContainerAttribute#maxSideBarWidth(value: number)), this API supports percentage
-strings and other [pixel units](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) for the **value** parameter.
+Sets the maximum width of the sidebar. If a value less than 0 is set, the default value is used. The value cannot exceed the width of the sidebar container. If the specified value exceeds the sidebar container width, the container width is used instead. Compared with [maxSideBarWidth](SideBarContainerAttribute#maxSideBarWidth(value: number)), this API supports percentage strings and other [pixel units](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) for the **value** parameter.
 
-**maxSideBarWidth**, whether it is specified or kept at the default value, takes precedence over **maxWidth** of
-the sidebar child components.
+**maxSideBarWidth**, whether it is specified or kept at the default value, takes precedence over **maxWidth** of the sidebar child components.
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-SideBarContainerAttribute-maxSideBarWidth(value: Length): SideBarContainerAttribute--><!--Device-SideBarContainerAttribute-maxSideBarWidth(value: Length): SideBarContainerAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -127,7 +128,7 @@ the sidebar child components.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | Length | Yes | Maximum width of the sidebar.<br>Default value: **280vp**<br>Unit: vp<br>Value range:[0, +∞). |
+| value | [Length](../arkts-apis/arkts-arkui-length-t.md) | Yes | Maximum width of the sidebar.<br>Default value: **280vp**<br>Unit: vp<br>Value range:[0, +∞). |
 
 ## minContentWidth
 
@@ -137,27 +138,18 @@ minContentWidth(value: Dimension)
 
 Sets the minimum content area width of the sidebar container.
 
-If this attribute is set to a value less than 0, the default value **360vp** will be used. If this attribute is not
-set, the width of the content area can shrink to 0.
+If this attribute is set to a value less than 0, the default value **360vp** will be used. If this attribute is not set, the width of the content area can shrink to 0.
 
 In Embed mode, when the component size is increased, only the content area is enlarged;
 
-when the component size is decreased, the content area is shrunk until its width reaches the value defined by
-**minContentWidth**; if the component size is further decreased, while respecting the **minContentWidth** settings,
-the sidebar is shrunk
+when the component size is decreased, the content area is shrunk until its width reaches the value defined by **minContentWidth**; if the component size is further decreased, while respecting the **minContentWidth** settings,the sidebar is shrunk
 
 until its width reaches the value defined by **minSideBarWidth**; if the component size is further decreased, then:
 
-- If [autoHide](SideBarContainerAttribute#autoHide) is set to **false**, while retaining the
-[minSideBarWidth](SideBarContainerAttribute#minSideBarWidth(value: number)) and **minContentWidth** settings,
-the content area has its content clipped.
-- If **autoHide** is set to **true**, the sidebar is hidden first, and then the content area is shrunk. After its
-width reaches the value defined by **minContentWidth**, the content area has its content clipped.
+- If [autoHide](SideBarContainerAttribute#autoHide) is set to **false**, while retaining the [minSideBarWidth](SideBarContainerAttribute#minSideBarWidth(value: number)) and **minContentWidth** settings,the content area has its content clipped.  
+- If **autoHide** is set to **true**, the sidebar is hidden first, and then the content area is shrunk. After its width reaches the value defined by **minContentWidth**, the content area has its content clipped.
 
-**minContentWidth** takes precedence over the
-[maxSideBarWidth](SideBarContainerAttribute#maxSideBarWidth(value: number)) and **sideBarWidth** attributes
-of the sidebar. If **minContentWidth** is not set, **minSideBarWidth** and **maxSideBarWidth** take precedence over
-its default value.
+**minContentWidth** takes precedence over the [maxSideBarWidth](SideBarContainerAttribute#maxSideBarWidth(value: number)) and **sideBarWidth** attributes of the sidebar. If **minContentWidth** is not set, **minSideBarWidth** and **maxSideBarWidth** take precedence over its default value.
 
 **Since:** 10
 
@@ -165,13 +157,15 @@ its default value.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-SideBarContainerAttribute-minContentWidth(value: Dimension): SideBarContainerAttribute--><!--Device-SideBarContainerAttribute-minContentWidth(value: Dimension): SideBarContainerAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | Dimension | Yes | Minimum content area width of the sidebar container.<br>Default value: **360vp**<br>Unit: vp |
+| value | [Dimension](../arkts-apis/arkts-arkui-dimension-t.md) | Yes | Minimum content area width of the sidebar container.<br>Default value: **360vp**<br>Unit: vp |
 
 ## minSideBarWidth
 
@@ -179,16 +173,15 @@ its default value.
 minSideBarWidth(value: number)
 ```
 
-Sets the minimum width of the sidebar. If a value less than 0 is set, the default value is used. The value cannot
-exceed the width of the sidebar container. If the specified value exceeds the sidebar container width, the
-container width is used instead.
+Sets the minimum width of the sidebar. If a value less than 0 is set, the default value is used. The value cannot exceed the width of the sidebar container. If the specified value exceeds the sidebar container width, the container width is used instead.
 
-**minSideBarWidth**, whether it is specified or kept at the default value, takes precedence over **minWidth** of
-the sidebar child components.
+**minSideBarWidth**, whether it is specified or kept at the default value, takes precedence over **minWidth** of the sidebar child components.
 
 **Since:** 8
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-SideBarContainerAttribute-minSideBarWidth(value: number): SideBarContainerAttribute--><!--Device-SideBarContainerAttribute-minSideBarWidth(value: number): SideBarContainerAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -204,18 +197,15 @@ the sidebar child components.
 minSideBarWidth(value: Length)
 ```
 
-Sets the minimum width of the sidebar. If a value less than 0 is set, the default value is used. The value cannot
-exceed the width of the sidebar container. If the specified value exceeds the sidebar container width, the
-container width is used instead. Compared to
-[minSideBarWidth](SideBarContainerAttribute#minSideBarWidth(value: number)), this API supports percentage
-strings and other [pixel units](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) for the **value** parameter.
+Sets the minimum width of the sidebar. If a value less than 0 is set, the default value is used. The value cannot exceed the width of the sidebar container. If the specified value exceeds the sidebar container width, the container width is used instead. Compared to [minSideBarWidth](SideBarContainerAttribute#minSideBarWidth(value: number)), this API supports percentage strings and other [pixel units](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) for the **value** parameter.
 
-**minSideBarWidth**, whether it is specified or kept at the default value, takes precedence over **minWidth** of
-the sidebar child components.
+**minSideBarWidth**, whether it is specified or kept at the default value, takes precedence over **minWidth** of the sidebar child components.
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-SideBarContainerAttribute-minSideBarWidth(value: Length): SideBarContainerAttribute--><!--Device-SideBarContainerAttribute-minSideBarWidth(value: Length): SideBarContainerAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -223,7 +213,7 @@ the sidebar child components.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | Length | Yes | Minimum width of the sidebar.<br>Default value: In API version 9 and earlier versions,the default value is **200vp**. In API version 10, the default value is **240vp**.<br>Value range: [0, +∞). |
+| value | [Length](../arkts-apis/arkts-arkui-length-t.md) | Yes | Minimum width of the sidebar.<br>Default value: In API version 9 and earlier versions,the default value is **200vp**. In API version 10, the default value is **240vp**.<br>Value range: [0, +∞). |
 
 ## onChange
 
@@ -235,13 +225,13 @@ Triggered when the status of the sidebar switches between shown and hidden.
 
 This event is triggered when any of the following conditions is met:
 
-1. The value of the **showSideBar** attribute changes.
-2. The adaptation of the **showSideBar** attribute changes.
-3. [autoHide](SideBarContainerAttribute#autoHide) is triggered upon divider dragging.
+1. The value of the **showSideBar** attribute changes.2. The adaptation of the **showSideBar** attribute changes.3. [autoHide](SideBarContainerAttribute#autoHide) is triggered upon divider dragging.
 
 **Since:** 8
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-SideBarContainerAttribute-onChange(callback: (value: boolean) => void): SideBarContainerAttribute--><!--Device-SideBarContainerAttribute-onChange(callback: (value: boolean) => void): SideBarContainerAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -249,7 +239,7 @@ This event is triggered when any of the following conditions is met:
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (value: boolean) =&gt; void | Yes | **true**: The sidebar is shown. **false**: The sidebar is hidden. |
+| callback | (value: boolean) => void | Yes | **true**: The sidebar is shown. **false**: The sidebar is hidden. |
 
 ## showControlButton
 
@@ -263,13 +253,15 @@ Specifies whether to display the sidebar control button.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-SideBarContainerAttribute-showControlButton(value: boolean): SideBarContainerAttribute--><!--Device-SideBarContainerAttribute-showControlButton(value: boolean): SideBarContainerAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | boolean | Yes | Whether to display the sidebar control button.<br>**true**: The sidebar control buttonis displayed.<br>**false**: The sidebar control button is not displayed.<br>Default value: **true** |
+| value | boolean | Yes | Whether to display the sidebar control button.<br>**true**: The sidebar control button is displayed.<br>**false**: The sidebar control button is not displayed.<br>Default value: **true** |
 
 ## showSideBar
 
@@ -279,12 +271,13 @@ showSideBar(value: boolean)
 
 Specifies whether to display the sidebar.
 
-Since API version 10, this attribute supports two-way binding through
-[$$](../../../../ui/state-management/arkts-two-way-sync.md).
+Since API version 10, this attribute supports two-way binding through [$$](../../../../ui/state-management/arkts-two-way-sync.md).
 
 **Since:** 8
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-SideBarContainerAttribute-showSideBar(value: boolean): SideBarContainerAttribute--><!--Device-SideBarContainerAttribute-showSideBar(value: boolean): SideBarContainerAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -292,7 +285,7 @@ Since API version 10, this attribute supports two-way binding through
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | boolean | Yes | Whether to display the sidebar.<br>**true**: The sidebar is displayed.<br>**false**: Thesidebar is not displayed.<br>Default value: **true** |
+| value | boolean | Yes | Whether to display the sidebar.<br>**true**: The sidebar is displayed.<br>**false**: The sidebar is not displayed.<br>Default value: **true** |
 
 ## showSideBarWithGesture
 
@@ -307,6 +300,8 @@ Specifies whether sideBar can be presented or dismissed by gesture.
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+<!--Device-SideBarContainerAttribute-showSideBarWithGesture(value: boolean): SideBarContainerAttribute--><!--Device-SideBarContainerAttribute-showSideBarWithGesture(value: boolean): SideBarContainerAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -328,13 +323,15 @@ Sets the position of the sidebar.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-SideBarContainerAttribute-sideBarPosition(value: SideBarPosition): SideBarContainerAttribute--><!--Device-SideBarContainerAttribute-sideBarPosition(value: SideBarPosition): SideBarContainerAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | SideBarPosition | Yes | Position of the sidebar.<br>Default value: **SideBarPosition.Start** |
+| value | [SideBarPosition](arkts-arkui-sidebar-sidebarposition-e.md) | Yes | Position of the sidebar.<br>Default value: **SideBarPosition.Start** |
 
 ## sideBarWidth
 
@@ -342,15 +339,15 @@ Sets the position of the sidebar.
 sideBarWidth(value: number)
 ```
 
-Sets the width of the sidebar. If a value less than 0 is set, the default value is used. The value must comply with
-the width constraints. If it is not within the valid range, the valid value closest to the set one is used.
+Sets the width of the sidebar. If a value less than 0 is set, the default value is used. The value must comply with the width constraints. If it is not within the valid range, the valid value closest to the set one is used.
 
-Since API version 18, this attribute supports two-way binding through
-[!!](../../../../ui/state-management/arkts-new-binding.md).
+Since API version 18, this attribute supports two-way binding through [!!](../../../../ui/state-management/arkts-new-binding.md).
 
 **Since:** 8
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-SideBarContainerAttribute-sideBarWidth(value: number): SideBarContainerAttribute--><!--Device-SideBarContainerAttribute-sideBarWidth(value: number): SideBarContainerAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -366,17 +363,15 @@ Since API version 18, this attribute supports two-way binding through
 sideBarWidth(value: Length)
 ```
 
-Sets the width of the sidebar. If a value less than 0 is set, the default value is used. The value must comply with
-the width constraints. If it is not within the valid range, the valid value closest to the set one is used.
-Compared to [sideBarWidth](SideBarContainerAttribute#sideBarWidth(value: number)), this API supports
-percentage strings and other [pixel units](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) for the **value** parameter.
+Sets the width of the sidebar. If a value less than 0 is set, the default value is used. The value must comply with the width constraints. If it is not within the valid range, the valid value closest to the set one is used.Compared to [sideBarWidth](SideBarContainerAttribute#sideBarWidth(value: number)), this API supports percentage strings and other [pixel units](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) for the **value** parameter.
 
-Since API version 18, this attribute supports two-way binding through
-[!!](../../../../ui/state-management/arkts-new-binding.md).
+Since API version 18, this attribute supports two-way binding through [!!](../../../../ui/state-management/arkts-new-binding.md).
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-SideBarContainerAttribute-sideBarWidth(value: Length): SideBarContainerAttribute--><!--Device-SideBarContainerAttribute-sideBarWidth(value: Length): SideBarContainerAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -384,5 +379,5 @@ Since API version 18, this attribute supports two-way binding through
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | Length | Yes | Width of the sidebar.<br>Default value: **240vp**<br>Unit: vp<br>Value range:[0, +∞).<br>**NOTE**<br>The default value is **200vp** in API version 9 and **240vp** in API version 10. |
+| value | [Length](../arkts-apis/arkts-arkui-length-t.md) | Yes | Width of the sidebar.<br>Default value: **240vp**<br>Unit: vp<br>Value range:[0, +∞).<br>**NOTE**<br>The default value is **200vp** in API version 9 and **240vp** in API version 10. |
 

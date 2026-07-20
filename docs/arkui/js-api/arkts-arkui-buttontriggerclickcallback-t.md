@@ -12,6 +12,8 @@ Defines the callback type used in **ButtonConfiguration**.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-unnamed-declare type ButtonTriggerClickCallback = (xPos: number, yPos: number) => void--><!--Device-unnamed-declare type ButtonTriggerClickCallback = (xPos: number, yPos: number) => void-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**

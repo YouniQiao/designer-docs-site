@@ -1,6 +1,6 @@
 # PageTransitionEnter
 
-Provides an interface to set transition style when a page enters.
+Defines PageTransitionEnter Component.
 
 
 ## PageTransitionEnter
@@ -14,6 +14,8 @@ Sets the page entrance animation.
 **Since:** 7
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-PageTransitionEnterInterface-(value: PageTransitionOptions): PageTransitionEnterInterface--><!--Device-PageTransitionEnterInterface-(value: PageTransitionOptions): PageTransitionEnterInterface-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -29,12 +31,13 @@ Sets the page entrance animation.
 PageTransitionEnter(event: PageTransitionCallback)
 ```
 
-Invoked on a per-frame basis until the entrance animation is complete, with the **progress** parameter changing
-from 0 to 1.
+Invoked on a per-frame basis until the entrance animation is complete, with the **progress** parameter changing from 0 to 1.
 
 **Since:** 7
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-PageTransitionEnterInterface-onEnter(event: PageTransitionCallback): PageTransitionEnterInterface--><!--Device-PageTransitionEnterInterface-onEnter(event: PageTransitionCallback): PageTransitionEnterInterface-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

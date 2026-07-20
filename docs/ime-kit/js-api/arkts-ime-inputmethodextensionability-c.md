@@ -1,13 +1,14 @@
 # InputMethodExtensionAbility
 
-The **InputMethodExtensionAbility** module provides APIs for developing input methods and managing the lifecycle of
-input method extensions.
+The **InputMethodExtensionAbility** module provides APIs for developing input methods and managing the lifecycle of input method extensions.
 
-> **NOTE**
->
+> **NOTE**  
+>  
 > - The APIs of this module can be used only in the stage model.
 
 **Since:** 9
+
+<!--Device-unnamed-declare class InputMethodExtensionAbility--><!--Device-unnamed-declare class InputMethodExtensionAbility-End-->
 
 **System capability:** SystemCapability.MiscServices.InputMethodFramework
 
@@ -29,13 +30,15 @@ Called when the **InputMethodExtensionAbility** is started to implement initiali
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-InputMethodExtensionAbility-onCreate(want: Want): void--><!--Device-InputMethodExtensionAbility-onCreate(want: Want): void-End-->
+
 **System capability:** SystemCapability.MiscServices.InputMethodFramework
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Information related to the **InputMethodExtensionAbility**, including the ability name andbundle name. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Information related to the **InputMethodExtensionAbility**, including the ability name and bundle name. |
 
 **Example**
 
@@ -62,6 +65,8 @@ Called when this **InputMethodExtensionAbility** is destroyed to clear resources
 **Since:** 9
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-InputMethodExtensionAbility-onDestroy(): void--><!--Device-InputMethodExtensionAbility-onDestroy(): void-End-->
 
 **System capability:** SystemCapability.MiscServices.InputMethodFramework
 
@@ -91,6 +96,8 @@ Context of the **InputMethodExtension**, which is inherited from **ExtensionCont
 **Since:** 9
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-InputMethodExtensionAbility-context: InputMethodExtensionContext--><!--Device-InputMethodExtensionAbility-context: InputMethodExtensionContext-End-->
 
 **System capability:** SystemCapability.MiscServices.InputMethodFramework
 

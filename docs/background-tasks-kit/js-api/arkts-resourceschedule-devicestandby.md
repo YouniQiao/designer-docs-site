@@ -1,9 +1,10 @@
 # @ohos.resourceschedule.deviceStandby
 
-Provides methods for managing device standby,
-including the methods for querying standby status and exemption list.
+Provides methods for managing device standby,including the methods for querying standby status and exemption list.
 
 **Since:** 10
+
+<!--Device-unnamed-declare namespace deviceStandby--><!--Device-unnamed-declare namespace deviceStandby-End-->
 
 **System capability:** SystemCapability.ResourceSchedule.DeviceStandby
 
@@ -20,10 +21,10 @@ import { deviceStandby } from '@kit.BackgroundTasksKit';
 
 | Name | Description |
 | --- | --- |
-| [getExemptedApps](arkts-backgroundtasks-getexemptedapps-f-sys.md#getexemptedapps-1) | Returns the information about the specified exempted application. |
-| [getExemptedApps](arkts-backgroundtasks-getexemptedapps-f-sys.md#getexemptedapps-2) | Returns the information about the specified exempted application. |
-| [releaseExemptionResource](arkts-backgroundtasks-releaseexemptionresource-f-sys.md#releaseexemptionresource-1) | Releases exemption resources. |
-| [requestExemptionResource](arkts-backgroundtasks-requestexemptionresource-f-sys.md#requestexemptionresource-1) | Requests exemption resources. |
+| [getExemptedApps](arkts-backgroundtasks-devicestandby-getexemptedapps-f-sys.md#getexemptedapps-1) | Returns the information about the specified exempted application. |
+| [getExemptedApps](arkts-backgroundtasks-devicestandby-getexemptedapps-f-sys.md#getexemptedapps-2) | Returns the information about the specified exempted application. |
+| [releaseExemptionResource](arkts-backgroundtasks-devicestandby-releaseexemptionresource-f-sys.md#releaseexemptionresource-1) | Releases exemption resources. |
+| [requestExemptionResource](arkts-backgroundtasks-devicestandby-requestexemptionresource-f-sys.md#requestexemptionresource-1) | Requests exemption resources. |
 <!--DelEnd-->
 
 <!--Del-->
@@ -31,8 +32,8 @@ import { deviceStandby } from '@kit.BackgroundTasksKit';
 
 | Name | Description |
 | --- | --- |
-| [ExemptedAppInfo](arkts-backgroundtasks-exemptedappinfo-i-sys.md) | Information about an exempted application. |
-| [ResourceRequest](arkts-backgroundtasks-resourcerequest-i-sys.md) | The request of standby resources. |
+| [ExemptedAppInfo](arkts-backgroundtasks-devicestandby-exemptedappinfo-i-sys.md) | Information about an exempted application. |
+| [ResourceRequest](arkts-backgroundtasks-devicestandby-resourcerequest-i-sys.md) | The request of standby resources. |
 <!--DelEnd-->
 
 <!--Del-->
@@ -40,6 +41,6 @@ import { deviceStandby } from '@kit.BackgroundTasksKit';
 
 | Name | Description |
 | --- | --- |
-| [ResourceType](arkts-backgroundtasks-resourcetype-e-sys.md) | The type of exemption resources requested by the application. |
+| [ResourceType](arkts-backgroundtasks-devicestandby-resourcetype-e-sys.md) | The type of exemption resources requested by the application. |
 <!--DelEnd-->
 

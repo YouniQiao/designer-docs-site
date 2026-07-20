@@ -12,6 +12,8 @@ Chooses files of the specified types. This API uses a promise to return the resu
 
 **Deprecated since:** 9
 
+<!--Device-unnamed-declare function choose(types?: string[]): Promise<string>--><!--Device-unnamed-declare function choose(types?: string[]): Promise<string>-End-->
+
 **System capability:** SystemCapability.FileManagement.UserFileService
 
 **Parameters:**
@@ -24,7 +26,7 @@ Chooses files of the specified types. This API uses a promise to return the resu
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;string&gt; | Promise used to return the result. An error code is returned. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the result. An error code is returned. |
 
 
 ## choose
@@ -39,13 +41,15 @@ Chooses a file. This API uses an asynchronous callback to return the result.
 
 **Deprecated since:** 9
 
+<!--Device-unnamed-declare function choose(callback: AsyncCallback<string>): void--><!--Device-unnamed-declare function choose(callback: AsyncCallback<string>): void-End-->
+
 **System capability:** SystemCapability.FileManagement.UserFileService
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;string&gt; | Yes | Callback used to return the result. An error code is returned. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the result. An error code is returned. |
 
 
 ## choose
@@ -60,6 +64,8 @@ Chooses files of the specified types. This API uses an asynchronous callback to 
 
 **Deprecated since:** 9
 
+<!--Device-unnamed-declare function choose(types: string[], callback: AsyncCallback<string>): void--><!--Device-unnamed-declare function choose(types: string[], callback: AsyncCallback<string>): void-End-->
+
 **System capability:** SystemCapability.FileManagement.UserFileService
 
 **Parameters:**
@@ -67,5 +73,5 @@ Chooses files of the specified types. This API uses an asynchronous callback to 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | types | string[] | Yes | Types of the files to choose. |
-| callback | AsyncCallback&lt;string&gt; | Yes | Callback used to return the result. An error code is returned. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the result. An error code is returned. |
 

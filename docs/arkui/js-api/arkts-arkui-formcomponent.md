@@ -1,6 +1,6 @@
 # FormComponent
 
-Defines the FormComponent.
+Defines FormComponent Component.
 
 
 ## FormComponent
@@ -12,6 +12,8 @@ FormComponent(value: FormInfo)
 Set a new value of form info.
 
 **Since:** 7
+
+<!--Device-FormComponentInterface-(value: FormInfo): FormComponentAttribute--><!--Device-FormComponentInterface-(value: FormInfo): FormComponentAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

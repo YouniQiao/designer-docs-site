@@ -12,6 +12,8 @@ Defines the attribute decorator, which is used to decorate attributes of the cus
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-unnamed-export declare type TypeDecorator = <T>(type: TypeConstructor<T>) => PropertyDecorator--><!--Device-unnamed-export declare type TypeDecorator = <T>(type: TypeConstructor<T>) => PropertyDecorator-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**

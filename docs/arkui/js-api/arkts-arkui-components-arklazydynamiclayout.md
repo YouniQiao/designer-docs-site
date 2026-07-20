@@ -18,7 +18,7 @@ import { LazyDynamicLayoutAttribute, LazyDynamicLayout } from '@kit.ArkUI';
 
 | Name | Description |
 | --- | --- |
-| [LazyDynamicLayoutAttribute](arkts-arkui-lazydynamiclayoutattribute-c.md) | Defines the LazyDynamicLayout attribute functions. |
+| [LazyDynamicLayoutAttribute](arkts-arkui-arkui-components-arklazydynamiclayout-lazydynamiclayoutattribute-c.md) | Defines the LazyDynamicLayout attribute functions. |
 
 ### Constants
 

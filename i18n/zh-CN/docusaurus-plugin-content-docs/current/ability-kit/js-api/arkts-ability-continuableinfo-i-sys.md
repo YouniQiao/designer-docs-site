@@ -1,9 +1,10 @@
 # ContinuableInfo（系统接口）
 
-当注册应用任务流转状态监听的回调时，返回应用任务流转状态和流转信息，注册详见：
-[on('continueStateChange')接口](arkts-ability-on-f-sys.md#on-1)。
+当注册应用任务流转状态监听的回调时，返回应用任务流转状态和流转信息，注册详见：[on('continueStateChange')接口](arkts-ability-distributedmissionmanager-on-f-sys.md#on-1)。
 
 **起始版本：** 10
+
+<!--Device-unnamed-export interface ContinuableInfo--><!--Device-unnamed-export interface ContinuableInfo-End-->
 
 **系统能力：** SystemCapability.Ability.AbilityRuntime.Mission
 
@@ -23,6 +24,8 @@ bundleName: string
 
 **模型约束：** 此接口仅可在Stage模型下使用。
 
+<!--Device-ContinuableInfo-bundleName: string--><!--Device-ContinuableInfo-bundleName: string-End-->
+
 **系统能力：** SystemCapability.Ability.AbilityRuntime.Mission
 
 **系统接口：** 此接口为系统接口。
@@ -40,6 +43,8 @@ continueType?: string
 **起始版本：** 12
 
 **模型约束：** 此接口仅可在Stage模型下使用。
+
+<!--Device-ContinuableInfo-continueType?: string--><!--Device-ContinuableInfo-continueType?: string-End-->
 
 **系统能力：** SystemCapability.Ability.AbilityRuntime.Mission
 
@@ -59,6 +64,8 @@ srcBundleName?: string
 
 **模型约束：** 此接口仅可在Stage模型下使用。
 
+<!--Device-ContinuableInfo-srcBundleName?: string--><!--Device-ContinuableInfo-srcBundleName?: string-End-->
+
 **系统能力：** SystemCapability.Ability.AbilityRuntime.Mission
 
 **系统接口：** 此接口为系统接口。
@@ -77,6 +84,8 @@ srcDeviceId: string
 
 **模型约束：** 此接口仅可在Stage模型下使用。
 
+<!--Device-ContinuableInfo-srcDeviceId: string--><!--Device-ContinuableInfo-srcDeviceId: string-End-->
+
 **系统能力：** SystemCapability.Ability.AbilityRuntime.Mission
 
 **系统接口：** 此接口为系统接口。
@@ -94,6 +103,8 @@ targetAppIds?: Array<string>
 **起始版本：** 26.0.0
 
 **模型约束：** 此接口仅可在Stage模型下使用。
+
+<!--Device-ContinuableInfo-targetAppIds?: Array<string>--><!--Device-ContinuableInfo-targetAppIds?: Array<string>-End-->
 
 **系统能力：** SystemCapability.Ability.AbilityRuntime.Mission
 

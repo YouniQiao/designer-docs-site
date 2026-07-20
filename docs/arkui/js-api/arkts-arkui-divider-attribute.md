@@ -1,12 +1,14 @@
 # Divider properties/events
 
-In addition to the [universal attributes](arkts-arkui-commonmethod-c.md), the following attributes are supported.
+In addition to the [universal attributes](arkts-arkui-common-commonmethod-c.md), the following attributes are supported.
 
-The [universal events](arkts-arkui-commonmethod-c.md) are supported.
+The [universal events](arkts-arkui-common-commonmethod-c.md) are supported.
 
 **Inheritance/Implementation:** DividerAttribute extends [CommonMethod<DividerAttribute>](CommonMethod<DividerAttribute>)
 
 **Since:** 7
+
+<!--Device-unnamed-declare class DividerAttribute extends CommonMethod<DividerAttribute>--><!--Device-unnamed-declare class DividerAttribute extends CommonMethod<DividerAttribute>-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -16,8 +18,7 @@ The [universal events](arkts-arkui-commonmethod-c.md) are supported.
 color(value: ResourceColor)
 ```
 
-Sets the color of the divider. This attribute can be dynamically set using
-[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
+Sets the color of the divider. This attribute can be dynamically set using [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 7
 
@@ -25,13 +26,15 @@ Sets the color of the divider. This attribute can be dynamically set using
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-DividerAttribute-color(value: ResourceColor): DividerAttribute--><!--Device-DividerAttribute-color(value: ResourceColor): DividerAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ResourceColor | Yes | Color of the divider.<br>Default value: **'#33182431'**<br>Invalid values are treated as the default value.<br>You can set a common divider color using [WithTheme](WithTheme). |
+| value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Color of the divider.<br>Default value: **'#33182431'**<br>Invalid values are treated as the default value.<br>You can set a common divider color using [WithTheme](../arkts-apis/arkts-arkui-with-theme-con.md#withtheme). |
 
 ## lineCap
 
@@ -39,8 +42,7 @@ Sets the color of the divider. This attribute can be dynamically set using
 lineCap(value: LineCapStyle)
 ```
 
-Sets the line cap style of the divider. This attribute can be dynamically set using
-[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
+Sets the line cap style of the divider. This attribute can be dynamically set using [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 7
 
@@ -48,13 +50,15 @@ Sets the line cap style of the divider. This attribute can be dynamically set us
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-DividerAttribute-lineCap(value: LineCapStyle): DividerAttribute--><!--Device-DividerAttribute-lineCap(value: LineCapStyle): DividerAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | LineCapStyle | Yes | Line cap style of the divider.<br>Default value: **LineCapStyle.Butt**<br>Invalidvalues are treated as the default value. |
+| value | [LineCapStyle](../arkts-apis/arkts-arkui-enums-linecapstyle-e.md) | Yes | Line cap style of the divider.<br>Default value: **LineCapStyle.Butt**<br>Invalid values are treated as the default value. |
 
 ## strokeWidth
 
@@ -62,8 +66,7 @@ Sets the line cap style of the divider. This attribute can be dynamically set us
 strokeWidth(value: number | string)
 ```
 
-Sets the stroke width of the divider. This attribute can be dynamically set using
-[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
+Sets the stroke width of the divider. This attribute can be dynamically set using [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 7
 
@@ -71,13 +74,15 @@ Sets the stroke width of the divider. This attribute can be dynamically set usin
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-DividerAttribute-strokeWidth(value: number | string): DividerAttribute--><!--Device-DividerAttribute-strokeWidth(value: number | string): DividerAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | number \| string | Yes | Stroke width of the divider.<br>Default value: **1px**<br>Invalid values aretreated as the default value.<br>Unit: vp<br>**NOTE**<br>Percentage values are not supported. This attributehas lower priority than the[height](arkts-arkui-commonmethod-c.md#height-1) attribute. If itsvalue exceeds the **height** setting, cropping is performed based on the **height** constraint. Due to hardwarelimitations on some devices where 1 px dividers may not display properly after rounding, you are advised to usethe **2px** value. |
+| value | number \| string | Yes | Stroke width of the divider.<br>Default value: **1px**<br>Invalid values are treated as the default value.<br>Unit: vp<br>**NOTE**<br>Percentage values are not supported. This attribute has lower priority than the [height](arkts-arkui-common-commonmethod-c.md#height-1) attribute. If its value exceeds the **height** setting, cropping is performed based on the **height** constraint. Due to hardware limitations on some devices where 1 px dividers may not display properly after rounding, you are advised to use the **2px** value. |
 
 ## vertical
 
@@ -85,8 +90,7 @@ Sets the stroke width of the divider. This attribute can be dynamically set usin
 vertical(value: boolean)
 ```
 
-Sets the direction of the divider. This attribute can be dynamically set using
-[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
+Sets the direction of the divider. This attribute can be dynamically set using [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 7
 
@@ -94,11 +98,13 @@ Sets the direction of the divider. This attribute can be dynamically set using
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-DividerAttribute-vertical(value: boolean): DividerAttribute--><!--Device-DividerAttribute-vertical(value: boolean): DividerAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | boolean | Yes | Whether the divider is vertical or horizontal.<br>**false**: A horizontal divider isused.<br>**true**: A vertical divider is used.<br>Default value: **false**<br>Invalid values are treated as thedefault value. |
+| value | boolean | Yes | Whether the divider is vertical or horizontal.<br>**false**: A horizontal divider is used.<br>**true**: A vertical divider is used.<br>Default value: **false**<br>Invalid values are treated as the default value. |
 

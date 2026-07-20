@@ -10,6 +10,8 @@ The builder function of NavDestination component.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-unnamed-export type NavDestinationBuilder = (name: string, param?: Object) => void--><!--Device-unnamed-export type NavDestinationBuilder = (name: string, param?: Object) => void-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**

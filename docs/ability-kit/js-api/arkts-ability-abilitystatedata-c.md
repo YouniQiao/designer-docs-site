@@ -1,12 +1,10 @@
 # AbilityStateData
 
-The AbilityStateData module defines a struct for ability state information. Once a lifecycle change listener is
-registered using
-[on](arkts-ability-on-f.md#on-1)
-, you can obtain an instance of this struct from the input parameter of the **onAbilityStateChanged** callback of
-[ApplicationStateObserver](arkts-ability-applicationstateobserver-c.md).
+The AbilityStateData module defines a struct for ability state information. Once a lifecycle change listener is registered using [on](arkts-ability-appmanager-on-f.md#on-1), you can obtain an instance of this struct from the input parameter of the **onAbilityStateChanged** callback of [ApplicationStateObserver](arkts-ability-applicationstateobserver-c.md).
 
 **Since:** 14
+
+<!--Device-unnamed-declare class AbilityStateData--><!--Device-unnamed-declare class AbilityStateData-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -22,6 +20,8 @@ Ability name.
 
 **Since:** 14
 
+<!--Device-AbilityStateData-abilityName: string--><!--Device-AbilityStateData-abilityName: string-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 ## abilityType
@@ -30,13 +30,13 @@ Ability name.
 abilityType: number
 ```
 
-[Ability type](../../../../reference/apis-ability-kit/js-apis-inner-application-abilityStateData.md#ability-types),
-which can be [UIAbility](arkts-app-ability-uiability.md) or
-[ExtensionAbility](arkts-ability-extensionability-c.md).
+[Ability type](../../../../reference/apis-ability-kit/js-apis-inner-application-abilityStateData.md#ability-types),which can be [UIAbility](arkts-app-ability-uiability.md) or [ExtensionAbility](arkts-ability-app-ability-extensionability-extensionability-c.md).
 
 **Type:** number
 
 **Since:** 14
+
+<!--Device-AbilityStateData-abilityType: int--><!--Device-AbilityStateData-abilityType: int-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -52,6 +52,8 @@ Index of an [application clone](../../../../quick-start/app-clone.md).
 
 **Since:** 14
 
+<!--Device-AbilityStateData-appCloneIndex?: int--><!--Device-AbilityStateData-appCloneIndex?: int-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 ## bundleName
@@ -66,6 +68,8 @@ Bundle name.
 
 **Since:** 14
 
+<!--Device-AbilityStateData-bundleName: string--><!--Device-AbilityStateData-bundleName: string-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 ## callerBundleName
@@ -79,6 +83,8 @@ Bundle name of the application that triggers the creation of the ability.
 **Type:** string
 
 **Since:** 23
+
+<!--Device-AbilityStateData-callerBundleName?: string--><!--Device-AbilityStateData-callerBundleName?: string-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -98,6 +104,8 @@ Whether the ability belongs to an atomic service.
 
 **Since:** 14
 
+<!--Device-AbilityStateData-isAtomicService: boolean--><!--Device-AbilityStateData-isAtomicService: boolean-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 ## moduleName
@@ -111,6 +119,8 @@ Module name to which the ability belongs.
 **Type:** string
 
 **Since:** 14
+
+<!--Device-AbilityStateData-moduleName: string--><!--Device-AbilityStateData-moduleName: string-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -126,6 +136,8 @@ Process ID.
 
 **Since:** 14
 
+<!--Device-AbilityStateData-pid: int--><!--Device-AbilityStateData-pid: int-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
 ## state
@@ -136,21 +148,14 @@ state: number
 
 Ability state.
 
-- [Stage model](../../../../application-models/ability-terminology.md#stage-model): For the
-[UIAbility](arkts-app-ability-uiability.md), see
-[UIAbility States](../../../../reference/apis-ability-kit/js-apis-inner-application-abilityStateData.md#uiability-states)
-. For the [ExtensionAbility](arkts-ability-extensionability-c.md), see
-[ExtensionAbility States](../../../../reference/apis-ability-kit/js-apis-inner-application-abilityStateData.md#extensionability-states)
-. For the [UIExtensionAbility](arkts-ability-uiextensionability-c.md), see
-[UIExtensionAbility States](../../../../reference/apis-ability-kit/js-apis-inner-application-abilityStateData.md#uiextensionability-states)
-.
-- [FA model](../../../../application-models/ability-terminology.md#fa-model): For the ability, see
-[Ability States](../../../../reference/apis-ability-kit/js-apis-inner-application-abilityStateData.md#ability-states)
-.
+- [Stage model](../../../../application-models/ability-terminology.md#stage-model): For the [UIAbility](arkts-app-ability-uiability.md), see [UIAbility States](../../../../reference/apis-ability-kit/js-apis-inner-application-abilityStateData.md#uiability-states). For the [ExtensionAbility](arkts-ability-app-ability-extensionability-extensionability-c.md), see [ExtensionAbility States](../../../../reference/apis-ability-kit/js-apis-inner-application-abilityStateData.md#extensionability-states). For the [UIExtensionAbility](arkts-ability-app-ability-uiextensionability-uiextensionability-c.md), see [UIExtensionAbility States](../../../../reference/apis-ability-kit/js-apis-inner-application-abilityStateData.md#uiextensionability-states).  
+- [FA model](../../../../application-models/ability-terminology.md#fa-model): For the ability, see [Ability States](../../../../reference/apis-ability-kit/js-apis-inner-application-abilityStateData.md#ability-states).
 
 **Type:** number
 
 **Since:** 14
+
+<!--Device-AbilityStateData-state: int--><!--Device-AbilityStateData-state: int-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -165,6 +170,8 @@ UID of the application.
 **Type:** number
 
 **Since:** 14
+
+<!--Device-AbilityStateData-uid: int--><!--Device-AbilityStateData-uid: int-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 

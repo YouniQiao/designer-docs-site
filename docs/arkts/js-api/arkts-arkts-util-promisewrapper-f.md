@@ -1,0 +1,38 @@
+# promiseWrapper
+
+## Modules to Import
+
+```TypeScript
+import { util } from '@kit.ArkTS';
+```
+
+## promiseWrapper
+
+```TypeScript
+function promiseWrapper(original: (err: Object, value: Object) => void): Object
+```
+
+Receives a function that uses the error-first callback mode, that is, uses `(err, value) => callback` as the last parameter, and uses a promise to return the result.
+
+**Since:** 7
+
+**Deprecated since:** 9
+
+**Substitutes:** [promisify](arkts-arkts-util-promisify-f.md#promisify-1)
+
+<!--Device-util-function promiseWrapper(original: (err: Object, value: Object) => void): Object--><!--Device-util-function promiseWrapper(original: (err: Object, value: Object) => void): Object-End-->
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| original | (err: Object, value: Object) => void | Yes | Asynchronous function. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Promise in the error-first style (that is, (err, value) =&gt; ... is called as the last parameter). |
+

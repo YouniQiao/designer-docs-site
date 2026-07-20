@@ -1,6 +1,11 @@
 # RichEditor
 
-Provides an interface for writing texts.
+**RichEditor** is a component that supports interactive text editing and mixture of text and imagery.
+
+> **NOTE**
+>
+> This component is supported since API version 10. Updates will be marked with a superscript to indicate their 
+> earliest API version.
 
 
 ## RichEditor
@@ -16,6 +21,8 @@ Called when create RichEditor.
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-RichEditorInterface-(value: RichEditorOptions): RichEditorAttribute--><!--Device-RichEditorInterface-(value: RichEditorOptions): RichEditorAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -38,6 +45,8 @@ Called when create RichEditor.
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-RichEditorInterface-(options: RichEditorStyledStringOptions): RichEditorAttribute--><!--Device-RichEditorInterface-(options: RichEditorStyledStringOptions): RichEditorAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

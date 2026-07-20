@@ -4,6 +4,8 @@ The displaySync module allows your application to draw its custom UI content at 
 
 **Since:** 11
 
+<!--Device-unnamed-declare namespace displaySync--><!--Device-unnamed-declare namespace displaySync-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 ## Modules to Import
@@ -18,12 +20,12 @@ import { displaySync } from '@kit.ArkGraphics2D';
 
 | Name | Description |
 | --- | --- |
-| [create](arkts-arkgraphics2d-create-f.md#create-1) | Creates a **DisplaySync** object, through which you can set the frame rate of the custom UI content. |
+| [create](arkts-arkgraphics2d-displaysync-create-f.md#create-1) | Creates a **DisplaySync** object, through which you can set the frame rate of the custom UI content. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [DisplaySync](arkts-arkgraphics2d-displaysync-i.md) | An object that implements the setting of the frame rate and callback. It provides APIs for you to set the frame rate, register a callback, and start/stop the callback.Before calling any of the following APIs, you must use [displaySync.create()](arkts-arkgraphics2d-create-f.md#create-1) to createa **DisplaySync** instance. |
-| [IntervalInfo](arkts-arkgraphics2d-intervalinfo-i.md) | You can obtain the timestamp information from the event callback, including the timestamp when the current frame arrives and the timestamp when the next frame is expected to arrive. |
+| [DisplaySync](arkts-arkgraphics2d-displaysync-displaysync-i.md) | An object that implements the setting of the frame rate and callback. It provides APIs for you to set the frame rate, register a callback, and start/stop the callback.Before calling any of the following APIs, you must use [displaySync.create()](arkts-arkgraphics2d-displaysync-create-f.md#create-1) to create a **DisplaySync** instance. |
+| [IntervalInfo](arkts-arkgraphics2d-displaysync-intervalinfo-i.md) | You can obtain the timestamp information from the event callback, including the timestamp when the current frame arrives and the timestamp when the next frame is expected to arrive. |
 

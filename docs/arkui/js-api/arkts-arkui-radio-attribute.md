@@ -8,6 +8,8 @@ In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-ap
 
 **Since:** 8
 
+<!--Device-unnamed-declare class RadioAttribute extends CommonMethod<RadioAttribute>--><!--Device-unnamed-declare class RadioAttribute extends CommonMethod<RadioAttribute>-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 ## checked
@@ -18,11 +20,9 @@ checked(value: boolean)
 
 Sets whether the radio button is selected.
 
-Since API version 10, this attribute supports two-way binding through
-[$$](../../../../ui/state-management/arkts-two-way-sync.md).
+Since API version 10, this attribute supports two-way binding through [$$](../../../../ui/state-management/arkts-two-way-sync.md).
 
-Since API version 18, this attribute supports two-way binding through
-[!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
+Since API version 18, this attribute supports two-way binding through [!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
 
 **Since:** 8
 
@@ -30,13 +30,15 @@ Since API version 18, this attribute supports two-way binding through
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-RadioAttribute-checked(value: boolean): RadioAttribute--><!--Device-RadioAttribute-checked(value: boolean): RadioAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | boolean | Yes | Whether the radio button is selected.<br>Default value: **false**<br>**true**: The radiobutton is selected. **false**: The radio button is not selected. |
+| value | boolean | Yes | Whether the radio button is selected.<br>Default value: **false**<br>**true**: The radio button is selected. **false**: The radio button is not selected. |
 
 ## checked
 
@@ -44,11 +46,9 @@ Since API version 18, this attribute supports two-way binding through
 checked(isChecked: Optional<boolean>)
 ```
 
-Sets whether the radio button is selected. Compared with [checked](RadioAttribute#checked(value: boolean)),
-this API supports the **undefined** type for the **isChecked** parameter.
+Sets whether the radio button is selected. Compared with [checked](RadioAttribute#checked(value: boolean)),this API supports the **undefined** type for the **isChecked** parameter.
 
-This attribute supports two-way binding through [$$](../../../../ui/state-management/arkts-two-way-sync.md) and
-[!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
+This attribute supports two-way binding through [$$](../../../../ui/state-management/arkts-two-way-sync.md) and [!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
 
 **Since:** 18
 
@@ -58,13 +58,15 @@ This attribute supports two-way binding through [$$](../../../../ui/state-manage
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 18.
 
+<!--Device-RadioAttribute-checked(isChecked: Optional<boolean>): RadioAttribute--><!--Device-RadioAttribute-checked(isChecked: Optional<boolean>): RadioAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| isChecked | Optional&lt;boolean&gt; | Yes | Whether the radio button is selected.<br>If **isChecked** is set to**undefined**, the default value **false** is used.<br>**true**: The radio button is selected. **false**: Theradio button is not selected. |
+| isChecked | [Optional](arkts-arkui-optional-t.md)<boolean> | Yes | Whether the radio button is selected.<br>If **isChecked** is set to **undefined**, the default value **false** is used.<br>**true**: The radio button is selected. **false**: The radio button is not selected. |
 
 ## contentModifier
 
@@ -80,13 +82,15 @@ Creates a content modifier.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-RadioAttribute-contentModifier(modifier: ContentModifier<RadioConfiguration>): RadioAttribute--><!--Device-RadioAttribute-contentModifier(modifier: ContentModifier<RadioConfiguration>): RadioAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| modifier | ContentModifier&lt;RadioConfiguration&gt; | Yes | Content modifier to apply to the current component.<br>**modifier**: content modifier. You need a custom class to implement the **ContentModifier** API. |
+| modifier | [ContentModifier](arkts-arkui-common-contentmodifier-i.md)<RadioConfiguration> | Yes | Content modifier to apply to the current component.<br>**modifier**: content modifier. You need a custom class to implement the **ContentModifier** API. |
 
 ## contentModifier
 
@@ -94,8 +98,7 @@ Creates a content modifier.
 contentModifier(modifier: Optional<ContentModifier<RadioConfiguration>>)
 ```
 
-Creates a content modifier. Compared with
-[contentModifier](RadioAttribute#contentModifier(modifier: ContentModifier<RadioConfiguration>))<sup>12+</sup
+Creates a content modifier. Compared with [contentModifier](RadioAttribute#contentModifier(modifier: ContentModifier<RadioConfiguration>))<sup>12+</sup  
 >, this API supports the **undefined** type for the **modifier** parameter.
 
 **Since:** 18
@@ -104,13 +107,15 @@ Creates a content modifier. Compared with
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
 
+<!--Device-RadioAttribute-contentModifier(modifier: Optional<ContentModifier<RadioConfiguration>>): RadioAttribute--><!--Device-RadioAttribute-contentModifier(modifier: Optional<ContentModifier<RadioConfiguration>>): RadioAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| modifier | Optional&lt;ContentModifier&lt;RadioConfiguration&gt;&gt; | Yes | Content modifier to apply to the currentcomponent.<br>**modifier**: content modifier. You need a custom class to implement the **ContentModifier** API.<br>If **modifier** is set to **undefined**, no content modifier is used. |
+| modifier | [Optional](arkts-arkui-optional-t.md)<ContentModifier<RadioConfiguration>> | Yes | Content modifier to apply to the current component.<br>**modifier**: content modifier. You need a custom class to implement the **ContentModifier** API.<br>If **modifier** is set to **undefined**, no content modifier is used. |
 
 ## onChange
 
@@ -126,13 +131,15 @@ Triggered when the selected state of the radio button changes.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
+<!--Device-RadioAttribute-onChange(callback: (isChecked: boolean) => void): RadioAttribute--><!--Device-RadioAttribute-onChange(callback: (isChecked: boolean) => void): RadioAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (isChecked: boolean) =&gt; void | Yes | Selected state of the radio button.<br>The value **true** means that the radiobutton changes from unselected to selected, and **false** means that the radio button changes from selected tounselected. |
+| callback | (isChecked: boolean) => void | Yes | Selected state of the radio button.<br>The value **true** means that the radio button changes from unselected to selected, and **false** means that the radio button changes from selected to unselected. |
 
 ## onChange
 
@@ -140,9 +147,7 @@ Triggered when the selected state of the radio button changes.
 onChange(callback: Optional<OnRadioChangeCallback>)
 ```
 
-Triggered when the selected state of the radio button changes. Compared with
-[onChange](RadioAttribute#onChange(callback: (isChecked: boolean) => void)), this API supports the
-**undefined** type for the **callback** parameter.
+Triggered when the selected state of the radio button changes. Compared with [onChange](RadioAttribute#onChange(callback: (isChecked: boolean) => void)), this API supports the **undefined** type for the **callback** parameter.
 
 **Since:** 18
 
@@ -152,13 +157,15 @@ Triggered when the selected state of the radio button changes. Compared with
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 18.
 
+<!--Device-RadioAttribute-onChange(callback: Optional<OnRadioChangeCallback>): RadioAttribute--><!--Device-RadioAttribute-onChange(callback: Optional<OnRadioChangeCallback>): RadioAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Optional&lt;OnRadioChangeCallback&gt; | Yes | Callback for radio button selection state changes.<br>If**callback** is set to **undefined**, the callback function is not used. |
+| callback | [Optional](arkts-arkui-optional-t.md)<OnRadioChangeCallback> | Yes | Callback for radio button selection state changes.<br>If **callback** is set to **undefined**, the callback function is not used. |
 
 ## radioStyle
 
@@ -176,11 +183,13 @@ Since API version 10, this API is supported in ArkTS widgets.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-RadioAttribute-radioStyle(value?: RadioStyle): RadioAttribute--><!--Device-RadioAttribute-radioStyle(value?: RadioStyle): RadioAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | RadioStyle | No | Style of the radio button in selected or deselected state. |
+| value | [RadioStyle](arkts-arkui-radio-radiostyle-i.md) | No | Style of the radio button in selected or deselected state. |
 

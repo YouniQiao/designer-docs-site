@@ -331,6 +331,7 @@ Obtains the toggle state of a permission. This API uses a promise to return the 
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. Interface caller is not a system app. |
 | [12100001](../errorcode-access-token.md#12100001-invalid-parameters) | Invalid parameter. The permissionName exceeds 256 characters, or the specified permission is not a user_grant permission. |
 | [12100003](../errorcode-access-token.md#12100003-permission-not-exist) | The specified permission does not exist. |
+| [12100004](../errorcode-access-token.md#12100004-listener-apis-not-used-in-pairs) | This API must be used together with [setPermissionRequestToggleStatus](arkts-ability-abilityaccessctrl-atmanager-i-sys.md#setpermissionrequesttogglestatus-1).<br>**Applicable version:** 26.1.0 and later |
 | [12100007](../errorcode-access-token.md#12100007-system-service-not-working-properly) | Service exception. |
 
 **Example**
@@ -353,6 +354,57 @@ atManager.getPermissionRequestToggleStatus(permission).then((res: abilityAccessC
 });
 
 ```
+
+## getPermissionRequestToggleStatus
+
+```TypeScript
+getPermissionRequestToggleStatus(
+      permissionName: Permissions,
+      subProfileId: number): Promise<PermissionRequestToggleStatus>
+```
+
+Obtains the permission dialog toggle status for a specified permission under a specified sub-profile. This API uses a promise to return the result.
+
+**Since:** 26.1.0
+
+**Required permissions:** ohos.permission.GET_SENSITIVE_PERMISSIONS
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AtManager-getPermissionRequestToggleStatus(
+      permissionName: Permissions,
+      subProfileId: int): Promise<PermissionRequestToggleStatus>--><!--Device-AtManager-getPermissionRequestToggleStatus(
+      permissionName: Permissions,
+      subProfileId: int): Promise<PermissionRequestToggleStatus>-End-->
+
+**System capability:** SystemCapability.Security.AccessToken
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| permissionName | [Permissions](arkts-ability-permissions-t.md) | Yes | Name of the permission whose pop-up switch status is to be queried.Passing an invalid value returns error code 12100001.<br>Value constraint: The permission name length cannot exceed 256 characters. |
+| subProfileId | number | Yes | ID of the sub-profile. It can be obtained from [OsAccountSubProfile.id](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-osaccountsubprofile-i-sys.md#id).<br>The value should be an integer. Value constraint: This parameter must be an integer greater than 0. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PermissionRequestToggleStatus> | Promise used to return the toggle status of the dialog box for the specified permission. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. Interface caller does not have permission specified below. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. Interface caller is not a system app. |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
+| [12100001](../errorcode-access-token.md#12100001-invalid-parameters) | Invalid parameter. The permissionName exceeds 256 characters, the specified permission is not a user_grant permission, or the specified subProfileId does not exist for the current user. |
+| [12100003](../errorcode-access-token.md#12100003-permission-not-exist) | The specified permission does not exist. |
+| [12100007](../errorcode-access-token.md#12100007-system-service-not-working-properly) | Service exception. |
+| [12100009](../errorcode-access-token.md#12100009-internal-service-error) | Common inner error. A database error occurs. |
 
 ## getPermissionsStatus
 
@@ -1332,6 +1384,7 @@ Sets the dialog toggle status for a specified permission of the current user. Af
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. Interface caller is not a system app. |
 | [12100001](../errorcode-access-token.md#12100001-invalid-parameters) | Invalid parameter. The permissionName exceeds 256 characters, the specified permission is not a user_grant permission, or the status value is invalid. |
 | [12100003](../errorcode-access-token.md#12100003-permission-not-exist) | The specified permission does not exist. |
+| [12100006](../errorcode-access-token.md#12100006-permission-granting-or-revocation-not-supported) | Operation not allowed. The toggle status of the specified permission has already been set by [setPermissionRequestToggleStatus](arkts-ability-abilityaccessctrl-atmanager-i-sys.md#setpermissionrequesttogglestatus-2).<br>**Applicable version:** 26.1.0 and later |
 | [12100007](../errorcode-access-token.md#12100007-system-service-not-working-properly) | Service exception. |
 | [12100009](../errorcode-access-token.md#12100009-internal-service-error) | Common inner error. A database error occurs. |
 
@@ -1351,4 +1404,60 @@ atManager.setPermissionRequestToggleStatus(permission, abilityAccessCtrl.Permiss
 });
 
 ```
+
+## setPermissionRequestToggleStatus
+
+```TypeScript
+setPermissionRequestToggleStatus(
+      permissionName: Permissions,
+      status: PermissionRequestToggleStatus,
+      subProfileId: number): Promise<void>
+```
+
+Sets the dialog toggle status for a specified permission under a specified sub-profile. After the call is successful, the dialog toggle status of the permission will be set to the specified value. When the status is CLOSED, no permission dialog will pop up when the app requests the permission. When the status is OPEN, the permission dialog will pop up normally when the app requests the permission. This API uses a promise to return the result.
+
+**Since:** 26.1.0
+
+**Required permissions:** ohos.permission.DISABLE_PERMISSION_DIALOG
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AtManager-setPermissionRequestToggleStatus(
+      permissionName: Permissions,
+      status: PermissionRequestToggleStatus,
+      subProfileId: int): Promise<void>--><!--Device-AtManager-setPermissionRequestToggleStatus(
+      permissionName: Permissions,
+      status: PermissionRequestToggleStatus,
+      subProfileId: int): Promise<void>-End-->
+
+**System capability:** SystemCapability.Security.AccessToken
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| permissionName | [Permissions](arkts-ability-permissions-t.md) | Yes | Name of the permission for which the dialog box switch status is to be set. Passing an invalid value returns error code 12100001.<br>Value constraint: The permission name length cannot exceed 256 characters. |
+| status | [PermissionRequestToggleStatus](arkts-ability-abilityaccessctrl-permissionrequesttogglestatus-e-sys.md) | Yes | Toggle state to set. |
+| subProfileId | number | Yes | ID of the sub-profile. It can be obtained from [OsAccountSubProfile.id](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-osaccountsubprofile-i-sys.md#id).<br>The value should be an integer. Value constraint: This parameter must be an integer greater than 0. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. Interface caller does not have permission specified below. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. Interface caller is not a system app. |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
+| [12100001](../errorcode-access-token.md#12100001-invalid-parameters) | Invalid parameter. The permissionName exceeds 256 characters, the specified permission is not a user_grant permission, the status value is invalid, or the specified subProfileId does not exist for the current user. |
+| [12100003](../errorcode-access-token.md#12100003-permission-not-exist) | The specified permission does not exist. |
+| [12100006](../errorcode-access-token.md#12100006-permission-granting-or-revocation-not-supported) | Operation not allowed. The toggle status of the specified permission has already been set by [setPermissionRequestToggleStatus](arkts-ability-abilityaccessctrl-atmanager-i-sys.md#setpermissionrequesttogglestatus-2). |
+| [12100007](../errorcode-access-token.md#12100007-system-service-not-working-properly) | Service exception. |
+| [12100009](../errorcode-access-token.md#12100009-internal-service-error) | Common inner error. A database error occurs. |
 

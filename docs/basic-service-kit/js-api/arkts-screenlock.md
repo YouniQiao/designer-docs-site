@@ -4,6 +4,8 @@ systemScreenLock
 
 **Since:** 7
 
+<!--Device-unnamed-declare namespace screenLock--><!--Device-unnamed-declare namespace screenLock-End-->
+
 **System capability:** SystemCapability.MiscServices.ScreenLock
 
 ## Modules to Import
@@ -18,34 +20,34 @@ import { screenLock } from '@kit.BasicServicesKit';
 
 | Name | Description |
 | --- | --- |
-| [isScreenLocked](arkts-basicservices-isscreenlocked-f.md#isscreenlocked-1) | Checks whether the screen is currently locked. |
-| [isScreenLocked](arkts-basicservices-isscreenlocked-f.md#isscreenlocked-2) | Checks whether the screen is currently locked. |
-| [isSecureMode](arkts-basicservices-issecuremode-f.md#issecuremode-1) | Checks whether the screen lock of the current device is secure. |
-| [isSecureMode](arkts-basicservices-issecuremode-f.md#issecuremode-2) | Checks whether the screen lock of the current device is secure. |
-| [unlockScreen](arkts-basicservices-unlockscreen-f.md#unlockscreen-1) | Unlock the screen. |
-| [unlockScreen](arkts-basicservices-unlockscreen-f.md#unlockscreen-2) | Unlock the screen. |
+| [isScreenLocked](arkts-basicservices-screenlock-isscreenlocked-f.md#isscreenlocked-1) | Checks whether the screen is currently locked. |
+| [isScreenLocked](arkts-basicservices-screenlock-isscreenlocked-f.md#isscreenlocked-2) | Checks whether the screen is currently locked. |
+| [isSecureMode](arkts-basicservices-screenlock-issecuremode-f.md#issecuremode-1) | Checks whether the screen lock of the current device is secure. |
+| [isSecureMode](arkts-basicservices-screenlock-issecuremode-f.md#issecuremode-2) | Checks whether the screen lock of the current device is secure. |
+| [unlockScreen](arkts-basicservices-screenlock-unlockscreen-f.md#unlockscreen-1) | Unlock the screen. |
+| [unlockScreen](arkts-basicservices-screenlock-unlockscreen-f.md#unlockscreen-2) | Unlock the screen. |
 
 <!--Del-->
 ### Functions（系统接口）
 
 | Name | Description |
 | --- | --- |
-| [getScreenLockAuthState](arkts-basicservices-getscreenlockauthstate-f-sys.md#getscreenlockauthstate-1) | Obtain the screen lock authentication state for os account local userId. |
-| [getStrongAuth](arkts-basicservices-getstrongauth-f-sys.md#getstrongauth-1) | Obtain strong authentication reason flags for os account local userId. |
-| [getUnlockPolicy](arkts-basicservices-getunlockpolicy-f-sys.md#getunlockpolicy-1) | Obtains the authentication policy used to unlock the screen. |
-| [isDeviceLocked](arkts-basicservices-isdevicelocked-f-sys.md#isdevicelocked-1) | Check whether the device is currently locked and the screenlock requires an identity to authenticate and unlock. |
-| [isLocked](arkts-basicservices-islocked-f-sys.md#islocked-1) | Checks whether the screen is currently locked. |
-| [isScreenLockDisabled](arkts-basicservices-isscreenlockdisabled-f-sys.md#isscreenlockdisabled-1) | Check whether screen lock is disabled for os account local userId. |
-| [lock](arkts-basicservices-lock-f-sys.md#lock-1) | Lock the screen. |
-| [lock](arkts-basicservices-lock-f-sys.md#lock-2) | Lock the screen. |
-| [onSystemEvent](arkts-basicservices-onsystemevent-f-sys.md#onsystemevent-1) | Register system event related to screen lock service. |
-| [requestStrongAuth](arkts-basicservices-requeststrongauth-f-sys.md#requeststrongauth-1) | Request strong authentication for os account local userId. |
-| [sendScreenLockEvent](arkts-basicservices-sendscreenlockevent-f-sys.md#sendscreenlockevent-1) | The screen lock app sends the event to the screen lock service. |
-| [sendScreenLockEvent](arkts-basicservices-sendscreenlockevent-f-sys.md#sendscreenlockevent-2) | The screen lock app sends the event to the screen lock service. |
-| [setScreenLockAuthState](arkts-basicservices-setscreenlockauthstate-f-sys.md#setscreenlockauthstate-1) | Set the screen lock authentication state for os account local userId. |
-| [setScreenLockDisabled](arkts-basicservices-setscreenlockdisabled-f-sys.md#setscreenlockdisabled-1) | Disable screen lock showing for os account local userId. This only becomes effective when there is no password. |
-| [unlock](arkts-basicservices-unlock-f-sys.md#unlock-1) | Unlock the screen. |
-| [unlock](arkts-basicservices-unlock-f-sys.md#unlock-2) | Unlock the screen. |
+| [getScreenLockAuthState](arkts-basicservices-screenlock-getscreenlockauthstate-f-sys.md#getscreenlockauthstate-1) | Obtain the screen lock authentication state for os account local userId. |
+| [getStrongAuth](arkts-basicservices-screenlock-getstrongauth-f-sys.md#getstrongauth-1) | Obtain strong authentication reason flags for os account local userId. |
+| [getUnlockPolicy](arkts-basicservices-screenlock-getunlockpolicy-f-sys.md#getunlockpolicy-1) | Obtains the authentication policy used to unlock the screen. |
+| [isDeviceLocked](arkts-basicservices-screenlock-isdevicelocked-f-sys.md#isdevicelocked-1) | Check whether the device is currently locked and the screenlock requires an identity to authenticate and unlock. |
+| [isLocked](arkts-basicservices-screenlock-islocked-f-sys.md#islocked-1) | Checks whether the screen is currently locked. |
+| [isScreenLockDisabled](arkts-basicservices-screenlock-isscreenlockdisabled-f-sys.md#isscreenlockdisabled-1) | Check whether screen lock is disabled for os account local userId. |
+| [lock](arkts-basicservices-screenlock-lock-f-sys.md#lock-1) | Lock the screen. |
+| [lock](arkts-basicservices-screenlock-lock-f-sys.md#lock-2) | Lock the screen. |
+| [onSystemEvent](arkts-basicservices-screenlock-onsystemevent-f-sys.md#onsystemevent-1) | Register system event related to screen lock service. |
+| [requestStrongAuth](arkts-basicservices-screenlock-requeststrongauth-f-sys.md#requeststrongauth-1) | Request strong authentication for os account local userId. |
+| [sendScreenLockEvent](arkts-basicservices-screenlock-sendscreenlockevent-f-sys.md#sendscreenlockevent-1) | The screen lock app sends the event to the screen lock service. |
+| [sendScreenLockEvent](arkts-basicservices-screenlock-sendscreenlockevent-f-sys.md#sendscreenlockevent-2) | The screen lock app sends the event to the screen lock service. |
+| [setScreenLockAuthState](arkts-basicservices-screenlock-setscreenlockauthstate-f-sys.md#setscreenlockauthstate-1) | Set the screen lock authentication state for os account local userId. |
+| [setScreenLockDisabled](arkts-basicservices-screenlock-setscreenlockdisabled-f-sys.md#setscreenlockdisabled-1) | Disable screen lock showing for os account local userId. This only becomes effective when there is no password. |
+| [unlock](arkts-basicservices-screenlock-unlock-f-sys.md#unlock-1) | Unlock the screen. |
+| [unlock](arkts-basicservices-screenlock-unlock-f-sys.md#unlock-2) | Unlock the screen. |
 <!--DelEnd-->
 
 <!--Del-->
@@ -53,7 +55,7 @@ import { screenLock } from '@kit.BasicServicesKit';
 
 | Name | Description |
 | --- | --- |
-| [SystemEvent](arkts-basicservices-systemevent-i-sys.md) | Indicates the system event type and parameter related to the screenlock management service. |
+| [SystemEvent](arkts-basicservices-screenlock-systemevent-i-sys.md) | Indicates the system event type and parameter related to the screenlock management service. |
 <!--DelEnd-->
 
 <!--Del-->
@@ -61,9 +63,9 @@ import { screenLock } from '@kit.BasicServicesKit';
 
 | Name | Description |
 | --- | --- |
-| [AuthState](arkts-basicservices-authstate-e-sys.md) | Indicates the screen lock authentication state. |
-| [StrongAuthReasonFlags](arkts-basicservices-strongauthreasonflags-e-sys.md) | Indicates the strong authentication reason flags used to request. |
-| [UnlockPolicy](arkts-basicservices-unlockpolicy-e-sys.md) | Indicates the screen lock authentication policy used to unlock the screen. |
+| [AuthState](arkts-basicservices-screenlock-authstate-e-sys.md) | Indicates the screen lock authentication state. |
+| [StrongAuthReasonFlags](arkts-basicservices-screenlock-strongauthreasonflags-e-sys.md) | Indicates the strong authentication reason flags used to request. |
+| [UnlockPolicy](arkts-basicservices-screenlock-unlockpolicy-e-sys.md) | Indicates the screen lock authentication policy used to unlock the screen. |
 <!--DelEnd-->
 
 <!--Del-->
@@ -71,6 +73,6 @@ import { screenLock } from '@kit.BasicServicesKit';
 
 | Name | Description |
 | --- | --- |
-| [EventType](arkts-basicservices-eventtype-t-sys.md) | Indicates the system event type related to the screen lock management service. Added unlockPolicyChanged. |
+| [EventType](arkts-basicservices-screenlock-eventtype-t-sys.md) | Indicates the system event type related to the screen lock management service. Added unlockPolicyChanged. |
 <!--DelEnd-->
 

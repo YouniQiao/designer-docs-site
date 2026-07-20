@@ -1,0 +1,93 @@
+# AeadParamsSpec
+
+Describes parameters in [init()](arkts-cryptoarchitecture-cryptoframework-cipher-i.md#init-4) for symmetric encryption and decryption using authenticated encryption with associated data (AEAD). It inherits from [ParamsSpec](arkts-cryptoarchitecture-cryptoframework-paramsspec-i.md).
+
+It is applicable to the CCM and GCM modes of [AES](../../../../security/CryptoArchitectureKit/crypto-sym-encrypt-decrypt-spec.md#aes).It is applicable to the GCM mode of [SM4](../../../../security/CryptoArchitectureKit/crypto-sym-encrypt-decrypt-spec.md#sm4).It is applicable to [ChaCha20-Poly1305](../../../../security/CryptoArchitectureKit/crypto-sym-encrypt-decrypt-spec.md#chacha20).
+
+> **NOTE**  
+>  
+> When **AeadParamsSpec** is used for encryption in AES-CCM mode:  
+> - If the tag length is specified during encryption, the same length must be passed during decryption.  
+>  
+> - Only one of [update](arkts-cryptoarchitecture-cryptoframework-cipher-i.md#update-1) and  
+> [doFinal](arkts-cryptoarchitecture-cryptoframework-cipher-i.md#dofinal-1) can be called for encryption or decryption in CCM mode. Each  
+> method can be called only once.
+
+**Inheritance/Implementation:** AeadParamsSpec extends [ParamsSpec](arkts-cryptoarchitecture-cryptoframework-paramsspec-i.md)
+
+**Since:** 26.0.0
+
+<!--Device-cryptoFramework-interface AeadParamsSpec extends ParamsSpec--><!--Device-cryptoFramework-interface AeadParamsSpec extends ParamsSpec-End-->
+
+**System capability:** SystemCapability.Security.CryptoFramework.Cipher
+
+## Modules to Import
+
+```TypeScript
+import { cryptoFramework } from '@kit.CryptoArchitectureKit';
+```
+
+## authenticatedData
+
+```TypeScript
+authenticatedData?: Uint8Array
+```
+
+Optional additional authenticated data.
+
+**Type:** Uint8Array
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+<!--Device-AeadParamsSpec-authenticatedData?: Uint8Array--><!--Device-AeadParamsSpec-authenticatedData?: Uint8Array-End-->
+
+**System capability:** SystemCapability.Security.CryptoFramework.Cipher
+
+## nonce
+
+```TypeScript
+nonce: Uint8Array
+```
+
+Number used once.
+
+<br>For AES-CCM, the nonce length ranges from 7 to 13 bytes.For AES-GCM, the nonce length ranges from 1 to 128 bytes, 12 bytes are recommended.For SM4-GCM, the nonce length ranges from 1 to 128 bytes, 12 bytes are recommended.For ChaCha20-Poly1305, the nonce length must be 12 bytes.
+
+**Type:** Uint8Array
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+<!--Device-AeadParamsSpec-nonce: Uint8Array--><!--Device-AeadParamsSpec-nonce: Uint8Array-End-->
+
+**System capability:** SystemCapability.Security.CryptoFramework.Cipher
+
+## tagLen
+
+```TypeScript
+tagLen?: number
+```
+
+Authentication tag length.
+
+For encryption, the tag will be added to the end of the ciphertext.For decryption, the tag should be at the end of the ciphertext.The value should be an integer.<br>For AES-CCM, the default value is 12. The supported values are 4, 6, 8, 10, 12, 14, and 16.For AES-GCM, the default value is 16. The supported values are 4, 8, 12, 13, 14, 15, and 16.For SM4-GCM, the default value is 16. The supported values are 4, 8, 12, 13, 14, 15, and 16.For ChaCha20-Poly1305, the default value is 16. The supported value is 16.
+
+**Type:** number
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+<!--Device-AeadParamsSpec-tagLen?: int--><!--Device-AeadParamsSpec-tagLen?: int-End-->
+
+**System capability:** SystemCapability.Security.CryptoFramework.Cipher
+

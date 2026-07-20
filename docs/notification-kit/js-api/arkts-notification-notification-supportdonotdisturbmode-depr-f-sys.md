@@ -1,0 +1,59 @@
+# supportDoNotDisturbMode (System API)
+
+## supportDoNotDisturbMode
+
+```TypeScript
+function supportDoNotDisturbMode(callback: AsyncCallback<boolean>): void
+```
+
+Checks whether DND mode is supported. This API uses an asynchronous callback to return the result.
+
+**Since:** 8
+
+**Deprecated since:** 9
+
+**Substitutes:** isSupportDoNotDisturbMode
+
+**Required permissions:** ohos.permission.NOTIFICATION_CONTROLLER
+
+<!--Device-notification-function supportDoNotDisturbMode(callback: AsyncCallback<boolean>): void--><!--Device-notification-function supportDoNotDisturbMode(callback: AsyncCallback<boolean>): void-End-->
+
+**System capability:** SystemCapability.Notification.Notification
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. |
+
+
+## supportDoNotDisturbMode
+
+```TypeScript
+function supportDoNotDisturbMode(): Promise<boolean>
+```
+
+Checks whether DND mode is supported. This API uses a promise to return the result.
+
+**Since:** 8
+
+**Deprecated since:** 9
+
+**Substitutes:** isSupportDoNotDisturbMode
+
+**Required permissions:** ohos.permission.NOTIFICATION_CONTROLLER
+
+<!--Device-notification-function supportDoNotDisturbMode(): Promise<boolean>--><!--Device-notification-function supportDoNotDisturbMode(): Promise<boolean>-End-->
+
+**System capability:** SystemCapability.Notification.Notification
+
+**System API:** This is a system API.
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. |
+

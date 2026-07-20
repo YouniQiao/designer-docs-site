@@ -1,0 +1,52 @@
+# batchUpdate
+
+## Modules to Import
+
+```TypeScript
+import { asset } from '@kit.AssetStoreKit';
+```
+
+## batchUpdate
+
+```TypeScript
+function batchUpdate(sourceAttributes: Array<AssetMap>, destAttributes: Array<AssetMap>): Promise<BatchResult>
+```
+
+Updates assets in batches based on an attributes array.
+
+Only assets with the same {@link Tag.GROUP_ID} and {@link Tag.REQUIRE_ATTR_ENCRYPTED} can be updated in batches.
+
+**Since:** 26.0.0
+
+<!--Device-asset-function batchUpdate(sourceAttributes: Array<AssetMap>, destAttributes: Array<AssetMap>): Promise<BatchResult>--><!--Device-asset-function batchUpdate(sourceAttributes: Array<AssetMap>, destAttributes: Array<AssetMap>): Promise<BatchResult>-End-->
+
+**System capability:** SystemCapability.Security.Asset
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| sourceAttributes | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<AssetMap> | Yes | an array of map objects containing asset attributes to query.<br>The {@link Tag.GROUP_ID} and {@link Tag.REQUIRE_ATTR_ENCRYPTED} attributes of all assets must be the same. |
+| destAttributes | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<AssetMap> | Yes | an array of map objects containing asset attributes to be updated.<br>The {@link Tag.GROUP_ID} and {@link Tag.REQUIRE_ATTR_ENCRYPTED} attributes of all assets must be the same. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<BatchResult> | the promise object returned by the function. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [24000001](../errorcode-asset.md#24000001-asset-store-service-unavailable) | The ASSET service is unavailable. |
+| [24000006](../errorcode-asset.md#24000006-insufficient-memory) | Insufficient memory. |
+| [24000007](../errorcode-asset.md#24000007-asset-corrupted) | The asset is corrupted. |
+| [24000008](../errorcode-asset.md#24000008-database-operation-failed) | The database operation failed. |
+| [24000010](../errorcode-asset.md#24000010-ipc-failed) | IPC failed. |
+| [24000011](../errorcode-asset.md#24000011-bundle-manager-service-abnormal) | Calling the Bundle Manager service failed. |
+| [24000012](../errorcode-asset.md#24000012-account-system-service-abnormal) | Calling the OS Account service failed. |
+| [24000013](../errorcode-asset.md#24000013-access-token-service-abnormal) | Calling the Access Token service failed. |
+| [24000015](../errorcode-asset.md#24000015-failed-to-obtain-the-system-time) | Getting the system time failed. |
+| [24000019](../errorcode-asset.md#24000019-inconsistent-attribute-values) | Each value of {@link Tag.GROUP_ID} and {@link Tag.REQUIRE_ATTR_ENCRYPTED}in the array is not consistent. |
+

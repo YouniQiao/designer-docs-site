@@ -14,6 +14,8 @@ Opens a directory. This API returns the result synchronously.
 
 **Substitutes:** [fs:listFileSync](arkts-corefile-file-fs-listfilesync-f.md#listfilesync-1)
 
+<!--Device-unnamed-declare function opendirSync(path: string): Dir--><!--Device-unnamed-declare function opendirSync(path: string): Dir-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
@@ -26,5 +28,5 @@ Opens a directory. This API returns the result synchronously.
 
 | Type | Description |
 | --- | --- |
-| Dir | **Dir** object opened. |
+| [Dir](arkts-corefile-fileio-dir-depr-i.md) | **Dir** object opened. |
 

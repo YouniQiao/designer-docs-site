@@ -10,6 +10,8 @@ Defines the callback type used in onGetStartIndexByIndex of GridLayoutOptions.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-unnamed-declare type OnGetStartIndexByIndexCallback = (targetIndex: int) => StartLineInfo--><!--Device-unnamed-declare type OnGetStartIndexByIndexCallback = (targetIndex: int) => StartLineInfo-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **System API:** This is a system API.

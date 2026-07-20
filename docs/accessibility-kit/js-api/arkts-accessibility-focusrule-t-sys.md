@@ -9,6 +9,10 @@ Defines a focus rule for determining the start node and its descendants when sea
 
 **Since:** 23
 
+<!--Device-unnamed-export type FocusRule = 'bypassSelf' | 'bypassSelfDescendants' |
+'checkSelf' | 'checkSelfBypassDescendants'--><!--Device-unnamed-export type FocusRule = 'bypassSelf' | 'bypassSelfDescendants' |
+'checkSelf' | 'checkSelfBypassDescendants'-End-->
+
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
 **System API:** This is a system API.

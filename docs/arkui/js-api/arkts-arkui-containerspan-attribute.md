@@ -6,6 +6,8 @@ The [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-commo
 
 **Since:** 11
 
+<!--Device-unnamed-declare class ContainerSpanAttribute--><!--Device-unnamed-declare class ContainerSpanAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 ## attributeModifier
@@ -22,13 +24,15 @@ Creates an attribute modifier.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-ContainerSpanAttribute-attributeModifier(modifier: AttributeModifier<ContainerSpanAttribute>): ContainerSpanAttribute--><!--Device-ContainerSpanAttribute-attributeModifier(modifier: AttributeModifier<ContainerSpanAttribute>): ContainerSpanAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| modifier | AttributeModifier&lt;ContainerSpanAttribute&gt; | Yes | Modifier for dynamically setting attributes on thecurrent component. |
+| modifier | [AttributeModifier](arkts-arkui-common-attributemodifier-i.md)<ContainerSpanAttribute> | Yes | Modifier for dynamically setting attributes on the current component. |
 
 ## textBackgroundStyle
 
@@ -44,11 +48,13 @@ Span background style.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-ContainerSpanAttribute-textBackgroundStyle(style: TextBackgroundStyle): ContainerSpanAttribute--><!--Device-ContainerSpanAttribute-textBackgroundStyle(style: TextBackgroundStyle): ContainerSpanAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| style | TextBackgroundStyle | Yes | The background style of span. |
+| style | [TextBackgroundStyle](arkts-arkui-span-textbackgroundstyle-i.md) | Yes | The background style of span. |
 

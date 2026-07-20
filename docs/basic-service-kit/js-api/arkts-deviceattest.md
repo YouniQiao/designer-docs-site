@@ -4,6 +4,8 @@ xts_device_attest authResult information
 
 **Since:** 9
 
+<!--Device-unnamed-declare namespace deviceAttest--><!--Device-unnamed-declare namespace deviceAttest-End-->
+
 **System capability:** SystemCapability.XTS.DeviceAttest
 
 ## Modules to Import
@@ -19,9 +21,9 @@ import { deviceAttest } from '@kit.BasicServicesKit';
 
 | Name | Description |
 | --- | --- |
-| [getAttestStatus](arkts-basicservices-getatteststatus-f-sys.md#getatteststatus-1) | Obtains the AttestResultInfo object. |
-| [getAttestStatus](arkts-basicservices-getatteststatus-f-sys.md#getatteststatus-2) | Obtains the AttestResultInfo object. |
-| [getAttestStatusSync](arkts-basicservices-getatteststatussync-f-sys.md#getatteststatussync-1) | Obtains the AttestResultInfo object. |
+| [getAttestStatus](arkts-basicservices-deviceattest-getatteststatus-f-sys.md#getatteststatus-1) | Obtains the AttestResultInfo object. |
+| [getAttestStatus](arkts-basicservices-deviceattest-getatteststatus-f-sys.md#getatteststatus-2) | Obtains the AttestResultInfo object. |
+| [getAttestStatusSync](arkts-basicservices-deviceattest-getatteststatussync-f-sys.md#getatteststatussync-1) | Obtains the AttestResultInfo object. |
 <!--DelEnd-->
 
 <!--Del-->
@@ -29,6 +31,6 @@ import { deviceAttest } from '@kit.BasicServicesKit';
 
 | Name | Description |
 | --- | --- |
-| [AttestResultInfo](arkts-basicservices-attestresultinfo-i-sys.md) | Device attest result information. |
+| [AttestResultInfo](arkts-basicservices-deviceattest-attestresultinfo-i-sys.md) | Device attest result information. |
 <!--DelEnd-->
 

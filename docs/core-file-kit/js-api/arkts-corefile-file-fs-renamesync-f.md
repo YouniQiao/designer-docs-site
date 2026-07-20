@@ -14,13 +14,15 @@ declare function renameSync(oldPath: string, newPath: string): void
 
 Renames a file or directory. This API returns the result synchronously.
 
-> **NOTE**
->
+> **NOTE**  
+>  
 > This API is not supported in a distributed directory.
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-unnamed-declare function renameSync(oldPath: string, newPath: string): void--><!--Device-unnamed-declare function renameSync(oldPath: string, newPath: string): void-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 

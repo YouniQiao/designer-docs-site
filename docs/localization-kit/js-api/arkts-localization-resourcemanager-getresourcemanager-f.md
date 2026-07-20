@@ -1,0 +1,215 @@
+# getResourceManager
+
+## Modules to Import
+
+```TypeScript
+import { resourceManager } from '@kit.LocalizationKit';
+```
+
+## getResourceManager
+
+```TypeScript
+export function getResourceManager(callback: AsyncCallback<ResourceManager>): void
+```
+
+Obtains the **ResourceManager** object of this application. This API uses an asynchronous callback to return the result.
+
+**Since:** 6
+
+**Model restriction:** This API can be used only in the FA model.
+
+<!--Device-resourceManager-export function getResourceManager(callback: AsyncCallback<ResourceManager>): void--><!--Device-resourceManager-export function getResourceManager(callback: AsyncCallback<ResourceManager>): void-End-->
+
+**System capability:** SystemCapability.Global.ResourceManager
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ResourceManager> | Yes | Callback used to return the **ResourceManager** object. |
+
+**Example**
+
+```TypeScript
+import resourceManager from '@ohos.resourceManager';
+// Use this method to import the module in the FA model.
+
+export default {
+    onCreate() {
+        resourceManager.getResourceManager((error, mgr) => {
+            if (error != null) {
+                console.error("error is " + error);
+                return;
+            }
+            // Replace "test" with the actual resource name.
+            mgr.getStringByName('test', (error, value) => {
+                if (error) {
+                    console.error("error is " + JSON.stringify(error));
+                } else {
+                    console.info("success is " + value);
+                }
+
+            });
+        });
+    }
+};
+
+```
+
+
+## getResourceManager
+
+```TypeScript
+export function getResourceManager(bundleName: string, callback: AsyncCallback<ResourceManager>): void
+```
+
+Obtains the **ResourceManager** object of the specified application. This API uses an asynchronous callback to return the result.
+
+**Since:** 6
+
+**Model restriction:** This API can be used only in the FA model.
+
+<!--Device-resourceManager-export function getResourceManager(bundleName: string, callback: AsyncCallback<ResourceManager>): void--><!--Device-resourceManager-export function getResourceManager(bundleName: string, callback: AsyncCallback<ResourceManager>): void-End-->
+
+**System capability:** SystemCapability.Global.ResourceManager
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| bundleName | string | Yes | Bundle name of the application. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ResourceManager> | Yes | Callback used to return the **ResourceManager** object. |
+
+**Example**
+
+```TypeScript
+import resourceManager from '@ohos.resourceManager';
+// Use this method to import the module in the FA model.
+
+// Replace 'com.example.testapp' with the actual application package name.
+const BUNDLE_NAME = 'com.example.testapp';
+
+export default {
+    onCreate() {
+        resourceManager.getResourceManager(BUNDLE_NAME, (error, mgr) => {
+            if (error != null) {
+                console.error("getResourceManager error is " + error);
+                return;
+            }
+            // Replace "test" with the actual resource name.
+            mgr.getStringByName('test', (error, value) => {
+                if (error) {
+                    console.error("getResourceManager error is " + JSON.stringify(error));
+                } else {
+                    console.info("getResourceManager success is " + value);
+                }
+            });
+        });
+    }
+};
+
+```
+
+
+## getResourceManager
+
+```TypeScript
+export function getResourceManager(): Promise<ResourceManager>
+```
+
+Obtains the **ResourceManager** object of this application. This API uses a promise to return the result.
+
+**Since:** 6
+
+**Model restriction:** This API can be used only in the FA model.
+
+<!--Device-resourceManager-export function getResourceManager(): Promise<ResourceManager>--><!--Device-resourceManager-export function getResourceManager(): Promise<ResourceManager>-End-->
+
+**System capability:** SystemCapability.Global.ResourceManager
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ResourceManager> | Promise used to return the **ResourceManager** object. |
+
+**Example**
+
+```TypeScript
+import resourceManager from '@ohos.resourceManager';
+// Use this method to import the module in the FA model.
+
+export default {
+    onCreate() {
+        resourceManager.getResourceManager().then(resMgr => {
+            try {
+                // Replace "test" with the actual resource name.
+                let testStr = resMgr.getStringByNameSync('test')
+                console.info("getResourceManager success is " + testStr);
+            } catch (error) {
+                console.error("getResourceManager error is " + JSON.stringify(error));
+            }
+        }).catch(error => {
+            console.error("getResourceManager error is " + error);
+        });
+    }
+};
+
+```
+
+
+## getResourceManager
+
+```TypeScript
+export function getResourceManager(bundleName: string): Promise<ResourceManager>
+```
+
+Obtains the **ResourceManager** object of the specified application. This API uses a promise to return the result.
+
+**Since:** 6
+
+**Model restriction:** This API can be used only in the FA model.
+
+<!--Device-resourceManager-export function getResourceManager(bundleName: string): Promise<ResourceManager>--><!--Device-resourceManager-export function getResourceManager(bundleName: string): Promise<ResourceManager>-End-->
+
+**System capability:** SystemCapability.Global.ResourceManager
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| bundleName | string | Yes | Bundle name of the application. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ResourceManager> | Promise used to return the **ResourceManager** object. |
+
+**Example**
+
+```TypeScript
+import resourceManager from '@ohos.resourceManager';
+// Use this method to import the module in the FA model.
+
+// Replace 'com.example.testapp' with the actual application package name.
+const BUNDLE_NAME = 'com.example.testapp';
+
+export default {
+    onCreate() {
+        resourceManager.getResourceManager(BUNDLE_NAME).then(resMgr => {
+            try {
+                // Replace "test" with the actual resource name.
+                let testStr = resMgr.getStringByNameSync('test')
+                console.info("getResourceManager success is " + testStr);
+            } catch (error) {
+                console.error("getResourceManager error is " + JSON.stringify(error));
+            }
+        }).catch(error => {
+            console.error("getResourceManager error is " + error);
+        });
+    }
+};
+
+```
+

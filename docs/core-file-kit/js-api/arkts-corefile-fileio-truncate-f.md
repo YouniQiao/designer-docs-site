@@ -14,6 +14,8 @@ Truncates a file based on the file path. This API uses a promise to return the r
 
 **Substitutes:** [fs:truncate](arkts-corefile-file-fs-truncate-f.md#truncate-1)
 
+<!--Device-unnamed-declare function truncate(path: string, len?: number): Promise<void>--><!--Device-unnamed-declare function truncate(path: string, len?: number): Promise<void>-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
@@ -27,7 +29,7 @@ Truncates a file based on the file path. This API uses a promise to return the r
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
 
 
 ## truncate
@@ -44,6 +46,8 @@ Truncates a file based on the file path. This API uses an asynchronous callback 
 
 **Substitutes:** [fs:truncate](arkts-corefile-file-fs-truncate-f.md#truncate-1)
 
+<!--Device-unnamed-declare function truncate(path: string, callback: AsyncCallback<void>): void--><!--Device-unnamed-declare function truncate(path: string, callback: AsyncCallback<void>): void-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
@@ -51,7 +55,7 @@ Truncates a file based on the file path. This API uses an asynchronous callback 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Application sandbox path of the file to truncate. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback that returns no value. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback that returns no value. |
 
 
 ## truncate
@@ -68,6 +72,8 @@ Truncates a file based on the file path. This API uses an asynchronous callback 
 
 **Substitutes:** [fs:truncate](arkts-corefile-file-fs-truncate-f.md#truncate-1)
 
+<!--Device-unnamed-declare function truncate(path: string, len: number, callback: AsyncCallback<void>): void--><!--Device-unnamed-declare function truncate(path: string, len: number, callback: AsyncCallback<void>): void-End-->
+
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
 **Parameters:**
@@ -76,5 +82,5 @@ Truncates a file based on the file path. This API uses an asynchronous callback 
 | --- | --- | --- | --- |
 | path | string | Yes | Application sandbox path of the file to truncate. |
 | len | number | Yes | File length after truncation, in bytes. The default value is **0**. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback that returns no value. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback that returns no value. |
 

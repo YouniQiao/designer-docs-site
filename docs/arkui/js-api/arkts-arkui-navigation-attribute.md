@@ -6,6 +6,8 @@ In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkt
 
 **Since:** 8
 
+<!--Device-unnamed-declare class NavigationAttribute extends CommonMethod<NavigationAttribute>--><!--Device-unnamed-declare class NavigationAttribute extends CommonMethod<NavigationAttribute>-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 ## backButtonIcon
@@ -16,15 +18,17 @@ backButtonIcon(value: string | PixelMap | Resource | SymbolGlyphModifier)
 
 Sets the icon of the back button in the title bar.
 
-> **NOTE**
->
-> The following are not allowed: modify the icon size through the **fontSize** attribute of the
-> **SymbolGlyphModifier** object, change the animation effects through the **effectStrategy** attribute, or change
+> **NOTE**  
+>  
+> The following are not allowed: modify the icon size through the **fontSize** attribute of the  
+> **SymbolGlyphModifier** object, change the animation effects through the **effectStrategy** attribute, or change  
 > the type of animation effects through the **symbolEffect** attribute.
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-NavigationAttribute-backButtonIcon(value: string | PixelMap | Resource | SymbolGlyphModifier): NavigationAttribute--><!--Device-NavigationAttribute-backButtonIcon(value: string | PixelMap | Resource | SymbolGlyphModifier): NavigationAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -32,7 +36,7 @@ Sets the icon of the back button in the title bar.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | string \| PixelMap \| Resource \| SymbolGlyphModifier | Yes | Icon of the back button in the titlebar.<br>**Since:** 12 |
+| value | string \| PixelMap \| Resource \| SymbolGlyphModifier | Yes | Icon of the back button in the title bar.<br>**Since:** 12 |
 
 ## backButtonIcon
 
@@ -42,12 +46,12 @@ backButtonIcon(icon: string | PixelMap | Resource | SymbolGlyphModifier, accessi
 
 Sets the icon and accessibility text for the back button on the title bar.
 
-> **NOTE**
->
-> This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
->
-> The following are not allowed: modify the icon size through the **fontSize** attribute of the
-> **SymbolGlyphModifier** object, change the animation effects through the **effectStrategy** attribute, or change
+> **NOTE**  
+>  
+> This API cannot be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1).  
+>  
+> The following are not allowed: modify the icon size through the **fontSize** attribute of the  
+> **SymbolGlyphModifier** object, change the animation effects through the **effectStrategy** attribute, or change  
 > the type of animation effects through the **symbolEffect** attribute.
 
 **Since:** 19
@@ -56,6 +60,8 @@ Sets the icon and accessibility text for the back button on the title bar.
 
 **Atomic service API:** This API can be used in atomic services since API version 19.
 
+<!--Device-NavigationAttribute-backButtonIcon(icon: string | PixelMap | Resource | SymbolGlyphModifier, accessibilityText?: ResourceStr): NavigationAttribute--><!--Device-NavigationAttribute-backButtonIcon(icon: string | PixelMap | Resource | SymbolGlyphModifier, accessibilityText?: ResourceStr): NavigationAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
@@ -63,7 +69,7 @@ Sets the icon and accessibility text for the back button on the title bar.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | icon | string \| PixelMap \| Resource \| SymbolGlyphModifier | Yes | Icon of the back button in the title bar. |
-| accessibilityText | ResourceStr | No | Accessibility text for the back button.<br>Default value: **back**when the system language is English. |
+| accessibilityText | [ResourceStr](../arkts-apis/arkts-arkui-resourcestr-t.md) | No | Accessibility text for the back button.<br>Default value: **back** when the system language is English. |
 
 ## configuration
 
@@ -79,13 +85,15 @@ Sets Navigation configuration.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 
+<!--Device-NavigationAttribute-configuration(config: NavigationConfiguration): NavigationAttribute--><!--Device-NavigationAttribute-configuration(config: NavigationConfiguration): NavigationAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| config | NavigationConfiguration | Yes | Navigation configuration options. |
+| config | [NavigationConfiguration](arkts-arkui-navigation-navigationconfiguration-i.md) | Yes | Navigation configuration options. |
 
 ## customNavContentTransition
 
@@ -96,9 +104,9 @@ customNavContentTransition(delegate: (from: NavContentInfo, to: NavContentInfo, 
 
 Defines the callback of the custom transition animation.
 
-> **NOTE**
->
-> This API can be called in [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
+> **NOTE**  
+>  
+> This API can be called in [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1) since API version 20.
 
 **Since:** 11
 
@@ -106,13 +114,17 @@ Defines the callback of the custom transition animation.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-NavigationAttribute-customNavContentTransition(delegate: (from: NavContentInfo, to: NavContentInfo, operation: NavigationOperation)
+    => NavigationAnimatedTransition | undefined): NavigationAttribute--><!--Device-NavigationAttribute-customNavContentTransition(delegate: (from: NavContentInfo, to: NavContentInfo, operation: NavigationOperation)
+    => NavigationAnimatedTransition | undefined): NavigationAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| delegate | (from: NavContentInfo, to: NavContentInfo, operation: NavigationOperation)    =&gt; NavigationAnimatedTransition \| undefined | Yes | Defines the callback of the custom transition animation.<br/>from: Destination pageto exit.<br/>to: Destination page to enter.<br/>operation: Transition type.<br/>**NavigationAnimatedTransition**: protocol object for custom transition animations.<br>**undefined**:undefined, executing the default transition animation effect. |
+| delegate | (from: NavContentInfo, to: NavContentInfo, operation: NavigationOperation)     => NavigationAnimatedTransition \| undefined | Yes | Defines the callback of the custom transition animation.<br/>from: Destination page to exit.<br/>to: Destination page to enter.<br/>operation: Transition type.<br/>**NavigationAnimatedTransition**: protocol object for custom transition animations.<br>**undefined**:undefined, executing the default transition animation effect. |
 
 ## divider
 
@@ -128,13 +140,15 @@ Sets the divider style in the split-column mode of the **Navigation** component.
 
 **Atomic service API:** This API can be used in atomic services since API version 23.
 
+<!--Device-NavigationAttribute-divider(style: NavigationDividerStyle | null): NavigationAttribute--><!--Device-NavigationAttribute-divider(style: NavigationDividerStyle | null): NavigationAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| style | NavigationDividerStyle \| null | Yes | Sets the divider style of the split-column layout.<br> - null: Thedivider is hidden. |
+| style | NavigationDividerStyle \| null | Yes | Sets the divider style of the split-column layout.<br> - null: The divider is hidden. |
 
 ## enableDragBar
 
@@ -150,13 +164,15 @@ Sets whether to display a drag bar in split-column scenarios. This attribute has
 
 **Atomic service API:** This API can be used in atomic services since API version 14.
 
+<!--Device-NavigationAttribute-enableDragBar(isEnabled: Optional<boolean>): NavigationAttribute--><!--Device-NavigationAttribute-enableDragBar(isEnabled: Optional<boolean>): NavigationAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| isEnabled | Optional&lt;boolean&gt; | Yes | Whether to enable the drag bar. By default, there is no drag bar.<br>**true**: yes; **false**: no<br>If the input parameter is invalid, the value **false** is used. |
+| isEnabled | [Optional](arkts-arkui-optional-t.md)<boolean> | Yes | Whether to enable the drag bar. By default, there is no drag bar.<br>**true**: yes; **false**: no<br>If the input parameter is invalid, the value **false** is used. |
 
 ## enableModeChangeAnimation
 
@@ -172,13 +188,15 @@ Sets whether to enable the animation for switching between single- and split-col
 
 **Atomic service API:** This API can be used in atomic services since API version 15.
 
+<!--Device-NavigationAttribute-enableModeChangeAnimation(isEnabled: Optional<boolean>): NavigationAttribute--><!--Device-NavigationAttribute-enableModeChangeAnimation(isEnabled: Optional<boolean>): NavigationAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| isEnabled | Optional&lt;boolean&gt; | Yes | Whether to enable the animation for switching between single- and split-column modes.<br>**true**: yes; **false**: no<br>If the input parameter is invalid, the value **true** is used. |
+| isEnabled | [Optional](arkts-arkui-optional-t.md)<boolean> | Yes | Whether to enable the animation for switching between single- and split-column modes.<br>**true**: yes; **false**: no<br>If the input parameter is invalid, the value **true** is used. |
 
 ## enableToolBarAdaptation
 
@@ -186,12 +204,7 @@ Sets whether to enable the animation for switching between single- and split-col
 enableToolBarAdaptation(enable: Optional<boolean>)
 ```
 
-Sets whether to enable toolbar adaptation ([toolbarConfiguration](NavigationAttribute#toolbarConfiguration))
-for the **Navigation** and **NavDestination** components. If this feature is disabled, the bottom toolbar (
-[toolbarConfiguration](NavigationAttribute#toolbarConfiguration)) will no longer be moved into the menu in
-the upper right corner of the page. This API does not apply to custom menus; using it requires defining the
-[menu](NavigationAttribute#menus(value: Array<NavigationMenuItem> | CustomBuilder)) via the
-[NavigationMenuItem](arkts-arkui-navigationmenuitem-i.md) API.
+Sets whether to enable toolbar adaptation ([toolbarConfiguration](NavigationAttribute#toolbarConfiguration))for the **Navigation** and **NavDestination** components. If this feature is disabled, the bottom toolbar ([toolbarConfiguration](NavigationAttribute#toolbarConfiguration)) will no longer be moved into the menu in the upper right corner of the page. This API does not apply to custom menus; using it requires defining the [menu](NavigationAttribute#menus(value: Array<NavigationMenuItem> | CustomBuilder)) via the [NavigationMenuItem](arkts-arkui-navigation-navigationmenuitem-i.md) API.
 
 **Since:** 19
 
@@ -199,13 +212,15 @@ the upper right corner of the page. This API does not apply to custom menus; usi
 
 **Atomic service API:** This API can be used in atomic services since API version 19.
 
+<!--Device-NavigationAttribute-enableToolBarAdaptation(enable: Optional<boolean>): NavigationAttribute--><!--Device-NavigationAttribute-enableToolBarAdaptation(enable: Optional<boolean>): NavigationAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| enable | Optional&lt;boolean&gt; | Yes | Whether to enable toolbar adaptation.<br>Default value: **true**<br>**true**:Enable toolbar adaptation.<br>**false**: Disable toolbar adaptation. |
+| enable | [Optional](arkts-arkui-optional-t.md)<boolean> | Yes | Whether to enable toolbar adaptation.<br>Default value: **true**<br>**true**:Enable toolbar adaptation.<br>**false**: Disable toolbar adaptation. |
 
 ## enableVisibilityLifecycleWithContentCover
 
@@ -213,9 +228,7 @@ the upper right corner of the page. This API does not apply to custom menus; usi
 enableVisibilityLifecycleWithContentCover(isEnabled: Optional<boolean>)
 ```
 
-Sets whether to enable the linkage between the [onShown](NavDestinationAttribute#onShown) and
-[onHidden](NavDestinationAttribute#onHidden) lifecycle callbacks of the
-[NavDestination](arkts-arkui-navdestination.md) page and the full-modal triggering.
+Sets whether to enable the linkage between the [onShown](NavDestinationAttribute#onShown) and [onHidden](NavDestinationAttribute#onHidden) lifecycle callbacks of the [NavDestination](arkts-arkui-navdestination.md) page and the full-modal triggering.
 
 **Since:** 21
 
@@ -223,13 +236,15 @@ Sets whether to enable the linkage between the [onShown](NavDestinationAttribute
 
 **Atomic service API:** This API can be used in atomic services since API version 21.
 
+<!--Device-NavigationAttribute-enableVisibilityLifecycleWithContentCover(isEnabled: Optional<boolean>): NavigationAttribute--><!--Device-NavigationAttribute-enableVisibilityLifecycleWithContentCover(isEnabled: Optional<boolean>): NavigationAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| isEnabled | Optional&lt;boolean&gt; | Yes | Whether to enable the linkage between the **onShown** and **onHidden**lifecycle callbacks of the NavDestination page and the full-modal triggering.<br>Default value: **true**<br>**true**: When a full-modal page is shown, the current **NavDestination** page triggers **onHidden**. When thefull-modal pages is dismissed, the page triggers **onShown**.<br>**false**: The **onShown** and **onHidden**callbacks of the **NavDestination** page are not triggered by the showing or dismissing of a full-modal page. |
+| isEnabled | [Optional](arkts-arkui-optional-t.md)<boolean> | Yes | Whether to enable the linkage between the **onShown** and **onHidden** lifecycle callbacks of the NavDestination page and the full-modal triggering.<br>Default value: **true**<br>**true**: When a full-modal page is shown, the current **NavDestination** page triggers **onHidden**. When the full-modal pages is dismissed, the page triggers **onShown**.<br>**false**: The **onShown** and **onHidden** callbacks of the **NavDestination** page are not triggered by the showing or dismissing of a full-modal page. |
 
 ## hideBackButton
 
@@ -237,12 +252,13 @@ Sets whether to enable the linkage between the [onShown](NavDestinationAttribute
 hideBackButton(value: boolean)
 ```
 
-Sets whether to hide the back button in the title bar. The back button takes effect only when
-[titleMode](NavigationAttribute#titleMode) is set to **NavigationTitleMode.Mini**.
+Sets whether to hide the back button in the title bar. The back button takes effect only when [titleMode](NavigationAttribute#titleMode) is set to **NavigationTitleMode.Mini**.
 
 **Since:** 8
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-NavigationAttribute-hideBackButton(value: boolean): NavigationAttribute--><!--Device-NavigationAttribute-hideBackButton(value: boolean): NavigationAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -250,7 +266,7 @@ Sets whether to hide the back button in the title bar. The back button takes eff
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | boolean | Yes | Whether to hide the back button in the title bar.<br>**true**: Hide the back button inthe title bar.<br>**false**: Show the back button in the title bar.<br>If the input parameter is invalid, thevalue **false** is used. |
+| value | boolean | Yes | Whether to hide the back button in the title bar.<br>**true**: Hide the back button in the title bar.<br>**false**: Show the back button in the title bar.<br>If the input parameter is invalid, the value **false** is used. |
 
 ## hideNavBar
 
@@ -258,16 +274,15 @@ Sets whether to hide the back button in the title bar. The back button takes eff
 hideNavBar(value: boolean)
 ```
 
-Sets whether to hide the navigation page. If the value is set to **true**, the navigation bar, including the title
-bar, content area, and toolbar, will be hidden. In this case, if the navigation destination page is in the routing
-stack, it is moved to the top of the stack and displayed. Otherwise, a blank page is displayed.
+Sets whether to hide the navigation page. If the value is set to **true**, the navigation bar, including the title bar, content area, and toolbar, will be hidden. In this case, if the navigation destination page is in the routing stack, it is moved to the top of the stack and displayed. Otherwise, a blank page is displayed.
 
-From API version 9 to API version 10, this attribute takes effect only in split-column mode. Since API version 11,
-this attribute takes effect in all display modes.
+From API version 9 to API version 10, this attribute takes effect only in split-column mode. Since API version 11,this attribute takes effect in all display modes.
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-NavigationAttribute-hideNavBar(value: boolean): NavigationAttribute--><!--Device-NavigationAttribute-hideNavBar(value: boolean): NavigationAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -275,7 +290,7 @@ this attribute takes effect in all display modes.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | boolean | Yes | Whether to hide the navigation page.<br>**true**: yes<br>**false**: no<br>If the inputparameter is invalid, the value **false** is used. |
+| value | boolean | Yes | Whether to hide the navigation page.<br>**true**: yes<br>**false**: no<br>If the input parameter is invalid, the value **false** is used. |
 
 ## hideTitleBar
 
@@ -289,13 +304,15 @@ Specifies whether to hide the title bar.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-NavigationAttribute-hideTitleBar(value: boolean): NavigationAttribute--><!--Device-NavigationAttribute-hideTitleBar(value: boolean): NavigationAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | boolean | Yes | Whether to hide the title bar.<br>**true**: yes<br>**false**: no<br>If the inputparameter is invalid, the value **false** is used. |
+| value | boolean | Yes | Whether to hide the title bar.<br>**true**: yes<br>**false**: no<br>If the input parameter is invalid, the value **false** is used. |
 
 ## hideTitleBar
 
@@ -303,9 +320,7 @@ Specifies whether to hide the title bar.
 hideTitleBar(hide: boolean, animated: boolean)
 ```
 
-Specifies whether to hide the title bar. Compared with
-[hideTitleBar](NavigationAttribute#hideTitleBar(value: boolean)), this API adds the capability to control
-whether to animate the visibility change of the title bar.
+Specifies whether to hide the title bar. Compared with [hideTitleBar](NavigationAttribute#hideTitleBar(value: boolean)), this API adds the capability to control whether to animate the visibility change of the title bar.
 
 **Since:** 13
 
@@ -313,14 +328,16 @@ whether to animate the visibility change of the title bar.
 
 **Atomic service API:** This API can be used in atomic services since API version 13.
 
+<!--Device-NavigationAttribute-hideTitleBar(hide: boolean, animated: boolean): NavigationAttribute--><!--Device-NavigationAttribute-hideTitleBar(hide: boolean, animated: boolean): NavigationAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| hide | boolean | Yes | Whether to hide the title bar.<br>**true**: yes<br>**false**: no<br>If the inputparameter is invalid, the value **false** is used. |
-| animated | boolean | Yes | Whether to animate the visibility change.<br>**true**: yes<br> **false**: no<br>Ifthe input parameter is invalid, the value **false** is used. |
+| hide | boolean | Yes | Whether to hide the title bar.<br>**true**: yes<br>**false**: no<br>If the input parameter is invalid, the value **false** is used. |
+| animated | boolean | Yes | Whether to animate the visibility change.<br>**true**: yes<br> **false**: no<br>If the input parameter is invalid, the value **false** is used. |
 
 ## hideToolBar
 
@@ -334,13 +351,15 @@ Specifies whether to hide the toolbar.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-NavigationAttribute-hideToolBar(value: boolean): NavigationAttribute--><!--Device-NavigationAttribute-hideToolBar(value: boolean): NavigationAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | boolean | Yes | Whether to hide the toolbar.<br>**true**: Hide the toolbar. <br>**false**: Display thetoolbar.<br>If the input parameter is invalid, the value **false** is used. |
+| value | boolean | Yes | Whether to hide the toolbar.<br>**true**: Hide the toolbar. <br>**false**: Display the toolbar.<br>If the input parameter is invalid, the value **false** is used. |
 
 ## hideToolBar
 
@@ -348,9 +367,7 @@ Specifies whether to hide the toolbar.
 hideToolBar(hide: boolean, animated: boolean)
 ```
 
-Specifies whether to hide the toolbar. Compared with
-[hideToolBar](NavigationAttribute#hideToolBar(value: boolean)), this API adds the capability to control
-whether to animate the visibility change of the toolbar.
+Specifies whether to hide the toolbar. Compared with [hideToolBar](NavigationAttribute#hideToolBar(value: boolean)), this API adds the capability to control whether to animate the visibility change of the toolbar.
 
 **Since:** 13
 
@@ -358,14 +375,16 @@ whether to animate the visibility change of the toolbar.
 
 **Atomic service API:** This API can be used in atomic services since API version 13.
 
+<!--Device-NavigationAttribute-hideToolBar(hide: boolean, animated: boolean): NavigationAttribute--><!--Device-NavigationAttribute-hideToolBar(hide: boolean, animated: boolean): NavigationAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| hide | boolean | Yes | Whether to hide the toolbar.<br>**true**: Hide the toolbar. <br>**false**: Display thetoolbar.<br>If the input parameter is invalid, the value **false** is used. |
-| animated | boolean | Yes | Whether to animate the visibility change.<br>**true**: yes<br>**false**: no<br>If theinput parameter is invalid, the value **false** is used. |
+| hide | boolean | Yes | Whether to hide the toolbar.<br>**true**: Hide the toolbar. <br>**false**: Display the toolbar.<br>If the input parameter is invalid, the value **false** is used. |
+| animated | boolean | Yes | Whether to animate the visibility change.<br>**true**: yes<br>**false**: no<br>If the input parameter is invalid, the value **false** is used. |
 
 ## ignoreLayoutSafeArea
 
@@ -375,18 +394,18 @@ ignoreLayoutSafeArea(types?: Array<LayoutSafeAreaType>, edges?: Array<LayoutSafe
 
 Ignores the layout safe area by allowing the component to extend into the non-safe areas of the screen.
 
-> **NOTE**
->
-> - Prerequisites for the **ignoreLayoutSafeArea** attribute to take effect:
-> > When **LayoutSafeAreaType.SYSTEM** is set, the component can extend into the non-safe area if its boundaries
-> overlap with it.
->
-> - If the component extends into the non-safe area, events triggered within that area (such as click events) might
-> be intercepted by the system. This allows the system to prioritize responses to system components such as the
-> status bar.
->
-> - To allow a component to extend into non-safe areas, the title bar and toolbar must be hidden or set to
-> [STACK](arkts-arkui-barstyle-e.md) mode.
+> **NOTE**  
+>  
+> - Prerequisites for the **ignoreLayoutSafeArea** attribute to take effect:  
+> > When **LayoutSafeAreaType.SYSTEM** is set, the component can extend into the non-safe area if its boundaries  
+> overlap with it.  
+>  
+> - If the component extends into the non-safe area, events triggered within that area (such as click events) might  
+> be intercepted by the system. This allows the system to prioritize responses to system components such as the  
+> status bar.  
+>  
+> - To allow a component to extend into non-safe areas, the title bar and toolbar must be hidden or set to  
+> [STACK](arkts-arkui-navigation-barstyle-e.md) mode.
 
 **Since:** 12
 
@@ -394,14 +413,16 @@ Ignores the layout safe area by allowing the component to extend into the non-sa
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-NavigationAttribute-ignoreLayoutSafeArea(types?: Array<LayoutSafeAreaType>, edges?: Array<LayoutSafeAreaEdge>): NavigationAttribute--><!--Device-NavigationAttribute-ignoreLayoutSafeArea(types?: Array<LayoutSafeAreaType>, edges?: Array<LayoutSafeAreaEdge>): NavigationAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| types | Array&lt;LayoutSafeAreaType&gt; | No | Types of non-safe areas to extend into.<br>Default value:<br>[LayoutSafeAreaType.SYSTEM] |
-| edges | Array&lt;LayoutSafeAreaEdge&gt; | No | Edges for expanding the safe area.<br> Default value:<br>[LayoutSafeAreaEdge.TOP, LayoutSafeAreaEdge.BOTTOM] |
+| types | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<LayoutSafeAreaType> | No | Types of non-safe areas to extend into.<br>Default value:<br>[LayoutSafeAreaType.SYSTEM] |
+| edges | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<LayoutSafeAreaEdge> | No | Edges for expanding the safe area.<br> Default value:<br>[LayoutSafeAreaEdge.TOP, LayoutSafeAreaEdge.BOTTOM] |
 
 ## menus
 
@@ -409,20 +430,19 @@ Ignores the layout safe area by allowing the component to extend into the non-sa
 menus(value: Array<NavigationMenuItem> | CustomBuilder)
 ```
 
-Sets the menu items in the upper right corner of the page. If this attribute is not set, no menu item is displayed.
-When the value type is Array<[NavigationMenuItem](arkts-arkui-navigationmenuitem-i.md)&gt;, the menu shows a maximum of three
-icons in portrait mode and a maximum of five icons in landscape mode, with excess icons (if any) placed under the
-automatically generated **More** icon.
+Sets the menu items in the upper right corner of the page. If this attribute is not set, no menu item is displayed.When the value type is Array<[NavigationMenuItem](arkts-arkui-navigation-navigationmenuitem-i.md)&gt;, the menu shows a maximum of three icons in portrait mode and a maximum of five icons in landscape mode, with excess icons (if any) placed under the automatically generated **More** icon.
 
-> **NOTE**
->
-> The following are not allowed: modify the icon size through the **fontSize** attribute of the
-> **SymbolGlyphModifier** object, change the animation effects through the **effectStrategy** attribute, or change
+> **NOTE**  
+>  
+> The following are not allowed: modify the icon size through the **fontSize** attribute of the  
+> **SymbolGlyphModifier** object, change the animation effects through the **effectStrategy** attribute, or change  
 > the type of animation effects through the **symbolEffect** attribute.
 
 **Since:** 8
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-NavigationAttribute-menus(value: Array<NavigationMenuItem> | CustomBuilder): NavigationAttribute--><!--Device-NavigationAttribute-menus(value: Array<NavigationMenuItem> | CustomBuilder): NavigationAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -430,7 +450,7 @@ automatically generated **More** icon.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | Array&lt;NavigationMenuItem&gt; \| CustomBuilder | Yes | Menu items in the upper right corner of the page. |
+| value | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<NavigationMenuItem> \| CustomBuilder | Yes | Menu items in the upper right corner of the page. |
 
 ## menus
 
@@ -438,18 +458,14 @@ automatically generated **More** icon.
 menus(items: Array<NavigationMenuItem> | CustomBuilder, options?: NavigationMenuOptions)
 ```
 
-Sets the menu items in the upper right corner of the page. If this attribute is not set, no menu item is displayed.
-Compared with [menus](NavigationAttribute#menus(value: Array<NavigationMenuItem> | CustomBuilder)), this API
-adds menu options. When the value type is Array<[NavigationMenuItem](arkts-arkui-navigationmenuitem-i.md)&gt;, the menu shows
-a maximum of three icons in portrait mode and a maximum of five icons in landscape mode, with excess icons (if any)
-placed under the automatically generated **More** icon.
+Sets the menu items in the upper right corner of the page. If this attribute is not set, no menu item is displayed.Compared with [menus](NavigationAttribute#menus(value: Array<NavigationMenuItem> | CustomBuilder)), this API adds menu options. When the value type is Array<[NavigationMenuItem](arkts-arkui-navigation-navigationmenuitem-i.md)&gt;, the menu shows a maximum of three icons in portrait mode and a maximum of five icons in landscape mode, with excess icons (if any)placed under the automatically generated **More** icon.
 
-> **NOTE**
->
-> This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
->
-> The following are not allowed: modify the icon size through the **fontSize** attribute of the
-> **SymbolGlyphModifier** object, change the animation effects through the **effectStrategy** attribute, or change
+> **NOTE**  
+>  
+> This API cannot be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1).  
+>  
+> The following are not allowed: modify the icon size through the **fontSize** attribute of the  
+> **SymbolGlyphModifier** object, change the animation effects through the **effectStrategy** attribute, or change  
 > the type of animation effects through the **symbolEffect** attribute.
 
 **Since:** 19
@@ -458,14 +474,16 @@ placed under the automatically generated **More** icon.
 
 **Atomic service API:** This API can be used in atomic services since API version 19.
 
+<!--Device-NavigationAttribute-menus(items: Array<NavigationMenuItem> | CustomBuilder, options?: NavigationMenuOptions): NavigationAttribute--><!--Device-NavigationAttribute-menus(items: Array<NavigationMenuItem> | CustomBuilder, options?: NavigationMenuOptions): NavigationAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| items | Array&lt;NavigationMenuItem&gt; \| CustomBuilder | Yes | Menu items in the upper right corner of the page. |
-| options | NavigationMenuOptions | No | Configuration options for menu items in the upper right corner of thepage. |
+| items | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<NavigationMenuItem> \| CustomBuilder | Yes | Menu items in the upper right corner of the page. |
+| options | [NavigationMenuOptions](arkts-arkui-navigation-navigationmenuoptions-i.md) | No | Configuration options for menu items in the upper right corner of the page. |
 
 ## minContentWidth
 
@@ -481,13 +499,15 @@ Minimum width of the navigation bar content area (effective in split-column mode
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-NavigationAttribute-minContentWidth(value: Dimension): NavigationAttribute--><!--Device-NavigationAttribute-minContentWidth(value: Dimension): NavigationAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | Dimension | Yes | Minimum width of the content area on the navigation page.<br>Default value: **360**<br>Unit: vp<br>**undefined**: No action is taken, and the minimum width of the navigation page remains consistentwith the default value.<br>Breakpoint calculation in Auto mode: default 600 vp = minNavBarWidth (240 vp) +minContentWidth (360 vp) |
+| value | [Dimension](../arkts-apis/arkts-arkui-dimension-t.md) | Yes | Minimum width of the content area on the navigation page.<br>Default value: **360**<br  >Unit: vp<br>**undefined**: No action is taken, and the minimum width of the navigation page remains consistent with the default value.<br>Breakpoint calculation in Auto mode: default 600 vp = minNavBarWidth (240 vp) +minContentWidth (360 vp) |
 
 ## mode
 
@@ -501,13 +521,15 @@ Sets the display mode of the navigation page.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-NavigationAttribute-mode(value: NavigationMode): NavigationAttribute--><!--Device-NavigationAttribute-mode(value: NavigationMode): NavigationAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | NavigationMode | Yes | Display mode of the navigation page.<br>Default value: **NavigationMode.Auto**<br>At the default settings, the component adapts to a single column or two columns based on the component width. |
+| value | [NavigationMode](arkts-arkui-navigation-navigationmode-e.md) | Yes | Display mode of the navigation page.<br>Default value: **NavigationMode.Auto**<br  >At the default settings, the component adapts to a single column or two columns based on the component width. |
 
 ## navBarPosition
 
@@ -515,12 +537,13 @@ Sets the display mode of the navigation page.
 navBarPosition(value: NavBarPosition)
 ```
 
-Sets the position of the navigation page. It takes effect only when [mode](NavigationAttribute#mode) is set
-to **NavigationMode.Auto** or **NavigationMode.Split**.
+Sets the position of the navigation page. It takes effect only when [mode](NavigationAttribute#mode) is set to **NavigationMode.Auto** or **NavigationMode.Split**.
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-NavigationAttribute-navBarPosition(value: NavBarPosition): NavigationAttribute--><!--Device-NavigationAttribute-navBarPosition(value: NavBarPosition): NavigationAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -528,7 +551,7 @@ to **NavigationMode.Auto** or **NavigationMode.Split**.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | NavBarPosition | Yes | Position of the navigation page.<br>Default value: **NavBarPosition.Start** |
+| value | [NavBarPosition](arkts-arkui-navigation-navbarposition-e.md) | Yes | Position of the navigation page.<br>Default value: **NavBarPosition.Start** |
 
 ## navBarWidth
 
@@ -536,15 +559,15 @@ to **NavigationMode.Auto** or **NavigationMode.Split**.
 navBarWidth(value: Length)
 ```
 
-Set the width of the navigation page. It takes effect only when [mode](NavigationAttribute#mode) is set to
-**NavigationMode.Auto** or **NavigationMode.Split**.
+Set the width of the navigation page. It takes effect only when [mode](NavigationAttribute#mode) is set to **NavigationMode.Auto** or **NavigationMode.Split**.
 
-Since API version 18, this attribute supports two-way binding through
-[!!](../../../../ui/state-management/arkts-new-binding.md).
+Since API version 18, this attribute supports two-way binding through [!!](../../../../ui/state-management/arkts-new-binding.md).
 
 **Since:** 9
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-NavigationAttribute-navBarWidth(value: Length): NavigationAttribute--><!--Device-NavigationAttribute-navBarWidth(value: Length): NavigationAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -552,7 +575,7 @@ Since API version 18, this attribute supports two-way binding through
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | Length | Yes | Width of the navigation page.<br>Default value: **240**<br>Unit: vp<br>**undefined**: Noaction is taken, and the navigation page width remains consistent with the default value. |
+| value | [Length](../arkts-apis/arkts-arkui-length-t.md) | Yes | Width of the navigation page.<br>Default value: **240**<br>Unit: vp<br>**undefined**: No action is taken, and the navigation page width remains consistent with the default value. |
 
 ## navBarWidthRange
 
@@ -560,22 +583,16 @@ Since API version 18, this attribute supports two-way binding through
 navBarWidthRange(value: [Dimension, Dimension])
 ```
 
-Sets the minimum and maximum widths of the navigation page (effective in split-column mode). When this API is not
-used, the minimum width defaults to 240 vp, and the maximum width defaults to 40% of the component width (not
-exceeding 432 vp). When dragging the divider changes the navigation page width, the content area will be
-compressed.
+Sets the minimum and maximum widths of the navigation page (effective in split-column mode). When this API is not used, the minimum width defaults to 240 vp, and the maximum width defaults to 40% of the component width (not exceeding 432 vp). When dragging the divider changes the navigation page width, the content area will be compressed.
 
 Divider dragging range:
 
-| Condition| Dragging Range |
-| ----| ----------- |
-|Both **navBarWidthRange** and **minContentWidth** are set.| Range set by **navBarWidthRange**
-if the value set by **minContentWidth** is satisfied|
-|Neither **navBarWidthRange** nor **minContentWidth** is set.| Default minimum and maximum ranges
-of **navBarWidthRange**|
-|Only the **navBarWidthRange** attribute is set.| Range set by **navBarWidthRange**,
-where the maximum dragging range cannot exceed the default value of **minContentWidth**|
-|Only the **minContentWidth** attribute is set.| Default minimum and maximum ranges of **navBarWidthRange**|
+| Condition| Dragging Range |  
+| ----| ----------- |  
+|Both **navBarWidthRange** and **minContentWidth** are set.| Range set by **navBarWidthRange** if the value set by **minContentWidth** is satisfied|  
+|Neither **navBarWidthRange** nor **minContentWidth** is set.| Default minimum and maximum ranges of **navBarWidthRange**|  
+|Only the **navBarWidthRange** attribute is set.| Range set by **navBarWidthRange**,where the maximum dragging range cannot exceed the default value of **minContentWidth**|  
+|Only the **minContentWidth** attribute is set.| Default minimum and maximum ranges of **navBarWidthRange**|  
 |Only the **navBarWidth** attribute is set.| Dragging not supported|
 
 **Since:** 10
@@ -584,13 +601,15 @@ where the maximum dragging range cannot exceed the default value of **minContent
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-NavigationAttribute-navBarWidthRange(value: [Dimension, Dimension]): NavigationAttribute--><!--Device-NavigationAttribute-navBarWidthRange(value: [Dimension, Dimension]): NavigationAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Dimension, Dimension] | Yes | Minimum and maximum widths of the navigation page. If an invalid value isset, the default value is used. |
+| value | [Dimension, Dimension] | Yes | Minimum and maximum widths of the navigation page. If an invalid value is set, the default value is used. |
 
 ## navDestination
 
@@ -598,10 +617,7 @@ where the maximum dragging range cannot exceed the default value of **minContent
 navDestination(builder: (name: string, param: unknown) => void)
 ```
 
-Creates a **NavDestination** component. The builder receives the **name** and **param** parameters for constructing
-the **NavDestination** component. The builder must return a single root node. The builder can have only one root
-node. In the builder, a layer of custom components can wrap the **NavDestination** component. However, no
-attributes or events can be set for these custom components. Otherwise, only blank content is displayed.
+Creates a **NavDestination** component. The builder receives the **name** and **param** parameters for constructing the **NavDestination** component. The builder must return a single root node. The builder can have only one root node. In the builder, a layer of custom components can wrap the **NavDestination** component. However, no attributes or events can be set for these custom components. Otherwise, only blank content is displayed.
 
 **Since:** 10
 
@@ -609,13 +625,15 @@ attributes or events can be set for these custom components. Otherwise, only bla
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-NavigationAttribute-navDestination(builder: (name: string, param: unknown) => void): NavigationAttribute--><!--Device-NavigationAttribute-navDestination(builder: (name: string, param: unknown) => void): NavigationAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| builder | (name: string, param: unknown) =&gt; void | Yes | Builder for a **NavDestination** component. **name**: name of the **NavDestination**page. **param**: detailed parameters for the custom **NavDestination** page. The **unknown** type can bereplaced with a user-defined type. |
+| builder | (name: string, param: unknown) => void | Yes | Builder for a **NavDestination** component. **name**: name of the **NavDestination** page. **param**: detailed parameters for the custom **NavDestination** page. The **unknown** type can be replaced with a user-defined type. |
 
 ## onNavBarStateChange
 
@@ -629,13 +647,15 @@ Callback invoked when the navigation page visibility status changes.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-NavigationAttribute-onNavBarStateChange(callback: (isVisible: boolean) => void): NavigationAttribute--><!--Device-NavigationAttribute-onNavBarStateChange(callback: (isVisible: boolean) => void): NavigationAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (isVisible: boolean) =&gt; void | Yes | Whether the navigation bar is visible. The value **true** means that the navigationbar is visible, and **false** means the opposite.<br>**Since:** 10 |
+| callback | (isVisible: boolean) => void | Yes | Whether the navigation bar is visible. The value **true** means that the navigation bar is visible, and **false** means the opposite.<br>**Since:** 10 |
 
 ## onNavigationModeChange
 
@@ -643,8 +663,7 @@ Callback invoked when the navigation page visibility status changes.
 onNavigationModeChange(callback: (mode: NavigationMode) => void)
 ```
 
-Triggered when the **Navigation** component is displayed for the first time or its display mode switches between
-single-column and split-column.
+Triggered when the **Navigation** component is displayed for the first time or its display mode switches between single-column and split-column.
 
 **Since:** 11
 
@@ -652,13 +671,15 @@ single-column and split-column.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-NavigationAttribute-onNavigationModeChange(callback: (mode: NavigationMode) => void): NavigationAttribute--><!--Device-NavigationAttribute-onNavigationModeChange(callback: (mode: NavigationMode) => void): NavigationAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (mode: NavigationMode) =&gt; void | Yes | **NavigationMode.Split**: The component is displayed in split-column mode.<br>**NavigationMode.Stack**: The component is displayed in single-column mode. |
+| callback | (mode: NavigationMode) => void | Yes | **NavigationMode.Split**: The component is displayed in split-column mode.<br>**NavigationMode.Stack**: The component is displayed in single-column mode. |
 
 ## onTitleModeChange
 
@@ -666,12 +687,13 @@ single-column and split-column.
 onTitleModeChange(callback: (titleMode: NavigationTitleMode) => void)
 ```
 
-Triggered when [titleMode](NavigationAttribute#titleMode) is set to **NavigationTitleMode.Free** and the
-title bar mode changes as content scrolls.
+Triggered when [titleMode](NavigationAttribute#titleMode) is set to **NavigationTitleMode.Free** and the title bar mode changes as content scrolls.
 
 **Since:** 8
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-NavigationAttribute-onTitleModeChange(callback: (titleMode: NavigationTitleMode) => void): NavigationAttribute--><!--Device-NavigationAttribute-onTitleModeChange(callback: (titleMode: NavigationTitleMode) => void): NavigationAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -679,7 +701,7 @@ title bar mode changes as content scrolls.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (titleMode: NavigationTitleMode) =&gt; void | Yes | Title mode.<br>**Since:** 10 |
+| callback | (titleMode: NavigationTitleMode) => void | Yes | Title mode.<br>**Since:** 10 |
 
 ## recoverable
 
@@ -687,31 +709,31 @@ title bar mode changes as content scrolls.
 recoverable(recoverable: Optional<boolean>)
 ```
 
-Sets whether the **Navigation** component is recoverable. If set to recoverable, when the application process exits
-unexpectedly and restarts, the **Navigation** component can be automatically re-created and its routing stack
-restored to the state at the time of the unexpected exit.
+Sets whether the **Navigation** component is recoverable. If set to recoverable, when the application process exits unexpectedly and restarts, the **Navigation** component can be automatically re-created and its routing stack restored to the state at the time of the unexpected exit.
 
-> **NOTE**
->
-> 1. For this API to work properly, you must first set the universal attribute [id](arkts-arkui-commonmethod-c.md#id-1) of the
-> **Navigation** component.
->
-> 2. This API must be used together with the [recoverable](NavDestinationAttribute#recoverable) API of
-> **NavDestination**.
->
-> 3. Non-serializable information, such as non-serializable parameters and custom **onPop**, is discarded and
-> cannot be restored during the recovery process.
->
-> 4. If an application is terminated due to insufficient system resources after it is switched to the background,
-> any page configured as recoverable will be automatically restored when the application is revived to the
-> foreground. For details, see
-> [UIAbility Backup and Restore](../../../../application-models/ability-recover-guideline.md). For the usage example,
-> see
+> **NOTE**  
+>  
+> 1. For this API to work properly, you must first set the universal attribute [id](arkts-arkui-common-commonmethod-c.md#id-1) of the  
+> **Navigation** component.  
+>  
+> 2. This API must be used together with the [recoverable](NavDestinationAttribute#recoverable) API of  
+> **NavDestination**.  
+>  
+> 3. Non-serializable information, such as non-serializable parameters and custom **onPop**, is discarded and  
+> cannot be restored during the recovery process.  
+>  
+> 4. If an application is terminated due to insufficient system resources after it is switched to the background,  
+> any page configured as recoverable will be automatically restored when the application is revived to the  
+> foreground. For details, see  
+> [UIAbility Backup and Restore](../../../../application-models/ability-recover-guideline.md). For the usage example,  
+> see  
 > [Example 18: Setting Navigation as Recoverable](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-navigation.md#example-18-setting-navigation-as-recoverable).
 
 **Since:** 14
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-NavigationAttribute-recoverable(recoverable: Optional<boolean>): NavigationAttribute--><!--Device-NavigationAttribute-recoverable(recoverable: Optional<boolean>): NavigationAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -719,7 +741,7 @@ restored to the state at the time of the unexpected exit.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| recoverable | Optional&lt;boolean&gt; | Yes | Whether the **Navigation** component is recoverable. By default, it is notrecoverable.<br>**true**: yes<br>**false**: no<br>If the input parameter is invalid, the value **false** isused. |
+| recoverable | [Optional](arkts-arkui-optional-t.md)<boolean> | Yes | Whether the **Navigation** component is recoverable. By default, it is not recoverable.<br>**true**: yes<br>**false**: no<br>If the input parameter is invalid, the value **false** is used. |
 
 ## splitPlaceholder
 
@@ -727,8 +749,7 @@ restored to the state at the time of the unexpected exit.
 splitPlaceholder(placeholder: ComponentContent)
 ```
 
-Sets a default placeholder page for the right column in the **Navigation** component's split-column mode. The
-placeholder page is for UI display only and cannot receive focus or respond to events.
+Sets a default placeholder page for the right column in the **Navigation** component's split-column mode. The placeholder page is for UI display only and cannot receive focus or respond to events.
 
 **Since:** 20
 
@@ -736,13 +757,15 @@ placeholder page is for UI display only and cannot receive focus or respond to e
 
 **Atomic service API:** This API can be used in atomic services since API version 20.
 
+<!--Device-NavigationAttribute-splitPlaceholder(placeholder: ComponentContent): NavigationAttribute--><!--Device-NavigationAttribute-splitPlaceholder(placeholder: ComponentContent): NavigationAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| placeholder | ComponentContent | Yes | Default placeholder page for the right column in the **Navigation**component's split-column mode. |
+| placeholder | [ComponentContent](../arkts-apis/arkts-arkui-componentcontent-c.md) | Yes | Default placeholder page for the right column in the **Navigation** component's split-column mode. |
 
 ## subTitle
 
@@ -760,6 +783,8 @@ Sets the page subtitle.
 
 **Substitutes:** title
 
+<!--Device-NavigationAttribute-subTitle(value: string): NavigationAttribute--><!--Device-NavigationAttribute-subTitle(value: string): NavigationAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
@@ -776,37 +801,37 @@ systemBarStyle(style: Optional<SystemBarStyle>)
 
 Sets the style of the system status bar when the home page of the **Navigation** component is displayed.
 
-> **NOTE**
->
-> 1. Avoid using the **systemBarStyle** attribute in conjunction with the status bar style APIs in the **Window**
-> module, such as
-> [setWindowSystemBarProperties](../../../../reference/apis-arkui/arkts-apis-window-Window.md#setwindowsystembarproperties9).
->
->
-> 2. When you first set the **systemBarStyle** attribute for a **Navigation** or **NavDestination** component, the
-> current status bar style is saved for potential future restoration.
->
-> 3. **Navigation** always uses the status bar style defined by the home page (when no **NavDestination** exists in
-> the routing stack) or the top **NavDestination** in the stack.
->
-> 4. If the home page or any top **NavDestination** page has a valid **systemBarStyle** set, that style will be
-> used. If no style is set, and there is a previously saved style available, the saved style will be used. If no
-> style has been set or saved, no changes will be made.
->
-> 5. In [Split](arkts-arkui-navigationmode-e.md) mode, if there is no **NavDestination** in the content area, the settings of
-> the **Navigation** home page will apply. Otherwise, the settings of the top **NavDestination** page on the
-> routing stack will apply.
->
-> 6. The **systemBarStyle** attribute is effective only for the main page of the main window.
->
-> 7. The set style will only take effect if the **Navigation** component spans the entire page. If it does not, and
-> there is a previously saved style available, the saved style will be used instead.
->
-> 8. When different styles are set for pages, the new style takes effect at the start of the page transition.
->
-> 9. The status bar style set by **Navigation** or **NavDestination** does not apply in non-fullscreen windows.
->
-> This API can be called in [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
+> **NOTE**  
+>  
+> 1. Avoid using the **systemBarStyle** attribute in conjunction with the status bar style APIs in the **Window**  
+> module, such as  
+> [setWindowSystemBarProperties](../../../../reference/apis-arkui/arkts-apis-window-Window.md#setwindowsystembarproperties9).  
+>  
+>  
+> 2. When you first set the **systemBarStyle** attribute for a **Navigation** or **NavDestination** component, the  
+> current status bar style is saved for potential future restoration.  
+>  
+> 3. **Navigation** always uses the status bar style defined by the home page (when no **NavDestination** exists in  
+> the routing stack) or the top **NavDestination** in the stack.  
+>  
+> 4. If the home page or any top **NavDestination** page has a valid **systemBarStyle** set, that style will be  
+> used. If no style is set, and there is a previously saved style available, the saved style will be used. If no  
+> style has been set or saved, no changes will be made.  
+>  
+> 5. In [Split](arkts-arkui-navigation-navigationmode-e.md) mode, if there is no **NavDestination** in the content area, the settings of  
+> the **Navigation** home page will apply. Otherwise, the settings of the top **NavDestination** page on the  
+> routing stack will apply.  
+>  
+> 6. The **systemBarStyle** attribute is effective only for the main page of the main window.  
+>  
+> 7. The set style will only take effect if the **Navigation** component spans the entire page. If it does not, and  
+> there is a previously saved style available, the saved style will be used instead.  
+>  
+> 8. When different styles are set for pages, the new style takes effect at the start of the page transition.  
+>  
+> 9. The status bar style set by **Navigation** or **NavDestination** does not apply in non-fullscreen windows.  
+>  
+> This API can be called in [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1) since API version 20.
 
 **Since:** 12
 
@@ -814,13 +839,15 @@ Sets the style of the system status bar when the home page of the **Navigation**
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
+<!--Device-NavigationAttribute-systemBarStyle(style: Optional<SystemBarStyle>): NavigationAttribute--><!--Device-NavigationAttribute-systemBarStyle(style: Optional<SystemBarStyle>): NavigationAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| style | Optional&lt;SystemBarStyle&gt; | Yes | Style of the system status bar. |
+| style | [Optional](arkts-arkui-optional-t.md)<SystemBarStyle> | Yes | Style of the system status bar. |
 
 ## title
 
@@ -830,13 +857,15 @@ title(value: ResourceStr | CustomBuilder | NavigationCommonTitle | NavigationCus
 
 Sets the page title.
 
-> **NOTE**
->
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
+> **NOTE**  
+>  
+> This API can be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1) since API version 12.
 
 **Since:** 8
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-NavigationAttribute-title(value: ResourceStr | CustomBuilder | NavigationCommonTitle | NavigationCustomTitle, options?: NavigationTitleOptions): NavigationAttribute--><!--Device-NavigationAttribute-title(value: ResourceStr | CustomBuilder | NavigationCommonTitle | NavigationCustomTitle, options?: NavigationTitleOptions): NavigationAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -844,8 +873,8 @@ Sets the page title.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ResourceStr \| CustomBuilder \| NavigationCommonTitle \| NavigationCustomTitle | Yes | Page title. When theNavigationCustomTitle type is used to set the height, [titleMode](NavigationAttribute#titleMode) does nottake effect.<br>When the title string is too long:<br>- If no subtitle is set, the string is scaled down,wrapped in two lines, and then clipped.<br> - If a subtitle is set, the subtitle is scaled down and thenclipped.<br>**Since:** 10 |
-| options | NavigationTitleOptions | No | Defines the title bar options. Title bar options include thebackground color, background blur style, blur options, background properties, layout style, and padding at thestart and end of the title bar, as well as main title attribute modifier, subtitle attribute modifier, andwhether to respond when the device is in semi-folded mode..<br>**Since:** 11 |
+| value | ResourceStr \| CustomBuilder \| NavigationCommonTitle \| NavigationCustomTitle | Yes | Page title. When the NavigationCustomTitle type is used to set the height, [titleMode](NavigationAttribute#titleMode) does not take effect.<br>When the title string is too long:<br>- If no subtitle is set, the string is scaled down,wrapped in two lines, and then clipped.<br> - If a subtitle is set, the subtitle is scaled down and then clipped.<br>**Since:** 10 |
+| options | [NavigationTitleOptions](arkts-arkui-navigation-navigationtitleoptions-i.md) | No | Defines the title bar options. Title bar options include the background color, background blur style, blur options, background properties, layout style, and padding at the start and end of the title bar, as well as main title attribute modifier, subtitle attribute modifier, and whether to respond when the device is in semi-folded mode..<br>**Since:** 11 |
 
 ## titleMode
 
@@ -859,13 +888,15 @@ Sets the display mode of the page title bar.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-NavigationAttribute-titleMode(value: NavigationTitleMode): NavigationAttribute--><!--Device-NavigationAttribute-titleMode(value: NavigationTitleMode): NavigationAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | NavigationTitleMode | Yes | Display mode of the page title bar.<br>Default value:**NavigationTitleMode.Free** |
+| value | [NavigationTitleMode](arkts-arkui-navigation-navigationtitlemode-e.md) | Yes | Display mode of the page title bar.<br>Default value:**NavigationTitleMode.Free** |
 
 ## toolBar
 
@@ -873,10 +904,7 @@ Sets the display mode of the page title bar.
 toolBar(value: object | CustomBuilder)
 ```
 
-Sets the content of the toolbar. If this attribute is not set, no toolbar is displayed. Toolbar items are evenly
-distributed on the bottom toolbar, with text and icons evenly spaced in each content area. If any item contains
-overlong text and there are fewer than five items, the toolbar will reduce the text size progressively, wrap the
-text over two lines if necessary, and then clip the text to fit.
+Sets the content of the toolbar. If this attribute is not set, no toolbar is displayed. Toolbar items are evenly distributed on the bottom toolbar, with text and icons evenly spaced in each content area. If any item contains overlong text and there are fewer than five items, the toolbar will reduce the text size progressively, wrap the text over two lines if necessary, and then clip the text to fit.
 
 **object**
 
@@ -885,6 +913,8 @@ text over two lines if necessary, and then clip the text to fit.
 **Deprecated since:** 10
 
 **Substitutes:** toolbarConfiguration
+
+<!--Device-NavigationAttribute-toolBar(value: object | CustomBuilder): NavigationAttribute--><!--Device-NavigationAttribute-toolBar(value: object | CustomBuilder): NavigationAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -902,12 +932,12 @@ toolbarConfiguration(value: Array<ToolbarItem> | CustomBuilder, options?: Naviga
 
 Sets the content of the toolbar. If this attribute is not set, no toolbar is displayed.
 
-> **NOTE**
->
-> This API can be called in [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
->
-> The following are not allowed: modify the icon size through the **fontSize** attribute of the
-> **SymbolGlyphModifier** object, change the animation effects through the **effectStrategy** attribute, or change
+> **NOTE**  
+>  
+> This API can be called in [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1) since API version 20.  
+>  
+> The following are not allowed: modify the icon size through the **fontSize** attribute of the  
+> **SymbolGlyphModifier** object, change the animation effects through the **effectStrategy** attribute, or change  
 > the type of animation effects through the **symbolEffect** attribute.
 
 **Since:** 10
@@ -916,12 +946,14 @@ Sets the content of the toolbar. If this attribute is not set, no toolbar is dis
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
+<!--Device-NavigationAttribute-toolbarConfiguration(value: Array<ToolbarItem> | CustomBuilder, options?: NavigationToolbarOptions): NavigationAttribute--><!--Device-NavigationAttribute-toolbarConfiguration(value: Array<ToolbarItem> | CustomBuilder, options?: NavigationToolbarOptions): NavigationAttribute-End-->
+
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | Array&lt;ToolbarItem&gt; \| CustomBuilder | Yes | Content of the toolbar. When configured with Array&lt;[ToolbarItem](arkts-arkui-toolbaritem-i.md)&gt;, the toolbar follows the rules below:<br>Toolbar items are evenly distributedon the bottom toolbar, with text and icons evenly spaced in each content area.<br>In portrait mode, the toolbarshows a maximum of five icons, with any additional icons placed into an automatically generated **More** icon.In landscape mode, toolbar behavior depends on the display mode: <br>- If the display mode is[Split](arkts-arkui-navigationmode-e.md), the toolbar maintains the portrait mode. <br>- If the display mode is[Stack](arkts-arkui-navigationmode-e.md), the toolbar must be used together with Array&lt;[NavigationMenuItem](arkts-arkui-navigationmenuitem-i.md)&gt; of the **menus** attribute; in this configuration, the bottomtoolbar is automatically hidden, and all items on the toolbar are relocated to the menu in the upper rightcorner of the screen.<br>When configured with[CustomBuilder](../../../../reference/apis-arkui/arkui-ts/ts-types.md#custombuilder8), the toolbar does notfollow the above rules. |
-| options | NavigationToolbarOptions | No | Toolbar options. Toolbar options include the background color,background blur style and blur option, background properties, and layout mode of the toolbar, as well aswhether to hide the toolbar text, and options for the toolbar's more button menu..<br>**Since:** 11 |
+| value | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ToolbarItem> \| CustomBuilder | Yes | Content of the toolbar. When configured with Array&lt;[ToolbarItem](arkts-arkui-navigation-toolbaritem-i.md)&gt;, the toolbar follows the rules below:<br>Toolbar items are evenly distributed on the bottom toolbar, with text and icons evenly spaced in each content area.<br>In portrait mode, the toolbar shows a maximum of five icons, with any additional icons placed into an automatically generated **More** icon.In landscape mode, toolbar behavior depends on the display mode: <br>- If the display mode is [Split](arkts-arkui-navigation-navigationmode-e.md), the toolbar maintains the portrait mode. <br>- If the display mode is [Stack](arkts-arkui-navigation-navigationmode-e.md), the toolbar must be used together with Array&lt;[NavigationMenuItem](arkts-arkui-navigation-navigationmenuitem-i.md)&gt; of the **menus** attribute; in this configuration, the bottom toolbar is automatically hidden, and all items on the toolbar are relocated to the menu in the upper right corner of the screen.<br>When configured with [CustomBuilder](../../../../reference/apis-arkui/arkui-ts/ts-types.md#custombuilder8), the toolbar does not follow the above rules. |
+| options | [NavigationToolbarOptions](arkts-arkui-navigation-navigationtoolbaroptions-i.md) | No | Toolbar options. Toolbar options include the background color,background blur style and blur option, background properties, and layout mode of the toolbar, as well as whether to hide the toolbar text, and options for the toolbar's more button menu..<br>**Since:** 11 |
 
